@@ -2,15 +2,15 @@
 title: tipo de recurso conditionalAccessPlatforms
 description: Plataformas incluídas e excluídas do escopo da política.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5907e7162093b7d0d9fb796f61fc0cf110350417
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 27cf8f2b6a022f4d5ca17d716b35b6f357d23471
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413350"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916786"
 ---
 # <a name="conditionalaccessplatforms-resource-type"></a>tipo de recurso conditionalAccessPlatforms
 
@@ -24,8 +24,8 @@ Plataformas incluídas e excluídas do escopo da política.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|includePlatforms|Coleção String| Os possíveis valores são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`.|
-|excludePlatforms|Coleção String| Os valores possíveis são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`.|
+|includePlatforms|Coleção de cadeias de caracteres| Os possíveis valores são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`.|
+|excludePlatforms|Coleção de cadeias de caracteres| Os valores possíveis são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`.|
 
 ## <a name="relationships"></a>Relações
 

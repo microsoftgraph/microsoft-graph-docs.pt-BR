@@ -2,15 +2,15 @@
 title: Listar políticas
 description: Recupere uma lista de objetos conditionalAccessPolicy.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7deae297b3f1f1b8f513af5906031549d446e6cd
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: e0142ca08495bf13545c6a41d9b49e13f0c721c1
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43720827"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916462"
 ---
 # <a name="list-policies"></a>Listar políticas
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                       |
 |:--------------------------------------|:----------------------------------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | Policy.Read.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta corporativa ou de estudante)     | Policy.Read.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Policy.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

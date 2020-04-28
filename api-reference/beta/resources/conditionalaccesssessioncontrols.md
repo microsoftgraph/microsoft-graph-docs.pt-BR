@@ -2,15 +2,15 @@
 title: tipo de recurso conditionalAccessSessionControls
 description: Representa um tipo complexo de controles de sessão que é aplicado após a entrada.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 13e1bc5b7f042634f1e4d2c9384c88fab5b96b29
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e76c17838b9257a4274c51ac161a1c36d512fe3f
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450815"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916741"
 ---
 # <a name="conditionalaccesssessioncontrols-resource-type"></a>tipo de recurso conditionalAccessSessionControls
 

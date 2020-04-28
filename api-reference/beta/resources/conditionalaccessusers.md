@@ -2,15 +2,15 @@
 title: tipo de recurso conditionalAccessUsers
 description: Representa usuários, grupos e funções incluídos e excluídos do escopo da política.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 99fa682b787a164896cb638060798cddee07b255
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ad9c41e91a71fa00af71c05bc5c9d0591f81826b
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467933"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916673"
 ---
 # <a name="conditionalaccessusers-resource-type"></a>tipo de recurso conditionalAccessUsers
 

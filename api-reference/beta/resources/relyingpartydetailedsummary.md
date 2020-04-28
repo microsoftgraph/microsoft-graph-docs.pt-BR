@@ -2,15 +2,15 @@
 title: tipo de recurso relyingPartyDetailedSummary
 description: Representa uma terceira parte confiável no AD FS.
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 306c20c31120d2f130562993d8ebd2d7e4083c23
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 291aa6cc327f6c01ec80c95e4da101d3e8f03aae
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543449"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916497"
 ---
 # <a name="relyingpartydetailedsummary-resource-type"></a>tipo de recurso relyingPartyDetailedSummary
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa uma terceira parte confiável configurada com o AD FS (serviços de Federação do Active Directory), seu uso agregado e se a configuração da terceira parte confiável pode ser migrada para o Azure Active Directory.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|

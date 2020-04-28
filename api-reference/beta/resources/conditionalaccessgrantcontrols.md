@@ -2,15 +2,15 @@
 title: tipo de recurso conditionalAccessGrantControls
 description: Representa os controles de concessão que devem ser atendidos para passar a política.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9746bfb37dd3887def0f070256d90e46efecbdb6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a4312accf3b908689a0037d3c16a7ba2242c2ddf
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413428"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916779"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>tipo de recurso conditionalAccessGrantControls
 
@@ -25,9 +25,9 @@ Representa os controles de concessão que devem ser atendidos para passar a pol�
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
 | operator | String | Define o relacionamento dos controles de concessão. Valores possíveis: `AND`, `OR`. |
-| builtInControls | Coleção String | Lista de valores de controles internos exigidos pela política. Valores possíveis: `Block`, `Mfa`, `CompliantDevice` `DomainJoinedDevice`,, `ApprovedApplication`,`CompliantApplication` |
-| customAuthenticationFactors | Coleção String | Lista de IDs de controles personalizados exigidos pela política. Saiba mais sobre os controles personalizados aqui:https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
-| termsOfUse | Coleção String | Lista de [termos de uso](agreement.md) IDs exigidos pela política. |
+| builtInControls | Coleção de cadeias de caracteres | Lista de valores de controles internos exigidos pela política. Valores possíveis: `Block`, `Mfa`, `CompliantDevice` `DomainJoinedDevice`,, `ApprovedApplication`,`CompliantApplication` |
+| customAuthenticationFactors | Coleção de cadeias de caracteres | Lista de IDs de controles personalizados exigidos pela política. Saiba mais sobre os controles personalizados aqui:https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
+| termsOfUse | Coleção de cadeias de caracteres | Lista de [termos de uso](agreement.md) IDs exigidos pela política. |
 
 ## <a name="relationships"></a>Relações
 

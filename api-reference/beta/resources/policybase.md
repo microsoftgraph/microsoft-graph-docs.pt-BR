@@ -2,15 +2,15 @@
 title: tipo de recurso policyBase
 description: Representa um tipo de base abstrato para o qual os tipos de política herdam.
 localization_priority: Normal
-author: dkershaw10
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 23b023d55c54789b07ccc1a3b95affbf6a79f6b5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a2a07ba2d639faf83d6e8bb4eab3a3e2437333d1
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436883"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917590"
 ---
 # <a name="policybase-resource-type"></a>tipo de recurso policyBase
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa um tipo de base abstrato para o qual os tipos de política herdam.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 Nenhum
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 85e9d8361ef54725493712765b847c14b4af4110
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: b4325f30133ad42e4b7c3df9669bede2b82722c8
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986121"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916420"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                                        |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
-| Application                            | OnlineMeetings.Read.All                               |
+| Aplicativo                            | OnlineMeetings.Read.All                               |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 | Autorização | {token} de portador. Obrigatório. |
 | Accept-Language  | Idioma. Opcional. |
 
-Se a solicitação contiver `Accept-Language` um cabeçalho HTTP, `content` o `joinInformation` de estará no idioma e na variante de localidade especificados no `Accept-Language` cabeçalho. O conteúdo padrão estará em inglês.
+Se a solicitação contiver um `Accept-Language`cabeçalho HTTP, o `content` de `joinInformation` estará na variante de idioma e código de idioma especificada `Accept-Language` no cabeçalho. O conteúdo padrão será em inglês.
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -104,8 +104,8 @@ Content-Length: 1574
   "@odata.type": "#microsoft.graph.onlineMeeting",
   "autoAdmittedUsers": "everyone",
   "audioConferencing": {
-    "tollNumber": "+12525634478",
-    "tollFreeNumber": "+18666390588",
+    "tollNumber": "55525634478",
+    "tollFreeNumber": "55566390588",
     "ConferenceId": "9999999",
     "dialinUrl": "https://dialin.teams.microsoft.com/6787A136-B9B8-4D39-846C-C0F1FF937F10?id=xxxxxxx"
   },
@@ -127,7 +127,7 @@ Content-Length: 1574
             "@odata.type": "#microsoft.graph.identity",
             "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8",
             "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
-            "displayName": "John"
+            "displayName": "Tyler Stein"
           }
         },
         "upn": "upn-value"
@@ -140,7 +140,7 @@ Content-Length: 1574
           "@odata.type": "#microsoft.graph.identity",
           "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
           "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
-          "displayName": "Bob"
+          "displayName": "Jasmine Miller"
         }
       },
       "upn": "upn-value"
@@ -151,7 +151,7 @@ Content-Length: 1574
   "videoTeleconferenceId": "123456789"
 }
 ```
->**Observação:** Se ' Accept-Language: ja ' for especificado para indicar japonês, por exemplo, a resposta incluirá o seguinte.
+>**Observação:** Se 'Accept-Language: ja' for especificado para indicar japonês, por exemplo, a resposta incluirá o seguinte.
 
 ```json
     "joinInformation": {

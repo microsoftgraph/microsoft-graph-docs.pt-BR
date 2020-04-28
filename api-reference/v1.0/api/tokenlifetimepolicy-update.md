@@ -2,15 +2,15 @@
 title: Atualizar tokenlifetimepolicy
 description: Atualize as propriedades do objeto tokenLifetimePolicy.
 localization_priority: Normal
-author: davidmu1
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6f8676a605e64860b883575843a2fdc8e19b16b6
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: fee0b39bdaa1f1cac8ccdd1db027d7ab7a5efa41
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806038"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916983"
 ---
 # <a name="update-tokenlifetimepolicy"></a>Atualizar tokenlifetimepolicy
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.ApplicationConfiguration|
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration|
+| Aplicativo                            | Policy.ReadWrite.ApplicationConfiguration|
 
 ## <a name="http-request"></a>Solicitação HTTP
 

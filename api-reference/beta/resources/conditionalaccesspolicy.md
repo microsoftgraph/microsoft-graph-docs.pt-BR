@@ -2,15 +2,15 @@
 title: tipo de recurso conditionalAccessPolicy
 description: Representa uma política de acesso condicional do Azure Active Directory. As políticas de acesso condicional são regras personalizadas que definem um cenário do Access.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0c41993bd31c5ab01a2f89a41a08cde3764df029
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 81eec9b9d1a8a8f931959dced4929a062f506628
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466417"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916750"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>tipo de recurso conditionalAccessPolicy
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa uma política de acesso condicional do Azure Active Directory. As políticas de acesso condicional são regras personalizadas que definem um cenário do Access. Para obter mais informações, consulte a [documentação de acesso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
