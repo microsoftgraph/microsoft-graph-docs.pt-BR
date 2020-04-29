@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: f1837551b5ee863769277a3ed023afa21f3c7c92
-ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
+ms.openlocfilehash: 7f14491ade48411421e0115d3703a428832254cb
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43581636"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917424"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -148,3 +148,12 @@ Os limites são expressos como solicitações por segundo (rps).
 Um máximo 3.000 mensagens por aplicativo por dia podem ser enviadas para um determinado canal.
 
 Confira também [limites do Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) e [requisitos de votação](/graph/api/resources/teams-api-overview#polling-requirements).
+
+### <a name="microsoft-graph-change-notifications-subscription-operations"></a>Operações de notificações de mudança de assinatura do Microsoft Graph
+
+Os seguintes limites se aplicam a qualquer solicitação no `/subscriptions`.
+
+| Operation                 | Limitar por aplicativo por locatário     | Limitar por aplicativo em todos os locatários |
+|---------------------------|------------------------------|-----------------------------------|
+| POSTAR, COLOCAR, EXCLUIR, PATCH  | 1000 solicitações por 20 segundos | 2000 solicitações por 20 segundos      |
+| Todos os outros métodos HTTP    | 5000 solicitações por 20 segundos | 10000 solicitações por 20 segundos     |
