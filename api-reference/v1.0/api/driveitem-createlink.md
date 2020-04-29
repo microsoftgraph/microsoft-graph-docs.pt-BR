@@ -7,34 +7,34 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Você pode usar a ação createLink para compartilhar um DriveItem por meio de um link de compartilhamento.
 doc_type: apiPageType
-ms.openlocfilehash: 29d29e476a3991fd725d1c1774ac90725436b8db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: edd0259e35191c112c779b0afd545f7848675e8d
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517780"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934847"
 ---
-# <a name="create-a-sharing-link-for-a-driveitem"></a><span data-ttu-id="0f44e-103">Criar um link de compartilhamento para um DriveItem</span><span class="sxs-lookup"><span data-stu-id="0f44e-103">Create a sharing link for a DriveItem</span></span>
+# <a name="create-a-sharing-link-for-a-driveitem"></a><span data-ttu-id="effdb-103">Criar um link de compartilhamento para um DriveItem</span><span class="sxs-lookup"><span data-stu-id="effdb-103">Create a sharing link for a DriveItem</span></span>
 
-<span data-ttu-id="0f44e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0f44e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="effdb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="effdb-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="0f44e-105">Você pode usar a ação **createLink** para compartilhar um [DriveItem](../resources/driveitem.md) por meio de um link de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="0f44e-105">You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.</span></span>
+<span data-ttu-id="effdb-105">Você pode usar a ação **createLink** para compartilhar um [DriveItem](../resources/driveitem.md) por meio de um link de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="effdb-105">You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.</span></span>
 
-<span data-ttu-id="0f44e-p101">A ação **createLink** criará um novo link de compartilhamento se o tipo de link especificado não existir para o aplicativo de chamada. Se um link de compartilhamento do tipo especificado já existir para o aplicativo, o link de compartilhamento existente será retornado.</span><span class="sxs-lookup"><span data-stu-id="0f44e-p101">The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application. If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.</span></span>
+<span data-ttu-id="effdb-p101">A ação **createLink** criará um novo link de compartilhamento se o tipo de link especificado não existir para o aplicativo de chamada. Se um link de compartilhamento do tipo especificado já existir para o aplicativo, o link de compartilhamento existente será retornado.</span><span class="sxs-lookup"><span data-stu-id="effdb-p101">The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application. If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.</span></span>
 
-<span data-ttu-id="0f44e-108">Recursos de DriveItem herdam permissões de compartilhamento de seus ancestrais.</span><span class="sxs-lookup"><span data-stu-id="0f44e-108">DriveItem resources inherit sharing permissions from their ancestors.</span></span>
+<span data-ttu-id="effdb-108">Recursos de DriveItem herdam permissões de compartilhamento de seus ancestrais.</span><span class="sxs-lookup"><span data-stu-id="effdb-108">DriveItem resources inherit sharing permissions from their ancestors.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0f44e-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="0f44e-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="effdb-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="effdb-109">Permissions</span></span>
 
-<span data-ttu-id="0f44e-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0f44e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="effdb-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="effdb-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0f44e-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0f44e-112">Permission type</span></span>      | <span data-ttu-id="0f44e-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0f44e-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="effdb-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="effdb-112">Permission type</span></span>      | <span data-ttu-id="effdb-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="effdb-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0f44e-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0f44e-114">Delegated (work or school account)</span></span> | <span data-ttu-id="0f44e-115">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0f44e-115">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="0f44e-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0f44e-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0f44e-117">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0f44e-117">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="0f44e-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0f44e-118">Application</span></span> | <span data-ttu-id="0f44e-119">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0f44e-119">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="effdb-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="effdb-114">Delegated (work or school account)</span></span> | <span data-ttu-id="effdb-115">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="effdb-115">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="effdb-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="effdb-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="effdb-117">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="effdb-117">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="effdb-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="effdb-118">Application</span></span> | <span data-ttu-id="effdb-119">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="effdb-119">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0f44e-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0f44e-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="effdb-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="effdb-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -46,53 +46,55 @@ POST /sites/{siteId}/drive/items/{itemId}/createLink
 POST /users/{userId}/drive/items/{itemId}/createLink
 ```
 
-### <a name="request-body"></a><span data-ttu-id="0f44e-121">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0f44e-121">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="effdb-121">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="effdb-121">Request body</span></span>
 
-<span data-ttu-id="0f44e-122">O corpo da solicitação define as propriedades do link de compartilhamento que seu aplicativo está solicitando.</span><span class="sxs-lookup"><span data-stu-id="0f44e-122">The body of the request defines properties of the sharing link your application is requesting.</span></span>
-<span data-ttu-id="0f44e-123">A solicitação deve ser um objeto JSON com as seguintes propriedades.</span><span class="sxs-lookup"><span data-stu-id="0f44e-123">The request should be a JSON object with the following properties.</span></span>
+<span data-ttu-id="effdb-122">O corpo da solicitação define as propriedades do link de compartilhamento que seu aplicativo está solicitando.</span><span class="sxs-lookup"><span data-stu-id="effdb-122">The body of the request defines properties of the sharing link your application is requesting.</span></span>
+<span data-ttu-id="effdb-123">A solicitação deve ser um objeto JSON com as seguintes propriedades.</span><span class="sxs-lookup"><span data-stu-id="effdb-123">The request should be a JSON object with the following properties.</span></span>
 
-|   <span data-ttu-id="0f44e-124">Nome</span><span class="sxs-lookup"><span data-stu-id="0f44e-124">Name</span></span>    |  <span data-ttu-id="0f44e-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="0f44e-125">Type</span></span>  |                                 <span data-ttu-id="0f44e-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="0f44e-126">Description</span></span>                                  |
-| :-------- | :----- | :--------------------------------------------------------------------------- |
-| <span data-ttu-id="0f44e-127">**type**</span><span class="sxs-lookup"><span data-stu-id="0f44e-127">**type**</span></span>  | <span data-ttu-id="0f44e-128">string</span><span class="sxs-lookup"><span data-stu-id="0f44e-128">string</span></span> | <span data-ttu-id="0f44e-p104">O tipo de link de compartilhamento a ser criado. Pode ser `view`, `edit` ou `embed`.</span><span class="sxs-lookup"><span data-stu-id="0f44e-p104">The type of sharing link to create. Either `view`, `edit`, or `embed`.</span></span>       |
-| <span data-ttu-id="0f44e-131">**scope**</span><span class="sxs-lookup"><span data-stu-id="0f44e-131">**scope**</span></span> | <span data-ttu-id="0f44e-132">string</span><span class="sxs-lookup"><span data-stu-id="0f44e-132">string</span></span> | <span data-ttu-id="0f44e-133">Opcional.</span><span class="sxs-lookup"><span data-stu-id="0f44e-133">Optional.</span></span> <span data-ttu-id="0f44e-134">O escopo do link a ser criado.</span><span class="sxs-lookup"><span data-stu-id="0f44e-134">The scope of link to create.</span></span> <span data-ttu-id="0f44e-135">Pode ser `anonymous` ou `organization`.</span><span class="sxs-lookup"><span data-stu-id="0f44e-135">Either `anonymous` or `organization`.</span></span> |
+|   <span data-ttu-id="effdb-124">Nome</span><span class="sxs-lookup"><span data-stu-id="effdb-124">Name</span></span>       |  <span data-ttu-id="effdb-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="effdb-125">Type</span></span>  |                                 <span data-ttu-id="effdb-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="effdb-126">Description</span></span>                                  |
+| :------------| :----- | :--------------------------------------------------------------------------- |
+| <span data-ttu-id="effdb-127">**type**</span><span class="sxs-lookup"><span data-stu-id="effdb-127">**type**</span></span>     | <span data-ttu-id="effdb-128">string</span><span class="sxs-lookup"><span data-stu-id="effdb-128">string</span></span> | <span data-ttu-id="effdb-p104">O tipo de link de compartilhamento a ser criado. Pode ser `view`, `edit` ou `embed`.</span><span class="sxs-lookup"><span data-stu-id="effdb-p104">The type of sharing link to create. Either `view`, `edit`, or `embed`.</span></span>       |
+| <span data-ttu-id="effdb-131">**password**</span><span class="sxs-lookup"><span data-stu-id="effdb-131">**password**</span></span> | <span data-ttu-id="effdb-132">string</span><span class="sxs-lookup"><span data-stu-id="effdb-132">string</span></span> | <span data-ttu-id="effdb-133">A senha do link de compartilhamento que é definida pelo criador.</span><span class="sxs-lookup"><span data-stu-id="effdb-133">The password of the sharing link that is set by the creator.</span></span> <span data-ttu-id="effdb-134">Opcional e o OneDrive somente pessoal.</span><span class="sxs-lookup"><span data-stu-id="effdb-134">Optional and OneDrive Personal only.</span></span>
+| <span data-ttu-id="effdb-135">**expirationDateTime**</span><span class="sxs-lookup"><span data-stu-id="effdb-135">**expirationDateTime**</span></span> | <span data-ttu-id="effdb-136">string</span><span class="sxs-lookup"><span data-stu-id="effdb-136">string</span></span> | <span data-ttu-id="effdb-137">Uma cadeia de caracteres com formato AAAA-MM-ddTHH: mm: ssZ de DateTime indica o tempo de expiração da permissão.</span><span class="sxs-lookup"><span data-stu-id="effdb-137">A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission.</span></span> |
+| <span data-ttu-id="effdb-138">**scope**</span><span class="sxs-lookup"><span data-stu-id="effdb-138">**scope**</span></span> | <span data-ttu-id="effdb-139">string</span><span class="sxs-lookup"><span data-stu-id="effdb-139">string</span></span> | <span data-ttu-id="effdb-140">Opcional.</span><span class="sxs-lookup"><span data-stu-id="effdb-140">Optional.</span></span> <span data-ttu-id="effdb-141">O escopo do link a ser criado.</span><span class="sxs-lookup"><span data-stu-id="effdb-141">The scope of link to create.</span></span> <span data-ttu-id="effdb-142">Pode ser `anonymous` ou `organization`.</span><span class="sxs-lookup"><span data-stu-id="effdb-142">Either `anonymous` or `organization`.</span></span> |
 
 
-### <a name="link-types"></a><span data-ttu-id="0f44e-136">Tipos de link</span><span class="sxs-lookup"><span data-stu-id="0f44e-136">Link types</span></span>
+### <a name="link-types"></a><span data-ttu-id="effdb-143">Tipos de link</span><span class="sxs-lookup"><span data-stu-id="effdb-143">Link types</span></span>
 
-<span data-ttu-id="0f44e-137">Os seguintes valores são permitidos para o parâmetro **type**.</span><span class="sxs-lookup"><span data-stu-id="0f44e-137">The following values are allowed for the **type** parameter.</span></span>
+<span data-ttu-id="effdb-144">Os seguintes valores são permitidos para o parâmetro **type**.</span><span class="sxs-lookup"><span data-stu-id="effdb-144">The following values are allowed for the **type** parameter.</span></span>
 
-| <span data-ttu-id="0f44e-138">Valor do tipo</span><span class="sxs-lookup"><span data-stu-id="0f44e-138">Type value</span></span> | <span data-ttu-id="0f44e-139">Descrição</span><span class="sxs-lookup"><span data-stu-id="0f44e-139">Description</span></span>                                                                                  |
+| <span data-ttu-id="effdb-145">Valor do tipo</span><span class="sxs-lookup"><span data-stu-id="effdb-145">Type value</span></span> | <span data-ttu-id="effdb-146">Descrição</span><span class="sxs-lookup"><span data-stu-id="effdb-146">Description</span></span>                                                                                  |
 |:-----------|:---------------------------------------------------------------------------------------------|
-| `view`     | <span data-ttu-id="0f44e-140">Cria um link somente leitura para DriveItem.</span><span class="sxs-lookup"><span data-stu-id="0f44e-140">Creates a read-only link to the DriveItem.</span></span>                                                        |
-| `edit`     | <span data-ttu-id="0f44e-141">Cria um link de leitura e gravação para DriveItem.</span><span class="sxs-lookup"><span data-stu-id="0f44e-141">Creates a read-write link to the DriveItem.</span></span>                                                       |
-| `embed`    | <span data-ttu-id="0f44e-142">Cria um link incorporado para DriveItem.</span><span class="sxs-lookup"><span data-stu-id="0f44e-142">Creates an embeddable link to the DriveItem.</span></span> <span data-ttu-id="0f44e-143">Essa opção só está disponível para arquivos no OneDrive Pessoal.</span><span class="sxs-lookup"><span data-stu-id="0f44e-143">This option is only available for files in OneDrive personal.</span></span> |
+| `view`     | <span data-ttu-id="effdb-147">Cria um link somente leitura para DriveItem.</span><span class="sxs-lookup"><span data-stu-id="effdb-147">Creates a read-only link to the DriveItem.</span></span>                                                        |
+| `edit`     | <span data-ttu-id="effdb-148">Cria um link de leitura e gravação para DriveItem.</span><span class="sxs-lookup"><span data-stu-id="effdb-148">Creates a read-write link to the DriveItem.</span></span>                                                       |
+| `embed`    | <span data-ttu-id="effdb-149">Cria um link incorporado para DriveItem.</span><span class="sxs-lookup"><span data-stu-id="effdb-149">Creates an embeddable link to the DriveItem.</span></span> <span data-ttu-id="effdb-150">Essa opção só está disponível para arquivos no OneDrive Pessoal.</span><span class="sxs-lookup"><span data-stu-id="effdb-150">This option is only available for files in OneDrive personal.</span></span> |
 
-### <a name="scope-types"></a><span data-ttu-id="0f44e-144">Tipos de escopo</span><span class="sxs-lookup"><span data-stu-id="0f44e-144">Scope types</span></span>
+### <a name="scope-types"></a><span data-ttu-id="effdb-151">Tipos de escopo</span><span class="sxs-lookup"><span data-stu-id="effdb-151">Scope types</span></span>
 
-<span data-ttu-id="0f44e-145">Os seguintes valores são permitidos para o parâmetro **scope**.</span><span class="sxs-lookup"><span data-stu-id="0f44e-145">The following values are allowed for the **scope** parameter.</span></span>
-<span data-ttu-id="0f44e-146">Se o parâmetro **scope** não for especificado, o tipo de link padrão será criado para a organização.</span><span class="sxs-lookup"><span data-stu-id="0f44e-146">If the **scope** parameter is not specified, the default link type for the organization is created.</span></span>
+<span data-ttu-id="effdb-152">Os seguintes valores são permitidos para o parâmetro **scope**.</span><span class="sxs-lookup"><span data-stu-id="effdb-152">The following values are allowed for the **scope** parameter.</span></span>
+<span data-ttu-id="effdb-153">Se o parâmetro **scope** não for especificado, o tipo de link padrão será criado para a organização.</span><span class="sxs-lookup"><span data-stu-id="effdb-153">If the **scope** parameter is not specified, the default link type for the organization is created.</span></span>
 
-| <span data-ttu-id="0f44e-147">Valor</span><span class="sxs-lookup"><span data-stu-id="0f44e-147">Value</span></span>          | <span data-ttu-id="0f44e-148">Descrição</span><span class="sxs-lookup"><span data-stu-id="0f44e-148">Description</span></span>
+| <span data-ttu-id="effdb-154">Valor</span><span class="sxs-lookup"><span data-stu-id="effdb-154">Value</span></span>          | <span data-ttu-id="effdb-155">Descrição</span><span class="sxs-lookup"><span data-stu-id="effdb-155">Description</span></span>
 |:---------------|:------------------------------------------------------------
-| `anonymous`    | <span data-ttu-id="0f44e-149">Qualquer pessoa com o link tem acesso, sem precisar fazer logon.</span><span class="sxs-lookup"><span data-stu-id="0f44e-149">Anyone with the link has access, without needing to sign in.</span></span> <span data-ttu-id="0f44e-150">Isso pode incluir pessoas de fora da organização.</span><span class="sxs-lookup"><span data-stu-id="0f44e-150">This may include people outside of your organization.</span></span> <span data-ttu-id="0f44e-151">O suporte para links anônimos pode ser desativado por um administrador.</span><span class="sxs-lookup"><span data-stu-id="0f44e-151">Anonymous link support may be disabled by an administrator.</span></span>
-| `organization` | <span data-ttu-id="0f44e-152">Qualquer pessoa que tenha feito logon em sua organização (locatário) pode usar o link para obter acesso.</span><span class="sxs-lookup"><span data-stu-id="0f44e-152">Anyone signed into your organization (tenant) can use the link to get access.</span></span> <span data-ttu-id="0f44e-153">Disponível apenas no OneDrive for Business e no SharePoint.</span><span class="sxs-lookup"><span data-stu-id="0f44e-153">Only available in OneDrive for Business and SharePoint.</span></span>
+| `anonymous`    | <span data-ttu-id="effdb-156">Qualquer pessoa com o link tem acesso, sem precisar fazer logon.</span><span class="sxs-lookup"><span data-stu-id="effdb-156">Anyone with the link has access, without needing to sign in.</span></span> <span data-ttu-id="effdb-157">Isso pode incluir pessoas de fora da organização.</span><span class="sxs-lookup"><span data-stu-id="effdb-157">This may include people outside of your organization.</span></span> <span data-ttu-id="effdb-158">O suporte para links anônimos pode ser desativado por um administrador.</span><span class="sxs-lookup"><span data-stu-id="effdb-158">Anonymous link support may be disabled by an administrator.</span></span>
+| `organization` | <span data-ttu-id="effdb-159">Qualquer pessoa que tenha feito logon em sua organização (locatário) pode usar o link para obter acesso.</span><span class="sxs-lookup"><span data-stu-id="effdb-159">Anyone signed into your organization (tenant) can use the link to get access.</span></span> <span data-ttu-id="effdb-160">Disponível apenas no OneDrive for Business e no SharePoint.</span><span class="sxs-lookup"><span data-stu-id="effdb-160">Only available in OneDrive for Business and SharePoint.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="0f44e-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="0f44e-154">Response</span></span>
+## <a name="response"></a><span data-ttu-id="effdb-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="effdb-161">Response</span></span>
 
-<span data-ttu-id="0f44e-155">Se for bem-sucedido, esse método retornará um único recurso [Permission](../resources/permission.md) no corpo da resposta, que representa as permissões de compartilhamento solicitadas.</span><span class="sxs-lookup"><span data-stu-id="0f44e-155">If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.</span></span>
+<span data-ttu-id="effdb-162">Se for bem-sucedido, esse método retornará um único recurso [Permission](../resources/permission.md) no corpo da resposta, que representa as permissões de compartilhamento solicitadas.</span><span class="sxs-lookup"><span data-stu-id="effdb-162">If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.</span></span>
 
-<span data-ttu-id="0f44e-156">A resposta será `201 Created` se um novo link de compartilhamento for criado para o item ou `200 OK` se um link existente for retornado.</span><span class="sxs-lookup"><span data-stu-id="0f44e-156">The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.</span></span>
+<span data-ttu-id="effdb-163">A resposta será `201 Created` se um novo link de compartilhamento for criado para o item ou `200 OK` se um link existente for retornado.</span><span class="sxs-lookup"><span data-stu-id="effdb-163">The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0f44e-157">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0f44e-157">Example</span></span>
+## <a name="example"></a><span data-ttu-id="effdb-164">Exemplo</span><span class="sxs-lookup"><span data-stu-id="effdb-164">Example</span></span>
 
-<span data-ttu-id="0f44e-158">O exemplo a seguir solicita um link de compartilhamento que será criado para o DriveItem especificado por {itemId} no OneDrive do usuário.</span><span class="sxs-lookup"><span data-stu-id="0f44e-158">The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.</span></span>
-<span data-ttu-id="0f44e-159">O link de compartilhamento é configurado como somente leitura e utilizável por qualquer pessoa com o link.</span><span class="sxs-lookup"><span data-stu-id="0f44e-159">The sharing link is configured to be read-only and usable by anyone with the link.</span></span>
+<span data-ttu-id="effdb-165">O exemplo a seguir solicita um link de compartilhamento que será criado para o DriveItem especificado por {itemId} no OneDrive do usuário.</span><span class="sxs-lookup"><span data-stu-id="effdb-165">The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.</span></span>
+<span data-ttu-id="effdb-166">O link de compartilhamento é configurado como somente leitura e utilizável por qualquer pessoa com o link.</span><span class="sxs-lookup"><span data-stu-id="effdb-166">The sharing link is configured to be read-only and usable by anyone with the link.</span></span>
 
-### <a name="request"></a><span data-ttu-id="0f44e-160">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0f44e-160">Request</span></span>
+### <a name="request"></a><span data-ttu-id="effdb-167">Solicitação</span><span class="sxs-lookup"><span data-stu-id="effdb-167">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="0f44e-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="0f44e-161">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="effdb-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="effdb-168">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-link"
@@ -104,29 +106,30 @@ Content-type: application/json
 
 {
   "type": "view",
+  "password": "ThisIsMyPrivatePassword",
   "scope": "anonymous"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="0f44e-162">C#</span><span class="sxs-lookup"><span data-stu-id="0f44e-162">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="effdb-169">C#</span><span class="sxs-lookup"><span data-stu-id="effdb-169">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-link-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0f44e-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0f44e-163">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="effdb-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="effdb-170">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-link-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0f44e-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0f44e-164">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="effdb-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="effdb-171">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-link-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0f44e-165">Java</span><span class="sxs-lookup"><span data-stu-id="0f44e-165">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="effdb-172">Java</span><span class="sxs-lookup"><span data-stu-id="effdb-172">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-link-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="0f44e-166">Resposta</span><span class="sxs-lookup"><span data-stu-id="0f44e-166">Response</span></span>
+### <a name="response"></a><span data-ttu-id="effdb-173">Resposta</span><span class="sxs-lookup"><span data-stu-id="effdb-173">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -145,20 +148,21 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
+  "hasPassword": true
 }
 ```
 
-## <a name="creating-company-sharable-links"></a><span data-ttu-id="0f44e-167">Criando links compartilháveis pela empresa</span><span class="sxs-lookup"><span data-stu-id="0f44e-167">Creating company sharable links</span></span>
+## <a name="creating-company-sharable-links"></a><span data-ttu-id="effdb-174">Criando links compartilháveis pela empresa</span><span class="sxs-lookup"><span data-stu-id="effdb-174">Creating company sharable links</span></span>
 
-<span data-ttu-id="0f44e-168">O OneDrive for Business e o SharePoint oferecem suporte a links compartilháveis pela empresa.</span><span class="sxs-lookup"><span data-stu-id="0f44e-168">OneDrive for Business and SharePoint support company sharable links.</span></span>
-<span data-ttu-id="0f44e-169">Estes são semelhantes a links anônimos, com a diferença de que apenas funcionam para membros da organização proprietária.</span><span class="sxs-lookup"><span data-stu-id="0f44e-169">These are similar to anonymous links, except they only work for members of the owning organization.</span></span>
-<span data-ttu-id="0f44e-170">Para criar um link compartilhável pela empresa, use o parâmetro **scope** com um valor de `organization`.</span><span class="sxs-lookup"><span data-stu-id="0f44e-170">To create a company sharable link, use the **scope** parameter with a value of `organization`.</span></span>
+<span data-ttu-id="effdb-175">O OneDrive for Business e o SharePoint oferecem suporte a links compartilháveis pela empresa.</span><span class="sxs-lookup"><span data-stu-id="effdb-175">OneDrive for Business and SharePoint support company sharable links.</span></span>
+<span data-ttu-id="effdb-176">Estes são semelhantes a links anônimos, com a diferença de que apenas funcionam para membros da organização proprietária.</span><span class="sxs-lookup"><span data-stu-id="effdb-176">These are similar to anonymous links, except they only work for members of the owning organization.</span></span>
+<span data-ttu-id="effdb-177">Para criar um link compartilhável pela empresa, use o parâmetro **scope** com um valor de `organization`.</span><span class="sxs-lookup"><span data-stu-id="effdb-177">To create a company sharable link, use the **scope** parameter with a value of `organization`.</span></span>
 
-### <a name="request"></a><span data-ttu-id="0f44e-171">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0f44e-171">Request</span></span>
+### <a name="request"></a><span data-ttu-id="effdb-178">Solicitação</span><span class="sxs-lookup"><span data-stu-id="effdb-178">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="0f44e-172">HTTP</span><span class="sxs-lookup"><span data-stu-id="0f44e-172">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="effdb-179">HTTP</span><span class="sxs-lookup"><span data-stu-id="effdb-179">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite", "tags": "service.sharepoint" } -->
 
 ```http
@@ -170,26 +174,26 @@ Content-Type: application/json
   "scope": "organization"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="0f44e-173">C#</span><span class="sxs-lookup"><span data-stu-id="0f44e-173">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="effdb-180">C#</span><span class="sxs-lookup"><span data-stu-id="effdb-180">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-link-scoped-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0f44e-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0f44e-174">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="effdb-181">JavaScript</span><span class="sxs-lookup"><span data-stu-id="effdb-181">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-link-scoped-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0f44e-175">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0f44e-175">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="effdb-182">Objective-C</span><span class="sxs-lookup"><span data-stu-id="effdb-182">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-link-scoped-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0f44e-176">Java</span><span class="sxs-lookup"><span data-stu-id="0f44e-176">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="effdb-183">Java</span><span class="sxs-lookup"><span data-stu-id="effdb-183">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-link-scoped-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="0f44e-177">Resposta</span><span class="sxs-lookup"><span data-stu-id="0f44e-177">Response</span></span>
+### <a name="response"></a><span data-ttu-id="effdb-184">Resposta</span><span class="sxs-lookup"><span data-stu-id="effdb-184">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -208,20 +212,20 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
 }
 ```
 
-## <a name="creating-embeddable-links"></a><span data-ttu-id="0f44e-178">Criar links inseríveis</span><span class="sxs-lookup"><span data-stu-id="0f44e-178">Creating embeddable links</span></span>
+## <a name="creating-embeddable-links"></a><span data-ttu-id="effdb-185">Criar links inseríveis</span><span class="sxs-lookup"><span data-stu-id="effdb-185">Creating embeddable links</span></span>
 
-<span data-ttu-id="0f44e-p112">Ao usar o tipo de link `embed`, a webUrl retornada pode ser inserida em um elemento HTML `<iframe>`. Quando um link de inserção é criado, a propriedade `webHtml` contém o código HTML de um `<iframe>` para hospedar o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="0f44e-p112">When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element. When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.</span></span>
+<span data-ttu-id="effdb-p113">Ao usar o tipo de link `embed`, a webUrl retornada pode ser inserida em um elemento HTML `<iframe>`. Quando um link de inserção é criado, a propriedade `webHtml` contém o código HTML de um `<iframe>` para hospedar o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="effdb-p113">When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element. When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.</span></span>
 
-<span data-ttu-id="0f44e-181">**Observação:** os links de inseridos só tem suporte no OneDrive Pessoal.</span><span class="sxs-lookup"><span data-stu-id="0f44e-181">**Note:** Embed links are only supported for OneDrive personal.</span></span>
+<span data-ttu-id="effdb-188">**Observação:** os links de inseridos só tem suporte no OneDrive Pessoal.</span><span class="sxs-lookup"><span data-stu-id="effdb-188">**Note:** Embed links are only supported for OneDrive personal.</span></span>
 
-### <a name="request"></a><span data-ttu-id="0f44e-182">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0f44e-182">Request</span></span>
+### <a name="request"></a><span data-ttu-id="effdb-189">Solicitação</span><span class="sxs-lookup"><span data-stu-id="effdb-189">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="0f44e-183">HTTP</span><span class="sxs-lookup"><span data-stu-id="0f44e-183">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="effdb-190">HTTP</span><span class="sxs-lookup"><span data-stu-id="effdb-190">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite", "tags": "service.onedrive service.graph" } -->
 
 ```http
@@ -232,26 +236,26 @@ Content-Type: application/json
   "type": "embed"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="0f44e-184">C#</span><span class="sxs-lookup"><span data-stu-id="0f44e-184">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="effdb-191">C#</span><span class="sxs-lookup"><span data-stu-id="effdb-191">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-embedded-link-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0f44e-185">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0f44e-185">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="effdb-192">JavaScript</span><span class="sxs-lookup"><span data-stu-id="effdb-192">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-embedded-link-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0f44e-186">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0f44e-186">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="effdb-193">Objective-C</span><span class="sxs-lookup"><span data-stu-id="effdb-193">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-embedded-link-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0f44e-187">Java</span><span class="sxs-lookup"><span data-stu-id="0f44e-187">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="effdb-194">Java</span><span class="sxs-lookup"><span data-stu-id="effdb-194">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-embedded-link-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="0f44e-188">Resposta</span><span class="sxs-lookup"><span data-stu-id="0f44e-188">Response</span></span>
+### <a name="response"></a><span data-ttu-id="effdb-195">Resposta</span><span class="sxs-lookup"><span data-stu-id="effdb-195">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -274,11 +278,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="0f44e-189">Comentários</span><span class="sxs-lookup"><span data-stu-id="0f44e-189">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="effdb-196">Comentários</span><span class="sxs-lookup"><span data-stu-id="effdb-196">Remarks</span></span>
 
-* <span data-ttu-id="0f44e-190">Links criados usando esta ação não expiram, a menos que uma política de expiração padrão seja imposta à organização.</span><span class="sxs-lookup"><span data-stu-id="0f44e-190">Links created using this action do not expire unless a default expiration policy is enforced for the organization.</span></span>
-* <span data-ttu-id="0f44e-191">Os links ficam visíveis nas permissões de compartilhamento do item e podem ser removidos por um proprietário desse item.</span><span class="sxs-lookup"><span data-stu-id="0f44e-191">Links are visible in the sharing permissions for the item and can be removed by an owner of the item.</span></span>
-* <span data-ttu-id="0f44e-192">Os links sempre apontam para a versão atual de um item, a menos que esse item esteja em check-out (apenas no SharePoint).</span><span class="sxs-lookup"><span data-stu-id="0f44e-192">Links always point to the current version of a item unless the item is checked out (SharePoint only).</span></span>
+* <span data-ttu-id="effdb-197">Links criados usando esta ação não expiram, a menos que uma política de expiração padrão seja imposta à organização.</span><span class="sxs-lookup"><span data-stu-id="effdb-197">Links created using this action do not expire unless a default expiration policy is enforced for the organization.</span></span>
+* <span data-ttu-id="effdb-198">Os links ficam visíveis nas permissões de compartilhamento do item e podem ser removidos por um proprietário desse item.</span><span class="sxs-lookup"><span data-stu-id="effdb-198">Links are visible in the sharing permissions for the item and can be removed by an owner of the item.</span></span>
+* <span data-ttu-id="effdb-199">Os links sempre apontam para a versão atual de um item, a menos que esse item esteja em check-out (apenas no SharePoint).</span><span class="sxs-lookup"><span data-stu-id="effdb-199">Links always point to the current version of a item unless the item is checked out (SharePoint only).</span></span>
 
 <!-- {
   "type": "#page.annotation",
