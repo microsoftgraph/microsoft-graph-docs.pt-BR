@@ -5,20 +5,20 @@ ms.date: 09/10/2017
 title: Enviar um convite para acessar um item
 localization_priority: Normal
 ms.prod: sharepoint
-description: Envia um convite de compartilhamento para um DriveItem.
+description: Envia um convite de compartilhamento para um driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 129cbeaf43c9c409b645a7a94b8b4a3371329a8b
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: 327f929a6b3fb2d3c45a39fc50af659a119fbe5c
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146419"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934840"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
 Namespace: microsoft.graph
 
-Envia um convite de compartilhamento para um **DriveItem**.
+Envia um convite de compartilhamento para um **driveItem**.
 Um convite de compartilhamento fornece permissões para os destinatários e, opcionalmente, envia um email com um [link de compartilhamento][].
 
 ## <a name="permissions"></a>Permissões
@@ -69,6 +69,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | requireSignIn    | Booleano                        | Especifica se o destinatário do convite precisa fazer logon para visualizar o item compartilhado.
 | sendInvitation   | Booliano                        | Se verdadeiro, um [link de compartilhamento][] será enviado ao destinatário. Caso contrário, uma permissão é concedida diretamente sem enviar uma notificação.
 | funções            | Collection(String)             | Especifique as funções que devem ser concedidas aos destinatários do convite de compartilhamento.
+| expirationDateTime | DateTimeOffset                       | Especifique o DateTime após o qual a permissão expira. Disponível em contas pessoais do OneDrive para o OneDrive for Business, SharePoint e Premium.
+| password           | String                         | A senha definida no convite pelo criador. Opcional e o OneDrive somente pessoal.
 
 ## <a name="example"></a>Exemplo
 
@@ -96,7 +98,9 @@ Content-type: application/json
   "message": "Here's the file that we're collaborating on.",
   "requireSignIn": true,
   "sendInvitation": true,
-  "roles": [ "write" ]
+  "roles": [ "write" ],
+  "password": "password123",
+  "expirationDateTime": "2018-07-15T14:00:00.000Z"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -137,12 +141,14 @@ Content-type: application/json
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
         }
       },
+      "hasPassword": true,
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
         "email": "ryan@contoso.com",
         "signInRequired": true
       },
-      "roles": [ "write" ]
+      "roles": [ "write" ],
+      "expirationDateTime": "2018-07-15T14:00:00.000Z"
     }
   ]
 }

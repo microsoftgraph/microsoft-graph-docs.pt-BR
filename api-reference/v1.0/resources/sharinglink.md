@@ -7,16 +7,16 @@ localization_priority: Normal
 description: O recurso SharingLink agrupa itens de dados relacionados ao link em uma única estrutura.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3195207588061840c4e1394e1460f74d3728510c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6a696a95c3c636a84bb79498375b0c023617548d
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446860"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934882"
 ---
 # <a name="sharinglink-resource-type"></a>Tipo de recurso SharingLink
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 O recurso **SharingLink** agrupa itens de dados relacionados ao link em uma única estrutura.
 
@@ -35,6 +35,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "application": { "@odata.type": "microsoft.graph.identity" },
+  "preventsDownload": false,
   "type": "view | edit | embed",
   "scope": "anonymous | organization",
   "webHtml": "string",
@@ -49,6 +50,7 @@ Veja a seguir uma representação JSON do recurso.
 | aplicativo | [identity][]  | O aplicativo ao qual o link está associado.
 | type        | String        | O tipo do link criado.
 | scope       | Cadeia de caracteres        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
+| preventsDownload | Boolean       | Se true, o usuário só pode usar este link para exibir o item na Web e não pode usá-lo para baixar o conteúdo do item. Somente para o OneDrive for Business e o SharePoint.
 | webHtml     | String        | Para links `embed`, essa propriedade contém o código HTML para um elemento `<iframe>` que inserirá o item em uma página da Web.
 | webUrl      | String        | Uma URL que abre o item no navegador no site do OneDrive.
 

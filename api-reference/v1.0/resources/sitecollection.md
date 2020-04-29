@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: O recurso siteCollection fornece mais informações sobre um conjunto de sites.
 doc_type: resourcePageType
-ms.openlocfilehash: 2e34b4fdb63a825e87cea8eda6117232ee1da93d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f73505ead4ad060f81bdfe7e77099783a8ff0242
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533684"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934819"
 ---
 # <a name="sitecollection-resource"></a>Recurso SiteCollection
 
@@ -36,6 +36,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "hostname": "contoso.sharepoint.com",
+  "dataLocationCode": "EUR",
   "root": { "@odata.type": "microsoft.graph.root" }
 }
 ```
@@ -45,6 +46,7 @@ Veja a seguir uma representação JSON do recurso.
 | Nome da propriedade        | Tipo     | Descrição
 |:---------------------|:---------|:---------------------------------------------------
 | **hostname**         | string   | O nome do host do conjunto de sites. Somente leitura.
+| **dataLocationCode** | string   | O código de região geográfica para onde esse conjunto de sites reside. Somente leitura.
 | **root**             | [root][] | Se presente, indica que esse é um conjunto de sites raiz no SharePoint. Somente leitura.
 
 [root]: root.md

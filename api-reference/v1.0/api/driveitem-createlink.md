@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Você pode usar a ação createLink para compartilhar um DriveItem por meio de um link de compartilhamento.
 doc_type: apiPageType
-ms.openlocfilehash: 29d29e476a3991fd725d1c1774ac90725436b8db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: edd0259e35191c112c779b0afd545f7848675e8d
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517780"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934847"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Criar um link de compartilhamento para um DriveItem
 
@@ -51,9 +51,11 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 O corpo da solicitação define as propriedades do link de compartilhamento que seu aplicativo está solicitando.
 A solicitação deve ser um objeto JSON com as seguintes propriedades.
 
-|   Nome    |  Tipo  |                                 Descrição                                  |
-| :-------- | :----- | :--------------------------------------------------------------------------- |
-| **type**  | string | O tipo de link de compartilhamento a ser criado. Pode ser `view`, `edit` ou `embed`.       |
+|   Nome       |  Tipo  |                                 Descrição                                  |
+| :------------| :----- | :--------------------------------------------------------------------------- |
+| **type**     | string | O tipo de link de compartilhamento a ser criado. Pode ser `view`, `edit` ou `embed`.       |
+| **password** | string | A senha do link de compartilhamento que é definida pelo criador. Opcional e o OneDrive somente pessoal.
+| **expirationDateTime** | string | Uma cadeia de caracteres com formato AAAA-MM-ddTHH: mm: ssZ de DateTime indica o tempo de expiração da permissão. |
 | **scope** | string | Opcional. O escopo do link a ser criado. Pode ser `anonymous` ou `organization`. |
 
 
@@ -104,6 +106,7 @@ Content-type: application/json
 
 {
   "type": "view",
+  "password": "ThisIsMyPrivatePassword",
   "scope": "anonymous"
 }
 ```
@@ -145,7 +148,8 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
+  "hasPassword": true
 }
 ```
 
@@ -208,7 +212,7 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
 }
 ```
 

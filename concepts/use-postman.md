@@ -3,12 +3,12 @@ title: Use o Postman com a API do Microsoft Graph
 description: Use a coleção do Microsoft Graph Postman para começar a usar as APIs do Microsoft Graph em questão minutos.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: e548fed509bcf26ce7c733354a5ab3c52ab551c1
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9ca41df4321426181589ab3dbab5a76c0c683aaa
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868482"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916883"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Use o Postman com a API do Microsoft Graph
 
@@ -22,30 +22,7 @@ Este artigo explica como começar a usar o Postman e o Microsoft Graph. Você ta
 Você pode acessar a coleção no Postman de duas maneiras: adquirindo-o ou contribuindo para ele. Primeiro, o [Postman](https://www.getpostman.com/) precisará estar em execução no seu computador.
 
 ### <a name="consume-the-collection"></a>Adquirir a coleção
-Adquirir a coleção é a maneira mais fácil de começar a usar as APIs do Microsoft Graph. O [link de compartilhamento do Postman](https://www.getpostman.com/collections/d89a737b5f0c0825898a) iniciará o Postman.
-
-A vantagem de usar a coleção compartilhada é que novas solicitações serão exibidas automaticamente, sem a necessidade de etapas adicionais.
-
-Após obter a coleção, você precisará configurar as variáveis do ambiente:
-
-1. Selecione **Arquivo | Importar ...**.
-2. Selecione **Importar do link**.
-3. Copie e cole o seguinte URL e selecione **Importar**.
- 
-    ```
-    https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json
-    ```
-
-Você deverá ver o **ambiente do Microsoft Graph** na lista suspensa do ambiente na parte superior direita, próximo ao ícone de olho. Agora, você precisará [configurar o seu ambiente](#using-the-collection).
-
-### <a name="contribute-to-the-collection"></a>Contribua para a coleção
-Se você desejar contribuir com suas próprias solicitações, você precisará bifurcar o repositório github das [coleções do Microsoft Graph Postman](https://github.com/microsoftgraph/microsoftgraph-postman-collections). 
-
-Para detalhes sobre como fazer isso, assista ao vídeo a seguir.
-
-> [!VIDEO https://www.youtube-nocookie.com/embed/4tg-OBdv_8o]
-
-Para importar as coleções do Postman:
+Adquirir a coleção é a maneira mais fácil de começar a usar as APIs do Microsoft Graph. Para importar as coleções do Postman:
 
 1. Baixe e registre-se no [Postman](https://www.getpostman.com/).
 2. Selecione **Arquivo | Importar ...**.
@@ -61,7 +38,7 @@ Para importar as coleções do Postman:
 
     ```
 
-Você deverá ver a coleção do **Microsoft Graph** no painel **Coleções**.
+Você deverá ver o **ambiente do Microsoft Graph** na lista suspensa do ambiente na parte superior direita, próximo ao ícone de olho. Agora, você precisará [configurar o seu ambiente](#using-the-collection).
 
 ## <a name="using-the-collection"></a>Usando a coleção
 Após obter a coleção do **Microsoft Graph** e o **ambiente do Microsoft Graph** no Postman, siga estas etapas.
@@ -105,3 +82,11 @@ Se você não deseja armazenar nomes de usuário e senhas em variáveis de ambie
 6. Copie o token de acesso, abra as suas variáveis de ambiente e cole-o no campo **UserAccessToken**.
 
 Agora todas as suas solicitações irão funcionar.
+
+
+### <a name="contribute-to-the-collection"></a>Contribua para a coleção
+Se você desejar contribuir com suas próprias solicitações, você precisará bifurcar o repositório github das [coleções do Microsoft Graph Postman](https://github.com/microsoftgraph/microsoftgraph-postman-collections). 
+
+Para detalhes sobre como fazer isso, assista ao vídeo a seguir.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/4tg-OBdv_8o]
