@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: be567e1ba44790c54127ccee17dbb0d396f15e0c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a3389737581e9c327ff48e9ff3065c399c568cb8
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520552"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934875"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -34,8 +34,9 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | [Listar páginas][]                 | GET /sites/{site-id}/pages
 | [Lista sites raiz][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Procurar sites][]           | GET /sites?search={query}
-| [Seguir Site][]                | POST /users/{user-id}/followedSites/add
-| [Deixar de Seguir Site][]              | POST /users/{user-id}/followedSites/remove
+| [Seguir site][]                | POST /users/{user-id}/followedSites/add
+| [Deixar de seguir site][]              | POST /users/{user-id}/followedSites/remove
+| [Listar sites seguidos][]        | POST /me/followedSites
 
 [Obter site]: ../api/site-get.md
 [Obter site raiz]: ../api/site-get.md
@@ -48,6 +49,7 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 [Procurar sites]: ../api/site-search.md
 [Seguir site]: ../api/site-follow.md
 [Deixar de seguir site]: ../api/site-unfollow.md
+[Listar sites seguidos]: ../api/sites-list-followed.md
 
 
 ## <a name="properties"></a>Propriedades

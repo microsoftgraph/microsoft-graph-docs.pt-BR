@@ -6,12 +6,12 @@ description: O recurso do site fornece metadados e relações para um site do Sh
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 7ba96c6cc62bd6efbff8e0efb6062104d994090c
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: a4e67deb63850bdc938f72f5e517bc28a5a8df03
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108547"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934854"
 ---
 # <a name="site-resource"></a>Recurso do site
 
@@ -30,8 +30,9 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | [Obter análises][]              | [itemAnalytics][] | Obter análises para este recurso. 
 | [Obter atividades por intervalo][] | [itemActivityStat][] | Obter uma coleção de **itemActivityStats** dentro do intervalo de tempo especificado.
 | [Pesquisar sites][]     | coleção de sites | Pesquise num locatário do SharePoint por sites que correspondam a palavras-chave fornecidas.
-| [Seguir Site][]          | coleção de sites | Seguir um ou vários sites de usuário.
-| [Deixar de Seguir Site][]        | coleção de sites | Seguir um ou vários sites de usuário.
+| [Seguir site][]          | coleção de sites | Seguir um ou vários sites de usuário.
+| [Deixar de seguir site][]        | coleção de sites | Seguir um ou vários sites de usuário.
+| [Listar sites seguidos][]  | coleção de sites | Liste os sites que foram seguidos pelo usuário conectado.
 
 [Obter site]: ../api/site-get.md
 [Obter site raiz]: ../api/site-get.md
@@ -43,6 +44,7 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 [itemActivityStat]: itemactivitystat.md
 [Seguir site]: ../api/site-follow.md
 [Deixar de seguir site]: ../api/site-unfollow.md
+[Listar sites seguidos]: ../api/sites-list-followed.md
 
 ## <a name="properties"></a>Propriedades
 
