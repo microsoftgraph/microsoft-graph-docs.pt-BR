@@ -5,16 +5,18 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3420f229d26ecbcce1a39de03c50dd084c828d94
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d11d5043e759900810315d4b3e3af8310cb996f0
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447056"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934903"
 ---
 # <a name="profilephoto-resource-type"></a>Tipo de recurso de profilePhoto
 
-Namespace: microsoft.graph. Uma foto de perfil de um usuário, grupo ou contato do Outlook acessada do Exchange Online. São dados binários não codificados em base 64.
+Namespace: microsoft.graph
+
+Uma foto de perfil de um usuário, grupo ou contato do Outlook acessada do Exchange Online. Seus dados binários não são codificados em base 64.
 
 Os tamanhos de fotos em HD compatíveis com o Exchange Online são os seguintes: “48x48”, “64x64”, “96x96”, “120x120”, “240x240”, “360x360”, “432x432”, “504x504” e “648x648”. 
 
