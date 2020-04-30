@@ -7,12 +7,12 @@ localization_priority: Priority
 description: O recurso Permission fornece informações sobre uma permissão de compartilhamento concedida a um recurso DriveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 770a57c3e8a0fa5bd0579bbfeb6e4fab5089cca2
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: 5c4b881aaf10a56b65342dccebd417867c2b7b26
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146412"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934700"
 ---
 # <a name="permission-resource-type"></a>Tipo de recurso permission
 
@@ -32,9 +32,12 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
     "link",
     "grantedTo",
+    "grantedToIdentities",
     "invitation",
     "inheritedFrom",
-    "shareId"
+    "shareId",
+    "expirationDateTime",
+    "hasPassword"
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
@@ -44,11 +47,14 @@ Veja a seguir uma representação JSON do recurso
 {
   "id": "string (identifier)",
   "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},
+  "grantedToIdentities": [{"@odata.type": "microsoft.graph.identitySet"}],
   "inheritedFrom": {"@odata.type": "microsoft.graph.itemReference"},
   "invitation": {"@odata.type": "microsoft.graph.sharingInvitation"},
   "link": {"@odata.type": "microsoft.graph.sharingLink"},
   "roles": ["string"],
-  "shareId": "string"
+  "shareId": "string",
+  "expirationDateTime": "string (timestamp)",
+  "hasPassword": "boolean"
 }
 ```
 
@@ -58,11 +64,14 @@ Veja a seguir uma representação JSON do recurso
 |:--------------|:------------------------------------------|:-----------------
 | id            | String                                    | O identificador exclusivo da permissão entre todas as permissões no item. Somente leitura.
 | grantedTo     | [IdentitySet](identityset.md)             | Para permissões de tipo de usuário, os detalhes de usuários e aplicativos para esta permissão. Somente leitura.
+| grantedToIdentities | Coleção([IdentitySet](identityset.md)) | Para permissões de tipo de link, os detalhes dos usuários aos quais a permissão foi concedida. Somente leitura.
 | invitation    | [SharingInvitation][]                     | Detalhes de um convite de compartilhamento associado para esta permissão. Somente leitura.
 | inheritedFrom | [ItemReference](itemreference.md)         | Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.
 | vínculo          | [SharingLink][]                           | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
 | funções         | Coleção de Cadeias de Caracteres                      | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
 | shareId       | Cadeia de caracteres                                    | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da [**API** Shares](../api/shares-get.md). Somente leitura.
+| expirationDateTime  | DateTimeOffset              | Um formato yyyy-MM-ddTHH:mm:ssZ de DateTimeOffset indica o tempo de expiração da permissão. DateTime.MinValue indica que não há expiração definida para esta permissão. Opcional.
+| hasPassword         | Boolean                     | Isso indica se a senha está configurada para esta permissão, está sendo exibida apenas em resposta. Opcional e Somente leitura e somente para o OneDrive Personal.
 
 O recurso permission usa _facetas_ para fornecer informações sobre o tipo de permissão representado pelo recurso.
 
@@ -98,7 +107,8 @@ Um link de exibição oferece acesso somente leitura a um item.
     "webUrl": "https://onedrive.live.com/redir?resid=5D33DD65C6932946!70859&authkey=!AL7N1QAfSWcjNU8&ithint=folder%2cgif",
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
-  "shareId": "!LKj1lkdlals90j1nlkascl"
+  "shareId": "!LKj1lkdlals90j1nlkascl",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
@@ -115,7 +125,40 @@ Um link de edição fornece acesso de leitura e gravação a um item.
     "webUrl": "https://onedrive.live.com/redir?resid=5D33DD65C6932946!70859&authkey=!AL7N1QAfSWcjNU8&ithint=folder%2cgif",
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
-  "shareId": "!LKj1lkdlals90j1nlkascl"
+  "shareId": "!LKj1lkdlals90j1nlkascl",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
+}
+```
+### <a name="specific-people-link"></a>Link de pessoas específicas
+
+Este link fornece acesso de leitura e gravação para as pessoas específicas na coleção `grantedToIdentities`.
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
+
+```json
+{
+  "id": "3",
+  "grantedToIdentities": [
+    {
+       "user": {
+        "id": "35fij1974gb8832",
+        "displayName": "Misty Suarez"
+      }
+    },
+    {
+       "user": {
+        "id": "9397721fh4hgh73",
+        "displayName": "Judith Clemons"
+      }
+    }
+  ],
+  "roles": ["write"],
+  "link": {
+    "webUrl": "https://contoso.sharepoint.com/:w:/t/design/a577ghg9hgh737613bmbjf839026561fmzhsr85ng9f3hjck2t5s",
+    "application": { "id": "1234", "displayName": "Sample Application" }
+  },
+  "shareId": "!LKj1lkdlals90j1nlkascl",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
@@ -153,7 +196,8 @@ Se a permissão for enviada por meio do endereço de email para um destinatário
     "email": "jd@gmail.com",
     "signInRequired": true
   },
-  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U"
+  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
@@ -174,7 +218,8 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
     "email": "jd@outlook.com",
     "signInRequired": true
   },
-  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U"
+  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 

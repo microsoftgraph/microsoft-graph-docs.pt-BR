@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9fe122c20a2b8eaef32a72c5dea6784e189b9174
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 9f85832dc557a2e2242c30cd983cfb9800382176
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805952"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934707"
 ---
 # <a name="create-onlinemeeting"></a>Criar ReuniãoOnline
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
 | Aplicativo                            | OnlineMeetings.ReadWrite.All*  |
 
-> \* **Observação:** as permissões de aplicativo foram preteridas e serão removidas em julho de 2020. Para criar uma reunião online usando permissões de aplicativo, confira [Criar evento](user-post-events.md).
+> \* **Observação:** as permissões de aplicativo foram preteridas e serão removidas em julho de 2020. Para criar um evento do Outlook, usando permissões de aplicativo, confira [Criar evento](user-post-events.md).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
