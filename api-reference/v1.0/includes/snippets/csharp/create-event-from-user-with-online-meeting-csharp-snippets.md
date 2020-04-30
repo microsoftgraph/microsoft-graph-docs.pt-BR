@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b41c44a10490996889095b50ba0e6fd7fa746b57
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: e4a31d13a9e167d433011df1a9c84b49d74c6e16
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43771076"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43935125"
 ---
 ```csharp
 
@@ -45,7 +45,6 @@ var @event = new Event
             Type = AttendeeType.Required
         }
     },
-    AllowNewTimeProposals = true,
     IsOnlineMeeting = true,
     OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness
 };
