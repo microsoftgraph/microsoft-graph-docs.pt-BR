@@ -5,15 +5,13 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 67b55dc01cbbc9ae5188e93a5bf24248e2ded483
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 2097f67c23923d7d61c8a16aa389487ee6a45de8
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948384"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991821"
 ---
-# <a name="enum-values"></a>Valores de enumeração
-
 Namespace: microsoft.graph
 
 ### <a name="attachmenttype-values"></a>valores AttachmentType
@@ -94,7 +92,7 @@ Namespace: microsoft.graph
 |:---|
 |nenhuma|
 |automóvel|
-|calendar|
+|calendário|
 |com|
 |plano|
 |firstAid|
@@ -204,7 +202,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| deficiência
+| desabilitadas
 | alwaysEnabled
 | agendado
 
@@ -589,9 +587,9 @@ Namespace: microsoft.graph
 | preset8  | 8      |
 | preset9  | 9      |
 | preset10 | 10     |
-| preset11 | 11    |
+| preset11 | 11     |
 | preset12 | 12     |
-| preset13 | 13     |
+| preset13 | Treze    |
 | preset14 | 14     |
 | preset15 | 15     |
 | preset16 | 16     |
@@ -700,7 +698,7 @@ Enumeração para tipos de valor do registro, conforme definido pelos [tipos de 
 | nenhuma              | 8      | REG_NONE tipo de valor do registro.                |
 | QWORD             | 9      | REG_QWORD tipo de valor do registro.               |
 | qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN tipo de valor do registro. |
-| v                | 11    | REG_SZ tipo de valor do registro.                  |
+| v                | 11     | REG_SZ tipo de valor do registro.                  |
 
 ### <a name="alertseverity-values"></a>valores de alertSeverity
 
@@ -890,7 +888,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | Nenhuma   | ,0     |
 | Adicionar    | 1     |
 | Atualizar | duas     |
-| Delete | 4      |
+| Excluir | 4      |
 
 ### <a name="chatmessagetype-values"></a>valores de chatMessageType
 
@@ -1040,8 +1038,8 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 |Member|
 |:---|
-|enabled|
-|deficiência|
+|habilitadas|
+|desabilitadas|
 
 ### <a name="conditionalaccessclientapp"></a>conditionalAccessClientApp
 
@@ -1167,9 +1165,9 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | firstTimeSender       | 8      | Bloqueado devido ao remetente pela primeira vez.   |
 | autoPurgeToInbox      | 9      | Mensagem de movimentação de viagem para a caixa de entrada.   |
 | autoPurgeToJunk       | 10     | Mensagem de movimentação de viagens para lixo eletrônico.    |
-| autoPurgeToDeleted    | 11    | Mensagem de movimentação de viagens para exclusão. |
+| autoPurgeToDeleted    | 11     | Mensagem de movimentação de viagens para exclusão. |
 | saída              | 12     | Emails de saída.                      |
-| Não é lixo eletrônico               | 13     | Permitir por não ser lixo eletrônico.              |
+| Não é lixo eletrônico               | Treze    | Permitir por não ser lixo eletrônico.              |
 | desejado                  | 14     | Bloqueado devido a lixo eletrônico.                |
 | unknownFutureValue    | 15     | Um membro Sentinel.                  |
 

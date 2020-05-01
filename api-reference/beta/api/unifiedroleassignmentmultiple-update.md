@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5a30e9378cceb5c1dd533f62bc28be097660536f
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9f14a39442a5119a9965753669c5837a46f8fc88
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218959"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991807"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>Atualizar unifiedRoleAssignmentMultiple
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegada (conta corporativa ou de estudante) | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
+| Delegado (conta corporativa ou de estudante) | DeviceManagementRBAC.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

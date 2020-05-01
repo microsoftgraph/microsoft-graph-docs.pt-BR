@@ -3,18 +3,18 @@ title: Tipo de recurso localeInfo
 description: Informações sobre a localidade, incluindo o idioma preferencial e o país/região do usuário conectado.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: bb6c8adbc76e0024f5168a8dbc52e8f56582dab3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: outlook
+author: svpsiva
+ms.openlocfilehash: d86c8f1a4d9760c8effe41defbb6d3cdb828f192
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522929"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991786"
 ---
 # <a name="localeinfo-resource-type"></a>Tipo de recurso localeInfo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

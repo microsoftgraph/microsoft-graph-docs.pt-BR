@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 174c848da527fb0f32bd3102e01dfcff5baffa40
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: f0b607527ed6ef3347404010a27608f6e8df8dd6
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218973"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991751"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>Listar UnifiedRoleAssignmentMultiple
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegada (conta corporativa ou de estudante) | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante) | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
