@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 0d88d67f9a98292cac4c8a74694f6d09f4eb0916
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 70872cb67dd69be3fb363362f9de6070cedcddda
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917324"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934805"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -77,6 +77,19 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | v1.0        | Foram adicionadas as ações [fazer check-in](/graph/api/driveitem-checkin?view=graph-rest-v1.0) e [fazer check-out](/graph/api/driveitem-checkin?view=graph-rest-v1.0) no recurso [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
 
+### <a name="files-onedrive-for-business"></a>Arquivos (OneDrive for Business)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | beta        | A propriedade de navegação [folowedSites](/graph/api/sites-list-followed?view=graph-rest-beta) foi adicionada ao conjunto de entidades do [usuário](/graph/api/resources/user?view=graph-rest-beta) |
+| Adição        | v1.0        | A propriedade de navegação[folowedSites](/graph/api/sites-list-followed?view=graph-rest-1.0) foi adicionada ao conjunto de entidades do [usuário](/graph/api/resources/user?view=graph-rest-1.0) |
+| Adição        | v1.0        | Adicionadas as propriedades **expirationDateTime**, **senha**e **mensagem** na ação [createLink][/graph/api/driveitem-createlink?view=graph-rest-1.0] em um recurso[driveItem](/graph/resources/driveitem?view=graph-rest-1.0). |
+| Adição        | v1.0        | Propriedade **dataLocaton** adicionada no recurso [siteCollection](/graph/resources/sitecollection?view=graph-rest-1.0). |
+| Adição        | v1.0        | Foi adicionada a propriedade **preventsDownload** ao recurso[sharingLink](/graph/resources/sharinglink?view=graph-rest-1.0). |
+| Adição        | v1.0        | Adicionada a propriedade **tenantId** no recurso[sharepointIds](/graph/resources/sharepointids?view=graph-rest-1.0). |
+| Adição        | v1.0        | Adicionada a propriedade **permissão**ao recurso [sharedDriveItem](/graph/resources/shareddriveitem?view=graph-rest-1.0). |
+| Adição        | v1.0        | Adicionada as propriedades **expirationDateTime**, **hasPassword**e **grantedToIdentities** ao recurso [permissão](/graph/resources/permission?view=graph-rest-1.0). |
+| Adição        | v1.0        | Adicionadas as propriedades**expirationDateTime**e **senha** à ação [convidar](/graph/api/driveitem-invite?view=graph-rest-1.0) em um recurso [driveItem](/graph/resources/driveitem?view=graph-rest-1.0). |
 
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
 
