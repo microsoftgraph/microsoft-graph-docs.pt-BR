@@ -678,6 +678,8 @@
                   href: api/event-list-attachments.md
                 - name: Adicionar anexo
                   href: api/event-post-attachments.md
+                - name: Criar sessão para anexar arquivo grande
+                  href: api/attachment-createuploadsession.md
                 - name: Criar extensão aberta
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: Obter extensão aberta
@@ -726,6 +728,8 @@
                   href: resources/itemattachment.md
                 - name: Tipo de anexo de referência
                   href: resources/referenceattachment.md
+                - name: Criar sessão para anexar arquivo grande
+                  href: api/attachment-createuploadsession.md
                 - name: Obter anexo
                   href: api/attachment-get.md
                 - name: Excluir anexo
@@ -1078,7 +1082,7 @@
                 - name: Trabalhos de impressão
                   href: resources/printjob.md
                   items:
-                    - name: Criar
+                    - name: Create
                       href: api/printer-post-jobs.md
                     - name: Obter
                       href: api/printjob-get.md
@@ -1122,7 +1126,7 @@
                   items:
                     - name: Listar
                       href: api/print-list-printershares.md
-                    - name: Criar
+                    - name: Create
                       href: api/print-post-printershares.md
                     - name: Obter
                       href: api/printershare-get.md
@@ -1714,7 +1718,7 @@
                     - name: Aplicativo gerenciado
                       href: resources/intune-apps-managedapp.md
                       items:
-                        - name: Listar
+                        - name: Lista
                           href: api/intune-apps-managedapp-list.md
                         - name: Obter
                           href: api/intune-apps-managedapp-get.md
@@ -3124,7 +3128,7 @@
                     - name: Perfil certificado PFX importado do Android
                       href: resources/intune-deviceconfig-androidimportedpfxcertificateprofile.md
                       items:
-                        - name: Lista
+                        - name: Listar
                           href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-list.md
                         - name: Obter
                           href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-get.md
@@ -3210,7 +3214,7 @@
                     - name: Configuração de Wi-Fi do Android
                       href: resources/intune-deviceconfig-androidwificonfiguration.md
                       items:
-                        - name: Lista
+                        - name: Listar
                           href: api/intune-deviceconfig-androidwificonfiguration-list.md
                         - name: Obter
                           href: api/intune-deviceconfig-androidwificonfiguration-get.md
@@ -3225,7 +3229,7 @@
                     - name: Base de perfil de certificado do perfil do Android
                       href: resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md
                       items:
-                        - name: Listar
+                        - name: Lista
                           href: api/intune-deviceconfig-androidworkprofilecertificateprofilebase-list.md
                         - name: Obter
                           href: api/intune-deviceconfig-androidworkprofilecertificateprofilebase-get.md
@@ -4707,7 +4711,7 @@
                     - name: Configuração geral do dispositivo macOS
                       href: resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md
                       items:
-                        - name: Lista
+                        - name: Listar
                           href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-list.md
                         - name: Obter
                           href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-get.md
@@ -4720,7 +4724,7 @@
                     - name: Perfil certificado PFX importado do macOS
                       href: resources/intune-deviceconfig-macosimportedpfxcertificateprofile.md
                       items:
-                        - name: Listar
+                        - name: Lista
                           href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-list.md
                         - name: Obter
                           href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-get.md
@@ -8781,7 +8785,7 @@
               items:
                 - name: Listar
                   href: api/administrativeunit-list.md
-                - name: Criar
+                - name: Create
                   href: api/administrativeunit-post-administrativeunits.md
                 - name: Obter
                   href: api/administrativeunit-get.md
@@ -8944,7 +8948,7 @@
                       href: resources/conditionalaccesspolicy.md
                     - name: Listar
                       href: api/conditionalaccessroot-list-policies.md
-                    - name: Criar
+                    - name: Create
                       href: api/conditionalaccessroot-post-policies.md
                     - name: Obter
                       href: api/conditionalaccesspolicy-get.md
@@ -8970,7 +8974,7 @@
                           href: resources/countrynamedlocation.md
                         - name: Listar
                           href: api/conditionalaccessroot-list-namedlocations.md
-                        - name: Criar
+                        - name: Create
                           href: api/conditionalaccessroot-post-namedlocations.md
                         - name: Obter
                           href: api/countrynamedlocation-get.md
@@ -8984,7 +8988,7 @@
                           href: resources/ipnamedlocation.md
                         - name: Listar
                           href: api/conditionalaccessroot-list-namedlocations.md
-                        - name: Criar
+                        - name: Create
                           href: api/conditionalaccessroot-post-namedlocations.md
                         - name: Obter
                           href: api/ipnamedlocation-get.md
@@ -9186,14 +9190,14 @@
                   items:
                     - name: Listar
                       href: api/accesspackageresourcerequest-list.md
-                    - name: Criar
+                    - name: Create
                       href: api/accesspackageresourcerequest-post.md
                 - name: Escopo de função de recurso de pacote de acesso
                   href: resources/accesspackageresourcerolescope.md
                   items:
                     - name: Listar
                       href: api/accesspackage-list-accesspackageresourcerolescopes.md
-                    - name: Criar
+                    - name: Create
                       href: api/accesspackage-post-accesspackageresourcerolescopes.md
             - name: Política de distribuição de recursos
               href: resources/featurerolloutpolicy.md
@@ -9202,7 +9206,7 @@
                   href: api/directory-list-featurerolloutpolicies.md
                 - name: Obter
                   href: api/featurerolloutpolicy-get.md
-                - name: Criar
+                - name: Create
                   href: api/directory-post-featurerolloutpolicies.md
                 - name: Atualizar
                   href: api/featurerolloutpolicy-update.md
@@ -9312,7 +9316,7 @@
                       href: resources/urlassessmentrequest.md
                     - name: Listar
                       href: api/informationprotection-list-threatassessmentrequests.md
-                    - name: Criar
+                    - name: Create
                       href: api/informationprotection-post-threatassessmentrequests.md
                     - name: Obter
                       href: api/threatassessmentrequest-get.md
@@ -9355,7 +9359,7 @@
                       href: api/onpremisesagentgroup-list.md
                     - name: Obter
                       href: api/onpremisesagentgroup-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/onpremisesagentgroup-post.md
                     - name: Atualizar
                       href: api/onpremisesagentgroup-update.md
@@ -9375,7 +9379,7 @@
                       href: api/publishedresource-list.md
                     - name: Obter
                       href: api/publishedresource-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/publishedresource-post.md
                     - name: Atualizar
                       href: api/publishedresource-update.md
@@ -9859,7 +9863,7 @@
                   href: api/message-list-attachments.md
                 - name: Adicionar anexo
                   href: api/message-post-attachments.md
-                - name: Criar sessão para anexar arquivo grande (versão prévia)
+                - name: Criar sessão para anexar arquivo grande
                   href: api/attachment-createuploadsession.md
                 - name: Criar extensão aberta
                   href: api/opentypeextension-post-opentypeextension.md
@@ -9874,7 +9878,7 @@
                   href: resources/itemattachment.md
                 - name: Tipo de anexo de referência
                   href: resources/referenceattachment.md
-                - name: Criar sessão para anexar arquivo grande (versão prévia)
+                - name: Criar sessão para anexar arquivo grande
                   href: api/attachment-createuploadsession.md
                 - name: Obter anexo
                   href: api/attachment-get.md
@@ -11100,6 +11104,8 @@
                   href: api/event-list-attachments.md
                 - name: Adicionar anexo
                   href: api/event-post-attachments.md
+                - name: Criar sessão para anexar arquivo grande
+                  href: api/attachment-createuploadsession.md
                 - name: Criar extensão aberta
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: Obter extensão aberta
