@@ -618,6 +618,8 @@
                   href: api/event-list-attachments.md
                 - name: Adicionar anexo
                   href: api/event-post-attachments.md
+                - name: Criar sessão para anexar arquivo grande
+                  href: api/attachment-createuploadsession.md
                 - name: Criar extensão aberta
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: Obter extensão aberta
@@ -666,6 +668,8 @@
                   href: resources/itemattachment.md
                 - name: Tipo de anexo de referência
                   href: resources/referenceattachment.md
+                - name: Criar sessão para anexar arquivo grande
+                  href: api/attachment-createuploadsession.md
                 - name: Obter anexo
                   href: api/attachment-get.md
                 - name: Excluir anexo
@@ -1050,7 +1054,7 @@
                 - name: Configuração do aplicativo de dispositivo móvel gerenciado
                   href: resources/intune-apps-manageddevicemobileappconfiguration.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-apps-manageddevicemobileappconfiguration-list.md
                     - name: Obter
                       href: api/intune-apps-manageddevicemobileappconfiguration-get.md
@@ -1059,7 +1063,7 @@
                 - name: Atribuição da configuração do aplicativo móvel do dispositivo gerenciado
                   href: resources/intune-apps-manageddevicemobileappconfigurationassignment.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-apps-manageddevicemobileappconfigurationassignment-list.md
                     - name: Obter
                       href: api/intune-apps-manageddevicemobileappconfigurationassignment-get.md
@@ -1072,7 +1076,7 @@
                 - name: Status do dispositivo de configuração do aplicativo móvel gerenciado
                   href: resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-list.md
                     - name: Obter
                       href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-get.md
@@ -2139,7 +2143,7 @@
                 - name: 'Configuração de avaliação segura do Windows 10 '
                   href: resources/intune-deviceconfig-windows10secureassessmentconfiguration.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-windows10secureassessmentconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-windows10secureassessmentconfiguration-get.md
@@ -2152,7 +2156,7 @@
                 - name: Configuração geral do Windows 10 Team
                   href: resources/intune-deviceconfig-windows10teamgeneralconfiguration.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-windows10teamgeneralconfiguration-get.md
@@ -2364,7 +2368,7 @@
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
                     - name: Obter
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-create.md
                     - name: Excluir
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-delete.md
@@ -2377,7 +2381,7 @@
                       href: api/intune-notification-localizednotificationmessage-list.md
                     - name: Obter
                       href: api/intune-notification-localizednotificationmessage-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-notification-localizednotificationmessage-create.md
                     - name: Excluir
                       href: api/intune-notification-localizednotificationmessage-delete.md
@@ -2392,7 +2396,7 @@
                       href: api/intune-devices-manageddevice-list.md
                     - name: Obter
                       href: api/intune-devices-manageddevice-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-devices-manageddevice-create.md
                     - name: Excluir
                       href: api/intune-devices-manageddevice-delete.md
@@ -2454,7 +2458,7 @@
                       href: api/intune-notification-notificationmessagetemplate-list.md
                     - name: Obter
                       href: api/intune-notification-notificationmessagetemplate-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-notification-notificationmessagetemplate-create.md
                     - name: Excluir
                       href: api/intune-notification-notificationmessagetemplate-delete.md
@@ -2473,7 +2477,7 @@
                       href: api/intune-remoteassistance-remoteassistancepartner-list.md
                     - name: Obter
                       href: api/intune-remoteassistance-remoteassistancepartner-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-remoteassistance-remoteassistancepartner-create.md
                     - name: Excluir
                       href: api/intune-remoteassistance-remoteassistancepartner-delete.md
@@ -2508,7 +2512,7 @@
                       href: api/intune-mam-androidmanagedappprotection-list.md
                     - name: Obter
                       href: api/intune-mam-androidmanagedappprotection-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-mam-androidmanagedappprotection-create.md
                     - name: Excluir
                       href: api/intune-mam-androidmanagedappprotection-delete.md
@@ -2534,7 +2538,7 @@
                       href: api/intune-mam-defaultmanagedappprotection-list.md
                     - name: Obter
                       href: api/intune-mam-defaultmanagedappprotection-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-mam-defaultmanagedappprotection-create.md
                     - name: Excluir
                       href: api/intune-mam-defaultmanagedappprotection-delete.md
@@ -2547,7 +2551,7 @@
                       href: api/intune-mam-iosmanagedappprotection-list.md
                     - name: Obter
                       href: api/intune-mam-iosmanagedappprotection-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-mam-iosmanagedappprotection-create.md
                     - name: Excluir
                       href: api/intune-mam-iosmanagedappprotection-delete.md
@@ -3695,6 +3699,8 @@
                   href: api/message-list-attachments.md
                 - name: Adicionar anexo
                   href: api/message-post-attachments.md
+                - name: Criar sessão para anexar arquivo grande
+                  href: api/attachment-createuploadsession.md
                 - name: Criar extensão aberta
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: Obter extensão aberta
@@ -3708,6 +3714,8 @@
                   href: resources/itemattachment.md
                 - name: Tipo de anexo de referência
                   href: resources/referenceattachment.md
+                - name: Criar sessão para anexar arquivo grande
+                  href: api/attachment-createuploadsession.md
                 - name: Obter anexo
                   href: api/attachment-get.md
                 - name: Excluir anexo

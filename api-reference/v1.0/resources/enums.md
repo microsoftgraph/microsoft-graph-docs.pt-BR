@@ -5,16 +5,22 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: e78f4226b2b2a2a100c4e3dedfa096d1120c91b8
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 6f2a9c2b59661e820a89268f83c3868d29b9f558
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229483"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991828"
 ---
-# <a name="enum-values"></a>Valores de enumeração
-
 Namespace: microsoft.graph
+
+### <a name="attachmenttype-values"></a>valores AttachmentType
+
+| Member
+|:--------------
+| file
+| item
+| de referência
 
 ### <a name="contactrelationship-values"></a>valores de contactRelationship
 
@@ -62,7 +68,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| nenhuma
+| Nenhuma
 | contactsOnly
 | todos os
 
@@ -151,7 +157,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| nenhuma
+| Nenhuma
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -183,7 +189,7 @@ Namespace: microsoft.graph
 | deviceDefault
 | Bandeira
 | JanelaRestrita
-| nenhuma
+| Nenhuma
 
 ### <a name="deviceenrollmentfailurereason-values"></a>valores de deviceEnrollmentFailureReason
 
@@ -313,7 +319,7 @@ Namespace: microsoft.graph
 | Automático
 | nopreview
 | verificação
-| description
+| descrição
 | de referência
 
 
@@ -385,7 +391,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| nenhuma
+| Nenhuma
 | organizer
 | tentativelyAccepted
 | aceito
@@ -418,7 +424,7 @@ Namespace: microsoft.graph
 
 | Membro   |Valor
 |:---------|:--------
-| nenhuma     | -1
+| Nenhuma     | -1
 | preset0  | ,0
 | preset1  | 1
 | preset2  | duas
@@ -430,7 +436,7 @@ Namespace: microsoft.graph
 | preset8  | 8 
 | preset9  | 9 
 | preset10 | 10 
-| preset11 | 11
+| preset11 | 11 
 | preset12 | 12 
 | preset13 | Treze
 | preset14 | 14 
@@ -440,7 +446,7 @@ Namespace: microsoft.graph
 | preset18 | 18 
 | preset19 | 19
 | preset20 | 508
-| preset21 | 21
+| preset21 |  21 
 | preset22 | 22
 | preset23 | 23
 | preset24 | dia
@@ -546,10 +552,10 @@ Enumeração para tipos de valor do registro, conforme definido por [/Windows/De
 |expandSz|5 | REG_EXPAND_SZ tipo de valor do registro.|
 |vínculo|6 | REG_LINK tipo de valor do registro.|
 |multiSz|7 | REG_MULTI_SZ tipo de valor do registro.|
-|nenhuma|8 | REG_NONE tipo de valor do registro.|
+|Nenhuma|8 | REG_NONE tipo de valor do registro.|
 |QWORD|9 | REG_QWORD tipo de valor do registro.|
 |qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN tipo de valor do registro.|
-|v|11| REG_SZ tipo de valor do registro.|
+|v|11 | REG_SZ tipo de valor do registro.|
 
 ### <a name="alertseverity-values"></a>valores de alertSeverity
 
@@ -660,7 +666,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Member
 |:-------------------------
-| nenhuma
+| Nenhuma
 | low
 | medium
 | high
@@ -671,7 +677,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Member
 |:-------------------------
-| nenhuma
+| Nenhuma
 | confirmedSafe
 | corrigidos
 | Descartado pelo
@@ -710,7 +716,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 |Member|
 |:---|
-|nenhuma|
+|Nenhuma|
 |freeBusyRead|
 |limitedRead|
 |Saiba|
@@ -723,7 +729,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| email   | 1     | Ameaça de email.            |
+| Email   | 1     | Ameaça de email.            |
 | url    | duas     | Ameaça de URL.             |
 | file   | 3D     | Ameaça do arquivo de anexo. |
 
@@ -770,7 +776,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
-| nenhuma                  | ,0     | Ainda não conhece.                       |
+| Nenhuma                  | ,0     | Ainda não conhece.                       |
 | mailFlowRule          | 1     | Regra de transporte do Exchange.            |
 | safeSender            | duas     | Lista de remetentes seguros.                   |
 | blockedSender         | 3D     | Lista de remetentes bloqueados.                |
@@ -781,7 +787,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | firstTimeSender       | 8      | Bloqueado devido ao remetente pela primeira vez.   |
 | autoPurgeToInbox      | 9      | Mensagem de movimentação de viagem para a caixa de entrada.   |
 | autoPurgeToJunk       | 10     | Mensagem de movimentação de viagens para lixo eletrônico.    |
-| autoPurgeToDeleted    | 11    | Mensagem de movimentação de viagens para exclusão. |
+| autoPurgeToDeleted    | 11     | Mensagem de movimentação de viagens para exclusão. |
 | saída              | 12     | Emails de saída.                      |
 | Não é lixo eletrônico               | Treze    | Permitir por não ser lixo eletrônico.              |
 | desejado                  | 14     | Bloqueado devido a lixo eletrônico.                |
