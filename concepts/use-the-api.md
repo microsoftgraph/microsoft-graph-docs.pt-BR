@@ -4,12 +4,12 @@ description: O Microsoft Graph é uma API Web RESTful que permite que você aces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e374f124824705cc88aa7f991d99f2c99e7caa9a
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 54d22a0f0b1b18eeaaaf8bda317d8dc08d0448ee
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510497"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991736"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Usar a API do Microsoft Graph
 
@@ -134,7 +134,7 @@ Um código de status e uma mensagem são exibidos depois que uma solicitação �
 
 O Postman é uma ferramenta que você pode usar para criar e testar solicitações usando as APIs do Microsoft Graph. Você pode baixar o Postman em: `https://www.getpostman.com/`. Para interagir com o Microsoft Graph no Postman, use a coleção do Microsoft Graph.
 
-Para obter mais informações, confira [Usar o Postman com a API do Microsoft Graph](https://docs.microsoft.comgraph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta).
+Para obter mais informações, confira [Usar o Postman com a API do Microsoft Graph](https://docs.microsoft.com/graph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta).
 
 ## <a name="next-steps"></a>Próximas etapas
 

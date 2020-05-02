@@ -99,6 +99,8 @@ items:
             href: outlook-get-shared-events-calendars.md
           - name: Criar eventos compartilhados
             href: outlook-create-event-in-shared-delegated-calendar.md
+          - name: Anexar arquivos grandes
+            href: outlook-large-attachments.md
           - name: ID Imutável
             href: outlook-immutable-id.md
       - name: Comunicações na nuvem
@@ -185,7 +187,7 @@ items:
             href: outlook-organize-messages.md
           - name: Obter conteúdo MIME
             href: outlook-get-mime-message.md
-          - name: Anexar arquivos grandes (visualização)
+          - name: Anexar arquivos grandes
             href: outlook-large-attachments.md
           - name: Receber mensagens compartilhadas
             href: outlook-share-messages-folders.md

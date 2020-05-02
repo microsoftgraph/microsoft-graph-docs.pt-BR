@@ -5,16 +5,16 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ee17676564f747064e08066c830e7ebc21d36805
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 704bb439bfab3a35f6cebb191430b27b7444e418
+ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455820"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44006346"
 ---
 # <a name="list-places"></a>Locais de lista
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,6 +26,8 @@ Um objeto **local** pode ser um dos seguintes tipos:
 * Uma [lista de salas](../resources/roomlist.md) que inclui um endereço de email para a lista de salas e uma propriedade de navegação para obter a coleção de instâncias de sala na lista de salas. 
 
 A **sala** e a **salalist** são derivadas do objeto **local** .
+
+Por padrão, essa operação retorna 100 locais por página. 
 
 Em comparação com as funções [findRooms](../api/user-findrooms.md) e [findRoomLists](../api/user-findroomlists.md) , essa operação retorna uma carga mais rica para salas e listas de salas. Veja [detalhes](../resources/place.md#using-the-places-api) sobre como eles se comparam.
 
@@ -64,8 +66,14 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 >**Observação**: para obter salas em uma lista de salas, você deve especificar a lista de salas por sua propriedade **EmailAddress** , não pela **ID**. 
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte aos seguintes parâmetros de consulta para ajudar a personalizar a resposta:
+- $filter
+- $select
+- $top
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Use $top para personalizar o tamanho da página. O tamanho de página padrão é 100.
+
+Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: e673e03ea0750fbdbb6c289ceff114b4f5ea1a71
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: efe8d631437761da775fb029d88fa59b36a138c0
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543174"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991835"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -75,6 +75,9 @@ Atualmente, há suporte parcial para um calendário com base em uma Inscrição 
 * Você pode adicionar um calendário baseado em ICS para uma caixa de correio do usuário por meio da interface do usuário, mas não através da API do Microsoft Graph.
 * [Listar os calendários do usuário](/graph/api/user-list-calendars?view=graph-rest-1.0) permite que você obtenha as propriedades **name**, **color** e **id** de cada [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) no grupo de calendários padrão do usuário ou em um grupo de calendários especificado, inclusive todos os calendários com base em ICS. Não é possível armazenar ou acessar a URL da ICS no recurso de calendário.
 * Você também pode [listar os eventos](/graph/api/calendar-list-events?view=graph-rest-1.0) de um calendário baseado em ICS.
+
+### <a name="attaching-large-files-to-events"></a>Anexar arquivos grandes a eventos
+Um aplicativo com permissões delegadas retorna `HTTP 403 Forbidden` ao tentar [anexar arquivos grandes](outlook-large-attachments.md) a uma mensagem ou evento do Outlook que está em uma caixa de correio compartilhada ou delegada. Com as permissões delegadas, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) só é bem sucedida se a mensagem ou o evento estiver na caixa de correio do usuário conectado.
 
 ### <a name="onlinemeetingurl-property-support-for-microsoft-teams"></a>Suporte de propriedade onlineMeetingUrl do Microsoft Teams
 
@@ -304,7 +307,7 @@ Conforme o processamento em lotes JSON amadurece, essas limitações são removi
 ## <a name="mail-outlook"></a>Email (Outlook)
 
 ### <a name="attaching-large-files-to-messages"></a>Anexando grandes arquivos a mensagens
-Um aplicativo com permissões delegadas retorna `HTTP 403 Forbidden` ao tentar [anexar arquivos grandes](outlook-large-attachments.md) a uma mensagem do Outlook que está em uma caixa de correio compartilhada ou delegada. Com as permissões delegadas, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) só é bem sucedida se a mensagem estiver na caixa de correio do usuário conectado.
+Um aplicativo com permissões delegadas retorna `HTTP 403 Forbidden` ao tentar [anexar arquivos grandes](outlook-large-attachments.md) a uma mensagem ou evento do Outlook que está em uma caixa de correio compartilhada ou delegada. Com as permissões delegadas, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) só é bem sucedida se a mensagem ou o evento estiver na caixa de correio do usuário conectado.
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>O parâmetro de comentário para criar um rascunho
 

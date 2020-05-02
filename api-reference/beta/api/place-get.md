@@ -5,16 +5,16 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a994c3a5aa3e9077169afabf3098dcc82c867dcd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0dc07c3c649cb472abc2a33a819fcaf9a7935589
+ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455834"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44006318"
 ---
 # <a name="get-place"></a>Obter local
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Obtenha as propriedades e os relacionamentos de um objeto [local](../resources/place.md) especificado por sua ID ou endereço de email. 
@@ -45,13 +45,9 @@ GET /places/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Use $select para obter propriedades de **local** específico.
 
-Este método dá suporte aos seguintes parâmetros de consulta para ajudar a personalizar a resposta:
-* $filter
-* $select
-* $top
-
-Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Para obter mais informações sobre opções de consulta OData, confira [parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
