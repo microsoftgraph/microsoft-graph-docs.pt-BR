@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 70872cb67dd69be3fb363362f9de6070cedcddda
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: a795559341b829a4f9a745de531844364efd1b0c
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934805"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991702"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -30,6 +30,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | v1.0 | A propriedade **isTallyingResponses** foi adicionada à entidade [calendar](/graph/api/resources/calendar?view=graph-rest-1.0). |
 | Adição | v1.0 | A propriedade **isRemovable** foi adicionada à entidade [calendar](/graph/api/resources/calendar?view=graph-rest-1.0). |
 | Adição | v1.0 | A propriedade **delegateMeetingMessageDeliveryOptions** foi adicionada à entidade [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-1.0). |
+| Adição | Beta e v1.0          | Suporte para [anexos de arquivo de até 150 MB](outlook-large-attachments.md) para o caso de um [evento](/graph/api/resources/event?view=graph-rest-1.0). |
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 
@@ -81,15 +82,11 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | beta        | A propriedade de navegação [folowedSites](/graph/api/sites-list-followed?view=graph-rest-beta) foi adicionada ao conjunto de entidades do [usuário](/graph/api/resources/user?view=graph-rest-beta) |
-| Adição        | v1.0        | A propriedade de navegação[folowedSites](/graph/api/sites-list-followed?view=graph-rest-1.0) foi adicionada ao conjunto de entidades do [usuário](/graph/api/resources/user?view=graph-rest-1.0) |
-| Adição        | v1.0        | Adicionadas as propriedades **expirationDateTime**, **senha**e **mensagem** na ação [createLink][/graph/api/driveitem-createlink?view=graph-rest-1.0] em um recurso[driveItem](/graph/resources/driveitem?view=graph-rest-1.0). |
-| Adição        | v1.0        | Propriedade **dataLocaton** adicionada no recurso [siteCollection](/graph/resources/sitecollection?view=graph-rest-1.0). |
-| Adição        | v1.0        | Foi adicionada a propriedade **preventsDownload** ao recurso[sharingLink](/graph/resources/sharinglink?view=graph-rest-1.0). |
-| Adição        | v1.0        | Adicionada a propriedade **tenantId** no recurso[sharepointIds](/graph/resources/sharepointids?view=graph-rest-1.0). |
-| Adição        | v1.0        | Adicionada a propriedade **permissão**ao recurso [sharedDriveItem](/graph/resources/shareddriveitem?view=graph-rest-1.0). |
-| Adição        | v1.0        | Adicionada as propriedades **expirationDateTime**, **hasPassword**e **grantedToIdentities** ao recurso [permissão](/graph/resources/permission?view=graph-rest-1.0). |
-| Adição        | v1.0        | Adicionadas as propriedades**expirationDateTime**e **senha** à ação [convidar](/graph/api/driveitem-invite?view=graph-rest-1.0) em um recurso [driveItem](/graph/resources/driveitem?view=graph-rest-1.0). |
+| Adição        | v1.0        | Adicionadas a **expirationDateTime**, **senha** e propriedades da **mensagem** na ação [CreateLink](/graph/api/driveitem-createlink?view=graph-rest-1.0) em um recurso [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0). |
+| Adição        | v1.0        | Foi adicionada a propriedade **preventsDownload** ao recurso[sharingLink](/graph/api/resources/sharinglink?view=graph-rest-1.0). |
+| Adição        | v1.0        | Adicionada a propriedade **permissão**ao recurso [sharedDriveItem](/graph/api/resources/shareddriveitem?view=graph-rest-1.0). |
+| Adição        | v1.0        | Adicionada as propriedades **expirationDateTime**, **hasPassword**e **grantedToIdentities** ao recurso [permissão](/graph/api/resources/permission?view=graph-rest-1.0). |
+| Adição        | v1.0        | Adicionadas as propriedades**expirationDateTime**e **senha** à ação [convidar](/graph/api/driveitem-invite?view=graph-rest-1.0) em um recurso [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0). |
 
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
 
@@ -108,6 +105,15 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionado os recursos e métodos associados [authenticationMethod](/graph/api/resources/authenticationmethod?view=graph-rest-beta), [passwordAuthenticationMethod](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta) e [phoneAuthenticationMethod](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta).
 | Adição | beta | Propriedade **createdByAppId** adicionada à entidade [grupo](/graph/api/resources/group?view=graph-rest-beta).|
 
+### <a name="mail"></a>Correio
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | V1.0          | [Adicionando anexos de arquivo de até 150 MB](outlook-large-attachments.md) a uma instância de [mensagem](/graph/api/resources/message?view=graph-rest-1.0). |
+| Adição        | V1.0          | O tipo complexo [attachmentItem](/graph/api/resources/attachmentitem?view=graph-rest-1.0), a ação [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) para a entidade de [anexo](/graph/api/resources/attachment?view=graph-rest-1.0) e a enumeração **attachmentType**. |
+| Alterado         | V1.0          | Estendida a entidade [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-1.0) existente que foi usada pelo [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) para que esta se aplique ao **anexo** também. |
+
+
 ### <a name="reports--identity-and-access-reports"></a>Relatórios | Relatórios de identidade e acesso
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -121,6 +127,16 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | Beta | As propriedades **Meeting Created** e **Meeting Interacted** foram adicionadas à entidade API CSV [getEmailActivityCounts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta). |
 | Adição | Beta | As propriedades **Meeting Created** e **Meeting Interacted** foram adicionadas à entidade API CSV [getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta). |
 | Adição | Beta | As propriedades **Meeting Created** e **Meeting Interacted** foram adicionadas à entidade API CSV [getEmailActivityuserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta). |
+
+### <a name="sites-and-lists"></a>Sites e listas
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | beta        | Adicionada a propriedade de navegação **followedSites** à entidade [usuário](/graph/api/resources/user?view=graph-rest-beta) para [listar os sites seguidos pelo usuário conectado](/graph/api/sites-list-followed?view=graph-rest-beta). |
+| Adição        | v1.0        | Adicionada a propriedade de navegação **followedSites** à entidade [usuário](/graph/api/resources/user?view=graph-rest-1.0) para [listar os sites seguidos pelo usuário conectado](/graph/api/sites-list-followed?view=graph-rest-1.0). |
+| Adição        | v1.0        | Adicionada a propriedade **dataLocatonCode** no recurso [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0). |
+| Adição        | v1.0        | Adicionada a propriedade **tenantId** no recurso[sharepointIds](/graph/api/resources/sharepointids?view=graph-rest-1.0). |
+
+
 
 ## <a name="march-2020"></a>Março de 2020
 
@@ -2264,7 +2280,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Adicionado o recurso de [consulta delta](delta-query-overview.md) para as entidades a seguir no Azure Active Directory:<br/>[application](/graph/api/application-delta?view=graph-rest-beta)<br/>[directoryRole](/graph/api/directoryrole-delta?view=graph-rest-beta)<br/>[servicePrincipal](/graph/api/serviceprincipal-delta?view=graph-rest-beta) |
+| Adição        | Beta        | Adicionado o recurso de [consulta delta](delta-query-overview.md) para as entidades a seguir no Azure Active Directory:<br/>[aplicativo](/graph/api/application-delta?view=graph-rest-beta)<br/>[directoryRole](/graph/api/directoryrole-delta?view=graph-rest-beta)<br/>[servicePrincipal](/graph/api/serviceprincipal-delta?view=graph-rest-beta) |
 
 
 ## <a name="july-2018"></a>Julho de 2018
