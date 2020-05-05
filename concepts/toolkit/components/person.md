@@ -3,12 +3,12 @@ title: Componente Person no Microsoft Graph Toolkit
 description: O componente pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: a23d5432c868881f05c04b84626962d684f7d1eb
-ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
+ms.openlocfilehash: 097dd2030f6622d067c26875a717568c1b3ef8c2
+ms.sourcegitcommit: 889096fb1821ee90ffa1b2dcce046efd6e97acef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "43812545"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022793"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente Person no Microsoft Graph Toolkit
 
@@ -39,7 +39,7 @@ Você pode usar três propriedades para definir os detalhes da pessoa. Use apena
     let personControl = document.getElementById('myPersonControl');
     personControl.personDetails = {
         displayName: 'Nikola Metulev',
-        email: 'nikola@contoso.com',
+        mail: 'nikola@contoso.com',
         personImage: 'url'
     }
     ```
@@ -84,8 +84,8 @@ O `mgt-person` componente oferece suporte a vários [modelos](../templates.md) q
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --------- | ------------ | ----------- |
-| carregando | nenhuma | O modelo a ser renderizado enquanto o componente está em um estado laoding. |
-| sem dados | nenhuma | O modelo a ser renderizado quando nenhuma imagem de pessoa ou dados estiver disponível. | 
+| carregando | Nenhuma | O modelo a ser renderizado enquanto o componente está em um estado laoding. |
+| sem dados | Nenhuma | O modelo a ser renderizado quando nenhuma imagem de pessoa ou dados estiver disponível. | 
 | Padrão. | Person: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo padrão substitui todo o componente pelo seu. |
 | cartão de pessoa | Person: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo para atualizar o item de gerenciamento de pessoa que é exibido ao focalizar ou clique. |
 
@@ -124,7 +124,7 @@ Para obter mais informações sobre modelos, estilos e atributos, consulte [comp
 
 Este controle usa as seguintes APIs e permissões do Microsoft Graph.
 
-| Resource                                                                                                    | Permissão     |
+| Recurso                                                                                                    | Permissão     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
 | [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
 | [$value/me/Photo/](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
