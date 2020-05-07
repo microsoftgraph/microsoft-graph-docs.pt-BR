@@ -457,10 +457,18 @@ items:
             href: sdks/sdk-installation.md
           - name: Criar um cliente
             href: sdks/create-client.md
+          - name: Personalizar um cliente
+            href: sdks/customize-client.md
           - name: Escolher um provedor de autenticação.
             href: sdks/choose-authentication-providers.md
           - name: Criar solicitações
             href: sdks/create-requests.md
+          - name: Folhear uma coleção
+            href: sdks/paging.md
+          - name: Criar uma solicitação em lote
+            href: sdks/batch-requests.md
+          - name: Carregar arquivos grandes
+            href: sdks/large-file-upload.md
       - name: Usar o kit de ferramentas
         items:
           - name: Visão geral do kit de ferramentas
