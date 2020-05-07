@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ff27f50a5bd1434fdf8851bf93385657b0060f46
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: ead4399ee3936dad2675fbaf21d4608dbdfb0308
+ms.sourcegitcommit: df2c52f84aae5d4fed641d7411ba547371f0eaad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35733137"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44055610"
 ---
 ```objc
 
@@ -20,6 +20,9 @@ NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 NSString *type = @"view";
 payloadDictionary[@"type"] = type;
+
+NSString *password = @"ThisIsMyPrivatePassword";
+payloadDictionary[@"password"] = password;
 
 NSString *scope = @"anonymous";
 payloadDictionary[@"scope"] = scope;

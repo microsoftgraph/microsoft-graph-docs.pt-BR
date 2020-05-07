@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 01845c7fd97f2fce1fe62afa79991521f24c06c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 390ab84b7e29febf39979efc57b78849e440f56a
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452582"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154077"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -141,7 +141,7 @@ Content-Type: application/json
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
                     "name": "A Pinned Website",
                     "configuration": {
-                        "contentUrl": "/microsoftteams/microsoft-teams"
+                        "contentUrl": "https://docs.microsoft.com/microsoftteams/microsoft-teams"
                     }
                 },
                 {

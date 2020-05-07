@@ -1,24 +1,22 @@
 ---
-title: Obter timeOff
-description: Obtenha um timeOff por ID.
-author: nkramer
+title: Criar timeOff
+description: Criar um novo timeOff.
+author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f4fc2fd04d6c9fef78294b0a99d586c32a17cc8e
+ms.openlocfilehash: 8fd943cca84ac894b87da3499356cc4581fe951e
 ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154427"
+ms.locfileid: "44154457"
 ---
-# <a name="get-timeoff"></a>Obter timeOff
+# <a name="create-timeoff"></a>Criar timeOff
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Recupere as propriedades e os relacionamentos de um objeto [timeOff](../resources/timeoff.md) por ID.
+Crie uma nova instância do [timeOff](../resources/timeoff.md) em um [cronograma](../resources/schedule.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,11 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Schedule. Read. All *, Schedule. ReadWrite. All* |
-
->\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
+|Aplicativo | Schedule.ReadWrite.All |
 
 > **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
@@ -39,57 +35,54 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{teamId}/schedule/timesOff/{timeOffId}
+POST /teams/{teamId}/schedule/timesOff
 ```
-
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-
-Este método não oferece suporte a parâmetros de consulta OData para personalizar a resposta.
-
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
-
-## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+| Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [timeOff](../resources/timeoff.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [timeOff](../resources/timeoff.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "timeoff-get"
+  "name": "timeoff-post"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId}
+```http
+POST https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff
+Content-type: application/json
+
+{
+  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "sharedTimeOff": {
+    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
+    "startDateTime": "2019-03-11T07:00:00Z",
+    "endDateTime": "2019-03-12T07:00:00Z",
+    "theme": "white"
+  },
+  "draftTimeOff": {
+    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
+    "startDateTime": "2019-03-11T07:00:00Z",
+    "endDateTime": "2019-03-12T07:00:00Z",
+    "theme": "pink"
+  }
+}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/timeoff-get-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/timeoff-get-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/timeoff-get-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta. 
 
@@ -97,11 +90,11 @@ Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.timeOff"
+  "@odata.type":"microsoft.graph.timeOff"
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 401
 
@@ -138,7 +131,7 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get a timeOff by id",
+  "description": "Creates a new timeOff",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

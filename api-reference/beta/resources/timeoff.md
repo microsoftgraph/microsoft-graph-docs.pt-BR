@@ -4,17 +4,17 @@ description: Uma unidade de não trabalho no cronograma.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-doc_type: resourcePageType_
-ms.openlocfilehash: 3ff9edf6bf3834faf5d91773b6c94ecbc4158d79
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+doc_type: resourcePageType
+ms.openlocfilehash: 04cdadefd9c784c07d4b93c02bf7c9f51e7e3e73
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519733"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154448"
 ---
 # <a name="timeoff-resource-type"></a>tipo de recurso timeOff
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Uma unidade de não funcionar em um cronograma.
 |:---------------|:--------|:----------|
 |[Criar](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | Criar um novo objeto **timeOff** .|
 |[List](../api/schedule-list-timesoff.md) | coleção [timeOff](timeoff.md) | Obtenha a lista de objetos **timeOff** neste cronograma.|
-|[Get (.. /api/timeoff-get.md) | [timeOff](timeoff.md) | Obtenha um objeto **timeOff** por ID.|
+|[Get](../api/timeoff-get.md) | [timeOff](timeoff.md) | Obtenha um objeto **timeOff** por ID.|
 |[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | Substituir um objeto **timeOff** .|
 |[Delete](../api/timeoff-delete.md) | Nenhum | Excluir um objeto **timeOff** da agenda.|
 

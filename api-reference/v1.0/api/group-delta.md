@@ -5,16 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 906665d0fa0250a14ea916d8e0b9bf286e6cf2d0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 86c4ec4e419fb9305c0a11ba4443e991ed062020
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436853"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155107"
 ---
 # <a name="group-delta"></a>group: delta
 
-Namespace: o Microsoft. Graph Obtém grupos recém-criados, atualizados ou excluídos, incluindo alterações de associação de grupo, sem ter que realizar uma leitura completa de todo o conjunto de grupos. Consulte [usando a consulta Delta](/graph/delta-query-overview) para obter detalhes.
+Namespace: microsoft.graph
+
+Obter grupos recém-criados, atualizados ou excluídos, incluindo alterações de associação de grupo, sem ter que executar uma leitura completa de toda a coleção de grupos. Consulte [usando a consulta Delta](/graph/delta-query-overview) para obter detalhes.
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,7 +48,7 @@ Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` 
 
 | Parâmetro de consulta | Tipo  |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | cadeia de caracteres | Um [token de estado](/graph/delta-query-overview) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de grupos indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
+| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de grupos indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas na mesma coleção de grupos. |
 
 ### <a name="odata-query-parameters"></a>Parâmetros de consulta OData

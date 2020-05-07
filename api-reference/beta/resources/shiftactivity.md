@@ -4,17 +4,17 @@ description: Representa uma atividade em um turno.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-doc_type: resourcePageType_
-ms.openlocfilehash: 6adc82eca2c7ce53713997c18001aef19c76e3dc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+doc_type: resourcePageType
+ms.openlocfilehash: d03cf481ec0360aa6ef7c4ab544189b420b2081b
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520629"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154343"
 ---
 # <a name="shiftactivity-resource-type"></a>tipo de recurso shiftActivity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

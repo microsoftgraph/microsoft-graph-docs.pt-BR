@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0b9c38e5be9e4f55d8d1b71460cf6735c73d5478
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 000a8ae7c91b0d5c2b896615cc1e60ba2b360aed
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456405"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153496"
 ---
 # <a name="update-openshift"></a>Atualizar openShift
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,12 +47,12 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+Forneça o objeto [openshift](../resources/openshift.md) modificado no corpo da solicitação para este método.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |draftOpenShift|openShiftItem|Um turno aberto não publicado.|
-|schedulingGroupId|String| ID do grupo de agendamento. |
+|schedulingGroupId|Cadeia de caracteres| ID do grupo de agendamento. |
 |sharedOpenShift|openShiftItem|Um turno aberto publicado.|
 
 ## <a name="response"></a>Resposta
@@ -72,7 +72,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-PUT https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/{openShiftId}
+PUT https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8
 Content-type: application/json
 
 {

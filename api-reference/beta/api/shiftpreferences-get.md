@@ -5,16 +5,16 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 30837607b484d98856f5296e1fd0a1a30ca3a619
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9bbf5be71676b942a3df0174f781a0a6708493e2
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453293"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154329"
 ---
 # <a name="get-shiftpreferences"></a>Obter shiftPreferences
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,6 +37,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /users/{userId}/settings/shiftPreferences
 ```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Este método não oferece suporte a parâmetros de consulta OData para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

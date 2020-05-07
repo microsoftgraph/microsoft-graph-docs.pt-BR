@@ -1,24 +1,22 @@
 ---
-title: 'offerShiftRequest: recusar'
-description: Recusar uma solicitação de mudança de oferta.
+title: 'openShiftChangeRequest: aprovar'
+description: Aprovar uma solicitação de openShiftChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6d6b6ec17b574e23c08beee85d77e5a61e2f4c5a
+ms.openlocfilehash: 148b4c52a6f288d961c949cc0d599cb468c8b322
 ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44153986"
+ms.locfileid: "44155065"
 ---
-# <a name="offershiftrequest-decline"></a>offerShiftRequest: recusar
+# <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest: aprovar
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Recusar um objeto [offershiftrequest](../resources/offershiftrequest.md) .
+Aprovar um objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,18 +24,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Schedule. ReadWrite. All, Group. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Schedule. ReadWrite. All * |
+| Aplicativo                            | Schedule.ReadWrite.All |
 
->\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
+> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
+POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -53,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|mensagem|String|Mensagem personalizada enviada ao recusar.|
+|mensagem|String|Uma mensagem de aprovação personalizada.|
 
 ## <a name="response"></a>Resposta
 
@@ -61,34 +59,28 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não reto
 
 ## <a name="examples"></a>Exemplos
 
+O exemplo a seguir mostra como chamar essa API.
+
 ### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra uma solicitação.
-
-# <a name="http"></a>[HTTP](#tab/http)
+Veja a seguir um exemplo de uma solicitação.
 <!-- {
   "blockType": "request",
-  "name": "offershiftrequest_decline"
+  "name": "openshiftchangerequest_approve"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
+POST https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
 Content-type: application/json
 
 {
-  "message": "Sorry, you can't offer this shift."
+  "message": "message-value"
 }
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/offershiftrequest-decline-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Resposta
 
-O exemplo a seguir mostra a resposta.
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,7 +95,7 @@ HTTP/1.1 200 OK
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "offerShiftRequest: decline",
+  "description": "openShiftChangeRequest: approve",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

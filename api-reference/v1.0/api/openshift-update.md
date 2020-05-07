@@ -1,24 +1,22 @@
 ---
-title: Obter openShift
-description: Recupere as propriedades e os relacionamentos do objeto openshift.
+title: Atualizar openShift
+description: Atualiza as propriedades de um objeto openShift.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5ef3b1681ed6a155cf59bc3276cc041969b2d580
+ms.openlocfilehash: f816593cdf370d3fb2df647d0f91ed09c53117fc
 ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44153515"
+ms.locfileid: "44155072"
 ---
-# <a name="get-openshift"></a>Obter openShift
+# <a name="update-openshift"></a>Atualizar openShift
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Recupere as propriedades e os relacionamentos de um objeto [openshift](../resources/openshift.md) .
+Atualiza as propriedades de um objeto [openShift](../resources/openshift.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,35 +24,40 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Group.Read.All, Group.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Schedule. ReadWrite. All, Group. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | Schedule.ReadWrite.All |
+
+> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShifts/{openShiftId}
+PUT /teams/{id}/schedule/openShifts/{openShiftId}
 ```
-
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-
-Este método não oferece suporte a parâmetros de consulta OData para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome      |Descrição|
-|:----------|:----------|
+| Nome       | Descrição|
+|:-----------|:-----------|
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Não forneça um corpo de solicitação para esse método.
+Forneça o objeto [openShift](../resources/openshift.md) modificado no corpo da solicitação para este método.
+
+| Propriedade     | Tipo        | Descrição |
+|:-------------|:------------|:------------|
+|draftOpenShift|openShiftItem|Um turno aberto não publicado.|
+|schedulingGroupId|Cadeia de caracteres| ID do grupo de agendamento. |
+|sharedOpenShift|openShiftItem|Um turno aberto publicado.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [openShift](../resources/openshift.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [openShift](../resources/openshift.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -62,26 +65,37 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e o obj
 
 Este é um exemplo de solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_openshift"
+  "name": "update_openshift"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8
+```http
+PUT https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8
+Content-type: application/json
+
+{
+"schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
+"sharedOpenShift": {
+"notes": "Inventory Management",
+"openSlotCount":5,
+"displayName": "Field shift",
+"startDateTime": "2018-10-04T00:58:45.340Z",
+"endDateTime": "2018-10-04T09:50:45.332Z",
+"theme": "white",
+"activities": [
+{
+"isPaid": true,
+"startDateTime": "2018-10-04T00:58:45.340Z",
+"endDateTime": "2018-10-04T01:58:45.340Z",
+"code": "",
+"displayName": "Lunch"
+}
+]
+},
+"draftOpenShift": null
+}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-openshift-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-openshift-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-openshift-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -107,7 +121,7 @@ Content-type: application/json
   "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
   "sharedOpenShift": {
   "notes": "Inventory Management",
-  "openSlotCount":2,
+  "openSlotCount":5,
   "displayName": "Day shift",
   "startDateTime": "2018-10-04T00:58:45.340Z",
   "endDateTime": "2018-10-04T09:50:45.332Z",
@@ -122,23 +136,7 @@ Content-type: application/json
   }
   ]
   },
-  "draftOpenShift": {
-  "notes": "Inventory Management",
-  "openSlotCount":3,
-  "displayName": "Day shift",
-  "startDateTime": "2018-10-04T00:58:45.332Z",
-  "endDateTime": "2018-10-04T08:58:45.340Z",
-  "theme": "white",
-  "activities": [
-  {
-  "isPaid": true,
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T07:58:45.332Z",
-  "code": "Break",
-  "displayName": "Lunch"
-  }
-  ]
-  },
+  "draftOpenShift": null,
   "createdDateTime": "2019-03-14T04:32:51.451Z",
   "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
   "lastModifiedBy": {
@@ -157,7 +155,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get openShift",
+  "description": "Update openshift",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

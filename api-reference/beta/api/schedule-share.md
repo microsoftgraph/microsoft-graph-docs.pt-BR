@@ -5,22 +5,22 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dafe66d3aa63b87942ada0b87cf8ceee2715554d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fce02b8f18a2745b06d1782ecadb7bc7bd3adc0
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453797"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154238"
 ---
 # <a name="schedule-share"></a>agendamento: share
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Compartilhar um intervalo de tempo de [agendamento](../resources/schedule.md) com membros de agendamento.
-Faça as coleções de itens [Shift](../resources/shift.md) e [timeOff](../resources/timeoff.md) no intervalo de tempo especificado da [agenda](../resources/schedule.md) exibida pelos membros da equipe especificados, incluindo funcionários e gerentes.
-Cada [mudança](../resources/shift.md) e [timeOff](../resources/timeoff.md) instância em um [cronograma](../resources/schedule.md) oferece suporte a uma versão de rascunho e uma versão compartilhada do item. A versão de rascunho é visível apenas por gerentes e a versão compartilhada é visível por funcionários e gerentes. Para cada [mudança](../resources/shift.md) e [timeOff](../resources/timeoff.md) instância no intervalo de tempo especificado, a ação de compartilhamento atualiza a versão compartilhada da versão de rascunho, para que, além dos gerentes, os funcionários também possam exibir as informações mais atuais sobre o item. O parâmetro **notifyTeam** especifica ainda mais quais funcionários podem exibir o item.
+Faça as coleções de itens [Shift](../resources/shift.md), [openshift](../resources/openshift.md) e [timeOff](../resources/timeoff.md) no intervalo de tempo especificado da [agenda](../resources/schedule.md) exibida pelos membros da equipe especificados, incluindo funcionários e gerentes.
+Cada [mudança](../resources/shift.md), [openshift](../resources/openshift.md) e [timeOff](../resources/timeoff.md) instância em um [cronograma](../resources/schedule.md) suporta uma versão de rascunho e uma versão compartilhada do item. A versão de rascunho é visível apenas por gerentes e a versão compartilhada é visível por funcionários e gerentes. Para cada [mudança](../resources/shift.md), [openshift](../resources/openshift.md) e [timeOff](../resources/timeoff.md) instância no intervalo de tempo especificado, a ação de compartilhamento atualiza a versão compartilhada da versão de rascunho, para que, além dos gerentes, os funcionários também possam exibir as informações mais recentes sobre o item. O parâmetro **notifyTeam** especifica ainda mais quais funcionários podem exibir o item.
 
 ## <a name="permissions"></a>Permissões
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 >\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

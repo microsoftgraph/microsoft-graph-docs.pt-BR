@@ -5,20 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6d6b6ec17b574e23c08beee85d77e5a61e2f4c5a
+ms.openlocfilehash: 94daed01b2b7d4131a09504773c5377889b7e587
 ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44153986"
+ms.locfileid: "44154939"
 ---
 # <a name="offershiftrequest-decline"></a>offerShiftRequest: recusar
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Recusar um objeto [offershiftrequest](../resources/offershiftrequest.md) .
+Recusar um objeto [offerShiftRequest](../resources/offershiftrequest.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Schedule. ReadWrite. All, Group. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Schedule. ReadWrite. All * |
+| Aplicativo                            | Schedule.ReadWrite.All |
 
->\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
+> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -65,23 +63,19 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não reto
 
 O exemplo a seguir mostra uma solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "offershiftrequest_decline"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
+POST https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
 Content-type: application/json
 
 {
   "message": "Sorry, you can't offer this shift."
 }
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/offershiftrequest-decline-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 

@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cb9c436537e233c14e4f9d9eb1a2c6cb01cc6fe2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 73f5f920a6fbd7f56465ff3f35457c2108ca0323
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452285"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154413"
 ---
 # <a name="get-timeoffreason"></a>Obter timeOffReason
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 >\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -41,6 +41,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Este método não oferece suporte a parâmetros de consulta OData para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

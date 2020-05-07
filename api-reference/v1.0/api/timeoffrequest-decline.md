@@ -1,24 +1,22 @@
 ---
-title: 'offerShiftRequest: recusar'
-description: Recusar uma solicitação de mudança de oferta.
+title: 'timeOffRequest: recusar'
+description: Recusar um objeto timeoffrequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6d6b6ec17b574e23c08beee85d77e5a61e2f4c5a
+ms.openlocfilehash: 93d303c4ea1088b8e317ed2845ce99ba59ef76e3
 ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44153986"
+ms.locfileid: "44154308"
 ---
-# <a name="offershiftrequest-decline"></a>offerShiftRequest: recusar
+# <a name="timeoffrequest-decline"></a>timeOffRequest: recusar
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Recusar um objeto [offershiftrequest](../resources/offershiftrequest.md) .
+Recusar um objeto [timeoffrequest](../resources/timeoffrequest.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,18 +24,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Schedule. ReadWrite. All * |
+|Delegado (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Schedule.ReadWrite.All |
 
->\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
+> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
+POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -45,7 +43,7 @@ POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
 | Nome          | Descrição   |
 |:--------------|:--------------|
 | Autorização | {token} de portador. Obrigatório. |
-| Content-type | application/json. Obrigatório. |
+| Content-type | Application-JSON. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -53,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|mensagem|String|Mensagem personalizada enviada ao recusar.|
+|mensagem|String|Mensagem de recusa personalizada.|
 
 ## <a name="response"></a>Resposta
 
@@ -63,32 +61,27 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não reto
 
 ### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra uma solicitação.
+Este é um exemplo de solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "offershiftrequest_decline"
+  "name": "timeoffrequest_decline"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
+POST https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline
 Content-type: application/json
 
 {
-  "message": "Sorry, you can't offer this shift."
+  "message": "message-value"
 }
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/offershiftrequest-decline-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
 ### <a name="response"></a>Resposta
 
-O exemplo a seguir mostra a resposta.
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,7 +96,7 @@ HTTP/1.1 200 OK
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "offerShiftRequest: decline",
+  "description": "timeOffRequest: decline",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
