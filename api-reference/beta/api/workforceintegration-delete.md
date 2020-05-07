@@ -5,86 +5,86 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bb9d7a4259f4420971b9341e01acedd9da7049f2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff8bf2197232110fea356f951d62aa5a511e3f50
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451279"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154105"
 ---
-# <a name="delete-workforceintegration"></a><span data-ttu-id="ba134-103">Excluir workforceIntegration</span><span class="sxs-lookup"><span data-stu-id="ba134-103">Delete workforceIntegration</span></span>
+# <a name="delete-workforceintegration"></a><span data-ttu-id="e719c-103">Excluir workforceIntegration</span><span class="sxs-lookup"><span data-stu-id="e719c-103">Delete workforceIntegration</span></span>
 
-<span data-ttu-id="ba134-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="ba134-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e719c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e719c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ba134-105">Excluir uma instância de um [workforceIntegration](../resources/workforceintegration.md).</span><span class="sxs-lookup"><span data-stu-id="ba134-105">Delete an instance of a [workforceIntegration](../resources/workforceintegration.md).</span></span>
+<span data-ttu-id="e719c-105">Excluir uma instância de um [workforceIntegration](../resources/workforceintegration.md).</span><span class="sxs-lookup"><span data-stu-id="e719c-105">Delete an instance of a [workforceIntegration](../resources/workforceintegration.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ba134-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ba134-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e719c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="e719c-106">Permissions</span></span>
 
-<span data-ttu-id="ba134-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ba134-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e719c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e719c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ba134-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ba134-109">Permission type</span></span>                        | <span data-ttu-id="ba134-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ba134-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="e719c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e719c-109">Permission type</span></span>                        | <span data-ttu-id="e719c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e719c-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="ba134-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ba134-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ba134-112">WorkforceIntegration. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="ba134-112">WorkforceIntegration.ReadWrite.All</span></span> |
-| <span data-ttu-id="ba134-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ba134-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ba134-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ba134-114">Not supported.</span></span> |
-| <span data-ttu-id="ba134-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ba134-115">Application</span></span>                            | <span data-ttu-id="ba134-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ba134-116">Not supported.</span></span> |
+| <span data-ttu-id="e719c-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e719c-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="e719c-112">WorkforceIntegration. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="e719c-112">WorkforceIntegration.ReadWrite.All</span></span> |
+| <span data-ttu-id="e719c-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e719c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e719c-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e719c-114">Not supported.</span></span> |
+| <span data-ttu-id="e719c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e719c-115">Application</span></span>                            | <span data-ttu-id="e719c-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e719c-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ba134-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ba134-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e719c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e719c-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teamwork/workforceIntegrations
+DELETE /teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ba134-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ba134-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e719c-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e719c-118">Request headers</span></span>
 
-| <span data-ttu-id="ba134-119">Nome</span><span class="sxs-lookup"><span data-stu-id="ba134-119">Name</span></span>          | <span data-ttu-id="ba134-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="ba134-120">Description</span></span>   |
+| <span data-ttu-id="e719c-119">Nome</span><span class="sxs-lookup"><span data-stu-id="e719c-119">Name</span></span>          | <span data-ttu-id="e719c-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="e719c-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="ba134-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="ba134-121">Authorization</span></span> | <span data-ttu-id="ba134-122">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="ba134-122">Bearer {token}</span></span> |
+| <span data-ttu-id="e719c-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="e719c-121">Authorization</span></span> | <span data-ttu-id="e719c-122">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="e719c-122">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ba134-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ba134-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e719c-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e719c-123">Request body</span></span>
 
-<span data-ttu-id="ba134-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ba134-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="e719c-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e719c-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ba134-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="ba134-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e719c-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="e719c-125">Response</span></span>
 
-<span data-ttu-id="ba134-p102">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ba134-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="e719c-p102">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e719c-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="ba134-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="ba134-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e719c-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="e719c-128">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="ba134-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ba134-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e719c-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e719c-129">Request</span></span>
 
-<span data-ttu-id="ba134-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="ba134-130">The following is an example of the request.</span></span>
+<span data-ttu-id="e719c-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="e719c-130">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ba134-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="ba134-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e719c-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="e719c-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_workforceintegration"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/teamwork/workforceIntegrations
+DELETE https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
-# <a name="c"></a>[<span data-ttu-id="ba134-132">C#</span><span class="sxs-lookup"><span data-stu-id="ba134-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e719c-132">C#</span><span class="sxs-lookup"><span data-stu-id="e719c-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-workforceintegration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ba134-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ba134-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e719c-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e719c-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-workforceintegration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ba134-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ba134-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e719c-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e719c-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-workforceintegration-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="ba134-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="ba134-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="e719c-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="e719c-135">Response</span></span>
 
-<span data-ttu-id="ba134-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="ba134-136">The following is an example of the response.</span></span>
+<span data-ttu-id="e719c-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="e719c-136">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
