@@ -289,7 +289,7 @@
                       href: api/usersettings-get.md
                     - name: Atualizar configurações
                       href: api/usersettings-update.md
-            - name: Email
+            - name: Correio
               href: resources/message.md
               items:
                 - name: Criar pasta de email
@@ -882,7 +882,7 @@
                   items:
                     - name: Obter
                       href: api/participant-get.md
-                    - name: Lista
+                    - name: List
                       href: api/call-list-participants.md
                     - name: Configurar mixer
                       href: api/participant-configuremixer.md
@@ -1086,7 +1086,7 @@
                       href: api/printer-post-jobs.md
                     - name: Obter
                       href: api/printjob-get.md
-                    - name: Iniciar
+                    - name: Início
                       href: api/printjob-startprintjob.md
                     - name: Cancelar
                       href: api/printjob-cancelprintjob.md
@@ -7900,7 +7900,7 @@
                           href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                         - name: Atualizar
                           href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                        - name: Lista
+                        - name: List
                           href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                         - name: Excluir
                           href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
@@ -8751,7 +8751,7 @@
                 - name: Modelo de fluxo de negócios
                   href: resources/businessflowtemplate.md
                   items:
-                    - name: Lista
+                    - name: List
                       href: api/businessflowtemplate-list.md
                 - name: Programa
                   href: resources/program.md
@@ -8760,7 +8760,7 @@
                       href: api/program-create.md
                     - name: Excluir
                       href: api/program-delete.md
-                    - name: Lista
+                    - name: List
                       href: api/program-list.md
                     - name: Atualizar
                       href: api/program-update.md
@@ -8773,7 +8773,7 @@
                       href: api/programcontrol-create.md
                     - name: Excluir
                       href: api/programcontrol-delete.md
-                    - name: Lista
+                    - name: List
                       href: api/programcontrol-list.md
                 - name: Tipo de controle de programa
                   href: resources/programcontroltype.md
@@ -9141,7 +9141,7 @@
                 - name: Atribuição de pacote de acesso
                   href: resources/accesspackageassignment.md
                   items:
-                    - name: Lista
+                    - name: List
                       href: api/accesspackageassignment-list.md
                 - name: Política de atribuição de pacote do Access
                   href: resources/accesspackageassignmentpolicy.md
@@ -9815,7 +9815,7 @@
                   href: api/identityuserflow-get.md
                 - name: Excluir
                   href: api/identityuserflow-delete.md
-        - name: Email
+        - name: Correio
           displayName: 'Outlook, Outlook mail'
           items:
             - name: Visão Geral
@@ -10397,7 +10397,7 @@
                     - name: Resumo detalhado da terceira parte confiável
                       href: resources/relyingpartydetailedsummary.md
                       items:
-                        - name: Lista
+                        - name: List
                           href: api/relyingpartydetailedsummary-list.md
                 - name: Entrada do aplicativo
                   items:
@@ -11154,7 +11154,7 @@
                       href: api/offershiftrequest-post.md
                     - name: Obter
                       href: api/offershiftrequest-get.md
-                    - name: Lista
+                    - name: List
                       href: api/offershiftrequest-list.md
                     - name: Aprovar
                       href: api/offershiftrequest-approve.md
@@ -11237,8 +11237,6 @@
                   items:
                     - name: Obter
                       href: api/timeoffrequest-get.md
-                    - name: Atualizar
-                      href: api/timeoffrequest-update.md
                     - name: Excluir
                       href: api/timeoffrequest-delete.md
                     - name: Aprovar
