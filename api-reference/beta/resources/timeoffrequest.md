@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 73fa72d403bd20e6a966b01a0529d09689e5ed66
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f27f0ccbd3e73ade95dedca49c15fe1489d773b5
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519712"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154378"
 ---
 # <a name="timeoffrequest-resource-type"></a>tipo de recurso timeOffRequest
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,11 +24,11 @@ Representa um tipo de solicitação de mudança para obter [timeoff](../resource
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
+| [List](../api/timeoffrequest-list.md) | coleção [timeOffRequest](timeoffrequest.md) | Obtenha a lista de objetos **timeOffRequest** neste cronograma.|
 | [Get](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | Leia as propriedades e os relacionamentos de um objeto **timeOffRequest** . |
-| [Update](../api/timeoffrequest-update.md) | [timeOffRequest](timeoffrequest.md) | Atualizar um objeto **timeOffRequest** . |
 | [Delete](../api/timeoffrequest-delete.md) | None | Excluir um objeto **timeOffRequest** . |
-|[Aprovar](../api/timeoffrequest-approve.md)|Nenhum|Aprovar uma solicitação de tempo limite.|
-|[Aceito](../api/timeoffrequest-decline.md)|Nenhum|Recusar uma solicitação de tempo limite.|
+| [Aprovar](../api/timeoffrequest-approve.md)|Nenhum|Aprovar uma solicitação de tempo limite.|
+| [Aceito](../api/timeoffrequest-decline.md)|Nenhum|Recusar uma solicitação de tempo limite.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -36,7 +36,7 @@ Representa um tipo de solicitação de mudança para obter [timeoff](../resource
 |:-------------|:------------|:------------|
 |endDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |startDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|timeOffReasonId|String|O motivo da folga.|
+|timeOffReasonId|Cadeia de caracteres|O motivo da folga.|
 
 ## <a name="relationships"></a>Relações
 

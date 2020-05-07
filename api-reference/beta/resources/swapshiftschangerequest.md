@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 96589309cbeb2880e533b5607dc05beec78894ed
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9bd867642da41b2aa0644744655c94b1d842d977
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520265"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154266"
 ---
 # <a name="swapshiftschangerequest-resource-type"></a>tipo de recurso swapShiftsChangeRequest
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +34,7 @@ Representa um tipo de solicitação de mudança para trocar uma [mudança](../re
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|recipientShiftId|String|ID do destinatário da solicitação de troca. Esse é o usuário com o qual a solicitação deve ser trocada.|
+|recipientShiftId|Cadeia de caracteres|ID de alternância para o usuário do destinatário com o qual a solicitação deve ser trocada.|
 
 ## <a name="relationships"></a>Relações
 

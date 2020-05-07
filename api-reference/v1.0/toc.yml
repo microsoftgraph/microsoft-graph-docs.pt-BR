@@ -281,7 +281,7 @@
                       href: api/usersettings-get.md
                     - name: Atualizar configurações
                       href: api/usersettings-update.md
-            - name: Email
+            - name: Correio
               href: resources/message.md
               items:
                 - name: Criar pasta de email
@@ -802,7 +802,7 @@
                   items:
                     - name: Obter
                       href: api/participant-get.md
-                    - name: Lista
+                    - name: List
                       href: api/call-list-participants.md
                     - name: Ativar mudo para participante
                       href: api/participant-mute.md
@@ -4514,6 +4514,152 @@
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: Obter extensão aberta
                   href: api/opentypeextension-get.md
+            - name: Desloca
+              items:
+                - name: Shift
+                  href: resources/shift.md
+                  items:
+                    - name: Listar
+                      href: api/schedule-list-shifts.md
+                    - name: Criar
+                      href: api/schedule-post-shifts.md
+                    - name: Obter
+                      href: api/shift-get.md
+                    - name: Substituir
+                      href: api/shift-put.md
+                    - name: Excluir
+                      href: api/shift-delete.md
+                - name: Cronograma
+                  href: resources/schedule.md
+                  items:
+                    - name: Criar ou substituir
+                      href: api/team-put-schedule.md
+                    - name: Obter
+                      href: api/schedule-get.md
+                    - name: Compartilhar
+                      href: api/schedule-share.md
+                - name: Grupo de agendamento
+                  href: resources/schedulinggroup.md
+                  items:
+                    - name: Listar
+                      href: api/schedule-list-schedulinggroups.md
+                    - name: Criar
+                      href: api/schedule-post-schedulinggroups.md
+                    - name: Obter
+                      href: api/schedulinggroup-get.md
+                    - name: Substituir
+                      href: api/schedulinggroup-put.md
+                    - name: Excluir
+                      href: api/schedulinggroup-delete.md
+                - name: Oferecer mudança
+                  href: resources/offershiftrequest.md
+                  items:
+                    - name: Criar
+                      href: api/offershiftrequest-post.md
+                    - name: Obter
+                      href: api/offershiftrequest-get.md
+                    - name: List
+                      href: api/offershiftrequest-list.md
+                    - name: Aprovar
+                      href: api/offershiftrequest-approve.md
+                    - name: Aceito
+                      href: api/offershiftrequest-decline.md
+                - name: Abrir turno
+                  href: resources/openshift.md
+                  items:
+                    - name: Listar
+                      href: api/openshift-list.md
+                    - name: Criar
+                      href: api/openshift-post.md
+                    - name: Obter
+                      href: api/openshift-get.md
+                    - name: Atualizar
+                      href: api/openshift-update.md
+                    - name: Excluir
+                      href: api/openshift-delete.md
+                - name: Abrir solicitação de alteração de turno
+                  href: resources/openshiftchangerequest.md
+                  items:
+                    - name: Listar
+                      href: api/openshiftchangerequest-list.md
+                    - name: Criar
+                      href: api/openshiftchangerequest-post.md
+                    - name: Obter
+                      href: api/openshiftchangerequest-get.md
+                    - name: Aprovar
+                      href: api/openshiftchangerequest-approve.md
+                    - name: Aceito
+                      href: api/openshiftchangerequest-decline.md
+                - name: Preferências de mudança
+                  href: resources/shiftpreferences.md
+                  items:
+                    - name: Obter
+                      href: api/shiftpreferences-get.md
+                    - name: Atualizar
+                      href: api/shiftpreferences-put.md
+                - name: Trocar mudança de mudança
+                  href: resources/swapshiftschangerequest.md
+                  items:
+                    - name: Listar
+                      href: api/swapshiftschangerequest-list.md
+                    - name: Criar
+                      href: api/swapshiftschangerequest-post.md
+                    - name: Obter
+                      href: api/swapshiftschangerequest-get.md
+                    - name: Aprovar
+                      href: api/swapshiftschangerequest-approve.md
+                    - name: Aceito
+                      href: api/swapshiftschangerequest-decline.md
+                - name: Folga
+                  href: resources/timeoff.md
+                  items:
+                    - name: Listar
+                      href: api/schedule-list-timesoff.md
+                    - name: Criar
+                      href: api/schedule-post-timesoff.md
+                    - name: Obter
+                      href: api/timeoff-get.md
+                    - name: Substituir
+                      href: api/timeoff-put.md
+                    - name: Excluir
+                      href: api/timeoff-delete.md
+                - name: Motivo da folga
+                  href: resources/timeoffreason.md
+                  items:
+                    - name: Listar
+                      href: api/schedule-list-timeoffreasons.md
+                    - name: Criar
+                      href: api/schedule-post-timeoffreasons.md
+                    - name: Obter
+                      href: api/timeoffreason-get.md
+                    - name: Substituir
+                      href: api/timeoffreason-put.md
+                    - name: Excluir
+                      href: api/timeoffreason-delete.md
+                - name: Solicitação de folga
+                  href: resources/timeoffrequest.md
+                  items:
+                    - name: Obter
+                      href: api/timeoffrequest-get.md
+                    - name: Excluir
+                      href: api/timeoffrequest-delete.md
+                    - name: Aprovar
+                      href: api/timeoffrequest-approve.md
+                    - name: Aceito
+                      href: api/timeoffrequest-decline.md
+                - name: Integração de força de obra
+                  href: resources/workforceintegration.md
+                  items:
+                    - name: Listar
+                      href: api/workforceintegration-list.md
+                    - name: Criar
+                      href: api/workforceintegration-post.md
+                    - name: Obter
+                      href: api/workforceintegration-get.md
+                    - name: Atualizar
+                      href: api/workforceintegration-update.md
+                    - name: Excluir
+                      href: api/workforceintegration-delete.md
             - name: Unidade
               href: resources/drive.md
               items:

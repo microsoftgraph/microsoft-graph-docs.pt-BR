@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b818b55d95485ca17aff581f8b986f3fbb01465d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b810e83e1444312ede43933edaf2d29d76ab9b07
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451270"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154091"
 ---
 # <a name="create-workforceintegration"></a>Criar workforceIntegration
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,9 +55,11 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta e 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-create-a-new-workforceintegration-object"></a>Exemplo 1: criar um novo objeto workforceIntegration.
 
-Este é um exemplo de solicitação.
+#### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo de uma solicitação para criar um novo objeto **workforceIntegration** .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -96,7 +98,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
@@ -124,6 +126,97 @@ Content-type: application/json
   "supports": "supports-value"
 }
 ```
+
+### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Exemplo 2: criar um novo workforceIntegration com o SwapRequest habilitado para filtragem de qualificação
+
+Veja a seguir um exemplo de uma solicitação com o SwapRequest habilitado para filtragem de qualificação. 
+
+#### <a name="request"></a>Solicitação
+
+```
+POST https://graph.microsoft.com/beta/teamwork/workforceIntegrations/
+Authorization: Bearer {token}
+Content-type: application/json
+
+{
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
+  "isActive": true,
+  "encryption": {
+    "protocol": "sharedSecret",
+    "secret": "My Secret"
+  },
+  "url": "https://ABCWorkforceIntegration.com/Contoso/",
+  "supports": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
+}
+
+```
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+```
+HTTP/1.1 200 OK
+{
+  "id": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
+  "isActive": true,
+  "encryption": {
+    "protocol": "sharedSecret",
+    "secret": null
+  },
+  "url": "https://abcWorkforceIntegration.com/Contoso/",
+  "supports": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
+}
+
+```
+Para atualizar um objeto **workforceIntegration** existente com o SwapRequest habilitado para filtragem de qualificação, confira o método [Update](../api/workforceintegration-update.md) .
+
+### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Exemplo 3: buscando turnos qualificados quando o SwapRequest está incluído no eligibilityFilteringEnabledEntities
+
+A interação entre o aplicativo turnos e os pontos de extremidade de integração da força de força seguirá o padrão existente.
+
+### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo da solicitação feita por turnos para o ponto de extremidade de integração de força de funcionários para buscar turnos qualificados para uma solicitação de troca.
+
+```
+POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
+Accept-Language: en-us
+
+{
+  "requests": [
+  {
+     "id": "{shiftId}",
+     "method": "GET”,
+     "url": “/shifts/{shiftId}/requestableShifts?requestType={requestType}&startDateTime={startDateTime}&endDateTime={endDateTime}”
+   }]
+}
+```
+### <a name="response"></a>Resposta
+
+Veja a seguir um exemplo da resposta do serviço de integração de força de funcionários.
+```
+HTTP/1.1 200 OK
+{
+  "responses": [
+  {
+    "body": {
+      "SHFT_6548f642-cbc1-4228-8621-054327576457",
+      "SHFT_6548f642-cbc1-4228-8621-054327571234"
+  }
+    "id": "{shiftId}",
+    "status: 200,
+    "body": {
+       "data": [{ShiftId}, {ShiftId}...]
+       "error": null
+    }
+  ]
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

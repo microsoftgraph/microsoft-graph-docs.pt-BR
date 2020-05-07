@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9ea8999a500f937e5863819554562ffc84bbdad7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b86f232d5d5c6c41c2eab873e992b2b9902c976
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520615"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154336"
 ---
 # <a name="shiftitem-resource-type"></a>tipo de recurso shiftItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +23,8 @@ Representa uma versão de um [turno](shift.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade                         | Tipo                    | Descrição                                                                             |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| notes               | string                  | As notas para o `shiftItem`.      |
-| displayName               | string                  | O nome do `shiftItem`. |
+| notes               | string                  | As notas de alternância para `shiftItem`o.      |
+| displayName               | string                  | O rótulo Shift do `shiftItem`. |
 | startDateTime               | DateTimeOffset                  | A data e a hora de início `shiftItem`para o. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. Obrigatório. |
 | endDateTime               | DateTimeOffset                 | A data e a hora de término `shiftItem`para o. Obrigatório. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
 | tema | scheduleEntityTheme   |  Cores suportadas: branco; azuis natureza roxa Rosa amarelo acinzentada darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |

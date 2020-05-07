@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 6f2a9c2b59661e820a89268f83c3868d29b9f558
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 7ec8619b24dd642050151b49cf066df7e892c78c
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991828"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153482"
 ---
 Namespace: microsoft.graph
 
@@ -34,6 +34,52 @@ Namespace: microsoft.graph
 |pensão|5 | O filho do usuário.|
 |outro|6 | Uma relação não especificada com o usuário.|
 |unknownFutureValue|7 | Valor de marcador para compatibilidade futura.|
+
+### <a name="scheduleentitytheme-values"></a>valores de scheduleEntityTheme
+
+| Member
+|:-------------------------
+| branco
+| azuis
+| natureza
+| roxa
+| Rosa
+| amarelo
+| acinzentada
+| darkBlue
+| darkGreen
+| darkPurple
+| darkPink
+| darkYellow
+| unknownFutureValue
+
+
+### <a name="timeoffreasonicontype-values"></a>valores de timeOffReasonIconType
+
+|Member|
+|:---|
+|Nenhuma|
+|automóvel|
+|calendário|
+|com|
+|plano|
+|firstAid|
+|Doutor|
+|Não trabalho|
+|medição|
+|juryDuty|
+|Globe|
+|copo|
+|phone|
+|clima|
+|abrangência|
+|piggyBank|
+|cachorro|
+|torta|
+|trafficCone|
+|pessoal|
+|ensolarado|
+|unknownFutureValue|
 
 ### <a name="timezonestandard-values"></a>valores de timeZoneStandard
 
@@ -319,7 +365,7 @@ Namespace: microsoft.graph
 | Automático
 | nopreview
 | verificação
-| descrição
+| description
 | de referência
 
 
@@ -729,7 +775,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1     | Ameaça de email.            |
+| email   | 1     | Ameaça de email.            |
 | url    | duas     | Ameaça de URL.             |
 | file   | 3D     | Ameaça do arquivo de anexo. |
 

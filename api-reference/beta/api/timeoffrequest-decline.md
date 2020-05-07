@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9b99949d8ae30d208e1d1939c6473c8767d6cbd6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 468e4e05ace42405f216f6611c34560604a102c3
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452257"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154357"
 ---
 # <a name="timeoffrequest-decline"></a>timeOffRequest: recusar
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/timeOffRequests/decline
+POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -74,7 +74,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/timeOffRequests/decline
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline
 Content-type: application/json
 
 {

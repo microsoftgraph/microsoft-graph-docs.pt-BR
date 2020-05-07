@@ -4,17 +4,17 @@ description: Uma coleção de schedulingGroups, Shifts, timeOffReasons e timesOf
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-doc_type: resourcePageType_
-ms.openlocfilehash: d2d6a1e9890e5aea8e23185281c171f7356e8a7d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+doc_type: resourcePageType
+ms.openlocfilehash: 2fb40dc62e2a8c583c9e3c4f29ad4d9905acb6d6
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520981"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154133"
 ---
 # <a name="schedule-resource-type"></a>tipo de recurso Schedule
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,11 +36,11 @@ Uma coleção de objetos de grupo de [agendamento](schedulinggroup.md) , objetos
 | timeZone              |string  | Indica o fuso horário da equipe de agendamento usando o formato de banco de dados da TZ. Obrigatório.|
 | provisionStatus       |operationStatus    | O status do provisionamento de agendamento. Os valores possíveis são `notStarted`: `running` `completed`,, `failed`,. |
 | provisionStatusCode   |string  | Informações adicionais sobre por que o provisionamento de agendamento falhou. |
-| timeClockEnabled                  |Boolean  | Indica se o relógio de hora está habilitado para o cronograma.             |
-| openShiftsEnabled                 |Boolean  | Indica se os turnos abertos estão habilitados para o cronograma.             | 
-| swapShiftsRequestsEnabled                 |Boolean| Indica se as solicitações de troca alternadas estão habilitadas para o cronograma.             |
-| offerShiftRequestsEnabled                 |Boolean  | Indica se as solicitações de mudança de oferta estão habilitadas para o cronograma.             | 
-| timeOffRequestsEnabled                    |Boolean | Indica se as solicitações de folga estão habilitadas para o cronograma.             | 
+| timeClockEnabled                  |Booliano  | Indica se o relógio de hora está habilitado para o cronograma.             |
+| openShiftsEnabled                 |Booliano  | Indica se os turnos abertos estão habilitados para o cronograma.             | 
+| swapShiftsRequestsEnabled                 |Booliano| Indica se as solicitações de troca alternadas estão habilitadas para o cronograma.             |
+| offerShiftRequestsEnabled                 |Booliano  | Indica se as solicitações de mudança de oferta estão habilitadas para o cronograma.             | 
+| timeOffRequestsEnabled                    |Booliano | Indica se as solicitações de folga estão habilitadas para o cronograma.             | 
 
 
 

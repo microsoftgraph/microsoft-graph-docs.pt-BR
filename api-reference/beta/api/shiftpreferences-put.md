@@ -5,16 +5,16 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c1df99a56ed27724d9ff670f4b100d0b7ba93e71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b3f87e6981abf18a4f082839c3e3e47455d36961
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453279"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154322"
 ---
 # <a name="update-shiftpreferences"></a>Atualizar shiftPreferences
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{userId}/settings/shiftPreferences
+PUT /users/{userId}/settings/shiftPreferences
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -46,7 +46,7 @@ GET /users/{userId}/settings/shiftPreferences
 | Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Forneça o novo objeto [shiftPreferences](../resources/shiftpreferences.md) no corpo da solicitação para este método.
+No corpo da solicitação, forneça uma representação JSON de um objeto [shiftPreferences](../resources/shiftpreferences.md) .
 
 ## <a name="response"></a>Resposta
 

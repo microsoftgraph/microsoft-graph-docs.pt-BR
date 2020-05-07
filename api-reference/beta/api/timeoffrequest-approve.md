@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1e161d21b25e474f3433e3c3b49ff5a739e87605
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3cd518d14d7fdef9c954f8538e0dbc021cb35ccc
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452261"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154406"
 ---
 # <a name="timeoffrequest-approve"></a>timeOffRequest: aprovar
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/timeOffRequests/approve
+POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/approve
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -74,7 +74,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/timeOffRequests/approve
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/approve
 Content-type: application/json
 
 {
