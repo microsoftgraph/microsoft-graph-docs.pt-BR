@@ -5,20 +5,22 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d0bc20c6e83f8f2bd9e67268eb9471d84bbdcb16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fd6c68f79ffb417b12eb1f8e28d874f4461fb24e
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455239"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168553"
 ---
 # <a name="get-profile"></a>Obter perfil
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere as propriedades e os relacionamentos de um objeto de [perfil](../resources/profile.md) para um determinado usuário.
+
+O recurso de **perfil** expõe várias propriedades sofisticadas que são descritivas do usuário como [relações](../resources/profile.md#relationships), por exemplo, aniversários e atividades de educação. Para obter uma destas propriedades de navegação, use o método GET correspondente nessa propriedade. Consulte os [métodos](../resources/profile.md) expostos por **perfil**.
 
 ## <a name="permissions"></a>Permissões
 

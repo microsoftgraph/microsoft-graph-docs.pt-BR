@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 8b398ee8b0dbe14570f4ae59c71372502f3d0565
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 2e378229e8b001070db274c812cdb307934717cf
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227684"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168566"
 ---
 # <a name="profile-resource-type"></a>tipo de recurso Profile
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa propriedades descritivas de uma pessoa em um locatário. Essas propriedades são mostradas em experiências de pessoas compartilhadas entre o Microsoft 365 e serviços e experiências de terceiros por meio do Microsoft Graph. 
+Representa propriedades que são descritivas de um usuário em um locatário, por exemplo, aniversários e atividades de educação. Essas propriedades são mostradas em experiências de pessoas compartilhadas entre o Microsoft 365 e serviços e experiências de terceiros por meio do Microsoft Graph. 
+
+Programaticamente, essas propriedades são expressas como [relações](#relationships) do recurso de **perfil** . Para obter uma destas propriedades de navegação ou criar uma instância dessas propriedades para o usuário, use o método GET ou POST correspondente nessa propriedade, quando aplicável. Consulte os [métodos](#methods) listados abaixo.
 
 ## <a name="methods"></a>Métodos
 
@@ -91,6 +93,12 @@ Veja a seguir uma representação JSON do recurso.
 }-->
 
 ```json
+{
+    "id": "String (identifier)"
+}
+```
+
+<!--
 {
     "id": "profileId",
     "anniversaries": [],
@@ -326,7 +334,8 @@ Veja a seguir uma representação JSON do recurso.
     ],
     "webAccounts": []
 }
-```
+-->
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

@@ -5,16 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8b3eac903bee65832ca933bb09abb152bdee504e
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 0c2aece1632ed2ebd59def7e8bd00e56ec5676c0
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123969"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168545"
 ---
 # <a name="group-unsubscribebymail"></a>group: unsubscribeByMail
 
-Namespace: Microsoft. Graph chamar este método impedirá que o usuário atual receba notificações por email para este grupo sobre novas postagens, eventos e arquivos nesse grupo. Suportado somente para grupos do Office 365. 
+Namespace: microsoft.graph
+
+Chamar esse método impedirá que o usuário atual receba notificações por email para este grupo, sobre novas postagens, eventos e arquivos do grupo. Suporte apenas para grupos do Office 365. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

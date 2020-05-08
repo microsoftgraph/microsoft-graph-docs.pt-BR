@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c2540264f083f30b835ed14340f5af964afeba3c
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: c6ecc51d169341273a0093f86e7e4c2f0f7bf230
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916465"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168509"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Criar conditionalAccessPolicy
 
@@ -63,7 +63,7 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta e 
 ### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>Exemplo 1: exigir a MFA para acessar o Exchange Online fora de locais confiáveis
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação comum para exigir a autenticação multifator para acessar o Exchange Online a partir de um navegador ou cliente de autenticação moderna fora de locais confiáveis para um grupo específico.
+O exemplo a seguir mostra uma solicitação comum para exigir a autenticação multifator para acessar o Exchange Online de clientes de autenticação modernos fora de locais confiáveis para um grupo específico.
 
 >**Observação:** Você deve configurar seus locais confiáveis antes de usar essa operação.
 
@@ -83,7 +83,7 @@ Content-type: application/json
     "state": "enabled",
     "conditions": {
         "clientAppTypes": [
-            "modern",
+            "mobileAppsAndDesktopClients",
             "browser"
         ],
         "applications": {
@@ -151,7 +151,7 @@ Content-type: application/json
     "conditions": {
         "signInRiskLevels": [],
         "clientAppTypes": [
-            "modern",
+            "mobileAppsAndDesktopClients",
             "browser"
         ],
         "platforms": null,
@@ -213,11 +213,7 @@ Content-type: application/json
     "state": "enabled",
     "conditions": {
         "clientAppTypes": [
-            "modern",
-            "browser",
-            "easSupported",
-            "easUnsupported",
-            "other"
+            "all"
         ],
         "applications": {
             "includeApplications": [
@@ -267,11 +263,7 @@ Content-type: application/json
     "conditions": {
         "signInRiskLevels": [],
         "clientAppTypes": [
-            "modern",
-            "browser",
-            "easSupported",
-            "easUnsupported",
-            "other"
+            "all"
         ],
         "platforms": null,
         "deviceStates": null,
@@ -332,9 +324,8 @@ Content-type: application/json
             "medium"
         ],
         "clientAppTypes": [
-            "modern",
-            "easSupported",
-            "easUnsupported",
+            "mobileAppsAndDesktopClients",
+            "exchangeActiveSync",
             "other"
         ],
         "applications": {
@@ -456,9 +447,8 @@ Content-type: application/json
             "medium"
         ],
         "clientAppTypes": [
-            "modern",
-            "easSupported",
-            "easUnsupported",
+            "mobileAppsAndDesktopClients",
+            "exchangeActiveSync",
             "other"
         ],
         "applications": {
@@ -624,7 +614,9 @@ Content-type: application/json
     "conditions": {
         "userRiskLevels": [],
         "signInRiskLevels": [],
-        "clientAppTypes": [],
+        "clientAppTypes": [
+            "all"
+        ],
         "platforms": null,
         "locations": null,
         "times": null,

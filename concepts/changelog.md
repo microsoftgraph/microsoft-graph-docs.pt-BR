@@ -16,7 +16,7 @@ Este log de alterações inclui alterações específicas no nível da API no Mi
 
 Para obter um resumo do valor dessas alterações de API, além das ferramentas, componentes, diretrizes e tutoriais recentes, confira [Novidades do Microsoft Graph](whats-new-overview.md).
 
-## <a name="may-2020"></a>May 2020
+## <a name="may-2020"></a>Maio de 2020
 
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
 
