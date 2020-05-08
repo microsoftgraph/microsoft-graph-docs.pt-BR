@@ -5,35 +5,35 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c2540264f083f30b835ed14340f5af964afeba3c
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: c6ecc51d169341273a0093f86e7e4c2f0f7bf230
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916465"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168509"
 ---
-# <a name="create-conditionalaccesspolicy"></a><span data-ttu-id="3ef71-103">Criar conditionalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="3ef71-103">Create conditionalAccessPolicy</span></span>
+# <a name="create-conditionalaccesspolicy"></a><span data-ttu-id="4873b-103">Criar conditionalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="4873b-103">Create conditionalAccessPolicy</span></span>
 
-<span data-ttu-id="3ef71-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3ef71-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4873b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4873b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3ef71-105">Criar um novo [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).</span><span class="sxs-lookup"><span data-stu-id="3ef71-105">Create a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).</span></span>
+<span data-ttu-id="4873b-105">Criar um novo [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).</span><span class="sxs-lookup"><span data-stu-id="4873b-105">Create a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3ef71-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="3ef71-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4873b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4873b-106">Permissions</span></span>
 
-<span data-ttu-id="3ef71-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3ef71-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4873b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4873b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3ef71-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3ef71-109">Permission type</span></span>                        | <span data-ttu-id="3ef71-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3ef71-110">Permissions (from least to most privileged)</span></span>                    |
+|<span data-ttu-id="4873b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4873b-109">Permission type</span></span>                        | <span data-ttu-id="4873b-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4873b-110">Permissions (from least to most privileged)</span></span>                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|<span data-ttu-id="3ef71-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3ef71-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="3ef71-112">Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All</span><span class="sxs-lookup"><span data-stu-id="3ef71-112">Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All</span></span> |
-|<span data-ttu-id="3ef71-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3ef71-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3ef71-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3ef71-114">Not supported.</span></span> |
-|<span data-ttu-id="3ef71-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3ef71-115">Application</span></span>                            | <span data-ttu-id="3ef71-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3ef71-116">Not supported.</span></span> |
+|<span data-ttu-id="4873b-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4873b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="4873b-112">Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All</span><span class="sxs-lookup"><span data-stu-id="4873b-112">Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All</span></span> |
+|<span data-ttu-id="4873b-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4873b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4873b-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4873b-114">Not supported.</span></span> |
+|<span data-ttu-id="4873b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4873b-115">Application</span></span>                            | <span data-ttu-id="4873b-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4873b-116">Not supported.</span></span> |
 
 > [!NOTE]
-> <span data-ttu-id="3ef71-117">Essa API tem um [problema conhecido](/graph/known-issues#permissions) relacionado às permissões.</span><span class="sxs-lookup"><span data-stu-id="3ef71-117">This API has a [known issue](/graph/known-issues#permissions) related to permissions.</span></span>
+> <span data-ttu-id="4873b-117">Essa API tem um [problema conhecido](/graph/known-issues#permissions) relacionado às permissões.</span><span class="sxs-lookup"><span data-stu-id="4873b-117">This API has a [known issue](/graph/known-issues#permissions) related to permissions.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="3ef71-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3ef71-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4873b-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4873b-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,34 +41,34 @@ ms.locfileid: "43916465"
 POST /identity/conditionalAccess/policies
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3ef71-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3ef71-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4873b-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4873b-119">Request headers</span></span>
 
-| <span data-ttu-id="3ef71-120">Nome</span><span class="sxs-lookup"><span data-stu-id="3ef71-120">Name</span></span>          | <span data-ttu-id="3ef71-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="3ef71-121">Description</span></span>      |
+| <span data-ttu-id="4873b-120">Nome</span><span class="sxs-lookup"><span data-stu-id="4873b-120">Name</span></span>          | <span data-ttu-id="4873b-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="4873b-121">Description</span></span>      |
 |:--------------|:-----------------|
-| <span data-ttu-id="3ef71-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="3ef71-122">Authorization</span></span> | <span data-ttu-id="3ef71-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3ef71-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="3ef71-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3ef71-125">Content-Type</span></span>  | <span data-ttu-id="3ef71-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3ef71-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="4873b-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="4873b-122">Authorization</span></span> | <span data-ttu-id="4873b-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4873b-p102">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="4873b-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4873b-125">Content-Type</span></span>  | <span data-ttu-id="4873b-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4873b-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3ef71-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3ef71-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4873b-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4873b-128">Request body</span></span>
 
-<span data-ttu-id="3ef71-129">No corpo da solicitação, forneça uma representação JSON de um objeto [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="3ef71-129">In the request body, supply a JSON representation of a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.</span></span>
+<span data-ttu-id="4873b-129">No corpo da solicitação, forneça uma representação JSON de um objeto [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="4873b-129">In the request body, supply a JSON representation of a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.</span></span>
 
-<span data-ttu-id="3ef71-130">Uma política válida deve conter pelo menos uma regra de [aplicativo](../resources/conditionalaccessapplications.md) -por exemplo `'includeApplications': 'none'`, uma regra de [usuário](../resources/conditionalaccessusers.md) , por exemplo `'includeUsers': 'none'`, e pelo menos um controle de[sessão](../resources/conditionalaccesssessioncontrols.md) de [concessão](../resources/conditionalaccessgrantcontrols.md)/.</span><span class="sxs-lookup"><span data-stu-id="3ef71-130">A valid policy should contain at least one [application](../resources/conditionalaccessapplications.md) rule - for example, `'includeApplications': 'none'`, one [user](../resources/conditionalaccessusers.md) rule - for example, `'includeUsers': 'none'`, and at least one [grant](../resources/conditionalaccessgrantcontrols.md)/[session](../resources/conditionalaccesssessioncontrols.md) control.</span></span>
+<span data-ttu-id="4873b-130">Uma política válida deve conter pelo menos uma regra de [aplicativo](../resources/conditionalaccessapplications.md) -por exemplo `'includeApplications': 'none'`, uma regra de [usuário](../resources/conditionalaccessusers.md) , por exemplo `'includeUsers': 'none'`, e pelo menos um controle de[sessão](../resources/conditionalaccesssessioncontrols.md) de [concessão](../resources/conditionalaccessgrantcontrols.md)/.</span><span class="sxs-lookup"><span data-stu-id="4873b-130">A valid policy should contain at least one [application](../resources/conditionalaccessapplications.md) rule - for example, `'includeApplications': 'none'`, one [user](../resources/conditionalaccessusers.md) rule - for example, `'includeUsers': 'none'`, and at least one [grant](../resources/conditionalaccessgrantcontrols.md)/[session](../resources/conditionalaccesssessioncontrols.md) control.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3ef71-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="3ef71-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4873b-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="4873b-131">Response</span></span>
 
-<span data-ttu-id="3ef71-132">Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3ef71-132">If successful, this method returns a `201 Created` response code and a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object in the response body.</span></span>
+<span data-ttu-id="4873b-132">Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4873b-132">If successful, this method returns a `201 Created` response code and a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="3ef71-133">Exemplos</span><span class="sxs-lookup"><span data-stu-id="3ef71-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="4873b-133">Exemplos</span><span class="sxs-lookup"><span data-stu-id="4873b-133">Examples</span></span>
 
-### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a><span data-ttu-id="3ef71-134">Exemplo 1: exigir a MFA para acessar o Exchange Online fora de locais confiáveis</span><span class="sxs-lookup"><span data-stu-id="3ef71-134">Example 1: Require MFA to access Exchange Online outside of trusted locations</span></span>
+### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a><span data-ttu-id="4873b-134">Exemplo 1: exigir a MFA para acessar o Exchange Online fora de locais confiáveis</span><span class="sxs-lookup"><span data-stu-id="4873b-134">Example 1: Require MFA to access Exchange Online outside of trusted locations</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3ef71-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3ef71-135">Request</span></span>
-<span data-ttu-id="3ef71-136">O exemplo a seguir mostra uma solicitação comum para exigir a autenticação multifator para acessar o Exchange Online a partir de um navegador ou cliente de autenticação moderna fora de locais confiáveis para um grupo específico.</span><span class="sxs-lookup"><span data-stu-id="3ef71-136">The following example shows a common request to require multi-factor authentication for access to Exchange Online from a browser or modern auth client outside of trusted locations for a particular group.</span></span>
+#### <a name="request"></a><span data-ttu-id="4873b-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4873b-135">Request</span></span>
+<span data-ttu-id="4873b-136">O exemplo a seguir mostra uma solicitação comum para exigir a autenticação multifator para acessar o Exchange Online de clientes de autenticação modernos fora de locais confiáveis para um grupo específico.</span><span class="sxs-lookup"><span data-stu-id="4873b-136">The following example shows a common request to require multi-factor authentication for access to Exchange Online from modern authentication clients outside of trusted locations for a particular group.</span></span>
 
-><span data-ttu-id="3ef71-137">**Observação:** Você deve configurar seus locais confiáveis antes de usar essa operação.</span><span class="sxs-lookup"><span data-stu-id="3ef71-137">**Note:** You must set up your trusted locations before using this operation.</span></span>
+><span data-ttu-id="4873b-137">**Observação:** Você deve configurar seus locais confiáveis antes de usar essa operação.</span><span class="sxs-lookup"><span data-stu-id="4873b-137">**Note:** You must set up your trusted locations before using this operation.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="3ef71-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="3ef71-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4873b-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="4873b-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
@@ -83,7 +83,7 @@ Content-type: application/json
     "state": "enabled",
     "conditions": {
         "clientAppTypes": [
-            "modern",
+            "mobileAppsAndDesktopClients",
             "browser"
         ],
         "applications": {
@@ -111,24 +111,24 @@ Content-type: application/json
     }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="3ef71-139">C#</span><span class="sxs-lookup"><span data-stu-id="3ef71-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4873b-139">C#</span><span class="sxs-lookup"><span data-stu-id="4873b-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conditionalaccesspolicy-from-conditionalaccessroot-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="3ef71-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3ef71-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4873b-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4873b-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-conditionalaccesspolicy-from-conditionalaccessroot-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3ef71-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3ef71-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4873b-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4873b-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conditionalaccesspolicy-from-conditionalaccessroot-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="3ef71-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="3ef71-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4873b-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="4873b-142">Response</span></span>
 
-<span data-ttu-id="3ef71-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="3ef71-143">The following is an example of the response.</span></span>
+<span data-ttu-id="4873b-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4873b-143">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -151,7 +151,7 @@ Content-type: application/json
     "conditions": {
         "signInRiskLevels": [],
         "clientAppTypes": [
-            "modern",
+            "mobileAppsAndDesktopClients",
             "browser"
         ],
         "platforms": null,
@@ -193,11 +193,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a><span data-ttu-id="3ef71-144">Exemplo 2: bloquear o acesso ao Exchange Online de regiões não confiáveis</span><span class="sxs-lookup"><span data-stu-id="3ef71-144">Example 2: Block access to Exchange Online from non-trusted regions</span></span>
+### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a><span data-ttu-id="4873b-144">Exemplo 2: bloquear o acesso ao Exchange Online de regiões não confiáveis</span><span class="sxs-lookup"><span data-stu-id="4873b-144">Example 2: Block access to Exchange Online from non-trusted regions</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3ef71-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3ef71-145">Request</span></span>
-<span data-ttu-id="3ef71-146">O exemplo a seguir mostra uma solicitação para bloquear o acesso ao Exchange Online de regiões não confiáveis/desconhecidas.</span><span class="sxs-lookup"><span data-stu-id="3ef71-146">The following example shows a request to block access to Exchange Online from non-trusted/unknown regions.</span></span>
-<span data-ttu-id="3ef71-147">Este exemplo pressupõe que o local nomeado com ID = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponde a uma lista de regiões não confiáveis/desconhecidas.</span><span class="sxs-lookup"><span data-stu-id="3ef71-147">This example assumes that the named location with id = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponds to a list of non-trusted/unknown regions.</span></span>
+#### <a name="request"></a><span data-ttu-id="4873b-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4873b-145">Request</span></span>
+<span data-ttu-id="4873b-146">O exemplo a seguir mostra uma solicitação para bloquear o acesso ao Exchange Online de regiões não confiáveis/desconhecidas.</span><span class="sxs-lookup"><span data-stu-id="4873b-146">The following example shows a request to block access to Exchange Online from non-trusted/unknown regions.</span></span>
+<span data-ttu-id="4873b-147">Este exemplo pressupõe que o local nomeado com ID = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponde a uma lista de regiões não confiáveis/desconhecidas.</span><span class="sxs-lookup"><span data-stu-id="4873b-147">This example assumes that the named location with id = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponds to a list of non-trusted/unknown regions.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -213,11 +213,7 @@ Content-type: application/json
     "state": "enabled",
     "conditions": {
         "clientAppTypes": [
-            "modern",
-            "browser",
-            "easSupported",
-            "easUnsupported",
-            "other"
+            "all"
         ],
         "applications": {
             "includeApplications": [
@@ -242,9 +238,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="3ef71-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="3ef71-148">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4873b-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="4873b-148">Response</span></span>
 
-<span data-ttu-id="3ef71-149">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="3ef71-149">The following is an example of the response.</span></span>
+<span data-ttu-id="4873b-149">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4873b-149">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -267,11 +263,7 @@ Content-type: application/json
     "conditions": {
         "signInRiskLevels": [],
         "clientAppTypes": [
-            "modern",
-            "browser",
-            "easSupported",
-            "easUnsupported",
-            "other"
+            "all"
         ],
         "platforms": null,
         "deviceStates": null,
@@ -310,10 +302,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-use-all-conditionscontrols"></a><span data-ttu-id="3ef71-150">Exemplo 3: usar todas as condições/controles</span><span class="sxs-lookup"><span data-stu-id="3ef71-150">Example 3: Use all conditions/controls</span></span>
+### <a name="example-3-use-all-conditionscontrols"></a><span data-ttu-id="4873b-150">Exemplo 3: usar todas as condições/controles</span><span class="sxs-lookup"><span data-stu-id="4873b-150">Example 3: Use all conditions/controls</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3ef71-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3ef71-151">Request</span></span>
-<span data-ttu-id="3ef71-152">Veja a seguir um exemplo da solicitação para usar todas as condições/controles.</span><span class="sxs-lookup"><span data-stu-id="3ef71-152">The following is an example of the request to use all the conditions/controls.</span></span>
+#### <a name="request"></a><span data-ttu-id="4873b-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4873b-151">Request</span></span>
+<span data-ttu-id="4873b-152">Veja a seguir um exemplo da solicitação para usar todas as condições/controles.</span><span class="sxs-lookup"><span data-stu-id="4873b-152">The following is an example of the request to use all the conditions/controls.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
@@ -332,9 +324,8 @@ Content-type: application/json
             "medium"
         ],
         "clientAppTypes": [
-            "modern",
-            "easSupported",
-            "easUnsupported",
+            "mobileAppsAndDesktopClients",
+            "exchangeActiveSync",
             "other"
         ],
         "applications": {
@@ -429,9 +420,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="3ef71-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="3ef71-153">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4873b-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="4873b-153">Response</span></span>
 
-<span data-ttu-id="3ef71-154">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="3ef71-154">The following is an example of the response.</span></span>
+<span data-ttu-id="4873b-154">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4873b-154">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -456,9 +447,8 @@ Content-type: application/json
             "medium"
         ],
         "clientAppTypes": [
-            "modern",
-            "easSupported",
-            "easUnsupported",
+            "mobileAppsAndDesktopClients",
+            "exchangeActiveSync",
             "other"
         ],
         "applications": {
@@ -553,12 +543,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a><span data-ttu-id="3ef71-155">Exemplo 4: exigir a MFA para o Exchange Online a partir de dispositivos que não são de reclamação</span><span class="sxs-lookup"><span data-stu-id="3ef71-155">Example 4: Require MFA to Exchange Online from non-complaint devices</span></span>
+### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a><span data-ttu-id="4873b-155">Exemplo 4: exigir a MFA para o Exchange Online a partir de dispositivos que não são de reclamação</span><span class="sxs-lookup"><span data-stu-id="4873b-155">Example 4: Require MFA to Exchange Online from non-complaint devices</span></span>
 
-><span data-ttu-id="3ef71-156">**Observação:** Estamos preterindo a condição **deviceStates** e ela poderá ser removida no futuro.</span><span class="sxs-lookup"><span data-stu-id="3ef71-156">**Note:** We are deprecating the **deviceStates** condition, and it may be removed in the future.</span></span> <span data-ttu-id="3ef71-157">Em frente, use a condição **dispositivos** .</span><span class="sxs-lookup"><span data-stu-id="3ef71-157">Going forward, use **devices** condition.</span></span>
+><span data-ttu-id="4873b-156">**Observação:** Estamos preterindo a condição **deviceStates** e ela poderá ser removida no futuro.</span><span class="sxs-lookup"><span data-stu-id="4873b-156">**Note:** We are deprecating the **deviceStates** condition, and it may be removed in the future.</span></span> <span data-ttu-id="4873b-157">Em frente, use a condição **dispositivos** .</span><span class="sxs-lookup"><span data-stu-id="4873b-157">Going forward, use **devices** condition.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3ef71-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3ef71-158">Request</span></span>
-<span data-ttu-id="3ef71-159">O exemplo a seguir mostra uma solicitação para exigir a MFA para o Exchange Online a partir de dispositivos que não são de reclamações.</span><span class="sxs-lookup"><span data-stu-id="3ef71-159">The following example shows a request to require MFA to Exchange Online from non-complaint devices.</span></span>
+#### <a name="request"></a><span data-ttu-id="4873b-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4873b-158">Request</span></span>
+<span data-ttu-id="4873b-159">O exemplo a seguir mostra uma solicitação para exigir a MFA para o Exchange Online a partir de dispositivos que não são de reclamações.</span><span class="sxs-lookup"><span data-stu-id="4873b-159">The following example shows a request to require MFA to Exchange Online from non-complaint devices.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -599,9 +589,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="3ef71-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="3ef71-160">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4873b-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="4873b-160">Response</span></span>
 
-<span data-ttu-id="3ef71-161">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="3ef71-161">The following is an example of the response.</span></span>
+<span data-ttu-id="4873b-161">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4873b-161">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -624,7 +614,9 @@ Content-type: application/json
     "conditions": {
         "userRiskLevels": [],
         "signInRiskLevels": [],
-        "clientAppTypes": [],
+        "clientAppTypes": [
+            "all"
+        ],
         "platforms": null,
         "locations": null,
         "times": null,
