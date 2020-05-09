@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a615bef0cd18ce7ef28ba71adcbe8935736846b5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ddab518e5ab2e2aa4b61c71d45166419e0869631
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438096"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177902"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>Atualizar macOSDeviceFeaturesConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -69,7 +69,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 |airPrintDestinations|coleção [airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)|Uma matriz de impressoras de impressão que sempre devem ser mostradas. Esta coleção pode conter um máximo de 500 elementos. Herdado de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
 |autoLaunchItems|coleção [macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)|Lista de aplicativos, arquivos, pastas e outros itens a serem iniciados quando o usuário fizer logon. Esta coleção pode conter um máximo de 500 elementos.|
 |adminShowHostInfo|Boolean|Se deseja mostrar as informações de host de administrador na janela de logon.|
-|loginWindowText|String|Texto personalizado a ser exibido na janela de logon.|
+|loginWindowText|Cadeia de Caracteres|Texto personalizado a ser exibido na janela de logon.|
 |authorizedUsersListHidden|Boolean|Se deseja mostrar a caixa de diálogo nome e senha ou uma lista de usuários na janela de logon.|
 |authorizedUsersListHideLocalUsers|Boolean|Se deseja mostrar somente usuários de rede e de sistema na lista de usuários autorizados na janela de logon.|
 |authorizedUsersListHideMobileAccounts|Boolean|Se os usuários móveis serão ocultos na lista de usuários autorizados na janela de logon.|
@@ -101,7 +101,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2468
+Content-length: 3879
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -174,10 +174,50 @@ Content-length: 2468
     }
   ],
   "singleSignOnExtension": {
-    "@odata.type": "microsoft.graph.singleSignOnExtension"
+    "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
+    "extensionIdentifier": "Extension Identifier value",
+    "teamIdentifier": "Team Identifier value",
+    "domains": [
+      "Domains value"
+    ],
+    "realm": "Realm value",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyStringValuePair",
+        "key": "Key value",
+        "value": "Value value"
+      }
+    ]
   },
   "macOSSingleSignOnExtension": {
-    "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
+    "@odata.type": "microsoft.graph.macOSKerberosSingleSignOnExtension",
+    "realm": "Realm value",
+    "domains": [
+      "Domains value"
+    ],
+    "blockAutomaticLogin": true,
+    "cacheName": "Cache Name value",
+    "credentialBundleIdAccessControlList": [
+      "Credential Bundle Id Access Control List value"
+    ],
+    "domainRealms": [
+      "Domain Realms value"
+    ],
+    "isDefaultRealm": true,
+    "passwordBlockModification": true,
+    "passwordExpirationDays": 6,
+    "passwordExpirationNotificationDays": 2,
+    "userPrincipalName": "User Principal Name value",
+    "passwordRequireActiveDirectoryComplexity": true,
+    "passwordPreviousPasswordBlockCount": 2,
+    "passwordMinimumLength": 5,
+    "passwordMinimumAgeDays": 6,
+    "passwordRequirementsDescription": "Password Requirements Description value",
+    "requireUserPresence": true,
+    "activeDirectorySiteCode": "Active Directory Site Code value",
+    "passwordEnableLocalSync": true,
+    "blockActiveDirectorySiteAutoDiscovery": true,
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
   }
 }
 ```
@@ -187,7 +227,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2640
+Content-Length: 4051
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -263,10 +303,50 @@ Content-Length: 2640
     }
   ],
   "singleSignOnExtension": {
-    "@odata.type": "microsoft.graph.singleSignOnExtension"
+    "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
+    "extensionIdentifier": "Extension Identifier value",
+    "teamIdentifier": "Team Identifier value",
+    "domains": [
+      "Domains value"
+    ],
+    "realm": "Realm value",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyStringValuePair",
+        "key": "Key value",
+        "value": "Value value"
+      }
+    ]
   },
   "macOSSingleSignOnExtension": {
-    "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
+    "@odata.type": "microsoft.graph.macOSKerberosSingleSignOnExtension",
+    "realm": "Realm value",
+    "domains": [
+      "Domains value"
+    ],
+    "blockAutomaticLogin": true,
+    "cacheName": "Cache Name value",
+    "credentialBundleIdAccessControlList": [
+      "Credential Bundle Id Access Control List value"
+    ],
+    "domainRealms": [
+      "Domain Realms value"
+    ],
+    "isDefaultRealm": true,
+    "passwordBlockModification": true,
+    "passwordExpirationDays": 6,
+    "passwordExpirationNotificationDays": 2,
+    "userPrincipalName": "User Principal Name value",
+    "passwordRequireActiveDirectoryComplexity": true,
+    "passwordPreviousPasswordBlockCount": 2,
+    "passwordMinimumLength": 5,
+    "passwordMinimumAgeDays": 6,
+    "passwordRequirementsDescription": "Password Requirements Description value",
+    "requireUserPresence": true,
+    "activeDirectorySiteCode": "Active Directory Site Code value",
+    "passwordEnableLocalSync": true,
+    "blockActiveDirectorySiteAutoDiscovery": true,
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
   }
 }
 ```

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 970547df9cc8d8ca2a81e7a6615ce0798bdef50a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 160d0139b9583c478e8be96149e7059b6236fb5e
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465565"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175431"
 ---
 # <a name="list-windowsinformationprotections"></a>Listar windowsInformationProtections
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4675
+Content-Length: 4565
 
 {
   "value": [
@@ -153,9 +153,7 @@ Content-Length: 4675
           "displayName": "Display Name value",
           "ranges": [
             {
-              "@odata.type": "microsoft.graph.iPv6Range",
-              "lowerAddress": "Lower Address value",
-              "upperAddress": "Upper Address value"
+              "@odata.type": "microsoft.graph.ipRange"
             }
           ]
         }

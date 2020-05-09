@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 595ff34c4260252b4f4227ba8c79687a1953e95e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 440fc4f8fe9bb8fce8b98a16dc899792a2cb773b
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407284"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177279"
 ---
 # <a name="list-androidmanagedappprotections"></a>Listar androidManagedAppProtections
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2065
+Content-Length: 2247
 
 {
   "value": [
@@ -103,20 +103,20 @@ Content-Length: 2065
       "minimumWarningOsVersion": "Minimum Warning Os Version value",
       "minimumRequiredAppVersion": "Minimum Required App Version value",
       "minimumWarningAppVersion": "Minimum Warning App Version value",
+      "managedBrowser": "microsoftEdge",
       "isAssigned": true,
       "screenCaptureBlocked": true,
       "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
       "encryptAppData": true,
       "deployedAppCount": 0,
       "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
-      "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
+      "minimumWarningPatchVersion": "Minimum Warning Patch Version value",
+      "customBrowserPackageId": "Custom Browser Package Id value",
+      "customBrowserDisplayName": "Custom Browser Display Name value"
     }
   ]
 }
 ```
-
-
-
 
 
 

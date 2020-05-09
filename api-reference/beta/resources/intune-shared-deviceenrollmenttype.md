@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 68910dececddb812c8c5ac25c02020ac9370edcb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: adc6f9ff57c0b1a76e6ee5e2cce90fabda4d1917
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458318"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178084"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>tipo de enumeração deviceEnrollmentType
 
@@ -38,6 +38,9 @@ Maneiras possíveis de adicionar um dispositivo móvel ao gerenciamento.
 |appleUserEnrollment|11|Dispositivo gerenciado pelo registro de usuário da Apple|
 |appleUserEnrollmentWithServiceAccount|12 |Dispositivo gerenciado pelo registro de usuário da Apple com conta de serviço|
 |azureAdJoinUsingAzureVmExtension|14 |Azure AD ingressar no registro quando uma máquina virtual do Azure é provisionada|
+|androidEnterpriseDedicatedDevice|15 |Dispositivo dedicado corporativo Android|
+|androidEnterpriseFullyManaged|16 |Android Enterprise totalmente gerenciado|
+|androidEnterpriseCorporateWorkProfile|17 |Perfil de trabalho corporativo do Android Enterprise|
 
 
 

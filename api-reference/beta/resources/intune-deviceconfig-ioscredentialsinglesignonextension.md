@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4a8956fb879bf51bf33f3b682826279fd702f127
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 33733eeb55d1b4bfb4260998f577602861433387
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444136"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177517"
 ---
 # <a name="ioscredentialsinglesignonextension-resource-type"></a>tipo de recurso iosCredentialSingleSignOnExtension
 
@@ -28,10 +28,10 @@ Herda de [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|extensionIdentifier|String|Obtém ou define a ID do pacote da extensão do aplicativo que executa o SSO para as URLs especificadas.|
-|teamIdentifier|String|Obtém ou define a ID de equipe da extensão de aplicativo que executa o SSO para as URLs especificadas.|
-|domínio|Coleção String|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão de aplicativo executa SSO.|
-|esfera|String|Obtém ou define o nome de território que diferencia maiúsculas de minúsculas para esse perfil.|
+|extensionIdentifier|Cadeia de Caracteres|Obtém ou define a ID do pacote da extensão do aplicativo que executa o SSO para as URLs especificadas.|
+|teamIdentifier|Cadeia de Caracteres|Obtém ou define a ID de equipe da extensão de aplicativo que executa o SSO para as URLs especificadas.|
+|domínio|Conjunto de cadeias de caracteres|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão de aplicativo executa SSO.|
+|esfera|Cadeia de Caracteres|Obtém ou define o nome de território que diferencia maiúsculas de minúsculas para esse perfil.|
 |as|coleção [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Obtém ou define uma lista de pares de valores de chave digitados usados para configurar perfis de tipo de credencial. Esta coleção pode conter um máximo de 500 elementos.|
 
 ## <a name="relationships"></a>Relações
@@ -55,9 +55,8 @@ Veja a seguir uma representação JSON do recurso.
   "realm": "String",
   "configurations": [
     {
-      "@odata.type": "microsoft.graph.keyStringValuePair",
-      "key": "String",
-      "value": "String"
+      "@odata.type": "microsoft.graph.keyTypedValuePair",
+      "key": "String"
     }
   ]
 }

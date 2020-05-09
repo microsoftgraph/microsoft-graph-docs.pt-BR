@@ -1,15 +1,15 @@
 ---
 title: Registrar dispositivos corporativos usando o Intune-Microsoft Graph API
 description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) que registram dispositivos para uma organização de locatário.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: fb0dd9d6b03330cc0f585fb36dfff64a2dfe1a34
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d5611e7819756803bceb079d9ef1d324ec39a7d0
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783547"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179197"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Registrar dispositivos de propriedade corporativa por meio do Intune
 

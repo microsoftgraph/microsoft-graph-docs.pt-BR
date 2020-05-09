@@ -1,18 +1,18 @@
 ---
-title: Listar androidWorkProfileCustomConfigurations
-description: Listar Propriedades e relações dos objetos androidWorkProfileCustomConfiguration.
+title: Listar featureFlightedConfigurations
+description: Listar Propriedades e relações dos objetos featureFlightedConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f321d142417fa7030416b53a54057e043e2582d
+ms.openlocfilehash: c5057d13152fbaac2e4bb9b3cc3877051052ab7e
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178707"
+ms.locfileid: "44178630"
 ---
-# <a name="list-androidworkprofilecustomconfigurations"></a>Listar androidWorkProfileCustomConfigurations
+# <a name="list-featureflightedconfigurations"></a>Listar featureFlightedConfigurations
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar Propriedades e relações dos objetos [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) .
+Listar Propriedades e relações dos objetos [featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -66,13 +66,13 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1617
+Content-Length: 1364
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.androidWorkProfileCustomConfiguration",
-      "id": "76c5d59b-d59b-76c5-9bd5-c5769bd5c576",
+      "@odata.type": "#microsoft.graph.featureFlightedConfiguration",
+      "id": "c4725458-5458-c472-5854-72c4585472c4",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
@@ -102,15 +102,7 @@ Content-Length: 1617
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
-      "version": 7,
-      "omaSettings": [
-        {
-          "@odata.type": "microsoft.graph.omaSetting",
-          "displayName": "Display Name value",
-          "description": "Description value",
-          "omaUri": "Oma Uri value"
-        }
-      ]
+      "version": 7
     }
   ]
 }

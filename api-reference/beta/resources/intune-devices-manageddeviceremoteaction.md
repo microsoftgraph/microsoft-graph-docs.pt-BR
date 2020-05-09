@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c737716ec14a162c74b735e591ba5612597b5915
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2edfe8739602697fa1ae8215e5c9c62d9805a664
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443890"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178028"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>tipo de enumeração managedDeviceRemoteAction
 
@@ -34,6 +34,7 @@ Ainda não documentado
 |customTextNotification|6 |Ainda não documentado|
 |rebootNow|7 |Ainda não documentado|
 |DeviceName|8 |Ainda não documentado|
+|syncDevice|9 |Ainda não documentado|
 
 
 

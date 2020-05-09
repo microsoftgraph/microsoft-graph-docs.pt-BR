@@ -1,18 +1,18 @@
 ---
-title: Acessar mobileAppAssignment
-description: Leia as propriedades e as relações do objeto mobileAppAssignment.
+title: Acessar remoteAssistancePartner
+description: Leia as propriedades e as relações do objeto remoteAssistancePartner.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a91cf6ddd4ba47ad99eb2a3ae9723eec8b77aa0c
+ms.openlocfilehash: b50d3180e7884d235038bf5caf30d9d5139f7850
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177944"
+ms.locfileid: "44176108"
 ---
-# <a name="get-mobileappassignment"></a>Acessar mobileAppAssignment
+# <a name="get-remoteassistancepartner"></a>Acessar remoteAssistancePartner
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md).
+Leia as propriedades e as relações do objeto [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
+GET /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,14 +53,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
+GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -68,23 +68,16 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 518
+Content-Length: 346
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.mobileAppAssignment",
-    "id": "591620b7-20b7-5916-b720-1659b7201659",
-    "intent": "required",
-    "target": {
-      "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
-    },
-    "settings": {
-      "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-      "vpnConfigurationId": "Vpn Configuration Id value",
-      "uninstallOnDeviceRemoval": true
-    },
-    "source": "policySets",
-    "sourceId": "Source Id value"
+    "@odata.type": "#microsoft.graph.remoteAssistancePartner",
+    "id": "7443c8b9-c8b9-7443-b9c8-4374b9c84374",
+    "displayName": "Display Name value",
+    "onboardingUrl": "https://example.com/onboardingUrl/",
+    "onboardingStatus": "onboarding",
+    "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
   }
 }
 ```

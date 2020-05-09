@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 89075571f51cad503041a82af99900caeb5a801f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 411496d5ff6f66fbfac9cf3371b2be107b95374d
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380649"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177825"
 ---
 # <a name="update-devicehealthscriptassignment"></a>Atualizar deviceHealthScriptAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de atribuição de script de integridade do dispositivo. Essa propriedade é somente leitura.|
+|id|Cadeia de caracteres|Chave da entidade de atribuição de script de integridade do dispositivo. Essa propriedade é somente leitura.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O grupo do Azure Active Directory que estamos direcionando o script para|
 |runRemediationScript|Boolean|Determinar se queremos executar somente o script de detecção ou executar o script de detecção e o script de correção|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Agendamento de execução de script para o grupo de destino|
+|runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Agendamento de execução de script para o grupo de destino|
 
 
 
@@ -70,16 +70,19 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{deviceHealthScriptAssignmentId}
 Content-type: application/json
-Content-length: 277
+Content-length: 359
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "runRemediationScript": true,
   "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
+    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+    "interval": 8,
+    "useUtc": true,
+    "time": "11:58:36.2550000"
   }
 }
 ```
@@ -89,17 +92,20 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 326
+Content-Length: 408
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
   "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "runRemediationScript": true,
   "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
+    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+    "interval": 8,
+    "useUtc": true,
+    "time": "11:58:36.2550000"
   }
 }
 ```

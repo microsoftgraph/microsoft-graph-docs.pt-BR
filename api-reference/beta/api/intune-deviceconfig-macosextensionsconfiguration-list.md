@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 75f3a09c6067291c6293d4eeccada9353341f7e0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4a9e259f34f377d1ea9b5eb841542e85d5e517d1
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437942"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177881"
 ---
 # <a name="list-macosextensionsconfigurations"></a>Listar macOSExtensionsConfigurations
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1760
+Content-Length: 2414
 
 {
   "value": [
@@ -112,6 +112,24 @@ Content-Length: 1760
           "@odata.type": "microsoft.graph.macOSKernelExtension",
           "teamIdentifier": "Team Identifier value",
           "bundleId": "Bundle Id value"
+        }
+      ],
+      "systemExtensionsBlockOverride": true,
+      "systemExtensionsAllowedTeamIdentifiers": [
+        "System Extensions Allowed Team Identifiers value"
+      ],
+      "systemExtensionsAllowed": [
+        {
+          "@odata.type": "microsoft.graph.macOSSystemExtension",
+          "teamIdentifier": "Team Identifier value",
+          "bundleId": "Bundle Id value"
+        }
+      ],
+      "systemExtensionsAllowedTypes": [
+        {
+          "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
+          "teamIdentifier": "Team Identifier value",
+          "allowedTypes": "networkExtensionsAllowed"
         }
       ]
     }

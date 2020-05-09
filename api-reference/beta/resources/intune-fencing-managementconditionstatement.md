@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd52a4c78873a55c6b7635538cac11c2c5168542
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3b5206d83b65b95726dbf6710673567e3a77e35a
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439707"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175333"
 ---
 # <a name="managementconditionstatement-resource-type"></a>tipo de recurso managementConditionStatement
 
@@ -46,7 +46,7 @@ Uma instrução de condição de gerenciamento é um grupo de condições de ger
 |applicablePlatforms|coleção [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|As plataformas aplicáveis para essa instrução de condição de gerenciamento.
 Isso é calculado a partir da aparência das condições de gerenciamento associadas à instrução de condição de gerenciamento e à localização da interseção de plataformas aplicáveis.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |managementConditions|coleção [managementCondition](../resources/intune-fencing-managementcondition.md)|As condições de gerenciamento associadas à instrução de condição de gerenciamento.|
@@ -68,7 +68,8 @@ Veja a seguir uma representação JSON do recurso.
   "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)",
   "expression": {
-    "@odata.type": "microsoft.graph.managementConditionExpression"
+    "@odata.type": "microsoft.graph.managementConditionExpressionString",
+    "value": "String"
   },
   "eTag": "String",
   "applicablePlatforms": [

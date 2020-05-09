@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aa77b7151b7da7523a6bf18365516646eae93b95
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 06bf7416ed8dd867c50f6175b0c3516a44ff4269
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43424274"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177559"
 ---
 # <a name="list-managedappregistrations"></a>Listar managedAppRegistrations
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1014
+Content-Length: 1063
 
 {
   "value": [
@@ -88,7 +88,8 @@ Content-Length: 1014
       ],
       "userId": "User Id value",
       "appIdentifier": {
-        "@odata.type": "microsoft.graph.mobileAppIdentifier"
+        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+        "packageId": "Package Id value"
       },
       "id": "5496aa60-aa60-5496-60aa-965460aa9654",
       "version": "Version value"
