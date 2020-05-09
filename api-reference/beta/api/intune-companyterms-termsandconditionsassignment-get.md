@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0763fc314a0251e9d848b37e439ee1979b39aa16
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 731ca2d70a7053d7a2aa4f279816fb2a814f0189
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436431"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177384"
 ---
 # <a name="get-termsandconditionsassignment"></a>Obter termsAndConditionsAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,14 +68,14 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 246
+Content-Length: 234
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
     "id": "64c1a196-a196-64c1-96a1-c16496a1c164",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
     }
   }
 }

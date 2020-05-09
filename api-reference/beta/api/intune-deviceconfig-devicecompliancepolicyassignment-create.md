@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e199fc436122de884f48c663389365b0cf57b09d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8eb1eb9b2d88ce211c0c452e054d2c02924f54eb
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434099"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178693"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>Criar deviceCompliancePolicyAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino da atribuição de políticas de conformidade.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|A fonte de atribuição da política de conformidade do dispositivo, direta ou de remessa/política. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|String|O identificador da origem da atribuição.|
+|sourceId|Cadeia de Caracteres|O identificador da origem da atribuição.|
 
 
 
@@ -70,12 +70,12 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments
 Content-type: application/json
-Content-length: 233
+Content-length: 221
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -87,13 +87,13 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 282
+Content-Length: 270
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
   "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "source": "policySets",
   "sourceId": "Source Id value"

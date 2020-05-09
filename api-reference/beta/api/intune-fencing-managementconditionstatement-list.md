@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e9af2094b07154ac9b5691f83eb8977439f599b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8b7251b5c4bcac012a2d1ccbfbdb59028e9984d5
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384944"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178063"
 ---
 # <a name="list-managementconditionstatements"></a>Listar managementConditionStatements
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 576
+Content-Length: 615
 
 {
   "value": [
@@ -78,7 +78,8 @@ Content-Length: 576
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "modifiedDateTime": "2017-01-01T00:00:22.8983556-08:00",
       "expression": {
-        "@odata.type": "microsoft.graph.managementConditionExpression"
+        "@odata.type": "microsoft.graph.managementConditionExpressionString",
+        "value": "Value value"
       },
       "eTag": "ETag value",
       "applicablePlatforms": [

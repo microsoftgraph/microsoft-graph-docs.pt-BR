@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d1b8681e5d5ea665adf50e86c36317a47c617b1d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d5d7a90f10cdc74490534f19469714033c39b3fe
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43383638"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178294"
 ---
 # <a name="update-policysetassignment"></a>Atualizar policySetAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [policyS
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave do PolicySetAssignment.|
+|id|Cadeia de caracteres|Chave do PolicySetAssignment.|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do PolicySetAssignment.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O grupo de destino de PolicySetAssignment|
 
@@ -69,12 +69,12 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/assignments/{policySetAssignmentId}
 Content-type: application/json
-Content-length: 159
+Content-length: 147
 
 {
   "@odata.type": "#microsoft.graph.policySetAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```
@@ -84,14 +84,14 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 272
+Content-Length: 260
 
 {
   "@odata.type": "#microsoft.graph.policySetAssignment",
   "id": "0a8e7d40-7d40-0a8e-407d-8e0a407d8e0a",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```

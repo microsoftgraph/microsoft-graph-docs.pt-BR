@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d7d2c98349c35fe541418c1147b53ffb7d4ca262
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d7525a99b9303a0b369efafefe0e38487eeb5010
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450371"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44174290"
 ---
 # <a name="update-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Atualizar deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -60,6 +60,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [deviceEnrollmen
 |createdDateTime|DateTimeOffset|Data e hora de criação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |versão|Int32|A versão da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Marcas de escopo de função opcional para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |pinMinimumLength|Int32|Controla o número mínimo de caracteres necessários para o PIN do Windows Hello para empresas.  Esse valor deve estar entre 4 e 127, inclusive e menor ou igual ao valor definido para o PIN máximo.|
 |pinMaximumLength|Int32|Controla o número máximo de caracteres permitido para o PIN do Windows Hello para empresas. Esse valor deve estar entre 4 e 127, inclusive. Esse valor deve ser maior ou igual ao valor definido para o PIN mínimo.|
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Controla a capacidade de usar letras maiúsculas no PIN do Windows Hello para empresas.  Permitido permite o uso de letras maiúsculas, enquanto que Required garante que estão presentes. Se definido como não permitido, as letras maiúsculas não serão permitidas. Os valores possíveis são: `allowed`, `required`, `disallowed`.|
@@ -86,7 +87,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 Content-type: application/json
-Content-length: 667
+Content-length: 729
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
@@ -94,6 +95,9 @@ Content-length: 667
   "description": "Description value",
   "priority": 8,
   "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "pinMinimumLength": 0,
   "pinMaximumLength": 0,
   "pinUppercaseCharactersUsage": "required",
@@ -115,7 +119,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 839
+Content-Length: 901
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
@@ -126,6 +130,9 @@ Content-Length: 839
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "pinMinimumLength": 0,
   "pinMaximumLength": 0,
   "pinUppercaseCharactersUsage": "required",

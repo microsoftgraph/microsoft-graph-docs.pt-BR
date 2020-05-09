@@ -1,15 +1,15 @@
 ---
 title: Gerenciamento de dispositivos no Microsoft Intune-API do Microsoft Graph
 description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) que definem o gerenciamento de dispositivos para uma organização de locatário.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f20ad594af8819fab9c9f88e0af81a5fbf009a59
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 959c7c7d0f38dfa036f74cd4fd36f26a2fbfb442
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471121"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179317"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -36,7 +36,6 @@ Namespace: microsoft.graph
 - [Resultado de ação do dispositivo gerenciado em massa](intune-devices-bulkmanageddeviceactionresult.md)
 - [Tipo de gabinete](intune-devices-chassistype.md)
 - [Condição de gerenciamento de cerca geográfica circular](intune-fencing-circulargeofencemanagementcondition.md)
-- [Tipo qualificado de gerenciamento de co](intune-devices-comanagementeligibletype.md)
 - [Estado de conformidade](intune-devices-compliancestate.md)
 - [Ação do Gerenciador de configurações](intune-devices-configurationmanageraction.md)
 - [Status de entrega de ação do Gerenciador de configurações](intune-devices-configurationmanageractiondeliverystatus.md)
@@ -46,12 +45,10 @@ Namespace: microsoft.graph
 - [Estado de integridade do cliente de gerenciador de configurações](intune-devices-configurationmanagerclienthealthstate.md)
 - [Informações do cliente do Configuration Manager](intune-devices-configurationmanagerclientinformation.md)
 - [Estado do cliente de gerenciador de configurações](intune-devices-configurationmanagerclientstate.md)
-- [Cronograma diário](intune-devices-dailyschedule.md)
 - [Autorização de compartilhamento de dados](intune-devices-datasharingconsent.md)
 - [Resultado da ação de excluir o usuário do dispositivo compartilhado da Apple](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
 - [Aplicativo detectado](intune-devices-detectedapp.md)
 - [Resultado da ação do dispositivo](intune-devices-deviceactionresult.md)
-- [Tipo de filtro de atribuição de gerenciamento de dispositivos e aplicativos](intune-esim-deviceandappmanagementassignmentfiltertype.md)
 - [Motivo da falha de registro do dispositivo](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [Resumo do Estado de Acesso ao Exchange do dispositivo](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Geolocalização do dispositivo](intune-devices-devicegeolocation.md)
@@ -61,11 +58,20 @@ Namespace: microsoft.graph
 - [Estado do atestado de integridade do dispositivo](intune-devices-devicehealthattestationstate.md)
 - [Script de integridade do dispositivo](intune-devices-devicehealthscript.md)
 - [Atribuição de script de integridade do dispositivo](intune-devices-devicehealthscriptassignment.md)
+- [Parâmetro booliano do script de integridade do dispositivo](intune-devices-devicehealthscriptbooleanparameter.md)
+- [Agendamento diário do script de integridade do dispositivo](intune-devices-devicehealthscriptdailyschedule.md)
 - [Estado do dispositivo de script de integridade do dispositivo](intune-devices-devicehealthscriptdevicestate.md)
+- [Agendamento por hora do script de integridade do dispositivo](intune-devices-devicehealthscripthourlyschedule.md)
+- [Parâmetro inteiro do script de integridade do dispositivo](intune-devices-devicehealthscriptintegerparameter.md)
+- [Parâmetro de script de integridade do dispositivo](intune-devices-devicehealthscriptparameter.md)
 - [Histórico de correção de script de integridade do dispositivo](intune-devices-devicehealthscriptremediationhistory.md)
 - [Dados de histórico de correção de script de integridade do dispositivo](intune-devices-devicehealthscriptremediationhistorydata.md)
 - [Resumo de correção de script de integridade do dispositivo](intune-devices-devicehealthscriptremediationsummary.md)
+- [Agendamento de script de integridade do dispositivo executado após](intune-devices-devicehealthscriptrunonceschedule.md)
+- [Agendamento de execução de script de integridade do dispositivo](intune-devices-devicehealthscriptrunschedule.md)
 - [Resumo de execução de script de integridade do dispositivo](intune-devices-devicehealthscriptrunsummary.md)
+- [Parâmetro de cadeia de caracteres de script de integridade do dispositivo](intune-devices-devicehealthscriptstringparameter.md)
+- [Agendamento de tempo de script de integridade do dispositivo](intune-devices-devicehealthscripttimeschedule.md)
 - [Definição de configuração complexa abstrata de gerenciamento de dispositivos](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [Instância de configuração complexa abstrata de gerenciamento de dispositivos](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Evento de piloto automático de gerenciamento de dispositivos](intune-troubleshooting-devicemanagementautopilotevent.md)
@@ -121,6 +127,7 @@ Namespace: microsoft.graph
 - [Assinaturas de gerenciamento de dispositivo](intune-devices-devicemanagementsubscriptions.md)
 - [Modelo do gerenciamento de dispositivos](intune-deviceintent-devicemanagementtemplate.md)
 - [Categoria de configuração de modelo do gerenciamento de dispositivos](intune-deviceintent-devicemanagementtemplatesettingcategory.md)
+- [Subtipo de modelo de gerenciamento de dispositivos](intune-deviceintent-devicemanagementtemplatesubtype.md)
 - [Tipo de modelo de gerenciamento de dispositivos](intune-deviceintent-devicemanagementtemplatetype.md)
 - [Detalhes de erros de solução de problemas de gerenciamento de dispositivo](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
 - [Recursos de erros de solução de problemas de gerenciamento de dispositivo](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
@@ -140,9 +147,9 @@ Namespace: microsoft.graph
 - [Estado do script de integridade do dispositivo global](intune-devices-globaldevicehealthscriptstate.md)
 - [Informações de hardware](intune-devices-hardwareinformation.md)
 - [Estado de integridade](intune-devices-healthstate.md)
-- [Cronograma por hora](intune-devices-hourlyschedule.md)
 - [Valor de visão duplo](intune-devices-insightvaluedouble.md)
 - [Valor de percepção int](intune-devices-insightvalueint.md)
+- [Tipo de junção](intune-devices-jointype.md)
 - [Mensagem de notificação localizada](intune-notification-localizednotificationmessage.md)
 - [Resultado da ação de localizar dispositivo](intune-devices-locatedeviceactionresult.md)
 - [Condição de gerenciamento local](intune-fencing-locationmanagementcondition.md)
@@ -182,12 +189,13 @@ Namespace: microsoft.graph
 - [Estado de correção](intune-devices-remediationstate.md)
 - [Ação remota](intune-devices-remoteaction.md)
 - [Auditoria de ação remota](intune-devices-remoteactionaudit.md)
+- [Status da inclusão de assistência remota](intune-remoteassistance-remoteassistanceonboardingstatus.md)
+- [Parceiro de assistência remota](intune-remoteassistance-remoteassistancepartner.md)
 - [Resultado da ação de bloqueio remoto](intune-devices-remotelockactionresult.md)
 - [Resultado da ação de redefinir a senha](intune-devices-resetpasscodeactionresult.md)
 - [Resultado de ação de revogar licenças VPP da Apple](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Informações de marca de escopo de função](intune-auditing-rolescopetaginfo.md)
 - [Resultado da ação de rotação de chaves do BitLocker](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
-- [Executar cronograma](intune-devices-runschedule.md)
 - [Resumo do estado de categoria da linha de base de segurança](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Estado de conformidade da linha de base de segurança](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Estado do dispositivo de linha de base de segurança](intune-deviceintent-securitybaselinedevicestate.md)
@@ -237,5 +245,3 @@ Namespace: microsoft.graph
 - [Aplicativo de gerenciamento do Windows](intune-devices-windowsmanagementapp.md)
 - [Estado de integridade do aplicativo de gerenciamento do Windows](intune-devices-windowsmanagementapphealthstate.md)
 - [Estado de proteção do Windows](intune-devices-windowsprotectionstate.md)
-
-

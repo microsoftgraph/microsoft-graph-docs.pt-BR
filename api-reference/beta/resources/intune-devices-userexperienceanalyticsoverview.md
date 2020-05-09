@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 56ab161a77f21d06c034322a4daa84c5880db0da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 152f5ef93db38ffced60bf93e3215d45cf822ba5
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464983"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175515"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>tipo de recurso userExperienceAnalyticsOverview
 
@@ -31,7 +31,7 @@ A entidade visão geral da análise da experiência do usuário contém a pontua
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da visão geral da análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo da visão geral da análise da experiência do usuário.|
 |overallScore|Int32|A pontuação geral da análise da experiência do usuário.|
 |deviceBootPerformanceOverallScore|Int32|A pontuação geral do desempenho de inicialização do dispositivo analítico da experiência do usuário.|
 |bestPracticesOverallScore|Int32|A pontuação geral das práticas recomendadas de análise da experiência do usuário.|
@@ -66,7 +66,7 @@ Veja a seguir uma representação JSON do recurso.
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": "4.2"
         }
       ],
       "severity": "String"

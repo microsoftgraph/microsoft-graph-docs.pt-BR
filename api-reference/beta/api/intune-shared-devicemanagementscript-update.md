@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ce2171f02608ac7e922f6a4a9580665134c83f2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 612725e3336f15494b8002bf90818d4fe82d75c7
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453943"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179422"
 ---
 # <a name="update-devicemanagementscript"></a>Atualizar deviceManagementScript
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+|Application||
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -60,14 +60,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |id|String|Identificador exclusivo do script de gerenciamento de dispositivo.|
 |displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivo.|
 |description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo de execução do script. Se não definido, o script será executado uma vez|
 |scriptContent|Binária|O conteúdo de script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Boolean|Indica se a assinatura do script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
 |runAs32Bit|Boolean|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
 
 
@@ -88,9 +87,6 @@ Content-length: 443
   "@odata.type": "#microsoft.graph.deviceManagementScript",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
@@ -114,9 +110,6 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

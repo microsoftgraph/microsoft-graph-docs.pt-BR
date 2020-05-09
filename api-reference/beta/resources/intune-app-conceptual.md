@@ -1,15 +1,15 @@
 ---
 title: Como proteger os dados de aplicativo da sua empresa com o Microsoft Intune-API do Microsoft Graph
 description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) que gerenciam aplicativos e suas políticas para uma organização de locatário.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9f609132a455e605996facc5d0b26c3c0af75b28
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9308faf6185520bddcab1f5153205bdb109c2323
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437478"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177727"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -43,7 +43,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Destino de registro do aplicativo da conta do repositório gerenciado Android](intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)
 - [Configurações empresariais do aplicativo da conta do repositório gerenciado Android](intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)
 - [Aplicativo de repositório gerenciado Android](intune-apps-androidmanagedstoreapp.md)
-- [Configurações de atribuição de aplicativo repositório gerenciado do Android](intune-apps-androidmanagedstoreappassignmentsettings.md)
 - [Configuração do aplicativo do repositório gerenciado Android](intune-apps-androidmanagedstoreappconfiguration.md)
 - [Esquema de configuração do aplicativo do repositório gerenciado Android](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Item de esquema de configuração do aplicativo do repositório gerenciado Android](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
@@ -139,7 +138,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Tipo de licenciamento do VPP](intune-apps-vpplicensingtype.md)
 - [Aplicativo Web](intune-apps-webapp.md)
 - [Aplicativo LOB do Win32](intune-apps-win32lobapp.md)
-- [Prioridade de otimização de entrega do aplicativo LOB Win32](intune-apps-win32lobappdeliveryoptimizationpriority.md)
 - [Detecção de aplicativo LOB do Win32](intune-apps-win32lobappdetection.md)
 - [Operador de detecção de aplicativo LOB do Win32](intune-apps-win32lobappdetectionoperator.md)
 - [Detecção de sistema do arquivo do aplicativo LOB do Win32](intune-apps-win32lobappfilesystemdetection.md)

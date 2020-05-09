@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 94af228fe3a888e421dcd3e44ac64eeb7db9264e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 42fd951f745ec02b8b2ef61eb5ad80de9115b1f3
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43430570"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179043"
 ---
 # <a name="create-windows10networkboundaryconfiguration"></a>Criar windows10NetworkBoundaryConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -79,7 +79,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2017
+Content-length: 1919
 
 {
   "@odata.type": "#microsoft.graph.windows10NetworkBoundaryConfiguration",
@@ -125,9 +125,7 @@ Content-length: 2017
     ],
     "enterpriseIPRanges": [
       {
-        "@odata.type": "microsoft.graph.iPv6Range",
-        "lowerAddress": "Lower Address value",
-        "upperAddress": "Upper Address value"
+        "@odata.type": "microsoft.graph.ipRange"
       }
     ],
     "enterpriseInternalProxyServers": [
@@ -150,7 +148,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2189
+Content-Length: 2091
 
 {
   "@odata.type": "#microsoft.graph.windows10NetworkBoundaryConfiguration",
@@ -199,9 +197,7 @@ Content-Length: 2189
     ],
     "enterpriseIPRanges": [
       {
-        "@odata.type": "microsoft.graph.iPv6Range",
-        "lowerAddress": "Lower Address value",
-        "upperAddress": "Upper Address value"
+        "@odata.type": "microsoft.graph.ipRange"
       }
     ],
     "enterpriseInternalProxyServers": [

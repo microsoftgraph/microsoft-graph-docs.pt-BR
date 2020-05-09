@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ab466aca2100d4151ceedee5f95931014cebd28
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: be9f2b0fd08f09cfa96d227d879c0f9cb6931358
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43350757"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178742"
 ---
 # <a name="create-androiddeviceownergeneraldeviceconfiguration"></a>Criar androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidD
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -75,20 +75,22 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidD
 |cameraBlocked|Boolean|Indica se o uso da câmera deve ou não ser desativado.|
 |cellularBlockWiFiTethering|Boolean|Indica se o compartilhamento de Internet por Wi-Fi deve ou não ser bloqueado.|
 |certificateCredentialConfigurationDisabled|Boolean|Indica se os usuários devem ou não ser bloqueados de qualquer configuração de credencial de certificado.|
+|microsoftLauncherConfigurationEnabled|Boolean|Indica se você deseja ou não configurar o iniciador Microsoft.|
+|enrollmentProfile|[androidDeviceOwnerEnrollmentProfileType](../resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)|Indica o perfil de registro que você deseja configurar. Os valores possíveis são: `notConfigured`, `dedicatedDevice`, `fullyManaged`.|
 |dataRoamingBlocked|Boolean|Indica se um usuário será ou não bloqueado de roaming de dados.|
 |dateTimeConfigurationBlocked|Boolean|Indica se o usuário será ou não impedido de alterar manualmente a data ou a hora no dispositivo|
-|factoryResetDeviceAdministratorEmails|Coleção String|Lista de emails de conta do Google que serão necessários para autenticar após a redefinição de fábrica de um dispositivo antes que ele possa ser configurado.|
+|factoryResetDeviceAdministratorEmails|Conjunto de cadeias de caracteres|Lista de emails de conta do Google que serão necessários para autenticar após a redefinição de fábrica de um dispositivo antes que ele possa ser configurado.|
 |factoryResetBlocked|Boolean|Indica se a opção de redefinição de fábrica em configurações está desabilitada.|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|O proxy é configurado diretamente com hosts, porta e hosts excluídos.|
 |googleAccountsBlocked|Boolean|Indica se as contas do Google serão bloqueadas ou não.|
 |kioskModeScreenSaverConfigurationEnabled|Boolean|Se o modo de proteção de tela deve ou não ser habilitado ou não no modo quiosque.|
-|kioskModeScreenSaverImageUrl|String|URL de uma imagem que será a proteção de tela do dispositivo no modo quiosque.|
+|kioskModeScreenSaverImageUrl|Cadeia de Caracteres|URL de uma imagem que será a proteção de tela do dispositivo no modo quiosque.|
 |kioskModeScreenSaverDisplayTimeInSeconds|Int32|O número de segundos que o dispositivo exibirá a proteção de tela no modo quiosque. Valores válidos de 0 a 9999999|
 |kioskModeScreenSaverStartDelayInSeconds|Int32|O número de segundos que o dispositivo precisa estar inativo para que a proteção de tela seja mostrada no modo quiosque. Valores válidos de 1 a 9999999|
 |kioskModeScreenSaverDetectMediaDisabled|Boolean|Se a tela do dispositivo deve ou não mostrar a proteção de tela se áudio/vídeo estiver em execução no modo quiosque.|
 |kioskModeApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Uma lista de aplicativos gerenciados que serão mostrados quando o dispositivo estiver no modo quiosque. Esta coleção pode conter um máximo de 500 elementos.|
-|kioskModeWallpaperUrl|String|URL para uma imagem publicamente acessível a ser usada para o papel de parede quando o dispositivo estiver no modo quiosque.|
-|kioskModeExitCode|String|Código de saída para permitir que um usuário saia do modo quiosque quando o dispositivo estiver no modo quiosque.|
+|kioskModeWallpaperUrl|Cadeia de Caracteres|URL para uma imagem publicamente acessível a ser usada para o papel de parede quando o dispositivo estiver no modo quiosque.|
+|kioskModeExitCode|Cadeia de Caracteres|Código de saída para permitir que um usuário saia do modo quiosque quando o dispositivo estiver no modo quiosque.|
 |kioskModeVirtualHomeButtonEnabled|Boolean|Se um botão de Home virtual será exibido ou não quando o dispositivo estiver no modo quiosque.|
 |kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|Indica se o botão de Home virtual é um botão deslizar para cima ou um botão de início flutuante. Os valores possíveis são: `notConfigured`, `swipeUp`, `floating`.|
 |kioskModeBluetoothConfigurationEnabled|Boolean|Se permitirá ou não que um usuário defina configurações de Bluetooth no modo quiosque.|
@@ -130,7 +132,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidD
 |usersBlockRemove|Boolean|Indica se a remoção de outros usuários do dispositivo deve ou não ser desabilitada.|
 |volumeBlockAdjustment|Boolean|Indica se o ajuste do volume mestre está ou não desabilitado.|
 |vpnAlwaysOnLockdownMode|Boolean|Se um nome de pacote VPN Always on for especificado, se o tráfego de rede será ou não bloqueado quando essa VPN for desconectada.|
-|vpnAlwaysOnPackageIdentifier|String|Nome do pacote do aplicativo Android para o aplicativo que manipulará uma conexão VPN sempre ativa.|
+|vpnAlwaysOnPackageIdentifier|Cadeia de Caracteres|Nome do pacote do aplicativo Android para o aplicativo que manipulará uma conexão VPN sempre ativa.|
 |wifiBlockEditConfigurations|Boolean|Indica se o usuário será ou não impedido de editar as configurações de conexão WiFi.|
 |wifiBlockEditPolicyDefinedConfigurations|Boolean|Indica se o usuário será ou não impedido de editar apenas as redes definidas pela política.|
 
@@ -146,7 +148,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 4374
+Content-length: 4467
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -188,6 +190,8 @@ Content-length: 4374
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
+  "microsoftLauncherConfigurationEnabled": true,
+  "enrollmentProfile": "dedicatedDevice",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
   "factoryResetDeviceAdministratorEmails": [
@@ -271,7 +275,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4546
+Content-Length: 4639
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -316,6 +320,8 @@ Content-Length: 4546
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
+  "microsoftLauncherConfigurationEnabled": true,
+  "enrollmentProfile": "dedicatedDevice",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
   "factoryResetDeviceAdministratorEmails": [

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e8be2a20fb291d25d977739e17ea1c0cdcb9e23
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: da912538336b647fb721a2f268632d390fc345de
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446790"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179176"
 ---
 # <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>tipo de recurso windows10EnrollmentCompletionPageConfiguration
 
@@ -44,18 +44,19 @@ Herda de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenroll
 |createdDateTime|DateTimeOffset|Data e hora de criação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |versão|Int32|A versão da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Marcas de escopo de função opcional para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |showInstallationProgress|Boolean|Mostrar ou ocultar o andamento da instalação para o usuário|
 |blockDeviceSetupRetryByUser|Boolean|Permitir que o usuário repita a configuração após a instalação falhar|
 |allowDeviceResetOnInstallFailure|Boolean|Permitir ou bloquear falha de redefinição de dispositivo na instalação|
 |allowLogCollectionOnInstallFailure|Boolean|Permitir ou bloquear coleta de log na falha de instalação|
-|customErrorMessage|String|Definir uma mensagem de erro personalizada para mostrar após falha da instalação|
+|customErrorMessage|Cadeia de Caracteres|Definir uma mensagem de erro personalizada para mostrar após falha da instalação|
 |installProgressTimeoutInMinutes|Int32|Definir o tempo limite de progresso da instalação em minutos|
 |allowDeviceUseOnInstallFailure|Boolean|Permitir que o usuário continue usando o dispositivo em caso de falha de instalação|
-|selectedMobileAppIds|Coleção String|Aplicativos selecionados para acompanhar o status de instalação|
+|selectedMobileAppIds|Conjunto de cadeias de caracteres|Aplicativos selecionados para acompanhar o status de instalação|
 |trackInstallProgressForAutopilotOnly|Boolean|Mostrar apenas o progresso da instalação dos cenários de registro do piloto automático|
 |disableUserStatusTrackingAfterFirstUser|Boolean|Mostrar apenas o progresso da instalação para o primeiro registro post de usuário|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |atribuições|Conjunto [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|A lista de atribuições de grupo para o perfil de configuração do dispositivo herdado de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
@@ -78,6 +79,9 @@ Veja a seguir uma representação JSON do recurso.
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "version": 1024,
+  "roleScopeTagIds": [
+    "String"
+  ],
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": true,
   "allowDeviceResetOnInstallFailure": true,

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0eaf878a982f4cde9858f789322b10dd2eaf1d1f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 058f14b839bdd456f181ce310a25ec860650224a
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43324816"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177811"
 ---
 # <a name="get-manageddevice"></a>Acessar managedDevice
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -72,7 +72,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8136
+Content-Length: 8249
 
 {
   "value": {
@@ -112,7 +112,8 @@ Content-Length: 8136
       "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
       "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
       "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
-      "osBuildNumber": "Os Build Number value"
+      "osBuildNumber": "Os Build Number value",
+      "operatingSystemProductType": 10
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -251,7 +252,9 @@ Content-Length: 8136
     "ethernetMacAddress": "Ethernet Mac Address value",
     "physicalMemoryInBytes": 5,
     "processorArchitecture": "x86",
-    "specificationVersion": "Specification Version value"
+    "specificationVersion": "Specification Version value",
+    "joinType": "azureADJoined",
+    "skuFamily": "Sku Family value"
   }
 }
 ```

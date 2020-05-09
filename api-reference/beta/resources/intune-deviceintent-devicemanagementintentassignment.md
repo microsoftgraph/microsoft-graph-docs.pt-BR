@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 663fbd0a98f8eae9b324c34c064f181f779a958c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b21833b92f33ce9210aace3cb0c39a48db166315
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455669"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178231"
 ---
 # <a name="devicemanagementintentassignment-resource-type"></a>tipo de recurso deviceManagementIntentAssignment
 
@@ -34,7 +34,7 @@ Entidade de atribuição de intenções
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da atribuição|
+|id|Cadeia de caracteres|A ID da atribuição|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição|
 
 ## <a name="relationships"></a>Relações
@@ -53,7 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.deviceManagementIntentAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```

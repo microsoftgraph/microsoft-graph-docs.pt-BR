@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 550aea2dce1fb11c6888f8652ef39b9d0a6d84cb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 58d8e932c53c372a0ad68de9f97ad7c86708c137
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43322588"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44176082"
 ---
 # <a name="update-userexperienceanalyticscategory"></a>Atualizar userExperienceAnalyticsCategory
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da categoria de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo da categoria de análise da experiência do usuário.|
 |overallScore|Int32|A pontuação geral da categoria de análise da experiência do usuário.|
 |insights|coleção [userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)|O insights para a categoria de análise da experiência do usuário.|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de integridade atual da categoria de análise da experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
@@ -72,7 +72,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
 Content-type: application/json
-Content-length: 572
+Content-length: 553
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
@@ -85,7 +85,7 @@ Content-length: 572
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": 1.6666666666666667
         }
       ],
       "severity": "informational"
@@ -100,7 +100,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 621
+Content-Length: 602
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
@@ -114,7 +114,7 @@ Content-Length: 621
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": 1.6666666666666667
         }
       ],
       "severity": "informational"

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 302c6a7cfed11e911d03e1c46e46ec5b0faf873a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6b791a8c801e0369611865d3b8be608db062e4d5
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43335769"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178994"
 ---
 # <a name="create-windowsidentityprotectionconfiguration"></a>Criar windowsIdentityProtectionConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsI
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -69,9 +69,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsI
 |enhancedAntiSpoofingForFacialFeaturesEnabled|Boolean|Valor booliano usado para habilitar a antifalsificação avançada para reconhecimento de recurso facial na autenticação facial do Windows Hello.|
 |pinMinimumLength|Int32|Valor inteiro que define o número mínimo de caracteres necessários para o PIN do Windows Hello para empresas. Os valores válidos são 4 a 127 inclusive e menores ou iguais ao valor definido para o PIN máximo. Valores válidos de 4 a 127|
 |pinMaximumLength|Int32|Valor inteiro que define o número máximo de caracteres permitidos para o PIN de trabalho. Os valores válidos são 4 a 127 inclusive e maiores ou iguais ao valor definido para o PIN mínimo. Valores válidos de 4 a 127|
-|pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Este valor configura o uso de caracteres maiúsculos no PIN do Windows Hello para empresas. Os valores possíveis são: `blocked`, `required`, `allowed`.|
-|pinLowercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Esse valor configura o uso de caracteres minúsculos no PIN do Windows Hello para empresas. Os valores possíveis são: `blocked`, `required`, `allowed`.|
-|pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Controla a capacidade de usar caracteres especiais no PIN do Windows Hello para empresas. Os valores possíveis são: `blocked`, `required`, `allowed`.|
+|pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Este valor configura o uso de caracteres maiúsculos no PIN do Windows Hello para empresas. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
+|pinLowercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Esse valor configura o uso de caracteres minúsculos no PIN do Windows Hello para empresas. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
+|pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Controla a capacidade de usar caracteres especiais no PIN do Windows Hello para empresas. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
 |pinExpirationInDays|Int32|Valor inteiro especifica o período (em dias) que um PIN pode ser usado antes que o sistema exija que o usuário o altere. Os valores válidos são de 0 a 730 inclusive. Valores válidos de 0 a 730|
 |pinPreviousBlockCount|Int32|Controla a capacidade de impedir que os usuários usem PINs passados. Isso deve ser definido entre 0 e 50, inclusive, e o PIN atual do usuário é incluído nessa contagem. Se for definido como 0, os PINs anteriores não serão armazenados. O histórico de PIN não é preservado por meio de uma redefinição de PIN. Valores válidos de 0 a 50|
 |pinRecoveryEnabled|Boolean|Valor booliano que permite que um usuário altere o PIN usando o serviço de recuperação de PIN do Windows Hello para empresas.|

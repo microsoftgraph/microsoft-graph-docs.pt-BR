@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f644ddeb540deb4a5c89aa62ee49dd56f9c20ac
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a391c926b077b32e48c5afc5efb6ac67fa8cc5ad
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469414"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179225"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>Tipo de recurso deviceConfigurationAssignment
 
@@ -34,10 +34,10 @@ A entidade de atribuição de configuração do dispositivo atribui um grupo AAD
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da atribuição.|
+|id|Cadeia de caracteres|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|A origem da atribuição para a configuração do dispositivo, direta ou de remessa/política. Essa propriedade é somente leitura. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|String|O identificador da origem da atribuição. Essa propriedade é somente leitura.|
+|sourceId|Cadeia de Caracteres|O identificador da origem da atribuição. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -55,7 +55,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "source": "String",
   "sourceId": "String"

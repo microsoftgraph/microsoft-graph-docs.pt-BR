@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e93ee667a8a4b479b8e4b8bde78b7808a7acea0d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5acd729b38bff70c2d44494528130517dae7c764
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426384"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44176810"
 ---
 # <a name="update-devicehealthscript"></a>Atualizar deviceHealthScript
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo do script de integridade do dispositivo|
-|publicador|String|Nome do editor de script de integridade do dispositivo|
+|publicador|Cadeia de Caracteres|Nome do editor de script de integridade do dispositivo|
 |versão|String|Versão do script de integridade do dispositivo|
 |displayName|Cadeia de caracteres|Nome do script de integridade do dispositivo|
 |description|String|Descrição do script de integridade do dispositivo|
@@ -65,9 +65,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Boolean|Indicar se a assinatura do script precisa ser verificada|
 |runAs32Bit|Boolean|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
-|roleScopeTagIds|Coleção String|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
 |isGlobalScript|Boolean|Determina se este é o script proprietário da Microsoft. Scripts proprietários são somente leitura|
-|highestAvailableVersion|String|Versão mais recente disponível para um script proprietário da Microsoft|
+|highestAvailableVersion|Cadeia de Caracteres|Versão mais recente disponível para um script proprietário da Microsoft|
+|detectionScriptParameters|coleção [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Lista de objetos complexType DetectionScriptParameters.|
+|remediationScriptParameters|coleção [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Lista de objetos complexType RemediationScriptParameters.|
 
 
 
@@ -81,7 +83,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 Content-type: application/json
-Content-length: 575
+Content-length: 1221
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -98,7 +100,27 @@ Content-length: 575
     "Role Scope Tag Ids value"
   ],
   "isGlobalScript": true,
-  "highestAvailableVersion": "Highest Available Version value"
+  "highestAvailableVersion": "Highest Available Version value",
+  "detectionScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ],
+  "remediationScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ]
 }
 ```
 
@@ -107,7 +129,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 747
+Content-Length: 1393
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -127,7 +149,27 @@ Content-Length: 747
     "Role Scope Tag Ids value"
   ],
   "isGlobalScript": true,
-  "highestAvailableVersion": "Highest Available Version value"
+  "highestAvailableVersion": "Highest Available Version value",
+  "detectionScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ],
+  "remediationScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ]
 }
 ```
 

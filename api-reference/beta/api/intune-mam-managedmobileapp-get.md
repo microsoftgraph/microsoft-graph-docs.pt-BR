@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f768f70f43ce9f2ea5cff7b8cfd0f81508ae194
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ff42338f8dade67bbe8a3cca9c0362852b5428bf
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468260"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179338"
 ---
 # <a name="get-managedmobileapp"></a>Acessar managedMobileApp
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -71,13 +71,14 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 261
+Content-Length: 308
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.managedMobileApp",
     "mobileAppIdentifier": {
-      "@odata.type": "microsoft.graph.mobileAppIdentifier"
+      "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+      "packageId": "Package Id value"
     },
     "id": "0a129715-9715-0a12-1597-120a1597120a",
     "version": "Version value"
