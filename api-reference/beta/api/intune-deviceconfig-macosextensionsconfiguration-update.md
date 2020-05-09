@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b1c84b3010c382c55c855e9b94e38fb70710c624
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 909c57fd17afb3cd0aa087ad1faeaed58be3d9a7
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432655"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177874"
 ---
 # <a name="update-macosextensionsconfiguration"></a>Atualizar macOSExtensionsConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSEx
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -67,8 +67,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSEx
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |kernelExtensionOverridesAllowed|Boolean|Se definido como true, os usuários podem aprovar extensões de kernel adicionais não explicitamente permitidas por perfis de configuração.|
-|kernelExtensionAllowedTeamIdentifiers|Coleção String|Todas as extensões de kernel assinadas com validade pelos identificadores de equipe nesta lista poderão ser carregadas.|
+|kernelExtensionAllowedTeamIdentifiers|Conjunto de cadeias de caracteres|Todas as extensões de kernel assinadas com validade pelos identificadores de equipe nesta lista poderão ser carregadas.|
 |kernelExtensionsAllowed|coleção [macOSKernelExtension](../resources/intune-deviceconfig-macoskernelextension.md)|Uma lista de extensões do kernel que terão permissão para carregar. . Esta coleção pode conter um máximo de 500 elementos.|
+|systemExtensionsBlockOverride|Boolean|Obtém ou define se é para permitir que o usuário aprove extensões de sistema adicionais não explicitamente permitidas por perfis de configuração.|
+|systemExtensionsAllowedTeamIdentifiers|Conjunto de cadeias de caracteres|Obtém ou define uma lista de identificadores de equipe permitidos. Qualquer extensão do sistema assinada com qualquer um dos identificadores de equipe especificados será aprovada.|
+|systemExtensionsAllowed|coleção [macOSSystemExtension](../resources/intune-deviceconfig-macossystemextension.md)|Obtém ou define uma lista de extensões de sistema macOS permitidas. Esta coleção pode conter um máximo de 500 elementos.|
+|systemExtensionsAllowedTypes|coleção [macOSSystemExtensionTypeMapping](../resources/intune-deviceconfig-macossystemextensiontypemapping.md)|Obtém ou define uma lista de tipos de extensões de sistema macOS permitidos. Esta coleção pode conter um máximo de 500 elementos.|
 
 
 
@@ -82,7 +86,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1383
+Content-length: 1965
 
 {
   "@odata.type": "#microsoft.graph.macOSExtensionsConfiguration",
@@ -124,6 +128,24 @@ Content-length: 1383
       "teamIdentifier": "Team Identifier value",
       "bundleId": "Bundle Id value"
     }
+  ],
+  "systemExtensionsBlockOverride": true,
+  "systemExtensionsAllowedTeamIdentifiers": [
+    "System Extensions Allowed Team Identifiers value"
+  ],
+  "systemExtensionsAllowed": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtension",
+      "teamIdentifier": "Team Identifier value",
+      "bundleId": "Bundle Id value"
+    }
+  ],
+  "systemExtensionsAllowedTypes": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
+      "teamIdentifier": "Team Identifier value",
+      "allowedTypes": "networkExtensionsAllowed"
+    }
   ]
 }
 ```
@@ -133,7 +155,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1555
+Content-Length: 2137
 
 {
   "@odata.type": "#microsoft.graph.macOSExtensionsConfiguration",
@@ -177,6 +199,24 @@ Content-Length: 1555
       "@odata.type": "microsoft.graph.macOSKernelExtension",
       "teamIdentifier": "Team Identifier value",
       "bundleId": "Bundle Id value"
+    }
+  ],
+  "systemExtensionsBlockOverride": true,
+  "systemExtensionsAllowedTeamIdentifiers": [
+    "System Extensions Allowed Team Identifiers value"
+  ],
+  "systemExtensionsAllowed": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtension",
+      "teamIdentifier": "Team Identifier value",
+      "bundleId": "Bundle Id value"
+    }
+  ],
+  "systemExtensionsAllowedTypes": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
+      "teamIdentifier": "Team Identifier value",
+      "allowedTypes": "networkExtensionsAllowed"
     }
   ]
 }

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e30b55ec0cb1bb015a01f8864b4095c67a20f5e6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5f36337e85713c708870c77a044dd44d7b19f4f4
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379189"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175984"
 ---
 # <a name="update-userexperienceanalyticsmetric"></a>Atualizar userExperienceAnalyticsMetric
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,9 +56,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da métrica de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo da métrica de análise da experiência do usuário.|
 |valor|Duplo|O valor da métrica de análise da experiência do usuário.|
-|unidade|String|A unidade da métrica de análise da experiência do usuário.|
+|unidade|Cadeia de Caracteres|A unidade da métrica de análise da experiência do usuário.|
 
 
 
@@ -72,11 +72,11 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRegressionSummary/modelRegression/{userExperienceAnalyticsMetricId}
 Content-type: application/json
-Content-length: 147
+Content-length: 128
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
-  "value": "<Unknown Primitive Type Edm.Double>",
+  "value": 1.6666666666666667,
   "unit": "Unit value"
 }
 ```
@@ -86,12 +86,12 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 196
+Content-Length: 177
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
   "id": "1371822e-822e-1371-2e82-71132e827113",
-  "value": "<Unknown Primitive Type Edm.Double>",
+  "value": 1.6666666666666667,
   "unit": "Unit value"
 }
 ```

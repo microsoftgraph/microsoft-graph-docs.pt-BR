@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 19f4fc6ffa4fec8af5b559297b1e2600211bf94c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d50f5ceac855e72433192614fbbeb9036b1e4512
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379315"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44176061"
 ---
 # <a name="get-userexperienceanalyticsmetric"></a>Obter userExperienceAnalyticsMetric
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -71,13 +71,13 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 223
+Content-Length: 204
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
     "id": "1371822e-822e-1371-2e82-71132e827113",
-    "value": "<Unknown Primitive Type Edm.Double>",
+    "value": 1.6666666666666667,
     "unit": "Unit value"
   }
 }

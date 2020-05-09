@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f87e5d43075158fe63d8618cf0fce1cab79676d3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f2d9750b35ed4103a2a2e603bcd9a25b7b6ff3b6
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384923"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178056"
 ---
 # <a name="update-managementconditionstatement"></a>Atualizar managementConditionStatement
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -76,14 +76,15 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managementConditionStatements/{managementConditionStatementId}
 Content-type: application/json
-Content-length: 323
+Content-length: 358
 
 {
   "@odata.type": "#microsoft.graph.managementConditionStatement",
   "displayName": "Display Name value",
   "description": "Description value",
   "expression": {
-    "@odata.type": "microsoft.graph.managementConditionExpression"
+    "@odata.type": "microsoft.graph.managementConditionExpressionString",
+    "value": "Value value"
   },
   "eTag": "ETag value",
   "applicablePlatforms": [
@@ -97,7 +98,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 491
+Content-Length: 526
 
 {
   "@odata.type": "#microsoft.graph.managementConditionStatement",
@@ -107,7 +108,8 @@ Content-Length: 491
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "modifiedDateTime": "2017-01-01T00:00:22.8983556-08:00",
   "expression": {
-    "@odata.type": "microsoft.graph.managementConditionExpression"
+    "@odata.type": "microsoft.graph.managementConditionExpressionString",
+    "value": "Value value"
   },
   "eTag": "ETag value",
   "applicablePlatforms": [

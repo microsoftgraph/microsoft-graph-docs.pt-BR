@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso complianceManagementPartnerAssignment
-description: Direcionamento de grupo de usuários para parceiro de gerenciamento de conformidade
+title: tipo de recurso macOSSystemExtension
+description: Representa uma extensão de sistema macOS específica.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4bf6a767c71c7212e0499bb6281e3a0d9477b3cd
+ms.openlocfilehash: bab537a60d213e2e1976c8f902ce7a8b0dbc3027
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44175256"
+ms.locfileid: "44179401"
 ---
-# <a name="compliancemanagementpartnerassignment-resource-type"></a>tipo de recurso complianceManagementPartnerAssignment
+# <a name="macossystemextension-resource-type"></a>tipo de recurso macOSSystemExtension
 
 Namespace: microsoft.graph
 
@@ -20,12 +20,13 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Direcionamento de grupo de usuários para parceiro de gerenciamento de conformidade
+Representa uma extensão de sistema macOS específica.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de atribuição de grupo.|
+|teamIdentifier|Cadeia de Caracteres|Obtém ou define o identificador de equipe que foi usado para assinar a extensão do sistema.|
+|bundleId|String|Obtém ou define o identificador de pacote da extensão do sistema.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -34,15 +35,14 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment"
+  "@odata.type": "microsoft.graph.macOSSystemExtension"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.complianceManagementPartnerAssignment",
-  "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
-  }
+  "@odata.type": "#microsoft.graph.macOSSystemExtension",
+  "teamIdentifier": "String",
+  "bundleId": "String"
 }
 ```
 

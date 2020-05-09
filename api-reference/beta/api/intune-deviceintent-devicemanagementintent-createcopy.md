@@ -1,18 +1,18 @@
 ---
-title: Obter securityBaselineTemplate
-description: Leia as propriedades e as relações do objeto securityBaselineTemplate.
+title: ação CreateCopy
+description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c484b78e17c92751c5ce8f0aa55006fe6e3145b
+ms.openlocfilehash: e25371a5efb1a9cc342bb6122b464d304848b4ba
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177167"
+ms.locfileid: "44177244"
 ---
-# <a name="get-securitybaselinetemplate"></a>Obter securityBaselineTemplate
+# <a name="createcopy-action"></a>ação CreateCopy
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [securityBaselineTemplate](../resources/intune-deviceintent-securitybaselinetemplate.md) .
+Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,12 +37,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/templates/{deviceManagementTemplateId}
-GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}
+POST /deviceManagement/intents/{deviceManagementIntentId}/createCopy
 ```
-
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -51,17 +47,32 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+No corpo da solicitação, forneça uma representação JSON dos parâmetros.
+
+A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|displayName|Cadeia de caracteres|Ainda não documentado|
+
+
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [securityBaselineTemplate](../resources/intune-deviceintent-securitybaselinetemplate.md) no corpo da resposta.
+Se tiver êxito, esta ação retornará `200 OK` um código de resposta e um [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}
+POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/createCopy
+
+Content-type: application/json
+Content-length: 43
+
+{
+  "displayName": "Display Name value"
+}
 ```
 
 ### <a name="response"></a>Resposta
@@ -69,21 +80,20 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 495
+Content-Length: 418
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.securityBaselineTemplate",
-    "id": "3f61d4c2-d4c2-3f61-c2d4-613fc2d4613f",
+    "@odata.type": "#microsoft.graph.deviceManagementIntent",
+    "id": "f972c33e-c33e-f972-3ec3-72f93ec372f9",
     "displayName": "Display Name value",
     "description": "Description value",
-    "versionInfo": "Version Info value",
-    "isDeprecated": true,
-    "intentCount": 11,
-    "templateType": "specializedDevices",
-    "platformType": "androidForWork",
-    "templateSubtype": "firewall",
-    "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
+    "isAssigned": true,
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "templateId": "Template Id value",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```

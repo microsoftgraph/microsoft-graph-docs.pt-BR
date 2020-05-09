@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 122a0e40253e276aeabbd5ff9d59b8f45f93f79a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a7ceacadccffea2dd8b9f140a62ace97a21a79fe
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463000"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177692"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>Tipo de recurso omaSettingFloatingPoint
 
@@ -49,7 +49,7 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
-  "value": "<Unknown Primitive Type Edm.Single>"
+  "value": 4.2
 }
 ```
 

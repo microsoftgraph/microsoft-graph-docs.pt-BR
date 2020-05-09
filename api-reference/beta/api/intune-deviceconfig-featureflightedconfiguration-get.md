@@ -1,18 +1,18 @@
 ---
-title: Get windowsUpdateForBusinessConfiguration
-description: Ler propriedades e relações do objeto windowsUpdateForBusinessConfiguration.
+title: Obter featureFlightedConfiguration
+description: Leia as propriedades e as relações do objeto featureFlightedConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 659306ec8a908ddc32fd08d06b162fb9d7fc0cd5
+ms.openlocfilehash: af6293458b983359c878a7648b1c410954957c24
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178945"
+ms.locfileid: "44178637"
 ---
-# <a name="get-windowsupdateforbusinessconfiguration"></a>Get windowsUpdateForBusinessConfiguration
+# <a name="get-featureflightedconfiguration"></a>Obter featureFlightedConfiguration
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ler propriedades e relações do objeto [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md).
+Leia as propriedades e as relações do objeto [featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -55,7 +55,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -70,12 +70,12 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3127
+Content-Length: 1286
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
-    "id": "4928dd6a-dd6a-4928-6add-28496add2849",
+    "@odata.type": "#microsoft.graph.featureFlightedConfiguration",
+    "id": "c4725458-5458-c472-5854-72c4585472c4",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
@@ -105,46 +105,7 @@ Content-Length: 3127
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
-    "version": 7,
-    "deliveryOptimizationMode": "httpOnly",
-    "prereleaseFeatures": "settingsOnly",
-    "automaticUpdateMode": "notifyDownload",
-    "microsoftUpdateServiceAllowed": true,
-    "driversExcluded": true,
-    "installationSchedule": {
-      "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall",
-      "scheduledInstallDay": "everyday",
-      "scheduledInstallTime": "11:59:31.3170000"
-    },
-    "qualityUpdatesDeferralPeriodInDays": 2,
-    "featureUpdatesDeferralPeriodInDays": 2,
-    "qualityUpdatesPaused": true,
-    "featureUpdatesPaused": true,
-    "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
-    "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
-    "businessReadyUpdatesOnly": "all",
-    "skipChecksBeforeRestart": true,
-    "updateWeeks": "firstWeek",
-    "qualityUpdatesPauseStartDate": "2016-12-31",
-    "featureUpdatesPauseStartDate": "2016-12-31",
-    "featureUpdatesRollbackWindowInDays": 2,
-    "qualityUpdatesWillBeRolledBack": true,
-    "featureUpdatesWillBeRolledBack": true,
-    "qualityUpdatesRollbackStartDateTime": "2016-12-31T23:57:01.05526-08:00",
-    "featureUpdatesRollbackStartDateTime": "2017-01-01T00:03:21.6080517-08:00",
-    "engagedRestartDeadlineInDays": 12,
-    "engagedRestartSnoozeScheduleInDays": 2,
-    "engagedRestartTransitionScheduleInDays": 6,
-    "deadlineForFeatureUpdatesInDays": 15,
-    "deadlineForQualityUpdatesInDays": 15,
-    "deadlineGracePeriodInDays": 9,
-    "postponeRebootUntilAfterDeadline": true,
-    "autoRestartNotificationDismissal": "automatic",
-    "scheduleRestartWarningInHours": 13,
-    "scheduleImminentRestartWarningInMinutes": 7,
-    "userPauseAccess": "enabled",
-    "userWindowsUpdateScanAccess": "enabled",
-    "updateNotificationLevel": "defaultNotifications"
+    "version": 7
   }
 }
 ```
