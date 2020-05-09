@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c0778305544b80715864a7a8e5441356ed160b45
-ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
+ms.openlocfilehash: 7e734d47e85ea18874a6440b5e7dab871ac667c3
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006325"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153475"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -23,6 +23,12 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionadas as propriedades **resourceBehaviorOptions** e **resourceProvisioningOptions** à entidade [grupo](/graph/api/resources/group?view=graph-rest-beta).|
+
+### <a name="teamwork--shifts"></a>Trabalho em equipe | Turnos
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição | v1.0 | Introduziu as APIs de turnos, incluindo [turno](/graph/api/resources/shift?view=graph-rest-1.0), [workforceintegration]((/graph/api/resources/workforceintegration?view=graph-rest-1.0) e métodos associados.|
 
 ## <a name="april-2020"></a>Abril de 2020
 
@@ -145,7 +151,6 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição        | v1.0        | Adicionada a propriedade de navegação **followedSites** à entidade [usuário](/graph/api/resources/user?view=graph-rest-1.0) para [listar os sites seguidos pelo usuário conectado](/graph/api/sites-list-followed?view=graph-rest-1.0). |
 | Adição        | v1.0        | Adicionada a propriedade **dataLocatonCode** no recurso [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0). |
 | Adição        | v1.0        | Adicionada a propriedade **tenantId** no recurso[sharepointIds](/graph/api/resources/sharepointids?view=graph-rest-1.0). |
-
 
 
 ## <a name="march-2020"></a>Março de 2020
@@ -280,6 +285,8 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
+| Adição | Beta |Adicionada nova propriedade **supportedEntities** para entidade [workforceintegration](/graph/api/resources/workforceintegration?view=graph-rest-beta).|
+| Adição | v1.0 | Nova entidade adicionada [trabalho em equipe](/graph/api/resources/teamwork?view=graph-rest-1.0).
 | Adição | Beta | Foi adicionado o suporte de ChannelMessage.Read.All para APIs para ler [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) nos canais. |
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
