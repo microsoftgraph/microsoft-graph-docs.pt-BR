@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 49ead2a6543ae14aa604d624cdb78f7a735ab584
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a5594efadfa5f8c77774ad808d05d378f0e5a2c0
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438136"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177916"
 ---
 # <a name="get-macosdevicefeaturesconfiguration"></a>Obter macOSDeviceFeaturesConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2815
+Content-Length: 4306
 
 {
   "value": {
@@ -147,10 +147,50 @@ Content-Length: 2815
       }
     ],
     "singleSignOnExtension": {
-      "@odata.type": "microsoft.graph.singleSignOnExtension"
+      "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
+      "extensionIdentifier": "Extension Identifier value",
+      "teamIdentifier": "Team Identifier value",
+      "domains": [
+        "Domains value"
+      ],
+      "realm": "Realm value",
+      "configurations": [
+        {
+          "@odata.type": "microsoft.graph.keyStringValuePair",
+          "key": "Key value",
+          "value": "Value value"
+        }
+      ]
     },
     "macOSSingleSignOnExtension": {
-      "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
+      "@odata.type": "microsoft.graph.macOSKerberosSingleSignOnExtension",
+      "realm": "Realm value",
+      "domains": [
+        "Domains value"
+      ],
+      "blockAutomaticLogin": true,
+      "cacheName": "Cache Name value",
+      "credentialBundleIdAccessControlList": [
+        "Credential Bundle Id Access Control List value"
+      ],
+      "domainRealms": [
+        "Domain Realms value"
+      ],
+      "isDefaultRealm": true,
+      "passwordBlockModification": true,
+      "passwordExpirationDays": 6,
+      "passwordExpirationNotificationDays": 2,
+      "userPrincipalName": "User Principal Name value",
+      "passwordRequireActiveDirectoryComplexity": true,
+      "passwordPreviousPasswordBlockCount": 2,
+      "passwordMinimumLength": 5,
+      "passwordMinimumAgeDays": 6,
+      "passwordRequirementsDescription": "Password Requirements Description value",
+      "requireUserPresence": true,
+      "activeDirectorySiteCode": "Active Directory Site Code value",
+      "passwordEnableLocalSync": true,
+      "blockActiveDirectorySiteAutoDiscovery": true,
+      "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
     }
   }
 }

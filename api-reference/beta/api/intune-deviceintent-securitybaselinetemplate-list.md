@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 58992abd70ce7d31c5c6c6180e9586bac01ca5c8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: da244d8a31974c8620aa6c6888543dbd10b84c20
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427137"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177139"
 ---
 # <a name="list-securitybaselinetemplates"></a>Listar securityBaselineTemplates
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 493
+Content-Length: 531
 
 {
   "value": [
@@ -80,6 +80,7 @@ Content-Length: 493
       "intentCount": 11,
       "templateType": "specializedDevices",
       "platformType": "androidForWork",
+      "templateSubtype": "firewall",
       "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
     }
   ]

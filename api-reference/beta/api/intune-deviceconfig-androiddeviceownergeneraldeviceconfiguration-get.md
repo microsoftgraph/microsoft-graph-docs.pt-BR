@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: eea7aedcfccdaaaf49cbcd498d2b878b8489b262
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 63a992640240d56b4c36412d5a840d99f2b262a9
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43350743"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178735"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>Obter androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4799
+Content-Length: 4896
 
 {
   "value": {
@@ -116,6 +116,8 @@ Content-Length: 4799
     "cameraBlocked": true,
     "cellularBlockWiFiTethering": true,
     "certificateCredentialConfigurationDisabled": true,
+    "microsoftLauncherConfigurationEnabled": true,
+    "enrollmentProfile": "dedicatedDevice",
     "dataRoamingBlocked": true,
     "dateTimeConfigurationBlocked": true,
     "factoryResetDeviceAdministratorEmails": [

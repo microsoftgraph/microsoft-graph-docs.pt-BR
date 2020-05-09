@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3fc8154a25803c79c16f4b8a47b856199010be6b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8fb7960056a9f23f69b6ba9c48d7a47078908019
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43431075"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179071"
 ---
 # <a name="create-windows10generalconfiguration"></a>Criar windows10GeneralConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -81,22 +81,22 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Controla o serviço do assistente de conexão de conta da Microsoft (WLIDSVC) NT. Os valores possíveis são: `notConfigured` e `disabled`.|
 |authenticationAllowSecondaryDevice|Boolean|Permite que dispositivos de autenticação secundário funcionem com o Windows.|
 |authenticationWebSignIn|[habilitação](../resources/intune-shared-enablement.md)|Indica se o provedor de credenciais da Web será habilitado ou não. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|authenticationPreferredAzureADTenantDomainName|String|Especifica o domínio preferencial entre os domínios disponíveis no locatário do Azure AD.|
+|authenticationPreferredAzureADTenantDomainName|Cadeia de Caracteres|Especifica o domínio preferencial entre os domínios disponíveis no locatário do Azure AD.|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|Especifique se deseja permitir ou não a política padrão do FIPS (Federal Information Processing Standard).|
-|displayAppListWithGdiDPIScalingTurnedOn|Coleção String|Lista de aplicativos herdados com ajuste de DPI GDI ativado.|
-|displayAppListWithGdiDPIScalingTurnedOff|Coleção String|Lista de aplicativos herdados com a expansão de DPI GDI desativada.|
-|enterpriseCloudPrintDiscoveryEndPoint|String|Ponto de extremidade para descoberta de impressoras na nuvem.|
-|enterpriseCloudPrintOAuthAuthority|String|Ponto de extremidade para aquisição de tokens OAuth.|
-|enterpriseCloudPrintOAuthClientIdentifier|String|GUID de um aplicativo cliente autorizado a recuperar tokens OAuth da autoridade OAuth.|
-|enterpriseCloudPrintResourceIdentifier|String|URI do recurso OAuth para serviço de impressão, conforme configurado no portal do Azure.|
+|displayAppListWithGdiDPIScalingTurnedOn|Conjunto de cadeias de caracteres|Lista de aplicativos herdados com ajuste de DPI GDI ativado.|
+|displayAppListWithGdiDPIScalingTurnedOff|Conjunto de cadeias de caracteres|Lista de aplicativos herdados com a expansão de DPI GDI desativada.|
+|enterpriseCloudPrintDiscoveryEndPoint|Cadeia de Caracteres|Ponto de extremidade para descoberta de impressoras na nuvem.|
+|enterpriseCloudPrintOAuthAuthority|Cadeia de Caracteres|Ponto de extremidade para aquisição de tokens OAuth.|
+|enterpriseCloudPrintOAuthClientIdentifier|Cadeia de Caracteres|GUID de um aplicativo cliente autorizado a recuperar tokens OAuth da autoridade OAuth.|
+|enterpriseCloudPrintResourceIdentifier|Cadeia de Caracteres|URI do recurso OAuth para serviço de impressão, conforme configurado no portal do Azure.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Número máximo de impressoras que devem ser consultadas em um ponto de extremidade de descoberta. Esta é uma configuração somente para dispositivos móveis. Valores válidos de 1 a 65535|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|URI do recurso OAuth para serviço de descoberta de impressoras, conforme configurado no portal do Azure.|
 |experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Permitir ou impedir a sincronização das configurações do navegador Microsoft Edge. Opção para os administradores de ti impedir a sincronização entre dispositivos, mas permitir a substituição do usuário. Os valores possíveis são: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
 |messagingBlockSync|Boolean|Indica se o backup e a restauração de mensagens de texto devem ou não ser bloqueados e mensagens em qualquer lugar.|
 |messagingBlockMMS|Boolean|Indica se a funcionalidade de envio/recebimento de MMS deve ou não ser bloqueada no dispositivo.|
 |messagingBlockRichCommunicationServices|Boolean|Indica se a funcionalidade de envio/recebimento de RCS deve ou não ser bloqueada no dispositivo.|
-|printerNames|Coleção String|Provisiona automaticamente impressoras com base em seus nomes (nomes de host de rede).|
-|printerDefaultName|String|Nome (nome do host de rede) de uma impressora instalada.|
+|printerNames|Conjunto de cadeias de caracteres|Provisiona automaticamente impressoras com base em seus nomes (nomes de host de rede).|
+|printerDefaultName|Cadeia de Caracteres|Nome (nome do host de rede) de uma impressora instalada.|
 |printerBlockAddition|Boolean|Impedir a instalação do usuário de impressoras adicionais das configurações de impressoras.|
 |searchBlockDiacritics|Boolean|Especifica se a pesquisa pode usar diacríticos.|
 |searchDisableAutoLanguageDetection|Boolean|Especifica se a detecção automática de idioma será usada ao indexar conteúdo e propriedades.|
@@ -112,14 +112,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|Especifique se deseja permitir a criptografia automática do dispositivo durante o OOBE quando o dispositivo é associado ao AD do Azure (somente desktop).|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Obtém ou define um valor que permite que o dispositivo envie dados de diagnóstico e de telemetria de uso, como Watson. Os valores possíveis são: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Obtém ou define um valor para permitir que os administradores de TI impeçam aplicativos e recursos de trabalhar com arquivos no OneDrive.|
-|systemTelemetryProxyServer|String|Obtém ou define o nome de domínio totalmente qualificado (FQDN) ou o endereço IP de um servidor proxy para encaminhar as experiências de usuário conectado e solicitações de telemetria.|
+|systemTelemetryProxyServer|Cadeia de Caracteres|Obtém ou define o nome de domínio totalmente qualificado (FQDN) ou o endereço IP de um servidor proxy para encaminhar as experiências de usuário conectado e solicitações de telemetria.|
 |edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Especifica o tipo de dados de telemetria (nenhum, intranet, Internet, ambos) é enviado para a análise do Microsoft 365. Os valores possíveis são: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Controla o acesso do usuário ao espaço de trabalho de tinta, da área de trabalho e de cima da tela de bloqueio. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Controla o acesso do usuário ao espaço de trabalho de tinta, da área de trabalho e de cima da tela de bloqueio. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
 |inkWorkspaceBlockSuggestedApps|Boolean|Especifique se deseja mostrar sugestões de aplicativos recomendadas no espaço de trabalho de tinta.|
 |smartScreenEnableAppInstallControl|Boolean|Essa propriedade será preterida em julho de 2019 e será substituída pela propriedade SmartScreenAppInstallControl. Permite que os administradores de TI controlem se os usuários poderão instalar aplicativos de lugares que não sejam a Store.|
 |smartScreenAppInstallControl|[appInstallControlType](../resources/intune-deviceconfig-appinstallcontroltype.md)|Adicionado no Windows 10, versão 1703. Permite que os administradores de TI controlem se os usuários poderão instalar aplicativos de lugares que não sejam a Store. Os valores possíveis são: `notConfigured`, `anywhere`, `storeOnly`, `recommendations`, `preferStore`.|
-|personalizationDesktopImageUrl|String|Uma URL http ou https para uma imagem jpg, jpeg ou png que precisa ser baixada e usada como a imagem da área de trabalho ou uma URL de arquivo para uma imagem local no sistema de arquivos que precisa ser usada como a imagem da área de trabalho.|
+|personalizationDesktopImageUrl|Cadeia de Caracteres|Uma URL http ou https para uma imagem jpg, jpeg ou png que precisa ser baixada e usada como a imagem da área de trabalho ou uma URL de arquivo para uma imagem local no sistema de arquivos que precisa ser usada como a imagem da área de trabalho.|
 |personalizationLockScreenImageUrl|String|Uma URL http ou https para uma imagem jpg, jpeg ou png que precisa ser baixada e usada como a imagem da tela de bloqueio ou uma URL de arquivo para uma imagem local no sistema de arquivos que precisa ser usada como a imagem da tela de bloqueio.|
 |bluetoothAllowedServices|String collection|Especifica uma lista de serviços e perfis Bluetooth permitidos em cadeias de caracteres de formato hexadecimal.|
 |bluetoothBlockAdvertising|Boolean|Se o usuário será ou não impedido de usar a publicidade do bluetooth.|
@@ -142,14 +142,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |edgeDisableFirstRunPage|Boolean|Bloquear a página da Web da Microsoft que é aberta na primeira utilização do Microsoft Edge. Esta política permite que empresas, como aquelas registradas em configurações de emissões zero, bloqueiem esta página.|
 |edgeBlockLiveTileDataCollection|Boolean|Bloquear a coleta de informações da Microsoft para criação de bloco dinâmico quando os usuários fixarem um site para iniciar no Microsoft Edge.|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Habilitar a sincronização de favoritos entre o Internet Explorer e o Microsoft Edge. Adições, exclusões, modificações e outras alterações para favoritos são compartilhadas entre navegadores.|
-|edgeFavoritesListLocation|String|O local da lista de favoritos a ser provisionada. Pode ser um arquivo local, rede local ou local http.|
+|edgeFavoritesListLocation|Cadeia de Caracteres|O local da lista de favoritos a ser provisionada. Pode ser um arquivo local, rede local ou local http.|
 |edgeBlockEditFavorites|Boolean|Indica se o usuário será ou não impedido de fazer alterações em favoritos.|
-|edgeNewTabPageURL|String|Especifique a página aberta quando novas guias são criadas.|
+|edgeNewTabPageURL|Cadeia de Caracteres|Especifique a página aberta quando novas guias são criadas.|
 |edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|Faz com que o botão página inicial oculte, carregue a página inicial padrão, carregue uma nova página de guia ou uma URL personalizada|
 |edgeHomeButtonConfigurationEnabled|Boolean|Habilitar a configuração do botão página inicial.|
 |edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|Especifique o tipo de páginas que será aberto no início. Os valores possíveis são: `notConfigured`, `startPage`, `newTabPage`, `previousPages`, `specificPages`.|
 |edgeBlockSideloadingExtensions|Boolean|Indica se o usuário pode Sideload as extensões.|
-|edgeRequiredExtensionPackageFamilyNames|Coleção String|Especifique a lista de nomes de famílias de pacotes de extensões de navegador que são necessários e que não podem ser desativados pelo usuário.|
+|edgeRequiredExtensionPackageFamilyNames|Conjunto de cadeias de caracteres|Especifique a lista de nomes de famílias de pacotes de extensões de navegador que são necessários e que não podem ser desativados pelo usuário.|
 |edgeBlockPrinting|Boolean|Configure o Edge para permitir ou bloquear a impressão.|
 |edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Obtém ou define um valor que especifica se a barra de favoritos deve ser configurada para sempre estar visível ou oculta em qualquer página. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
 |edgeBlockSavingHistory|Boolean|Configure o Edge para permitir que o histórico de navegação seja salvo ou nunca salve o histórico de navegação.|
@@ -164,42 +164,42 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |cellularBlockDataWhenRoaming|Boolean|Se o usuário será ou não impedido de usar dados da rede celular durante roaming.|
 |cellularBlockVpn|Boolean|Se o usuário será ou não impedido de usar VPN na rede celular.|
 |cellularBlockVpnWhenRoaming|Boolean|Se o usuário será ou não impedido de usar VPN durante roaming na rede celular.|
-|cellularData|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Se o canal de dados da rede celular será ou não permitido. Se não configurada, o canal de dados da rede celular é permitido e o usuário pode desativá-lo. Os valores possíveis são: `blocked`, `required`, `allowed`.|
-|defenderBlockEndUserAccess|Boolean|Se o usuário final será ou não impedido de acessar o Defender.|
-|defenderDaysBeforeDeletingQuarantinedMalware|Int32|Número de dias antes da exclusão do malware em quarentena. Valores válidos de 0 a 90|
-|defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Obtém ou define ações do Defender a serem realizadas em um malware detectado por nível de ameaça.|
-|defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Dia da semana em que o Defender fará a verificação do sistema. Os valores possíveis são: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
-|defenderFilesAndFoldersToExclude|Coleção String|Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real.|
-|defenderFileExtensionsToExclude|Coleção String|Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real.|
-|defenderScanMaxCpu|Int32|Porcentagem máxima de uso da CPU durante a verificação. Valores válidos de 0 a 100|
-|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|Valor de monitoramento da atividade do arquivo. Os valores possíveis são: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
-|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|Obtém ou define a ação do defender a ser executada em aplicativos potencialmente indesejados (PUA), que inclui software com comportamentos de injeção de anúncio, empacotamento de software, solicitação persistente para pagamento ou assinatura, etc. O defender alerta o usuário quando o PUA está sendo baixado ou tenta se instalar. Adicionado no Windows 10 para área de trabalho. Os valores possíveis são: `deviceDefault`, `block`, `audit`.|
-|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Obtém ou define a ação do defender a ser executada em aplicativos potencialmente indesejados (PUA), que inclui software com comportamentos de injeção de anúncio, empacotamento de software, solicitação persistente para pagamento ou assinatura, etc. O defender alerta o usuário quando o PUA está sendo baixado ou tenta se instalar. Adicionado no Windows 10 para área de trabalho. Os valores possíveis são: `userDefined`, `enable`, `auditMode`.|
-|defenderProcessesToExclude|String collection|Processos a serem excluídos das verificações e da proteção em tempo real.|
-|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|A configuração do modo como avisar um usuário do envio de exemplo. Os valores possíveis são: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
-|defenderRequireBehaviorMonitoring|Boolean|Indica se o monitoramento de comportamento deve ou não ser exigido.|
-|defenderRequireCloudProtection|Boolean|Indica se a proteção na nuvem deve ou não ser exigida.|
-|defenderRequireNetworkInspectionSystem|Boolean|Indica se o sistema de inspeção de rede deve ou não ser exigido.|
+|cellularData|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Se o canal de dados da rede celular será ou não permitido. Se não configurada, o canal de dados da rede celular é permitido e o usuário pode desativá-lo. Os valores possíveis são: `blocked`, `required`, `allowed`, `notConfigured`.|
 |defenderRequireRealTimeMonitoring|Boolean|Indica se o monitoramento em tempo real deve ou não ser exigido.|
-|defenderScanArchiveFiles|Boolean|Indica se os arquivos mortos devem ou não ser verificados.|
+|defenderRequireBehaviorMonitoring|Boolean|Indica se o monitoramento de comportamento deve ou não ser exigido.|
+|defenderRequireNetworkInspectionSystem|Boolean|Indica se o sistema de inspeção de rede deve ou não ser exigido.|
 |defenderScanDownloads|Boolean|Indica se os downloads devem ou não ser verificados.|
 |defenderScheduleScanEnableLowCpuPriority|Boolean|Quando habilitada, a baixa prioridade da CPU será usada durante as verificações agendadas.|
 |defenderDisableCatchupQuickScan|Boolean|Quando bloqueado, as verificações de atualização de verificações rápidas agendadas serão desativadas.|
 |defenderDisableCatchupFullScan|Boolean|Quando bloqueado, as verificações de atualização para verificações completas agendadas serão desativadas.|
-|defenderScanNetworkFiles|Boolean|Indica se os arquivos abertos de uma pasta da rede devem ou não ser verificados.|
-|defenderScanIncomingMail|Boolean|Indica se as mensagens de email de entrada devem ou não ser verificadas.|
-|defenderScanMappedNetworkDrivesDuringFullScan|Boolean|Indica se as unidades de rede mapeadas devem ou não ser verificadas durante a verificação completa.|
-|defenderScanRemovableDrivesDuringFullScan|Boolean|Indica se as unidades removíveis devem ou não ser verificadas durante a verificação completa.|
 |defenderScanScriptsLoadedInInternetExplorer|Boolean|Indica se os scripts carregados no navegador Internet Explorer devem ou não ser verificados.|
+|defenderBlockEndUserAccess|Boolean|Se o usuário final será ou não impedido de acessar o Defender.|
 |defenderSignatureUpdateIntervalInHours|Int32|O intervalo de atualização da assinatura em horas. Especifique 0 para não verificar. Valores válidos de 0 a 24|
-|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|O tipo de verificação do sistema do Defender. Os valores possíveis são: `userDefined`, `disabled`, `quick`, `full`.|
-|defenderScheduledScanTime|TimeOfDay|A hora em que o Defender fará a verificação do sistema.|
-|defenderScheduledQuickScanTime|TimeOfDay|O horário de realização da verificação diária rápida.|
+|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|Valor de monitoramento da atividade do arquivo. Os valores possíveis são: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
+|defenderDaysBeforeDeletingQuarantinedMalware|Int32|Número de dias antes da exclusão do malware em quarentena. Valores válidos de 0 a 90|
+|defenderScanMaxCpu|Int32|Porcentagem máxima de uso da CPU durante a verificação. Valores válidos de 0 a 100|
+|defenderScanArchiveFiles|Boolean|Indica se os arquivos mortos devem ou não ser verificados.|
+|defenderScanIncomingMail|Boolean|Indica se as mensagens de email de entrada devem ou não ser verificadas.|
+|defenderScanRemovableDrivesDuringFullScan|Boolean|Indica se as unidades removíveis devem ou não ser verificadas durante a verificação completa.|
+|defenderScanMappedNetworkDrivesDuringFullScan|Boolean|Indica se as unidades de rede mapeadas devem ou não ser verificadas durante a verificação completa.|
+|defenderScanNetworkFiles|Boolean|Indica se os arquivos abertos de uma pasta da rede devem ou não ser verificados.|
+|defenderRequireCloudProtection|Boolean|Indica se a proteção na nuvem deve ou não ser exigida.|
 |defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|Especifica o nível de proteção oferecido na nuvem. Os valores possíveis são: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
 |defenderCloudExtendedTimeout|Int32|Extensão de tempo limite para verificação de arquivo pela nuvem. Valores válidos de 0 a 50|
 |defenderCloudExtendedTimeoutInSeconds|Int32|Extensão de tempo limite para verificação de arquivo pela nuvem. Valores válidos de 0 a 50|
-|defenderBlockOnAccessProtection|Boolean|Permite ou proíbe a funcionalidade de proteção de acesso do Windows Defender.|
+|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|A configuração do modo como avisar um usuário do envio de exemplo. Os valores possíveis são: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
+|defenderScheduledQuickScanTime|TimeOfDay|O horário de realização da verificação diária rápida.|
+|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|O tipo de verificação do sistema do Defender. Os valores possíveis são: `userDefined`, `disabled`, `quick`, `full`.|
+|defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Dia da semana em que o Defender fará a verificação do sistema. Os valores possíveis são: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
+|defenderScheduledScanTime|TimeOfDay|A hora em que o Defender fará a verificação do sistema.|
+|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|Obtém ou define a ação do defender a ser executada em aplicativos potencialmente indesejados (PUA), que inclui software com comportamentos de injeção de anúncio, empacotamento de software, solicitação persistente para pagamento ou assinatura, etc. O defender alerta o usuário quando o PUA está sendo baixado ou tenta se instalar. Adicionado no Windows 10 para área de trabalho. Os valores possíveis são: `deviceDefault`, `block`, `audit`.|
+|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Obtém ou define a ação do defender a ser executada em aplicativos potencialmente indesejados (PUA), que inclui software com comportamentos de injeção de anúncio, empacotamento de software, solicitação persistente para pagamento ou assinatura, etc. O defender alerta o usuário quando o PUA está sendo baixado ou tenta se instalar. Adicionado no Windows 10 para área de trabalho. Os valores possíveis são: `userDefined`, `enable`, `auditMode`.|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|Verifica se o nível de consentimento do usuário no Windows Defender deve enviar dados. Os valores possíveis são: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
+|defenderBlockOnAccessProtection|Boolean|Permite ou proíbe a funcionalidade de proteção de acesso do Windows Defender.|
+|defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Obtém ou define ações do Defender a serem realizadas em um malware detectado por nível de ameaça.|
+|defenderFileExtensionsToExclude|Conjunto de cadeias de caracteres|Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real.|
+|defenderFilesAndFoldersToExclude|Conjunto de cadeias de caracteres|Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real.|
+|defenderProcessesToExclude|String collection|Processos a serem excluídos das verificações e da proteção em tempo real.|
 |lockScreenAllowTimeoutConfiguration|Boolean|Especifique se deseja mostrar uma definição configurável pelo usuário para controlar o tempo limite da tela enquanto estiver na tela de bloqueio de dispositivos Windows Mobile 10. Se essa política estiver definida como Permitir, o valor definido por lockScreenTimeoutInSeconds será ignorado.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indica se as notificações da central de ações na tela de bloqueio serão bloqueadas.|
 |lockScreenBlockCortana|Boolean|Indica se o usuário pode ou não interagir com a Cortana usando a fala enquanto o sistema estiver bloqueado.|
@@ -293,7 +293,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indica se o tráfego de intranet deve ou não ser alternado da borda para o Internet Explorer. Observação: o nome dessa propriedade é inesperado; a propriedade é obsoleta, use EdgeSendIntranetTrafficToInternetExplorer em vez disso.|
 |edgeSendIntranetTrafficToInternetExplorer|Boolean|Indica se o tráfego de intranet deve ou não ser alternado da borda para o Internet Explorer.|
 |edgeRequireSmartScreen|Boolean|Indica se o usuário deverá ou não usar o Filtro SmartScreen.|
-|edgeEnterpriseModeSiteListLocation|String|Indica o local da lista de sites do modo Empresarial. Pode ser um arquivo local, rede local ou local http.|
+|edgeEnterpriseModeSiteListLocation|Cadeia de Caracteres|Indica o local da lista de sites do modo Empresarial. Pode ser um arquivo local, rede local ou local http.|
 |edgeFirstRunUrl|String|A primeira URL a ser executada quando o navegador Edge é aberto pela primeira vez.|
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)|Permite aos administradores de TI definir um mecanismo de pesquisa padrão para dispositivos controlados por MDM. Os usuários podem substituí-lo e alterar o mecanismo de pesquisa padrão fornecido, caso a política AllowSearchEngineCustomization não esteja definida.|
 |edgeHomepageUrls|String collection|A lista de URLs de home pages mostradas em dispositivos registrados no MDM no navegador Edge.|
@@ -344,9 +344,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |appManagementMSIAllowUserControlOverInstall|Boolean|Essa configuração de política permite que os usuários alterem as opções de instalação que normalmente estão disponíveis somente para administradores do sistema.|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|Essa configuração de política instrui o Windows Installer a usar permissões elevadas ao instalar qualquer programa no sistema.|
 |dataProtectionBlockDirectMemoryAccess|Boolean|Essa configuração de política permite bloquear o acesso direto à memória (DMA) para todas as portas de downstream PCI que podem ser conectadas a quente até que um usuário faça logon no Windows.|
-|appManagementPackageFamilyNamesToLaunchAfterLogOn|Coleção String|Lista de nomes de família de pacotes delimitados por ponto e vírgula de aplicativos do Windows. Os aplicativos do Windows listados devem ser iniciados após o logon.|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|Conjunto de cadeias de caracteres|Lista de nomes de família de pacotes delimitados por ponto e vírgula de aplicativos do Windows. Os aplicativos do Windows listados devem ser iniciados após o logon.|
 |uninstallBuiltInApps|Booliano|Indica se deseja ou não desinstalar uma lista fixa de aplicativos internos do Windows.|
-|configureTimeZone|String|Especifica o fuso horário a ser aplicado ao dispositivo. Este é o nome padrão do Windows para o fuso horário de destino.|
+|configureTimeZone|Cadeia de Caracteres|Especifica o fuso horário a ser aplicado ao dispositivo. Este é o nome padrão do Windows para o fuso horário de destino.|
 
 
 
@@ -509,8 +509,37 @@ Content-length: 15009
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
   "cellularData": "required",
+  "defenderRequireRealTimeMonitoring": true,
+  "defenderRequireBehaviorMonitoring": true,
+  "defenderRequireNetworkInspectionSystem": true,
+  "defenderScanDownloads": true,
+  "defenderScheduleScanEnableLowCpuPriority": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderDisableCatchupFullScan": true,
+  "defenderScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderSignatureUpdateIntervalInHours": 6,
+  "defenderMonitorFileActivity": "disable",
   "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+  "defenderScanMaxCpu": 2,
+  "defenderScanArchiveFiles": true,
+  "defenderScanIncomingMail": true,
+  "defenderScanRemovableDrivesDuringFullScan": true,
+  "defenderScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderScanNetworkFiles": true,
+  "defenderRequireCloudProtection": true,
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeout": 12,
+  "defenderCloudExtendedTimeoutInSeconds": 5,
+  "defenderPromptForSampleSubmission": "alwaysPrompt",
+  "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderScanType": "disabled",
+  "defenderSystemScanSchedule": "everyday",
+  "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderPotentiallyUnwantedAppAction": "block",
+  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderSubmitSamplesConsentType": "alwaysPrompt",
+  "defenderBlockOnAccessProtection": true,
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
     "lowSeverity": "clean",
@@ -518,44 +547,15 @@ Content-length: 15009
     "highSeverity": "clean",
     "severeSeverity": "clean"
   },
-  "defenderSystemScanSchedule": "everyday",
-  "defenderFilesAndFoldersToExclude": [
-    "Defender Files And Folders To Exclude value"
-  ],
   "defenderFileExtensionsToExclude": [
     "Defender File Extensions To Exclude value"
   ],
-  "defenderScanMaxCpu": 2,
-  "defenderMonitorFileActivity": "disable",
-  "defenderPotentiallyUnwantedAppAction": "block",
-  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderFilesAndFoldersToExclude": [
+    "Defender Files And Folders To Exclude value"
+  ],
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
   ],
-  "defenderPromptForSampleSubmission": "alwaysPrompt",
-  "defenderRequireBehaviorMonitoring": true,
-  "defenderRequireCloudProtection": true,
-  "defenderRequireNetworkInspectionSystem": true,
-  "defenderRequireRealTimeMonitoring": true,
-  "defenderScanArchiveFiles": true,
-  "defenderScanDownloads": true,
-  "defenderScheduleScanEnableLowCpuPriority": true,
-  "defenderDisableCatchupQuickScan": true,
-  "defenderDisableCatchupFullScan": true,
-  "defenderScanNetworkFiles": true,
-  "defenderScanIncomingMail": true,
-  "defenderScanMappedNetworkDrivesDuringFullScan": true,
-  "defenderScanRemovableDrivesDuringFullScan": true,
-  "defenderScanScriptsLoadedInInternetExplorer": true,
-  "defenderSignatureUpdateIntervalInHours": 6,
-  "defenderScanType": "disabled",
-  "defenderScheduledScanTime": "11:59:10.9990000",
-  "defenderScheduledQuickScanTime": "11:58:49.3840000",
-  "defenderCloudBlockLevel": "high",
-  "defenderCloudExtendedTimeout": 12,
-  "defenderCloudExtendedTimeoutInSeconds": 5,
-  "defenderBlockOnAccessProtection": true,
-  "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
@@ -876,8 +876,37 @@ Content-Length: 15181
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
   "cellularData": "required",
+  "defenderRequireRealTimeMonitoring": true,
+  "defenderRequireBehaviorMonitoring": true,
+  "defenderRequireNetworkInspectionSystem": true,
+  "defenderScanDownloads": true,
+  "defenderScheduleScanEnableLowCpuPriority": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderDisableCatchupFullScan": true,
+  "defenderScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderSignatureUpdateIntervalInHours": 6,
+  "defenderMonitorFileActivity": "disable",
   "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+  "defenderScanMaxCpu": 2,
+  "defenderScanArchiveFiles": true,
+  "defenderScanIncomingMail": true,
+  "defenderScanRemovableDrivesDuringFullScan": true,
+  "defenderScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderScanNetworkFiles": true,
+  "defenderRequireCloudProtection": true,
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeout": 12,
+  "defenderCloudExtendedTimeoutInSeconds": 5,
+  "defenderPromptForSampleSubmission": "alwaysPrompt",
+  "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderScanType": "disabled",
+  "defenderSystemScanSchedule": "everyday",
+  "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderPotentiallyUnwantedAppAction": "block",
+  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderSubmitSamplesConsentType": "alwaysPrompt",
+  "defenderBlockOnAccessProtection": true,
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
     "lowSeverity": "clean",
@@ -885,44 +914,15 @@ Content-Length: 15181
     "highSeverity": "clean",
     "severeSeverity": "clean"
   },
-  "defenderSystemScanSchedule": "everyday",
-  "defenderFilesAndFoldersToExclude": [
-    "Defender Files And Folders To Exclude value"
-  ],
   "defenderFileExtensionsToExclude": [
     "Defender File Extensions To Exclude value"
   ],
-  "defenderScanMaxCpu": 2,
-  "defenderMonitorFileActivity": "disable",
-  "defenderPotentiallyUnwantedAppAction": "block",
-  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderFilesAndFoldersToExclude": [
+    "Defender Files And Folders To Exclude value"
+  ],
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
   ],
-  "defenderPromptForSampleSubmission": "alwaysPrompt",
-  "defenderRequireBehaviorMonitoring": true,
-  "defenderRequireCloudProtection": true,
-  "defenderRequireNetworkInspectionSystem": true,
-  "defenderRequireRealTimeMonitoring": true,
-  "defenderScanArchiveFiles": true,
-  "defenderScanDownloads": true,
-  "defenderScheduleScanEnableLowCpuPriority": true,
-  "defenderDisableCatchupQuickScan": true,
-  "defenderDisableCatchupFullScan": true,
-  "defenderScanNetworkFiles": true,
-  "defenderScanIncomingMail": true,
-  "defenderScanMappedNetworkDrivesDuringFullScan": true,
-  "defenderScanRemovableDrivesDuringFullScan": true,
-  "defenderScanScriptsLoadedInInternetExplorer": true,
-  "defenderSignatureUpdateIntervalInHours": 6,
-  "defenderScanType": "disabled",
-  "defenderScheduledScanTime": "11:59:10.9990000",
-  "defenderScheduledQuickScanTime": "11:58:49.3840000",
-  "defenderCloudBlockLevel": "high",
-  "defenderCloudExtendedTimeout": 12,
-  "defenderCloudExtendedTimeoutInSeconds": 5,
-  "defenderBlockOnAccessProtection": true,
-  "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,

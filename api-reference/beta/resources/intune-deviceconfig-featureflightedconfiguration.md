@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso windows10NetworkBoundaryConfiguration
-description: Configuração de limite de rede do Windows10
+title: tipo de recurso featureFlightedConfiguration
+description: Configuração do dispositivo.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8aa6f72ed76acbc3865c6a8801d0825ee62a5a26
+ms.openlocfilehash: a6731b67d051bc187adea8cd746f6ac2bac85a4a
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178119"
+ms.locfileid: "44178252"
 ---
-# <a name="windows10networkboundaryconfiguration-resource-type"></a>tipo de recurso windows10NetworkBoundaryConfiguration
+# <a name="featureflightedconfiguration-resource-type"></a>tipo de recurso featureFlightedConfiguration
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Configuração de limite de rede do Windows10
+Configuração do dispositivo.
 
 
 Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
@@ -28,11 +28,8 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar windows10NetworkBoundaryConfigurations](../api/intune-deviceconfig-windows10networkboundaryconfiguration-list.md)|coleção [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md)|Listar Propriedades e relações dos objetos [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) .|
-|[Obter windows10NetworkBoundaryConfiguration](../api/intune-deviceconfig-windows10networkboundaryconfiguration-get.md)|[windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md)|Leia as propriedades e as relações do objeto [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) .|
-|[Criar windows10NetworkBoundaryConfiguration](../api/intune-deviceconfig-windows10networkboundaryconfiguration-create.md)|[windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md)|Criar um novo objeto [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) .|
-|[Excluir windows10NetworkBoundaryConfiguration](../api/intune-deviceconfig-windows10networkboundaryconfiguration-delete.md)|Nenhum|Exclui [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md).|
-|[Atualizar windows10NetworkBoundaryConfiguration](../api/intune-deviceconfig-windows10networkboundaryconfiguration-update.md)|[windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md)|Atualiza as propriedades de um objeto [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) .|
+|[Listar featureFlightedConfigurations](../api/intune-deviceconfig-featureflightedconfiguration-list.md)|coleção [featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md)|Listar Propriedades e relações dos objetos [featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md) .|
+|[Obter featureFlightedConfiguration](../api/intune-deviceconfig-featureflightedconfiguration-get.md)|[featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md)|Leia as propriedades e as relações do objeto [featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -48,7 +45,6 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|windowsNetworkIsolationPolicy|[windowsNetworkIsolationPolicy](../resources/intune-deviceconfig-windowsnetworkisolationpolicy.md)|Política de isolamento de rede do Windows|
 
 ## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
@@ -56,7 +52,7 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |groupAssignments|coleção [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|A lista de atribuições de grupo para o perfil de configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |assignments|Coleção [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|A lista de atribuições para o perfil de configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceStatuses|Coleção [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Status da instalação da configuração de dispositivo por dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Status de instalação da configuração do dispositivo por usuário. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Status de instalação da configuração do dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Visão geral de status de dispositivos para Configuração de Dispositivo. Herdado de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Visão geral de status de usuários para Configuração de Dispositivo. Herdado de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceSettingStateSummaries|Coleção [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Visão geral de dispositivos de configuração para Configuração de Dispositivo. Herdado de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -66,12 +62,12 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.windows10NetworkBoundaryConfiguration"
+  "@odata.type": "microsoft.graph.featureFlightedConfiguration"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.windows10NetworkBoundaryConfiguration",
+  "@odata.type": "#microsoft.graph.featureFlightedConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
@@ -102,36 +98,7 @@ Veja a seguir uma representação JSON do recurso.
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
-  "version": 1024,
-  "windowsNetworkIsolationPolicy": {
-    "@odata.type": "microsoft.graph.windowsNetworkIsolationPolicy",
-    "enterpriseNetworkDomainNames": [
-      "String"
-    ],
-    "enterpriseCloudResources": [
-      {
-        "@odata.type": "microsoft.graph.proxiedDomain",
-        "ipAddressOrFQDN": "String",
-        "proxy": "String"
-      }
-    ],
-    "enterpriseIPRanges": [
-      {
-        "@odata.type": "microsoft.graph.ipRange"
-      }
-    ],
-    "enterpriseInternalProxyServers": [
-      "String"
-    ],
-    "enterpriseIPRangesAreAuthoritative": true,
-    "enterpriseProxyServers": [
-      "String"
-    ],
-    "enterpriseProxyServersAreAuthoritative": true,
-    "neutralDomainResources": [
-      "String"
-    ]
-  }
+  "version": 1024
 }
 ```
 

@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Obter tokens de autenticação
       items:
-        - name: Visão Geral
+        - name: Visão geral
           href: /graph/auth/index?context=graph/api/1.0
         - name: Noções básicas
           href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -72,7 +72,7 @@
         - name: Azure AD Graph.
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
             - name: Lista de verificação para migração de aplicativos
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -159,11 +159,11 @@
     - name: Referência v1.0
       expanded: true
       items:
-        - name: Visão Geral
+        - name: Visão geral
           href: overview.md
         - name: Usuários
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/users.md
             - name: Usuário
               href: resources/user.md
@@ -346,6 +346,12 @@
                       href: api/outlookuser-list-mastercategories.md
                 - name: Converter IDs
                   href: api/user-translateexchangeids.md
+            - name: Pessoas
+              items:
+                - name: Pessoa
+                  href: resources/person.md
+                - name: Listar pessoas
+                  href: api/user-list-people.md
             - name: Foto
               href: resources/profilephoto.md
               items:
@@ -360,7 +366,7 @@
                   href: api/planneruser-list-tasks.md
         - name: Grupos
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/groups-overview.md
             - name: Grupo
               href: resources/group.md
@@ -856,7 +862,7 @@
         - name: Dispositivos e aplicativos
           displayName: Intune
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/intune-graph-overview.md
             - name: Gerenciamento de aplicativos
               href: resources/intune-app-conceptual.md
@@ -2347,7 +2353,7 @@
                 - name: Evento de solução de problemas de gerenciamento de dispositivo
                   href: resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md
                     - name: Obter
                       href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-get.md
@@ -2364,7 +2370,7 @@
                 - name: Evento de solução de problemas de registro
                   href: resources/intune-troubleshooting-enrollmenttroubleshootingevent.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
                     - name: Obter
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
@@ -2995,7 +3001,7 @@
                 - name: Definição de função de gerenciamento de aplicativo e dispositivo
                   href: resources/intune-rbac-deviceandappmanagementroledefinition.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-rbac-deviceandappmanagementroledefinition-list.md
                     - name: Obter
                       href: api/intune-rbac-deviceandappmanagementroledefinition-get.md
@@ -3010,7 +3016,7 @@
                 - name: Operação de recurso
                   href: resources/intune-rbac-resourceoperation.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-rbac-resourceoperation-list.md
                     - name: Obter
                       href: api/intune-rbac-resourceoperation-get.md
@@ -3218,7 +3224,7 @@
         - name: Arquivos
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/onedrive.md
             - name: Unidades
               href: resources/drive.md
@@ -3304,7 +3310,7 @@
         - name: Identidade e acesso
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/azure-ad-overview.md
             - name: Aplicativo
               href: resources/application.md
@@ -3528,7 +3534,7 @@
               items:
                 - name: Avaliação de ameaças
                   items:
-                    - name: Visão Geral
+                    - name: Visão geral
                       href: resources/threatassessment-api-overview.md
                     - name: Solicitação de avaliação de ameaças
                       href: resources/threatassessmentrequest.md
@@ -3658,7 +3664,7 @@
         - name: Email
           displayName: 'Outlook, Outlook mail'
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/mail-api-overview.md
             - name: Mensagem
               href: resources/message.md
@@ -3915,9 +3921,10 @@
           items:
             - name: Visão geral
               href: resources/social-overview.md
-            - name: Pessoa
-              href: resources/person.md
+            - name: Pessoas
               items:
+                - name: Pessoa
+                  href: resources/person.md
                 - name: Listar pessoas
                   href: api/user-list-people.md
             - name: Informações
@@ -4251,7 +4258,7 @@
         - name: Sites e listas
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/sharepoint.md
             - name: Sites
               href: resources/site.md
@@ -4297,7 +4304,7 @@
         - name: Tarefas e planos
           displayName: Planner
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/planner-overview.md
             - name: Plano
               href: resources/plannerplan.md
@@ -4375,7 +4382,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Trabalho em equipe
+        - name: Teamwork
           displayName: Microsoft Teams
           items:
             - name: Visão Geral
