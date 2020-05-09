@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 31c8ae824b11e2c82fd9df4ec7399860e7b43bc3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ecd136e8be61b2c4ca2666b95bf61a88beff9144
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452145"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44174605"
 ---
-# <a name="list-embeddedsimactivationcodepoolassignments"></a><span data-ttu-id="a2982-103">Listar embeddedSIMActivationCodePoolAssignments</span><span class="sxs-lookup"><span data-stu-id="a2982-103">List embeddedSIMActivationCodePoolAssignments</span></span>
+# <a name="list-embeddedsimactivationcodepoolassignments"></a><span data-ttu-id="5f08e-103">Listar embeddedSIMActivationCodePoolAssignments</span><span class="sxs-lookup"><span data-stu-id="5f08e-103">List embeddedSIMActivationCodePoolAssignments</span></span>
 
-<span data-ttu-id="a2982-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a2982-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5f08e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5f08e-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="a2982-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="a2982-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="5f08e-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="5f08e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a2982-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="a2982-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5f08e-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5f08e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a2982-107">Listar Propriedades e relações dos objetos [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="a2982-107">List properties and relationships of the [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) objects.</span></span>
+<span data-ttu-id="5f08e-107">Listar Propriedades e relações dos objetos [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="5f08e-107">List properties and relationships of the [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a2982-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="a2982-108">Prerequisites</span></span>
-<span data-ttu-id="a2982-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a2982-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5f08e-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="5f08e-108">Prerequisites</span></span>
+<span data-ttu-id="5f08e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5f08e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a2982-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a2982-111">Permission type</span></span>|<span data-ttu-id="a2982-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="a2982-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5f08e-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5f08e-111">Permission type</span></span>|<span data-ttu-id="5f08e-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="5f08e-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a2982-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a2982-113">Delegated (work or school account)</span></span>|<span data-ttu-id="a2982-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="a2982-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="a2982-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a2982-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a2982-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a2982-116">Not supported.</span></span>|
-|<span data-ttu-id="a2982-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a2982-117">Application</span></span>|<span data-ttu-id="a2982-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="a2982-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="5f08e-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5f08e-113">Delegated (work or school account)</span></span>|<span data-ttu-id="5f08e-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="5f08e-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="5f08e-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5f08e-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5f08e-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5f08e-116">Not supported.</span></span>|
+|<span data-ttu-id="5f08e-117">Application</span><span class="sxs-lookup"><span data-stu-id="5f08e-117">Application</span></span>|<span data-ttu-id="5f08e-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="5f08e-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a2982-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a2982-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5f08e-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5f08e-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,32 +40,32 @@ ms.locfileid: "43452145"
 GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a2982-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a2982-120">Request headers</span></span>
-|<span data-ttu-id="a2982-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="a2982-121">Header</span></span>|<span data-ttu-id="a2982-122">Valor</span><span class="sxs-lookup"><span data-stu-id="a2982-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5f08e-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5f08e-120">Request headers</span></span>
+|<span data-ttu-id="5f08e-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="5f08e-121">Header</span></span>|<span data-ttu-id="5f08e-122">Valor</span><span class="sxs-lookup"><span data-stu-id="5f08e-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a2982-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="a2982-123">Authorization</span></span>|<span data-ttu-id="a2982-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a2982-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a2982-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="a2982-125">Accept</span></span>|<span data-ttu-id="a2982-126">application/json</span><span class="sxs-lookup"><span data-stu-id="a2982-126">application/json</span></span>|
+|<span data-ttu-id="5f08e-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="5f08e-123">Authorization</span></span>|<span data-ttu-id="5f08e-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5f08e-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5f08e-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="5f08e-125">Accept</span></span>|<span data-ttu-id="5f08e-126">application/json</span><span class="sxs-lookup"><span data-stu-id="5f08e-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a2982-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a2982-127">Request body</span></span>
-<span data-ttu-id="a2982-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a2982-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5f08e-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5f08e-127">Request body</span></span>
+<span data-ttu-id="5f08e-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="5f08e-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a2982-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="a2982-129">Response</span></span>
-<span data-ttu-id="a2982-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a2982-130">If successful, this method returns a `200 OK` response code and a collection of [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5f08e-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="5f08e-129">Response</span></span>
+<span data-ttu-id="5f08e-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5f08e-130">If successful, this method returns a `200 OK` response code and a collection of [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a2982-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a2982-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5f08e-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5f08e-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a2982-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a2982-132">Request</span></span>
-<span data-ttu-id="a2982-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a2982-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5f08e-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5f08e-132">Request</span></span>
+<span data-ttu-id="5f08e-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5f08e-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assignments
 ```
 
-### <a name="response"></a><span data-ttu-id="a2982-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="a2982-134">Response</span></span>
-<span data-ttu-id="a2982-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a2982-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5f08e-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="5f08e-134">Response</span></span>
+<span data-ttu-id="5f08e-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5f08e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 281
+Content-Length: 275
 
 {
   "value": [
@@ -73,7 +73,7 @@ Content-Length: 281
       "@odata.type": "#microsoft.graph.embeddedSIMActivationCodePoolAssignment",
       "id": "e7304dcc-4dcc-e730-cc4d-30e7cc4d30e7",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
       }
     }
   ]
