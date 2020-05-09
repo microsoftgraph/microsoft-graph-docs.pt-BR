@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f8a29aff83bba69a0efc6db20ad1533d68b9bb7a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0dbd0a2e727d45ba881c5af82755c9af1fe08d58
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452044"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177601"
 ---
 # <a name="get-circulargeofencemanagementcondition"></a>Obter circularGeofenceManagementCondition
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -69,7 +69,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 659
+Content-Length: 586
 
 {
   "value": {
@@ -84,9 +84,9 @@ Content-Length: 659
     "applicablePlatforms": [
       "androidForWork"
     ],
-    "latitude": "<Unknown Primitive Type Edm.Double>",
-    "longitude": "<Unknown Primitive Type Edm.Double>",
-    "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
+    "latitude": 2.6666666666666665,
+    "longitude": 3.0,
+    "radiusInMeters": 4.666666666666667
   }
 }
 ```

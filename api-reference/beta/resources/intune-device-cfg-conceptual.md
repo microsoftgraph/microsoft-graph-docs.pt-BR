@@ -1,15 +1,15 @@
 ---
 title: Configuração de dispositivo no Microsoft Intune-Microsoft Gaaph API
 description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) que definem configurar dispositivos para uma organização de locatário.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3b97f69f16fef9b39213b30942049300450a8155
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 11597599cc7303c2190d5991d0fb2c502a17b86a
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463512"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179324"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -37,6 +37,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Política de conformidade do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Tipo de política de permissão de aplicativo padrão do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Configuração de autenticação de credencial derivada do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)
+- [Tipo de perfil de registro do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)
 - [Configuração de Wi-Fi corporativa do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Configuração geral do dispositivo do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Proxy global do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerglobalproxy.md)
@@ -231,6 +232,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Detalhes de política de relatório de criptografia](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [Estado de criptografia](intune-deviceconfig-encryptionstate.md)
 - [Uso estendido de chave](intune-deviceconfig-extendedkeyusage.md)
+- [Configuração comprovada de recurso](intune-deviceconfig-featureflightedconfiguration.md)
 - [Estado do cofre de arquivos](intune-deviceconfig-filevaultstate.md)
 - [Tipo de método de verificação da lista de revogação de certificados do firewall](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
 - [Tipo de método de enfileiramento de pacotes do firewall](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
@@ -340,6 +342,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Segurança de sessão mínima de opções de segurança local](intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)
 - [Tipo de comportamento de remoção de cartão inteligente de opções de segurança local](intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)
 - [Tipo de comportamento de solicitação de elevação de usuário padrão de opções de segurança local](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
+- [receptor de eventos do Apple para macOS](intune-deviceconfig-macosappleeventreceiver.md)
 - [par de chave/valor de domínios associados ao macOS](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
 - [Base de perfil de certificado do macOS](intune-deviceconfig-macoscertificateprofilebase.md)
 - [Política de conformidade do macOS](intune-deviceconfig-macoscompliancepolicy.md)
@@ -359,9 +362,14 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [extensão de kernel macOS](intune-deviceconfig-macoskernelextension.md)
 - [item de lançamento do macOS](intune-deviceconfig-macoslaunchitem.md)
 - [Perfil de certificado PKCS do macOS](intune-deviceconfig-macospkcscertificateprofile.md)
+- [item de controle de acesso de privacidade macOS](intune-deviceconfig-macosprivacyaccesscontrolitem.md)
+- [tipo de identificador de processo macOS](intune-deviceconfig-macosprocessidentifiertype.md)
 - [extensão de logon único de redirecionamento macOS](intune-deviceconfig-macosredirectsinglesignonextension.md)
 - [Perfil de certificado do SCEP do macOS](intune-deviceconfig-macosscepcertificateprofile.md)
 - [extensão de logon único do macOS](intune-deviceconfig-macossinglesignonextension.md)
+- [extensão do sistema macOS](intune-deviceconfig-macossystemextension.md)
+- [tipo de extensão do sistema macOS](intune-deviceconfig-macossystemextensiontype.md)
+- [mapeamento de tipo de extensão do sistema macOS](intune-deviceconfig-macossystemextensiontypemapping.md)
 - [Certificado raiz confiável do macOS](intune-deviceconfig-macostrustedrootcertificate.md)
 - [Configuração de VPN do macOS](intune-deviceconfig-macosvpnconfiguration.md)
 - [Configuração de Wi-Fi do macOS](intune-deviceconfig-macoswificonfiguration.md)

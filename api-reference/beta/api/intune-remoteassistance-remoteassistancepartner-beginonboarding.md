@@ -1,18 +1,18 @@
 ---
-title: Listar deviceHealthScriptAssignments
-description: Listar Propriedades e relações dos objetos deviceHealthScriptAssignment.
+title: Ação beginOnboarding
+description: Uma solicitação para iniciar a integração.  Deve ser associado às informações de conta do TeamViewer apropriadas
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c7b152ded162a36b635d8c9e1b1c88cb3258f995
+ms.openlocfilehash: 011705a50c5dbeec1559bbc803f03991cd03292d
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177832"
+ms.locfileid: "44178140"
 ---
-# <a name="list-devicehealthscriptassignments"></a>Listar deviceHealthScriptAssignments
+# <a name="beginonboarding-action"></a>Ação beginOnboarding
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar Propriedades e relações dos objetos [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) .
+Uma solicitação para iniciar a integração.  Deve ser associado às informações de conta do TeamViewer apropriadas
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
+POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/beginOnboarding
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -50,41 +50,20 @@ GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) no corpo da resposta.
+Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
+POST https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/beginOnboarding
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 489
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
-      "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
-      "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
-      },
-      "runRemediationScript": true,
-      "runSchedule": {
-        "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
-        "interval": 8,
-        "useUtc": true,
-        "time": "11:58:36.2550000"
-      }
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
 

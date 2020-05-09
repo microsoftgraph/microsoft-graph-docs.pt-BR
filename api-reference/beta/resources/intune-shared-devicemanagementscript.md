@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a85ef320c75855c1a23efb7a438061b0d7faed1a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d4eea6b48827ab625952c133cda1f1662d60711f
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407892"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179155"
 ---
 # <a name="devicemanagementscript-resource-type"></a>tipo de recurso deviceManagementScript
 
@@ -47,10 +47,10 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts do PowerShell
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Boolean|Indica se a assinatura do script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
 |runAs32Bit|Boolean|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |**Gerenciamento de dispositivos**|
@@ -74,9 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
   "scriptContent": "binary",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",

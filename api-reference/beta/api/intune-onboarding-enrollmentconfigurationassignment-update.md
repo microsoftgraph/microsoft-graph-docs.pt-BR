@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ec832d8e22b4c3ae32f41744e4e1f45febe26eb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8fe867edace02c5b1735783491d9e760cf799dc3
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462628"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178315"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>Atualizar enrollmentConfigurationAssignment
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [enrollm
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da atribuição de configuração de registro|
+|id|Cadeia de caracteres|Chave da atribuição de configuração de registro|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Representa uma atribuição para dispositivos gerenciados no locatário|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Tipo de recurso usado para implantação em um grupo, direto ou policyset. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|String|Identificador para o recurso usado para implantação em um grupo|
+|sourceId|Cadeia de Caracteres|Identificador para o recurso usado para implantação em um grupo|
 
 
 
@@ -70,12 +70,12 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments/{enrollmentConfigurationAssignmentId}
 Content-type: application/json
-Content-length: 234
+Content-length: 222
 
 {
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -87,13 +87,13 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 283
+Content-Length: 271
 
 {
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "id": "705b021c-021c-705b-1c02-5b701c025b70",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "source": "policySets",
   "sourceId": "Source Id value"

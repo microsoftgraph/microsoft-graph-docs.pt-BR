@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 45b59232b7f3bead356c6d9c8af0c5ddc9912fc3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8d80a287b736786a14eac1244b3e42e07b8e6dad
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382874"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178098"
 ---
 # <a name="userexperienceanalyticscategory-resource-type"></a>tipo de recurso userExperienceAnalyticsCategory
 
@@ -31,12 +31,12 @@ A entidade de categoria da experiência do usuário contém as pontuações e in
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da categoria de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo da categoria de análise da experiência do usuário.|
 |overallScore|Int32|A pontuação geral da categoria de análise da experiência do usuário.|
 |insights|coleção [userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)|O insights para a categoria de análise da experiência do usuário.|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de integridade atual da categoria de análise da experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |metricValues|coleção [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)|Os valores de métrica da categoria de análise da experiência do usuário.|
@@ -62,7 +62,7 @@ Veja a seguir uma representação JSON do recurso.
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": "4.2"
         }
       ],
       "severity": "String"

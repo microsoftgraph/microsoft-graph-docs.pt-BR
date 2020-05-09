@@ -1,18 +1,18 @@
 ---
-title: Listar deviceHealthScriptAssignments
-description: Listar Propriedades e relações dos objetos deviceHealthScriptAssignment.
+title: Listar remoteAssistancePartners
+description: Listar propriedades e relações de objetos de remoteAssistancePartner.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c7b152ded162a36b635d8c9e1b1c88cb3258f995
+ms.openlocfilehash: 5c21f647e1f02fe53f3b2871b2103e164e2f87c9
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177832"
+ms.locfileid: "44176097"
 ---
-# <a name="list-devicehealthscriptassignments"></a>Listar deviceHealthScriptAssignments
+# <a name="list-remoteassistancepartners"></a>Listar remoteAssistancePartners
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar Propriedades e relações dos objetos [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) .
+Listar propriedades e relações de objetos de [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
+GET /deviceManagement/remoteAssistancePartners
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -50,14 +50,14 @@ GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
+GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners
 ```
 
 ### <a name="response"></a>Resposta
@@ -65,23 +65,17 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 489
+Content-Length: 372
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
-      "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
-      "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
-      },
-      "runRemediationScript": true,
-      "runSchedule": {
-        "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
-        "interval": 8,
-        "useUtc": true,
-        "time": "11:58:36.2550000"
-      }
+      "@odata.type": "#microsoft.graph.remoteAssistancePartner",
+      "id": "7443c8b9-c8b9-7443-b9c8-4374b9c84374",
+      "displayName": "Display Name value",
+      "onboardingUrl": "https://example.com/onboardingUrl/",
+      "onboardingStatus": "onboarding",
+      "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
     }
   ]
 }

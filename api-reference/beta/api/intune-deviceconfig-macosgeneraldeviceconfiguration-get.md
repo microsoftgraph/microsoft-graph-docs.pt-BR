@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 88e5bc3958a0a90d57aaf02def3103142287e393
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 423c28adb18629007e4f604b29e1fc94ab380c68
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432610"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177860"
 ---
 # <a name="get-macosgeneraldeviceconfiguration"></a>Get macOSGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3517
+Content-Length: 4994
 
 {
   "value": {
@@ -163,7 +163,46 @@ Content-Length: 3517
     "classroomForceAutomaticallyJoinClasses": true,
     "classroomForceRequestPermissionToLeaveClasses": true,
     "classroomForceUnpromptedAppAndDeviceLock": true,
-    "iCloudBlockActivityContinuation": true
+    "iCloudBlockActivityContinuation": true,
+    "privacyAccessControls": [
+      {
+        "@odata.type": "microsoft.graph.macOSPrivacyAccessControlItem",
+        "displayName": "Display Name value",
+        "identifier": "Identifier value",
+        "identifierType": "path",
+        "codeRequirement": "Code Requirement value",
+        "staticCodeValidation": true,
+        "blockCamera": true,
+        "blockMicrophone": true,
+        "blockScreenCapture": true,
+        "blockListenEvent": true,
+        "speechRecognition": "enabled",
+        "accessibility": "enabled",
+        "addressBook": "enabled",
+        "calendar": "enabled",
+        "reminders": "enabled",
+        "photos": "enabled",
+        "mediaLibrary": "enabled",
+        "fileProviderPresence": "enabled",
+        "systemPolicyAllFiles": "enabled",
+        "systemPolicySystemAdminFiles": "enabled",
+        "systemPolicyDesktopFolder": "enabled",
+        "systemPolicyDocumentsFolder": "enabled",
+        "systemPolicyDownloadsFolder": "enabled",
+        "systemPolicyNetworkVolumes": "enabled",
+        "systemPolicyRemovableVolumes": "enabled",
+        "postEvent": "enabled",
+        "appleEventsAllowedReceivers": [
+          {
+            "@odata.type": "microsoft.graph.macOSAppleEventReceiver",
+            "codeRequirement": "Code Requirement value",
+            "identifier": "Identifier value",
+            "identifierType": "path",
+            "allowed": true
+          }
+        ]
+      }
+    ]
   }
 }
 ```
