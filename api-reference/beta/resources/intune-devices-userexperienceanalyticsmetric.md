@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29fe908ce4e729766edab015dc91f3109f6e9b51
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e8239ac7e4583841d3c8a095bc85d9c9eb9b9d78
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464990"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178392"
 ---
 # <a name="userexperienceanalyticsmetric-resource-type"></a>tipo de recurso userExperienceAnalyticsMetric
 
@@ -34,9 +34,9 @@ A métrica de análise da experiência do usuário contém a pontuação e as un
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da métrica de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo da métrica de análise da experiência do usuário.|
 |valor|Duplo|O valor da métrica de análise da experiência do usuário.|
-|unidade|String|A unidade da métrica de análise da experiência do usuário.|
+|unidade|Cadeia de Caracteres|A unidade da métrica de análise da experiência do usuário.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -53,7 +53,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
   "id": "String (identifier)",
-  "value": "<Unknown Primitive Type Edm.Double>",
+  "value": "4.2",
   "unit": "String"
 }
 ```

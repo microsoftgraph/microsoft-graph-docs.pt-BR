@@ -5,16 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3616a5125eca206e7f1cb3a5b62ee60098924db1
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 574e052cf93031cd1c868c43e837aa0e11e021ce
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124080"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178021"
 ---
 # <a name="group-subscribebymail"></a>group: subscribeByMail
 
-Namespace: Microsoft. Graph chamar este método permitirá que o usuário atual receba notificações por email para esse grupo, sobre novas postagens, eventos e arquivos nesse grupo. Suportado somente para grupos do Office 365.
+Namespace: microsoft.graph
+
+Chamar esse método permitirá que o usuário atual receba notificações por email para este grupo, sobre novas postagens, eventos e arquivos do grupo. Suporte apenas para grupos do Office 365.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

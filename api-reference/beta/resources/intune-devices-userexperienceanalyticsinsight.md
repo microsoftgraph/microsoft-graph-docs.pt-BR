@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b5a712766534793fd11ba8b07955870d7e1195dd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 40e82f0c950328c0a6937a38762c6a26344fb943
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389242"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178812"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>tipo de recurso userExperienceAnalyticsInsight
 
@@ -25,8 +25,8 @@ A visão geral da análise da experiência do usuário é a recomendação de me
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userExperienceAnalyticsMetricId|String|O identificador exclusivo da visão geral da análise da experiência do usuário.|
-|insightid|String|O identificador exclusivo da visão geral da análise da experiência do usuário.|
+|userExperienceAnalyticsMetricId|Cadeia de Caracteres|O identificador exclusivo da visão geral da análise da experiência do usuário.|
+|insightid|Cadeia de Caracteres|O identificador exclusivo da visão geral da análise da experiência do usuário.|
 |values|coleção [userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)|O valor da visão da análise da experiência do usuário.|
 |severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|O valor da visão da análise da experiência do usuário. Os valores possíveis são: `none`, `informational`, `warning`, `error`.|
 
@@ -48,7 +48,7 @@ Veja a seguir uma representação JSON do recurso.
   "values": [
     {
       "@odata.type": "microsoft.graph.insightValueDouble",
-      "value": "<Unknown Primitive Type Edm.Double>"
+      "value": "4.2"
     }
   ],
   "severity": "String"

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso androidDeviceOwnerEnrollmentProfile
-description: Perfil de registro usado para registrar dispositivos COSU usando o Gerenciamento de Nuvem do Google.
+description: Perfil de registro usado para registrar dispositivos corporativos do Android usando o gerenciamento de nuvem do Google.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4cbf037372b2e623bf389a01b1caa6aac348c669
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6fbe8b7d23831a4fba0eb015197eadc3e9c722db
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459315"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179415"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>tipo de recurso androidDeviceOwnerEnrollmentProfile
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Perfil de registro usado para registrar dispositivos COSU usando o Gerenciamento de Nuvem do Google.
+Perfil de registro usado para registrar dispositivos corporativos do Android usando o gerenciamento de nuvem do Google.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -36,19 +36,19 @@ Perfil de registro usado para registrar dispositivos COSU usando o Gerenciamento
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|accountId|String|GUID de locatário ao qual o perfil de registro pertence.|
+|accountId|Cadeia de Caracteres|GUID de locatário ao qual o perfil de registro pertence.|
 |id|String|GUID exclusivo do perfil de registro.|
 |displayName|Cadeia de caracteres|Nome de exibição do perfil de registro.|
 |description|String|Descrição do perfil de registro.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
-|tokenValue|String|Valor do token mais recentemente criado para este perfil de registro.|
+|tokenValue|Cadeia de Caracteres|Valor do token mais recentemente criado para este perfil de registro.|
 |Propriedadetokencreationdatetime|DateTimeOffset|Data e hora em que o token criado mais recentemente foi criado.|
 |tokenExpirationDateTime|DateTimeOffset|Data e hora em que o token mais recentemente criado expirará.|
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadeia de caracteres usada para gerar um código QR para o token.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

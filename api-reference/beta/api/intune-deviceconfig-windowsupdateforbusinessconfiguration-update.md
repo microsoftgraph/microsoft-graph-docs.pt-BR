@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff3494b18b6166f692e18e17a142203f6975cfb3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f10c6f22925dbf5599ab72e5eb70e4faf99e21c9
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43332976"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178931"
 ---
 # <a name="update-windowsupdateforbusinessconfiguration"></a>Atualizar windowsUpdateForBusinessConfiguration
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,8 +57,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -69,23 +69,23 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Modo de otimização de entrega. Os valores possíveis são: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|Os recursos de pré-lançamento. Os valores possíveis são: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
 |automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|Modo de atualização automática. Os valores possíveis são: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`, `windowsDefault`.|
-|microsoftUpdateServiceAllowed|Booliano|Permitir serviço Microsoft Update|
-|driversExcluded|Booliano|Excluir drivers de atualização do Windows|
+|microsoftUpdateServiceAllowed|Boolean|Permitir serviço Microsoft Update|
+|driversExcluded|Boolean|Excluir drivers de atualização do Windows|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)|Cronograma de instalação|
 |qualityUpdatesDeferralPeriodInDays|Int32|Aditar atualizações de qualidade por este número de dias|
 |featureUpdatesDeferralPeriodInDays|Int32|Aditar atualizações de recursos por este número de dias|
-|qualityUpdatesPaused|Booliano|Pausar atualizações de qualidade|
+|qualityUpdatesPaused|Boolean|Pausar atualizações de qualidade|
 |featureUpdatesPaused|Boolean|Pausar atualizações de recursos|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Data e hora de expiração da pausa de atualizações de qualidade|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Data e hora de expiração da pausa de atualizações de recursos|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|Determina quais dispositivos de filial receberão suas atualizações. Os possíveis valores são: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
-|skipChecksBeforeRestart|Booliano|Definido como ignorar todas as verificação antes de reiniciar: nível da bateria = 40%, presença do usuário, exibição necessária, modo de apresentação, modo de tela cheia, estado de chamada telefônica, modo de jogo, etc. |
+|skipChecksBeforeRestart|Boolean|Definido como ignorar todas as verificação antes de reiniciar: nível da bateria = 40%, presença do usuário, exibição necessária, modo de apresentação, modo de tela cheia, estado de chamada telefônica, modo de jogo, etc. |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Agendou a instalação da atualização nas semanas do mês. Os possíveis valores são: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
 |qualityUpdatesPauseStartDate|Data|Atualização de qualidade pausar data de início. Essa propriedade é somente leitura.|
 |featureUpdatesPauseStartDate|Data|Atualização de recursos pausar data de início. Essa propriedade é somente leitura.|
 |featureUpdatesRollbackWindowInDays|Int32|O número de dias após uma atualização de recurso para a qual uma reversão é válida|
-|qualityUpdatesWillBeRolledBack|Booliano|Especifica se é para reverter as atualizações de qualidade no próximo check-in de dispositivos|
-|featureUpdatesWillBeRolledBack|Booliano|Especifica se as atualizações de recursos devem ser revertidas no próximo check-in de dispositivos|
+|qualityUpdatesWillBeRolledBack|Boolean|Especifica se é para reverter as atualizações de qualidade no próximo check-in de dispositivos|
+|featureUpdatesWillBeRolledBack|Boolean|Especifica se as atualizações de recursos devem ser revertidas no próximo check-in de dispositivos|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|Data de início da reversão de atualização de qualidade|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|Atualização de recursos data de início da reversão|
 |engagedRestartDeadlineInDays|Int32|Prazo em dias antes de agendar automaticamente e executar uma reinicialização pendente fora do horário ativo, com intervalo válido de 2 a 30 dias|
@@ -94,7 +94,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |deadlineForFeatureUpdatesInDays|Int32|Número de dias antes que as atualizações de recursos sejam instaladas automaticamente com um intervalo válido de 2 a 30 dias|
 |deadlineForQualityUpdatesInDays|Int32|Número de dias antes de as atualizações de qualidade serem instaladas automaticamente com um intervalo válido de 2 a 30 dias|
 |deadlineGracePeriodInDays|Int32|Número de dias após o prazo até que as reinicializações ocorram automaticamente com um intervalo válido de 0 a 7 dias|
-|postponeRebootUntilAfterDeadline|Booliano|Especifica se o dispositivo deve aguardar até o prazo final para reinicialização fora do horário ativo|
+|postponeRebootUntilAfterDeadline|Boolean|Especifica se o dispositivo deve aguardar até o prazo final para reinicialização fora do horário ativo|
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Especifique o método pelo qual a notificação de reinício automático necessário é ignorada. Os valores possíveis são: `notConfigured`, `automatic`, `user`.|
 |scheduleRestartWarningInHours|Int32|Especifique o período para notificações de lembrete de aviso de reinício automático. Valores com suporte: 2, 4, 8, 12 ou 24 (horas).|
 |scheduleImminentRestartWarningInMinutes|Int32|Especifique o período para notificações de aviso iminentes de reinício automático. Valores com suporte: 15, 30 ou 60 (minutos).|
@@ -114,7 +114,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2840
+Content-length: 2794
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -165,8 +165,8 @@ Content-length: 2840
   "businessReadyUpdatesOnly": "all",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "firstWeek",
-  "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
-  "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+  "qualityUpdatesPauseStartDate": "2016-12-31",
+  "featureUpdatesPauseStartDate": "2016-12-31",
   "featureUpdatesRollbackWindowInDays": 2,
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,
@@ -193,7 +193,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3012
+Content-Length: 2966
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -247,8 +247,8 @@ Content-Length: 3012
   "businessReadyUpdatesOnly": "all",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "firstWeek",
-  "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
-  "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+  "qualityUpdatesPauseStartDate": "2016-12-31",
+  "featureUpdatesPauseStartDate": "2016-12-31",
   "featureUpdatesRollbackWindowInDays": 2,
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,

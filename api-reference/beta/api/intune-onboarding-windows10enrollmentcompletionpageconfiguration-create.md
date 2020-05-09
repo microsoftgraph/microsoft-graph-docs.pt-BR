@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4cc1d7e2530860ef47f664af814a9baf5788be6e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a46ca35809f28effdf45a5f85b8da171b30c9698
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445446"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178448"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Criar windows10EnrollmentCompletionPageConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -60,14 +60,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |createdDateTime|DateTimeOffset|Data e hora de criação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |versão|Int32|A versão da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Marcas de escopo de função opcional para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |showInstallationProgress|Boolean|Mostrar ou ocultar o andamento da instalação para o usuário|
 |blockDeviceSetupRetryByUser|Boolean|Permitir que o usuário repita a configuração após a instalação falhar|
 |allowDeviceResetOnInstallFailure|Boolean|Permitir ou bloquear falha de redefinição de dispositivo na instalação|
 |allowLogCollectionOnInstallFailure|Boolean|Permitir ou bloquear coleta de log na falha de instalação|
-|customErrorMessage|String|Definir uma mensagem de erro personalizada para mostrar após falha da instalação|
+|customErrorMessage|Cadeia de Caracteres|Definir uma mensagem de erro personalizada para mostrar após falha da instalação|
 |installProgressTimeoutInMinutes|Int32|Definir o tempo limite de progresso da instalação em minutos|
 |allowDeviceUseOnInstallFailure|Boolean|Permitir que o usuário continue usando o dispositivo em caso de falha de instalação|
-|selectedMobileAppIds|Coleção String|Aplicativos selecionados para acompanhar o status de instalação|
+|selectedMobileAppIds|Conjunto de cadeias de caracteres|Aplicativos selecionados para acompanhar o status de instalação|
 |trackInstallProgressForAutopilotOnly|Boolean|Mostrar apenas o progresso da instalação dos cenários de registro do piloto automático|
 |disableUserStatusTrackingAfterFirstUser|Boolean|Mostrar apenas o progresso da instalação para o primeiro registro post de usuário|
 
@@ -83,7 +84,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 684
+Content-length: 746
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -91,6 +92,9 @@ Content-length: 684
   "description": "Description value",
   "priority": 8,
   "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": true,
   "allowDeviceResetOnInstallFailure": true,
@@ -111,7 +115,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 856
+Content-Length: 918
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -122,6 +126,9 @@ Content-Length: 856
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": true,
   "allowDeviceResetOnInstallFailure": true,

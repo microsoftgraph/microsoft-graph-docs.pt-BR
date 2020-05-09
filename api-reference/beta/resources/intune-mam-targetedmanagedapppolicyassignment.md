@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b44ed06c582e942305ca54843c60934bf0445956
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7b0a5cea38b4f0cf7bd24207ddf67a8f41a690d5
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376852"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178378"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>tipo de recurso targetedManagedAppPolicyAssignment
 
@@ -33,10 +33,10 @@ O tipo de implantação de grupos ou aplicativos.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Id|
+|id|Cadeia de caracteres|Id|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Identificador para implantação em um grupo ou aplicativo|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Tipo de recurso usado para implantação em um grupo, direto ou de remessa/política. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|String|Identificador para o recurso usado para implantação em um grupo|
+|sourceId|Cadeia de Caracteres|Identificador para o recurso usado para implantação em um grupo|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -54,7 +54,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "source": "String",
   "sourceId": "String"

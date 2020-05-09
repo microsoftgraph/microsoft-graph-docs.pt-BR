@@ -2,14 +2,14 @@
 title: Dispositivos gerenciados pela placa com o Intune-API do Microsoft Graph
 description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) usados para a integração (configuração e inicialização) de dispositivos para uma organização de locatário.
 localization_priority: Normal
-author: rolyon
+author: dougeby
 ms.prod: intune
-ms.openlocfilehash: f32518db3843cdaf20c2af163c1fd01b40b6b58a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4daf91153afd8d31551882d529f9741e6e55a6f3
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527775"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177398"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para o gerenciamento no Intune
 

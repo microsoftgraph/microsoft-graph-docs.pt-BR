@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1bf0ba061ff22502ffbdd28c9c2bac3e7fb6c181
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 76159bf269522433cd3f3dc905d913c71cc4a3ed
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452072"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177608"
 ---
 # <a name="create-circulargeofencemanagementcondition"></a>Criar circularGeofenceManagementCondition
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar circular
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo da condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|uniqueName|String|Nome exclusivo para a condição de gerenciamento. Usado em expressões de condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|uniqueName|Cadeia de Caracteres|Nome exclusivo para a condição de gerenciamento. Usado em expressões de condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |displayName|Cadeia de caracteres|O nome do administrador definido da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |description|Cadeia de caracteres|A descrição definida pelo administrador da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|A hora em que a condição de gerenciamento foi criada. Lado do serviço gerado. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
@@ -78,7 +78,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managementConditions
 Content-type: application/json
-Content-length: 444
+Content-length: 371
 
 {
   "@odata.type": "#microsoft.graph.circularGeofenceManagementCondition",
@@ -89,9 +89,9 @@ Content-length: 444
   "applicablePlatforms": [
     "androidForWork"
   ],
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
+  "latitude": 2.6666666666666665,
+  "longitude": 3.0,
+  "radiusInMeters": 4.666666666666667
 }
 ```
 
@@ -100,7 +100,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 612
+Content-Length: 539
 
 {
   "@odata.type": "#microsoft.graph.circularGeofenceManagementCondition",
@@ -114,9 +114,9 @@ Content-Length: 612
   "applicablePlatforms": [
     "androidForWork"
   ],
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
+  "latitude": 2.6666666666666665,
+  "longitude": 3.0,
+  "radiusInMeters": 4.666666666666667
 }
 ```
 

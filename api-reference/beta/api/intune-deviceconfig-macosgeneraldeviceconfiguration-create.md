@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c775fa54ce15d4e35fd04c2777bbc2b247c13104
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: eb4f472594a57f3380c554b2187d99aa5d94f622
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432648"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177965"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>Criar macOSGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar macOSGeneralDevi
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -113,6 +113,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar macOSGeneralDevi
 |classroomForceRequestPermissionToLeaveClasses|Boolean|Indica se um aluno inscrito em um curso não gerenciado via sala de aula será solicitado a solicitar permissão do professor ao tentar sair do curso. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
 |classroomForceUnpromptedAppAndDeviceLock|Boolean|Indica se o professor deve ou não bloquear aplicativos ou o dispositivo sem avisar o aluno. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
 |iCloudBlockActivityContinuation|Boolean|Indica se o usuário será ou não impedido de continuar o trabalho que iniciou em um dispositivo MacOS em outro dispositivo iOS ou MacOS (MacOS 10,15 ou posterior).|
+|privacyAccessControls|coleção [macOSPrivacyAccessControlItem](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md)|Lista de controles de política de preferência de privacidade. Essa coleção pode conter um máximo de 10.000 elementos.|
 
 
 
@@ -126,7 +127,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3146
+Content-length: 4545
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -215,7 +216,46 @@ Content-length: 3146
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
   "classroomForceUnpromptedAppAndDeviceLock": true,
-  "iCloudBlockActivityContinuation": true
+  "iCloudBlockActivityContinuation": true,
+  "privacyAccessControls": [
+    {
+      "@odata.type": "microsoft.graph.macOSPrivacyAccessControlItem",
+      "displayName": "Display Name value",
+      "identifier": "Identifier value",
+      "identifierType": "path",
+      "codeRequirement": "Code Requirement value",
+      "staticCodeValidation": true,
+      "blockCamera": true,
+      "blockMicrophone": true,
+      "blockScreenCapture": true,
+      "blockListenEvent": true,
+      "speechRecognition": "enabled",
+      "accessibility": "enabled",
+      "addressBook": "enabled",
+      "calendar": "enabled",
+      "reminders": "enabled",
+      "photos": "enabled",
+      "mediaLibrary": "enabled",
+      "fileProviderPresence": "enabled",
+      "systemPolicyAllFiles": "enabled",
+      "systemPolicySystemAdminFiles": "enabled",
+      "systemPolicyDesktopFolder": "enabled",
+      "systemPolicyDocumentsFolder": "enabled",
+      "systemPolicyDownloadsFolder": "enabled",
+      "systemPolicyNetworkVolumes": "enabled",
+      "systemPolicyRemovableVolumes": "enabled",
+      "postEvent": "enabled",
+      "appleEventsAllowedReceivers": [
+        {
+          "@odata.type": "microsoft.graph.macOSAppleEventReceiver",
+          "codeRequirement": "Code Requirement value",
+          "identifier": "Identifier value",
+          "identifierType": "path",
+          "allowed": true
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -224,7 +264,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3318
+Content-Length: 4717
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -316,7 +356,46 @@ Content-Length: 3318
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
   "classroomForceUnpromptedAppAndDeviceLock": true,
-  "iCloudBlockActivityContinuation": true
+  "iCloudBlockActivityContinuation": true,
+  "privacyAccessControls": [
+    {
+      "@odata.type": "microsoft.graph.macOSPrivacyAccessControlItem",
+      "displayName": "Display Name value",
+      "identifier": "Identifier value",
+      "identifierType": "path",
+      "codeRequirement": "Code Requirement value",
+      "staticCodeValidation": true,
+      "blockCamera": true,
+      "blockMicrophone": true,
+      "blockScreenCapture": true,
+      "blockListenEvent": true,
+      "speechRecognition": "enabled",
+      "accessibility": "enabled",
+      "addressBook": "enabled",
+      "calendar": "enabled",
+      "reminders": "enabled",
+      "photos": "enabled",
+      "mediaLibrary": "enabled",
+      "fileProviderPresence": "enabled",
+      "systemPolicyAllFiles": "enabled",
+      "systemPolicySystemAdminFiles": "enabled",
+      "systemPolicyDesktopFolder": "enabled",
+      "systemPolicyDocumentsFolder": "enabled",
+      "systemPolicyDownloadsFolder": "enabled",
+      "systemPolicyNetworkVolumes": "enabled",
+      "systemPolicyRemovableVolumes": "enabled",
+      "postEvent": "enabled",
+      "appleEventsAllowedReceivers": [
+        {
+          "@odata.type": "microsoft.graph.macOSAppleEventReceiver",
+          "codeRequirement": "Code Requirement value",
+          "identifier": "Identifier value",
+          "identifierType": "path",
+          "allowed": true
+        }
+      ]
+    }
+  ]
 }
 ```
 

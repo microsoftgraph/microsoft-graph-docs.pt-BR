@@ -2,18 +2,18 @@
 title: Recursos compartilhados no Microsoft Intune-API do Microsoft Graph
 description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) que dão suporte a vários fluxos de trabalho para uma organização de locatário.
 localization_priority: Normal
-author: rolyon
+author: dougeby
 ms.prod: intune
-ms.openlocfilehash: db7746504a7bd31df99941ffc7bc85065eb5d56a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d138f4c92999477054e8fe154c426fd18181037
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527474"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178091"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -27,6 +27,7 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Destino de atribuição de todos os dispositivos](intune-shared-alldevicesassignmenttarget.md)
 - [Destino de atribuição de todos os usuários licenciados](intune-shared-alllicensedusersassignmenttarget.md)
 - [Proteção de aplicativo gerenciado Android](intune-shared-androidmanagedappprotection.md)
+- [Configurações de atribuição de aplicativo repositório gerenciado do Android](intune-shared-androidmanagedstoreappassignmentsettings.md)
 - [Ação do portal da empresa](intune-shared-companyportalaction.md)
 - [Ação bloqueada do portal da empresa](intune-shared-companyportalblockedaction.md)
 - [Status de conformidade](intune-shared-compliancestatus.md)
@@ -84,6 +85,7 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Tipo de conta do token VPP](intune-shared-vpptokenaccounttype.md)
 - [Causa da falha da ação do token VPP](intune-shared-vpptokenactionfailurereason.md)
 - [Configurações de atribuição do aplicativo LOB do Win32](intune-shared-win32lobappassignmentsettings.md)
+- [Prioridade de otimização de entrega do aplicativo LOB Win32](intune-shared-win32lobappdeliveryoptimizationpriority.md)
 - [Notificação de aplicativo LOB do Win32](intune-shared-win32lobappnotification.md)
 - [Configurações de reinicialização de aplicativos LOB do Win32](intune-shared-win32lobapprestartsettings.md)
 - [Configurações de atribuição do aplicativo Windows AppX](intune-shared-windowsappxappassignmentsettings.md)
@@ -91,4 +93,3 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Configuração de ingresso no domínio do Windows](intune-shared-windowsdomainjoinconfiguration.md)
 - [Configurações de atribuição do aplicativo Windows universal AppX](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Estado do Windows Update](intune-shared-windowsupdatestate.md)
-

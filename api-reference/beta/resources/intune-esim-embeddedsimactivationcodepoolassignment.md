@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 96863bafc774389e7d287bc7af9b8b2073b31c72
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dac1496b8a18aad1f3a98478c6241c7de4ad987a
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442802"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179359"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>tipo de recurso embeddedSIMActivationCodePoolAssignment
 
@@ -34,7 +34,7 @@ A entidade de atribuição do pool de código de ativação do SIM incorporado a
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da atribuição do pool de códigos de ativação do SIM incorporado. Valor gerado pelo sistema atribuído quando criado.|
+|id|Cadeia de caracteres|Identificador exclusivo da atribuição do pool de códigos de ativação do SIM incorporado. Valor gerado pelo sistema atribuído quando criado.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O tipo de grupos direcionados pelo pool de códigos de ativação do SIM incorporado.|
 
 ## <a name="relationships"></a>Relações
@@ -53,7 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.embeddedSIMActivationCodePoolAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   }
 }
 ```

@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso intuneBrandingProfileAssignment
 description: Esta entidade contém as propriedades usadas para atribuir um perfil de identidade visual a um grupo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc3e7442202c9d6de3bab5dd19d536a528bdfc85
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0f9565fdbb8d14c904346765d6b5bd3fc4afee5f
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763274"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179282"
 ---
 # <a name="intunebrandingprofileassignment-resource-type"></a>tipo de recurso intuneBrandingProfileAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -32,7 +34,7 @@ Esta entidade contém as propriedades usadas para atribuir um perfil de identida
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da entidade.|
+|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de atribuição ao qual o perfil de identidade visual está atribuído.|
 
 ## <a name="relationships"></a>Relações
@@ -51,7 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.intuneBrandingProfileAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```

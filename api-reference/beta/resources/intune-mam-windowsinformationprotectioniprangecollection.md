@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d991ba74a269b9feaf52d8bdd5bc7ea4b2c65469
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 597a71860053d414b8e31f807da88241d06c4c00
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443683"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175291"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>Tipo de recurso windowsInformationProtectionIPRangeCollection
 
@@ -25,7 +25,7 @@ Coleção de intervalos de IP da Proteção de Informações do Windows
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome de exibição|
+|displayName|Cadeia de caracteres|Nome de exibição|
 |ranges|Coleção [ipRange](../resources/intune-shared-iprange.md)|Coleção de intervalos de IP|
 
 ## <a name="relationships"></a>Relações
@@ -44,9 +44,7 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String",
   "ranges": [
     {
-      "@odata.type": "microsoft.graph.iPv6Range",
-      "lowerAddress": "String",
-      "upperAddress": "String"
+      "@odata.type": "microsoft.graph.ipRange"
     }
   ]
 }

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 597438dc3b6bb2772f2c28bb2a64d84d5fba8d61
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 12e7f8ac2014b5b359a225a84443f7ecb318f745
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382735"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179183"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>tipo de recurso circularGeofenceManagementCondition
 
@@ -38,7 +38,7 @@ Herda de [locationManagementCondition](../resources/intune-fencing-locationmanag
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo da condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|uniqueName|String|Nome exclusivo para a condição de gerenciamento. Usado em expressões de condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|uniqueName|Cadeia de Caracteres|Nome exclusivo para a condição de gerenciamento. Usado em expressões de condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |displayName|Cadeia de caracteres|O nome do administrador definido da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |description|Cadeia de caracteres|A descrição definida pelo administrador da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|A hora em que a condição de gerenciamento foi criada. Lado do serviço gerado. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
@@ -49,7 +49,7 @@ Herda de [locationManagementCondition](../resources/intune-fencing-locationmanag
 |longitude|Double|Longitude em graus, entre-180 e + 180 inclusive.|
 |radiusInMeters|Único|RADIUS em metros.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |managementConditionStatements|coleção [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|As instruções de condição de gerenciamento associadas à condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
@@ -75,9 +75,9 @@ Veja a seguir uma representação JSON do recurso.
   "applicablePlatforms": [
     "String"
   ],
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
+  "latitude": "4.2",
+  "longitude": "4.2",
+  "radiusInMeters": 4.2
 }
 ```
 

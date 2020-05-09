@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14789c8c57b766dae61dfc467514ba6d095b764f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0729ac909dbe11829bdb98c54a2c73fe6c300f1e
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463364"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179345"
 ---
 # <a name="policysetassignment-resource-type"></a>tipo de recurso policySetAssignment
 
@@ -34,7 +34,7 @@ Uma classe que contém as propriedades usadas para atribuição de Policyset.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave do PolicySetAssignment.|
+|id|Cadeia de caracteres|Chave do PolicySetAssignment.|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do PolicySetAssignment.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O grupo de destino de PolicySetAssignment|
 
@@ -55,7 +55,7 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```
