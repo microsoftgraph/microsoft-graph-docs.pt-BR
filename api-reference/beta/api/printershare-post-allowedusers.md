@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8f4e7ce70d8374d1c04cb6d69feaf33b69b5e954
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 3d73fb4066b04bf60b854ea03e9eed43dd2bf003
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43807059"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44216774"
 ---
 # <a name="create-alloweduser"></a>Criar allowedUser
 
@@ -34,7 +34,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /print/printerShares/{id}/allowedUsers/$ref
+POST /print/shares/{id}/allowedUsers/$ref
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição   |
@@ -52,12 +52,14 @@ Se tiver êxito, este método retornará um código de resposta `201 Created`.
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_alloweduser_from_printers"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/print/printerShares/{id}/allowedUsers/$ref
+POST https://graph.microsoft.com/beta/print/shares/{id}/allowedUsers/$ref
 Content-type: application/json
 Content-length: 66
 
@@ -65,7 +67,21 @@ Content-length: 66
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
 }
 ```
-No corpo da solicitação, forneça uma referência a uma entidade de usuário, incluindo o URI do Microsoft Graph do usuário `@odata.id` no campo do corpo JSON.
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-alloweduser-from-printers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-alloweduser-from-printers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-alloweduser-from-printers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+No corpo da solicitação, forneça uma referência a uma entidade de usuário, incluindo o URI do Microsoft Graph do usuário no `@odata.id` campo do corpo JSON.
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 

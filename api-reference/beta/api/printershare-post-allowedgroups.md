@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ce8080503f45a79dae422186ab360bc0e4071dd0
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 22512c6de88d85c09c0924fbc66eef9b760c6ce0
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43807061"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44216802"
 ---
 # <a name="create-allowedgroup"></a>Criar um permitido
 
@@ -34,7 +34,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /print/printerShares/{id}/allowedGroups/$ref
+POST /print/shares/{id}/allowedGroups/$ref
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição   |
@@ -52,12 +52,14 @@ Se tiver êxito, este método retornará um código de resposta `201 Created`.
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_allowedgroup_from_printers"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/print/printerShares/{id}/allowedGroups/$ref
+POST https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups/$ref
 Content-type: application/json
 Content-length: 67
 
@@ -65,6 +67,20 @@ Content-length: 67
   "@odata.id": "https://graph.microsoft.com/beta/groups/{id}"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-allowedgroup-from-printers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-allowedgroup-from-printers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-allowedgroup-from-printers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 No corpo da solicitação, forneça uma referência a uma entidade de grupo incluindo o URI do Microsoft Graph do grupo no `@odata.id` campo do corpo JSON.
 

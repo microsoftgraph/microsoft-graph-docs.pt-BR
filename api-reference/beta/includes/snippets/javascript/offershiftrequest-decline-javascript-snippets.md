@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: cfad483304b98789a5e2d3369cc7dc6569f0a82c
-ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
+ms.openlocfilehash: 4a0bf6f8a7faf1273e25bf7ce3bdd8f2efb25608
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40994927"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44216984"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const decline = {
   message: "Sorry, you can't offer this shift."
 };
 
-let res = await client.api('/teams/schedule/offerShiftRequests/decline')
+let res = await client.api('/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline')
     .version('beta')
     .post(decline);
 

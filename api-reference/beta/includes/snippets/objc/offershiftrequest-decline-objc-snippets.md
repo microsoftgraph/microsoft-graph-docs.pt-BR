@@ -1,24 +1,24 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 90835de76b4f000adf9ba055df80d817b65947e4
+ms.openlocfilehash: 9fc296fe70b8ee307eabc33a49946922c3e551c6
 ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217133"
+ms.locfileid: "44216998"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/approve"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-NSString *message = @"message-value";
+NSString *message = @"Sorry, you can't offer this shift.";
 payloadDictionary[@"message"] = message;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

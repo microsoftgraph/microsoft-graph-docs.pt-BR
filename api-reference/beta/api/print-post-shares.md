@@ -1,24 +1,24 @@
 ---
-title: Obter printerShare
-description: Recupere as propriedades e os relacionamentos de um compartilhamento de impressora.
+title: Criar printerShare
+description: Cria um novo compartilhamento de impressora para a impressora especificada.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: befd85b96c6c1df3e4ac957a19cb6b92126d1bcc
+ms.openlocfilehash: 88f9610115d30a026b54aadab9b35fd047a8ab21
 ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44216879"
+ms.locfileid: "44216949"
 ---
-# <a name="get-printershare"></a>Obter printerShare
+# <a name="create-printershare"></a>Criar printerShare
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um compartilhamento de impressora.
+Criar um novo **printerShare** para a [impressora](../resources/printer.md)especificada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -34,25 +34,24 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/shares/{id}
-GET /print/printers/{id}/share
+POST /print/shares
 ```
-
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
-
-### <a name="exceptions"></a>Exceções
-* `$count`Não há suporte para o operador.
-
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome      |Descrição|
-|:----------|:----------|
+| Nome          | Descrição   |
+|:--------------|:--------------|
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type  | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+No corpo da solicitação, forneça uma representação JSON do objeto [printerShare](../resources/printershare.md) .
+
+As propriedades **ID** e **createdDateTime** do compartilhamento da impressora são definidas automaticamente na criação de recursos, mas o nome do compartilhamento e a impressora associada devem ser incluídos na solicitação.
+
+A referência da impressora é definida usando `@odata.bind` a sintaxe, conforme mostrado no exemplo.
+
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [printerShare](../resources/printershare.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [printerShare](../resources/printershare.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -60,21 +59,28 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_printershare"
+  "name": "create_printershare_from_print"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/shares/{id}
+```http
+POST https://graph.microsoft.com/beta/print/shares
+Content-type: application/json
+Content-length: 114
+
+{
+  "name": "name-value",
+  "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}"
+}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-printershare-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printershare-from-print-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-printershare-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printershare-from-print-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-printershare-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printershare-from-print-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -88,15 +94,15 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.printerShare"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 225
+Content-length: 233
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
-  "id": "d837c17b-3296-4384-a053-828d56e10f50",
-  "name": "ShareName",
-  "createdDateTime": "2020-02-04T00:00:00.0000000Z"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
+    "id": "7361c7c1-ff07-4565-9897-bef6895a7d04",
+    "name": "ShareName",
+    "createdDateTime": "2020-02-04T00:00:00.0000000Z"
 }
 ```
 
@@ -104,7 +110,7 @@ Content-length: 225
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get printerShare",
+  "description": "Create printerShare",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 78d81fe559d40f6d1244c4ea1c281d48a4337cde
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 0f890a5311321a100d32419dfaa9515c714c6030
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947690"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44216914"
 ---
 # <a name="delete-printershare"></a>Excluir printerShare
 
@@ -29,12 +29,12 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Users. Read. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Application|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /print/printerShares/{id}
+DELETE /print/shares/{id}
 DELETE /print/printers/{id}/share
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -58,7 +58,7 @@ Este é um exemplo de solicitação.
   "name": "delete_printershare"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/printerShares/{id}
+DELETE https://graph.microsoft.com/beta/print/shares/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-printershare-csharp-snippets.md)]

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 6688f36aef36fa8efc00bf2458911ca719f697cc
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: ce7bf6140b831c3e911ebb744106840ae8e027a8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917583"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44217077"
 ---
 # <a name="printer-resource-type"></a>tipo de recurso de impressora
 
@@ -43,22 +43,21 @@ Representa um dispositivo de impressora física que foi registrado com o serviç
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|String|O identificador do documento. Somente leitura.|
-|name|String|O nome da impressora.|
+|displayName|Cadeia de caracteres|O nome da impressora.|
 |fabricante|String|O fabricante relatado pela impressora. Somente leitura.|
 |modelo|String|O nome do modelo relatado pela impressora. Somente leitura.|
-|registeredBy|[printUserIdentity](printuseridentity.md)|O usuário que registrou a impressora.|
 |registeredDateTime|DateTimeOffset|O DateTimeOffset quando a impressora foi registrada. Somente leitura.|
 |status|[printerStatus](printerstatus.md)|O status de processamento da impressora, incluindo erros. Somente leitura.|
 |isShared|Booliano|True se a impressora é compartilhada; caso contrário, false. Somente leitura.|
-|acceptingJobs|Boolean|Se a impressora está atualmente aceitando novos trabalhos de impressão.|
+|isAcceptingJobs|Boolean|Se a impressora está atualmente aceitando novos trabalhos de impressão.|
 |location|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora.|
 |padrões|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão da impressora.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|serviços|coleção [printJob](printjob.md)| A lista de trabalhos que estão na fila para impressão pela impressora. Somente leitura. Anulável.|
-|shares|[printerShare](printershare.md)| O printerShare associado à impressora. Somente leitura. Anulável.|
+|serviços|coleção [printJob](printjob.md)| A lista de trabalhos que estão na fila para impressão pela impressora.|
+|shares|coleção [printerShare](printershare.md)| A lista de printerShares que estão associados à impressora. Somente leitura. Anulável.|
 |conectores|[separador de Hiperligação](printconnector.md)|Os conectores associados à impressora.|
 |allowedUsers|coleção [printUserIdentity](printuseridentity.md)|Os usuários que têm acesso à impressão usando a impressora.|
 |allowedGroups|[multiidentity](printidentity.md)|Os grupos cujos usuários têm acesso para imprimir usando a impressora.|

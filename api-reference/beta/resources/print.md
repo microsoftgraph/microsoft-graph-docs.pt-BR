@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 3ef5c05be520bb407f17d0af14bbd4355e736c62
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: b0af3f7443b77920804f5868fe9ecc3f8b4cec41
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895510"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44217084"
 ---
 # <a name="print-resource-type"></a>tipo de recurso Print
 
@@ -25,9 +25,9 @@ Quando acompanhada por uma assinatura de impressão universal, o recurso de impr
 |:-------------|:------------|:------------|
 | [Conectores de lista](../api/print-list-connectors.md) | coleção [Multiconnector](printconnector.md) | Obtenha uma lista de conectores de impressão. |
 | [Listar impressoras](../api/print-list-printers.md) | coleção de [impressoras](printer.md) | Obter uma lista de impressoras. |
-| [Listar printerShares](../api/print-list-printershares.md) | coleção [printerShare](printershare.md) | Obter uma lista de compartilhamentos de impressora. |
+| [Lista de compartilhamentos](../api/print-list-shares.md) | coleção [printerShare](printershare.md) | Obter uma lista de compartilhamentos de impressora. |
 | [Listar serviços](../api/print-list-services.md) | coleção de [serviços de multiserviço](printservice.md) | Obtenha uma lista de serviços. |
-| [Criar printerShare](../api/print-post-printershares.md) | [printerShare](printershare.md) | Crie um novo compartilhamento de impressora postando na coleção **printerShares** . |
+| [Criar printerShare](../api/print-post-shares.md) | [printerShare](printershare.md) | Crie um novo compartilhamento de impressora postando na coleção de **compartilhamentos** . |
 | [Atualizar configurações](../api/print-update-settings.md) |  [printSettings](printsettings.md) | Atualiza as configurações de todos os locatários para o serviço de impressão universal. |
 
 ## <a name="properties"></a>Propriedades
@@ -35,12 +35,12 @@ Quando acompanhada por uma assinatura de impressão universal, o recurso de impr
 |:-------------|:------------|:------------|
 |configurações|[printSettings](printsettings.md)|Configurações de todo o locatário para o serviço de impressão universal.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |serviço|coleção de [serviços de multiserviço](printservice.md)|A lista de pontos de extremidade do serviço de impressão Universal disponível.|
 |impressoras|coleção de [impressoras](printer.md)|A lista de impressoras registradas no locatário.|
-|printerShares|coleção de coleção [printerShare](printershare.md)|A lista de compartilhamentos de impressora registrados no locatário.|
+|shares|coleção [printerShare](printershare.md)|A lista de compartilhamentos de impressora registrados no locatário.|
 
 ## <a name="json-representation"></a>Representação JSON
 

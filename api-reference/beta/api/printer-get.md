@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8d825808bc7f6af0101c0cd966759f861ee77cef
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: ae3a930153cd919fb21e54fade8e9b11fa6a1c70
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062116"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44216921"
 ---
 # <a name="get-printer"></a>Obter impressora
 
@@ -29,13 +29,13 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Users. Read. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Application|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/printers/{id}
-GET /print/printerShares/{id}/printer
+GET /print/shares/{id}/printer
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
