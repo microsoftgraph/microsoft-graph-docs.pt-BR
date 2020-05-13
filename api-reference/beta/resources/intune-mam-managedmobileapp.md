@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
 ms.openlocfilehash: 823f3e044d3235d018725a2e08230526b78f7ca9
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "44174227"
 ---
 # <a name="managedmobileapp-resource-type"></a>Tipo de recurso managedMobileApp
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 O identificador da implantação de um aplicativo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedMobileApps](../api/intune-mam-managedmobileapp-list.md)|Conjunto [managedMobileApp](../resources/intune-mam-managedmobileapp.md)|Listar propriedades e relações de objetos de [managedMobileApp](../resources/intune-mam-managedmobileapp.md).|
@@ -35,7 +35,7 @@ O identificador da implantação de um aplicativo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador de um aplicativo com seu tipo de sistema operacional.|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações

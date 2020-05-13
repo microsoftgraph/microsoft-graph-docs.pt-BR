@@ -1,24 +1,24 @@
 ---
 title: Criar schedulingGroup
-description: Criar um novo.
+description: Criar um nov schedulingGroup.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: b394515e8f69b49f42f9fb517b3077a2fb1d8ee3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "42453825"
 ---
 # <a name="create-schedulinggroup"></a>Criar schedulingGroup
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar [um novo.](../resources/schedulinggroup.md)
+Criar um nov [schedulingGroup](../resources/schedulinggroup.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,11 +28,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo |Schedule. ReadWrite. All * |
+|Application |Schedule. ReadWrite. All * |
 
 >\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/schedulingGroups
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto de forma de [plano](../resources/schedulinggroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto de forma de [plano](../resources/schedulinggroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -6,10 +6,10 @@ author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 000a8ae7c91b0d5c2b896615cc1e60ba2b360aed
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "44153496"
 ---
 # <a name="update-openshift"></a>Atualizar openShift
@@ -52,12 +52,12 @@ Forneça o objeto [openshift](../resources/openshift.md) modificado no corpo da 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |draftOpenShift|openShiftItem|Um turno aberto não publicado.|
-|schedulingGroupId|Cadeia de caracteres| ID do grupo de agendamento. |
+|schedulingGroupId|String| ID do grupo de agendamento. |
 |sharedOpenShift|openShiftItem|Um turno aberto publicado.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [openShift](../resources/openshift.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [openShift](../resources/openshift.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

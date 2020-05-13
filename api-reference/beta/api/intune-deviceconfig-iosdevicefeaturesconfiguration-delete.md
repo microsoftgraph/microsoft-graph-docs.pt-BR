@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
 ms.openlocfilehash: 3176812708022cc809f44bf14e989103f2ea2a46
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43432775"
 ---
 # <a name="delete-iosdevicefeaturesconfiguration"></a>Excluir iosDeviceFeaturesConfiguration
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

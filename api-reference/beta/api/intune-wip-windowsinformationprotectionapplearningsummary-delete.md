@@ -1,18 +1,20 @@
 ---
 title: Excluir windowsInformationProtectionAppLearningSummary
 description: Exclui windowsInformationProtectionAppLearningSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: feb9090e6982fd53a8952939e94cf9ebac1ee36d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9ffe445da1d6770777dc6d778e8b8ed833964651
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799650"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43451974"
 ---
 # <a name="delete-windowsinformationprotectionapplearningsummary"></a>Excluir windowsInformationProtectionAppLearningSummary
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -63,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

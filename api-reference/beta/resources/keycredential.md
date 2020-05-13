@@ -6,10 +6,10 @@ doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
 ms.openlocfilehash: 983cc4c9cbd19cd7f0b4261f28a00e8e020cefe9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43401709"
 ---
 # <a name="keycredential-resource-type"></a>tipo de recurso keycredential

@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
 ms.openlocfilehash: 0066e7a64cd63425352787b5bcc33bfc32fe8342
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43386459"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>tipo de enumeração edgeCookiePolicy
@@ -26,9 +26,9 @@ Valores possíveis para especificar quais cookies são permitidos no Microsoft E
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Permite que o usuário defina.|
-|permitiu|1|Permitiu.|
-|blockThirdParty|duas|Bloquear somente cookies de terceiros.|
-|blockAll|3D|Bloquear todos os cookies.|
+|permitiu|1 |Permitiu.|
+|blockThirdParty|2 |Bloquear somente cookies de terceiros.|
+|blockAll|3 |Bloquear todos os cookies.|
 
 
 

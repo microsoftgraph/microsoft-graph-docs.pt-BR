@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b0028c76b9c3f83b7277b3cf229bb4105a51b105
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3db487f3b8583c0fc25ab5ef834d1e10479c0d35
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43368121"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43510595"
 ---
 # <a name="administrativeunit-delta"></a>administrativeUnit: Delta
 
@@ -46,7 +46,7 @@ As alterações de controle provocam uma rodada de uma ou mais chamadas de funç
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
+| $deltatoken | cadeia de caracteres | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `nextLink` URL da chamada de função **Delta** anterior, indicando que há mais alterações a serem controladas na mesma coleção de recursos. |
 
 ### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -56,7 +56,7 @@ Este método suporta os seguintes parâmetros de consulta OData para ajudar a pe
 - Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade **id** sempre será retornada. 
 
 - Há suporte limitado para `$filter`:
-  * A única expressão `$filter` suportada é para controlar alterações de recursos específicos, por sua `$filter=id+eq+{value}` ID `$filter=id+eq+{value1}+or+id+eq+{value2}`: ou. O número de IDs que você pode especificar é limitado pelo tamanho máximo de URL.
+  * A única expressão suportada `$filter` é para controlar alterações de recursos específicos, por sua ID: `$filter=id+eq+{value}` ou `$filter=id+eq+{value1}+or+id+eq+{value2}` . O número de IDs que você pode especificar é limitado pelo tamanho máximo de URL.
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -69,17 +69,19 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e um objeto da coleção [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou `deltaLink`. 
+Se bem-sucedido, este método retorna o `200 OK` código de resposta e um objeto da coleção [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou `deltaLink`. 
 
-- Se uma URL `nextLink` é retornada, existem páginas de dado adicionais a serem recuperadas na sessão. O **administrativeUnit** continua fazendo solicitações usando a `nextLink` URL até que `deltaLink` uma URL seja incluída na resposta.
+- Se uma URL `nextLink` é retornada, existem páginas de dado adicionais a serem recuperadas na sessão. O **administrativeUnit** continua fazendo solicitações usando a `nextLink` URL até que uma `deltaLink` URL seja incluída na resposta.
 
-- Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Persista e use `deltaLink` a URL para saber mais sobre as alterações no recurso no futuro.
+- Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Persista e use a `deltaLink` URL para saber mais sobre as alterações no recurso no futuro.
 
 Para obter detalhes e um exemplo, consulte [usando a consulta Delta](/graph/delta-query-overview) e [obter as alterações incrementais para usuários](/graph/delta-query-users).
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "administrativeunit_delta"
@@ -87,6 +89,20 @@ Para obter detalhes e um exemplo, consulte [usando a consulta Delta](/graph/delt
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeunits/delta
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/administrativeunit-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/administrativeunit-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/administrativeunit-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.

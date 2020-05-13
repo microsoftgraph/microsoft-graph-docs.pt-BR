@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 4daff04db42782a5d9b611d454a5cfb2c12953b1
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43180099"
 ---
 # <a name="domain-forcedelete"></a>domínio: forceDelete
@@ -43,7 +43,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Domain.ReadWrite.All |
+|Application | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -67,7 +67,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Booliano| Opção para desabilitar contas de usuário renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não terá permissão para entrar.<br>*True* (padrão): as contas de usuário renomeadas como parte desta operação estão desabilitadas.<br>*False* -as contas de usuário renomeadas como parte dessa operação não estão desabilitadas. |
+|disableUserAccounts|Boolean| Opção para desabilitar contas de usuário renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não terá permissão para entrar.<br>*True* (padrão): as contas de usuário renomeadas como parte desta operação estão desabilitadas.<br>*False* -as contas de usuário renomeadas como parte dessa operação não estão desabilitadas. |
 
 ## <a name="response"></a>Resposta
 

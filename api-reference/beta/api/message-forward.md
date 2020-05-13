@@ -6,10 +6,10 @@ author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: 42ffb7b50c672fe3daa80f6b64b6ef963f96ddf5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43448581"
 ---
 # <a name="message-forward"></a>message: forward

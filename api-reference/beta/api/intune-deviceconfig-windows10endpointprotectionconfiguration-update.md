@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
 ms.openlocfilehash: 19593b4e70b839513c305c153324c868f4adcc1d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43431193"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>Atualizar windows10EndpointProtectionConfiguration
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -209,7 +209,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |defenderEmailContentExecution|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|O valor que indica se a execução do conteúdo executável (exe, dll, PS, js, vbs, etc.) deve ser cancelada de email (webmail/email). Os valores possíveis são: `userDefined`, `enable`, `auditMode`.|
 |defenderAdvancedRansomewareProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|O valor que indica o uso da proteção avançada contra o Ransomeware. Os valores possíveis são: `userDefined`, `enable`, `auditMode`.|
 |defenderGuardMyFoldersType|[folderProtectionType](../resources/intune-deviceconfig-folderprotectiontype.md)|Valor que indica o comportamento das pastas protegidas. Os valores possíveis são: `userDefined`, `enable`, `auditMode`, `blockDiskModification`, `auditDiskModification`.|
-|defenderGuardedFoldersAllowedAppPaths|Coleção String|Lista de caminhos para execução com permissão para acessar as pastas protegidas|
+|defenderGuardedFoldersAllowedAppPaths|Conjunto de cadeias de caracteres|Lista de caminhos para execução com permissão para acessar as pastas protegidas|
 |defenderAdditionalGuardedFolders|String collection|Lista de caminhos de pasta a serem adicionados à lista de pastas protegidas|
 |defenderNetworkProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Valor que indica o comportamento de NetworkProtection. Os valores possíveis são: `userDefined`, `enable`, `auditMode`.|
 |defenderExploitProtectionXml|Binária|Conteúdo XML com informações sobre a proteção contra vulnerabilidades.|
@@ -276,8 +276,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |defenderDisableCatchupFullScan|Boolean|Essa configuração de política permite configurar verificações de atualização para verificações completas agendadas. Uma verificação de atualização é uma verificação iniciada porque uma verificação agendada regularmente foi perdida. Normalmente, essas verificações agendadas são perdidas porque o computador foi desligado no horário agendado.|
 |defenderDisableCatchupQuickScan|Boolean|Essa configuração de política permite que você configure verificações de atualização para verificações rápidas agendadas. Uma verificação de atualização é uma verificação iniciada porque uma verificação agendada regularmente foi perdida. Normalmente, essas verificações agendadas são perdidas porque o computador foi desligado no horário agendado.|
 |defenderEnableLowCpuPriority|Boolean|Essa configuração de política permite habilitar ou desabilitar a baixa prioridade de CPU para verificações agendadas.|
-|defenderFileExtensionsToExclude|Coleção String|Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real.|
-|defenderFilesAndFoldersToExclude|Coleção String|Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real.|
+|defenderFileExtensionsToExclude|Conjunto de cadeias de caracteres|Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real.|
+|defenderFilesAndFoldersToExclude|Conjunto de cadeias de caracteres|Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real.|
 |defenderProcessesToExclude|String collection|Processos a serem excluídos das verificações e da proteção em tempo real.|
 |defenderPotentiallyUnwantedAppAction|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Adicionado no Windows 10, versão 1607. Especifica o nível de detecção para aplicativos potencialmente indesejados (PUAs). O Windows Defender alerta você quando um software potencialmente indesejado está sendo baixado ou tenta se instalar em seu computador. Os valores possíveis são: `userDefined`, `enable`, `auditMode`.|
 |defenderScanDirection|[defenderRealtimeScanDirection](../resources/intune-deviceconfig-defenderrealtimescandirection.md)|Controla quais conjuntos de arquivos devem ser monitorados. Os valores possíveis são: `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|

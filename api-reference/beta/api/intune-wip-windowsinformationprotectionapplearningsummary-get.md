@@ -1,18 +1,20 @@
 ---
 title: Obter windowsInformationProtectionAppLearningSummary
 description: Ler propriedades e relações do objeto windowsInformationProtectionAppLearningSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 02f29b51244be8b9cad274632420528af78d79c2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ad59288d350497c9539b94568d7e92dd72aee2f2
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799643"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43451957"
 ---
 # <a name="get-windowsinformationprotectionapplearningsummary"></a>Obter windowsInformationProtectionAppLearningSummary
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -78,7 +80,6 @@ Content-Length: 269
   }
 }
 ```
-
 
 
 

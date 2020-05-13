@@ -6,15 +6,15 @@ author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: 47edf467e3c66313a33f238497b5e9b917edd382
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "42451977"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

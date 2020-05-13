@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 3ae8bdff435d9b4c87749a443ba16004d1f8a2a8
+ms.openlocfilehash: c31acd02c2be4c4db9f1f5e3f96e7721f490c39a
 ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "35718074"
+ms.locfileid: "43510594"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}')
+let res = await client.api('/administrativeunits/delta')
     .version('beta')
     .get();
 

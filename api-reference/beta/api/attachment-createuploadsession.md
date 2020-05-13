@@ -6,10 +6,10 @@ author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: ba0ba2190f676d6c8965e2f412c003c59cd5fe5d
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43991709"
 ---
 # <a name="attachment-createuploadsession"></a>Anexo: createUploadSession
@@ -22,7 +22,7 @@ Criar uma sessão de carregamento que permite que um aplicativo carregue interva
 
 Use essa abordagem para anexar um arquivo se o tamanho do arquivo estiver entre 3 MB e 150 MB. Para anexar um arquivo menor que 3 MB, execute uma `POST` operação na propriedade de navegação **Attachments** do item do Outlook; Veja como fazer isso [para uma mensagem](message-post-attachments.md) ou [para um evento](event-post-attachments.md). 
 
-Como parte da resposta, esta ação retorna uma URL de upload que você pode usar em consultas sequenciais `PUT` subsequentes. Os cabeçalhos de solicitação `PUT` para cada operação permitem que você especifique o intervalo exato de bytes a serem carregados. Isso permite que a transferência seja retomada, caso a conexão de rede seja interrompida durante o carregamento. 
+Como parte da resposta, esta ação retorna uma URL de upload que você pode usar em consultas sequenciais subsequentes `PUT` . Os cabeçalhos de solicitação para cada `PUT` operação permitem que você especifique o intervalo exato de bytes a serem carregados. Isso permite que a transferência seja retomada, caso a conexão de rede seja interrompida durante o carregamento. 
 
 A seguir estão as etapas para anexar um arquivo a um item do Outlook usando uma sessão de carregamento:
 
@@ -79,17 +79,17 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|Representa os atributos do item a ser carregado e anexado. Especifique, no mínimo, o tipo de`file`anexo (), um nome e o tamanho do arquivo.|
+|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|Representa os atributos do item a ser carregado e anexado. Especifique, no mínimo, o tipo de anexo ( `file` ), um nome e o tamanho do arquivo.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [uploadSession](../resources/uploadsession.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [uploadSession](../resources/uploadsession.md) no corpo da resposta.
 
 >**Observação**: 
 >
->A propriedade **uploadUrl** retornada como parte do objeto de resposta **UPLOADSESSION** é uma URL opaca para consultas `PUT` subsequentes para carregar intervalos de bytes do arquivo. Ele contém o token de autenticação apropriado para `PUT` consultas subsequentes que expiram pelo **expirationDateTime**. Não Personalize esta URL.
+>A propriedade **uploadUrl** retornada como parte do objeto de resposta **UPLOADSESSION** é uma URL opaca para consultas subsequentes `PUT` para carregar intervalos de bytes do arquivo. Ele contém o token de autenticação apropriado para `PUT` consultas subsequentes que expiram pelo **expirationDateTime**. Não Personalize esta URL.
 >
->A propriedade **nextExpectedRanges** especifica o próximo local de byte de arquivo para carregar, por exemplo `"NextExpectedRanges":["2097152"]`,. Você deve carregar os bytes em um arquivo na ordem.
+>A propriedade **nextExpectedRanges** especifica o próximo local de byte de arquivo para carregar, por exemplo, `"NextExpectedRanges":["2097152"]` . Você deve carregar os bytes em um arquivo na ordem.
 
 <!-- The **nextExpectedRanges** property specifies one or more ranges of bytes that the server is still missing for the file. These ranges are zero-indexed and of the format `{start}-{end}`, unless if the server misses the remainder of the bytes from the start of that range, in which case the format is simply `{start}`.  -->
 
