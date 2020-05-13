@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: fee56dc24fc193987e4b13622c2539c62ce846e2
-ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
+ms.openlocfilehash: c8e6eab6d9853e3bb930701c28dbae4a08ce833a
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995358"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44219196"
 ---
 ```javascript
 
@@ -37,7 +37,7 @@ displayName: "Lunch"
 draftOpenShift: null
 };
 
-let res = await client.api('/teams/{id}/schedule/openShifts/{openShiftId}')
+let res = await client.api('/teams/{id}/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8')
     .version('beta')
     .put(openShift);
 
