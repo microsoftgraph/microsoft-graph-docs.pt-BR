@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: cfdb2afe0a1d9747817fb57e205ec4353249288c
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 51a768ea7d6e183256fe74e110dc8f3b1f6d6efd
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870512"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44219202"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Teamwork.WorkforceIntegrations
+await graphClient.Teamwork.WorkforceIntegrations["{workforceIntegrationId}"]
     .Request()
     .DeleteAsync();
 
