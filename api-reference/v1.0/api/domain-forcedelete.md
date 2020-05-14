@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a9219a6e49cc0c0ddc223ea1d9dd108903a21cd0
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 60f81e459ceab6b9c33271a58fc24f884e559c29
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228828"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43511049"
 ---
 # <a name="force-domain-deletion"></a>Forçar exclusão de domínio
 
@@ -20,7 +20,7 @@ Exclui um domínio usando uma operação assíncrona de execução longa.
 
 As ações a seguir são executadas como parte desta operação:
 
-* Atualiza as `userPrincipalName`propriedades `mail`, e `proxyAddresses` de `users` com referências para o domínio excluído para usar o domínio onmicrosoft.com inicial.
+* Atualiza as `userPrincipalName` `mail` Propriedades, e `proxyAddresses` de `users` com referências para o domínio excluído para usar o domínio onmicrosoft.com inicial.
 
 * Atualiza a `mail` propriedade de `groups` com referências ao domínio excluído para usar o domínio onmicrosoft.com inicial.
 
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Domain.ReadWrite.All |
+|Application | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -65,11 +65,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|`disableUserAccounts`|`Boolean`| Opção para desabilitar as contas de usuário que são renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não terá permissão para entrar. Se definido como **true** , `users` a parte atualizada como parte dessa operação será desabilitada.  O valor padrão é **true**. |
+|`disableUserAccounts`|`Boolean`| Opção para desabilitar as contas de usuário que são renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não terá permissão para entrar. Se definido como **true** `users` , a parte atualizada como parte dessa operação será desabilitada.  O valor padrão é **true**. |
 
 ## <a name="response-body"></a>Corpo da resposta
 
-Se bem-sucedido, este método retorna `HTTP/1.1 204 OK` o código de status.
+Se bem-sucedido, este método retorna o `HTTP/1.1 204 OK` código de status.
 
 ## <a name="example"></a>Exemplo
 
@@ -101,6 +101,10 @@ Content-length: 33
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/domain-forcedelete-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/domain-forcedelete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

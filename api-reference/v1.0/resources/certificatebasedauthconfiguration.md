@@ -2,15 +2,15 @@
 title: tipo de recurso certificateBasedAuthConfiguration
 description: Representa uma coleção de autoridades de certificação.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 908a648add1d3e3ea2da4a90fe0f13d2e561ee17
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0271a75b96061e2797403ed92917fdb17ded9e18
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531942"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43181130"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>tipo de recurso certificateBasedAuthConfiguration
 

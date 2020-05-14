@@ -1,16 +1,16 @@
 ---
 title: Atualizar iosLobApp
 description: Atualiza as propriedades de um objeto iosLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4609d5c967bfb6b8a65047d5f3c4af871e1f546b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9672865110dc7522398d0e5c24171d521e3ca953
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516592"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43443607"
 ---
 # <a name="update-ioslobapp"></a>Atualizar iosLobApp
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -180,6 +180,8 @@ Content-Length: 1401
   "buildNumber": "Build Number value"
 }
 ```
+
+
 
 
 

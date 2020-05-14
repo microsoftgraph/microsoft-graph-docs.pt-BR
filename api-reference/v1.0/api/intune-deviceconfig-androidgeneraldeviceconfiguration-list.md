@@ -1,16 +1,16 @@
 ---
 title: Listar androidGeneralDeviceConfigurations
 description: Listar propriedades e relações dos objetos androidGeneralDeviceConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 188d69acc6ea791f99b5333b96dd643b5081ab96
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 884aeb5b0b37c3f1d2899adf51bf58948387a6d6
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515305"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43470632"
 ---
 # <a name="list-androidgeneraldeviceconfigurations"></a>Listar androidGeneralDeviceConfigurations
 
@@ -167,6 +167,8 @@ Content-Length: 3618
   ]
 }
 ```
+
+
 
 
 

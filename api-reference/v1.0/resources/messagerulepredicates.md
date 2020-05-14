@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso messageRulePredicates
 description: Representa o conjunto de condições e exceções disponíveis para uma regra.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d40763e53aef06209818476314bca76ad2ba1293
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 98481d80f76d1dffd5c15faf7315aaf2c8dfb8b8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534230"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43452607"
 ---
 # <a name="messagerulepredicates-resource-type"></a>Tipo de recurso messageRulePredicates
 
@@ -40,7 +40,7 @@ Representa o conjunto de condições e exceções disponíveis para uma regra.
 | isReadReceipt | Booliano | Indica se uma mensagem de entrada deve ser uma confirmação de leitura para que a exceção ou condição seja aplicada. |
 | isSigned | Booliano | Indica se uma mensagem de entrada deve ser assinada por S/MIME para que a exceção ou condição seja aplicada. |
 | isVoicemail | Booliano | Indica se uma mensagem de entrada deve ser uma caixa postal para que a exceção ou condição seja aplicada. |
-| messageActionFlag | messageActionFlag  | Representa o valor do sinalizador de ações que é exibido em uma mensagem de entrada para que a exceção ou condição seja aplicada. Os valores possíveis são: `any`, `call`, `doNotForward`, `followUp`, `fyi`, `forward`, `noResponseNecessary`, `read`, `reply`, `replyToAll`, `review`. |
+| messageActionFlag | messageActionFlag  | Representa o valor do sinalizador de ações que é exibido em uma mensagem de entrada para que a exceção ou condição seja aplicada. Os valores possíveis são: `any` , `call` , `doNotForward` , `followUp` , `fyi` , `forward` , `noResponseNecessary` , `read` , `reply` , `replyToAll` , `review` . |
 | notSentToMe | Booliano | Indica se o proprietário da caixa de correio não deve ser um destinatário de uma mensagem de entrada para que a condição ou exceção seja aplicada. |
 | recipientContains | Collection(String) | Representa as cadeias de caracteres que são exibidas nas propriedades **toRecipients** ou **ccRecipients** de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
 | senderContains | Collection(String) | Representa as cadeias de caracteres que são exibidas na propriedade **from** de uma mensagem de entrada para que a exceção ou condição seja aplicada. |

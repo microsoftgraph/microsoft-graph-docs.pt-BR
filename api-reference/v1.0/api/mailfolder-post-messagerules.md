@@ -1,16 +1,16 @@
 ---
 title: Criar regra
 description: 'Crie um objeto messageRule especificando um conjunto de condições e ações. '
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1f20f341fd12b13aed023aca3a3947b0fdbf0648
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9525480d123aa2689ed2ae05b3766d35aa4aec53
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511604"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43361967"
 ---
 # <a name="create-rule"></a>Criar regra
 
@@ -46,7 +46,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os parâmetros que são aplicáveis à sua regra. A seguir estão os parâmetros de corpo que normalmente são usados ao criar regras. É possível especificar outras propriedades **messageRule** graváveis conforme apropriado no corpo da solicitação.
 
-| Name       | Tipo|Descrição|
+| Nome       | Tipo|Descrição|
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|Ações a serem realizadas em uma mensagem quando as condições correspondentes, se houver, forem atendidas. Obrigatório.|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Condições que, quando atendidas, acionarão as ações correspondentes dessa regra. Opcional.|

@@ -1,16 +1,16 @@
 ---
 author: learafa
-description: Listar os sites que foram seguidos pelo usuário conectado.
+description: Liste os sites que foram seguidos pelo usuário conectado.
 title: Listar sites seguidos
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: 750c69af83ffbd95d29385d6e97d0ea2a40e5d9d
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: c08def6b72869cdc1886a71d1083dfdef51dbebd
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934910"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44052313"
 ---
 # <a name="list-followed-sites"></a>Listar sites seguidos
 
@@ -60,11 +60,23 @@ Se nenhum site for encontrado, uma coleção vazia será retornada.
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
 ```msgraph-interactive
 POST /me/followedSites
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-analytics-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->

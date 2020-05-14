@@ -1,16 +1,16 @@
 ---
 title: Criar resourceOperation
 description: Criar um novo objeto resourceOperation.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2867071b7b017b1e5d61aeb4205771fb99372b80
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 38d3822bcc48312a8e7b5093b889cdd308dceedf
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512283"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43452614"
 ---
 # <a name="create-resourceoperation"></a>Criar resourceOperation
 
@@ -93,6 +93,8 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
+
+
 
 
 

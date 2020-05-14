@@ -2,15 +2,15 @@
 title: Tipo de recurso subscribedSku
 description: Contém informações sobre um serviço SKU assinado por uma empresa.
 localization_priority: Normal
-author: davidmu1
+author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b7f1d532c88b3b289e0d337236843fada7c0dd2e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb9933ddc93ca647bca1427d3401cb912662ab2c
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533608"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43384937"
 ---
 # <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
 

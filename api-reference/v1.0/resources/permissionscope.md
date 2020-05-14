@@ -4,17 +4,17 @@ description: Representa um escopo de permissão delegada do OAuth 2,0.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: bdc022f82f2e0dc7a1277d2674f215b58d521679
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: psignoret
+ms.openlocfilehash: c10e23790425785adc78c184db42df78f1aa7858
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447210"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43406588"
 ---
 # <a name="permissionscope-resource-type"></a>tipo de recurso permissionScope
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Representa um escopo de permissão delegada do OAuth 2,0. Os escopos de permissão delegada do OAuth 2,0 especificado podem ser solicitados por aplicativos cliente (por meio da coleção **requiredResourceAccess** no objeto [Application](application.md) ) ao chamar um aplicativo de recurso. A propriedade **oauth2Permissions** <!-- of the [servicePrincipal](serviceprincipal.md) entity and --> a entidade do [aplicativo](application.md) é uma coleção de **permissionScope**.
 

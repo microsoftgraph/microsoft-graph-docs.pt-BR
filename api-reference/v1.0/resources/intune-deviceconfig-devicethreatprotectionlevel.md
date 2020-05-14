@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração deviceThreatProtectionLevel
 description: Níveis de proteção contra ameaças de dispositivos para a API de proteção contra ameaças de dispositivos.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 12bf8aad0e6aed54a4bb991052201997e2872da3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 69398df9bd84b9a0cd965fc26aaddee57cde174b
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530753"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43465700"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>tipo de enumeração deviceThreatProtectionLevel
 
@@ -29,6 +29,9 @@ Níveis de proteção contra ameaças de dispositivos para a API de proteção c
 |medium|3 |Requisito de nível de proteção contra ameaças de dispositivos: médio. Médio representa uma severidade de ameaça que representa o risco moderado para os dados do dispositivo ou dispositivo.|
 |high|4 |Requisito de nível de proteção contra ameaças de dispositivos: alto. High representa uma severidade de ameaça que representa sérios riscos nos dados do dispositivo ou dispositivo.|
 |notSet|10 |Requisito de nível de proteção contra ameaças de dispositivos: não definido. Not set indica que não há necessidade de o dispositivo atender a um nível de proteção contra ameaças.|
+
+
+
 
 
 

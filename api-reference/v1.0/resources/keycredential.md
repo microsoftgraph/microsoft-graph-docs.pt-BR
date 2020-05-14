@@ -4,17 +4,17 @@ description: Contém uma credencial de chave associada a um aplicativo ou a uma 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 48ea2f837f62baeb8a8c7dc8f2204af8d8aa3113
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 40837844b7ab78f86cd57438adeb08ceb97d52ad
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447609"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43441493"
 ---
 # <a name="keycredential-resource-type"></a>tipo de recurso keycredential
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Contém uma credencial de chave associada a um aplicativo <!--or a service principal-->. A propriedade **Keycredentials** do [aplicativo](application.md) <!--and [servicePrincipal](serviceprincipal.md)--> Entity é uma coleção de **keycredential**.
 

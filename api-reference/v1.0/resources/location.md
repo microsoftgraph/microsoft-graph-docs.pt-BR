@@ -2,19 +2,19 @@
 title: Tipo de recurso Location
 description: Representa informações de localização para um evento.
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 51c04110cf41a6934658c82d7436854adfc9c45f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3f1839bdb7bb06dc0df11020ef14e51cf53d2d5e
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447539"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43441478"
 ---
 # <a name="location-resource-type"></a>Tipo de recurso Location
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Representa informações de localização para um [evento](event.md).
 
@@ -35,7 +35,7 @@ Dependendo de como um evento é criado, o Outlook pode definir a propriedade **l
 | displayName  | String | O nome associado ao local.                       |
 | locationEmailAddress | Cadeia de caracteres | O endereço de email opcional do local.              |
 | locationUri | String | URI opcional que representa o local. |
-| locationType | locationType | O tipo de local. Os valores possíveis são: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Somente leitura.|
+| locationType | locationType | O tipo de local. Os valores possíveis são: `default` , `conferenceRoom` , `homeAddress` , `businessAddress` , `geoCoordinates` , `streetAddress` , `hotel` , `restaurant` , `localBusiness` , `postalAddress` . Somente leitura.|
 | uniqueId | String | Apenas para uso interno.|
 | uniqueIdType | locationUniqueIdType | Apenas para uso interno. |
 
