@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Obter tokens de autenticação
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: /graph/auth/index?context=graph/api/beta
         - name: Noções básicas
           href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -74,7 +74,7 @@
         - name: Azure AD Graph.
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
             - name: Lista de verificação para migração de aplicativos
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -161,11 +161,11 @@
     - name: Referência beta
       expanded: true
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: overview.md
         - name: Usuários
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/users.md
             - name: Usuário
               href: resources/user.md
@@ -354,9 +354,10 @@
                       href: api/outlookuser-list-mastercategories.md
                 - name: Converter IDs
                   href: api/user-translateexchangeids.md
-            - name: Tarefas do Outlook
-              href: resources/outlooktask.md
+            - name: Tarefas do Outlook (versão prévia)
               items:
+                - name: Tarefas do Outlook
+                  href: resources/outlooktask.md
                 - name: Criar tarefas
                   href: api/outlookuser-post-tasks.md
                 - name: Listar tarefas
@@ -387,9 +388,10 @@
                   href: api/planneruser-list-tasks.md
                 - name: Atualizar configurações
                   href: api/planneruser-update.md
-            - name: Perfil
-              href: resources/profile.md
+            - name: Perfil (visualização)
               items:
+                - name: Perfil
+                  href: resources/profile.md
                 - name: Obter o perfil do usuário
                   href: api/profile-get.md
                 - name: Excluir o perfil do usuário
@@ -408,7 +410,7 @@
                   href: api/user-delete-teamsappinstallation.md
         - name: Grupos
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/groups-overview.md
             - name: Grupo
               href: resources/group.md
@@ -936,7 +938,7 @@
                   href: api/cloudcommunications-getpresencesbyuserid.md
             - name: Registros de chamada (visualização)
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/callrecords-api-overview.md
                 - name: Registro de chamadas
                   href: resources/callrecords-callrecord.md
@@ -979,7 +981,7 @@
         - name: Reserva de clientes
           displayName: 'Bookings, Microsoft Bookings'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/booking-api-overview.md
             - name: Negócio de reservas
               href: resources/bookingbusiness.md
@@ -1126,9 +1128,9 @@
                   href: resources/printershare.md
                   items:
                     - name: Listar
-                      href: api/print-list-printershares.md
+                      href: api/print-list-shares.md
                     - name: Create
-                      href: api/print-post-printershares.md
+                      href: api/print-post-shares.md
                     - name: Obter
                       href: api/printershare-get.md
                     - name: Atualizar
@@ -4055,7 +4057,7 @@
                     - name: Caixa multitexto de apresentação da política de grupo
                       href: resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md
                       items:
-                        - name: Lista
+                        - name: Listar
                           href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-list.md
                         - name: Obter
                           href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-get.md
@@ -4068,7 +4070,7 @@
                     - name: Texto de apresentação da política de grupo
                       href: resources/intune-grouppolicy-grouppolicypresentationtext.md
                       items:
-                        - name: Lista
+                        - name: Listar
                           href: api/intune-grouppolicy-grouppolicypresentationtext-list.md
                         - name: Obter
                           href: api/intune-grouppolicy-grouppolicypresentationtext-get.md
@@ -4081,7 +4083,7 @@
                     - name: Caixa de texto de apresentação da política de grupo
                       href: resources/intune-grouppolicy-grouppolicypresentationtextbox.md
                       items:
-                        - name: Listar
+                        - name: Lista
                           href: api/intune-grouppolicy-grouppolicypresentationtextbox-list.md
                         - name: Obter
                           href: api/intune-grouppolicy-grouppolicypresentationtextbox-get.md
@@ -4296,7 +4298,7 @@
                     - name: Configuração personalizada do iOS
                       href: resources/intune-deviceconfig-ioscustomconfiguration.md
                       items:
-                        - name: Listar
+                        - name: Lista
                           href: api/intune-deviceconfig-ioscustomconfiguration-list.md
                         - name: Obter
                           href: api/intune-deviceconfig-ioscustomconfiguration-get.md
@@ -4508,7 +4510,7 @@
                     - name: Status do dispositivo de atualização do iOS
                       href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                       items:
-                        - name: Listar
+                        - name: Lista
                           href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                         - name: Obter
                           href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
@@ -6306,7 +6308,7 @@
                     - name: Categoria de configuração de tentativa do gerenciamento de dispositivos
                       href: resources/intune-deviceintent-devicemanagementintentsettingcategory.md
                       items:
-                        - name: Lista
+                        - name: Listar
                           href: api/intune-deviceintent-devicemanagementintentsettingcategory-list.md
                         - name: Obter
                           href: api/intune-deviceintent-devicemanagementintentsettingcategory-get.md
@@ -6423,7 +6425,7 @@
                     - name: Definição de configuração do gerenciamento de dispositivos
                       href: resources/intune-deviceintent-devicemanagementsettingdefinition.md
                       items:
-                        - name: Listar
+                        - name: Lista
                           href: api/intune-deviceintent-devicemanagementsettingdefinition-list.md
                         - name: Obter
                           href: api/intune-deviceintent-devicemanagementsettingdefinition-get.md
@@ -8441,7 +8443,7 @@
         - name: Arquivos
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/onedrive.md
             - name: Unidades
               href: resources/drive.md
@@ -8535,7 +8537,7 @@
         - name: Finanças (visualização)
           displayname: 'Dynamics, Dynamics 365 Business Central'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/dynamics-graph-reference.md
             - name: Conta
               href: resources/dynamics-account.md
@@ -8770,7 +8772,7 @@
         - name: Identidade e acesso
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/azure-ad-overview.md
             - name: Avaliações do acesso
               href: resources/accessreviews-root.md
@@ -8948,7 +8950,7 @@
                       href: api/provisioningobjectsummary-list.md
             - name: Métodos de autenticação
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/authenticationmethods-overview.md
                 - name: Método de autenticação
                   href: resources/authenticationmethod.md
@@ -9358,7 +9360,7 @@
                       href: api/informationprotectionlabel-extractlabel.md
                 - name: Avaliação de ameaças
                   items:
-                    - name: Visão geral
+                    - name: Visão Geral
                       href: resources/threatassessment-api-overview.md
                     - name: Solicitação de avaliação de ameaças
                       href: resources/threatassessmentrequest.md
@@ -9874,7 +9876,7 @@
         - name: Correio
           displayName: 'Outlook, Outlook mail'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/mail-api-overview.md
             - name: Mensagem
               href: resources/message.md
@@ -10135,7 +10137,7 @@
                   href: api/resource-get.md
         - name: Notificações
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/notifications-api-overview.md
             - name: Notificação
               href: resources/projectrome-notification.md
@@ -10153,8 +10155,9 @@
                 - name: Listar pessoas
                   href: api/user-list-people.md
             - name: Perfil (visualização)
-              href: resources/profile.md
               items:
+                - name: Perfil
+                  href: resources/profile.md
                 - name: Obter o perfil do usuário
                   href: api/profile-get.md
                 - name: Excluir o perfil do usuário
@@ -10470,7 +10473,7 @@
                           href: api/applicationsignindetailedsummary-get.md
                 - name: Registro e uso
                   items:
-                    - name: Visão geral
+                    - name: Visão Geral
                       href: resources/authenticationmethods-usage-insights-overview.md
                     - name: Contagem de registro de usuário de credenciais
                       href: resources/credentialuserregistrationcount.md
@@ -10494,7 +10497,7 @@
                           href: api/reportroot-getcredentialusagesummary.md
             - name: Relatórios de uso do Office 365
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/report.md
                 - name: Uso do dispositivo do Microsoft Teams
                   href: resources/microsoft-teams-device-usage-reports.md
@@ -10697,13 +10700,13 @@
           items:
             - name: Consulta
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/search-api-overview.md
                 - name: Dados de consulta
                   href: api/search-query.md
             - name: Índice
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/indexing-api-overview.md
                 - name: Conexão externa
                   items:
@@ -10808,7 +10811,7 @@
         - name: Sites e listas
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/sharepoint.md
             - name: Sites
               href: resources/site.md
@@ -10871,7 +10874,7 @@
         - name: Tarefas e planos
           displayName: Planner
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/planner-overview.md
             - name: Plano
               href: resources/plannerplan.md
@@ -11435,7 +11438,7 @@
         - name: Workbooks e gráficos
           displayName: Excel
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/excel.md
             - name: Workbook
               href: resources/workbook.md

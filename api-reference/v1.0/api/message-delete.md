@@ -2,34 +2,34 @@
 title: Excluir mensagem
 description: Excluir uma mensagem na caixa de correio do usuário especificado ou excluir uma relação da mensagem.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 88e1eededd4129561fa862975d3d4bd399ad049e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e128dd174e7b99a1d10060a1e9cfd6d70f2fc780
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511541"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43361807"
 ---
-# <a name="delete-message"></a><span data-ttu-id="75ed6-103">Excluir mensagem</span><span class="sxs-lookup"><span data-stu-id="75ed6-103">Delete message</span></span>
+# <a name="delete-message"></a><span data-ttu-id="42723-103">Excluir mensagem</span><span class="sxs-lookup"><span data-stu-id="42723-103">Delete message</span></span>
 
-<span data-ttu-id="75ed6-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="75ed6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="42723-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="42723-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="75ed6-105">Excluir uma mensagem na caixa de correio do usuário especificado ou excluir uma relação da mensagem.</span><span class="sxs-lookup"><span data-stu-id="75ed6-105">Delete a message in the specified user's mailbox, or delete a relationship of the message.</span></span>
+<span data-ttu-id="42723-105">Excluir uma mensagem na caixa de correio do usuário especificado ou excluir uma relação da mensagem.</span><span class="sxs-lookup"><span data-stu-id="42723-105">Delete a message in the specified user's mailbox, or delete a relationship of the message.</span></span>
 
-><span data-ttu-id="75ed6-106">**Observação** Você pode não conseguir excluir itens da pasta exclusão de itens recuperáveis (representado pelo [nome](../resources/mailfolder.md) `recoverableitemsdeletions`de pasta conhecido).</span><span class="sxs-lookup"><span data-stu-id="75ed6-106">**Note** You may not be able to delete items in the recoverable items deletions folder (represented by the [well-known folder name](../resources/mailfolder.md) `recoverableitemsdeletions`).</span></span> <span data-ttu-id="75ed6-107">Veja [retenção de item excluído](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e [limpar itens excluídos](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para obter mais informações.</span><span class="sxs-lookup"><span data-stu-id="75ed6-107">See [Deleted item retention](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) and [Clean up deleted items](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) for more information.</span></span>
+><span data-ttu-id="42723-106">**Observação** Você pode não conseguir excluir itens da pasta exclusão de itens recuperáveis (representado pelo [nome de pasta conhecido](../resources/mailfolder.md) `recoverableitemsdeletions` ).</span><span class="sxs-lookup"><span data-stu-id="42723-106">**Note** You may not be able to delete items in the recoverable items deletions folder (represented by the [well-known folder name](../resources/mailfolder.md) `recoverableitemsdeletions`).</span></span> <span data-ttu-id="42723-107">Veja [retenção de item excluído](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e [limpar itens excluídos](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para obter mais informações.</span><span class="sxs-lookup"><span data-stu-id="42723-107">See [Deleted item retention](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) and [Clean up deleted items](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) for more information.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="75ed6-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="75ed6-108">Permissions</span></span>
-<span data-ttu-id="75ed6-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="75ed6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="42723-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="42723-108">Permissions</span></span>
+<span data-ttu-id="42723-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="42723-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="75ed6-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="75ed6-111">Permission type</span></span>      | <span data-ttu-id="75ed6-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="75ed6-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="42723-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="42723-111">Permission type</span></span>      | <span data-ttu-id="42723-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="42723-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="75ed6-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="75ed6-113">Delegated (work or school account)</span></span> | <span data-ttu-id="75ed6-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="75ed6-114">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="75ed6-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="75ed6-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="75ed6-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="75ed6-116">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="75ed6-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="75ed6-117">Application</span></span> | <span data-ttu-id="75ed6-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="75ed6-118">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="42723-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="42723-113">Delegated (work or school account)</span></span> | <span data-ttu-id="42723-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="42723-114">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="42723-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="42723-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="42723-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="42723-116">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="42723-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="42723-117">Application</span></span> | <span data-ttu-id="42723-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="42723-118">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="75ed6-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="75ed6-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="42723-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="42723-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}
@@ -37,23 +37,23 @@ DELETE /users/{id | userPrincipalName}/messages/{id}
 DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="75ed6-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="75ed6-120">Request headers</span></span>
-| <span data-ttu-id="75ed6-121">Nome</span><span class="sxs-lookup"><span data-stu-id="75ed6-121">Name</span></span>       | <span data-ttu-id="75ed6-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="75ed6-122">Type</span></span> | <span data-ttu-id="75ed6-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="75ed6-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="42723-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="42723-120">Request headers</span></span>
+| <span data-ttu-id="42723-121">Nome</span><span class="sxs-lookup"><span data-stu-id="42723-121">Name</span></span>       | <span data-ttu-id="42723-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="42723-122">Type</span></span> | <span data-ttu-id="42723-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="42723-123">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="75ed6-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="75ed6-124">Authorization</span></span>  | <span data-ttu-id="75ed6-125">string</span><span class="sxs-lookup"><span data-stu-id="75ed6-125">string</span></span>  | <span data-ttu-id="75ed6-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="75ed6-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="42723-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="42723-124">Authorization</span></span>  | <span data-ttu-id="42723-125">string</span><span class="sxs-lookup"><span data-stu-id="42723-125">string</span></span>  | <span data-ttu-id="42723-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="42723-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="75ed6-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="75ed6-128">Request body</span></span>
-<span data-ttu-id="75ed6-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="75ed6-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="42723-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="42723-128">Request body</span></span>
+<span data-ttu-id="42723-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="42723-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="75ed6-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="75ed6-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="42723-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="42723-130">Response</span></span>
 
-<span data-ttu-id="75ed6-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="75ed6-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="42723-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="42723-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="75ed6-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="75ed6-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="75ed6-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="75ed6-134">Request</span></span>
-<span data-ttu-id="75ed6-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="75ed6-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="42723-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="42723-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="42723-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="42723-134">Request</span></span>
+<span data-ttu-id="42723-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="42723-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="75ed6-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="75ed6-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="42723-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="42723-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_message"
@@ -61,26 +61,26 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/messages/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="75ed6-137">C#</span><span class="sxs-lookup"><span data-stu-id="75ed6-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="42723-137">C#</span><span class="sxs-lookup"><span data-stu-id="42723-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="75ed6-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="75ed6-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="42723-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="42723-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="75ed6-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="75ed6-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="42723-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="42723-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="75ed6-140">Java</span><span class="sxs-lookup"><span data-stu-id="75ed6-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="42723-140">Java</span><span class="sxs-lookup"><span data-stu-id="42723-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="75ed6-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="75ed6-141">Response</span></span>
-<span data-ttu-id="75ed6-142">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="75ed6-142">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="42723-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="42723-141">Response</span></span>
+<span data-ttu-id="42723-142">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="42723-142">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
