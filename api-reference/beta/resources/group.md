@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: adb4b5a802987e6b3ec21cbe1a1f9766faad9962
-ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
+ms.openlocfilehash: ba2b21714549c6fed05c63801a2410d2162ebed3
+ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006332"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44227007"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -143,7 +143,7 @@ Esse recurso permite:
 |proxyAddresses|String collection| Endereços de email para o grupo que direcionam para a mesma caixa de correio do grupo. Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. <br><br>Retornado por padrão. Somente leitura. Não anulável. Oferece suporte a $filter. |
 |renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/grouplifecyclepolicy-renewgroup.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Apenas leitura.|
 |resourceBehaviorOptions|Conjunto de cadeias de caracteres|Especifica os comportamentos de grupo que podem ser definidos para um grupo do Office 365 durante a criação. Isso só pode ser definido como parte da criação (POST). Os valores possíveis são `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`.  Mais detalhes estarão disponíveis posteriormente neste tópico.|
-|resourceProvisioningOptions|Conjunto de cadeias de caracteres|Especifica os recursos de grupo que são provisionados como parte da criação de grupos do Office 365, que normalmente não fazem parte da criação de grupos padrão. O valor possível é `Teams`. Mais detalhes estarão disponíveis posteriormente neste tópico.|
+|resourceProvisioningOptions|Conjunto de cadeias de caracteres|Especifica os recursos de grupo que são provisionados como parte da criação de grupos do Office 365, que normalmente não fazem parte da criação de grupos padrão. O valor possível é `Team`. Mais detalhes estarão disponíveis posteriormente neste tópico.|
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. <br><br>Retornado por padrão. Oferece suporte para `$filter`.|
 |securityIdentifier|Cadeia de Caracteres|Identificador de segurança do grupo, usado em cenários do Windows. <br><br>Retornado por padrão.|
 |tema|String|Especifica o tema de cor de um grupo Office 365. Os valores possíveis são: `Teal`, `Purple`, `Green`, `Blue`,`Pink`, `Orange` ou `Red`. <br><br>Retornado por padrão. |

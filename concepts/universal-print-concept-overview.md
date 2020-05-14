@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 84a8a97315bb8ca62afb22f76db06fa67fb4e307
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: d3df3a36ac9994b3ce4560b995a52288dd197e34
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557861"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44215651"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Visão geral da API de impressão em nuvem da Impressão Universal
 
@@ -56,7 +56,7 @@ Introdução à API de Impressão Universal:
 
 ### <a name="seamlessly-replace-or-update-printer-hardware"></a>Substituir ou atualizar o hardware da impressora sem problemas
 
-As impressoras não estarão visíveis para os usuários até que sejam [compartilhadas](/graph/api/print-post-printershares?view=graph-rest-beta), proporcionando aos administradores um controle detalhado sobre qual hardware de impressora estará disponível em um determinado momento.
+As impressoras não estarão visíveis para os usuários até que sejam [compartilhadas](/graph/api/print-post-shares?view=graph-rest-beta), proporcionando aos administradores um controle detalhado sobre qual hardware de impressora estará disponível em um determinado momento.
 
 O compartilhamento de uma impressora cria um recurso [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) que pode ser atualizado a qualquer momento para indicar uma impressora diferente, facilitando a substituição de hardware de uma impressora quebrada ou a desativação de impressoras para manutenção.
 

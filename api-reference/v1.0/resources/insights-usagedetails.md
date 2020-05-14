@@ -1,22 +1,23 @@
 ---
 title: tipo de recurso usageDetails
-description: Tipo complexo contendo propriedades de itens usados. Informações sobre quando o recurso foi acessado pela última vez (exibido) e modificado (editado) pelo usuário.
+description: Tipo complexo contendo propriedades de itens usados. Informações sobre quando o recurso foi acessado pela última vez (exibido) ou modificado (editado) pelo usuário.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 66ac63b17e97e5754779c5d5ccc786cd8ba4a265
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d73af15dc3578e9e6c0a568eebfd42480f7065e2
+ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531270"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44227021"
 ---
 # <a name="usagedetails-resource-type"></a>tipo de recurso usageDetails
 
 Namespace: microsoft.graph
 
-Tipo complexo contendo propriedades de itens [usados](insights-used.md) . Informações sobre quando o recurso foi acessado pela última vez (exibido) e modificado (editado) pelo usuário.
+Tipo complexo contendo propriedades de itens [usados](insights-used.md) . Informações sobre quando o recurso foi acessado pela última vez (exibido) ou modificado (editado) pelo usuário.
+
 
 ## <a name="json-representation"></a>Representação JSON
 
