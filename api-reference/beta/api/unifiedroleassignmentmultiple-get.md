@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4252147e23f0c71d4e7acd04976ca73b457a78ba
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 2de8dec1048aec0353a5bcc4dc0abc69f659df4a
+ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991772"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44226907"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>Obter unifiedRoleAssignmentMultiple
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:------------------------------------------- |
 | Delegado (conta corporativa ou de estudante) | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
+| Application | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -113,11 +113,80 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>Exemplo 2: obter um roleAssignmentMultiple com escopo de diretório com`$expand`
+### <a name="example-2-get-a-roleassignmentmultiple-in-intune-assigned-to-a-group"></a>Exemplo 2: obter um roleAssignmentMultiple no Intune atribuído a um grupo
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação com o parâmetro `$expand` de consulta.
+Este é um exemplo de solicitação.
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedroleassignmentmultiple"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignments?$filter = principalIds/any(x:x eq '564ae70c-73d9-476b-820b-fb61eb7384b9')
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignmentmultiple-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignmentmultiple-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/deviceManagement/roleAssignments",
+    "@odata.count": 7,
+    "value": [
+        {
+            "id": "893fc648-73fc-482b-b964-ddd1cabf0db4",
+            "condition": null,
+            "displayName": "Assign Contoso_App_Admin to School Admin",
+            "description": "test",
+            "roleDefinitionId": "2f9f4f7e-2d13-427b-adf2-361a1eef7ae8",
+            "principalIds": [
+                "564ae70c-73d9-476b-820b-fb61eb7384b9"
+            ],
+            "directoryScopeIds": [],
+            "appScopeIds": [
+                "0",
+                "AllLicensedUsers"
+            ]
+        }
+    ]
+}
+```
+
+### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>Exemplo 3: obter um roleAssignmentMultiple com escopo de diretório com`$expand`
+
+#### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo da solicitação com o `$expand` parâmetro de consulta.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
