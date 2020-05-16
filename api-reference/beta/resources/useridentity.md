@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0cb40f4d9815ed0c95f319fd5f112dfd5802f10a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e82ff5959e47ac6ec0832e31f6228282a14e671f
+ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384967"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44272728"
 ---
 # <a name="useridentity-type"></a>tipo UserIdentity
 
@@ -25,10 +25,11 @@ Esse tipo herda de [Identity](identity.md) e tem uma propriedade adicional, o no
 
 ## <a name="methods"></a>Métodos
 
-Nenhum.  Você deve incluir objetos desse tipo no corpo de uma solicitação ao [criar um accessReview](../api/accessreview-create.md).
+Nenhum  Você deve incluir objetos desse tipo no corpo de uma solicitação ao [criar um accessReview](../api/accessreview-create.md).
 
 ## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
+
+| Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | `displayName` | `String` | Nome de exibição da identidade. Observe que isso pode não estar sempre disponível ou atualizado.    |
 | `id`          | `String` | Identificador exclusivo da identidade.  |
@@ -45,11 +46,11 @@ Nenhum
 
 ## <a name="see-also"></a>Ver também
 
-| Método           | Tipo de retorno    |Descrição|
+| Método | Descrição do tipo de retorno|
 |:---------------|:--------|:----------|
-|[Obter revisores do accessReview](../api/accessreview-listreviewers.md) |       coleção [UserIdentity](useridentity.md)| Obter os revisores de um accessReview. |
-|[Adicionar revisor accessReview](../api/accessreview-addreviewer.md) |      Nenhum.   |   Adicionar um revisor a um accessReview. |
-|[Remover revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum.  |   Remover um revisor de um accessReview. |
+|[Obter revisores do accessReview](../api/accessreview-listreviewers.md) | coleção [UserIdentity](useridentity.md)| Obter os revisores de um accessReview. |
+|[Adicionar revisor accessReview](../api/accessreview-addreviewer.md) | Nenhum | Adicionar um revisor a um accessReview. |
+|[Remover revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum |Remover um revisor de um accessReview. |
 
 ## <a name="json-representation"></a>Representação JSON
 
