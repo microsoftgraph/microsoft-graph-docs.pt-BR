@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Obter tokens de autenticação
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: /graph/auth/index?context=graph/api/1.0
       - name: Noções básicas
         href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -72,7 +72,7 @@ items:
       - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -167,11 +167,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -374,7 +374,7 @@ items:
                 href: api/planneruser-list-tasks.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -870,7 +870,7 @@ items:
       - name: Dispositivos e aplicativos
         displayName: Intune
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/intune-graph-overview.md
           - name: Gerenciamento de aplicativos
             href: resources/intune-app-conceptual.md
@@ -3232,7 +3232,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -3318,7 +3318,7 @@ items:
       - name: Identidade e acesso
         displayName: 'Azure AD, Microsoft identity platform'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/azure-ad-overview.md
           - name: Aplicativo
             href: resources/application.md
@@ -3542,7 +3542,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -3672,7 +3672,7 @@ items:
       - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/mail-api-overview.md
           - name: Mensagem
             href: resources/message.md
@@ -4266,7 +4266,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -4312,7 +4312,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Plano
             href: resources/plannerplan.md
@@ -4470,6 +4470,17 @@ items:
                 href: api/channel-patch.md
               - name: Delete channel
                 href: api/channel-delete.md
+              - name: Enviar mensagem
+                href: api/channel-post-messages.md
+              - name: Responder à mensagem
+                href: api/channel-post-messagereply.md
+          - name: Mensagem de chat
+            href: resources/chatmessage.md
+            items:
+              - name: Enviar mensagem
+                href: api/channel-post-messages.md
+              - name: Responder à mensagem
+                href: api/channel-post-messagereply.md
           - name: Catálogo de Aplicativos
             href: resources/teamsapp.md
             items:
