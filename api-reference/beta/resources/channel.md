@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 491352231980e841ebe215c9c0680dc1c672b36c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 243c3ea1e203ceaca4b31cb82dca77c873af7cb0
+ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507744"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44272693"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -56,7 +56,7 @@ Namespace: microsoft.graph
 
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|messages|[chatMessage](chatmessage.md) collection|Uma coleção de todas as mensagens do canal. Uma propriedade de navegação. Anulável. No momento, esse API tem suporte apenas à leitura, mas eventualmente terá suporte a mensagens escritas também.|
+|messages|[chatMessage](chatmessage.md) collection|Uma coleção de todas as mensagens do canal. Uma propriedade de navegação. Anulável.|
 |guias|[teamsTab](../resources/teamstab.md) collection|Uma coleção de todas as guias do canal. Uma propriedade de navegação.|
 |membros|coleção [conversationMember](conversationmember.md)|Uma coleção de registros de associação ligados ao canal.|
 |filesFolder|[driveItem](driveitem.md)|Metadados para o local em que os arquivos do canal estão armazenados.|

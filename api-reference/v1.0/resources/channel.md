@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 4117190df40eb3bcf5a837fdad298cefe5121793
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f995fa1cb725ae5c0764f349180e7f757a9f423e
+ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531933"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44272651"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -35,7 +35,8 @@ Os canais estão onde o trabalho é feito - onde conversas via texto, áudio e v
 |[Guia de atualização](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Atualizar as propriedades da guia.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
+
+| Propriedade   | Tipo | Descrição|
 |:---------------|:--------|:----------|
 |description|String|Descrição textual opcional do canal.|
 |displayName|String|Nome do canal como ele aparecerá ao usuário no Microsoft Teams.|
@@ -44,9 +45,12 @@ Os canais estão onde o trabalho é feito - onde conversas via texto, áudio e v
 |webUrl|String|Um hiperlink que navegará até o canal no Microsoft Teams. Essa é a URL que você recebe ao clicar com o botão direito do mouse em um canal Microsoft Teams e selecionar Obter o link para o canal. Essa URL deve ser tratada como um blob opaco e não analisado. Somente leitura.|
 
 ## <a name="relationships"></a>Relacionamento
-| Relação | Tipo   |Descrição|
+
+| Relação | Tipo | Descrição|
 |:---------------|:--------|:----------|
+|messages|[chatMessage](./chatmessage.md) collection|Uma coleção de todas as mensagens do canal. Uma propriedade de navegação. Anulável.|
 |guias|[teamsTab](../resources/teamstab.md) collection|Uma coleção de todas as guias do canal. Uma propriedade de navegação.|
+|filesFolder|[driveItem](driveitem.md)|Metadados para o local em que os arquivos do canal estão armazenados.|
 
 
 ## <a name="json-representation"></a>Representação JSON
