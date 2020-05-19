@@ -5,34 +5,34 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 155efb7680b2e50e4ef3a726c93dd62b5d7562d4
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: 59506023c280fbe8d5f18e9b9996815baad3c063
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272644"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288589"
 ---
-# <a name="create-chatmessage-in-a-channel"></a><span data-ttu-id="5a4c9-103">Criar chatMessage em um canal</span><span class="sxs-lookup"><span data-stu-id="5a4c9-103">Create chatMessage in a channel</span></span>
+# <a name="create-chatmessage-in-a-channel"></a><span data-ttu-id="63203-103">Criar chatMessage em um canal</span><span class="sxs-lookup"><span data-stu-id="63203-103">Create chatMessage in a channel</span></span>
 
-<span data-ttu-id="5a4c9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5a4c9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="63203-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="63203-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5a4c9-105">Criar um novo [chat](../resources/chatmessage.md) no [canal](../resources/channel.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-105">Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).</span></span>
+<span data-ttu-id="63203-105">Criar um novo [chat](../resources/chatmessage.md) no [canal](../resources/channel.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="63203-105">Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).</span></span>
 
-> <span data-ttu-id="5a4c9-106">**Observação**: não é recomendável usar essa API para a migração de dados.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-106">**Note**: We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="5a4c9-107">Ele não tem a taxa de transferência necessária para uma migração típica.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-107">It does not have the throughput necessary for a typical migration.</span></span>
+> <span data-ttu-id="63203-106">**Observação**: não é recomendável usar essa API para a migração de dados.</span><span class="sxs-lookup"><span data-stu-id="63203-106">**Note**: We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="63203-107">Ele não tem a taxa de transferência necessária para uma migração típica.</span><span class="sxs-lookup"><span data-stu-id="63203-107">It does not have the throughput necessary for a typical migration.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5a4c9-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="5a4c9-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="63203-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="63203-108">Permissions</span></span>
 
-<span data-ttu-id="5a4c9-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5a4c9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="63203-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="63203-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="5a4c9-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5a4c9-111">Permission type</span></span>                        | <span data-ttu-id="5a4c9-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5a4c9-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="63203-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="63203-111">Permission type</span></span>                        | <span data-ttu-id="63203-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="63203-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="5a4c9-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5a4c9-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="5a4c9-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5a4c9-114">Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="5a4c9-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5a4c9-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5a4c9-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-116">Not supported.</span></span> |
-| <span data-ttu-id="5a4c9-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5a4c9-117">Application</span></span>                            | <span data-ttu-id="5a4c9-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-118">Not supported.</span></span> |
+| <span data-ttu-id="63203-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="63203-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="63203-114">ChannelMessage. Send, Group. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="63203-114">ChannelMessage.Send, Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="63203-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="63203-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="63203-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="63203-116">Not supported.</span></span> |
+| <span data-ttu-id="63203-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="63203-117">Application</span></span>                            | <span data-ttu-id="63203-118">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63203-118">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5a4c9-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5a4c9-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="63203-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="63203-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,29 +40,29 @@ ms.locfileid: "44272644"
 POST /teams/{id}/channels/{id}/messages
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5a4c9-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5a4c9-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="63203-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="63203-120">Request headers</span></span>
 
-| <span data-ttu-id="5a4c9-121">Nome</span><span class="sxs-lookup"><span data-stu-id="5a4c9-121">Name</span></span>          | <span data-ttu-id="5a4c9-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="5a4c9-122">Description</span></span>   |
+| <span data-ttu-id="63203-121">Nome</span><span class="sxs-lookup"><span data-stu-id="63203-121">Name</span></span>          | <span data-ttu-id="63203-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="63203-122">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="5a4c9-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="5a4c9-123">Authorization</span></span> | <span data-ttu-id="5a4c9-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="5a4c9-124">Bearer {code}</span></span> |
+| <span data-ttu-id="63203-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="63203-123">Authorization</span></span> | <span data-ttu-id="63203-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="63203-124">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5a4c9-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5a4c9-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="63203-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="63203-125">Request body</span></span>
 
-<span data-ttu-id="5a4c9-126">No corpo da solicitação, forneça uma representação JSON de um objeto [Message](../resources/chatmessage.md) .</span><span class="sxs-lookup"><span data-stu-id="5a4c9-126">In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object.</span></span> <span data-ttu-id="5a4c9-127">Somente a Propriedade Body é obrigatória, outras propriedades são opcionais.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-127">Only the body property is mandatory, other properties are optional.</span></span>
+<span data-ttu-id="63203-126">No corpo da solicitação, forneça uma representação JSON de um objeto [Message](../resources/chatmessage.md) .</span><span class="sxs-lookup"><span data-stu-id="63203-126">In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object.</span></span> <span data-ttu-id="63203-127">Somente a Propriedade Body é obrigatória, outras propriedades são opcionais.</span><span class="sxs-lookup"><span data-stu-id="63203-127">Only the body property is mandatory, other properties are optional.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="5a4c9-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="5a4c9-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="63203-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="63203-128">Response</span></span>
 
-<span data-ttu-id="5a4c9-129">Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [chat](../resources/chatmessage.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-129">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
+<span data-ttu-id="63203-129">Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [chat](../resources/chatmessage.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="63203-129">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5a4c9-130">Exemplos</span><span class="sxs-lookup"><span data-stu-id="5a4c9-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="63203-130">Exemplos</span><span class="sxs-lookup"><span data-stu-id="63203-130">Examples</span></span>
 
-### <a name="example-1-hello-world"></a><span data-ttu-id="5a4c9-131">Exemplo 1: Olá mundo</span><span class="sxs-lookup"><span data-stu-id="5a4c9-131">Example 1: Hello World</span></span>
+### <a name="example-1-hello-world"></a><span data-ttu-id="63203-131">Exemplo 1: Olá mundo</span><span class="sxs-lookup"><span data-stu-id="63203-131">Example 1: Hello World</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5a4c9-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5a4c9-132">Request</span></span>
-<span data-ttu-id="5a4c9-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-133">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="63203-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="63203-132">Request</span></span>
+<span data-ttu-id="63203-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="63203-133">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5a4c9-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="5a4c9-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="63203-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="63203-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -78,27 +78,27 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="5a4c9-135">C#</span><span class="sxs-lookup"><span data-stu-id="5a4c9-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="63203-135">C#</span><span class="sxs-lookup"><span data-stu-id="63203-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5a4c9-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5a4c9-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="63203-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="63203-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5a4c9-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5a4c9-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="63203-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="63203-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="5a4c9-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="5a4c9-138">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="63203-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="63203-138">Response</span></span>
 
-<span data-ttu-id="5a4c9-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-139">The following is an example of the response.</span></span>
+<span data-ttu-id="63203-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="63203-139">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="5a4c9-140">O objeto de resposta mostrado aqui pode ser reduzido para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-140">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5a4c9-141">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-141">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="63203-140">O objeto de resposta mostrado aqui pode ser reduzido para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="63203-140">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="63203-141">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="63203-141">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -145,10 +145,10 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-mentions"></a><span data-ttu-id="5a4c9-142">Exemplo 2: @mentions</span><span class="sxs-lookup"><span data-stu-id="5a4c9-142">Example 2: @mentions</span></span>
+### <a name="example-2-mentions"></a><span data-ttu-id="63203-142">Exemplo 2: @mentions</span><span class="sxs-lookup"><span data-stu-id="63203-142">Example 2: @mentions</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5a4c9-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5a4c9-143">Request</span></span>
-<span data-ttu-id="5a4c9-144">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-144">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="63203-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="63203-143">Request</span></span>
+<span data-ttu-id="63203-144">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="63203-144">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -178,9 +178,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="5a4c9-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="5a4c9-145">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="63203-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="63203-145">Response</span></span>
 
-<span data-ttu-id="5a4c9-146">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-146">The following is an example of the response.</span></span>
+<span data-ttu-id="63203-146">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="63203-146">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -240,12 +240,12 @@ Content-length: 160
 }
 ```
 
-### <a name="example-3-cards"></a><span data-ttu-id="5a4c9-147">Exemplo 3: cartões</span><span class="sxs-lookup"><span data-stu-id="5a4c9-147">Example 3: Cards</span></span>
+### <a name="example-3-cards"></a><span data-ttu-id="63203-147">Exemplo 3: cartões</span><span class="sxs-lookup"><span data-stu-id="63203-147">Example 3: Cards</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5a4c9-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5a4c9-148">Request</span></span>
-<span data-ttu-id="5a4c9-149">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-149">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="63203-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="63203-148">Request</span></span>
+<span data-ttu-id="63203-149">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="63203-149">The following is an example of the request.</span></span>
 
-> <span data-ttu-id="5a4c9-150">Observação: a ID do anexo deve ser exclusiva e pode ser um novo GUID gerado aleatoriamente.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-150">Note: The attachment's ID must be unique and can be a new randomly generated GUID.</span></span> <span data-ttu-id="5a4c9-151">No entanto, a ID do anexo deve ser a mesma nos elementos _Body_ e _Attachments_ .</span><span class="sxs-lookup"><span data-stu-id="5a4c9-151">However, the attachment's ID must be the same in the _body_ and _attachments_ elements.</span></span>
+> <span data-ttu-id="63203-150">Observação: a ID do anexo deve ser exclusiva e pode ser um novo GUID gerado aleatoriamente.</span><span class="sxs-lookup"><span data-stu-id="63203-150">Note: The attachment's ID must be unique and can be a new randomly generated GUID.</span></span> <span data-ttu-id="63203-151">No entanto, a ID do anexo deve ser a mesma nos elementos _Body_ e _Attachments_ .</span><span class="sxs-lookup"><span data-stu-id="63203-151">However, the attachment's ID must be the same in the _body_ and _attachments_ elements.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -274,9 +274,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="5a4c9-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="5a4c9-152">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="63203-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="63203-152">Response</span></span>
 
-<span data-ttu-id="5a4c9-153">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-153">The following is an example of the response.</span></span>
+<span data-ttu-id="63203-153">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="63203-153">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -330,12 +330,12 @@ Content-length: 160
 }
 ```
 
-### <a name="example-4-file-attachments"></a><span data-ttu-id="5a4c9-154">Exemplo 4: anexos de arquivo</span><span class="sxs-lookup"><span data-stu-id="5a4c9-154">Example 4: File attachments</span></span>
+### <a name="example-4-file-attachments"></a><span data-ttu-id="63203-154">Exemplo 4: anexos de arquivo</span><span class="sxs-lookup"><span data-stu-id="63203-154">Example 4: File attachments</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5a4c9-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5a4c9-155">Request</span></span>
-<span data-ttu-id="5a4c9-156">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-156">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="63203-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="63203-155">Request</span></span>
+<span data-ttu-id="63203-156">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="63203-156">The following is an example of the request.</span></span>
 
-><span data-ttu-id="5a4c9-157">**Observação:** O arquivo já deve estar no SharePoint.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-157">**Note:** The file must already be in SharePoint.</span></span> <span data-ttu-id="5a4c9-158">Para localizar as propriedades do arquivo, obtenha o **driveItem** para o arquivo.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-158">To find the file properties, GET the **driveItem** for the file.</span></span> <span data-ttu-id="5a4c9-159">Por exemplo,/drives/{ID}/Items/{ID}.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-159">For example, /drives/{id}/items/{id}.</span></span> <span data-ttu-id="5a4c9-160">Sua ID de anexo é o GUID na **ETag** do **DriveItem**, seu **ContentURL** de anexo é o **WebUrl** da pasta do **driveItem**mais o nome do **driveItem**e o nome do anexo é o nome do **driveItem**.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-160">Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.</span></span>
+><span data-ttu-id="63203-157">**Observação:** O arquivo já deve estar no SharePoint.</span><span class="sxs-lookup"><span data-stu-id="63203-157">**Note:** The file must already be in SharePoint.</span></span> <span data-ttu-id="63203-158">Para localizar as propriedades do arquivo, obtenha o **driveItem** para o arquivo.</span><span class="sxs-lookup"><span data-stu-id="63203-158">To find the file properties, GET the **driveItem** for the file.</span></span> <span data-ttu-id="63203-159">Por exemplo,/drives/{ID}/Items/{ID}.</span><span class="sxs-lookup"><span data-stu-id="63203-159">For example, /drives/{id}/items/{id}.</span></span> <span data-ttu-id="63203-160">Sua ID de anexo é o GUID na **ETag** do **DriveItem**, seu **ContentURL** de anexo é o **WebUrl** da pasta do **driveItem**mais o nome do **driveItem**e o nome do anexo é o nome do **driveItem**.</span><span class="sxs-lookup"><span data-stu-id="63203-160">Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -361,9 +361,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="5a4c9-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="5a4c9-161">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="63203-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="63203-161">Response</span></span>
 
-<span data-ttu-id="5a4c9-162">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="5a4c9-162">The following is an example of the response.</span></span>
+<span data-ttu-id="63203-162">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="63203-162">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -417,9 +417,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="5a4c9-163">Confira também</span><span class="sxs-lookup"><span data-stu-id="5a4c9-163">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="63203-163">Confira também</span><span class="sxs-lookup"><span data-stu-id="63203-163">See also</span></span>
 
-- [<span data-ttu-id="5a4c9-164">Referência de cartões</span><span class="sxs-lookup"><span data-stu-id="5a4c9-164">Cards reference</span></span>](/microsoftteams/platform/concepts/cards/cards-reference)
+- [<span data-ttu-id="63203-164">Referência de cartões</span><span class="sxs-lookup"><span data-stu-id="63203-164">Cards reference</span></span>](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
