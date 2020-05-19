@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: dkershaw10
-ms.openlocfilehash: beb5afedd33d16fefaaeb83c46fddd45c9c9ad3c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6aa20deefa63325bf369fc2c59db97add4732569
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408368"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289704"
 ---
 # <a name="list-policies-assigned-to-application-or-service-principal"></a>Listar políticas atribuídas à entidade de serviço ou aplicativo
 
@@ -38,9 +38,9 @@ GET /applications/{id}/policies
 > Observação: "ID" na solicitação é a propriedade "ID" da entidade de serviço ou aplicativo, não a propriedade "AppID".
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome           | Descrição                |
+|:---------------|:---------------------------|
+| Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

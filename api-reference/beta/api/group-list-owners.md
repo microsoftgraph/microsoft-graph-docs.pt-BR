@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7bb54eadf4ded1f7b775f3a80a49e6bdcb66e919
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6aada439df5839b0a6d4d91a2da962874beea5df
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396917"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287024"
 ---
 # <a name="list-owners"></a>Listar proprietários
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.Read.All and User.ReadBasic.All, Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Group. Read. All e User. ReadBasic. All, Group. Read. All e User. Read. All, Group. Read. All e User. ReadWrite. All, Group. Read. All e User. Read. All e Application. Read. All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All |
+|Aplicativo | Group. Read. All e User. Read. All, Group. Read. All e User. ReadWrite. All, Group. Read. All e User. Read. All e Application. Read. All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e7cc91d59480c56196ce757fc324b7b7ee9f1037
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: f6499e238d5d2466ca61d74779a570aaa5b9976e
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107189"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289359"
 ---
 # <a name="remove-tokenlifetimepolicy"></a>Remover tokenLifetimePolicy
 
@@ -22,7 +22,7 @@ Remover um [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) de um [apl
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Um dos seguintes conjuntos de permissões é necessário para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|

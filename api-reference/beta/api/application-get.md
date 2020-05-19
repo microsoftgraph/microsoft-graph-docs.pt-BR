@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 682c2a29f410ddb68649f590b7a732035ca65a54
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
-ms.translationtype: HT
+ms.openlocfilehash: fe7136cc8defe9a8c7e3fb6ebd7b5ca12083204f
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107385"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289338"
 ---
 # <a name="get-application"></a>Obter aplicativo
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application. Read. All, Directory. Read. All, Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
+|Aplicativo | Application. Read. All, Directory. Read. All, Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,10 +38,9 @@ GET /applications/{id}
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório.  |
-| Content-type | application/json. Obrigatório. |
+| Nome           | Descrição                |
+|:---------------|:---------------------------|
+| Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

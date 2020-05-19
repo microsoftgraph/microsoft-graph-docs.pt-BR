@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 405518b58bb3bc9a5270992c681aaf098660a61e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: e6986a751129dd0fa41ad97185ae4f860349119f
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107196"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289373"
 ---
 # <a name="delete-extensionproperty"></a>Delete extensionproperty
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Aplicativo | Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8e4b209d7b941bc681e63f9f1781072ff501eb1e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a41ef1abeeece64c3a8ea689e19596e07931e82f
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396571"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289585"
 ---
 # <a name="add-member"></a>Adicionar membro
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Adicionar um membro a um grupo do Office 365 ou grupo de segurança por meio da propriedade de navegação **Members** .
 
-É possível adicionar usuários ou outros grupos. 
+Você pode adicionar usuários, entidades de serviço ou outros grupos. 
 
 > [!Important]
 > Só é possível adicionar usuários aos grupos do Office 365 e segurança gerenciados pela nuvem.
@@ -83,7 +83,7 @@ Content-length: 30
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON `id` do objeto [directoryobject](../resources/directoryobject.md), [User](../resources/user.md)ou [Group](../resources/group.md) que você deseja adicionar.
+No corpo da solicitação, forneça uma representação JSON do `id` objeto [directoryobject](../resources/directoryobject.md), [User](../resources/user.md)ou [Group](../resources/group.md) que você deseja adicionar.
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta.

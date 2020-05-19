@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a4c68e934fb6ea3085c5dd268371e9f5763519c9
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 19dd072f10102a97766b2998dfa368032bf08129
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218609"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290002"
 ---
 # <a name="serviceprincipal-removepassword"></a>servicePrincipalName: removePassword
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+| Aplicativo                            | Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

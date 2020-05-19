@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 65bcbc4fa74dc452efa34f90827dffd4a779af63
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
-ms.translationtype: HT
+ms.openlocfilehash: 0dd65de04f395c7014897b1f1caa0e9a507a5799
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108421"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44291017"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -30,48 +30,54 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
 |[Listar aplicativos](../api/application-list.md) | Coleção [application](application.md) | Recuperar a lista de aplicativos na organização. |
-|[Criar aplicativo](../api/application-post-applications.md) | [application](application.md) | Cria (registra) um novo aplicativo.|
-|[Obter aplicativo](../api/application-get.md) | [application](application.md) |Ler as propriedades e as relações de um objeto de aplicativo.|
+|[Criar aplicativo](../api/application-post-applications.md) | [aplicativo](application.md) | Cria (registra) um novo aplicativo.|
+|[Obter aplicativo](../api/application-get.md) | [aplicativo](application.md) |Ler as propriedades e as relações de um objeto de aplicativo.|
 |[Atualizar aplicativo](../api/application-update.md) | [application](application.md) |Atualize o objeto application. |
 |[Excluir aplicativo](../api/application-delete.md) | Nenhum |Exclua o objeto application. |
 |[Listar aplicativos excluídos](../api/directory-deleteditems-list.md) | Conjunto [directoryObject](directoryobject.md) | Recuperar uma lista de aplicativos excluídos recentemente. |
 |[Obter o aplicativo excluído](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Recuperar as propriedades de um aplicativo excluído recentemente. |
 |[Excluir aplicativo permanentemente](../api/directory-deleteditems-delete.md) | Nenhum | Excluir permanentemente um aplicativo. |
 |[Restaurar aplicativo excluído](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restaurar um aplicativo excluído recentemente. |
-|[Adicionar senha](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Adicionar uma senha forte a um aplicativo.|
-|[Remover senha](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remover uma senha de um aplicativo.|
-| [Criar extensão](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Criar uma propriedade de extensão em um objeto de aplicativo. |
-| [Listar extensões](../api/application-list-extensionproperty.md) | Coleção [extensionProperty](extensionProperty.md) | Listar propriedades de extensão em um objeto de aplicativo. |
-| [Excluir extensão](../api/application-delete-extensionproperty.md) | Nenhum | Excluir uma propriedade de extensão de um objeto de aplicativo. |
-|[Atribuir tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| Coleção [tokenLifetimePolicy](tokenlifetimepolicy.md)| Atribuir um tokenLifetimePolicy a este objeto.|
-|[Listar tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| Coleção [tokenLifetimePolicy](tokenlifetimepolicy.md)| Obter todos os tokenLifetimePolicies atribuídos a este objeto.|
-|[Remover tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| Coleção [tokenLifetimePolicy](tokenlifetimepolicy.md)| Remover um tokenLifetimePolicy deste objeto.|
-|[Listar proprietários](../api/application-list-owners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma coleção de objetos owner.|
-|[Adicionar proprietário](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Adicionar um proprietário postando na coleção de proprietários.|
-|[Remover proprietário](../api/application-delete-owners.md) |Nenhum| Remover um proprietário de um aplicativo.|
 |[delta](../api/application-delta.md)|Coleção [application](application.md)| Obtenha alterações incrementais para aplicativos. |
 |[Criar chamada](../api/application-post-calls.md)|[call](call.md)|Crie uma nova chamada postando na coleção calls.|
 |[Criar reunião online](../api/application-post-onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|Crie uma nova reunião online postando na coleção onlineMeetings.|
+|**Certificados e segredos**| | |
+|[Adicionar senha](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Adicionar uma senha forte a um aplicativo.|
+|[Remover senha](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remover uma senha de um aplicativo.|
+|[Tecla Adicionar](../api/application-addkey.md)|[keycredential](keycredential.md)|Adicione uma credencial de chave a um aplicativo.|
+|[Remover chave](../api/application-removekey.md)|Nenhum|Remover uma credencial de chave de um aplicativo.|
+|**Extensões**| | |
+| [Listar extensões](../api/application-list-extensionproperty.md) | Coleção [extensionProperty](extensionProperty.md) | Listar propriedades de extensão em um objeto de aplicativo. |
+| [Criar extensão](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Criar uma propriedade de extensão em um objeto de aplicativo. |
+| [Excluir extensão](../api/application-delete-extensionproperty.md) | Nenhum | Excluir uma propriedade de extensão de um objeto de aplicativo. |
+|**Owners**| | |
+|[Listar proprietários](../api/application-list-owners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma coleção de objetos owner.|
+|[Adicionar proprietário](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Adicionar um proprietário postando na coleção de proprietários.|
+|[Remover proprietário](../api/application-delete-owners.md) |Nenhum| Remover um proprietário de um aplicativo.|
+|**Políticas**| | |
+|[List assigned policies](../api/policy-list-assigned.md)| Coleção [policy](policy.md)| Obtenha todas as políticas atribuídas a esse objeto.|
+|[Atribiur tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| Coleção [tokenLifetimePolicy](tokenlifetimepolicy.md)| Atribuir um tokenLifetimePolicy a este objeto.|
+|[Listar tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| Coleção [tokenLifetimePolicy](tokenlifetimepolicy.md)| Obter todos os tokenLifetimePolicies atribuídos a este objeto.|
+|[Remover tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| Coleção [tokenLifetimePolicy](tokenlifetimepolicy.md)| Remover um tokenLifetimePolicy deste objeto.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| addIns | [addIn](addin.md) | Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade "FileHandler". Isso permitirá que serviços como o Office 365 chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando. |
+| addIns | coleção [AddIn](addin.md) | Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade "FileHandler". Isso permitirá que serviços como o Office 365 chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando. |
 | api | [apiApplication](apiapplication.md) | Especifica configurações para um aplicativo que implementa uma API Web. |
-| appId | String | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo pelo Azure AD. Não anulável. Somente leitura. |
-| appRoles | Coleção [appRole](approle.md) | A coleção de funções de aplicativo que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável. |
+| appId | Cadeia de caracteres | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo pelo Azure AD. Não anulável. Somente leitura. |
+| appRoles | Coleção [appRole](approle.md) | A coleção de funções declaradas pelo aplicativo. Com as [atribuições de função de aplicativo](approleassignment.md), essas funções podem ser atribuídas a usuários, grupos ou a entidades de serviço de outros aplicativos. Não anulável. |
 | createdDateTime | DateTimeOffset | A data e a hora que o aplicativo foi registrado. Somente leitura. |
 | deletedDateTime | DateTimeOffset | A data e a hora que o aplicativo foi excluído. Somente leitura. |
 | displayName | String | O nome de exibição do aplicativo. |
-| groupMembershipClaims | Cadeia de caracteres | Configura a declaração `groups` emitida em um usuário ou o token de acesso OAuth 2.0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores válidos de cadeia de caracteres:<ul><li>`None`</li><li>`SecurityGroup`: para grupos de segurança e funções do Azure AD</li><li>`All`: isso obterá todos os grupos de segurança e de distribuição e funções de diretório do Azure AD dos quais o usuário conectado é membro.</li></ul> |
+| groupMembershipClaims | String | Configura a declaração `groups` emitida em um usuário ou o token de acesso OAuth 2.0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores válidos de cadeia de caracteres:<ul><li>`None`</li><li>`SecurityGroup`: para grupos de segurança e funções do Azure AD</li><li>`All`: isso obterá todos os grupos de segurança e de distribuição e funções de diretório do Azure AD dos quais o usuário conectado é membro.</li></ul> |
 | id | String | O identificador exclusivo do aplicativo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 | identifierUris | Coleção de cadeias de caracteres | Os URIs que identificam o aplicativo em seu locatário do Azure AD ou em um domínio personalizado verificado, se o aplicativo é multilocatário. Para saber mais, confira [Objetos de aplicativo e objetos de entidade de serviço](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. |
 | informações  | [informationalUrl](informationalurl.md) | Informações básicas de perfil do aplicativo, como marketing, suporte, termos de serviço e URLs de política de privacidade do aplicativo. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, confira [Como adicionar termos de serviço e política de privacidade a aplicativos do Azure AD registrados](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 | isFallbackPublicClient | Booliano | Especifica o tipo de aplicativo de fallback como cliente público; por exemplo, um aplicativo instalado em um dispositivo móvel. O valor padrão é `false`, o que significa que o tipo de aplicativo de fallback é cliente confidencial, como um aplicativo Web. Há determinados cenários em que o Azure AD não pode determinar o tipo de aplicativo cliente (por exemplo, o fluxo [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3), no qual ele é configurado sem especificar um URI de redirecionamento). Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade.|
 | keyCredentials | Coleção [keyCredential](keycredential.md) | A coleção de credenciais chaves associada ao aplicativo Não anulável. |
 | logo | Stream | O principal logotipo do aplicativo. Não anulável. |
-| oauth2RequiredPostResponse | Booliano | Especifica se, como parte das solicitações de token OAuth 2.0, o Azure AD permitirá solicitações POST, em vez de solicitações GET. O padrão é false, que especifica que somente as solicitações GET serão permitidas. |
 | optionalClaims | [optionalClaims](optionalclaims.md) | Desenvolvedores de aplicativos podem configurar declarações opcionais em aplicativos do Azure AD para especificar quais declarações desejam em tokens enviados ao aplicativo pelo serviço de token de segurança da Microsoft. Confira [fornecer declarações opcionais ao aplicativo Azure AD](/azure/active-directory/develop/active-directory-optional-claims) para obter mais informações.|
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Especifica as configurações de controle parental de um aplicativo. |
 | passwordCredentials | Coleção [passwordCredential](passwordcredential.md)|A coleção de credenciais de senha associada ao aplicativo. Não anulável.|
@@ -111,7 +117,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "addIns": {"@odata.type": "microsoft.graph.addIn"},
+  "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
   "api": {"@odata.type": "microsoft.graph.apiApplication"},
   "appId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],

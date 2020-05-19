@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 53c80299f0cbc85eddf1eab6b1cce1f5b37a290e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: b59d6e2adddd266c8627b603e27e0585fe0a7912
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107084"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289296"
 ---
 # <a name="create-extensionproperty"></a>Criar extensionproperty
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Aplicativo | Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -42,7 +42,7 @@ POST /applications/{id}/extensionProperties
 | Nome       | Descrição|
 |:-----------|:----------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Content-type | application/json. Obrigatório. |
+| Content-Type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça um objeto [extensionproperty](../resources/e
 |:-------------|:------------|:------------|
 |dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a Propriedade Extension pode armazenar. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary`-256 bytes máximo</li><li>`Boolean`</li><li>`DateTime`-Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer`-valor de 32-bit.</li><li>`LargeInteger`-valor de 64-bit.</li><li>`String`-256 caracteres no máximo</li></ul>|
 |name|String| Nome da propriedade de extensão. Não anulável. |
-|targetObjects|Coleção de cadeias de caracteres| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|targetObjects|Conjunto de cadeias de caracteres| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>Resposta
@@ -101,7 +101,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [extensionproperty](../resources/extensionProperty.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [extensionproperty](../resources/extensionProperty.md) no corpo da resposta.
 
 <!-- {
   "blockType": "response",

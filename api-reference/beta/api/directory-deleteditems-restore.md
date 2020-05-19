@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 911f5c661f8e7393fcbf0f0cf0d8365415779e6a
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: fd963c2235735381d2f8b6709aaea3cebdaea53b
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181011"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287735"
 ---
 # <a name="restore-deleted-item"></a>Restaurar item excluído
 
@@ -27,9 +27,30 @@ Um item recentemente excluído permanecerá disponível por até 30 dias. Após 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-* Para aplicativos: Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All
-* Para usuários: user. ReadWrite. All, Directory. AccessAsUser. All
-* Para grupos: Group. ReadWrite. All, Directory. AccessAsUser. All
+### <a name="for-applications"></a>Para aplicativos:
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Application. ReadWrite. All, Application. ReadWrite. OwnedBy |
+
+
+### <a name="for-users"></a>Para usuários:
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Aplicativo | User.ReadWrite.All |
+
+### <a name="for-groups"></a>Para grupos:
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +61,7 @@ POST /directory/deleteditems/{id}/restore
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | &lt;Token&gt; de portador *necessário*|
+| Autorização  | Token de portador &lt; &gt; *necessário*|
 | Content-type | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação

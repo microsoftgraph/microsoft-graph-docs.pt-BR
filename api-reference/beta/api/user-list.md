@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 60220b01791add0cfba030fcb40f73e33ea6e2c2
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
-ms.translationtype: HT
+ms.openlocfilehash: 5da2a929f054e942819786271aac004ed93baee6
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107518"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290690"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -33,6 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Auditlogs.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users
@@ -40,12 +41,14 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte aos [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta, incluindo `$search` , `$count` e `$filter` . Você pode usar `$search` na propriedade **DisplayName** . Quando os itens são adicionados ou atualizados para esse recurso, eles são especialmente indexados para uso com os `$count` `$search` parâmetros de consulta e. Pode haver um ligeiro atraso entre a adição ou atualização de um item e quando ele está disponível no índice.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho        | Valor                      |
-|:--------------|:---------------------------|
+
+| Cabeçalho | Valor |
+|:------ |:----- |
 | Autorização | {token} do portador (obrigatório)  |
+| ConsistencyLevel | ocorra. Esse cabeçalho e `$count` são necessários ao usar `$search` ou ao usar `$filter` com o `$orderby` parâmetro de consulta. Ele usa um índice que pode não estar atualizado com alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -55,9 +58,9 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [user](../resources/user.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-all-users"></a>Exemplo 1: listar todos os usuários
+### <a name="example-1-get-all-users"></a>Exemplo 1: obter todos os usuários
 
 #### <a name="request"></a>Solicitação
 
@@ -85,8 +88,7 @@ GET https://graph.microsoft.com/beta/users
 
 ---
 
-
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta. 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
@@ -100,32 +102,24 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 608
 
 {
-  "value": [
+  "value":[
     {
-      "businessPhones": [
-        "businessPhones-value"
-      ],
-      "displayName": "displayName-value",
-      "givenName": "givenName-value",
-      "jobTitle": "jobTitle-value",
-      "mail": "mail-value",
-      "mobilePhone": "mobilePhone-value",
-      "officeLocation": "officeLocation-value",
-      "preferredLanguage": "preferredLanguage-value",
-      "surname": "surname-value",
-      "userPrincipalName": "userPrincipalName-value",
-      "id": "id-value"
+      "displayName":"contoso1",
+      "mail":"'contoso1@gmail.com",
+      "mailNickname":"contoso1_gmail.com#EXT#",
+      "otherMails":["contoso1@gmail.com"],
+      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
+      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
 }
 ```
 
-### <a name="example-2-find-a-user-account-using-a-sign-in-name"></a>Exemplo 2: localizar uma conta de usuário usando o nome de entrada
+### <a name="example-2-get-a-user-account-using-a-sign-in-name"></a>Exemplo 2: obter uma conta de usuário usando um nome de entrada
 
-Encontrar uma conta de usuário em um locatário B2C usando um nome de entrada (também conhecido como conta local). Essa solicitação pode ser usada por um suporte técnico para encontrar uma conta de usuário do cliente, em um locatário B2C (neste exemplo, o locatário B2C é contoso.onmicrosoft.com).
+Encontre uma conta de usuário usando um nome de logon (também conhecido como conta local).
 
 >[!NOTE]
 >Ao filtrar por **identidades**, você deve fornecer o **emissor** e **issuerAssignedId**.
@@ -156,7 +150,6 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identi
 
 ---
 
-
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta. 
@@ -171,19 +164,17 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 108
 
 {
   "value": [
     {
-      "displayName": "John Smith",
-      "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2"
+      "displayName": "John Smith"
     }
   ]
 }
 ```
 
-### <a name="example-3--list-users-including-their-last-sign-in-time"></a>Exemplo 3: listar usuários incluindo o horário da última entrada
+### <a name="example-3-get-users-including-their-last-sign-in-time"></a>Exemplo 3: obter usuários, incluindo a última hora de entrada
 
 #### <a name="request"></a>Solicitação
 
@@ -211,7 +202,6 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### <a name="response"></a>Resposta
 
@@ -258,8 +248,6 @@ Content-type: application/json
 Este é um exemplo de solicitação.
 
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_last_time_filter"
@@ -267,20 +255,6 @@ Este é um exemplo de solicitação.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-filter-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-last-time-filter-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-last-time-filter-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
 
@@ -318,8 +292,6 @@ Content-type: application/json
 Este é um exemplo de solicitação.
 
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_last_time_range"
@@ -327,20 +299,6 @@ Este é um exemplo de solicitação.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-range-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-last-time-range-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-last-time-range-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
 
@@ -375,6 +333,183 @@ Content-type: application/json
         "lastSignInDateTime": "2019-04-29T02:16:18Z",
         "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
       }
+    }
+  ]
+}
+```
+
+### <a name="example-6-get-only-a-count-of-users"></a>Exemplo 6: obter apenas uma contagem de usuários
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+893
+
+
+### <a name="example-7-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 7: use $filter e $top para obter um usuário com um nome de exibição que comece com ' a ', incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
+  "@odata.count":1,
+  "value":[
+    {
+      "displayName":"a",
+      "mail":"a@contoso.com",
+      "mailNickname":"a_contoso.com#EXT#",
+      "otherMails":["a@contoso.com"],
+      "proxyAddresses":["SMTP:a@contoso.com"],
+      "userPrincipalName":"a_contoso.com#EXT#@microsoft.onmicrosoft.com"
+    }
+  ]
+}
+```
+
+### <a name="example-8-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>Exemplo 8: Use $search para obter os usuários com nomes de exibição que contenham as letras "WA", incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_wa_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$search="displayName:wa"&$orderby=displayName&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
+  "@odata.count":7,
+  "value":[
+    {
+      "displayName":"Oscar Ward",
+      "givenName":"Oscar",
+      "mail":"oscarward@contoso.com",
+      "mailNickname":"oscward",
+      "userPrincipalName":"oscarward@contoso.com"
+    }
+  ]
+}
+
+```
+
+### <a name="example-9-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a>Exemplo 9: Use $search para obter os usuários com nomes de exibição que contenham as letras "WA" ou as letras "como", incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_to_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$search="displayName:wa" OR "displayName:to"&$orderbydisplayName&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta. 
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
+  "@odata.count":7,
+  "value":[
+    {
+      "displayName":"Oscar Ward",
+      "givenName":"Oscar",
+      "mail":"oscarward@contoso.com",
+      "mailNickname":"oscward",
+      "userPrincipalName":"oscarward@contoso.com"
+    },
+    {
+      "displayName":"contoso1",
+      "mail":"'contoso1@gmail.com",
+      "mailNickname":"contoso1_gmail.com#EXT#",
+      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
+      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
 }

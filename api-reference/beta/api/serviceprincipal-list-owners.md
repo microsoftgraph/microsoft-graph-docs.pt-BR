@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipalName: listar proprietários'
 description: Recupere uma lista de proprietários do servicePrincipalName.
-localization_priority: Normal
+localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: sureshja
-ms.openlocfilehash: 687fe3ad3ed82334f75d16a002eeeb9a6a6564d8
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+author: davidmu1
+ms.openlocfilehash: fbdd993e7d066c35b463a4c0f0202496f2770762
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219043"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44291199"
 ---
 # <a name="serviceprincipals-list-owners"></a>servicePrincipalName: listar proprietários
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de proprietários do servicePrincipalName.
+Recupere uma lista de proprietários do [servicePrincipalName](../resources/serviceprincipal.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application. Read. All, Application. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
+|Aplicativo | Application. Read. All, Application. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -40,9 +40,9 @@ GET /servicePrincipals/{id}/owners
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome           | Descrição                |
+|:---------------|:---------------------------|
+| Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -50,40 +50,29 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+## <a name="examples"></a>Exemplos
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_get_owners"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/owners
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-get-owners-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-get-owners-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. 
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-get-owners-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+> Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

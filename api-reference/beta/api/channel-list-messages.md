@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ab51a0f980471b48edc6885f965a7b36d543911
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
-ms.translationtype: HT
+ms.openlocfilehash: ac3890a4bbfd99c919dc2f02e4bc0d717560dc90
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440280"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288617"
 ---
 # <a name="list-channel-messages"></a>Listar mensagens do canal
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All, Group.Read.All,Group.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| ChannelMessage.Read.All, Group.Read.All,Group.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| ChannelMessage. Read. Group ([RSC](https://aka.ms/teams-rsc)), ChannelMessage. Read. All, Group. Read. All, Group. ReadWrite. All |
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

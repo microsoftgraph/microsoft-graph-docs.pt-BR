@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cd5e9fccf59a2e041dca9056ab7456b88a046d82
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: e30ffe72da624cc6ce304e9775f933969b2c9659
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107560"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290624"
 ---
 # <a name="list-user-transitive-memberof"></a>Listar usuário transitiva membro
 
@@ -24,13 +24,11 @@ Obter grupos, funções de diretório e unidades administrativas das quais o usu
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
-
-[!INCLUDE [limited-info](../../includes/limited-info.md)]
+| Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
+|:--------------- |:------------------------------------------- |
+| Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -42,14 +40,14 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte aos [parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta, incluindo `$search` , `$count` e `$filter` . O elenco do OData também é habilitado, por exemplo, você pode transmitir para obter apenas a associação transitiva em grupos. Você pode usar `$search` na propriedade **DisplayName** . Quando os itens são adicionados ou atualizados para esse recurso, eles são especialmente indexados para uso com os `$count` `$search` parâmetros de consulta e. Pode haver um ligeiro atraso entre a adição ou atualização de um item e quando ele está disponível no índice.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Cabeçalho       | Valor |
-|:---------------|:--------|
+| Cabeçalho | Valor |
+|:------ |:----- |
 | Autorização  | {token} de portador. Obrigatório.  |
-| Aceitar  | application/json|
+| ConsistencyLevel | ocorra. Esse cabeçalho e `$count` são necessários ao usar os `$search` parâmetros de consulta de conversão de,, `$filter` `$orderby` ou OData. Ele usa um índice que pode não estar atualizado com alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -59,39 +57,27 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-get-groups-directory-roles-and-administrative-units-that-the-user-is-a-member-of"></a>Exemplo 1: obter grupos, funções de diretório e unidades administrativas das quais o usuário é membro
+
+#### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_transitivememberof"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/transitiveMemberOf
+GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-transitivememberof-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-transitivememberof-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a>Resposta
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-transitivememberof-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-### <a name="response"></a>Resposta
-
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta.
+>**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -104,21 +90,179 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "value":[
     {
-      "@odata.type": "#microsoft.graph.group",
-      "id": "id-value",
-      "createdDateTime": null,
-      "description": "All users at the company",
-      "displayName": "All Users",
-      "groupTypes": [],
-      "mailEnabled": false,
-      "securityEnabled": true,
+      "@odata.type":"#microsoft.graph.group",
+      "displayName":"All_Contoso_Licensing",
+      "mailEnabled":true,
+      "mailNickname":"ContosoMailNickName",
+      "securityEnabled":true
+    },
+    {
+      "@odata.type":"#microsoft.graph.group",
+      "displayName":"ContosoAudience_PugetSound",
+      "mailEnabled":true,
+      "mailNickname":"Contoso_PugetSound",
+      "securityEnabled":true
     }
   ]
 }
 ```
 
+### <a name="example-2-get-only-a-count-of-transitive-membership-in-groups-directory-roles-and-administrative-units"></a>Exemplo 2: obter apenas uma contagem de associação transitiva em grupos, funções de diretório e unidades administrativas
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+893
+
+
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-transitive-membership-in-groups"></a>Exemplo 3: usar a conversão OData para obter apenas uma contagem de associação transitiva em grupos
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf/microsoft.graph.group/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+588
+
+
+### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Exemplo 4: Use $search e a conversão OData para obter uma associação transitiva em grupos com nomes de exibição que contenham as letras "Tier", incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_tier_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search="displayName:tier"&$select=displayName,id
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups(displayName,id)",
+  "@odata.count":7,
+  "value":[
+    {
+      "displayName":"Contoso-tier Query Notification",
+      "id":"11111111-2222-3333-4444-555555555555"
+    }
+  ]
+}
+```
+
+### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 5: use $filter e o elenco OData para obter uma associação transitiva em grupos com um nome de exibição que começa com ' a ', incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
+  "@odata.count":76,
+  "value":[
+    {
+      "displayName":"AAD Contoso Users",
+      "mail":"AADContoso_Users@contoso.com",
+      "mailEnabled":true,
+      "mailNickname":"AADContoso_Users",
+      "securityEnabled":true
+    }
+  ]
+}
+
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 704bb439bfab3a35f6cebb191430b27b7444e418
-ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
+ms.openlocfilehash: fea5be249ae7d5494637410794987c5b554e2b1d
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006346"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290072"
 ---
 # <a name="list-places"></a>Locais de lista
 
@@ -70,6 +70,8 @@ Este método dá suporte aos seguintes parâmetros de consulta para ajudar a per
 - $filter
 - $select
 - $top
+- $skip
+- $count = true
 
 Use $top para personalizar o tamanho da página. O tamanho de página padrão é 100.
 
@@ -87,7 +89,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de [colocar](../resources/place.md) objetos no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [colocar](../resources/place.md) objetos no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

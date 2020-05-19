@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bc330896b68f404bb23855bc5726fad5a8473b7d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 056ec5a26c8eb38809acbbe56f5097137d265fbb
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42729175"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289306"
 ---
 # <a name="create-call"></a>Criar chamada
 
@@ -52,7 +52,7 @@ POST /communications/calls
 No corpo da solicitação, forneça uma representação JSON de um objeto [Call](../resources/call.md) .
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [Call](../resources/call.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [Call](../resources/call.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -94,7 +94,7 @@ Content-Type: application/json
     "audio"
   ],
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
 }
 ```
@@ -417,7 +417,7 @@ Content-Type: application/json
 ### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>Exemplo 3: criar uma chamada de grupo com mídia hospedada pelo serviço
 
 Isso oferece suporte a até 5 usuários de VoIP. O exemplo mostra como criar uma chamada de grupo com dois usuários de VoIP.
-> **Observação:** Esta chamada de exemplo precisa `Calls.InitiateGroupCalls.All` da permissão. A chamada de grupo criada não dá suporte a chat ou gravação.
+> **Observação:** Esta chamada de exemplo precisa da `Calls.InitiateGroupCalls.All` permissão. A chamada de grupo criada não dá suporte a chat ou gravação.
 
 ##### <a name="request"></a>Solicitação
 ```http
@@ -483,7 +483,7 @@ Content-Type: application/json
 ### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>Exemplo 4: criar uma chamada de grupo com mídia hospedada por aplicativo
 
 Isso oferece suporte a até 5 usuários de VoIP. O exemplo mostra como criar uma chamada de grupo com dois usuários de VoIP.
-> **Observação:** Esta chamada de exemplo precisa `Calls.InitiateGroupCalls.All` da permissão. A chamada de grupo criada não dá suporte a chat ou gravação.
+> **Observação:** Esta chamada de exemplo precisa da `Calls.InitiateGroupCalls.All` permissão. A chamada de grupo criada não dá suporte a chat ou gravação.
 
 ##### <a name="request"></a>Solicitação
 ```http

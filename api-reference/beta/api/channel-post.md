@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 709f0f5a64dce5f4f88ba7eacc4330856cc00ea8
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 81507c205b4935f6d355b35526e84d627bbb665c
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805799"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288575"
 ---
 # <a name="create-channel"></a>Criar canal
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.ReadWrite.All    |
+|Aplicativo | Channel. Create. Group ([RSC](https://aka.ms/teams-rsc)), Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All    |
 
 > **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 

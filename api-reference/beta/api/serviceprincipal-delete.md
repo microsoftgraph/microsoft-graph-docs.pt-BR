@@ -4,13 +4,13 @@ description: Exclua o servicePrincipalName.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: sureshja
-ms.openlocfilehash: cad7df48a955dbe06a239b120d6b32f079a7043b
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+author: davidmu1
+ms.openlocfilehash: 2731a23dea3de57d588ceec304a1155a6c09a34d
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219302"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44291283"
 ---
 # <a name="delete-serviceprincipal"></a>Excluir o servicePrincipalName
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua o servicePrincipalName.
+Excluir um objeto [servicePrincipalName](../resources/serviceprincipal.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Aplicativo | Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -46,38 +46,25 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+## <a name="examples"></a>Exemplos
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_serviceprincipal"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-serviceprincipal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-serviceprincipal-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-serviceprincipal-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

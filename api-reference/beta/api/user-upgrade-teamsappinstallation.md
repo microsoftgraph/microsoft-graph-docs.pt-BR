@@ -5,16 +5,16 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 01a08e81279883225b2cf096e7f6b8767e8eb0d5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09d306a51f5b56265e6c1b553bfbb226f5999b2a
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451592"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290655"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation: atualização
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.ReadWrite.All   |
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.ReadWrite.All, Directory.ReadWrite.All |
 

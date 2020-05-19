@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d755914128e5945fcd45e2df79fce95f7d5c03df
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 944c0a2e30a7202ad85510be84ef8b426059f4b6
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107259"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289394"
 ---
 # <a name="add-application-password"></a>Adicionar senha de aplicativo
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
+|Aplicativo | Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,17 +45,17 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto password no corpo da resposta. O Azure AD gera uma senha forte que é retornada por `secretText` meio da propriedade. Não há como recuperar essa senha no futuro.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto password no corpo da resposta. O Azure AD gera uma senha forte que é retornada por meio da `secretText` propriedade. Não há como recuperar essa senha no futuro.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação.
 
 ```http
 POST https://graph.microsoft.com/beta/applications/{id}/addPassword
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+Este é um exemplo de resposta.
 
 ```http
 HTTP/1.1 200 OK

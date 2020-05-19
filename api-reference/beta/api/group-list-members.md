@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: feae4be3a16254e15548f53bb19d55d186fa1ac4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1aecbc2fe5c9f73902c3b247c499741468c163db
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396945"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289620"
 ---
 # <a name="list-group-members"></a>Membros do grupo de lista
 
@@ -24,38 +24,48 @@ Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, con
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User. ReadBasic. All, User. Read. All, Group. Read. All, Directory. Read. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Group.Read.All, Directory.Read.All |
+| Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
+|:--------------- |:------------------------------------------- |
+| Delegado (conta corporativa ou de estudante) | User. ReadBasic. All, User. Read. All, Group. Read. All, Directory. Read. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | Group. Read. All, User. Read. All, Directory. Read. All |
 
-> Observação: para listar os membros de um grupo de associação oculto, a permissão member. Read. Hidden é necessária.
+> **Observação:** Para listar os membros de um grupo de associação oculto, a permissão member. Read. Hidden é necessária.
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
  
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/members
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+Este método oferece suporte aos [parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta, incluindo `$search` , `$count` e `$filter` . O elenco do OData também é habilitado, por exemplo, você pode transmitir para obter apenas os usuários que são membros do grupo. Você pode usar `$search` na propriedade **DisplayName** . Quando os itens são adicionados ou atualizados para esse recurso, eles são especialmente indexados para uso com os `$count` `$search` parâmetros de consulta e. Pode haver um ligeiro atraso entre a adição ou atualização de um item e quando ele está disponível no índice.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+
+| Nome | Descrição |
+|:---- |:----------- |
+| Autorização | {token} de portador. Obrigatório. |
+| ConsistencyLevel | ocorra. Esse cabeçalho e `$count` são necessários ao usar os `$search` parâmetros de consulta de conversão de,, `$filter` `$orderby` ou OData. Ele usa um índice que pode não estar atualizado com alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-get-the-direct-membership-in-a-group"></a>Exemplo 1: obter a associação direta em um grupo
+
 #### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -80,10 +90,11 @@ GET https://graph.microsoft.com/beta/groups/{id}/members
 
 ---
 
-
 #### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
 >**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,20 +108,166 @@ Content-type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.user",
-      "businessPhones": [
-        "businessPhones-value"
-      ],
-      "displayName": "displayName-value",
-      "givenName": "givenName-value",
-      "jobTitle": "jobTitle-value",
-      "mail": "mail-value",
-      "mobilePhone": "mobilePhone-value",
-      "officeLocation": "officeLocation-value",
-      "preferredLanguage": "preferredLanguage-value",
-      "surname": "surname-value",
-      "userPrincipalName": "userPrincipalName-value",
-      "id": "id-value"
+      "id": "11111111-2222-3333-4444-555555555555",
+      "mail": "group1@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "Contoso1",
+      "securityEnabled": true
+    }
+  ]
+}
+```
+
+### <a name="example-2-get-only-a-count-of-all-membership"></a>Exemplo 2: obter apenas uma contagem de todas as associações
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/{id}/members/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+893
+
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-user-membership"></a>Exemplo 3: usar a conversão OData para obter apenas uma contagem de membros do usuário
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_user_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/{id}/members/microsoft.graph.user/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+893
+
+### <a name="example-4-use-searchand-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>Exemplo 4: Use $searchand conversão OData para obter a associação do usuário em grupos com nomes de exibição que contenham as letras "PR", incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_pr_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/{id}/members/microsoft.graph.user?$count=true&$orderby=displayName&$search="displayName:Pr"&$select=displayName,id
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users(displayName,id)",
+  "@odata.count":7,
+  "value":[
+    {
+      "displayName":"Joseph Price",
+      "id":"11111111-2222-3333-4444-555555555555"
+    },
+    {
+      "displayName":"Preston Morales",
+      "id":"11111111-2222-3333-4444-555555555555"
+    }
+  ]
+}
+```
+
+### <a name="example-5-use-filter-to-get-group-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>Exemplo 5: use $filter para obter a associação de grupo com um nome de exibição que comece com a letra "A", incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/{id}/members?$count=true&$filter=startswith(displayName, 'a')
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
+  "@odata.count":76,
+  "value":[
+    {
+      "displayName":"AAD Contoso Users",
+      "mail":"AADContoso_Users@contoso.com",
+      "mailEnabled":true,
+      "mailNickname":"AADContoso_Users",
+      "securityEnabled":true
     }
   ]
 }

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bdf0f27bcd083142bf5f7ec14ceac32853aaf091
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b74ea471f1756247a6e7ee3b10d43857b89d9891
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454105"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290150"
 ---
 # <a name="eventmessage-resource-type"></a>Tipo de recurso eventMessage
 
@@ -109,7 +109,7 @@ Veja a seguir uma representação JSON do recurso
 |conversationIndex|Edm.Binary|Indica a posição da mensagem dentro da conversa.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|A hora de término da reunião solicitada.|
-|sinalizar|[followUpFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
+|flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio da qual a mensagem foi enviada. Na maioria dos casos, esse valor é o mesmo que o da propriedade **remetente**, exceto para cenários de compartilhamento ou delegação. O valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |hasAttachments|Boolean|Indica se a mensagem tem anexos.|
 |id|Cadeia de caracteres| Identificador exclusivo da mensagem. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
@@ -118,10 +118,10 @@ Veja a seguir uma representação JSON do recurso
 |internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | A coleção de cabeçalhos da mensagem, definida por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), que fornece detalhes do caminho de rede adotado por uma mensagem do remetente para o destinatário. Somente leitura.|
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). |
 |isAllDay |Booliano|Indica se o evento dura todo o dia. Ajustar essa propriedade requer ajustar as propriedades **StartDateTime** e **EndDateTime** do evento também.|
-|IsDelegated foi removida|Boolean|True se essa solicitação de reunião estiver acessível para um representante; caso contrário, false. O padrão é false.|
-|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|IsDelegated foi removida|Booliano|True se essa solicitação de reunião estiver acessível para um representante; caso contrário, false. O padrão é false.|
+|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
-|isOutOfDate|Boolean|Indica se esta solicitação de reunião foi desfeita por uma solicitação mais recente.|
+|isOutOfDate|Booliano|Indica se esta solicitação de reunião foi desfeita por uma solicitação mais recente.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
 |isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
@@ -135,9 +135,9 @@ Veja a seguir uma representação JSON do recurso
 |sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo da propriedade **from**. Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [ou ao enviar uma mensagem como um delegado](/graph/outlook-share-delegate-calendar.md). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|O horário de início da reunião solicitada.|
-|assunto|Cadeia de caracteres|O assunto da mensagem.|
+|subject|Cadeia de caracteres|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
-|type|String|O tipo de reunião solicitada `singleInstance`: `occurence`, `exception`, `seriesMaster`,.|
+|type|String|O tipo de reunião solicitada: `singleInstance` , `occurence` , `exception` , `seriesMaster` .|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual.|
 |UnsubscribeData|String|As entradas válidas analisadas no cabeçalho List-Unsubscribe.  Esses são os dados para o comando mail no cabeçalho List-Unsubscribe, se a propriedade UnsubscribeEnabled for true.|
 |UnsubscribeEnabled|Booliano|Indica se a mensagem está habilitada para o cancelamento da assinatura.  valueTrue se o cabeçalho list-Unsubscribe estiver em conformidade com o rfc-2369.|

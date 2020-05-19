@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3c5777de9f5d4218b6270ebe81a43504dce99574
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
-ms.translationtype: HT
+ms.openlocfilehash: e364fca93eb47020a1118dc61bbd1821f413d360
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107672"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44291178"
 ---
 # <a name="list-joinedteams"></a>Listar joinedTeams
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.Read.All, User.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Team. ReadBasic. All, TeamSettings. Read. All, TeamSettings. ReadWrite. All, User. Read. All, User. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | User.Read.All, User.ReadWrite.All |
+|Aplicativo | Team. ReadBasic. All, TeamSettings. Read. All, TeamSettings. ReadWrite. All, User. Read. All, User. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
 
 > Atualmente, com permissões delegadas pelo usuário, essa operação só funciona para o usuário "eu". 
 > Com permissões de aplicativo, ela serve para todos os usuários, especificando a ID do usuário específico. (O alias 'eu' não é compatível com permissões de aplicativo) Para ver detalhes, confira [Problemas conhecidos](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).

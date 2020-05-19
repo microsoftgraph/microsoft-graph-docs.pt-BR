@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 62f55b286bdea316b087a018f342f564f0341406
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
-ms.translationtype: HT
+ms.openlocfilehash: f5454db8b04fee03c2c5ae27e0842df6aa0781fb
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436479"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288512"
 ---
 # <a name="list-conversationmembers"></a>Listar conversationMembers
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)|Chat.Read, Chat.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| Chat.Read.All, Chat.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| Chat. ReadBasic, chat. Read, chat. ReadWrite |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| Chat. ReadBasic. All, chat. Read. All, chat. ReadWrite. All |
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

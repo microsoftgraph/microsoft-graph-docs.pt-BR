@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5e316b462b6182936ebaa4da10ec5a0bb49f7215
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 653672b2c8f20cf4e358fdd1d0a5b8bfad84a38d
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452467"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289897"
 ---
 # <a name="add-tab-to-channel"></a>Adicionar uma guia ao canal
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,11 +25,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | TeamsTab. Create, TeamsTab. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-| Aplicativo                            | Group.ReadWrite.All                         |
+| Aplicativo                            | TeamsTab. Create. Group ([RSC](https://aka.ms/teams-rsc)), TeamsTab. Create, TeamsTab. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

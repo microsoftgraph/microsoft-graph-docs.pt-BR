@@ -1,16 +1,16 @@
 ---
 title: Listar o servicePrincipalName memberOf
 description: Obtenha os grupos e funções de diretório dos quais essa entidade de serviço é membro direto. Essa operação não é transitiva.
-localization_priority: Normal
+localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: sureshja
-ms.openlocfilehash: 50b5e26d9deb461ac672b7529450e092055824fd
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+author: davidmu1
+ms.openlocfilehash: 31f40cc2abd804d29e63f7532542657a4d268d16
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219064"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44291220"
 ---
 # <a name="list-serviceprincipal-memberof"></a>Listar o servicePrincipalName memberOf
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha os grupos e funções de diretório dos quais essa entidade de serviço é membro direto. Essa operação não é transitiva.
+Obtenha os grupos e funções de diretório dos quais esse [servicePrincipalName](../resources/serviceprincipal.md) é um membro direto. Essa operação não é transitiva.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application. Read. All, Directory. Read. All, Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
+|Aplicativo | Application. Read. All, Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -41,12 +41,14 @@ GET /servicePrincipals/{id}/memberOf
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte aos [parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta, incluindo `$search` , `$count` e `$filter` . A conversão OData também é habilitada, por exemplo, você pode transmitir para obter apenas o directoryRoles do usuário é um membro. Você pode usar `$search` na propriedade **DisplayName** . Quando os itens são adicionados ou atualizados para esse recurso, eles são especialmente indexados para uso com os `$count` `$search` parâmetros de consulta e. Pode haver um ligeiro atraso entre a adição ou atualização de um item e quando ele está disponível no índice.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
+| ConsistencyLevel | ocorra. Esse cabeçalho e `$count` são necessários ao usar os `$search` parâmetros de consulta de conversão de,, `$filter` `$orderby` ou OData. Ele usa um índice que pode não estar atualizado com alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -55,38 +57,27 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-get-groups-and-directory-roles-that-the-service-principal-is-a-direct-member-of"></a>Exemplo 1: obter grupos e funções de diretório de que a entidade de serviço é um membro direto de
 
-Este é um exemplo da solicitação.
+#### <a name="request"></a>Solicitação
 
-# <a name="http"></a>[HTTP](#tab/http)
+Este é um exemplo de solicitação.
+
 <!-- {
   "blockType": "request",
   "name": "get_serviceprincipal_memberof"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-serviceprincipal-memberof-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-serviceprincipal-memberof-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a>Resposta
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-serviceprincipal-memberof-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+Este é um exemplo de resposta. 
+> **Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 
----
-
-
-### <a name="response"></a>Resposta
-
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,6 +99,166 @@ Content-type: application/json
       "groupTypes": [],
       "mailEnabled": false,
       "securityEnabled": true,
+    }
+  ]
+}
+```
+
+### <a name="example-2-get-only-a-count-of-all-memberships"></a>Exemplo 2: obter apenas uma contagem de todas as associações
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+394
+
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>Exemplo 3: usar a conversão OData para obter apenas uma contagem de associação de grupo
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_group_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf/microsoft.graph.group/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+394
+
+### <a name="example-4-use-search-and-odata-cast-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Exemplo 4: Use $search e a conversão OData para obter Associação de grupo com nomes de exibição que contenham as letras "vídeo", incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_video_count"
+}-->
+```msgraph-interactive
+GET iv. https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search=”displayName:Video" 
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "@odata.count":1396,
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.group",
+      "id": "id-value",
+      "createdDateTime": null,
+      "description": "All videos for the company",
+      "displayName": "All Videos",
+      "groupTypes": [],
+      "mailEnabled": false,
+      "securityEnabled": true
+    }
+  ]
+}
+```
+
+### <a name="example-5-use-filter-and-odata-cast-to-get-group-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>Exemplo 5: use $filter e a conversão OData para obter a associação de grupo com um nome de exibição que comece com a letra "A", incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'A')
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "@odata.count":76,
+  "value":[
+    {
+      "@odata.type": "#microsoft.graph.group",
+      "id": "id-value",
+      "createdDateTime": null,
+      "description": "All videos for the company",
+      "displayName": "All Videos",
+      "groupTypes": [],
+      "mailEnabled": false,
+      "securityEnabled": true
     }
   ]
 }

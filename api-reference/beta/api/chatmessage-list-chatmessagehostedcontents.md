@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 50459ee2ec043773480e40d9d3bf3f011f5528d1
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: 019778894e9af80bf5ede1108bfd82ab7082a22a
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562693"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287091"
 ---
 # <a name="list-hostedcontents"></a>Listar hostedContents
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Para o recurso de **usuário** ou **chat** :<br/>Chat.Read, Chat.ReadWrite<br/><br/>Para o recurso de **canal**:<br/>ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| Para o recurso de **usuário** ou **chat** :<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>Para o recurso de **canal**:<br/>ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| Para recurso de **usuário** ou **chat** : chat. Read, chat. ReadWrite<br/><br/>Para recurso de **canal** : ChannelMessage. Read. All, Group. Read. All, Group. Read. WriteAll |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| Para o **usuário** ou recurso de **chat** : chat. Read. All, chat. ReadWrite. All<br/><br/>Para o recurso de **canal** : ChannelMessage. Read. Group ([RSC](https://aka.ms/teams-rsc)), ChannelMessage. Read. All, Group. Read. All, Group. ReadWrite. All |
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

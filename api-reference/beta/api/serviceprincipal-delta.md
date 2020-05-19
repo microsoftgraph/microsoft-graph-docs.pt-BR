@@ -4,13 +4,13 @@ description: Obtenha entidades de serviço recém-criadas, atualizadas ou exclu�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: sureshja
-ms.openlocfilehash: 1489b31e6523c1bcd3b456aa3fef567ac2d3754c
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+author: davidmu1
+ms.openlocfilehash: 3eca743218861bbd83912ea355124a541c63601d
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216705"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44291269"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipalName: Delta
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha entidades de serviço recém-criadas, atualizadas ou excluídas sem ter que realizar uma leitura completa de toda a coleção de recursos. Consulte [usando a consulta Delta](/graph/delta-query-overview) para obter detalhes.
+Obtenha entidades de serviço recém-criadas, atualizadas ou excluídas sem ter que realizar uma leitura completa de toda a coleção de recursos.
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application. Read. All, Directory. Read. All, Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application.ReadWrite.All, Directory.Read.All |
+|Aplicativo | Application. Read. All, Directory. Read. All, Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,32 +56,31 @@ Este método dá suporte a Parâmetros de Consulta OData para ajudar a personali
 - Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade _id_ sempre será retornada. 
 
 - Há suporte limitado para `$filter`:
-  * A única expressão `$filter` suportada é para controlar alterações de recursos específicos, por sua `$filter=id+eq+{value}` ID `$filter=id+eq+{value1}+or+id+eq+{value2}`: ou. O número de IDs que você pode especificar é limitado pelo tamanho máximo de URL.
+  * A única expressão suportada `$filter` é para controlar alterações de recursos específicos, por sua ID: `$filter=id+eq+{value}` ou `$filter=id+eq+{value1}+or+id+eq+{value2}` . O número de IDs que você pode especificar é limitado pelo tamanho máximo de URL.
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | &lt;Token&gt; de portador|
-| Content-Type  | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ### <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto da coleção [servicePrincipalName](../resources/serviceprincipal.md) no corpo da resposta. A resposta também inclui uma URL do nextLink ou uma URL do deltaLink. 
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto de coleção de [servicePrincipalName](../resources/serviceprincipal.md) no corpo da resposta. A resposta também inclui uma URL do nextLink ou uma URL do deltaLink. 
 
 - Se uma URL `nextLink` é retornada, existem páginas de dado adicionais a serem recuperadas na sessão. O aplicativo continua fazendo solicitações usando a URL `nextLink` até uma URL `deltaLink` ser incluída na resposta.
 
-- Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Persista e use `deltaLink` a URL para saber mais sobre as alterações no recurso no futuro.
+- Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Persista e use a `deltaLink` URL para saber mais sobre as alterações no recurso no futuro.
 
 Confira:</br>
 - [Usando a Consulta Delta](/graph/delta-query-overview) para obter detalhes</br>
 - [Obter as alterações incrementais para usuários](/graph/delta-query-users) para solicitações de um exemplo.</br>
 
-### <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+## <a name="example"></a>Exemplo
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -106,8 +105,8 @@ GET https://graph.microsoft.com/beta/servicePrincipals/delta
 ---
 
 
-##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+### <a name="response"></a>Resposta
+>Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- { 
   "blockType": "response",
   "truncated": true,

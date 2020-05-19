@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c6dff7204068f6c9ebb3397cc8e745229e399efa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9af07edcd5019b7ae1d37e69af7c631afd925e5d
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440343"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289464"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>Obter uma resposta a uma mensagem de canal
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)| ChannelMessage. Read. All, Group. Read. All, Group. ReadWrite. All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| ChannelMessage. Read. All, Group. Read. All, Group. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| ChannelMessage. Read. Group ([RSC](https://aka.ms/teams-rsc)), ChannelMessage. Read. All, Group. Read. All, Group. ReadWrite. All |
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

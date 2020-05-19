@@ -5,23 +5,23 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0a6ac8b72f5dea24c0f60062b91dac7648b91e85
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0774b2c214191949857444ae7d6673bd2b49bade
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436563"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288554"
 ---
 # <a name="delete-conversationmember"></a>Excluir conversationMember
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Excluir um [conversationMember](../resources/conversationmember.md) de um [canal](../resources/channel.md).
 
 > [!NOTE]
-> Essa operação só é suportada em canais [](../resources/enums.md#channelmembershiptype-values) com channelMembershipType `private`de. Chamadas com qualquer outro [channelMembershipType](../resources/enums.md#channelmembershiptype-values) retornará uma `400 Bad Request` resposta.
+> Essa operação só é suportada em canais com [channelMembershipType](../resources/enums.md#channelmembershiptype-values) de `private` . Chamadas com qualquer outro [channelMembershipType](../resources/enums.md#channelmembershiptype-values) retornará uma `400 Bad Request` resposta.
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,9 +29,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)|Para o recurso de **usuário** ou **chat** :<br/>Chat.Read, Chat.ReadWrite<br/><br/>Para o recurso de **canal**:<br/>Group.Read.All, Group.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| Para o recurso de **usuário** ou **chat** :<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>Para o recurso de **canal**:<br/>Group.Read.All, Group.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| Member. ReadWrite. Group ([RSC](https://aka.ms/teams-rsc)), ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->

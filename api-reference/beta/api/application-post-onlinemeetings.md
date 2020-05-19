@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9f85832dc557a2e2242c30cd983cfb9800382176
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
-ms.translationtype: HT
+ms.openlocfilehash: f0d6f7ff7b5fb7d6259f5154f9d021823995cb67
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934707"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289289"
 ---
 # <a name="create-onlinemeeting"></a>Criar ReuniãoOnline
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
 | Aplicativo                            | OnlineMeetings.ReadWrite.All*  |
 
-> \* **Observação:** as permissões de aplicativo foram preteridas e serão removidas em julho de 2020. Para criar um evento do Outlook, usando permissões de aplicativo, confira [Criar evento](user-post-events.md).
+>**Observação:** A criação de uma reunião online com um token de aplicativo será suportada em futuro próximo. Forneceremos políticas de aplicativo adicionais que serão complementares ao escopo de permissão baseado em aplicativo. A partir de agora, recomendamos que você use o caminho/me com um token de usuário
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,6 @@ POST /app/onlineMeetings
 POST /communications/onlineMeetings
 POST /me/onlineMeetings
 ```
-> **Observação:** O `/app` ou`/communications` caminho com um token de aplicativo está obsoleto. No futuro, use o/meu caminho com um token de usuário para criar reuniões on-line.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |

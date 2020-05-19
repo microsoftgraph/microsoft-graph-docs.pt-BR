@@ -1,101 +1,105 @@
 ---
-title: 'servicePrincipalName: listar oAuth2Permissiongrants'
-description: Recupere uma lista de objetos oAuth2Permissiongrant.
-localization_priority: Normal
+title: List oauth2PermissionGrants
+description: Recupere uma lista de objetos oAuth2PermissionGrant, representando as autorizações de permissão delegadas.
+localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: sureshja
-ms.openlocfilehash: 089357ff1ba739815a03460bae4a0cdcd78c296d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+author: davidmu1
+ms.openlocfilehash: 96519f02bac351d025502c8f209b37dc36396f55
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219057"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44291213"
 ---
-# <a name="serviceprincipal-list-oauth2permissiongrants"></a>servicePrincipalName: listar oAuth2Permissiongrants
+# <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos oAuth2Permissiongrant.
+Recupere uma lista de entidades [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) , representando as permissões delegadas concedidas à entidade de serviço (representando o aplicativo cliente) para acessar uma API em nome de um usuário.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Directory. Read. All, DelegatedPermissionGrant. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
+|Aplicativo | Directory. Read. All, DelegatedPermissionGrant. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-GET /servicePrincipals/{id}/oAuth2Permissiongrants
+GET /servicePrincipals/{id}/oauth2PermissionGrants
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+
+| Nome           | Descrição                |
+|:---------------|:---------------------------|
+| Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [oAuth2Permissiongrant](../resources/oauth2permissiongrant.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_oAuth2Permissiongrants"
+  "name": "get_servicePrincipal_oAuth2PermissionGrants"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/oAuth2Permissiongrants
+
+```http
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/oauth2PermissionGrants
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-oauth2permissiongrants-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-oauth2permissiongrants-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### <a name="response"></a>Resposta
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-oauth2permissiongrants-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+Veja a seguir um exemplo da resposta. 
 
----
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.oAuth2PermissionGrant",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 253
+Content-Type: application/json
+Content-Length: 253
 
 {
   "value": [
     {
+      "id": "id-value",
       "clientId": "clientId-value",
       "consentType": "consentType-value",
-      "expiryTime": "2016-10-19T10:37:00Z",
-      "id": "id-value",
       "principalId": "principalId-value",
-      "resourceId": "resourceId-value"
+      "resourceId": "resourceId-value",
+      "scope": "scope-value",
+      "startTime": "datetime-value",
+      "expiryTime": "datetime-value"
     }
   ]
 }
@@ -106,7 +110,7 @@ Content-length: 253
 <!--
 {
   "type": "#page.annotation",
-  "description": "List oAuth2Permissiongrants",
+  "description": "List oAuth2PermissionGrants",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

@@ -5,16 +5,16 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c6233c22cb5da1bc55079a048a6c86718bd686c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4815cb4014862d4ddf0cc6c61ee244335e4f5f44
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440224"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288603"
 ---
 # <a name="patch-channel"></a>Canal de patch
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | ChannelSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.ReadWrite.All |
+|Aplicativo | ChannelSettings. Edit. Group ([RSC](https://aka.ms/teams-rsc)), ChannelSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ PATCH /teams/{id}/channels/{id}
 
 No corpo da solicitação, fornça uma representação JSON do objeto [canal](../resources/channel.md).
 
-> Observação: não é possível atualizar `membershipType` o valor de um canal existente.
+> Observação: não é possível atualizar o `membershipType` valor de um canal existente.
 
 ## <a name="response"></a>Resposta
 

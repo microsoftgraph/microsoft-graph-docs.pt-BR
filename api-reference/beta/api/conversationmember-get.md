@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 05708a121b5cdedecc62c0b23678bf126cfd0662
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
-ms.translationtype: HT
+ms.openlocfilehash: cfb6649709cce80b7936ddab80f18bf6f3493924
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436500"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288519"
 ---
 # <a name="get-conversationmember"></a>Obter conversationMember
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)|Para o recurso de **usuário** ou **chat** :<br/>Chat.Read, Chat.ReadWrite<br/><br/>Para o recurso de **canal**:<br/>Group.Read.All, Group.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| Para o recurso de **usuário** ou **chat** :<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>Para o recurso de **canal**:<br/>Group.Read.All, Group.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| Para o **usuário** ou recurso de **chat** : chat. ReadBasic, chat. Read, chat. ReadWrite<br/><br/>Para recurso de **canal** : ChannelMember. Read. All, ChannelMember. ReadWrite, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| Para o **usuário** ou recurso de **chat** : chat. ReadBasic. All, chat. Read. All, chat. ReadWrite. All<br/><br/>Para o recurso de **canal** : member. Read. Group ([RSC](https://aka.ms/teams-rsc)), ChannelMember. Read. All, ChannelMember. ReadWrite. All, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

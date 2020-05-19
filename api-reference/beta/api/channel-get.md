@@ -5,16 +5,16 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 478dd3430cc0c5d6788fd80932181f0128bd4524
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b08832ca7bcb02b62765c69ad1312753306f908
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440336"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289086"
 ---
 # <a name="get-channel"></a>Obter canal
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Channel. ReadBasic. All, ChannelSettings. Read. All, ChannelSettings. ReadWrite. All, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.Read.All, Group.ReadWrite.All    |
+|Aplicativo | Channel. ReadBasic. All, ChannelSettings. Read. All, ChannelSettings. ReadWrite. All, ChannelSettings. Read. Group ([RSC](https://aka.ms/teams-rsc)), ChannelSettings. Edit. Group ([RSC](https://aka.ms/teams-rsc)), Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All    |
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 

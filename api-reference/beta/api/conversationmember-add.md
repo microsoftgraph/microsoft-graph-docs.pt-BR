@@ -5,23 +5,23 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5e48c3751daf58ac9fdbb3e7c090ea9147364d5a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a2816ee0e71c4deec42a9b909642367f2b902c9
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436577"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288568"
 ---
 # <a name="add-conversationmember"></a>Adicionar conversationMember
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adicionar um [conversationMember](../resources/conversationmember.md) a um [canal](../resources/channel.md).
 
 > [!NOTE]
->Essa operação só é suportada em canais [](../resources/enums.md#channelmembershiptype-values) com channelMembershipType `private`de. Chamadas com qualquer outro [channelMembershipType](../resources/enums.md#channelmembershiptype-values) retornará uma resposta de solicitação inválida 400.
+>Essa operação só é suportada em canais com [channelMembershipType](../resources/enums.md#channelmembershiptype-values) de `private` . Chamadas com qualquer outro [channelMembershipType](../resources/enums.md#channelmembershiptype-values) retornará uma resposta de solicitação inválida 400.
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,9 +29,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)|Group.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo|Group.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)| ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| ChannelMember. ReadWrite. All, member. ReadWrite. Group ([RSC](https://aka.ms/teams-rsc)), Group. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->
@@ -52,7 +52,7 @@ Inclua as propriedades a seguir no corpo da solicitação.
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |funções|coleção de cadeias de caracteres|As funções desse usuário.|
-|user|[user](../resources/user.md)|O usuário a ser adicionado ao canal.|
+|user|[Usuário](../resources/user.md)|O usuário a ser adicionado ao canal.|
 
 ## <a name="response"></a>Resposta
 

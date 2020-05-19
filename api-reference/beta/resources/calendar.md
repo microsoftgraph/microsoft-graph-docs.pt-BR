@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8f7bfa0511b7f45c96ac26a87b95ff1e6adb0120
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
-ms.translationtype: HT
+ms.openlocfilehash: 8a753fbbdaf37552090f3a02219b06cc8eb0fd05
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467963"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290676"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -51,8 +51,8 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |allowedOnlineMeetingProviders|coleção de cadeias de caracteres| Represente os provedores de serviços de reunião online que podem ser usados para criar reuniões online neste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |calendarGroupId|Cadeia de caracteres|O [calendarGroup](calendargroup.md) para criar o calendário. Se o usuário nunca tiver definido explicitamente um grupo para o calendário, esta propriedade estará vazia.|
 |canEdit |Booliano |Verdadeiro se o usuário puder gravar no calendário, caso contrário, falso. Essa propriedade é verdadeira para o usuário que criou o calendário. Ela também é verdadeira para um usuário que compartilhou um calendário e concedeu acesso de gravação por meio de um cliente do Outlook ou do recurso [calendarPermission](calendarpermission.md) correspondente. Apenas leitura.|
-|canShare |Boolean |Verdadeira se o usuário tem permissão para compartilhar o calendário, falsa caso contrário. Apenas o usuário que criou o calendário pode compartilhá-lo. Apenas leitura.|
-|canViewPrivateItems |Boolean |Verdadeira se o usuário pode ler itens do calendário que foram marcados como particulares, falsa caso contrário. Essa propriedade é definida por meio de um cliente do Outlook ou o do recurso [calendarPermission](calendarpermission.md) correspondente. Apenas leitura.|
+|canShare |Boolean |Verdadeira se o usuário tem permissão para compartilhar o calendário, falsa caso contrário. Apenas o usuário que criou o calendário pode compartilhá-lo. Somente leitura.|
+|canViewPrivateItems |Boolean |Verdadeira se o usuário pode ler itens do calendário que foram marcados como particulares, falsa caso contrário. Essa propriedade é definida por meio de um cliente do Outlook ou o do recurso [calendarPermission](calendarpermission.md) correspondente. Somente leitura.|
 |changeKey|String|Identifica a versão do objeto calendar. Toda vez que o calendário é alterado, a changeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura.|
 |color|String|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|O provedor de reunião online padrão para reuniões enviadas deste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|

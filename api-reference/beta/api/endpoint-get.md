@@ -3,18 +3,18 @@ title: Obter o ponto de extremidade
 description: Recupere as propriedades e os relacionamentos de um objeto Endpoint específico.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 15ccf9b6a250cf75d613826899a30a0c8e20b420
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: 4bea857418cf4dc911021da58a465cfc53cc30fc
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423487"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289634"
 ---
 # <a name="get-endpoint"></a>Obter o ponto de extremidade
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,16 +42,15 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório.|
-| Content-Type   | Application/JSON |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [Endpoint](../resources/endpoint.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Endpoint](../resources/endpoint.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -76,8 +75,9 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta.
+>Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

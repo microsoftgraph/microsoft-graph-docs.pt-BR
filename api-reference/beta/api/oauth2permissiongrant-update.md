@@ -1,49 +1,53 @@
 ---
-title: Atualizar oAuth2PermissionGrant
-description: Atualize as propriedades do objeto oAuth2PermissionGrant.
+title: Atualizar um oAuth2PermissionGrant
+description: Atualizar as propriedades de um oAuth2PermissionGrant, representando uma concessão de permissão delegada.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: psignoret
-ms.openlocfilehash: 450f7909c6737a623cc23b8622a2817d17ef166d
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+author: davidmu1
+ms.openlocfilehash: 970ce10f41b102088932e98578b98a000a5ca4fa
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199607"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289833"
 ---
-# <a name="update-oauth2permissiongrant"></a>Atualizar oAuth2PermissionGrant
+# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>Atualizar uma concessão de permissão delegada (oAuth2PermissionGrant)
+
+Namespace: microsoft.graph
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto oAuth2PermissionGrant.
+Atualize as propriedades do objeto [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) , representando uma concessão de permissão delegada.
+
+Um **oAuth2PermissionGrant** pode ser atualizado para alterar quais permissões delegadas são concedidas, adicionando ou removendo itens da lista em **escopos**.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /oAuth2Permissiongrants/{id}
-PATCH /users/{id | userPrincipalName}/oAuth2Permissiongrants/{id}
-PATCH /drive/root/createdByUser/oAuth2Permissiongrants/{id}
+PATCH /oauth2PermissionGrants/{id}
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
@@ -55,23 +59,26 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
 
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "update_oAuth2Permissiongrant"
+  "name": "update_oAuth2PermissionGrant"
 }-->
+
 ```http
-PATCH https://graph.microsoft.com/beta/oAuth2Permissiongrants/{id}
-Content-type: application/json
-Content-length: 30
+PATCH https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
+Content-Type: application/json
+Content-Length: 30
 
 {
   "scope": "scope-value"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-oauth2permissiongrant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -86,12 +93,13 @@ Content-length: 30
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -101,7 +109,7 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Update oAuth2Permissiongrant",
+  "description": "Update oAuth2PermissionGrant",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

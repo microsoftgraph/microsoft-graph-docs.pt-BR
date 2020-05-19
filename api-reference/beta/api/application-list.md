@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2655cfe15589d7df22fb4c41339696e8a6266fa5
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
-ms.translationtype: HT
+ms.openlocfilehash: 1483e745f5db70c08e4b919363a09fb91c1f360b
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107182"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289317"
 ---
 # <a name="list-applications"></a>Listar aplicativos
 
@@ -21,36 +21,46 @@ Namespace: microsoft.graph
 Obtenha a lista de [applications](../resources/application.md) nesta organização.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application.ReadWrite.All, Directory.Read.All |
+| Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
+|:--------------- |:------------------------------------------- |
+| Delegado (conta corporativa ou de estudante) | Application. Read. All, Application. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | Application. Read. All, Application. ReadWrite. All, Directory. Read. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search` , `$count` e `$filter` . Você pode usar `$search` na propriedade **DisplayName** . Quando os itens são adicionados ou atualizados para esse recurso, eles são especialmente indexados para uso com os `$count` `$search` parâmetros de consulta e. Pode haver um ligeiro atraso entre a adição ou atualização de um item e quando ele está disponível no índice.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório.  |
+
+| Nome | Descrição |
+|:---- |:----------- |
+| Autorização  | {token} de portador. Obrigatório.  |
+| ConsistencyLevel | ocorra. Esse cabeçalho e `$count` são necessários ao usar `$search` ou ao usar `$filter` com o `$orderby` parâmetro de consulta. Ele usa um índice que pode não estar atualizado com alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [application](../resources/application.md) no corpo da resposta.
+
 ## <a name="examples"></a>Exemplos
-### <a name="request"></a>Solicitação
+
+### <a name="example-1-get-the-list-of-applications"></a>Exemplo 1: obter a lista de aplicativos
+
+#### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -75,10 +85,11 @@ GET https://graph.microsoft.com/beta/applications
 
 ---
 
-### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+#### <a name="response"></a>Resposta
 
+Veja a seguir um exemplo da resposta.
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,71 +99,143 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1229
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications",
-    "value": [
-        {
-            "id": "00af5dfb-85da-4b41-a677-0c6b86dd34f8",
-            "deletedDateTime": null,
-            "isFallbackPublicClient": false,
-            "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
-            "applicationTemplateId": null,
-            "identifierUris": [
-                "http://contoso/a7770d29-4321-41a6-b863-ca11d6639448"
-            ],
-            "createdDateTime": "2019-09-15T05:23:08Z",
-            "displayName": "My app",
-            "isDeviceOnlyAuthSupported": null,
-            "groupMembershipClaims": null,
-            "optionalClaims": null,
-            "orgRestrictions": [],
-            "publisherDomain": "contoso.onmicrosoft.com",
-            "signInAudience": "AzureADMyOrg",
-            "tags": [],
-            "tokenEncryptionKeyId": null,
-            "api": {
-                "requestedAccessTokenVersion": null,
-                "acceptMappedClaims": null,
-                "knownClientApplications": [],
-                "oauth2PermissionScopes": [],
-                "preAuthorizedApplications": []
-            },
-            "appRoles": [],
-            "publicClient": {
-                "redirectUris": []
-            },
-            "info": {
-                "termsOfServiceUrl": null,
-                "supportUrl": null,
-                "privacyStatementUrl": null,
-                "marketingUrl": null,
-                "logoUrl": null
-            },
-            "keyCredentials": [],
-            "parentalControlSettings": {
-                "countriesBlockedForMinors": [],
-                "legalAgeGroupRule": "Allow"
-            },
-            "passwordCredentials": [],
-            "requiredResourceAccess": [],
-            "web": {
-                "redirectUris": [
-                    "https://127.0.0.1:444/applications/default.aspx"
-                ],
-                "homePageUrl": "http://www.contoso.com/landingPage",
-                "logoutUrl": null,
-                "implicitGrantSettings": {
-                    "enableIdTokenIssuance": true,
-                    "enableAccessTokenIssuance": false
-                }
-            }
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications",
+  "value": [
+    {
+      "appId": "00000000-0000-0000-0000-000000000000",
+      "identifierUris": [ "http://contoso/" ],
+      "displayName": "My app",
+      "publisherDomain": "contoso.com",
+      "signInAudience": "AzureADMyOrg"
+    }
+  ]
 }
 ```
 
+### <a name="example-2-get-only-a-count-of-applications"></a>Exemplo 2: obter apenas uma contagem de aplicativos
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/applications/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+893
+
+
+### <a name="example-3-use-filter-and-top-to-get-one-application-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 3: use $filter e $top para obter um aplicativo com um nome de exibição que comece com ' a ', incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/applications?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#applications",
+  "@odata.count":1,
+  "value":[
+    {
+      "appId": "00000000-0000-0000-0000-000000000000",
+      "identifierUris": [ "http://contoso/" ],
+      "displayName":"a",
+      "publisherDomain": "contoso.com",
+      "signInAudience": "AzureADMyOrg"
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-search-to-get-applications-with-display-names-that-contain-the-letters-web-including-a-count-of-returned-objects"></a>Exemplo 4: Use $search para obter aplicativos com nomes de exibição que contenham as letras "Web", incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_web_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/applications?$search="displayName:Web"&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#applications",
+  "@odata.count":1396,
+  "value":[
+    {
+      "appId": "00000000-0000-0000-0000-000000000000",
+      "identifierUris": [ "http://contoso/" ],
+      "displayName":"'DotNetWeb-App' ",
+      "publisherDomain": "contoso.com",
+      "signInAudience": "AzureADMyOrg"
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

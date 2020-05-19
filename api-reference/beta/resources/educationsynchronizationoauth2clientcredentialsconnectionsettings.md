@@ -4,17 +4,17 @@ description: Quando a concessão de credenciais de cliente do OAuth2 for usada p
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-doc_type: resourcePageType
-ms.openlocfilehash: d38853e40d8f88bf4aa8323395848185793cc42c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+doc_type: apiPageType
+ms.openlocfilehash: dfe0a2fda8d49bd003a6ea2c23eb6a31ce619234
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500090"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289436"
 ---
 # <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>recurso educationSynchronizationOAuth2ClientCredentialsConnectionSettings
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

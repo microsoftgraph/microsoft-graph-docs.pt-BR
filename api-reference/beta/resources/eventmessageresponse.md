@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 02439ce11f5a428d0c10ba9a74fd42d45e3205d3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 24ae04514b93ba09ba994e1f184e1b2546e038bc
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463043"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290947"
 ---
 # <a name="eventmessageresponse-resource-type"></a>tipo de recurso eventMessageResponse
 
@@ -22,7 +22,7 @@ Uma mensagem que representa uma resposta a uma solicitação de reunião na caix
 
 Derivado de [eventMessage](eventmessage.md). 
 
-Um organizador que recebe um **eventMessageResponse** com **ResponseType** definido como `tentativelyAccepted` ou `declined`, e que inclui uma propriedade **proposedNewTime** , pode optar por aceitar a proposta. Para fazer isso, primeiro, use a propriedade de navegação de **eventos** do **eventMessageResponse** para acessar o evento correspondente, conforme mostrado neste [exemplo](../api/eventmessage-get.md#example-2). Em seguida, [atualize](../api/event-update.md) o evento associado ao tempo proposto.
+Um organizador que recebe um **eventMessageResponse** com **ResponseType** definido como `tentativelyAccepted` ou `declined` , e que inclui uma propriedade **proposedNewTime** , pode optar por aceitar a proposta. Para fazer isso, primeiro, use a propriedade de navegação de **eventos** do **eventMessageResponse** para acessar o evento correspondente, conforme mostrado neste [exemplo](../api/eventmessage-get.md#example-2). Em seguida, [atualize](../api/event-update.md) o evento associado ao tempo proposto.
 
 Para obter mais informações sobre como propor um horário e como receber e aceitar uma nova proposta de tempo, confira [propor novos horários da reunião](/graph/outlook-calendar-meeting-proposals).
 
@@ -32,7 +32,7 @@ Para obter mais informações sobre como propor um horário e como receber e ace
 |:-------------|:------------|:------------|
 |[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Ler propriedades e relações do objeto eventMessage.|
 |[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage.|
-|[Excluir](../api/eventmessage-delete.md) | None |Excluir o objeto eventMessage.|
+|[Delete](../api/eventmessage-delete.md) | None |Excluir o objeto eventMessage.|
 |[copy](../api/message-copy.md)|[message](message.md)|Copiar uma mensagem para uma pasta.|
 |[createForward](../api/message-createforward.md)|[message](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
 |[createReply](../api/message-createreply.md)|[message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
@@ -70,7 +70,7 @@ Para obter mais informações sobre como propor um horário e como receber e ace
 |conversationIndex|Edm.Binary|O Índice da conversa à qual o email pertence.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|A hora de término da reunião solicitada.|
-|sinalizar|[followUpFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
+|flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio da qual a mensagem foi enviada. Na maioria dos casos, esse valor é o mesmo que o da propriedade **remetente**, exceto para cenários de compartilhamento ou delegação. O valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |hasAttachments|Boolean|Indica se a mensagem tem anexos.|
 |id|Cadeia de caracteres| Identificador exclusivo da mensagem. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
@@ -94,13 +94,13 @@ Para obter mais informações sobre como propor um horário e como receber e ace
 |receivedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|O padrão de recorrência da reunião solicitada.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
-|responseType|cadeia de caracteres| Especifica o tipo de resposta a uma solicitação de reunião. Os valores possíveis são: `tentativelyAccepted`, `accepted`, `declined`. Para o tipo eventMessageResponse, `none`, `organizer`e `notResponded` não são suportados. Somente leitura. Não filtrável.|
+|responseType|string| Especifica o tipo de resposta a uma solicitação de reunião. Os valores possíveis são: `tentativelyAccepted`, `accepted`, `declined`. Para o tipo eventMessageResponse, `none` , `organizer` e `notResponded` não são suportados. Somente leitura. Não filtrável.|
 |sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo da propriedade **from**. Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [ou ao enviar uma mensagem como um delegado](/graph/outlook-share-delegate-calendar.md). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |sentDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|O horário de início da reunião solicitada.|
-|assunto|Cadeia de caracteres|O assunto da mensagem.|
+|subject|Cadeia de caracteres|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
-|type|String|O tipo de reunião solicitada `singleInstance`: `occurence`, `exception`, `seriesMaster`,.|
+|type|String|O tipo de reunião solicitada: `singleInstance` , `occurence` , `exception` , `seriesMaster` .|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual.|
 |UnsubscribeData|String|As entradas válidas analisadas no cabeçalho List-Unsubscribe.  Esses são os dados para o comando mail no cabeçalho List-Unsubscribe, se a propriedade UnsubscribeEnabled for true.|
 |UnsubscribeEnabled|Booliano|Indica se a mensagem está habilitada para o cancelamento da assinatura.  valueTrue se o cabeçalho list-Unsubscribe estiver em conformidade com o rfc-2369.|

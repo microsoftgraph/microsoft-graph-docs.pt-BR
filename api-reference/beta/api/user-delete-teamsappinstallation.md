@@ -5,16 +5,16 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 38f8e0484e287d98fefe438ae1d7d5b69c1aeb0a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0b3948481b62e9f0684bdb1a1b8a2d3d9dd3066b
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452019"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290515"
 ---
 # <a name="uninstall-app-for-user"></a>Desinstalar o aplicativo para o usuário
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | User.ReadWrite.All, Directory.ReadWrite.All  |
+|Aplicativo | User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

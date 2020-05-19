@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 01d0f5c566a3c633caab8e321202e422bbad62a8
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: f0686491f0d19bf0dd4911d0f60fe05b84326081
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510998"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289946"
 ---
 # <a name="riskdetection-resource-type"></a>tipo de recurso riskDetection
 
@@ -41,17 +41,17 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 |`id`|`string`|ID exclusiva da detecção de risco. |
 |`requestId`|`string`|ID de solicitação da entrada associada à detecção de risco. Essa propriedade será NULL se a detecção de risco não estiver associada a uma entrada.|
 |`correlationId`|`string`|ID de correlação da entrada associada à detecção de risco. Essa propriedade será NULL se a detecção de risco não estiver associada a uma entrada. |
-|`riskEventType`|`string`|O tipo de evento de risco detectado. Os valores possíveis são `unlikelyTravel`: `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` `unknownFutureValue`,,,,,,,,,,, e. `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` |
+|`riskEventType`|`string`|O tipo de evento de risco detectado. Os valores possíveis são:,,,,,,,,,,, `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` e `unknownFutureValue` . |
 |`riskType`|`riskEventType`|Lista de tipos de eventos de risco.<br/>**Observação:** Essa propriedade foi preterida. Use **riskEventTypes** em vez disso. |
 |`riskState`|`riskState`|O estado de um usuário ou logon arriscado detectado. Os valores possíveis são nenhum, confirmedSafe, corrigido, descartado, atRisk, confirmedCompromised e unknownFutureValue. |
-|`riskLevel`|`riskLevel`|Nível do risco detectado. Os valores possíveis são baixo, médio, alto, oculto, nenhum, unknownFutureValue. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Os clientes P1 serão retornados `hidden`.|
-|`riskDetail`|`riskDetail`|Detalhes do risco detectado. Os valores possíveis são None, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, Hidden, adminConfirmedUserCompromised, unknownFutureValue. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Os clientes P1 serão retornados `hidden`.|
+|`riskLevel`|`riskLevel`|Nível do risco detectado. Os valores possíveis são baixo, médio, alto, oculto, nenhum, unknownFutureValue. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Os clientes P1 serão retornados `hidden` .|
+|`riskDetail`|`riskDetail`|Detalhes do risco detectado. Os valores possíveis são None, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, Hidden, adminConfirmedUserCompromised, unknownFutureValue. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Os clientes P1 serão retornados `hidden` .|
 |`source`|`string`|Fonte da detecção de risco. Por exemplo, "activeDirectory". |
 |`detectionTimingType`|`riskDetectionTimingType`|Intervalo do risco detectado (em tempo real/offline). Os valores possíveis são não definidos, em tempo real, nearRealtime, offline, unknownFutureValue. |
 |`activity`|`activityType`|Indica o tipo de atividade ao qual o risco detectado está vinculado. Os valores possíveis são entrar, User, unknownFutureValue. |
 |`tokenIssuerType`|`tokenIssuerType`|Indica o tipo de emissor de token para o risco de entrada detectado. Os valores possíveis são AzureAD, ADFederationServices e unknownFutureValue. |
 |`ipAddress`|`string`|Fornece o endereço IP do cliente de onde o risco ocorreu. |
-|`location`|[`signInLocation`](signinlocation.md)|Local de entrada. |
+|`location`|[signInLocation](signinlocation.md)|Local de entrada. |
 |`activityDateTime`|`datetimeoffset`|Data e hora em que a atividade arriscada ocorreu. |
 |`detectedDateTime`|`datetimeoffset`|Data e hora em que o risco foi detectado. |
 |`lastUpdatedDateTime`|`datetime`|Data e hora da última atualização do risco. |

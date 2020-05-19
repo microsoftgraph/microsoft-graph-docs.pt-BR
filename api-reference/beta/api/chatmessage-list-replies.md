@@ -5,16 +5,16 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d8e3332a7ed50dd7c1ba383b247cd5016af5a768
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d82d2fe3268cb95af19b39b6be192fe44f747a20
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438355"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287098"
 ---
 # <a name="list-replies"></a>Listar respostas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Chat.Read, Chat.ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Chat.Read.All |
+| Aplicativo                            | Chat.Read.All, Chat.ReadWrite.All |
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

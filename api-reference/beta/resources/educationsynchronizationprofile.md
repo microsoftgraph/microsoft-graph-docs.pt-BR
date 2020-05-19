@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 7cea993bfaeaf7de82268747518288aaac836198
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c498abb711a336f3627ef0b63e6c742e633ea05a
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500083"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289932"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>tipo de recurso educationSynchronizationProfile
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +46,7 @@ Representa um conjunto de configurações usadas para sincronizar entidades de e
 | **licensesToAssign** | coleção [educationSynchronizationLicenseAssignment](educationsynchronizationlicenseassignment.md)|  Configuração da instalação da licença.        |
 | **state** | educationSynchronizationProfileState |  O estado do perfil. Os valores possíveis são: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`.          |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
@@ -79,3 +79,16 @@ Veja a seguir uma representação JSON do recurso **educationSynchronizationProf
     "handleSpecialCharacterConstraint": "Boolean"
 }
 ```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2020-05-06 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "educationSynchronizationProfile resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+      "Error: microsoft.graph.educationSynchronizationProfile/dataProvider:\r\n      Referenced type microsoft.graph.educationSynchronizationDataProvider is not defined in the doc set! Potential suggestion: UNKNOWN"
+  ]
+}-->

@@ -5,23 +5,23 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b380d6c274c2d0ca2771cd44a7015f84f7d9a0e7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 94c6a33f24780ad9941ecd54fddd55611fe44822
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436416"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288498"
 ---
 # <a name="update-conversationmember"></a>Atualizar conversationMember
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualizar a função de um [conversationMember](../resources/conversationmember.md) em um [canal](../resources/channel.md).
 
 > [!NOTE]
-> Essa operação só é suportada em canais [](../resources/enums.md#channelmembershiptype-values) com channelMembershipType `private`de. Chamadas com qualquer outro [channelMembershipType](../resources/enums.md#channelmembershiptype-values) retornará uma `400 Bad Request` resposta.
+> Essa operação só é suportada em canais com [channelMembershipType](../resources/enums.md#channelmembershiptype-values) de `private` . Chamadas com qualquer outro [channelMembershipType](../resources/enums.md#channelmembershiptype-values) retornará uma `400 Bad Request` resposta.
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,9 +29,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)|Group.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)| ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo|Group.ReadWrite.All|
+|Aplicativo| Member. ReadWrite. Group ([RSC](https://aka.ms/teams-rsc)), ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f98e5d7f4a0bf1fcbc92a57467bdf009ab7b2698
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d5371bd0dffe343a844c6ea8a7ac5fec2a6fef1a
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406604"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289627"
 ---
 # <a name="list-group-memberof"></a>Grupo de lista memberOf
 
@@ -26,37 +26,43 @@ Essa operação não é transitiva. Ao contrário de obter os grupos do Office 3
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
-
-[!INCLUDE [limited-info](../../includes/limited-info.md)]
+| Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
+|:--------------- |:------------------------------------------- |
+| Delegado (conta corporativa ou de estudante) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/memberOf
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+Este método oferece suporte aos [parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta, incluindo `$search` , `$count` e `$filter` . A conversão OData também é habilitada, por exemplo, você pode transmitir para obter apenas os grupos dos quais o grupo é membro. Você pode usar `$search` na propriedade **DisplayName** . Quando os itens são adicionados ou atualizados para esse recurso, eles são especialmente indexados para uso com os `$count` `$search` parâmetros de consulta e. Pode haver um ligeiro atraso entre a adição ou atualização de um item e quando ele está disponível no índice.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+
+| Nome | Descrição |
+|:---- |:----------- |
+| Autorização  | {token} de portador. Obrigatório. |
+| ConsistencyLevel | ocorra. Esse cabeçalho e `$count` são necessários ao usar os `$search` parâmetros de consulta de conversão de,, `$filter` `$orderby` ou OData. Ele usa um índice que pode não estar atualizado com alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-get-groups-and-administrative-units-that-the-group-is-a-direct-member-of"></a>Exemplo 1: obter grupos e unidades administrativas dos quais o grupo é membro direto
+
+#### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -82,11 +88,11 @@ GET https://graph.microsoft.com/beta/groups/{id}/memberOf
 
 ---
 
-
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 >**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,17 +102,172 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "11111111-2222-3333-4444-555555555555",
+      "mail": "group1@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "Contoso1",
+      "securityEnabled": true
     }
   ]
 }
 ```
 
+### <a name="example-2-get-only-a-count-of-all-memberships"></a>Exemplo 2: obter apenas uma contagem de todas as associações
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/{id}/memberOf/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+394
+
+
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>Exemplo 3: usar a conversão OData para obter apenas uma contagem de associação de grupo
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_group_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices/{id}/memberOf/microsoft.graph.group/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+394
+
+### <a name="example-4-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Exemplo 4: usar a conversão OData e $search para obter associação com nomes de exibição que contenham as letras "vídeo" incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_video_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search="displayName:Video"
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "@odata.count":1396,
+  "value":[
+    {
+      "displayName":"SFA Videos",
+      "mail":"SFAVideos@service.contoso.com",
+      "mailNickname":"SFAVideos"
+    }
+  ]
+}
+```
+
+### <a name="example-5-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>Exemplo 5: usar a conversão OData e $filter para obter associação com um nome de exibição que comece com a letra "A" incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'A')
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "@odata.count":76,
+  "value":[
+    {
+      "displayName":"AAD Contoso Users",
+      "mail":"AADContoso_Users@contoso.com",
+      "mailEnabled":true,
+      "mailNickname":"AADContoso_Users",
+      "securityEnabled":true
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

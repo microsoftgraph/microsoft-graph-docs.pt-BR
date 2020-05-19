@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 84270f5be2d647c5b1ab884802ef3b363e81eaff
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 6d6a0a69c7154d9ac9576e051c82a173435ec0db
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107245"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289380"
 ---
 # <a name="application-addpassword"></a>Application: addpassword
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+| Aplicativo                            | Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -43,21 +43,21 @@ POST /applications/{id}/addPassword
 | Nome           | Descrição                |
 |:---------------|:---------------------------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Content-type   | application/json. Obrigatório.|
+| Content-Type   | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça um objeto `passwordCredential` opcional com as propriedades a seguir.
+No corpo da solicitação, forneça um `passwordCredential` objeto opcional com as propriedades a seguir.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | displayName | String | Nome amigável da senha. Opcional. |
-| endDateTime | DateTimeOffset | A data e a hora em que a senha expira representada usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional. |
-| startDateTime | DateTimeOffset | A data e a hora em que a senha se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional. |
+| endDateTime | DateTimeOffset | A data e a hora em que a senha expira representada usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional. O valor padrão é "startDatetime + 2 anos". |
+| startDateTime | DateTimeOffset | A data e a hora em que a senha se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional. O valor padrão é "Now".|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um novo objeto [passwordCredential](../resources/passwordcredential.md) no corpo da resposta. A propriedade **secretText** no objeto Response contém as senhas fortes geradas pelo Azure Active Directory com 16-64 caracteres de comprimento. Não há como recuperar essa senha no futuro.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto [passwordCredential](../resources/passwordcredential.md) no corpo da resposta. A propriedade **secretText** no objeto Response contém as senhas fortes geradas pelo Azure Active Directory com 16-64 caracteres de comprimento. Não há como recuperar essa senha no futuro.
 
 ## <a name="examples"></a>Exemplos
 

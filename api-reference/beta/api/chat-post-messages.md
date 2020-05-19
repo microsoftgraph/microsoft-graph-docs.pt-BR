@@ -5,16 +5,16 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66e73ac2c3523c7c374c78143a91fc7a5e846778
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 917b5ec5ac140079f30f6c03db485de849d6b56b
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438565"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287511"
 ---
 # <a name="create-chatmessage"></a>Criar chat
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Chat.ReadWrite |
+| Delegado (conta corporativa ou de estudante)     | Chat. Send, chat. ReadWrite |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | Chat. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [chat](..
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [chat](../resources/chatmessage.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [chat](../resources/chatmessage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
