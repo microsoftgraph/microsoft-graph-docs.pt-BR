@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Obter tokens de autenticação
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: /graph/auth/index?context=graph/api/1.0
       - name: Noções básicas
         href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -72,7 +72,7 @@ items:
       - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -167,11 +167,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -188,6 +188,15 @@ items:
                 href: api/user-delete.md
               - name: Obter intervalo
                 href: api/user-delta.md
+          - name: Atribuições de função de aplicativo
+            href: resources/approleassignment.md
+            items:
+              - name: List
+                href: api/user-list-approleassignments.md
+              - name: Adicionar
+                href: api/user-post-approleassignments.md
+              - name: Remover
+                href: api/user-delete-approleassignments.md
           - name: Calendário
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
@@ -223,6 +232,10 @@ items:
                 href: api/user-list-contacts.md
               - name: Listar pastas de contatos
                 href: api/user-list-contactfolders.md
+          - name: Subsídios de permissão delegada
+            items:
+              - name: List
+                href: api/user-list-oauth2permissiongrants.md
           - name: Objetos de diretório
             href: resources/directoryobject.md
             items:
@@ -374,7 +387,7 @@ items:
                 href: api/planneruser-list-tasks.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -454,6 +467,15 @@ items:
                     href: api/grouplifecyclepolicy-removegroup.md
               - name: Validar propriedades
                 href: api/group-validateproperties.md
+          - name: Atribuições de função de aplicativo
+            href: resources/approleassignment.md
+            items:
+              - name: List
+                href: api/group-list-approleassignments.md
+              - name: Adicionar
+                href: api/group-post-approleassignments.md
+              - name: Remover
+                href: api/group-delete-approleassignments.md
           - name: Anexo
             href: resources/attachment.md
             items:
@@ -778,6 +800,20 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Obter uma propriedade de vários valores
                     href: api/multivaluelegacyextendedproperty-get.md
+              - name: Ocorrido
+                items:
+                  - name: Ocorrido
+                    href: resources/place.md
+                  - name: Tipo de sala
+                    href: resources/room.md
+                  - name: Tipo de lista de salas
+                    href: resources/roomlist.md
+                  - name: Locais de lista
+                    href: api/place-list.md
+                  - name: Obter local
+                    href: api/place-get.md
+                  - name: Local de atualização
+                    href: api/place-update.md
       - name: Comunicações na nuvem
         displayName: Cloud communications
         items:
@@ -807,7 +843,7 @@ items:
                 items:
                   - name: Reproduzir prompt
                     href: api/call-playprompt.md
-                  - name: Gravar
+                  - name: Resposta de registro
                     href: api/call-record.md
                   - name: Assinar ao sinal
                     href: api/call-subscribetotone.md
@@ -870,7 +906,7 @@ items:
       - name: Dispositivos e aplicativos
         displayName: Intune
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/intune-graph-overview.md
           - name: Gerenciamento de aplicativos
             href: resources/intune-app-conceptual.md
@@ -1020,7 +1056,7 @@ items:
               - name: Aplicativo do macOS Office Suite
                 href: resources/intune-apps-macosofficesuiteapp.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-apps-macosofficesuiteapp-list.md
                   - name: Obter
                     href: api/intune-apps-macosofficesuiteapp-get.md
@@ -1033,7 +1069,7 @@ items:
               - name: Aplicativo LOB do android gerenciado
                 href: resources/intune-apps-managedandroidlobapp.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-apps-managedandroidlobapp-list.md
                   - name: Obter
                     href: api/intune-apps-managedandroidlobapp-get.md
@@ -1068,7 +1104,7 @@ items:
               - name: Configuração do aplicativo de dispositivo móvel gerenciado
                 href: resources/intune-apps-manageddevicemobileappconfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-apps-manageddevicemobileappconfiguration-list.md
                   - name: Obter
                     href: api/intune-apps-manageddevicemobileappconfiguration-get.md
@@ -1254,7 +1290,7 @@ items:
               - name: Arquivo de conteúdo do aplicativo móvel
                 href: resources/intune-apps-mobileappcontentfile.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-apps-mobileappcontentfile-list.md
                   - name: Obter
                     href: api/intune-apps-mobileappcontentfile-get.md
@@ -1275,14 +1311,14 @@ items:
               - name: Aplicativo LOB móvel
                 href: resources/intune-apps-mobilelobapp.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-apps-mobilelobapp-list.md
                   - name: Obter
                     href: api/intune-apps-mobilelobapp-get.md
               - name: Resumo de estado de instalação de usuários
                 href: resources/intune-books-userinstallstatesummary.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-books-userinstallstatesummary-list.md
                   - name: Obter
                     href: api/intune-books-userinstallstatesummary-get.md
@@ -1466,7 +1502,7 @@ items:
               - name: Política de conformidade do perfil de trabalho do Android
                 href: resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md
@@ -1496,7 +1532,7 @@ items:
               - name: Configuração geral de dispositivo do perfil de trabalho do Android
                 href: resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-get.md
@@ -1662,7 +1698,7 @@ items:
               - name: Status do usuário de conformidade do dispositivo
                 href: resources/intune-deviceconfig-devicecomplianceuserstatus.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-get.md
@@ -1684,7 +1720,7 @@ items:
               - name: Atribuição de configuração do dispositivo
                 href: resources/intune-deviceconfig-deviceconfigurationassignment.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-deviceconfigurationassignment-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-deviceconfigurationassignment-get.md
@@ -1860,7 +1896,7 @@ items:
               - name: Configuração de atualização do iOS
                 href: resources/intune-deviceconfig-iosupdateconfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-iosupdateconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-iosupdateconfiguration-get.md
@@ -1901,7 +1937,7 @@ items:
               - name: Configuração personalizada do macOS
                 href: resources/intune-deviceconfig-macoscustomconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -1927,7 +1963,7 @@ items:
               - name: Configuração geral do dispositivo macOS
                 href: resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-get.md
@@ -2103,7 +2139,7 @@ items:
               - name: Configuração de proteção de ponto de extremidade do Windows 10
                 href: resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
@@ -2142,7 +2178,7 @@ items:
               - name: Política de conformidade do Windows 10 Mobile
                 href: resources/intune-deviceconfig-windows10mobilecompliancepolicy.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-windows10mobilecompliancepolicy-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-windows10mobilecompliancepolicy-get.md
@@ -2252,7 +2288,7 @@ items:
               - name: Configuração geral do Windows Phone 8.1
                 href: resources/intune-deviceconfig-windowsphone81generalconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-get.md
@@ -2309,7 +2345,7 @@ items:
               - name: Evento de auditoria
                 href: resources/intune-auditing-auditevent.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-auditing-auditevent-list.md
                   - name: Obter
                     href: api/intune-auditing-auditevent-get.md
@@ -2361,7 +2397,7 @@ items:
               - name: Evento de solução de problemas de gerenciamento de dispositivo
                 href: resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md
                   - name: Obter
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-get.md
@@ -2574,7 +2610,7 @@ items:
               - name: Registro de aplicativo gerenciado do iOS
                 href: resources/intune-mam-iosmanagedappregistration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-mam-iosmanagedappregistration-list.md
                   - name: Obter
                     href: api/intune-mam-iosmanagedappregistration-get.md
@@ -2753,7 +2789,7 @@ items:
               - name: Resumo de aprendizagem de aplicativos da proteção de informações do Windows
                 href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
                   - name: Obter
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
@@ -2787,7 +2823,7 @@ items:
               - name: Resumo de aprendizagem da rede de proteção de informações do Windows
                 href: resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-list.md
                   - name: Obter
                     href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-get.md
@@ -2969,7 +3005,7 @@ items:
               - name: Token VPP
                 href: resources/intune-onboarding-vpptoken.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-onboarding-vpptoken-list.md
                   - name: Obter
                     href: api/intune-onboarding-vpptoken-get.md
@@ -2996,7 +3032,7 @@ items:
               - name: Atribuição de função de gerenciamento de aplicativo e dispositivo
                 href: resources/intune-rbac-deviceandappmanagementroleassignment.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-rbac-deviceandappmanagementroleassignment-list.md
                   - name: Obter
                     href: api/intune-rbac-deviceandappmanagementroleassignment-get.md
@@ -3009,7 +3045,7 @@ items:
               - name: Definição de função de gerenciamento de aplicativo e dispositivo
                 href: resources/intune-rbac-deviceandappmanagementroledefinition.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-rbac-deviceandappmanagementroledefinition-list.md
                   - name: Obter
                     href: api/intune-rbac-deviceandappmanagementroledefinition-get.md
@@ -3232,7 +3268,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -3343,34 +3379,32 @@ items:
                 href: api/directory-deleteditems-delete.md
               - name: Restaurar aplicativo excluído
                 href: api/directory-deleteditems-restore.md
-              - name: Adicionar senha
-                href: api/application-addpassword.md
-              - name: Remover senha
-                href: api/application-removepassword.md
-              - name: Criar extensão
-                href: api/application-post-extensionproperty.md
-              - name: Listar extensões
-                href: api/application-list-extensionproperty.md
-              - name: Excluir extensão
-                href: api/application-delete-extensionproperty.md
-              - name: Listar proprietários
-                href: api/application-list-owners.md
-              - name: Adicionar proprietário
-                href: api/application-post-owners.md
-              - name: Remover proprietário
-                href: api/application-delete-owners.md
-              - name: Adicionar política de emissão de token
-                href: api/application-post-tokenissuancepolicies.md
-              - name: Listar políticas de emissão de token
-                href: api/application-list-tokenissuancepolicies.md
-              - name: Remover política de emissão de token
-                href: api/application-delete-tokenissuancepolicies.md
-              - name: Adicionar política de tempo de vida do token
-                href: api/application-post-tokenlifetimepolicies.md
-              - name: Listar políticas de vida útil de token
-                href: api/application-list-tokenlifetimepolicies.md
-              - name: Remover política de tempo de vida do token
-                href: api/application-delete-tokenlifetimepolicies.md
+              - name: Certificados e segredos
+                items:
+                  - name: Adicionar senha
+                    href: api/application-addpassword.md
+                  - name: Remover senha
+                    href: api/application-removepassword.md
+                  - name: Tecla Adicionar
+                    href: api/application-addkey.md
+                  - name: Remover chave
+                    href: api/application-removekey.md
+              - name: Extensões
+                items:
+                  - name: Listar
+                    href: api/application-list-extensionproperty.md
+                  - name: Criar
+                    href: api/application-post-extensionproperty.md
+                  - name: Excluir
+                    href: api/application-delete-extensionproperty.md
+              - name: Proprietários
+                items:
+                  - name: List
+                    href: api/application-list-owners.md
+                  - name: Adicionar
+                    href: api/application-post-owners.md
+                  - name: Remover
+                    href: api/application-delete-owners.md
           - name: Logs de auditoria
             href: resources/azure-ad-auditlog-overview.md
             items:
@@ -3542,7 +3576,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -3565,6 +3599,19 @@ items:
             items:
               - name: Criar convite
                 href: api/invitation-post.md
+          - name: Subsídios de permissão delegada
+            href: resources/oauth2permissiongrant.md
+            items:
+              - name: Listar
+                href: api/oauth2permissiongrant-list.md
+              - name: Criar
+                href: api/oauth2permissiongrant-post.md
+              - name: Obter
+                href: api/oauth2permissiongrant-get.md
+              - name: Atualizar
+                href: api/oauth2permissiongrant-update.md
+              - name: Excluir
+                href: api/oauth2permissiongrant-delete.md
           - name: Organização
             href: resources/organization.md
             items:
@@ -3662,6 +3709,74 @@ items:
                     href: api/tokenlifetimepolicy-delete.md
                   - name: Listar aplicadas ao aplicativo
                     href: api/tokenlifetimepolicy-list-appliesto.md
+          - name: Entidade de serviço
+            href: resources/serviceprincipal.md
+            items:
+              - name: Listar
+                href: api/serviceprincipal-list.md
+              - name: Criar
+                href: api/serviceprincipal-post-serviceprincipals.md
+              - name: Obter
+                href: api/serviceprincipal-get.md
+              - name: Atualizar
+                href: api/serviceprincipal-update.md
+              - name: Excluir
+                href: api/serviceprincipal-delete.md
+              - name: Listar objetos criados
+                href: api/serviceprincipal-list-createdobjects.md
+              - name: Listar objetos de propriedade
+                href: api/serviceprincipal-list-ownedobjects.md
+              - name: Atribuições de função de aplicativo
+                href: resources/approleassignment.md
+                items:
+                  - name: List
+                    href: api/serviceprincipal-list-approleassignments.md
+                  - name: Adicionar
+                    href: api/serviceprincipal-post-approleassignments.md
+                  - name: Remover
+                    href: api/serviceprincipal-delete-approleassignments.md
+                  - name: Lista atribuída a
+                    href: api/serviceprincipal-list-approleassignedto.md
+                  - name: Adicionar atribuído a
+                    href: api/serviceprincipal-post-approleassignedto.md
+                  - name: Remover atribuído a
+                    href: api/serviceprincipal-delete-approleassignedto.md
+              - name: Certificados e segredos
+                items:
+                  - name: Adicionar senha
+                    href: api/serviceprincipal-addpassword.md
+                  - name: Remover senha
+                    href: api/serviceprincipal-removepassword.md
+                  - name: Tecla Adicionar
+                    href: api/serviceprincipal-addkey.md
+                  - name: Remover chave
+                    href: api/serviceprincipal-removekey.md
+              - name: Subsídios de permissão delegada
+                items:
+                  - name: List
+                    href: api/serviceprincipal-list-oauth2permissiongrants.md
+              - name: Associação
+                items:
+                  - name: Listar membro de
+                    href: api/serviceprincipal-list-memberof.md
+                  - name: Listar membro transitiva de
+                    href: api/serviceprincipal-list-transitivememberof.md
+                  - name: Verificar grupos de membros
+                    href: api/serviceprincipal-checkmembergroups.md
+                  - name: Verificar objetos member
+                    href: api/serviceprincipal-checkmemberobjects.md
+                  - name: Obter grupos de membros
+                    href: api/serviceprincipal-getmembergroups.md
+                  - name: Obter objetos de membros
+                    href: api/serviceprincipal-getmemberobjects.md
+              - name: Proprietários
+                items:
+                  - name: List
+                    href: api/serviceprincipal-list-owners.md
+                  - name: Adicionar
+                    href: api/serviceprincipal-post-owners.md
+                  - name: Remover
+                    href: api/serviceprincipal-delete-owners.md
           - name: SKU inscrita
             href: resources/subscribedsku.md
             items:
@@ -3672,7 +3787,7 @@ items:
       - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/mail-api-overview.md
           - name: Mensagem
             href: resources/message.md
@@ -4266,7 +4381,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -4312,7 +4427,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
           - name: Plano
             href: resources/plannerplan.md

@@ -5,71 +5,71 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: da214ef7cdaf1291bd85ecf0fcdf4a4290d56259
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 72a75d1227e1b6810bb43517ea51a60f3b91bc1b
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181775"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290508"
 ---
-# <a name="permanently-delete-item"></a><span data-ttu-id="30b12-103">Excluir permanentemente item</span><span class="sxs-lookup"><span data-stu-id="30b12-103">Permanently delete item</span></span>
+# <a name="permanently-delete-item"></a><span data-ttu-id="030c3-103">Excluir permanentemente item</span><span class="sxs-lookup"><span data-stu-id="030c3-103">Permanently delete item</span></span>
 
-<span data-ttu-id="30b12-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="30b12-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="030c3-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="030c3-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="30b12-105">Exclui permanentemente um item de [itens excluídos](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="30b12-105">Permanently deletes an item from [deleted items](../resources/directory.md).</span></span>
+<span data-ttu-id="030c3-105">Exclui permanentemente um item de [itens excluídos](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="030c3-105">Permanently deletes an item from [deleted items](../resources/directory.md).</span></span>
 
-<span data-ttu-id="30b12-106">Atualmente, a funcionalidade de itens excluídos só é suportada para o [aplicativo](../resources/application.md), [grupo](../resources/group.md) e recursos do [usuário](../resources/user.md) .</span><span class="sxs-lookup"><span data-stu-id="30b12-106">Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="30b12-107">É possível excluir permanentemente um item de itens excluídos.</span><span class="sxs-lookup"><span data-stu-id="30b12-107">You can permanently delete an item from deleted items.</span></span> <span data-ttu-id="30b12-108">Mas, uma vez que um item é excluído permanentemente, ele **não pode** ser restaurado.</span><span class="sxs-lookup"><span data-stu-id="30b12-108">But, once an item is permanently deleted, it **cannot** be restored.</span></span>
+<span data-ttu-id="030c3-106">Atualmente, a funcionalidade de itens excluídos só é suportada para o [aplicativo](../resources/application.md), [grupo](../resources/group.md) e recursos do [usuário](../resources/user.md) .</span><span class="sxs-lookup"><span data-stu-id="030c3-106">Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="030c3-107">É possível excluir permanentemente um item de itens excluídos.</span><span class="sxs-lookup"><span data-stu-id="030c3-107">You can permanently delete an item from deleted items.</span></span> <span data-ttu-id="030c3-108">Mas, uma vez que um item é excluído permanentemente, ele **não pode** ser restaurado.</span><span class="sxs-lookup"><span data-stu-id="030c3-108">But, once an item is permanently deleted, it **cannot** be restored.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="30b12-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="30b12-109">Permissions</span></span>
-<span data-ttu-id="30b12-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="30b12-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="030c3-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="030c3-109">Permissions</span></span>
+<span data-ttu-id="030c3-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="030c3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="30b12-112">Para aplicativos:</span><span class="sxs-lookup"><span data-stu-id="30b12-112">For applications:</span></span>
+<span data-ttu-id="030c3-112">Para aplicativos:</span><span class="sxs-lookup"><span data-stu-id="030c3-112">For applications:</span></span>
 
-|<span data-ttu-id="30b12-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="30b12-113">Permission type</span></span>      | <span data-ttu-id="30b12-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="30b12-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="030c3-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="030c3-113">Permission type</span></span>      | <span data-ttu-id="030c3-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="030c3-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="30b12-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="30b12-115">Delegated (work or school account)</span></span> | <span data-ttu-id="30b12-116">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="30b12-116">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="30b12-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="30b12-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="30b12-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="30b12-118">Not supported.</span></span>    |
-|<span data-ttu-id="30b12-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="30b12-119">Application</span></span> | <span data-ttu-id="30b12-120">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="30b12-120">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
+|<span data-ttu-id="030c3-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="030c3-115">Delegated (work or school account)</span></span> | <span data-ttu-id="030c3-116">Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="030c3-116">Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="030c3-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="030c3-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="030c3-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="030c3-118">Not supported.</span></span>    |
+|<span data-ttu-id="030c3-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="030c3-119">Application</span></span> | <span data-ttu-id="030c3-120">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="030c3-120">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
 
-<span data-ttu-id="30b12-121">Para usuários:</span><span class="sxs-lookup"><span data-stu-id="30b12-121">For users:</span></span>
+<span data-ttu-id="030c3-121">Para usuários:</span><span class="sxs-lookup"><span data-stu-id="030c3-121">For users:</span></span>
 
-|<span data-ttu-id="30b12-122">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="30b12-122">Permission type</span></span>      | <span data-ttu-id="30b12-123">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="30b12-123">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="030c3-122">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="030c3-122">Permission type</span></span>      | <span data-ttu-id="030c3-123">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="030c3-123">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="30b12-124">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="30b12-124">Delegated (work or school account)</span></span> | <span data-ttu-id="30b12-125">User.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="30b12-125">User.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="30b12-126">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="30b12-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="30b12-127">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="30b12-127">Not supported.</span></span> |
-|<span data-ttu-id="30b12-128">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="30b12-128">Application</span></span> | <span data-ttu-id="30b12-129">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="30b12-129">User.ReadWrite.All</span></span> |
+|<span data-ttu-id="030c3-124">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="030c3-124">Delegated (work or school account)</span></span> | <span data-ttu-id="030c3-125">User.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="030c3-125">User.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="030c3-126">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="030c3-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="030c3-127">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="030c3-127">Not supported.</span></span> |
+|<span data-ttu-id="030c3-128">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="030c3-128">Application</span></span> | <span data-ttu-id="030c3-129">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="030c3-129">User.ReadWrite.All</span></span> |
 
-<span data-ttu-id="30b12-130">Para grupos:</span><span class="sxs-lookup"><span data-stu-id="30b12-130">For groups:</span></span>
+<span data-ttu-id="030c3-130">Para grupos:</span><span class="sxs-lookup"><span data-stu-id="030c3-130">For groups:</span></span>
 
-|<span data-ttu-id="30b12-131">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="30b12-131">Permission type</span></span>      | <span data-ttu-id="30b12-132">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="30b12-132">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="030c3-131">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="030c3-131">Permission type</span></span>      | <span data-ttu-id="030c3-132">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="030c3-132">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="30b12-133">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="30b12-133">Delegated (work or school account)</span></span> | <span data-ttu-id="30b12-134">Group.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="30b12-134">Group.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="30b12-135">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="30b12-135">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="30b12-136">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="30b12-136">Not supported.</span></span>    |
-|<span data-ttu-id="30b12-137">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="30b12-137">Application</span></span> | <span data-ttu-id="30b12-138">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="30b12-138">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="030c3-133">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="030c3-133">Delegated (work or school account)</span></span> | <span data-ttu-id="030c3-134">Group.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="030c3-134">Group.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="030c3-135">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="030c3-135">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="030c3-136">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="030c3-136">Not supported.</span></span>    |
+|<span data-ttu-id="030c3-137">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="030c3-137">Application</span></span> | <span data-ttu-id="030c3-138">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="030c3-138">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="30b12-139">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="30b12-139">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="030c3-139">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="030c3-139">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directory/deletedItems/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="30b12-140">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="30b12-140">Request headers</span></span>
-| <span data-ttu-id="30b12-141">Nome</span><span class="sxs-lookup"><span data-stu-id="30b12-141">Name</span></span>       | <span data-ttu-id="30b12-142">Descrição</span><span class="sxs-lookup"><span data-stu-id="30b12-142">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="030c3-140">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="030c3-140">Request headers</span></span>
+| <span data-ttu-id="030c3-141">Nome</span><span class="sxs-lookup"><span data-stu-id="030c3-141">Name</span></span>       | <span data-ttu-id="030c3-142">Descrição</span><span class="sxs-lookup"><span data-stu-id="030c3-142">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="30b12-143">Autorização</span><span class="sxs-lookup"><span data-stu-id="30b12-143">Authorization</span></span>  | <span data-ttu-id="30b12-144">&lt;Código&gt; do portador *Obrigatório*</span><span class="sxs-lookup"><span data-stu-id="30b12-144">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="30b12-145">Aceitar</span><span class="sxs-lookup"><span data-stu-id="30b12-145">Accept</span></span>  | <span data-ttu-id="30b12-146">application/json</span><span class="sxs-lookup"><span data-stu-id="30b12-146">application/json</span></span> |
+| <span data-ttu-id="030c3-143">Autorização</span><span class="sxs-lookup"><span data-stu-id="030c3-143">Authorization</span></span>  | <span data-ttu-id="030c3-144">&lt;Código&gt; do portador *Obrigatório*</span><span class="sxs-lookup"><span data-stu-id="030c3-144">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="030c3-145">Aceitar</span><span class="sxs-lookup"><span data-stu-id="030c3-145">Accept</span></span>  | <span data-ttu-id="030c3-146">application/json</span><span class="sxs-lookup"><span data-stu-id="030c3-146">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="30b12-147">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="30b12-147">Request body</span></span>
-<span data-ttu-id="30b12-148">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="30b12-148">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="030c3-147">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="030c3-147">Request body</span></span>
+<span data-ttu-id="030c3-148">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="030c3-148">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="30b12-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="30b12-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="030c3-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="030c3-149">Response</span></span>
 
-<span data-ttu-id="30b12-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="30b12-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="030c3-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="030c3-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="30b12-152">Exemplo</span><span class="sxs-lookup"><span data-stu-id="30b12-152">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="30b12-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="30b12-153">Request</span></span>
+## <a name="example"></a><span data-ttu-id="030c3-152">Exemplo</span><span class="sxs-lookup"><span data-stu-id="030c3-152">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="030c3-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="030c3-153">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="30b12-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="30b12-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="030c3-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="030c3-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_directory"
@@ -77,26 +77,26 @@ DELETE /directory/deletedItems/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
-# <a name="c"></a>[<span data-ttu-id="30b12-155">C#</span><span class="sxs-lookup"><span data-stu-id="30b12-155">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="030c3-155">C#</span><span class="sxs-lookup"><span data-stu-id="030c3-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="30b12-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="30b12-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="030c3-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="030c3-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="30b12-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="30b12-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="030c3-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="030c3-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="30b12-158">Java</span><span class="sxs-lookup"><span data-stu-id="30b12-158">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="030c3-158">Java</span><span class="sxs-lookup"><span data-stu-id="030c3-158">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="30b12-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="30b12-159">Response</span></span>
-<span data-ttu-id="30b12-p104">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="30b12-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="030c3-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="030c3-159">Response</span></span>
+<span data-ttu-id="030c3-p104">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="030c3-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
