@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 4030d215548f7e7e4d680f676d20482be71b6b8b
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
-ms.translationtype: HT
+ms.openlocfilehash: 538a7a2011433ae1841eba48f4cefafbbeffd50c
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108449"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290058"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -34,10 +34,14 @@ Esse recurso permite:
 | [Atualizar usuário](../api/user-update.md) | [user](user.md) | Atualizar o objeto user. |
 | [Excluir usuário](../api/user-delete.md) | Nenhum | Excluir o objeto user. |
 | [Obter delta](../api/user-delta.md) | Coleção [usuário](user.md) | Obter as alterações incrementais para usuários. |
-| **Calendário** |||
-| [Criar calendário](../api/user-post-calendars.md) | [calendar](calendar.md) | Criar um novo Calendar postando na coleção calendars. |
-| [Criar calendarGroup](../api/user-post-calendargroups.md) | [calendarGroup](calendargroup.md) | Criar um novo CalendarGroup postando na coleção calendarGroups. |
-| [Criar evento](../api/user-post-events.md) | [evento](event.md)| Criar um novo Event postando na coleção events. |
+| **Atribuições de função de aplicativo** | | |
+|[List appRoleAssignments](../api/user-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) collection| Obtenha os aplicativos e as funções de aplicativo que esse usuário foi atribuído.|
+|[Adicionar appRoleAssignment](../api/user-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Atribuir uma função de aplicativo a este usuário.|]
+|[Remover appRoleAssignment](../api/user-delete-approleassignments.md) | Nenhum | Remova uma atribuição de função de aplicativo deste usuário.|
+| **Calendário** ||| 
+| [Criar calendário](../api/user-post-calendars.md) | [Calendar](calendar.md) | Criar um novo Calendar postando na coleção calendars.|
+| [Criar calendarGroup](../api/user-post-calendargroups.md) | [CalendarGroup](calendargroup.md) | Criar um novo CalendarGroup postando na coleção calendarGroups. |
+| [Criar evento](../api/user-post-events.md) | [event](event.md) | Criar um novo Event postando na coleção de eventos. |
 | [findMeetingTimes](../api/user-findmeetingtimes.md) | [meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) | Encontrar o tempo e locais para reunião com base na disponibilidade dos participantes, localização ou restrições de tempo. |
 | [getSchedule](../api/calendar-getschedule.md) | [scheduleInformation](scheduleinformation.md) | Adquira as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos (salas e equipamentos) para um período de tempo especificado. |
 | [Listar calendários](../api/user-list-calendars.md) | Coleção [calendar](calendar.md) | Obter uma coleção de objetos Calendar. |
@@ -52,16 +56,16 @@ Esse recurso permite:
 | [Listar contactFolders](../api/user-list-contactfolders.md) | Coleção de [pastadeContatos](contactfolder.md) | Obter a coleção de pastas de contatos na pasta Contatos padrão do usuário conectado. |
 | **Objetos de diretório** |||
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.|
-|[checkMemberGroups](../api/user-checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. A verificação é transitiva.|
-|[checkMemberObjects](../api/user-checkmemberobjects.md)|Coleção de cadeias de caracteres|Verifique se há associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. Essa função é transitiva.|
+|[checkMemberGroups](../api/user-checkmembergroups.md)|Conjunto de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. A verificação é transitiva.|
+|[checkMemberObjects](../api/user-checkmemberobjects.md)|Conjunto de cadeias de caracteres|Verifique se há associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. Essa função é transitiva.|
 | [exportPersonalData](../api/user-exportpersonaldata.md) | Nenhum | Envia uma solicitação de operação de política de dados, realizada por um administrador da empresa para exportar os dados de um usuário da organização. |
 | [getByIds](../api/directoryobject-getbyids.md) | Coleção de cadeias de caracteres | Retorna os objetos de diretório especificados a partir de uma lista de ids. |
 | [getMemberGroups](../api/user-getmembergroups.md) |Coleção de cadeias de caracteres | Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva. |
-| [getMemberObjects](../api/user-getmemberobjects.md) | Coleção de cadeias de caracteres | Retorna todos os grupos e funções de diretório dos quais o usuário é membro. A verificação é transitiva. |
+| [getMemberObjects](../api/user-getmemberobjects.md) | String collection | Retorna todos os grupos e funções de diretório dos quais o usuário é membro. A verificação é transitiva. |
 | [Listar createdObjects](../api/user-list-createdobjects.md) | Coleção [directoryObject](directoryobject.md) | Obter os objetos directory criados pelo usuário da propriedade de navegação createdObjects. |
 | [Listar licenseDetails](../api/user-list-licensedetails.md) | Coleção [licenseDetails](licensedetails.md) | Obtenha uma coleção de objetos licenseDetails. |
 | [Listar ownedDevices](../api/user-list-owneddevices.md) | Coleção [directoryObject](directoryobject.md) | Obter os dispositivos que pertencem ao usuário da propriedade de navegação ownedDevices. |
-| [Listar ownedObjects](../api/user-list-ownedobjects.md) | Coleção [directoryObject](directoryobject.md) | Obter os objetos directory que pertencem ao usuário da propriedade de navegação ownedObjects. |
+| [Listar ownedObjects](../api/user-list-ownedobjects.md) | [directoryObject](directoryobject.md) collection | Obter os objetos directory que pertencem ao usuário da propriedade de navegação ownedObjects. |
 | [Listar registeredDevices](../api/user-list-registereddevices.md) | Coleção [directoryObject](directoryobject.md) | Obter os dispositivos que estão registrados para o usuário da propriedade de navegação registeredDevices. |
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Reprocessar as atribuições de assinatura do usuário. |
 | [revokeSignInSessions](../api/user-revokesigninsessions.md) | Nenhum | Revoga todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **signInSessionsValidFromDateTime** para data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. |
@@ -70,7 +74,7 @@ Esse recurso permite:
 | [Filhos de lista](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem. |
 | **Grupos** |||
 | [Listar joinedTeams](../api/user-list-joinedteams.md) | Coleção [team](team.md) | Obter as equipes do Microsoft Teams no qual o usuário é membro direto da propriedade de navegação joinedTeams. |
-| [Listar memberOf](../api/user-list-memberof.md) | Coleção [directoryObject](directoryobject.md) | Obter os grupos e as funções de diretório dos quais o usuário é membro direto da propriedade de navegação memberOf. |
+| [Listar memberOf](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) collection | Obter os grupos e as funções de diretório dos quais o usuário é membro direto da propriedade de navegação memberOf. |
 | [Listar memberOf transitivos](../api/user-list-transitivememberof.md) | Coleção [directoryObject](directoryobject.md) | Enumera os grupos e as funções de diretório dos quais o usuário é membro. Essa operação é transitiva e inclui os grupos dos quais o usuário é membro aninhado. |
 | **Email** |||
 | [Create inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) | Criar uma substituição da Caixa de Entrada Destaques para um remetente identificado por um endereço SMTP. |
@@ -117,16 +121,16 @@ Esse recurso permite:
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |aboutMe|String|Um campo de entrada de texto em forma livre para o usuário se descrever.|
-|accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.    |
+|accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.    |
 |ageGroup|String|Define a faixa etária do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. |
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao usuário. Não anulável.            |
 |assignedPlans|Coleção [assignedPlan](assignedplan.md)|Os planos que são atribuídos ao usuário. Somente leitura. Não anulável. |
 |birthday|DateTimeOffset|O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|businessPhones|String collection|Números de telefone para o usuário. OBSERVAÇÃO: Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.|
+|businessPhones|Conjunto de cadeias de caracteres|Números de telefone para o usuário. OBSERVAÇÃO: Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.|
 |city|String|A cidade em que o usuário está localizado. Oferece suporte a $filter.|
 |companyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. |
 |consentProvidedForMinor|String|Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
-|country|String|O país/região em que o usuário está localizado. Por exemplo, "EUA" ou "Reino Unido". Oferece suporte a $filter.|
+|country|Cadeia de caracteres|O país/região em que o usuário está localizado. Por exemplo, "EUA" ou "Reino Unido". Oferece suporte a $filter.|
 |createdDateTime | DateTimeOffset |Data de criação do objeto do usuário. |
 |creationType|String|Indica se a conta de usuário foi criada como uma conta corporativa ou de estudante (`null`), uma conta externa (`Invitation`), uma conta local para um locatário do Azure Active Directory B2C (`LocalAccount`) ou uma inscrição de autoatendimento usando a verificação de email (`EmailVerified`). Somente leitura.|
 |deletedDateTime| DateTimeOffset | A data e hora que o usuário foi excluído. <br><br>Retornado apenas em $select. |
@@ -157,31 +161,31 @@ Esse recurso permite:
 |onPremisesImmutableId|String|Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Esta propriedade deverá ser especificada ao criar uma nova conta de usuário no Graph se você estiver usando um domínio federado para a propriedade **userPrincipalName** (UPN) do usuário. **Importante:** Os caracteres **$** e **\_** não podem ser usados ao especificar esta propriedade. Oferece suporte a $filter.                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o objeto foi sincronizado com o diretório local; por exemplo: "2013-02-16T03:04:54Z". O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |onPremisesProvisioningErrors|coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante o provisionamento. |
-|onPremisesSamAccountName|String| Contém o `samAccountName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
+|onPremisesSamAccountName|Cadeia de Caracteres| Contém o `samAccountName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
 |onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura.|
 |onPremisesSyncEnabled|Booliano| **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura |
 |onPremisesUserPrincipalName|String| Contém o `userPrincipalName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
 |otherMails|String| Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`. Oferece suporte a $filter.|
 |passwordPolicies|String|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é "DisableStrongPassword", o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar "DisablePasswordExpiration". Ambos podem ser especificados juntos; por exemplo: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[passwordProfile](passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte.|
-|pastProjects|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores.|
-|postalCode|String|O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP.|
+|pastProjects|Conjunto de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores.|
+|postalCode|Cadeia de caracteres|O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP.|
 |preferredDataLocation|String|O local de dados preferido para o usuário. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo "en-US".|
 |preferredName|String|O nome preferencial do usuário.|
 |provisionedPlans|coleção [provisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável. |
-|proxyAddresses|Coleção de cadeias de caracteres|Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Somente leitura, não anulável. Oferece suporte a $filter.|
+|proxyAddresses|String collection|Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Somente leitura, não anulável. Oferece suporte a $filter.|
 |refreshTokensValidFromDateTime|DateTimeOffset|Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. <br><br>Retornado apenas em $select. Apenas leitura. |
-|responsibilities|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas responsabilidades.|
+|responsibilities|Conjunto de cadeias de caracteres|Uma lista para o usuário enumerar suas responsabilidades.|
 |schools|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar as escolas que frequentou.|
 |showInAddressList|Booliano|**true** se a lista de endereços global do Outlook deve conter o usuário, caso contrário **false**. Se não estiver configurado, isso será tratado como **true**. Para os usuários convidados por meio do Gerenciador de convites, essa propriedade será definida como **false**.|
 |skills|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas qualificações.|
 |signInSessionsValidFromDateTime|DateTimeOffset| Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. Somente leitura. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) para redefinir.|
-|state|String|O estado ou município no endereço do usuário. Oferece suporte a $filter.|
+|state|Cadeia de caracteres|O estado ou município no endereço do usuário. Oferece suporte a $filter.|
 |streetAddress|String|O endereço do local de trabalho do usuário.|
 |surname|String|O sobrenome do usuário (nome de família ou sobrenome). Oferece suporte a $filter.|
 |usageLocation|String|Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países. Entre os exemplos temos: "US", "JP" e "GB". Não anulável. Oferece suporte a $filter.|
-|userPrincipalName|String|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](organization.md). Oferece suporte a $filter e $orderby.
+|userPrincipalName|Cadeia de caracteres|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](organization.md). Oferece suporte a $filter e $orderby.
 |userType|String|Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”. Oferece suporte a $filter.          |
 
 ### <a name="legal-age-group-property-definitions"></a>Definições de propriedade da faixa etária legal
@@ -196,12 +200,12 @@ Essa propriedade de somente leitura é usada por desenvolvedores de aplicativos 
 
 | Valor    | #  |Descrição|
 |:---------------|:--------|:----------|
-|null|0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
-|minorWithoutParentalConsent |1|(Reservado para uso futuro)|
-|minorWithParentalConsent|2| O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
-|adult|3|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
-|notAdult|4|O usuário é de um país ou região com regulamentações adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` em países regulamentados.|
-|minorNoParentalConsentRequired|5|O usuário é menor de idade, mas é de um país ou região que não tem com regulamentações relacionadas com a idade.|
+|null|,0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
+|minorWithoutParentalConsent |1 |(Reservado para uso futuro)|
+|minorWithParentalConsent|2 | O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
+|adult|3D|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
+|notAdult|4 |O usuário é de um país ou região com regulamentações adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` em países regulamentados.|
+|minorNoParentalConsentRequired|5 |O usuário é menor de idade, mas é de um país ou região que não tem com regulamentações relacionadas com a idade.|
 
 #### <a name="age-group-and-minor-consent"></a>Faixa etária e consentimento de menor
 
@@ -211,19 +215,19 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 
 | Valor    | #  |Descrição|
 |:---------------|:--------|:----------|
-|null|0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
-|minor|1|O usuário é considerado menor de idade.|
-|notAdult|2|O usuário é de um país que têm regulamentações estatutárias (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior do que o limite de idade para criança (conforme o país) e menor que o limite inferior de idade para adulto (como estipulado com base no país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
-|adult|3|O usuário deve ser tratado como um adulto.|
+|null|,0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
+|minor|1 |O usuário é considerado menor de idade.|
+|notAdult|2 |O usuário é de um país que têm regulamentações estatutárias (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior do que o limite de idade para criança (conforme o país) e menor que o limite inferior de idade para adulto (como estipulado com base no país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
+|adult|3D|O usuário deve ser tratado como um adulto.|
 
 #### <a name="consentprovidedforminor-property"></a>Propriedade consentProvidedForMinor
 
 | Valor    | #  |Descrição|
 |:---------------|:--------|:----------|
-|null|0|Valor padrão, nenhum `consentProvidedForMinor` foi definido para o usuário.|
-|granted|1|O consentimento foi obtido para o usuário ter uma conta.|
-|denied|2|O consentimento não foi obtido para o usuário ter uma conta.|
-|notRequired|3|O usuário é de um local que não exige consentimento.|
+|null|,0|Valor padrão, nenhum `consentProvidedForMinor` foi definido para o usuário.|
+|granted|1 |O consentimento foi obtido para o usuário ter uma conta.|
+|denied|2 |O consentimento não foi obtido para o usuário ter uma conta.|
+|notRequired|3D|O usuário é de um local que não exige consentimento.|
 
 ## <a name="relationships"></a>Relações
 
@@ -238,7 +242,7 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |contacts|Coleção [Contact](contact.md)|Os contatos do usuário. Somente leitura. Anulável.|
 |createdObjects|Coleção [directoryObject](directoryobject.md)|Objetos directory que foram criados pelo usuário. Somente leitura. Anulável.|
 |directReports|Coleção [directoryObject](directoryobject.md)|Os usuários e contatos subordinados ao usuário. (Os usuários e contatos cuja propriedade manager está definida como esse usuário.) Somente leitura. Anulável. |
-|drive|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
+|drive|[unidade](drive.md)|O OneDrive do usuário. Somente leitura.|
 |unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
 |eventos|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
 |extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o usuário. Somente leitura. Anulável.|
@@ -252,7 +256,7 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |onenote|[onenote](onenote.md)| Somente leitura.|
 |outlook|[outlookUser](outlookuser.md)| Somente leitura.|
 |ownedDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que pertencem ao usuário. Somente leitura. Anulável.|
-|ownedObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que pertencem ao usuário. Somente leitura. Anulável.|
+|ownedObjects|[directoryObject](directoryobject.md) collection|Objetos de diretório que pertencem ao usuário. Somente leitura. Anulável.|
 |people|Coleção [person](person.md)| Pessoas que são relevantes para o usuário. Somente leitura. Anulável.
 |photo|[profilePhoto](profilephoto.md)| A foto de perfil do usuário. Somente leitura.|
 |planner|[plannerUser](planneruser.md)| Ponto de entrada para o recurso Planejador que pode existir para um usuário. Somente leitura.|

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9de471fb60286aa23c9459498033196662260eef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
-ms.translationtype: HT
+ms.openlocfilehash: 64967be5454428591c81cc955038424156409948
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407155"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290459"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -54,7 +54,6 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |color|calendarColor|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|O provedor de reunião online padrão para reuniões enviadas deste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |id|String|O identificador exclusivo do calendário. Somente leitura.|
-|isDefaultCalendar|Booliano|Verdadeiro se este for o calendário padrão em que novos eventos são criados; caso contrário, será falso.|
 |isRemovable|Booliano| Indica se o calendário deste usuário pode ser excluído da caixa de correio do usuário.|
 |isTallyingResponses|Booliano|Indica se o calendário deste usuário dá suporte ao acompanhamento de respostas de reunião. Somente os convites para reuniões enviados do calendário principal do usuário oferecem suporte para respostas de reunião.|
 |nome|String|O nome do calendário.|
@@ -119,7 +118,6 @@ Veja a seguir uma representação JSON do recurso
   "color": "String",
   "defaultOnlineMeetingProvider": "string",
   "id": "string (identifier)",
-  "isDefaultCalendar": "boolean",
   "isRemovable": "boolean",
   "isTallyingResponses": "boolean",
   "name": "string",

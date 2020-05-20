@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f2890f1158819c58378ec89782be053506140774
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
-ms.translationtype: HT
+ms.openlocfilehash: 27dc4650fa177dcba4d691d2c0d51985fc06e8a4
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557875"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290473"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -34,11 +34,16 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Obter o aplicativo excluído](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Recuperar as propriedades de um aplicativo excluído recentemente. |
 |[Excluir aplicativo permanentemente](../api/directory-deleteditems-delete.md) | Nenhum | Excluir permanentemente um aplicativo. |
 |[Restaurar aplicativo excluído](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restaurar um aplicativo excluído recentemente. |
+|**Certificados e segredos**| | |
 |[Adicionar senha](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Adicionar uma senha forte a um aplicativo.|
 |[Remover senha](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remover uma senha de um aplicativo.|
-| [Criar extensão](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Criar uma propriedade de extensão em um objeto de aplicativo. |
+|[Tecla Adicionar](../api/application-addkey.md)|[keycredential](keycredential.md)|Adicione uma credencial de chave a um aplicativo.|
+|[Remover chave](../api/application-removekey.md)|Nenhum|Remover uma credencial de chave de um aplicativo.|
+|**Extensões**| | |
 | [Listar extensões](../api/application-list-extensionproperty.md) | Coleção [extensionProperty](extensionProperty.md) | Listar propriedades de extensão em um objeto de aplicativo. |
+| [Criar extensão](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Criar uma propriedade de extensão em um objeto de aplicativo. |
 | [Excluir extensão](../api/application-delete-extensionproperty.md) | Nenhum | Excluir uma propriedade de extensão de um objeto de aplicativo. |
+|**Owners**| | |
 |[Listar proprietários](../api/application-list-owners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma coleção de objetos owner.|
 |[Adicionar proprietário](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Adicionar um proprietário postando na coleção de proprietários.|
 |[Remover proprietário](../api/application-delete-owners.md) |Nenhum| Remover um proprietário de um aplicativo.|
@@ -53,13 +58,13 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| addIns | [addIn](addin.md) | Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade "FileHandler". Isso permitirá que serviços como o Office 365 chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando. |
+| addIns | coleção [AddIn](addin.md)| Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade "FileHandler". Isso permitirá que serviços como o Office 365 chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando. |
 | api | [apiApplication](apiapplication.md) | Especifica configurações para um aplicativo que implementa uma API Web. |
 | appId | String | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo pelo Azure AD. Não anulável. Somente leitura. |
-| appRoles | Coleção [appRole](approle.md) | A coleção de funções de aplicativo que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável. |
+| appRoles | Coleção [appRole](approle.md) | A coleção de funções que o aplicativo declara. Com as [atribuições de função de aplicativo](approleassignment.md), essas funções podem ser atribuídas a usuários, grupos ou a entidades de serviço de outros aplicativos. Não anulável. |
 | createdDateTime | DateTimeOffset | A data e a hora que o aplicativo foi registrado. Somente leitura. |
 | deletedDateTime | DateTimeOffset | A data e a hora que o aplicativo foi excluído. Somente leitura. |
-| displayName | String | O nome de exibição do aplicativo. |
+| displayName | Cadeia de caracteres | O nome de exibição do aplicativo. |
 | groupMembershipClaims | Cadeia de caracteres | Configura a declaração `groups` emitida em um usuário ou o token de acesso OAuth 2.0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores válidos de cadeia de caracteres:<ul><li>`None`</li><li>`SecurityGroup`: para grupos de segurança e funções do Azure AD</li><li>`All`: isso obterá todos os grupos de segurança e de distribuição e funções de diretório do Azure AD dos quais o usuário conectado é membro.</li></ul> |
 | id | String | O identificador exclusivo do aplicativo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 | identifierUris | Coleção de cadeias de caracteres | Os URIs que identificam o aplicativo em seu locatário do Azure AD ou em um domínio personalizado verificado, se o aplicativo é multilocatário. Para saber mais, confira [Objetos de aplicativo e objetos de entidade de serviço](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. |
@@ -102,7 +107,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "addIns": {"@odata.type": "microsoft.graph.addIn"},
+  "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
   "api": {"@odata.type": "microsoft.graph.apiApplication"},
   "appId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],

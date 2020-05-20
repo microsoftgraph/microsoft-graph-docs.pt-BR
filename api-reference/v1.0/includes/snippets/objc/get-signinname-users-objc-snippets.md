@@ -2,7 +2,7 @@
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
 ms.openlocfilehash: 15a82dd4b182548a964aebddb69d4c060609c718
 ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2020
 ms.locfileid: "41558943"

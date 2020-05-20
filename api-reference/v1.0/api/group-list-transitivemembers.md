@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 99a4abafb5cb879f2f8b7f721a237495055bcde7
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: e1c4ec7765f40e2867ea39f8d5de4cc6cbd2bd4b
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125131"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289422"
 ---
 # <a name="list-group-transitive-members"></a>Membros transitivos do grupo de lista
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory. Read. All, Directory. AccessAsUser. All, User. ReadBasic. All, User. Read. All    |
+|Delegado (conta corporativa ou de estudante) | Directory. Read. All, Directory. AccessAsUser. All, User. ReadBasic. All, User. Read. All, Application. Read. All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory. Read. All, User. Read. All |
+|Aplicativo | Directory. Read. All, User. Read. All, Application. Read. All |
 
 >**Observação:** Para listar os membros de um grupo de associação oculto, a permissão member. Read. Hidden é necessária.
 

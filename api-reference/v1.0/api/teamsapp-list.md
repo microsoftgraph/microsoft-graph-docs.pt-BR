@@ -5,19 +5,19 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7c7295ac860f681db8182e66484f2df4dadb7fe5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d2dbbc77cdd6ca5fad9afcf975388a678ac1c7a1
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509325"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290318"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Listar os aplicativos publicados do catálogo de aplicativos do Microsoft Teams
 
 Namespace: microsoft.graph
 
 Listar [aplicativos](../resources/teamsapp.md) do catálogo de aplicativos do Microsoft Teams.
-Isso inclui os aplicativos do Microsoft Teams Store, bem como os aplicativos do catálogo de aplicativos da sua organização (o catálogo de aplicativos do locatário). Para obter aplicativos apenas do catálogo de aplicativos da sua organização, `Organization` especifique como **DistributionMethod** no recurso [teamsCatalogApp](../resources/teamsapp.md) .
+Isso inclui os aplicativos do Microsoft Teams Store, bem como os aplicativos do catálogo de aplicativos da sua organização (o catálogo de aplicativos do locatário). Para obter aplicativos apenas do catálogo de aplicativos da sua organização, especifique `Organization` como **distributionMethod** no recurso [teamsCatalogApp](../resources/teamsapp.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | AppCatalog.ReadWrite.All            |
+| Delegado (conta corporativa ou de estudante)     | AppCatalog. Read. All, AppCatalog. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                       |
-| Aplicativo                            | Sem suporte                       |
+| Aplicativo                            | AppCatalog. Read. All, AppCatalog. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,7 +57,7 @@ Nenhum
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma lista de objetos [teamsCatalogApp](../resources/teamsapp.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma lista de objetos [teamsCatalogApp](../resources/teamsapp.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

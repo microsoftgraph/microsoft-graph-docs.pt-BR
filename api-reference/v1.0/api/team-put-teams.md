@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b0b22eba31386425d4196f0cfaa136e03edd5530
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
-ms.translationtype: HT
+ms.openlocfilehash: 5a2f197492ae831dc3e435e3f7a63a4f02714b1a
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509390"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290339"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -30,9 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.ReadWrite.All |
+|Aplicativo | Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e administradores do serviço do Microsoft Teams podem acessar grupos dos quais eles não são membros.
 

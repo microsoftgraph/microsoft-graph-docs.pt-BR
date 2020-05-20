@@ -1,39 +1,41 @@
 ---
 title: tipo de recurso permissionScope
-description: Representa um escopo de permissão delegada do OAuth 2,0.
+description: Representa a definição de uma permissão delegada, às vezes referida como uma permissão OAuth 2,0 ou um escopo de 2,0 OAuth. Uma vez definido, a permissão delegada pode ser solicitada por um aplicativo cliente
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: c10e23790425785adc78c184db42df78f1aa7858
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: db4d26ca0732fe8785313a6b126046f1e8a5d8da
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43406588"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290115"
 ---
 # <a name="permissionscope-resource-type"></a>tipo de recurso permissionScope
 
 Namespace: microsoft.graph
 
-Representa um escopo de permissão delegada do OAuth 2,0. Os escopos de permissão delegada do OAuth 2,0 especificado podem ser solicitados por aplicativos cliente (por meio da coleção **requiredResourceAccess** no objeto [Application](application.md) ) ao chamar um aplicativo de recurso. A propriedade **oauth2Permissions** <!-- of the [servicePrincipal](serviceprincipal.md) entity and --> a entidade do [aplicativo](application.md) é uma coleção de **permissionScope**.
+Representa a definição de uma [permissão delegada](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types).
+
+As permissões delegadas podem ser solicitadas por aplicativos cliente que precisam de um token de acesso para a API que definiu as permissões. As permissões delegadas podem ser solicitadas [dinamicamente](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent), usando o `scopes` parâmetro em uma solicitação de autorização para a plataforma de identidade da Microsoft, ou [estaticamente](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope), através da coleção **requiredResourceAccess** no objeto [Application](application.md) .
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|adminConsentDescription|String| Texto de ajuda de permissão que aparece nas experiências de atribuição de aplicativo e consentimento de administrador. |
-|adminConsentDisplayName|String| Nome para exibição da permissão que aparece nas experiências de atribuição de aplicativo e consentimento de administrador. |
-|id|Guid| Identificador de permissão de escopo exclusivo dentro da coleção oauth2Permissions. |
-|isEnabled|Boolean| Ao criar ou atualizar uma permissão, essa propriedade deve ser definida como **true** (que é o padrão). Para excluir uma permissão, essa propriedade deve ser definida primeiro como **false**. Nesse ponto, em uma chamada subsequente, a permissão pode ser removida. |
-|tenham|String| Para uso interno. |
-|type|String| Especifica se essa permissão de escopo pode ser consentida por um usuário final ou se é uma permissão em todo o locatário que deve ser consentida pelo administrador da empresa. Os valores possíveis são *User* ou *admin*. |
-|userConsentDescription|String| Texto de ajuda de permissão que aparece na experiência de consentimento do usuário final. |
-|userConsentDisplayName|String| Nome para exibição da permissão que aparece na experiência de consentimento do usuário final. |
-|value|Cadeia de caracteres| O valor da declaração do escopo que o aplicativo de recursos deve esperar no token de acesso do OAuth 2,0. |
+|adminConsentDescription|String|Uma descrição das permissões delegadas, que devem ser lidas por um administrador que concede a permissão em nome de todos os usuários. Esse texto aparece em experiências de consentimento de administrador em todo o locatário.|
+|adminConsentDisplayName|String|O título da permissão, destinado a ser lido por um administrador que concede a permissão em nome de todos os usuários.|
+|id|Guid|Identificador de permissão delegada exclusiva dentro da coleção de permissões delegadas definido para um aplicativo de recurso.|
+|isEnabled|Boolean|Ao criar ou atualizar uma permissão, essa propriedade deve ser definida como **true** (que é o padrão). Para excluir uma permissão, essa propriedade deve ser definida primeiro como **false**.  Nesse ponto, em uma chamada subsequente, a permissão pode ser removida.|
+|type|String|Especifica se essa permissão delegada deve ser considerada segura para que usuários que não são administradores consentissem em nome de si mesmas ou se um administrador deve ser necessário para o consentimento das permissões. Esse será o comportamento padrão, mas cada cliente poderá optar por personalizar o comportamento em sua organização (permitindo, restringindo ou limitando o consentimento do usuário a essa permissão delegada).|
+|userConsentDescription|String|Uma descrição das permissões delegadas, que devem ser lidas por um usuário que concede a permissão em seu próprio nome. Esse texto aparece em experiências de consentimento onde o usuário está concordando somente em nome de si mesmo.|
+|userConsentDisplayName|String|Um título para a permissão, que deve ser lido por um usuário que conceda a permissão em seu próprio nome. Esse texto aparece em experiências de consentimento onde o usuário está concordando somente em nome de si mesmo.|
+|value|Cadeia de caracteres|Especifica o valor a ser incluído na `scp` declaração (escopo) em tokens de acesso. Não deve exceder 120 caracteres de comprimento. Os caracteres permitidos são `:` `!` `#` `$` `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` , bem como os caracteres nos intervalos `0-9` `A-Z` e `a-z` . Qualquer outro caractere, incluindo o caractere de espaço, não é permitido.|
 
 ## <a name="json-representation"></a>Representação JSON
-Veja a seguir uma representação JSON do recurso.
+
+Veja a seguir uma representação JSON do recurso
 
 <!-- {
   "blockType": "resource",
@@ -45,26 +47,23 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "adminConsentDescription": "String",
-  "adminConsentDisplayName": "String",
-  "id": "Guid",
-  "isEnabled": true,
-  "origin": "String",
-  "type": "String",
-  "userConsentDescription": "String",
-  "userConsentDisplayName": "String",
-  "value": "String"
+  "id": "guid",
+  "adminConsentDisplayName": "string",
+  "adminConsentDescription": "string",
+  "userConsentDisplayName": "string",
+  "userConsentDescription": "string",
+  "value": "string",
+  "type": "string",
+  "isEnabled": true
 }
-
 ```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "permissionScope resource",
+  "description": "oAuth2Permission resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

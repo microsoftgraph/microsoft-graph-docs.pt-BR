@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2c2191685d3cb033964e14dd67edc60dfeb4cb7c
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: e6c5689fd46ef68ef38727d92bbbfedcc6ad1e58
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108477"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290290"
 ---
 # <a name="remove-owner"></a>Remover proprietário
 
@@ -23,14 +23,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications/{id}/owners/{id}/$ref
+DELETE /applications/{id}/owners/{id}/$ref
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -59,13 +59,6 @@ O exemplo a seguir mostra a solicitação.
 
 ```http
 DELETE https://graph.microsoft.com/v1.0/applications/{id}/owners/{id}/$ref
-Content-type: application/json
-Content-length: 30
-
-{
-"@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
-}
-
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-delete-owners-csharp-snippets.md)]

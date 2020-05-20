@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 43b837f2d9f85168b7e4c031f41eabcffe38c72a
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
-ms.translationtype: HT
+ms.openlocfilehash: afc2e7d49352643f63f817d208e6ef552e9af7fd
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108666"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290227"
 ---
 # <a name="create-application"></a>Criar aplicativo
 
@@ -18,15 +18,18 @@ Namespace: microsoft.graph
 
 Crie um novo objeto [application](../resources/application.md).
 
+> [!IMPORTANT]
+> A adição de [**passwordCredential**](../resources/passwordcredential.md) ao criar aplicativos não é suportada. Use o método [addpassword](application-addpassword.md) para adicionar senhas para um aplicativo.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Aplicativo | Application. ReadWrite. All, Application. ReadWrite. OwnedBy |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -35,9 +38,10 @@ POST /applications
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome           | Descrição                |
+|:---------------|:---------------------------|
+| Autorização  | {token} de portador. Obrigatório.  |
+| Content-Type   | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [application](../resources/application.md). O corpo da solicitação deve conter **displayName**, que é uma propriedade obrigatória.
