@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 83706e6c53bf56778ff6b9f9a37a635577d4ef15
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: e04a8be2403ec003dc1f12b942c28c15722f682e
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35721151"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44339018"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var oAuth2PermissionGrant = new OAuth2PermissionGrant
     Scope = "scope-value"
 };
 
-await graphClient.OAuth2Permissiongrants["{id}"]
+await graphClient.Oauth2PermissionGrants["{id}"]
     .Request()
     .UpdateAsync(oAuth2PermissionGrant);
 
