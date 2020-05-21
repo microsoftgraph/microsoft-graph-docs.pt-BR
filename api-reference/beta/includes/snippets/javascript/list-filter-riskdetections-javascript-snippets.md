@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1112dce24b0f15761d91316acdd3bdc742bd40a7
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 09a0c1838c873ef5dc2b4c4a3c405cbdd93e8279
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725747"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44338881"
 ---
 ```javascript
 
@@ -17,7 +17,7 @@ const client = Client.init(options);
 
 let res = await client.api('/riskDetections')
     .version('beta')
-    .filter('riskType eq 'unfamiliarFeatures' or riskLevel eq 'medium'')
+    .filter('riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'')
     .get();
 
 ```
