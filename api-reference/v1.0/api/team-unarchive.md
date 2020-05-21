@@ -5,65 +5,89 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b891f361acd79a4697b15d54a6f82516124a951c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 119ab415814a41402c87846bbcfb41f0e2bdb542
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290571"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44333637"
 ---
-# <a name="unarchive-team"></a><span data-ttu-id="01603-105">Desarquivar equipe</span><span class="sxs-lookup"><span data-stu-id="01603-105">Unarchive team</span></span>
+# <a name="unarchive-team"></a><span data-ttu-id="27e49-105">Desarquivar equipe</span><span class="sxs-lookup"><span data-stu-id="27e49-105">Unarchive team</span></span>
 
-<span data-ttu-id="01603-106">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="01603-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="27e49-106">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="27e49-106">Namespace: microsoft.graph</span></span>
 
 
 
-<span data-ttu-id="01603-107">Restaurar uma [equipe](../resources/team.md)arquivada.</span><span class="sxs-lookup"><span data-stu-id="01603-107">Restore an archived [team](../resources/team.md).</span></span> <span data-ttu-id="01603-108">Isso restaura a capacidade dos usuários de enviar mensagens e editar a equipe, Abiding por definições de locatários e de equipe.</span><span class="sxs-lookup"><span data-stu-id="01603-108">This restores users' ability to send messages and edit the team, abiding by tenant and team settings.</span></span> <span data-ttu-id="01603-109">As equipes são arquivadas usando a API de [arquivo morto](team-archive.md) .</span><span class="sxs-lookup"><span data-stu-id="01603-109">Teams are archived using the [archive](team-archive.md) API.</span></span>
+<span data-ttu-id="27e49-107">Restaurar uma [equipe](../resources/team.md)arquivada.</span><span class="sxs-lookup"><span data-stu-id="27e49-107">Restore an archived [team](../resources/team.md).</span></span> <span data-ttu-id="27e49-108">Isso restaura a capacidade dos usuários de enviar mensagens e editar a equipe, Abiding por definições de locatários e de equipe.</span><span class="sxs-lookup"><span data-stu-id="27e49-108">This restores users' ability to send messages and edit the team, abiding by tenant and team settings.</span></span> <span data-ttu-id="27e49-109">As equipes são arquivadas usando a API de [arquivo morto](team-archive.md) .</span><span class="sxs-lookup"><span data-stu-id="27e49-109">Teams are archived using the [archive](team-archive.md) API.</span></span>
 
-<span data-ttu-id="01603-110">O desarquivamento é uma operação assíncrona.</span><span class="sxs-lookup"><span data-stu-id="01603-110">Unarchiving is an async operation.</span></span> <span data-ttu-id="01603-111">Uma equipe é desarquivada depois que a operação assíncrona é concluída com êxito, o que pode ocorrer após uma resposta dessa API.</span><span class="sxs-lookup"><span data-stu-id="01603-111">A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.</span></span>
+<span data-ttu-id="27e49-110">O desarquivamento é uma operação assíncrona.</span><span class="sxs-lookup"><span data-stu-id="27e49-110">Unarchiving is an async operation.</span></span> <span data-ttu-id="27e49-111">Uma equipe é desarquivada depois que a operação assíncrona é concluída com êxito, o que pode ocorrer após uma resposta dessa API.</span><span class="sxs-lookup"><span data-stu-id="27e49-111">A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="01603-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="01603-112">Permissions</span></span>
-<span data-ttu-id="01603-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="01603-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="27e49-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="27e49-112">Permissions</span></span>
+<span data-ttu-id="27e49-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="27e49-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="01603-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="01603-115">Permission type</span></span>      | <span data-ttu-id="01603-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="01603-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="27e49-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="27e49-115">Permission type</span></span>      | <span data-ttu-id="27e49-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="27e49-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="01603-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="01603-117">Delegated (work or school account)</span></span> | <span data-ttu-id="01603-118">TeamSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="01603-118">TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="01603-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="01603-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="01603-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="01603-120">Not supported.</span></span>    |
-|<span data-ttu-id="01603-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="01603-121">Application</span></span> | <span data-ttu-id="01603-122">TeamSettings. Edit. Group ([RSC](https://aka.ms/teams-rsc)), TeamSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="01603-122">TeamSettings.Edit.Group ([RSC](https://aka.ms/teams-rsc)), TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="27e49-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="27e49-117">Delegated (work or school account)</span></span> | <span data-ttu-id="27e49-118">TeamSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="27e49-118">TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="27e49-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="27e49-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="27e49-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="27e49-120">Not supported.</span></span>    |
+|<span data-ttu-id="27e49-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="27e49-121">Application</span></span> | <span data-ttu-id="27e49-122">TeamSettings. Edit. Group ([RSC](https://aka.ms/teams-rsc)), TeamSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="27e49-122">TeamSettings.Edit.Group ([RSC](https://aka.ms/teams-rsc)), TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="01603-123">**Observação**: esta API oferece suporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="01603-123">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="01603-124">Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="01603-124">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="27e49-123">**Observação**: esta API oferece suporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="27e49-123">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="27e49-124">Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="27e49-124">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="01603-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="01603-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="27e49-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="27e49-125">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/unarchive
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="01603-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="01603-126">Request headers</span></span>
-| <span data-ttu-id="01603-127">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="01603-127">Header</span></span>       | <span data-ttu-id="01603-128">Valor</span><span class="sxs-lookup"><span data-stu-id="01603-128">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="27e49-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="27e49-126">Request headers</span></span>
+| <span data-ttu-id="27e49-127">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="27e49-127">Header</span></span>       | <span data-ttu-id="27e49-128">Valor</span><span class="sxs-lookup"><span data-stu-id="27e49-128">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="01603-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="01603-129">Authorization</span></span>  | <span data-ttu-id="01603-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="01603-p106">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="27e49-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="27e49-129">Authorization</span></span>  | <span data-ttu-id="27e49-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="27e49-p106">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="01603-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="01603-132">Request body</span></span>
-<span data-ttu-id="01603-133">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="01603-133">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="27e49-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="27e49-132">Request body</span></span>
+<span data-ttu-id="27e49-133">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="27e49-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="01603-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="01603-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="27e49-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="27e49-134">Response</span></span>
 
-<span data-ttu-id="01603-135">Se o desarquivamento for iniciado com êxito, este método retornará um `202 Accepted` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="01603-135">If unarchiving is started successfully, this method returns a `202 Accepted` response code.</span></span> <span data-ttu-id="01603-136">A resposta também conterá um `Location` cabeçalho, que contém o local do [teamsAsyncOperation](../resources/teamsasyncoperation.md) que foi criado para lidar com o cancelamento de arquivamento da equipe.</span><span class="sxs-lookup"><span data-stu-id="01603-136">The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle unarchiving of the team.</span></span> <span data-ttu-id="01603-137">Verifique o status da operação de desarquivamento fazendo uma solicitação GET para esse local.</span><span class="sxs-lookup"><span data-stu-id="01603-137">Check the status of the unarchiving operation by making a GET request to this location.</span></span>
+<span data-ttu-id="27e49-135">Se o desarquivamento for iniciado com êxito, este método retornará um `202 Accepted` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="27e49-135">If unarchiving is started successfully, this method returns a `202 Accepted` response code.</span></span> <span data-ttu-id="27e49-136">A resposta também conterá um `Location` cabeçalho, que contém o local do [teamsAsyncOperation](../resources/teamsasyncoperation.md) que foi criado para lidar com o cancelamento de arquivamento da equipe.</span><span class="sxs-lookup"><span data-stu-id="27e49-136">The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle unarchiving of the team.</span></span> <span data-ttu-id="27e49-137">Verifique o status da operação de desarquivamento fazendo uma solicitação GET para esse local.</span><span class="sxs-lookup"><span data-stu-id="27e49-137">Check the status of the unarchiving operation by making a GET request to this location.</span></span>
 
-## <a name="example"></a><span data-ttu-id="01603-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="01603-138">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="01603-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="01603-139">Request</span></span>
-<span data-ttu-id="01603-140">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="01603-140">The following is an example of a request.</span></span>
+## <a name="example"></a><span data-ttu-id="27e49-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="27e49-138">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="27e49-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="27e49-139">Request</span></span>
+<span data-ttu-id="27e49-140">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="27e49-140">The following is an example of a request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="27e49-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="27e49-141">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "unarchive_team"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
 ```
+# <a name="c"></a>[<span data-ttu-id="27e49-142">C#</span><span class="sxs-lookup"><span data-stu-id="27e49-142">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/unarchive-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="01603-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="01603-141">Response</span></span>
-<span data-ttu-id="01603-142">Veja a seguir um exemplo de uma resposta.</span><span class="sxs-lookup"><span data-stu-id="01603-142">The following is an example of a response.</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="27e49-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="27e49-143">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/unarchive-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="27e49-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="27e49-144">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/unarchive-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="27e49-145">Java</span><span class="sxs-lookup"><span data-stu-id="27e49-145">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/unarchive-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="27e49-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="27e49-146">Response</span></span>
+<span data-ttu-id="27e49-147">Veja a seguir um exemplo de uma resposta.</span><span class="sxs-lookup"><span data-stu-id="27e49-147">The following is an example of a response.</span></span>
+<!-- {
+  "blockType": "response",
+  "name": "unarchive_team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Location: /teams({id})/operations({opId})

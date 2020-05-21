@@ -5,53 +5,55 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bf9e90c8335ff73f5afe1a98f83ff6cb6502b720
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 1250e9917e3021bd235a2c6552fd5ac7480e14c8
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291326"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44333786"
 ---
-# <a name="remove-owner"></a><span data-ttu-id="82005-103">Remover proprietário</span><span class="sxs-lookup"><span data-stu-id="82005-103">Remove owner</span></span>
+# <a name="remove-owner"></a><span data-ttu-id="8f885-103">Remover proprietário</span><span class="sxs-lookup"><span data-stu-id="8f885-103">Remove owner</span></span>
 
-<span data-ttu-id="82005-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="82005-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8f885-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8f885-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="82005-105">Remover um proprietário de um objeto [servicePrincipalName](../resources/serviceprincipal.md) .</span><span class="sxs-lookup"><span data-stu-id="82005-105">Remove an owner from a [servicePrincipal](../resources/serviceprincipal.md) object.</span></span>
+<span data-ttu-id="8f885-105">Remover um proprietário de um objeto [servicePrincipalName](../resources/serviceprincipal.md) .</span><span class="sxs-lookup"><span data-stu-id="8f885-105">Remove an owner from a [servicePrincipal](../resources/serviceprincipal.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="82005-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="82005-106">Permissions</span></span>
-<span data-ttu-id="82005-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="82005-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8f885-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="8f885-106">Permissions</span></span>
+<span data-ttu-id="8f885-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8f885-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="82005-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="82005-109">Permission type</span></span>      | <span data-ttu-id="82005-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="82005-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8f885-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8f885-109">Permission type</span></span>      | <span data-ttu-id="8f885-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8f885-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="82005-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="82005-111">Delegated (work or school account)</span></span> | <span data-ttu-id="82005-112">Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="82005-112">Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>  |
-|<span data-ttu-id="82005-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="82005-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="82005-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="82005-114">Not supported.</span></span>    |
-|<span data-ttu-id="82005-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="82005-115">Application</span></span> | <span data-ttu-id="82005-116">Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="82005-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="8f885-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8f885-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8f885-112">Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="8f885-112">Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>  |
+|<span data-ttu-id="8f885-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8f885-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8f885-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8f885-114">Not supported.</span></span>    |
+|<span data-ttu-id="8f885-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8f885-115">Application</span></span> | <span data-ttu-id="8f885-116">Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="8f885-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="82005-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="82005-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8f885-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8f885-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /serviceprincipals/{id}/owners/{id}/$ref
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="82005-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="82005-118">Request headers</span></span>
-| <span data-ttu-id="82005-119">Nome</span><span class="sxs-lookup"><span data-stu-id="82005-119">Name</span></span> | <span data-ttu-id="82005-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="82005-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8f885-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8f885-118">Request headers</span></span>
+| <span data-ttu-id="8f885-119">Nome</span><span class="sxs-lookup"><span data-stu-id="8f885-119">Name</span></span> | <span data-ttu-id="8f885-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="8f885-120">Description</span></span>|
 |:---- |:---------- |
-| <span data-ttu-id="82005-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="82005-121">Authorization</span></span> | <span data-ttu-id="82005-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="82005-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="8f885-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="8f885-121">Authorization</span></span> | <span data-ttu-id="8f885-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8f885-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="82005-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="82005-124">Request body</span></span>
-<span data-ttu-id="82005-125">No corpo da solicitação, forneça o identificador do objeto de diretório a ser atribuído como proprietário.</span><span class="sxs-lookup"><span data-stu-id="82005-125">In the request body, supply the identifier of the directory object to be assigned as owner.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8f885-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8f885-124">Request body</span></span>
+<span data-ttu-id="8f885-125">No corpo da solicitação, forneça o identificador do objeto de diretório a ser atribuído como proprietário.</span><span class="sxs-lookup"><span data-stu-id="8f885-125">In the request body, supply the identifier of the directory object to be assigned as owner.</span></span>
 
-## <a name="response"></a><span data-ttu-id="82005-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="82005-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8f885-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="8f885-126">Response</span></span>
 
-<span data-ttu-id="82005-127">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="82005-127">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="8f885-127">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="8f885-127">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="82005-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="82005-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8f885-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8f885-128">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="82005-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="82005-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="8f885-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8f885-129">Request</span></span>
 
-<span data-ttu-id="82005-130">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="82005-130">The following example shows the request.</span></span>
+<span data-ttu-id="8f885-130">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="8f885-130">The following example shows the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="8f885-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="8f885-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_delete_owners"
@@ -67,12 +69,30 @@ Content-length: 30
 }
 
 ```
+# <a name="c"></a>[<span data-ttu-id="8f885-132">C#</span><span class="sxs-lookup"><span data-stu-id="8f885-132">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-delete-owners-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="82005-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="82005-131">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="8f885-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8f885-133">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-delete-owners-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="82005-132">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="82005-132">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="8f885-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8f885-134">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-delete-owners-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="82005-133">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="82005-133">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="82005-134">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="82005-134">All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="8f885-135">Java</span><span class="sxs-lookup"><span data-stu-id="8f885-135">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-owners-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="8f885-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="8f885-136">Response</span></span>
+
+<span data-ttu-id="8f885-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8f885-137">The following is an example of the response.</span></span>
+
+><span data-ttu-id="8f885-138">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="8f885-138">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="8f885-139">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8f885-139">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
