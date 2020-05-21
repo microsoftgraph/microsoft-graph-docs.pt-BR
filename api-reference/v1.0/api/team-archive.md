@@ -5,75 +5,100 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: da0d836eb6eea664cbc8a6bf2814a13dc33c4d03
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 6978a5cc4869b29cab7c20daee1e1dbfcaab0cf6
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290353"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44335723"
 ---
-# <a name="archive-team"></a><span data-ttu-id="47ddd-103">Arquivar equipe</span><span class="sxs-lookup"><span data-stu-id="47ddd-103">Archive team</span></span>
+# <a name="archive-team"></a><span data-ttu-id="f2a91-103">Arquivar equipe</span><span class="sxs-lookup"><span data-stu-id="f2a91-103">Archive team</span></span>
 
-<span data-ttu-id="47ddd-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="47ddd-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f2a91-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f2a91-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="47ddd-105">Arquive a [equipe ](../resources/team.md) especificada.</span><span class="sxs-lookup"><span data-stu-id="47ddd-105">Archive the specified [team](../resources/team.md).</span></span> <span data-ttu-id="47ddd-106">Quando uma equipe é arquivada, os usuários não podem mais enviar ou curtir mensagens nos canais da equipe, editar o nome, a descrição ou outras configurações da equipe ou, em geral, fazer a maioria das alterações na equipe.</span><span class="sxs-lookup"><span data-stu-id="47ddd-106">When a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.</span></span>
-<span data-ttu-id="47ddd-107">As alterações de associação à equipe continuam a ser permitidas.</span><span class="sxs-lookup"><span data-stu-id="47ddd-107">Membership changes to the team continue to be allowed.</span></span>
+<span data-ttu-id="f2a91-105">Arquive a [equipe ](../resources/team.md) especificada.</span><span class="sxs-lookup"><span data-stu-id="f2a91-105">Archive the specified [team](../resources/team.md).</span></span> <span data-ttu-id="f2a91-106">Quando uma equipe é arquivada, os usuários não podem mais enviar ou curtir mensagens nos canais da equipe, editar o nome, a descrição ou outras configurações da equipe ou, em geral, fazer a maioria das alterações na equipe.</span><span class="sxs-lookup"><span data-stu-id="f2a91-106">When a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.</span></span>
+<span data-ttu-id="f2a91-107">As alterações de associação à equipe continuam a ser permitidas.</span><span class="sxs-lookup"><span data-stu-id="f2a91-107">Membership changes to the team continue to be allowed.</span></span>
 
-<span data-ttu-id="47ddd-108">O arquivamento é uma operação assíncrona.</span><span class="sxs-lookup"><span data-stu-id="47ddd-108">Archiving is an async operation.</span></span> <span data-ttu-id="47ddd-109">Uma equipe é arquivada depois que a operação assíncrona é concluída com êxito, o que pode ocorrer após uma resposta dessa API.</span><span class="sxs-lookup"><span data-stu-id="47ddd-109">A team is archived once the async operation completes successfully, which may occur subsequent to a response from this API.</span></span>
+<span data-ttu-id="f2a91-108">O arquivamento é uma operação assíncrona.</span><span class="sxs-lookup"><span data-stu-id="f2a91-108">Archiving is an async operation.</span></span> <span data-ttu-id="f2a91-109">Uma equipe é arquivada depois que a operação assíncrona é concluída com êxito, o que pode ocorrer após uma resposta dessa API.</span><span class="sxs-lookup"><span data-stu-id="f2a91-109">A team is archived once the async operation completes successfully, which may occur subsequent to a response from this API.</span></span>
 
-<span data-ttu-id="47ddd-110">Para arquivar uma equipe, a equipe e o [grupo](../resources/group.md) devem ter um proprietário.</span><span class="sxs-lookup"><span data-stu-id="47ddd-110">In order to archive team, the team and [group](../resources/group.md) must have an owner.</span></span>
+<span data-ttu-id="f2a91-110">Para arquivar uma equipe, a equipe e o [grupo](../resources/group.md) devem ter um proprietário.</span><span class="sxs-lookup"><span data-stu-id="f2a91-110">In order to archive team, the team and [group](../resources/group.md) must have an owner.</span></span>
 
-<span data-ttu-id="47ddd-111">Para restaurar uma equipe do estado arquivado, use a API para [desarquivar](team-unarchive.md).</span><span class="sxs-lookup"><span data-stu-id="47ddd-111">To restore a team from its archived state, use the API to [unarchive](team-unarchive.md).</span></span>
+<span data-ttu-id="f2a91-111">Para restaurar uma equipe do estado arquivado, use a API para [desarquivar](team-unarchive.md).</span><span class="sxs-lookup"><span data-stu-id="f2a91-111">To restore a team from its archived state, use the API to [unarchive](team-unarchive.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="47ddd-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="47ddd-112">Permissions</span></span>
-<span data-ttu-id="47ddd-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="47ddd-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f2a91-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="f2a91-112">Permissions</span></span>
+<span data-ttu-id="f2a91-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f2a91-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="47ddd-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="47ddd-115">Permission type</span></span>      | <span data-ttu-id="47ddd-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="47ddd-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f2a91-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f2a91-115">Permission type</span></span>      | <span data-ttu-id="f2a91-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f2a91-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="47ddd-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="47ddd-117">Delegated (work or school account)</span></span> | <span data-ttu-id="47ddd-118">TeamSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="47ddd-118">TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="47ddd-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="47ddd-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="47ddd-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="47ddd-120">Not supported.</span></span>    |
-|<span data-ttu-id="47ddd-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="47ddd-121">Application</span></span> | <span data-ttu-id="47ddd-122">TeamSettings. Edit. Group ([RSC](https://aka.ms/teams-rsc)), TeamSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="47ddd-122">TeamSettings.Edit.Group ([RSC](https://aka.ms/teams-rsc)), TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="f2a91-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f2a91-117">Delegated (work or school account)</span></span> | <span data-ttu-id="f2a91-118">TeamSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="f2a91-118">TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="f2a91-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f2a91-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f2a91-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f2a91-120">Not supported.</span></span>    |
+|<span data-ttu-id="f2a91-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f2a91-121">Application</span></span> | <span data-ttu-id="f2a91-122">TeamSettings. Edit. Group ([RSC](https://aka.ms/teams-rsc)), TeamSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="f2a91-122">TeamSettings.Edit.Group ([RSC](https://aka.ms/teams-rsc)), TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="47ddd-123">**Observação**: esta API oferece suporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="47ddd-123">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="47ddd-124">Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="47ddd-124">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="f2a91-123">**Observação**: esta API oferece suporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="f2a91-123">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="f2a91-124">Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="f2a91-124">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="47ddd-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="47ddd-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f2a91-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f2a91-125">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/archive
 ```
-## <a name="request-headers"></a><span data-ttu-id="47ddd-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="47ddd-126">Request headers</span></span>
-| <span data-ttu-id="47ddd-127">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="47ddd-127">Header</span></span>       | <span data-ttu-id="47ddd-128">Valor</span><span class="sxs-lookup"><span data-stu-id="47ddd-128">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="f2a91-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f2a91-126">Request headers</span></span>
+| <span data-ttu-id="f2a91-127">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f2a91-127">Header</span></span>       | <span data-ttu-id="f2a91-128">Valor</span><span class="sxs-lookup"><span data-stu-id="f2a91-128">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="47ddd-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="47ddd-129">Authorization</span></span>  | <span data-ttu-id="47ddd-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="47ddd-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f2a91-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="f2a91-129">Authorization</span></span>  | <span data-ttu-id="f2a91-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f2a91-p105">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="47ddd-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="47ddd-132">Request body</span></span>
-<span data-ttu-id="47ddd-133">Na solicitação, você pode _opcionalmente_ incluir o parâmetro `shouldSetSpoSiteReadOnlyForMembers` em um corpo JSON, da seguinte maneira.</span><span class="sxs-lookup"><span data-stu-id="47ddd-133">In the request, you may _optionally_ include the `shouldSetSpoSiteReadOnlyForMembers` parameter in a JSON body, as follows.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f2a91-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f2a91-132">Request body</span></span>
+<span data-ttu-id="f2a91-133">Na solicitação, você pode _opcionalmente_ incluir o parâmetro `shouldSetSpoSiteReadOnlyForMembers` em um corpo JSON, da seguinte maneira.</span><span class="sxs-lookup"><span data-stu-id="f2a91-133">In the request, you may _optionally_ include the `shouldSetSpoSiteReadOnlyForMembers` parameter in a JSON body, as follows.</span></span>
 ```JSON
 {
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-<span data-ttu-id="47ddd-134">Esse parâmetro opcional define se é necessário definir permissões para membros da equipe como somente leitura no site do SharePoint Online associado à equipe.</span><span class="sxs-lookup"><span data-stu-id="47ddd-134">This optional parameter defines whether to set permissions for team members to read-only on the Sharepoint Online site associated with the team.</span></span> <span data-ttu-id="47ddd-135">Essa etapa será ignorada, caso as defina como falsas ou omita o corpo completamente.</span><span class="sxs-lookup"><span data-stu-id="47ddd-135">Setting it to false or omitting the body altogether will result in this step being skipped.</span></span>
+<span data-ttu-id="f2a91-134">Esse parâmetro opcional define se é necessário definir permissões para membros da equipe como somente leitura no site do SharePoint Online associado à equipe.</span><span class="sxs-lookup"><span data-stu-id="f2a91-134">This optional parameter defines whether to set permissions for team members to read-only on the Sharepoint Online site associated with the team.</span></span> <span data-ttu-id="f2a91-135">Essa etapa será ignorada, caso as defina como falsas ou omita o corpo completamente.</span><span class="sxs-lookup"><span data-stu-id="f2a91-135">Setting it to false or omitting the body altogether will result in this step being skipped.</span></span>
 
 >[!IMPORTANT]
-><span data-ttu-id="47ddd-136">Não há suporte para o parâmetro `shouldSetSpoSiteReadOnlyForMembers` no contexto do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="47ddd-136">The `shouldSetSpoSiteReadOnlyForMembers` parameter is not supported in the application context.</span></span>
+><span data-ttu-id="f2a91-136">Não há suporte para o parâmetro `shouldSetSpoSiteReadOnlyForMembers` no contexto do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="f2a91-136">The `shouldSetSpoSiteReadOnlyForMembers` parameter is not supported in the application context.</span></span>
 
-## <a name="response"></a><span data-ttu-id="47ddd-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="47ddd-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f2a91-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="f2a91-137">Response</span></span>
 
-<span data-ttu-id="47ddd-138">Se o arquivamento for iniciado com êxito, esse método retornará um código de resposta `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="47ddd-138">If archiving is started successfully, this method returns a `202 Accepted` response code.</span></span> <span data-ttu-id="47ddd-139">A resposta também conterá um cabeçalho `Location`, que contém o local da [teamsAsyncOperation](../resources/teamsasyncoperation.md) criada para lidar com o arquivamento da equipe.</span><span class="sxs-lookup"><span data-stu-id="47ddd-139">The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle archiving of the team.</span></span> <span data-ttu-id="47ddd-140">Verifique o status da operação de arquivamento fazendo uma solicitação GET para esse local.</span><span class="sxs-lookup"><span data-stu-id="47ddd-140">Check the status of the archiving operation by making a GET request to this location.</span></span>
+<span data-ttu-id="f2a91-138">Se o arquivamento for iniciado com êxito, esse método retornará um código de resposta `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="f2a91-138">If archiving is started successfully, this method returns a `202 Accepted` response code.</span></span> <span data-ttu-id="f2a91-139">A resposta também conterá um cabeçalho `Location`, que contém o local da [teamsAsyncOperation](../resources/teamsasyncoperation.md) criada para lidar com o arquivamento da equipe.</span><span class="sxs-lookup"><span data-stu-id="f2a91-139">The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle archiving of the team.</span></span> <span data-ttu-id="f2a91-140">Verifique o status da operação de arquivamento fazendo uma solicitação GET para esse local.</span><span class="sxs-lookup"><span data-stu-id="f2a91-140">Check the status of the archiving operation by making a GET request to this location.</span></span>
 
-## <a name="example"></a><span data-ttu-id="47ddd-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="47ddd-141">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="47ddd-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="47ddd-142">Request</span></span>
-<span data-ttu-id="47ddd-143">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="47ddd-143">The following is an example of a request.</span></span>
+## <a name="example"></a><span data-ttu-id="f2a91-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f2a91-141">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="f2a91-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f2a91-142">Request</span></span>
+<span data-ttu-id="f2a91-143">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="f2a91-143">The following is an example of a request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="f2a91-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="f2a91-144">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "archive_team"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 ```
-#### <a name="response"></a><span data-ttu-id="47ddd-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="47ddd-144">Response</span></span>
-<span data-ttu-id="47ddd-145">Veja a seguir um exemplo de uma resposta.</span><span class="sxs-lookup"><span data-stu-id="47ddd-145">The following is an example of a response.</span></span>
+# <a name="c"></a>[<span data-ttu-id="f2a91-145">C#</span><span class="sxs-lookup"><span data-stu-id="f2a91-145">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/archive-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="f2a91-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f2a91-146">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/archive-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="f2a91-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f2a91-147">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/archive-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="f2a91-148">Java</span><span class="sxs-lookup"><span data-stu-id="f2a91-148">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/archive-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### <a name="response"></a><span data-ttu-id="f2a91-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="f2a91-149">Response</span></span>
+<span data-ttu-id="f2a91-150">Veja a seguir um exemplo de uma resposta.</span><span class="sxs-lookup"><span data-stu-id="f2a91-150">The following is an example of a response.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "name": "archive_team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Location: /teams({id})/operations({opId})
