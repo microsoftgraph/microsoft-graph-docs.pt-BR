@@ -1,20 +1,20 @@
 ---
-title: Visão geral dos grupos do Office 365 no Microsoft Graph
-description: 'Os grupos do Office 365 fornecem o serviço de associação fundamental para os usuários compartilharem conversas, arquivos, anotações, calendários, planos e muitos outros ativos. '
+title: Visão geral dos grupos do Microsoft 365 no Microsoft Graph
+description: 'Os grupos do Microsoft 365 fornecem o serviço de associação de base para os usuários compartilharem conversas, arquivos, anotações, calendários, planos e muitos outros ativos. '
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 376b693df7267732112ceb5967194760d8fda145
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
-ms.translationtype: HT
+ms.openlocfilehash: bffcd3fcf24c5774436bf9d38d2afd16d490a770
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969521"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290982"
 ---
-# <a name="overview-of-office-365-groups-in-microsoft-graph"></a>Visão geral dos grupos do Office 365 no Microsoft Graph
+# <a name="overview-of-microsoft-365-groups-in-microsoft-graph"></a>Visão geral dos grupos do Microsoft 365 no Microsoft Graph
 
-Os grupos do Office 365 fornecem o serviço de associação fundamental para os usuários compartilharem conversas, arquivos, anotações, calendários, planos e muitos outros ativos. 
+Os grupos do Microsoft 365 (também conhecidos como grupos do Office 365) fornecem o serviço de associação fundamental para os usuários compartilharem conversas, arquivos, anotações, calendários, planos e muitos outros ativos. 
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/WB9w6QM9xIU]

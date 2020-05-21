@@ -1,19 +1,19 @@
 ---
 title: Principais serviços e recursos do Microsoft Graph
-description: 'O Microsoft Graph permite que você se integre com o melhor dos serviços do Office 365, Windows 10 e Enterprise Mobility + Security no Microsoft 365 usando APIs REST e bibliotecas de cliente. Além disso, ele oferece segurança e inteligência social que podem aumentar a produtividade do usuário, a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. '
+description: 'O Microsoft Graph permite que você se integre com o melhor dos serviços de segurança e mobilidade do Microsoft 365, Windows 10 e Enterprise no Microsoft 365, usando APIs REST e bibliotecas de cliente. Além disso, ele oferece segurança e inteligência social que podem aumentar a produtividade do usuário, a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. '
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5bb8a7a1771dd0ecf4f2ef282e44e54d9c813117
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
-ms.translationtype: HT
+ms.openlocfilehash: fa24c0741b452ffa8208f3834b6123618c92a371
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557840"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290283"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
-O Microsoft Graph permite que você se integre com o melhor dos serviços do Office 365, Windows 10 e Enterprise Mobility + Security no Microsoft 365 usando APIs REST e bibliotecas de cliente. Além disso, oferece segurança e inteligência que podem aumentar a produtividade do usuário, bem como a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. 
+O Microsoft Graph permite que você se integre com o melhor dos serviços de segurança e mobilidade do Microsoft 365, Windows 10 e Enterprise no Microsoft 365, usando APIs REST e bibliotecas de cliente. Além disso, oferece segurança e inteligência que podem aumentar a produtividade do usuário, bem como a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. 
 
 ## <a name="users-and-groups"></a>Usuários e grupos
 
@@ -21,12 +21,12 @@ Na parte central do Microsoft Graph estão os conceitos de usuário e de grupo.
 
 Um _usuário_ do Microsoft Graph é uma pessoa entre milhões que usam serviços em nuvem do Microsoft 365. Ele é o foco principal, aquele que é protegido e cujo acesso é bem gerenciado. Os dados do usuário é que orientam os negócios. Os serviços do Microsoft Graph disponibilizam esses dados para empresas em contextos sofisticados, atualizações em tempo real e insights profundos e, sempre, apenas com as permissões apropriadas.
 
-Um _grupo_ do Office 365 é a principal entidade que permite aos usuários colaborar. Ele integra-se a outros serviços possibilitando cenários mais sofisticados no planejamento de tarefas, trabalho em equipe, educação e muito mais. 
+Um _grupo_ do Microsoft 365 é a entidade fundamental que permite que os usuários colaborem. Ele integra-se a outros serviços possibilitando cenários mais sofisticados no planejamento de tarefas, trabalho em equipe, educação e muito mais. 
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
 | Usuários | O Azure AD e a maioria dos serviços de produtividade, colaboração, inteligência e educação | O usuário é um dos pontos centrais do Microsoft Graph, em torno do qual muitos serviços do Microsoft Graph criam uma funcionalidade centrada no usuário. | [Visão geral de usuários do Microsoft Graph](azuread-users-concept-overview.md)|
-|Grupos | Azure AD, OneDrive, OneNote, Outlook, Planner | Um grupo do Office 365 fornece a unidade colaborativa fundamental para os usuários compartilharem conversas, arquivos, anotações, calendários, planos e muito mais. | [Visão geral dos grupos do Office 365 no Microsoft Graph](office365-groups-concept-overview.md) |
+|Grupos | Azure AD, OneDrive, OneNote, Outlook, Planner | Um grupo do Microsoft 365 fornece a unidade colaborativa fundamental para os usuários compartilharem conversas, arquivos, anotações, calendários, planos e muito mais. | [Visão geral dos grupos do Microsoft 365 no Microsoft Graph](office365-groups-concept-overview.md) |
 
 ## <a name="connecting-users-data-microsoft-365-services-and-your-apps"></a>Como conectar dados de usuários, serviços do Microsoft 365 e seus aplicativos
 
@@ -50,11 +50,11 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
-| Calendário | Outlook  | Permite que os usuários configurem compromissos e reuniões na Web, dispositivos móveis e computadores. Ele faz parte do hub de comunicação de mensagens do Outlook no Office 365 que também permite que os usuários gerenciem emails e contatos. | [Visão geral do calendário do Outlook](outlook-calendar-concept-overview.md)  |
+| Calendário | Outlook  | Permite que os usuários configurem compromissos e reuniões na Web, dispositivos móveis e computadores. Ele faz parte do hub de comunicação de mensagens do Outlook no Microsoft 365 que também permite que os usuários gerenciem emails e contatos. | [Visão geral do calendário do Outlook](outlook-calendar-concept-overview.md)  |
 | Arquivos | OneDrive e SharePoint | Gerencia e compartilha arquivos de usuários no OneDrive e no SharePoint. | [Visão geral do armazenamento de arquivos do OneDrive](onedrive-concept-overview.md) |
-| Email | Outlook | Permite que os usuários se comuniquem, organizem mensagens e gerenciem prioridades em seus fluxos de trabalho na Web, em dispositivos móveis e de desktop. Ele faz parte do hub de comunicação do Outlook no Office 365 que também permite que os usuários gerenciem contatos e agendem reuniões. | [Visão geral do email do Outlook](outlook-mail-concept-overview.md) |
+| Email | Outlook | Permite que os usuários se comuniquem, organizem mensagens e gerenciem prioridades em seus fluxos de trabalho na Web, em dispositivos móveis e de desktop. Ele faz parte do hub de comunicação do Outlook no Microsoft 365 que também permite que os usuários gerenciem contatos e agendem reuniões. | [Visão geral do email do Outlook](outlook-mail-concept-overview.md) |
 | Observações | OneNote | Permite aos usuários planejar e organizar informações e ideias. | [Visão geral das anotações do OneNote](integrate-with-onenote.md) |
-| Contatos pessoais | Outlook | Entra em contato com o gerente na Web e em dispositivos móveis e de desktop. Ele faz parte do hub de comunicação de mensagens do Outlook no Office 365 que também permite que os usuários gerenciem emails e agendem reuniões.  | [Visão geral de contatos pessoais do Outlook](outlook-contacts-concept-overview.md) |
+| Contatos pessoais | Outlook | Entra em contato com o gerente na Web e em dispositivos móveis e de desktop. Ele faz parte do hub de comunicação de mensagens do Outlook no Microsoft 365 que também permite que os usuários gerenciem emails e agendem reuniões.  | [Visão geral de contatos pessoais do Outlook](outlook-contacts-concept-overview.md) |
 | Pastas de trabalho e gráficos | Excel | Permite que os usuários usem planilhas do Excel para fazer cálculos complexos, rastrear, analisar e visualizar dados e gerar relatórios profissionais. | [Visão geral de gráficos e pastas de trabalho do Excel](excel-concept-overview.md) |
 
 
@@ -64,8 +64,9 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 -->
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
-| Sites e listas  | SharePoint | A plataforma baseada na Web para os usuários e grupos do Office 365 compartilharem, organizarem, gerenciarem e descobrirem conteúdo (incluindo listas, arquivos e anotações). | [Visão geral do conteúdo e sites do SharePoint](sharepoint-concept-overview.md) | 
-|Tarefas e planos | Planner | Permite que os usuários de grupos do Office 365 criem planos, atribuam tarefas e controlem o progresso. | [Visão geral de tarefas e planos do Planner](planner-concept-overview.md) |
+| Comunicações na nuvem | Microsoft Teams, Skype | Permite que aplicativos e serviços interajam com usuários por meio de vários recursos relacionados a comunicações, por exemplo, permitindo que os bots lidem com as chamadas, integrando reuniões online em cenários de linha de negócios, mostrando o status de presença dos usuários (visualização) e pesquisando registros para chamadas e reuniões online (visualização). |
+| Sites e listas  | SharePoint | Plataforma baseada na Web para usuários e grupos do Microsoft 365 para compartilhar, organizar, gerenciar e descobrir conteúdo (incluindo listas, arquivos e anotações). | [Visão geral do conteúdo e sites do SharePoint](sharepoint-concept-overview.md) | 
+|Tarefas e planos | Planner | Permite que os usuários nos grupos do Microsoft 365 criem planos, atribuam tarefas e acompanhem o progresso. | [Visão geral de tarefas e planos do Planner](planner-concept-overview.md) |
 |Trabalho em equipe |  Microsoft Teams | O hub digital e espaço de trabalho baseado em bate-papo para as equipes compartilharem arquivos, observações, calendários e planos. | [Visão geral do trabalho em equipe do Microsoft Teams](teams-concept-overview.md) |
 
 

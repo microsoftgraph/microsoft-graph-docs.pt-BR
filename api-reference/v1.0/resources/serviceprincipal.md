@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: d2c1810d25fe2ad50a82f20ab2a35612953e5837
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 94a651a613d64ee5cefeed6a7e8f3f0b4656a916
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44288649"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44332317"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
@@ -92,7 +92,7 @@ Representa uma instância de um aplicativo em um diretório. Herda de [directory
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Entidades (usuários, grupos e entidades de serviço) que são atribuídas a essa entidade de serviço. Somente leitura.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Aplicativos aos quais esta entidade de serviço é atribuída. Somente leitura. Anulável.|
 |createdObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório criados pela entidade de serviço. Somente leitura. Anulável.|
-|pontos de extremidade|coleção [Endpoint](endpoint.md)|Pontos de extremidade disponíveis para descoberta. Os serviços como o SharePoint esenchem essa propriedade com um locatário específico do SharePoint pontos de extremidade que outros aplicativos podem descobrir e usar em suas experiências.|
+|pontos de extremidade|conjunto [ponto de extremidade](endpoint.md) |Pontos de extremidade disponíveis para descoberta. Os serviços como o SharePoint esenchem essa propriedade com um locatário específico do SharePoint pontos de extremidade que outros aplicativos podem descobrir e usar em suas experiências.|
 |memberOf|[directoryObject](directoryobject.md) collection|Funções das quais essa entidade de serviço é membro. Métodos HTTP: GET somente leitura. Anulável.|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) collection|Permissão delegada concede a autorização dessa entidade de serviço para acessar uma API em nome de um usuário conectado. Somente leitura. Anulável.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Objetos de diretório que pertencem a essa entidade de serviço. Somente leitura. Anulável.|
@@ -108,6 +108,7 @@ Veja a seguir uma representação JSON do recurso
     "appRoleAssignments",
     "createdObjects",
     "createdOnBehalfOf",
+    "endpoints",
     "memberOf",
     "oauth2PermissionGrants",
     "ownedObjects",
@@ -153,7 +154,6 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-     "Error: microsoft.graph.servicePrincipal/endpoints:\r\n      Referenced type microsoft.graph.endPoint is not defined in the doc  set! Potential suggestion: microsoft.graph.callRecords.endpoint"
     ]
 }
 -->

@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a511c7759203cd72e8c32634ede611320de4a9b0
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
-ms.translationtype: HT
+ms.openlocfilehash: 4d9b61db0dfc14a2e22aad50769498333828ebfb
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991842"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290975"
 ---
 # <a name="outlook-calendar-api-overview"></a>Visão geral da API do calendário do Outlook
 
@@ -62,7 +62,7 @@ A API de calendário ajuda os clientes a orientar seu dia de trabalho e aumentar
 O Outlook e a API de calendário oferecem muitas conveniências inteligentes para agendar eventos:
 
 - Com as configurações do aplicativo de calendário do Outlook, os clientes podem ativar a adição automática de eventos nos emails, como reservas de voos, hotéis ou restaurantes, e cobrar faturas. Após a adição dessas configurações, você poderá interagir com esses eventos da mesma maneira que interagiria com outros objetos [events](/graph/api/resources/event?view=graph-rest-1.0) na caixa de correio do usuário e criar cenários criativos sobre esse recurso do Outlook.
-- No Outlook, reservar uma sala de reunião é tão simples quanto adicionar um participante ao **evento**. A API de calendário representa uma sala de reunião como um objeto [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0). Você pode [obter salas (versão prévia)](/graph/api/user-findrooms?view=graph-rest-beta) e [obter listas de salas (versão prévia)](/graph/api/user-findroomlists?view=graph-rest-beta) disponíveis em um locatário. Para organizar uma reunião em uma sala específica, atribua-a à propriedade **local**do **evento**.<sup>**</sup>
+- No Outlook, reservar uma sala de reunião é tão simples quanto adicionar um participante ao **evento**. A API de calendário representa uma sala de reunião como um objeto [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0). Você pode [obter salas](/graph/api/place-list#example-1-list-all-the-rooms-defined-in-the-tenant) e [obter listas de salas](/graph/api/place-list#example-2-list-all-the-room-lists-defined-in-the-tenant) que estão disponíveis em um locatário. Para organizar uma reunião em uma sala específica, atribua-a à propriedade **local**do **evento**.<sup>**</sup>
 - Você pode [consultar informações de disponibilidade de usuários e recurso](outlook-get-free-busy-schedule.md) por um período de tempo específico. Depois, pode aplicar esses dados a cenários diferentes, incluindo o planejamento de recursos e agendamento de eventos. <sup>**</sup>
 - Se o seu cenário envolver o agendamento de reuniões em horários ideais, considere o [uso de findMeetingTimes para identificar horários ou locais possíveis para a reunião](findmeetingtimes-example.md). A função [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) considera o status de disponibilidade dos participantes e as salas, horários e outras restrições que você tenha marcado como preferencial. Se a primeira tentativa não retornar um horário de reunião comum, verifique o motivo, ajuste seus critérios e chame **findMeetingTimes** novamente.<sup>**</sup>
 
@@ -75,9 +75,9 @@ Com a globalização, as atuais reuniões de negócios geralmente envolvem parti
 - Como alternativa, você pode especificar o cabeçalho `Prefer: outlook.timezone="{time zone name}"` para que uma operação de evento GET retorne **início** e **término** no fuso horário especificado. O nome do fuso horário pode ser qualquer um dos nomes compatíveis com o Windows e, também, os nomes nesta [lista](/graph/api/resources/datetimetimezone?view=graph-rest-1.0). Confira um [exemplo](/graph/api/event-get?view=graph-rest-1.0#request-1) de cabeçalho `Prefer` em uso.
 - As organizações que oferecem suporte para provedores de reuniões online, como o Microsoft Teams e o Skype, podem configurar calendários do Outlook para usar esses serviços. Você pode facilmente [organizar os eventos nesses calendários como reuniões online](outlook-calendar-online-meetings.md).
 
-## <a name="build-apps-with-location-awareness-and-provide-intelligent-context-preview"></a>Criar aplicativos com reconhecimento de local e fornecer contexto inteligente (prévia)
+## <a name="build-apps-with-location-awareness-and-provide-intelligent-context"></a>Criar aplicativos com reconhecimento de local e fornecer contexto inteligente
 
-Use a [API de locaisI](/graph/api/resources/place?view=graph-rest-beta) (prévia) para ajudar os usuários a navegar em um local ou fornecer uma solução inteligente baseada no local do usuário. A seguir estão alguns cenários de exemplo:
+Use a [API de locais](/graph/api/resources/place) para ajudar os usuários a navegar em um local ou fornecer uma solução inteligente com base no local do usuário. A seguir estão alguns cenários de exemplo:
 
 - Incorporar detalhes do lugar em eventos de calendário para ajudar os usuários a orientarem o dia e melhorar a produtividade.<sup>**</sup>
 - Atender aos aplicativos pode usar a API de locais para ajudar a se orientar no local e a configuração.<sup>**</sup>

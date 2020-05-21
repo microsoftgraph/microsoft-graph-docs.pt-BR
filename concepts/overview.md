@@ -1,27 +1,27 @@
 ---
 title: Visão geral do Microsoft Graph
-description: O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. O Microsoft Graph fornece um modelo de programabilidade unificada que você pode usar para aproveitar a enorme quantidade de dados disponíveis no Office 365, no Enterprise Mobility + Security e no Windows 10.
+description: O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. O Microsoft Graph fornece um modelo de programação unificado que você pode usar para aproveitar a enorme quantidade de dados no Microsoft 365, no Enterprise Mobility + Security e no Windows 10.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8857d73de24cd5b6d5ee939b2ac7bd5acd1a81db
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
-ms.translationtype: HT
+ms.openlocfilehash: 92f165e4b05dd36f99d75e7c17dd6474659f8b83
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844229"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290445"
 ---
 # <a name="overview-of-microsoft-graph"></a>Visão geral do Microsoft Graph
 
-O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. Ele fornece um modelo de programabilidade unificada que você pode usar para acessar a grande quantidade de dados disponíveis no Office 365, no Windows 10 e no Enterprise Mobility + Security. Você pode usar a grande quantidade de dados no Microsoft Graph para criar aplicativos para organizações e clientes que interagem com milhões de usuários.
+O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. Ele fornece um modelo de programação unificado que você pode usar para acessar o enorme volume de dados no Microsoft 365, Windows 10 e Enterprise Mobility + Security. Você pode usar a grande quantidade de dados no Microsoft Graph para criar aplicativos para organizações e clientes que interagem com milhões de usuários.
 
 ## <a name="powering-the-microsoft-365-platform"></a>Alimentar a plataforma do Microsoft 365
 
-![O Microsoft Graph, Microsoft Graph Data Connect e Microsoft Graph Connectors permitem ampliar as experiências Microsoft 365 e desenvolver aplicativos inteligentes.](images/microsoft-graph-dataconnect-connectors-800.png)
+![O Microsoft Graph, Microsoft Graph Data Connect e Microsoft Graph Connectors permitem ampliar as experiências Microsoft 365 e desenvolver aplicativos inteligentes.](images/microsoft-graph-dataconnect-connectors-rebrand-800.png)
 
 Na plataforma do Microsoft 365, três componentes principais facilitam o acesso e o fluxo de dados:
 
-- A API do Microsoft Graph oferece um único ponto de extremidade, `https://graph.microsoft.com`, para fornecer acesso a dados avançados focados nas pessoas, e informações expostas como recursos dos serviços do Microsoft 365. Você pode usar as APIs REST ou SDKs para acessar o ponto de extremidade e desenvolver aplicativos compatíveis com cenários que abrangem a produtividade, colaboração, educação, segurança, identidade, acesso, gerenciamento de dispositivo e muito mais.
+- A API do Microsoft Graph oferece um único ponto de extremidade, `https://graph.microsoft.com`, para fornecer acesso a dados avançados focados nas pessoas, e informações expostas como recursos dos serviços do Microsoft 365. Você pode usar APIs REST ou SDKs para acessar o ponto de extremidade e compilar aplicativos que dão suporte a cenários que abrangem toda a produtividade, colaboração, educação, pessoas e o local de trabalho e muito mais. O Microsoft Graph também inclui um conjunto poderoso de serviços que gerenciam a identidade do usuário e do dispositivo, o acesso, a conformidade, a segurança e ajuda a proteger as organizações contra vazamento ou perda de dados.
 - Os [Conectores do Microsoft Graph (versão prévia)](/microsoftsearch/connectors-overview) funcionam na direção de entrada, fornecendo dados externos à nuvem da Microsoft para os aplicativos e serviços do Microsoft Graph a fim de aprimorar as experiências do Microsoft 365, como a Pesquisa da Microsoft.
 - [Microsoft Graph Data Connect](#access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect) fornece um conjunto de ferramentas para simplificar entrega segura e escalonável de dados do Microsoft Graph para repositórios populares de dados do Azure. Esses dados armazenados em cache servem como fontes de dados para ferramentas de desenvolvimento do Azure que você pode usar para desenvolver aplicativos inteligentes.
 
@@ -32,12 +32,12 @@ Juntos, a API do Microsoft Graph Data, os conectores (versão prévia) e os dado
 
 ## <a name="whats-in-microsoft-graph"></a>Serviços do Microsoft Graph
 
-O Microsoft Graph expõe as APIs REST e bibliotecas do cliente para acessar dados nos seguintes serviços Microsoft 365:
+O Microsoft Graph expõe as bibliotecas de cliente e APIs REST para acessar dados nos seguintes serviços da Microsoft Cloud:
 
-- Serviços Office 365: Delve, Excel, Microsoft Bookings, Microsoft Teams, OneDrive, OneNote, Outlook/Exchange, Planner, e SharePoint
-- Serviços Enterprise Mobility e Security: Advanced Threat Analytics, Advanced Threat Protection, Azure Active Directory, Identity Manager, e Intune
-- Serviços do Windows 10: atividades, dispositivos e notificações
-- Dynamics 365 Business Central
+- Serviços 365 da Microsoft: Delve, Excel, Microsoft Teams, Microsoft Teams, OneDrive, OneNote, Outlook/Exchange, Planner, SharePoint, análise de local de trabalho.
+- Serviços de segurança e mobilidade corporativas: análise avançada de ameaças, proteção avançada contra ameaças, Azure Active Directory, Identity Manager e Intune.
+- Serviços do Windows 10: atividades, dispositivos, notificações, impressão universal (visualização).
+- Dynamics 365 Business central.
 
 Para saber mais, confira os [Principais serviços e recursos do Microsoft Graph](overview-major-services.md).
 
@@ -54,7 +54,7 @@ Você pode usar o Microsoft Graph para criar experiências de acordo com o conte
 - Busca o gráfico de projeção mais recente das vendas de um arquivo do Excel em seu OneDrive e permite atualizar a previsão em tempo real, tudo em seu telefone.
 - Assina alterações em seu calendário, envia um alerta quando você está gastando muito tempo em reuniões e oferece recomendações sobre as que você pode perder ou delegar com base na relevância dos participantes para você.
 - Ajuda você a classificar informações pessoais e profissionais em seu telefone, por exemplo, categorizando imagens que devem seguir para seu OneDrive pessoal e recibos comerciais que devem seguir para seu OneDrive for Business.
-- Analisa os dados do Office 365 em escala para que os tomadores de decisões possam desbloquear informações valiosas sobre os padrões de colaboração e a alocação de tempo que aumentam a produtividade do negócio.
+- Analisa os dados do Microsoft 365 em escala, de forma que os tomadores de decisões podem desbloquear as idéias valiosas em padrões de alocação e de colaboração de tempo que melhoram a produtividade dos negócios.
 - Exibe dados personalizados de negócios para o Microsoft Graph, fazendo indexação para torná-los pesquisáveis juntamente com os dados dos serviços do Microsoft 365.
 
 Escolha o primeiro cenário sobre a pesquisa de participantes da reunião como um exemplo. Com a API do Microsoft Graph, você pode:
@@ -90,7 +90,7 @@ Veja alguns desses cenários mais comuns para trabalhar com a API do Microsoft G
 |   GET eventos do meu calendário | [`https://graph.microsoft.com/v1.0/me/events`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0) |
 |   GET meu gerente | [`https://graph.microsoft.com/v1.0/me/manager`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmanager&version=v1.0) |
 |   GET o último usuário que modificou o arquivo foo.txt | [`https://graph.microsoft.com/v1.0/me/drive/root/children/foo.txt/lastModifiedByUser`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fdrive%2Froot%2Fchildren%2Ffoo.txt%2FlastModifiedByUser&version=v1.0) |
-|   GET grupos do Office365 dos quais eu sou membro| [`https://graph.microsoft.com/v1.0/me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2FmemberOf%2F%24%2Fmicrosoft.graph.group%3F%24filter%3DgroupTypes%2Fany(a%3Aa%2520eq%2520'unified')&version=v1.0) |
+|   OBTER os grupos do Microsoft 365 dos quais eu sou membro| [`https://graph.microsoft.com/v1.0/me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2FmemberOf%2F%24%2Fmicrosoft.graph.group%3F%24filter%3DgroupTypes%2Fany(a%3Aa%2520eq%2520'unified')&version=v1.0) |
 |   GET os usuários em minha organização  | [`https://graph.microsoft.com/v1.0/users`](https://developer.microsoft.com/graph/graph-explorer/?request=users&version=v1.0) |
 |   GET grupos em minha organização | [`https://graph.microsoft.com/v1.0/groups`](https://developer.microsoft.com/graph/graph-explorer/?request=groups&version=v1.0) |
 |   GET as pessoas relacionadas a mim | [`https://graph.microsoft.com/v1.0/me/people`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fpeople&version=beta)  |

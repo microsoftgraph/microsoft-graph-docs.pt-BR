@@ -4,12 +4,12 @@ description: No Outlook, um proprietário de calendário pode compartilhá-lo co
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 7654928f0fab1080f7f85eee48186964957224dc
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
-ms.translationtype: HT
+ms.openlocfilehash: 534e7819ddcf58b9b51b4655470bc21a5645973c
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229420"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290739"
 ---
 # <a name="share-or-delegate-a-calendar-in-outlook"></a>Compartilhar ou delegar um calendário no Outlook
 
@@ -37,6 +37,9 @@ Os aplicativos também podem fazer o seguinte usando a API que geralmente está 
 
 - [Obter calendário do Outlook compartilhado ou delegado ou seus eventos](outlook-get-shared-events-calendars.md)
 - [Criar eventos do Outlook em um calendário compartilhado ou delegado](outlook-create-event-in-shared-delegated-calendar.md)
+
+> [!NOTE]
+> As propriedades e API para compartilhamento de calendário e delegação, conforme descrito neste tópico, estão disponíveis atualmente no ponto de extremidade v 1.0, com exceção das propriedades de calendário **IsShared** e **isSharedWithMe**. Essas duas propriedades são expostas somente no ponto de extremidade beta.
 
 ## <a name="get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions"></a>Obtenha informações de calendário sobre compartilhamento, delegados e permissões permitidas e atualize permissões individuais.
 
@@ -287,7 +290,6 @@ Content-type: application/json
     "name": "Calendar",
     "color": "auto",
     "hexColor": "",
-    "isDefaultCalendar": true,
     "changeKey": "NEXywgsVrkeNsFsyVyRrtAAAAAACOg==",
     "canShare": true,
     "canViewPrivateItems": true,
@@ -366,7 +368,6 @@ Content-type: application/json
     "name": "Alex Wilber",
     "color": "auto",
     "hexColor": "",
-    "isDefaultCalendar": false,
     "changeKey": "E6LznKWmX0KTsAD9qRJjeAAAYWo3EQ==",
     "canShare": false,
     "canViewPrivateItems": true,
