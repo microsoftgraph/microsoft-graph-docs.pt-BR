@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3df3d2438b9f7f0413b8005da08a9e7843436adc
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 9aac2e7c37ce33caaaa8d5a69207e451786421a5
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290375"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44336332"
 ---
 # <a name="place-resource-type"></a>inserir tipo de recurso
 
@@ -23,7 +23,7 @@ Os administradores do Exchange Online podem organizar as salas de reunião em um
 
 Lugares como [sala](room.md) e [sala de salas](roomlist.md) contêm a **ID**básica, o nome para exibição e o endereço de email. Além disso, eles contêm informações de navegação, como endereço físico e coordenadas geográficas, e, no caso de salas, outras informações relevantes, como recursos AV, número de chão e capacidade.
 
-As funções [findRooms](https://docs.microsoft.com/graph/api/user-findrooms?view=graph-rest-beta&tabs=http) e [findRoomLists](https://docs.microsoft.com/en-us/graph/api/user-findroomlists?view=graph-rest-beta) oferecem suporte à pesquisa semelhante para salas e listas de salas em um locatário. Veja a seguir uma comparação entre a API de locais e essas funções.  Se você estiver criando um aplicativo de produção, escolha a API de lugares como a API está agora disponível em v 1.0. Planeje a atualização de qualquer código existente que use o **findRooms** ou o **findRoomLists** para usar a API de locais, pois o **findRooms** ou o **findRoomLists** será preterido e uma linha do tempo será anunciada.
+As funções [findRooms](https://docs.microsoft.com/graph/api/user-findrooms?view=graph-rest-beta&tabs=http) e [findRoomLists](https://docs.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta) oferecem suporte à pesquisa semelhante para salas e listas de salas em um locatário. Veja a seguir uma comparação entre a API de locais e essas funções.  Se você estiver criando um aplicativo de produção, escolha a API de lugares como a API está agora disponível em v 1.0. Planeje a atualização de qualquer código existente que use o **findRooms** ou o **findRoomLists** para usar a API de locais, pois o **findRooms** ou o **findRoomLists** será preterido e uma linha do tempo será anunciada.
 
 |API de locais |funções findRooms e findRoomLists|
 |:------------------------------------|:-----------------------------|
@@ -34,7 +34,7 @@ As funções [findRooms](https://docs.microsoft.com/graph/api/user-findrooms?vie
 |Oferece suporte somente a cenários organizacionais com permissões delegadas (contas corporativas ou de estudante) ou de aplicativo | Suporte semelhante somente para cenários organizacionais com permissões delegadas ou de aplicativo|
 |Oferece suporte à [atualização de uma lista de salas ou salas individuais](../api/place-update.md) em um locatário | Não oferece suporte à atualização de uma lista de salas ou salas individuais em um locatário
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                              | Tipo de retorno                  | Descrição |
 |:------------------------------------|:-----------------------------|:--------|

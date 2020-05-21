@@ -5,14 +5,14 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 6805fabd857e4e906fa095c372632edbcc27fa28
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd42bc30a1cc1cee34685bc0f33815f3a00d0120
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006385"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44336017"
 ---
-## <a name="educationidentitymatchingconfiguration-resource-type"></a>tipo de recurso educationIdentityMatchingConfiguration
+# <a name="educationidentitymatchingconfiguration-resource-type"></a>tipo de recurso educationIdentityMatchingConfiguration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: da297ad1ae6646bdab952f56c403bfc34e799d05
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: fc46c88d2ec676ac313602c279683da2c483deba
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290648"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44336717"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
@@ -91,7 +91,6 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |appRoles|Coleção [appRole](approle.md)|As funções expostas pelo aplicativo que esta entidade de serviço representa. Para obter mais informações, confira definição da propriedade **appRoles** na entidade [aplicativo](application.md). Não anulável. |
 | deletedDateTime | DateTimeOffset | A data e a hora em que a entidade de serviço foi excluída. Somente leitura. |
 |displayName|Cadeia de caracteres|O nome de exibição da entidade de serviço.|
-|pontos de extremidade|conjunto [ponto de extremidade](endpoint.md) |Pontos de extremidade disponíveis para descoberta. Serviços como o SharePoint preenche essa propriedade com pontos de extremidade específicos do locatário que outros serviços podem descobrir e usar. Esta é uma coleção de tipos de entidade contida.|
 |errorUrl|String|Obsoleto. Não use.|
 |homepage|String|Página inicial ou página de aterrissagem do aplicativo.|
 | id | String | O identificador exclusivo da entidade de serviço. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
@@ -121,8 +120,8 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Entidades (usuários, grupos e entidades de serviço) que são atribuídas a essa entidade de serviço. Somente leitura.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Aplicativos aos quais esta entidade de serviço é atribuída. Somente leitura. Anulável.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Objetos de diretório criados pela entidade de serviço. Somente leitura. Anulável.|
+|pontos de extremidade|conjunto [ponto de extremidade](endpoint.md) |Pontos de extremidade disponíveis para descoberta. Os serviços como o SharePoint esenchem essa propriedade com um locatário específico do SharePoint pontos de extremidade que outros aplicativos podem descobrir e usar em suas experiências.|
 |memberOf|[directoryObject](directoryobject.md) collection|Funções das quais essa entidade de serviço é membro. Métodos HTTP: GET somente leitura. Anulável.|
-|pontos de extremidade|coleção [Endpoint](endpoint.md)|Pontos de extremidade disponíveis para descoberta. Os serviços como o SharePoint esenchem essa propriedade com um locatário específico do SharePoint pontos de extremidade que outros aplicativos podem descobrir e usar em suas experiências.|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) collection|Permissão delegada concede a autorização dessa entidade de serviço para acessar uma API em nome de um usuário conectado. Somente leitura. Anulável.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Objetos de diretório que pertencem a essa entidade de serviço. Somente leitura. Anulável.|
 |owners|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que são proprietários desse servicePrincipalName. Os proprietários são um conjunto de usuários não administradores ou de servicePrincipalName que têm permissão para modificar esse objeto. Somente leitura. Anulável.|
@@ -140,6 +139,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
     "appRoleAssignments",
     "createdObjects",
     "createdOnBehalfOf",
+    "endpoints",
     "memberOf",
     "oauth2PermissionGrants",
     "ownedObjects",
@@ -196,7 +196,6 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-     "Error: microsoft.graph.servicePrincipal/endpoints:\r\n      Referenced type microsoft.graph.endPoint is not defined in the doc  set! Potential suggestion: microsoft.graph.callRecords.endpoint"
-]
+  ]
 }
 -->

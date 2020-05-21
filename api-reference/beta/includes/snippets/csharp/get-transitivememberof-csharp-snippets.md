@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 383a6f633a95290ce91ad57573c489c2a3a2b512
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: cd75b41a552511ea1c0a35464626e2e9e500b144
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35716451"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44336726"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var transitiveMemberOf = await graphClient.Me.TransitiveMemberOf
+var transitiveMemberOf = await graphClient.Users["{id}"].TransitiveMemberOf
     .Request()
     .GetAsync();
 

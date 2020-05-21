@@ -5,25 +5,25 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: b7abb10417e7659e923eddf04990067c8b979ce9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 29f04e030fe45fda34148902a455451e08e76324
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522922"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44336038"
 ---
 # <a name="locatedriskevent-resource-type"></a>tipo de recurso locatedRiskEvent
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) com base nos dados do local. Os tipos de eventos de risco localizados incluem:
+Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) com base nos dados do local. Os tipos de eventos de risco localizados incluem:
 * [entradas de endereços IP anônimos](anonymousipriskevent.md)
 * [entradas de dispositivos infectados por malware](malwareriskevent.md)
 * [impossível viajar para locais atypical](impossibletravelriskevent.md)
 * [entradas de endereços IP suspeitos](suspiciousipriskevent.md)
-* [entradas de locais desconhecidos](unfamiliarlocationriskevent.md) As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
+* [entradas de locais desconhecidos](unfamiliarlocationriskevent.md) As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
 ## <a name="methods"></a>Métodos
@@ -48,10 +48,10 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 |userId|cadeia de caracteres| A identificação do usuário em risco|
 |userPrincipalName|string| O nome principal de usuário do usuário em risco|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| Somente leitura. Anulável.|
+|impactedUser|[Usuário](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
