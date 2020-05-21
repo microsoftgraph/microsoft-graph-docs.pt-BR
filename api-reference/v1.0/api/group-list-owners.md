@@ -5,27 +5,29 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 57ca7bd1e84f507dbf59f515f6f7b2ec1ef020ed
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
-ms.translationtype: HT
+ms.openlocfilehash: 2294378620f6d02da7cb98be657fb587a8a7b46b
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125215"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44335408"
 ---
 # <a name="list-owners"></a>Listar proprietários
 
 Namespace: microsoft.graph
 
-Recupere uma lista de proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo. 
+Recupere uma lista de proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores ou entidades de serviço que têm permissão para modificar o objeto de grupo. 
+
+>**Observação:** No momento, as entidades de serviço não estão listadas como proprietários de grupo devido à distribuição em estágios das entidades de serviço para o ponto de extremidade do Microsoft Graph v 1.0.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.Read.All and User.ReadBasic.All, Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All   |
+|Delegado (conta corporativa ou de estudante) | Group. Read. All e User. ReadBasic. All, Group. Read. All e User. Read. All, Group. Read. All e User. ReadWrite. All, Group. Read. All e User. Read. All e Application. Read. All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All |
+|Aplicativo | Group. Read. All e User. Read. All, Group. Read. All e User. ReadWrite. All, Group. Read. All e User. Read. All e Application. Read. All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 70dfe86840bd908a2e626b7f965d89251b9221aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e3ed231c6bd741afe3dcd502d517006c402fc77
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533501"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44335331"
 ---
 # <a name="teamsappinstallation-resource-type"></a>tipo de recurso teamsAppInstallation
 
@@ -54,7 +54,7 @@ Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md). Qualquer bots que
 }
 ```
 
-# <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Confira também
 
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)
