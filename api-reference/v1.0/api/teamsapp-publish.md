@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ddd037be88363fa232355dfae33f40531694a99a
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 8076cc4ec988c311dd9a4cfde3b01a27a2a5d88e
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290396"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345762"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Publicar aplicativos no catálogo de aplicativos da sua organização
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:----------------------------------     |:-------------|
 | Delegado (conta corporativa ou de estudante)     | AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte|
-| Aplicativo                            | AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
+| Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

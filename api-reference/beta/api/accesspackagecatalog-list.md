@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dc077feab9f235fd2ed59fc939ade331a8fc8bd9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 729d7504fc7cfffcb80f763f7b6c428e90b4bf31
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441967"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345426"
 ---
 # <a name="list-accesspackagecatalogs"></a>Listar accessPackageCatalogs
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     |  EntitlementManagement.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | EntitlementManagement. Read. All, EntitlementManagement. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta.  Por exemplo, para recuperar os pacotes de acesso em cada catálogo, `$expand=accessPackages` inclua a consulta. Para pesquisar catálogos de pacotes do Access com um nome específico, inclua um filtro como `$filter=contains(tolower(displayName),'staff')` na consulta.  Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta.  Por exemplo, para recuperar os pacotes de acesso em cada catálogo, inclua `$expand=accessPackages` a consulta. Para pesquisar catálogos de pacotes do Access com um nome específico, inclua um filtro como `$filter=contains(tolower(displayName),'staff')` na consulta.  Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [accessPackageCatalog](../resources/accesspackagecatalog.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [accessPackageCatalog](../resources/accesspackagecatalog.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

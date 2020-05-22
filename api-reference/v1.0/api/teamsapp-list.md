@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d2dbbc77cdd6ca5fad9afcf975388a678ac1c7a1
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 846e789c4177f07996e4776256dc06cd5e9a24e4
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290318"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345669"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Listar os aplicativos publicados do catálogo de aplicativos do Microsoft Teams
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | AppCatalog. Read. All, AppCatalog. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                       |
-| Aplicativo                            | AppCatalog. Read. All, AppCatalog. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+| Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

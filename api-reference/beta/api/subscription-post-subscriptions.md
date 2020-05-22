@@ -1,16 +1,16 @@
 ---
 title: Criar assinatura
-description: Assina um aplicativo de escuta para receber notificações quando os dados de um recurso do Microsoft Graph são alterados.
+description: Assina um aplicativo de escuta para receber notificações de alteração quando os dados de um recurso do Microsoft Graph são alterados.
 localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: fb14da71db128d3180555d47405e0be0148118ab
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 6ea433e6e8eb348f770fd691f16397ddea001301
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543342"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345951"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assinar um aplicativo de escuta para receber notificações quando o tipo de alterações solicitadas ocorrer em recursos específicos no Microsoft Graph.
+Assina um aplicativo de escuta para receber notificações de alteração quando o tipo solicitado de alterações ocorrerem no recurso especificado no Microsoft Graph.
 
 ## <a name="permissions"></a>Permissões
 
-A criação de uma assinatura requer permissão de leitura para o recurso. Por exemplo, para obter notificações sobre mensagens, seu aplicativo precisa da permissão mail. Read. 
+A criação de uma assinatura requer permissão de leitura para o recurso. Por exemplo, para obter notificações de alteração em mensagens, seu aplicativo precisa da permissão mail. Read. 
  
  Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -48,13 +48,13 @@ A criação de uma assinatura requer permissão de leitura para o recurso. Por e
 
 as assinaturas do **chat** exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura do **chat** , você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Observação:** `/teams/allMessages` e `/chats/allMessages` estão atualmente em versão prévia. Durante a visualização, você pode usar essa API sem taxas, sujeita aos [termos de uso das APIs da Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). No entanto, os usuários de aplicativos que usam a API podem ser solicitados a ter assinaturas para ofertas específicas do Microsoft 365. Na disponibilidade geral, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados acessados por meio da API.
+> **Observação:** `/teams/allMessages` e que `/chats/allMessages` estão atualmente em versão prévia. Durante a visualização, você pode usar essa API sem taxas, sujeita aos [termos de uso das APIs da Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). No entanto, os usuários de aplicativos que usam a API podem ser solicitados a ter assinaturas para ofertas específicas do Microsoft 365. Na disponibilidade geral, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados acessados por meio da API.
 
 ### <a name="driveitem-onedrive"></a>driveItem (OneDrive)
 
 Limitações adicionais se aplicam a assinaturas em itens do OneDrive. As limitações se aplicam à criação e ao gerenciamento (obter, atualizar e excluir) assinaturas.
 
-No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações são enviadas pelos tipos de alterações solicitadas na pasta inscrita, ou qualquer arquivo, pasta ou outras instâncias **driveItem** na sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
+No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações de alteração são enviadas para os tipos solicitados de alterações na pasta inscrita ou qualquer arquivo, pasta ou outra instância do **driveItem** em sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
 
 ### <a name="contact-event-and-message-outlook"></a>contato, evento e mensagem (Outlook)
 
@@ -82,7 +82,7 @@ POST /subscriptions
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [Subscription](../resources/subscription.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [Subscription](../resources/subscription.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -91,7 +91,7 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta e 
 No corpo da solicitação, forneça uma representação JSON do objeto [subscription](../resources/subscription.md).
 Os campos `clientState` e `latestSupportedTlsVersion` são opcionais.
 
-Esta solicitação cria uma assinatura para notificações sobre novos emails recebidos pelo usuário conectado no momento.
+Esta solicitação cria uma assinatura para notificações de alteração sobre novos emails recebidos pelo usuário conectado no momento.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -138,7 +138,7 @@ Estes são os valores válidos para a Propriedade Resource.
 |Grupos|grupos|
 |Conversas|groups('*{id}*')/conversations|
 |Unidades|me/drive/root|
-|Listar|sites/{site-ID}/Lists/{List-ID}|
+|Listar|sites/{site-id}/lists/{list-id}|
 |Alerta de segurança|security/alerts?$filter=status eq ‘New’|
 |Registros de chamadas|comunicações/callRecords|
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 055627af88a51c73d81d23c8ccd1a6e1f4af5d45
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5ab45e1dee9c4c6fe092d07c6e1a306060e77801
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43360539"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345902"
 ---
 # <a name="bookingstaffmember-resource-type"></a>tipo de recurso bookingStaffMember
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
  
 Representa um membro da equipe que fornece serviços em um [bookingBusiness](bookingbusiness.md).
 
-Os membros da equipe podem fazer parte do locatário do Office 355 onde o negócio de reserva está configurado ou podem usar os serviços de email de outros provedores de email.
+Os membros da equipe podem fazer parte do locatário do Office 365 onde o negócio de reserva está configurado ou podem usar os serviços de email de outros provedores de email.
 
 Ao reservar compromissos, a API Books considera as seguintes configurações para determinar a disponibilidade de um membro da equipe: 
 
@@ -35,19 +35,19 @@ Ao reservar compromissos, a API Books considera as seguintes configurações par
 |[Listar membros da equipe](../api/bookingbusiness-list-staffmembers.md) | coleção [bookingStaffMember](bookingstaffmember.md) | Obtenha uma lista de objetos **bookingStaffMember** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 |[Criar bookingStaff](../api/bookingbusiness-post-staffmembers.md) | coleção [bookingStaffMember](bookingstaffmember.md) | Criar um novo **bookingStaffMember** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 |[Obter bookingStaffMember](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |Obtenha as propriedades e os relacionamentos de um **bookingStaffMember** no [bookingbusiness](../resources/bookingbusiness.md)especificado.|
-|[Update](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)    |Atualiza as propriedades de um **bookingStaffMember** no [bookingbusiness](../resources/bookingbusiness.md)especificado.|
+|[Atualização](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)    |Atualiza as propriedades de um **bookingStaffMember** no [bookingbusiness](../resources/bookingbusiness.md)especificado.|
 |[Delete](../api/bookingstaffmember-delete.md) | None |Excluir um membro da equipe no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolean|True significa que, se o membro da equipe for um usuário do Office 365, a API de reservas verificará a disponibilidade do membro da equipe em seu calendário pessoal no Office 365, antes de fazer uma reserva. |
+|availabilityIsAffectedByPersonalCalendar|Booliano|True significa que, se o membro da equipe for um usuário do Office 365, a API de reservas verificará a disponibilidade do membro da equipe em seu calendário pessoal no Office 365, antes de fazer uma reserva. |
 |colorIndex|Int32|Identifica uma cor para representar o membro da equipe. A cor corresponde à paleta de cores na página de **detalhes da equipe** no aplicativo de reservas.|
 |displayName|Cadeia de caracteres|O nome do membro da equipe, conforme exibido para os clientes. Obrigatório.|
 |emailAddress|String|O endereço de email do membro da equipe. Isso pode ser no mesmo locatário do Office 365 que a empresa ou em um domínio de email diferente. Esse endereço de email pode ser usado se a propriedade **sendConfirmationsToOwner** estiver definida como true na política de agendamento da empresa. Obrigatório.|
 |id|String| A ID do membro da equipe, em um formato GUID. Somente leitura.|
 |role|string| A função do membro da equipe na empresa. Os valores possíveis são: `guest`, `administrator`, `viewer`, `externalGuest`. Obrigatório.|
-|useBusinessHours|Boolean|True significa que a disponibilidade do membro da equipe é conforme especificado na propriedade **businessHours** da empresa. False significa que a disponibilidade é determinada pela configuração da propriedade **workingHours** do membro da equipe.|
+|useBusinessHours|Booliano|True significa que a disponibilidade do membro da equipe é conforme especificado na propriedade **businessHours** da empresa. False significa que a disponibilidade é determinada pela configuração da propriedade **workingHours** do membro da equipe.|
 |workingHours|coleção [bookingWorkHours](bookingworkhours.md)|O intervalo de horas por dia da semana em que o membro da equipe está disponível para reserva. Por padrão, eles são inicializados de acordo com a propriedade **businessHours** da empresa.|
 
 ## <a name="relationships"></a>Relações

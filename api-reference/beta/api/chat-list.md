@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 46afd5b3cc76c9df74cce5d26c13d6af28382d13
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 5c4c061c7f78fcb907f81481ea86c6a31b0692c1
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287637"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345678"
 ---
 # <a name="list-chats"></a>Listar chats
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Chat. ReadBasic, chat. Read, chat. ReadWrite |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Chat. ReadBasic. All, chat. Read. All, chat. ReadWrite. All | 
+|Aplicativo | Sem suporte.    |
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

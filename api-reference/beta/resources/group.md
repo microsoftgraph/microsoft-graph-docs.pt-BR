@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b280102d8b58e42fd5250c7a87ec8b1d60530580
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: fb812dce8fdb9756be161c0b2e9998c21da12667
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290599"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345993"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -147,8 +147,8 @@ Esse recurso permite:
 |preferredLanguage|String|O idioma preferencial para um grupo do Office 365. Deve seguir o código ISO 639-1; por exemplo "en-US". <br><br>Retornado por padrão. |
 |proxyAddresses|String collection| Endereços de email para o grupo que direcionam para a mesma caixa de correio do grupo. Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. <br><br>Retornado por padrão. Somente leitura. Não anulável. Oferece suporte a $filter. |
 |renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/grouplifecyclepolicy-renewgroup.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Apenas leitura.|
-|resourceBehaviorOptions|Conjunto de cadeias de caracteres|Especifica os comportamentos de grupo que podem ser definidos para um grupo do Office 365 durante a criação. Isso só pode ser definido como parte da criação (POST). Os valores possíveis são `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`.  Mais detalhes estarão disponíveis posteriormente neste tópico.|
-|resourceProvisioningOptions|Conjunto de cadeias de caracteres|Especifica os recursos de grupo que são provisionados como parte da criação de grupos do Office 365, que normalmente não fazem parte da criação de grupos padrão. O valor possível é `Team`. Mais detalhes estarão disponíveis posteriormente neste tópico.|
+|resourceBehaviorOptions|Conjunto de cadeias de caracteres|Especifica os comportamentos de grupo que podem ser definidos para um grupo do Office 365 durante a criação. Isso só pode ser definido como parte da criação (POST). Os valores possíveis são `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`. Para obter mais informações, consulte [set Microsoft 365 Group Behaviors and Provisioning Options](/graph/group-set-options).|
+|resourceProvisioningOptions|Conjunto de cadeias de caracteres|Especifica os recursos de grupo que são provisionados como parte da criação de grupos do Office 365, que normalmente não fazem parte da criação de grupos padrão. O valor possível é `Team`. Para obter mais informações, consulte [set Microsoft 365 Group Behaviors and Provisioning Options](/graph/group-set-options).|
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. <br><br>Retornado por padrão. Oferece suporte para `$filter`.|
 |securityIdentifier|Cadeia de Caracteres|Identificador de segurança do grupo, usado em cenários do Windows. <br><br>Retornado por padrão.|
 |tema|String|Especifica o tema de cor de um grupo Office 365. Os valores possíveis são: `Teal`, `Purple`, `Green`, `Blue`,`Pink`, `Orange` ou `Red`. <br><br>Retornado por padrão. |
@@ -167,24 +167,6 @@ Veja o que cada valor da propriedade de **visibilidade** significa:
 | Privado | A permissão de proprietário é necessária para ingressar no grupo.<br>Não membros não podem exibir o conteúdo do grupo.|
 | Hiddenmembership | A permissão de proprietário é necessária para ingressar no grupo.<br>Não membros não podem exibir o conteúdo do grupo.<br>Não membros não podem ver os membros do grupo.<br>Administradores (global, empresa, usuário e helpdesk) podem visualizar a associação do grupo.<br>O grupo aparece no catálogo de endereços global (GAL).|
 
-### <a name="provisioning-and-configuring-groups"></a>Provisionamento e configuração de grupos
-
-Você pode configurar outros grupos usando as propriedades **resourceBehaviorOptions** e **resourceProvisioningOptions**.
-
-**resourceBehaviorOptions** é um conjunto de cadeias de caracteres que especifica os comportamentos de grupo que podem ser definidos para um grupo do Office 365. Isso só pode ser definido como parte da criação (POST):
-
-| resourceBehaviorOptions   |Descrição|Padrão se não for definido|
-|:---------------|:--------|:-----------|
-| AllowOnlyMembersToPost|Somente *membros* do grupo podem postar conversas no grupo.|Todos os usuários da organização podem postar conversas no grupo.|
-| HideGroupInOutlook|Esse grupo ficará oculto nas experiências do Outlook.|Todos os grupos estarão visíveis e detectáveis nas experiências do Outlook.|
-| SubscribeNewGroupMembers|Os membros do grupo se inscreveram para receber conversas em grupo. |Os membros do grupo não recebem conversas em grupo.|
-| WelcomeEmailDisabled|Um email de boas-vindas é enviado para um novo membro do grupo.|Os emails de boas-vindas não são enviados para novos membros.|
-
-**resourceProvisioningOptions** é um conjunto de cadeias de caracteres que especifica os recursos de grupo que são provisionados como parte da criação de grupos do Office 365, que não fazem parte da criação de grupo padrão.
-
-| resourceProvisioningOptions   |Descrição| Padrão se não for definido |
-|:---------------|:--------|:------------|
-| Teams|Provisionar esse grupo como uma equipe. Além disso, essa propriedade pode ser adicionada ao conjunto de cadeias de caracteres **resourceProvisioningOptions** por meio de uma operação PATCH, para converter um grupo existente do Office 365 em uma equipe.| O grupo é um grupo normal do Office 365 sem recursos do Teams.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

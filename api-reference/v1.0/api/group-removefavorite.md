@@ -5,16 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ce8f8494bde3c3e5bf791fc4711ee07bc7bfc98a
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: b3279fb525b6556eadee6dd35a2d090b0e3ff9f2
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124137"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345846"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 
-Namespace: Microsoft. Graph remova o grupo da lista de grupos favoritos do usuário atual. Suporte apenas para Grupos do Office 365.
+Namespace: microsoft.graph
+
+Remova o grupo da lista de grupos favoritos do usuário atual. Suporte apenas para grupos do Office 365.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

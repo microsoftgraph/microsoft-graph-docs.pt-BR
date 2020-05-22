@@ -5,22 +5,22 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 9074a1599c3121d4d93b7a60cead1db1d1289290
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7229b10b0cd7173c3adb9e51b0d3f9fe8790c9a9
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453097"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345937"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Renove uma assinatura ampliando seu tempo de validade.
 
-As assinaturas expiram após um período de tempo que varia de acordo com o tipo de recurso. Para evitar notificações ausentes, um aplicativo deve renovar suas assinaturas bem antes da data de expiração. Consulte [Subscription](../resources/subscription.md) para obter o tamanho máximo de uma assinatura para cada tipo de recurso.
+As assinaturas expiram após um período de tempo que varia de acordo com o tipo de recurso. Para evitar notificações de alteração ausentes, um aplicativo deve renovar as assinaturas bem antes da data de expiração. Consulte [Subscription](../resources/subscription.md) para obter o tamanho máximo de uma assinatura para cada tipo de recurso.
 
 ## <a name="permissions"></a>Permissões
 
@@ -42,7 +42,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 
 > **Observação:** Há limitações adicionais para assinaturas de itens no OneDrive e no Outlook. Limitações para criar e gerenciar assinaturas (receber, atualizar e excluir assinaturas).
 
-- No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações são enviadas pelos de alterações solicitadas na pasta inscrita, ou qualquer arquivo, pasta ou outros objetos driveItem na sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
+- No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações de alteração são enviadas para os tipos solicitados de alterações na pasta inscrita ou qualquer arquivo, pasta ou outro objeto driveItem em sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
 
 - No Outlook, a permissão delegada dá suporte a inscrição de itens em pastas apenas na caixa de correio do usuário conectado. Isso significa que, por exemplo, não é possível usar a permissão delegada Calendars.Read para inscrever eventos na caixa de correio de terceiros.
 - Se inscrever para alterar as notificações de contatos, eventos no Outlook ou mensagens em pastas_compartilhadas ou delegadas_:

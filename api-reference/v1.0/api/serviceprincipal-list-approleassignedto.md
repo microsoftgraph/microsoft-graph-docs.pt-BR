@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: a0339bc03dd6621bc8eb513d91ee4b9b7ac13822
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: e5b6a2994abb2f012081a64bccdd227c79a5ede0
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336231"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345741"
 ---
 # <a name="list-approleassignments-granted-for-a-service-principal"></a>Listar appRoleAssignments concedidas para uma entidade de serviço
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory. Read. All, AppRoleAssignment. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All  |
+|Delegado (conta corporativa ou de estudante) | Application. Read. All, Directory. Read. All, Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory. Read. All, AppRoleAssignment. ReadWrite. All, Directory. ReadWrite. All |
+|Aplicativo | Application. Read. All, Directory. Read. All, Application. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

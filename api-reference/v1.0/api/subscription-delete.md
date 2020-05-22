@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 76b8a3b7f398d2a3fbbf22c0991fe15b46f7eeb6
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: c75f83edcf509f621539a51c4938621d708b3d12
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108638"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345867"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -30,16 +30,16 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[grupo](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
-|[lista](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
+|[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Observação:** Há limitações adicionais para assinaturas de itens no OneDrive e no Outlook. Limitações para criar e gerenciar assinaturas (receber, atualizar e excluir assinaturas).
 
-- No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações são enviadas pelos de alterações solicitadas na pasta inscrita, ou qualquer arquivo, pasta ou outros objetos driveItem na sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
+- No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações de alteração são enviadas para os tipos solicitados de alterações na pasta inscrita ou qualquer arquivo, pasta ou outro objeto driveItem em sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
 
-- No Outlook, a permissão delegada dá suporte a inscrição de itens em pastas apenas na caixa de correio do usuário conectado. Isso significa que, por exemplo, não é possível usar os calendários de permissão delegada. Leia para inscrever-se em eventos na caixa de correio de outro usuário.
+- No Outlook, a permissão delegada dá suporte a inscrição de itens em pastas apenas na caixa de correio do usuário conectado. Isso significa que, por exemplo, você não pode usar os calendários de permissões delegadas. Leia para assinar eventos na caixa de correio de outro usuário.
 - Se inscrever para alterar as notificações de contatos, eventos no Outlook ou mensagens em pastas_compartilhadas ou delegadas_:
 
   - Usar a permissão de aplicativos correspondentes para inscrever as alterações dos itens em uma pasta ou uma caixa de correio de _qualquer_ usuários no locatário.

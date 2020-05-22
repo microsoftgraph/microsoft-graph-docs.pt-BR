@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f0d6f7ff7b5fb7d6259f5154f9d021823995cb67
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: cef3822e418b822c74293fbff9c0def9a7104c63
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289289"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345167"
 ---
 # <a name="create-onlinemeeting"></a>Criar ReuniãoOnline
 
@@ -61,9 +61,6 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e um o
 ### <a name="example-1-create-an-online-meeting-with-application-token"></a>Exemplo 1: criar uma reunião online com o token do aplicativo
 
 #### <a name="request"></a>Solicitação
-
-> [!Note]
-> A criação de reuniões online usando um token de aplicativo foi preterida e o suporte será removido em julho de 2020. Use o caminho /me com um token de usuário para criar reuniões online.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

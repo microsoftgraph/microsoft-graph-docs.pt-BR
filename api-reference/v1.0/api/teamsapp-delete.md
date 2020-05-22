@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3d224b0458a26b35ba330c508eeac65bea2b068f
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 8fe918b6e584fb3f22e00c2ca488cb7ef2937bdd
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290325"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345888"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>Remover um aplicativo do catálogo de aplicativos da sua organização
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:----------------------------------     |:-------------|
 | Delegado (conta corporativa ou de estudante)     | AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte|
-| Aplicativo                            | AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
+| Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3eeff42ac2de58e2197da4f349b4abf5a9b72c2a
-ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
+ms.openlocfilehash: 0ba846a7e5dc407db52cf4f343444cb7f84fd5f6
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534403"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345195"
 ---
 # <a name="list-accesspackageassignmentpolicies"></a>Listar accessPackageAssignmentPolicies
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | EntitlementManagement. Read. All, EntitlementManagement. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar uma política de atribuição de pacote do Access com um nome de `$filter=displayName eq 'Employee sales support'` exibição especificado, inclua na consulta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar uma política de atribuição de pacote do Access com um nome de exibição especificado, inclua `$filter=displayName eq 'Employee sales support'` na consulta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

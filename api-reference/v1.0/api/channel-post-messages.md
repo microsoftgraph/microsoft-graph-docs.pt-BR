@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2ee3e91979b91610520ebcb80e5414bf27255e84
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 24a20255d39cb6789b655702c0de6a54cc2cf59f
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332591"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345776"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>Criar chatMessage em um canal
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | ChannelMessage. Send, Group. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Group.ReadWrite.All |
+| Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

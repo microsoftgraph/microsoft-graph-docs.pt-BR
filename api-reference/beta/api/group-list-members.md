@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bcdd61f1af3f67b7ddc7e5ec2e3d4dde0c839c15
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 46fca8fe14924d2b5094db4cf9c9fad709bc48cd
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332868"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345699"
 ---
 # <a name="list-group-members"></a>Membros do grupo de lista
 
@@ -214,7 +214,7 @@ Content-type: text/plain
 
 893
 
-### <a name="example-4-use-searchand-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>Exemplo 4: Use $searchand conversão OData para obter a associação do usuário em grupos com nomes de exibição que contenham as letras "PR", incluindo uma contagem de objetos retornados
+### <a name="example-4-use-search-and-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>Exemplo 4: Use $search e a conversão OData para obter a associação do usuário em grupos com nomes para exibição que contenham as letras "PR", incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
