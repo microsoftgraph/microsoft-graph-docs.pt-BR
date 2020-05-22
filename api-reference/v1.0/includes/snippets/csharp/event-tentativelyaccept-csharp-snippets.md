@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: be522034fc6c17a23df04492630a61f75290b82e
-ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
+ms.openlocfilehash: 00c77b252745818d17f66249dc506eaaf48359b7
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37045319"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44338855"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var comment = "comment-value";
 var sendResponse = true;
 
 await graphClient.Me.Events["{id}"]
-    .TentativelyAccept(sendResponse,comment)
+    .TentativelyAccept(null,sendResponse,comment)
     .Request()
     .PostAsync();
 
