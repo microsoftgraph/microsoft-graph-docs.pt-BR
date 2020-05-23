@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3388dea0e1c337f25ffff149a635181a92fad3b1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63761dbe89b41f89a07089ac903fb99bc0faee89
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438411"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287371"
 ---
 # <a name="get-chatmessage"></a>Obter chatMessage
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Chat.Read, Chat.ReadWrite   |
+|Delegado (conta corporativa ou de estudante) | Chat.Read, Chat.ReadWrite |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Chat.Read.All   |
+|Aplicativo | Chat.Read.All, Chat.ReadWrite.All |
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: f04fb42dfc4b85690b0a128ac06d15554f3f4957
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 52feda55dd3f5d6a56b785088cacee255be27678
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438518"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287420"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
@@ -41,9 +41,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        |Permissões (da com menos para a com mais privilégios)  |
 |---------------------------------------|---------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     |ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All          |
+|Delegado (conta corporativa ou de estudante)     | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) |Não suportado                                |
-|Aplicativo                            |ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All          |
+|Aplicativo                            | ChannelMessage.Read.Group ([RSC](https://aka.ms/teams-rsc)), ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

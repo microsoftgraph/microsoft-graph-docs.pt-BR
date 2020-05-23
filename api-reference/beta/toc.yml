@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Obter tokens de autenticação
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: /graph/auth/index?context=graph/api/beta
       - name: Noções básicas
         href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -74,7 +74,7 @@ items:
       - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -169,11 +169,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -431,7 +431,7 @@ items:
                 href: api/user-delete-teamsappinstallation.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -970,7 +970,7 @@ items:
                 href: api/cloudcommunications-getpresencesbyuserid.md
           - name: Registros de chamada (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 href: resources/callrecords-callrecord.md
@@ -1013,7 +1013,7 @@ items:
       - name: Reserva de clientes
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -8475,7 +8475,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -8569,7 +8569,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -8993,7 +8993,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Métodos de autenticação
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/authenticationmethods-overview.md
               - name: Método de autenticação
                 href: resources/authenticationmethod.md
@@ -9384,26 +9384,9 @@ items:
                 href: api/identityprovider-update.md
               - name: Excluir o provedor de identidade
                 href: api/identityprovider-delete.md
-          - name: Proteção de informações
-            items:
-              - name: Rótulos
-                href: resources/informationprotectionlabel.md
-                items:
-                  - name: Listar rótulos
-                    href: api/informationprotectionpolicy-list-labels.md
-                  - name: Obter rótulo
-                    href: api/informationprotectionlabel-get.md
-                  - name: Avaliar aplicativo
-                    href: api/informationprotectionlabel-evaluateapplication.md
-                  - name: Avaliar o resultado da classificação
-                    href: api/informationprotectionlabel-evaluateclassificationresults.md
-                  - name: Avaliar a remoção
-                    href: api/informationprotectionlabel-evaluateremoval.md
-                  - name: Extrair rótulo
-                    href: api/informationprotectionlabel-extractlabel.md
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -10259,7 +10242,7 @@ items:
                 href: api/resource-get.md
       - name: Notificações
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/notifications-api-overview.md
           - name: Notificação
             href: resources/projectrome-notification.md
@@ -10595,7 +10578,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e uso
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registro de usuário de credenciais
                     href: resources/credentialuserregistrationcount.md
@@ -10619,7 +10602,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Relatórios de uso do Office 365
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -10822,13 +10805,13 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Dados de consulta
                 href: api/search-query.md
           - name: Índice
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -10895,6 +10878,23 @@ items:
                 href: api/alert-update.md
               - name: Atualizar vários alertas
                 href: api/alert-updatealerts.md
+          - name: Proteção de informações
+            items:
+              - name: Rótulos
+                href: resources/informationprotectionlabel.md
+                items:
+                  - name: Listar rótulos
+                    href: api/informationprotectionpolicy-list-labels.md
+                  - name: Obter rótulo
+                    href: api/informationprotectionlabel-get.md
+                  - name: Avaliar aplicativo
+                    href: api/informationprotectionlabel-evaluateapplication.md
+                  - name: Avaliar o resultado da classificação
+                    href: api/informationprotectionlabel-evaluateclassificationresults.md
+                  - name: Avaliar a remoção
+                    href: api/informationprotectionlabel-evaluateremoval.md
+                  - name: Extrair rótulo
+                    href: api/informationprotectionlabel-extractlabel.md
           - name: Classificações de segurança
             href: resources/securescores.md
             items:
@@ -10933,7 +10933,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -10996,7 +10996,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Plano
             href: resources/plannerplan.md

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7610f85fac0b1b2d62d4d5a3c97984bfda834fd7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6f59ced1ed93ae341e017b261148fbb00f57e313
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438306"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287100"
 ---
 # <a name="list-chat-messages"></a>Listar mensagens de bate-papo
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Chat.Read   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Chat.Read.All   |
+|Delegado (conta corporativa ou de estudante) | Chat.Read, Chat.ReadWrite |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Chat.Read.All, Chat.ReadWrite.All |
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

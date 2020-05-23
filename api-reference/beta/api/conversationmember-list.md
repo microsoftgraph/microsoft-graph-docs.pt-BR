@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)| Chat. ReadBasic, chat. Read, chat. ReadWrite |
+|Delegado (conta corporativa ou de estudante)| Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Chat. ReadBasic. All, chat. Read. All, chat. ReadWrite. All |
+|Aplicativo| Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

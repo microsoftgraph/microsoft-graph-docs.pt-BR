@@ -3,21 +3,23 @@ title: Escolher uma API no Microsoft Graph para criar e ingressar em reuniões o
 description: Você terá a flexibilidade de criar uma reunião que ocorra no futuro ou instantaneamente
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: acbe97c2f5fb68547d5baabc4e7de0ef1de50641
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: d9c9a327e8cfafe10c8095e914d48e579c231d58
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289847"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345909"
 ---
 # <a name="choose-an-api-in-microsoft-graph-to-create-and-join-online-meetings"></a>Escolher uma API no Microsoft Graph para criar e ingressar em reuniões online
 
-O Microsoft Graph oferece dois conjuntos de API que podem organizar e participar de reuniões online no Microsoft Teams ou no Skype:
+O Microsoft Graph oferece dois conjuntos de API que organizam e participam de reuniões online no Microsoft Teams ou no Skype:
 
 - [API de calendário](outlook-calendar-online-meetings.md): Use o recurso de [evento](/graph/api/resources/event) .
 - [API de comunicações em nuvem](cloud-communications-online-meetings.md): Use o recurso [onlineMeeting](/graph/api/resources/onlineMeeting) .
 
-A escolha está entre uma maneira de programação conveniente para configurar uma reunião online no calendário do Outlook, onde os participantes ingressam e assumem a experiência do teams ou da interface do usuário do Skype, versus a integração programática mais rica de equipes ou recursos do Skype para uma experiência ou um cenário de aplicativo mais personalizado.
+A opção está entre:
+- Um modo de programação conveniente de configurar uma reunião online no calendário do Outlook onde os participantes clicam para ingressar na reunião e continuar a experiência no Microsoft Teams ou no Skype.
+- E uma integração programática avançada de equipes ou recursos do Skype em um aplicativo para uma experiência mais personalizada.
 
 ## <a name="considerations-when-choosing-an-api-for-your-scenario"></a>Considerações ao escolher uma API para o seu cenário
 
@@ -49,13 +51,13 @@ A tabela a seguir detalha as diferenças no nível da API.
 | Recurso de reunião online | API de calendário (recurso de evento) | API de comunicação em nuvem (recurso onlineMeeting)             |
 |:-----------------------|:------------------------------|:-------------------------------------------------------------|
 | Membros da API principal | recurso de [evento](/graph/api/resources/event) : <br>- Propriedade **isOnlineMeeting** <br>- Propriedade **onlineMeeting** do tipo [onlineMeetingInfo](/graph/api/resources/onlinemeetinginfo) <br>- Propriedade **onlineMeetingProvider** <br> recurso de [calendário](/graph/api/resources/calendar) : <br>- Propriedade **allowedOnlineMeetingProviders** <br>- Propriedade **defaultOnlineMeetingProvider** <br> | recurso [onlineMeeting](/graph/api/resources/onlinemeeting) <br> recurso [audioConferencing](/graph/api/resources/audioconferencing)
-| Integração com um item de calendário | <br> [Criar](/graph/api/user-post-events) ou [Atualizar](/graph/api/event-update) a API de **eventos** define automaticamente o [evento](/graph/api/resources/event) de calendário do Outlook resultante como uma reunião online.<br> Use as propriedades **isOnlineMeeting**, **onlineMeeting**e **onlineMeetingProvider** do **evento**de calendário do Outlook retornado.  | [Criar](/graph/api/application-post-onlinemeetings) API retorna um recurso [onlineMeeting](/graph/api/resources/onlinemeeting) que é independente de um determinado tipo de calendário. <br> Não cria ou atualiza qualquer evento do Outlook. <br> Integre as informações de recurso do **onlineMeeting** retornadas em uma experiência de aplicativo apropriada para seu cenário. <br> Disponível em visualização: [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-beta) uma reunião online e use a propriedade **externalId** retornada para simplificar a incorporação da reunião resultante em um calendário de terceiros. |
-| Alterando para reunião offline | Não se você habilitar um **evento** para ingressar online, não será possível atualizá-lo para torná-lo uma reunião offline.<br> Não é possível alterar a propriedade **onlineMeetingProvider** , nem definir **isOnlineMeeting** para `false` desabilitar a reunião online. | Não depois de criar um recurso do **onlineMeeting** , você só pode excluí-lo, mas não pode alterá-lo para uma reunião offline. |
-| Informações de junção baseadas em localidade | Nenhuma integração direta da API. | Use o `Accept-Language` cabeçalho http (visualização) ao criar uma reunião online. <br> Confira um [exemplo](/graph/api/application-post-onlinemeetings?view=graph-rest-beta#example-2-create-an-online-meeting-with-user-token). |
+| Integração com um item de calendário | <br>- [Criar](/graph/api/user-post-events) ou [Atualizar](/graph/api/event-update) a API de **eventos** define automaticamente o [evento](/graph/api/resources/event) de calendário do Outlook resultante como uma reunião online.<br>– Use as propriedades **isOnlineMeeting**, **onlineMeeting**e **onlineMeetingProvider** do **evento**de calendário do Outlook retornado.  | - [Criar](/graph/api/application-post-onlinemeetings) API retorna um recurso [onlineMeeting](/graph/api/resources/onlinemeeting) que é independente de um determinado tipo de calendário. <br>-Não cria ou atualiza qualquer evento do Outlook. <br>– Integre as informações de recurso **onlineMeeting** retornadas em uma experiência de aplicativo apropriada para seu cenário. <br>– Disponível em visualização: [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-beta) uma reunião online e usar a propriedade **externalId** retornada para simplificar a incorporação da reunião resultante em um calendário de terceiros. |
+| Alterando para reunião offline | -Não quando você habilitar um **evento** para ingressar online, não será possível atualizá-lo para torná-lo uma reunião offline.<br>– Não é possível alterar a propriedade **onlineMeetingProvider** , nem definir **isOnlineMeeting** para `false` desabilitar a reunião online. | Não depois de criar um recurso do **onlineMeeting** , você só pode excluí-lo, mas não pode alterá-lo para uma reunião offline. |
+| Informações de junção baseadas em localidade | Nenhuma integração direta da API. | – Use o `Accept-Language` cabeçalho http (visualização) ao criar uma reunião online. <br>– Confira o [exemplo](/graph/api/application-post-onlinemeetings?view=graph-rest-beta#example-2-create-an-online-meeting-with-user-token). |
 | Ingressar na Internet (VoIP) | Por meio da propriedade **onlineMeeting** , acesse **joinUrl**.  | Use a propriedade **joinWebUrl** . |
-| Ingressando por discagem | Por meio da propriedade **onlineMeeting** , acesse: <br> **conferenceid**, **quickDial**, **telefones**, **tollFreeNumbers**, **tollNumber**. | Por meio da propriedade **audioConferencing** , acesse: <br> - **conferenceid**, **tollFreeNumber**, **tollNumber**.<br> - Propriedade **dialinUrl** para uma página da Web acessível externamente que contém informações de discagem para facilitar a integração com aplicativos de terceiros. |
+| Ingressando por discagem | Por meio da propriedade **onlineMeeting** , acesse: <br>- **conferenceid**, **quickDial**, **telefones**, **tollFreeNumbers**, **tollNumber**. |Por meio da propriedade **audioConferencing** , acesse: <br> - **conferenceid**, **tollFreeNumber**, **tollNumber**.<br> - Propriedade **dialinUrl** para uma página da Web acessível externamente que contém informações de discagem para facilitar a integração com aplicativos de terceiros. |
 | Ingressar por vídeo audioconferência (áudio e vídeo) | Nenhuma integração direta da API. | Use a propriedade **videoTeleconferenceId** . |
-| Reunião de reuniões e automatização de admissão de participantes na reunião online | Nenhuma integração direta da API.<br> No blob de reuniões injetadas-equipes de reunião do evento, o participante pode clicar em um link de **Opções de reunião** para acessar o lobby da reunião, se habilitado pelo administrador. |A API diferencia os participantes da empresa e das empresas federadas do organizador e outros participantes, incluindo aqueles anônimos.  <br> Use a propriedade **autoAdmittedUsers** (visualização).  |
+| Reunião de reuniões e automatização de admissão de participantes na reunião online | -Nenhuma integração direta da API.<br>-No blob de reunião de ingresso injetado-Teams do evento, o participante pode clicar em um link de **Opções de reunião** para acessar o lobby da reunião, se habilitado pelo administrador. |-API diferencia os participantes da empresa e das empresas federadas do organizador e outros participantes, incluindo aqueles anônimos.  <br>– Use a propriedade **autoAdmittedUsers** (visualização).  |
 | Relacionadas a um chat do Microsoft Teams | Nenhuma integração direta da API. | Use a propriedade **chatInfo** . |
 
 

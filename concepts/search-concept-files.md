@@ -4,12 +4,12 @@ description: Você pode usar a API de pesquisa da Microsoft para pesquisar arqui
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: a75eb8e90c8656ced3d9f50d6526b5ebe48584aa
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 7a7e5c92f3ffe9399732d6454d3e06d2013f8768
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892671"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345839"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-files"></a>Usar a API de pesquisa da Microsoft no Microsoft Graph para pesquisar arquivos
 
@@ -22,7 +22,7 @@ Você pode usar a API de pesquisa da Microsoft para pesquisar arquivos armazenad
 Você pode usar o KQL em termos de pesquisa de consultas do SharePoint e do OneDrive. Por exemplo:
 
 - `"query": "contoso filetype:docx OR filetype:doc"`escopo a consulta em documentos do Word.
-- `"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""`escopo a consulta para uma determinada pasta dentro de um site.
+- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""`escopo a consulta para uma determinada pasta dentro de um site.
 
 Para ser válido, a restrição de propriedades deve especificar um nome de propriedade gerenciada válido e consultável na condição.
 

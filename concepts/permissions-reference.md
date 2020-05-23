@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 96a4309db3e90fc2ffde03f2f78b3eb245f961de
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: e8d4a28916278f51e377bf18b68f91f98fc47001
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333322"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345930"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -661,7 +661,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |Permissão|Exibir Cadeia de Caracteres|Descrição|Consentimento Obrigatório do Administrador|
 |:----------|:--------------|:-----------|:-------|
-|_EntitlementManagement.ReadWrite.All_|Ler e gravar os recursos de gerenciamento de direitos|Permite ao aplicativo solicitar e gerenciar o acesso a pacotes e recursos de gerenciamento de direitos relacionados em nome do usuário conectado.|Sim|
+|_EntitlementManagement.ReadWrite.All_|Ler e gravar os recursos de gerenciamento de direitos|Permite ao aplicativo solicitar acesso para ler e gerenciar pacotes de acesso e recursos de gerenciamento de direitos relacionados em nome do usuário conectado.|Sim|
+|_EntitlementManagement. Read. All_|Ler recursos de gerenciamento de direitos|Permite ao aplicativo solicitar acesso a pacotes de acesso de leitura e recursos de gerenciamento de direitos relacionados em nome do usuário conectado.|Sim|
 
 ## <a name="files-permissions"></a>Permissões de arquivos
 
@@ -1610,21 +1611,24 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _TeamsActivity.Read.All_ (visualização privada) | Ler o feed de atividades do trabalho em equipe de todos os usuários. | Permite que o aplicativo leia o feed de atividade em equipe de todos os usuários sem um usuário conectado. | Sim | Não |
 | _TeamsActivity.Send_ (visualização particular)| Enviar uma atividade de trabalho em equipe para qualquer usuário | Permite que o aplicativo envie novas atividades para o feed de atividade em equipe de qualquer usuário, sem um usuário conectado. | Sim | Não |
 
-## <a name="teams-app-permissions"></a>Permissões do aplicativo de equipes
+## <a name="teams-app-permissions-deprecated"></a>Permissões do aplicativo do Teams (preterido)
+
+>[!NOTE]
+>Essas permissões são preteridas e não devem ser usadas.
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsApp.Read.All_ | Ler todos os aplicativos instalados do Teams | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado e em todas as equipes das quais o usuário é membro. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
-| _TeamsApp.ReadWrite.All_ | Gerenciar todos os aplicativos do Teams | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado e também das equipes das quais o usuário é membro. Não oferece a capacidade de ler ou gravar configurações específicas do aplicativo. | Sim | Não |
+| _TeamsApp. Read. All_ (**preterido**)| Ler todos os aplicativos instalados do Teams | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado e em todas as equipes das quais o usuário é membro. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
+| _TeamsApp. ReadWrite. All_ (**preterido**)| Gerenciar todos os aplicativos do Teams | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado e também das equipes das quais o usuário é membro. Não oferece a capacidade de ler ou gravar configurações específicas do aplicativo. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsApp.Read.All_ | Lê os aplicativos do Teams instalados de todos os usuários | Permite que o aplicativo leia os aplicativos do Teams que estão instalados para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
-| _TeamsApp.ReadWrite.All_ | Gerencia os aplicativos do Teams de todos os usuários  | Permite que o aplicativo leia, instale, atualize e desinstale  os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.   | Sim | Não |
+| _TeamsApp. Read. All_ (**preterido**)| Lê os aplicativos do Teams instalados de todos os usuários | Permite que o aplicativo leia os aplicativos do Teams que estão instalados para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
+| _TeamsApp. ReadWrite. All_ (**preterido**)| Gerencia os aplicativos do Teams de todos os usuários  | Permite que o aplicativo leia, instale, atualize e desinstale  os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.   | Sim | Não |
 
 ## <a name="team-member-permissions-private-preview"></a>Permissões dos membros do canal ([visualização privada](#permissions-availability-status))
 
@@ -1816,7 +1820,7 @@ Com o _User.ManageIdentities.All_ delegado ou as permissões de aplicativo, é p
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _User.Read_: Ler o perfil completo para o usuário conectado (`GET /me`).
 * _User.ReadWrite_: Atualizar a foto do usuário conectado (`PUT /me/photo/$value`).
