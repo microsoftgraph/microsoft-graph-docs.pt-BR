@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6b59e5d703e9f10de43e87703ba853e13c69d74a
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 1fe32bcc519e697198281376ba433a8754a660ab
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200268"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44215777"
 ---
 # <a name="identityprovider-resource-type"></a>Tipo de recurso do identityProvider
 
@@ -43,7 +43,7 @@ Configurar um provedor de identidade em seu locatário do Azure AD permite cená
 |clientSecret|Cadeia de caracteres|Sim|Não|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade. Isso é somente para gravar. Uma operação de leitura retornará "\*\*\*\*".|
 |id|String|Não|Não|O ID do provedor de identidade.|
 |nome|String|Não|Não|O nome de exibição exclusivo do provedor de identidade.|
-|tipo|String|Sim|Não|A identidade do provedor de identidade. Ele deve ser um dos seguintes valores para cenários B2C: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>Para cenários de B2B o valor deve ser Google.|
+|tipo|String|Sim|Não|A identidade do provedor de identidade. Ele deve ser um dos seguintes valores para cenários B2C: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>Para os cenários B2B, o valor deve ser Google ou Facebook.|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>Como obter o ID e segredo do cliente
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: conceptualPageType
-ms.openlocfilehash: 5df39b82febc9e68df3fe0facadf67fe8caeb943
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 85d66e33df5c168c212225bb8145268f3b98ea25
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966458"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353459"
 ---
 # <a name="use-the-onenote-rest-api"></a>Usar o API REST do OneNote
 
@@ -33,7 +33,7 @@ A localização pode ser blocos de anotações do usuário no Office 365 ou de c
 
 ![Pilha de desenvolvimento da API do OneNote](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/onenote-dev-diagram.png)
 
-### <a name="user-notebooks"></a>Blocos de anotações do usuário
+## <a name="user-notebooks"></a>Blocos de anotações do usuário
 Para acessar blocos de anotações pessoais no OneDrive do consumidor ou no OneDrive for Business, use uma das seguintes URLs:
 
 ```
@@ -46,16 +46,19 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 - `users/{id}` serve para o conteúdo do OneNote que o usuário especificado (na URL) compartilhou com o usuário atual. Use a API de [usuários](users.md).
 > **Observação:** Para obter as IDs de usuário, faça uma solicitação GET em `https://graph.microsoft.com/v1.0/users`.
 
-### <a name="group-notebooks"></a>Blocos de anotações de grupo
+## <a name="group-notebooks"></a>Blocos de anotações de grupo
 
 Para acessar blocos de anotações que pertencem a um grupo, use a seguinte URL raiz de serviço:
 
 ```
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
-### <a name="sharepoint-site-notebooks"></a>Blocos de anotações do SharePoint
+## <a name="sharepoint-site-notebooks"></a>Blocos de anotações do SharePoint
 Para acessar blocos de anotações que pertencem a um site de equipe do SharePoint, use a seguinte URL raiz de serviço:
 
 ```
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
+
+## <a name="whats-new"></a>Novidades
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e07e5f24c45c4847c35af5999a8ed16bc470564d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56ca90f828d5b7b14c2761b5a73983268b12b5e7
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517520"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353529"
 ---
 # <a name="create-educationclass"></a>Criar educationClass
 
 Namespace: microsoft.graph
 
-Crie uma nova aula. Isso também criará um grupo universal. Quando você usar essa API para criar uma aula, ela adicionará propriedades especiais ao grupo, que adicionará recursos como atribuições e tratamento especial no Microsoft Teams.
+Crie uma nova aula. Isso também criará um grupo universal. Quando você usar essa API para criar uma classe, ela adicionará propriedades especiais ao grupo, que adicionará recursos como atribuições e tratamento especial no Microsoft Teams quando o Teams for criado usando o grupo. Observe que essa API apenas cria o grupo universal e não cria uma equipe. O Microsoft Teams oferece uma interface do usuário para que os professores criem equipes para suas próprias classes usando os grupos criados por essa API.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: d6e99dc0eecfdf3ee2644b79d0a74bc5f4703fb4
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: e26cc38761ac55f1c39bc2e41459c7567692f2a3
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290030"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353480"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -86,6 +86,9 @@ Da mesma forma, se o `userId` na URL ou no conteúdo for expresso como um UPN, e
 
 Quando o caminho mais lento é executado, se um membro ou membro da equipe atual estiver conectado ao aplicativo/site do Microsoft Teams, a alteração será refletida em uma hora.
 Se nenhum desses usuários estiver conectado ao aplicativo/site do Microsoft Teams, a alteração não será refletida até uma hora depois que um deles se conectar.
+
+## <a name="whats-new"></a>Novidades
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
 ## <a name="see-also"></a>Confira também
 

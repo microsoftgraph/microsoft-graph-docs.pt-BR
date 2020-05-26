@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 6ea433e6e8eb348f770fd691f16397ddea001301
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 3e9873d8def179bfdbe8d77767d5a521af5cebf3
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345951"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353256"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -83,6 +83,8 @@ POST /subscriptions
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [Subscription](../resources/subscription.md) no corpo da resposta.
+
+Para obter detalhes sobre como os erros são retornados, confira [respostas de erro][error-response].
 
 ## <a name="example"></a>Exemplo
 
@@ -175,6 +177,8 @@ Content-length: 252
 ## <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
 
 O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl** ) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [configurar notificações para alterações nos dados do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
+
+[error-response]: /graph/errors
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 977211f9e2e77250201fe2c346a04153cf3a0cdf
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: bdb4b23bf14e7c63cbaeeb21c4d559aa5f46b35f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200219"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44218149"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -271,6 +271,12 @@ Os exemplos de código a seguir estão disponíveis no GitHub.
 - [Exemplo de webhooks do Microsoft Graph para Node.js](https://github.com/microsoftgraph/nodejs-webhooks-rest-sample)
 - [Exemplo de Webhooks do Microsoft Graph para o ASP.NET Core](https://github.com/microsoftgraph/aspnetcore-webhooks-sample)
 - [Exemplo de Webhooks do Microsoft Graph para Java Spring](https://github.com/microsoftgraph/java-spring-webhooks-sample)
+
+## <a name="firewall-configuration"></a>Configuração do firewall
+
+Opcionalmente, você pode configurar o firewall que protege a URL de notificação para permitir conexões de entrada somente pelo Microsoft Graph. Isso permite que você reduza a exposição posterior a notificações inválidas que são enviadas para sua URL de notificação. Essas notificações inválidas podem estar tentando desencadear a lógica personalizada que você implementou. Para obter uma lista completa de endereços IP usados pelo Microsoft Graph para oferecer notificações de alteração, confira [pontos de extremidade adicionais do Office 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
+
+> **Observação:** Os endereços IP listados que são usados para fornecer notificações de alteração podem ser atualizados a qualquer momento sem aviso prévio.
 
 ## <a name="see-also"></a>Confira também
 

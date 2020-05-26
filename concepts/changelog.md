@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: ba8362962989dc6b5bb541a984f6355679de723e
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 333ddc360be1f718d51fb2aad46c185eab72f5c7
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345958"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353431"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -82,9 +82,9 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | A propriedade **riskEventType** foi adicionada aos recursos [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta) e [riskyUserHistoryItem](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta) . Use essa propriedade em vez da propriedade **risktype** para recuperar o tipo de detecções de risco de proteção de identidade.
 | Alteração | beta | Atualização da propriedade**clientAppTypes** em [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) para subsitituir `modern` por `mobileAppsAndDesktopClients`. `easUnsupported` removido `exchangeActiveSync` adicionado, incluindo as plataformas compatíveis e incompatíveis com o Exchange ActiveSync. |
 | Adição | beta | Foram adicionadas as permissões Application. Read. All e Application. ReadWrite. All à [lista de aplicativos](/graph/api/application-list?view=graph-rest-beta)<br>Adicionado suporte para `$count` os `$search` parâmetros de `$filter` consulta, e para: <br><ul><li>[Listar aplicativos](/graph/api/application-list?view=graph-rest-beta)</li><li>[Listar grupos de dispositivos](/graph/api/device-list-memberof?view=graph-rest-beta)</li><li>[Listar grupos transitivos de dispositivo](/graph/api/device-list-transitivememberof?view=graph-rest-beta)</li><li>[Listar dispositivos](/graph/api/device-list?view=graph-rest-beta)</li><li>[Grupo de lista memberOf](/graph/api/group-list-memberof?view=graph-rest-beta)</li><li>[Membros do grupo de lista](/graph/api/group-list-members?view=graph-rest-beta)</li><li>[Lista de grupos transitivos transitivos](/graph/api/group-list-transitivememberof?view=graph-rest-beta)</li><li>[Membros transitivos do grupo de lista](/graph/api/group-list-transitivemembers?view=graph-rest-beta)</li><li>[Listar grupos](/graph/api/group-list?view=graph-rest-beta)</li><li>[Listar orgContacts](/graph/api/orgcontact-list?view=graph-rest-beta)</li><li>[Listar o servicePrincipalName memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-beta)</li><li>[Listar os memberOf transitivos de servicePrincipalName](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta)</li><li>[List servicePrincipals](/graph/api/serviceprincipal-list?view=graph-rest-beta)</li><li>[Listar usuário membro](/graph/api/user-list-memberof?view=graph-rest-beta)</li><li>[Listar usuário transitiva membro](/graph/api/user-list-transitivememberof?view=graph-rest-beta)</li><li>[Listar usuários](/graph/api/user-list?view=graph-rest-beta)</li></ul><br>Adição de exemplos para usar a conversão de OData para: <ul><li>[Grupo de lista memberOf](/graph/api/group-list-memberof?view=graph-rest-beta)</li><li>[Membros do grupo de lista](/graph/api/group-list-members?view=graph-rest-beta)</li><li>[Lista de grupos transitivos transitivos](/graph/api/group-list-transitivememberof?view=graph-rest-beta)</li><li>[Listar o servicePrincipalName memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-beta)</li><li>[Listar os memberOf transitivos de servicePrincipalName](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta)</li><li>[Listar usuário membro](/graph/api/user-list-memberof?view=graph-rest-beta)</li><li>[Listar usuário transitiva membro](/graph/api/user-list-transitivememberof?view=graph-rest-beta)</li></ul> |
-| Addition | v1.0 | Adicionado novo tipo de entidade: [servicePrincipalName](/graph/resources/serviceprincipal?view=graph-rest-v1.0).|
-| Addition | v1.0 | Adicionado novo tipo de entidade: [appRoleAssignment](/graph/resources/approleassignment?view=graph-rest-v1.0).|
-| Adição | Beta, v 1.0 | Adicionadas permissões somente de aplicativo e delegadas [AppRoleAssignment. ReadWrite. All](permissions-reference.md#group-permissions). |
+| Addition | v1.0 | Adicionado novo tipo de entidade: [servicePrincipalName](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).|
+| Addition | v1.0 | Adicionado novo tipo de entidade: [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).|
+| Adição | Beta, v 1.0 | Adicionadas permissões somente de aplicativo e delegadas [AppRoleAssignment. ReadWrite. All](permissions-reference.md#application-resource-permissions). |
 | Adição | beta | Adição de permissão delegada [EntitlementManagement. Read. All](permissions-reference.md#entitlement-management-permissions). |
 
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)

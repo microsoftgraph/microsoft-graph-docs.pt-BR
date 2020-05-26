@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c24f53054d474ac8a50959127d98f5920789e620
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 95686742ad52663d518659d1f25b1bc74b9014ca
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394658"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353767"
 ---
 # <a name="networkinfo-resource-type"></a>tipo de recurso networkInfo
 
-Namespace: Microsoft. Graph. callRecords
+Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Representa informações sobre a rede usada em uma chamada.
 |:-------------|:------------|:------------|
 |bandwidthLowEventRatio|Duplo|Fração da chamada em que o ponto de extremidade de mídia detectou que a política de largura de banda ou largura de banda disponível era baixa o suficiente para causar baixa qualidade do áudio enviado.|
 |basicServiceSetIdentifier|String|O identificador do conjunto de serviços básicos de LAN sem fio do ponto de extremidade de mídia usado para se conectar à rede.|
-|Connection|String|Tipo de rede usado pelo ponto de extremidade de mídia. Os possíveis valores são: `unknown`, `wired`, `wifi`, `mobile`, `tunnel`, `unknownFutureValue`.|
+|Connection|Microsoft. Graph. callRecords. networkConnectionType|Tipo de rede usado pelo ponto de extremidade de mídia. Os possíveis valores são: `unknown`, `wired`, `wifi`, `mobile`, `tunnel`, `unknownFutureValue`.|
 |delayEventRatio|Duplo|Fração da chamada em que o ponto de extremidade de mídia detectou que o atraso de rede era suficientemente significativo para afetar a capacidade de comunicação bidirecional em tempo real.|
 |dnsSuffix|String|Sufixo DNS associado ao adaptador de rede do ponto de extremidade de mídia.|
 |ipAddress|Cadeia de caracteres|Endereço IP do ponto de extremidade de mídia.|
@@ -39,12 +39,12 @@ Representa informações sobre a rede usada em uma chamada.
 |relayPort|Int32|Número de porta de rede alocado no servidor de Media Relay pelo ponto de extremidade de mídia.|
 |sentQualityEventRatio|Duplo|Fração da chamada em que o ponto de extremidade de mídia detectou que a rede estava causando baixa qualidade do áudio enviado.|
 |-|String|Sub-rede usada para fluxo de mídia pelo ponto de extremidade de mídia.|
-|wifiBand|String|Banda WiFi usada pelo ponto de extremidade de mídia. Os valores possíveis são: `unknown`, `frequency24GHz`, `frequency50GHz`.|
+|wifiBand|Microsoft. Graph. callRecords. wifiBand|Banda WiFi usada pelo ponto de extremidade de mídia. Os valores possíveis são: `unknown`, `frequency24GHz`, `frequency50GHz`.|
 |wifiBatteryCharge|Int32|Carga da bateria restante estimada em porcentagem relatada pelo ponto de extremidade de mídia.|
 |wifiChannel|Int32|O canal WiFi usado pelo ponto de extremidade de mídia.|
 |wifiMicrosoftDriver|String|Nome do driver do Microsoft WiFi usado pelo ponto de extremidade de mídia. O valor pode ser localizado com base no idioma usado pelo ponto de extremidade.|
 |wifiMicrosoftDriverVersion|String|Versão do driver do Microsoft WiFi usado pelo ponto de extremidade de mídia.|
-|wifiRadioType|String|Tipo de rádio WiFi usado pelo ponto de extremidade de mídia. Os valores possíveis são: `unknown`, `wifi80211a`, `wifi80211b`, `wifi80211g`, `wifi80211n`, `wifi80211ac`, `wifi80211ax`, `unknownFutureValue`.|
+|wifiRadioType|Microsoft. Graph. callRecords. wifiRadioType|Tipo de rádio WiFi usado pelo ponto de extremidade de mídia. Os valores possíveis são: `unknown`, `wifi80211a`, `wifi80211b`, `wifi80211g`, `wifi80211n`, `wifi80211ac`, `wifi80211ax`, `unknownFutureValue`.|
 |wifiSignalStrength|Int32|Intensidade do sinal WiFi em porcentagem reportada pelo ponto de extremidade de mídia.|
 |wifiVendorDriver|String|Nome do driver WiFi usado pelo ponto de extremidade de mídia. O valor pode ser localizado com base no idioma usado pelo ponto de extremidade.|
 |wifiVendorDriverVersion|String|Versão do driver WiFi usado pelo ponto de extremidade de mídia.|

@@ -5,22 +5,22 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d72ddd8273088fb7b1401d93e686914a69d18ebd
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 8c1af52332c5650123d604b8e405bf88d0c2f965
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394653"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353117"
 ---
 # <a name="session-resource-type"></a>tipo de recurso de sessão
 
-Namespace: Microsoft. Graph. callRecords
+Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma comunicação do usuário ou uma comunicação de reunião do usuário no caso de uma chamada em conferência.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 Não existem métodos para acessar diretamente as sessões. Use a API [Get callRecord](../api/callrecords-callrecord-get.md) com `$expand=sessions` para obter as sessões para um [callRecord](callrecords-callrecord.md).
 
@@ -28,16 +28,16 @@ Não existem métodos para acessar diretamente as sessões. Use a API [Get callR
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|cadeia de caracteres|Identificador exclusivo da sessão. Somente leitura.|
+|id|string|Identificador exclusivo da sessão. Somente leitura.|
 |pelas|[Microsoft. Graph. callRecords. EndPoint](callrecords-endpoint.md)|Ponto de extremidade que iniciou a sessão.|
 |receptor|[Microsoft. Graph. callRecords. EndPoint](callrecords-endpoint.md)|Ponto de extremidade que atendeu à sessão.|
 |failureInfo|[Microsoft. Graph. callRecords. failureInfo](callrecords-failureinfo.md)|Informações de falha associadas à sessão se a sessão falhou.|
-|modalidades|coleção de cadeias de caracteres|Lista de modalidades presentes na sessão. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
+|modalidades|coleção de modalidades de Microsoft. Graph. callRecords.|Lista de modalidades presentes na sessão. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
 |startDateTime|DateTimeOffset|UTC fime quando o primeiro usuário ingressou na sessão. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|Hora UTC quando o último usuário saiu da sessão. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|

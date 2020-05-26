@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 183cc096719ffee6441c93018fd0858d2aaf39a5
-ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
+ms.openlocfilehash: 9a7ca111f0f61577ea4b02a9ea76e48c35bd2fbe
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822743"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353746"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Trabalhando com o Excel no Microsoft Graph
 
@@ -92,7 +92,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
->Observação: se a id da sessão tiver expirado, um código de erro HTTP `404` será retornado na sessão. Nesse cenário, você pode optar por criar uma nova sessão e continuar. Outra abordagem seria atualizar a sessão periodicamente para manter a sessão ativa. Normalmente, a sessão persistente expira após cerca de cinco minutos de inatividade. A sessão não persistente expira após cerca de 7 minutos de inatividade. 
+>Observação: se a id da sessão tiver expirado, um código de erro HTTP `404` será retornado na sessão. Nesse cenário, você pode optar por criar uma nova sessão e continuar. Outra abordagem seria atualizar a sessão periodicamente para manter a sessão ativa. Geralmente, a sessão persistente expira após cerca de 5 minutos de inatividade. A sessão não persistente expira após cerca de 7 minutos de inatividade. 
 
 ## <a name="common-excel-scenarios"></a>Cenários comuns do Excel
 
@@ -101,7 +101,7 @@ Esta seção fornece exemplos das operações comuns que você pode usar em obje
 ### <a name="worksheet-operations"></a>Operações de planilha
 
 #### <a name="list-worksheets-part-of-the-workbook"></a>Listar a parte de planilhas da pasta de trabalho 
-Solicitação 
+Solicitar 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -196,7 +196,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="delete-a-worksheet"></a>Excluir uma planilha
 
-Solicitação
+Solicitar
 ```
 DELETE /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D')
 content-type: Application/Json 
@@ -213,7 +213,7 @@ HTTP code: 204 No Content
 
 #### <a name="update-worksheet-properties"></a>Atualizar as propriedades da planilha
 
-Solicitação 
+Solicitar 
 
 ```
 PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/SheetA
@@ -246,7 +246,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="list-charts-that-are-part-of-the-worksheet"></a>Listar gráficos que fazem parte da planilha 
 
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
@@ -281,7 +281,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-chart-image"></a>Obter imagem do gráfico
 
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
@@ -303,7 +303,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-chart"></a>Adicionar um gráfico  
 
-Solicitação
+Solicitar
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -367,7 +367,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-chart-source-data"></a>Atualizar dados de origem do gráfico 
 
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
@@ -389,7 +389,7 @@ HTTP code: 204 No Content
 
 #### <a name="get-list-of-tables"></a>Obter lista de tabelas 
 
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
@@ -407,7 +407,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="create-table"></a>Criar tabela
 
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/$/add
@@ -437,7 +437,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-table"></a>Atualizar tabela
 
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
@@ -466,7 +466,7 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="get-list-of-table-rows"></a>Obter lista de linhas de tabelas
-Solicitação 
+Solicitar 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -557,7 +557,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-list-of-table-columns"></a>Obter lista de colunas de tabelas
 
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns
@@ -669,7 +669,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-row"></a>Adicionar uma linha de tabela
 
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
@@ -702,7 +702,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-column"></a>Adicionar uma coluna de tabela 
 
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/Columns
@@ -742,7 +742,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="delete-table-row"></a>Excluir linha de tabela
 
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http  
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows/$/ItemAt(index=6)
@@ -757,7 +757,7 @@ HTTP code: 204 No Content
 ```
 
 #### <a name="delete-table-column"></a>Excluir coluna de tabela 
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns('3')
@@ -772,7 +772,7 @@ HTTP code: 204 No Content
 ```
 
 #### <a name="convert-table-to-range"></a>Converter tabela em intervalo 
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
@@ -788,7 +788,7 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="table-sort"></a>Classificação de tabela
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
@@ -812,7 +812,7 @@ HTTP code: 204 No Content
 ```
 
 #### <a name="table-filter"></a>Filtro de tabela
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
@@ -838,7 +838,7 @@ HTTP code: 204 No Content
 
 
 #### <a name="clear-filter"></a>Limpar filtro
-Solicitação
+Solicitar
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
@@ -1180,8 +1180,8 @@ Por exemplo, um intervalo pode consistir em uma ou mais células. Nos casos em q
 ```
 
 Um valor nulo também é retornado na resposta nos seguintes casos:
-- Se ocorrer um erro ao tentar obter uma determinada propriedade de um objeto e essa propriedade puder ser definida como NULL, a propriedade poderá retornar um valor nulo na resposta.
-- Para um objeto Range, ao obter um intervalo para linha inteira ou coluna inteira, algumas propriedades podem retornar NULL como a resposta. Se o tamanho do intervalo exceder a limitação superior (células 5M), algumas propriedades retornarão nulo como o valor.
+- Se ocorrer um erro ao tentar obter uma determinada propriedade de um objeto e essa propriedade puder ser definida como nula, a propriedade pode retornar um valor nulo na resposta.
+- Para um objeto Range, ao obter um intervalo para linha inteira ou coluna inteira, algumas propriedades podem retornar nulo como a resposta. Se o tamanho do intervalo exceder a limitação superior (células 5M), algumas propriedades retornarão nulas como o valor.
 
 ### <a name="blank-input-and-output"></a>Entrada e saída em branco
 
@@ -1326,3 +1326,5 @@ Content-Type: application/json
 }
 ```
 
+## <a name="whats-new"></a>Novidades
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

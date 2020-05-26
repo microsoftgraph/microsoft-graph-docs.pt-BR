@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 935a34a4b3bf8ed63fc33893ade19dbe16fdf60c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ad050afee8b3772aa9a03e52ed2c1a715813bfd4
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006490"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353144"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Como trabalhar com APIs de educação no Microsoft Graph
 
@@ -123,6 +123,8 @@ As APIs de gerenciamento de sincronização de dados da escola oferecem suporte 
 - [Obter o status de uma sincronização](../api/educationsynchronizationprofilestatus-get.md)
 - [Obter erros de sincronização](../api/educationsynchronizationerrors-get.md)
 
+## <a name="whats-new"></a>Novidades
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
 ## <a name="next-steps"></a>Próximas etapas
 Use as APIs de educação do Microsoft Graph para criar soluções de educação que acessam as listas de alunos e as listagens da escola. Para saber mais:

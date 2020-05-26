@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: a19df8d75063cf36d99e9023b029c8619c4dd4fb
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: fc17bb684d2adc54ebd6616353c9a865a90b0e58
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289401"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353879"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -31,6 +31,12 @@ Use os vários novos recursos do [Graph Explorer](https://developer.microsoft.co
 - Conectado com um locatário, exiba e copie um token de acesso para seu aplicativo de cliente REST favorito.
 
 Consulte o [novo explorador do Graph agora está disponível](https://developer.microsoft.com/graph/blogs/new-graph-explorer-is-now-ga/) para obter mais detalhes.
+
+### <a name="identity-and-access"></a>Identidade e acesso
+- GA da [API de entidades de segurança do serviço] no v 1.0-Use o [servicePrincipalName](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) em aplicativos de produção para gerenciar programaticamente instâncias de aplicativos e controlar o que um aplicativo pode fazer dentro do seu locatário. Você pode controlar quem pode usar um aplicativo, a quais recursos o aplicativo tem acesso, como a adição de credenciais de senha, o cancelamento de certificados de expiração e o gerenciamento de permissões delegadas e atribuições de função de aplicativo.
+- GA da API [appRoleAssignment](/graph/api/resources/appRoleAssignment?view=graph-rest-1.0) , que registra a atribuição de um [appRole](/graph/api/resources/approle?view=graph-rest-1.0) (representando a `roles` declaração em tokens de ID e tokens de acesso) a um [usuário](/graph/api/resources/user?view=graph-rest-1.0), [grupo](/graph/api/resources/group?view=graph-rest-1.0)ou [servicePrincipalName](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).
+- Use a permissão delegada ou de aplicativo `AppRoleAssignment.ReadWrite.All` para permitir que um aplicativo gerencie as autorizações de permissões de aplicativo para qualquer API (incluindo o Microsoft Graph) e atribuições de aplicativo para qualquer aplicativo, respectivamente com ou sem o usuário conectado.
+
 
 ### <a name="microsoft-graph-sdks"></a>SDKs do Microsoft Graph
 Veja novas orientações sobre o SDK no seguinte:
@@ -65,11 +71,14 @@ O Intune [pode](changelog.md#may-2020) atualizar na versão beta.
 - Especifique os recursos a serem provisionados na propriedade **resourceProvisioningOptions** que normalmente não fazem parte da criação de [grupo](/graph/api/resources/group?view=graph-rest-beta) padrão. Atualmente, há suporte para o provisionamento de um grupo como uma [equipe](/graph/api/resources/team?view=graph-rest-beta) com recursos do Microsoft Teams.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
+- Aplicar as opções de consulta do sistema OData ( `$count` , `$filter` , `$search` ) ao obter coleções de entidades derivadas de [directoryobject](). Você pode [procurar tokens soecific](/graph/query-parameters?#using-search-on-directory-object-collections) nas propriedades **DisplayName** e **Description** dessas entidades e usar a conversão OData para aparar resultados de **directoryobject** para determinados tipos derivados. Veja mais detalhes em [criar consultas avançadas no Microsoft Graph com $Count, $Filter, $Search e $OrderBy](https://developer.microsoft.com/en-us/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
 - Como parte da [API de proteção de identidade](/graph/api/resources/identityprotection-root?view=graph-rest-beta), use a propriedade **riskEventType** para [obter o tipo de risco detectado](/graph/api/riskdetection-get?view=graph-rest-beta)ou [obter o tipo de risco no histórico de um usuário](/graph/api/riskyuser-list-history?view=graph-rest-beta). Não use a propriedade **risktype** , pois ela foi preterida.
 - Especifique os tipos de aplicativo cliente na propriedade **clientAppTypes** do [conjunto de condições](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) para uma [política de acesso condicional](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
+- Use a permissão delegada de `EntitlementManagement.Read.All` para permitir que um aplicativo Leia pacotes de acesso e recursos de gerenciamento de qualificação relacionados em nome do usuário conectado.
 
 ### <a name="teamwork"></a>Teamwork
-Os aplicativos do teams que [oferecem suporte a logon único (SSO)](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) podem especificar o `WebApplicationInfo.id` do manifesto do aplicativo do Teams, na propriedade **azureADAppId** do [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta).
+- Os aplicativos do teams que [oferecem suporte a logon único (SSO)](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) podem especificar o `WebApplicationInfo.id` do manifesto do aplicativo do Teams, na propriedade **azureADAppId** do [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta).
+- Use [permissões refinadas](/graph/permissions-reference#teams-resource-specific-consent-permissions) mais finas para acessar recursos de [canal](/graph/api/resources/channel?view=graph-rest-beta) e [equipe](/graph/api/resources/team?view=graph-rest-beta) .
 
 
 ## <a name="april-2020-new-and-generally-available"></a>Abril de 2020: novo e geralmente disponível.

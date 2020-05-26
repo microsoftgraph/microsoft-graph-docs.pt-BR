@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: cbec95682b552210781ecd7390726f8d92c4aa03
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd3608c458b7e1f1fe3e39fdd35e1ba03a9f531e
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965618"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353662"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Usar a API do Microsoft Graph para trabalhar com o Project Roma 
 
@@ -26,7 +26,7 @@ As atividades no Microsoft Graph permitem que você direcionar o compromisso do 
 
 - Um link profundo
 - Uma representação visual
-- Metadados de conteúdo que descrevem a atividade, usando [https://schema.org/](https://schema.org/) o vocabulário compartilhado
+- Metadados de conteúdo que descrevem a atividade, usando o [https://schema.org/](https://schema.org/) vocabulário compartilhado
 
 Quando uma sessão é criada por um aplicativo, um item de histórico é adicionado à atividade para refletir o período de envolvimento do usuário. Cada vez que um usuário reparticipa de uma atividade, um novo item de histórico é adicionado à atividade para acumular o envolvimento do usuário.
 
@@ -57,3 +57,5 @@ Você pode usar as seguintes APIs do Microsoft Graph para se comunicar com outro
 - [Enviar um comando para um dispositivo](../api/send-device-command.md)
 - [Obter status do comando](../api/get-device-command-status.md)
 
+## <a name="whats-new"></a>Novidades
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

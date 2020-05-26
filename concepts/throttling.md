@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 7f14491ade48411421e0115d3703a428832254cb
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: d33ac4612f4fe3934c53235360626dac1393ab21
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917424"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44215784"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -67,6 +67,13 @@ Para ter uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja 
 > Se nenhum cabeçalho `Retry-After` for fornecido pela resposta, recomendamos implementar uma política de repetição exponencial de retirada. Você também pode implementar [padrões mais avançados](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency) ao criar aplicativos em grande escala.
 >
 > Os SDKs do Microsoft Graph já implementam manipuladores que dependem do cabeçalho `Retry-After` ou padrão para uma política de repetição de retirada exponencial.
+
+## <a name="best-practices-to-avoid-throttling"></a>Práticas recomendadas para evitar a limitação
+
+Padrões de programação como pesquisando continuamente um recurso para verificar se há atualizações e a verificação regular das coleções de recursos para verificar se há recursos novos ou excluídos, possuem maior propensão de levar aplicativos a serem regulados e prejudicam o desempenho geral. Em vez disso, você deve aproveitar o [controle de alterações](delta-query-overview.md) e [notificações de alteração](webhooks.md) quando estiverem disponíveis.
+
+>[!NOTE]
+>[Práticas recomendadas para descobrir arquivos e detectar alterações em escala](https://docs.microsoft.com/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online) descrevem as práticas recomendadas em detalhes.
 
 ## <a name="service-specific-limits"></a>Limites específicos do serviço
 

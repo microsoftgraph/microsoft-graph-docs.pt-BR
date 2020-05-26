@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0619bd21c5db0bf4ee85d34bf54210baf4d04b4f
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 6e985d99c1fb86c71b862d0f055af96eba2c2a66
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394675"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353620"
 ---
 # <a name="clientuseragent-resource-type"></a>tipo de recurso clientUserAgent
 
-Namespace: Microsoft. Graph. callRecords
+Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +26,8 @@ Representa um agente de usuário do cliente de um ponto de extremidade em uma ch
 |:-------------|:------------|:------------|
 |applicationVersion|String|Identifica a versão do software do aplicativo usado por esse ponto de extremidade.|
 |headerValue|String|Valor do cabeçalho do agente de usuário relatado por esse ponto de extremidade.|
-|platform|String|Identifica a plataforma usada por esse ponto de extremidade. Os valores possíveis são: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
-|productFamily|String|Identifica a família de software de aplicativo usada por esse ponto de extremidade. Os valores possíveis são: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`.|
+|platform|Microsoft. Graph. callRecords. clientPlatform|Identifica a plataforma usada por esse ponto de extremidade. Os valores possíveis são: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
+|productFamily|Microsoft. Graph. callRecords. productFamily|Identifica a família de software de aplicativo usada por esse ponto de extremidade. Os valores possíveis são: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

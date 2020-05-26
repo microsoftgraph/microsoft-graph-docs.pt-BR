@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3160fe3b2d0c1fd59ddd86621667b67ee5759dd5
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 38ccc3094521283c6c496b1d0e35b97a6cf37199
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394672"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353613"
 ---
 # <a name="failureinfo-resource-type"></a>tipo de recurso failureInfo
 
-Namespace: Microsoft. Graph. callRecords
+Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Representa informações sobre o motivo pelo qual uma chamada ou parte de uma ch
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |motivo|String|Classificação de por que uma chamada ou parte de uma chamada falhou.|
-|estágio|String|O estágio quando a falha ocorreu. Os valores possíveis são: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.|
+|estágio|Microsoft. Graph. callRecords. failureStage|O estágio quando a falha ocorreu. Os valores possíveis são: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

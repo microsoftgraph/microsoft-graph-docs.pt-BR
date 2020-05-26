@@ -3,12 +3,12 @@ title: Escolher uma API no Microsoft Graph para criar e ingressar em reuniões o
 description: Você terá a flexibilidade de criar uma reunião que ocorra no futuro ou instantaneamente
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: d9c9a327e8cfafe10c8095e914d48e579c231d58
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 77749b7478df669c573c1d4b3a06ec1a6f1e3d42
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345909"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353137"
 ---
 # <a name="choose-an-api-in-microsoft-graph-to-create-and-join-online-meetings"></a>Escolher uma API no Microsoft Graph para criar e ingressar em reuniões online
 
@@ -32,7 +32,7 @@ Escolha a API de calendário para uma integração integrada e simplificada com 
   - Os participantes podem clicar no blob Join-Teams-Meeting para participar da reunião pela Internet ou discando para o.
   - Os participantes podem usar outros recursos avançados do Teams, incluindo conferência de vídeo e lobby de reunião, se estiverem configurados.
 
-> **Observação:** A integração com o calendário do Outlook presume que um administrador configurou o Outlook para reuniões online. [Verifique](outlook-calendar-online-meetings.md#calendars-and-online-meeting-providers) o suporte antes de usar a API.
+> **Observação:** A integração com o calendário do Outlook presume que um administrador configurou o Outlook para reuniões online. [Verifique](/microsoftteams/exchange-teams-interact) o suporte antes de usar a API.
 
 Escolha a API de comunicações em nuvem para flexibilidade e suporte programático mais amplo:
 - Os aplicativos têm mais flexibilidade para integrar mais os resultados da API com linha de negócios e outros aplicativos. A API é desassociada a qualquer calendário específico e não cria um evento em nenhum calendário.

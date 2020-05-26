@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 03b0aefabdb793cc723b1968a900a35800e04a01
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 59a8ab09561ab7cd23b4a37d4923e8cecac34705
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035046"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353886"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Usar a API do Microsoft Graph para trabalhar com o Project Roma
 
@@ -24,7 +24,7 @@ As atividades no Microsoft Graph permitem que você direcionar o compromisso do 
 
 - Um link profundo
 - Uma representação visual
-- Metadados de conteúdo que descrevem a atividade, usando [https://schema.org/](https://schema.org/) o vocabulário compartilhado
+- Metadados de conteúdo que descrevem a atividade, usando o [https://schema.org/](https://schema.org/) vocabulário compartilhado
 
 Quando uma sessão é criada por um aplicativo, um item de histórico é adicionado à atividade para refletir o período de envolvimento do usuário. Cada vez que um usuário reparticipa de uma atividade, um novo item de histórico é adicionado à atividade para acumular o envolvimento do usuário.
 
@@ -39,3 +39,5 @@ Você pode usar as seguintes APIs do Microsoft Graph para criar e recuperar ativ
 - [Criar ou substituir um item do histórico](../api/projectrome-put-historyitem.md)
 - [Excluir um item do histórico](../api/projectrome-delete-historyitem.md)
 
+## <a name="whats-new"></a>Novidades
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1908fcf1ae1edd8c64e1baaf9320d9b8631ea64b
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 1278c6f61ddb62165ef125acc810d5ae6dde0454
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345692"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353165"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
@@ -65,6 +65,8 @@ PATCH /subscriptions/{id}
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
+
+Para obter detalhes sobre como os erros são retornados, confira [respostas de erro][error-response].
 
 ## <a name="example"></a>Exemplo
 
@@ -131,6 +133,8 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2"
 }
 ```
+
+[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",

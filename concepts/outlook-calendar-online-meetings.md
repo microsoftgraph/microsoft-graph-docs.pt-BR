@@ -4,12 +4,12 @@ description: No Outlook, o organizador da reunião pode permitir que os convidad
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: a8329c433d51dc1d7f675e947b9a8ec4d437c80c
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: e17ffc92ae77324e855452b981e90ee4b4f3f3c5
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333544"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353242"
 ---
 # <a name="use-outlook-to-organize-or-attend-meetings-online"></a>Use o Outlook para organizar ou participar de reuniões online
 
@@ -472,7 +472,9 @@ Content-type: application/json
 
 
 ## <a name="see-also"></a>Confira também
-- Para saber mais sobre a interoperabilidade do Microsoft Teams com o Office 365, confira [configurações de coexistência e de atualização](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings).
+- Para obter informações sobre a interoperabilidade do Microsoft Teams com o Office 365, consulte:
+  - [Como o Exchange e o Microsoft Teams interagem](/microsoftteams/exchange-teams-interact)
+  - [Definir suas configurações de coexistência e atualização](/microsoftteams/setting-your-coexistence-and-upgrade-settings)
 - [Escolher uma API no Microsoft Graph para criar e ingressar em reuniões online](choose-online-meeting-api.md)
 - [Encontrar possíveis horários de reunião no calendário do Outlook](findmeetingtimes-example.md)
 - [Obter informações de disponibilidade de usuários e recursos](outlook-get-free-busy-schedule.md)

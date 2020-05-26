@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Priority
 ms.prod: education
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 90e8e2342b66a7768cecbc22c6e3a1591bc06a59
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 433fa802230e8b3b903b3bd5410fbe99fbb470f1
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969833"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345860"
 ---
 # <a name="education-api-overview"></a>Visão geral da API de educação
 
@@ -78,9 +78,6 @@ Está procurando a referência de API para esse serviço?
 - Experimente as APIs de educação no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Explore os seguintes exemplos relacionados ao setor educacional:
   - [Exemplo de SSO e lista de participantes em .NET](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
-  - [Exemplo de nó angular para SSO e Lista de participantes](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
-  - [Exemplo de SSO e Lista de participantes em Python](https://github.com/OfficeDev/O365-EDU-Python-Samples)
-  - [Exemplo de PHP para Lista de Participantes & de SSO](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
   - [Exemplo de APIs de gerenciamento de perfil](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
 
 

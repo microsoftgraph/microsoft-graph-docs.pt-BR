@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 2c61619d82484c41f4201f64e6be3849209f5799
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 8ce81955a4436f65d0833d3b4f9301bb44c62a3f
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345832"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353270"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -70,6 +70,8 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
+Para obter detalhes sobre como os erros são retornados, confira [respostas de erro][error-response].
+
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
@@ -112,6 +114,8 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+[error-response]: /graph/errors
 
 <!--
 {

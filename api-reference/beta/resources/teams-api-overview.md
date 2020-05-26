@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 3771a9e62a317e292b8d2a821ecb21e6b354d8af
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
-ms.translationtype: HT
+ms.openlocfilehash: 34f5186e9933f5edcd8a91b1cb95b21b6deb4a50
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962328"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353900"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -114,6 +114,9 @@ Ao pesquisar novas mensagens, você deve especificar um intervalo de datas onde 
 As sondagem está executando uma operação OBTER em um recurso repetidamente para ver se o recurso foi alterado. Você tem permissão para obter o mesmo recurso várias vezes por dia, desde que não seja uma sondagem. Por exemplo, está tudo bem se você usar OBTER /me/joinedTeams toda vez que o usuário visita/atualiza sua página da web, mas não é certo usar OBTER /me/joinedTeams em um loop a cada 30 segundos para atualizar essa página da web.
 
 Os aplicativos que não seguem esses requisitos de sondagem serão considerados violações de [termos de uso das APIs da Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use). A violação destes Termos da API pode resultar [suspensão](/graph/throttling)ou no cancelamento do uso das APIs da Microsoft.
+
+## <a name="whats-new"></a>Novidades
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
 ## <a name="see-also"></a>Confira também
 
