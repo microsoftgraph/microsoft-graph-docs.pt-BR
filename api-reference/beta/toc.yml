@@ -1010,7 +1010,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
-      - name: Reserva de clientes
+      - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: Visão geral
@@ -10150,7 +10150,7 @@ items:
       - name: Observações
         displayName: OneNote
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onenote-api-overview.md
           - name: Observações
             href: resources/onenote.md
@@ -10240,9 +10240,9 @@ items:
             items:
               - name: Obter recurso
                 href: api/resource-get.md
-      - name: Notificações
+      - name: Notificações (visualização)
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/notifications-api-overview.md
           - name: Notificação
             href: resources/projectrome-notification.md
