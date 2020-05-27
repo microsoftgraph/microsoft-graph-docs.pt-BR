@@ -4,13 +4,13 @@ description: Representa as permissões delegadas (escopos de OAuth 2,0) que fora
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: bd88f0e7f323b3408e7552148db032c53bd03e94
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: psignoret
+ms.openlocfilehash: 39401f1708e8e27443348a766f171680fbd9efd7
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290108"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383746"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>tipo de recurso oAuth2PermissionGrant
 
@@ -24,7 +24,7 @@ Conceder permissões delegadas podem ser criadas como resultado de um usuário q
 
 As permissões delegadas às vezes são chamadas de "escopos de OAuth 2,0" ou "escopos".
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|

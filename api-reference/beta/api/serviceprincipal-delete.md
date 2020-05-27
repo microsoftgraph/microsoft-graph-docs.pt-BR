@@ -4,13 +4,13 @@ description: Exclua o servicePrincipalName.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: f42a7bf4f4b9ddf4e0bb4161f602c48a76ced739
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: ec422e251f65b3a0ead4a1d22129cfc0c09be3d6
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335618"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383417"
 ---
 # <a name="delete-serviceprincipal"></a>Excluir o servicePrincipalName
 

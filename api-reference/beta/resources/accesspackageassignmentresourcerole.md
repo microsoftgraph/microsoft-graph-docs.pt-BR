@@ -5,25 +5,26 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c9eddff042af5b2cd724e87e3438f398e8d68c19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6ef0827736d16f1dbf3aedfb664467011e75e7b2
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508538"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383774"
 ---
 # <a name="accesspackageassignmentresourcerole-resource-type"></a>tipo de recurso accessPackageAssignmentResourceRole
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma função de recurso de atribuição de pacote do Access indica a função específica do recurso que foi atribuída a um assunto por meio de uma atribuição de pacote do Access.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
+| [Obter accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | Recupere um objeto accessPackageAssignmentResourceRole. |
 | [Listar accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | coleção [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) | Recupere uma lista de objetos accessPackageAssignmentResourceRole. |
 
 ## <a name="properties"></a>Propriedades
@@ -32,7 +33,7 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma funç
 |:-------------|:------------|:------------|
 |id|String| Somente leitura.|
 |originid|String|Um identificador exclusivo relativo ao sistema de origem. |
-|originSystem|String|O sistema em que a atribuição de função deve ser criada para uma atribuição de pacote de acesso.|
+|originSystem|String|O sistema em que a atribuição de função deve ser criada ou criada para uma atribuição de pacote de acesso, como `SharePointOnline` .|
 |status|String|O valor é `Fulfilled` quando a atribuição de pacote de acesso foi entregue ao sistema de origem.|
 
 ## <a name="relationships"></a>Relações

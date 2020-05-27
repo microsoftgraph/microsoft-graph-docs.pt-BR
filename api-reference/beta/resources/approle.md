@@ -4,13 +4,13 @@ description: Representa uma função de aplicativo.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: fe3753a0743a5cf1faac84b4fb102e1ffd702fed
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: psignoret
+ms.openlocfilehash: 8505380b50e32e9c996f960ab2343efa7e372e4a
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291010"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383767"
 ---
 # <a name="approle-resource-type"></a>tipo de recurso appRole
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0ba846a7e5dc407db52cf4f343444cb7f84fd5f6
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: c3d2a732bdc8ecc9fc0b4efded56f4d9751c8d11
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345195"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383508"
 ---
 # <a name="list-accesspackageassignmentpolicies"></a>Listar accessPackageAssignmentPolicies
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Gerenciamento de direitos do Azure ad](../resources/entitlementmanagement-root.md), recupere uma lista de objetos [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .   A lista resultante inclui todas as políticas de atribuição às quais o chamador tem acesso para leitura, entre todos os catálogos e pacotes de acesso.
+No [Gerenciamento de direitos do Azure ad](../resources/entitlementmanagement-root.md), recupere uma lista de objetos [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) . Se o usuário delegado estiver em uma função de diretório, a lista resultante incluirá todas as políticas de atribuição que o chamador tem acesso para ler, entre todos os catálogos e pacotes de acesso.  Se o usuário delegado for um Gerenciador de pacotes do Access ou proprietário do catálogo, ele deverá recuperar as políticas para os pacotes do Access que eles podem ler com o [accessPackages de lista](accesspackage-list.md) incluindo `$expand=accessPackageAssignmentPolicies` como um parâmetro de consulta.
 
 ## <a name="permissions"></a>Permissões
 

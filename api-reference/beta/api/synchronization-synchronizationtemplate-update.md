@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: afc5e0e557f89866f14507314f3673d92df76d7e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 838a2b170687118927a947a7320134c0c3adab7f
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471128"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383641"
 ---
 # <a name="update-synchronizationtemplate"></a>Atualizar synchronizationtemplate
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ### <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT application/{id}/synchronization/templates/{templateId}
+PATCH application/{id}/synchronization/templates/{templateId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -5,20 +5,22 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 7e255a68d46e810d22e26d167dbe3ef5a6714496
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: ce8572f3f71a64a41f02b33da51c35132d162201
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331315"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383751"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhar com a API de gerenciamento de qualificação do Azure AD
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure Active Directory (Azure AD) o gerenciamento de direitos pode ajudá-lo a gerenciar o acesso a grupos, aplicativos e sites do SharePoint Online para usuários internos, bem como usuários de fora da sua organização.
 
-Ao criar pacotes do Access com as funções que os usuários precisam ter entre esses recursos e definir políticas para quem pode solicitar um pacote do Access e por quanto tempo eles podem ter uma atribuição a um pacote do Access, você pode governar o ciclo de vida do acesso tanto interno quanto usuários externos.
+Ao criar pacotes do Access com as funções que os usuários precisam ter entre esses recursos e definir políticas para quem pode solicitar um pacote do Access e por quanto tempo eles podem ter uma atribuição a um pacote do Access, você pode governar o ciclo de vida do acesso para usuários internos e externos.
 
 Os tipos de recurso de gerenciamento de direito incluem:
 
@@ -62,6 +64,13 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | [Listar funções de recurso accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | coleção [accessPackageResourceRole](accesspackageresourcerole.md) | Recupere uma lista de objetos **accessPackageResourceRole** . |
 | [Listar accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md) | coleção [accessPackageResourceRequest](accesspackageresourcerequest.md) | Ler propriedades e relações de objetos **accessPackageResourceRequest** . |
 | [Criar accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Criar um novo objeto **accessPackageResourceRequest** . |
+
+## <a name="types"></a>Tipos
+
+- [requestorSettings](requestorsettings.md), [approvalSettings](approvalsettings.md) e [AssignmentReviewSettings](assignmentreviewsettings.md) -usados em um [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) para especificar quem pode solicitar, quem aprova e quem revisa as solicitações de atribuição de pacote de acesso nessa política.
+- [approvalStage](approvalstage.md) -usado no [approvalSettings](approvalsettings.md) para especificar os aprovadores primário, de backup e de escalonamento.
+- [userset](userset.md) subtipos [únicousuário](singleuser.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md)e [externalSponsors](externalsponsors.md) -usados em [requestorSettings](requestorsettings.md), [approvalStage](approvalstage.md) e [assignmentReviewSettings](assignmentreviewsettings.md).
+- [accessPackageSubject](accesspackagesubject.md) -usado no [accessPackageAssignment](accesspackageassignment.md) como um usuário do requerente que tem uma atribuição de pacote do Access.
 
 ## <a name="see-also"></a>Confira também
 

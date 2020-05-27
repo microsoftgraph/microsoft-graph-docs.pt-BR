@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 38ccc3094521283c6c496b1d0e35b97a6cf37199
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 2cf41a75f829b9b694b41d7fc0ea543ba6c39523
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353613"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383627"
 ---
 # <a name="failureinfo-resource-type"></a>tipo de recurso failureInfo
 
@@ -19,6 +19,13 @@ Namespace: microsoft.graph.callRecords
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa informações sobre o motivo pelo qual uma chamada ou parte de uma chamada falhou.
+
+A falha pode ser de dois tipos: 
+
+- Falha de configuração de chamada
+- Queda de chamada intermediário
+
+Se um ou mais fluxos de mídia tiverem qualquer uma dessas falhas, essa falha será propagada no nível do segmento. Se um ou mais segmentos tiverem qualquer uma dessas falhas, essa falha será propagada no nível da sessão.
 
 ## <a name="properties"></a>Propriedades
 

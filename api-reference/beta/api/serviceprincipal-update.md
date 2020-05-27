@@ -1,16 +1,16 @@
 ---
 title: Atualizar o servicePrincipalName
 description: Atualiza as propriedades do objeto servicePrincipalName.
-author: davidmu1
+author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fabb5eeda97945fbb510a5cd7fc91c212de5ee5d
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: be62c70b225cc7698a95c4765ba8e603af6226e9
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333430"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44382697"
 ---
 # <a name="update-serviceprincipal"></a>Atualizar o servicePrincipalName
 

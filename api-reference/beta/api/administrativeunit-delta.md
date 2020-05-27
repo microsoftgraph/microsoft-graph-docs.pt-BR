@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3db487f3b8583c0fc25ab5ef834d1e10479c0d35
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 0f449461fe204002daf0f65bbbb6b2db2af42086
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43510595"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383676"
 ---
 # <a name="administrativeunit-delta"></a>administrativeUnit: Delta
 
@@ -37,7 +37,7 @@ Para começar a controlar as alterações, faça uma solicitação que inclua a 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /administrativeunits/delta
+GET /administrativeUnits/delta
 ```
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
@@ -46,7 +46,7 @@ As alterações de controle provocam uma rodada de uma ou mais chamadas de funç
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | cadeia de caracteres | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
+| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `nextLink` URL da chamada de função **Delta** anterior, indicando que há mais alterações a serem controladas na mesma coleção de recursos. |
 
 ### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -69,7 +69,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `200 OK` código de resposta e um objeto da coleção [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou `deltaLink`. 
+Se bem-sucedido, este método retorna o `200 OK` código de resposta e um objeto da coleção [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou uma URL `deltaLink`. 
 
 - Se uma URL `nextLink` é retornada, existem páginas de dado adicionais a serem recuperadas na sessão. O **administrativeUnit** continua fazendo solicitações usando a `nextLink` URL até que uma `deltaLink` URL seja incluída na resposta.
 

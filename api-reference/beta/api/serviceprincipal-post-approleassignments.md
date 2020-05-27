@@ -4,13 +4,13 @@ description: Conceda uma atribuição de função de aplicativo a uma entidade d
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: f28dff8e697cba37897f0f4124c3f40e9fab5593
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 8e8bc455f8b04e4a78bfcad1795917350ec8b86b
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336031"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44382654"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>Conceder um appRoleAssignment a uma entidade de serviço
 

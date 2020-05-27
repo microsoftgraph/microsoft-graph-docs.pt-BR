@@ -4,13 +4,13 @@ description: Obtenha a lista de grupos e funções de diretório dos quais essa 
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 255afc7d16c1f4f663043f44dbeeca9c657297c8
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 68122fac4ede4a856f788e534f93dc476d77eac7
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333735"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383340"
 ---
 # <a name="serviceprincipal-getmemberobjects"></a>servicePrincipalName: getMemberObjects
 

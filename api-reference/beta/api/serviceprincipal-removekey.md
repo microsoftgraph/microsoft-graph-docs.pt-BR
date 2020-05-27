@@ -2,15 +2,15 @@
 title: 'servicePrincipalName: removeKey'
 description: Remover uma credencial de chave de um servicePrincipalName
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4cad5e893064a8680288753be457099a2f78450d
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 210e8b522d82c576c72cdcfe53e8e294b5888abe
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333413"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44382655"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipalName: removeKey
 
@@ -25,7 +25,7 @@ Remover uma credencial de chave de um [servicePrincipalName](../resources/servic
 
 Como parte da solicitação de validação para esse método, uma prova de posse de uma chave existente é verificada antes que a ação possa ser executada.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|

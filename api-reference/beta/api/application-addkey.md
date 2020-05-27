@@ -2,15 +2,15 @@
 title: 'aplicativo: addKey'
 description: Adicione uma credencial de chave a um aplicativo.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6f90f6dc952f7d699af426f3da40bf07b8c1f22e
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: c9fc8f97a4deed91013a0a5442b8d79e7b9d04e3
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333113"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383697"
 ---
 # <a name="application-addkey"></a>aplicativo: addKey
 
@@ -27,7 +27,7 @@ Como parte da solicitação de validação para esse método, uma prova de posse
 
 Os aplicativos que não têm certificados válidos existentes (nenhum certificado foi adicionado ainda, ou todos os certificados expiraram) não poderão usar essa ação de serviço. Você pode usar a operação [Atualizar aplicativo](../api/application-update.md) para executar uma atualização.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|

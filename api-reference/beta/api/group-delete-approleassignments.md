@@ -4,13 +4,13 @@ description: Excluir um appRoleAssignment que tenha sido concedido a um grupo.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 1d312ac2d2f5993fed1c77c53cfe3600aba7677e
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: psignoret
+ms.openlocfilehash: c4d5d6b1a15146d8bb02e27a1ca7e2a18c1852bb
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333161"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383730"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-group"></a>Excluir um appRoleAssignment concedido a um grupo
 

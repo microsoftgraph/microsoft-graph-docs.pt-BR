@@ -4,13 +4,13 @@ description: Representa as configurações de logon único do SAML.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 38fd3a9827f710d032502c71161446201447192f
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: sureshja
+ms.openlocfilehash: 60d7f28de54cd772ac440e6f72f61cd2bb08fe00
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290360"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383865"
 ---
 # <a name="samlsinglesignonsettings-resource-type"></a>tipo de recurso samlSingleSignOnSettings
 

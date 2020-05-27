@@ -4,13 +4,13 @@ description: Obtenha os grupos e funções de diretório dos quais essa entidade
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: fa3885224c44294d147fbf0ca15ce23492c4ee1b
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 73ea4b0c318f031c1850fa895102330bac54b767
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336772"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44382738"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>Listar os memberOf transitivos de servicePrincipalName
 

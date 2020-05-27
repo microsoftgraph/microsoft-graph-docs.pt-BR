@@ -4,13 +4,13 @@ description: Usado para gravar quando um usuário, grupo ou entidade de serviço
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 38f8cca5740da2cbd9807cd2411065a6bebda49c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: psignoret
+ms.openlocfilehash: c58b26c2441457f9a7a79e22a19080fff02fd7f8
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291003"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383760"
 ---
 # <a name="approleassignment-resource-type"></a>Tipo de recurso plannerAssignment
 

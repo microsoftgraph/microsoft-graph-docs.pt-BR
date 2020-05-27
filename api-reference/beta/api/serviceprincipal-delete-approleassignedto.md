@@ -4,13 +4,13 @@ description: Excluir um appRoleAssignment concedido para uma entidade de serviç
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 61016a0ba325d1b32212ad99c5b54429de4aa12f
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: cbb66a092a8d10aed2c063ac82b1ea19ca4dd1b1
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334028"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383438"
 ---
 # <a name="delete-an-approleassignment-granted-for-a-service-principal"></a>Excluir um appRoleAssignment concedido para uma entidade de serviço
 

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 06fe6ed015a7aa9e6d90a473e89750be058b236f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4696a0c90e15eefe6e4dc9135438b911d8b6b591
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442023"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383466"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Criar accessPackageAssignmentRequest
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,19 +49,19 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 No corpo da solicitação, forneça uma representação JSON do objeto [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) .
 
-Para criar uma atribuição para um usuário, o valor da propriedade **RequestType** é `AdminAdd`, e a propriedade **accessPackageAssignment** contém o `targetId` do usuário que está sendo atribuído, a propriedade **assignmentPolicyId** que identifica o [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)e a propriedade **accessPackageId** identificando o [accessPackage](../resources/accesspackage.md).
+Para criar uma atribuição para um usuário, o valor da propriedade **RequestType** é `AdminAdd` , e a propriedade **accessPackageAssignment** contém o `targetId` do usuário que está sendo atribuído, a propriedade **assignmentPolicyId** que identifica o [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)e a propriedade **accessPackageId** identificando o [accessPackage](../resources/accesspackage.md).
 
-Para remover uma atribuição, o valor da propriedade **RequestType** é `AdminRemove`, e a propriedade **accessPackageAssignment** contém a propriedade **ID** que identifica o [accessPackageAssignment](../resources/accesspackageassignment.md) que está sendo removido.
+Para remover uma atribuição, o valor da propriedade **RequestType** é `AdminRemove` , e a propriedade **accessPackageAssignment** contém a propriedade **ID** que identifica o [accessPackageAssignment](../resources/accesspackageassignment.md) que está sendo removido.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta de série 200 e um novo objeto [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta de série 200 e um novo objeto [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) no corpo da resposta.  Se esta for uma `AdminAdd` solicitação, posteriormente, um [accessPackageAssignment](../resources/accesspackageassignment.md) e, se necessário, um [accessPackageSubject](../resources/accesspackagesubject.md) também será criado. Você pode localizar aqueles usando os parâmetros de consulta ao [listar accessPackageAssignments](accesspackageassignment-list.md).
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação de uma atribuição direta.  O valor de **TargetId** é a ID de objeto de um usuário que está sendo atribuído, o valor do **accessPackageId** é o pacote de acesso desejado e o valor de **assignmentPolicyId** é uma política de atribuição direta no pacote de acesso.
+Veja a seguir um exemplo da solicitação de uma atribuição direta, na qual o administrador está solicitando a criação de uma atribuição para o usuário. Como o [accessPackageSubject](../resources/accesspackagesubject.md) pode ainda não existir, o valor de **TargetId** é a ID de objeto do usuário que está sendo atribuído, o valor do **accessPackageId** é o pacote de acesso desejado para esse usuário, e o valor de **assignmentPolicyId** é uma política de atribuição direta no pacote de acesso.
  
 
 # <a name="http"></a>[HTTP](#tab/http)

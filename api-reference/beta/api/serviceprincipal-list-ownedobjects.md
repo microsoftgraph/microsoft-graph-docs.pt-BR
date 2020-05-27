@@ -4,13 +4,13 @@ description: Recupere uma lista de objetos pertencentes ao servicePrincipalName.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: af18330a2f77f819b8b8f4418bd2b2017546edcb
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 2af06060eda49f904872dc7cc4d134db1d6dd34d
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336429"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44382696"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipalName: listar ownedObjects
 

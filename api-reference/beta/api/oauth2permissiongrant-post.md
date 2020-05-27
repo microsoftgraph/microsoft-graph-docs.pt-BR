@@ -4,13 +4,13 @@ description: Crie um objeto oAuth2PermissionGrant, representando uma concessão 
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: eda8ea061b8b36669ecfa9adf2f9c9da4ccfd0d9
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: psignoret
+ms.openlocfilehash: cde41b8193d535a4911c56464a539f518aca570f
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333672"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383660"
 ---
 # <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>Criar uma concessão de permissão delegada (oAuth2PermissionGrant)
 

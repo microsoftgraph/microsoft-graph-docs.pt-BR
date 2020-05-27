@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: da26d23027cd77e986a40c66cb6e7acbdff08ef8
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 4f218e01cf389668ea1f7b680c2c58af4afa9094
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345657"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383489"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>Obter accessPackageAssignmentRequest
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar o pacote do Access que foi solicitado, inclua `$expand=accessPackage` na consulta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar o pacote do Access que foi solicitado, inclua `$expand=accessPackage` na consulta. Para recuperar a atribuição resultante, inclua `$expand=accessPackageAssignment` na consulta.  Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

@@ -4,13 +4,13 @@ description: Recupere a lista de atribuições de função de aplicativo concedi
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: b16b48affc8d4ba07305537ed805294f8b2475e3
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+author: sureshja
+ms.openlocfilehash: b9d18d0b0d2b069847a564c8543ade0b73559af9
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345916"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383249"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>Listar appRoleAssignments concedidos a uma entidade de serviço
 

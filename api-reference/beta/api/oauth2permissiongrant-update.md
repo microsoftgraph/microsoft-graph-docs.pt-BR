@@ -4,13 +4,13 @@ description: Atualizar as propriedades de um oAuth2PermissionGrant, representand
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 970ce10f41b102088932e98578b98a000a5ca4fa
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: psignoret
+ms.openlocfilehash: 1d9aff9e74168c5077350def5fcd230e5e75bbd8
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289833"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383648"
 ---
 # <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>Atualizar uma concessão de permissão delegada (oAuth2PermissionGrant)
 

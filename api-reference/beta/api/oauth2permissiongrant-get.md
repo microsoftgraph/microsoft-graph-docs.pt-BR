@@ -4,13 +4,13 @@ description: Recupere as propriedades e os relacionamentos de um único oAuth2Pe
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: ccc7fd1ab8ce060eea46a3bbb7db079a06ec9b28
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: psignoret
+ms.openlocfilehash: 395b3d71e4b04078e972e114f9854b17ed7ada19
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290199"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383653"
 ---
 # <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>Obter uma concessão de permissão delegada (oAuth2PermissionGrant)
 

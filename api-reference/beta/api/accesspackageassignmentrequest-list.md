@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5f0c338c5cea44f6ef979495e929d757779f4ad7
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: c4e73ccbd556ad63cc6adf92e343cdaa9c4c3c4b
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345650"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383487"
 ---
 # <a name="list-accesspackageassignmentrequests"></a>Listar accessPackageAssignmentRequests
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar o pacote de acesso de cada solicitação, inclua `$expand=accessPackage` na consulta.  Para recuperar apenas as solicitações para um pacote de acesso específico, inclua na consulta um filtro, como `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` .
+Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar o pacote de acesso de cada solicitação, inclua `$expand=accessPackage` na consulta.  Para recuperar apenas as solicitações para um pacote de acesso específico, inclua na consulta um filtro, como `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` .  Para recuperar a atribuição resultante, inclua `$expand=accessPackageAssignment` na consulta.
 Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

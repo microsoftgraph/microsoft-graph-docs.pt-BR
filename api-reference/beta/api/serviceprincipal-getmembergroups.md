@@ -4,13 +4,13 @@ description: Obtenha a lista de grupos dos quais essa entidade de serviço é me
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 9133f3ba8934a03fb29cb10843f49afae1175c71
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 31a91f3fb7551d95e545c2dbcb3d28dfe2f05311
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333763"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383396"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipalName: getMemberGroups
 
