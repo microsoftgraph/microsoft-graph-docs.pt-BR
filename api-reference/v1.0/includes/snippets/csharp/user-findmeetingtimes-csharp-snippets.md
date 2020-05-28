@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9215f331441e5d71309fa567130b0eefc85f3376
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 28368b5c21d736e368387bfda3d7b74d0ce57866
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "37402932"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44384360"
 ---
 ```csharp
 
@@ -41,7 +41,7 @@ var locationConstraint = new LocationConstraint
 var timeConstraint = new TimeConstraint
 {
     ActivityDomain = ActivityDomain.Work,
-    Timeslots = new List<TimeSlot>()
+    TimeSlots = new List<TimeSlot>()
     {
         new TimeSlot
         {
