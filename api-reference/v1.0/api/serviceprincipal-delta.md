@@ -4,13 +4,13 @@ description: Obtenha entidades de serviço recém-criadas, atualizadas ou exclu�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 8ebd937254bf718263426a4d5bcdad058779aa1e
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 19d7e364c5a3c8a6ea7aa9839ec53320b8c4c434
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334106"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383557"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipalName: Delta
 
