@@ -4,13 +4,13 @@ description: Representa as permissões delegadas (escopos de OAuth 2,0) que fora
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: edf4ff7ed44e9b084ca2206b24fed0e18b5c581c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: psignoret
+ms.openlocfilehash: f04bf5b3e59f4554e5320d9b97a3b8ba88e22152
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290164"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383634"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>tipo de recurso oAuth2PermissionGrant
 

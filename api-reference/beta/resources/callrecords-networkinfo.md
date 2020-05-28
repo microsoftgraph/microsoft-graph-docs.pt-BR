@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 95686742ad52663d518659d1f25b1bc74b9014ca
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 5fead75d9d1ea076990daf42f8818bca6fd2d83a
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353767"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408336"
 ---
 # <a name="networkinfo-resource-type"></a>tipo de recurso networkInfo
 
@@ -39,7 +39,7 @@ Representa informações sobre a rede usada em uma chamada.
 |relayPort|Int32|Número de porta de rede alocado no servidor de Media Relay pelo ponto de extremidade de mídia.|
 |sentQualityEventRatio|Duplo|Fração da chamada em que o ponto de extremidade de mídia detectou que a rede estava causando baixa qualidade do áudio enviado.|
 |-|String|Sub-rede usada para fluxo de mídia pelo ponto de extremidade de mídia.|
-|wifiBand|Microsoft. Graph. callRecords. wifiBand|Banda WiFi usada pelo ponto de extremidade de mídia. Os valores possíveis são: `unknown`, `frequency24GHz`, `frequency50GHz`.|
+|wifiBand|Microsoft. Graph. callRecords. wifiBand|Banda WiFi usada pelo ponto de extremidade de mídia. Os valores possíveis são: `unknown`, `frequency24GHz`, `frequency50GHz`, `frequency60GHz`, `unknownFutureValue`.|
 |wifiBatteryCharge|Int32|Carga da bateria restante estimada em porcentagem relatada pelo ponto de extremidade de mídia.|
 |wifiChannel|Int32|O canal WiFi usado pelo ponto de extremidade de mídia.|
 |wifiMicrosoftDriver|String|Nome do driver do Microsoft WiFi usado pelo ponto de extremidade de mídia. O valor pode ser localizado com base no idioma usado pelo ponto de extremidade.|

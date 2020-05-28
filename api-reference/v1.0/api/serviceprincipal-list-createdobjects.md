@@ -4,13 +4,13 @@ description: Recupere uma lista de objetos directoryobject.
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: f4f9ba34e1cfbc45ee60c2f6e22c726b96957e75
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: b3267b4234b6bf759458474e73bfc93027245b69
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336043"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383978"
 ---
 # <a name="serviceprincipal-list-createdobjects"></a>servicePrincipalName: listar createdObjects
 

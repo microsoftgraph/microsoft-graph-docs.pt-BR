@@ -4,13 +4,13 @@ description: Conceda a um usuário uma atribuição de função de aplicativo.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: fbee6ff1e3e239fd530b39f4010a7a73faf71026
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: psignoret
+ms.openlocfilehash: 44007dbd51446d80e962a6e0485c44b7cc2d6b24
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333378"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383721"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>Conceder um appRoleAssignment a um usuário
 

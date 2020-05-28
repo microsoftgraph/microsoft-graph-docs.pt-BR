@@ -1,16 +1,16 @@
 ---
 title: Criar o servicePrincipalName
 description: Criar um novo objeto servicePrincipalName.
-author: davidmu1
+author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ec647e98f7c7810f560e454acf0eaccfbe5990af
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 65ca715730dde77d50e0ed45f14615e6c211a745
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335835"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383928"
 ---
 # <a name="create-serviceprincipal"></a>Criar o servicePrincipalName
 

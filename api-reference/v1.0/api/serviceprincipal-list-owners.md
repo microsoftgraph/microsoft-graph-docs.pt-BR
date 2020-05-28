@@ -4,13 +4,13 @@ description: Recupere uma lista de proprietários do servicePrincipalName.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 0818c9ef7ee0924fb782cf61b7e01f1aac0f9628
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: a0da9f2bbf0fb3b42c7077672a3cfa10c0b2eb5b
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333938"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383949"
 ---
 # <a name="serviceprincipals-list-owners"></a>servicePrincipalName: listar proprietários
 

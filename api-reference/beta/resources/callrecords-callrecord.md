@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e2fba1240ca3a5679844d4ee5a7030eb60a3528f
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 68eeb5fbdf110aa4a8f97c7bf4246897feb22133
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353627"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408343"
 ---
 # <a name="callrecord-resource-type"></a>tipo de recurso callRecord
 
@@ -20,11 +20,12 @@ Namespace: microsoft.graph.callRecords
 
 Representa uma única chamada ponto a ponto ou uma chamada de grupo entre vários participantes, às vezes chamada de reunião online.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Obter callRecord](../api/callrecords-callrecord-get.md) | [Microsoft. Graph. callRecords. callRecord](callrecords-callrecord.md) | Leia as propriedades e os relacionamentos do objeto callRecord. |
+
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
@@ -37,10 +38,10 @@ Representa uma única chamada ponto a ponto ou uma chamada de grupo entre vário
 |organizer|[identitySet](identityset.md)|A identidade da parte de organização.|
 |participantes|Coleção [identitySet](identityset.md)|Lista de identidades distintas envolvidas na chamada.|
 |startDateTime|DateTimeOffset|Hora UTC quando o primeiro usuário ingressou na chamada. O tipo DatetimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|type|Microsoft. Graph. callRecords. CallType|Indica o tipo da chamada. Os valores possíveis são: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
+|tipo|Microsoft. Graph. callRecords. CallType|Indica o tipo da chamada. Os valores possíveis são: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
 |versão|Int64|Versão de aumento monotônico do registro de chamada. Registros de chamada de versão superior com a mesma ID incluem dados adicionais comparados à versão inferior.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|

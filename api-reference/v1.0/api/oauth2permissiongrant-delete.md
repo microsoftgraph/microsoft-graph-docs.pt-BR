@@ -4,13 +4,13 @@ description: Excluir um oAuth2PermissionGrant, representando uma concessão de p
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 4749e23e9ab77fad50b1a64d26720b108bf5b99f
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: psignoret
+ms.openlocfilehash: cfe6ac41b3877bf542b496b1e228ee77aec027d4
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336087"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383812"
 ---
 # <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a>Excluir uma concessão de permissão delegada (oAuth2PermissionGrant)
 

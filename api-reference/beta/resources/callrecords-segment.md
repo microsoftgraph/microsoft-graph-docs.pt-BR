@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ddb6645e65f2f055056c5cde38e976f94ad0af87
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 168ce4053899e49cee2b96ccf09e61c17a2c7f93
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394657"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408323"
 ---
 # <a name="segment-resource-type"></a>tipo de recurso Segment
 
-Namespace: Microsoft. Graph. callRecords
+Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ Representa uma parte de uma comunicação do usuário ou uma comunicação de re
 
 ## <a name="methods"></a>Methods
 
-Não existem métodos para acessar diretamente os segmentos. Use a API [Get callRecord](../api/callrecords-callrecord-get.md) com `$expand=sessions($expand=segments)` para obter os segmentos de um [callRecord](callrecords-callrecord.md).
+Não existem métodos para acessar diretamente os segmentos. Use a API [Get callRecord](../api/callrecords-callrecord-get.md) com `$expand=sessions($expand=segments)` ou a API de [sessão de lista](../api/callrecords-session-list.md) com `$expand=segments` para obter os segmentos de um [callRecord](callrecords-callrecord.md).
 
 ## <a name="properties"></a>Propriedades
 

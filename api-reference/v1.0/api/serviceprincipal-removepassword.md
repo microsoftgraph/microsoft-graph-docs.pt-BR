@@ -2,15 +2,15 @@
 title: 'servicePrincipalName: removePassword'
 description: Remover uma senha de um servicePrincipalName
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a9538448ab43d1d05ab9a904958dafe42eb65e02
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 937feb0e414f1e3a6263bc2e54e440898431d130
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336574"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383921"
 ---
 # <a name="serviceprincipal-removepassword"></a>servicePrincipalName: removePassword
 

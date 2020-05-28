@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ef9cca7194adeeea1c3fc52c02e4b3d515afe2c3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4cf94b24204b29524010161abf05e6f6747e2d5e
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396094"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408287"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -60,7 +60,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança, incluindo grupos do Office 365. |
 |visibility|String|Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: **Private**, **Public** ou vazio (que é interpretado como **Public**).|
 
-Como o recurso de **grupo** suporta [extensões](/graph/extensibility-overview), você pode usar `PATCH` a operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância de **grupo** existente.
+Como o recurso de **grupo** suporta [extensões](/graph/extensibility-overview), você pode usar a `PATCH` operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância de **grupo** existente.
 
 
 > **Observação:**
@@ -75,13 +75,13 @@ Como o recurso de **grupo** suporta [extensões](/graph/extensibility-overview),
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
+### <a name="example-1-update-display-name-and-description-of-a-group"></a>Exemplo 1: atualizar o nome de exibição e a descrição de um grupo
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_group"
@@ -95,28 +95,45 @@ Content-length: 211
 {
   "description": "description-value",
   "displayName": "displayName-value",
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "mail": "mail-value",
-  "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a>Resposta
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+Este é um exemplo de resposta.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 
----
+```http
+HTTP/1.1 204 No Content
+```
+### <a name="example-2-apply-sensitivity-label-to-an-office-365-group"></a>Exemplo 2: Aplicar rótulo de confidencialidade a um grupo do Office 365
+#### <a name="request"></a>Solicitação
 
+Você pode obter a ID do rótulo que você deseja aplicar a um grupo do Office 365 usando [rótulo de lista](informationprotectionpolicy-list-labels.md). Em seguida, você pode atualizar a propriedade [assignedLabels](../resources/assignedlabel.md) do grupo com a ID de rótulo. 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_group"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/groups/{id}
+Content-type: application/json
+Content-length: 211
+
+{
+  "assignedLabels": 
+  [
+    {
+        "labelId" : "45cd0c48-c540-4358-ad79-a3658cdc5b88"
+    }
+  ]
+}
+```
 
 #### <a name="response"></a>Resposta
 

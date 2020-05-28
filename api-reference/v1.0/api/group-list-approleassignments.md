@@ -4,13 +4,13 @@ description: Recupere a lista de appRoleAssignments que foram concedidas a um gr
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 947271309c2e6aabc1dcce0760770eb3f2df7c12
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: psignoret
+ms.openlocfilehash: e522bb2cb070bf42fb5d1e5ca291d2449941ea3b
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336535"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383837"
 ---
 # <a name="list-approleassignments-granted-to-a-group"></a>Listar appRoleAssignments concedidos a um grupo
 

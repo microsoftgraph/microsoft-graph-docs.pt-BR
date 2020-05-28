@@ -1,16 +1,16 @@
 ---
 title: Remover proprietário
 description: Remover um proprietário de um servicePrincipalName.
-author: davidmu1
+author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3999d5d193e4084b57f59fc2c5ca4fa647fa29a4
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 894eb238d5ea663b4fc9b1224e956e22e7e81dbe
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334162"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383571"
 ---
 # <a name="remove-owner"></a>Remover proprietário
 

@@ -2,15 +2,15 @@
 title: 'servicePrincipalName: addKey'
 description: Adicione uma credencial de chave a um servicePrincipalName.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a4193d8f879e254c2a276a3f63416c8a3da6b4b1
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 616d7d32419b19ec49da57771768ccffae88217b
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334446"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383600"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipalName: addKey
 
@@ -25,7 +25,7 @@ Como parte da solicitação de validação para esse método, uma prova de posse
 
 Os servicePrincipalName que não têm certificados válidos existentes (por exemplo: nenhum certificado foi adicionado ainda, ou todos os certificados expiraram) não poderão usar essa ação de serviço. [Atualize o servicePrincipalName](../api/serviceprincipal-update.md) pode ser usado para executar uma atualização.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|

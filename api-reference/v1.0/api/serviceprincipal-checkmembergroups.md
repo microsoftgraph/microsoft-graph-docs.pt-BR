@@ -4,13 +4,13 @@ description: Verifique se há associação na lista de grupos especificada. Reto
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: bf838a9e13e610ea25d084cbee59c7ad59125ced
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 74aca8149496509d91213a5866bf1acd053079fb
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334365"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383599"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipalName: checkMemberGroups
 

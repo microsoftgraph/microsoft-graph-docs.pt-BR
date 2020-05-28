@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8c1af52332c5650123d604b8e405bf88d0c2f965
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: cf3be35bd7b1ee1a4ec6185199c3cd5ab3b9b7fc
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353117"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408280"
 ---
 # <a name="session-resource-type"></a>tipo de recurso de sessão
 
@@ -20,9 +20,12 @@ Namespace: microsoft.graph.callRecords
 
 Representa uma comunicação do usuário ou uma comunicação de reunião do usuário no caso de uma chamada em conferência.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
-Não existem métodos para acessar diretamente as sessões. Use a API [Get callRecord](../api/callrecords-callrecord-get.md) com `$expand=sessions` para obter as sessões para um [callRecord](callrecords-callrecord.md).
+| Método       | Tipo de retorno | Descrição |
+|:-------------|:------------|:------------|
+| [Listar sessões](../api/callrecords-session-list.md) | coleção [Microsoft. Graph. callRecords. Session](callrecords-session.md) | Recupere a lista de sessões associadas a um objeto [callRecord](callrecords-callrecord.md) .
+ |
 
 ## <a name="properties"></a>Propriedades
 
@@ -37,7 +40,7 @@ Não existem métodos para acessar diretamente as sessões. Use a API [Get callR
 |endDateTime|DateTimeOffset|Hora UTC quando o último usuário saiu da sessão. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|

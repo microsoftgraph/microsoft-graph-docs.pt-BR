@@ -4,13 +4,13 @@ description: Recupere uma lista de objetos oAuth2PermissionGrant, representando 
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: acd17e53c0115fa64e1ad34ece8393e906de8b44
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 8ee8df176c435ea24982334a8580d257c9da2d16
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335520"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383963"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 

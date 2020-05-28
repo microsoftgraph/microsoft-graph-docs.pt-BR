@@ -1,16 +1,16 @@
 ---
 title: Obter um servicePrincipal
 description: Recuperar as propriedades e as relações do objeto serviceprincipal.
-author: davidmu1
+author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0e1a089242655b5d7005b0bd15b0d15a3a4110ea
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: cceabbbeb9691e4a506fefe838291365ead8ea00
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334044"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383550"
 ---
 # <a name="get-serviceprincipal"></a>Obter um servicePrincipal
 

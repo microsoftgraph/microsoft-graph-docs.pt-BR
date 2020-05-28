@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e8d4a28916278f51e377bf18b68f91f98fc47001
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: dbeb2b752da552fafb994e8593fbd9c4ce953d09
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345930"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408308"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -406,6 +406,10 @@ Nenhum.
 |Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_CallRecords.Read.All_|Ler todos os registros de chamadas|Permite que o aplicativo leia registros de chamadas de todas as chamadas e reuniões on-line sem um usuário conectado.|Sim|
+
+### <a name="remarks"></a>Comentários
+
+A permissão _CallRecords. Read. All_ concede a um aplicativo acesso privilegiado ao [CallRecords](/graph/api/resources/callrecords-callrecord) para cada chamada e reunião online dentro da sua organização, incluindo chamadas de e para números de telefone externos. Isso inclui detalhes potencialmente confidenciais sobre quem participou da chamada, bem como informações técnicas referentes a essas chamadas e reuniões que podem ser usadas para a solução de problemas de rede, como endereços IP, detalhes de dispositivos e outras informações de rede.
 
 > **Importante:** o critério deve ser usado ao conceder essa permissão aos aplicativos. Os registros de chamadas podem fornecer informações da operação dos seus negócios e, portanto, podem ser um alvo para agentes mal-intencionados. Conceda essa permissão apenas aos aplicativos que você confia para atenderem aos seus requisitos de proteção de dados.
 
@@ -1282,6 +1286,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Policy.Read.All_ | Ler as políticas da sua organização | Permite ao aplicativo ler as políticas da sua organização em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.ApplicationConfiguration_ | Leia e escreva as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia e grave as políticas de configuração dos aplicativos da sua organização em nome do usuário conectado. | Sim | Não |
+| _Policy. ReadWrite. AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo Leia e grave as políticas de fluxo de autenticação em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.ConditionalAccess_ | Ler e gravar as políticas de acesso condicional da sua organização | Permite que o aplicativo leia e grave todas as políticas de acesso condicional em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.FeatureRollout_ | Ler e gravar as políticas de implantação de novos recursos da sua organização | Permite que o aplicativo leia e grave todas as políticas de implantação de novos recursos em nome do usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim | Não |
 | _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas TrustFramework (Estrutura de Confiança) da sua organização | Permite que o aplicativo leia e grave todas as políticas de TrustFramework da sua organização em nome do usuário conectado. | Sim | Não |
@@ -1292,6 +1297,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Policy.Read.All_ | Leia as políticas da sua organização | Permite que o aplicativo leia todas as políticas da sua organização sem um usuário conectado. | Sim |
 | _Policy.Read.ApplicationConfiguration_ | Leia as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia todas as políticas de configuração dos aplicativos da sua organização sem um usuário conectado. | Sim |
+| _Policy. ReadWrite. AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo Leia e grave as políticas de fluxo de autenticação para o locatário, sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.FeatureRollout_ | Políticas de distribuição de recursos de leitura e gravação | Permite que o aplicativo leia e grave todas as políticas de distribuição de recursos sem um usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim |
 | _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas da estrutura de confiança da sua organização | Permite que o aplicativo leia e grave todas as políticas da estrutura de confiança da sua organização sem um usuário conectado. | Sim |
 
@@ -1303,6 +1309,7 @@ Os seguintes usos são válidos para permissões delegadas e permissões de apli
 * _Policy.Read.All_: Ler as políticas da estrutura de confiança da sua organização (`GET /beta/trustFramework/policies`)
 * _Policy.Read.All_: Ler as políticas de distribuição de recursos da sua organização (`GET /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.ApplicationConfiguration: leia e grave as políticas de configuração dos aplicativos da sua organização (`POST /beta/policies/tokenLifetimePolicies`)
+* _Policy. ReadWrite. AuthenticationFlows_: ler e gravar a política de fluxos de autenticação da sua organização ( `PATCH /beta/policies/authenticationFlowsPolicy` )
 * _Policy.ReadWrite.ConditionalAccess_: Leia e escreva as políticas de acesso condicional da sua organização (`POST /beta/identity/conditionalAccess/policies`)
 * _Policy.ReadWrite.FeatureRollout_: Ler e gravar todas as políticas de distribuição de recursos da sua organização (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_: Leitura e gravação de todas as políticas da estrutura de confiança da sua organização (`POST /beta/trustFramework/policies`)
@@ -1522,7 +1529,7 @@ Essas permissões de sites só são válidas para contas corporativas ou de estu
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _Sites.Read.All_: Ler as listas no site raiz do SharePoint (`GET /v1.0/sites/root/lists`)
 * _Sites.ReadWrite.All_: Criar novos itens de lista em uma lista do SharePoint (`POST /v1.0/sites/root/lists/123/items`)
@@ -1701,7 +1708,7 @@ Para que um aplicativo leia ou grave todos os acordos ou aceitações de acordos
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 Os seguintes usos são válidos para permissões delegadas:
 
 * _Agreement.Read.All_: ler todos os acordos de termos de uso (`GET /beta/agreements`)

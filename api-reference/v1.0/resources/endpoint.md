@@ -4,13 +4,13 @@ description: Os pontos de extremidade representam URLs para recursos associados 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: bd44b9f7ad9313a1d7750b8ae9806dffb8c8c345
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: yyuank
+ms.openlocfilehash: 46c43087ef31537f60a2079e72be71378c140612
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290136"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383669"
 ---
 # <a name="endpoint-resource-type"></a>Tipo de recurso de ponto de extremidade
 
