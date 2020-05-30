@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 538a7a2011433ae1841eba48f4cefafbbeffd50c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: c7e53c228db455c014f2568d3c278b42bbe38a1b
+ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290058"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44413543"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -137,6 +137,8 @@ Esse recurso permite:
 |department|String|O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.|
 |displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
 |employeeId|String|O identificador de funcionário atribuído ao usuário pela organização. Com suporte para $filter.|
+|externalUserState|String|Para um usuário externo convidado para o locatário usando a [API de convite](../api/invitation-post.md), essa propriedade representa o status do convite do usuário convidado. Para usuários convidados, o estado pode ser `PendingAcceptance` ou `Accepted` ou `null` para todos os outros usuários. <br><br>Retornado apenas `$select` . Oferece suporte `$filter` com os valores com suporte. Por exemplo: `$filter=externalUserState eq 'PendingAcceptance'`.|
+|externalUserStateChangeDateTime|DateTimeOffset|Mostra o carimbo de data/hora da última alteração na propriedade **externalUserState** . <br><br>Retornado apenas `$select` .|
 |faxNumber|String|O número de fax do usuário.|
 |givenName|String|O nome fornecido (nome) do usuário. Oferece suporte a $filter.|
 |hireDate|DateTimeOffset|A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -174,10 +176,10 @@ Esse recurso permite:
 |preferredLanguage|String|O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo "en-US".|
 |preferredName|String|O nome preferencial do usuário.|
 |provisionedPlans|coleção [provisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável. |
-|proxyAddresses|String collection|Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Somente leitura, não anulável. Oferece suporte a $filter.|
+|proxyAddresses|Coleção de cadeias de caracteres|Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Somente leitura, não anulável. Oferece suporte a $filter.|
 |refreshTokensValidFromDateTime|DateTimeOffset|Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. <br><br>Retornado apenas em $select. Apenas leitura. |
 |responsibilities|Conjunto de cadeias de caracteres|Uma lista para o usuário enumerar suas responsabilidades.|
-|schools|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar as escolas que frequentou.|
+|schools|Conjunto de cadeias de caracteres|Uma lista para o usuário enumerar as escolas que frequentou.|
 |showInAddressList|Booliano|**true** se a lista de endereços global do Outlook deve conter o usuário, caso contrário **false**. Se não estiver configurado, isso será tratado como **true**. Para os usuários convidados por meio do Gerenciador de convites, essa propriedade será definida como **false**.|
 |skills|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas qualificações.|
 |signInSessionsValidFromDateTime|DateTimeOffset| Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. Somente leitura. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) para redefinir.|
@@ -202,7 +204,7 @@ Essa propriedade de somente leitura é usada por desenvolvedores de aplicativos 
 |:---------------|:--------|:----------|
 |null|,0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
 |minorWithoutParentalConsent |1 |(Reservado para uso futuro)|
-|minorWithParentalConsent|2 | O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
+|minorWithParentalConsent|duas| O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
 |adult|3D|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
 |notAdult|4 |O usuário é de um país ou região com regulamentações adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` em países regulamentados.|
 |minorNoParentalConsentRequired|5 |O usuário é menor de idade, mas é de um país ou região que não tem com regulamentações relacionadas com a idade.|
@@ -216,8 +218,8 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 | Valor    | #  |Descrição|
 |:---------------|:--------|:----------|
 |null|,0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
-|minor|1 |O usuário é considerado menor de idade.|
-|notAdult|2 |O usuário é de um país que têm regulamentações estatutárias (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior do que o limite de idade para criança (conforme o país) e menor que o limite inferior de idade para adulto (como estipulado com base no país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
+|minor|1 |O usuário é considerado um secundário.|
+|notAdult|duas|O usuário é de um país que têm regulamentações estatutárias (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior do que o limite de idade para criança (conforme o país) e menor que o limite inferior de idade para adulto (como estipulado com base no país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
 |adult|3D|O usuário deve ser tratado como um adulto.|
 
 #### <a name="consentprovidedforminor-property"></a>Propriedade consentProvidedForMinor
@@ -226,7 +228,7 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |:---------------|:--------|:----------|
 |null|,0|Valor padrão, nenhum `consentProvidedForMinor` foi definido para o usuário.|
 |granted|1 |O consentimento foi obtido para o usuário ter uma conta.|
-|denied|2 |O consentimento não foi obtido para o usuário ter uma conta.|
+|denied|duas|O consentimento não foi obtido para o usuário ter uma conta.|
 |notRequired|3D|O usuário é de um local que não exige consentimento.|
 
 ## <a name="relationships"></a>Relações

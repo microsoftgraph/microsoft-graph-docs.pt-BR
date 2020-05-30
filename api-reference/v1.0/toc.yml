@@ -814,6 +814,24 @@ items:
                     href: api/place-get.md
                   - name: Local de atualização
                     href: api/place-update.md
+      - name: Notificações de alteração
+        displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+        items:
+          - name: Visão Geral
+            href: resources/webhooks.md
+          - name: Assinatura
+            href: resources/subscription.md
+            items:
+              - name: Listar assinatura
+                href: api/subscription-list.md
+              - name: Obter assinatura
+                href: api/subscription-get.md
+              - name: Criar assinatura
+                href: api/subscription-post-subscriptions.md
+              - name: Atualizar assinatura
+                href: api/subscription-update.md
+              - name: Excluir assinatura
+                href: api/subscription-delete.md
       - name: Comunicações na nuvem
         displayName: Cloud communications
         items:
@@ -1069,7 +1087,7 @@ items:
               - name: Aplicativo LOB do android gerenciado
                 href: resources/intune-apps-managedandroidlobapp.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-apps-managedandroidlobapp-list.md
                   - name: Obter
                     href: api/intune-apps-managedandroidlobapp-get.md
@@ -1264,7 +1282,7 @@ items:
               - name: Categoria de aplicativo móvel
                 href: resources/intune-apps-mobileappcategory.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-apps-mobileappcategory-list.md
                   - name: Obter
                     href: api/intune-apps-mobileappcategory-get.md
@@ -1290,7 +1308,7 @@ items:
               - name: Arquivo de conteúdo do aplicativo móvel
                 href: resources/intune-apps-mobileappcontentfile.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-apps-mobileappcontentfile-list.md
                   - name: Obter
                     href: api/intune-apps-mobileappcontentfile-get.md
@@ -1487,7 +1505,7 @@ items:
               - name: Configuração geral do dispositivo Android
                 href: resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-get.md
@@ -1502,7 +1520,7 @@ items:
               - name: Política de conformidade do perfil de trabalho do Android
                 href: resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md
@@ -1711,7 +1729,7 @@ items:
               - name: Configuração do dispositivo
                 href: resources/intune-deviceconfig-deviceconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-deviceconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-deviceconfiguration-get.md
@@ -1720,7 +1738,7 @@ items:
               - name: Atribuição de configuração do dispositivo
                 href: resources/intune-deviceconfig-deviceconfigurationassignment.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-deviceconfigurationassignment-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-deviceconfigurationassignment-get.md
@@ -1924,7 +1942,7 @@ items:
               - name: Política de conformidade do macOS
                 href: resources/intune-deviceconfig-macoscompliancepolicy.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-macoscompliancepolicy-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-macoscompliancepolicy-get.md
@@ -1937,7 +1955,7 @@ items:
               - name: Configuração personalizada do macOS
                 href: resources/intune-deviceconfig-macoscustomconfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -2124,7 +2142,7 @@ items:
               - name: Configuração personalizada do Windows 10
                 href: resources/intune-deviceconfig-windows10customconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-windows10customconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-windows10customconfiguration-get.md
@@ -2139,7 +2157,7 @@ items:
               - name: Configuração de proteção de ponto de extremidade do Windows 10
                 href: resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
@@ -2778,7 +2796,7 @@ items:
               - name: Proteção de informações do Windows
                 href: resources/intune-mam-windowsinformationprotection.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-mam-windowsinformationprotection-list.md
                   - name: Obter
                     href: api/intune-mam-windowsinformationprotection-get.md
@@ -2789,7 +2807,7 @@ items:
               - name: Resumo de aprendizagem de aplicativos da proteção de informações do Windows
                 href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
                   - name: Obter
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
@@ -2992,7 +3010,7 @@ items:
               - name: Organização
                 href: resources/intune-onboarding-organization.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-onboarding-organization-list.md
                   - name: Obter
                     href: api/intune-onboarding-organization-get.md
@@ -3005,7 +3023,7 @@ items:
               - name: Token VPP
                 href: resources/intune-onboarding-vpptoken.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-onboarding-vpptoken-list.md
                   - name: Obter
                     href: api/intune-onboarding-vpptoken-get.md
@@ -3265,6 +3283,34 @@ items:
                 href: api/educationuser-get.md
               - name: Excluir usuário
                 href: api/educationuser-delete.md
+      - name: Extensões
+        items:
+          - name: Extensões abertas
+            href: resources/opentypeextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            items:
+              - name: Criar extensão aberta
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: Obter extensão aberta
+                href: api/opentypeextension-get.md
+              - name: Atualizar extensão aberta
+                href: api/opentypeextension-update.md
+              - name: Excluir extensão aberta
+                href: api/opentypeextension-delete.md
+          - name: Extensões de esquema
+            href: resources/schemaextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            items:
+              - name: Listar extensões de esquema
+                href: api/schemaextension-list.md
+              - name: Criar extensão de esquema
+                href: api/schemaextension-post-schemaextensions.md
+              - name: Obter extensão de esquema
+                href: api/schemaextension-get.md
+              - name: Atualizar extensão de esquema
+                href: api/schemaextension-update.md
+              - name: Excluir extensão de esquema
+                href: api/schemaextension-delete.md
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
@@ -4957,50 +5003,3 @@ items:
                 href: api/nameditem-add.md
               - name: Listar intervalo
                 href: api/nameditem-range.md
-      - name: Ferramentas
-        expanded: true
-        items:
-          - name: Extensões abertas
-            href: resources/opentypeextension.md
-            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
-            items:
-              - name: Criar extensão aberta
-                href: api/opentypeextension-post-opentypeextension.md
-              - name: Obter extensão aberta
-                href: api/opentypeextension-get.md
-              - name: Atualizar extensão aberta
-                href: api/opentypeextension-update.md
-              - name: Excluir extensão aberta
-                href: api/opentypeextension-delete.md
-          - name: Extensões de esquema
-            href: resources/schemaextension.md
-            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
-            items:
-              - name: Listar extensões de esquema
-                href: api/schemaextension-list.md
-              - name: Criar extensão de esquema
-                href: api/schemaextension-post-schemaextensions.md
-              - name: Obter extensão de esquema
-                href: api/schemaextension-get.md
-              - name: Atualizar extensão de esquema
-                href: api/schemaextension-update.md
-              - name: Excluir extensão de esquema
-                href: api/schemaextension-delete.md
-          - name: Notificações de alteração
-            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
-            items:
-              - name: Visão Geral
-                href: resources/webhooks.md
-              - name: Assinatura
-                href: resources/subscription.md
-                items:
-                  - name: Listar assinatura
-                    href: api/subscription-list.md
-                  - name: Obter assinatura
-                    href: api/subscription-get.md
-                  - name: Criar assinatura
-                    href: api/subscription-post-subscriptions.md
-                  - name: Atualizar assinatura
-                    href: api/subscription-update.md
-                  - name: Excluir assinatura
-                    href: api/subscription-delete.md

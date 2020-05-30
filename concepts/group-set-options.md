@@ -3,12 +3,12 @@ title: Definir opções de provisionamento e comportamentos de grupo do Microsof
 description: Usando o recurso de grupo no Microsoft Graph, você pode definir comportamentos e recursos de grupo específicos para provisionar ao criar um grupo do Microsoft 365.
 author: yyuank
 localization_priority: Priority
-ms.openlocfilehash: 9df8f3d4fadea93e45089870351531619cd2fde9
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: fd276dcdc42b70f6ed3aeb2e43095e6b5d76e2d4
+ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345783"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44413494"
 ---
 # <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>Definir opções de provisionamento e comportamentos de grupo da Microsoft 365 (versão prévia)
 
@@ -28,7 +28,7 @@ O recurso de **grupo** expõe duas propriedades, **resourceBehaviorOptions** e *
 | AllowOnlyMembersToPost|Somente *membros* do grupo podem postar conversas no grupo.|Todos os usuários da organização podem postar conversas no grupo.|
 | HideGroupInOutlook|Esse grupo está oculto nas experiências do Outlook.|Todos os grupos são visíveis e podem ser descobertos em experiências do Outlook.|
 | SubscribeNewGroupMembers|Os membros do grupo se inscreveram para receber conversas em grupo. |Os membros do grupo não recebem conversas em grupo.|
-| WelcomeEmailDisabled|Um email de boas-vindas é enviado para um novo membro do grupo.|Os emails de boas-vindas não são enviados para novos membros.|
+| WelcomeEmailDisabled|Os emails de boas-vindas não são enviados para novos membros.|Um email de boas-vindas é enviado para um novo membro do grupo.|
 
 **resourceProvisioningOptions** é uma coleção de cadeia de caracteres que especifica os recursos de grupo a serem provisionados como parte da criação do grupo Microsoft 365, que normalmente não fazem parte da criação de grupo padrão.
 

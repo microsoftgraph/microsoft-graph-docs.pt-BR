@@ -4,17 +4,23 @@ description: Para criar ou configurar uma guia do Microsoft Teams usando as APIs
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ffe2799f557b12dd72fa72e6bf8b20f72f507647
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: ec60248bc43c21e476c56b768af4644298b34ae5
+ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345986"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44413480"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Configurar tipos de guia internos no Microsoft Teams
 
 Para [criar](/graph/api/teamstab-add?view=graph-rest-beta) ou [configurar](/graph/api/teamstab-update?view=graph-rest-beta) uma guia do Microsoft Teams usando as APIs REST do Microsoft Graph, você precisa saber a `teamsAppId` do aplicativo e `entityId`, `contentUrl`, `removeUrl` e `websiteUrl` a fornecer para esse tipo de aplicativo.
 Este artigo explica como obter esses valores para os tipos internos de guia.
+
+## <a name="custom-tabs"></a>Guias personalizadas
+
+Para usar o Microsoft Graph para configurar uma guia associada a um [provedor de guia](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview) que você escreveu, identifique o `entityId`, o `contentUrl`, o `removeUrl` e o `websiteUrl` que a [interface do usuário de configuração do aplicativo fornece ao Microsoft Teams](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) e passe os mesmos valores de `entityId`, `contentUrl`, `removeUrl`, e `websiteUrl` valores para o Microsoft Graph.
+
+O `teamsAppId` é igual a `id` no [esquema manifesto de aplicativo do Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema).
 
 ## <a name="website-tabs"></a>Guias de site
 
@@ -64,3 +70,66 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
   }
 }
 ```
+
+## <a name="document-library-tabs"></a>Guias de biblioteca de documentos
+
+Para as guias de biblioteca de documentos, o `teamsAppId` é `com.microsoft.teamspace.tab.files.sharepoint`. A configuração é a mostrada a seguir.
+
+| Propriedade   | Tipo        | Descrição                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | string      | Cadeia de caracteres vazia ("")                                        |
+| contentUrl | string      | A URL da pasta raiz da biblioteca de documentos. Você pode encontrar essa URL abrindo a pasta do SharePoint em seu navegador, copiando a URL e excluindo o "/Forms/AllItems.aspx" e tudo o que quiser. |
+| removeUrl  | string      | Nulo                                                     |
+| websiteUrl | string      | Nulo                                                     |
+
+### <a name="example-create-a-configured-document-library-tab"></a>Exemplo: criar uma guia de biblioteca de documentos configurada
+
+O exemplo a seguir criar uma guia configurada do Word.
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
+{
+    "displayName": "Document%20Library1",
+    "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.files.sharepoint",
+    "configuration": {
+        "entityId": "",
+        "contentUrl": "https://microsoft.sharepoint.com/teams/WWWtest/Shared%20Documents",
+        "removeUrl": null,
+        "websiteUrl": null
+    }
+}
+```
+
+## <a name="wiki-tabs"></a>Guias da wiki
+
+Para as guias da wiki, o `teamsAppId` é `com.microsoft.teamspace.tab.wiki`.
+As guias da wiki não dão suporte à configuração por meio do Graph.
+Observe, contudo, que não há muito o que configurar. Em uma guia da wiki não configurada, o primeiro usuário precisa apenas escolher **Configurar guia** para configurá-la.
+
+## <a name="planner-tabs"></a>Guias do Planner
+
+Para as guias do Planner, o teamsAppId é `com.microsoft.teamspace.tab.planner`. Essa configuração não é compatível.
+
+## <a name="microsoft-stream-tabs"></a>Guias do Microsoft Stream
+
+Para as guias do Microsoft Stream, o `teamsAppId` é `com.microsoftstream.embed.skypeteamstab`. Essa configuração não é compatível.
+
+## <a name="microsoft-forms-tabs"></a>Guias do Microsoft Forms
+
+Para as guias do Microsoft Forms, o `teamsAppId` é `81fef3a6-72aa-4648-a763-de824aeafb7d`.
+Essa configuração não é compatível.
+
+## <a name="onenote-tabs"></a>Guias do OneNote
+
+Para as guias do OneNote, o `teamsAppId` é `0d820ecd-def2-4297-adad-78056cde7c78`. Essa configuração não é compatível.
+
+## <a name="power-bi-tabs"></a>Guias do Power BI
+
+Para as guias do Power BI, o `teamsAppId` é `com.microsoft.teamspace.tab.powerbi`.
+Essa configuração não é compatível.
+
+## <a name="sharepoint-page-and-list-tabs"></a>Guias de lista e de página do SharePoint
+
+Para as guias de lista e de página do SharePoint, o `teamsAppId` é `2a527703-1f6f-4559-a332-d8a7d288cd88`.
+Essa configuração não é compatível.
+Se você quiser configurar a guia, considere usar uma guia do site.
