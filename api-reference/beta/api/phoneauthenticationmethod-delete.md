@@ -5,44 +5,44 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4d6f238940ef9b4483db3be78de409d7b5175494
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 302ee25dd2856ef4ab8e275862c109d31d78f85a
+ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806493"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429569"
 ---
-# <a name="delete-phoneauthenticationmethod"></a><span data-ttu-id="a4a46-103">Excluir phoneAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="a4a46-103">Delete phoneAuthenticationMethod</span></span>
+# <a name="delete-phoneauthenticationmethod"></a><span data-ttu-id="51dba-103">Excluir phoneAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="51dba-103">Delete phoneAuthenticationMethod</span></span>
 
-<span data-ttu-id="a4a46-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a4a46-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="51dba-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="51dba-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a4a46-105">Exclua o [método de autenticação de telefone](../resources/phoneauthenticationmethod.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="a4a46-105">Delete a user's [phone authentication method](../resources/phoneauthenticationmethod.md).</span></span> 
+<span data-ttu-id="51dba-105">Exclua o [método de autenticação de telefone](../resources/phoneauthenticationmethod.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="51dba-105">Delete a user's [phone authentication method](../resources/phoneauthenticationmethod.md).</span></span> 
 
-><span data-ttu-id="a4a46-106">**Observação:** Isso removerá o número de telefone do usuário e não poderá mais usar o número para autenticação, seja via SMS ou chamadas de voz.</span><span class="sxs-lookup"><span data-stu-id="a4a46-106">**Note:** This removes the phone number from the user and they will no longer be able to use the number for authentication, whether via SMS or voice calls.</span></span>
+><span data-ttu-id="51dba-106">**Observação:** Isso removerá o número de telefone do usuário e não poderá mais usar o número para autenticação, seja via SMS ou chamadas de voz.</span><span class="sxs-lookup"><span data-stu-id="51dba-106">**Note:** This removes the phone number from the user and they will no longer be able to use the number for authentication, whether via SMS or voice calls.</span></span>
 
-<span data-ttu-id="a4a46-107">Lembre-se de que um usuário `alternateMobile` não pode ter `mobile` um número sem um número.</span><span class="sxs-lookup"><span data-stu-id="a4a46-107">Remember that a user cannot have an `alternateMobile` number without a `mobile` number.</span></span> <span data-ttu-id="a4a46-108">Se você deseja remover `mobile` um número de um usuário que também tem um `alternateMobile` número, primeiro [atualize](phoneauthenticationmethod-update.md) o `mobile` número para o novo número e, em seguida, `alternateMobile` exclua o número.</span><span class="sxs-lookup"><span data-stu-id="a4a46-108">If you want to remove a `mobile` number from a user that also has an `alternateMobile` number, first [update](phoneauthenticationmethod-update.md) the `mobile` number to the new number, then delete the `alternateMobile` number.</span></span>
+<span data-ttu-id="51dba-107">Lembre-se de que um usuário não pode ter um `alternateMobile` número sem um `mobile` número.</span><span class="sxs-lookup"><span data-stu-id="51dba-107">Remember that a user cannot have an `alternateMobile` number without a `mobile` number.</span></span> <span data-ttu-id="51dba-108">Se você deseja remover um `mobile` número de um usuário que também tem um `alternateMobile` número, primeiro [atualize](phoneauthenticationmethod-update.md) o `mobile` número para o novo número e, em seguida, exclua o `alternateMobile` número.</span><span class="sxs-lookup"><span data-stu-id="51dba-108">If you want to remove a `mobile` number from a user that also has an `alternateMobile` number, first [update](phoneauthenticationmethod-update.md) the `mobile` number to the new number, then delete the `alternateMobile` number.</span></span>
 
-<span data-ttu-id="a4a46-109">Se o número de telefone é o método de autenticação de autenticação multifator do Azure (MFA) padrão do usuário, ele não pode ser excluído.</span><span class="sxs-lookup"><span data-stu-id="a4a46-109">If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it cannot be deleted.</span></span> <span data-ttu-id="a4a46-110">Peça para o usuário alterar o método de autenticação padrão e, em seguida, exclua o número.</span><span class="sxs-lookup"><span data-stu-id="a4a46-110">Have the user change their default authentication method, and then delete the number.</span></span>
+<span data-ttu-id="51dba-109">Se o número de telefone é o método de autenticação de autenticação multifator do Azure (MFA) padrão do usuário, ele não pode ser excluído.</span><span class="sxs-lookup"><span data-stu-id="51dba-109">If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it cannot be deleted.</span></span> <span data-ttu-id="51dba-110">Peça para o usuário alterar o método de autenticação padrão e, em seguida, exclua o número.</span><span class="sxs-lookup"><span data-stu-id="51dba-110">Have the user change their default authentication method, and then delete the number.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a4a46-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="a4a46-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="51dba-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="51dba-111">Permissions</span></span>
 
-<span data-ttu-id="a4a46-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a4a46-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="51dba-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="51dba-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a4a46-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a4a46-114">Permission type</span></span>                        | <span data-ttu-id="a4a46-115">Permissões que atuam em si (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a4a46-115">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="a4a46-116">Permissões que atuam em outros (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a4a46-116">Permissions acting on others (from least to most privileged)</span></span>|
+| <span data-ttu-id="51dba-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="51dba-114">Permission type</span></span>                        | <span data-ttu-id="51dba-115">Permissões que atuam em si (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="51dba-115">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="51dba-116">Permissões que atuam em outros (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="51dba-116">Permissions acting on others (from least to most privileged)</span></span>|
 |:---------------------------------------|:-------------------------|:-----------------|
-| <span data-ttu-id="a4a46-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a4a46-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="a4a46-118">UserAuthenticationMethod. ReadWrite, UserAuthenticationMethod. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="a4a46-118">UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All</span></span> | <span data-ttu-id="a4a46-119">UserAuthenticationMethod. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="a4a46-119">UserAuthenticationMethod.ReadWrite.All</span></span> |
-| <span data-ttu-id="a4a46-120">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a4a46-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a4a46-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a4a46-121">Not supported.</span></span> | <span data-ttu-id="a4a46-122">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a4a46-122">Not supported.</span></span> |
-| <span data-ttu-id="a4a46-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a4a46-123">Application</span></span>                            | <span data-ttu-id="a4a46-124">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a4a46-124">Not supported.</span></span> | <span data-ttu-id="a4a46-125">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a4a46-125">Not supported.</span></span> |
+| <span data-ttu-id="51dba-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="51dba-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="51dba-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="51dba-118">Not supported.</span></span> | <span data-ttu-id="51dba-119">UserAuthenticationMethod. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="51dba-119">UserAuthenticationMethod.ReadWrite.All</span></span> |
+| <span data-ttu-id="51dba-120">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="51dba-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="51dba-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="51dba-121">Not supported.</span></span> | <span data-ttu-id="51dba-122">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="51dba-122">Not supported.</span></span> |
+| <span data-ttu-id="51dba-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="51dba-123">Application</span></span>                            | <span data-ttu-id="51dba-124">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="51dba-124">Not supported.</span></span> | <span data-ttu-id="51dba-125">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="51dba-125">Not supported.</span></span> |
 
-<span data-ttu-id="a4a46-126">Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="a4a46-126">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
+<span data-ttu-id="51dba-126">Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="51dba-126">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
 
-* <span data-ttu-id="a4a46-127">Administrador global</span><span class="sxs-lookup"><span data-stu-id="a4a46-127">Global admin</span></span>
-* <span data-ttu-id="a4a46-128">Administrador de autenticação privilegiada</span><span class="sxs-lookup"><span data-stu-id="a4a46-128">Privileged authentication admin</span></span>
-* <span data-ttu-id="a4a46-129">Administrador de autenticação</span><span class="sxs-lookup"><span data-stu-id="a4a46-129">Authentication admin</span></span>
+* <span data-ttu-id="51dba-127">Administrador global</span><span class="sxs-lookup"><span data-stu-id="51dba-127">Global admin</span></span>
+* <span data-ttu-id="51dba-128">Administrador de autenticação privilegiada</span><span class="sxs-lookup"><span data-stu-id="51dba-128">Privileged authentication admin</span></span>
+* <span data-ttu-id="51dba-129">Administrador de autenticação</span><span class="sxs-lookup"><span data-stu-id="51dba-129">Authentication admin</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="a4a46-130">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a4a46-130">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="51dba-130">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="51dba-130">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -51,27 +51,27 @@ DELETE /me/authentication/phoneMethods/{id}
 DELETE /users/{id}/authentication/phoneMethods/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a4a46-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a4a46-131">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="51dba-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="51dba-131">Request headers</span></span>
 
-| <span data-ttu-id="a4a46-132">Nome</span><span class="sxs-lookup"><span data-stu-id="a4a46-132">Name</span></span>          | <span data-ttu-id="a4a46-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="a4a46-133">Description</span></span>   |
+| <span data-ttu-id="51dba-132">Nome</span><span class="sxs-lookup"><span data-stu-id="51dba-132">Name</span></span>          | <span data-ttu-id="51dba-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="51dba-133">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="a4a46-134">Autorização</span><span class="sxs-lookup"><span data-stu-id="a4a46-134">Authorization</span></span> | <span data-ttu-id="a4a46-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a4a46-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="51dba-134">Autorização</span><span class="sxs-lookup"><span data-stu-id="51dba-134">Authorization</span></span> | <span data-ttu-id="51dba-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="51dba-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a4a46-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a4a46-137">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="51dba-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="51dba-137">Request body</span></span>
 
-<span data-ttu-id="a4a46-138">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a4a46-138">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="51dba-138">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="51dba-138">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a4a46-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="a4a46-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="51dba-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="51dba-139">Response</span></span>
 
-<span data-ttu-id="a4a46-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a4a46-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="51dba-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="51dba-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a4a46-142">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a4a46-142">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="51dba-142">Exemplos</span><span class="sxs-lookup"><span data-stu-id="51dba-142">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="a4a46-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a4a46-143">Request</span></span>
+### <a name="request"></a><span data-ttu-id="51dba-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="51dba-143">Request</span></span>
 
-<span data-ttu-id="a4a46-144">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a4a46-144">The following is an example of the request.</span></span>
+<span data-ttu-id="51dba-144">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="51dba-144">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a4a46-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="a4a46-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="51dba-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="51dba-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_phoneauthenticationmethod"
@@ -80,24 +80,24 @@ DELETE /users/{id}/authentication/phoneMethods/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-750b-4051-897c-87b9720928f7
 ```
-# <a name="c"></a>[<span data-ttu-id="a4a46-146">C#</span><span class="sxs-lookup"><span data-stu-id="a4a46-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="51dba-146">C#</span><span class="sxs-lookup"><span data-stu-id="51dba-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-phoneauthenticationmethod-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a4a46-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a4a46-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="51dba-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="51dba-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-phoneauthenticationmethod-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a4a46-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a4a46-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="51dba-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="51dba-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-phoneauthenticationmethod-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="a4a46-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="a4a46-149">Response</span></span>
+### <a name="response"></a><span data-ttu-id="51dba-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="51dba-149">Response</span></span>
 
-<span data-ttu-id="a4a46-150">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a4a46-150">The following is an example of the response.</span></span>
+<span data-ttu-id="51dba-150">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="51dba-150">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
