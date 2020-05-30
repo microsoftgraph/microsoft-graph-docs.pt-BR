@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3f4979c9f1910a7092223d982189178844af5eba
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 2bd29ee6e2f78e8864bce6a09cac456c4ab5ce6a
+ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805700"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429578"
 ---
 # <a name="create-phoneauthenticationmethod"></a>Criar phoneAuthenticationMethod
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione um novo [método de autenticação de telefone](../resources/phoneauthenticationmethod.md). Um usuário pode ter apenas um telefone de cada tipo, capturado na propriedade **PhoneType** . Isso significa que, por exemplo, adicionar `mobile` um telefone a um usuário com um telefone `mobile` preexistente falhará. Além disso, um usuário deve sempre ter `mobile` um telefone antes de `alternateMobile` adicionar um telefone.
+Adicione um novo [método de autenticação de telefone](../resources/phoneauthenticationmethod.md). Um usuário pode ter apenas um telefone de cada tipo, capturado na propriedade **PhoneType** . Isso significa que, por exemplo, adicionar um `mobile` telefone a um usuário com um telefone preexistente `mobile` falhará. Além disso, um usuário deve sempre ter um `mobile` telefone antes de adicionar um `alternateMobile` telefone.
 
 Adicionar um número de telefone o torna disponível para uso na autenticação multifator do Azure (MFA) e redefinição de senha de autoatendimento (SSPR), se habilitada.
 
-Além disso, se um usuário estiver habilitado por política para usar a entrada do SMS e `mobile` um número for adicionado, o sistema tentará registrar o número para uso nesse sistema.
+Além disso, se um usuário estiver habilitado por política para usar a entrada do SMS e um `mobile` número for adicionado, o sistema tentará registrar o número para uso nesse sistema.
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões que atuam em si (de menos para mais privilégios) | Permissões que atuam em outros (de menos para mais privilégios)|
 |:---------------------------------------|:-------------------------|:-----------------|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod. ReadWrite, UserAuthenticationMethod. ReadWrite. All | UserAuthenticationMethod. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte. | UserAuthenticationMethod. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
 | Aplicativo                            | Sem suporte. | Sem suporte. |
 
@@ -58,16 +58,16 @@ POST /users/{id}/authentication/phoneMethods
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) . O JSON deve incluir `phoneNumber` e `phoneType`, mas não `smsSignInState` (que é somente leitura).
+No corpo da solicitação, forneça uma representação JSON de um objeto [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) . O JSON deve incluir `phoneNumber` e `phoneType` , mas não `smsSignInState` (que é somente leitura).
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|phoneNumber|String|O número de telefone para texto ou chamada para autenticação. Os números de telefone usam o formato\<"+\> \<ramal\>\>de\<código de país x", com a extensão opcional. Por exemplo, + 1 5555551234 ou + 1 5555551234x123 são válidas. Os números são rejeitados ao criar/atualizar se não coincidem com o formato necessário.|
-|PhoneType|Cadeia de Caracteres|Os valores possíveis são `mobile`: `alternateMobile`,, `office`e.|
+|phoneNumber|String|O número de telefone para texto ou chamada para autenticação. Os números de telefone usam o formato "+ \<country code\> \<number\> x \<extension\> ", com a extensão opcional. Por exemplo, + 1 5555551234 ou + 1 5555551234x123 são válidas. Os números são rejeitados ao criar/atualizar se não coincidem com o formato necessário.|
+|PhoneType|String|Os valores possíveis são: `mobile` , `alternateMobile` , e `office` .|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

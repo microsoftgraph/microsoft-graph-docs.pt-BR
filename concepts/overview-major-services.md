@@ -4,12 +4,12 @@ description: 'O Microsoft Graph permite que você se integre com o melhor dos se
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: fa24c0741b452ffa8208f3834b6123618c92a371
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: a8ad7988ed8ce77d70ed0263817cbe643a42ca2c
+ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290283"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429618"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -128,7 +128,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
 | Reserva de clientes (prévia) | Microsoft Bookings | Tem como alvo organizações para permitir que seus usuários e clientes reservem serviços diretamente na Web ou no Facebook. Permite que os provedores de negócios gerenciem preferências, serviços e preços do cliente, listas e agendas de funcionários e outras informações empresariais comuns. | [Visão geral da API do Microsoft Bookings](booking-concept-overview.md) |
-| Finanças (visualização) | Dynamics 365 Business Central | Permite o gerenciamento de dados financeiros automação e proteção da rede de fornecedores, gerenciamento de vendas e melhor atendimento ao cliente, gerenciamento de projetos e otimização das operações com a solução de gerenciamento de negócios tudo em um.| [Visão geral da API Business Central](dynamics-business-central-concept-overview.md) |
+| Finanças (visualização) | Dynamics 365 Business Central | Permite o gerenciamento de dados financeiros, automação e proteção da cadeia de fornecimento, gerenciamento de vendas e melhor atendimento ao cliente, gerenciamento de projetos e otimização de operações com a solução de gerenciamento de negócios tudo em um.| [Visão geral da API Business Central](dynamics-business-central-concept-overview.md) |
 
 
 ## <a name="next-steps"></a>Próximas etapas

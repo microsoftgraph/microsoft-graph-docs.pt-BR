@@ -1,12 +1,12 @@
 ---
 title: Implantações de nuvens nacionais
-description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões de nuvem nacionais são instâncias isoladas de rede física e lógica dos serviços de nuvem corporativa da Microsoft que são confinados nas bordas geográficas de países específicos e operados pela equipe local.
-ms.openlocfilehash: a4169426a65a3c2d2766e07194ff326f0fdb2434
-ms.sourcegitcommit: 889096fb1821ee90ffa1b2dcce046efd6e97acef
+description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas.
+ms.openlocfilehash: 0cdd1ee8a14a623d7b65ac5c6453357c2d91aa63
+ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022800"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429548"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -53,10 +53,10 @@ A tabela a seguir mostra os pontos de extremidade da raiz do serviço para o Mic
 | Serviço global do Microsoft Graph | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
 > [!IMPORTANT]
-> Se você já tiver um aplicativo no governo dos EUA e estiver usando o ponto de `https://graph.microsoft.com`extremidade internacional, recomendamos mudar para `https://graph.microsoft.us` o novo ponto de extremidade. O acesso aos dados do governo dos EUA usando o ponto de extremidade internacional está funcional no momento, mas será desabilitado em um futuro próximo.
+> Se você já tiver um aplicativo no governo dos EUA e estiver usando o ponto de extremidade internacional `https://graph.microsoft.com` , recomendamos mudar para o novo `https://graph.microsoft.us` ponto de extremidade. O acesso aos dados do governo dos EUA usando o ponto de extremidade internacional está funcional no momento, mas será desabilitado em um futuro próximo.
 
 > [!NOTE]
-> Os aplicativos podem acessar apenas os dados organizacionais por meio dos pontos de extremidade da nuvem nacional. Isso significa que os aplicativos só podem acessar dados em locatários registrados na nuvem nacional específica. Os aplicativos que estão tentando acessar os dados do cliente associados às contas pessoais da Microsoft por meio do Microsoft Graph `https://graph.microsoft.com`devem usar o serviço global. Tokens de acesso adquiridos para implantação de nuvem nacional não são intercambiáveis com aqueles adquiridos para o serviço global ou qualquer outra nuvem nacional.
+> Os aplicativos podem acessar apenas os dados organizacionais por meio dos pontos de extremidade da nuvem nacional. Isso significa que os aplicativos só podem acessar dados em locatários registrados na nuvem nacional específica. Os aplicativos que estão tentando acessar os dados do cliente associados às contas pessoais da Microsoft por meio do Microsoft Graph devem usar o serviço global `https://graph.microsoft.com` . Tokens de acesso adquiridos para implantação de nuvem nacional não são intercambiáveis com aqueles adquiridos para o serviço global ou qualquer outra nuvem nacional.
 
 ## <a name="supported-features"></a>Recursos com suporte
 
@@ -74,7 +74,7 @@ Os seguintes recursos do Microsoft Graph geralmente estão disponíveis no `/v1.
 | SharePoint| ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Relatórios  |➖| ✔ |➖|
-| Alterar notificações (Webhooks)  | ➖|✔* |✔* |
+| Alterar notificações (Webhooks)  | ✔ |✔ |✔* |
 | Consulta delta | ➖ | ✔ | ➖ |
 | Extensões de esquema de diretório |➖|➖|➖|
 | Extensões de tipo aberto|➖|➖|➖|
@@ -84,7 +84,6 @@ Os seguintes recursos adicionais do Microsoft Graph estão disponíveis na visua
 * Contatos organizacionais
 * Aplicativos
 * Entidades de serviço
-* Alterar notificações (Webhooks)
 
 (*) Suporte limitado somente para o Exchange e serviços do OneDrive. Não há suporte para os serviços do Azure AD. 
 

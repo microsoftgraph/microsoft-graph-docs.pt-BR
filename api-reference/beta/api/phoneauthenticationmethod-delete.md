@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4d6f238940ef9b4483db3be78de409d7b5175494
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 302ee25dd2856ef4ab8e275862c109d31d78f85a
+ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806493"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429569"
 ---
 # <a name="delete-phoneauthenticationmethod"></a>Excluir phoneAuthenticationMethod
 
@@ -22,7 +22,7 @@ Exclua o [método de autenticação de telefone](../resources/phoneauthenticatio
 
 >**Observação:** Isso removerá o número de telefone do usuário e não poderá mais usar o número para autenticação, seja via SMS ou chamadas de voz.
 
-Lembre-se de que um usuário `alternateMobile` não pode ter `mobile` um número sem um número. Se você deseja remover `mobile` um número de um usuário que também tem um `alternateMobile` número, primeiro [atualize](phoneauthenticationmethod-update.md) o `mobile` número para o novo número e, em seguida, `alternateMobile` exclua o número.
+Lembre-se de que um usuário não pode ter um `alternateMobile` número sem um `mobile` número. Se você deseja remover um `mobile` número de um usuário que também tem um `alternateMobile` número, primeiro [atualize](phoneauthenticationmethod-update.md) o `mobile` número para o novo número e, em seguida, exclua o `alternateMobile` número.
 
 Se o número de telefone é o método de autenticação de autenticação multifator do Azure (MFA) padrão do usuário, ele não pode ser excluído. Peça para o usuário alterar o método de autenticação padrão e, em seguida, exclua o número.
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões que atuam em si (de menos para mais privilégios) | Permissões que atuam em outros (de menos para mais privilégios)|
 |:---------------------------------------|:-------------------------|:-----------------|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod. ReadWrite, UserAuthenticationMethod. ReadWrite. All | UserAuthenticationMethod. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte. | UserAuthenticationMethod. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
 | Aplicativo                            | Sem suporte. | Sem suporte. |
 
