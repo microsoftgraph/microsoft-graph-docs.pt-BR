@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 34f5186e9933f5edcd8a91b1cb95b21b6deb4a50
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 968ce6806da2d14bd2c6cb53d749a43694bcf0bb
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353900"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491900"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -22,19 +22,19 @@ O Microsoft Teams é um espaço de trabalho baseado em chat no Office 365 que fo
 
 | Resource | Métodos |
 |:---------------|:--------|
-|[team](../resources/team.md)| [Listar suas equipes](../api/user-list-joinedteams.md), [listar todas as equipes](/graph/teams-list-all-teams), [criar](../api/team-put-teams.md), [ler](../api/team-get.md), [atualizar](../api/team-update.md), [excluir](/graph/api/group-delete?view=graph-rest-1.0), [clonar](../api/team-clone.md), [arquivar](../api/team-archive.md), [cancelar o arquivamento](../api/team-unarchive.md) |
-|[group](../resources/group.md)| [Adicionar membro](../api/group-post-members.md),  [remover membro](../api/group-delete-members.md), [adicionar proprietário](../api/group-post-owners.md),  [remover proprietário](../api/group-delete-owners.md), [obter arquivos](drive.md), [obter bloco de anotações](/graph/api/resources/notebook?view=graph-rest-1.0), [obter planos](plannergroup.md), [obter calendário](event.md) |
+|[team](../resources/team.md)| [Listar suas equipes](../api/user-list-joinedteams.md), [listar todas as equipes](/graph/teams-list-all-teams), [criar](../api/team-put-teams.md), [ler](../api/team-get.md), [atualizar](../api/team-update.md), [excluir](../api/group-delete.md), [clonar](../api/team-clone.md), [arquivar](../api/team-archive.md), [cancelar o arquivamento](../api/team-unarchive.md) |
+|[group](../resources/group.md)| [Adicionar membro](../api/group-post-members.md),  [remover membro](../api/group-delete-members.md), [adicionar proprietário](../api/group-post-owners.md),  [remover proprietário](../api/group-delete-owners.md), [obter arquivos](drive.md), [obter bloco de anotações](../resources/notebook.md), [obter planos](plannergroup.md), [obter calendário](event.md) |
 |[channel](../resources/channel.md)|[Listar](../api/channel-list.md), [criar](../api/channel-post.md), [ler](../api/channel-get.md), [atualizar](../api/channel-patch.md), [excluir](../api/channel-delete.md)|
 |[teamsTab](../resources/teamstab.md) |[Listar](../api/teamstab-list.md), [criar](../api/teamstab-add.md), [ler](../api/teamstab-get.md), [atualizar](../api/teamstab-update.md), [excluir](../api/teamstab-delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[Listar](../api/teamsapp-list.md), [publicar](../api/teamsapp-publish.md), [atualizar](../api/teamsapp-update.md), [remover](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [Listar](../api/teamsappinstallation-list.md), [instalar](../api/teamsappinstallation-add.md), [atualizar](../api/teamsappinstallation-delete.md), [remover](../api/teamsappinstallation-delete.md) |
-|[chatMessage](../resources/chatmessage.md) (visualização)| [Lista](../api/channel-list-messages.md), [enviar](../api/channel-post-messages.md), [ler](/graph/api/channel-get-message?view=graph-rest-beta) |
-|[Chamada](/graph/api/resources/communications-api-overview.md) (visualização) | [Responder](/graph/api/call-answer?view=graph-rest-beta), [rejeitar](/graph/api/call-reject?view=graph-rest-beta), [redirecionar](/graph/api/call-redirect?view=graph-rest-beta), [ativar mudo](/graph/api/call-mute?view=graph-rest-beta), [desfazer ativar mudo](/graph/api/call-unmute?view=graph-rest-beta), [atualizar metadados](/graph/api/call-updatemetadata?view=graph-rest-beta), [alterar a função de compartilhamento de tela](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [listar participantes](/graph/api/call-list-participants?view=graph-rest-beta), [convidar participantes](/graph/api/participant-invite?view=graph-rest-beta), [ativar mudo para todos os participantes](/graph/api/participant-muteall?view=graph-rest-beta) |
-|[cronograma](/graph/api/resources/schedule?view=graph-rest-beta) (visualização)| [Criar ou substituir](/graph/api/team-put-schedule?view=graph-rest-beta), [obter](/graph/api/schedule-get?view=graph-rest-beta), [compartilhar](/graph/api/schedule-share?view=graph-rest-beta) |
-|[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta) visualização| [Criar](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta), [Listar](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta), [Obter](/graph/api/schedulinggroup-get?view=graph-rest-beta), [Substituir](/graph/api/schedulinggroup-put?view=graph-rest-beta), [Excluir](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |
-|[turno](/graph/api/resources/shift?view=graph-rest-beta) (visualização)| [Criar](/graph/api/schedule-post-shifts?view=graph-rest-beta), [Listar](/graph/api/schedule-list-shifts?view=graph-rest-beta), [Obter](/graph/api/shift-get?view=graph-rest-beta), [Substituir](/graph/api/shift-put?view=graph-rest-beta), [Excluir](/graph/api/shift-delete?view=graph-rest-beta) |
-|[Folga](/graph/api/resources/timeoff?view=graph-rest-beta) (visualização)| [Criar](/graph/api/schedule-post-timesoff?view=graph-rest-beta), [Listar](/graph/api/schedule-list-timesoff?view=graph-rest-beta), [Obter](/graph/api/timeoff-get?view=graph-rest-beta), [Substituir](/graph/api/timeoff-put?view=graph-rest-beta), [Excluir](/graph/api/timeoff-delete?view=graph-rest-beta) |
-|[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta) (visualização)| [Criar](/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta), [Listar](/graph/api/schedule-list-timeoffreasons?view=graph-rest-beta), [Obter](/graph/api/timeoffreason-get?view=graph-rest-beta), [Substituir](/graph/api/timeoffreason-put?view=graph-rest-beta), [Excluir](/graph/api/timeoffreason-delete?view=graph-rest-beta) |
+|[chatMessage](../resources/chatmessage.md)| [Lista](../api/channel-list-messages.md), [enviar](../api/channel-post-messages.md), [ler](../api/channel-get-message.md) |
+| [call](../resources/call.md)| [Responder](../api/call-answer.md), [rejeitar](../api/call-reject.md), [redirecionar](../api/call-redirect.md), [ativar mudo](../api/call-mute.md), [desfazer ativar mudo](../api/call-unmute.md), [atualizar metadados](../api/call-updatemetadata.md), [alterar a função de compartilhamento de tela](../api/call-changescreensharingrole.md), [listar participantes](../api/call-list-participants.md), [convidar participantes](../api/participant-invite.md), [ativar mudo para todos os participantes](../api/participant-muteall.md) |
+|[Cronograma](../resources/schedule.md)| [Criar ou substituir](../api/team-put-schedule.md), [obter](../api/schedule-get.md), [compartilhar](../api/schedule-share.md) |
+|[schedulingGroup](../resources/schedulinggroup.md)| [Criar](../api/schedule-post-schedulinggroups.md), [Listar](../api/schedule-list-schedulinggroups.md), [Obter](../api/schedulinggroup-get.md), [Substituir](../api/schedulinggroup-put.md), [Excluir](../api/schedulinggroup-delete.md) |
+|[desloca](../resources/shift.md)| [Criar](../api/schedule-post-shifts.md), [Listar](../api/schedule-list-shifts.md), [Obter](../api/shift-get.md), [Substituir](../api/shift-put.md), [Excluir](../api/shift-delete.md) |
+|[timeOff](../resources/timeoff.md)| [Criar](../api/schedule-post-timesoff.md), [Listar](../api/schedule-list-timesoff.md), [Obter](../api/timeoff-get.md), [Substituir](../api/timeoff-put.md), [Excluir](../api/timeoff-delete.md) |
+|[timeOffReason](../resources/timeoffreason.md)| [Criar](../api/schedule-post-timeoffreasons.md), [Listar](../api/schedule-list-timeoffreasons.md), [Obter](../api/timeoffreason-get.md), [Substituir](../api/timeoffreason-put.md), [Excluir](../api/timeoffreason-delete.md) |
 
 ## <a name="microsoft-teams-limits"></a>Limites do Microsoft Teams
 
@@ -109,7 +109,7 @@ Se nenhum desses usuários estiver conectado ao aplicativo/site do Microsoft Tea
 
 Se seu aplicativo sonda para ver se um recurso foi alterado, você só poderá fazer isso uma vez por dia. ([teamsAsyncOperation](teamsasyncoperation.md) é uma exceção no sentido de que é foi desenvolvida para ser sondada frequentemente.) Se você precisar saber sobre mudanças com mais frequência que esta, você deve [criar uma assinatura](../api/subscription-post-subscriptions.md) para esse recurso e receber notificações de alteração (webhooks). Caso não encontre suporte para o tipo de assinatura necessária, recomendamos que você faça comentários por meio do [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
 
-Ao pesquisar novas mensagens, você deve especificar um intervalo de datas onde isso for possível.  Para obter detalhes, consulte [obter mensagens de canal delta](/graph/api/chatmessage-delta?view=graph-rest-beta).
+Ao pesquisar novas mensagens, você deve especificar um intervalo de datas onde isso for possível.  Para obter detalhes, consulte [obter mensagens de canal delta](../api/chatmessage-delta.md).
 
 As sondagem está executando uma operação OBTER em um recurso repetidamente para ver se o recurso foi alterado. Você tem permissão para obter o mesmo recurso várias vezes por dia, desde que não seja uma sondagem. Por exemplo, está tudo bem se você usar OBTER /me/joinedTeams toda vez que o usuário visita/atualiza sua página da web, mas não é certo usar OBTER /me/joinedTeams em um loop a cada 30 segundos para atualizar essa página da web.
 
@@ -120,4 +120,5 @@ Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats
 
 ## <a name="see-also"></a>Confira também
 
-[Visão geral da API do Microsoft Teams](/graph/teams-concept-overview)
+- [Visão geral da API do Microsoft Teams](/graph/teams-concept-overview)
+- Exemplo de código: [Linhas Aéreas Contoso](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [mini exemplos C#](https://github.com/microsoftgraph/csharp-teams-sample-graph)

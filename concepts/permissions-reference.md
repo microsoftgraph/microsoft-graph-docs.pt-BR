@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: dbeb2b752da552fafb994e8593fbd9c4ce953d09
-ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
+ms.openlocfilehash: f76d8534e0cea72cb6b66d0d94466c248be2dc9a
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408308"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491872"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -421,8 +421,8 @@ A permissão _CallRecords. Read. All_ concede a um aplicativo acesso privilegiad
 
 #### <a name="application"></a>Aplicativo
 
-* _CallRecords.Read.All_: recuperar um registro de chamada (`GET /beta/communications/callRecords/{id}`).
-* _CallRecords.Read.All_: assinar novos registros de chamadas (`POST /beta/subscriptions`).
+* _CallRecords.Read.All_: recuperar um registro de chamada (`GET /v1.0/communications/callRecords/{id}`).
+* _CallRecords.Read.All_: assinar novos registros de chamadas (`POST /v1.0/subscriptions`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
