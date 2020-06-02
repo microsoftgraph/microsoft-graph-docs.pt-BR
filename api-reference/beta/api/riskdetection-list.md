@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c0917c451777b7c98c11a25a21b5978cf199b93b
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 2360d9a43b9afe4f6d5c83e10652d04100bc1ee2
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181207"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44251111"
 ---
 # <a name="list-riskdetection"></a>Listar riskDetection
 
@@ -41,7 +41,7 @@ GET /riskDetections
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece `$filter` suporte `$select` e para personalizar a resposta de consulta. Consulte o exemplo mais adiante neste tópico. 
+Este método oferece suporte `$filter` e `$select` para personalizar a resposta de consulta. Consulte o exemplo mais adiante neste tópico. 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [riskDetection](../resources/riskdetection.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [riskDetection](../resources/riskdetection.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -110,7 +110,7 @@ Content-type: application/json
     "id": "6a5874ca-abcd-9d82-5ad39bd71600",
     "requestId": "6a5874ca-abcd-9d82-5ad39bd71600",
     "correlationId": "abcd74ca-9823-4b1c-9d82-5ad39bd71600",
-    "riskType": "unfamiliarFeatures",
+    "riskEventType": "unfamiliarFeatures",
     "riskState": "remediated",
     "riskLevel": "medium",
     "riskDetail": "userPerformedSecuredPasswordReset",
@@ -151,7 +151,7 @@ O exemplo a seguir mostra como usar `$filter` o para obter a coleção de detec�
 } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/riskDetections?$filter=riskType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
+GET https://graph.microsoft.com/beta/riskDetections?$filter=riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-filter-riskdetections-csharp-snippets.md)]
@@ -188,7 +188,7 @@ Content-type: application/json
     "id": "1d68fc3d60d012ff80ad4b16818bf304df1bde295fdf1db31fa5389ba9532cd1",
     "requestId": "3295073e-04b1-4871-9d15-c1f871b41100",
     "correlationId": "f141d8e5-93e9-4fd0-9eb0-c40e5f8fc092",
-    "riskType": "unfamiliarFeatures",
+    "riskEventType": "unfamiliarFeatures",
     "riskState": "atRisk",
     "riskLevel": "medium",
     "riskDetail": "none",

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1e6e04f02862afa265c15115d3c5db8c16f1f512
-ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
+ms.openlocfilehash: 1f09e91c88e83127e86d441b2c6537d85729b4b6
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "43812538"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44251097"
 ---
 # <a name="list-jobs"></a>Listar trabalhos
 
@@ -29,7 +29,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Users. Read. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /print/printers/{id}/jobs
 Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
 
 ### <a name="exceptions"></a>Exceções
-Não há suporte para alguns operadores `$count`: `$orderby`, `$search`, `$filter`,.
+Não há suporte para alguns operadores: `$count` , `$search` , `$filter` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -51,7 +51,7 @@ Não há suporte para alguns operadores `$count`: `$orderby`, `$search`, `$filte
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [printJob](../resources/printjob.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [printJob](../resources/printjob.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

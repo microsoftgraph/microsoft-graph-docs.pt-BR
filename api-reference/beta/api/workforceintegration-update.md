@@ -6,10 +6,10 @@ author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 80b688d700dff94d1a746e651b83a4b0236d1a39
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "44154399"
 ---
 # <a name="update-workforceintegration"></a>Atualizar workforceintegration
@@ -53,9 +53,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |apiVersion|Int32|Versão da API para a URL de retorno de chamada. Comece com 1.|
 |displayName|String|Nome da integração da força de funcionários.|
 |encripta|workforceIntegrationEncryption|O recurso de criptografia de integração da força de funcionários. |
-|isActive|Boolean|Indica se a integração da força de trabalho está ativa e disponível atualmente.|
-|compatível|cadeia de caracteres| Os valores possíveis são:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúsculas.|
-|supportedEntities|cadeia de caracteres| Essa propriedade substituirá **suporte** em v 1.0. Recomendamos que você use essa propriedade em vez de **suportar**. A **Propriedade** Supports ainda será suportada na versão beta para o momento. Os valores possíveis são:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúsculas.|
+|isActive|Booliano|Indica se a integração da força de trabalho está ativa e disponível atualmente.|
+|compatível|string| Os valores possíveis são:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúsculas.|
+|supportedEntities|string| Essa propriedade substituirá **suporte** em v 1.0. Recomendamos que você use essa propriedade em vez de **suportar**. A **Propriedade** Supports ainda será suportada na versão beta para o momento. Os valores possíveis são:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúsculas.|
 |url|Cadeia de caracteres| URL de integração de força de obra para retornos de chamada do serviço de turno. |
 
 ## <a name="response"></a>Resposta

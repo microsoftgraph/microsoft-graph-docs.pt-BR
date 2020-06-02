@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f154cbf1b59a67a8d2e306ea14e1ef490c63b3fe
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: e6c3fb214126d4414ed35d6ba58a52acc6b65bab
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43807070"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44216617"
 ---
 # <a name="delete-allowedgroup"></a>Excluir o permitido
 
@@ -29,12 +29,12 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Users. Read. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /print/printerShares/{id}/allowedGroups/{id}/$ref
+DELETE /print/shares/{id}/allowedGroups/{id}/$ref
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição   |
@@ -55,7 +55,7 @@ Este é um exemplo de solicitação.
   "name": "delete_allowedgroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/printerShares/{id}/allowedGroup/{id}/$ref
+DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroup/{id}/$ref
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.

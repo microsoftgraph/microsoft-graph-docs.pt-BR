@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: cddc49db3bb9ad19e172fe7bc8b6dc9ad0bc6edc
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 80292a11b3430f00958f82c51a290bc701a23dfe
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947628"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44216746"
 ---
 # <a name="update-printershare"></a>Atualizar PrinterShare
 
@@ -36,7 +36,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /print/printerShares/{id}
+PATCH /print/shares/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -55,7 +55,7 @@ No corpo da solicitação, forneça os valores para campos [printerShare](../res
 >**Observação:** Não há suporte para a atualização do nome de compartilhamento da impressora.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [printerShare](../resources/printershare.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [printerShare](../resources/printershare.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -66,7 +66,7 @@ Este é um exemplo de solicitação.
   "name": "update_printershare"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/print/printerShares/{id}
+PATCH https://graph.microsoft.com/beta/print/shares/{id}
 Content-type: application/json
 Content-length: 109
 
@@ -103,7 +103,7 @@ Content-type: application/json
 Content-length: 225
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printerShares/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
   "id": "d837c17b-3296-4384-a053-828d56e10f50",
   "name": "ShareName",
   "createdDateTime": "2020-02-04T00:00:00.0000000Z"
