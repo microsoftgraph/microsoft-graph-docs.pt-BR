@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 52feda55dd3f5d6a56b785088cacee255be27678
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: HT
+ms.openlocfilehash: a78d7cbeef36f5b6f15fca3d1131c8efe1270002
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287420"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491312"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
@@ -33,7 +33,7 @@ Uma solicitação GET com a função delta traz como resultado uma destas opçõ
 
 Os tokens de estado são completamente opacos para o cliente. Para prosseguir com uma fase de controle de alterações, basta copiar e aplicar a URL `nextLink` ou `deltaLink` retornada da última solicitação GET para a próxima chamada de função delta do mesmo modo de exibição de calendário. Um `deltaLink` retornado em uma resposta significa que a fase atual do rastreamento de alterações está concluída. Você pode salvar e usar a URL `deltaLink` quando começar a próxima fase.
 
-Para obter mais informações, consulte a documentação da [consulta Delta](/graph/delta-query-overview.md).
+Para obter mais informações, consulte a documentação da [consulta Delta](/graph/delta-query-overview).
 
 ## <a name="permissions"></a>Permissões
 
@@ -43,7 +43,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------------------------------------|---------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) |Não suportado                                |
-|Aplicativo                            | ChannelMessage.Read.Group ([RSC](https://aka.ms/teams-rsc)), ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Aplicativo                            | ChannelMessage. Read. Group *, ChannelMessage. Read. All, Group. Read. All, Group. ReadWrite. All |
+
+> **Observação**: as permissões marcadas com * usam o [consentimento específico do recurso]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
@@ -404,7 +406,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc
 
 #### <a name="response"></a>Resposta
 
->**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
