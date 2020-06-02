@@ -986,7 +986,7 @@ items:
                 href: api/presence-get.md
               - name: Obter presença para vários usuários
                 href: api/cloudcommunications-getpresencesbyuserid.md
-          - name: Registros de chamada (visualização)
+          - name: Registros de chamadas
             items:
               - name: Visão Geral
                 href: resources/callrecords-api-overview.md
@@ -9581,6 +9581,13 @@ items:
                     href: api/activitybasedtimeoutpolicy-update.md
                   - name: Excluir
                     href: api/activitybasedtimeoutpolicy-delete.md
+              - name: Política de autorização
+                href: resources/authorizationpolicy.md
+                items:
+                  - name: Obter
+                    href: api/authorizationpolicy-get.md
+                  - name: Atualizar
+                    href: api/authorizationpolicy-update.md
               - name: Política de mapeamento de declarações
                 href: resources/claimsmappingpolicy.md
                 items:
