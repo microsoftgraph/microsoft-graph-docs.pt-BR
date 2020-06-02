@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9cf6b0483ebda33068824f0a3345c12894fd2d7e
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 8e411b7170f99f57eac4cdb7c56cfc64bcf2aee5
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353116"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491172"
 ---
 # <a name="serviceuseragent-resource-type"></a>tipo de recurso serviceUserAgent
 
@@ -26,7 +26,7 @@ Representa um agente do usuário de serviço de um ponto de extremidade em uma c
 |:-------------|:------------|:------------|
 |applicationVersion|String|Identifica a versão do software do aplicativo usado por esse ponto de extremidade.|
 |headerValue|String|Valor do cabeçalho do agente de usuário relatado por esse ponto de extremidade.|
-|role|Microsoft. Graph. callRecords. onrole|Identifica a função do serviço usado por esse ponto de extremidade. Os valores possíveis são: `unknown`, `customBot`, `skypeForBusinessMicrosoftTeamsGateway`, `skypeForBusinessAudioVideoMcu`, `skypeForBusinessApplicationSharingMcu`, `skypeForBusinessCallQueues`, `skypeForBusinessAutoAttendant`, `mediationServer`, `mediationServerCloudConnectorEdition`, `exchangeUnifiedMessagingService`, `mediaController`, `conferencingAnnouncementService`, `conferencingAttendant`, `audioTeleconferencerController`, `skypeForBusinessUnifiedCommunicationApplicationPlatform`, `responseGroupServiceAnnouncementService`, `gateway`, `skypeTranslator`, `skypeForBusinessAttendant`, `responseGroupService`, `unknownFutureValue`.|
+|role|Microsoft. Graph. callRecords. onrole|Identifica a função do serviço usado por esse ponto de extremidade. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,, `unknown` `customBot` `skypeForBusinessMicrosoftTeamsGateway` `skypeForBusinessAudioVideoMcu` `skypeForBusinessApplicationSharingMcu` `skypeForBusinessCallQueues` `skypeForBusinessAutoAttendant` `mediationServer` `mediationServerCloudConnectorEdition` `exchangeUnifiedMessagingService` `mediaController` `conferencingAnnouncementService` `conferencingAttendant` , `audioTeleconferencerController` , `skypeForBusinessUnifiedCommunicationApplicationPlatform` ,, `responseGroupServiceAnnouncementService` `gateway` , `skypeTranslator` `skypeForBusinessAttendant` `responseGroupService` `voicemail` `unknownFutureValue` ,,,,,.|
 
 ## <a name="json-representation"></a>Representação JSON
 

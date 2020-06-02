@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8a2816ee0e71c4deec42a9b909642367f2b902c9
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 59f67434e131b871723ba152be945a37b18215eb
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44288568"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491279"
 ---
 # <a name="add-conversationmember"></a>Adicionar conversationMember
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------|-------------|
 |Delegado (conta corporativa ou de estudante)| ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChannelMember. ReadWrite. All, member. ReadWrite. Group ([RSC](https://aka.ms/teams-rsc)), Group. ReadWrite. All, Directory. ReadWrite. All |
+|Aplicativo| ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->
@@ -52,7 +52,7 @@ Inclua as propriedades a seguir no corpo da solicitação.
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |funções|coleção de cadeias de caracteres|As funções desse usuário.|
-|user|[Usuário](../resources/user.md)|O usuário a ser adicionado ao canal.|
+|usuário|[user](../resources/user.md)|O usuário a ser adicionado ao canal.|
 
 ## <a name="response"></a>Resposta
 
