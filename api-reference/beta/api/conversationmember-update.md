@@ -5,65 +5,65 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 94c6a33f24780ad9941ecd54fddd55611fe44822
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 8046572b62374407bc077fffa40e6ab692fefb75
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44288498"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491298"
 ---
-# <a name="update-conversationmember"></a><span data-ttu-id="10291-103">Atualizar conversationMember</span><span class="sxs-lookup"><span data-stu-id="10291-103">Update conversationMember</span></span>
+# <a name="update-conversationmember"></a><span data-ttu-id="9fcd0-103">Atualizar conversationMember</span><span class="sxs-lookup"><span data-stu-id="9fcd0-103">Update conversationMember</span></span>
 
-<span data-ttu-id="10291-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="10291-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9fcd0-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9fcd0-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="10291-105">Atualizar a função de um [conversationMember](../resources/conversationmember.md) em um [canal](../resources/channel.md).</span><span class="sxs-lookup"><span data-stu-id="10291-105">Update the role of a [conversationMember](../resources/conversationmember.md) in a [channel](../resources/channel.md).</span></span>
+<span data-ttu-id="9fcd0-105">Atualizar a função de um [conversationMember](../resources/conversationmember.md) em um [canal](../resources/channel.md).</span><span class="sxs-lookup"><span data-stu-id="9fcd0-105">Update the role of a [conversationMember](../resources/conversationmember.md) in a [channel](../resources/channel.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="10291-106">Essa operação só é suportada em canais com [channelMembershipType](../resources/enums.md#channelmembershiptype-values) de `private` .</span><span class="sxs-lookup"><span data-stu-id="10291-106">This operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelmembershiptype-values) of `private`.</span></span> <span data-ttu-id="10291-107">Chamadas com qualquer outro [channelMembershipType](../resources/enums.md#channelmembershiptype-values) retornará uma `400 Bad Request` resposta.</span><span class="sxs-lookup"><span data-stu-id="10291-107">Calls with any other [channelMembershipType](../resources/enums.md#channelmembershiptype-values) will return a `400 Bad Request` response.</span></span>
+> <span data-ttu-id="9fcd0-106">Essa operação só é suportada em canais com [channelMembershipType](../resources/enums.md#channelmembershiptype-values) de `private` .</span><span class="sxs-lookup"><span data-stu-id="9fcd0-106">This operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelmembershiptype-values) of `private`.</span></span> <span data-ttu-id="9fcd0-107">Chamadas com qualquer outro [channelMembershipType](../resources/enums.md#channelmembershiptype-values) retornará uma `400 Bad Request` resposta.</span><span class="sxs-lookup"><span data-stu-id="9fcd0-107">Calls with any other [channelMembershipType](../resources/enums.md#channelmembershiptype-values) will return a `400 Bad Request` response.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="10291-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="10291-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9fcd0-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="9fcd0-108">Permissions</span></span>
 
-<span data-ttu-id="10291-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="10291-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9fcd0-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9fcd0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="10291-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="10291-111">Permission Type</span></span>|<span data-ttu-id="10291-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="10291-112">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="9fcd0-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9fcd0-111">Permission Type</span></span>|<span data-ttu-id="9fcd0-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9fcd0-112">Permissions (from least to most privileged)</span></span>|
 |---------|-------------|
-|<span data-ttu-id="10291-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="10291-113">Delegated (work or school account)</span></span>| <span data-ttu-id="10291-114">ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="10291-114">ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="10291-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="10291-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="10291-116">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="10291-116">Not supported</span></span>|
-|<span data-ttu-id="10291-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="10291-117">Application</span></span>| <span data-ttu-id="10291-118">Member. ReadWrite. Group ([RSC](https://aka.ms/teams-rsc)), ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="10291-118">Member.ReadWrite.Group ([RSC](https://aka.ms/teams-rsc)), ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="9fcd0-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9fcd0-113">Delegated (work or school account)</span></span>| <span data-ttu-id="9fcd0-114">ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="9fcd0-114">ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="9fcd0-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9fcd0-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9fcd0-116">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="9fcd0-116">Not supported</span></span>|
+|<span data-ttu-id="9fcd0-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9fcd0-117">Application</span></span>| <span data-ttu-id="9fcd0-118">ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="9fcd0-118">ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="10291-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="10291-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9fcd0-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9fcd0-119">HTTP request</span></span>
 <!-- { "blockType": "ignored"} -->
 ```http
 PATCH /teams/{id}/channels/{id}/members/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="10291-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="10291-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9fcd0-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9fcd0-120">Request headers</span></span>
 
-| <span data-ttu-id="10291-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="10291-121">Header</span></span>       | <span data-ttu-id="10291-122">Valor</span><span class="sxs-lookup"><span data-stu-id="10291-122">Value</span></span> |
+| <span data-ttu-id="9fcd0-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="9fcd0-121">Header</span></span>       | <span data-ttu-id="9fcd0-122">Valor</span><span class="sxs-lookup"><span data-stu-id="9fcd0-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="10291-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="10291-123">Authorization</span></span>  | <span data-ttu-id="10291-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="10291-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="9fcd0-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="9fcd0-123">Authorization</span></span>  | <span data-ttu-id="9fcd0-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9fcd0-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="10291-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="10291-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9fcd0-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9fcd0-126">Request body</span></span>
 
-<span data-ttu-id="10291-127">No corpo da solicitação, forneça os valores para os campos relevantes a serem atualizados.</span><span class="sxs-lookup"><span data-stu-id="10291-127">In the request body, supply the values for the relevant fields to update.</span></span> <span data-ttu-id="10291-128">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="10291-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="10291-129">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="10291-129">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="9fcd0-127">No corpo da solicitação, forneça os valores para os campos relevantes a serem atualizados.</span><span class="sxs-lookup"><span data-stu-id="9fcd0-127">In the request body, supply the values for the relevant fields to update.</span></span> <span data-ttu-id="9fcd0-128">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="9fcd0-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="9fcd0-129">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="9fcd0-129">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="10291-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="10291-130">Property</span></span>   | <span data-ttu-id="10291-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="10291-131">Type</span></span> |<span data-ttu-id="10291-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="10291-132">Description</span></span>|
+| <span data-ttu-id="9fcd0-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9fcd0-130">Property</span></span>   | <span data-ttu-id="9fcd0-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="9fcd0-131">Type</span></span> |<span data-ttu-id="9fcd0-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="9fcd0-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="10291-133">funções</span><span class="sxs-lookup"><span data-stu-id="10291-133">roles</span></span>|<span data-ttu-id="10291-134">coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="10291-134">string collection</span></span>|<span data-ttu-id="10291-135">As funções desse usuário.</span><span class="sxs-lookup"><span data-stu-id="10291-135">The roles for that user.</span></span> <span data-ttu-id="10291-136">Deve ser "proprietário" ou vazio.</span><span class="sxs-lookup"><span data-stu-id="10291-136">Must be "owner" or empty.</span></span> <span data-ttu-id="10291-137">Os usuários convidados devem sempre ter a função "convidado" e não podem ser alterados.</span><span class="sxs-lookup"><span data-stu-id="10291-137">Guest users must always have role "guest" and cannot change.</span></span> |
+|<span data-ttu-id="9fcd0-133">funções</span><span class="sxs-lookup"><span data-stu-id="9fcd0-133">roles</span></span>|<span data-ttu-id="9fcd0-134">coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="9fcd0-134">string collection</span></span>|<span data-ttu-id="9fcd0-135">As funções desse usuário.</span><span class="sxs-lookup"><span data-stu-id="9fcd0-135">The roles for that user.</span></span> <span data-ttu-id="9fcd0-136">Deve ser "proprietário" ou vazio.</span><span class="sxs-lookup"><span data-stu-id="9fcd0-136">Must be "owner" or empty.</span></span> <span data-ttu-id="9fcd0-137">Os usuários convidados devem sempre ter a função "convidado" e não podem ser alterados.</span><span class="sxs-lookup"><span data-stu-id="9fcd0-137">Guest users must always have role "guest" and cannot change.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="10291-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="10291-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9fcd0-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="9fcd0-138">Response</span></span>
 
-<span data-ttu-id="10291-139">Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [conversationMember](../resources/conversationmember.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="10291-139">If successful, this method returns a `200 OK` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.</span></span>
+<span data-ttu-id="9fcd0-139">Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [conversationMember](../resources/conversationmember.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9fcd0-139">If successful, this method returns a `200 OK` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="10291-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="10291-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9fcd0-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9fcd0-140">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="10291-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="10291-141">Request</span></span>
+### <a name="request"></a><span data-ttu-id="9fcd0-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9fcd0-141">Request</span></span>
 
-<span data-ttu-id="10291-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="10291-142">Here is an example of the request.</span></span>
+<span data-ttu-id="9fcd0-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9fcd0-142">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="10291-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="10291-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9fcd0-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="9fcd0-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_conversation_member"
@@ -77,26 +77,26 @@ content-length: 26
   "roles": ["owner"]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="10291-144">C#</span><span class="sxs-lookup"><span data-stu-id="10291-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9fcd0-144">C#</span><span class="sxs-lookup"><span data-stu-id="9fcd0-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-conversation-member-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="10291-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="10291-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9fcd0-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9fcd0-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-conversation-member-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="10291-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="10291-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9fcd0-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9fcd0-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-conversation-member-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="10291-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="10291-147">Response</span></span>
+### <a name="response"></a><span data-ttu-id="9fcd0-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="9fcd0-147">Response</span></span>
 
-<span data-ttu-id="10291-148">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="10291-148">Here is an example of the response.</span></span>
+<span data-ttu-id="9fcd0-148">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9fcd0-148">Here is an example of the response.</span></span>
 
-><span data-ttu-id="10291-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="10291-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="9fcd0-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9fcd0-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
