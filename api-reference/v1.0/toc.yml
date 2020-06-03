@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Obter tokens de autenticação
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: /graph/auth/index?context=graph/api/1.0
       - name: Noções básicas
         href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -72,7 +72,7 @@ items:
       - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -167,11 +167,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -387,7 +387,7 @@ items:
                 href: api/planneruser-list-tasks.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -897,16 +897,20 @@ items:
                 href: api/onlinemeeting-delete.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
-                href: resources/callrecords-callrecord.md
-              - name: Obter registro de chamada
-                href: api/callrecords-callrecord-get.md
+                items:
+                  - name: Registro de chamadas
+                    href: resources/callrecords-callrecord.md
+                  - name: Obter registro de chamada
+                    href: api/callrecords-callrecord-get.md
               - name: Sessão
-                href: resources/callrecords-session.md
-              - name: Listar sessões
-                href: api/callrecords-session-list.md
+                items:
+                  - name: Sessão
+                    href: resources/callrecords-session.md
+                  - name: Listar sessões
+                    href: api/callrecords-session-list.md
       - name: Experiências entre dispositivos
         displayName: Project Rome
         items:
@@ -936,7 +940,7 @@ items:
       - name: Dispositivos e aplicativos
         displayName: Intune
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/intune-graph-overview.md
           - name: Gerenciamento de aplicativos
             href: resources/intune-app-conceptual.md
@@ -1030,7 +1034,7 @@ items:
               - name: Aplicativo da loja iOS
                 href: resources/intune-apps-iosstoreapp.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-apps-iosstoreapp-list.md
                   - name: Obter
                     href: api/intune-apps-iosstoreapp-get.md
@@ -1060,7 +1064,7 @@ items:
               - name: Livro eletrônico do VPP do iOS
                 href: resources/intune-books-iosvppebook.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-books-iosvppebook-list.md
                   - name: Obter
                     href: api/intune-books-iosvppebook-get.md
@@ -1073,7 +1077,7 @@ items:
               - name: Atribuição de livros eletrônicos do VPP do iOS
                 href: resources/intune-books-iosvppebookassignment.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-books-iosvppebookassignment-list.md
                   - name: Obter
                     href: api/intune-books-iosvppebookassignment-get.md
@@ -1636,7 +1640,7 @@ items:
               - name: Status do dispositivo de conformidade do dispositivo
                 href: resources/intune-deviceconfig-devicecompliancedevicestatus.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-devicecompliancedevicestatus-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-devicecompliancedevicestatus-get.md
@@ -1708,7 +1712,7 @@ items:
               - name: Estado de configuração de conformidade do dispositivo
                 href: resources/intune-deviceconfig-devicecompliancesettingstate.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-devicecompliancesettingstate-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-devicecompliancesettingstate-get.md
@@ -1728,7 +1732,7 @@ items:
               - name: Status do usuário de conformidade do dispositivo
                 href: resources/intune-deviceconfig-devicecomplianceuserstatus.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-get.md
@@ -1926,7 +1930,7 @@ items:
               - name: Configuração de atualização do iOS
                 href: resources/intune-deviceconfig-iosupdateconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-iosupdateconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-iosupdateconfiguration-get.md
@@ -1939,7 +1943,7 @@ items:
               - name: Status do dispositivo de atualização do iOS
                 href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
@@ -3326,7 +3330,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -3634,7 +3638,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -4439,7 +4443,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -4485,7 +4489,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Plano
             href: resources/plannerplan.md
