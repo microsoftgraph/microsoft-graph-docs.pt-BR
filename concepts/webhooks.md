@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: c4e8b968330ee29427893eb41dd7f4595333d629
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 562eaccdd776ed22a4e171f6c0107f83be6acaab
+ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491690"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44524250"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -46,7 +46,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 
 Você pode criar uma assinatura para uma pasta de específica do Outlook, como a Caixa de Entrada: `me/mailFolders('inbox')/messages`
 
-Ou para um recurso de nível superior: `me/messages`, `me/contacts`, `me/events`, `users` ou `groups`
+Ou para um recurso de nível superior:,,,, `/me/messages` `/me/contacts` `/me/events` `users` `groups` ou`/communications/callRecords`
 
 Ou para uma instância de recurso específica: `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
 
