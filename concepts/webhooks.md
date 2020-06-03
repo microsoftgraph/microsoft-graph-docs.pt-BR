@@ -1,22 +1,22 @@
 ---
 title: Configurar notificações para alterações nos dados de usuário
-description: A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após alterações.
+description: A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações de alteração. Os aplicativos cliente usam notificações de alteração para atualizar seu estado nas alterações.
 author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: bdb4b23bf14e7c63cbaeeb21c4d559aa5f46b35f
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
-ms.translationtype: HT
+ms.openlocfilehash: c4e8b968330ee29427893eb41dd7f4595333d629
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218149"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491690"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
-A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após alterações.
+A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações de alteração. Os aplicativos cliente usam notificações de alteração para atualizar seu estado nas alterações.
 
-Depois que o Microsoft Graph aceita a solicitação de assinatura, ele envia notificações por push para a URL especificada na assinatura. O aplicativo então realiza ações de acordo com sua lógica comercial. Por exemplo, ele busca mais dados, atualiza o cache e as exibições, etc.
+Depois que o Microsoft Graph aceita a solicitação de assinatura, ele envia notificações de alteração para a URL especificada na assinatura. O aplicativo então realiza ações de acordo com sua lógica comercial. Por exemplo, ele busca mais dados, atualiza o cache e as exibições, etc.
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
@@ -24,7 +24,7 @@ Depois que o Microsoft Graph aceita a solicitação de assinatura, ele envia not
 > [!div class="nextstepaction"]
 > [Criar um aplicativo webhook com .NET Core](/graph/tutorials/change-notifications)
 
-Por padrão, as notificações de alteração não contêm dados de recursos, exceto o `id`. Se o aplicativo exigir dados de recursos, ele poderá fazer chamadas para as APIs do Microsoft Graph para obter o recurso completo. Este artigo usa o recurso de **usuário** como um exemplo para trabalhar com notificações.
+Por padrão, as notificações de alteração não contêm dados de recursos, exceto o `id`. Se o aplicativo exigir dados de recursos, ele poderá fazer chamadas para as APIs do Microsoft Graph para obter o recurso completo. Este artigo usa o recurso **User** como um exemplo para trabalhar com notificações de alteração.
 
 Um aplicativo também pode se inscrever para alterar notificações que incluem dados de recursos, para evitar a necessidade de fazer chamadas de API adicionais para acessar os dados. Esses aplicativos precisarão implementar um código extra para lidar com os requisitos de tais notificações, especificamente: responder às notificações do ciclo de vida da assinatura, validar a autenticidade das notificações e descriptografar os dados do recurso. Mais tipos de recursos terão suporte para esse tipo de notificações no futuro. Para saber mais sobre como trabalhar com essas notificações, confira [Configurar notificações de alteração que incluem dados de recurso (visualização)](webhooks-with-resource-data.md).
 
@@ -41,7 +41,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 - Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _qualquer pasta_ no OneDrive pessoal do usuário
 - Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _pasta raiz_ no OneDrive for Business
 - [Alerta][] de segurança
-- Equipes [callRecord][] (visualização)
+- Teams [callRecord][]
 - [chatMessage][] do Teams (visualização)
 
 Você pode criar uma assinatura para uma pasta de específica do Outlook, como a Caixa de Entrada: `me/mailFolders('inbox')/messages`
@@ -73,7 +73,7 @@ Quando os limites são excedidos, a tentativa de criar uma assinatura resultará
 
 - Não há suporte a locatários do Microsoft Azure AD B2C.
 
-- Não há suporte a notificações para entidades de usuário para contas Microsoft pessoais.
+- A notificação Changfe para entidades de usuário não tem suporte para contas pessoais da Microsoft.
 
 - Existe um [problema conhecido](known-issues.md#change-notifications) nas assinaturas de usuários e grupos.
 
@@ -91,7 +91,7 @@ Use:
 
 As assinaturas têm tempo de vida limitado. Os aplicativos precisam renovar suas assinaturas antes do tempo de expiração. Caso contrário, será preciso criar uma nova assinatura. Confira a lista de prazos máximos em [Prazo máximo de assinatura por tipo de recurso](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).
 
-Os aplicativos também podem cancelar a assinatura a qualquer momento para deixarem de receber notificações.
+Os aplicativos também podem cancelar a assinatura a qualquer momento para parar de receber notificações de alteração.
 
 ## <a name="managing-subscriptions"></a>Gerenciar assinaturas
 
@@ -99,7 +99,7 @@ Os clientes podem criar, renovar e excluir assinaturas.
 
 ### <a name="creating-a-subscription"></a>Criar uma assinatura
 
-Criar uma assinatura é a primeira etapa para começar a receber notificações de um recurso. O processo de assinatura ocorre da seguinte maneira:
+A criação de uma assinatura é a primeira etapa para começar a receber notificações de alteração para um recurso. O processo de assinatura é o seguinte:
 
 1. O cliente envia uma solicitação de assinatura (POST) para um recurso específico.
 
@@ -112,7 +112,7 @@ Criar uma assinatura é a primeira etapa para começar a receber notificações 
 
 1. O Microsoft Graph envia uma resposta de volta para o cliente.
 
-O cliente deve armazenar a ID da assinatura para correlacionar notificações com a assinatura.
+O cliente deve armazenar a ID da assinatura para correlacionar notificações de alteração à assinatura.
 
 #### <a name="subscription-request-example"></a>Exemplo de solicitação de assinatura
 
@@ -132,7 +132,7 @@ As propriedades `changeType`, `notificationUrl`, `resource` e `expirationDateTim
 
 A propriedade `resource` especifica o recurso que será monitorado para detectar alterações. Por exemplo, você pode criar uma assinatura para uma pasta de email específica: `me/mailFolders('inbox')/messages` ou em nome de um usuário, atribuído com uma autorização do administrador: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`.
 
-Embora a `clientState` não seja obrigatória, você deve incluí-la para manter a conformidade com nosso processo recomendado de manipulação de notificações. A definição desta propriedade permitirá confirmar se as notificações recebidas partirão do serviço do Microsoft Graph. Por esse motivo, o valor da propriedade deve continuar em segredo e deve ser conhecido somente por seu aplicativo e pelo serviço do Microsoft Graph.
+Embora `clientState` não seja necessário, você deve incluí-lo para estar em conformidade com o processo de tratamento de notificação de alterações recomendado. A definição dessa propriedade permitirá que você confirme se as notificações de alteração recebidas são originadas do serviço do Microsoft Graph. Por esse motivo, o valor da propriedade deve continuar em segredo e deve ser conhecido somente por seu aplicativo e pelo serviço do Microsoft Graph.
 
 Se tiver êxito, o Microsoft Graph retornará um código `201 Created` e um objeto [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) no corpo.
 
@@ -180,7 +180,7 @@ Se tiver êxito, o Microsoft Graph retornará um código `200 OK` e um objeto [s
 
 ### <a name="deleting-a-subscription"></a>Excluindo uma assinatura
 
-O cliente pode parar de receber notificações excluindo a assinatura com o uso de sua ID.
+O cliente pode parar de receber notificações de alteração excluindo a assinatura usando sua ID.
 
 ```http
 DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
@@ -188,45 +188,24 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 Se tiver êxito, o Microsoft Graph retornará um código `204 No Content`.
 
-## <a name="notifications"></a>Notificações
+## <a name="change-notifications"></a>Notificações de alteração
 
-O cliente começa a receber notificações depois de criar a assinatura. O Microsoft Graph envia uma solicitação POST à URL de notificação quando o recurso é alterado. Notificações são enviadas somente para as alterações do tipo especificado na assinatura, por exemplo, `created`.
+O cliente começa a receber notificações de alteração após a criação da assinatura. O Microsoft Graph envia uma solicitação POST à URL de notificação quando o recurso é alterado. As notificações de alteração são enviadas somente para as alterações do tipo especificado na assinatura, por exemplo, `created` .
 
-> **Observação:** ao usar várias assinaturas que monitoram o mesmo tipo de recurso e usam a mesma URL de notificação, é possível enviar uma solicitação POST incluindo várias notificações com IDs de assinatura diferentes. Não há garantias de que todas as notificações na solicitação POST pertencerão a uma única assinatura.
+> **Observação:** Ao usar várias assinaturas que monitoram o mesmo tipo de recurso e usam a mesma URL de notificação, é possível enviar uma POSTAgem que conterá várias notificações de alteração com IDs de assinatura diferentes. Não há garantia de que todas as notificações de alteração na POSTAgem pertençam a uma única assinatura.
 
-### <a name="notification-properties"></a>Propriedades do objeto notification
+### <a name="change-notification-example"></a>Exemplo de notificação de alteração
 
-O objeto notification tem as seguintes propriedades:
+> **Observação:** para obter uma descrição completa dos dados enviados quando as notificações de alteração são entregues, consulte [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
 
-| Propriedade | Tipo | Descrição |
-|:---------|:-----|:------------|
-| subscriptionId | string | A ID da assinatura que gerou a notificação. |
-| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | O tempo de expiração da assinatura. |
-| clientState | string | A propriedade `clientState` especificada na solicitação de assinatura. (caso haja). |
-| changeType | string | O tipo de evento que gerou a notificação. Por exemplo, `created` ao receber um email ou `updated` ao marcar uma mensagem como lida. |
-| recurso | string | O URI do recurso relativo a `https://graph.microsoft.com`. |
-| resourceData | objeto | O conteúdo dessa propriedade depende do tipo de recurso que está sendo assinado. |
-| tenantId | cadeia de caracteres | A ID do locatário do qual a notificação se originou. |
-
-Por exemplo, para recursos do Outlook, `resourceData` contém os seguintes campos:
-
-| Propriedade | Tipo | Descrição |
-|:---------|:-----|:------------|
-| @odata.type | string | O tipo de entidade OData no Microsoft Graph que descreve o objeto representado. |
-| @odata.id | string | O identificador OData do objeto. |
-| @odata.etag | string | A marca da entidade HTTP que representa a versão do objeto. |
-| id | string | O identificador do objeto. |
-
-> **Observação** O valor de `id` fornecido em `resourceData` é válido no momento em que a notificação é gerada. Algumas ações, como mover uma mensagem para outra pasta, podem fazer com que o `id` não seja mais válido quando a notificação for processada.
-
-### <a name="notification-example"></a>Exemplo de notificação
-
-Quando o usuário recebe um email, o Microsoft Graph envia uma notificação semelhante à seguinte:
+Quando o usuário recebe um email, o Microsoft Graph envia uma notificação de alteração como a seguinte:
 
 ```json
 {
   "value": [
     {
+      "id": "lsgTZMr9KwAAA",
+      "sequenceNumber": 10,
       "subscriptionId":"<subscription_guid>",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
       "clientState":"secretClientValue",
@@ -245,23 +224,23 @@ Quando o usuário recebe um email, o Microsoft Graph envia uma notificação sem
 }
 ```
 
-Observe que o campo `value` é uma matriz de objetos. Quando houver muitas notificações na fila, o Microsoft Graph poderá enviar vários itens em uma única solicitação. Notificações de diferentes assinaturas podem ser incluídas na mesma solicitação de notificação.
+> **Observação:** o `value` campo é uma matriz de objetos. Quando muitas notificações de alteração são enfileiradas, o Microsoft Graph pode enviar vários itens em uma única solicitação. As notificações de alteração de assinaturas diferentes podem ser incluídas na mesma solicitação.
 
-### <a name="processing-the-notification"></a>Processar a notificação
+### <a name="processing-the-change-notification"></a>Processando a notificação de alteração
 
-Cada notificação recebida por seu aplicativo deve ser processada. Estas são as tarefas mínimas que o seu aplicativo deve realizar para processar uma notificação:
+Cada notificação de alteração recebida pelo aplicativo deve ser processada. Veja a seguir as tarefas mínimas que seu aplicativo deve executar para processar uma notificação de alteração:
 
-1. Envie um código de status `202 - Accepted` na sua resposta para o Microsoft Graph. Se o Microsoft Graph não receber um código de classe 2xx, ele tentará publicar a notificação algumas vezes, por um período de aproximadamente 4 horas; depois disso, a notificação será descartada e não será entregue.
+1. Envie um código de status `202 - Accepted` na sua resposta para o Microsoft Graph. Se o Microsoft Graph não receber um código de classe 2xx, ele tentará publicar a notificação de alteração diversas vezes, por um período de cerca de 4 horas; Após isso, a notificação de alteração será cancelada e não será entregue.
 
-    > **Observação:** Envie um código de status `202 - Accepted` assim que receber a notificação, mesmo antes de validar a sua autenticidade. Você está simplesmente confirmando o recebimento da notificação e impedindo tentativas desnecessárias. O tempo limite atual é de 30 segundos, mas pode ser reduzido no futuro para otimizar o desempenho do serviço.
+    > **Observação:** Envie um `202 - Accepted` código de status assim que receber a notificação de alteração, mesmo antes de validar sua autenticidade. Você está apenas confirmando o recebimento da notificação de alteração e evitando tentativas desnecessárias. O tempo limite atual é de 30 segundos, mas pode ser reduzido no futuro para otimizar o desempenho do serviço.
 
 1. Validar a propriedade `clientState`. Ela deve corresponder ao valor enviado originalmente com a solicitação de criação da assinatura.
 
-    > **Observação:** se isso não for verdadeiro, você não deverá considerar esta notificação como válida. É possível que a notificação não tenha se originado do Microsoft Graph e possa ter sido enviada por um ator invasor. Você também deve investigar de onde vem a notificação e tomar as medidas apropriadas.
+    > **Observação:** Se isso não for verdadeiro, você não deve considerar essa uma notificação de alteração válida. É possível que a notificação de alteração não tenha origem no Microsoft Graph e tenha sido enviada por um ator invasor. Você também deve investigar onde a notificação de alteração provém e tomar as medidas apropriadas.
 
 1. Atualize seu aplicativo com base na sua lógica comercial.
 
-Repita o procedimento para outras notificações na solicitação.
+Repita para outras notificações de alteração na solicitação.
 
 ## <a name="code-samples"></a>Exemplos de código
 
@@ -274,7 +253,7 @@ Os exemplos de código a seguir estão disponíveis no GitHub.
 
 ## <a name="firewall-configuration"></a>Configuração do firewall
 
-Opcionalmente, você pode configurar o firewall que protege a URL de notificação para permitir conexões de entrada somente pelo Microsoft Graph. Isso permite que você reduza a exposição posterior a notificações inválidas que são enviadas para sua URL de notificação. Essas notificações inválidas podem estar tentando desencadear a lógica personalizada que você implementou. Para obter uma lista completa de endereços IP usados pelo Microsoft Graph para oferecer notificações de alteração, confira [pontos de extremidade adicionais do Office 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
+Opcionalmente, você pode configurar o firewall que protege a URL de notificação para permitir conexões de entrada somente pelo Microsoft Graph. Isso permite que você reduza mais exposição a notificações de alteração inválidas que são enviadas para sua URL de notificação. Essas notificações de alteração inválidas podem estar tentando disparar a lógica personalizada que você implementou. Para obter uma lista completa de endereços IP usados pelo Microsoft Graph para oferecer notificações de alteração, confira [pontos de extremidade adicionais do Office 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
 > **Observação:** Os endereços IP listados que são usados para fornecer notificações de alteração podem ser atualizados a qualquer momento sem aviso prévio.
 
@@ -294,5 +273,5 @@ Opcionalmente, você pode configurar o firewall que protege a URL de notificaç�
 [message]: /graph/api/resources/message?view=graph-rest-1.0
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord
+[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
 [chatMessage]: /graph/api/resources/chatmessage

@@ -1,24 +1,25 @@
 ---
 title: tipo de recurso de assinatura
-description: 'Uma assinatura permite que um aplicativo cliente receba notificações sobre dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:'
+description: 'Uma assinatura permite que um aplicativo cliente receba notificações de alteração sobre as alterações nos dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:'
 localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8ede2274abebbba1148762f5d3606cd61a4578a4
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
-ms.translationtype: HT
+ms.openlocfilehash: b5f71bdeca19834b8d4721aaa6e8416916a15b58
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108428"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491795"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
 Namespace: microsoft.graph
 
-Uma assinatura permite que um aplicativo cliente receba notificações sobre dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:
+Uma assinatura permite que um aplicativo cliente receba notificações de alteração sobre as alterações nos dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:
 
 - Um [alerta][] do Microsoft Graph Security API
+- Uma [callRecord][] produzida após uma chamada ou reunião no Microsoft Teams
 - Um [conversa][] de um grupo do Office 365
 - Conteúdo da hierarquia de uma pasta raiz [driveItem][] no OneDrive for Business ou de uma pasta raiz ou uma subpasta [driveItem][] no OneDrive pessoal do usuário
 - Uma [lista][] em um [site][] do SharePoint
@@ -31,7 +32,7 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 
 | Método | Tipo de retorno | Descrição |
 |:-------|:------------|:------------|
-| [Criar assinatura](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Assina um aplicativo de escuta para receber notificações quando dados do Microsoft Graph são alterados. |
+| [Criar assinatura](../api/subscription-post-subscriptions.md) | [assinatura](subscription.md) | Assina um aplicativo de escuta para receber notificações de alteração quando os dados do Microsoft Graph são alterados. |
 | [Atualizar assinatura](../api/subscription-update.md) | [subscription](subscription.md) | Renova uma assinatura atualizando seu tempo de expiração. |
 | [Listar de assinaturas](../api/subscription-list.md) | [assinatura](subscription.md) | Lista assinaturas ativas. |
 | [Obter assinatura](../api/subscription-get.md) | [subscription](subscription.md) | Lê as propriedades e as relações do objeto subscription. |
@@ -41,13 +42,13 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| changeType | cadeia de caracteres | Obrigatório. Indica o tipo de alteração no recurso inscrito que gerará uma notificação. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula.<br><br>Observação: As notificações de lista e do item na raiz da unidade têm suporte apenas para o changeType `updated`. Notificações de grupos e usuário suportam `updated` e `deleted` changeType. |
-| notificationUrl | cadeia de caracteres | Obrigatório. A URL do ponto de extremidade que receberá as notificações. Esta URL deve usar o protocolo HTTPS. |
-| recurso | cadeia de caracteres | Obrigatório. Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/v1.0/`). Consulte os possíveis valores do [caminho](webhooks.md) do recurso de cada recurso suportado.|
+| changeType | string | Obrigatório. Indica o tipo de alteração no recurso inscrito que irá gerar uma notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula.<br><br>Observação: as notificações de alteração de item e de lista da raiz da unidade dão suporte somente a `updated` ChangeType. Suporte `updated` e ChangeType de notificações de alteração de grupo e usuário `deleted` . |
+| notificationUrl | string | Obrigatório. A URL do ponto de extremidade que receberá as notificações de alteração. Esta URL deve usar o protocolo HTTPS. |
+| recurso | string | Obrigatório. Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/v1.0/`). Consulte os possíveis valores do [caminho](webhooks.md) do recurso de cada recurso suportado.|
 | expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | Obrigatório. Especifica a data e a hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. |
-| clientState | string | Opcional. Especifica o valor da propriedade `clientState` enviada pelo serviço em cada notificação. O comprimento máximo é de 128 caracteres. O cliente pode verificar se a notificação foi proveniente do serviço comparando o valor da propriedade `clientState` enviada com a assinatura com o valor da propriedade `clientState` recebida com cada notificação. |
-| id | string | Identificador exclusivo da assinatura. Somente leitura. |
-| ApplicationId | cadeia de caracteres | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
+| clientState | string | Opcional. Especifica o valor da `clientState` Propriedade enviada pelo serviço em cada notificação de alteração. O comprimento máximo é de 128 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço, comparando o valor da `clientState` Propriedade enviada com a assinatura com o valor da `clientState` Propriedade recebida com cada notificação de alteração. |
+| id | cadeia de caracteres | Identificador exclusivo da assinatura. Somente leitura. |
+| ApplicationId | string | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
 | creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usado delegada permissões para criar a assinatura, esse campo contém a id do usuário que entrou no aplicativo chamado em nome dele. Se o aplicativo usou permissões do aplicativo, esse campo contém a id da entidade de serviço correspondente ao aplicativo. Apenas leitura. |
 | latestSupportedTlsVersion | Cadeia de caracteres | Especifica a versão mais recente do protocolo TLS que o ponto de extremidade, especificado por **notificationUrl**, é compatível. Os valores possíveis são: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>Para os assinantes cujo ponto de extremidade de notificação suporta uma versão menor que a versão recomendada atualmente (TLS 1.2), especificar essa propriedade por uma [linha do tempo](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) definida, permite o uso temporário da versão preterida do TLS antes de concluir a atualização para o TLS 1.2. Para esses assinantes, não definir essa propriedade pela linha do tempo resultaria em uma falha nas operações da assinatura. </br></br>Para os assinantes cujo ponto de extremidade já tem suporte ao TLS 1.2, a configuração dessa propriedade é opcional. Nesses casos, o Microsoft Graph padroniza a propriedade como `v1_2`. |
 
@@ -62,6 +63,7 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | Conversas em grupo | 4230 minutos (em 3 dias)    |
 | Itens raiz de unidade    | 4230 minutos (em 3 dias)    |
 | Lista do SharePoint     | 4230 minutos (em 3 dias)    |
+| Teams callRecord    | 4230 minutos (em 3 dias)  |
 | Alertas de segurança     | 43200 minutos (em 30 dias )  |
 
 > **Observação:** Os aplicativos existentes e os novos aplicativos não devem ultrapassar o valor suportado. No futuro, as solicitações para criar ou renovar uma assinatura além do valor máximo falharão.
@@ -119,6 +121,7 @@ Veja a seguir uma representação JSON do recurso.
 [message]: ./message.md
 [user]: ./user.md
 [alert]: ./alert.md
+[callRecord]: ./callrecords-callrecord.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

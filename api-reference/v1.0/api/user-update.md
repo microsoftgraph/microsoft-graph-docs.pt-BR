@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8740cd2011f3222b3a37129c66a0129d0b6f75e3
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
-ms.translationtype: HT
+ms.openlocfilehash: 4136e62886c91092c62349f0587d60c53f4d2c83
+ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108953"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44413501"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -83,6 +83,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |usageLocation|String|Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países.  Os exemplos incluem: "US", "JP" e "GB". Não anulável.|
 |userPrincipalName|String|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](../resources/organization.md). Oferece suporte a $filter e $orderby.
 |userType|String|Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”.          |
+
+> [!NOTE] 
+> As propriedades a seguir não podem ser atualizadas usando um contexto somente aplicativo: **aboutMe**, **aniversário**, **HireDate**, **interesses**, **meusite**, **pastProjects**, **PreferredName**, **responsabilidades**, **escolas**e **habilidades**.
 
 ## <a name="response"></a>Resposta
 

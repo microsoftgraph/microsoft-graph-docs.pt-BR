@@ -1,31 +1,32 @@
 ---
 title: Criar assinatura
-description: Assina um aplicativo de escuta para receber notificações quando os dados no Microsoft Graph são alterados.
+description: Assina um aplicativo de escuta para receber notificações de alteração quando os dados do Microsoft Graph são alterados.
 localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 05914a1014e9d635da8d38927e207a5c17823c93
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
-ms.translationtype: HT
+ms.openlocfilehash: 28053ccd79b8cbab521f3cbd702dd46835d14ecb
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543426"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491824"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
 Namespace: microsoft.graph
 
-Assinar um aplicativo de escuta para receber notificações quando o tipo de alterações solicitadas ocorrer em recursos específicos no Microsoft Graph.
+Assina um aplicativo de escuta para receber notificações de alteração quando o tipo solicitado de alterações ocorrerem no recurso especificado no Microsoft Graph.
 
 ## <a name="permissions"></a>Permissões
 
- Criar uma assinatura exige o escopo de leitura do recurso. Por exemplo, para obter notificações por mensagens, seu aplicativo precisa da `Mail.Read` permissão. 
+ Criar uma assinatura exige o escopo de leitura do recurso. Por exemplo, para obter notificações de alteração em mensagens, seu aplicativo precisa da `Mail.Read` permissão. 
  
  Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
+|[callRecord](../resources/callrecords-callrecord.md) (/Communications/callRecords) | Sem suporte | Sem suporte | CallRecords.Read.All  |
 |[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Sem suporte | Files.ReadWrite | Sem suporte |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Sem suporte | Files.ReadWrite.All |
@@ -39,7 +40,7 @@ Assinar um aplicativo de escuta para receber notificações quando o tipo de alt
 
 > **Observação:** Há limitações adicionais para assinaturas de itens no OneDrive e no Outlook. Limitações para criar e gerenciar assinaturas (receber, atualizar e excluir assinaturas).
 
-- No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações são enviadas pelos tipos de alterações solicitadas na pasta inscrita, ou qualquer arquivo, pasta ou outras instâncias **driveItem** na sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
+- No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações de alteração são enviadas para os tipos solicitados de alterações na pasta inscrita ou qualquer arquivo, pasta ou outra instância do **driveItem** em sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
 
 - No Outlook, a permissão delegada dá suporte a inscrição de itens em pastas apenas na caixa de correio do usuário conectado. Isso significa que, por exemplo, você não pode usar os calendários de permissões delegadas. Leia para assinar eventos na caixa de correio de outro usuário.
 - Se inscrever para alterar as notificações de contatos, eventos no Outlook ou mensagens em pastas_compartilhadas ou delegadas_:
@@ -65,12 +66,13 @@ POST /subscriptions
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
+Para obter detalhes sobre como os erros são retornados, confira [respostas de erro][error-response].
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para enviar uma notificação quando o usuário receber um novo email.
+Aqui está um exemplo da solicitação para enviar uma notificação de alteração quando o usuário recebe um novo email.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -128,6 +130,7 @@ Estes são os valores válidos da propriedade de recurso da assinatura:
 |Unidades|me/drive/root|
 |Listar|sites/{site-id}/lists/{list-id}|
 |Alerta de segurança|security/alerts?$filter=status eq 'New'|
+|Registros de chamadas|comunicações/callRecords|
 
 ##### <a name="response"></a>Resposta
 
@@ -160,6 +163,8 @@ Content-length: 252
 ## <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
 
 O ponto de extremidade da notificação da assinatura (especificado na `notificationUrl` propriedade) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [Configurar notificações para alterações nos dados do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
+
+[error-response]: /graph/errors
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
