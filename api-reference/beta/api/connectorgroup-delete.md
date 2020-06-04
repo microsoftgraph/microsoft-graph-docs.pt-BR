@@ -2,23 +2,24 @@
 title: Excluir um ou de conector
 description: Excluir um conector.
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 960fe8a61dc00eaddcd6c96e255ea7cb7033434c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 45b0216562ce8fefa139726446fbf3eb97daaabd
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437480"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556062"
 ---
 # <a name="delete-connectorgroup"></a>Excluir um ou de conector
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um conector.
+Excluir um [conector](../resources/connectorgroup.md). Todos os [conectores](../resources/connector.md) e aplicativos devem ser removidos do grupo de conectores para que um grupo de conectores possa ser excluído.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -29,12 +30,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
-> **Observação:** O grupo de conectores não deve ter conectores associados a ele.
-
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /connectorGroups/{id}
+DELETE /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -50,16 +49,16 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
   "name": "delete_connectorgroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/{ver}/connectorGroups/{id}
+DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true

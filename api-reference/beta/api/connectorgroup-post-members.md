@@ -2,24 +2,24 @@
 title: Adicionar conector ao conector
 description: Use esta API para adicionar um conector a um conector.
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: dce30f90f35bb373be845aaa9390c9da8c54d02f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de3f64a0b1efec39497d2b6e4a24bc690539fe75
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437179"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44555782"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Adicionar conector ao conector
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para adicionar um conector a um conector.
-## <a name="permissions"></a>Permissões
+Adicionar um [conector](../resources/connector.md) a um [conector](../resources/connectorgroup.md).
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -31,7 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /connectorGroups/{id}/members/$ref
+POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members/$ref
+
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -53,12 +54,12 @@ Este é um exemplo da solicitação.
   "name": "create_connector_from_connectorgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectorGroups/{id}/members/$ref
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members/$ref
 Content-type: application/json
 Content-length: 104
 
 {
-  "@odata.id": "https://graph.microsoft.com/{ver}/connector/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}"
 }
 ```
 No corpo da solicitação, forneça uma representação JSON de um link para um objeto [Connector](../resources/connector.md) .

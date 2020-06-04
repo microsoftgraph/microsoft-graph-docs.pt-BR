@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0a4e1e40a5a8774be9498f6b89d235557ba2948e
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 2b36f8307e580bc018a713822e4e9f2ea6f5586c
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200023"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556230"
 ---
 # <a name="onpremisespublishingprofile-resource-type"></a>tipo de recurso onPremisesPublishingProfile
 
@@ -18,22 +18,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Vários serviços do Azure (por exemplo, autenticação de passagem do Azure Active Directory Connect, WORKDAY para o provisionamento de usuários do Azure AD) permitem um acesso condicional a vários recursos locais de fora da rede corporativa. [Os agentes locais](onpremisesagent.md) instalados por um administrador de locatários podem ser configurados para acessar/lidar com solicitações de um [recurso publicado](publishedresource.md)específico.
-Os [grupos de agentes](onpremisesagentgroup.md) permitem que um administrador de locatários atribua agentes específicos para atender recursos locais publicados específicos. Os administradores de locatários podem agrupar vários agentes e, em seguida, atribuir cada recurso publicado a um grupo. Todo o conjunto de entidades do mesmo tipo de publicação local é representado pelo **onPremisesPublishingProfile**.
+Vários serviços do Azure (por exemplo, a autenticação de [passagem](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta)do Azure Active Directory Connect, o [WORKDAY para o provisionamento de usuários do Azure ad](https://docs.microsoft.com/azure/active-directory/saas-apps/workday-inbound-tutorial)e o [proxy de aplicativo](https://aka.ms/whyappproxy) permitem o acesso a vários recursos locais de fora da rede corporativa.
 
-## <a name="methods"></a>Métodos
+[Os agentes locais](onpremisesagent.md) (ou [conectores](connector.md) para o proxy de aplicativo) instalados por um administrador podem ser configurados para encaminhar solicitações a um determinado [recurso publicado](publishedresource.md).
+[Grupos de agente](onpremisesagentgroup.md) (ou [grupos de conectores](connectorgroup.md) para o proxy de aplicativo) permitem que um administrador atribua agentes específicos para atender a recursos locais publicados específicos. Os administradores também podem agrupar vários agentes e, em seguida, atribuir cada recurso publicado a um grupo de agentes. Todo o conjunto de entidades do mesmo tipo de publicação local é representado pelo **onPremisesPublishingProfile**.
+
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Obter onPremisesPublishingProfile](../api/onpremisespublishingprofile-get.md) | [onPremisesPublishingProfile](onpremisespublishingprofile.md) | Leia as propriedades e os relacionamentos de um objeto **onPremisesPublishingProfile** . |
-| [Atualizar onPremisesPublishingProfile](../api/onpremisespublishingprofile-update.md) | Nenhum | Atualize um objeto [onPremisesPublishingProfile](onpremisespublishingprofile.md) .
+| [Atualizar onPremisesPublishingProfile](../api/onpremisespublishingprofile-update.md) | Nenhuma | Atualize um objeto [onPremisesPublishingProfile](onpremisespublishingprofile.md) . |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)| Representa um objeto **hybridAgentUpdaterConfiguration** .|
-|id|String| Representa um tipo de publicação. Os valores possíveis são: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Somente leitura.|
+|id|String| Representa um tipo de publicação. Os valores possíveis são: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Somente leitura.|
+|isEnabled|Boolean| Representa se o [proxy de aplicativo do Azure ad](https://aka.ms/whyappproxy) está habilitado para o locatário. |
 
 ## <a name="relationships"></a>Relações
 
@@ -41,6 +44,8 @@ Os [grupos de agentes](onpremisesagentgroup.md) permitem que um administrador de
 |:-------------|:------------|:------------|
 |agentGroups|coleção [onPremisesAgentGroup](onpremisesagentgroup.md)| Lista de objetos **onPremisesAgentGroup** existentes. Somente leitura. Anulável.|
 |SNMP|coleção [onPremisesAgent](onpremisesagent.md)| Lista de objetos **onPremisesAgent** existentes. Somente leitura. Anulável.|
+|connectorGroups|coleção de [conectores](connectorgroup.md)| Lista de objetos de **conector** existentes para aplicativos publicados por meio do proxy de aplicativo. Somente leitura. Anulável.|
+|conectores|coleção [Connector](connector.md)| Lista de objetos **conectores** existentes para aplicativos publicados por meio do proxy de aplicativo. Somente leitura. Anulável.|
 |publishedResources|coleção [publishedResource](publishedresource.md)| Lista de objetos **publishedResource** existentes. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON

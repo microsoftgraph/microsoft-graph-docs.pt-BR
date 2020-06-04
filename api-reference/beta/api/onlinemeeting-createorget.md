@@ -1,16 +1,16 @@
 ---
 title: 'onlineMeeting: createOrGet'
-description: Criar uma reunião online com uma ID externa personalizada especificada. Se a ID externa já existir, essa API retornará o objeto [onlineMeeting](../resources/onlinemeeting.md) com essa ID externa.
+description: Criar uma reunião online com uma ID externa personalizada especificada. Se a ID externa já existir, essa API retornará o objeto **onlineMeeting** com essa ID externa.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6ad76e9362643f29ae93dd2daa03e739ba763e03
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: e59029da6265f2acd7ca515a0bbe4283c788dec7
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916918"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556307"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -53,12 +53,16 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | externalId       | Cadeia de caracteres                                   | A ID externa. Uma ID personalizada. Precisam |
 | participants     | [meetingParticipants](../resources/meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
 | startDateTime    | DateTime                                 | A hora de início da reunião em UTC. |
-| assunto          | String                                   | O assunto da reunião online. |
+| subject          | String                                   | O assunto da reunião online. |
 
->**Observação:** Se o ' startDatetime ' e ' EndDateTime ' não forem fornecidos, os valores padrão serão o valor de DateTime padrão para o sistema. Em C#, esse valor é "01/01/0001"
+>**Observação:** Se o `startDateTime` e `endDateTime` não forem fornecidos, o `startDateTime` padrão será o valor de DateTime atual e o `endDateTime` valor será igual a StartDateTime + 1 hora. 
+
+>Se o `startDateTime` for fornecido, mas `endDateTime` não for, o `endDateTime` valor será igual a `startDateTime` + 1 hora. 
+
+>Um erro será gerado se o `endDateTime` for fornecido sem o `startDateTime` ou se `endDateTime` for anterior ao `startDateTime` .
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta se uma nova reunião for criada ou um `200 OK` código de resposta se uma reunião existente for recuperada. Em ambos os casos, um objeto [onlineMeeting](../resources/onlinemeeting.md) é retornado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

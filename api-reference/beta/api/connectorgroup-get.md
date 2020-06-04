@@ -2,23 +2,24 @@
 title: Obter um conector de conexão
 description: Recupere as propriedades de um objeto de conexão.
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 57759efae263639da38ba74b6e3123c30a7e8878
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d487874241d6a557cd9548a7501f0a27b9b11f9
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437473"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556055"
 ---
 # <a name="get-connectorgroup"></a>Obter um conector de conexão
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades de um objeto de conexão.
+Recupere as propriedades de um [conector](../resources/connectorgroup.md).
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -31,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /connectorGroups/{id}
+GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
@@ -47,18 +48,20 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto de [teleconnector](../resources/connectorgroup.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
+
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
   "name": "get_connectorgroup"
 }-->
 ```http
-GET https://graph.microsoft.com/{ver}/connectorGroups/{id}
+GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -73,7 +76,8 @@ Content-length: 119
   "id": "id-value",
   "name": "name-value",
   "connectorGroupType": "connectorGroupType-value",
-  "isDefault": true
+  "isDefault": false,
+  "region": "region-value"
 }
 ```
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4aee6888f37958d226d00ad68c11230309df66af
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 653397a076e930ac38119c99703db97157b84ccb
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218931"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556272"
 ---
 # <a name="update-identitysecuritydefaultsenforcementpolicy"></a>Atualizar identitySecurityDefaultsEnforcementPolicy
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Policy. ReadWrite. ConditionalAccess |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy. ReadWrite. ConditionalAccess |
+| Delegado (conta corporativa ou de estudante)     | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

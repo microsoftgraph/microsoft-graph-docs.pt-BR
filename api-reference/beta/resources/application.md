@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0dd65de04f395c7014897b1f1caa0e9a507a5799
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 2b65eeaddd11e2f83b0558609b1316dc412b00bf
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291017"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556279"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -36,7 +36,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Excluir aplicativo](../api/application-delete.md) | Nenhum |Exclua o objeto application. |
 |[Listar aplicativos excluídos](../api/directory-deleteditems-list.md) | Conjunto [directoryObject](directoryobject.md) | Recuperar uma lista de aplicativos excluídos recentemente. |
 |[Obter o aplicativo excluído](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Recuperar as propriedades de um aplicativo excluído recentemente. |
-|[Excluir aplicativo permanentemente](../api/directory-deleteditems-delete.md) | Nenhum | Excluir permanentemente um aplicativo. |
+|[Excluir aplicativo permanentemente](../api/directory-deleteditems-delete.md) | Nenhuma | Excluir permanentemente um aplicativo. |
 |[Restaurar aplicativo excluído](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restaurar um aplicativo excluído recentemente. |
 |[delta](../api/application-delta.md)|Coleção [application](application.md)| Obtenha alterações incrementais para aplicativos. |
 |[Criar chamada](../api/application-post-calls.md)|[call](call.md)|Crie uma nova chamada postando na coleção calls.|
@@ -45,7 +45,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Adicionar senha](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Adicionar uma senha forte a um aplicativo.|
 |[Remover senha](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remover uma senha de um aplicativo.|
 |[Tecla Adicionar](../api/application-addkey.md)|[keycredential](keycredential.md)|Adicione uma credencial de chave a um aplicativo.|
-|[Remover chave](../api/application-removekey.md)|Nenhum|Remover uma credencial de chave de um aplicativo.|
+|[Remover chave](../api/application-removekey.md)|Nenhuma|Remover uma credencial de chave de um aplicativo.|
 |**Extensões**| | |
 | [Listar extensões](../api/application-list-extensionproperty.md) | Coleção [extensionProperty](extensionProperty.md) | Listar propriedades de extensão em um objeto de aplicativo. |
 | [Criar extensão](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Criar uma propriedade de extensão em um objeto de aplicativo. |
@@ -71,13 +71,15 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | createdDateTime | DateTimeOffset | A data e a hora que o aplicativo foi registrado. Somente leitura. |
 | deletedDateTime | DateTimeOffset | A data e a hora que o aplicativo foi excluído. Somente leitura. |
 | displayName | String | O nome de exibição do aplicativo. |
-| groupMembershipClaims | String | Configura a declaração `groups` emitida em um usuário ou o token de acesso OAuth 2.0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores válidos de cadeia de caracteres:<ul><li>`None`</li><li>`SecurityGroup`: para grupos de segurança e funções do Azure AD</li><li>`All`: isso obterá todos os grupos de segurança e de distribuição e funções de diretório do Azure AD dos quais o usuário conectado é membro.</li></ul> |
+| groupMembershipClaims | Cadeia de caracteres | Configura a declaração `groups` emitida em um usuário ou o token de acesso OAuth 2.0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores válidos de cadeia de caracteres:<ul><li>`None`</li><li>`SecurityGroup`: para grupos de segurança e funções do Azure AD</li><li>`All`: isso obterá todos os grupos de segurança e de distribuição e funções de diretório do Azure AD dos quais o usuário conectado é membro.</li></ul> |
 | id | String | O identificador exclusivo do aplicativo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 | identifierUris | Coleção de cadeias de caracteres | Os URIs que identificam o aplicativo em seu locatário do Azure AD ou em um domínio personalizado verificado, se o aplicativo é multilocatário. Para saber mais, confira [Objetos de aplicativo e objetos de entidade de serviço](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. |
 | informações  | [informationalUrl](informationalurl.md) | Informações básicas de perfil do aplicativo, como marketing, suporte, termos de serviço e URLs de política de privacidade do aplicativo. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, confira [Como adicionar termos de serviço e política de privacidade a aplicativos do Azure AD registrados](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 | isFallbackPublicClient | Booliano | Especifica o tipo de aplicativo de fallback como cliente público; por exemplo, um aplicativo instalado em um dispositivo móvel. O valor padrão é `false`, o que significa que o tipo de aplicativo de fallback é cliente confidencial, como um aplicativo Web. Há determinados cenários em que o Azure AD não pode determinar o tipo de aplicativo cliente (por exemplo, o fluxo [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3), no qual ele é configurado sem especificar um URI de redirecionamento). Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade.|
 | keyCredentials | Coleção [keyCredential](keycredential.md) | A coleção de credenciais chaves associada ao aplicativo Não anulável. |
 | logo | Stream | O principal logotipo do aplicativo. Não anulável. |
+| oauth2RequiredPostResponse | Booliano | Especifica se, como parte das solicitações de token OAuth 2.0, o Azure AD permitirá solicitações POST, em vez de solicitações GET. O padrão é false, que especifica que somente as solicitações GET serão permitidas. |
+| onPremisesPublishing |[onPremisesPublishing](onpremisespublishing.md)| Representa o conjunto de propriedades necessárias para configurar o proxy de aplicativo para este aplicativo. A configuração dessas propriedades permite que você publique seu aplicativo local para acesso remoto seguro. |
 | optionalClaims | [optionalClaims](optionalclaims.md) | Desenvolvedores de aplicativos podem configurar declarações opcionais em aplicativos do Azure AD para especificar quais declarações desejam em tokens enviados ao aplicativo pelo serviço de token de segurança da Microsoft. Confira [fornecer declarações opcionais ao aplicativo Azure AD](/azure/active-directory/develop/active-directory-optional-claims) para obter mais informações.|
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Especifica as configurações de controle parental de um aplicativo. |
 | passwordCredentials | Coleção [passwordCredential](passwordcredential.md)|A coleção de credenciais de senha associada ao aplicativo. Não anulável.|

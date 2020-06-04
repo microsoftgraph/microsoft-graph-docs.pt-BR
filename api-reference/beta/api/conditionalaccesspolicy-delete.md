@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 29e8bc18b4608f08a8285c6b575e2ce96c204fc4
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: dd5420aff55a058d464f87414b9b7aa8199c30ae
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916506"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556118"
 ---
 # <a name="delete-conditionalaccesspolicy"></a>Excluir conditionalAccessPolicy
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.ConditionalAccess |
+|Delegado (conta corporativa ou de estudante)     | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Sem suporte. |
+|Aplicativo                            | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

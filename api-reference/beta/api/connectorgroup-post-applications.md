@@ -1,24 +1,25 @@
 ---
-title: Criar aplicativo
-description: Use esta API para criar um novo aplicativo.
+title: Adicionar um aplicativo a um conector
+description: Use esta API para atribuir um aplicativo a um grupo de conectores
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 018288444be3c2851e71117e1710a08947fa6104
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7843d1fa661bfcaf209fbdfee52f08f96427a37f
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437354"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44555768"
 ---
-# <a name="create-application"></a>Criar aplicativo
+# <a name="add-an-application-to-a-connectorgroup"></a>Adicionar um aplicativo a um conector
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar um novo aplicativo.
+Adicionar um [aplicativo](../resources/application.md) a um [conector](../resources/connectorgroup.md).
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -31,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /connectorGroups/{id}/applications
+POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -54,12 +55,12 @@ Eis um exemplo da solicitação.
   "name": "create_application_from_connectorgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectorGroups/{id}/applications
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
 Content-type: application/json
 Content-length: 329
 
 {
-  "@odata.id": "https://graph.microsoft.com/{ver}/applications/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/applications/{id}"
 }
 ```
 No corpo da solicitação, forneça uma representação JSON do objeto [application](../resources/application.md).

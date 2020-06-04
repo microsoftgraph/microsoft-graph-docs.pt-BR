@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c6ecc51d169341273a0093f86e7e4c2f0f7bf230
-ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
+ms.openlocfilehash: 7f5aec736483650b847184343a58777243a266fb
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44168509"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556097"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Criar conditionalAccessPolicy
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Sem suporte. |
+|Aplicativo                            | Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All |
 
 > [!NOTE]
 > Essa API tem um [problema conhecido](/graph/known-issues#permissions) relacionado às permissões.
@@ -52,11 +52,11 @@ POST /identity/conditionalAccess/policies
 
 No corpo da solicitação, forneça uma representação JSON de um objeto [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) .
 
-Uma política válida deve conter pelo menos uma regra de [aplicativo](../resources/conditionalaccessapplications.md) -por exemplo `'includeApplications': 'none'`, uma regra de [usuário](../resources/conditionalaccessusers.md) , por exemplo `'includeUsers': 'none'`, e pelo menos um controle de[sessão](../resources/conditionalaccesssessioncontrols.md) de [concessão](../resources/conditionalaccessgrantcontrols.md)/.
+Uma política válida deve conter pelo menos uma regra de [aplicativo](../resources/conditionalaccessapplications.md) -por exemplo, `'includeApplications': 'none'` uma regra de [usuário](../resources/conditionalaccessusers.md) , por exemplo, `'includeUsers': 'none'` e pelo menos um controle de sessão de [concessão](../resources/conditionalaccessgrantcontrols.md) / [session](../resources/conditionalaccesssessioncontrols.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

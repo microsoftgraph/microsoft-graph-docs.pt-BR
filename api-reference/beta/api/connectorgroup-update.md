@@ -2,23 +2,24 @@
 title: Atualizar connectorGroups
 description: Atualize as propriedades do objeto de conexão.
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ad83631d6707e5f72f0813a71f7e40497e1903b0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 80565045fa292b09e5c8e98544c466ec784f24f0
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437172"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44555792"
 ---
 # <a name="update-connectorgroups"></a>Atualizar connectorGroups
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto de conexão.
+Atualizar as propriedades de um objeto de [conexão](../resources/connectorgroup.md) .
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -31,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /connectorGroups/{id}
+PATCH /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
@@ -43,31 +44,34 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| Os valores possíveis são `applicationProxy`:.|
-|nome|String|O nome do conector.|
+|connectorGroupType|string| Indica o tipo de agente híbrido. Isso é definido pelo sistema. |
+|id|cadeia de caracteres| Identificador exclusivo desse conector. Somente leitura. |
+|isDefault|booliano| Indica se o conector de conexão é o padrão. Somente um grupo de conectores único pode ser o grupo de conectores padrão e é predefinido pelo sistema. |
+|nome|string| O nome associado ao conector. |
+|região|string| A região à qual o conector é atribuído e otimizará o tráfego para o. Essa região só poderá ser definida se **nenhum** conector ou aplicativo for atribuído ao grupo de conectores. As regiões disponíveis incluem: América do Norte, Europa, Austrália, Ásia e Índia. Os valores possíveis são: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto de [teleconnector](../resources/connectorgroup.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de [teleconnector](../resources/connectorgroup.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
   "name": "update_connectorgroup"
 }-->
 ```http
-PATCH https://graph.microsoft.com/{ver}/connectorGroups/{id}
+PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 Content-type: application/json
 Content-length: 99
 
 {
   "name": "name-value",
-  "connectorGroupType": "connectorGroupType-value",
+  "region": "region-value"
 }
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,7 +86,8 @@ Content-length: 119
   "id": "id-value",
   "name": "name-value",
   "connectorGroupType": "connectorGroupType-value",
-  "isDefault": true
+  "isDefault": true,
+  "region": "region-value"
 }
 ```
 

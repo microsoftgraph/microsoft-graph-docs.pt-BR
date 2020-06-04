@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e8de4c713c2229ecd31f811bde73b8df667d219c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 013423e57d5150ea4854ce233333f1cedaa29595
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289121"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556140"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
@@ -52,12 +52,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | api | [apiApplication](../resources/apiapplication.md) | Especifica configurações para um aplicativo que implementa uma API Web. |
 | appRoles | Coleção [appRole](../resources/approle.md) | A coleção de funções de aplicativo que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável. |
 | displayName | String | O nome de exibição do aplicativo. |
-| groupMembershipClaims | String | Configura a declaração de **grupos** emitida em um usuário ou token de acesso do OAuth 2,0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores válidos de cadeia de caracteres:<ul><li>`None`</li><li>`SecurityGroup`: Para grupos de segurança e funções do Azure Active Directory (Azure AD)</li><li>`All`: isso obterá todos os grupos de segurança e de distribuição e funções de diretório do Azure AD dos quais o usuário conectado é membro.</li></ul> |
+| groupMembershipClaims | Cadeia de caracteres | Configura a declaração de **grupos** emitida em um usuário ou token de acesso do OAuth 2,0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores válidos de cadeia de caracteres:<ul><li>`None`</li><li>`SecurityGroup`: Para grupos de segurança e funções do Azure Active Directory (Azure AD)</li><li>`All`: isso obterá todos os grupos de segurança e de distribuição e funções de diretório do Azure AD dos quais o usuário conectado é membro.</li></ul> |
 | identifierUris | Coleção de cadeias de caracteres | Os URIs que identificam o aplicativo em seu locatário do Azure AD ou em um domínio personalizado verificado, se o aplicativo é multilocatário. Para obter mais informações, consulte [Application Objects and Service principal Objects](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. |
 | informações  | [informationalUrl](../resources/informationalurl.md) | Informações básicas de perfil do aplicativo, como marketing do aplicativo, suporte, termos de serviço e URLs da declaração de privacidade. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, consulte [Adicionar termos de serviço e declaração de privacidade para aplicativos registrados do Azure ad](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 | isFallbackPublicClient | Booliano | Especifica o tipo de aplicativo de fallback como cliente público; por exemplo, um aplicativo instalado em um dispositivo móvel. O valor padrão é `false` , que significa que o tipo de aplicativo de fallback é um cliente confidencial, como o aplicativo Web. Há determinados cenários em que o Azure AD não pode determinar o tipo de aplicativo cliente (por exemplo, [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) Flow onde ele é configurado sem especificar um URI de redirecionamento). Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade.|
 | keyCredentials | Coleção [keyCredential](../resources/keycredential.md) | O conjunto de credenciais chave associadas ao aplicativo. Não anulável. |
 | logo | Stream | O principal logotipo do aplicativo. Não anulável. |
+| onPremisesPublishing | [onPremisesPublishing](../resources/onpremisespublishing.md) | Representa o conjunto de propriedades para configurar o [proxy de aplicativo do AD do Azure](https://aka.ms/whyappproxy) para um aplicativo local. Esta propriedade só pode ser definida depois que o aplicativo é criado. |
 | optionalClaims | optionalClaims | Desenvolvedores de aplicativos podem configurar declarações opcionais em aplicativos do Azure AD para especificar quais declarações desejam em tokens enviados ao aplicativo pelo serviço de token de segurança da Microsoft. Consulte [declarações opcionais](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims) para obter mais informações. |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md) |Especifica as configurações de controle parental de um aplicativo. |
 | publicClient | [publicClientApplication](../resources/publicclientapplication.md) | Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho. |

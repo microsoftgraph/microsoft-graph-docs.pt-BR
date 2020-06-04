@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d31b6a91d052b0b8f717d5696ba56e765a2788cc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0566e66454a95d19c4d45f5882415e6c5ba90139
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458139"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556202"
 ---
 # <a name="update-ipnamedlocation"></a>Atualizar ipNamedlocation
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.ConditionalAccess |
+| Delegado (conta corporativa ou de estudante)     | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | Policy. Read. All e Policy. ReadWrite. ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:-------------|:------------|:------------|
 |displayName|String|Nome legível do local.|
 |Intervalos|Coleção [ipRange](../resources/iprange.md)|Lista de intervalos de endereços IP no formato CIDR do IPv4 (1.2.3.4/32) ou qualquer formato IPv6 permitido da IETF RFC5962.|
-|isTrusted|Boolean|O valor é `true` se esse local for explicitamente confiável.|
+|isTrusted|Booliano|O valor é `true` se esse local for explicitamente confiável.|
 
 ## <a name="response"></a>Resposta
 

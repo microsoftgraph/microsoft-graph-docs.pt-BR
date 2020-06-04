@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bed88872a69164e48cba80b1ab3925328b24b7c0
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 0b8892f3c21b9b89634350593f8b8b6985651bab
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916464"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556111"
 ---
 # <a name="update-conditionalaccesspolicy"></a>Atualizar conditionalAccessPolicy
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Sem suporte. |
+|Aplicativo                            | Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All |
 
 > [!NOTE]
 > Essa API tem um [problema conhecido](/graph/known-issues#permissions) relacionado às permissões.

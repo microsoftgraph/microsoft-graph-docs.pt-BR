@@ -2,23 +2,23 @@
 title: Adicionar conector ao conector
 description: Use esta API para adicionar um conector a um novo conector.
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 580fc5087cf35970a84a19dd396f2812efe88028
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 50bfc2757d55df3e22e0f6d55d48c7eb07023aae
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437529"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556069"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Adicionar conector ao conector
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para adicionar um conector a um novo conector.
+Adicionar um [conector](../resources/connector.md) a um [conector](../resources/connectorgroup.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /connectors/{id}/memberOf
+POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -54,12 +54,13 @@ Este é um exemplo da solicitação.
   "name": "create_connectorgroup_from_connector"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectors/{id}/memberOf
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref
+
 Content-type: application/json
 Content-length: 99
 
 {
-  "@odata.id": "https://graph.microsoft.com/{ver}/connectorGroups/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}"
 }
 ```
 No corpo da solicitação, forneça uma representação JSON do objeto do [conector](../resources/connectorgroup.md) .
@@ -79,7 +80,8 @@ Content-length: 119
   "id": "id-value",
   "name": "name-value",
   "connectorGroupType": "connectorGroupType-value",
-  "isDefault": false
+  "isDefault": false,
+  "region": "region-value"
 }
 ```
 

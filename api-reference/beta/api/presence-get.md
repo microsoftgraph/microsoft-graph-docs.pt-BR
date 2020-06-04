@@ -5,35 +5,36 @@ author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 2e73cfcb18fa11b6d4a66f11e5e5bdc0f4802168
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6af22c5e4ab1756aecaa384a78e010e12f071c16
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455443"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556286"
 ---
 # <a name="get-presence"></a>Obter presença
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha as informações de [presença](../resources/presence.md) de um usuário.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é necessária para chamar essas APIs. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Presence.Read, Presence.Read.All                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
-| Aplicativo                            | Sem suporte.                                  |
+| Delegado (conta corporativa ou de estudante)     | Presence.Read, Presence.Read.All      |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                        |
+| Aplicativo                            | Sem suporte.                        |
 
 ## <a name="http-requests"></a>Solicitações HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/presence
 GET /users/{id}/presence
+GET /communications/presences
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -47,7 +48,7 @@ GET /users/{id}/presence
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Presence](../resources/presence.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Presence](../resources/presence.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -151,6 +152,45 @@ Content-Length: 1574
     "activity": "Presenting"
 }
 ```
+
+### <a name="example-3-get-the-presence-information-of-another-user"></a>Exemplo 3: obter as informações de presença de outro usuário
+
+O exemplo a seguir mostra como obter as informações de presença de outro usuário. Esta operação requer a permissão Presence. Read. All.
+
+#### <a name="request"></a>Solicitar
+
+<!-- {
+  "blockType": "request",
+  "name": "get-user-presences"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d-8eaa-e39d80d3a647
+```
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "name": "get-user-presences",
+  "@odata.type": "microsoft.graph.presence",
+  "truncated":"true"
+}-->
+
+```http
+HTTP/1.1 200 OK
+
+{
+    "value": [
+        {
+            "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+            "availability": "Away",
+            "activity": "BeRightBack"
+        }
+    ]
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

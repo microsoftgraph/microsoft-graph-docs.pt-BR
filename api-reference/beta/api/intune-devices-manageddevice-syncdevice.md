@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec365d44ac83eec8c50645aed92d91aa50c34bbb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 12382d8639a3e211cf634199712efe813074bb4f
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43425139"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556181"
 ---
 # <a name="syncdevice-action"></a>Ação syncDevice
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Aplicativo|DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

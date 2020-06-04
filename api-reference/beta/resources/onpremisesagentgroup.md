@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a211fb4245e8f4e4ef23158c0f553876303ea9c9
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 861c17b55a50f35579eb820fbe76352077ded149
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199715"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556251"
 ---
 # <a name="onpremisesagentgroup-resource-type"></a>tipo de recurso onPremisesAgentGroup
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa o grupo de agentes local. Os grupos de agentes permitem que um administrador de locatários atribua [agentes](onpremisesagent.md) específicos para atender [recursos locais publicados](publishedresource.md)específicos.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -28,7 +28,7 @@ Representa o grupo de agentes local. Os grupos de agentes permitem que um admini
 | [Obter onPremisesAgentGroup](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Leia as propriedades e os relacionamentos de um objeto **onPremisesAgentGroup** . |
 | [Criar onPremisesAgentGroup](../api/onpremisesagentgroup-post.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Criar um novo **onPremisesAgentGroup**. |
 | [Atualizar onPremisesAgentGroup](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Atualize um objeto **onPremisesAgentGroup** . |
-| [Excluir onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | Nenhum | Excluir um objeto **onPremisesAgentGroup** . |
+| [Excluir onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | Nenhuma | Excluir um objeto **onPremisesAgentGroup** . |
 
 ## <a name="properties"></a>Propriedades
 
@@ -37,7 +37,7 @@ Representa o grupo de agentes local. Os grupos de agentes permitem que um admini
 |displayName|Cadeia de caracteres|Nome para exibição do **onPremisesAgentGroup**.|
 |id|String| A ID de objeto do **onPremisesAgentGroup**. Somente leitura.|
 |isDefault|Booliano|Indica se o **onPremisesAgentGroup** é o grupo de agente padrão. Somente um único grupo de agentes pode ser o padrão **onPremisesAgentGroup** e é definido pelo sistema.|
-|publishingtype|string| Os valores possíveis são: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|publishingtype|string| Os valores possíveis são: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## <a name="relationships"></a>Relações
 

@@ -1,49 +1,47 @@
 ---
 title: tipo de recurso conector
-description: Veja a seguir uma representação JSON do recurso.
+description: Representa um conector de proxy de aplicativo.
+author: japere
 localization_priority: Normal
+ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 25d350e48aaddbda2b931ae5a9e177ec6caa9799
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 864d76d7e6a7cb3724a91a753e5c5198e274780a
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507475"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556174"
 ---
 # <a name="connector-resource-type"></a>tipo de recurso conector
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<!-- Not supported items
-|[Create connectorGroup](../api/connector-post-memberof.md) |[connectorGroup](connectorgroup.md)| Associate a connector with a new connectorGroup by posting to the memberOf collection.|
-|[Update](../api/connector-update.md) | [connector](connector.md)   | Connectors are created when they are registed with the tenant. |
-|[Delete](../api/connector-delete.md) | None |Delete connector object. |
+Os conectores são agentes leves que ficam no local e facilitam a conexão de saída para o serviço de [proxy de aplicativo do Azure ad](https://aka.ms/whyappproxy) . Cada conector é parte de um [conector](connectorgroup.md).
 
--->
+## <a name="methods"></a>Methods
 
-## <a name="methods"></a>Métodos
+| Método       | Tipo de retorno | Descrição |
+|:-------------|:------------|:------------|
+| [Conectores de lista](../api/connector-list.md) | coleção [Connector](connector.md) | Recupere uma lista de objetos Connector. | 
+| [Obter conector](../api/connector-get.md) | [conector](connector.md) | Leia as propriedades e as relações do objeto Connector. |
+| [Listar memberOf](../api/connector-list-memberof.md) | coleção de [conectores](connectorgroup.md) | Lista o conjunto de objetos do grupo de conectores do qual o conector é membro. |
+| [Adicionar conector ao conector](../api/connector-post-memberof.md)| [connectorGroup](connectorgroup.md) | Adicionar um conector a um conector. |
 
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Obter conector](../api/connector-get.md) | [conector](connector.md) |Leia as propriedades e as relações do objeto Connector.|
-|[Listar memberOf](../api/connector-list-memberof.md) |coleção de [conectores](connectorgroup.md)| Obtenha o objeto de conexão associado ao conector.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|externalIp|String|O endereço IP externo, conforme detectado pelo serviço para o computador do conector. Somente leitura|
-|id|Cadeia de caracteres| A ID de objeto do conector. <BR>Somente leitura.|
-|Nomecomputador|String| O nome da máquina na qual o conector está sendo executado. <BR>Somente leitura|
-|status|cadeia de caracteres| Indica o status do conector. Os valores possíveis são: `active` e `inactive`. Somente leitura |
+| Propriedade     | Tipo        | Descrição |
+|:-------------|:------------|:------------|
+|externalIp|String| O endereço IP externo, conforme detectado pelo servidor do conector. Somente leitura. |
+|id|Cadeia de caracteres| Identificador exclusivo do conector. Somente leitura. |
+|Nomecomputador|String| O nome do computador no qual o conector está instalado e em execução. |
+|status|cadeia de caracteres| Indica o status do conector. Os valores possíveis são: `active` e `inactive`. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|memberOf|coleção de [conectores](connectorgroup.md)| O MemberGroup do qual a conexão é membro.<br>Somente leitura. |
+|memberOf|coleção de [conectores](connectorgroup.md)| O MemberGroup do qual o conector é membro. Somente leitura. |
 
 ## <a name="json-representation"></a>Representação JSON
 

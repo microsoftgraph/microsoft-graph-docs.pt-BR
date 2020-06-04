@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: af59360a3947a98c0bd4cdcbbb826bb014747535
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 926a0ab60f32affc502a9890407e953e33d97b0a
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441611"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556139"
 ---
 # <a name="list-alerts"></a>Listar alertas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,11 +47,23 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 Este método suporta os seguintes [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta:
 
 - `$count`
-- `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` retornará os principais resultados agregados de cada provedor de API de segurança.
+- `$top`-Retorna os resultados principais agregados de cada provedor de API de segurança.
+- `$filter`
+
+A tabela a seguir lista as `$filter` palavras-chave de cada nome de fornecedor.
+
+| Nome do fornecedor      |palavra-chave $filter|
+|:----------|:----------|
+| Proteção Avançada contra Ameaças do Azure | Proteção Avançada contra Ameaças do Azure | 
+| Central de Segurança do Azure | ASC |
+| Microsoft Cloud App Security | MCAS |
+| Proteção de Identidade do Azure Active Directory | CPI |
+| Azure Sentinel | Azure Sentinel |
+| Proteção avançada contra ameaças do Microsoft Defender | Microsoft Defender ATP |
+| Office 365 |  Não há suporte atualmente. |
 
 Para retornar um conjunto de propriedades alternativas, use o parâmetro de consulta OData `$select` para especificar o conjunto de propriedades de **alerta** que você deseja.  Por exemplo, para retornar as propriedades **assignedTo**, **category** e **severity**, adicione o seguinte à sua consulta: `$select=assignedTo,category,severity`.
 

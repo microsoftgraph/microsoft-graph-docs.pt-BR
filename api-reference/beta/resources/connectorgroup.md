@@ -1,42 +1,48 @@
 ---
 title: tipo de recurso do The Connector
-description: Veja a seguir uma representação JSON do recurso.
+description: Representa uma conexão de proxy de aplicativo.
 localization_priority: Normal
+ms.prod: microsoft-identity-platform
+author: japere
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: d57f116adac652cb55a3a270383ddb5c65d8e40f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 446dae5e78878ba9648d532d2696b0bfde496601
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507468"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556167"
 ---
 # <a name="connectorgroup-resource-type"></a>tipo de recurso do The Connector
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="methods"></a>Métodos
+Cada conector de [proxy de aplicativo do Azure ad](https://aka.ms/whyappproxy) é sempre parte de um grupo de conectores. Todos os conectores que pertencem ao mesmo grupo de conectores atuam como uma unidade separada para alta disponibilidade e balanceamento de carga. Se você não criar grupos de conectores, todos os seus conectores farão parte do grupo padrão. Ao configurar um aplicativo com o proxy de aplicativo, você também deve especificar o grupo de conectores ao qual o aplicativo será atribuído.
+
+Depois que um grupo de conectores é criado, você pode adicionar ou mover conectores para o grupo de conectores usando [Adicionar conector](../api/connectorgroup-post-members.md). Você também pode usar [Adicionar aplicativo](../api/connectorgroup-post-applications.md) para atribuir um aplicativo a um grupo de conectores.
+
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter um conector de conexão](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) |Leia as propriedades e as relações do objeto de conexão.|
-|[Criar aplicativo](../api/connectorgroup-post-applications.md) |[application](application.md)| Associe um aplicativo ao grupo de conectores postando na coleção de aplicativos.|
-|[Listar aplicativos](../api/connectorgroup-list-applications.md) |Coleção [application](application.md)| Obtenha a coleção de objetos de aplicativo associada.|
-|[Criar conector](../api/connectorgroup-post-members.md) |[conector](connector.md)| Adicionar um conector ao grupo de conectores postando na coleção Members.|
-|[Listar membros](../api/connectorgroup-list-members.md) |coleção [Connector](connector.md)| Obtenha uma coleção de objetos Connector.|
-|[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |Atualize o objeto de conexão. |
-|[Delete](../api/connectorgroup-delete.md) | Nenhum |Exclua objeto de conexão. Todos os conectores devem ser removidos para que um grupo de conectores possa ser excluído. |
+|[Lista de conectores de lista](../api/connectorgroup-list.md) |coleção de [conectores](connectorgroup.md) | Recupere uma lista de objetos de conexão. |
+|[Obter um conector de conexão](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) | Leia as propriedades e as relações de um objeto de conexão. |
+|[Atualizar o beficador de conexão](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)| Atualize um objeto de conexão. |
+|[Excluir um ou de conector](../api/connectorgroup-delete.md) | Nenhuma | Excluir um objeto de um. Todos os conectores devem ser removidos do conector para que um dos conectores possa ser excluído. |
+|[Listar membros](../api/connectorgroup-list-members.md) |coleção [Connector](connector.md)| Obtenha uma coleção de objetos Connector. |
+|[Listar aplicativos](../api/connectorgroup-list-applications.md) |Coleção [application](application.md)| Obter a coleção de objetos Application associada ao grupo de conectores. |
+|[Adicionar aplicativo](../api/connectorgroup-post-applications.md) |[aplicativo](application.md)| Associar um aplicativo ao grupo de conectores postando na coleção de aplicativos. |
+|[Adicionar conector](../api/connectorgroup-post-members.md) |[conector](connector.md)| Adicionar um conector ao grupo de conectores postando na coleção de conectores. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| O tipo de conectores que serão usados com o grupo. Os valores possíveis são `applicationProxy`:.|
-|id|String| A ID do objeto do conector|
-|isDefault|Booliano| Indica se o grupo de conectores é o padrão. Somente um grupo de conectores único pode ser o grupo de conectores padrão e é definido pelo sistema.|
-|nome|String| O nome associado ao conector.|
+|connectorGroupType|string| Indica o tipo de agente híbrido. Isso é definido pelo sistema. Somente leitura. |
+|id|cadeia de caracteres| Identificador exclusivo desse conector. Somente leitura. |
+|isDefault|booliano| Indica se o conector de conexão é o padrão. Somente um grupo de conectores único pode ser o grupo de conectores padrão e é predefinido pelo sistema. Somente leitura. |
+|name|string| O nome associado ao conector. |
+|região|string| A região à qual o conector é atribuído e otimizará o tráfego para o. Essa região só poderá ser definida se **nenhum conector ou aplicativo** for atribuído ao grupo de conectores. As regiões disponíveis incluem: América do Norte, Europa, Austrália, Ásia e Índia. Os valores possíveis são: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -59,10 +65,10 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "connectorGroupType": "string",
   "id": "String (identifier)",
   "isDefault": true,
-  "name": "String"
+  "name": "String",
+  "region": "string"
 }
 
 ```

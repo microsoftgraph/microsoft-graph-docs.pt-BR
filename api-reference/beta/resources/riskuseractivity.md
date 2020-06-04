@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ddf71668af9d66c1d3ea495a8438c444b9317a23
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 8032a721a8f8a94d7cd1481edf58ee785092bcfd
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510991"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556314"
 ---
 # <a name="riskuseractivity-resource-type"></a>tipo de recurso riskUserActivity
 
@@ -22,9 +22,9 @@ Namespace: microsoft.graph
 
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-| eventType | coleção riskEventType |Lista de tipos de eventos de risco. Obsoleto. Use **riskEventTypes** em vez disso. |
-|riskEventType|string|O tipo de evento de risco detectado. Os valores possíveis são `unlikelyTravel`: `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` `unknownFutureValue`,,,,,,,,,,, e. `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` |
-| detalhada     | riskDetail  | Os valores possíveis são `none`: `adminGeneratedTemporaryPassword` `userPerformedSecuredPasswordChange` `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `hidden` `adminConfirmedUserCompromised` `unknownFutureValue`,,,,,,,,,,. `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised`  |
+| eventType | coleção riskEventType |Lista de tipos de eventos de risco. Obsoleto. Use **riskEventType** em vez disso. |
+|riskEventType|string|O tipo de evento de risco detectado. Os valores possíveis são:,,,,,,,,,,, `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` e `unknownFutureValue` . |
+| detalhada     | riskDetail  | Os valores possíveis são:,,,,,,,,, `none` `adminGeneratedTemporaryPassword` `userPerformedSecuredPasswordChange` `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `hidden` `adminConfirmedUserCompromised` , `unknownFutureValue` .  |
 
 ## <a name="json-representation"></a>Representação JSON
 
