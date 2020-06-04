@@ -2,69 +2,70 @@
 title: Adicionar conector ao conector
 description: Use esta API para adicionar um conector a um novo conector.
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 580fc5087cf35970a84a19dd396f2812efe88028
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 50bfc2757d55df3e22e0f6d55d48c7eb07023aae
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437529"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556069"
 ---
-# <a name="add-connector-to-connectorgroup"></a><span data-ttu-id="970a2-103">Adicionar conector ao conector</span><span class="sxs-lookup"><span data-stu-id="970a2-103">Add Connector to connectorGroup</span></span>
+# <a name="add-connector-to-connectorgroup"></a><span data-ttu-id="959a1-103">Adicionar conector ao conector</span><span class="sxs-lookup"><span data-stu-id="959a1-103">Add connector to connectorGroup</span></span>
 
-<span data-ttu-id="970a2-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="970a2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="959a1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="959a1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="970a2-105">Use esta API para adicionar um conector a um novo conector.</span><span class="sxs-lookup"><span data-stu-id="970a2-105">Use this API to add a connector to a new connectorGroup.</span></span>
-## <a name="permissions"></a><span data-ttu-id="970a2-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="970a2-106">Permissions</span></span>
-<span data-ttu-id="970a2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="970a2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="959a1-105">Adicionar um [conector](../resources/connector.md) a um [conector](../resources/connectorgroup.md).</span><span class="sxs-lookup"><span data-stu-id="959a1-105">Add a [connector](../resources/connector.md)  to a [connectorGroup](../resources/connectorgroup.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="959a1-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="959a1-106">Permissions</span></span>
+<span data-ttu-id="959a1-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="959a1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="970a2-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="970a2-109">Permission type</span></span>      | <span data-ttu-id="970a2-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="970a2-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="959a1-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="959a1-109">Permission type</span></span>      | <span data-ttu-id="959a1-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="959a1-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="970a2-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="970a2-111">Delegated (work or school account)</span></span> | <span data-ttu-id="970a2-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="970a2-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="970a2-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="970a2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="970a2-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="970a2-114">Not supported.</span></span>    |
-|<span data-ttu-id="970a2-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="970a2-115">Application</span></span> | <span data-ttu-id="970a2-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="970a2-116">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="959a1-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="959a1-111">Delegated (work or school account)</span></span> | <span data-ttu-id="959a1-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="959a1-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="959a1-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="959a1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="959a1-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="959a1-114">Not supported.</span></span>    |
+|<span data-ttu-id="959a1-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="959a1-115">Application</span></span> | <span data-ttu-id="959a1-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="959a1-116">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="970a2-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="970a2-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="959a1-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="959a1-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /connectors/{id}/memberOf
+POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="970a2-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="970a2-118">Request headers</span></span>
-| <span data-ttu-id="970a2-119">Nome</span><span class="sxs-lookup"><span data-stu-id="970a2-119">Name</span></span>       | <span data-ttu-id="970a2-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="970a2-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="959a1-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="959a1-118">Request headers</span></span>
+| <span data-ttu-id="959a1-119">Nome</span><span class="sxs-lookup"><span data-stu-id="959a1-119">Name</span></span>       | <span data-ttu-id="959a1-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="959a1-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="970a2-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="970a2-121">Authorization</span></span>  | <span data-ttu-id="970a2-122">Portador.</span><span class="sxs-lookup"><span data-stu-id="970a2-122">Bearer.</span></span> <span data-ttu-id="970a2-123">Obrigatório</span><span class="sxs-lookup"><span data-stu-id="970a2-123">Required</span></span>|
+| <span data-ttu-id="959a1-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="959a1-121">Authorization</span></span>  | <span data-ttu-id="959a1-122">Portador.</span><span class="sxs-lookup"><span data-stu-id="959a1-122">Bearer.</span></span> <span data-ttu-id="959a1-123">Obrigatório</span><span class="sxs-lookup"><span data-stu-id="959a1-123">Required</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="970a2-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="970a2-124">Request body</span></span>
-<span data-ttu-id="970a2-125">No corpo da solicitação, forneça uma representação JSON do objeto do [conector](../resources/connectorgroup.md) .</span><span class="sxs-lookup"><span data-stu-id="970a2-125">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="959a1-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="959a1-124">Request body</span></span>
+<span data-ttu-id="959a1-125">No corpo da solicitação, forneça uma representação JSON do objeto do [conector](../resources/connectorgroup.md) .</span><span class="sxs-lookup"><span data-stu-id="959a1-125">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="970a2-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="970a2-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="959a1-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="959a1-126">Response</span></span>
 
-<span data-ttu-id="970a2-127">Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto de [teleconnector](../resources/connectorgroup.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="970a2-127">If successful, this method returns `201 Created` response code and [connectorGroup](../resources/connectorgroup.md) object in the response body.</span></span>
+<span data-ttu-id="959a1-127">Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto de [teleconnector](../resources/connectorgroup.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="959a1-127">If successful, this method returns `201 Created` response code and [connectorGroup](../resources/connectorgroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="970a2-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="970a2-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="970a2-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="970a2-129">Request</span></span>
-<span data-ttu-id="970a2-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="970a2-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="959a1-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="959a1-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="959a1-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="959a1-129">Request</span></span>
+<span data-ttu-id="959a1-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="959a1-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_connectorgroup_from_connector"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectors/{id}/memberOf
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref
+
 Content-type: application/json
 Content-length: 99
 
 {
-  "@odata.id": "https://graph.microsoft.com/{ver}/connectorGroups/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}"
 }
 ```
-<span data-ttu-id="970a2-131">No corpo da solicitação, forneça uma representação JSON do objeto do [conector](../resources/connectorgroup.md) .</span><span class="sxs-lookup"><span data-stu-id="970a2-131">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="970a2-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="970a2-132">Response</span></span>
-<span data-ttu-id="970a2-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="970a2-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="959a1-131">No corpo da solicitação, forneça uma representação JSON do objeto do [conector](../resources/connectorgroup.md) .</span><span class="sxs-lookup"><span data-stu-id="959a1-131">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="959a1-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="959a1-132">Response</span></span>
+<span data-ttu-id="959a1-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="959a1-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,7 +80,8 @@ Content-length: 119
   "id": "id-value",
   "name": "name-value",
   "connectorGroupType": "connectorGroupType-value",
-  "isDefault": false
+  "isDefault": false,
+  "region": "region-value"
 }
 ```
 

@@ -1,53 +1,51 @@
 ---
 title: tipo de recurso conector
-description: Veja a seguir uma representação JSON do recurso.
+description: Representa um conector de proxy de aplicativo.
+author: japere
 localization_priority: Normal
+ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 25d350e48aaddbda2b931ae5a9e177ec6caa9799
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 864d76d7e6a7cb3724a91a753e5c5198e274780a
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507475"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556174"
 ---
-# <a name="connector-resource-type"></a><span data-ttu-id="02a53-103">tipo de recurso conector</span><span class="sxs-lookup"><span data-stu-id="02a53-103">connector resource type</span></span>
+# <a name="connector-resource-type"></a><span data-ttu-id="8959e-103">tipo de recurso conector</span><span class="sxs-lookup"><span data-stu-id="8959e-103">connector resource type</span></span>
 
-<span data-ttu-id="02a53-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="02a53-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8959e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8959e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<!-- Not supported items
-|[Create connectorGroup](../api/connector-post-memberof.md) |[connectorGroup](connectorgroup.md)| Associate a connector with a new connectorGroup by posting to the memberOf collection.|
-|[Update](../api/connector-update.md) | [connector](connector.md)   | Connectors are created when they are registed with the tenant. |
-|[Delete](../api/connector-delete.md) | None |Delete connector object. |
+<span data-ttu-id="8959e-105">Os conectores são agentes leves que ficam no local e facilitam a conexão de saída para o serviço de [proxy de aplicativo do Azure ad](https://aka.ms/whyappproxy) .</span><span class="sxs-lookup"><span data-stu-id="8959e-105">Connectors are lightweight agents that sit on-premises and facilitate the outbound connection to the [Azure AD Application Proxy](https://aka.ms/whyappproxy) service.</span></span> <span data-ttu-id="8959e-106">Cada conector é parte de um [conector](connectorgroup.md).</span><span class="sxs-lookup"><span data-stu-id="8959e-106">Each connector is part of a [connectorGroup](connectorgroup.md).</span></span>
 
--->
+## <a name="methods"></a><span data-ttu-id="8959e-107">Methods</span><span class="sxs-lookup"><span data-stu-id="8959e-107">Methods</span></span>
 
-## <a name="methods"></a><span data-ttu-id="02a53-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="02a53-105">Methods</span></span>
+| <span data-ttu-id="8959e-108">Método</span><span class="sxs-lookup"><span data-stu-id="8959e-108">Method</span></span>       | <span data-ttu-id="8959e-109">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="8959e-109">Return Type</span></span> | <span data-ttu-id="8959e-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="8959e-110">Description</span></span> |
+|:-------------|:------------|:------------|
+| [<span data-ttu-id="8959e-111">Conectores de lista</span><span class="sxs-lookup"><span data-stu-id="8959e-111">List connectors</span></span>](../api/connector-list.md) | <span data-ttu-id="8959e-112">coleção [Connector](connector.md)</span><span class="sxs-lookup"><span data-stu-id="8959e-112">[connector](connector.md) collection</span></span> | <span data-ttu-id="8959e-113">Recupere uma lista de objetos Connector.</span><span class="sxs-lookup"><span data-stu-id="8959e-113">Retrieve a list of connector objects.</span></span> | 
+| [<span data-ttu-id="8959e-114">Obter conector</span><span class="sxs-lookup"><span data-stu-id="8959e-114">Get connector</span></span>](../api/connector-get.md) | [<span data-ttu-id="8959e-115">conector</span><span class="sxs-lookup"><span data-stu-id="8959e-115">connector</span></span>](connector.md) | <span data-ttu-id="8959e-116">Leia as propriedades e as relações do objeto Connector.</span><span class="sxs-lookup"><span data-stu-id="8959e-116">Read properties and relationships of connector object.</span></span> |
+| [<span data-ttu-id="8959e-117">Listar memberOf</span><span class="sxs-lookup"><span data-stu-id="8959e-117">List memberOf</span></span>](../api/connector-list-memberof.md) | <span data-ttu-id="8959e-118">coleção de [conectores](connectorgroup.md)</span><span class="sxs-lookup"><span data-stu-id="8959e-118">[connectorGroup](connectorgroup.md) collection</span></span> | <span data-ttu-id="8959e-119">Lista o conjunto de objetos do grupo de conectores do qual o conector é membro.</span><span class="sxs-lookup"><span data-stu-id="8959e-119">List the connectorGroup object collection the connector is a member of.</span></span> |
+| [<span data-ttu-id="8959e-120">Adicionar conector ao conector</span><span class="sxs-lookup"><span data-stu-id="8959e-120">Add connector to connectorGroup</span></span>](../api/connector-post-memberof.md)| [<span data-ttu-id="8959e-121">connectorGroup</span><span class="sxs-lookup"><span data-stu-id="8959e-121">connectorGroup</span></span>](connectorgroup.md) | <span data-ttu-id="8959e-122">Adicionar um conector a um conector.</span><span class="sxs-lookup"><span data-stu-id="8959e-122">Add a connector to a connectorGroup.</span></span> |
 
-| <span data-ttu-id="02a53-106">Método</span><span class="sxs-lookup"><span data-stu-id="02a53-106">Method</span></span>           | <span data-ttu-id="02a53-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="02a53-107">Return Type</span></span>    |<span data-ttu-id="02a53-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="02a53-108">Description</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="8959e-123">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8959e-123">Properties</span></span>
+| <span data-ttu-id="8959e-124">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8959e-124">Property</span></span>     | <span data-ttu-id="8959e-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="8959e-125">Type</span></span>        | <span data-ttu-id="8959e-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="8959e-126">Description</span></span> |
+|:-------------|:------------|:------------|
+|<span data-ttu-id="8959e-127">externalIp</span><span class="sxs-lookup"><span data-stu-id="8959e-127">externalIp</span></span>|<span data-ttu-id="8959e-128">String</span><span class="sxs-lookup"><span data-stu-id="8959e-128">String</span></span>| <span data-ttu-id="8959e-129">O endereço IP externo, conforme detectado pelo servidor do conector.</span><span class="sxs-lookup"><span data-stu-id="8959e-129">The external IP address as detected by the the connector server.</span></span> <span data-ttu-id="8959e-130">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="8959e-130">Read-only.</span></span> |
+|<span data-ttu-id="8959e-131">id</span><span class="sxs-lookup"><span data-stu-id="8959e-131">id</span></span>|<span data-ttu-id="8959e-132">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="8959e-132">String</span></span>| <span data-ttu-id="8959e-133">Identificador exclusivo do conector.</span><span class="sxs-lookup"><span data-stu-id="8959e-133">Unique identifier of the connector.</span></span> <span data-ttu-id="8959e-134">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="8959e-134">Read-only.</span></span> |
+|<span data-ttu-id="8959e-135">Nomecomputador</span><span class="sxs-lookup"><span data-stu-id="8959e-135">machineName</span></span>|<span data-ttu-id="8959e-136">String</span><span class="sxs-lookup"><span data-stu-id="8959e-136">String</span></span>| <span data-ttu-id="8959e-137">O nome do computador no qual o conector está instalado e em execução.</span><span class="sxs-lookup"><span data-stu-id="8959e-137">The machine name the connector is installed and running on.</span></span> |
+|<span data-ttu-id="8959e-138">status</span><span class="sxs-lookup"><span data-stu-id="8959e-138">status</span></span>|<span data-ttu-id="8959e-139">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="8959e-139">string</span></span>| <span data-ttu-id="8959e-140">Indica o status do conector.</span><span class="sxs-lookup"><span data-stu-id="8959e-140">Indicates the status of the connector.</span></span> <span data-ttu-id="8959e-141">Os valores possíveis são: `active` e `inactive`.</span><span class="sxs-lookup"><span data-stu-id="8959e-141">Possible values are: `active`, `inactive`.</span></span> <span data-ttu-id="8959e-142">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="8959e-142">Read-only.</span></span> |
+
+## <a name="relationships"></a><span data-ttu-id="8959e-143">Relações</span><span class="sxs-lookup"><span data-stu-id="8959e-143">Relationships</span></span>
+| <span data-ttu-id="8959e-144">Relação</span><span class="sxs-lookup"><span data-stu-id="8959e-144">Relationship</span></span> | <span data-ttu-id="8959e-145">Tipo</span><span class="sxs-lookup"><span data-stu-id="8959e-145">Type</span></span>   |<span data-ttu-id="8959e-146">Descrição</span><span class="sxs-lookup"><span data-stu-id="8959e-146">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="02a53-109">Obter conector</span><span class="sxs-lookup"><span data-stu-id="02a53-109">Get connector</span></span>](../api/connector-get.md) | [<span data-ttu-id="02a53-110">conector</span><span class="sxs-lookup"><span data-stu-id="02a53-110">connector</span></span>](connector.md) |<span data-ttu-id="02a53-111">Leia as propriedades e as relações do objeto Connector.</span><span class="sxs-lookup"><span data-stu-id="02a53-111">Read properties and relationships of connector object.</span></span>|
-|[<span data-ttu-id="02a53-112">Listar memberOf</span><span class="sxs-lookup"><span data-stu-id="02a53-112">List memberOf</span></span>](../api/connector-list-memberof.md) |<span data-ttu-id="02a53-113">coleção de [conectores](connectorgroup.md)</span><span class="sxs-lookup"><span data-stu-id="02a53-113">[connectorGroup](connectorgroup.md) collection</span></span>| <span data-ttu-id="02a53-114">Obtenha o objeto de conexão associado ao conector.</span><span class="sxs-lookup"><span data-stu-id="02a53-114">Get the connectorGroup object associated with the connector.</span></span>|
+|<span data-ttu-id="8959e-147">memberOf</span><span class="sxs-lookup"><span data-stu-id="8959e-147">memberOf</span></span>|<span data-ttu-id="8959e-148">coleção de [conectores](connectorgroup.md)</span><span class="sxs-lookup"><span data-stu-id="8959e-148">[connectorGroup](connectorgroup.md) collection</span></span>| <span data-ttu-id="8959e-149">O MemberGroup do qual o conector é membro.</span><span class="sxs-lookup"><span data-stu-id="8959e-149">The connectorGroup that the connector is a member of.</span></span> <span data-ttu-id="8959e-150">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="8959e-150">Read-only.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="02a53-115">Propriedades</span><span class="sxs-lookup"><span data-stu-id="02a53-115">Properties</span></span>
-| <span data-ttu-id="02a53-116">Propriedade</span><span class="sxs-lookup"><span data-stu-id="02a53-116">Property</span></span>     | <span data-ttu-id="02a53-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="02a53-117">Type</span></span>   |<span data-ttu-id="02a53-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="02a53-118">Description</span></span>|
-|:---------------|:--------|:----------|
-|<span data-ttu-id="02a53-119">externalIp</span><span class="sxs-lookup"><span data-stu-id="02a53-119">externalIp</span></span>|<span data-ttu-id="02a53-120">String</span><span class="sxs-lookup"><span data-stu-id="02a53-120">String</span></span>|<span data-ttu-id="02a53-121">O endereço IP externo, conforme detectado pelo serviço para o computador do conector.</span><span class="sxs-lookup"><span data-stu-id="02a53-121">The external IP address as detected by the service for the connector machine.</span></span> <span data-ttu-id="02a53-122">Somente leitura</span><span class="sxs-lookup"><span data-stu-id="02a53-122">Read-only</span></span>|
-|<span data-ttu-id="02a53-123">id</span><span class="sxs-lookup"><span data-stu-id="02a53-123">id</span></span>|<span data-ttu-id="02a53-124">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="02a53-124">String</span></span>| <span data-ttu-id="02a53-125">A ID de objeto do conector.</span><span class="sxs-lookup"><span data-stu-id="02a53-125">The object id of the connector.</span></span> <BR><span data-ttu-id="02a53-126">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="02a53-126">Read-only.</span></span>|
-|<span data-ttu-id="02a53-127">Nomecomputador</span><span class="sxs-lookup"><span data-stu-id="02a53-127">machineName</span></span>|<span data-ttu-id="02a53-128">String</span><span class="sxs-lookup"><span data-stu-id="02a53-128">String</span></span>| <span data-ttu-id="02a53-129">O nome da máquina na qual o conector está sendo executado.</span><span class="sxs-lookup"><span data-stu-id="02a53-129">The name of the machine that the connector is running on.</span></span> <BR><span data-ttu-id="02a53-130">Somente leitura</span><span class="sxs-lookup"><span data-stu-id="02a53-130">Read-only</span></span>|
-|<span data-ttu-id="02a53-131">status</span><span class="sxs-lookup"><span data-stu-id="02a53-131">status</span></span>|<span data-ttu-id="02a53-132">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="02a53-132">string</span></span>| <span data-ttu-id="02a53-133">Indica o status do conector.</span><span class="sxs-lookup"><span data-stu-id="02a53-133">Indicates the status of the connector.</span></span> <span data-ttu-id="02a53-134">Os valores possíveis são: `active` e `inactive`.</span><span class="sxs-lookup"><span data-stu-id="02a53-134">Possible values are: `active`, `inactive`.</span></span> <span data-ttu-id="02a53-135">Somente leitura</span><span class="sxs-lookup"><span data-stu-id="02a53-135">Read-only</span></span> |
+## <a name="json-representation"></a><span data-ttu-id="8959e-151">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8959e-151">JSON representation</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="02a53-136">Relações</span><span class="sxs-lookup"><span data-stu-id="02a53-136">Relationships</span></span>
-| <span data-ttu-id="02a53-137">Relação</span><span class="sxs-lookup"><span data-stu-id="02a53-137">Relationship</span></span> | <span data-ttu-id="02a53-138">Tipo</span><span class="sxs-lookup"><span data-stu-id="02a53-138">Type</span></span>   |<span data-ttu-id="02a53-139">Descrição</span><span class="sxs-lookup"><span data-stu-id="02a53-139">Description</span></span>|
-|:---------------|:--------|:----------|
-|<span data-ttu-id="02a53-140">memberOf</span><span class="sxs-lookup"><span data-stu-id="02a53-140">memberOf</span></span>|<span data-ttu-id="02a53-141">coleção de [conectores](connectorgroup.md)</span><span class="sxs-lookup"><span data-stu-id="02a53-141">[connectorGroup](connectorgroup.md) collection</span></span>| <span data-ttu-id="02a53-142">O MemberGroup do qual a conexão é membro.</span><span class="sxs-lookup"><span data-stu-id="02a53-142">The connectorGroup that the connect is a member of.</span></span><br><span data-ttu-id="02a53-143">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="02a53-143">Read-only.</span></span> |
-
-## <a name="json-representation"></a><span data-ttu-id="02a53-144">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="02a53-144">JSON representation</span></span>
-
-<span data-ttu-id="02a53-145">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="02a53-145">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8959e-152">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="8959e-152">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
