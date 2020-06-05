@@ -895,6 +895,8 @@ items:
                 href: api/onlinemeeting-get.md
               - name: Excluir
                 href: api/onlinemeeting-delete.md
+              - name: Criar ou obter
+                href: api/onlinemeeting-createorget.md
           - name: Registros de chamadas
             items:
               - name: Visão geral
@@ -3507,6 +3509,19 @@ items:
             items:
               - name: Obter operações de política de dados
                 href: api/datapolicyoperation-get.md
+          - name: Subsídios de permissão delegada
+            href: resources/oauth2permissiongrant.md
+            items:
+              - name: Listar
+                href: api/oauth2permissiongrant-list.md
+              - name: Criar
+                href: api/oauth2permissiongrant-post.md
+              - name: Obter
+                href: api/oauth2permissiongrant-get.md
+              - name: Atualizar
+                href: api/oauth2permissiongrant-update.md
+              - name: Excluir
+                href: api/oauth2permissiongrant-delete.md
           - name: Itens excluídos
             href: resources/directory.md
             items:
@@ -3661,19 +3676,6 @@ items:
             items:
               - name: Criar convite
                 href: api/invitation-post.md
-          - name: Subsídios de permissão delegada
-            href: resources/oauth2permissiongrant.md
-            items:
-              - name: Listar
-                href: api/oauth2permissiongrant-list.md
-              - name: Criar
-                href: api/oauth2permissiongrant-post.md
-              - name: Obter
-                href: api/oauth2permissiongrant-get.md
-              - name: Atualizar
-                href: api/oauth2permissiongrant-update.md
-              - name: Excluir
-                href: api/oauth2permissiongrant-delete.md
           - name: Organização
             href: resources/organization.md
             items:
