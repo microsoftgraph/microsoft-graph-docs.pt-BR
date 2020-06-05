@@ -9045,6 +9045,15 @@ items:
                 items:
                   - name: Provisionamento de lista
                     href: api/provisioningobjectsummary-list.md
+          - name: Política de fluxos de autenticação
+            items:
+              - name: Política de fluxos de autenticação
+                href: resources/authenticationflowspolicy.md
+                items:
+                  - name: Obter
+                    href: api/authenticationflowspolicy-get.md
+                  - name: Atualizar
+                    href: api/authenticationflowspolicy-update.md
           - name: Métodos de autenticação
             items:
               - name: Visão geral
@@ -9163,6 +9172,21 @@ items:
             items:
               - name: Obter operações de política de dados
                 href: api/datapolicyoperation-get.md
+          - name: Subsídios de permissão delegada
+            href: resources/oauth2permissiongrant.md
+            items:
+              - name: Listar concessões de permissão delegada
+                href: api/oauth2permissiongrant-list.md
+              - name: Obter subsídios de permissão delegada
+                href: api/oauth2permissiongrant-get.md
+              - name: Criar concessão de permissão delegada
+                href: api/oauth2permissiongrant-post.md
+              - name: Atualizar concessão de permissão delegada
+                href: api/oauth2permissiongrant-update.md
+              - name: Excluir concessão de permissão delegada
+                href: api/oauth2permissiongrant-delete.md
+              - name: Obter intervalo
+                href: api/oauth2permissiongrant-delta.md
           - name: Itens excluídos
             href: resources/directory.md
             items:
@@ -9438,6 +9462,8 @@ items:
                 href: api/identityprovider-update.md
               - name: Excluir o provedor de identidade
                 href: api/identityprovider-delete.md
+          - name: Proteção de informações
+            items:
               - name: Avaliação de ameaças
                 items:
                   - name: Visão geral
@@ -9463,21 +9489,6 @@ items:
             items:
               - name: Criar convite
                 href: api/invitation-post.md
-          - name: Subsídios de permissão delegada
-            href: resources/oauth2permissiongrant.md
-            items:
-              - name: Listar concessões de permissão delegada
-                href: api/oauth2permissiongrant-list.md
-              - name: Obter subsídios de permissão delegada
-                href: api/oauth2permissiongrant-get.md
-              - name: Criar concessão de permissão delegada
-                href: api/oauth2permissiongrant-post.md
-              - name: Atualizar concessão de permissão delegada
-                href: api/oauth2permissiongrant-update.md
-              - name: Excluir concessão de permissão delegada
-                href: api/oauth2permissiongrant-delete.md
-              - name: Obter intervalo
-                href: api/oauth2permissiongrant-delta.md
           - name: Publicação local
             href: resources/onpremisespublishingprofile-root.md
             items:
@@ -9529,6 +9540,36 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: Remover do grupo de agentes
                     href: api/publishedresource-delete-agentgroups.md
+              - name: conector
+                href: resources/connector.md
+                items:
+                  - name: Lista
+                    href: api/connector-list.md
+                  - name: Obter
+                    href: api/connector-get.md
+                  - name: Listar memberOf
+                    href: api/connector-list-memberof.md
+                  - name: Adicionar conector ao conector
+                    href: api/connector-post-memberof.md
+              - name: grupo de conectores
+                href: resources/connectorgroup.md
+                items:
+                  - name: Lista
+                    href: api/connectorgroup-list.md
+                  - name: Obter
+                    href: api/connectorgroup-get.md
+                  - name: Atualizar
+                    href: api/connectorgroup-update.md
+                  - name: Excluir
+                    href: api/connectorgroup-delete.md
+                  - name: Listar aplicativos
+                    href: api/connectorgroup-list-applications.md
+                  - name: Listar membros
+                    href: api/connectorgroup-list-members.md
+                  - name: Adicionar conector
+                    href: api/connectorgroup-post-members.md
+                  - name: Adicionar aplicativo
+                    href: api/connectorgroup-post-applications.md
           - name: Organização
             href: resources/organization.md
             items:
@@ -10042,7 +10083,7 @@ items:
       - name: Correio
         displayName: 'Outlook, Outlook mail'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/mail-api-overview.md
           - name: Mensagem
             href: resources/message.md

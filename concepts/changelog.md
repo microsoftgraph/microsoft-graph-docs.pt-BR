@@ -3,18 +3,44 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 788f4bfaa11aa03ead2b2ec8309e16ca28896958
-ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
+ms.openlocfilehash: c7bed340e6b115750918e16c59bf343533f4f458
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44524264"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556293"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
 Este log de alterações inclui alterações específicas no nível da API no Microsoft Graph v 1.0 e beta.
 
 Para obter um resumo do valor dessas alterações de API, além das ferramentas, componentes, diretrizes e tutoriais recentes, confira [Novidades do Microsoft Graph](whats-new-overview.md).
+
+## <a name="june-2020"></a>Junho de 2020
+
+### <a name="cloud-communications"></a>Comunicações em nuvem
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | Adicionado o método [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
+| Adição | v1.0 | Adicionada uma propriedade opcional **externalId**. |
+|Adição | beta | Adicionado um caminho adicional para a API de [presença Get](/graph/api/presence-get?view=graph-rest-beta) .|
+|Adição | v1.0 | Adicionado um `Accept-Language`cabeçalho opcional para [reuniões online](/graph/api/resources/onlinemeeting).|
+
+### <a name="identity-and-access"></a>Identidade e acesso
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | A entidade do [conector](/graph/api/resources/connector?view=graph-rest-beta) e as seguintes ações foram adicionadas: <br/> [Obter conector](/graph/api/connector-get?view=graph-rest-beta) <br/> [Listar memberOf](/graph/api/connector-list-memberof?view=graph-rest-beta) <br/> [Conectores de lista](/graph/api/connector-list?view=graph-rest-beta) <br/> [Adicionar conector ao conector](/graph/api/connector-post-memberof?view=graph-rest-beta) |
+| Adição | beta | Foi adicionada a entidade [Connector](/graph/api/resources/connectorgroup?view=graph-rest-beta) e as seguintes ações: <br/> [Obter um conector de conexão](/graph/api/connectorgroup-get?view=graph-rest-beta) <br/> [Atribuir um aplicativo](/graph/api/connectorgroup-post-applications?view=graph-rest-beta) <br/> [Listar aplicativos](/graph/api/connectorgroup-list-applications?view=graph-rest-beta)  <br/> [Listar connectorGroups](/graph/api/connectorgroup-list?view=graph-rest-beta) <br/> [Adicionar conector](/graph/api/connectorgroup-post-members?view=graph-rest-beta) <br/> [Conectores de lista](/graph/api/connectorgroup-list-members?view=graph-rest-beta) <br/> [Atualizar o beficador de conexão](/graph/api/connectorgroup-update?view=graph-rest-beta) <br/> [Excluir um ou de conector](/graph/api/connectorgroup-delete?view=graph-rest-beta) |
+| Adição | beta | A entidade [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta) foi adicionada. |
+| Adição | beta | A entidade [onPremisesPublishingSingleSignOn](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) foi adicionada. |
+| Adição | beta | Foi adicionada a entidade [verifiedCustomDomainCertificatesMetadata](/graph/api/resources/verifiedcustomdomaincertificatesmetadata?view=graph-rest-beta) .|
+| Adição | beta | A entidade [kerberosSignOnSettings](/graph/api/resources/kerberossignonsettings?view=graph-rest-beta) foi adicionada. |
+| Alteração | beta | Alterado na entidade [onPremisesAgent](/graph/api/resources/onpremisesagent?view=graph-rest-beta), [onPremisesAgentGroup](/graph/api/resources/onpremisesagentgroup?view=graph-rest-beta)e [publishedResource](/graph/api/resources/publishedresource?view=graph-rest-beta) o valor de publishingtype de **appProxy** para **applicationProxy**. |
+| Adição | beta | Foi adicionada a propriedade **IsEnabled** à entidade [onPremisesPublishingProfile](/graph/api/resources/onpremisespublishingprofile?view=graph-rest-beta) . |
+| Adição | beta | Adicionado o [conector](/graph/api/resources/connector?view=graph-rest-beta) e o [conector](/graph/api/resources/connectorgroup?view=graph-rest-beta) como propriedade de navegação à entidade OnPremisesPublishingProfile. |
+| Adição | beta | Foi adicionada a propriedade **onPremisesPublishing** a [Application] (/Graph/API/Resources/Application? View = Graph-REST-beta Entity. |
+| Adição | beta | Foi adicionada a propriedade **OnPremisesPublishing** para [atualizar o aplicativo](/graph/api/application-update?view=graph-rest-beta). |
+| Adição | beta | Foram adicionados novos recursos [authenticationFlowsPolicy](/graph/api/resources/authenticationflowspolicy?view=graph-rest-beta) e [selfServiceSignUpAuthenticationFlowConfiguration](/graph/api/resources/selfservicesignupauthenticationflowconfiguration?view=graph-rest-beta) e as operações [Get](/graph/api/authenticationflowspolicy-get?view=graph-rest-beta) e [Update](/graph/api/authenticationflowspolicy-update?view=graph-rest-beta) .|
 
 ## <a name="may-2020"></a>Maio de 2020
 
@@ -96,7 +122,7 @@ Foram adicionadas novas APIs e recursos para inscrever-se e recuperar registros 
 | :-------------- | :------------ | :--------------------------------------- |
 |Adição|beta|Foi adicionada a ação [evaluateDynamicMembership](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta) ao [grupo](/graph/api/resources/group?view=graph-rest-beta). Também foram adicionados os seguintes tipos de recurso de suporte:<ul><li>[evaluateDynamicMembershipResult](/graph/api/resources/evaluatedynamicmembershipresult?view=graph-rest-beta)</li><li>[expressionEvaluationDetails](/graph/api/resources/expressionevaluationdetails?view=graph-rest-beta)</li><li>[propertyToEvaluate](/graph/api/resources/propertytoevaluate?view=graph-rest-beta)</li></ul>|
 | Adição | beta | Adicionadas as propriedades **resourceBehaviorOptions** e **resourceProvisioningOptions** à entidade [grupo](/graph/api/resources/group?view=graph-rest-beta).|
-| Addition | v1.0 | As propriedades **onPremisesDomainName**, **onPremisesNetBiosName** e **onPremisesSamAccountName** foram adicionadas à entidade [Group](/graph/api/resources/group?view=graph-rest-1.0) .|
+| Adição | v1.0 | As propriedades **onPremisesDomainName**, **onPremisesNetBiosName** e **onPremisesSamAccountName** foram adicionadas à entidade [Group](/graph/api/resources/group?view=graph-rest-1.0) .|
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 
@@ -104,6 +130,7 @@ Foram adicionadas novas APIs e recursos para inscrever-se e recuperar registros 
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | A propriedade **riskEventType** foi adicionada aos recursos [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta) e [riskyUserHistoryItem](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta) . Use essa propriedade em vez da propriedade **risktype** para recuperar o tipo de detecções de risco de proteção de identidade.
 | Alteração | beta | Atualização da propriedade**clientAppTypes** em [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) para subsitituir `modern` por `mobileAppsAndDesktopClients`. `easUnsupported` removido `exchangeActiveSync` adicionado, incluindo as plataformas compatíveis e incompatíveis com o Exchange ActiveSync. |
+| Adição | v1.0 | Adicionado o Facebook ao recurso [identityprovider](/graph/api/resources/identityprovider?view=graph-rest-1.0) como um cenário adicional com suporte. |
 | Adição | beta | Foram adicionadas as permissões Application. Read. All e Application. ReadWrite. All à [lista de aplicativos](/graph/api/application-list?view=graph-rest-beta)<br>Adicionado suporte para `$count` os `$search` parâmetros de `$filter` consulta, e para: <br><ul><li>[Listar aplicativos](/graph/api/application-list?view=graph-rest-beta)</li><li>[Listar grupos de dispositivos](/graph/api/device-list-memberof?view=graph-rest-beta)</li><li>[Listar grupos transitivos de dispositivo](/graph/api/device-list-transitivememberof?view=graph-rest-beta)</li><li>[Listar dispositivos](/graph/api/device-list?view=graph-rest-beta)</li><li>[Grupo de lista memberOf](/graph/api/group-list-memberof?view=graph-rest-beta)</li><li>[Membros do grupo de lista](/graph/api/group-list-members?view=graph-rest-beta)</li><li>[Lista de grupos transitivos transitivos](/graph/api/group-list-transitivememberof?view=graph-rest-beta)</li><li>[Membros transitivos do grupo de lista](/graph/api/group-list-transitivemembers?view=graph-rest-beta)</li><li>[Listar grupos](/graph/api/group-list?view=graph-rest-beta)</li><li>[Listar orgContacts](/graph/api/orgcontact-list?view=graph-rest-beta)</li><li>[Listar o servicePrincipalName memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-beta)</li><li>[Listar os memberOf transitivos de servicePrincipalName](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta)</li><li>[List servicePrincipals](/graph/api/serviceprincipal-list?view=graph-rest-beta)</li><li>[Listar usuário membro](/graph/api/user-list-memberof?view=graph-rest-beta)</li><li>[Listar usuário transitiva membro](/graph/api/user-list-transitivememberof?view=graph-rest-beta)</li><li>[Listar usuários](/graph/api/user-list?view=graph-rest-beta)</li></ul><br>Adição de exemplos para usar a conversão de OData para: <ul><li>[Grupo de lista memberOf](/graph/api/group-list-memberof?view=graph-rest-beta)</li><li>[Membros do grupo de lista](/graph/api/group-list-members?view=graph-rest-beta)</li><li>[Lista de grupos transitivos transitivos](/graph/api/group-list-transitivememberof?view=graph-rest-beta)</li><li>[Listar o servicePrincipalName memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-beta)</li><li>[Listar os memberOf transitivos de servicePrincipalName](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta)</li><li>[Listar usuário membro](/graph/api/user-list-memberof?view=graph-rest-beta)</li><li>[Listar usuário transitiva membro](/graph/api/user-list-transitivememberof?view=graph-rest-beta)</li></ul> |
 | Addition | v1.0 | Adicionado novo tipo de entidade: [servicePrincipalName](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).|
 | Addition | v1.0 | Adicionado novo tipo de entidade: [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).|
@@ -133,28 +160,16 @@ Foram adicionadas novas APIs e recursos para inscrever-se e recuperar registros 
 
 ## <a name="may-2020"></a>Maio de 2020
 
-### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
+### <a name="identity-and-access"></a>Identidade e acesso
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Adicionado o tipo de recurso [authorizationPolicy](api-reference/beta/resources/authorizationpolicy?view=graph-rest-beta) que controla as configurações de autorização no Azure AD. |
+| Adição | beta | Adicionado o tipo de recurso [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) que controla as configurações de autorização no Azure AD. |
 
 ## <a name="april-2020"></a>Abril de 2020
 
 ### <a name="calendar"></a>Calendário
-
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition | v1.0 | Foi adicionada a nova entidade [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0). |
-|Addition | v1.0 | Foram adicionadas as APIs [get](/graph/api/calendarpermission-get?view=graph-rest-1.0), [update](/graph/api/calendarpermission-update?view=graph-rest-1.0) e [delete](/graph/api/calendarpermission-delete?view=graph-rest-1.0) para gerenciar recursos [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0) em [calendar](/graph/api/resources/calendar?view=graph-rest-1.0). |
-|Addition | v1.0 | Foi adicionado o novo tipo complexo [onlineMeetingInfo](/graph/api/resources/onlinemeetinginfo?view=graph-rest-1.0). |
-| Addition | v1.0 | Foram adicionadas as propriedades **isOnlineMeeting**, **onlineMeetingProvider** e **onlineMeeting** à entidade [event](/graph/api/resources/event?view=graph-rest-1.0). **isOnlineMeeting** e **onlineMeetingProvider** são parâmetros opcionais para os métodos [create](/graph/api/user-post-events?view=graph-rest-1.0) e [update](/graph/api/event-update?view=graph-rest-1.0) de **event**. |
-| Addition | v1.0 | Foram adicionadas as propriedades **defaultOnlineMeetingProviders** e **allowedOnlineMeetingProviders** à entidade [calendar](/graph/api/resources/calendar?view=graph-rest-1.0). |
-| Addition | v1.0 | A propriedade **isTallyingResponses** foi adicionada à entidade [calendar](/graph/api/resources/calendar?view=graph-rest-1.0). |
-| Addition | v1.0 | A propriedade **isRemovable** foi adicionada à entidade [calendar](/graph/api/resources/calendar?view=graph-rest-1.0). |
-| Addition | v1.0 | A propriedade **delegateMeetingMessageDeliveryOptions** foi adicionada à entidade [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-1.0). |
-| Adição | Beta e v1.0          | Suporte para [anexos de arquivo de até 150 MB](outlook-large-attachments.md) para o caso de um [evento](/graph/api/resources/event?view=graph-rest-1.0). |
-| Adição | beta | Suporte de paginação adicionado para a [API de locais](/graph/api/resources/place?view=graph-rest-beta).|
+| Adição | v 1.0 | Foi adicionada a nova entidade [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0). | | Adição | v 1.0 | Foram adicionadas as APIs [Get](/graph/api/calendarpermission-get?view=graph-rest-1.0), [Update](/graph/api/calendarpermission-update?view=graph-rest-1.0) e [delete](/graph/api/calendarpermission-delete?view=graph-rest-1.0) para gerenciar recursos do [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0) no [calendário](/graph/api/resources/calendar?view=graph-rest-1.0). | | Adição | v 1.0 | Adicionado um novo tipo complexo [onlineMeetingInfo](/graph/api/resources/onlinemeetinginfo?view=graph-rest-1.0). | | Adição | v 1.0 | As propriedades **isOnlineMeeting**, **onlineMeetingProvider** e **onlineMeeting** foram adicionadas à entidade [Event](/graph/api/resources/event?view=graph-rest-1.0) . **isOnlineMeeting** e **onlineMeetingProvider** são parâmetros opcionais para os métodos [create](/graph/api/user-post-events?view=graph-rest-1.0) e [update](/graph/api/event-update?view=graph-rest-1.0) de **event**. | | Adição | v 1.0 | As propriedades **defaultOnlineMeetingProviders** e **allowedOnlineMeetingProviders** foram adicionadas à entidade [Calendar](/graph/api/resources/calendar?view=graph-rest-1.0) . | | Adição | v 1.0 | Foi adicionada a propriedade **isTallyingResponses** à entidade [Calendar](/graph/api/resources/calendar?view=graph-rest-1.0) . | | Adição | v 1.0 | Foi adicionada a propriedade **isRemovable** à entidade [Calendar](/graph/api/resources/calendar?view=graph-rest-1.0) . | | Adição | v 1.0 | Foi adicionada a propriedade **delegateMeetingMessageDeliveryOptions** à entidade [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-1.0) . | | Adição | Beta e v 1.0 | Suporte para [anexos de arquivo até 150MB](outlook-large-attachments.md) para uma instância de [evento](/graph/api/resources/event?view=graph-rest-1.0) . | | Adição | Beta | Adicionado o suporte à paginação para a [API Places](/graph/api/resources/place?view=graph-rest-beta). |
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 
@@ -200,12 +215,12 @@ Foram adicionadas novas APIs e recursos para inscrever-se e recuperar registros 
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | v1.0        | Foram adicionadas as ações [fazer check-in](/graph/api/driveitem-checkin?view=graph-rest-v1.0) e [fazer check-out](/graph/api/driveitem-checkin?view=graph-rest-v1.0) no recurso [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
+| Addition        | v1.0        | Foram adicionadas as ações [fazer check-in](/graph/api/driveitem-checkin?view=graph-rest-v1.0) e [fazer check-out](/graph/api/driveitem-checkin?view=graph-rest-v1.0) no recurso [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | v1.0        | Adicionadas a **expirationDateTime**, **senha** e propriedades da **mensagem** na ação [CreateLink](/graph/api/driveitem-createlink?view=graph-rest-1.0) em um recurso [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0). |
-| Adição        | v1.0        | Foi adicionada a propriedade **preventsDownload** ao recurso[sharingLink](/graph/api/resources/sharinglink?view=graph-rest-1.0). |
-| Adição        | v1.0        | Adicionada a propriedade **permissão**ao recurso [sharedDriveItem](/graph/api/resources/shareddriveitem?view=graph-rest-1.0). |
+| Addition        | v1.0        | Adicionadas a **expirationDateTime**, **senha** e propriedades da **mensagem** na ação [CreateLink](/graph/api/driveitem-createlink?view=graph-rest-1.0) em um recurso [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0). |
+| Addition        | v1.0        | Foi adicionada a propriedade **preventsDownload** ao recurso[sharingLink](/graph/api/resources/sharinglink?view=graph-rest-1.0). |
+| Addition        | v1.0        | Adicionada a propriedade **permissão**ao recurso [sharedDriveItem](/graph/api/resources/shareddriveitem?view=graph-rest-1.0). |
 | Adição        | v1.0        | Adicionada as propriedades **expirationDateTime**, **hasPassword**e **grantedToIdentities** ao recurso [permissão](/graph/api/resources/permission?view=graph-rest-1.0). |
 | Adição        | v1.0        | Adicionadas as propriedades**expirationDateTime**e **senha** à ação [convidar](/graph/api/driveitem-invite?view=graph-rest-1.0) em um recurso [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0). |
 
@@ -337,18 +352,18 @@ Foram adicionadas novas APIs e recursos para inscrever-se e recuperar registros 
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | beta e v1.0 | Adicionadas as propriedades de **imagem** e **vídeo** ao recurso [remoteItem](/graph/api/resources/remoteitem?view=graph-rest-1.0). Essas propriedades permite que você recupere as miniaturas de tipo de mídia quando combinadas com uma função de expansão.  |
+| Adição        | Beta e v1.0 | Adicionadas as propriedades de **imagem** e **vídeo** ao recurso [remoteItem](/graph/api/resources/remoteitem?view=graph-rest-1.0). Essas propriedades permite que você recupere as miniaturas de tipo de mídia quando combinadas com uma função de expansão.  |
 | Addition | v1.0 | Foi adicionada a ação **conceder** à entidade [permissão](/graph/api/resources/permission?view=graph-rest-1.0). |
 | Addition        | v1.0        | Foi adicionada a propriedade de navegação **seguindo** à entidade [unidade](/graph/api/resources/drive?view=graph-rest-v1.0). |
-| Addition        | v1.0        | Foi adicionada a ação [seguir](/graph/api/driveitem-follow?view=graph-rest-v1.0) em [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
-| Addition        | v1.0        | Foi adicionada a ação [deixar de seguir](/graph/api/driveitem-unfollow?view=graph-rest-v1.0) em [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
+| Adição        | v1.0        | Foi adicionada a ação [seguir](/graph/api/driveitem-follow?view=graph-rest-v1.0) em [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
+| Adição        | v1.0        | Foi adicionada a ação [deixar de seguir](/graph/api/driveitem-unfollow?view=graph-rest-v1.0) em [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
 
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 
 | **Tipo de alteração** | **Versão**   | **Descrição** |
 |:---|:---|:---|
-| Adição | beta e v1.0 | Adição da propriedade **authenticationRequirement** e da propriedade **riskEventTypes_v2** à propriedade [entrar](/graph/api/resources/signin?view=graph-rest-1.0). |
+| Adição | Beta e v1.0 | Adição da propriedade **authenticationRequirement** e da propriedade **riskEventTypes_v2** à propriedade [entrar](/graph/api/resources/signin?view=graph-rest-1.0). |
 | Adição | Beta e v1.0 | Adicionado o suporte para [consultas delta para orgContact](/graph/api/orgcontact-delta?view=graph-rest-1.0).|
 | Addition | v1.0 | Adicionada a permissão de novo usuário [User.ManageIdentities.All](/graph/permissions-reference#user-permissions).|
 | Adição | beta | Adicionada a permissão de aplicativo PrivilegedAccess.Read.AzureResources de [Privileged Identity Management - recursos do Azure](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta). |
@@ -486,7 +501,7 @@ Novas APIs e recursos adicionados à assinatura e à recuperação de registros 
 |:---|:---|:---|
 | Adição | Beta e v1.0 | A propriedade **latestSupportedTlsVersion** foi adicionada à entidade da [assinatura](/graph/api/resources/subscription?view=graph-rest-1.0). Especifica a versão mais recente do TLS que o ponto de extremidade de notificação tem suporte. Permite que os assinantes usem uma versão preterida do TLS por um período limitado. Para obter detalhes, confira [Assinaturas do Microsoft Graph que substituíram o TLS 1.0 e o 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/).
 | Alteração | beta |Conjunto de políticas existentes atualizado com um segmento de [políticas](/graph/api/resources/policy-overview?view=graph-rest-beta) de URL. Os recursos de política digitados agora estão agrupados no segmento de políticas conforme descrito em [postagem no blog](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/). Esta atualização adiciona quatro recursos de política digitados: <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>e [homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta)  </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li> |
-| Adição | beta | Adicionado [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta) o tipo de recurso que controla a saída automática para sessões da web após um período de inatividade, para aplicativos que suportam a funcionalidade de tempo limite baseado em atividade.|
+| Adição | Beta | Adicionado [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta) o tipo de recurso que controla a saída automática para sessões da web após um período de inatividade, para aplicativos que suportam a funcionalidade de tempo limite baseado em atividade.|
 | Adição | beta |O tipo de recurso [claimsMappingPolicy](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) controla o mapeamento de declarações para os protocolos WS-Fed, SAML, OAuth 2.0 e OpenID Connect, para tokens emitidos para um aplicativo específico.|
 | Adição | beta | O tipo de recurso [homeRealmDiscoveryPolicy](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) controla o comportamento de autenticação do Azure Active Directory para usuários federados, em particular as restrições de aceleração automática e autenticação de usuário em domínios federados. |
 | Adição | beta | O tipo de recurso [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta) controla a duração da vida útil dos tokens de acesso usados ​​para acessar recursos protegidos.|
@@ -564,7 +579,7 @@ Novas APIs e recursos adicionados à assinatura e à recuperação de registros 
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition | v1.0 | A propriedade de navegação **primaryChannel** foi adicionada ao tipo de recurso de equipe.|
+|Adição | v1.0 | A propriedade de navegação **primaryChannel** foi adicionada ao tipo de recurso de equipe.|
 
 ### <a name="users"></a>Usuários
 
@@ -587,8 +602,8 @@ A presença na versão beta foi adicionada e APIs de comunicações na nuvem par
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
 |Adição|beta|Adicionado o recurso de [presença](/graph/api/resources/presence?view=graph-rest-beta) e métodos associados e as permissões Presence.Read e Presence.Read.All foram introduzidos.|
-|Addition|v1.0|Adicionadas as seguintes APIs: [criar chamada](/graph/api/application-post-calls?view=graph-rest-1.0), [atender chamada](/graph/api/call-answer?view=graph-rest-1.0), [rejeitar chamada](/graph/api/call-reject?view=graph-rest-1.0), [obter chamada](/graph/api/call-get?view=graph-rest-1.0), [excluir chamada](/graph/api/call-delete?view=graph-rest-1.0), [ignorar chamada](/graph/api/call-mute?view=graph-rest-1.0), [ativar / desativar som](/graph/api/call-unmute?view=graph-rest-1.0), [função de compartilhamento de tela de alteração de chamada](/graph/api/call-changescreensharingrole?view=graph-rest-1.0), [transferência de chamada](/graph/api/call-transfer?view=graph-rest-1.0), [redirecionamento de chamada](/graph/api/call-redirect?view=graph-rest-1.0), [reproduzir um prompt](/graph/api/call-playprompt?view=graph-rest-1.0), [gravar resposta](/graph/api/call-recordresponse?view=graph-rest-1.0), [inscrever-se em tne](/graph/api/call-subscribetotone?view=graph-rest-1.0), [listar participantes](/graph/api/call-list-participants?view=graph-rest-1.0), [convidar participantes](/graph/api/participant-invite?view=graph-rest-1.0), [obter participantes](/graph/api/participant-get?view=graph-rest-1.0), [silenciar participantes](/graph/api/participant-mute?view=graph-rest-1.0), [criar reunião online](/graph/api/application-post-onlinemeeting?view=graph-rest-1.0), [obter reunião online](/graph/api/onlinemeeting-get?view=graph-rest-1.0) e [ligar keep alive](/graph/api/call-keepalive?view=graph-rest-1.0).|
-|Addition|v1.0|Os seguintes recursos foram adicionados: [Call](/graph/api/resouces/call?view=graph-rest-1.0), [participante](/graph/api/resouces/participant?view=graph-rest-1.0)e [onlineMeeting](/graph/api/resouces/onlinemeeting?view=graph-rest-1.0).|
+|Adição|v1.0|Adicionadas as seguintes APIs: [criar chamada](/graph/api/application-post-calls?view=graph-rest-1.0), [atender chamada](/graph/api/call-answer?view=graph-rest-1.0), [rejeitar chamada](/graph/api/call-reject?view=graph-rest-1.0), [obter chamada](/graph/api/call-get?view=graph-rest-1.0), [excluir chamada](/graph/api/call-delete?view=graph-rest-1.0), [ignorar chamada](/graph/api/call-mute?view=graph-rest-1.0), [ativar / desativar som](/graph/api/call-unmute?view=graph-rest-1.0), [função de compartilhamento de tela de alteração de chamada](/graph/api/call-changescreensharingrole?view=graph-rest-1.0), [transferência de chamada](/graph/api/call-transfer?view=graph-rest-1.0), [redirecionamento de chamada](/graph/api/call-redirect?view=graph-rest-1.0), [reproduzir um prompt](/graph/api/call-playprompt?view=graph-rest-1.0), [gravar resposta](/graph/api/call-recordresponse?view=graph-rest-1.0), [inscrever-se em tne](/graph/api/call-subscribetotone?view=graph-rest-1.0), [listar participantes](/graph/api/call-list-participants?view=graph-rest-1.0), [convidar participantes](/graph/api/participant-invite?view=graph-rest-1.0), [obter participantes](/graph/api/participant-get?view=graph-rest-1.0), [silenciar participantes](/graph/api/participant-mute?view=graph-rest-1.0), [criar reunião online](/graph/api/application-post-onlinemeeting?view=graph-rest-1.0), [obter reunião online](/graph/api/onlinemeeting-get?view=graph-rest-1.0) e [ligar keep alive](/graph/api/call-keepalive?view=graph-rest-1.0).|
+|Adição|v1.0|Os seguintes recursos foram adicionados: [Call](/graph/api/resouces/call?view=graph-rest-1.0), [participante](/graph/api/resouces/participant?view=graph-rest-1.0)e [onlineMeeting](/graph/api/resouces/onlinemeeting?view=graph-rest-1.0).|
 | Alteração        | Beta        | Registro de API IVR renomeado para [recordResponse](/graph/api/call-record?view=graph-rest-beta). |
 | Alteração        | Beta        | Removidas as propriedades de objeto [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) **isCanceled**, **canceledDateTime**, e**entryExitAnnouncement**. Propriedade renomeada **joinUrl**para **joinWebUrl**. |
 | Adição        | Beta & v 1.0       | Adicionada a operação[delete onlineMeeting](/graph/api/onlinemeeting-delete.md).|
@@ -622,7 +637,7 @@ A presença na versão beta foi adicionada e APIs de comunicações na nuvem par
 |Adição|beta|A propriedade **uninstallBuiltInApps** foi adicionada à entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta)|
 |Adição|beta|As propriedades **subjectNameFormatString**, **certificateStore** e **customSubjectAlternativeNames** foram adicionadas à entidade [windows10PkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-windows10pkcscertificateprofile?view=graph-rest-beta)|
 |Adição|beta|A propriedade de navegação **deviceShellScripts** foi adicionada à entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
-|Adição|Beta|A propriedade **passwordChangeUrl**foi adicionada ao tipo complexo [kerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-kerberossinglesignonextension?view=graph-rest-beta)|
+|Adição|beta|A propriedade **passwordChangeUrl**foi adicionada ao tipo complexo [kerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-kerberossinglesignonextension?view=graph-rest-beta)|
 |Adição|beta|Os membros **securityoptions**, **userRightsAssignment**, **auditSetting** e **windowsFirewallSettings** foram adicionados ao tipo de enumeração [groupPolicySettingType](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingtype?view=graph-rest-beta)|
 |Adição|beta|O membro **contentDownloaded** foi adicionado ao tipo de enumeração [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta)|
 
@@ -630,7 +645,7 @@ A presença na versão beta foi adicionada e APIs de comunicações na nuvem par
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | Adicionada a propriedade [classSettings](/graph/api/resources/teamclasssettings?view=graph-rest-1.0) ao recurso [equipe](/graph/api/resources/team?view=graph-rest-1.0) para permitir que os chamadores obtenham configurações específicas de uma equipe de tipo Classe.|
+| Addition | v1.0 | Adicionada a propriedade [classSettings](/graph/api/resources/teamclasssettings?view=graph-rest-1.0) ao recurso [equipe](/graph/api/resources/team?view=graph-rest-1.0) para permitir que os chamadores obtenham configurações específicas de uma equipe de tipo Classe.|
 
 ### <a name="groups"></a>Grupos
 
@@ -770,11 +785,11 @@ Introduziu a versão 1,1 do Microsoft Graph Toolkit.
 
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition | v1.0 | Foi adicionado um novo tipo de entidade: [aplicativo](/graph/api/resources/application?view=graph-rest-1.0).|
-| Addition | v1.0 | Novas permissões delegadas [Application.Read.All](/graph/permissions-reference#application-resource-permissions), [Application.ReadWrite.All](/graph/permissions-reference#application-resource-permissions).|
-| Addition | v1.0 | Adicionada nova permissão de aplicativo [Application.Read.All](/graph/permissions-reference#application-resource-permissions).|
-| Addition | v1.0 | Foram adicionadas novas permissões de aplicativo e delegadas [GroupMember. Read. All](permissions-reference.md#group-permissions) e [GroupMember. ReadWrite. All](permissions-reference.md#group-permissions) para obter e atualizar o recurso de [grupo](/graph/api/resources/group?view=graph-rest-1.0) .
-| Addition | v1.0 | Adicionado o novo grupo de permissões de aplicativo [. Create](permissions-reference.md#group-permissions) para criar o recurso de **grupo** .
+| Adição | v1.0 | Foi adicionado um novo tipo de entidade: [aplicativo](/graph/api/resources/application?view=graph-rest-1.0).|
+| Adição | v1.0 | Novas permissões delegadas [Application.Read.All](/graph/permissions-reference#application-resource-permissions), [Application.ReadWrite.All](/graph/permissions-reference#application-resource-permissions).|
+| Adição | v1.0 | Adicionada nova permissão de aplicativo [Application.Read.All](/graph/permissions-reference#application-resource-permissions).|
+| Adição | v1.0 | Foram adicionadas novas permissões de aplicativo e delegadas [GroupMember. Read. All](permissions-reference.md#group-permissions) e [GroupMember. ReadWrite. All](permissions-reference.md#group-permissions) para obter e atualizar o recurso de [grupo](/graph/api/resources/group?view=graph-rest-1.0) .
+| Adição | v1.0 | Adicionado o novo grupo de permissões de aplicativo [. Create](permissions-reference.md#group-permissions) para criar o recurso de **grupo** .
 | Adição | Beta e v1.0 | Adicionada a propriedade **creationType** ao recurso de [usuário](/graph/api/resources/user?view=graph-rest-1.0).|
 | Addition | v1.0 | Adicionada a operação [checkMemberObjects](/graph/api/device-checkmemberobjects?view=graph-rest-1.0) para o recurso[dispositivo](/graph/api/resources/device?view=graph-rest-1.0). |
 | Addition | v1.0 | Adicionada a operação [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-1.0) para o recurso[grupo](/graph/api/resources/group?view=graph-rest-1.0). |
@@ -864,7 +879,7 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 |:---|:---|:---|
 |Adição|beta|Foram adicionadas novas entidades:<br/>[deviceHealthScriptAssignment](/graph/api/resources/intune-devices-devicehealthscriptassignment?view=graph-rest-beta)<br/>[deviceHealthScriptDeviceState](/graph/api/resources/intune-devices-devicehealthscriptdevicestate?view=graph-rest-beta)<br/>[deviceHealthScriptRunSummary](/graph/api/resources/intune-devices-devicehealthscriptrunsummary?view=graph-rest-beta)<br/>[deviceManagementCachedReportConfiguration](/graph/api/resources/intune-reporting-devicemanagementcachedreportconfiguration?view=graph-rest-beta)<br/>[deviceManagementExportJob](/graph/api/resources/intune-reporting-devicemanagementexportjob?view=graph-rest-beta)<br/>[deviceManagementReports](/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-beta)<br/>[deviceManagementReportSchedule](/graph/api/resources/intune-reporting-devicemanagementreportschedule?view=graph-rest-beta)<br/>[groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport?view=graph-rest-beta)<br/>[groupPolicySettingMapping](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingmapping?view=graph-rest-beta)<br/>[macOSMicrosoftEdgeApp](/graph/api/resources/intune-apps-macosmicrosoftedgeapp?view=graph-rest-beta)<br/>[macOSPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-macospkcscertificateprofile?view=graph-rest-beta)<br/>[userExperienceAnalyticsDevicePerformance](/graph/api/resources/intune-devices-userexperienceanalyticsdeviceperformance?view=graph-rest-beta)<br/>[userExperienceAnalyticsDeviceStartupHistory](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartuphistory?view=graph-rest-beta)<br/>[userExperienceAnalyticsRegressionSummary](/graph/api/resources/intune-devices-userexperienceanalyticsregressionsummary?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicy](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyAssignment](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary?view=graph-rest-beta)<br/>[windowsMicrosoftEdgeApp](/graph/api/resources/intune-apps-windowsmicrosoftedgeapp?view=graph-rest-beta)<br/>|
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[androidDeviceOwnerGlobalProxy](/graph/api/resources/intune-deviceconfig-androiddeviceownerglobalproxy?view=graph-rest-beta)<br/>[androidDeviceOwnerGlobalProxyAutoConfig](/graph/api/resources/intune-deviceconfig-androiddeviceownerglobalproxyautoconfig?view=graph-rest-beta)<br/>[androidDeviceOwnerGlobalProxyDirect](/graph/api/resources/intune-deviceconfig-androiddeviceownerglobalproxydirect?view=graph-rest-beta)<br/>[groupPolicyObjectFile](/graph/api/resources/intune-gpanalyticsservice-grouppolicyobjectfile?view=graph-rest-beta)<br/>[mobileAppInstallTimeSettings](/graph/api/resources/intune-shared-mobileappinstalltimesettings?view=graph-rest-beta)<br/>[scopeTagInfo](/graph/api/resources/intune-auditing-scopetaginfo?view=graph-rest-beta)<br/>[win32LobAppRestartSettings](/graph/api/resources/intune-shared-win32lobapprestartsettings?view=graph-rest-beta)<br/>|
-|Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[deviceManagementReportFileFormat](/graph/api/resources/intune-reporting-devicemanagementreportfileformat?view=graph-rest-beta)<br/>[deviceManagementReportStatus](/graph/api/resources/intune-reporting-devicemanagementreportstatus?view=graph-rest-beta)<br/>[deviceManagementScheduledReportRecurrence](/graph/api/resources/intune-reporting-devicemanagementscheduledreportrecurrence?view=graph-rest-beta)<br/>[diskType](/graph/api/resources/intune-devices-disktype?view=graph-rest-beta)<br/>[groupPolicyMigrationReadiness](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreadiness?view=graph-rest-beta)<br/>[groupPolicySettingScope](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingscope?view=graph-rest-beta)<br/>[groupPolicySettingType](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingtype?view=graph-rest-beta)<br/>[managedAppDeviceThreatLevel](/graph/api/resources/intune-mam-managedappdevicethreatlevel?view=graph-rest-beta)<br/>[microsoftEdgeChannel](/graph/api/resources/intune-apps-microsoftedgechannel?view=graph-rest-beta)<br/>[remediationState](/graph/api/resources/intune-devices-remediationstate?view=graph-rest-beta)<br/>[userExperienceAnalyticsSummarizedBy](/graph/api/resources/intune-devices-userexperienceanalyticssummarizedby?view=graph-rest-beta)<br/>[win32LobAppRestartBehavior](/graph/api/resources/intune-apps-win32lobapprestartbehavior?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyStatuses](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses?view=graph-rest-beta)<br/>|
+|Adição|beta|Foram adicionados novos tipos de enumeração:<br/>[deviceManagementReportFileFormat](/graph/api/resources/intune-reporting-devicemanagementreportfileformat?view=graph-rest-beta)<br/>[deviceManagementReportStatus](/graph/api/resources/intune-reporting-devicemanagementreportstatus?view=graph-rest-beta)<br/>[deviceManagementScheduledReportRecurrence](/graph/api/resources/intune-reporting-devicemanagementscheduledreportrecurrence?view=graph-rest-beta)<br/>[diskType](/graph/api/resources/intune-devices-disktype?view=graph-rest-beta)<br/>[groupPolicyMigrationReadiness](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreadiness?view=graph-rest-beta)<br/>[groupPolicySettingScope](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingscope?view=graph-rest-beta)<br/>[groupPolicySettingType](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingtype?view=graph-rest-beta)<br/>[managedAppDeviceThreatLevel](/graph/api/resources/intune-mam-managedappdevicethreatlevel?view=graph-rest-beta)<br/>[microsoftEdgeChannel](/graph/api/resources/intune-apps-microsoftedgechannel?view=graph-rest-beta)<br/>[remediationState](/graph/api/resources/intune-devices-remediationstate?view=graph-rest-beta)<br/>[userExperienceAnalyticsSummarizedBy](/graph/api/resources/intune-devices-userexperienceanalyticssummarizedby?view=graph-rest-beta)<br/>[win32LobAppRestartBehavior](/graph/api/resources/intune-apps-win32lobapprestartbehavior?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyStatuses](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses?view=graph-rest-beta)<br/>|
 |Adição|beta|A ação [approveApps](/graph/api/api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-approveapps?view=graph-rest-beta) foi adicionada a [androidManagedStoreAccountEnterpriseSettings](/graph/api/resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings?view=graph-rest-beta) |
 |Adição|beta|A ação [executeAction](/graph/api/api/intune-devices-manageddevice-executeaction?view=graph-rest-beta) foi adicionada à coleção [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
 |Adição|beta|A ação [atribuir](/graph/api/intune-devices-devicehealthscript-assign?view=graph-rest-beta) foi adicionada a [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) |
@@ -1082,8 +1097,8 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 |Adição|beta|Adicionadas as propriedades **isBuiltIn** e **createdDateTime** à entidade [userExperienceAnalyticsBaseline](/graph/api/resources/intune-devices-userexperienceanalyticsbaseline)|
 |Exclusão|beta|Removidas as propriedades **overallScore** e **overallRegressionThreshold** da entidade [userExperienceAnalyticsBaseline](/graph/api/resources/intune-devices-userexperienceanalyticsbaseline)|
 |Exclusão|beta|Removidas as propriedades **displayName** e **overallScore** da entidade [userExperienceAnalyticsCategory](/graph/api/resources/intune-devices-userexperienceanalyticscategory)|
-|Exclusão|beta|Removida a propriedade **displayName** da entidade [userExperienceAnalyticsMetric](/graph/api/resources/intune-devices-userexperienceanalyticsmetric)|
-|Exclusão|beta|Removidas as propriedades **overallScore**, **deviceBootPerformanceOverallScore** e **bestPracticesOverallScore** da entidade [userExperienceAnalyticsOverview](/graph/api/resources/intune-devices-userexperienceanalyticsoverview)|
+|Exclusão|Beta|Removida a propriedade **displayName** da entidade [userExperienceAnalyticsMetric](/graph/api/resources/intune-devices-userexperienceanalyticsmetric)|
+|Exclusão|Beta|Removidas as propriedades **overallScore**, **deviceBootPerformanceOverallScore** e **bestPracticesOverallScore** da entidade [userExperienceAnalyticsOverview](/graph/api/resources/intune-devices-userexperienceanalyticsoverview)|
 |Adição|beta|Adicionadas as propriedades **attackSurfaceReductionRules** e **bitLockerRecoveryPasswordRotation** à entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration)|
 |Adição|beta|Adicionadas as propriedades **trackInstallProgressForAutopilotOnly** e **disableUserStatusTrackingAfterFirstUser** à entidade [windows10EnrollmentCompletionPageConfiguration](/graph/api/resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration)|
 |Adição|beta|Adicionada a propriedade de navegação **policySets** à entidade [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement)|
@@ -1093,7 +1108,7 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 |Adição|beta|Adicionada a propriedade **v13_0** ao tipo complexo [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem)|
 |Adição|beta|Adicionadas as propriedades **v10_14** e **v10_15** ao tipo complexo [macOSMinimumOperatingSystem](/graph/api/resources/intune-apps-macosminimumoperatingsystem)|
 |Adição|beta|Adicionadas as propriedades **values** e **severity** ao tipo complexo [userExperienceAnalyticsInsight](/graph/api/resources/intune-devices-userexperienceanalyticsinsight)|
-|Exclusão|beta|Removida a propriedade **value** do tipo complexo [userExperienceAnalyticsInsight](/graph/api/resources/intune-devices-userexperienceanalyticsinsight)|
+|Exclusão|Beta|Removida a propriedade **value** do tipo complexo [userExperienceAnalyticsInsight](/graph/api/resources/intune-devices-userexperienceanalyticsinsight)|
 |Adição|beta|Adicionados os membros **appleUserEnrollment**, **appleUserEnrollmentWithServiceAccount** e **appleUserEnrollmentWithAzureAD** ao tipo enum [deviceEnrollmentType](/graph/api/resources/intune-shared-deviceenrollmenttype)|
 |Adição|beta|Adicionado o membro **securityTemplate** ao tipo enum [deviceManagementTemplateType](/graph/api/resources/intune-deviceintent-devicemanagementtemplatetype)|
 |Adição|beta|Adicionado o membro **rebootNow** ao tipo enum [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction)|
@@ -1251,8 +1266,8 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | v1.0  | Foram adicionadas as propriedades **deletedItemCount** e **deletedItemSizeInBytes** à entidade [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta).|
 | Addition        | v1.0  | Propriedade **groupId** adicionada à entidade [office365GroupsActivityDetail](/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta).|
-| Addition        | v1.0  | Propriedade **ownerPrincipalName** adicionada à entidade [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta).|
-| Addition        | v1.0  | Propriedade **ownerPrincipalName** adicionada à entidade [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
+| Adição        | v1.0  | Propriedade **ownerPrincipalName** adicionada à entidade [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta).|
+| Adição        | v1.0  | Propriedade **ownerPrincipalName** adicionada à entidade [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
 | Addition        | v1.0  | Foram adicionadas as propriedades **office365Active** e **office365Inactive** à entidade [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta).|
 
 ### <a name="social-and-workplace-intelligence"></a>Inteligência social e do local de trabalho
@@ -1354,7 +1369,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Adicionada a propriedade de navegação **assinaturas** à entidade de [lista](/graph/api/resources/list?view=graph-rest-beta). |
+| Adição        | beta        | Adicionada a propriedade de navegação **assinaturas** à entidade de [lista](/graph/api/resources/list?view=graph-rest-beta). |
 
 ### <a name="reports"></a>Relatórios
 
@@ -1396,7 +1411,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |:---|:---|:---|
 |Adição|beta|Foram adicionadas novas entidades:<br/>[appVulnerabilityManagedDevice](/graph/api/resources/intune-partnerintegration-appvulnerabilitymanageddevice?view=graph-rest-beta)<br/>[appVulnerabilityMobileApp](/graph/api/resources/intune-partnerintegration-appvulnerabilitymobileapp?view=graph-rest-beta)<br/>[appVulnerabilityTask](/graph/api/resources/intune-partnerintegration-appvulnerabilitytask?view=graph-rest-beta)<br/>[deviceAppManagementTask](/graph/api/resources/intune-partnerintegration-deviceappmanagementtask?view=graph-rest-beta)<br/>[deviceManagementDomainJoinConnector](/graph/api/resources/intune-odj-devicemanagementdomainjoinconnector?view=graph-rest-beta)<br/>[iosikEv2VpnConfiguration](/graph/api/resources/intune-deviceconfig-iosikev2vpnconfiguration?view=graph-rest-beta)<br/>[roleScopeTagAutoAssignment](/graph/api/resources/intune-rbac-rolescopetagautoassignment?view=graph-rest-beta)<br/>[windows10DeviceFirmwareConfigurationInterface](/graph/api/resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface?view=graph-rest-beta)<br/>|
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[deviceManagementApplicabilityRuleDeviceMode](/graph/api/resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode?view=graph-rest-beta)<br/>[deviceManagementApplicabilityRuleOsEdition](/graph/api/resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition?view=graph-rest-beta)<br/>[deviceManagementApplicabilityRuleOsVersion](/graph/api/resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion?view=graph-rest-beta)<br/>[deviceManagementSettingComparison](/graph/api/resources/intune-deviceintent-devicemanagementsettingcomparison?view=graph-rest-beta)<br/>[iosVpnSecurityAssociationParameters](/graph/api/resources/intune-deviceconfig-iosvpnsecurityassociationparameters?view=graph-rest-beta)<br/>|
-|Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[appInstallControlType](/graph/api/resources/intune-deviceconfig-appinstallcontroltype?view=graph-rest-beta)<br/>[appVulnerabilityTaskMitigationType](/graph/api/resources/intune-partnerintegration-appvulnerabilitytaskmitigationtype?view=graph-rest-beta)<br/>[changeUefiSettingsPermission](/graph/api/resources/intune-deviceconfig-changeuefisettingspermission?view=graph-rest-beta)<br/>[deviceAppManagementTaskCategory](/graph/api/resources/intune-partnerintegration-deviceappmanagementtaskcategory?view=graph-rest-beta)<br/>[deviceAppManagementTaskPriority](/graph/api/resources/intune-partnerintegration-deviceappmanagementtaskpriority?view=graph-rest-beta)<br/>[deviceAppManagementTaskStatus](/graph/api/resources/intune-partnerintegration-deviceappmanagementtaskstatus?view=graph-rest-beta)<br/>[deviceManagementApplicabilityRuleType](/graph/api/resources/intune-deviceconfig-devicemanagementapplicabilityruletype?view=graph-rest-beta)<br/>[deviceManagementComparisonResult](/graph/api/resources/intune-deviceintent-devicemanagementcomparisonresult?view=graph-rest-beta)<br/>[deviceManagementDomainJoinConnectorState](/graph/api/resources/intune-odj-devicemanagementdomainjoinconnectorstate?view=graph-rest-beta)<br/>[deviceManagementTemplateType](/graph/api/resources/intune-deviceintent-devicemanagementtemplatetype?view=graph-rest-beta)<br/>[macOSFileVaultRecoveryKeyTypes](/graph/api/resources/intune-deviceconfig-macosfilevaultrecoverykeytypes?view=graph-rest-beta)<br/>[managedAppNotificationRestriction](/graph/api/resources/intune-mam-managedappnotificationrestriction?view=graph-rest-beta)<br/>[mobileAppDependencyType](/graph/api/resources/intune-apps-mobileappdependencytype?view=graph-rest-beta)<br/>[secureBootWithDMAType](/graph/api/resources/intune-deviceconfig-securebootwithdmatype?view=graph-rest-beta)<br/>[vpnClientAuthenticationType](/graph/api/resources/intune-deviceconfig-vpnclientauthenticationtype?view=graph-rest-beta)<br/>[vpnDeadPeerDetectionRate](/graph/api/resources/intune-deviceconfig-vpndeadpeerdetectionrate?view=graph-rest-beta)<br/>[vpnEncryptionAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnencryptionalgorithmtype?view=graph-rest-beta)<br/>[vpnIntegrityAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnintegrityalgorithmtype?view=graph-rest-beta)<br/>[vpnLocalIdentifier](/graph/api/resources/intune-deviceconfig-vpnlocalidentifier?view=graph-rest-beta)<br/>[vpnServerCertificateType](/graph/api/resources/intune-deviceconfig-vpnservercertificatetype?view=graph-rest-beta)<br/>[windows10DeviceModeType](/graph/api/resources/intune-deviceconfig-windows10devicemodetype?view=graph-rest-beta)<br/>|
+|Adição|beta|Foram adicionados novos tipos de enumeração:<br/>[appInstallControlType](/graph/api/resources/intune-deviceconfig-appinstallcontroltype?view=graph-rest-beta)<br/>[appVulnerabilityTaskMitigationType](/graph/api/resources/intune-partnerintegration-appvulnerabilitytaskmitigationtype?view=graph-rest-beta)<br/>[changeUefiSettingsPermission](/graph/api/resources/intune-deviceconfig-changeuefisettingspermission?view=graph-rest-beta)<br/>[deviceAppManagementTaskCategory](/graph/api/resources/intune-partnerintegration-deviceappmanagementtaskcategory?view=graph-rest-beta)<br/>[deviceAppManagementTaskPriority](/graph/api/resources/intune-partnerintegration-deviceappmanagementtaskpriority?view=graph-rest-beta)<br/>[deviceAppManagementTaskStatus](/graph/api/resources/intune-partnerintegration-deviceappmanagementtaskstatus?view=graph-rest-beta)<br/>[deviceManagementApplicabilityRuleType](/graph/api/resources/intune-deviceconfig-devicemanagementapplicabilityruletype?view=graph-rest-beta)<br/>[deviceManagementComparisonResult](/graph/api/resources/intune-deviceintent-devicemanagementcomparisonresult?view=graph-rest-beta)<br/>[deviceManagementDomainJoinConnectorState](/graph/api/resources/intune-odj-devicemanagementdomainjoinconnectorstate?view=graph-rest-beta)<br/>[deviceManagementTemplateType](/graph/api/resources/intune-deviceintent-devicemanagementtemplatetype?view=graph-rest-beta)<br/>[macOSFileVaultRecoveryKeyTypes](/graph/api/resources/intune-deviceconfig-macosfilevaultrecoverykeytypes?view=graph-rest-beta)<br/>[managedAppNotificationRestriction](/graph/api/resources/intune-mam-managedappnotificationrestriction?view=graph-rest-beta)<br/>[mobileAppDependencyType](/graph/api/resources/intune-apps-mobileappdependencytype?view=graph-rest-beta)<br/>[secureBootWithDMAType](/graph/api/resources/intune-deviceconfig-securebootwithdmatype?view=graph-rest-beta)<br/>[vpnClientAuthenticationType](/graph/api/resources/intune-deviceconfig-vpnclientauthenticationtype?view=graph-rest-beta)<br/>[vpnDeadPeerDetectionRate](/graph/api/resources/intune-deviceconfig-vpndeadpeerdetectionrate?view=graph-rest-beta)<br/>[vpnEncryptionAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnencryptionalgorithmtype?view=graph-rest-beta)<br/>[vpnIntegrityAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnintegrityalgorithmtype?view=graph-rest-beta)<br/>[vpnLocalIdentifier](/graph/api/resources/intune-deviceconfig-vpnlocalidentifier?view=graph-rest-beta)<br/>[vpnServerCertificateType](/graph/api/resources/intune-deviceconfig-vpnservercertificatetype?view=graph-rest-beta)<br/>[windows10DeviceModeType](/graph/api/resources/intune-deviceconfig-windows10devicemodetype?view=graph-rest-beta)<br/>|
 |Adição|beta|Foi adicionada a ação [updateStatus](/graph/api/intune-partnerintegration-deviceappmanagementtask-updatestatus?view=graph-rest-beta) em [deviceAppManagementTask](/graph/api/resources/intune-partnerintegration-deviceappmanagementtask?view=graph-rest-beta) |
 |Adição|beta|Foi adicionada a ação [assign](/graph/api/intune-rbac-rolescopetag-assign?view=graph-rest-beta) em [roleScopeTag](/graph/api/resources/intune-rbac-rolescopetag?view=graph-rest-beta) |
 |Adição|beta|Foi adicionada a função [compare](/graph/api/intune-deviceintent-devicemanagementtemplate-compare?view=graph-rest-beta) em [deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta) |
@@ -1432,7 +1447,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição | beta|Novos recursos adicionados: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [Iniciador](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
 | Adição |beta |Operação de [lista provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) adicionada</br>|                     |
 | Adição | v1.0 | Adicionada a propriedade **signInSessionsValidFromDateTime** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0). |
-| Adição | v1.0 | Adicionada a ação [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) no recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0). |
+| Addition | v1.0 | Adicionada a ação [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) no recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0). |
 
 ### <a name="mail-outlook"></a>Email (Outlook)
 
@@ -1627,25 +1642,25 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | v1.0        | Adicionada a propriedade de **análise** à entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta). |
-| Adição        | v1.0        | Adicionada a propriedade de **análise** à entidade do [site](/graph/api/resources/site?view=graph-rest-beta). |
-| Adição        | v1.0        | Adicionada a propriedade de **análise** à entidade [listItem](/graph/api/resources/listitem?view=graph-rest-beta). |
-| Adição        | v1.0        | Adicionada a função **getActivitiesByInterval** na entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta). |
-| Adição        | v1.0        | Adicionado a função **getActivitiesByInterval** na entidade do [site](/graph/api/resources/site?view=graph-rest-beta). |
-| Adição        | v1.0        | Adicionada a função **getActivitiesByInterval** na entidade [listItem](/graph/api/resources/listitem?view=graph-rest-beta). |
-| Adição        | v1.0        | Adicionada a entidade [itemAnalytics](/graph/api/resources/itemanalytics?view=graph-rest-beta). |
-| Adição        | v1.0        | Adicionada a entidade [itemActivityStat](/graph/api/resources/itemactivity?view=graph-rest-beta). |
+| Addition        | v1.0        | Adicionada a propriedade de **análise** à entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta). |
+| Addition        | v1.0        | Adicionada a propriedade de **análise** à entidade do [site](/graph/api/resources/site?view=graph-rest-beta). |
+| Addition        | v1.0        | Adicionada a propriedade de **análise** à entidade [listItem](/graph/api/resources/listitem?view=graph-rest-beta). |
+| Addition        | v1.0        | Adicionada a função **getActivitiesByInterval** na entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta). |
+| Addition        | v1.0        | Adicionado a função **getActivitiesByInterval** na entidade do [site](/graph/api/resources/site?view=graph-rest-beta). |
+| Addition        | v1.0        | Adicionada a função **getActivitiesByInterval** na entidade [listItem](/graph/api/resources/listitem?view=graph-rest-beta). |
+| Addition        | v1.0        | Adicionada a entidade [itemAnalytics](/graph/api/resources/itemanalytics?view=graph-rest-beta). |
+| Addition        | v1.0        | Adicionada a entidade [itemActivityStat](/graph/api/resources/itemactivity?view=graph-rest-beta). |
 | Adição        | v1.0        | Adicionado o tipo complexo [itemActionStat](/graph/api/resources/itemactionstat?view=graph-rest-beta). |
 | Adição        | v1.0        | Adicionado o tipo complexo [accessAction](/graph/api/resources/accessaction?view=graph-rest-beta). |
 | Adição        | v1.0        | Adicionado o tipo complexo [incompleteData](/graph/api/resources/incompletedata?view=graph-rest-beta). |
-| Adição        | v1.0        | Adicionado a propriedade de **acesso** ao tipo complexo [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta). |
-| Adição        | v1.0        | Adicionado a propriedade **local** ao tipo complexo [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta). |
+| Addition        | v1.0        | Adicionado a propriedade de **acesso** ao tipo complexo [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta). |
+| Addition        | v1.0        | Adicionado a propriedade **local** ao tipo complexo [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta). |
 
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 |  Introdução do novo **APIs de logs de auditoria do Azure AD**, oferecendo logs de atividades para tarefas de gerenciamento de diretório através de [directoryAudit](/graph/api/resources/directoryAudit?view=graph-rest-1.0) e atividade de entrada pelo [signIns](/graph/api/resources/signIns?view=graph-rest-1.0).|
+| Adição | v1.0 |  Introdução do novo **APIs de logs de auditoria do Azure AD**, oferecendo logs de atividades para tarefas de gerenciamento de diretório através de [directoryAudit](/graph/api/resources/directoryAudit?view=graph-rest-1.0) e atividade de entrada pelo [signIns](/graph/api/resources/signIns?view=graph-rest-1.0).|
 | Adição | beta | Adição de novas permissões de aplicativo para APIs de **avaliação de acesso**: AccessReview.Read.All, ProgramControl.Read.All e ProgramControl.ReadWrite.All. Para mais detalhes, confira a [referência da API de revisões de acesso](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
 | Adição | beta | Adicione a propriedade **signInSessionsValidFromDateTime** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-beta). Essa é uma renomeação das propriedades **refreshTokensValidFromDateTime**, mas ambas as propriedades terão suporte para permitir que os clientes migrem sem problemas. Nos próximos dois meses, a propriedade antiga, **refreshTokensValidFromDateTime**, será removida.|
 | Adição | beta | Adicione a ação **revokeSignInSessions** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-beta). Esta é uma renomeação da ação **invalidateAllRefreshTokens**, mas ambas as ações de serviço terão suporte para permitir que os clientes migrem sem problemas. Nos próximos dois meses, a ação de serviço antiga, **invalidateAllRefreshTokens**, será removida. |
@@ -1844,7 +1859,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Adição |beta e v1.0| Adicionada a propriedade **internalId** ao recurso [team](/graph/api/resources/team?view=graph-rest-1.0).|
+|Adição |Beta e v1.0| Adicionada a propriedade **internalId** ao recurso [team](/graph/api/resources/team?view=graph-rest-1.0).|
 |Adição |Beta e v1.0| Adição de suporte para configuração do Word, Excel, PowerPoint, PDF e para as [guias](teams-configuring-builtin-tabs.md) da biblioteca de documentos. |
 |Adição |beta| Introdução da API[Enviar uma mensagem para um canal](/graph/api/channel-post-messages?view=graph-rest-beta). |
 |Adição |beta| Introdução da API [Responder a uma mensagem em um canal](/graph/api/channel-post-messagereply?view=graph-rest-beta). |
@@ -1860,7 +1875,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |:---|:---|:---|
 |Adição|beta|Foram adicionadas novas entidades:<br/>[appleVppTokenTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-applevpptokentroubleshootingevent?view=graph-rest-beta)<br/>[appLogCollectionRequest](/graph/api/resources/intune-devices-applogcollectionrequest?view=graph-rest-beta)<br/>[windowsUpdateState](/graph/api/resources/intune-deviceconfig-windowsupdatestate?view=graph-rest-beta)<br/>|
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[appLogCollectionDownloadDetails](/graph/api/resources/intune-devices-applogcollectiondownloaddetails?view=graph-rest-beta)<br/>**deviceManagementTroubleshootingErrorDetails**<br/>[deviceManagementTroubleshootingErrorResource](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource?view=graph-rest-beta)<br/>[win32LobAppAssignmentSettings](/graph/api/resources/intune-apps-win32lobappassignmentsettings?view=graph-rest-beta)<br/>|
-|Adição|beta|Foram adicionados novos tipos de enumeração:<br/>[appLogDecryptionAlgorithm](/graph/api/resources/intune-devices-applogdecryptionalgorithm?view=graph-rest-beta)<br/>[appLogUploadState](/graph/api/resources/intune-devices-apploguploadstate?view=graph-rest-beta)<br/>[win32LobAppNotification](/graph/api/resources/intune-apps-win32lobappnotification?view=graph-rest-beta)<br/>[windowsUpdateStatus](/graph/api/resources/intune-deviceconfig-windowsupdatestatus?view=graph-rest-beta)<br/>|
+|Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[appLogDecryptionAlgorithm](/graph/api/resources/intune-devices-applogdecryptionalgorithm?view=graph-rest-beta)<br/>[appLogUploadState](/graph/api/resources/intune-devices-apploguploadstate?view=graph-rest-beta)<br/>[win32LobAppNotification](/graph/api/resources/intune-apps-win32lobappnotification?view=graph-rest-beta)<br/>[windowsUpdateStatus](/graph/api/resources/intune-deviceconfig-windowsupdatestatus?view=graph-rest-beta)<br/>|
 |Adição|beta|Foi adicionada a ação **createDownloadUrl** no [appLogCollectionRequest](/graph/api/resources/intune-devices-applogcollectionrequest?view=graph-rest-beta) |
 |Exclusão|beta|Foram removidas as seguintes entidades:<br/>**deviceManagementApplicabilityRuleOsEdition**<br/>**deviceManagementApplicabilityRuleOsVersion**<br/>|
 |Adição|beta|Foi adicionada a propriedade **passwordSignInFailureCountBeforeFactoryReset** à entidade [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta)|
@@ -1883,15 +1898,14 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Adição |v1.0|Para oferecer suporte à configuração de um provedor de identidade em um locatário do Azure AD B2C, introduziu um novo tipo de recurso da entidade [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-1.0) e as operações [criar](/graph/api/identityprovider-post-identityproviders?view=graph-rest-1.0), [listar](/graph/api/identityprovider-list?view=graph-rest-1.0), [obter](/graph/api/identityprovider-get?view=graph-rest-1.0), [atualizar](/graph/api/identityprovider-update?view=graph-rest-1.0) e [excluir](/graph/api/identityprovider-delete?view=graph-rest-1.0).|
-| Adição | v1.0 | Adicionado o Facebook ao recurso [identityprovider](/graph/api/resources/identityprovider?view=graph-rest-1.0) como um cenário adicional com suporte. |
+|Addition |v1.0|Para oferecer suporte à configuração de um provedor de identidade em um locatário do Azure AD B2C, introduziu um novo tipo de recurso da entidade [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-1.0) e as operações [criar](/graph/api/identityprovider-post-identityproviders?view=graph-rest-1.0), [listar](/graph/api/identityprovider-list?view=graph-rest-1.0), [obter](/graph/api/identityprovider-get?view=graph-rest-1.0), [atualizar](/graph/api/identityprovider-update?view=graph-rest-1.0) e [excluir](/graph/api/identityprovider-delete?view=graph-rest-1.0).|
 
 ### <a name="identity-and-access-directory-apis"></a>Identidade e acesso (APIs de diretório)
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | Adicionado novo método transitiveMembers para [grupos](/graph/api/group-list-transitivemembers?view=graph-rest-1.0). Esse método retorna uma lista simples de membros, inclusive os aninhados.|
-| Adição | v1.0 | Adicionado novo método transitiveMemberOf para [usuários](/graph/api/user-list-transitivemembersof?view=graph-rest-1.0), [grupos](/graph/api/group-list-transitivemembersof?view=graph-rest-beta) e [dispositivos](/graph/api/device-list-transitivemembersof?view=graph-rest-1.0).|
+| Addition | v1.0 | Adicionado novo método transitiveMembers para [grupos](/graph/api/group-list-transitivemembers?view=graph-rest-1.0). Esse método retorna uma lista simples de membros, inclusive os aninhados.|
+| Addition | v1.0 | Adicionado novo método transitiveMemberOf para [usuários](/graph/api/user-list-transitivemembersof?view=graph-rest-1.0), [grupos](/graph/api/group-list-transitivemembersof?view=graph-rest-beta) e [dispositivos](/graph/api/device-list-transitivemembersof?view=graph-rest-1.0).|
 | Addition | v1.0 | Adicionadas novas propriedades para [usuários](/graph/api/resources/user?view=graph-rest-1.0): **employeeId**, **faxNumber**, **onPremisesDistinguishedName**, **showInAddressList** e **otherMails**.|
 | Addition | v1.0 | Adicionada a propriedade **forceChangePasswordNextSignInWithMfa** para o tipo complexo [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-1.0).|
 | Addition | v1.0 | Adicionada a propriedade **licenseAssignmentStates** para a entidade de[usuário](/graph/api/resources/user?view=graph-rest-1.0) para [Licenciamento Baseado em Grupo](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
@@ -2010,12 +2024,12 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Addition |v1.0| Introduzido um novo tipo de recurso [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0).|
 |Addition |v1.0| Introduzido um novo tipo de recurso [teamsAsyncOperation](/graph/api/resources/teamsasyncoperation?view=graph-rest-1.0). |
 |Addition |v1.0| Introduzido um novo tipo complexo [teamGuestSettings](/graph/api/resources/teamguestsettings?view=graph-rest-1.0). |
-|Adição |v1.0| Introduzido um novo tipo complexo [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-1.0). |
+|Addition |v1.0| Introduzido um novo tipo complexo [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-1.0). |
 |Addition |v1.0| Introduzido um novo tipo complexo [teamMessagingSettings](/graph/api/resources/teammessagingsettings?view=graph-rest-1.0). |
 |Addition |v1.0| Introduzido um novo tipo complexo [teamFunSettings](/graph/api/resources/teamfunsettings?view=graph-rest-1.0). |
 |Addition |v1.0| Introduzido uma nova ação [Clonar equipe](/graph/api/team-clone?view=graph-rest-1.0). |
 |Addition |v1.0| Introduzido nova ação [Equipe de arquivo](/graph/api/team-archive?view=graph-rest-1.0).|
-|Adição |v1.0| Introduzido uma nova ação [equipe Unarchive](/graph/api/team-unarchive?view=graph-rest-1.0). |
+|Addition |v1.0| Introduzido uma nova ação [equipe Unarchive](/graph/api/team-unarchive?view=graph-rest-1.0). |
 |Adição         | Beta          | Adicionado o suporte a permissões de aplicativos para [clonar equipe](/graph/api/team-clone?view=graph-rest-beta). |
 |Adição |beta| Introduzido [/teams/ {id} / installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta), que substituirá /teams/ {id} / aplicativos com algumas diferenças na carga. |
 |Adição |beta| Introduzido [{/appCatalogs/teamsApps/id de} / appDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta), que substituirá a propriedade de versão [{/appCatalogs/teamsApps/id de}](/graph/api/resources/teamsapp?view=graph-rest-beta). |
@@ -2041,8 +2055,8 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
-|Addition|v1.0|Adicionada a propriedade**tenantLockdownRequireNetworkDuringOutOfBoxExperience** para a entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-1.0)|
-|Addition|v1.0|A propriedade **v12_0** foi adicionada ao tipo complexo [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem?view=graph-rest-1.0)|
+|Adição|v1.0|Adicionada a propriedade**tenantLockdownRequireNetworkDuringOutOfBoxExperience** para a entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-1.0)|
+|Adição|v1.0|A propriedade **v12_0** foi adicionada ao tipo complexo [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem?view=graph-rest-1.0)|
 |Adição|beta|Adicionada a propriedade **lastReportAggregationDateTime** para a entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
 |Adição|beta|Foram adicionadas novas entidades:<br/>[intuneBrandingProfile](/graph/api/resources/intune-wip-intunebrandingprofile?view=graph-rest-beta)<br/>|
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[deviceAndAppManagementAssignedRoleIds](/graph/api/resources/intune-rbac-deviceandappmanagementassignedroleids?view=graph-rest-beta)<br/>|
@@ -2058,20 +2072,20 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Exclusão|beta|Remover a propriedade **subjectAlternativeNameType** propriedade na entidade [androidForWorkCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androidforworkcertificateprofilebase?view=graph-rest-beta)|
 |Adição|beta|A propriedade **subjectAlternativeNameType** foi adicionada à entidade [androidForWorkPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkpkcscertificateprofile?view=graph-rest-beta)|
 |Adição|beta|Adicionado o **certificateStore**, **customSubjectAlternativeNames** e propriedades**subjectAlternativeNameType**para a entidade[ androidForWorkScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkscepcertificateprofile?view=graph-rest-beta)|
-|Exclusão|Beta|Remover a propriedade **subjectAlternativeNameType** na entidade[androidWorkProfileCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androidworkprofilecertificateprofilebase?view=graph-rest-beta)|
+|Exclusão|beta|Remover a propriedade **subjectAlternativeNameType** na entidade[androidWorkProfileCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androidworkprofilecertificateprofilebase?view=graph-rest-beta)|
 |Adição|beta|Adicionada a propriedade **subjectAlternativeNameType** para a entidade [androidWorkProfilePkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilepkcscertificateprofile?view=graph-rest-beta)|
 |Adição|beta|Adicionado o **certificateStore**, **customSubjectAlternativeNames** e propriedades**subjectAlternativeNameType**para a entidade[androidWorkProfileScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilescepcertificateprofile?view=graph-rest-beta)|
 |Adição|beta|Adicionada a propriedade **legacyPcManangementEnabled** para a entidade [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
-|Exclusão|Beta|Remover a propriedade **pinRequiredOnLaunchInsteadOfBiometric** na entidade [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta)|
+|Exclusão|beta|Remover a propriedade **pinRequiredOnLaunchInsteadOfBiometric** na entidade [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta)|
 |Adição|beta|A propriedade de navegação **roleScopeTagIds** foi adicionada à entidade [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-beta)|
 |Adição|beta|Adicionada a propriedade **applicationGuardEnabledOptions** para a entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta)|
 |Adição|beta|Adicionada a propriedade **selectedMobileAppIds** para a entidade [windows10EnrollmentCompletionPageConfiguration](/graph/api/resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration?view=graph-rest-beta) |
 |Adição|beta|Adicionadas as propriedades **engagedRestartDeadlineInDays**, **engagedRestartSnoozeScheduleInDays**, **engagedRestartTransitionScheduleInDays**, ** autoRestartNotificationDismissal**, **scheduleRestartWarningInHours** e **scheduleImminentRestartWarningInMinutes** à entidade[ windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) |
 |Adição|beta|Adicionadas as propriedades**preSharedKey** e **meteredConnectionLimit** para a entidade [windowsWifiConfiguration](/graph/api/resources/intune-deviceconfig-windowswificonfiguration?view=graph-rest-beta)|
-|Adição|Beta|Adicionada a propriedade de navegação**intuneBrandingProfiles** para a entidade[deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade de navegação**intuneBrandingProfiles** para a entidade[deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
 |Adição|beta|Adicionadas as propriedades**v6_0**, **v7_0**, **v7_1**, **v8_0**, **v8_1** e **v9_0**para o tipo complexo [androidMinimumOperatingSystem](/graph/api/resources/intune-apps-androidminimumoperatingsystem?view=graph-rest-beta)|
 |Adição|beta|A propriedade **v12_0** foi adicionada ao tipo complexo [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem?view=graph-rest-beta)|
-|Exclusão|Beta|Remover a propriedade**runAsLoggedOnUser** no tipo complexo[win32LobAppPowerShellScriptDetection](/graph/api/resources/intune-apps-win32lobapppowershellscriptdetection?view=graph-rest-beta)|
+|Exclusão|beta|Remover a propriedade**runAsLoggedOnUser** no tipo complexo[win32LobAppPowerShellScriptDetection](/graph/api/resources/intune-apps-win32lobapppowershellscriptdetection?view=graph-rest-beta)|
 |Adição|beta|Adicionada a propriedade **lastUpdateDateTime** para o tipo complexo[osVersionCount](/graph/api/resources/intune-devices-osversioncount?view=graph-rest-beta)|
 |Adição|beta|Adicionada a propriedade **lastUpdateDateTime** para o tipo complexo[windowsMalwareCategoryCount](/graph/api/resources/intune-devices-windowsmalwarecategorycount?view=graph-rest-beta)|
 |Adição|beta|Adicionada a propriedade**lastUpdateDateTime** para o tipo complexo [windowsMalwareExecutionStateCount](/graph/api/resources/intune-devices-windowsmalwareexecutionstatecount?view=graph-rest-beta)|
@@ -2080,7 +2094,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 ### <a name="identity-and-access--audit-logs"></a>Identidade e acesso | Logs de auditoria
 
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| **Tipo de alteração** | **Versão**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Alteração   |Beta| Renomeada a propriedade `conditionalAccessPolicies` para `appliedConditionalAccessPolicy`.|
 |Adição |beta| Introduzidas propriedades adicionais de risco na [API signIn](/graph/api/resources/signin?view=graph-rest-beta), incluindo `riskDetail`, `riskLevelAggregated`, `riskLevelDuringSignIn`, `riskEventTypes`, e `riskState`.|
@@ -2144,7 +2158,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 ### <a name="calls-and-online-meetings"></a>Chamadas e reuniões online
 
-| **Tipo de alteração** | **Versão** | **Description**                          |
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Alteração          | Beta        | O recurso [aplicativo](/graph/api/resources/application?view=graph-rest-beta) foi atualizado para adicionar um conjunto de chamadas. |
 | Alteração          | Beta        | O recurso[operação](/graph/api/resources/operation?view=graph-rest-beta) foi atualizado para oferecer suporte para chamadas de longa duração e APIs de reuniões. |
@@ -2231,8 +2245,8 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição        | Beta        | Adicionado o tipo complexo [incompleteData](/graph/api/resources/incompletedata?view=graph-rest-beta)  |
 | Adição        | Beta        | Adicionada a propriedade **acesso** para o tipo complexo[itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) |
 | Adição        | Beta        | Adicionada a propriedade **local** para o tipo complexo[itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) |
-| Addition        | v1.0        | Foi adicionada a ação **preview** na entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) |
-| Addition        | v1.0        | Adicionado o tipo complexo [itemPreviewInfo](/graph/api/resources/itempreviewinfo?view=graph-rest-1.0) |
+| Adição        | v1.0        | Foi adicionada a ação **preview** na entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) |
+| Adição        | v1.0        | Adicionado o tipo complexo [itemPreviewInfo](/graph/api/resources/itempreviewinfo?view=graph-rest-1.0) |
 
 ### <a name="financials-dynamics-365-business-central"></a>Finanças (Dynamics 365 Business Central)
 
@@ -2294,10 +2308,10 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Addition|v1.0|A função [managedDeviceEnrollmentTopFailures](/graph/api/intune-shared-reportroot-manageddeviceenrollmenttopfailures?view=graph-rest-1.0) foi adicionada ao [reportRoot](/graph/api/resources/intune-shared-reportroot?view=graph-rest-1.0) |
 |Addition|v1.0|Adicionar a propriedade**kioskModeBuiltInAppId** para a entidade [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-1.0)|
 |Addition|v1.0|Adicionar o membro **não atribuído** para o tipo de enumeração [complianceStatus](/graph/api/resources/intune-shared-compliancestatus?view=graph-rest-1.0)|
-|Addition|v1.0|Adicionar o membro**pushNotification** para o tipo de enumeração[deviceComplianceActionType](/graph/api/resources/intune-deviceconfig-devicecomplianceactiontype?view=graph-rest-1.0)|
-|Addition|v1.0|Adicionado o membro**userAbandonment** para o tipo de enumeração [deviceEnrollmentFailureReason](/graph/api/resources/intune-troubleshooting-deviceenrollmentfailurereason?view=graph-rest-1.0)|
-|Addition|v1.0|Adicionados os membros **comprometidos** e **mal configurados** ao tipo de enumeração [managedDevicePartnerReportedHealthState](/graph/api/resources/intune-devices-manageddevicepartnerreportedhealthstate?view=graph-rest-1.0)|
-|Addition|v1.0|Adicionar o membro **assignedToExternalMDM** para o tipo de enumeração [vppTokenState](/graph/api/resources/intune-onboarding-vpptokenstate?view=graph-rest-1.0)|
+|Adição|v1.0|Adicionar o membro**pushNotification** para o tipo de enumeração[deviceComplianceActionType](/graph/api/resources/intune-deviceconfig-devicecomplianceactiontype?view=graph-rest-1.0)|
+|Adição|v1.0|Adicionado o membro**userAbandonment** para o tipo de enumeração [deviceEnrollmentFailureReason](/graph/api/resources/intune-troubleshooting-deviceenrollmentfailurereason?view=graph-rest-1.0)|
+|Adição|v1.0|Adicionados os membros **comprometidos** e **mal configurados** ao tipo de enumeração [managedDevicePartnerReportedHealthState](/graph/api/resources/intune-devices-manageddevicepartnerreportedhealthstate?view=graph-rest-1.0)|
+|Adição|v1.0|Adicionar o membro **assignedToExternalMDM** para o tipo de enumeração [vppTokenState](/graph/api/resources/intune-onboarding-vpptokenstate?view=graph-rest-1.0)|
 ||
 |Adição|beta|Foram adicionadas novas entidades:<br/>[advancedThreatProtectionOnboardingDeviceSettingState](/graph/api/resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate?view=graph-rest-beta)<br/>[advancedThreatProtectionOnboardingStateSummary](/graph/api/resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary?view=graph-rest-beta)<br/>[depEnrollmentBaseProfile](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile?view=graph-rest-beta)<br/>[depEnrollmentProfile](/graph/api/resources/intune-enrollment-depenrollmentprofile?view=graph-rest-beta)<br/>[depIOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depiosenrollmentprofile?view=graph-rest-beta)<br/>[depMacOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depmacosenrollmentprofile?view=graph-rest-beta)<br/>[enrollmentProfile](/graph/api/resources/intune-enrollment-enrollmentprofile?view=graph-rest-beta)<br/>[importedAppleDeviceIdentity](/graph/api/resources/intune-enrollment-importedappledeviceidentity?view=graph-rest-beta)<br/>[importedAppleDeviceIdentityResult](/graph/api/resources/intune-enrollment-importedappledeviceidentityresult?view=graph-rest-beta)<br/>[importedWindowsAutopilotDeviceIdentityUpload](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload?view=graph-rest-beta)<br/>[roleScopeTag](/graph/api/resources/intune-rbac-rolescopetag?view=graph-rest-beta)<br/>[windowsIdentityProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windowsidentityprotectionconfiguration?view=graph-rest-beta)<br/>|
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[configurationManagerClientHealthState](/graph/api/resources/intune-devices-configurationmanagerclienthealthstate?view=graph-rest-beta)<br/>[customSubjectAlternativeName](/graph/api/resources/intune-deviceconfig-customsubjectalternativename?view=graph-rest-beta)<br/>[deviceManagementUserRightsLocalUserOrGroup](/graph/api/resources/intune-deviceconfig-devicemanagementuserrightslocaluserorgroup?view=graph-rest-beta)<br/>[deviceManagementUserRightsSetting](/graph/api/resources/intune-deviceconfig-devicemanagementuserrightssetting?view=graph-rest-beta)<br/>[managementCertificateWithThumbprint](/graph/api/resources/intune-enrollment-managementcertificatewiththumbprint?view=graph-rest-beta)<br/>[mobileAppSupportedDeviceType](/graph/api/resources/intune-troubleshooting-mobileappsupporteddevicetype?view=graph-rest-beta)<br/>[osVersionCount](/graph/api/resources/intune-devices-osversioncount?view=graph-rest-beta)<br/>[windowsMalwareCategoryCount](/graph/api/resources/intune-devices-windowsmalwarecategorycount?view=graph-rest-beta)<br/>[windowsMalwareExecutionStateCount](/graph/api/resources/intune-devices-windowsmalwareexecutionstatecount?view=graph-rest-beta)<br/>[windowsMalwareNameCount](/graph/api/resources/intune-devices-windowsmalwarenamecount?view=graph-rest-beta)<br/>[windowsMalwareOverview](/graph/api/resources/intune-devices-windowsmalwareoverview?view=graph-rest-beta)<br/>[windowsMalwareStateCount](/graph/api/resources/intune-devices-windowsmalwarestatecount?view=graph-rest-beta)<br/>|
@@ -2445,7 +2459,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 
-| **Tipo de alteração** | **Versão**   | **Description**                          |
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Alteração|beta|Atualizado o recurso [Mensagem de chat](/graph/api/resources/chatmessage?view=graph-rest-beta)|
 |Adição|beta|Adicionado o tipo de recurso [Anexo de chat](/graph/api/resources/chatmessageattachment?view=graph-rest-beta)|
@@ -2654,7 +2668,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Change           | Beta          | A propriedade **creatorUserId** da entidade [assinatura](/graph/api/resources/subscription?view=graph-rest-beta) foi renomeada para **creatorId** para refletir melhor o significado. |
+| Alteração           | Beta          | A propriedade **creatorUserId** da entidade [assinatura](/graph/api/resources/subscription?view=graph-rest-beta) foi renomeada para **creatorId** para refletir melhor o significado. |
 
 ### <a name="identity-and-access-directory-apis"></a>Identidade e acesso (APIs de diretório)
 
@@ -2693,18 +2707,18 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Addition | v1.0 | Foi adicionada [activity](/graph/api/resources/projectrome-activity?view=graph-rest-1.0) |
 | Adição | v.10 | Foi adicionado [HistoryItem](/graph/api/resources/projectrome-historyitem?view=graph-rest-1.0) |
 | Addition | v1.0 | Foi adicionado [visualInfo](/graph/api/resources/projectrome-visualinfo?view=graph-rest-1.0) |
-| Adição | v1.0 | Foi adicionado [imageInfo](/graph/api/resources/projectrome-imageinfo?view=graph-rest-1.0) |
+| Addition | v1.0 | Foi adicionado [imageInfo](/graph/api/resources/projectrome-imageinfo?view=graph-rest-1.0) |
 | Adição | v.10 | Foi adicionada a [visão geral do Project Rome](/graph/api/resources/project-rome-overview?view=graph-rest-1.0) |
 | Alteração | Beta | Foi adicionada a documentação de deep insert para [Upsert Activity](/graph/api/projectrome-put-activity?view=graph-rest-beta) |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
-|Addition|v1.0|Foram adicionadas novas entidades:<br/>[managedDeviceMobileAppConfigurationDeviceStatus](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationdevicestatus?view=graph-rest-1.0)<br/>|
-|Addition|v1.0|Foram adicionados novos tipos de enumeração:<br/>[managedDeviceOwnerType](/graph/api/resources/intune-devices-manageddeviceownertype?view=graph-rest-1.0)<br/>|
-|Addition|v1.0|Foi adicionada a propriedade **managedDeviceOwnerType** à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0)|
-|Addition|v1.0|Foi adicionada a propriedade de navegação **deviceStatuses** à entidade [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-1.0)|
-|Addition|v1.0|Foi adicionado o membro **androidWorkProfile** ao tipo de enumeração [policyPlatformType](/graph/api/resources/intune-deviceconfig-policyplatformtype?view=graph-rest-1.0)|
+|Adição|v1.0|Foram adicionadas novas entidades:<br/>[managedDeviceMobileAppConfigurationDeviceStatus](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationdevicestatus?view=graph-rest-1.0)<br/>|
+|Adição|v1.0|Foram adicionados novos tipos de enumeração:<br/>[managedDeviceOwnerType](/graph/api/resources/intune-devices-manageddeviceownertype?view=graph-rest-1.0)<br/>|
+|Adição|v1.0|Foi adicionada a propriedade **managedDeviceOwnerType** à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0)|
+|Adição|v1.0|Foi adicionada a propriedade de navegação **deviceStatuses** à entidade [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-1.0)|
+|Adição|v1.0|Foi adicionado o membro **androidWorkProfile** ao tipo de enumeração [policyPlatformType](/graph/api/resources/intune-deviceconfig-policyplatformtype?view=graph-rest-1.0)|
 |Adição|beta|Foram adicionadas novas entidades:<br/>[androidWorkProfileCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androidworkprofilecertificateprofilebase?view=graph-rest-beta)<br/>[androidWorkProfileCustomConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilecustomconfiguration?view=graph-rest-beta)<br/>[androidWorkProfileEasEmailProfileBase](/graph/api/resources/intune-deviceconfig-androidworkprofileeasemailprofilebase?view=graph-rest-beta)<br/>[androidWorkProfileEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofileenterprisewificonfiguration?view=graph-rest-beta)<br/>[androidWorkProfileGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta)<br/>[androidWorkProfileGmailEasConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilegmaileasconfiguration?view=graph-rest-beta)<br/>[androidWorkProfileNineWorkEasConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilenineworkeasconfiguration?view=graph-rest-beta)<br/>[androidWorkProfilePkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilepkcscertificateprofile?view=graph-rest-beta)<br/>[androidWorkProfileScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilescepcertificateprofile?view=graph-rest-beta)<br/>[androidWorkProfileTrustedRootCertificate](/graph/api/resources/intune-deviceconfig-androidworkprofiletrustedrootcertificate?view=graph-rest-beta)<br/>[androidWorkProfileVpnConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilevpnconfiguration?view=graph-rest-beta)<br/>[androidWorkProfileWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilewificonfiguration?view=graph-rest-beta)<br/>[restrictedAppsViolation](/graph/api/resources/intune-deviceconfig-restrictedappsviolation?view=graph-rest-beta)<br/>[windowsAutopilotDeploymentProfileAssignment](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofileassignment?view=graph-rest-beta)<br/>|
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[managedDeviceModelsAndManufacturers](/graph/api/resources/intune-devices-manageddevicemodelsandmanufacturers?view=graph-rest-beta)<br/>[managedDeviceReportedApp](/graph/api/resources/intune-devices-manageddevicereportedapp?view=graph-rest-beta)<br/>[windowsEnrollmentStatusScreenSettings](/graph/api/resources/intune-enrollment-windowsenrollmentstatusscreensettings?view=graph-rest-beta)<br/>|
 |Adição|beta|Foram adicionados novos tipos de enumeração:<br/>[androidWorkProfileCrossProfileDataSharingType](/graph/api/resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype?view=graph-rest-beta)<br/>[androidWorkProfileDefaultAppPermissionPolicyType](/graph/api/resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype?view=graph-rest-beta)<br/>[androidWorkProfileRequiredPasswordType](/graph/api/resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype?view=graph-rest-beta)<br/>[androidWorkProfileVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidworkprofilevpnconnectiontype?view=graph-rest-beta)<br/>[bitLockerRecoveryInformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta)<br/>[localSecurityOptionsInformationShownOnLockScreenType](/graph/api/resources/intune-deviceconfig-localsecurityoptionsinformationshownonlockscreentype?view=graph-rest-beta)<br/>[managedAppRemediationAction](/graph/api/resources/intune-mam-managedappremediationaction?view=graph-rest-beta)<br/>[managedDeviceOwnerType](/graph/api/resources/intune-devices-manageddeviceownertype?view=graph-rest-beta)<br/>[restrictedAppsState](/graph/api/resources/intune-deviceconfig-restrictedappsstate?view=graph-rest-beta)<br/>[windows10VpnProfileTarget](/graph/api/resources/intune-deviceconfig-windows10vpnprofiletarget?view=graph-rest-beta)<br/>|
@@ -2719,9 +2733,9 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Adição|beta|Foram adicionadas as propriedades **minimumWipeSdkVersion**, **allowedIosDeviceModels** e **appActionIfIosDeviceModelNotAllowed** à entidade [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-beta)|
 |Adição|beta|Foram adicionadas as propriedades **minimumWipeOsVersion**, **minimumWipeAppVersion**, **appActionIfDeviceComplianceRequired** e **appActionIfMaximumPinRetriesExceeded** à entidade [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta)|
 |Adição|beta|Foram adicionadas as propriedades **managedDeviceOwnerType**, **preferMdmOverGroupPolicyAppliedDateTime**, **isAutopilotEnrolled** e **requestUserEnrollmentApproval** à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
-|Adição|beta|Foi adicionada a propriedade **managedDeviceModelsAndManufacturers** à entidade [managedDeviceOverview](/graph/api/resources/intune-devices-manageddeviceoverview?view=graph-rest-beta)|
+|Adição|Beta|Foi adicionada a propriedade **managedDeviceModelsAndManufacturers** à entidade [managedDeviceOverview](/graph/api/resources/intune-devices-manageddeviceoverview?view=graph-rest-beta)|
 |Adição|beta|Foram adicionadas as propriedades **localSecurityOptionsMachineInactivityLimitInMinutes**, **localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool**, **localSecurityOptionsInformationShownOnLockScreen**, **defenderSecurityCenterDisableAccountUI**, **defenderSecurityCenterDisableHardwareUI**, **defenderSecurityCenterDisableRansomwareUI**, **defenderSecurityCenterDisableSecureBootUI** e **defenderSecurityCenterDisableTroubleshootingUI** à entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta)|
-|Adição|beta|Foram adicionadas as propriedades **printerNames**, **printerDefaultName**, **printerBlockAddition** e **searchBlockWebResults** à entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta)|
+|Adição|Beta|Foram adicionadas as propriedades **printerNames**, **printerDefaultName**, **printerBlockAddition** e **searchBlockWebResults** à entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta)|
 |Adição|beta|Foram adicionadas as propriedades **profileTarget**, **enableAlwaysOn** e **enableDeviceTunnel** à entidade [windows10VpnConfiguration](/graph/api/resources/intune-deviceconfig-windows10vpnconfiguration?view=graph-rest-beta)|
 |Adição|beta|Foi adicionada a propriedade **enrollmentStatusScreenSettings** à entidade [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta)|
 |Adição|beta|Foi adicionada a propriedade de navegação **deviceConfigurationRestrictedAppsViolations** à entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
@@ -2733,10 +2747,10 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Adição|beta|Foi adicionada a propriedade **landingPageCustomizedImage** ao tipo complexo [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta)|
 |Exclusão|beta|Foi removida a propriedade **ipAddressOrFqdn** do tipo complexo [vpnServer](/graph/api/resources/intune-deviceconfig-vpnserver?view=graph-rest-beta)|
 |Exclusão|beta|Foi removida a propriedade **restartMode** do tipo complexo [windowsUpdateScheduledInstall](/graph/api/resources/intune-deviceconfig-windowsupdatescheduledinstall?view=graph-rest-beta)|
-|Adição|Beta|Foi adicionado o membro **paloAltoGlobalProtect** ao tipo de enumeração [androidForWorkVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidforworkvpnconnectiontype?view=graph-rest-beta)|
-|Adição|Beta|Foi adicionado o membro **paloAltoGlobalProtect** ao tipo de enumeração [androidVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidvpnconnectiontype?view=graph-rest-beta)|
+|Adição|beta|Foi adicionado o membro **paloAltoGlobalProtect** ao tipo de enumeração [androidForWorkVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidforworkvpnconnectiontype?view=graph-rest-beta)|
+|Adição|beta|Foi adicionado o membro **paloAltoGlobalProtect** ao tipo de enumeração [androidVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidvpnconnectiontype?view=graph-rest-beta)|
 |Adição|Beta|Foi adicionado o membro **paloAltoGlobalProtect** ao tipo de enumeração [appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta)|
-|Adição|beta|Foi adicionado o membro **androidWorkProfile** ao tipo de enumeração [policyPlatformType](/graph/api/resources/intune-deviceconfig-policyplatformtype?view=graph-rest-beta)|
+|Adição|Beta|Foi adicionado o membro **androidWorkProfile** ao tipo de enumeração [policyPlatformType](/graph/api/resources/intune-deviceconfig-policyplatformtype?view=graph-rest-beta)|
 
 ### <a name="education"></a>Educação
 
@@ -2761,15 +2775,15 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Addition        | v1.0        | Adicionado o tipo complexo **privacyProfile** à entidade [organization](/graph/api/resources/organization?view=graph-rest-1.0). |
 | Addition        | v1.0        | Adicionado o tipo complexo **legalAgeGroup, ageGroup e consentProvidedForMinor** à entidade [user](/graph/api/resources/user?view=graph-rest-1.0). |
 | Addition        | v1.0        | Foi adicionado suporte a usuários e grupos nas assinaturas de notificação do [webhook](/graph/api/resources/webhooks?view=graph-rest-1.0). |
-| Adição        | beta        | Foi adicionada a ação [Listar itens excluídos de propriedade de um usuário](/graph/api/directory-deleteditems-user-owned?view=graph-rest-beta) ao recurso [directory (deleted items)](/graph/api/resources/directory?view=graph-rest-beta) |
+| Adição        | Beta        | Foi adicionada a ação [Listar itens excluídos de propriedade de um usuário](/graph/api/directory-deleteditems-user-owned?view=graph-rest-beta) ao recurso [directory (deleted items)](/graph/api/resources/directory?view=graph-rest-beta) |
 
 ### <a name="mail-outlook"></a>Email (Outlook)
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0          | Adição da propriedade **flag** à entidade [message](/graph/api/resources/message?view=graph-rest-1.0). Adição do tipo complexo [followupFlag](/graph/api/resources/followupflag?view=graph-rest-1.0) compartilhado.|
-| Addition        | v1.0        | A propriedade **internetMessageHeaders** foi adicionada à entidade [message](/graph/api/resources/message?view=graph-rest-1.0). |
-| Addition        | v1.0        | O tipo complexo [internetMessageHeader](/graph/api/resources/internetmessageheader?view=graph-rest-1.0) foi adicionado. |
+| Adição        | v1.0        | A propriedade **internetMessageHeaders** foi adicionada à entidade [message](/graph/api/resources/message?view=graph-rest-1.0). |
+| Adição        | v1.0        | O tipo complexo [internetMessageHeader](/graph/api/resources/internetmessageheader?view=graph-rest-1.0) foi adicionado. |
 | Addition        | v1.0        | A propriedade de navegação **messageRules** foi adicionada à entidade [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0). **messageRules** é uma coleção das instâncias [messageRule](/graph/api/resources/messagerule?view=graph-rest-1.0). |
 | Addition        | v1.0        | A entidade [messageRule](/graph/api/resources/messagerule?view=graph-rest-1.0) e os tipos complexos [messageRuleActions](/graph/api/resources/messageruleactions?view=graph-rest-1.0), [messageRulePredicates](/graph/api/resources/messagerulepredicates?view=graph-rest-1.0) e [sizeRange](/graph/api/resources/sizerange?view=graph-rest-1.0) foram adicionados. |
 | Addition        | v1.0        | As seguintes operações CRUD às regras de mensagem foram adicionadas: [create](/graph/api/mailfolder-post-messagerules?view=graph-rest-1.0), [list](/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0), [get](/graph/api/messagerule-get?view=graph-rest-1.0), [update](/graph/api/messagerule-update?view=graph-rest-1.0) e [delete](/graph/api/messagerule-delete?view=graph-rest-1.0). |
@@ -2817,7 +2831,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Addition        | v1.0        | As seguintes operações CRUD para [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) foram adicionadas: [create](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0), [get](/graph/api/outlookcategory-get?view=graph-rest-1.0), [update](/graph/api/outlookcategory-update?view=graph-rest-1.0) e [delete](/graph/api/outlookcategory-delete?view=graph-rest-1.0). |
 | Addition        | v1.0        | A nova função [supportedLanguages](/graph/api/outlookuser-supportedlanguages?view=graph-rest-1.0) foi adicionada à entidade [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0). |
 | Addition        | v1.0        | A nova função [supportedTimeZones](/graph/api/outlookuser-supportedtimezones?view=graph-rest-1.0) foi adicionada à entidade [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0). |
-|Adição | v1.0 | A nova propriedade **workingHours** foi adicionada a [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). Confira [tipo de recurso workingHours](/graph/api/resources/workinghours?view=graph-rest-1.0) para saber mais sobre casos de uso com suporte.|
+|Addition | v1.0 | A nova propriedade **workingHours** foi adicionada a [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). Confira [tipo de recurso workingHours](/graph/api/resources/workinghours?view=graph-rest-1.0) para saber mais sobre casos de uso com suporte.|
 |Addition | v1.0 | Os seguintes tipos complexos foram adicionados: <br> [workingHours](/graph/api/resources/workinghours?view=graph-rest-1.0) <br> [timeZoneBase](/graph/api/resources/timezonebase?view=graph-rest-1.0) <br> [customTimeZone](/graph/api/resources/customtimezone?view=graph-rest-1.0) <br> [standardTimeZoneOffset](/graph/api/resources/standardtimezoneoffset?view=graph-rest-1.0) <br> [daylightTimeZoneOffset](/graph/api/resources/daylighttimezoneoffset?view=graph-rest-1.0)|
 
 
@@ -2841,10 +2855,10 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
-|Adição|v1.0|Foram adicionadas novas entidades:<br/>[iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-1.0)<br/>[vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0)<br/>|
-|Adição|v1.0|Foram adicionados novos tipos complexos:<br/>[appConfigurationSettingItem](/graph/api/resources/intune-apps-appconfigurationsettingitem?view=graph-rest-1.0)<br/>|
-|Adição|v1.0|A ação [syncLicenses](/graph/api/intune-onboarding-vpptoken-synclicenses?view=graph-rest-1.0) foi adicionada a [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0) |
-|Adição|v1.0|A propriedade de navegação **vppTokens** foi adicionada à entidade [deviceAppManagement](/graph/api/resources/intune-shared-deviceappmanagement?view=graph-rest-1.0)|
+|Addition|v1.0|Foram adicionadas novas entidades:<br/>[iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-1.0)<br/>[vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0)<br/>|
+|Addition|v1.0|Foram adicionados novos tipos complexos:<br/>[appConfigurationSettingItem](/graph/api/resources/intune-apps-appconfigurationsettingitem?view=graph-rest-1.0)<br/>|
+|Addition|v1.0|A ação [syncLicenses](/graph/api/intune-onboarding-vpptoken-synclicenses?view=graph-rest-1.0) foi adicionada a [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0) |
+|Addition|v1.0|A propriedade de navegação **vppTokens** foi adicionada à entidade [deviceAppManagement](/graph/api/resources/intune-shared-deviceappmanagement?view=graph-rest-1.0)|
 |Adição|beta|A propriedade **managementCertificateExpirationDate** foi adicionada à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
 |Adição|beta|A propriedade **enhancedJailBreak** foi adicionada ao tipo complexo [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta)|
 |Adição|beta|Foram adicionadas novas entidades:<br/>[androidDeviceOwnerEnrollmentProfile](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentprofile?view=graph-rest-beta)<br/>[androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta)<br/>[androidManagedStoreAccountEnterpriseSettings](/graph/api/resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings?view=graph-rest-beta)<br/>[androidManagedStoreAppConfigurationSchema](/graph/api/resources/intune-androidforwork-androidmanagedstoreappconfigurationschema?view=graph-rest-beta)<br/>[dataSharingConsent](/graph/api/resources/intune-devices-datasharingconsent?view=graph-rest-beta)<br/>[deviceConfigurationUserStateSummary](/graph/api/resources/intune-deviceconfig-deviceconfigurationuserstatesummary?view=graph-rest-beta)<br/>[macOSEndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-macosendpointprotectionconfiguration?view=graph-rest-beta)<br/>[macOSImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-macosimportedpfxcertificateprofile?view=graph-rest-beta)<br/>[macOSLobApp](/graph/api/resources/intune-apps-macoslobapp?view=graph-rest-beta)<br/>[managedEBookCategory](/graph/api/resources/intune-books-managedebookcategory?view=graph-rest-beta)<br/>[microsoftStoreForBusinessContainedApp](/graph/api/resources/intune-apps-microsoftstoreforbusinesscontainedapp?view=graph-rest-beta)<br/>[mobileContainedApp](/graph/api/resources/intune-apps-mobilecontainedapp?view=graph-rest-beta)<br/>[windowsUniversalAppXContainedApp](/graph/api/resources/intune-apps-windowsuniversalappxcontainedapp?view=graph-rest-beta)<br/>|
@@ -2899,28 +2913,28 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
 |Adição|v1.0|Foram adicionadas novas entidades:<br/>[baseItemVersion](/graph/api/resources/baseitemversion?view=graph-rest-1.0)<br/>[driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0)<br/>[listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0)<br/> |
-|Addition|v1.0|Foram adicionados novos tipos complexos:<br/>[publicationFacet](/graph/api/resources/publicationfacet?view=graph-rest-1.0)<br/> |
-|Addition|v1.0|Foi adicionada a propriedade <b>publication</b> à entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) |
-|Addition|v1.0|Foi adicionada a propriedade de navegação <b>versions</b> à entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) |
-|Addition|v1.0|Foi adicionada a propriedade de navegação <b>versions</b> à entidade [listItem](/graph/api/resources/listitem?view=graph-rest-1.0) |
-|Addition|v1.0|Foi adicionada a propriedade <b>root</b> à entidade [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0) |
-|Addition|v1.0|Foi adicionada a ação [restoreVersion](/graph/api/driveitemversion-restore?view=graph-rest-1.0) à entidade [driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0) |
-|Addition|v1.0|Foi adicionada a ação [restoreVersion](/graph/api/listitemversion-restore?view=graph-rest-1.0) à entidade [listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0) |
+|Adição|v1.0|Foram adicionados novos tipos complexos:<br/>[publicationFacet](/graph/api/resources/publicationfacet?view=graph-rest-1.0)<br/> |
+|Adição|v1.0|Foi adicionada a propriedade <b>publication</b> à entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) |
+|Adição|v1.0|Foi adicionada a propriedade de navegação <b>versions</b> à entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) |
+|Adição|v1.0|Foi adicionada a propriedade de navegação <b>versions</b> à entidade [listItem](/graph/api/resources/listitem?view=graph-rest-1.0) |
+|Adição|v1.0|Foi adicionada a propriedade <b>root</b> à entidade [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0) |
+|Adição|v1.0|Foi adicionada a ação [restoreVersion](/graph/api/driveitemversion-restore?view=graph-rest-1.0) à entidade [driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0) |
+|Adição|v1.0|Foi adicionada a ação [restoreVersion](/graph/api/listitemversion-restore?view=graph-rest-1.0) à entidade [listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0) |
 |Adição|beta|Foi adicionado um novo tipo complexo:<br/>[itemPreviewInfo](/graph/api/resources/itempreviewinfo?view=graph-rest-beta)<br/> |
 |Adição|beta|A propriedade <b>name</b> foi adicionada ao tipo complexo [contentTypeInfo](/graph/api/resources/contenttypeinfo?view=graph-rest-beta) |
-|Adição|beta|Foi adicionada a propriedade <b>objectType</b> ao tipo complexo [deleteAction](/graph/api/resources/deleteaction?view=graph-rest-beta) |
+|Adição|Beta|Foi adicionada a propriedade <b>objectType</b> ao tipo complexo [deleteAction](/graph/api/resources/deleteaction?view=graph-rest-beta) |
 |Adição|beta|Foi adicionada a propriedade <b>newName</b> ao tipo complexo [renameAction](/graph/api/resources/renameaction?view=graph-rest-beta) |
 |Adição|beta|Foi adicionada a propriedade <b>tenantId</b> ao tipo complexo [sharepointIds](/graph/api/resources/renameaction?view=graph-rest-beta) |
-|Adição|beta|Foi adicionada a propriedade <b>lastRecordedDateTime</b> ao tipo complexo [itemActivityTimeSet](/graph/api/resources/itemactivitytimeset?view=graph-rest-beta) |
-|Adição|beta|A ação [preview](/graph/api/driveitem-preview?view=graph-rest-beta) foi adicionada à entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) |
+|Adição|Beta|Foi adicionada a propriedade <b>lastRecordedDateTime</b> ao tipo complexo [itemActivityTimeSet](/graph/api/resources/itemactivitytimeset?view=graph-rest-beta) |
+|Adição|Beta|A ação [preview](/graph/api/driveitem-preview?view=graph-rest-beta) foi adicionada à entidade [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) |
 
 ### <a name="groups"></a>Grupos
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Foi adicionado [groupLifecyclePolicy](/graph/api/resources/grouplifecyclepolicy?view=graph-rest-1.0). |
-| Addition        | v1.0        | As seguintes APIs de política de ciclo de vida de grupo foram adicionadas: [Criar](/graph/api/grouplifecyclepolicy-post-grouplifecyclepolicies?view=graph-rest-1.0), [Listar](/graph/api/grouplifecyclepolicy-list?view=graph-rest-1.0), [Obter](/graph/api/grouplifecyclepolicy-get?view=graph-rest-1.0), [Atualizar](/graph/api/grouplifecyclepolicy-update?view=graph-rest-1.0), [Excluir](/graph/api/grouplifecyclepolicy-delete?view=graph-rest-1.0), [Adicionar grupo](/graph/api/grouplifecyclepolicy-addgroup?view=graph-rest-1.0), [Remover grupo](/graph/api/grouplifecyclepolicy-removegroup?view=graph-rest-1.0) |
-| Addition        | v1.0        | Foi adicionada a função [List groupLifecyclePolicies](/graph/api/group-list-grouplifecyclepolicies?view=graph-rest-1.0) a [group](/graph/api/resources/group?view=graph-rest-1.0). |
+| Adição        | v1.0        | Foi adicionado [groupLifecyclePolicy](/graph/api/resources/grouplifecyclepolicy?view=graph-rest-1.0). |
+| Adição        | v1.0        | As seguintes APIs de política de ciclo de vida de grupo foram adicionadas: [Criar](/graph/api/grouplifecyclepolicy-post-grouplifecyclepolicies?view=graph-rest-1.0), [Listar](/graph/api/grouplifecyclepolicy-list?view=graph-rest-1.0), [Obter](/graph/api/grouplifecyclepolicy-get?view=graph-rest-1.0), [Atualizar](/graph/api/grouplifecyclepolicy-update?view=graph-rest-1.0), [Excluir](/graph/api/grouplifecyclepolicy-delete?view=graph-rest-1.0), [Adicionar grupo](/graph/api/grouplifecyclepolicy-addgroup?view=graph-rest-1.0), [Remover grupo](/graph/api/grouplifecyclepolicy-removegroup?view=graph-rest-1.0) |
+| Adição        | v1.0        | Foi adicionada a função [List groupLifecyclePolicies](/graph/api/group-list-grouplifecyclepolicies?view=graph-rest-1.0) a [group](/graph/api/resources/group?view=graph-rest-1.0). |
 | Alteração | v1.0 | A propriedade renewedDateTime e [renew](/graph/api/group-renew?view=graph-rest-1.0) foi adicionada ao [group](/graph/api/resources/group?view=graph-rest-1.0) |
 
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
@@ -3058,18 +3072,18 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Adição|v1.0|A ação [assign](/graph/api/intune-deviceconfig-devicecompliancepolicy-assign?view=graph-rest-1.0) foi adicionada a [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy?view=graph-rest-1.0) |
 |Adição|v1.0|A ação [scheduleActionsForRules](/graph/api/intune-deviceconfig-devicecompliancepolicy-scheduleactionsforrules?view=graph-rest-1.0) foi adicionada a [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy?view=graph-rest-1.0) |
 |Adição|v1.0|A ação [setMobileDeviceManagementAuthority](/graph/api/intune-onboarding-organization-setmobiledevicemanagementauthority?view=graph-rest-1.0) foi adicionada a [organization](/graph/api/resources/intune-onboarding-organization?view=graph-rest-1.0) |
-|Addition|v1.0|A ação [syncMicrosoftStoreForBusinessApps](/graph/api/intune-onboarding-deviceappmanagement-syncmicrosoftstoreforbusinessapps?view=graph-rest-1.0) foi adicionada à entidade [deviceAppManagement](/graph/api/resources/intune-shared-deviceappmanagement?view=graph-rest-1.0) |
-|Addition|v1.0|A ação [sync](/graph/api/intune-onboarding-devicemanagementexchangeconnector-sync?view=graph-rest-1.0) foi adicionada a [deviceManagementExchangeConnector](/graph/api/resources/intune-onboarding-devicemanagementexchangeconnector?view=graph-rest-1.0) |
-|Addition|v1.0|A ação [setPriority](/graph/api/intune-onboarding-deviceenrollmentconfiguration-setpriority?view=graph-rest-1.0) foi adicionada a [deviceEnrollmentConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration?view=graph-rest-1.0) |
-|Addition|v1.0|A ação [assign](/graph/api/intune-onboarding-deviceenrollmentconfiguration-assign?view=graph-rest-1.0) foi adicionada a [deviceEnrollmentConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration?view=graph-rest-1.0) |
-|Addition|v1.0|A ação [assign](/graph/api/intune-mam-targetedmanagedappprotection-assign?view=graph-rest-1.0) foi adicionada a [targetedManagedAppProtection](/graph/api/resources/intune-mam-targetedmanagedappprotection?view=graph-rest-1.0) |
-|Addition|v1.0|A ação [assign](/graph/api/intune-mam-targetedmanagedappconfiguration-assign?view=graph-rest-1.0) foi adicionada a [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-1.0) |
-|Addition|v1.0|A ação [assign](/graph/api/intune-mam-windowsinformationprotection-assign?view=graph-rest-1.0) foi adicionada a [windowsInformationProtection](/graph/api/resources/intune-mam-windowsinformationprotection?view=graph-rest-1.0) |
-|Addition|v1.0|A ação [targetApps](/graph/api/intune-mam-managedapppolicy-targetapps?view=graph-rest-1.0) foi adicionada a [managedAppPolicy](/graph/api/resources/intune-mam-managedapppolicy?view=graph-rest-1.0) |
-|Addition|v1.0|A ação [targetApps](/graph/api/intune-mam-managedappprotection-targetapps?view=graph-rest-1.0) foi adicionada a [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-1.0) |
-|Addition|v1.0|A ação [targetApps](/graph/api/intune-mam-targetedmanagedappconfiguration-targetapps?view=graph-rest-1.0) foi adicionada a [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-1.0) |
-|Addition|v1.0|A ação [wipeManagedAppRegistrationsByDeviceTag](/graph/api/intune-mam-user-wipemanagedappregistrationsbydevicetag?view=graph-rest-1.0) foi adicionada a [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0) |
-|Addition|v1.0|A ação [sendTestMessage](/graph/api/intune-notification-notificationmessagetemplate-sendtestmessage?view=graph-rest-1.0) foi adicionada a [notificationMessageTemplate](/graph/api/resources/intune-notification-notificationmessagetemplate?view=graph-rest-1.0) |
+|Adição|v1.0|A ação [syncMicrosoftStoreForBusinessApps](/graph/api/intune-onboarding-deviceappmanagement-syncmicrosoftstoreforbusinessapps?view=graph-rest-1.0) foi adicionada à entidade [deviceAppManagement](/graph/api/resources/intune-shared-deviceappmanagement?view=graph-rest-1.0) |
+|Adição|v1.0|A ação [sync](/graph/api/intune-onboarding-devicemanagementexchangeconnector-sync?view=graph-rest-1.0) foi adicionada a [deviceManagementExchangeConnector](/graph/api/resources/intune-onboarding-devicemanagementexchangeconnector?view=graph-rest-1.0) |
+|Adição|v1.0|A ação [setPriority](/graph/api/intune-onboarding-deviceenrollmentconfiguration-setpriority?view=graph-rest-1.0) foi adicionada a [deviceEnrollmentConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration?view=graph-rest-1.0) |
+|Adição|v1.0|A ação [assign](/graph/api/intune-onboarding-deviceenrollmentconfiguration-assign?view=graph-rest-1.0) foi adicionada a [deviceEnrollmentConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration?view=graph-rest-1.0) |
+|Adição|v1.0|A ação [assign](/graph/api/intune-mam-targetedmanagedappprotection-assign?view=graph-rest-1.0) foi adicionada a [targetedManagedAppProtection](/graph/api/resources/intune-mam-targetedmanagedappprotection?view=graph-rest-1.0) |
+|Adição|v1.0|A ação [assign](/graph/api/intune-mam-targetedmanagedappconfiguration-assign?view=graph-rest-1.0) foi adicionada a [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-1.0) |
+|Adição|v1.0|A ação [assign](/graph/api/intune-mam-windowsinformationprotection-assign?view=graph-rest-1.0) foi adicionada a [windowsInformationProtection](/graph/api/resources/intune-mam-windowsinformationprotection?view=graph-rest-1.0) |
+|Adição|v1.0|A ação [targetApps](/graph/api/intune-mam-managedapppolicy-targetapps?view=graph-rest-1.0) foi adicionada a [managedAppPolicy](/graph/api/resources/intune-mam-managedapppolicy?view=graph-rest-1.0) |
+|Adição|v1.0|A ação [targetApps](/graph/api/intune-mam-managedappprotection-targetapps?view=graph-rest-1.0) foi adicionada a [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-1.0) |
+|Adição|v1.0|A ação [targetApps](/graph/api/intune-mam-targetedmanagedappconfiguration-targetapps?view=graph-rest-1.0) foi adicionada a [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-1.0) |
+|Adição|v1.0|A ação [wipeManagedAppRegistrationsByDeviceTag](/graph/api/intune-mam-user-wipemanagedappregistrationsbydevicetag?view=graph-rest-1.0) foi adicionada a [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0) |
+|Adição|v1.0|A ação [sendTestMessage](/graph/api/intune-notification-notificationmessagetemplate-sendtestmessage?view=graph-rest-1.0) foi adicionada a [notificationMessageTemplate](/graph/api/resources/intune-notification-notificationmessagetemplate?view=graph-rest-1.0) |
 |Adição|v1.0|A ação [assign](/graph/api/intune-books-managedebook-assign?view=graph-rest-1.0) foi adicionada a [managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-1.0) |
 |Adição|v1.0|A ação [beginOnboarding](/graph/api/intune-remoteassistance-remoteassistancepartner-beginonboarding?view=graph-rest-1.0) foi adicionada a [remoteAssistancePartner](/graph/api/resources/intune-remoteassistance-remoteassistancepartner?view=graph-rest-1.0) |
 |Adição|v1.0|A ação [disconnect](/graph/api/intune-remoteassistance-remoteassistancepartner-disconnect?view=graph-rest-1.0) foi adicionada a [remoteAssistancePartner](/graph/api/resources/intune-remoteassistance-remoteassistancepartner?view=graph-rest-1.0) |
@@ -3077,9 +3091,9 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Adição|v1.0|A função [deviceConfigurationUserActivity](/graph/api/intune-deviceconfig-reportroot-deviceconfigurationuseractivity?view=graph-rest-1.0) foi adicionada a [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-1.0) |
 |Adição|v1.0|A função [deviceConfigurationDeviceActivity](/graph/api/intune-deviceconfig-reportroot-deviceconfigurationdeviceactivity?view=graph-rest-1.0) foi adicionada a [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-1.0) |
 |Adição|v1.0|A função [verifyWindowsEnrollmentAutoDiscovery](/graph/api/intune-onboarding-devicemanagement-verifywindowsenrollmentautodiscovery?view=graph-rest-1.0) foi adicionada a [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-1.0) |
-|Adição|v1.0|A função **getUserIdsWithFlaggedAppRegistration** foi adicionada à coleção [managedAppRegistration](/graph/api/resources/intune-mam-managedappregistration?view=graph-rest-1.0) |
-|Adição|v1.0|A função [getManagedAppDiagnosticStatuses](/graph/api/intune-mam-user-getmanagedappdiagnosticstatuses?view=graph-rest-1.0) foi adicionada a [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0) |
-|Adição|v1.0|A função [getManagedAppPolicies](/graph/api/intune-mam-user-getmanagedapppolicies?view=graph-rest-1.0) foi adicionada a [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0) |
+|Addition|v1.0|A função **getUserIdsWithFlaggedAppRegistration** foi adicionada à coleção [managedAppRegistration](/graph/api/resources/intune-mam-managedappregistration?view=graph-rest-1.0) |
+|Addition|v1.0|A função [getManagedAppDiagnosticStatuses](/graph/api/intune-mam-user-getmanagedappdiagnosticstatuses?view=graph-rest-1.0) foi adicionada a [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0) |
+|Addition|v1.0|A função [getManagedAppPolicies](/graph/api/intune-mam-user-getmanagedapppolicies?view=graph-rest-1.0) foi adicionada a [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0) |
 |Adição|v1.0|A função [getEffectivePermissions](/graph/api/intune-rbac-devicemanagement-geteffectivepermissions?view=graph-rest-1.0) foi adicionada a [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-1.0) |
 |Alteração|v1.0|A propriedade **mobileDeviceManagementAuthority** foi adicionada à entidade [organization](/graph/api/resources/intune-onboarding-organization?view=graph-rest-1.0)|
 |Alteração|v1.0|A propriedade **deviceEnrollmentLimit** foi adicionada à entidade [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0) |
@@ -3467,14 +3481,14 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | A propriedade **system** foi adicionada ao recurso [Drive][]. |
+| Adição        | v1.0        | A propriedade **system** foi adicionada ao recurso [Drive][]. |
 | Adição        | v1.0        | A relação **list** foi adicionada ao recurso [Drive][]. |
-| Addition        | v1.0        | A relação **listItem** foi adicionada ao recurso [DriveItem][]. |
-| Addition        | v1.0        | As relações **list** e **listItem** foram adicionadas ao recurso [SharedDriveItem][]. |
-| Addition        | v1.0        | Foram adicionados novos tipos complexos: [FolderView][]  |
-| Addition        | v1.0        | A propriedade **view** foi adicionada ao tipo complexo [Folder][]. |
-| Addition        | v1.0        | A propriedade **driveType** foi adicionada ao tipo complexo [ItemReference][]. |
-| Addition        | v1.0        | As propriedades **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** e **frameRate** foram adicionadas ao tipo complexo [Video][]. |
+| Adição        | v1.0        | A relação **listItem** foi adicionada ao recurso [DriveItem][]. |
+| Adição        | v1.0        | As relações **list** e **listItem** foram adicionadas ao recurso [SharedDriveItem][]. |
+| Adição        | v1.0        | Foram adicionados novos tipos complexos: [FolderView][]  |
+| Adição        | v1.0        | A propriedade **view** foi adicionada ao tipo complexo [Folder][]. |
+| Adição        | v1.0        | A propriedade **driveType** foi adicionada ao tipo complexo [ItemReference][]. |
+| Adição        | v1.0        | As propriedades **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** e **frameRate** foram adicionadas ao tipo complexo [Video][]. |
 | Adição        | beta        | A propriedade **system** foi adicionada ao recurso [Drive][Drive-beta]. |
 | Adição        | beta        | A relação **atividades** foi adicionada ao recurso [Drive][Drive-beta]. |
 | Adição        | beta        | A propriedade **publicação** foi adicionada ao recurso [DriveItem][DriveItem-beta]. |
@@ -3483,7 +3497,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição        | beta        | Foram adicionados novos tipos complexos: [CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta], [DeleteAction][DeleteAction-beta], [EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta], [ItemActivityTimeSet][ItemActivityTimeSet-beta], [MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta], [PublicationFacet][PublicationFacet-beta], [RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta], [ShareAction][ShareAction-beta] e [VersionAction][VersionAction-beta]. |
 | Adição        | beta        | A propriedade **driveType** foi adicionada ao tipo complexo [ItemReference][ItemReference-beta]. |
 | Exclusão        | beta        | A propriedade **tenantId** foi removida do tipo complexo [SharepointIds][SharepointIds-beta]. |
-| Addition        | v1.0        | As propriedades **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** e **frameRate** foram adicionadas ao tipo complexo [Video][Video-beta]. |
+| Adição        | v1.0        | As propriedades **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** e **frameRate** foram adicionadas ao tipo complexo [Video][Video-beta]. |
 | Adição        | beta        | As ações [CheckIn][CheckIn-beta] e [CheckOut][CheckOut-beta] foram adicionadas ao recurso [DriveItem][DriveItem-beta]. |
 | Adição        | beta        | As propriedades **expirationDateTime**, **password**, **message** e **recipients** na ação [CreateLink][CreateLink-beta] foram adicionadas ao recurso [DriveItem][DriveItem-beta]. |
 
@@ -3657,7 +3671,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Adicionada a [API de Pessoas](/graph/api/resources/person?view=graph-rest-1.0) à versão 1.0. Para obter dados sobre a API de Pessoas, confira [Obter informações relevantes sobre as pessoas](people-example.md). |
-| Adição        | v1.0        | A permissão People.Read.All foi adicionada. Para saber mais, confira [Permissões](permissions-reference.md). |
+| Addition        | v1.0        | A permissão People.Read.All foi adicionada. Para saber mais, confira [Permissões](permissions-reference.md). |
 | Adição        | v1.0        | O recurso [personType](/graph/api/resources/persontype?view=graph-rest-1.0) foi adicionado. |
 | Alteração          | v1.0        | O recurso [scoredEmailAddress](/graph/api/resources/scoredemailaddress?view=graph-rest-1.0) substituiu o recurso **rankedEmailAddress**. |
 | Alteração          | v1.0        | O recurso [person](/graph/api/resources/person?view=graph-rest-1.0) foi atualizado da seguinte maneira:<ul><li>A propriedade **scoredEmailAddresses** (uma coleção do tipo [scoredEmailAddress](/graph/api/resources/scoredemailaddress?view=graph-rest-1.0)) substituiu a propriedade **emailAddresses**</li><li>A propriedade **jobTitle** substituiu a propriedade **title**</li><li>As propriedades **sources** e **mailboxType** foram removidas</li><li>A propriedade **personType** agora é do tipo [personType](/graph/api/resources/persontype?view=graph-rest-1.0) em vez do tipo cadeia de caracteres e substitui a funcionalidade das propriedades **sources** e **mailboxType** anteriores</li><li>A propriedade **imAddress** foi adicionada</li></ul> |
@@ -3796,7 +3810,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 ### <a name="identity-and-access--administrative-unit"></a>Identidade e acesso | Unidade administrativa
 
-| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| **Tipo de alteração** | **Versão** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Alteração          | Beta        | Alterou o tipo de propriedade roleMemberInfo para [identity](/graph/api/resources/identity?view=graph-rest-1.0) para a entidade [scopedRoleMembership](/graph/api/resources/scopedrolemembership?view=graph-rest-beta) |
 | Alteração          | Beta        | Alterou a propriedade de navegação de scopedAdministratorOf para scopedRoleMemberOf para a entidade [user](/graph/api/resources/user?view=graph-rest-beta) |
@@ -3805,7 +3819,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 ### <a name="change-notifications"></a>Notificações de alteração
 
-|**Tipo de alteração**|**Versão**|**Descrição**|
+|**Tipo de alteração**|**Versão**|**Description**|
 |:--------------|:-----------|:--------------|
 | Alteração        | Beta       | Adicionou suporte aos [webhooks](/graph/api/resources/webhooks?view=graph-rest-beta) para usuários e grupos.
 
@@ -3814,7 +3828,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Adicionar o suporte à função delta para v1.0. Adicionar às seguintes entidades para realizar [consulta delta](delta-query-overview.md):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Confira os seguintes exemplos:<br/>[Obter as alterações incrementais para grupos](delta-query-groups.md)<br/>[Obter as alterações incrementais para as mensagens em uma pasta](delta-query-messages.md)<br/>[Obter as alterações incrementais para usuários](delta-query-users.md) |
-| Alteração          | Beta        | Adicionar um novo recurso de filtragem de consulta opcional (por ID) para [users](/graph/api/user-delta?view=graph-rest-beta) e [groups](/graph/api/group-delta?view=graph-rest-beta). |
+| Change          | Beta        | Adicionar um novo recurso de filtragem de consulta opcional (por ID) para [users](/graph/api/user-delta?view=graph-rest-beta) e [groups](/graph/api/group-delta?view=graph-rest-beta). |
 
 ### <a name="added-user-resource-support-for-deleted-items"></a>Foi adicionado suporte a recursos de usuário para os itens excluídos
 
@@ -3861,7 +3875,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 |**Tipo de alteração**|**Versão**|**Descrição**|
 |:--------------|:----------|:--------------|
-| Addition | v1.0 | Adicionou o tipo de recurso **baseItem**, consistindo em propriedades básicas de **driveItem**.
+| Adição | v1.0 | Adicionou o tipo de recurso **baseItem**, consistindo em propriedades básicas de **driveItem**.
 | Adição | v1.0 e Beta | Adicionou a propriedade **sourceItemId** à **thumbnail**. <br/> Adicionou a propriedade **siteUrl** à **sharepointIds**. <br/> Adicionou as propriedades **sharedBy** e **sharedDateTime** à **shared**. <br/> Adicionou a propriedade **shared** à **remoteItem**. <br/> Adicionou a propriedade **sharepointIds** à **drive** e **itemReference**. <br/> Adicionou **lastAccessedDateTime** à **fileSystemInfo**. <br/> Adicionou as propriedades de navegação **driveItem** e **site** à **sharedDriveItem**. <br/> Adicionou a propriedade **parentReference** à **baseItem**.
 | Alteração | v1.0 e Beta | Alterou **driveItem** e **sharedDriveItem** para herdar de **baseItem**. <br/> Marcou **identity** como um Tipo Aberto.
 | Alteração | Beta | Adicionou as propriedades **configuratorUrl** e **webHtml** à **sharingLink**. <br/> Adicionou o tipo de recurso **folderView** e a propriedade **view** ao tipo de recurso **folder**. <br/> Adicionou a propriedade de navegação **listItem** à **driveItem**. <br/> Adicionou a propriedade de navegação **list** à **drive**.
@@ -3871,7 +3885,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition        | v1.0          | Suporte para [openTypeExtension](/graph/api/resources/opentypeextension?view=graph-rest-1.0) nos seguintes recursos – [device](/graph/api/resources/device?view=graph-rest-1.0), [group](/graph/api/resources/group?view=graph-rest-1.0),[organization](/graph/api/resources/organization?view=graph-rest-1.0), [user](/graph/api/resources/user?view=graph-rest-1.0). |
+| Adição        | v1.0          | Suporte para [openTypeExtension](/graph/api/resources/opentypeextension?view=graph-rest-1.0) nos seguintes recursos – [device](/graph/api/resources/device?view=graph-rest-1.0), [group](/graph/api/resources/group?view=graph-rest-1.0),[organization](/graph/api/resources/organization?view=graph-rest-1.0), [user](/graph/api/resources/user?view=graph-rest-1.0). |
 | Adição        | v1.0 e beta | Quando o usuário está conectado com uma conta pessoal da Microsoft, suporte para extensões abertas nos seguintes recursos – evento, postagem, grupo, mensagem, contato e usuário. (É um adicional para estes recursos, além do dispositivo, grupo, organização e usuário, suporte a extensões abertas quando o usuário entra usando uma conta corporativa ou de estudante.) |
 | Adição        | v1.0 e beta | Suporte para `$expand` para [obter extensões abertas](/graph/api/opentypeextension-get?view=graph-rest-1.0) nos seguintes recursos: [device](/graph/api/resources/device?view=graph-rest-1.0), [group](/graph/api/resources/group?view=graph-rest-1.0),[organization](/graph/api/resources/organization?view=graph-rest-1.0), [post](/graph/api/resources/post?view=graph-rest-1.0), [user](/graph/api/resources/user?view=graph-rest-1.0). |
 | Adição        | Beta          | Suporte para `$expand` para [obter extensões abertas](/graph/api/opentypeextension-get?view=graph-rest-1.0) na [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta). |
@@ -3881,8 +3895,8 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition        | v1.0          | Novo recurso [schemaExtension](/graph/api/resources/schemaextension?view=graph-rest-1.0) e métodos CRUD para gerenciar definições de extensão para os seguintes recursos: [contact](/graph/api/resources/contact?view=graph-rest-1.0), [device](/graph/api/resources/device?view=graph-rest-1.0), [event](/graph/api/resources/event?view=graph-rest-1.0), [group](/graph/api/resources/group?view=graph-rest-1.0), [message](/graph/api/resources/message?view=graph-rest-1.0), [organization](/graph/api/resources/organization?view=graph-rest-1.0), [post](/graph/api/resources/post?view=graph-rest-1.0), [user](/graph/api/resources/user?view=graph-rest-1.0). Observe que seu suporte para [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta) ainda está limitado à versão beta como antes. |
-| Addition        | v1.0          | Os métodos POST, GET e PATCH existentes dos seguintes recursos: [contact](/graph/api/resources/contact?view=graph-rest-1.0), [device](/graph/api/resources/device?view=graph-rest-1.0), [event](/graph/api/resources/event?view=graph-rest-1.0), [group](/graph/api/resources/group?view=graph-rest-1.0), [message](/graph/api/resources/message?view=graph-rest-1.0), [organization](/graph/api/resources/organization?view=graph-rest-1.0), [post](/graph/api/resources/post?view=graph-rest-1.0), [user](/graph/api/resources/user?view=graph-rest-1.0) – agora suportam a adição, obtenção e carregamento ou exclusão de dados personalizados armazenados como extensões de esquema nas instâncias de recursos correspondentes. |
+| Adição        | v1.0          | Novo recurso [schemaExtension](/graph/api/resources/schemaextension?view=graph-rest-1.0) e métodos CRUD para gerenciar definições de extensão para os seguintes recursos: [contact](/graph/api/resources/contact?view=graph-rest-1.0), [device](/graph/api/resources/device?view=graph-rest-1.0), [event](/graph/api/resources/event?view=graph-rest-1.0), [group](/graph/api/resources/group?view=graph-rest-1.0), [message](/graph/api/resources/message?view=graph-rest-1.0), [organization](/graph/api/resources/organization?view=graph-rest-1.0), [post](/graph/api/resources/post?view=graph-rest-1.0), [user](/graph/api/resources/user?view=graph-rest-1.0). Observe que seu suporte para [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta) ainda está limitado à versão beta como antes. |
+| Adição        | v1.0          | Os métodos POST, GET e PATCH existentes dos seguintes recursos: [contact](/graph/api/resources/contact?view=graph-rest-1.0), [device](/graph/api/resources/device?view=graph-rest-1.0), [event](/graph/api/resources/event?view=graph-rest-1.0), [group](/graph/api/resources/group?view=graph-rest-1.0), [message](/graph/api/resources/message?view=graph-rest-1.0), [organization](/graph/api/resources/organization?view=graph-rest-1.0), [post](/graph/api/resources/post?view=graph-rest-1.0), [user](/graph/api/resources/user?view=graph-rest-1.0) – agora suportam a adição, obtenção e carregamento ou exclusão de dados personalizados armazenados como extensões de esquema nas instâncias de recursos correspondentes. |
 | Adição        | v1.0 e beta | Agora, você pode usar o `$filter` para pesquisar instâncias de recursos com propriedades que correspondam a valores de propriedade de extensão específicos, como nome de extensão. Confira este [exemplo](extensibility-schema-groups.md#5-get-a-group-and-its-extension-data) para obter detalhes. |
 | Alteração          | v1.0 e beta | [Excluir um esquema de definição de extensões](/graph/api/schemaextension-delete?view=graph-rest-1.0) não afeta mais o acesso a dados personalizados que foram adicionados com base nessa definição. |
 | Alteração          | v1.0 e beta | Agora você pode definir um tipo complexo de extensão de esquema como nulo, para remover uma extensão de esquema de uma instância de recurso. |
@@ -3992,13 +4006,13 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Adicionou a [API do Planner](/graph/api/resources/planner-overview?view=graph-rest-1.0).<br />Novos recursos:<br />[plannerPlan](/graph/api/resources/plannerplan?view=graph-rest-1.0) <br />[plannerTask](/graph/api/resources/plannertask?view=graph-rest-1.0) <br />[plannerPlanDetails](/graph/api/resources/plannerplandetails?view=graph-rest-1.0) <br />[plannerTaskDetails](/graph/api/resources/plannertaskdetails?view=graph-rest-1.0) <br />[plannerBucket](/graph/api/resources/plannerbucket?view=graph-rest-1.0) <br />[plannerAssignedToTaskBoardTaskFormat](/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-1.0) <br />[plannerBucketTaskBoardTaskFormat](/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-1.0) <br />[plannerProgressTaskBoardTaskFormat](/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-1.0) |
+| Adição        | v1.0        | Adicionou a [API do Planner](/graph/api/resources/planner-overview?view=graph-rest-1.0).<br />Novos recursos:<br />[plannerPlan](/graph/api/resources/plannerplan?view=graph-rest-1.0) <br />[plannerTask](/graph/api/resources/plannertask?view=graph-rest-1.0) <br />[plannerPlanDetails](/graph/api/resources/plannerplandetails?view=graph-rest-1.0) <br />[plannerTaskDetails](/graph/api/resources/plannertaskdetails?view=graph-rest-1.0) <br />[plannerBucket](/graph/api/resources/plannerbucket?view=graph-rest-1.0) <br />[plannerAssignedToTaskBoardTaskFormat](/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-1.0) <br />[plannerBucketTaskBoardTaskFormat](/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-1.0) <br />[plannerProgressTaskBoardTaskFormat](/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-1.0) |
 
 ### <a name="sites-and-lists"></a>Sites e listas
 
 |**Tipo de alteração**|**Versão**|**Descrição**|
 |:--------------|:----------|:--------------|
-| Addition      | v1.0      | O recurso de sites está disponível no ponto de extremidade v1.0.<br/> Adicionou os tipos de recursos **site** e **siteCollection**.
+| Adição      | v1.0      | O recurso de sites está disponível no ponto de extremidade v1.0.<br/> Adicionou os tipos de recursos **site** e **siteCollection**.
 | Alteração        | Beta      | O formato do identificador para o recurso **site** foi alterado. Esta é uma mudança inovadora na API beta.
 | Removido       | beta      | A entidade do **sharePoint** foi removida da API beta. A funcionalidade agora está disponível a partir do conjunto de **sites**.
 
@@ -4436,7 +4450,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 ### <a name="query-parameters"></a>Parâmetros de consulta
 
-| **Tipo de alteração** | **Versão** | **Description**                          |
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Alteração          | Beta        | Os prefixos de parâmetros de consulta sem $ são suportados a partir de 26/09/16. O prefixo $ nos parâmetros de consulta é opcional. |
 
@@ -4637,12 +4651,12 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 ### <a name="mail"></a>Correio
 
-| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| **Tipo de alteração** | **Versão** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | Beta        | As propriedades _wellKnownName_ e_userConfigurations_ foram adicionadas a entidade **mailFolder**. |
 | Adição        | Beta        | As propriedades _singleValueExtendedProperties_ e _multiValueExtendedProperties_ foram adicionadas a entidade **mailFolder**. |
 | Adição        | v1.0          | A propriedade _mobilePhone_ foi adicionada a entidade **mensagem**.            |
-| Adição        | v1.0 e beta | A propriedade _internetMessageHeaders_ foi adicionada à entidade **mensagem**. A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
+| Adição        | v1.0 e beta | A propriedade _internetMessageHeaders_ foi adicionada à entidade **mensagem**. A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |F>>
 | Alteração          | Beta          | A propriedade _mobilePhone1_ foi renomeada para o _mobilePhone_ na entidade **mensagem**. |
 | Alteração          | Beta          | _createReply_ e _createReplyAll_ da entidade **mensagem** adotaram um novo parâmetro _Mensagem_ e _comentário_. |
 | Alteração          | Beta          | _createForward_ da entidade **mensagem** e adotou novos parâmetros _Mensagem_, _ToRecipients_ e _comentário_. |
@@ -4650,7 +4664,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 ### <a name="permission"></a>Permissão
 
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| **Tipo de alteração** | **Versão**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição        | v1.0 e beta | Foi adicionada a propriedade _sharingInvitation_ para fornecer detalhes sobre qualquer convite de compartilhamento associado para essa permissão. |
 
@@ -4699,7 +4713,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 ### <a name="change-notifications"></a>Notificações de alteração 
 
-| **Tipo de alteração** | **Versão** | **Description**                          |
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | Beta        | validação de notificationUrl na criação da assinatura. Para obter detalhes, veja [Microsoft Graph WebHooks Update – janeiro de 2016](https://developer.microsoft.com/office/blogs/Microsoft-Graph-WebHooks-Update-January-2016/). |
 | Adição        | Beta        | Agora, as entidades de assinatura podem ser excluídas: DELETE https://graph.microsoft.com/beta/subscriptions/ |
@@ -4714,7 +4728,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 ### <a name="personal-contacts"></a>Contatos pessoais 
 
-| **Tipo de alteração** | **Versão** | **Description**                          |
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | v1.0        | Foi adicionada a propriedade mobilePhone ao conjunto de entidades personal contact. |
 
@@ -4728,7 +4742,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 ### <a name="personal-contacts"></a>Contatos pessoais 
 
-| **Tipo de alteração** | **Versão** | **Description**                          |
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | Beta        | Foi adicionada a propriedade mobilePhone ao conjunto de entidades personal contact. |
 
@@ -4762,3 +4776,4 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 | Correção             | v1.0 e beta | Corrigiu a possibilidade de selecionar determinadas propriedades de usuário em outros usuários ao referenciar o usuário pelo nome UPN. Por exemplo: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Correção             | v1.0 e beta | Foi corrigida a chamada à função de limite do usuário _microsoft.graph.reminderView_, pois estava falhando com o seguinte erro: Não foi possível localizar uma propriedade chamada businessPhones no tipo 'Microsoft.OutlookServices.Reminder. |
 | Correção             | v1.0 e beta | Foram corrigidas a criação e a atualização de usuário (POST/PATCH /v1.0/users), que estava falhando com um erro 400. |
+

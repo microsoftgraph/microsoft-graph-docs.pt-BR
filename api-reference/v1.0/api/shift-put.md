@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4c60703bb9128fe0e58dc87f6eac1c97de153f17
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 7133da1a74fcc194b0ab4371c2fc5b256e84fc0c
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44217367"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556132"
 ---
 # <a name="replace-shift"></a>Substituir Shift
 
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /teams/{teamId}/schedule/shifts/{shiftId}
+PATCH /teams/{teamId}/schedule/shifts/{shiftId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -68,7 +68,7 @@ Este é um exemplo de solicitação.
   "name": "shift-put"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
+PATCH https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 Content-type: application/json
 Prefer: return=representation
 
