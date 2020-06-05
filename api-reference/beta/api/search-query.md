@@ -5,16 +5,16 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 3815040e03b94d3448feb0e08816fd062e1086ea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c86a6bb7533fbda16c1796d4b4a7023c0463e4fe
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453722"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568821"
 ---
 # <a name="search-query"></a>pesquisa: consulta
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,9 +55,9 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `HTTP 200 OK` o código de resposta e um objeto da coleção [searchResponse](../resources/searchresponse.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `HTTP 200 OK` código de resposta e um objeto da coleção [searchResponse](../resources/searchresponse.md) no corpo da resposta.
 
-## <a name="common-use-cases"></a>Casos de uso comuns
+## <a name="common-use-cases"></a>Casos de usos comuns
 
 - [Mensagens de email](/graph/search-concept-messages) de pesquisa
 - [Eventos de calendário](/graph/search-concept-events) de pesquisa
@@ -84,7 +84,7 @@ Content-type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.externalItem"
+        "externalItem"
       ],
       "contentSources": [
         "/external/connections/connectionfriendlyname"

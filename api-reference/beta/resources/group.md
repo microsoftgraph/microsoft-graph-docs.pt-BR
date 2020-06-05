@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: fb812dce8fdb9756be161c0b2e9998c21da12667
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 479681dfb4ee267c881293fa635700e25f9a4626
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345993"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568828"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -50,7 +50,7 @@ Esse recurso permite:
 |[Adicionar membro](../api/group-post-members.md) |[directoryObject](directoryobject.md)| Adicionar um usuário ou grupo a esse grupo postando na propriedade de navegação **members** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email).|
 |[Remover membro](../api/group-delete-members.md) | None |Remover um membro de um grupo do Office 365, grupo de segurança ou grupo de segurança habilitado para email por meio da propriedade de navegação **members**. É possível remover usuários ou outros grupos. |
 |[Listar memberOf](../api/group-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obter os grupos e as unidades administrativas dos quais esse grupo é membro direto, da propriedade de navegação memberOf.|
-|[Listar membros transitivos](../api/group-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Lista os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. Essa operação é transitiva e inclui os grupos que são membros aninhados desse grupo. |
+|[Listar membros transitivos](../api/group-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos e as unidades administrativas dos quais esse grupo é membro. Essa operação é transitiva e inclui os grupos que são membros aninhados desse grupo. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|Coleção de cadeias de caracteres|Verificar associação em uma lista de grupos. Essa função é transitiva.|
 |[checkMemberObjects](../api/group-checkmemberobjects.md)|Coleção de cadeias de caracteres|Verifique se há associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. Essa função é transitiva.|
 |[getMemberGroups](../api/group-getmembergroups.md)|Coleção de cadeias de caracteres|Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva.|
@@ -73,8 +73,8 @@ Esse recurso permite:
 |[Criar evento](../api/group-post-events.md) |[evento](event.md)| Criar um novo Event postando na coleção de eventos.|
 |[Obter evento](../api/group-get-event.md) |[event](event.md)|Ler as propriedades de um objeto event.|
 |[Listar eventos](../api/group-list-events.md) |Coleção [event](event.md)| Obter uma coleção de objetos de evento.|
-|[Atualizar evento](../api/group-update-event.md) |Nenhum|Atualizar as propriedades de um objeto event.|
-|[Excluir evento](../api/group-delete-event.md) |Nenhum|Excluir o objeto event.|
+|[Atualizar evento](../api/group-update-event.md) |Nenhuma|Atualizar as propriedades de um objeto event.|
+|[Excluir evento](../api/group-delete-event.md) |Nenhuma|Excluir o objeto event.|
 |[Listar calendarView](../api/group-list-calendarview.md) |Coleção [event](event.md)| Obter um conjunto de eventos em uma janela de tempo especificada.|
 |**Conversas**| | |
 |[Criar conversa](../api/group-post-conversations.md) |[conversa](conversation.md)| Crie uma nova conversa postando na coleção de conversas.|
@@ -84,7 +84,7 @@ Esse recurso permite:
 |[Criar thread](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| Criar um novo thread de conversa.|
 |[Acessar thread](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| Ler as propriedades de um objeto thread.|
 |[Listar threads](../api/group-list-threads.md) |Coleção [conversationThread](conversationthread.md)| Obter todos os threads de um grupo.|
-|[Atualizar thread](../api/group-update-thread.md) |Nenhum| Atualizar as propriedades de um objeto thread.|
+|[Atualizar thread](../api/group-update-thread.md) |Nenhuma| Atualizar as propriedades de um objeto thread.|
 |[Excluir thread](../api/group-delete-thread.md) |Nenhum| Excluir objeto thread
 |[Listar acceptedSenders](../api/group-list-acceptedsenders.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma lista de usuários ou grupos que estão na lista de remetentes aceitos para este grupo.|
 |[Adicionar acceptedSender](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| Adicionar um Usuário ou Grupo à coleção acceptSenders.|
@@ -102,10 +102,10 @@ Esse recurso permite:
 |[Listar plannerPlans](../api/plannergroup-list-plans.md) |Coleção [plannerPlan](plannerplan.md)| Obter os planos de planejador pertencentes ao grupo.|
 |**Configurações do usuário**| | |
 |[addFavorite](../api/group-addfavorite.md)|Nenhum|Adicionar o grupo à lista de grupos de favoritos do usuário conectado. Com suporte apenas para grupos do Office 365.|
-|[removeFavorite](../api/group-removefavorite.md)|Nenhum|Remover o grupo da lista de grupos favoritos do usuário conectado. Suporte apenas para Grupos do Office 365.|
+|[removeFavorite](../api/group-removefavorite.md)|Nenhuma|Remover o grupo da lista de grupos favoritos do usuário conectado. Suporte apenas para Grupos do Office 365.|
 |[Listar memberOf](../api/group-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os grupos e as unidades administrativas dos quais esse usuário é membro direto, da propriedade de navegação **memberOf** .|
 |[Listar joinedTeams](../api/user-list-joinedteams.md) |Coleção [group](group.md)| Obtenha as equipes do Microsoft Teams das quais o usuário é um membro direto.|
-|[subscribeByMail](../api/group-subscribebymail.md)|Nenhum|Definir a propriedade isSubscribedByMail como **true**. Permitir que o usuário conectado receba conversas por email. Suporte apenas para Grupos do Office 365.|
+|[subscribeByMail](../api/group-subscribebymail.md)|Nenhuma|Definir a propriedade isSubscribedByMail como **true**. Permitir que o usuário conectado receba conversas por email. Suporte apenas para Grupos do Office 365.|
 |[unsubscribeByMail](../api/group-unsubscribebymail.md)|None|Definir a propriedade isSubscribedByMail como **false**. Desabilitar o recebimento de conversas por email do usuário conectado. Suporte apenas para Grupos do Office 365.|
 |[resetUnseenCount](../api/group-resetunseencount.md)|Nenhum|Redefinir unseenCount como 0 para todas as postagens que o usuário conectado não tenha visto desde a última visita. Suporte apenas para Grupos do Office 365.|
 
