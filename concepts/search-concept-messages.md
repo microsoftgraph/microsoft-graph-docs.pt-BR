@@ -4,12 +4,12 @@ description: Você pode usar a API de pesquisa da Microsoft para pesquisar infor
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 978ce45b9882190a31e7840ba402d6eb283270dd
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 1b47155e761a28ccaf3e93719bd9967b9f9eff67
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332324"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568765"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-messages"></a>Usar a API do Microsoft Search no Microsoft Graph para pesquisar mensagens
 
@@ -43,7 +43,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.message"
+        "message"
       ],
       "query": {
         "query_string": {
@@ -119,6 +119,7 @@ Veja a seguir um exemplo da resposta, que contém uma mensagem que corresponde a
 ```
 
 ### <a name="example-2-search-top-results-messages"></a>Exemplo 2: Pesquisar mensagens de resultados principais
+
 O exemplo a seguir usa a consulta de pesquisa mostrada no exemplo 1 e classifica os resultados por relevância. 
 
 <!-- markdownlint-disable MD024 -->
@@ -134,7 +135,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.message"
+        "message"
       ],
       "query": {
         "query_string": {

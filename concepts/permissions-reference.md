@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: f76d8534e0cea72cb6b66d0d94466c248be2dc9a
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 49053ae4074fdeda266b54a5fb1330ec94491b5f
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491872"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568758"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -188,15 +188,17 @@ Nenhum
 
 ## <a name="appcatalog-resource-permissions"></a>Permissões de recurso AppCatalog
 
+
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _AppCatalog.ReadWrite.All_ | Ler e gravar em todos os catálogos de aplicativo  | Permite que o aplicativo crie, leia, atualize e exclua aplicativos nos catálogos do aplicativo. | Sim |
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Conta da Microsoft obrigatória |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------| :----------|
+| _AppCatalog. Read. All_ | Ler todos os catálogos de aplicativos | Permite que o aplicativo Leia os aplicativos nos catálogos de aplicativos.| Não | Não |
+| _AppCatalog.ReadWrite.All_ | Ler e gravar em todos os catálogos de aplicativo  | Permite que o aplicativo crie, leia, atualize e exclua aplicativos nos catálogos do aplicativo. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
-Nenhum.
+Nenhuma.
 
 ### <a name="remarks"></a>Comentários
 
@@ -484,6 +486,14 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 > **Observação:** para mensagens em um canal, consulte [permissões ChannelMessage](#channel-message-permissions).
 
+## <a name="chatmessage-permissions-private-preview"></a>Permissões chat ([Visualização privada](#permissions-availability-status))
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------| 
+| _Chat. Send_ (visualização privada) | Enviar mensagens de chat de usuário | Permite que um aplicativo envie mensagens de chat de grupo e 1:1 no Microsoft Teams, em nome do usuário conectado. | Não | Não |
+
 ## <a name="contacts-permissions"></a>Permissões de contatos
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -649,7 +659,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _EduAssignments.Read_: extrair as informações de atribuição do aluno conectado (`GET /education/classes/{id}/assignments/{id}`)
 * _EduAssignments.ReadWriteBasic_: enviar a tarefa do aluno conectado (`GET /education/classes/{id}/assignments/{id}submit`)
@@ -758,7 +768,7 @@ As Permissões de grupo também são usadas para controlar o acesso a APIs e rec
 
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _Group.Read.All_: Ler todos os grupos do Office 365 dos quais o usuário conectado é membro (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
 * _Group.Read.All_: Ler todo o conteúdo do grupo do Office 365, como conversas (`GET /groups/{id}/conversations`).
@@ -986,7 +996,7 @@ Com a permissão _Mail.Send_ ou _Mail.Send.Shared_, um aplicativo pode enviar em
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _Mail.Read_: Listar mensagens na caixa de entrada do usuário classificadas por `receivedDateTime` (`GET /me/mailfolders/inbox/messages?$orderby=receivedDateTime DESC`).
 * _Mail.Read.Shared_: Localizar todas as mensagens com anexos na caixa de entrada de um usuário que compartilhou sua caixa de entrada com o usuário conectado (`GET /users{id | userPrincipalName}/mailfolders/inbox/messages?$filter=hasAttachments eq true`).
@@ -1027,7 +1037,7 @@ A associação pode estar oculta em alguns grupos do Office 365. Isso significa 
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _Member.Read.Hidden_: Ler os membros de uma unidade administrativa com associação oculta em nome do usuário conectado (`GET /administrativeUnits/{id}/members`).
 * _Member.Read.Hidden_: Ler os membros de um grupo com associação oculta em nome do usuário conectado (`GET /groups/{id}/members`).
@@ -1197,7 +1207,7 @@ Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _off
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado	
 
 * _Organization.Read.All_: Obter informações da organização (`GET /organization`).
 * _Organization.Read.All_: Obter as SKUs inscritas pela organização (`GET /subscribedSkus`).
@@ -1574,17 +1584,20 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ## <a name="team-permissions"></a>Permissões de equipe
 
+
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Teams. ReadBasic. All_ | Ler os nomes e as descrições do teams | Leia os nomes e as descrições de Teams em nome do usuário conectado. | Não | Não |
+| _Teams. Create_ (visualização privada) | Criar equipes | Criar equipes, em nome do usuário conectado. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Teams. ReadBasic. All_ | Obter uma lista de todas as equipes | Obtenha uma lista de todas as equipes, sem um usuário conectado.  | Sim | Não |
+| _Teams. Create_ (visualização privada) | Criar equipes | Criar equipes, sem um usuário conectado. | Sim | Não |
 
 ## <a name="team-settings-permissions"></a>Permissões de configurações da equipe
 
@@ -1708,7 +1721,7 @@ Para que um aplicativo leia ou grave todos os acordos ou aceitações de acordos
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 Os seguintes usos são válidos para permissões delegadas:
 
 * _Agreement.Read.All_: ler todos os acordos de termos de uso (`GET /beta/agreements`)

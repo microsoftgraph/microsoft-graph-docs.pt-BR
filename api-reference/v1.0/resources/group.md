@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 2aba6b7a48958b4ed588dbecb350bda8b2c6a189
-ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
+ms.openlocfilehash: 8af272a542a28430a4360fa73c995c22b9d656e9
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44524456"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568842"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -37,19 +37,19 @@ Esse recurso permite:
 |[Criar grupo](../api/group-post-groups.md) | [group](group.md) |Criar um novo grupo. Pode ser um grupo do Office 365, um grupo dinâmico ou um grupo de segurança.|
 |[Obter grupo](../api/group-get.md) | [grupo](group.md) |Ler as propriedades de um objeto group.|
 |[Listar grupos](../api/group-list.md) |Coleção [group](group.md) |Listar objetos group e suas propriedades.|
-|[Atualizar grupo](../api/group-update.md) | Nenhum |Atualizar as propriedades de um objeto group. |
-|[Excluir grupo](../api/group-delete.md) | Nenhum |Excluir um objeto group. |
+|[Atualizar grupo](../api/group-update.md) | Nenhuma |Atualizar as propriedades de um objeto group. |
+|[Excluir grupo](../api/group-delete.md) | Nenhuma |Excluir um objeto group. |
 |[delta](../api/group-delta.md)|Coleção group| Obter alterações incrementais para grupos. |
 |[Listar groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md) |Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md)| Listar políticas de ciclo de vida de grupo. |
 |[Renovar](../api/group-renew.md)|Booliano|Renova o período de validade de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política.|
-|[Adicionar proprietário](../api/group-post-owners.md) |Nenhum| Adicionar um novo proprietário para o grupo postando na propriedade de navegação **owners** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email).|
+|[Adicionar proprietário](../api/group-post-owners.md) |Nenhuma| Adicionar um novo proprietário para o grupo postando na propriedade de navegação **owners** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email).|
 |[Listar proprietários](../api/group-list-owners.md) |[directoryObject](directoryobject.md) collection| Obter os proprietários do grupo da propriedade de navegação **owners**.|
-|[Remover proprietário](../api/group-delete-owners.md) | Nenhum |Remover um proprietário de um grupo do Office 365, grupo de segurança ou grupo de segurança habilitado para email por meio da propriedade de navegação **owners**.|
+|[Remover proprietário](../api/group-delete-owners.md) | Nenhuma |Remover um proprietário de um grupo do Office 365, grupo de segurança ou grupo de segurança habilitado para email por meio da propriedade de navegação **owners**.|
 |[Adicionar membro](../api/group-post-members.md) |Nenhum| Adicionar um usuário ou grupo a esse grupo postando na propriedade de navegação **members** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email).|
 |[Listar membros](../api/group-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obter os usuários e grupos que são membros diretos desse grupo da propriedade de navegação **members**.|
 |[Listar membros transitivos](../api/group-list-transitivemembers.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários, grupos e dispositivos que são membros, inclusive membros aninhados desse grupo.|
-|[Listar memberOf transitivos](../api/group-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Enumera os grupos dos quais esse usuário é membro. Essa operação é transitiva e inclui os grupos que são membros aninhados desse grupo. |
-|[Remover membro](../api/group-delete-members.md) | Nenhum |Remover um membro de um grupo do Office 365, grupo de segurança ou grupo de segurança habilitado para email por meio da propriedade de navegação **members**. É possível remover usuários ou outros grupos. |
+|[Listar memberOf transitivos](../api/group-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Lista os grupos dos quais este grupo é membro. Essa operação é transitiva e inclui os grupos que são membros aninhados desse grupo. |
+|[Remover membro](../api/group-delete-members.md) | Nenhuma |Remover um membro de um grupo do Office 365, grupo de segurança ou grupo de segurança habilitado para email por meio da propriedade de navegação **members**. É possível remover usuários ou outros grupos. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|Conjunto de cadeias de caracteres|Verificar esse grupo quanto a uma associação em uma lista de grupos. Essa função é transitiva.|
 |[checkMemberObjects](../api/group-checkmemberobjects.md)|Coleção de cadeias de caracteres|Verifique se há associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. Essa função é transitiva.|
 |[getMemberGroups](../api/group-getmembergroups.md)|Coleção de cadeias de caracteres|Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva.|
@@ -69,8 +69,8 @@ Esse recurso permite:
 |[Criar evento](../api/group-post-events.md) |[evento](event.md)| Criar um novo Event postando na coleção de eventos.|
 |[Obter evento](../api/group-get-event.md) |[event](event.md)|Ler as propriedades de um objeto event.|
 |[Listar eventos](../api/group-list-events.md) |Coleção [event](event.md)| Obter uma coleção de objetos de evento.|
-|[Atualizar evento](../api/group-update-event.md) |Nenhum|Atualizar as propriedades de um objeto event.|
-|[Excluir evento](../api/group-delete-event.md) |Nenhum|Excluir o objeto event.|
+|[Atualizar evento](../api/group-update-event.md) |Nenhuma|Atualizar as propriedades de um objeto event.|
+|[Excluir evento](../api/group-delete-event.md) |Nenhuma|Excluir o objeto event.|
 |[Listar calendarView](../api/group-list-calendarview.md) |Coleção [event](event.md)| Obter um conjunto de eventos em uma janela de tempo especificada.|
 |**Conversas**| | |
 |[Criar conversa](../api/group-post-conversations.md) |[conversa](conversation.md)| Crie uma nova conversa postando na coleção de conversas.|
@@ -80,8 +80,8 @@ Esse recurso permite:
 |[Criar thread](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| Criar um novo thread de conversa.|
 |[Acessar thread](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| Ler as propriedades de um objeto thread.|
 |[Listar threads](../api/group-list-threads.md) |Coleção [conversationThread](conversationthread.md)| Obter todos os threads de um grupo.|
-|[Atualizar thread](../api/group-update-thread.md) |Nenhum| Atualizar as propriedades de um objeto thread.|
-|[Excluir thread](../api/group-delete-thread.md) |Nenhum| Excluir objeto thread.|
+|[Atualizar thread](../api/group-update-thread.md) |Nenhuma| Atualizar as propriedades de um objeto thread.|
+|[Excluir thread](../api/group-delete-thread.md) |Nenhuma| Excluir objeto thread.|
 |[Listar acceptedSenders](../api/group-list-acceptedsenders.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma lista de usuários ou grupos que estão na lista de remetentes aceitos para este grupo.|
 |[Adicionar acceptedSender](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| Adicionar um Usuário ou Grupo à coleção acceptSenders.|
 |[Remover acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| Remover um Usuário ou Grupo da coleção acceptedSenders.|
@@ -91,9 +91,9 @@ Esse recurso permite:
 |[Criar configuração](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |Crie um objeto de configuração com base em um groupSettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação.|
 |[Obter configuração](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Ler propriedades de um objeto de configuração específico. |
 |[Listar configurações](../api/groupsetting-list.md) | Conjunto [groupSetting](groupsetting.md) | Lista propriedades de todos os objetos de configuração. |
-|[Atualizar configuração](../api/groupsetting-update.md) | Nenhum | Atualizar um objeto setting. |
+|[Atualizar configuração](../api/groupsetting-update.md) | Nenhuma | Atualizar um objeto setting. |
 |[Excluir configuração](../api/groupsetting-delete.md) | None | Excluir um objeto de configuração. |
-|[Obter modelo de configuração](../api/groupsettingtemplate-get.md) | Nenhum | Ler as propriedades de um modelo de configuração. |
+|[Obter modelo de configuração](../api/groupsettingtemplate-get.md) | Nenhuma | Ler as propriedades de um modelo de configuração. |
 |[Listar modelo de configuração](../api/groupsettingtemplate-list.md) | Nenhum | Listar propriedades de todos os modelos de configuração. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
@@ -104,10 +104,10 @@ Esse recurso permite:
 |[Listar fotos](../api/group-list-photos.md) |Coleção [profilePhoto](photo.md)| Obter um conjunto de fotos de perfil para o grupo.|
 |[Listar plannerPlans](../api/plannergroup-list-plans.md) |Coleção [plannerPlan](plannerplan.md)| Obter os planos de planejador pertencentes ao grupo.|
 |**Configurações do usuário**| | |
-|[addFavorite](../api/group-addfavorite.md)|Nenhum|Adicionar o grupo à lista de grupos de favoritos do usuário conectado. Com suporte apenas para grupos do Office 365.|
-|[removeFavorite](../api/group-removefavorite.md)|Nenhum|Remover o grupo da lista de grupos favoritos do usuário conectado. Com suporte apenas para grupos do Office 365.|
+|[addFavorite](../api/group-addfavorite.md)|Nenhuma|Adicionar o grupo à lista de grupos de favoritos do usuário conectado. Com suporte apenas para grupos do Office 365.|
+|[removeFavorite](../api/group-removefavorite.md)|Nenhuma|Remover o grupo da lista de grupos favoritos do usuário conectado. Com suporte apenas para grupos do Office 365.|
 |[Listar memberOf](../api/group-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obter os grupos e as unidades administrativas dos quais esse usuário é membro direto, da propriedade de navegação **memberOf**.|
-|[subscribeByMail](../api/group-subscribebymail.md)|Nenhum|Definir a propriedade isSubscribedByMail como **true**. Permitir que o usuário conectado receba conversas por email. Com suporte apenas para grupos do Office 365.|
+|[subscribeByMail](../api/group-subscribebymail.md)|Nenhuma|Definir a propriedade isSubscribedByMail como **true**. Permitir que o usuário conectado receba conversas por email. Com suporte apenas para grupos do Office 365.|
 |[unsubscribeByMail](../api/group-unsubscribebymail.md)|Nenhum|Definir a propriedade isSubscribedByMail como **false**. Desabilitar o recebimento de conversas por email do usuário conectado. Com suporte apenas para grupos do Office 365.|
 |[resetUnseenCount](../api/group-resetunseencount.md)|Nenhum|Redefinir unseenCount como 0 para todas as postagens que o usuário conectado não tenha visto desde a última visita. Com suporte apenas para grupos do Office 365.|
 

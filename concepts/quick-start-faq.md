@@ -4,12 +4,12 @@ description: Estas perguntas frequentes respondem dúvidas relacionadas aos Iní
 author: jasonjoh
 ms.author: jasonjoh
 localization_priority: Normal
-ms.openlocfilehash: 9b260a29512595fe39d556a57d8e30d86ae06ca6
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 4aded41cab30133856041c073699948ed7ae49ff
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916911"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568751"
 ---
 # <a name="microsoft-graph-quick-start-faq"></a>Perguntas frequentes do início rápido do Microsoft Graph
 
@@ -28,6 +28,13 @@ Os inícios rápidos envolvem quatro etapas:
 
 Quando você completar o início rápido, você possui um aplicativo pronto para ser executado.
 
+## <a name="prerequisites"></a>Pré-requisitos
+
+Todos os exemplos de início rápido exigem o acesso a uma conta pessoal da Microsoft com uma caixa de correio no Outlook.com ou uma conta corporativa ou de estudante da Microsoft com uma caixa de correio do Exchange Online. Se você não tem uma conta da Microsoft, há algumas opções para obter uma conta gratuita:
+
+- Você pode [se inscrever para uma nova conta pessoal da Microsoft](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1).
+- Você pode [se inscrever no programa para desenvolvedores do office 365](https://developer.microsoft.com/office/dev-program) para obter uma assinatura gratuita do Office 365.
+
 ## <a name="general-quick-start-sample-questions"></a>Exemplos de perguntas do início rápido gerais
 
 <!-- markdownlint-disable MD026 -->
@@ -40,9 +47,6 @@ Com certeza! Todo download de início rápido é baseado em um [tutorial do Micr
 
 - Crie o código por conta própria seguindo tutorial passo a passo.
 - Faça o download do projeto concluído a partir do repositório GitHub correspondente e siga as instruções no README para configurar e executar a amostra.
-
-> [!NOTE]
-> Estamos no processo de criação de tutoriais para cada uma das plataformas que atualmente têm um início rápido. Algumas com início rápido não têm o tutoriais correspondentes.
 
 #### <a name="tutorials-and-github-repositories"></a>Tutoriais e repositórios do GitHub
 
@@ -84,6 +88,12 @@ Isso é causado por um [problema com o Visual Studio e o compilador Roslyn](http
 ### <a name="im-getting-aadsts50011-the-reply-url-specified-in-the-request-does-not-match-the-reply-urls-configured-for-the-application-when-running-a-quick-start"></a>Estou recebendo "AADSTS50011: O URL de resposta especificado na solicitação não corresponde aos URLs de resposta configurados para o aplicativo" ao executar um início rápido.
 
 Isso indica um problema com o registro do aplicativo para o início rápido. Quando você faz o download de um início rápido da página [Início Rápido do Microsoft Graph](https://developer.microsoft.com/graph/quick-start), nós criamos o registro do aplicativo para você e configuramos um URL de resposta (também conhecido como URL de redirecionamento) que corresponde ao URL padrão usado pelo projeto de amostra. Se você alterar o URL, o registro do aplicativo não mais corresponderá e poderá causar esse erro. Para resolver esse erro, consulte o arquivo README.md incluído no projeto de início rápido para obter instruções sobre como criar um registro de aplicativo e configurá-lo no código de amostra.
+
+### <a name="after-signing-in-im-told-i-need-admin-approval"></a>Após entrar, eu disse que preciso de aprovação do administrador.
+
+Após entrar em um dos exemplos de início rápido, você pode ver uma mensagem que diz que a **aprovação do administrador** "XXX tutorial precisa ter permissão para acessar recursos em sua organização que apenas um administrador pode conceder. Peça a um administrador para conceder permissão a este aplicativo para que você possa usá-lo. " Isso não é um bug com o exemplo! Nenhum dos escopos de início rápido solicitam qualquer escopo de permissão de gráfico que *, por padrão,* exija o consentimento do administrador. Os administradores de locatários podem desabilitar sua capacidade de consentimento para os escopos de permissões de gráfico para todos os aplicativos que não foram aprovados. Nesse caso, você verá esse erro.
+
+Você precisará trabalhar com seus administradores para obter aprovação, usar uma conta pessoal da Microsoft (Outlook.com) ou usar um locatário de teste do Microsoft 365 com o Exchange Online.
 
 ## <a name="didnt-find-what-you-need"></a>Não consegue encontrar o que precisa?
 

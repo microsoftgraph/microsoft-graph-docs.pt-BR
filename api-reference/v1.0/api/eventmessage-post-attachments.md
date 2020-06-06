@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9f7a0e01ab4113694927fe9c6323a23f4c7c2036
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3f9f59543dfc596d06718c5e7b351a5a447b2018
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461529"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568814"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -126,7 +126,7 @@ Content-length: 100
 {
   "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
   "name": "name-value",
-  "item": "message or event entity"
+  "item": "{message or event entity}"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
