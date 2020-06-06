@@ -2,15 +2,15 @@
 title: Listar namedLocations
 description: Obtenha uma lista de objetos namedLocation.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: da3de62116941946a52ab0b8ba32d44b4f8c5dad
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e8ff107c2689491dcc057381c4ff2510db55caa3
+ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382341"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "44593643"
 ---
 # <a name="list-namedlocations"></a>Listar namedLocations
 
@@ -40,7 +40,7 @@ GET /identity/conditionalAccess/namedLocations
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte `$count`aos `$filter`parâmetros `$orderBy`de `$select`consulta `$skip`do, `$top` ,,, e OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método oferece suporte aos parâmetros de consulta do,,, `$count` `$filter` `$orderBy` `$select` , `$skip` e `$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [namedLocation](../resources/namedlocation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [namedLocation](../resources/namedlocation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
