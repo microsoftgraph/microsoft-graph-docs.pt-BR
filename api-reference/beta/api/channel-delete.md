@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: bba1be37d3a654fa6d2bd64cc443cde76d844a60
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
+ms.lasthandoff: 06/09/2020
 ms.locfileid: "44491641"
 ---
 # <a name="delete-channel"></a>Delete channel
