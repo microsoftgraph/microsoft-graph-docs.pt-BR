@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7064a5650d54e693f9cf3a024e5db7186624c4ec
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 3ad246bd959b4f365bbbb1ea1bab11b0e869e745
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36633570"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684462"
 ---
 ```objc
 
@@ -27,8 +27,8 @@ NSMutableArray *attachmentsList = [[NSMutableArray alloc] init];
 MSGraphAttachment *attachments = [[MSGraphAttachment alloc] init];
 [attachments setName:@"Personal pictures"];
 [attachments setSourceUrl:@"https://contoso.com/personal/mario_contoso_net/Documents/Pics"];
-[attachments setProviderType:@"oneDriveConsumer"];
-[attachments setPermission:@"Edit"];
+[attachments setProviderType: [MSGraphReferenceAttachmentProvider oneDriveConsumer]];
+[attachments setPermission: [MSGraphReferenceAttachmentPermission edit]];
 [attachments setIsFolder:@"True"];
 [attachmentsList addObject: attachments];
 [post setAttachments:attachmentsList];

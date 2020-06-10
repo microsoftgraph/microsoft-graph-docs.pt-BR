@@ -1,18 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: f0d7b1f5b104ce0c8899d48dc22288f56452ee2d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 6c459f6e6970547d34e16df68c27061909b39829
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877252"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684084"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var supportedTimeZones = await graphClient.Me.Outlook
-    .SupportedTimeZones(microsoft.graph.timeZoneStandard'Iana')
+    .SupportedTimeZones(TimeZoneStandard.Iana)
     .Request()
     .GetAsync();
 

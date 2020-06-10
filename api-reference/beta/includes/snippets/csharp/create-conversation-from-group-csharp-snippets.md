@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1052dc2ac96b0ede0e76b023954b5de7bf2bcba0
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 46b83c54e9201267d10ca9d37a00685326ce774f
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35711810"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44685043"
 ---
 ```csharp
 
@@ -14,11 +14,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var conversation = new Conversation
 {
     Topic = "New head count",
-    Threads = new List<ConversationThread>()
+    Threads = (IConversationThreadsCollectionPage)new List<ConversationThread>()
     {
         new ConversationThread
         {
-            Posts = new List<Post>()
+            Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
             {
                 new Post
                 {

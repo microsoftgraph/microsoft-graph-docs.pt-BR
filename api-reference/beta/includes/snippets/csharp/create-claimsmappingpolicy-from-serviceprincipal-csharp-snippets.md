@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 51a7edd9a108e89b292423ebc277fdb5b01b2994
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 08f00502239b2200844a237da72fbb64e357b8f4
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589319"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684448"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var claimsMappingPolicy = new ClaimsMappingPolicy
 {
     AdditionalData = new Dictionary<string, object>()
     {
-        {"@odata.id","https://graph.microsoft.com/beta/policies/claimsMappingPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"}
+        {"@odata.id", "https://graph.microsoft.com/beta/policies/claimsMappingPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"}
     }
 };
 

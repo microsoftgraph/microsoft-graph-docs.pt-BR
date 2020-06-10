@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d41b0b994b90d0a862bcc57dee3482c755f73e45
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 287468a56e75c732a995498886da367318a65808
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461135"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684423"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var educationRubric = new EducationRubric
 {
     AdditionalData = new Dictionary<string, object>()
     {
-        {"@odata.id","https://graph.microsoft.com/v1.0/education/me/rubrics/{id}"}
+        {"@odata.id", "https://graph.microsoft.com/v1.0/education/me/rubrics/{id}"}
     }
 };
 

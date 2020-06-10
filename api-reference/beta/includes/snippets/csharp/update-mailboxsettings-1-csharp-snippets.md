@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a79bd1d35a9525c20b98d5472fb8f489bd1b1ba9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 4a5adffb34f211ff52da38f635c78969fdbb8613
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866655"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683649"
 ---
 ```csharp
 
@@ -13,10 +13,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var mailboxSettings = new MailboxSettings
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.context","https://graph.microsoft.com/beta/$metadata#Me/mailboxSettings"}
-    },
     AutomaticRepliesSetting = new AutomaticRepliesSetting
     {
         Status = AutomaticRepliesStatus.Scheduled,
@@ -30,6 +26,10 @@ var mailboxSettings = new MailboxSettings
             DateTime = "2016-03-28T18:00:00",
             TimeZone = "UTC"
         }
+    },
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@odata.context", "https://graph.microsoft.com/beta/$metadata#Me/mailboxSettings"}
     }
 };
 

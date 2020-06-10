@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1c90634f69a349e4d442a827de2da72dcc3c8a0d
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 373e15eb48dcae40b03689900d1311cdd3f1a989
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931681"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683972"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var teamsAppInstallation = new TeamsAppInstallation
 {
     AdditionalData = new Dictionary<string, object>()
     {
-        {"teamsApp@odata.bind","https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"}
+        {"teamsApp@odata.bind", "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"}
     }
 };
 

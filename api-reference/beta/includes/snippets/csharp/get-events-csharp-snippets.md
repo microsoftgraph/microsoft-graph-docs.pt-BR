@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 95fb59971bf7eab6367331ccd74f2f7c575d3d0d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 2db9dc805e1aea6b64dbf20c9a286abf3039e703
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35709177"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684169"
 ---
 ```csharp
 
@@ -14,16 +14,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var events = await graphClient.Me.Events
     .Request()
     .Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
-    .Select( e => new {
-             e.Subject,
-             e.Body,
-             e.BodyPreview,
-             e.Organizer,
-             e.Attendees,
-             e.Start,
-             e.End,
-             e.Location 
-             })
+    .Select("subject,body,bodyPreview,organizer,attendees,start,end,location")
     .GetAsync();
 
 ```

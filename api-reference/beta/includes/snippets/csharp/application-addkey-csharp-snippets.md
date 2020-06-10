@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 66c3623159482be354d510d4102fc3cce910d3b0
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: ff5771fdefaf07de462375a191fc4994aad2aa65
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333114"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44685027"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var keyCredential = new KeyCredential
 {
     Type = "X509CertAndPassword",
     Usage = "Sign",
-    Key = "MIIDYDCCAki..."
+    Key = Encoding.ASCII.GetBytes("MIIDYDCCAki...")
 };
 
 var passwordCredential = new PasswordCredential
