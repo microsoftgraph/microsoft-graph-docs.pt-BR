@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ec016b4b22fedea790ce77abe4f1291d325a5983
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 03345d39c896ad8118171a1a4c53496012a44113
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37544124"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683811"
 ---
 ```csharp
 
@@ -13,12 +13,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var message = new Message
 {
-    Attachments = new List<Attachment>()
+    Attachments = (IMessageAttachmentsCollectionPage)new List<Attachment>()
     {
         new FileAttachment
         {
             Name = "guidelines.txt",
-            ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+            ContentBytes = Encoding.ASCII.GetBytes("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
         }
     }
 };

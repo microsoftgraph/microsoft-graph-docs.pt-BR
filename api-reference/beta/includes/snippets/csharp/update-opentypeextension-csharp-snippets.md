@@ -1,31 +1,25 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d3c088133c5f37bbcca4ad84edace1d4330a734b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 71651cb9ec02dfe1e96d4e9fbe1ad15e6b5b8447
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878141"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683647"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var extension = new Extension
+var extension = new OpenTypeExtension
 {
+    ExtensionName = "Com.Contoso.Estimate",
     AdditionalData = new Dictionary<string, object>()
     {
-        {"@odata.type","#microsoft.outlookServices.openTypeExtension"}
-    },
-    ExtensionName = "Com.Contoso.Estimate",
-    CompanyName = "Contoso",
-    ExpirationDate = "2016-07-30T11:00:00Z",
-    DealValue = 1010100,
-    TopPicks = new List<String>()
-    {
-        "Employees only",
-        "Add spouse or guest",
-        "Add family"
+        {"companyName", "Contoso"},
+        {"expirationDate", "2016-07-30T11:00:00Z"},
+        {"DealValue", "1010100"},
+        {"topPicks", "[\"Employees only\",\"Add spouse or guest\",\"Add family\"]"}
     }
 };
 

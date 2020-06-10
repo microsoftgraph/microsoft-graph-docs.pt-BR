@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: bb007a51e67a17e1981d7b094df8ed218be46e1f
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 2afd9c8a028214beef7162056751aae09e766161
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589884"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683784"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var tokenLifetimePolicy = new TokenLifetimePolicy
 {
     AdditionalData = new Dictionary<string, object>()
     {
-        {"@odata.id","https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"}
+        {"@odata.id", "https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"}
     }
 };
 

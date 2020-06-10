@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 0e60d1d547ea8bbf50615c0cf7b907d3142e14a7
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: a42711849bd3b5b3777cd52cb2e23551f8bd752c
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708345"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44685081"
 ---
 ```csharp
 
@@ -13,15 +13,9 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var workbookChartAxis = new WorkbookChartAxis
 {
-    MajorUnit = new Json
-    {
-    },
-    Maximum = new Json
-    {
-    },
-    Minimum = new Json
-    {
-    }
+    MajorUnit = JToken.Parse("{}"),
+    Maximum = JToken.Parse("{}"),
+    Minimum = JToken.Parse("{}")
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].Axes.ValueAxis
