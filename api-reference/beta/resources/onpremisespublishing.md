@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 699718c5a51e074e15d964d0e8c925bc303d4e89
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 4d19a726e2f09c1df994bc8aee7d91eb53ef2628
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556244"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682002"
 ---
 # <a name="onpremisespublishing-resource-type"></a>tipo de recurso onPremisesPublishing
 
@@ -22,7 +22,7 @@ Um aplicativo local publicado por meio [do proxy de aplicativo do Azure ad](http
 
 Um objeto **onPremisesPublishing** representa o conjunto de propriedades para configurar o proxy de aplicativo para um [aplicativo](application.md)local. 
 
-Depois de [criar um aplicativo](../api/application-post-applications.md), as configurações de proxy do aplicativo para o aplicativo podem ser configuradas [atualizando as](../api/application-update.md) Propriedades de onPremisesPublishing do aplicativo.
+Após [instanciar um aplicativo personalizado](../api/applicationtemplate-instantiate.md) ou [criar um aplicativo](../api/application-post-applications.md), as configurações de proxy do aplicativo para o aplicativo podem ser configuradas [atualizando as](../api/application-update.md) Propriedades de onPremisesPublishing do aplicativo.
 
 ## <a name="properties"></a>Propriedades
 

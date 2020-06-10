@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: c587d9d6e11354a136948bbbf37565e42e0bb678
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fc6bb8b60c6c9df08373a76bd6bc5714758fc9cb
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522579"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682135"
 ---
 # <a name="networkconnection-resource-type"></a>tipo de recurso networkConnection
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,6 +27,7 @@ Contém informações de estado sobre a conexão de rede relacionada ao alerta.
 |applicationName|Cadeia de caracteres|Nome do aplicativo que gerencia a conexão de rede (por exemplo, Facebook, SMTP, etc.).|
 |destinationAddress|String|Endereço IP de destino (da conexão de rede).|
 |destinationDomain|String|Parte do domínio de destino da URL de destino. (por exemplo, ' www.contoso.com ').|
+|destinationLocation|String|Local (por mapeamento de endereço IP) associado ao destino de uma conexão de rede.|
 |destinationPort|String|Porta de destino (da conexão de rede).|
 |destinationUrl|String|URL de conexão de rede/cadeia de caracteres URI-excluindo parâmetros. (por exemplo, ' www.contoso.com/products/default.html ')|
 |direction|connectionDirection|Direção da conexão de rede. Os valores possíveis são: `unknown`, `inbound`, `outbound`.|
@@ -36,9 +37,10 @@ Contém informações de estado sobre a conexão de rede relacionada ao alerta.
 |natDestinationPort|String|Porta de destino de conversão de endereço de rede.|
 |natSourceAddress|String|Endereço IP de origem de conversão de endereço de rede.|
 |natSourcePort|String|Porta de origem de conversão de endereço de rede.|
-|RDP|securityNetworkProtocol|Protocolo de rede. Os valores possíveis são `unknown`: `ip`, `icmp`, `igmp`, `ggp` `ipv4` `tcp`,,, `pup`, `udp`, `idp` `ipv6` `ipv6RoutingHeader`,,, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd` `raw` `ipx` `spx`,,,, `spxII`,,,,,,,,,.|
+|RDP|securityNetworkProtocol|Protocolo de rede. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,, `unknown` `ip` `icmp` `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` `ipv6FragmentHeader` , `ipSecEncapsulatingSecurityPayload` , `ipSecAuthenticationHeader` ,, `icmpV6` `ipv6NoNextHeader` , `ipv6DestinationOptions` `nd` `raw` `ipx` `spx` `spxII` ,,,,,.|
 |riskScore|String|Provedor gerado/Pontuação de risco calculado da conexão de rede. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
 |sourceAddress|String|Endereço IP de origem (ou seja, origem) (da conexão de rede).|
+|sourceLocation|String|Local (por mapeamento de endereço IP) associado à origem de uma conexão de rede.|
 |sourcePort|String|Porta IP de origem (ou seja, origem) (da conexão de rede).|
 |status|connectionStatus|Status da conexão de rede. Os valores possíveis são: `unknown`, `attempted`, `succeeded`, `blocked`, `failed`.|
 |urlParameters|String|Parâmetros (sufixo) da URL de destino.|
@@ -50,8 +52,8 @@ Contém informações de estado sobre a conexão de rede relacionada ao alerta.
 |desconhecido|-1|Protocolo desconhecido.|
 |IP|,0|Protocolo de Internet.|
 |ICMP|1 | Protocolo de mensagens de controle da Internet.|
-|IGMP|2 | Protocolo de gerenciamento de grupos da Internet.|
-|ggp|3 | Gateway para protocolo gateway.|
+|IGMP|duas| Protocolo de gerenciamento de grupos da Internet.|
+|ggp|3D| Gateway para protocolo gateway.|
 |IPv4|4 | Protocolo IP versão 4.|
 |tcp|6 | Protocolo de controle de transmissão.|
 |confiável|12 | Protocolo de pacote universal do PARC.|
@@ -88,6 +90,7 @@ Veja a seguir uma representação JSON do recurso.
   "applicationName": "String",
   "destinationAddress": "String",
   "destinationDomain": "String",
+  "destinationLocation": "String",
   "destinationPort": "String",
   "destinationUrl": "String",
   "direction": "String",
@@ -100,6 +103,7 @@ Veja a seguir uma representação JSON do recurso.
   "protocol": "string",
   "riskScore": "String",
   "sourceAddress": "String",
+  "sourceLocation": "String",
   "sourcePort": "String",
   "status": "String",
   "urlParameters": "String"

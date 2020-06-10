@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 117bd9c6ab25ca1db00233a15b8d984f6bb512a4
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: 1bb5f8d5177e294a969fb48d335bd4a3061f1bb1
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44430576"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681757"
 ---
 # <a name="changenotification-resource-type"></a>tipo de recurso changeNotification
 
@@ -37,7 +37,7 @@ Nenhum
 | id | cadeia de caracteres | ID exclusiva da notificação. Opcional. |
 | recurso | string | O URI do recurso que emitiu a notificação de alteração relativa a `https://graph.microsoft.com` . Obrigatório. |
 | resourceData | [Microsoft. Graph. resourceData](resourcedata.md) | O conteúdo dessa propriedade depende do tipo de recurso que está sendo assinado. Obrigatório. |
-| sequenceNumber | int | Pode ser usado para garantir que as notificações recebidas estejam em ordem. Opcional. |
+| sequenceNumber | int | Um número em sequência para uma notificação, para ajudar o aplicativo cliente a identificar se as notificações estão em sequência ou se uma notificação estiver ausente. Opcional. |
 | subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | O tempo de expiração da assinatura. Obrigatório. |
 | subscriptionId | string | O identificador exclusivo da assinatura que gerou a notificação. |
 | tenantId | #c0 | O exclusivo identificado do locatário do qual a notificação de alteração se originou. |
@@ -62,7 +62,11 @@ Veja a seguir uma representação JSON do recurso.
 {
   "subscriptionId": "76222963-cc7b-42d2-882d-8aaa69cb2ba3",
   "changeType": "created",
-  // Other properties typical in a resource change notification
+  "clientState": "client state provided when creating subscription",
+  "id": "15ee1d1f-af7b-42d9-885b-9d00db065dd9",
+  "sequenceNumber": 20,
+  "tenantId": "2c937fad-a8a7-496c-b0e4-bf77dcc7eb2a",
+  "subscriptionExpirationDateTime": "2020-04-12T23:20:50.52Z",
   "resource": "teams('d29828b8-c04d-4e2a-b2f6-07da6982f0f0')/channels('19:f127a8c55ad949d1a238464d22f0f99e@thread.skype')/messages('1565045424600')/replies('1565047490246')",
   "resourceData": {
     "id": "1565293727947",

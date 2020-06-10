@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 583a6444fb7f0f1be65c68a4eb772089ddb768bd
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: d93cbc16411d3090ba4133047ad07cd55997fec5
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44430575"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681743"
 ---
 # <a name="changenotificationcollection-resource-type"></a>tipo de recurso changeNotificationCollection
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma coleção de notificações de assinatura enviadas ao Assinante.
+Representa uma coleção de notificações de alteração de recursos enviadas ao Assinante.
 
 Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).
 
