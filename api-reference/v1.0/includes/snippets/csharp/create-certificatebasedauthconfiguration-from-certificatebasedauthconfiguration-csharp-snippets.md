@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a283d07e7c665b13a15d092579b75984126f9e93
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: 5ad2dd27c0e9b4626a43f9a9024a6629bdf71254
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638652"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684560"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var certificateBasedAuthConfiguration = new CertificateBasedAuthConfiguration
         new CertificateAuthority
         {
             IsRootAuthority = true,
-            Certificate = "Binary"
+            Certificate = Encoding.ASCII.GetBytes("Binary")
         }
     }
 };

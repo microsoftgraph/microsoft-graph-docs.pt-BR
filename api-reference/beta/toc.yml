@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Obter tokens de autenticação
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: /graph/auth/index?context=graph/api/beta
       - name: Noções básicas
         href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -74,7 +74,7 @@ items:
       - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -169,11 +169,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -227,7 +227,7 @@ items:
                 href: api/user-list-events.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
-          - name: Contatos
+          - name: Contacts
             href: resources/contact.md
             items:
               - name: Criar contato
@@ -431,7 +431,7 @@ items:
                 href: api/user-delete-teamsappinstallation.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -885,16 +885,18 @@ items:
           - name: Assinatura
             href: resources/subscription.md
             items:
-              - name: Listar assinatura
+              - name: Listar
                 href: api/subscription-list.md
-              - name: Obter assinatura
-                href: api/subscription-get.md
-              - name: Criar assinatura
+              - name: Criar
                 href: api/subscription-post-subscriptions.md
-              - name: Atualizar assinatura
+              - name: Obter
+                href: api/subscription-get.md
+              - name: Atualizar
                 href: api/subscription-update.md
-              - name: Excluir assinatura
+              - name: Excluir
                 href: api/subscription-delete.md
+          - name: Coleção de notificações de alteração
+            href: resources/changenotificationcollection.md
       - name: Comunicações na nuvem
         displayName: Cloud communications
         items:
@@ -988,7 +990,7 @@ items:
                 href: api/cloudcommunications-getpresencesbyuserid.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1005,7 +1007,7 @@ items:
       - name: Experiências entre dispositivos
         displayName: Project Rome
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/project-rome-overview.md
           - name: Listar os dispositivos do usuário
             href: api/user-list-devices.md
@@ -1039,7 +1041,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -1147,7 +1149,7 @@ items:
                     href: api/printer-post-jobs.md
                   - name: Obter
                     href: api/printjob-get.md
-                  - name: Início
+                  - name: Iniciar
                     href: api/printjob-startprintjob.md
                   - name: Cancelar
                     href: api/printjob-cancelprintjob.md
@@ -2784,14 +2786,14 @@ items:
                   - name: Base de perfil de certificado do Android
                     href: resources/intune-deviceconfig-androidcertificateprofilebase.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-androidcertificateprofilebase-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidcertificateprofilebase-get.md
                   - name: Política de conformidade do Android
                     href: resources/intune-deviceconfig-androidcompliancepolicy.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-androidcompliancepolicy-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidcompliancepolicy-get.md
@@ -3424,7 +3426,7 @@ items:
                   - name: Configuração de VPN do perfil de trabalho do Android
                     href: resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-get.md
@@ -3439,7 +3441,7 @@ items:
                   - name: Configuração de Wi-Fi do perfil de trabalho do Android
                     href: resources/intune-deviceconfig-androidworkprofilewificonfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-androidworkprofilewificonfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidworkprofilewificonfiguration-get.md
@@ -4508,7 +4510,7 @@ items:
                   - name: Perfil de certificado de PKCS do iOS
                     href: resources/intune-deviceconfig-iospkcscertificateprofile.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-iospkcscertificateprofile-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-iospkcscertificateprofile-get.md
@@ -4707,7 +4709,7 @@ items:
                   - name: Configuração personalizada do macOS
                     href: resources/intune-deviceconfig-macoscustomconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -4720,7 +4722,7 @@ items:
                   - name: Configuração de recursos do dispositivo macOS
                     href: resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-get.md
@@ -5095,7 +5097,7 @@ items:
                   - name: Violação de aplicativos restritos
                     href: resources/intune-deviceconfig-restrictedappsviolation.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-restrictedappsviolation-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-restrictedappsviolation-get.md
@@ -5122,7 +5124,7 @@ items:
                   - name: Resumo de dispositivo de estado de configuração
                     href: resources/intune-deviceconfig-settingstatedevicesummary.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-settingstatedevicesummary-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-settingstatedevicesummary-get.md
@@ -5141,7 +5143,7 @@ items:
                   - name: Configuração de PC compartilhado
                     href: resources/intune-deviceconfig-sharedpcconfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-sharedpcconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-sharedpcconfiguration-get.md
@@ -5954,7 +5956,7 @@ items:
                   - name: Evento de solução de problemas de token do Apple VPP
                     href: resources/intune-troubleshooting-applevpptokentroubleshootingevent.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-troubleshooting-applevpptokentroubleshootingevent-list.md
                       - name: Obter
                         href: api/intune-troubleshooting-applevpptokentroubleshootingevent-get.md
@@ -5969,7 +5971,7 @@ items:
                   - name: Evento de auditoria
                     href: resources/intune-auditing-auditevent.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-auditing-auditevent-list.md
                       - name: Obter
                         href: api/intune-auditing-auditevent-get.md
@@ -5994,7 +5996,7 @@ items:
                   - name: Condição de gerenciamento de cerca geográfica circular
                     href: resources/intune-fencing-circulargeofencemanagementcondition.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-fencing-circulargeofencemanagementcondition-list.md
                       - name: Obter
                         href: api/intune-fencing-circulargeofencemanagementcondition-get.md
@@ -8529,7 +8531,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -8623,7 +8625,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -8996,7 +8998,7 @@ items:
                     href: api/application-post-extensionproperty.md
                   - name: Excluir extensão
                     href: api/application-delete-extensionproperty.md
-              - name: Proprietários
+              - name: Owners
                 items:
                   - name: Listar proprietários
                     href: api/application-list-owners.md
@@ -9056,7 +9058,7 @@ items:
                     href: api/authenticationflowspolicy-update.md
           - name: Métodos de autenticação
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/authenticationmethods-overview.md
               - name: Método de autenticação
                 href: resources/authenticationmethod.md
@@ -9076,7 +9078,7 @@ items:
                     href: api/passwordauthenticationmethod-resetpassword.md
                   - name: Obter status da operação
                     href: api/authenticationoperation-get.md
-              - name: Telefone
+              - name: Phone
                 href: resources/phoneauthenticationmethod.md
                 items:
                   - name: Lista
@@ -9466,7 +9468,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -9922,7 +9924,7 @@ items:
                     href: api/serviceprincipal-getmembergroups.md
                   - name: getMemberObjects
                     href: api/serviceprincipal-getmemberobjects.md
-              - name: Proprietários
+              - name: Owners
                 items:
                   - name: Listar proprietários
                     href: api/serviceprincipal-list-owners.md
@@ -10083,7 +10085,7 @@ items:
       - name: Correio
         displayName: 'Outlook, Outlook mail'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/mail-api-overview.md
           - name: Mensagem
             href: resources/message.md
@@ -10680,7 +10682,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e uso
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registro de usuário de credenciais
                     href: resources/credentialuserregistrationcount.md
@@ -10704,7 +10706,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Relatórios de uso do Office 365
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -10907,13 +10909,13 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Dados de consulta
                 href: api/search-query.md
           - name: Índice
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -11035,7 +11037,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -11098,7 +11100,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
           - name: Plano
             href: resources/plannerplan.md
@@ -11350,7 +11352,7 @@ items:
                 href: api/teamsapp-update.md
               - name: Remover aplicativo do catálogo
                 href: api/teamsapp-delete.md
-          - name: Aplicativos
+          - name: Apps
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md

@@ -5,69 +5,71 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: db07b591c57c35d0304ea1102099ab6b27e09682
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 8da4009935556f98988a6f5d07f4c9921c151001
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556356"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682101"
 ---
-# <a name="onlinemeeting-createorget"></a><span data-ttu-id="40270-104">onlineMeeting: createOrGet</span><span class="sxs-lookup"><span data-stu-id="40270-104">onlineMeeting: createOrGet</span></span>
+# <a name="onlinemeeting-createorget"></a><span data-ttu-id="58571-104">onlineMeeting: createOrGet</span><span class="sxs-lookup"><span data-stu-id="58571-104">onlineMeeting: createOrGet</span></span>
 
-<span data-ttu-id="40270-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="40270-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="58571-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="58571-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="40270-106">Criar um objeto [onlineMeeting](../resources/onlinemeeting.md) com uma ID externa personalizada especificada.</span><span class="sxs-lookup"><span data-stu-id="40270-106">Create an [onlineMeeting](../resources/onlinemeeting.md) object with a custom specified external ID.</span></span> <span data-ttu-id="40270-107">Se a ID externa já existir, essa API retornará o objeto [onlineMeeting](../resources/onlinemeeting.md) com essa ID externa.</span><span class="sxs-lookup"><span data-stu-id="40270-107">If the external ID already exists, this API will return the [onlineMeeting](../resources/onlinemeeting.md) object with that external ID.</span></span> 
+<span data-ttu-id="58571-106">Criar um objeto [onlineMeeting](../resources/onlinemeeting.md) com uma ID externa personalizada especificada.</span><span class="sxs-lookup"><span data-stu-id="58571-106">Create an [onlineMeeting](../resources/onlinemeeting.md) object with a custom specified external ID.</span></span> <span data-ttu-id="58571-107">Se a ID externa já existir, essa API retornará o objeto [onlineMeeting](../resources/onlinemeeting.md) com essa ID externa.</span><span class="sxs-lookup"><span data-stu-id="58571-107">If the external ID already exists, this API will return the [onlineMeeting](../resources/onlinemeeting.md) object with that external ID.</span></span> 
 
-> <span data-ttu-id="40270-108">**Observação**: a reunião não é exibida no calendário do usuário.</span><span class="sxs-lookup"><span data-stu-id="40270-108">**Note**: The meeting does not show on the user's calendar.</span></span>
+> <span data-ttu-id="58571-108">**Observação**: a reunião não é exibida no calendário do usuário.</span><span class="sxs-lookup"><span data-stu-id="58571-108">**Note**: The meeting does not show on the user's calendar.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="40270-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="40270-109">Permissions</span></span>
-<span data-ttu-id="40270-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="40270-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="58571-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="58571-109">Permissions</span></span>
+<span data-ttu-id="58571-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="58571-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="40270-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="40270-112">Permission type</span></span>                        | <span data-ttu-id="40270-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="40270-113">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="58571-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="58571-112">Permission type</span></span>                        | <span data-ttu-id="58571-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="58571-113">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="40270-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="40270-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="40270-115">OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="40270-115">OnlineMeetings.ReadWrite</span></span>                    |
-| <span data-ttu-id="40270-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="40270-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="40270-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="40270-117">Not supported.</span></span>                               |
-| <span data-ttu-id="40270-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="40270-118">Application</span></span>                            | <span data-ttu-id="40270-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="40270-119">Not supported.</span></span>                |
+| <span data-ttu-id="58571-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="58571-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="58571-115">OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="58571-115">OnlineMeetings.ReadWrite</span></span>                    |
+| <span data-ttu-id="58571-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="58571-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="58571-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="58571-117">Not supported.</span></span>                               |
+| <span data-ttu-id="58571-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="58571-118">Application</span></span>                            | <span data-ttu-id="58571-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="58571-119">Not supported.</span></span>                |
 
-## <a name="http-request"></a><span data-ttu-id="40270-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="40270-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="58571-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="58571-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="40270-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="40270-121">Request headers</span></span>
-| <span data-ttu-id="40270-122">Nome</span><span class="sxs-lookup"><span data-stu-id="40270-122">Name</span></span>          | <span data-ttu-id="40270-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="40270-123">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="58571-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="58571-121">Request headers</span></span>
+| <span data-ttu-id="58571-122">Nome</span><span class="sxs-lookup"><span data-stu-id="58571-122">Name</span></span>          | <span data-ttu-id="58571-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="58571-123">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="40270-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="40270-124">Authorization</span></span> | <span data-ttu-id="40270-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="40270-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="40270-127">Content-type</span><span class="sxs-lookup"><span data-stu-id="40270-127">Content-type</span></span>  | <span data-ttu-id="40270-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="40270-p105">application/json. Required.</span></span> |
+| <span data-ttu-id="58571-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="58571-124">Authorization</span></span> | <span data-ttu-id="58571-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="58571-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="58571-127">Content-type</span><span class="sxs-lookup"><span data-stu-id="58571-127">Content-type</span></span>  | <span data-ttu-id="58571-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="58571-p105">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="40270-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="40270-130">Request body</span></span>
-<span data-ttu-id="40270-131">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="40270-131">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="58571-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="58571-130">Request body</span></span>
+<span data-ttu-id="58571-131">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="58571-131">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="40270-132">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="40270-132">Parameter</span></span>        | <span data-ttu-id="40270-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="40270-133">Type</span></span>                                     |<span data-ttu-id="40270-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="40270-134">Description</span></span>                                                                                                                                    |
+| <span data-ttu-id="58571-132">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="58571-132">Parameter</span></span>        | <span data-ttu-id="58571-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="58571-133">Type</span></span>                                     |<span data-ttu-id="58571-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="58571-134">Description</span></span>                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
-| <span data-ttu-id="40270-135">chatInfo</span><span class="sxs-lookup"><span data-stu-id="40270-135">chatInfo</span></span>         |[<span data-ttu-id="40270-136">chatInfo</span><span class="sxs-lookup"><span data-stu-id="40270-136">chatInfo</span></span>](../resources/chatinfo.md)                   |<span data-ttu-id="40270-137">As informações de chat associadas a esta reunião online.</span><span class="sxs-lookup"><span data-stu-id="40270-137">The chat information associated with this online meeting.</span></span>|
-| <span data-ttu-id="40270-138">endDateTime</span><span class="sxs-lookup"><span data-stu-id="40270-138">endDateTime</span></span>      | <span data-ttu-id="40270-139">DateTime</span><span class="sxs-lookup"><span data-stu-id="40270-139">DateTime</span></span>                                 | <span data-ttu-id="40270-140">A hora de término da reunião em UTC.</span><span class="sxs-lookup"><span data-stu-id="40270-140">The meeting end time in UTC.</span></span> |
-| <span data-ttu-id="40270-141">externalId</span><span class="sxs-lookup"><span data-stu-id="40270-141">externalId</span></span>       | <span data-ttu-id="40270-142">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="40270-142">String</span></span>                                   | <span data-ttu-id="40270-143">A ID externa.</span><span class="sxs-lookup"><span data-stu-id="40270-143">The external ID.</span></span> <span data-ttu-id="40270-144">Uma ID personalizada.</span><span class="sxs-lookup"><span data-stu-id="40270-144">A custom ID.</span></span> <span data-ttu-id="40270-145">Precisam</span><span class="sxs-lookup"><span data-stu-id="40270-145">(Required)</span></span> |
-| <span data-ttu-id="40270-146">participants</span><span class="sxs-lookup"><span data-stu-id="40270-146">participants</span></span>     | [<span data-ttu-id="40270-147">meetingParticipants</span><span class="sxs-lookup"><span data-stu-id="40270-147">meetingParticipants</span></span>](../resources/meetingparticipants.md)          | <span data-ttu-id="40270-148">Os participantes associados à reunião online.</span><span class="sxs-lookup"><span data-stu-id="40270-148">The participants associated with the online meeting.</span></span>  <span data-ttu-id="40270-149">Isso inclui o organizador e os participantes.</span><span class="sxs-lookup"><span data-stu-id="40270-149">This includes the organizer and the attendees.</span></span> |
-| <span data-ttu-id="40270-150">startDateTime</span><span class="sxs-lookup"><span data-stu-id="40270-150">startDateTime</span></span>    | <span data-ttu-id="40270-151">DateTime</span><span class="sxs-lookup"><span data-stu-id="40270-151">DateTime</span></span>                                 | <span data-ttu-id="40270-152">A hora de início da reunião em UTC.</span><span class="sxs-lookup"><span data-stu-id="40270-152">The meeting start time in UTC.</span></span> |
-| <span data-ttu-id="40270-153">subject</span><span class="sxs-lookup"><span data-stu-id="40270-153">subject</span></span>          | <span data-ttu-id="40270-154">String</span><span class="sxs-lookup"><span data-stu-id="40270-154">String</span></span>                                   | <span data-ttu-id="40270-155">O assunto da reunião online.</span><span class="sxs-lookup"><span data-stu-id="40270-155">The subject of the online meeting.</span></span> |
+| <span data-ttu-id="58571-135">chatInfo</span><span class="sxs-lookup"><span data-stu-id="58571-135">chatInfo</span></span>         |[<span data-ttu-id="58571-136">chatInfo</span><span class="sxs-lookup"><span data-stu-id="58571-136">chatInfo</span></span>](../resources/chatinfo.md)                   |<span data-ttu-id="58571-137">As informações de chat associadas a esta reunião online.</span><span class="sxs-lookup"><span data-stu-id="58571-137">The chat information associated with this online meeting.</span></span>|
+| <span data-ttu-id="58571-138">endDateTime</span><span class="sxs-lookup"><span data-stu-id="58571-138">endDateTime</span></span>      | <span data-ttu-id="58571-139">DateTime</span><span class="sxs-lookup"><span data-stu-id="58571-139">DateTime</span></span>                                 | <span data-ttu-id="58571-140">A hora de término da reunião em UTC.</span><span class="sxs-lookup"><span data-stu-id="58571-140">The meeting end time in UTC.</span></span> |
+| <span data-ttu-id="58571-141">externalId</span><span class="sxs-lookup"><span data-stu-id="58571-141">externalId</span></span>       | <span data-ttu-id="58571-142">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="58571-142">String</span></span>                                   | <span data-ttu-id="58571-143">A ID externa.</span><span class="sxs-lookup"><span data-stu-id="58571-143">The external ID.</span></span> <span data-ttu-id="58571-144">Uma ID personalizada.</span><span class="sxs-lookup"><span data-stu-id="58571-144">A custom ID.</span></span> <span data-ttu-id="58571-145">Precisam</span><span class="sxs-lookup"><span data-stu-id="58571-145">(Required)</span></span> |
+| <span data-ttu-id="58571-146">participants</span><span class="sxs-lookup"><span data-stu-id="58571-146">participants</span></span>     | [<span data-ttu-id="58571-147">meetingParticipants</span><span class="sxs-lookup"><span data-stu-id="58571-147">meetingParticipants</span></span>](../resources/meetingparticipants.md)          | <span data-ttu-id="58571-148">Os participantes associados à reunião online.</span><span class="sxs-lookup"><span data-stu-id="58571-148">The participants associated with the online meeting.</span></span>  <span data-ttu-id="58571-149">Isso inclui o organizador e os participantes.</span><span class="sxs-lookup"><span data-stu-id="58571-149">This includes the organizer and the attendees.</span></span> |
+| <span data-ttu-id="58571-150">startDateTime</span><span class="sxs-lookup"><span data-stu-id="58571-150">startDateTime</span></span>    | <span data-ttu-id="58571-151">DateTime</span><span class="sxs-lookup"><span data-stu-id="58571-151">DateTime</span></span>                                 | <span data-ttu-id="58571-152">A hora de início da reunião em UTC.</span><span class="sxs-lookup"><span data-stu-id="58571-152">The meeting start time in UTC.</span></span> |
+| <span data-ttu-id="58571-153">subject</span><span class="sxs-lookup"><span data-stu-id="58571-153">subject</span></span>          | <span data-ttu-id="58571-154">String</span><span class="sxs-lookup"><span data-stu-id="58571-154">String</span></span>                                   | <span data-ttu-id="58571-155">O assunto da reunião online.</span><span class="sxs-lookup"><span data-stu-id="58571-155">The subject of the online meeting.</span></span> |
 
-><span data-ttu-id="40270-156">**Observação:** Se o `startDateTime` e `endDateTime` não forem fornecidos, o `startDateTime` padrão será o valor de DateTime atual e o `endDateTime` valor será igual a `startDateTime` + 1 hora.</span><span class="sxs-lookup"><span data-stu-id="40270-156">**Note:** If the `startDateTime` and `endDateTime` are not provided, the `startDateTime` will default to the current dateTime value and `endDateTime` value will equal the `startDateTime` + 1 hour.</span></span> 
+><span data-ttu-id="58571-156">**Observação:** Se o `startDateTime` e `endDateTime` não forem fornecidos, o `startDateTime` padrão será o valor de DateTime atual e o `endDateTime` valor será igual a `startDateTime` + 1 hora.</span><span class="sxs-lookup"><span data-stu-id="58571-156">**Note:** If the `startDateTime` and `endDateTime` are not provided, the `startDateTime` will default to the current dateTime value and `endDateTime` value will equal the `startDateTime` + 1 hour.</span></span> 
 
-><span data-ttu-id="40270-157">Se o `startDateTime` for fornecido, mas `endDateTime` não for, o `endDateTime` valor será igual a `startDateTime` + 1 hora.</span><span class="sxs-lookup"><span data-stu-id="40270-157">If the `startDateTime` is provided, but `endDateTime` is not, the `endDateTime` value will equal the `startDateTime` + 1 hour.</span></span> 
+><span data-ttu-id="58571-157">Se o `startDateTime` for fornecido, mas `endDateTime` não for, o `endDateTime` valor será igual a `startDateTime` + 1 hora.</span><span class="sxs-lookup"><span data-stu-id="58571-157">If the `startDateTime` is provided, but `endDateTime` is not, the `endDateTime` value will equal the `startDateTime` + 1 hour.</span></span> 
 
-><span data-ttu-id="40270-158">Um erro será gerado se o `endDateTime` for fornecido sem o `startDateTime` ou se `endDateTime` for anterior ao `startDateTime` .</span><span class="sxs-lookup"><span data-stu-id="40270-158">An error will be thrown if the `endDateTime` is provided without the `startDateTime` or if the `endDateTime` is earlier than the `startDateTime`.</span></span>
+><span data-ttu-id="58571-158">Um erro será gerado se o `endDateTime` for fornecido sem o `startDateTime` ou se `endDateTime` for anterior ao `startDateTime` .</span><span class="sxs-lookup"><span data-stu-id="58571-158">An error will be thrown if the `endDateTime` is provided without the `startDateTime` or if the `endDateTime` is earlier than the `startDateTime`.</span></span>
 
-## <a name="response"></a><span data-ttu-id="40270-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="40270-159">Response</span></span>
-<span data-ttu-id="40270-160">Se tiver êxito, este método retornará um `201 Created` código de resposta se uma nova reunião for criada ou um `200 OK` código de resposta se uma reunião existente for recuperada.</span><span class="sxs-lookup"><span data-stu-id="40270-160">If successful, this method returns a `201 Created` response code if a new meeting is created, or a `200 OK` response code if an existing meeting is retrieved.</span></span> <span data-ttu-id="40270-161">Em ambos os casos, um objeto [onlineMeeting](../resources/onlinemeeting.md) é retornado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="40270-161">In both cases, an [onlineMeeting](../resources/onlinemeeting.md) object is returned in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="58571-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="58571-159">Response</span></span>
+<span data-ttu-id="58571-160">Se tiver êxito, este método retornará um `201 Created` código de resposta se uma nova reunião for criada ou um `200 OK` código de resposta se uma reunião existente for recuperada.</span><span class="sxs-lookup"><span data-stu-id="58571-160">If successful, this method returns a `201 Created` response code if a new meeting is created, or a `200 OK` response code if an existing meeting is retrieved.</span></span> <span data-ttu-id="58571-161">Em ambos os casos, um objeto [onlineMeeting](../resources/onlinemeeting.md) é retornado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="58571-161">In both cases, an [onlineMeeting](../resources/onlinemeeting.md) object is returned in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="40270-162">Exemplos</span><span class="sxs-lookup"><span data-stu-id="40270-162">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="58571-162">Exemplos</span><span class="sxs-lookup"><span data-stu-id="58571-162">Examples</span></span>
 
-<span data-ttu-id="40270-163">O exemplo a seguir mostra como criar ou obter uma reunião online com uma ID externa.</span><span class="sxs-lookup"><span data-stu-id="40270-163">The following example shows how to create or get an online meeting with an external ID.</span></span>
+<span data-ttu-id="58571-163">O exemplo a seguir mostra como criar ou obter uma reunião online com uma ID externa.</span><span class="sxs-lookup"><span data-stu-id="58571-163">The following example shows how to create or get an online meeting with an external ID.</span></span>
 
-### <a name="request"></a><span data-ttu-id="40270-164">Solicitação</span><span class="sxs-lookup"><span data-stu-id="40270-164">Request</span></span>
+### <a name="request"></a><span data-ttu-id="58571-164">Solicitação</span><span class="sxs-lookup"><span data-stu-id="58571-164">Request</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="58571-165">HTTP</span><span class="sxs-lookup"><span data-stu-id="58571-165">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-or-get-onlinemeeting"
@@ -109,10 +111,28 @@ Content-Type: application/json
   "subject":"Create a meeting with customId provided"
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="58571-166">C#</span><span class="sxs-lookup"><span data-stu-id="58571-166">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-or-get-onlinemeeting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="40270-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="40270-165">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="58571-167">JavaScript</span><span class="sxs-lookup"><span data-stu-id="58571-167">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-or-get-onlinemeeting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="40270-166">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="40270-166">**Note:** The response object shown here might be shortened for readability.</span></span> 
+# <a name="objective-c"></a>[<span data-ttu-id="58571-168">Objective-C</span><span class="sxs-lookup"><span data-stu-id="58571-168">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-or-get-onlinemeeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="58571-169">Java</span><span class="sxs-lookup"><span data-stu-id="58571-169">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-or-get-onlinemeeting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="58571-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="58571-170">Response</span></span>
+
+><span data-ttu-id="58571-171">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="58571-171">**Note:** The response object shown here might be shortened for readability.</span></span> 
 
 <!-- {
   "blockType": "response",
