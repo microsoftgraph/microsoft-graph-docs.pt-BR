@@ -5,12 +5,12 @@ title: Listar sites seguidos
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: c08def6b72869cdc1886a71d1083dfdef51dbebd
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: f5057a91f317ae309cf899ab6daa1288c41bace0
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44052313"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682247"
 ---
 # <a name="list-followed-sites"></a>Listar sites seguidos
 
@@ -35,8 +35,14 @@ Este método é acessível apenas por meio do OneDrive for Business.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /me/followedSites
+GET /me/followedSites
 ```
+Obter uma lista dos sites seguidos por um usuário de destino com base em sua ID.
+
+```http
+GET /users/{user-id}/followedSites
+```
+**Observação:** Para acessar a lista de sites seguidos de outro usuário direcionado, você precisa de permissões de aplicativo.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta.
@@ -65,7 +71,7 @@ Se nenhum site for encontrado, uma coleção vazia será retornada.
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
 ```msgraph-interactive
-POST /me/followedSites
+GET /me/followedSites
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]

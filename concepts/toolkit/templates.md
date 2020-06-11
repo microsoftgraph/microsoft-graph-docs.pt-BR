@@ -3,18 +3,18 @@ title: Modelos no Microsoft Graph Toolkit
 description: Use modelos personalizados para modificar o conteúdo de um componente.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 46a1f9b771f358de6099bf1266c10c4c1ebe0cb0
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 00be58b006fd4442154f547603cf1f2c5dbeb5a5
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144258"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682240"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Modelos no Microsoft Graph Toolkit
 
 Use modelos personalizados para modificar o conteúdo de um componente.
 
-Todos os componentes Web oferecem suporte a `<template>` modelos baseados no elemento. Por exemplo, para substituir o modelo de um componente, adicione um `<template>` elemento dentro de um componente.
+Todos os componentes Web oferecem suporte a modelos baseados no `<template>` elemento. Por exemplo, para substituir o modelo de um componente, adicione um `<template>` elemento dentro de um componente.
 
 ```html
 <mgt-agenda>
@@ -38,7 +38,7 @@ Todos os componentes Web oferecem suporte a `<template>` modelos baseados no ele
 
 ## <a name="data-type"></a>Tipo de dados
 
-Cada componente pode ter várias partes que podem ser modeladas. Por exemplo, no `mgt-agenda` componente, você pode modelar eventos individuais, cabeçalhos de seção individuais, modo de exibição de carregamento, sem exibição de dados e muito mais. Para indicar o modelo, use o `data-type` atributo em um modelo. Por exemplo, para modelar cada evento `mgt-agenda`no, use `event` o tipo de dados, conforme mostrado.
+Cada componente pode ter várias partes que podem ser modeladas. Por exemplo, no `mgt-agenda` componente, você pode modelar eventos individuais, cabeçalhos de seção individuais, modo de exibição de carregamento, sem exibição de dados e muito mais. Para indicar o modelo, use o `data-type` atributo em um modelo. Por exemplo, para modelar cada evento no `mgt-agenda` , use o `event` tipo de dados, conforme mostrado.
 
 ```html
 <mgt-agenda>
@@ -50,7 +50,7 @@ Se não `data-type` for especificado, o componente inteiro será substituído pe
 
 ## <a name="binding-data"></a>Dados de vinculação
 
-Muitos modelos permitem a associação de dados que são passados para o modelo como contexto de dados. Por exemplo, o `event` modelo no `mgt-agenda` componente passa um `{event}` objeto que pode ser usado diretamente no modelo. Para expandir uma expressão, como `event.subject`, use as chaves duplas.
+Muitos modelos permitem a associação de dados que são passados para o modelo como contexto de dados. Por exemplo, o `event` modelo no `mgt-agenda` componente passa um `{event}` objeto que pode ser usado diretamente no modelo. Para expandir uma expressão, como `event.subject` , use as chaves duplas.
 
 ```html
 <template data-type="event">
@@ -68,16 +68,26 @@ Este formato também pode ser usado dentro de atributos:
 
 > **Observação:** Você também pode expandir objetos como `{{event}}` e eles serão renderizados como cadeias de caracteres JSON. Isso pode ser útil quando você está desenvolvendo os modelos.
 
+### <a name="change-binding-syntax"></a>Alterar sintaxe de associação
+
+Por padrão, para expandir uma expressão, você usa chaves duplas ( `{{expression}}` ). No entanto, você pode alterar essa sintaxe para ambientes onde a sintaxe de chave dupla já é usada. Por exemplo, o exemplo a seguir usa colchetes duplos ( `[[expression]]` ).
+
+```ts
+import { TemplateHelper } from '@microsoft/mgt';
+
+TemplateHelper.setBindingSyntax('[[', ']]');
+```
+
 ## <a name="data-context-helper-properties"></a>Propriedades do auxiliar de contexto de dados
 
 As propriedades a seguir também podem ser usadas com o objeto de contexto de dados em seus modelos.
 
 | Propriedade |  Descrição |
 | --- | --- | --- |
-| $index | Índice numérico do item que está sendo processado durante o loop `data-for`. |
+| $index | Índice numérico do item que está sendo processado durante o loop `data-for` . |
 | $parent | Se um modelo é renderizado dentro de outro modelo, essa propriedade permite que você acesse o contexto de dados pai. |
 
-O exemplo a seguir mostra como usar a `$index` Propriedade em um loop data-para.
+O exemplo a seguir mostra como usar a `$index` propriedade em um loop data-para.
 
 ```html
 <mgt-person>
@@ -93,7 +103,7 @@ O exemplo a seguir mostra como usar a `$index` Propriedade em um loop data-para.
 
 ## <a name="conditional-rendering"></a>Renderização condicional
 
-Você só pode querer renderizar elementos quando uma condição for true ou false com base no contexto de dados. Os `data-if` atributos `data-else` e podem avaliar uma expressão e renderizar somente se true ou false.
+Você só pode querer renderizar elementos quando uma condição for true ou false com base no contexto de dados. Os `data-if` `data-else` atributos e podem avaliar uma expressão e renderizar somente se true ou false.
 
 ```html
 <mgt-person person-query="john doe">
@@ -122,23 +132,39 @@ Haverá casos em que o objeto de contexto de dados contém loop e você precisar
 </template>
 ```
 
-## <a name="templatecontext"></a>TemplateContext
+## <a name="template-context"></a>Contexto de modelo
 
-Cada componente no Microsoft Graph Toolkit define a `templateContext` Propriedade, que você pode usar para passar dados adicionais para qualquer modelo no componente. 
+Em cenários em que você precisa converter dados em suas associações, vincular a eventos ou apenas usar dados externos em associações de modelos, os modelos dão suporte à associação a contexto de dados externos. Você pode adicionar contexto de modelo adicional de duas maneiras:
 
-```ts
-document.querySelector('mgt-agenda').templateContext = {
+1. Diretamente no componente.
 
-  someObject: {},
-  formatDate: (date: Date) => { /* format date and return */ },
-  someEventHandler: (e) => { /* handleEvent */  }
+    Cada componente define a `templateContext` propriedade, que você pode usar para passar dados adicionais para qualquer modelo no componente. 
 
-}
-```
+    ```ts
+    document.querySelector('mgt-agenda').templateContext = {
 
-Agora, as propriedades `templateContext` no objeto estarão disponíveis para serem usadas nas expressões de associação no modelo.
+      someObject: {},
+      formatDate: (date: Date) => { /* format date and return */ },
+      someEventHandler: (e) => { /* handleEvent */  }
 
-Isso pode ser útil em muitos cenários, como converter dados em suas associações ou vincular a eventos. 
+    }
+    ```
+
+    Agora, as propriedades no `templateContext` objeto estarão disponíveis para serem usadas nas expressões de associação no modelo.
+
+2. Globalmente para todos os componentes.
+
+    A `TemplateHelper` classe expõe o `globalContext` objeto para adicionar dados ou funções que devem estar disponíveis globalmente para todos os componentes.
+
+    ```ts
+    import { TemplateHelper } from '@microsoft/mgt';
+
+    TemplateHelper.globalContext.someObject = {};
+    TemplateHelper.globalContext.formatDate = (date: Date) => { /* format date and return */ };
+    TemplateHelper.globalContext.someEventHandler = (e) => { /* handleEvent */  }
+    ```
+
+
 
 ### <a name="converters"></a>Conversores
 
@@ -179,7 +205,7 @@ O `data-props` atributo permite adicionar um ouvinte de eventos ou definir um va
 
 Os dados-props aceitam uma cadeia de caracteres delimitada por vírgulas para cada propriedade ou manipulador de eventos que você queira definir. 
 
-Para adicionar um manipulador de eventos, Prefixe o nome do evento `@`com. O manipulador de eventos deverá estar disponível no `templateContext` do elemento.
+Para adicionar um manipulador de eventos, Prefixe o nome do evento com `@` . O manipulador de eventos deverá estar disponível no `templateContext` do elemento.
 
 ```ts
 document.querySelector('mgt-agenda').templateContext = {

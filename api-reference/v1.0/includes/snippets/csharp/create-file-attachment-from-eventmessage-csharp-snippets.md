@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 4f03e93560376546ec9e871dd4ffcf768509b468
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 7eb09350f6559355c9fd66370b53b8a278042f33
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37544143"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684930"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var attachment = new FileAttachment
     ContentType = "contentType-value",
     IsInline = false,
     ContentLocation = "contentLocation-value",
-    ContentBytes = "base64-contentBytes-value"
+    ContentBytes = Encoding.ASCII.GetBytes("base64-contentBytes-value")
 };
 
 await graphClient.Me.Messages["{id}"].Attachments

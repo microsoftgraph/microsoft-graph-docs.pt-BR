@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 506cdbfa939c80d0dca83fd5a564af7b2965894c
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 57233e499bc8b6a56965d47d09e605302088df49
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44215833"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683846"
 ---
 ```java
 
@@ -24,6 +24,6 @@ schedulingGroup.userIds = userIdsList;
 
 graphClient.teams("{teamId}").schedule().schedulingGroups("{schedulingGroupId}")
     .buildRequest( requestOptions )
-    .put(schedulingGroup);
+    .patch(schedulingGroup);
 
 ```

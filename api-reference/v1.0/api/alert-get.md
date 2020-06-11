@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 1232e998fd4d62a6ab3ca559bf90eb0c8b7df406
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fe9a0a6c8f4ad3549e51b3a8d534014d4f9d0c69
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518963"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44680574"
 ---
 # <a name="get-alert"></a>Obter alerta
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **Alert** no corpo da resposta. Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um código de status `206 Partial Content` com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **Alert** no corpo da resposta. Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um código de status `206 Partial Content` com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Exemplo
 
@@ -143,6 +143,7 @@ Content-type: application/json
     }
   ],
   "id": "String (identifier)",
+  "incidentIds": ["String"],
   "lastModifiedDateTime": "String (timestamp)",
   "malwareStates": [
     {
@@ -158,6 +159,7 @@ Content-type: application/json
       "applicationName": "String",
       "destinationAddress": "String",
       "destinationDomain": "String",
+      "destinationLocation": "String",
       "destinationPort": "String",
       "destinationUrl": "String",
       "direction": "@odata.type: microsoft.graph.connectionDirection",
@@ -170,6 +172,7 @@ Content-type: application/json
       "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
       "riskScore": "String",
       "sourceAddress": "String",
+      "sourceLocation": "String",
       "sourcePort": "String",
       "status": "@odata.type: microsoft.graph.connectionStatus",
       "urlParameters": "String"
@@ -209,6 +212,12 @@ Content-type: application/json
       "valueType": "@odata.type: microsoft.graph.registryValueType"
     }
   ],
+   "securityResources": [
+    {
+      "resource": "String",
+      "resourceType": "@odata.type: microsoft.graph.securityResourceType"
+    }
+   ],
   "severity": "@odata.type: microsoft.graph.alertSeverity",
   "sourceMaterials": ["String"],
   "status": "@odata.type: microsoft.graph.alertStatus",
