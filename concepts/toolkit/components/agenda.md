@@ -3,12 +3,12 @@ title: Componente de agenda no kit de ferramentas do Microsoft Graph
 description: O componente de gerenciamento de agenda da Web é usado para representar eventos em um calendário de usuário ou grupo.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: d8112a876c148ef9463f57d87a3a899194d3491a
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 89c2d1c53393d1488a15682329f4754211f12b0e
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144321"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681890"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Componente de agenda no kit de ferramentas do Microsoft Graph
 
@@ -24,16 +24,16 @@ O exemplo a seguir mostra os eventos de calendário do usuário conectado exibid
 
 ## <a name="properties"></a>Propriedades
 
-Por padrão, o `mgt-agenda` componente busca eventos do `/me/calendarview` ponto de extremidade e exibe eventos para o dia atual. Há várias propriedades que você pode usar para alterar esse comportamento.
+Por padrão, o `mgt-agenda` componente busca eventos do ponto de `/me/calendarview` extremidade e exibe eventos para o dia atual. Há várias propriedades que você pode usar para alterar esse comportamento.
 
 | Atributo | Propriedade | Descrição |
 | --- | --- | --- |
-| data | data | Uma cadeia de caracteres que representa a data de início dos eventos a serem buscados do Microsoft Graph. O valor deve estar em um formato que pode ser analisado pelo [Construtor de data](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) -o valor não tem `event-query` efeito se o atributo for definido. |
-| durante | durante | Um número de dias para buscar do Microsoft Graph-padrão é de 3 valores não tem efeito se `event-query` o atributo for definido. |
+| data | data | Uma cadeia de caracteres que representa a data de início dos eventos a serem buscados do Microsoft Graph. O valor deve estar em um formato que pode ser analisado pelo [Construtor de data](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) -o valor não tem efeito se o `event-query` atributo for definido. |
+| durante | durante | Um número de dias para buscar do Microsoft Graph-padrão é de 3 valores não tem efeito se o `event-query` atributo for definido. |
 | show-Max | showMax | Um número para indicar o número máximo de eventos a serem exibidos. O valor padrão não é definido (sem máximo). |
 | ID de grupo | groupId | Uma ID de cadeia de caracteres para um calendário de grupo a ser usado em vez do calendário do usuário conectado no momento. |
-| evento-consulta | eventQuery | Uma cadeia de caracteres que representa uma consulta alternativa a ser usada ao buscar eventos do Microsoft Graph. Opcionalmente, adicione o escopo delegado no final da cadeia de caracteres, delimitadondo-o com `|` (`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`). |
-| eventos | eventos | Uma matriz de eventos para obter ou definir a lista de eventos renderizados pelo componente-Use essa propriedade para acessar os eventos carregados pelo componente. Defina esse valor para carregar seus próprios eventos, se o valor for definido por desenvolvedor, `date`os `days`atributos, `event-query` ou não terão efeito. |
+| evento-consulta | eventQuery | Uma cadeia de caracteres que representa uma consulta alternativa a ser usada ao buscar eventos do Microsoft Graph. Opcionalmente, adicione o escopo delegado no final da cadeia de caracteres, delimitadondo-o com `|` ( `/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all` ). |
+| eventos | eventos | Uma matriz de eventos para obter ou definir a lista de eventos renderizados pelo componente-Use essa propriedade para acessar os eventos carregados pelo componente. Defina esse valor para carregar seus próprios eventos, se o valor for definido por desenvolvedor, `date` os `days` atributos, ou `event-query` não terão efeito. |
 | grupo por dia | groupByDay | Um valor Boolean para agrupar eventos por dia-por eventos padrão não são agrupados. |
 
 O exemplo a seguir altera o comportamento do componente para buscar dados de uma data específica e até três dias.
@@ -91,12 +91,12 @@ O `mgt-agenda` componente oferece suporte a vários [modelos](../templates.md) q
 | --- | --- | --- |
 | `default` | `events`: lista de objetos Event | O modelo padrão substitui todo o componente pelo seu. |
 | `event` | `event`: objeto Event | O modelo usado para renderizar cada evento. |
+| `event-other` | `event`: objeto Event | O modelo usado para renderizar o conteúdo adicional de cada evento. |
 | `header` | `header`: String | O modelo usado para renderizar o cabeçalho de cada dia. |
-| `other` | `event`: objeto Event | O modelo usado para renderizar o conteúdo adicional de cada evento. |
-| `no-data` | Nenhum contexto de dados é passado | O modelo usado quando não há eventos disponíveis. |
 | `loading` | Nenhum contexto de dados é passado | O modelo usado quando os dados estão sendo carregados. |
+| `no-data` | Nenhum contexto de dados é passado | O modelo usado quando não há eventos disponíveis. |
 
-Os exemplos a seguir ilustram como usar `event` o modelo:
+Os exemplos a seguir ilustram como usar o `event` modelo:
 
 ```html
 <mgt-agenda>
@@ -133,11 +133,11 @@ Os eventos a seguir são acionados do controle.
 
 Este componente usa as seguintes APIs e permissões do Microsoft Graph:
 
-| Resource | Permissão |
+| Resource | Permission |
 | - | - |
 | [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | Calendars.Read |
 
-O componente permite que você especifique uma consulta diferente do Microsoft Graph para chamar (como `/groups/{id}/calendar/calendarView`). Nesse caso, acrescente a permissão ao final da cadeia de caracteres, delimitado por `|`.
+O componente permite que você especifique uma consulta diferente do Microsoft Graph para chamar (como `/groups/{id}/calendar/calendarView` ). Nesse caso, acrescente a permissão ao final da cadeia de caracteres, delimitado por `|` .
 
 ## <a name="authentication"></a>Autenticação
 

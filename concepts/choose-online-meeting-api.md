@@ -3,12 +3,12 @@ title: Escolher uma API no Microsoft Graph para criar e ingressar em reuniões o
 description: Você terá a flexibilidade de criar uma reunião que ocorra no futuro ou instantaneamente
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 77749b7478df669c573c1d4b3a06ec1a6f1e3d42
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 4d446340ff1316bdb8b760920742bc3997c6d64a
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353137"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681918"
 ---
 # <a name="choose-an-api-in-microsoft-graph-to-create-and-join-online-meetings"></a>Escolher uma API no Microsoft Graph para criar e ingressar em reuniões online
 
@@ -37,7 +37,7 @@ Escolha a API de calendário para uma integração integrada e simplificada com 
 Escolha a API de comunicações em nuvem para flexibilidade e suporte programático mais amplo:
 - Os aplicativos têm mais flexibilidade para integrar mais os resultados da API com linha de negócios e outros aplicativos. A API é desassociada a qualquer calendário específico e não cria um evento em nenhum calendário.
 - Os aplicativos podem fornecer os seguintes recursos para os participantes:
-  - Informações de ingresso baseado na localidade (versão prévia).
+  - Informações de junção baseadas em localidade.
   - Ingresso na reunião pela Internet ou discagem.
   - Vídeo de conferência.
   - Recursos de segurança adicionais, como sala de reunião e automatização de admissão de participantes (visualização).
@@ -51,9 +51,9 @@ A tabela a seguir detalha as diferenças no nível da API.
 | Recurso de reunião online | API de calendário (recurso de evento) | API de comunicação em nuvem (recurso onlineMeeting)             |
 |:-----------------------|:------------------------------|:-------------------------------------------------------------|
 | Membros da API principal | recurso de [evento](/graph/api/resources/event) : <br>- Propriedade **isOnlineMeeting** <br>- Propriedade **onlineMeeting** do tipo [onlineMeetingInfo](/graph/api/resources/onlinemeetinginfo) <br>- Propriedade **onlineMeetingProvider** <br> recurso de [calendário](/graph/api/resources/calendar) : <br>- Propriedade **allowedOnlineMeetingProviders** <br>- Propriedade **defaultOnlineMeetingProvider** <br> | recurso [onlineMeeting](/graph/api/resources/onlinemeeting) <br> recurso [audioConferencing](/graph/api/resources/audioconferencing)
-| Integração com um item de calendário | <br>- [Criar](/graph/api/user-post-events) ou [Atualizar](/graph/api/event-update) a API de **eventos** define automaticamente o [evento](/graph/api/resources/event) de calendário do Outlook resultante como uma reunião online.<br>– Use as propriedades **isOnlineMeeting**, **onlineMeeting**e **onlineMeetingProvider** do **evento**de calendário do Outlook retornado.  | - [Criar](/graph/api/application-post-onlinemeetings) API retorna um recurso [onlineMeeting](/graph/api/resources/onlinemeeting) que é independente de um determinado tipo de calendário. <br>-Não cria ou atualiza qualquer evento do Outlook. <br>– Integre as informações de recurso **onlineMeeting** retornadas em uma experiência de aplicativo apropriada para seu cenário. <br>– Disponível em visualização: [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-beta) uma reunião online e usar a propriedade **externalId** retornada para simplificar a incorporação da reunião resultante em um calendário de terceiros. |
+| Integração com um item de calendário | <br>- [Criar](/graph/api/user-post-events) ou [Atualizar](/graph/api/event-update) a API de **eventos** define automaticamente o [evento](/graph/api/resources/event) de calendário do Outlook resultante como uma reunião online.<br>– Use as propriedades **isOnlineMeeting**, **onlineMeeting**e **onlineMeetingProvider** do **evento**de calendário do Outlook retornado.  | - [Criar](/graph/api/application-post-onlinemeetings) API retorna um recurso [onlineMeeting](/graph/api/resources/onlinemeeting) que é independente de um determinado tipo de calendário. <br>-Não cria ou atualiza qualquer evento do Outlook. <br>– Integre as informações de recurso **onlineMeeting** retornadas em uma experiência de aplicativo apropriada para seu cenário. <br>– Use [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-beta) para retornar uma reunião online que tenha um valor **externalId** especificado ou crie um se nenhum já existir, para simplificar a incorporação da reunião resultante em um calendário de terceiros. |
 | Alterando para reunião offline | -Não quando você habilitar um **evento** para ingressar online, não será possível atualizá-lo para torná-lo uma reunião offline.<br>– Não é possível alterar a propriedade **onlineMeetingProvider** , nem definir **isOnlineMeeting** para `false` desabilitar a reunião online. | Não depois de criar um recurso do **onlineMeeting** , você só pode excluí-lo, mas não pode alterá-lo para uma reunião offline. |
-| Informações de junção baseadas em localidade | Nenhuma integração direta da API. | – Use o `Accept-Language` cabeçalho http (visualização) ao criar uma reunião online. <br>– Confira o [exemplo](/graph/api/application-post-onlinemeetings?view=graph-rest-beta#example-2-create-an-online-meeting-with-user-token). |
+| Informações de junção baseadas em localidade | Nenhuma integração direta da API. | – Use o `Accept-Language` cabeçalho HTTP ao criar uma reunião online. <br>– Confira o [exemplo](/graph/api/application-post-onlinemeetings?view=graph-rest-beta#example-2-create-an-online-meeting-with-user-token). |
 | Ingressar na Internet (VoIP) | Por meio da propriedade **onlineMeeting** , acesse **joinUrl**.  | Use a propriedade **joinWebUrl** . |
 | Ingressando por discagem | Por meio da propriedade **onlineMeeting** , acesse: <br>- **conferenceid**, **quickDial**, **telefones**, **tollFreeNumbers**, **tollNumber**. |Por meio da propriedade **audioConferencing** , acesse: <br> - **conferenceid**, **tollFreeNumber**, **tollNumber**.<br> - Propriedade **dialinUrl** para uma página da Web acessível externamente que contém informações de discagem para facilitar a integração com aplicativos de terceiros. |
 | Ingressar por vídeo audioconferência (áudio e vídeo) | Nenhuma integração direta da API. | Use a propriedade **videoTeleconferenceId** . |

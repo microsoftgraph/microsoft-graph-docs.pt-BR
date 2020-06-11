@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 562eaccdd776ed22a4e171f6c0107f83be6acaab
-ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
+ms.openlocfilehash: d3a2e12a37035f6b89499e73615441dc1514c139
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44524250"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682093"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -190,15 +190,16 @@ Se tiver êxito, o Microsoft Graph retornará um código `204 No Content`.
 
 ## <a name="change-notifications"></a>Notificações de alteração
 
-O cliente começa a receber notificações de alteração após a criação da assinatura. O Microsoft Graph envia uma solicitação POST à URL de notificação quando o recurso é alterado. As notificações de alteração são enviadas somente para as alterações do tipo especificado na assinatura, por exemplo, `created` .
+Com uma assinatura de cliente para alterações em um recurso, o Microsoft Graph envia uma `POST` solicitação para a URL de notificação sempre que o recurso é alterado. Ele envia notificações somente para alterações do tipo especificado na assinatura, por exemplo, `created` .
 
-> **Observação:** Ao usar várias assinaturas que monitoram o mesmo tipo de recurso e usam a mesma URL de notificação, é possível enviar uma POSTAgem que conterá várias notificações de alteração com IDs de assinatura diferentes. Não há garantia de que todas as notificações de alteração na POSTAgem pertençam a uma única assinatura.
+> **Observação:** Se um cliente tiver várias assinaturas que monitoram o mesmo recurso e usarem a mesma URL de notificação, o Microsoft Graph poderá enviar várias notificações de alteração que correspondam a diferentes assinaturas, cada uma mostrando a ID de assinatura correspondente. Não há garantia de que todas as notificações de alteração na `POST` solicitação pertencem a uma única assinatura.
 
 ### <a name="change-notification-example"></a>Exemplo de notificação de alteração
 
-> **Observação:** para obter uma descrição completa dos dados enviados quando as notificações de alteração são entregues, consulte [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
+Esta seção mostra um exemplo de uma notificação para a criação de mensagens. Quando o usuário recebe um email, o Microsoft Graph envia uma notificação de alteração, conforme mostrado no exemplo a seguir.
+Observe que a notificação está em uma coleção representada no `value` campo. Consulte [changeNotificationCollection](/graph/api/resources/changenotificationcollection) para obter detalhes da carga de notificação. 
 
-Quando o usuário recebe um email, o Microsoft Graph envia uma notificação de alteração como a seguinte:
+Quando muitas alterações ocorrem, o Microsoft Graph pode enviar várias notificações que correspondem a diferentes assinaturas na mesma `POST` solicitação.
 
 ```json
 {
@@ -206,29 +207,27 @@ Quando o usuário recebe um email, o Microsoft Graph envia uma notificação de 
     {
       "id": "lsgTZMr9KwAAA",
       "sequenceNumber": 10,
-      "subscriptionId":"<subscription_guid>",
+      "subscriptionId":"{subscription_guid}",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
       "clientState":"secretClientValue",
       "changeType":"created",
-      "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
+      "resource":"users/{user_guid}@{tenant_guid}/messages/{long_id_string}",
       "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
       "resourceData":
       {
         "@odata.type":"#Microsoft.Graph.Message",
-        "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
+        "@odata.id":"Users/{user_guid}@{tenant_guid}/Messages/{long_id_string}",
         "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
-        "id":"<long_id_string>"
+        "id":"{long_id_string}"
       }
     }
   ]
 }
 ```
 
-> **Observação:** o `value` campo é uma matriz de objetos. Quando muitas notificações de alteração são enfileiradas, o Microsoft Graph pode enviar vários itens em uma única solicitação. As notificações de alteração de assinaturas diferentes podem ser incluídas na mesma solicitação.
-
 ### <a name="processing-the-change-notification"></a>Processando a notificação de alteração
 
-Cada notificação de alteração recebida pelo aplicativo deve ser processada. Veja a seguir as tarefas mínimas que seu aplicativo deve executar para processar uma notificação de alteração:
+Seu processo deve processar todas as notificações de alteração recebidas. Veja a seguir as tarefas mínimas que seu aplicativo deve executar para processar uma notificação de alteração:
 
 1. Envie um código de status `202 - Accepted` na sua resposta para o Microsoft Graph. Se o Microsoft Graph não receber um código de classe 2xx, ele tentará publicar a notificação de alteração diversas vezes, por um período de cerca de 4 horas; Após isso, a notificação de alteração será cancelada e não será entregue.
 
@@ -262,6 +261,8 @@ Opcionalmente, você pode configurar o firewall que protege a URL de notificaç�
 - [Tipo de recurso de assinatura](/graph/api/resources/subscription?view=graph-rest-1.0)
 - [Obter assinatura](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Criar assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- tipo de recurso [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta)
+- tipo de recurso [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta)
 - [Alterar tutorial de notificações](/graph/tutorials/change-notifications)
 - [Notificações do ciclo de vida (visualização)](/graph/concepts/webhooks-outlook-authz.md)
 

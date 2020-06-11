@@ -3,22 +3,20 @@ title: Componente de seletor de pessoas
 description: Você pode usar o componente Web de gerenciamento de pessoas-seletor para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: bdfb4951151876d79dede974654747d25a54c833
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: e3e656c6aef0ab2af9878fb3e4738ade912c4685
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510879"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681883"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Componente de seletor de pessoas no Microsoft Graph Toolkit
 
-Você pode usar a `mgt-people-picker` pesquisa de componente da Web para um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph. Por padrão, o componente pesquisará todas as pessoas; Você também pode definir uma propriedade de grupo para filtrar os resultados.
-
-Se o número de pessoas a serem exibidas exceder o `show-max` valor, nem todas as pessoas retornadas serão exibidas na lista de pesquisa.
+Você pode usar o `mgt-people-picker` componente da Web para procurar pessoas e/ou grupos. Por padrão, o componente pesquisará todas as pessoas e usuários da organização, mas você pode alterar o comportamento para também pesquisar grupos ou apenas grupos. Você também pode filtrar a pesquisa para um grupo específico.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra `mgt-people-picker` o componente. Comece a pesquisar um nome para ver os resultados renderizar e usar o editor de código para ver como [as propriedades](#properties) alteram o comportamento do componente.
+O exemplo a seguir mostra o `mgt-people-picker` componente. Comece a pesquisar um nome para ver os resultados renderizar e usar o editor de código para ver como [as propriedades](#properties) alteram o comportamento do componente.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker--people-picker&source=docs" height="450"></iframe>
 
@@ -26,14 +24,16 @@ O exemplo a seguir mostra `mgt-people-picker` o componente. Comece a pesquisar u
 
 ## <a name="properties"></a>Propriedades
 
-Por padrão, o `mgt-people-picker` componente busca pessoas do `/me/people` ponto de extremidade. Use os atributos a seguir para alterar esse comportamento.
+Por padrão, o `mgt-people-picker` componente busca pessoas dos pontos de `/me/people` `/users` extremidade e. Use os atributos a seguir para alterar esse comportamento.
 
 | Atributo | Propriedade | Descrição                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | show-Max | showMax   | Um valor numérico para indicar o número máximo de pessoas a serem mostradas. o valor padrão é 6.                                                                                             |
-| people   | people    | Uma matriz de pessoas para obter ou definir a lista de pessoas renderizadas pelo componente. Use essa propriedade para acessar as pessoas carregadas pelo componente. Defina esse valor para carregar suas próprias pessoas. |
-| group    | group     | Um valor String que pertence a um grupo definido pelo Microsoft Graph para mais filtragem dos resultados da pesquisa.                                                                            |
-|  selecionado-pessoas  | selectedPeople     | Uma matriz do tipo `person`, representando pessoas selecionadas no componente. Defina esse valor para escolher as pessoas selecionadas por padrão.|
+| ID de grupo    | groupId     | Um valor String que pertence a um grupo definido pelo Microsoft Graph para mais filtragem dos resultados da pesquisa.                                                                            |
+| tipo     | tipo      | O tipo de entidades a serem pesquisadas. As opções disponíveis são: `person` , `group` , `any` . O valor padrão é `person`. Este atributo não terá efeito se a `group-id` propriedade for definida.                                                                            |
+| tipo de grupo     | groupType      | O tipo de grupo a ser pesquisado. As opções disponíveis são: `unified` , `security` , `mailenabledsecurity` , `distribution` , `any` . O valor padrão é `any`. Este atributo não terá efeito se a `type` propriedade for definida como `person` .                                                                           |
+|  selecionado-pessoas  | selectedPeople     | Uma matriz de pessoas selecionadas. Defina esse valor para selecionar pessoas de forma programática.|
+| people   | people    | Uma matriz de pessoas encontrada e renderizada no resultado da pesquisa |
 
 Este é um `show-max` exemplo.
 
@@ -58,7 +58,7 @@ Você pode preencher dados de pessoas selecionados executando um dos seguintes p
 
 - Usando o `selectUsersById()` método, que aceita uma matriz de IDs de [usuário](https://docs.microsoft.com/graph/api/resources/users?view=graph-rest-1.0) do Microsoft Graph para localizar os detalhes do usuário associado para seleção.
 
-     >**Observação:** Se nenhum usuário for localizado para um `id`, nenhum dado será renderizado para isso `id`.
+     >**Observação:** Se nenhum usuário for localizado para um `id` , nenhum dado será renderizado para isso `id` .
 
     ```javascript
     // id = Mirosoft graph User "id"
@@ -79,14 +79,30 @@ O `mgt-people-picker` componente define as seguintes propriedades personalizadas
 
 ```css
 mgt-people-picker {
-  --people-list-background-color: blue; /* Background-color for people under search */
-  --accent-color: green; /* Color for separator of search input box and people */
+    --input-border: 2px rgba(255, 255, 255, 0.5) solid; /* sets all input area border */
+
+      /* OR individual input border sides */
+    --input-border-bottom: 2px rgba(255, 255, 255, 0.5) solid;
+    --input-border-right: 2px rgba(255, 255, 255, 0.5) solid;
+    --input-border-left: 2px rgba(255, 255, 255, 0.5) solid;
+    --input-border-top: 2px rgba(255, 255, 255, 0.5) solid;
+
+    --input-background-color: #1f1f1f; /* input area background color */
+    --input-hover-color: #008394; /* input area border hover color */
+    --input-focus-color: #0f78d4; /* input area border focus color */
+
+    --dropdown-background-color: #1f1f1f; /* selection area background color */
+    --dropdown-item-hover-background: #333d47; /* person background color on hover */
+
+    --font-color: white; /* input area border focus color */
+    --placeholder-default-color: #f1f1f1; /* placeholder text color default*/
+    --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
 }
 ```
 
 ## <a name="templates"></a>Modelos
 
- `mgt-people-picker`o dá suporte a vários [modelos](../templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina `data-type` o valor como um dos seguintes.
+ `mgt-people-picker`o dá suporte a vários [modelos](../templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes.
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
@@ -111,11 +127,13 @@ Os exemplos a seguir mostram como usar o `error` modelo.
 
 Este componente usa as seguintes APIs e permissões do Microsoft Graph.
 
-| API                                                                                                              | Permissão  |
+| API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
-| [/groups/\${GroupId}/Members](/graph/api/group-list-members?view=graph-rest-1.0) | People.Read        |
-| [/Users/$ {userprincípioname}](/graph/api/user-list-people?view=graph-rest-1.0)  | User. Readbasic. All |
+| [/Users](/graph/api/user-list?view=graph-rest-1.0)  | User.ReadBasic.All |
+| [/groups](/group-list?view=graph-rest-beta)  | Group.Read.All |
+| [/groups/ \$ {GroupId}/Members](/graph/api/group-list-members?view=graph-rest-1.0) | User.ReadBasic.All        |
+| [/Users/$ {userprincípioname}](/graph/api/user-get?view=graph-rest-1.0)  | User.Read |
 
 ## <a name="authentication"></a>Autenticação
 

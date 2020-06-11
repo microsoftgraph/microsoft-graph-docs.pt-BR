@@ -4,12 +4,12 @@ description: Descreve as diferenças de propriedade entre os recursos de gráfic
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 401d6391f68a756d9d5ac7a2176b8ff9d5c7b7eb
-ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
+ms.openlocfilehash: f1a5410ae1b9ab742e2735ceaefe82b139c83df6
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "44593636"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681904"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
 
@@ -37,7 +37,7 @@ Como o usuário e o grupo são usados com frequência, estes recursos aparecem p
 | **lastDirSyncDateTime** | versão beta &nbsp; - &nbsp; **onPremisesLastSyncDateTime** <br> v 1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** | |
 | **processadores** | versão beta &nbsp; - &nbsp; **mobilePhone** <br> v 1.0 &nbsp; - &nbsp; **mobilePhone** | |
 | **provisioningErrors** | versão beta &nbsp; - &nbsp; _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_ | Essa propriedade e suas informações são preteridas.  No entanto, uma nova propriedade que descreve qualquer erro de provisionamento relacionado ao AD Connect pode ser encontrada no **onPremisesProvisioningErrors** |
-| **refreshTokensValidFromDateTime** | versão beta &nbsp; - &nbsp; **signinSessionsValidFromDateTime**<br>v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
+| **refreshTokensValidFromDateTime** | versão beta &nbsp; - &nbsp; **signinSessionsValidFromDateTime**<br>v 1.0 &nbsp; - &nbsp; **signinSessionsValidFromDateTime** | |
 | **signinNames** | &nbsp; - &nbsp; **identidades beta/signInType** <br> v 1.0 &nbsp; - &nbsp; **Identities/signInType** | Essa propriedade agora é parte do recurso [objectidentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0) .|
 | **telephoneNumber** | versão beta &nbsp; - &nbsp; **businessPhones** <br> v 1.0 &nbsp; - &nbsp; **businessPhones** | |
 | **thumbnailPhoto** | &nbsp; - &nbsp; **foto**beta, fotos <br> foto v 1.0 &nbsp; - &nbsp; **photo**, fotos | A foto de miniatura do Azure AD não está disponível por meio do Microsoft Graph.  Em vez disso, use a [API de foto](/graph/api/resources/profilephoto?view=graph-rest-1.0) . |
@@ -146,8 +146,8 @@ O recurso directoryObjectReference do Azure AD Graph foi renomeado para director
 
 |Azure AD Graph. <br>(v 1.6) Propriedade |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
-| **expiryTime** | versão beta &nbsp; - &nbsp; **expiryTime** <br> v 1.0 &nbsp; - &nbsp; _ &nbsp; ainda não &nbsp; está disponível_ | Essa propriedade não é usada e provavelmente será removida no Microsoft Graph. |
-| **startTime** | versão beta &nbsp; - &nbsp; **inicial** <br> v 1.0 &nbsp; - &nbsp; _ &nbsp; ainda não &nbsp; está disponível_  | Essa propriedade não é usada e provavelmente será removida no Microsoft Graph. |
+| **expiryTime** | versão beta &nbsp; - &nbsp; **expiryTime** <br> v 1.0 &nbsp; - &nbsp; _removido_ | Essa propriedade não é usada e foi removida no Microsoft Graph v 1.0. |
+| **startTime** | versão beta &nbsp; - &nbsp; **inicial** <br> v 1.0 &nbsp; - &nbsp; _removido_  | Essa propriedade não é usada e foi removida no Microsoft Graph v 1.0. |
 
 ## <a name="policy-property-differences"></a>Diferenças de propriedade de política
 

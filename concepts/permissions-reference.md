@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 49053ae4074fdeda266b54a5fb1330ec94491b5f
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: f2985bec835f5390ec74b8dc3e126a2447025310
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568758"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682009"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -455,14 +455,14 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_ChannelMember. Read. All_  |Leia os membros dos canais. |Leia os membros dos canais em nome do usuário conectado. |Sim | Não |
-|_ChannelMember. ReadWrite. All_ | Adicione e remova membros dos canais. | Adicione e remova membros dos canais em nome do usuário conectado. Também permite alterar a função de um membro. Por exemplo: de proprietário para não proprietário. | Sim | Não |
+|_ChannelMember. ReadWrite. All_ | Adicione e remova membros dos canais.| Adicione e remova membros dos canais em nome do usuário conectado. Também permite alterar a função de um membro. Por exemplo: de proprietário para não proprietário.| Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_ChannelMember. Read. All_ |Leia os membros dos canais. |Leia os membros dos canais sem um usuário conectado. |Sim | Não |
-|_ChannelMember. ReadWrite. All_ | Adicione e remova membros dos canais. |Adicione e remova membros dos canais sem um usuário conectado. Também permite alterar a função de um membro. Por exemplo: de proprietário para não proprietário. | Sim | Não |
+|_ChannelMember. ReadWrite. All_ |Adicione e remova membros dos canais.|Adicione e remova membros dos canais sem um usuário conectado. Também permite alterar a função de um membro. Por exemplo: de proprietário para não proprietário.| Sim | Não |
 
 ## <a name="chats-permissions"></a>Permissões de bate-papo
 
@@ -1634,7 +1634,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 ## <a name="teams-app-permissions-deprecated"></a>Permissões do aplicativo do Teams (preterido)
 
 >[!NOTE]
->Essas permissões são preteridas e não devem ser usadas.
+>Essas permissões são preteridas. Use o TeamsAppInstallation equivalente. \* . Em vez disso, todas as permissões.
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
@@ -1665,6 +1665,24 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamMember. Read. All_ | Leia os membros das equipes. | Leia os membros das equipes sem um usuário conectado. | Sim | Não |
 | _TeamMember. ReadWrite. All_ | Adicione e remova membros das equipes. | Adicione e remova membros das equipes sem um usuário conectado. Também permite alterar a função de um membro da equipe. Por exemplo: de proprietário para não proprietário. | Sim | Não |
+
+## <a name="teams-settings-permissions"></a>Permissões de configurações do Microsoft Teams
+
+### <a name="delegated-permissions"></a>Permissões delegadas
+
+| Permissão | Exibir Cadeia de Caracteres | Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| Team. ReadBasic. All | Ler os nomes e as descrições do teams| Leia os nomes e as descrições de Teams em nome do usuário conectado.|Sim| Não |
+| TeamSettings. Read. All | Ler as configurações do teams| Leia as configurações de todas as equipes em nome do usuário conectado.|Sim| Não |
+| TeamSettings. ReadWrite. All | Ler e alterar as configurações da equipe.| Ler e alterar as configurações de todas as equipes, em nome do usuário conectado.|Sim| Não |
+
+### <a name="application-permissions"></a>Permissões de aplicativos
+
+| Permissão | Exibir Cadeia de Caracteres | Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| Team. ReadBasic. All | Obtenha uma lista de todas as equipes.| Obtenha uma lista de todas as equipes, sem um usuário conectado.|Sim| Não |
+| TeamSettings. Read. All | Ler as configurações de todas as equipes| Leia as configurações desta equipe, sem um usuário conectado.|Sim| Não |
+| TeamSettings. ReadWrite. All | Ler e alterar as configurações de todas as equipes| Ler e alterar as configurações de todas as equipes, sem um usuário conectado.|Não | Não |
 
 ## <a name="teams-resource-specific-consent-permissions"></a>Permissões de consentimento específicas do recurso do teams
 
@@ -1721,7 +1739,7 @@ Para que um aplicativo leia ou grave todos os acordos ou aceitações de acordos
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 Os seguintes usos são válidos para permissões delegadas:
 
 * _Agreement.Read.All_: ler todos os acordos de termos de uso (`GET /beta/agreements`)
@@ -1732,6 +1750,27 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
+## <a name="teams-app-installation-permissions-private-preview"></a>Permissões de instalação de aplicativos do Teams ([Visualização privada](#permissions-availability-status))
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsAppInstallation. ReadForUser_ (visualização privada) | Ler aplicativos do Microsoft Teams instalados| Permite que o aplicativo Leia os aplicativos do teams instalados para o usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
+| _TeamsAppInstallation. ReadWriteForUser_ (visualização privada) | Gerenciar aplicativos de equipes instalados do usuário| Permite que o aplicativo Leia, instale, atualize e desinstale aplicativos do teams instalados para o usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Não | Não |
+| _TeamsAppInstallation. ReadWriteSelfForUser_ (visualização privada) | Permitir que o aplicativo se gerencie no Teams| Permite que o aplicativo de equipes Leia, instale, atualize e desinstale o próprio para o Microsoft Teams que o usuário conectado pode acessar.| Sim | Não |
+| _TeamsAppInstallation. ReadForTeam_ (visualização privada) | Ler aplicativos do teams instalados no Teams| Permite que o aplicativo Leia os aplicativos do teams instalados no Teams que o usuário conectado pode acessar. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
+| _TeamsAppInstallation. ReadWriteForTeam_ (visualização privada) | Gerenciar aplicativos instalados do teams no Teams| Permite que o aplicativo Leia, instale, atualize e desinstale aplicativos do teams no Teams que o usuário conectado pode acessar. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
+| _TeamsAppInstallation. ReadWriteSelfForTeam_ (visualização privada) | Permitir que o aplicativo se gerencie no Teams| Permite que o aplicativo de equipes Leia, instale, atualize e desinstale o próprio para o Microsoft Teams que o usuário conectado pode acessar.| Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | 
+|:----------------|:------------------|:-------------|:-----------------------|
+| _TeamsAppInstallation. ReadForUser. All_ (visualização privada) | Ler aplicativos do teams instalados para todos os usuários| Permite que o aplicativo leia os aplicativos do Teams que estão instalados para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | 
+| _TeamsAppInstallation. ReadWriteForUser. All_ (visualização privada) | Gerenciar aplicativos do teams para todos os usuários| Permite que o aplicativo leia, instale, atualize e desinstale  os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation. ReadWriteSelfForUser. All_ (visualização privada) | Permitir que o aplicativo se gerencie para todos os usuários| Permite que um aplicativo do teams Leia, instale, atualize e desinstale em qualquer usuário, sem um usuário conectado.| Sim | 
+| _TeamsAppInstallation. ReadForTeam. All_ (visualização privada) | Ler aplicativos do teams instalados para todas as equipes| Permite que o aplicativo Leia os aplicativos do teams instalados em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | 
+| _TeamsAppInstallation. ReadWriteForTeam. All_ (visualização privada) | Gerenciar aplicativos do teams para todas as equipes| Permite que o aplicativo Leia, instale, atualize e desinstale aplicativos do teams em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation. ReadWriteSelfForTeam. All_ (visualização privada) | Permitir que o aplicativo Teams se gerencie para todas as equipes| Permite que um aplicativo do teams Leia, instale, atualize e desinstale em qualquer equipe, sem um usuário conectado.| Sim | 
 ## <a name="threat-assessment-permissions"></a>Permissões de avaliação de ameaças
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -1840,7 +1879,7 @@ Com o _User.ManageIdentities.All_ delegado ou as permissões de aplicativo, é p
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _User.Read_: Ler o perfil completo para o usuário conectado (`GET /me`).
 * _User.ReadWrite_: Atualizar a foto do usuário conectado (`PUT /me/photo/$value`).

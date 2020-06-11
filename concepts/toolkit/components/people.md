@@ -3,12 +3,12 @@ title: Componente pessoas no Microsoft Graph Toolkit
 description: Você pode usar o `mgt-people` componente da Web para exibir um grupo de pessoas ou contatos usando suas fotos ou iniciais.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 34b7877b16d7f97d201e7bd96e1378c1e542bbcf
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: aa51f6d0c459425cdb9a01dbd3a61f5613e58678
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144293"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682023"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Componente pessoas no Microsoft Graph Toolkit
 
@@ -18,7 +18,7 @@ Este componente usa vários controles de [pessoal de gerenciamento](./person.md)
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um grupo de pessoas exibidas usando `mgt-people` o componente. Você pode usar o editor de código para ver como [as propriedades](#properties) alteram o comportamento do componente.
+O exemplo a seguir mostra um grupo de pessoas exibidas usando o `mgt-people` componente. Você pode usar o editor de código para ver como [as propriedades](#properties) alteram o comportamento do componente.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-people--people&source=docs" height="350"></iframe>
 
@@ -26,15 +26,17 @@ O exemplo a seguir mostra um grupo de pessoas exibidas usando `mgt-people` o com
 
 ## <a name="properties"></a>Propriedades
 
-Por padrão, o `mgt-people` componente busca eventos do `/me/people` ponto de extremidade com o `personType/class eq 'Person'` filtro para exibir os usuários contatados com frequência. Você pode usar várias propriedades para alterar esse comportamento.
+Por padrão, o `mgt-people` componente busca eventos do ponto de `/me/people` extremidade com o `personType/class eq 'Person'` filtro para exibir os usuários contatados com frequência. Você pode usar várias propriedades para alterar esse comportamento.
 
 | Atributo | Propriedade | Descrição |
 | --- | --- | --- |
 | show-Max | showMax | Indica o número máximo de pessoas a serem mostradas. O valor padrão é 3. |
 | people | people | Uma matriz de pessoas para obter ou definir a lista de pessoas renderizadas pelo componente. Use essa propriedade para acessar as pessoas carregadas pelo componente. Defina esse valor para carregar suas próprias pessoas. |
 | ID de grupo | groupId | Recupera pessoas de um Microsoft Graph específico da respectiva ID. |
-| User-IDs | userIds | Dada uma matriz de usuário `ids`do Microsoft Graph, o componente renderizará esses usuários.  |
-| cartão de pessoa | personCard | Uma enumeração para determinar a ação do usuário necessária para ativar o `hover` painel `click`ou o menu suspenso. O valor padrão é `none`. |
+| User-IDs | userIds | Dada uma matriz de usuário do Microsoft Graph `ids` , o componente renderizará esses usuários.  |
+| pessoas – consultas | peopleQueries | Dada uma matriz de consultas de pessoa (nomes, UPNs, emails), o componente renderiza esses usuários. |
+| cartão de pessoa | personCard | Uma enumeração para determinar a ação do usuário necessária para ativar o painel ou o menu suspenso `hover` `click` . O valor padrão é `none`. |
+| show-Presence | a presença | Um booliano para determinar se deve mostrar o crachá de presença de pessoa na imagem de pessoa. |
 
 
 O exemplo a seguir define o número máximo de pessoas a serem mostradas.
@@ -58,7 +60,7 @@ mgt-people {
 
 ## <a name="templates"></a>Modelos
 
-O `mgt-people` dá suporte a vários [modelos](../templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina `data-type` o valor como um dos seguintes.
+O `mgt-people` dá suporte a vários [modelos](../templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes.
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
@@ -87,7 +89,7 @@ Os exemplos a seguir mostram como usar o `person` modelo.
 
 Este componente usa as seguintes APIs e permissões do Microsoft Graph:
 
-| Resource | Permissão |
+| Resource | Permission |
 | - | - |
 | [/me/people](/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
 
