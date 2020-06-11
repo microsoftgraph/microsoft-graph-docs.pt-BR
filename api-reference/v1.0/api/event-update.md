@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 167984de2c5c9d9326da38a8c0d8b774d8b8cfe3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c6e3fb6d28ee5d1b1c0fbe0a76d00ad89982f6e1
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461581"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44680973"
 ---
 # <a name="update-event"></a>Atualizar evento
 
@@ -61,7 +61,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |attendees|[Attendee](../resources/attendee.md)|A coleção de participantes do evento.|
 |corpo|[ItemBody](../resources/itembody.md)|O corpo da mensagem associada ao evento.|
-|categories|String|As categorias associadas ao evento.|
+|categories|Coleção de cadeias de caracteres|As categorias associadas ao evento.|
 | end|DateTimeTimeZone|A data, a hora e o fuso horário em que o evento termina.|
 |importância|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
@@ -116,7 +116,8 @@ Content-length: 285
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
-  "isReminderOn": true
+  "isReminderOn": true,
+  "categories": ["Red category"]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
