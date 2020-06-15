@@ -11102,7 +11102,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -11341,9 +11341,10 @@ items:
                 href: api/chatmessage-list-chatmessagehostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: Catálogo de Aplicativos
-            href: resources/teamsapp.md
+          - name: Catálogo de aplicativos
             items:
+              - name: Aplicativo no catálogo
+                href: resources/teamsapp.md
               - name: Publicar aplicativos no catálogo
                 href: api/teamsapp-publish.md
               - name: Listar aplicativos no catálogo

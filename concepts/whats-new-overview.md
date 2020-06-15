@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 403466a154e279b9a41f0f513f80ff77db299884
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: c6c41527ea5b52e4d683cb2d14594c088f080142
+ms.sourcegitcommit: d6374f42bee4de11fd7a3d0d8c2a7f8c4e7739bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681617"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44710598"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -24,11 +24,23 @@ Confira os destaques das novidades do Microsoft Graph e como você pode [compart
 - Use o `Accept-Language` cabeçalho HTTP ao [criar uma reunião online](/graph/api/application-post-onlinemeetings?view=graph-rest-1.0) para fornecer informações de ingresso com base na localidade.
 - Use [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-1.0) para retornar uma reunião online que tenha um valor **externalId** especificado ou crie um se nenhum já existir, para simplificar a incorporação da reunião resultante em um calendário de terceiros.
 
+### <a name="security"></a>Segurança
+- Acompanhar o seguinte como propriedades de um [alerta](/graph/api/resources/alert?view=graph-rest-1.0):
+  - IDs de incidentes relacionados ao alerta.
+  - Identifique um [recurso](/graph/api/resources/securityResource?view=graph-rest-1.0#securityresourcetype-values) como atacado ou como um recurso relacionado no alerta.
+  - Especifique os locais de origem e de destino de uma [conexão de rede](/graph/api/resources/networkconnection?view=graph-rest-1.0) relacionada ao alerta.
+
+### <a name="teamwork"></a>Teamwork
+Use a permissão delegada [AppCatalog. Read. All](/graph/permissions-reference#appcatalog-resource-permissions) para listar [aplicativos](/graph/api/resources/teamsapp?view=graph-rest-1.0) do catálogo de aplicativos do Microsoft Teams.
+
 
 ## <a name="june-2020-new-in-preview-only"></a>Junho de 2020: novo na visualização apenas
 ### <a name="cloud-communications--presence"></a>Comunicações em nuvem | Presença
 [Obter o status de presença](/graph/api/presence-get?view=graph-rest-beta) de todos os usuários em uma organização ou de um usuário específico na organização.
 
+### <a name="identity-and-access"></a>Identidade e acesso
+- Os profissionais de ti podem usar os recursos de [conectores](/graph/api/resources/connector?view=graph-rest-beta) que são agentes leves para se conectarem ao [proxy de aplicativo do Azure ad](/azure/active-directory/manage-apps/what-is-application-proxy)e [publicar aplicativos Web no local externamente](/graph/api/resources/onpremisespublishing?view=graph-rest-beta), para que os usuários remotos de suas organizações possam acessar esses aplicativos de uma maneira segura.
+- Gerenciar uma [política de autenticação](/graph/api/resources/authenticationflowspolicy?view=graph-rest-beta) em nível de locatário para habilitar ou desabilitar [a inscrição de autoatendimento](/graph/api/resources/selfservicesignupauthenticationflowconfiguration?view=graph-rest-beta) de usuários externos.
 
 ## <a name="may-2020-new-and-generally-available"></a>Maio de 2020: novo e geralmente disponível
 
