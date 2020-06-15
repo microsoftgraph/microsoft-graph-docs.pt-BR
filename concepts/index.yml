@@ -11,12 +11,12 @@ metadata:
   ms.date: 02/28/2020
   featureFlags:
   - clicktale
-  ms.openlocfilehash: d0c510c9f3706f1db0539f53fc986f2054220d1c
-  ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+  ms.openlocfilehash: 6cd9301190dcea4e0cc774aefbe5d206a67015da
+  ms.sourcegitcommit: d6374f42bee4de11fd7a3d0d8c2a7f8c4e7739bc
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "43199722"
+  ms.lasthandoff: 06/12/2020
+  ms.locfileid: "44710649"
 highlightedContent:
   items:
   - title: Visão Geral do Microsoft Graph
@@ -25,7 +25,7 @@ highlightedContent:
   - title: Serviços e recursos
     itemType: concept
     url: /graph/overview-major-services
-  - title: Graph Explorer
+  - title: Explorador do Graph
     itemType: deploy
     url: https://developer.microsoft.com/graph/graph-explorer/
   - title: Novidades do Microsoft Graph
@@ -46,10 +46,10 @@ conceptualContent:
       text: Usuários que você pode alcançar
     - url: /graph/data-connect-overview
       itemType: concept
-      text: Conexão de dados do Microsoft Graph
+      text: Microsoft Graph Data Connect
     - url: https://developer.microsoft.com/graph/quick-start
       itemType: quickstart
-      text: QuickStarts
+      text: Guias de início rápido
     - url: /graph/tutorials
       itemType: tutorial
       text: Tutoriais
@@ -60,7 +60,7 @@ conceptualContent:
       text: Usuários
     - url: /graph/teams-concept-overview
       itemType: overview
-      text: Trabalho em equipe
+      text: Teamwork
     - url: /graph/onedrive-concept-overview
       itemType: overview
       text: Arquivos
@@ -89,7 +89,7 @@ conceptualContent:
       text: Usar os SDKs
     - url: /graph/toolkit/overview
       itemType: overview
-      text: Usar o kit de ferramentas (visualização)
+      text: Usar o kit de ferramentas
 additionalContent:
   sections:
   - title: Recursos
