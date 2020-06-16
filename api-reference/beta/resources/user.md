@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: c3b66a716e9795a58849b4ae352cb55f0f7141e0
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: ea7459b8eaa9d259d4c90754f2075f0da60efce9
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290079"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744051"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -18,9 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma conta de usuário do Azure AD. Herda de [directoryObject](directoryobject.md).
+Representa uma conta de usuário do Azure AD. Herda de [directoryObject](directoryobject.md). 
 
-Por motivos de desempenho, as operações [criar](../api/user-post-users.md), [obter](../api/user-get.md) e [listar](../api/user-list.md) retornam por padrão apenas um subconjunto das propriedades usadas com mais frequência. Essas propriedades padrão estão listadas na seção [Propriedades](#properties). Para obter as propriedades não retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData.
+O recurso **usuário** permite que os aplicativos especifiquem preferências de usuário para idiomas e formatos de data/hora para as caixas de correio principais do Exchange do usuário e para o perfil do Azure AD do usuário. Para obter mais detalhes, consulte [preferências do usuário para idiomas e formatos regionais](#user-preferences-for-languages-and-regional-formats).
+
+Por motivos de desempenho, as operações [create](../api/user-post-users.md), [get](../api/user-get.md) e [list](../api/user-list.md) retornam por padrão apenas um subconjunto das propriedades usadas com mais frequência. Essas propriedades padrão estão listadas na seção [Propriedades](#properties). Para obter as propriedades não retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData.
 
 Esse recurso permite:
 
@@ -34,14 +36,14 @@ Esse recurso permite:
 |:-------|:------------|:------------|
 | [Listar usuários](../api/user-list.md) | Coleção [user](user.md) | Recuperar uma lista de objetos user. |
 | [Criar usuário](../api/user-post-users.md) | [user](user.md) | Criar um novo objeto user. |
-| [Obter usuário](../api/user-get.md) | [Usuário](user.md) | Ler propriedades e relações do objeto user. |
-| [Atualizar usuário](../api/user-update.md) | [Usuário](user.md) | Atualizar o objeto user. |
+| [Obter usuário](../api/user-get.md) | [user](user.md) | Ler propriedades e relações do objeto user. |
+| [Atualizar usuário](../api/user-update.md) | [user](user.md) | Atualizar o objeto user. |
 | [Excluir usuário](../api/user-delete.md) | Nenhum | Excluir o objeto user. |
 | [Obter delta](../api/user-delta.md) | coleção de usuários | Obter as alterações incrementais para usuários. |
 | **Atribuições de função de aplicativo** | | |
 |[List appRoleAssignments](../api/user-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) collection| Obtenha os aplicativos e as funções de aplicativo que esse usuário foi atribuído.|
 |[Adicionar appRoleAssignment](../api/user-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Atribuir uma função de aplicativo a este usuário.|]
-|[Remover appRoleAssignment](../api/user-delete-approleassignments.md) | Nenhum | Remova uma atribuição de função de aplicativo deste usuário.|
+|[Remover appRoleAssignment](../api/user-delete-approleassignments.md) | Nenhuma | Remova uma atribuição de função de aplicativo deste usuário.|
 | **Calendário** ||| 
 | [Criar calendário](../api/user-post-calendars.md) | [Calendar](calendar.md) | Criar um novo Calendar postando na coleção calendars.|
 | [Criar calendarGroup](../api/user-post-calendargroups.md) | [CalendarGroup](calendargroup.md) | Criar um novo CalendarGroup postando na coleção calendarGroups. |
@@ -75,7 +77,7 @@ Esse recurso permite:
 | [Listar registeredDevices](../api/user-list-registereddevices.md) | Coleção [directoryObject](directoryobject.md) | Obter os dispositivos que estão registrados para o usuário da propriedade de navegação registeredDevices. |
 | [Listar associações de função com escopo](../api/user-list-scopedrolememberof.md) | Coleção [scopedRoleMembership](scopedrolemembership.md) | Obter as associações de unidades administrativas de função com escopo deste usuário. |
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Reprocessar as atribuições de assinatura do usuário. |
-| [revokeSignInSessions](../api/user-revokesigninsessions.md) | Nenhum | Revoga todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **signInSessionsValidFromDateTime** para data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Este método substitui **invalidateAllRefreshTokens**. |
+| [revokeSignInSessions](../api/user-revokesigninsessions.md) | Nenhuma | Revoga todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **signInSessionsValidFromDateTime** para data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Este método substitui **invalidateAllRefreshTokens**. |
 | **Unidade** |||
 | [Obter unidade](../api/drive-get.md) | [unidade](drive.md) | Recuperar as propriedades e as relações de um recurso Drive. |
 | [Filhos de lista](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem. |
@@ -105,7 +107,7 @@ Esse recurso permite:
 | [Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso. |
 | [Obter extensão aberta](../api/opentypeextension-get.md) | Coleção [openTypeExtension](opentypeextension.md) | Obtenha uma extensão aberta identificada pelo nome da extensão. |
 | **Hierarquia da organização** |||
-| [Atribuir gerenciador](../api/user-post-manager.md) | Nenhum | Atribuir um gerenciador de usuário. |
+| [Atribuir gerenciador](../api/user-post-manager.md) | Nenhuma | Atribuir um gerenciador de usuário. |
 | [Obter gerenciador](../api/user-list-manager.md) | [directoryObject](directoryobject.md) | Obter o usuário ou contato que é o gerente do usuário da propriedade de navegação manager. |
 | [Listar directReports](../api/user-list-directreports.md) | Coleção [directoryObject](directoryobject.md) | Obter os usuários ou contatos subordinados ao usuário da propriedade de navegação directReports. |
 | **Configurações do Outlook** |||
@@ -123,22 +125,22 @@ Esse recurso permite:
 | [Listar pessoas](../api/user-list-people.md) | [person](person.md) | Recupere uma lista de objetos person ordenados por relevância para o usuário, o que é determinado pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. |
 | **Foto** |||
 | [Obter foto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Obtém o profilePhoto especificado ou seus metadados (propriedades profilePhoto). |
-| [Atualizar profilephoto](../api/profilephoto-update.md) | Nenhum | Atualiza a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou contato especificado. |
+| [Atualizar profilephoto](../api/profilephoto-update.md) | Nenhuma | Atualiza a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou contato especificado. |
 | **Planner** |||
 | [Obter plannerUser](../api/planneruser-get.md) | [plannerUser](planneruser.md) | Recupere as propriedades e relações de um objeto plannerUser. |
 | [Listar favoritePlans](../api/planneruser-list-favoriteplans.md) | Coleção [plannerPlan](plannerplan.md) | Recupere uma lista de plannerPlans marcados como favoritos por um usuário. |
 | [Listar recentPlans](../api/planneruser-list-recentplans.md) | coleção [plannerPlan](plannerplan.md) | Recupere uma lista de plannerPlans recentemente exibida por um usuário. |
 | [Listar tarefas](../api/planneruser-list-tasks.md) | Coleção [plannerTask](plannertask.md) | Obter o plannerTasks atribuído ao usuário. |
-| [Atualizar plannerUser](../api/planneruser-update.md) | Nenhum | Atualize as propriedades de um objeto plannerUser. |
+| [Atualizar plannerUser](../api/planneruser-update.md) | Nenhuma | Atualize as propriedades de um objeto plannerUser. |
 | **Perfil** |||
 | [Obter perfil](../api/profile-get.md) | [perfil](profile.md) | Recupere as propriedades e relações de um objeto de perfil para um determinado usuário. |
-| [Excluir perfil](../api/profile-delete.md) | Nenhum | Exclua o objeto de perfil de uma conta de usuário. |
+| [Excluir perfil](../api/profile-delete.md) | Nenhuma | Exclua o objeto de perfil de uma conta de usuário. |
 | **Extensões de esquema** | | |
-| [Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) | Nenhum | Cria uma definição para a extensão de esquema e a usa para adicionar dados digitados personalizados a um recurso.|
+| [Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) | Nenhuma | Cria uma definição para a extensão de esquema e a usa para adicionar dados digitados personalizados a um recurso.|
 | **Teamwork** |||
-| [Instalar o aplicativo para o usuário](../api/user-add-teamsappinstallation.md) | Nenhum | Instale um aplicativo no escopo pessoal do usuário especificado. |
+| [Instalar o aplicativo para o usuário](../api/user-add-teamsappinstallation.md) | Nenhuma | Instale um aplicativo no escopo pessoal do usuário especificado. |
 | [Listar aplicativos instalados para o usuário](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) | Recupere a lista de aplicativos instalados no escopo pessoal do usuário especificado. |
-| [Atualizar aplicativo](../api/user-upgrade-teamsappinstallation.md) | Nenhum | Atualize uma instalação de aplicativo no escopo pessoal do usuário especificado para a versão mais recente do aplicativo.
+| [Atualizar aplicativo](../api/user-upgrade-teamsappinstallation.md) | Nenhuma | Atualize uma instalação de aplicativo no escopo pessoal do usuário especificado para a versão mais recente do aplicativo.
 | [Desinstalar aplicativo para o usuário](../api/user-delete-teamsappinstallation.md) | Nenhum | Desinstale um aplicativo do escopo pessoal do usuário especificado. |
 | **Configurações do usuário** |||
 | [Obter configurações](../api/usersettings-get.md) | [userSettings](usersettings.md) | Leia o usuário e o objeto de configurações da organização. |
@@ -154,7 +156,7 @@ Esse recurso permite:
 | assignedLicenses | Coleção [assignedLicense](assignedlicense.md) | As licenças que são atribuídas ao usuário. <br><br>Retornado apenas em $select. Não anulável. |
 | assignedPlans | Coleção [assignedPlan](assignedplan.md) | Os planos que são atribuídos ao usuário. <br><br>Retornado apenas em $select. Somente leitura. Não anulável. |
 | birthday | DateTimeOffset | O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` <br><br>Retornado apenas em $select. |
-| businessPhones | String collection | Números de telefone para o usuário. Somente um número pode ser definido para essa propriedade. <br><br>Retornado por padrão. |
+| businessPhones | Coleção de cadeias de caracteres | Números de telefone para o usuário. Somente um número pode ser definido para essa propriedade. <br><br>Retornado por padrão. |
 | city | String | A cidade em que o usuário está localizado. <br><br>Retornado apenas em $select. Oferece suporte a $filter. |
 | companyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. <br><br>Retornado apenas em $select. |
 | consentProvidedForMinor | String| Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em $select. |
@@ -198,15 +200,15 @@ Esse recurso permite:
 | otherMails | Coleção String | Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`.<br><br>Retornado apenas em $select.  Oferece suporte a $filter. |
 | passwordPolicies | String | Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é "DisableStrongPassword", o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar "DisablePasswordExpiration". Ambos podem ser especificados juntos; por exemplo: "DisablePasswordExpiration, DisableStrongPassword".<br><br>Retornado apenas em $select. |
 | passwordProfile | [passwordProfile](passwordprofile.md) | Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte. <br><br>Retornado apenas em $select. |
-| pastProjects | Conjunto de cadeias de caracteres | Uma lista para o usuário enumerar seus projetos anteriores. <br><br>Retornado apenas em $select. |
+| pastProjects | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar seus projetos anteriores. <br><br>Retornado apenas em $select. |
 | postalCode | Cadeia de caracteres | O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP. <br><br>Retornado apenas em $select. |
 | preferredDataLocation | String | O local de dados preferido para o usuário. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Retornado apenas em $select. |
 | preferredLanguage | String | O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo "en-US". <br><br>Retornado por padrão. |
 | preferredName | String | O nome preferencial do usuário. <br><br>Retornado apenas em $select. |
 | provisionedPlans | coleção [provisionedPlan](provisionedplan.md) | Os planos que estão provisionados para o usuário. <br><br>Retornado apenas em $select. Somente leitura. Não anulável. |
-| proxyAddresses | String collection | Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. <br><br>Retornado apenas em $select. Somente leitura, não anulável. Oferece suporte a $filter. |
+| proxyAddresses | Coleção de cadeias de caracteres | Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. <br><br>Retornado apenas em $select. Somente leitura, não anulável. Oferece suporte a $filter. |
 | refreshTokensValidFromDateTime | DateTimeOffset | Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. <br><br>Retornado apenas em $select. Somente leitura. Use [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) para redefinir. |
-| responsibilities | Conjunto de cadeias de caracteres | Uma lista para o usuário enumerar suas responsabilidades. <br><br>Retornado apenas em $select. |
+| responsibilities | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar suas responsabilidades. <br><br>Retornado apenas em $select. |
 | schools | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar as escolas que frequentou. <br><br>Retornado apenas em $select. |
 | showInAddressList | Booliano | `true` se a lista de endereços global do Outlook deve conter o usuário, caso contrário `false`. Se não estiver configurado, isso será tratado como `true`. Para os usuários convidados por meio do Gerenciador de convites, essa propriedade será definida como `false`. <br><br>Retornado apenas em $select.|
 | signInSessionsValidFromDateTime | DateTimeOffset | Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. <br><br>Retornado apenas em $select. Somente leitura. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) para redefinir.|
@@ -233,7 +235,7 @@ Essa propriedade de somente leitura é usada por desenvolvedores de aplicativos 
 |:---------------|:--------|:----------|
 |null|,0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
 |minorWithoutParentalConsent |1 |(Reservado para uso futuro)|
-|minorWithParentalConsent|2 | O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
+|minorWithParentalConsent|duas| O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
 |adult|3D|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
 |notAdult|4 |O usuário é de um país ou região com regulamentações adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` em países regulamentados.|
 |minorNoParentalConsentRequired|5 |O usuário é menor de idade, mas é de um país ou região que não tem com regulamentações relacionadas com a idade.|
@@ -248,7 +250,7 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |:---------------|:--------|:----------|
 |null|,0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
 |minor|1 |O usuário é considerado menor de idade.|
-|notAdult|2 |O usuário é de um país que têm regulamentações estatutárias (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior do que o limite de idade para criança (conforme o país) e menor que o limite inferior de idade para adulto (como estipulado com base no país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
+|notAdult|duas|O usuário é de um país que têm regulamentações estatutárias (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior do que o limite de idade para criança (conforme o país) e menor que o limite inferior de idade para adulto (como estipulado com base no país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
 |adult|3D|O usuário deve ser tratado como um adulto.|
 
 #### <a name="consentprovidedforminor-property"></a>Propriedade consentProvidedForMinor
@@ -257,7 +259,7 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |:---------------|:--------|:----------|
 |null|,0|Valor padrão, nenhum `consentProvidedForMinor` foi definido para o usuário.|
 |granted|1 |O consentimento foi obtido para o usuário ter uma conta.|
-|denied|2 |O consentimento não foi obtido para o usuário ter uma conta.|
+|denied|duas|O consentimento não foi obtido para o usuário ter uma conta.|
 |notRequired|3D|O usuário é de um local que não exige consentimento.|
 
 ## <a name="relationships"></a>Relações
@@ -297,6 +299,11 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |scopedRoleMemberOf|Coleção [scopedRoleMembership](scopedrolemembership.md)| As associações de unidade administrativa de função com escopo deste usuário. Somente leitura. Anulável.|
 |settings|[userSettings](usersettings.md) | Somente leitura. Anulável.|
 |registeredDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que estão registrados para o usuário. Somente leitura. Anulável.|
+
+### <a name="user-preferences-for-languages-and-regional-formats"></a>Preferências do usuário para idiomas e formatos regionais
+O recurso **User** contém uma propriedade [mailboxSettings](../resources/mailboxsettings.md) que inclui o idioma preferencial do usuário, a formatação de data e hora, o fuso horário padrão e outras configurações especificamente para sua caixa de correio principal do Exchange. Essas preferências são direcionadas para clientes de email e só estarão disponíveis se o usuário tiver uma caixa de correio configurada. Você pode optar por usar o **mailboxSettings** se seu cenário se concentrar apenas em emails, calendário, contatos ou tarefas pendentes do Outlook.
+
+Além do **mailboxSettings**, o **usuário** inclui uma relação por [UserSettings](../resources/usersettings.md) para [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md), o superconjunto de preferências de formatação regional e de idioma que pode ser usado por qualquer aplicativo para fornecer ao usuário a melhor experiência de formatação regional e de idioma. Use **UserSettings** para uma experiência consistente entre aplicativos que tocam o perfil de usuário do Azure ad para refletir as mesmas preferências do usuário.  
 
 ## <a name="json-representation"></a>Representação JSON
 

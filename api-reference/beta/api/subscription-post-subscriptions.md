@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 3e9873d8def179bfdbe8d77767d5a521af5cebf3
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: e199e2c9fa0240eda593843d88490e7f22b0f506
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353256"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744086"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -143,6 +143,7 @@ Estes são os valores válidos para a Propriedade Resource.
 |Listar|sites/{site-id}/lists/{list-id}|
 |Alerta de segurança|security/alerts?$filter=status eq ‘New’|
 |Registros de chamadas|comunicações/callRecords|
+|[Mensagem de chat](../resources/chatmessage.md) | chats/{ID}/mensagens, chats/multimessages, Teams/{ID}/Channels/{ID}/mensagens, equipes/próprias mensagens |
 
 ### <a name="response"></a>Resposta
 
@@ -174,7 +175,7 @@ Content-length: 252
 }
 ```
 
-## <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
+## <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
 
 O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl** ) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [configurar notificações para alterações nos dados do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
 
