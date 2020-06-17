@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Obter tokens de autenticação
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: /graph/auth/index?context=graph/api/beta
       - name: Noções básicas
         href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -74,7 +74,7 @@ items:
       - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -169,11 +169,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -302,14 +302,6 @@ items:
                     href: api/insights-list-trending.md
                   - name: Listar usados
                     href: api/insights-list-used.md
-              - name: Configurações de descoberta de conteúdo
-                items:
-                  - name: Configurações do usuário
-                    href: resources/usersettings.md
-                  - name: Obter configurações
-                    href: api/usersettings-get.md
-                  - name: Atualizar configurações
-                    href: api/usersettings-update.md
           - name: Correio
             href: resources/message.md
             items:
@@ -409,6 +401,13 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: Atualizar configurações
                 href: api/planneruser-update.md
+          - name: Idiomas preferenciais e formatos regionais
+            href: resources/regionalandlanguagesettings.md
+            items:
+              - name: Obter
+                href: api/regionalandlanguagesettings-get.md
+              - name: Atualizar
+                href: api/regionalandlanguagesettings-update.md
           - name: Perfil (visualização)
             items:
               - name: Perfil
@@ -429,9 +428,17 @@ items:
                 href: api/user-upgrade-teamsappinstallation.md
               - name: Desinstalar aplicativo
                 href: api/user-delete-teamsappinstallation.md
+          - name: Configurações do usuário
+            items:
+              - name: Configurações do usuário
+                href: resources/usersettings.md
+              - name: Obter configurações
+                href: api/usersettings-get.md
+              - name: Atualizar configurações
+                href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -990,7 +997,7 @@ items:
                 href: api/cloudcommunications-getpresencesbyuserid.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1007,7 +1014,7 @@ items:
       - name: Experiências entre dispositivos
         displayName: Project Rome
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/project-rome-overview.md
           - name: Listar os dispositivos do usuário
             href: api/user-list-devices.md
@@ -1041,7 +1048,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -1264,7 +1271,7 @@ items:
                   - name: Perfil de registro de proprietário do dispositivo Android
                     href: resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-list.md
                       - name: Obter
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-get.md
@@ -1283,7 +1290,7 @@ items:
                   - name: Aplicativo Android for Work
                     href: resources/intune-apps-androidforworkapp.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-apps-androidforworkapp-list.md
                       - name: Obter
                         href: api/intune-apps-androidforworkapp-get.md
@@ -1655,7 +1662,7 @@ items:
                   - name: Atribuição de livros eletrônicos do VPP do iOS
                     href: resources/intune-books-iosvppebookassignment.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-books-iosvppebookassignment-list.md
                       - name: Obter
                         href: api/intune-books-iosvppebookassignment-get.md
@@ -1668,7 +1675,7 @@ items:
                   - name: Aplicativo LOB para macOS
                     href: resources/intune-apps-macoslobapp.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-macoslobapp-list.md
                       - name: Obter
                         href: api/intune-apps-macoslobapp-get.md
@@ -1711,7 +1718,7 @@ items:
                   - name: Aplicativo do macOS Office Suite
                     href: resources/intune-apps-macosofficesuiteapp.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-apps-macosofficesuiteapp-list.md
                       - name: Obter
                         href: api/intune-apps-macosofficesuiteapp-get.md
@@ -2093,7 +2100,7 @@ items:
                   - name: Atribuição de configuração de cliente do Office
                     href: resources/intune-cirrus-officeclientconfigurationassignment.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-cirrus-officeclientconfigurationassignment-list.md
                       - name: Obter
                         href: api/intune-cirrus-officeclientconfigurationassignment-get.md
@@ -2115,7 +2122,7 @@ items:
                   - name: Aplicativo do pacote Office
                     href: resources/intune-apps-officesuiteapp.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-officesuiteapp-list.md
                       - name: Obter
                         href: api/intune-apps-officesuiteapp-get.md
@@ -2143,7 +2150,7 @@ items:
                   - name: Status de instalação do aplicativo do usuário
                     href: resources/intune-apps-userappinstallstatus.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-apps-userappinstallstatus-list.md
                       - name: Obter
                         href: api/intune-apps-userappinstallstatus-get.md
@@ -2347,7 +2354,7 @@ items:
                   - name: Windows Phone XAP
                     href: resources/intune-apps-windowsphonexap.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-windowsphonexap-list.md
                       - name: Obter
                         href: api/intune-apps-windowsphonexap-get.md
@@ -2360,7 +2367,7 @@ items:
                   - name: Aplicativo da Windows Store
                     href: resources/intune-apps-windowsstoreapp.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-apps-windowsstoreapp-list.md
                       - name: Obter
                         href: api/intune-apps-windowsstoreapp-get.md
@@ -2764,7 +2771,7 @@ items:
                   - name: Estado de configuração do dispositivo de integração de proteção avançada contra ameaças
                     href: resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-get.md
@@ -2786,7 +2793,7 @@ items:
                   - name: Base de perfil de certificado do Android
                     href: resources/intune-deviceconfig-androidcertificateprofilebase.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-androidcertificateprofilebase-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidcertificateprofilebase-get.md
@@ -2997,14 +3004,14 @@ items:
                   - name: Base de perfil de certificado do Android for Work
                     href: resources/intune-deviceconfig-androidforworkcertificateprofilebase.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-androidforworkcertificateprofilebase-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidforworkcertificateprofilebase-get.md
                   - name: Política de conformidade do Android for Work
                     href: resources/intune-deviceconfig-androidforworkcompliancepolicy.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-androidforworkcompliancepolicy-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidforworkcompliancepolicy-get.md
@@ -3819,7 +3826,7 @@ items:
                   - name: Status do usuário da configuração do dispositivo
                     href: resources/intune-deviceconfig-deviceconfigurationuserstatus.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-deviceconfigurationuserstatus-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-deviceconfigurationuserstatus-get.md
@@ -3864,7 +3871,7 @@ items:
                   - name: Base de configuração de perfil de email do EAS
                     href: resources/intune-deviceconfig-easemailprofileconfigurationbase.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-easemailprofileconfigurationbase-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-easemailprofileconfigurationbase-get.md
@@ -4076,7 +4083,7 @@ items:
                   - name: Lista suspensa de apresentação da política de grupo
                     href: resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-list.md
                       - name: Obter
                         href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-get.md
@@ -5347,7 +5354,7 @@ items:
                   - name: Configuração de proteção de ponto de extremidade do Windows 10
                     href: resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
@@ -7986,7 +7993,7 @@ items:
                   - name: Configuração de registro do dispositivo
                     href: resources/intune-shared-deviceenrollmentconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-shared-deviceenrollmentconfiguration-list.md
                       - name: Obter
                         href: api/intune-shared-deviceenrollmentconfiguration-get.md
@@ -8205,7 +8212,7 @@ items:
                   - name: Usuário
                     href: resources/intune-shared-user.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-shared-user-list.md
                       - name: Obter
                         href: api/intune-shared-user-get.md
@@ -8531,7 +8538,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -8625,7 +8632,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -9058,7 +9065,7 @@ items:
                     href: api/authenticationflowspolicy-update.md
           - name: Métodos de autenticação
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/authenticationmethods-overview.md
               - name: Método de autenticação
                 href: resources/authenticationmethod.md
@@ -9468,7 +9475,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -10085,7 +10092,7 @@ items:
       - name: Correio
         displayName: 'Outlook, Outlook mail'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/mail-api-overview.md
           - name: Mensagem
             href: resources/message.md
@@ -10682,7 +10689,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e uso
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registro de usuário de credenciais
                     href: resources/credentialuserregistrationcount.md
@@ -10706,7 +10713,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Relatórios de uso do Office 365
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -10909,13 +10916,13 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Dados de consulta
                 href: api/search-query.md
           - name: Índice
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -11037,7 +11044,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
