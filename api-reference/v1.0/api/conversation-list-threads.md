@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8f0615e664d48fe3837c4aafcdbd25f948b848f5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 69d1179dc74b275f8f9cf74b515ff2ebf9dc5349
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518200"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44743785"
 ---
 # <a name="list-threads"></a>Listar threads
 
@@ -21,13 +21,13 @@ Obtém todos os threads em uma conversa de grupo.
 Observação: Você também pode [obter todos os threads de um grupo](group-list-threads.md).
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group. ReadWrite. All, Group. Read. All    |
+|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+| Autorização  | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

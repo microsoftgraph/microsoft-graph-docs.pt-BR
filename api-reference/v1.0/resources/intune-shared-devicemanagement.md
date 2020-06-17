@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d0f55f824d5368fa51f415db5b493ef09cccfeee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cda405c9f63d52ee9741dd679e582c7fdfcd44df
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445721"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744010"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -26,7 +26,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Gerenciamento de dispositivo  
 - Proteção de pontos de extremidade  
 - Perfis de registro  
-- Notificações  
+- Notifications  
 - Políticas de integração, configurações e detalhes  
 - Políticas de controle de acesso baseado em função (RBAC)  
 - Parceiros de assistência remota  
@@ -34,7 +34,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Solucionando problemas de eventos  
 - Resumos da proteção de informações do Windows  
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter deviceManagement](../api/intune-shared-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Leia as propriedades e as relações do objeto [deviceManagement](../resources/intune-shared-devicemanagement.md).|
@@ -55,7 +55,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |**Integração**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand contém dados que são usados na personalização da aparência dos aplicativos do Portal da Empresa, bem como do portal da Web de usuários finais.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |**Auditoria**|
@@ -86,6 +86,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |deviceCategories|Coleção [deviceCategory](../resources/intune-shared-devicecategory.md)|A lista de categorias de dispositivo com o locatário.|
 |deviceEnrollmentConfigurations|Coleção [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|A lista de configurações de registro de dispositivos|
 |deviceManagementPartners|Coleção [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|A lista de Parceiros de gerenciamento de dispositivos configurados pelo locatário.|
+|complianceManagementPartners|coleção [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|A lista de parceiros de gerenciamento de conformidade configurados pelo locatário.|
 |exchangeConnectors|Coleção [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md)|A lista dos Conectores do Exchange configurados pelo locatário.|
 |mobileThreatDefenseConnectors|Coleção [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md)|A lista dos conectores de defesa contra ameaças móveis configurados pelo locatário.|
 |**RBAC**|

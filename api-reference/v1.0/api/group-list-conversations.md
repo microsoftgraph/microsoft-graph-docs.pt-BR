@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c56839b9df70c73104841702931d21331e4d43f7
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: f9b4b582f0ff3b414137298c08f6582e6fe5439f
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557854"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744037"
 ---
 # <a name="list-conversations"></a>Listar conversas
 
@@ -19,13 +19,13 @@ Namespace: microsoft.graph
 Recupere a lista de [conversas](../resources/conversation.md) desse grupo.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+| Autorização  | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

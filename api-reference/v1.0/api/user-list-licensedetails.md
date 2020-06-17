@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e5918ffb48d59070f75e6703bba23e0cf49daa56
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 2b44d2f2881a91dea14bc78898f3f697b88b5932
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108813"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44743772"
 ---
 # <a name="list-licensedetails"></a>Listar licenseDetails
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Recupere uma lista de objetos **licenseDetails** para usuários empresariais.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -34,19 +34,19 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este **método não oferece suporte a** parâmetros de [consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
+Este método dá suporte ao `$select` parâmetro de consulta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | &lt;Código do portador&gt;|
+| Autorização  | Código do portador &lt;&gt;|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [licenseDetails](../resources/licensedetails.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [licenseDetails](../resources/licensedetails.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/me/licenseDetails
 ---
 
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
