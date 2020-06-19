@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bcfec7b1be98f60165faa1feb7ab9a62ec96a421
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 73cc6bed902b516a6f378ac4a4c56af04bdb18c4
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419143"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793826"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>tipo de enumeração notificationTemplateBrandingOptions
 
@@ -25,10 +25,11 @@ Opções de identidade visual para o modelo de mensagem. A identidade visual é 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Sem identidade visual.|
-|includeCompanyLogo|1|Incluir logotipo da empresa.|
+|Nenhuma|,0|Sem identidade visual.|
+|includeCompanyLogo|1 |Incluir logotipo da empresa.|
 |includeCompanyName|duas|Incluir o nome da empresa.|
 |includeContactInformation|4 |Incluir informações de contato.|
+|includeCompanyPortalLink|8 |Incluir link do portal da empresa.|
 
 
 

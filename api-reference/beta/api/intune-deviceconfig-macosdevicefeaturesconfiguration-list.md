@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ec23fdd99ca0bc7585121ac5b15e42237098b8e
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 706eb1b740fa31d6900ec1bd2b71816366a05c31
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177909"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792792"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>Listar macOSDeviceFeaturesConfigurations
 
@@ -23,13 +23,13 @@ Namespace: microsoft.graph
 Listar propriedades e relações dos objetos [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -62,11 +62,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4556
+Content-Length: 6245
 
 {
   "value": [
@@ -188,7 +188,52 @@ Content-Length: 4556
         "passwordEnableLocalSync": true,
         "blockActiveDirectorySiteAutoDiscovery": true,
         "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
-      }
+      },
+      "contentCachingEnabled": true,
+      "contentCachingType": "userContentOnly",
+      "contentCachingMaxSizeBytes": 10,
+      "contentCachingDataPath": "Content Caching Data Path value",
+      "contentCachingDisableConnectionSharing": true,
+      "contentCachingForceConnectionSharing": true,
+      "contentCachingClientPolicy": "clientsInLocalNetwork",
+      "contentCachingClientListenRanges": [
+        {
+          "@odata.type": "microsoft.graph.iPv6Range",
+          "lowerAddress": "Lower Address value",
+          "upperAddress": "Upper Address value"
+        }
+      ],
+      "contentCachingPeerPolicy": "peersInLocalNetwork",
+      "contentCachingPeerListenRanges": [
+        {
+          "@odata.type": "microsoft.graph.iPv6Range",
+          "lowerAddress": "Lower Address value",
+          "upperAddress": "Upper Address value"
+        }
+      ],
+      "contentCachingPeerFilterRanges": [
+        {
+          "@odata.type": "microsoft.graph.iPv6Range",
+          "lowerAddress": "Lower Address value",
+          "upperAddress": "Upper Address value"
+        }
+      ],
+      "contentCachingParentSelectionPolicy": "roundRobin",
+      "contentCachingParents": [
+        "Content Caching Parents value"
+      ],
+      "contentCachingLogClientIdentities": true,
+      "contentCachingPublicRanges": [
+        {
+          "@odata.type": "microsoft.graph.iPv6Range",
+          "lowerAddress": "Lower Address value",
+          "upperAddress": "Upper Address value"
+        }
+      ],
+      "contentCachingBlockDeletion": true,
+      "contentCachingShowAlerts": true,
+      "contentCachingKeepAwake": true,
+      "contentCachingPort": 2
     }
   ]
 }

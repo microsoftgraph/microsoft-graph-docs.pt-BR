@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d66fbcadd2957735e4244bde6ebabfd6d3775b74
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 900862aa7f7d423faa9c27a9907a3a50b2fc39c9
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177923"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792769"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>Criar macOSDeviceFeaturesConfiguration
 
@@ -23,13 +23,13 @@ Namespace: microsoft.graph
 Criar um novo objeto [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar macOSDev
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -68,7 +68,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar macOSDev
 |airPrintDestinations|coleção [airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)|Uma matriz de impressoras de impressão que sempre devem ser mostradas. Esta coleção pode conter um máximo de 500 elementos. Herdado de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
 |autoLaunchItems|coleção [macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)|Lista de aplicativos, arquivos, pastas e outros itens a serem iniciados quando o usuário fizer logon. Esta coleção pode conter um máximo de 500 elementos.|
 |adminShowHostInfo|Boolean|Se deseja mostrar as informações de host de administrador na janela de logon.|
-|loginWindowText|Cadeia de Caracteres|Texto personalizado a ser exibido na janela de logon.|
+|loginWindowText|String|Texto personalizado a ser exibido na janela de logon.|
 |authorizedUsersListHidden|Boolean|Se deseja mostrar a caixa de diálogo nome e senha ou uma lista de usuários na janela de logon.|
 |authorizedUsersListHideLocalUsers|Boolean|Se deseja mostrar somente usuários de rede e de sistema na lista de usuários autorizados na janela de logon.|
 |authorizedUsersListHideMobileAccounts|Boolean|Se os usuários móveis serão ocultos na lista de usuários autorizados na janela de logon.|
@@ -87,6 +87,25 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar macOSDev
 |associatedDomains|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Obtém ou define uma lista que mapeia aplicativos para seus domínios associados. A chave deve corresponder à ID do aplicativo, e o valor deve ser uma cadeia de caracteres no formato "Service: domain" onde domínio é um nome de host totalmente qualificado (por exemplo, webcredentials:example. com). Esta coleção pode conter um máximo de 500 elementos.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Obtém ou define um perfil de extensão de logon único. Preterido: Use MacOSSingleSignOnExtension em vez disso.|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Obtém ou define um perfil de extensão de logon único.|
+|contentCachingEnabled|Boolean|Habilita o cache de conteúdo e impede que ele seja desabilitado pelo usuário.|
+|contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Determina o tipo de conteúdo que pode ser armazenado em cache pelo serviço de cache de conteúdo da Apple. Os valores possíveis são: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
+|contentCachingMaxSizeBytes|Int32|O número máximo de bytes de espaço em disco que serão usados para o cache de conteúdo. Um valor de 0 (padrão) indica espaço em disco ilimitado. |
+|contentCachingDataPath|String|O caminho para o diretório usado para armazenar o conteúdo em cache. O valor deve ser (ou terminar com)/Library/Application Support/Apple/AssetCache/data|
+|contentCachingDisableConnectionSharing|Boolean|Desabilita o compartilhamento de conexão com a Internet.|
+|contentCachingForceConnectionSharing|Boolean|Força o compartilhamento de conexão com a Internet. contentCachingDisableConnectionSharing substitui essa configuração.|
+|contentCachingClientPolicy|[macOSContentCachingClientPolicy](../resources/intune-deviceconfig-macoscontentcachingclientpolicy.md)|Determina o método no qual os servidores de cache de conteúdo ouvirão clientes. Os valores possíveis são: `notConfigured`, `clientsInLocalNetwork`, `clientsWithSamePublicIpAddress`, `clientsInCustomLocalNetworks`, `clientsInCustomLocalNetworksWithFallback`.|
+|contentCachingClientListenRanges|Coleção [ipRange](../resources/intune-shared-iprange.md)|Uma lista de caches de conteúdo de intervalos de IP personalizados que será usada para escutar clientes. Esta coleção pode conter um máximo de 500 elementos.|
+|contentCachingPeerPolicy|[macOSContentCachingPeerPolicy](../resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md)|Determina o método no qual o conteúdo armazena em cache ponto com outros caches. Os valores possíveis são: `notConfigured`, `peersInLocalNetwork`, `peersWithSamePublicIpAddress`, `peersInCustomLocalNetworks`.|
+|contentCachingPeerListenRanges|Coleção [ipRange](../resources/intune-shared-iprange.md)|Uma lista de caches de conteúdo de intervalos de IP personalizados que será usada para escutar em caches de par. Esta coleção pode conter um máximo de 500 elementos.|
+|contentCachingPeerFilterRanges|Coleção [ipRange](../resources/intune-shared-iprange.md)|Uma lista de caches de conteúdo de intervalos de IP personalizados que usará para consultar conteúdo de caches de mesmo nível. Esta coleção pode conter um máximo de 500 elementos.|
+|contentCachingParentSelectionPolicy|[macOSContentCachingParentSelectionPolicy](../resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy.md)|Determina o método no qual os servidores de cache de conteúdo selecionarão pais, se houver vários. Os possíveis valores são: `notConfigured`, `roundRobin`, `firstAvailable`, `urlPathHash`, `random`, `stickyAvailable`.|
+|contentCachingParents|Coleção de cadeias de caracteres|Uma lista de endereços IP que representam caches de conteúdo pai.|
+|contentCachingLogClientIdentities|Boolean|Permite o registro em log de endereços IP e portas de clientes que solicitam conteúdo em cache.|
+|contentCachingPublicRanges|Coleção [ipRange](../resources/intune-shared-iprange.md)|Uma lista de intervalos de IP personalizados que o serviço de cache de conteúdo da Apple deve usar para fazer a correspondência de clientes com caches de conteúdo. Esta coleção pode conter um máximo de 500 elementos.|
+|contentCachingBlockDeletion|Boolean|Impede que caches de conteúdo limpem conteúdo para liberar espaço em disco para outros aplicativos.|
+|contentCachingShowAlerts|Boolean|Exibir alertas de cache de conteúdo como notificações do sistema.|
+|contentCachingKeepAwake|Boolean|Impedir que o dispositivo fique dormindo se o cache de conteúdo estiver habilitado.|
+|contentCachingPort|Int32|Define a porta usada para o cache de conteúdo. Se o valor for 0, uma porta aleatória disponível será selecionada. Valores válidos de 0 a 65535|
 
 
 
@@ -100,7 +119,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3879
+Content-length: 5388
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -217,16 +236,61 @@ Content-length: 3879
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
-  }
+  },
+  "contentCachingEnabled": true,
+  "contentCachingType": "userContentOnly",
+  "contentCachingMaxSizeBytes": 10,
+  "contentCachingDataPath": "Content Caching Data Path value",
+  "contentCachingDisableConnectionSharing": true,
+  "contentCachingForceConnectionSharing": true,
+  "contentCachingClientPolicy": "clientsInLocalNetwork",
+  "contentCachingClientListenRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingPeerPolicy": "peersInLocalNetwork",
+  "contentCachingPeerListenRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingPeerFilterRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingParentSelectionPolicy": "roundRobin",
+  "contentCachingParents": [
+    "Content Caching Parents value"
+  ],
+  "contentCachingLogClientIdentities": true,
+  "contentCachingPublicRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingBlockDeletion": true,
+  "contentCachingShowAlerts": true,
+  "contentCachingKeepAwake": true,
+  "contentCachingPort": 2
 }
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4051
+Content-Length: 5560
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -346,7 +410,52 @@ Content-Length: 4051
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
-  }
+  },
+  "contentCachingEnabled": true,
+  "contentCachingType": "userContentOnly",
+  "contentCachingMaxSizeBytes": 10,
+  "contentCachingDataPath": "Content Caching Data Path value",
+  "contentCachingDisableConnectionSharing": true,
+  "contentCachingForceConnectionSharing": true,
+  "contentCachingClientPolicy": "clientsInLocalNetwork",
+  "contentCachingClientListenRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingPeerPolicy": "peersInLocalNetwork",
+  "contentCachingPeerListenRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingPeerFilterRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingParentSelectionPolicy": "roundRobin",
+  "contentCachingParents": [
+    "Content Caching Parents value"
+  ],
+  "contentCachingLogClientIdentities": true,
+  "contentCachingPublicRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingBlockDeletion": true,
+  "contentCachingShowAlerts": true,
+  "contentCachingKeepAwake": true,
+  "contentCachingPort": 2
 }
 ```
 

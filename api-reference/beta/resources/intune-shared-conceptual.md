@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 2d138f4c92999477054e8fe154c426fd18181037
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 06be7eefad204f0cef73d8c0d16d70159f9142db
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178091"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793756"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
@@ -31,6 +31,7 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Ação do portal da empresa](intune-shared-companyportalaction.md)
 - [Ação bloqueada do portal da empresa](intune-shared-companyportalblockedaction.md)
 - [Status de conformidade](intune-shared-compliancestatus.md)
+- [Tipo de filtro de atribuição de gerenciamento de dispositivos e aplicativos](intune-shared-deviceandappmanagementassignmentfiltertype.md)
 - [Origem da atribuição de gerenciamento de dispositivos e aplicativos](intune-shared-deviceandappmanagementassignmentsource.md)
 - [Destino de atribuição de gerenciamento de aplicativo e dispositivo](intune-shared-deviceandappmanagementassignmenttarget.md)
 - [Gerenciamento de aplicativos de dispositivo](intune-shared-deviceappmanagement.md)

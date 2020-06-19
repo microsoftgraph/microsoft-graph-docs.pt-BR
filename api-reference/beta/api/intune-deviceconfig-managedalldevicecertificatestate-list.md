@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e2952cdfe82edff77ff3d742a32011ba5f0704b8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d9287bede55dcae67787e86758146dc9433f89d8
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432139"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792720"
 ---
 # <a name="list-managedalldevicecertificatestates"></a>Listar managedAllDeviceCertificateStates
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Listar Propriedades e relações dos objetos [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationsAllMan
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -82,7 +82,8 @@ Content-Length: 869
       "certificateSubjectName": "Certificate Subject Name value",
       "certificateKeyUsages": 4,
       "certificateExtendedKeyUsages": "Certificate Extended Key Usages value",
-      "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
+      "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
+      "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:41.5044473-08:00"
     }
   ]
 }

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 775fc33966b70f75ebce91143927c442f68803a0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e78a9d34b1de0f3de1a23da15b6a6ff2acdbc7f3
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43337744"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792601"
 ---
 # <a name="get-windows10vpnconfiguration"></a>Obter windows10VpnConfiguration
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Leia as propriedades e as relações do objeto [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -66,11 +66,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4629
+Content-Length: 4950
 
 {
   "value": {
@@ -212,7 +212,16 @@ Content-Length: 4629
     ],
     "trustedNetworkDomains": [
       "Trusted Network Domains value"
-    ]
+    ],
+    "cryptographySuite": {
+      "@odata.type": "microsoft.graph.cryptographySuite",
+      "encryptionMethod": "des",
+      "integrityCheckMethod": "sha1_96",
+      "dhGroup": "group2",
+      "cipherTransformConstants": "des",
+      "authenticationTransformConstants": "sha1_96",
+      "pfsGroup": "pfs2"
+    }
   }
 }
 ```

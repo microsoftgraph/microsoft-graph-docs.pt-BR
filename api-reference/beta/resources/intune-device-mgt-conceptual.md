@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 959c7c7d0f38dfa036f74cd4fd36f26a2fbfb442
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a6043023bd734a571028baad6b0f8ad26e12d04e
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179317"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793469"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -36,6 +36,10 @@ Namespace: microsoft.graph
 - [Resultado de ação do dispositivo gerenciado em massa](intune-devices-bulkmanageddeviceactionresult.md)
 - [Tipo de gabinete](intune-devices-chassistype.md)
 - [Condição de gerenciamento de cerca geográfica circular](intune-fencing-circulargeofencemanagementcondition.md)
+- [Resumo de dispositivos cogerenciados](intune-devices-comanageddevicessummary.md)
+- [Dispositivo qualificado de cogerenciamento](intune-devices-comanagementeligibledevice.md)
+- [Resumo de dispositivos qualificados de cogerenciamento](intune-devices-comanagementeligibledevicessummary.md)
+- [Tipo qualificado de cogerenciamento](intune-devices-comanagementeligibletype.md)
 - [Estado de conformidade](intune-devices-compliancestate.md)
 - [Ação do Gerenciador de configurações](intune-devices-configurationmanageraction.md)
 - [Status de entrega de ação do Gerenciador de configurações](intune-devices-configurationmanageractiondeliverystatus.md)
@@ -49,6 +53,9 @@ Namespace: microsoft.graph
 - [Resultado da ação de excluir o usuário do dispositivo compartilhado da Apple](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
 - [Aplicativo detectado](intune-devices-detectedapp.md)
 - [Resultado da ação do dispositivo](intune-devices-deviceactionresult.md)
+- [Script de conformidade do dispositivo](intune-devices-devicecompliancescript.md)
+- [Estado do dispositivo de script de conformidade do dispositivo](intune-devices-devicecompliancescriptdevicestate.md)
+- [Resumo de execução de script de conformidade do dispositivo](intune-devices-devicecompliancescriptrunsummary.md)
 - [Motivo da falha de registro do dispositivo](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [Resumo do Estado de Acesso ao Exchange do dispositivo](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Geolocalização do dispositivo](intune-devices-devicegeolocation.md)
@@ -220,6 +227,7 @@ Namespace: microsoft.graph
 - [Visão geral da análise da experiência do usuário](intune-devices-userexperienceanalyticsoverview.md)
 - [Resumo de regressão da análise da experiência do usuário](intune-devices-userexperienceanalyticsregressionsummary.md)
 - [Histórico de pontuação da análise da experiência do usuário](intune-devices-userexperienceanalyticsscorehistory.md)
+- [Configurações de análise da experiência do usuário](intune-devices-userexperienceanalyticssettings.md)
 - [Análise da experiência do usuário resumida por](intune-devices-userexperienceanalyticssummarizedby.md)
 - [Expressões de condição de gerenciamento variável](intune-fencing-variablemanagementconditionexpression.md)
 - [Estado de implantação do piloto automático do Windows](intune-troubleshooting-windowsautopilotdeploymentstate.md)

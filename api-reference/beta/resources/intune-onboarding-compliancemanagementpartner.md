@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8acd32a4fbb664e40ead3ac125ad1ef1b4f29168
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a8a8ae2ff09fe47326c218af9bc84b7c51c882f0
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419003"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793819"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>tipo de recurso complianceManagementPartner
 
@@ -22,13 +22,13 @@ Namespace: microsoft.graph
 
 Parceiro de gerenciamento de conformidade para todas as plataformas
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar complianceManagementPartners](../api/intune-onboarding-compliancemanagementpartner-list.md)|coleção [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Listar Propriedades e relações dos objetos [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) .|
 |[Obter complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-get.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Leia as propriedades e as relações do objeto [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) .|
 |[Criar complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-create.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Criar um novo objeto [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) .|
-|[Excluir complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-delete.md)|Nenhum|Exclui [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).|
+|[Excluir complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-delete.md)|Nenhuma|Exclui [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).|
 |[Atualizar complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-update.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Atualiza as propriedades de um objeto [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) .|
 
 ## <a name="properties"></a>Propriedades
@@ -48,7 +48,7 @@ Parceiro de gerenciamento de conformidade para todas as plataformas
 |iosEnrollmentAssignments|coleção [complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos IOS por meio do parceiro.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -73,7 +73,9 @@ Veja a seguir uma representação JSON do recurso.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "String",
+        "deviceAndAppManagementAssignmentFilterType": "String"
       }
     }
   ],
@@ -81,7 +83,9 @@ Veja a seguir uma representação JSON do recurso.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "String",
+        "deviceAndAppManagementAssignmentFilterType": "String"
       }
     }
   ],
@@ -89,7 +93,9 @@ Veja a seguir uma representação JSON do recurso.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "String",
+        "deviceAndAppManagementAssignmentFilterType": "String"
       }
     }
   ],
@@ -97,7 +103,9 @@ Veja a seguir uma representação JSON do recurso.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "String",
+        "deviceAndAppManagementAssignmentFilterType": "String"
       }
     }
   ]

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8caa1958ff2eaffbea4e2f001d1dfbe43055c06a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a12d81edd4079b7bea9dabe576dfe57a6420cc10
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43393884"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793259"
 ---
 # <a name="get-win32lobapp"></a>Obter win32LobApp
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Leia as propriedades e as relações do objeto [win32LobApp](../resources/intune-apps-win32lobapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -66,11 +66,11 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3242
+Content-Length: 3625
 
 {
   "value": {
@@ -141,6 +141,18 @@ Content-Length: 3242
         "keyPath": "Key Path value",
         "valueName": "Value Name value",
         "detectionType": "exists"
+      }
+    ],
+    "rules": [
+      {
+        "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+        "ruleType": "requirement",
+        "check32BitOn64System": true,
+        "keyPath": "Key Path value",
+        "valueName": "Value Name value",
+        "operationType": "exists",
+        "operator": "equal",
+        "comparisonValue": "Comparison Value value"
       }
     ],
     "installExperience": {

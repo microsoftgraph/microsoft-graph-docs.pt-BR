@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d0eb7ec8aaedde3f725c09b3eea9b4e537f3015a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5a54626104faa00e443efe1d430fbd53eb9784dd
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432132"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792713"
 ---
 # <a name="update-managedalldevicecertificatestate"></a>Atualizar managedAllDeviceCertificateState
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Atualiza as propriedades de um objeto [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -65,11 +65,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |certificateKeyUsages|Int32|Uso de chave|
 |certificateExtendedKeyUsages|String|Uso avançado de chave|
 |certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
+|certificateRevokeStatusLastChangeDateTime|DateTimeOffset|A hora em que o status da revogação foi alterado pela última vez|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -92,12 +93,13 @@ Content-length: 735
   "certificateSubjectName": "Certificate Subject Name value",
   "certificateKeyUsages": 4,
   "certificateExtendedKeyUsages": "Certificate Extended Key Usages value",
-  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
+  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
+  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -116,7 +118,8 @@ Content-Length: 784
   "certificateSubjectName": "Certificate Subject Name value",
   "certificateKeyUsages": 4,
   "certificateExtendedKeyUsages": "Certificate Extended Key Usages value",
-  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
+  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
+  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
 

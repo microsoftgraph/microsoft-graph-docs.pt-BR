@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 11597599cc7303c2190d5991d0fb2c502a17b86a
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: f7b00de9363d4145165596d8ded2339de1843df0
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179324"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793476"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -44,6 +44,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração automática de proxy global de proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
 - [Proxy global do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
 - [Perfil de certificado PFX importado do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md)
+- [Perfil de certificado PKCS do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md)
 - [Modo de repositório de execução do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Tipo de senha obrigatória do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Perfil de certificado SCEP do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
@@ -119,6 +120,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de compartilhamento de área de transferência do Application Guard Block](intune-deviceconfig-applicationguardblockclipboardsharingtype.md)
 - [Tipo de transferência de arquivo do Application Guard Block](intune-deviceconfig-applicationguardblockfiletransfertype.md)
 - [Opções habilitadas do Application Guard](intune-deviceconfig-applicationguardenabledoptions.md)
+- [Constante de transformação de autenticação](intune-deviceconfig-authenticationtransformconstant.md)
 - [Método de recusa de notificação de reinicialização automática](intune-deviceconfig-autorestartnotificationdismissalmethod.md)
 - [Modo de atualização automática](intune-deviceconfig-automaticupdatemode.md)
 - [Método de criptografia do BitLocker](intune-deviceconfig-bitlockerencryptionmethod.md)
@@ -136,10 +138,13 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Repositório de certificados](intune-deviceconfig-certificatestore.md)
 - [Escala de período de validade do certificado](intune-deviceconfig-certificatevalidityperiodscale.md)
 - [Alterar a permissão de configurações de UEFI](intune-deviceconfig-changeuefisettingspermission.md)
+- [Código](intune-deviceconfig-code.md)
 - [Uso de configurações](intune-deviceconfig-configurationusage.md)
 - [Extensão de logon único da credencial](intune-deviceconfig-credentialsinglesignonextension.md)
+- [Pacote de criptografia](intune-deviceconfig-cryptographysuite.md)
 - [Nome alternativo da entidade personalizada](intune-deviceconfig-customsubjectalternativename.md)
 - [Janela de tempo de atualização personalizada](intune-deviceconfig-customupdatetimewindow.md)
+- [Tipo de dados](intune-deviceconfig-datatype.md)
 - [Dia da semana](intune-deviceconfig-dayofweek.md)
 - [Política de conformidade do dispositivo padrão](intune-deviceconfig-defaultdevicecompliancepolicy.md)
 - [Tipo de superfície de ataque do Defender](intune-deviceconfig-defenderattacksurfacetype.md)
@@ -175,9 +180,14 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Status do dispositivo de conformidade do dispositivo](intune-deviceconfig-devicecompliancedevicestatus.md)
 - [Atribuição de política de conformidade do dispositivo](intune-deviceconfig-devicecompliancepolicyassignment.md)
 - [Resumo do estado do dispositivo de política de conformidade do dispositivo](intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)
+- [Script de política de conformidade do dispositivo](intune-deviceconfig-devicecompliancepolicyscript.md)
 - [Estado de configuração de política de conformidade do dispositivo](intune-deviceconfig-devicecompliancepolicysettingstate.md)
 - [Resumo do estado da configuração de política de conformidade do dispositivo](intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)
 - [Ação de conformidade agendada do dispositivo para a regra](intune-deviceconfig-devicecompliancescheduledactionforrule.md)
+- [Erro de script de conformidade do dispositivo](intune-deviceconfig-devicecompliancescripterror.md)
+- [Regra de script de conformidade do dispositivo](intune-deviceconfig-devicecompliancescriptrule.md)
+- [Erro de regra de script de conformidade do dispositivo](intune-deviceconfig-devicecompliancescriptruleerror.md)
+- [Resultado de validação do script de conformidade do dispositivo](intune-deviceconfig-devicecompliancescriptvalidationresult.md)
 - [Estado de configuração de conformidade do dispositivo](intune-deviceconfig-devicecompliancesettingstate.md)
 - [Visão geral do usuário de conformidade do dispositivo](intune-deviceconfig-devicecomplianceuseroverview.md)
 - [Status do usuário de conformidade do dispositivo](intune-deviceconfig-devicecomplianceuserstatus.md)
@@ -197,12 +207,14 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Edição de so da regra de aplicabilidade de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)
 - [Versão de so da regra de aplicabilidade de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)
 - [Tipo de regra de aplicabilidade de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementapplicabilityruletype.md)
+- [Autoridade de certificação de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementcertificationauthority.md)
 - [Configurações de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementsettings.md)
 - [Usuário ou grupo local de direitos de usuário de gerenciamento de dispositivos](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [Configuração de direitos do usuário de gerenciamento de dispositivos](intune-deviceconfig-devicemanagementuserrightssetting.md)
 - [Nível de proteção contra ameaças ao dispositivo](intune-deviceconfig-devicethreatprotectionlevel.md)
 - [Tipos de dispositivo](intune-deviceconfig-devicetypes.md)
 - [Modo de envio de dados de diagnóstico](intune-deviceconfig-diagnosticdatasubmissionmode.md)
+- [Grupo Diffie Hellman](intune-deviceconfig-diffiehellmangroup.md)
 - [Tipo de política de enumeração de dispositivo de Proteção DMA](intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)
 - [Origem do nome do domínio](intune-deviceconfig-domainnamesource.md)
 - [Configuração rápida de EAP](intune-deviceconfig-eapfastconfiguration.md)
@@ -346,6 +358,10 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [par de chave/valor de domínios associados ao macOS](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
 - [Base de perfil de certificado do macOS](intune-deviceconfig-macoscertificateprofilebase.md)
 - [Política de conformidade do macOS](intune-deviceconfig-macoscompliancepolicy.md)
+- [política de cliente de cache de conteúdo macOS](intune-deviceconfig-macoscontentcachingclientpolicy.md)
+- [política de seleção pai de cache de conteúdo macOS](intune-deviceconfig-macoscontentcachingparentselectionpolicy.md)
+- [política de ponto de cache de conteúdo macOS](intune-deviceconfig-macoscontentcachingpeerpolicy.md)
+- [tipo de cache de conteúdo macOS](intune-deviceconfig-macoscontentcachingtype.md)
 - [extensão de logon único da credencial macOS](intune-deviceconfig-macoscredentialsinglesignonextension.md)
 - [configuração de aplicativo personalizado do macOS](intune-deviceconfig-macoscustomappconfiguration.md)
 - [Configuração personalizada do macOS](intune-deviceconfig-macoscustomconfiguration.md)
@@ -389,6 +405,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Classificação de conteúdo de mídia do Reino Unido](intune-deviceconfig-mediacontentratingunitedkingdom.md)
 - [Classificação de conteúdo de mídia dos Estados Unidos](intune-deviceconfig-mediacontentratingunitedstates.md)
 - [Tipo de limite de conexão limitada](intune-deviceconfig-meteredconnectionlimittype.md)
+- [Presença de encaixe do Microsoft Launcher](intune-deviceconfig-microsoftlauncherdockpresence.md)
+- [Posicionamento da barra de pesquisa do iniciador Microsoft](intune-deviceconfig-microsoftlaunchersearchbarplacement.md)
 - [Canal Miracast](intune-deviceconfig-miracastchannel.md)
 - [Conector NDES](intune-deviceconfig-ndesconnector.md)
 - [Estado do conector NDES](intune-deviceconfig-ndesconnectorstate.md)
@@ -406,6 +424,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Cadeia xml de configuração de OMA](intune-deviceconfig-omasettingstringxml.md)
 - [Carga de criptografia local](intune-raimportcerts-onpremencryptedpayload.md)
 - [Intervalo de versão do sistema operacional](intune-deviceconfig-operatingsystemversionrange.md)
+- [Operator](intune-deviceconfig-operator.md)
+- [Grupo de sigilo de encaminhamento perfeito](intune-deviceconfig-perfectforwardsecrecygroup.md)
 - [Solicitação de recript de pfx](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Certificado de usuário pfx](intune-raimportcerts-pfxusercertificate.md)
 - [Tipo de ação de energia](intune-deviceconfig-poweractiontype.md)

@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7759a9c42ca9178dc95266ffa4630ef891832ecd
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 2390ff2f9aab1fe74aa6aebf0cfdbeeb6a2d5131
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062634"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793588"
 ---
 # <a name="riskyuser-resource-type"></a>tipo de recurso riskyUser
 
@@ -24,28 +24,27 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 
 >**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método   | Tipo de retorno|Descrição|
 |:---------------|:--------|:----------|
 |[Listar riskyUsers](../api/riskyusers-list.md) | coleção [riskyUser](riskyuser.md)|Listar usuários arriscados e suas propriedades.|
 |[Obter riskyUser](../api/riskyusers-get.md) | [riskyUser](riskyuser.md)|Obtenha um usuário arriscado específico e suas propriedades.|
 |[Histórico de lista](../api/riskyuser-list-history.md) | coleção [riskyUserHistoryItem](riskyuserhistoryitem.md)|Obter o histórico de riscos de um usuário do Azure AD.|
-|[Confirmar riskyUsers comprometido](../api/riskyusers-confirmcompromised.md)|Nenhum |Confirmar um usuário arriscado como comprometido.|
-|[Ignorar riskyUsers](../api/riskyusers-dismiss.md)|Nenhum | Descartar o risco de um usuário arriscado.|
+|[Confirmar riskyUsers comprometido](../api/riskyusers-confirmcompromised.md)|Nenhuma |Confirmar um usuário arriscado como comprometido.|
+|[Ignorar riskyUsers](../api/riskyusers-dismiss.md)|Nenhuma | Descartar o risco de um usuário arriscado.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
 |`id`|`string`|ID exclusiva do usuário em risco|
-|`isDeleted`|`bool`|Indica se o usuário é excluído. Os valores possíveis são `true`:,`false`|
-|`isGuest`|`bool`|Indica se o usuário é um usuário convidado. Os valores possíveis são: `true` e `false`. True se a identidade do usuário está fora do locatário em consideração. Este usuário pode ser um usuário B2B ou B2C com identidade no Azure AD, no MSA ou no provedor de identidade de terceiros. False se a identidade do usuário está dentro do locatário em consideração|
+|`isDeleted`|`bool`|Indica se o usuário é excluído. Os valores possíveis são: `true` ,`false`|
 |`isProcessing`|`bool`|Indica wehther que o estado arriscado de um usuário está sendo processado pelo backend|
 |`riskLastUpdatedDateTime`|`datetime`|A data e a hora em que o usuário arriscado foi atualizado pela última vez|
 |`riskLevel`|`riskLevel`| Os valores possíveis são baixo, médio, alto, oculto, nenhum, unknownFutureValue.  |
 |`riskState`|`riskState`| Os valores possíveis são None, confirmedSafe, remediated, atRisk, unknownFutureValue.  |
-|`riskDetail`|`riskDetail`| Os valores possíveis são None, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, oculto, adminConfirmedUserCompromised, unknownFutureValue.  |
+|`riskDetail`|`riskDetail`| Os valores possíveis são None, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, Hidden, adminConfirmedUserCompromised, unknownFutureValue.  |
 |`userDisplayName`|`string`|Nome de exibição do usuário arriscado|
 |`userPrincipalName`|`string`|Nome UPN de usuário arriscado|
 
@@ -70,7 +69,6 @@ Veja a seguir uma representação JSON do recurso.
 {
 "id": "string",
 "riskLastUpdatedDateTime": "dateTimeOffset",
-"isGuest": "boolean",
 "isProcessing": "boolean",
 "isDeleted": "boolean",
 "riskDetail":  "string",
