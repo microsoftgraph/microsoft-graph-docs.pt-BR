@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e436e32fd235128e57f96fbf916a9d51c4206e64
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: ceb14a8ee5f1504a9e3bb0d0bc5ebef59f1eac06
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178889"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44788721"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -48,6 +48,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Motivo de sinalização do aplicativo gerenciado](intune-mam-managedappflaggedreason.md)
 - [Restrição de notificação de aplicativo gerenciado](intune-mam-managedappnotificationrestriction.md)
 - [Operação de aplicativo gerenciado](intune-mam-managedappoperation.md)
+- [Nível de redirecionamento do número de telefone do aplicativo gerenciado](intune-mam-managedappphonenumberredirectlevel.md)
 - [Conjunto de caracteres do PIN do aplicativo gerenciado](intune-mam-managedapppincharacterset.md)
 - [Política de aplicativo gerenciado](intune-mam-managedapppolicy.md)
 - [Resumo da implantação da política de aplicativo gerenciado](intune-mam-managedapppolicydeploymentsummary.md)

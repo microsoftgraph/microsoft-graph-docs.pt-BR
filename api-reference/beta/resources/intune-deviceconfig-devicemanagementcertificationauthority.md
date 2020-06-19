@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração vpnEncryptionAlgorithmType
-description: O tipo de algoritmo de criptografia de associação de segurança VPN
+title: tipo de enumeração deviceManagementCertificationAuthority
+description: Tipos de autoridade de certificação de gerenciamento de dispositivos.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b8a14effae7c95605529c0d0b12eb45f51708c43
+ms.openlocfilehash: e16786a4a619ce646a3815af4b56011dd13dee7d
 ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788154"
+ms.locfileid: "44789310"
 ---
-# <a name="vpnencryptionalgorithmtype-enum-type"></a>tipo de enumeração vpnEncryptionAlgorithmType
+# <a name="devicemanagementcertificationauthority-enum-type"></a>tipo de enumeração deviceManagementCertificationAuthority
 
 Namespace: microsoft.graph
 
@@ -20,19 +20,14 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-O tipo de algoritmo de criptografia de associação de segurança VPN
+Tipos de autoridade de certificação de gerenciamento de dispositivos.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|aes256|,0|AES-256|
-|criptografia|1 |CRIPTOGRAFIA|
-|tripleDes|duas|ALGORITMO|
-|aes128|3D|AES-128|
-|aes128Gcm|4 |AES-128-GCM (16 octeto do ICV)|
-|aes256Gcm|5 |AES-256-GCM (16 octeto do ICV)|
-|aes192|6 |AES-192|
-|aes192Gcm|7 |AES-192-GCM|
+|notConfigured|,0|Não configurado.|
+|o|1 |Tipo de autoridade de certificação da Microsoft.|
+|digiCert|duas|Tipo de autoridade de certificação DigiCert.|
 
 
 

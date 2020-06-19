@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 65ec840aaab89ee3558ee2882c5c3ed048f4c65a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 35ffae18d564ccda9d54599833195ea845d654f4
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43383179"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44788056"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>tipo de recurso resetPasscodeActionResult
 
@@ -33,9 +33,10 @@ Herda de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 |startDateTime|DateTimeOffset|Hora de início da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora da última atualização do estado da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |senha|Cadeia de caracteres|Senha recentemente gerada para o dispositivo |
+|errorCode|Int32|Código de erro de ação RotateBitLockerKeys. Valores válidos de 0 a 2147483647|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -51,7 +52,8 @@ Veja a seguir uma representação JSON do recurso.
   "actionState": "String",
   "startDateTime": "String (timestamp)",
   "lastUpdatedDateTime": "String (timestamp)",
-  "passcode": "String"
+  "passcode": "String",
+  "errorCode": 1024
 }
 ```
 
