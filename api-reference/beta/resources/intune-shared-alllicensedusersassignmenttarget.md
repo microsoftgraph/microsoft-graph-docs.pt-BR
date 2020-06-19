@@ -5,35 +5,37 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e05c4173a6d41847f361c657afb77bd90434c3a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4388710e079366193f2a2ca7bd842a2d7b5763cf
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453131"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793595"
 ---
-# <a name="alllicensedusersassignmenttarget-resource-type"></a><span data-ttu-id="5fe87-103">Tipo de recurso allLicensedUsersAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="5fe87-103">allLicensedUsersAssignmentTarget resource type</span></span>
+# <a name="alllicensedusersassignmenttarget-resource-type"></a><span data-ttu-id="8d3cc-103">Tipo de recurso allLicensedUsersAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="8d3cc-103">allLicensedUsersAssignmentTarget resource type</span></span>
 
-<span data-ttu-id="5fe87-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5fe87-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8d3cc-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8d3cc-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="5fe87-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="5fe87-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="8d3cc-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="8d3cc-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="5fe87-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5fe87-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8d3cc-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="8d3cc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="5fe87-107">Representa uma atribuição para todos os usuários licenciados no locatário.</span><span class="sxs-lookup"><span data-stu-id="5fe87-107">Represents an assignment to all licensed users in the tenant.</span></span>
+<span data-ttu-id="8d3cc-107">Representa uma atribuição para todos os usuários licenciados no locatário.</span><span class="sxs-lookup"><span data-stu-id="8d3cc-107">Represents an assignment to all licensed users in the tenant.</span></span>
 
 
-<span data-ttu-id="5fe87-108">Herda de [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="5fe87-108">Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>
+<span data-ttu-id="8d3cc-108">Herda de [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="8d3cc-108">Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5fe87-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5fe87-109">Properties</span></span>
-|<span data-ttu-id="5fe87-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5fe87-110">Property</span></span>|<span data-ttu-id="5fe87-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="5fe87-111">Type</span></span>|<span data-ttu-id="5fe87-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="5fe87-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8d3cc-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8d3cc-109">Properties</span></span>
+|<span data-ttu-id="8d3cc-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8d3cc-110">Property</span></span>|<span data-ttu-id="8d3cc-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="8d3cc-111">Type</span></span>|<span data-ttu-id="8d3cc-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="8d3cc-112">Description</span></span>|
 |:---|:---|:---|
+|<span data-ttu-id="8d3cc-113">deviceAndAppManagementAssignmentFilterId</span><span class="sxs-lookup"><span data-stu-id="8d3cc-113">deviceAndAppManagementAssignmentFilterId</span></span>|<span data-ttu-id="8d3cc-114">String</span><span class="sxs-lookup"><span data-stu-id="8d3cc-114">String</span></span>|<span data-ttu-id="8d3cc-115">A ID do filtro para a atribuição de destino.</span><span class="sxs-lookup"><span data-stu-id="8d3cc-115">The Id of the filter for the target assignment.</span></span> <span data-ttu-id="8d3cc-116">Herdado de [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="8d3cc-116">Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>|
+|<span data-ttu-id="8d3cc-117">deviceAndAppManagementAssignmentFilterType</span><span class="sxs-lookup"><span data-stu-id="8d3cc-117">deviceAndAppManagementAssignmentFilterType</span></span>|[<span data-ttu-id="8d3cc-118">deviceAndAppManagementAssignmentFilterType</span><span class="sxs-lookup"><span data-stu-id="8d3cc-118">deviceAndAppManagementAssignmentFilterType</span></span>](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|<span data-ttu-id="8d3cc-119">O tipo de filtro da atribuição de destino, ou seja, excluir ou incluir.</span><span class="sxs-lookup"><span data-stu-id="8d3cc-119">The type of filter of the target assignment i.e. Exclude or Include.</span></span> <span data-ttu-id="8d3cc-120">Herdado de [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md).</span><span class="sxs-lookup"><span data-stu-id="8d3cc-120">Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md).</span></span> <span data-ttu-id="8d3cc-121">Os valores possíveis são: `none`, `include`.</span><span class="sxs-lookup"><span data-stu-id="8d3cc-121">Possible values are: `none`, `include`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="5fe87-113">Relações</span><span class="sxs-lookup"><span data-stu-id="5fe87-113">Relationships</span></span>
-<span data-ttu-id="5fe87-114">Nenhum</span><span class="sxs-lookup"><span data-stu-id="5fe87-114">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="8d3cc-122">Relações</span><span class="sxs-lookup"><span data-stu-id="8d3cc-122">Relationships</span></span>
+<span data-ttu-id="8d3cc-123">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="8d3cc-123">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="5fe87-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5fe87-115">JSON Representation</span></span>
-<span data-ttu-id="5fe87-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="5fe87-116">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8d3cc-124">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8d3cc-124">JSON Representation</span></span>
+<span data-ttu-id="8d3cc-125">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="8d3cc-125">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
@@ -41,7 +43,9 @@ ms.locfileid: "43453131"
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget"
+  "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget",
+  "deviceAndAppManagementAssignmentFilterId": "String",
+  "deviceAndAppManagementAssignmentFilterType": "String"
 }
 ```
 

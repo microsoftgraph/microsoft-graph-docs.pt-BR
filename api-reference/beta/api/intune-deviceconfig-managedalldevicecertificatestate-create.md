@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b0924b2b581f758c256072d26531391b51c86453
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 58f061bd89c3633651e40578e23db1f1f4836406
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432216"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792734"
 ---
-# <a name="create-managedalldevicecertificatestate"></a><span data-ttu-id="78fd4-103">Criar managedAllDeviceCertificateState</span><span class="sxs-lookup"><span data-stu-id="78fd4-103">Create managedAllDeviceCertificateState</span></span>
+# <a name="create-managedalldevicecertificatestate"></a><span data-ttu-id="6eaf9-103">Criar managedAllDeviceCertificateState</span><span class="sxs-lookup"><span data-stu-id="6eaf9-103">Create managedAllDeviceCertificateState</span></span>
 
-<span data-ttu-id="78fd4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="78fd4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6eaf9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6eaf9-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="78fd4-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="78fd4-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="6eaf9-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="78fd4-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="78fd4-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6eaf9-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="78fd4-107">Criar um novo objeto [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .</span><span class="sxs-lookup"><span data-stu-id="78fd4-107">Create a new [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) object.</span></span>
+<span data-ttu-id="6eaf9-107">Criar um novo objeto [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .</span><span class="sxs-lookup"><span data-stu-id="6eaf9-107">Create a new [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="78fd4-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="78fd4-108">Prerequisites</span></span>
-<span data-ttu-id="78fd4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="78fd4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6eaf9-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="6eaf9-108">Prerequisites</span></span>
+<span data-ttu-id="6eaf9-109">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="6eaf9-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6eaf9-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="78fd4-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="78fd4-111">Permission type</span></span>|<span data-ttu-id="78fd4-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="78fd4-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="6eaf9-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6eaf9-111">Permission type</span></span>|<span data-ttu-id="6eaf9-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="6eaf9-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="78fd4-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="78fd4-113">Delegated (work or school account)</span></span>|<span data-ttu-id="78fd4-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="78fd4-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="78fd4-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="78fd4-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="78fd4-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="78fd4-116">Not supported.</span></span>|
-|<span data-ttu-id="78fd4-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="78fd4-117">Application</span></span>|<span data-ttu-id="78fd4-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="78fd4-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="6eaf9-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6eaf9-113">Delegated (work or school account)</span></span>|<span data-ttu-id="6eaf9-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6eaf9-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="6eaf9-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6eaf9-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6eaf9-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-116">Not supported.</span></span>|
+|<span data-ttu-id="6eaf9-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6eaf9-117">Application</span></span>|<span data-ttu-id="6eaf9-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6eaf9-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="78fd4-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="78fd4-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6eaf9-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6eaf9-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,41 +40,42 @@ ms.locfileid: "43432216"
 POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="78fd4-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="78fd4-120">Request headers</span></span>
-|<span data-ttu-id="78fd4-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="78fd4-121">Header</span></span>|<span data-ttu-id="78fd4-122">Valor</span><span class="sxs-lookup"><span data-stu-id="78fd4-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6eaf9-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6eaf9-120">Request headers</span></span>
+|<span data-ttu-id="6eaf9-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="6eaf9-121">Header</span></span>|<span data-ttu-id="6eaf9-122">Valor</span><span class="sxs-lookup"><span data-stu-id="6eaf9-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="78fd4-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="78fd4-123">Authorization</span></span>|<span data-ttu-id="78fd4-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="78fd4-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="78fd4-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="78fd4-125">Accept</span></span>|<span data-ttu-id="78fd4-126">application/json</span><span class="sxs-lookup"><span data-stu-id="78fd4-126">application/json</span></span>|
+|<span data-ttu-id="6eaf9-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="6eaf9-123">Authorization</span></span>|<span data-ttu-id="6eaf9-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="6eaf9-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="6eaf9-125">Accept</span></span>|<span data-ttu-id="6eaf9-126">application/json</span><span class="sxs-lookup"><span data-stu-id="6eaf9-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="78fd4-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="78fd4-127">Request body</span></span>
-<span data-ttu-id="78fd4-128">No corpo da solicitação, forneça uma representação JSON do objeto managedAllDeviceCertificateState.</span><span class="sxs-lookup"><span data-stu-id="78fd4-128">In the request body, supply a JSON representation for the managedAllDeviceCertificateState object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6eaf9-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6eaf9-127">Request body</span></span>
+<span data-ttu-id="6eaf9-128">No corpo da solicitação, forneça uma representação JSON do objeto managedAllDeviceCertificateState.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-128">In the request body, supply a JSON representation for the managedAllDeviceCertificateState object.</span></span>
 
-<span data-ttu-id="78fd4-129">A tabela a seguir mostra as propriedades que são necessárias ao criar managedAllDeviceCertificateState.</span><span class="sxs-lookup"><span data-stu-id="78fd4-129">The following table shows the properties that are required when you create the managedAllDeviceCertificateState.</span></span>
+<span data-ttu-id="6eaf9-129">A tabela a seguir mostra as propriedades que são necessárias ao criar managedAllDeviceCertificateState.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-129">The following table shows the properties that are required when you create the managedAllDeviceCertificateState.</span></span>
 
-|<span data-ttu-id="78fd4-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="78fd4-130">Property</span></span>|<span data-ttu-id="78fd4-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="78fd4-131">Type</span></span>|<span data-ttu-id="78fd4-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="78fd4-132">Description</span></span>|
+|<span data-ttu-id="6eaf9-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6eaf9-130">Property</span></span>|<span data-ttu-id="6eaf9-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="6eaf9-131">Type</span></span>|<span data-ttu-id="6eaf9-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="6eaf9-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="78fd4-133">id</span><span class="sxs-lookup"><span data-stu-id="78fd4-133">id</span></span>|<span data-ttu-id="78fd4-134">String</span><span class="sxs-lookup"><span data-stu-id="78fd4-134">String</span></span>|<span data-ttu-id="78fd4-135">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="78fd4-135">Key of the entity.</span></span>|
-|<span data-ttu-id="78fd4-136">certificateRevokeStatus</span><span class="sxs-lookup"><span data-stu-id="78fd4-136">certificateRevokeStatus</span></span>|[<span data-ttu-id="78fd4-137">certificateRevocationStatus</span><span class="sxs-lookup"><span data-stu-id="78fd4-137">certificateRevocationStatus</span></span>](../resources/intune-deviceconfig-certificaterevocationstatus.md)|<span data-ttu-id="78fd4-138">Revogar status.</span><span class="sxs-lookup"><span data-stu-id="78fd4-138">Revoke status.</span></span> <span data-ttu-id="78fd4-139">Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.</span><span class="sxs-lookup"><span data-stu-id="78fd4-139">Possible values are: `none`, `pending`, `issued`, `failed`, `revoked`.</span></span>|
-|<span data-ttu-id="78fd4-140">managedDeviceDisplayName</span><span class="sxs-lookup"><span data-stu-id="78fd4-140">managedDeviceDisplayName</span></span>|<span data-ttu-id="78fd4-141">String</span><span class="sxs-lookup"><span data-stu-id="78fd4-141">String</span></span>|<span data-ttu-id="78fd4-142">Nome de exibição do dispositivo</span><span class="sxs-lookup"><span data-stu-id="78fd4-142">Device display name</span></span>|
-|<span data-ttu-id="78fd4-143">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="78fd4-143">userPrincipalName</span></span>|<span data-ttu-id="78fd4-144">String</span><span class="sxs-lookup"><span data-stu-id="78fd4-144">String</span></span>|<span data-ttu-id="78fd4-145">Nome UPN</span><span class="sxs-lookup"><span data-stu-id="78fd4-145">User principal name</span></span>|
-|<span data-ttu-id="78fd4-146">certificateExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="78fd4-146">certificateExpirationDateTime</span></span>|<span data-ttu-id="78fd4-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="78fd4-147">DateTimeOffset</span></span>|<span data-ttu-id="78fd4-148">Data de vencimento do certificado</span><span class="sxs-lookup"><span data-stu-id="78fd4-148">Certificate expiry date</span></span>|
-|<span data-ttu-id="78fd4-149">certificateIssuerName</span><span class="sxs-lookup"><span data-stu-id="78fd4-149">certificateIssuerName</span></span>|<span data-ttu-id="78fd4-150">String</span><span class="sxs-lookup"><span data-stu-id="78fd4-150">String</span></span>|<span data-ttu-id="78fd4-151">Emissor</span><span class="sxs-lookup"><span data-stu-id="78fd4-151">Issuer</span></span>|
-|<span data-ttu-id="78fd4-152">certificateThumbprint</span><span class="sxs-lookup"><span data-stu-id="78fd4-152">certificateThumbprint</span></span>|<span data-ttu-id="78fd4-153">String</span><span class="sxs-lookup"><span data-stu-id="78fd4-153">String</span></span>|<span data-ttu-id="78fd4-154">Identificação</span><span class="sxs-lookup"><span data-stu-id="78fd4-154">Thumbprint</span></span>|
-|<span data-ttu-id="78fd4-155">certificateSerialNumber</span><span class="sxs-lookup"><span data-stu-id="78fd4-155">certificateSerialNumber</span></span>|<span data-ttu-id="78fd4-156">String</span><span class="sxs-lookup"><span data-stu-id="78fd4-156">String</span></span>|<span data-ttu-id="78fd4-157">Número de série</span><span class="sxs-lookup"><span data-stu-id="78fd4-157">Serial number</span></span>|
-|<span data-ttu-id="78fd4-158">certificateSubjectName</span><span class="sxs-lookup"><span data-stu-id="78fd4-158">certificateSubjectName</span></span>|<span data-ttu-id="78fd4-159">String</span><span class="sxs-lookup"><span data-stu-id="78fd4-159">String</span></span>|<span data-ttu-id="78fd4-160">Nome do assunto do certificado</span><span class="sxs-lookup"><span data-stu-id="78fd4-160">Certificate subject name</span></span>|
-|<span data-ttu-id="78fd4-161">certificateKeyUsages</span><span class="sxs-lookup"><span data-stu-id="78fd4-161">certificateKeyUsages</span></span>|<span data-ttu-id="78fd4-162">Int32</span><span class="sxs-lookup"><span data-stu-id="78fd4-162">Int32</span></span>|<span data-ttu-id="78fd4-163">Uso de chave</span><span class="sxs-lookup"><span data-stu-id="78fd4-163">Key Usage</span></span>|
-|<span data-ttu-id="78fd4-164">certificateExtendedKeyUsages</span><span class="sxs-lookup"><span data-stu-id="78fd4-164">certificateExtendedKeyUsages</span></span>|<span data-ttu-id="78fd4-165">String</span><span class="sxs-lookup"><span data-stu-id="78fd4-165">String</span></span>|<span data-ttu-id="78fd4-166">Uso avançado de chave</span><span class="sxs-lookup"><span data-stu-id="78fd4-166">Enhanced Key Usage</span></span>|
-|<span data-ttu-id="78fd4-167">certificateIssuanceDateTime</span><span class="sxs-lookup"><span data-stu-id="78fd4-167">certificateIssuanceDateTime</span></span>|<span data-ttu-id="78fd4-168">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="78fd4-168">DateTimeOffset</span></span>|<span data-ttu-id="78fd4-169">Data de emissão</span><span class="sxs-lookup"><span data-stu-id="78fd4-169">Issuance date</span></span>|
+|<span data-ttu-id="6eaf9-133">id</span><span class="sxs-lookup"><span data-stu-id="6eaf9-133">id</span></span>|<span data-ttu-id="6eaf9-134">String</span><span class="sxs-lookup"><span data-stu-id="6eaf9-134">String</span></span>|<span data-ttu-id="6eaf9-135">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-135">Key of the entity.</span></span>|
+|<span data-ttu-id="6eaf9-136">certificateRevokeStatus</span><span class="sxs-lookup"><span data-stu-id="6eaf9-136">certificateRevokeStatus</span></span>|[<span data-ttu-id="6eaf9-137">certificateRevocationStatus</span><span class="sxs-lookup"><span data-stu-id="6eaf9-137">certificateRevocationStatus</span></span>](../resources/intune-deviceconfig-certificaterevocationstatus.md)|<span data-ttu-id="6eaf9-138">Revogar status.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-138">Revoke status.</span></span> <span data-ttu-id="6eaf9-139">Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-139">Possible values are: `none`, `pending`, `issued`, `failed`, `revoked`.</span></span>|
+|<span data-ttu-id="6eaf9-140">managedDeviceDisplayName</span><span class="sxs-lookup"><span data-stu-id="6eaf9-140">managedDeviceDisplayName</span></span>|<span data-ttu-id="6eaf9-141">String</span><span class="sxs-lookup"><span data-stu-id="6eaf9-141">String</span></span>|<span data-ttu-id="6eaf9-142">Nome de exibição do dispositivo</span><span class="sxs-lookup"><span data-stu-id="6eaf9-142">Device display name</span></span>|
+|<span data-ttu-id="6eaf9-143">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="6eaf9-143">userPrincipalName</span></span>|<span data-ttu-id="6eaf9-144">String</span><span class="sxs-lookup"><span data-stu-id="6eaf9-144">String</span></span>|<span data-ttu-id="6eaf9-145">Nome UPN</span><span class="sxs-lookup"><span data-stu-id="6eaf9-145">User principal name</span></span>|
+|<span data-ttu-id="6eaf9-146">certificateExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="6eaf9-146">certificateExpirationDateTime</span></span>|<span data-ttu-id="6eaf9-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6eaf9-147">DateTimeOffset</span></span>|<span data-ttu-id="6eaf9-148">Data de vencimento do certificado</span><span class="sxs-lookup"><span data-stu-id="6eaf9-148">Certificate expiry date</span></span>|
+|<span data-ttu-id="6eaf9-149">certificateIssuerName</span><span class="sxs-lookup"><span data-stu-id="6eaf9-149">certificateIssuerName</span></span>|<span data-ttu-id="6eaf9-150">String</span><span class="sxs-lookup"><span data-stu-id="6eaf9-150">String</span></span>|<span data-ttu-id="6eaf9-151">Emissor</span><span class="sxs-lookup"><span data-stu-id="6eaf9-151">Issuer</span></span>|
+|<span data-ttu-id="6eaf9-152">certificateThumbprint</span><span class="sxs-lookup"><span data-stu-id="6eaf9-152">certificateThumbprint</span></span>|<span data-ttu-id="6eaf9-153">String</span><span class="sxs-lookup"><span data-stu-id="6eaf9-153">String</span></span>|<span data-ttu-id="6eaf9-154">Identificação</span><span class="sxs-lookup"><span data-stu-id="6eaf9-154">Thumbprint</span></span>|
+|<span data-ttu-id="6eaf9-155">certificateSerialNumber</span><span class="sxs-lookup"><span data-stu-id="6eaf9-155">certificateSerialNumber</span></span>|<span data-ttu-id="6eaf9-156">String</span><span class="sxs-lookup"><span data-stu-id="6eaf9-156">String</span></span>|<span data-ttu-id="6eaf9-157">Número de série</span><span class="sxs-lookup"><span data-stu-id="6eaf9-157">Serial number</span></span>|
+|<span data-ttu-id="6eaf9-158">certificateSubjectName</span><span class="sxs-lookup"><span data-stu-id="6eaf9-158">certificateSubjectName</span></span>|<span data-ttu-id="6eaf9-159">String</span><span class="sxs-lookup"><span data-stu-id="6eaf9-159">String</span></span>|<span data-ttu-id="6eaf9-160">Nome do assunto do certificado</span><span class="sxs-lookup"><span data-stu-id="6eaf9-160">Certificate subject name</span></span>|
+|<span data-ttu-id="6eaf9-161">certificateKeyUsages</span><span class="sxs-lookup"><span data-stu-id="6eaf9-161">certificateKeyUsages</span></span>|<span data-ttu-id="6eaf9-162">Int32</span><span class="sxs-lookup"><span data-stu-id="6eaf9-162">Int32</span></span>|<span data-ttu-id="6eaf9-163">Uso de chave</span><span class="sxs-lookup"><span data-stu-id="6eaf9-163">Key Usage</span></span>|
+|<span data-ttu-id="6eaf9-164">certificateExtendedKeyUsages</span><span class="sxs-lookup"><span data-stu-id="6eaf9-164">certificateExtendedKeyUsages</span></span>|<span data-ttu-id="6eaf9-165">String</span><span class="sxs-lookup"><span data-stu-id="6eaf9-165">String</span></span>|<span data-ttu-id="6eaf9-166">Uso avançado de chave</span><span class="sxs-lookup"><span data-stu-id="6eaf9-166">Enhanced Key Usage</span></span>|
+|<span data-ttu-id="6eaf9-167">certificateIssuanceDateTime</span><span class="sxs-lookup"><span data-stu-id="6eaf9-167">certificateIssuanceDateTime</span></span>|<span data-ttu-id="6eaf9-168">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6eaf9-168">DateTimeOffset</span></span>|<span data-ttu-id="6eaf9-169">Data de emissão</span><span class="sxs-lookup"><span data-stu-id="6eaf9-169">Issuance date</span></span>|
+|<span data-ttu-id="6eaf9-170">certificateRevokeStatusLastChangeDateTime</span><span class="sxs-lookup"><span data-stu-id="6eaf9-170">certificateRevokeStatusLastChangeDateTime</span></span>|<span data-ttu-id="6eaf9-171">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6eaf9-171">DateTimeOffset</span></span>|<span data-ttu-id="6eaf9-172">A hora em que o status da revogação foi alterado pela última vez</span><span class="sxs-lookup"><span data-stu-id="6eaf9-172">The time the revoke status was last changed</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="78fd4-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="78fd4-170">Response</span></span>
-<span data-ttu-id="78fd4-171">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="78fd4-171">If successful, this method returns a `201 Created` response code and a [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6eaf9-173">Resposta</span><span class="sxs-lookup"><span data-stu-id="6eaf9-173">Response</span></span>
+<span data-ttu-id="6eaf9-174">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-174">If successful, this method returns a `201 Created` response code and a [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="78fd4-172">Exemplo</span><span class="sxs-lookup"><span data-stu-id="78fd4-172">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6eaf9-175">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6eaf9-175">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="78fd4-173">Solicitação</span><span class="sxs-lookup"><span data-stu-id="78fd4-173">Request</span></span>
-<span data-ttu-id="78fd4-174">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="78fd4-174">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="6eaf9-176">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6eaf9-176">Request</span></span>
+<span data-ttu-id="6eaf9-177">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-177">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 Content-type: application/json
@@ -92,12 +93,13 @@ Content-length: 735
   "certificateSubjectName": "Certificate Subject Name value",
   "certificateKeyUsages": 4,
   "certificateExtendedKeyUsages": "Certificate Extended Key Usages value",
-  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
+  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
+  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="78fd4-175">Resposta</span><span class="sxs-lookup"><span data-stu-id="78fd4-175">Response</span></span>
-<span data-ttu-id="78fd4-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="78fd4-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="6eaf9-178">Resposta</span><span class="sxs-lookup"><span data-stu-id="6eaf9-178">Response</span></span>
+<span data-ttu-id="6eaf9-179">Here is an example of the response.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-179">Here is an example of the response.</span></span> <span data-ttu-id="6eaf9-180">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-180">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="6eaf9-181">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="6eaf9-181">All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -116,7 +118,8 @@ Content-Length: 784
   "certificateSubjectName": "Certificate Subject Name value",
   "certificateKeyUsages": 4,
   "certificateExtendedKeyUsages": "Certificate Extended Key Usages value",
-  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
+  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
+  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
 

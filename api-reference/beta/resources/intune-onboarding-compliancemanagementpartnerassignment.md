@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4bf6a767c71c7212e0499bb6281e3a0d9477b3cd
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 04157461b1990403be4a60992876bb9a46317f1b
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44175256"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793812"
 ---
-# <a name="compliancemanagementpartnerassignment-resource-type"></a><span data-ttu-id="60d8d-103">tipo de recurso complianceManagementPartnerAssignment</span><span class="sxs-lookup"><span data-stu-id="60d8d-103">complianceManagementPartnerAssignment resource type</span></span>
+# <a name="compliancemanagementpartnerassignment-resource-type"></a><span data-ttu-id="101c1-103">tipo de recurso complianceManagementPartnerAssignment</span><span class="sxs-lookup"><span data-stu-id="101c1-103">complianceManagementPartnerAssignment resource type</span></span>
 
-<span data-ttu-id="60d8d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="60d8d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="101c1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="101c1-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="60d8d-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="60d8d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="101c1-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="101c1-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="60d8d-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="60d8d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="101c1-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="101c1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="60d8d-107">Direcionamento de grupo de usuários para parceiro de gerenciamento de conformidade</span><span class="sxs-lookup"><span data-stu-id="60d8d-107">User group targeting for Compliance Management Partner</span></span>
+<span data-ttu-id="101c1-107">Direcionamento de grupo de usuários para parceiro de gerenciamento de conformidade</span><span class="sxs-lookup"><span data-stu-id="101c1-107">User group targeting for Compliance Management Partner</span></span>
 
-## <a name="properties"></a><span data-ttu-id="60d8d-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="60d8d-108">Properties</span></span>
-|<span data-ttu-id="60d8d-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="60d8d-109">Property</span></span>|<span data-ttu-id="60d8d-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="60d8d-110">Type</span></span>|<span data-ttu-id="60d8d-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="60d8d-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="101c1-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="101c1-108">Properties</span></span>
+|<span data-ttu-id="101c1-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="101c1-109">Property</span></span>|<span data-ttu-id="101c1-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="101c1-110">Type</span></span>|<span data-ttu-id="101c1-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="101c1-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="60d8d-112">destino</span><span class="sxs-lookup"><span data-stu-id="60d8d-112">target</span></span>|[<span data-ttu-id="60d8d-113">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="60d8d-113">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="60d8d-114">Destino de atribuição de grupo.</span><span class="sxs-lookup"><span data-stu-id="60d8d-114">Group assignment target.</span></span>|
+|<span data-ttu-id="101c1-112">destino</span><span class="sxs-lookup"><span data-stu-id="101c1-112">target</span></span>|[<span data-ttu-id="101c1-113">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="101c1-113">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="101c1-114">Destino de atribuição de grupo.</span><span class="sxs-lookup"><span data-stu-id="101c1-114">Group assignment target.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="60d8d-115">Relações</span><span class="sxs-lookup"><span data-stu-id="60d8d-115">Relationships</span></span>
-<span data-ttu-id="60d8d-116">Nenhum</span><span class="sxs-lookup"><span data-stu-id="60d8d-116">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="101c1-115">Relações</span><span class="sxs-lookup"><span data-stu-id="101c1-115">Relationships</span></span>
+<span data-ttu-id="101c1-116">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="101c1-116">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="60d8d-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="60d8d-117">JSON Representation</span></span>
-<span data-ttu-id="60d8d-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="60d8d-118">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="101c1-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="101c1-117">JSON Representation</span></span>
+<span data-ttu-id="101c1-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="101c1-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment"
@@ -41,7 +41,9 @@ ms.locfileid: "44175256"
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartnerAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "String",
+    "deviceAndAppManagementAssignmentFilterType": "String"
   }
 }
 ```
