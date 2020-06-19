@@ -5,60 +5,60 @@ author: jasonbro
 localization_priority: Normal
 ms.prod: settings
 doc_type: apiPageType
-ms.openlocfilehash: 493af1c75e20552e9fb420402365894a04717e17
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 6ff0e617656524e43fafa85a800a3adb99282f70
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744203"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791171"
 ---
-# <a name="get-regionalandlanguagesettings"></a><span data-ttu-id="be87c-103">Obter regionalAndLanguageSettings</span><span class="sxs-lookup"><span data-stu-id="be87c-103">Get regionalAndLanguageSettings</span></span>
+# <a name="get-regionalandlanguagesettings"></a><span data-ttu-id="b7961-103">Obter regionalAndLanguageSettings</span><span class="sxs-lookup"><span data-stu-id="b7961-103">Get regionalAndLanguageSettings</span></span>
 
-<span data-ttu-id="be87c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="be87c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b7961-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b7961-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="be87c-105">Obter as propriedades de um objeto [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) .</span><span class="sxs-lookup"><span data-stu-id="be87c-105">Get the properties of a [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) object.</span></span>
+<span data-ttu-id="b7961-105">Obter as propriedades de um objeto [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) .</span><span class="sxs-lookup"><span data-stu-id="b7961-105">Get the properties of a [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="be87c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="be87c-106">Permissions</span></span>
-<span data-ttu-id="be87c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="be87c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b7961-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="b7961-106">Permissions</span></span>
+<span data-ttu-id="b7961-107">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="b7961-107">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="b7961-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b7961-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="be87c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="be87c-109">Permission Type</span></span>                   |<span data-ttu-id="be87c-110">Permissão (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="be87c-110">Permission (from least to most privileged)</span></span>     |
+|<span data-ttu-id="b7961-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b7961-109">Permission Type</span></span>                   |<span data-ttu-id="b7961-110">Permissão (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b7961-110">Permission (from least to most privileged)</span></span>     |
 |----------------------------------|---------------------------------------------- |
-|<span data-ttu-id="be87c-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="be87c-111">Delegated (work or school account)</span></span>|<span data-ttu-id="be87c-112">User. Read, User. Read. All</span><span class="sxs-lookup"><span data-stu-id="be87c-112">User.Read, User.Read.All</span></span>                        |
-|<span data-ttu-id="be87c-113">Delegado (conta pessoal)</span><span class="sxs-lookup"><span data-stu-id="be87c-113">Delegated (personal account)</span></span>      |<span data-ttu-id="be87c-114">User. Read, User. Read. All</span><span class="sxs-lookup"><span data-stu-id="be87c-114">User.Read, User.Read.All</span></span>              |
-|<span data-ttu-id="be87c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="be87c-115">Application</span></span>                       |<span data-ttu-id="be87c-116">User. Read, User. Read. All</span><span class="sxs-lookup"><span data-stu-id="be87c-116">User.Read, User.Read.All</span></span>              |
+|<span data-ttu-id="b7961-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b7961-111">Delegated (work or school account)</span></span>|<span data-ttu-id="b7961-112">User. Read, User. Read. All</span><span class="sxs-lookup"><span data-stu-id="b7961-112">User.Read, User.Read.All</span></span>                        |
+|<span data-ttu-id="b7961-113">Delegado (conta pessoal)</span><span class="sxs-lookup"><span data-stu-id="b7961-113">Delegated (personal account)</span></span>      |<span data-ttu-id="b7961-114">User. Read, User. Read. All</span><span class="sxs-lookup"><span data-stu-id="b7961-114">User.Read, User.Read.All</span></span>              |
+|<span data-ttu-id="b7961-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b7961-115">Application</span></span>                       |<span data-ttu-id="b7961-116">User. Read, User. Read. All</span><span class="sxs-lookup"><span data-stu-id="b7961-116">User.Read, User.Read.All</span></span>              |
 
-## <a name="http-request"></a><span data-ttu-id="be87c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="be87c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b7961-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b7961-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /settings/regionalAndLanguageSettings
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="be87c-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="be87c-118">Optional query parameters</span></span>
-<span data-ttu-id="be87c-119">Você pode usar o `$select` para obter propriedades específicas do regionalAndLanguageSettings, incluindo aquelas que não são retornadas por padrão.</span><span class="sxs-lookup"><span data-stu-id="be87c-119">You can use `$select` to get specific regionalAndLanguageSettings properties, including those that are not returned by default.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b7961-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b7961-118">Optional query parameters</span></span>
+<span data-ttu-id="b7961-119">Você pode usar o `$select` para obter propriedades específicas do regionalAndLanguageSettings, incluindo aquelas que não são retornadas por padrão.</span><span class="sxs-lookup"><span data-stu-id="b7961-119">You can use `$select` to get specific regionalAndLanguageSettings properties, including those that are not returned by default.</span></span>
 
-<span data-ttu-id="be87c-120">Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="be87c-120">For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="b7961-120">Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="b7961-120">For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="be87c-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="be87c-121">Request headers</span></span>
-| <span data-ttu-id="be87c-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="be87c-122">Header</span></span>       | <span data-ttu-id="be87c-123">Valor</span><span class="sxs-lookup"><span data-stu-id="be87c-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b7961-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b7961-121">Request headers</span></span>
+| <span data-ttu-id="b7961-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="b7961-122">Header</span></span>       | <span data-ttu-id="b7961-123">Valor</span><span class="sxs-lookup"><span data-stu-id="b7961-123">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="be87c-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="be87c-124">Authorization</span></span>  | <span data-ttu-id="be87c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="be87c-p102">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="be87c-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="be87c-127">Content-Type</span></span>   | <span data-ttu-id="be87c-128">application/json</span><span class="sxs-lookup"><span data-stu-id="be87c-128">application/json</span></span> |
+| <span data-ttu-id="b7961-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="b7961-124">Authorization</span></span>  | <span data-ttu-id="b7961-125">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="b7961-125">Bearer {token}.</span></span> <span data-ttu-id="b7961-126">Required.</span><span class="sxs-lookup"><span data-stu-id="b7961-126">Required.</span></span>|
+| <span data-ttu-id="b7961-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b7961-127">Content-Type</span></span>   | <span data-ttu-id="b7961-128">application/json</span><span class="sxs-lookup"><span data-stu-id="b7961-128">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="be87c-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="be87c-129">Request body</span></span>
-<span data-ttu-id="be87c-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="be87c-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b7961-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b7961-129">Request body</span></span>
+<span data-ttu-id="b7961-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b7961-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="be87c-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="be87c-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b7961-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7961-131">Response</span></span>
 
-<span data-ttu-id="be87c-132">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="be87c-132">If successful, this method returns a `200 OK` response code and [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) object in the response body.</span></span>
+<span data-ttu-id="b7961-132">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b7961-132">If successful, this method returns a `200 OK` response code and [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="be87c-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="be87c-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b7961-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b7961-133">Example</span></span>
 
-### <a name="example-1-get-the-properties-of-the-signed-in-user"></a><span data-ttu-id="be87c-134">Exemplo 1: Obter as propriedades do usuário conectado</span><span class="sxs-lookup"><span data-stu-id="be87c-134">Example 1: Get the properties of the signed-in user</span></span>
+<span data-ttu-id="b7961-134">O exemplo a seguir obtém as propriedades do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="b7961-134">The following example gets the properties of the signed-in user.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="be87c-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="be87c-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b7961-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b7961-135">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="be87c-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="be87c-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b7961-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="b7961-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_regionalAndLanguageSettings"
@@ -66,9 +66,24 @@ GET /settings/regionalAndLanguageSettings
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 ```
+# <a name="c"></a>[<span data-ttu-id="b7961-137">C#</span><span class="sxs-lookup"><span data-stu-id="b7961-137">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-regionalandlanguagesettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="be87c-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="be87c-137">Response</span></span>
-<span data-ttu-id="be87c-138">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="be87c-138">Here is an example of the response.</span></span> <span data-ttu-id="be87c-139">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="be87c-139">Note: The response object shown here may be truncated for brevity.</span></span> 
+# <a name="javascript"></a>[<span data-ttu-id="b7961-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b7961-138">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-regionalandlanguagesettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="b7961-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b7961-139">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-regionalandlanguagesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="b7961-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7961-140">Response</span></span>
+
+><span data-ttu-id="b7961-141">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="b7961-141">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
