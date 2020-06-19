@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9308faf6185520bddcab1f5153205bdb109c2323
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a7aa3d37a78217301f4b5fd150f558dcec55de7f
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177727"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790905"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -142,21 +142,31 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Operador de detecção de aplicativo LOB do Win32](intune-apps-win32lobappdetectionoperator.md)
 - [Detecção de sistema do arquivo do aplicativo LOB do Win32](intune-apps-win32lobappfilesystemdetection.md)
 - [Tipo de detecção de sistema do arquivo do aplicativo LOB do Win32](intune-apps-win32lobappfilesystemdetectiontype.md)
+- [Tipo de operação do sistema de arquivos do aplicativo LOB Win32](intune-apps-win32lobappfilesystemoperationtype.md)
 - [Requisitos do sistema de arquivos do aplicativo LOB Win32](intune-apps-win32lobappfilesystemrequirement.md)
+- [Regra do sistema de arquivos do aplicativo LOB Win32](intune-apps-win32lobappfilesystemrule.md)
 - [Experiência de instalação do aplicativo LOB do Win32](intune-apps-win32lobappinstallexperience.md)
 - [Informações de msi do aplicativo LOB do Win32](intune-apps-win32lobappmsiinformation.md)
 - [Tipo de pacote de msi do aplicativo LOB do Win32](intune-apps-win32lobappmsipackagetype.md)
 - [Detecção de script powershell do aplicativo LOB do Win32](intune-apps-win32lobapppowershellscriptdetection.md)
 - [Tipo de detecção de script do aplicativo LOB Win32 do Shell de energia](intune-apps-win32lobapppowershellscriptdetectiontype.md)
 - [Requisito de script do Shell de energia do aplicativo LOB Win32](intune-apps-win32lobapppowershellscriptrequirement.md)
+- [Regra de script do Shell de energia do aplicativo LOB Win32](intune-apps-win32lobapppowershellscriptrule.md)
 - [Detecção de código de produto do aplicativo LOB do Win32](intune-apps-win32lobappproductcodedetection.md)
+- [Regra de código de produto do aplicativo LOB Win32](intune-apps-win32lobappproductcoderule.md)
 - [Detecção de registro de aplicativo LOB do Win32](intune-apps-win32lobappregistrydetection.md)
 - [Tipo de detecção de registro de aplicativo LOB do Win32](intune-apps-win32lobappregistrydetectiontype.md)
 - [Requisito do registro do aplicativo LOB Win32](intune-apps-win32lobappregistryrequirement.md)
+- [Regra de registro de aplicativo LOB Win32](intune-apps-win32lobappregistryrule.md)
+- [Tipo de operação de regra de registro de aplicativo LOB Win32](intune-apps-win32lobappregistryruleoperationtype.md)
 - [Requisito do aplicativo LOB do Win32](intune-apps-win32lobapprequirement.md)
 - [Comportamento de reinicialização do aplicativo LOB Win32](intune-apps-win32lobapprestartbehavior.md)
 - [Código de retorno de aplicativo LOB do Win32](intune-apps-win32lobappreturncode.md)
 - [Tipo de código de retorno de aplicativo LOB do Win32](intune-apps-win32lobappreturncodetype.md)
+- [Regra de aplicativo LOB do Win32](intune-apps-win32lobapprule.md)
+- [Operador de regras de aplicativos LOB do Win32](intune-apps-win32lobappruleoperator.md)
+- [Tipo de regra de aplicativo LOB Win32](intune-apps-win32lobappruletype.md)
+- [Tipo de operação de regra de script do Shell de alimentação de LOB Win32](intune-apps-win32lobpowershellscriptruleoperationtype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
 - [Arquitetura do Windows](intune-apps-windowsarchitecture.md)
 - [Tipo de dispositivo Windows](intune-apps-windowsdevicetype.md)

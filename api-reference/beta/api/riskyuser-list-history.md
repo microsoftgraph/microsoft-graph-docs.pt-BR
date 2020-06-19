@@ -5,16 +5,16 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 927d9b623c4aa35d3b1314d2152d1efa91633cb0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3199528b297394ca7fc282bbf0a4346a52d185fe
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453895"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791115"
 ---
 # <a name="list-history-of-riskyuser"></a>Listar histórico de riskyUser
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Obter o histórico de riscos de um recurso [riskyUser](../resources/riskyuser.md
 >**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,14 +41,14 @@ GET /riskyUsers/{id}/history
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
+| Autorização  | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -95,7 +95,6 @@ Content-type: application/json
         {
             "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "isDeleted": false,
-            "isGuest": false,
             "isProcessing": false,
             "riskLevel": "none",
             "riskState": "remediated",
@@ -113,7 +112,6 @@ Content-type: application/json
         {
             "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69636901009342322587",
             "isDeleted": false,
-            "isGuest": false,
             "isProcessing": false,
             "riskLevel": "high",
             "riskState": "atRisk",
@@ -133,7 +131,6 @@ Content-type: application/json
         {
             "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69636901020140973557",
             "isDeleted": false,
-            "isGuest": false,
             "isProcessing": false,
             "riskLevel": "none",
             "riskState": "remediated",

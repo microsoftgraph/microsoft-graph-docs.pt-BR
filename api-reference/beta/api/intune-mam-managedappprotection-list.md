@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b2275b42fc98b313d73f53af1a1a1914d5b9e20
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 44e8ea7078a4ee33c23c3f5e96bcfffdc8e00eff
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441434"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791921"
 ---
 # <a name="list-managedappprotections"></a>Listar managedAppProtections
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Listar propriedades e relações dos objetos [managedAppProtection](../resources/intune-mam-managedappprotection.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -63,11 +63,11 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2589
+Content-Length: 2637
 
 {
   "value": [
@@ -125,7 +125,8 @@ Content-Length: 2589
       "allowedDataIngestionLocations": [
         "sharePoint"
       ],
-      "appActionIfUnableToAuthenticateUser": "wipe"
+      "appActionIfUnableToAuthenticateUser": "wipe",
+      "dialerRestrictionLevel": "managedApps"
     }
   ]
 }

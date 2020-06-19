@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e7672fde7ce169fecc4063da75b5ac3649af3a82
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0f43a7b91931ba777909df75facb91d488033ca9
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445143"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791339"
 ---
 # <a name="update-devicemanagementcachedreportconfiguration"></a>Atualizar deviceManagementCachedReportConfiguration
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Atualiza as propriedades de um objeto [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -56,8 +56,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |id|String|Identificador exclusivo para esta entidade|
 |reportName|String|Nome do relatório|
 |filter|String|Filtros aplicados na criação de relatórios.|
-|select|Coleção String|Colunas selecionadas do relatório|
-|Classificadoporativado|Coleção String|Ordenação de colunas no relatório|
+|select|Coleção de cadeias de caracteres|Colunas selecionadas do relatório|
+|Classificadoporativado|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
+|los|String|Metadados gerenciados pelo chamador associados ao relatório|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do relatório em cache. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |lastRefreshDateTime|DateTimeOffset|Hora em que o relatório em cache foi atualizado pela última vez|
 |expirationDateTime|DateTimeOffset|Hora em que o relatório em cache expira|
@@ -65,7 +66,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -74,7 +75,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/reports/cachedReportConfigurations/{deviceManagementCachedReportConfigurationId}
 Content-type: application/json
-Content-length: 385
+Content-length: 418
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementCachedReportConfiguration",
@@ -86,6 +87,7 @@ Content-length: 385
   "orderBy": [
     "Order By value"
   ],
+  "metadata": "Metadata value",
   "status": "notStarted",
   "lastRefreshDateTime": "2016-12-31T23:58:49.97047-08:00",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
@@ -93,11 +95,11 @@ Content-length: 385
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 434
+Content-Length: 467
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementCachedReportConfiguration",
@@ -110,6 +112,7 @@ Content-Length: 434
   "orderBy": [
     "Order By value"
   ],
+  "metadata": "Metadata value",
   "status": "notStarted",
   "lastRefreshDateTime": "2016-12-31T23:58:49.97047-08:00",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"

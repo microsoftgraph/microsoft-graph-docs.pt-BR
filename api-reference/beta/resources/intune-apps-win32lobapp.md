@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 90759c222b4e4941c07a54553948da4b74d9c1cb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3e35a9704f2028e1879c6b3d1988db6a2cc6f31b
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460211"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790842"
 ---
 # <a name="win32lobapp-resource-type"></a>tipo de recurso win32LobApp
 
@@ -25,13 +25,13 @@ Contém propriedades e propriedades herdadas para aplicativos Win32.
 
 Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar win32LobApps](../api/intune-apps-win32lobapp-list.md)|coleção [win32LobApp](../resources/intune-apps-win32lobapp.md)|Listar Propriedades e relações dos objetos [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
 |[Obter win32LobApp](../api/intune-apps-win32lobapp-get.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Leia as propriedades e as relações do objeto [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
 |[Criar win32LobApp](../api/intune-apps-win32lobapp-create.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Criar um novo objeto [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
-|[Excluir win32LobApp](../api/intune-apps-win32lobapp-delete.md)|Nenhum|Exclui [win32LobApp](../resources/intune-apps-win32lobapp.md).|
+|[Excluir win32LobApp](../api/intune-apps-win32lobapp-delete.md)|Nenhuma|Exclui [win32LobApp](../resources/intune-apps-win32lobapp.md).|
 |[Atualizar win32LobApp](../api/intune-apps-win32lobapp-update.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Atualiza as propriedades de um objeto [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
 
 ## <a name="properties"></a>Propriedades
@@ -68,6 +68,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |minimumCpuSpeedInMHz|Int32|O valor para a velocidade de CPU mínima necessária para instalar este aplicativo.|
 |detectionRules|coleção [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)|As regras de detecção para detectar o aplicativo de LoB (linha de negócios) do Win32.|
 |requirementRules|coleção [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|As regras de requisito para detectar o aplicativo de LoB (linha de negócios) do Win32.|
+|regras|coleção [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)|As regras de detecção e requisitos para este aplicativo.|
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|A experiência de instalação para este aplicativo.|
 |returnCodes|coleção [win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Os códigos de retorno para o comportamento pós-instalação.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Os detalhes do MSI, se este aplicativo Win32 for um aplicativo MSI.|
@@ -162,6 +163,18 @@ Veja a seguir uma representação JSON do recurso.
       "keyPath": "String",
       "valueName": "String",
       "detectionType": "String"
+    }
+  ],
+  "rules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+      "ruleType": "String",
+      "check32BitOn64System": true,
+      "keyPath": "String",
+      "valueName": "String",
+      "operationType": "String",
+      "operator": "String",
+      "comparisonValue": "String"
     }
   ],
   "installExperience": {

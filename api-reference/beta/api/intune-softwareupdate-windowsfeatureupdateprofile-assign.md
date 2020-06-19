@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b0b70fcb614304b6bb3c3f43b05b8f65c8f1e19
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4c8ac1577057ada182c9ab93fc617f14873fcb77
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471269"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791304"
 ---
 # <a name="assign-action"></a>atribuir ação
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -68,7 +68,7 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfileId}/assign
 
 Content-type: application/json
-Content-length: 285
+Content-length: 460
 
 {
   "assignments": [
@@ -76,7 +76,9 @@ Content-length: 285
       "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfileAssignment",
       "id": "567a744f-744f-567a-4f74-7a564f747a56",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       }
     }
   ]
@@ -84,7 +86,7 @@ Content-length: 285
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 204 No Content
 ```

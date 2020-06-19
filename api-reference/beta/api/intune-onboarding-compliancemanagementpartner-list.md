@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d704cc4d4790774e8cd89502bf9b132fee52a4e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 278a39402d03ab623abb55f7dce134212ae887e6
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445483"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791837"
 ---
 # <a name="list-compliancemanagementpartners"></a>Listar complianceManagementPartners
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Listar Propriedades e relações dos objetos [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -50,7 +50,7 @@ GET /deviceManagement/complianceManagementPartners
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -61,11 +61,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/complianceManagementPartne
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1490
+Content-Length: 2222
 
 {
   "value": [
@@ -83,7 +83,9 @@ Content-Length: 1490
         {
           "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
           "target": {
-            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+            "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+            "deviceAndAppManagementAssignmentFilterType": "include"
           }
         }
       ],
@@ -91,7 +93,9 @@ Content-Length: 1490
         {
           "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
           "target": {
-            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+            "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+            "deviceAndAppManagementAssignmentFilterType": "include"
           }
         }
       ],
@@ -99,7 +103,9 @@ Content-Length: 1490
         {
           "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
           "target": {
-            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+            "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+            "deviceAndAppManagementAssignmentFilterType": "include"
           }
         }
       ],
@@ -107,7 +113,9 @@ Content-Length: 1490
         {
           "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
           "target": {
-            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+            "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+            "deviceAndAppManagementAssignmentFilterType": "include"
           }
         }
       ]

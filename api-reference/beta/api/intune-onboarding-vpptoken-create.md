@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e8a0052e927410feb098d45fafc82c013c38c5de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d217e4b4b299236125027ff4673e871fe4436abe
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43362981"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791767"
 ---
 # <a name="create-vpptoken"></a>Criar vppToken
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Criar um novo objeto [vppToken](../resources/intune-onboarding-vpptoken.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -61,7 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o vppTok
 |lastSyncDateTime|DateTimeOffset|A última vez que uma sincronização de aplicativo foi realizada com o serviço do Apple Volume Purchase Program usando o Token do Apple Volume Purchase Program.|
 |token|String|A cadeia de caracteres do Token do Apple Volume Purchase Program baixada do Apple Volume Purchase Program.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação associada com o Token do Apple Volume Purchase Program.|
-|state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Estado atual do Token do Apple Volume Purchase Program. Os valores possíveis são: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Os valores possíveis são: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`.|
+|state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Estado atual do Token do Apple Volume Purchase Program. Os valores possíveis são: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Os possíveis valores são: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`, `duplicateLocationId`.|
 |tokenActionResults|coleção [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|A coleção de status das ações executadas no token do Apple Volume Purchase Program.|
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Status atual de sincronização da última sincronização de aplicativo que foi feita usando o Token do Apple Volume Purchase Program. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
@@ -70,7 +70,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o vppTok
 |displayName|Cadeia de caracteres|Um nome amigável de token especificado pelo administrador.|
 |LocationName|String|Local do token retornado da Apple VPP.|
 |claimTokenManagementFromExternalMdm|Boolean|Consentimento do administrador para permitir o reivindicação de gerenciamento de token de MDM externo.|
-|roleScopeTagIds|Coleção String|IDs de marcas de escopo de função atribuídas a esta entidade.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|IDs de marcas de escopo de função atribuídas a esta entidade.|
 
 
 
@@ -118,7 +118,7 @@ Content-length: 1002
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

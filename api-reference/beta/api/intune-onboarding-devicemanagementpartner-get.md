@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 57eafe24c0739e98903d28b01e276e0ca070d07f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2e4381162d7adc4e10423323522349a0639c4728
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463632"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791816"
 ---
 # <a name="get-devicemanagementpartner"></a>Acessar deviceManagementPartner
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Leia as propriedades e as relações do objeto [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -64,11 +64,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementPartners/{
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1005
+Content-Length: 1184
 
 {
   "value": {
@@ -88,7 +88,9 @@ Content-Length: 1005
       {
         "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
         "target": {
-          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+          "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+          "deviceAndAppManagementAssignmentFilterType": "include"
         }
       }
     ]

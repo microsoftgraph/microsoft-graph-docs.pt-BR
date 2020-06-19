@@ -5,16 +5,16 @@ localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0f988b7ccfb7d68261574acedcbdfb485e9f4a27
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f6f33b8dfd5fa8f966d959a015bd641a6a1100b7
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453930"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791101"
 ---
 # <a name="list-riskyusers"></a>Listar riskyUsers
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Recupere as propriedades e os relacionamentos de uma coleção de objetos **risk
 >**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,19 +37,19 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /riskyUsers
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece `$filter` suporte para personalizar a resposta de consulta. Consulte o exemplo mais adiante neste tópico. 
+Este método oferece suporte `$filter` para personalizar a resposta de consulta. Consulte o exemplo mais adiante neste tópico. 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
+| Autorização  | Bearer {token}. Required. |
 | Workbook-Session-Id  | ID da sessão da pasta de trabalho que determina se as alterações são persistentes. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [riskyUser](../resources/riskyuser.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [riskyUser](../resources/riskyuser.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-list-risky-users"></a>Exemplo 1: listar usuários arriscados
@@ -95,7 +95,6 @@ Content-type: application/json
         {
             "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
             "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-            "isGuest": true,
             "isProcessing": true,
             "isDeleted": true,
             "riskDetail": "adminConfirmedSigninCompromised",
@@ -153,7 +152,6 @@ Content-type: application/json
         {
             "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
             "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
-            "isGuest": false,
             "isProcessing": true,
             "isDeleted": false,
             "riskDetail": "none",

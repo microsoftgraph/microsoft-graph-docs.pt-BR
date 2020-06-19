@@ -5,28 +5,37 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c28238cf35858745979a4d9659b1f649dbab7061
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f0691a7157fb189e75e862448069ff8ebdeee9f7
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972422"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790919"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>tipo de recurso educationSynchronizationDataProvider
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o esquema SIS de origem. Isso permite que o sistema saiba como mapear os dados de entrada para o esquema do Azure Active Directory (Azure AD).
+Representa o provedor de dados a ser usado como a fonte de sincronização de um [educationSynchronizationProfile].
 
 > **Observação:** Esse tipo complexo é abstrato. Consulte os tipos específicos de provedores de dados listados.
 
-## <a name="derived-types"></a>Tipos derivados
-| Tipo | Descrição |
-|:-|:-|:-|
-| [educationcsvdataprovider](educationcsvdataprovider.md) | Usado com arquivos CSV como a fonte de entrada. |
-| [educationpowerschooldataprovider](educationpowerschooldataprovider.md) | Usado com PowerSchool como a fonte de entrada. |
-| [educationonerosterapidataprovider](educationonerosterapidataprovider.md) | Usado com a API OneRoster como a fonte de entrada. |
+## <a name="providers"></a>Provedores
+
+| Data Provider                       | Descrição                                                                                        |
+| :---------------------------------- | :------------------------------------------------------------------------------------------------- |
+| [educationCsvDataProvider]          | Arquivos CSV carregados para a [URL SAS](../api/educationsynchronizationprofile-uploadurl.md) do perfil |
+| [educationOneRosterApiDataProvider](educationonerosterapidataprovider.md) | API do OneRoster v 1.1                                                                                 |
+| [educationPowerSchoolDataProvider]  | API da PowerSchool                                                                                    |
 
 ## <a name="properties"></a>Propriedades
 
 Nenhuma propriedade é exposta por esse tipo.
+
+[educationsynchronizationprofile]: educationsynchronizationprofile.md
+[educationcsvdataprovider]: educationCsvDataProvider.md
+[educationsynchronizationdataprovider]: educationSynchronizationDataProvider.md
+[educationpowerschooldataprovider]: educationPowerSchoolDataProvider.md
+[educationcsvdataprovider]: educationCsvDataProvider.md

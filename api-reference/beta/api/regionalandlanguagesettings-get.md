@@ -5,12 +5,12 @@ author: jasonbro
 localization_priority: Normal
 ms.prod: settings
 doc_type: apiPageType
-ms.openlocfilehash: 493af1c75e20552e9fb420402365894a04717e17
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 6ff0e617656524e43fafa85a800a3adb99282f70
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744203"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791171"
 ---
 # <a name="get-regionalandlanguagesettings"></a>Obter regionalAndLanguageSettings
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Obter as propriedades de um objeto [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) .
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão                   |Permissão (de menos para mais privilégios)     |
 |----------------------------------|---------------------------------------------- |
@@ -42,7 +42,7 @@ Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor|
 |:-----------|:------|
-| Autorização  | {token} de portador. Obrigatório.|
+| Autorização  | Bearer {token}. Required.|
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -54,9 +54,9 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objet
 
 ## <a name="example"></a>Exemplo
 
-### <a name="example-1-get-the-properties-of-the-signed-in-user"></a>Exemplo 1: Obter as propriedades do usuário conectado
+O exemplo a seguir obtém as propriedades do usuário conectado.
 
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -66,9 +66,24 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objet
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-regionalandlanguagesettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. 
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-regionalandlanguagesettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-regionalandlanguagesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a>Resposta
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

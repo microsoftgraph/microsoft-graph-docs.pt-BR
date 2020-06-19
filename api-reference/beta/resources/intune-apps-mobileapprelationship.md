@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso mobileAppRelationship
-description: Descreve o relacionamento de um aplicativo móvel filho para seu aplicativo móvel pai.
+description: Descreve uma relação entre dois aplicativos móveis.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80cf0fd5897d0ff3d1b3b3adc5343ad4c059442e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d09d9d7604699ee89b6dccc0f2f980cef26225e7
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462579"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790863"
 ---
 # <a name="mobileapprelationship-resource-type"></a>tipo de recurso mobileAppRelationship
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Descreve o relacionamento de um aplicativo móvel filho para seu aplicativo móvel pai.
+Descreve uma relação entre dois aplicativos móveis.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar mobileAppRelationships](../api/intune-apps-mobileapprelationship-list.md)|coleção [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|Listar Propriedades e relações dos objetos [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) .|
@@ -32,11 +32,11 @@ Descreve o relacionamento de um aplicativo móvel filho para seu aplicativo móv
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A ID da entidade de relação.|
-|targetId|String|A ID de aplicativo do aplicativo móvel do filho de destino.|
-|targetDisplayName|String|O nome de exibição do aplicativo móvel filho de destino.|
+|targetId|String|A ID de aplicativo do aplicativo móvel de destino.|
+|targetDisplayName|String|O nome de exibição do aplicativo móvel de destino.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

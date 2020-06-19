@@ -5,38 +5,44 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d31be9bd808f411c1e208ab953784fdefd65fdda
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6df720b8f0e02ba24f3972833a6a76219d327925
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972436"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790926"
 ---
 # <a name="educationsynchronizationcustomizations-resource-type"></a>tipo de recurso educationSynchronizationCustomizations
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém a lista de entidades a serem sincronizadas [](educationsynchronizationcustomization.md)e suas personalizações, se houver.
+Contém a lista de entidades a serem sincronizadas e suas personalizações, se houver.
 
-> **Observação:** A personalização das propriedades a serem sincronizadas não se aplica às entidades **studentEnrollment** e **teacherRoster** .
+> [!NOTE]
+> A personalização das propriedades a serem sincronizadas não se aplica às registradoras ou às listas de professores do aluno.
 
 Este recurso é membro dos seguintes provedores de dados:
 
-* [educationCsvDataProvider](educationcsvdataprovider.md)
-* [educationPowerSchoolDataProvider](educationpowerschooldataprovider.md)
+- [educationCsvDataProvider](educationcsvdataprovider.md)
+- [educationPowerSchoolDataProvider](educationpowerschooldataprovider.md)
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade | Tipo | Descrição |
-|:-|:-|:-|
-| **escola** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização de uma entidade escolar.        |
-| **section** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização de uma entidade de seção.         |
-| **student** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização de uma entidade de aluno.         |
-| **teacher** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização de uma entidade professor.         |
-| **studentEnrollment** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização para registro de alunos.           |
-| **teacherRoster** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |       Personalização de uma lista de professores.    |
+| Propriedade          | Tipo                                    | Descrição                             |
+| :---------------- | :-------------------------------------- | :-------------------------------------- |
+| escola            | [educationSynchronizationCustomization] | Personalizações para entidades escolares.     |
+| section           | [educationSynchronizationCustomization] | Personalizações para entidades de seção.    |
+| student           | [educationSynchronizationCustomization] | Personalizações para entidades de alunos.    |
+| teacher           | [educationSynchronizationCustomization] | Personalizações para entidades de professores.    |
+| studentEnrollment | [educationSynchronizationCustomization] | Personalizações para o registro de alunos. |
+| teacherRoster     | [educationSynchronizationCustomization] | Personalizações para as listas de professores.     |
+
+[educationsynchronizationcustomization]: educationsynchronizationcustomization.md
 
 ## <a name="json-representation"></a>Representação JSON
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -47,11 +53,23 @@ Este recurso é membro dos seguintes provedores de dados:
 
 ```json
 {
-  "school": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-  "section": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-  "student": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-  "teacher": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-  "studentEnrollment": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-  "teacherRoster": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"}
+  "school": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+  },
+  "section": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+  },
+  "student": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+  },
+  "teacher": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+  },
+  "studentEnrollment": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+  },
+  "teacherRoster": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+  }
 }
 ```

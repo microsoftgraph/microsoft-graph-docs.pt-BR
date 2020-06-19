@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 37728fbdf4abe0340a91faa1f9462b8942f18897
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9ea677f994b1d5c1ee97d4ece18ea63e0fe04df8
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455812"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791928"
 ---
 # <a name="get-managedappprotection"></a>Get managedAppProtection
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Ler propriedades e relações do objeto [managedAppProtection](../resources/intune-mam-managedappprotection.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -66,11 +66,11 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{man
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2467
+Content-Length: 2513
 
 {
   "value": {
@@ -127,7 +127,8 @@ Content-Length: 2467
     "allowedDataIngestionLocations": [
       "sharePoint"
     ],
-    "appActionIfUnableToAuthenticateUser": "wipe"
+    "appActionIfUnableToAuthenticateUser": "wipe",
+    "dialerRestrictionLevel": "managedApps"
   }
 }
 ```

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ca3341c84b79ff25e55be1abf5a8a5a031e84b02
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: ea02186b7d9bd7bed14c6ea5b46023da81814f07
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290382"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791059"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>recurso educationOneRosterApiDataProvider
 
@@ -24,15 +24,28 @@ Derivado de [educationSynchronizationDataProvider](educationsynchronizationdatap
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade | Tipo | Descrição |
-|:-|:-|:-|
-| **connectionUrl** | String | A URL de conexão para a instância do OneRoster. |
-| **schoolsIds** | Conjunto de cadeias de caracteres |  A lista de sourcedIds escolar a ser sincronizada. |
-| **providerName** | String | O nome do provedor de serviços do OneRoster conforme definido pela [especificação OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
-| **connectionSettings** | [Microsoft. Graph. educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md) | Configurações de conexão para a instância do OneRoster. Deve ser do tipo [Microsoft. Graph. educationSynchronizationOAuth1ConnectionSettings](educationsynchronizationoauth1connectionsettings.md) ou [Microsoft. Graph. educationSynchronizationOAuth2ClientCredentialsConnectionSettings](educationsynchronizationoauth2clientcredentialsconnectionsettings.md). |
-| **personalizações** | [Microsoft. Graph. educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Personalização opcional a ser aplicada ao perfil de sincronização.|
+| Propriedade           | Tipo                                         | Descrição                                                                                           |
+| :----------------- | :------------------------------------------- | :---------------------------------------------------------------------------------------------------- |
+| connectionUrl      | String                                       | A URL de conexão para a instância do OneRoster.                                                         |
+| providerName       | String                                       | O nome do provedor de serviços do OneRoster conforme definido pela [especificação OneRoster][oneroster].           |
+| schoolsIds         | Coleção de cadeias de caracteres                            | A lista de [escolas/org][orgs] `sourcedId` a ser sincronizada.                                                   |
+| termIds            | Coleção de cadeias de caracteres                            | A lista de [sessões acadêmicas][terms] a serem sincronizadas.                                                       |
+| connectionSettings | [educationSynchronizationConnectionSettings] | As configurações do [oauth 1,0][onerosteroauth1] ou [OAuth 2,0][onerosteroauth2] para a instância do OneRoster. |
+| personalizações     | [educationSynchronizationCustomizations])    | Personalização opcional a ser aplicada ao perfil de sincronização.                                  |
+
+> [!IMPORTANT]
+> O OneRoster usa sessões acadêmicas em vez de um único ano escolar para segmentar seus dados. Essa segmentação é dissociada na interface de usuário de sincronização de dados da escola, mas não esta API. Você precisará chamar o ponto de `/terms` extremidade do OneRoster para obter a coleção de IDs de sessão acadêmica a fim de preencher a `termIds` coleção.
+
+[educationsynchronizationconnectionsettings]: educationsynchronizationconnectionsettings.md
+[educationsynchronizationcustomizations]: educationsynchronizationcustomizations.md
+[oneroster]: https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA
+[onerosteroauth2]: educationsynchronizationoauth2clientcredentialsconnectionsettings.md
+[onerosteroauth1]: educationsynchronizationoauth1connectionsettings.md
+[terms]: https://www.imsglobal.org/oneroster-v11-final-specification#_Toc480452034
+[orgs]: https://www.imsglobal.org/oneroster-v11-final-specification#_Toc480452016
 
 ## <a name="json-representation"></a>Representação JSON
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -43,20 +56,22 @@ Derivado de [educationSynchronizationDataProvider](educationsynchronizationdatap
 
 ```json
 {
-    "@odata.type": "microsoft.graph.educationoneRosterApiDataProvider",
-    "connectionUrl": "String",
-    "providerName": "String",
-    "schoolsIds": [
-        "String"
-    ],
-    "connectionSettings": {
-        "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
-        "clientId": "String",
-        "clientSecret": "String",
-    },
-    "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
+  "@odata.type": "microsoft.graph.educationoneRosterApiDataProvider",
+  "connectionUrl": "String",
+  "providerName": "String",
+  "schoolsIds": ["String"],
+  "termIds": ["String"],
+  "connectionSettings": {
+    "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
+    "clientId": "String",
+    "clientSecret": "String"
+  },
+  "customizations": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
+  }
 }
 ```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2020-05-06 14:57:30 UTC -->
 <!-- {

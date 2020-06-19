@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 45058b5d3217072d5e70875574fdee9de7eb20a0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1b9ddbb0b8dac124370b1d20ac42e3ab1da7d1e3
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507709"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791080"
 ---
 # <a name="chatmessageattachment-resource-type"></a>tipo de recurso chatMessageAttachment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ Uma entidade do tipo `chatMessageAttachment` é retornada como parte da API [Get
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|cadeia de caracteres| Somente leitura. ID exclusiva do anexo.|
-|contentType| string | O tipo de mídia do anexo de conteúdo. Ele pode ter os seguintes valores: <br><ul><li>referência: o anexo é um link para outro arquivo. Preencha o contentURL com o link para o objeto.<br></li><li>arquivo: anexo de arquivo bruto. Preencha o campo contenturl com a codificação base64 do arquivo no formato Data:.<br></li><li>Image/: tipo de imagem com o tipo de imagem especificado por exemplo: image/png, image/jpeg, image/gif. Preencha o campo contentUrl com a codificação base64 do arquivo no formato Data:.<br></li><li>vídeo/: tipo de vídeo com o formato especificado. Ex: Video/MP4. Preencha o campo contentUrl com a codificação base64 do arquivo no formato Data:.<br></li><li>Audio/: tipo de áudio com o formato especificado. Ex: Audio/WMW. Preencha o campo contentUrl com a codificação base64 do arquivo no formato Data:.<br></li><li>tipo de cartão/aplicativo: tipo de anexo de cartão avançado com o tipo de cartão especificando o formato de cartão exato a ser usado. Defina o conteúdo com o formato JSON do cartão. Os valores com suporte para o tipo de cartão incluem:<br><ul><li>application/vnd. Microsoft. Card. Adaptive: um cartão rico que pode conter qualquer combinação de texto, fala, imagem, botões e campos de entrada. Defina a propriedade de conteúdo como, um objeto AdaptiveCard.</li><li>application/vnd. Microsoft. Card. Animation: um cartão rico que reproduz animação. Defina a propriedade de conteúdo para um AnimationCardobject.</li><li>application/vnd. Microsoft. Card. Audio: um cartão avançado que reproduz arquivos de áudio. Defina a propriedade de conteúdo, para um objeto AudioCard.</li><li>application/vnd. Microsoft. Card. Video: um cartão avançado que reproduz vídeos. Defina a propriedade de conteúdo para um objeto VideoCard.</li><li>application/vnd. Microsoft. Card. herói: um cartão herói. Defina a propriedade Content como um objeto HeroCard.</li><li>application/vnd. Microsoft. Card. Thumbnail: um cartão de miniaturas. Defina a propriedade Content como um objeto ThumbnailCard.</li><li>application/vnd. Microsoft. com. Card. recibo: um cartão de recibo. Defina a propriedade Content como um objeto ReceiptCard.</li><li>application/vnd. Microsoft. com. Card. signem: um cartão de entrada do usuário. Defina a propriedade Content como um objeto SignInCard.</ul></ul>|
+|contentType| string | O tipo de mídia do anexo de conteúdo. Ele pode ter os seguintes valores: <br><ul><li>`reference`: O anexo é um link para outro arquivo. Preencha o contentURL com o link para o objeto.</li><li>Quaisquer contentTypes compatíveis com o [objeto Attachment](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#attachment-object) da estrutura de bot</li><li>`application/vnd.microsoft.card.codesnippet`: Um trecho de código. </li><li>`application/vnd.microsoft.card.announcement`: Um cabeçalho de comunicado. </li>|
 |contentUrl|string|URL para o conteúdo do anexo. Protocolos suportados: http, HTTPS, File e data.|
-|conteúdo|string|O conteúdo do anexo. Se o anexo for um cartão rico, defina a propriedade com o objeto ficha avançada. Essa propriedade e contentUrl são mutuamente exclusivas.|
+|conteúdo|string|O conteúdo do anexo. Se o anexo for um [cartão rico](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference), defina a propriedade com o objeto ficha avançada. Essa propriedade e contentUrl são mutuamente exclusivas.|
 |nome|string|Nome do anexo.|
 |thumbnailUrl| string |URL para uma imagem em miniatura que o canal pode usar se oferecer suporte ao uso de um formato de conteúdo ou de uma alternativa menor ou contentUrl. Por exemplo, se você definir contentType como Application/Word e definir contentUrl como o local do documento do Word, você pode incluir uma imagem em miniatura que representa o documento. O canal pode exibir a imagem em miniatura em vez do documento. Quando o usuário clica na imagem, o canal abre o documento.|
 
