@@ -1,18 +1,22 @@
 ---
 title: Problemas conhecidos com o Microsoft Graph
-description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
+description: Este artigo descreve os problemas conhecidos do Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: efe8d631437761da775fb029d88fa59b36a138c0
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
-ms.translationtype: HT
+ms.openlocfilehash: 98c61991ec99b1f7776c03f5fa5bc2400b5950a6
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991835"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744052"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
-Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no [Log de alterações do Microsoft Graph](changelog.md).
+Este artigo descreve os problemas conhecidos do Microsoft Graph. 
+
+Para relatar um problema conhecido, confira a página de [suporte do Microsoft Graph](https://developer.microsoft.com/graph/support) .
+
+Para obter informações sobre as atualizações mais recentes para a API do Microsoft Graph, consulte o [changelog do Microsoft Graph](changelog.md).
 
 ## <a name="bookings"></a>Reservas
 
@@ -45,7 +49,7 @@ Ao tentar acessar eventos em um calendário compartilhado por outro usuário usa
 GET /users/{id}/calendars/{id}/events
 ```
 
-Você pode receber HTTP 500 com o código de erro `ErrorInternalServerTransientError`. O erro ocorre porque:
+You may get HTTP 500 with the error code `ErrorInternalServerTransientError`. The error occurs because:
 
 - Historicamente, há duas maneiras de compartilhar o calendário, que são chamadas de "antiga" e "nova" abordagens, para fins de diferenciá-las.
 - A nova abordagem está disponível atualmente para compartilhamento de calendários, com permissões de exibição ou edição, mas não com permissões de representante.
@@ -59,10 +63,10 @@ Com o tempo, o Outlook atualizará automaticamente todos os calendários compart
 Para atualizar manualmente um calendário compartilhado e usar a nova abordagem, faça os seguintes procedimentos:
 1.  O destinatário remove o calendário previamente compartilhado com ele.
 2.  O proprietário compartilha novamente o calendário no Outlook na Web, no Outlook para iOS ou no Outlook para Android.
-3.  O destinatário aceita novamente o calendário compartilhado usando o Outlook na Web. Em breve você poderá usar outros clientes do Outlook.
+3.  The recipient re-accepts the shared calendar using Outlook on the web. (It will be possible to use other Outlook clients soon.)
 4.  O destinatário verifica se o calendário foi compartilhado novamente com êxito por meio da nova abordagem, com permissão para exibi-lo no Outlook para iOS ou no Outlook para Android.
 
-Um calendário compartilhado com você na nova abordagem é exibido como qualquer outro na sua caixa de correio. Você pode usar a API REST de calendário para visualizar e editar eventos no calendário compartilhado, como se fosse seu próprio calendário. Como exemplo:
+A calendar shared with you in the new approach appears as just another calendar in your mailbox. You can use the calendar REST API to view or edit events in the shared calendar, as if it's your own calendar. As an example:
 
 ```http
 GET /me/calendars/{id}/events
@@ -73,7 +77,7 @@ GET /me/calendars/{id}/events
 Atualmente, há suporte parcial para um calendário com base em uma Inscrição em Calendário da Internet (ICS):
 
 * Você pode adicionar um calendário baseado em ICS para uma caixa de correio do usuário por meio da interface do usuário, mas não através da API do Microsoft Graph.
-* [Listar os calendários do usuário](/graph/api/user-list-calendars?view=graph-rest-1.0) permite que você obtenha as propriedades **name**, **color** e **id** de cada [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) no grupo de calendários padrão do usuário ou em um grupo de calendários especificado, inclusive todos os calendários com base em ICS. Não é possível armazenar ou acessar a URL da ICS no recurso de calendário.
+* [Listing the user's calendars](/graph/api/user-list-calendars?view=graph-rest-1.0) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
 * Você também pode [listar os eventos](/graph/api/calendar-list-events?view=graph-rest-1.0) de um calendário baseado em ICS.
 
 ### <a name="attaching-large-files-to-events"></a>Anexar arquivos grandes a eventos
@@ -103,7 +107,7 @@ O cliente do Microsoft Teams não mostra o menu **Exibir detalhes da Reunião** 
 
 ### <a name="csp-apps-must-use-azure-ad-endpoint"></a>Os aplicativos CSP devem usar o ponto de extremidade do Azure AD
 
-Aplicativos de provedor de solução de nuvem (CSP) devem adquirir tokens de pontos de extremidade do Azure AD (v1) para chamar a Microsoft Graph com êxito em seus clientes gerenciados por parceiros. Atualmente, não há suporte para aquisição de um token pelo ponto de extremidade Azure AD v 2.0 mais recente.
+Cloud solution provider (CSP) apps must acquire tokens from the Azure AD (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.
 
 ### <a name="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants"></a>A pré-autorização para aplicativos CSP não funciona em alguns locatários do cliente
 
@@ -116,9 +120,9 @@ Estamos trabalhando para corrigir esse problema o mais rápido possível, de mod
 
 Enquanto isso, para desbloquear o desenvolvimento e testes, você pode usar a seguinte solução alternativa.
 
->**OBSERVAÇÃO:** esta não é uma solução permanente e destina-se apenas a desbloquear o desenvolvimento.  Esta solução alternativa não será necessária uma vez que a questão acima mencionada seja corrigida.  Esta solução alternativa não precisa ser desfeita após a correção.
+>**NOTE:** This is not a permanent solution and is only intended to unblock development.  This workaround will not be required once the aforementioned issue is fixed.  This workaround does not need to be undone once the fix is in place.
 
-1. Abra uma sessão do Azure AD v2 PowerShell e conecte-se ao locatário do parceiro `customer`digitando suas credenciais de administrador na janela de entrada. Você pode baixar e instalar o Azure AD PowerShell V2 [aqui](https://www.powershellgallery.com/packages/AzureAD).
+1. Open an Azure AD v2 PowerShell session and connect to your `customer` tenant by entering your admin credentials into the sign-in window. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).
 
     ```PowerShell
     Connect-AzureAd -TenantId {customerTenantIdOrDomainName}
@@ -133,13 +137,13 @@ Enquanto isso, para desbloquear o desenvolvimento e testes, você pode usar a se
 
 ### <a name="organization-contacts-available-in-only-beta"></a>Contatos de organização disponíveis somente na versão beta
 
-Somente os contatos pessoais têm suporte no momento. Os contatos organizacionais atualmente não têm suporte na `/v1.0`, mas podem ser encontrados na versão `/beta`.
+Only personal contacts are currently supported. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
 
 ### <a name="default-contacts-folder"></a>Pasta Contatos padrão
 
 Na versão `/v1.0`, `GET /me/contactFolders` não inclui a pasta de contatos do usuário padrão.
 
-Uma correção será disponibilizada. Enquanto isso, você pode usar a seguinte consulta [list contacts](/graph/api/user-list-contacts?view=graph-rest-1.0) e a propriedade **parentFolderId** como uma solução alternativa para obter a ID da pasta de contatos padrão:
+A fix will be made available. Meanwhile, you can use the following [list contacts](/graph/api/user-list-contacts?view=graph-rest-1.0) query and the **parentFolderId** property as a workaround to get the folder ID of the default contacts folder:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
@@ -162,7 +166,7 @@ GET /me/contactfolders/{id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
 
-* Acessando um contato contido em uma pasta filha de um **contactFolder**.  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho e assim por diante.
+* Accessing a contact contained in a child folder of a **contactFolder**.  The example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
@@ -189,7 +193,7 @@ O controle de alterações (consulta delta) não tem suporte nas propriedades de
 
 ### <a name="creating-a-resource-and-open-extension-at-the-same-time"></a>Criar um recurso e uma extensão aberta ao mesmo tempo
 
-Você não pode especificar uma extensão aberta ao mesmo tempo que cria uma instância de **administrativeUnit**, **device**, **group**, **organization** ou **user**. Primeiro você deve criar a instância e, depois, especificar os dados da extensão aberta em uma solicitação ``POST`` subsequente nessa instância.
+You cannot specify an open extension at the same time you create an instance of **administrativeUnit**, **device**, **group**, **organization** or **user**. You must first create the instance and then specify the open extension data in a subsequent ``POST`` request on that instance.
 
 ### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>Criar uma instância de recurso e adicionar dados de extensão de esquema ao mesmo tempo
 
@@ -216,7 +220,7 @@ O Microsoft Graph expõe duas permissões ([*Group.Read.All*](permissions-refere
 As permissões do aplicativo devem ser consentidas por um administrador.
 No futuro, pretendemos adicionar novas permissões para grupos e equipes que possam ser consentidas pelos usuários.
 
-Além disso, somente a API para administração de grupo principal e gerenciamento suporta acesso usando permissões delegadas ou somente para aplicativos. Todos os outros recursos da API do grupo dão suporte apenas a permissões delegadas.
+Also, only the API for core group administration and management supports access using delegated or app-only permissions. All other features of the group API support only delegated permissions.
 
 Exemplos de recursos de grupo que oferecem suporte a permissões delegadas e somente para aplicativos:
 
@@ -224,10 +228,11 @@ Exemplos de recursos de grupo que oferecem suporte a permissões delegadas e som
 * Obter e atualizar propriedades do grupo pertencentes ao gerenciamento ou administração de grupo
 * [Definições do diretório](/graph/api/resources/directoryobject?view=graph-rest-1.0), tipo e sincronização do grupo
 * Membros e proprietários de grupo
+* Obtendo conversas de grupo e threads
 
 Exemplos de recursos de grupo que oferecem suporte somente a permissões delegadas:
 
-* Conversas, eventos e foto de grupo
+* Agrupar eventos, foto
 * Remetentes externos, remetentes aceitos ou rejeitados e assinatura de grupo
 * Favoritos do usuário e contagem de não vistos
 
@@ -245,7 +250,7 @@ Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [
 
 ## <a name="identity-and-access--application-and-service-principal-apis"></a>Identidade e acesso | APIs da entidade de serviço e aplicativo
 
-Há alterações para as entidades [application](/graph/api/resources/application?view=graph-rest-beta) e [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) atualmente em desenvolvimento. A seguir, encontra-se um resumo das limitações atuais e os recursos da API em desenvolvimento:
+There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) entities currently in development. The following is a summary of current limitations and in-development API features.
 
 Limitações atuais:
 
@@ -280,15 +285,15 @@ Solicitações de lote JSON não devem conter quaisquer solicitações em lotes 
 
 ### <a name="all-individual-requests-must-be-synchronous"></a>Todas as solicitações individuais devem ser síncronas
 
-Todas as solicitações contidas em uma solicitação de lote devem ser executadas de forma síncrona. Se estiver presente, a preferência `respond-async` será ignorada.
+All requests contained in a batch request must be executed synchronously. If present, the `respond-async` preference will be ignored.
 
 ### <a name="no-transactions"></a>Sem transações
 
-No momento o Microsoft Graph não oferece suporte a processamento transacional de solicitações individuais. A propriedade `atomicityGroup` em solicitações individuais será ignorada.
+Microsoft Graph does not currently support transactional processing of individual requests. The `atomicityGroup` property on individual requests will be ignored.
 
 ### <a name="uris-must-be-relative"></a>URIs devem ser relativas
 
-Sempre especifique URIs relativas em solicitações de lote. O Microsoft Graph então torna essas URLs absolutas usando o ponto de extremidade de versão incluído na URL de lote.
+Always specify relative URIs in batch requests. Microsoft Graph then makes these URLs absolute by using the version endpoint included in the batch URL.
 
 ### <a name="limit-on-batch-size"></a>Limite de tamanho de lote
 
@@ -296,7 +301,7 @@ No momento, as solicitações de lote JSON estão limitadas a 20 solicitações 
 
 ### <a name="simplified-dependencies"></a>Dependências simplificadas
 
-Solicitações individuais podem depender de outras solicitações individuais. Atualmente, solicitações só podem depender de uma única outra solicitação e devem seguir um destes três padrões:
+Individual requests can depend on other individual requests. Currently, requests can only depend on a single other request, and must follow one of these three patterns:
 
 1. Paralelo – nenhuma solicitação individual declara uma dependência na propriedade `dependsOn`.
 2. Serial – todas as solicitações individuais dependem da solicitação individual anterior.
@@ -324,7 +329,7 @@ Em pontos de extremidade beta e v1, a resposta de `GET /users/id/messages` inclu
 Para obter uma lista de equipes, confira [listar todas as equipes](teams-list-all-teams.md) e [listar suas equipes](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
 
 ### <a name="post-teams-is-only-available-in-beta"></a>POST /teams está disponível apenas na versão beta
-Para criar equipes na versão v1.0, confira [criar equipe](/graph/api/team-put-teams?view=graph-rest-1.0).
+Para criar equipes no v 1.0, confira [criar equipe](/graph/api/team-put-teams?view=graph-rest-1.0).
 
 ### <a name="missing-teams-in-list-all-teams"></a>Equipes ausentes em listas todas as equipes
 
@@ -337,19 +342,20 @@ No futuro, vamos configurar **resourceProvisioningOptions** em equipes existente
 
 ### <a name="no-instant-access-after-creation"></a>Sem acesso instantâneo após a criação
 
-Os usuários podem ser criados imediatamente por um POST na entidade do usuário. Uma licença do Office 365 deve ser atribuída a um usuário primeiro para que ele possa ter acesso aos serviços do Office 365. Mesmo assim, devido à natureza distribuída do serviço, pode demorar 15 minutos antes que os arquivos, as mensagens e as entidades de eventos fiquem disponíveis para uso por esse usuário na API do Microsoft Graph. Durante esse período, os aplicativos receberão uma resposta de erro 404 HTTP.
+Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response.
 
 ### <a name="photo-restrictions"></a>Restrições de foto
 
-A leitura e a atualização da foto do perfil do usuário só serão possíveis se o usuário tiver uma caixa de correio. Além disso, as fotos que *possam* ter sido previamente armazenadas usando a propriedade **thumbnailPhoto** (usando a visualização da API unificada do Office 365, o Azure AD Graph ou por meio da sincronização do AD Connect) deixarão de estar acessíveis com a propriedade **photo** do recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0) do Microsoft Graph. A falha na leitura ou na atualização de uma foto, nesse caso, resultaria no seguinte erro:
+Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource.
+Failure to read or update a photo, in this case, would result in the following error:
 
 ```javascript
-    {
-      "error": {
-        "code": "ErrorNonExistentMailbox",
-        "message": "The SMTP address has no mailbox associated with it."
-      }
-    }
+{
+  "error": {
+    "code": "ErrorNonExistentMailbox",
+    "message": "The SMTP address has no mailbox associated with it."
+  }
+}
 ```
 
 ### <a name="using-delta-query"></a>Uso da consulta delta
@@ -368,7 +374,7 @@ A solicitação de objetos usando a opção de [Obter objetos de diretório de u
 
 * Não há suporte para vários namespaces.
 * Não há suporte para GETs em `$ref` e conversão em usuários, grupos, dispositivos, entidades de serviço e aplicativos.
-* `@odata.bind` não é compatível. Isso significa que os desenvolvedores não poderão definir corretamente a propriedade de navegação **acceptedSenders** ou **rejectedSenders** em um grupo.
+* `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 * `@odata.id` não está presente na navegação sem confinamento (como mensagens) quando há o uso de metadados mínimos.
 * `$expand`:
   * Não há suporte para `nextLink`
