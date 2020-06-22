@@ -4,12 +4,12 @@ description: q=excelstarter).
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a8fcc90d4050cb6f0db2fb5e2b3a22d267f8cede
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1dd914289342a80a3efbe258a0bfad30506d63f1
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526311"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793665"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>Gravar dados em uma pasta de trabalho do Excel com o Microsoft Graph
 
@@ -154,7 +154,7 @@ A função `onWriteToExcel` cria a matriz de cadeia de caracteres bidimensional 
           .catch(err => console.error(err));
       }
 
-##<a name="see-also"></a>Confira também
+## <a name="see-also"></a>Confira também
 
 * [Gerenciar sessões do Excel usando o Microsoft Graph](excel-manage-sessions.md)
 * [Usar funções de pasta de trabalho do Excel com o Microsoft Graph](excel-use-functions.md)
