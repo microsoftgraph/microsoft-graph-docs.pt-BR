@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b7fbcfa13ba78238c32e9a2c9056ea49edd499a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 460bbfaa522cf4767d7f35992a4371bf870c8948
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533558"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793679"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -61,7 +61,7 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |:---------------|:--------|:----------|
 |channels|Coleção [channel](channel.md)|A coleção de canais e mensagens associadas à equipe.|
 |installedApps|Coleção [teamsAppInstallation](teamsappinstallation.md)|Os aplicativos instalados nessa equipe.|
-|primaryChannel|[canal](channel.md)| O canal geral da equipe. | 
+|[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| O canal geral da equipe. | 
 
 ## <a name="json-representation"></a>Representação JSON
 

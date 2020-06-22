@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 243c3ea1e203ceaca4b31cb82dca77c873af7cb0
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: 1f14b7240500cceebd39e2bde1b91e2dbf477322
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272693"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791087"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -59,7 +59,7 @@ Namespace: microsoft.graph
 |messages|[chatMessage](chatmessage.md) collection|Uma coleção de todas as mensagens do canal. Uma propriedade de navegação. Anulável.|
 |guias|[teamsTab](../resources/teamstab.md) collection|Uma coleção de todas as guias do canal. Uma propriedade de navegação.|
 |membros|coleção [conversationMember](conversationmember.md)|Uma coleção de registros de associação ligados ao canal.|
-|filesFolder|[driveItem](driveitem.md)|Metadados para o local em que os arquivos do canal estão armazenados.|
+|[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadados para o local em que os arquivos do canal estão armazenados.|
 
 ## <a name="json-representation"></a>Representação JSON
 

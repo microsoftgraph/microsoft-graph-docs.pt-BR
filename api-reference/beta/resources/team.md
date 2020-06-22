@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 0ea6e93303449574b023fcace023a1b7b8b9d175
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: cf94e73bfd7ad05fea8f52ea1f2f219b7933ffa7
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962342"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793735"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -66,7 +66,7 @@ Cada equipe está associada a um [grupo](../resources/group.md). O grupo tem a m
 |installedApps|Coleção [teamsAppInstallation](teamsappinstallation.md)|Os aplicativos instalados nessa equipe.|
 |owners|[user](user.md)| A lista de proprietários desta equipe. Atualmente, ao criar uma equipe usando permissões de aplicativo, exatamente um proprietário deve ser especificado. Ao usar permissões delegadas pelo usuário, nenhum proprietário pode ser especificado (o usuário atual é o proprietário). O proprietário deve ser especificado como um objeto ID (GUID), não um UPN. |
 |operations|Coleção [teamsAsyncOperation](teamsasyncoperation.md)| As operações assíncronas que foram executadas ou estão em execução nesta equipe. | 
-|primaryChannel|[canal](channel.md)| O canal geral da equipe. | 
+|[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| O canal geral da equipe. | 
 |Cronograma|[Cronograma](schedule.md)| Cronograma de turno para essa equipe.|
 |template|[teamsTemplate](teamstemplate.md)| O modelo usado para criar essa equipe. Confira os [modelos disponíveis](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates). |
 
