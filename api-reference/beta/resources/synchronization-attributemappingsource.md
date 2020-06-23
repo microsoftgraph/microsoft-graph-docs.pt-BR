@@ -5,33 +5,33 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1a5a70e3a299eda812fc1ed2c11f82ebfee92e22
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 8322f218a6dac2003a2212d4ce76c652a0ef56c1
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219162"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845831"
 ---
-# <a name="attributemappingsource-resource-type"></a><span data-ttu-id="fe723-103">tipo de recurso attributeMappingSource</span><span class="sxs-lookup"><span data-stu-id="fe723-103">attributeMappingSource resource type</span></span>
+# <a name="attributemappingsource-resource-type"></a><span data-ttu-id="13bf8-103">tipo de recurso attributeMappingSource</span><span class="sxs-lookup"><span data-stu-id="13bf8-103">attributeMappingSource resource type</span></span>
 
-<span data-ttu-id="fe723-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fe723-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="13bf8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="13bf8-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fe723-105">Define como um valor deve ser extraído (ou transformado) a partir do objeto Source.</span><span class="sxs-lookup"><span data-stu-id="fe723-105">Defines how a value should be extracted (or transformed) from the source object.</span></span> <span data-ttu-id="fe723-106">Por exemplo, pode ser um valor simples de um determinado atributo no objeto Source ou pode ser uma expressão mais complexa de concatenação/extração/substituição de cadeia de caracteres com base em vários atributos de origem.</span><span class="sxs-lookup"><span data-stu-id="fe723-106">For example, it can be a simple value taken from a given attribute on the source object, or it can be a more complex expression of string concatenation/extraction/replacement based on several source attributes.</span></span> 
+<span data-ttu-id="13bf8-105">Define como um valor deve ser extraído (ou transformado) a partir do objeto Source.</span><span class="sxs-lookup"><span data-stu-id="13bf8-105">Defines how a value should be extracted (or transformed) from the source object.</span></span> <span data-ttu-id="13bf8-106">Por exemplo, pode ser um valor simples de um determinado atributo no objeto Source ou pode ser uma expressão mais complexa de concatenação/extração/substituição de cadeia de caracteres com base em vários atributos de origem.</span><span class="sxs-lookup"><span data-stu-id="13bf8-106">For example, it can be a simple value taken from a given attribute on the source object, or it can be a more complex expression of string concatenation/extraction/replacement based on several source attributes.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="fe723-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fe723-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="13bf8-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="13bf8-107">Properties</span></span>
 
-| <span data-ttu-id="fe723-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fe723-108">Property</span></span>              | <span data-ttu-id="fe723-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="fe723-109">Type</span></span>                      | <span data-ttu-id="fe723-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="fe723-110">Description</span></span>               |
+| <span data-ttu-id="13bf8-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="13bf8-108">Property</span></span>              | <span data-ttu-id="13bf8-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="13bf8-109">Type</span></span>                      | <span data-ttu-id="13bf8-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="13bf8-110">Description</span></span>               |
 |:----------------------|:--------------------------|:--------------------------|
-|<span data-ttu-id="fe723-111">expressão</span><span class="sxs-lookup"><span data-stu-id="fe723-111">expression</span></span>             |<span data-ttu-id="fe723-112">Cadeia de Caracteres</span><span class="sxs-lookup"><span data-stu-id="fe723-112">String</span></span>                     |<span data-ttu-id="fe723-113">Representação de expressão equivalente deste objeto **attributeMappingSource** .</span><span class="sxs-lookup"><span data-stu-id="fe723-113">Equivalent expression representation of this **attributeMappingSource** object.</span></span>|
-|<span data-ttu-id="fe723-114">nome</span><span class="sxs-lookup"><span data-stu-id="fe723-114">name</span></span>                   |<span data-ttu-id="fe723-115">String</span><span class="sxs-lookup"><span data-stu-id="fe723-115">String</span></span>                     |<span data-ttu-id="fe723-116">Parâmetro Name da origem do mapeamento.</span><span class="sxs-lookup"><span data-stu-id="fe723-116">Name parameter of the mapping source.</span></span> <span data-ttu-id="fe723-117">Dependendo do valor da propriedade **Type** , isso pode ser o nome da função, o nome do atributo de origem ou um valor constante a ser usado.</span><span class="sxs-lookup"><span data-stu-id="fe723-117">Depending on the **type** property value, this can be the name of the function, the name of the source attribute, or a constant value to be used.</span></span> |
-|<span data-ttu-id="fe723-118">parameters</span><span class="sxs-lookup"><span data-stu-id="fe723-118">parameters</span></span>             |<span data-ttu-id="fe723-119">coleção [stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="fe723-119">[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) collection</span></span> | <span data-ttu-id="fe723-120">Se este objeto representar uma função, lista os parâmetros da função.</span><span class="sxs-lookup"><span data-stu-id="fe723-120">If this object represents a function, lists function parameters.</span></span> <span data-ttu-id="fe723-121">Os parâmetros consistem nos objetos **attributeMappingSource** , permitindo expressões complexas.</span><span class="sxs-lookup"><span data-stu-id="fe723-121">Parameters consist of **attributeMappingSource** objects themselves, allowing for complex expressions.</span></span> <span data-ttu-id="fe723-122">Se **Type** não `Function`for, esta propriedade será NULL/matriz vazia.</span><span class="sxs-lookup"><span data-stu-id="fe723-122">If **type** is not `Function`, this property will be null/empty array.</span></span> |
-|<span data-ttu-id="fe723-123">tipo</span><span class="sxs-lookup"><span data-stu-id="fe723-123">type</span></span>                   | <span data-ttu-id="fe723-124">String</span><span class="sxs-lookup"><span data-stu-id="fe723-124">String</span></span>                    |<span data-ttu-id="fe723-125">O tipo desta fonte de mapeamento de atributos.</span><span class="sxs-lookup"><span data-stu-id="fe723-125">The type of this attribute mapping source.</span></span> <span data-ttu-id="fe723-126">Os valores possíveis são: `Attribute`, `Constant`, `Function`.</span><span class="sxs-lookup"><span data-stu-id="fe723-126">Possible values are: `Attribute`, `Constant`, `Function`.</span></span> <span data-ttu-id="fe723-127">O padrão é `Attribute`.</span><span class="sxs-lookup"><span data-stu-id="fe723-127">Default is `Attribute`.</span></span>| 
+|<span data-ttu-id="13bf8-111">expressão</span><span class="sxs-lookup"><span data-stu-id="13bf8-111">expression</span></span>             |<span data-ttu-id="13bf8-112">String</span><span class="sxs-lookup"><span data-stu-id="13bf8-112">String</span></span>                     |<span data-ttu-id="13bf8-113">Representação de expressão equivalente deste objeto **attributeMappingSource** .</span><span class="sxs-lookup"><span data-stu-id="13bf8-113">Equivalent expression representation of this **attributeMappingSource** object.</span></span>|
+|<span data-ttu-id="13bf8-114">nome</span><span class="sxs-lookup"><span data-stu-id="13bf8-114">name</span></span>                   |<span data-ttu-id="13bf8-115">String</span><span class="sxs-lookup"><span data-stu-id="13bf8-115">String</span></span>                     |<span data-ttu-id="13bf8-116">Parâmetro Name da origem do mapeamento.</span><span class="sxs-lookup"><span data-stu-id="13bf8-116">Name parameter of the mapping source.</span></span> <span data-ttu-id="13bf8-117">Dependendo do valor da propriedade **Type** , isso pode ser o nome da função, o nome do atributo de origem ou um valor constante a ser usado.</span><span class="sxs-lookup"><span data-stu-id="13bf8-117">Depending on the **type** property value, this can be the name of the function, the name of the source attribute, or a constant value to be used.</span></span> |
+|<span data-ttu-id="13bf8-118">parameters</span><span class="sxs-lookup"><span data-stu-id="13bf8-118">parameters</span></span>             |<span data-ttu-id="13bf8-119">coleção [stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="13bf8-119">[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) collection</span></span> | <span data-ttu-id="13bf8-120">Se este objeto representar uma função, lista os parâmetros da função.</span><span class="sxs-lookup"><span data-stu-id="13bf8-120">If this object represents a function, lists function parameters.</span></span> <span data-ttu-id="13bf8-121">Os parâmetros consistem nos objetos **attributeMappingSource** , permitindo expressões complexas.</span><span class="sxs-lookup"><span data-stu-id="13bf8-121">Parameters consist of **attributeMappingSource** objects themselves, allowing for complex expressions.</span></span> <span data-ttu-id="13bf8-122">Se **Type** não for `Function` , esta propriedade será NULL/matriz vazia.</span><span class="sxs-lookup"><span data-stu-id="13bf8-122">If **type** is not `Function`, this property will be null/empty array.</span></span> |
+|<span data-ttu-id="13bf8-123">tipo</span><span class="sxs-lookup"><span data-stu-id="13bf8-123">type</span></span>                   | <span data-ttu-id="13bf8-124">String</span><span class="sxs-lookup"><span data-stu-id="13bf8-124">String</span></span>                    |<span data-ttu-id="13bf8-125">O tipo desta fonte de mapeamento de atributos.</span><span class="sxs-lookup"><span data-stu-id="13bf8-125">The type of this attribute mapping source.</span></span> <span data-ttu-id="13bf8-126">Os valores possíveis são: `Attribute`, `Constant`, `Function`.</span><span class="sxs-lookup"><span data-stu-id="13bf8-126">Possible values are: `Attribute`, `Constant`, `Function`.</span></span> <span data-ttu-id="13bf8-127">O padrão é `Attribute`.</span><span class="sxs-lookup"><span data-stu-id="13bf8-127">Default is `Attribute`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="fe723-128">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="fe723-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="13bf8-128">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="13bf8-128">JSON representation</span></span>
 
-<span data-ttu-id="fe723-129">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="fe723-129">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="13bf8-129">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="13bf8-129">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -50,9 +50,9 @@ ms.locfileid: "43219162"
 }
 ```
 
-## <a name="json-examples"></a><span data-ttu-id="fe723-130">Exemplos de JSON</span><span class="sxs-lookup"><span data-stu-id="fe723-130">JSON Examples</span></span>
+## <a name="json-examples"></a><span data-ttu-id="13bf8-130">Exemplos de JSON</span><span class="sxs-lookup"><span data-stu-id="13bf8-130">JSON Examples</span></span>
 
-<span data-ttu-id="fe723-131">Atributo simples para mapeamento de atributos</span><span class="sxs-lookup"><span data-stu-id="fe723-131">Simple attribute to attribute mapping</span></span>
+<span data-ttu-id="13bf8-131">Atributo simples para mapeamento de atributos</span><span class="sxs-lookup"><span data-stu-id="13bf8-131">Simple attribute to attribute mapping</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -70,7 +70,7 @@ ms.locfileid: "43219162"
 }
 ```
 
-<span data-ttu-id="fe723-132">Expressão que extrai primeiro 8 caracteres do atributo Source</span><span class="sxs-lookup"><span data-stu-id="fe723-132">Expression extracting first 8 characters from the source attribute</span></span>
+<span data-ttu-id="13bf8-132">Expressão que extrai primeiro 8 caracteres do atributo Source</span><span class="sxs-lookup"><span data-stu-id="13bf8-132">Expression extracting first 8 characters from the source attribute</span></span>
 
 <!-- {
   "blockType": "resource",
