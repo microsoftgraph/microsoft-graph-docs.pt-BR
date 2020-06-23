@@ -1,6 +1,6 @@
 ---
 title: Chamar serviços do Office 365 no Visual Studio 2017 com a API do Microsoft Graph
-description: Você pode usar os serviços conectados no Visual Studio para configurar seu aplicativo para chamar a API do Microsoft Graph. Este artigo descreve como obter a foto de perfil de um usuário conectado, carregá-la no OneDrive e enviar um email com um link de compartilhamento para a foto.
+description: You can use the Connected Services in Visual Studio to configure your app to call the Microsoft Graph API. This article describes how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo.
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
@@ -13,19 +13,19 @@ ms.locfileid: "42926663"
 ---
 # <a name="call-office-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Chamar serviços do Office 365 no Visual Studio 2017 com a API do Microsoft Graph
 
-Você pode usar os serviços conectados no Visual Studio para configurar seu aplicativo para chamar a API do Microsoft Graph. Este artigo descreve como obter a foto de perfil de um usuário conectado, carregá-la no OneDrive e enviar um email com um link de compartilhamento para a foto.
+You can use the Connected Services in Visual Studio to configure your app to call the Microsoft Graph API. This article describes how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo.
 
 ## <a name="get-set-up"></a>Prepare-se
 
 Para usar os serviços conectados do Office 365 com o Microsoft Graph, você precisará fazer o seguinte:
 
-- Baixe o [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/), caso ainda não tenha feito isso. Se estiver usando uma versão anterior do Visual Studio, você pode usar o Visual Studio 2017 Preview lado a lado com sua versão atual.
+- Download the [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/), if you haven't already. If you're using an earlier version of Visual Studio, you can use Visual Studio 2017 Preview side by side with your current version.
 
-- Obtenha uma assinatura do Microsoft 365. Para obter uma avaliação gratuita, entre no [Programa para Desenvolvedores do Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program).
+- Get a Microsoft 365 subscription. To get a free trial, join the [Microsoft 365 Developer program](https://developer.microsoft.com/microsoft-365/dev-program).
 
 ## <a name="get-the-starter-project"></a>Obter o projeto inicial
 
-Baixe a [Amostra de Serviços Conectados Microsoft Graph ASP.NET](https://github.com/microsoftgraph/aspnet-connect-sample/archive/Office365connectedservice.zip). Este exemplo inclui as referências de que você precisa para autenticar o Microsoft Graph. Depois de baixar o projeto inicial, descompacte e abra a amostra no Visual Studio 2017 Preview.
+Download the [Microsoft Graph ASP.NET Connected Services Sample](https://github.com/microsoftgraph/aspnet-connect-sample/archive/Office365connectedservice.zip). This sample includes the references that you need to authenticate against Microsoft Graph. After you download the starter project, unzip, and open the sample in Visual Studio 2017 Preview.
 
 ## <a name="add-the-connected-service"></a>Adicionar o Serviço Conectado
 
@@ -41,11 +41,11 @@ Agora você está pronto para adicionar o serviço Microsoft Graph ao seu projet
 
 ## <a name="call-the-microsoft-graph-api"></a>Chamar a API do Microsoft Graph
 
-A amostra inicial é configurada para enviar um email simples. Você pode usar o Microsoft Graph para atualizar a amostra para enviar um email com um link para a foto de perfil do usuário conectado no OneDrive.
+The starter sample is configured to send a simple email. You can use Microsoft Graph to update the sample to send an email with a link to the signed-in user's profile photo in OneDrive.
 
 1. Acesse 'Models\GraphService.cs', que hospeda o código para chamar o Microsoft Graph.
 
-2. Localizar e **Cancelar Comentários** em chamadas para o SDK nos seguintes métodos. Isso mostra como chamar o Microsoft Graph para obter uma foto de perfil, carregar um arquivo no OneDrive e obter um link de compartilhamento.
+2. Find and **Uncomment** calls to the SDK in the following methods. This shows how to call Microsoft Graph to get a profile photo, upload a file to OneDrive, and get a sharing link.
 
     ```csharp
         GetCurrentUserPhotoStream(GraphServiceClient graphClient)
@@ -63,7 +63,7 @@ A amostra inicial é configurada para enviar um email simples. Você pode usar o
  
 
 ## <a name="run-the-sample"></a>Executar o exemplo
-Criar e executar o exemplo. Em seguida, escolha o link **Entrar** na parte superior direita e escolha **Obter endereço de email** seguido por **Enviar email**.
+Build and run the sample. Next, choose the **Sign-in** link on the top right, and then choose **Get email address** followed by **Send email**.
 
 Isso enviará um email que inclui um link para sua foto do perfil.
 
@@ -75,13 +75,13 @@ Isso enviará um email que inclui um link para sua foto do perfil.
 
 ## <a name="explore-the-code"></a>Explore o código
 
-Agora você pode usar o Visual Studio 2017 para conectar e configurar seus serviços. O exemplo inicial cria a estrutura e as referências para você.  
+You can now use Visual Studio 2017 to connect to and configure your services. The starter sample creates the scaffolding and references for you.  
 
 O exemplo inicial inclui os seguintes arquivos:
 
 - [Startup.Auth.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/App_Start/Startup.Auth.cs) – autentica o usuário atual e inicializa o cache de token do exemplo.
 
-- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) – armazena as informações de token do usuário. Você pode substituir pelo seu próprio cache de token personalizado. Para saber mais, veja [Armazenamento de tokens de acesso em cache em um aplicativo de vários locatários](https://azure.microsoft.com/documentation/articles/guidance-multitenant-identity-token-cache/).
+- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) - Stores the user's token information. You can replace this with your own custom token cache. For more information, see [Caching access tokens in a multitenant application](https://azure.microsoft.com/documentation/articles/guidance-multitenant-identity-token-cache/).
 
 - Models\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs) – implementa a interface IAuthProvider local e obtém um token de acesso. 
 
@@ -94,5 +94,5 @@ O exemplo inicial inclui os seguintes arquivos:
 
 ## <a name="need-help"></a>Precisa de ajuda?
 
-Se precisar de ajuda, publique suas perguntas no [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Marque sua postagem com {microsoftgraph}.
+If you need help, post your questions on [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Tag your post with {microsoftgraph}.
 
