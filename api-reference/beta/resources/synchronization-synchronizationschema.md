@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7f67a830f53fcfc7e55682b467e5ca373da240e8
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d463fa5a00318936ef0f1612f233851e42a9db11
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217329"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846132"
 ---
 # <a name="synchronizationschema-resource-type"></a>tipo de recurso synchronizationSchema
 
@@ -28,22 +28,22 @@ As [definições de diretório](synchronization-directorydefinition.md) fornecem
 
 ## <a name="synchronization-rules"></a>Regras de sincronização
 
-[As regras de sincronização](synchronization-synchronizationrule.md) são o núcleo da configuração de sincronização. Eles definem para o mecanismo de sincronização como a sincronização deve ser realizada, incluindo quais objetos devem ser sincronizados, como os objetos do diretório de origem devem ser correspondidos com objetos no diretório de destino e como os atributos devem ser transformados quando forem sincronizados da origem para o diretório de destino. 
+[As regras de sincronização](synchronization-synchronizationrule.md) são o núcleo da configuração de sincronização. Eles definem para o mecanismo de sincronização como a sincronização deve ser realizada, incluindo quais objetos devem ser sincronizados, como os objetos do diretório de origem devem ser correspondidos com objetos no diretório de destino e como os atributos devem ser transformados quando forem sincronizados da origem para o diretório de destino.
 
 ## <a name="object-mappings"></a>Mapeamentos de objetos
 
 Os [mapeamentos de objeto](synchronization-objectmapping.md) são a parte principal da regra de sincronização. Cada mapeamento de objeto define como um determinado objeto deve ser sincronizado da origem para o diretório de destino. Em particular, o mapeamento define como um objeto no diretório de origem deve ser correspondido com um objeto no diretório de destino, quais filtros de escopo (se houver) devem ser usados para decidir se provisionar um objeto e como os atributos do objeto devem ser transformados quando forem sincronizados a partir da origem para o diretório de destino.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
-| Método        | Tipo de retorno               | Descrição                  |
-|:--------------|:--------------------------|:-----------------------------|
-|[Obter esquema](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |Leia as propriedades e as relações do objeto **synchronizationSchema** .|
-|[Atualizar esquema](../api/synchronization-synchronizationschema-update.md)    |None   |Atualize o esquema de sincronização. |
-|[Excluir esquema](../api/synchronization-synchronizationschema-delete.md)    |None   |Exclua o esquema personalizado, redefinindo o esquema para a configuração padrão. |
-|[Operadores de filtro de lista](../api/synchronization-synchronizationschema-filteroperators.md)    |coleção [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)   |Liste todos os operadores com suporte nos filtros de escopo. |
-|[Funções de mapeamento de atributo de lista](../api/synchronization-synchronizationschema-functions.md)    |coleção [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)   |Listar todas as funções suportadas nas expressões de mapeamento de atributos. |
-|[Analisar expressão de mapeamento de atributos](../api/synchronization-synchronizationschema-parseexpression.md)|[parseExpressionResponse](synchronization-parseexpressionresponse.md)|Analisar uma expressão de cadeia de caracteres em um [attributeMappingSource|(.. objeto/Resources/synchronization_attributemappingsource. MD).|
+| Método                                                                                                | Tipo de retorno                                                                                                 | Descrição                                                                                                                |
+|:------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------|
+| [Obter esquema](../api/synchronization-synchronizationschema-get.md)                                     | [synchronizationSchema](synchronization-synchronizationschema.md)                                           | Leia as propriedades e as relações do objeto **synchronizationSchema** .                                                 |
+| [Atualizar esquema](../api/synchronization-synchronizationschema-update.md)                               | Nenhum                                                                                                        | Atualize o esquema de sincronização.                                                                                         |
+| [Excluir esquema](../api/synchronization-synchronizationschema-delete.md)                               | Nenhum                                                                                                        | Exclua o esquema personalizado, redefinindo o esquema para a configuração padrão.                                           |
+| [Operadores de filtro de lista](../api/synchronization-synchronizationschema-filteroperators.md)              | coleção [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)                      | Liste todos os operadores com suporte nos filtros de escopo.                                                                       |
+| [Funções de mapeamento de atributo de lista](../api/synchronization-synchronizationschema-functions.md)         | coleção [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) | Listar todas as funções suportadas nas expressões de mapeamento de atributos.                                                         |
+| [Analisar expressão de mapeamento de atributos](../api/synchronization-synchronizationschema-parseexpression.md) | [parseExpressionResponse](synchronization-parseexpressionresponse.md)                                       | Analisar uma expressão de cadeia de caracteres em um objeto [attributeMappingSource](../resources/synchronization-attributemappingsource.md) . |
 
 
 ## <a name="properties"></a>Propriedades

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 510195b13fc3505f180e6bbcd893d4034432920f
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: a6ff5b6d9031c142821728b31cb66f8b0c5d100f
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895519"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845460"
 ---
 # <a name="reports-getprinterarchivedprintjobs"></a>relatórios: getPrinterArchivedPrintJobs
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Obtenha uma lista de trabalhos de impressão arquivados que foram enfileirados para determinada [impressora](../resources/printer.md).
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
 
@@ -40,18 +40,18 @@ GET /reports/getPrinterArchivedPrintJobs
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição   |
 |:--------------|:--------------|
-| Autorização | {token} de portador. Obrigatório. |
+| Autorização | Bearer {token}. Required. |
 
 ## <a name="function-parameters"></a>Parâmetros de função
 
-|Parâmetro|Tipo|Obrigatório?|Descrição|
-|-|-|-|-|-|
-|`printerId`|`Edm.String`|Sim|A ID da impressora para a qual retornar os dados.|
-|`periodStart`|`Edm.DateTimeOffset`|Não|A data de início (inclusive) para o período de tempo para incluir dados.|
-|`periodEnd`|`Edm.DateTimeOffset`|Não|A data de término (inclusive) para o período de tempo para incluir dados.|
+| Parâmetro     | Tipo                 | Obrigatório? | Descrição                                                          |
+|---------------|----------------------|-----------|----------------------------------------------------------------------|
+| `printerId`   | `Edm.String`         | Sim       | A ID da impressora para a qual retornar os dados.                            |
+| `periodStart` | `Edm.DateTimeOffset` | Não        | A data de início (inclusive) para o período de tempo para incluir dados. |
+| `periodEnd`   | `Edm.DateTimeOffset` | Não        | A data de término (inclusive) para o período de tempo para incluir dados.   |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [archivedPrintJob](../resources/archivedprintjob.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [archivedPrintJob](../resources/archivedprintjob.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -66,8 +66,8 @@ GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(p
 ```
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

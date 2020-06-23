@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 85e04cb96453c4415e4120e463a5c233aadc4ca3
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: b2993348b19cd0f55cbb7d26369276ea97006960
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229385"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846076"
 ---
 # <a name="useraccountinformation-resource-type"></a>tipo de recurso userAccountInformation
 
@@ -22,7 +22,7 @@ Representa informações especificamente ligadas à conta de um usuário, seja e
 
 Herda de [Myfacet](itemfacet.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                             | Tipo de retorno                                         | Descrição                                                                   |
 |:-------------------------------------------------------------------|:----------------------------------------------------|:------------------------------------------------------------------------------|
@@ -30,12 +30,12 @@ Herda de [Myfacet](itemfacet.md).
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade            | Tipo                       | Descrição                                                                                                                               |
-|:--------------------|:---------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
-|ageGroup             |String                      | Mostra o grupo de idade do usuário. Os valores `null`permitidos `minor`, `notAdult` e `adult` são gerados pelo diretório e não podem ser alterados. |
-|countryCode          |String|                     | Contém o código de país de dois caracteres associado à conta de usuários.                                                                |
-|preferredLanguageTag |[localeInfo](localeinfo.md) | Contém o idioma que o usuário associou como preferencial para a conta.                                                               |
-|userPrincipalName    |String                      | O nome principal do usuário (UPN) do usuário associado à conta.                                                                    |
+| Propriedade             | Tipo                        | Descrição                                                                                                                               |
+|:---------------------|:----------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
+| ageGroup             | String                      | Mostra o grupo de idade do usuário. Os valores `null` permitidos `minor` , `notAdult` e `adult` são gerados pelo diretório e não podem ser alterados. |
+| countryCode          | String                      | Contém o código de país de dois caracteres associado à conta de usuários.                                                                |
+| preferredLanguageTag | [localeInfo](localeinfo.md) | Contém o idioma que o usuário associou como preferencial para a conta.                                                               |
+| userPrincipalName    | String                      | O nome principal do usuário (UPN) do usuário associado à conta.                                                                    |
 
 ## <a name="relationships"></a>Relações
 

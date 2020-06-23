@@ -6,16 +6,16 @@ title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 9b7901b52bcd877df16f5507c450425484ada703
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c2b10d24acb1c4004de486904a8f2091c0a3db15
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521929"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845733"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Tipo de recurso PersonOrGroupColumn
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,26 +44,26 @@ Aqui está uma representação JSON de um recurso **personOrGroupColumn**.
 
 ## <a name="displayas-values"></a>Valores de displayAs
 
-| Valor de displayAs               | Descrição
-|:------------------------------|:-----------------------
-| **account**                   | A cadeia de caracteres de declaração codificada bruta do SharePoint para a pessoa ou grupo (por exemplo. i:0#.f|membership|jane@contoso.com).
-| **department**                | O departamento da pessoa ou grupo.
-| **firstName**                 | O primeiro nome da pessoa.
-| **id**                        | A id da pessoa ou grupo no diretório.
-| **lastName**                  | O sobrenome da pessoa.
-| **mobilePhone**               | O número de celular da pessoa.
-| **name**                      | O nome da pessoa.
-| **nameWithPictureAndDetails** | O nome da pessoa com sua imagem e detalhes adicionais.
-| **nameWithPresence**          | Padrão. O nome da pessoa com um ícone indicador de presença (disponível/ocupado/etc.)
-| **office**                    | O número comercial da pessoa.
-| **pictureOnly36x36**          | Imagem da pessoa, delimitada por um quadrado de 36 x 36 pixels.
-| **pictureOnly48x48**          | Imagem da pessoa, delimitada por um quadrado de 48 x 48 pixels.
-| **pictureOnly72x72**          | Imagem da pessoa, delimitada por um quadrado de 72 x 72 pixels.
-| **sipAddress**                | O endereço sip da pessoa.
-| **title**                     | O cargo da pessoa na organização.
-| **userName**                  | O nome de usuário da pessoa ou grupo.
-| **workEmail**                 | O endereço de email da pessoa ou grupo.
-| **workPhone**                 | O número de telefone comercial da pessoa.
+| Valor de displayAs               | Descrição                                                                                                 |
+|:------------------------------|:------------------------------------------------------------------------------------------------------------|
+| **account**                   | A cadeia de caracteres de declaração codificada bruta do SharePoint para a pessoa ou grupo (por exemplo. `i:0#.f|membership|jane@contoso.com`). |
+| **department**                | O departamento da pessoa ou grupo.                                                                           |
+| **firstName**                 | O primeiro nome da pessoa.                                                                                    |
+| **id**                        | A id da pessoa ou grupo no diretório.                                                             |
+| **lastName**                  | O sobrenome da pessoa.                                                                                     |
+| **mobilePhone**               | O número de celular da pessoa.                                                                           |
+| **name**                      | O nome da pessoa.                                                                                          |
+| **nameWithPictureAndDetails** | O nome da pessoa com sua imagem e detalhes adicionais.                                          |
+| **nameWithPresence**          | Padrão. O nome da pessoa com um ícone indicador de presença (disponível/ocupado/etc.)                             |
+| **office**                    | O número comercial da pessoa.                                                                                 |
+| **pictureOnly36x36**          | Imagem da pessoa, delimitada por um quadrado de 36 x 36 pixels.                                                         |
+| **pictureOnly48x48**          | Imagem da pessoa, delimitada por um quadrado de 48 x 48 pixels.                                                         |
+| **pictureOnly72x72**          | Imagem da pessoa, delimitada por um quadrado de 72 x 72 pixels.                                                         |
+| **sipAddress**                | O endereço sip da pessoa.                                                                                   |
+| **title**                     | O cargo da pessoa na organização.                                                                     |
+| **userName**                  | O nome de usuário da pessoa ou grupo.                                                                            |
+| **workEmail**                 | O endereço de email da pessoa ou grupo.                                                                        |
+| **workPhone**                 | O número de telefone comercial da pessoa.                                                                             |
 
 Observação: podem ser retornados tipos adicionais de DisplayAs.
 

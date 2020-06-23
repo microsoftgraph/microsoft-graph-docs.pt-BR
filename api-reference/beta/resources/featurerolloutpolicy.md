@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 27e421283c9908c648769ccbe652f990f2728fce
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 8ec1f42ba951fa1bde827b2900b98e37c62d6160
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181719"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845278"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>tipo de recurso featureRolloutPolicy
 
@@ -41,19 +41,19 @@ Estes são os requisitos para cada um dos recursos atualmente suported para dist
 
 ### <a name="passwordhashsync"></a>PasswordHashSync
 
-* Habilite o [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs) na página "recursos opcionais" no Azure ad Connect.
+* Habilite o [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs)   na página "recursos opcionais" no Azure ad Connect.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
-| Método       | Tipo de retorno | Descrição |
-|:-------------|:------------|:------------|
-| [Listar featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere uma lista de objetos featureRolloutPolicy. |
-| [Obter featureRolloutPolicy](../api/featurerolloutpolicy-get.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere as propriedades e os relacionamentos do objeto featurerolloutpolicy. ||
-| [Criar featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Criar um novo objeto featureRolloutPolicy.
-| [Atualizar featureRolloutPolicy](../api/featurerolloutpolicy-update.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Atualize as propriedades do objeto featurerolloutpolicy. |
-| [Excluir featureRolloutPolicy](../api/featurerolloutpolicy-delete.md) | Nenhum | Excluir um objeto featureRolloutPolicy. |
-| [Atribuir aplica-se](../api/featurerolloutpolicy-post-appliesto.md) | [directoryObject](directoryobject.md) | Atribua um directoryobject à distribuição de recursos. |
-| [Remover aplica-se](../api/featurerolloutpolicy-delete-appliesto.md) | Nenhum | Remover um directoryobject da distribuição de recursos. |
+| Método                                                                         | Tipo de retorno                                     | Descrição                                                               |
+|:-------------------------------------------------------------------------------|:------------------------------------------------|:--------------------------------------------------------------------------|
+| [Listar featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere uma lista de objetos featureRolloutPolicy.                          |
+| [Obter featureRolloutPolicy](../api/featurerolloutpolicy-get.md)                 | [featureRolloutPolicy](featurerolloutpolicy.md) | Recupere as propriedades e os relacionamentos do objeto featurerolloutpolicy. |
+| [Criar featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Criar um novo objeto featureRolloutPolicy.                                 |
+| [Atualizar featureRolloutPolicy](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | Atualize as propriedades do objeto featurerolloutpolicy.                     |
+| [Excluir featureRolloutPolicy](../api/featurerolloutpolicy-delete.md)           | Nenhum                                            | Excluir um objeto featureRolloutPolicy.                                     |
+| [Atribuir aplica-se](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Atribua um directoryobject à distribuição de recursos.                              |
+| [Remover aplica-se](../api/featurerolloutpolicy-delete-appliesto.md)            | Nenhum                                            | Remover um directoryobject da distribuição de recursos.                            |
 
 ## <a name="properties"></a>Propriedades
 
@@ -66,7 +66,7 @@ Estes são os requisitos para cada um dos recursos atualmente suported para dist
 |isAppliedToOrganization|Booliano|Indica se esta política de distribuição de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Boolean|Indica se a distribuição de recursos está habilitada.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|

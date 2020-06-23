@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f0691a7157fb189e75e862448069ff8ebdeee9f7
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: be0f50ec3cff0a8eec91cd43b4bb08371db806f3
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790919"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846160"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>tipo de recurso educationSynchronizationDataProvider
 
@@ -24,11 +24,11 @@ Representa o provedor de dados a ser usado como a fonte de sincronização de um
 
 ## <a name="providers"></a>Provedores
 
-| Data Provider                       | Descrição                                                                                        |
-| :---------------------------------- | :------------------------------------------------------------------------------------------------- |
-| [educationCsvDataProvider]          | Arquivos CSV carregados para a [URL SAS](../api/educationsynchronizationprofile-uploadurl.md) do perfil |
+| Data Provider                                                             | Descrição                                                                                        |
+|:--------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| [educationCsvDataProvider]                                                | Arquivos CSV carregados para a [URL SAS](../api/educationsynchronizationprofile-uploadurl.md) do perfil |
 | [educationOneRosterApiDataProvider](educationonerosterapidataprovider.md) | API do OneRoster v 1.1                                                                                 |
-| [educationPowerSchoolDataProvider]  | API da PowerSchool                                                                                    |
+| [educationPowerSchoolDataProvider]                                        | API da PowerSchool                                                                                    |
 
 ## <a name="properties"></a>Propriedades
 

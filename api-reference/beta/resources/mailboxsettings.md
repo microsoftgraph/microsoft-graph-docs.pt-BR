@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e091cba82392ece157864b6ad74ff16a66a67e71
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 36cc855b76b7d87d951f733fd0f84739f04aa138
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389012"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846167"
 ---
 # <a name="mailboxsettings-resource-type"></a>Tipo de recurso mailboxSettings
 
@@ -26,14 +26,15 @@ Você pode [obter](../api/user-get-mailboxsettings.md) ou [Atualizar](../api/use
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|archiveFolder|string|ID de uma pasta de arquivo morto do usuário.|
+|archiveFolder|string|ID de uma pasta de arquivo morto do usuário. Somente leitura.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado.|
 |dateFormat|string|O formato de data da caixa de correio do usuário.|
-|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| Se o usuário tiver um representante de calendário, isso especificará se o representante, o proprietário da caixa de correio ou ambos recebem mensagens de reunião e respostas da reunião. Os valores possíveis são: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`. O padrão é `sendToDelegateOnly`.|
+|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| Se o usuário tiver um representante de calendário, isso especificará se o representante, o proprietário da caixa de correio ou ambos recebem mensagens de reunião e respostas da reunião. Os valores possíveis são: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`. O padrão é `sendToDelegateOnly` .|
 |idioma|[localeInfo](localeinfo.md)|Informações sobre a localidade do usuário, incluindo o idioma preferencial e o país/região.|
 |Formato de TimeFormat|string|O formato de hora da caixa de correio do usuário.|
 |timeZone|string|O fuso horário padrão para a caixa de correio do usuário.|
 |workingHours|[workingHours](workinghours.md)|Os dias da semana e as horas de um fuso horário específico que o usuário trabalha.|
+|userpurpose|[userpurpose](userpurpose.md)|O objetivo da caixa de correio. Usado para diferenciar uma caixa de correio de um único usuário de uma caixa de correio compartilhada e caixa de correio de equipamento no Exchange Online. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -56,7 +57,8 @@ Veja a seguir uma representação JSON do recurso.
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
   "timeFormat": "string",
   "timeZone": "string",
-  "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
+  "workingHours": {"@odata.type": "microsoft.graph.workingHours"},
+  "userPurpose": {"@odata.type": "microsoft.graph.userPurpose"}
 }
 ```
 

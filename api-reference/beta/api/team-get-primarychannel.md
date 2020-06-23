@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8c9be54f744e596b41de1d2e994dfe51b0c95e6d
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 63a338e5a0b563c690d161d1544696b9c20b6810
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791094"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845411"
 ---
 # <a name="get-primarychannel"></a>Obter primaryChannel
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere a propriedade de navegação de uma [equipe](../resources/team.md) que permite o acesso ao [canal](../resources/channel.md)geral padrão.
+Obter o [canal](../resources/channel.md)padrão, **geral**, de uma [equipe](../resources/team.md).
 
 ## <a name="permissions"></a>Permissões
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/primaryChannel
-
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

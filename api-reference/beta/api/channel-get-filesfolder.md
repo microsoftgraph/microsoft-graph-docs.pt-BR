@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 70ca3b79a736075af1bed233a836f1000d85c5ef
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: d10e0758e0d323f17534c1651268b74fd077fd3d
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793413"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845334"
 ---
 # <a name="get-filesfolder"></a>Obter filesFolder
 
@@ -18,8 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Recupere o caminho de navegação filesFolder, que é o metadado para o local onde os arquivos de canal estão armazenados, para um [canal](../resources/channel.md).
+Obter os metadados para o local onde os arquivos de um [canal](../resources/channel.md) estão armazenados. 
 
 ## <a name="permissions"></a>Permissões
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

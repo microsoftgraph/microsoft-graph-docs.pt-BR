@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d59505f311e1a9e1fd72540a42044151198b5a07
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 12ba305c1fa88bdf42c663af1e37eefada56dab0
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423893"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845432"
 ---
 # <a name="get-user-mailbox-settings"></a>Obter as configurações da caixa de correio do usuário
 
@@ -29,6 +29,7 @@ Os usuários podem definir as configurações a seguir para suas caixas de corre
 - formato de hora
 - fuso horário
 - [horário de trabalho](../resources/workinghours.md)
+- [finalidade do usuário](../resources/userpurpose.md)
 
 Os usuários podem definir os formatos de data e hora preferidos usando o Outlook na Web. Os usuários podem escolher um dos formatos de [data abreviada](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) ou de [tempo abreviado](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) com suporte. Essa operação `GET` retorna o formato escolhido pelo usuário.
 
@@ -37,7 +38,7 @@ Os usuários podem definir o fuso horário preferido em qualquer cliente do Outl
 Essa operação `GET` retorna o fuso horário preferido do usuário no formato configurado pelo administrador. Se quiser que o fuso horário esteja em um formato específico (Windows ou IANA), você pode primeiro [atualizar o fuso horário de preferência nesse formato como uma configuração de caixa de correio](user-update-mailboxsettings.md). Posteriormente, você poderá obter o fuso horário nesse formato. Como alternativa, você pode gerenciar a conversão de formato separadamente no seu aplicativo. 
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -53,7 +54,7 @@ GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Para obter configurações específicas, somente as configurações de respostas automáticas, formato de data, localidade, formato de hora, fuso horário ou horário de trabalho:
+Para obter configurações específicas, somente as configurações de respostas automáticas, o formato de data, a localidade, o formato de hora, o fuso horário, o horário de trabalho ou a finalidade do usuário:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -76,13 +77,16 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 
 GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
+
+GET /me/mailboxSettings/userPurpose
+GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método também dá suporte a alguns [Parâmetros de Consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | string  | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -99,12 +103,13 @@ Se for bem-sucedido, este método retornará um código de resposta `200 OK` e u
 - cadeia de caracteres (para **timeFormat**)
 - cadeia de caracteres (para **timeZone**)
 - [workingHours](../resources/workinghours.md)
+- [userpurpose](../resources/userpurpose.md)
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1"></a>Exemplo 1
 #### <a name="request"></a>Solicitação 
-O primeiro exemplo obtém todas as configurações da caixa de correio do usuário conectado, que incluem configurações de respostas automáticas, formato de data, localidade (idioma e país/região), formato de hora, fuso horário e horário de trabalho.
+O primeiro exemplo obtém todas as configurações de caixa de correio da caixa de correio do usuário conectado, que incluem configurações de respostas automáticas, formato de data, localidade (idioma e país/região), formato de hora, fuso horário, horas de trabalho e finalidade do usuário.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -175,6 +180,9 @@ Content-type: application/json
             "name":"Pacific Standard Time"
         }
     },
+    "userPurpose": {
+        "value": "user"
+    },
     "dateFormat": "MM/dd/yyyy",
     "timeFormat": "hh:mm tt",
     "delegateMeetingMessageDeliveryOptions": "sendToDelegateOnly"
@@ -208,7 +216,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
 ---
 
 #### <a name="response"></a>Resposta
-A resposta inclui apenas as configurações de respostas automáticas. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+The response includes only the automatic replies settings. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -291,6 +299,36 @@ Content-type: application/json
             "year":0
         }
     }
+}
+```
+
+### <a name="example-4"></a>Exemplo 4
+#### <a name="request"></a>Solicitação
+O quarto exemplo obtém especificamente as configurações de [finalidade do usuário](../resources/userpurpose.md) da caixa de correio do usuário conectado.
+<!-- {
+  "blockType": "request",
+  "name": "get_mailboxsettings_4"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
+```
+#### <a name="response"></a>Resposta
+A resposta inclui apenas as configurações de [finalidade do usuário](../resources/userpurpose.md) .
+
+<!-- {
+  "blockType": "response",
+  "name": "get_mailboxsettings_4",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userPurpose"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('622eaaff-0683-4862-9de4-f2ec83c2bd98')/mailboxSettings/userPurpose",
+    "value": "user"
 }
 ```
 

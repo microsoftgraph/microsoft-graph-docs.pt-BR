@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 57a94a7b2347e4c4b57a431f5075dc65ba76d80c
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 637ebeae4aea6311cbeba6170d29dec047a200ad
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336640"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845768"
 ---
 # <a name="accessreview-resource-type"></a>tipo de recurso accessReview
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Representa uma análise do Azure AD [Access](accessreviews-root.md).  
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -64,7 +64,7 @@ Representa uma análise do Azure AD [Access](accessreviews-root.md).
 
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| `reviewers`               |coleção [UserIdentity](useridentity.md)                     | A coleção de revisores para uma revisão do Access, se o Access revisar revisualizador é do tipo `delegate` . |
+| `reviewers`               |coleção [UserIdentity](useridentity.md)                     | A coleção de revisores para uma revisão do Access, se o Access revisar revisualizador é do tipo `delegated` . |
 | `decisions`               |coleção [accessReviewDecision](accessreviewdecision.md) | O conjunto de decisões para esta revisão do Access. |
 | `myDecisions`             |coleção [accessReviewDecision](accessreviewdecision.md) | O conjunto de decisões para o chamador, se o chamador for um revisor. |
 | `instances`               |coleção [accessReview](accessreview.md)         | O conjunto de instâncias do Access revês passado, presente e futuro, se esse objeto for uma revisão de acesso recorrente. |

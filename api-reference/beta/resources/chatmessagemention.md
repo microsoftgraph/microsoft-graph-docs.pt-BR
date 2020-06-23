@@ -5,24 +5,24 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 70dd4a277caa005883d205f353bbcfbf63428bcf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a782c2728dcd0d06349d0f3043f44a0509f5d543
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507695"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845679"
 ---
 # <a name="chatmessagemention-resource-type"></a>tipo de recurso chatMessageMention
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma menção em uma entidade [chat](chatmessage.md) . A menção pode ser a um [usuário](user.md), uma [equipe](team.md), um bot ou um [canal](channel.md). 
 
-Em um objeto **chat** que contém uma ou mais menciona, a propriedade de **conteúdo** do corpo da mensagem representa a mensagem de chat em HTML. Ele inclui o **mentionText** de cada menção em um elemento HTML `at` , com um `id` atributo que corresponde à propriedade **ID** da menção.
+Em um objeto **chat** que contém uma ou mais menciona, a propriedade de **conteúdo** do corpo da mensagem representa a mensagem de chat em HTML. Ele inclui o **mentionText** de cada menção em um `at` elemento HTML, com um `id` atributo que corresponde à propriedade **ID** da menção.
 
-Por exemplo, uma mensagem de chat contém duas menção, com o texto de menção "Megan" e "Alex", respectivamente. A propriedade de **conteúdo** do `at` corpo especifica os elementos das duas mencionas da seguinte maneira:
+Por exemplo, uma mensagem de chat contém duas menção, com o texto de menção "Megan" e "Alex", respectivamente. A propriedade de **conteúdo** do corpo especifica `at` os elementos das duas mencionas da seguinte maneira:
 
 ``` json
 "body": {
@@ -51,7 +51,6 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.chatMessageMention"
 }-->
 

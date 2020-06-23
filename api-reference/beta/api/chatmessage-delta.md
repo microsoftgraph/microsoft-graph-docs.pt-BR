@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: a78d7cbeef36f5b6f15fca3d1131c8efe1270002
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: ee62c7caba73a9ab87b15c4a559f4376bcff7a2e
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491312"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845362"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
@@ -37,7 +37,7 @@ Para obter mais informações, consulte a documentação da [consulta Delta](/gr
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Tipo de permissão                        |Permissões (da com menos para a com mais privilégios)  |
 |---------------------------------------|---------------------------------------------|
@@ -79,7 +79,7 @@ Os seguintes [parâmetros de consulta OData](/graph/query-parameters) são compa
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho        | Valor                     |
 |---------------|---------------------------|
-| Autorização | {token} de portador. Obrigatório. |
+| Autorização | Bearer {token}. Required. |
 | Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Corpo da Solicitação
@@ -100,7 +100,7 @@ O exemplo a seguir mostra uma série de três solicitações para sincronizar as
 - Etapa 2:[ segundo exemplo de solicitação](#second-request) e [resposta](#second-request-response)
 - Etapa 3:[ terceiro exemplo de solicitação](#third-request) e [resposta final](#third-request-response).
 
-Para economizar tempo, as respostas de exemplo exibem apenas um subconjunto das propriedades para um evento. Em uma chamada real, a maior parte das propriedades dos eventos são retornadas.
+For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.
 
 Confira também o que você vai fazer na [próxima fase](#example-2-retrieving-additional-changes).
 
@@ -145,7 +145,7 @@ A resposta inclui duas mensagens e um `@odata.nextLink`cabeçalho de resposta co
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -242,7 +242,7 @@ A segunda resposta retorna as 2 próximas mensagens e um `@odata.nextLink` cabe�
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -339,7 +339,7 @@ A terceira resposta retorna as únicas mensagens restantes no canal e um `@odata
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -406,14 +406,14 @@ GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc
 
 #### <a name="response"></a>Resposta
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
