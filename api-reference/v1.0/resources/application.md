@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 27dc4650fa177dcba4d691d2c0d51985fc06e8a4
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 7410fd3cc24538133ee0e5c1d17c48e24a693dcd
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290473"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845644"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -47,6 +47,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Listar proprietários](../api/application-list-owners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma coleção de objetos owner.|
 |[Adicionar proprietário](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Adicionar um proprietário postando na coleção de proprietários.|
 |[Remover proprietário](../api/application-delete-owners.md) |Nenhum| Remover um proprietário de um aplicativo.|
+|**Políticas**| | |
 |[Atribiur tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| Coleção [tokenLifetimePolicy](tokenlifetimepolicy.md)| Atribuir um tokenLifetimePolicy a este objeto.|
 |[Listar tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| Coleção [tokenLifetimePolicy](tokenlifetimepolicy.md)| Obter todos os tokenLifetimePolicies atribuídos a este objeto.|
 |[Remover tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| Coleção [tokenLifetimePolicy](tokenlifetimepolicy.md)| Remover um tokenLifetimePolicy deste objeto.|
@@ -88,7 +89,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | Relação | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Somente leitura.|
-|extensionProperties|Coleção [extensionProperty](extensionproperty.md)| Somente leitura. Anulável.|
+|extensionProperties|Coleção [extensionProperty](extensionproperty.md)| Read-only. Nullable.|
 |owners|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que são proprietários do aplicativo. Os proprietários são um conjunto de usuários não administradores e que têm permissão para modificar esse objeto. Requer a versão 2013-11-08 ou mais recente. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON

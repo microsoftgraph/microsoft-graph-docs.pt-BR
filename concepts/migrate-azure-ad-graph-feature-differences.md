@@ -4,12 +4,12 @@ description: Descreve as diferenças de recursos entre a API do Azure Active Dir
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1e99c5e0c6b2df9e30787481c36a32dcd65485d8
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 7bebb0437ac3f099d7518640ad4fbb0f9fd75990
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38656533"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845775"
 ---
 # <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de recursos entre o Azure AD Graph e o Microsoft Graph
 
@@ -56,21 +56,21 @@ Para alternar para o modelo de extensão de esquema do Microsoft Graph mais rece
 
 ## <a name="differential-queries"></a>Consultas diferenciais
 
-O Azure AD Graph e o Microsoft Graph permitem que você controle alterações usando consultas.  A abordagem de alto nível é semelhante entre as duas APIs, mas a sintaxe é diferente.  
+O Azure AD Graph e o Microsoft Graph permitem que você controle alterações usando consultas.  A abordagem de alto nível é semelhante entre as duas APIs, mas a sintaxe é diferente.
 
 O Azure AD Graph chama essas consultas diferenciais.  No Microsoft Graph, eles são [consultas Delta](/graph/delta-query-overview).
 
 A tabela a seguir destaca as principais semelhanças e diferenças:
 
-||Azure AD Graph. | Microsoft Graph |
+|Solicitação Delta |Azure AD Graph. | Microsoft Graph |
 |----|----|----|
 | _Solicitação de dados inicial_ | Usa um parâmetro de consulta:<br>`GET /groups?deltaLink=` | O usa uma função: <br> `GET /groups/delta` |
 | _Obter novas alterações_ | `GET /groups?deltaLink={deltaToken}` | `GET /groups/delta?$deltaToken={deltaToken}` |
 | _Sincronizar a partir de agora_ |Usa um cabeçalho HTTP personalizado:<br> `ocp-aad-dq-include-only-delta-token: true` | Usa um parâmetro de consulta: <br> `GET /groups/delta?$deltaToken=latest` |
 | _Controlar alterações para o directoryObjects_ | Obtém alterações para vários recursos (usuário e grupo) na mesma operação:&nbsp;&nbsp;<br> `GET /directoryObject?$filter=isof('User') or isof('Group')&deltaLink=` | Usa consultas separadas com o Microsoft Graph, uma para cada recurso. |
 | _Obter alterações de recursos e relações_ | Todas as solicitações retornam as alterações de recurso e relação, se o recurso tiver relações. | `GET /groups/delta?$expand=members` |
-| _Resposta que indica itens novos e alterados_ | <ul><li><p>Representa instâncias recém-criadas usando sua representação padrão.</p></li><li><p>As instâncias atualizadas são representadas por sua ID com *pelo menos* as propriedades que foram atualizadas. Outras propriedades podem ser incluídas.</p></li><li><p>As relações são representadas `directoryLinkChange` como o tipo.</p></li></ul>|<ul><li><p>Representa instâncias recém-criadas usando sua representação padrão.</p></li><li><p>As instâncias atualizadas são representadas por sua ID com *pelo menos* as propriedades que foram atualizadas. Outras propriedades podem ser incluídas.</p></li><li><p>As relações são representadas como anotações na representação de recursos padrão. Essas anotações usam o formato `propertyName@delta`, por exemplo `members@delta` , para as alterações de associação de um grupo.</p></li></ul> |
-| _Resposta indicando itens excluídos_| Indica um item excluído com uma propriedade adicional de *AAD. IsDeleted* definida como true. | Indica um item excluído com a \@anotação removida. Ele também pode conter um código de motivo, que indica se o item foi excluído, mas pode ser restaurado ou excluído permanentemente. |
+| _Resposta que indica itens novos e alterados_ | <ul><li><p>Representa instâncias recém-criadas usando sua representação padrão.</p></li><li><p>As instâncias atualizadas são representadas por sua ID com *pelo menos* as propriedades que foram atualizadas. Outras propriedades podem ser incluídas.</p></li><li><p>As relações são representadas como o `directoryLinkChange` tipo.</p></li></ul>|<ul><li><p>Representa instâncias recém-criadas usando sua representação padrão.</p></li><li><p>As instâncias atualizadas são representadas por sua ID com *pelo menos* as propriedades que foram atualizadas. Outras propriedades podem ser incluídas.</p></li><li><p>As relações são representadas como anotações na representação de recursos padrão. Essas anotações usam o formato `propertyName@delta` , por exemplo, `members@delta` para as alterações de associação de um grupo.</p></li></ul> |
+| _Resposta indicando itens excluídos_| Indica um item excluído com uma propriedade adicional de *AAD. IsDeleted* definida como true. | Indica um item excluído com a \@ anotação removida. Ele também pode conter um código de motivo, que indica se o item foi excluído, mas pode ser restaurado ou excluído permanentemente. |
 
 Se seu aplicativo já estiver armazenando dados de estado, considere o uso de "sincronizar a partir de agora" mostrado anteriormente para ajudar a gerenciar a transição para consultas Delta.
 
@@ -78,7 +78,7 @@ Se seu aplicativo já estiver armazenando dados de estado, considere o uso de "s
 
 O Azure AD Graph usava um sistema chamado mensagens MIME de várias partes para gerenciar o envio em lote.  O Microsoft Graph usa o [processamento em lotes JSON](json-batching.md) para permitir até 20 solicitações em uma única operação em lote. O mecanismo de lote JSON é muito mais simples de usar, especialmente em conjunto com as bibliotecas de análise JSON.  Também permite operações em lote de sequenciamento.  No entanto, não é compatível com versões anteriores da abordagem de lotes do Azure AD Graph.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 - Saiba mais sobre as [diferenças de recursos](migrate-azure-ad-graph-resource-differences.md) entre o Azure ad Graph e o Microsoft Graph.
 - Explore [Adicionar dados personalizados](/graph/extensibility-overview) para obter informações sobre as extensões abertas e de esquema.

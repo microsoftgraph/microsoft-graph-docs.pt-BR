@@ -3,12 +3,12 @@ title: Modelos no Microsoft Graph Toolkit
 description: Use modelos personalizados para modificar o conteúdo de um componente.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 00be58b006fd4442154f547603cf1f2c5dbeb5a5
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 4f855558b8b1ee5d0f84b9998b62c2f770a4dc6b
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682240"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845950"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Modelos no Microsoft Graph Toolkit
 
@@ -82,10 +82,10 @@ TemplateHelper.setBindingSyntax('[[', ']]');
 
 As propriedades a seguir também podem ser usadas com o objeto de contexto de dados em seus modelos.
 
-| Propriedade |  Descrição |
-| --- | --- | --- |
-| $index | Índice numérico do item que está sendo processado durante o loop `data-for` . |
-| $parent | Se um modelo é renderizado dentro de outro modelo, essa propriedade permite que você acesse o contexto de dados pai. |
+| Propriedade | Descrição                                                                                                    |
+|----------|----------------------------------------------------------------------------------------------------------------|
+| $index   | Índice numérico do item que está sendo processado durante o loop `data-for` .                                     |
+| $parent  | Se um modelo é renderizado dentro de outro modelo, essa propriedade permite que você acesse o contexto de dados pai. |
 
 O exemplo a seguir mostra como usar a `$index` propriedade em um loop data-para.
 
@@ -138,7 +138,7 @@ Em cenários em que você precisa converter dados em suas associações, vincula
 
 1. Diretamente no componente.
 
-    Cada componente define a `templateContext` propriedade, que você pode usar para passar dados adicionais para qualquer modelo no componente. 
+    Cada componente define a `templateContext` propriedade, que você pode usar para passar dados adicionais para qualquer modelo no componente.
 
     ```ts
     document.querySelector('mgt-agenda').templateContext = {
@@ -195,7 +195,7 @@ Para usar o conversor no seu modelo, use-o como se você tivesse usado uma funç
 
 ### <a name="event-or-property-binding"></a>Associação de evento ou propriedade
 
-O `data-props` atributo permite adicionar um ouvinte de eventos ou definir um valor de propriedade diretamente em seus modelos. 
+O `data-props` atributo permite adicionar um ouvinte de eventos ou definir um valor de propriedade diretamente em seus modelos.
 
 ```html
 <template>
@@ -203,7 +203,7 @@ O `data-props` atributo permite adicionar um ouvinte de eventos ou definir um va
 </template>
 ```
 
-Os dados-props aceitam uma cadeia de caracteres delimitada por vírgulas para cada propriedade ou manipulador de eventos que você queira definir. 
+Os dados-props aceitam uma cadeia de caracteres delimitada por vírgulas para cada propriedade ou manipulador de eventos que você queira definir.
 
 Para adicionar um manipulador de eventos, Prefixe o nome do evento com `@` . O manipulador de eventos deverá estar disponível no `templateContext` do elemento.
 
@@ -238,7 +238,7 @@ agenda.addEventListener('templateRendered', (e) => { });
 Os detalhes do evento conterão uma referência ao elemento que está sendo renderizado, o objeto de contexto de dados e o tipo de modelo.
 
 ```ts
-agenda.addEventListener('templateRendered', (e) => { 
+agenda.addEventListener('templateRendered', (e) => {
   let templateType = e.detail.templateType;
   let dataContext = e.detail.context;
   let element = e.detail.element;

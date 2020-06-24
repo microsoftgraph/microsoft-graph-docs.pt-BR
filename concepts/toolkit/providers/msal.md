@@ -3,12 +3,12 @@ title: Provedor MSAL
 description: O provedor MSAL usa MSAL.js para entrar em usuários e adquirir tokens para usar com o Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 20ed3b95d48a29886a521040b09e06934effe6c2
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: df5a2e50a72c75a8a0af62e66d9bd73c3d428606
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682079"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845824"
 ---
 # <a name="msal-provider"></a>Provedor MSAL
 
@@ -32,14 +32,14 @@ Inicializar o provedor MSAL em HTML é a maneira mais simples de criar um novo p
                    authority=""></mgt-msal-provider>
 ```
 
-| Atributo | Descrição |
-| --- | --- | --- |
-| Client-ID   | String Client ID (consulte Creating a app/Client ID). Obrigatório.|
-| tipo de logon  | A enumeração entre `redirect` e o `popup` valor padrão é `redirect` . Opcional. |
-| escopos  | Cadeias de caracteres separadas por vírgula para escopos para os quais o usuário deve se concordar. Opcional.|
-| autoridades  | A cadeia de caracteres de autoridade-padrão é a autoridade comum. Para aplicativos de locatário único, use a ID de locatário ou o nome do locatário. Por exemplo, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` ou `https://login.microsoftonline.com/[your-tenant-id]` . Opcional.|
-| Redirect-URI  | Redirecionar cadeia de caracteres URI-por padrão, o URI de janela atual é usado. Opcional.|
-| depende de | Cadeia de caracteres de seletor de elemento de outro componente de provedor de prioridade mais alta. Opcional. |
+| Atributo    | Descrição                                                                                                                                                                                                                                                           |
+|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Client-ID    | String Client ID (consulte Creating a app/Client ID). Obrigatório.                                                                                                                                                                                                           |
+| tipo de logon   | A enumeração entre `redirect` e o `popup` valor padrão é `redirect` . Opcional.                                                                                                                                                                                   |
+| escopos       | Cadeias de caracteres separadas por vírgula para escopos para os quais o usuário deve se concordar. Opcional.                                                                                                                                                                                     |
+| autoridades    | A cadeia de caracteres de autoridade-padrão é a autoridade comum. Para aplicativos de locatário único, use a ID de locatário ou o nome do locatário. Por exemplo, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` ou `https://login.microsoftonline.com/[your-tenant-id]` . Opcional. |
+| Redirect-URI | Redirecionar cadeia de caracteres URI-por padrão, o URI de janela atual é usado. Opcional.                                                                                                                                                                                            |
+| depende de   | Cadeia de caracteres de seletor de elemento de outro componente de provedor de prioridade mais alta. Opcional.                                                                                                                                                                                      |
 
 ### <a name="initialize-in-javascript"></a>Inicializar em JavaScript
 

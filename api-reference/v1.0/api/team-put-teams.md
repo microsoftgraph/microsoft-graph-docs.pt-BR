@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5a2f197492ae831dc3e435e3f7a63a4f02714b1a
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 85a351c3e7ecc276666b6ed912828828de756834
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290339"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845693"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -26,7 +26,7 @@ Se o grupo foi criado há menos de 15 minutos, é possível que a chamada Criar 
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -48,7 +48,7 @@ PUT /groups/{id}/team
 
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+| Autorização  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -76,6 +76,7 @@ Content-type: application/json
 
 {  
   "memberSettings": {
+    "allowCreatePrivateChannels": true,
     "allowCreateUpdateChannels": true
   },
   "messagingSettings": {
@@ -111,7 +112,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

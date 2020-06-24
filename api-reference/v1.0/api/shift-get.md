@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dbeedc59e39e6efe06a2989199ef53d7ced20b1e
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 329d89d8a06182d5de7f9b3d149e348c7f7df4e7
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44216683"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845691"
 ---
 # <a name="get-shift"></a>Obter turno
 
@@ -20,15 +20,15 @@ Recupere as propriedades e os relacionamentos de um objeto [Shift](../resources/
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |s
-|Application | Schedule. Read. All, Schedule. ReadWrite. All |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                    |
+|:---------------------------------------|:-------------------------------------------------------------------------------|
+| Delegado (conta corporativa ou de estudante)     | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                 |
+| Aplicativo                            | Schedule. Read. All, Schedule. ReadWrite. All                                      |
 
-> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,7 +46,7 @@ Este método não oferece suporte a parâmetros de consulta OData para personali
 
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+| Autorização  | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 
 Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

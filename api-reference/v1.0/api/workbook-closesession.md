@@ -5,21 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ee16d09d61df2f805d7af50748935a588e578c1b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5d97f8bc65c9e1711c7a650a34b12670d23ccef5
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508881"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846174"
 ---
 # <a name="close-session"></a>Fechar Sessão
 
 Namespace: microsoft.graph
 
-Use esta API para fechar uma sessão de pasta de trabalho existente. 
+Use esta API para fechar uma sessão de pasta de trabalho existente.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -34,9 +34,9 @@ POST /workbook/closeSession
 workbook-session-id: {session-id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Descrição|
-|:---------------|:----------|
-| Autorização  | {token} de portador. Obrigatório. | | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
+| Nome                | Descrição                      |
+|:--------------------|:---------------------------------|
+| Autorização       | Bearer {token}. Required.        |
 | Workbook-session-ID | ID da sessão da pasta de trabalho a ser fechada |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -84,11 +84,11 @@ Content-length: 0
 ---
 
 
-Observe que o cabeçalho Workbook-session-ID é necessário. 
+Observe que o cabeçalho Workbook-session-ID é necessário.
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+Veja a seguir um exemplo da resposta.
 
 <!-- {
   "blockType": "response",

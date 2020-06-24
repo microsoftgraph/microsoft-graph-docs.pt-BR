@@ -1,12 +1,13 @@
 ---
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas.
-ms.openlocfilehash: 0cdd1ee8a14a623d7b65ac5c6453357c2d91aa63
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+author: arpitha-dhanapathi
+ms.openlocfilehash: b437f4d3c33a42a486bec2815ff88af050c78921
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429548"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845488"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -32,10 +33,10 @@ Antes de chamar as APIs do Microsoft Graph, você deve primeiro registrar seu ap
 
 | Nuvem nacional | Ponto de extremidade do portal do Azure AD| Ponto de extremidade do Azure AD|
 |---------------------------|----------------|----------------|
+|Microsoft Azure AD (serviço global)|https://portal.azure.com |`https://login.microsoftonline.com`|
 |Microsoft Azure AD para o Governo dos Estados Unidos |https://portal.azure.us|`https://login.microsoftonline.us`|
 |Microsoft Azure AD Alemanha |https://portal.microsoftazure.de|`https://login.microsoftonline.de`|
 |Microsoft Azure AD China operado pela 21Vianet |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
-|Microsoft Azure AD (serviço global)|https://portal.azure.com |`https://login.microsoftonline.com`|
 
 Para saber mais sobre os tokens de acesso do Azure AD e o Microsoft Graph, consulte [Basics Authentication](./auth/auth-concepts.md). Para cenários de autenticação do Azure AD, confira [noções básicas de autenticação do Azure ad](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
 
@@ -46,14 +47,20 @@ A tabela a seguir mostra os pontos de extremidade da raiz do serviço para o Mic
 
 | National Cloud | Microsoft Graph | Explorador do Graph |
 |---------------------------|----------------|----------------|
+| Serviço global do Microsoft Graph | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 | Microsoft Graph para o governo dos EUA | https://graph.microsoft.us | Sem suporte. |
 | Microsoft Graph para o governo dos EUA L5 (DOD) | https://dod-graph.microsoft.us | Sem suporte. |
 | Microsoft Graph Alemanha | https://graph.microsoft.de | Sem suporte. |
 | Microsoft Graph China operado pela 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
-| Serviço global do Microsoft Graph | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
 > [!IMPORTANT]
-> Se você já tiver um aplicativo no governo dos EUA e estiver usando o ponto de extremidade internacional `https://graph.microsoft.com` , recomendamos mudar para o novo `https://graph.microsoft.us` ponto de extremidade. O acesso aos dados do governo dos EUA usando o ponto de extremidade internacional está funcional no momento, mas será desabilitado em um futuro próximo.
+> Para um aplicativo no governo dos EUA:
+>
+> - Se você estiver trabalhando em um ambiente GCC do Office 365, continue usando os pontos de extremidade mundiais: `https://graph.microsoft.com` e `https://portal.azure.com` .
+> - Se você estiver trabalhando em um ambiente High do Office 365 GCC, use: `https://portal.azure.us` e `https://graph.microsoft.us` .
+> - Se você estiver trabalhando em um ambiente do Office 365 DoD, use `https://portal.azure.us` e `https://dod-graph.microsoft.us` .
+>
+> O acesso aos dados do governo dos EUA usando o ponto de extremidade internacional será desabilitado em um futuro próximo.
 
 > [!NOTE]
 > Os aplicativos podem acessar apenas os dados organizacionais por meio dos pontos de extremidade da nuvem nacional. Isso significa que os aplicativos só podem acessar dados em locatários registrados na nuvem nacional específica. Os aplicativos que estão tentando acessar os dados do cliente associados às contas pessoais da Microsoft por meio do Microsoft Graph devem usar o serviço global `https://graph.microsoft.com` . Tokens de acesso adquiridos para implantação de nuvem nacional não são intercambiáveis com aqueles adquiridos para o serviço global ou qualquer outra nuvem nacional.
@@ -71,7 +78,9 @@ Os seguintes recursos do Microsoft Graph geralmente estão disponíveis no `/v1.
 | Email do Outlook | ✔ | ✔ | ✔ |
 | Calendário do Outlook | ✔ | ✔ | ✔ |
 | Contatos pessoais | ✔ | ✔ | ✔ |
+| Segurança | ✔ | ✔ | ✔ |
 | SharePoint| ✔ | ✔ | ✔ |
+| Teams | ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Relatórios  |➖| ✔ |➖|
 | Alterar notificações (Webhooks)  | ✔ |✔ |✔* |

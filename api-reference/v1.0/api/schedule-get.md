@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 489c98f0fdef7b9523ee00b4b14bb0d93b7e7567
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: b953e911ba834b9707df33926e4a2a355653dcb3
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44218520"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845880"
 ---
 # <a name="get-schedule"></a>Obter cronograma
 
@@ -27,13 +27,13 @@ Os clientes também podem inspecionar a configuração do cronograma.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |s
-|Aplicativo | Schedule. Read. All, Schedule. ReadWrite. All |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                    |
+|:---------------------------------------|:-------------------------------------------------------------------------------|
+| Delegado (conta corporativa ou de estudante)     | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                 |
+| Aplicativo                            | Schedule. Read. All, Schedule. ReadWrite. All                                      |
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
@@ -53,8 +53,8 @@ Este método não oferece suporte a parâmetros de consulta OData para personali
 
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json. Obrigatório.  |
+| Autorização  | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -101,9 +101,9 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule
 
 ### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. 
+Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

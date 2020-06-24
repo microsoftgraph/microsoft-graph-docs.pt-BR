@@ -6,16 +6,16 @@ localization_priority: Normal
 ms.prod: insights
 description: O recurso personOrGroupColumn em uma columnDefinition indica que os valores da coluna representam uma pessoa ou grupo escolhido no diretório.
 doc_type: resourcePageType
-ms.openlocfilehash: ea89377f38f820ec00fc38343ba714ec22a10c1c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9c3774405dbb8d2e98a9823a84be97d5df09b0b
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447196"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845474"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Tipo de recurso PersonOrGroupColumn
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 O recurso **personOrGroupColumn** em uma [columnDefinition](columndefinition.md) indica que os valores da coluna representam uma pessoa ou grupo escolhido no diretório.
 
@@ -44,7 +44,7 @@ Aqui está uma representação JSON de um recurso **personOrGroupColumn**.
 
 | Valor de displayAs               | Descrição
 |:------------------------------|:-----------------------
-| **account**                   | A cadeia de caracteres de declaração codificada bruta do SharePoint para a pessoa ou grupo (por exemplo. i:0#.f|membership|jane@contoso.com).
+| **account**                   | A cadeia de caracteres de declaração codificada bruta do SharePoint para a pessoa ou grupo (por exemplo. `i:0#.f|membership|jane@contoso.com`).
 | **department**                | O departamento da pessoa ou grupo.
 | **firstName**                 | O primeiro nome da pessoa.
 | **id**                        | A id da pessoa ou grupo no diretório.

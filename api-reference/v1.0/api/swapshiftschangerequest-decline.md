@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d2b53c049dfb1213fdae049e0d8f1cb72b6a1f95
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 4814fb3ef9d416d6d3bc5be1815b746277a25426
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44217451"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846181"
 ---
 # <a name="swapshiftschangerequest-decline"></a>swapShiftsChangeRequest: recusar
 
@@ -20,13 +20,13 @@ Recusar um objeto [swapShiftsChangeRequest](../resources/swapshiftschangerequest
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |s
-|Aplicativo | Schedule.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Schedule. ReadWrite. All, Group. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | Schedule.ReadWrite.All                      |
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
@@ -42,8 +42,8 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId
 
 | Nome          | Descrição   |
 |:--------------|:--------------|
-| Autorização | {token} de portador. Obrigatório. |
-| Content-type | application/json. Obrigatório. |
+| Autorização | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -55,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## <a name="examples"></a>Exemplos
 
