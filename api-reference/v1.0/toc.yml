@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Obter tokens de autenticação
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: /graph/auth/index?context=graph/api/1.0
       - name: Noções básicas
         href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -72,7 +72,7 @@ items:
       - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -167,11 +167,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -387,7 +387,7 @@ items:
                 href: api/planneruser-list-tasks.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -899,7 +899,7 @@ items:
                 href: api/onlinemeeting-createorget.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -942,7 +942,7 @@ items:
       - name: Dispositivos e aplicativos
         displayName: Intune
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/intune-graph-overview.md
           - name: Gerenciamento de aplicativos
             href: resources/intune-app-conceptual.md
@@ -3332,7 +3332,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -3653,7 +3653,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -3743,6 +3743,21 @@ items:
                     href: api/homerealmdiscoverypolicy-delete.md
                   - name: Listar aplicadas ao aplicativo
                     href: api/homerealmdiscoverypolicy-list-appliesto.md
+              - name: Política de mapeamento de declarações
+                href: resources/claimsmappingpolicy.md
+                items:
+                  - name: Criar
+                    href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
+                  - name: Listar
+                    href: api/claimsmappingpolicy-list.md
+                  - name: Obter
+                    href: api/claimsmappingpolicy-get.md
+                  - name: Atualizar
+                    href: api/claimsmappingpolicy-update.md
+                  - name: Excluir
+                    href: api/claimsmappingpolicy-delete.md
+                  - name: Listar aplicadas ao aplicativo
+                    href: api/claimsmappingpolicy-list-appliesto.md
               - name: Política de emissão de token
                 href: resources/tokenissuancepolicy.md
                 items:
@@ -3841,6 +3856,32 @@ items:
                     href: api/serviceprincipal-post-owners.md
                   - name: Remover
                     href: api/serviceprincipal-delete-owners.md
+              - name: Políticas
+                items:
+                  - name: Atribuir claimsMappingPolicy
+                    href: api/serviceprincipal-post-claimsmappingpolicies.md
+                  - name: Listar claimsMappingPolicies
+                    href: api/serviceprincipal-list-claimsmappingpolicies.md
+                  - name: Remover claimsMappingPolicy
+                    href: api/serviceprincipal-delete-claimsmappingpolicies.md
+                  - name: Atribuir homeRealmDiscoveryPolicy
+                    href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+                  - name: Listar homeRealmDiscoveryPolicies
+                    href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+                  - name: Remover homeRealmDiscoveryPolicy
+                    href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: Atribuir tokenIssuancePolicy
+                    href: api/application-post-tokenissuancepolicies.md
+                  - name: Listar TokenIssuancePolicies
+                    href: api/application-list-tokenissuancepolicies.md
+                  - name: Remover tokenIssuancePolicy
+                    href: api/application-delete-tokenissuancepolicies.md
+                  - name: Atribiur tokenLifetimePolicy
+                    href: api/application-post-tokenlifetimepolicies.md
+                  - name: Listar tokenLifetimePolicies
+                    href: api/application-list-tokenlifetimepolicies.md
+                  - name: Remover tokenLifetimePolicy
+                    href: api/application-delete-tokenlifetimepolicies.md
           - name: SKU inscrita
             href: resources/subscribedsku.md
             items:
@@ -3851,7 +3892,7 @@ items:
       - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/mail-api-overview.md
           - name: Mensagem
             href: resources/message.md
@@ -4445,7 +4486,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md

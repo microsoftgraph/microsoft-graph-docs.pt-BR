@@ -5,63 +5,65 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6e5c0909da255879bd09d8ddd3cb9011b68992bc
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: aa08c99cdca34a9561c81e0f90ac4f61fdb15871
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154049"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845754"
 ---
-# <a name="get-workforceintegration"></a><span data-ttu-id="43ae7-103">Obter workforceIntegration</span><span class="sxs-lookup"><span data-stu-id="43ae7-103">Get workforceIntegration</span></span>
+# <a name="get-workforceintegration"></a><span data-ttu-id="2bb48-103">Obter workforceIntegration</span><span class="sxs-lookup"><span data-stu-id="2bb48-103">Get workforceIntegration</span></span>
 
-<span data-ttu-id="43ae7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="43ae7-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2bb48-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2bb48-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="43ae7-105">Recupere as propriedades e os relacionamentos de um objeto [workforceIntegration](../resources/workforceintegration.md) .</span><span class="sxs-lookup"><span data-stu-id="43ae7-105">Retrieve the properties and relationships of a [workforceIntegration](../resources/workforceintegration.md) object.</span></span>
+<span data-ttu-id="2bb48-105">Recupere as propriedades e os relacionamentos de um objeto [workforceIntegration](../resources/workforceintegration.md) .</span><span class="sxs-lookup"><span data-stu-id="2bb48-105">Retrieve the properties and relationships of a [workforceIntegration](../resources/workforceintegration.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="43ae7-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="43ae7-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="2bb48-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="2bb48-106">Permissions</span></span>
 
-<span data-ttu-id="43ae7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="43ae7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2bb48-107">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="2bb48-107">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="2bb48-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2bb48-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="43ae7-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="43ae7-109">Permission type</span></span>                        | <span data-ttu-id="43ae7-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="43ae7-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="2bb48-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2bb48-109">Permission type</span></span>                        | <span data-ttu-id="2bb48-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2bb48-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="43ae7-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="43ae7-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="43ae7-112">WorkforceIntegration. Read. All, WorkforceIntegration. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="43ae7-112">WorkforceIntegration.Read.All, WorkforceIntegration.ReadWrite.All</span></span> |
-| <span data-ttu-id="43ae7-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="43ae7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43ae7-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="43ae7-114">Not supported.</span></span> |
-| <span data-ttu-id="43ae7-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="43ae7-115">Application</span></span>                            | <span data-ttu-id="43ae7-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="43ae7-116">Not supported.</span></span> |
+| <span data-ttu-id="2bb48-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2bb48-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="2bb48-112">WorkforceIntegration. Read. All, WorkforceIntegration. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="2bb48-112">WorkforceIntegration.Read.All, WorkforceIntegration.ReadWrite.All</span></span> |
+| <span data-ttu-id="2bb48-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2bb48-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2bb48-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2bb48-114">Not supported.</span></span> |
+| <span data-ttu-id="2bb48-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2bb48-115">Application</span></span>                            | <span data-ttu-id="2bb48-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2bb48-116">Not supported.</span></span> |
 
-> <span data-ttu-id="43ae7-117">**Observação**: esta API oferece suporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="43ae7-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="43ae7-118">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="43ae7-118">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="2bb48-117">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="2bb48-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="2bb48-118">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="2bb48-118">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="43ae7-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="43ae7-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2bb48-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2bb48-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teamwork/workforceIntegrations/workforceIntegrationId}
+GET /teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="43ae7-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="43ae7-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2bb48-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="2bb48-120">Optional query parameters</span></span>
 
-<span data-ttu-id="43ae7-121">Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="43ae7-121">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="43ae7-122">Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="43ae7-122">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="2bb48-121">Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="2bb48-121">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="2bb48-122">Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="2bb48-122">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="43ae7-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="43ae7-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2bb48-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2bb48-123">Request headers</span></span>
 
-| <span data-ttu-id="43ae7-124">Nome</span><span class="sxs-lookup"><span data-stu-id="43ae7-124">Name</span></span>      |<span data-ttu-id="43ae7-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="43ae7-125">Description</span></span>|
+| <span data-ttu-id="2bb48-124">Nome</span><span class="sxs-lookup"><span data-stu-id="2bb48-124">Name</span></span>      |<span data-ttu-id="2bb48-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="2bb48-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="43ae7-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="43ae7-126">Authorization</span></span> | <span data-ttu-id="43ae7-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="43ae7-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2bb48-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="2bb48-126">Authorization</span></span> | <span data-ttu-id="2bb48-127">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="2bb48-127">Bearer {token}.</span></span> <span data-ttu-id="2bb48-128">Required.</span><span class="sxs-lookup"><span data-stu-id="2bb48-128">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="43ae7-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="43ae7-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="2bb48-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2bb48-129">Request body</span></span>
 
-<span data-ttu-id="43ae7-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="43ae7-130">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="2bb48-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="2bb48-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="43ae7-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="43ae7-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2bb48-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="2bb48-131">Response</span></span>
 
-<span data-ttu-id="43ae7-132">Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [workforceIntegration](../resources/workforceintegration.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="43ae7-132">If successful, this method returns a `200 OK` response code and the requested [workforceIntegration](../resources/workforceintegration.md) object in the response body.</span></span>
+<span data-ttu-id="2bb48-132">Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [workforceIntegration](../resources/workforceintegration.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2bb48-132">If successful, this method returns a `200 OK` response code and the requested [workforceIntegration](../resources/workforceintegration.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="43ae7-133">Exemplos</span><span class="sxs-lookup"><span data-stu-id="43ae7-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="2bb48-133">Exemplos</span><span class="sxs-lookup"><span data-stu-id="2bb48-133">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="43ae7-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="43ae7-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="2bb48-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2bb48-134">Request</span></span>
 
-<span data-ttu-id="43ae7-135">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="43ae7-135">The following is an example of the request.</span></span>
+<span data-ttu-id="2bb48-135">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="2bb48-135">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="2bb48-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="2bb48-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_workforceintegration"
@@ -70,15 +72,29 @@ GET /teamwork/workforceIntegrations/workforceIntegrationId}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforceintegrationid}
 ```
+# <a name="c"></a>[<span data-ttu-id="2bb48-137">C#</span><span class="sxs-lookup"><span data-stu-id="2bb48-137">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-workforceintegration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="2bb48-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2bb48-138">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-workforceintegration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="2bb48-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2bb48-139">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-workforceintegration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="2bb48-140">Java</span><span class="sxs-lookup"><span data-stu-id="2bb48-140">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-workforceintegration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+### <a name="response"></a><span data-ttu-id="2bb48-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="2bb48-141">Response</span></span>
 
-### <a name="response"></a><span data-ttu-id="43ae7-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="43ae7-136">Response</span></span>
+<span data-ttu-id="2bb48-142">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="2bb48-142">The following is an example of the response.</span></span>
 
-<span data-ttu-id="43ae7-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="43ae7-137">The following is an example of the response.</span></span>
-
-> <span data-ttu-id="43ae7-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="43ae7-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="2bb48-143">**Note:** The response object shown here might be shortened for readability.</span><span class="sxs-lookup"><span data-stu-id="2bb48-143">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="2bb48-144">All the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="2bb48-144">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
