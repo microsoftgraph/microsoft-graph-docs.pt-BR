@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5c4c061c7f78fcb907f81481ea86c6a31b0692c1
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: bc8f92eec06167d79db5e9849d5984dae1bc0278
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345678"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863092"
 ---
 # <a name="list-chats"></a>Listar chats
 
@@ -22,16 +22,13 @@ Recupere a lista de [chats](../resources/chat.md) dos quais o usuário faz parte
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Chat. ReadBasic, chat. Read, chat. ReadWrite |
+|Delegado (conta corporativa ou de estudante) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte.    |
-
-> [!NOTE]
-> É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +47,7 @@ Esta operação não é atualmente compatível com [parâmetros de consulta ODat
 
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+| Autorização  | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -93,7 +90,7 @@ GET https://graph.microsoft.com/beta/users/{id}/chats
 
 Veja a seguir um exemplo da resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

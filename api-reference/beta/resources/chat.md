@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8d0977593d46f3bfc063053791fa498c14fbf7a6
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 43ed088889a4b81d59cb9e1361ed978c9cb61141
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124473"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864200"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso chat
 
@@ -25,24 +25,24 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 |  Método       |  Tipo de retorno  | Descrição| Permissões |
 |:---------------|:--------|:----------|-----------|
 |[Listar chats](../api/chat-list.md) | coleção [chat](channel.md) | Obter a lista de chats de que um usuário faz parte.| **Somente delegada** |
-|[Obter bate-papo](../api/chat-get.md) | [chat](channel.md) | Leia as propriedades e as relações do chat.| Delegado e aplicativo |
-|[Listar membros de chat](../api/conversationmember-list.md) | coleção [conversationmember](conversationmember.md) | Ver a lista de todos os usuários no bate-papo.| Delegado e aplicativo (veja abaixo) |
-|[Obter membro de chat](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Obter um único usuário no bate-papo.| Delegado e aplicativo (consulte observação) |
-|[Listar mensagens em um bate-papo](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Receba mensagens em um bate-papo de um para um ou de grupo. | Delegado e aplicativo (consulte observação) |
-|[Receba uma mensagem no bate-papo](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. | Delegado e aplicativo (consulte observação) |
+|[Obter bate-papo](../api/chat-get.md) | [chat](channel.md) | Leia as propriedades e as relações do chat.| **Somente delegada** |
+|[Listar membros de chat](../api/conversationmember-list.md) | coleção [conversationmember](conversationmember.md) | Ver a lista de todos os usuários no bate-papo.| Delegado e aplicativo * |
+|[Obter membro de chat](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Obter um único usuário no bate-papo.| Delegado e aplicativo * |
+|[Listar mensagens em um bate-papo](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Receba mensagens em um bate-papo de um para um ou de grupo. | Delegado e aplicativo * |
+|[Receba uma mensagem no bate-papo](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. | Delegado e aplicativo * |
 
-> **Observação:** Ao usar permissões de aplicativo, certifique-se de saber como você vai obter a ID de chat. Como a lista de chats com permissões de aplicativo não é suportada, nem todos os cenários são possíveis. É possível obter IDs de chat com permissões delegadas e de notificações de [alteração para o/chats/allMessages](../api/subscription-post-subscriptions.md) com permissões de aplicativo.
+\*> **Observação:** Ao usar permissões de aplicativo, certifique-se de saber como você vai obter a ID de chat. Como a lista de chats com permissões de aplicativo não é suportada, nem todos os cenários são possíveis. É possível obter IDs de chat com permissões delegadas e de notificações de [alteração para o/chats/allMessages](../api/subscription-post-subscriptions.md) com permissões de aplicativo.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-| id| String| O identificador exclusivo do chat. Apenas leitura.|
+| id| String| O identificador exclusivo do chat. Somente leitura.|
 | topic| String|  Opcion Assunto ou tópico do chat. Disponível apenas para bate-papos de grupo.|
-| createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Apenas leitura.|
+| createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Somente leitura.|
 | lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi atualizado. Somente leitura.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|

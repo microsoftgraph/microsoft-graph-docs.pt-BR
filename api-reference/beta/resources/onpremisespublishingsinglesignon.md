@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f07fc81fee6fdc8e8ff3b55c246facdc4f155d11
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: ebe5c584b009bd3028aece3cbfca75463f9c86dd
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556376"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44862455"
 ---
 # <a name="onpremisespublishingsinglesignon-resource-type"></a>tipo de recurso onPremisesPublishingSingleSignOn
 
@@ -28,7 +28,7 @@ Se você estiver configurando o logon único baseado em senha, ele deverá ser d
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|kerberosSignOnSettings| [kerberosSignOnSettings](kerberossignonsettings.md)| As configurações de delegação restrita de Kerberos para o aplicativo. |
+|kerberosSignOnSettings| [kerberosSignOnSettings](kerberossignonsettings.md)| As configurações de delegação restritas de Kerberos para aplicativos que usam a autenticação de janela integrada. |
 |singleSignOnMode|String| O modo preferencial de logon único para o aplicativo. Os valores possíveis são: `none`, `onPremisesKerberos`, `headerBased`.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -46,8 +46,8 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "KerberosSignOnSettings": {"@odata.type": "microsoft.graph.kerberosSignOnSettings"},
-  "SingleSignOnMode": "String"
+  "kerberosSignOnSettings": {"@odata.type": "microsoft.graph.kerberosSignOnSettings"},
+  "singleSignOnMode": "String"
 }
 ```
 

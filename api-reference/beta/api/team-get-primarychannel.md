@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 63a338e5a0b563c690d161d1544696b9c20b6810
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 0993eb206abb4ddaea321567f4bc21a9ec22fbbe
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845411"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863443"
 ---
 # <a name="get-primarychannel"></a>Obter primaryChannel
 
@@ -57,14 +57,30 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e um ob
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_primaryChannel"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/primaryChannel
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-primarychannel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-primarychannel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-primarychannel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 

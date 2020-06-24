@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: f8e9e05a69907e70de96bea801a982e3c17f0c68
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 3905e7165503c235b4b015ba09bec8af4c4ee6aa
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846056"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864081"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -176,7 +176,7 @@ Esse recurso permite:
 | Identidades | Coleção [objectIdentity](objectIdentity.md) | Representa as identidades que podem ser usadas para entrar nesta conta de usuário. Uma identidade pode ser fornecida pela Microsoft (também conhecida como conta local), por organizações ou por provedores de identidade social, como o Facebook, Google e Microsoft, e está vinculada a uma conta de usuário. Pode conter vários itens com o mesmo valor **signInType**. <br><br>Retornado apenas em $select. Oferece suporte a $filter. |
 | imAddresses | String collection | The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.|
 | interests | Coleção de cadeias de caracteres | Uma lista para o usuário descrever os interesses dele. <br><br>Retornado apenas em $select. |
-| isResourceAccount | Booliano | `true`Se o usuário for uma conta de recurso, caso contrário`false` O valor nulo deve ser considerado `false`. <br><br>Retornado apenas em $select. |
+| isResourceAccount | Booliano | Não use – reservado para uso futuro. |
 | jobTitle | String | O cargo do usuário. <br><br>Retornado por padrão. Oferece suporte a $filter.|
 | lastPasswordChangeDateTime | DateTimeOffset | A hora em que o usuário do Azure AD alterou a senha dele pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` <br><br>Retornado apenas em $select. |
 | legalAgeGroupClassification | String | Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup ** e **consentProvidedForMinor **. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em $select. |
@@ -189,7 +189,7 @@ Esse recurso permite:
 | officeLocation | String | A localização do escritório no local de trabalho do usuário. <br><br>Retornado por padrão. |
 | onPremisesDistinguishedName | String | Contém o `distinguished name` do Active Directory no local ou `DN`. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local com o Azure Active Directory pelo Azure AD Connect. <br><br>Retornado apenas em $select. Somente leitura. |
 | onPremisesDomainName | String | Contém o `domainFQDN` local, também chamado dnsDomainName sincronizado do diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local com o Azure Active Directory pelo Azure AD Connect. <br><br>Retornado apenas em $select. Somente leitura. |
-| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contém extensionAttributes 1-15 para o usuário. Observe que os atributos de extensão individuais não são selecionáveis nem filtráveis. Para um usuário `onPremisesSyncEnabled`, esse conjunto de propriedades é masterizado no local e somente leitura. Para um usuário somente na nuvem (onde `onPremisesSyncEnabled` é falso), essas propriedades podem ser definidas durante a criação ou atualização. <br><br>Retornado apenas em $select. |
+| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contém extensionAttributes 1-15 para o usuário. Observe que os atributos de extensão individuais não são selecionáveis nem filtráveis. Para um `onPremisesSyncEnabled` usuário, a fonte de autoridade para esse conjunto de propriedades é o local e é somente leitura e é somente leitura. Para um usuário somente na nuvem (onde `onPremisesSyncEnabled` é falso), essas propriedades podem ser definidas durante a criação ou atualização. Esses atributos de extensão também são conhecidos como atributos personalizados do Exchange 1-15. <br><br>Retornado apenas em $select. |
 | onPremisesImmutableId | String | Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Essa propriedade deverá ser especificada ao criar uma nova conta de usuário no Graph se você estiver usando um domínio federado para a propriedade `userPrincipalName` (UPN) do usuário. Importante: Os caracteres  e _ não podem ser usados ao especificar essa propriedade. Oferece suporte a $filter. **Importante:** Os caracteres **$** e **\_** não podem ser usados ao especificar esta propriedade. <br><br>Retornado apenas em $select. Oferece suporte a $filter. |
 | onPremisesLastSyncDateTime | DateTimeOffset | Indica a última vez em que o objeto foi sincronizado com o diretório local; por exemplo: "2013-02-16T03:04:54Z". O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado apenas em $select. Somente leitura. |
 | onPremisesProvisioningErrors | coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md) | Erros ao usar o produto de sincronização da Microsoft durante a configuração. <br><br>Retornado apenas em $select. |
@@ -235,8 +235,8 @@ Essa propriedade de somente leitura é usada por desenvolvedores de aplicativos 
 |:---------------|:--------|:----------|
 |null|,0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
 |minorWithoutParentalConsent |1 |(Reservado para uso futuro)|
-|minorWithParentalConsent|duas| O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
-|adult|3D|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
+|minorWithParentalConsent|2 | O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
+|adult|3 |O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
 |notAdult|4 |O usuário é de um país ou região com regulamentações adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` em países regulamentados.|
 |minorNoParentalConsentRequired|5 |O usuário é menor de idade, mas é de um país ou região que não tem com regulamentações relacionadas com a idade.|
 
@@ -250,8 +250,8 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |:---------------|:--------|:----------|
 |null|,0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
 |minor|1 |O usuário é considerado menor de idade.|
-|notAdult|duas|O usuário é de um país que têm regulamentações estatutárias (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior do que o limite de idade para criança (conforme o país) e menor que o limite inferior de idade para adulto (como estipulado com base no país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
-|adult|3D|O usuário deve ser tratado como um adulto.|
+|notAdult|2 |O usuário é de um país que têm regulamentações estatutárias (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior do que o limite de idade para criança (conforme o país) e menor que o limite inferior de idade para adulto (como estipulado com base no país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
+|adult|3 |O usuário deve ser tratado como um adulto.|
 
 #### <a name="consentprovidedforminor-property"></a>Propriedade consentProvidedForMinor
 
@@ -259,8 +259,8 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |:---------------|:--------|:----------|
 |null|,0|Valor padrão, nenhum `consentProvidedForMinor` foi definido para o usuário.|
 |granted|1 |O consentimento foi obtido para o usuário ter uma conta.|
-|denied|duas|O consentimento não foi obtido para o usuário ter uma conta.|
-|notRequired|3D|O usuário é de um local que não exige consentimento.|
+|denied|2 |O consentimento não foi obtido para o usuário ter uma conta.|
+|notRequired|3 |O usuário é de um local que não exige consentimento.|
 
 ## <a name="relationships"></a>Relações
 

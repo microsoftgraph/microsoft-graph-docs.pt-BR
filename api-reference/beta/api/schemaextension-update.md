@@ -4,17 +4,17 @@ description: Atualize as propriedades na definição da schemaExtension especifi
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: b49464051913e62fd0e78e11414356ca55289803
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: extensions
+ms.openlocfilehash: 083e3a998ddacd25c9a29e19ccf07be66e23f594
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453720"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44862471"
 ---
 # <a name="update-schemaextension"></a>Update schemaExtension
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,14 +26,17 @@ Somente o aplicativo que criou uma extensão de esquema (aplicativo proprietári
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
+
+> [!NOTE]
+> Adicionalmente para o fluxo delegado, o usuário conectado só pode atualizar schemaExtensions que possuem (onde a propriedade **Owner** do schemaExtension é o `appId` de um aplicativo que o usuário conectado possui).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,12 +49,12 @@ PATCH /schemaExtensions/{id}
 
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
+| Autorização  | Bearer {token}. Required. |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|

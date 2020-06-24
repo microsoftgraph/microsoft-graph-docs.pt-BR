@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b702405e320ba3f687b8cb5a758a7bdb868603b3
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 0c668380c05c1a76aa971eef85f133a0e9cf8a07
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556379"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44862535"
 ---
 # <a name="kerberossignonsettings-resource-type"></a>tipo de recurso kerberosSignOnSettings
 
@@ -46,8 +46,8 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "KerberosServicePrincipalName": "String",
-  "KerberosSignOnMappingAttributeType": "String"
+  "kerberosServicePrincipalName": "String",
+  "kerberosSignOnMappingAttributeType": "String"
 }
 ```
 

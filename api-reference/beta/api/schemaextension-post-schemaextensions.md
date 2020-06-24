@@ -4,35 +4,38 @@ description: Criar uma nova definição schemaExtension para estender um tipo de
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 1d5216278347a0170bf74de1d4696e54a1faff59
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: extensions
+ms.openlocfilehash: e2415e9ede9f31f54e58f911c69310bbf9ad6442
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453755"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44862472"
 ---
 # <a name="create-schemaextension"></a>Criar schemaExtension
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Criar uma nova definição [schemaExtension](../resources/schemaextension.md) para estender um [tipo de recurso de suporte](/graph/extensibility-overview#supported-resources).
 
-As extensões de esquema permitem que você adicione dados personalizados fortemente tipados a um recurso. O aplicativo que cria uma extensão de esquema é o aplicativo proprietário. Dependendo do [estado](/graph/extensibility-overview#schema-extensions-lifecycle) da extensão, o aplicativo proprietário, e apenas o aplicativo proprietário, poderá atualizar ou excluir a extensão. 
+Schema extensions let you add strongly-typed custom data to a resource. The app that creates a schema extension is the owner app. Depending on the [state](/graph/extensibility-overview#schema-extensions-lifecycle) of the extension, the owner app, and only the owner app, may update or delete the extension. 
 
 Veja exemplos de como [definir uma extensão de esquema que descreve um curso de treinamento](/graph/extensibility-schema-groups#2-register-a-schema-extension-definition-that-describes-a-training-course), usar a definição de extensão do esquema para [criar um novo grupo com dados do curso de treinamento](/graph/extensibility-schema-groups#3-create-a-new-group-with-extended-data) e [adicionar dados do curso de treinamento a um grupo existente](/graph/extensibility-schema-groups#4-add-update-or-remove-custom-data-in-an-existing-group).
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
+
+> [!NOTE]
+> Além disso, para o fluxo delegado, o usuário conectado deve ser o proprietário do aplicativo de chamada ou o proprietário do (aplicativo com o) `appId` usado para definir a propriedade **Owner** .
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +46,7 @@ POST /schemaExtensions
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
+| Autorização  | Bearer {token}. Required. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -54,7 +57,7 @@ A tabela a seguir mostra as propriedades que estão disponíveis quando você cr
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
 |description|Cadeia de caracteres|Descrição da extensão de esquema.|
-|id|String|O identificador exclusivo da definição de extensão de esquema. <br>Você pode atribuir um valor em uma destas duas maneiras: <ul><li>Concatenar o nome de um de seus domínios verificados com um nome da extensão do esquema para formar uma cadeia de caracteres exclusiva neste formato, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. Como exemplo, `contoso_mySchema`. OBSERVAÇÃO: Apenas domínios verificados sob os seguintes domínios de nível superior têm suporte: `.com`,`.net`, `.gov`, `.edu` ou `.org`. </li><li>Forneça um nome de esquema e permita que o Microsoft Graph use esse nome de esquema para completar a atribuição de **id** neste formato: ext\{_&#65279;8-caracteres-alfanuméricos-aleatórios_\}\_\{_&#65279;nome-do-esquema_\}. Um exemplo seria `extkvbmkofy_mySchema`.</li></ul>Esta propriedade não pode ser alterada após a criação. |
+|id|String|O identificador exclusivo da definição de extensão de esquema. <br>Você pode atribuir um valor em uma destas duas maneiras: <ul><li>Concatenar o nome de um de seus domínios verificados com um nome da extensão do esquema para formar uma cadeia de caracteres exclusiva neste formato, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. Como exemplo, `contoso_mySchema`. OBSERVAÇÃO: Apenas domínios verificados sob os seguintes domínios de nível superior têm suporte: `.com`,`.net`, `.gov`, `.edu` ou `.org`. </li><li>Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. An example would be `extkvbmkofy_mySchema`.</li></ul>Esta propriedade não pode ser alterada após a criação. |
 |owner|String|(Opcional) O `appId` do aplicativo que é o proprietário da extensão do esquema. Essa propriedade pode ser fornecida na criação, para definir o proprietário.  Se não for fornecida, o aplicativo de chamada `appId` será definido como o proprietário. Então, por exemplo, se criar uma nova definição de extensão do esquema usando o Explorador do Graph, você **deverá** fornecer a propriedade de proprietário. Uma vez definida, essa propriedade é somente leitura e não pode ser alterada.|
 |properties|Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)|A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema.|
 |targetTypes|Coleção de cadeias de caracteres|O conjunto de tipos de recursos do Microsoft Graph (com suporte a extensões do esquema) ao qual esta extensão de esquema pode ser aplicada.|
@@ -65,9 +68,11 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request-1"></a>Solicitação 1
+### <a name="example-1-creating-a-schema-extension-using-a-verified-domain"></a>Exemplo 1: criar uma extensão de esquema usando um domínio verificado
 
-O primeiro exemplo mostra o uso de um nome de domínio verificado, `graphlearn` e um nome de esquema, `courses`, para formar uma cadeia de caracteres para a propriedade **id** da definição de extensão do esquema. A cadeia de caracteres exclusiva se baseia neste formato, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
+#### <a name="request"></a>Solicitação
+
+Este exemplo mostra o uso de um nome de domínio verificado, `graphlearn` e um nome de esquema, `courses` , para formar uma cadeia de caracteres exclusiva para a propriedade **ID** da definição de extensão do esquema. A cadeia de caracteres exclusiva é baseada nesse formato, \{ _&#65279;DomainName_ \} \_ \{ _&#65279;SchemaName_ \} .
 
 No corpo da solicitação, forneça uma representação JSON do objeto [schemaExtension](../resources/schemaextension.md).
 
@@ -117,9 +122,9 @@ Content-type: application/json
 ---
 
 
-##### <a name="response-1"></a>Resposta 1
+#### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -155,9 +160,11 @@ Content-length: 420
 }
 ```
 
-##### <a name="request-2"></a>Solicitação 2
+### <a name="example-2-creating-a-schema-extension-using-just-a-name"></a>Exemplo 2: criar uma extensão de esquema usando apenas um nome
 
-O segundo exemplo mostra a especificação de apenas um nome de esquema, `courses`, na propriedade **id** na solicitação, junto com a representação JSON do resto das propriedades no objeto [schemaExtension](../resources/schemaextension.md). O Microsoft Graph atribuirá e retornará um valor exclusivo de cadeia de caracteres na resposta.
+#### <a name="request"></a>Solicitação
+
+Este exemplo mostra como especificar apenas um nome de esquema, `courses` na propriedade **ID** da solicitação, junto com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md) . O Microsoft Graph atribuirá e retornará um valor de cadeia de caracteres exclusivo na resposta.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -206,9 +213,9 @@ Content-type: application/json
 ---
 
 
-##### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta
 
-A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** com base no nome do esquema fornecido na solicitação, junto com o resto da definição de esquema recém-criada. O valor em **id** na resposta se baseia no formato, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+The response includes a unique string in the **id** property that is based on the schema name provided in the request, together with the rest of the newly created schema definition. The value in **id** in the response is based on the format, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -244,6 +251,83 @@ Content-length: 420
 }
 ```
 
+### <a name="example-3-creating-a-schema-extension-setting-the-owner"></a>Exemplo 3: criar uma configuração de extensão de esquema do proprietário
+
+#### <a name="request"></a>Solicitação
+
+Este exemplo mostra como criar uma configuração de extensão de esquema para o **proprietário**.  Neste cenário, o usuário do aplicativo pode não ser o proprietário do aplicativo (por exemplo, se você estiver usando o Microsoft Graph Explorer).  Nesse caso, você deve definir a propriedade **Owner** para a **AppID** de um aplicativo que possui, caso contrário, não será autorizado a criar uma extensão de esquema. Defina a propriedade **Owner** na solicitação, juntamente com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md) .
+
+<!-- {
+  "blockType": "request",
+  "name": "create_schemaextension_from_schemaextensions_3"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/schemaExtensions
+Content-type: application/json
+
+{
+    "id":"courses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "Group"
+    ],
+    "owner": "50897f70-a455-4adf-87bc-4cf17091d5ac",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>Resposta
+
+A resposta inclui o **proprietário** definido com o valor fornecido na solicitação. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 420
+
+{
+    "id": "extk9eruy7c_courses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "Group"
+    ],
+    "status": "InDevelopment",
+    "owner": "50897f70-a455-4adf-87bc-4cf17091d5ac",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "String"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
+}
+```
 
 ## <a name="see-also"></a>Confira também
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso Onpremisesextensionattributes à
-description: A propriedade **onpremisesextensionattributes à** da entidade de usuário contém quinze Propriedades de atributos de extensões personalizadas. Para um usuário do **onPremisesSyncEnabled** , esse conjunto de propriedades é Mastered no Active Directory local e sincronizado com o Azure AD e é somente leitura. Para um usuário somente na nuvem (onde **onPremisesSyncEnabled** é false), essas propriedades podem ser definidas durante a criação ou atualização.
+description: A propriedade **onpremisesextensionattributes à** da entidade de usuário contém quinze Propriedades de atributos de extensões personalizadas.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
-author: japere
-ms.openlocfilehash: 06f1fb9fea5338a93c92a2bce2e31098046528bc
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.prod: users
+author: krbain
+ms.openlocfilehash: 1035674a6ce5d9f2c0a1a8b2cd35896c92ec7147
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200226"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863751"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>tipo de recurso Onpremisesextensionattributes à
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A propriedade **onpremisesextensionattributes à** da entidade de [usuário](user.md) contém quinze Propriedades de atributos de extensões personalizadas. Para um usuário do **onPremisesSyncEnabled** , esse conjunto de propriedades é Mastered no Active Directory local e sincronizado com o Azure AD e é somente leitura. Para um usuário somente na nuvem (onde **onPremisesSyncEnabled** é false), essas propriedades podem ser definidas durante a criação ou atualização.
+A propriedade **onpremisesextensionattributes à** da entidade de [usuário](user.md) contém quinze Propriedades de atributos de extensões personalizadas. Para um usuário do **onPremisesSyncEnabled** , a fonte de autoridade desse conjunto de propriedades é o Active Directory local que é sincronizado com o Azure AD e é somente leitura. Para um usuário somente na nuvem (onde **onPremisesSyncEnabled** é false), essas propriedades podem ser definidas durante a criação ou atualização.
+
+> **Observação:** Esses atributos de extensão também são conhecidos como atributos personalizados do Exchange 1-15.
 
 
 ## <a name="properties"></a>Propriedades

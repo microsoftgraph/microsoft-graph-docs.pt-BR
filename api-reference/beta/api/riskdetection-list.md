@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2360d9a43b9afe4f6d5c83e10652d04100bc1ee2
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 34be626aad44315ac3a0b368a6d48297188a4b6a
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44251111"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863527"
 ---
 # <a name="list-riskdetection"></a>Listar riskDetection
 
@@ -25,7 +25,7 @@ Recupere as propriedades de uma coleção de objetos **riskDetection** .
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,6 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskDetections
+GET /identityProtection/riskDetections
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -47,7 +48,7 @@ Este método oferece suporte `$filter` e `$select` para personalizar a resposta 
 
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
+| Autorização  | Bearer {token}. Required. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -59,6 +60,7 @@ Não forneça um corpo de solicitação para esse método.
 Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [riskDetection](../resources/riskdetection.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
+
 
 ### <a name="example-1-list-risk-detections"></a>Exemplo 1: listar detecções de risco
 
@@ -137,7 +139,84 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-risk-detections-and-filter-the-results"></a>Exemplo 2: listar detecções de risco e filtrar os resultados
+### <a name="example-2-list-risk-detections-for-a-specific-user"></a>Exemplo 2: listar detecções de risco para um usuário específico
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo da solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_riskDetection"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityProtection/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-riskdetection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-riskdetection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-riskdetection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>Resposta
+
+Veja a seguir um exemplo da resposta.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.riskDetection"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value":[
+    {
+    "id": "6a5874ca-abcd-9d82-5ad39bd71600",
+    "requestId": "6a5874ca-abcd-9d82-5ad39bd71600",
+    "correlationId": "abcd74ca-9823-4b1c-9d82-5ad39bd71600",
+    "riskEventType": "unfamiliarFeatures",
+    "riskState": "remediated",
+    "riskLevel": "medium",
+    "riskDetail": "userPerformedSecuredPasswordReset",
+    "source": "activeDirectory",
+    "detectionTimingType": "realtime",
+    "activity": "signin",
+    "tokenIssuerType": "Azure Active Directory",
+    "ipAddress": "123.456.7.89",
+    "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US",
+        "geoCoordinates": null
+    },
+    "activityDateTime": "2018-09-05T00:09:18.7822851Z",
+    "detectedDateTime": "2018-09-05T00:11:27.773602Z",
+    "lastUpdatedDateTime": "2018-09-05T00:11:27.773602Z",
+    "userId": "abcdefab-af90-4edf-ac4c-742ff06735d0",
+    "userDisplayName": "User ",
+    "userPrincipalName": "user@abcde.com",
+    "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]"
+    }
+    ]
+}
+```
+
+### <a name="example-3-list-risk-detections-and-filter-the-results"></a>Exemplo 3: listar detecções de risco e filtrar os resultados
 
 #### <a name="request"></a>Solicitação
 
@@ -151,7 +230,7 @@ O exemplo a seguir mostra como usar `$filter` o para obter a coleção de detec�
 } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/riskDetections?$filter=riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
+GET https://graph.microsoft.com/beta/identityProtection/riskDetections?$filter=riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-filter-riskdetections-csharp-snippets.md)]

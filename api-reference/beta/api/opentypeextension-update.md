@@ -4,17 +4,17 @@ description: 'Atualize uma extensão aberta (objeto openTypeExtension) com as pr
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 11ff06d64801d0c85a916d0a597c79f55ab4b7e8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: extensions
+ms.openlocfilehash: 6c81cf3e73f672d965bba4b1f64ec88d0d8cad69
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456335"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863359"
 ---
 # <a name="update-open-extension"></a>Atualizar extensão aberta
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,9 +37,9 @@ Dependendo do recurso no qual a extensão foi criada e o tipo de permissão (del
 | [evento de grupo](../resources/event.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
 | [postagem de grupo](../resources/post.md) | Group.ReadWrite.All | Sem suporte | Group.ReadWrite.All |
 | [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [organização](../resources/organization.md) | Directory.AccessAsUser.All | Sem suporte | Sem suporte |
+| [organização](../resources/organization.md) | Organization.ReadWrite.All | Sem suporte | Organization.ReadWrite.All |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -66,18 +66,18 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo d
 ## <a name="path-parameters"></a>Parâmetros do caminho
 |**Parâmetro**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
-|id|cadeia de caracteres|Um identificador exclusivo para uma instância da coleção correspondente. Obrigatório.|
-|extensionId|string|Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para a extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade `id` quando você cria a extensão. Obrigatório.|
+|id|cadeia de caracteres|A unique identifier for an instance of the corresponding collection. Required.|
+|extensionId|string|This can be an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |
 |:---------------|:----------|
-| Autorização | {token} de portador. Obrigatório. |
+| Autorização | Bearer {token}. Required. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça um corpo JSON de um objeto [openTypeExtension](../resources/opentypeextension.md), com os seguintes pares de nome e valor obrigatórios e os dados personalizados para alterar ou adicionar a essa extensão. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.
+Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md) object, with the following required name-value pairs, and any custom data to change or add to that extension. The data in the JSON payload can be primitive types, or arrays of primitive types.
 
 | Nome       | Valor |
 |:---------------|:----------|
@@ -92,7 +92,7 @@ Se for bem-sucedido, este método retornará um código de resposta `200 OK` e o
 ## <a name="example"></a>Exemplo
 #### <a name="request-1"></a>Solicitação 1
 
-O primeiro exemplo mostra como atualizar uma extensão de uma mensagem. A extensão é representada inicialmente pela seguinte carga JSON:
+The first example shows how to update an extension in a message. The extension is initially represented by the following JSON payload:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -168,7 +168,7 @@ Content-type: application/json
 
 #### <a name="request-2"></a>Solicitação 2
 
-O segundo exemplo mostra como atualizar uma extensão em uma postagem de grupo. A extensão é representada inicialmente pela seguinte carga JSON, com um valor `expirationDate` de `2015-07-03T13:04:00Z`:
+The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, with an `expirationDate` value of `2015-07-03T13:04:00Z`:
 
 <!-- { "blockType": "ignored" } -->
 ```http

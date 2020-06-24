@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a3389737581e9c327ff48e9ff3065c399c568cb8
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: fc6a7472da2676d0266d964b7bdddee976d5ac8c
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934875"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864221"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -36,7 +36,7 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | [Procurar sites][]           | GET /sites?search={query}
 | [Seguir site][]                | POST /users/{user-id}/followedSites/add
 | [Deixar de seguir site][]              | POST /users/{user-id}/followedSites/remove
-| [Listar sites seguidos][]        | POST /me/followedSites
+| [Listar sites seguidos][]        | GET /me/followedSites
 
 [Obter site]: ../api/site-get.md
 [Obter site raiz]: ../api/site-get.md
@@ -57,16 +57,16 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | Nome da propriedade            | Tipo               | Descrição
 |:-------------------------|:-------------------|:-----------------------------
 | **id**                   | cadeia de caracteres             | O [identificador exclusivo](#id-property) do item. Somente leitura.
-| **createdDateTime**      | DateTimeOffset     | A data e a hora da criação do item. Somente leitura.
+| **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
 | **description**          | string             | O texto descritivo do site.
-| **eTag**                 | string             | ETag do item. Somente leitura.                                                                  |
-| **displayName**          | cadeia de caracteres             | O texto completo do site. Somente leitura.
-| **lastModifiedDateTime** | DateTimeOffset     | A data e a hora que o item foi modificado pela última vez. Somente leitura.
+| **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
+| **displayName**          | cadeia de caracteres             | The full title for the site. Read-only.
+| **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.
 | **name**                 | string             | O nome/título do item.
-| **root**                 | [root][]           | Se estiver presente, indica que este é o site raiz do conjunto de sites. Somente leitura.
-| **sharepointIds**        | [sharepointIds][]  | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
-| **siteCollection**       | [siteCollection][] | Fornece detalhes sobre o conjunto de sites do site. Disponível apenas no site raiz. Somente leitura.
-| **webUrl**               | string (url)       | A URL que exibe o item no navegador. Somente leitura.
+| **root**                 | [root][]           | If present, indicates that this is the root site in the site collection. Read-only.
+| **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
+| **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only.
+| **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.
 
 ### <a name="id-property"></a>propriedade do id
 Um **site** é identificado por um ID exclusivo que é composto pelos seguintes valores:
@@ -88,7 +88,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 | **contentTypes**  | Collection([contentType][])      | O conjunto de tipos de conteúdo definido para esse site.
 | **drive**         | [drive][]                        | A unidade padrão (biblioteca de documentos) desse site.
 | **drives**        | Collection([drive][])            | O conjunto de unidades (bibliotecas de documentos) nesse site.
-| **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
+| **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
 | **lists**         | Collection([list][])             | O conjunto de listas neste site.
 | **pages**         | Collection([sitePage][])         | O conjunto de páginas na lista SitePages no site.
 | **sites**         | Collection([site][])             | O conjunto dos subsites neste site.

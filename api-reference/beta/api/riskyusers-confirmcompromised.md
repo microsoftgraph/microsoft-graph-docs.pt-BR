@@ -6,16 +6,16 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: 1e234ecb92084bc0c180b4b069cfa7f7ce38629a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 51634a1a87dd2ba2c77544dcd461b6051babca66
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453881"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863317"
 ---
 # <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ Namespace: Microsoft. Graph
 Confirme um ou mais objetos [riskyUser](../resources/riskyuser.md) como comprometidos. Esta ação define o nível de risco do usuário de destino como alto.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -36,22 +36,24 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /riskyUsers/confirmCompromised
+POST /identityProtection/riskyUsers/confirmCompromised
 ```
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
+| Autorização  | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Especifique as IDs de usuário arriscadas a serem descartadas no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+## <a name="examples"></a>Exemplos
+### <a name="example-1-confirm-users-as-compromised"></a>Exemplo 1: confirmar os usuários como comprometidos
+#### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -84,7 +86,7 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
@@ -93,7 +95,48 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+### <a name="example-2-confirm-a-user-as-compromised"></a>Exemplo 2: confirmar um usuário como comprometido
+#### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
 
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "confirm_riskyuser"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/confirmCompromised
+Content-type: application/json
+
+{
+  "userIds": [
+    "29f270bb-4d23-4f68-8a57-dc73dc0d4caf"
+  ]
+}
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/confirm-riskyuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/confirm-riskyuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/confirm-riskyuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

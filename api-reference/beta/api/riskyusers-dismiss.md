@@ -6,16 +6,16 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: cb6d0e5aae8894408c274c4ad628e38552577d3a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a549ca4b50d1a0e873a905a6312e30d6bf1e838
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453867"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863513"
 ---
 # <a name="riskyuser-dismiss"></a>riskyUser: fechar
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Namespace: Microsoft. Graph
 
 Descarte o risco de um ou mais objetos [riskyUser](../resources/riskyuser.md) . Esta ação define o nível de risco do usuário de destino como nenhum.
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -35,22 +35,24 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /riskyUsers/dismiss
+GET /identityProtection/riskyUsers/dismiss
 ```
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
+| Autorização  | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Especifique as userIds a serem descartadas no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+## <a name="examples"></a>Exemplos
+### <a name="example-1-dismiss-risky-users"></a>Exemplo 1: ignorar usuários arriscados
+#### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -83,7 +85,50 @@ Content-Type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-dismiss-a-risky-user"></a>Exemplo 2: descartar um usuário arriscado
+#### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "dismiss_riskyuser"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/dismiss
+Content-Type: application/json
+
+{
+  "userIds": [
+    "04487ee0-f4f6-4e7f-8999-facc5a30e232"
+  ]
+}
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/dismiss-riskyuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/dismiss-riskyuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/dismiss-riskyuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",

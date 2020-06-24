@@ -4,17 +4,17 @@ description: 'Exclua uma extensão aberta (objeto openTypeExtension) da instânc
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 44a455fc0a9fb6943918618e5139973f075dd73e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: extensions
+ms.openlocfilehash: bd19d5ca1da444171201c7dbe4cd5c016aad5352
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456345"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863380"
 ---
 # <a name="delete-open-extension"></a>Excluir extensão aberta
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,9 +32,9 @@ Dependendo do recurso do qual você está excluindo a extensão e do tipo de per
 | [evento de grupo](../resources/event.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
 | [postagem de grupo](../resources/post.md) | Group.ReadWrite.All | Sem suporte | Group.ReadWrite.All |
 | [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [organização](../resources/organization.md) | Directory.AccessAsUser.All | Sem suporte | Sem suporte |
+| [organização](../resources/organization.md) | Organization.ReadWrite.All | Sem suporte | Organization.ReadWrite.All |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,25 +54,25 @@ DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 ```
 
->**Observação:** a sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso para excluir uma extensão dela. Todas as outras sintaxes que permitem identificar essas instâncias de recursos dão suporte à exclusão de extensões abertas delas de maneira semelhante.
+>**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. All other syntax that allows you to identify these resource instances supports deleting open extensions from them in a similar way.
 
 ## <a name="path-parameters"></a>Parâmetros do caminho
 |**Parâmetro**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
-|id|cadeia de caracteres|Um identificador exclusivo para uma instância na coleção correspondente. Obrigatório.|
-|extensionId|string|Pode ser um nome de extensão que é um identificador de texto exclusivo para a extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade `id` quando você cria a extensão. Obrigatório.|
+|id|cadeia de caracteres|A unique identifier for an instance in the corresponding collection. Required.|
+|extensionId|string|This can be an extension name which is a unique text identifier for the extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |
 |:---------------|:----------|
-| Autorização | {token} de portador. Obrigatório. |
+| Autorização | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

@@ -5,12 +5,12 @@ title: Listar sites seguidos
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: c705b7d9880fffbc96b2b863669862ff01c0739e
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 8f5435ee027ac33e7076a3b6d8cef11954770227
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44052279"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863471"
 ---
 # <a name="list-followed-sites"></a>Listar sites seguidos
 
@@ -22,7 +22,7 @@ Listar os [sites](../resources/site.md) que foram seguidos pelo usuário conecta
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,8 +37,14 @@ Este método é acessível apenas por meio do OneDrive for Business.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /me/followedSites
+GET /me/followedSites
 ```
+Obter uma lista dos sites seguidos por um usuário de destino com base em sua ID.
+
+```http
+GET /users/{user-id}/followedSites
+```
+**Observação:** Para acessar a lista de sites seguidos de outro usuário direcionado, você precisa de permissões de aplicativo.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta.
@@ -64,10 +70,10 @@ Se nenhum site for encontrado, uma coleção vazia será retornada.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-analytics" } -->
+<!-- { "blockType": "request", "name": "sites-list-followed", "scopes": "sites.readwrite.all" } -->
 
 ```msgraph-interactive
-POST /me/followedSites
+GET /me/followedSites
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 12ba305c1fa88bdf42c663af1e37eefada56dab0
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 0451bf7b7c2d53024328948a310f231b64c38ae8
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845432"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44862557"
 ---
 # <a name="get-user-mailbox-settings"></a>Obter as configurações da caixa de correio do usuário
 
@@ -305,13 +305,29 @@ Content-type: application/json
 ### <a name="example-4"></a>Exemplo 4
 #### <a name="request"></a>Solicitação
 O quarto exemplo obtém especificamente as configurações de [finalidade do usuário](../resources/userpurpose.md) da caixa de correio do usuário conectado.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_4"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxsettings-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>Resposta
 A resposta inclui apenas as configurações de [finalidade do usuário](../resources/userpurpose.md) .
 

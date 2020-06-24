@@ -4,31 +4,33 @@ description: 'Obtenha uma lista de objetos schemaExtension criados por qualquer 
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 5daf20b101a0b73950df13f9e1e6c6b8a2d24d86
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: extensions
+ms.openlocfilehash: 1c43bd8227b80661c7194e8269dfce3ee76d0f96
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453741"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863478"
 ---
 # <a name="list-schemaextensions"></a>List schemaExtensions
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha uma lista de objetos [schemaExtension](../resources/schemaextension.md) criados por qualquer aplicativo que você possui no locatário atual (que pode ser **indevelopment**, **disponível**ou **preterido**) e todas as outras extensões de esquema pertencentes a outros aplicativos marcados como **disponíveis**. 
 
+> **Observação:** A lista também conterá definições de extensão de esquema (marcadas como `Available` ) criadas por outros desenvolvedores de outros locatários. Isso é diferente de outras APIs que retornam apenas dados específicos do locatário. Os dados de extensão criados com base nas definições de extensão de esquema são específicos do locatário e só podem ser acessados por aplicativos explicitamente concedidos à permissão. 
+
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | User. Read, Application. Read. All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All |
+|Aplicativo | Application.Read.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
+| Autorização  | Bearer {token}. Required. |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -49,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [schemaExtension](../resources/schemaextension.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [schemaExtension](../resources/schemaextension.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra como procurar entre todas as extensões acessíveis para uma específica filtrando sua **ID**exclusiva. 
@@ -77,7 +79,7 @@ GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphle
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d444bb967aea89206c4c0a47d82cdcb6218c5e89
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: eb447e7f97f443119cf8ff29b467787a64323149
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287707"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863099"
 ---
 # <a name="get-chat"></a>Obter bate-papo
 
@@ -22,20 +22,14 @@ Recupere um único [bate-papo](../resources/chat.md) (sem suas mensagens).
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
-
-> [!NOTE]
-> Com as permissões do aplicativo, há suporte para um único chat, mas [obter uma lista de chats](chat-list.md) não é.
-
-> [!NOTE]
-> É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +48,7 @@ Esta operação não é atualmente compatível com [parâmetros de consulta ODat
 
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+| Autorização  | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

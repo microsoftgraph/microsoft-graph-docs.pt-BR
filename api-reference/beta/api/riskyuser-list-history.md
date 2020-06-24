@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3199528b297394ca7fc282bbf0a4346a52d185fe
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 581de42d3034a31a2ef3ac347c71d815b285ad88
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791115"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863324"
 ---
 # <a name="list-history-of-riskyuser"></a>Listar histórico de riskyUser
 
@@ -35,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskyUsers/{id}/history
+GET /identityProtection/riskyUsers/{id}/history/
 ```
 
 
@@ -50,8 +51,9 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+## <a name="examples"></a>Exemplos
+### <a name="example-1-list-history-of-a-specific-user"></a>Exemplo 1: listar histórico de um usuário específico
+#### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -77,7 +79,109 @@ GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e7
 
 ---
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.riskyUserHistoryItem"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#riskyUsers('41a31b00-3b3b-42d9-8f1c-6d4f14e74c69')/history",
+    "value": [
+        {
+            "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+            "isDeleted": false,
+            "isGuest": false,
+            "isProcessing": false,
+            "riskLevel": "none",
+            "riskState": "remediated",
+            "riskDetail": "userPerformedSecuredPasswordReset",
+            "riskLastUpdatedDateTime": "2019-05-03T03:50:34.9565578Z",
+            "userDisplayName": "Allan Deyoung",
+            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+            "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
+            "activity": {
+                "eventTypes": [],
+                "detail": "userPerformedSecuredPasswordReset"
+            }
+        },
+        {
+            "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69636901009342322587",
+            "isDeleted": false,
+            "isGuest": false,
+            "isProcessing": false,
+            "riskLevel": "high",
+            "riskState": "atRisk",
+            "riskDetail": "none",
+            "riskLastUpdatedDateTime": "2019-04-05T22:31:27Z",
+            "userDisplayName": "Allan Deyoung",
+            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+            "initiatedBy": null,
+            "activity": {
+                "eventTypes": [
+                    "anonymizedIPAddress"
+                ],
+                "detail": null
+            }
+        },
+        {
+            "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69636901020140973557",
+            "isDeleted": false,
+            "isGuest": false,
+            "isProcessing": false,
+            "riskLevel": "none",
+            "riskState": "remediated",
+            "riskDetail": "userPerformedSecuredPasswordReset",
+            "riskLastUpdatedDateTime": "2019-04-05T23:00:14.0973557Z",
+            "userDisplayName": "Allan Deyoung",
+            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+            "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
+            "activity": {
+                "eventTypes": [],
+                "detail": "userPerformedSecuredPasswordReset"
+            }
+        }
+    ]
+}
+
+```
+### <a name="example-2-list-history-of-a-specific-user"></a>Exemplo 2: listar histórico de um usuário específico
+#### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_userriskhitsory",
+  "sampleKeys": ["41a31b00-3b3b-42d9-8f1c-6d4f14e74c69"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityProtection/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69/history
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-userriskhitsory-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-userriskhitsory-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",

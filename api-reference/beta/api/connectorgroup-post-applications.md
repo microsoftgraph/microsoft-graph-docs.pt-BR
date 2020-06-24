@@ -1,27 +1,27 @@
 ---
-title: Adicionar um aplicativo a um conector
-description: Use esta API para atribuir um aplicativo a um grupo de conectores
+title: Atribuir um conector a um aplicativo
+description: Use esta API para atribuir um conector a um aplicativo
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0278810a70f8054688a8e1258cb9d50b6ed7a28d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 0ed9833cbdf7bdc4dd70155c84eef7cd1f2f2ba0
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681260"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863085"
 ---
-# <a name="add-an-application-to-a-connectorgroup"></a>Adicionar um aplicativo a um conector
+# <a name="assign-a-connectorgroup-to-an-application"></a>Atribuir um conector a um aplicativo
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicionar um [aplicativo](../resources/application.md) a um [conector](../resources/connectorgroup.md).
+Atribuir um [conector](../resources/connectorgroup.md) a um [aplicativo](../resources/application.md).
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -32,77 +32,50 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
+PUT /applications/{id}/connectorGroup/$ref
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador. Obrigatório|
+| Autorização  | Portador. Obrigatório.|
+| Content-type | application/json. Required.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [application](../resources/application.md).
+No corpo da solicitação, forneça uma representação JSON de um objeto do objeto de [conexão](../resources/connectorgroup.md) .
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [application](../resources/application.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
-
-# <a name="http"></a>[HTTP](#tab/http)
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
   "name": "create_application_from_connectorgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
+PUT https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
+
 Content-type: application/json
-Content-length: 329
+Content-length: 30
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/applications/{id}"
+  "@odata.id": "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-application-from-connectorgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-application-from-connectorgroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-application-from-connectorgroup-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-No corpo da solicitação, forneça uma representação JSON do objeto [application](../resources/application.md).
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.application"
 } -->
 ```http
-HTTP/1.1 201 Created
-Content-type: application/json
-Content-length: 355
-
-{
-  "appId": "appId-value",
-  "onPremisesPublishing": {
-    "externalUrl": "externalUrl-value",
-    "internalUrl": "internalUrl-value",
-    "externalAuthenticationType": "externalAuthenticationType-value",
-    "customDomainCertificate": "customDomainCertificate-value",
-    "isTranslateHostHeaderEnabled": true,
-    "isOnPremPublishingEnabled": true
-  }
-}
+HTTP/1.1 204 No content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -110,7 +83,7 @@ Content-length: 355
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create application",
+  "description": "Assign a connectorGroup to an application",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

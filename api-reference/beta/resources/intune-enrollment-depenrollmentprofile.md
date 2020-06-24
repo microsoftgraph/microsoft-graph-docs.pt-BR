@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 19018bc6b3071ddec917440a42b07d21cebc77d4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8bd37e370c135112ce0004cae548b6b11d7ad8a8
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460943"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864193"
 ---
 # <a name="depenrollmentprofile-resource-type"></a>tipo de recurso depEnrollmentProfile
 
@@ -25,7 +25,7 @@ O recurso depEnrollmentProfile representa um perfil de registro de programa de r
 
 Herda de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar depEnrollmentProfiles](../api/intune-enrollment-depenrollmentprofile-list.md)|coleção [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|Listar Propriedades e relações dos objetos [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) .|
@@ -45,7 +45,7 @@ Herda de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md
 |Enableauthenticationviacompanyportal foi adicionada|Booliano|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa. Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Booliano|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados herdados de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Booliano|Indica se este é o perfil padrão|
-|supervisedModeEnabled|Booliano|Modo supervisionado, true para habilitar, caso contrário, false. Consulte https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune para obter mais informações.|
+|supervisedModeEnabled|Booliano|Modo supervisionado, true para habilitar, caso contrário, false. Consulte https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune para obter mais informações.|
 |supportDepartment|String|Informações do departamento de suporte|
 |passCodeDisabled|Booliano|Indica se o painel de configuração de senha está desabilitado|
 |IsMandatory|Booliano|Indica se o perfil é obrigatório|

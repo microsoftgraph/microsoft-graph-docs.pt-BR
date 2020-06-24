@@ -1,30 +1,32 @@
 ---
-title: tipo de recurso integerRange
-description: Representa um intervalo inclusivo de inteiros descritos por dois limites Int64.
+title: tipo de recurso de multimargem
+description: Especifica as larguras de margem a serem usadas ao imprimir.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: bef2bd71d3ac039165146bcc5783eef7ba67a785
+ms.openlocfilehash: 4d7399f45138d6ab7d82f33e6577e7d08967ad15
 ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863702"
+ms.locfileid: "44863695"
 ---
-# <a name="integerrange-resource-type"></a>tipo de recurso integerRange
+# <a name="printmargin-complex-type"></a>tipo complexo de transmargem
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um intervalo inclusivo de inteiros descritos por dois limites Int64.
+Especifica as larguras de margem a serem usadas ao imprimir.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|iniciar|Int64|O limite inferior inclusivo do intervalo de inteiros.|
-|end|Int64|O limite superior inclusivo do intervalo de inteiros.|
+|top|Int32|A margem em mícrons da borda superior.|
+|bottom|Int32|A margem em mícrons da borda inferior.|
+|Certo|Int32|A margem em mícrons da borda direita.|
+|left|Int32|A margem em mícrons da borda esquerda.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -35,13 +37,15 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.integerRange"
+  "@odata.type": "microsoft.graph.printMargin"
 }-->
 
 ```json
 {
-    "start": 12345,
-    "end": 12345
+  "top": 123456,
+  "bottom": 123456,
+  "right": 123456,
+  "left": 123456
 }
 ```
 
@@ -49,7 +53,7 @@ Veja a seguir uma representação JSON do recurso.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "integerRange resource",
+  "description": "printMargin resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

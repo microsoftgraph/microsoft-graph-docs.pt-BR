@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 2a981fbdf7e1126783ae97d93c20e3ec08b1f2f0
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 1e7a1d6a9c131417e4f0ef171ac364e5fe8b106b
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895505"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863779"
 ---
 # <a name="printdocument-resource-type"></a>tipo de recurso de documento de documentos
 
@@ -30,10 +30,10 @@ Representa um documento que está sendo impresso.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|String|O identificador do documento. Somente leitura.|
-|name|String|O nome do documento. Somente leitura.|
-|mimeType|String|O tipo MIME do documento. Somente leitura.|
-|sizeInBytes|Int64|O tamanho do documento em bytes. Somente leitura.|
-|documentConfiguration|[printerDocumentConfiguration](printerdocumentconfiguration.md) |Um grupo de configurações que uma impressora deve usar para imprimir um documento. Somente leitura.|
+|displayName|Cadeia de caracteres|O nome do documento. Somente leitura.|
+|contentType|String|O tipo de conteúdo do documento (MIME). Somente leitura.|
+|size|Int64|O tamanho do documento em bytes. Somente leitura.|
+|configuration|[printerDocumentConfiguration](printerdocumentconfiguration.md) |Um grupo de configurações que uma impressora deve usar para imprimir um documento. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

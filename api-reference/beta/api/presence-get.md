@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 6af22c5e4ab1756aecaa384a78e010e12f071c16
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: f993c68b9858523a621f23bc182f6f6113c50366
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556286"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863332"
 ---
 # <a name="get-presence"></a>Obter presença
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obtenha as informações de [presença](../resources/presence.md) de um usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é necessária para chamar essas APIs. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
@@ -40,7 +40,7 @@ GET /communications/presences
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
-| Autorização | {token} de portador. Obrigatório. |
+| Autorização | Bearer {token}. Required. |
 
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -157,8 +157,10 @@ Content-Length: 1574
 
 O exemplo a seguir mostra como obter as informações de presença de outro usuário. Esta operação requer a permissão Presence. Read. All.
 
-#### <a name="request"></a>Solicitar
+#### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-user-presences"
@@ -167,6 +169,20 @@ O exemplo a seguir mostra como obter as informações de presença de outro usu�
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d-8eaa-e39d80d3a647
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presences-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-presences-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-presences-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
