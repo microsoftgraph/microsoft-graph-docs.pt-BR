@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Aqui está uma representação JSON de um recurso ColumnDefinition.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1d178fce760def6ae74fa6fa6c520139e2f778dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a86a6d89184e18eac7c452b7fca3596371f5dcb7
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533056"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864060"
 ---
 # <a name="columndefinition-resource"></a>Recurso ColumnDefinition
 
@@ -48,6 +48,7 @@ Aqui está uma representação JSON de um recurso ColumnDefinition.
   "currency": { "@odata.type": "microsoft.graph.currencyColumn" },
   "dateTime": { "@odata.type": "microsoft.graph.dateTimeColumn" },
   "defaultValue": { "@odata.type": "microsoft.graph.defaultColumnValue" },
+  "geolocation": { "@odata.type": "microsoft.graph.geolocationColumn" },
   "lookup": { "@odata.type": "microsoft.graph.lookupColumn" },
   "number": { "@odata.type": "microsoft.graph.numberColumn" },
   "personOrGroup": { "@odata.type": "microsoft.graph.personOrGroupColumn" },
@@ -84,6 +85,7 @@ Essas propriedades são mutuamente exclusivas: uma coluna só pode ter uma delas
 | **currency**      | [currencyColumn][]      | Esta coluna armazena valores monetários.
 | **dateTime**      | [dateTimeColumn][]      | Esta coluna armazena valores de datetime.
 | **defaultValue**  | [defaultColumnValue][]  | O valor padrão dessa coluna.
+| **localização geográfica**   | [geolocationColumn][]   | Esta coluna armazena uma localização geográfica.
 | **lookup**        | [lookupColumn][]        | Os dados dessa coluna são procurados por outra fonte no site.
 | **number**        | [numberColumn][]        | Esta coluna armazena valores numéricos.
 | **personOrGroup** | [personOrGroupColumn][] | Esta coluna armazena valores de Pessoa ou Grupo.
@@ -105,6 +107,7 @@ Para vê-los ao exibir valores **field** em [listItems][listItem], inclua as col
 [currencyColumn]: currencycolumn.md
 [dateTimeColumn]: datetimecolumn.md
 [defaultColumnValue]: defaultcolumnvalue.md
+[geolocationColumn]: geolocationcolumn.md
 [lookupColumn]: lookupcolumn.md
 [numberColumn]: numbercolumn.md
 [personOrGroupColumn]: personorgroupcolumn.md

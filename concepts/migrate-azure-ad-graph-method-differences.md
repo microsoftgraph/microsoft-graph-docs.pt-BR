@@ -4,12 +4,12 @@ description: Descreve as diferenças de métodos entre a API do Graph do Azure A
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cd9bc7ac842795d95f26ff5208f69cd3f1facb5c
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 8179dcc797086e26d4351d17d7a5675b5d012722
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682086"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863716"
 ---
 # <a name="method-differences-between-azure-ad-and-microsoft-graph"></a>Diferenças de métodos entre o Azure AD e o Microsoft Graph
 
@@ -19,7 +19,7 @@ Alguns métodos do Azure AD Graph também foram alterados.  Se um método **não
 
 |Azure AD Graph. <br>método (v 1.6) |Microsoft Graph<br>(recurso/método)|Comentários|
 |---|---|---|
-| getAvailableExtensionProperties | versão beta &nbsp; - &nbsp; _não disponível_ <br> v 1.0 &nbsp; - &nbsp; [getAvailableExtensionProperties](/graph/api/application-getavailableextensionproperties?view=graph-rest-1.0) |  |
+| getAvailableExtensionProperties | versão beta &nbsp; - &nbsp; _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_ |  |
 | getObjectsByObjectId | versão beta &nbsp; - &nbsp; [directoryObjects/getByIds](/graph/api/directoryobject-getbyids?view=graph-rest-beta) <br> v 1.0 &nbsp; - &nbsp; [directoryObjects/getByIds](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) | |
 | invalidateAllRefreshTokens | versão beta &nbsp; - &nbsp; [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-beta) <br> v 1.0 &nbsp; - &nbsp; [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) | |
 | isMemberOf | versão beta &nbsp; - &nbsp; _não planejada_ <br> v 1.0 &nbsp; - &nbsp; _não planejado_ | Use checkMemberGroups em vez disso. |

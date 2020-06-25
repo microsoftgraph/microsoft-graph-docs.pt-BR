@@ -1,20 +1,20 @@
 ---
 title: Configurar notificações para alterações nos dados de usuário
-description: A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações de alteração. Os aplicativos cliente usam notificações de alteração para atualizar seu estado nas alterações.
+description: The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.
 author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: d3a2e12a37035f6b89499e73615441dc1514c139
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 6c635994f4d281938d709ca7c2e7daabfb73da86
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682093"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864067"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
-A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações de alteração. Os aplicativos cliente usam notificações de alteração para atualizar seu estado nas alterações.
+The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.
 
 Depois que o Microsoft Graph aceita a solicitação de assinatura, ele envia notificações de alteração para a URL especificada na assinatura. O aplicativo então realiza ações de acordo com sua lógica comercial. Por exemplo, ele busca mais dados, atualiza o cache e as exibições, etc.
 
@@ -22,7 +22,7 @@ Depois que o Microsoft Graph aceita a solicitação de assinatura, ele envia not
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
  
 > [!div class="nextstepaction"]
-> [Criar um aplicativo webhook com .NET Core](/graph/tutorials/change-notifications)
+> [Tutorial: usar notificações de alteração e controlar alterações com o Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
 
 Por padrão, as notificações de alteração não contêm dados de recursos, exceto o `id`. Se o aplicativo exigir dados de recursos, ele poderá fazer chamadas para as APIs do Microsoft Graph para obter o recurso completo. Este artigo usa o recurso **User** como um exemplo para trabalhar com notificações de alteração.
 
@@ -99,7 +99,7 @@ Os clientes podem criar, renovar e excluir assinaturas.
 
 ### <a name="creating-a-subscription"></a>Criar uma assinatura
 
-A criação de uma assinatura é a primeira etapa para começar a receber notificações de alteração para um recurso. O processo de assinatura é o seguinte:
+Creating a subscription is the first step to start receiving change notifications for a resource. The subscription process is as follows:
 
 1. O cliente envia uma solicitação de assinatura (POST) para um recurso específico.
 
@@ -231,7 +231,7 @@ Seu processo deve processar todas as notificações de alteração recebidas. Ve
 
 1. Envie um código de status `202 - Accepted` na sua resposta para o Microsoft Graph. Se o Microsoft Graph não receber um código de classe 2xx, ele tentará publicar a notificação de alteração diversas vezes, por um período de cerca de 4 horas; Após isso, a notificação de alteração será cancelada e não será entregue.
 
-    > **Observação:** Envie um `202 - Accepted` código de status assim que receber a notificação de alteração, mesmo antes de validar sua autenticidade. Você está apenas confirmando o recebimento da notificação de alteração e evitando tentativas desnecessárias. O tempo limite atual é de 30 segundos, mas pode ser reduzido no futuro para otimizar o desempenho do serviço.
+    > **Observação:** Envie um `202 - Accepted` código de status assim que receber a notificação de alteração, mesmo antes de validar sua autenticidade. Você está apenas confirmando o recebimento da notificação de alteração e evitando tentativas desnecessárias. O tempo limite atual é de 30 segundos, mas pode ser reduzido no futuro para otimizar o desempenho do serviço. Se a URL de notificação não responder dentro de 30 segundos para mais de 10% das solicitações do Microsoft Graph em um período de 10 minutos, todas as notificações a seguir serão atrasadas e repetidas por um período de 4 horas. Se uma URL de notificação não responder dentro de 30 segundos por mais de 20% das solicitações do Microsoft Graph em um período de 10 minutos, todas as notificações a seguir serão descartadas.
 
 1. Validar a propriedade `clientState`. Ela deve corresponder ao valor enviado originalmente com a solicitação de criação da assinatura.
 
@@ -263,7 +263,7 @@ Opcionalmente, você pode configurar o firewall que protege a URL de notificaç�
 - [Criar assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 - tipo de recurso [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta)
 - tipo de recurso [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta)
-- [Alterar tutorial de notificações](/graph/tutorials/change-notifications)
+- [Tutorial de controle de alterações e notificações de alteração](/learn/modules/msgraph-changenotifications-trackchanges)
 - [Notificações do ciclo de vida (visualização)](/graph/concepts/webhooks-outlook-authz.md)
 
 [contato]: /graph/api/resources/contact?view=graph-rest-1.0

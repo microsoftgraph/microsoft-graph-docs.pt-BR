@@ -7,12 +7,12 @@ title: Tipo de recurso de hashes
 description: O recurso hash agrupa hashes disponíveis em uma estrutura simples para um item.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cb852ad01394ac463cb3d23ed404a7956bbf1eea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da326576b148fdaee79ebfc3df2d7832bfeee4e5
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532907"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863737"
 ---
 # <a name="hashes-resource-type"></a>Tipo de recurso de hashes
 
@@ -36,6 +36,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "crc32Hash": "string (hex)",
   "sha1Hash": "string (hex)",
+  "sha256Hash": "string (hex)",
   "quickXorHash": "string (base64)"
 }
 ```
@@ -44,15 +45,16 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade         | Tipo   | Descrição                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | Hash SHA1 para o conteúdo do arquivo (se disponível). Somente leitura. |
+| **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
+| **sha256Hash**   | String | O hash SHA256 para o conteúdo do arquivo (se disponível). Somente leitura. |
 | **crc32Hash**    | String | O valor CRC32 do arquivo em little endian (se disponível). Somente leitura.            |
-| **quickXorHash** | String | Um hash de proprietário do arquivo que pode ser usado para determinar se o conteúdo do arquivo foi alterado (se disponível). Somente leitura. |
+| **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
 
-**Observação:** Em alguns casos, os valores de hash podem não estar disponíveis. Nesse caso, os valores de hash em um item serão atualizados depois que o item for baixado.
+**Note:** In some cases hash values may not be available. If this is the case, the hash values on an item will be updated after the item is downloaded.
 
 ## <a name="remarks"></a>Comentários
 
-No OneDrive for Business e no SharePoint Server 2016, **sha1Hash** e **crc32Hash** não estão disponíveis.
+No OneDrive for Business e no SharePoint Server 2016, **sha1Hash** e **crc32Hash**e **sha256Hash** não estão disponíveis.
 
 No OneDrive Personal, o **quickXorHash** não está disponível.
 

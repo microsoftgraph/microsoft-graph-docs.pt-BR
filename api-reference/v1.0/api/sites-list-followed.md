@@ -5,12 +5,12 @@ title: Listar sites seguidos
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: f18a3349c4b37ed96e19781df5f910002c6b122c
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: e978e8c529ab457e80ea09bdbc452427fc416762
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793907"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863758"
 ---
 # <a name="list-followed-sites"></a>Listar sites seguidos
 
@@ -68,7 +68,7 @@ Se nenhum site for encontrado, uma coleção vazia será retornada.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-analytics" } -->
+<!-- { "blockType": "request", "name": "sites-list-followed", "scopes": "sites.readwrite.all" } -->
 
 ```msgraph-interactive
 GET /me/followedSites

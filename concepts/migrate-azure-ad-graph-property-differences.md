@@ -4,12 +4,12 @@ description: Descreve as diferenças de propriedade entre os recursos de gráfic
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a6fde6acce2122e1f0b521799e10dd6067296000
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 6ce8cda894006830db456e30f1809d66ccc24025
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845902"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863863"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
 
@@ -52,9 +52,6 @@ Como o usuário e o grupo são usados com frequência, estes recursos aparecem p
 | **dirSyncEnabled** | versão beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v 1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
 | **imutávelid** | versão beta &nbsp; - &nbsp; **onPremisesImmutableId** <br> v 1.0 &nbsp; - &nbsp; **onPremisesImmutableId** | |
 | **lastDirSyncDateTime** | versão beta &nbsp; - &nbsp; **onPremisesLastSyncDateTime**<br>v 1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** | |
-| **onPremisesDomainName** | versão beta &nbsp; - &nbsp; onPremisesDomainName <br> v 1.0 &nbsp; - &nbsp; onPremisesDomainName | |
-| **onPremisesNetBiosName** | versão beta &nbsp; - &nbsp; onPremisesNetBiosName <br> v 1.0 &nbsp; - &nbsp; onPremisesNetBiosName | |
-| **onPremisesSamAccountName** | versão beta &nbsp; - &nbsp; onPremisesSamAccountName <br> v 1.0 &nbsp; - &nbsp; onPremisesSamAccountName |  |
 | **provisioningErrors** | versão beta &nbsp; - &nbsp; _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_ | Essa propriedade e suas informações são preteridas.  No entanto, uma nova propriedade que descreve qualquer erro de provisionamento relacionado ao AD Connect pode ser encontrada no **onPremisesProvisioningErrors** |
 
 ## <a name="application-property-differences"></a>Diferenças de propriedades do aplicativo
@@ -84,8 +81,8 @@ Como o usuário e o grupo são usados com frequência, estes recursos aparecem p
 
 |Azure AD Graph. <br>(v 1.6) Propriedade |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
-| **creationTimestamp** | versão beta &nbsp; - &nbsp; **creationTimestamp** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | Ele será renomeado como createdDateTime.|
-| **id** | versão beta &nbsp; - &nbsp; **appRoleId** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
+| **creationTimestamp** | versão beta &nbsp; - &nbsp; **creationTimestamp** <br> v 1.0 &nbsp; - &nbsp; **createdDateTime** | |
+| **id** | versão beta &nbsp; - &nbsp; **appRoleId** <br> v 1.0 &nbsp; - &nbsp; **appRoleId** | |
 
 ## <a name="contact-property-differences"></a>Diferenças de propriedade de contato
 
@@ -151,7 +148,7 @@ O recurso directoryObjectReference do Azure AD Graph foi renomeado para director
 
 ## <a name="policy-property-differences"></a>Diferenças de propriedade de política
 
-No Microsoft Graph, há tipos de política nomeados (como tokenIssuancePolicy ou tokenLifetimePolicy), em vez de um tipo de recurso de política genérico. Mais detalhes estão disponíveis na [visão geral da política](/graph/api/resources/policy-overview?view=graph-rest-beta). As políticas ainda não estão disponíveis na v 1.0.
+No Microsoft Graph, há tipos de política nomeados (como tokenIssuancePolicy ou tokenLifetimePolicy), em vez de um tipo de recurso de política genérico. Mais detalhes estão disponíveis na [visão geral da política](/graph/api/resources/policy-overview?view=graph-rest-1.0).
 
 ## <a name="serviceendpoint-property-differences"></a>Diferenças de Propriedade ServiceEndpoint
 
@@ -159,11 +156,9 @@ O recurso ServiceEndpoint do Azure AD Graph é renomeado como ponto de extremida
 
 |Azure AD Graph. <br>(v 1.6) Propriedade |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
-| **função** | &nbsp; - &nbsp; **recurso** beta<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
-| **serviceId** | &nbsp; - &nbsp; **provedor** de versão beta<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
-| **serviceName** | &nbsp; - &nbsp; **ProviderName** beta<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
-| **Identificação** | versão beta &nbsp; - &nbsp; **providerResourceId**<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
-| **URI** | &nbsp; - &nbsp; **URI** beta<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
+| **serviceId** | &nbsp; - &nbsp; **provedor** de versão beta<br> v 1.0 &nbsp; - &nbsp; **ProviderID** | |
+| **serviceName** | &nbsp; - &nbsp; **ProviderName** beta<br> v 1.0 &nbsp; - &nbsp; **ProviderName** | |
+| **Identificação** | versão beta &nbsp; - &nbsp; **providerResourceId**<br> v 1.0 &nbsp; - &nbsp; **providerResourceId** | |
 
 ## <a name="serviceprincipal-property-differences"></a>Diferenças de propriedade de servicePrincipalName
 

@@ -8,12 +8,12 @@ metadata:
   author: jasonjoh
   ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: 046b7948d9ea76876b9811fbc131794fead8d344
-  ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+  ms.openlocfilehash: 93e103e5d4872b79eecf82efa36b89d83ef86efd
+  ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 05/22/2020
-  ms.locfileid: "44345160"
+  ms.lasthandoff: 06/24/2020
+  ms.locfileid: "44864228"
 landingContent:
 - title: Criar seu primeiro aplicativo do lado do servidor
   linkLists:
@@ -65,7 +65,7 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Alterar notificações e a consulta delta
+    - text: Alterar notificações e controle de alterações
       url: /learn/modules/msgraph-changenotifications-trackchanges
     - text: Otimizar o uso de dados com parâmetros de consulta
       url: /learn/modules/optimize-data-usage

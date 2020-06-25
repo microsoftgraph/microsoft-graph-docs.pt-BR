@@ -2,17 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Foto
+title: Photo
 localization_priority: Normal
 description: O recurso photo fornece propriedades de foto e câmera, por exemplo, metadados EXIF, em um driveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 4e3f167384112c3c3354cdff88b41632f92e2637
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a62a138cbd48645b6b296abcde72af0cef19e259
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534053"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863730"
 ---
 # <a name="photo-resource-type"></a>Tipo de recurso Photo
 
@@ -37,6 +37,7 @@ O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadad
   "fNumber": 1.8,
   "focalLength": 22.5,
   "iso": 100,
+  "orientation": 3,
   "takenDateTime": "String (timestamp)"
 }
 ```
@@ -45,14 +46,15 @@ O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadad
 
 | Propriedade                | Tipo           | Descrição
 |:------------------------|:---------------|:----------------------------------
-| **takenDateTime**       | DateTimeOffset | Representa a data e a hora em que a foto foi tirada. Somente leitura.
-| **cameraMake**          | String         | Fabricante da câmera. Somente leitura.
-| **cameraModel**         | String         | Modelo da câmera. Somente leitura.
-| **fNumber**             | Duplo         | O valor de f-stop da câmera. Somente leitura.
-| **exposureDenominator** | Duplo         | O denominador da fração do tempo de exposição da câmera. Somente leitura.
-| **exposureNumerator**   | Duplo         | O numerador da fração do tempo de exposição da câmera. Somente leitura.
-| **focalLength**         | Double         | A distância focal da câmera. Somente leitura.
-| **iso**                 | Int32          | O valor de ISO da câmera. Somente leitura.
+| **takenDateTime**       | DateTimeOffset | Represents the date and time the photo was taken. Read-only.
+| **cameraMake**          | String         | Camera manufacturer. Read-only.
+| **cameraModel**         | String         | Camera model. Read-only.
+| **fNumber**             | Duplo         | The F-stop value from the camera. Read-only.
+| **exposureDenominator** | Duplo         | The denominator for the exposure time fraction from the camera. Read-only.
+| **exposureNumerator**   | Duplo         | The numerator for the exposure time fraction from the camera. Read-only.
+| **focalLength**         | Double         | The focal length from the camera. Read-only.
+| **iso**                 | Int32          | The ISO value from the camera. Read-only.
+| **orientation**         | Int16          | O valor da orientação da câmera. Gravável no OneDrive Personal.      |
 
 ## <a name="remarks"></a>Comentários
 
@@ -62,7 +64,7 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
 <!-- {
   "type": "#page.annotation",
   "description": "The photo facet provides details about the camera and settings on the camera for photos.",
-  "keywords": "camera make,camera model, exposure, f-stop, iso",
+  "keywords": "camera make,camera model, exposure, f-stop, iso, orientation",
   "section": "documentation",
   "tocPath": "Facets/Photo"
 } -->
