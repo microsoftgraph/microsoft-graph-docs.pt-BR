@@ -3,14 +3,14 @@ title: Tipo de recurso openTypeExtension (extensões abertas)
 description: As extensões abertas (anteriormente conhecidas como extensões de dados do Office 365) oferecem uma maneira fácil de adicionar diretamente propriedades não tipadas a um recurso do Microsoft Graph.
 localization_priority: Priority
 author: dkershaw10
-ms.prod: ''
+ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: c066a0faad8662150689a2b811a871371793e36b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 55777fd3338f362d56934479246ea477459c52cc
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447287"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863807"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
@@ -76,8 +76,8 @@ Veja a seguir uma representação JSON do recurso.
 
 |Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|extensionName|String|Um identificador de texto exclusivo para uma extensão de tipo aberto. Obrigatório.|
-|id|String| Um identificador totalmente qualificado que concatena o tipo de extensão com **extensionName**. Somente leitura.|
+|extensionName|String|A unique text identifier for an open type open extension. Required.|
+|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
 
 ## <a name="relationships"></a>Relações
 
@@ -87,7 +87,7 @@ Nenhuma
 
 |Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (em uma instância de recurso existente) ou um novo [contact](../resources/contact.md), [event](../resources/event.md) ou [message](../resources/message.md) que contenha um objeto openTypeExtension | Crie um objeto openTypeExtension em uma instância de recurso nova ou existente.|
+|[Criar](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (em uma instância de recurso existente) ou um novo [contact](../resources/contact.md), [event](../resources/event.md) ou [message](../resources/message.md) que contenha um objeto openTypeExtension | Crie um objeto openTypeExtension em uma instância de recurso nova ou existente.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Leia propriedades e relações do objeto openTypeExtension.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Atualize o objeto openTypeExtension. |
 |[Delete](../api/opentypeextension-delete.md) | Nenhuma |Exclua um objeto openTypeExtension. |
