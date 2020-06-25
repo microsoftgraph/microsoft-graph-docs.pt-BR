@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Obter tokens de autenticação
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: /graph/auth/index?context=graph/api/beta
       - name: Noções básicas
         href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -39,7 +39,7 @@ items:
           - name: Visão Geral
             href: /graph/webhooks?context=graph/api/beta
           - name: Tutorial
-            href: /graph/tutorials/change-notifications
+            href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: Notificações ausentes do Outlook (versão prévia)
             href: /graph/webhooks-outlook-authz?context=graph/api/beta
           - name: Notificações com dados de recursos (visualização)
@@ -74,7 +74,7 @@ items:
       - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -169,11 +169,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -438,7 +438,7 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -997,7 +997,7 @@ items:
                 href: api/cloudcommunications-getpresencesbyuserid.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1014,7 +1014,7 @@ items:
       - name: Experiências entre dispositivos
         displayName: Project Rome
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/project-rome-overview.md
           - name: Listar os dispositivos do usuário
             href: api/user-list-devices.md
@@ -1048,7 +1048,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -8669,7 +8669,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -8763,7 +8763,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -9196,7 +9196,7 @@ items:
                     href: api/authenticationflowspolicy-update.md
           - name: Métodos de autenticação
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/authenticationmethods-overview.md
               - name: Método de autenticação
                 href: resources/authenticationmethod.md
@@ -9606,7 +9606,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -9680,7 +9680,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: Remover do grupo de agentes
                     href: api/publishedresource-delete-agentgroups.md
-              - name: conector
+              - name: Connector
                 href: resources/connector.md
                 items:
                   - name: Lista
@@ -9691,11 +9691,13 @@ items:
                     href: api/connector-list-memberof.md
                   - name: Adicionar conector ao conector
                     href: api/connector-post-memberof.md
-              - name: grupo de conectores
+              - name: Grupo de conectores
                 href: resources/connectorgroup.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/connectorgroup-list.md
+                  - name: Criar
+                    href: api/connectorgroup-post.md
                   - name: Obter
                     href: api/connectorgroup-get.md
                   - name: Atualizar
@@ -10084,12 +10086,6 @@ items:
                     href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                   - name: Remover homeRealmDiscoveryPolicy
                     href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-                  - name: Atribuir tokenIssuancePolicy
-                    href: api/application-post-tokenissuancepolicies.md
-                  - name: Listar TokenIssuancePolicies
-                    href: api/application-list-tokenissuancepolicies.md
-                  - name: Remover tokenIssuancePolicy
-                    href: api/application-delete-tokenissuancepolicies.md
                   - name: Atribiur tokenLifetimePolicy
                     href: api/application-post-tokenlifetimepolicies.md
                   - name: Listar tokenLifetimePolicies
@@ -10396,7 +10392,7 @@ items:
       - name: Observações
         displayName: OneNote
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onenote-api-overview.md
           - name: Observações
             href: resources/onenote.md
@@ -10824,7 +10820,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e uso
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registro de usuário de credenciais
                     href: resources/credentialuserregistrationcount.md
@@ -10848,7 +10844,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Relatórios de uso do Office 365
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -11051,13 +11047,13 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Dados de consulta
                 href: api/search-query.md
           - name: Índice
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -11179,7 +11175,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
