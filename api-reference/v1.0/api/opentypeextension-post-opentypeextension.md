@@ -3,14 +3,14 @@ title: Criar extensão aberta
 description: Crie uma extensão aberta (objeto openTypeExtension) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso.
 localization_priority: Priority
 author: dkershaw10
-ms.prod: ''
+ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 6901ea90ba446d4e89a0a11c50bfab1704d54292
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b6ddd4fea0262d1a00ace3ebf406b65e611f4985
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511247"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864032"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
@@ -32,9 +32,10 @@ Dependendo do recurso para o qual você está criando a extensão e o tipo de pe
 | [evento de grupo](../resources/event.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
 | [postagem de grupo](../resources/post.md) | Group.ReadWrite.All | Sem suporte | Group.ReadWrite.All |
 | [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [organização](../resources/organization.md) | Directory.AccessAsUser.All | Sem suporte | Sem suporte |
+| [organization](../resources/organization.md) | Organization.ReadWrite.All | Incompatível | Organization.ReadWrite.All |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -79,18 +80,18 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extens�
 ## <a name="path-parameters"></a>Parâmetros do caminho
 |Parâmetro|Tipo|Descrição|
 |:-----|:-----|:-----|
-|id|string|Um identificador exclusivo para um objeto na coleção correspondente. Obrigatório.|
+|id|string|A unique identifier for an object in the corresponding collection. Required.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome       | Valor |
 |:---------------|:----------|
-| Autorização | {token} de portador. Obrigatório. |
+| Autorização | Bearer {token}. Required. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça um corpo JSON de uma [openTypeExtension](../resources/opentypeextension.md), com os seguintes pares de nome/valor obrigatórios e dados personalizados adicionais. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.
+Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md), with the following required name-value pairs, and any additional custom data. The data in the JSON payload can be primitive types, or arrays of primitive types.
 
 | Name       | Valor |
 |:---------------|:----------|
@@ -120,7 +121,7 @@ Consulte os tópicos correspondentes para criar a instância conforme listado [c
 
 ### <a name="request-1"></a>Solicitação 1
 
-O primeiro exemplo cria uma mensagem e uma extensão na mesma chamada. O corpo da solicitação inclui o seguinte:
+The first example creates a message and an extension in the same call. The request body includes the following:
 
 - As propriedades **subject**, **body** e **toRecipients** típicas de uma nova mensagem.
 - E para a extensão:
@@ -163,13 +164,13 @@ POST https://graph.microsoft.com/v1.0/me/messages
 
 ### <a name="response-1"></a>Resposta 1
 
-Veja a seguir a resposta para o primeiro exemplo. O corpo da resposta inclui propriedades da nova mensagem e o seguinte para a nova extensão:
+Here is the response for the first example. The response body includes properties of the new message, and the following for the new extension:
 
 - A propriedade **id** com o nome totalmente qualificado de `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
 - A propriedade padrão **extensionName** especificada na solicitação.
 - Os dados personalizados especificados na solicitação, armazenados como 3 propriedades personalizadas.
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -244,7 +245,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 
 ### <a name="request-2"></a>Solicitação 2
 
-O segundo exemplo cria uma extensão na mensagem especificada. O corpo da solicitação inclui o seguinte para essa extensão:
+The second example creates an extension in the specified message. The request body includes the following for the extension:
 
 - O tipo `microsoft.graph.openTypeExtension`.
 - O nome da extensão "Com.Contoso.Referral".
@@ -268,7 +269,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi
 
 ### <a name="response-2"></a>Resposta 2
 
-Veja a seguir a resposta para o segundo exemplo. O corpo da solicitação inclui o seguinte para a nova extensão:
+Here is the response for the second example. The response body includes the following for the new extension:
 
 - A propriedade padrão **extensionName**.
 - A propriedade **id** com o nome totalmente qualificado de `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
@@ -300,7 +301,7 @@ Content-type: application/json
 
 ### <a name="request-3"></a>Solicitação 3
 
-O terceiro exemplo cria uma extensão no evento de grupo especificado. O corpo da solicitação inclui o seguinte para essa extensão:
+The third example creates an extension in the specified group event. The request body includes the following for the extension:
 
 - O tipo `microsoft.graph.openTypeExtension`.
 - O nome da extensão "Com.Contoso.Deal".
@@ -350,7 +351,7 @@ Content-type: application/json
 
 ### <a name="request-4"></a>Solicitação 4
 
-O quarto exemplo cria uma extensão em uma nova postagem de grupo, usando a mesma chamada de ação **reply** para uma postagem de grupo existente. A ação **reply** cria uma nova postagem e uma nova extensão inserida nessa postagem. O corpo da solicitação inclui uma propriedade **post** que, por sua vez, contém o **corpo** da nova postagem e os seguintes dados para a nova extensão:
+The fourth example creates an extension in a new group post, using the same **reply** action call to an existing group post. The **reply** action creates a new post, and a new extension embedded in the post. The request body includes a **post** property, which in turn contains the **body** of the new post, and the following data for the new extension:
 
 - O tipo `microsoft.graph.openTypeExtension`.
 - O nome da extensão "Com.Contoso.HR".
@@ -388,7 +389,7 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
 
 ### <a name="response-4"></a>Resposta 4
 
-Veja a seguir a resposta do quarto exemplo. Criar uma extensão com êxito em uma nova postagem de grupo resulta apenas no código de resposta HTTP 202.
+Here is the response from the fourth example. Successfully creating an extension in a new group post results in only the HTTP 202 response code.
 
 <!-- {
   "blockType": "response",
@@ -404,7 +405,7 @@ Content-Length: 0
 
 ### <a name="request-5"></a>Solicitação 5
 
-O quinto exemplo cria uma extensão em uma nova postagem de grupo usando a mesma operação POST para criar uma conversa. A operação POST cria uma nova conversa, thread ou postagem e uma nova extensão inserida na postagem. O corpo da solicitação inclui as propriedades **Topic** e **Threads** e o objeto filho **post** para a nova conversa. O objeto **post**, por sua vez, contém o **corpo** da nova postagem e os seguintes dados para a extensão:
+The fifth example creates an extension in a new group post using the same POST operation to create a conversation. The POST operation creates a new conversation, thread and post, and a new extension embedded in the post. The request body includes the **Topic** and **Threads** properties, and a child **post** object for the new conversation. The **post** object in turn contains the **body** of the new post, and the following data for the extension:
 
 - O tipo `microsoft.graph.openTypeExtension`.
 - O nome da extensão "Com.Contoso.HR".
@@ -449,11 +450,11 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
 
 ### <a name="response-5"></a>Resposta 5
 
-Veja a seguir a resposta do quinto exemplo, que contém a nova conversa e uma ID de thread. Esse novo thread contém uma postagem criada automaticamente que, por sua vez, contém a nova extensão.
+Here is the response from the fifth example which contains the new conversation and a thread ID. This new thread contains an automatically created post, which in turn contains the new extension.
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-Para obter a nova extensão, primeiro [obtenha todas as postagens](../api/conversationthread-list-posts.md) desse thread. Inicialmente, deve haver somente uma. Em seguida, aplique a ID da postagem e o nome da extensão `Com.Contoso.Benefits` para [obter a extensão](../api/opentypeextension-get.md).
+To get the new extension, first [get all the posts](../api/conversationthread-list-posts.md) in this thread, and initially there should be only one. Then apply the post ID and the extension name `Com.Contoso.Benefits` to [get the extension](../api/opentypeextension-get.md).
 
 <!-- {
   "blockType": "response",
