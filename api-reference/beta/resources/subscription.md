@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d75233917ca1d9a0a000cba6063d822cd1d55e4f
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 44e1588873c27631ccee22f956838f8220078bad
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345720"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44893673"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -23,7 +23,7 @@ Uma assinatura permite que um aplicativo cliente receba notificações de altera
 - Um [alerta][] do Microsoft Graph Security API
 - Uma [callRecord][] produzida após uma chamada ou reunião no Microsoft Teams
 - Um [chat][] enviado por meio de equipes ou canais no Microsoft Teams
-- Um [conversa][] de um grupo do Office 365
+- Uma [conversa][] em um grupo do Microsoft 365
 - Conteúdo da hierarquia de uma pasta raiz [driveItem][] no OneDrive for Business ou de uma pasta raiz ou uma subpasta [driveItem][] no OneDrive pessoal do usuário
 - Uma [lista][] em um [site][] do SharePoint
 - Uma [mensagem][], [evento][] ou [contato][] no Outlook
@@ -51,7 +51,7 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | recurso | string | Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/beta/`). Consulte os possíveis valores do [caminho](webhooks.md) do recurso de cada recurso suportado. Obrigatório. |
 | expirationDateTime | DateTimeOffset | Especifica a data e a hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. Obrigatório. |
 | clientState | string | Especifica o valor da propriedade **ClientState** enviada pelo serviço em cada notificação de alteração. O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço, comparando o valor da propriedade **ClientState** enviada com a assinatura com o valor da propriedade **ClientState** recebida com cada notificação de alteração. Opcional. |
-| id | string | Identificador exclusivo da assinatura. Somente leitura. |
+| id | string | Unique identifier for the subscription. Read-only. |
 | ApplicationId | string | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
 | creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usou permissões delegadas para criar a assinatura, este campo conterá a ID do usuário conectado o aplicativo chamado em nome de. Se o aplicativo usava permissões de aplicativo, este campo contém a ID da entidade de serviço correspondente ao aplicativo. Somente leitura. |
 | includeResourceData | Booliano | Quando definido como `true` , as notificações de alteração [incluem dados de recurso](/graph/webhooks-with-resource-data) (como o conteúdo de uma mensagem de chat). Opcional. | 
