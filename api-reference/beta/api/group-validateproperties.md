@@ -1,22 +1,22 @@
 ---
 title: 'Group: ValidateProperties'
-description: Validar se o nome de exibição ou o apelido de email de um grupo do Office 365 está em conformidade com as políticas de nomenclatura.
+description: Validar se o nome de exibição ou o apelido de email de um grupo do Microsoft 365 está em conformidade com as políticas de nomenclatura.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b77ccc5fc22ffa9a0829d825a434b32070701a0b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b08928e4eab4ae6feabebb66fa590c3505ae9112
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396015"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895766"
 ---
 # <a name="group-validateproperties"></a>Group: ValidateProperties
 
 Namespace: microsoft.graph
 
-Validar se o nome de exibição ou o apelido de email de um grupo do Office 365 está em conformidade com as políticas de nomenclatura. Os clientes podem usar a API para determinar se um nome de exibição ou apelido de email é válido antes de tentar **Atualizar** um grupo do Office 365. Para validar as propriedades antes de criar um grupo, use a [função ValidateProperties](directoryobject-validateproperties.md) para objetos de diretório.
+Validar se o nome de exibição ou o apelido de email de um grupo do Microsoft 365 está em conformidade com as políticas de nomenclatura. Os clientes podem usar a API para determinar se um nome de exibição ou apelido de email é válido antes de tentar **Atualizar** um grupo do Microsoft 365. Para validar as propriedades antes de criar um grupo, use a [função ValidateProperties](directoryobject-validateproperties.md) para objetos de diretório.
 
 As seguintes validações são realizadas para o nome de exibição e as propriedades de apelido de email: 
 1. Validar a política de nomenclatura de prefixo e sufixo
@@ -26,7 +26,7 @@ Essa API retorna com a primeira falha encontrada. Se uma ou mais propriedades fa
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -58,11 +58,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |onBehalfOfUserId|Guid| A ID de objeto do usuário a ser representada ao chamar a API. Os resultados de validação são para os atributos e funções do onBehalfOfUserId. |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito e não houver erros de validação, o método `204 No Content` retornará o código de resposta. Não retorna nada no corpo da resposta.
+Se tiver êxito e não houver erros de validação, o método retornará o `204 No Content` código de resposta. Não retorna nada no corpo da resposta.
 
-Se a solicitação for inválida, o método `400 Bad Request` retornará um código de resposta. Uma mensagem de erro com detalhes sobre a solicitação inválida é retornada no corpo da resposta.
+Se a solicitação for inválida, o método retornará um `400 Bad Request` código de resposta. Uma mensagem de erro com detalhes sobre a solicitação inválida é retornada no corpo da resposta.
 
-Se houver um erro de validação. O método retorna `422 Unprocessable Entity` um código de resposta. Uma mensagem de erro e um conjunto de detalhes de erro é retornado no corpo da resposta.
+Se houver um erro de validação. O método retorna um `422 Unprocessable Entity` código de resposta. Uma mensagem de erro e um conjunto de detalhes de erro é retornado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

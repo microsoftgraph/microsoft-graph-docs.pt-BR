@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: be62c70b225cc7698a95c4765ba8e603af6226e9
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 4a80b28cb42a3c23902fed139f7ccc7ec92ea794
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44382697"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896130"
 ---
 # <a name="update-serviceprincipal"></a>Atualizar o servicePrincipalName
 
@@ -24,13 +24,13 @@ Atualiza as propriedades do objeto [servicePrincipalName](../resources/servicepr
 > Não há suporte para o uso de PATCH para definir [**passwordCredential**](../resources/passwordcredential.md) . Use os métodos [addpassword](./serviceprincipal-addpassword.md) e [removePassword](./serviceprincipal-removepassword.md) para atualizar a senha de um servicePrincipalName.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All |
+|Application | Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -40,27 +40,27 @@ PATCH /servicePrincipals/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:-----------|:----------|
-| Autorização | {token} de portador. Obrigatório.  |
-| Content-Type | application/json. Obrigatório. |
+| Autorização | Bearer {token}. Required.  |
+| Content-Type | application/json. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Propriedade     | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |accountEnabled|Booliano| **True** se a entidade de serviço estiver habilitada; caso contrário, **false**.|
-| addIns | [addIn](../resources/addin.md) | Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade "FileHandler". Isso permitirá que serviços como o Office 365 chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando.|
-|alternativos|Conjunto de cadeias de caracteres| Usado para recuperar entidades de serviço por assinatura, identificar grupo de recursos e IDs de recursos completos para [identidades gerenciadas](https://aka.ms/azuremanagedidentity).|
+| addIns | [addIn](../resources/addin.md) | Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade "FileHandler". Isso permitirá que os serviços, como o Microsoft 365, chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando.|
+|alternativos|Coleção de cadeias de caracteres| Usado para recuperar entidades de serviço por assinatura, identificar grupo de recursos e IDs de recursos completos para [identidades gerenciadas](https://aka.ms/azuremanagedidentity).|
 |appRoleAssignmentRequired|Boolean|Especifica se um **appRoleAssignment** de um usuário ou grupo é necessário antes que o Azure AD emita um token de usuário ou de acesso ao aplicativo. Não anulável. |
 |appRoles|[appRole](../resources/approle.md) collection|As funções do aplicativo expostas pelo aplicativo associado. Para obter mais informações, consulte a definição da propriedade **appRoles** no recurso [Application](../resources/application.md) . Não anulável. |
 |displayName|Cadeia de caracteres|O nome de exibição da entidade de serviço.|
 |homepage|String|Página inicial ou página de aterrissagem do aplicativo.|
 |keyCredentials|[keyCredential](../resources/keycredential.md) collection|A coleção de credenciais principais associada à entidade de serviço. Não anulável.            |
-|loginUrl|String|Especifica a URL na qual o provedor de serviços redireciona o usuário para o Azure AD autenticar. O Azure AD usa a URL para iniciar o aplicativo do Office 365 ou do Azure AD meus aplicativos. Quando estiver em branco, o Azure AD executará o logon iniciado pelo IdP para aplicativos configurados com o [logon único baseado em SAML](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). O usuário inicia o aplicativo do Office 365, do Azure AD meus aplicativos ou da URL de SSO do Azure AD.|
+|loginUrl|String|Especifica a URL na qual o provedor de serviços redireciona o usuário para o Azure AD autenticar. O Azure AD usa a URL para iniciar o aplicativo do Microsoft 365 ou do Azure AD meus aplicativos. Quando estiver em branco, o Azure AD executará o logon iniciado pelo IdP para aplicativos configurados com o [logon único baseado em SAML](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). O usuário inicia o aplicativo do Microsoft 365, do Azure AD meus aplicativos ou da URL de SSO do Azure AD.|
 |logoutUrl|String| Especifica a URL que será usada pela autorização do serviço da Microsoft para fazer logoff de um usuário usando protocolos de logoff [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou SAML.|
-|notificationEmailAddresses|Conjunto de cadeias de caracteres|Especifica a lista de endereços de email onde o Azure AD envia uma notificação quando o certificado ativo está próximo da data de vencimento. Isso se aplica apenas aos certificados usados para assinar o token SAML emitido para aplicativos da galeria do Azure AD.|
+|notificationEmailAddresses|Coleção de cadeias de caracteres|Especifica a lista de endereços de email onde o Azure AD envia uma notificação quando o certificado ativo está próximo da data de vencimento. Isso se aplica apenas aos certificados usados para assinar o token SAML emitido para aplicativos da galeria do Azure AD.|
 |publishedPermissionScopes|coleção [permissionScope](../resources/permissionScope.md)|As permissões OAuth 2.0 expostas pelo aplicativo associado. Para obter mais informações, consulte a definição da propriedade **oauth2PermissionScopes** no recurso [Application](../resources/application.md) . Não anulável.            |
-|preferredSingleSignOnMode|string|Especifica o modo de logon único configurado para este aplicativo. O Azure AD usa o modo de logon único preferencial para iniciar o aplicativo do Office 365 ou do Azure AD meus aplicativos. Os valores com suporte são password, SAML, external e oidc.|
+|preferredSingleSignOnMode|string|Especifica o modo de logon único configurado para este aplicativo. O Azure AD usa o modo de logon único preferencial para iniciar o aplicativo do Microsoft 365 ou do Azure AD meus aplicativos. Os valores com suporte são password, SAML, external e oidc.|
 |preferredTokenSigningKeyEndDateTime|DateTimeOffset|Especifica a data de expiração da keycredential usada para assinatura de token, marcada por **preferredTokenSigningKeyThumbprint**.|
 |preferredTokenSigningKeyThumbprint|String|Reservado apenas para uso interno. Não escreva ou dependa de alguma forma dessa propriedade. Pode ser removida em versões futuras. |
 |publisherName|String|O nome de exibição do locatário no qual o aplicativo associado está especificado.|
@@ -109,7 +109,7 @@ Content-length: 391
 
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

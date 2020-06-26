@@ -1,20 +1,20 @@
 ---
 title: Visão geral da API do calendário do Outlook
-description: O calendário do Outlook faz parte do hub de mensagens do Outlook no Office 365, que também permite o gerenciamento de emails e contatos e a localização de informações sobre usuários em uma organização.
+description: O calendário do Outlook faz parte do hub de mensagens do Outlook no Microsoft 365 que também permite que você gerencie emails e contatos, Encontre informações sobre usuários em uma organização,
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4d9b61db0dfc14a2e22aad50769498333828ebfb
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: d66e538f98021812587ab92f451926959df27ab4
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290975"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44894932"
 ---
 # <a name="outlook-calendar-api-overview"></a>Visão geral da API do calendário do Outlook
 
-O calendário do Outlook faz parte do hub de mensagens do Outlook no Office 365 que também permite gerenciar emails e contatos, encontrar informações sobre usuários em uma organização, iniciar conversas online, compartilhar arquivos e colaborar em grupos.
+O calendário do Outlook faz parte do hub de mensagens do Outlook no Microsoft 365 que também permite gerenciar emails e contatos, localizar informações sobre usuários em uma organização, iniciar conversas online, compartilhar arquivos e colaborar em grupos.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/_ST4nyz4g9E]
 
@@ -55,7 +55,7 @@ A API de calendário ajuda os clientes a orientar seu dia de trabalho e aumentar
 
 - No Outlook, os clientes podem compartilhar calendários com entre eles e conceder permissões para ler, gravar ou excluir conteúdo do calendário. Ou podem delegar um calendário para que outro cliente responda a solicitações de reunião em nome deles. De forma programática, embora não seja possível iniciar uma ação de compartilhamento ou delegação em nome de um usuário, você pode usar um conjunto de propriedades para verificar o status de compartilhamento e habilitar cenários em torno de calendários compartilhados ou delegados: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared** e **isSharedWithMe**.
 - A API de calendário permite que você receba itens de calendário do usuário conectado ou de usuários que compartilharam ou delegaram seus calendários ao usuário conectado. Por exemplo, se Henrique tiver compartilhado um calendário com Davi ou tiver delegado acesso a Davi, as [permissões delegadas](auth/auth-concepts.md#microsoft-graph-permissions) de Davi também concederão acesso de leitura ao calendário e ao conteúdo que Henrique compartilhou.
-- Os grupos do Office 365 permitem que os membros do grupo colaborem e acessem conversas e calendários de grupo diretamente no Outlook de forma prática. Além de algumas pequenas diferenças entre os calendários de grupo e os calendários de usuários, a API de calendário permite que você interaja com os calendários de grupo da mesma forma que interagiria com os calendários de usuários. Confira o recurso de [calendário](/graph/api/resources/calendar?view=graph-rest-1.0) para obter mais informações<sup>**</sup>.
+- Os grupos do Microsoft 365 tornam conveniente que os membros do grupo colaborem e acessem conversas de grupo e calendários diretamente no Outlook. Além de algumas pequenas diferenças entre os calendários de grupo e os calendários de usuários, a API de calendário permite que você interaja com os calendários de grupo da mesma forma que interagiria com os calendários de usuários. Confira o recurso de [calendário](/graph/api/resources/calendar?view=graph-rest-1.0) para obter mais informações<sup>**</sup>.
 
 ## <a name="schedule-smart"></a>Agendar de forma inteligente
 

@@ -1,16 +1,16 @@
 ---
 title: Listar eventos
-description: Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.
+description: Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 519267d8f6622e40258d7d25138c141a24bd966a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 121e16524fb3edd54fe8cb1562c7fa38cd208fa9
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43361448"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895640"
 ---
 # <a name="list-events"></a>Listar eventos
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de eventos em um calendário.  O calendário pode ser para um [usuário](../resources/user.md) ou um calendário padrão de um [grupo](../resources/group.md) do Office 365. A lista de eventos contém reuniões de instância única e reuniões mestres em série.
+Recupere uma lista de eventos em um calendário.  O calendário pode ser um para um [usuário](../resources/user.md)ou o calendário padrão de um [grupo](../resources/group.md)do Microsoft 365. A lista de eventos contém reuniões de instância única e reuniões mestres em série.
 
 Para obter instâncias de evento expandidas, [obtenha a visualização de calendário](calendar-list-calendarview.md) ou [obtenha as instâncias de um evento](event-list-instances.md).
 
@@ -57,7 +57,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
 |:---------------|:--------|:--------|
-| Autorização  | string | {token} de portador. Obrigatório.  |
+| Autorização  | string | Bearer {token}. Required.  |
 | Prefira: outlook.timezone  | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/me/calendar/events
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -4,12 +4,12 @@ description: Descreve como migrar aplicativos de API do Azure Active Directory (
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 311bc8c800d7415e7e2d192f5b11aed971faafa4
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 4a759516ad5852f0ef73aaacd87d0c8d85d9a0a1
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926775"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896438"
 ---
 # <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>Migrar aplicativos do Azure AD Graph para o Microsoft Graph
 
@@ -17,9 +17,9 @@ O Microsoft Graph está substituindo o gráfico do Azure Active Directory (Azure
 
 Além disso, o Microsoft Graph oferece suporte a vários novos conjuntos de jogos e recursos do Azure AD que não estão disponíveis no Azure AD Graph. Alterne para o Microsoft Graph para aproveitar essas novas APIs, tudo por meio de um único ponto de extremidade, incluindo:
 
-- [Gerenciamento de grupo do Office 365](/graph/office365-groups-concept-overview)
+- [Gerenciamento de grupo do Microsoft 365](/graph/office365-groups-concept-overview)
 - [Convites de usuário externo](/graph/api/resources/invitation?view=graph-rest-1.0)
-- A capacidade de [restaurar usuários e grupos do Office 365](/graph/api/resources/directory?view=graph-rest-1.0) depois de excluídos
+- A capacidade de [restaurar os usuários e os grupos do Microsoft 365](/graph/api/resources/directory?view=graph-rest-1.0) depois de excluídos
 - [Notificações de webhook em usuários e grupos](/graph/webhooks?toc=./ref/toc.json&view=graph-rest-1.0)
 - Recursos de governança de identidade, como:
   - [Gerenciamento de identidade privilegiado](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) (PIM) para elevar os usuários a funções privilegiadas apenas quando necessário e por um período de tempo limitado

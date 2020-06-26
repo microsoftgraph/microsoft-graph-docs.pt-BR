@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8c161e52a7ad73c40dc3d260d69f974260f00952
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 5a02f0cd05c0f092fbafc584e9a74a578122f7c5
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491655"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896501"
 ---
 # <a name="get-team-photo"></a>Obter foto da equipe
 
@@ -20,18 +20,18 @@ Namespace: microsoft.graph
 
 Obtenha a foto (imagem) de uma equipe ou metadados da foto. Em geral, é uma prática recomendada primeiro tentar recuperar os metadados para o tamanho da foto que você deseja obter para garantir que o tamanho esteja disponível. Depois de recuperar os metadados, use o caminho `/$value` para obter os dados binários da foto.
 
-Este método tenta primeiro recuperar a foto especificada do Office 365. Se a foto não estiver disponível no Office 365, ele tentará recuperar a foto do Azure Active Directory.
+Este método primeiro tenta recuperar a foto especificada do Microsoft 365. Se a foto não estiver disponível no Microsoft 365, ele tentará recuperar a foto do Azure Active Directory.
 
-A seguir, são apresentados os tamanhos suportados de fotos em HD no Office 365: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 e 648x648 pixels. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory.
+Estes são os tamanhos de fotos de HD compatíveis no Microsoft 365:48x48, 64x64, 96x96, 120x120, 240x240, 360X360, 432x432, 504x504 e 648x648 pixels. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory.
 
-Você pode obter os metadados da maior foto disponível ou, opcionalmente, especificar um tamanho para obter os metadados para esse tamanho de foto. Se o tamanho solicitado não estiver disponível, você poderá obter um tamanho menor. Por exemplo, se a maior foto carregada tiver 504x504 pixels, todos os tamanhos, exceto o de 648x648, estarão disponíveis para download. Se o tamanho especificado não estiver disponível no Office 365 ou no Azure Active Directory, o tamanho 1x1 será retornado com o restante dos metadados.
+Você pode obter os metadados da maior foto disponível ou, opcionalmente, especificar um tamanho para obter os metadados para esse tamanho de foto. Se o tamanho solicitado não estiver disponível, você poderá obter um tamanho menor. Por exemplo, se a maior foto carregada tiver 504x504 pixels, todos os tamanhos, exceto o de 648x648, estarão disponíveis para download. Se o tamanho especificado não está disponível no Microsoft 365 ou no Azure Active Directory, o tamanho 1x1 é retornado com o restante dos metadados.
 
 > [!Note]
 > Há um limite de 4 MB para o tamanho total da solicitação REST. Isso limita o tamanho da foto a menos de 4 MB.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -77,13 +77,13 @@ Este método suporta um parâmetro de caminho opcional para especificar o tamanh
 
 |**Parâmetro**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
-|size  |Cadeia de caracteres  | Um tamanho de foto. Os tamanhos de fotos em HD compatíveis com o Office 365 são os seguintes: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 e 648x648. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory. Opcional.|
+|size  |Cadeia de caracteres  | Um tamanho de foto. Os tamanhos de fotos de HD com suporte no Microsoft 365 são os seguintes: 48x48, 64x64, 96x96, 120x120, 240x240, 360X360, 432x432, 504x504 e 648x648. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory. Opcional.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Cabeçalho        | Valor           |
 |:--------------|:--------------  |
-| Autorização | {token} de portador. Obrigatório.  |
+| Autorização | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/photo
 
 Veja a seguir um exemplo da resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

@@ -6,16 +6,16 @@ title: Obter Unidade
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: de46637d41f6e3db9a8f5d546fdecf9db33103b2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d7e205520e9dbabfb2888c3fe4e3553cf1a54ba3
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433304"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895752"
 ---
 # <a name="get-drive"></a>Obter Unidade
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Uma unidade é um contêiner de nível superior para um sistema de arquivos como
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -199,7 +199,7 @@ GET /drives/{driveId}
 
 | Nome do parâmetro | Valor  | Descrição                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _driveId_      | cadeia de caracteres | Obrigatório. O identificador da unidade solicitada. |
+| _driveId_      | cadeia de caracteres | Required. The identifier for the drive requested. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -243,7 +243,7 @@ Se a unidade não existir e não puder ser provisionada automaticamente (ao usar
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
+  "description": "Get metadata for a OneDrive, OneDrive for Business, or Microsoft 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
   "tocPath": "Drives/Get drive",

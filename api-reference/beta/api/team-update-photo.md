@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bb824a0bd6b79f4450f4a2d3658e0853376db594
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 22fdca19b657bdf439f356fb61e4f805f45b4f4b
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491886"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896123"
 ---
 # <a name="update-team-photo"></a>Atualizar foto da equipe
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar a foto (imagem) de uma equipe. A seguir, são apresentados os tamanhos suportados de fotos em HD no Office 365: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 e 648x648 pixels. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory.
+Atualizar a foto (imagem) de uma equipe. Estes são os tamanhos de fotos de HD compatíveis no Microsoft 365:48x48, 64x64, 96x96, 120x120, 240x240, 360X360, 432x432, 504x504 e 648x648 pixels. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory.
 
 > [!Note]
 > Há um limite de 4 MB no tamanho total da solicitação. Isso limita o tamanho da foto a menos de 4 MB.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -51,8 +51,8 @@ PUT /teams/{id}/photo
 
 | Cabeçalho        | Valor           |
 |:--------------|:--------------  |
-| Autorização | {token} de portador. Obrigatório.  |
-| Content-type | image/jpeg. Obrigatório.  |
+| Autorização | Bearer {token}. Required.  |
+| Content-type | image/jpeg. Required.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

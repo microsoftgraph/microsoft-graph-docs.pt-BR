@@ -1,26 +1,26 @@
 ---
 title: Atualizar o conteúdo da página do OneNote
-description: " Blocos de anotações empresariais no Office 365"
+description: " Blocos de anotações empresariais no Microsoft 365"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 939875ce060abeb4a76d33bea68b3e3bbb49a203
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 09aec84f9b647feaba66954d8c644360396cc623
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840758"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895233"
 ---
 # <a name="update-onenote-page-content"></a>Atualizar o conteúdo da página do OneNote
 
-**Aplica-se a** Blocos de anotações de consumidor no OneDrive | Blocos de anotações empresariais no Office 365
+**Aplica-se a** Blocos de anotações do consumidor no OneDrive | Blocos de anotações empresariais no Microsoft 365
 
 
 Para atualizar o conteúdo de uma página do OneNote, envie uma solicitação de PATCH para o ponto de extremidade do *conteúdo* da página:
 
 `PATCH ../notes/pages/{id}/content`</p>
 
-Envie um objeto de alteração JSON no corpo da mensagem. Se a solicitação for bem-sucedida, o Microsoft Graph retornará um código de status de HTTP 204.
+Send a JSON change object in the message body. If the request is successful, Microsoft Graph returns a 204 HTTP status code.
 
 
 <a name="request-uri"></a>
@@ -376,7 +376,7 @@ Os exemplos a seguir mostram solicitações de PATCH completo.
 
 O exemplo a seguir mostra uma solicitação de PATCH que usa o tipo de conteúdo **application/json**. Você pode usar esse formato quando seu conteúdo não contém dados binários.
 
-```json
+```http
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: application/json
@@ -403,7 +403,7 @@ Authorization: Bearer {token}
 
 O exemplo a seguir mostra uma solicitação de PATCH de diversas partes que inclui dados binários. As solicitações de diversas partes exigem uma parte de "Comandos" que especifica o tipo de conteúdo **application/json** e contém a matriz de objetos de alteração JSON. Outras partes de dados podem conter dados binários. Os nomes de partes são geralmente cadeias de caracteres acrescentadas com a hora atual em milissegundos ou um GUID aleatório.
 
-```json
+```http
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: multipart/form-data; boundary=PartBoundary123

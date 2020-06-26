@@ -4,12 +4,12 @@ description: No Outlook, o organizador da reunião pode permitir que os convidad
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: e17ffc92ae77324e855452b981e90ee4b4f3f3c5
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 7b668b6791655291dde71c4ef517c78a48c0fa8a
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353242"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895100"
 ---
 # <a name="use-outlook-to-organize-or-attend-meetings-online"></a>Use o Outlook para organizar ou participar de reuniões online
 
@@ -19,7 +19,7 @@ Em uma organização compatível com provedores de reuniões online, os administ
 
 Uma organização compatível com qualquer um dos seguintes provedores de reuniões online pode configurar os calendários do Outlook e habilitar a organização de reuniões online:
 
-- Microsoft Teams, adquirido como parte de um pacote Office 365 business ou corporativo
+- Microsoft Teams, adquirido como parte de um pacote Microsoft 365 Business ou Enterprise
 - Skype
 - Skype for Business
 
@@ -472,7 +472,7 @@ Content-type: application/json
 
 
 ## <a name="see-also"></a>Confira também
-- Para obter informações sobre a interoperabilidade do Microsoft Teams com o Office 365, consulte:
+- Para obter informações sobre a interoperabilidade do Microsoft Teams com o Microsoft 365, consulte:
   - [Como o Exchange e o Microsoft Teams interagem](/microsoftteams/exchange-teams-interact)
   - [Definir suas configurações de coexistência e atualização](/microsoftteams/setting-your-coexistence-and-upgrade-settings)
 - [Escolher uma API no Microsoft Graph para criar e ingressar em reuniões online](choose-online-meeting-api.md)

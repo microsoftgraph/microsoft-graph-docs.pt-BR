@@ -1,24 +1,24 @@
 ---
 title: Tipo de recurso educationClass
-description: Representa uma aula em uma escola. O recurso **educationClass** corresponde ao grupo do Office 365 e compartilha a mesma ID.
+description: Representa uma aula em uma escola. O recurso **educationClass** corresponde ao grupo Microsoft 365 e compartilha a mesma ID.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0de9c384c5f48d832180da48c22ed6595ce3922d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dca4ee263418c098194cf37ac66bc6659b9d6061
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502274"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895682"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma aula em uma escola. O recurso **educationClass** corresponde ao grupo do Office 365 e compartilha a mesma ID. Os alunos são membros regulares da aula e os professores são proprietários e têm direitos apropriados. Para que as experiências do Office 365 funcionem corretamente, os professores devem ser membros das coleções de professores e membros.
+Representa uma aula em uma escola. O recurso **educationClass** corresponde ao grupo Microsoft 365 e compartilha a mesma ID. Os alunos são membros regulares da aula e os professores são proprietários e têm direitos apropriados. Para que as experiências da Microsoft 365 funcionem corretamente, os professores devem ser membros das coleções de professores e membros.
 
 ## <a name="methods"></a>Métodos
 
@@ -34,7 +34,7 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 | [Remover professor](../api/educationclass-delete-teachers.md)              | [educationUser]                                | Remova um **educationUser** da aula por meio da propriedade de navegação de professores.      |
 | [Criar educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | Crie um novo **educationAssignment** postando na coleção assignments.            |
 | [Listar tarefas](../api/educationclass-list-assignments.md)           | coleção [educationAssignment]                | Obtenha uma coleção de objetos **educationAssignment** .                                         |
-| [Obter grupo](../api/educationclass-get-group.md)                         | [group]                                        | Recupere o **group** do Office 365 que corresponde a essa **educationClass**.                 |
+| [Obter grupo](../api/educationclass-get-group.md)                         | [group]                                        | Obtenha o **grupo** Microsoft 365 que corresponde a esse **educationClass**.                 |
 | [Criar educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | Crie um novo **educationCategory** para esta classe.                                        |
 | [Listar categorias](../api/educationclass-list-categories.md)             | coleção [educationCategory]                 | Obtenha uma lista de objetos **educationCategory** pertencentes a essa classe.                      |
 | [Atualizar](../api/educationclass-update.md)                               | [educationClass]                               | Atualize o objeto **educationClass**.                                                         |

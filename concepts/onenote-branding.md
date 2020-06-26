@@ -4,16 +4,16 @@ description: " "
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 416b059eabe277dc356e3ac9c1de5849ade8aa23
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 50fec3a91fa6d2a72c2452a356ed3e776db83a37
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561040"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896032"
 ---
 # <a name="branding-guidelines-for-onenote-api-developers"></a>Diretrizes de marca para desenvolvedores da API do OneNote 
  
-**Aplica-se a** Blocos de anotações de consumidor no OneDrive | Blocos de anotações empresariais no Office 365
+**Aplica-se a** Blocos de anotações do consumidor no OneDrive | Blocos de anotações empresariais no Microsoft 365
 
 Siga as orientações contidas neste artigo para melhor integrar a marca do OneNote ao seu produto e satisfazer os requisitos de marca do OneNote.
 

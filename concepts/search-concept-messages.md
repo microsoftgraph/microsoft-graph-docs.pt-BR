@@ -4,12 +4,12 @@ description: Você pode usar a API de pesquisa da Microsoft para pesquisar infor
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 1b47155e761a28ccaf3e93719bd9967b9f9eff67
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: b788b6be016354b31915310e3e937aaf73907107
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568765"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896025"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-messages"></a>Usar a API do Microsoft Search no Microsoft Graph para pesquisar mensagens
 
@@ -86,7 +86,7 @@ Veja a seguir um exemplo da resposta, que contém uma mensagem que corresponde a
                 "receivedDateTime": "2019-10-07T10:00:09Z",
                 "sentDateTime": "2019-10-07T09:59:52Z",
                 "hasAttachments": false,
-                "subject": "Weekly digest: Office 365 changes",
+                "subject": "Weekly digest: Microsoft 365 changes",
                 "bodyPreview": "Here is a summary of your messages from last week -   New Feature: Live captions in English-US a",
                 "importance": "normal",
                 "replyTo": [

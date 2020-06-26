@@ -4,18 +4,18 @@ description: 'Este artigo descreve as oportunidades de parceria habilitadas pela
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 5dd601c686cdc21cb5969c171e06fc57cba4e194
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: fe2c171673421600db29dcaac21f24d5d82c160f
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969260"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895661"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>Parceria com a API de segurança do Microsoft Graph – oportunidades de parceiros de tecnologia
 
 Este artigo descreve as oportunidades de parceria habilitadas pela API de segurança do Microsoft Graph e foi projetado para ajudar os gerentes de produto e as funções de desenvolvimento de negócios a entender os caminhos de investimento e a fornecer informações sobre as propostas de valor de parceria.
 
-## <a name="background"></a>Tela de fundo
+## <a name="background"></a>Segundo plano
 
 A maioria das organizações lida com altos volumes de dados de segurança e tem dezenas de soluções de segurança em sua empresa, tornando a tarefa de integração de vários produtos e serviços desanimadores e complexos. Esses desafios prejudicam a capacidade de as organizações se movimentarem rapidamente ao detectar e corrigir ameaças em um mundo de ataques de movimentação rápida e interrupções.
 
@@ -23,9 +23,9 @@ Parceiros tecnológicos podem se integrar à plataforma Microsoft usando a API d
 
 ## <a name="introduction-to-the-microsoft-graph-security-api"></a>Introdução à API de segurança do Microsoft Graph
 
-A API de segurança do Microsoft Graph é uma API unificada que fornece uma interface padrão e um esquema uniforme para integrar alertas de segurança e inteligência de ameaças de várias fontes, enriquecer alertas e dados com informações contextuais e automatizar a segurança das.
+A API de segurança do Microsoft Graph é uma API unificada que fornece uma interface padrão e um esquema uniforme para integrar alertas de segurança e inteligência de ameaças de várias fontes, enriquecer alertas e dados com informações contextuais e automatizar operações de segurança.
 
-A API de segurança faz parte do Microsoft Graph, que é uma API REST unificada para a integração de dados e inteligência de produtos e serviços da Microsoft e de parceiros. Usando o Microsoft Graph, os clientes e parceiros podem criar rapidamente soluções que se autentiquem uma vez e usem uma única chamada de API para acessar ou agir em informações de segurança de várias soluções de segurança. O valor adicional é descoberto quando você explora as outras [entidades do Microsoft Graph](https://docs.microsoft.com/graph/overview) (Office 365, Azure Active Directory, Intune e muito mais) para associar o contexto de negócios aos seus insights de segurança.
+A API de segurança faz parte do Microsoft Graph, que é uma API REST unificada para integrar dados e inteligência de produtos e serviços da Microsoft e parceiros. Usando o Microsoft Graph, clientes e parceiros podem criar rapidamente soluções que são autenticadas uma vez e usam uma única chamada de API para acessar ou agir em informações de segurança de várias soluções de segurança. O valor adicional é descoberto quando você explora as outras [entidades do Microsoft Graph](https://docs.microsoft.com/graph/overview) (Microsoft 365, Azure Active Directory, Intune e muito mais) para vincular o contexto de negócios com suas informações de segurança.
 
 A Microsoft permite a integração de parceiros tecnológicos de duas maneiras principais.
 
