@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso calendar
-description: Um calendário que é um contêiner para eventos. Pode ser um calendário para um usuário ou o calendário padrão de um grupo do Office 365.
+description: Um calendário que é um contêiner para eventos. Pode ser um calendário para um usuário ou o calendário padrão de um grupo do Microsoft 365.
 localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8a753fbbdaf37552090f3a02219b06cc8eb0fd05
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 6eabbb23ddcab85baf4277f25c586b4affd2c6bc
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290676"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897817"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um calendário que é um contêiner para eventos. Pode ser um calendário para um [usuário](user.md) ou o calendário padrão de um [grupo](group.md) do Office 365.
+Um calendário que é um contêiner para eventos. Pode ser um calendário para um [usuário](user.md)ou o calendário padrão de um [grupo](group.md)do Microsoft 365.
 
 > **Observação:** existem algumas pequenas diferenças na maneira como você pode interagir com calendários de usuários e calendários de grupos:
 
@@ -32,11 +32,11 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |:---------------|:--------|:----------|
 |[Listar calendários](../api/user-list-calendars.md)|Coleção [calendar](calendar.md)|Obtenha todos os calendários do usuário ou os calendários no grupo de calendários padrão ou em outro grupo de calendários específico.|
 |[Criar calendário](../api/user-post-calendars.md) |[calendar](calendar.md)| Crie um novo calendário no grupo de calendário padrão ou no grupo de calendários especificado para um usuário.|
-|[Obter calendário](../api/calendar-get.md) | [calendar](calendar.md) |Obtenha as propriedades e as relações de um objeto **calendar**. O calendário pode ser um para um usuário ou o calendário padrão de um grupo do Office 365. |
-|[Atualizar](../api/calendar-update.md) | [calendar](calendar.md)  |Atualize as propriedades de um objeto **calendar**. O calendário pode ser um para um usuário ou o calendário padrão de um grupo do Office 365. |
+|[Obter calendário](../api/calendar-get.md) | [calendar](calendar.md) |Obtenha as propriedades e as relações de um objeto **calendar**. O calendário pode ser um para um usuário ou o calendário padrão de um grupo do Microsoft 365. |
+|[Atualizar](../api/calendar-update.md) | [calendar](calendar.md)  |Atualize as propriedades de um objeto **calendar**. O calendário pode ser um para um usuário ou o calendário padrão de um grupo do Microsoft 365. |
 |[Excluir](../api/calendar-delete.md) | Nenhum |Exclua um objeto calendar. |
 |[Listar calendarView](../api/calendar-list-calendarview.md) |Coleção [event](event.md)| Obtenha as ocorrências, as exceções e as instâncias de eventos únicas em uma visão de calendário definida por um intervalo de tempo, do calendário principal do usuário `(../me/calendarview)` ou de um calendário especificado.|
-|[Listar eventos](../api/calendar-list-events.md) |Coleção [event](event.md)| Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.|
+|[Listar eventos](../api/calendar-list-events.md) |Coleção [event](event.md)| Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.|
 |[Criar evento](../api/calendar-post-events.md) |[event](event.md)| Crie um novo evento no calendário especificado ou padrão.|
 |[getSchedule](../api/calendar-getschedule.md) |Coleção [scheduleInformation](scheduleinformation.md)|Obtenha as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos para um período especificado. |
 |[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |Sugira horários e locais para a reunião com base no organizador e na disponibilidade dos participantes, além de restrições de horário ou local. |
@@ -50,14 +50,14 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |:---------------|:--------|:----------|
 |allowedOnlineMeetingProviders|coleção de cadeias de caracteres| Represente os provedores de serviços de reunião online que podem ser usados para criar reuniões online neste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |calendarGroupId|Cadeia de caracteres|O [calendarGroup](calendargroup.md) para criar o calendário. Se o usuário nunca tiver definido explicitamente um grupo para o calendário, esta propriedade estará vazia.|
-|canEdit |Booliano |Verdadeiro se o usuário puder gravar no calendário, caso contrário, falso. Essa propriedade é verdadeira para o usuário que criou o calendário. Ela também é verdadeira para um usuário que compartilhou um calendário e concedeu acesso de gravação por meio de um cliente do Outlook ou do recurso [calendarPermission](calendarpermission.md) correspondente. Apenas leitura.|
+|canEdit |Booliano |True if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding [calendarPermission](calendarpermission.md) resource. Read-only.|
 |canShare |Boolean |Verdadeira se o usuário tem permissão para compartilhar o calendário, falsa caso contrário. Apenas o usuário que criou o calendário pode compartilhá-lo. Somente leitura.|
 |canViewPrivateItems |Boolean |Verdadeira se o usuário pode ler itens do calendário que foram marcados como particulares, falsa caso contrário. Essa propriedade é definida por meio de um cliente do Outlook ou o do recurso [calendarPermission](calendarpermission.md) correspondente. Somente leitura.|
-|changeKey|String|Identifica a versão do objeto calendar. Toda vez que o calendário é alterado, a changeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura.|
-|color|String|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|changeKey|String|Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.|
+|color|String|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|O provedor de reunião online padrão para reuniões enviadas deste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |hexColor|Cadeia de Caracteres|A cor do calendário, expressa em um código de cores hexadecimais de três valores hexadecimais, cada um deles variando de 00 a FF e representando os componentes vermelho, verde ou azul do espaço de cor RGB. Se o usuário nunca tiver definido explicitamente uma cor para o calendário, esta propriedade estará vazia. |
-|id|String|O identificador exclusivo do calendário. Somente leitura.|
+|id|String|The calendar's unique identifier. Read-only.|
 |isDefaultCalendar|Booliano|Verdadeiro se este for o calendário padrão em que novos eventos são criados; caso contrário, será falso.|
 |isRemovable|Booliano| Indica se o calendário deste usuário pode ser excluído da caixa de correio do usuário.|
 |isShared |Booliano |True se o usuário tiver compartilhado o calendário com outros usuários. Caso contrário, será false. Como apenas o usuário que criou o calendário pode compartilhá-lo, ** isShared ** e ** isSharedWithMe ** não podem ser verdadeiros para o mesmo usuário. Essa propriedade é definida quando o compartilhamento é iniciado em um cliente do Outlook e pode ser redefinido quando o compartilhamento é cancelado pelo cliente ou pelo recurso [calendarPermission](calendarpermission.md) correspondente. Apenas leitura.|
@@ -66,14 +66,14 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |nome|String|O nome do calendário.|
 |owner |[emailAddress](emailaddress.md) | Se definida, representa o usuário que criou ou adicionou o calendário. Para um calendário que o usuário criou ou adicionou, a propriedade **owner** é definida para o usuário. Para um calendário compartilhado com o usuário, a propriedade **owner** é definida para a pessoa que compartilhou o calendário com o usuário. Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |calendarPermissions|Coleção de [calendarPermission](calendarpermission.md)| As permissões dos usuários com os quais o calendário é compartilhado.|
-|calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Propriedade de navegação. Somente leitura.|
-|events|Coleção [event](event.md)|Os eventos do calendário. Propriedade de navegação. Somente leitura.|
-|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para o calendário. Somente leitura. Anulável.|
-|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mensagem. Somente leitura. Anulável.|
+|calendarView|Coleção [event](event.md)|The calendar view for the calendar. Navigation property. Read-only.|
+|events|Coleção [event](event.md)|The events in the calendar. Navigation property. Read-only.|
+|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.|
+|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| The collection of single-value extended properties defined for the calendar. Read-only. Nullable.|
 
 ## <a name="json-representation"></a>Representação JSON
 

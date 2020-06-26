@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 98af5eb0812e0e3857e154bc51a663038b1230a7
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: ae7c770d97640f6af63dcb594b7f624fb119f1e6
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383704"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896788"
 ---
 # <a name="approleassignment-resource-type"></a>Tipo de recurso plannerAssignment
 
@@ -22,7 +22,7 @@ Uma atribuição de função de aplicativo é uma relação entre a entidade de 
 
 Quando a [função de aplicativo](approle.md) que foi atribuída a uma entidade de segurança tem uma propriedade de **valor** não vazio, ela será incluída na declaração de **funções** de tokens em que o assunto é a entidade de segurança atribuída (por exemplo, respostas SAML, tokens de ID, tokens de acesso que identificam um usuário conectado ou um token de acesso que identifica uma entidade de serviço). Aplicativos e APIs usam essas declarações como parte de sua lógica de autorização.
 
-Um usuário pode ser atribuído diretamente a uma função de aplicativo. Se uma função de aplicativo for atribuída a um grupo, os membros diretos do grupo também serão considerados como a função de aplicativo atribuída. Quando um usuário recebe uma função de aplicativo para um aplicativo, um bloco para esse aplicativo é exibido no [portal myapps](https://docs.microsoft.com/azure/active-directory/user-help/my-apps-portal-end-user-access) do usuário e no [inicializador de aplicativos do Office 365](https://support.office.com/article/meet-the-office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a).
+Um usuário pode ser atribuído diretamente a uma função de aplicativo. Se uma função de aplicativo for atribuída a um grupo, os membros diretos do grupo também serão considerados como a função de aplicativo atribuída. Quando um usuário recebe uma função de aplicativo para um aplicativo, um bloco para esse aplicativo é exibido no [portal myapps](https://docs.microsoft.com/azure/active-directory/user-help/my-apps-portal-end-user-access) do usuário e no [inicializador de aplicativos do Microsoft 365](https://support.office.com/article/meet-the-office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a).
 
 Uma atribuição de função de aplicativo onde a entidade atribuída é uma entidade de serviço é uma concessão [de permissão somente de aplicativo](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types) . Quando um usuário ou administrador se envia a uma permissão somente de aplicativo, uma atribuição de função de aplicativo é criada onde a entidade de segurança atribuída é a entidade de serviço para o aplicativo cliente e o recurso é a entidade de serviço da API de destino.
 

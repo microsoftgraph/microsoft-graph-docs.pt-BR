@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 2941d114fd4b33e6f76c2b93d0204f04047741ed
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bafb7d1c0304dbc26f895e8c4ddb15bf088b21b3
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423848"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896858"
 ---
 # <a name="outlook-extended-properties-overview"></a>Visão geral das propriedades estendidas do Outlook
 
@@ -18,7 +18,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Propriedades estendidas permitem armazenar dados personalizados e servem especificamente como um mecanismo de fallback para os aplicativos acessarem dados personalizados de propriedades MAPI do Outlook quando essas propriedades _ainda não estão expostas nos metadados da API do Microsoft Graph_. Você pode usar a API REST de propriedades estendidas para armazenar ou obter esses dados personalizados nos seguintes recursos de usuário:
+Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access custom data for Outlook MAPI properties when these properties are _not already exposed in the Microsoft Graph API metadata_.
+You can use extended properties REST API to store or get such custom data in the following user resources:
 
 - [message](../resources/message.md)
 - [mailFolder](../resources/mailfolder.md)
@@ -29,7 +30,7 @@ Propriedades estendidas permitem armazenar dados personalizados e servem especif
 - [Tarefa do Outlook](../resources/outlooktask.md)
 - [Pasta de tarefas do Outlook](../resources/outlooktaskfolder.md)
 
-Ou, nos seguintes recursos de grupo do Office 365:
+Ou, nos seguintes recursos de grupo do Microsoft 365:
 
 - grupo [event](../resources/event.md)
 - grupo [calendar](../resources/calendar.md)
@@ -37,7 +38,7 @@ Ou, nos seguintes recursos de grupo do Office 365:
 
 ## <a name="use-extended-properties-or-open-extensions"></a>Usar propriedades estendidas ou extensões abertas?
 
-Nos cenários mais comuns, você deve ser capaz de usar extensões abertas (representadas por [openTypeExtension](../resources/opentypeextension.md), anteriormente conhecidas como extensões de dados do Office 365) para armazenar e acessar dados personalizados de instâncias de recursos na caixa de correio do usuário. Use propriedades estendidas somente se você precisar acessar dados personalizados para as propriedades MAPI do Outlook que ainda não estão expostas nos [metadados da API do Microsoft Graph](https://developer.microsoft.com/graph/docs/overview/call_api).
+In most common scenarios, you should be able to use open extensions (represented by [openTypeExtension](../resources/opentypeextension.md), formerly known as Office 365 data extensions) to store and access custom data for resource instances in a user's mailbox. Use extended properties only if you need to access custom data for Outlook MAPI properties that are not already exposed in the [Microsoft Graph API metadata](https://developer.microsoft.com/graph/docs/overview/call_api).
 
 ## <a name="types-of-extended-properties"></a>Tipos de propriedades estendidas
 

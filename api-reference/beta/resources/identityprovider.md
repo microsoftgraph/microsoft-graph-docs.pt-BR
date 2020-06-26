@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: Nickgmicrosoft
-ms.openlocfilehash: 91eb55c35a17393de623e2c9c5f99c7d3f43386a
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 1c71fc88b4365031a126ee5c45f59de25f5fa3d9
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199740"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897054"
 ---
 # <a name="identityprovider-resource-type"></a>Tipo de recurso do identityProvider
 
@@ -25,7 +25,7 @@ A configuração de um provedor de identidade em seu locatário do Azure AD B2C 
 * Os usuários se inscrevem e entram usando uma conta social em um aplicativo de consumidor. Por exemplo, um aplicativo pode usar o Azure AD B2C para permitir que os usuários se inscrevam no serviço usando uma conta do Facebook.
 * Os usuários vinculem uma conta local existente a uma conta social em um aplicativo de consumidor. Por exemplo, um usuário criou um nome de usuário e senha (conta local) no aplicativo. Mais tarde o usuário decide conectar a conta local para suas contas do Facebook, para que ele possa entrar usando o Facebook.
 
-Configurar um provedor de identidade em seu locatário do Azure AD permite cenários futuros de usuários B2B. Por exemplo, uma organização tem recursos no Office 365 que precisam ser compartilhados com um usuário do Gmail. O usuário do Gmail usará as credenciais de conta do Google para autenticar e acessar os documentos.
+Configurar um provedor de identidade em seu locatário do Azure AD permite cenários futuros de usuários B2B. Por exemplo, uma organização tem recursos no Microsoft 365 que precisam ser compartilhados com um usuário do gmail. O usuário do Gmail usará as credenciais de conta do Google para autenticar e acessar os documentos.
 
 ## <a name="methods"></a>Métodos
 

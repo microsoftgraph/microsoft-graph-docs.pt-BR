@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6c635994f4d281938d709ca7c2e7daabfb73da86
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 295f62aeba919fde1384642755b0c51816527d91
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864067"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897075"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -37,7 +37,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 - [Contato][] pessoal do Outlook
 - [user][]
 - [group][]
-- [Conversa][] em grupo do Office 365
+- [Conversa][] de grupo do Microsoft 365
 - Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _qualquer pasta_ no OneDrive pessoal do usuário
 - Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _pasta raiz_ no OneDrive for Business
 - [Alerta][] de segurança
@@ -252,7 +252,7 @@ Os exemplos de código a seguir estão disponíveis no GitHub.
 
 ## <a name="firewall-configuration"></a>Configuração do firewall
 
-Opcionalmente, você pode configurar o firewall que protege a URL de notificação para permitir conexões de entrada somente pelo Microsoft Graph. Isso permite que você reduza mais exposição a notificações de alteração inválidas que são enviadas para sua URL de notificação. Essas notificações de alteração inválidas podem estar tentando disparar a lógica personalizada que você implementou. Para obter uma lista completa de endereços IP usados pelo Microsoft Graph para oferecer notificações de alteração, confira [pontos de extremidade adicionais do Office 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
+Opcionalmente, você pode configurar o firewall que protege a URL de notificação para permitir conexões de entrada somente pelo Microsoft Graph. Isso permite que você reduza mais exposição a notificações de alteração inválidas que são enviadas para sua URL de notificação. Essas notificações de alteração inválidas podem estar tentando disparar a lógica personalizada que você implementou. Para obter uma lista completa de endereços IP usados pelo Microsoft Graph para fornecer notificações de alteração, consulte [pontos de extremidade adicionais para o microsoft 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
 > **Observação:** Os endereços IP listados que são usados para fornecer notificações de alteração podem ser atualizados a qualquer momento sem aviso prévio.
 

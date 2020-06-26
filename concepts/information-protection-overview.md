@@ -4,12 +4,12 @@ description: O rótulo de proteção de informações da Microsoft ajuda as orga
 author: tommoser
 localization_priority: Normal
 ms.prod: microsoft.informationprotection
-ms.openlocfilehash: cdbe4b3bdb7bdada33fa8c46c074280abcf6c174
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: d9221c5b963a5661f75b3bb746aca7fc5c5ec9e6
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969826"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897740"
 ---
 # <a name="information-protection-overview"></a>Visão geral da proteção de informações
 
@@ -25,7 +25,7 @@ As organizações usam rótulos para ajudar:
 
 ### <a name="integrate-with-the-ubiquitous-labeling-platform-servicing-millions-of-users-and-devices"></a>Integre-se com a plataforma de rotulagem onipresente, servindo milhões de usuários e dispositivos
 
-Mais de um milhão de organizações com dezenas de milhões de usuários usam a proteção de informações da Microsoft para classificar, rotular e proteger os dados.  Além do Office 365, vários serviços DLP (prevenção contra perda de dados), plataformas de Business Intelligence e soluções SaaS (software-as-a-Service) [adotaram](https://www.microsoft.com/security/technology/information-protection) a identificação de proteção de informações da Microsoft para fornecer uma classificação de dados mais rica ocorre. 
+Mais de um milhão de organizações com dezenas de milhões de usuários usam a proteção de informações da Microsoft para classificar, rotular e proteger os dados.  Além do Microsoft 365, vários serviços de prevenção de perda de dados (DLP), plataformas de Business Intelligence e software como serviço (SaaS) [adotaram](https://www.microsoft.com/security/technology/information-protection) a identificação de proteção de informações da Microsoft para fornecer uma experiência de classificação de dados mais rica. 
 
 ### <a name="label-information-in-line-of-business-applications"></a>Informações de rótulo em aplicativos de linha de negócios
 

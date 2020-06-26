@@ -1,30 +1,30 @@
 ---
 title: Adicionar membro
-description: Adicione um membro a um grupo do Office 365, a um grupo de segurança ou a um grupo de segurança habilitado para email através da propriedade de navegação de **membros**.
+description: Adicionar um membro a um grupo do Microsoft 365, um grupo de segurança ou um grupo de segurança habilitado para email através da propriedade de navegação **Members** .
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5eb51c3fd246d79921f53a4d5dad78bbefa1690b
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 0388d13d0e50c6ffcc415503a75afb8af56fa14f
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290940"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897145"
 ---
 # <a name="add-member"></a>Adicionar membro
 
 Namespace: microsoft.graph
 
-Adicione um membro a um grupo do Office 365 ou a um grupo de segurança através da propriedade de navegação de **membros**.
+Adicionar um membro a um grupo do Microsoft 365 ou um grupo de segurança por meio da propriedade de navegação **Members** .
 
 Você pode adicionar usuários, contatos organizacionais, entidades de serviço ou outros grupos. 
 
 > [!IMPORTANT]
-> Só é possível adicionar usuários aos grupos do Office 365 e segurança gerenciados pela nuvem.
+> Você só pode adicionar usuários aos grupos segurança e Microsoft 365 gerenciados por meio da nuvem.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,14 +41,14 @@ POST /groups/{id}/members/$ref
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
-| Content-type   | application/json. Obrigatório. |
+| Autorização  | Bearer {token}. Required. |
+| Content-type   | application/json. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md) ou [organizational contact](../resources/orgcontact.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-add-a-member-to-a-group"></a>Exemplo 1: adicionar um membro a um grupo

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b5f71bdeca19834b8d4721aaa6e8416916a15b58
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 2639e23181af020722311cb6db00c9464949725a
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491795"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897649"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -20,7 +20,7 @@ Uma assinatura permite que um aplicativo cliente receba notificações de altera
 
 - Um [alerta][] do Microsoft Graph Security API
 - Uma [callRecord][] produzida após uma chamada ou reunião no Microsoft Teams
-- Um [conversa][] de um grupo do Office 365
+- Uma [conversa][] em um grupo do Microsoft 365
 - Conteúdo da hierarquia de uma pasta raiz [driveItem][] no OneDrive for Business ou de uma pasta raiz ou uma subpasta [driveItem][] no OneDrive pessoal do usuário
 - Uma [lista][] em um [site][] do SharePoint
 - Uma [mensagem][], [evento][] ou [contato][] no Outlook
@@ -47,7 +47,7 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | recurso | string | Obrigatório. Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/v1.0/`). Consulte os possíveis valores do [caminho](webhooks.md) do recurso de cada recurso suportado.|
 | expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | Obrigatório. Especifica a data e a hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. |
 | clientState | string | Opcional. Especifica o valor da `clientState` Propriedade enviada pelo serviço em cada notificação de alteração. O comprimento máximo é de 128 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço, comparando o valor da `clientState` Propriedade enviada com a assinatura com o valor da `clientState` Propriedade recebida com cada notificação de alteração. |
-| id | cadeia de caracteres | Identificador exclusivo da assinatura. Somente leitura. |
+| id | cadeia de caracteres | Unique identifier for the subscription. Read-only. |
 | ApplicationId | string | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
 | creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usado delegada permissões para criar a assinatura, esse campo contém a id do usuário que entrou no aplicativo chamado em nome dele. Se o aplicativo usou permissões do aplicativo, esse campo contém a id da entidade de serviço correspondente ao aplicativo. Apenas leitura. |
 | latestSupportedTlsVersion | Cadeia de caracteres | Especifica a versão mais recente do protocolo TLS que o ponto de extremidade, especificado por **notificationUrl**, é compatível. Os valores possíveis são: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>Para os assinantes cujo ponto de extremidade de notificação suporta uma versão menor que a versão recomendada atualmente (TLS 1.2), especificar essa propriedade por uma [linha do tempo](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) definida, permite o uso temporário da versão preterida do TLS antes de concluir a atualização para o TLS 1.2. Para esses assinantes, não definir essa propriedade pela linha do tempo resultaria em uma falha nas operações da assinatura. </br></br>Para os assinantes cujo ponto de extremidade já tem suporte ao TLS 1.2, a configuração dessa propriedade é opcional. Nesses casos, o Microsoft Graph padroniza a propriedade como `v1_2`. |

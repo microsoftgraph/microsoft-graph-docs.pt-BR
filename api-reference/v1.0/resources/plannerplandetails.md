@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: e06afabfa01e7c63f103208bb0f290bcb58e4c56
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ec6f22b9a14fc25f6c63b3e6e7c93ec66e4741d2
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447105"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896998"
 ---
 # <a name="plannerplandetails-resource-type"></a>tipo de recurso plannerPlanDetails
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 
 O recurso **plannerPlanDetails** representa as informações adicionais sobre um plano. Cada objeto [Plan](plannerplan.md) tem um objeto details.
@@ -32,7 +32,7 @@ O recurso **plannerPlanDetails** representa as informações adicionais sobre um
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|Um objeto que especifica as descrições das seis categorias que podem ser associadas a tarefas no plano|
 |id|String| Somente leitura. ID do plano de detalhes. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner-identifiers-disclaimer.md) é feito no serviço.|
-|sharedWith|[plannerUserIds](planneruserids.md)|Conjunto de IDs de usuário com as quais esse plano é compartilhado. Se estiver aproveitando os grupos do Office 365, use a API de grupos para gerenciar a associação de grupo para compartilhar o plano [do grupo](group.md) . Você também pode adicionar membros existentes do grupo a essa coleção, embora não seja necessário que eles acessem o plano de Propriedade do grupo. |
+|sharedWith|[plannerUserIds](planneruserids.md)|Conjunto de IDs de usuário com as quais esse plano é compartilhado. Se você estiver aproveitando os grupos do Microsoft 365, use a API de grupos para gerenciar a associação de grupo para compartilhar o plano [do grupo](group.md) . Você também pode adicionar membros existentes do grupo a essa coleção, embora não seja necessário que eles acessem o plano de Propriedade do grupo. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

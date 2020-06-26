@@ -2,12 +2,12 @@
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas.
 author: arpitha-dhanapathi
-ms.openlocfilehash: b437f4d3c33a42a486bec2815ff88af050c78921
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 7dfb8548df8a8df9cd6babded6202e8289d8c577
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845488"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897243"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -17,7 +17,7 @@ As nuvens nacionais atuais incluem:
 
 - Microsoft Cloud para o Governo dos EUA
 - Microsoft Cloud Germany
-- Azure e Office 365 operados pela 21Vianet na China
+- Azure e Microsoft 365 operado pela 21Vianet na China
 
 Cada ambiente de nuvem nacional é exclusivo e diferente do ambiente global da Microsoft. É importante estar ciente de algumas dessas diferenças importantes ao desenvolver aplicativos para ambientes de nuvem nacionais; por exemplo, registrar aplicativos, adquirir tokens e chamar a API do Microsoft Graph pode ser diferente.
 
@@ -56,9 +56,9 @@ A tabela a seguir mostra os pontos de extremidade da raiz do serviço para o Mic
 > [!IMPORTANT]
 > Para um aplicativo no governo dos EUA:
 >
-> - Se você estiver trabalhando em um ambiente GCC do Office 365, continue usando os pontos de extremidade mundiais: `https://graph.microsoft.com` e `https://portal.azure.com` .
-> - Se você estiver trabalhando em um ambiente High do Office 365 GCC, use: `https://portal.azure.us` e `https://graph.microsoft.us` .
-> - Se você estiver trabalhando em um ambiente do Office 365 DoD, use `https://portal.azure.us` e `https://dod-graph.microsoft.us` .
+> - Se você estiver trabalhando em um ambiente Microsoft 365 GCC, continue usando os pontos de extremidade mundiais: `https://graph.microsoft.com` e `https://portal.azure.com` .
+> - Se você estiver trabalhando em um ambiente High do Microsoft 365 GCC, use: `https://portal.azure.us` e `https://graph.microsoft.us` .
+> - Se você estiver trabalhando em um ambiente Microsoft 365 DoD, use `https://portal.azure.us` e `https://dod-graph.microsoft.us` .
 >
 > O acesso aos dados do governo dos EUA usando o ponto de extremidade internacional será desabilitado em um futuro próximo.
 
@@ -102,8 +102,8 @@ Os seguintes recursos adicionais do Microsoft Graph estão disponíveis na visua
 
 Para saber mais sobre nuvens nacionais, confira os seguintes tópicos:
 - [Nuvens nacionais da Microsoft](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
-- [Office 365 para o governo dos EUA](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
-- [Office 365 operado pela 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+- [Microsoft 365 para o governo dos EUA](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
+- [Microsoft 365 operado pela 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
 - [Office 365 Germany](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
 - [Governo do Azure](https://azure.microsoft.com/global-infrastructure/government/)
 - [Azure da 21Vianet da China](https://docs.microsoft.com/azure/china/)

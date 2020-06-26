@@ -1,22 +1,22 @@
 ---
 title: Como trabalhar com APIs de educação no Microsoft Graph
-description: As APIs de educação no Microsoft Graph aprimoram os recursos e dados do Office 365 com informações relevantes para cenários educacionais, incluindo escolas, estudantes, professores, classes, registradoras e atribuições. Isso facilita a criação de soluções que se integram aos recursos educacionais.
+description: As APIs de educação no Microsoft Graph aprimoram os recursos e os dados do Microsoft 365 com informações relevantes para cenários educacionais, incluindo escolas, estudantes, professores, classes, registradoras e atribuições. Isso facilita a criação de soluções que se integram aos recursos educacionais.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: ad050afee8b3772aa9a03e52ed2c1a715813bfd4
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 4cbab2418958db3a0c6fd81e05ce4d1ac71f828c
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353144"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897873"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Como trabalhar com APIs de educação no Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-As APIs de educação no Microsoft Graph aprimoram os recursos e dados do Office 365 com informações relevantes para cenários educacionais, incluindo escolas, estudantes, professores, classes, registradoras e atribuições. Isso facilita a criação de soluções que se integram aos recursos educacionais.
+As APIs de educação no Microsoft Graph aprimoram os recursos e os dados do Microsoft 365 com informações relevantes para cenários educacionais, incluindo escolas, estudantes, professores, classes, registradoras e atribuições. Isso facilita a criação de soluções que se integram aos recursos educacionais.
 
 As APIs de educação incluem recursos de listagem e recursos de atribuições que você pode usar para interagir com os serviços de lista e atribuição no Microsoft Teams. Você pode usar esses recursos para gerenciar uma lista de escolas e automatizar as atribuições de aluno.
 
@@ -44,7 +44,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 ## <a name="rostering"></a>Lista de participantes
 
-As APIs de lista de participantes permitem extrair dados do locatário do Office 365 de uma escola provisionado com o [Microsoft School Data Sync](https://sds.microsoft.com/). Essas APIs fornecem acesso às informações sobre escolas, seções, professores, alunos e listas de participantes. As APIs dão suporte a cenários somente aplicativo (sincronismo) e a cenários de aplicativo mais usuário (interativo). As APIs que dão suporte a cenários interativos aplicam políticas RBAC apropriadas da região, com base na função do usuário que está chamando a API. Isso fornece uma API consistente e uma superfície mínima de política, independentemente da configuração administrativa nos locatários. Além disso, as APIs também fornecem permissões específicas de educação, de modo a garantir que o usuário certo tenha acesso aos dados.
+As APIs de lista permitem extrair dados do locatário do Microsoft 365 do School provisionado com [o Microsoft School Data Sync](https://sds.microsoft.com/). Essas APIs fornecem acesso a informações sobre escolas, seções, professores, estudantes e listagens. As APIs dão suporte a cenários somente aplicativo (sincronismo) e a cenários de aplicativo mais usuário (interativo). As APIs que dão suporte a cenários interativos aplicam políticas RBAC apropriadas da região, com base na função do usuário que está chamando a API. Isso fornece uma API consistente e uma superfície mínima de política, independentemente da configuração administrativa nos locatários. Além disso, as APIs também fornecem permissões específicas de educação, de modo a garantir que o usuário certo tenha acesso aos dados.
 
 Você pode usar as APIs de escalação para permitir que um usuário do aplicativo saiba:
 
@@ -78,7 +78,7 @@ As APIs de escalação dão suporte aos seguintes cenários:
 
 ## <a name="assignments"></a>Atribuições 
 
-Você pode usar as APIs de educação relacionadas à atribuição para integrar com as atribuições no Microsoft Teams. O Microsoft Teams no Office 365 for Education é baseado nas mesmas APIs de educação e fornece um caso de uso para o que você pode fazer com as APIs. Seu aplicativo pode usar essas APIs para interagir com as atribuições ao longo do ciclo de vida da atribuição. 
+Você pode usar as APIs de educação relacionadas à atribuição para integrar com as atribuições no Microsoft Teams. O Microsoft Teams no Microsoft 365 for Education é baseado nas mesmas APIs de educação e fornece um caso de uso para o que você pode fazer com as APIs. Seu aplicativo pode usar essas APIs para interagir com as atribuições ao longo do ciclo de vida da atribuição. 
 
 As APIs de atribuição fornecem os seguintes recursos-chave:
 
@@ -107,7 +107,7 @@ A seguir estão alguns casos de uso comuns para as APIs de educação relacionad
 
 ## <a name="school-data-sync-management"></a>Gerenciamento escolar de sincronização de dados
 
-O [School Data Sync](https://sds.microsoft.com/) ajuda a automatizar o processo de importação e sincronização de dados de lista de sistemas de informações do aluno com o Active Directory do Azure (Azure AD) e o Office 365. Você pode usar as APIs de gerenciamento de sincronização de dados da escola no Microsoft Graph para configurar a sincronização de um arquivo CSV ou de um conector de API SIS suportado.
+O [School Data Sync](https://sds.microsoft.com/) ajuda a automatizar o processo de importação e sincronização de dados de lista de sistemas de informações do aluno com o Active Directory do Azure (Azure AD) e o Microsoft 365. Você pode usar as APIs de gerenciamento de sincronização de dados da escola no Microsoft Graph para configurar a sincronização de um arquivo CSV ou de um conector de API SIS suportado.
 
 As APIs de gerenciamento de sincronização de dados da escola oferecem suporte aos seguintes cenários:
 

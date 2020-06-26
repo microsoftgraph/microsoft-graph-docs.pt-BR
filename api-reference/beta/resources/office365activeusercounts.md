@@ -5,23 +5,23 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: b8e3e90424df29218de7a136e4922df59c4af0b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4841377ba8b9aa5a94ca97b50847517be5b2f0cc
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522467"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898069"
 ---
 # <a name="office365activeusercounts-resource-type"></a>tipo de recurso office365ActiveUserCounts
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade          | Tipo   | Descrição                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Data   | A última data do conteúdo.          |
-| Office365         | Int64  | O número de usuários ativos no Office 365. Esse número inclui todos os usuários ativos no Exchange, OneDrive, SharePoint, Skype for Business, Yammer e Microsoft Teams. Você pode encontrar a definição de usuário ativo para cada produto na respectiva descrição da propriedade. |
+| Office365         | Int64  | O número de usuários ativos no Microsoft 365. Esse número inclui todos os usuários ativos no Exchange, OneDrive, SharePoint, Skype for Business, Yammer e Microsoft Teams. Você pode encontrar a definição de usuário ativo para cada produto na respectiva descrição da propriedade. |
 | câmbio          | Int64  | O número de usuários ativos no Exchange. Qualquer usuário que possa ler e enviar emails é considerado um usuário ativo. |
 | oneDrive          | Int64  | O número de usuários ativos no OneDrive. Qualquer usuário que tenha exibido ou editado arquivos, arquivos compartilhados internamente ou externamente, ou arquivos sincronizados é considerado um usuário ativo. |
 | Do        | Int64  | O número de usuários ativos no SharePoint. Qualquer usuário que tenha exibido ou editado arquivos, arquivos compartilhados internamente ou externamente, arquivos sincronizados ou páginas do SharePoint exibidas é considerado um usuário ativo. |

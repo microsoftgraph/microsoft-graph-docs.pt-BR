@@ -3638,6 +3638,31 @@ items:
                 href: api/groupsettingtemplate-list.md
               - name: Obter modelo de configuração de grupo
                 href: api/groupsettingtemplate-get.md
+          - name: Proteção de identidade
+            href: resources/identityprotectionroot.md
+            items:
+              - name: Detecção de risco
+                href: resources/riskdetection.md
+                items:
+                  - name: Lista
+                    href: api/riskdetection-list.md
+                  - name: Obter
+                    href: api/riskdetection-get.md
+              - name: Usuário arriscado
+                href: resources/riskyuser.md
+                items:
+                  - name: Listar usuários arriscados
+                    href: api/riskyuser-list.md
+                  - name: Obter usuário arriscado
+                    href: api/riskyuser-get.md
+                  - name: Histórico de lista
+                    href: api/riskyuser-list-history.md
+                  - name: Obter histórico
+                    href: api/riskyuser-get-riskyuserhistoryitem.md
+                  - name: Confirmar comprometimento
+                    href: api/riskyuser-confirmcompromised.md
+                  - name: Ignorar
+                    href: api/riskyuser-dismiss.md
           - name: Provedor de identidade
             href: resources/identityprovider.md
             items:
@@ -4306,7 +4331,7 @@ items:
                 href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
               - name: Obter armazenamento
                 href: api/reportroot-getmailboxusagestorage.md
-          - name: Ativações do Office 365
+          - name: Ativações do Microsoft 365
             href: resources/office-365-activations-reports.md
             items:
               - name: Obter detalhes do usuário
@@ -4315,7 +4340,7 @@ items:
                 href: api/reportroot-getoffice365activationcounts.md
               - name: Obter contagens de usuários
                 href: api/reportroot-getoffice365activationsusercounts.md
-          - name: Usuários ativos do Office 365
+          - name: Usuários ativos do Microsoft 365
             href: resources/office-365-active-users-reports.md
             items:
               - name: Obter detalhes do usuário
@@ -4324,7 +4349,7 @@ items:
                 href: api/reportroot-getoffice365activeusercounts.md
               - name: Obter contagens de usuários dos serviços
                 href: api/reportroot-getoffice365servicesusercounts.md
-          - name: Atividades de grupos do Office 365
+          - name: Atividade de grupos do Microsoft 365
             href: resources/office-365-groups-activity-reports.md
             items:
               - name: Obter detalhe do grupo

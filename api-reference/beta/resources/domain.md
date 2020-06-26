@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: cd1cc0e199848243fd9957f0741f609e052af6e6
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 6e75eefba9a9fd26968b74bd8ca5a97b70a2c5f9
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43178937"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896970"
 ---
 # <a name="domain-resource-type"></a>tipo de recurso de domínio
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa um domínio associado ao locatário.
 
-Use as operações de domínio para associar domínios a um locatário, verificar a propriedade do domínio e configurar os serviços com suporte.  As operações de domínio habilitam registradores para automatizar a associação de domínios para serviços como o Office 365. Por exemplo, como parte do domínio inscrever-se, um registrador pode habilitar um domínio do personalizado para emails, sites, autenticação, etc.
+Use as operações de domínio para associar domínios a um locatário, verificar a propriedade do domínio e configurar os serviços com suporte.  As operações de domínio habilitam registradores para automatizar a associação de domínios para serviços como o Microsoft 365. Por exemplo, como parte do domínio inscrever-se, um registrador pode habilitar um domínio do personalizado para emails, sites, autenticação, etc.
 
 Para associar um domínio a um locatário:
 
@@ -55,15 +55,15 @@ Para associar um domínio a um locatário:
 |authenticationType|String| Indica o tipo de autenticação configurada para o domínio. O valor é *gerenciado* ou *federado*.<br> *Gerenciado* indica um domínio gerenciado em nuvem onde o Azure ad realiza autenticação do usuário.<br>*Federado* indica que a autenticação é federada com um provedor de identidade, como o Active Directory local do locatário por meio dos serviços de Federação do Active Directory. Isso é somente leitura e não é anulável. |
 |availabilityStatus|String| Essa propriedade é sempre NULL, exceto quando a ação [Verify](../api/domain-verify.md) é usada. Quando a ação [Verify](../api/domain-verify.md) é usada, uma entidade de **domínio** é retornada na resposta. A propriedade **availabilityStatus** da entidade de **domínio** na resposta é *AvailableImmediately* ou *EmailVerifiedDomainTakeoverScheduled*.|
 |id|String| O nome totalmente qualificado do domínio. Key, imutável, não anulável, exclusivo |
-|isAdminManaged|Booliano| O valor da propriedade será false se o gerenciamento de registro DNS do domínio tiver sido delegado para o Office 365. Caso contrário, o valor será true. Não anulável |
+|isAdminManaged|Booliano| O valor da propriedade será false se o gerenciamento de registro DNS do domínio tiver sido delegado para o Microsoft 365. Caso contrário, o valor será true. Não anulável |
 |isDefault|Booliano| True se este é o domínio padrão usado para a criação de usuários. Há apenas um domínio padrão por empresa. Não anulável |
 |isinitial|Booliano| True se este é o domínio inicial criado pelo Microsoft Online Services (companyname.onmicrosoft.com). Há apenas um domínio inicial por empresa. Não anulável |
 |IsRoot|Booliano| True se o domínio é um domínio raiz verificado. Caso contrário, false se o domínio é um subdomínio ou não verificado. Não anulável |
 |isverificed|Booliano| True se o domínio tiver concluído a verificação de propriedade de domínio. Não anulável |
 |passwordNotificationWindowInDays|Int32|Especifica o número de dias antes que um usuário receba uma notificação de que a senha expirará. Se a propriedade não for definida, será usado um valor padrão de 14 dias.|
 |passwordValidityPeriodInDays|Int32| Especifica o período de tempo que uma senha é válida antes de ser alterada. Se a propriedade não for definida, será usado um valor padrão de 90 dias. |
-|supportedservices|Coleção String| Os recursos atribuídos ao domínio.<br><br>Pode incluir 0, 1 ou mais dos seguintes valores: *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Os valores que você pode adicionar/remover usando a API do Graph incluem: *email*, *OfficeCommunicationsOnline*, *Yammer*<br>Não anulável|
-|state|[domainstate](domainstate.md)| Status das operações assíncronas agendadas para o domínio. |
+|supportedservices|Coleção de cadeias de caracteres| Os recursos atribuídos ao domínio.<br><br>Pode incluir 0, 1 ou mais dos seguintes valores: *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Os valores que você pode adicionar/remover usando a API do Graph incluem: *email*, *OfficeCommunicationsOnline*, *Yammer*<br>Não anulável|
+|estado|[domainstate](domainstate.md)| Status das operações assíncronas agendadas para o domínio. |
 
 ## <a name="relationships"></a>Relações
 

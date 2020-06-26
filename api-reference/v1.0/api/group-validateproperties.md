@@ -1,22 +1,22 @@
 ---
 title: 'Group: ValidateProperties'
-description: Valide se o nome de exibição do grupo do Office 365 ou apelido de email está em conformidade com as políticas de nomenclatura.
+description: Validar que o nome de exibição ou o apelido de email de um grupo do Microsoft 365 está em conformidade com as políticas de nomenclatura.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5b245c242f0c34f2aaf89a3a4987700ae4eaa532
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: acdc168df631a0db5eff277348cf4b0e43d85357
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124655"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897103"
 ---
 # <a name="group-validateproperties"></a>Group: ValidateProperties
 
 Namespace: microsoft.graph
 
-Valide se o nome de exibição do grupo do Office 365 ou apelido de email está em conformidade com as políticas de nomenclatura.  Os clientes podem usar essa API para determinar se um nome de exibição ou apelido de email é válido antes de tentar [Atualizar](group-update.md) um grupo do Office 365. Para validar as propriedades antes de criar um grupo, use a função [directoryobject: ValidateProperties](directoryobject-validateproperties.md) .
+Validar que o nome de exibição ou o apelido de email de um grupo do Microsoft 365 está em conformidade com as políticas de nomenclatura.  Os clientes podem usar essa API para determinar se um nome de exibição ou apelido de email é válido antes de tentar [Atualizar](group-update.md) um grupo do Microsoft 365. Para validar as propriedades antes de criar um grupo, use a função [directoryobject: ValidateProperties](directoryobject-validateproperties.md) .
 
 As seguintes validações de política são realizadas para o nome de exibição e as propriedades de apelido de email:
 1. Validar a política de nomenclatura de prefixo e sufixo
@@ -26,7 +26,7 @@ Essa API só retorna a primeira falha de validação encontrada. Se as proprieda
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -44,7 +44,7 @@ POST /groups/{id}/validateProperties
 
 | Nome           | Descrição      |
 |:---------------|:-----------------|
-| Autorização  | {token} de portador. Obrigatório.    |
+| Autorização  | Bearer {token}. Required.    |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -58,11 +58,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |onBehalfOfUserId|Guid| A ID do usuário a ser personificada ao chamar a API. Os resultados de validação são para os atributos e funções **do onBehalfOfUserId** . |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito e não houver erros de validação, o método `204 No Content` retornará o código de resposta. Não retorna nada no corpo da resposta.
+Se tiver êxito e não houver erros de validação, o método retornará o `204 No Content` código de resposta. Não retorna nada no corpo da resposta.
 
-Se a solicitação for inválida, o método `400 Bad Request` retornará um código de resposta. Uma mensagem de erro com detalhes sobre a solicitação inválida é retornada no corpo da resposta.
+Se a solicitação for inválida, o método retornará um `400 Bad Request` código de resposta. Uma mensagem de erro com detalhes sobre a solicitação inválida é retornada no corpo da resposta.
 
-Se houver um erro de validação. O método retorna `422 Unprocessable Entity` um código de resposta. Uma mensagem de erro e um conjunto de detalhes de erro é retornado no corpo da resposta.
+Se houver um erro de validação. O método retorna um `422 Unprocessable Entity` código de resposta. Uma mensagem de erro e um conjunto de detalhes de erro é retornado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

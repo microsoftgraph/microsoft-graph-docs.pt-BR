@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7410fd3cc24538133ee0e5c1d17c48e24a693dcd
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 04f17a2b40597ca13b6395b2d635544c8c4944df
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845644"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896795"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -59,7 +59,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| addIns | coleção [AddIn](addin.md)| Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade "FileHandler". Isso permitirá que serviços como o Office 365 chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando. |
+| addIns | coleção [AddIn](addin.md)| Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade "FileHandler". Isso permitirá que os serviços, como o Microsoft 365, chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando. |
 | api | [apiApplication](apiapplication.md) | Especifica configurações para um aplicativo que implementa uma API Web. |
 | appId | String | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo pelo Azure AD. Não anulável. Somente leitura. |
 | appRoles | Coleção [appRole](approle.md) | A coleção de funções que o aplicativo declara. Com as [atribuições de função de aplicativo](approleassignment.md), essas funções podem ser atribuídas a usuários, grupos ou a entidades de serviço de outros aplicativos. Não anulável. |

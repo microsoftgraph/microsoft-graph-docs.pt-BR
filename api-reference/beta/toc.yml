@@ -10842,7 +10842,7 @@ items:
                     items:
                       - name: Obter Resumo de uso
                         href: api/reportroot-getcredentialusagesummary.md
-          - name: Relatórios de uso do Office 365
+          - name: Relatórios de uso do Microsoft 365
             items:
               - name: Visão Geral
                 href: resources/report.md
@@ -10895,7 +10895,7 @@ items:
                     href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
                   - name: Obter armazenamento
                     href: api/reportroot-getmailboxusagestorage.md
-              - name: Ativações do Office 365
+              - name: Ativações do Microsoft 365
                 href: resources/office-365-activations-reports.md
                 items:
                   - name: Obter detalhes do usuário
@@ -10904,7 +10904,7 @@ items:
                     href: api/reportroot-getoffice365activationcounts.md
                   - name: Obter contagens de usuários
                     href: api/reportroot-getoffice365activationsusercounts.md
-              - name: Usuários ativos do Office 365
+              - name: Usuários ativos do Microsoft 365
                 href: resources/office-365-active-users-reports.md
                 items:
                   - name: Obter detalhes do usuário
@@ -10913,7 +10913,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: Obter contagens de usuários dos serviços
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Atividades de grupos do Office 365
+              - name: Atividade de grupos do Microsoft 365
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: Obter detalhe do grupo

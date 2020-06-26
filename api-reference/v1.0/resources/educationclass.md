@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso educationClass
-description: 'Representa uma aula em uma escola. O recurso **educationClass** corresponde ao grupo do Office 365 e compartilha a mesma ID. Os alunos são membros regulares da aula e os professores são proprietários e têm direitos apropriados. Para que as experiências do Office funcionem corretamente, os professores devem ser membros das coleções de professores e membros.  '
+description: 'Representa uma aula em uma escola. O recurso **educationClass** corresponde ao grupo Microsoft 365 e compartilha a mesma ID. Os alunos são membros regulares da aula e os professores são proprietários e têm direitos apropriados. Para que as experiências do Office funcionem corretamente, os professores devem ser membros das coleções de professores e membros.  '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d767f25fd5d383d297f3765498f3558a162f2716
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78280017d71fe0cbcaa84ec22905da6848f45f98
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531535"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897880"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
 Namespace: microsoft.graph
 
-Representa uma aula em uma escola. O recurso **educationClass** corresponde ao grupo do Office 365 e compartilha a mesma ID. Os alunos são membros regulares da aula e os professores são proprietários e têm direitos apropriados. Para que as experiências do Office funcionem corretamente, os professores devem ser membros das coleções de professores e membros.  
+Representa uma aula em uma escola. O recurso **educationClass** corresponde ao grupo Microsoft 365 e compartilha a mesma ID. Os alunos são membros regulares da aula e os professores são proprietários e têm direitos apropriados. Para que as experiências do Office funcionem corretamente, os professores devem ser membros das coleções de professores e membros.  
 
 
 ## <a name="methods"></a>Métodos
@@ -31,9 +31,9 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 |[Adicionar professor](../api/educationclass-post-teachers.md) |[educationUser](educationuser.md)| Adicione um novo **educationUser** para a aula postando na propriedade de navegação de professores.|
 |[Listar professores](../api/educationclass-list-teachers.md) |Coleção [educationUser](educationuser.md)| Obtenha uma lista de professores para a aula.|
 |[Remover professor](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| Remova um **educationUser** da aula por meio da propriedade de navegação de professores.|
-|[Obter grupo](../api/educationclass-get-group.md) |[group](group.md)| Recupere o **group** do Office 365 que corresponde a essa **educationClass**.|
+|[Obter grupo](../api/educationclass-get-group.md) |[group](group.md)| Obtenha o **grupo** Microsoft 365 que corresponde a esse **educationClass**.|
 |[Atualizar](../api/educationclass-update.md) | [educationClass](educationclass.md)    |Atualize o objeto **educationClass**. |
-|[Excluir](../api/educationclass-delete.md) | Nenhum |Exclua o objeto **educationClass**. |
+|[Delete](../api/educationclass-delete.md) | Nenhum |Exclua o objeto **educationClass**. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -49,7 +49,7 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 |externalSource|educationExternalSource| Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
 |term|[educationTerm](educationterm.md)|Termos dessa aula.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |membros|Coleção [educationUser](../resources/educationuser.md)| Todos os usuários da aula. Anulável.|

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: ce8429bf3babda5c40354ef52657a43fc52b5eb6
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 064e1847c3f83e463d91dc63c5561637ae181fe7
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846146"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897194"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
@@ -72,7 +72,7 @@ Representa uma instância de um aplicativo em um diretório. Herda de [directory
 | Propriedade     | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |accountEnabled|Booliano| **True** se a entidade de serviço estiver habilitada; caso contrário, **false**.|
-| addIns | coleção [AddIn](addin.md) | Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade "FileHandler". Isso permitirá que serviços como o Office 365 chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando.|
+| addIns | coleção [AddIn](addin.md) | Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade "FileHandler". Isso permitirá que os serviços, como o Microsoft 365, chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando.|
 |alternativos|Coleção de cadeias de caracteres| Usado para recuperar entidades de serviço por assinatura, identificar grupo de recursos e IDs de recursos completos para [identidades gerenciadas](https://aka.ms/azuremanagedidentity).|
 |appDisplayName|Cadeia de caracteres|O nome de exibição exposto pelo aplicativo associado.|
 |appId|String|O identificador exclusivo do aplicativo associado (sua propriedade **appId**).|
@@ -86,12 +86,12 @@ Representa uma instância de um aplicativo em um diretório. Herda de [directory
 |id|String|O identificador exclusivo da entidade de serviço. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 | informações  | [informationalUrl](informationalurl.md) | Informações básicas de perfil do aplicativo adquirido, como marketing do aplicativo, suporte, termos de serviço e URLs da declaração de privacidade. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, confira [Como adicionar termos de serviço e política de privacidade a aplicativos do Azure AD registrados](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 |keyCredentials|[keyCredential](keycredential.md) collection|A coleção de credenciais principais associada à entidade de serviço. Não anulável.            |
-|loginUrl|String|Especifica a URL na qual o provedor de serviços redireciona o usuário para o Azure AD autenticar. O Azure AD usa a URL para iniciar o aplicativo do Office 365 ou do Azure AD meus aplicativos. Quando estiver em branco, o Azure AD executará o logon iniciado pelo IdP para aplicativos configurados com o [logon único baseado em SAML](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). O usuário inicia o aplicativo do Office 365, do Azure AD meus aplicativos ou da URL de SSO do Azure AD.|
+|loginUrl|String|Especifica a URL na qual o provedor de serviços redireciona o usuário para o Azure AD autenticar. O Azure AD usa a URL para iniciar o aplicativo do Microsoft 365 ou do Azure AD meus aplicativos. Quando estiver em branco, o Azure AD executará o logon iniciado pelo IdP para aplicativos configurados com o [logon único baseado em SAML](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). O usuário inicia o aplicativo do Microsoft 365, do Azure AD meus aplicativos ou da URL de SSO do Azure AD.|
 |logoutUrl|String| Especifica a URL que será usada pelo serviço de autorização da Microsoft para efetuar logoff de um usuário usando os protocolos OpenId Connect [front-Channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-](https://openid.net/specs/openid-connect-backchannel-1_0.html) Channel ou logout SAML.|
 |oauth2PermissionScopes|coleção [permissionScope](permissionScope.md)|As permissões delegadas expostas pelo aplicativo. Para obter mais informações, consulte a propriedade **oauth2PermissionScopes** na propriedade **API** da entidade de [aplicativo](application.md) . Não anulável.|
 |notificationEmailAddresses|Coleção de cadeias de caracteres|Especifica a lista de endereços de email onde o Azure AD envia uma notificação quando o certificado ativo está próximo da data de vencimento. Isso se aplica apenas aos certificados usados para assinar o token SAML emitido para aplicativos da galeria do Azure AD.|
 |passwordCredentials|[passwordCredential](passwordcredential.md) collection|A coleção de credenciais de senha associada à entidade de serviço. Não anulável. |
-|preferredSingleSignOnMode|string|Especifica o modo de logon único configurado para este aplicativo. O Azure AD usa o modo de logon único preferencial para iniciar o aplicativo do Office 365 ou do Azure AD meus aplicativos. Os valores com suporte são password, SAML, external e oidc.|
+|preferredSingleSignOnMode|string|Especifica o modo de logon único configurado para este aplicativo. O Azure AD usa o modo de logon único preferencial para iniciar o aplicativo do Microsoft 365 ou do Azure AD meus aplicativos. Os valores com suporte são password, SAML, external e oidc.|
 |replyUrls|String collection|As URLs às quais os tokens de usuário são enviados para entrar com aplicativo associado ou os URIs de redirecionamento aos quais os códigos de autorização do OAuth 2.0 e tokens de acesso são enviados para o aplicativo associado. Não anulável. |
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|A coleção para configurações relacionadas ao logon único do SAML.|
 |servicePrincipalNames|String collection|Contém a lista de **identifiersUris**, copiadas do [aplicativo](application.md)associado. Valores adicionais podem ser adicionados aos aplicativos híbridos. Esses valores podem ser usados para identificar as permissões expostas por este aplicativo no Azure AD. Por exemplo,<ul><li>Os aplicativos cliente podem especificar um URI de recurso que se baseia nos valores dessa propriedade para adquirir um token de acesso, que é o URI retornado na declaração "AUD".</li></ul><br>O operador any é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável.|
@@ -99,7 +99,7 @@ Representa uma instância de um aplicativo em um diretório. Herda de [directory
 |tags|Coleção String| Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar a entidade de serviço. Não anulável. |
 | tokenEncryptionKeyId |Cadeia de caracteres|Especifica a keyId de uma chave pública da coleção keyCredentials. Quando configurado, o Azure AD emite tokens para esse aplicativo criptografado usando a chave especificada por essa propriedade. O código de aplicativo que recebe o token criptografado deve usar a chave privada correspondente para descriptografar o token a fim de que ele possa ser usado para o usuário conectado.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Entidades (usuários, grupos e entidades de serviço) que são atribuídas a essa entidade de serviço. Somente leitura.|

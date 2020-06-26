@@ -1,0 +1,115 @@
+---
+title: Obter riskDetection
+description: Leia as propriedades e os relacionamentos de um objeto riskDetection.
+author: cloudhandler
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: f03cc204da67ee99c737cb2df8bd9e21bf16477b
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897600"
+---
+# <a name="get-riskdetection"></a>Obter riskDetection
+Namespace: microsoft.graph
+
+Leia as propriedades e os relacionamentos de um objeto [riskDetection](../resources/riskdetection.md) .
+
+>[!NOTE]
+>Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de risco.
+
+## <a name="permissions"></a>Permissões
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | IdentityRiskEvent.Read.All |
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identityProtection/riskDetections/{riskDetectionId}
+```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Nome|Descrição|
+|:---|:---|
+|Autorização|Bearer {token}. Required.|
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [riskDetection](../resources/riskdetection.md) no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "get_riskdetection"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
+```
+
+
+### <a name="response"></a>Resposta
+**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.riskDetection"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+  {
+    "@odata.type": "#microsoft.graph.riskDetection",
+    "id": "6a5874ca-abcd-9d82-5ad39bd71600",
+    "requestId": "6a5874ca-abcd-9d82-5ad39bd71600",
+    "correlationId": "abcd74ca-9823-4b1c-9d82-5ad39bd71600",
+    "riskEventType": "unfamiliarFeatures",
+    "riskState": "remediated",
+    "riskLevel": "medium",
+    "riskDetail": "userPerformedSecuredPasswordReset",
+    "source": "activeDirectory",
+    "detectionTimingType": "realtime",
+    "activity": "signin",
+    "tokenIssuerType": "Azure Active Directory",
+    "ipAddress": "123.456.7.89",
+    "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US",
+        "geoCoordinates": null
+    },
+    "activityDateTime": "2018-09-05T00:09:18.7822851Z",
+    "detectedDateTime": "2018-09-05T00:11:27.773602Z",
+    "lastUpdatedDateTime": "2018-09-05T00:11:27.773602Z",
+    "userId": "abcdefab-af90-4edf-ac4c-742ff06735d0",
+    "userDisplayName": "Olivia Lack",
+    "userPrincipalName": "olack@adatum.com",
+    "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]"
+    }
+  ]
+}
+```
+

@@ -4,12 +4,12 @@ description: Este artigo descreve os códigos de erro que são retornados pelas 
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 316097c01cbd1888b63304727e442f14b2d7c51b
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: fad96eba2b5b2fa628cae81cdfdc859dc572e938
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37969819"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898020"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Códigos de erro para APIs do OneNote no Microsoft Graph
 
@@ -68,7 +68,7 @@ Não é possível criar nem atualizar a entidade porque a biblioteca que contém
 Remova o requisito de check-out da biblioteca ou mova o bloco de anotações.
 
 ### <a name="10013"></a>10013
-Uma ou mais das bibliotecas de documentos no OneDrive do usuário ou grupo contêm mais de 20.000 itens e não podem ser indexadas para consulta usando a API. Certifique-se de que nenhuma das bibliotecas de documentos do grupo ou usuário contenha mais de 20.000 itens. Confira o [blog de desenvolvimento do OneNote](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) para ver as etapas de mitigação.
+One or more of the document libraries on the user or group's OneDrive contains more than 20,000 items and cannot be indexed for querying using the API. Please make sure that none of the user or group's document libraries contains more than 20,000 items. See the [OneNote Dev blog](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) for mitigation steps.
 
 ### <a name="10014"></a>10014
 O Azure Key Vault está ocupado demais para lidar com a solicitação de entrada neste momento. Tente novamente mais tarde.
@@ -100,7 +100,7 @@ A solicitação contém duas ou mais partes de "Apresentação". Exatamente uma 
 O tipo de conteúdo da parte "Apresentação" pode ser somente texto/HTML ou aplicativo/XHTML+XML. 
 
 ### <a name="20004"></a>20004
-O HTML da parte "Apresentação" contém uma marca de imagem com a **src** e o conjunto de propriedades **data-render-src**. A API irá ignorar a propriedade **src** e usar a propriedade **data-render-src**. 
+The "Presentation" part HTML contains an image tag with both the **src** and the **data-render-src** properties set. The API will ignore the **src** property and use the **data-render-src** property. 
 
 ### <a name="20005"></a>20005
 O URI da solicitação é muito longo. O tamanho máximo do URI (incluindo todos os parâmetros e dados) é de 16 KB ou 16.384 caracteres.
@@ -365,9 +365,9 @@ O OneDrive for Business pessoal do usuário não pôde ser recuperado. A tabela 
 
 | Causa | Resolução |
 |:------|:------|
-| O site pessoal do usuário não foi provisionado. | O usuário deve abrir o OneDrive for Business e seguir as instruções para provisionar o site. Se isso falhar, eles deverão entrar em contato com o administrador de locatários do Office 365. |
+| O site pessoal do usuário não foi provisionado. | O usuário deve abrir o OneDrive for Business e seguir as instruções para provisionar o site. Se isso falhar, ele deve entrar em contato com o administrador de locatários do Microsoft 365. |
 | No momento, o site pessoal do usuário está sendo provisionado. | Tente a solicitação mais tarde. |
-| O usuário não tem uma licença válida do OneDrive for Business. | O usuário deve contatar o administrador de locatários do Office 365. |
+| O usuário não tem uma licença válida do OneDrive for Business. | O usuário deve entrar em contato com o administrador de locatários do Microsoft 365. |
 | Um problema de rede impediu a solicitação de ser enviada com êxito. | Tente a solicitação mais tarde. |
 
 ### <a name="30109"></a>30109

@@ -1,22 +1,22 @@
 ---
 title: Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
-description: O Microsoft Teams é um espaço de trabalho baseado em chat no Office 365 que fornece acesso interno a calendários, arquivos, anotações do OneNote, planos do Planner e muito mais.
+description: O Microsoft Teams é um espaço de trabalho baseado em chat no Microsoft 365 que fornece acesso interno a calendários, arquivos, anotações do OneNote, planos do Planner e muito mais.
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 968ce6806da2d14bd2c6cb53d749a43694bcf0bb
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 98e50a32ba363a4eb7fc9f6ecd26e77e9cf60c85
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491900"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897978"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O Microsoft Teams é um espaço de trabalho baseado em chat no Office 365 que fornece acesso interno a calendários específicos, arquivos, anotações do OneNote, planos do Planner, cronogramas de turno e muito mais.
+O Microsoft Teams é um espaço de trabalho baseado em bate-papo no Microsoft 365 que fornece acesso interno a calendários, arquivos, anotações do OneNote, planos do Planner, cronogramas de turnos e muito mais.
 
 ## <a name="key-resources-in-microsoft-teams"></a>Principais recursos no Microsoft Teams (visualização)
 
@@ -48,7 +48,7 @@ Confira também [redução dos limites dos serviços do Microsoft Teams](/graph/
 
 ## <a name="teams-and-groups"></a>Equipes e grupos
 
-Na Microsoft Graph, o Microsoft Teams é representado por um recurso de [grupo](../resources/group.md). Os grupos do Microsoft Teams e Office 365 atendem às várias necessidades de colaboração em grupo. Quase todos os recursos baseados em grupo se aplicam aos grupos do Microsoft Teams e do Office 365, como calendário de grupo, arquivos, anotações, fotos, planos e assim por diante. A principal diferença entre uma [equipe](team.md) e um grupo do Office 365 é o modo de comunicação entre os membros. Os membros da equipe se comunicam por meio de chat persistente no contexto de uma equipe específica. Os membros do grupo do Office 365 se comunicam por conversas em grupo, que são conversas por email que ocorrem no contexto de um grupo no Outlook.
+Na Microsoft Graph, o Microsoft Teams é representado por um recurso de [grupo](../resources/group.md). O Microsoft Teams e os grupos do Microsoft 365 atendem às diversas necessidades de colaboração de grupo. Quase todos os recursos baseados em grupo se aplicam ao Microsoft Teams e grupos do Microsoft 365, como calendário de grupo, arquivos, anotações, foto, planos e assim por diante. A principal diferença entre uma [equipe](team.md) e um grupo do Microsoft 365 é o modo de comunicação entre os membros. Os membros da equipe se comunicam por meio de chat persistente no contexto de uma equipe específica. Os membros do grupo do Microsoft 365 se comunicam por conversas de grupo, que são conversas por email que ocorrem no contexto de um grupo no Outlook.
 
 Qualquer grupo que tenha uma equipe possui uma propriedade **resourceProvisioningOptions** que contém "Team".
 
@@ -58,7 +58,7 @@ Não adicione ou remova "Team" dessa coleção; caso contrário, você obterá r
 Veja a seguir as diferenças no nível da API entre equipes e grupos:
 
 - O chat persistente está disponível apenas para o Microsoft Teams. Esse recurso é representado hierarquicamente pelos recursos [channel](../resources/channel.md) e [chatMessage](../resources/chatmessage.md).
-- As conversas em grupo estão disponíveis apenas para grupos do Office 365. Esse recurso é representado hierarquicamente pelos recursos [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md) e [post](../resources/post.md). 
+- As conversas de grupo estão disponíveis somente para grupos do Microsoft 365. Esse recurso é representado hierarquicamente pelos recursos [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md) e [post](../resources/post.md). 
 - O método [Listar equipes unidas](../api/user-list-joinedteams.md) se aplica apenas ao Microsoft Teams.
 - As [APIs de chamadas e reuniões online](./communications-api-overview.md) aplicam-se apenas ao Microsoft Teams.
 - Confira também os [problemas conhecidos](/graph/known-issues) dessas APIs.

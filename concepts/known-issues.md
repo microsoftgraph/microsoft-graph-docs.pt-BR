@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos do Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 98c61991ec99b1f7776c03f5fa5bc2400b5950a6
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: b02d38ac87f914b943d473b8e30b2e03151a4299
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744052"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897726"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -238,7 +238,7 @@ Exemplos de recursos de grupo que oferecem suporte somente a permissões delegad
 
 ### <a name="policy"></a>Política
 
-O uso do Microsoft Graph para criar e nomear um grupo do Office 365 ultrapassa qualquer política de grupo do Office 365 que seja configurada pelo Outlook Web App.
+O uso do Microsoft Graph para criar e nomear um grupo do Microsoft 365 ignora qualquer política de grupo do Microsoft 365 configurada por meio do Outlook Web App.
 
 ### <a name="setting-the-allowexternalsenders-property"></a>Definir a propriedade allowExternalSenders
 
@@ -342,12 +342,12 @@ No futuro, vamos configurar **resourceProvisioningOptions** em equipes existente
 
 ### <a name="no-instant-access-after-creation"></a>Sem acesso instantâneo após a criação
 
-Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response.
+Os usuários podem ser criados imediatamente por um POST na entidade do usuário. Uma licença do Microsoft 365 deve ser atribuída primeiro a um usuário para obter acesso aos serviços do Microsoft 365. Mesmo assim, devido à natureza distribuída do serviço, pode demorar 15 minutos antes que os arquivos, as mensagens e as entidades de eventos fiquem disponíveis para uso por esse usuário na API do Microsoft Graph. Durante esse período, os aplicativos receberão uma resposta de erro 404 HTTP.
 
 ### <a name="photo-restrictions"></a>Restrições de foto
 
-Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource.
-Failure to read or update a photo, in this case, would result in the following error:
+A leitura e a atualização da foto do perfil do usuário só serão possíveis se o usuário tiver uma caixa de correio. Além disso, qualquer foto que *possa* ter sido armazenada anteriormente usando a propriedade **ThumbNailPhoto** (usando o gráfico do Azure ad ou por meio da sincronização do AD Connect) não estará mais acessível através da propriedade **Photo** do Microsoft Graph do recurso [User](/graph/api/resources/user?view=graph-rest-1.0) .
+A falha na leitura ou na atualização de uma foto, nesse caso, resultaria no seguinte erro:
 
 ```javascript
 {

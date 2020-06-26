@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: f84aafaada0e217614fefa9eb9346ad8583e5970
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 0ed8ed915d69945d2eb9666448c56b8d23121320
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863744"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898083"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -582,7 +582,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="application"></a>Aplicativo
+#### <a name="application"></a>Application
 
 * _Device.ReadWrite.All_: Ler todos os dispositivos registrados na organização (`GET /devices`).
 
@@ -789,13 +789,13 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 A funcionalidade de grupo não é compatível com contas pessoais da Microsoft.
 
-Para grupos do Office 365, as Permissões de grupo concedem ao aplicativo acesso ao conteúdo do grupo. Por exemplo, conversas, arquivos, anotações e assim por diante.
+Para grupos do Microsoft 365, as permissões de grupo concedem ao aplicativo acesso ao conteúdo do grupo; por exemplo, conversas, arquivos, anotações e assim por diante.
 
 For application permissions, there are some limitations for the APIs that are supported. For more information, see [known issues](known-issues.md).
 
 In some cases, an app may need [Directory permissions](#directory-permissions) to read some group properties like `member` and `memberOf`. For example, if a group has a one or more [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) as members, the app will need effective permissions to read service principals through being granted one of the _Directory.\*_ permissions, otherwise Microsoft Graph will return an error. (In the case of delegated permissions, the signed-in user will also need sufficient privileges in the organization to read service principals.) The same guidance applies for the `memberOf` property, which can return [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
-Para definir o atributo **preferredDataLocation** de um grupo do Office 365, um aplicativo precisa da permissão Directory.ReadWrite.All. Quando os usuários em um ambiente multigeográfico criam um grupo do Office 365, o valor**preferredDataLocation** para o grupo é definido automaticamente como sendo igual ao do usuário. Para saber mais sobre o local de dados preferencial dos grupos, confira [Criar um grupo do Office 365 com uma PDL específica](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl).
+Para definir um atributo **preferredDataLocation** do grupo Microsoft 365, um aplicativo precisa de permissão Directory. ReadWrite. All. Quando os usuários em um ambiente multigeográfico criam um grupo do Microsoft 365, o valor **preferredDataLocation** do grupo é automaticamente definido para o do usuário. Para obter mais informações sobre o local de dados preferencial de grupos, consulte [Create a Microsoft 365 Group with a PDL específica](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl).
 
 Group permissions are used to control access to [Microsoft Teams](/graph/api/resources/teams-api-overview) resources and APIs. Personal Microsoft accounts are not supported.
 
@@ -803,10 +803,10 @@ Group permissions are also used to control access to [Microsoft Planner](/graph/
 
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
-* _Group.Read.All_: Ler todos os grupos do Office 365 dos quais o usuário conectado é membro (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
-* _Group.Read.All_: Ler todo o conteúdo do grupo do Office 365, como conversas (`GET /groups/{id}/conversations`).
+* _Group. Read. All_: ler todos os grupos do Microsoft 365 dos quais o usuário conectado é membro ( `GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')` ).
+* _Group. Read. All_: ler todo o conteúdo do grupo do Microsoft 365 como conversas ( `GET /groups/{id}/conversations` ).
 * _Group.ReadWrite.All_: Atualizar propriedades do grupo, como fotografias (`PUT /groups/{id}/photo/$value`).
 * _GroupMember.ReadWrite.All_: Atualizar os membros do grupo (`POST /groups/{id}/members/$ref`).
 > **Observação:** Isso também requer o _User.ReadBasic.All_ para ler o usuário para adicionar como membro.
@@ -814,7 +814,7 @@ Group permissions are also used to control access to [Microsoft Planner](/graph/
 #### <a name="application"></a>Aplicativo
 
 * _Group.Read.All_: Localizar todos os grupos com nomes que começam com "Vendas" (`GET /groups?$filter=startswith(displayName,'Sales')`).
-* _Group.ReadWrite.All_: O serviço daemon cria novos eventos no calendário de um grupo do Office 365 (`POST /groups/{id}/events`).
+* _Group. ReadWrite. All_: o serviço de daemon cria novos eventos no calendário de um grupo do Microsoft 365 ( `POST /groups/{id}/events` ).
 * _Group.Create_: Criar um novo grupo (`POST /groups`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
@@ -1039,7 +1039,7 @@ Com a permissão _Mail.Send_ ou _Mail.Send.Shared_, um aplicativo pode enviar em
 * _Mail.Send_: Enviar uma mensagem (`POST /me/sendmail`).
 * _MailboxSettings.ReadWrite_: Atualizar a resposta automática do usuário (`PATCH /me/mailboxSettings`).
 
-#### <a name="application"></a>Aplicativo
+#### <a name="application"></a>Application
 
 * _Mail.Read_: Localizar mensagens de pedro@contoso.com (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`).
 * _Mail.ReadWrite_: Criar uma nova pasta na Caixa de Entrada chamada `Expense Reports` (`POST /users/{id | userPrincipalName}/mailfolders`).
@@ -1068,7 +1068,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 ### <a name="remarks"></a>Comentários
 _Member.Read.Hidden_ é válida somente para contas corporativas ou de estudante.
 
-Membership in some Office 365 groups can be hidden. This means that only the members of the group can view its members. This feature can be used to help comply with regulations that require an organization to hide group membership from outsiders (for example, an Office 365 group that represents students enrolled in a class).
+A associação em alguns grupos do Microsoft 365 pode ser ocultada. Isso significa que apenas os membros do grupo podem exibir seus membros. Esse recurso pode ser usado para ajudar a cumprir as normas que exigem que uma organização oculte a associação de grupo de pessoas de dentro (por exemplo, um grupo do Microsoft 365 que representa os alunos registrados em uma classe).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1411,17 +1411,17 @@ Para um aplicativo com permissões delegadas para ler programas e controles de p
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Reports.Read.All_ | Ler todos os relatórios de uso | Permite que um aplicativo leia todos os relatórios de uso de serviço em nome do usuário conectado. Serviços que fornecem relatórios de uso incluem o Office 365 e o Azure Active Directory. | Sim | Não |
+| _Reports.Read.All_ | Ler todos os relatórios de uso | Permite que um aplicativo leia todos os relatórios de uso de serviço em nome do usuário conectado. Os serviços que fornecem relatórios de uso incluem o Microsoft 365 e o Azure Active Directory. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Reports.Read.All_ | Ler todos os relatórios de uso | Allows an app to read all service usage reports without a signed-in user. Services that provide usage reports include Office 365 and Azure Active Directory. | Sim |
+| _Reports.Read.All_ | Ler todos os relatórios de uso | Permite que um aplicativo leia todos os relatórios de uso de serviço sem um usuário conectado. Os serviços que fornecem relatórios de uso incluem o Microsoft 365 e o Azure Active Directory. | Sim |
 
 ### <a name="remarks"></a>Comentários
 - As permissões de relatórios só são válidas para contas corporativas ou de estudante.
-- Para as permissões delegadas permitirem que aplicativos leiam relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir ao usuário uma função de administrador limitada do Azure AD. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Office 365](reportroot-authorization.md).
+- Para as permissões delegadas permitirem que aplicativos leiam relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir ao usuário uma função de administrador limitada do Azure AD. Para obter mais detalhes, consulte [Authorization for APIs to read Microsoft 365 Usage Reports](reportroot-authorization.md).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1429,7 +1429,7 @@ Para um aplicativo com permissões delegadas para ler programas e controles de p
 
 * _Reports.Read.All_: Ler o relatório de detalhes de uso de aplicativos de email com período de 7 dias (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`).
 * _Reports.Read.All_: Ler o relatório de detalhes de atividade de email com data de '2017-01-01' (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`).
-* _Reports.Read.All_: Ler o relatório de detalhes de ativações do Office 365 (`GET /reports/Office365Activations(view='Detail')/content`).
+* _Reports. Read. All_: ler o relatório de detalhes de ativações do Microsoft 365 ( `GET /reports/Office365Activations(view='Detail')/content` ).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -2030,8 +2030,8 @@ This section shows some common scenarios that target [user](/graph/api/resources
 | **Tarefas do aplicativo envolvendo o Grupo**  |  **Permissões necessárias** |  **Cadeias de caracteres de permissão** |
 |:-------------------------------|:---------------------|:---------------|
 | O aplicativo deseja ler as informações básicas do grupo (somente o nome para exibição e a imagem), por exemplo, para mostrar uma experiência de seleção de um grupo  | _Group.Read.All_  | Ler todos os grupos|
-| App wants to read all content in all Office 365 groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  |  _Group.Read.All_ | Ler itens em todos os conjuntos de sites, ler todos os grupos|
-| App wants to read and write all content in all Office 365 groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Ler e gravar todos os grupos, editar ou excluir itens em todos os conjuntos de sites |
-| App wants to discover (find) an Office 365 group. It allows the user to search for a particular group and choose one from the enumerated list to allow the user to join the group.     | _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
+| O aplicativo deseja ler todo o conteúdo em todos os grupos do Microsoft 365, incluindo arquivos, conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |  _Group.Read.All_ | Ler itens em todos os conjuntos de sites, ler todos os grupos|
+| O aplicativo deseja ler e gravar todo o conteúdo em todos os grupos do Microsoft 365, incluindo arquivos, conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |    _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Ler e gravar todos os grupos, editar ou excluir itens em todos os conjuntos de sites |
+| O aplicativo deseja descobrir (localizar) um grupo do Microsoft 365. Permite ao usuário procurar um grupo específico e escolher um deles na lista enumerada para ingressar no grupo.   | _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
 | O aplicativo deseja criar um grupo por meio do AAD Graph |   _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
 

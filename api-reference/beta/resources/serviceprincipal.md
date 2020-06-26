@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: fc46c88d2ec676ac313602c279683da2c483deba
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 036e86dba81a8581cd23a494f63998732127f2d6
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336717"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898006"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
@@ -51,10 +51,10 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |**Associação**| | |
 |[Listar memberOf](../api/serviceprincipal-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obtenha grupos dos quais essa entidade de serviço é membro direto da propriedade de navegação memberOf.|
 |[List transitive memberOf](../api/serviceprincipal-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| Liste os grupos dos quais essa entidade de serviço é membro. Essa operação é transitiva e inclui os grupos dos quais essa entidade de serviço é um membro aninhado. |
-|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|Conjunto de cadeias de caracteres|Verifique se há associação em uma lista de grupos específica.|
+|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há associação em uma lista de grupos específica.|
 |[checkMemberObjects](../api/serviceprincipal-checkmemberobjects.md)|Coleção de cadeias de caracteres|Verifique se há associação em uma lista de grupo específica, função de diretório ou objetos de unidade administrativa.|
 |[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|String collection|Obtenha a lista de grupos dos quais essa entidade de serviço é membro.|
-|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|String collection|Obtenha a lista de grupos e funções de diretório dos quais essa entidade de serviço é membro.|
+|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|Coleção de cadeias de caracteres|Obtenha a lista de grupos e funções de diretório dos quais essa entidade de serviço é membro.|
 |**Owners**| | |
 |[Listar proprietários](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) collection| Obtenha uma coleção de objeto owner.|
 |[Adicionar proprietário](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Crie um novo proprietário postando na coleção owners.|
@@ -81,8 +81,8 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | Propriedade     | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |accountEnabled|Booliano| **True** se a entidade de serviço estiver habilitada; caso contrário, **false**.|
-| addIns | coleção [AddIn](addin.md) | Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade "FileHandler". Isso permitirá que serviços como o Office 365 chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando.|
-|alternativos|Conjunto de cadeias de caracteres| Usado para recuperar entidades de serviço por assinatura, identificar grupo de recursos e IDs de recursos completos para [identidades gerenciadas](https://aka.ms/azuremanagedidentity).|
+| addIns | coleção [AddIn](addin.md) | Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade "FileHandler". Isso permitirá que os serviços, como o Microsoft 365, chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando.|
+|alternativos|Coleção de cadeias de caracteres| Usado para recuperar entidades de serviço por assinatura, identificar grupo de recursos e IDs de recursos completos para [identidades gerenciadas](https://aka.ms/azuremanagedidentity).|
 |appDisplayName|Cadeia de caracteres|O nome de exibição exposto pelo aplicativo associado.|
 |appId|String|O identificador exclusivo do aplicativo associado (sua propriedade **appId**).|
 |applicationTemplateId|String|Identificador exclusivo do applicationtemplate a partir do qual o servicePrincipalName foi criado. Somente leitura.|
@@ -96,11 +96,11 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | id | String | O identificador exclusivo da entidade de serviço. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 | informações  | [informationalUrl](informationalurl.md) | Informações básicas de perfil do aplicativo adquirido, como marketing do aplicativo, suporte, termos de serviço e URLs da declaração de privacidade. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, confira [Como adicionar termos de serviço e política de privacidade a aplicativos do Azure AD registrados](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 |keyCredentials|[keyCredential](keycredential.md) collection|A coleção de credenciais principais associada à entidade de serviço. Não anulável.            |
-|loginUrl|String|Especifica a URL na qual o provedor de serviços redireciona o usuário para o Azure AD autenticar. O Azure AD usa a URL para iniciar o aplicativo do Office 365 ou do Azure AD meus aplicativos. Quando estiver em branco, o Azure AD executará o logon iniciado pelo IdP para aplicativos configurados com o [logon único baseado em SAML](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). O usuário inicia o aplicativo do Office 365, do Azure AD meus aplicativos ou da URL de SSO do Azure AD.|
+|loginUrl|String|Especifica a URL na qual o provedor de serviços redireciona o usuário para o Azure AD autenticar. O Azure AD usa a URL para iniciar o aplicativo do Microsoft 365 ou do Azure AD meus aplicativos. Quando estiver em branco, o Azure AD executará o logon iniciado pelo IdP para aplicativos configurados com o [logon único baseado em SAML](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). O usuário inicia o aplicativo do Microsoft 365, do Azure AD meus aplicativos ou da URL de SSO do Azure AD.|
 |logoutUrl|String| Especifica a URL que será usada pelo serviço de autorização da Microsoft para efetuar logoff de um usuário usando os protocolos OpenId Connect [front-Channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-](https://openid.net/specs/openid-connect-backchannel-1_0.html) Channel ou logout SAML.|
-|notificationEmailAddresses|Conjunto de cadeias de caracteres|Especifica a lista de endereços de email onde o Azure AD envia uma notificação quando o certificado ativo está próximo da data de vencimento. Isso se aplica apenas aos certificados usados para assinar o token SAML emitido para aplicativos da galeria do Azure AD.|
+|notificationEmailAddresses|Coleção de cadeias de caracteres|Especifica a lista de endereços de email onde o Azure AD envia uma notificação quando o certificado ativo está próximo da data de vencimento. Isso se aplica apenas aos certificados usados para assinar o token SAML emitido para aplicativos da galeria do Azure AD.|
 |passwordCredentials|[passwordCredential](passwordcredential.md) collection|A coleção de credenciais de senha associada à entidade de serviço. Não anulável. |
-|preferredSingleSignOnMode|string|Especifica o modo de logon único configurado para este aplicativo. O Azure AD usa o modo de logon único preferencial para iniciar o aplicativo do Office 365 ou do Azure AD meus aplicativos. Os valores com suporte são password, SAML, external e oidc.|
+|preferredSingleSignOnMode|string|Especifica o modo de logon único configurado para este aplicativo. O Azure AD usa o modo de logon único preferencial para iniciar o aplicativo do Microsoft 365 ou do Azure AD meus aplicativos. Os valores com suporte são password, SAML, external e oidc.|
 |preferredTokenSigningKeyEndDateTime|DateTimeOffset|Especifica a data de expiração da keycredential usada para assinatura de token, marcada por **preferredTokenSigningKeyThumbprint**.|
 |preferredTokenSigningKeyThumbprint|String|Reservado apenas para uso interno. Não escreva ou dependa de alguma forma dessa propriedade. Pode ser removida em versões futuras. |
 |publishedPermissionScopes|coleção [permissionScope](permissionscope.md)|As permissões delegadas expostas pelo aplicativo. Para obter mais informações, consulte a propriedade **oauth2PermissionScopes** na propriedade **API** da entidade de [aplicativo](application.md) . Não anulável.|
@@ -113,7 +113,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |tags|Coleção String| Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar a entidade de serviço. Não anulável. |
 |tokenEncryptionKeyId|Cadeia de caracteres|Especifica a keyId de uma chave pública da coleção keyCredentials. Quando configurado, o Azure AD emite tokens para esse aplicativo criptografado usando a chave especificada por essa propriedade. O código de aplicativo que recebe o token criptografado deve usar a chave privada correspondente para descriptografar o token a fim de que ele possa ser usado para o usuário conectado.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|

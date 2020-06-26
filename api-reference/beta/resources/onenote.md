@@ -5,16 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 98408034bb734ddd714b0959d2605a3f240c7777
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e213f12110399b90513d33af4d1745be3cdf3eae
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522362"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898062"
 ---
 # <a name="onenote-resource-type"></a>tipo de recurso do onenote
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Todas as chamadas para o serviço do OneNote pela API do Microsoft Graph usam es
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
-A localização pode ser blocos de anotações do usuário no Office 365 ou de consumidor do OneDrive, blocos de anotações de grupo ou blocos de anotações hospedado no site da equipe do SharePoint no Office 365. 
+O local pode ser blocos de anotações do usuário no Microsoft 365 ou no OneDrive do consumidor, nos blocos de anotações de grupo ou em blocos de anotações de equipe hospedados no site do SharePoint no Microsoft 365. 
 
 **Blocos de anotações do usuário** Para acessar blocos de anotações pessoais no OneDrive do consumidor ou no OneDrive for Business, use uma das seguintes URLs:
 
@@ -65,8 +65,8 @@ Para obter informações sobre as permissões necessárias para trabalhar com o 
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Criar bloco de anotações](../api/onenote-post-notebooks.md) |[bloco de anotações](notebook.md)| Crie um bloco de anotações postando na coleção notebooks.|
-|[Listar blocos de anotações](../api/onenote-list-notebooks.md) |Coleção [bloco de anotações](notebook.md)| Obter uma coleção de blocos de anotações.|
+|[Create notebook](../api/onenote-post-notebooks.md) |[bloco de anotações](notebook.md)| Crie um bloco de anotações postando na coleção notebooks.|
+|[List notebooks](../api/onenote-list-notebooks.md) |Coleção [bloco de anotações](notebook.md)| Obter uma coleção de blocos de anotações.|
 |[Create page](../api/onenote-post-pages.md) |[onenotePage](onenotepage.md) | Crie uma página postando na coleção pages.|
 |[List pages](../api/onenote-list-pages.md) |coleção [onenotePage](onenotepage.md)| Obter uma coleção de páginas.|
 |[List section groups](../api/onenote-list-sectiongroups.md) |coleção de [seções](sectiongroup.md)| Obter uma coleção de grupos de seção.|
