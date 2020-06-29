@@ -5,16 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 11c0b59f5ee79c18e8920a8979db23fe3769f60c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ed5c33afa6422185a19896c04bffe49301d641f6
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423508"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909580"
 ---
 # <a name="update-educationuser-properties"></a>Atualizar propriedades de educationUser
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,16 +22,18 @@ Atualize as propriedades de um objeto **educationuser**.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | EduRoster.ReadWrite.All                     |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                              |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Application                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH /education/me
 PATCH /education/users/{id}
@@ -39,30 +41,29 @@ PATCH /education/users/{id}
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Cabeçalho        | Valor                     |
-| :------------ | :------------------------ |
-| Autorização | {token} de portador. Obrigatório. |
-| Content-Type  | application/json. Obrigatório.       |
+| Cabeçalho        | Valor                       |
+| :------------ | :-------------------------- |
+| Autorização | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade         | Tipo                                                 | Descrição                                                                                                                                      |
-| :--------------- | :--------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName      | Cadeia de caracteres                                               | Nome de exibição do usuário                                                                                                                             |
-| givenName        | String                                               | Nome                                                                                                                                       |
-| middleName       | String                                               | O nome do meio do usuário                                                                                                                              |
-| surname          | String                                               | Sobrenome do usuário                                                                                                                                  |
-| email             | String                                               | endereço de email                                                                                                                                    |
-| mobilePhone      | Cadeia de caracteres                                               | O número de celular do usuário                                                                                                                            |
-| externalSource   | string                                               | Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.                                                                                           |
-| externalSource   | string                                               | De onde esse usuário foi criado.  Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.                                                        |
-| mailingAddress   | [physicalAddress](../resources/physicaladdress.md)   | Endereço de email do usuário.                                                                                                                            |
-| residenceAddress | [physicalAddress](../resources/physicaladdress.md)   | Endereço em que o usuário reside.                                                                                                                        |
-| primaryRole      | cadeia de caracteres                                               | Função padrão de um usuário.  A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `enum_sentinel`. |
-| student          | [educationStudent](../resources/educationstudent.md) | Se a função principal for aluno, esse bloco conterá dados específicos do aluno.                                                                   |
-| teacher          | [educationTeacher](../resources/educationteacher.md) | Se a função principal for professor, esse bloco conterá dados específicos do professor.                                                                   |
+| Propriedade         | Tipo               | Descrição                                                                                                                                     |
+| :--------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName      | Cadeia de caracteres             | Nome de exibição do usuário                                                                                                                            |
+| givenName        | String             | Nome                                                                                                                                      |
+| middleName       | String             | O nome do meio do usuário                                                                                                                             |
+| surname          | String             | Sobrenome do usuário                                                                                                                                 |
+| email             | String             | endereço de email                                                                                                                                   |
+| mobilePhone      | Cadeia de caracteres             | O número de celular do usuário                                                                                                                           |
+| externalSource   | string             | De onde esse usuário foi criado. Os valores possíveis são: `sis` , `manual` , ou `lms` .                                                               |
+| mailingAddress   | [physicalAddress]  | Endereço de email do usuário. Observação: `type` e `postOfficeBox` não têm suporte para `educationUser` recursos.                                         |
+| residenceAddress | [physicalAddress]  | Endereço em que o usuário reside. Observação: `type` e `postOfficeBox` não têm suporte para `educationUser` recursos.                                     |
+| primaryRole      | cadeia de caracteres             | Função padrão de um usuário. A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `enum_sentinel`. |
+| student          | [educationStudent] | Se a função principal for aluno, esse bloco conterá dados específicos do aluno.                                                                  |
+| teacher          | [educationTeacher](../resources/educationteacher.md) | Se a função principal for professor, esse bloco conterá dados específicos do professor.                                                                  |
 
 ## <a name="response"></a>Resposta
 
@@ -75,10 +76,12 @@ Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um ob
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_educationuser"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/education/users/13020
 Content-type: application/json
@@ -91,15 +94,19 @@ Content-length: 508
   "surname": "Cazares",
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -107,13 +114,14 @@ Content-length: 508
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationUser"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -170,3 +178,6 @@ Content-length: 508
   ]
 }
 -->
+
+[PhysicalAddress]: ../resources/physicaladdress.md
+[educationstudent]: ../resources/educationstudent.md

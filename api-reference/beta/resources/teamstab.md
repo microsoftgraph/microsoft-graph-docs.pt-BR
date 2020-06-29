@@ -5,16 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 74dfe42bc48757ffe8799a033dfebf2df61f913d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c5d73738a24e0ffd21b259c58ce44cbe000c54df
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519845"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909727"
 ---
 # <a name="teamstab-resource-type"></a>tipo de recurso teamsTab
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +41,7 @@ Um teamsTab é uma [guia](../resources/teamstab.md) fixa (anexada) a um [canal](
 |  teamsAppId           |   string             |  Identificador de definição de aplicativo da guia. Este valor não pode ser alterado após a criação de tabulação.     |
 |  sortOrderIndex  |   string                  |  Índice da ordem usada para classificar as guias.     |
 |  webUrl          |   cadeia de caracteres                  |  URL de link profundo da instância de guia. Somente leitura.     |
-|  Configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Contêiner para configurações personalizadas aplicadas a uma guia. A guia é considerada configurada somente quando essa propriedade é definida.     |
+|  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Contêiner para configurações personalizadas aplicadas a uma guia. A guia é considerada configurada somente quando essa propriedade é definida.     |
 
 ## <a name="relationships"></a>Relações
 
@@ -70,7 +70,6 @@ Veja a seguir uma representação JSON do recurso.
   "configuration": "teamsTabConfiguration",
   "name": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -278,7 +278,7 @@ items:
         items:
           - name: Visão Geral
             href: reportroot-concept-overview.md
-          - name: Autorização para relatórios de uso do Office 365
+          - name: Autorização para relatórios de uso do Microsoft 365
             href: reportroot-authorization.md
       - name: Pesquisar (visualização)
         items:
@@ -396,7 +396,7 @@ items:
               - name: Visão Geral
                 href: webhooks.md
               - name: Tutorial
-                href: /graph/tutorials/change-notifications
+                href: /learn/modules/msgraph-changenotifications-trackchanges
               - name: Notificações ausentes do Outlook (versão prévia)
                 href: webhooks-outlook-authz.md
               - name: Notificações com dados de recursos (visualização)

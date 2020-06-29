@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: dca4ee263418c098194cf37ac66bc6659b9d6061
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 22f354ff86e055d40a7112cdc71a63fed5e5e5fb
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895682"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909685"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -34,7 +34,7 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 | [Remover professor](../api/educationclass-delete-teachers.md)              | [educationUser]                                | Remova um **educationUser** da aula por meio da propriedade de navegação de professores.      |
 | [Criar educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | Crie um novo **educationAssignment** postando na coleção assignments.            |
 | [Listar tarefas](../api/educationclass-list-assignments.md)           | coleção [educationAssignment]                | Obtenha uma coleção de objetos **educationAssignment** .                                         |
-| [Obter grupo](../api/educationclass-get-group.md)                         | [group]                                        | Obtenha o **grupo** Microsoft 365 que corresponde a esse **educationClass**.                 |
+| [Obter grupo](../api/educationclass-get-group.md)                         | [grupo]                                        | Obtenha o **grupo** Microsoft 365 que corresponde a esse **educationClass**.                 |
 | [Criar educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | Crie um novo **educationCategory** para esta classe.                                        |
 | [Listar categorias](../api/educationclass-list-categories.md)             | coleção [educationCategory]                 | Obtenha uma lista de objetos **educationCategory** pertencentes a essa classe.                      |
 | [Atualizar](../api/educationclass-update.md)                               | [educationClass]                               | Atualize o objeto **educationClass**.                                                         |
@@ -53,8 +53,8 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 | displayName    | Cadeia de caracteres                                | Nome da aula.                                                                      |
 | externalId     | String                                | ID da aula no sistema de sincronização.                                                |
 | externalName   | Cadeia de caracteres                                | Nome da aula no sistema de sincronização.                                                |
-| externalSource | cadeia de caracteres                                | Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`. |
-| grade          | string                                | Nível de graduação da turma.                                                               |
+| externalSource | String                                | Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `lms`. |
+| grade          | Cadeia de caracteres                                | Nível de graduação da turma.                                                               |
 | mailNickname   | String                                | Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada.                         |
 | term           | [educationTerm]                       | Termo para a classe.                                                                     |
 
@@ -105,7 +105,7 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [ 
+  "suppressions": [
     "Error: Resource educationClass has documented navigation properties, but we thought it was a complex type!",
     "Resource educationClass has documented navigation properties, but we thought it was a complex type!"
   ]
@@ -120,4 +120,4 @@ Veja a seguir uma representação JSON do recurso.
 [educationschool]: educationschool.md
 [educationterm]: educationterm.md
 [identityset]: identityset.md
-[group]: group.md
+[grupo]: group.md

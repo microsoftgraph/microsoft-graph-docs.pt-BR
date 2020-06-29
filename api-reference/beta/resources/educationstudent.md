@@ -5,30 +5,34 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9b8f2de9f3b40a72aab7f9273b9b4fc30594059b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e64899cf56140246373c36428518ebd28bb136c7
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500762"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909720"
 ---
 # <a name="educationstudent-resource-type"></a>Tipo de recurso educationStudent
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Informações adicionais incluídas a um [educationUser](educationuser.md) que está presente quando a primaryRole de um usuário é `student`.
 
+> [!IMPORTANT]
+> Ao usar escopos de permissão delegada, o Graph retornará apenas as `externalId` Propriedades. Todas as outras propriedades exigem escopos de aplicativo.
+
 ## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|birthDate|Data| Data de nascimento do aluno.|
-|externalId|String| ID do aluno no sistema de origem.|
-|gender|educationGender| Os valores possíveis são: `female`, `male`, `other`.|
-|grade|String|Nível de classificação atual do aluno.|
-|graduationYear|String| Ano que o aluno está graduando na escola.|
-|studentNumber|Cadeia de caracteres| Número do aluno.|
+
+| Propriedade       | Tipo            | Descrição                                     |
+| :------------- | :-------------- | :---------------------------------------------- |
+| birthDate      | Data            | Data de nascimento do aluno.                      |
+| externalId     | String          | ID do aluno no sistema de origem.         |
+| gender         | educationGender | Os valores possíveis são: `female`, `male`, `other`. |
+| grade          | String          | Nível de classificação atual do aluno.             |
+| graduationYear | String          | Ano que o aluno está graduando na escola. |
+| studentNumber  | Cadeia de caracteres          | Número do aluno.                                 |
 
 ## <a name="json-representation"></a>Representação JSON
 

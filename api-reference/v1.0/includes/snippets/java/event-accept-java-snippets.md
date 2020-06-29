@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ac25ea6f4c643194270980784a2f8ff7ac41f1e1
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: d64274d51693ae9cf0e4ad83994f661c83058267
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402855"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44900265"
 ---
 ```java
 
@@ -16,7 +16,7 @@ String comment = "comment-value";
 boolean sendResponse = true;
 
 graphClient.me().events("{id}")
-    .accept(sendResponse,comment)
+    .accept(comment,sendResponse)
     .buildRequest()
     .post();
 

@@ -5,23 +5,23 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: abe72b4221e30a0616b22ddcfe56859ebce75ab8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e60c09210d649b57cef19099de25561eaa07c2a
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423879"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909581"
 ---
 # <a name="get-user"></a>Obter usuário
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere o **usuário** do diretório simples que corresponde a esse **educationUser**.
 
->[!Note]
->Se o token delegado for usado, os membros só poderão ver informações sobre suas próprias escolas. Nesse caso, use o recurso `...beta/education/me/schools`.
+> [!NOTE]
+> Se o token delegado for usado, os membros só poderão ver informações sobre sua própria conta. Nesse caso, use o recurso `beta/education/me/users`.
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,12 +29,14 @@ Uma combinação de permissões é obrigatória para chamar essa API. Para saber
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                               |
 | :------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                            |
-| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All                                       |
+| Delegada (conta corporativa ou de estudante)     | Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                                            |
+| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All                                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/me/user
 GET /education/users/{id}/user
@@ -44,7 +46,7 @@ GET /education/users/{id}/user
 
 | Cabeçalho        | Valor                     |
 | :------------ | :------------------------ |
-| Autorização | {token} de portador. Obrigatório. |
+| Autorização | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -61,22 +63,28 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e um ob
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_educationuser"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/user
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -86,8 +94,7 @@ GET https://graph.microsoft.com/beta/education/me/user
 
 Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
-
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -95,6 +102,7 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.user",
   "isCollection": false
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

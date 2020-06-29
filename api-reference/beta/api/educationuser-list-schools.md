@@ -5,36 +5,38 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7da5972914685c5342870a9e4993bb17dc988eec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b010d56f52080e54383e1b89553060780da63cc0
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423606"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909601"
 ---
 # <a name="list-schools"></a>Listar escolas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de escolas de um usuário.
 
->[!Note]
->Se o token delegado for usado, os membros só poderão ver informações sobre suas próprias escolas. Nesse caso, use o recurso `...beta/education/me/schools`.
-
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+
+> [!NOTE]
+> Quando as permissões delegadas são usadas, somente os recursos do educationSchool de que o usuário de autenticação é um membro será retornado.
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/me/schools
 GET /education/users/{id}/schools
@@ -48,7 +50,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 
 | Cabeçalho        | Valor                     |
 | :------------ | :------------------------ |
-| Autorização | {token} de portador. Obrigatório. |
+| Autorização | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -65,22 +67,28 @@ Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma c
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_schools"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/schools
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -90,7 +98,7 @@ GET https://graph.microsoft.com/beta/education/me/schools
 
 Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -98,6 +106,7 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.educationSchool",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b34ff6bad00194ce6d1967e503e280d0e0af2478
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e436f7061043a1cab5a3d92c3401f4949a08782
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425545"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909524"
 ---
 # <a name="educationschool-delta"></a>educationSchool: Delta
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,13 +22,13 @@ Obter escolas recém-criadas ou atualizadas sem ter que realizar uma leitura com
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                              |
 | :------------------------------------- | :----------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | EduRoster. ReadBasic, EduRoster. Read ou EduRoster. ReadWrite              |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                           |
-| Aplicativo                            | EduRoster. ReadBasic. All, EduRoster. Read. All ou EduRoster. WriteWrite. All |
+| Delegada (conta corporativa ou de estudante)     | EduRoster. ReadBasic, EduRoster. Read ou EduRoster. ReadWrite              |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                           |
+| Application                            | EduRoster. ReadBasic. All, EduRoster. Read. All ou EduRoster. WriteWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +53,10 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto da coleção [educationSchool](../resources/educationschool.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto da coleção [educationSchool](../resources/educationschool.md) no corpo da resposta.
+
+> [!IMPORTANT]
+> educationSchool deltas não incluem escolas excluídas.
 
 ## <a name="example"></a>Exemplo
 
@@ -74,9 +77,9 @@ POST https://graph.microsoft.com/v1.0/education/schools/{id}/delta
 
 ##### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. 
+Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

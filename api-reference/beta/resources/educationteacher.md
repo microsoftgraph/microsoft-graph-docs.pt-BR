@@ -5,27 +5,30 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ad01c29313198b0feab2b4258c9eaafcb9a4f727
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4cd8b11d5f398177ec301e6cb7d834268e97c005
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500013"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909700"
 ---
 # <a name="educationteacher-resource-type"></a>Tipo de recurso educationTeacher
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Informações adicionais incluídas a um [educationUser](educationuser.md) que está presente quando a primaryRole de um usuário é `teacher`.
 
+> [!IMPORTANT]
+> Ao usar escopos de permissão delegada, o Graph retornará apenas as `externalId` Propriedades. Todas as outras propriedades exigem escopos de aplicativo.
 
 ## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|externalId|String| ID do professor no sistema de origem.|
-|teacherNumber|Cadeia de caracteres|Número do professor.|
+
+| Propriedade      | Tipo   | Descrição                                  |
+| :------------ | :----- | :------------------------------------------- |
+| externalId    | String | ID do professor no sistema de origem externo. |
+| teacherNumber | Cadeia de caracteres | Número do professor.                              |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -44,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "externalId": "String",
   "teacherNumber": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

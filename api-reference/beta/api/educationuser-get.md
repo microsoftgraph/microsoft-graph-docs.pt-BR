@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e2b63cd90478eb199d30137a171846fa2c832e2e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66407bfab66888af413c1e830702991294456c4c
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423858"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909566"
 ---
 # <a name="get-educationuser"></a>Obter educationUser
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,20 +22,24 @@ Recupere as propriedades e as relações de um usuário.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+> [!NOTE]
+> Se o token delegado for usado, os membros só poderão ver informações sobre sua própria conta. Nesse caso, use o recurso `beta/education/me/users`.
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
->[!IMPORTANT]
->Ao usar escopos de permissão delegada, o Graph retornará somente um conjunto limitado de `id`propriedades `primaryRole`: `accountEnabled`, `displayName` `givenName` `surname`,,, `userPrincipalName`, `userType`, `onPremisesInfo`,,. Se seu aplicativo exigir propriedades adicionais, você deve usar escopos de permissão de aplicativo.
+> [!IMPORTANT]
+> Ao usar escopos de permissão delegada, o Graph só retornará um conjunto limitado de propriedades:,,,,,,, `id` `primaryRole` ,, `accountEnabled` `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` , `teacher/externalId` . Se seu aplicativo exigir propriedades adicionais, você deve usar escopos de permissão de aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/me
 GET /education/users/{id}
@@ -49,7 +53,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 
 | Cabeçalho        | Valor                     |
 | :------------ | :------------------------ |
-| Autorização | {token} de portador. Obrigatório. |
+| Autorização | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -71,19 +75,23 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "get_educationuser"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/users/13012
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -91,15 +99,16 @@ GET https://graph.microsoft.com/beta/education/users/13012
 
 ##### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. 
+Este é um exemplo de resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationUser"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
