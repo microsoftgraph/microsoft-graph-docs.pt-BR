@@ -5,31 +5,34 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ad01c29313198b0feab2b4258c9eaafcb9a4f727
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4cd8b11d5f398177ec301e6cb7d834268e97c005
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500013"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909700"
 ---
-# <a name="educationteacher-resource-type"></a><span data-ttu-id="f5f26-103">Tipo de recurso educationTeacher</span><span class="sxs-lookup"><span data-stu-id="f5f26-103">educationTeacher resource type</span></span>
+# <a name="educationteacher-resource-type"></a><span data-ttu-id="7ff80-103">Tipo de recurso educationTeacher</span><span class="sxs-lookup"><span data-stu-id="7ff80-103">educationTeacher resource type</span></span>
 
-<span data-ttu-id="f5f26-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f5f26-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7ff80-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7ff80-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f5f26-105">Informações adicionais incluídas a um [educationUser](educationuser.md) que está presente quando a primaryRole de um usuário é `teacher`.</span><span class="sxs-lookup"><span data-stu-id="f5f26-105">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
+<span data-ttu-id="7ff80-105">Informações adicionais incluídas a um [educationUser](educationuser.md) que está presente quando a primaryRole de um usuário é `teacher`.</span><span class="sxs-lookup"><span data-stu-id="7ff80-105">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
 
+> [!IMPORTANT]
+> <span data-ttu-id="7ff80-106">Ao usar escopos de permissão delegada, o Graph retornará apenas as `externalId` Propriedades.</span><span class="sxs-lookup"><span data-stu-id="7ff80-106">When using Delegated permission scopes, Graph will only return the `externalId` properties.</span></span> <span data-ttu-id="7ff80-107">Todas as outras propriedades exigem escopos de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="7ff80-107">All other properties require Application scopes.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f5f26-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f5f26-106">Properties</span></span>
-| <span data-ttu-id="f5f26-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f5f26-107">Property</span></span>     | <span data-ttu-id="f5f26-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="f5f26-108">Type</span></span>   |<span data-ttu-id="f5f26-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="f5f26-109">Description</span></span>|
-|:---------------|:--------|:----------|
-|<span data-ttu-id="f5f26-110">externalId</span><span class="sxs-lookup"><span data-stu-id="f5f26-110">externalId</span></span>|<span data-ttu-id="f5f26-111">String</span><span class="sxs-lookup"><span data-stu-id="f5f26-111">String</span></span>| <span data-ttu-id="f5f26-112">ID do professor no sistema de origem.</span><span class="sxs-lookup"><span data-stu-id="f5f26-112">ID of the teacher in the source system.</span></span>|
-|<span data-ttu-id="f5f26-113">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="f5f26-113">teacherNumber</span></span>|<span data-ttu-id="f5f26-114">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="f5f26-114">String</span></span>|<span data-ttu-id="f5f26-115">Número do professor.</span><span class="sxs-lookup"><span data-stu-id="f5f26-115">Teacher number.</span></span>|
+## <a name="properties"></a><span data-ttu-id="7ff80-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7ff80-108">Properties</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="f5f26-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f5f26-116">JSON representation</span></span>
+| <span data-ttu-id="7ff80-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7ff80-109">Property</span></span>      | <span data-ttu-id="7ff80-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="7ff80-110">Type</span></span>   | <span data-ttu-id="7ff80-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="7ff80-111">Description</span></span>                                  |
+| :------------ | :----- | :------------------------------------------- |
+| <span data-ttu-id="7ff80-112">externalId</span><span class="sxs-lookup"><span data-stu-id="7ff80-112">externalId</span></span>    | <span data-ttu-id="7ff80-113">String</span><span class="sxs-lookup"><span data-stu-id="7ff80-113">String</span></span> | <span data-ttu-id="7ff80-114">ID do professor no sistema de origem externo.</span><span class="sxs-lookup"><span data-stu-id="7ff80-114">Id of the Teacher in external source system.</span></span> |
+| <span data-ttu-id="7ff80-115">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="7ff80-115">teacherNumber</span></span> | <span data-ttu-id="7ff80-116">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="7ff80-116">String</span></span> | <span data-ttu-id="7ff80-117">Número do professor.</span><span class="sxs-lookup"><span data-stu-id="7ff80-117">Teacher number.</span></span>                              |
 
-<span data-ttu-id="f5f26-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f5f26-117">The following is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7ff80-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7ff80-118">JSON representation</span></span>
+
+<span data-ttu-id="7ff80-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7ff80-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -44,7 +47,6 @@ ms.locfileid: "42500013"
   "externalId": "String",
   "teacherNumber": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
