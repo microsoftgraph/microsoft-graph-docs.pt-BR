@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 408fb43dbad69cbb699db899522cf938e84ec904
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 3d96334c4a7f3fd6974fdf08c2eb86809e89326d
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909545"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006825"
 ---
 # <a name="educationuser-delta"></a>educationUser: Delta
 
@@ -24,20 +24,18 @@ Obter [educationUser](../resources/educationuser.md) recentemente criados ou atu
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)     |
-| :------------------------------------- | :---------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | Sem suporte.                                  |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                  |
-| Application                            | EduRoster. Read. All ou EduRoster. WriteWrite. All |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                              |
+| :------------------------------------- | :----------------------------------------------------------------------- |
+| Delegada (conta corporativa ou de estudante)     | EduRoster. ReadBasic, EduRoster. Read ou EduRoster. ReadWrite              |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                           |
+| Application                            | EduRoster. ReadBasic. All, EduRoster. Read. All ou EduRoster. WriteWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /education/me/delta
-POST /education/users/{id}/delta
-POST /education/schools/{id}/users/{id}/delta
+GET /education/users/delta
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -61,7 +59,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 
 O exemplo a seguir mostra como chamar essa API.
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -71,10 +69,10 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/education/me/delta
+GET https://graph.microsoft.com/beta/education/users/delta
 ```
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
@@ -95,35 +93,37 @@ Content-length: 1039
 {
   "value": [
     {
-      "primaryRole": "primaryRole-value",
-      "middleName": "middleName-value",
-      "externalSource": "externalSource-value",
-      "residenceAddress": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
+      "accountEnabled": true,
+      "assignedLicenses": [{ "@odata.type": "microsoft.graph.assignedLicense" }],
+      "assignedPlans": [{ "@odata.type": "microsoft.graph.assignedPlan" }],
+      "businessPhones": ["String"],
+      "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+      "department": "String",
+      "displayName": "String",
+      "externalSource": "string",
+      "givenName": "String",
+      "id": "String (identifier)",
+      "mail": "String",
+      "mailNickname": "String",
+      "mailingAddress": { "@odata.type": "microsoft.graph.physicalAddress" },
+      "middleName": "String",
+      "mobilePhone": "String",
+      "officeLocation": "String",
+      "onPremisesInfo": {
+        "@odata.type": "microsoft.graph.educationOnPremisesInfo"
       },
-      "mailingAddress": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "student": {
-        "graduationYear": "graduationYear-value",
-        "grade": "grade-value",
-        "birthDate": "datetime-value",
-        "gender": "gender-value",
-        "studentNumber": "studentNumber-value",
-        "externalId": "externalId-value"
-      }
+      "passwordPolicies": "String",
+      "passwordProfile": { "@odata.type": "microsoft.graph.passwordProfile" },
+      "preferredLanguage": "String",
+      "primaryRole": "string",
+      "provisionedPlans": [{ "@odata.type": "microsoft.graph.provisionedPlan" }],
+      "residenceAddress": { "@odata.type": "microsoft.graph.physicalAddress" },
+      "student": { "@odata.type": "microsoft.graph.educationStudent" },
+      "surname": "String",
+      "teacher": { "@odata.type": "microsoft.graph.educationTeacher" },
+      "usageLocation": "String",
+      "userPrincipalName": "String",
+      "userType": "String"
     }
   ]
 }

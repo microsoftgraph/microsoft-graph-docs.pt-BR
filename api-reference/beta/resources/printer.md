@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: ce7bf6140b831c3e911ebb744106840ae8e027a8
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 255be26ed669e91248df1b007dc56b937ce2af98
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217077"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006881"
 ---
 # <a name="printer-resource-type"></a>tipo de recurso de impressora
 
@@ -20,11 +20,12 @@ Namespace: microsoft.graph
 
 Representa um dispositivo de impressora física que foi registrado com o serviço de impressão universal. Os recursos de impressora podem ser usados para gerenciar trabalhos de impressão, configurações da impressora, metadados da impressora e status do registro.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Obter impressora](../api/printer-get.md) | [impressora](printer.md) | Leia as propriedades e as relações do objeto Printer. |
+| [Criar](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Criar (registrar) uma nova impressora com impressão universal. |
+| [Get](../api/printer-get.md) | [impressora](printer.md) | Leia as propriedades e as relações do objeto Printer. |
 | [Update](../api/printer-update.md) | [impressora](printer.md) | Atualize o objeto Printer. |
 | [Delete](../api/printer-delete.md) | Nenhum | Cancelar o registro do printerfrom físico o serviço de impressão universal. |
 | [getCapabilities](../api/printer-getcapabilities.md) | [printerCapabilities](printercapabilities.md) | Obtenha uma lista de recursos para a impressora. |
@@ -49,11 +50,11 @@ Representa um dispositivo de impressora física que foi registrado com o serviç
 |registeredDateTime|DateTimeOffset|O DateTimeOffset quando a impressora foi registrada. Somente leitura.|
 |status|[printerStatus](printerstatus.md)|O status de processamento da impressora, incluindo erros. Somente leitura.|
 |isShared|Booliano|True se a impressora é compartilhada; caso contrário, false. Somente leitura.|
-|isAcceptingJobs|Boolean|Se a impressora está atualmente aceitando novos trabalhos de impressão.|
+|isAcceptingJobs|Booliano|Se a impressora está atualmente aceitando novos trabalhos de impressão.|
 |location|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora.|
 |padrões|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão da impressora.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |serviços|coleção [printJob](printjob.md)| A lista de trabalhos que estão na fila para impressão pela impressora.|

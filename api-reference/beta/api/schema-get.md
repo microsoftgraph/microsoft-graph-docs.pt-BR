@@ -5,16 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: de4e793a224466738773f959892a31b002737f92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b946638c4d433e8cae6c6459ac434041c17f7bb
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453762"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990294"
 ---
 # <a name="get-schema"></a>Obter esquema
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,13 +24,13 @@ Recuperar as propriedades de um [esquema](../resources/schema.md) para um [exter
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ExternalItem.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,7 +48,7 @@ Este método oferece suporte a alguns dos parâmetros de consulta OData para aju
 
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
-| Autorização | {token} de portador. Obrigatório. |
+| Autorização | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto de [esquema](../resources/schema.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto de [esquema](../resources/schema.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -108,16 +108,21 @@ Content-type: application/json
   "baseType": "microsoft.graph.externalItem",
   "properties": [
     {
-      "name": "title",
+      "name": "ticketTitle",
       "type": "String",
       "isSearchable": true,
-      "isRetrievable": true
+      "isRetrievable": true,
+      "labels": [
+        "title"
+      ]
     },
     {
       "name": "priority",
       "type": "String",
       "isQueryable": true,
-      "isRetrievable": true
+      "isRetrievable": true,
+      "isRefinable": true,
+      "isSearchable": false
     },
     {
       "name": "assignee",

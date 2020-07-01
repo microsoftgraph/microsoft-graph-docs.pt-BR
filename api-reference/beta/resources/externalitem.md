@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e1497528e759a2fb5556aed3e9b936b1c9797ee0
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 3b82f67f12d263e56e3375ed87a9d6dff71c2204
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805656"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44989818"
 ---
 # <a name="externalitem-resource-type"></a>tipo de recurso externalItem
 
@@ -22,11 +22,12 @@ Um item indexado por meio de uma [conexão](externalconnection.md)de pesquisa da
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                        | Tipo de retorno                     | Descrição |
 |:--------------------------------------------------------------|:--------------------------------|:--|
 | [Criar externalItem](../api/externalconnection-put-items.md) | [externalItem](externalitem.md) | Criar um externalItem. |
+| [Obter externalItem](../api/externalitem-get.md)                | [externalItem](externalitem.md) | Obter um externalItem.    |
 | [Atualizar externalItem](../api/externalitem-update.md)          | [externalItem](externalitem.md) | Atualizar um externalItem. |
 | [Excluir externalItem](../api/externalitem-delete.md)          | Nenhum                            | Excluir um externalItem. |
 

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4329429d0927b2d97fb606891870d850b4807b93
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 7df3bf4670ee231a12e06427a9d2ca424ec3aef8
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107406"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006916"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -18,16 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [usuário](../resources/user.md). O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.
+Create a new [user](../resources/user.md).
+The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
 
-Essa operação retorna, por padrão, apenas um subconjunto das propriedades de cada usuário. Essas propriedades padrão estão listadas na seção [Propriedades](../resources/user.md#properties). Para obter propriedades não retornadas por padrão, execute uma [operação GET](user-get.md) e especifique as propriedades em uma opção de consulta do `$select` OData.
+Essa operação retorna, por padrão, apenas um subconjunto das propriedades de cada usuário. Essas propriedades padrão estão listadas na seção [Propriedades](../resources/user.md#properties). Para obter propriedades não retornadas por padrão, execute uma [operação GET](user-get.md) e especifique as propriedades em uma opção de consulta `$select` do OData.
 
 >[!NOTE]
 >Para criar usuários externos, use a [API de convite](invitation-post.md).
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,7 +44,7 @@ POST /users
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+| Autorização  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -55,7 +56,7 @@ A tabela a seguir lista as propriedades que são necessárias ao criar um usuár
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
 |accountEnabled |Booliano |True se a conta estiver habilitada; caso contrário, false.|
-|displayName |cadeia de caracteres |Nome de exibição no catálogo de endereços do usuário.|
+|displayName |string |Nome de exibição no catálogo de endereços do usuário.|
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |O perfil de senha do usuário.|
@@ -155,8 +156,6 @@ Crie um novo usuário, com uma identidade de conta local, com um nome de logon, 
 
 #### <a name="request"></a>Solicitação
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {  
   "blockType": "request",   
   "name": "create_user_from_users_identities"   
@@ -186,31 +185,18 @@ Content-type: application/json
     }
   ],
   "passwordProfile" : {
-    "password": "password-value"
+    "password": "password-value",
+    "forceChangePasswordNextSignIn": false
   },
   "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-user-from-users-identities-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-user-from-users-identities-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-identities-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta. 
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

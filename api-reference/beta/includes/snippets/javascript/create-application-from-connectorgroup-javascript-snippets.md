@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 071ac014735582c03874d46fc26428af6a37f9da
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 9e13c2dd81eb87208e27d8303f75ac40da1025de
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681263"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006853"
 ---
 ```javascript
 
@@ -15,12 +15,15 @@ const options = {
 
 const client = Client.init(options);
 
-const application = {
-  @odata.id: "https://graph.microsoft.com/beta/applications/{id}"
+const connectorGroup = Content-type: application/json
+Content-length: 30
+
+{
+  @odata.id: "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
 };
 
-let res = await client.api('/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications')
+let res = await client.api('/applications/{id}/connectorGroup/$ref')
     .version('beta')
-    .post(application);
+    .put(connectorGroup);
 
 ```

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f0b607527ed6ef3347404010a27608f6e8df8dd6
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 7f66bb02a1cb38757e18c31004c67dea7bea7b37
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991751"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990287"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>Listar UnifiedRoleAssignmentMultiple
 
@@ -22,13 +22,13 @@ Obtenha uma lista de objetos [unifiedRoleAssignmentMultiple](../resources/unifie
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante) | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,14 +39,13 @@ GET /roleManagement/deviceManagement/roleAssignments
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-
-Essa operação requer o `$filter` parâmetro de consulta. Você pode filtrar as `roleDefinitionId` Propriedades ou `principalId` . A `roleDefinitionId` propriedade pode ser uma ID de objeto role ou uma ID de objeto de modelo de função. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Você pode filtrar as `roleDefinitionId` Propriedades ou `principalId` . A `roleDefinitionId` propriedade pode ser uma ID de objeto role ou uma ID de objeto de modelo de função. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome | Descrição |
 |:---- |:----------- |
-| Autorização | {token} de portador. Obrigatório. |
+| Autorização | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -54,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -74,7 +73,7 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 ### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

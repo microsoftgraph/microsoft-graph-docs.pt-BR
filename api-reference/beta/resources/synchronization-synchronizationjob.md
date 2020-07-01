@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 18c8076a55643289e8ef33fa4316cd224abfe02e
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 890da6054328da8619ede99de925b941bd41e20a
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217539"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006951"
 ---
 # <a name="synchronizationjob-resource-type"></a>tipo de recurso synchronizationJob
 
@@ -24,17 +24,17 @@ Realiza a sincronização periodicamente em segundo plano, pesquisando alteraç�
 
 | Método        | Tipo de retorno               | Descrição                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[List](../api/synchronization-synchronizationjob-list.md)             |coleção [synchronizationJob](synchronization-synchronizationjob.md)  |Listar trabalhos existentes para uma determinada instância de aplicativo (entidade de serviço).|
+|[Listar](../api/synchronization-synchronizationjob-list.md)             |coleção [synchronizationJob](synchronization-synchronizationjob.md)  |Listar trabalhos existentes para uma determinada instância de aplicativo (entidade de serviço).|
 |[Obter synchronizationJob](../api/synchronization-synchronizationjob-get.md) | [synchronizationJob](synchronization-synchronizationjob.md) |Ler propriedades e relações de um objeto synchronizationJob.|
-|[Create](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |Criar novo trabalho para um determinado aplicativo.|
-|[Start](../api/synchronization-synchronizationjob-start.md)          |None   |Inicie a sincronização. Se o trabalho estiver em um estado pausado, ele continuará a partir do ponto em que o trabalho foi pausado. Se o trabalho estiver em quarentena, o status de quarentena será limpo.|
-|[Restart](../api/synchronization-synchronizationjob-restart.md)      |None   |Forçar o início do trabalho e processar novamente todos os objetos no diretório.|
-|[Pause](../api/synchronization-synchronizationjob-pause.md)          |None   |Interromper temporariamente a sincronização. Todo o progresso, incluindo o estado do trabalho, é mantido e o trabalho continuará de onde parou quando uma chamada [inicial](../api/synchronization-synchronizationjob-start.md) é feita.|
-|[Delete](../api/synchronization-synchronizationjob-delete.md)        |None   |Interrompa a sincronização e exclua permanentemente todo o estado associado ao trabalho.|
+|[Criar](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |Criar novo trabalho para um determinado aplicativo.|
+|[Start](../api/synchronization-synchronizationjob-start.md)          |Nenhum   |Inicie a sincronização. Se o trabalho estiver em um estado pausado, ele continuará a partir do ponto em que o trabalho foi pausado. Se o trabalho estiver em quarentena, o status de quarentena será limpo.|
+|[Restart](../api/synchronization-synchronizationjob-restart.md)      |Nenhum   |Forçar o início do trabalho e processar novamente todos os objetos no diretório.|
+|[Pause](../api/synchronization-synchronizationjob-pause.md)          |Nenhum   |Interromper temporariamente a sincronização. Todo o progresso, incluindo o estado do trabalho, é mantido e o trabalho continuará de onde parou quando uma chamada [inicial](../api/synchronization-synchronizationjob-start.md) é feita.|
+|[Delete](../api/synchronization-synchronizationjob-delete.md)        |Nenhum   |Interrompa a sincronização e exclua permanentemente todo o estado associado ao trabalho.|
 |[Obter synchronizationSchema](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |Recupere o esquema de sincronização efetiva do trabalho.|
-|[Atualizar synchronizationSchema](../api/synchronization-synchronizationschema-update.md)    |None   |Atualize o esquema de sincronização do trabalho. |
-|[Validar credenciais](../api/synchronization-synchronizationjob-validatecredentials.md)|None|Teste as credenciais fornecidas em relação ao diretório de destino.|
-
+|[Atualizar synchronizationSchema](../api/synchronization-synchronizationschema-update.md)    |Nenhum   |Atualize o esquema de sincronização do trabalho. |
+|[Validar credenciais](../api/synchronization-synchronizationjob-validatecredentials.md)|Nenhum|Teste as credenciais fornecidas em relação ao diretório de destino.|
+|[provisionOnDemand](../api/synchronization-synchronizationjob-provision-on-demand.md)|coleção [synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)|Representa os objetos que serão provisionados e as regras de sincronização executadas. O recurso é usado principalmente para provisionamento sob demanda. |
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo      | Descrição    |
@@ -43,7 +43,7 @@ Realiza a sincronização periodicamente em segundo plano, pesquisando alteraç�
 |Cronograma       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Agendamento usado para executar o trabalho. Somente leitura.|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |Status do trabalho, que inclui quando o trabalho foi executado pela última vez, o estado atual do trabalho e os erros.|
 |synchronizationJobSettings   |[keyValuePair](keyvaluepair.md)    |Configurações associadas ao trabalho. Algumas configurações são herdadas do modelo.|
-|templateId     |Cadeia de Caracteres    |Identificador do [modelo de sincronização](synchronization-synchronizationtemplate.md) em que este trabalho se baseia.|
+|templateId     |String    |Identificador do [modelo de sincronização](synchronization-synchronizationtemplate.md) em que este trabalho se baseia.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

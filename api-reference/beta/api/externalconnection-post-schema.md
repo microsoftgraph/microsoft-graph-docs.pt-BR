@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: af5756277ddcf41a04ebed795ceeb4f1f0e3d08e
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: afb23aece15371a408c79f2fea3d47861aa5c427
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892550"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44989996"
 ---
 # <a name="create-schema"></a>Criar esquema
 
@@ -24,13 +24,13 @@ Crie o esquema para uma [conexão](../resources/externalconnection.md)do Microso
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ExternalItem.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,8 +44,8 @@ POST /external/connections/{id}/schema
 
 | Nome                  | Descrição                                                        |
 |:----------------------|:-------------------------------------------------------------------|
-| Autorização         | {token} de portador. Obrigatório.                                          |
-| Content-Type          | application/json. Obrigatório.                                        |
+| Autorização         | Bearer {token}. Required.                                          |
+| Content-Type          | application/json. Required.                                        |
 | Prefiro: responder-Async | Use isso para fazer com que a solicitação seja executada de forma assíncrona. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -86,16 +86,21 @@ Prefer: respond-async
   "baseType": "microsoft.graph.externalItem",
   "properties": [
     {
-      "name": "title",
+      "name": "ticketTitle",
       "type": "String",
       "isSearchable": "true",
-      "isRetrievable": "true"
+      "isRetrievable": "true",
+      "labels": [
+        "title"
+      ]
     },
     {
       "name": "priority",
       "type": "String",
       "isQueryable": "true",
-      "isRetrievable": "true"
+      "isRetrievable": "true",
+      "isRefinable": "true",
+      "isSearchable": "false"
     },
     {
       "name": "assignee",

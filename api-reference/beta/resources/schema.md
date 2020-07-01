@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: be9001d1fab756be09e88768f0b34540c14aafcf
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: c7780cd7c31da98a618053febba1b75c5e318931
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892532"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990259"
 ---
 # <a name="schema-resource-type"></a>tipo de recurso de esquema
 
@@ -22,7 +22,7 @@ Descreve o tipo de conteúdo e como indexar cada propriedade em itens em uma [co
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                    | Tipo de retorno                   | Descrição |
 |:----------------------------------------------------------|:------------------------------|:--|
@@ -33,8 +33,8 @@ Descreve o tipo de conteúdo e como indexar cada propriedade em itens em uma [co
 
 | Propriedade   | Tipo                               | Descrição                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | String                             | Tem que ser definida como `microsoft.graph.externalItem`. Obrigatório. |
-| properties | coleção [Property](property.md) | As propriedades definidas para os itens na conexão. O número mínimo de propriedades é um, o máximo é 64. |
+| baseType   | String                             | Deve ser definida como `microsoft.graph.externalItem`. Obrigatório. |
+| properties | coleção [Property](property.md) | As propriedades definidas para os itens na conexão. O número mínimo de propriedades é um, o máximo é 128. |
 
 ## <a name="relationships"></a>Relações
 

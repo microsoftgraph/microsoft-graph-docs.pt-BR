@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5e436f7061043a1cab5a3d92c3401f4949a08782
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 160c7cf9e897f485e9c4e33c3fe579e78e277e79
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909524"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006839"
 ---
 # <a name="educationschool-delta"></a>educationSchool: Delta
 
@@ -35,10 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /education/schools/{id}/delta
-POST /education/me/schools/{id}/delta
-POST /education/users/{id}/schools/{id}/delta
-
+GET /education/schools/delta
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -62,7 +59,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 
 O exemplo a seguir mostra como chamar essa API.
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -72,10 +69,10 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/education/schools/{id}/delta
+GET https://graph.microsoft.com/beta/education/schools/delta
 ```
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
@@ -96,12 +93,20 @@ Content-length: 313
 {
   "value": [
     {
-      "principalEmail": "principalEmail-value",
-      "principalName": "principalName-value",
-      "externalPrincipalId": "externalPrincipalId-value",
-      "lowestGrade": "lowestGrade-value",
-      "highestGrade": "highestGrade-value",
-      "schoolNumber": "schoolNumber-value"
+      "address": { "@odata.type": "microsoft.graph.physicalAddress" },
+      "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+      "description": "String",
+      "displayName": "String",
+      "externalId": "String",
+      "externalPrincipalId": "String",
+      "externalSource": "string",
+      "highestGrade": "String",
+      "id": "String (identifier)",
+      "lowestGrade": "String",
+      "phone": "String",
+      "principalEmail": "String",
+      "principalName": "String",
+      "schoolNumber": "String"
     }
   ]
 }

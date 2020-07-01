@@ -5,18 +5,16 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 5ea43eb726f674836d7958e934e3bf7c4599cf51
+ms.openlocfilehash: d45c3973e5b044daf3121a740a60b29e3a181348
 ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989813"
+ms.locfileid: "45004763"
 ---
 # <a name="changenotification-resource-type"></a>tipo de recurso changeNotification
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa a notificação enviada ao Assinante.
 
@@ -31,9 +29,7 @@ Nenhum.
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
 | changeType | string | Indica o tipo de alteração que irá gerar a notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Obrigatório. |
-| clientState | string | O valor da propriedade **ClientState** enviado especificado na solicitação de assinatura (se houver). O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço, comparando os valores da propriedade **ClientState** . O valor da propriedade **ClientState** enviada com a assinatura é comparado com o valor da propriedade **ClientState** recebida com cada notificação de alteração. Opcional. |
-| encryptedContent | [Microsoft. Graph. changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | Prever Conteúdo criptografado anexado à notificação de alteração. Só é fornecido se **encryptionCertificate** e **includeResourceData** foram definidos durante a solicitação de assinatura e se o recurso oferecer suporte a ele. Opcional |
-| lifecycleEvent | string | O tipo de notificação de ciclo de vida se a notificação atual é uma notificação de ciclo de vida. Opcional. Os valores com suporte são `missed` , `removed` , `reauthorizationRequired` . |
+| clientState | string | O valor da propriedade **ClientState** enviada na solicitação de assinatura (se houver). O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço, comparando os valores da propriedade **ClientState** . O valor da propriedade **ClientState** enviada com a assinatura é comparado com o valor da propriedade **ClientState** recebida com cada notificação de alteração. Opcional. |
 | id | cadeia de caracteres | ID exclusiva da notificação. Opcional. |
 | recurso | string | O URI do recurso que emitiu a notificação de alteração relativa a `https://graph.microsoft.com` . Obrigatório. |
 | resourceData | [Microsoft. Graph. resourceData](resourcedata.md) | O conteúdo dessa propriedade depende do tipo de recurso que está sendo assinado. Obrigatório. |
