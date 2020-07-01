@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8f533e8106d2772e8450b798a1b18ee4fe252c4a
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 55b93d4938121801bb2a2173288c2c95f9de1307
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636212"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45008665"
 ---
 ```javascript
 
@@ -25,7 +25,7 @@ const schemaExtension = {
       name:"additional-name-value",
       type:"additional-type-value"
     }
-  ],
+  ]
 };
 
 let res = await client.api('/schemaExtensions/{id}')
