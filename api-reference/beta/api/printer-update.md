@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d23b016bb383903f35d370c9d4afb623518e5bfd
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: fd44a74bd1a0a5a8c872f49515edce23c27d6907
+ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062088"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024424"
 ---
 # <a name="update-printer"></a>Atualizar impressora
 
@@ -21,15 +21,17 @@ Namespace: microsoft.graph
 Atualiza as propriedades de um objeto [Printer](../resources/printer.md) .
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
+Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão. 
+
+Somente o aplicativo que registrou a impressora tem permissão para atualizar a impressora usando permissões de aplicativo.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Users. Read. All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)| Users. Read. All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|Printer. ReadWrite. All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -39,21 +41,39 @@ PATCH /print/printers/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Autorização | {token} de portador. Obrigatório. |
-| Content-type  | application/json. Obrigatório.|
+| Autorização | Bearer {token}. Required. |
+| Content-type  | `application/json`ao usar permissões delegadas, `application/ipp` ao usar permissões de aplicativo. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores para os campos de [impressora](../resources/printer.md) relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+
+### <a name="delegated-permissions-and-json-payload"></a>Permissões delegadas e carga JSON
+
+Se estiver usando permissões delegadas, no corpo da solicitação, forneça os valores para os campos de [impressora](../resources/printer.md) relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |location|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional da impressora.|
-|name|String|O nome da impressora.|
+|nome|String|O nome da impressora.|
+
+### <a name="application-permissions-and-ipp-payload"></a>Permissões de aplicativo e carga IPP
+
+Se estiver usando permissões de aplicativo, o corpo da solicitação contém um fluxo binário que representa o grupo de atributos da impressora na [codificação IPP](https://tools.ietf.org/html/rfc8010).
+
+O cliente deve fornecer um conjunto de atributos de impressora com um ou mais valores (incluindo valores fora de banda explicitamente permitidos), conforme definido na [seção RFC8011 4,2](https://tools.ietf.org/html/rfc8011#section-4.2) atributos de modelo de trabalho ("XXX-default", "XXX-supported" e "XXX-Ready" Attributes), [seção 4,4](https://tools.ietf.org/html/rfc8011#section-4.4) atributos de descrição da impressora e quaisquer extensões de atributo compatíveis com a impressora. O (s) valor (es) de cada atributo de impressora fornecido substitui o (s) valor (es) do atributo de impressora correspondente no objeto de impressora de destino. Para atributos que podem ter vários valores (1setOf), todos os valores fornecidos pelo cliente substituem todos os valores do atributo de objeto Printer correspondente.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Printer](../resources/printer.md) atualizado no corpo da resposta.
+
+### <a name="delegated-permissions-and-json-payload"></a>Permissões delegadas e carga JSON
+
+Se usar permissões delegadas, se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Printer](../resources/printer.md) atualizado no corpo da resposta.
+
+### <a name="application-permissions-and-ipp-payload"></a>Permissões de aplicativo e carga IPP
+
+Se o uso de permissões de aplicativo for bem-sucedido, este método retornará um `204 No content` código de resposta. Não retorna nada no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -89,9 +109,9 @@ Content-length: 124
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

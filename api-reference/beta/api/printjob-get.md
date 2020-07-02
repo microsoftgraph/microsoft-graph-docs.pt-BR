@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2833251d9d9ad7e65caafcebbc494f31c1ed8f7b
-ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
+ms.openlocfilehash: c634c4679cf65a8e723e55a4b0b9c39298a764b3
+ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "43812489"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024422"
 ---
 # <a name="get-printjob"></a>Obter printJob
 
@@ -21,14 +21,14 @@ Namespace: microsoft.graph
 Recupere as propriedades e os relacionamentos de um trabalho de impressão.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Users. Read. All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)| Users. Read. All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Application|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -43,15 +43,18 @@ Este método oferece suporte a alguns dos parâmetros de consulta OData para aju
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização | {token} de portador. Obrigatório. |
+| Autorização | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [printJob](../resources/printjob.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo de solicitação.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [printJob](../resources/printjob.md) no corpo da resposta.
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-get-a-print-job"></a>Exemplo 1: obter um trabalho de impressão
+
+#### <a name="request"></a>Solicitação
+Veja a seguir um exemplo de uma solicitação para obter um trabalho de impressão.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -75,9 +78,9 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,6 +100,83 @@ Content-length: 408
     "processingState": "completed",
     "processingStateDescription": "The print job has completed successfully and no further processing will take place."
   }
+}
+```
+
+### <a name="example-2-get-a-print-job-and-its-associated-document-data"></a>Exemplo 2: obter um trabalho de impressão e seus dados de documento associados
+
+#### <a name="request"></a>Solicitação
+Veja a seguir um exemplo de uma solicitação para obter um trabalho de impressão e seus dados de documento associados.
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_printjob_withdocumentdata"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/print/printers/86b6d420-7e6b-4797-a05c-af4e56cd81bd/jobs/31216?$expand=documents
+```
+
+---
+
+#### <a name="response"></a>Resposta
+Este é um exemplo de resposta.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printJob"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1688
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs(documents())/$entity",
+  "id": "31216",
+  "createdDateTime": "2020-06-26T04:20:06.5715544Z",
+  "createdBy": {
+    "id": "",
+    "displayName": "",
+    "ipAddress": null,
+    "userPrincipalName": "",
+    "oDataType": null
+  },
+  "status": {
+  "processingState": "aborted",
+  "processingStateDescription": "The print job has been aborted by a user or the printer and no further processing will take place."
+  },
+  "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
+  "documents": [
+    {
+      "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",
+      "displayName": "",
+      "contentType": "application/oxps",
+      "size": 276604,
+      "configuration": {
+        "quality": "medium",
+        "dpi": 300,
+        "feedDirection": null,
+        "orientation": "landscape",
+        "duplexMode": "oneSided",
+        "copies": 2,
+        "colorMode": "color",
+        "inputBin": null,
+        "outputBin": null,
+        "mediaSize": null,
+        "mediaType": null,
+        "finishings": [],
+        "pagesPerSheet": null,
+        "multipageLayout": "clockwiseFromTopLeft",
+        "collate": true,
+        "scaling": null,
+        "fitPdfToPage": null,
+        "margin": null,
+        "pageRanges": []
+      }
+    }
+  ]
 }
 ```
 
