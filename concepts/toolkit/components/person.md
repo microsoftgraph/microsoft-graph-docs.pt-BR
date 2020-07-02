@@ -3,12 +3,12 @@ title: Componente Person no Microsoft Graph Toolkit
 description: O componente pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e08e98a29ab454dca546d0fda34b8292ad97bf2d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 7fc3430755c08662186e235cd83d8790968f9ae3
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681876"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990238"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente Person no Microsoft Graph Toolkit
 
@@ -84,6 +84,7 @@ mgt-person {
   --font-size: 14px;
   --font-weight: 500;
   --color: black;
+  --background-color: #ffffff;
   --text-transform: none;
   --line2-font-size: 12px;
   --line2-font-weight: 400;
@@ -141,7 +142,7 @@ Para obter mais informações sobre modelos, estilos e atributos, consulte [comp
 
 Este controle usa as seguintes APIs e permissões do Microsoft Graph.
 
-| Resource                                                                                                    | Permission     |
+| Recurso                                                                                                    | Permission     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
 | [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
 | [$value/me/Photo/](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |

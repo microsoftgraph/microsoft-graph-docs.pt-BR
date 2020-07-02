@@ -3,12 +3,12 @@ title: Introdução ao Microsoft Graph Toolkit
 description: Comece a usar o Microsoft Toolkit em seu aplicativo.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 1537a686d25d885a898603ca576f688abdaab3e4
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 2e352a71b7e1f068bfb6dbd13a6ed151dd1b84b0
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639930"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45007063"
 ---
 # <a name="get-started-with-the-microsoft-graph-toolkit"></a>Introdução ao Microsoft Graph Toolkit
 
@@ -89,8 +89,60 @@ O kit de ferramentas contém provedores para o [MSAL](./providers/msal.md), o [S
 
 Se você estiver usando os módulos es6 do pacote do NPM, certifique-se de incluir os metapreenchimentos no projeto, pois eles não serão incluídos automaticamente. Para saber mais, confira [polipreenchimentos](https://www.webcomponents.org/polyfills).
 
-Se você estiver usando o script MGT-Loader. js do pacote no unpkg, os metapreenchimentos já estão incluídos.
+Se você estiver usando o script mgt-loader.js do pacote no unpkg, os metapreenchimentos já estão incluídos.
 
+### <a name="sharepoint"></a>Do
+
+Se você planeja suportar o IE11 em suas WebParts do SPFx, o processo a seguir descreve as etapas necessárias para garantir a compatibilidade entre navegadores: 
+
+1. Instale os seguintes pacotes:
+```cmd
+npm install -D babel-loader @babel/core @babel/preset-env webpack
+npm install -D @webcomponents/webcomponentsjs regenerator-runtime core-js
+npm install @microsoft/mgt
+```
+
+2. Insira o seguinte config no gulpfile.js logo acima do build.initialze (Gulp);
+```ts
+build.configureWebpack.mergeConfig({
+  additionalConfiguration: (generatedConfiguration) => {
+    generatedConfiguration.module.rules.push(
+      {
+        test: /\.m?js$/, use:
+        {
+          loader: "babel-loader",
+          options:
+          {
+            presets: [["@babel/preset-env",
+              {
+                targets: {
+                  "ie": "11"
+                }
+              }]]
+          }
+        }
+      }
+    );
+
+    return generatedConfiguration;
+  }
+});
+```
+
+
+3. No arquivo * WebPart. TS, importe os seguintes metapreenchimentos antes da importação dos provedores
+```ts
+import 'regenerator-runtime/runtime';
+import 'core-js/es/number';
+import 'core-js/es/math';
+import 'core-js/es/string';
+import 'core-js/es/date';
+import 'core-js/es/array';
+import 'core-js/es/regexp';
+import '@webcomponents/webcomponentsjs/webcomponents-bundle.js';
+```
+
+Para saber mais, confira [SharePoint Provider](./providers/sharepoint.md).
 
 ## <a name="using-the-components-with-react-angular-and-other-frameworks"></a>Usando os componentes com reagir, angular e outras estruturas
 
@@ -148,13 +200,13 @@ declare global {
 }
 ```
 
-Você pode usá-lo no seu TSX como `<mgt-login></mgt-login>`.
+Você pode usá-lo no seu TSX como `<mgt-login></mgt-login>` .
 
 ### <a name="angular"></a>Angular
 
 A sintaxe de associação padrão do angular sempre definirá Propriedades em um elemento. Isso funciona bem para dados ricos, como objetos e matrizes, e também funciona bem para valores primitivos.
 
-Para usar elementos personalizados, primeiro, habilite os elementos personalizados `app.module.ts` em seu adicionando `CUSTOM_ELEMENT_SCHEMA` o ao `@NgModule() decorator`, conforme mostrado no exemplo a seguir.
+Para usar elementos personalizados, primeiro, habilite os elementos personalizados em seu `app.module.ts` adicionando o `CUSTOM_ELEMENT_SCHEMA` ao `@NgModule() decorator` , conforme mostrado no exemplo a seguir.
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -172,7 +224,7 @@ import { AppComponent } from './app.component';
 export class AppModule {}
 ```
 
-Você pode importar o componente que gostaria de usar em seu arquivo Component \*. TS.
+Você pode importar o componente que gostaria de usar em seu \* arquivo Component. TS.
 
 ```ts
 import { Component } from '@angular/core';
@@ -195,3 +247,4 @@ Por fim, use o componente como faria normalmente no seu modelo.
 ```html
 <mgt-person [personDetails]="person" show-name></mgt-person>
 ```
+

@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 295f62aeba919fde1384642755b0c51816527d91
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 7db6b2498d039a4f6474b530023a9f4c0e199119
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897075"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44989776"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -65,11 +65,11 @@ Determinadas limites se aplicam aos recursos baseados no Azure AD (usuários, gr
 
 - Cotas máximas de assinaturas:
 
-  - Por aplicativo: total de 50 mil assinaturas
-  - Por locatário: total de 1000 assinaturas em todos os aplicativos
+  - Por aplicativo (para todos os locatários combinados): 50.000 total de assinaturas
+  - Por locatário (para todos os aplicativos combinados): 1000 total de assinaturas em todos os aplicativos
   - Combinação por aplicativo e locatário: 100 assinaturas no total
 
-Quando os limites são excedidos, a tentativa de criar uma assinatura resultará em uma [resposta de erro](errors.md) - `403 Forbidden`. A propriedade `message` explicará qual limite foi excedido.
+Quando qualquer limite for excedido, as tentativas de criar uma assinatura resultarão em uma [resposta de erro](errors.md)  -  `403 Forbidden` . A propriedade `message` explicará qual limite foi excedido.
 
 - Não há suporte a locatários do Microsoft Azure AD B2C.
 

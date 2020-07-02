@@ -3,12 +3,12 @@ title: Provedor do SharePoint
 description: Use o provedor do SharePoint dentro de suas Web Parts do SharePoint para poder alimentar os componentes com o acesso ao Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 74605fa4c2acc2919a73f7b6bef1460480883c34
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: d94d516aa458ccfbc4a3770ad5937828aa23b335
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868545"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45007070"
 ---
 # <a name="sharepoint-provider"></a>Provedor do SharePoint
 
@@ -23,7 +23,7 @@ Inicialize o provedor dentro do `onInit()` método de sua Web Part.
 ```ts
 
 // import the providers at the top of the page
-import {Providers, SharePointProvider} from '@microsoft/mgt/dist/commonjs';
+import {Providers, SharePointProvider} from '@microsoft/mgt';
 
 // add the onInit() method if not already there in your web part class
 protected async onInit() {
@@ -54,6 +54,12 @@ Se você estiver apenas começando a usar as Web Parts do SharePoint, poderá se
 
 Depois de criar uma Web Part e estiver pronto para usar os componentes, você precisará certificar-se de que sua Web Part tem as permissões corretas para acessar o Microsoft Graph. Para obter detalhes, consulte [consuma Microsoft Graph na estrutura do SharePoint](/sharepoint/dev/spfx/use-aad-tutorial).
 
-Em suma, é importante adicionar a permissão certa ao seu `package-solution.json`. Você precisará carregar um pacote de sua Web Part para o SharePoint e fazer com que um administrador aprove as permissões solicitadas.
+Em suma, é importante adicionar a permissão certa ao seu `package-solution.json` . Você precisará carregar um pacote de sua Web Part para o SharePoint e fazer com que um administrador aprove as permissões solicitadas.
 
 >**Dica:** se você não tiver certeza de quais permissões adicionar, a documentação de cada componente inclui todas as permissões necessárias.
+
+## <a name="polyfills"></a>Polyfills
+
+Se você planeja suportar o IE11 em suas Web Parts do SPFx, você deve usar polipreenchimentos.
+
+Para saber mais, confira [Get-Started](../get-started.md#sharepoint).

@@ -3,12 +3,12 @@ title: Provedor do Microsoft Teams
 description: Use o provedor de equipes dentro da guia do Microsoft Teams para facilitar a autenticação e o acesso ao Microsoft Graph a todos os componentes.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 850d414557313a2a16b3cd5c1c4b854cc1b00081
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 62dba210d4fbf7d3540df7fd58d33e275f0065c3
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144265"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990252"
 ---
 # <a name="microsoft-teams-provider"></a>Provedor do Microsoft Teams
 
@@ -31,15 +31,18 @@ O exemplo a seguir usa o provedor em HTML (via CDN).
 <mgt-teams-provider
   client-id="<YOUR_CLIENT_ID>"
   auth-popup-url="https://<YOUR-DOMAIN>.com/AUTH-PATH"
+  authority=""
 ></mgt-teams-provider>
 ```
 
 | Atributo | Descrição |
 | --- | --- |
-| Client-ID   | String Client ID (consulte Configure Your Teams app). Obrigatório. |
-| auth-Popup-URL  | Caminho absoluto ou relativo para a página que manipulará a autenticação no pop-up (consulte criar a página pop-up). Obrigatório. |
+| Client-ID   | ID do cliente de cadeia de caracteres (consulte [Configure Your Teams app](#configure-your-teams-app). Obrigatório. |
+| auth-Popup-URL  | Caminho absoluto ou relativo para a página que manipulará a autenticação no pop-up (consulte [criar a página pop-up](#create-the-popup-page)). Obrigatório. |
 | escopos  | Cadeias de caracteres separadas por vírgula para escopos para os quais o usuário deve se concordar. Opcional. |
 | depende de | Cadeia de caracteres de seletor de elemento de outro componente de provedor de prioridade mais alta. Opcional. |
+| autoridades    | Cadeia de caracteres de autoridade. O padrão é a autoridade comum. Para aplicativos de locatário único, use a ID de locatário ou o nome do locatário. Por exemplo, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` ou `https://login.microsoftonline.com/[your-tenant-id]` . Opcional. |
+
 
 ### <a name="via-npm"></a>via NPM
 O exemplo a seguir usa o provedor em módulos JS (via NPM).
@@ -97,7 +100,7 @@ Após instalar seu aplicativo com uma guia e você estiver pronto para usar os c
 
 ### <a name="enable-implicit-grant-flow"></a>Habilitar fluxo de concessão implícito
 
-Certifique-se de habilitar o fluxo de concessão implícito; Esse é um requisito para aplicativos Web que solicitam tokens do lado do cliente. No portal do Azure, ao gerenciar o registro do aplicativo, edite o manifesto `oauth2AllowImplicitFlow` e `true`altere para.
+Certifique-se de habilitar o fluxo de concessão implícito; Esse é um requisito para aplicativos Web que solicitam tokens do lado do cliente. No portal do Azure, ao gerenciar o registro do aplicativo, edite o manifesto e altere `oauth2AllowImplicitFlow` para `true` .
 
 ### <a name="create-the-popup-page"></a>Criar a página pop-up
 
