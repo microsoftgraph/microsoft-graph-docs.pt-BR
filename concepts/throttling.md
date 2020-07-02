@@ -4,12 +4,12 @@ description: Throttling limits the number of concurrent calls to a service to pr
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: f2acb34994f0877a051d31e276feb22b2d47179c
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: HT
+ms.openlocfilehash: 7678b364855381eaf5a138b42d6172a6cbd233f4
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682037"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44989839"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -61,6 +61,7 @@ Atualmente, os seguintes recursos oferecem atualmente um cabeçalho `Retry-After
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 - [Item externo (Pesquisa da Microsoft)](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [Assinatura](/graph/api/resources/subscription)
+- [Convite](/graph/api/resources/invitation)
 
 Para ter uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -85,13 +86,13 @@ O Microsoft Graph permite que você acesse os dados em [vários serviços](overv
 
 ### <a name="outlook-service-limits"></a>Limites de serviço do Outlook
 
-Os limites de serviço do Outlook são avaliados para cada combinação de ID de aplicativo e caixa de correio. Em outras palavras, os limites descritos se aplicam a um aplicativo específico ao acessar uma caixa de correio específica (usuário ou grupo). Se um aplicativo exceder o limite de uma caixa de correio, isso não afetará a capacidade de acessar outra caixa de correio.
+Os limites de serviço do Outlook são avaliados para cada combinação de ID de aplicativo e caixa de correio. Em outras palavras, os limites descritos se aplicam a um aplicativo específico ao acessar uma caixa de correio específica (usuário ou grupo). Se um aplicativo exceder o limite de uma caixa de correio, isso não afetará a capacidade de acessar outra caixa de correio. Os limites a seguir se aplicam à nuvem pública, bem como às [implantações nacionais da nuvem](/graph/deployments).
 
 | Limite                                                      | Aplicável a      |
 |------------------------------------------------------------|-----------------|
 | 10.000 solicitações de API em um período de 10 minutos                  | pontos de extremidade v1.0 e beta |
-| 4 solicitações simultâneas                                      | Ponto de extremidade Beta   |
-| carregamento de 15 megabits (PATCH, POST, PUT) em um período de 30 segundos | Ponto de extremidade Beta   |
+| 4 solicitações simultâneas                                      | pontos de extremidade v1.0 e beta   |
+| carregamento de 15 megabits (PATCH, POST, PUT) em um período de 30 segundos | pontos de extremidade v1.0 e beta   |
 
 #### <a name="outlook-service-resources"></a>Recursos de serviço do Outlook
 
@@ -157,11 +158,56 @@ Um máximo 3.000 mensagens por aplicativo por dia podem ser enviadas para um det
 
 Confira também [limites do Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) e [requisitos de votação](/graph/api/resources/teams-api-overview#polling-requirements).
 
-### <a name="microsoft-graph-change-notifications-subscription-operations"></a>Operações de notificações de mudança de assinatura do Microsoft Graph
+### <a name="invitation-manager-service-limits"></a>Limites do serviço Gerenciador de convites
 
-Os seguintes limites se aplicam a qualquer solicitação no `/subscriptions`.
+Os seguintes limites se aplicam a qualquer solicitação no `/invitations`.
 
-| Operation                 | Limitar por aplicativo por locatário     | Limitar por aplicativo em todos os locatários |
-|---------------------------|------------------------------|-----------------------------------|
-| POSTAR, COLOCAR, EXCLUIR, PATCH  | 1000 solicitações por 20 segundos | 2000 solicitações por 20 segundos      |
-| Todos os outros métodos HTTP    | 5000 solicitações por 20 segundos | 10000 solicitações por 20 segundos     |
+| Operation                 | Limite por locatário             |
+|---------------------------|------------------------------|
+| Qualquer operação             | 150 solicitações por 5 segundos   |
+
+<!-- { "blockType": "throttlinggenstart" } -->
+
+### <a name="education-service-limits"></a>Limites do serviço de educação
+
+[!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
+
+### <a name="excel-service-limits"></a>Limites do serviço do Excel
+
+[!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
+
+### <a name="identity-and-access-audit-logs-service-limits"></a>Limites de serviço de logs de auditoria de identidade e acesso
+
+[!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
+
+### <a name="identity-providers-service-limits"></a>Limites de serviço de provedores de identidade
+
+[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
+
+### <a name="intune-service-limits"></a>Limites de serviço do Intune
+
+[!INCLUDE [Intune applications throttling documentation](../includes/throttling-intune-applications.md)]
+[!INCLUDE [Intune books throttling documentation](../includes/throttling-intune-books.md)]
+[!INCLUDE [Intune company terms throttling documentation](../includes/throttling-intune-company-terms.md)]
+[!INCLUDE [Intune device configuration throttling documentation](../includes/throttling-intune-device-configuration.md)]
+[!INCLUDE [Intune device enrollment throttling documentation](../includes/throttling-intune-device-enrollment.md)]
+[!INCLUDE [Intune devices throttling documentation](../includes/throttling-intune-devices.md)]
+[!INCLUDE [Intune enrollment throttling documentation](../includes/throttling-intune-enrollment.md)]
+[!INCLUDE [Intune managed applications throttling documentation](../includes/throttling-intune-managed-applications.md)]
+[!INCLUDE [Intune notifications throttling documentation](../includes/throttling-intune-notifications.md)]
+[!INCLUDE [Intune rbac throttling documentation](../includes/throttling-intune-rbac.md)]
+[!INCLUDE [Intune remote assistance throttling documentation](../includes/throttling-intune-remote-assistance.md)]
+[!INCLUDE [Intune reporting throttling documentation](../includes/throttling-intune-reporting.md)]
+[!INCLUDE [Intune TEM throttling documentation](../includes/throttling-intune-tem.md)]
+[!INCLUDE [Intune troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
+[!INCLUDE [Intune wip throttling documentation](../includes/throttling-intune-wip.md)]
+
+### <a name="skype-service-limits"></a>Limites do serviço Skype
+
+[!INCLUDE [Skype calling throttling documentation](../includes/throttling-skype-calling.md)]
+
+### <a name="subscription-service-limits"></a>Limites do serviço de assinatura
+
+[!INCLUDE [Subscription services throttling documentation](../includes/throttling-subscription-services.md)]
+
+<!-- { "blockType": "throttlinggenend" } -->
