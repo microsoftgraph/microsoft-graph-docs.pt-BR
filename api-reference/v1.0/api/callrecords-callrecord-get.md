@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a770cfe7d30c3480e2e6a81dd3c8f9c10d480452
-ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
+ms.openlocfilehash: 7d3600799233da9f83dc9510b6f83708d68965bc
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44524610"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006955"
 ---
 # <a name="get-callrecord"></a>Obter callRecord
 
@@ -18,15 +18,20 @@ Namespace: microsoft.graph.callRecords
 
 Recupere as propriedades e os relacionamentos de um objeto [callRecord](../resources/callrecords-callrecord.md) .
 
+Há duas maneiras de obter o **ID** de um **callRecord**:
+
+* Assine as [notificações de alteração](/graph/api/resources/webhooks?view=graph-rest-1.0) para o `/communications/callRecords` ponto de extremidade.
+* Use a propriedade **callChainId** de uma [chamada](../resources/call.md). O registro de chamadas estará disponível somente após a conclusão da chamada associada.
+
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | CallRecords.Read.All |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -95,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -183,7 +188,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=ses
 
 Este é um exemplo de resposta. Se a lista de sessões estiver truncada, `sessions@odata.nextlink` será fornecido um valor para recuperar a próxima página de sessões.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
