@@ -13,5 +13,5 @@ ms.locfileid: "35705124"
 <!-- markdownlint-disable MD041-->
 
 > [!IMPORTANT]
-> <span data-ttu-id="11f41-101">As APIs na `/beta` versão do Microsoft Graph estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="11f41-101">APIs under the `/beta` version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="11f41-102">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="11f41-102">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1e2f9-101">As APIs na `/beta` versão do Microsoft Graph estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="1e2f9-101">APIs under the `/beta` version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="1e2f9-102">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="1e2f9-102">Use of these APIs in production applications is not supported.</span></span>
 
