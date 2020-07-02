@@ -1160,11 +1160,18 @@ items:
                     href: api/printjob-startprintjob.md
                   - name: Cancelar
                     href: api/printjob-cancelprintjob.md
+              - name: Operação de impressão
+                href: resources/printoperation.md
+                items:
+                  - name: Obter
+                    href: api/printoperation-get.md
               - name: Impressora
                 href: resources/printer.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/print-list-printers.md
+                  - name: Criar
+                    href: api/printer-create.md
                   - name: Obter
                     href: api/printer-get.md
                   - name: Excluir
@@ -1437,7 +1444,7 @@ items:
                   - name: Esquema de configuração do aplicativo do repositório gerenciado Android
                     href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-list.md
                       - name: Obter
                         href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-get.md
@@ -1477,7 +1484,7 @@ items:
                   - name: Aplicativo da loja Android
                     href: resources/intune-apps-androidstoreapp.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-androidstoreapp-list.md
                       - name: Obter
                         href: api/intune-apps-androidstoreapp-get.md
@@ -1494,7 +1501,7 @@ items:
                   - name: Estado de instalação do dispositivo
                     href: resources/intune-books-deviceinstallstate.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-books-deviceinstallstate-list.md
                       - name: Obter
                         href: api/intune-books-deviceinstallstate-get.md
@@ -1904,7 +1911,7 @@ items:
                   - name: Aplicativo da loja iOS gerenciado
                     href: resources/intune-apps-managediosstoreapp.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-managediosstoreapp-list.md
                       - name: Obter
                         href: api/intune-apps-managediosstoreapp-get.md
@@ -1917,7 +1924,7 @@ items:
                   - name: Aplicativo LOB móvel gerenciado
                     href: resources/intune-apps-managedmobilelobapp.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-managedmobilelobapp-list.md
                       - name: Obter
                         href: api/intune-apps-managedmobilelobapp-get.md
@@ -1928,7 +1935,7 @@ items:
                   - name: Aplicativo da Microsoft Store para Empresas
                     href: resources/intune-apps-microsoftstoreforbusinessapp.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-apps-microsoftstoreforbusinessapp-list.md
                       - name: Obter
                         href: api/intune-apps-microsoftstoreforbusinessapp-get.md
@@ -2562,7 +2569,7 @@ items:
                   - name: Perfil de registro de iOS do DEP
                     href: resources/intune-enrollment-depiosenrollmentprofile.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-enrollment-depiosenrollmentprofile-list.md
                       - name: Obter
                         href: api/intune-enrollment-depiosenrollmentprofile-get.md
@@ -2575,7 +2582,7 @@ items:
                   - name: Perfil de registro de macOS do DEP
                     href: resources/intune-enrollment-depmacosenrollmentprofile.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-enrollment-depmacosenrollmentprofile-list.md
                       - name: Obter
                         href: api/intune-enrollment-depmacosenrollmentprofile-get.md
@@ -5544,7 +5551,7 @@ items:
                   - name: Configuração geral do Windows 10 Team
                     href: resources/intune-deviceconfig-windows10teamgeneralconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windows10teamgeneralconfiguration-get.md
@@ -5559,7 +5566,7 @@ items:
                   - name: Configuração de VPN do Windows 10
                     href: resources/intune-deviceconfig-windows10vpnconfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-windows10vpnconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windows10vpnconfiguration-get.md
@@ -10074,24 +10081,33 @@ items:
                     href: api/serviceprincipal-delete-owners.md
               - name: Políticas
                 items:
-                  - name: Atribuir claimsMappingPolicy
-                    href: api/serviceprincipal-post-claimsmappingpolicies.md
-                  - name: Listar claimsMappingPolicies
-                    href: api/serviceprincipal-list-claimsmappingpolicies.md
-                  - name: Remover claimsMappingPolicy
-                    href: api/serviceprincipal-delete-claimsmappingpolicies.md
-                  - name: Atribuir homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                  - name: Listar homeRealmDiscoveryPolicies
-                    href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
-                  - name: Remover homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-                  - name: Atribiur tokenLifetimePolicy
-                    href: api/application-post-tokenlifetimepolicies.md
-                  - name: Listar tokenLifetimePolicies
-                    href: api/application-list-tokenlifetimepolicies.md
-                  - name: Remover tokenLifetimePolicy
-                    href: api/application-delete-tokenlifetimepolicies.md
+                  - name: Política de mapeamento de declarações
+                    href: resources/claimsmappingpolicy.md
+                    items:
+                      - name: Atribuir políticas de mapeamento de declarações
+                        href: api/serviceprincipal-post-claimsmappingpolicies.md
+                      - name: Listar políticas de mapeamento de declarações
+                        href: api/serviceprincipal-list-claimsmappingpolicies.md
+                      - name: Remover políticas de mapeamento de declarações
+                        href: api/serviceprincipal-delete-claimsmappingpolicies.md
+                  - name: Política de descoberta de realm inicial
+                    href: resources/homerealmdiscoverypolicy.md
+                    items:
+                      - name: Atribuir políticas de descoberta de realm inicial
+                        href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+                      - name: Listar políticas de descoberta de realm inicial
+                        href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+                      - name: Remover políticas de descoberta de realm inicial
+                        href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: Política do tempo de vida do token
+                    href: resources/tokenlifetimepolicy.md
+                    items:
+                      - name: Atribuir políticas de tempo de vida do token
+                        href: api/application-post-tokenlifetimepolicies.md
+                      - name: Listar políticas de vida útil de token
+                        href: api/application-list-tokenlifetimepolicies.md
+                      - name: Remover políticas de tempo de vida do token
+                        href: api/application-delete-tokenlifetimepolicies.md
               - name: Logon único
                 items:
                   - name: Criar credenciais de logon único de senha
@@ -10138,6 +10154,8 @@ items:
                     href: api/synchronization-synchronizationjob-restart.md
                   - name: Excluir trabalho
                     href: api/synchronization-synchronizationjob-delete.md
+                  - name: Configurar sob demanda
+                    href: api/synchronization-synchronizationjob-provision-on-demand.md
               - name: Esquema
                 href: resources/synchronization-synchronizationschema.md
                 items:
@@ -11087,11 +11105,13 @@ items:
                 items:
                   - name: Item externo
                     href: resources/externalitem.md
-                  - name: Criar item externo
+                  - name: Criar
                     href: api/externalconnection-put-items.md
-                  - name: Atualizar item externo
+                  - name: Obter
+                    href: api/externalitem-get.md
+                  - name: Atualizar
                     href: api/externalitem-update.md
-                  - name: Excluir item externo
+                  - name: Excluir
                     href: api/externalitem-delete.md
       - name: Segurança
         displayname: 'Security API, Microsoft Graph Security API'
