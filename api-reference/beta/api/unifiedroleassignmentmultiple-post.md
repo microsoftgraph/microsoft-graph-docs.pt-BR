@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 094d55554c3488e61b909e227cb40767a705a64c
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 326f58cdce239c2a33ac555497f67b0bc0387b71
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991814"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038517"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>Criar unifiedRoleAssignmentMultiple
 
@@ -22,7 +22,7 @@ Criar um novo objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleass
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
@@ -42,16 +42,16 @@ POST /roleManagement/deviceManagement/roleAssignments
 
 | Nome | Descrição |
 |:---- |:----------- |
-| Autorização | {token} de portador. Obrigatório. |
-| Content-type | application/json. Obrigatório. |
+| Autorização | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) . A solicitação deve ter um escopo definido no Azure AD, como `directoryScopeIds`, ou um escopo específico de aplicativo, como. `appScopeId` Exemplos de escopo do Azure AD são locatários ("/"), unidades administrativas ou aplicativos. 
+No corpo da solicitação, forneça uma representação JSON do objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) . A solicitação deve ter um escopo definido no Azure AD, como `directoryScopeIds` , ou um escopo específico de aplicativo, como `appScopeId` . Exemplos de escopo do Azure AD são locatários ("/"), unidades administrativas ou aplicativos. 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -74,6 +74,7 @@ Content-type: application/json
 
 { 
     "@odata.type": "#microsoft.graph.unifiedRoleAssignmentMultiple",
+    "displayName": "My test role assignment 1",
     "roleDefinitionId": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
     "principalIds": ["f8ca5a85-489a-49a0-b555-0a6d81e56f0d", "c1518aa9-4da5-4c84-a902-a31404023890"],
     "directoryScopeIds": ["28ca5a85-489a-49a0-b555-0a6d81e56f0d", "8152656a-cf9a-4928-a457-1512d4cae295"],
@@ -97,7 +98,7 @@ Content-type: application/json
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -122,8 +123,8 @@ Content-type: application/json
 ### <a name="example-2-create-a-role-assignment-in-intune-at-intune-specific-scope-of-all-devices"></a>Exemplo 2: criar uma atribuição de função no Intune no escopo específico do Intune de "todos os dispositivos"
 
 Use as informações a seguir para criar atribuições de função do Intune:
-- Para permitir atribuições sobre todos os dispositivos do Intune `allDevices` , use o valor em **appScopeIds**.
-- Para permitir atribuições sobre todos os usuários licenciados do `allLicensedUsers` Intune, use o valor em **appScopeIds**.
+- Para permitir atribuições sobre todos os dispositivos do Intune, use o `AllDevices` valor em **appScopeIds**.
+- Para permitir atribuições sobre todos os usuários licenciados do Intune, use o `AllLicensedUsers` valor em **appScopeIds**.
 - Para permitir atribuições em todos os dispositivos do Intune e usuários licenciados, use o `/` valor em **directoryScopeIds**.
 
 #### <a name="request"></a>Solicitação
@@ -143,6 +144,7 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.unifiedRoleAssignmentMultiple",
+    "displayName": "My test role assignment 1",
     "roleDefinitionId": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
     "principalIds": ["f8ca5a85-489a-49a0-b555-0a6d81e56f0d", "c1518aa9-4da5-4c84-a902-a31404023890"],
     "appScopeIds": ["allDevices"]
@@ -166,7 +168,7 @@ Content-type: application/json
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
