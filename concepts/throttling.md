@@ -4,12 +4,12 @@ description: Throttling limits the number of concurrent calls to a service to pr
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 7678b364855381eaf5a138b42d6172a6cbd233f4
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 8cf528675b0cdde108063f3fd44acdfdff418941
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989839"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038531"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -60,7 +60,12 @@ Atualmente, os seguintes recursos oferecem atualmente um cabeçalho `Retry-After
 - [Pessoas e social](/graph/api/resources/social-overview?view=graph-rest-beta)
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 - [Item externo (Pesquisa da Microsoft)](/graph/api/resources/externalitem?view=graph-rest-beta)
+- [Report](/graph/api/resources/report)
 - [Assinatura](/graph/api/resources/subscription)
+- [Mais Populares](/graph/api/resources/insights-trending)
+- [Informações usadas](/graph/api/resources/insights-used)
+- [Informações compartilhadas](/graph/api/resources/insights-shared)
+- [Configurações do usuário](/graph/api/resources/usersettings)
 - [Convite](/graph/api/resources/invitation)
 
 Para ter uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação](https://docs.microsoft.com/azure/architecture/patterns/throttling).
@@ -92,7 +97,7 @@ Os limites de serviço do Outlook são avaliados para cada combinação de ID de
 |------------------------------------------------------------|-----------------|
 | 10.000 solicitações de API em um período de 10 minutos                  | pontos de extremidade v1.0 e beta |
 | 4 solicitações simultâneas                                      | pontos de extremidade v1.0 e beta   |
-| carregamento de 15 megabits (PATCH, POST, PUT) em um período de 30 segundos | pontos de extremidade v1.0 e beta   |
+| 15 megabytes (MB) upload (PATCH, POST, PUT) em um período de 30 segundos | pontos de extremidade v1.0 e beta   |
 
 #### <a name="outlook-service-resources"></a>Recursos de serviço do Outlook
 
@@ -157,6 +162,26 @@ Os limites são expressos como solicitações por segundo (rps).
 Um máximo 3.000 mensagens por aplicativo por dia podem ser enviadas para um determinado canal.
 
 Confira também [limites do Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) e [requisitos de votação](/graph/api/resources/teams-api-overview#polling-requirements).
+
+### <a name="insights-service-limits"></a>Limites de serviço do insights
+
+Os seguintes limites se aplicam a qualquer solicitação no `me/insights` ou no `users/{id}/insights` .
+
+| Limite                                                      | Aplicável a      |
+|------------------------------------------------------------|-----------------|
+| 10.000 solicitações de API em um período de 10 minutos                  | pontos de extremidade v1.0 e beta |
+| 4 solicitações simultâneas                                      | pontos de extremidade v1.0 e beta   |
+
+### <a name="microsoft-graph-reports-service-limits"></a>Limites do serviço de relatórios do Microsoft Graph
+
+Os seguintes limites se aplicam a qualquer solicitação no `/reports`.
+
+| Operation                 | Limitar por aplicativo por locatário     | Limite por locatário           |
+|---------------------------|------------------------------|----------------------------|
+| Qualquer solicitação (CSV)         | 14 solicitações por 10 minutos   | 40 solicitações por 10 minutos |
+| Qualquer solicitação (JSON, beta)  | 100 solicitações por 10 minutos  | n/d                        |
+
+Os limites anteriores se aplicam individualmente a cada API de relatório. Por exemplo, uma solicitação para a API do relatório de atividades do usuário do Microsoft Teams e uma solicitação para a API do relatório de atividades do usuário do Outlook em 10 minutos contarão como 1 solicitação de 14 para cada API, não 2 solicitações de 14 para ambos.
 
 ### <a name="invitation-manager-service-limits"></a>Limites do serviço Gerenciador de convites
 

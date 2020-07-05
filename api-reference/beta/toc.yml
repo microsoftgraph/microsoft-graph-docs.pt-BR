@@ -681,6 +681,319 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
+      - name: Aplicativos
+        items:
+          - name: Aplicativo
+            href: resources/application.md
+            items:
+              - name: Listar aplicativos
+                href: api/application-list.md
+              - name: Criar aplicativo
+                href: api/application-post-applications.md
+              - name: Obter aplicativo
+                href: api/application-get.md
+              - name: Atualizar aplicativo
+                href: api/application-update.md
+              - name: Excluir aplicativo
+                href: api/application-delete.md
+              - name: Obter intervalo
+                href: api/application-delta.md
+              - name: Listar aplicativos excluídos
+                href: api/directory-deleteditems-list.md
+              - name: Obter o aplicativo excluído
+                href: api/directory-deleteditems-get.md
+              - name: Excluir aplicativo permanentemente
+                href: api/directory-deleteditems-delete.md
+              - name: Restaurar aplicativo excluído
+                href: api/directory-deleteditems-restore.md
+              - name: Certificados & segredos
+                items:
+                  - name: Adicionar senha
+                    href: api/application-addpassword.md
+                  - name: Remover senha
+                    href: api/application-removepassword.md
+                  - name: Tecla Adicionar
+                    href: api/application-addkey.md
+                  - name: Remover chave
+                    href: api/application-removekey.md
+              - name: Extensões
+                items:
+                  - name: Listar extensões
+                    href: api/application-list-extensionproperty.md
+                  - name: Criar extensão
+                    href: api/application-post-extensionproperty.md
+                  - name: Excluir extensão
+                    href: api/application-delete-extensionproperty.md
+              - name: Owners
+                items:
+                  - name: Listar proprietários
+                    href: api/application-list-owners.md
+                  - name: Adicionar proprietário
+                    href: api/application-post-owners.md
+                  - name: Remover proprietário
+                    href: api/application-delete-owners.md
+              - name: Políticas
+                items:
+                  - name: Listar políticas atribuídas
+                    href: api/policy-list-assigned.md
+                  - name: Atribiur tokenLifetimePolicy
+                    href: api/application-post-tokenlifetimepolicies.md
+                  - name: Listar tokenLifetimePolicies
+                    href: api/application-list-tokenlifetimepolicies.md
+                  - name: Remover tokenLifetimePolicy
+                    href: api/application-delete-tokenlifetimepolicies.md
+              - name: Modelo de aplicativo
+                href: resources/applicationtemplate.md
+                items:
+                  - name: Listar modelos de aplicativo
+                    href: api/applicationtemplate-list.md
+                  - name: Obter modelo de aplicativo
+                    href: api/applicationtemplate-get.md
+                  - name: Criar um modelo de aplicativo
+                    href: api/applicationtemplate-instantiate.md
+          - name: Publicação local
+            href: resources/onpremisespublishingprofile-root.md
+            items:
+              - name: Agente local
+                href: resources/onpremisesagent.md
+                items:
+                  - name: Lista
+                    href: api/onpremisesagent-list.md
+                  - name: Obter
+                    href: api/onpremisesagent-get.md
+                  - name: Atribuir ao grupo de agentes
+                    href: api/onpremisesagent-post-agentgroups.md
+                  - name: Remover do grupo de agentes
+                    href: api/onpremisesagent-delete-agentgroups.md
+              - name: Grupo de agentes local
+                href: resources/onpremisesagentgroup.md
+                items:
+                  - name: Lista
+                    href: api/onpremisesagentgroup-list.md
+                  - name: Obter
+                    href: api/onpremisesagentgroup-get.md
+                  - name: Criar
+                    href: api/onpremisesagentgroup-post.md
+                  - name: Atualizar
+                    href: api/onpremisesagentgroup-update.md
+                  - name: Excluir
+                    href: api/onpremisesagentgroup-delete.md
+              - name: Perfil de publicação local
+                href: resources/onpremisespublishingprofile.md
+                items:
+                  - name: Obter
+                    href: api/onpremisespublishingprofile-get.md
+                  - name: Atualizar
+                    href: api/onpremisespublishingprofile-update.md
+              - name: Recurso publicado
+                href: resources/publishedresource.md
+                items:
+                  - name: Lista
+                    href: api/publishedresource-list.md
+                  - name: Obter
+                    href: api/publishedresource-get.md
+                  - name: Criar
+                    href: api/publishedresource-post.md
+                  - name: Atualizar
+                    href: api/publishedresource-update.md
+                  - name: Excluir
+                    href: api/publishedresource-delete.md
+                  - name: Atribuir ao grupo de agentes
+                    href: api/publishedresource-post-agentgroups.md
+                  - name: Remover do grupo de agentes
+                    href: api/publishedresource-delete-agentgroups.md
+              - name: Connector
+                href: resources/connector.md
+                items:
+                  - name: Lista
+                    href: api/connector-list.md
+                  - name: Obter
+                    href: api/connector-get.md
+                  - name: Listar memberOf
+                    href: api/connector-list-memberof.md
+                  - name: Adicionar conector ao conector
+                    href: api/connector-post-memberof.md
+              - name: Grupo de conectores
+                href: resources/connectorgroup.md
+                items:
+                  - name: Listar
+                    href: api/connectorgroup-list.md
+                  - name: Criar
+                    href: api/connectorgroup-post.md
+                  - name: Obter
+                    href: api/connectorgroup-get.md
+                  - name: Atualizar
+                    href: api/connectorgroup-update.md
+                  - name: Excluir
+                    href: api/connectorgroup-delete.md
+                  - name: Listar aplicativos
+                    href: api/connectorgroup-list-applications.md
+                  - name: Listar membros
+                    href: api/connectorgroup-list-members.md
+                  - name: Adicionar conector
+                    href: api/connectorgroup-post-members.md
+                  - name: Adicionar aplicativo
+                    href: api/connectorgroup-post-applications.md
+          - name: Entidade de serviço
+            href: resources/serviceprincipal.md
+            items:
+              - name: Listar entidade de serviço
+                href: api/serviceprincipal-list.md
+              - name: Criar entidade de serviço
+                href: api/serviceprincipal-post-serviceprincipals.md
+              - name: Obter entidade de serviço
+                href: api/serviceprincipal-get.md
+              - name: Atualizar entidade de serviço
+                href: api/serviceprincipal-update.md
+              - name: Excluir entidade de serviço
+                href: api/serviceprincipal-delete.md
+              - name: List createdObjects
+                href: api/serviceprincipal-list-createdobjects.md
+              - name: List ownedObjects
+                href: api/serviceprincipal-list-ownedobjects.md
+              - name: delta
+                href: api/serviceprincipal-delta.md
+              - name: Atribuições de função de aplicativo
+                href: resources/approleassignment.md
+                items:
+                  - name: Listar atribuições de função de aplicativo
+                    href: api/serviceprincipal-list-approleassignments.md
+                  - name: Adicionar atribuição de função de aplicativo
+                    href: api/serviceprincipal-post-approleassignments.md
+                  - name: Remover atribuição de função de aplicativo
+                    href: api/serviceprincipal-delete-approleassignments.md
+                  - name: Listar a função de aplicativo atribuída a
+                    href: api/serviceprincipal-list-approleassignedto.md
+                  - name: Adicionar função de aplicativo atribuída a
+                    href: api/serviceprincipal-post-approleassignedto.md
+                  - name: Remover função de aplicativo atribuída a
+                    href: api/serviceprincipal-delete-approleassignedto.md
+              - name: Certificados e segredos
+                items:
+                  - name: Adicionar senha
+                    href: api/serviceprincipal-addpassword.md
+                  - name: Remover senha
+                    href: api/serviceprincipal-removepassword.md
+                  - name: Tecla Adicionar
+                    href: api/serviceprincipal-addkey.md
+                  - name: Remover chave
+                    href: api/serviceprincipal-removekey.md
+              - name: Subsídios de permissão delegada
+                items:
+                  - name: Listar concessões de permissão delegada
+                    href: api/serviceprincipal-list-oauth2permissiongrants.md
+              - name: Associação
+                items:
+                  - name: Listar memberOf
+                    href: api/serviceprincipal-list-memberof.md
+                  - name: Listar membros transitivos
+                    href: api/serviceprincipal-list-transitivememberof.md
+                  - name: checkMemberGroups
+                    href: api/serviceprincipal-checkmembergroups.md
+                  - name: checkMemberObjects
+                    href: api/serviceprincipal-checkmemberobjects.md
+                  - name: getMemberGroups
+                    href: api/serviceprincipal-getmembergroups.md
+                  - name: getMemberObjects
+                    href: api/serviceprincipal-getmemberobjects.md
+              - name: Owners
+                items:
+                  - name: Listar proprietários
+                    href: api/serviceprincipal-list-owners.md
+                  - name: Adicionar proprietário
+                    href: api/serviceprincipal-post-owners.md
+                  - name: Remover proprietário
+                    href: api/serviceprincipal-delete-owners.md
+              - name: Políticas
+                items:
+                  - name: Política de mapeamento de declarações
+                    href: resources/claimsmappingpolicy.md
+                    items:
+                      - name: Atribuir políticas de mapeamento de declarações
+                        href: api/serviceprincipal-post-claimsmappingpolicies.md
+                      - name: Listar políticas de mapeamento de declarações
+                        href: api/serviceprincipal-list-claimsmappingpolicies.md
+                      - name: Remover políticas de mapeamento de declarações
+                        href: api/serviceprincipal-delete-claimsmappingpolicies.md
+                  - name: Política de descoberta de realm inicial
+                    href: resources/homerealmdiscoverypolicy.md
+                    items:
+                      - name: Atribuir políticas de descoberta de realm inicial
+                        href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+                      - name: Listar políticas de descoberta de realm inicial
+                        href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+                      - name: Remover políticas de descoberta de realm inicial
+                        href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: Política do tempo de vida do token
+                    href: resources/tokenlifetimepolicy.md
+                    items:
+                      - name: Atribuir políticas de tempo de vida do token
+                        href: api/application-post-tokenlifetimepolicies.md
+                      - name: Listar políticas de vida útil de token
+                        href: api/application-list-tokenlifetimepolicies.md
+                      - name: Remover políticas de tempo de vida do token
+                        href: api/application-delete-tokenlifetimepolicies.md
+              - name: Logon único
+                items:
+                  - name: Criar credenciais de logon único de senha
+                    href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
+                  - name: Obter credenciais de logon único de senha
+                    href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
+                  - name: Atualizar credenciais de logon único de senha
+                    href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
+                  - name: Excluir credenciais de logon único de senha
+                    href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
+          - name: Sincronização
+            href: resources/synchronization-overview.md
+            items:
+              - name: Sincronizar atributos de destino personalizados
+                href: resources/synchronization-configure-with-custom-target-attributes.md
+              - name: Sincronizar atributos de extensão de diretório
+                href: resources/synchronization-configure-with-directory-extension-attributes.md
+              - name: Definição de diretório
+                href: resources/synchronization-directorydefinition.md
+                items:
+                  - name: Descobrir
+                    href: api/directorydefinition-discover.md
+              - name: Trabalho
+                href: resources/synchronization-synchronizationjob.md
+                items:
+                  - name: Listar trabalhos
+                    href: api/synchronization-synchronizationjob-list.md
+                  - name: Criar trabalho
+                    href: api/synchronization-synchronizationjob-post.md
+                  - name: Obter trabalho
+                    href: api/synchronization-synchronizationjob-get.md
+                  - name: Iniciar trabalho
+                    href: api/synchronization-synchronizationjob-start.md
+                  - name: Pausar trabalho
+                    href: api/synchronization-synchronizationjob-pause.md
+                  - name: Reiniciar trabalho
+                    href: api/synchronization-synchronizationjob-restart.md
+                  - name: Excluir trabalho
+                    href: api/synchronization-synchronizationjob-delete.md
+                  - name: Configurar sob demanda
+                    href: api/synchronization-synchronizationjob-provision-on-demand.md
+              - name: Esquema
+                href: resources/synchronization-synchronizationschema.md
+                items:
+                  - name: Obter esquema
+                    href: api/synchronization-synchronizationschema-get.md
+                  - name: Obter funções de esquema
+                    href: api/synchronization-synchronizationschema-functions.md
+                  - name: Obter operadores do filtro de esquema
+                    href: api/synchronization-synchronizationschema-filteroperators.md
+                  - name: Atualizar esquema
+                    href: api/synchronization-synchronizationschema-update.md
+                  - name: Redefinir esquema
+                    href: api/synchronization-synchronizationschema-delete.md
+              - name: Modelo
+                href: resources/synchronization-synchronizationtemplate.md
+                items:
+                  - name: Listar modelos
+                    href: api/synchronization-synchronizationtemplate-list.md
+                  - name: Obter modelo
+                    href: api/synchronization-synchronizationtemplate-get.md
       - name: Calendário
         href: resources/calendar.md
         displayname: Outlook calendar
@@ -1174,6 +1487,8 @@ items:
                     href: api/printer-create.md
                   - name: Obter
                     href: api/printer-get.md
+                  - name: Atualizar
+                    href: api/printer-update.md
                   - name: Excluir
                     href: api/printer-delete.md
                   - name: Obter recursos
@@ -1278,7 +1593,7 @@ items:
                   - name: Perfil de registro de proprietário do dispositivo Android
                     href: resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-list.md
                       - name: Obter
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-get.md
@@ -1378,7 +1693,7 @@ items:
                   - name: Aplicativo LOB do Android
                     href: resources/intune-apps-androidlobapp.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-androidlobapp-list.md
                       - name: Obter
                         href: api/intune-apps-androidlobapp-get.md
@@ -1444,7 +1759,7 @@ items:
                   - name: Esquema de configuração do aplicativo do repositório gerenciado Android
                     href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-list.md
                       - name: Obter
                         href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-get.md
@@ -1484,7 +1799,7 @@ items:
                   - name: Aplicativo da loja Android
                     href: resources/intune-apps-androidstoreapp.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-apps-androidstoreapp-list.md
                       - name: Obter
                         href: api/intune-apps-androidstoreapp-get.md
@@ -1583,7 +1898,7 @@ items:
                   - name: Aplicativo da loja iOS
                     href: resources/intune-apps-iosstoreapp.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-iosstoreapp-list.md
                       - name: Obter
                         href: api/intune-apps-iosstoreapp-get.md
@@ -1596,7 +1911,7 @@ items:
                   - name: Aplicativo VPP do iOS
                     href: resources/intune-apps-iosvppapp.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-iosvppapp-list.md
                       - name: Obter
                         href: api/intune-apps-iosvppapp-get.md
@@ -1669,7 +1984,7 @@ items:
                   - name: Atribuição de livros eletrônicos do VPP do iOS
                     href: resources/intune-books-iosvppebookassignment.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-books-iosvppebookassignment-list.md
                       - name: Obter
                         href: api/intune-books-iosvppebookassignment-get.md
@@ -1682,7 +1997,7 @@ items:
                   - name: Aplicativo LOB para macOS
                     href: resources/intune-apps-macoslobapp.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-apps-macoslobapp-list.md
                       - name: Obter
                         href: api/intune-apps-macoslobapp-get.md
@@ -1823,7 +2138,7 @@ items:
                   - name: Status do dispositivo de configuração do aplicativo móvel gerenciado
                     href: resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-list.md
                       - name: Obter
                         href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-get.md
@@ -1911,7 +2226,7 @@ items:
                   - name: Aplicativo da loja iOS gerenciado
                     href: resources/intune-apps-managediosstoreapp.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-apps-managediosstoreapp-list.md
                       - name: Obter
                         href: api/intune-apps-managediosstoreapp-get.md
@@ -1924,7 +2239,7 @@ items:
                   - name: Aplicativo LOB móvel gerenciado
                     href: resources/intune-apps-managedmobilelobapp.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-apps-managedmobilelobapp-list.md
                       - name: Obter
                         href: api/intune-apps-managedmobilelobapp-get.md
@@ -2002,7 +2317,7 @@ items:
                   - name: Arquivo de conteúdo do aplicativo móvel
                     href: resources/intune-apps-mobileappcontentfile.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-mobileappcontentfile-list.md
                       - name: Obter
                         href: api/intune-apps-mobileappcontentfile-get.md
@@ -2036,7 +2351,7 @@ items:
                   - name: Status de instalação do aplicativo móvel
                     href: resources/intune-apps-mobileappinstallstatus.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-mobileappinstallstatus-list.md
                       - name: Obter
                         href: api/intune-apps-mobileappinstallstatus-get.md
@@ -2107,7 +2422,7 @@ items:
                   - name: Atribuição de configuração de cliente do Office
                     href: resources/intune-cirrus-officeclientconfigurationassignment.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-cirrus-officeclientconfigurationassignment-list.md
                       - name: Obter
                         href: api/intune-cirrus-officeclientconfigurationassignment-get.md
@@ -2129,7 +2444,7 @@ items:
                   - name: Aplicativo do pacote Office
                     href: resources/intune-apps-officesuiteapp.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-apps-officesuiteapp-list.md
                       - name: Obter
                         href: api/intune-apps-officesuiteapp-get.md
@@ -2185,7 +2500,7 @@ items:
                   - name: Aplicativo Web
                     href: resources/intune-apps-webapp.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-webapp-list.md
                       - name: Obter
                         href: api/intune-apps-webapp-get.md
@@ -2198,7 +2513,7 @@ items:
                   - name: Aplicativo LOB do Win32
                     href: resources/intune-apps-win32lobapp.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-win32lobapp-list.md
                       - name: Obter
                         href: api/intune-apps-win32lobapp-get.md
@@ -2269,7 +2584,7 @@ items:
                   - name: Windows AppX
                     href: resources/intune-apps-windowsappx.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-apps-windowsappx-list.md
                       - name: Obter
                         href: api/intune-apps-windowsappx-get.md
@@ -2355,7 +2670,7 @@ items:
                   - name: Pacote AppX do Windows Phone 8.1
                     href: resources/intune-apps-windowsphone81appxbundle.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-apps-windowsphone81appxbundle-list.md
                       - name: Obter
                         href: api/intune-apps-windowsphone81appxbundle-get.md
@@ -2368,7 +2683,7 @@ items:
                   - name: Aplicativo da loja do Windows Phone 8.1
                     href: resources/intune-apps-windowsphone81storeapp.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-windowsphone81storeapp-list.md
                       - name: Obter
                         href: api/intune-apps-windowsphone81storeapp-get.md
@@ -2462,7 +2777,7 @@ items:
                   - name: Atribuição de termos e condições
                     href: resources/intune-companyterms-termsandconditionsassignment.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-companyterms-termsandconditionsassignment-list.md
                       - name: Obter
                         href: api/intune-companyterms-termsandconditionsassignment-get.md
@@ -2536,7 +2851,7 @@ items:
                   - name: Perfil de implantação do Windows Autopilot do Azure AD
                     href: resources/intune-enrollment-azureadwindowsautopilotdeploymentprofile.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-list.md
                       - name: Obter
                         href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-get.md
@@ -2569,7 +2884,7 @@ items:
                   - name: Perfil de registro de iOS do DEP
                     href: resources/intune-enrollment-depiosenrollmentprofile.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-enrollment-depiosenrollmentprofile-list.md
                       - name: Obter
                         href: api/intune-enrollment-depiosenrollmentprofile-get.md
@@ -2686,7 +3001,7 @@ items:
                   - name: Resultado de identidade do dispositivo importada
                     href: resources/intune-enrollment-importeddeviceidentityresult.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-enrollment-importeddeviceidentityresult-list.md
                       - name: Obter
                         href: api/intune-enrollment-importeddeviceidentityresult-get.md
@@ -2745,7 +3060,7 @@ items:
                   - name: Identidade do dispositivo do Windows Autopilot
                     href: resources/intune-enrollment-windowsautopilotdeviceidentity.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-enrollment-windowsautopilotdeviceidentity-list.md
                       - name: Obter
                         href: api/intune-enrollment-windowsautopilotdeviceidentity-get.md
@@ -2999,7 +3314,7 @@ items:
                   - name: Configuração Wi-Fi do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-androiddeviceownerwificonfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androiddeviceownerwificonfiguration-get.md
@@ -3031,7 +3346,7 @@ items:
                   - name: Configuração de Wi-Fi corporativa do Android
                     href: resources/intune-deviceconfig-androidenterprisewificonfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-androidenterprisewificonfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidenterprisewificonfiguration-get.md
@@ -3114,7 +3429,7 @@ items:
                   - name: Configuração do EAS do Gmail do Android for Work
                     href: resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-get.md
@@ -3209,7 +3524,7 @@ items:
                   - name: Configuração de Wi-Fi do Android for Work
                     href: resources/intune-deviceconfig-androidforworkwificonfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-androidforworkwificonfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidforworkwificonfiguration-get.md
@@ -3222,7 +3537,7 @@ items:
                   - name: Configuração geral do dispositivo Android
                     href: resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-get.md
@@ -3235,7 +3550,7 @@ items:
                   - name: Perfil certificado PFX importado do Android
                     href: resources/intune-deviceconfig-androidimportedpfxcertificateprofile.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-get.md
@@ -3321,7 +3636,7 @@ items:
                   - name: Configuração de Wi-Fi do Android
                     href: resources/intune-deviceconfig-androidwificonfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-androidwificonfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidwificonfiguration-get.md
@@ -3432,7 +3747,7 @@ items:
                   - name: Perfil de certificado do PKCS do perfil de trabalho do Android
                     href: resources/intune-deviceconfig-androidworkprofilepkcscertificateprofile.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-androidworkprofilepkcscertificateprofile-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidworkprofilepkcscertificateprofile-get.md
@@ -3460,7 +3775,7 @@ items:
                   - name: Certificado raiz confiável do perfil de trabalho do Android
                     href: resources/intune-deviceconfig-androidworkprofiletrustedrootcertificate.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-androidworkprofiletrustedrootcertificate-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidworkprofiletrustedrootcertificate-get.md
@@ -3529,7 +3844,7 @@ items:
                   - name: Configuração de VPN da Apple
                     href: resources/intune-deviceconfig-applevpnconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-applevpnconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-applevpnconfiguration-get.md
@@ -3607,7 +3922,7 @@ items:
                   - name: Política de conformidade do dispositivo padrão
                     href: resources/intune-deviceconfig-defaultdevicecompliancepolicy.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-defaultdevicecompliancepolicy-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-defaultdevicecompliancepolicy-get.md
@@ -3696,7 +4011,7 @@ items:
                   - name: Status do dispositivo de conformidade do dispositivo
                     href: resources/intune-deviceconfig-devicecompliancedevicestatus.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-devicecompliancedevicestatus-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-devicecompliancedevicestatus-get.md
@@ -3746,7 +4061,7 @@ items:
                   - name: Ação de conformidade agendada do dispositivo para a regra
                     href: resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-get.md
@@ -3853,7 +4168,7 @@ items:
                   - name: Atribuição de grupo de configuração do dispositivo
                     href: resources/intune-deviceconfig-deviceconfigurationgroupassignment.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-deviceconfigurationgroupassignment-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-deviceconfigurationgroupassignment-get.md
@@ -3968,7 +4283,7 @@ items:
                   - name: Configuração de atualização da edição
                     href: resources/intune-deviceconfig-editionupgradeconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-editionupgradeconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-editionupgradeconfiguration-get.md
@@ -4038,7 +4353,7 @@ items:
                   - name: Atribuição da configuração de política de grupo
                     href: resources/intune-grouppolicy-grouppolicyconfigurationassignment.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-grouppolicy-grouppolicyconfigurationassignment-list.md
                       - name: Obter
                         href: api/intune-grouppolicy-grouppolicyconfigurationassignment-get.md
@@ -4069,7 +4384,7 @@ items:
                   - name: Valor de definição de política de grupo
                     href: resources/intune-grouppolicy-grouppolicydefinitionvalue.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-grouppolicy-grouppolicydefinitionvalue-list.md
                       - name: Obter
                         href: api/intune-grouppolicy-grouppolicydefinitionvalue-get.md
@@ -4186,7 +4501,7 @@ items:
                   - name: Caixa multitexto de apresentação da política de grupo
                     href: resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-list.md
                       - name: Obter
                         href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-get.md
@@ -4290,7 +4605,7 @@ items:
                   - name: Multitexto do valor da apresentação da política de grupo
                     href: resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-grouppolicy-grouppolicypresentationvaluemultitext-list.md
                       - name: Obter
                         href: api/intune-grouppolicy-grouppolicypresentationvaluemultitext-get.md
@@ -4398,7 +4713,7 @@ items:
                   - name: Perfil de certificado do iOS
                     href: resources/intune-deviceconfig-ioscertificateprofile.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-ioscertificateprofile-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-ioscertificateprofile-get.md
@@ -4507,7 +4822,7 @@ items:
                   - name: Configuração de Wi-Fi corporativa do iOS
                     href: resources/intune-deviceconfig-iosenterprisewificonfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-iosenterprisewificonfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-iosenterprisewificonfiguration-get.md
@@ -4594,7 +4909,7 @@ items:
                   - name: Perfil de certificado do SCEP do iOS
                     href: resources/intune-deviceconfig-iosscepcertificateprofile.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-iosscepcertificateprofile-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-iosscepcertificateprofile-get.md
@@ -4613,7 +4928,7 @@ items:
                   - name: Certificado raiz confiável do iOS
                     href: resources/intune-deviceconfig-iostrustedrootcertificate.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-iostrustedrootcertificate-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-iostrustedrootcertificate-get.md
@@ -4654,7 +4969,7 @@ items:
                   - name: Configuração de VPN do iOS
                     href: resources/intune-deviceconfig-iosvpnconfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-iosvpnconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-iosvpnconfiguration-get.md
@@ -4677,7 +4992,7 @@ items:
                   - name: Configuração de Wi-Fi do iOS
                     href: resources/intune-deviceconfig-ioswificonfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-ioswificonfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-ioswificonfiguration-get.md
@@ -4812,7 +5127,7 @@ items:
                   - name: Configuração de proteção de ponto de extremidade do macOS
                     href: resources/intune-deviceconfig-macosendpointprotectionconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-macosendpointprotectionconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-macosendpointprotectionconfiguration-get.md
@@ -4825,7 +5140,7 @@ items:
                   - name: Configuração de Wi-Fi corporativa do macOS
                     href: resources/intune-deviceconfig-macosenterprisewificonfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-macosenterprisewificonfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-macosenterprisewificonfiguration-get.md
@@ -4908,7 +5223,7 @@ items:
                   - name: Perfil de certificado do SCEP do macOS
                     href: resources/intune-deviceconfig-macosscepcertificateprofile.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-macosscepcertificateprofile-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-macosscepcertificateprofile-get.md
@@ -4929,7 +5244,7 @@ items:
                   - name: Certificado raiz confiável do macOS
                     href: resources/intune-deviceconfig-macostrustedrootcertificate.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-macostrustedrootcertificate-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-macostrustedrootcertificate-get.md
@@ -5050,7 +5365,7 @@ items:
                   - name: Conector NDES
                     href: resources/intune-deviceconfig-ndesconnector.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-ndesconnector-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-ndesconnector-get.md
@@ -5228,7 +5543,7 @@ items:
                   - name: Configuração de PC compartilhado
                     href: resources/intune-deviceconfig-sharedpcconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-sharedpcconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-sharedpcconfiguration-get.md
@@ -5281,7 +5596,7 @@ items:
                   - name: Certificado PFX do usuário
                     href: resources/intune-raimportcerts-userpfxcertificate.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-raimportcerts-userpfxcertificate-list.md
                       - name: Obter
                         href: api/intune-raimportcerts-userpfxcertificate-get.md
@@ -5417,7 +5732,7 @@ items:
                   - name: Configuração de perfil de email do EAS do Windows 10
                     href: resources/intune-deviceconfig-windows10easemailprofileconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-windows10easemailprofileconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windows10easemailprofileconfiguration-get.md
@@ -5458,7 +5773,7 @@ items:
                   - name: Configuração geral do Windows 10
                     href: resources/intune-deviceconfig-windows10generalconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-windows10generalconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windows10generalconfiguration-get.md
@@ -5525,7 +5840,7 @@ items:
                   - name: Perfil de certificado dos PKCS do Windows 10
                     href: resources/intune-deviceconfig-windows10pkcscertificateprofile.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-windows10pkcscertificateprofile-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windows10pkcscertificateprofile-get.md
@@ -5551,7 +5866,7 @@ items:
                   - name: Configuração geral do Windows 10 Team
                     href: resources/intune-deviceconfig-windows10teamgeneralconfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windows10teamgeneralconfiguration-get.md
@@ -5659,7 +5974,7 @@ items:
                   - name: Configuração de importação de Wi-Fi do Windows 8.1
                     href: resources/intune-deviceconfig-windows81wifiimportconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-windows81wifiimportconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windows81wifiimportconfiguration-get.md
@@ -5674,7 +5989,7 @@ items:
                   - name: Base de perfil de certificado do Windows
                     href: resources/intune-deviceconfig-windowscertificateprofilebase.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-windowscertificateprofilebase-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windowscertificateprofilebase-get.md
@@ -5763,7 +6078,7 @@ items:
                   - name: Configuração de quiosque do Windows
                     href: resources/intune-deviceconfig-windowskioskconfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-windowskioskconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windowskioskconfiguration-get.md
@@ -5883,7 +6198,7 @@ items:
                   - name: Configuração de VPN do Windows Phone 8.1
                     href: resources/intune-deviceconfig-windowsphone81vpnconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-windowsphone81vpnconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windowsphone81vpnconfiguration-get.md
@@ -5989,7 +6304,7 @@ items:
                   - name: Configuração de EAP corporativa de Wi-Fi do Windows
                     href: resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-get.md
@@ -6081,7 +6396,7 @@ items:
                   - name: Condição de gerenciamento de cerca geográfica circular
                     href: resources/intune-fencing-circulargeofencemanagementcondition.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-fencing-circulargeofencemanagementcondition-list.md
                       - name: Obter
                         href: api/intune-fencing-circulargeofencemanagementcondition-get.md
@@ -6150,7 +6465,7 @@ items:
                   - name: Aplicativo detectado
                     href: resources/intune-devices-detectedapp.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-devices-detectedapp-list.md
                       - name: Obter
                         href: api/intune-devices-detectedapp-get.md
@@ -6292,7 +6607,7 @@ items:
                   - name: Definição de configuração complexa abstrata de gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-list.md
                       - name: Obter
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-get.md
@@ -6305,7 +6620,7 @@ items:
                   - name: Instância de configuração complexa abstrata de gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-list.md
                       - name: Obter
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-get.md
@@ -6389,7 +6704,7 @@ items:
                   - name: Definição de configuração complexa de gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-list.md
                       - name: Obter
                         href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-get.md
@@ -6402,7 +6717,7 @@ items:
                   - name: Instância de configuração complexa de gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-list.md
                       - name: Obter
                         href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-get.md
@@ -6507,7 +6822,7 @@ items:
                   - name: Categoria de configuração de tentativa do gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementintentsettingcategory.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceintent-devicemanagementintentsettingcategory-list.md
                       - name: Obter
                         href: api/intune-deviceintent-devicemanagementintentsettingcategory-get.md
@@ -6522,7 +6837,7 @@ items:
                   - name: Estado do usuário de tentativa do gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementintentuserstate.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceintent-devicemanagementintentuserstate-list.md
                       - name: Obter
                         href: api/intune-deviceintent-devicemanagementintentuserstate-get.md
@@ -6607,7 +6922,7 @@ items:
                   - name: Categoria de configuração do gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementsettingcategory.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceintent-devicemanagementsettingcategory-list.md
                       - name: Obter
                         href: api/intune-deviceintent-devicemanagementsettingcategory-get.md
@@ -6624,7 +6939,7 @@ items:
                   - name: Definição de configuração do gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementsettingdefinition.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceintent-devicemanagementsettingdefinition-list.md
                       - name: Obter
                         href: api/intune-deviceintent-devicemanagementsettingdefinition-get.md
@@ -6946,7 +7261,7 @@ items:
                   - name: Instrução de condição de gerenciamento
                     href: resources/intune-fencing-managementconditionstatement.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-fencing-managementconditionstatement-list.md
                       - name: Obter
                         href: api/intune-fencing-managementconditionstatement-get.md
@@ -7052,7 +7367,7 @@ items:
                   - name: Auditoria de ação remota
                     href: resources/intune-devices-remoteactionaudit.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-devices-remoteactionaudit-list.md
                       - name: Obter
                         href: api/intune-devices-remoteactionaudit-get.md
@@ -7342,7 +7657,7 @@ items:
                   - name: Dispositivo gerenciado do Windows
                     href: resources/intune-devices-windowsmanageddevice.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-devices-windowsmanageddevice-list.md
                       - name: Obter
                         href: api/intune-devices-windowsmanageddevice-get.md
@@ -7362,7 +7677,7 @@ items:
                   - name: Estado de integridade do aplicativo de gerenciamento do Windows
                     href: resources/intune-devices-windowsmanagementapphealthstate.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-devices-windowsmanagementapphealthstate-list.md
                       - name: Obter
                         href: api/intune-devices-windowsmanagementapphealthstate-get.md
@@ -7481,7 +7796,7 @@ items:
                   - name: Operação do aplicativo gerenciado
                     href: resources/intune-mam-managedappoperation.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-mam-managedappoperation-list.md
                       - name: Obter
                         href: api/intune-mam-managedappoperation-get.md
@@ -7534,7 +7849,7 @@ items:
                   - name: Status de aplicativo gerenciado
                     href: resources/intune-mam-managedappstatus.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-mam-managedappstatus-list.md
                       - name: Obter
                         href: api/intune-mam-managedappstatus-get.md
@@ -7596,7 +7911,7 @@ items:
                   - name: Resumo de aprendizagem de aplicativos da proteção de informações do Windows
                     href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
                       - name: Obter
                         href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
@@ -7679,7 +7994,7 @@ items:
                   - name: Ação wipe de proteção de informações do Windows
                     href: resources/intune-mam-windowsinformationprotectionwipeaction.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-mam-windowsinformationprotectionwipeaction-list.md
                       - name: Obter
                         href: api/intune-mam-windowsinformationprotectionwipeaction-get.md
@@ -7810,7 +8125,7 @@ items:
                   - name: Atribuição de configuração do registro
                     href: resources/intune-onboarding-enrollmentconfigurationassignment.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-onboarding-enrollmentconfigurationassignment-list.md
                       - name: Obter
                         href: api/intune-onboarding-enrollmentconfigurationassignment-get.md
@@ -7875,7 +8190,7 @@ items:
                   - name: Token VPP
                     href: resources/intune-onboarding-vpptoken.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-onboarding-vpptoken-list.md
                       - name: Obter
                         href: api/intune-onboarding-vpptoken-get.md
@@ -7904,7 +8219,7 @@ items:
                   - name: Configuração da página de conclusão do registro do Windows 10
                     href: resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-list.md
                       - name: Obter
                         href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-get.md
@@ -8009,7 +8324,7 @@ items:
                   - name: Marca de escopo de função
                     href: resources/intune-rbac-rolescopetag.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-rbac-rolescopetag-list.md
                       - name: Obter
                         href: api/intune-rbac-rolescopetag-get.md
@@ -8131,7 +8446,7 @@ items:
                   - name: Configuração de registro do dispositivo
                     href: resources/intune-shared-deviceenrollmentconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-shared-deviceenrollmentconfiguration-list.md
                       - name: Obter
                         href: api/intune-shared-deviceenrollmentconfiguration-get.md
@@ -8291,7 +8606,7 @@ items:
                   - name: Evento de solução de problemas de aplicativo móvel
                     href: resources/intune-shared-mobileapptroubleshootingevent.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-shared-mobileapptroubleshootingevent-list.md
                       - name: Obter
                         href: api/intune-shared-mobileapptroubleshootingevent-get.md
@@ -8350,7 +8665,7 @@ items:
                   - name: Usuário
                     href: resources/intune-shared-user.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-shared-user-list.md
                       - name: Obter
                         href: api/intune-shared-user-get.md
@@ -9007,1238 +9322,933 @@ items:
         items:
           - name: Visão geral
             href: resources/azure-ad-overview.md
-          - name: Avaliações do acesso
-            href: resources/accessreviews-root.md
+          - name: Gerenciamento de diretório
             items:
-              - name: Revisão de acesso
-                href: resources/accessreview.md
+              - name: Unidade administrativa
+                href: resources/administrativeunit.md
                 items:
-                  - name: Listar avaliações de acesso
-                    href: api/accessreview-list.md
-                  - name: Obter revisão de acesso
-                    href: api/accessreview-get.md
-                  - name: Criar revisão de acesso
-                    href: api/accessreview-create.md
-                  - name: Atualizar revisão de acesso
-                    href: api/accessreview-update.md
-                  - name: Excluir revisão de acesso
-                    href: api/accessreview-delete.md
-                  - name: Adicionar revisor
-                    href: api/accessreview-addreviewer.md
-                  - name: Listar decisões
-                    href: api/accessreview-listdecisions.md
-                  - name: Listar minhas decisões
-                    href: api/accessreview-listmydecisions.md
-                  - name: Listar revisores
-                    href: api/accessreview-listreviewers.md
-                  - name: Remover revisor
-                    href: api/accessreview-removereviewer.md
-                  - name: Redefinir
-                    href: api/accessreview-reset.md
-                  - name: Enviar lembrete
-                    href: api/accessreview-sendreminder.md
-                  - name: Parar
-                    href: api/accessreview-stop.md
-              - name: Modelo de fluxo de negócios
-                href: resources/businessflowtemplate.md
-                items:
-                  - name: List
-                    href: api/businessflowtemplate-list.md
-              - name: Programa
-                href: resources/program.md
-                items:
+                  - name: Listar
+                    href: api/administrativeunit-list.md
                   - name: Criar
-                    href: api/program-create.md
-                  - name: Excluir
-                    href: api/program-delete.md
-                  - name: List
-                    href: api/program-list.md
+                    href: api/administrativeunit-post-administrativeunits.md
+                  - name: Obter
+                    href: api/administrativeunit-get.md
                   - name: Atualizar
-                    href: api/program-update.md
-                  - name: Controles de lista
-                    href: api/program-listcontrols.md
-              - name: Controle de programa
-                href: resources/programcontrol.md
-                items:
-                  - name: Criar
-                    href: api/programcontrol-create.md
+                    href: api/administrativeunit-update.md
                   - name: Excluir
-                    href: api/programcontrol-delete.md
-                  - name: List
-                    href: api/programcontrol-list.md
-              - name: Tipo de controle de programa
-                href: resources/programcontroltype.md
-                items:
-                  - name: Listar
-                    href: api/programcontroltype-list.md
-          - name: Unidade administrativa
-            href: resources/administrativeunit.md
-            items:
-              - name: Listar
-                href: api/administrativeunit-list.md
-              - name: Criar
-                href: api/administrativeunit-post-administrativeunits.md
-              - name: Obter
-                href: api/administrativeunit-get.md
-              - name: Atualizar
-                href: api/administrativeunit-update.md
-              - name: Excluir
-                href: api/administrativeunit-delete.md
-              - name: Obter intervalo
-                href: api/administrativeunit-delta.md
-              - name: Adicionar um membro
-                href: api/administrativeunit-post-members.md
-              - name: Listar membros
-                href: api/administrativeunit-list-members.md
-              - name: Obter um membro
-                href: api/administrativeunit-get-members.md
-              - name: Remover um membro
-                href: api/administrativeunit-delete-members.md
-              - name: Adicionar um administrador de função no escopo
-                href: api/administrativeunit-post-scopedrolemembers.md
-              - name: Listar administradores de função no escopo
-                href: api/administrativeunit-list-scopedrolemembers.md
-              - name: Obter um administrador de função no escopo
-                href: api/administrativeunit-get-scopedrolemembers.md
-              - name: Remover um administrador de função no escopo
-                href: api/administrativeunit-delete-scopedrolemembers.md
-          - name: Aplicativo
-            href: resources/application.md
-            items:
-              - name: Listar aplicativos
-                href: api/application-list.md
-              - name: Criar aplicativo
-                href: api/application-post-applications.md
-              - name: Obter aplicativo
-                href: api/application-get.md
-              - name: Atualizar aplicativo
-                href: api/application-update.md
-              - name: Excluir aplicativo
-                href: api/application-delete.md
-              - name: Obter intervalo
-                href: api/application-delta.md
-              - name: Listar aplicativos excluídos
-                href: api/directory-deleteditems-list.md
-              - name: Obter o aplicativo excluído
-                href: api/directory-deleteditems-get.md
-              - name: Excluir aplicativo permanentemente
-                href: api/directory-deleteditems-delete.md
-              - name: Restaurar aplicativo excluído
-                href: api/directory-deleteditems-restore.md
-              - name: Certificados & segredos
-                items:
-                  - name: Adicionar senha
-                    href: api/application-addpassword.md
-                  - name: Remover senha
-                    href: api/application-removepassword.md
-                  - name: Tecla Adicionar
-                    href: api/application-addkey.md
-                  - name: Remover chave
-                    href: api/application-removekey.md
-              - name: Extensões
-                items:
-                  - name: Listar extensões
-                    href: api/application-list-extensionproperty.md
-                  - name: Criar extensão
-                    href: api/application-post-extensionproperty.md
-                  - name: Excluir extensão
-                    href: api/application-delete-extensionproperty.md
-              - name: Owners
-                items:
-                  - name: Listar proprietários
-                    href: api/application-list-owners.md
-                  - name: Adicionar proprietário
-                    href: api/application-post-owners.md
-                  - name: Remover proprietário
-                    href: api/application-delete-owners.md
-              - name: Políticas
-                items:
-                  - name: Listar políticas atribuídas
-                    href: api/policy-list-assigned.md
-                  - name: Atribiur tokenLifetimePolicy
-                    href: api/application-post-tokenlifetimepolicies.md
-                  - name: Listar tokenLifetimePolicies
-                    href: api/application-list-tokenlifetimepolicies.md
-                  - name: Remover tokenLifetimePolicy
-                    href: api/application-delete-tokenlifetimepolicies.md
-              - name: Modelo de aplicativo
-                href: resources/applicationtemplate.md
-                items:
-                  - name: Listar modelos de aplicativo
-                    href: api/applicationtemplate-list.md
-                  - name: Obter modelo de aplicativo
-                    href: api/applicationtemplate-get.md
-                  - name: Criar um modelo de aplicativo
-                    href: api/applicationtemplate-instantiate.md
-          - name: Logs de auditoria
-            href: resources/azure-ad-auditlog-overview.md
-            items:
-              - name: Auditoria de diretório
-                href: resources/directoryaudit.md
-                items:
-                  - name: Listar auditorias de diretório
-                    href: api/directoryaudit-list.md
-                  - name: Obter auditoria de diretório
-                    href: api/directoryaudit-get.md
-              - name: Entrar
-                href: resources/signin.md
-                items:
-                  - name: Listar entradas
-                    href: api/signin-list.md
-                  - name: Obter entrada
-                    href: api/signin-get.md
-              - name: Modo de Provisionamento
-                href: resources/provisioningobjectsummary.md
-                items:
-                  - name: Provisionamento de lista
-                    href: api/provisioningobjectsummary-list.md
-          - name: Política de fluxos de autenticação
-            items:
-              - name: Política de fluxos de autenticação
-                href: resources/authenticationflowspolicy.md
-                items:
-                  - name: Obter
-                    href: api/authenticationflowspolicy-get.md
-                  - name: Atualizar
-                    href: api/authenticationflowspolicy-update.md
-          - name: Métodos de autenticação
-            items:
-              - name: Visão Geral
-                href: resources/authenticationmethods-overview.md
-              - name: Método de autenticação
-                href: resources/authenticationmethod.md
-                items:
-                  - name: Lista
-                    href: api/authentication-list-methods.md
-                  - name: Obter
-                    href: api/authenticationmethod-get.md
-              - name: Senha
-                href: resources/passwordauthenticationmethod.md
-                items:
-                  - name: Lista
-                    href: api/authentication-list-passwordmethods.md
-                  - name: Obter
-                    href: api/passwordauthenticationmethod-get.md
-                  - name: Redefinir
-                    href: api/passwordauthenticationmethod-resetpassword.md
-                  - name: Obter status da operação
-                    href: api/authenticationoperation-get.md
-              - name: Phone
-                href: resources/phoneauthenticationmethod.md
-                items:
-                  - name: Lista
-                    href: api/authentication-list-phonemethods.md
-                  - name: Obter
-                    href: api/phoneauthenticationmethod-get.md
-                  - name: Atualizar
-                    href: api/phoneauthenticationmethod-update.md
-                  - name: Excluir
-                    href: api/phoneauthenticationmethod-delete.md
-                  - name: Adicionar
-                    href: api/authentication-post-phonemethods.md
-                  - name: Habilitar entrada do SMS
-                    href: api/phoneauthenticationmethod-enablesmssignin.md
-                  - name: Desabilitar entrada do SMS
-                    href: api/phoneauthenticationmethod-disablesmssignin.md
-          - name: Configuração de autenticação baseada em certificado
-            href: resources/certificatebasedauthconfiguration.md
-            items:
-              - name: Lista
-                href: api/certificatebasedauthconfiguration-list.md
-              - name: Obter
-                href: api/certificatebasedauthconfiguration-get.md
-              - name: Criar
-                href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-              - name: Excluir
-                href: api/certificatebasedauthconfiguration-delete.md
-          - name: Acesso condicional
-            items:
-              - name: Políticas
-                items:
-                  - name: Política de acesso condicional
-                    href: resources/conditionalaccesspolicy.md
-                  - name: Listar
-                    href: api/conditionalaccessroot-list-policies.md
-                  - name: Criar
-                    href: api/conditionalaccessroot-post-policies.md
-                  - name: Obter
-                    href: api/conditionalaccesspolicy-get.md
-                  - name: Atualizar
-                    href: api/conditionalaccesspolicy-update.md
-                  - name: Excluir
-                    href: api/conditionalaccesspolicy-delete.md
-              - name: Locais nomeados
-                items:
-                  - name: Local nomeado
-                    items:
-                      - name: Local nomeado
-                        href: resources/namedlocation.md
-                      - name: Lista
-                        href: api/conditionalaccessroot-list-namedlocations.md
-                      - name: Obter
-                        href: api/namedlocation-get.md
-                      - name: Excluir
-                        href: api/namedlocation-delete.md
-                  - name: Localização nomeada do país
-                    items:
-                      - name: Localização nomeada do país
-                        href: resources/countrynamedlocation.md
-                      - name: Listar
-                        href: api/conditionalaccessroot-list-namedlocations.md
-                      - name: Criar
-                        href: api/conditionalaccessroot-post-namedlocations.md
-                      - name: Obter
-                        href: api/countrynamedlocation-get.md
-                      - name: Atualizar
-                        href: api/countrynamedlocation-update.md
-                      - name: Excluir
-                        href: api/countrynamedlocation-delete.md
-                  - name: Local nomeado por IP
-                    items:
-                      - name: Local nomeado por IP
-                        href: resources/ipnamedlocation.md
-                      - name: Listar
-                        href: api/conditionalaccessroot-list-namedlocations.md
-                      - name: Criar
-                        href: api/conditionalaccessroot-post-namedlocations.md
-                      - name: Obter
-                        href: api/ipnamedlocation-get.md
-                      - name: Atualizar
-                        href: api/ipnamedlocation-update.md
-                      - name: Excluir
-                        href: api/ipnamedlocation-delete.md
-          - name: Contratos
-            href: resources/contract.md
-            items:
-              - name: Obter contrato
-                href: api/contract-get.md
-              - name: Listar contratos
-                href: api/contract-list.md
-          - name: Operações de política de dados
-            href: resources/datapolicyoperation.md
-            items:
-              - name: Obter operações de política de dados
-                href: api/datapolicyoperation-get.md
-          - name: Subsídios de permissão delegada
-            href: resources/oauth2permissiongrant.md
-            items:
-              - name: Listar concessões de permissão delegada
-                href: api/oauth2permissiongrant-list.md
-              - name: Obter subsídios de permissão delegada
-                href: api/oauth2permissiongrant-get.md
-              - name: Criar concessão de permissão delegada
-                href: api/oauth2permissiongrant-post.md
-              - name: Atualizar concessão de permissão delegada
-                href: api/oauth2permissiongrant-update.md
-              - name: Excluir concessão de permissão delegada
-                href: api/oauth2permissiongrant-delete.md
-              - name: Obter intervalo
-                href: api/oauth2permissiongrant-delta.md
-          - name: Itens excluídos
-            href: resources/directory.md
-            items:
-              - name: Obter item excluído
-                href: api/directory-deleteditems-get.md
-              - name: Listar itens excluídos
-                href: api/directory-deleteditems-list.md
-              - name: Excluir permanentemente item
-                href: api/directory-deleteditems-delete.md
-              - name: Restaurar item excluído
-                href: api/directory-deleteditems-restore.md
-              - name: Listar itens excluídos pertencentes ao usuário
-                href: api/directory-deleteditems-user-owned.md
-          - name: Dispositivo
-            href: resources/device.md
-            items:
-              - name: Listar dispositivos
-                href: api/device-list.md
-              - name: Criar dispositivo
-                href: api/device-post-devices.md
-              - name: Obter dispositivo
-                href: api/device-get.md
-              - name: Atualizar dispositivo
-                href: api/device-update.md
-              - name: Excluir dispositivo
-                href: api/device-delete.md
-              - name: Listar proprietários registrados
-                href: api/device-list-registeredowners.md
-              - name: Listar usuários registrados
-                href: api/device-list-registeredusers.md
-              - name: Criar proprietário registrado
-                href: api/device-post-registeredowners.md
-              - name: Criar usuário registrado
-                href: api/device-post-registeredusers.md
-              - name: Listar grupos de dispositivos
-                href: api/device-list-memberof.md
-              - name: Listar grupos transitivos de dispositivo
-                href: api/device-list-transitivememberof.md
-              - name: Verificar objetos member
-                href: api/device-checkmemberobjects.md
-          - name: Objeto de diretório
-            href: resources/directoryobject.md
-            items:
-              - name: Obter objeto de diretório
-                href: api/directoryobject-get.md
-              - name: Excluir objeto de diretório
-                href: api/directoryobject-delete.md
-              - name: Obter objetos de membros
-                href: api/directoryobject-getmemberobjects.md
-              - name: Obter grupos de membros
-                href: api/directoryobject-getmembergroups.md
-              - name: Verificar grupos de membros
-                href: api/directoryobject-checkmembergroups.md
-              - name: Obter directoryObjects por ids
-                href: api/directoryobject-getbyids.md
-              - name: Validar propriedades
-                href: api/directoryobject-validateproperties.md
-          - name: Função de diretório
-            href: resources/directoryrole.md
-            items:
-              - name: Listar funções de diretório
-                href: api/directoryrole-list.md
-              - name: Ativar a função de diretório
-                href: api/directoryrole-post-directoryroles.md
-              - name: Obter função de diretório
-                href: api/directoryrole-get.md
-              - name: Listar membros
-                href: api/directoryrole-list-members.md
-              - name: Adicionar membro
-                href: api/directoryrole-post-members.md
-              - name: Remover membro
-                href: api/directoryrole-delete-member.md
-              - name: Listar administradores no escopo
-                href: api/directoryrole-list-scopedadministrators.md
-          - name: Modelo de função de diretório
-            href: resources/directoryroletemplate.md
-            items:
-              - name: Listar modelos de função de diretório
-                href: api/directoryroletemplate-list.md
-              - name: Obter modelo de função de diretório
-                href: api/directoryroletemplate-get.md
-          - name: Configuração de diretório
-            href: resources/directorysetting.md
-            items:
-              - name: Criar configuração
-                href: api/directorysetting-post-settings.md
-              - name: Obter configuração
-                href: api/directorysetting-get.md
-              - name: Listar configurações
-                href: api/directorysetting-list.md
-              - name: Atualizar configuração
-                href: api/directorysetting-update.md
-              - name: Excluir configuração
-                href: api/directorysetting-delete.md
-          - name: Modelo de configuração de diretório
-            href: resources/directorysettingtemplate.md
-            items:
-              - name: Listar modelos de configuração de diretório
-                href: api/directorysettingtemplate-list.md
-              - name: Obter modelo de configuração de diretório
-                href: api/directorysettingtemplate-get.md
-          - name: Domínios
-            href: resources/domain.md
-            items:
-              - name: Listar domínios
-                href: api/domain-list.md
-              - name: Criar domínio
-                href: api/domain-post-domains.md
-              - name: Excluir domínio
-                href: api/domain-forcedelete.md
-              - name: Obter domínio
-                href: api/domain-get.md
-              - name: Atualizar domínio
-                href: api/domain-update.md
-              - name: Verificar domínio
-                href: api/domain-verify.md
-          - name: Gerenciamento de qualificação
-            href: resources/entitlementmanagement-root.md
-            items:
-              - name: Pacote de acesso
-                href: resources/accesspackage.md
-                items:
-                  - name: Listar
-                    href: api/accesspackage-list.md
-                  - name: Criar
-                    href: api/accesspackage-post.md
-                  - name: Obter
-                    href: api/accesspackage-get.md
-                  - name: Excluir
-                    href: api/accesspackage-delete.md
-              - name: Atribuição de pacote de acesso
-                href: resources/accesspackageassignment.md
-                items:
-                  - name: List
-                    href: api/accesspackageassignment-list.md
-              - name: Política de atribuição de pacote do Access
-                href: resources/accesspackageassignmentpolicy.md
-                items:
-                  - name: Listar
-                    href: api/accesspackageassignmentpolicy-list.md
-                  - name: Criar
-                    href: api/accesspackageassignmentpolicy-post.md
-                  - name: Obter
-                    href: api/accesspackageassignmentpolicy-get.md
-                  - name: Excluir
-                    href: api/accesspackageassignmentpolicy-delete.md
-              - name: Solicitação de atribuição de pacote de acesso
-                href: resources/accesspackageassignmentrequest.md
-                items:
-                  - name: Listar
-                    href: api/accesspackageassignmentrequest-list.md
-                  - name: Criar
-                    href: api/accesspackageassignmentrequest-post.md
-                  - name: Obter
-                    href: api/accesspackageassignmentrequest-get.md
-              - name: Função de recurso de atribuição de pacote do Access
-                href: resources/accesspackageassignmentresourcerole.md
-                items:
-                  - name: Lista
-                    href: api/accesspackageassignmentresourcerole-list.md
-                  - name: Obter
-                    href: api/accesspackageassignmentresourcerole-get.md
-              - name: Catálogo de pacotes do Access
-                href: resources/accesspackagecatalog.md
-                items:
-                  - name: Listar
-                    href: api/accesspackagecatalog-list.md
-                  - name: Criar
-                    href: api/accesspackagecatalog-post.md
-                  - name: Obter
-                    href: api/accesspackagecatalog-get.md
-                  - name: Excluir
-                    href: api/accesspackagecatalog-delete.md
-                  - name: Listar recursos
-                    href: api/accesspackagecatalog-list-accesspackageresources.md
-                  - name: Listar funções de recurso
-                    href: api/accesspackagecatalog-list-accesspackageresourceroles.md
-              - name: Solicitação de recurso de pacote do Access
-                href: resources/accesspackageresourcerequest.md
-                items:
-                  - name: Listar
-                    href: api/accesspackageresourcerequest-list.md
-                  - name: Criar
-                    href: api/accesspackageresourcerequest-post.md
-              - name: Escopo de função de recurso de pacote de acesso
-                href: resources/accesspackageresourcerolescope.md
-                items:
-                  - name: Listar
-                    href: api/accesspackage-list-accesspackageresourcerolescopes.md
-                  - name: Criar
-                    href: api/accesspackage-post-accesspackageresourcerolescopes.md
-          - name: Política de distribuição de recursos
-            href: resources/featurerolloutpolicy.md
-            items:
-              - name: Lista
-                href: api/directory-list-featurerolloutpolicies.md
-              - name: Obter
-                href: api/featurerolloutpolicy-get.md
-              - name: Criar
-                href: api/directory-post-featurerolloutpolicies.md
-              - name: Atualizar
-                href: api/featurerolloutpolicy-update.md
-              - name: Excluir
-                href: api/featurerolloutpolicy-delete.md
-              - name: Criar aplica-se
-                href: api/featurerolloutpolicy-post-appliesto.md
-              - name: Excluir aplica-se
-                href: api/featurerolloutpolicy-delete-appliesto.md
-          - name: Proteção de identidade
-            href: resources/identityprotection-root.md
-            items:
-              - name: Eventos de risco de identidade
-                href: resources/identityriskevent.md
-                items:
-                  - name: Listar identityRiskEvent
-                    href: api/identityriskevent-list.md
-                  - name: Obter identityRiskEvent
-                    href: api/identityriskevent-get.md
-                  - name: Listar anonymousIpRiskEvent
-                    href: api/anonymousipriskevent-list.md
-                  - name: Obter anonymousIpRiskEvent
-                    href: api/anonymousipriskevent-get.md
-                  - name: Listar impossibleTravelRiskEvent
-                    href: api/impossibletravelriskevent-list.md
-                  - name: Obter impossibleTravelRiskEvent
-                    href: api/impossibletravelriskevent-get.md
-                  - name: Listar leakedCredentialsRiskEvent
-                    href: api/leakedcredentialsriskevent-list.md
-                  - name: Obter leakedCredentialsRiskEvent
-                    href: api/leakedcredentialsriskevent-get.md
-                  - name: Listar malwareRiskEvent
-                    href: api/malwareriskevent-list.md
-                  - name: Obter malwareRiskEvent
-                    href: api/malwareriskevent-get.md
-                  - name: Listar suspiciousIpRiskEvent
-                    href: api/suspiciousipriskevent-list.md
-                  - name: Obter suspiciousIpRiskEvent
-                    href: api/suspiciousipriskevent-get.md
-                  - name: Listar unfamiliarLocationRiskEvent
-                    href: api/unfamiliarlocationriskevent-list.md
-                  - name: Obter unfamiliarLocationRiskEvent
-                    href: api/unfamiliarlocationriskevent-get.md
-              - name: Detecção de risco
-                href: resources/riskdetection.md
-                items:
-                  - name: Listar detecções de riscos
-                    href: api/riskdetection-list.md
-                  - name: Obter a detecção de riscos
-                    href: api/riskdetection-get.md
-              - name: Usuário arriscado
-                href: resources/riskyuser.md
-                items:
-                  - name: Listar usuários arriscados
-                    href: api/riskyusers-list.md
-                  - name: Obter usuário arriscado
-                    href: api/riskyusers-get.md
-                  - name: Histórico de lista
-                    href: api/riskyuser-list-history.md
-                  - name: Confirmar comprometimento
-                    href: api/riskyusers-confirmcompromised.md
-                  - name: Ignorar
-                    href: api/riskyusers-dismiss.md
-          - name: Provedor de identidade
-            href: resources/identityprovider.md
-            items:
-              - name: Listar os provedores de identidade
-                href: api/identityprovider-list.md
-              - name: Criar o provedor de identidade
-                href: api/identityprovider-post-identityproviders.md
-              - name: Obter o provedor de identidade
-                href: api/identityprovider-get.md
-              - name: Atualizar provedor de identidade
-                href: api/identityprovider-update.md
-              - name: Excluir o provedor de identidade
-                href: api/identityprovider-delete.md
-          - name: Proteção de informações
-            items:
-              - name: Avaliação de ameaças
-                items:
-                  - name: Visão Geral
-                    href: resources/threatassessment-api-overview.md
-                  - name: Solicitação de avaliação de ameaças
-                    href: resources/threatassessmentrequest.md
-                  - name: Solicitação de avaliação de email
-                    href: resources/mailassessmentrequest.md
-                  - name: Solicitação de avaliação de arquivo de email
-                    href: resources/emailfileassessmentrequest.md
-                  - name: Solicitação de avaliação de arquivo
-                    href: resources/fileAssessmentRequest.md
-                  - name: Solicitação de avaliação de URL
-                    href: resources/urlassessmentrequest.md
-                  - name: Listar
-                    href: api/informationprotection-list-threatassessmentrequests.md
-                  - name: Criar
-                    href: api/informationprotection-post-threatassessmentrequests.md
-                  - name: Obter
-                    href: api/threatassessmentrequest-get.md
-          - name: Gerenciador de convites
-            href: resources/invitation.md
-            items:
-              - name: Criar convite
-                href: api/invitation-post.md
-          - name: Publicação local
-            href: resources/onpremisespublishingprofile-root.md
-            items:
-              - name: Agente local
-                href: resources/onpremisesagent.md
-                items:
-                  - name: Lista
-                    href: api/onpremisesagent-list.md
-                  - name: Obter
-                    href: api/onpremisesagent-get.md
-                  - name: Atribuir ao grupo de agentes
-                    href: api/onpremisesagent-post-agentgroups.md
-                  - name: Remover do grupo de agentes
-                    href: api/onpremisesagent-delete-agentgroups.md
-              - name: Grupo de agentes local
-                href: resources/onpremisesagentgroup.md
-                items:
-                  - name: Lista
-                    href: api/onpremisesagentgroup-list.md
-                  - name: Obter
-                    href: api/onpremisesagentgroup-get.md
-                  - name: Criar
-                    href: api/onpremisesagentgroup-post.md
-                  - name: Atualizar
-                    href: api/onpremisesagentgroup-update.md
-                  - name: Excluir
-                    href: api/onpremisesagentgroup-delete.md
-              - name: Perfil de publicação local
-                href: resources/onpremisespublishingprofile.md
-                items:
-                  - name: Obter
-                    href: api/onpremisespublishingprofile-get.md
-                  - name: Atualizar
-                    href: api/onpremisespublishingprofile-update.md
-              - name: Recurso publicado
-                href: resources/publishedresource.md
-                items:
-                  - name: Lista
-                    href: api/publishedresource-list.md
-                  - name: Obter
-                    href: api/publishedresource-get.md
-                  - name: Criar
-                    href: api/publishedresource-post.md
-                  - name: Atualizar
-                    href: api/publishedresource-update.md
-                  - name: Excluir
-                    href: api/publishedresource-delete.md
-                  - name: Atribuir ao grupo de agentes
-                    href: api/publishedresource-post-agentgroups.md
-                  - name: Remover do grupo de agentes
-                    href: api/publishedresource-delete-agentgroups.md
-              - name: Connector
-                href: resources/connector.md
-                items:
-                  - name: Lista
-                    href: api/connector-list.md
-                  - name: Obter
-                    href: api/connector-get.md
-                  - name: Listar memberOf
-                    href: api/connector-list-memberof.md
-                  - name: Adicionar conector ao conector
-                    href: api/connector-post-memberof.md
-              - name: Grupo de conectores
-                href: resources/connectorgroup.md
-                items:
-                  - name: Listar
-                    href: api/connectorgroup-list.md
-                  - name: Criar
-                    href: api/connectorgroup-post.md
-                  - name: Obter
-                    href: api/connectorgroup-get.md
-                  - name: Atualizar
-                    href: api/connectorgroup-update.md
-                  - name: Excluir
-                    href: api/connectorgroup-delete.md
-                  - name: Listar aplicativos
-                    href: api/connectorgroup-list-applications.md
+                    href: api/administrativeunit-delete.md
+                  - name: Obter intervalo
+                    href: api/administrativeunit-delta.md
+                  - name: Adicionar um membro
+                    href: api/administrativeunit-post-members.md
                   - name: Listar membros
-                    href: api/connectorgroup-list-members.md
-                  - name: Adicionar conector
-                    href: api/connectorgroup-post-members.md
-                  - name: Adicionar aplicativo
-                    href: api/connectorgroup-post-applications.md
-          - name: Organização
-            href: resources/organization.md
-            items:
-              - name: Obter detalhes org
-                href: api/organization-get.md
-              - name: Atualizar detalhes org
-                href: api/organization-update.md
-          - name: Contatos organizacionais
-            href: resources/orgcontact.md
-            items:
-              - name: Listar contatos org
-                href: api/orgcontact-list.md
-              - name: Obter contato org
-                href: api/orgcontact-get.md
-              - name: Atualizar contato org
-                href: api/orgcontact-update.md
-              - name: Excluir contato org
-                href: api/orgcontact-delete.md
-              - name: Obter Delta de contatos da organização
-                href: api/orgcontact-delta.md
-              - name: Grupos
-                href: resources/group.md
+                    href: api/administrativeunit-list-members.md
+                  - name: Obter um membro
+                    href: api/administrativeunit-get-members.md
+                  - name: Remover um membro
+                    href: api/administrativeunit-delete-members.md
+                  - name: Adicionar um administrador de função no escopo
+                    href: api/administrativeunit-post-scopedrolemembers.md
+                  - name: Listar administradores de função no escopo
+                    href: api/administrativeunit-list-scopedrolemembers.md
+                  - name: Obter um administrador de função no escopo
+                    href: api/administrativeunit-get-scopedrolemembers.md
+                  - name: Remover um administrador de função no escopo
+                    href: api/administrativeunit-delete-scopedrolemembers.md
+              - name: Contratos
+                href: resources/contract.md
                 items:
-                  - name: Listar memberOf
-                    href: api/orgcontact-list-memberof.md
-                  - name: Obter grupos de membros
-                    href: api/orgcontact-getmembergroups.md
-                  - name: Verificar grupos de membros
-                    href: api/orgcontact-checkmembergroups.md
-              - name: Hierarquia da organização
+                  - name: Obter contrato
+                    href: api/contract-get.md
+                  - name: Listar contratos
+                    href: api/contract-list.md
+              - name: Itens excluídos
+                href: resources/directory.md
+                items:
+                  - name: Obter item excluído
+                    href: api/directory-deleteditems-get.md
+                  - name: Listar itens excluídos
+                    href: api/directory-deleteditems-list.md
+                  - name: Excluir permanentemente item
+                    href: api/directory-deleteditems-delete.md
+                  - name: Restaurar item excluído
+                    href: api/directory-deleteditems-restore.md
+                  - name: Listar itens excluídos pertencentes ao usuário
+                    href: api/directory-deleteditems-user-owned.md
+              - name: Dispositivo
+                href: resources/device.md
+                items:
+                  - name: Listar dispositivos
+                    href: api/device-list.md
+                  - name: Criar dispositivo
+                    href: api/device-post-devices.md
+                  - name: Obter dispositivo
+                    href: api/device-get.md
+                  - name: Atualizar dispositivo
+                    href: api/device-update.md
+                  - name: Excluir dispositivo
+                    href: api/device-delete.md
+                  - name: Listar proprietários registrados
+                    href: api/device-list-registeredowners.md
+                  - name: Listar usuários registrados
+                    href: api/device-list-registeredusers.md
+                  - name: Criar proprietário registrado
+                    href: api/device-post-registeredowners.md
+                  - name: Criar usuário registrado
+                    href: api/device-post-registeredusers.md
+                  - name: Listar grupos de dispositivos
+                    href: api/device-list-memberof.md
+                  - name: Listar grupos transitivos de dispositivo
+                    href: api/device-list-transitivememberof.md
+                  - name: Verificar objetos member
+                    href: api/device-checkmemberobjects.md
+              - name: Objeto de diretório
                 href: resources/directoryobject.md
                 items:
-                  - name: Listar subordinados diretos
-                    href: api/orgcontact-list-directreports.md
-                  - name: Listar memberOf
-                    href: api/orgcontact-list-memberof.md
-                  - name: Obter gerente
-                    href: api/orgcontact-get-manager.md
+                  - name: Obter objeto de diretório
+                    href: api/directoryobject-get.md
+                  - name: Excluir objeto de diretório
+                    href: api/directoryobject-delete.md
                   - name: Obter objetos de membros
-                    href: api/orgcontact-getmemberobjects.md
-          - name: Política
-            href: resources/policy-overview.md
+                    href: api/directoryobject-getmemberobjects.md
+                  - name: Obter grupos de membros
+                    href: api/directoryobject-getmembergroups.md
+                  - name: Verificar grupos de membros
+                    href: api/directoryobject-checkmembergroups.md
+                  - name: Obter directoryObjects por ids
+                    href: api/directoryobject-getbyids.md
+                  - name: Validar propriedades
+                    href: api/directoryobject-validateproperties.md
+              - name: Função de diretório
+                href: resources/directoryrole.md
+                items:
+                  - name: Listar funções de diretório
+                    href: api/directoryrole-list.md
+                  - name: Ativar a função de diretório
+                    href: api/directoryrole-post-directoryroles.md
+                  - name: Obter função de diretório
+                    href: api/directoryrole-get.md
+                  - name: Listar membros
+                    href: api/directoryrole-list-members.md
+                  - name: Adicionar membro
+                    href: api/directoryrole-post-members.md
+                  - name: Remover membro
+                    href: api/directoryrole-delete-member.md
+                  - name: Listar administradores no escopo
+                    href: api/directoryrole-list-scopedadministrators.md
+              - name: Modelo de função de diretório
+                href: resources/directoryroletemplate.md
+                items:
+                  - name: Listar modelos de função de diretório
+                    href: api/directoryroletemplate-list.md
+                  - name: Obter modelo de função de diretório
+                    href: api/directoryroletemplate-get.md
+              - name: Configuração de diretório
+                href: resources/directorysetting.md
+                items:
+                  - name: Criar configuração
+                    href: api/directorysetting-post-settings.md
+                  - name: Obter configuração
+                    href: api/directorysetting-get.md
+                  - name: Listar configurações
+                    href: api/directorysetting-list.md
+                  - name: Atualizar configuração
+                    href: api/directorysetting-update.md
+                  - name: Excluir configuração
+                    href: api/directorysetting-delete.md
+              - name: Modelo de configuração de diretório
+                href: resources/directorysettingtemplate.md
+                items:
+                  - name: Listar modelos de configuração de diretório
+                    href: api/directorysettingtemplate-list.md
+                  - name: Obter modelo de configuração de diretório
+                    href: api/directorysettingtemplate-get.md
+              - name: Domínios
+                href: resources/domain.md
+                items:
+                  - name: Listar domínios
+                    href: api/domain-list.md
+                  - name: Criar domínio
+                    href: api/domain-post-domains.md
+                  - name: Excluir domínio
+                    href: api/domain-forcedelete.md
+                  - name: Obter domínio
+                    href: api/domain-get.md
+                  - name: Atualizar domínio
+                    href: api/domain-update.md
+                  - name: Verificar domínio
+                    href: api/domain-verify.md
+              - name: Política de distribuição de recursos
+                href: resources/featurerolloutpolicy.md
+                items:
+                  - name: Lista
+                    href: api/directory-list-featurerolloutpolicies.md
+                  - name: Obter
+                    href: api/featurerolloutpolicy-get.md
+                  - name: Criar
+                    href: api/directory-post-featurerolloutpolicies.md
+                  - name: Atualizar
+                    href: api/featurerolloutpolicy-update.md
+                  - name: Excluir
+                    href: api/featurerolloutpolicy-delete.md
+                  - name: Criar aplica-se
+                    href: api/featurerolloutpolicy-post-appliesto.md
+                  - name: Excluir aplica-se
+                    href: api/featurerolloutpolicy-delete-appliesto.md
+              - name: Organização
+                href: resources/organization.md
+                items:
+                  - name: Obter detalhes org
+                    href: api/organization-get.md
+                  - name: Atualizar detalhes org
+                    href: api/organization-update.md
+              - name: Contatos organizacionais
+                href: resources/orgcontact.md
+                items:
+                  - name: Listar contatos org
+                    href: api/orgcontact-list.md
+                  - name: Obter contato org
+                    href: api/orgcontact-get.md
+                  - name: Atualizar contato org
+                    href: api/orgcontact-update.md
+                  - name: Excluir contato org
+                    href: api/orgcontact-delete.md
+                  - name: Obter Delta de contatos da organização
+                    href: api/orgcontact-delta.md
+                  - name: Grupos
+                    href: resources/group.md
+                    items:
+                      - name: Listar memberOf
+                        href: api/orgcontact-list-memberof.md
+                      - name: Obter grupos de membros
+                        href: api/orgcontact-getmembergroups.md
+                      - name: Verificar grupos de membros
+                        href: api/orgcontact-checkmembergroups.md
+                  - name: Hierarquia da organização
+                    href: resources/directoryobject.md
+                    items:
+                      - name: Listar subordinados diretos
+                        href: api/orgcontact-list-directreports.md
+                      - name: Listar memberOf
+                        href: api/orgcontact-list-memberof.md
+                      - name: Obter gerente
+                        href: api/orgcontact-get-manager.md
+                      - name: Obter objetos de membros
+                        href: api/orgcontact-getmemberobjects.md
+                  - name: Sku inscrita
+                    href: resources/subscribedsku.md
+                    items:
+                      - name: Listar subscribedSkus
+                        href: api/subscribedsku-list.md
+                      - name: Obter subscribedSku
+                        href: api/subscribedsku-get.md
+          - name: Identidade e entrada
             items:
-              - name: Política de tempo limite baseada em atividade
-                href: resources/activitybasedtimeoutpolicy.md
+              - name: Logs de auditoria
+                href: resources/azure-ad-auditlog-overview.md
                 items:
-                  - name: Criar
-                    href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
-                  - name: Listar
-                    href: api/activitybasedtimeoutpolicy-list.md
-                  - name: Obter
-                    href: api/activitybasedtimeoutpolicy-get.md
-                  - name: Atualizar
-                    href: api/activitybasedtimeoutpolicy-update.md
-                  - name: Excluir
-                    href: api/activitybasedtimeoutpolicy-delete.md
-              - name: Política de autorização
-                href: resources/authorizationpolicy.md
-                items:
-                  - name: Obter
-                    href: api/authorizationpolicy-get.md
-                  - name: Atualizar
-                    href: api/authorizationpolicy-update.md
-              - name: Política de mapeamento de declarações
-                href: resources/claimsmappingpolicy.md
-                items:
-                  - name: Criar
-                    href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
-                  - name: Listar
-                    href: api/claimsmappingpolicy-list.md
-                  - name: Obter
-                    href: api/claimsmappingpolicy-get.md
-                  - name: Atualizar
-                    href: api/claimsmappingpolicy-update.md
-                  - name: Excluir
-                    href: api/claimsmappingpolicy-delete.md
-                  - name: Listar aplicadas ao aplicativo
-                    href: api/claimsmappingpolicy-list-appliesto.md
-              - name: Política de descoberta de realm inicial
-                href: resources/homerealmdiscoverypolicy.md
-                items:
-                  - name: Criar
-                    href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-                  - name: Listar
-                    href: api/homerealmdiscoverypolicy-list.md
-                  - name: Obter
-                    href: api/homerealmdiscoverypolicy-get.md
-                  - name: Atualizar
-                    href: api/homerealmdiscoverypolicy-update.md
-                  - name: Excluir
-                    href: api/homerealmdiscoverypolicy-delete.md
-                  - name: Listar aplicadas ao aplicativo
-                    href: api/homerealmdiscoverypolicy-list-appliesto.md
-              - name: Política de emissão de token
-                href: resources/tokenissuancepolicy.md
-                items:
-                  - name: Criar
-                    href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
-                  - name: Listar
-                    href: api/tokenissuancepolicy-list.md
-                  - name: Obter
-                    href: api/tokenissuancepolicy-get.md
-                  - name: Atualizar
-                    href: api/tokenissuancepolicy-update.md
-                  - name: Excluir
-                    href: api/tokenissuancepolicy-delete.md
-                  - name: Listar aplicadas ao aplicativo
-                    href: api/tokenissuancepolicy-list-appliesto.md
-              - name: Política do tempo de vida do token
-                href: resources/tokenlifetimepolicy.md
-                items:
-                  - name: Criar
-                    href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
-                  - name: Listar
-                    href: api/tokenlifetimepolicy-list.md
-                  - name: Obter
-                    href: api/tokenlifetimepolicy-get.md
-                  - name: Atualizar
-                    href: api/tokenlifetimepolicy-update.md
-                  - name: Excluir
-                    href: api/tokenlifetimepolicy-delete.md
-                  - name: Listar aplicadas ao aplicativo
-                    href: api/tokenlifetimepolicy-list-appliesto.md
-              - name: Política de padrões de segurança
-                href: resources/identitysecuritydefaultsenforcementpolicy.md
-                items:
-                  - name: Obter
-                    href: api/identitysecuritydefaultsenforcementpolicy-get.md
-                  - name: Atualizar
-                    href: api/identitysecuritydefaultsenforcementpolicy-update.md
-          - name: Privileged Identity Management
-            items:
-              - name: Privileged Identity Management
-                href: resources/privilegedidentitymanagement-root.md
-              - name: AD do Azure
-                items:
-                  - name: AD do Azure
-                    href: resources/privilegedidentitymanagement-directory.md
-                  - name: Função com privilégios
-                    href: resources/privilegedrole.md
+                  - name: Auditoria de diretório
+                    href: resources/directoryaudit.md
                     items:
-                      - name: Listar funções com privilégios
-                        href: api/privilegedrole-list.md
-                      - name: Obter função com privilégios
-                        href: api/privilegedrole-get.md
-                      - name: Listar atribuições de função
-                        href: api/privilegedrole-list-assignments.md
-                      - name: Ativar a função Self
-                        href: api/privilegedrole-selfactivate.md
-                      - name: Desativar a função Self
-                        href: api/privilegedrole-selfdeactivate.md
-                      - name: Obter configurações da função
-                        href: api/privilegedrolesettings-get.md
-                      - name: Atualizar configurações da função
-                        href: api/privilegedrolesettings-update.md
-                      - name: Obter resumo da função
-                        href: api/privilegedrolesummary-get.md
-                  - name: Atribuição de função com privilégios
-                    href: resources/privilegedroleassignment.md
+                      - name: Listar auditorias de diretório
+                        href: api/directoryaudit-list.md
+                      - name: Obter auditoria de diretório
+                        href: api/directoryaudit-get.md
+                  - name: Entrar
+                    href: resources/signin.md
                     items:
-                      - name: Listar atribuições de função
-                        href: api/privilegedroleassignment-list.md
-                      - name: Obter atribuição de função
-                        href: api/privilegedroleassignment-get.md
-                      - name: Criar atribuições de função
-                        href: api/privilegedroleassignment-post-privilegedroleassignments.md
-                      - name: Excluir atribuição de função
-                        href: api/privilegedroleassignment-delete.md
-                      - name: Obter minhas atribuições de função
-                        href: api/privilegedroleassignment-my.md
-                      - name: Tornar a atribuição de função qualificada
-                        href: api/privilegedroleassignment-makeeligible.md
-                      - name: Tornar a atribuição de função permanente
-                        href: api/privilegedroleassignment_makepermanent.md
-                  - name: Solicitação da atribuição de função com privilégios
-                    href: resources/privilegedroleassignmentrequest.md
+                      - name: Listar entradas
+                        href: api/signin-list.md
+                      - name: Obter entrada
+                        href: api/signin-get.md
+                  - name: Modo de Provisionamento
+                    href: resources/provisioningobjectsummary.md
                     items:
-                      - name: Listar atribuições de função
-                        href: api/privilegedroleassignmentrequest-list.md
-                      - name: Criar atribuições de função
-                        href: api/privilegedroleassignmentrequest-post.md
-                      - name: Cancelar atribuição de função
-                        href: api/privilegedroleassignmentrequest-cancel.md
-                      - name: Obter minhas atribuições de função
-                        href: api/privilegedroleassignmentrequest-my.md
-                  - name: Aprovação com privilégios
-                    href: resources/privilegedapproval.md
-                    items:
-                      - name: Listar aprovações com privilégios
-                        href: api/privilegedapproval-list.md
-                      - name: Obter aprovação com privilégios
-                        href: api/privilegedapproval-get.md
-                      - name: Atualizar atribuição de função
-                        href: api/privilegedapproval-update.md
-                  - name: Evento de auditoria
-                    href: resources/privilegedoperationevent.md
-                    items:
-                      - name: Listar eventos de auditoria
-                        href: api/privilegedoperationevent-list.md
-              - name: Recursos do Azure
+                      - name: Provisionamento de lista
+                        href: api/provisioningobjectsummary-list.md
+              - name: Política de fluxos de autenticação
                 items:
-                  - name: Recursos do Azure
-                    href: resources/privilegedidentitymanagement-resources.md
-                  - name: Recursos gerenciados
-                    href: resources/governanceresource.md
+                  - name: Política de fluxos de autenticação
+                    href: resources/authenticationflowspolicy.md
                     items:
-                      - name: Lista
-                        href: api/governanceresource-list.md
                       - name: Obter
-                        href: api/governanceresource-get.md
-                      - name: Registrar
-                        href: api/governanceresource-register.md
-                  - name: Definições de função
-                    href: resources/governanceroledefinition.md
-                    items:
-                      - name: Lista
-                        href: api/governanceroledefinition-list.md
-                      - name: Obter
-                        href: api/governanceroledefinition-get.md
-                  - name: Configurações de função
-                    href: resources/governancerolesetting.md
-                    items:
-                      - name: Lista
-                        href: api/governancerolesetting-list.md
-                      - name: Obter
-                        href: api/governancerolesetting-get.md
+                        href: api/authenticationflowspolicy-get.md
                       - name: Atualizar
-                        href: api/governancerolesetting-update.md
-                  - name: Atribuições de função
-                    href: resources/governanceroleassignment.md
+                        href: api/authenticationflowspolicy-update.md
+              - name: Métodos de autenticação
+                items:
+                  - name: Visão Geral
+                    href: resources/authenticationmethods-overview.md
+                  - name: Método de autenticação
+                    href: resources/authenticationmethod.md
                     items:
                       - name: Lista
-                        href: api/governanceroleassignment-list.md
+                        href: api/authentication-list-methods.md
                       - name: Obter
-                        href: api/governanceroleassignment-get.md
-                      - name: Exportar
-                        href: api/governanceroleassignment-export.md
-                  - name: Solicitações de atribuição de função
-                    href: resources/governanceroleassignmentrequest.md
+                        href: api/authenticationmethod-get.md
+                  - name: Senha
+                    href: resources/passwordauthenticationmethod.md
                     items:
+                      - name: Lista
+                        href: api/authentication-list-passwordmethods.md
+                      - name: Obter
+                        href: api/passwordauthenticationmethod-get.md
+                      - name: Redefinir
+                        href: api/passwordauthenticationmethod-resetpassword.md
+                      - name: Obter status da operação
+                        href: api/authenticationoperation-get.md
+                  - name: Phone
+                    href: resources/phoneauthenticationmethod.md
+                    items:
+                      - name: Lista
+                        href: api/authentication-list-phonemethods.md
+                      - name: Obter
+                        href: api/phoneauthenticationmethod-get.md
+                      - name: Atualizar
+                        href: api/phoneauthenticationmethod-update.md
+                      - name: Excluir
+                        href: api/phoneauthenticationmethod-delete.md
+                      - name: Adicionar
+                        href: api/authentication-post-phonemethods.md
+                      - name: Habilitar entrada do SMS
+                        href: api/phoneauthenticationmethod-enablesmssignin.md
+                      - name: Desabilitar entrada do SMS
+                        href: api/phoneauthenticationmethod-disablesmssignin.md
+              - name: Configuração de autenticação baseada em certificado
+                href: resources/certificatebasedauthconfiguration.md
+                items:
+                  - name: Lista
+                    href: api/certificatebasedauthconfiguration-list.md
+                  - name: Obter
+                    href: api/certificatebasedauthconfiguration-get.md
+                  - name: Criar
+                    href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                  - name: Excluir
+                    href: api/certificatebasedauthconfiguration-delete.md
+              - name: Acesso condicional
+                items:
+                  - name: Políticas
+                    items:
+                      - name: Política de acesso condicional
+                        href: resources/conditionalaccesspolicy.md
                       - name: Listar
-                        href: api/governanceroleassignmentrequest-list.md
+                        href: api/conditionalaccessroot-list-policies.md
                       - name: Criar
-                        href: api/governanceroleassignmentrequest-post.md
+                        href: api/conditionalaccessroot-post-policies.md
                       - name: Obter
-                        href: api/governanceroleassignmentrequest-get.md
+                        href: api/conditionalaccesspolicy-get.md
                       - name: Atualizar
-                        href: api/governanceroleassignmentrequest-update.md
-                      - name: Cancelar
-                        href: api/governanceroleassignmentrequest-cancel.md
-          - name: Gerenciamento de função
-            href: resources/rolemanagement.md
-            items:
-              - name: Definição de função
-                href: resources/unifiedroledefinition.md
+                        href: api/conditionalaccesspolicy-update.md
+                      - name: Excluir
+                        href: api/conditionalaccesspolicy-delete.md
+                  - name: Locais nomeados
+                    items:
+                      - name: Local nomeado
+                        items:
+                          - name: Local nomeado
+                            href: resources/namedlocation.md
+                          - name: Lista
+                            href: api/conditionalaccessroot-list-namedlocations.md
+                          - name: Obter
+                            href: api/namedlocation-get.md
+                          - name: Excluir
+                            href: api/namedlocation-delete.md
+                      - name: Localização nomeada do país
+                        items:
+                          - name: Localização nomeada do país
+                            href: resources/countrynamedlocation.md
+                          - name: Listar
+                            href: api/conditionalaccessroot-list-namedlocations.md
+                          - name: Criar
+                            href: api/conditionalaccessroot-post-namedlocations.md
+                          - name: Obter
+                            href: api/countrynamedlocation-get.md
+                          - name: Atualizar
+                            href: api/countrynamedlocation-update.md
+                          - name: Excluir
+                            href: api/countrynamedlocation-delete.md
+                      - name: Local nomeado por IP
+                        items:
+                          - name: Local nomeado por IP
+                            href: resources/ipnamedlocation.md
+                          - name: Listar
+                            href: api/conditionalaccessroot-list-namedlocations.md
+                          - name: Criar
+                            href: api/conditionalaccessroot-post-namedlocations.md
+                          - name: Obter
+                            href: api/ipnamedlocation-get.md
+                          - name: Atualizar
+                            href: api/ipnamedlocation-update.md
+                          - name: Excluir
+                            href: api/ipnamedlocation-delete.md
+              - name: Operações de política de dados
+                href: resources/datapolicyoperation.md
                 items:
-                  - name: Listar definições de função
-                    href: api/rbacapplication-list-roledefinitions.md
-                  - name: Criar definição de função
-                    href: api/rbacapplication-post-roledefinitions.md
-                  - name: Obter definição de função
-                    href: api/unifiedroledefinition-get.md
-                  - name: Atualizar definição de função
-                    href: api/unifiedroledefinition-update.md
-                  - name: Excluir definição de função
-                    href: api/unifiedroledefinition-delete.md
-              - name: Atribuição de função
-                href: resources/unifiedroleassignment.md
-                items:
-                  - name: Atribuição de função de lista
-                    href: api/rbacapplication-list-roleassignments.md
-                  - name: Criar atribuição de função
-                    href: api/rbacapplication-post-roleassignments.md
-                  - name: Obter atribuição de função
-                    href: api/unifiedroleassignment-get.md
-                  - name: Excluir atribuição de função
-                    href: api/unifiedroleassignment-delete.md
-              - name: Múltiplo de atribuição de função
-                href: resources/unifiedroleassignmentmultiple.md
-                items:
-                  - name: Listar
-                    href: api/unifiedroleassignmentmultiple-list.md
-                  - name: Criar
-                    href: api/unifiedroleassignmentmultiple-post.md
-                  - name: Obter
-                    href: api/unifiedroleassignmentmultiple-get.md
-                  - name: Atualizar
-                    href: api/unifiedroleassignmentmultiple-update.md
-                  - name: Excluir
-                    href: api/unifiedroleassignmentmultiple-delete.md
-          - name: Entidade de serviço
-            href: resources/serviceprincipal.md
-            items:
-              - name: Listar entidade de serviço
-                href: api/serviceprincipal-list.md
-              - name: Criar entidade de serviço
-                href: api/serviceprincipal-post-serviceprincipals.md
-              - name: Obter entidade de serviço
-                href: api/serviceprincipal-get.md
-              - name: Atualizar entidade de serviço
-                href: api/serviceprincipal-update.md
-              - name: Excluir entidade de serviço
-                href: api/serviceprincipal-delete.md
-              - name: List createdObjects
-                href: api/serviceprincipal-list-createdobjects.md
-              - name: List ownedObjects
-                href: api/serviceprincipal-list-ownedobjects.md
-              - name: delta
-                href: api/serviceprincipal-delta.md
-              - name: Atribuições de função de aplicativo
-                href: resources/approleassignment.md
-                items:
-                  - name: Listar atribuições de função de aplicativo
-                    href: api/serviceprincipal-list-approleassignments.md
-                  - name: Adicionar atribuição de função de aplicativo
-                    href: api/serviceprincipal-post-approleassignments.md
-                  - name: Remover atribuição de função de aplicativo
-                    href: api/serviceprincipal-delete-approleassignments.md
-                  - name: Listar a função de aplicativo atribuída a
-                    href: api/serviceprincipal-list-approleassignedto.md
-                  - name: Adicionar função de aplicativo atribuída a
-                    href: api/serviceprincipal-post-approleassignedto.md
-                  - name: Remover função de aplicativo atribuída a
-                    href: api/serviceprincipal-delete-approleassignedto.md
-              - name: Certificados e segredos
-                items:
-                  - name: Adicionar senha
-                    href: api/serviceprincipal-addpassword.md
-                  - name: Remover senha
-                    href: api/serviceprincipal-removepassword.md
-                  - name: Tecla Adicionar
-                    href: api/serviceprincipal-addkey.md
-                  - name: Remover chave
-                    href: api/serviceprincipal-removekey.md
+                  - name: Obter operações de política de dados
+                    href: api/datapolicyoperation-get.md
               - name: Subsídios de permissão delegada
+                href: resources/oauth2permissiongrant.md
                 items:
                   - name: Listar concessões de permissão delegada
-                    href: api/serviceprincipal-list-oauth2permissiongrants.md
-              - name: Associação
+                    href: api/oauth2permissiongrant-list.md
+                  - name: Obter subsídios de permissão delegada
+                    href: api/oauth2permissiongrant-get.md
+                  - name: Criar concessão de permissão delegada
+                    href: api/oauth2permissiongrant-post.md
+                  - name: Atualizar concessão de permissão delegada
+                    href: api/oauth2permissiongrant-update.md
+                  - name: Excluir concessão de permissão delegada
+                    href: api/oauth2permissiongrant-delete.md
+                  - name: Obter intervalo
+                    href: api/oauth2permissiongrant-delta.md
+              - name: Proteção de identidade
+                href: resources/identityprotection-root.md
                 items:
-                  - name: Listar memberOf
-                    href: api/serviceprincipal-list-memberof.md
-                  - name: Listar membros transitivos
-                    href: api/serviceprincipal-list-transitivememberof.md
-                  - name: checkMemberGroups
-                    href: api/serviceprincipal-checkmembergroups.md
-                  - name: checkMemberObjects
-                    href: api/serviceprincipal-checkmemberobjects.md
-                  - name: getMemberGroups
-                    href: api/serviceprincipal-getmembergroups.md
-                  - name: getMemberObjects
-                    href: api/serviceprincipal-getmemberobjects.md
-              - name: Owners
+                  - name: Eventos de risco de identidade
+                    href: resources/identityriskevent.md
+                    items:
+                      - name: Listar identityRiskEvent
+                        href: api/identityriskevent-list.md
+                      - name: Obter identityRiskEvent
+                        href: api/identityriskevent-get.md
+                      - name: Listar anonymousIpRiskEvent
+                        href: api/anonymousipriskevent-list.md
+                      - name: Obter anonymousIpRiskEvent
+                        href: api/anonymousipriskevent-get.md
+                      - name: Listar impossibleTravelRiskEvent
+                        href: api/impossibletravelriskevent-list.md
+                      - name: Obter impossibleTravelRiskEvent
+                        href: api/impossibletravelriskevent-get.md
+                      - name: Listar leakedCredentialsRiskEvent
+                        href: api/leakedcredentialsriskevent-list.md
+                      - name: Obter leakedCredentialsRiskEvent
+                        href: api/leakedcredentialsriskevent-get.md
+                      - name: Listar malwareRiskEvent
+                        href: api/malwareriskevent-list.md
+                      - name: Obter malwareRiskEvent
+                        href: api/malwareriskevent-get.md
+                      - name: Listar suspiciousIpRiskEvent
+                        href: api/suspiciousipriskevent-list.md
+                      - name: Obter suspiciousIpRiskEvent
+                        href: api/suspiciousipriskevent-get.md
+                      - name: Listar unfamiliarLocationRiskEvent
+                        href: api/unfamiliarlocationriskevent-list.md
+                      - name: Obter unfamiliarLocationRiskEvent
+                        href: api/unfamiliarlocationriskevent-get.md
+                  - name: Detecção de risco
+                    href: resources/riskdetection.md
+                    items:
+                      - name: Listar detecções de riscos
+                        href: api/riskdetection-list.md
+                      - name: Obter a detecção de riscos
+                        href: api/riskdetection-get.md
+                  - name: Usuário arriscado
+                    href: resources/riskyuser.md
+                    items:
+                      - name: Listar usuários arriscados
+                        href: api/riskyusers-list.md
+                      - name: Obter usuário arriscado
+                        href: api/riskyusers-get.md
+                      - name: Histórico de lista
+                        href: api/riskyuser-list-history.md
+                      - name: Confirmar comprometimento
+                        href: api/riskyusers-confirmcompromised.md
+                      - name: Ignorar
+                        href: api/riskyusers-dismiss.md
+              - name: Proteção de informações
                 items:
-                  - name: Listar proprietários
-                    href: api/serviceprincipal-list-owners.md
-                  - name: Adicionar proprietário
-                    href: api/serviceprincipal-post-owners.md
-                  - name: Remover proprietário
-                    href: api/serviceprincipal-delete-owners.md
-              - name: Políticas
+                  - name: Avaliação de ameaças
+                    items:
+                      - name: Visão Geral
+                        href: resources/threatassessment-api-overview.md
+                      - name: Solicitação de avaliação de ameaças
+                        href: resources/threatassessmentrequest.md
+                      - name: Solicitação de avaliação de email
+                        href: resources/mailassessmentrequest.md
+                      - name: Solicitação de avaliação de arquivo de email
+                        href: resources/emailfileassessmentrequest.md
+                      - name: Solicitação de avaliação de arquivo
+                        href: resources/fileAssessmentRequest.md
+                      - name: Solicitação de avaliação de URL
+                        href: resources/urlassessmentrequest.md
+                      - name: Listar
+                        href: api/informationprotection-list-threatassessmentrequests.md
+                      - name: Criar
+                        href: api/informationprotection-post-threatassessmentrequests.md
+                      - name: Obter
+                        href: api/threatassessmentrequest-get.md
+              - name: Provedor de identidade
+                href: resources/identityprovider.md
                 items:
+                  - name: Listar os provedores de identidade
+                    href: api/identityprovider-list.md
+                  - name: Criar o provedor de identidade
+                    href: api/identityprovider-post-identityproviders.md
+                  - name: Obter o provedor de identidade
+                    href: api/identityprovider-get.md
+                  - name: Atualizar provedor de identidade
+                    href: api/identityprovider-update.md
+                  - name: Excluir o provedor de identidade
+                    href: api/identityprovider-delete.md
+              - name: Gerenciador de convites
+                href: resources/invitation.md
+                items:
+                  - name: Criar convite
+                    href: api/invitation-post.md
+              - name: Política
+                href: resources/policy-overview.md
+                items:
+                  - name: Política de tempo limite baseada em atividade
+                    href: resources/activitybasedtimeoutpolicy.md
+                    items:
+                      - name: Criar
+                        href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
+                      - name: Listar
+                        href: api/activitybasedtimeoutpolicy-list.md
+                      - name: Obter
+                        href: api/activitybasedtimeoutpolicy-get.md
+                      - name: Atualizar
+                        href: api/activitybasedtimeoutpolicy-update.md
+                      - name: Excluir
+                        href: api/activitybasedtimeoutpolicy-delete.md
+                  - name: Política de autorização
+                    href: resources/authorizationpolicy.md
+                    items:
+                      - name: Obter
+                        href: api/authorizationpolicy-get.md
+                      - name: Atualizar
+                        href: api/authorizationpolicy-update.md
                   - name: Política de mapeamento de declarações
                     href: resources/claimsmappingpolicy.md
                     items:
-                      - name: Atribuir políticas de mapeamento de declarações
-                        href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Listar políticas de mapeamento de declarações
-                        href: api/serviceprincipal-list-claimsmappingpolicies.md
-                      - name: Remover políticas de mapeamento de declarações
-                        href: api/serviceprincipal-delete-claimsmappingpolicies.md
+                      - name: Criar
+                        href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
+                      - name: Listar
+                        href: api/claimsmappingpolicy-list.md
+                      - name: Obter
+                        href: api/claimsmappingpolicy-get.md
+                      - name: Atualizar
+                        href: api/claimsmappingpolicy-update.md
+                      - name: Excluir
+                        href: api/claimsmappingpolicy-delete.md
+                      - name: Listar aplicadas ao aplicativo
+                        href: api/claimsmappingpolicy-list-appliesto.md
                   - name: Política de descoberta de realm inicial
                     href: resources/homerealmdiscoverypolicy.md
                     items:
-                      - name: Atribuir políticas de descoberta de realm inicial
-                        href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Listar políticas de descoberta de realm inicial
-                        href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
-                      - name: Remover políticas de descoberta de realm inicial
-                        href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                      - name: Criar
+                        href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+                      - name: Listar
+                        href: api/homerealmdiscoverypolicy-list.md
+                      - name: Obter
+                        href: api/homerealmdiscoverypolicy-get.md
+                      - name: Atualizar
+                        href: api/homerealmdiscoverypolicy-update.md
+                      - name: Excluir
+                        href: api/homerealmdiscoverypolicy-delete.md
+                      - name: Listar aplicadas ao aplicativo
+                        href: api/homerealmdiscoverypolicy-list-appliesto.md
+                  - name: Política de emissão de token
+                    href: resources/tokenissuancepolicy.md
+                    items:
+                      - name: Criar
+                        href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
+                      - name: Lista
+                        href: api/tokenissuancepolicy-list.md
+                      - name: Obter
+                        href: api/tokenissuancepolicy-get.md
+                      - name: Atualizar
+                        href: api/tokenissuancepolicy-update.md
+                      - name: Excluir
+                        href: api/tokenissuancepolicy-delete.md
+                      - name: Listar aplicadas ao aplicativo
+                        href: api/tokenissuancepolicy-list-appliesto.md
                   - name: Política do tempo de vida do token
                     href: resources/tokenlifetimepolicy.md
                     items:
-                      - name: Atribuir políticas de tempo de vida do token
-                        href: api/application-post-tokenlifetimepolicies.md
-                      - name: Listar políticas de vida útil de token
-                        href: api/application-list-tokenlifetimepolicies.md
-                      - name: Remover políticas de tempo de vida do token
-                        href: api/application-delete-tokenlifetimepolicies.md
-              - name: Logon único
+                      - name: Criar
+                        href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+                      - name: Lista
+                        href: api/tokenlifetimepolicy-list.md
+                      - name: Obter
+                        href: api/tokenlifetimepolicy-get.md
+                      - name: Atualizar
+                        href: api/tokenlifetimepolicy-update.md
+                      - name: Excluir
+                        href: api/tokenlifetimepolicy-delete.md
+                      - name: Listar aplicadas ao aplicativo
+                        href: api/tokenlifetimepolicy-list-appliesto.md
+                  - name: Política de padrões de segurança
+                    href: resources/identitysecuritydefaultsenforcementpolicy.md
+                    items:
+                      - name: Obter
+                        href: api/identitysecuritydefaultsenforcementpolicy-get.md
+                      - name: Atualizar
+                        href: api/identitysecuritydefaultsenforcementpolicy-update.md
+              - name: Gerenciamento de função
+                href: resources/rolemanagement.md
                 items:
-                  - name: Criar credenciais de logon único de senha
-                    href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
-                  - name: Obter credenciais de logon único de senha
-                    href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
-                  - name: Atualizar credenciais de logon único de senha
-                    href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
-                  - name: Excluir credenciais de logon único de senha
-                    href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
-          - name: Sku inscrita
-            href: resources/subscribedsku.md
-            items:
-              - name: Listar subscribedSkus
-                href: api/subscribedsku-list.md
-              - name: Obter subscribedSku
-                href: api/subscribedsku-get.md
-          - name: Sincronização
-            href: resources/synchronization-overview.md
-            items:
-              - name: Sincronizar atributos de destino personalizados
-                href: resources/synchronization-configure-with-custom-target-attributes.md
-              - name: Sincronizar atributos de extensão de diretório
-                href: resources/synchronization-configure-with-directory-extension-attributes.md
-              - name: Definição de diretório
-                href: resources/synchronization-directorydefinition.md
+                  - name: Definição de função
+                    href: resources/unifiedroledefinition.md
+                    items:
+                      - name: Listar definições de função
+                        href: api/rbacapplication-list-roledefinitions.md
+                      - name: Criar definição de função
+                        href: api/rbacapplication-post-roledefinitions.md
+                      - name: Obter definição de função
+                        href: api/unifiedroledefinition-get.md
+                      - name: Atualizar definição de função
+                        href: api/unifiedroledefinition-update.md
+                      - name: Excluir definição de função
+                        href: api/unifiedroledefinition-delete.md
+                  - name: Atribuição de função
+                    href: resources/unifiedroleassignment.md
+                    items:
+                      - name: Atribuição de função de lista
+                        href: api/rbacapplication-list-roleassignments.md
+                      - name: Criar atribuição de função
+                        href: api/rbacapplication-post-roleassignments.md
+                      - name: Obter atribuição de função
+                        href: api/unifiedroleassignment-get.md
+                      - name: Excluir atribuição de função
+                        href: api/unifiedroleassignment-delete.md
+                  - name: Múltiplo de atribuição de função
+                    href: resources/unifiedroleassignmentmultiple.md
+                    items:
+                      - name: Listar
+                        href: api/unifiedroleassignmentmultiple-list.md
+                      - name: Criar
+                        href: api/unifiedroleassignmentmultiple-post.md
+                      - name: Obter
+                        href: api/unifiedroleassignmentmultiple-get.md
+                      - name: Atualizar
+                        href: api/unifiedroleassignmentmultiple-update.md
+                      - name: Excluir
+                        href: api/unifiedroleassignmentmultiple-delete.md
+              - name: Conjunto de chaves de estrutura de confiança
+                href: resources/trustframeworkkeyset.md
                 items:
-                  - name: Descobrir
-                    href: api/directorydefinition-discover.md
-              - name: Trabalho
-                href: resources/synchronization-synchronizationjob.md
+                  - name: Listar
+                    href: api/trustframework-list-keysets.md
+                  - name: Criar
+                    href: api/trustframework-post-keysets.md
+                  - name: Obter
+                    href: api/trustframeworkkeyset-get.md
+                  - name: Atualizar
+                    href: api/trustframeworkkeyset-update.md
+                  - name: Excluir
+                    href: api/trustframeworkkeyset-delete.md
+                  - name: Gerar chave
+                    href: api/trustframeworkkeyset-generatekey.md
+                  - name: Obter chave ativa
+                    href: api/trustframeworkkeyset-getactivekey.md
+                  - name: Carregar certificado
+                    href: api/trustframeworkkeyset-uploadcertificate.md
+                  - name: Carregar o certificado PKCS12
+                    href: api/trustframeworkkeyset-uploadpkcs12.md
+                  - name: Carregar segredo
+                    href: api/trustframeworkkeyset-uploadsecret.md
+              - name: Política de estrutura de confiança
+                href: resources/trustframeworkpolicy.md
                 items:
-                  - name: Listar trabalhos
-                    href: api/synchronization-synchronizationjob-list.md
-                  - name: Criar trabalho
-                    href: api/synchronization-synchronizationjob-post.md
-                  - name: Obter trabalho
-                    href: api/synchronization-synchronizationjob-get.md
-                  - name: Iniciar trabalho
-                    href: api/synchronization-synchronizationjob-start.md
-                  - name: Pausar trabalho
-                    href: api/synchronization-synchronizationjob-pause.md
-                  - name: Reiniciar trabalho
-                    href: api/synchronization-synchronizationjob-restart.md
-                  - name: Excluir trabalho
-                    href: api/synchronization-synchronizationjob-delete.md
-                  - name: Configurar sob demanda
-                    href: api/synchronization-synchronizationjob-provision-on-demand.md
-              - name: Esquema
-                href: resources/synchronization-synchronizationschema.md
+                  - name: Listar
+                    href: api/trustframework-list-trustframeworkpolicies.md
+                  - name: Criar
+                    href: api/trustframework-post-trustframeworkpolicy.md
+                  - name: Obter
+                    href: api/trustframeworkpolicy-get.md
+                  - name: Atualizar
+                    href: api/trustframework-put-trustframeworkpolicy.md
+                  - name: Excluir
+                    href: api/trustframeworkpolicy-delete.md
+              - name: Fluxos de usuário
+                href: resources/identityuserflow.md
                 items:
-                  - name: Obter esquema
-                    href: api/synchronization-synchronizationschema-get.md
-                  - name: Obter funções de esquema
-                    href: api/synchronization-synchronizationschema-functions.md
-                  - name: Obter operadores do filtro de esquema
-                    href: api/synchronization-synchronizationschema-filteroperators.md
-                  - name: Atualizar esquema
-                    href: api/synchronization-synchronizationschema-update.md
-                  - name: Redefinir esquema
-                    href: api/synchronization-synchronizationschema-delete.md
-              - name: Modelo
-                href: resources/synchronization-synchronizationtemplate.md
+                  - name: Listar
+                    href: api/identityuserflow-list.md
+                  - name: Criar
+                    href: api/identityuserflow-post-userflows.md
+                  - name: Obter
+                    href: api/identityuserflow-get.md
+                  - name: Excluir
+                    href: api/identityuserflow-delete.md
+          - name: Gestão
+            items:
+              - name: Avaliações do acesso
+                href: resources/accessreviews-root.md
                 items:
-                  - name: Listar modelos
-                    href: api/synchronization-synchronizationtemplate-list.md
-                  - name: Obter modelo
-                    href: api/synchronization-synchronizationtemplate-get.md
-          - name: Termos de uso
-            href: resources/agreement.md
-            items:
-              - name: Criar contrato
-                href: api/agreement-post-agreements.md
-              - name: Listar contratos
-                href: api/agreement-list.md
-              - name: Obter contrato
-                href: api/agreement-get.md
-              - name: Atualizar contrato
-                href: api/agreement-update.md
-              - name: Excluir contrato
-                href: api/agreement-delete.md
-              - name: Listar status de aceitação
-                href: api/user-list-agreementacceptances.md
-          - name: Política de estrutura de confiança
-            href: resources/trustframeworkpolicy.md
-            items:
-              - name: Listar
-                href: api/trustframework-list-trustframeworkpolicies.md
-              - name: Criar
-                href: api/trustframework-post-trustframeworkpolicy.md
-              - name: Obter
-                href: api/trustframeworkpolicy-get.md
-              - name: Atualizar
-                href: api/trustframework-put-trustframeworkpolicy.md
-              - name: Excluir
-                href: api/trustframeworkpolicy-delete.md
-          - name: Conjunto de chaves de estrutura de confiança
-            href: resources/trustframeworkkeyset.md
-            items:
-              - name: Listar
-                href: api/trustframework-list-keysets.md
-              - name: Criar
-                href: api/trustframework-post-keysets.md
-              - name: Obter
-                href: api/trustframeworkkeyset-get.md
-              - name: Atualizar
-                href: api/trustframeworkkeyset-update.md
-              - name: Excluir
-                href: api/trustframeworkkeyset-delete.md
-              - name: Gerar chave
-                href: api/trustframeworkkeyset-generatekey.md
-              - name: Obter chave ativa
-                href: api/trustframeworkkeyset-getactivekey.md
-              - name: Carregar certificado
-                href: api/trustframeworkkeyset-uploadcertificate.md
-              - name: Carregar o certificado PKCS12
-                href: api/trustframeworkkeyset-uploadpkcs12.md
-              - name: Carregar segredo
-                href: api/trustframeworkkeyset-uploadsecret.md
-          - name: Fluxos de usuário
-            href: resources/identityuserflow.md
-            items:
-              - name: Listar
-                href: api/identityuserflow-list.md
-              - name: Criar
-                href: api/identityuserflow-post-userflows.md
-              - name: Obter
-                href: api/identityuserflow-get.md
-              - name: Excluir
-                href: api/identityuserflow-delete.md
-      - name: Correio
+                  - name: Revisão de acesso
+                    href: resources/accessreview.md
+                    items:
+                      - name: Listar avaliações de acesso
+                        href: api/accessreview-list.md
+                      - name: Obter revisão de acesso
+                        href: api/accessreview-get.md
+                      - name: Criar revisão de acesso
+                        href: api/accessreview-create.md
+                      - name: Atualizar revisão de acesso
+                        href: api/accessreview-update.md
+                      - name: Excluir revisão de acesso
+                        href: api/accessreview-delete.md
+                      - name: Adicionar revisor
+                        href: api/accessreview-addreviewer.md
+                      - name: Listar decisões
+                        href: api/accessreview-listdecisions.md
+                      - name: Listar minhas decisões
+                        href: api/accessreview-listmydecisions.md
+                      - name: Listar revisores
+                        href: api/accessreview-listreviewers.md
+                      - name: Remover revisor
+                        href: api/accessreview-removereviewer.md
+                      - name: Redefinir
+                        href: api/accessreview-reset.md
+                      - name: Enviar lembrete
+                        href: api/accessreview-sendreminder.md
+                      - name: Parar
+                        href: api/accessreview-stop.md
+                  - name: Modelo de fluxo de negócios
+                    href: resources/businessflowtemplate.md
+                    items:
+                      - name: List
+                        href: api/businessflowtemplate-list.md
+                  - name: Programa
+                    href: resources/program.md
+                    items:
+                      - name: Criar
+                        href: api/program-create.md
+                      - name: Excluir
+                        href: api/program-delete.md
+                      - name: List
+                        href: api/program-list.md
+                      - name: Atualizar
+                        href: api/program-update.md
+                      - name: Controles de lista
+                        href: api/program-listcontrols.md
+                  - name: Controle de programa
+                    href: resources/programcontrol.md
+                    items:
+                      - name: Criar
+                        href: api/programcontrol-create.md
+                      - name: Excluir
+                        href: api/programcontrol-delete.md
+                      - name: Listar
+                        href: api/programcontrol-list.md
+                  - name: Tipo de controle de programa
+                    href: resources/programcontroltype.md
+                    items:
+                      - name: List
+                        href: api/programcontroltype-list.md
+              - name: Gerenciamento de qualificação
+                href: resources/entitlementmanagement-root.md
+                items:
+                  - name: Pacote de acesso
+                    href: resources/accesspackage.md
+                    items:
+                      - name: Listar
+                        href: api/accesspackage-list.md
+                      - name: Criar
+                        href: api/accesspackage-post.md
+                      - name: Obter
+                        href: api/accesspackage-get.md
+                      - name: Excluir
+                        href: api/accesspackage-delete.md
+                  - name: Atribuição de pacote de acesso
+                    href: resources/accesspackageassignment.md
+                    items:
+                      - name: List
+                        href: api/accesspackageassignment-list.md
+                  - name: Política de atribuição de pacote do Access
+                    href: resources/accesspackageassignmentpolicy.md
+                    items:
+                      - name: Listar
+                        href: api/accesspackageassignmentpolicy-list.md
+                      - name: Criar
+                        href: api/accesspackageassignmentpolicy-post.md
+                      - name: Obter
+                        href: api/accesspackageassignmentpolicy-get.md
+                      - name: Excluir
+                        href: api/accesspackageassignmentpolicy-delete.md
+                  - name: Solicitação de atribuição de pacote de acesso
+                    href: resources/accesspackageassignmentrequest.md
+                    items:
+                      - name: Listar
+                        href: api/accesspackageassignmentrequest-list.md
+                      - name: Criar
+                        href: api/accesspackageassignmentrequest-post.md
+                      - name: Obter
+                        href: api/accesspackageassignmentrequest-get.md
+                  - name: Função de recurso de atribuição de pacote do Access
+                    href: resources/accesspackageassignmentresourcerole.md
+                    items:
+                      - name: Lista
+                        href: api/accesspackageassignmentresourcerole-list.md
+                      - name: Obter
+                        href: api/accesspackageassignmentresourcerole-get.md
+                  - name: Catálogo de pacotes do Access
+                    href: resources/accesspackagecatalog.md
+                    items:
+                      - name: Listar
+                        href: api/accesspackagecatalog-list.md
+                      - name: Criar
+                        href: api/accesspackagecatalog-post.md
+                      - name: Obter
+                        href: api/accesspackagecatalog-get.md
+                      - name: Excluir
+                        href: api/accesspackagecatalog-delete.md
+                      - name: Listar recursos
+                        href: api/accesspackagecatalog-list-accesspackageresources.md
+                      - name: Listar funções de recurso
+                        href: api/accesspackagecatalog-list-accesspackageresourceroles.md
+                  - name: Solicitação de recurso de pacote do Access
+                    href: resources/accesspackageresourcerequest.md
+                    items:
+                      - name: Listar
+                        href: api/accesspackageresourcerequest-list.md
+                      - name: Criar
+                        href: api/accesspackageresourcerequest-post.md
+                  - name: Escopo de função de recurso de pacote de acesso
+                    href: resources/accesspackageresourcerolescope.md
+                    items:
+                      - name: Listar
+                        href: api/accesspackage-list-accesspackageresourcerolescopes.md
+                      - name: Criar
+                        href: api/accesspackage-post-accesspackageresourcerolescopes.md
+              - name: Privileged Identity Management
+                items:
+                  - name: Privileged Identity Management
+                    href: resources/privilegedidentitymanagement-root.md
+                  - name: AD do Azure
+                    items:
+                      - name: AD do Azure
+                        href: resources/privilegedidentitymanagement-directory.md
+                      - name: Função com privilégios
+                        href: resources/privilegedrole.md
+                        items:
+                          - name: Listar funções com privilégios
+                            href: api/privilegedrole-list.md
+                          - name: Obter função com privilégios
+                            href: api/privilegedrole-get.md
+                          - name: Listar atribuições de função
+                            href: api/privilegedrole-list-assignments.md
+                          - name: Ativar a função Self
+                            href: api/privilegedrole-selfactivate.md
+                          - name: Desativar a função Self
+                            href: api/privilegedrole-selfdeactivate.md
+                          - name: Obter configurações da função
+                            href: api/privilegedrolesettings-get.md
+                          - name: Atualizar configurações da função
+                            href: api/privilegedrolesettings-update.md
+                          - name: Obter resumo da função
+                            href: api/privilegedrolesummary-get.md
+                      - name: Atribuição de função com privilégios
+                        href: resources/privilegedroleassignment.md
+                        items:
+                          - name: Listar atribuições de função
+                            href: api/privilegedroleassignment-list.md
+                          - name: Obter atribuição de função
+                            href: api/privilegedroleassignment-get.md
+                          - name: Criar atribuições de função
+                            href: api/privilegedroleassignment-post-privilegedroleassignments.md
+                          - name: Excluir atribuição de função
+                            href: api/privilegedroleassignment-delete.md
+                          - name: Obter minhas atribuições de função
+                            href: api/privilegedroleassignment-my.md
+                          - name: Tornar a atribuição de função qualificada
+                            href: api/privilegedroleassignment-makeeligible.md
+                          - name: Tornar a atribuição de função permanente
+                            href: api/privilegedroleassignment_makepermanent.md
+                      - name: Solicitação da atribuição de função com privilégios
+                        href: resources/privilegedroleassignmentrequest.md
+                        items:
+                          - name: Listar atribuições de função
+                            href: api/privilegedroleassignmentrequest-list.md
+                          - name: Criar atribuições de função
+                            href: api/privilegedroleassignmentrequest-post.md
+                          - name: Cancelar atribuição de função
+                            href: api/privilegedroleassignmentrequest-cancel.md
+                          - name: Obter minhas atribuições de função
+                            href: api/privilegedroleassignmentrequest-my.md
+                      - name: Aprovação com privilégios
+                        href: resources/privilegedapproval.md
+                        items:
+                          - name: Listar aprovações com privilégios
+                            href: api/privilegedapproval-list.md
+                          - name: Obter aprovação com privilégios
+                            href: api/privilegedapproval-get.md
+                          - name: Atualizar atribuição de função
+                            href: api/privilegedapproval-update.md
+                      - name: Evento de auditoria
+                        href: resources/privilegedoperationevent.md
+                        items:
+                          - name: Listar eventos de auditoria
+                            href: api/privilegedoperationevent-list.md
+                  - name: Recursos do Azure
+                    items:
+                      - name: Recursos do Azure
+                        href: resources/privilegedidentitymanagement-resources.md
+                      - name: Recursos gerenciados
+                        href: resources/governanceresource.md
+                        items:
+                          - name: Lista
+                            href: api/governanceresource-list.md
+                          - name: Obter
+                            href: api/governanceresource-get.md
+                          - name: Registrar
+                            href: api/governanceresource-register.md
+                      - name: Definições de função
+                        href: resources/governanceroledefinition.md
+                        items:
+                          - name: Lista
+                            href: api/governanceroledefinition-list.md
+                          - name: Obter
+                            href: api/governanceroledefinition-get.md
+                      - name: Configurações de função
+                        href: resources/governancerolesetting.md
+                        items:
+                          - name: Lista
+                            href: api/governancerolesetting-list.md
+                          - name: Obter
+                            href: api/governancerolesetting-get.md
+                          - name: Atualizar
+                            href: api/governancerolesetting-update.md
+                      - name: Atribuições de função
+                        href: resources/governanceroleassignment.md
+                        items:
+                          - name: Lista
+                            href: api/governanceroleassignment-list.md
+                          - name: Obter
+                            href: api/governanceroleassignment-get.md
+                          - name: Exportar
+                            href: api/governanceroleassignment-export.md
+                      - name: Solicitações de atribuição de função
+                        href: resources/governanceroleassignmentrequest.md
+                        items:
+                          - name: Listar
+                            href: api/governanceroleassignmentrequest-list.md
+                          - name: Criar
+                            href: api/governanceroleassignmentrequest-post.md
+                          - name: Obter
+                            href: api/governanceroleassignmentrequest-get.md
+                          - name: Atualizar
+                            href: api/governanceroleassignmentrequest-update.md
+                          - name: Cancelar
+                            href: api/governanceroleassignmentrequest-cancel.md
+              - name: Termos de uso
+                href: resources/agreement.md
+                items:
+                  - name: Criar contrato
+                    href: api/agreement-post-agreements.md
+                  - name: Listar contratos
+                    href: api/agreement-list.md
+                  - name: Obter contrato
+                    href: api/agreement-get.md
+                  - name: Atualizar contrato
+                    href: api/agreement-update.md
+                  - name: Excluir contrato
+                    href: api/agreement-delete.md
+                  - name: Listar status de aceitação
+                    href: api/user-list-agreementacceptances.md
+      - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral

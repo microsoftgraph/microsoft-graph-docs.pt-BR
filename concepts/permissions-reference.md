@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0ed8ed915d69945d2eb9666448c56b8d23121320
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 878129a2ff63e106c703d913dd8115a201995f4f
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898083"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038552"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -528,6 +528,20 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Chat. Send_ (visualização privada) | Enviar mensagens de chat de usuário | Permite que um aplicativo envie mensagens de chat de grupo e 1:1 no Microsoft Teams, em nome do usuário conectado. | Não | Não |
 
+## <a name="cloud-printing-permissions"></a>Permissões de impressão na nuvem
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Printer. ReadWrite. All_ | Ler e atualizar impressoras | Permite que o aplicativo Leia e atualize impressoras sem um usuário conectado. Não permite criar (registrar) ou excluir (cancelar o registro) de impressoras. | Sim |
+| _PrintJob. Read. All_ | Ler trabalhos de impressão | Permite que o aplicativo Leia os metadados e o conteúdo do documento de trabalhos de impressão sem um usuário conectado. | Sim |
+| _PrintJob. ReadBasic. All_ | Ler informações básicas sobre trabalhos de impressão | Permite que o aplicativo Leia os metadados dos trabalhos de impressão sem um usuário conectado. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim |
+| _PrintJob. ReadWrite. All_ | Ler e gravar trabalhos de impressão | Permite que o aplicativo Leia e atualize os metadados e o conteúdo do documento de trabalhos de impressão sem um usuário conectado. | Sim |
+| _PrintJob. ReadWriteBasic. All_ | Ler e gravar informações básicas para trabalhos de impressão | Permite que o aplicativo Leia e atualize os metadados dos trabalhos de impressão sem um usuário conectado. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim |
+
+---
+
 ## <a name="contacts-permissions"></a>Permissões de contatos
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -582,7 +596,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="application"></a>Application
+#### <a name="application"></a>Aplicativo
 
 * _Device.ReadWrite.All_: Ler todos os dispositivos registrados na organização (`GET /devices`).
 
@@ -1039,7 +1053,7 @@ Com a permissão _Mail.Send_ ou _Mail.Send.Shared_, um aplicativo pode enviar em
 * _Mail.Send_: Enviar uma mensagem (`POST /me/sendmail`).
 * _MailboxSettings.ReadWrite_: Atualizar a resposta automática do usuário (`PATCH /me/mailboxSettings`).
 
-#### <a name="application"></a>Application
+#### <a name="application"></a>Aplicativo
 
 * _Mail.Read_: Localizar mensagens de pedro@contoso.com (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`).
 * _Mail.ReadWrite_: Criar uma nova pasta na Caixa de Entrada chamada `Expense Reports` (`POST /users/{id | userPrincipalName}/mailfolders`).
@@ -1242,7 +1256,7 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado	
 
 * _Organization.Read.All_: Obter informações da organização (`GET /organization`).
 * _Organization.Read.All_: Obter as SKUs inscritas pela organização (`GET /subscribedSkus`).
@@ -1574,7 +1588,7 @@ Essas permissões de sites só são válidas para contas corporativas ou de estu
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _Sites.Read.All_: Ler as listas no site raiz do SharePoint (`GET /v1.0/sites/root/lists`)
 * _Sites.ReadWrite.All_: Criar novos itens de lista em uma lista do SharePoint (`POST /v1.0/sites/root/lists/123/items`)
@@ -1937,7 +1951,7 @@ Com o _User.ManageIdentities.All_ delegado ou as permissões de aplicativo, é p
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _User.Read_: Ler o perfil completo para o usuário conectado (`GET /me`).
 * _User.ReadWrite_: Atualizar a foto do usuário conectado (`PUT /me/photo/$value`).
