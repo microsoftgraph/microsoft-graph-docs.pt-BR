@@ -1,16 +1,15 @@
 ---
 title: Atualizar conversationMember
-description: Atualizar a função de um conversationMember em um canal.
+description: Atualizar a função de um conversationMember em uma equipe ou canal.
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8046572b62374407bc077fffa40e6ab692fefb75
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: MT
+ms.openlocfilehash: c9a96c82d2e76a7fed69acf5cf6378dcf19c3845
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491298"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050761"
 ---
 # <a name="update-conversationmember"></a>Atualizar conversationMember
 
@@ -18,20 +17,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar a função de um [conversationMember](../resources/conversationmember.md) em um [canal](../resources/channel.md).
+Atualizar a função de um [conversationMember](../resources/conversationmember.md) em uma [equipe](../resources/team.md).
+ou [canal](../resources/channel.md).
 
 > [!NOTE]
-> Essa operação só é suportada em canais com [channelMembershipType](../resources/enums.md#channelmembershiptype-values) de `private` . Chamadas com qualquer outro [channelMembershipType](../resources/enums.md#channelmembershiptype-values) retornará uma `400 Bad Request` resposta.
+> Em canais, essa operação só é suportada em canais com um [channelMembershipType](../resources/enums.md#channelmembershiptype-values) de `private` . Chamadas com qualquer outro [channelMembershipType](../resources/enums.md#channelmembershiptype-values) retornará uma `400 Bad Request` resposta.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)| ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante)| No Teams: TeamMember. ReadWrite. All. Em canais: ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Aplicativo| No Teams: TeamMember. ReadWrite. All. Em canais: ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->
@@ -43,7 +43,7 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+| Autorização  | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -96,7 +96,7 @@ content-length: 26
 
 Veja a seguir um exemplo da resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

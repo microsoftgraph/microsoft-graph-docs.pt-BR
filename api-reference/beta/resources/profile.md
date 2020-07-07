@@ -1,16 +1,15 @@
 ---
 title: tipo de recurso Profile
-description: Representa propriedades que são descritivas de um usuário e que são exibidas em experiências de pessoas compartilhadas entre o Microsoft 365 e serviços e experiências de terceiros por meio do Microsoft Graph.
+description: Representa propriedades que são descritivas de um usuário e que são mostradas em compartilhamento, as experiências de pessoas entre o Microsoft 365 e serviços e experiências de terceiros por meio do Microsoft Graph.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 2e378229e8b001070db274c812cdb307934717cf
-ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
-ms.translationtype: MT
+ms.openlocfilehash: 1f80dfccbd662e1e398c0d4b79b0086575a83e2b
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44168566"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050874"
 ---
 # <a name="profile-resource-type"></a>tipo de recurso Profile
 
@@ -18,7 +17,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa propriedades que são descritivas de um usuário em um locatário, por exemplo, aniversários e atividades de educação. Essas propriedades são mostradas em experiências de pessoas compartilhadas entre o Microsoft 365 e serviços e experiências de terceiros por meio do Microsoft Graph. 
+Representa propriedades que são descritivas de um usuário em um locatário, por exemplo, aniversários e atividades de educação. Essas propriedades são discadas em Shared, experiências de pessoas entre o Microsoft 365 e serviços e experiências de terceiros por meio do Microsoft Graph. 
 
 Programaticamente, essas propriedades são expressas como [relações](#relationships) do recurso de **perfil** . Para obter uma destas propriedades de navegação ou criar uma instância dessas propriedades para o usuário, use o método GET ou POST correspondente nessa propriedade, quando aplicável. Consulte os [métodos](#methods) listados abaixo.
 

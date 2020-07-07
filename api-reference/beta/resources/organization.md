@@ -5,12 +5,11 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ccbfa054bb89d600dfd5e27efbebc0c4a2739509
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
-ms.translationtype: MT
+ms.openlocfilehash: be1abf31e87695a7ec0ca074ea741fcd602ae814
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181677"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050901"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -28,16 +27,17 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |:---------------|:--------|:----------|
 |[Obter organização](../api/organization-get.md) | Coleção [organization](organization.md)|Leia as propriedades e as relações do objeto de organização.|
 |[Atualizar a organização](../api/organization-update.md) | [organization](organization.md)  |Atualize o objeto organization. As únicas propriedades que podem ser atualizadas são: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** e **privacyProfile**. |
+| [Obter configurações da organização](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Leia o objeto de configurações da organização. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
 |**Extensões de esquema**| | |
 |[Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) || Criar uma definição para a extensão de esquema e usá-la para adicionar dados digitados personalizados a um recurso.|
 
-## <a name="properties"></a>Propriedades
+## <a name="properties"></a>Propriedades 
 | Propriedade | Tipo   | Descrição |
 |:-------- |:---- |:----------- |
-| assignedPlans | Coleção [assignedPlan](assignedplan.md) | A coleção de planos de serviço associados ao locatário. Não anulável. |
+| assignedPlans | Coleção [assignedPlan](assignedplan.md) | The collection of service plans associated with the tenant. Not nullable. |
 | businessPhones | String collection | Número de telefone da organização. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade. |
 | city | String | Nome da cidade do endereço da organização. |
 | country | String | Nome do país/região do endereço da organização. |
@@ -48,7 +48,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | id | Cadeia de caracteres | A ID do locatário, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | **verdadeiro** se a organização estiver habilitada no Multi-Geo; **falso** se a organização não estiver habilitada no Multi-Geo, **nulo** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Coleção de cadeias de caracteres | Não anulável. |
-| objectType | String | Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa". |
+| objectType | String | A string that identifies the object type. For tenants the value is always “Company”. |
 | onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 | onPremisesSyncEnabled | Booliano | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). |
 | postalCode | Cadeia de caracteres | CEP do endereço da organização. |
@@ -60,14 +60,15 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | state | String | Nome do estado do endereço da organização. |
 | street | Cadeia de caracteres | Nome da rua do endereço da organização. |
 | technicalNotificationMails |Coleção de cadeias de caracteres | Não anulável. |
-| verifiedDomains | coleção [verifiedDomain](verifieddomain.md)|A coleção de domínios associados a este locatário. Não anulável. |
+| verifiedDomains | coleção [verifiedDomain](verifieddomain.md)|The collection of domains associated with this tenant. Not nullable. |
 
 ## <a name="relationships"></a>Relações
 
 | Relação  | Tipo  |Descrição|
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade de navegação para gerenciar a configuração de autenticação baseada em certificado. Somente uma única instância de certificateBasedAuthConfiguration pode ser criada na coleção.  |
-|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o recurso de organização. Anulável.|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o recurso de organização. Anulável.|
+|settings|[organizationSettings](organizationsettings.md) | Recupere as propriedades e os relacionamentos do objeto organizationSettings. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

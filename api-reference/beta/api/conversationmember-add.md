@@ -5,12 +5,11 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 59f67434e131b871723ba152be945a37b18215eb
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: MT
+ms.openlocfilehash: 40ed8afa7700bc2fa1639986c336d15130b03a57
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491279"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050751"
 ---
 # <a name="add-conversationmember"></a>Adicionar conversationMember
 
@@ -25,7 +24,7 @@ Adicionar um [conversationMember](../resources/conversationmember.md) a um [cana
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
@@ -43,7 +42,7 @@ POST /teams/{id}/channels/{id}/members
 
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+| Autorização  | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -52,7 +51,7 @@ Inclua as propriedades a seguir no corpo da solicitação.
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |funções|coleção de cadeias de caracteres|As funções desse usuário.|
-|usuário|[user](../resources/user.md)|O usuário a ser adicionado ao canal.|
+|usuário|[usuário](../resources/user.md)|O usuário a ser adicionado ao canal.|
 
 ## <a name="response"></a>Resposta
 
@@ -99,10 +98,11 @@ content-length: 26
 
 Veja a seguir um exemplo da resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 ```http

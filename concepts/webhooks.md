@@ -5,12 +5,11 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: bfd2ddff5fe87ccabd2c0d7a935ba429c67bda09
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
-ms.translationtype: MT
+ms.openlocfilehash: 47c4357a59b02322769433fb82d0e9fe02fc1aae
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038503"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050922"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -43,10 +42,11 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 - [Alerta][] de segurança
 - Teams [callRecord][]
 - [chatMessage][] do Teams (visualização)
+- [Presença][] de Teams (visualização)
 
 Você pode criar uma assinatura para uma pasta de específica do Outlook, como a Caixa de Entrada: `me/mailFolders('inbox')/messages`
 
-Ou para um recurso de nível superior:,,,, `/me/messages` `/me/contacts` `/me/events` `users` `groups` ou`/communications/callRecords`
+Ou para um recurso de nível superior:,,,,, `/me/messages` `/me/contacts` `/me/events` `users` `groups` `/communications/callRecords` , ou`/communications/presences`
 
 Ou para uma instância de recurso específica: `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
 
@@ -99,7 +99,7 @@ Os clientes podem criar, renovar e excluir assinaturas.
 
 ### <a name="creating-a-subscription"></a>Criar uma assinatura
 
-Creating a subscription is the first step to start receiving change notifications for a resource. The subscription process is as follows:
+A criação de uma assinatura é a primeira etapa para começar a receber notificações de alteração para um recurso. O processo de assinatura ocorre da seguinte maneira:
 
 1. O cliente envia uma solicitação de assinatura (POST) para um recurso específico.
 
@@ -274,4 +274,5 @@ Opcionalmente, você pode configurar o firewall que protege a URL de notificaç�
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
 [callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
+[presença]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage

@@ -4,12 +4,11 @@ description: 'O Microsoft Graph permite que você se integre com o melhor dos se
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a8ad7988ed8ce77d70ed0263817cbe643a42ca2c
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
-ms.translationtype: MT
+ms.openlocfilehash: 8c8b3bc0abce69a74f79ea1c59269c2d23c9d116
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429618"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050733"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -76,6 +75,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 |:-----------|:--------------------|:-----------|:----------------|
 | Pessoas | Azure AD, Outlook, SharePoint e muito mais | Obtém informações sobre pessoas ordenados por relevância para o usuário, o que é determinado pelo padrões de comunicação e colaboração e pelas relações comerciais do usuário.  | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md) |
 | Perfil (visualização) | Perfil | Fornece um mecanismo leve para armazenar e recuperar informações sobre as pessoas em um locatário. | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md) |
+| Personalização do cartão de perfil (versão prévia) | Cartão de perfil | Fornece um mecanismo leve para um administrador personalizar o conteúdo que superfícies no cartão de perfil do Microsoft 365 em um orgaization. | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md) |
 | Insights do documento  | Delve, OneDrive, Outlook, SharePoint | Usa análises avançadas e técnicas de aprendizado de máquina para obter documentos mais populares, vistos, modificados ou compartilhados por um usuário.  | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md)  |
 | Análise (visualização) | MyAnalytics | Usa análises e técnicas avançadas de aprendizado de máquina para fornecer informações sobre como e com quem as pessoas passam o tempo. Esses dados podem ajudar as pessoas a planejar o dia, obter informações sobre seus diferentes padrões de trabalho e ajudar a equilibrar o trabalho e a vida.  | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md) |
 

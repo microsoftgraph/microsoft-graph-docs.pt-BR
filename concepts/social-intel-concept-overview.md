@@ -5,12 +5,11 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 1c000496a49460269fbb386c9ba7225b4746f109
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
-ms.translationtype: HT
+ms.openlocfilehash: 5699fe0c4c3f089481cf09c930546dfd78415eb6
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618765"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050726"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência pessoal e de local de trabalho no Microsoft Graph
 
@@ -23,7 +22,7 @@ Você pode usar a API de Pessoas e a API do Insights no Microsoft Graph para cri
 
 A API de Pessoas retorna as pessoas por ordem de relevância para um usuário com base nos contatos do usuário, em suas redes sociais, seu diretório organizacional e suas comunicações recentes por email e Skype. Isso é particularmente útil para cenários de seleção de pessoas.
 
-A API do Insights usa análises e avançadas e o aprendizado de máquina para fornecer os arquivos mais relevantes de que os usuários precisam ao longo de seu dia de trabalho. Essa API capacita experiências familiares do Office 365, incluindo o Office Delve, a página inicial do SharePoint, o modo de exibição Descoberta do OneDrive for Business e o Outlook na Web.
+A API do Insights usa análises e avançadas e o aprendizado de máquina para fornecer os arquivos mais relevantes de que os usuários precisam ao longo de seu dia de trabalho. A API é alimentada por experiências familiares do Microsoft 365, incluindo o Office Delve, a página inicial do SharePoint, o modo de exibição de descoberta no OneDrive for Business e o Outlook na Web.
 
 ![As APIs de Pessoas e do Insights retornam pessoas e documentos relevantes para um usuário](images/social-intel-concept-overview-data.png)
 
@@ -66,25 +65,25 @@ Uma pesquisa difusa no índice de dados de tópico retorna instâncias que signi
 
 Durante um dia de trabalho típico, usuários frequentemente interagem com grandes quantidades de informações armazenadas em muitos documentos e colaboram com outros usuários de muitas maneiras diferentes. É importante que eles sempre possam encontrar o precisam no momento certo.
 
-Você pode usar a API do Insights, que inclui as APIs [trending](/graph/api/resources/insights-trending?view=graph-rest-1.0), [shared](/graph/api/resources/insights-shared?view=graph-rest-1.0) e [used](/graph/api/resources/insights-used?view=graph-rest-1.0) para localizar arquivos no Office 365 com base no contexto e nas necessidades atuais dos seus usuários, tornando os usuários mais produtivos e melhorando a colaboração em sua organização.
+Você pode usar a API do insights, que inclui as APIs de [tendências](/graph/api/resources/insights-trending?view=graph-rest-1.0), [compartilhadas](/graph/api/resources/insights-shared?view=graph-rest-1.0)e [usadas](/graph/api/resources/insights-used?view=graph-rest-1.0) , para abranger arquivos da Microsoft 365 com base no contexto e nas necessidades atuais do usuário, tornando os usuários mais produtivos e melhorando a colaboração em sua organização.
 
 É fácil renderizar os resultados da API do Insights em seu aplicativo. Cada resultado acompanha um conjunto de propriedades de visualização comuns, como uma URL de imagem de visualização ou um texto de visualização.
 
 ### <a name="make-relevant-content-visible"></a>Tornar o conteúdo relevante visível
 
-No Office 365, o Delve usa informações de _tendências_ para ajudar os usuários a descobrir os documentos que são mais interessantes para eles no momento. Veja a Figura 1.
+No Microsoft 365, o Delve usa a visão de _tendências_ para ajudar os usuários a descobrir os documentos mais interessantes para eles no momento. Veja a Figura 1.
 
 É possível usar a entidade [trending](/graph/api/resources/insights-trending?view=graph-rest-1.0) de forma programática na API do Insights para proporcionar uma experiência semelhante aos clientes do seu aplicativo. Use a entidade **trending** para se conectar aos documentos que mais relevantes para o usuário e mais populares ao seu redor. A opção [Listar documentos mais populares](/graph/api/insights-list-trending?view=graph-rest-1.0) retornará arquivos armazenados em sites de equipe do SharePoint ou no OneDrive, classificados por relevância, com os mais importantes primeiro. 
 
-**Figura 1. Delve no Office 365 mostrando documentos populares para um usuário**
+**Figura 1. Delve no Microsoft 365 mostrando documentos populares para um usuário**
 
-![Captura de tela do Delve no Office 365 mostrando documentos populares para um usuário](images/delve-concept.png)
+![Captura de tela do Delve no Microsoft 365 mostrando documentos populares para um usuário](images/delve-concept.png)
 
 ### <a name="allow-users-to-collaborate-and-get-back-to-work"></a>Permitir que os usuários colaborem e voltem ao trabalho
 
-Os novos cartões de pessoas do Office 365 utilizam as informações _used_ e _shared_ para conectar os dados entre pessoas e informações. O cartão de pessoas identifica e exibe documentos relevantes sobre uma pessoa. Os usuários podem ver cartões de pessoas em todo o pacote Office, por exemplo, no Outlook na Web. Veja a Figura 2.
+Os novos cartões de pessoas da Microsoft 365 tocam nas ideias _usadas_ e _compartilhadas_ para conectar os pontos entre pessoas e unidades de conhecimento. O cartão de pessoas identifica e exibe documentos relevantes sobre uma pessoa. Os usuários podem ver cartões de pessoas em todo o pacote Office, por exemplo, no Outlook na Web. Veja a Figura 2.
 
-A API do Insights fornece uma com uma funcionalidade semelhante às entidades [used](/graph/api/resources/insights-used?view=graph-rest-1.0) e [shared](/graph/api/resources/insights-shared?view=graph-rest-1.0) entidades. Elas retornam o que um usuário tem visualizado e trabalhado mais recentemente, ou o que colegas compartilharam com o usuário mais recentemente no Office 365.
+A API do Insights fornece uma com uma funcionalidade semelhante às entidades [used](/graph/api/resources/insights-used?view=graph-rest-1.0) e [shared](/graph/api/resources/insights-shared?view=graph-rest-1.0) entidades. Eles retornam o que um usuário está exibindo ou trabalhando mais recentemente ou quais colegas compartilharam com o usuário mais recentemente no Microsoft 365.
 
 **Figura 2. Outlook na Web, mostrando um cartão de pessoas para um usuário**
 
@@ -98,7 +97,11 @@ A API de análises permite a sincronização ou a integração de dados de anál
 
 ## <a name="why-integrate-with-the-profile-api-preview"></a>Por que integrar com a API do perfil (visualização)?
 
-A API do [perfil](/graph/api/resources/profile?view=graph-rest-beta) representa a próxima geração na modelagem e representa as pessoas nos serviços do Microsoft 365. Os dados de perfil podem ser usados em conjunto com os dados das pessoas para criar experiências personalizadas baseado no Microsoft Graph. 
+A API do [perfil](/graph/api/resources/profile?view=graph-rest-beta) representa a próxima geração na modelagem e representa as pessoas nos serviços do Microsoft 365. Os dados de perfil podem ser usados em conjunto com os dados das pessoas para criar experiências personalizadas baseado no Microsoft Graph.
+
+## <a name="why-configure-profilecardproperties-in-your-organization-preview"></a>Por que configurar o profileCardProperties em sua organização (visualização)?
+
+A API [profileCardProperties](/graph/api/resources/profileCardProperties?view=graph-rest-beta) permite que os administradores personalizem como as informações sobre suas superfícies da organização nas experiências de pessoas da Microsoft 365.  
 
 ## <a name="api-reference"></a>Referência da API
 

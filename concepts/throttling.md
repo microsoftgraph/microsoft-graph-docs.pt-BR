@@ -4,12 +4,11 @@ description: Throttling limits the number of concurrent calls to a service to pr
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8cf528675b0cdde108063f3fd44acdfdff418941
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
-ms.translationtype: MT
+ms.openlocfilehash: 5561e8a28440f05adcd074b6cd7d4d61edbb2852
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038531"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050782"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -89,6 +88,8 @@ O Microsoft Graph permite que você acesse os dados em [vários serviços](overv
 > [!NOTE]
 > Os limites específicos descritos aqui estão sujeitos a alterações.
 
+> **Observação:** Nesta seção, o termo *locatário* refere-se à organização 365 da Microsoft em que o aplicativo está instalado. Esse locatário pode ser o mesmo que o do aplicativo criado, no caso de um único aplicativo de locatário, ou pode ser diferente, no caso de um [aplicativo multilocatário](/azure/active-directory/develop/setup-multi-tenant-app).
+
 ### <a name="outlook-service-limits"></a>Limites de serviço do Outlook
 
 Os limites de serviço do Outlook são avaliados para cada combinação de ID de aplicativo e caixa de correio. Em outras palavras, os limites descritos se aplicam a um aplicativo específico ao acessar uma caixa de correio específica (usuário ou grupo). Se um aplicativo exceder o limite de uma caixa de correio, isso não afetará a capacidade de acessar outra caixa de correio. Os limites a seguir se aplicam à nuvem pública, bem como às [implantações nacionais da nuvem](/graph/deployments).
@@ -140,6 +141,14 @@ Os recursos a seguir são fornecidos pelo serviço do Outlook.
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
 
+### <a name="cloud-communication-service-limits"></a>Limites do serviço de comunicação na nuvem
+
+| Recurso      | Limites por aplicativo por locatário    |
+| -------------- | ------------ |
+| [Chamadas](/graph/api/resources/call) | 10.000 chamadas/mês e 100 chamadas simultâneas   |
+| [Informações de reunião](/graph/api/resources/meetinginfo)   | 2000 reuniões/usuários por mês |
+| [Presença](/graph/api/resources/presence) (visualização)   | 2 rps |
+
 ### <a name="microsoft-teams-service-limits"></a>Limites do serviço do Microsoft Teams
 
 Os limites são expressos como solicitações por segundo (rps).
@@ -157,6 +166,9 @@ Os limites são expressos como solicitações por segundo (rps).
 | OBTER 1:1/mensagem de chat do grupo  | 3 rps | 30 rps |
 | POSTAR mensagem do canal | 2 rps | 20 rps |
 | POSTAR 1:1/mensagem de chat do grupo | 2 rps | 20 rps |
+| OBTER/equipes/ ```{team-id}``` /Schedule e todas as APIs neste caminho | 60 rps | 600 rps |
+| POST, PATCH, PUT/equipes/ ```{team-id}``` /Schedule e todas as APIs neste caminho | 30 rps | 300 rps |
+| EXCLUIR/equipes/ ```{team-id}``` /Schedule e todas as APIs neste caminho | 15 rps | 150 rps |
 
 É possível emitir, no máximo, 4 solicitações por segundo por aplicativo em uma determinada equipe ou canal.
 Um máximo 3.000 mensagens por aplicativo por dia podem ser enviadas para um determinado canal.

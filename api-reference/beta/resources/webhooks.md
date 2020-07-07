@@ -5,12 +5,11 @@ localization_priority: Normal
 author: baywet
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: c8a23236d312c6e4d20a6c6018ff3a77957517e6
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: f87dbecca8429d5eeed6196fe0ddab0a5a418eda
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898293"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050882"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -36,6 +35,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 | [Alerta][] de segurança | Alterações em um alerta específico:<br>`/security/alerts/{id}` <br>Alterações em alertas filtrados:<br> `/security/alerts/?$filter`| Não |
 | Teams [callRecord][] | Alterações em _todos os_ registros de chamadas:`/communications/callRecords` | Não |
 | Equipes [chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/allMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/allMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages` | Sim |
+| [Presença][] de equipes | Alterações na presença de um único usuário:`/communications/presences/{id}` <br> Alterações em várias presenças de usuários:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Sim |
 
 > **Observação**: qualquer trajetória de recurso que comece com o `/users/{id}` também pode aceitar `/me` referenciar o usuário conectado.
 
@@ -45,7 +45,7 @@ In general, subscription operations require read permission to the resource. For
 
 | Tipo de permissão                        | Tipos de recurso com suporte                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegado - conta corporativa ou de estudante     | [alerta][], [contato][], [conversa][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][]|
+| Delegado - conta corporativa ou de estudante     | [alerta][], [contato][], [conversa][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][], [presença][]|
 | Delegado - conta pessoal da Microsoft | [contato][], [driveItem][], [lista][], [evento][], [mensagem][]                                        |
 | Aplicativo                            | [alerta][], [contato][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][], [callRecord][], [chat][]|
 
@@ -70,3 +70,4 @@ In general, subscription operations require read permission to the resource. For
 [user]: ./user.md
 [callRecord]: ./callrecords-callrecord.md
 [alert]: ./alert.md
+[presença]: ./presence.md

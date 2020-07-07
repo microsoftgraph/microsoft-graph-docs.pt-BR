@@ -9502,6 +9502,11 @@ items:
                     href: api/organization-get.md
                   - name: Atualizar detalhes org
                     href: api/organization-update.md
+              - name: Configurações da organização
+                href: resources/organizationSettings.md
+                items:
+                  - name: Obter configurações da organização
+                    href: api/organizationSettings-get.md
               - name: Contatos organizacionais
                 href: resources/orgcontact.md
                 items:
@@ -10700,6 +10705,20 @@ items:
                     href: api/personwebsite-update.md
                   - name: Excluir
                     href: api/personwebsite-delete.md
+          - name: Personalização do cartão de perfil (versão prévia)
+            items:
+              - name: Propriedade cartão de perfil
+                href: resources/profilecardproperty.md
+              - name: Listar
+                href: api/organizationsettings-list-profilecardproperties.md
+              - name: Criar
+                href: api/organizationsettings-post-profilecardproperties.md
+              - name: Obter
+                href: api/profilecardproperty-get.md
+              - name: Atualizar
+                href: api/profilecardproperty-update.md
+              - name: Excluir
+                href: api/profilecardproperty-delete.md
           - name: Informações
             href: resources/officegraphinsights.md
             items:
@@ -11383,6 +11402,14 @@ items:
                 href: api/team-update.md
               - name: Excluir equipe
                 href: api/group-delete.md
+              - name: Listar membros
+                href: api/team-list-members.md
+              - name: Adicionar membros
+                href: api/team-post-members.md
+              - name: Remover membros
+                href: api/team-delete-members.md
+              - name: Atualizar membro
+                href: api/conversationmember-update.md
               - name: Arquivar equipe
                 href: api/team-archive.md
               - name: Desarquivar equipe

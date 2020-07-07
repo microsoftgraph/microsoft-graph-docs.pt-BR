@@ -5,12 +5,11 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: efe599d9a1b4f7a928f9b0ae7dabfc845683af30
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: MT
+ms.openlocfilehash: 73f89ac24bedad9cfd632674040b288aac151f23
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491274"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050740"
 ---
 # <a name="get-conversationmember"></a>Obter conversationMember
 
@@ -22,7 +21,7 @@ Recuperar um [conversationMember](../resources/conversationmember.md) de um [cha
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
@@ -51,7 +50,7 @@ Esta operação não é compatível com os [parâmetros de consulta OData](/grap
 
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+| Autorização  | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -93,10 +92,11 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 
 Veja a seguir um exemplo da resposta.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "get_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 ```http

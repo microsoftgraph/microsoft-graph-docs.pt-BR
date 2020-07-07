@@ -5,12 +5,11 @@ localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 9085db75d70932fe3364b5739a33fc480f30032a
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
-ms.translationtype: HT
+ms.openlocfilehash: d1e1f49125aa8959c1cdd6b2f47cc5c4ff81d962
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844257"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050964"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo
 
@@ -33,6 +32,14 @@ Recurso: Perfil (visualização)
 As pessoas que procuram contextualizar outras na organização geralmente exibem o perfil ou o cartão de perfil de uma pessoa. 
 
 O recurso [perfil](../resources/profile.md) é uma avançada fonte de informações sobre as pessoas dentro de um locatário e proporciona um mecanismo leve para armazenar e recuperar informações sobre alguém. 
+
+## <a name="personalize-people-experiences-within-your-organization"></a>Personalizar experiências de pessoas em sua organização
+
+Recurso: personalização do cartão de perfil (versão prévia)
+
+Fornece a capacidade de um administrador personalizar as informações mostradas no cartão de perfil usado no Microsoft 365 em sua organização.
+
+O recurso [profileCardProperty](../resources/profileCardProperty.md) representa um atributo de um usuário no cartão de perfil do Microsoft 365 para que uma organização alcance uma experiência de pessoas compartilhada.
 
 ## <a name="help-users-get-the-most-relevant-documents-for-their-work"></a>Ajudar os usuários a obter os documentos mais relevantes para seu trabalho
 
@@ -78,4 +85,7 @@ Recurso: Análise (visualização)
 Usar a API de análise para obter estatísticas de atividade e configurações relacionadas para um usuários:
 
 - [configurações](../resources/settings.md): Para a API de análise retornar os resultados para um usuários, as configurações de análise de usuário atuais devem mostrar uma licença válida do MyAnalytics, ser aceitas no uso do MyAnalytics e ter uma caixa de correio hospedada na nuvem habilitada para o Microsoft Graph.
-- [activityStatistics](../resources/activitystatistics.md): Obtém dados para a última semana concluída (ou o intervalo de tempo especificado) das atividades do Office 365 em que um usuário gastou tempo, incluindo o número de horas gastas em [chamadas](callactivitystatistics.md), [conversas (mensagens instantâneas)](chatactivitystatistics.md), [email](emailactivitystatistics.md) e [reuniões](meetingactivitystatistics.md) durante e fora das horas de trabalho e o número de horas disponíveis para o [trabalho prioritário](focusactivitystatistics.md).
+- [activityStatistics](../resources/activitystatistics.md): Obtém os dados da última semana completa (ou do intervalo de tempo especificado) para as atividades do Microsoft 365 nas quais um usuário gastou tempo, incluindo o número de horas gastas em [chamadas](callactivitystatistics.md), [chats (mensagens instantâneas)](chatactivitystatistics.md), [email](emailactivitystatistics.md)e [reuniões](meetingactivitystatistics.md) durante e fora do horário de trabalho e o número de horas disponíveis para [trabalho focado](focusactivitystatistics.md).
+
+## <a name="whats-new"></a>Novidades
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para esses conjuntos de API.

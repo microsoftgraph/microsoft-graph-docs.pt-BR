@@ -5,12 +5,11 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 460bbfaa522cf4767d7f35992a4371bf870c8948
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: HT
+ms.openlocfilehash: 1a3b05eb0f055cd1cbed84f0e98c1496015f8801
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793679"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050908"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -86,7 +85,6 @@ Veja a seguir uma representação JSON do recurso.
   "webUrl": "string (URL)",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,20 +5,21 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 797ddac8bc582cd5e5d4d51e0e1ad94645c3c1e0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
-ms.translationtype: MT
+ms.openlocfilehash: 3a185d3f38fb1437205d99be103974f78eb49d6b
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521569"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050915"
 ---
 # <a name="presence-resource-type"></a>tipo de recurso Presence
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Contém informações sobre a presença de um usuário, incluindo a disponibilidade e a atividade do usuário.
 
 > **Observação:** No momento, esse recurso só tem suporte para usuários do Microsoft Teams.
+
+Esse recurso oferece suporte à assinatura de [alteração de notificações](/graph/webhooks).
 
 ## <a name="methods"></a>Métodos
 
@@ -33,8 +34,8 @@ Contém informações sobre a presença de um usuário, incluindo a disponibilid
 | Relação        | Tipo                                                 | Descrição                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 |id    |  string     |  A ID de objeto de usuário   |
-|availability    |  coleção de cadeias de caracteres   |   As informações de presença básicas de um usuário. Os valores possíveis `Available`são `AvailableIdle`, `Away`, `BeRightBack` `Busy` `BusyIdle`,,, `DoNotDisturb`, `Offline`,,`PresenceUnknown`  |
-|atividade    |  coleção de cadeias de caracteres      |    As informações complementares para a disponibilidade de um usuário. Os valores possíveis `Available`são `Away`, `BeRightBack``Busy` `DoNotDisturb` `InACall`,,,, `InAConferenceCall`, `Inactive`,`InAMeeting`, `Offline`, `OffWork`,`OutOfOffice`, `PresenceUnknown`,`Presenting`, `UrgentInterruptionsOnly`.       |
+|availability    |  coleção de cadeias de caracteres   |   As informações de presença básicas de um usuário. Os valores possíveis são,,,,, `Available` `AvailableIdle` ,, `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` `Offline` ,`PresenceUnknown`  |
+|atividade    |  coleção de cadeias de caracteres      |    As informações complementares para a disponibilidade de um usuário. Os valores possíveis são,,,,, `Available` `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` , `Inactive` , `InAMeeting` , `Offline` , `OffWork` , `OutOfOffice` , `PresenceUnknown` , `Presenting` , `UrgentInterruptionsOnly` .       |
 
 >**Observação:** Para saber mais sobre os diferentes Estados de presença, confira [presença do usuário no Microsoft Teams](https://docs.microsoft.com/microsoftteams/presence-admins). 
 

@@ -5,12 +5,11 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ff663e0775a0a18f8f82daaa547a6ca774f9138f
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: 12928d7917ea0a274c69454d82943d72a7587c67
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289114"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050712"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationtemplate: instanciar
 
@@ -22,7 +21,7 @@ Adicione uma instância de um aplicativo da Galeria de aplicativos do Azure AD a
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
@@ -63,6 +62,9 @@ O exemplo a seguir mostra como chamar essa API.
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+> [!NOTE] 
+> Você pode usar essa API para instanciar [aplicativos não-Galeria](https://docs.microsoft.com/azure/active-directory/manage-apps/add-non-gallery-app). Use a seguinte ID para **applicationtemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

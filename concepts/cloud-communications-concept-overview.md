@@ -4,12 +4,11 @@ description: As APIs de comunicação em nuvem no Microsoft Graph adicionam uma 
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: f2b85634d27d566fc57a57a1e9b6db0366bb9481
-ms.sourcegitcommit: 360d176a29047a2686f1bff076f15c6ce9d12ef5
-ms.translationtype: MT
+ms.openlocfilehash: fc8ab5e91ba16a2b9dc0730120be350550caf145
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41711707"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050775"
 ---
 # <a name="cloud-communications-api-overview"></a>Visão geral da API de comunicações em nuvem
 As APIs de comunicação em nuvem no Microsoft Graph adicionam uma nova dimensão a como seus aplicativos e serviços interagem com os usuários por meio de vários recursos relacionados a comunicações, como chamadas e reuniões online. Expanda sua empresa expedido o modo como você responde às necessidades dos clientes e como seus funcionários colaboram entre si.
@@ -99,7 +98,7 @@ Está procurando a referência de API para esse serviço?
 
 - Use bots para [começar](cloud-communications-get-started.md).
 - Saiba mais sobre [chamadas](cloud-communications-calls.md), [mídia](cloud-communications-media.md)e [reuniões online](cloud-communications-online-meetings.md).
-- Exibir os [limites](cloud-communications-limits.md)de uso da API.
+- Exibir os [limites](throttling.md#cloud-communication-service-limits)de uso da API.
 - Saiba como [gerenciar números de telefone](cloud-communications-phone-number.md) para seus bots.
 
 ## <a name="see-also"></a>Confira também
