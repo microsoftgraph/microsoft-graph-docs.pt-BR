@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 76326bd35c5f0013596c423a58942a92f8af9792
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 238fdb9e5304562c887a1c8e8f0fdbbd1ee408c1
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38751761"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080812"
 ---
 ```csharp
 
@@ -37,7 +37,8 @@ var user = new User
     },
     PasswordProfile = new PasswordProfile
     {
-        Password = "password-value"
+        Password = "password-value",
+        ForceChangePasswordNextSignIn = false
     },
     PasswordPolicies = "DisablePasswordExpiration"
 };
