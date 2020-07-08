@@ -5,15 +5,20 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5699fe0c4c3f089481cf09c930546dfd78415eb6
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: e12b9f2b8943832b6121e3830e369e48bef5b5ac
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050726"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081246"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência pessoal e de local de trabalho no Microsoft Graph
 
-As centenas de milhões de usuários que utilizam os serviços de nuvem do Microsoft 365 fazem parte do núcleo do Microsoft Graph. Os dados dos usuários são cuidadosamente gerenciados, protegidos e, com a autorização adequada, disponibilizados pelos serviços do Microsoft Graph para promover a criatividade e a produtividade em empresas. Mesmo os dados do usuário sendo onipresentes no Microsoft Graph, os dados derivados das interações do usuário são especialmente interessantes. Eles fornece informações inteligentes que podem responder a perguntas como:
+As centenas de milhões de usuários que utilizam os serviços de nuvem do Microsoft 365 fazem parte do núcleo do Microsoft Graph. Os dados dos usuários são cuidadosamente gerenciados, protegidos e, com a autorização adequada, disponibilizados pelos serviços do Microsoft Graph para promover a criatividade e a produtividade em empresas. 
+
+A API de perfil permite que você, como desenvolvedores de aplicativos, modelo e representam pessoas nos serviços do Microsoft 365, e a API do cartão de perfil permite que os administradores controlem as informações exibidas nos cartões de perfil dos usuários na organização.
+
+Mesmo os dados do usuário sendo onipresentes no Microsoft Graph, os dados derivados das interações do usuário são especialmente interessantes. Eles fornece informações inteligentes que podem responder a perguntas como:
 
 - "Quem esse usuário deve contatar para obter informações sobre esse tópico?"
 - "Quais documentos são interessantes para essa pessoa?"
@@ -58,6 +63,13 @@ GET /me/people/?$search="topic:beetle"
 
 Uma pesquisa difusa no índice de dados de tópico retorna instâncias que significam o nome em inglês do inseto besouro, o icônico carro Beetle da Volkswagen, a banda Beatles e outras definições.
 
+## <a name="why-integrate-with-the-profile-api-preview"></a>Por que integrar com a API do perfil (visualização)?
+
+A API do [perfil](/graph/api/resources/profile) representa a próxima geração na modelagem e representa as pessoas nos serviços do Microsoft 365. Os dados de perfil podem ser usados em conjunto com os dados das pessoas para criar experiências personalizadas baseado no Microsoft Graph.
+
+## <a name="why-configure-profile-cards-in-your-organization-preview"></a>Por que configurar cartões de perfil em sua organização (visualização)?
+
+Os cartões de perfil permitem que os usuários de uma organização vejam informações sobre um ao outro, como nomes e informações de contato. Os administradores podem usar a API do [cartão de perfil](/graph/api/resources/profilecardproperty) para personalizar a forma como as superfícies da organização dentro das experiências de pessoas da Microsoft 365.
 
 ## <a name="why-integrate-with-document-based-insights"></a>Por que integrar-se a informações baseadas em documentos?
 
@@ -94,27 +106,20 @@ A API do Insights fornece uma com uma funcionalidade semelhante às entidades [u
 [O myAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/index) fornece uma visão geral de como e com quem as pessoas passam o tempo. Esses dados podem ajudar as pessoas a planejar o dia, obter informações sobre seus diferentes padrões de trabalho e ajudar a equilibrar o trabalho e a vida.
 
 A API de análises permite a sincronização ou a integração de dados de análise do usuário com um aplicativo de terceiros personalizado para oferecer suporte a uma ampla variedade de cenários que podem ajudar a melhorar a produtividade e a colaboração do usuário. Por exemplo, você poderia integrar dados do myAnalytics com atividades de dispositivos móveis para ajudar os usuários a acompanhar todas as atividades de trabalho e social e planejar o seu dia dentro de um aplicativo.
-
-## <a name="why-integrate-with-the-profile-api-preview"></a>Por que integrar com a API do perfil (visualização)?
-
-A API do [perfil](/graph/api/resources/profile?view=graph-rest-beta) representa a próxima geração na modelagem e representa as pessoas nos serviços do Microsoft 365. Os dados de perfil podem ser usados em conjunto com os dados das pessoas para criar experiências personalizadas baseado no Microsoft Graph.
-
-## <a name="why-configure-profilecardproperties-in-your-organization-preview"></a>Por que configurar o profileCardProperties em sua organização (visualização)?
-
-A API [profileCardProperties](/graph/api/resources/profileCardProperties?view=graph-rest-beta) permite que os administradores personalizem como as informações sobre suas superfícies da organização nas experiências de pessoas da Microsoft 365.  
-
+ 
 ## <a name="api-reference"></a>Referência da API
 
 Procurando a referência de API para estes serviços?
 
-- [API de Pessoas](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [Análise API (visualização)](/graph/api/resources/useranalytics?view=graph-rest-beta)
-- [API do Perfil (visualização)](/graph/api/resources/profile?view=graph-rest-beta)
+- [Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo](/graph/api/resources/social-overview)
+- O recurso [pessoa](/graph/api/resources/person) da API de pessoas
+- Recurso [de perfil (visualização)](/graph/api/resources/profile)
+- Recurso [de Propriedade do cartão de perfil (visualização)](/graph/api/resources/profilecardproperty)
+- [API do Insights](/graph/api/resources/officegraphinsights)
+- [Análise API (visualização)](/graph/api/resources/useranalytics)
 
 ## <a name="next-steps"></a>Próximas etapas
 
 * Use o [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) para experimentar as APIs de pessoas, Insights e análises com seus próprios arquivos. Entre e escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para ativar **Pessoas**, **Insights** e **Análises**.
-* Saiba mais sobre a [API de Pessoas](people-example.md) e a entidade [person](/graph/api/resources/person?view=graph-rest-1.0).
-* Para começar a usar a API de insights, consulte [Insights do Office Graph](/graph/api/resources/officegraphinsights?view=graph-rest-1.0).
-* Saiba mais sobre a [API de análise](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life).
-* Saiba mais sobre a [API de perfil](/graph/api/resources/profile?view=graph-rest-beta).
+* Saiba mais sobre a [API de pessoas](people-example.md).
+* Confira como [Personalizar o cartão de perfil](add-properties-profilecard.md).

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1b36a856a73d78b479270138868285a852d6d187
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: a0b64166b6d7c95f3ad4995321b50b2c4aaadda9
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007133"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081058"
 ---
 # <a name="printer-create"></a>impressora: criar
 
@@ -27,9 +27,9 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| User.Read.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)| User.Read.All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -64,6 +64,8 @@ Fazer uma solicitação GET para a URL vinculada pode ser usado para obter o sta
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação. Para obter ajuda para criar a solicitação de assinatura de certificado (CSR) necessária, consulte o [exemplo de código de geração de CSR](https://docs.microsoft.com/universal-print/hardware/universal-print-oem-certificate-signing-request).
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_printer"
@@ -86,6 +88,12 @@ Content-length: 319
   "connectorId": null
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta.

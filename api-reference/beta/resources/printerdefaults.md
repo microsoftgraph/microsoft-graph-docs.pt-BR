@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: abedc167afb868048cd89fbd4b723804777d03e3
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: bb61f7863f9ff8406bb39c796e9f592ab375f165
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864214"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080853"
 ---
 # <a name="printerdefaults-resource-type"></a>tipo de recurso printerDefaults
 
@@ -84,6 +84,7 @@ Representa as configurações padrão da impressora. Verifique os [recursos](../
 |stapleDualTop|anos|Grampear o documento duas vezes ao longo da borda superior.|
 |stapleDualRight|até|Grampear o documento duas vezes ao longo da borda direita.|
 |stapleDualBottom|31|Grampear o documento duas vezes ao longo da borda inferior.|
+|unknownFutureValue|32|Valor de sentinela de enumeração evolvable. Não usar.|
 
 ## <a name="printorientation-values"></a>valores de reorientação
 
@@ -93,24 +94,6 @@ Representa as configurações padrão da impressora. Verifique os [recursos](../
 |paisagens|4 |A impressora imprimirá impressões na orientação "paisagem".|
 |reverseLandscape|5 |A impressora imprimirá impressões na orientação "paisagem reversa".|
 |reversePortrait|6 |A impressora imprimirá impressões na orientação "retrato reverso".|
-
-### <a name="printmediatype-values"></a>valores de multimediatype
-
-|Membro|Valor|Descrição|
-|:---|:---|:---|
-|carta|,0|Folhas de papel padrão.|
-|transparência|1 |Filme de transparência usado com projetores de sobrecarga.|
-|envelope|2 |Um envelope.|
-|envelopePlain|3 |Um envelope simples.|
-|permanente|4 |Um rolo de papel contínuo.|
-|tela|5 |Uma tela digital.|
-|screenPaged|6 |Uma tela digital com suporte para paginação.|
-|continuousLong|7 |Um longo lançamento de papel contínuo.|
-|continuousShort|8 |Um pequeno rolo contínuo de papel.|
-|envelopeWindow|9 |Um envelope com um corte de janela transparente.|
-|multiPartForm|10 |Um formulário de várias partes perfurado.|
-|Multilayer|11 |Uma média de várias camadas.|
-|Legendas|12 |Uma planilha com recortes de rótulo.|
 
 ### <a name="printquality-values"></a>valores de PrintQuality
 

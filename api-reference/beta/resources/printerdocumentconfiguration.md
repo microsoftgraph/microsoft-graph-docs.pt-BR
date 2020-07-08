@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 68ab8556864da8abfa757cf719cca7e54cc8238f
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 3bd0235b7b0dd1cebe5298a1f2357cd4a9f1fd81
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864095"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081351"
 ---
 # <a name="printerdocumentconfiguration-resource-type"></a>tipo de recurso printerDocumentConfiguration
 
@@ -108,6 +108,7 @@ Um grupo de configurações que uma impressora deve usar para imprimir um docume
 |stapleDualTop|anos|Grampear o documento duas vezes ao longo da borda superior.|
 |stapleDualRight|até|Grampear o documento duas vezes ao longo da borda direita.|
 |stapleDualBottom|31|Grampear o documento duas vezes ao longo da borda inferior.|
+|unknownFutureValue|32|Valor de sentinela de enumeração evolvable. Não usar.|
 
 ### <a name="printmultipagelayout-values"></a>valores de printMultipageLayout
 

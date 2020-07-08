@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: fd739df6b8b294a52d2a17c34649557e6a2dbff0
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 03db36bffbff8d7704542f8f64f2a30aeea0072a
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44862462"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081010"
 ---
 # <a name="printercapabilities-complex-type"></a>tipo complexo printerCapabilities
 
@@ -98,6 +98,7 @@ Representa os recursos relatados por uma impressora.
 |stapleDualTop|anos|Grampear o documento duas vezes ao longo da borda superior.|
 |stapleDualRight|até|Grampear o documento duas vezes ao longo da borda direita.|
 |stapleDualBottom|31|Grampear o documento duas vezes ao longo da borda inferior.|
+|unknownFutureValue|32|Valor de sentinela de enumeração evolvable. Não usar.|
 
 ## <a name="printorientation-values"></a>valores de reorientação
 

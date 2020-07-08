@@ -5,11 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 974e1e7af86133ef46c7d4360def1aef153ee3ec
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: a577d050ae55ec7b99cbceb23f27a6dd4ec2121f
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050991"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081358"
 ---
 # <a name="profilecardproperty-resource-type"></a>tipo de recurso profileCardProperty
 
@@ -19,7 +20,7 @@ Representa um atributo de um usuário no cartão de perfil do Microsoft 365 para
 
 O atributo pode ser um atributo interno do Azure Active Directory (Azure AD), como `Alias` ou `UserPrincipalName` , ou pode ser um atributo personalizado. Para um atributo personalizado, um administrador pode definir uma `en-us` cadeia de caracteres de nome de exibição padrão e um conjunto de traduções alternativas para os idiomas que eles dão suporte em sua organização.
 
-Para obter mais informações sobre como adicionar propriedades ao cartão de perfil de uma organização, consulte Customize The Profile Card.
+Para obter mais informações sobre como adicionar propriedades ao cartão de perfil de uma organização, consulte [Customize The Profile Card](/graph/add-properties-profilecard).
 
 ## <a name="methods"></a>Métodos
 

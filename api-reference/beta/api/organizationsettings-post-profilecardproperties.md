@@ -5,11 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1bbdb77ea7d9cd9d76f63198b449b4f03181bc62
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: 24fe1a2f4257475849ecb3c057843d7cd0661a21
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45051005"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080630"
 ---
 # <a name="create-profilecardproperty"></a>Criar profileCardProperty
 
@@ -19,7 +20,7 @@ Namespace: microsoft.graph
 
 Crie um novo [profileCardProperty](../resources/profilecardproperty.md) para uma organização. A nova propriedade é identificada pela propriedade **directoryPropertyName** .
 
-Para obter mais informações sobre como adicionar propriedades ao cartão de perfil de uma organização, consulte Customize The Profile Card.
+Para obter mais informações sobre como adicionar propriedades ao cartão de perfil de uma organização, consulte [Customize The Profile Card](/graph/add-properties-profilecard).
 
 ## <a name="permissions"></a>Permissões
 
@@ -61,6 +62,8 @@ Se bem-sucedido, este método retorna `201 Created` um código de resposta e um 
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_profilecardproperty_from_organizationsettings"
@@ -85,6 +88,12 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-profilecardproperty-from-organizationsettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

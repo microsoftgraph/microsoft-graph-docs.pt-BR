@@ -5,11 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c2dd6ef082167f40c173386f18be7760118a966f
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: 2dffcc667281d26fb64e44dd7cd45e8e0f1c313f
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050997"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080674"
 ---
 # <a name="delete-profilecardproperty"></a>Excluir profileCardProperty
 
@@ -58,6 +59,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 ### <a name="request"></a>Solicitação
 
 O exemplo a seguir mostra como excluir o atributo chamado "fax" do cartão de perfil da organização.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_profilecardproperty"
@@ -66,6 +69,20 @@ O exemplo a seguir mostra como excluir o atributo chamado "fax" do cartão de pe
 ```http
 DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties/fax
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-profilecardproperty-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-profilecardproperty-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-profilecardproperty-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 
