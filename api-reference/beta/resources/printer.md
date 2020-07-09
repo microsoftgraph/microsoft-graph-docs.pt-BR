@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 255be26ed669e91248df1b007dc56b937ce2af98
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 6573f17753a3c9b487324def9973bddd0759ed4b
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006881"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091435"
 ---
 # <a name="printer-resource-type"></a>tipo de recurso de impressora
 
@@ -39,6 +39,9 @@ Representa um dispositivo de impressora física que foi registrado com o serviç
 | [Listar allowedGroups](../api/printer-list-allowedgroups.md) | coleção [Multiidentity](printidentity.md) | Recupere uma lista de grupos aos quais foi concedido acesso para enviar trabalhos de impressão à impressora associada. |
 | [Adicionar allowedGroup](../api/printer-post-allowedgroups.md) | Nenhum | Conceda ao grupo especificado o acesso ao envio de trabalhos de impressão à impressora associada. |
 | [Remover allowedGroup](../api/printer-delete-allowedgroup.md) | Nenhum | Revogar o acesso à impressora do grupo especificado. |
+| [Listar taskTriggers](../api/printer-list-tasktriggers.md) | Nenhum | Listar [printTaskTriggers](printtasktrigger.md) associados a essa impressora. |
+| [Criar taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | Crie um [printTaskTrigger](printtasktrigger.md) que seja executado quando os eventos Print ocorrerem. |
+| [Excluir taskTrigger](../api/printer-delete-tasktrigger.md) | Nenhum | Excluir um [printTaskTrigger](printtasktrigger.md) que está associado à impressora. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
@@ -62,6 +65,7 @@ Representa um dispositivo de impressora física que foi registrado com o serviç
 |conectores|[separador de Hiperligação](printconnector.md)|Os conectores associados à impressora.|
 |allowedUsers|coleção [printUserIdentity](printuseridentity.md)|Os usuários que têm acesso à impressão usando a impressora.|
 |allowedGroups|[multiidentity](printidentity.md)|Os grupos cujos usuários têm acesso para imprimir usando a impressora.|
+|taskTriggers|coleção [printTaskTrigger](printtasktrigger.md)|Uma lista de disparadores de tarefas que estão associados à impressora.|
 
 ## <a name="json-representation"></a>Representação JSON
 

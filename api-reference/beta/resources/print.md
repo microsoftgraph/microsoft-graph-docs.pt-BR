@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 551fa42736d6fa275a8f998274a6fccf55ac00b7
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: b32ebb749b3b13ee1d468de69b0724fe281e6793
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006972"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091498"
 ---
 # <a name="print-resource-type"></a>tipo de recurso Print
 
@@ -30,6 +30,10 @@ Quando acompanhada por uma assinatura de impressão universal, o recurso de impr
 | [Criar printerShare](../api/print-post-shares.md) | [printerShare](printershare.md) | Crie um novo compartilhamento de impressora postando na coleção de **compartilhamentos** . |
 | [Criar impressora](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Criar (registrar) uma nova impressora com impressão universal. |
 | [Atualizar configurações](../api/print-update-settings.md) |  [printSettings](printsettings.md) | Atualiza as configurações de todos os locatários para o serviço de impressão universal. |
+| [Listar taskDefinitions](../api/print-list-taskdefinitions.md) | coleção [printTaskDefinition](printtaskdefinition.md) | Obter uma lista de todos os locatários de printTaskDefinitions criados dentro da impressão universal. |
+| [Criar taskDefinition](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Criar um novo printTaskDefinition. |
+| [Atualizar taskDefinition](../api/print-update-taskdefinition.md) | [printTaskDefinition](printtaskdefinition.md) | Atualizar um printTaskDefinition. |
+| [Excluir taskDefinition](../api/print-delete-taskdefinition.md) | Nenhum | Excluir um printTaskDefinition. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |

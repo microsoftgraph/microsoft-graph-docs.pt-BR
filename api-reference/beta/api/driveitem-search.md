@@ -6,16 +6,16 @@ title: Pesquisar arquivos
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6869940c6c4e8a22061343f5152f424b5d27adaf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 08774f68c9b5ec17ff3e0c5f4f6ba42e058245e1
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432338"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091400"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Pesquisar um DriveItem em uma unidade
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ Você pode pesquisar em uma hierarquia de pastas, uma unidade inteira ou arquivo
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -52,20 +52,19 @@ Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-pa
 
 | Parâmetro | Tipo  | Descrição                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| q  | cadeia de caracteres | O texto de consulta usado para pesquisar itens. Os valores podem ser correspondidos em vários campos, incluindo nome do arquivo, metadados e conteúdo do arquivo. |
+| q  | cadeia de caracteres | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
-Aqui está um exemplo da solicitação de que pesquisa o OneDrive do usuário atual
-
+O exemplo a seguir procura uma correspondência para "projeto contoso" em vários campos nos itens da unidade do usuário conectado.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "item_search" }-->
 
 ```msgraph-interactive
-GET /me/drive/root/search(q='{search-query}')
+GET /me/drive/root/search(q='Contoso Projec}')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-csharp-snippets.md)]
@@ -84,9 +83,11 @@ GET /me/drive/root/search(q='{search-query}')
 
 ### <a name="response"></a>Resposta
 
-Este método retorna um objeto que contém uma coleção de [DriveItems](../resources/driveitem.md) que correspondem aos critérios de pesquisa. Se não forem encontrados itens, uma coleção vazia será retornada.
+This method returns an object containing an collection of [DriveItems](../resources/driveitem.md) that match the search criteria.
+If no items were found, an empty collection is returned.
 
-Se houver muitas correspondências, a resposta será paginada, e uma propriedade **@odata.nextLink** conterá uma URL para a próxima página de resultados. Você pode usar o parâmetro de consulta `$top` para especificar o número de itens na página.
+If there are too many matches the response will be paged and an **@odata.nextLink** property will contain a URL to the next page of results.
+You can use the `$top` query parameter to specify the number of items in the page.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
@@ -115,7 +116,8 @@ Content-type: application/json
 
 ## <a name="searching-for-items-a-user-can-access"></a>Pesquisando itens que um usuário pode acessar
 
-Além de procurar itens em uma unidade, seu aplicativo pode pesquisar amplamente para incluir itens compartilhados com o usuário atual. Para ampliar o escopo da pesquisa, use o método **search** no recurso [Drive](../resources/drive.md).
+In addition to searching for items within a drive, your app can search more broadly to include items shared with the current user.
+To broaden the search scope, use the **search** method on the [Drive](../resources/drive.md) resource.
 
 ### <a name="example"></a>Exemplo
 
@@ -124,7 +126,7 @@ Além de procurar itens em uma unidade, seu aplicativo pode pesquisar amplamente
 <!-- { "blockType": "request", "name": "item_search_all" }-->
 
 ```msgraph-interactive
-GET /me/drive/search(q='{search-query}')
+GET /me/drive/search(q='Contoso Project')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-all-csharp-snippets.md)]
@@ -143,7 +145,8 @@ GET /me/drive/search(q='{search-query}')
 
 ### <a name="response"></a>Resposta
 
-As respostas ao pesquisar por meio do recurso **drive** podem incluir itens fora da unidade (itens compartilhados com o usuário atual). Estes itens incluirão a faceta [**remoteItem**](../resources/remoteitem.md) para indicar que estão armazenados fora da unidade de destino. 
+Responses when searching from the **drive** resource may include items outside of the drive (items shared with the current user).
+These items will include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive. 
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 5eff75fba2c9993275c277877fedec7705021c49
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 0d46263e5f393362cec155a9be3e2e5a54c3dfec
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895478"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091519"
 ---
 # <a name="printjob-resource-type"></a>tipo de recurso printJob
 
@@ -20,14 +20,15 @@ Namespace: microsoft.graph
 
 Representa um trabalho de impressão que foi enfileirado para uma impressora.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Get](../api/printjob-get.md) | [Impressão](printjob.md) | Leia as propriedades e as relações do objeto printJob. |
-| [Create](../api/printer-post-jobs.md) | [Impressão](printjob.md) | Criar um novo objeto de trabalho de impressão. |
-| [Start](../api/printjob-startprintjob.md)|Nenhum|Inicie o trabalho de impressão.|
+| [Criar](../api/printer-post-jobs.md) | [Impressão](printjob.md) | Criar um novo objeto de trabalho de impressão. |
+| [Start](../api/printjob-startprintjob.md)|Nenhum|Iniciar o trabalho de impressão.|
 | [Cancel](../api/printjob-cancelprintjob.md)|Nenhum|Cancele o trabalho de impressão.|
+| [Redirecionar (para outra impressora)](../api/printjob-redirect.md) | [Impressão](printjob.md) | Um trabalho de impressão que está na fila da impressora de destino. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
@@ -36,11 +37,12 @@ Representa um trabalho de impressão que foi enfileirado para uma impressora.
 |createdDateTime|DateTimeOffset|O DateTimeOffset quando o trabalho foi criado. Somente leitura.|
 |status|[printJobStatus](printjobstatus.md)|O status do trabalho de impressão. Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |createdBy|[userIdentity](useridentity.md)| Somente leitura. Anulável.|
 |documentos|coleção [AddDocument](printdocument.md)| Somente leitura.|
+|tarefas|coleção [multitask](printtask.md)|Uma lista de [multitarefas](printtask.md) que foram acionadas por esse trabalho de impressão.|
 
 ## <a name="json-representation"></a>Representação JSON
 
