@@ -3,16 +3,16 @@ title: Integração do aplicativo iOS no SDK do lado do cliente para notificaç�
 description: Integre o aplicativo iOS com notificações de usuário no SDK do cliente.
 localization_priority: Priority
 ms.prod: Microsoft Graph notifications
-ms.openlocfilehash: d11acc2d0c83fc6298e5c4d25aff1563ebe6c2c1
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 007a82f18e1cc8bfcb2dfcd4c18753ed6a3f261d
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969861"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080910"
 ---
 # <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications"></a>Integração do aplicativo iOS no SDK do lado do cliente para notificações ao usuário
 
-Após [registrar seu aplicativo](notifications-integration-app-registration.md) no Portal do Azure e integrar suas [experiências entre dispositivos](notifications-integration-cross-device-experiences-onboarding.md) no Partner Center de desenvolvimento, a próxima etapa é integrar seu aplicativo de cliente com o SDK do lado do cliente para aplicativos iOS.  
+Após [registrar seu aplicativo](notifications-integration-app-registration.md) no Portal do Azure e integrar suas [experiências entre dispositivos](notifications-integration-cross-device-experiences-onboarding.md) no Partner Center de Desenvolvimento, a próxima etapa é integrar seu aplicativo de cliente com o SDK do lado do cliente para aplicativos iOS.  
 
 Com o SDK do cliente, o aplicativo pode executar as etapas necessárias de registro para receber notificações publicadas do servidor do aplicativo direcionadas ao usuário conectado atualmente. O SDK então gerencia as notificações no lado do cliente, incluindo receber novas notificações, gerenciar o estado de notificações para alcançar cenários como descartar de forma universal e recuperar o histórico completo de notificações. 
 
