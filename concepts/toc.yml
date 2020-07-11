@@ -80,6 +80,16 @@ items:
         href: azuread-users-concept-overview.md
       - name: Grupos
         href: office365-groups-concept-overview.md
+      - name: Aplicativos
+        items:
+          - name: Visão geral
+            href: applications-concept-overview.md
+          - name: Automatizar a configuração de SSO baseada em SAML
+            href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api?context=/graph/context'
+          - name: Configurar proxy do aplicativo
+            href: application-proxy-configure-api.md
+          - name: Configurar provisionamento
+            href: 'https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api?context=/graph/context'
       - name: Calendário
         displayName: Outlook
         items:
@@ -259,8 +269,10 @@ items:
                 href: notifications-integrating-with-ios.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: social-intel-concept-overview.md
+          - name: Obter informações sobre pessoas relevantes
+            href: people-example.md
           - name: Personalizar o cartão de perfil (visualização)
             href: add-properties-profilecard.md
       - name: Contatos pessoais
