@@ -4,11 +4,12 @@ description: Throttling limits the number of concurrent calls to a service to pr
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 5561e8a28440f05adcd074b6cd7d4d61edbb2852
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: 45bc9246fe465328be3d96b029475eae96cc673c
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050782"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091505"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -59,11 +60,11 @@ Atualmente, os seguintes recursos oferecem atualmente um cabeçalho `Retry-After
 - [Pessoas e social](/graph/api/resources/social-overview?view=graph-rest-beta)
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 - [Item externo (Pesquisa da Microsoft)](/graph/api/resources/externalitem?view=graph-rest-beta)
-- [Report](/graph/api/resources/report)
+- [Relatório](/graph/api/resources/report)
 - [Assinatura](/graph/api/resources/subscription)
-- [Mais Populares](/graph/api/resources/insights-trending)
-- [Informações usadas](/graph/api/resources/insights-used)
-- [Informações compartilhadas](/graph/api/resources/insights-shared)
+- [Tendência](/graph/api/resources/insights-trending)
+- [Percepção utilizada](/graph/api/resources/insights-used)
+- [Percepção compartilhada](/graph/api/resources/insights-shared)
 - [Configurações do usuário](/graph/api/resources/usersettings)
 - [Convite](/graph/api/resources/invitation)
 
@@ -88,17 +89,17 @@ O Microsoft Graph permite que você acesse os dados em [vários serviços](overv
 > [!NOTE]
 > Os limites específicos descritos aqui estão sujeitos a alterações.
 
-> **Observação:** Nesta seção, o termo *locatário* refere-se à organização 365 da Microsoft em que o aplicativo está instalado. Esse locatário pode ser o mesmo que o do aplicativo criado, no caso de um único aplicativo de locatário, ou pode ser diferente, no caso de um [aplicativo multilocatário](/azure/active-directory/develop/setup-multi-tenant-app).
+> **Nota:** Nesta seção, o termo *locatário* refere-se à organização Microsoft 365 onde o aplicativo está instalado. Este inquilino pode ser o mesmo onde o aplicativo foi criado, no caso de um único aplicativo de inquilino, ou pode ser diferente, no caso de [um aplicativo de vários inquilinos](/azure/active-directory/develop/setup-multi-tenant-app).
 
 ### <a name="outlook-service-limits"></a>Limites de serviço do Outlook
 
-Os limites de serviço do Outlook são avaliados para cada combinação de ID de aplicativo e caixa de correio. Em outras palavras, os limites descritos se aplicam a um aplicativo específico ao acessar uma caixa de correio específica (usuário ou grupo). Se um aplicativo exceder o limite de uma caixa de correio, isso não afetará a capacidade de acessar outra caixa de correio. Os limites a seguir se aplicam à nuvem pública, bem como às [implantações nacionais da nuvem](/graph/deployments).
+Os limites de serviço do Outlook são avaliados para cada combinação de ID de aplicativo e caixa de correio. Em outras palavras, os limites descritos se aplicam a um aplicativo específico ao acessar uma caixa de correio específica (usuário ou grupo). Se um aplicativo exceder o limite de uma caixa de correio, isso não afetará a capacidade de acessar outra caixa de correio. Os seguintes limites se aplicam à nuvem pública, bem como às [ implementações de nuvens nacionais](/graph/deployments).
 
 | Limite                                                      | Aplicável a      |
 |------------------------------------------------------------|-----------------|
 | 10.000 solicitações de API em um período de 10 minutos                  | pontos de extremidade v1.0 e beta |
-| 4 solicitações simultâneas                                      | pontos de extremidade v1.0 e beta   |
-| 15 megabytes (MB) upload (PATCH, POST, PUT) em um período de 30 segundos | pontos de extremidade v1.0 e beta   |
+| 4 solicitações simultâneas                                      | v1.0 e pontos finais beta   |
+| 15 megabytes (MB) de upload (PATCH, POST, PUT) em um período de 30 segundos | v1.0 e pontos finais beta   |
 
 #### <a name="outlook-service-resources"></a>Recursos de serviço do Outlook
 
@@ -141,13 +142,13 @@ Os recursos a seguir são fornecidos pelo serviço do Outlook.
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
 
-### <a name="cloud-communication-service-limits"></a>Limites do serviço de comunicação na nuvem
+### <a name="cloud-communication-service-limits"></a>Limites dos serviços de comunicação em nuvem
 
-| Recurso      | Limites por aplicativo por locatário    |
+| Recurso      | Limites por aplicativo e por inquilino    |
 | -------------- | ------------ |
 | [Chamadas](/graph/api/resources/call) | 10.000 chamadas/mês e 100 chamadas simultâneas   |
-| [Informações de reunião](/graph/api/resources/meetinginfo)   | 2000 reuniões/usuários por mês |
-| [Presença](/graph/api/resources/presence) (visualização)   | 2 rps |
+| [Informações sobre a reunião ](/graph/api/resources/meetinginfo)   | 2000 reuniões/usuário a cada mês |
+| [Presença](/graph/api/resources/presence) (pré-visualização)   | 2 rps |
 
 ### <a name="microsoft-teams-service-limits"></a>Limites do serviço do Microsoft Teams
 
@@ -166,62 +167,72 @@ Os limites são expressos como solicitações por segundo (rps).
 | OBTER 1:1/mensagem de chat do grupo  | 3 rps | 30 rps |
 | POSTAR mensagem do canal | 2 rps | 20 rps |
 | POSTAR 1:1/mensagem de chat do grupo | 2 rps | 20 rps |
-| OBTER/equipes/ ```{team-id}``` /Schedule e todas as APIs neste caminho | 60 rps | 600 rps |
-| POST, PATCH, PUT/equipes/ ```{team-id}``` /Schedule e todas as APIs neste caminho | 30 rps | 300 rps |
-| EXCLUIR/equipes/ ```{team-id}``` /Schedule e todas as APIs neste caminho | 15 rps | 150 rps |
+| OBTENHA /equipes/```{team-id}```/programação e todas as APIs neste caminho | 60 rps | 600 rps |
+| PUBLIQUE, CORRIJA, COLOQUE /equipes/```{team-id}```/ programação e todas as APIs neste caminho | 30 rps | 300 rps |
+| APAGAR /equipe/```{team-id}```/programação e todas as APIs neste caminho | 15 rps | 150 rps |
 
 É possível emitir, no máximo, 4 solicitações por segundo por aplicativo em uma determinada equipe ou canal.
 Um máximo 3.000 mensagens por aplicativo por dia podem ser enviadas para um determinado canal.
 
 Confira também [limites do Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) e [requisitos de votação](/graph/api/resources/teams-api-overview#polling-requirements).
 
-### <a name="insights-service-limits"></a>Limites de serviço do insights
+### <a name="identity-protection-and-conditional-access-service-limits"></a>Proteção da identidade e limites do serviço de acesso condicional
 
-Os seguintes limites se aplicam a qualquer solicitação no `me/insights` ou no `users/{id}/insights` .
+| Tipo de solicitação | Limite por inquilino |
+| ------------ | ------- |
+| Qualquer | 1 solicitação por segundo |
+
+Os limites anteriores aplicam-se aos seguintes recursos:  
+Detecçãoderisco, Usuárioderisco, HistóricodeItemdeUsuárioderisco, NomedoLocal, paísNomedoLocal, ipNomedoLocal, PolíticadeAcessoCondicional.
+
+> **Nota:** no momento, os recursos listados acima não retornam um `Retry-After` cabeçalho sobre as `429 Too Many Requests` respostas.
+### <a name="insights-service-limits"></a>Percepção dos limites de serviço
+
+Os seguintes limites se aplicam a qualquer pedido em `me/insights` ou `users/{id}/insights`.
 
 | Limite                                                      | Aplicável a      |
 |------------------------------------------------------------|-----------------|
 | 10.000 solicitações de API em um período de 10 minutos                  | pontos de extremidade v1.0 e beta |
-| 4 solicitações simultâneas                                      | pontos de extremidade v1.0 e beta   |
+| 4 solicitações simultâneas                                      | v1.0 e pontos finais beta   |
 
 ### <a name="microsoft-graph-reports-service-limits"></a>Limites do serviço de relatórios do Microsoft Graph
 
 Os seguintes limites se aplicam a qualquer solicitação no `/reports`.
 
-| Operation                 | Limitar por aplicativo por locatário     | Limite por locatário           |
+| Operation                 | Limitar por aplicativo por locatário     | Limite por inquilino           |
 |---------------------------|------------------------------|----------------------------|
-| Qualquer solicitação (CSV)         | 14 solicitações por 10 minutos   | 40 solicitações por 10 minutos |
-| Qualquer solicitação (JSON, beta)  | 100 solicitações por 10 minutos  | n/d                        |
+| Qualquer pedido (CSV)         | 14 solicitações a cada 10 minutos   | 40 solicitações a cada 10 minutos |
+| Qualquer solicitação (JSON, beta)  | 100 solicitações a cada 10 minutos  | n/d                        |
 
-Os limites anteriores se aplicam individualmente a cada API de relatório. Por exemplo, uma solicitação para a API do relatório de atividades do usuário do Microsoft Teams e uma solicitação para a API do relatório de atividades do usuário do Outlook em 10 minutos contarão como 1 solicitação de 14 para cada API, não 2 solicitações de 14 para ambos.
+Os limites anteriores aplicam-se individualmente a cada relatório de API. Por exemplo, uma solicitação de relatório da API do usuário da Microsoft Teams e uma solicitação de relatório da API do usuário do Outlook dentro de 10 minutos contará como 1 solicitação de 14 para cada API e não 2 solicitações de 14 para ambas.
 
-### <a name="invitation-manager-service-limits"></a>Limites do serviço Gerenciador de convites
+### <a name="invitation-manager-service-limits"></a>Limites de serviço do gerenciador de convite
 
 Os seguintes limites se aplicam a qualquer solicitação no `/invitations`.
 
-| Operation                 | Limite por locatário             |
+| Operation                 | Limite por inquilino             |
 |---------------------------|------------------------------|
-| Qualquer operação             | 150 solicitações por 5 segundos   |
+| Qualquer operação             | 150 solicitações a cada 5 segundos   |
 
 <!-- { "blockType": "throttlinggenstart" } -->
 
-### <a name="education-service-limits"></a>Limites do serviço de educação
+### <a name="education-service-limits"></a>Limites do serviço de Educação
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
 
-### <a name="excel-service-limits"></a>Limites do serviço do Excel
+### <a name="excel-service-limits"></a>Limites de serviço do Excel
 
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 
-### <a name="identity-and-access-audit-logs-service-limits"></a>Limites de serviço de logs de auditoria de identidade e acesso
+### <a name="identity-and-access-audit-logs-service-limits"></a>Limites do serviço de registros de auditoria de identidade e acesso
 
 [!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
 
-### <a name="identity-providers-service-limits"></a>Limites de serviço de provedores de identidade
+### <a name="identity-providers-service-limits"></a>Limites de serviço dos fornecedores de identidade
 
 [!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
 
-### <a name="intune-service-limits"></a>Limites de serviço do Intune
+### <a name="intune-service-limits"></a>Limites de serviço Intune
 
 [!INCLUDE [Intune applications throttling documentation](../includes/throttling-intune-applications.md)]
 [!INCLUDE [Intune books throttling documentation](../includes/throttling-intune-books.md)]
