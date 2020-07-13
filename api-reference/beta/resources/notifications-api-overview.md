@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: notifications
 doc_type: conceptualPageType
 author: merzink
-ms.openlocfilehash: e48259463377e14a84c3010e229ccd31c29ec6ec
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 4347be4028debf7f01a80b5ca27a9fd7d1a04cb4
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938895"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353109"
 ---
 # <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>Usar as API REST de notificações no Microsoft Graph
 
@@ -25,6 +25,8 @@ Você pode usar as API de notificações do Microsoft Graph para enviar notifica
 
 Esse tipo de notificação centrada no usuário é representado pelo recurso [notificação](../resources/projectrome-notification.md) e armazenado no serviço de notificação do Microsoft Graph. Pode ser acessado e gerenciado pelo aplicativo do cliente por meio das [APIs do SDK do lado do cliente](https://aka.ms/GNSDK). Se você não conhece o serviço de notificação do Microsoft Graph, confira a seção [visão geral da notificação](https://docs.microsoft.com/graph/notifications-concept-overview) para saber mais.    
 
+## <a name="whats-new"></a>Novidades
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
 ## <a name="next-steps"></a>Próximas etapas
 - Confira o [recurso notification](../resources/projectrome-notification.md) e crie notificações para interagir com os usuários. 

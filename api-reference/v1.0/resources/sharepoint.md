@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 author: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 963d117bbba945a3acd4bb2ac78928c6eade2506
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: b3745078d28f24af9efcffadbbc2701372f1bc74
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863789"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353851"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>Trabalhar com sites do SharePoint no Microsoft Graph
 
@@ -87,7 +87,8 @@ Os exemplos a seguir são relativos a `https://graph.microsoft.com/v1.0`.
 | /sites/{site-id}/lists/{list-id}/items | Enumerar [listItems](listitem.md) sob a [lista](list.md).
 | /groups/{group-id}/sites/root          | Acesse um [site][] de equipe do grupo.
 
-Sites também podem ser tratados pelo caminho usando o nome de host do SharePoint, seguido por dois pontos e o caminho relativo para o site. Opcionalmente, você pode fazer a transição para lidar com o modelo de recurso colocando outros dois pontos no final.
+Sites can also be addressed by path by using the SharePoint hostname, followed by a colon and the relative path to the site.
+You can optionally transition back to addressing the resource model by putting another colon at the end.
 
 | Caminho                                           | Descrição
 |:-----------------------------------------------|:-----------------------------------
@@ -121,6 +122,9 @@ Uma URL construída apenas com a ID siteCollection (`SPSite`) apontará o site r
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{spsite-id}
 ```
+
+## <a name="whats-new"></a>Novidades
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
 [site]: site.md
 [list]: list.md

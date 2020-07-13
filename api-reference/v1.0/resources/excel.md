@@ -5,25 +5,25 @@ localization_priority: Priority
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: abbb74553e5993f6760adaf4929678f48b7b2b86
-ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
+ms.openlocfilehash: 075b37ff04646ef80ea6d83d8461c48471da3aa8
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822764"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353634"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Trabalhando com o Excel no Microsoft Graph
 
-É possível usar o Microsoft Graph para permitir que aplicativos Web e móveis leiam e modifiquem pastas de trabalho do Excel armazenadas no OneDrive for Business, site do SharePoint ou unidade do Grupo. O recurso `Workbook` (ou arquivo do Excel) contém todos os outros recursos do Excel por meio de relações. É possível acessar uma pasta de trabalho por meio da [API Drive](drive.md) identificando a localização do arquivo na URL. Por exemplo:
+You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive for Business, SharePoint site or Group drive. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the [Drive API](drive.md) by identifying the location of the file in the URL. For example:
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-Você pode acessar um conjunto de objetos do Excel (como Table, Range ou Chart) usando APIs REST padrão para realizar operações de criação, leitura, atualização e exclusão (CRUD) na pasta de trabalho. Por exemplo, `GET https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/worksheets`  
+You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform  create, read, update, and delete (CRUD) operations on the workbook. For example, `GET https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/worksheets`  
 retorna uma coleção de todos os objetos da planilha que fazem parte da pasta de trabalho.    
 
 
-A API REST do Excel só oferece suporte para pastas de trabalho formatadas pelo arquivo do Office Open XML. Não há suporte para pastas de trabalho de extensão de `.xls`. 
+The Excel REST API supports only Office Open XML file formatted workbooks. The `.xls` extension workbooks are not supported. 
 
 **Observação**: o suporte para pastas de trabalho armazenadas na plataforma de Consumidor do OneDrive ainda não está disponível. Neste momento, somente os arquivos armazenados em plataformas comerciais têm suporte das APIs REST do Excel. 
 
@@ -42,12 +42,12 @@ Um dos seguintes [escopos de permissão](https://developer.microsoft.com/graph/d
 As APIs do Excel podem ser chamadas em um destes três modos: 
 
 1. Sessão persistente – Todas as alterações feitas na pasta de trabalho são persistentes (salvas). Esse é o modo de operação mais eficiente e com desempenho mais elevado. 
-2. Sessão não persistente – As alterações feitas pela API não são salvas na localização de origem. Em vez disso, o servidor back-end do Excel mantém uma cópia temporária do arquivo que reflete as alterações feitas durante essa sessão de API específica. Quando a sessão do Excel expirar, as alterações serão perdidas. Esse modo é útil para aplicativos que precisam fazer uma análise ou obter os resultados de um cálculo ou de uma imagem de gráfico, mas não afeta o estado do documento. 
+2. Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state. 
 3. Sem sessão ‒ a chamada à API é feita sem informações sobre a sessão. Os servidores do Excel têm que localizar a cópia do servidor de pasta de trabalho sempre que executam a operação. Portanto, essa não é uma maneira eficiente de chamar APIs do Excel. Ele é adequado para fazer solicitações únicas. 
 
 Para representar a sessão na API, use o cabeçalho `workbook-session-id: {session-id}`. 
 
->**Observação:** o cabeçalho de sessão não é obrigatório para uma API do Excel funcionar. No entanto, recomendamos que você use o cabeçalho de sessão para melhorar o desempenho. Se você não usar um cabeçalho de sessão, as alterações feitas durante a chamada à API _serão_ mantidas como persistentes no arquivo.  
+>**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.  
 
 ### <a name="api-call-to-get-a-session"></a>Chamada à API para obter uma sessão 
 
@@ -195,7 +195,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-** Observação: as planilhas também podem ser recuperadas usando a ID. No entanto, atualmente, a ID contém os caracteres `{` e '}' que precisam ser codificados pela URL para a API funcionar. Exemplo: Para obter uma planilha com a ID de `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, a URL codifica a ID no caminho como `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`. 
+** Note: Worksheets can also be retrieved using the ID. However, currently the ID contains `{` and '}' characters, which needs to be URL encoded for the API to work. Example: In order to get a worksheet with ID of `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, URL encode the ID in the path as `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`. 
 
 #### <a name="delete-a-worksheet"></a>Excluir uma planilha
 
@@ -280,7 +280,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-** Observação: a ID contém os caracteres `{` e `}` (exemplo: `{00000000-0008-0000-0100-000003000000}`) que precisam ser codificados pela URL para a API funcionar. Exemplo: Para obter um objeto gráfico, a URL codifica a ID no caminho como `/charts/%7B00000000-0008-0000-0100-000003000000%7D`. 
+** Note: Chart ID contains `{` and `}` characters (example: `{00000000-0008-0000-0100-000003000000}`), which needs to be URL encoded for the API to work. Example: In order to get a chart object, URL encode the ID in the path as `/charts/%7B00000000-0008-0000-0100-000003000000%7D`. 
 
 #### <a name="get-chart-image"></a>Obter imagem do gráfico
 
@@ -1137,7 +1137,7 @@ content-type: application/json
 
 #### <a name="null-input-in-2-d-array"></a>entrada nula em uma matriz 2D
 
-A entrada `null` em uma matriz bidimensional (para valores, formato de número ou fórmula) é ignorada nos recursos Range e Table. Nenhuma atualização será realizada no destino pretendido (célula) quando a entrada `null` for enviada em valores, formato de número ou grade de fórmula de valores.
+`null` input inside a two-dimensional array (for values, number-format, formula) is ignored in the Range and Table resources. No update will take place to the intended target (cell) when `null` input is sent in values or number-format or formula grid of values.
 
 Por exemplo, para atualizar somente partes específicas de Range, como o formato de número de uma célula, e para manter o formato de número existente em outras partes de Range, defina o formato de número onde for obrigatório e envie `null` para as outras células.
 
@@ -1152,7 +1152,7 @@ Na solicitação de definição a seguir, somente algumas partes do formato de n
 
 #### <a name="null-input-for-a-property"></a>entrada nula para uma propriedade
 
-`null` não é uma entrada válida única para toda a propriedade. Por exemplo, o modelo a seguir não é válido, uma vez que os valores inteiros não podem ser ignorados ou definidos como nulos.
+`null` is not a valid single input for the entire property. For example, the following is not valid because the entire values cannot be set to null or ignored.
 
 ```json
 {
@@ -1173,7 +1173,7 @@ O exemplo a seguir também não é válido, porque nulo não é um valor de cor 
 
 Representação de propriedades de formatação que consiste em valores não uniformes que resultam no retorno de um valor nulo na resposta.
 
-Por exemplo, um intervalo pode consistir em uma ou mais células. Nos casos em que as células individuais incluídas no intervalo especificado não apresentam valores de formatação uniformes, a representação de nível do intervalo será indefinida.
+For example, a Range can consist of one or more cells. In cases where the individual cells contained in the Range specified don't have uniform formatting values, the range level representation will be undefined.
 
 ```json
 {
@@ -1188,7 +1188,7 @@ Um valor nulo também é retornado na resposta nos seguintes casos:
 
 ### <a name="blank-input-and-output"></a>Entrada e saída em branco
 
-Valores em branco em solicitações de atualização são tratados como uma instrução para limpar ou redefinir a respectiva propriedade. Um valor em branco é representado por aspas duplas sem espaço entre elas: `""`
+Blank values in update requests are treated as an instruction to clear or reset the respective property. A blank value is represented by two double quotation marks with no space in-between: `""`
 
 Exemplos:
 
@@ -1199,7 +1199,7 @@ Exemplos:
 * Para `formula` e `formulaLocale`, os valores de fórmula são excluídos.
 
 
-Para operações de leitura, espera-se receber valores em branco caso o conteúdo das células esteja em branco. Quando a célula não inclui dados ou valores, a API retorna um valor em branco. O valor em branco é representado por aspas duplas sem espaço entre elas: `""`
+For read operations, expect to receive blank values if the contents of the cells are blanks. If the cell contains no data or value, the API returns a blank value. Blank value is represented by two double quotation marks with no space in-between: `""`
 
 ```json
 {
@@ -1223,7 +1223,7 @@ Um endereço de intervalo não associado contém apenas os identificadores de co
 * `C:C`, `A:F`, `A:XFD` (inclui linhas não especificadas)
 * `2:2`, `1:4`, `1:1048546` (inclui colunas não especificadas)
 
-Quando a API faz uma solicitação para recuperar um intervalo não associado (`getRange('C:C')`), a resposta retornada contém `null` para as propriedades em nível de célula, como `values`, `text`, `numberFormat` ou `formula`. Outras propriedades de Range, como `address` ou `cellCount`, refletirão o intervalo não associado.
+When the API makes a request to retrieve an unbounded Range (`getRange('C:C')`), the response returned contains `null` for cell-level properties such as `values`, `text`, `numberFormat`, or `formula`. Other Range properties such as `address` or `cellCount` will reflect the unbounded range.
 
 #### <a name="write"></a>Gravação
 
@@ -1245,20 +1245,20 @@ Quando uma operação de atualização é tentada nesse intervalo, a API retorna
 
 ### <a name="large-range"></a>Intervalo longo
 
-Um intervalo longo significa um intervalo cujo tamanho é muito grande para uma única chamada à API. Muitos fatores, como o número de células, os valores, os formatos de número e as fórmulas incluídas no intervalo, podem fazer com que a resposta seja tão extensa a ponto de se tornar inadequada para interação com a API. A API faz a melhor tentativa para retornar ou gravar os dados solicitados. No entanto, o tamanho extenso envolvido pode resultar em uma condição de erro da API devido à intensa utilização de recursos.
+Large Range implies a Range of a size that is too large for a single API call. Many factors such as number of cells, values, numberFormat, and formulas contained in the range can make the response so large that it becomes unsuitable for API interaction. The API makes a best attempt to return or write to the requested data. However, the large size involved might result in an API error condition because of the large resource utilization.
 
 Para evitar isso, convém fazer leituras ou gravações para um intervalo longo em vários tamanhos de intervalo menores.
 
 
 ### <a name="single-input-copy"></a>Cópia de entrada única
 
-Para dar suporte a atualização de um intervalo com os formatos de número ou valores idênticos, ou para a aplicação de uma mesma fórmula em um intervalo, você deve usar a seguinte convenção na API de configuração. No Excel, esse comportamento é semelhante a inserir valores ou fórmulas em um intervalo no modo Ctrl+Enter.
+To support updating a range with the same values or number-format or applying same formula across a range, the following convention is used in the set API. In Excel, this behavior is similar to inputting values or formulas to a range in the CTRL+Enter mode.
 
 A API vai procurar um *valor de célula única*, no entanto, se a dimensão do intervalo de destino não corresponder à dimensão do intervalo de entrada, ela aplicará a atualização ao intervalo inteiro no modo Ctrl+Enter com o valor ou fórmula fornecida na solicitação.
 
 #### <a name="examples"></a>Exemplos
 
-A solicitação a seguir atualiza o intervalo selecionado com "Texto de amostra". Observe que o intervalo tem 200 células, ao passo que a entrada fornecida tem apenas 1 valor de célula.
+The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1308,7 +1308,7 @@ content-type: application/json
 
 ## <a name="error-information"></a>Informações do erro 
 
-Erros são retornados com um código de erro HTTP e um objeto de erro. Um `code` de erro e uma `message` explicam o motivo do erro.
+Errors are returned with an HTTP error code and an error object. An error `code` and `message` explain the reason for the error.
  
 Apresentamos um exemplo a seguir.
 
@@ -1329,3 +1329,5 @@ Content-Type: application/json
 }
 ```
 
+## <a name="whats-new"></a>Novidades
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
