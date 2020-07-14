@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67cda2cb2864725e293f661659afa01d42b51707
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a800a24cd4eb41258a060b67f77f0eed5e479817
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436928"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122522"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>tipo de recurso windowsFeatureUpdateProfile
 
@@ -37,10 +37,11 @@ Perfil de atualização de recursos do Windows
 |:---|:---|:---|
 |id|String|O identificador da entidade.|
 |displayName|Cadeia de caracteres|O nome de exibição do perfil.|
-|description|String|A descrição do perfil especificado pelo usuário.|
-|featureUpdateVersion|String|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
+|descrição|String|A descrição do perfil especificado pelo usuário.|
+|featureUpdateVersion|Cadeia de caracteres|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
 |createdDateTime|DateTimeOffset|A data e hora em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora em que o perfil foi modificado pela última vez.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de atualização de recurso.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -64,7 +65,10 @@ Veja a seguir uma representação JSON do recurso.
   "description": "String",
   "featureUpdateVersion": "String",
   "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
 
