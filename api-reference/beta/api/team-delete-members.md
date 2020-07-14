@@ -5,26 +5,26 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2dc5359684f0b4d73f08551ea720dc095f482337
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: MT
+ms.openlocfilehash: d76456123f3d60428feb213b0ef8901b03db3fa1
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091442"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45124132"
 ---
-# <a name="delete-members"></a>Excluir Membros
+# <a name="delete-members"></a>Excluir membros
 Namespace: microsoft.graph
 
-Remover um novo [conversationMember](../resources/conversationmember.md) de uma [equipe](../resources/team.md).
+Remover um [conversationMember](../resources/conversationmember.md) de uma [equipe](../resources/team.md).
 
 ## <a name="permissions"></a>Permissões
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)| TeamMember. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)| TeamMember.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo| TeamMember. ReadWrite. All|
+|Aplicativo| TeamMember.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -78,7 +78,7 @@ DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members
 
 
 ### <a name="response"></a>Resposta
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true

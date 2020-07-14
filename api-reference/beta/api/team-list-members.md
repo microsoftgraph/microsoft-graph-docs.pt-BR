@@ -5,28 +5,30 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 214cd5fa426a72a6917431ce7a77287ead915858
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: MT
+ms.openlocfilehash: 2b9840ba7d543a01a8ed458489cf91c257c9f71f
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081024"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45124104"
 ---
 # <a name="list-members"></a>Listar membros
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Obtenha o [conversationMember](../resources/conversationmember.md) de uma [equipe](../resources/team.md).
 
->Observação: essa API atualmente não oferece suporte à paginação, portanto, se houver muitos membros para caber em uma solicitação, você não receberá todos os membros.
+>Observação: atualmente, esta API não é compatível com a paginação, portanto, se houver muitos membros para se ajustarem a uma solicitação, você não terá todos os membros.
 
 ## <a name="permissions"></a>Permissões
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|TeamMember. Read. All, TeamMember. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|TeamMember.Read.All, TeamMember.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo|TeamMember. Read. All, TeamMember. ReadWrite. All|
+|Aplicativo|TeamMember.Read.All, TeamMember.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,7 +41,7 @@ GET /teams/{teamsId}/members
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -51,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [conversationMember](../resources/conversationmember.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [conversationMember](../resources/conversationmember.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
