@@ -4,12 +4,12 @@ description: Você pode se conectar à API de segurança do Microsoft Graph usan
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: a3f5a2dc137a37012c4d7787d8c57c1045970be3
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: e3c4aa756de62995deef07604d968b172ffc2645
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219605"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038510"
 ---
 # <a name="security-solution-integrations-using-the-microsoft-graph-security-api"></a>Integração das soluções de segurança usando a API de segurança do Microsoft Graph
 
@@ -24,6 +24,8 @@ Você pode se conectar à API de segurança do Microsoft Graph usando qualquer u
 | Tipo de solução | Nome | Conector | Comunicado |
 |:-----|:--------|:--------|:----------|
 | SIEM |Splunk Enterprise e Splunk Cloud|[Visão geral da API de Segurança do Microsoft Graph](https://aka.ms/graphsecuritysplunkaddon) | [Postagem no blog](https://aka.ms/graphsecuritysplunkaddonblogpost)<br>[Postagem no blog Splunk na nuvem](https://aka.ms/graphsecuritysplunkcloudblogpost)|
+| SIEM |QRadar|[Protocolo da API de Segurança do Microsoft Graph e DSMs QRadas suportados](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_logsource_Microsoft_Graph_Security_protocol.html)| - |
+| ITSM |ServiceNow|[Integração de ingestão de alertas da API de Segurança do Microsoft Graph](https://docs.servicenow.com/bundle/orlando-security-management/page/product/secops-integration-sir/secops-integration-ms-graph/concept/ms-graph-about.html)| - |
 | SOAR | Aplicativos lógicos do Azure/fluxo da Microsoft | [Conectores de segurança do Microsoft Graph para Aplicativos Lógicos, Flow e PowerApps](https://aka.ms/graphsecurityconnectors) | [Postagem no blog](https://aka.ms/graphsecurityconnectorsblogpost) |
 | Automação | Módulo do PowerShell | [Módulo do PowerShell de segurança do Microsoft Graph](https://aka.ms/graphsecuritypowershellmodule) | [Postagem no blog](https://aka.ms/graphsecuritypowershellmodulepost) |
 | Relatório | Power BI | [Conector de segurança do Microsoft Graph para Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc) | [Postagem no blog](https://aka.ms/graphsecuritypowerbiconnectorblogpost) |
