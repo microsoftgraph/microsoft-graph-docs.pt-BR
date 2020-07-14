@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8ec1f42ba951fa1bde827b2900b98e37c62d6160
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 52034dd9d25c5decf8feb4cd3af28ea95224adcb
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845278"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123824"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>tipo de recurso featureRolloutPolicy
 
@@ -43,7 +43,11 @@ Estes são os requisitos para cada um dos recursos atualmente suported para dist
 
 * Habilite o [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs)   na página "recursos opcionais" no Azure ad Connect.
 
-## <a name="methods"></a>Methods
+### <a name="emailasalternateid"></a>EmailAsAlternateId
+
+* Associe o email alternativo às contas de usuário.
+
+## <a name="methods"></a>Métodos
 
 | Método                                                                         | Tipo de retorno                                     | Descrição                                                               |
 |:-------------------------------------------------------------------------------|:------------------------------------------------|:--------------------------------------------------------------------------|
@@ -66,7 +70,7 @@ Estes são os requisitos para cada um dos recursos atualmente suported para dist
 |isAppliedToOrganization|Booliano|Indica se esta política de distribuição de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Boolean|Indica se a distribuição de recursos está habilitada.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|

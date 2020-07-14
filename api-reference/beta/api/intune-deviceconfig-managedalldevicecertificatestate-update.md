@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a54626104faa00e443efe1d430fbd53eb9784dd
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: fcd25b88d46eddadeedf6d53474e209cc70e3c10
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792713"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122949"
 ---
 # <a name="update-managedalldevicecertificatestate"></a>Atualizar managedAllDeviceCertificateState
 
@@ -55,17 +55,17 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|managedDeviceDisplayName|String|Nome de exibição do dispositivo|
-|userPrincipalName|String|Nome UPN|
-|certificateExpirationDateTime|DateTimeOffset|Data de vencimento do certificado|
-|certificateIssuerName|String|Emissor|
-|certificateThumbprint|String|Identificação|
-|certificateSerialNumber|String|Número de série|
-|certificateSubjectName|String|Nome do assunto do certificado|
-|certificateKeyUsages|Int32|Uso de chave|
-|certificateExtendedKeyUsages|String|Uso avançado de chave|
-|certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 |certificateRevokeStatusLastChangeDateTime|DateTimeOffset|A hora em que o status da revogação foi alterado pela última vez|
+|managedDeviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
+|userPrincipalName|Cadeia de caracteres|Nome UPN|
+|certificateExpirationDateTime|DateTimeOffset|Data de vencimento do certificado|
+|certificateIssuerName|Cadeia de caracteres|Emissor|
+|certificateThumbprint|Cadeia de caracteres|Identificação|
+|certificateSerialNumber|Cadeia de caracteres|Número de série|
+|certificateSubjectName|Cadeia de caracteres|Nome do assunto do certificado|
+|certificateKeyUsages|Int32|Uso de chave|
+|certificateExtendedKeyUsages|Cadeia de caracteres|Uso avançado de chave|
+|certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 
 
 
@@ -79,11 +79,12 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates/{managedAllDeviceCertificateStateId}
 Content-type: application/json
-Content-length: 735
+Content-length: 820
 
 {
   "@odata.type": "#microsoft.graph.managedAllDeviceCertificateState",
   "certificateRevokeStatus": "pending",
+  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:34.9547208-08:00",
   "managedDeviceDisplayName": "Managed Device Display Name value",
   "userPrincipalName": "User Principal Name value",
   "certificateExpirationDateTime": "2017-01-01T00:02:14.9489247-08:00",
@@ -93,8 +94,7 @@ Content-length: 735
   "certificateSubjectName": "Certificate Subject Name value",
   "certificateKeyUsages": 4,
   "certificateExtendedKeyUsages": "Certificate Extended Key Usages value",
-  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
-  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:41.5044473-08:00"
+  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
 
@@ -103,12 +103,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 784
+Content-Length: 869
 
 {
   "@odata.type": "#microsoft.graph.managedAllDeviceCertificateState",
   "id": "987c6a17-6a17-987c-176a-7c98176a7c98",
   "certificateRevokeStatus": "pending",
+  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:34.9547208-08:00",
   "managedDeviceDisplayName": "Managed Device Display Name value",
   "userPrincipalName": "User Principal Name value",
   "certificateExpirationDateTime": "2017-01-01T00:02:14.9489247-08:00",
@@ -118,8 +119,7 @@ Content-Length: 784
   "certificateSubjectName": "Certificate Subject Name value",
   "certificateKeyUsages": 4,
   "certificateExtendedKeyUsages": "Certificate Extended Key Usages value",
-  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
-  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:41.5044473-08:00"
+  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
 

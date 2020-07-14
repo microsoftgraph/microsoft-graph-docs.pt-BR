@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b9912a3fe3f2e88e09ea47bf3d5dca582ef132b8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c5f1950e1d42683b3e8d305c8c5386225f7dcecf
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434624"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123201"
 ---
 # <a name="list-androidworkprofilevpnconfigurations"></a>Listar androidWorkProfileVpnConfigurations
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Listar Propriedades e relações dos objetos [androidWorkProfileVpnConfiguration](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [androidWorkProfileVpnConfiguration](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [androidWorkProfileVpnConfiguration](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -62,11 +62,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2207
+Content-Length: 2592
 
 {
   "value": [
@@ -130,7 +130,18 @@ Content-Length: 2207
           "value": "Value value"
         }
       ],
-      "authenticationMethod": "usernameAndPassword"
+      "authenticationMethod": "usernameAndPassword",
+      "proxyServer": {
+        "@odata.type": "microsoft.graph.vpnProxyServer",
+        "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
+        "address": "Address value",
+        "port": 4
+      },
+      "targetedPackageIds": [
+        "Targeted Package Ids value"
+      ],
+      "alwaysOn": true,
+      "alwaysOnLockdown": true
     }
   ]
 }

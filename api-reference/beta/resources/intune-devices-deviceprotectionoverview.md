@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e6f949cae0ae293c713ba52480d23c44ea093b3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5f6d4c325d11ee5f02277ad86f7bb038a2ac3b0f
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470722"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123719"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>tipo de recurso deviceProtectionOverview
 
@@ -35,6 +35,7 @@ Informações de hardware de um determinado dispositivo.
 |pendingManualStepsDeviceCount|Int32|Contagem de dispositivos de etapas manuais pendentes.|
 |pendingOfflineScanDeviceCount|Int32|Contagem de dispositivos de verificação offline pendente.|
 |criticalFailuresDeviceCount|Int32|Contagem de dispositivos de falhas críticas.|
+|pendingQuickScanDeviceCount|Int32|Contagem de dispositivos de verificação rápida pendente. Valores válidos-2147483648 a 2147483647|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -58,7 +59,8 @@ Veja a seguir uma representação JSON do recurso.
   "pendingRestartDeviceCount": 1024,
   "pendingManualStepsDeviceCount": 1024,
   "pendingOfflineScanDeviceCount": 1024,
-  "criticalFailuresDeviceCount": 1024
+  "criticalFailuresDeviceCount": 1024,
+  "pendingQuickScanDeviceCount": 1024
 }
 ```
 

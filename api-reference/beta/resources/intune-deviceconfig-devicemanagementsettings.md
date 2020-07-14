@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f88561d91c4560038027245291f8a04ab270fa22
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7dd44406211e8d0763625e5c1ae252444505265e
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469250"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123950"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Tipo de recurso deviceManagementSettings
 
@@ -31,9 +31,10 @@ Ainda não documentado
 |enhancedJailBreak|Booliano|O recurso está habilitado ou não para a detecção de jailbreak avançada.|
 |deviceInactivityBeforeRetirementInDay|Int32|Quando o dispositivo não faz check-in por um número especificado de dias, os dados da empresa podem ser removidos e o dispositivo não estará sob gerenciamento. Valores válidos de 30 a 270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|O provedor de credenciais derivado a ser usado para esta conta. Os valores possíveis são: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
-|derivedCredentialUrl|String|O URI de autoatendimento do provedor de credenciais derivado.|
+|derivedCredentialUrl|Cadeia de caracteres|O URI de autoatendimento do provedor de credenciais derivado.|
 |androidDeviceAdministratorEnrollmentEnabled|Booliano|A propriedade para determinar se o registro do administrador do dispositivo Android está habilitado para esta conta.|
 |ignoreDevicesForUnsupportedSettingsEnabled|Booliano|A propriedade para determinar se deve ignorar as configurações de conformidade não suportadas em determinados modelos de dispositivos.|
+|enableLogCollection|Booliano|Determina se o recurso de coleção de logs deve estar disponível para uso.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -56,7 +57,8 @@ Veja a seguir uma representação JSON do recurso.
   "derivedCredentialProvider": "String",
   "derivedCredentialUrl": "String",
   "androidDeviceAdministratorEnrollmentEnabled": true,
-  "ignoreDevicesForUnsupportedSettingsEnabled": true
+  "ignoreDevicesForUnsupportedSettingsEnabled": true,
+  "enableLogCollection": true
 }
 ```
 

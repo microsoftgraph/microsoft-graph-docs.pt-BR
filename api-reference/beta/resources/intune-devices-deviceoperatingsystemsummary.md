@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1c15adc462742adb734a503f55dc69af48bf0f82
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2b1a49496357a3688bd9f484d8759fdd0c2140eb
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470737"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122627"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Tipo de recurso deviceOperatingSystemSummary
 
@@ -35,6 +35,7 @@ Resumo do sistema operacional do dispositivo.
 |androidDeviceAdminCount|Int32|Número de dispositivos Android de administrador de dispositivos.|
 |androidFullyManagedCount|Int32|Número de dispositivos Android totalmente gerenciados.|
 |androidWorkProfileCount|Int32|Número de dispositivos Android de perfil de trabalho.|
+|androidCorporateWorkProfileCount|Int32|A contagem de dispositivos Android do perfil corporativo de trabalho. Também conhecido como pessoal de propriedade corporativa (lidar). Valores válidos-1 a 2147483647|
 |configMgrDeviceCount|Int32|Número de dispositivos gerenciados pelo ConfigMgr.|
 
 ## <a name="relationships"></a>Relações
@@ -60,6 +61,7 @@ Veja a seguir uma representação JSON do recurso.
   "androidDeviceAdminCount": 1024,
   "androidFullyManagedCount": 1024,
   "androidWorkProfileCount": 1024,
+  "androidCorporateWorkProfileCount": 1024,
   "configMgrDeviceCount": 1024
 }
 ```

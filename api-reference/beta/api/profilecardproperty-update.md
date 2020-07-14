@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: fa2073ba29270ea9c0dc95e22c192b3ae7decc3c
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 122b8c0007067dafd2f7326cffc1b4e3b1697890
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080657"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123840"
 ---
 # <a name="update-profilecardproperty"></a>Atualizar profileCardProperty
 
@@ -37,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{id}
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -54,7 +54,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |anotações|coleção profileCardAnnotation| Contém quaisquer rótulos alternativos ou localizados que um administrador optou por especificar.|
-|directoryPropertyName|String|Contém o nome da propriedade de diretório que se destina à superfície no cartão de perfil. |
+|directoryPropertyName|Cadeia de caracteres|Contém o nome da propriedade de diretório que se destina à superfície no cartão de perfil. |
 
 ## <a name="response"></a>Resposta
 
@@ -73,7 +73,7 @@ O exemplo a seguir adiciona um rótulo localizado "Kostnads Senter" para a local
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties/CustomAttribute1
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/CustomAttribute1
 Content-type: application/json
 
 {

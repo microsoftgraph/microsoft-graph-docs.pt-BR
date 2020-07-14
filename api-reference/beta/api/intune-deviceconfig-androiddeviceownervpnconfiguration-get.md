@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e3285de7db1190d0c6e43c022286c6b0e6eca72
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3fa7af555496e50d236b733cd507590da5626ced
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436063"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123327"
 ---
 # <a name="get-androiddeviceownervpnconfiguration"></a>Obter androidDeviceOwnerVpnConfiguration
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Leia as propriedades e as relações do objeto [androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -66,11 +66,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1698
+Content-Length: 2061
 
 {
   "value": {
@@ -118,7 +118,18 @@ Content-Length: 1698
         "isDefaultServer": true
       }
     ],
-    "connectionType": "pulseSecure"
+    "connectionType": "pulseSecure",
+    "proxyServer": {
+      "@odata.type": "microsoft.graph.vpnProxyServer",
+      "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
+      "address": "Address value",
+      "port": 4
+    },
+    "targetedPackageIds": [
+      "Targeted Package Ids value"
+    ],
+    "alwaysOn": true,
+    "alwaysOnLockdown": true
   }
 }
 ```

@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f7b00de9363d4145165596d8ded2339de1843df0
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 927ec039942d594fcb34665ed3ff0641904fcb60
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793476"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123922"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -44,6 +44,9 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração automática de proxy global de proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
 - [Proxy global do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
 - [Perfil de certificado PFX importado do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md)
+- [Ícone de pasta do modo de quiosque do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)
+- [Tamanho do ícone do modo de quiosque do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)
+- [Orientação de tela do modo de quiosque do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md)
 - [Perfil de certificado PKCS do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md)
 - [Modo de repositório de execução do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Tipo de senha obrigatória do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
@@ -244,7 +247,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Detalhes de política de relatório de criptografia](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [Estado de criptografia](intune-deviceconfig-encryptionstate.md)
 - [Uso estendido de chave](intune-deviceconfig-extendedkeyusage.md)
-- [Configuração comprovada de recurso](intune-deviceconfig-featureflightedconfiguration.md)
 - [Estado do cofre de arquivos](intune-deviceconfig-filevaultstate.md)
 - [Tipo de método de verificação da lista de revogação de certificados do firewall](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
 - [Tipo de método de enfileiramento de pacotes do firewall](intune-deviceconfig-firewallpacketqueueingmethodtype.md)

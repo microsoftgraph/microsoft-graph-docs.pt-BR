@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a7aa3d37a78217301f4b5fd150f558dcec55de7f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: f02aa12b3a0a0f03a49ab65a11c20f642cb27986
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790905"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123775"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -25,6 +25,7 @@ Use as políticas de proteção de aplicativos do Intune para ajudar a proteger 
 
 Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de proteção de aplicativos no Intune:
 
+- [Modo de registro do proprietário do dispositivo Android](intune-androidforwork-androiddeviceownerenrollmentmode.md)
 - [Perfil de registro de proprietário do dispositivo Android](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
 - [Código da empresa de registro do Android](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Aplicativo Android for Work](intune-apps-androidforworkapp.md)

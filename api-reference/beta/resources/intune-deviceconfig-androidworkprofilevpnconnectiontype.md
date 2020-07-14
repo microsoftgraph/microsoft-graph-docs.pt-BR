@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f4c72f7980c440ee786b19eab882821ecf9f88a5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9a06647ac24b094b352d4b0a01b3cfcc654e55db
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470159"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123957"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>tipo de enumeração androidWorkProfileVpnConnectionType
 
@@ -26,12 +26,13 @@ Tipo de conexão VPN do perfil de trabalho do Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |ciscoAnyConnect|,0|Cisco AnyConnect.|
-|pulseSecure|1|Pulso seguro.|
-|f5EdgeClient|duas|Cliente de borda F5.|
-|dellSonicWallMobileConnect|3D|Conexão móvel Dell SonicWALL.|
+|pulseSecure|1 |Pulso seguro.|
+|f5EdgeClient|2 |Cliente de borda F5.|
+|dellSonicWallMobileConnect|3 |Conexão móvel Dell SonicWALL.|
 |checkPointCapsuleVpn|4 |Verificar VPN de cápsula de ponto.|
 |Citrix|5 |Citrix|
 |paloAltoGlobalProtect|6 |GlobalProtect de redes de Palo Alto.|
+|microsoftTunnel|7 |Microsoft Tunnel.|
 
 
 

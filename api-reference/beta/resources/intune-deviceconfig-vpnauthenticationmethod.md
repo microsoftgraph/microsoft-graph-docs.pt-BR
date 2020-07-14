@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dd3cc6887f5434df00a2ed9a817c0ca79c8c880e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ef477b17b8ae7e8aedc3b95ce70b66115a3c8712
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412448"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123887"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>tipo de enumeração vpnAuthenticationMethod
 
@@ -26,9 +26,10 @@ Método de autenticação VPN.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |certificado|,0|Autenticar com um certificado.|
-|usernameAndPassword|1|Usar nome de usuário e senha para autenticação.|
-|sharedSecret|duas|Usar segredo compartilhado para autenticação.  Válido somente para iOS IKEv2.|
-|derivedCredential|3D|Use a credencial derivada para autenticação.|
+|usernameAndPassword|1 |Usar nome de usuário e senha para autenticação.|
+|sharedSecret|2 |Usar segredo compartilhado para autenticação.  Válido somente para iOS IKEv2.|
+|derivedCredential|3 |Use a credencial derivada para autenticação.|
+|azureAD|4 |Usar o Azure AD para autenticação.|
 
 
 

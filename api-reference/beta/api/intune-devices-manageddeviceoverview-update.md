@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 08de40e9f1c6685f8439f3bc72609486950bad5d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5e0034c22be5b8a33d2fe46e1115c2bed5a08958
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43323947"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122711"
 ---
 # <a name="update-manageddeviceoverview"></a>Atualizar managedDeviceOverview
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Atualizar as propriedades de um objeto [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar [managedDeviceOve
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do resumo|
+|id|Cadeia de caracteres|O identificador exclusivo do resumo|
 |enrolledDeviceCount|Int32|Contagem total de dispositivos registrados. Não inclui dispositivos PC gerenciados pelo Intune PC Agent|
 |mdmEnrolledCount|Int32|O número de dispositivos registrados no MDM|
 |dualEnrolledDeviceCount|Int32|O número de dispositivos registrados no MDM e no EAS|
@@ -74,7 +74,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1114
+Content-length: 1158
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -93,6 +93,7 @@ Content-length: 1114
     "androidDeviceAdminCount": 7,
     "androidFullyManagedCount": 8,
     "androidWorkProfileCount": 7,
+    "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4
   },
   "deviceExchangeAccessStateSummary": {
@@ -116,11 +117,11 @@ Content-length: 1114
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1227
+Content-Length: 1271
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -140,6 +141,7 @@ Content-Length: 1227
     "androidDeviceAdminCount": 7,
     "androidFullyManagedCount": 8,
     "androidWorkProfileCount": 7,
+    "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4
   },
   "deviceExchangeAccessStateSummary": {

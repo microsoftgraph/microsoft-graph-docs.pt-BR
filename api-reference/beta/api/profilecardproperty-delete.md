@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2dffcc667281d26fb64e44dd7cd45e8e0f1c313f
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 64e3e26f37b9df3921a8bcd37eb27edd297b1998
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080674"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123965"
 ---
 # <a name="delete-profilecardproperty"></a>Excluir profileCardProperty
 
@@ -37,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{directoryPropertyName-Value}
+DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/{directoryPropertyName-Value}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -67,7 +67,7 @@ O exemplo a seguir mostra como excluir o atributo chamado "fax" do cartão de pe
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties/fax
+DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/fax
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-profilecardproperty-csharp-snippets.md)]

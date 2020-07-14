@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a6043023bd734a571028baad6b0f8ad26e12d04e
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: ccbd1e60b39caf716b9059e0a3e145e42783cae0
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793469"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123901"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -79,6 +79,9 @@ Namespace: microsoft.graph
 - [Resumo de execução de script de integridade do dispositivo](intune-devices-devicehealthscriptrunsummary.md)
 - [Parâmetro de cadeia de caracteres de script de integridade do dispositivo](intune-devices-devicehealthscriptstringparameter.md)
 - [Agendamento de tempo de script de integridade do dispositivo](intune-devices-devicehealthscripttimeschedule.md)
+- [Solicitação de coleta de log de dispositivo](intune-devices-devicelogcollectionrequest.md)
+- [Resposta da coleção de logs do dispositivo](intune-devices-devicelogcollectionresponse.md)
+- [Tipo de modelo do conjunto de logs de dispositivos](intune-devices-devicelogcollectiontemplatetype.md)
 - [Definição de configuração complexa abstrata de gerenciamento de dispositivos](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [Instância de configuração complexa abstrata de gerenciamento de dispositivos](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Evento de piloto automático de gerenciamento de dispositivos](intune-troubleshooting-devicemanagementautopilotevent.md)
