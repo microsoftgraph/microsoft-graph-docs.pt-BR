@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7a3ed4c4edf66da464d64bd5728fab2e2b47e217
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 45b2d004fd6057de5e6d3b161fd41239ca5d27fb
+ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633868"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45142524"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var conversationMember = new ConversationMember
+var conversationMember = new AadUserConversationMember
 {
     Roles = new List<String>()
     {

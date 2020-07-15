@@ -5,12 +5,12 @@ author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 669cb23ab0e7a4197950eb5825ea5b76b6c54ba0
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: Auto
+ms.openlocfilehash: 065e7cdc84a353c4636fc4e7d13c32d22c7bce70
+ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081191"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45142318"
 ---
 # <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>Automatizar a configuração do proxy de aplicativo usando a API do Microsoft Graph
 
@@ -46,6 +46,8 @@ Use [instanciar applicationtemplate](https://docs.microsoft.com/graph/api/resour
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_applicationTemplate"
@@ -59,6 +61,20 @@ Content-type: application/json
   "displayName": "Contoso IWA App"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-applicationtemplate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-applicationtemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-applicationtemplate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Resposta
@@ -142,6 +158,8 @@ Use o applicationId da etapa anterior para configurar o proxy de aplicativo para
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_application"
@@ -159,6 +177,20 @@ Content-type: appplication/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-application-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -173,7 +205,7 @@ HTTP/1.1 204 No content
 ### <a name="set-the-redirecturi-identifieruri-and-homepageurl-properties"></a>Definir as propriedades redirectUri, identifierUri e homepageUrl
 Atualize as propriedades **redirectUri**, **identifierUri**e **HOMEPAGEURL** do aplicativo para a URL externa.
 
-#### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitar
 
 <!-- {
   "blockType": "request",
@@ -211,6 +243,8 @@ Liste os conectores e use a resposta para recuperar e salvar a ID de objeto do c
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "connector"
@@ -220,6 +254,20 @@ Liste os conectores e use a resposta para recuperar e salvar a ID de objeto do c
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors
 
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/connector-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/connector-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/connector-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -262,7 +310,7 @@ Content-type: application/json
 ### <a name="create-a-connectorgroup"></a>Criar um um dos conectores
 Para este exemplo, um novo grupo de conectores é criado com o nome "grupo de conectores de demonstração do IWA" que é usado para o aplicativo. Você também pode ignorar esta etapa se o seu conector já estiver atribuído ao conector apropriado. Recupere e salve a ID de objeto do The Connector para usar na próxima etapa.
 
-#### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitar
 
 <!-- {
   "blockType": "request",
@@ -300,7 +348,7 @@ Content-type: connectorGroup/json
 
 ### <a name="assign-a-connector-to-the-connectorgroup"></a>Atribuir um conector ao conector
 
-#### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitar
 
 <!-- {
   "blockType": "request",
@@ -331,6 +379,8 @@ HTTP/1.1 204 No content
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "connectorGroup"
@@ -344,6 +394,20 @@ Content-type: application/json
 "@odata.id":"https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/connectorgroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>Resposta
 
 <!-- {
@@ -359,7 +423,7 @@ HTTP/1.1 204 No content
 Este aplicativo usa a autenticação integrada do Windows (IWA). Para configurar o IWA, defina as propriedades de logon único no tipo de recurso [singleSignOnSettings](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) .
 
 
-#### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitar
 
 <!-- {
   "blockType": "request",
@@ -399,6 +463,8 @@ HTTP/1.1 204 No content
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -406,6 +472,20 @@ HTTP/1.1 204 No content
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoles
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>Resposta
 
 <!-- {

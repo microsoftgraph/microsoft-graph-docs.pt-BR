@@ -5,15 +5,17 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d76456123f3d60428feb213b0ef8901b03db3fa1
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 1ffce12f12288c7d184a5fd0a591ca6c48dac59c
+ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124132"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45142221"
 ---
 # <a name="delete-members"></a>Excluir membros
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remover um [conversationMember](../resources/conversationmember.md) de uma [equipe](../resources/team.md).
 
