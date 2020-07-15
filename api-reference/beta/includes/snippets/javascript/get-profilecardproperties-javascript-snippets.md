@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6bb0fd4c609b21c1e25fcb3ea319fe81e0772915
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 8dca269be8f22860c46b74aa16ad3f4d8da80057
+ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080677"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45142470"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/organization/settings/profileCardProperties')
+let res = await client.api('/organization/{organizationId}/settings/profileCardProperties')
     .version('beta')
     .get();
 
