@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 141d59a4ac49c8aca83d4d3aa658c8b74beac544
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 68b03be62fd05e787422f743c5ed2c31d8cb95f5
+ms.sourcegitcommit: 9c1abb1c87177da20e1f5bbf1fae8131ab7e4f16
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680799"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146670"
 ---
 # <a name="create-registereduser"></a>Criar registeredUser
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [director
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -56,13 +56,12 @@ Este é um exemplo da solicitação.
   "name": "create_directoryobject_from_device"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers
+POST https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "directoryObject": {
-  }
+  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -84,15 +83,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
   "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 51
-
-{
-  "directoryObject": {
-    "id": "id-value"
-  }
-}
+HTTP/1.1 204 No content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
