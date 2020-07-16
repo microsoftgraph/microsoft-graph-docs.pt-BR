@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 43c6a8400148965c4505b2c029bf1f6609b9f196
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 423fd07e20b71a221d593f0cbe142d2f399bf30f
+ms.sourcegitcommit: 9c1abb1c87177da20e1f5bbf1fae8131ab7e4f16
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681106"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146691"
 ---
 # <a name="create-registeredowner"></a>Criar registeredOwner
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [director
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -62,8 +62,7 @@ Content-type: application/json
 Content-length: 30
 
 {
-  "directoryObject": {
-  }
+  "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -85,15 +84,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
   "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 51
-
-{
-  "directoryObject": {
-    "id": "id-value"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
