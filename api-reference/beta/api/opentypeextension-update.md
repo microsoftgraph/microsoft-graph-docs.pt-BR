@@ -12,38 +12,38 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 06/24/2020
 ms.locfileid: "44863359"
 ---
-# <a name="update-open-extension"></a><span data-ttu-id="11e1c-103">Atualizar extensão aberta</span><span class="sxs-lookup"><span data-stu-id="11e1c-103">Update open extension</span></span>
+# <a name="update-open-extension"></a><span data-ttu-id="1f5e1-103">Atualizar extensão aberta</span><span class="sxs-lookup"><span data-stu-id="1f5e1-103">Update open extension</span></span>
 
-<span data-ttu-id="11e1c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="11e1c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1f5e1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1f5e1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="11e1c-105">Atualize uma extensão aberta (objeto[openTypeExtension](../resources/opentypeextension.md) ) com as propriedades no corpo da solicitação:</span><span class="sxs-lookup"><span data-stu-id="11e1c-105">Update an open extension ([openTypeExtension](../resources/opentypeextension.md) object) with the properties in the request body:</span></span>
+<span data-ttu-id="1f5e1-105">Atualize uma extensão aberta (objeto[openTypeExtension](../resources/opentypeextension.md) ) com as propriedades no corpo da solicitação:</span><span class="sxs-lookup"><span data-stu-id="1f5e1-105">Update an open extension ([openTypeExtension](../resources/opentypeextension.md) object) with the properties in the request body:</span></span>
 
-- <span data-ttu-id="11e1c-106">Se uma propriedade no corpo da solicitação corresponder ao nome de uma propriedade existente na extensão, os dados na extensão serão atualizados.</span><span class="sxs-lookup"><span data-stu-id="11e1c-106">If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.</span></span>
-- <span data-ttu-id="11e1c-107">Caso contrário, essa propriedade e seus dados serão adicionados à extensão.</span><span class="sxs-lookup"><span data-stu-id="11e1c-107">Otherwise that property and its data are added to the extension.</span></span> 
+- <span data-ttu-id="1f5e1-106">Se uma propriedade no corpo da solicitação corresponder ao nome de uma propriedade existente na extensão, os dados na extensão serão atualizados.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-106">If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.</span></span>
+- <span data-ttu-id="1f5e1-107">Caso contrário, essa propriedade e seus dados serão adicionados à extensão.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-107">Otherwise that property and its data are added to the extension.</span></span> 
 
-<span data-ttu-id="11e1c-108">Os dados em uma extensão podem ser tipos primitivos ou matrizes de tipos primitivos.</span><span class="sxs-lookup"><span data-stu-id="11e1c-108">The data in an extension can be primitive types, or arrays of primitive types.</span></span>
+<span data-ttu-id="1f5e1-108">Os dados em uma extensão podem ser tipos primitivos ou matrizes de tipos primitivos.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-108">The data in an extension can be primitive types, or arrays of primitive types.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="11e1c-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="11e1c-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1f5e1-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="1f5e1-109">Permissions</span></span>
 
-<span data-ttu-id="11e1c-110">Dependendo do recurso no qual a extensão foi criada e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="11e1c-110">Depending on the resource that the extension was created in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="11e1c-111">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="11e1c-111">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1f5e1-110">Dependendo do recurso no qual a extensão foi criada e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-110">Depending on the resource that the extension was created in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="1f5e1-111">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1f5e1-111">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="11e1c-112">Recurso com suporte</span><span class="sxs-lookup"><span data-stu-id="11e1c-112">Supported resource</span></span> | <span data-ttu-id="11e1c-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="11e1c-113">Delegated (work or school account)</span></span> | <span data-ttu-id="11e1c-114">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="11e1c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="11e1c-115">Application</span><span class="sxs-lookup"><span data-stu-id="11e1c-115">Application</span></span> |
+| <span data-ttu-id="1f5e1-112">Recurso com suporte</span><span class="sxs-lookup"><span data-stu-id="1f5e1-112">Supported resource</span></span> | <span data-ttu-id="1f5e1-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1f5e1-113">Delegated (work or school account)</span></span> | <span data-ttu-id="1f5e1-114">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1f5e1-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1f5e1-115">Application</span><span class="sxs-lookup"><span data-stu-id="1f5e1-115">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| [<span data-ttu-id="11e1c-116">device</span><span class="sxs-lookup"><span data-stu-id="11e1c-116">device</span></span>](../resources/device.md) | <span data-ttu-id="11e1c-117">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="11e1c-117">Directory.AccessAsUser.All</span></span> | <span data-ttu-id="11e1c-118">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="11e1c-118">Not supported</span></span> | <span data-ttu-id="11e1c-119">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="11e1c-119">Device.ReadWrite.All</span></span> |
-| [<span data-ttu-id="11e1c-120">evento</span><span class="sxs-lookup"><span data-stu-id="11e1c-120">event</span></span>](../resources/event.md) | <span data-ttu-id="11e1c-121">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11e1c-121">Calendars.ReadWrite</span></span> | <span data-ttu-id="11e1c-122">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11e1c-122">Calendars.ReadWrite</span></span> | <span data-ttu-id="11e1c-123">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11e1c-123">Calendars.ReadWrite</span></span> |
-| [<span data-ttu-id="11e1c-124">grupo</span><span class="sxs-lookup"><span data-stu-id="11e1c-124">group</span></span>](../resources/group.md) | <span data-ttu-id="11e1c-125">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="11e1c-125">Group.ReadWrite.All</span></span> | <span data-ttu-id="11e1c-126">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="11e1c-126">Not supported</span></span> | <span data-ttu-id="11e1c-127">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="11e1c-127">Group.ReadWrite.All</span></span> |
-| [<span data-ttu-id="11e1c-128">evento de grupo</span><span class="sxs-lookup"><span data-stu-id="11e1c-128">group event</span></span>](../resources/event.md) | <span data-ttu-id="11e1c-129">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="11e1c-129">Group.ReadWrite.All</span></span> | <span data-ttu-id="11e1c-130">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="11e1c-130">Not supported</span></span> | <span data-ttu-id="11e1c-131">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="11e1c-131">Not supported</span></span> |
-| [<span data-ttu-id="11e1c-132">postagem de grupo</span><span class="sxs-lookup"><span data-stu-id="11e1c-132">group post</span></span>](../resources/post.md) | <span data-ttu-id="11e1c-133">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="11e1c-133">Group.ReadWrite.All</span></span> | <span data-ttu-id="11e1c-134">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="11e1c-134">Not supported</span></span> | <span data-ttu-id="11e1c-135">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="11e1c-135">Group.ReadWrite.All</span></span> |
-| [<span data-ttu-id="11e1c-136">mensagem</span><span class="sxs-lookup"><span data-stu-id="11e1c-136">message</span></span>](../resources/message.md) | <span data-ttu-id="11e1c-137">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11e1c-137">Mail.ReadWrite</span></span> | <span data-ttu-id="11e1c-138">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11e1c-138">Mail.ReadWrite</span></span> | <span data-ttu-id="11e1c-139">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11e1c-139">Mail.ReadWrite</span></span> | 
-| [<span data-ttu-id="11e1c-140">organização</span><span class="sxs-lookup"><span data-stu-id="11e1c-140">organization</span></span>](../resources/organization.md) | <span data-ttu-id="11e1c-141">Organization.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="11e1c-141">Organization.ReadWrite.All</span></span> | <span data-ttu-id="11e1c-142">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="11e1c-142">Not supported</span></span> | <span data-ttu-id="11e1c-143">Organization.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="11e1c-143">Organization.ReadWrite.All</span></span> |
-| [<span data-ttu-id="11e1c-144">contato pessoal</span><span class="sxs-lookup"><span data-stu-id="11e1c-144">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="11e1c-145">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11e1c-145">Contacts.ReadWrite</span></span> | <span data-ttu-id="11e1c-146">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11e1c-146">Contacts.ReadWrite</span></span> | <span data-ttu-id="11e1c-147">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11e1c-147">Contacts.ReadWrite</span></span> |
-| [<span data-ttu-id="11e1c-148">user</span><span class="sxs-lookup"><span data-stu-id="11e1c-148">user</span></span>](../resources/user.md) | <span data-ttu-id="11e1c-149">User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11e1c-149">User.ReadWrite</span></span> | <span data-ttu-id="11e1c-150">User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11e1c-150">User.ReadWrite</span></span> | <span data-ttu-id="11e1c-151">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="11e1c-151">User.ReadWrite.All</span></span> |
+| [<span data-ttu-id="1f5e1-116">device</span><span class="sxs-lookup"><span data-stu-id="1f5e1-116">device</span></span>](../resources/device.md) | <span data-ttu-id="1f5e1-117">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1f5e1-117">Directory.AccessAsUser.All</span></span> | <span data-ttu-id="1f5e1-118">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="1f5e1-118">Not supported</span></span> | <span data-ttu-id="1f5e1-119">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f5e1-119">Device.ReadWrite.All</span></span> |
+| [<span data-ttu-id="1f5e1-120">evento</span><span class="sxs-lookup"><span data-stu-id="1f5e1-120">event</span></span>](../resources/event.md) | <span data-ttu-id="1f5e1-121">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1f5e1-121">Calendars.ReadWrite</span></span> | <span data-ttu-id="1f5e1-122">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1f5e1-122">Calendars.ReadWrite</span></span> | <span data-ttu-id="1f5e1-123">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1f5e1-123">Calendars.ReadWrite</span></span> |
+| [<span data-ttu-id="1f5e1-124">grupo</span><span class="sxs-lookup"><span data-stu-id="1f5e1-124">group</span></span>](../resources/group.md) | <span data-ttu-id="1f5e1-125">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f5e1-125">Group.ReadWrite.All</span></span> | <span data-ttu-id="1f5e1-126">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="1f5e1-126">Not supported</span></span> | <span data-ttu-id="1f5e1-127">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f5e1-127">Group.ReadWrite.All</span></span> |
+| [<span data-ttu-id="1f5e1-128">evento de grupo</span><span class="sxs-lookup"><span data-stu-id="1f5e1-128">group event</span></span>](../resources/event.md) | <span data-ttu-id="1f5e1-129">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f5e1-129">Group.ReadWrite.All</span></span> | <span data-ttu-id="1f5e1-130">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="1f5e1-130">Not supported</span></span> | <span data-ttu-id="1f5e1-131">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="1f5e1-131">Not supported</span></span> |
+| [<span data-ttu-id="1f5e1-132">postagem de grupo</span><span class="sxs-lookup"><span data-stu-id="1f5e1-132">group post</span></span>](../resources/post.md) | <span data-ttu-id="1f5e1-133">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f5e1-133">Group.ReadWrite.All</span></span> | <span data-ttu-id="1f5e1-134">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="1f5e1-134">Not supported</span></span> | <span data-ttu-id="1f5e1-135">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f5e1-135">Group.ReadWrite.All</span></span> |
+| [<span data-ttu-id="1f5e1-136">mensagem</span><span class="sxs-lookup"><span data-stu-id="1f5e1-136">message</span></span>](../resources/message.md) | <span data-ttu-id="1f5e1-137">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1f5e1-137">Mail.ReadWrite</span></span> | <span data-ttu-id="1f5e1-138">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1f5e1-138">Mail.ReadWrite</span></span> | <span data-ttu-id="1f5e1-139">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1f5e1-139">Mail.ReadWrite</span></span> | 
+| [<span data-ttu-id="1f5e1-140">organização</span><span class="sxs-lookup"><span data-stu-id="1f5e1-140">organization</span></span>](../resources/organization.md) | <span data-ttu-id="1f5e1-141">Organization.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f5e1-141">Organization.ReadWrite.All</span></span> | <span data-ttu-id="1f5e1-142">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="1f5e1-142">Not supported</span></span> | <span data-ttu-id="1f5e1-143">Organization.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f5e1-143">Organization.ReadWrite.All</span></span> |
+| [<span data-ttu-id="1f5e1-144">contato pessoal</span><span class="sxs-lookup"><span data-stu-id="1f5e1-144">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="1f5e1-145">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1f5e1-145">Contacts.ReadWrite</span></span> | <span data-ttu-id="1f5e1-146">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1f5e1-146">Contacts.ReadWrite</span></span> | <span data-ttu-id="1f5e1-147">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1f5e1-147">Contacts.ReadWrite</span></span> |
+| [<span data-ttu-id="1f5e1-148">user</span><span class="sxs-lookup"><span data-stu-id="1f5e1-148">user</span></span>](../resources/user.md) | <span data-ttu-id="1f5e1-149">User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1f5e1-149">User.ReadWrite</span></span> | <span data-ttu-id="1f5e1-150">User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1f5e1-150">User.ReadWrite</span></span> | <span data-ttu-id="1f5e1-151">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f5e1-151">User.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="11e1c-152">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="11e1c-152">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1f5e1-152">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1f5e1-152">HTTP request</span></span>
 
-<span data-ttu-id="11e1c-153">Na solicitação, identifique a instância de recurso, use a propriedade de navegação **extensions** dessa instância para identificar a extensão e faça um `PATCH` nessa instância de extensão.</span><span class="sxs-lookup"><span data-stu-id="11e1c-153">In the request, identify the resource instance, use the **extensions** navigation property of that instance to identify the extension, and do a `PATCH` on that extension instance.</span></span>
+<span data-ttu-id="1f5e1-153">Na solicitação, identifique a instância de recurso, use a propriedade de navegação **extensions** dessa instância para identificar a extensão e faça um `PATCH` nessa instância de extensão.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-153">In the request, identify the resource instance, use the **extensions** navigation property of that instance to identify the extension, and do a `PATCH` on that extension instance.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -59,40 +59,40 @@ PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ```
 
-><span data-ttu-id="11e1c-154">**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso, a fim de atualizar uma extensão nela.</span><span class="sxs-lookup"><span data-stu-id="11e1c-154">**Note:** The above syntax shows some common ways to identify a resource instance, in order to update an extension in it.</span></span> <span data-ttu-id="11e1c-155">Todas as outras sintaxes que permitem identificar essas instâncias de recurso oferecem suporte à atualização de extensões abertas nelas de maneira semelhante.</span><span class="sxs-lookup"><span data-stu-id="11e1c-155">All other syntax that allows you to identify these resource instances supports updating open extensions in them in a similar way.</span></span>
+><span data-ttu-id="1f5e1-154">**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso, a fim de atualizar uma extensão nela.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-154">**Note:** The above syntax shows some common ways to identify a resource instance, in order to update an extension in it.</span></span> <span data-ttu-id="1f5e1-155">Todas as outras sintaxes que permitem identificar essas instâncias de recurso oferecem suporte à atualização de extensões abertas nelas de maneira semelhante.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-155">All other syntax that allows you to identify these resource instances supports updating open extensions in them in a similar way.</span></span>
 
-<span data-ttu-id="11e1c-156">Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo de solicitação dados personalizados para alterar ou adicionar a essa extensão.</span><span class="sxs-lookup"><span data-stu-id="11e1c-156">See the [Request body](#request-body) section about including in the request body any custom data to change or add to that extension.</span></span>
+<span data-ttu-id="1f5e1-156">Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo de solicitação dados personalizados para alterar ou adicionar a essa extensão.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-156">See the [Request body](#request-body) section about including in the request body any custom data to change or add to that extension.</span></span>
 
-## <a name="path-parameters"></a><span data-ttu-id="11e1c-157">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="11e1c-157">Path parameters</span></span>
-|<span data-ttu-id="11e1c-158">**Parâmetro**</span><span class="sxs-lookup"><span data-stu-id="11e1c-158">**Parameter**</span></span>|<span data-ttu-id="11e1c-159">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="11e1c-159">**Type**</span></span>|<span data-ttu-id="11e1c-160">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="11e1c-160">**Description**</span></span>|
+## <a name="path-parameters"></a><span data-ttu-id="1f5e1-157">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="1f5e1-157">Path parameters</span></span>
+|<span data-ttu-id="1f5e1-158">**Parâmetro**</span><span class="sxs-lookup"><span data-stu-id="1f5e1-158">**Parameter**</span></span>|<span data-ttu-id="1f5e1-159">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="1f5e1-159">**Type**</span></span>|<span data-ttu-id="1f5e1-160">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="1f5e1-160">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="11e1c-161">id</span><span class="sxs-lookup"><span data-stu-id="11e1c-161">id</span></span>|<span data-ttu-id="11e1c-162">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="11e1c-162">string</span></span>|<span data-ttu-id="11e1c-163">A unique identifier for an instance of the corresponding collection.</span><span class="sxs-lookup"><span data-stu-id="11e1c-163">A unique identifier for an instance of the corresponding collection.</span></span> <span data-ttu-id="11e1c-164">Required.</span><span class="sxs-lookup"><span data-stu-id="11e1c-164">Required.</span></span>|
-|<span data-ttu-id="11e1c-165">extensionId</span><span class="sxs-lookup"><span data-stu-id="11e1c-165">extensionId</span></span>|<span data-ttu-id="11e1c-166">string</span><span class="sxs-lookup"><span data-stu-id="11e1c-166">string</span></span>|<span data-ttu-id="11e1c-167">This can be an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier.</span><span class="sxs-lookup"><span data-stu-id="11e1c-167">This can be an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier.</span></span> <span data-ttu-id="11e1c-168">The fully qualified name is returned in the `id` property when you create the extension.</span><span class="sxs-lookup"><span data-stu-id="11e1c-168">The fully qualified name is returned in the `id` property when you create the extension.</span></span> <span data-ttu-id="11e1c-169">Required.</span><span class="sxs-lookup"><span data-stu-id="11e1c-169">Required.</span></span>|
+|<span data-ttu-id="1f5e1-161">id</span><span class="sxs-lookup"><span data-stu-id="1f5e1-161">id</span></span>|<span data-ttu-id="1f5e1-162">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="1f5e1-162">string</span></span>|<span data-ttu-id="1f5e1-p103">Um identificador exclusivo para uma instância da coleção correspondente. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-p103">A unique identifier for an instance of the corresponding collection. Required.</span></span>|
+|<span data-ttu-id="1f5e1-165">extensionId</span><span class="sxs-lookup"><span data-stu-id="1f5e1-165">extensionId</span></span>|<span data-ttu-id="1f5e1-166">string</span><span class="sxs-lookup"><span data-stu-id="1f5e1-166">string</span></span>|<span data-ttu-id="1f5e1-p104">Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para a extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade `id` quando você cria a extensão. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-p104">This can be an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="11e1c-170">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="11e1c-170">Request headers</span></span>
-| <span data-ttu-id="11e1c-171">Nome</span><span class="sxs-lookup"><span data-stu-id="11e1c-171">Name</span></span>       | <span data-ttu-id="11e1c-172">Valor</span><span class="sxs-lookup"><span data-stu-id="11e1c-172">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="1f5e1-170">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1f5e1-170">Request headers</span></span>
+| <span data-ttu-id="1f5e1-171">Nome</span><span class="sxs-lookup"><span data-stu-id="1f5e1-171">Name</span></span>       | <span data-ttu-id="1f5e1-172">Valor</span><span class="sxs-lookup"><span data-stu-id="1f5e1-172">Value</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="11e1c-173">Autorização</span><span class="sxs-lookup"><span data-stu-id="11e1c-173">Authorization</span></span> | <span data-ttu-id="11e1c-174">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="11e1c-174">Bearer {token}.</span></span> <span data-ttu-id="11e1c-175">Required.</span><span class="sxs-lookup"><span data-stu-id="11e1c-175">Required.</span></span> |
-| <span data-ttu-id="11e1c-176">Content-Type</span><span class="sxs-lookup"><span data-stu-id="11e1c-176">Content-Type</span></span> | <span data-ttu-id="11e1c-177">application/json</span><span class="sxs-lookup"><span data-stu-id="11e1c-177">application/json</span></span> |
+| <span data-ttu-id="1f5e1-173">Autorização</span><span class="sxs-lookup"><span data-stu-id="1f5e1-173">Authorization</span></span> | <span data-ttu-id="1f5e1-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1f5e1-176">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1f5e1-176">Content-Type</span></span> | <span data-ttu-id="1f5e1-177">application/json</span><span class="sxs-lookup"><span data-stu-id="1f5e1-177">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="11e1c-178">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="11e1c-178">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1f5e1-178">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1f5e1-178">Request body</span></span>
 
-<span data-ttu-id="11e1c-179">Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md) object, with the following required name-value pairs, and any custom data to change or add to that extension.</span><span class="sxs-lookup"><span data-stu-id="11e1c-179">Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md) object, with the following required name-value pairs, and any custom data to change or add to that extension.</span></span> <span data-ttu-id="11e1c-180">The data in the JSON payload can be primitive types, or arrays of primitive types.</span><span class="sxs-lookup"><span data-stu-id="11e1c-180">The data in the JSON payload can be primitive types, or arrays of primitive types.</span></span>
+<span data-ttu-id="1f5e1-p106">Forneça um corpo JSON de um objeto [openTypeExtension](../resources/opentypeextension.md), com os seguintes pares de nome e valor obrigatórios e os dados personalizados para alterar ou adicionar a essa extensão. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-p106">Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md) object, with the following required name-value pairs, and any custom data to change or add to that extension. The data in the JSON payload can be primitive types, or arrays of primitive types.</span></span>
 
-| <span data-ttu-id="11e1c-181">Nome</span><span class="sxs-lookup"><span data-stu-id="11e1c-181">Name</span></span>       | <span data-ttu-id="11e1c-182">Valor</span><span class="sxs-lookup"><span data-stu-id="11e1c-182">Value</span></span> |
+| <span data-ttu-id="1f5e1-181">Nome</span><span class="sxs-lookup"><span data-stu-id="1f5e1-181">Name</span></span>       | <span data-ttu-id="1f5e1-182">Valor</span><span class="sxs-lookup"><span data-stu-id="1f5e1-182">Value</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="11e1c-183">@odata.type</span><span class="sxs-lookup"><span data-stu-id="11e1c-183">@odata.type</span></span> | <span data-ttu-id="11e1c-184">microsoft.graph.openTypeExtension</span><span class="sxs-lookup"><span data-stu-id="11e1c-184">microsoft.graph.openTypeExtension</span></span> |
-| <span data-ttu-id="11e1c-185">extensionName</span><span class="sxs-lookup"><span data-stu-id="11e1c-185">extensionName</span></span> | <span data-ttu-id="11e1c-186">%unique_string%</span><span class="sxs-lookup"><span data-stu-id="11e1c-186">%unique_string%</span></span> |
+| <span data-ttu-id="1f5e1-183">@odata.type</span><span class="sxs-lookup"><span data-stu-id="1f5e1-183">@odata.type</span></span> | <span data-ttu-id="1f5e1-184">microsoft.graph.openTypeExtension</span><span class="sxs-lookup"><span data-stu-id="1f5e1-184">microsoft.graph.openTypeExtension</span></span> |
+| <span data-ttu-id="1f5e1-185">extensionName</span><span class="sxs-lookup"><span data-stu-id="1f5e1-185">extensionName</span></span> | <span data-ttu-id="1f5e1-186">%unique_string%</span><span class="sxs-lookup"><span data-stu-id="1f5e1-186">%unique_string%</span></span> |
 
-## <a name="response"></a><span data-ttu-id="11e1c-187">Resposta</span><span class="sxs-lookup"><span data-stu-id="11e1c-187">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1f5e1-187">Resposta</span><span class="sxs-lookup"><span data-stu-id="1f5e1-187">Response</span></span>
 
-<span data-ttu-id="11e1c-188">Se for bem-sucedido, este método retornará um código de resposta `200 OK` e o objeto [openTypeExtension](../resources/opentypeextension.md) atualizado.</span><span class="sxs-lookup"><span data-stu-id="11e1c-188">If successful, this method returns a `200 OK` response code and the updated [openTypeExtension](../resources/opentypeextension.md) object.</span></span>
+<span data-ttu-id="1f5e1-188">Se for bem-sucedido, este método retornará um código de resposta `200 OK` e o objeto [openTypeExtension](../resources/opentypeextension.md) atualizado.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-188">If successful, this method returns a `200 OK` response code and the updated [openTypeExtension](../resources/opentypeextension.md) object.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="11e1c-189">Exemplo</span><span class="sxs-lookup"><span data-stu-id="11e1c-189">Example</span></span>
-#### <a name="request-1"></a><span data-ttu-id="11e1c-190">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="11e1c-190">Request 1</span></span>
+## <a name="example"></a><span data-ttu-id="1f5e1-189">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1f5e1-189">Example</span></span>
+#### <a name="request-1"></a><span data-ttu-id="1f5e1-190">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="1f5e1-190">Request 1</span></span>
 
-<span data-ttu-id="11e1c-191">The first example shows how to update an extension in a message.</span><span class="sxs-lookup"><span data-stu-id="11e1c-191">The first example shows how to update an extension in a message.</span></span> <span data-ttu-id="11e1c-192">The extension is initially represented by the following JSON payload:</span><span class="sxs-lookup"><span data-stu-id="11e1c-192">The extension is initially represented by the following JSON payload:</span></span>
+<span data-ttu-id="1f5e1-p107">O primeiro exemplo mostra como atualizar uma extensão de uma mensagem. A extensão é representada inicialmente pela seguinte carga JSON:</span><span class="sxs-lookup"><span data-stu-id="1f5e1-p107">The first example shows how to update an extension in a message. The extension is initially represented by the following JSON payload:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -109,24 +109,24 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 }
 ```
 
-<span data-ttu-id="11e1c-193">Você pode fazer referência à extensão por seu nome:</span><span class="sxs-lookup"><span data-stu-id="11e1c-193">You can reference the extension by its name:</span></span>
+<span data-ttu-id="1f5e1-193">Você pode fazer referência à extensão por seu nome:</span><span class="sxs-lookup"><span data-stu-id="1f5e1-193">You can reference the extension by its name:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 
-<span data-ttu-id="11e1c-194">Ou você pode fazer referência à extensão por seu nome totalmente qualificado:</span><span class="sxs-lookup"><span data-stu-id="11e1c-194">Or you can reference the extension by its fully qualified name:</span></span>
+<span data-ttu-id="1f5e1-194">Ou você pode fazer referência à extensão por seu nome totalmente qualificado:</span><span class="sxs-lookup"><span data-stu-id="1f5e1-194">Or you can reference the extension by its fully qualified name:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
 
-<span data-ttu-id="11e1c-195">Você pode usar o exemplo de solicitação e o seguinte corpo de solicitação para atualizar a extensão acima da seguinte forma:</span><span class="sxs-lookup"><span data-stu-id="11e1c-195">You can use either example request and the following request body to update the above extension by:</span></span>
-- <span data-ttu-id="11e1c-196">Alterando `companyName` de `Wingtip Toys` para `Wingtip Toys (USA)`</span><span class="sxs-lookup"><span data-stu-id="11e1c-196">Changing `companyName` from `Wingtip Toys` to `Wingtip Toys (USA)`</span></span>
-- <span data-ttu-id="11e1c-197">Alterando `dealValue` de `500050` para `500100`</span><span class="sxs-lookup"><span data-stu-id="11e1c-197">Changing `dealValue` from `500050` to `500100`</span></span>
-- <span data-ttu-id="11e1c-198">Adicionar novos dados como a propriedade personalizada `updated`</span><span class="sxs-lookup"><span data-stu-id="11e1c-198">Adding new data as the custom property `updated`</span></span>
+<span data-ttu-id="1f5e1-195">Você pode usar o exemplo de solicitação e o seguinte corpo de solicitação para atualizar a extensão acima da seguinte forma:</span><span class="sxs-lookup"><span data-stu-id="1f5e1-195">You can use either example request and the following request body to update the above extension by:</span></span>
+- <span data-ttu-id="1f5e1-196">Alterando `companyName` de `Wingtip Toys` para `Wingtip Toys (USA)`</span><span class="sxs-lookup"><span data-stu-id="1f5e1-196">Changing `companyName` from `Wingtip Toys` to `Wingtip Toys (USA)`</span></span>
+- <span data-ttu-id="1f5e1-197">Alterando `dealValue` de `500050` para `500100`</span><span class="sxs-lookup"><span data-stu-id="1f5e1-197">Changing `dealValue` from `500050` to `500100`</span></span>
+- <span data-ttu-id="1f5e1-198">Adicionar novos dados como a propriedade personalizada `updated`</span><span class="sxs-lookup"><span data-stu-id="1f5e1-198">Adding new data as the custom property `updated`</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -141,9 +141,9 @@ PATCH https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 ```
 
 
-#### <a name="response-1"></a><span data-ttu-id="11e1c-199">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="11e1c-199">Response 1</span></span>
+#### <a name="response-1"></a><span data-ttu-id="1f5e1-199">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="1f5e1-199">Response 1</span></span>
 
-<span data-ttu-id="11e1c-200">Aqui está a resposta que é a mesma, independentemente da maneira usada para fazer referência à extensão.</span><span class="sxs-lookup"><span data-stu-id="11e1c-200">Here is the response which is the same regardless of the way used to reference the extension.</span></span>
+<span data-ttu-id="1f5e1-200">Aqui está a resposta que é a mesma, independentemente da maneira usada para fazer referência à extensão.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-200">Here is the response which is the same regardless of the way used to reference the extension.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -166,9 +166,9 @@ Content-type: application/json
 
 ****
 
-#### <a name="request-2"></a><span data-ttu-id="11e1c-201">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="11e1c-201">Request 2</span></span>
+#### <a name="request-2"></a><span data-ttu-id="1f5e1-201">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="1f5e1-201">Request 2</span></span>
 
-<span data-ttu-id="11e1c-202">The second example shows how to update an extension in a group post.</span><span class="sxs-lookup"><span data-stu-id="11e1c-202">The second example shows how to update an extension in a group post.</span></span> <span data-ttu-id="11e1c-203">The extension is initially represented by the following JSON payload, with an `expirationDate` value of `2015-07-03T13:04:00Z`:</span><span class="sxs-lookup"><span data-stu-id="11e1c-203">The extension is initially represented by the following JSON payload, with an `expirationDate` value of `2015-07-03T13:04:00Z`:</span></span>
+<span data-ttu-id="1f5e1-p108">O segundo exemplo mostra como atualizar uma extensão em uma postagem de grupo. A extensão é representada inicialmente pela seguinte carga JSON, com um valor `expirationDate` de `2015-07-03T13:04:00Z`:</span><span class="sxs-lookup"><span data-stu-id="1f5e1-p108">The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, with an `expirationDate` value of `2015-07-03T13:04:00Z`:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -189,10 +189,10 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="11e1c-204">A seguir estão a solicitação e o corpo da solicitação para alterar o `expirationDate` para `2016-07-30T11:00:00Z`:</span><span class="sxs-lookup"><span data-stu-id="11e1c-204">The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:</span></span>
+<span data-ttu-id="1f5e1-204">A seguir estão a solicitação e o corpo da solicitação para alterar o `expirationDate` para `2016-07-30T11:00:00Z`:</span><span class="sxs-lookup"><span data-stu-id="1f5e1-204">The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="11e1c-205">HTTP</span><span class="sxs-lookup"><span data-stu-id="11e1c-205">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1f5e1-205">HTTP</span><span class="sxs-lookup"><span data-stu-id="1f5e1-205">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_opentypeextension"
@@ -214,24 +214,24 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="11e1c-206">C#</span><span class="sxs-lookup"><span data-stu-id="11e1c-206">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1f5e1-206">C#</span><span class="sxs-lookup"><span data-stu-id="1f5e1-206">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-opentypeextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="11e1c-207">JavaScript</span><span class="sxs-lookup"><span data-stu-id="11e1c-207">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1f5e1-207">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1f5e1-207">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-opentypeextension-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="11e1c-208">Objective-C</span><span class="sxs-lookup"><span data-stu-id="11e1c-208">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1f5e1-208">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1f5e1-208">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-opentypeextension-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response-2"></a><span data-ttu-id="11e1c-209">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="11e1c-209">Response 2</span></span>
+#### <a name="response-2"></a><span data-ttu-id="1f5e1-209">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="1f5e1-209">Response 2</span></span>
 
-<span data-ttu-id="11e1c-210">Aqui está a resposta do segundo exemplo, que mostra o `expirationDate` atualizado na extensão.</span><span class="sxs-lookup"><span data-stu-id="11e1c-210">Here is the response of the second example which shows the updated `expirationDate` in the extension.</span></span>
+<span data-ttu-id="1f5e1-210">Aqui está a resposta do segundo exemplo, que mostra o `expirationDate` atualizado na extensão.</span><span class="sxs-lookup"><span data-stu-id="1f5e1-210">Here is the response of the second example which shows the updated `expirationDate` in the extension.</span></span>
 
 <!-- {  
   "blockType": "response",  
