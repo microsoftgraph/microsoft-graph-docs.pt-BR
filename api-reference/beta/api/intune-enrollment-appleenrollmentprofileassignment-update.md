@@ -12,26 +12,26 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "44792061"
 ---
-# <a name="update-appleenrollmentprofileassignment"></a><span data-ttu-id="ea822-103">Atualizar appleEnrollmentProfileAssignment</span><span class="sxs-lookup"><span data-stu-id="ea822-103">Update appleEnrollmentProfileAssignment</span></span>
+# <a name="update-appleenrollmentprofileassignment"></a><span data-ttu-id="2d9dd-103">Atualizar appleEnrollmentProfileAssignment</span><span class="sxs-lookup"><span data-stu-id="2d9dd-103">Update appleEnrollmentProfileAssignment</span></span>
 
-<span data-ttu-id="ea822-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ea822-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2d9dd-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2d9dd-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="ea822-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="ea822-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="2d9dd-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="2d9dd-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ea822-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ea822-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2d9dd-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="2d9dd-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ea822-107">Atualiza as propriedades de um objeto [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="ea822-107">Update the properties of a [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) object.</span></span>
+<span data-ttu-id="2d9dd-107">Atualiza as propriedades de um objeto [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="2d9dd-107">Update the properties of a [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ea822-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="ea822-108">Prerequisites</span></span>
-<span data-ttu-id="ea822-109">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="ea822-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="ea822-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ea822-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="2d9dd-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="2d9dd-108">Prerequisites</span></span>
+<span data-ttu-id="2d9dd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2d9dd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ea822-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ea822-111">Permission type</span></span>|<span data-ttu-id="ea822-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="ea822-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="2d9dd-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2d9dd-111">Permission type</span></span>|<span data-ttu-id="2d9dd-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="2d9dd-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ea822-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ea822-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ea822-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ea822-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="ea822-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ea822-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ea822-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ea822-116">Not supported.</span></span>|
-|<span data-ttu-id="ea822-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ea822-117">Application</span></span>|<span data-ttu-id="ea822-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ea822-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="2d9dd-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2d9dd-113">Delegated (work or school account)</span></span>|<span data-ttu-id="2d9dd-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2d9dd-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="2d9dd-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2d9dd-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2d9dd-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2d9dd-116">Not supported.</span></span>|
+|<span data-ttu-id="2d9dd-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2d9dd-117">Application</span></span>|<span data-ttu-id="2d9dd-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2d9dd-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ea822-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ea822-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2d9dd-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2d9dd-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,31 +40,31 @@ ms.locfileid: "44792061"
 PATCH /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}/assignments/{appleEnrollmentProfileAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ea822-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ea822-120">Request headers</span></span>
-|<span data-ttu-id="ea822-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="ea822-121">Header</span></span>|<span data-ttu-id="ea822-122">Valor</span><span class="sxs-lookup"><span data-stu-id="ea822-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2d9dd-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2d9dd-120">Request headers</span></span>
+|<span data-ttu-id="2d9dd-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="2d9dd-121">Header</span></span>|<span data-ttu-id="2d9dd-122">Valor</span><span class="sxs-lookup"><span data-stu-id="2d9dd-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ea822-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="ea822-123">Authorization</span></span>|<span data-ttu-id="ea822-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ea822-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ea822-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="ea822-125">Accept</span></span>|<span data-ttu-id="ea822-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ea822-126">application/json</span></span>|
+|<span data-ttu-id="2d9dd-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="2d9dd-123">Authorization</span></span>|<span data-ttu-id="2d9dd-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2d9dd-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="2d9dd-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="2d9dd-125">Accept</span></span>|<span data-ttu-id="2d9dd-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2d9dd-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ea822-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ea822-127">Request body</span></span>
-<span data-ttu-id="ea822-128">No corpo da solicitação, forneça uma representação JSON do objeto [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="ea822-128">In the request body, supply a JSON representation for the [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2d9dd-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2d9dd-127">Request body</span></span>
+<span data-ttu-id="2d9dd-128">No corpo da solicitação, forneça uma representação JSON do objeto [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="2d9dd-128">In the request body, supply a JSON representation for the [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) object.</span></span>
 
-<span data-ttu-id="ea822-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md).</span><span class="sxs-lookup"><span data-stu-id="ea822-129">The following table shows the properties that are required when you create the [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md).</span></span>
+<span data-ttu-id="2d9dd-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md).</span><span class="sxs-lookup"><span data-stu-id="2d9dd-129">The following table shows the properties that are required when you create the [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md).</span></span>
 
-|<span data-ttu-id="ea822-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ea822-130">Property</span></span>|<span data-ttu-id="ea822-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="ea822-131">Type</span></span>|<span data-ttu-id="ea822-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="ea822-132">Description</span></span>|
+|<span data-ttu-id="2d9dd-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2d9dd-130">Property</span></span>|<span data-ttu-id="2d9dd-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="2d9dd-131">Type</span></span>|<span data-ttu-id="2d9dd-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="2d9dd-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ea822-133">id</span><span class="sxs-lookup"><span data-stu-id="ea822-133">id</span></span>|<span data-ttu-id="ea822-134">String</span><span class="sxs-lookup"><span data-stu-id="ea822-134">String</span></span>|<span data-ttu-id="ea822-135">A chave da atribuição.</span><span class="sxs-lookup"><span data-stu-id="ea822-135">The key of the assignment.</span></span>|
-|<span data-ttu-id="ea822-136">destino</span><span class="sxs-lookup"><span data-stu-id="ea822-136">target</span></span>|[<span data-ttu-id="ea822-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="ea822-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="ea822-138">O destino de atribuição para o perfil de implantação iniciado pelo usuário da Apple.</span><span class="sxs-lookup"><span data-stu-id="ea822-138">The assignment target for the Apple user initiated deployment profile.</span></span>|
+|<span data-ttu-id="2d9dd-133">id</span><span class="sxs-lookup"><span data-stu-id="2d9dd-133">id</span></span>|<span data-ttu-id="2d9dd-134">String</span><span class="sxs-lookup"><span data-stu-id="2d9dd-134">String</span></span>|<span data-ttu-id="2d9dd-135">A chave da atribuição.</span><span class="sxs-lookup"><span data-stu-id="2d9dd-135">The key of the assignment.</span></span>|
+|<span data-ttu-id="2d9dd-136">destino</span><span class="sxs-lookup"><span data-stu-id="2d9dd-136">target</span></span>|[<span data-ttu-id="2d9dd-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="2d9dd-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="2d9dd-138">O destino de atribuição para o perfil de implantação iniciado pelo usuário da Apple.</span><span class="sxs-lookup"><span data-stu-id="2d9dd-138">The assignment target for the Apple user initiated deployment profile.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="ea822-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="ea822-139">Response</span></span>
-<span data-ttu-id="ea822-140">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ea822-140">If successful, this method returns a `200 OK` response code and an updated [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2d9dd-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d9dd-139">Response</span></span>
+<span data-ttu-id="2d9dd-140">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2d9dd-140">If successful, this method returns a `200 OK` response code and an updated [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ea822-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ea822-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2d9dd-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2d9dd-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ea822-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ea822-142">Request</span></span>
-<span data-ttu-id="ea822-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ea822-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="2d9dd-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d9dd-142">Request</span></span>
+<span data-ttu-id="2d9dd-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2d9dd-143">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}/assignments/{appleEnrollmentProfileAssignmentId}
 Content-type: application/json
@@ -80,8 +80,8 @@ Content-length: 327
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="ea822-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="ea822-144">Response</span></span>
-<span data-ttu-id="ea822-145">Here is an example of the response.</span><span class="sxs-lookup"><span data-stu-id="ea822-145">Here is an example of the response.</span></span> <span data-ttu-id="ea822-146">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="ea822-146">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="ea822-147">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="ea822-147">All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="2d9dd-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d9dd-144">Response</span></span>
+<span data-ttu-id="2d9dd-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2d9dd-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
