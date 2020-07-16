@@ -22,7 +22,7 @@ Obtenha o [conversationMember](../resources/conversationmember.md) de uma [equip
 >Observação: atualmente, esta API não é compatível com a paginação, portanto, se houver muitos membros para se ajustarem a uma solicitação, você não terá todos os membros.
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -46,7 +46,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
 |:---|:---|
-|Autorização|Bearer {token}. Required.|
+|Autorização|{token} de portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

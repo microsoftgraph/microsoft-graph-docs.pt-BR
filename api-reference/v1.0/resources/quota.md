@@ -47,11 +47,11 @@ Veja a seguir uma representação JSON do recurso.
 
 | Nome da propriedade | Tipo   | Descrição                                                                 |
 |:--------------|:-------|:----------------------------------------------------------------------------|
-| total         | Int64  | Total allowed storage space, in bytes. Read-only.                           |
-| used          | Int64  | Total space used, in bytes. Read-only.                                      |
-| remaining     | Int64  | Total space remaining before reaching the quota limit, in bytes. Read-only. |
-| deleted       | Int64  | Total space consumed by files in the recycle bin, in bytes. Read-only.      |
-| estado         | string | Enumeration value that indicates the state of the storage space. Read-only. |
+| total         | Int64  | Espaço de armazenamento permitido total, em bytes. Somente leitura.                           |
+| used          | Int64  | Espaço total, em bytes. Somente leitura.                                      |
+| remaining     | Int64  | Espaço total restante antes de atingir o limite de cota, em bytes. Somente leitura. |
+| deleted       | Int64  | Espaço total consumido por arquivos na Lixeira, em bytes. Somente leitura.      |
+| estado         | string | Valor de enumeração que indica o estado do espaço de armazenamento. Somente leitura. |
 | Adicionadostorageplaninformation  | [Adicionadostorageplaninformation](storageplaninformation.md) | Informações sobre os planos de cota de armazenamento da unidade. Somente no OneDrive pessoal.|
 
 ## <a name="state-enumeration"></a>Enumeração de Estado
@@ -61,7 +61,7 @@ Veja a seguir uma representação JSON do recurso.
 | `normal`   | A unidade tem bastante cota restante.                                                                                                                               |
 | `nearing`  | A cota restante é inferior a 10% do espaço de cota total.                                                                                                                      |
 | `critical` | A cota restante é inferior a 1% do espaço de cota total.                                                                                                                       |
-| `exceeded` | The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased. |
+| `exceeded` | A cota usada excedeu a cota total. Novos arquivos ou pastas não podem ser adicionadas à unidade até que ela esteja abaixo da quantidade total de cotas ou mais espaço de armazenamento seja adquirido. |
 
 <!-- {
   "type": "#page.annotation",

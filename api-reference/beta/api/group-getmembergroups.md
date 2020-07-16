@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Return all the groups that the specified group is a member of. The check is transitive, unlike reading the [memberOf](../api/group-list-memberof.md) navigation property, which returns only the groups that the group is a direct member of.
+Retorne todos os grupos dos quais o grupo especificado é membro. A verificação é transitiva, diferentemente da leitura da propriedade de navegação [memberOf](../api/group-list-memberof.md), que retorna somente os grupos dos quais o grupo é membro direto.
 
 Essa função suporta o Microsoft 365 e outros tipos de grupos provisionados no Azure AD. O número máximo de grupos que cada solicitação pode retornar é 2046. Observe que os grupos do Microsoft 365 não podem conter grupos. Portanto, a associação a um grupo do Microsoft 365 é sempre direta.
 
 ## <a name="permissions"></a>Permissões
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
@@ -44,7 +44,7 @@ POST /groups/{id}/getMemberGroups
 
 | Nome          | Tipo   | Descrição               |
 | :------------ | :----- | :------------------------ |
-| Autorização | string | Bearer {token}. Required. |
+| Autorização | string | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro           | Tipo    | Descrição                                                                           |
 | :------------------ | :------ | :------------------------------------------------------------------------------------ |
-| securityEnabledOnly | Boolean | Set to **false**. Returning only security-enabled groups is supported for users only. |
+| securityEnabledOnly | Boolean | Defina como **false**. Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários. |
 
 ## <a name="response"></a>Resposta
 
@@ -99,7 +99,7 @@ Content-length: 33
 
 Este é um exemplo de resposta.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

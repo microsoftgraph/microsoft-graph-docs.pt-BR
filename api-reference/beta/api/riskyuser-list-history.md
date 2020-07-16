@@ -23,7 +23,7 @@ Obter o histórico de riscos de um recurso [riskyUser](../resources/riskyuser.md
 >**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -42,7 +42,7 @@ GET /identityProtection/riskyUsers/{id}/history/
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Bearer {token}. Required. |
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

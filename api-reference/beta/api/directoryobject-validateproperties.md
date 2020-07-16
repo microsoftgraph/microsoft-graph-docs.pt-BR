@@ -26,7 +26,7 @@ As seguintes validações são realizadas para o nome de exibição e as proprie
 Essa API retorna com a primeira falha encontrada. Se uma ou mais propriedades falharem várias validações, somente a propriedade com a primeira falha de validação será retornada. No entanto, você pode validar tanto o apelido de email quanto o nome de exibição e receber uma coleção de erros de validação se você estiver validando apenas o prefixo e a política de nomenclatura de sufixo.
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -45,7 +45,7 @@ POST /directoryObjects/validateProperties
 | Nome           | Descrição      |
 |:---------------|:-----------------|
 | Autorização  | Portador {código}. Obrigatório.   |
-| Content-Type   | application/json. Required. |
+| Content-Type   | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.

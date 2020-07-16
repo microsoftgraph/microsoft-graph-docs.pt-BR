@@ -23,7 +23,7 @@ A atualização se aplica a todos os recursos incluídos na propriedade **Target
 Somente o aplicativo que criou uma extensão de esquema (aplicativo proprietário) pode fazer atualizações aditivas para a extensão quando a extensão está no **indesenvolvimento** ou status **disponível** . Isso significa que o aplicativo não pode remover propriedades personalizadas ou tipos de recurso de destino da definição. No entanto, o aplicativo pode alterar a descrição da extensão.
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -46,12 +46,12 @@ PATCH /schemaExtensions/{id}
 
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Bearer {token}. Required. |
+| Autorização  | {token} de portador. Obrigatório. |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|

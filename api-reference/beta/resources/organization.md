@@ -7,6 +7,7 @@ ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
 ms.openlocfilehash: be1abf31e87695a7ec0ca074ea741fcd602ae814
 ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45050901"
@@ -37,7 +38,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 ## <a name="properties"></a>Propriedades 
 | Propriedade | Tipo   | Descrição |
 |:-------- |:---- |:----------- |
-| assignedPlans | Coleção [assignedPlan](assignedplan.md) | The collection of service plans associated with the tenant. Not nullable. |
+| assignedPlans | Coleção [assignedPlan](assignedplan.md) | A coleção de planos de serviço associados ao locatário. Não anulável. |
 | businessPhones | String collection | Número de telefone da organização. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade. |
 | city | String | Nome da cidade do endereço da organização. |
 | country | String | Nome do país/região do endereço da organização. |
@@ -48,7 +49,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | id | Cadeia de caracteres | A ID do locatário, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | **verdadeiro** se a organização estiver habilitada no Multi-Geo; **falso** se a organização não estiver habilitada no Multi-Geo, **nulo** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Coleção de cadeias de caracteres | Não anulável. |
-| objectType | String | A string that identifies the object type. For tenants the value is always “Company”. |
+| objectType | String | Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa". |
 | onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 | onPremisesSyncEnabled | Booliano | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). |
 | postalCode | Cadeia de caracteres | CEP do endereço da organização. |
@@ -60,7 +61,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | state | String | Nome do estado do endereço da organização. |
 | street | Cadeia de caracteres | Nome da rua do endereço da organização. |
 | technicalNotificationMails |Coleção de cadeias de caracteres | Não anulável. |
-| verifiedDomains | coleção [verifiedDomain](verifieddomain.md)|The collection of domains associated with this tenant. Not nullable. |
+| verifiedDomains | coleção [verifiedDomain](verifieddomain.md)|A coleção de domínios associados a este locatário. Não anulável. |
 
 ## <a name="relationships"></a>Relações
 

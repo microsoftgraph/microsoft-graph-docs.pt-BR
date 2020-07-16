@@ -46,7 +46,7 @@ GET /education/users/{id}/user
 
 | Cabeçalho        | Valor                     |
 | :------------ | :------------------------ |
-| Autorização | Bearer {token}. Required. |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/education/me/user
 
 Este é um exemplo de resposta.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

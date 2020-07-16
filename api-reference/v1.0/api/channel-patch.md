@@ -20,7 +20,7 @@ Atualiza as propriedades do [canal](../resources/channel.md)especificado.
 
 ## <a name="permissions"></a>Permissões
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -40,7 +40,7 @@ PATCH /teams/{id}/channels/{id}
 
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | Bearer {token}. Required.  |
+| Autorização  | {token} de portador. Obrigatório.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -74,7 +74,7 @@ PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 
 ### <a name="response"></a>Resposta
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

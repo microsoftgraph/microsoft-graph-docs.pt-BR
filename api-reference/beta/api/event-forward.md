@@ -24,7 +24,7 @@ Se o evento de reunião for encaminhado da caixa de correio do Microsoft 365 de 
 
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -55,20 +55,20 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | Bearer {token}. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
+| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Comentário|String|A comment to include. Can be an empty string.|
+|Comentário|String|Um comentário a incluir. Não pode ficar vazio.|
 |ToRecipients|Coleção [recipient](../resources/recipient.md)|A lista de destinatários para os quais o evento será encaminhado.|
 
 ## <a name="response"></a>Resposta
 
-If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

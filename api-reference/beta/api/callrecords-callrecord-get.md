@@ -27,7 +27,7 @@ Há duas maneiras de obter o **ID** de um **callRecord**:
 
 ## <a name="permissions"></a>Permissões
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 
 Este é um exemplo de resposta.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -182,7 +182,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=ses
 
 Este é um exemplo de resposta. Se a lista de sessões estiver truncada, `sessions@odata.nextlink` será fornecido um valor para recuperar a próxima página de sessões.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

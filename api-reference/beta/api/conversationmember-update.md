@@ -26,7 +26,7 @@ ou [canal](../resources/channel.md).
 
 ## <a name="permissions"></a>Permissões
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
@@ -44,7 +44,7 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | Bearer {token}. Required.  |
+| Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -98,7 +98,7 @@ content-length: 26
 
 Veja a seguir um exemplo da resposta.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

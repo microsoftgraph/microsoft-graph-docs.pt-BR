@@ -22,7 +22,7 @@ Atualiza as propriedades de um objeto [Application](../resources/application.md)
 > Não há suporte para o uso de PATCH para definir [**passwordCredential**](../resources/passwordcredential.md) . Use os métodos [addpassword](./application-addpassword.md) e [removePassword](./application-removepassword.md) para atualizar a senha de um aplicativo.
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -39,8 +39,8 @@ PATCH /applications/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:-----------|:----------|
-| Autorização | Bearer {token}. Required.  |
-| Content-Type | application/json. Required. |
+| Autorização | {token} de portador. Obrigatório.  |
+| Content-Type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.

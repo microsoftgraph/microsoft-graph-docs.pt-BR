@@ -23,7 +23,7 @@ Copia uma seção para um grupo de seção específico.
 Para operações de cópia, siga um padrão de chamada assíncrona: primeiro, chame a ação de cópia e, em seguida, pesquise o ponto de extremidade da operação para o resultado.
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -42,7 +42,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | Bearer {token}. Required. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Corpo da solicitação

@@ -1,6 +1,6 @@
 ---
 title: Tipo de recurso de usuário
-description: Represents an Azure AD user account. Inherits from directoryObject.
+description: Representa uma conta de usuário do Azure AD. Herda de directoryObject.
 author: krbain
 localization_priority: Priority
 ms.prod: users
@@ -16,7 +16,7 @@ ms.locfileid: "44863765"
 
 Namespace: microsoft.graph
 
-Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
+Representa uma conta de usuário do Azure AD. Herda de [directoryObject](directoryobject.md).
 
 Esse recurso permite:
 
@@ -47,7 +47,7 @@ Esse recurso permite:
 | [Listar calendários](../api/user-list-calendars.md)                                            | Coleção [calendar](calendar.md)                                               | Obter uma coleção de objetos Calendar.                                                                                                                                                                                                   |
 | [Listar calendarGroups](../api/user-list-calendargroups.md)                                  | Coleção de [CalendarGroup](calendargroup.md)                                     | Obter uma coleção de objetos CalendarGroup.                                                                                                                                                                                              |
 | [Listar calendarView](../api/user-list-calendarview.md)                                      | Coleção [event](event.md)                                                     | Obtenha uma coleção do objeto Event.                                                                                                                                                                                                      |
-| [Listar eventos](../api/user-list-events.md)                                                  | Coleção [event](event.md)                                                     | Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters.                                                                                                                   |
+| [Listar eventos](../api/user-list-events.md)                                                  | Coleção [event](event.md)                                                     | Obter uma lista de objetos event na caixa de correio do usuário. A lista contém reuniões de instância única e reuniões mestres em série.                                                                                                                   |
 | [reminderView](../api/user-reminderview.md)                                                | Coleção [Reminder](reminder.md)                                               | Retorna uma lista de lembretes de calendário nas horas de início e término especificadas.                                                                                                                                                       |
 | **Contatos**                                                                               |                                                                                  |                                                                                                                                                                                                                                     |
 | [Criar contato](../api/user-post-contacts.md)                                             | [contato](contact.md)                                                            | Criar um novo Contact postando na coleção contacts.                                                                                                                                                                         |
@@ -55,13 +55,13 @@ Esse recurso permite:
 | [Listar contatos](../api/user-list-contacts.md)                                              | Coleção de[contato](contact.md)                                                 | Obter uma coleção de contatos da pasta Contatos padrão do usuário conectado.                                                                                                                                                    |
 | [Listar contactFolders](../api/user-list-contactfolders.md)                                  | Coleção de [pastadeContatos](contactfolder.md)                                     | Obter a coleção de pastas de contatos na pasta Contatos padrão do usuário conectado.                                                                                                                                             |
 | **Objetos de diretório**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
-| [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.                                                                                                            |
-| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | Coleção de cadeias de caracteres                                                                | Check for membership in a list of groups. The check is transitive.                                                                                                                                                                  |
+| [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.                                                                                                            |
+| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | Coleção de cadeias de caracteres                                                                | Verifique se há uma associação em uma lista de grupos. A verificação é transitiva.                                                                                                                                                                  |
 | [checkMemberObjects](../api/user-checkmemberobjects.md)                                    | Coleção de cadeias de caracteres                                                                | Verifique se há associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. Essa função é transitiva.                                                                                                                |
 | [exportPersonalData](../api/user-exportpersonaldata.md)                                    | Nenhum                                                                             | Envia uma solicitação de operação de política de dados, realizada por um administrador da empresa para exportar os dados de um usuário da organização.                                                                                                                   |
 | [getByIds](../api/directoryobject-getbyids.md)                                             | Coleção de cadeias de caracteres                                                                | Retorna os objetos de diretório especificados a partir de uma lista de ids.                                                                                                                                                                           |
-| [getMemberGroups](../api/user-getmembergroups.md)                                          | Coleção de cadeias de caracteres                                                                | Return all the groups that the user is a member of. The check is transitive.                                                                                                                                                        |
-| [getMemberObjects](../api/user-getmemberobjects.md)                                        | String collection                                                                | Return all of the groups and directory roles that the user is a member of. The check is transitive.                                                                                                                                 |
+| [getMemberGroups](../api/user-getmembergroups.md)                                          | Coleção de cadeias de caracteres                                                                | Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva.                                                                                                                                                        |
+| [getMemberObjects](../api/user-getmemberobjects.md)                                        | String collection                                                                | Retorna todos os grupos e funções de diretório dos quais o usuário é membro. A verificação é transitiva.                                                                                                                                 |
 | [Listar createdObjects](../api/user-list-createdobjects.md)                                  | Coleção [directoryObject](directoryobject.md)                                 | Obter os objetos directory criados pelo usuário da propriedade de navegação createdObjects.                                                                                                                                          |
 | [Listar licenseDetails](../api/user-list-licensedetails.md)                                  | Coleção [licenseDetails](licensedetails.md)                                   | Obtenha uma coleção de objetos licenseDetails.                                                                                                                                                                                             |
 | [Listar ownedDevices](../api/user-list-owneddevices.md)                                      | Coleção [directoryObject](directoryobject.md)                                 | Obter os dispositivos que pertencem ao usuário da propriedade de navegação ownedDevices.                                                                                                                                               |
@@ -121,39 +121,39 @@ Esse recurso permite:
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |aboutMe|String|Um campo de entrada de texto em forma livre para o usuário se descrever.|
-|accountEnabled|Booliano| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |
+|accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.    |
 |ageGroup|String|Define a faixa etária do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. |
-|assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|The licenses that are assigned to the user. Not nullable.            |
-|assignedPlans|Coleção [assignedPlan](assignedplan.md)|The plans that are assigned to the user. Read-only. Not nullable. |
-|birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|businessPhones|Coleção de cadeias de caracteres|The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.|
-|city|String|The city in which the user is located. Supports $filter.|
+|assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao usuário. Não anulável.            |
+|assignedPlans|Coleção [assignedPlan](assignedplan.md)|Os planos que são atribuídos ao usuário. Somente leitura. Não anulável. |
+|birthday|DateTimeOffset|O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|businessPhones|Coleção de cadeias de caracteres|Números de telefone para o usuário. OBSERVAÇÃO: Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.|
+|city|String|A cidade em que o usuário está localizado. Oferece suporte a $filter.|
 |companyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. |
 |consentProvidedForMinor|String|Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
-|country|Cadeia de caracteres|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
+|country|Cadeia de caracteres|O país/região em que o usuário está localizado. Por exemplo, "EUA" ou "Reino Unido". Oferece suporte a $filter.|
 |createdDateTime | DateTimeOffset |Data de criação do objeto do usuário. |
 |creationType|String|Indica se a conta de usuário foi criada como uma conta corporativa ou de estudante (`null`), uma conta externa (`Invitation`), uma conta local para um locatário do Azure Active Directory B2C (`LocalAccount`) ou uma inscrição de autoatendimento usando a verificação de email (`EmailVerified`). Somente leitura.|
 |deletedDateTime| DateTimeOffset | A data e hora que o usuário foi excluído. <br><br>Retornado apenas em $select. |
-|department|String|The name for the department in which the user works. Supports $filter.|
-|displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
+|department|String|O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.|
+|displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
 |employeeId|String|O identificador de funcionário atribuído ao usuário pela organização. Com suporte para $filter.|
 |externalUserState|String|Para um usuário externo convidado para o locatário usando a [API de convite](../api/invitation-post.md), essa propriedade representa o status do convite do usuário convidado. Para usuários convidados, o estado pode ser `PendingAcceptance` ou `Accepted` ou `null` para todos os outros usuários. <br><br>Retornado apenas `$select` . Oferece suporte `$filter` com os valores com suporte. Por exemplo: `$filter=externalUserState eq 'PendingAcceptance'`.|
 |externalUserStateChangeDateTime|DateTimeOffset|Mostra o carimbo de data/hora da última alteração na propriedade **externalUserState** . <br><br>Retornado apenas `$select` .|
 |faxNumber|String|O número de fax do usuário.|
-|givenName|String|The given name (first name) of the user. Supports $filter.|
-|hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|id|String|The unique identifier for the user. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
+|givenName|String|O nome fornecido (nome) do usuário. Oferece suporte a $filter.|
+|hireDate|DateTimeOffset|A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|id|String|O identificador exclusivo do usuário. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 |Identidades|Coleção [objectIdentity](objectIdentity.md)| Representa as identidades que podem ser usadas para entrar nesta conta de usuário. Uma identidade pode ser fornecida pela Microsoft (também conhecida como conta local), por organizações ou por provedores de identidade social, como o Facebook, Google e Microsoft, e está vinculada a uma conta de usuário. Pode conter vários itens com o mesmo valor **signInType**. <br>Oferece suporte a $filter.|
-|imAddresses|String collection|The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.|
+|imAddresses|String collection|Os endereços do Protocolo de Início de Sessão (SIP) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele.|
 |isResourceAccount|Booliano| Não use – reservado para uso futuro.|
-|jobTitle|String|The user’s job title. Supports $filter.|
+|jobTitle|String|O cargo do usuário. Oferece suporte a $filter.|
 |lastPasswordChangeDateTime| DateTimeOffset | A hora em que o usuário do Azure AD alterou a senha dele pela última vez. As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'|
 |legalAgeGroupClassification|String| Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades `ageGroup` e `consentProvidedForMinor`. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
 |licenseAssignmentStates|Coleção [licenseAssignmentState](licenseassignmentstate.md)|Estado das atribuições de licenças para esse usuário. Somente leitura.|
-|email|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.|
-|mailboxSettings|[mailboxSettings](mailboxsettings.md)|Settings for the primary mailbox of the signed-in user. You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update-mailboxsettings.md) settings for sending automatic replies to incoming messages, locale and time zone.|
-|mailNickname|String|The mail alias for the user. This property must be specified when a user is created. Supports $filter.|
+|email|String|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". Somente Leitura. Oferece suporte a $filter.|
+|mailboxSettings|[mailboxSettings](mailboxsettings.md)|Configurações da caixa de correio principal do usuário conectado. Você pode [obter](../api/user-get-mailboxsettings.md) ou [atualizar](../api/user-update-mailboxsettings.md) as configurações de localidade, fuso horário ou de envio de respostas automáticas a mensagens de entrada.|
+|mailNickname|String|O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. Oferece suporte a $filter.|
 |mobilePhone|String|O número de celular principal do usuário.|
 |mySite|String|A URL do site pessoal do usuário.|
 |officeLocation|String|A localização do escritório no local de trabalho do usuário.|
@@ -161,34 +161,34 @@ Esse recurso permite:
 |onPremisesDomainName|String| Contém o `domainFQDN` local, também chamado dnsDomainName sincronizado do diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
 |onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contém extensionAttributes 1-15 para o usuário. Observe que os atributos de extensão individuais não são selecionáveis nem filtráveis. Para um `onPremisesSyncEnabled` usuário, a fonte de autoridade para esse conjunto de propriedades é o local e é somente leitura. Para um usuário somente na nuvem (onde `onPremisesSyncEnabled` é falso), essas propriedades podem ser definidas durante a criação ou atualização. Esses atributos de extensão também são conhecidos como atributos personalizados do Exchange 1-15. |
 |onPremisesImmutableId|String|Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Esta propriedade deverá ser especificada ao criar uma nova conta de usuário no Graph se você estiver usando um domínio federado para a propriedade **userPrincipalName** (UPN) do usuário. **Importante:** Os caracteres **$** e **\_** não podem ser usados ao especificar esta propriedade. Oferece suporte a $filter.                            |
-|onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the object was synced with the on-premises directory; for example: "2013-02-16T03:04:54Z". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o objeto foi sincronizado com o diretório local; por exemplo: "2013-02-16T03:04:54Z". O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |onPremisesProvisioningErrors|coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante o provisionamento. |
 |onPremisesSamAccountName|Cadeia de Caracteres| Contém o `samAccountName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
-|onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only.|
-|onPremisesSyncEnabled|Booliano| **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only |
+|onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura.|
+|onPremisesSyncEnabled|Booliano| **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura |
 |onPremisesUserPrincipalName|String| Contém o `userPrincipalName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
 |otherMails|String| Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`. Oferece suporte a $filter.|
-|passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".|
-|passwordProfile|[passwordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
+|passwordPolicies|String|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é "DisableStrongPassword", o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar "DisablePasswordExpiration". Ambos podem ser especificados juntos; por exemplo: "DisablePasswordExpiration, DisableStrongPassword".|
+|passwordProfile|[passwordProfile](passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte.|
 |pastProjects|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores.|
-|postalCode|Cadeia de caracteres|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.|
+|postalCode|Cadeia de caracteres|O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP.|
 |preferredDataLocation|String|O local de dados preferido para o usuário. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".|
+|preferredLanguage|String|O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo "en-US".|
 |preferredName|String|O nome preferencial do usuário.|
-|provisionedPlans|coleção [provisionedPlan](provisionedplan.md)|The plans that are provisioned for the user. Read-only. Not nullable. |
-|proxyAddresses|Coleção de cadeias de caracteres|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.|
+|provisionedPlans|coleção [provisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável. |
+|proxyAddresses|Coleção de cadeias de caracteres|Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Somente leitura, não anulável. Oferece suporte a $filter.|
 |refreshTokensValidFromDateTime|DateTimeOffset|Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. <br><br>Retornado apenas em $select. Apenas leitura. |
 |responsibilities|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas responsabilidades.|
 |schools|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar as escolas que frequentou.|
 |showInAddressList|Booliano|**true** se a lista de endereços global do Outlook deve conter o usuário, caso contrário **false**. Se não estiver configurado, isso será tratado como **true**. Para os usuários convidados por meio do Gerenciador de convites, essa propriedade será definida como **false**.|
 |skills|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas qualificações.|
 |signInSessionsValidFromDateTime|DateTimeOffset| Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. Somente leitura. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) para redefinir.|
-|state|Cadeia de caracteres|The state or province in the user's address. Supports $filter.|
+|state|Cadeia de caracteres|O estado ou município no endereço do usuário. Oferece suporte a $filter.|
 |streetAddress|String|O endereço do local de trabalho do usuário.|
-|surname|String|The user's surname (family name or last name). Supports $filter.|
-|usageLocation|String|A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. Supports $filter.|
-|userPrincipalName|Cadeia de caracteres|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby.
-|userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
+|surname|String|O sobrenome do usuário (nome de família ou sobrenome). Oferece suporte a $filter.|
+|usageLocation|String|Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países. Entre os exemplos temos: "US", "JP" e "GB". Não anulável. Oferece suporte a $filter.|
+|userPrincipalName|Cadeia de caracteres|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](organization.md). Oferece suporte a $filter e $orderby.
+|userType|String|Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”. Oferece suporte a $filter.          |
 
 ### <a name="legal-age-group-property-definitions"></a>Definições de propriedade da faixa etária legal
 
@@ -236,33 +236,33 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |activities|Coleção [userActivity](projectrome-activity.md)|Atividades do usuário em vários dispositivos. Somente leitura. Anulável.|
-|calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
-|calendarGroups|Coleção [CalendarGroup](calendargroup.md)|The user's calendar groups. Read-only. Nullable.|
-|calendarView|Coleção [event](event.md)|The calendar view for the calendar. Read-only. Nullable.|
-|calendars|Coleção [calendar](calendar.md)|The user's calendars. Read-only. Nullable.|
-|contactFolders|Coleção [ContactFolder](contactfolder.md)|The user's contacts folders. Read-only. Nullable.|
-|contacts|Coleção [Contact](contact.md)|The user's contacts. Read-only. Nullable.|
-|createdObjects|Coleção [directoryObject](directoryobject.md)|Directory objects that were created by the user. Read-only. Nullable.|
-|directReports|Coleção [directoryObject](directoryobject.md)|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. |
-|drive|[drive](drive.md)|The user's OneDrive. Read-only.|
-|unidades|Coleção [drive](drive.md)| A collection of drives available for this user. Read-only. |
-|eventos|Coleção [event](event.md)|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
-|extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Read-only. Nullable.|
+|calendar|[calendar](calendar.md)|O calendário principal do usuário. Somente leitura.|
+|calendarGroups|Coleção [CalendarGroup](calendargroup.md)|Os grupos de calendários do usuário. Somente leitura. Anulável.|
+|calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Somente leitura. Anulável.|
+|calendars|Coleção [calendar](calendar.md)|Os calendários do usuário. Somente leitura. Anulável.|
+|contactFolders|Coleção [ContactFolder](contactfolder.md)|As pastas de contatos do usuário. Somente leitura. Anulável.|
+|contacts|Coleção [Contact](contact.md)|Os contatos do usuário. Somente leitura. Anulável.|
+|createdObjects|Coleção [directoryObject](directoryobject.md)|Objetos directory que foram criados pelo usuário. Somente leitura. Anulável.|
+|directReports|Coleção [directoryObject](directoryobject.md)|Os usuários e contatos subordinados ao usuário. (Os usuários e contatos cuja propriedade manager está definida como esse usuário.) Somente leitura. Anulável. |
+|drive|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
+|unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
+|eventos|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
+|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o usuário. Somente leitura. Anulável.|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
-|insights|[officeGraphInsights](officegraphinsights.md) | Read-only. Nullable.|
+|insights|[officeGraphInsights](officegraphinsights.md) | Somente leitura. Anulável.|
 |licenseDetails|Coleção de[licenseDetails](licensedetails.md)|Uma coleção de detalhes da licença do usuário. Somente leitura.|
-|mailFolders|Coleção [mailFolder](mailfolder.md)| The user's mail folders. Read-only. Nullable.|
-|manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
-|memberOf|Coleção [directoryObject](directoryobject.md)|The groups and directory roles that the user is a member of. Read-only. Nullable.|
-|messages|Coleção [message](message.md)|The messages in a mailbox or folder. Read-only. Nullable.|
+|mailFolders|Coleção [mailFolder](mailfolder.md)| As pastas de email do usuário. Somente leitura. Anulável.|
+|manager|[directoryObject](directoryobject.md)|O usuário ou contato que é o gerente do usuário. Somente leitura. (Métodos HTTP: GET, PUT, DELETE.)|
+|memberOf|Coleção [directoryObject](directoryobject.md)|Os grupos e as funções de diretório dos quais o usuário é membro. Somente leitura. Anulável.|
+|messages|Coleção [message](message.md)|As mensagens em uma caixa de correio ou pasta. Somente leitura. Anulável.|
 |onenote|[onenote](onenote.md)| Somente leitura.|
 |outlook|[outlookUser](outlookuser.md)| Somente leitura.|
-|ownedDevices|Coleção [directoryObject](directoryobject.md)|Devices that are owned by the user. Read-only. Nullable.|
-|ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
+|ownedDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que pertencem ao usuário. Somente leitura. Anulável.|
+|ownedObjects|[directoryObject](directoryobject.md) collection|Objetos de diretório que pertencem ao usuário. Somente leitura. Anulável.|
 |people|Coleção [person](person.md)| Pessoas que são relevantes para o usuário. Somente leitura. Anulável.
-|photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
+|photo|[profilePhoto](profilephoto.md)| A foto de perfil do usuário. Somente leitura.|
 |planner|[plannerUser](planneruser.md)| Ponto de entrada para o recurso Planejador que pode existir para um usuário. Somente leitura.|
-|registeredDevices|Coleção [directoryObject](directoryobject.md)|Devices that are registered for the user. Read-only. Nullable.|
+|registeredDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que estão registrados para o usuário. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

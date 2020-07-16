@@ -20,7 +20,7 @@ Para atualizar o conteúdo de uma página do OneNote, envie uma solicitação de
 
 `PATCH ../notes/pages/{id}/content`</p>
 
-Send a JSON change object in the message body. If the request is successful, Microsoft Graph returns a 204 HTTP status code.
+Envie um objeto de alteração JSON no corpo da mensagem. Se a solicitação for bem-sucedida, o Microsoft Graph retornará um código de status de HTTP 204.
 
 
 <a name="request-uri"></a>

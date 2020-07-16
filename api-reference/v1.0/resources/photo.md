@@ -46,14 +46,14 @@ O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadad
 
 | Propriedade                | Tipo           | Descrição
 |:------------------------|:---------------|:----------------------------------
-| **takenDateTime**       | DateTimeOffset | Represents the date and time the photo was taken. Read-only.
-| **cameraMake**          | String         | Camera manufacturer. Read-only.
-| **cameraModel**         | String         | Camera model. Read-only.
-| **fNumber**             | Duplo         | The F-stop value from the camera. Read-only.
-| **exposureDenominator** | Duplo         | The denominator for the exposure time fraction from the camera. Read-only.
-| **exposureNumerator**   | Duplo         | The numerator for the exposure time fraction from the camera. Read-only.
-| **focalLength**         | Double         | The focal length from the camera. Read-only.
-| **iso**                 | Int32          | The ISO value from the camera. Read-only.
+| **takenDateTime**       | DateTimeOffset | Representa a data e a hora em que a foto foi tirada. Somente leitura.
+| **cameraMake**          | String         | Fabricante da câmera. Somente leitura.
+| **cameraModel**         | String         | Modelo da câmera. Somente leitura.
+| **fNumber**             | Duplo         | O valor de f-stop da câmera. Somente leitura.
+| **exposureDenominator** | Duplo         | O denominador da fração do tempo de exposição da câmera. Somente leitura.
+| **exposureNumerator**   | Duplo         | O numerador da fração do tempo de exposição da câmera. Somente leitura.
+| **focalLength**         | Double         | A distância focal da câmera. Somente leitura.
+| **iso**                 | Int32          | O valor de ISO da câmera. Somente leitura.
 | **orientation**         | Int16          | O valor da orientação da câmera. Gravável no OneDrive Personal.      |
 
 ## <a name="remarks"></a>Comentários

@@ -37,7 +37,7 @@ Para obter mais informações, consulte a documentação da [consulta Delta](/gr
 
 ## <a name="permissions"></a>Permissões
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference.md).
 
 |Tipo de permissão                        |Permissões (da com menos para a com mais privilégios)  |
 |---------------------------------------|---------------------------------------------|
@@ -79,7 +79,7 @@ Os seguintes [parâmetros de consulta OData](/graph/query-parameters) são compa
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho        | Valor                     |
 |---------------|---------------------------|
-| Autorização | Bearer {token}. Required. |
+| Autorização | {token} de portador. Obrigatório. |
 | Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Corpo da Solicitação
@@ -100,7 +100,7 @@ O exemplo a seguir mostra uma série de três solicitações para sincronizar as
 - Etapa 2:[ segundo exemplo de solicitação](#second-request) e [resposta](#second-request-response)
 - Etapa 3:[ terceiro exemplo de solicitação](#third-request) e [resposta final](#third-request-response).
 
-For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.
+Para economizar tempo, as respostas de exemplo exibem apenas um subconjunto das propriedades para um evento. Em uma chamada real, a maior parte das propriedades dos eventos são retornadas.
 
 Confira também o que você vai fazer na [próxima fase](#example-2-retrieving-additional-changes).
 
@@ -406,7 +406,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc
 
 #### <a name="response"></a>Resposta
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

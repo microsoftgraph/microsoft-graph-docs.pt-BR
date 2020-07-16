@@ -20,7 +20,7 @@ Recupere as propriedades e os relacionamentos de um objeto [Notebook](../resourc
 
 O local pode ser blocos de anotações de usuário no Microsoft 365, em blocos de anotações de grupo ou em blocos de anotações de equipe hospedados no site do SharePoint no Microsoft 365.
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,7 +38,7 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | Bearer {token}. Required. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 | Aceitar | string | `application/json` |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -87,7 +87,7 @@ Content-type: application/json
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

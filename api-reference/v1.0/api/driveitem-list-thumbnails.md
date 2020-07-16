@@ -20,12 +20,9 @@ Namespace: microsoft.graph
 
 Recupere uma coleção de recursos [ThumbnailSet](../resources/thumbnailset.md) para um recurso [DriveItem](../resources/driveitem.md).
 
-A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources.
-Each **thumbnailSet** can have one or more [**thumbnail**](../resources/thumbnail.md) objects, which are images that represent the item.
-For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large`.
+Um DriveItem pode ser representado por zero ou mais recursos [ThumbnailSet](../resources/thumbnailset.md). Cada **thumbnailSet** pode ter um ou mais objetos [**thumbnail**](../resources/thumbnail.md), que são imagens que representam o item. Por exemplo, um **thumbnailSet** podem incluir objetos **thumbnail**, como objetos comuns que incluem `small`, `medium` ou `large`.
 
-There are many ways to work with thumbnails on OneDrive.
-Here are the most common ones:
+Há várias maneiras de trabalhar com miniaturas no OneDrive. Veja a seguir as mais comuns:
 
 * Enumerar miniaturas disponíveis para um item
 * Recuperar uma única miniatura para um item
@@ -37,7 +34,7 @@ Here are the most common ones:
 
 ## <a name="permissions"></a>Permissões
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -100,8 +97,7 @@ GET /me/drive/items/{item-id}/thumbnails
 
 Isto retorna uma matriz de **thumbnailSets** disponíveis para o item. Qualquer item em uma unidade pode ter zero ou mais miniaturas.
 
-**Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**.
-For example, `/thumbnails?select=medium` retrieves only the medium sized thumbnails.
+**Observação:** Você pode usar o parâmetro da cadeia de caracteres de consulta _select_ para controlar quais tamanhos de miniatura são retornados no **ThumbnailSet**. Por exemplo, `/thumbnails?select=medium` recupera somente miniaturas de tamanho médio.
 
 
 ### <a name="response"></a>Resposta
@@ -161,7 +157,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 | Nome         | Tipo   | Descrição                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | O identificador exclusivo do item referenciado.                                           |
-| **thumb-id** | number | The index of the thumbnail, usually 0-4. If there is a custom thumbnail, its index is 0. |
+| **thumb-id** | number | O índice da miniatura, geralmente de 0 a 4. Se houver uma miniatura personalizada, seu índice será 0. |
 | **size**     | string | O tamanho da miniatura solicitada. Pode ter um dos tamanhos padrão listados abaixo, ou um tamanho personalizado. |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
@@ -298,8 +294,7 @@ Content-type: application/json
 
 ## <a name="size-options"></a>Opções de tamanho
 
-This table defines the possible thumbnail sizes.
-While you can request any arbitrary thumbnail size, the defined values are likely to exist and return a value quickly:
+Essa tabela define os possíveis tamanhos de miniaturas. Embora você possa solicitar qualquer tamanho de miniatura arbitrário, os valores definidos provavelmente existem e retornam um valor rapidamente:
 
 | Nome           | Resolução  | Taxa de proporção | Descrição                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
@@ -366,7 +361,7 @@ Você pode especificar as seguintes opções após o tamanho de miniatura solici
 | Identificador de miniatura | Resolução             | Taxa de proporção | Descrição                                                                                                                                         |
 |:---------------------|:-----------------------|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
 | c300x400             | Limitado por uma caixa de 300 x 400 | Original     | Gere uma miniatura que se ajuste em uma caixa de 300 x 400 pixels, mantendo a taxa de proporção                                                                 |
-| c300x400_Crop        | 300x400                | Recortada      | Generate a thumbnail that is 300x400 pixels. This works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box. |
+| c300x400_Crop        | 300x400                | Recortada      | Gere uma miniatura de 300 x 400 pixels. Para isso, é preciso redimensionar a imagem para caber na caixa de 300 x 400 e recortar o que ficar fora da caixa. |
 
 **Observação:** talvez a miniatura retornada não corresponda exatamente às dimensões de pixel solicitadas, mas corresponderá com a taxa de proporção.
 Em alguns casos, uma miniatura maior do que a solicitada pode retornar, se a miniatura já existir, e pode ser facilmente dimensionada para coincidir com a resolução solicitada.

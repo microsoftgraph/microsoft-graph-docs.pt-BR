@@ -24,7 +24,7 @@ Você pode pesquisar em uma hierarquia de pastas, uma unidade inteira ou arquivo
 
 ## <a name="permissions"></a>Permissões
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -52,7 +52,7 @@ Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-pa
 
 | Parâmetro | Tipo  | Descrição                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| q  | cadeia de caracteres | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
+| q  | cadeia de caracteres | O texto de consulta usado para pesquisar itens. Os valores podem ser correspondidos em vários campos, incluindo nome do arquivo, metadados e conteúdo do arquivo. |
 
 ## <a name="example"></a>Exemplo
 
@@ -83,11 +83,9 @@ GET /me/drive/root/search(q='Contoso Projec}')
 
 ### <a name="response"></a>Resposta
 
-This method returns an object containing an collection of [DriveItems](../resources/driveitem.md) that match the search criteria.
-If no items were found, an empty collection is returned.
+Este método retorna um objeto que contém uma coleção de [DriveItems](../resources/driveitem.md) que correspondem aos critérios de pesquisa. Se não forem encontrados itens, uma coleção vazia será retornada.
 
-If there are too many matches the response will be paged and an **@odata.nextLink** property will contain a URL to the next page of results.
-You can use the `$top` query parameter to specify the number of items in the page.
+Se houver muitas correspondências, a resposta será paginada, e uma propriedade **@odata.nextLink** conterá uma URL para a próxima página de resultados. Você pode usar o parâmetro de consulta `$top` para especificar o número de itens na página.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
@@ -116,8 +114,7 @@ Content-type: application/json
 
 ## <a name="searching-for-items-a-user-can-access"></a>Pesquisando itens que um usuário pode acessar
 
-In addition to searching for items within a drive, your app can search more broadly to include items shared with the current user.
-To broaden the search scope, use the **search** method on the [Drive](../resources/drive.md) resource.
+Além de procurar itens em uma unidade, seu aplicativo pode pesquisar amplamente para incluir itens compartilhados com o usuário atual. Para ampliar o escopo da pesquisa, use o método **search** no recurso [Drive](../resources/drive.md).
 
 ### <a name="example"></a>Exemplo
 
@@ -145,8 +142,7 @@ GET /me/drive/search(q='Contoso Project')
 
 ### <a name="response"></a>Resposta
 
-Responses when searching from the **drive** resource may include items outside of the drive (items shared with the current user).
-These items will include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive. 
+As respostas ao pesquisar por meio do recurso **drive** podem incluir itens fora da unidade (itens compartilhados com o usuário atual). Estes itens incluirão a faceta [**remoteItem**](../resources/remoteitem.md) para indicar que estão armazenados fora da unidade de destino. 
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 

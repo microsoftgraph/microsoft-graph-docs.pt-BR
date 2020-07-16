@@ -45,12 +45,12 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade         | Tipo   | Descrição                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
+| **sha1Hash**     | String | Hash SHA1 para o conteúdo do arquivo (se disponível). Somente leitura. |
 | **sha256Hash**   | String | O hash SHA256 para o conteúdo do arquivo (se disponível). Somente leitura. |
 | **crc32Hash**    | String | O valor CRC32 do arquivo em little endian (se disponível). Somente leitura.            |
-| **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
+| **quickXorHash** | String | Um hash de proprietário do arquivo que pode ser usado para determinar se o conteúdo do arquivo foi alterado (se disponível). Somente leitura. |
 
-**Note:** In some cases hash values may not be available. If this is the case, the hash values on an item will be updated after the item is downloaded.
+**Observação:** Em alguns casos, os valores de hash podem não estar disponíveis. Nesse caso, os valores de hash em um item serão atualizados depois que o item for baixado.
 
 ## <a name="remarks"></a>Comentários
 

@@ -7,7 +7,7 @@ ms.prod: groups
 doc_type: resourcePageType
 ms.openlocfilehash: 73c758dc4199f0abe40713d563f23d93351ec816
 ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44896935"
@@ -50,11 +50,11 @@ Esse recurso permite:
 | [Listar membros transitivos](../api/group-list-transitivemembers.md)           | Coleção [directoryObject](directoryobject.md)           | Obtenha os usuários, grupos e dispositivos que são membros, inclusive membros aninhados desse grupo.                                                                                                                       |
 | [Listar memberOf transitivos](../api/group-list-transitivememberof.md)         | Coleção [directoryObject](directoryobject.md)           | Lista os grupos dos quais este grupo é membro. Essa operação é transitiva e inclui os grupos que são membros aninhados desse grupo.                                                                       |
 | [Remover membro](../api/group-delete-members.md)                             | Nenhum                                                       | Remover um membro de um grupo do Microsoft 365, um grupo de segurança ou um grupo de segurança habilitado para email através da propriedade de navegação **Members** . É possível remover usuários ou outros grupos.                                    |
-| [checkMemberGroups](../api/group-checkmembergroups.md)                      | Coleção de cadeias de caracteres                                          | Check this group for membership in a list of groups. The function is transitive.                                                                                                                                  |
+| [checkMemberGroups](../api/group-checkmembergroups.md)                      | Coleção de cadeias de caracteres                                          | Verificar esse grupo quanto a uma associação em uma lista de grupos. Essa função é transitiva.                                                                                                                                  |
 | [checkMemberObjects](../api/group-checkmemberobjects.md)                    | Coleção de cadeias de caracteres                                          | Verifique se há associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. Essa função é transitiva.                                                                                              |
-| [getMemberGroups](../api/group-getmembergroups.md)                          | Coleção de cadeias de caracteres                                          | Return all the groups that the group is a member of. The function is transitive.                                                                                                                                  |
-| [getMemberObjects](../api/group-getmemberobjects.md)                        | String collection                                          | Return all of the groups that the group is a member of. The function is transitive.                                                                                                                               |
-| [Criar configuração](../api/groupsetting-post-groupsettings.md)                 | [groupSetting](groupsetting.md)                            | Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
+| [getMemberGroups](../api/group-getmembergroups.md)                          | Coleção de cadeias de caracteres                                          | Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva.                                                                                                                                  |
+| [getMemberObjects](../api/group-getmemberobjects.md)                        | String collection                                          | Retornar todos os grupos dos quais o grupo é um membro. Essa função é transitiva.                                                                                                                               |
+| [Criar configuração](../api/groupsetting-post-groupsettings.md)                 | [groupSetting](groupsetting.md)                            | Crie um objeto de configuração com base em um groupSettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação. |
 | [Obter configuração](../api/groupsetting-get.md)                                   | [groupSetting](groupsetting.md)                            | Ler propriedades de um objeto de configuração específico.                                                                                                                                                                     |
 | [Listar configurações](../api/groupsetting-list.md)                                | Conjunto [groupSetting](groupsetting.md)                 | Lista propriedades de todos os objetos de configuração.                                                                                                                                                                           |
 | [Atualizar configuração](../api/groupsetting-update.md)                             | [groupSetting](groupsetting.md)                            | Atualizar um objeto de configuração.                                                                                                                                                                                          |
@@ -88,7 +88,7 @@ Esse recurso permite:
 | [Listar rejectedSenders](../api/group-list-rejectedsenders.md)                | Coleção [directoryObject](directoryobject.md)           | Obtenha uma lista de usuários ou grupos que estão na lista de remetentes rejeitados para este grupo.                                                                                                                               |
 | [Adicionar rejectedSender](../api/group-post-rejectedsenders.md)                  | [directoryObject](directoryobject.md)                      | Adicionar um novo Usuário ou Grupo à coleção rejectedSenders.                                                                                                                                                        |
 | [Remover rejectedSender](../api/group-delete-rejectedsenders.md)             | [directoryObject](directoryobject.md)                      | Remover um novo Usuário ou Grupo da coleção Remetentesrejeitados.                                                                                                                                                     |
-| [Criar configuração](../api/groupsetting-post-groupsettings.md)                 | [groupSetting](groupsetting.md)                            | Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
+| [Criar configuração](../api/groupsetting-post-groupsettings.md)                 | [groupSetting](groupsetting.md)                            | Crie um objeto de configuração com base em um groupSettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação. |
 | [Obter configuração](../api/groupsetting-get.md)                                   | [groupSetting](groupsetting.md)                            | Ler propriedades de um objeto de configuração específico.                                                                                                                                                                     |
 | [Listar configurações](../api/groupsetting-list.md)                                | Conjunto [groupSetting](groupsetting.md)                 | Lista propriedades de todos os objetos de configuração.                                                                                                                                                                           |
 | [Atualizar configuração](../api/groupsetting-update.md)                             | Nenhum                                                       | Atualizar um objeto setting.                                                                                                                                                                                          |
@@ -117,7 +117,7 @@ Esse recurso permite:
 |allowExternalSenders|Booliano| Indica se as pessoas externas à empresa podem enviar mensagens para o grupo. O valor padrão é **false**. <br><br>Retornado apenas em $select. |
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao grupo. <br><br>Retornado apenas em $select. Somente leitura.|
 |autoSubscribeNewMembers|Booliano|Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email. Você pode definir essa propriedade em uma solicitação PATCH para o grupo. Não a defina na solicitação POST inicial que cria esse grupo. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
-|classificação|String|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](groupsetting.md) value, based on the [template definition](groupsettingtemplate.md).<br><br>Retornado por padrão.|
+|classificação|String|Descreve uma classificação para o grupo (como impacto comercial baixo, médio ou alto). Os valores válidos para esta propriedade são definidos criando um valor de [configuração](groupsetting.md) ClassificationList com base na [definição de modelo](groupsettingtemplate.md).<br><br>Retornado por padrão.|
 |createdDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi criado. Não é possível modificar o valor e ele é preenchido automaticamente quando o grupo é criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura. |
 |deletedDateTime|DateTimeOffset| Para alguns objetos do Azure Active Directory (usuário, grupo, aplicativo), se o objeto for excluído, ele será excluído primeiro logicamente e essa propriedade será atualizada com a data e a hora em que o objeto foi excluído. Caso contrário, essa propriedade é nula. Se o objeto for restaurado, essa propriedade será atualizada para nula. |
 |description|String|Uma descrição opcional para o grupo. <br><br>Retornado por padrão.|
@@ -162,28 +162,28 @@ Veja o que cada valor da propriedade de **visibilidade** significa:
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|acceptedSenders|Coleção [directoryObject](directoryobject.md)|The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.|
-|calendário|[calendar](calendar.md)|The group's calendar. Read-only.|
-|calendarView|Coleção [event](event.md)|The calendar view for the calendar. Read-only.|
+|acceptedSenders|Coleção [directoryObject](directoryobject.md)|A lista de usuários ou grupos que têm permissão para criar eventos de calendário ou postagens nesse grupo. Se essa lista não estiver vazia, somente os usuários ou grupos listados aqui poderão fazer postagens.|
+|calendário|[calendar](calendar.md)|O calendário do grupo. Somente leitura.|
+|calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Somente leitura.|
 |conversations|Coleção [conversation](conversation.md)|As conversas do grupo.|
-|createdOnBehalfOf|[directoryObject](directoryobject.md)| The user (or application) that created the group. NOTE: This is not set if the user is an administrator. Read-only.|
+|createdOnBehalfOf|[directoryObject](directoryobject.md)| O usuário (ou aplicativo) que criou o grupo. OBSERVAÇÃO: Não definido se o usuário for um administrador. Somente leitura.|
 |Unidade|[unidade](drive.md)|Unidade padrão do grupo. Somente leitura.|
 |unidades|Coleção [drive](drive.md)|As unidades do grupo. Somente leitura.|
 |events|Coleção [event](event.md)|Os eventos de calendário do grupo.|
-|extensions|Coleção [extension](extension.md)|The collection of open extensions defined for the group. Read-only. Nullable.|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o grupo. Somente leitura. Anulável.|
 |groupLifecyclePolicies|Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md)|O conjunto de políticas de ciclo de vida para esse grupo. Somente leitura. Anulável.|
-|memberOf|Coleção [directoryObject](directoryobject.md)|Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
+|memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos quais esse grupo é membro. Métodos HTTP: GET (com suporte para todos os grupos). Somente leitura. Anulável.|
 |membros|Coleção [directoryObject](directoryobject.md)| Os usuários e grupos que são membros desse grupo. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos de segurança da Microsoft 365, grupos de segurança e grupos de segurança habilitados para email), excluir (com suporte para Microsoft 365 grupos e grupos de segurança) Nullable.|
 |membersWithLicenseErrors|Coleção [user](user.md)|Uma lista de membros do grupo com erros de licença desse grupo baseado em atribuição de licença. Somente leitura.|
 |onenote|[Onenote](onenote.md)| Somente leitura.|
 |owners|Coleção [directoryObject](directoryobject.md)|Os proprietários do grupo. Os proprietários são um conjunto de usuários não administradores e que têm permissão para modificar esse objeto. Limitado a 100 proprietários. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Microsoft 365, grupos de segurança e grupos de segurança habilitados para email), excluir (com suporte para grupos de segurança e grupos do Microsoft 365). Anulável.|
 |photo|[profilePhoto](profilephoto.md)| A foto de perfil do grupo |
-|fotos|Coleção [profilePhoto](profilephoto.md)| The profile photos owned by the group. Read-only. Nullable.|
+|fotos|Coleção [profilePhoto](profilephoto.md)| As fotos de perfil pertencentes ao grupo. Somente leitura. Anulável.|
 |planejador|[plannerGroup](plannergroup.md)| Ponto de entrada para o recurso Planejador que pode existir para um Grupo unificado.|
-|rejectedSenders|Coleção [directoryObject](directoryobject.md)|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
-|configurações|Conjunto [groupSetting](groupsetting.md)| Read-only. Nullable.|
-|sites|conjunto de [sites](site.md)|The list of SharePoint sites in this group. Access the default site with /sites/root.|
-|threads|Coleção [conversationThread](conversationthread.md)| The group's conversation threads. Nullable.|
+|rejectedSenders|Coleção [directoryObject](directoryobject.md)|A lista de usuários ou grupos que não têm permissão para criar eventos de calendário ou postagens nesse grupo. Anulável|
+|configurações|Conjunto [groupSetting](groupsetting.md)| Somente leitura. Anulável.|
+|sites|conjunto de [sites](site.md)|A lista de sites do SharePoint nesse grupo. Acesse o site padrão com /sites/root.|
+|threads|Coleção [conversationThread](conversationthread.md)| Os threads de conversas do grupo. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -38,8 +38,7 @@ Nenhum  Você deve incluir objetos desse tipo no corpo de uma solicitação ao [
 
 ## <a name="remarks"></a>Comentários
 
-In some circumstances, the unique identifier for the actor may not be available.
-In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
+Em algumas circunstâncias, o identificador exclusivo para o ator pode não estar disponível. Nesse caso, a propriedade **displayName** para a identidade será retornada, mas a propriedade **id** estará ausente do recurso.
 
 ## <a name="relationships"></a>Relações
 

@@ -76,8 +76,8 @@ Veja a seguir uma representação JSON do recurso.
 
 |Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|extensionName|String|A unique text identifier for an open type open extension. Required.|
-|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
+|extensionName|String|Um identificador de texto exclusivo para uma extensão de tipo aberto. Obrigatório.|
+|id|String| Um identificador totalmente qualificado que concatena o tipo de extensão com **extensionName**. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 

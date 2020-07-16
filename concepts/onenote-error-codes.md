@@ -68,7 +68,7 @@ Não é possível criar nem atualizar a entidade porque a biblioteca que contém
 Remova o requisito de check-out da biblioteca ou mova o bloco de anotações.
 
 ### <a name="10013"></a>10013
-One or more of the document libraries on the user or group's OneDrive contains more than 20,000 items and cannot be indexed for querying using the API. Please make sure that none of the user or group's document libraries contains more than 20,000 items. See the [OneNote Dev blog](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) for mitigation steps.
+Uma ou mais das bibliotecas de documentos no OneDrive do usuário ou grupo contêm mais de 20.000 itens e não podem ser indexadas para consulta usando a API. Certifique-se de que nenhuma das bibliotecas de documentos do grupo ou usuário contenha mais de 20.000 itens. Confira o [blog de desenvolvimento do OneNote](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) para ver as etapas de mitigação.
 
 ### <a name="10014"></a>10014
 O Azure Key Vault está ocupado demais para lidar com a solicitação de entrada neste momento. Tente novamente mais tarde.
@@ -100,7 +100,7 @@ A solicitação contém duas ou mais partes de "Apresentação". Exatamente uma 
 O tipo de conteúdo da parte "Apresentação" pode ser somente texto/HTML ou aplicativo/XHTML+XML. 
 
 ### <a name="20004"></a>20004
-The "Presentation" part HTML contains an image tag with both the **src** and the **data-render-src** properties set. The API will ignore the **src** property and use the **data-render-src** property. 
+O HTML da parte "Apresentação" contém uma marca de imagem com a **src** e o conjunto de propriedades **data-render-src**. A API irá ignorar a propriedade **src** e usar a propriedade **data-render-src**. 
 
 ### <a name="20005"></a>20005
 O URI da solicitação é muito longo. O tamanho máximo do URI (incluindo todos os parâmetros e dados) é de 16 KB ou 16.384 caracteres.

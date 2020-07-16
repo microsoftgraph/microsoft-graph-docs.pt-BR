@@ -53,8 +53,8 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | Bearer {token}. Required.  |
-| Content-Type  | application/json. Required.  |
+| Autorização  | {token} de portador. Obrigatório.  |
+| Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
@@ -289,7 +289,7 @@ Content-type: application/json
 #### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

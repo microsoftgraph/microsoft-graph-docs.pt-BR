@@ -24,7 +24,7 @@ Para obter mais informações sobre como adicionar propriedades ao cartão de pe
 
 ## <a name="permissions"></a>Permissões
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
@@ -46,8 +46,8 @@ POST https://graph.microsoft.com/beta/organization/{organizationId}/settings/pro
 
 | Nome          |Descrição                  |
 |:--------------|:----------------------------|
-| Autorização | Bearer {token}. Required.   |
-| Content-Type  | application/json. Required. |
+| Autorização | {token} de portador. Obrigatório.   |
+| Content-Type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -99,7 +99,7 @@ Content-type: application/json
 
 Este é um exemplo de resposta.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

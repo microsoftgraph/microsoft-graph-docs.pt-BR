@@ -100,8 +100,8 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |calls           |Coleção [call](call.md)                   |Somente leitura. Anulável.|
 |connectorGroup|[connectorGroup](connectorgroup.md)| O connectorGroup que o aplicativo está usando com o Proxy de aplicativo do Azure AD. Anulável.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Somente leitura.|
-|extensionProperties|Coleção [extensionProperty](extensionproperty.md)| Read-only. Nullable.|
-|onlineMeetings  |Coleção [onlineMeeting](onlinemeeting.md)|Read-only. Nullable.|
+|extensionProperties|Coleção [extensionProperty](extensionproperty.md)| Somente leitura. Anulável.|
+|onlineMeetings  |Coleção [onlineMeeting](onlinemeeting.md)|Somente leitura. Anulável.|
 |owners|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que são proprietários do aplicativo. Os proprietários são um conjunto de usuários não administradores e que têm permissão para modificar esse objeto. Requer a versão 2013-11-08 ou mais recente. Somente leitura. Anulável.|
 |tokenLifetimePolicies|Coleção [tokenLifetimePolicy](tokenLifetimePolicy.md)|O tokenLifetimePolicies atribuído a esse aplicativo.|
 

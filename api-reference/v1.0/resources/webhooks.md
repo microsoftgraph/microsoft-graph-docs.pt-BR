@@ -39,7 +39,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 
 ## <a name="permissions"></a>Permissions
 
-In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api/subscription-post-subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types.
+Em geral, as operações de assinatura exigem permissão de leitura ao recurso. Por exemplo, para obter notificações de mensagens, seu aplicativo precisa da permissão `Mail.Read`. O artigo [criar assinatura](../api/subscription-post-subscriptions.md) lista as permissões necessárias para cada tipo de recurso. A tabela a seguir lista os tipos de permissões que o aplicativo pode solicitar para usar webhooks para tipos específicos de recursos.
 
 | Tipo de permissão                        | Tipos de recurso com suporte                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |

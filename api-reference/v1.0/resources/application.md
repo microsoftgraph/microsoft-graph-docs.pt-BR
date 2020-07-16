@@ -90,7 +90,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | Relação | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Somente leitura.|
-|extensionProperties|Coleção [extensionProperty](extensionproperty.md)| Read-only. Nullable.|
+|extensionProperties|Coleção [extensionProperty](extensionproperty.md)| Somente leitura. Anulável.|
 |owners|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que são proprietários do aplicativo. Os proprietários são um conjunto de usuários não administradores e que têm permissão para modificar esse objeto. Requer a versão 2013-11-08 ou mais recente. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON

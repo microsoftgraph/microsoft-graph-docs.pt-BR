@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Atribuir um [conector](../resources/connectorgroup.md) a um [aplicativo](../resources/application.md).
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -39,7 +39,7 @@ PUT /applications/{id}/connectorGroup/$ref
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | Portador. Obrigatório.|
-| Content-type | application/json. Required.|
+| Content-type | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON de um objeto do objeto de [conexão](../resources/connectorgroup.md) .

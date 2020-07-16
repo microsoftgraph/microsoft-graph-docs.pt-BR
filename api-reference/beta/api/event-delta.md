@@ -35,7 +35,7 @@ A tabela a seguir lista as diferenças entre a função **Delta** em eventos e a
 | Disponível atualmente somente na versão beta. | Disponível nas versões v 1.0 e beta. |
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -148,9 +148,9 @@ Em solicitações subsequentes, basta copiar e aplicar `nextLink` a `deltaLink` 
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00". <br>O fuso horário é especificado na parte de deslocamento de fuso horário do valor do parâmetro e não é afetado pelo `Prefer: outlook.timezone` cabeçalho, se houver. Se nenhum deslocamento de fuso horário estiver incluído no valor, ele será interpretado como UTC.<br>Opcional para **Delta** em eventos em um calendário. <br>Obrigatório para **Delta** no **calendarView**. |
-|endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00". <br>O fuso horário é especificado na parte de deslocamento de fuso horário do valor do parâmetro e não é afetado pelo `Prefer: outlook.timezone` cabeçalho, se houver. Se nenhum deslocamento de fuso horário estiver incluído no valor, ele será interpretado como UTC.<br>_Não há suporte para_ **Delta** em eventos em um calendário. <br>Obrigatório para **Delta** no **calendarView**.|
-| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that calendar view.|
+|startDateTime|String|A data e a hora de início do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2019-11-08T19:00:00-08:00".<br>O fuso horário é especificado na parte de deslocamento de fuso horário do valor do parâmetro e não é afetado pelo `Prefer: outlook.timezone` cabeçalho, se houver. Se nenhum deslocamento de fuso horário estiver incluído no valor, ele será interpretado como UTC.<br>Opcional para **Delta** em eventos em um calendário. <br>Obrigatório para **Delta** no **calendarView**. |
+|endDateTime|String|A data e a hora de término do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2019-11-08T20:00:00-08:00".<br>O fuso horário é especificado na parte de deslocamento de fuso horário do valor do parâmetro e não é afetado pelo `Prefer: outlook.timezone` cabeçalho, se houver. Se nenhum deslocamento de fuso horário estiver incluído no valor, ele será interpretado como UTC.<br>_Não há suporte para_ **Delta** em eventos em um calendário. <br>Obrigatório para **Delta** no **calendarView**.|
+| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `deltaLink` da chamada de função **delta** anterior do mesmo modo de exibição de calendário, indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle do modo de exibição de calendário.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas no mesmo modo de exibição de calendário. |
 
 O não suporta `$expand` , `$filter` , `$orderby` , `$select` e `$search` .
@@ -159,9 +159,9 @@ O não suporta `$expand` , `$filter` , `$orderby` , `$select` e `$search` .
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
 |:---------------|:----------|:----------|
-| Autorização  | string  | Bearer {token}. Required. |
-| Content-Type  | string  | application/json. Required. |
-| Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Optional. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
+| Content-Type  | string  | application/json. Obrigatório. |
+| Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
 | Preferir | string | Outlook. TimeZone = {cadeia de caracteres de fuso horário}. Opcional, supõe-se o UTC se estiver ausente.|
 
 ## <a name="response"></a>Resposta

@@ -40,7 +40,7 @@ GET /communications/presences
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
-| Autorização | Bearer {token}. Required. |
+| Autorização | {token} de portador. Obrigatório. |
 
 
 ## <a name="request-body"></a>Corpo da solicitação

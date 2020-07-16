@@ -25,7 +25,7 @@ Uma unidade é um contêiner de nível superior para um sistema de arquivos como
 
 ## <a name="permissions"></a>Permissões
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -199,7 +199,7 @@ GET /drives/{driveId}
 
 | Nome do parâmetro | Valor  | Descrição                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _driveId_      | cadeia de caracteres | Required. The identifier for the drive requested. |
+| _driveId_      | cadeia de caracteres | Obrigatório. O identificador da unidade solicitada. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 

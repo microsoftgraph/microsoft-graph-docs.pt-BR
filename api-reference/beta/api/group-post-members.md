@@ -26,7 +26,7 @@ Você pode adicionar usuários, entidades de serviço ou outros grupos.
 > Você só pode adicionar usuários aos grupos segurança e Microsoft 365 gerenciados por meio da nuvem.
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,13 +43,13 @@ POST /groups/{id}/members/$ref
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome | Descrição|
 |:---- |:-----------|
-| Autorização | Bearer {token}. Required. |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) ou [group](../resources/group.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação

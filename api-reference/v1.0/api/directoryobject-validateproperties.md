@@ -26,7 +26,7 @@ As seguintes validações de política são realizadas para o nome de exibição
 Essa API só retorna a primeira falha de validação encontrada. Se as propriedades falharem várias validações, somente a primeira falha de validação será retornada. No entanto, você pode validar tanto o apelido de email quanto o nome de exibição e receber uma coleção de erros de validação se você estiver validando apenas o prefixo e a política de nomenclatura de sufixo. Para saber mais sobre como configurar políticas de nomenclatura, consulte [Configure Naming Policy](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell).
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -44,7 +44,7 @@ POST /directoryObjects/validateProperties
 
 | Nome           | Descrição      |
 |:---------------|:-----------------|
-| Autorização  | Bearer {token}. Required.    |
+| Autorização  | {token} de portador. Obrigatório.    |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação

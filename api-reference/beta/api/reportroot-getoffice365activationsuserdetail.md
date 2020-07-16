@@ -24,7 +24,7 @@ Obtenha detalhes sobre os usuários que ativaram o Microsoft 365.
 
 ## <a name="permissions"></a>Permissões
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :--------------------------------------- |
@@ -50,7 +50,7 @@ Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-pa
 
 | Nome          | Descrição               |
 | :------------ | :------------------------ |
-| Autorização | Bearer {token}. Required. |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="response"></a>Resposta
 
@@ -151,7 +151,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserDetail?$
 
 Este é um exemplo de resposta.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

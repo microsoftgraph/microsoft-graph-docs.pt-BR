@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Adicionar um [conector](../resources/connector.md) a um [conector](../resources/connectorgroup.md).
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,7 +38,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | Portador. Obrigatório.|
-| Content-type | application/json. Required. |
+| Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON de um link para um objeto [Connector](../resources/connector.md) .

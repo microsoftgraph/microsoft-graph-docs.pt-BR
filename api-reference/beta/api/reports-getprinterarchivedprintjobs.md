@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Obtenha uma lista de trabalhos de impressão arquivados que foram enfileirados para determinada [impressora](../resources/printer.md).
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
 
@@ -40,7 +40,7 @@ GET /reports/getPrinterArchivedPrintJobs
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição   |
 |:--------------|:--------------|
-| Autorização | Bearer {token}. Required. |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="function-parameters"></a>Parâmetros de função
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(p
 
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

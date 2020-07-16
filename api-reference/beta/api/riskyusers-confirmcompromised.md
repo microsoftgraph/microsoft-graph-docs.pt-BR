@@ -24,7 +24,7 @@ Namespace: microsoft.graph
 Confirme um ou mais objetos [riskyUser](../resources/riskyuser.md) como comprometidos. Esta ação define o nível de risco do usuário de destino como alto.
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,14 +43,14 @@ POST /identityProtection/riskyUsers/confirmCompromised
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Bearer {token}. Required. |
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Especifique as IDs de usuário arriscadas a serem descartadas no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-confirm-users-as-compromised"></a>Exemplo 1: confirmar os usuários como comprometidos
 #### <a name="request"></a>Solicitação

@@ -16,15 +16,14 @@ ms.locfileid: "45081320"
 
 Namespace: microsoft.graph
 
-Create a new [user](../resources/user.md).
-The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
+Crie um novo [usuário](../resources/user.md). O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.
 
 >[!NOTE]
 >Para criar usuários externos, use a [API de convite](invitation-post.md).
 
 ## <a name="permissions"></a>Permissões
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -42,7 +41,7 @@ POST /users
 
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | Bearer {token}. Required.  |
+| Autorização  | {token} de portador. Obrigatório.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -121,7 +120,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [user](..
 
 #### <a name="response"></a>Resposta
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -217,7 +216,7 @@ Content-type: application/json
 
 Veja a seguir um exemplo da resposta. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

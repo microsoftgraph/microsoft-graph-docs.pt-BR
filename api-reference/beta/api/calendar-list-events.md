@@ -1,6 +1,6 @@
 ---
 title: Listar eventos
-description: Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.
+description: Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
@@ -57,7 +57,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
 |:---------------|:--------|:--------|
-| Autorização  | string | Bearer {token}. Required.  |
+| Autorização  | string | {token} de portador. Obrigatório.  |
 | Prefira: outlook.timezone  | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/me/calendar/events
 ---
 
 ##### <a name="response"></a>Resposta
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

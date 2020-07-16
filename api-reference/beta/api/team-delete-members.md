@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 Remover um [conversationMember](../resources/conversationmember.md) de uma [equipe](../resources/team.md).
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -41,7 +41,7 @@ DELETE /teams/{team-id}/members/{member-id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
 |:---|:---|
-|Autorização|Bearer {token}. Required.|
+|Autorização|{token} de portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

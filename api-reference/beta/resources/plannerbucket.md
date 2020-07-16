@@ -37,7 +37,7 @@ O recurso **plannerBucket** representa um Bucket (ou "coluna personalizada") par
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID do Bucket. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço.|
 |nome|Cadeia de caracteres|Nome do bucket.|
-|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
+|orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |planId|String|ID do plano ao qual o Bucket pertence.|
 
 ## <a name="relationships"></a>Relações

@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 Adicione um novo [conversationMember](../resources/conversationmember.md) à uma [equipe](../resources/team.md).
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -41,8 +41,8 @@ POST /teams/{teamsId}/members
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
 |:---|:---|
-|Autorização|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+|Autorização|{token} de portador. Obrigatório.|
+|Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [conversationMember](../resources/conversationmember.md).

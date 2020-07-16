@@ -57,16 +57,16 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | Nome da propriedade            | Tipo               | Descrição
 |:-------------------------|:-------------------|:-----------------------------
 | **id**                   | cadeia de caracteres             | O [identificador exclusivo](#id-property) do item. Somente leitura.
-| **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
+| **createdDateTime**      | DateTimeOffset     | A data e a hora da criação do item. Somente leitura.
 | **description**          | string             | O texto descritivo do site.
-| **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
-| **displayName**          | cadeia de caracteres             | The full title for the site. Read-only.
-| **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.
+| **eTag**                 | string             | ETag do item. Somente leitura.                                                                  |
+| **displayName**          | cadeia de caracteres             | O texto completo do site. Somente leitura.
+| **lastModifiedDateTime** | DateTimeOffset     | A data e a hora que o item foi modificado pela última vez. Somente leitura.
 | **name**                 | string             | O nome/título do item.
-| **root**                 | [root][]           | If present, indicates that this is the root site in the site collection. Read-only.
-| **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
-| **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only.
-| **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.
+| **root**                 | [root][]           | Se estiver presente, indica que este é o site raiz do conjunto de sites. Somente leitura.
+| **sharepointIds**        | [sharepointIds][]  | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
+| **siteCollection**       | [siteCollection][] | Fornece detalhes sobre o conjunto de sites do site. Disponível apenas no site raiz. Somente leitura.
+| **webUrl**               | string (url)       | A URL que exibe o item no navegador. Somente leitura.
 
 ### <a name="id-property"></a>propriedade do id
 Um **site** é identificado por um ID exclusivo que é composto pelos seguintes valores:
@@ -88,7 +88,7 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 | **contentTypes**  | Collection([contentType][])      | O conjunto de tipos de conteúdo definido para esse site.
 | **drive**         | [drive][]                        | A unidade padrão (biblioteca de documentos) desse site.
 | **drives**        | Collection([drive][])            | O conjunto de unidades (bibliotecas de documentos) nesse site.
-| **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
+| **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
 | **lists**         | Collection([list][])             | O conjunto de listas neste site.
 | **pages**         | Collection([sitePage][])         | O conjunto de páginas na lista SitePages no site.
 | **sites**         | Collection([site][])             | O conjunto dos subsites neste site.

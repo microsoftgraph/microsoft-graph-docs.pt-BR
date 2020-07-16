@@ -6,7 +6,7 @@ localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.openlocfilehash: 68ceeac9baedbb6ef7d8a739b0cf0a900b9434cf
 ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44897712"
@@ -38,7 +38,7 @@ Clique nos exemplos para testá-los no [Explorador do Graph][graph-explorer].
 | [$orderby](#orderby-parameter)     | Ordena os resultados.|[`/users?$orderby=displayName desc`][orderby-example]
 | [$search](#search-parameter)       | Retorna os resultados com base nos critérios de pesquisa. |[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | Filtra as propriedades (colunas).|[`/users?$select=givenName,surname`][select-example]
-| [$skip](#skip-parameter)           | Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | [`/me/messages?$skip=11`][skip-example]
+| [$skip](#skip-parameter)           | Índices em um conjunto de resultados. Também usado por algumas APIs para implementar a paginação e pode ser usado com `$top` para paginar resultados manualmente. | [`/me/messages?$skip=11`][skip-example]
 | [$top](#top-parameter)             | Define o tamanho de página de resultados. |[`/users?$top=2`][top-example]
 
 
@@ -46,7 +46,7 @@ Clique nos exemplos para testá-los no [Explorador do Graph][graph-explorer].
 
 | Nome                     | Descrição | Exemplo
 |:-------------------------|:------------|:---------|
-| [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
+| [$skipToken](#skiptoken-parameter) | Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. (Algumas APIs usam `$skip` em vez disso.) | `/users?$skiptoken=X%274453707402000100000017...`|
 
 ## <a name="other-odata-url-capabilities"></a>Outros recursos de URL OData
 
@@ -106,7 +106,7 @@ O `$count` parâmetro de consulta é suportado para essas coleções de recursos
 
 Muitos recursos do Microsoft Graph expõem as propriedades declaradas do recurso, bem como as relações delas com outros recursos. Essas relações também são chamadas de propriedades de referência ou propriedades de navegação e podem fazer referência a um único recurso ou a um conjunto de recursos. Por exemplo, as pastas de email, gerente e subordinados diretos de um usuário são todas expostas como relações. 
 
-Normally, you can query either the properties of a resource or one of its relationships in a single request, but not both. You can use the `$expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results.
+Normalmente, você pode consultar as propriedades de um recurso ou uma de suas relações em uma única solicitação, mas não ambas. Você pode usar o parâmetro de cadeia de caracteres de consulta `$expand` para incluir o recurso expandido ou o conjunto referenciado por uma única relação (propriedade de navegação) nos resultados.
 
 O seguinte exemplo obtém informações de unidade raiz juntamente com os itens filho de nível superior em uma unidade:
 
@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 [Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
-With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `$select` parameter. The following example performs the same query as the previous example but uses a [`$select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **id** and **name** properties.
+Com alguns conjuntos de recursos, você também pode especificar as propriedades a serem retornadas nos recursos expandidos adicionando um parâmetro `$select`. O exemplo a seguir executa a mesma consulta que o exemplo anterior, mas usa uma instrução [`$select`](#select-parameter) para limitar as propriedades retornadas para os itens filho expandidos para as propriedades **id** e **name**.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 [Experimentar no Explorador do Graph][expand-example]
 
-> **Note:** Not all relationships and resources support the `$expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `$select` on expanded items. 
+> **Observação:** nem todas as relações e recursos dão suporte ao parâmetro de consulta `$expand`. Por exemplo, você pode expandir as relações **directReports**, **manager** e **memberOf** em um usuário, mas não pode expandir suas relações **events**, **messages** ou **photo**. Nem todos os recursos ou relações dão suporte ao uso de `$select` em itens expandidos. 
 > 
 > Com recursos do Azure AD derivados de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), como [user](/graph/api/resources/user?view=graph-rest-1.0) e [group](/graph/api/resources/group?view=graph-rest-1.0), `$expand` só há suporte para `beta`, e normalmente são retornados no máximo 20 itens para a relação expandida.
 
@@ -171,7 +171,7 @@ A tabela a seguir mostra alguns exemplos que usam o parâmetro de consulta `$fil
 | Listar todos os grupos da Microsoft 365 em uma organização. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 | Use o elenco do OData para obter uma associação transitiva em grupos com um nome de exibição que comece com ' a ', incluindo uma contagem de objetos retornados. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
 
-> **Note:** The following `$filter` operators are not supported for Azure AD resources:  `ne`, `gt`, `ge`, `lt`, `le`, and `not`. The `contains` string operator is currently not supported on any Microsoft Graph resources.
+> **Observação:** Os seguintes operadores `$filter` não têm suporte para recursos do Azure AD: `ne`, `gt`, `ge`, `lt`, `le` e `not`. O operador de cadeia de caracteres `contains` atualmente não tem suporte em nenhum recurso do Microsoft Graph.
 
 ## <a name="format-parameter"></a>parâmetro format
 
@@ -198,7 +198,7 @@ GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
 [Experimentar no Explorador do Graph][orderby-example]
 
-You can also sort by complex type entities. The following request gets messages and sorts them by the **address** field of the **from** property, which is of the complex type **emailAddress**:
+Você também pode classificar por entidades de tipo complexo. A solicitação abaixo obtém mensagens e as classifica pelo campo **address** da propriedade **from**, que é do tipo complexo **emailAddress**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
@@ -386,12 +386,11 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 > **Importante:** Em geral, recomendamos que você use `$select` para limitar as propriedades retornadas por uma consulta àqueles exigidas pelo aplicativo. Isso se aplica particularmente a consultas com o potencial de retornar um conjunto de resultados amplo. Limitar as propriedades retornadas em cada linha reduzirá a carga de rede e ajudará a melhorar o desempenho do aplicativo.
 >
-> In `v1.0`, some Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), like [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.  
+> No `v1.0`, alguns recursos do Azure AD que derivam de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), como [usuário](/graph/api/resources/user?view=graph-rest-1.0) e [grupo](/graph/api/resources/group?view=graph-rest-1.0), retornam um subconjunto limitado padrão de propriedades em leituras. Para esses recursos, você deve usar `$select` para retornar propriedades fora do conjunto padrão.  
 
 ## <a name="skip-parameter"></a>parâmetro skip
 
-Use the `$skip` query parameter to set the number of items to skip at the start of a collection.
-For example, the following request returns events for the user sorted by date created, starting with the 21st event in the collection:
+Use o parâmetro de consulta `$skip` para definir o número de itens para ignorar no início de um conjunto. Por exemplo, a solicitação a seguir retorna eventos para o usuário classificadas por data de criação, começando com o evento 21 no conjunto:
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
@@ -402,7 +401,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 ## <a name="skiptoken-parameter"></a>parâmetro skipToken
 
-Some requests return multiple pages of data either due to server-side paging or due to the use of the [`$top`](#top-parameter) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result. The `$skiptoken` parameter contains an opaque token that references the next page of results and is returned in the URL provided in the `@odata.nextLink` property in the response. To learn more, see [Paging](./paging.md).
+Algumas solicitações retornam várias páginas de dados devido à paginação do lado do servidor ou devido ao uso do parâmetro [`$top`](#top-parameter) para limitar o tamanho da página da resposta. Muitas APIs do Microsoft Graph usam o parâmetro de consulta `skipToken` para fazer referência a páginas subsequentes do resultado. O parâmetro `$skiptoken` contém um token opaco que faz referência à próxima página de resultados e é retornado na URL fornecida na propriedade `@odata.nextLink` na resposta. Para saber mais, confira [paginação](./paging.md).
 
 
 ## <a name="top-parameter"></a>parâmetro top
@@ -424,7 +423,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 
 ## <a name="error-handling-for-query-parameters"></a>Tratamento de erro para parâmetros de consulta
 
-Some requests will return an error message if a specified query parameter is not supported. For example, you cannot use `$expand` on the `user/photo` relationship. 
+Algumas solicitações retornarão uma mensagem de erro se não houver suporte para um parâmetro de consulta especificado. Por exemplo, você não pode usar `$expand` na relação `user/photo`. 
 
 ```http
 https://graph.microsoft.com/beta/me?$expand=photo
