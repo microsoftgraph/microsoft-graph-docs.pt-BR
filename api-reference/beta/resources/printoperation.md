@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 7b8f147106c6914fe8fbbb404ca0c78210c02026
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 77a00aef382142046c44465a88909b90f966aa7e
+ms.sourcegitcommit: 90aaba4e965945cb6550cf625cbc03287f39e531
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007145"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148582"
 ---
 # <a name="printoperation-resource-type"></a>tipo de recurso de multioperação
 
@@ -29,7 +29,7 @@ Representa uma operação de impressão universal de execução longa. Classe ba
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|O identificador da operação. Somente leitura.|
+|id|Cadeia de caracteres|O identificador da operação. Somente leitura.|
 |status|[printOperationStatus](printoperationstatus.md)|O status da operação. Somente leitura.|
 |createdDateTime|DateTimeOffset|O DateTimeOffset quando a operação foi criada. Somente leitura.|
 
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
     "status": {"@odata.type": "microsoft.graph.printOperationStatus"},
     "createdDateTime": "2020-06-15T19:54:14.853Z"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
