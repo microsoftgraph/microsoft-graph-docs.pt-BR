@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 12ae7bf122d23c6460dcbc253b1fe743768e49ba
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 96592654fffb3111a398178d807da702c398e0d2
+ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123712"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45165111"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -62,13 +62,19 @@ Atualmente, os seguintes recursos oferecem atualmente um cabeçalho `Retry-After
 - [Item externo (Pesquisa da Microsoft)](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [Relatório](/graph/api/resources/report)
 - [Assinatura](/graph/api/resources/subscription)
+- [Solicitação de avaliação de ameaças](/graph/api/resources/threatassessmentrequest)
+- [Solicitação de avaliação de email](/graph/api/resources/mailassessmentrequest)
+- [Solicitação de avaliação de arquivo de email](/graph/api/resources/emailfileassessmentrequest)
+- [Solicitação de avaliação de arquivo](/graph/api/resources/fileassessmentrequest)
+- [Solicitação de avaliação de URL](/graph/api/resources/urlassessmentrequest)
+- [Resultado da avaliação de ameaças](/graph/api/resources/threatassessmentresult)
 - [Tendência](/graph/api/resources/insights-trending)
 - [Percepção utilizada](/graph/api/resources/insights-used)
 - [Percepção compartilhada](/graph/api/resources/insights-shared)
 - [Configurações do usuário](/graph/api/resources/usersettings)
 - [Convite](/graph/api/resources/invitation)
 
-Para ter uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação](https://docs.microsoft.com/azure/architecture/patterns/throttling).
+Para uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
 > [!NOTE]
 > Se nenhum cabeçalho `Retry-After` for fornecido pela resposta, recomendamos implementar uma política de repetição exponencial de retirada. Você também pode implementar [padrões mais avançados](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency) ao criar aplicativos em grande escala.
@@ -150,6 +156,13 @@ Os recursos a seguir são fornecidos pelo serviço do Outlook.
 | [Informações sobre a reunião ](/graph/api/resources/meetinginfo)   | 2000 reuniões/usuário a cada mês |
 | [Presença](/graph/api/resources/presence) (pré-visualização)   | 2 rps |
 
+### <a name="project-rome-service-limits"></a>Limites de serviços do Project Rome
+
+| Tipo de solicitação | Limite por usuário a todos os aplicativos | | OBTENHA          | 400 solicitações a cada 5 minutos e 12000 solicitações por dia | | POSTAR, COLOCAR, CORRIGIR, EXCLUIR | 100 solicitações a cada 5 minutos e 8000 solicitações por dia |
+
+Os limites anteriores se aplicam aos seguintes recursos:  
+activityHistoryItem, userActivity
+
 ### <a name="microsoft-teams-service-limits"></a>Limites do serviço do Microsoft Teams
 
 Os limites são expressos como solicitações por segundo (rps).
@@ -176,6 +189,17 @@ Um máximo 3.000 mensagens por aplicativo por dia podem ser enviadas para um det
 
 Confira também [limites do Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) e [requisitos de votação](/graph/api/resources/teams-api-overview#polling-requirements).
 
+### <a name="information-protection"></a>Proteção de informações
+
+Os seguintes limites se aplicam a qualquer solicitação no `/informationProtection`.
+
+| Operation                 | Limite por inquilino                                            | Limite por recurso (email, URL, arquivo)                |
+|---------------------------|-------------------------------------------------------------|------------------------------------------------------|
+| POST                      | 150 solicitações a cada 15 minutos e 10000 solicitações a cada 24 horas | 1 solicitação a cada 15 minutos e 3 solicitações a cada 24 horas |
+
+Os limites anteriores se aplicam aos seguintes recursos:  
+threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFileAssessmentRequest, fileAssessmentRequest, urlAssessmentRequest.
+
 ### <a name="identity-protection-and-conditional-access-service-limits"></a>Proteção da identidade e limites do serviço de acesso condicional
 
 | Tipo de solicitação | Limite por inquilino |
@@ -186,6 +210,7 @@ Os limites anteriores aplicam-se aos seguintes recursos:
 Detecçãoderisco, Usuárioderisco, HistóricodeItemdeUsuárioderisco, NomedoLocal, paísNomedoLocal, ipNomedoLocal, PolíticadeAcessoCondicional.
 
 > **Nota:** no momento, os recursos listados acima não retornam um `Retry-After` cabeçalho sobre as `429 Too Many Requests` respostas.
+
 ### <a name="insights-service-limits"></a>Percepção dos limites de serviço
 
 Os seguintes limites se aplicam a qualquer pedido em `me/insights` ou `users/{id}/insights`.
@@ -213,6 +238,14 @@ Os seguintes limites se aplicam a qualquer solicitação no `/invitations`.
 | Operation                 | Limite por inquilino             |
 |---------------------------|------------------------------|
 | Qualquer operação             | 150 solicitações a cada 5 segundos   |
+
+### <a name="open-and-schema-extensions-service-limits"></a>Limitações de serviços à extensões de esquema e abertas
+
+| Tipo de solicitação | Limitar por aplicativo por locatário |
+| ------------ | ------------------------ |
+| Qualquer          | 455 solicitações a cada 10 segundos |
+
+Os limites acima se aplicam aos seguintes recursos: openTypeExtension, schemaExtension, administrativeUnit, contato, dispositivo, evento, grupo, mensagem, organização, postagem e usuário.
 
 <!-- { "blockType": "throttlinggenstart" } -->
 ### <a name="education-service-limits"></a>Limites do serviço de Educação

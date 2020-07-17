@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 123ad42580349fecb5783f1ef2374cf5562824cf
-ms.sourcegitcommit: 90aaba4e965945cb6550cf625cbc03287f39e531
+ms.openlocfilehash: d084d0341df5085c035e45ef24db2b5c8e37ff1f
+ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148561"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45165090"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -88,6 +88,13 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 |:----------------|:------------|:-----------------------------------------|
 | Adição | beta | A propriedade **userRiskLevels** foi adicionada à entidade [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta). |
 | Adição | beta | A concessão de controle **passwordChange** foi adicionada à entidade [conditionalaccessgrantcontrols](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta). |
+
+### <a name="workbooks-and-charts-excel"></a>Pastas de trabalho e gráficos (Excel)
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Adição|beta|Adicionado o relacionamento [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) à entidade [Pasta de Trabalho](/graph/api/resources/workbook?view=graph-rest-beta). |
+|Adição|beta|Adicionado o método [Get workbookOperation](/graph/api/resources/workbookoperation-get?view=graph-rest-beta) à entidade [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta). |
+
 
 ## <a name="june-2020"></a>Junho de 2020
 
