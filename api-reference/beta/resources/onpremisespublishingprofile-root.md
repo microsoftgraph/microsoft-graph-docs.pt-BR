@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3774ceb0a2e03b8c625bf317467c670c93596ac9
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 34ebb76c62fbee2de25e8b5377c630e791937cee
+ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556237"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45165069"
 ---
 # <a name="on-premises-publishing-profiles"></a>Perfis de publicação no local
 
@@ -22,6 +22,8 @@ Vários serviços do Azure (por exemplo, a autenticação de [passagem](https://
 Os [grupos de agentes](onpremisesagentgroup.md) (ou grupos de [conectores](connectorgroup.md) para o proxy de aplicativo) permitem que um administrador de locatários atribua agentes específicos para atender a recursos específicos publicados no local. Os administradores de locatários podem agrupar vários agentes e, em seguida, atribuir cada recurso publicado a um grupo. Todo o conjunto de entidades do mesmo tipo de publicação local é representado pelo [onPremisesPublishingProfile](onpremisespublishingprofile.md).
 
 Um administrador de locatários pode configurar para cada **onPremisesPublishingProfile** a [janela de tempo](updatewindow.md) durante a qual os agentes podem receber atualizações ou adiar atualizações para os agentes. A [configuração de atualizador](hybridagentupdaterconfiguration.md) especificada para um **onPremisesPublishingProfile** é aplicável a todos os agentes dentro desse **onPremisesPublishingProfile**.
+
+Para obter um tutorial sobre a configuração do proxy de aplicativo, consulte [automatizar a configuração do proxy de aplicativo usando a API do Microsoft Graph](https://docs.microsoft.com/graph/application-proxy-configure-api).
 
 ## <a name="see-also"></a>Confira também
 

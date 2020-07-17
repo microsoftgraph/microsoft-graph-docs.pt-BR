@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 47a0a9cc517bad5ad005a23b1de94a38992da44e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 34523b5ff0e358344b8c3c5b695e89a9bdddd7a2
+ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519418"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45165104"
 ---
 # <a name="workbook-resource-type"></a>tipo de recurso Workbook
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Contém objetos Workbook relacionados, como planilhas, tabelas, intervalos e assim por diante.
 
@@ -36,6 +36,7 @@ Nenhum.
 |tables|coleção [workbooktable](workbooktable.md) |Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
 |worksheets|coleção [workbookWorksheet](workbookworksheet.md) |Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.|
 |workbbookApplication|[workbookApplication](workbookapplication.md) |Representa o workbookApplication do Excel que gerencia a pasta de trabalho.|
+|operations|coleção [workbookOperation](workbookoperation.md)|O status das operações da pasta de trabalho. Não há suporte para a obtenção de uma coleção Operation, mas você pode obter o status de uma operação de execução longa se o `Location` cabeçalho for retornado na resposta. Somente leitura. Anulável.|
 
 ## <a name="functions"></a>Funções
 
