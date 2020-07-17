@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 68ceeac9baedbb6ef7d8a739b0cf0a900b9434cf
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 3788478ff71ae103b912c5dd2a856c8fb85d23dc
+ms.sourcegitcommit: 90aaba4e965945cb6550cf625cbc03287f39e531
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897712"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148505"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -85,22 +85,22 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 Use o parâmetro de consulta `$count` para incluir uma contagem do número total de itens em um conjunto, juntamente com a página de valores de dados retornados do Microsoft Graph. 
 
-Por exemplo, a solicitação a seguir retorna a coleção de **contatos** do usuário atual e o número de itens na coleção **Contact** na `@odata.count` propriedade.
+Por exemplo, a solicitação a seguir retornará tanto o conjunto **contato** do usuário atual quanto o número de itens no conjunto **contato** na propriedade `@odata.count`.
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
-[Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
+[Experimente o Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
-O `$count` parâmetro de consulta é suportado para essas coleções de recursos e suas relações que derivam de [directoryobject](/graph/api/resources/directoryobject?view=graph-rest-beta):
-- [aplicativo](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
+O parâmetro de consulta `$count` é compatível com esses conjuntos de recursos e suas relações, derivadas do [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
+- [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
 - [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
 - [device](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
 - [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)
 - [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta)
-- [usuários](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta).
+- [users](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta).
 
 ## <a name="expand-parameter"></a>parâmetro expand
 
@@ -130,9 +130,9 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 ## <a name="filter-parameter"></a>parâmetro filter
 
-Use o parâmetro de consulta `$filter` para recuperar apenas um subconjunto de um conjunto. O `$filter` parâmetro de consulta também pode ser usado para recuperar relações como membros, memberOf, transitiveMembers e transitiveMemberOf. Por exemplo, obtenha todos os grupos de segurança dos quais sou membro.
+Use o parâmetro de consulta `$filter` para recuperar apenas um subconjunto de um conjunto. O parâmetro de consulta `$filter` também pode ser usado para recuperar relações como members, memberOf, transitiveMembers e transitiveMemberOf. Por exemplo, obter todos os grupos de segurança dos quais sou membro.
 
-O exemplo a seguir pode ser usado para localizar usuários cujo nome de exibição comece com a letra "J", use `startswith` .
+O exemplo a seguir pode ser usado para encontrar usuários cujo nome de exibição começa com a letra “J’: use `startswith`.
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
@@ -155,7 +155,7 @@ O operador de cadeia de caracteres `startswith` geralmente é suportado. O opera
 
 > **Observação:** é necessário [especificar propriedades em determinadas maneiras](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query) ao usar `$filter` e `$orderby` na mesma consulta para obter mensagens.
 
-Para alguns exemplos de uso, consulte a tabela a seguir. Para obter mais detalhes sobre a sintaxe `$filter`, confira o [protocolo OData][odata-filter].  
+Para ver alguns exemplos de uso, consulte a tabela abaixo. Para obter mais detalhes sobre a sintaxe `$filter`, confira o [protocolo OData][odata-filter].  
 
 A tabela a seguir mostra alguns exemplos que usam o parâmetro de consulta `$filter`.
 
@@ -168,8 +168,8 @@ A tabela a seguir mostra alguns exemplos que usam o parâmetro de consulta `$fil
 | Obter todos os emails de um endereço específico recebidos pelo usuário conectado. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
 | Obter todos os emails recebidos pelo usuário conectado em abril de 2017. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
 | Obter todos os emails não lidos na caixa de entrada do usuário conectado. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
-| Listar todos os grupos da Microsoft 365 em uma organização. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
-| Use o elenco do OData para obter uma associação transitiva em grupos com um nome de exibição que comece com ' a ', incluindo uma contagem de objetos retornados. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
+| Listar todos os grupos do Microsoft 365 em uma organização. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
+| Use a conversão OData para obter uma participação transitória em grupos com um nome de exibição que comece com “a”, incluindo o número de objetos retornados. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
 
 > **Observação:** Os seguintes operadores `$filter` não têm suporte para recursos do Azure AD: `ne`, `gt`, `ge`, `lt`, `le` e `not`. O operador de cadeia de caracteres `contains` atualmente não tem suporte em nenhum recurso do Microsoft Graph.
 
@@ -234,7 +234,7 @@ Use o parâmetro de consulta `$search` para restringir os resultados de uma soli
 
 ### <a name="using-search-on-message-collections"></a>Usando $search em conjuntos de mensagens
 
-Você pode pesquisar mensagens com base em um valor nas propriedades de mensagens específicas. Os resultados da pesquisa são classificados pela data e hora em que a mensagem foi enviada. Uma `$search` solicitação retorna até 250 resultados.
+Você pode pesquisar mensagens com base em um valor nas propriedades de mensagens específicas. Os resultados da pesquisa são classificados pela data e hora em que a mensagem foi enviada. Uma solicitação de `$search` retorna até 250 resultados.
 
 Se você realizar uma pesquisa em mensagens e especificar apenas um valor sem as propriedades de mensagens específicas, a pesquisa será realizada nas propriedades de pesquisa padrão **from**, **subject** e **body**.
 
@@ -246,7 +246,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 [Experimentar no Explorador do Graph][search-example]
 
-Como alternativa, você pode pesquisar mensagens especificando os nomes de propriedade da mensagem na tabela a seguir, que são reconhecidos pela sintaxe da Linguagem de Consulta de Palavra-chave (KQL). Esses nomes de propriedades correspondem às propriedades definidas na entidade **mensagem** do Microsoft Graph. O Outlook e outros aplicativos do Microsoft 365, como o suporte a sintaxe KQL do SharePoint, fornecem a conveniência de um domínio de descoberta comum para seus repositórios de dados.
+Como alternativa, você pode pesquisar mensagens especificando os nomes de propriedade da mensagem na tabela a seguir, que são reconhecidos pela sintaxe da Linguagem de Consulta de Palavra-chave (KQL). Esses nomes de propriedades correspondem às propriedades definidas na entidade **mensagem** do Microsoft Graph. O Outlook e outros aplicativos do Microsoft 365 como o SharePoint são compatíveis com a sintaxe KQL, proporcionando a conveniência de um domínio de descoberta comum para seus repositórios de dados.
 
 
 | Propriedades de emails pesquisáveis                | Descrição | Exemplo 
@@ -256,7 +256,7 @@ Como alternativa, você pode pesquisar mensagens especificando os nomes de propr
 | **body**           | O corpo de uma mensagem de email.|[`me/messages?$search="body:excitement"`][search-body-example]
 | **cc**           | O campo **Cc** de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
 | **from**           | O remetente de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
-| **hasAttachment** | Verdadeiro se uma mensagem de email contiver um anexo que não seja um anexo embutido, caso contrário, falso. |[`me/messages?$search="hasAttachments=true"`][search-from-example]
+| **hasAttachment** | Verdadeiro se uma mensagem de email contiver um anexo que não seja um anexo embutido, caso contrário, falso. |[`me/messages?$search="hasAttachments:true"`][search-from-example]
 | **importance**           | A prioridade de uma mensagem de email, que um remetente pode especificar ao enviar uma mensagem. Os valores possíveis são `low`, `medium` ou `high`.|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
 | **kind**           | O tipo de mensagem. Os valores possíveis são `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks` ou `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
 | **participants**           | Os campos **de**, **para**, **Cc** e **Cco** de uma mensagem de email, especificados como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="participants:danas"`][search-part-example]
@@ -278,7 +278,7 @@ Para saber mais sobre as propriedades de email pesquisáveis, KQL como a sintaxe
 
 ### <a name="using-search-on-person-collections"></a>Usando $search em conjuntos de pessoas
 
-Você pode usar a API de pessoas do Microsoft Graph para recuperar as pessoas mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. A API de pessoas oferece suporte ao `$search` parâmetro de consulta. Uma `$search` solicitação retorna até 250 resultados.
+Você pode usar a API de Pessoas do Microsoft Graph para recuperar as pessoas mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. A API de Pessoas é compatível com o parâmetro de consulta `$search`. Uma solicitação de `$search` retorna até 250 resultados.
 
 As pesquisas de pessoas ocorrem nas propriedades **displayName** e **emailAddress** do recurso [person](/graph/api/resources/person?view=graph-rest-1.0).
 
@@ -337,40 +337,40 @@ Content-type: application/json
 
 Saiba mais sobre a API de Pessoas em [Obter informações sobre pessoas relevantes](./people-example.md#search-people).  
 
-### <a name="using-search-on-directory-object-collections"></a>Usando $search em coleções de objetos de diretório
+### <a name="using-search-on-directory-object-collections"></a>Como usar $search nos conjuntos de objetos do diretório
 
-Você pode usar o `$search` parâmetro de consulta para restringir os resultados com base em um critério de pesquisa, como procurar palavras em cadeias de caracteres delimitadas por espaços, capitalização e tipos de caracteres (números e caracteres especiais). O suporte de pesquisa com token funciona somente nos campos displayName e Description. Qualquer campo pode ser inserido `$search` , campos diferentes de **DisplayName** e **Description** assumem o comportamento de StartsWith como padrão `$filter` . Por exemplo:
+Você pode usar o parâmetro de consulta `$search` para restringir os resultados com base em um critério de pesquisa, como procurar palavras em strings de busca delimitadas por espaços, letras maiúsculas ou minúsculas e tipos de caracteres (números e caracteres especiais). O suporte tokenizado à pesquisa funciona apenas nos campos displayName e descrição. Qualquer campo pode ser colocado no `$search`. Os padrão para os outros campos que não sejam **displayName** e **descrição** é o comportamento de `$filter` “startswith”. Por exemplo:
 
 `https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
  
-Isso procura todos os grupos com nomes de exibição parecidos com "OneVideo". `$search`também pode ser usado em conjunto com `$filter` o. Por exemplo: 
+procurar todos os grupos com nomes de exibição que se pareçam com "OneVideo". O parâmetro `$search` também pode ser usado junto com o `$filter`. Por exemplo: 
  
 `https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"` 
  
-Isso procura todos os grupos habilitados para email com nomes de exibição que se pareçam com "OneVideo". Os resultados são restritos com base em uma junção lógica (um "e") do `$filter` e a consulta inteira no `$search` . O texto de pesquisa é indexado com base no uso de maiúsculas e minúsculas, mas as correspondências são realizadas de forma não diferencia maiúsculas de minúsculas. Por exemplo, "OneVideo" seria dividido em dois tokens de entrada "um" e "vídeo", mas corresponde as propriedades em não sensíveis a maiúsculas e minúsculas. 
+procurar todos os grupos habilitados para email com nomes de exibição que se pareçam com "OneVideo". Os resultados são restringidos com base em uma conjunção lógica (um “AND”) do parâmetro `$filter` e na consulta inteira no parâmetro `$search`. O texto da pesquisa é tokenizado com base nas letras maiúsculas ou minúsculas, mas as equiparações são executadas de maneira insensível ao fato de a letra ser maiúscula ou minúscula. Por exemplo, o termo “OneVideo” seria dividido em dois tokens de entrada, “one” e “video”, mas equiparado a propriedades insensíveis ao fato de a letra ser maiúscula ou minúscula. 
  
  
-A sintaxe da pesquisa segue estas regras: 
+A sintaxe da pesquisa segue as seguintes regras: 
  
-- Formato genérico: $search = "Clause1" [e | OU] "[clauseX]". 
-- Há suporte para qualquer número de cláusulas. Também há suporte para parênteses para precedência. 
-- A sintaxe de cada cláusula é <property> : <text to search> . 
-- O nome da propriedade deve ser especificado em cláusula. Qualquer propriedade que possa ser usada em `$filter` também pode ser usada dentro `$search` . Dependendo da propriedade, o comportamento de pesquisa será "Search" ou "StartsWith", se a pesquisa não for suportada na propriedade. 
-- A parte de cláusula inteira deve ser colocada dentro de aspas duplas.  
-- Operador lógico ' e ' ' ou ' devem ser colocados fora de aspas duplas. Eles devem estar em maiúsculas. 
-- Como a parte inteira da cláusula precisa ser colocada dentro de aspas duplas, se <text to search> contiver aspas duplas e barra invertida, ela precisará ser escapada por barra invertida. Nenhum outro caractere precisa ser escapado. 
+- Formato genérico: $search="clause1" [AND | OR]  "[clauseX]". 
+- O número de cláusulas (clause) não é limitado. O uso de parênteses para a precedência também é suportado. 
+- A sintaxe para cada cláusula é <property>:<text to search>. 
+- O nome da propriedade deve ser especificado na cláusula. Qualquer propriedade que possa ser usada em `$filter` também pode ser usada dentro de `$search`. Dependendo da propriedade, o comportamento da pesquisa será "search" ou, se “search” não for suportado na propriedade, "startswith". 
+- Todas as partes de cláusula devem ser colocadas entre aspas duplas.  
+- Os operadores lógicos “AND” e “OR” devem ser colocados fora das aspas duplas. Devem sempre ser grafados em maiúsculas. 
+- Considerando-se que todas as partes de cláusula precisam ser colocadas entre aspas duplas, se <text to search> contiver aspas duplas e barra invertida, as barras invertidas deverão ser usadas para escapar as aspas. Não é preciso escapar nenhum outro caractere. 
 
-A tabela a seguir mostra alguns exemplos. 
+A tabela abaixo mostra alguns exemplos. 
  
 
 | Classe de objeto | Descrição | Exemplo |
 | ------------ | ----------- | ------- |
-| Usuário | Nome de exibição do catálogo de endereços do usuário. |  `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
-| Usuário | Nome de exibição ou email do catálogo de endereços do usuário. | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
-| Group | Nome de exibição do catálogo de endereços ou descrição do grupo. | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
-| Group | Nome de exibição do catálogo de endereços em um grupo habilitado para email. | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
+| Usuário | O caderno de endereços exibe o nome do usuário. |  `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
+| Usuário | O caderno de endereços exibe o nome ou o email do usuário. | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
+| Grupo | O caderno de endereços exibe o nome ou a descrição de um grupo. | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
+| Grupo | O caderno de endereços exibe o nome em um grupo habilitado para email. | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
 
-Ambas as entradas de cadeia de caracteres fornecidas no `$search` , bem como as propriedades pesquisáveis indicadas acima, são divididas em partes por espaços, com capitalização diferente e tipos de caracteres (números e caracteres especiais).
+Ambas as entradas de string fornecidas em `$search`, assim como as propriedades pesquisáveis indicadas acima, são divididas em partes por meio de espaços, da variação entre letras maiúsculas e minúsculas e de tipos de caracteres (números e caracteres especiais).
 
 ## <a name="select-parameter"></a>parâmetro select
 
