@@ -7,7 +7,7 @@ ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 6b333350b335e431808caa74f65dc1f61601cddb
 ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "45007138"
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Selecione um usuário e provisione a conta sob demanda.
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -40,8 +40,8 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizat
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
 |:---|:---|
-|Autorização|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+|Autorização|{token} de portador. Obrigatório.|
+|Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.
