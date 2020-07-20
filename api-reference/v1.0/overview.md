@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 75672eedd4b1693b31058de6531c470db548a033
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 83f868f9223f2837d1a4818cf227b94573db3480
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897929"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183999"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Referência da API REST do Microsoft Graph v1.0
 
@@ -36,11 +36,11 @@ Vários desses serviços são projetados para permitir cenários ricos em torno 
 8. Obter a última projeção de vendas de um [gráfico](./resources/chart.md) em um arquivo do Excel no OneDrive for Business de Lisa.
 9. [Encontrar as tarefas atribuídas a Lisa no Planner](./api/planneruser-list-tasks.md).
 
-### <a name="microsoft-365-group-use-cases-in-v10"></a>Casos de uso do Microsoft 365 Group em v 1.0
+### <a name="microsoft-365-group-use-cases-in-v10"></a>Casos de uso de um grupo do Microsoft 365 na v1.0
 
-1. Execute um relatório nos grupos do Microsoft 365 em uma organização e identifique o grupo com a maior parte da [comunicação entre os membros do grupo](./api/reportroot-getoffice365groupsactivitycounts.md).
-2. [Encontre os planos deste grupo do Microsoft 365](./api/plannergroup-list-plans.md)e a [atribuição de tarefas](./resources/plannerassignments.md) nesse plano.
-3. [Inicie uma nova conversa](./api/group-post-conversations.md) no grupo Microsoft 365 para determinar se os membros desejam [criar outro grupo](./api/group-post-groups.md) para compartilhar a carga de trabalho.
+1. Emitir um relatório sobre grupos do Microsoft 365 em uma organização e identificar o grupo com mais [comunicação entre os membros do grupo](./api/reportroot-getoffice365groupsactivitycounts.md).
+2. [Localizar os planos desse grupo do Microsoft 365](./api/plannergroup-list-plans.md) e a [atribuição de tarefas](./resources/plannerassignments.md) nesse plano.
+3. [Iniciar uma nova conversa](./api/group-post-conversations.md) no grupo do Microsoft 365 para determinar se os membros desejam [criar](./api/group-post-groups.md) outro grupo para compartilhar a carga de trabalho.
 4. [Obter o bloco de anotações padrão](./api/notebook-get.md) para o grupo e [criar uma página](./api/section-post-pages.md) para anotar o resultado da investigação.
 
 ## <a name="other-api-versions"></a>Outras versões da API
@@ -54,14 +54,14 @@ Encontre mais informações em [Suporte e controle de versão](/graph/versioning
 
 As solicitações da API do Microsoft Graph para o ponto de extremidade v1.0 usam o seguinte padrão:
 
-```
+```http
 https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 ```
 
 Para detalhes, consulte [Usando a API do Microsoft Graph](/graph/use-the-api).
 
 ## <a name="whats-new"></a>Novidades
-Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) no ponto de extremidade v 1.0.
+Saiba mais sobre [os recursos e atualizações mais recentes](/graph/whats-new-overview) no ponto de extremidade v1.0.
 
 ## <a name="connect-with-us"></a>Fale conosco
 
