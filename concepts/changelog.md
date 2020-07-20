@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d084d0341df5085c035e45ef24db2b5c8e37ff1f
-ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
+ms.openlocfilehash: 666f8171740b96d6b94c4cde596e5a723c3a1161
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45165090"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183768"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,11 +18,19 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 ## <a name="july-2020"></a>Julho de 2020
 
-### <a name="change-notifications"></a>Alterar notificações
+### <a name="cloud-communications"></a>Comunicações na nuvem
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada a operação [Atualização de onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta) para atualizações de reunião.|
+| Adição | Beta | O recurso de [presença](/graph/api/resources/presence) agora é compatível com [alterar notificações](/graph/webhooks). |
+
+
+### <a name="change-notifications"></a>Notificações de alterações
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Remoção | Beta e v1.0 | Removida a propriedade **sequenceNumber** introduzida incorretamente do tipo [changeNotification](/graph/api/resources/changenotification).|
-| Adição | Beta | Adiciona [presença](/api/resources/presence) (visualização) a recursos suportados para [as notificações de alteração](/graph/webhooks). |
+| Adição | Beta | Adiciona [presence](/graph/api/resources/presence) a recursos suportados para [ notificações de alteração](/graph/webhooks). |
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 
@@ -78,18 +86,19 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionadas as configurações de **propriedade de navegação para a** entidade da [organização](/graph/api/resources/organization?view=graph-rest-beta). |
 | Adição | beta | Adicionada a entidade [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta).  |
-| Adição | beta | Adicionada a propriedade de navegação **profileCardProperties** à entidade **organizationSettings**. |
-| Adição | beta | Adicionada a entidade **profileCardProperty** e as seguintes operações: <br/> [Listar](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Criar](/graph/api/organizationsettings-post-profilecardproperties) <br/> Entidade [Obter profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta). <br/> [Atualizar profileCardProperty](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Excluir](/graph/api/profilecardproperty-delete) |
-| Adição | Beta e v1.0 | As seguintes operações foram adicionadas aos[dispositivos](/graph/api/resources/device): <br/> [Excluir proprietário registrado](/graph/api/delete-registeredowners) <br/> [Excluir usuário registrado](/graph/api/delete-registeredusers)|
+| Adição | Beta e v1.0 | As seguintes operações foram adicionadas aos[dispositivos](/graph/api/resources/device): <br/> [Excluir proprietário registrado](/graph/api/device-delete-registeredowners) <br/> [Excluir usuário registrado](/graph/api/delete-registeredusers)|
+| Adição | v1.0 | Adicionados os **assignedLabels**, **expirationDateTime**, **membershipRule**, **membershipRuleProcessingState**, **preferredLanguage**e propriedades de **theme** para a entidade [group](/graph/api/resources/group?view=graph-rest-v1.0). |
+| Adição | beta | Adicionada a propriedade **infoCatalogs** à entidade [group](/graph/api/resources/group?view=graph-rest-beta) e à entidade [user](/graph/api/resources/user?view=graph-rest-beta). |
+| Adição | beta | Adicionada a propriedade **userRiskLevels** à entidade [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta). |
+| Adição | beta | A concessão de controle **passwordChange** foi adicionada à entidade [conditionalAccessGrantControls](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta). |
 
-### <a name="identity-and-access-azure-ad--conditional-access"></a>Identidade e acesso (Azure AD) | Acesso condicional
+### <a name="people-and-workplace-intelligence--profile-card-customization"></a>Inteligência de pessoas e local de trabalho | Personalização de cartão de perfil
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada a propriedade de navegação **profileCardProperties** à entidade [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta). |
+| Adição | beta | Adicionada a entidade **profileCardProperty** e as seguintes operações: <br/> [Listar](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [Atualizar](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete) |
 
-| **Tipo de alteração** | **Versão** | **Descrição**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Adição | beta | A propriedade **userRiskLevels** foi adicionada à entidade [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta). |
-| Adição | beta | A concessão de controle **passwordChange** foi adicionada à entidade [conditionalaccessgrantcontrols](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta). |
-
-### <a name="workbooks-and-charts-excel"></a>Pastas de trabalho e gráficos (Excel)
+### <a name="workbooks-and-charts"></a>Pastas de trabalho e gráficos
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |Adição|beta|Adicionado o relacionamento [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) à entidade [Pasta de Trabalho](/graph/api/resources/workbook?view=graph-rest-beta). |
