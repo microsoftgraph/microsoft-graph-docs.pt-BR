@@ -5,18 +5,18 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 164cb6e8a1fe77db90297607e232d8cfb73d12cb
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: bb8f68f53453662d8ab0707138c011548379a4e6
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082281"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183964"
 ---
 # <a name="call-updaterecordingstatus"></a>Call: updateRecordingStatus
 
 Namespace: microsoft.graph
 
-Atualize o status de gravação do aplicativo associado a uma chamada.
+Atualize o status de gravação do aplicativo associado a uma chamada. Isso requer o uso da solução de [gravação baseada em políticas do teams](https://docs.microsoft.com/MicrosoftTeams/teams-recording-policy) .
 
 > **Restrição adicional**: você não pode usar a API de acesso à mídia para registrar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa, ou dados derivados desse conteúdo de mídia ("Record" ou "Recording"), sem primeiro chamar a API **updateRecordingStatus** para indicar que a gravação começou e receber uma resposta de êxito dessa API. Se o aplicativo começar a gravar qualquer reunião, ele deverá finalizar a gravação antes de chamar a API **updateRecordingStatus** para indicar que a gravação foi concluída.
 
@@ -47,7 +47,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro       | Tipo    | Descrição                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
 | clientContext   | String  | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                                 |
-| status          | String  | O status de gravação. Os valores possíveis são `notRecording`: `recording`,, `failed`ou.  |
+| status          | String  | O status de gravação. Os valores possíveis são: `notRecording` , `recording` , ou `failed` .  |
 
 ## <a name="response"></a>Resposta
 Este método retorna um `200 OK` código de resposta e um cabeçalho de local com um URI para o objeto [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) criado para essa solicitação.
