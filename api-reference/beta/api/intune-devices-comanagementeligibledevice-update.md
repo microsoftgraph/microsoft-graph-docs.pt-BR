@@ -7,7 +7,7 @@ ms.prod: Intune
 doc_type: apiPageType
 ms.openlocfilehash: cfda57d0c94d94d771010eb4d981581347e9d391
 ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "44792517"
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 Atualiza as propriedades de um objeto [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -113,7 +113,7 @@ Content-length: 714
 ```
 
 ### <a name="response"></a>Resposta
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

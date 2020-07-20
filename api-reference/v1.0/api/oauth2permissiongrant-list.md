@@ -7,7 +7,7 @@ ms.prod: microsoft-identity-platform
 author: psignoret
 ms.openlocfilehash: 6b06669a2eccc463ac04defc180835e91c687a3d
 ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/23/2020
 ms.locfileid: "44845873"
@@ -20,7 +20,7 @@ Recupere uma lista de objetos [oAuth2PermissionGrant](../resources/oauth2permiss
 
 ## <a name="permissions"></a>Permissões
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -44,7 +44,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query_paramete
 
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
-| Autorização | Bearer {token}. Required. |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 
 ### <a name="response"></a>Resposta
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

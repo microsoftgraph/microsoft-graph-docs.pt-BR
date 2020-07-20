@@ -7,7 +7,7 @@ ms.prod: Intune
 doc_type: apiPageType
 ms.openlocfilehash: 5d2c9cdc6571339ca38bf4f575d658de1c9cf83c
 ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/16/2020
 ms.locfileid: "44744107"
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Exclui [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -59,7 +59,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/complianceManagementPar
 ```
 
 ### <a name="response"></a>Resposta
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
 HTTP/1.1 204 No Content
 ```

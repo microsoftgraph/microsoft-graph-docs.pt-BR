@@ -7,7 +7,7 @@ ms.prod: settings
 doc_type: apiPageType
 ms.openlocfilehash: 6ff0e617656524e43fafa85a800a3adb99282f70
 ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "44791171"
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Obter as propriedades de um objeto [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) .
 
 ## <a name="permissions"></a>Permissões
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                   |Permissão (de menos para mais privilégios)     |
 |----------------------------------|---------------------------------------------- |
@@ -42,7 +42,7 @@ Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor|
 |:-----------|:------|
-| Autorização  | Bearer {token}. Required.|
+| Autorização  | {token} de portador. Obrigatório.|
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação

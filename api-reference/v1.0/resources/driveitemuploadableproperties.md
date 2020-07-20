@@ -7,7 +7,7 @@ ms.prod: files
 doc_type: resourcePageType
 ms.openlocfilehash: 1f3ef83f36af70aa2efd3cce8d0215d705114e50
 ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/24/2020
 ms.locfileid: "44863870"
@@ -46,8 +46,8 @@ Veja a seguir uma representação JSON do recurso.
 |:-------------|:----------------------------------|:----------------------------------------------------------------------------------------------------|
 |**description**   |String                             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal.             |
 |**Tamanho**      |Int64                              | Fornece um tamanho de arquivo esperado para executar uma verificação de cota antes do carregamento. Somente no OneDrive Personal. |
-|**fileSystemInfo**|[fileSystemInfo](filesysteminfo.md)| File system information on client. Read-write.                                                      |
-|**name**          |String                             | The name of the item (filename and extension). Read-write.                                          |
+|**fileSystemInfo**|[fileSystemInfo](filesysteminfo.md)| Informações do sistema de arquivos no cliente. Leitura e gravação.                                                      |
+|**name**          |String                             | O nome do item (nome do arquivo e extensão). Leitura e gravação.                                          |
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

@@ -7,7 +7,7 @@ ms.prod: search
 doc_type: apiPageType
 ms.openlocfilehash: 0e668c6ee1d571287304e0920a4636c81cd06ca7
 ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "45005135"
@@ -26,7 +26,7 @@ Essa API é fornecida apenas para fins de diagnóstico. Ele não se destina a se
 
 ## <a name="permissions"></a>Permissões
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
@@ -57,7 +57,7 @@ Este método não oferece suporte a parâmetros de consulta opcionais para perso
 
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
-| Autorização | Bearer {token}. Required. |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
