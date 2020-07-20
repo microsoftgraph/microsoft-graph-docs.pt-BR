@@ -7,27 +7,27 @@ ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 6b333350b335e431808caa74f65dc1f61601cddb
 ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "45007138"
 ---
-# <a name="synchronizationjob-provisionondemand"></a><span data-ttu-id="676f0-103">synchronizationJob: provisionOnDemand</span><span class="sxs-lookup"><span data-stu-id="676f0-103">synchronizationJob: provisionOnDemand</span></span>
+# <a name="synchronizationjob-provisionondemand"></a><span data-ttu-id="7caa6-103">synchronizationJob: provisionOnDemand</span><span class="sxs-lookup"><span data-stu-id="7caa6-103">synchronizationJob: provisionOnDemand</span></span>
 
-<span data-ttu-id="676f0-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="676f0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7caa6-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7caa6-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="676f0-105">Selecione um usuário e provisione a conta sob demanda.</span><span class="sxs-lookup"><span data-stu-id="676f0-105">Select a user and provision the account on-demand.</span></span>
+<span data-ttu-id="7caa6-105">Selecione um usuário e provisione a conta sob demanda.</span><span class="sxs-lookup"><span data-stu-id="7caa6-105">Select a user and provision the account on-demand.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="676f0-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="676f0-106">Permissions</span></span>
-<span data-ttu-id="676f0-107">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="676f0-107">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="676f0-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="676f0-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7caa6-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="7caa6-106">Permissions</span></span>
+<span data-ttu-id="7caa6-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7caa6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="676f0-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="676f0-109">Permission type</span></span>                        | <span data-ttu-id="676f0-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="676f0-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7caa6-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7caa6-109">Permission type</span></span>                        | <span data-ttu-id="7caa6-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7caa6-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="676f0-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="676f0-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="676f0-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="676f0-112">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="676f0-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="676f0-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="676f0-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="676f0-114">Not supported.</span></span> |
-|<span data-ttu-id="676f0-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="676f0-115">Application</span></span>                            |<span data-ttu-id="676f0-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="676f0-116">Not supported.</span></span> | 
+|<span data-ttu-id="7caa6-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7caa6-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="7caa6-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7caa6-112">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="7caa6-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7caa6-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="7caa6-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7caa6-114">Not supported.</span></span> |
+|<span data-ttu-id="7caa6-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7caa6-115">Application</span></span>                            |<span data-ttu-id="7caa6-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7caa6-116">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="676f0-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="676f0-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7caa6-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7caa6-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -37,30 +37,30 @@ ms.locfileid: "45007138"
 POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizationJobId}/provisionOnDemand
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="676f0-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="676f0-118">Request headers</span></span>
-|<span data-ttu-id="676f0-119">Nome</span><span class="sxs-lookup"><span data-stu-id="676f0-119">Name</span></span>|<span data-ttu-id="676f0-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="676f0-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7caa6-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7caa6-118">Request headers</span></span>
+|<span data-ttu-id="7caa6-119">Nome</span><span class="sxs-lookup"><span data-stu-id="7caa6-119">Name</span></span>|<span data-ttu-id="7caa6-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="7caa6-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="676f0-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="676f0-121">Authorization</span></span>|<span data-ttu-id="676f0-122">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="676f0-122">Bearer {token}.</span></span> <span data-ttu-id="676f0-123">Required.</span><span class="sxs-lookup"><span data-stu-id="676f0-123">Required.</span></span>|
-|<span data-ttu-id="676f0-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="676f0-124">Content-Type</span></span>|<span data-ttu-id="676f0-125">application/json.</span><span class="sxs-lookup"><span data-stu-id="676f0-125">application/json.</span></span> <span data-ttu-id="676f0-126">Required.</span><span class="sxs-lookup"><span data-stu-id="676f0-126">Required.</span></span>|
+|<span data-ttu-id="7caa6-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="7caa6-121">Authorization</span></span>|<span data-ttu-id="7caa6-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7caa6-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="7caa6-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7caa6-124">Content-Type</span></span>|<span data-ttu-id="7caa6-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7caa6-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="676f0-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="676f0-127">Request body</span></span>
-<span data-ttu-id="676f0-128">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="676f0-128">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7caa6-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7caa6-127">Request body</span></span>
+<span data-ttu-id="7caa6-128">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="7caa6-128">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="676f0-129">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="676f0-129">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="7caa6-129">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="7caa6-129">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="676f0-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="676f0-130">Parameter</span></span>|<span data-ttu-id="676f0-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="676f0-131">Type</span></span>|<span data-ttu-id="676f0-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="676f0-132">Description</span></span>|
+|<span data-ttu-id="7caa6-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="7caa6-130">Parameter</span></span>|<span data-ttu-id="7caa6-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="7caa6-131">Type</span></span>|<span data-ttu-id="7caa6-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="7caa6-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="676f0-133">parameters</span><span class="sxs-lookup"><span data-stu-id="676f0-133">parameters</span></span>|<span data-ttu-id="676f0-134">coleção [synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)</span><span class="sxs-lookup"><span data-stu-id="676f0-134">[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) collection</span></span>|<span data-ttu-id="676f0-135">Representa os objetos que serão provisionados e as regras de sincronização executadas.</span><span class="sxs-lookup"><span data-stu-id="676f0-135">Represents the objects that will be provisioned and the synchronization rules executed.</span></span> <span data-ttu-id="676f0-136">O recurso é usado principalmente para provisionamento sob demanda.</span><span class="sxs-lookup"><span data-stu-id="676f0-136">The resource is primarily used for on-demand provisioning.</span></span> |
+|<span data-ttu-id="7caa6-133">parameters</span><span class="sxs-lookup"><span data-stu-id="7caa6-133">parameters</span></span>|<span data-ttu-id="7caa6-134">coleção [synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)</span><span class="sxs-lookup"><span data-stu-id="7caa6-134">[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) collection</span></span>|<span data-ttu-id="7caa6-135">Representa os objetos que serão provisionados e as regras de sincronização executadas.</span><span class="sxs-lookup"><span data-stu-id="7caa6-135">Represents the objects that will be provisioned and the synchronization rules executed.</span></span> <span data-ttu-id="7caa6-136">O recurso é usado principalmente para provisionamento sob demanda.</span><span class="sxs-lookup"><span data-stu-id="7caa6-136">The resource is primarily used for on-demand provisioning.</span></span> |
 
 
 
-## <a name="response"></a><span data-ttu-id="676f0-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="676f0-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7caa6-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="7caa6-137">Response</span></span>
 
-<span data-ttu-id="676f0-138">Se tiver êxito, este método retornará um `200 OK` código de resposta e um stringKeyStringValuePair.</span><span class="sxs-lookup"><span data-stu-id="676f0-138">If successful, this method returns a `200 OK` response code and a stringKeyStringValuePair.</span></span>
+<span data-ttu-id="7caa6-138">Se tiver êxito, este método retornará um `200 OK` código de resposta e um stringKeyStringValuePair.</span><span class="sxs-lookup"><span data-stu-id="7caa6-138">If successful, this method returns a `200 OK` response code and a stringKeyStringValuePair.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="676f0-139">Exemplos</span><span class="sxs-lookup"><span data-stu-id="676f0-139">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7caa6-139">Exemplos</span><span class="sxs-lookup"><span data-stu-id="7caa6-139">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="676f0-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="676f0-140">Request</span></span>
+### <a name="request"></a><span data-ttu-id="7caa6-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7caa6-140">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_provisionondemand"
@@ -84,8 +84,8 @@ Content-length: 122
 ```
 
 
-### <a name="response"></a><span data-ttu-id="676f0-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="676f0-141">Response</span></span>
-<span data-ttu-id="676f0-142">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="676f0-142">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="7caa6-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="7caa6-141">Response</span></span>
+<span data-ttu-id="7caa6-142">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="7caa6-142">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
