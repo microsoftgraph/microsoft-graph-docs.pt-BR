@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a577d050ae55ec7b99cbceb23f27a6dd4ec2121f
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 036b9c84bda2a30e00206194768c621f127a4d75
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081358"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183670"
 ---
 # <a name="profilecardproperty-resource-type"></a>tipo de recurso profileCardProperty
 
@@ -26,18 +26,18 @@ Para obter mais informações sobre como adicionar propriedades ao cartão de pe
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [Listar](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Leia as propriedades e os relacionamentos de um objeto **profileCardProperty** . |
-| [Criar](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Leia as propriedades e os relacionamentos de um objeto **profileCardProperty** . |
-| [Get](../api/profilecardproperty-get.md) | [profileCardProperty](profilecardproperty.md) | Leia as propriedades e os relacionamentos de um objeto **profileCardProperty** . |
+| [Listar](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Obtenha uma coleção de recursos **profileCardProperty** de uma organização. |
+| [Create](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Criar um novo recurso do **profileCardProperty** para uma organização. |
+| [Get](../api/profilecardproperty-get.md) | [profileCardProperty](profilecardproperty.md) | Leia as propriedades e as relações de um recurso **profileCardProperty** , que contém as personalizações de cartão de perfil que existem em uma organização do Microsoft 365 para um determinado campo. |
 | [Update](../api/profilecardproperty-update.md)               | [profileCardProperty](profilecardproperty.md) | Atualizar um objeto **profileCardProperty** .                               |
-| [Delete](../api/profilecardproperty-delete.md)               | Nenhuma                                          | Excluir um objeto **profileCardProperty** .                               |
+| [Delete](../api/profilecardproperty-delete.md)               | None                                          | Excluir um objeto **profileCardProperty** .                               |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade             | Tipo                                                        | Descrição |
 |:---------------------|:------------------------------------------------------------|:------------|
 |anotações           |coleção [profileCardAnnotation](profilecardannotation.md) | Permite que um administrador defina um rótulo de exibição personalizado para a propriedade Directory e o localize para os usuários em seu locatário.|
-|directoryPropertyName |String                                                       | Identifica um recurso do **profileCardProperty** em operações [Get](../api/profilecardproperty-get.md), [Update](../api/profilecardproperty-update.md)ou [delete](../api/profilecardproperty-delete.md) . Permite que um administrador Surface as propriedades do Azure Active Directory (Azure AD) ocultas no cartão de perfil do Microsoft 365 dentro de seu locatário. Quando presente, o campo do Azure AD mencionado neste campo ficará visível para todos os usuários em seu locatário no painel de contato do cartão de perfil. Os valores permitidos para este campo são:,,,,,,,,,, `UserPrincipalName` `Fax` `StreetAddress` `PostalCode` `StateOrProvince` `Alias` `CustomAttribute1` `CustomAttribute2` `CustomAttribute3` `CustomAttribute4` `CustomAttribute5` `CustomAttribute6` , `CustomAttribute7` , `CustomAttribute8` , `CustomAttribute9` , `CustomAttribute10` , `CustomAttribute11` , `CustomAttribute12` `CustomAttribute13` `CustomAttribute14` `CustomAttribute15` ,,,,,,,. |
+|directoryPropertyName |Cadeia de caracteres                                                       | Identifica um recurso do **profileCardProperty** em operações [Get](../api/profilecardproperty-get.md), [Update](../api/profilecardproperty-update.md)ou [delete](../api/profilecardproperty-delete.md) . Permite que um administrador Surface as propriedades do Azure Active Directory (Azure AD) ocultas no cartão de perfil do Microsoft 365 dentro de seu locatário. Quando presente, o campo do Azure AD mencionado neste campo ficará visível para todos os usuários em seu locatário no painel de contato do cartão de perfil. Os valores permitidos para este campo são:,,,,,,,,,, `UserPrincipalName` `Fax` `StreetAddress` `PostalCode` `StateOrProvince` `Alias` `CustomAttribute1` `CustomAttribute2` `CustomAttribute3` `CustomAttribute4` `CustomAttribute5` `CustomAttribute6` , `CustomAttribute7` , `CustomAttribute8` , `CustomAttribute9` , `CustomAttribute10` , `CustomAttribute11` , `CustomAttribute12` `CustomAttribute13` `CustomAttribute14` `CustomAttribute15` ,,,,,,,. |
 
 ## <a name="relationships"></a>Relações
 

@@ -3,12 +3,12 @@ title: Componente pessoas no Microsoft Graph Toolkit
 description: Você pode usar o `mgt-people` componente da Web para exibir um grupo de pessoas ou contatos usando suas fotos ou iniciais.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: aa51f6d0c459425cdb9a01dbd3a61f5613e58678
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 8e942ad0cca446dc8bf982249a7593b8299fe22e
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682023"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183971"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Componente pessoas no Microsoft Graph Toolkit
 
@@ -89,9 +89,16 @@ Os exemplos a seguir mostram como usar o `person` modelo.
 
 Este componente usa as seguintes APIs e permissões do Microsoft Graph:
 
-| Resource | Permission |
+| Recurso | Permissão |
 | - | - |
 | [/me/people](/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
+
+Ao usar os modelos padrão, são necessárias APIs e permissões adicionais. O modelo padrão para este componente usa um componente de [pessoa de gerenciamento](person.md) , que requer o seguinte.
+
+| Recurso | Permissão |
+| - | - |
+| [/Users](/graph/api/user-list?view=graph-rest-1.0) | Users. ReadBasic. All |
+| [/me/calendarview](/graph/api/user-list-contacts?view=graph-rest-1.0) | Contacts.Read |
 
 ## <a name="authentication"></a>Autenticação
 

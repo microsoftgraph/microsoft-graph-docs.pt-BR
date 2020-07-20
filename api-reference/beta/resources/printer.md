@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 6573f17753a3c9b487324def9973bddd0759ed4b
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: ef636503c756d7a88321d723540ef47eaab65068
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091435"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183859"
 ---
 # <a name="printer-resource-type"></a>tipo de recurso de impressora
 
@@ -27,21 +27,21 @@ Representa um dispositivo de impressora física que foi registrado com o serviç
 | [Criar](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Criar (registrar) uma nova impressora com impressão universal. |
 | [Get](../api/printer-get.md) | [impressora](printer.md) | Leia as propriedades e as relações do objeto Printer. |
 | [Update](../api/printer-update.md) | [impressora](printer.md) | Atualize o objeto Printer. |
-| [Delete](../api/printer-delete.md) | Nenhum | Cancelar o registro do printerfrom físico o serviço de impressão universal. |
+| [Delete](../api/printer-delete.md) | Nenhum | Cancelar o registro da impressora física do serviço de impressão universal. |
 | [getCapabilities](../api/printer-getcapabilities.md) | [printerCapabilities](printercapabilities.md) | Obtenha uma lista de recursos para a impressora. |
 | [resetDefaults](../api/printer-resetdefaults.md) | Nenhum | Redefinir as configurações padrão de uma impressora. |
 | [Listar trabalhos](../api/printer-list-jobs.md) | coleção [printJob](printjob.md) | Obtenha uma lista de trabalhos de impressão que são enfileirados para processamento pela impressora. |
 | [Criar trabalho](../api/printer-post-jobs.md) | [Impressão](printjob.md) | Crie um novo trabalho de impressão para a impressora. Para começar a imprimir o trabalho, use [startPrintJob](../api/printjob-startprintjob.md). |
-| [Conectores de lista](../api/printer-list-connectors.md) | coleção [Multiconnector](printconnector.md) | Obter uma lista de conectores aos quais esta impressora está associada. |
+| [Listar conectores](../api/printer-list-connectors.md) | coleção [Multiconnector](printconnector.md) | Obter uma lista de conectores aos quais esta impressora está associada. |
 | [Listar allowedUsers](../api/printer-list-allowedusers.md) | coleção [printUserIdentity](printuseridentity.md) | Recupere uma lista de usuários que receberam acesso para enviar trabalhos de impressão para a impressora associada. |
 | [Adicionar allowedUser](../api/printer-post-allowedusers.md) | Nenhum | Conceda ao usuário especificado acesso para enviar trabalhos de impressão à impressora associada. |
 | [Remover allowedUser](../api/printer-delete-alloweduser.md) | Nenhum | Revogar o acesso à impressora do usuário especificado. |
 | [Listar allowedGroups](../api/printer-list-allowedgroups.md) | coleção [Multiidentity](printidentity.md) | Recupere uma lista de grupos aos quais foi concedido acesso para enviar trabalhos de impressão à impressora associada. |
 | [Adicionar allowedGroup](../api/printer-post-allowedgroups.md) | Nenhum | Conceda ao grupo especificado o acesso ao envio de trabalhos de impressão à impressora associada. |
 | [Remover allowedGroup](../api/printer-delete-allowedgroup.md) | Nenhum | Revogar o acesso à impressora do grupo especificado. |
-| [Listar taskTriggers](../api/printer-list-tasktriggers.md) | Nenhum | Listar [printTaskTriggers](printtasktrigger.md) associados a essa impressora. |
-| [Criar taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | Crie um [printTaskTrigger](printtasktrigger.md) que seja executado quando os eventos Print ocorrerem. |
-| [Excluir taskTrigger](../api/printer-delete-tasktrigger.md) | Nenhum | Excluir um [printTaskTrigger](printtasktrigger.md) que está associado à impressora. |
+| [List taskTriggers](../api/printer-list-tasktriggers.md) | Nenhum | Listar [printTaskTriggers](printtasktrigger.md) associados a essa impressora. |
+| [Create taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | Crie um [printTaskTrigger](printtasktrigger.md) que seja executado quando os eventos Print ocorrerem. |
+| [Delete taskTrigger](../api/printer-delete-tasktrigger.md) | Nenhum | Excluir um [printTaskTrigger](printtasktrigger.md) que está associado à impressora. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
@@ -49,18 +49,18 @@ Representa um dispositivo de impressora física que foi registrado com o serviç
 |id|String|O identificador do documento. Somente leitura.|
 |displayName|Cadeia de caracteres|O nome da impressora.|
 |fabricante|String|O fabricante relatado pela impressora. Somente leitura.|
-|modelo|String|O nome do modelo relatado pela impressora. Somente leitura.|
+|modelo|Cadeia de caracteres|O nome do modelo relatado pela impressora. Somente leitura.|
 |registeredDateTime|DateTimeOffset|O DateTimeOffset quando a impressora foi registrada. Somente leitura.|
 |status|[printerStatus](printerstatus.md)|O status de processamento da impressora, incluindo erros. Somente leitura.|
 |isShared|Booliano|True se a impressora é compartilhada; caso contrário, false. Somente leitura.|
-|isAcceptingJobs|Booliano|Se a impressora está atualmente aceitando novos trabalhos de impressão.|
-|location|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora.|
-|padrões|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão da impressora.|
+|isAcceptingJobs|Boolean|Se a impressora está atualmente aceitando novos trabalhos de impressão.|
+|localização|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora.|
+|defaults|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão da impressora.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|serviços|coleção [printJob](printjob.md)| A lista de trabalhos que estão na fila para impressão pela impressora.|
+|jobs|coleção [printJob](printjob.md)| A lista de trabalhos que estão na fila para impressão pela impressora.|
 |shares|coleção [printerShare](printershare.md)| A lista de printerShares que estão associados à impressora. Somente leitura. Anulável.|
 |conectores|[separador de Hiperligação](printconnector.md)|Os conectores associados à impressora.|
 |allowedUsers|coleção [printUserIdentity](printuseridentity.md)|Os usuários que têm acesso à impressão usando a impressora.|
@@ -95,7 +95,6 @@ Veja a seguir uma representação JSON do recurso.
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
   "defaults": {"@odata.type": "microsoft.graph.printerDefaults"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

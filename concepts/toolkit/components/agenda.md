@@ -3,12 +3,12 @@ title: Componente de agenda no kit de ferramentas do Microsoft Graph
 description: O componente de gerenciamento de agenda da Web é usado para representar eventos em um calendário de usuário ou grupo.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 89c2d1c53393d1488a15682329f4754211f12b0e
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: c42b62241f5eee7fef51bf57bf8617dd6e89b8c6
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681890"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183922"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Componente de agenda no kit de ferramentas do Microsoft Graph
 
@@ -128,16 +128,23 @@ Os eventos a seguir são acionados do controle.
 | --- | --- |
 | eventClick | O usuário clica ou toca em um evento.|
 
-
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Este componente usa as seguintes APIs e permissões do Microsoft Graph:
 
-| Resource | Permission |
+| Recurso | Permissão |
 | - | - |
 | [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | Calendars.Read |
 
 O componente permite que você especifique uma consulta diferente do Microsoft Graph para chamar (como `/groups/{id}/calendar/calendarView` ). Nesse caso, acrescente a permissão ao final da cadeia de caracteres, delimitado por `|` .
+
+Ao usar o modelo padrão e o `renderAttendees` modelo padrão, são necessárias APIs e permissões adicionais. O modelo padrão para esse componente usa um componente de [Gerenciamento de pessoas](people.md) para eventos que têm participantes, o que requer o seguinte.
+
+| Recurso | Permissão |
+| - | - |
+| [/Users](/graph/api/user-list?view=graph-rest-1.0) | Users. ReadBasic. All |
+| [/me/calendarview](/graph/api/user-list-people?view=graph-rest-1.0) | People.Read |
+| [/me/calendarview](/graph/api/user-list-contacts?view=graph-rest-1.0) | Contacts.Read |
 
 ## <a name="authentication"></a>Autenticação
 
