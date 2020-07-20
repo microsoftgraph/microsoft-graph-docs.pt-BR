@@ -190,7 +190,7 @@ items:
                 href: api/user-delete.md
               - name: Obter intervalo
                 href: api/user-delta.md
-          - name: Atribuições de função de aplicativo
+          - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
               - name: Listar atribuições de função de aplicativo
@@ -302,7 +302,7 @@ items:
                     href: api/insights-list-trending.md
                   - name: Listar usados
                     href: api/insights-list-used.md
-          - name: Correio
+          - name: Email
             href: resources/message.md
             items:
               - name: Criar pasta de email
@@ -416,7 +416,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir o perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -509,7 +509,7 @@ items:
                 href: api/group-update.md
               - name: Validar propriedades
                 href: api/group-validateproperties.md
-          - name: Atribuições de função de aplicativo
+          - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
               - name: Listar atribuições de função de aplicativo
@@ -821,7 +821,7 @@ items:
                     href: api/connector-get.md
                   - name: Listar memberOf
                     href: api/connector-list-memberof.md
-                  - name: Adicionar conector ao conector
+                  - name: Adicionar conector a connectorGroup
                     href: api/connector-post-memberof.md
               - name: Grupo de conectores
                 href: resources/connectorgroup.md
@@ -857,13 +857,13 @@ items:
                 href: api/serviceprincipal-update.md
               - name: Excluir entidade de serviço
                 href: api/serviceprincipal-delete.md
-              - name: List createdObjects
+              - name: Listar createdObjects
                 href: api/serviceprincipal-list-createdobjects.md
-              - name: List ownedObjects
+              - name: Listar ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
               - name: delta
                 href: api/serviceprincipal-delta.md
-              - name: Atribuições de função de aplicativo
+              - name: Atribuição de funções do aplicativo
                 href: resources/approleassignment.md
                 items:
                   - name: Listar atribuições de função de aplicativo
@@ -896,7 +896,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: Listar membros transitivos
+                  - name: Listar memberOf transitivos
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1316,6 +1316,8 @@ items:
                 href: api/application-post-onlinemeetings.md
               - name: Obter
                 href: api/onlinemeeting-get.md
+              - name: Atualizar
+                href: api/onlinemeeting-patch.md
               - name: Excluir
                 href: api/onlinemeeting-delete.md
               - name: Criar ou obter
@@ -1514,7 +1516,7 @@ items:
                     href: api/printer-getcapabilities.md
                   - name: Obter gatilho de tarefa
                     href: api/printtasktrigger-get.md
-                  - name: Conectores de lista
+                  - name: Listar conectores
                     href: api/printer-list-connectors.md
                   - name: Listar trabalhos de impressão
                     href: api/printer-list-jobs.md
@@ -2112,7 +2114,7 @@ items:
                   - name: Licença atribuída ao aplicativo do VPP do macOS
                     href: resources/intune-apps-macosvppappassignedlicense.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-macosvppappassignedlicense-list.md
                       - name: Obter
                         href: api/intune-apps-macosvppappassignedlicense-get.md
@@ -2127,7 +2129,7 @@ items:
                   - name: Aplicativo LOB para Android gerenciado
                     href: resources/intune-apps-managedandroidlobapp.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-apps-managedandroidlobapp-list.md
                       - name: Obter
                         href: api/intune-apps-managedandroidlobapp-get.md
@@ -2140,7 +2142,7 @@ items:
                   - name: Aplicativo da loja do Android gerenciado
                     href: resources/intune-apps-managedandroidstoreapp.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-apps-managedandroidstoreapp-list.md
                       - name: Obter
                         href: api/intune-apps-managedandroidstoreapp-get.md
@@ -3418,7 +3420,7 @@ items:
                   - name: Política de conformidade do Android for Work
                     href: resources/intune-deviceconfig-androidforworkcompliancepolicy.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-androidforworkcompliancepolicy-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidforworkcompliancepolicy-get.md
@@ -3433,7 +3435,7 @@ items:
                   - name: Configuração personalizada do Android for Work
                     href: resources/intune-deviceconfig-androidforworkcustomconfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-androidforworkcustomconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidforworkcustomconfiguration-get.md
@@ -5945,7 +5947,7 @@ items:
                   - name: Base de perfil de certificado do Windows 8.1
                     href: resources/intune-deviceconfig-windows81certificateprofilebase.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-windows81certificateprofilebase-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windows81certificateprofilebase-get.md
@@ -5978,7 +5980,7 @@ items:
                   - name: Perfil de certificado do SCEP do Windows 8.1
                     href: resources/intune-deviceconfig-windows81scepcertificateprofile.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-windows81scepcertificateprofile-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windows81scepcertificateprofile-get.md
@@ -5991,7 +5993,7 @@ items:
                   - name: Certificado raiz confiável do Windows 8.1
                     href: resources/intune-deviceconfig-windows81trustedrootcertificate.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-windows81trustedrootcertificate-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-windows81trustedrootcertificate-get.md
@@ -9464,7 +9466,7 @@ items:
                     href: api/device-delete-registeredusers.md
                   - name: Listar grupos de dispositivos
                     href: api/device-list-memberof.md
-                  - name: Listar grupos transitivos de dispositivo
+                  - name: Listar grupos transitivos de dispositivos
                     href: api/device-list-transitivememberof.md
                   - name: Verificar objetos member
                     href: api/device-checkmemberobjects.md
@@ -11450,7 +11452,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
