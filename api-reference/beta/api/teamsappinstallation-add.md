@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 05b3189825d4cfba12c000113a653595f9f7c9a3
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: befafe249bc42d4f0ac166b35177310deb2ea4b1
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290487"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45197020"
 ---
 # <a name="add-app-to-team"></a>Adicionar aplicativo à equipe
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation. ReadWriteForTeam, Group. ReadWrite. All, Directory. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | TeamsAppInstallation. ReadWriteForTeam. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ POST /teams/{id}/installedApps
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|teamsApp|String|A ID do aplicativo a ser adicionado.|
+|teamsApp|Cadeia de caracteres|A ID do aplicativo a ser adicionado.|
 
 ## <a name="response"></a>Resposta
 

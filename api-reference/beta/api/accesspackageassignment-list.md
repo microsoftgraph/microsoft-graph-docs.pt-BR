@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 11903ae1327f0494f9889715fb88c917700e60b3
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: be1f603eaf1f6cd5ea429219495ab9ed4a26b4ce
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383512"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45197041"
 ---
 # <a name="list-accesspackageassignments"></a>Listar accessPackageAssignments
 
@@ -40,9 +40,9 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para retornar também o assunto de destino e o pacote de acesso, inclua `$expand=target,accessPackage` . Para recuperar apenas as atribuições entregues, você pode incluir uma consulta `$filter=assignmentState eq 'Delivered'` . Para recuperar apenas as atribuições de um usuário específico, você pode incluir uma consulta com atribuições direcionadas à ID do objeto do usuário: `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .  Para recuperar somente as atribuições de um determinado usuário e um pacote de acesso específico, você pode incluir uma consulta com atribuições direcionando o pacote de acesso e a ID do objeto desse usuário: `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para retornar também o assunto de destino e o pacote de acesso, inclua `$expand=target,accessPackage` . Para recuperar apenas as atribuições entregues, você pode incluir uma consulta `$filter=assignmentState eq 'Delivered'` . Para recuperar apenas as atribuições de um usuário específico, você pode incluir uma consulta com atribuições direcionadas à ID do objeto do usuário: `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .  Para recuperar somente as atribuições de um determinado usuário e um pacote de acesso específico, você pode incluir uma consulta com atribuições direcionando o pacote de acesso e a ID do objeto desse usuário: `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .  Para recuperar apenas atribuições resultantes de uma determinada política de atribuição de pacote de acesso, você pode incluir uma consulta para essa política: `$filter=accessPackageAssignmentPolicy/id eq 'd92ebb54-9b46-492d-ab7f-01f76767da7f'` .
 
-Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

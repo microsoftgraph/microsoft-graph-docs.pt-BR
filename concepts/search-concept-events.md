@@ -4,12 +4,12 @@ description: Você pode pesquisar no próprio calendário do usuário.
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 6326fead96cd0b777ff6c3e257d6aa36d4d5c4ce
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: 8cafb01337581d1b1d2e355363aec14f658ee4f6
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568767"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45196824"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-calendar-events"></a>Usar a API de pesquisa da Microsoft no Microsoft Graph para pesquisar eventos de calendário
 
@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-Você só pode acessar o próprio calendário do usuário. Não há suporte para o calendário compartilhado e o schenarios de acesso delegado.
+Você só pode acessar o próprio calendário do usuário. Não há suporte para cenários de acesso delegado e de calendário compartilhado.
 
 ## <a name="next-steps"></a>Próximas etapas
 

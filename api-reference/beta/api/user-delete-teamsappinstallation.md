@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0b3948481b62e9f0684bdb1a1b8a2d3d9dd3066b
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 309bc675cdf0c2539d66606fd92b7e20fb4a98b4
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290515"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45196916"
 ---
 # <a name="uninstall-app-for-user"></a>Desinstalar o aplicativo para o usuário
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation. ReadWriteForUser, User. ReadWrite. All, Directory. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | User.ReadWrite.All, Directory.ReadWrite.All |
+|Application | TeamsAppInstallation. ReadWriteForUser. All, User. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
