@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 3788478ff71ae103b912c5dd2a856c8fb85d23dc
-ms.sourcegitcommit: 90aaba4e965945cb6550cf625cbc03287f39e531
+ms.openlocfilehash: bd87841a6c7a46d485c7ccd2b0f601f012712f63
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148505"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183838"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -224,9 +224,23 @@ O exemplo a seguir mostra uma consulta filtrada pelas propriedades **subject** e
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
 
-[Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
+[Experimente o Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
- > **Observação:** Com os recursos do Azure AD derivados de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), como [user](/graph/api/resources/user?view=graph-rest-1.0) e [group](/graph/api/resources/group?view=graph-rest-1.0), você não pode combinar `$orderby` a expressões `$filter`. 
+> **Observação:** Combinar `$orderby` e parâmetros de consulta `$filter` é suportado no ponto de extremidade beta para os seguintes recursos do Microsoft Azure Active Directory e suas relações que derivam de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
+>
+>- [aplicativo](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
+>- [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
+>- [device](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
+>- [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)
+>- [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta)
+>- [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta)
+>
+> Para usar o `$orderby` e o `$filter` em conjunto, você precisa:
+>
+> - Adicionar `$count=true` aos parâmetros de consulta
+> - Adicionar `ConsistencyLevel: eventual` ao cabeçalho de solicitação
+>
+> Confira [parâmetros opcionais de consulta de usuário](/graph/api/user-list?view=graph-rest-beta&tabs=http#optional-query-parameters) para obter mais informações.
 
 ## <a name="search-parameter"></a>parâmetro search
 
