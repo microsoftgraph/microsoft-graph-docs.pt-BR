@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 7e969858b7537ea36189d24c449803d2a00b125e
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
-ms.translationtype: MT
+ms.openlocfilehash: 75bf98201b434aa86c79db8f0009440c439d80f1
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44990035"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45197083"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -36,7 +36,7 @@ O padrão típico de chamada corresponde ao que segue:
 
 >**Observação:** a função de consulta Delta geralmente é referida ao acrescentar `/delta` ao nome do recurso. No entanto, `/delta` é um atalho para o nome totalmente qualificado `/microsoft.graph.delta` que você vê em solicitações geradas pelos SDKs do Microsoft Graph.
 
->**Observação:** A solicitação inicial para a função de consulta Delta (sem token Delta ou Skip) retornará os recursos que existem atualmente na coleção. Os recursos que foram criados e excluídos antes da consulta Delta inicial não serão retornados. As atualizações feitas antes da solicitação inicial são resumidas no recurso retornado como seu estado mais recente.
+>**Observação:** a solicitação inicial para a função de consulta delta (nenhum token delta ou skip) retornará os recursos existentes na coleção. Os recursos que foram criados e excluídos antes da consulta delta inicial não serão retornados. As atualizações feitas antes da solicitação inicial são resumidas no recurso retornado como seu estado mais recente.
 
 ### <a name="state-tokens"></a>Tokens de estado
 
@@ -188,7 +188,7 @@ As consultas Delta estão disponíveis para os clientes hospedados na nuvem púb
 
 ### <a name="token-duration"></a>Duração do token
 
-Os tokens Delta só são válidos para um período específico, antes que o aplicativo cliente precise executar uma sincronização total novamente. Para objetos de diretório (**Application**, **administrativeUnit**, **directoryobject**, **directoryRole**, **Group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipalName**e **User**), o limite é de sete dias. Para objetos de educação (**educationSchool**, **educationUser**e **educationClass**), o limite é de sete dias.
+Os tokens Delta só são válidos para um período específico, antes que o aplicativo cliente precise executar uma sincronização total novamente. Para objetos de diretório (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), o limite é de 7 dias. Para objetos de formação educacional (**educationSchool**, **educationUser**e **educationClass**), o limite é de 7 dias. Para entidades do Outlook (**message**, **mailFolder**, **event**, **contact**, **contactFolder**), o limite superior não é corrigido; depende do tamanho do cache de tokens do delta interno. Enquanto os novos tokens delta são adicionados ao cache, após a capacidade do cache ser excedida, os tokens delta mais antigos são excluídos.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

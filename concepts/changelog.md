@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 666f8171740b96d6b94c4cde596e5a723c3a1161
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 2e234134bb848b36768bfff9a17ca64f8db7a827
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183768"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45197090"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -86,11 +86,16 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionadas as configurações de **propriedade de navegação para a** entidade da [organização](/graph/api/resources/organization?view=graph-rest-beta). |
 | Adição | beta | Adicionada a entidade [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta).  |
+| Adição | beta | Adicionada a propriedade de navegação **profileCardProperties** à entidade **organizationSettings**. |
+| Adição | beta | Adicionada a entidade **profileCardProperty** e as seguintes operações: <br/> [Listar](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Criar](/graph/api/organizationsettings-post-profilecardproperties) <br/> Entidade [Obter profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta). <br/> [Atualizar profileCardProperty](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Excluir](/graph/api/profilecardproperty-delete) |
+| Adição | Beta e v1.0 | As seguintes operações foram adicionadas aos[dispositivos](/graph/api/resources/device): <br/> [Excluir proprietário registrado](/graph/api/delete-registeredowners) <br/> [Excluir usuário registrado](/graph/api/delete-registeredusers)|
 | Adição | Beta e v1.0 | As seguintes operações foram adicionadas aos[dispositivos](/graph/api/resources/device): <br/> [Excluir proprietário registrado](/graph/api/device-delete-registeredowners) <br/> [Excluir usuário registrado](/graph/api/delete-registeredusers)|
 | Adição | v1.0 | Adicionados os **assignedLabels**, **expirationDateTime**, **membershipRule**, **membershipRuleProcessingState**, **preferredLanguage**e propriedades de **theme** para a entidade [group](/graph/api/resources/group?view=graph-rest-v1.0). |
 | Adição | beta | Adicionada a propriedade **infoCatalogs** à entidade [group](/graph/api/resources/group?view=graph-rest-beta) e à entidade [user](/graph/api/resources/user?view=graph-rest-beta). |
 | Adição | beta | Adicionada a propriedade **userRiskLevels** à entidade [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta). |
 | Adição | beta | A concessão de controle **passwordChange** foi adicionada à entidade [conditionalAccessGrantControls](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta). |
+| Adição | beta | A propriedade **id** adicionada à entidade [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta). |
+| Adição | beta | Adicionado o método [acquireAccessToken](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) ao recurso [synchronization](/graph/api/resources/synchronization-synchronization?view=graph-rest-beta)|
 
 ### <a name="people-and-workplace-intelligence--profile-card-customization"></a>Inteligência de pessoas e local de trabalho | Personalização de cartão de perfil
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -98,12 +103,20 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionada a propriedade de navegação **profileCardProperties** à entidade [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta). |
 | Adição | beta | Adicionada a entidade **profileCardProperty** e as seguintes operações: <br/> [Listar](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [Atualizar](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete) |
 
+
 ### <a name="workbooks-and-charts"></a>Pastas de trabalho e gráficos
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |Adição|beta|Adicionado o relacionamento [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) à entidade [Pasta de Trabalho](/graph/api/resources/workbook?view=graph-rest-beta). |
 |Adição|beta|Adicionado o método [Get workbookOperation](/graph/api/resources/workbookoperation-get?view=graph-rest-beta) à entidade [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta). |
 
+
+### <a name="teamwork"></a>Trabalho em equipe
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição | Beta, v 1.0 | Novas permissões adicionadas [TeamsAppInstallation.ReadForTeam](/graph/permissions-reference#Teams-app-installation-permissions), 
+[TeamsAppInstallation.ReadWriteForTeam](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions). |
 
 ## <a name="june-2020"></a>Junho de 2020
 
@@ -3881,7 +3894,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Alteração      | Beta    | A propriedade **enableAuthenticationViaCompanyPortal** foi adicionada à entidade [depEnrollmentProfile](/graph/api/resources/intune-corpenrollment-depenrollmentprofile?view=graph-rest-beta) |
 | Alteração      | Beta    | Adicionada a propriedade **notificationMessageCCList** à entidade [deviceComplianceActionItem](/graph/api/resources/intune-deviceconfig-devicecomplianceactionitem?view=graph-rest-beta) |
 | Alteração      | Beta    | A propriedade **notApplicableCount** foi adicionada à entidade [deviceComplianceDeviceOverview](/graph/api/resources/intune-deviceconfig-devicecompliancedeviceoverview?view=graph-rest-beta) |
-| Alteração      | Beta    | A propriedade **notApplicableCount** foi adicionada à entidade [deviceComplianceUserOverview](/graph/api/resources/intune-deviceconfig-devicecomplianceuseroverview?view=graph-rest-beta) |
+| Alterar      | Beta    | A propriedade **notApplicableCount** foi adicionada à entidade [deviceComplianceUserOverview](/graph/api/resources/intune-deviceconfig-devicecomplianceuseroverview?view=graph-rest-beta) |
 | Alteração      | Beta    | A propriedade **notApplicableCount** foi adicionada à entidade [deviceConfigurationDeviceOverview](/graph/api/resources/intune-deviceconfig-deviceconfigurationdeviceoverview?view=graph-rest-beta) |
 | Alteração      | Beta    | A propriedade **notApplicableCount** foi adicionada à entidade [deviceConfigurationUserOverview](/graph/api/resources/intune-deviceconfig-deviceconfigurationuseroverview?view=graph-rest-beta) |
 | Alteração      | Beta    | A propriedade **configurationManagerClientEnabledFeatures** foi adicionada à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
