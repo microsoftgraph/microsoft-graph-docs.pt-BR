@@ -969,6 +969,8 @@ items:
                 href: resources/synchronization-configure-with-custom-target-attributes.md
               - name: Sincronizar atributos de extensão de diretório
                 href: resources/synchronization-configure-with-directory-extension-attributes.md
+              - name: Adquirir token de acesso
+                href: api/synchronization-synchronization-acquireaccesstoken.md
               - name: Definição de diretório
                 href: resources/synchronization-directorydefinition.md
                 items:
@@ -993,6 +995,8 @@ items:
                     href: api/synchronization-synchronizationjob-delete.md
                   - name: Configurar sob demanda
                     href: api/synchronization-synchronizationjob-provision-on-demand.md
+                  - name: Validar credenciais
+                    href: api/synchronization-synchronizationjob-validatecredentials.md
               - name: Esquema
                 href: resources/synchronization-synchronizationschema.md
                 items:
@@ -1692,7 +1696,7 @@ items:
                   - name: Perfil de registro do Android for Work
                     href: resources/intune-androidforwork-androidforworkenrollmentprofile.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-androidforwork-androidforworkenrollmentprofile-list.md
                       - name: Obter
                         href: api/intune-androidforwork-androidforworkenrollmentprofile-get.md
@@ -1711,7 +1715,7 @@ items:
                   - name: Configuração do aplicativo móvel Android for Work
                     href: resources/intune-apps-androidforworkmobileappconfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-apps-androidforworkmobileappconfiguration-list.md
                       - name: Obter
                         href: api/intune-apps-androidforworkmobileappconfiguration-get.md
@@ -3002,7 +3006,7 @@ items:
                   - name: Identidade do dispositivo Apple importada
                     href: resources/intune-enrollment-importedappledeviceidentity.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-enrollment-importedappledeviceidentity-list.md
                       - name: Obter
                         href: api/intune-enrollment-importedappledeviceidentity-get.md
@@ -3632,7 +3636,7 @@ items:
                   - name: Perfil de certificado de PKCS do Android
                     href: resources/intune-deviceconfig-androidpkcscertificateprofile.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-get.md
@@ -3647,7 +3651,7 @@ items:
                   - name: Perfil de certificado do SCEP do Android
                     href: resources/intune-deviceconfig-androidscepcertificateprofile.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-androidscepcertificateprofile-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidscepcertificateprofile-get.md
@@ -5304,7 +5308,7 @@ items:
                   - name: Configuração de VPN do macOS
                     href: resources/intune-deviceconfig-macosvpnconfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-macosvpnconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-macosvpnconfiguration-get.md
@@ -5317,7 +5321,7 @@ items:
                   - name: Configuração de Wi-Fi do macOS
                     href: resources/intune-deviceconfig-macoswificonfiguration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-macoswificonfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-macoswificonfiguration-get.md
@@ -5356,7 +5360,7 @@ items:
                   - name: Estado de certificado do dispositivo gerenciado
                     href: resources/intune-deviceconfig-manageddevicecertificatestate.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-manageddevicecertificatestate-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-manageddevicecertificatestate-get.md
@@ -6418,7 +6422,7 @@ items:
                   - name: Evento de auditoria
                     href: resources/intune-auditing-auditevent.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-auditing-auditevent-list.md
                       - name: Obter
                         href: api/intune-auditing-auditevent-get.md
@@ -7018,7 +7022,7 @@ items:
                   - name: Instância de configuração do gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementsettinginstance.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceintent-devicemanagementsettinginstance-list.md
                       - name: Obter
                         href: api/intune-deviceintent-devicemanagementsettinginstance-get.md
@@ -7215,7 +7219,7 @@ items:
                   - name: Condição de gerenciamento local
                     href: resources/intune-fencing-locationmanagementcondition.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-fencing-locationmanagementcondition-list.md
                       - name: Obter
                         href: api/intune-fencing-locationmanagementcondition-get.md
@@ -7858,7 +7862,7 @@ items:
                   - name: Operação do aplicativo gerenciado
                     href: resources/intune-mam-managedappoperation.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-mam-managedappoperation-list.md
                       - name: Obter
                         href: api/intune-mam-managedappoperation-get.md
@@ -7902,7 +7906,7 @@ items:
                   - name: Registro de aplicativo gerenciado
                     href: resources/intune-mam-managedappregistration.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-mam-managedappregistration-list.md
                       - name: Obter
                         href: api/intune-mam-managedappregistration-get.md
@@ -7911,7 +7915,7 @@ items:
                   - name: Status de aplicativo gerenciado
                     href: resources/intune-mam-managedappstatus.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-mam-managedappstatus-list.md
                       - name: Obter
                         href: api/intune-mam-managedappstatus-get.md
@@ -10643,7 +10647,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Excluir
                     href: api/educationalactivity-delete.md
-              - name: Endereço de email
+              - name: Email
                 href: resources/itememail.md
                 items:
                   - name: Listar
