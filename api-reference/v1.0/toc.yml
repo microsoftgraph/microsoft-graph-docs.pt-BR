@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Obter tokens de autenticação
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: /graph/auth/index?context=graph/api/1.0
       - name: Noções básicas
         href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -72,7 +72,7 @@ items:
       - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -167,11 +167,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -188,7 +188,7 @@ items:
                 href: api/user-delete.md
               - name: Obter intervalo
                 href: api/user-delta.md
-          - name: Atribuições de função de aplicativo
+          - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
               - name: Lista
@@ -302,7 +302,7 @@ items:
                     href: api/usersettings-get.md
                   - name: Atualizar configurações
                     href: api/usersettings-update.md
-          - name: Correio
+          - name: Email
             href: resources/message.md
             items:
               - name: Criar pasta de email
@@ -387,7 +387,7 @@ items:
                 href: api/planneruser-list-tasks.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -487,7 +487,7 @@ items:
                     href: api/grouplifecyclepolicy-removegroup.md
               - name: Validar propriedades
                 href: api/group-validateproperties.md
-          - name: Atribuições de função de aplicativo
+          - name: Atribuição de funções do aplicativo
             href: resources/approleassignment.md
             items:
               - name: Lista
@@ -726,7 +726,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: Listar objetos de propriedade
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: Atribuições de função de aplicativo
+              - name: Atribuição de funções do aplicativo
                 href: resources/approleassignment.md
                 items:
                   - name: Lista
@@ -1086,7 +1086,7 @@ items:
           - name: Reunião online
             href: resources/onlinemeeting.md
             items:
-              - name: Criar
+              - name: Create
                 href: api/application-post-onlinemeetings.md
               - name: Obter
                 href: api/onlinemeeting-get.md
@@ -1096,7 +1096,7 @@ items:
                 href: api/onlinemeeting-createorget.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1139,7 +1139,7 @@ items:
       - name: Dispositivos e aplicativos
         displayName: Intune
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/intune-graph-overview.md
           - name: Gerenciamento de aplicativos
             href: resources/intune-app-conceptual.md
@@ -2795,7 +2795,7 @@ items:
                     href: api/intune-mam-androidmanagedappprotection-list.md
                   - name: Obter
                     href: api/intune-mam-androidmanagedappprotection-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/intune-mam-androidmanagedappprotection-create.md
                   - name: Excluir
                     href: api/intune-mam-androidmanagedappprotection-delete.md
@@ -2821,7 +2821,7 @@ items:
                     href: api/intune-mam-defaultmanagedappprotection-list.md
                   - name: Obter
                     href: api/intune-mam-defaultmanagedappprotection-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/intune-mam-defaultmanagedappprotection-create.md
                   - name: Excluir
                     href: api/intune-mam-defaultmanagedappprotection-delete.md
@@ -2834,7 +2834,7 @@ items:
                     href: api/intune-mam-iosmanagedappprotection-list.md
                   - name: Obter
                     href: api/intune-mam-iosmanagedappprotection-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/intune-mam-iosmanagedappprotection-create.md
                   - name: Excluir
                     href: api/intune-mam-iosmanagedappprotection-delete.md
@@ -2885,7 +2885,7 @@ items:
                     href: api/intune-mam-managedappoperation-list.md
                   - name: Obter
                     href: api/intune-mam-managedappoperation-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/intune-mam-managedappoperation-create.md
                   - name: Excluir
                     href: api/intune-mam-managedappoperation-delete.md
@@ -2948,7 +2948,7 @@ items:
                     href: api/intune-mam-managedmobileapp-list.md
                   - name: Obter
                     href: api/intune-mam-managedmobileapp-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/intune-mam-managedmobileapp-create.md
                   - name: Excluir
                     href: api/intune-mam-managedmobileapp-delete.md
@@ -2961,7 +2961,7 @@ items:
                     href: api/intune-mam-mdmwindowsinformationprotectionpolicy-list.md
                   - name: Obter
                     href: api/intune-mam-mdmwindowsinformationprotectionpolicy-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/intune-mam-mdmwindowsinformationprotectionpolicy-create.md
                   - name: Excluir
                     href: api/intune-mam-mdmwindowsinformationprotectionpolicy-delete.md
@@ -2978,7 +2978,7 @@ items:
                     href: api/intune-mam-targetedmanagedappconfiguration-list.md
                   - name: Obter
                     href: api/intune-mam-targetedmanagedappconfiguration-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/intune-mam-targetedmanagedappconfiguration-create.md
                   - name: Excluir
                     href: api/intune-mam-targetedmanagedappconfiguration-delete.md
@@ -3529,7 +3529,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -3666,7 +3666,7 @@ items:
                     href: api/device-delete-registeredusers.md
                   - name: Listar grupos de dispositivos
                     href: api/device-list-memberof.md
-                  - name: Listar grupos transitivos de dispositivo
+                  - name: Listar grupos transitivos de dispositivos
                     href: api/device-list-transitivememberof.md
                   - name: Listar proprietários registrados
                     href: api/device-list-registeredowners.md
@@ -3679,6 +3679,8 @@ items:
                     href: api/directoryobject-get.md
                   - name: Excluir objeto de diretório
                     href: api/directoryobject-delete.md
+                  - name: Obter propriedades de extensão disponíveis
+                    href: api/directoryobject-getavailableextensionproperties.md
                   - name: Obter objetos de membros
                     href: api/directoryobject-getmemberobjects.md
                   - name: Obter grupos de membros
@@ -3859,7 +3861,7 @@ items:
                 items:
                   - name: Avaliação de ameaças
                     items:
-                      - name: Visão geral
+                      - name: Visão Geral
                         href: resources/threatassessment-api-overview.md
                       - name: Solicitação de avaliação de ameaças
                         href: resources/threatassessmentrequest.md
@@ -3958,7 +3960,7 @@ items:
                         href: api/tokenlifetimepolicy-delete.md
                       - name: Listar aplicadas ao aplicativo
                         href: api/tokenlifetimepolicy-list-appliesto.md
-      - name: Correio
+      - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -4216,7 +4218,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -4555,7 +4557,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -4603,7 +4605,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -4679,7 +4681,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
