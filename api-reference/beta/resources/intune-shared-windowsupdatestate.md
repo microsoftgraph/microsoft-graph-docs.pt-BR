@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 25b15487be765de8c45896b10101671359e2659e
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 520e3e963fa221c3e296257722035bf0590364e5
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122480"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45225113"
 ---
 # <a name="windowsupdatestate-resource-type"></a>tipo de recurso windowsUpdateState
 
@@ -39,7 +39,7 @@ Ainda não documentado
 |userId|String|A ID do usuário.|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo.|
 |userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
-|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Status do Windows UDPATE. Os valores possíveis são: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|status||Status do Windows UDPATE. Os valores possíveis são: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
 |qualityUpdateVersion|Cadeia de caracteres|A versão de atualização de qualidade do dispositivo.|
 |featureUpdateVersion|Cadeia de caracteres|A versão atual de atualização de recursos do dispositivo.|
 |lastScanDateTime|DateTimeOffset|A data e hora em que o agente do Windows Update realizou uma verificação bem-sucedida.|

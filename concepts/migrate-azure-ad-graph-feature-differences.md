@@ -4,12 +4,12 @@ description: Descreve as diferenças de recursos entre a API do Azure Active Dir
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7bebb0437ac3f099d7518640ad4fbb0f9fd75990
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 531b2c9b441f328118597802b6478d5b45276965
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845775"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45224875"
 ---
 # <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de recursos entre o Azure AD Graph e o Microsoft Graph
 
@@ -28,6 +28,7 @@ Este artigo explora como o Microsoft Graph trata:
 Se o aplicativo usar extensões de esquema de diretório do Azure AD Graph, você poderá continuar usando as mesmas APIs básicas (com as URLs de solicitação do Microsoft Graph) para:
 
 - Gerenciar definições de propriedade de extensão usando a propriedade **extensionproperties** no recurso [Application] [/Graph/API/Resources/Application? View = Graph-REST-v 1.0).
+- Obter as propriedades de extensão disponíveis usando a ação [getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-v1.0) .
 - Ler valores de extensão usando GET e`$select`
 - Pesquisar valores de extensão usando GET e`$filter`
 - Atualizar valores de extensão usando PATCH

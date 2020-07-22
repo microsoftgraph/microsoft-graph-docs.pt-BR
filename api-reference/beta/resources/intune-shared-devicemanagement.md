@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cff77ec43beca16f6aa1fdb497f7d2ec8bfc9aa0
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: d24eaff349a99949cce15234458d550b15be072f
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123873"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45224680"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -32,7 +32,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - SIM (ESIM) eletrônico
 - Isolamento
 - Análise de política de grupo
-- Notifications
+- Notificações
 - Políticas de integração, configurações e detalhes
 - Conjunto de políticas
 - Política de acesso de recursos
@@ -67,7 +67,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |id|Cadeia de caracteres|Identificador exclusivo associado ao dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|Guid|ID da conta do Intune para determinado locatário|
-|legacyPcManangementEnabled|Booliano|A propriedade para habilitar o gerenciamento de computador herdado não MDM gerenciado para esta conta. Essa propriedade é somente leitura.|
+|legacyPcManangementEnabled|Boolean|A propriedade para habilitar o gerenciamento de computador herdado não MDM gerenciado para esta conta. Essa propriedade é somente leitura.|
 |maximumDepTokens|Int32|Número máximo de tokens DEP permitidos por locatário.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivos**|
@@ -121,7 +121,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |tentativas|coleção [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|As tentativas de gerenciamento de dispositivo|
 |settingDefinitions|coleção [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|Definições de configuração da intenção de gerenciamento de dispositivo|
 |modelo|coleção [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|Os modelos disponíveis|
-|categories|coleção [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|As categorias disponíveis|
+|Categorias|coleção [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|As categorias disponíveis|
 |**Gerenciamento de dispositivos**|
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Certificado de notificação por push da Apple.|
 |dataSharingConsents|coleção [dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|O compartilhamento de dados é enviado.|
@@ -134,14 +134,14 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |remoteActionAudits|coleção [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|A lista de auditorias de ação remota do dispositivo com o locatário.|
 |windowsMalwareInformation|coleção [windowsmalwareinformation foram adicionadas](../resources/intune-devices-windowsmalwareinformation.md)|A lista de malwares afetados no locatário.|
 |mobileAppTroubleshootingEvents|coleção [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|A Propriedade Collection de MobileAppTroubleshootingEvent.|
-|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/userExperienceAnalyticsOverview.md)|Visão geral da análise da experiência do usuário|
-|userExperienceAnalyticsBaselines|coleção [userExperienceAnalyticsBaseline](../resources/userExperienceAnalyticsBaseline.md)|Linhas de base de análise da experiência do usuário|
-|userExperienceAnalyticsCategories|coleção [userExperienceAnalyticsCategory](../resources/userExperienceAnalyticsCategory.md)|Categorias de análise da experiência do usuário|
-|userExperienceAnalyticsDevicePerformance|coleção [userExperienceAnalyticsDevicePerformance](../resources/userExperienceAnalyticsDevicePerformance.md)|Desempenho do dispositivo de análise da experiência do usuário|
-|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/userExperienceAnalyticsRegressionSummary.md)|Resumo de regressão da análise da experiência do usuário|
-|userExperienceAnalyticsDeviceStartupHistory|coleção [userExperienceAnalyticsDeviceStartupHistory](../resources/userExperienceAnalyticsDeviceStartupHistory.md)|Histórico de inicialização do dispositivo de análise da experiência do usuário|
-|userExperienceAnalyticsDeviceStartupProcesses|coleção [userExperienceAnalyticsDeviceStartupProcess](../resources/userExperienceAnalyticsDeviceStartupProcess.md)|Processos de inicialização do dispositivo de análise da experiência do usuário|
-|userExperienceAnalyticsDeviceStartupProcessPerformance|coleção [userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/userExperienceAnalyticsDeviceStartupProcessPerformance.md)|Desempenho do processo de inicialização do dispositivo de análise de experiência do usuário|
+|userExperienceAnalyticsOverview||Visão geral da análise da experiência do usuário|
+|userExperienceAnalyticsBaselines||Linhas de base de análise da experiência do usuário|
+|userExperienceAnalyticsCategories||Categorias de análise da experiência do usuário|
+|userExperienceAnalyticsDevicePerformance||Desempenho do dispositivo de análise da experiência do usuário|
+|userExperienceAnalyticsRegressionSummary||Resumo de regressão da análise da experiência do usuário|
+|userExperienceAnalyticsDeviceStartupHistory||Histórico de inicialização do dispositivo de análise da experiência do usuário|
+|userExperienceAnalyticsDeviceStartupProcesses||Processos de inicialização do dispositivo de análise da experiência do usuário|
+|userExperienceAnalyticsDeviceStartupProcessPerformance||Desempenho do processo de inicialização do dispositivo de análise de experiência do usuário|
 |**Enrollmentid**|
 |depOnboardingSettings|coleção [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Este conjunto de vários tokens DEP por locatário.|
 |importedDeviceIdentities|coleção [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|As identidades de dispositivo importadas.|

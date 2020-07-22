@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: ce8572f3f71a64a41f02b33da51c35132d162201
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 00b029c5dcbf297d7504a0c30ca7512d523c17ce
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383751"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45225127"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhar com a API de gerenciamento de qualificação do Azure AD
 
@@ -31,15 +31,18 @@ Os tipos de recurso de gerenciamento de direito incluem:
 - [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md): indica a função específica do recurso que um assunto foi atribuído por meio de uma atribuição de pacote do Access.
 - [accessPackageCatalog](accesspackagecatalog.md): um contêiner para pacotes do Access.
 - [accessPackageResourceRequest](accesspackageresourcerequest.md): uma solicitação para adicionar um recurso a um catálogo de pacotes do Access.
+- [entitlementManagementSettings](entitlementmanagementsettings.md): configurações de todo o locatário para o gerenciamento de qualificação do Azure AD.
 
 Observe que o recurso de gerenciamento de direito, incluindo a API, está incluído no Azure AD Premium P2. O locatário em que o gerenciamento de qualificação está sendo usado deve ter uma assinatura válida de compra ou de avaliação do Azure AD Premium P2 ou EMS e5.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 A tabela a seguir lista os métodos que você pode usar para interagir com recursos relacionados ao gerenciamento de direitos.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
+| [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Ler as propriedades de um objeto **entitlementManagementSettings** . |
+| [Update](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Atualiza as propriedades de um objeto **entitlementManagementSettings** . |
 | [Listar accessPackages](../api/accesspackage-list.md) | coleção [accessPackage](accesspackage.md) | Recupere uma lista de objetos **accessPackage** . |
 | [Criar accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Criar um novo objeto **accessPackage** . |
 | [Obter accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Ler propriedades e relações de um objeto **accessPackage** . |
