@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Obter tokens de autenticação
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: /graph/auth/index?context=graph/api/beta
       - name: Noções básicas
         href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -74,7 +74,7 @@ items:
       - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -169,11 +169,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -438,7 +438,7 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -782,7 +782,7 @@ items:
                     href: api/onpremisesagentgroup-list.md
                   - name: Obter
                     href: api/onpremisesagentgroup-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/onpremisesagentgroup-post.md
                   - name: Atualizar
                     href: api/onpremisesagentgroup-update.md
@@ -802,7 +802,7 @@ items:
                     href: api/publishedresource-list.md
                   - name: Obter
                     href: api/publishedresource-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/publishedresource-post.md
                   - name: Atualizar
                     href: api/publishedresource-update.md
@@ -812,7 +812,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: Remover do grupo de agentes
                     href: api/publishedresource-delete-agentgroups.md
-              - name: Conector
+              - name: Connector
                 href: resources/connector.md
                 items:
                   - name: Lista
@@ -1320,8 +1320,6 @@ items:
                 href: api/application-post-onlinemeetings.md
               - name: Obter
                 href: api/onlinemeeting-get.md
-              - name: Atualizar
-                href: api/onlinemeeting-patch.md
               - name: Excluir
                 href: api/onlinemeeting-delete.md
               - name: Criar ou obter
@@ -1335,7 +1333,7 @@ items:
                 href: api/cloudcommunications-getpresencesbyuserid.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1386,7 +1384,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -1508,7 +1506,7 @@ items:
                 items:
                   - name: Listar
                     href: api/print-list-printers.md
-                  - name: Criar
+                  - name: Create
                     href: api/printer-create.md
                   - name: Obter
                     href: api/printer-get.md
@@ -1551,7 +1549,7 @@ items:
                 items:
                   - name: Listar
                     href: api/print-list-shares.md
-                  - name: Criar
+                  - name: Create
                     href: api/print-post-shares.md
                   - name: Obter
                     href: api/printershare-get.md
@@ -1576,7 +1574,7 @@ items:
                 items:
                   - name: Listar
                     href: api/print-list-taskdefinitions.md
-                  - name: Criar
+                  - name: Create
                     href: api/print-post-taskdefinitions.md
                   - name: Obter
                     href: api/printtaskdefinition-get.md
@@ -3006,7 +3004,7 @@ items:
                   - name: Identidade do dispositivo Apple importada
                     href: resources/intune-enrollment-importedappledeviceidentity.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-enrollment-importedappledeviceidentity-list.md
                       - name: Obter
                         href: api/intune-enrollment-importedappledeviceidentity-get.md
@@ -3636,7 +3634,7 @@ items:
                   - name: Perfil de certificado de PKCS do Android
                     href: resources/intune-deviceconfig-androidpkcscertificateprofile.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-get.md
@@ -3651,7 +3649,7 @@ items:
                   - name: Perfil de certificado do SCEP do Android
                     href: resources/intune-deviceconfig-androidscepcertificateprofile.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-androidscepcertificateprofile-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androidscepcertificateprofile-get.md
@@ -5308,7 +5306,7 @@ items:
                   - name: Configuração de VPN do macOS
                     href: resources/intune-deviceconfig-macosvpnconfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-macosvpnconfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-macosvpnconfiguration-get.md
@@ -5321,7 +5319,7 @@ items:
                   - name: Configuração de Wi-Fi do macOS
                     href: resources/intune-deviceconfig-macoswificonfiguration.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceconfig-macoswificonfiguration-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-macoswificonfiguration-get.md
@@ -5360,7 +5358,7 @@ items:
                   - name: Estado de certificado do dispositivo gerenciado
                     href: resources/intune-deviceconfig-manageddevicecertificatestate.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-deviceconfig-manageddevicecertificatestate-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-manageddevicecertificatestate-get.md
@@ -7022,7 +7020,7 @@ items:
                   - name: Instância de configuração do gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementsettinginstance.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-deviceintent-devicemanagementsettinginstance-list.md
                       - name: Obter
                         href: api/intune-deviceintent-devicemanagementsettinginstance-get.md
@@ -7219,7 +7217,7 @@ items:
                   - name: Condição de gerenciamento local
                     href: resources/intune-fencing-locationmanagementcondition.md
                     items:
-                      - name: Lista
+                      - name: Listar
                         href: api/intune-fencing-locationmanagementcondition-list.md
                       - name: Obter
                         href: api/intune-fencing-locationmanagementcondition-get.md
@@ -8544,8 +8542,6 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: Lista
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: 'deviceManagementDerivedCredentialSettings](.. /Resources/Intune-Shared-devicemanagementderivedcredentialsettings.MD) | Gerar'
-                        href: api/intune-shared-devicemanagementderivedcredentialsettings.md
                       - name: Excluir
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: Script de gerenciamento de dispositivo
@@ -9059,7 +9055,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -9153,7 +9149,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -9557,7 +9553,7 @@ items:
                     href: api/directory-list-featurerolloutpolicies.md
                   - name: Obter
                     href: api/featurerolloutpolicy-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/directory-post-featurerolloutpolicies.md
                   - name: Atualizar
                     href: api/featurerolloutpolicy-update.md
@@ -9654,7 +9650,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
               - name: Métodos de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-overview.md
                   - name: Método de autenticação
                     href: resources/authenticationmethod.md
@@ -9663,7 +9659,7 @@ items:
                         href: api/authentication-list-methods.md
                       - name: Obter
                         href: api/authenticationmethod-get.md
-                  - name: Senha
+                  - name: Password
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: Lista
@@ -9710,7 +9706,7 @@ items:
                         href: resources/conditionalaccesspolicy.md
                       - name: Listar
                         href: api/conditionalaccessroot-list-policies.md
-                      - name: Criar
+                      - name: Create
                         href: api/conditionalaccessroot-post-policies.md
                       - name: Obter
                         href: api/conditionalaccesspolicy-get.md
@@ -9736,7 +9732,7 @@ items:
                             href: resources/countrynamedlocation.md
                           - name: Listar
                             href: api/conditionalaccessroot-list-namedlocations.md
-                          - name: Criar
+                          - name: Create
                             href: api/conditionalaccessroot-post-namedlocations.md
                           - name: Obter
                             href: api/countrynamedlocation-get.md
@@ -9750,7 +9746,7 @@ items:
                             href: resources/ipnamedlocation.md
                           - name: Listar
                             href: api/conditionalaccessroot-list-namedlocations.md
-                          - name: Criar
+                          - name: Create
                             href: api/conditionalaccessroot-post-namedlocations.md
                           - name: Obter
                             href: api/ipnamedlocation-get.md
@@ -9836,7 +9832,7 @@ items:
                 items:
                   - name: Avaliação de ameaças
                     items:
-                      - name: Visão geral
+                      - name: Visão Geral
                         href: resources/threatassessment-api-overview.md
                       - name: Solicitação de avaliação de ameaças
                         href: resources/threatassessmentrequest.md
@@ -9850,7 +9846,7 @@ items:
                         href: resources/urlassessmentrequest.md
                       - name: Listar
                         href: api/informationprotection-list-threatassessmentrequests.md
-                      - name: Criar
+                      - name: Create
                         href: api/informationprotection-post-threatassessmentrequests.md
                       - name: Obter
                         href: api/threatassessmentrequest-get.md
@@ -10123,7 +10119,7 @@ items:
                     items:
                       - name: Listar
                         href: api/accesspackage-list.md
-                      - name: Criar
+                      - name: Create
                         href: api/accesspackage-post.md
                       - name: Obter
                         href: api/accesspackage-get.md
@@ -10139,7 +10135,7 @@ items:
                     items:
                       - name: Listar
                         href: api/accesspackageassignmentpolicy-list.md
-                      - name: Criar
+                      - name: Create
                         href: api/accesspackageassignmentpolicy-post.md
                       - name: Obter
                         href: api/accesspackageassignmentpolicy-get.md
@@ -10150,7 +10146,7 @@ items:
                     items:
                       - name: Listar
                         href: api/accesspackageassignmentrequest-list.md
-                      - name: Criar
+                      - name: Create
                         href: api/accesspackageassignmentrequest-post.md
                       - name: Obter
                         href: api/accesspackageassignmentrequest-get.md
@@ -10166,7 +10162,7 @@ items:
                     items:
                       - name: Listar
                         href: api/accesspackagecatalog-list.md
-                      - name: Criar
+                      - name: Create
                         href: api/accesspackagecatalog-post.md
                       - name: Obter
                         href: api/accesspackagecatalog-get.md
@@ -10181,15 +10177,22 @@ items:
                     items:
                       - name: Listar
                         href: api/accesspackageresourcerequest-list.md
-                      - name: Criar
+                      - name: Create
                         href: api/accesspackageresourcerequest-post.md
                   - name: Escopo de função de recurso de pacote de acesso
                     href: resources/accesspackageresourcerolescope.md
                     items:
                       - name: Listar
                         href: api/accesspackage-list-accesspackageresourcerolescopes.md
-                      - name: Criar
+                      - name: Create
                         href: api/accesspackage-post-accesspackageresourcerolescopes.md
+                  - name: Configurações de gerenciamento de qualificação
+                    href: resources/entitlementmanagementsettings.md
+                    items:
+                      - name: Obter
+                        href: api/entitlementmanagementsettings-get.md
+                      - name: Atualizar
+                        href: api/entitlementmanagementsettings-update.md
               - name: Privileged Identity Management
                 items:
                   - name: Privileged Identity Management
@@ -10328,7 +10331,7 @@ items:
       - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/mail-api-overview.md
           - name: Mensagem
             href: resources/message.md
@@ -10504,7 +10507,7 @@ items:
             items:
               - name: Listar blocos de anotações
                 href: api/onenote-list-notebooks.md
-              - name: Criar bloco de anotações
+              - name: Criar blocos de anotações
                 href: api/onenote-post-notebooks.md
               - name: Listar seções
                 href: api/onenote-list-sections.md
@@ -10598,7 +10601,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -10939,7 +10942,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e uso
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registro de usuário de credenciais
                     href: resources/credentialuserregistrationcount.md
@@ -10963,7 +10966,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -11166,13 +11169,13 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Dados de consulta
                 href: api/search-query.md
           - name: Índice
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -11206,7 +11209,7 @@ items:
                 items:
                   - name: Item externo
                     href: resources/externalitem.md
-                  - name: Criar
+                  - name: Create
                     href: api/externalconnection-put-items.md
                   - name: Obter
                     href: api/externalitem-get.md
@@ -11296,7 +11299,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -11361,7 +11364,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
