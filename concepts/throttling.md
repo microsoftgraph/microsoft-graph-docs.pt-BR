@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 96592654fffb3111a398178d807da702c398e0d2
-ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
+ms.openlocfilehash: a62b88927f33b12f9e9738f8b8ba299a22f6d099
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45165111"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45197062"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -92,6 +92,12 @@ Padrões de programação como pesquisando continuamente um recurso para verific
 
 O Microsoft Graph permite que você acesse os dados em [vários serviços](overview-major-services.md), como o Outlook ou o Azure Active Directory. Esses serviços impõem seus próprios limites de controle que afetam os aplicativos que usam o Microsoft Graph para acessá-los.
 
+Qualquer solicitação poderá ser avaliada em relação a vários limites, dependendo do escopo do limite (por aplicativo em todos os locatários, por locatário para todos os aplicativos, por aplicativo por locatário, e assim por diante), do tipo de solicitação (GET, POST, PATCH e assim por diante) e de outros fatores. O primeiro limite a ser alcançado dispara o comportamento de limitação. Além dos limites de serviço específicos descritos na seção, os seguintes limites globais se aplicam:
+
+| Tipo de solicitação | Por aplicativo em todos os locatários  |
+| ------------ | ------------------------ |
+| Qualquer          | 2000 solicitações por segundo |
+
 > [!NOTE]
 > Os limites específicos descritos aqui estão sujeitos a alterações.
 
@@ -156,9 +162,26 @@ Os recursos a seguir são fornecidos pelo serviço do Outlook.
 | [Informações sobre a reunião ](/graph/api/resources/meetinginfo)   | 2000 reuniões/usuário a cada mês |
 | [Presença](/graph/api/resources/presence) (pré-visualização)   | 2 rps |
 
+### <a name="onenote-service-limits"></a>Limites do serviço OneNote
+
+| Tipo de limite | Limitar por aplicativo por usuário (contexto delegado) | Limite por aplicativo (contexto somente de aplicativo) |
+| ------------ | ------- | ------- |
+| Taxa de solicitações | 120 solicitações por 1 minuto e 400 por 1 hora | 240 solicitações por 1 minuto e 800 por 1 hora |
+| Solicitações simultâneas | 5 solicitações simultâneas | 20 solicitações simultâneas |
+
+Os limites anteriores se aplicam aos seguintes recursos:  
+onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
+
+Você pode encontrar informações adicionais sobre as práticas recomendadas no [limitação da API do OneNote e como evitá-la](https://developer.microsoft.com/pt-BR/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
+
+> **Observação:** os recursos listados acima não retornam um cabeçalho `Retry-After` em respostas `429 Too Many Requests`.
+
 ### <a name="project-rome-service-limits"></a>Limites de serviços do Project Rome
 
-| Tipo de solicitação | Limite por usuário a todos os aplicativos | | OBTENHA          | 400 solicitações a cada 5 minutos e 12000 solicitações por dia | | POSTAR, COLOCAR, CORRIGIR, EXCLUIR | 100 solicitações a cada 5 minutos e 8000 solicitações por dia |
+| Tipo de solicitação | Limitar por usuário a todos os aplicativos |
+| ------------ | --------------------------- |
+| OBTER          | 400 solicitações a cada 5 minutos e 12000 solicitações por dia |
+| POSTAR, COLOCAR, CORRIGIR, EXCLUIR | 100 solicitações a cada 5 minutos e 8000 solicitações por dia |
 
 Os limites anteriores se aplicam aos seguintes recursos:  
 activityHistoryItem, userActivity
@@ -202,14 +225,14 @@ threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFil
 
 ### <a name="identity-protection-and-conditional-access-service-limits"></a>Proteção da identidade e limites do serviço de acesso condicional
 
-| Tipo de solicitação | Limite por inquilino |
+| Tipo de solicitação | Limitar por locatário para todos os aplicativos |
 | ------------ | ------- |
 | Qualquer | 1 solicitação por segundo |
 
 Os limites anteriores aplicam-se aos seguintes recursos:  
 Detecçãoderisco, Usuárioderisco, HistóricodeItemdeUsuárioderisco, NomedoLocal, paísNomedoLocal, ipNomedoLocal, PolíticadeAcessoCondicional.
 
-> **Nota:** no momento, os recursos listados acima não retornam um `Retry-After` cabeçalho sobre as `429 Too Many Requests` respostas.
+> **Observação:** os recursos listados acima não retornam um cabeçalho `Retry-After` em respostas `429 Too Many Requests`.
 
 ### <a name="insights-service-limits"></a>Percepção dos limites de serviço
 
@@ -224,7 +247,7 @@ Os seguintes limites se aplicam a qualquer pedido em `me/insights` ou `users/{id
 
 Os seguintes limites se aplicam a qualquer solicitação no `/reports`.
 
-| Operation                 | Limitar por aplicativo por locatário     | Limite por inquilino           |
+| Operation                 | Limitar por aplicativo por locatário     | Limitar por locatário para todos os aplicativos |
 |---------------------------|------------------------------|----------------------------|
 | Qualquer pedido (CSV)         | 14 solicitações a cada 10 minutos   | 40 solicitações a cada 10 minutos |
 | Qualquer solicitação (JSON, beta)  | 100 solicitações a cada 10 minutos  | n/d                        |
@@ -235,9 +258,20 @@ Os limites anteriores aplicam-se individualmente a cada relatório de API. Por e
 
 Os seguintes limites se aplicam a qualquer solicitação no `/invitations`.
 
-| Operation                 | Limite por inquilino             |
+| Operation                 | Limitar por locatário para todos os aplicativos |
 |---------------------------|------------------------------|
 | Qualquer operação             | 150 solicitações a cada 5 segundos   |
+
+### <a name="security-detections-and-incidents-service-limits"></a>Limites de serviços de detecção de segurança e incidentes
+
+Os seguintes limites se aplicam a qualquer solicitação no `/security`.
+
+| Operation                  | Limitar por aplicativo por locatário     |
+|----------------------------|------------------------------|
+| Qualquer operação em `alert`, `securityActions`,  `secureScore` | 150 solicitações por minuto      |
+| Qualquer operação em `tiIndicator` | 1000 solicitações por minuto |
+| Qualquer operação em `secureScore` ou `secureScorecontrolProfile` | 10.000 solicitações de API em um período de 10 minutos |
+| Qualquer operação em `secureScore` ou `secureScorecontrolProfile` | 4 solicitações simultâneas |
 
 ### <a name="open-and-schema-extensions-service-limits"></a>Limitações de serviços à extensões de esquema e abertas
 
@@ -246,6 +280,17 @@ Os seguintes limites se aplicam a qualquer solicitação no `/invitations`.
 | Qualquer          | 455 solicitações a cada 10 segundos |
 
 Os limites acima se aplicam aos seguintes recursos: openTypeExtension, schemaExtension, administrativeUnit, contato, dispositivo, evento, grupo, mensagem, organização, postagem e usuário.
+
+### <a name="identity-and-access-data-policy-operation-service-limits"></a>Limites de operação de serviços de política de dados de identidade e acesso
+
+| Tipo de solicitação | Limite por inquilino |
+| ------------ | ---------------- |
+| Postar no `exportPersonalData` | 1.000 solicitações por dia para todos os assuntos e 100 por assunto por dia |
+| Qualquer outra solicitação | 10.000 solicitações por minuto |
+
+Os limites anteriores se aplicam aos seguintes recursos: dataPolicyOperation.
+
+> **Observação:** os recursos listados acima não retornam um cabeçalho `Retry-After` nas respostas `429 Too Many Requests`.
 
 <!-- { "blockType": "throttlinggenstart" } -->
 ### <a name="education-service-limits"></a>Limites do serviço de Educação
