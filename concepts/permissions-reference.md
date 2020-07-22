@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 878129a2ff63e106c703d913dd8115a201995f4f
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
-ms.translationtype: MT
+ms.openlocfilehash: 676e51da5654b94b6bd25ea7978bef62ea398caf
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038552"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45196894"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -176,11 +176,11 @@ Nenhuma.
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegado	
+#### <a name="delegated"></a>Delegado
 
-* _Analytics. Read_: [listar as configurações relacionadas para um usuário](/graph/api/useranalytics-get-settings?view=graph-rest-beta) ( `GET /beta/me/analytics/settings` )
+* _Analytics.Read_: [Listar as configurações relacionadas para um usuário](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings`)
 
-#### <a name="application"></a>Aplicativo
+#### <a name="application"></a>Application
 
 Nenhum
 
@@ -191,14 +191,14 @@ Nenhum
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Conta da Microsoft obrigatória |
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Conta da Microsoft necessária |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------| :----------|
-| _AppCatalog. Read. All_ | Ler todos os catálogos de aplicativos | Permite que o aplicativo Leia os aplicativos nos catálogos de aplicativos.| Não | Não |
+| _AppCatalog.Read.All_ | Ler todos os catálogos de aplicativos | Permite que o aplicativo leia os aplicativos no catálogo de aplicativos.| Não | Não |
 | _AppCatalog.ReadWrite.All_ | Ler e gravar em todos os catálogos de aplicativo  | Permite que o aplicativo crie, leia, atualize e exclua aplicativos nos catálogos do aplicativo. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
-Nenhuma.
+Nenhum.
 
 ### <a name="remarks"></a>Comentários
 
@@ -226,7 +226,7 @@ Nenhum.
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Application.Read.All_ | Ler aplicativos | Permite que o aplicativo leia aplicativos e entidades de serviço em nome do usuário conectado. | Sim |
 | _Application.ReadWrite.All_ | Ler e gravar todos os aplicativos |  Permite que o aplicativo crie, leia, atualize e exclua aplicativos e entidades de serviço em nome do usuário conectado. | Sim |
-| _AppRoleAssignment. ReadWrite. All_ | Gerenciar atribuições de permissão de aplicativo e de função de aplicativo | Permite ao aplicativo gerenciar autorizações de permissão para permissões de aplicativo para qualquer API (incluindo o Microsoft Graph) e atribuições de aplicativo para qualquer aplicativo, em nome do usuário conectado. | Sim |
+| _AppRoleAssignment.ReadWrite.All_ | Gerenciar concessões de permissão de aplicativo e atribuições de função de aplicativo | Permite que o aplicativo gerencie concessões de permissão para permissões de aplicativos para qualquer API (incluindo o Microsoft Graph) e atribuições de aplicativos para qualquer aplicativo, em nome do usuário conectado. | Sim |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -235,7 +235,7 @@ Nenhum.
 | _Application.Read.All_ | Ler aplicativos | Permite que o aplicativo leia aplicativos e entidades de serviço sem um usuário conectado. | Sim |
 | _Application.ReadWrite.All_ | Ler e gravar todos os aplicativos | Permite que o aplicativo de chamada crie e gerencie (leia, atualize, atualize segredos do aplicativo e exclua) aplicativos e serviços sem um usuário conectado.  Não permite o gerenciamento de concessões de autorizações ou atribuições de aplicativos a usuários ou grupos. | Sim |
 | _Application.ReadWrite.OwnedBy_ | Gerenciar aplicativos que este aplicativo criar ou possuir | Permite que o aplicativo de chamada crie outros aplicativos e entidades de serviço, e gerencie completamente esses aplicativos e entidades de serviço (leia, atualize, atualize os segredos do aplicativo e exclua), sem um usuário conectado.  Ele não poderá atualizar os aplicativos que não pertencem a ele. Não permite o gerenciamento de concessões de autorizações ou atribuições de aplicativos a usuários ou grupos. | Sim |
-| _AppRoleAssignment. ReadWrite. All_ | Gerenciar atribuições de permissão de aplicativo e de função de aplicativo | Permite ao aplicativo gerenciar autorizações de permissão para permissões de aplicativo para qualquer API (incluindo o Microsoft Graph) e atribuições de aplicativo para qualquer aplicativo, sem um usuário conectado. | Sim |
+| _AppRoleAssignment.ReadWrite.All_ | Gerenciar concessões de permissão de aplicativo e atribuições de função de aplicativo | Permite que o aplicativo gerencie concessões de permissão para permissões de aplicativos para qualquer API (incluindo o Microsoft Graph) e atribuições de aplicativos para qualquer aplicativo, sem um usuário conectado. | Sim |
 
 ### <a name="remarks"></a>Comentários
 
@@ -267,9 +267,9 @@ A permissão _Application.ReadWrite.OwnedBy_ admite as mesmas operações que _A
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Bookings.Read.All_ |  Permite que um aplicativo leia compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado. | Voltado a aplicativos somente leitura. O usuário-alvo típico é o cliente de uma empresa de reservas. | Não | Não |
-| _BookingsAppointment. ReadWrite. All_ | Permite que um aplicativo leia e grave compromissos e clientes do Bookings, permitindo também a leitura de empresas, serviços e funcionários em nome do usuário conectado. | Desenvolvido para aplicativos de agendamento que precisam manipular compromissos e clientes. Não pode alterar informações fundamentais sobre a empresa de reservas, nem seus serviços e funcionários. O usuário-alvo típico é o cliente de uma empresa de reservas.| Não | Não |
+| _BookingsAppointment.ReadWrite.All_ | Permite que um aplicativo leia e grave compromissos e clientes do Bookings, permitindo também a leitura de empresas, serviços e funcionários em nome do usuário conectado. | Desenvolvido para aplicativos de agendamento que precisam manipular compromissos e clientes. Não pode alterar informações fundamentais sobre a empresa de reservas, nem seus serviços e funcionários. O usuário-alvo típico é o cliente de uma empresa de reservas.| Não | Não |
 | _Bookings.ReadWrite.All_ | Permite que um aplicativo leia e grave compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado. Não permite criar, excluir ou publicar de empresas do Bookings. | Voltado a aplicativos de gerenciamento que manipulam empresas existentes, seus serviços e seus funcionários. Não pode criar, excluir ou alterar o status de publicação de uma empresa de reservas. O usuário-alvo típico é o funcionário de suporte de uma organização.| Não | Não |
-| _Bookings. Manage. All_ | Permite que um aplicativo leia, grave e gerencie compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado.  | Permite que o aplicativo tenha acesso total. <br>Voltado a uma experiência de gerenciamento completa. O usuário-alvo típico é o administrador de uma organização.| Não | Não |
+| _Bookings.Manage.All_ | Permite que um aplicativo leia, grave e gerencie compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado.  | Permite que o aplicativo tenha acesso total. <br>Voltado a uma experiência de gerenciamento completa. O usuário-alvo típico é o administrador de uma organização.| Não | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -277,12 +277,12 @@ Nenhuma.
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _Bookings.Read.All_: obter a ID e os nomes do conjunto de empresas do Bookings que foi criado para um locatário (`GET /bookingBusinesses`).
-* _BookingsAppointment. ReadWrite. All_: criar um compromisso para um serviço em uma empresa de livros ( `POST /bookingBusinesses/{id}/appointments` ).
-* _Bookings.ReadWrite.All_: criar um novo serviço para as empresas do Bookings especificadas (`POST /bookingBusinesses/{id}/services`).
-* _Bookings. Manage. All_: tornar a página de agendamento dessa empresa disponível para clientes externos ( `POST /bookingBusinesses/{id}/publish` ).
+* _BookingsAppointment.ReadWrite.All_: criar um compromisso para um serviço em uma empresa de reservas (`POST /bookingBusinesses/{id}/appointments`).
+* _Bookings.ReadWrite.All_: criar um novo serviço para as empresas especificadas de reservas (`POST /bookingBusinesses/{id}/services`).
+* _Bookings.Manage.All_: disponibilizar a página de agendamento dessa empresa para clientes externos (`POST /bookingBusinesses/{id}/publish`).
 
 ## <a name="calendars-permissions"></a>Permissões de calendários
 
@@ -331,33 +331,33 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel. ReadBasic. All_ | Leia os nomes e as descrições dos canais. | Leia nomes de canal e descrições de canal, em nome do usuário conectado.    | Não | Não |
-| _Channel. Create_ | Criar canais. | Crie canais em qualquer equipe, em nome do usuário conectado.   | Sim | Não |
-| _Channel. Delete. All_ | Excluir canais. | Excluir canais em qualquer equipe, em nome do usuário conectado.   | Sim | Não |
+| _Channel.ReadBasic.All_ | Ler os nomes e descrições dos canais. | Ler os nomes e as descrições dos canais, em nome do usuário conectado.    | Não | Não |
+| _Channel.Create_ | Criar canais. | Criar canais em qualquer equipe, em nome do usuário conectado.   | Sim | Não |
+| _Channel.Delete.All_ | Excluir canais. | Excluir os canais de qualquer equipe, em nome do usuário conectado.   | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel. ReadBasic. All_ | Leia os nomes e as descrições de todos os canais. | Leia todos os nomes de canal e descrições de canal, sem um usuário conectado.  | Sim | Não |
-| _Channel. Create_ | Criar canais. | Crie canais em qualquer equipe, sem um usuário conectado.  | Sim | Não |
-| _Channel. Delete. All_ | Excluir canais. | Excluir canais em qualquer equipe, sem um usuário conectado.  | Sim | Não |
+| _Channel.ReadBasic.All_ | Ler os nomes e as descrições de todos os canais. | Ler todos os nomes e descrições do canal, sem um usuário conectado.  | Sim | Não |
+| _Channel.Create_ | Criar canais. | Criar canais em qualquer equipe, sem um usuário conectado.  | Sim | Não |
+| _Channel.Delete.All_ | Excluir canais. | Excluir os canais de qualquer equipe, sem um usuário conectado.  | Sim | Não |
 
-## <a name="channel-settings-permissions"></a>Permissões de configurações de canal
+## <a name="channel-settings-permissions"></a>Permissões de configurações de canal 
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChannelSettings. Read. All_ | Leia os nomes, descrições e configurações de canais. | Leia todos os nomes de canal, descrições de canal e configurações de canal, em nome do usuário conectado.   | Sim | Não |
-| _ChannelSettings. ReadWrite. All_ | Ler e gravar os nomes, descrições e configurações de canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, em nome do usuário conectado.  | Sim | Não |
+| _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações dos canais. | Ler todos os nomes, descrições e configurações dos canais, em nome do usuário conectado.   | Sim | Não |
+| _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações dos canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, em nome do usuário conectado.  | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChannelSettings. Read. All_ | Leia os nomes, as descrições e as configurações de todos os canais. | Leia todos os nomes de canal, descrições de canal e configurações de canal, sem um usuário conectado.  | Sim | Não |
-| _ChannelSettings. ReadWrite. All_ | Ler e gravar os nomes, descrições e configurações de todos os canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, sem um usuário conectado. | Sim | Não |
+| _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações de todos os canais. | Ler todos os nomes, descrições e configurações do canal, sem um usuário conectado.  | Sim | Não |
+| _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações de todos os canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, sem um usuário conectado. | Sim | Não |
 
 ## <a name="calls-permissions"></a>Permissões de chamadas
 
@@ -411,7 +411,7 @@ Nenhum.
 
 ### <a name="remarks"></a>Comentários
 
-A permissão _CallRecords. Read. All_ concede a um aplicativo acesso privilegiado ao [CallRecords](/graph/api/resources/callrecords-callrecord) para cada chamada e reunião online dentro da sua organização, incluindo chamadas de e para números de telefone externos. Isso inclui detalhes potencialmente confidenciais sobre quem participou da chamada, bem como informações técnicas referentes a essas chamadas e reuniões que podem ser usadas para a solução de problemas de rede, como endereços IP, detalhes de dispositivos e outras informações de rede.
+A permissão _CallRecords.Read.All_concede a um aplicativo acesso privilegiado ao [callRecords](/graph/api/resources/callrecords-callrecord) para todas as chamadas e reuniões online dentro da organização, incluindo chamadas de e para números de telefone externos. Isso inclui detalhes potencialmente confidenciais sobre quem participou da chamada, bem como informações técnicas referentes a essas chamadas e reuniões, que podem ser usadas para solucionar problemas de rede, como endereços IP, detalhes do dispositivo e outras informações de rede.
 
 > **Importante:** o critério deve ser usado ao conceder essa permissão aos aplicativos. Os registros de chamadas podem fornecer informações da operação dos seus negócios e, portanto, podem ser um alvo para agentes mal-intencionados. Conceda essa permissão apenas aos aplicativos que você confia para atenderem aos seus requisitos de proteção de dados.
 
@@ -434,17 +434,17 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel. ReadBasic. All_ | Leia os nomes e as descrições dos canais. | Leia nomes de canal e descrições de canal, em nome do usuário conectado.    | Não | Não |
-| _Channel. Create_ | Criar canais. | Crie canais em qualquer equipe, em nome do usuário conectado.   | Sim | Não |
-| _Channel. Delete. All_ | Excluir canais. | Excluir canais em qualquer equipe, em nome do usuário conectado.   | Sim | Não |
+| _Channel.ReadBasic.All_ | Ler os nomes e descrições dos canais. | Ler os nomes e as descrições dos canais, em nome do usuário conectado.    | Não | Não |
+| _Channel.Create_ | Criar canais. | Criar canais em qualquer equipe, em nome do usuário conectado.   | Sim | Não |
+| _Channel.Delete.All_ | Excluir canais. | Excluir os canais de qualquer equipe, em nome do usuário conectado.   | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
  
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel. ReadBasic. All_ | Leia os nomes e as descrições de todos os canais. | Leia todos os nomes de canal e descrições de canal, sem um usuário conectado.  | Sim | Não |
-| _Channel. Create_ | Criar canais. | Crie canais em qualquer equipe, sem um usuário conectado.  | Sim | Não |
-| _Channel. Delete. All_ | Excluir canais. | Excluir canais em qualquer equipe, sem um usuário conectado.  | Sim | Não |
+| _Channel.ReadBasic.All_ | Ler os nomes e as descrições de todos os canais. | Ler todos os nomes e descrições do canal, sem um usuário conectado.  | Sim | Não |
+| _Channel.Create_ | Criar canais. | Criar canais em qualquer equipe, sem um usuário conectado.  | Sim | Não |
+| _Channel.Delete.All_ | Excluir canais. | Excluir os canais de qualquer equipe, sem um usuário conectado.  | Sim | Não |
 
 ## <a name="channel-member-permissions"></a>Permissões de membro do canal
 
@@ -452,15 +452,15 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_ChannelMember. Read. All_  |Leia os membros dos canais. |Leia os membros dos canais em nome do usuário conectado. |Sim | Não |
-|_ChannelMember. ReadWrite. All_ | Adicione e remova membros dos canais.| Adicione e remova membros dos canais em nome do usuário conectado. Também permite alterar a função de um membro. Por exemplo: de proprietário para não proprietário.| Sim | Não |
+|_ChannelMember.Read.All_  |Leia os membros dos canais. |Leia os membros dos canais em nome do usuário conectado. |Sim | Não |
+|_ChannelMember.ReadWrite.All_ | Adicione e remova membros dos canais.| Adicione e remova membros dos canais em nome do usuário conectado. Também permite alterar a função de um membro. Por exemplo: de proprietário para não proprietário.| Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_ChannelMember. Read. All_ |Leia os membros dos canais. |Leia os membros dos canais sem um usuário conectado. |Sim | Não |
-|_ChannelMember. ReadWrite. All_ |Adicione e remova membros dos canais.|Adicione e remova membros dos canais sem um usuário conectado. Também permite alterar a função de um membro. Por exemplo: de proprietário para não proprietário.| Sim | Não |
+|_ChannelMember.Read.All_ |Leia os membros dos canais. |Leia os membros dos canais sem um usuário conectado. |Sim | Não |
+|_ChannelMember.ReadWrite.All_ |Adicione e remova membros dos canais.|Adicione e remova membros dos canais sem um usuário conectado. Também permite alterar a função de um membro. Por exemplo: de proprietário para não proprietário.| Sim | Não |
 
 ## <a name="channel-message-permissions"></a>Permissões de mensagem de canal
 
@@ -468,9 +468,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_ChannelMessage. Delete_ (visualização privada)|Excluir mensagens de canal do usuário |Permite que um aplicativo exclua mensagens de canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
-|_ChannelMessage. Edit_ (visualização privada)|Editar mensagens de canal do usuário |Permite que um aplicativo edite mensagens de canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
-|_ChannelMessage.Read.All_ |Ler mensagens de canal de usuário  |Permite que um aplicativo Leia as mensagens de um canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
+|_ChannelMessage.Delete_ (visualização privada)|Excluir mensagens de canal do usuário |Permite que um aplicativo exclua mensagens de canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
+|_ChannelMessage.Edit_ (visualização privada)|Editar mensagens de canal do usuário |Permite que um aplicativo edite mensagens de canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
+|_ChannelMessage.Read.All_ |Ler mensagens do canal do usuário  |Permite que um aplicativo leia as mensagens de um canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
 |_ChannelMessage.Send_ |Enviar a mensagem do canal |Permite que um aplicativo envie mensagens de canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
@@ -482,21 +482,21 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 > **Observação:** consulte também [Group. Read. All](#group-permissions).
 
-## <a name="channel-settings-permissions"></a>Permissões de configurações de canal
+## <a name="channel-settings-permissions"></a>Permissões de configurações de canal 
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChannelSettings. Read. All_ | Leia os nomes, descrições e configurações de canais. | Leia todos os nomes de canal, descrições de canal e configurações de canal, em nome do usuário conectado.   | Sim | Não |
-| _ChannelSettings. ReadWrite. All_ | Ler e gravar os nomes, descrições e configurações de canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, em nome do usuário conectado.  | Sim | Não |
+| _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações dos canais. | Ler todos os nomes, descrições e configurações dos canais, em nome do usuário conectado.   | Sim | Não |
+| _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações dos canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, em nome do usuário conectado.  | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChannelSettings. Read. All_ | Leia os nomes, as descrições e as configurações de todos os canais. | Leia todos os nomes de canal, descrições de canal e configurações de canal, sem um usuário conectado.  | Sim | Não |
-| _ChannelSettings. ReadWrite. All_ | Ler e gravar os nomes, descrições e configurações de todos os canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, sem um usuário conectado. | Sim | Não |
+| _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações de todos os canais. | Ler todos os nomes, descrições e configurações do canal, sem um usuário conectado.  | Sim | Não |
+| _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações de todos os canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, sem um usuário conectado. | Sim | Não |
 
 ## <a name="chats-permissions"></a>Permissões de bate-papo
 
@@ -505,28 +505,28 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read_ |Ler suas mensagens de bate-papo  |Permite que um aplicativo leia, em seu nome, suas mensagens de bate-papo de um para um ou de grupo no Microsoft Teams. |Não | Não |
-|_Chat. ReadBasic_ |Ler nomes e membros de threads de chat de usuário  |Permite que um aplicativo Leia os membros e descrições dos threads de chat de 1:1 e de grupo, em nome do usuário conectado. |Não | Não |
+|_Chat.ReadBasic_ |Ler nomes e membros de threads de chat do usuário  |Permite que um aplicativo leia os membros e as descrições de threads de chat individuais e de grupo, em nome do usuário conectado. |Não | Não |
 |_Chat.ReadWrite_ |Leia as suas mensagens de chat e envie novas mensagens   |Permite que um aplicativo leia e envie, em seu nome, suas mensagens de chat individual ou em grupo no Microsoft Teams. |Não | Não |
-|_Chat. Send_ (visualização privada)|Enviar mensagens de chat de usuário  |Permite que um aplicativo envie mensagens de chat de grupo e 1:1 no Microsoft Teams, em nome do usuário conectado. |Não | Não |
+|_Chat.Send_ (visualização privada)|Enviar mensagens de chat do usuário  |Permite que o aplicativo envie mensagens de chat individuais e de grupo no Microsoft Teams, em nome do usuário conectado. |Não | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read.All_ |Ler todas as mensagens de bate-papo  |Permite que um aplicativo leia, sem um usuário conectado, suas mensagens de bate-papo de um para um ou de grupo no Microsoft Teams. |Sim | Não |
-|_Chat. ReadBasic. All_ |Ler nomes e membros de threads de chat de usuário  |Ler nomes e membros de todos os threads de chat. |Não | Não |
+|_Chat.ReadBasic.All_ |Ler nomes e membros de threads de chat do usuário  |Ler nomes e membros de todos os threads de chat. |Não | Não |
 |_Chat.UpdatePolicyViolation.All_ |Sinalizar mensagens de chat para a política de violação |Permite que o aplicativo atualize as mensagens de chat de grupo ou Microsoft Teams 1:1, aplicando um conjunto de propriedades de violação da política de prevenção contra perda de dados (DLP) para controlar a saída de processamento DLP. | Sim | Não |
-|_Chat. Send. All_ (visualização privada)|Enviar mensagens de chat de usuário  |Permite que um aplicativo envie mensagens de bate-papo 1:1 e de grupo no Microsoft Teams sem um usuário conectado. |Não | Não |
+|_Chat.Send.All_ (visualização privada)|Enviar mensagens de chat do usuário  |Permite que um aplicativo envie mensagens de chat individuais e de grupo no Microsoft Teams, sem um usuário conectado. |Não | Não |
 
 > **Observação:** para mensagens em um canal, consulte [permissões ChannelMessage](#channel-message-permissions).
 
-## <a name="chatmessage-permissions-private-preview"></a>Permissões chat ([Visualização privada](#permissions-availability-status))
+## <a name="chatmessage-permissions-private-preview"></a>ChatMessage permissions ([visualização privada](#permissions-availability-status))
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Chat. Send_ (visualização privada) | Enviar mensagens de chat de usuário | Permite que um aplicativo envie mensagens de chat de grupo e 1:1 no Microsoft Teams, em nome do usuário conectado. | Não | Não |
+| _ChatMessage.Send_ (visualização privada) | Enviar mensagens de chat do usuário | Permite que o aplicativo envie mensagens de chat individuais e de grupo no Microsoft Teams, em nome do usuário conectado. | Não | Não |
 
 ## <a name="cloud-printing-permissions"></a>Permissões de impressão na nuvem
 
@@ -534,11 +534,11 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Printer. ReadWrite. All_ | Ler e atualizar impressoras | Permite que o aplicativo Leia e atualize impressoras sem um usuário conectado. Não permite criar (registrar) ou excluir (cancelar o registro) de impressoras. | Sim |
-| _PrintJob. Read. All_ | Ler trabalhos de impressão | Permite que o aplicativo Leia os metadados e o conteúdo do documento de trabalhos de impressão sem um usuário conectado. | Sim |
-| _PrintJob. ReadBasic. All_ | Ler informações básicas sobre trabalhos de impressão | Permite que o aplicativo Leia os metadados dos trabalhos de impressão sem um usuário conectado. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim |
-| _PrintJob. ReadWrite. All_ | Ler e gravar trabalhos de impressão | Permite que o aplicativo Leia e atualize os metadados e o conteúdo do documento de trabalhos de impressão sem um usuário conectado. | Sim |
-| _PrintJob. ReadWriteBasic. All_ | Ler e gravar informações básicas para trabalhos de impressão | Permite que o aplicativo Leia e atualize os metadados dos trabalhos de impressão sem um usuário conectado. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim |
+| _Printer.ReadWrite.All_ | Ler e atualizar as impressoras | Permite que o aplicativo leia e atualize as impressoras sem um usuário conectado. Não permite a criação (registro) ou a exclusão (cancelamento do registro) de impressoras. | Sim |
+| _PrintJob.Read.All_ | Ler os trabalhos de impressão | Permite que o aplicativo leia os metadados e o conteúdo do documento dos trabalhos de impressão sem um usuário conectado. | Sim |
+| _PrintJob.ReadBasic.All_ | Ler informações básicas de trabalhos para impressão | Permite que o aplicativo leia os metadados dos trabalhos de impressão sem um usuário conectado. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim |
+| _PrintJob.ReadWrite.All_ | Ler e gravar trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados e o conteúdo do documento dos trabalhos de impressão sem um usuário conectado. | Sim |
+| _PrintJob.ReadWriteBasic.All_ | Ler e gravar informações básicas para trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados dos trabalhos de impressão sem um usuário conectado. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim |
 
 ---
 
@@ -724,7 +724,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |Permissão|Exibir Cadeia de Caracteres|Descrição|Consentimento Obrigatório do Administrador|
 |:----------|:--------------|:-----------|:-------|
 |_EntitlementManagement.ReadWrite.All_|Ler e gravar os recursos de gerenciamento de direitos|Permite ao aplicativo solicitar acesso para ler e gerenciar pacotes de acesso e recursos de gerenciamento de direitos relacionados em nome do usuário conectado.|Sim|
-|_EntitlementManagement. Read. All_|Ler recursos de gerenciamento de direitos|Permite ao aplicativo solicitar acesso a pacotes de acesso de leitura e recursos de gerenciamento de direitos relacionados em nome do usuário conectado.|Sim|
+|_EntitlementManagement.Read.All_|Ler os recursos de gerenciamento de direitos|Permite ao aplicativo solicitar acesso para ler pacotes de acesso e recursos de gerenciamento de direitos relacionados em nome do usuário conectado.|Sim|
 
 ## <a name="files-permissions"></a>Permissões de arquivos
 
@@ -802,13 +802,13 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 A funcionalidade de grupo não é compatível com contas pessoais da Microsoft.
 
-Para grupos do Microsoft 365, as permissões de grupo concedem ao aplicativo acesso ao conteúdo do grupo; por exemplo, conversas, arquivos, anotações e assim por diante.
+Para grupos do Microsoft 365, as permissões de grupo concedem ao aplicativo acesso ao conteúdo do grupo. Por exemplo, conversas, arquivos, anotações e assim por diante.
 
 No caso de Permissões de aplicativo, há algumas limitações para APIs com suporte. Confira mais informações em [problemas conhecidos](known-issues.md).
 
 Em alguns casos, um aplicativo pode precisar de [Permissões de diretório](#directory-permissions) para ler algumas propriedades do grupo como `member` e `memberOf`. Por exemplo, se um grupo tiver um ou mais [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) como membros, o aplicativo precisará de permissões eficazes para ler as entidades de serviço através do recebimento de uma das _Permissões de diretório\*_, caso contrário, o Microsoft Graph retornará um erro. No caso de Permissões Delegadas, o usuário conectado deve ter privilégios suficientes na organização para ler as entidades de serviço. A mesma orientação se aplica à propriedade `memberOf` que pode retornar [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
-Para definir um atributo **preferredDataLocation** do grupo Microsoft 365, um aplicativo precisa de permissão Directory. ReadWrite. All. Quando os usuários em um ambiente multigeográfico criam um grupo do Microsoft 365, o valor **preferredDataLocation** do grupo é automaticamente definido para o do usuário. Para obter mais informações sobre o local de dados preferencial de grupos, consulte [Create a Microsoft 365 Group with a PDL específica](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl).
+Para definir o atributo **preferredDataLocation** de um grupo do Microsoft 365, um aplicativo precisa da permissão Directory.ReadWrite.All. Quando os usuários em um ambiente multigeográfico criam um grupo do Microsoft 365, o valor**preferredDataLocation** para o grupo é definido automaticamente como sendo igual ao do usuário. Para saber mais sobre o local de dados preferencial dos grupos, confira [Criar um grupo do Microsoft 365 com uma PDL específica](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl).
 
 As permissões de grupo são usadas para controlar o acesso aos recursos e APIs do [Microsoft Teams](/graph/api/resources/teams-api-overview). Não há suporte para as contas pessoais da Microsoft.
 
@@ -816,10 +816,10 @@ As Permissões de grupo também são usadas para controlar o acesso a APIs e rec
 
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
-* _Group. Read. All_: ler todos os grupos do Microsoft 365 dos quais o usuário conectado é membro ( `GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')` ).
-* _Group. Read. All_: ler todo o conteúdo do grupo do Microsoft 365 como conversas ( `GET /groups/{id}/conversations` ).
+* _Group.Read.All_: Ler todos os grupos do Microsoft 365 dos quais o usuário conectado é membro (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
+* _Group.Read.All_: Ler todo o conteúdo do grupo do Microsoft 365, como conversas (`GET /groups/{id}/conversations`).
 * _Group.ReadWrite.All_: Atualizar propriedades do grupo, como fotografias (`PUT /groups/{id}/photo/$value`).
 * _GroupMember.ReadWrite.All_: Atualizar os membros do grupo (`POST /groups/{id}/members/$ref`).
 > **Observação:** Isso também requer o _User.ReadBasic.All_ para ler o usuário para adicionar como membro.
@@ -827,7 +827,7 @@ As Permissões de grupo também são usadas para controlar o acesso a APIs e rec
 #### <a name="application"></a>Aplicativo
 
 * _Group.Read.All_: Localizar todos os grupos com nomes que começam com "Vendas" (`GET /groups?$filter=startswith(displayName,'Sales')`).
-* _Group. ReadWrite. All_: o serviço de daemon cria novos eventos no calendário de um grupo do Microsoft 365 ( `POST /groups/{id}/events` ).
+* _Group.ReadWrite.All_: O serviço daemon cria novos eventos no calendário de um grupo do Microsoft 365 (`POST /groups/{id}/events`).
 * _Group.Create_: Criar um novo grupo (`POST /groups`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
@@ -1044,7 +1044,7 @@ Com a permissão _Mail.Send_ ou _Mail.Send.Shared_, um aplicativo pode enviar em
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _Mail.Read_: Listar mensagens na caixa de entrada do usuário classificadas por `receivedDateTime` (`GET /me/mailfolders/inbox/messages?$orderby=receivedDateTime DESC`).
 * _Mail.Read.Shared_: Localizar todas as mensagens com anexos na caixa de entrada de um usuário que compartilhou sua caixa de entrada com o usuário conectado (`GET /users{id | userPrincipalName}/mailfolders/inbox/messages?$filter=hasAttachments eq true`).
@@ -1081,7 +1081,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 ### <a name="remarks"></a>Comentários
 _Member.Read.Hidden_ é válida somente para contas corporativas ou de estudante.
 
-A associação em alguns grupos do Microsoft 365 pode ser ocultada. Isso significa que apenas os membros do grupo podem exibir seus membros. Esse recurso pode ser usado para ajudar a cumprir as normas que exigem que uma organização oculte a associação de grupo de pessoas de dentro (por exemplo, um grupo do Microsoft 365 que representa os alunos registrados em uma classe).
+A associação pode estar oculta em alguns grupos do Microsoft 365. Isso significa que somente os membros do grupo podem exibir seus membros. Esse recurso pode ser usado para ajudar a cumprir regulamentos que exijam a ocultação da associação de grupo de pessoas externas (por exemplo, um grupo do Microsoft 365 que representa os alunos registrados em uma classe).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1129,7 +1129,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado	
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -1173,7 +1173,7 @@ Publique uma notificação centrada no usuário, que pode ser entregue aos vári
 |Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_OnlineMeetings.Read.All_|Ler detalhes de Reunião Online do aplicativo |Permite que o aplicativo leia os detalhes da reunião online associada ao VTC em sua organização, sem um usuário conectado.|Sim|
-|_OnlineMeetings.ReadWrite.All_|Ler detalhes de Reunião Online do aplicativo|Permite que um aplicativo crie e leia as reuniões online sem um usuário conectado.|Sim|
+|_OnlineMeetings.ReadWrite.All_|Ler detalhes de Reunião Online a partir do aplicativo|Permite que um aplicativo crie e leia as reuniões online sem um usuário conectado.|Sim|
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1344,7 +1344,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Policy.Read.All_ | Ler as políticas da sua organização | Permite ao aplicativo ler as políticas da sua organização em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.ApplicationConfiguration_ | Leia e escreva as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia e grave as políticas de configuração dos aplicativos da sua organização em nome do usuário conectado. | Sim | Não |
-| _Policy. ReadWrite. AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo Leia e grave as políticas de fluxo de autenticação em nome do usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo leia e grave as políticas de fluxo de autenticação, em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.ConditionalAccess_ | Ler e gravar as políticas de acesso condicional da sua organização | Permite que o aplicativo leia e grave todas as políticas de acesso condicional em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.FeatureRollout_ | Ler e gravar as políticas de implantação de novos recursos da sua organização | Permite que o aplicativo leia e grave todas as políticas de implantação de novos recursos em nome do usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim | Não |
 | _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas TrustFramework (Estrutura de Confiança) da sua organização | Permite que o aplicativo leia e grave todas as políticas de TrustFramework da sua organização em nome do usuário conectado. | Sim | Não |
@@ -1355,7 +1355,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Policy.Read.All_ | Leia as políticas da sua organização | Permite que o aplicativo leia todas as políticas da sua organização sem um usuário conectado. | Sim |
 | _Policy.Read.ApplicationConfiguration_ | Leia as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia todas as políticas de configuração dos aplicativos da sua organização sem um usuário conectado. | Sim |
-| _Policy. ReadWrite. AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo Leia e grave as políticas de fluxo de autenticação para o locatário, sem um usuário conectado. | Sim |
+| _Policy.ReadWrite.AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo leia e grave todas as políticas de fluxo de autenticação do locatário, sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.FeatureRollout_ | Políticas de distribuição de recursos de leitura e gravação | Permite que o aplicativo leia e grave todas as políticas de distribuição de recursos sem um usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim |
 | _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas da estrutura de confiança da sua organização | Permite que o aplicativo leia e grave todas as políticas da estrutura de confiança da sua organização sem um usuário conectado. | Sim |
 
@@ -1367,7 +1367,7 @@ Os seguintes usos são válidos para permissões delegadas e permissões de apli
 * _Policy.Read.All_: Ler as políticas da estrutura de confiança da sua organização (`GET /beta/trustFramework/policies`)
 * _Policy.Read.All_: Ler as políticas de distribuição de recursos da sua organização (`GET /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.ApplicationConfiguration: leia e grave as políticas de configuração dos aplicativos da sua organização (`POST /beta/policies/tokenLifetimePolicies`)
-* _Policy. ReadWrite. AuthenticationFlows_: ler e gravar a política de fluxos de autenticação da sua organização ( `PATCH /beta/policies/authenticationFlowsPolicy` )
+* _Policy.ReadWrite.AuthenticationFlows_: Ler e gravar a política de fluxos de autenticação da sua organização (`PATCH /beta/policies/authenticationFlowsPolicy`)
 * _Policy.ReadWrite.ConditionalAccess_: Leia e escreva as políticas de acesso condicional da sua organização (`POST /beta/identity/conditionalAccess/policies`)
 * _Policy.ReadWrite.FeatureRollout_: Ler e gravar todas as políticas de distribuição de recursos da sua organização (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_: Leitura e gravação de todas as políticas da estrutura de confiança da sua organização (`POST /beta/trustFramework/policies`)
@@ -1424,17 +1424,17 @@ Para um aplicativo com permissões delegadas para ler programas e controles de p
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Reports.Read.All_ | Ler todos os relatórios de uso | Permite que um aplicativo leia todos os relatórios de uso de serviço em nome do usuário conectado. Os serviços que fornecem relatórios de uso incluem o Microsoft 365 e o Azure Active Directory. | Sim | Não |
+| _Reports.Read.All_ | Ler todos os relatórios de uso | Permite que um aplicativo leia todos os relatórios de uso de serviço em nome do usuário conectado. Serviços que fornecem relatórios de uso incluem o Microsoft 365 e o Azure Active Directory. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Reports.Read.All_ | Ler todos os relatórios de uso | Permite que um aplicativo leia todos os relatórios de uso de serviço sem um usuário conectado. Os serviços que fornecem relatórios de uso incluem o Microsoft 365 e o Azure Active Directory. | Sim |
+| _Reports.Read.All_ | Ler todos os relatórios de uso | Permite que um aplicativo leia todos os relatórios de uso de serviço sem um usuário conectado. Serviços que fornecem relatórios de uso incluem o Microsoft 365 e o Azure Active Directory. | Sim |
 
 ### <a name="remarks"></a>Comentários
 - As permissões de relatórios só são válidas para contas corporativas ou de estudante.
-- Para as permissões delegadas permitirem que aplicativos leiam relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir ao usuário uma função de administrador limitada do Azure AD. Para obter mais detalhes, consulte [Authorization for APIs to read Microsoft 365 Usage Reports](reportroot-authorization.md).
+- Para as permissões delegadas permitirem que aplicativos leiam relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir ao usuário uma função de administrador limitada do Azure AD. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](reportroot-authorization.md).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1442,7 +1442,7 @@ Para um aplicativo com permissões delegadas para ler programas e controles de p
 
 * _Reports.Read.All_: Ler o relatório de detalhes de uso de aplicativos de email com período de 7 dias (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`).
 * _Reports.Read.All_: Ler o relatório de detalhes de atividade de email com data de '2017-01-01' (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`).
-* _Reports. Read. All_: ler o relatório de detalhes de ativações do Microsoft 365 ( `GET /reports/Office365Activations(view='Detail')/content` ).
+* _Reports.Read.All_: Ler o relatório de detalhes de ativações do Microsoft 365 (`GET /reports/Office365Activations(view='Detail')/content`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -1637,31 +1637,31 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Teams. ReadBasic. All_ | Ler os nomes e as descrições do teams | Leia os nomes e as descrições de Teams em nome do usuário conectado. | Não | Não |
-| _Teams. Create_ (visualização privada) | Criar equipes | Criar equipes, em nome do usuário conectado. | Sim | Não |
+| _Teams.ReadBasic.All_ | Ler os nomes e as descrições das equipes | Ler os nomes e as descrições das equipes, em nome do usuário conectado. | Não | Não |
+| _Teams.Create_ (visualização privada) | Criar equipes | Criar equipes, em nome do usuário conectado. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Teams. ReadBasic. All_ | Obter uma lista de todas as equipes | Obtenha uma lista de todas as equipes, sem um usuário conectado.  | Sim | Não |
-| _Teams. Create_ (visualização privada) | Criar equipes | Criar equipes, sem um usuário conectado. | Sim | Não |
+| _Teams.ReadBasic.All_ | Obter uma lista de todas as equipes | Obter uma lista de todas as equipes, sem um usuário conectado.  | Sim | Não |
+| _Teams.Create_ (visualização privada) | Criar equipes | Criar equipes, sem um usuário conectado. | Sim | Não |
 
-## <a name="team-settings-permissions"></a>Permissões de configurações da equipe
+## <a name="team-settings-permissions"></a>Permissões de configurações de equipe
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsSettings. Read. All_ | Ler as configurações do teams | Leia as configurações da equipe, em nome do usuário conectado. | Sim | Não |
-| _TeamsSettings. ReadWrite. All_ | Ler e alterar as configurações do teams | Ler e alterar as configurações de todas as equipes, em nome do usuário conectado.   | Sim | Não |
+| _TeamsSettings.Read.All_ | Ler as configurações das equipes | Ler as configurações dessa equipe, em nome do usuário conectado. | Sim | Não |
+| _TeamsSettings.ReadWrite.All_ | Ler e alterar configurações das equipes | Ler e alterar as configurações de todas as equipes, em nome do usuário conectado.   | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsSettings. Read. All_ | Ler as configurações de todas as equipes | Leia as configurações desta equipe, sem um usuário conectado.    | Sim | Não |
-| _TeamsSettings. ReadWrite. All_ | Ler e alterar as configurações de todas as equipes. | Ler e alterar as configurações de todas as equipes, sem um usuário conectado. | Sim | Não |
+| _TeamsSettings.Read.All_ | Ler as configurações de todas as equipes | Ler as configurações dessa equipe, sem um usuário conectado.    | Sim | Não |
+| _TeamsSettings.ReadWrite.All_ | Ler e alterar as configurações de todas as equipes. | Ler e alterar as configurações de todas as equipes, sem um usuário conectado. | Sim | Não |
 
 ## <a name="teams-activity-permissions-private-preview"></a>Permissões de atividades do Teams ([visualização privada](#permissions-availability-status))
 
@@ -1679,116 +1679,116 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _TeamsActivity.Read.All_ (visualização privada) | Ler o feed de atividades do trabalho em equipe de todos os usuários. | Permite que o aplicativo leia o feed de atividade em equipe de todos os usuários sem um usuário conectado. | Sim | Não |
 | _TeamsActivity.Send_ (visualização particular)| Enviar uma atividade de trabalho em equipe para qualquer usuário | Permite que o aplicativo envie novas atividades para o feed de atividade em equipe de qualquer usuário, sem um usuário conectado. | Sim | Não |
 
-## <a name="teams-app-permissions-deprecated"></a>Permissões do aplicativo do Teams (preterido)
+## <a name="teams-app-permissions-deprecated"></a>Permissões do aplicativo do Teams (preteridas)
 
 >[!NOTE]
->Essas permissões são preteridas. Use o TeamsAppInstallation equivalente. \* . Em vez disso, todas as permissões.
+>Essas permissões foram preteridas. Use o TeamsAppInstallation equivalente.\*. Em vez disso, todas as permissões.
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsApp. Read. All_ (**preterido**)| Ler todos os aplicativos instalados do Teams | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado e em todas as equipes das quais o usuário é membro. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
-| _TeamsApp. ReadWrite. All_ (**preterido**)| Gerenciar todos os aplicativos do Teams | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado e também das equipes das quais o usuário é membro. Não oferece a capacidade de ler ou gravar configurações específicas do aplicativo. | Sim | Não |
+| _TeamsApp.Read.All_ (**Preterido**)| Ler todos os aplicativos do Teams instalados | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado e em todas as equipes das quais o usuário é membro. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
+| _TeamsApp.ReadWrite.All_ (**Preterido**)| Gerenciar todos os aplicativos do Teams | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado e também das equipes das quais o usuário é membro. Não oferece a capacidade de ler ou gravar configurações específicas do aplicativo. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsApp. Read. All_ (**preterido**)| Lê os aplicativos do Teams instalados de todos os usuários | Permite que o aplicativo leia os aplicativos do Teams que estão instalados para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
-| _TeamsApp. ReadWrite. All_ (**preterido**)| Gerencia os aplicativos do Teams de todos os usuários  | Permite que o aplicativo leia, instale, atualize e desinstale  os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.   | Sim | Não |
+| _TeamsApp.Read.All_ (**Preterido**)| Lê os aplicativos do Teams instalados de todos os usuários | Permite que o aplicativo leia os aplicativos do Teams que estão instalados para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
+| _TeamsApp.ReadWrite.All_ (**Preterido**)| Gerencia os aplicativos do Teams de todos os usuários  | Permite que o aplicativo leia, instale, atualize e desinstale  os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.   | Sim | Não |
 
-## <a name="teams-app-installation-permissions-private-preview"></a>Permissões de instalação de aplicativos do Teams ([Visualização privada](#permissions-availability-status))
+## <a name="teams-app-installation-permissions"></a>Permissões de instalação do aplicativo do Teams
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsAppInstallation. ReadForUser_ (visualização privada) | Ler aplicativos do Microsoft Teams instalados| Permite que o aplicativo Leia os aplicativos do teams instalados para o usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
-| _TeamsAppInstallation. ReadWriteForUser_ (visualização privada) | Gerenciar aplicativos de equipes instalados do usuário| Permite que o aplicativo Leia, instale, atualize e desinstale aplicativos do teams instalados para o usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Não | Não |
-| _TeamsAppInstallation. ReadWriteSelfForUser_ (visualização privada) | Permitir que o aplicativo se gerencie no Teams| Permite que o aplicativo de equipes Leia, instale, atualize e desinstale o próprio para o Microsoft Teams que o usuário conectado pode acessar.| Sim | Não |
-| _TeamsAppInstallation. ReadForTeam_ (visualização privada) | Ler aplicativos do teams instalados no Teams| Permite que o aplicativo Leia os aplicativos do teams instalados no Teams que o usuário conectado pode acessar. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
-| _TeamsAppInstallation. ReadWriteForTeam_ (visualização privada) | Gerenciar aplicativos instalados do teams no Teams| Permite que o aplicativo Leia, instale, atualize e desinstale aplicativos do teams no Teams que o usuário conectado pode acessar. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
-| _TeamsAppInstallation. ReadWriteSelfForTeam_ (visualização privada) | Permitir que o aplicativo se gerencie no Teams| Permite que o aplicativo de equipes Leia, instale, atualize e desinstale o próprio para o Microsoft Teams que o usuário conectado pode acessar.| Sim | Não |
+| _TeamsAppInstallation.ReadForUser_  | Ler os aplicativos do Teams instalados do usuário| Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Não | Não |
+| _TeamsAppInstallation.ReadWriteForUser_ | Gerenciar os aplicativos do Teams instalados do usuário| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams instalados para o usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
+| _TeamsAppInstallation.ReadWriteSelfForUser_ (visualização privada) | Permitir que o aplicativo se gerencie nas equipes| Permite que um aplicativo do Teams se leia, se instale, se atualize e se desinstale para as equipes as quais o usuário conectado possa acessar.| Não | Não |
+| _TeamsAppInstallation.ReadForTeam_ | Ler os seus aplicativos do Teams instalados nas equipes| Permite que o aplicativo leia os aplicativos do Teams instalados nas equipes as quais o usuário conectado possa acessar. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
+| _TeamsAppInstallation.ReadWriteForTeam_ | Gerenciar os aplicativos do Teams instalados nas equipes| Permite que o aplicativo do Teams leia, instale, atualize e desinstale aplicativos do Teams nas equipes que o usuário conectado possa acessar. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
+| _TeamsAppInstallation.ReadWriteSelfForTeam_ (visualização privada) | Permitir que o aplicativo se gerencie nas equipes| Permite que um aplicativo do Teams se leia, se instale, se atualize e se desinstale para as equipes as quais o usuário conectado possa acessar.| Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | 
 |:----------------|:------------------|:-------------|:-----------------------|
-| _TeamsAppInstallation. ReadForUser. All_ (visualização privada) | Ler aplicativos do teams instalados para todos os usuários| Permite que o aplicativo leia os aplicativos do Teams que estão instalados para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | 
-| _TeamsAppInstallation. ReadWriteForUser. All_ (visualização privada) | Gerenciar aplicativos do teams para todos os usuários| Permite que o aplicativo leia, instale, atualize e desinstale  os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation. ReadWriteSelfForUser. All_ (visualização privada) | Permitir que o aplicativo se gerencie para todos os usuários| Permite que um aplicativo do teams Leia, instale, atualize e desinstale em qualquer usuário, sem um usuário conectado.| Sim | 
-| _TeamsAppInstallation. ReadForTeam. All_ (visualização privada) | Ler aplicativos do teams instalados para todas as equipes| Permite que o aplicativo Leia os aplicativos do teams instalados em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | 
-| _TeamsAppInstallation. ReadWriteForTeam. All_ (visualização privada) | Gerenciar aplicativos do teams para todas as equipes| Permite que o aplicativo Leia, instale, atualize e desinstale aplicativos do teams em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation. ReadWriteSelfForTeam. All_ (visualização privada) | Permitir que o aplicativo Teams se gerencie para todas as equipes| Permite que um aplicativo do teams Leia, instale, atualize e desinstale em qualquer equipe, sem um usuário conectado.| Sim | 
+| _TeamsAppInstallation.ReadForUser.All_ | Ler os aplicativos do Teams instalados para todos os usuários| Permite que o aplicativo leia os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | 
+| _TeamsAppInstallation.ReadWriteForUser.All_ | Gerenciar aplicativos do Teams para todos os usuários| Permite que o aplicativo leia, instale, atualize e desinstale os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation.ReadWriteSelfForUser.All_ (visualização privada) | Permitir que o aplicativo se gerencie para todos os usuários| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale para qualquer usuário, sem um usuário conectado.| Sim | 
+| _TeamsAppInstallation.ReadForTeam.All_ | Ler os aplicativos do Teams instalados para todas as equipes| Permite que o aplicativo leia os aplicativos do Teams que estão instalados em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | 
+| _TeamsAppInstallation.ReadWriteForTeam.All_ | Gerenciar aplicativos de Teams para todas as equipes| Permite que o aplicativo leia, instale, atualize e desinstale os aplicativos do Teams em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation.ReadWriteSelfForTeam.All_ (visualização privada) | Permitir que o aplicativo do Teams se gerencie para todas as equipes| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale em qualquer equipe, sem um usuário conectado.| Sim | 
 
-## <a name="team-member-permissions-private-preview"></a>Permissões dos membros do canal ([visualização privada](#permissions-availability-status))
+## <a name="team-member-permissions"></a>Permissões de membro da equipe 
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamMember. Read. All_ | Leia os membros das equipes. | Leia os membros das equipes em nome do usuário conectado. | Sim | Não |
-| _TeamMember. ReadWrite. All_ | Adicione e remova membros das equipes. | Adicione e remova membros das equipes em nome do usuário conectado. Também permite alterar a função de um membro. Por exemplo: de proprietário para não proprietário. | Sim | Não |
+| _TeamMember.Read.All_ | Leia os membros das equipes. | Leia os membros das equipes em nome do usuário conectado. | Sim | Não |
+| _TeamMember.ReadWrite.All_ | Adicione e remova membros das equipes. | Adicione e remova membros das equipes em nome do usuário conectado. Também permite alterar a função de um membro. Por exemplo: de proprietário para não proprietário. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamMember. Read. All_ | Leia os membros das equipes. | Leia os membros das equipes sem um usuário conectado. | Sim | Não |
-| _TeamMember. ReadWrite. All_ | Adicione e remova membros das equipes. | Adicione e remova membros das equipes sem um usuário conectado. Também permite alterar a função de um membro da equipe. Por exemplo: de proprietário para não proprietário. | Sim | Não |
+| _TeamMember.Read.All_ | Leia os membros das equipes. | Leia os membros das equipes sem um usuário conectado. | Sim | Não |
+| _TeamMember.ReadWrite.All_ | Adicione e remova membros das equipes. | Adicione e remova membros das equipes sem um usuário conectado. Também permite alterar a função de um membro da equipe. Por exemplo: de proprietário para não proprietário. | Sim | Não |
 
-## <a name="teams-resource-specific-consent-permissions"></a>Permissões de consentimento específicas do recurso do teams
+## <a name="teams-resource-specific-consent-permissions"></a>Permissões de consentimento específicas de recurso do Teams
 
 | Permissão | Exibir Cadeia de Caracteres | Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| TeamSettings. Read. Group | Leia as configurações da equipe. | Leia as configurações desta equipe, sem um usuário conectado. |Não | Não |
-| ChannelSettings. Read. Group | Leia os nomes, as descrições e as configurações dos canais da equipe. | Leia os nomes de canal, as descrições de canal e as configurações de canal deste grupo sem um usuário conectado. |Não | Não |
-| ChannelSettings. Edit. Group | Edite os nomes, descrições e configurações dos canais da equipe.| Editar os nomes de canal, as descrições de canal e as configurações de canal deste grupo, sem um usuário conectado. |Não | Não |
-|Channel. Create. Group | Criar canais nesta equipe. | Criar canais nesse grupo, sem um usuário conectado. |Não | Não |
-|Channel. Delete. Group | Exclua os canais da equipe. | Exclua os canais deste grupo sem um usuário conectado. |Não | Não |
-|ChannelMessage. Read. Group | Leia as mensagens do canal da equipe. | Permite que um aplicativo Leia as mensagens do channel's deste grupo, sem um usuário conectado. |Não | Não |
-|TeamsApp. Read. Group | Veja quais aplicativos estão instalados nesta equipe. | Veja quais aplicativos estão instalados neste grupo, sem um usuário conectado. |Não | Não |
-|TeamsTab. Read. Group | Leia as guias da equipe. | Leia as guias deste grupo sem um usuário conectado. |Não | Não |
-|TeamsTab. Create. Group | Criar guias nesta equipe. | Criar guias neste grupo, sem um usuário conectado. |Não | Não |
-|TeamsTab. Edit. Group | Edite as guias da equipe. | Editar as guias deste grupo, sem um usuário conectado. |Não | Não |
-|TeamsTab. Delete. Group | Exclua as guias da equipe. | Excluir as guias deste grupo, sem um usuário conectado. |Não | Não |
-|Member. Read. Group | Leia os membros da equipe.| Leia os membros deste grupo sem um usuário conectado. |Não | Não |
-|Owner. Read. Group| Leia os proprietários da equipe. | Leia os proprietários deste grupo sem um usuário conectado. |Não | Não |
+| TeamSettings.Read.Group | Leia as configurações dessa equipe. | Ler as configurações dessa equipe, sem um usuário conectado. |Não | Não |
+| ChannelSettings.Read.Group | Ler os nomes, descrições e configurações dos canais dessa equipe. | Ler os nomes, descrições e configurações dos canais dessa equipe, sem um usuário conectado. |Não | Não |
+| ChannelSettings.Edit.Group | Editar os nomes, descrições e configurações dos canais dessa equipe.| Editar os nomes, descrições e configurações dos canais dessa equipe, sem um usuário conectado. |Não | Não |
+|Channel.Create.Group | Criar canais nesta equipe. | Criar canais neste grupo, sem um usuário conectado. |Não | Não |
+|Channel.Delete.Group | Excluir os canais dessa equipe. | Excluir canais neste grupo, sem um usuário conectado. |Não | Não |
+|ChannelMessage.Read.Group | Ler as mensagens de canal da equipe. | Permite que um aplicativo leia as mensagens desse grupo, sem um usuário conectado. |Não | Não |
+|TeamsApp.Read.Group | Veja quais aplicativos estão instalados nessa equipe. | Veja quais aplicativos estão instalados nesse grupo, sem um usuário conectado. |Não | Não |
+|TeamsTab.Read.Group | Leia as guias dessa equipe. | Ler as guias dessa equipe, sem um usuário conectado. |Não | Não |
+|TeamsTab.Create.Group | Criar guias nesta equipe. | Criar guias neste grupo, sem um usuário conectado. |Não | Não |
+|TeamsTab.Edit.Group | Editar as guias dessa equipe. | Editar as guias deste grupo, sem um usuário conectado. |Não | Não |
+|TeamsTab.Delete.Group | Excluir as guias dessa equipe. | Excluir as guias deste grupo, sem um usuário conectado. |Não | Não |
+|Member.Read.Group | Leia os membros dessa equipe.| Excluir os membros desse grupo, sem um usuário conectado. |Não | Não |
+|Owner.Read.Group| Ler os proprietários dessa equipe. | Ler os proprietários desse grupo, sem um usuário conectado. |Não | Não |
 
-## <a name="teams-settings-permissions"></a>Permissões de configurações do Microsoft Teams
+## <a name="teams-settings-permissions"></a>Permissões de configurações do Teams
 
 ### <a name="delegated-permissions"></a>Permissões delegadas
 
 | Permissão | Exibir Cadeia de Caracteres | Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| Team. ReadBasic. All | Ler os nomes e as descrições do teams| Leia os nomes e as descrições de Teams em nome do usuário conectado.|Sim| Não |
-| TeamSettings. Read. All | Ler as configurações do teams| Leia as configurações de todas as equipes em nome do usuário conectado.|Sim| Não |
-| TeamSettings. ReadWrite. All | Ler e alterar as configurações da equipe.| Ler e alterar as configurações de todas as equipes, em nome do usuário conectado.|Sim| Não |
+| Team.ReadBasic.All | Ler os nomes e as descrições das equipes| Ler os nomes e descrições das equipes, em nome do usuário conectado.|Sim| Não |
+| TeamSettings.Read.All | Ler as configurações das equipes| Ler as configurações de todas as equipes, em nome do usuário conectado.|Sim| Não |
+| TeamSettings.ReadWrite.All | Ler e alterar configurações das equipes.| Ler e alterar as configurações de todas as equipes, em nome do usuário conectado.|Sim| Não |
 
 ### <a name="application-permissions"></a>Permissões de aplicativos
 
 | Permissão | Exibir Cadeia de Caracteres | Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| Team. ReadBasic. All | Obtenha uma lista de todas as equipes.| Obtenha uma lista de todas as equipes, sem um usuário conectado.|Sim| Não |
-| TeamSettings. Read. All | Ler as configurações de todas as equipes| Leia as configurações desta equipe, sem um usuário conectado.|Sim| Não |
-| TeamSettings. ReadWrite. All | Ler e alterar as configurações de todas as equipes| Ler e alterar as configurações de todas as equipes, sem um usuário conectado.|Não | Não |
+| Team.ReadBasic.All | Obter uma lista de todas as equipes.| Obter uma lista de todas as equipes, sem um usuário conectado.|Sim| Não |
+| TeamSettings.Read.All | Ler as configurações de todas as equipes| Ler as configurações dessa equipe, sem um usuário conectado.|Sim| Não |
+| TeamSettings.ReadWrite.All | Ler e alterar todas as configurações das equipes| Ler e alterar as configurações de todas as equipes, sem um usuário conectado.|Não | Não |
 
-## <a name="teams-tab-permissions"></a>Permissões da guia Teams
+## <a name="teams-tab-permissions"></a>Permissões de guia no Teams
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsTab. Read. All_ | Lê guias no Microsoft Teams. | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado e em todas as equipes das quais o usuário é membro. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
-| _TeamsTab. ReadWrite. All_ | Lê e grava guias no Microsoft Teams. | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado e também das equipes das quais o usuário é membro. Não oferece a capacidade de ler ou gravar configurações específicas do aplicativo.    | Sim | Não |
-| _TeamsTab. Create_ | Cria guias no Microsoft Teams. | Permite que o aplicativo crie guias em qualquer equipe do Microsoft Teams, em nome do usuário conectado. Isso não concede a capacidade de ler, modificar ou excluir guias depois de criá-las ou conceder acesso ao conteúdo nas guias. | Sim | Não |
+| _TeamsTab.Read.All_ | Lê guias no Microsoft Teams. | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado e em todas as equipes das quais o usuário é membro. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
+| _TeamsTab.ReadWrite.All_ | Lê e grava guias no Microsoft Teams. | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado e também das equipes das quais o usuário é membro. Não oferece a capacidade de ler ou gravar configurações específicas do aplicativo.    | Sim | Não |
+| _TeamsTab.Create_ | Cria guias no Microsoft Teams. | Permite que o aplicativo crie guias em qualquer equipe do Microsoft Teams, em nome do usuário conectado. Isso não concede a capacidade de ler, modificar ou excluir guias depois de criá-las ou conceder acesso ao conteúdo nas guias. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsTab. Read. All_ | Lê guias no Microsoft Teams. | Lê os nomes e as configurações de guias dentro de qualquer equipe do Microsoft Teams, sem um usuário conectado. Isso não dá acesso ao conteúdo nas guias. | Sim | Não |
-| _TeamsTab. ReadWrite. All_ | Lê e grava guias no Microsoft Teams. | Lê e escreve as guias em qualquer equipe do Microsoft Teams, sem um usuário conectado. Isso não dá acesso ao conteúdo nas guias. | Sim | Não |
-| _TeamsTab. Create_ | Cria guias no Microsoft Teams. | Permite que o aplicativo crie guias em qualquer equipe do Microsoft Teams, sem um usuário conectado. Isso não concede a capacidade de ler, modificar ou excluir guias depois de criá-las ou conceder acesso ao conteúdo nas guias. | Sim | Não |
+| _TeamsTab.Read.All_ | Lê guias no Microsoft Teams. | Lê os nomes e as configurações de guias dentro de qualquer equipe do Microsoft Teams, sem um usuário conectado. Isso não dá acesso ao conteúdo nas guias. | Sim | Não |
+| _TeamsTab.ReadWrite.All_ | Lê e grava guias no Microsoft Teams. | Lê e escreve as guias em qualquer equipe do Microsoft Teams, sem um usuário conectado. Isso não dá acesso ao conteúdo nas guias. | Sim | Não |
+| _TeamsTab.Create_ | Cria guias no Microsoft Teams. | Permite que o aplicativo crie guias em qualquer equipe do Microsoft Teams, sem um usuário conectado. Isso não concede a capacidade de ler, modificar ou excluir guias depois de criá-las ou conceder acesso ao conteúdo nas guias. | Sim | Não |
 
 ## <a name="terms-of-use-permissions"></a>Permissões de termos de uso
 
@@ -1820,27 +1820,27 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
-## <a name="teams-app-installation-permissions-private-preview"></a>Permissões de instalação de aplicativos do Teams ([Visualização privada](#permissions-availability-status))
+## <a name="teams-app-installation-permissions-private-preview"></a>Permissões de aplicativos do Teams([visualização privada](#permissions-availability-status))
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsAppInstallation. ReadForUser_ (visualização privada) | Ler aplicativos do Microsoft Teams instalados| Permite que o aplicativo Leia os aplicativos do teams instalados para o usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
-| _TeamsAppInstallation. ReadWriteForUser_ (visualização privada) | Gerenciar aplicativos de equipes instalados do usuário| Permite que o aplicativo Leia, instale, atualize e desinstale aplicativos do teams instalados para o usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Não | Não |
-| _TeamsAppInstallation. ReadWriteSelfForUser_ (visualização privada) | Permitir que o aplicativo se gerencie no Teams| Permite que o aplicativo de equipes Leia, instale, atualize e desinstale o próprio para o Microsoft Teams que o usuário conectado pode acessar.| Sim | Não |
-| _TeamsAppInstallation. ReadForTeam_ (visualização privada) | Ler aplicativos do teams instalados no Teams| Permite que o aplicativo Leia os aplicativos do teams instalados no Teams que o usuário conectado pode acessar. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
-| _TeamsAppInstallation. ReadWriteForTeam_ (visualização privada) | Gerenciar aplicativos instalados do teams no Teams| Permite que o aplicativo Leia, instale, atualize e desinstale aplicativos do teams no Teams que o usuário conectado pode acessar. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
-| _TeamsAppInstallation. ReadWriteSelfForTeam_ (visualização privada) | Permitir que o aplicativo se gerencie no Teams| Permite que o aplicativo de equipes Leia, instale, atualize e desinstale o próprio para o Microsoft Teams que o usuário conectado pode acessar.| Sim | Não |
+| _TeamsAppInstallation.ReadForUser_ (visualização privada) | Ler os aplicativos do Teams instalados do usuário| Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
+| _TeamsAppInstallation.ReadWriteForUser_ (visualização privada) | Gerenciar os aplicativos do Teams instalados do usuário| Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams instalados para o usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Não | Não |
+| _TeamsAppInstallation.ReadWriteSelfForUser_ (visualização privada) | Permitir que o aplicativo se gerencie nas equipes| Permite que um aplicativo do Teams se leia, se instale, se atualize e se desinstale para as equipes as quais o usuário conectado possa acessar.| Sim | Não |
+| _TeamsAppInstallation.ReadForTeam_ (visualização privada) | Ler os seus aplicativos do Teams instalados nas equipes| Permite que o aplicativo leia os aplicativos do Teams instalados nas equipes as quais o usuário conectado possa acessar. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
+| _TeamsAppInstallation.ReadWriteForTeam_ (visualização privada) | Gerenciar os aplicativos do Teams instalados nas equipes| Permite que o aplicativo do Teams leia, instale, atualize e desinstale aplicativos do Teams nas equipes que o usuário conectado possa acessar. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim | Não |
+| _TeamsAppInstallation.ReadWriteSelfForTeam_ (visualização privada) | Permitir que o aplicativo se gerencie nas equipes| Permite que um aplicativo do Teams se leia, se instale, se atualize e se desinstale para as equipes as quais o usuário conectado possa acessar.| Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _TeamsAppInstallation. ReadForUser. All_ (visualização privada) | Ler aplicativos do teams instalados para todos os usuários| Permite que o aplicativo leia os aplicativos do Teams que estão instalados para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation. ReadWriteForUser. All_ (visualização privada) | Gerenciar aplicativos do teams para todos os usuários| Permite que o aplicativo leia, instale, atualize e desinstale  os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation. ReadWriteSelfForUser. All_ (visualização privada) | Permitir que o aplicativo se gerencie para todos os usuários| Permite que um aplicativo do teams Leia, instale, atualize e desinstale em qualquer usuário, sem um usuário conectado.| Sim |
-| _TeamsAppInstallation. ReadForTeam. All_ (visualização privada) | Ler aplicativos do teams instalados para todas as equipes| Permite que o aplicativo Leia os aplicativos do teams instalados em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation. ReadWriteForTeam. All_ (visualização privada) | Gerenciar aplicativos do teams para todas as equipes| Permite que o aplicativo Leia, instale, atualize e desinstale aplicativos do teams em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
-| _TeamsAppInstallation. ReadWriteSelfForTeam. All_ (visualização privada) | Permitir que o aplicativo Teams se gerencie para todas as equipes| Permite que um aplicativo do teams Leia, instale, atualize e desinstale em qualquer equipe, sem um usuário conectado.| Sim |
+| _TeamsAppInstallation.ReadForUser.All_ (visualização privada) | Ler os aplicativos do Teams instalados para todos os usuários| Permite que o aplicativo leia os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation.ReadWriteForUser.All_ (visualização privada) | Gerenciar aplicativos do Teams para todos os usuários| Permite que o aplicativo leia, instale, atualize e desinstale os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation.ReadWriteSelfForUser.All_ (visualização privada) | Permitir que o aplicativo se gerencie para todos os usuários| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale para qualquer usuário, sem um usuário conectado.| Sim |
+| _TeamsAppInstallation.ReadForTeam.All_ (visualização privada) | Ler os aplicativos do Teams instalados para todas as equipes| Permite que o aplicativo leia os aplicativos do Teams que estão instalados em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation.ReadWriteForTeam.All_ (visualização privada) | Gerenciar aplicativos de Teams para todas as equipes| Permite que o aplicativo leia, instale, atualize e desinstale os aplicativos do Teams em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation.ReadWriteSelfForTeam.All_ (visualização privada) | Permitir que o aplicativo do Teams se gerencie para todas as equipes| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale em qualquer equipe, sem um usuário conectado.| Sim |
 
 ## <a name="threat-assessment-permissions"></a>Permissões de avaliação de ameaças
 
@@ -2043,8 +2043,8 @@ Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário]
 | **Tarefas do aplicativo envolvendo o Grupo**  |  **Permissões necessárias** |  **Cadeias de caracteres de permissão** |
 |:-------------------------------|:---------------------|:---------------|
 | O aplicativo deseja ler as informações básicas do grupo (somente o nome para exibição e a imagem), por exemplo, para mostrar uma experiência de seleção de um grupo  | _Group.Read.All_  | Ler todos os grupos|
-| O aplicativo deseja ler todo o conteúdo em todos os grupos do Microsoft 365, incluindo arquivos, conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |  _Group.Read.All_ | Ler itens em todos os conjuntos de sites, ler todos os grupos|
-| O aplicativo deseja ler e gravar todo o conteúdo em todos os grupos do Microsoft 365, incluindo arquivos, conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |    _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Ler e gravar todos os grupos, editar ou excluir itens em todos os conjuntos de sites |
+| O aplicativo deseja ler todo o conteúdo em todos os grupos do Microsoft 365, incluindo arquivos e conversas.  Também precisa mostrar associações de grupo e ser capaz de atualizar associações de grupo (caso seja o proprietário).  |  _Group.Read.All_ | Ler itens em todos os conjuntos de sites, ler todos os grupos|
+| O aplicativo deseja ler e gravar todo o conteúdo em todos os grupos do Microsoft 365, incluindo arquivos e conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |    _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Ler e gravar todos os grupos, editar ou excluir itens em todos os conjuntos de sites |
 | O aplicativo deseja descobrir (localizar) um grupo do Microsoft 365. Permite ao usuário procurar um grupo específico e escolher um deles na lista enumerada para ingressar no grupo.   | _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
 | O aplicativo deseja criar um grupo por meio do AAD Graph |   _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
 
