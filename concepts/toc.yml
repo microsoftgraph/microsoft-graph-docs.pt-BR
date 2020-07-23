@@ -362,6 +362,11 @@ items:
             href: excel-update-range-format.md
           - name: Gravar dados em uma pasta de trabalho
             href: excel-write-to-workbook.md
+          - name: Recursos
+            expanded: true
+            items:
+              - name: Códigos de erro
+                href: workbook-error-codes.md
   - name: Desenvolver
     expanded: true
     items:

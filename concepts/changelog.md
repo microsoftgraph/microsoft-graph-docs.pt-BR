@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 2e234134bb848b36768bfff9a17ca64f8db7a827
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 691d72262eb7587fb60e1e387200f9f0f8c0c0ba
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197090"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45224854"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -84,6 +84,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 ### <a name="identity-and-access"></a>Identidade e acesso
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Adição|v1.0|Adicionado o método[getAvailableExtensionProperties](/graph/api/directoryObject-getAvailableExtensionProperties?view=graph-rest-1.0) para o recurso [directoryObject](/graph/api/resources/directoryObject?view=graph-rest-1.0).|
 | Adição | beta | Adicionadas as configurações de **propriedade de navegação para a** entidade da [organização](/graph/api/resources/organization?view=graph-rest-beta). |
 | Adição | beta | Adicionada a entidade [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta).  |
 | Adição | beta | Adicionada a propriedade de navegação **profileCardProperties** à entidade **organizationSettings**. |
@@ -96,6 +97,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | A concessão de controle **passwordChange** foi adicionada à entidade [conditionalAccessGrantControls](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta). |
 | Adição | beta | A propriedade **id** adicionada à entidade [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta). |
 | Adição | beta | Adicionado o método [acquireAccessToken](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) ao recurso [synchronization](/graph/api/resources/synchronization-synchronization?view=graph-rest-beta)|
+| Adição | beta | Adicionada a entidade [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta). |
 
 ### <a name="people-and-workplace-intelligence--profile-card-customization"></a>Inteligência de pessoas e local de trabalho | Personalização de cartão de perfil
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -3892,7 +3894,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição    | Beta    | A ação [windowsPrivacyAccessControls](/graph/api/intune-deviceconfig-deviceconfiguration-windowsprivacyaccesscontrols?view=graph-rest-beta) foi adicionada a [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-beta) |
 | Alteração      | Beta    | Foram adicionadas as propriedades **automaticallyUpdateApps** e **countryOrRegion** à entidade [appleVolumePurchaseProgramToken](/graph/api/resources/intune-apps-applevolumepurchaseprogramtoken?view=graph-rest-beta) |
 | Alteração      | Beta    | A propriedade **enableAuthenticationViaCompanyPortal** foi adicionada à entidade [depEnrollmentProfile](/graph/api/resources/intune-corpenrollment-depenrollmentprofile?view=graph-rest-beta) |
-| Alteração      | Beta    | Adicionada a propriedade **notificationMessageCCList** à entidade [deviceComplianceActionItem](/graph/api/resources/intune-deviceconfig-devicecomplianceactionitem?view=graph-rest-beta) |
+| Alterar      | Beta    | Adicionada a propriedade **notificationMessageCCList** à entidade [deviceComplianceActionItem](/graph/api/resources/intune-deviceconfig-devicecomplianceactionitem?view=graph-rest-beta) |
 | Alteração      | Beta    | A propriedade **notApplicableCount** foi adicionada à entidade [deviceComplianceDeviceOverview](/graph/api/resources/intune-deviceconfig-devicecompliancedeviceoverview?view=graph-rest-beta) |
 | Alterar      | Beta    | A propriedade **notApplicableCount** foi adicionada à entidade [deviceComplianceUserOverview](/graph/api/resources/intune-deviceconfig-devicecomplianceuseroverview?view=graph-rest-beta) |
 | Alteração      | Beta    | A propriedade **notApplicableCount** foi adicionada à entidade [deviceConfigurationDeviceOverview](/graph/api/resources/intune-deviceconfig-deviceconfigurationdeviceoverview?view=graph-rest-beta) |
