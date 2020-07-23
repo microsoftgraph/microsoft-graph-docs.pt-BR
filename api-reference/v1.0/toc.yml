@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Obter tokens de autenticação
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: /graph/auth/index?context=graph/api/1.0
       - name: Noções básicas
         href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -72,7 +72,7 @@ items:
       - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -167,11 +167,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -387,7 +387,7 @@ items:
                 href: api/planneruser-list-tasks.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -1096,7 +1096,7 @@ items:
                 href: api/onlinemeeting-createorget.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1139,7 +1139,7 @@ items:
       - name: Dispositivos e aplicativos
         displayName: Intune
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/intune-graph-overview.md
           - name: Gerenciamento de aplicativos
             href: resources/intune-app-conceptual.md
@@ -3529,7 +3529,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -3801,6 +3801,62 @@ items:
                     href: api/certificatebasedauthconfiguration-get.md
                   - name: Excluir
                     href: api/certificatebasedauthconfiguration-delete.md
+              - name: Acesso condicional
+                items:
+                  - name: Políticas
+                    items:
+                      - name: Política de acesso condicional
+                        href: resources/conditionalaccesspolicy.md
+                      - name: Listar
+                        href: api/conditionalaccessroot-list-policies.md
+                      - name: Criar
+                        href: api/conditionalaccessroot-post-policies.md
+                      - name: Obter
+                        href: api/conditionalaccesspolicy-get.md
+                      - name: Atualizar
+                        href: api/conditionalaccesspolicy-update.md
+                      - name: Excluir
+                        href: api/conditionalaccesspolicy-delete.md
+                  - name: Locais nomeados
+                    items:
+                      - name: Local nomeado
+                        items:
+                          - name: Local nomeado
+                            href: resources/namedlocation.md
+                          - name: Lista
+                            href: api/conditionalaccessroot-list-namedlocations.md
+                          - name: Obter
+                            href: api/namedlocation-get.md
+                          - name: Excluir
+                            href: api/namedlocation-delete.md
+                      - name: Localização nomeada do país
+                        items:
+                          - name: Localização nomeada do país
+                            href: resources/countrynamedlocation.md
+                          - name: Listar
+                            href: api/conditionalaccessroot-list-namedlocations.md
+                          - name: Criar
+                            href: api/conditionalaccessroot-post-namedlocations.md
+                          - name: Obter
+                            href: api/countrynamedlocation-get.md
+                          - name: Atualizar
+                            href: api/countrynamedlocation-update.md
+                          - name: Excluir
+                            href: api/countrynamedlocation-delete.md
+                      - name: Local nomeado por IP
+                        items:
+                          - name: Local nomeado por IP
+                            href: resources/ipnamedlocation.md
+                          - name: Listar
+                            href: api/conditionalaccessroot-list-namedlocations.md
+                          - name: Criar
+                            href: api/conditionalaccessroot-post-namedlocations.md
+                          - name: Obter
+                            href: api/ipnamedlocation-get.md
+                          - name: Atualizar
+                            href: api/ipnamedlocation-update.md
+                          - name: Excluir
+                            href: api/ipnamedlocation-delete.md
               - name: Operações de política de dados
                 href: resources/datapolicyoperation.md
                 items:
@@ -3861,7 +3917,7 @@ items:
                 items:
                   - name: Avaliação de ameaças
                     items:
-                      - name: Visão Geral
+                      - name: Visão geral
                         href: resources/threatassessment-api-overview.md
                       - name: Solicitação de avaliação de ameaças
                         href: resources/threatassessmentrequest.md
@@ -3960,6 +4016,13 @@ items:
                         href: api/tokenlifetimepolicy-delete.md
                       - name: Listar aplicadas ao aplicativo
                         href: api/tokenlifetimepolicy-list-appliesto.md
+                  - name: Política de padrões de segurança
+                    href: resources/identitysecuritydefaultsenforcementpolicy.md
+                    items:
+                      - name: Obter
+                        href: api/identitysecuritydefaultsenforcementpolicy-get.md
+                      - name: Atualizar
+                        href: api/identitysecuritydefaultsenforcementpolicy-update.md
       - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
@@ -4218,7 +4281,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -4525,7 +4588,7 @@ items:
       - name: Segurança
         displayname: 'Security API, Microsoft Intelligent Security Graph'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/security-api-overview.md
           - name: Alertas
             href: resources/alert.md
@@ -4557,7 +4620,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
