@@ -2,15 +2,15 @@
 title: tipo de recurso identitySecurityDefaultsEnforcementPolicy
 description: Representa a política de padrões de segurança do Azure Active Directory. Os padrões de segurança contêm configurações de segurança pré-configuradas que protegem contra ataques comuns.
 localization_priority: Normal
-author: dkershaw10
+author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4771af4502df2154435ae6b403fa12e3e265217a
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 70dc63b9cba3db7c435b357f880084d314d0c884
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218461"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384392"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>tipo de recurso identitySecurityDefaultsEnforcementPolicy
 

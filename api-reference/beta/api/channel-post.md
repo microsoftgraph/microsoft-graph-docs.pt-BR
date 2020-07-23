@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9e98e389882dfe2f6dbe55194c6e589829a6e6f4
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: d496f69b20613c4c42c7ce842d23299d653c2ada
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491585"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384343"
 ---
 # <a name="create-channel"></a>Criar canal
 
@@ -133,7 +133,7 @@ POST https://graph.microsoft.com/beta/teams/{group_id}/channels
 Content-type: application/json
 
 {
-  "@odata.type": "#Microsoft.Teams.Core.channel",
+  "@odata.type": "#Microsoft.Graph.channel",
   "membershipType": "private",
   "displayName": "My First Private Channel",
   "description": "This is my first private channels",

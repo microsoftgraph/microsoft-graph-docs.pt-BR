@@ -2,15 +2,15 @@
 title: Obter identitySecurityDefaultsEnforcementPolicy
 description: Recupere as propriedades e os relacionamentos do objeto identitysecuritydefaultsenforcementpolicy.
 localization_priority: Normal
-author: dkershaw10
+author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8feba00ec3757a0c96d80047d8e61360b4c98f73
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9038d009465f685ae6722ce3785499ad21aaf070
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218840"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384336"
 ---
 # <a name="get-identitysecuritydefaultsenforcementpolicy"></a>Obter identitySecurityDefaultsEnforcementPolicy
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Policy.Read.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Policy.Read.All |
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Policy.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +40,7 @@ GET /policies/identitySecurityDefaultsEnforcementPolicy
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte `select` ao parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método oferece suporte ao `select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

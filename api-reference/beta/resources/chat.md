@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 43ed088889a4b81d59cb9e1361ed978c9cb61141
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: dc68d36c63a2cd88eeb7fed91d187b220cbb805d
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864200"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384378"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso chat
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais participantes. Os participantes podem ser usuários ou aplicativos.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 |  Método       |  Tipo de retorno  | Descrição| Permissões |
 |:---------------|:--------|:----------|-----------|
@@ -37,17 +37,17 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-| id| String| O identificador exclusivo do chat. Somente leitura.|
+| id| Cadeia de caracteres| O identificador exclusivo do chat. Somente leitura.|
 | topic| String|  Opcion Assunto ou tópico do chat. Disponível apenas para bate-papos de grupo.|
 | createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Somente leitura.|
-| lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi atualizado. Somente leitura.|
+| lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi renomeado ou a associação foi alterada. lastUpdatedDateTime não é atualizado quando uma mensagem é enviada ao chat. Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
 | installedApps | Coleção [teamsAppInstallation](teamsappinstallation.md) | Uma coleção de todos os aplicativos no chat. Anulável. |
-| membros | coleção [conversationMember](conversationmember.md) | Uma coleção de todas as pessoas no chat. Anulável. |
+| members | coleção [conversationMember](conversationmember.md) | Uma coleção de todas as pessoas no chat. Anulável. |
 | messages | [chatMessage](chatmessage.md) collection | Uma coleção de todas as mensagens no chat. Anulável. |
 
 ## <a name="json-representation"></a>Representação JSON

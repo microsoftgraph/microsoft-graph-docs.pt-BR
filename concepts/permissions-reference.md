@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 676e51da5654b94b6bd25ea7978bef62ea398caf
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 5aac8896fc3f81005450dc0075199720954f400c
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45196894"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384322"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -931,6 +931,23 @@ Os seguintes usos são válidos para Permissões Delegadas e Permissões de apli
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
 ---
+
+## <a name="information-protection-policy-permissions"></a>Permissões de política de proteção de informações
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _InformationProtectionPolicy. Read_ |   Ler rótulos de confidencialidade do usuário e políticas de rótulos | Permite que um aplicativo leia rótulos de confidencialidade de proteção de informações e configurações de política de rótulo, em nome do usuário conectado. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _InformationProtectionPolicy.Read.All_ |   Ler todos os rótulos e políticas de rótulo publicados para uma organização | Permite que um aplicativo leia rótulos de confidencialidade e configurações de política de rótulo publicados de toda a organização ou de um usuário específico, sem um usuário conectado. | Sim |
+
+---
+
 
 ## <a name="intune-device-management-permissions"></a>Permissões de Gerenciamento de Dispositivo do Intune
 
