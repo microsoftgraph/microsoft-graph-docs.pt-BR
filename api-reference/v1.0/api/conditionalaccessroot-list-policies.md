@@ -1,0 +1,189 @@
+---
+title: Listar políticas
+description: Recupere uma lista de objetos conditionalaccesspolicy.
+localization_priority: Normal
+author: videor
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: 15401fb1c33ed4bb983ef8035713fcf5f39398fb
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384444"
+---
+# <a name="list-policies"></a>Listar políticas
+
+Namespace: microsoft.graph
+
+Recupere uma lista de objetos [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) .
+
+## <a name="permissions"></a>Permissões
+
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Policy.Read.All |
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /identity/conditionalAccess/policies
+```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Este método oferece suporte aos parâmetros de consulta do,,, `$skip` `$top` `$count` `$filter` , `$orderBy` e `$select` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+| Nome      |Descrição|
+|:----------|:----------|
+| Autorização | Portador {token} |
+
+## <a name="request-body"></a>Corpo da solicitação
+
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) no corpo da resposta.
+
+## <a name="example"></a>Exemplo
+
+### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_policies"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies
+```
+
+---
+
+### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.conditionalAccessPolicy",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#conditionalAccess/policies",
+    "value": [
+        {
+            "id": "ad8d2b4a-8d30-413f-88b8-144c6c8d98d9",
+            "displayName": "SimplePolicy1",
+            "createdDateTime": null,
+            "modifiedDateTime": null,
+            "state": "disabled",
+            "sessionControls": null,
+            "conditions": {
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "platforms": null,
+                "locations": null,
+                "applications": {
+                    "includeApplications": [
+                        "None"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "None"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": []
+            }
+        },
+        {
+            "id": "c558e346-969d-40a7-a64e-2df6c2c88490",
+            "displayName": "SimplePolicy2",
+            "createdDateTime": null,
+            "modifiedDateTime": null,
+            "state": "disabled",
+            "sessionControls": null,
+            "conditions": {
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "platforms": null,
+                "locations": null,
+                "applications": {
+                    "includeApplications": [
+                        "None"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "None"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "mfa"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": []
+            }
+        }
+    ]
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List policies",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
