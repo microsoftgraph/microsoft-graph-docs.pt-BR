@@ -722,6 +722,8 @@ items:
                 href: api/serviceprincipal-update.md
               - name: Excluir
                 href: api/serviceprincipal-delete.md
+              - name: Obter intervalo
+                href: api/serviceprincipal-delta.md
               - name: Listar objetos criados
                 href: api/serviceprincipal-list-createdobjects.md
               - name: Listar objetos de propriedade
@@ -2542,7 +2544,7 @@ items:
               - name: Configuração do Windows Update para empresas
                 href: resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-get.md
@@ -2578,7 +2580,7 @@ items:
               - name: Evento de auditoria
                 href: resources/intune-auditing-auditevent.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-auditing-auditevent-list.md
                   - name: Obter
                     href: api/intune-auditing-auditevent-get.md
@@ -3679,7 +3681,7 @@ items:
                     href: api/directoryobject-get.md
                   - name: Excluir objeto de diretório
                     href: api/directoryobject-delete.md
-                  - name: Obter propriedades de extensão disponíveis
+                  - name: Obtenha as propriedades de extensão disponíveis
                     href: api/directoryobject-getavailableextensionproperties.md
                   - name: Obter objetos de membros
                     href: api/directoryobject-getmemberobjects.md
