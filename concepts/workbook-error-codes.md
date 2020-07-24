@@ -4,16 +4,16 @@ description: Lista e descreve os códigos de erro e as mensagens de pastas de tr
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d706a27262fd32c10fee203f3158b70c64ae180a
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 26ddbdb9e1320a999e763a1c6b844f944a7de6f7
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197437"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408046"
 ---
 # <a name="error-codes-for-workbooks-and-charts-apis-in-microsoft-graph"></a>Códigos de erro para APIs de planilhas e gráficos no Microsoft Graph
 
-Este artigo descreve os códigos de erro que são retornados pelas APIs de planilhas e gráficos no Microsoft Graph quando uma solicitação enviada por meio da API falha. Para obter mais detalhes sobre respostas de erro e tipos de recurso no Microsoft Graph, confira [erros](/graph/errors.md).
+Este artigo descreve os códigos de erro que são retornados pelas APIs de planilhas e gráficos no Microsoft Graph quando uma solicitação enviada por meio da API falha. Para obter mais detalhes sobre respostas de erro e tipos de recurso no Microsoft Graph, confira [erros](/concepts/errors.md).
 
 ## <a name="error-code"></a>Código de erro
 

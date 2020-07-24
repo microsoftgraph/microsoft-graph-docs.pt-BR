@@ -3,12 +3,12 @@ title: Componente de seletor de pessoas
 description: Você pode usar o componente Web de gerenciamento de pessoas-seletor para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: e3e656c6aef0ab2af9878fb3e4738ade912c4685
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 2e7d03a0c6728d3ff775282343a847ba88afbf42
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681883"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408068"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Componente de seletor de pessoas no Microsoft Graph Toolkit
 
@@ -34,6 +34,7 @@ Por padrão, o `mgt-people-picker` componente busca pessoas dos pontos de `/me/p
 | tipo de grupo     | groupType      | O tipo de grupo a ser pesquisado. As opções disponíveis são: `unified` , `security` , `mailenabledsecurity` , `distribution` , `any` . O valor padrão é `any`. Este atributo não terá efeito se a `type` propriedade for definida como `person` .                                                                           |
 |  selecionado-pessoas  | selectedPeople     | Uma matriz de pessoas selecionadas. Defina esse valor para selecionar pessoas de forma programática.|
 | people   | people    | Uma matriz de pessoas encontrada e renderizada no resultado da pesquisa |
+| default-Selected-User-IDs | defaultSelectedUserIds | Quando é fornecida uma cadeia de caracteres de IDs de usuário separadas por vírgulas do Microsoft Graph, o componente renderiza os respectivos usuários como selecionados na inicialização.
 
 Este é um `show-max` exemplo.
 
@@ -93,7 +94,9 @@ mgt-people-picker {
 
     --dropdown-background-color: #1f1f1f; /* selection area background color */
     --dropdown-item-hover-background: #333d47; /* person background color on hover */
-
+    
+    --selected-person-background-color: #f1f1f1; /* person item background color */
+    
     --font-color: white; /* input area border focus color */
     --placeholder-default-color: #f1f1f1; /* placeholder text color default*/
     --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
@@ -127,7 +130,7 @@ Os exemplos a seguir mostram como usar o `error` modelo.
 
 Este componente usa as seguintes APIs e permissões do Microsoft Graph.
 
-| API                                                                                                              | Permission  |
+| API                                                                                                              | Permissão  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
 | [/Users](/graph/api/user-list?view=graph-rest-1.0)  | User.ReadBasic.All |
