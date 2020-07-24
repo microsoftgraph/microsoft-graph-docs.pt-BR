@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: a62b88927f33b12f9e9738f8b8ba299a22f6d099
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 8af7a4ce6c303e2ac07e4387ff3dbad38abd735e
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197062"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408089"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -280,6 +280,20 @@ Os seguintes limites se aplicam a qualquer solicitação no `/security`.
 | Qualquer          | 455 solicitações a cada 10 segundos |
 
 Os limites acima se aplicam aos seguintes recursos: openTypeExtension, schemaExtension, administrativeUnit, contato, dispositivo, evento, grupo, mensagem, organização, postagem e usuário.
+
+### <a name="files-and-lists-service-limits"></a>Limites de serviço dos arquivos e listas
+
+Os limites de serviço do OneDrive, OneDrive for Business e SharePoint Online não estão disponíveis. Para mais informações, confira [Por que não é possível saber o limites exatos?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
+
+As informações anteriores aplicam-se aos seguintes recursos:  
+baseItem, baseItemVersion, columnDefinition, columnLink, contentType, drive, driveItem, driveItemVersion, fieldValueSet, itemActivity, itemActivityStat, List, listItem, listItemVersion, permission, sharedDriveItem, site e thumbnailSet.
+
+### <a name="tasks-and-plans-service-limits"></a>Limites de serviços de tarefas e planos
+
+Os limites de serviço do Planner não estão disponíveis.
+
+As informações anteriores aplicam-se aos seguintes recursos:  
+planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskBoardTaskFormat, plannerGroup, plannerPlan, plannerPlanDetails, plannerProgressTaskBoardTaskFormat, plannerTask, plannerTaskDetails, e plannerUser.
 
 ### <a name="identity-and-access-data-policy-operation-service-limits"></a>Limites de operação de serviços de política de dados de identidade e acesso
 

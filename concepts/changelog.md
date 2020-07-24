@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 6c6930fcde8c3c9a3ffdc07397552c639b3ce434
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 95d55141437825612c74f802783210dcf075d466
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384350"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408054"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,19 +18,18 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 ## <a name="july-2020"></a>Julho de 2020
 
+### <a name="change-notifications"></a>Alterar notificações
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Remoção | Beta e v1.0 | Removida a propriedade **sequenceNumber** introduzida incorretamente do tipo [changeNotification](/graph/api/resources/changenotification).|
+| Adição | Beta | Adiciona [presence](/graph/api/resources/presence) a recursos suportados para [ notificações de alteração](/graph/webhooks). |
+
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionada a operação [Atualização de onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta) para atualizações de reunião.|
 | Adição | Beta | O recurso de [presença](/graph/api/resources/presence) agora é compatível com [alterar notificações](/graph/webhooks). |
-
-
-### <a name="change-notifications"></a>Notificações de alterações
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Remoção | Beta e v1.0 | Removida a propriedade **sequenceNumber** introduzida incorretamente do tipo [changeNotification](/graph/api/resources/changenotification).|
-| Adição | Beta | Adiciona [presence](/graph/api/resources/presence) a recursos suportados para [ notificações de alteração](/graph/webhooks). |
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 
@@ -90,8 +89,16 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionada a propriedade de navegação **profileCardProperties** à entidade **organizationSettings**. |
 | Adição | beta | Adicionada a entidade **profileCardProperty** e as seguintes operações: <br/> [Listar](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Criar](/graph/api/organizationsettings-post-profilecardproperties) <br/> Entidade [Obter profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta). <br/> [Atualizar profileCardProperty](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Excluir](/graph/api/profilecardproperty-delete) |
 | Adição | Beta e v1.0 | As seguintes operações foram adicionadas aos[dispositivos](/graph/api/resources/device): <br/> [Excluir proprietário registrado](/graph/api/delete-registeredowners) <br/> [Excluir usuário registrado](/graph/api/delete-registeredusers)|
-
-| Adição | Beta e v1.0 | As seguintes operações foram adicionadas aos[dispositivos](/graph/api/resources/device): <br/> [Excluir proprietário registrado](/graph/api/device-delete-registeredowners) <br/> [Excluir usuário registrado](/graph/api/delete-registeredusers) | | Adição | v1.0 | Adicionados os **assignedLabels**, **expirationDateTime**, **membershipRule**, **membershipRuleProcessingState**, **preferredLanguage**e propriedades de **theme** para a entidade [group](/graph/api/resources/group?view=graph-rest-v1.0). | | Adição | Beta | Adicionada a propriedade **infoCatalogs** à entidade [group](/graph/api/resources/group?view=graph-rest-beta) e à entidade [user](/graph/api/resources/user?view=graph-rest-beta). | | Adição | Beta | Adicionada a propriedade **userRiskLevels** à entidade [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta). | | Adição | Beta | A concessão de controle **passwordChange** foi adicionada à entidade [conditionalAccessGrantControls](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta). | | Adição | Beta | A propriedade **id** adicionada à entidade [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta). | | Adição | Beta | Adicionado o método [acquireAccessToken](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) ao recurso de [synchronization](/graph/api/resources/synchronization-synchronization?view=graph-rest-beta)| | Adição | Beta | Adicionada a entidade [EntitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta). | | Adição | Beta v1.0 | Foi adicionada a [API identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-v1.0), que representa a política de padrões de segurança do Azure Active Directory.
+| Adição | Beta e v1.0 | As seguintes operações foram adicionadas aos[dispositivos](/graph/api/resources/device): <br/> [Excluir proprietário registrado](/graph/api/device-delete-registeredowners) <br/> [Excluir usuário registrado](/graph/api/delete-registeredusers)|
+| Adição | v1.0 | Adicionados os **assignedLabels**, **expirationDateTime**, **membershipRule**, **membershipRuleProcessingState**, **preferredLanguage**e propriedades de **theme** para a entidade [group](/graph/api/resources/group?view=graph-rest-v1.0). |
+| Adição | beta | Adicionada a propriedade **infoCatalogs** à entidade [group](/graph/api/resources/group?view=graph-rest-beta) e à entidade [user](/graph/api/resources/user?view=graph-rest-beta). |
+| Adição | beta | Adicionada a propriedade **userRiskLevels** à entidade [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta). |
+| Adição | beta | A concessão de controle **passwordChange** foi adicionada à entidade [conditionalAccessGrantControls](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta). |
+| Adição | beta | A propriedade **id** adicionada à entidade [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta). |
+| Adição | beta | Adicionado o método [acquireAccessToken](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) ao recurso [synchronization](/graph/api/resources/synchronization-synchronization?view=graph-rest-beta)|
+| Adição | beta | Adicionada a entidade [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta). |
+| Adição | v1.0 | Foi adicionada a [API identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-v1.0), que representa a política de padrões de segurança do Azure Active Directory.|
+| Adição        | v1.0        | Foi adicionada o recurso [consulta delta](delta-query-overview.md) ao [servicePrincipal](/graph/api/serviceprincipal-delta). |
 
 ### <a name="identity-and-access--conditional-access"></a>Identidade e acesso | Acesso condicional
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
@@ -108,20 +115,17 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionada a propriedade de navegação **profileCardProperties** à entidade [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta). |
 | Adição | beta | Adicionada a entidade **profileCardProperty** e as seguintes operações: <br/> [Listar](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [Atualizar](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete) |
 
-
-### <a name="workbooks-and-charts"></a>Pastas de trabalho e gráficos
-| **Tipo de alteração** | **Versão** | **Descrição**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-|Adição|beta|Adicionado o relacionamento [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) à entidade [Pasta de Trabalho](/graph/api/resources/workbook?view=graph-rest-beta). |
-|Adição|beta|Adicionado o método [Get workbookOperation](/graph/api/resources/workbookoperation-get?view=graph-rest-beta) à entidade [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta). |
-
-
 ### <a name="teamwork"></a>Trabalho em equipe
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição | Beta, v 1.0 | Novas permissões adicionadas [TeamsAppInstallation.ReadForTeam](/graph/permissions-reference#Teams-app-installation-permissions), 
-[TeamsAppInstallation.ReadWriteForTeam](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions). |
+| Adição | Beta, v 1.0 | Novas permissões adicionadas [TeamsAppInstallation.ReadForTeam](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForTeam](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions). |
+
+### <a name="workbooks-and-charts"></a>Pastas de trabalho e gráficos
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Adição|Beta e v1.0 |Adicionado o relacionamento [workbookOperation](/graph/api/resources/workbookoperation) à entidade [pasta de trabalho](/graph/api/resources/workbook?view=graph-rest-beta). |
+|Adição|Beta e v1.0 |Adicionado o método [Get workbookOperation](/graph/api/resources/workbookoperation-get) à entidade [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta). |
 
 
 ## <a name="june-2020"></a>Junho de 2020
@@ -3005,7 +3009,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Adição|beta|Foi adicionada a propriedade de navegação **assignments** à entidade [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta)|
 |Adição|beta|Foi adicionada a propriedade de navegação **networkAccessConfigurations** à entidade [windowsDomainJoinConfiguration](/graph/api/resources/intune-deviceconfig-windowsdomainjoinconfiguration?view=graph-rest-beta)|
 |Exclusão|beta|Foi removida a propriedade **permissions** do tipo complexo [auditActor](/graph/api/resources/intune-auditing-auditactor?view=graph-rest-beta)|
-|Alteração|beta|Foi alterado o tipo das seguintes propriedades no tipo complexo [bitLockerRecoveryOptions](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryoptions?view=graph-rest-beta):<br/>**recoveryInformationToStore** de [bitLockerRecoveryinformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta) para [bitLockerRecoveryInformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta)<br/>|
+|Alterar|beta|Foi alterado o tipo das seguintes propriedades no tipo complexo [bitLockerRecoveryOptions](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryoptions?view=graph-rest-beta):<br/>**recoveryInformationToStore** de [bitLockerRecoveryinformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta) para [bitLockerRecoveryInformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta)<br/>|
 |Adição|beta|Foi adicionada a propriedade **deviceInactivityBeforeRetirementInDay** ao tipo complexo [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta)|
 |Adição|beta|Foi adicionada a propriedade **landingPageCustomizedImage** ao tipo complexo [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta)|
 |Exclusão|beta|Foi removida a propriedade **ipAddressOrFqdn** do tipo complexo [vpnServer](/graph/api/resources/intune-deviceconfig-vpnserver?view=graph-rest-beta)|
@@ -4104,7 +4108,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | beta        | Nova entidade: [OnPremisesProvisioningError](/graph/api/resources/onpremisesprovisioningerror?view=graph-rest-beta) |
-| Alteração          | beta        | Adicionou a propriedade OnPremisesProvisioningError para [user](/graph/api/resources/user?view=graph-rest-beta), [group](/graph/api/resources/group?view=graph-rest-beta) e [orgcontact](/graph/api/resources/orgcontact?view=graph-rest-beta) |
+| Alterar          | beta        | Adicionou a propriedade OnPremisesProvisioningError para [user](/graph/api/resources/user?view=graph-rest-beta), [group](/graph/api/resources/group?view=graph-rest-beta) e [orgcontact](/graph/api/resources/orgcontact?view=graph-rest-beta) |
 
 ### <a name="added-deleteddatetime-property"></a>Adicionou a propriedade deletedDateTime
 
