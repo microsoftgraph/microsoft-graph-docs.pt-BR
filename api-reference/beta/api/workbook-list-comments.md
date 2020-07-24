@@ -5,16 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4e7ecb65038dbc2e75c8642a3e2d3552f338e89a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d3be5ce51eb4cef13b366b19b5b95b56e5cd75a0
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451480"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408110"
 ---
 # <a name="list-workbookcomments"></a>Listar workbookComments
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Recupere uma lista de objetos [workbookComment](../resources/workbookcomment.md) .
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [workbookComment](../resources/workbookcomment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [workbookComment](../resources/workbookcomment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -63,7 +63,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/drive/root/workbook/comments
+GET https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-comments-csharp-snippets.md)]

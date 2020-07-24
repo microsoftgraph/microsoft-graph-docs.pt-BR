@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: e199e2c9fa0240eda593843d88490e7f22b0f506
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: d9d20e934965485c9c6262ceacb86ca304bc134d
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744086"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408124"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -34,14 +34,14 @@ A criação de uma assinatura requer permissão de leitura para o recurso. Por e
 |[chat](../resources/chatmessage.md) (/chats/{ID}/Messages) | Sem suporte | Sem suporte | Chat.Read.All  |
 |[chat](../resources/chatmessage.md) (/chats/allMessages--todas as mensagens de chat na organização) | Sem suporte | Sem suporte | Chat.Read.All  |
 |[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-|[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Sem suporte | Files.ReadWrite | Sem suporte |
-|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Sem suporte | Files.ReadWrite.All |
+|[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Incompatível | Files.ReadWrite | Incompatível |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Incompatível | Files.ReadWrite.All |
 |[evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-|[grupo](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
+|[grupo](../resources/group.md) | Group.Read.All | Incompatível | Group.Read.All |
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
+|[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Incompatível | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 ### <a name="chatmessage-microsoft-teams"></a>Chat (Microsoft Teams)
@@ -106,7 +106,7 @@ POST https://graph.microsoft.com/beta/subscriptions
 Content-type: application/json
 
 {
-   "changeType": "updated",
+   "changeType": "created",
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
@@ -166,7 +166,7 @@ Content-length: 252
   "id": "7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource": "me/mailFolders('Inbox')/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
-  "changeType": "updated",
+  "changeType": "created",
   "clientState": "secretClientValue",
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
