@@ -5,66 +5,71 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 423c86bf2d034a87b6c7e5d24a0ec9b9e5b017c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 202bb1aa21330868fe4506bfe75191d818fc32ba
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446349"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408082"
 ---
-# <a name="get-informationprotectionlabel"></a><span data-ttu-id="a5ba5-103">Obter informationProtectionLabel</span><span class="sxs-lookup"><span data-stu-id="a5ba5-103">Get informationProtectionLabel</span></span>
+# <a name="get-informationprotectionlabel"></a><span data-ttu-id="3c02a-103">Obter informationProtectionLabel</span><span class="sxs-lookup"><span data-stu-id="3c02a-103">Get informationProtectionLabel</span></span>
 
-<span data-ttu-id="a5ba5-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="a5ba5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3c02a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3c02a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a5ba5-105">Recupere as propriedades e os relacionamentos de um objeto [informationProtectionLabel](../resources/informationprotectionlabel.md) .</span><span class="sxs-lookup"><span data-stu-id="a5ba5-105">Retrieve the properties and relationships of an [informationProtectionLabel](../resources/informationprotectionlabel.md) object.</span></span>
+<span data-ttu-id="3c02a-105">Recupere as propriedades e os relacionamentos de um objeto [informationProtectionLabel](../resources/informationprotectionlabel.md) .</span><span class="sxs-lookup"><span data-stu-id="3c02a-105">Retrieve the properties and relationships of an [informationProtectionLabel](../resources/informationprotectionlabel.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a5ba5-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a5ba5-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3c02a-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="3c02a-106">Permissions</span></span>
 
-<span data-ttu-id="a5ba5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a5ba5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3c02a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3c02a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a5ba5-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a5ba5-109">Permission type</span></span>                        | <span data-ttu-id="a5ba5-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a5ba5-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="3c02a-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3c02a-109">Permission type</span></span>                        | <span data-ttu-id="3c02a-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3c02a-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="a5ba5-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a5ba5-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="a5ba5-112">InformationProtectionPolicy. Read</span><span class="sxs-lookup"><span data-stu-id="a5ba5-112">InformationProtectionPolicy.Read</span></span>            |
-| <span data-ttu-id="a5ba5-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a5ba5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a5ba5-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a5ba5-114">Not supported.</span></span>                              |
-| <span data-ttu-id="a5ba5-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a5ba5-115">Application</span></span>                            | <span data-ttu-id="a5ba5-116">InformationProtectionPolicy. Read. All</span><span class="sxs-lookup"><span data-stu-id="a5ba5-116">InformationProtectionPolicy.Read.All</span></span>        |
+| <span data-ttu-id="3c02a-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3c02a-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="3c02a-112">InformationProtectionPolicy. Read</span><span class="sxs-lookup"><span data-stu-id="3c02a-112">InformationProtectionPolicy.Read</span></span>            |
+| <span data-ttu-id="3c02a-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3c02a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3c02a-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3c02a-114">Not supported.</span></span>                              |
+| <span data-ttu-id="3c02a-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3c02a-115">Application</span></span>                            | <span data-ttu-id="3c02a-116">InformationProtectionPolicy.Read.All</span><span class="sxs-lookup"><span data-stu-id="3c02a-116">InformationProtectionPolicy.Read.All</span></span>        |
 
-## <a name="http-request"></a><span data-ttu-id="a5ba5-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a5ba5-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3c02a-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3c02a-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
-
+<span data-ttu-id="3c02a-118">Para obter um rótulo disponível para o usuário conectado ou usuário especificado:</span><span class="sxs-lookup"><span data-stu-id="3c02a-118">To get a label available to the signed-in user or specified user:</span></span>
 ```http
-GET /informationprotection/policy/labels/{id}
-GET /informationprotection/policy/labels
+GET /me/informationProtection/policy/labels/{id}
+GET /users/{id | user-principal-name}/informationProtection/policy/labels/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="a5ba5-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="a5ba5-118">Optional query parameters</span></span>
+<span data-ttu-id="3c02a-119">Para obter um rótulo disponível para a organização:</span><span class="sxs-lookup"><span data-stu-id="3c02a-119">To get a label available to the organization:</span></span>
+```http
+GET /informationProtection/policy/labels/{id}
+```
 
-<span data-ttu-id="a5ba5-119">Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="a5ba5-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="a5ba5-120">Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="a5ba5-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3c02a-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="3c02a-120">Optional query parameters</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a5ba5-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a5ba5-121">Request headers</span></span>
+<span data-ttu-id="3c02a-121">Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="3c02a-121">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="3c02a-122">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="3c02a-122">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-| <span data-ttu-id="a5ba5-122">Nome</span><span class="sxs-lookup"><span data-stu-id="a5ba5-122">Name</span></span>          | <span data-ttu-id="a5ba5-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="a5ba5-123">Description</span></span>                                                                                                                                                                       |
+## <a name="request-headers"></a><span data-ttu-id="3c02a-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3c02a-123">Request headers</span></span>
+
+| <span data-ttu-id="3c02a-124">Nome</span><span class="sxs-lookup"><span data-stu-id="3c02a-124">Name</span></span>          | <span data-ttu-id="3c02a-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="3c02a-125">Description</span></span>                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="a5ba5-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="a5ba5-124">Authorization</span></span> | <span data-ttu-id="a5ba5-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a5ba5-p103">Bearer {token}. Required.</span></span>                                                                                                                                                         |
-| <span data-ttu-id="a5ba5-127">Agente de usuário</span><span class="sxs-lookup"><span data-stu-id="a5ba5-127">User-Agent</span></span>    | <span data-ttu-id="a5ba5-128">Descreve o nome e a versão do aplicativo de chamada.</span><span class="sxs-lookup"><span data-stu-id="a5ba5-128">Describes the name and version of the calling application.</span></span> <span data-ttu-id="a5ba5-129">Os detalhes surgirão no Azure Information Protection Analytics.</span><span class="sxs-lookup"><span data-stu-id="a5ba5-129">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="a5ba5-130">O formato sugerido é ApplicationName/Version.</span><span class="sxs-lookup"><span data-stu-id="a5ba5-130">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="a5ba5-131">Opcional.</span><span class="sxs-lookup"><span data-stu-id="a5ba5-131">Optional.</span></span> |
+| <span data-ttu-id="3c02a-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="3c02a-126">Authorization</span></span> | <span data-ttu-id="3c02a-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3c02a-p103">Bearer {token}. Required.</span></span>                                                                                                                                                         |
+| <span data-ttu-id="3c02a-129">Agente de usuário</span><span class="sxs-lookup"><span data-stu-id="3c02a-129">User-Agent</span></span>    | <span data-ttu-id="3c02a-130">Descreve o nome e a versão do aplicativo de chamada.</span><span class="sxs-lookup"><span data-stu-id="3c02a-130">Describes the name and version of the calling application.</span></span> <span data-ttu-id="3c02a-131">Os detalhes surgirão no Azure Information Protection Analytics.</span><span class="sxs-lookup"><span data-stu-id="3c02a-131">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="3c02a-132">O formato sugerido é ApplicationName/Version.</span><span class="sxs-lookup"><span data-stu-id="3c02a-132">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="3c02a-133">Opcional.</span><span class="sxs-lookup"><span data-stu-id="3c02a-133">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a5ba5-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a5ba5-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3c02a-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3c02a-134">Request body</span></span>
 
-<span data-ttu-id="a5ba5-133">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a5ba5-133">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="3c02a-135">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3c02a-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a5ba5-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="a5ba5-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3c02a-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="3c02a-136">Response</span></span>
 
-<span data-ttu-id="a5ba5-135">Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [informationProtectionLabel](../resources/informationprotectionlabel.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a5ba5-135">If successful, this method returns a `200 OK` response code and the requested [informationProtectionLabel](../resources/informationprotectionlabel.md) object in the response body.</span></span>
+<span data-ttu-id="3c02a-137">Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [informationProtectionLabel](../resources/informationprotectionlabel.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3c02a-137">If successful, this method returns a `200 OK` response code and the requested [informationProtectionLabel](../resources/informationprotectionlabel.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a5ba5-136">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a5ba5-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="3c02a-138">Exemplos</span><span class="sxs-lookup"><span data-stu-id="3c02a-138">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="a5ba5-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a5ba5-137">Request</span></span>
+### <a name="request"></a><span data-ttu-id="3c02a-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3c02a-139">Request</span></span>
 
-<span data-ttu-id="a5ba5-138">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a5ba5-138">The following is an example of the request.</span></span>
+<span data-ttu-id="3c02a-140">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="3c02a-140">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a5ba5-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="a5ba5-139">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3c02a-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="3c02a-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_informationprotectionlabel"
@@ -73,26 +78,26 @@ GET /informationprotection/policy/labels
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="a5ba5-140">C#</span><span class="sxs-lookup"><span data-stu-id="a5ba5-140">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3c02a-142">C#</span><span class="sxs-lookup"><span data-stu-id="3c02a-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-informationprotectionlabel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a5ba5-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a5ba5-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3c02a-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3c02a-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-informationprotectionlabel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a5ba5-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a5ba5-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3c02a-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3c02a-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-informationprotectionlabel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="a5ba5-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="a5ba5-143">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3c02a-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="3c02a-145">Response</span></span>
 
-<span data-ttu-id="a5ba5-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a5ba5-144">The following is an example of the response.</span></span>
+<span data-ttu-id="3c02a-146">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="3c02a-146">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="a5ba5-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a5ba5-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="3c02a-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3c02a-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
