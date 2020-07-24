@@ -5,30 +5,30 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 41e079bbc33c85439a4290ca7420fd24ea7a1217
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: feab40fe5e56249ca0653d82084c8636f35e74f2
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508867"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408012"
 ---
-# <a name="list-workbookcomments"></a><span data-ttu-id="b3fb1-103">Listar workbookComments</span><span class="sxs-lookup"><span data-stu-id="b3fb1-103">List workbookComments</span></span>
+# <a name="list-workbookcomments"></a><span data-ttu-id="ea170-103">Listar workbookComments</span><span class="sxs-lookup"><span data-stu-id="ea170-103">List workbookComments</span></span>
 
-<span data-ttu-id="b3fb1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b3fb1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ea170-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ea170-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="b3fb1-105">Recupere uma lista de objetos [workbookComment](../resources/workbookcomment.md) .</span><span class="sxs-lookup"><span data-stu-id="b3fb1-105">Retrieve a list of  [workbookComment](../resources/workbookcomment.md) objects.</span></span>
+<span data-ttu-id="ea170-105">Recupere uma lista de objetos [workbookComment](../resources/workbookcomment.md) .</span><span class="sxs-lookup"><span data-stu-id="ea170-105">Retrieve a list of  [workbookComment](../resources/workbookcomment.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b3fb1-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="b3fb1-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ea170-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ea170-106">Permissions</span></span>
 
-<span data-ttu-id="b3fb1-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b3fb1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ea170-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ea170-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="b3fb1-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b3fb1-109">Permission type</span></span>                        | <span data-ttu-id="b3fb1-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b3fb1-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ea170-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ea170-109">Permission type</span></span>                        | <span data-ttu-id="ea170-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ea170-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="b3fb1-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b3fb1-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="b3fb1-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b3fb1-112">Files.ReadWrite</span></span> |
-| <span data-ttu-id="b3fb1-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b3fb1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b3fb1-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b3fb1-114">Not supported.</span></span> |
-| <span data-ttu-id="b3fb1-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b3fb1-115">Application</span></span>                            | <span data-ttu-id="b3fb1-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b3fb1-116">Not supported.</span></span> |
+| <span data-ttu-id="ea170-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ea170-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ea170-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ea170-112">Files.ReadWrite</span></span> |
+| <span data-ttu-id="ea170-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ea170-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ea170-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ea170-114">Not supported.</span></span> |
+| <span data-ttu-id="ea170-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ea170-115">Application</span></span>                            | <span data-ttu-id="ea170-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ea170-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b3fb1-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b3fb1-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ea170-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ea170-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,59 +36,59 @@ ms.locfileid: "42508867"
 GET workbook/comments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b3fb1-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b3fb1-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ea170-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ea170-118">Request headers</span></span>
 
-| <span data-ttu-id="b3fb1-119">Nome</span><span class="sxs-lookup"><span data-stu-id="b3fb1-119">Name</span></span>      |<span data-ttu-id="b3fb1-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="b3fb1-120">Description</span></span>|
+| <span data-ttu-id="ea170-119">Nome</span><span class="sxs-lookup"><span data-stu-id="ea170-119">Name</span></span>      |<span data-ttu-id="ea170-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="ea170-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="b3fb1-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="b3fb1-121">Authorization</span></span> | <span data-ttu-id="b3fb1-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b3fb1-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ea170-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="ea170-121">Authorization</span></span> | <span data-ttu-id="ea170-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ea170-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b3fb1-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b3fb1-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ea170-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ea170-124">Request body</span></span>
 
-<span data-ttu-id="b3fb1-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b3fb1-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="ea170-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ea170-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b3fb1-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="b3fb1-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ea170-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="ea170-126">Response</span></span>
 
-<span data-ttu-id="b3fb1-127">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [workbookComment](../resources/workbookcomment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b3fb1-127">If successful, this method returns a `200 OK` response code and a collection of [workbookComment](../resources/workbookcomment.md) objects in the response body.</span></span>
+<span data-ttu-id="ea170-127">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [workbookComment](../resources/workbookcomment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ea170-127">If successful, this method returns a `200 OK` response code and a collection of [workbookComment](../resources/workbookcomment.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="b3fb1-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="b3fb1-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ea170-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="ea170-128">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="b3fb1-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b3fb1-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ea170-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ea170-129">Request</span></span>
 
-<span data-ttu-id="b3fb1-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="b3fb1-130">The following is an example of the request.</span></span>
+<span data-ttu-id="ea170-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="ea170-130">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="b3fb1-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="b3fb1-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ea170-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="ea170-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_comments"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments
+GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments
 ```
-# <a name="c"></a>[<span data-ttu-id="b3fb1-132">C#</span><span class="sxs-lookup"><span data-stu-id="b3fb1-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ea170-132">C#</span><span class="sxs-lookup"><span data-stu-id="ea170-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-comments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b3fb1-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b3fb1-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ea170-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ea170-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-comments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b3fb1-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b3fb1-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ea170-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ea170-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-comments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="b3fb1-135">Java</span><span class="sxs-lookup"><span data-stu-id="b3fb1-135">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ea170-135">Java</span><span class="sxs-lookup"><span data-stu-id="ea170-135">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-comments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="b3fb1-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="b3fb1-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ea170-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="ea170-136">Response</span></span>
 
-<span data-ttu-id="b3fb1-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="b3fb1-137">The following is an example of the response.</span></span>
+<span data-ttu-id="ea170-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="ea170-137">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="b3fb1-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b3fb1-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ea170-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ea170-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
