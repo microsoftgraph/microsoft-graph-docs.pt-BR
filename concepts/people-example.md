@@ -5,12 +5,12 @@ ms.date: 4/9/2019
 author: anthona
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: db528c5e3e687d32ceacae327531a3f6c7ccee90
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 5823e994a5a4cb5451dcb32875a76c42c5ecb503
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618766"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384329"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
 
@@ -478,7 +478,7 @@ Content-type: application/json
 ### <a name="types-of-results-included"></a>Tipos de resultados incluídos
 Por padrão, o Microsoft Graph mostra apenas os resultados da caixa de correio, que não incluem os resultados de diretório/organização. Para recuperar os resultados do diretório, especifique um cabeçalho HTTP, como mostrado.
 
-```
+```http
 "X-PeopleQuery-QuerySources: Mailbox,Directory”
 ```
 ### <a name="select-the-fields-to-return"></a>Selecione os campos para retornar
@@ -827,7 +827,7 @@ As solicitações nesta seção permitem procurar pessoas relevantes para o usu�
 
 Use o parâmetro *$search* para selecionar as pessoas que atendem a determinado conjunto de critérios.
 
-A consulta de pesquisa a seguir retorna pessoas relevantes para `/me` cujo **displayName** ou *emailAddress" tem uma palavra que começa com a letra "j".
+A consulta de pesquisa a seguir retorna pessoas relevantes para `/me` cujo **displayName** ou **emailAddress** tem uma palavra que começa com a letra "j".
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search=j
