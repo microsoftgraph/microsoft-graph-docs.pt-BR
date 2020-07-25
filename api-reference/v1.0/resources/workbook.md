@@ -1,60 +1,41 @@
 ---
-title: Tipo de recurso de pasta de trabalho
-description: A pasta de trabalho é o objeto de nível superior que inclui os objetos workbook relacionados, como planilhas, tabelas, intervalos, etc.
+title: tipo de recurso da pasta de trabalho
+description: O objeto de nível superior que contém objetos da pasta de trabalho relacionados, como planilhas, tabelas e intervalos.
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a143cde5a782801c2e840dd263a107eceba2342f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fc1da837c3aacf92136d02371369e1f2ea40005
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533390"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408040"
 ---
-# <a name="workbook-resource-type"></a>Tipo de recurso de pasta de trabalho
+# <a name="workbook-resource-type"></a>tipo de recurso da pasta de trabalho
 
 Namespace: microsoft.graph
 
-A pasta de trabalho é o objeto de nível superior que inclui os objetos workbook relacionados, como planilhas, tabelas, intervalos, etc.
-
-## <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbook"
-}-->
-
-```json
-{
-  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
-  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
-  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
-}
-```
-
-## <a name="properties"></a>Propriedades
-Nenhuma
+O objeto de nível superior que contém objetos da pasta de trabalho relacionados, como planilhas, tabelas e intervalos.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Criar Sessão](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Crie uma sessão de pasta de trabalho para iniciar uma sessão persistente ou não persistente.|
-|[Fechar Sessão](../api/workbook-closesession.md) | None |Fechar uma sessão existente.|
-|[Atualizar Sessão](../api/workbook-refreshsession.md) | None |Atualizar uma sessão existente.|
+|[Criar sessão](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Crie uma sessão de pasta de trabalho para iniciar uma sessão persistente ou não persistente.|
+|[Fechar sessão](../api/workbook-closesession.md) | Nenhum(a) |Fechar uma sessão existente.|
+|[Atualizar sessão](../api/workbook-refreshsession.md) | Nenhum(a) |Atualizar uma sessão existente.|
 
+## <a name="properties"></a>Propriedades
+Nenhum.
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|names|Coleção [WorkbookNamedItem](nameditem.md) |Representa uma coleção de itens denominados de escopo da pasta de trabalho (chamados intervalos e constantes). Somente leitura.|
-|tables|Coleção [WorkbookTable](table.md)|Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
-|worksheets|Coleção [WorkbookWorksheet](worksheet.md) |Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.|
+|names|coleção [workbookNamedItem](nameditem.md)|Representa uma coleção de itens denominados de escopo da pasta de trabalho (chamados intervalos e constantes). Somente leitura.|
+|tables|coleção [WorkbookTable](table.md)|Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
+|worksheets|coleção [WorkbookWorksheet](worksheet.md)|Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.|
+|operações|coleção [workbookOperation](workbookoperation.md)|O status das operações da pasta de trabalho. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status de uma operação de longa execução se o cabeçalho `Location` retornar na resposta. Somente leitura.|
 
 ## <a name="functions"></a>Funções
 
@@ -156,7 +137,22 @@ content-type: application/json;odata.metadata
   "value": 30
 }
 ```
+## <a name="json-representation"></a>Representação JSON
 
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbook"
+}-->
+
+```json
+{
+  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
+  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
+  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
