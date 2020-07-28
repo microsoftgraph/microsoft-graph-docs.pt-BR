@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 45f439adaf45ade7e63dd4cde8ed72852244192c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e82ede1df5c17b99fdc40857fd97f1f90012711
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502001"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434974"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>tipo de recurso educationFileSynchronizationVerificationMessage
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,11 +22,11 @@ Representa um erro retornado ao cliente em resposta a uma solicitação para [in
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade | Tipo | Descrição |
-|:-|:-|:-|
-| **type** | string | Tipo da mensagem. Os valores possíveis são: `error`, `warning`, `information`. | 
-| **nomes** | string | Arquivo de origem que contém o erro. |
-| **description** | string | Informações detalhadas sobre o tipo de mensagem. |
+| Propriedade    | Tipo   | Descrição                                                                  |
+| :---------- | :----- | :--------------------------------------------------------------------------- |
+| type        | string | Tipo da mensagem. Os valores possíveis são: `error`, `warning`, `information`. |
+| nomes    | cadeia de caracteres | Arquivo de origem que contém o erro.                                         |
+| description | string | Informações detalhadas sobre o tipo de mensagem.                                 |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -40,8 +40,8 @@ Representa um erro retornado ao cliente em resposta a uma solicitação para [in
 
 ```json
 {
-    "type": "String",
-    "fileName": "String",
-    "description": "String"
+  "type": "String",
+  "fileName": "String",
+  "description": "String"
 }
 ```

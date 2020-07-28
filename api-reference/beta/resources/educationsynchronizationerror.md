@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d46d1160ae59174d9fcb4df89559531e3a032e55
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 59650bc56554b9bd4dd7135ae44d53e153c159f8
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500321"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434834"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>tipo de recurso educationSynchronizationError
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,22 +22,24 @@ Representa um erro durante a validação e/ou sincronização de perfil de dados
 
 ## <a name="methods"></a>Métodos
 
-| Método | Tipo de retorno | Descrição |
-|:-|:-|:-|
-| [Obter erros de sincronização](../api/educationsynchronizationerrors-get.md) | coleção **educationSynchronizationError**| Retorna a lista de erros de sincronização associados a um perfil. |
+| Método                                                                     | Tipo de retorno                                  | Descrição                                                           |
+| :------------------------------------------------------------------------- | :------------------------------------------- | :-------------------------------------------------------------------- |
+| [Obter erros de sincronização](../api/educationsynchronizationerrors-get.md) | coleção **educationSynchronizationError** | Retorna a lista de erros de sincronização associados a um perfil. |
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade | Tipo | Descrição |
-|:-|:-|:-|
-| **EntryType** | string |  Representa a entidade de sincronização (escola, seção, aluno, professor).       |
-| **errorCode** | string |  Representa o código de erro para esse erro.         |
-| **errorMessage** | string |  Contém uma descrição do erro.        |
-| **unindovalue** | string |  O identificador exclusivo da entrada.         |
-| **recordedDateTime** | DateTimeOffset | A hora da ocorrência desse erro.         |
-| **reportableIdentifier** | string | O identificador desta entrada de erro.       |
+| Propriedade             | Tipo           | Descrição                                                     |
+| :------------------- | :------------- | :-------------------------------------------------------------- |
+| id                   | Cadeia de caracteres         | O identificador exclusivo do recurso. (somente leitura)             |
+| EntryType            | Cadeia de caracteres         | Representa a entidade de sincronização (escola, seção, aluno, professor). |
+| errorCode            | Cadeia de caracteres         | Representa o código de erro para esse erro.                       |
+| errorMessage         | Cadeia de caracteres         | Contém uma descrição do erro.                            |
+| unindovalue         | Cadeia de caracteres         | O identificador exclusivo da entrada.                            |
+| recordedDateTime     | DateTimeOffset | A hora da ocorrência desse erro.                           |
+| reportableIdentifier | Cadeia de caracteres         | O identificador desta entrada de erro.                             |
 
 ## <a name="json-representation"></a>Representação JSON
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -48,11 +50,12 @@ Representa um erro durante a validação e/ou sincronização de perfil de dados
 
 ```json
 {
-    "entryType": "String",
-    "errorCode": "String",
-    "errorMessage": "String",
-    "joiningValue": "String",
-    "recordedDateTime": "DateTimeOffset",
-    "reportableIdentifier": "String"
+  "id": "String",
+  "entryType": "String",
+  "errorCode": "String",
+  "errorMessage": "String",
+  "joiningValue": "String",
+  "recordedDateTime": "DateTimeOffset",
+  "reportableIdentifier": "String"
 }
 ```

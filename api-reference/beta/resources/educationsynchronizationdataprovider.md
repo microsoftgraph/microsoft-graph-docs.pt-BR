@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: be0f50ec3cff0a8eec91cd43b4bb08371db806f3
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: f20bea087a23f14acd7184c5211d21687409897a
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846160"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434967"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>tipo de recurso educationSynchronizationDataProvider
 
@@ -20,19 +20,16 @@ Namespace: microsoft.graph
 
 Representa o provedor de dados a ser usado como a fonte de sincronização de um [educationSynchronizationProfile].
 
-> **Observação:** Esse tipo complexo é abstrato. Consulte os tipos específicos de provedores de dados listados.
+> [!NOTE]
+> Esse tipo complexo é abstrato. Consulte os tipos específicos de provedores de dados listados.
 
 ## <a name="providers"></a>Provedores
 
 | Data Provider                                                             | Descrição                                                                                        |
-|:--------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------- |
 | [educationCsvDataProvider]                                                | Arquivos CSV carregados para a [URL SAS](../api/educationsynchronizationprofile-uploadurl.md) do perfil |
 | [educationOneRosterApiDataProvider](educationonerosterapidataprovider.md) | API do OneRoster v 1.1                                                                                 |
 | [educationPowerSchoolDataProvider]                                        | API da PowerSchool                                                                                    |
-
-## <a name="properties"></a>Propriedades
-
-Nenhuma propriedade é exposta por esse tipo.
 
 [educationsynchronizationprofile]: educationsynchronizationprofile.md
 [educationcsvdataprovider]: educationCsvDataProvider.md

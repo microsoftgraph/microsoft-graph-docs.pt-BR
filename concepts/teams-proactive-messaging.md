@@ -4,12 +4,12 @@ description: Enviar uma mensagem proativa para um usuário do Microsoft Teams co
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e8222931709ab504106c86209ec186140b4a2087
-ms.sourcegitcommit: fc9edd17aebed91768e31416e1c1ee0b64d5ce06
+ms.openlocfilehash: 76b7527a961cc3aa5e78b30ff740cbda90d1c63c
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39621646"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45435051"
 ---
 # <a name="proactive-messaging-using-a-bot-in-microsoft-teams"></a>Mensagens pró-ativas usando um bot no Microsoft Teams
 
@@ -29,7 +29,7 @@ Se você ainda não tiver um aplicativo do Microsoft Teams com um bot que possa 
 
 Você também pode usar o [modelo de aplicativo Company Communicator](https://github.com/OfficeDev/microsoft-teams-company-communicator-app) como um bom ponto de partida para seu aplicativo. Este modelo de aplicativo é um aplicativo Microsoft Teams pronto para produção capaz de criar, agendar e distribuir mensagens em toda a empresa.
 
-Ao criar seu aplicativo, certifique-se de anotar o `id` que você usa em seu manifesto de aplicativo; Você precisará dele para instalar o aplicativo em uma etapa posterior.
+Ao criar seu aplicativo, certifique-se de anotar o `id` que você usa em seu manifesto de aplicativo; você precisará dele para instalar o aplicativo em uma etapa posterior.
 
 Se você estiver fazendo isso para uma organização de grande porte, as mensagens de boas-vindas do seu bot podem ser limitadas. Se possível, execute as instalações em lotes e implemente a funcionalidade de back-out no bot. Para obter detalhes, consulte [tratamento da limitação da taxa](/microsoftteams/platform/concepts/bots/rate-limit).
 
@@ -49,7 +49,7 @@ Primeiro, convém verificar se o aplicativo de equipes já está instalado para 
 GET /users/{user-id}/teamwork/installedApps?$expand=teamsAppDefinition&$filter=teamsAppDefinition/teamsAppId eq '{teamsAppid}'
 ```
 
-Em `{teamsAppId}` que é `id` o manifesto do aplicativo Teams que você fez anotar anteriormente. Observe que isso pode ser diferente das chamadas `appid` para o Microsoft Graph e do seu `botId`. Você pode achar útil instalar manualmente o aplicativo para um usuário e testar a chamada em relação a esse usuário para garantir que você tem o valor correto `id` .
+Em que `{teamsAppId}` é o `id` manifesto do aplicativo Teams que você fez anotar anteriormente. Observe que isso pode ser diferente das `appid` chamadas para o Microsoft Graph e do seu `botId` . Você pode achar útil instalar manualmente o aplicativo para um usuário e testar a chamada em relação a esse usuário para garantir que você tem o valor correto `id` .
 
 A chamada retornará uma matriz vazia se o aplicativo não estiver instalado ou uma matriz com um único [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) se já estiver instalada.
 
@@ -72,7 +72,7 @@ Se o usuário tiver o Microsoft Teams em execução, ele poderá ou não ver a i
 
 Quando o aplicativo é instalado para o usuário, o bot receberá um `conversationUpdate` evento que conterá as informações necessárias para enviar a mensagem proativa. Para mais informações, consulte [eventos de bot](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-notifications).
 
-Se você perder o `chatThreadId`, poderá encontrá-lo novamente chamando:
+Se você perder o `chatThreadId` , poderá encontrá-lo novamente chamando:
 
 ```http
 GET /users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppid}')

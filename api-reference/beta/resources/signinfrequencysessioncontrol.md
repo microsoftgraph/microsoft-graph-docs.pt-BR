@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 282c96bb9030f066aadbf0515ec0466da62c502f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f53fd9f930beaaf6812a18725441e1cd338b2e6d
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466036"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434988"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>tipo de recurso signInFrequencySessionControl
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Controle de sessão para impor frequência de logon. Inehrits do [controle de sessão de acesso condicional](conditionalaccesssessioncontrol.md).
+Controle de sessão para impor frequência de logon. Herda do [controle de sessão de acesso condicional](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Especifica se o controle de sessão está habilitado. |
-|type          |String       | Os valores possíveis são: `days` e `hours`.|
-|valor         |Int32        | O número de `days` ou `hours`.|
+|tipo          |Cadeia de caracteres       | Os valores possíveis são: `days` e `hours`.|
+|valor         |Int32        | O número de `days` ou `hours` .|
 
 ## <a name="relationships"></a>Relações
 
