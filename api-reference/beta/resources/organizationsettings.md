@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 80b7272915cd6f9dbfc381aa93a32896e2eaf3f5
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
-ms.translationtype: Auto
+ms.openlocfilehash: 73171beee516c63f75649375b7f084c01bac543f
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050985"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427253"
 ---
 # <a name="organizationsettings-resource-type"></a>tipo de recurso organizationSettings
 
@@ -23,8 +23,10 @@ Contém configurações que se aplicam à [organização](organization.md) ou qu
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Obter configurações da organização](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Leia o objeto de configurações da organização. |
-| [Criar profileCardProperty](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Crie um novo profileCardProperty postando na coleção profileCardProperties. |
-| [Listar profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) | coleção [profileCardProperty](profilecardproperty.md) | Obtenha uma coleção de objetos profileCardProperty. |
+| [Criar profileCardProperty](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Crie um novo **profileCardProperty** postando na coleção de objetos **profileCardProperty** . |
+| [Listar profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) | coleção [profileCardProperty](profilecardproperty.md) | Obtenha uma coleção de objetos **profileCardProperty** . |
+| [Obter itemInsightsSettings](../api/iteminsightssettings-get.md) | [itemInsightsSettings](iteminsightssettings.md) | Obter as propriedades de um objeto **itemInsightsSettings** . |
+| [Atualizar itemInsightsSettings](../api/iteminsightssettings-update.md) | [itemInsightsSettings](iteminsightssettings.md) | Atualiza as propriedades do recurso **itemInsightsSettings** especificado. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -34,8 +36,9 @@ Nenhum.
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id |String| ID do objeto de configurações da organização. |
-|profileCardProperties|coleção [profileCardProperty](profilecardproperty.md)| Contém uma coleção das propriedades que um administrador definiu como visível no cartão de perfil do M365. |
+|id |Cadeia de caracteres| ID do objeto de configurações da organização. |
+|profileCardProperties|coleção [profileCardProperty](profilecardproperty.md)| Contém uma coleção de propriedades que um administrador definiu como visível no cartão de perfil do Microsoft 365. [Obter configurações da organização](../api/organizationsettings-get.md) retorna as propriedades configuradas para cartões de perfil para a organização.|
+|Ideias|[itemInsightsSettings](iteminsightssettings.md)| Contém as propriedades que são configuradas por um administrador para a visibilidade das ideias derivadas do Microsoft Graph, entre um usuário e outros itens no Microsoft 365, como documentos ou sites. [Obtenha itemInsightsSettings](../api/iteminsightssettings-get.md) por meio dessa propriedade de navegação.|
 
 ## <a name="json-representation"></a>Representação JSON
 

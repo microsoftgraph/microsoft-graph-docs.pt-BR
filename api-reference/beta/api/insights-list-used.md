@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: b045ae3d66dded3ed6a85e59282a768b22d9f7fe
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 239a479bb8540ebfe7f6ffabf270d0c41ebc5b12
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332680"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427120"
 ---
 # <a name="list-used"></a>Listar usados
 
@@ -33,19 +33,21 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 - Obter uma lista de documentos que o usuário conectado modificou:
   <!-- { "blockType": "ignored" } -->
+  
   ```http
   GET /me/insights/used
   ```
 
 - Obtenha uma lista de documentos que o usuário especificado modificou:
   <!-- { "blockType": "ignored" } -->
+  
   ```http
   GET /users/{id | userPrincipalName}/insights/used
   ```
@@ -54,6 +56,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 - Expanda o recurso mencionado por uma percepção **usada** :
   <!-- { "blockType": "ignored" } -->
+  
   ```http
   GET /me/insights/used/{id}/resource
   GET /users/{id | userPrincipalName}/insights/used/{id}/resource
@@ -93,6 +96,24 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um `200 OK` código de resposta e uma lista de itens [usados](../resources/insights-used.md) no corpo da resposta.
+
+Se as ideias de item do usuário de destino tiverem sido desabilitadas, este método retornará `403 Forbidden` e o seguinte erro:
+<!-- { "blockType": "ignored" } -->
+
+```
+{
+  "error": {
+    "code": "ItemInsightsDisabled",
+    "message": " The access to the requested resource is denied because item insights are disabled.",
+    "innerError": {
+      "requestId": "request-id",
+      "date": "date-time"
+    }
+  }
+}
+```
+Para obter mais detalhes, consulte [Customize insights Privacy](/graph/insights-customize-item-insights-privacy.md). 
+
 ## <a name="example"></a>Exemplo
 
 ### <a name="example-1-return-documents-that-user-has-modified"></a>Exemplo 1: retornar documentos modificados pelo usuário

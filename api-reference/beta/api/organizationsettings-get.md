@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1de3e239f64b81a6e8f2995bfa626a0d7734ef9e
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: Auto
+ms.openlocfilehash: 755c71a85fe906c1fdf4b24dbceb3a0056d271b3
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080673"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427113"
 ---
 # <a name="get-organizationsettings"></a>Obter organizationSettings
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [organizationSettings](../resources/organizationsettings.md) .
+Recupere as propriedades e os relacionamentos de um objeto [organizationSettings](../resources/organizationsettings.md) , incluindo **profileCardProperties**.
+
+Essa operação não retorna [itemInsightsSettings](../resources/iteminsightssettings.md) por meio da propriedade de navegação **persights** . Use [Get itemInsightsSettings](iteminsightssettings-get.md) em vez disso.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. Read. All                    |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta corporativa ou de estudante)     | User. Read, User. Read. All                    |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sem suporte.                              |
 
 >**Observação:** O uso de permissões delegadas para esta operação exige que o usuário conectado tenha um administrador de locatários ou uma função de administrador global.
@@ -42,7 +44,7 @@ GET https://graph.microsoft.com/beta/organization/settings
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
