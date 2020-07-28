@@ -5,18 +5,20 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2788977c465a44ac06f89ba84004fb2bcb1da4a4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 183742e6f6402b6ba00a749f80ae934a421ea1a4
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461591"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427106"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
 Namespace: microsoft.graph
 
 Aceitar provisoriamente o [evento](../resources/event.md) especificado em um [calendário](../resources/calendar.md)do usuário.
+
+Se o evento permitir propostas para novas horas, em resposta provisória ao evento, um convidado poderá optar por sugerir um tempo alternativo, incluindo o parâmetro **proposedNewTime** . Para obter mais informações sobre como propor um horário e como receber e aceitar uma nova proposta de tempo, confira [propor novos horários da reunião](/graph/outlook-calendar-meeting-proposals).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -57,16 +59,22 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |comment|String|Texto incluído na resposta. Opcional.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|Uma data/hora alternativa propostas por um convidado para uma solicitação de reunião para iniciar e finalizar. Válido somente para eventos que permitem novas propostas de horários. A definição desse parâmetro requer a definição de **sendResponse** como `true` . Opcional.|
 |sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
 
+Esta ação retornará HTTP 400 se ocorrer uma das seguintes ações:
+
+- O parâmetro **proposedNewTime** está incluído, mas a propriedade **allowNewTimeProposals** do **evento** é `false` . 
+- O parâmetro **proposedNewTime** está incluído, mas o parâmetro **sendResponse** está definido como `false` .
+
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+No exemplo a seguir, o usuário conectado responde provisoriamente ao evento especificado, define o **sendResponse** paremeter como true e inclui um momento alternativo no parâmetro **proposedNewTime** .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -76,11 +84,20 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/tentativelyAccept
 Content-type: application/json
-Content-length: 56
 
 {
-  "comment": "comment-value",
-  "sendResponse": true
+  "comment": "I may not be able to make this week. How about next week?",
+  "sendResponse": true,
+  "proposedNewTime": {
+      "start": { 
+          "dateTime": "2019-12-02T18:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }, 
+      "end": { 
+          "dateTime": "2019-12-02T19:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }     
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -102,11 +119,11 @@ Content-length: 56
 ---
 
 
-##### <a name="response"></a>Resposta
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
+  "name": "event_tentativelyaccept",
   "truncated": true
 } -->
 ```http

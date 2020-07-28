@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: f04bf5b3e59f4554e5320d9b97a3b8ba88e22152
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 8ecaaaee73ec7d44634af20e3620bd22016069e2
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383634"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427400"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>tipo de recurso oAuth2PermissionGrant
 
@@ -22,7 +22,7 @@ Conceder permissões delegadas podem ser criadas como resultado de um usuário q
 
 As permissões delegadas às vezes são chamadas de "escopos de OAuth 2,0" ou "escopos".
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
@@ -31,21 +31,24 @@ As permissões delegadas às vezes são chamadas de "escopos de OAuth 2,0" ou "e
 | [Criar oAuth2PermissionGrant](../api/oauth2permissiongrant-post.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) | Criar uma concessão de permissão delegada. |
 | [Atualizar oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | Nenhum | Atualize o objeto oAuth2PermissionGrant. |
 | [Excluir oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | Nenhum  | Excluir uma concessão de permissão delegada. |
+|[Obter delta](../api/oauth2permissiongrant-delta.md)|[oAuth2PermissionGrant](oauth2permissiongrant.md)|Obter objetos **oauth2permissiongrant** recém-criados, atualizados ou excluídos sem executar uma leitura completa de toda a coleção de recursos.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 | id | String | Identificador exclusivo para o **oAuth2PermissionGrant**. Somente leitura.|
-| clientId | String | A **ID** da entidade de [serviço](serviceprincipal.md) do cliente para o aplicativo que é autorizado a atuar em nome de um usuário conectado ao acessar uma API. Obrigatório. Suporta `$filter` ( `eq` somente). |
-| consentType | String | Indica se a autorização é concedida para que o aplicativo cliente represente todos os usuários ou apenas um usuário específico. A *entidade de segurança* indica autorização para representar todos os usuários. *Principal* indica autorização para representar um usuário específico. O consentimento em nome de todos os usuários pode ser concedido por um administrador. Os usuários que não são administradores podem ser autorizados a consentir em nome de alguns casos, para algumas permissões delegadas. Obrigatório. Suporta `$filter` ( `eq` somente). |
-| principalId | String | A **ID** do [usuário](user.md) em nome do qual o cliente está autorizado a acessar o recurso, quando **resenttype** é o *principal*. Se **consenttype** for *servicePrincipalName* , esse valor será NULL. Obrigatório quando **resenttype** é *principal*. |
+| clientId | Cadeia de caracteres | A **ID** da entidade de [serviço](serviceprincipal.md) do cliente para o aplicativo que é autorizado a atuar em nome de um usuário conectado ao acessar uma API. Obrigatório. Suporta `$filter` ( `eq` somente). |
+| consentType | Cadeia de caracteres | Indica se a autorização é concedida para que o aplicativo cliente represente todos os usuários ou apenas um usuário específico. A *entidade de segurança* indica autorização para representar todos os usuários. *Principal* indica autorização para representar um usuário específico. O consentimento em nome de todos os usuários pode ser concedido por um administrador. Os usuários que não são administradores podem ser autorizados a consentir em nome de alguns casos, para algumas permissões delegadas. Obrigatório. Suporta `$filter` ( `eq` somente). |
+| principalId | Cadeia de caracteres | A **ID** do [usuário](user.md) em nome do qual o cliente está autorizado a acessar o recurso, quando **resenttype** é o *principal*. Se **consenttype** for *servicePrincipalName* , esse valor será NULL. Obrigatório quando **resenttype** é *principal*. |
 | resourceId | Cadeia de caracteres | A **ID** da entidade de [serviço](serviceprincipal.md) de recurso para a qual o acesso é autorizado. Isso identifica a API que o cliente está autorizado a tentar chamar em nome de um usuário conectado. |
 | escopo | String | Uma lista separada por espaços dos valores de declaração para permissões delegadas que devem ser incluídas em tokens de acesso para o aplicativo de recurso (a API). Por exemplo, `openid User.Read GroupMember.Read.All`. Cada valor de declaração deve corresponder ao campo de **valor** de uma das permissões delegadas definidas pela API, listadas na propriedade **publishedPermissionScopes** da entidade de [serviço](serviceprincipal.md)de recurso. |
 
 ## <a name="relationships"></a>Relações
 
 Nenhum
+
+Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/oauth2permissiongrant-delta.md).
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1cadb1ca6d2ab1168c3c7f9ff2b182b57112bfb0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c90d086afb7716dc3696443f18931f17cb291d9
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532088"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427239"
 ---
 # <a name="attendee-resource-type"></a>Tipo de recurso attendee
 
@@ -23,9 +23,10 @@ Derivado de [attendeeBase](attendeebase.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|status|[ResponseStatus](responsestatus.md)|A resposta do participante (nenhum, aceito, recusado, etc.) para o evento e a data e a hora em que a resposta foi enviada.|
-|type|String|O tipo de participante: `required`, `optional` ou `resource`.|
 |emailAddress|[emailAddress](emailaddress.md)|Inclui o nome e endereço SMTP do participante.|
+|proposedNewTime|[timeSlot](timeslot.md)|Uma data/hora alternativa proposta pelo participante para que uma solicitação de reunião inicie e termine. Se o participante não propôs outra vez, essa propriedade não é incluída em uma resposta de um evento GET.|
+|status|[ResponseStatus](responsestatus.md)|A resposta do participante (nenhum, aceito, recusado, etc.) para o evento e a data e a hora em que a resposta foi enviada.|
+|tipo|Cadeia de caracteres|O tipo de participante: `required`, `optional` ou `resource`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -35,16 +36,17 @@ Veja a seguir uma representação JSON do recurso
   "blockType": "resource",
   "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
-
+   "proposedNewTime"
   ],
   "@odata.type": "microsoft.graph.attendee"
 }-->
 
 ```json
 {
+  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
+  "proposedNewTime": {"@odata.type": "microsoft.graph.timeSlot"},
   "status": {"@odata.type": "microsoft.graph.responseStatus"},
-  "type": "String",
-  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"}
+  "type": "String"
 }
 
 ```

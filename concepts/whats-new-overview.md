@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: e26203ef0a8846f611d570d98f30fd17dd6db4b3
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 14b02eedcb1636a40a68b2ecbcb3e814ca131c87
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183915"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427316"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -26,10 +26,19 @@ Removida do recurso [changeNotification](/graph/api/resources/changenotification
 DG das seguintes propriedades para a entidade [group](/graph/api/resources/group?view=graph-rest-v1.0): **assignedLabels**, **expirationDateTime**, **membershipRule**, **membershipRuleProcessingState**, **preferredLanguage**e **theme**.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
-Remover um usuário como proprietário registrado ou usuário de um [dispositivo](/graph/api/resources/device).
+- Remover um usuário como proprietário registrado ou usuário de um [dispositivo](/graph/api/resources/device).
+- Acompanhe as alterações de representações locais de aplicativos recém-criadas, atualizadas ou deletadas (representada por recursos[servicePrincipals](/graph/api/resources/serviceprincipal)) e permissões delegadas concedidas (representadas por recursos[oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant)) sem executar uma leitura completa de toda a coleção de recursos.
+- GA da [política para reforçar o padrão de segurança](/graph/api/resources/identitysecuritydefaultsenforcementpolicy) que protege as organizações contra ataques comuns.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+- GA de [políticas de acesso condicional](/graph/api/resources/conditionalAccessPolicy) que são regras personalizadas que definem um cenário de acesso.
+- GA de [posições nomeadas](/graph/api/resources/namedLocation) representando regras personalizadas que definem os locais de rede usados em uma política de acesso condicional.
 
 ### <a name="schema-extensions"></a>Extensões de esquema
 O recurso [extensões de esquema](/graph/api/resources/schemaextension) já está disponível para o público em geral no[Microsoft Cloud for US Government](/graph/deployments).
+
+### <a name="teamwork"></a>Trabalho em equipe
+Use as permissões delegadas de `TeamsAppInstallation.ReadForTeam` ou `TeamsAppInstallation.ReadWriteForTeam` ou permissões de aplicativo de `TeamsAppInstallation.ReadForTeam.All` ou `TeamsAppInstallation.ReadWriteForTeam.All` para [listar aplicativos instalados em uma equipe](/graph/api/teamsappinstallation-list).
 
 ## <a name="july-2020-new-in-preview-only"></a>Julho de 2020: novos apenas na visualização
 
@@ -46,8 +55,15 @@ Inscreva-se para receber notificações sobre alterações na disponibilidade de
 Atualizações do Intune em [julho](changelog.md#july-2020) em beta.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
+- [Adquira um token de acesso](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) para autorizar o serviço de provisionamento do Azure AD para provisionar usuários em um aplicativo.
+- [Obtenha](/graph/api/entitlementmanagementsettings-get?view=graph-rest-beta) ou [atualize](/graph/api/entitlementmanagementsettings-update?view=graph-rest-beta) as configurações de gerenciamento de qualificação que controlam o acesso a grupos, aplicativos e sites do SharePoint Online para usuários internos e externos à sua organização. 
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 - Inclua os níveis de risco do usuário (`low`, `medium`, `high`, `none`) como consideração para aplicar uma [política de acesso condicional](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
 - [Use a alteração de senha como um controle Grant](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta#special-considerations-when-using-passwordchange-as-a-control) para passar uma política de acesso condicional.
+
+### <a name="people-and-workplace-intelligence--insights"></a>Inteligência de pessoas e do ambiente de trabalho | Ideias
+Use mais o [controle de privacidade granular](insights-customize-item-insights-privacy.md) sobre a disponibilidade e a exibição das [informações do item](/graph/api/resources/iteminsights?view=graph-rest-beta) no Microsoft 365. Essas informações representam as relações entre um usuário e documentos no OneDrive for Business, calculadas usando uma análise avançada e técnicas de aprendizado de máquina. 
 
 ### <a name="people-and-workplace-intelligence--profile-card-customization"></a>Inteligência de pessoas e local de trabalho | Personalização de cartão de perfil
 Os administradores podem [personalizar as propriedades expostas no cartão de perfil de suas organizações](add-properties-profilecard.md) usando a API para [propriedade de cartão de perfil](/graph/api/resources/profilecardproperty?view=graph-rest-beta).
@@ -56,6 +72,9 @@ Os administradores podem [personalizar as propriedades expostas no cartão de pe
 [Obtenha o status e todos os resultados](/graph/api/workbookoperation-get?view=graph-rest-beta) de uma operação [de longa execução](/graph/api/resources/workbookoperation?view=graph-rest-beta) em uma [pasta de trabalho](/graph/api/resources/workbook?view=graph-rest-beta).
 
 ## <a name="june-2020-new-and-generally-available"></a>Junho de 2020: novos e disponíveis para o público em geral
+
+### <a name="calendar"></a>Calendário
+GA do recurso que permite aos organizadores permitir propostas de horário alternativo para reuniões ou convites para [propor novos horários para uma reunião](outlook-calendar-meeting-proposals.md) quando eles [aceitarem provisoriamente](/graph/api/event-tentativelyaccept?view=graph-rest-1.0) ou [recusarem](/graph/api/event-decline?view=graph-rest-1.0) um evento.
 
 ### <a name="cloud-communications--online-meeting"></a>Comunicações na nuvem | Reunião online
 - Use o cabeçalho HTTP `Accept-Language`ao [criar uma reunião online](/graph/api/application-post-onlinemeetings?view=graph-rest-1.0) para fornecer informações de participação baseadas no local.

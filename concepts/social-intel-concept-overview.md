@@ -5,18 +5,18 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e12b9f2b8943832b6121e3830e369e48bef5b5ac
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: MT
+ms.openlocfilehash: bbf16ed9f72eb85471e09a11bb0aa779960e6a15
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081246"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427407"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência pessoal e de local de trabalho no Microsoft Graph
 
 As centenas de milhões de usuários que utilizam os serviços de nuvem do Microsoft 365 fazem parte do núcleo do Microsoft Graph. Os dados dos usuários são cuidadosamente gerenciados, protegidos e, com a autorização adequada, disponibilizados pelos serviços do Microsoft Graph para promover a criatividade e a produtividade em empresas. 
 
-A API de perfil permite que você, como desenvolvedores de aplicativos, modelo e representam pessoas nos serviços do Microsoft 365, e a API do cartão de perfil permite que os administradores controlem as informações exibidas nos cartões de perfil dos usuários na organização.
+A API de perfil permite que você, como desenvolvedor de aplicativos, modele e represente pessoas nos serviços do Microsoft 365, e a API de cartão de perfil, permite que os administradores controlem as informações mostradas nos cartões de perfil dos usuários na organização.
 
 Mesmo os dados do usuário sendo onipresentes no Microsoft Graph, os dados derivados das interações do usuário são especialmente interessantes. Eles fornece informações inteligentes que podem responder a perguntas como:
 
@@ -27,7 +27,7 @@ Você pode usar a API de Pessoas e a API do Insights no Microsoft Graph para cri
 
 A API de Pessoas retorna as pessoas por ordem de relevância para um usuário com base nos contatos do usuário, em suas redes sociais, seu diretório organizacional e suas comunicações recentes por email e Skype. Isso é particularmente útil para cenários de seleção de pessoas.
 
-A API do Insights usa análises e avançadas e o aprendizado de máquina para fornecer os arquivos mais relevantes de que os usuários precisam ao longo de seu dia de trabalho. A API é alimentada por experiências familiares do Microsoft 365, incluindo o Office Delve, a página inicial do SharePoint, o modo de exibição de descoberta no OneDrive for Business e o Outlook na Web.
+A API do Insights usa análises e avançadas e o aprendizado de máquina para fornecer os arquivos mais relevantes de que os usuários precisam ao longo de seu dia de trabalho. Essa API capacita experiências familiares do Microsoft 365, incluindo o Office Delve, a página inicial do SharePoint, o modo de exibição Descoberta do OneDrive for Business e o Outlook na Web.
 
 ![As APIs de Pessoas e do Insights retornam pessoas e documentos relevantes para um usuário](images/social-intel-concept-overview-data.png)
 
@@ -69,7 +69,7 @@ A API do [perfil](/graph/api/resources/profile) representa a próxima geração 
 
 ## <a name="why-configure-profile-cards-in-your-organization-preview"></a>Por que configurar cartões de perfil em sua organização (visualização)?
 
-Os cartões de perfil permitem que os usuários de uma organização vejam informações sobre um ao outro, como nomes e informações de contato. Os administradores podem usar a API do [cartão de perfil](/graph/api/resources/profilecardproperty) para personalizar a forma como as superfícies da organização dentro das experiências de pessoas da Microsoft 365.
+Os cartões de perfil permitem que os usuários em uma organização confiram informações sobre eles, como nomes e informações de contato. Os administradores podem usar a API de [cartão de perfil](/graph/api/resources/profilecardproperty) para personalizar a forma como as informações sobre sua organização surgem dentro das experiências das pessoas do Microsoft 365. 
 
 ## <a name="why-integrate-with-document-based-insights"></a>Por que integrar-se a informações baseadas em documentos?
 
@@ -77,13 +77,13 @@ Os cartões de perfil permitem que os usuários de uma organização vejam infor
 
 Durante um dia de trabalho típico, usuários frequentemente interagem com grandes quantidades de informações armazenadas em muitos documentos e colaboram com outros usuários de muitas maneiras diferentes. É importante que eles sempre possam encontrar o precisam no momento certo.
 
-Você pode usar a API do insights, que inclui as APIs de [tendências](/graph/api/resources/insights-trending?view=graph-rest-1.0), [compartilhadas](/graph/api/resources/insights-shared?view=graph-rest-1.0)e [usadas](/graph/api/resources/insights-used?view=graph-rest-1.0) , para abranger arquivos da Microsoft 365 com base no contexto e nas necessidades atuais do usuário, tornando os usuários mais produtivos e melhorando a colaboração em sua organização.
+Você pode usar a API do Insights, que inclui as APIs [trending](/graph/api/resources/insights-trending?view=graph-rest-1.0), [shared](/graph/api/resources/insights-shared?view=graph-rest-1.0) e [used](/graph/api/resources/insights-used?view=graph-rest-1.0) para localizar arquivos no Microsoft 365 com base no contexto e nas necessidades atuais dos seus usuários, tornando os usuários mais produtivos e melhorando a colaboração em sua organização. As organizações podem [personalizar as configurações de privacidade](insights-customize-item-insights-privacy.md) para essas informações baseadas em documentos e controlar a disponibilidade dessas informações em experiências específicas do Microsoft 365.
 
 É fácil renderizar os resultados da API do Insights em seu aplicativo. Cada resultado acompanha um conjunto de propriedades de visualização comuns, como uma URL de imagem de visualização ou um texto de visualização.
 
 ### <a name="make-relevant-content-visible"></a>Tornar o conteúdo relevante visível
 
-No Microsoft 365, o Delve usa a visão de _tendências_ para ajudar os usuários a descobrir os documentos mais interessantes para eles no momento. Veja a Figura 1.
+No Microsoft 365, o Delve usa informações de _tendências_ para ajudar os usuários a descobrir os documentos que são mais interessantes para eles no momento. Veja a Figura 1.
 
 É possível usar a entidade [trending](/graph/api/resources/insights-trending?view=graph-rest-1.0) de forma programática na API do Insights para proporcionar uma experiência semelhante aos clientes do seu aplicativo. Use a entidade **trending** para se conectar aos documentos que mais relevantes para o usuário e mais populares ao seu redor. A opção [Listar documentos mais populares](/graph/api/insights-list-trending?view=graph-rest-1.0) retornará arquivos armazenados em sites de equipe do SharePoint ou no OneDrive, classificados por relevância, com os mais importantes primeiro. 
 
@@ -93,9 +93,9 @@ No Microsoft 365, o Delve usa a visão de _tendências_ para ajudar os usuários
 
 ### <a name="allow-users-to-collaborate-and-get-back-to-work"></a>Permitir que os usuários colaborem e voltem ao trabalho
 
-Os novos cartões de pessoas da Microsoft 365 tocam nas ideias _usadas_ e _compartilhadas_ para conectar os pontos entre pessoas e unidades de conhecimento. O cartão de pessoas identifica e exibe documentos relevantes sobre uma pessoa. Os usuários podem ver cartões de pessoas em todo o pacote Office, por exemplo, no Outlook na Web. Veja a Figura 2.
+Os novos cartões de pessoas do Microsoft 365 utilizam as informações _used_ e _shared_ para conectar os dados entre pessoas e informações. O cartão de pessoas identifica e exibe documentos relevantes sobre uma pessoa. Os usuários podem ver cartões de pessoas em todo o pacote Office, por exemplo, no Outlook na Web. Veja a Figura 2.
 
-A API do Insights fornece uma com uma funcionalidade semelhante às entidades [used](/graph/api/resources/insights-used?view=graph-rest-1.0) e [shared](/graph/api/resources/insights-shared?view=graph-rest-1.0) entidades. Eles retornam o que um usuário está exibindo ou trabalhando mais recentemente ou quais colegas compartilharam com o usuário mais recentemente no Microsoft 365.
+A API do Insights fornece uma com uma funcionalidade semelhante às entidades [used](/graph/api/resources/insights-used?view=graph-rest-1.0) e [shared](/graph/api/resources/insights-shared?view=graph-rest-1.0) entidades. Elas retornam o que um usuário tem visualizado e trabalhado mais recentemente, ou o que colegas compartilharam com o usuário mais recentemente no Microsoft 365.
 
 **Figura 2. Outlook na Web, mostrando um cartão de pessoas para um usuário**
 
@@ -112,14 +112,17 @@ A API de análises permite a sincronização ou a integração de dados de anál
 Procurando a referência de API para estes serviços?
 
 - [Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo](/graph/api/resources/social-overview)
-- O recurso [pessoa](/graph/api/resources/person) da API de pessoas
-- Recurso [de perfil (visualização)](/graph/api/resources/profile)
-- Recurso [de Propriedade do cartão de perfil (visualização)](/graph/api/resources/profilecardproperty)
-- [API do Insights](/graph/api/resources/officegraphinsights)
-- [Análise API (visualização)](/graph/api/resources/useranalytics)
+- O recurso [pessoa](/graph/api/resources/person) da API Pessoas
+- Recurso [Perfil (visualização)](/graph/api/resources/profile)
+- Recurso [Propriedade do cartão de perfil (visualização)](/graph/api/resources/profilecardproperty) 
+- [API do informações](/graph/api/resources/officegraphinsights)
+- [API de análise (visualização)](/graph/api/resources/useranalytics)
 
 ## <a name="next-steps"></a>Próximas etapas
 
 * Use o [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) para experimentar as APIs de pessoas, Insights e análises com seus próprios arquivos. Entre e escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para ativar **Pessoas**, **Insights** e **Análises**.
-* Saiba mais sobre a [API de pessoas](people-example.md).
-* Confira como [Personalizar o cartão de perfil](add-properties-profilecard.md).
+* Encontre mais informações sobre a [API pessoas](people-example.md).
+* Veja como [personalizar o cartão de perfil](add-properties-profilecard.md).
+* Saiba mais sobre como [personalizar a privacidade dos usuários](insights-customize-item-insights-privacy.md) e a [API de informações](/api-reference/beta/resources/iteminsights.md).
+* Saiba mais sobre a [API de análise](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life).
+* Saiba mais sobre a [API de perfil](/graph/api/resources/profile?view=graph-rest-beta).

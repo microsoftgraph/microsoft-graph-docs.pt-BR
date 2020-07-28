@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 415e130e52b8911a4a068cba0f1e999b83e6283b
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: af2d23c26d2911c8abc36c8a9e66fb776edd43e0
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384418"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434845"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>tipo de recurso signInFrequencySessionControl
 
 Namespace: microsoft.graph
 
-Controle de sessão para impor frequência de logon. Inehrits do [controle de sessão de acesso condicional](conditionalaccesssessioncontrol.md).
+Controle de sessão para impor frequência de logon. Herda do [controle de sessão de acesso condicional](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Propriedades
 

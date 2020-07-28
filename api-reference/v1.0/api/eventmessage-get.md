@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c2fb7318c8c98b02771fac376a3abaf6350e1b7c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6aae4c310ad98c81bec05929699826d4f6eff6c4
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461559"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427484"
 ---
 # <a name="get-eventmessage"></a>Obter eventMessage
 
@@ -51,8 +51,11 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [eventMessage](../resources/eventmessage.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request-1"></a>Solicitação 1
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1"></a>Exemplo 1
+#### <a name="request"></a>Solicitação
+
 O primeiro exemplo mostra como obter as propriedades de uma mensagem de evento com base no ID da mensagem do evento.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -82,13 +85,13 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 
 ---
 
-##### <a name="response-1"></a>Resposta 1
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventMessage"
+  "@odata.type": "microsoft.graph.eventMessageRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -96,7 +99,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages/$entity",
-    "@odata.type":"#microsoft.graph.eventMessage",
+    "@odata.type":"#microsoft.graph.eventMessageRequest",
     "@odata.etag":"W/\"CwAAABYAAABXlB/SL0N4Q6g6o+jSYAEuAAAImkVD\"",
     "id":"AAMkADYAAAImV_lAAA=",
     "createdDateTime":"2017-12-27T21:58:36Z",
@@ -158,7 +161,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a>Solicitação 2
+### <a name="example-2"></a>Exemplo 2
+#### <a name="request"></a>Solicitação
 O segundo exemplo mostra como obter o evento associado a uma mensagem de evento. Ele usa a ID da mensagem para obter a mensagem do evento, fornece explicitamente uma conversão na mensagem do evento para acessar a propriedade de navegação **event** e aplica um parâmetro $expand para obter as propriedades do evento.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -188,13 +192,13 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=mic
 
 ---
 
-##### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. As propriedades do evento correspondente são retornadas na resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventMessage"
+  "@odata.type": "microsoft.graph.eventMessageRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -202,7 +206,7 @@ Content-type: application/json
 
 {
    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages/$entity",
-   "@odata.type":"#microsoft.graph.eventMessage",
+   "@odata.type":"#microsoft.graph.eventMessageRequest",
    "@odata.etag":"W/\"CwAAABYAAABXlB/SL0N4Q6g6o+jSYAEuAAAImkVF\"",
    "id":"AAMkADYAAAImV_jAAA=",
    "createdDateTime":"2017-12-27T21:54:55Z",
