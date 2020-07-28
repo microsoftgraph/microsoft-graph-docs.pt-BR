@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 921ba639519253e3ecfdde5e59bca54a2ec71175
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 8cb71fae980001657475b82d51c321781a053758
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183663"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427246"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -281,7 +281,7 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |eventos|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o usuário. Anulável.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
-|insights|[officeGraphInsights](officegraphinsights.md) | Somente leitura. Anulável.|
+|insights|[itemInsights](iteminsights.md) | Somente leitura. Anulável.|
 |joinedGroups|Coleção [group](group.md)| Somente leitura. Anulável.|
 |mailFolders|Coleção [mailFolder](mailfolder.md)| As pastas de email do usuário. Somente leitura. Anulável.|
 |manager|[directoryObject](directoryobject.md)|O usuário ou contato que é o gerente do usuário. Somente leitura. (Métodos HTTP: GET, PUT, DELETE.)|
@@ -424,7 +424,7 @@ Veja a seguir uma representação JSON do recurso
   "directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "drive": {"@odata.type": "microsoft.graph.drive"},
   "drives": [{"@odata.type": "microsoft.graph.drive"}],
-  "insights": {"@odata.type": "microsoft.graph.officeGraphInsights"},
+  "insights": {"@odata.type": "microsoft.graph.iteminsights"},
   "settings": {"@odata.type": "microsoft.graph.userSettings"},
   "events": [{"@odata.type": "microsoft.graph.event"}],
   "extensions": [{"@odata.type": "microsoft.graph.extension"}],

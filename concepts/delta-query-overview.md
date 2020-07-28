@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: e9bb33434fe9904ebf994df066ec95e76a049b70
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 2fed96d480647e848186140096707d503217d57e
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408005"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427414"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -122,7 +122,7 @@ A consulta delta é compatível atualmente com os seguintes recursos.
 | Pastas de email                                                   | função [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) do recurso [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)                                               |
 | Mensagens de uma pasta                                           | função [delta](/graph/api/message-delta?view=graph-rest-1.0) do recurso [mensagem](/graph/api/resources/message?view=graph-rest-1.0)                                                        |
 | Contatos organizacionais                                        | função [delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) do recurso [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0)                                              |
-| OAuth2PermissionGrants (visualização)                               | Função [delta](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta) do recurso [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta) (visualização) |
+| OAuth2PermissionGrants                               | Função [delta](/graph/api/oauth2permissiongrant-delta) do recurso [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant)  |
 | Pastas de contatos pessoais                                       | função [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) do recurso [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0)                                     |
 | Contatos pessoais em uma pasta                                  | Função [delta](/graph/api/contact-delta?view=graph-rest-1.0) do recurso [contato](/graph/api/resources/contact?view=graph-rest-1.0)                                                       |
 | Itens do Planner\*\* (pré-visualização)                                    | função [delta](/graph/api/planneruser-list-delta) de todos os segmentos do recurso [plannerUser](/graph/api/resources/planneruser) (visualização)                                                     |

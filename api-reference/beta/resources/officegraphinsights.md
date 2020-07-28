@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso officeGraphInsights
-description: Ideias são relações calculadas usando análises e técnicas de aprendizado de máquina. Por exemplo, você pode identificar documentos do OneDrive for Business que se aproximam dos usuários.
+description: Representa o tipo base para itemInsights. officeGraphInsights é para fins de compatibilidade com versões anteriores da API do insights. Use apenas itemInsights ao acessar a API do insights.
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 266c570169c219259d19a6c1f78e01c83fe8e2c2
-ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
+ms.openlocfilehash: ce1f51a3e0b53dc1ed108febf9a3b91055349ce5
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44226886"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427323"
 ---
 # <a name="officegraphinsights-resource-type"></a>tipo de recurso officeGraphInsights
 
@@ -18,7 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ideias são relações calculadas usando análises e técnicas de aprendizado de máquina. Por exemplo, você pode identificar documentos de tendências do OneDrive for Business que se aproximam dos usuários.
+Use [itemInsights](iteminsights.md) no lugar de **officeGraphInsights** para acessar a API do insights.
+
+**officeGraphInsights** é para fins de compatibilidade com versões anteriores da API do insights. É o tipo de base para [itemInsights](iteminsights.md).
+
+Ideias são relações calculadas usando análises e técnicas de aprendizado de máquina. Por exemplo, você pode identificar documentos do OneDrive for Business que se aproximam dos usuários.
 
 Informações são retornadas pelas seguintes APIs:
 
@@ -32,9 +36,10 @@ Cada opinião é retornada com um **resourceVisualization** e Tipo de valor comp
 
 | Relação      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|
-| tendências      | coleção [tendências](insights-trending.md)        | Relacionamento calculado que identifica documentos de tendências em torno de um usuário. Os documentos de tendência são calculados com base na atividade da rede de pessoas mais próximas do usuário e incluem arquivos armazenados no OneDrive for Business e no SharePoint. As informações de tendências ajudam o usuário a descobrir o conteúdo potencialmente útil que ele tem acesso, mas nunca viu antes.|
-| usado      | coleção [usedInsight](insights-used.md)        | Relacionamento calculado que identifica os documentos mais recentes exibidos ou modificados por um usuário, incluindo documentos do OneDrive for Business e do SharePoint, classificados por tempo de uso recente.|
-| compartilhado        | coleção [sharedInsight](insights-shared.md)        | Relacionamento calculado identificando documentos compartilhados com ou pelo usuário. Isso inclui URLs, anexos de arquivo e anexos de referência aos arquivos do OneDrive for Business e SharePoint encontrados nas mensagens e reuniões do Outlook. Isso também inclui URLs e anexos de referência para conversas do Teams. Ordenado por tempo de compartilhamento recente.|
+| tendências      | coleção [tendências](insights-trending.md)        | Acessar essa propriedade a partir do tipo derivado [itemInsights](iteminsights.md).|
+| usado      | coleção [usedInsight](insights-used.md)        | Acessar essa propriedade a partir do tipo derivado [itemInsights](iteminsights.md).|
+| compartilhado        | coleção [sharedInsight](insights-shared.md)        | Acessar essa propriedade a partir do tipo derivado [itemInsights](iteminsights.md).|
+
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -59,3 +64,4 @@ Veja a seguir uma representação JSON do recurso
   "shared": [ { "@odata.type": "microsoft.graph.shared" } ]
 }
 ```
+

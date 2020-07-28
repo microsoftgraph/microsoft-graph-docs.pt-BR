@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 95d55141437825612c74f802783210dcf075d466
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 3d22d73ae4e336f7eae585f8d535d276e29411f6
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408054"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427421"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,18 +18,28 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 ## <a name="july-2020"></a>Julho de 2020
 
-### <a name="change-notifications"></a>Alterar notificações
+### <a name="calendar"></a>Calendário
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | Adicionada a propriedade **allowNewTimeProposals** às entidades [event](/graph/api/resources/event?view=graph-rest-1.0) e [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0). |
+| Adição | v1.0 | Foi adicionado o parâmetro opcional **proposedNewTime** aos métodos [tentativelyAccept](/graph/api/event-tentativelyaccept?view=graph-rest-1.0) e [decline](/graph/api/event-decline?view=graph-rest-1.0) de **event**. |
+| Adição | v1.0 | Adicionada a entidade [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) que se baseia em [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) e, além disso, incluídas as propriedades **proposedNewTime** e **responseType**. |
+| Adição | v1.0 | Adicionada a propriedade **proposedNewTime** ao tipo complexo [attendee](/graph/api/resources/attendee?view=graph-rest-1.0). |
+
+
+### <a name="change-notifications"></a>Notificações de alterações
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Remoção | Beta e v1.0 | Removida a propriedade **sequenceNumber** introduzida incorretamente do tipo [changeNotification](/graph/api/resources/changenotification).|
-| Adição | Beta | Adiciona [presence](/graph/api/resources/presence) a recursos suportados para [ notificações de alteração](/graph/webhooks). |
+| Adição | beta | Adiciona [presence](/graph/api/resources/presence) a recursos suportados para [ notificações de alteração](/graph/webhooks). |
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionada a operação [Atualização de onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta) para atualizações de reunião.|
-| Adição | Beta | O recurso de [presença](/graph/api/resources/presence) agora é compatível com [alterar notificações](/graph/webhooks). |
+| Adição | beta | O recurso de [presença](/graph/api/resources/presence) agora é compatível com [alterar notificações](/graph/webhooks). |
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 
@@ -86,47 +96,49 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 |Adição|v1.0|Adicionado o método[getAvailableExtensionProperties](/graph/api/directoryObject-getAvailableExtensionProperties?view=graph-rest-1.0) para o recurso [directoryObject](/graph/api/resources/directoryObject?view=graph-rest-1.0).|
 | Adição | beta | Adicionadas as configurações de **propriedade de navegação para a** entidade da [organização](/graph/api/resources/organization?view=graph-rest-beta). |
 | Adição | beta | Adicionada a entidade [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta).  |
-| Adição | beta | Adicionada a propriedade de navegação **profileCardProperties** à entidade **organizationSettings**. |
-| Adição | beta | Adicionada a entidade **profileCardProperty** e as seguintes operações: <br/> [Listar](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Criar](/graph/api/organizationsettings-post-profilecardproperties) <br/> Entidade [Obter profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta). <br/> [Atualizar profileCardProperty](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Excluir](/graph/api/profilecardproperty-delete) |
 | Adição | Beta e v1.0 | As seguintes operações foram adicionadas aos[dispositivos](/graph/api/resources/device): <br/> [Excluir proprietário registrado](/graph/api/delete-registeredowners) <br/> [Excluir usuário registrado](/graph/api/delete-registeredusers)|
-| Adição | Beta e v1.0 | As seguintes operações foram adicionadas aos[dispositivos](/graph/api/resources/device): <br/> [Excluir proprietário registrado](/graph/api/device-delete-registeredowners) <br/> [Excluir usuário registrado](/graph/api/delete-registeredusers)|
 | Adição | v1.0 | Adicionados os **assignedLabels**, **expirationDateTime**, **membershipRule**, **membershipRuleProcessingState**, **preferredLanguage**e propriedades de **theme** para a entidade [group](/graph/api/resources/group?view=graph-rest-v1.0). |
 | Adição | beta | Adicionada a propriedade **infoCatalogs** à entidade [group](/graph/api/resources/group?view=graph-rest-beta) e à entidade [user](/graph/api/resources/user?view=graph-rest-beta). |
-| Adição | beta | Adicionada a propriedade **userRiskLevels** à entidade [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta). |
-| Adição | beta | A concessão de controle **passwordChange** foi adicionada à entidade [conditionalAccessGrantControls](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta). |
 | Adição | beta | A propriedade **id** adicionada à entidade [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta). |
 | Adição | beta | Adicionado o método [acquireAccessToken](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) ao recurso [synchronization](/graph/api/resources/synchronization-synchronization?view=graph-rest-beta)|
 | Adição | beta | Adicionada a entidade [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta). |
-| Adição | v1.0 | Foi adicionada a [API identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-v1.0), que representa a política de padrões de segurança do Azure Active Directory.|
+| Adição | v1.0 | Foi adicionada a [API identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-1.0), que representa a política de padrões de segurança do Azure Active Directory.|
 | Adição        | v1.0        | Foi adicionada o recurso [consulta delta](delta-query-overview.md) ao [servicePrincipal](/graph/api/serviceprincipal-delta). |
+| Adição        | v1.0        | Recurso [consulta delta](delta-query-overview.md)adicionado para [oauth2PermissionGrant](/graph/api/oauth2Permissiongrant-delta). |
 
-### <a name="identity-and-access--conditional-access"></a>Identidade e acesso | Acesso condicional
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Adição | beta | A propriedade **userRiskLevels** foi adicionada à entidade [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta). |
 | Adição | beta | A concessão de controle **passwordChange** foi adicionada à entidade [conditionalaccessgrantcontrols](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta). |
 | Adição | v1.0 | Foram adicionados novos tipos de entidade:<br/>[conditionalAccessPolicy](/graph/api/resources/conditionalAccessPolicy)<br/>
 | Adição | v1.0 | Foram adicionados novos tipos complexos:<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>|
-| Adição | v1.0 | Foi adicionada a [API namedLocation](/graph/api/resources/namedLocation?view=graph-rest-v1.0), que representa os locais nomeados no acesso condicional do Azure AD. |
+| Adição | v1.0 | Foi adicionada a [API namedLocation](/graph/api/resources/namedLocation?view=graph-rest-1.0), que representa os locais nomeados no acesso condicional do Azure AD. |
 
-### <a name="people-and-workplace-intelligence--profile-card-customization"></a>Inteligência de pessoas e local de trabalho | Personalização de cartão de perfil
+### <a name="people-and-workplace-intelligence--insights"></a>Inteligência social e do ambiente de trabalho | Ideias
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição | beta | Adicionada a propriedade de navegação **itemInsights** à entidade **organizationSettings**. |
+| Adição | beta | Adicionada a entidade **itemInsightsSettings**e as seguintes operações: <br/> [Obter itemInsightSettings](/graph/api/iteminsightssettings-get?view=graph-rest-beta) <br/> [Atualizar itemInsightSettings](/graph/api/iteminsightssettings-update?view=graph-rest-beta) |
+
+
+### <a name="people-and-workplace-intelligence--profile"></a>Inteligência de pessoas e do local de trabalho | Perfil
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionada a propriedade de navegação **profileCardProperties** à entidade [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta). |
-| Adição | beta | Adicionada a entidade **profileCardProperty** e as seguintes operações: <br/> [Listar](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [Atualizar](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete) |
+| Adição | beta | Adicionada a entidade **profileCardProperty** e as seguintes operações: <br/> [Listar](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [Update](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete). |
 
 ### <a name="teamwork"></a>Trabalho em equipe
-
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição | Beta, v 1.0 | Novas permissões adicionadas [TeamsAppInstallation.ReadForTeam](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForTeam](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions). |
+
 
 ### <a name="workbooks-and-charts"></a>Pastas de trabalho e gráficos
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |Adição|Beta e v1.0 |Adicionado o relacionamento [workbookOperation](/graph/api/resources/workbookoperation) à entidade [pasta de trabalho](/graph/api/resources/workbook?view=graph-rest-beta). |
-|Adição|Beta e v1.0 |Adicionado o método [Get workbookOperation](/graph/api/resources/workbookoperation-get) à entidade [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta). |
-
+|Adição|Beta e v1.0 |Adicionado o método [Get workbookOperation](/graph/api/workbookoperation-get) à entidade [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta). |
 
 ## <a name="june-2020"></a>Junho de 2020
 
@@ -1018,7 +1030,7 @@ Introduziu a versão 1,1 do Microsoft Graph Toolkit.
 |Exclusão|beta|Foram removidos os seguintes tipos complexos:<br/>**scopeTagInfo**<br/>|
 |Exclusão|beta|A ação [getDeviceNoncomplianceReports](/graph/api/intune-reporting-devicemanagementreports-getdevicenoncompliancereports?view=graph-rest-beta) foi removida de [deviceManagementReports](/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-beta) |
 |Exclusão|beta|A ação [getPolicyNoncomplianceReports](/graph/api/intune-reporting-devicemanagementreports-getpolicynoncompliancereports?view=graph-rest-beta) foi adicionada a [deviceManagementReports](/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-beta) |
-|Alteração|beta|Foram alteradas as seguintes propriedades na entidade [androidDeviceOwnerCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androiddeviceownercertificateprofilebase?view=graph-rest-beta):<br/>**subjectAlternativeNameType** de obrigatória para opcional<br/>|
+|Alterar|beta|Foram alteradas as seguintes propriedades na entidade [androidDeviceOwnerCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androiddeviceownercertificateprofilebase?view=graph-rest-beta):<br/>**subjectAlternativeNameType** de obrigatória para opcional<br/>|
 |Adição|beta|A propriedade **googleAccountsBlocked** foi adicionada à entidade [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta)|
 |Adição|beta|As propriedades **keyboardsRestricted** e **approvedKeyboards** foram adicionadas à entidade [androidManagedAppProtection](/graph/api/resources/intune-shared-androidmanagedappprotection?view=graph-rest-beta)|
 |Adição|beta|A propriedade **thirdPartyKeyboardsBlocked** foi adicionada à entidade [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta)|
@@ -3208,7 +3220,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
-|Alteração|beta|As propriedades **applicationID** e **creatorUserID** foram adicionadas ao recurso [subscription](/graph/api/resources/subscription?view=graph-rest-beta). |
+|Alterar|beta|As propriedades **applicationID** e **creatorUserID** foram adicionadas ao recurso [subscription](/graph/api/resources/subscription?view=graph-rest-beta). |
 |Alteração|beta|A operação [list](/graph/api/subscription-list?view=graph-rest-beta) foi adicionada à entidade [subscription](/graph/api/resources/subscription?view=graph-rest-beta). |
 
 ### <a name="identity-and-access--data-policy-operations"></a>Identidade e acesso | Operações de política de dados
@@ -5043,4 +5055,3 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 | Correção             | v1.0 e beta | Corrigiu a possibilidade de selecionar determinadas propriedades de usuário em outros usuários ao referenciar o usuário pelo nome UPN. Por exemplo: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Correção             | v1.0 e beta | Foi corrigida a chamada à função de limite do usuário _microsoft.graph.reminderView_, pois estava falhando com o seguinte erro: Não foi possível localizar uma propriedade chamada businessPhones no tipo 'Microsoft.OutlookServices.Reminder. |
 | Correção             | v1.0 e beta | Foram corrigidas a criação e a atualização de usuário (POST/PATCH /v1.0/users), que estava falhando com um erro 400. |
-

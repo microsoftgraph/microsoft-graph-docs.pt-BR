@@ -4,28 +4,28 @@ description: No Outlook, o organizador da reunião pode permitir que os convidad
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 3e391f82670a2b9a9807ac88cb128ba909264b8b
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: d1273c967f9ea1476e83e7f2905c7ed4c29808d6
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622721"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427477"
 ---
-# <a name="propose-new-meeting-times-in-outlook-preview"></a>Propor novos horários de reunião no Outlook (Visualização)
+# <a name="propose-new-meeting-times-in-outlook"></a>Propor novos horários de reunião no Outlook
 
 No Outlook, o organizador da reunião pode permitir que os convidados proponham horários de reunião alternativos, se não puderem se encontrar na data/hora original definida e aceitar provisoriamente ou recusar. O organizador pode aceitar uma proposta ajustando o horário da reunião conforme apropriado.
 
 ## <a name="example-attendee-responds-tentative-and-suggests-a-different-datetime"></a>Exemplo: o participante responde provisoriamente e sugere uma data/hora diferente
 A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Adele timidamente aceita e propõe uma data e hora alternativas. Alex aceita a proposta ajustando a reunião de acordo:
 
-1. Como organizador, Alex envia uma solicitação de reunião para Adele. Ele define a propriedade **allowNewTimeProposals** do [evento](/graph/api/resources/event?view=graph-rest-beta) para `true` para deixar Adele sugerir outro horário se ela precisar.
+1. Como organizador, Alex envia uma solicitação de reunião para Adele. Ele define a propriedade **allowNewTimeProposals** do [evento](/graph/api/resources/event?view=graph-rest-1.0) para `true` para deixar Adele sugerir outro horário se ela precisar.
 
     <!-- {
       "blockType": "request",
       "name": "create_event"
     }-->
     ```http
-    POST https://graph.microsoft.com/beta/me/events
+    POST https://graph.microsoft.com/v1.0/me/events
     Prefer: outlook.timezone="Pacific Standard Time"
     Content-type: application/json
 
@@ -71,7 +71,7 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
     Content-type: application/json
 
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
       "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhBhkg==\"",
       "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
       "createdDateTime": "2019-08-01T06:41:07.805128Z",
@@ -151,14 +151,14 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
     }
     ```
 
-2. Adele recebe o convite na caixa de entrada como um [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta). Ela observa que a propriedade **allowNewTimeProposals** está definida. [Ao usar o **evento ** associado](/graph/api/eventmessage-get#example-2?view=graph-rest-beta) a esse **eventMessageRequest **, ela responde provisoriamente e propõe o dia seguinte no mesmo horário, no parâmetro de corpo **proposedNewTime**. Ela também define o parâmetro **sendResponse** como verdadeiro.
+2. Adele recebe o convite na caixa de entrada como um [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0). Ela observa que a propriedade **allowNewTimeProposals** está definida. [Ao usar o **evento ** associado](/graph/api/eventmessage-get?view=graph-rest-1.0#example-2) a esse **eventMessageRequest **, ela responde provisoriamente e propõe o dia seguinte no mesmo horário, no parâmetro de corpo **proposedNewTime**. Ela também define o parâmetro **sendResponse** como verdadeiro.
 
     <!-- {
       "blockType": "request",
       "name": "event_tentativelyaccept"
     }-->
     ```http
-    POST https://graph.microsoft.com/beta/me/events/AAMkADU5NRaRqdoI4oeRpAAAB_woNAAA=/tentativelyAccept
+    POST https://graph.microsoft.com/v1.0/me/events/AAMkADU5NRaRqdoI4oeRpAAAB_woNAAA=/tentativelyAccept
     Content-type: application/json
 
     { 
@@ -188,7 +188,7 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
     HTTP/1.1 202 Accepted
     ```
 
-3. Alex recebe um email do tipo [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta). Ele observa o seguinte:
+3. Alex recebe um email do tipo [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0). Ele observa o seguinte:
 
    - O assunto inclui um prefixo e diz "Novo Horário Proposto: Vamos almoçar"
    - O remetente é Adele Vance
@@ -200,7 +200,7 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
       "name": "get_messages"
     }-->
     ```http
-    GET https://graph.microsoft.com/beta/me/messages?$top=1
+    GET https://graph.microsoft.com/v1.0/me/messages?$top=1
     Prefer: outlook.timezone="Pacific Standard Time"
     ```
 
@@ -219,8 +219,8 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
     Preference-Applied: outlook.timezone="Pacific Standard Time"
 
     {
-       "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/messages",
-       "@odata.nextLink": "https://graph.microsoft.com/beta/me/messages?$top=1&$skip=4"",
+       "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/messages",
+       "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$top=1&$skip=4"",
        "value": [
           {
             "@odata.type": "#microsoft.graph.eventMessageResponse",
@@ -254,7 +254,6 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
             "isAllDay": false,
             "isDelegated": false,
             "responseType": "tentativelyAccepted",
-            "mentionsPreview": null,
             "recurrence": null,
             "body": {
                 "contentType": "html",
@@ -314,14 +313,14 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
     }
     ```
 
-4. Alex também observa que o **evento** do almoço agora inclui uma propriedade **proposedNewTime** que indica a proposta de Adele. Essa propriedade só estará presente como parte de uma instância [participante](/graph/api/resources/attendee?view=graph-rest-beta) se o participante correspondente sugerir um horário de reunião alternativo. 
+4. Alex também observa que o **evento** do almoço agora inclui uma propriedade **proposedNewTime** que indica a proposta de Adele. Essa propriedade só estará presente como parte de uma instância [participante](/graph/api/resources/attendee?view=graph-rest-1.0) se o participante correspondente sugerir um horário de reunião alternativo. 
 
     <!-- {
       "blockType": "request",
       "name": "event_get"
     }-->
     ```http
-    GET https://graph.microsoft.com/beta/me/events/AAMkADAwJXJGu0AAACEhWOAAA=?$select=subject,allowNewTimeProposals,start,end,attendees,organizer
+    GET https://graph.microsoft.com/v1.0/me/events/AAMkADAwJXJGu0AAACEhWOAAA=?$select=subject,allowNewTimeProposals,start,end,attendees,organizer
     Prefer: outlook.timezone="Pacific Standard Time"
     ```
 
@@ -335,7 +334,7 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
     HTTP/1.1 200 Ok
 
     {
-        "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(subject,allowNewTimeProposals,start,end,attendees,organizer)/$entity",
+        "@odata.context": "https://graph.microsoft.com/testexchangev1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(subject,allowNewTimeProposals,start,end,attendees,organizer)/$entity",
         "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhEDMA==\"",
         "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
         "subject": "Let's go for lunch",
@@ -388,7 +387,7 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
       "name": "event_update"
     }-->
     ```http
-    PATCH https://graph.microsoft.com/beta/me/events/AAMkADAwJXJGu0AAACEhWOAAA=
+    PATCH https://graph.microsoft.com/v1.0/me/events/AAMkADAwJXJGu0AAACEhWOAAA=
     Prefer: outlook.timezone="Pacific Standard Time"
     Content-type: application/json
 
@@ -416,7 +415,7 @@ A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Ade
     HTTP/1.1 200 Ok
 
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
       "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhBizA==\"",
       "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
       "createdDateTime": "2019-08-01T06:41:07.805128Z",

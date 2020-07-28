@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: bf83f42dcfe23fe307d7756e61326b1eb2e5ce76
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: b4478c0ebec93e5156a46c68f7b8a035225d199f
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183992"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427505"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -124,7 +124,7 @@ Esse recurso permite:
 |description|String|Uma descrição opcional para o grupo. <br><br>Retornado por padrão.|
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante as atualizações. <br><br>Retornado por padrão. Oferece suporte a $filter e $orderby. |
 |expirationDateTime|DateTimeOffset| Data e hora de quando o grupo está configurado para expirar. Não é possível modificar o valor e ele é preenchido automaticamente quando o grupo é criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura. |
-|groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção contiver `Unified`, o grupo será um grupo do Microsoft 365; caso contrário, será um grupo de segurança.  <br><br>Se a coleção inclui `DynamicMembership`, o grupo tem associação dinâmica; caso contrário, a associação é estática.  <br><br>Retornado por padrão. Oferece suporte a $filter.|
+|groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção contiver `Unified`, o grupo será um grupo do Microsoft 365; caso contrário, será um grupo de segurança ou um grupo de distribuição. Para obter detalhes, confira [visão geral sobre grupos](groups-overview.md).<br><br>Se a coleção inclui `DynamicMembership`, o grupo tem associação dinâmica; caso contrário, a associação é estática.  <br><br>Retornado por padrão. Oferece suporte a $filter.|
 |hasMembersWithLicenseErrors|Boolean| Indica se existem membros neste grupo com erros de licença da sua atribuição de licença baseada em grupo. <br><br>Essa propriedade nunca é retornada em uma operação GET. Você pode usá-lo como um argumento $filter para acessar os grupos que têm membros com erros de licença (ou seja, o filtro para essa propriedade é **true**).|
 |hideFromAddressLists |Booliano |Verdadeiro se o grupo não for exibido em certas partes da interface do usuário do Outlook: no **Catálogo de Endereços**, nas listas de endereços para selecionar os destinatários da mensagem e na caixa de diálogo **Procurar Grupos** para pesquisar grupos; falso caso contrário. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
 |hideFromOutlookClients |Booliano |Verdadeiro se o grupo não for exibido nos clientes do Outlook, como Outlook para Windows e Outlook na Web; caso contrário, falso. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
