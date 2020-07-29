@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Recupere uma coleção de recursos DriveItem que foram compartilhados com o proprietário de Drive.
 doc_type: apiPageType
-ms.openlocfilehash: 9bf79fefdd9b0536830aec4780bfef4f43928724
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5cf4ed628f8f1ff7216c9c278483bb9333fc847
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517801"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509816"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Listar itens compartilhados com o usuário conectado
 
@@ -112,6 +112,10 @@ DriveItems retornados da ação **sharedWithMe** sempre incluirão a faceta [**r
 ```http
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
+
+Por padrão, **sharedWithMe** retorna itens compartilhados no seu próprio locatário. Para incluir itens compartilhados de locatários externos, acrescente `?allowexternal=true` à solicitação GET.
+
+
 
 <!-- {
   "type": "#page.annotation",

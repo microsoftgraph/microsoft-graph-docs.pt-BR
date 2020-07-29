@@ -1,16 +1,16 @@
 ---
 title: 'directoryobject: getAvailableExtensionProperties'
-description: Obtém todas ou uma lista filtrada das propriedades de extensão de diretório que foram registradas em um diretório.
+description: Obtenha todas as listas ou uma lista filtrada das propriedades de extensão do diretório que foram registradas em um diretório.
 author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3276b114f3fa6370a4cc8d03b8b6607148bf3c7f
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 3dfc4d3c8e6d2f379d717649c945aaa48e978916
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225001"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509501"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryobject: getAvailableExtensionProperties
 Namespace: microsoft.graph
@@ -59,6 +59,8 @@ Se tiver êxito, esta ação retornará um `200 OK` código de resposta e uma co
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_getavailableextensionproperties"
@@ -74,6 +76,12 @@ Content-length: 43
   "isSyncedFromOnPremises": "Boolean"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getavailableextensionproperties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

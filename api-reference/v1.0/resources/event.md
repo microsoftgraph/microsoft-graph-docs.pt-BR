@@ -5,18 +5,18 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: dd71918c1086f4eb7ff1378fbb4bfee17ba1a23a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0c48e7e5a0f6e075cbcd2a5042e7c9db21864a56
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459765"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427267"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
 Namespace: microsoft.graph
 
-Um evento em um calendário de [usuário](user.md) ou o calendário padrão de um [grupo](group.md) do Office 365.
+Um evento em um calendário de [usuário](user.md) ou o calendário padrão de um [grupo](group.md) do Microsoft 365.
 
 O número máximo de participantes incluídos em um**evento**e o número máximo de destinatários em uma[eventMessage](eventmessage.md) enviada de uma caixa de correio no Exchange Online é 500. Para obter mais informações, veja [limites de envio](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
@@ -64,6 +64,7 @@ Esse recurso permite:
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
+|allowNewTimeProposals| Booliano | `True` se o organizador permite que os convidados proponham um novo horário ao responder, caso contrário,`false`. Opcional. O padrão é `true`. |
 |attendees|Coleção [attendee](attendee.md)|A coleção de participantes do evento.|
 |body|[itemBody](itembody.md)|O corpo da mensagem associada ao evento. Pode estar no formato HTML ou no formato de texto.|
 |bodyPreview|String|A visualização da mensagem associada ao evento. Está no formato de texto.|
@@ -92,7 +93,7 @@ Esse recurso permite:
 |originalStartTimeZone|String|O fuso horário de início que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho. |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|O padrão de recorrência do evento.|
 |reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
-|responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
+|responseRequested|Booliano|O padrão é true, representando que o organizador gostaria de ter um convidado para enviar uma resposta para o evento.|
 |responseStatus|[responseStatus](responsestatus.md)|Indica o tipo de resposta enviada em resposta a uma mensagem de evento.|
 |sensitivity|sensibilidade| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|A ID do item mestre da série recorrente se este evento for parte de uma série recorrente.|
@@ -189,6 +190,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
+  "allowNewTimeProposals": "Boolean",
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7e3493e0bab55ec22a42d763ce6cc096600f4ade
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 157a6f12548f8f47f787b3719a7ac919d88b1507
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636345"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46512209"
 ---
 ```javascript
 
@@ -70,8 +70,8 @@ const event = {
     {
       displayName: "Home Office"
     }
-  ]
-
+  ],
+  allowNewTimeProposals: true
 };
 
 let res = await client.api('/me/events')
