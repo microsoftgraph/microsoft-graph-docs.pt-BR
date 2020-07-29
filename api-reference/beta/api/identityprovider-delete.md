@@ -1,108 +1,89 @@
 ---
 title: Excluir identityProvider
-description: Excluir o identityProvider existente.
+description: Excluir um identityprovider.
 localization_priority: Normal
 doc_type: apiPageType
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 67559db80d23784f3641b953c950956f1afabf4c
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: c7e1d81f7a8e117bc31f9e827f83cc90bbb8db59
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199575"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509760"
 ---
-# <a name="delete-identityprovider"></a><span data-ttu-id="4252e-103">Excluir identityProvider</span><span class="sxs-lookup"><span data-stu-id="4252e-103">Delete identityProvider</span></span>
+# <a name="delete-identityprovider"></a><span data-ttu-id="f7637-103">Excluir identityProvider</span><span class="sxs-lookup"><span data-stu-id="f7637-103">Delete identityProvider</span></span>
 
-<span data-ttu-id="4252e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4252e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f7637-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f7637-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4252e-105">Excluir o [identityProvider](../resources/identityprovider.md) existente.</span><span class="sxs-lookup"><span data-stu-id="4252e-105">Delete an existing [identityProvider](../resources/identityprovider.md).</span></span>
+<span data-ttu-id="f7637-105">Excluir um [identityprovider](../resources/identityprovider.md).</span><span class="sxs-lookup"><span data-stu-id="f7637-105">Delete an [identityProvider](../resources/identityprovider.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4252e-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4252e-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f7637-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f7637-106">Permissions</span></span>
 
-<span data-ttu-id="4252e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4252e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f7637-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f7637-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4252e-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4252e-109">Permission type</span></span>      | <span data-ttu-id="4252e-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4252e-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f7637-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f7637-109">Permission type</span></span>      | <span data-ttu-id="f7637-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f7637-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4252e-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4252e-111">Delegated (work or school account)</span></span>|<span data-ttu-id="4252e-112">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4252e-112">IdentityProvider.ReadWrite.All</span></span>|
-|<span data-ttu-id="4252e-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4252e-113">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="4252e-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4252e-114">Not supported.</span></span>|
-|<span data-ttu-id="4252e-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4252e-115">Application</span></span>|<span data-ttu-id="4252e-116">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4252e-116">IdentityProvider.ReadWrite.All</span></span>|
+|<span data-ttu-id="f7637-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f7637-111">Delegated (work or school account)</span></span>|<span data-ttu-id="f7637-112">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f7637-112">IdentityProvider.ReadWrite.All</span></span>|
+|<span data-ttu-id="f7637-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f7637-113">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="f7637-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f7637-114">Not supported.</span></span>|
+|<span data-ttu-id="f7637-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f7637-115">Application</span></span>|<span data-ttu-id="f7637-116">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f7637-116">IdentityProvider.ReadWrite.All</span></span>|
 
-<span data-ttu-id="4252e-117">A conta corporativa ou de estudante deve ser um administrador global do locatário.</span><span class="sxs-lookup"><span data-stu-id="4252e-117">The work or school account must be a global administrator of the tenant.</span></span>
+<span data-ttu-id="f7637-117">A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:</span><span class="sxs-lookup"><span data-stu-id="f7637-117">The work or school account needs to belong to one of the following roles:</span></span>
+* <span data-ttu-id="f7637-118">Administrador global</span><span class="sxs-lookup"><span data-stu-id="f7637-118">Global administrator</span></span>
+* <span data-ttu-id="f7637-119">Administrador do provedor de identidade externa</span><span class="sxs-lookup"><span data-stu-id="f7637-119">External Identity Provider administrator</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="4252e-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4252e-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f7637-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f7637-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /identityProviders/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4252e-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4252e-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f7637-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f7637-121">Request headers</span></span>
 
-|<span data-ttu-id="4252e-120">Nome</span><span class="sxs-lookup"><span data-stu-id="4252e-120">Name</span></span>|<span data-ttu-id="4252e-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="4252e-121">Description</span></span>|
+|<span data-ttu-id="f7637-122">Nome</span><span class="sxs-lookup"><span data-stu-id="f7637-122">Name</span></span>|<span data-ttu-id="f7637-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="f7637-123">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="4252e-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="4252e-122">Authorization</span></span>|<span data-ttu-id="4252e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4252e-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="f7637-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="f7637-124">Authorization</span></span>|<span data-ttu-id="f7637-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f7637-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4252e-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4252e-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f7637-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f7637-127">Request body</span></span>
 
-<span data-ttu-id="4252e-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="4252e-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="f7637-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f7637-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4252e-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="4252e-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f7637-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="f7637-129">Response</span></span>
 
-<span data-ttu-id="4252e-128">Se bem sucedido, este método retorna um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="4252e-128">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="f7637-130">Se bem sucedido, este método retorna um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="f7637-130">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4252e-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4252e-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f7637-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f7637-131">Example</span></span>
 
-<span data-ttu-id="4252e-130">O exemplo a seguir exclui um **identityProvider**.</span><span class="sxs-lookup"><span data-stu-id="4252e-130">The following example deletes an **identityProvider**.</span></span>
+### <a name="request"></a><span data-ttu-id="f7637-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f7637-132">Request</span></span>
 
-##### <a name="request"></a><span data-ttu-id="4252e-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4252e-131">Request</span></span>
+<span data-ttu-id="f7637-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="f7637-133">The following is an example of the request.</span></span>
 
-
-# <a name="http"></a>[<span data-ttu-id="4252e-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="4252e-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_identityprovider"
-}-->
-```http
-DELETE https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
+}
+-->
+
+``` http
+DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="4252e-133">C#</span><span class="sxs-lookup"><span data-stu-id="4252e-133">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[<span data-ttu-id="4252e-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4252e-134">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[<span data-ttu-id="4252e-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4252e-135">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
-##### <a name="response"></a><span data-ttu-id="4252e-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="4252e-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f7637-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="f7637-134">Response</span></span>
+
+<span data-ttu-id="f7637-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f7637-135">The following is an example of the response.</span></span>
+
+<span data-ttu-id="f7637-136">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="f7637-136">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
   "truncated": true
-} -->
-```http
-HTTP/1.1 204 No Content
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Delete identityProvider",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
 }
 -->
+
+``` http
+HTTP/1.1 204 No Content
+```
