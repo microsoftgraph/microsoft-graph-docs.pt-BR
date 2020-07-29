@@ -5,12 +5,12 @@ localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: d1e1f49125aa8959c1cdd6b2f47cc5c4ff81d962
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
-ms.translationtype: MT
+ms.openlocfilehash: 86a8142882d9a9471ad128ca960ca3840cea7cca
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050964"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427470"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo
 
@@ -34,13 +34,13 @@ As pessoas que procuram contextualizar outras na organização geralmente exibem
 
 O recurso [perfil](../resources/profile.md) é uma avançada fonte de informações sobre as pessoas dentro de um locatário e proporciona um mecanismo leve para armazenar e recuperar informações sobre alguém. 
 
-## <a name="personalize-people-experiences-within-your-organization"></a>Personalizar experiências de pessoas em sua organização
+## <a name="personalize-people-experiences-within-your-organization"></a>Personalizar experiências de pessoas dentro da sua organização
 
-Recurso: personalização do cartão de perfil (versão prévia)
+Recurso: Personalização de cartão de perfil (visualização)
 
-Fornece a capacidade de um administrador personalizar as informações mostradas no cartão de perfil usado no Microsoft 365 em sua organização.
+Oferece a capacidade de um administrador personalizar as informações mostradas no cartão de perfil usado no Microsoft 365 em sua organização.
 
-O recurso [profileCardProperty](../resources/profileCardProperty.md) representa um atributo de um usuário no cartão de perfil do Microsoft 365 para que uma organização alcance uma experiência de pessoas compartilhada.
+O recurso [profileCardProperty](../resources/profileCardProperty.md) representa um atributo de um usuário no cartão de perfil do Microsoft 365 para uma organização ter uma experiência compartilhada por pessoas.
 
 ## <a name="help-users-get-the-most-relevant-documents-for-their-work"></a>Ajudar os usuários a obter os documentos mais relevantes para seu trabalho
 
@@ -51,6 +51,7 @@ Usar a API insights para identificar os documentos mais relevantes para o usuár
 - Listar documentos [mais populares](../api/insights-list-trending.md) de um usuário
 - Listar documentos [usados por](../api/insights-list-used.md) um usuário
 - Listar documentos [compartilhados com ou por](../api/insights-list-shared.md) um usuário
+- Explore maneiras de [personalizar as configurações de privacidade para obter informações sobre itens](/graph/insights-customize-item-insights-privacy.md) em uma organização.
 
 ## <a name="manage--mentions"></a>Gerenciar as @menções
 
@@ -86,7 +87,7 @@ Recurso: Análise (visualização)
 Usar a API de análise para obter estatísticas de atividade e configurações relacionadas para um usuários:
 
 - [configurações](../resources/settings.md): Para a API de análise retornar os resultados para um usuários, as configurações de análise de usuário atuais devem mostrar uma licença válida do MyAnalytics, ser aceitas no uso do MyAnalytics e ter uma caixa de correio hospedada na nuvem habilitada para o Microsoft Graph.
-- [activityStatistics](../resources/activitystatistics.md): Obtém os dados da última semana completa (ou do intervalo de tempo especificado) para as atividades do Microsoft 365 nas quais um usuário gastou tempo, incluindo o número de horas gastas em [chamadas](callactivitystatistics.md), [chats (mensagens instantâneas)](chatactivitystatistics.md), [email](emailactivitystatistics.md)e [reuniões](meetingactivitystatistics.md) durante e fora do horário de trabalho e o número de horas disponíveis para [trabalho focado](focusactivitystatistics.md).
+- [activityStatistics](../resources/activitystatistics.md): Obtém dados da última semana concluída (ou do intervalo de tempo especificado) das atividades do Microsoft 365 nas quais um usuário passou algum tempo, incluindo o número de horas gastas em [chamadas](callactivitystatistics.md), [conversas (mensagens instantâneas)](chatactivitystatistics.md), [email](emailactivitystatistics.md) e [reuniões](meetingactivitystatistics.md) durante e fora das horas de trabalho e o número de horas disponíveis para o [trabalho prioritário](focusactivitystatistics.md).
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para esses conjuntos de API.
