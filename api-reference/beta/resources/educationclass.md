@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 22f354ff86e055d40a7112cdc71a63fed5e5e5fb
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: f4410518feca7c84e6093b9ff739feae99b631c5
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909685"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509585"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -18,7 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma aula em uma escola. O recurso **educationClass** corresponde ao grupo Microsoft 365 e compartilha a mesma ID. Os alunos são membros regulares da aula e os professores são proprietários e têm direitos apropriados. Para que as experiências da Microsoft 365 funcionem corretamente, os professores devem ser membros das coleções de professores e membros.
+Representa uma aula em uma escola. O recurso **educationClass** atualmente corresponde a um [grupo] do Microsoft 365 e compartilha a mesma ID.
+Os alunos são membros regulares da turma e os professores são proprietários e têm direitos apropriados.
+
+> [!IMPORTANT]
+> Para que as experiências da Microsoft 365 funcionem corretamente, os professores devem ser membros das coleções de professores e membros.
 
 ## <a name="methods"></a>Métodos
 
@@ -34,7 +38,7 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 | [Remover professor](../api/educationclass-delete-teachers.md)              | [educationUser]                                | Remova um **educationUser** da aula por meio da propriedade de navegação de professores.      |
 | [Criar educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | Crie um novo **educationAssignment** postando na coleção assignments.            |
 | [Listar tarefas](../api/educationclass-list-assignments.md)           | coleção [educationAssignment]                | Obtenha uma coleção de objetos **educationAssignment** .                                         |
-| [Obter grupo](../api/educationclass-get-group.md)                         | [grupo]                                        | Obtenha o **grupo** Microsoft 365 que corresponde a esse **educationClass**.                 |
+| [Obter grupo](../api/educationclass-get-group.md)                         | [group]                                        | Obtenha o **grupo** Microsoft 365 que corresponde a esse **educationClass**.              |
 | [Criar educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | Crie um novo **educationCategory** para esta classe.                                        |
 | [Listar categorias](../api/educationclass-list-categories.md)             | coleção [educationCategory]                 | Obtenha uma lista de objetos **educationCategory** pertencentes a essa classe.                      |
 | [Atualizar](../api/educationclass-update.md)                               | [educationClass]                               | Atualize o objeto **educationClass**.                                                         |
@@ -43,20 +47,21 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade       | Tipo                                  | Descrição                                                                             |
-| :------------- | :------------------------------------ | :-------------------------------------------------------------------------------------- |
-| id             | String                                | O identificador exclusivo da aula.                                                        |
-| classCode      | String                                | Código de aula usada pela escola para identificar a aula.                                    |
-| durante         | [educationCourse](educationcourse.md) | Informações de cursos da turma                                                        |
-| createdBy      | [identitySet]                         | Entidade que criou a aula                                                            |
-| description    | String                                | Descrição da aula.                                                               |
-| displayName    | Cadeia de caracteres                                | Nome da aula.                                                                      |
-| externalId     | String                                | ID da aula no sistema de sincronização.                                                |
-| externalName   | Cadeia de caracteres                                | Nome da aula no sistema de sincronização.                                                |
-| externalSource | String                                | Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `lms`. |
-| grade          | Cadeia de caracteres                                | Nível de graduação da turma.                                                               |
-| mailNickname   | String                                | Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada.                         |
-| term           | [educationTerm]                       | Termo para a classe.                                                                     |
+| Propriedade             | Tipo                                  | Descrição                                                                                                                                                          |
+| :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                   | String                                | O identificador exclusivo da aula.                                                                                                                                     |
+| classCode            | Cadeia de caracteres                                | Código de aula usada pela escola para identificar a aula.                                                                                                                 |
+| durante               | [educationCourse](educationcourse.md) | Informações de cursos da turma                                                                                                                                     |
+| createdBy            | [identitySet]                         | Entidade que criou a aula                                                                                                                                         |
+| description          | String                                | Descrição da aula.                                                                                                                                            |
+| displayName          | Cadeia de caracteres                                | Nome da aula.                                                                                                                                                   |
+| externalId           | Cadeia de caracteres                                | ID da aula no sistema de sincronização.                                                                                                                             |
+| externalName         | Cadeia de caracteres                                | Nome da aula no sistema de sincronização.                                                                                                                             |
+| externalSource       | Cadeia de caracteres                                | O tipo de fonte externa de que este recurso foi gerado (determinado automaticamente de `externalSourceDetail` ). Os valores possíveis são: `sis` , `lms` , ou `manual` . |
+| externalSourceDetail | Cadeia de caracteres                                | O nome da fonte externa da qual esses recursos foram gerados.                                                                                                   |
+| grade                | Cadeia de caracteres                                | Nível de graduação da turma.                                                                                                                                            |
+| mailNickname         | String                                | Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada.                                                                                                      |
+| term                 | [educationTerm]                       | Termo para a classe.                                                                                                                                                  |
 
 ## <a name="relationships"></a>Relações
 
@@ -120,4 +125,4 @@ Veja a seguir uma representação JSON do recurso.
 [educationschool]: educationschool.md
 [educationterm]: educationterm.md
 [identityset]: identityset.md
-[grupo]: group.md
+[group]: group.md

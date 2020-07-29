@@ -4,12 +4,12 @@ description: Os registros de chamadas fornecem informações sobre as chamadas e
 author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 93d102de8d685a2ba7418069ea26024963230cf0
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 43d41184bbb2af9c63b2818f91ef578579df4119
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491704"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509592"
 ---
 # <a name="call-records-overview"></a>Visão geral dos registros de chamadas
 
@@ -26,6 +26,10 @@ As organizações e parceiros geralmente têm suas próprias ferramentas para ge
 ## <a name="look-up-a-call-record-by-its-call-id"></a>Pesquisar um registro de chamadas por ID de chamada
 
 Os aplicativos podem recuperar um [registro de chamada](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) por sua ID. Essa ID pode ser determinada de uma notificação de webhook ou recuperada das ferramentas administrativas.
+
+## <a name="get-call-record-reports"></a>Obter relatórios de registros de chamadas
+
+As organizações que usam o Microsoft Teams para se conectar à PSTN (rede telefônica pública comutada) geralmente querem rastrear esse uso para entender os custos associados. As funções [getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) e [getDirectRoutingCalls](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) retornam uma projeção de dados de [registro de chamada](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) em um formato tabular.
 
 ## <a name="see-also"></a>Confira também
 

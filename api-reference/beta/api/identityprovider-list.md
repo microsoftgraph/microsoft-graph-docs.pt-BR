@@ -1,16 +1,16 @@
 ---
 title: Lista identityProviders
-description: Recuperar todos os identityProviders no diretório.
+description: Recupere uma lista de objetos identityprovider.
 localization_priority: Normal
 doc_type: apiPageType
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a2c6279a6d5c3511d6b6786f3d561d0632933e66
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 640844dd4d1a60b5a4c5864c9ea7d34fe01faabb
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199547"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509719"
 ---
 # <a name="list-identityproviders"></a>Lista identityProviders
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recuperar todos os [identityProviders](../resources/identityprovider.md) no diretório.
+Recupere uma lista de objetos [identityProviders](../resources/identityprovider.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,11 +30,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-A conta corporativa ou de estudante deve ser um administrador global do locatário.
+A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+* Administrador global
+* Administrador do provedor de identidade externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /identityProviders
 ```
@@ -51,39 +54,29 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, esse método retornará `200 OK` código de resposta e um conjunto de [identityProviders](../resources/identityprovider.md) em representação JSON no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de [identityprovider](../resources/identityprovider.md) e [openIdConnectProvider](../resources/openIdConnectProvider.md) (somente para objetos do Azure ad B2C) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir recupera todos os **identityProvider**.
+### <a name="request"></a>Solicitação
 
-##### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityproviders"
-}-->
-```msgraph-interactive
+  "name": "get_identityprovider"
+}
+-->
+
+``` http
 GET https://graph.microsoft.com/beta/identityProviders
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityproviders-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityproviders-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### <a name="response"></a>Resposta
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityproviders-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+Este é um exemplo de resposta.
 
----
-
-
-##### <a name="response"></a>Resposta
+**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -91,33 +84,42 @@ GET https://graph.microsoft.com/beta/identityProviders
   "@odata.type": "microsoft.graph.IdentityProvider",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityProviders",
     "value": [
       {
-        "id": "Amazon-OAUTH",
-        "name": "Login with Amazon",
-        "type": "Amazon",
-        "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-        "clientSecret": "*****"
-      }
+          "@odata.type": "microsoft.graph.identityProvider",
+          "id": "Amazon-OAUTH",
+          "name": "Login with Amazon",
+          "type": "Amazon",
+          "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+          "clientSecret": "*****"
+      },
+      {
+          "@odata.type": "microsoft.graph.openIdConnectProvider",
+          "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
+          "name": "Login with the Contoso identity provider",
+          "type": "OpenIDConnect",
+          "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+          "clientSecret": "*****",
+          "claimsMapping": {
+              "userId": "myUserId",
+              "givenName": "myGivenName",
+              "surname": "mySurname",
+              "email": "myEmail",
+              "displayName": "myDisplayName"
+          },
+          "domainHint": "contoso",
+          "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
+          "responseMode": "form_post",
+          "responseType": "code",
+          "scope": "openid"
+      },
     ]
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "List identityProviders",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->

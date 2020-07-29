@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: de19cf6f33ed0c5b1930077232945564115cd14a
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: a4072a084b632389296266e54e4c0540da69e8ad
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45435002"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509626"
 ---
 # <a name="update-iteminsightssettings"></a>Atualizar itemInsightsSettings
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | User.ReadWrite |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | User.ReadWrite |
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | User.ReadWrite |
 
 >**Observação:** O uso de permissões delegadas para esta operação exige que o usuário conectado tenha uma função de administrador global.
 
@@ -68,6 +68,8 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objet
 ### <a name="request"></a>Solicitação
 
 Veja a seguir um exemplo de solicitação de como o administrador atualiza a configuração de privacidade "**disabledForGroup**" para proibir a exibição de insights de item de usuários de um grupo específico do Azure AD.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_iteminsightssettings"
@@ -81,6 +83,12 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-iteminsightssettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Resposta
 

@@ -1,24 +1,24 @@
 ---
-title: Excluir identityProvider
-description: Excluir um identityprovider.
+title: Listar availableProviderTypes
+description: Recupere todos os tipos de provedor de identidade disponíveis no diretório.
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c7e1d81f7a8e117bc31f9e827f83cc90bbb8db59
+ms.openlocfilehash: 6b3f44c1638bf698c477fd7e0d9e02538a963b21
 ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509760"
+ms.locfileid: "46509961"
 ---
-# <a name="delete-identityprovider"></a>Excluir identityProvider
+# <a name="list-availableprovidertypes"></a>Listar availableProviderTypes
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um [identityprovider](../resources/identityprovider.md).
+Recupera todos os tipos de provedor de identidade disponíveis em um diretório.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|IdentityProvider.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|IdentityProvider.ReadWrite.All|
+|Aplicativo|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
 * Administrador global
@@ -37,8 +37,9 @@ A conta corporativa ou de estudante precisa pertencer a uma das seguintes funç�
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-DELETE /identityProviders/{id}
+GET /identityProviders/availableProviderTypes
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -48,29 +49,26 @@ DELETE /identityProviders/{id}
 |Autorização|{token} de portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, este método retorna um código de resposta `204 No Content`.
+Se tiver êxito, essa função retornará o código de resposta `200 OK` e a Coleção de cadeias de caracteres no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
-
 Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_identityprovider"
+  "name": "identityprovider_availableprovidertypes"
 }
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identityProviders/{id}
+GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ```
-
 
 ### <a name="response"></a>Resposta
 
@@ -80,10 +78,28 @@ Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "Collection(Edm.String)"
 }
 -->
 
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+      "Amazon",
+      "OpenIDConnect",
+      "Facebook",
+      "GitHub",
+      "Google",
+      "LinkedIn",
+      "Microsoft",
+      "QQ",
+      "Twitter",
+      "WeChat",
+      "Weibo"
+  ]
+}
 ```

@@ -1,16 +1,16 @@
 ---
 title: Criar identityProvider
-description: Criar um novo identityProvider especificando o nome de exibição, tipo de identityProvider, ID do cliente e o segredo do cliente.
+description: Criar um novo objeto identityprovider.
 localization_priority: Normal
 doc_type: apiPageType
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 540af7a9ebb9ea56f6f3f61cff89ff6a4d3973d6
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: d5d6eb847179a062bda1c0013bafb73de38ab455
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199579"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509704"
 ---
 # <a name="create-identityprovider"></a>Criar identityProvider
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [identityProvider](../resources/identityprovider.md) especificando o nome de exibição, tipo de identityProvider, ID do cliente e o segredo do cliente.
+Criar um novo objeto [identityprovider](../resources/identityprovider.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,11 +30,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityProvider.ReadWrite.All|
 
-A conta corporativa ou de estudante deve ser um administrador global do locatário.
+A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+* Administrador global
+* Administrador do provedor de identidade externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /identityProviders
 ```
@@ -48,69 +51,81 @@ POST /identityProviders
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [identityProvider](../resources/identityprovider.md). Todas as propriedades listadas na tabela a seguir são necessárias.
+No corpo da solicitação, forneça uma representação JSON do objeto [identityprovider](../resources/identityprovider.md) ou [openIdConnectProvider](../resources/openidconnectprovider.md) (somente para o Azure ad B2C). Todas as propriedades listadas na tabela a seguir são necessárias.
+
+### <a name="identityprovider-object"></a>objeto identityprovider
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |clientId|Cadeia de caracteres|O ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.|
 |clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
 |nome|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade.|
-|tipo|Cadeia de caracteres|A identidade do provedor de identidade. Deve ser um dos seguintes valores: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|tipo|Cadeia de caracteres|A identidade do provedor de identidade. <ul>Para cenário B2B:<li/>Google<li/>Facebook</ul><ul>Para o cenário B2C:<li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
+
+### <a name="openidconnectprovider-object"></a>objeto openIdConnectProvider
+
+|Propriedade|Tipo|Descrição|
+|:---------------|:--------|:----------|
+|clientId|Cadeia de caracteres|O ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.|
+|clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
+|nome|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade.|
+|tipo|Cadeia de caracteres|A identidade do provedor de identidade. O valor deve ser `OpenIdConnect` .|
+|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|As `userId` `displayname` Propriedades e são necessárias no objeto claimsMapping.|
+|metadataUrl|Cadeia de caracteres|A URL para o documento de metadados do provedor de identidade de conexão de Open ID.|
+|responsemode|Cadeia de caracteres|Define o método que deve ser usado para enviar os dados de volta do provedor de identidade personalizado para o Azure AD B2C. Os seguintes modos de resposta podem ser usados: <ul><li/>`form_post`: Este modo de resposta é recomendado para melhor segurança. A resposta é transmitida por meio do método HTTP POST, com o código ou token codificado no corpo usando o formato application/x-www-form-urlencoded.<li/>`query`: O código ou token é retornado como um parâmetro de consulta.</ul>|
+|responseType|Cadeia de caracteres|Descreve que tipo de informação é enviada de volta na chamada inicial para o authorization_endpoint do provedor de identidade personalizada. Os seguintes tipos de resposta podem ser usados:<ul><li/> `code`: Conforme o fluxo do código de autorização, um código será retornado de volta para o Azure AD B2C. O Azure AD B2C continua a chamar o token_endpoint para trocar o código do token.<li/> `id_token`: Um token de ID retorna de volta para o Azure AD B2C do provedor de identidade personalizado. <li/>`token`: Um token de acesso retorna de volta para o Azure AD B2C do provedor de identidade personalizado. (Esse valor não é suportado pelo Azure AD B2C no momento)</ul>|
+|escopo|String|Escopo define as informações e permissões que você pretende coletar de seu provedor de identidade personalizado.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [identityProvider](../resources/identityprovider.md) no corpo da resposta. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e [identityprovider](../resources/identityprovider.md) ou [openIdConnectProvider](../resources/openidconnectprovider.md) (somente para o objeto do Azure ad B2C) no corpo da resposta. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
-O exemplo a seguir cria um **identityProvider**.
+### <a name="example-1-create-a-specific-identityprovider"></a>Exemplo 1: criar um **identityprovider** específico
 
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
+Este é um exemplo de solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_identityprovider_from_identityproviders"
-}-->
-```http
+}
+-->
+
+``` http
 POST https://graph.microsoft.com/beta/identityProviders
 Content-type: application/json
+Content-length: 154
 
 {
-    "name": "Login with Amazon",
-    "type": "Amazon",
-    "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-    "clientSecret": "000000000000"
+  "@odata.type": "microsoft.graph.identityProvider",
+  "name": "Login with Amazon",
+  "type": "Amazon",
+  "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+  "clientSecret": "000000000000"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-identityprovider-from-identityproviders-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-identityprovider-from-identityproviders-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a>Resposta
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-identityprovider-from-identityproviders-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+Este é um exemplo de resposta.
 
----
-
-
-##### <a name="response"></a>Resposta
+**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.IdentityProvider"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+   "@odata.type": "microsoft.graph.identityProvider",
     "id": "Amazon-OAUTH",
     "name": "Login with Amazon",
     "type": "Amazon",
@@ -118,16 +133,78 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Create identityProvider",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+### <a name="example-2-create-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>Exemplo 2: criar um **openIDConnectProvider** específico (somente para o Azure ad B2C)
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_openidconnectprovider_from_identityproviders"
 }
 -->
+
+``` http
+POST https://graph.microsoft.com/beta/identityProviders
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.openIdConnectProvider",
+    "name": "Login with the Contoso identity provider",
+    "type": "OpenIDConnect",
+    "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+    "clientSecret": "12345",
+    "claimsMapping": {
+        "userId": "myUserId",
+        "givenName": "myGivenName",
+        "surname": "mySurname",
+        "email": "myEmail",
+        "displayName": "myDisplayName"
+    },
+    "domainHint": "mycustomoidc",
+    "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
+    "responseMode": "form_post",
+    "responseType": "code",
+    "scope": "openid"
+}
+
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.openIdConnectProvider"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.openIdConnectProvider",
+  "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
+  "name": "Login with the Contoso identity provider",
+  "type": "OpenIDConnect",
+  "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+  "clientSecret": "12345",
+  "claimsMapping": {
+      "userId": "myUserId",
+      "givenName": "myGivenName",
+      "surname": "mySurname",
+      "email": "myEmail",
+      "displayName": "myDisplayName"
+  },
+  "domainHint": "mycustomoidc",
+  "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
+  "responseMode": "form_post",
+  "responseType": "code",
+  "scope": "openid"
+}
+```

@@ -6,16 +6,16 @@ title: Listar arquivos compartilhados comigo
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 035389dac72aa31eaa3e9bd353ec00a60457797b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 736147ebf41ac441fba19119250e5ec6dc90f1a9
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433038"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509557"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Listar itens compartilhados com o usuário conectado
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -109,6 +109,7 @@ DriveItems retornados da ação **sharedWithMe** sempre incluirão a faceta [**r
 ```http
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
+Por padrão, **sharedWithMe** retursn itens compartilhados em seu próprio locatário. Para incluir itens compartilhados de locatários externos, acrescente `?allowexternal=true` à solicitação get.
 
 <!--
 {
