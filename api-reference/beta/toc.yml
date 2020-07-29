@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Obter tokens de autenticação
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: /graph/auth/index?context=graph/api/beta
       - name: Noções básicas
         href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -74,7 +74,7 @@ items:
       - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -169,11 +169,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -310,7 +310,7 @@ items:
                     href: api/iteminsightssettings-get.md
                   - name: Atualizar
                     href: api/iteminsightssettings-update.md
-          - name: Email
+          - name: Correio
             href: resources/message.md
             items:
               - name: Criar pasta de email
@@ -424,7 +424,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir o perfil do usuário
                 href: api/profile-delete.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -446,7 +446,7 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -1341,20 +1341,32 @@ items:
                 href: api/cloudcommunications-getpresencesbyuserid.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
                   - name: Registro de chamadas
                     href: resources/callrecords-callrecord.md
-                  - name: Obter registro de chamada
+                  - name: Obter
                     href: api/callrecords-callrecord-get.md
               - name: Sessão
                 items:
                   - name: Sessão
                     href: resources/callrecords-session.md
-                  - name: Listar sessões
+                  - name: Listar
                     href: api/callrecords-session-list.md
+              - name: Chamadas PSTN
+                items:
+                  - name: Linha de log PSTN
+                    href: resources/callrecords-pstncalllogrow.md
+                  - name: Listar chamadas PSTN
+                    href: api/callrecords-callrecord-getpstncalls.md
+              - name: Chamadas de roteamento direto
+                items:
+                  - name: Linha de log de roteamento direto
+                    href: resources/callrecords-directroutinglogrow.md
+                  - name: Listar chamadas de roteamento direto
+                    href: api/callrecords-callrecord-getdirectroutingcalls.md
       - name: Experiências entre dispositivos
         displayName: Project Rome
         items:
@@ -1392,7 +1404,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -1496,7 +1508,7 @@ items:
               - name: Trabalho de impressão
                 href: resources/printjob.md
                 items:
-                  - name: Criar
+                  - name: Create
                     href: api/printer-post-jobs.md
                   - name: Obter
                     href: api/printjob-get.md
@@ -9063,7 +9075,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -9157,7 +9169,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -9658,7 +9670,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
               - name: Métodos de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-overview.md
                   - name: Método de autenticação
                     href: resources/authenticationmethod.md
@@ -9668,17 +9680,6 @@ items:
                       - name: Obter
                         href: api/authenticationmethod-get.md
                   - name: Password
-                    href: resources/passwordauthenticationmethod.md
-                    items:
-                      - name: Listar
-                        href: api/authentication-list-passwordmethods.md
-                      - name: Obter
-                        href: api/passwordauthenticationmethod-get.md
-                      - name: Redefinir
-                        href: api/passwordauthenticationmethod-resetpassword.md
-                      - name: Obter status da operação
-                        href: api/authenticationoperation-get.md
-                  - name: Phone
                     href: resources/phoneauthenticationmethod.md
                     items:
                       - name: Listar
@@ -9836,11 +9837,26 @@ items:
                         href: api/riskyusers-confirmcompromised.md
                       - name: Ignorar
                         href: api/riskyusers-dismiss.md
+              - name: Provedor de identidade
+                href: resources/identityprovider.md
+                items:
+                  - name: Listar
+                    href: api/identityprovider-list.md
+                  - name: Create
+                    href: api/identityprovider-post-identityproviders.md
+                  - name: Obter
+                    href: api/identityprovider-get.md
+                  - name: Atualizar
+                    href: api/identityprovider-update.md
+                  - name: Excluir
+                    href: api/identityprovider-delete.md
+                  - name: Listar tipos de provedor disponíveis
+                    href: api/identityprovider-list-availableprovidertypes.md
               - name: Proteção de informações
                 items:
                   - name: Avaliação de ameaças
                     items:
-                      - name: Visão Geral
+                      - name: Visão geral
                         href: resources/threatassessment-api-overview.md
                       - name: Solicitação de avaliação de ameaças
                         href: resources/threatassessmentrequest.md
@@ -9858,19 +9874,6 @@ items:
                         href: api/informationprotection-post-threatassessmentrequests.md
                       - name: Obter
                         href: api/threatassessmentrequest-get.md
-              - name: Provedor de identidade
-                href: resources/identityprovider.md
-                items:
-                  - name: Listar os provedores de identidade
-                    href: api/identityprovider-list.md
-                  - name: Criar o provedor de identidade
-                    href: api/identityprovider-post-identityproviders.md
-                  - name: Obter o provedor de identidade
-                    href: api/identityprovider-get.md
-                  - name: Atualizar provedor de identidade
-                    href: api/identityprovider-update.md
-                  - name: Excluir o provedor de identidade
-                    href: api/identityprovider-delete.md
               - name: Gerenciador de convites
                 href: resources/invitation.md
                 items:
@@ -10194,6 +10197,19 @@ items:
                         href: api/accesspackage-list-accesspackageresourcerolescopes.md
                       - name: Create
                         href: api/accesspackage-post-accesspackageresourcerolescopes.md
+                  - name: Organização conectada
+                    href: resources/connectedorganization.md
+                    items:
+                      - name: Listar
+                        href: api/connectedorganization-list.md
+                      - name: Create
+                        href: api/connectedorganization-post.md
+                      - name: Obter
+                        href: api/connectedorganization-get.md
+                      - name: Atualizar
+                        href: api/connectedorganization-update.md
+                      - name: Excluir
+                        href: api/connectedorganization-delete.md
                   - name: Configurações de gerenciamento de qualificação
                     href: resources/entitlementmanagementsettings.md
                     items:
@@ -10277,7 +10293,7 @@ items:
                       - name: Recursos gerenciados
                         href: resources/governanceresource.md
                         items:
-                          - name: Lista
+                          - name: Listar
                             href: api/governanceresource-list.md
                           - name: Obter
                             href: api/governanceresource-get.md
@@ -10508,7 +10524,7 @@ items:
       - name: Observações
         displayName: OneNote
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onenote-api-overview.md
           - name: Observações
             href: resources/onenote.md
@@ -10609,7 +10625,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -10961,7 +10977,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e uso
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registro de usuário de credenciais
                     href: resources/credentialuserregistrationcount.md
@@ -10985,7 +11001,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -11188,13 +11204,13 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Dados de consulta
                 href: api/search-query.md
           - name: Índice
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -11236,6 +11252,50 @@ items:
                     href: api/externalitem-update.md
                   - name: Excluir
                     href: api/externalitem-delete.md
+      - name: Conformidade
+        displayName: 'Compliance API, Microsoft Graph Compliance API'
+        items:
+          - name: Visão geral
+            href: resources/complianceapioverview.md
+          - name: Descoberta eletrônica
+            items:
+              - name: Visão geral
+                href: resources/eDiscoveryapioverview.md
+              - name: caso de descoberta eletrônica
+                href: resources/ediscoverycase.md
+                items:
+                  - name: Listar
+                    href: api/ediscoverycase-list.md
+                  - name: Criar
+                    href: api/ediscoverycase-post.md
+                  - name: Obter
+                    href: api/ediscoverycase-get.md
+                  - name: Atualizar
+                    href: api/ediscoverycase-update.md
+                  - name: Excluir
+                    href: api/ediscoverycase-delete.md
+              - name: conjunto de análise de descoberta eletrônica
+                href: resources/reviewset.md
+                items:
+                  - name: Listar
+                    href: api/reviewset-list.md
+                  - name: Criar
+                    href: api/reviewset-post.md
+                  - name: Obter
+                    href: api/reviewset-get.md
+              - name: Analisar consulta de definição
+                href: resources/reviewsetquery.md
+                items:
+                  - name: Listar
+                    href: api/reviewsetquery-list.md
+                  - name: Criar
+                    href: api/reviewsetquery-post.md
+                  - name: Obter
+                    href: api/reviewsetquery-get.md
+                  - name: Atualizar
+                    href: api/reviewsetquery-update.md
+                  - name: Excluir
+                    href: api/reviewsetquery-delete.md
       - name: Segurança
         displayname: 'Security API, Microsoft Graph Security API'
         items:
@@ -11318,7 +11378,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -11478,7 +11538,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Trabalho em equipe
+      - name: Teamwork
         displayName: Microsoft Teams
         items:
           - name: Visão Geral

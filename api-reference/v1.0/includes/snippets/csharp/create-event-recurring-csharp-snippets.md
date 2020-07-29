@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6d6ad64c0b45eb0357a91fcb85d65eec4245d24c
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: 112f3aa17b658e621a22e65af44aef828ba96497
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845905"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46512216"
 ---
 ```csharp
 
@@ -62,7 +62,8 @@ var @event = new Event
             },
             Type = AttendeeType.Required
         }
-    }
+    },
+    AllowNewTimeProposals = true
 };
 
 await graphClient.Me.Events
