@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 208527c1b846a307b88e3f96204dba660caedb9a
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 32ed190f39d84e4c756d265527f4f0a8bcaf73f5
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909548"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509809"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
@@ -40,22 +40,23 @@ Esse recurso é um subtipo de [educationOrganization](educationorganization.md).
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade            | Tipo                                  | Descrição                                               |
-| :------------------ | :------------------------------------ | :-------------------------------------------------------- |
-| id                  | String                                | GUID desta escola.                                      |
-| address             | [physicalAddress](physicaladdress.md) | Endereço da escola.                                    |
-| createdBy           | [identitySet](identityset.md)         | Entidade que criou a escola.                            |
-| description         | String                                | Descrição da escola.                                |
-| displayName         | Cadeia de caracteres                                | Nome de exibição da escola.                               |
-| externalId          | Cadeia de caracteres                                | ID da escola no sistema de sincronização.                           |
-| externalPrincipalId | String                                | ID da entidade de segurança no sistema de sincronização.                        |
-| externalSource      | String                                | Somente Leitura. Os valores possíveis são: `sis` , `lms` ou `manual` . |
-| highestGrade        | String                                | Ensino de nível mais alto.                                     |
-| lowestGrade         | String                                | Ensino de nível mais baixo.                                      |
-| phone               | Cadeia de caracteres                                | Número de telefone da escola.                                   |
-| principalEmail      | String                                | Endereço de email da entidade de segurança.                           |
-| principalName       | String                                | Nome da entidade de segurança.                                    |
-| schoolNumber        | String                                | Número da escola.                                            |
+| Propriedade             | Tipo                                  | Descrição                                                                                                                                                          |
+| :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                   | String                                | GUID desta escola.                                                                                                                                                 |
+| address              | [physicalAddress](physicaladdress.md) | Endereço da escola.                                                                                                                                               |
+| createdBy            | [identitySet](identityset.md)         | Entidade que criou a escola.                                                                                                                                       |
+| description          | String                                | Descrição da escola.                                                                                                                                           |
+| displayName          | Cadeia de caracteres                                | Nome de exibição da escola.                                                                                                                                          |
+| externalId           | Cadeia de caracteres                                | ID da escola no sistema de sincronização.                                                                                                                                      |
+| externalPrincipalId  | Cadeia de caracteres                                | ID da entidade de segurança no sistema de sincronização.                                                                                                                                   |
+| externalSource       | Cadeia de caracteres                                | O tipo de fonte externa de que este recurso foi gerado (determinado automaticamente de `externalSourceDetail` ). Os valores possíveis são: `sis` , `lms` , ou `manual` . |
+| externalSourceDetail | Cadeia de caracteres                                | O nome da fonte externa da qual esses recursos foram gerados.                                                                                                   |
+| highestGrade         | Cadeia de caracteres                                | Ensino de nível mais alto.                                                                                                                                                |
+| lowestGrade          | Cadeia de caracteres                                | Ensino de nível mais baixo.                                                                                                                                                 |
+| phone                | Cadeia de caracteres                                | Número de telefone da escola.                                                                                                                                              |
+| principalEmail       | Cadeia de caracteres                                | Endereço de email da entidade de segurança.                                                                                                                                      |
+| principalName        | Cadeia de caracteres                                | Nome da entidade de segurança.                                                                                                                                               |
+| schoolNumber         | Cadeia de caracteres                                | Número da escola.                                                                                                                                                       |
 
 ## <a name="relationships"></a>Relações
 

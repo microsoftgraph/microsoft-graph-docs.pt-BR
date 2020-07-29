@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso callRecord
-description: O tipo callRecord
+description: Representa uma única chamada ponto a ponto ou uma chamada de grupo entre vários participantes, às vezes chamada de reunião online.
 localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 68eeb5fbdf110aa4a8f97c7bf4246897feb22133
-ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
+ms.openlocfilehash: 19519ec646e87060e3721add2188ead6533abc15
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408343"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509872"
 ---
 # <a name="callrecord-resource-type"></a>tipo de recurso callRecord
 
@@ -20,19 +20,21 @@ Namespace: microsoft.graph.callRecords
 
 Representa uma única chamada ponto a ponto ou uma chamada de grupo entre vários participantes, às vezes chamada de reunião online.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Obter callRecord](../api/callrecords-callrecord-get.md) | [Microsoft. Graph. callRecords. callRecord](callrecords-callrecord.md) | Leia as propriedades e os relacionamentos do objeto callRecord. |
+| [Obter callRecord](../api/callrecords-callrecord-get.md) | [Microsoft. Graph. callRecords. callRecord](callrecords-callrecord.md) | Leia as propriedades e os relacionamentos de um objeto **callRecord** . |
+| [Obter chamadas PSTN](../api/callrecords-callrecord-getpstncalls.md) | [Microsoft. Graph. callRecords. pstnCallLogRow](callrecords-pstncalllogrow.md)| Ler as propriedades de um objeto **pstnCallLogRow** . |
+| [Obter chamadas de roteamento direto](../api/callrecords-callrecord-getdirectroutingcalls.md) | [Microsoft. Graph. callRecords. directRoutingLogRow](callrecords-directroutinglogrow.md)| Ler as propriedades de um objeto **directRoutingLogRow** . |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |endDateTime|DateTimeOffset|Hora UTC quando o último usuário saiu da chamada. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|id|String|Identificador exclusivo do registro de chamada. Somente leitura.|
-|joinWebUrl|String|URL de reunião associada à chamada. Pode não estar disponível para um tipo de registro de chamada peerToPeer.|
+|id|Cadeia de caracteres|Identificador exclusivo do registro de chamada. Somente leitura.|
+|joinWebUrl|Cadeia de caracteres|URL de reunião associada à chamada. Pode não estar disponível para um tipo de registro de chamada peerToPeer.|
 |lastModifiedDateTime|DateTimeOffset|Hora UTC quando o registro de chamada foi criado. O tipo DatetimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |modalidades|coleção de modalidades de Microsoft. Graph. callRecords.|Lista de todas as modalidades usadas na chamada. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
 |organizer|[identitySet](identityset.md)|A identidade da parte de organização.|

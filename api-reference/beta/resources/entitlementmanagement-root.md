@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 00b029c5dcbf297d7504a0c30ca7512d523c17ce
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: c1eb501cb9852d6d7733a6be3e78c4206326ddbe
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225127"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509830"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhar com a API de gerenciamento de qualificação do Azure AD
 
@@ -31,6 +31,7 @@ Os tipos de recurso de gerenciamento de direito incluem:
 - [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md): indica a função específica do recurso que um assunto foi atribuído por meio de uma atribuição de pacote do Access.
 - [accessPackageCatalog](accesspackagecatalog.md): um contêiner para pacotes do Access.
 - [accessPackageResourceRequest](accesspackageresourcerequest.md): uma solicitação para adicionar um recurso a um catálogo de pacotes do Access.
+- [connectedOrganization](connectedorganization.md): uma organização conectada para usuários externos que podem solicitar acesso.
 - [entitlementManagementSettings](entitlementmanagementsettings.md): configurações de todo o locatário para o gerenciamento de qualificação do Azure AD.
 
 Observe que o recurso de gerenciamento de direito, incluindo a API, está incluído no Azure AD Premium P2. O locatário em que o gerenciamento de qualificação está sendo usado deve ter uma assinatura válida de compra ou de avaliação do Azure AD Premium P2 ou EMS e5.
@@ -67,6 +68,12 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | [Listar funções de recurso accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | coleção [accessPackageResourceRole](accesspackageresourcerole.md) | Recupere uma lista de objetos **accessPackageResourceRole** . |
 | [Listar accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md) | coleção [accessPackageResourceRequest](accesspackageresourcerequest.md) | Ler propriedades e relações de objetos **accessPackageResourceRequest** . |
 | [Criar accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Criar um novo objeto **accessPackageResourceRequest** . |
+| [Listar connectedOrganizations](../api/connectedorganization-list.md) | coleção [connectedOrganization](connectedorganization.md) | Recupere uma lista de objetos **connectedOrganization** . |
+| [Criar connectedOrganization](../api/connectedorganization-post.md) | [connectedOrganization](connectedorganization.md) | Criar um novo objeto **connectedOrganization** . |
+| [Obter connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Ler propriedades e relações de um objeto **connectedOrganization** . |
+| [Atualizar connectedOrganization](../api/connectedorganization-update.md) |Nenhum | Atualizar um **connectedOrganization**. |
+| [Excluir connectedOrganization](../api/connectedorganization-delete.md) |Nenhum | Excluir um **connectedOrganization**. |
+
 
 ## <a name="types"></a>Tipos
 
@@ -74,6 +81,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 - [approvalStage](approvalstage.md) -usado no [approvalSettings](approvalsettings.md) para especificar os aprovadores primário, de backup e de escalonamento.
 - [userset](userset.md) subtipos [únicousuário](singleuser.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md)e [externalSponsors](externalsponsors.md) -usados em [requestorSettings](requestorsettings.md), [approvalStage](approvalstage.md) e [assignmentReviewSettings](assignmentreviewsettings.md).
 - [accessPackageSubject](accesspackagesubject.md) -usado no [accessPackageAssignment](accesspackageassignment.md) como um usuário do requerente que tem uma atribuição de pacote do Access.
+- [identityr](identitysource.md) -usado no [connectedOrganization](connectedorganization.md), um de [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) ou [externalDomainFederation](externaldomainfederation.md).
 
 ## <a name="see-also"></a>Confira também
 
