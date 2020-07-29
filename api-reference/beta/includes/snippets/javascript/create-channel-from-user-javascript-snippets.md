@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 57e38c8d4db68f03f951915226ab74e3bfe16d37
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: a3e840279bbf4939c200114777a7aac1fc881d7b
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402268"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46512307"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const channel = {
-  @odata.type: "#Microsoft.Teams.Core.channel",
+  @odata.type: "#Microsoft.Graph.channel",
   membershipType: "private",
   displayName: "My First Private Channel",
   description: "This is my first private channels",
