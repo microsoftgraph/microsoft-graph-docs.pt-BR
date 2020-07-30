@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7ad9c9a7ec23efdc86470f8ea3ed5245173cd1d1
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: Auto
+ms.openlocfilehash: df497d42eebe8909fb734365f0272a1e03b4e59f
+ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896872"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46524307"
 ---
 # <a name="riskdetection-resource-type"></a>tipo de recurso riskDetection
 
@@ -35,20 +35,20 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 |:---|:---|:---|
 |atividade|activityType|Indica o tipo de atividade ao qual o risco detectado está vinculado. . Os valores possíveis são: `signin`, `user`, `unknownFutureValue`.|
 |activityDateTime|DateTimeOffset|Data e hora em que a atividade arriscada ocorreu.|
-|additionalInfo|String|Informações adicionais associadas à detecção de riscos no formato JSON.|
+|additionalInfo|Cadeia de Caracteres|Informações adicionais associadas à detecção de riscos no formato JSON.|
 |correlationId|Cadeia de caracteres|ID de correlação da entrada associada à detecção de risco. Essa propriedade será NULL se a detecção de risco não estiver associada a uma entrada.|
 |detectedDateTime|DateTimeOffset|Data e hora em que o risco foi detectado.|
 |detectionTimingType|riskDetectionTimingType|Intervalo do risco detectado (em tempo real/offline). Os valores possíveis são: `notDefined`, `realtime`, `nearRealtime`, `offline`, `unknownFutureValue`.|
 |id|String|ID exclusiva da detecção de risco. Herdado da [entidade](../resources/entity.md)|
-|ipAddress|String|Fornece o endereço IP do cliente de onde o risco ocorreu.|
+|ipAddress|Cadeia de Caracteres|Fornece o endereço IP do cliente de onde o risco ocorreu.|
 |lastUpdatedDateTime|DateTimeOffset|Data e hora da última atualização do risco.|
 |location|[signInLocation](../resources/signinlocation.md)|Local de entrada.|
-|Identificação|String|ID de solicitação da entrada associada à detecção de risco. Essa propriedade será NULL se a detecção de risco não estiver associada a uma entrada.|
+|Identificação|Cadeia de Caracteres|ID de solicitação da entrada associada à detecção de risco. Essa propriedade será NULL se a detecção de risco não estiver associada a uma entrada.|
 |riskDetail|riskDetail|Detalhes do risco detectado. Os valores possíveis são: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
-|riskEventType|String|O tipo de evento de risco detectado. Os valores possíveis são:,,,,,,,,,,, `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` e `unknownFutureValue` .|
+|riskEventType|Cadeia de Caracteres|O tipo de evento de risco detectado. Os valores possíveis são:,,,,,,,,,,, `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` e `unknownFutureValue` . Se a detecção de risco for Premium, mostrará`generic`|
 |riskLevel|riskLevel|Nível do risco detectado. Os possíveis valores são: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 |riskState|riskState|O estado de um usuário ou logon arriscado detectado. Os valores possíveis são: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|source|String|Fonte da detecção de risco. Por exemplo, "activeDirectory". |
+|source|Cadeia de Caracteres|Fonte da detecção de risco. Por exemplo, "activeDirectory". |
 |tokenIssuerType|tokenIssuerType|Indica o tipo de emissor de token para o risco de entrada detectado. Os valores possíveis são: `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
 |userDisplayName|String|O nome UPN do usuário. |
 |userId|String|ID exclusivo do usuário.|
