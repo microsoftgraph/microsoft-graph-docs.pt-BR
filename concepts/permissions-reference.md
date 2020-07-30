@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 5aac8896fc3f81005450dc0075199720954f400c
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: c3fc325bf49815ead5fc43ea039fac3b22899bbc
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384322"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509571"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -408,12 +408,15 @@ Nenhum.
 |Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_CallRecords.Read.All_|Ler todos os registros de chamadas|Permite que o aplicativo leia registros de chamadas de todas as chamadas e reuniões on-line sem um usuário conectado.|Sim|
+|_CallRecords.Read.PstnCalls_|Leia PSTN e dados de log de chamadas de roteamento direto (visualização)|Permite que o aplicativo leia todos os dados de registro de chamadas PSTN e roteamento direto sem um usuário conectado.|Sim|
 
 ### <a name="remarks"></a>Comentários
 
 A permissão _CallRecords.Read.All_concede a um aplicativo acesso privilegiado ao [callRecords](/graph/api/resources/callrecords-callrecord) para todas as chamadas e reuniões online dentro da organização, incluindo chamadas de e para números de telefone externos. Isso inclui detalhes potencialmente confidenciais sobre quem participou da chamada, bem como informações técnicas referentes a essas chamadas e reuniões, que podem ser usadas para solucionar problemas de rede, como endereços IP, detalhes do dispositivo e outras informações de rede.
 
-> **Importante:** o critério deve ser usado ao conceder essa permissão aos aplicativos. Os registros de chamadas podem fornecer informações da operação dos seus negócios e, portanto, podem ser um alvo para agentes mal-intencionados. Conceda essa permissão apenas aos aplicativos que você confia para atenderem aos seus requisitos de proteção de dados.
+A permissão _CallRecords.Read.PstnCalls_ concede a um aplicativo o acesso aos [PSTN (planos de chamada)](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) e [roteamento direto](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) dos logs de chamadas. Isso inclui informações potencialmente confidenciais sobre os usuários, bem como chamadas de e para números de telefone externos.
+
+> **Importante:** A discrição deve ser usada ao conceder essas permissões aos aplicativos. Os registros de chamadas podem fornecer informações sobre a operação de seus negócios e, portanto, podem ser um alvo para agentes mal-intencionados. Conceda essas permissões apenas aos aplicativos em que você confia para atender aos seus requisitos de proteção de dados.
 
 > **Importante:** certifique-se de que está em conformidade com as leis e regulamentos da sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
 
@@ -425,6 +428,7 @@ A permissão _CallRecords.Read.All_concede a um aplicativo acesso privilegiado a
 
 * _CallRecords.Read.All_: recuperar um registro de chamada (`GET /v1.0/communications/callRecords/{id}`).
 * _CallRecords.Read.All_: assinar novos registros de chamadas (`POST /v1.0/subscriptions`).
+* _CallRecords.Read.PstnCalls_: Recupere os registros de chamadas de roteamento direto dentro de um intervalo de tempo especificado (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 

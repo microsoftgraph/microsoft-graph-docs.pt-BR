@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 184116a0e81552cf4e6be6234e4685d13e73142c
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: a739ce755c464c47edf5d52c2e4c2eb5b6a6e267
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434855"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509823"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -27,8 +27,8 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | v1.0 | Adicionada a entidade [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) que se baseia em [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) e, além disso, incluídas as propriedades **proposedNewTime** e **responseType**. |
 | Adição | v1.0 | Adicionada a propriedade **proposedNewTime** ao tipo complexo [attendee](/graph/api/resources/attendee?view=graph-rest-1.0). |
 
-
 ### <a name="change-notifications"></a>Notificações de alterações
+
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Remoção | Beta e v1.0 | Removida a propriedade **sequenceNumber** introduzida incorretamente do tipo [changeNotification](/graph/api/resources/changenotification).|
@@ -40,6 +40,21 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionada a operação [Atualização de onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta) para atualizações de reunião.|
 | Adição | beta | O recurso de [presença](/graph/api/resources/presence) agora é compatível com [alterar notificações](/graph/webhooks). |
+
+### <a name="cloud-communications--call-records"></a>Comunicação em nuvem | Gravação
+
+Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Graph (beta).
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição| beta |APIs adicionadas para [obter relatório de chamadas PSTN](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) e [obter um relatório de roteamento direto](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta).|
+|Adição| beta |Foram adicionadas novas entidades:<br /><li>[pstnCallLogRow](/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta)</li> <li>[directRoutingLogRow](/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta).</li>|
+
+### <a name="compliance--ediscovery"></a>Conformidade | Descoberta Eletrônica
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Introduziu a API de conformidade de Descoberta Eletrônica, incluindo o [ediscoveryCase](/graph/api/resources/ediscoverycase?view=graph-rest-beta), [reviewSet](/graph/api/resources/reviewset?view=graph-rest-beta), [reviewSetQuery](/graph/api/resources/reviewsetquery?view=graph-rest-beta) e operações. |
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 
@@ -88,7 +103,8 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão** | **Descrição**                                                                                                                                                     |
 | :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Adição        | beta        | Adicionada nova propriedade `expirationDate` ao recurso [`educationSynchronizationProfile`](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta). |
+| Adição        | beta        | Adicionada nova propriedade **expirationDate** ao recurso [`educationSynchronizationProfile`](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta). |
+| Adicionar             | beta        | Adicionada uma nova propriedade **externalSourceDetail** para os recursos [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta), [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta), [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) |
 
 ### <a name="extensions--schema-extensions"></a>Extensões | Extensões de esquema
 
@@ -110,6 +126,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionada a entidade [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta). |
 | Adição | v1.0 | Foi adicionada a [API identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-1.0), que representa a política de padrões de segurança do Azure Active Directory.|
 | Adição        | v1.0        | Foi adicionada o recurso [consulta delta](delta-query-overview.md) ao [servicePrincipal](/graph/api/serviceprincipal-delta). |
+| Adição | beta | Adicionado o [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) ao gerenciamento de direitos.  |
 | Adição        | v1.0        | Recurso [consulta delta](delta-query-overview.md)adicionado para [oauth2PermissionGrant](/graph/api/oauth2Permissiongrant-delta). |
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
@@ -119,6 +136,9 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | A concessão de controle **passwordChange** foi adicionada à entidade [conditionalaccessgrantcontrols](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta). |
 | Adição | v1.0 | Foram adicionados novos tipos de entidade:<br/>[conditionalAccessPolicy](/graph/api/resources/conditionalAccessPolicy)<br/>
 | Adição | v1.0 | Foram adicionados novos tipos complexos:<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>|
+| Adição | v1.0 | Foi adicionada a [API namedLocation](/graph/api/resources/namedLocation?view=graph-rest-v1.0), que representa os locais nomeados no acesso condicional do Azure AD. |
+|Adição|beta|Adicionado o tipo complexo [openIDConnectProvider](/graph/api/resources/openidconnectprovider?view=graph-rest-beta),o método [availableprovidertypes](/graph/api/identityprovider-list-availableprovidertypes?view=graph-rest-beta) e a propriedade [claimsMapping](/graph/api/resources/claimsmapping?view=graph-rest-beta).|
+|Alterar|beta|Atualizou a entidade [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-beta) e as operações [criar](/graph/api/identityprovider-post-identityproviders?view=graph-rest-beta), [listar](/graph/api/identityprovider-list?view=graph-rest-beta), [obter](/graph/api/identityprovider-get?view=graph-rest-beta), [atualizar](/graph/api/identityprovider-update?view=graph-rest-beta), [excluir](/graph/api/identityprovider-delete?view=graph-rest-beta) e [publicar](/graph/api/identityprovider-post-identityproviders?view=graph-rest-beta) para incluir o provedor OpenID Connect.|
 | Adição | v1.0 | Foi adicionada a [API namedLocation](/graph/api/resources/namedLocation?view=graph-rest-1.0), que representa os locais nomeados no acesso condicional do Azure AD. |
 
 ### <a name="people-and-workplace-intelligence--insights"></a>Inteligência social e do ambiente de trabalho | Ideias
@@ -144,9 +164,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |Adição|Beta e v1.0 |Adicionado o relacionamento [workbookOperation](/graph/api/resources/workbookoperation) à entidade [pasta de trabalho](/graph/api/resources/workbook?view=graph-rest-beta). |
-|Adição|Beta e v1.0 |Adicionado o método [Get workbookOperation](/graph/api/workbookoperation-get) à entidade [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta). |
-
-## <a name="june-2020"></a>Junho de 2020
+|Adição|Beta e v1.0 |Adicionado o método  [Get workbookOperation](/graph/api/workbookoperation-get)para a [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entit## Junho 2020
 
 ### <a name="calendar"></a>Calendário
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cef3822e418b822c74293fbff9c0def9a7104c63
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
-ms.translationtype: MT
+ms.openlocfilehash: 30f15f495fc73f0d976da820b43c10a88b3d5f9c
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345167"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509522"
 ---
 # <a name="create-onlinemeeting"></a>Criar ReuniãoOnline
 
@@ -28,16 +28,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | OnlineMeetings.ReadWrite                    |
-| Delegado (conta pessoal da Microsoft) | Não suportado                               |
-| Aplicativo                            | OnlineMeetings.ReadWrite.All*  |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
+| Application                            | Não Suportado.\* |
 
->**Observação:** A criação de uma reunião online com um token de aplicativo será suportada em futuro próximo. Forneceremos políticas de aplicativo adicionais que serão complementares ao escopo de permissão baseado em aplicativo. A partir de agora, recomendamos que você use o caminho/me com um token de usuário
+> [!IMPORTANT]
+> \* O suporte para a criação de uma reunião online com um token de aplicativo estará disponível em um futuro próximo. Forneceremos mais políticas de aplicativos que são complementares ao escopo de permissão baseado em aplicativos. Atualmente, você deve usar o caminho /me com um token de usuário.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /app/onlineMeetings
-POST /communications/onlineMeetings
 POST /me/onlineMeetings
 ```
 
@@ -58,100 +57,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e um o
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-an-online-meeting-with-application-token"></a>Exemplo 1: criar uma reunião online com o token do aplicativo
-
-#### <a name="request"></a>Solicitação
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create-onlinemeeting-app-token"
-}-->
-```http
-POST https://graph.microsoft.com/beta/communications/onlineMeetings
-Content-Type: application/json
-
-{
-  "startDateTime":"2019-09-09T14:33:30.8546353-07:00",
-  "endDateTime":"2019-09-09T15:03:30.8566356-07:00",
-  "subject":"Application Token Meeting",
-  "participants": {
-    "organizer": {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f"
-        }
-      }
-    }
-  }
-}
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-onlinemeeting-app-token-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-onlinemeeting-app-token-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-app-token-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-No corpo da solicitação, forneça uma representação JSON do objeto [onlineMeeting](../resources/onlinemeeting.md).
-
-#### <a name="response"></a>Resposta
-
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onlineMeeting"
-} -->
-```http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.onlineMeeting",
-  "autoAdmittedUsers": "everyone",
-  "audioConferencing": {
-    "tollNumber": "+12525634478",
-    "tollFreeNumber": "+18666390588",
-    "ConferenceId": "2425999",
-    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
-  },
-  "chatInfo": {
-    "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
-    "messageId": "0",
-    "replyChainMessageId": "0"
-  },
-  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
-  "startDateTime": "2019-07-11T02:17:17.6491364Z",
-  "endDateTime": "2019-07-11T02:47:17.651138Z",
-  "id": "550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
-  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
-  "participants": {
-    "organizer": {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
-      },
-      "upn": "upn-value"
-    }
-  },
-  "subject": "Application Token Meeting"
-}
-```
-
-### <a name="example-2-create-an-online-meeting-with-user-token"></a>Exemplo 2: criar uma reunião online com o token de usuário
+### <a name="example-1-create-an-online-meeting-with-user-token"></a>Exemplo 1: Crie uma reunião online com token de usuário
 
 #### <a name="request"></a>Solicitação
 
@@ -242,7 +148,7 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-3-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a>Exemplo 3: criar uma reunião online em um Canal do Microsoft Teams com um token de usuário
+### <a name="example-2-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a>Exemplo 2: Crie uma reunião online em um canal do Microsoft Teams com um token de usuário
 
 #### <a name="request"></a>Solicitação
 >**Observação:**: a ID de objeto do token do usuário aprovada deve ser um membro do canal representado pelo threadid no conteúdo.

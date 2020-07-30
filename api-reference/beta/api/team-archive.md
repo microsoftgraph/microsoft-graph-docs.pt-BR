@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f0718763e24ff8155cc9bd6fa6567c302dfc0f5d
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 5eced3dfe4a796f5d6db9340a1db819a7de4781f
+ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491669"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46524356"
 ---
 # <a name="archive-team"></a>Arquivar equipe
 
@@ -57,7 +57,7 @@ Na solicitação, você pode _opcionalmente_ incluir o parâmetro `shouldSetSpoS
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-Esse parâmetro opcional define se é necessário definir permissões para membros da equipe como somente leitura no site do SharePoint Online associado à equipe. Essa etapa será ignorada, caso as defina como falsas ou omita o corpo completamente.
+Este parâmetro opcional define se as permissões para os membros da equipe devem ser definidas somente para leitura no site do SharePoint Online associado à equipe. Essa etapa será ignorada, caso as defina como falsas ou omita o corpo completamente.
 
 ## <a name="response"></a>Resposta
 

@@ -5,18 +5,20 @@ localization_priority: Priority
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: b3e7d63a140fbd525aac8e360fe94059e3a440d1
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 048ecb37ae9e2d5812fe190132743f6ccfcf1d21
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805454"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427330"
 ---
 # <a name="create-event"></a>Criar evento
 
 Namespace: microsoft.graph
 
 Criar um [evento](../resources/event.md) no calendário padrão do usuário ou em um calendário específico.
+
+Por padrão, a propriedade **allowNewTimeProposals** está definida como verdadeira quando um evento é criado, o que significa que os convidados podem propor uma data/hora diferente para o evento. Confira [Propor novos horários de reunião](/graph/outlook-calendar-meeting-proposals) para obter mais informações sobre como propor um horário e como receber e aceitar uma nova proposta de horário.
 
 Você pode especificar o fuso horário de cada um dos horários de início e de término do evento como parte de seus valores, porque as propriedades**inicial** e **final** são do tipo [ dateTimeTimeZone](../resources/datetimetimezone.md). Primeiro [localize os fusos horários com suporte](outlookuser-supportedtimezones.md) para garantir que você tenha definido somente fusos horários que tenham sido configurados para o servidor de caixas de correio do usuário. 
 
@@ -93,13 +95,12 @@ Este é um exemplo da solicitação. Ela usa o cabeçalho da solicitação `Pref
 POST https://graph.microsoft.com/v1.0/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 600
 
 {
   "subject": "Let's go for lunch",
   "body": {
     "contentType": "HTML",
-    "content": "Does late morning work for you?"
+    "content": "Does noon work for you?"
   },
   "start": {
       "dateTime": "2017-04-15T12:00:00",
@@ -120,7 +121,8 @@ Content-length: 600
       },
       "type": "required"
     }
-  ]
+  ],
+  "allowNewTimeProposals": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -172,7 +174,7 @@ Content-length: 2197
     "isReminderOn":true,
     "hasAttachments":false,
     "subject":"Let's go brunch",
-    "bodyPreview":"Does late morning work for you?",
+    "bodyPreview":"Does noon work for you?",
     "importance":"normal",
     "sensitivity":"normal",
     "isAllDay":false,
@@ -187,6 +189,7 @@ Content-length: 2197
     "isOnlineMeeting":false,
     "onlineMeetingProvider":"unknown",
     "onlineMeeting":null,
+    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"
@@ -313,8 +316,8 @@ Content-length: 1390
     {
       "displayName": "Home Office"
     }
-  ]
-
+  ],
+  "allowNewTimeProposals": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -382,6 +385,7 @@ Content-length: 2985
   "isOnlineMeeting":true,
   "onlineMeetingProvider":"unknown",
   "onlineMeeting":null,
+  "allowNewTimeProposals": true,
   "responseStatus":{
     "response":"organizer",
     "time":"0001-01-01T00:00:00Z"
@@ -519,7 +523,8 @@ Content-type: application/json
       },
       "type": "required"
     }
-  ]
+  ],
+  "allowNewTimeProposals": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -585,6 +590,7 @@ Content-type: application/json
     "isOnlineMeeting":true,
     "onlineMeetingProvider":"unknown",
     "onlineMeeting":null,
+    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"
@@ -697,6 +703,7 @@ Content-type: application/json
       "type": "required"
     }
   ],
+  "allowNewTimeProposals": true,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness"
 }
@@ -764,6 +771,7 @@ Content-type: application/json
     "onlineMeetingUrl":null,
     "isOnlineMeeting": true,
     "onlineMeetingProvider": "teamsForBusiness",
+    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"

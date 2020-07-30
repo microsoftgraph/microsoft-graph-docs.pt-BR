@@ -5,12 +5,12 @@ author: stephenjust
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 45b22c9e6ce7dc25256534ce5bfcfa91dc81c347
-ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
-ms.translationtype: MT
+ms.openlocfilehash: 3fae40563bbd89b5792d75b5d8a0a51c1cda17e3
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408322"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509879"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>Trabalhar com a API de registros de chamadas no Microsoft Graph
 
@@ -18,7 +18,7 @@ ms.locfileid: "44408322"
 
 Os registros das chamadas fornecem informações de uso e diagnóstico das chamadas e reuniões on-line que ocorrem na sua organização ao usar o Microsoft Teams ou o Skype for Business. Você pode usar as APIs de registros de chamadas para se inscrever nos registros de chamadas e procurar registros de chamadas por IDs.
 
-A API de registros de chamadas é definida no subnamespace OData `microsoft.graph.callRecords` .
+A API de registros de chamadas é definida no subnamespace OData, `microsoft.graph.callRecords`.
 
 ## <a name="key-resource-types"></a>Principais tipos de recursos
 
@@ -27,6 +27,8 @@ A API de registros de chamadas é definida no subnamespace OData `microsoft.grap
 | [callRecord](callrecords-callrecord.md) | [Obter callRecord](../api/callrecords-callrecord-get.md) |
 | [sessão](callrecords-session.md) | [Obter callRecord](../api/callrecords-callrecord-get.md)<br />[Listar sessões](../api/callrecords-session-list.md) |
 | [segmento](callrecords-segment.md) | [Obter callRecord](../api/callrecords-callrecord-get.md)<br />[Listar sessões](../api/callrecords-session-list.md) |
+| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[Obter pstnCallLogRow](../api/callrecords-callrecord-getpstncalls.md) |
+| [directRoutingLogRow](callrecords-directroutinglogrow.md) | [Obter directRoutingLogRow](../api/callrecords-callrecord-getdirectroutingcalls.md)|
 
 ## <a name="call-record-structure"></a>Estrutura do registro de chamadas
 

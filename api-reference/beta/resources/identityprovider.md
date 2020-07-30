@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso do identityProvider
-description: Representa um provedor de identidade do Azure Active Directory (Azure AD). O provedor de identidade pode ser Microsoft, Google, Facebook, Amazon ou LinkedIn.
-localization_priority: Normal
+description: Representa os provedores de identidade em um locatário do Azure Active Directory e em um locatário do Azure AD B2C.
+localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: Nickgmicrosoft
-ms.openlocfilehash: 1c71fc88b4365031a126ee5c45f59de25f5fa3d9
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+author: namkedia
+ms.openlocfilehash: 449553213e41cb8b447511584c4905906011a4d4
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897054"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509543"
 ---
 # <a name="identityprovider-resource-type"></a>Tipo de recurso do identityProvider
 
@@ -18,34 +18,38 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um provedor de identidade do Azure Active Directory (Azure AD). O provedor de identidade pode ser Microsoft, Google, Facebook, Amazon ou LinkedIn.
+Representa os provedores de identidade em um locatário do Azure Active Directory e em um locatário do Azure AD B2C.
 
-A configuração de um provedor de identidade em seu locatário do Azure AD B2C permite:
+Para cenários do Azure AD B2B em um locatário do Microsoft Azure Active Directory, o tipo de provedor de identidade pode ser o Google ou o Facebook.
 
-* Os usuários se inscrevem e entram usando uma conta social em um aplicativo de consumidor. Por exemplo, um aplicativo pode usar o Azure AD B2C para permitir que os usuários se inscrevam no serviço usando uma conta do Facebook.
-* Os usuários vinculem uma conta local existente a uma conta social em um aplicativo de consumidor. Por exemplo, um usuário criou um nome de usuário e senha (conta local) no aplicativo. Mais tarde o usuário decide conectar a conta local para suas contas do Facebook, para que ele possa entrar usando o Facebook.
+Em um locatário do Azure AD B2C, o tipo de provedor de identidade pode ser a Microsoft, o Google, o Facebook, a Amazon, o LinkedIn, o Twitter ou qualquer [openIdConnectProvider](../resources/openidconnectprovider.md). Os seguintes provedores de identidade estão em visualização: Weibo, QQ, WeChat e GitHub.
 
-Configurar um provedor de identidade em seu locatário do Azure AD permite cenários futuros de usuários B2B. Por exemplo, uma organização tem recursos no Microsoft 365 que precisam ser compartilhados com um usuário do gmail. O usuário do Gmail usará as credenciais de conta do Google para autenticar e acessar os documentos.
+A configuração de um provedor de identidade no locatário do Azure AD B2C permite que os usuários se inscrevam e entrem usando uma conta social ou um provedor personalizado suportado pelo OpenID Connect em um aplicativo. Por exemplo, um aplicativo pode usar o Azure AD B2C para permitir que os usuários se inscrevam no serviço usando uma conta do Facebook ou o seu próprio provedor de identidade personalizado que esteja em conformidade com o protocolo OIDC.
+
+A configuração de um provedor de identidade no locatário do Microsoft Azure Active Directory permite novos cenários de convidado no Azure AD B2B. Por exemplo, uma organização possui recursos no Microsoft 365 que precisam ser compartilhados com um usuário do Gmail. O usuário do Gmail usará as credenciais de conta do Google para autenticar e acessar os documentos.
+
+Se for um provedor de identidade personalizado do OpenID Connect `OpenIDConnect` como `type` será representado usando o tipo de recurso [openIdConnectProvider](../resources/openidconnectprovider.md),que herdará do tipo de recurso identityProvider. 
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Obter identityProvider](../api/identityprovider-get.md) |identityProvider|Recuperar as propriedades de um identityProvider existente.|
-|[Criar identityProvider](../api/identityprovider-post-identityproviders.md)|identityProvider|Crie um novo identityProvider.|
-|[Atualizar identityProvider](../api/identityprovider-update.md)|Nenhum|Atualize um identityProvider existente.|
-|[Excluir identityProvider](../api/identityprovider-delete.md)|Nenhum|Excluir o identityProvider existente.|
-|[Lista identityProviders](../api/identityprovider-list.md)|conjunto identityProvider|Lista todos os identityProviders configurados do diretório.|
+|[List](../api/identityprovider-list.md)|conjunto identityProvider|Recupere todos os provedores de identidade configurados em um locatário.|
+|[Criar](../api/identityprovider-post-identityproviders.md)|identityProvider|Crie um novo provedor de identidade.|
+|[Obter](../api/identityprovider-get.md) |identityProvider|Recupere as propriedades de um provedor de identidade.|
+|[Atualizar](../api/identityprovider-update.md)|Nenhum(a)|Atualize um provedor de identidade.|
+|[Delete](../api/identityprovider-delete.md)|Nenhum(a)|Exclua um provedor de identidade.|
+|[Listar os tipos de provedor disponíveis](../api/identityprovider-list-availableprovidertypes.md)|Coleção de cadeias de caracteres|Recupere todos os tipos de provedor de identidade disponíveis.|
 
 ## <a name="properties"></a>Propriedades
 
-|Propriedade|Tipo|Obrigatório|Anulável|Descrição|
-|:---------------|:--------|:--------|:--------|:----------|
-|clientId|String|Sim|Não|ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.|
-|clientSecret|String|Sim|Não|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade. Isso é somente para gravar. Uma operação de leitura retornará "\*\*\*\*".|
-|id|String|Não|Não|O ID do provedor de identidade.|
-|nome|String|Não|Não|O nome de exibição exclusivo do provedor de identidade.|
-|tipo|String|Sim|Não|A identidade do provedor de identidade. Deve ser um dos seguintes valores: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|Propriedade|Tipo|Descrição|
+|:---------------|:--------|:----------|
+|clientId|Cadeia de caracteres|A ID do cliente para o aplicativo obtido ao registrar o aplicativo no provedor de identidade. Esse é um campo obrigatório.|
+|clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo obtido ao registrar o aplicativo no provedor de identidade. Isso é somente para gravar. Uma operação de leitura retornará "\*\*\*\*". Esse é um campo obrigatório.|
+|id|Cadeia de caracteres|O ID do provedor de identidade.|
+|nome|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade.|
+|tipo|Cadeia de caracteres|O tipo de provedor de identidade é um campo obrigatório.<ul>Para o cenário B2B:<li/>Google<li/>Facebook</ul><ul>Para o cenário B2C:<li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>Como obter o ID e segredo do cliente
 
