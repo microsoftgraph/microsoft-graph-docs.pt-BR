@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: bae074c7599119063053069765c0653ce405e231
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 10e764bef772b6874f811048b9ec5cdc101f1807
+ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524335"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531457"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -41,24 +41,25 @@ A criação de uma assinatura requer permissão de leitura para o recurso. Por e
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Incompatível | Incompatível |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[presence](../resources/presence.md) | Presence.Read.All | Incompatível | Incompatível |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-### <a name="chatmessage-microsoft-teams"></a>Chat (Microsoft Teams)
+### <a name="chatmessage"></a>chatMessage
 
 as assinaturas do **chat** com permissões delegadas não dão suporte a dados de recurso (o**includeResourceData** deve ser `false` ) e não precisam de [criptografia](/graph/webhooks-with-resource-data).
 
-as assinaturas do **chat** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura do **chat** , você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
+as assinaturas do **chat** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura do **chat** , você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis). 
 
 > **Observação:** `/teams/allMessages` e que `/chats/allMessages` estão atualmente em versão prévia. Durante a visualização, você pode usar essa API sem taxas, sujeita aos [termos de uso das APIs da Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). No entanto, os usuários de aplicativos que usam a API podem ser solicitados a ter assinaturas para ofertas específicas do Microsoft 365. Na disponibilidade geral, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados acessados por meio da API.
 
-### <a name="driveitem-onedrive"></a>driveItem (OneDrive)
+### <a name="driveitem"></a>driveItem
 
 Limitações adicionais se aplicam a assinaturas em itens do OneDrive. As limitações se aplicam à criação e ao gerenciamento (obter, atualizar e excluir) assinaturas.
 
 No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações de alteração são enviadas para os tipos de alterações solicitados na pasta assinada ou em qualquer arquivo, pasta ou outras instâncias **driveItem** em sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
 
-### <a name="contact-event-and-message-outlook"></a>contato, evento e mensagem (Outlook)
+### <a name="contact-event-and-message"></a>contato, evento e mensagem
 
 Limitações adicionais se aplicam a assinaturas em itens do Outlook. As limitações se aplicam à criação e ao gerenciamento (obter, atualizar e excluir) assinaturas.
 
@@ -67,6 +68,10 @@ Limitações adicionais se aplicam a assinaturas em itens do Outlook. As limita�
 
   - Usar a permissão de aplicativos correspondentes para inscrever as alterações dos itens em uma pasta ou uma caixa de correio de _qualquer_ usuários no locatário.
   - Não use as permissões de compartilhamento do Outlook (Contacts.Read.Shared Calendars.Read.Shared, Mail.Read.Shared e seus equivalentes de somente leitura), pois eles **não**suportam inscrições que alteram as notificações em itens de pastas compartilhadas ou delegadas.
+
+### <a name="presence"></a>presença
+
+as assinaturas de **presença** exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -130,22 +135,24 @@ Content-type: application/json
 
 ---
 
-
 Estes são os valores válidos para a Propriedade Resource.
 
 | Tipo de recurso | Exemplos |
 |:------ |:----- |
-|Email|me/mailfolders('inbox')/messages<br />me/messages|
-|Contatos|me/contacts|
-|Calendários|me/events|
-|Usuários|usuários|
-|Grupos|grupos|
-|Conversas|groups('*{id}*')/conversations|
-|Unidades|me/drive/root|
-|Listar|sites/{site-id}/lists/{list-id}|
-|Alerta de segurança|security/alerts?$filter=status eq ‘New’|
-|Registros de chamadas|communications/callRecords|
-|[Mensagem de chat](../resources/chatmessage.md) | chats/{ID}/mensagens, chats/multimessages, Teams/{ID}/Channels/{ID}/mensagens, equipes/próprias mensagens |
+|[Registros de chamadas](../resources/callrecords-callrecord.md)|`communications/callRecords`|
+|[Mensagem de chat](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/allMessages`, `teams/{id}/channels/{id}/messages`, `teams/allMessages` |
+|[Contatos](../resources/contact.md)|`me/contacts`|
+|[Conversas](../resources/conversation.md)|`groups('{id}')/conversations`|
+|[Unidades](../resources/driveitem.md)|`me/drive/root`|
+|[Eventos](../resources/event.md)|`me/events`|
+|[Grupos](../resources/group.md)|`groups`|
+|[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
+|[Email](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[Presença](../resources/presence.md)| `/communications/presences/{id}`(usuário único), `/communications/presences?$filter=id in ({id},{id}…)` (vários usuários)|
+|[Usuários](../resources/user.md)|`users`|
+|[Alerta de segurança](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+
+> **Observação:** Qualquer caminho iniciado com `me` também pode ser usado com `users/{id}` o ao invés de `me` direcionar um usuário específico, e não o usuário atual.
 
 ### <a name="response"></a>Resposta
 

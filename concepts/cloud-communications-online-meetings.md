@@ -4,18 +4,20 @@ description: Você terá a flexibilidade de criar uma reunião que ocorra no fut
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 22d44c32b6ece847283f2e572eeaf468eaac3dbe
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 5e6cf66dbecfe6c8d67354bc615f3f9766feef38
+ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289638"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531513"
 ---
 # <a name="use-the-cloud-communications-api-to-create-or-join-online-meetings"></a>Usar a API de comunicações em nuvem para criar ou ingressar em reuniões online
 
 As reuniões online oferecem a capacidade de especificar determinados detalhes, como o assunto da reunião e todos os participantes. Você também pode definir a data e a hora de início e término da reunião.
 
 As reuniões online oferecem a flexibilidade para criar uma reunião que ocorra no futuro ou instantaneamente. A capacidade de configurar uma reunião que inicia imediatamente após sua criação é ideal para problemas inesperados e outros incidentes que exigem a atenção imediata dos participantes.
+
+> **Observação** Esse conjunto de APIs permite a flexibilidade e a integração mais rica com o Microsoft Teams ou recursos do Skype; Ele não atualiza ou cria nenhum evento em um calendário. Para obter uma abordagem conveniente para adicionar uma reunião online a um calendário do Outlook, use a API de calendário. Consulte [escolher uma API no Microsoft Graph para criar e ingressar em reuniões online](choose-online-meeting-api.md) para obter mais informações.
 
 ## <a name="create-an-online-meeting"></a>Criar uma reunião online
 

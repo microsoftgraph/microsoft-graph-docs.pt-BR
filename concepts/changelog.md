@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: a739ce755c464c47edf5d52c2e4c2eb5b6a6e267
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 218f456e61785ed5411bdc7cd39c6f17d3df98f0
+ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509823"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46524265"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -158,13 +158,15 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição | Beta, v 1.0 | Novas permissões adicionadas [TeamsAppInstallation.ReadForTeam](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForTeam](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions). |
-
+| Adição | beta | Adicionado o suporte a permissões delegadas para [notificações](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) para mensagens de canal e bate-papo. |
 
 ### <a name="workbooks-and-charts"></a>Pastas de trabalho e gráficos
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |Adição|Beta e v1.0 |Adicionado o relacionamento [workbookOperation](/graph/api/resources/workbookoperation) à entidade [pasta de trabalho](/graph/api/resources/workbook?view=graph-rest-beta). |
-|Adição|Beta e v1.0 |Adicionado o método  [Get workbookOperation](/graph/api/workbookoperation-get)para a [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entit## Junho 2020
+|Adição|Beta e v1.0 |Adicionado o método [Get workbookOperation](/graph/api/workbookoperation-get) para a entidade [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta)
+
+## <a name="june-2020"></a>Junho de 2020
 
 ### <a name="calendar"></a>Calendário
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
