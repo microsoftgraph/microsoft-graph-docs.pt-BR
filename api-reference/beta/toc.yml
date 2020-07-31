@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Obter tokens de autenticação
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: /graph/auth/index?context=graph/api/beta
       - name: Noções básicas
         href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -74,7 +74,7 @@ items:
       - name: Azure AD Graph.
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -169,11 +169,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -310,7 +310,7 @@ items:
                     href: api/iteminsightssettings-get.md
                   - name: Atualizar
                     href: api/iteminsightssettings-update.md
-          - name: Correio
+          - name: Email
             href: resources/message.md
             items:
               - name: Criar pasta de email
@@ -424,7 +424,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir o perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -446,7 +446,7 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -1341,7 +1341,7 @@ items:
                 href: api/cloudcommunications-getpresencesbyuserid.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1404,7 +1404,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -9075,7 +9075,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -9169,7 +9169,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -9637,28 +9637,6 @@ items:
                         href: api/subscribedsku-get.md
           - name: Identidade e entrada
             items:
-              - name: Logs de auditoria
-                href: resources/azure-ad-auditlog-overview.md
-                items:
-                  - name: Auditoria de diretório
-                    href: resources/directoryaudit.md
-                    items:
-                      - name: Listar auditorias de diretório
-                        href: api/directoryaudit-list.md
-                      - name: Obter auditoria de diretório
-                        href: api/directoryaudit-get.md
-                  - name: Entrar
-                    href: resources/signin.md
-                    items:
-                      - name: Listar entradas
-                        href: api/signin-list.md
-                      - name: Obter entrada
-                        href: api/signin-get.md
-                  - name: Modo de Provisionamento
-                    href: resources/provisioningobjectsummary.md
-                    items:
-                      - name: Provisionamento de lista
-                        href: api/provisioningobjectsummary-list.md
               - name: Política de fluxos de autenticação
                 items:
                   - name: Política de fluxos de autenticação
@@ -9670,7 +9648,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
               - name: Métodos de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-overview.md
                   - name: Método de autenticação
                     href: resources/authenticationmethod.md
@@ -9703,7 +9681,7 @@ items:
                     href: api/certificatebasedauthconfiguration-list.md
                   - name: Obter
                     href: api/certificatebasedauthconfiguration-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
                   - name: Excluir
                     href: api/certificatebasedauthconfiguration-delete.md
@@ -9850,30 +9828,8 @@ items:
                     href: api/identityprovider-update.md
                   - name: Excluir
                     href: api/identityprovider-delete.md
-                  - name: Listar tipos de provedor disponíveis
+                  - name: Listar os tipos de provedor disponíveis
                     href: api/identityprovider-list-availableprovidertypes.md
-              - name: Proteção de informações
-                items:
-                  - name: Avaliação de ameaças
-                    items:
-                      - name: Visão geral
-                        href: resources/threatassessment-api-overview.md
-                      - name: Solicitação de avaliação de ameaças
-                        href: resources/threatassessmentrequest.md
-                      - name: Solicitação de avaliação de email
-                        href: resources/mailassessmentrequest.md
-                      - name: Solicitação de avaliação de arquivo de email
-                        href: resources/emailfileassessmentrequest.md
-                      - name: Solicitação de avaliação de arquivo
-                        href: resources/fileAssessmentRequest.md
-                      - name: Solicitação de avaliação de URL
-                        href: resources/urlassessmentrequest.md
-                      - name: Listar
-                        href: api/informationprotection-list-threatassessmentrequests.md
-                      - name: Criar
-                        href: api/informationprotection-post-threatassessmentrequests.md
-                      - name: Obter
-                        href: api/threatassessmentrequest-get.md
               - name: Gerenciador de convites
                 href: resources/invitation.md
                 items:
@@ -10001,7 +9957,7 @@ items:
                     items:
                       - name: Listar
                         href: api/unifiedroleassignmentmultiple-list.md
-                      - name: Criar
+                      - name: Create
                         href: api/unifiedroleassignmentmultiple-post.md
                       - name: Obter
                         href: api/unifiedroleassignmentmultiple-get.md
@@ -10014,7 +9970,7 @@ items:
                 items:
                   - name: Listar
                     href: api/trustframework-list-keysets.md
-                  - name: Criar
+                  - name: Create
                     href: api/trustframework-post-keysets.md
                   - name: Obter
                     href: api/trustframeworkkeyset-get.md
@@ -10037,7 +9993,7 @@ items:
                 items:
                   - name: Listar
                     href: api/trustframework-list-trustframeworkpolicies.md
-                  - name: Criar
+                  - name: Create
                     href: api/trustframework-post-trustframeworkpolicy.md
                   - name: Obter
                     href: api/trustframeworkpolicy-get.md
@@ -10050,7 +10006,7 @@ items:
                 items:
                   - name: Listar
                     href: api/identityuserflow-list.md
-                  - name: Criar
+                  - name: Create
                     href: api/identityuserflow-post-userflows.md
                   - name: Obter
                     href: api/identityuserflow-get.md
@@ -10293,7 +10249,7 @@ items:
                       - name: Recursos gerenciados
                         href: resources/governanceresource.md
                         items:
-                          - name: Listar
+                          - name: Lista
                             href: api/governanceresource-list.md
                           - name: Obter
                             href: api/governanceresource-get.md
@@ -10302,14 +10258,14 @@ items:
                       - name: Definições de função
                         href: resources/governanceroledefinition.md
                         items:
-                          - name: Listar
+                          - name: Lista
                             href: api/governanceroledefinition-list.md
                           - name: Obter
                             href: api/governanceroledefinition-get.md
                       - name: Configurações de função
                         href: resources/governancerolesetting.md
                         items:
-                          - name: Listar
+                          - name: Lista
                             href: api/governancerolesetting-list.md
                           - name: Obter
                             href: api/governancerolesetting-get.md
@@ -10318,7 +10274,7 @@ items:
                       - name: Atribuições de função
                         href: resources/governanceroleassignment.md
                         items:
-                          - name: Listar
+                          - name: Lista
                             href: api/governanceroleassignment-list.md
                           - name: Obter
                             href: api/governanceroleassignment-get.md
@@ -10329,7 +10285,7 @@ items:
                         items:
                           - name: Listar
                             href: api/governanceroleassignmentrequest-list.md
-                          - name: Criar
+                          - name: Create
                             href: api/governanceroleassignmentrequest-post.md
                           - name: Obter
                             href: api/governanceroleassignmentrequest-get.md
@@ -10524,7 +10480,7 @@ items:
       - name: Observações
         displayName: OneNote
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onenote-api-overview.md
           - name: Observações
             href: resources/onenote.md
@@ -10625,7 +10581,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -10954,8 +10910,33 @@ items:
                     href: api/multivaluelegacyextendedproperty-get.md
       - name: Relatórios
         items:
+          - name: Relatórios de atividades do Azure AD
+            items:
+              - name: Visão Geral
+                href: resources/azure-ad-auditlog-overview.md
+              - name: Auditoria de diretório
+                href: resources/directoryaudit.md
+                items:
+                  - name: Listar auditorias de diretório
+                    href: api/directoryaudit-list.md
+                  - name: Obter auditoria de diretório
+                    href: api/directoryaudit-get.md
+              - name: Entrar
+                href: resources/signin.md
+                items:
+                  - name: Listar entradas
+                    href: api/signin-list.md
+                  - name: Obter entrada
+                    href: api/signin-get.md
+              - name: Provisioning
+                href: resources/provisioningobjectsummary.md
+                items:
+                  - name: Provisionamento de lista
+                    href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
+              - name: Visão Geral
+                href: resources/report-identity-access.md
               - name: Atividade do aplicativo AD FS
                 items:
                   - name: Resumo detalhado da terceira parte confiável
@@ -10977,7 +10958,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e uso
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registro de usuário de credenciais
                     href: resources/credentialuserregistrationcount.md
@@ -11001,7 +10982,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -11204,13 +11185,13 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Dados de consulta
                 href: api/search-query.md
           - name: Índice
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -11255,13 +11236,13 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/complianceapioverview.md
           - name: Descoberta eletrônica
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/eDiscoveryapioverview.md
-              - name: caso de descoberta eletrônica
+              - name: Caso de Descoberta Eletrônica
                 href: resources/ediscoverycase.md
                 items:
                   - name: Listar
@@ -11340,6 +11321,26 @@ items:
                     href: api/informationprotectionlabel-evaluateremoval.md
                   - name: Extrair rótulo
                     href: api/informationprotectionlabel-extractlabel.md
+              - name: Avaliação de ameaças
+                items:
+                  - name: Visão Geral
+                    href: resources/threatassessment-api-overview.md
+                  - name: Solicitação de avaliação de ameaças
+                    href: resources/threatassessmentrequest.md
+                  - name: Solicitação de avaliação de email
+                    href: resources/mailassessmentrequest.md
+                  - name: Solicitação de avaliação de arquivo de email
+                    href: resources/emailfileassessmentrequest.md
+                  - name: Solicitação de avaliação de arquivo
+                    href: resources/fileAssessmentRequest.md
+                  - name: Solicitação de avaliação de URL
+                    href: resources/urlassessmentrequest.md
+                  - name: Listar
+                    href: api/informationprotection-list-threatassessmentrequests.md
+                  - name: Criar
+                    href: api/informationprotection-post-threatassessmentrequests.md
+                  - name: Obter
+                    href: api/threatassessmentrequest-get.md
           - name: Classificações de segurança
             href: resources/securescores.md
             items:
@@ -11378,7 +11379,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -11538,7 +11539,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
