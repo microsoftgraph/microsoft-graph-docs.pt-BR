@@ -1,22 +1,22 @@
 ---
-title: Obter primaryChannel
-description: Recupere a propriedade de navegação de uma equipe que permite o acesso ao canal geral padrão.
+title: Get primaryChannel
+description: Recupere a propriedade de navegação de uma equipe que permita acesso ao seu canal Geral padrão.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0c4b209a4f510db2c5a4cd84bbc8bf7064a7935f
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: 50f3bc5fd03c509afe73616bc79ba3cd1582bfe6
+ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863884"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531506"
 ---
-# <a name="get-primarychannel"></a>Obter primaryChannel
+# <a name="get-primarychannel"></a>Get primaryChannel
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
-Obter o [canal](../resources/channel.md)padrão, **geral**, de uma [equipe](../resources/team.md).
+Obtenha o canal [padrão](../resources/channel.md), **Geral**, de uma [equipe](../resources/team.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -32,12 +32,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/{id}/primaryChannel
+GET /teams/{id}/primaryChannel
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a `$filter` , `$select` e a parâmetros de `$expand` [consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método suporta o `$filter`, `$select`, e `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
