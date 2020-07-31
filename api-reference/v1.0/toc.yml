@@ -3775,23 +3775,6 @@ items:
                         href: api/subscribedsku-get.md
           - name: Identidade e entrada
             items:
-              - name: Logs de auditoria
-                href: resources/azure-ad-auditlog-overview.md
-                items:
-                  - name: Auditoria de diretório
-                    href: resources/directoryaudit.md
-                    items:
-                      - name: Listar auditorias de diretório
-                        href: api/directoryaudit-list.md
-                      - name: Obter auditoria de diretório
-                        href: api/directoryaudit-get.md
-                  - name: Entrar
-                    href: resources/signin.md
-                    items:
-                      - name: Listar entradas
-                        href: api/signin-list.md
-                      - name: Obter entrada
-                        href: api/signin-get.md
               - name: Configuração de autenticação baseada em certificado
                 href: resources/certificatebasedauthconfiguration.md
                 items:
@@ -3917,28 +3900,6 @@ items:
                     href: api/identityprovider-update.md
                   - name: Excluir o provedor de identidade
                     href: api/identityprovider-delete.md
-              - name: Proteção de informações
-                items:
-                  - name: Avaliação de ameaças
-                    items:
-                      - name: Visão Geral
-                        href: resources/threatassessment-api-overview.md
-                      - name: Solicitação de avaliação de ameaças
-                        href: resources/threatassessmentrequest.md
-                      - name: Solicitação de avaliação de email
-                        href: resources/mailassessmentrequest.md
-                      - name: Solicitação de avaliação de arquivo de email
-                        href: resources/emailfileassessmentrequest.md
-                      - name: Solicitação de avaliação de arquivo
-                        href: resources/fileAssessmentRequest.md
-                      - name: Solicitação de avaliação de URL
-                        href: resources/urlassessmentrequest.md
-                      - name: Listar
-                        href: api/informationprotection-list-threatassessmentrequests.md
-                      - name: Criar
-                        href: api/informationprotection-post-threatassessmentrequests.md
-                      - name: Obter
-                        href: api/threatassessmentrequest-get.md
               - name: Gerenciador de convites
                 href: resources/invitation.md
                 items:
@@ -4393,6 +4354,23 @@ items:
         items:
           - name: Visão Geral
             href: resources/report.md
+          - name: Atividade do Azure AD
+            href: resources/azure-ad-auditlog-overview.md
+            items:
+              - name: Auditoria de diretório
+                href: resources/directoryaudit.md
+                items:
+                  - name: Listar auditorias de diretório
+                    href: api/directoryaudit-list.md
+                  - name: Obter auditoria de diretório
+                    href: api/directoryaudit-get.md
+              - name: Entrar
+                href: resources/signin.md
+                items:
+                  - name: Listar entradas
+                    href: api/signin-list.md
+                  - name: Obter entrada
+                    href: api/signin-get.md
           - name: Uso do dispositivo do Microsoft Teams
             href: resources/microsoft-teams-device-usage-reports.md
             items:
@@ -4603,6 +4581,28 @@ items:
                 href: api/alert-get.md
               - name: Atualizar alerta
                 href: api/alert-update.md
+          - name: Proteção de informações
+            items:
+              - name: Avaliação de ameaças
+                items:
+                  - name: Visão Geral
+                    href: resources/threatassessment-api-overview.md
+                  - name: Solicitação de avaliação de ameaças
+                    href: resources/threatassessmentrequest.md
+                  - name: Solicitação de avaliação de email
+                    href: resources/mailassessmentrequest.md
+                  - name: Solicitação de avaliação de arquivo de email
+                    href: resources/emailfileassessmentrequest.md
+                  - name: Solicitação de avaliação de arquivo
+                    href: resources/fileAssessmentRequest.md
+                  - name: Solicitação de avaliação de URL
+                    href: resources/urlassessmentrequest.md
+                  - name: Listar
+                    href: api/informationprotection-list-threatassessmentrequests.md
+                  - name: Criar
+                    href: api/informationprotection-post-threatassessmentrequests.md
+                  - name: Obter
+                    href: api/threatassessmentrequest-get.md
           - name: Classificações de segurança
             href: resources/securescore.md
             items:
