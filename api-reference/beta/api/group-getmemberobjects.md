@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6be4e3ba39139e1a3e5e2995f15bcea73621354d
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 73e976ab377ac74d0503e5b94891a6dc616e38fa
+ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123717"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46539052"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retornar todos os grupos e unidades administrativas dos quais o grupo é membro. A verificação é transitiva. Observação: Grupos não podem ser membros de funções de diretório, então nenhuma função de diretório retornará.
+Retornar todos os grupos e unidades administrativas dos quais o grupo é membro. A verificação é transitiva.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

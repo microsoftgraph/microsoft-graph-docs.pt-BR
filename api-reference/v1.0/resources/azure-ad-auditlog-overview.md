@@ -1,41 +1,41 @@
 ---
-title: Visão geral da API de log de auditoria do Azure AD
-description: O Azure AD (Azure Active Directory) controla métricas de atividade e de entrada de usuário e cria logs de auditoria que ajudam você a entender como os usuários acessam e usam os serviços do Azure AD.
+title: Visão geral da API de relatórios de atividades
+description: Use a API de relatórios de atividades no Microsoft Graph para acessar os relatórios que o Azure Active Directory cria para ajudar a rastrear a atividade do usuário em um locatário.
 localization_priority: Priority
 author: kholtz
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: f2841b950096ca43f72f387a50a39b632e53ab62
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: cc97d66bda8f611d02f3308111bdc5e060f06625
+ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124214"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46524258"
 ---
-# <a name="azure-ad-audit-log-api-overview"></a>Visão geral da API de log de auditoria do Azure AD
+# <a name="activity-reports-api-overview"></a>Visão geral da API de relatórios de atividades
 
 Namespace: microsoft.graph
 
-O Azure AD (Azure Active Directory) controla métricas de atividade e de entrada de usuário e cria logs de auditoria que ajudam você a entender como os usuários acessam e usam os serviços do Azure AD. Use a API do Microsoft Graph para o Azure AD para analisar os dados desses relatórios e criar soluções personalizadas adequadas às necessidades específicas da sua organização.
+O Azure Active Directory (Azure AD) rastreia a atividade do usuário e cria relatórios que ajudam a entender como seus usuários acessam e usam os serviços do Azure AD. Use a API do Microsoft Graph para Azure AD para analisar os dados nesses relatórios e criar soluções personalizadas adaptadas às necessidades específicas da sua organização.
 
-## <a name="what-are-azure-ad-activity-logs"></a>O que são logs de atividade do Azure AD?
+## <a name="what-are-azure-ad-activity-logs"></a>O que são os logs de atividades do Azure AD?
 
-O Azure AD oferece dois tipos de logs de atividade:
+O Azure AD fornece três tipos de relatórios de atividades:
 
 - Logs de auditoria
 - Logs de entrada
 
-### <a name="audit-logs"></a>Logs de auditoria
+### <a name="directory-audits"></a>Auditorias de diretório
 
-O relatório de atividades de logs de auditoria fornece acesso ao histórico de todas as tarefas executada em seu locatário. O relatório de logs de auditoria fornece registros de atividades do sistema de conformidade. Entre outros benefícios, os dados fornecidos permitem que você aborde cenários comuns, como:
+O relatório de auditoria de diretório fornece acesso ao histórico de todas as tarefas executadas em seu locatário. O relatório de auditoria de diretório fornece registros de atividades do sistema para conformidade. Entre outros benefícios, os dados fornecidos permitem que você aborde cenários comuns, como:
 
 - Quem concedeu acesso ao grupo de administradores a um usuário de diretório?
 - Quais usuários estão se conectando a um aplicativo adquirido recentemente?
 - Quantas redefinições de senhas foram feitas no diretório?
 
-### <a name="sign-in-logs"></a>Logs de entrada
+### <a name="sign-ins"></a>Entradas
 
-O relatório de atividade de entrada ajuda a determinar quem realizou as tarefas relatadas pelos relatórios de log de auditoria. O relatório de atividades de entrada ajuda a responder perguntas como:
+O relatório de entradas ajuda a determinar quem executou as tarefas relatadas pelas auditorias de diretório. O relatório de entrada ajuda você a responder a perguntas como:
 
 - O que é o padrão de entrada de um usuário?
 - Quantos usuários entraram durante a semana passada?
@@ -52,7 +52,7 @@ OBTER entradas de usuário do locatário | [OBTER https://graph.microsoft.com/v1
 
 ## <a name="what-licenses-do-i-need"></a>De quais licenças eu preciso?
 
-Os relatórios de log de auditoria estão disponíveis para os recursos que você tiver licenciado.  Se você tiver uma licença para um recurso específico, também terá acesso a seus logs de auditoria.
+Os relatórios de atividades estão disponíveis para os recursos que você licenciou. Se você possui uma licença para um recurso específico, também tem acesso aos relatórios.
 
 Por exemplo, você precisa de uma licença P1 do Azure AD Premium para acessar os relatórios de auditoria de senha de autoatendimento.  Para saber mais, confira [Licenciamento do Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
 
@@ -62,7 +62,7 @@ Para saber mais, consulte [Preços do Azure AD](https://azure.microsoft.com/pric
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Registre seu aplicativo](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para satisfazer aos pré-requisitos do log de auditoria. 
+- [Registre seu aplicativo](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para atender aos pré-requisitos do relatório. 
 - Aprenda com [amostras do log de auditoria](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) e de [entrada](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
 - Analisar recurso e ações do [directoryAudit](directoryaudit.md).
 - Analisar recurso e ações do [signIn](signin.md). 
