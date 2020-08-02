@@ -1,16 +1,16 @@
 ---
 title: Criar grupo
-description: Crie um novo grupo ou grupo de segurança do Office 365.
+description: Criar um novo grupo ou grupo de segurança do Microsoft 365.
 author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e4fc80fc664404a0d17d535282e0d791b7e96cbb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4beb2df484a79aa129886bd16622115ffaa7b442
+ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396610"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46539063"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Crie um novo [grupo](../resources/group.md) conforme especificado no corpo da solicitação. Você pode criar um dos seguintes grupos:
 
-* Grupo do Office 365 (grupo unificado)
+* Grupo do Microsoft 365 (grupo unificado)
 * Grupo de segurança
 
 Esta operação retorna, por padrão, apenas um subconjunto das propriedades de cada grupo. Essas propriedades padrão estão listadas na seção [Propriedades](../resources/group.md#properties). Para obter propriedades _não_ retornadas por padrão, execute uma [operação GET](group-get.md) e especifique as propriedades em uma opção de consulta `$select` do OData.
@@ -55,14 +55,15 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| displayName | string | O nome para exibição no catálogo de endereços do grupo. Comprimento máximo: 256 caracteres. Obrigatório. |
+| displayName | string | O nome para exibição no catálogo de endereços do grupo. Obrigatório. |
 | description | string | Uma descrição para o grupo. Opcional. |
+| isAssignableToRole | Booliano | Definir para **true** para habilitar o grupo a ser atribuído uma função do Azure AD. Somente o Administrador com Função Privilegiada e o Administrador Global podem definir o valor dessa propriedade. Opcional. |
 | mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
 | mailNickname | string | O alias de email do grupo. Obrigatório. |
-| securityEnabled | booliano | Defina como **verdadeiro** para grupos ativados por segurança, incluindo grupos do Office 365. Obrigatório. |
+| securityEnabled | booliano | Defina como **true** para grupos habilitados para segurança, incluindo grupos do Microsoft 365. Obrigatório. |
 | owners | Coleção [directoryObject](../resources/directoryobject.md) | Esta propriedade representa os proprietários do grupo na hora de criação. Opcional. |
 | membros | Coleção [directoryObject](../resources/directoryobject.md) | Esta propriedade representa os membros do grupo na hora de criação. Opcional. |
-|visibility|String|Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: `Private`, `Public`, `HiddenMembership` ou vazio (que é interpretado como `Public`).|
+|visibility|Cadeia de caracteres|Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: `Private`, `Public`, `HiddenMembership` ou vazio (que é interpretado como `Public`).|
 
 > **Observação:** os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** definido inicialmente como `true`.
 
@@ -70,7 +71,7 @@ Como o recurso de **grupo** dá suporte a [extensões](/graph/extensibility-over
 
 >**Observação:** Criar um grupo usando o Group. Criar a permissão de aplicativo sem especificar os proprietários criará o grupo anonimamente e o grupo não será modificado. Você pode usar a operação `POST` e adicionar proprietários ao grupo enquanto a cria para especificar proprietários que podem modificar o grupo.
 
-> Criar um Grupo do Office 365 programaticamente com um contexto somente de aplicativo e sem especificar os proprietários criará o grupo anonimamente. Se assim o fizer, o site associado do SharePoint Online só será criado automaticamente, após a execução de outras ações manuais.  
+> Ao criar um grupo do Microsoft 365 programaticamente com um contexto somente de aplicativo e sem especificar os proprietários, o grupo será criado anonimamente. Se assim o fizer, o site associado do SharePoint Online só será criado automaticamente, após a execução de outras ações manuais.  
 
 Especifique outras propriedades graváveis conforme necessário para o seu grupo. Confira mais informações nas propriedades do recurso [group](../resources/group.md).
 
@@ -80,7 +81,7 @@ Use a propriedade **groupTypes** para controlar o tipo de grupo e sua associaç�
 
 | Tipo de grupo | Associação atribuída | Associação dinâmica |
 |:--------------|:------------------------|:---------------|
-| Office 365 (também conhecido como grupo unificado)| `["Unified"]` | `["Unified","DynamicMembership"]`
+| Microsoft 365 (também conhecido como grupo unificado)| `["Unified"]` | `["Unified","DynamicMembership"]`
 | Dinâmica | `[]` (_null_) | `["DynamicMembership"]`|
 
 ## <a name="response"></a>Resposta
@@ -89,12 +90,13 @@ Se bem-sucedido, esse método retorna um código de resposta `201 Created` e um 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-an-office-365-group"></a>Exemplo 1: criando um grupo do Office 365
+### <a name="example-1-create-a-microsoft-365-group"></a>Exemplo 1: Criar um grupo do Microsoft 365
 
-O exemplo a seguir cria um grupo do Office 365.
+O exemplo a seguir cria um grupo do Microsoft 365.
 
 #### <a name="request"></a>Solicitação
 
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -149,6 +151,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
      "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
      "deletedDateTime": null,
      "classification": null,
@@ -159,6 +162,7 @@ Content-type: application/json
      "groupTypes": [
          "Unified"
      ],
+   "isAssignableToRole": null,
      "mail": "golfassist@contoso.com",
      "mailEnabled": true,
      "mailNickname": "golfassist",
@@ -176,18 +180,20 @@ Content-type: application/json
      "resourceBehaviorOptions": [],
      "resourceProvisioningOptions": [],
      "securityEnabled": false,
+   "securityIdentifier": "S-1-12-1-1753967289-1089268234-832641959-555555555",
      "theme": null,
      "visibility": "Public",
      "onPremisesProvisioningErrors": []
 }
 ```
 
-### <a name="example-2-create-an-office-365-group-with-an-owner-and-members"></a>Exemplo 2: Criando um grupo do Office 365 com um proprietário e membros
+### <a name="example-2-create-a-microsoft-365-group-with-an-owner-and-members"></a>Exemplo 2: Criar um grupo do Microsoft 365 com um proprietário e membros
 
-O exemplo a seguir cria um grupo do Office 365 com um proprietário e membros especificados. Observe que, no máximo, 20 relações, como proprietários e membros, podem ser adicionadas como parte da criação do grupo. Posteriormente, você pode adicionar mais membros, usando a API [adicionar membro](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&tabs=http) ou o envio em lotes JSON.
+O exemplo a seguir cria um grupo do Microsoft 365 com um proprietário e membros especificados. Observe que, no máximo, 20 relações, como proprietários e membros, podem ser adicionadas como parte da criação do grupo. Posteriormente, você pode adicionar mais membros, usando a API [adicionar membro](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&tabs=http) ou o envio em lotes JSON.
 
 #### <a name="request"></a>Solicitação
 
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -253,15 +259,18 @@ Content-type: application/json
     "deletedDateTime": null,
     "classification": null,
     "createdDateTime": "2018-12-27T22:17:07Z",
-    "creationOptions": [],
     "description": "Group with designated owner and members",
     "displayName": "Operations group",
+    "expirationDateTime": null,
     "groupTypes": [
         "Unified"
     ],
+    "isAssignableToRole": null,
     "mail": "operations2019@contoso.com",
     "mailEnabled": true,
     "mailNickname": "operations2019",
+    "membershipRule": null,
+    "membershipRuleProcessingState": null,
     "onPremisesLastSyncDateTime": null,
     "onPremisesSecurityIdentifier": null,
     "onPremisesSyncEnabled": null,
@@ -273,8 +282,90 @@ Content-type: application/json
     "resourceBehaviorOptions": [],
     "resourceProvisioningOptions": [],
     "securityEnabled": false,
+    "securityIdentifier": "S-1-12-1-1905728287-1207447622-870010782-555555555",
+    "theme": null,
     "visibility": "Public",
     "onPremisesProvisioningErrors": []
+}
+```
+
+### <a name="example-3-create-a-group-that-can-be-assigned-to-an-azure-ad-role"></a>Exemplo 3: Criar um grupo que pode ser atribuído a uma função do Azure AD
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_role_enabled_group"
+}-->
+``` http
+POST https://graph.microsoft.com/beta/groups
+Content-Type: application/json
+
+{
+  "description": "Group assignable to a role",
+  "displayName": "Role assignable group",
+  "groupTypes": [
+    "Unified"
+  ],
+  "isAssignableToRole": true,
+  "mailEnabled": true,
+  "securityEnabled": true,
+  "mailNickname": "contosohelpdeskadministrators",
+  "visibility" : "Private"
+}
+```
+
+> **Observação:** As propriedades de **visibilidade** e **groupTypes** não são necessárias para a criação, mas são preenchidas automaticamente com esses valores. Um grupo com a propriedade **isAssignableToRole** definida como `true` não pode ser do tipo de associação dinâmica e não pode ter um proprietário. Para mais informações, consulte [Usando um grupo para gerenciar as atribuições de funções do Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037).
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta. Ele inclui apenas propriedades padrão.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_role_enabled_group"
+} -->
+``` http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
+  "id": "502df398-d59c-469d-944f-34a50e60db3f",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-12-27T22:17:07Z",
+  "description": "Group assignable to a role",
+  "displayName": "Role assignable group",
+  "expirationDateTime": null,
+  "groupTypes": [
+    "Unified"
+  ],
+  "isAssignableToRole": true,
+  "mail": "operations2019@contoso.com",
+  "mailEnabled": true,
+  "mailNickname": "contosohelpdeskadministrators",
+  "membershipRule": null,
+  "membershipRuleProcessingState": null,
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": "CAN",
+  "proxyAddresses": [
+    "SMTP:operations2019@contoso.com"
+  ],
+  "renewedDateTime": "2018-12-27T22:17:07Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [],
+  "securityEnabled": true,
+  "securityIdentifier": "S-1-12-1-1905728287-1207447622-870010782-555555555",
+  "theme": null,
+  "visibility": "Private",
+  "onPremisesProvisioningErrors": []
 }
 ```
 

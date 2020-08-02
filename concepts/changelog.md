@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 218f456e61785ed5411bdc7cd39c6f17d3df98f0
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: f4e4923fbc90de444f390bf55f7c568e911c5ca6
+ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524265"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46539105"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -128,6 +128,7 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 | Adição        | v1.0        | Foi adicionada o recurso [consulta delta](delta-query-overview.md) ao [servicePrincipal](/graph/api/serviceprincipal-delta). |
 | Adição | beta | Adicionado o [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) ao gerenciamento de direitos.  |
 | Adição        | v1.0        | Recurso [consulta delta](delta-query-overview.md)adicionado para [oauth2PermissionGrant](/graph/api/oauth2Permissiongrant-delta). |
+| Adição | Beta | Adicionada nova propriedade **isAssignableToRole** ao [grupo](/graph/api/resources/group?view=graph-rest-beta).|
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
@@ -153,6 +154,12 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionada a propriedade de navegação **profileCardProperties** à entidade [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta). |
 | Adição | beta | Adicionada a entidade **profileCardProperty** e as seguintes operações: <br/> [Listar](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [Update](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete). |
+
+### <a name="sites-and-lists--taxonomy"></a>Sites e listas | Taxonomia
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Introduziu a API da taxonomia, incluindo o [termStore.store](/graph/api/resources/termstore-store?view=graph-rest-beta), [termStore.term](/graph/api/resources/termstore-term?view=graph-rest-beta), [termStore.set](/graph/api/resources/termstore-set?view=graph-rest-beta), e [termStore.relation](/graph/api/resources/termstore-relation?view=graph-rest-beta) de recursos e métodos associados. |
 
 ### <a name="teamwork"></a>Trabalho em equipe
 | **Tipo de alteração** | **Versão** | **Descrição**                          |

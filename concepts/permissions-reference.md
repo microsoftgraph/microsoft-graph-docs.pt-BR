@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c3fc325bf49815ead5fc43ea039fac3b22899bbc
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 81f1682bfb47b851728b0521553cac5b74ecd8f0
+ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509571"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46539119"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1892,6 +1892,28 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 * _ThreatAssessment. ReadWrite.All_: ler e gravar solicitações de avaliação de ameaças (`GET /informationProtection/threatAssessmentRequests`)
 
 ---
+
+## <a name="taxonomy-permissions"></a>Permissões de taxonomia
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TermStore.Read.All_        | Ler dados do repositório de termos | Permitir que o aplicativo leia vários termos, definições e grupos no repositório de termos | Sim  | Não |
+| _TermStore.ReadWrite.All_   | Ler e gravar todos os dados do repositório de termos | Permitir que o aplicativo edite ou exclua termos, definições e grupos no repositório de termos | Sim  | Não |
+
+
+### <a name="remarks"></a>Comentários
+
+As permissões de taxonomia só são válidas para contas do trabalho ou da escola.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado
+
+* _TermStore.Read.All_: Ler o termstore para o locatário (`GET /termStore`)
+* _TermStore.ReadWrite.All_: Criar novos termos no termStore (`POST /termStore/sets/123/children`)
+
 
 ## <a name="user-permissions"></a>Permissões do usuário
 

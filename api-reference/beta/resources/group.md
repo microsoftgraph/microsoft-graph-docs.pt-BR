@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b4478c0ebec93e5156a46c68f7b8a035225d199f
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 27745539ca9e8288e67d77565deea176f7534054
+ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427505"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46539112"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -129,6 +129,7 @@ Esse recurso permite:
 |hideFromAddressLists |Booliano |Verdadeiro se o grupo não for exibido em certas partes da interface do usuário do Outlook: no **Catálogo de Endereços**, nas listas de endereços para selecionar os destinatários da mensagem e na caixa de diálogo **Procurar Grupos** para pesquisar grupos; falso caso contrário. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
 |hideFromOutlookClients |Booliano |Verdadeiro se o grupo não for exibido nos clientes do Outlook, como Outlook para Windows e Outlook na Web; caso contrário, falso. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
 |id|String|O identificador exclusivo do grupo. <br><br>Retornado por padrão. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
+|isAssignableToRole|Booliano|Indica se esse grupo pode ser atribuído a uma função do Azure Active Directory ou não.<br><br>Essa propriedade só pode ser definida durante a criação do grupo e é imutável. Somente o Administrador Global o Administrador com Função Privilegiada podem definir essa propriedade. Para mais informações, consulte [Usando um grupo para gerenciar as atribuições de funções do Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Retornado por padrão.|
 |infoCatalogs|Conjunto de cadeias de caracteres|Identifica os segmentos de informações atribuídos ao grupo. Retornado por padrão.|
 |isSubscribedByMail|Boolean|Indica se o usuário conectado está inscrito para receber conversas de email. O valor padrão é **true**. <br><br>Retornado apenas em $select. |
 |licenseProcessingState|String|Indica o status da atribuição de licença de grupo para todos os membros do grupo. Valores possíveis: `QueuedForProcessing`, `ProcessingInProgress` e `ProcessingComplete`. <br><br>Retornado apenas em $select. Somente leitura. |
@@ -229,6 +230,7 @@ Veja a seguir uma representação JSON do recurso.
     "assignedLicenses",
     "autoSubscribeNewMembers",
     "hasMembersWithLicenseErrors",
+    "isAssignableToRole",
     "isSubscribedByMail",
     "licenseProcessingState",
     "unseenConversationsCount",
@@ -257,6 +259,7 @@ Veja a seguir uma representação JSON do recurso.
   "hideFromOutlookClients": false,
   "id": "string (identifier)",
   "isFavorite": true,
+  "isAssignableRole": false,
   "isSubscribedByMail": true,
   "licenseProcessingState": "string",
   "mail": "string",
