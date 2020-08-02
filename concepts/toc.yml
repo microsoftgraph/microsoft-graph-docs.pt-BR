@@ -101,7 +101,7 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Propor novas horas de reunião
             href: outlook-calendar-meeting-proposals.md
-          - name: Organizar ou participar de reuniões online
+          - name: Definir evento como reunião online
             href: outlook-calendar-online-meetings.md
           - name: Escolha um API de reunião online
             href: choose-online-meeting-api.md
