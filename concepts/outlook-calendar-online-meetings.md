@@ -1,27 +1,31 @@
 ---
-title: Usar o Outlook para organizar e participar de reuniões online
-description: No Outlook, o organizador da reunião pode permitir que os convidados proponham horários alternativos.
+title: Habilitar um evento como reunião online no calendário do Outlook
+description: Em uma organização que oferece suporte a provedores de reunião online, os administradores podem configurar calendários no Outlook para dar suporte a reuniões que utilizam estes provedores.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 7b668b6791655291dde71c4ef517c78a48c0fa8a
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 04c3104fa55087f8f848c8efc03af5627e49268e
+ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895100"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531499"
 ---
-# <a name="use-outlook-to-organize-or-attend-meetings-online"></a>Use o Outlook para organizar ou participar de reuniões online
+# <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>Habilitar um evento como reunião online no calendário do Outlook 
+
+Utilize a API de calendário do Outlook para organizar um evento em que os convidados da reunião possam clicar em um URL de ingresso e participar da reunião online no Microsoft Teams ou no Skype.
 
 Em uma organização compatível com provedores de reuniões online, os administradores podem configurar os calendários do Outlook para oferecer suporte a reuniões que usam esses provedores, sendo um desses provedores o provedor padrão. Você pode [criar](#create-and-enable-a-meeting-online) ou [atualizar](#update-a-meeting-to-enable-it-online) um [evento](/graph/api/resources/event) no Outlook e permitir que os participantes ingressem na reunião online usando um provedor com suporte. Você pode facilmente [obter as informações da reunião online](#get-information-to-join-meeting-online) do **evento**, incluindo a URL para participar da reunião. 
+
+> **Observe** A API de calendário permite que você configure convenientemente uma reunião on-line em um calendário no Outlook, onde os participantes podem clicar para ingressar na reunião e continuar sua experiência no Teams ou no Skype. Para uma integração mais personalizada e rica com o Teams ou o Skype, use a API de comunicações em nuvem. Consulte [Escolha uma API no Microsoft Graph para criar e participar de reuniões online](choose-online-meeting-api.md) para obter mais informações.
 
 ## <a name="calendars-and-online-meeting-providers"></a>Calendários e provedores de reuniões online
 
 Uma organização compatível com qualquer um dos seguintes provedores de reuniões online pode configurar os calendários do Outlook e habilitar a organização de reuniões online:
 
-- Microsoft Teams, adquirido como parte de um pacote Microsoft 365 Business ou Enterprise
+- O Microsoft Teams foi adquirido como parte do conjunto Microsoft 365 business ou enterprise
 - Skype
-- Skype for Business
+- O Skype for Business (está sendo [substituído pelo Microsoft Teams](https://www.microsoft.com/microsoft-365/previous-versions/skype-for-business-online?OCID=AID2100233_SEM_XM02XAAAAIUvHAuF:20200730151407:s&msclkid=19b7c6af2c5c1bcea7d9998c06585710&ef_id=XM02XAAAAIUvHAuF:20200730151407:s))
 
 Procure as propriedades **allowedOnlineMeetingProviders** e **defaultOnlineMeetingProvider** para verificar se um [calendário](/graph/api/resources/calendar) do Outlook é compatível com os provedores de reuniões online. O exemplo a seguir mostra que o calendário padrão do usuário conectado é compatível com dois provedores, Microsoft Teams e Skype for Business, e usa o Microsoft Teams como o provedor de reuniões online padrão. 
 
@@ -473,9 +477,9 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 - Para obter informações sobre a interoperabilidade do Microsoft Teams com o Microsoft 365, consulte:
-  - [Como o Exchange e o Microsoft Teams interagem](/microsoftteams/exchange-teams-interact)
-  - [Definir suas configurações de coexistência e atualização](/microsoftteams/setting-your-coexistence-and-upgrade-settings)
-- [Escolher uma API no Microsoft Graph para criar e ingressar em reuniões online](choose-online-meeting-api.md)
+  - [Como interagemo o Exchange e o Microsoft Teams](/microsoftteams/exchange-teams-interact)
+  - [Defina suas configurações de coexistência e atualização](/microsoftteams/setting-your-coexistence-and-upgrade-settings)
+- [Escolha uma API do Microsoft Graph para criar e participar de reuniões online](choose-online-meeting-api.md)
 - [Encontrar possíveis horários de reunião no calendário do Outlook](findmeetingtimes-example.md)
 - [Obter informações de disponibilidade de usuários e recursos](outlook-get-free-busy-schedule.md)
 - [Propor horários de reunião em um calendário do Outlook (versão prévia)](outlook-calendar-meeting-proposals.md)
