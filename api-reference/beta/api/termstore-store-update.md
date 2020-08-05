@@ -5,30 +5,30 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: cf0c8dfb1eb5915e1a5c7b2b2538959b21cbe0d3
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 50a41ab87d3f105eeec04ced231ca8c3aa7e3bee
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539144"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46565784"
 ---
-# <a name="update-store"></a><span data-ttu-id="1950d-103">Atualizar repositório</span><span class="sxs-lookup"><span data-stu-id="1950d-103">Update store</span></span>
-<span data-ttu-id="1950d-104">Namespace: Microsoft. Graph. termos</span><span class="sxs-lookup"><span data-stu-id="1950d-104">Namespace: microsoft.graph.termStore</span></span>
+# <a name="update-store"></a><span data-ttu-id="4fffe-103">Atualizar repositório</span><span class="sxs-lookup"><span data-stu-id="4fffe-103">Update store</span></span>
+<span data-ttu-id="4fffe-104">Namespace: Microsoft. Graph. termos</span><span class="sxs-lookup"><span data-stu-id="4fffe-104">Namespace: microsoft.graph.termStore</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1950d-105">Atualiza as propriedades de um objeto [Store](../resources/termstore-store.md) .</span><span class="sxs-lookup"><span data-stu-id="1950d-105">Update the properties of a [store](../resources/termstore-store.md) object.</span></span>
+<span data-ttu-id="4fffe-105">Atualiza as propriedades de um objeto [Store](../resources/termstore-store.md) .</span><span class="sxs-lookup"><span data-stu-id="4fffe-105">Update the properties of a [store](../resources/termstore-store.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1950d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="1950d-106">Permissions</span></span>
-<span data-ttu-id="1950d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1950d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4fffe-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4fffe-106">Permissions</span></span>
+<span data-ttu-id="4fffe-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4fffe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1950d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1950d-109">Permission type</span></span>|<span data-ttu-id="1950d-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="1950d-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="4fffe-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4fffe-109">Permission type</span></span>|<span data-ttu-id="4fffe-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="4fffe-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1950d-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1950d-111">Delegated (work or school account)</span></span> |<span data-ttu-id="1950d-112">TermStore.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1950d-112">TermStore.ReadWrite.All</span></span> |
-|<span data-ttu-id="1950d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1950d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1950d-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1950d-114">Not supported.</span></span>    |
-|<span data-ttu-id="1950d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1950d-115">Application</span></span> | <span data-ttu-id="1950d-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1950d-116">Not supported.</span></span> |
+|<span data-ttu-id="4fffe-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4fffe-111">Delegated (work or school account)</span></span> |<span data-ttu-id="4fffe-112">TermStore.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4fffe-112">TermStore.ReadWrite.All</span></span> |
+|<span data-ttu-id="4fffe-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4fffe-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4fffe-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4fffe-114">Not supported.</span></span>    |
+|<span data-ttu-id="4fffe-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4fffe-115">Application</span></span> | <span data-ttu-id="4fffe-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4fffe-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1950d-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1950d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4fffe-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4fffe-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -38,31 +38,33 @@ ms.locfileid: "46539144"
 PATCH /termStore
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1950d-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1950d-118">Request headers</span></span>
-|<span data-ttu-id="1950d-119">Nome</span><span class="sxs-lookup"><span data-stu-id="1950d-119">Name</span></span>|<span data-ttu-id="1950d-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="1950d-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4fffe-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4fffe-118">Request headers</span></span>
+|<span data-ttu-id="4fffe-119">Nome</span><span class="sxs-lookup"><span data-stu-id="4fffe-119">Name</span></span>|<span data-ttu-id="4fffe-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="4fffe-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="1950d-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="1950d-121">Authorization</span></span>|<span data-ttu-id="1950d-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1950d-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="1950d-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1950d-124">Content-Type</span></span>|<span data-ttu-id="1950d-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1950d-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="4fffe-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="4fffe-121">Authorization</span></span>|<span data-ttu-id="4fffe-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4fffe-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="4fffe-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4fffe-124">Content-Type</span></span>|<span data-ttu-id="4fffe-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4fffe-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1950d-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1950d-127">Request body</span></span>
-<span data-ttu-id="1950d-128">No corpo da solicitação, forneça uma representação JSON do objeto [Store](../resources/termstore-store.md) .</span><span class="sxs-lookup"><span data-stu-id="1950d-128">In the request body, supply a JSON representation of the [store](../resources/termstore-store.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4fffe-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4fffe-127">Request body</span></span>
+<span data-ttu-id="4fffe-128">No corpo da solicitação, forneça uma representação JSON do objeto [Store](../resources/termstore-store.md) .</span><span class="sxs-lookup"><span data-stu-id="4fffe-128">In the request body, supply a JSON representation of the [store](../resources/termstore-store.md) object.</span></span>
 
-<span data-ttu-id="1950d-129">A tabela a seguir mostra as propriedades que podem ser editadas para o [repositório](../resources/termstore-store.md).</span><span class="sxs-lookup"><span data-stu-id="1950d-129">The following table shows the properties that can be edited for the [store](../resources/termstore-store.md).</span></span>
+<span data-ttu-id="4fffe-129">A tabela a seguir mostra as propriedades que podem ser editadas para o [repositório](../resources/termstore-store.md).</span><span class="sxs-lookup"><span data-stu-id="4fffe-129">The following table shows the properties that can be edited for the [store](../resources/termstore-store.md).</span></span>
 
-|<span data-ttu-id="1950d-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1950d-130">Property</span></span>|<span data-ttu-id="1950d-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="1950d-131">Type</span></span>|<span data-ttu-id="1950d-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="1950d-132">Description</span></span>|
+|<span data-ttu-id="4fffe-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4fffe-130">Property</span></span>|<span data-ttu-id="4fffe-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="4fffe-131">Type</span></span>|<span data-ttu-id="4fffe-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="4fffe-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1950d-133">defaultLanguageTag</span><span class="sxs-lookup"><span data-stu-id="1950d-133">defaultLanguageTag</span></span>|<span data-ttu-id="1950d-134">Cadeia de Caracteres</span><span class="sxs-lookup"><span data-stu-id="1950d-134">String</span></span>|<span data-ttu-id="1950d-135">Idioma padrão do [Microsoft. Graph. termos. Store](../resources/termstore-store.md)</span><span class="sxs-lookup"><span data-stu-id="1950d-135">Default language of the [microsoft.graph.termstore.store](../resources/termstore-store.md)</span></span>|
-|<span data-ttu-id="1950d-136">languageTags</span><span class="sxs-lookup"><span data-stu-id="1950d-136">languageTags</span></span>|<span data-ttu-id="1950d-137">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="1950d-137">String collection</span></span>|<span data-ttu-id="1950d-138">Idiomas disponíveis no [Microsoft. Graph. termos. Store](../resources/termstore-store.md)</span><span class="sxs-lookup"><span data-stu-id="1950d-138">Available languages in the [microsoft.graph.termstore.store](../resources/termstore-store.md)</span></span>|
+|<span data-ttu-id="4fffe-133">defaultLanguageTag</span><span class="sxs-lookup"><span data-stu-id="4fffe-133">defaultLanguageTag</span></span>|<span data-ttu-id="4fffe-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="4fffe-134">String</span></span>|<span data-ttu-id="4fffe-135">Idioma padrão do [Microsoft. Graph. termos. Store](../resources/termstore-store.md)</span><span class="sxs-lookup"><span data-stu-id="4fffe-135">Default language of the [microsoft.graph.termstore.store](../resources/termstore-store.md)</span></span>|
+|<span data-ttu-id="4fffe-136">languageTags</span><span class="sxs-lookup"><span data-stu-id="4fffe-136">languageTags</span></span>|<span data-ttu-id="4fffe-137">Conjunto de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="4fffe-137">String collection</span></span>|<span data-ttu-id="4fffe-138">Idiomas disponíveis no [Microsoft. Graph. termos. Store](../resources/termstore-store.md)</span><span class="sxs-lookup"><span data-stu-id="4fffe-138">Available languages in the [microsoft.graph.termstore.store](../resources/termstore-store.md)</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="1950d-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="1950d-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4fffe-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="4fffe-139">Response</span></span>
 
-<span data-ttu-id="1950d-140">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Store](../resources/termstore-store.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1950d-140">If successful, this method returns a `200 OK` response code and an updated [store](../resources/termstore-store.md) object in the response body.</span></span>
+<span data-ttu-id="4fffe-140">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Store](../resources/termstore-store.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4fffe-140">If successful, this method returns a `200 OK` response code and an updated [store](../resources/termstore-store.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="1950d-141">Exemplos</span><span class="sxs-lookup"><span data-stu-id="1950d-141">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="4fffe-141">Exemplos</span><span class="sxs-lookup"><span data-stu-id="4fffe-141">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="1950d-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1950d-142">Request</span></span>
+### <a name="request"></a><span data-ttu-id="4fffe-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4fffe-142">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="4fffe-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="4fffe-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_store"
@@ -77,10 +79,20 @@ Content-length: 133
   "defaultLanguageTag": "en-US"
 }
 ```
+# <a name="javascript"></a>[<span data-ttu-id="4fffe-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4fffe-144">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-store-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="4fffe-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4fffe-145">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-store-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-### <a name="response"></a><span data-ttu-id="1950d-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="1950d-143">Response</span></span>
-<span data-ttu-id="1950d-144">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="1950d-144">**Note:** The response object shown here might be shortened for readability.</span></span>
+
+### <a name="response"></a><span data-ttu-id="4fffe-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="4fffe-146">Response</span></span>
+<span data-ttu-id="4fffe-147">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="4fffe-147">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
