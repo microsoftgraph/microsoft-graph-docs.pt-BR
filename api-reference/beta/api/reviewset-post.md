@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: c16ef3c9e325e3c144cdec532cc81e6e31623138
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 5220140589758b20285d738a4d60eadfd80defe1
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509956"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566239"
 ---
 # <a name="create-reviewset"></a>Criar reviewset
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça a representação JSON do [reviewset](../res
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| displayName  | cadeia de caracteres      | O nome do conjunto de revisão. |
+| displayName  | string      | O nome do conjunto de revisão. |
 
 ## <a name="response"></a>Resposta
 
@@ -59,6 +59,8 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta e 
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_reviewset"
@@ -72,6 +74,20 @@ Content-type: application/json
   "displayName": "My Reviewset 3",
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-reviewset-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-reviewset-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-reviewset-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

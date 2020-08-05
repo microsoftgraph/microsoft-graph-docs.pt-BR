@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 0bc59ac1fd61695952aeb64a2cfe081597901dff
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: c247743db82687285d6811d15f86e011cb434a53
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509925"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566941"
 ---
 # <a name="create-ediscoverycase"></a>Criar ediscoveryCase
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [edisc
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| displayName  | cadeia de caracteres      | O nome da ocorrência de descoberta eletrônica. |
+| displayName  | string      | O nome da ocorrência de descoberta eletrônica. |
 
 ## <a name="response"></a>Resposta
 
@@ -59,6 +59,8 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta e 
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_ediscoverycase"
@@ -72,6 +74,20 @@ Content-type: application/json
     "displayName": "My Case 1",
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-ediscoverycase-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-ediscoverycase-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-ediscoverycase-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

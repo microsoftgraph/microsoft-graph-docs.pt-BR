@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a0b64166b6d7c95f3ad4995321b50b2c4aaadda9
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: Auto
+ms.openlocfilehash: f9a9f89ff7350f4b76641a2a6f3cfb9f7f97679b
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081058"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566353"
 ---
 # <a name="printer-create"></a>impressora: criar
 
@@ -47,13 +47,13 @@ No corpo da solicitação, forneça um objeto JSON com as propriedades a seguir.
 
 | Parâmetro      | Tipo    |Descrição| Obrigatório? |
 |:---------------|:--------|:----------|:----------|
-|displayName|String|O nome de exibição a ser atribuído à impressora.|Sim|
+|displayName|Cadeia de caracteres|O nome de exibição a ser atribuído à impressora.|Sim|
 |fabricante|String|O fabricante da impressora.|Sim|
-|modelo|String|O modelo da impressora.|Sim|
-|physicalDeviceId|String|O UUID do dispositivo físico da impressora. Obrigatório se a `hasPhysicalDevice` propriedade for true.|Não|
-|hasPhysicalDevice|Booliano|True se a impressora tem dispositivo de saída físico; caso contrário, false. Se for omitido, o valor padrão será true.|Não|
+|modelo|Cadeia de caracteres|O modelo da impressora.|Sim|
+|physicalDeviceId|Cadeia de caracteres|O UUID do dispositivo físico da impressora. Obrigatório se a `hasPhysicalDevice` propriedade for true.|Não|
+|hasPhysicalDevice|Boolean|True se a impressora tem dispositivo de saída físico; caso contrário, false. Se for omitido, o valor padrão será true.|Não|
 |certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|A solicitação de assinatura de certificado (CSR) do X. 509 para o certificado criado e usado pela impressora para identificar-se.|Sim|
-|connectorid|String|ID do conector que atua como proxy para a impressora.|Não|
+|connectorid|Cadeia de caracteres|ID do conector que atua como proxy para a impressora.|Não|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `202 Accepted` código de resposta e um link para o [printerCreateOperation](../resources/printercreateoperation.md) associado no `Operation-Location` cabeçalho.
@@ -90,6 +90,14 @@ Content-length: 319
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-printer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

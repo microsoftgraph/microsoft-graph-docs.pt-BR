@@ -1,18 +1,18 @@
 ---
-title: Listar taskTriggers
+title: List taskTriggers
 description: Recupere uma lista de disparadores de tarefas associados à impressora.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1278e84070bc78c6fb0ead350bd464e8a102ea98
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: 189830fb76de676163a24a8166cff6017cceffc5
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091551"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46565889"
 ---
-# <a name="list-tasktriggers"></a>Listar taskTriggers
+# <a name="list-tasktriggers"></a>List taskTriggers
 
 Namespace: microsoft.graph
 
@@ -40,7 +40,7 @@ GET /print/printers/{id}/taskTriggers
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ### <a name="exceptions"></a>Exceptions
 Não há suporte para alguns operadores: `$count` ,,,, `$format` `$search` `$select` `$skip` , `$top` .
@@ -58,6 +58,8 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e uma c
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printer_tasktriggers"
@@ -65,6 +67,20 @@ Este é um exemplo de solicitação.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/{id}/taskTriggers
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-printer-tasktriggers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-printer-tasktriggers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-printer-tasktriggers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

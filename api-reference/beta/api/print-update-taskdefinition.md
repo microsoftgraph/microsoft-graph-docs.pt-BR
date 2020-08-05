@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c0f0140b23291b77a5c00ff42b209f1f2af89a67
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: 60c8c53cc28724a7b36e00d1b1695288356cb343
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091553"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566381"
 ---
 # <a name="update-taskdefinition"></a>Atualizar taskDefinition
 
@@ -50,8 +50,8 @@ No corpo da solicitação, forneça os valores para os campos [printTaskDefiniti
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|O nome do printTaskDefinition.|
-|createdBy|String|Informações sobre o aplicativo que criou a definição de tarefa. Somente a `createdBy.displayName` propriedade pode ser atualizada.|
+|displayName|Cadeia de caracteres|O nome do printTaskDefinition.|
+|createdBy|Cadeia de caracteres|Informações sobre o aplicativo que criou a definição de tarefa. Somente a `createdBy.displayName` propriedade pode ser atualizada.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
@@ -59,6 +59,8 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "print_update_taskdefinition"
@@ -75,6 +77,20 @@ Content-length: 122
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/print-update-taskdefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/print-update-taskdefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/print-update-taskdefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
