@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 70f84d67f9406af7823b6d4230692eb5701a8da0
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: a3c840c973eb41db23b6d0da5c6799651541087e
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44685001"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46569946"
 ---
 ```csharp
 
@@ -15,9 +15,9 @@ var agreement = new Agreement
 {
     DisplayName = "MSGraph Sample",
     IsViewingBeforeAcceptanceRequired = true,
-    Files = (IAgreementFilesCollectionPage)new List<AgreementFile>()
+    Files = (IAgreementFilesCollectionPage)new List<AgreementFileLocalization>()
     {
-        new AgreementFile
+        new AgreementFileLocalization
         {
             FileName = "TOU.pdf",
             Language = "en",
