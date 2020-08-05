@@ -4,12 +4,12 @@ description: Em uma organização que oferece suporte a provedores de reunião o
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 04c3104fa55087f8f848c8efc03af5627e49268e
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: 03c628cd87ef9a6905898fdbc11dded437f4b8cc
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531499"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46567422"
 ---
 # <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>Habilitar um evento como reunião online no calendário do Outlook 
 
@@ -25,7 +25,7 @@ Uma organização compatível com qualquer um dos seguintes provedores de reuni�
 
 - O Microsoft Teams foi adquirido como parte do conjunto Microsoft 365 business ou enterprise
 - Skype
-- O Skype for Business (está sendo [substituído pelo Microsoft Teams](https://www.microsoft.com/microsoft-365/previous-versions/skype-for-business-online?OCID=AID2100233_SEM_XM02XAAAAIUvHAuF:20200730151407:s&msclkid=19b7c6af2c5c1bcea7d9998c06585710&ef_id=XM02XAAAAIUvHAuF:20200730151407:s))
+- O Skype for Business (está sendo [substituído pelo Microsoft Teams](https://www.microsoft.com/microsoft-365/previous-versions/skype-for-business-online))
 
 Procure as propriedades **allowedOnlineMeetingProviders** e **defaultOnlineMeetingProvider** para verificar se um [calendário](/graph/api/resources/calendar) do Outlook é compatível com os provedores de reuniões online. O exemplo a seguir mostra que o calendário padrão do usuário conectado é compatível com dois provedores, Microsoft Teams e Skype for Business, e usa o Microsoft Teams como o provedor de reuniões online padrão. 
 
