@@ -5,30 +5,30 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 48a28d0aa32d8abc23f0c731a0ca4cb89d774e34
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 9687fc1a14b5b048015c70a9146800f8b5ca422e
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384425"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46567268"
 ---
-# <a name="get-identitysecuritydefaultsenforcementpolicy"></a><span data-ttu-id="d7339-103">Obter identitySecurityDefaultsEnforcementPolicy</span><span class="sxs-lookup"><span data-stu-id="d7339-103">Get identitySecurityDefaultsEnforcementPolicy</span></span>
+# <a name="get-identitysecuritydefaultsenforcementpolicy"></a><span data-ttu-id="6c86f-103">Obter identitySecurityDefaultsEnforcementPolicy</span><span class="sxs-lookup"><span data-stu-id="6c86f-103">Get identitySecurityDefaultsEnforcementPolicy</span></span>
 
-<span data-ttu-id="d7339-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d7339-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6c86f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6c86f-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="d7339-105">Recupere as propriedades de um objeto [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="d7339-105">Retrieve the properties of an [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) object.</span></span>
+<span data-ttu-id="6c86f-105">Recupere as propriedades de um objeto [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="6c86f-105">Retrieve the properties of an [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d7339-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="d7339-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6c86f-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="6c86f-106">Permissions</span></span>
 
-<span data-ttu-id="d7339-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d7339-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6c86f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6c86f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d7339-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d7339-109">Permission type</span></span>                        | <span data-ttu-id="d7339-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d7339-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="6c86f-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6c86f-109">Permission type</span></span>                        | <span data-ttu-id="6c86f-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6c86f-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="d7339-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d7339-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="d7339-112">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="d7339-112">Policy.Read.All</span></span> |
-| <span data-ttu-id="d7339-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d7339-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d7339-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d7339-114">Not supported.</span></span> |
-| <span data-ttu-id="d7339-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d7339-115">Application</span></span>                            | <span data-ttu-id="d7339-116">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="d7339-116">Policy.Read.All</span></span> |
+| <span data-ttu-id="6c86f-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6c86f-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="6c86f-112">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="6c86f-112">Policy.Read.All</span></span> |
+| <span data-ttu-id="6c86f-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6c86f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6c86f-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6c86f-114">Not supported.</span></span> |
+| <span data-ttu-id="6c86f-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6c86f-115">Application</span></span>                            | <span data-ttu-id="6c86f-116">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="6c86f-116">Policy.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d7339-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d7339-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6c86f-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6c86f-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,44 +36,64 @@ ms.locfileid: "45384425"
 GET /policies/identitySecurityDefaultsEnforcementPolicy
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="d7339-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d7339-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="6c86f-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="6c86f-118">Optional query parameters</span></span>
 
-<span data-ttu-id="d7339-119">Este método oferece suporte ao `select` parâmetro de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d7339-119">This method supports the `select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="d7339-120">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="d7339-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="6c86f-119">Este método oferece suporte ao `select` parâmetro de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="6c86f-119">This method supports the `select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="6c86f-120">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="6c86f-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d7339-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d7339-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6c86f-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6c86f-121">Request headers</span></span>
 
-| <span data-ttu-id="d7339-122">Nome</span><span class="sxs-lookup"><span data-stu-id="d7339-122">Name</span></span>      |<span data-ttu-id="d7339-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="d7339-123">Description</span></span>|
+| <span data-ttu-id="6c86f-122">Nome</span><span class="sxs-lookup"><span data-stu-id="6c86f-122">Name</span></span>      |<span data-ttu-id="6c86f-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="6c86f-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="d7339-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="d7339-124">Authorization</span></span> | <span data-ttu-id="d7339-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d7339-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6c86f-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="6c86f-124">Authorization</span></span> | <span data-ttu-id="6c86f-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6c86f-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d7339-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d7339-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6c86f-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6c86f-127">Request body</span></span>
 
-<span data-ttu-id="d7339-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d7339-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="6c86f-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="6c86f-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d7339-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="d7339-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6c86f-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="6c86f-129">Response</span></span>
 
-<span data-ttu-id="d7339-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d7339-130">If successful, this method returns a `200 OK` response code and the requested [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) object in the response body.</span></span>
+<span data-ttu-id="6c86f-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6c86f-130">If successful, this method returns a `200 OK` response code and the requested [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="d7339-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="d7339-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="6c86f-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="6c86f-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="d7339-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d7339-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="6c86f-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6c86f-132">Request</span></span>
 
-<span data-ttu-id="d7339-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d7339-133">The following is an example of the request.</span></span>
+<span data-ttu-id="6c86f-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6c86f-133">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="6c86f-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="6c86f-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_identitysecuritydefaultsenforcementpolicy"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/identitySecurityDefaultsEnforcementPolicy
 ```
+# <a name="c"></a>[<span data-ttu-id="6c86f-135">C#</span><span class="sxs-lookup"><span data-stu-id="6c86f-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identitysecuritydefaultsenforcementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="d7339-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="d7339-134">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="6c86f-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6c86f-136">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identitysecuritydefaultsenforcementpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="d7339-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d7339-135">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="6c86f-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6c86f-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identitysecuritydefaultsenforcementpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="d7339-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d7339-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="6c86f-138">Java</span><span class="sxs-lookup"><span data-stu-id="6c86f-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identitysecuritydefaultsenforcementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="6c86f-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="6c86f-139">Response</span></span>
+
+<span data-ttu-id="6c86f-140">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6c86f-140">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="6c86f-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6c86f-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
