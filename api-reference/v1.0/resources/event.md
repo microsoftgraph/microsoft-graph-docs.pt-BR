@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0c48e7e5a0f6e075cbcd2a5042e7c9db21864a56
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: d0d39fd4ed4a905f66cc223b8832e42bbda676a4
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427267"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46565924"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Um evento em um calendário de [usuário](user.md) ou o calendário padrão de um [grupo](group.md) do Microsoft 365.
 
-O número máximo de participantes incluídos em um**evento**e o número máximo de destinatários em uma[eventMessage](eventmessage.md) enviada de uma caixa de correio no Exchange Online é 500. Para obter mais informações, veja [limites de envio](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
+O número máximo de participantes incluídos em um **evento **e o número máximo de destinatários em uma [eventMessage](eventmessage.md) enviada de uma caixa de correio do Exchange Online é 500. Para obter mais informações, veja [limites de envio](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 Esse recurso permite:
 
