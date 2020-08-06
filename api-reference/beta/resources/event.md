@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2f743bccb17b44ffd53b583532d5d503c2d5919c
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 93f86256e1e3a136bf9ea3f83bfd143614a96f62
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543370"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566155"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um evento em um calendário de [usuário](user.md) ou o calendário padrão de um [grupo](group.md) do Office 365.
+Um evento em um calendário de [usuário](user.md) ou o calendário padrão de um [grupo](group.md) do Microsoft 365.
 
-O número máximo de participantes incluídos em um**evento**e o número máximo de destinatários em uma[eventMessage](eventmessage.md) enviada de uma caixa de correio no Exchange Online é 500. Para obter mais informações, veja [limites de envio](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
+O número máximo de participantes incluídos em um **evento **e o número máximo de destinatários em uma [eventMessage](eventmessage.md) enviada de uma caixa de correio do Exchange Online é 500. Para obter mais informações, veja [limites de envio](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 Esse recurso permite:
 

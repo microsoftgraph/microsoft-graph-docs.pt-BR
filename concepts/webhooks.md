@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 317afc6fb5a5a7f19a9faae0e1a23183e5f7bbc7
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: 155d09ee373b52307fe4f22fbedee21ee40632d8
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531450"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46567226"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -143,6 +143,8 @@ A propriedade `resource` especifica o recurso que será monitorado para detectar
 Embora `clientState` não seja obrigatória, você deve incluí-la para manter a conformidade com nosso processo recomendado de manipulação de notificações de alterações. A definição desta propriedade permitirá confirmar se as notificações de alteração recebidas partiram do serviço do Microsoft Graph. Por esse motivo, o valor da propriedade deve continuar em segredo e deve ser conhecido somente por seu aplicativo e pelo serviço do Microsoft Graph.
 
 Se tiver êxito, o Microsoft Graph retornará um código `201 Created` e um objeto [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) no corpo.
+
+> **Observação:** todos os parâmetros de cadeia de caracteres de consulta incluídos na propriedade `notificationUrl` serão incluídos na solicitação de POST HTTP quando as notificações estiverem sendo entregues.
 
 #### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
 
