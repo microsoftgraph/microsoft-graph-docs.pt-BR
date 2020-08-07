@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 35759e9be3d2ea4aeade45f6e6b040a2b45f3be9
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: bfc1055b3e700b951957ffd1bce0fe7a541846b0
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183908"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589248"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
 
@@ -27,24 +27,25 @@ Contém informações sobre a reunião, incluindo a URL usada para ingressar em 
 | [Criar](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online. |
 | [Get](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e os relacionamentos de um objeto **onlineMeeting** . |
 | [Criar ou obter onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online com uma ID externa personalizada. Se a reunião já existir, recupere suas propriedades. |
-| [Update](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Atualizar as propriedades **StartDateTime**, **EndDateTime**, **Subject**e **participantes** de uma reunião online. |
+| [Atualizar](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Atualizar as propriedades **StartDateTime**, **EndDateTime**, **Subject**e **participantes** de uma reunião online. |
+| [Excluir](../api/onlinemeeting-delete.md) | Nenhuma | Excluir um recurso **onlineMeeting** . |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                  | Tipo                                                   | Descrição                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| autoAdmittedUsers         | Cadeia de caracteres                                                 | A configuração que especifica o tipo de participantes que será automaticamente permitido na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura.|
+| autoAdmittedUsers         | String                                                 | A configuração que especifica o tipo de participantes que será automaticamente permitido na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura.|
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | As informações de acesso de telefone (discagem) para uma reunião online. Apenas leitura. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | As informações de chat associadas a esta reunião online. |
 | creationDatetime          | DateTime                                               | O horário de criação da reunião em UTC. Somente leitura. |
 | startDateTime             | DateTime                                               | A hora de início da reunião em UTC. |
 | endDateTime               | DateTime                                               | A hora de término da reunião em UTC. |
 | id                        | String                                                 | A ID padrão associada à reunião online. Somente leitura. |
-| joinWebUrl                   | Cadeia de caracteres                                                 | A URL de ingresso da reunião online. Somente leitura.|
+| joinWebUrl                   | String                                                 | A URL de ingresso da reunião online. Somente leitura.|
 | participants              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
-| assunto                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
-| capabilities              | Conjunto de cadeias de caracteres                                      | A lista de recursos de reunião. Os valores possíveis são: `questionAndAnswer` . |
-| videoTeleconferenceId     | Cadeia de caracteres                                                 | A ID de teleconferência de vídeo. Somente leitura. |
+| assunto                   | String                                                 | O assunto da reunião online. |
+| capabilities              | Coleção de cadeias de caracteres                                      | A lista de recursos de reunião. Os valores possíveis são: `questionAndAnswer` . |
+| videoTeleconferenceId     | String                                                 | A ID de teleconferência de vídeo. Somente leitura. |
 | joinInformation | [itemBody](itembody.md) | As informações de ingresso no idioma e na variante de localidade especificados no cabeçalho HTTP da solicitação ' Accept-Language '. Somente leitura |
 | externalId                | Cadeia de caracteres                                                 | A ID externa. Uma ID personalizada. Opcional. |
 

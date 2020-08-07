@@ -2,12 +2,12 @@
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas.
 author: arpitha-dhanapathi
-ms.openlocfilehash: 4e9456bdc63ff8fea0f4751c2c3fb5fdc5274422
-ms.sourcegitcommit: 90aaba4e965945cb6550cf625cbc03287f39e531
+ms.openlocfilehash: 7693df9b66905c70ad0a75e88b5c9f605fe96857
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148506"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589260"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -79,7 +79,7 @@ Os seguintes recursos do Microsoft Graph geralmente estão disponíveis no `/v1.
 | Calendário do Outlook | ✔ | ✔ | ✔ |
 | Contatos pessoais | ✔ | ✔ | ✔ |
 | Segurança | ✔ | ✔ | ✔ |
-| Microsoft Office SharePoint Online| ✔ | ✔ | ✔ |
+| SharePoint| ✔ | ✔ | ✔ |
 | Teams | ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Relatórios  |➖| ✔ |➖|
@@ -87,7 +87,7 @@ Os seguintes recursos do Microsoft Graph geralmente estão disponíveis no `/v1.
 | Aplicativos  |✔| ➖ |➖|
 | Entidades de serviço  |✔| ➖ |➖|
 | Alterar notificações (Webhooks)  | ✔ |✔ |✔* |
-| Consulta delta | ➖ | ✔ | ➖ |
+| Consulta delta | ✔ | ✔ | ➖ |
 | Extensões de esquema de diretório |✔|➖|➖|
 | Extensões de tipo aberto|➖|➖|➖|
   

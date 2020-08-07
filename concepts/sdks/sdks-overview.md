@@ -4,12 +4,12 @@ description: Descreve os SDKs que estão disponíveis, as plataformas que eles d
 localization_priority: Normal
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c7be38ff3d79f9c8c1facd6a4da300af00870136
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: b839b9a7ae0a32a22c9d20a61c96d021137388e3
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895675"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589302"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Visão geral dos SDKs do Microsoft Graph
 
@@ -39,7 +39,7 @@ Os SDKs estão disponíveis atualmente para os seguintes idiomas e plataformas:
 
 ## <a name="microsoft-365-developer-subscription"></a>Assinatura do desenvolvedor do Microsoft 365
 
-Ao criar aplicativos usando o Microsoft Graph, recomendamos que você obtenha uma assinatura gratuita do desenvolvedor do Microsoft 365 inscrevendo-se no [programa de desenvolvedor do microsoft 365](https://aka.ms/OfficeDevProgram).
+Ao criar aplicativos usando o Microsoft Graph, recomendamos que você obtenha uma assinatura gratuita do desenvolvedor do Microsoft 365 inscrevendo-se no [programa de desenvolvedor do microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program).
 
 ## <a name="see-also"></a>Confira também
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2bd29ee6e2f78e8864bce6a09cac456c4ab5ce6a
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: a855289f058454c0e7ff1fb301349f9e49ee12e6
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429578"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589226"
 ---
 # <a name="create-phoneauthenticationmethod"></a>Criar phoneAuthenticationMethod
 
@@ -87,7 +87,7 @@ Content-type: application/json
 
 {
   "phoneNumber": "+1 2065555555",
-  "phoneType": "mobile",
+  "phoneType": "mobile"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
