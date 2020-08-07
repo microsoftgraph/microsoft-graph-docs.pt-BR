@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 155d09ee373b52307fe4f22fbedee21ee40632d8
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 6138f1ea8ebd293ab6cd34003c368ae0887bf5d2
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567226"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589148"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -89,11 +89,16 @@ Use:
 
 `/users/{guid-user-id}/messages`
 
-### <a name="teams-resource-limitations-preview"></a>Limitações de recursos do Teams (visualização)
+### <a name="teams-resource-limitations"></a>Limitações de recursos do Teams
 
-É permitida uma única assinatura ativa por canal ou chat por aplicativo.
+Cada recurso do Teams possui cotas de assinatura diferentes.
 
-É permitido um máximo de 10000 assinaturas ativas por organização em chats e canais para todos os aplicativos.
+- Para assinaturas do **callRecords**:
+  - Por organização: 100 assinaturas totais
+
+- Para assinaturas de **chatMessages** (canais ou chats) (visualização):
+  - Por combinação por aplicativo e canal ou por chat: uma assinatura
+  - Por organização: 10.000 assinaturas totais
 
 ## <a name="subscription-lifetime"></a>Tempo de vida da assinatura
 
@@ -270,6 +275,27 @@ Os exemplos de código a seguir estão disponíveis no GitHub.
 Opcionalmente, você pode configurar o firewall que protege a URL de notificação para permitir conexões de entrada somente pelo Microsoft Graph. Isso permite que você reduza ainda mais a exposição a notificações de alteração inválidas que são enviadas para sua URL de notificação. Essas notificações de alteração inválidas podem estar tentando desencadear a lógica personalizada que você implementou. Para obter uma lista completa de endereços IP usados pelo Microsoft Graph para oferecer notificações de alteração, confira [pontos de extremidade adicionais para Microsoft 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
 > **Observação:** Os endereços IP listados que são usados para fornecer notificações de alteração podem ser atualizados a qualquer momento sem aviso prévio.
+
+## <a name="latency"></a>Latência
+
+A tabela a seguir lista a latência esperada entre um evento acontecendo no serviço e a entrega da notificação de alteração.
+
+| Recurso | Latência média | Latência máxima |
+|:-----|:-----|:-----|
+|[callRecord][] | Menos de 15 minutos | 60 minutos |
+|[chatMessage][] (visualização) | Menos de 10 segundos | 1 minuto |
+|[contato][] | Desconhecido | Desconhecido |
+|[driveItem][] | Menos de 1 minuto | 5 minutos |
+|[evento][] | Desconhecido | Desconhecido |
+|[grupo][] | Menos de 2 minutos | 15 minutos |
+|[conversa][] | Desconhecido | Desconhecido |
+|[lista][] | Menos de 1 minuto | 5 minutos |
+|[mensagem][] | Desconhecido | Desconhecido |
+|[alerta][] | Menos de 3 minutos | 5 minutos |
+|[presença][] (pré-visualização) | Menos de 10 segundos | 1 minuto |
+|[usuário][] | Menos de 2 minutos | 15 minutos |
+
+>**Observação:** a latência fornecida para o recurso de **alerta** só será aplicável depois que o próprio alerta tiver sido criado. Não inclui o tempo necessário para uma regra criar um alerta a partir dos dados.
 
 ## <a name="see-also"></a>Confira também
 

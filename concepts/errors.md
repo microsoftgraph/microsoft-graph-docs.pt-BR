@@ -1,23 +1,15 @@
 ---
 title: Respostas de erros e tipos de recurso do Microsoft Graph
-description: "  "
+description: Este tópico descreve alguns dos erros que podem ser retornados nas respostas do Microsoft Graph.
 localization_priority: Priority
-ms.openlocfilehash: cc3a0a0acacd7477c1cf686089c0235850059443
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: 2af128f0c15942d5e9b025de8eecbf9af7f07117
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091421"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589274"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Respostas de erros e tipos de recurso do Microsoft Graph
-
-<!--In this article:
-  
--   [Status code](#msg-status-code)
--   [Error resource type](#msg-error-resource-type)
--   [Code property](#msg-code-property)
-
-<a name="msg_error_response"> </a> -->
 
 Os erros no Microsoft Graph serão retornados por meio de códigos de status HTTP padrão, bem como um objeto de resposta de erro JSON.
 
@@ -114,6 +106,7 @@ A propriedade `code` contém um dos valores possíveis a seguir. Seus aplicativo
 |:--------------------------|:--------------
 | **accessDenied**          | O chamador não tem permissão para executar a ação. 
 | **activityLimitReached**  | O aplicativo ou o usuário foi restringido.
+| **extensionError**        | A caixa de correio está localizada no local e o servidor do Exchange não dá suporte a solicitações federadas do Microsoft Graph, ou uma [política de aplicativo](/graph/auth-limit-mailbox-access) impede que o aplicativo acesse a caixa de correio.
 | **generalException**      | Ocorreu um erro não especificado.
 | **invalidRange**          | O intervalo de bytes especificado é inválido ou está indisponível.
 | **invalidRequest**        | A solicitação está incorreta ou foi mal formada.

@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8af7a4ce6c303e2ac07e4387ff3dbad38abd735e
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 71bb61a6bb2a72cc3e2cc4192e1a6d218ab4c3b4
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408089"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589176"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -48,31 +48,7 @@ Quando você implementa a manipulação de erro, use o código de erro HTTP 429 
 2. Repita a solicitação.
 3. Se a solicitação falhar novamente com um código de erro 429, você ainda estará limitado. Continue a usar o atraso `Retry-After` recomendado e repita a solicitação até obter êxito.
 
-Atualmente, os seguintes recursos oferecem atualmente um cabeçalho `Retry-After`:
-
-- [Usuário](/graph/api/resources/user?view=graph-rest-1.0)
-- [Foto](/graph/api/resources/profilephoto?view=graph-rest-1.0)
-- [Email](/graph/api/resources/message?view=graph-rest-1.0)
-- [Calendário (usuários e grupos)](/graph/api/resources/event?view=graph-rest-1.0)
-- [Contato](/graph/api/resources/contact?view=graph-rest-1.0)
-- [Anexo](/graph/api/resources/attachment?view=graph-rest-1.0)
-- [Conversas em grupo](/graph/api/resources/conversation?view=graph-rest-1.0)
-- [Pessoas e social](/graph/api/resources/social-overview?view=graph-rest-beta)
-- [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
-- [Item externo (Pesquisa da Microsoft)](/graph/api/resources/externalitem?view=graph-rest-beta)
-- [Relatório](/graph/api/resources/report)
-- [Assinatura](/graph/api/resources/subscription)
-- [Solicitação de avaliação de ameaças](/graph/api/resources/threatassessmentrequest)
-- [Solicitação de avaliação de email](/graph/api/resources/mailassessmentrequest)
-- [Solicitação de avaliação de arquivo de email](/graph/api/resources/emailfileassessmentrequest)
-- [Solicitação de avaliação de arquivo](/graph/api/resources/fileassessmentrequest)
-- [Solicitação de avaliação de URL](/graph/api/resources/urlassessmentrequest)
-- [Resultado da avaliação de ameaças](/graph/api/resources/threatassessmentresult)
-- [Tendência](/graph/api/resources/insights-trending)
-- [Percepção utilizada](/graph/api/resources/insights-used)
-- [Percepção compartilhada](/graph/api/resources/insights-shared)
-- [Configurações do usuário](/graph/api/resources/usersettings)
-- [Convite](/graph/api/resources/invitation)
+Todos os recursos e as APIs descritos na seção [limites específicos do serviço](#service-specific-limits) fornecem um `Retry-After`cabeçalho, exceto sob ressalva.
 
 Para uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -116,6 +92,14 @@ Os limites de serviço do Outlook são avaliados para cada combinação de ID de
 #### <a name="outlook-service-resources"></a>Recursos de serviço do Outlook
 
 Os recursos a seguir são fornecidos pelo serviço do Outlook.
+
+##### <a name="search-api-resources-preview"></a>Pesquisar recursos da API (visualização)
+
+- [Item externo (Pesquisa da Microsoft)](/graph/api/resources/externalitem?view=graph-rest-beta)
+
+##### <a name="profile-api-resources"></a>Recursos da API de perfil
+
+- [Foto](/graph/api/resources/profilephoto?view=graph-rest-1.0)
 
 ##### <a name="calendar-api-resources"></a>Recursos da API do calendário
 
@@ -212,6 +196,9 @@ Um máximo 3.000 mensagens por aplicativo por dia podem ser enviadas para um det
 
 Confira também [limites do Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) e [requisitos de votação](/graph/api/resources/teams-api-overview#polling-requirements).
 
+Os limites anteriores se aplicam aos seguintes recursos:  
+aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessage, chatMessageHostedContent, conversationMember, offerShiftRequest, openShift, openShiftChangeRequest, schedule, scheduleChangeRequest, schedulingGroup, shift, shiftPreferences, swapShiftsChangeRequest, team, teamsApp, teamsAppDefinition, teamsAppInstallation, teamsAsyncOperation, teamsTab, teamsTemplate, teamwork, timeOff, timeOffReason, timeOffRequest, userSettings, workforceIntegration.
+
 ### <a name="information-protection"></a>Proteção de informações
 
 Os seguintes limites se aplicam a qualquer solicitação no `/informationProtection`.
@@ -243,6 +230,9 @@ Os seguintes limites se aplicam a qualquer pedido em `me/insights` ou `users/{id
 | 10.000 solicitações de API em um período de 10 minutos                  | pontos de extremidade v1.0 e beta |
 | 4 solicitações simultâneas                                      | v1.0 e pontos finais beta   |
 
+Os limites anteriores se aplicam aos seguintes recursos:  
+pessoas, tendências, usedinsight, sharedInsight.
+
 ### <a name="microsoft-graph-reports-service-limits"></a>Limites do serviço de relatórios do Microsoft Graph
 
 Os seguintes limites se aplicam a qualquer solicitação no `/reports`.
@@ -252,7 +242,9 @@ Os seguintes limites se aplicam a qualquer solicitação no `/reports`.
 | Qualquer pedido (CSV)         | 14 solicitações a cada 10 minutos   | 40 solicitações a cada 10 minutos |
 | Qualquer solicitação (JSON, beta)  | 100 solicitações a cada 10 minutos  | n/d                        |
 
-Os limites anteriores aplicam-se individualmente a cada relatório de API. Por exemplo, uma solicitação de relatório da API do usuário da Microsoft Teams e uma solicitação de relatório da API do usuário do Outlook dentro de 10 minutos contará como 1 solicitação de 14 para cada API e não 2 solicitações de 14 para ambas.
+Os limites anteriores aplicam-se individualmente a cada relatório de API. Por exemplo, uma solicitação da API do relatório de atividades do usuário do Microsoft Teams e uma solicitação de relatório da API do usuário do Outlook dentro de 10 minutos contará como uma solicitação entre 14 para cada API e não duas solicitações entre 14 para ambas.
+
+Os limites anteriores se aplicam aos seguintes recursos de **relatório**.  
 
 ### <a name="invitation-manager-service-limits"></a>Limites de serviço do gerenciador de convite
 

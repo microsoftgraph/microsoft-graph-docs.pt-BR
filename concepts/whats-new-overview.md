@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: fb555f40b448f50cf1e0a2a548b37ac5c32cfeab
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 85c3a540c6aa2f0c7f3b00bf86a3e727997743b3
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524349"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589141"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -18,8 +18,11 @@ Veja os destaques das recentes novidades do Microsoft Graph, [o que foi adiciona
 > Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status DG. Não use os recursos de visualização em aplicativos de produção.
 
 ## <a name="july-2020-new-and-generally-available"></a>Julho de 2020: novos e disponíveis para o público em geral
-      
-### <a name="change-notifications"></a>Notificações de alterações
+
+### <a name="calendar"></a>Calendário
+GA do recurso que permite aos organizadores permitir propostas de horário alternativo para reuniões ou convites para [propor novos horários para uma reunião](outlook-calendar-meeting-proposals.md) quando eles [aceitarem provisoriamente](/graph/api/event-tentativelyaccept?view=graph-rest-1.0) ou [recusarem](/graph/api/event-decline?view=graph-rest-1.0) um evento.
+
+### <a name="change-notifications"></a>Notificações de alteração
 Removida do recurso [changeNotification](/graph/api/resources/changenotification) a propriedade **sequenceNumber** introduzida erroneamente.
 
 ### <a name="groups"></a>Grupos
@@ -43,7 +46,16 @@ Use as permissões delegadas de `TeamsAppInstallation.ReadForTeam` ou `TeamsAppI
 ## <a name="july-2020-new-in-preview-only"></a>Julho de 2020: novos apenas na visualização
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
-Inscreva-se para receber notificações sobre alterações na disponibilidade de um usuário do Microsoft Teams, conforme representado pelo recurso [presence](/graph/api/resources/presence?view=graph-rest-beta).
+- Use a operação [atualizar](/graph/api/onlinemeeting-update?view=graph-rest-beta) para atualizar **startDateTime**, **endDateTime**, **participantes**, ou propriedade de **assunto**de uma [reunião online](/graph/api/resources/onlinemeeting?view=graph-rest-beta).
+- Inscreva-se para receber notificações sobre alterações na disponibilidade de um usuário do Microsoft Teams, conforme representado pelo recurso [presence](/graph/api/resources/presence?view=graph-rest-beta).
+
+### <a name="cloud-communications--call-records"></a>Comunicação em nuvem | Gravação
+- [Obtenha](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) os registros de chamadas da rede pública de telefonia comutada (PSTN).
+- [Obtenha](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) os registros de chamadas de roteamento direto.
+
+### <a name="compliance--ediscovery"></a>Conformidade | Descoberta eletrônica
+Estréia dos [Casos de descoberta eletrônica](/graph/api/resources/ediscoverycase?view=graph-rest-beta) que podem conter responsáveis, bloqueios, coleções, conjuntos de revisão, e exportações que podem ser usados como evidência em casos jurídicos.
+Os aplicativos agora podem [consultar](/graph/api/resources/reviewsetquery?view=graph-rest-beta) e [revisar o conjunto de dados](/graph/api/resources/reviewset?view=graph-rest-beta) coletado para uso em litígio, investigação ou solicitação regulatória. Esse estreia faz parte da [Descoberta Eletrônica Avançada](/microsoft-365/compliance/overview-ediscovery-20?view=o365-worldwide)do Microsoft 365.
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 - Use as permissões do aplicativo `Printer.ReadWrite.All` e a [codificação do IPP (Protocolo de Impressão via Internet)](https://tools.ietf.org/html/rfc8010) para [atualizar uma impressora ](/graph/api/printer-update?view=graph-rest-beta).
@@ -54,6 +66,9 @@ Inscreva-se para receber notificações sobre alterações na disponibilidade de
 ### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
 Atualizações do Intune em [julho](changelog.md#july-2020) em beta.
 
+### <a name="groups"></a>Grupos
+Use a propriedade **isAssignableToRole** de um [grupo](/graph/api/resources/group?view=graph-rest-beta) do Microsoft 365 e a defina durante a criação de um grupo para indicar se ele pode ser atribuído a uma função do Azure AD. Isso [ajuda a gerenciar as atribuições de função no Azure AD](/azure/active-directory/users-groups-roles/roles-groups-concept), de modo que, em vez de atribuir um usuário individual a uma função do Azure AD, um administrador global ou um administrador de funções privilegiadas pode criar um grupo do Microsoft 365 e atribuir o grupo a essa função, para que quando os usuários se unam ao _grupo_, eles recebam a função pretendida indiretamente.
+
 ### <a name="identity-and-access"></a>Identidade e acesso
 - [Adquira um token de acesso](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) para autorizar o serviço de provisionamento do Azure AD para provisionar usuários em um aplicativo.
 - [Obtenha](/graph/api/entitlementmanagementsettings-get?view=graph-rest-beta) ou [atualize](/graph/api/entitlementmanagementsettings-update?view=graph-rest-beta) as configurações de gerenciamento de qualificação que controlam o acesso a grupos, aplicativos e sites do SharePoint Online para usuários internos e externos à sua organização. 
@@ -61,20 +76,21 @@ Atualizações do Intune em [julho](changelog.md#july-2020) em beta.
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 - Inclua os níveis de risco do usuário (`low`, `medium`, `high`, `none`) como consideração para aplicar uma [política de acesso condicional](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
 - [Use a alteração de senha como um controle Grant](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta#special-considerations-when-using-passwordchange-as-a-control) para passar uma política de acesso condicional.
+- Use um [provedor de conexão de ID aberta](/graph/api/resources/openidconnectprovider?view=graph-rest-beta) (ODIC) como um provedor de identidade em um locatário do Azure AD e um locatário do Azure AD B2C. Sua propriedade **claimsMapping** permite que o Azure AD [mapeie as declarações](/graph/api/resources/claimsmapping?view=graph-rest-beta) de um provedor OIDC para as declarações que o Azure AD reconhece e usa.
 
-### <a name="people-and-workplace-intelligence--insights"></a>Inteligência de pessoas e do ambiente de trabalho | Ideias
+### <a name="people-and-workplace-intelligence--insights"></a>Inteligência social e do ambiente de trabalho | Ideias
 Use mais o [controle de privacidade granular](insights-customize-item-insights-privacy.md) sobre a disponibilidade e a exibição das [informações do item](/graph/api/resources/iteminsights?view=graph-rest-beta) no Microsoft 365. Essas informações representam as relações entre um usuário e documentos no OneDrive for Business, calculadas usando uma análise avançada e técnicas de aprendizado de máquina. 
 
 ### <a name="people-and-workplace-intelligence--profile-card-customization"></a>Inteligência de pessoas e local de trabalho | Personalização de cartão de perfil
 Os administradores podem [personalizar as propriedades expostas no cartão de perfil de suas organizações](add-properties-profilecard.md) usando a API para [propriedade de cartão de perfil](/graph/api/resources/profilecardproperty?view=graph-rest-beta).
 
+### <a name="sites-and-lists"></a>Sites e listas
+Acesse a taxonomia do [repositório de termos](/graph/api/resources/termstore-store?view=graph-rest-beta) a hierarquia que consite em recursos de [grupo](/graph/api/resources/termstore-group?view=graph-rest-beta), [definição](/graph/api/resources/termstore-set?view=graph-rest-beta), e [termo](/graph/api/resources/termstore-term?view=graph-rest-beta), e [relacione](/graph/api/resources/termstore-relation?view=graph-rest-beta) recursos entre os termos.
+
 ### <a name="workbooks-and-charts"></a>Pastas de trabalho e gráficos
 [Obtenha o status e todos os resultados](/graph/api/workbookoperation-get?view=graph-rest-beta) de uma operação [de longa execução](/graph/api/resources/workbookoperation?view=graph-rest-beta) em uma [pasta de trabalho](/graph/api/resources/workbook?view=graph-rest-beta).
 
 ## <a name="june-2020-new-and-generally-available"></a>Junho de 2020: novos e disponíveis para o público em geral
-
-### <a name="calendar"></a>Calendário
-GA do recurso que permite aos organizadores permitir propostas de horário alternativo para reuniões ou convites para [propor novos horários para uma reunião](outlook-calendar-meeting-proposals.md) quando eles [aceitarem provisoriamente](/graph/api/event-tentativelyaccept?view=graph-rest-1.0) ou [recusarem](/graph/api/event-decline?view=graph-rest-1.0) um evento.
 
 ### <a name="cloud-communications--online-meeting"></a>Comunicações na nuvem | Reunião online
 - Use o cabeçalho HTTP `Accept-Language`ao [criar uma reunião online](/graph/api/application-post-onlinemeetings?view=graph-rest-1.0) para fornecer informações de participação baseadas no local.
