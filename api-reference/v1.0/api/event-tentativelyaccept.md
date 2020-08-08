@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 183742e6f6402b6ba00a749f80ae934a421ea1a4
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 1b7bb4d4b9540deb60c064c75e67ccfcad008de0
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427106"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589127"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -74,7 +74,7 @@ Esta ação retornará HTTP 400 se ocorrer uma das seguintes ações:
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 ### <a name="request"></a>Solicitação
-No exemplo a seguir, o usuário conectado responde provisoriamente ao evento especificado, define o **sendResponse** paremeter como true e inclui um momento alternativo no parâmetro **proposedNewTime** .
+No exemplo a seguir, o usuário conectado responde provisoriamente ao evento especificado, define o parâmetro **sendResponse** como true e inclui um tempo alternativo no parâmetro **proposedNewTime** .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
