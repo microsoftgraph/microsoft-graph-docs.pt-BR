@@ -2,15 +2,15 @@
 title: tipo de recurso resourceData
 description: Representa os dados de recursos anexados à notificação de alteração enviada ao Assinante.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 0f962ddeb118f2f7e98cfa9cc5f3acc45f083071
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: 5ea2380c53414e3ef4fe0845ee2638ba8ce86482
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44430572"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598532"
 ---
 # <a name="resourcedata-resource-type"></a>tipo de recurso resourceData
 
@@ -22,9 +22,9 @@ Representa os dados de recursos anexados à notificação de alteração enviada
 
 Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
-Nenhum
+Nenhum.
 
 ## <a name="properties"></a>Propriedades
 

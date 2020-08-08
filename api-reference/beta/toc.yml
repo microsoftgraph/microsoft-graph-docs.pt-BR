@@ -44,6 +44,8 @@ items:
             href: /graph/webhooks-outlook-authz?context=graph/api/beta
           - name: Notificações com dados de recursos (visualização)
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
+          - name: Obter notificações entregues de maneiras diferentes (visualização)
+            href: /graph/change-notifications-delivery?context=graph/api/beta
       - name: Controle de alterações
         displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
         items:
@@ -310,7 +312,7 @@ items:
                     href: api/iteminsightssettings-get.md
                   - name: Atualizar
                     href: api/iteminsightssettings-update.md
-          - name: Correio
+          - name: Email
             href: resources/message.md
             items:
               - name: Criar pasta de email
@@ -424,7 +426,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir o perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -11597,7 +11599,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral

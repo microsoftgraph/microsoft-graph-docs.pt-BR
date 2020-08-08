@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso changeNotificationCollection
+title: Tipo de recurso changeNotificationCollection
 description: Representa uma coleção de notificações de assinatura enviadas ao Assinante.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: d93cbc16411d3090ba4133047ad07cd55997fec5
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: Auto
+ms.openlocfilehash: 60a7cd0f0a8c31fc6cc03f8bde852744062e205f
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681743"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598497"
 ---
-# <a name="changenotificationcollection-resource-type"></a>tipo de recurso changeNotificationCollection
+# <a name="changenotificationcollection-resource-type"></a>Tipo de recurso changeNotificationCollection
 
 Namespace: microsoft.graph
 
@@ -22,15 +22,15 @@ Representa uma coleção de notificações de alteração de recursos enviadas a
 
 Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
-Nenhum
+Nenhum.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| validationTokens | collection(string) | Contém uma matriz de tokens JWT gerados pelo Microsoft Graph para o aplicativo validar a origem das notificações. O Microsoft Graph gera um único token para cada aplicativo distinto e par de locatários para os quais há um item na matriz valor. Tenha em mente que as notificações podem conter uma mistura de itens para vários aplicativos e locatários que se inscreveram usando a mesma URL de notificação. Fornecido apenas para [notificações de alteração com dados de recurso](/graph/webhooks-with-resource-data.md) opcional. |
+| validationTokens | collection(string) | Contém uma matriz de tokens JWT gerados pelo Microsoft Graph para o aplicativo validar a origem das notificações. O Microsoft Graph gera um token único para cada aplicativo distinto e um par de locatários onde existe um item no conunto valor. Tenha em mente que as notificações podem conter uma mistura de itens para vários aplicativos e locatários que se inscreveram usando a mesma URL de notificação. Fornecido apenas para [notificações de alteração com dados de recurso](/graph/webhooks-with-resource-data.md) opcional. |
 | valor | coleção ([changeNotification](changenotification.md)) | O conjunto de notificações que estão sendo enviadas à URL de notificação. Obrigatório. |
 
 ## <a name="relationships"></a>Relações

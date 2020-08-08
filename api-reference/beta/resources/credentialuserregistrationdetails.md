@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: e5bb982df85ac977a21808b28eec569fbb0d1f36
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fb852bb20fa8564f81e3dbcb027fced3d630f36b
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43383521"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598455"
 ---
 # <a name="credentialuserregistrationdetails-resource-type"></a>tipo de recurso credentialUserRegistrationDetails
 
@@ -31,13 +31,13 @@ Representa os detalhes do uso da redefinição de senha de autoatendimento e da 
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| authMethods | coleção registrationAuthMethod | Representa o método de autenticação usado pelo usuário. Os valores possíveis são `email`: `mobilePhone`, `officePhone`, `securityQuestion` , (usado somente para redefinição de senha de autoatendimento `appCode`), `alternateMobilePhone` `appNotification`, e (com suporte apenas no registro). |
+| authMethods | coleção registrationAuthMethod | Representa o método de autenticação que o usuário registrou. Os valores possíveis são: `email` , `mobilePhone` , `officePhone` , `securityQuestion` (usado somente para redefinição de senha de autoatendimento),, `appNotification` `appCode` e `alternateMobilePhone` (com suporte apenas no registro). |
 | id | String | O identificador exclusivo da atividade. Somente leitura.|
-| iscapable | Boolean | Indica se o usuário está pronto para executar a redefinição de senha de autoatendimento ou a MFA. |
+| iscapable | Booliano | Indica se o usuário está pronto para executar a redefinição de senha de autoatendimento ou a MFA. |
 | isEnabled | Boolean | Indiciates se o usuário está habilitado para executar redefinição de senha de autoatendimento. |
-| isMfaRegistered | Boolean | Indiciates se o usuário está registrado para MFA. |
-| IsRegistered | Boolean | Indica se o usuário registrou todos os métodos de autenticação para redefinição de senha de autoatendimento. |
-| userDisplayName | String | Fornece o nome de usuário do usuário correspondente. |
+| isMfaRegistered | Booliano | Indiciates se o usuário está registrado para MFA. |
+| IsRegistered | Booliano | Indica se o usuário registrou todos os métodos de autenticação para redefinição de senha de autoatendimento. |
+| userDisplayName | Cadeia de caracteres | Fornece o nome de usuário do usuário correspondente. |
 | userPrincipalName | String | Fornece o nome principal de usuário do usuário correspondente. |
 
 ## <a name="relationships"></a>Relações

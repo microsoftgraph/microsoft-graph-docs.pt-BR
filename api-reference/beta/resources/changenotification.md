@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso changeNotification
+title: Tipo de recurso changeNotification
 description: Representa a notificação de alteração enviada ao Assinante.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 5aa207fba6293db3ca1d0de4879639a4ea1c1b76
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
-ms.translationtype: Auto
+ms.openlocfilehash: 6a39d156849236a40268064cb234e6015c9424f3
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038519"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598539"
 ---
-# <a name="changenotification-resource-type"></a>tipo de recurso changeNotification
+# <a name="changenotification-resource-type"></a>Tipo de recurso changeNotification
 
 Namespace: microsoft.graph
 
@@ -34,7 +34,7 @@ Nenhum.
 | clientState | string | O valor da propriedade **ClientState** enviado especificado na solicitação de assinatura (se houver). O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço, comparando os valores da propriedade **ClientState** . O valor da propriedade **ClientState** enviada com a assinatura é comparado com o valor da propriedade **ClientState** recebida com cada notificação de alteração. Opcional. |
 | encryptedContent | [Microsoft. Graph. changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | Prever Conteúdo criptografado anexado à notificação de alteração. Só é fornecido se **encryptionCertificate** e **includeResourceData** foram definidos durante a solicitação de assinatura e se o recurso oferecer suporte a ele. Opcional |
 | lifecycleEvent | string | O tipo de notificação de ciclo de vida se a notificação atual é uma notificação de ciclo de vida. Opcional. Os valores com suporte são `missed` , `removed` , `reauthorizationRequired` . |
-| id | cadeia de caracteres | ID exclusiva da notificação. Opcional. |
+| id | string | ID exclusiva da notificação. Opcional. |
 | recurso | string | O URI do recurso que emitiu a notificação de alteração relativa a `https://graph.microsoft.com` . Obrigatório. |
 | resourceData | [Microsoft. Graph. resourceData](resourcedata.md) | O conteúdo dessa propriedade depende do tipo de recurso que está sendo assinado. Obrigatório. |
 | subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | O tempo de expiração da assinatura. Obrigatório. |

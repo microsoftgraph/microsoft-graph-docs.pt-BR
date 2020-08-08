@@ -2,15 +2,15 @@
 title: tipo de recurso changeNotificationEncryptedContent
 description: Uma assinatura com dados de recurso permite que um aplicativo cliente receba notificações de alteração com alterações nos dados no Microsoft Graph. O conteúdo criptografado notificação de alteração representa os dados criptografados anexados à notificação.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 1b89fcf99ed4a724bb86413d6ef369b121e28cd3
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: 4ca2230cf3735cb696136f3b3014e8545202ebfe
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44430574"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598490"
 ---
 # <a name="changenotificationencryptedcontent-resource-type"></a>tipo de recurso changeNotificationEncryptedContent
 
@@ -22,9 +22,9 @@ Representa os dados criptografados anexados a uma notificação de alteração.
 
 Para obter detalhes, consulte [set up Change Notifications que incluem dados de recurso (visualização)](/graph/webhooks-with-resource-data.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
-Nenhum
+Nenhum.
 
 ## <a name="properties"></a>Propriedades
 

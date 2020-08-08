@@ -2,15 +2,15 @@
 title: Excluir assinatura
 description: Exclua uma assinatura.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 8d4630f2141ae254461eb9faffce676a043476f0
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: 703af25923636ba8c47d7820971e0b464e12324a
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531463"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598203"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -28,18 +28,18 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) | Sem suporte | Incompatível | CallRecords.Read.All  |
 |[chat](../resources/chatmessage.md) (/Teams/{ID}/Channels/{ID}/Messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Sem suporte | ChannelMessage.Read.All  |
-|[chat](../resources/chatmessage.md) (/Teams/allMessages--todas as mensagens do canal na organização) | Sem suporte | Incompatível | ChannelMessage.Read.All  |
+|[chat](../resources/chatmessage.md) (/Teams/allMessages--todas as mensagens do canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chat](../resources/chatmessage.md) (/chats/{ID}/Messages) | Chat.Read, Chat.ReadWrite | Sem suporte | Chat.Read.All  |
-|[chat](../resources/chatmessage.md) (/chats/allMessages--todas as mensagens de chat na organização) | Sem suporte | Incompatível | Chat.Read.All  |
+|[chat](../resources/chatmessage.md) (/chats/allMessages--todas as mensagens de chat na organização) | Sem suporte | Sem suporte | Chat.Read.All  |
 |[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Sem suporte | Files.ReadWrite | Sem suporte |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Sem suporte | Files.ReadWrite.All |
 |[evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[grupo](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
-|[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Incompatível |
+|[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[presence](../resources/presence.md) | Presence.Read.All | Sem suporte | Incompatível |
+|[presence](../resources/presence.md) | Presence.Read.All | Sem suporte | Sem suporte |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 

@@ -1,15 +1,15 @@
 ---
 title: Obter as alterações incrementais para usuários
 description: A consulta delta permite que você consulte adições, exclusões ou atualizações de usuários, por meio de uma série de chamadas de função delta. A consulta Delta permite que você descubra alterações em usuários sem ter que buscar todo o conjunto de usuários do Microsoft Graph e comparar as alterações.
-author: baywet
+author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 473e4b949d9b3cb62827dbf05922d6dbf9a62766
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: e6efc0d7a5c63471b257acfc9a3e2e228176cf12
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394586"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598245"
 ---
 # <a name="get-incremental-changes-for-users"></a>Obter as alterações incrementais para usuários
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3
 
 ## <a name="nextlink-response"></a>Resposta nextLink
 
-A resposta contém outro `nextLink` com outro valor de `skipToken`, indicando que há mais grupos disponíveis. Você deve continuar fazendo solicitações usando a `nextLink` URL até que uma `deltaLink` URL seja retornada na resposta final, mesmo que o valor seja uma matriz vazia (isso pode ocorrer em determinadas circunstâncias).
+A resposta contém outro `nextLink` com outro valor de `skipToken`, indicando que há mais grupos disponíveis. Você deve continuar criando solicitações usando a `nextLink` URL até que uma `deltaLink` URL seja retornada na resposta final, mesmo que o valor seja uma matriz vazia (isso pode ocorrer em determinadas circunstâncias).
 
 ```http
 HTTP/1.1 200 OK

@@ -2,15 +2,15 @@
 title: Criar assinatura
 description: Assina um aplicativo de escuta para receber notificações de alteração quando os dados de um recurso do Microsoft Graph são alterados.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 10e764bef772b6874f811048b9ec5cdc101f1807
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: 36555a946aa9092d5cab6e27548a16ba783d738e
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531457"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598133"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -30,18 +30,18 @@ A criação de uma assinatura requer permissão de leitura para o recurso. Por e
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Incompatível | Incompatível | CallRecords.Read.All  |
 |[chat](../resources/chatmessage.md) (/Teams/{ID}/Channels/{ID}/Messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Sem suporte | ChannelMessage.Read.All  |
-|[chat](../resources/chatmessage.md) (/Teams/allMessages--todas as mensagens do canal na organização) | Sem suporte | Incompatível | ChannelMessage.Read.All  |
+|[chat](../resources/chatmessage.md) (/Teams/allMessages--todas as mensagens do canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chat](../resources/chatmessage.md) (/chats/{ID}/Messages) | Chat.Read, Chat.ReadWrite | Sem suporte | Chat.Read.All  |
-|[chat](../resources/chatmessage.md) (/chats/allMessages--todas as mensagens de chat na organização) | Incompatível | Incompatível | Chat.Read.All  |
+|[chat](../resources/chatmessage.md) (/chats/allMessages--todas as mensagens de chat na organização) | Sem suporte | Sem suporte | Chat.Read.All  |
 |[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Sem suporte | Files.ReadWrite | Sem suporte |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Sem suporte | Files.ReadWrite.All |
 |[evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[grupo](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
-|[conversa em grupo](../resources/conversation.md) | Group.Read.All | Incompatível | Incompatível |
+|[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[presence](../resources/presence.md) | Presence.Read.All | Incompatível | Incompatível |
+|[presence](../resources/presence.md) | Presence.Read.All | Sem suporte | Sem suporte |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -184,7 +184,7 @@ Content-length: 252
 }
 ```
 
-## <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
+## <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
 
 O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl** ) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [configurar notificações para alterações nos dados do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
 

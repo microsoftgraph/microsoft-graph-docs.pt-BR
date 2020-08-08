@@ -2,19 +2,19 @@
 title: Listar assinaturas
 description: " Veja os cenários abaixo para obter detalhes."
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: d48036e3c54d0014abf6676877a329bcb81964e1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c04d7bb51fa5f99694d01d703b18e5073450cf9
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453153"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598140"
 ---
 # <a name="list-subscriptions"></a>Listar assinaturas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
