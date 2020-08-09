@@ -2,15 +2,15 @@
 title: tipo de recurso resourceData
 description: Representa os dados de recursos anexados à notificação de alteração enviada ao Assinante.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 689776fe665eae80aab99a2f7fb0856ce3eb65cd
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
-ms.translationtype: Auto
+ms.openlocfilehash: c9da2041a6d982556ec909375ff46b3a9b3e2e2d
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45004765"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598400"
 ---
 # <a name="resourcedata-resource-type"></a>tipo de recurso resourceData
 

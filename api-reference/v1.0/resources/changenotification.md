@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso changeNotification
+title: Tipo de recurso changeNotification
 description: Representa a notificação de alteração enviada ao Assinante.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 1120e5bbbecabd2b6ed00dd6796bb8849b0d5151
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
-ms.translationtype: Auto
+ms.openlocfilehash: 9c940de4dd8b57bfe04690a9df889c98d856bbc5
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038496"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598506"
 ---
-# <a name="changenotification-resource-type"></a>tipo de recurso changeNotification
+# <a name="changenotification-resource-type"></a>Tipo de recurso changeNotification
 
 Namespace: microsoft.graph
 
@@ -30,7 +30,7 @@ Nenhum.
 |:---------|:-----|:------------|
 | changeType | string | Indica o tipo de alteração que irá gerar a notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Obrigatório. |
 | clientState | string | O valor da propriedade **ClientState** enviada na solicitação de assinatura (se houver). O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço, comparando os valores da propriedade **ClientState** . O valor da propriedade **ClientState** enviada com a assinatura é comparado com o valor da propriedade **ClientState** recebida com cada notificação de alteração. Opcional. |
-| id | cadeia de caracteres | ID exclusiva da notificação. Opcional. |
+| id | string | ID exclusiva da notificação. Opcional. |
 | recurso | string | O URI do recurso que emitiu a notificação de alteração relativa a `https://graph.microsoft.com` . Obrigatório. |
 | resourceData | [Microsoft. Graph. resourceData](resourcedata.md) | O conteúdo dessa propriedade depende do tipo de recurso que está sendo assinado. Obrigatório. |
 | subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | O tempo de expiração da assinatura. Obrigatório. |

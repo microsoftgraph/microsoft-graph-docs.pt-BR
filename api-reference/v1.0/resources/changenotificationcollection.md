@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso changeNotificationCollection
+title: Tipo de recurso changeNotificationCollection
 description: Representa uma coleção de notificações de assinatura enviadas ao Assinante.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 242ab35d95cfc35c19e6d1f37cefa33ee8bd1632
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
-ms.translationtype: Auto
+ms.openlocfilehash: 1eadd0fbc14fe9e6581ab6fa3375837653fc0859
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45004767"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598504"
 ---
-# <a name="changenotificationcollection-resource-type"></a>tipo de recurso changeNotificationCollection
+# <a name="changenotificationcollection-resource-type"></a>Tipo de recurso changeNotificationCollection
 
 Namespace: microsoft.graph
 

@@ -2,15 +2,15 @@
 title: Excluir assinatura
 description: Exclua uma assinatura.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 045b0f1e8cbbe51f64718ecbce8874e6e49d57fe
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 6c5a123bdba05db63cdd3bc57c4fb65d411217a6
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491837"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598483"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -24,7 +24,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
-|[callRecord](../resources/callrecords-callrecord.md) | Sem suporte | Sem suporte | CallRecords.Read.All |
+|[callRecord](../resources/callrecords-callrecord.md) | Sem suporte | Incompatível | CallRecords.Read.All |
 |[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Sem suporte | Files.ReadWrite | Sem suporte |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Sem suporte | Files.ReadWrite.All |
@@ -68,7 +68,7 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
-Para obter detalhes sobre como os erros são retornados, confira [respostas de erro][error-response].
+Para detalhes sobre como os erros são retornados, confira [Respostas de erro][error-response].
 
 ## <a name="example"></a>Exemplo
 
