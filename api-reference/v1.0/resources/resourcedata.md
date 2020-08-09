@@ -2,48 +2,48 @@
 title: tipo de recurso resourceData
 description: Representa os dados de recursos anexados à notificação de alteração enviada ao Assinante.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 689776fe665eae80aab99a2f7fb0856ce3eb65cd
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
-ms.translationtype: Auto
+ms.openlocfilehash: c9da2041a6d982556ec909375ff46b3a9b3e2e2d
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45004765"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598400"
 ---
-# <a name="resourcedata-resource-type"></a><span data-ttu-id="0d34a-103">tipo de recurso resourceData</span><span class="sxs-lookup"><span data-stu-id="0d34a-103">resourceData resource type</span></span>
+# <a name="resourcedata-resource-type"></a><span data-ttu-id="fee24-103">tipo de recurso resourceData</span><span class="sxs-lookup"><span data-stu-id="fee24-103">resourceData resource type</span></span>
 
-<span data-ttu-id="0d34a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0d34a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fee24-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fee24-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="0d34a-105">Representa os dados de recursos anexados à notificação de alteração enviada ao Assinante.</span><span class="sxs-lookup"><span data-stu-id="0d34a-105">Represents the resouce data attached to the change notification sent to the subscriber.</span></span>
+<span data-ttu-id="fee24-105">Representa os dados de recursos anexados à notificação de alteração enviada ao Assinante.</span><span class="sxs-lookup"><span data-stu-id="fee24-105">Represents the resouce data attached to the change notification sent to the subscriber.</span></span>
 
-<span data-ttu-id="0d34a-106">Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).</span><span class="sxs-lookup"><span data-stu-id="0d34a-106">For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).</span></span>
+<span data-ttu-id="fee24-106">Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).</span><span class="sxs-lookup"><span data-stu-id="fee24-106">For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="0d34a-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="0d34a-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="fee24-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="fee24-107">Methods</span></span>
 
-<span data-ttu-id="0d34a-108">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="0d34a-108">None.</span></span>
+<span data-ttu-id="fee24-108">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="fee24-108">None.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0d34a-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0d34a-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="fee24-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fee24-109">Properties</span></span>
 
-<span data-ttu-id="0d34a-110">Para recursos do Outlook, **resourceData** contém os seguintes campos:</span><span class="sxs-lookup"><span data-stu-id="0d34a-110">For Outlook resources, **resourceData** contains the following fields:</span></span>
+<span data-ttu-id="fee24-110">Para recursos do Outlook, **resourceData** contém os seguintes campos:</span><span class="sxs-lookup"><span data-stu-id="fee24-110">For Outlook resources, **resourceData** contains the following fields:</span></span>
 
-| <span data-ttu-id="0d34a-111">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0d34a-111">Property</span></span> | <span data-ttu-id="0d34a-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="0d34a-112">Type</span></span> | <span data-ttu-id="0d34a-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="0d34a-113">Description</span></span> |
+| <span data-ttu-id="fee24-111">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fee24-111">Property</span></span> | <span data-ttu-id="fee24-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="fee24-112">Type</span></span> | <span data-ttu-id="fee24-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="fee24-113">Description</span></span> |
 |:---------|:-----|:------------|
-| <span data-ttu-id="0d34a-114">@odata.type</span><span class="sxs-lookup"><span data-stu-id="0d34a-114">@odata.type</span></span> | <span data-ttu-id="0d34a-115">string</span><span class="sxs-lookup"><span data-stu-id="0d34a-115">string</span></span> | <span data-ttu-id="0d34a-116">O tipo de entidade OData no Microsoft Graph que descreve o objeto representado.</span><span class="sxs-lookup"><span data-stu-id="0d34a-116">The OData entity type in Microsoft Graph that describes the represented object.</span></span> |
-| <span data-ttu-id="0d34a-117">@odata.id</span><span class="sxs-lookup"><span data-stu-id="0d34a-117">@odata.id</span></span> | <span data-ttu-id="0d34a-118">string</span><span class="sxs-lookup"><span data-stu-id="0d34a-118">string</span></span> | <span data-ttu-id="0d34a-119">O identificador OData do objeto.</span><span class="sxs-lookup"><span data-stu-id="0d34a-119">The OData identifier of the object.</span></span> |
-| <span data-ttu-id="0d34a-120">@odata.etag</span><span class="sxs-lookup"><span data-stu-id="0d34a-120">@odata.etag</span></span> | <span data-ttu-id="0d34a-121">string</span><span class="sxs-lookup"><span data-stu-id="0d34a-121">string</span></span> | <span data-ttu-id="0d34a-122">A marca da entidade HTTP que representa a versão do objeto.</span><span class="sxs-lookup"><span data-stu-id="0d34a-122">The HTTP entity tag that represents the version of the object.</span></span> |
-| <span data-ttu-id="0d34a-123">id</span><span class="sxs-lookup"><span data-stu-id="0d34a-123">id</span></span> | <span data-ttu-id="0d34a-124">string</span><span class="sxs-lookup"><span data-stu-id="0d34a-124">string</span></span> | <span data-ttu-id="0d34a-125">O identificador do objeto.</span><span class="sxs-lookup"><span data-stu-id="0d34a-125">The identifier of the object.</span></span> |
+| <span data-ttu-id="fee24-114">@odata.type</span><span class="sxs-lookup"><span data-stu-id="fee24-114">@odata.type</span></span> | <span data-ttu-id="fee24-115">string</span><span class="sxs-lookup"><span data-stu-id="fee24-115">string</span></span> | <span data-ttu-id="fee24-116">O tipo de entidade OData no Microsoft Graph que descreve o objeto representado.</span><span class="sxs-lookup"><span data-stu-id="fee24-116">The OData entity type in Microsoft Graph that describes the represented object.</span></span> |
+| <span data-ttu-id="fee24-117">@odata.id</span><span class="sxs-lookup"><span data-stu-id="fee24-117">@odata.id</span></span> | <span data-ttu-id="fee24-118">string</span><span class="sxs-lookup"><span data-stu-id="fee24-118">string</span></span> | <span data-ttu-id="fee24-119">O identificador OData do objeto.</span><span class="sxs-lookup"><span data-stu-id="fee24-119">The OData identifier of the object.</span></span> |
+| <span data-ttu-id="fee24-120">@odata.etag</span><span class="sxs-lookup"><span data-stu-id="fee24-120">@odata.etag</span></span> | <span data-ttu-id="fee24-121">string</span><span class="sxs-lookup"><span data-stu-id="fee24-121">string</span></span> | <span data-ttu-id="fee24-122">A marca da entidade HTTP que representa a versão do objeto.</span><span class="sxs-lookup"><span data-stu-id="fee24-122">The HTTP entity tag that represents the version of the object.</span></span> |
+| <span data-ttu-id="fee24-123">id</span><span class="sxs-lookup"><span data-stu-id="fee24-123">id</span></span> | <span data-ttu-id="fee24-124">string</span><span class="sxs-lookup"><span data-stu-id="fee24-124">string</span></span> | <span data-ttu-id="fee24-125">O identificador do objeto.</span><span class="sxs-lookup"><span data-stu-id="fee24-125">The identifier of the object.</span></span> |
 
-> <span data-ttu-id="0d34a-126">**Observação:** O `id` valor fornecido em **resourceData** é válido no momento em que a notificação de alteração foi gerada.</span><span class="sxs-lookup"><span data-stu-id="0d34a-126">**Note:** The `id` value provided in **resourceData** is valid at the time the change notification was generated.</span></span> <span data-ttu-id="0d34a-127">Algumas ações, como mover uma mensagem para outra pasta podem resultar na `id` não mais ser válida quando a notificação de alteração for processada.</span><span class="sxs-lookup"><span data-stu-id="0d34a-127">Some actions, such as moving a message to another folder, might result in the `id` no longer being valid when the change notification is processed.</span></span>
+> <span data-ttu-id="fee24-126">**Observação:** O `id` valor fornecido em **resourceData** é válido no momento em que a notificação de alteração foi gerada.</span><span class="sxs-lookup"><span data-stu-id="fee24-126">**Note:** The `id` value provided in **resourceData** is valid at the time the change notification was generated.</span></span> <span data-ttu-id="fee24-127">Algumas ações, como mover uma mensagem para outra pasta podem resultar na `id` não mais ser válida quando a notificação de alteração for processada.</span><span class="sxs-lookup"><span data-stu-id="fee24-127">Some actions, such as moving a message to another folder, might result in the `id` no longer being valid when the change notification is processed.</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="0d34a-128">Relações</span><span class="sxs-lookup"><span data-stu-id="0d34a-128">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="fee24-128">Relações</span><span class="sxs-lookup"><span data-stu-id="fee24-128">Relationships</span></span>
 
-<span data-ttu-id="0d34a-129">Nenhum</span><span class="sxs-lookup"><span data-stu-id="0d34a-129">None.</span></span>
+<span data-ttu-id="fee24-129">Nenhum</span><span class="sxs-lookup"><span data-stu-id="fee24-129">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0d34a-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0d34a-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fee24-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="fee24-130">JSON representation</span></span>
 
-<span data-ttu-id="0d34a-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0d34a-131">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="fee24-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="fee24-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
