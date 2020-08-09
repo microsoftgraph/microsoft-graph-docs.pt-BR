@@ -2,15 +2,15 @@
 title: Listar assinaturas
 description: Recupere as propriedades e os relacionamentos das assinaturas do webhook, com base no ID do aplicativo, no usuário e na função do usuário com um locatário.
 localization_priority: Priority
-author: baywet
+author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 3b24eda260af4beaff36306ed69d08334edfc204
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7950d7988b9ed08fba57e9c4faa344e604828aa8
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509735"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598462"
 ---
 # <a name="list-subscriptions"></a>Listar assinaturas
 
