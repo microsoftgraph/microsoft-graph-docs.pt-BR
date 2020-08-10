@@ -1,16 +1,16 @@
 ---
 title: Configurar notificações para alterações nos dados de usuário
 description: A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações de alteração para atualizar seu estado após alterações.
-author: baywet
+author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6138f1ea8ebd293ab6cd34003c368ae0887bf5d2
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: 697f2d61125d4f295c4fca7af14a515554e8d384
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589148"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598525"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -149,7 +149,7 @@ Embora `clientState` não seja obrigatória, você deve incluí-la para manter a
 
 Se tiver êxito, o Microsoft Graph retornará um código `201 Created` e um objeto [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) no corpo.
 
-> **Observação:** todos os parâmetros de cadeia de caracteres de consulta incluídos na propriedade `notificationUrl` serão incluídos na solicitação de POST HTTP quando as notificações estiverem sendo entregues.
+> **Observação:** Qualquer parâmetro da cadeia de caracteres de consulta incluído na propriedade **notificationUrl** será incluído na solicitação de POST HTTP quando as notificações estiverem sendo entregues.
 
 #### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
 

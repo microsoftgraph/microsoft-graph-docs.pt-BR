@@ -5,16 +5,16 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b4e2c02fb5583febdaee7eb2e20bca7083b32635
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 5c6d73e0a85f185c2a903657ffe3c17277a87d11
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567464"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598427"
 ---
 # <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>Automação da configuração do aplicativo de SSO baseado em SAML com o Microsoft Graph API
 
-Neste artigo, você aprenderá a criar e configurar um aplicativo da galeria do Azure Active Directory (Azure AD). Esse artigo usa o AWS como exemplo, mas você pode usar as etapas neste artigo para qualquer aplicativo baseado em SAML na galeria do Azure AD.
+Neste artigo, você aprenderá a criar e configurar um aplicativo da galeria do Azure Active Directory (Azure AD). Esse artigo usa o AWS como um exemplo, mas você pode usar as etapas neste artigo para qualquer aplicativo baseado em SAML na galeria do Azure AD.
 
 **Etapas para usar as APIs do Microsoft Graph para automatizar a configuração de logon único baseado em SAML**
 
@@ -27,7 +27,7 @@ Neste artigo, você aprenderá a criar e configurar um aplicativo da galeria do 
 | [5. Atribuir usuários](#step-5-assign-users) | Atribuir usuários e grupos ao aplicativo
 | [6. Configurar o lado do aplicativo](#step-6-configure-the-application-side)| Obter os metadados do SAML do Azure AD
 
-**Lista de todas as APIs usadas na documentação**
+**Lista de todas as APIs usadas no artigo**
 
 Verifique se você tem as permissões correspondentes para chamar as seguintes APIs.
 
@@ -39,13 +39,13 @@ Verifique se você tem as permissões correspondentes para chamar as seguintes A
 |[claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [Criar claimsMappingPolicy](https://docs.microsoft.com/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)
 
 >[!NOTE]
->Os objetos de resposta mostrados neste artigo podem ser reduzidos para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
+>Os objetos de resposta mostrados neste artigo poderiam ser reduzidos para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 ## <a name="step-1-create-the-gallery-application"></a>Etapa 1: Criar o aplicativo galeria
 
 ### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>Entrar no Microsoft Graph Explorer (recomendado), no Postman ou em qualquer outro cliente de API que você usa
 
-1. Iniciar [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
+1. Iniciar [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Selecione **Entrar com a Microsoft** e entre usando as credenciais de administrador global do Azure AD ou de Administrador do Aplicativo.
 3. Uma vez acessado, você verá os detalhes da conta do usuário no painel esquerdo.
 
@@ -191,9 +191,9 @@ Use a resposta da chamada anterior para recuperar e salvar a ID de objeto do apl
 ```
 ### <a name="set-single-sign-on-mode"></a>Definir o modo de logon único
 
-Neste exemplo, você definirá o `saml` como o modo de logon único na [tipo de recurso de servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Outras propriedades de SSO do SAML que você pode configurar são: `notificationEmailAddresses`, `loginUrl`e `samlSingleSignOnSettings.relayState`
+Neste exemplo, você definirá o `saml` como o modo de logon único na [tipo de recurso de servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Outras propriedades de SSO do SAML que você pode configurar são: `notificationEmailAddresses`, `loginUrl`e `samlSingleSignOnSettings.relayState`.
 
-Antes dessa consulta funcionar, você precisará fornecer consentimento na guia **Modificar permissões** no Graph Explorer. Além disso, certifique-se de que você está usando a ID do** servicePrincipal** obtida anteriormente.
+Antes dessa consulta funcionar, você precisará fornecer consentimento na guia **Modificar permissões** no Graph Explorer. Além disso, certifique-se de que você está usando a ID do** servicePrincipal** que você obteve anteriormente.
 
 #### <a name="request"></a>Solicitação
 
@@ -264,7 +264,7 @@ HTTP/1.1 204
 
 Se o aplicativo exigir as informações da função no token, adicione a definição das funções no objeto do aplicativo. No AWS, você pode [habilitar o provisionamento de usuário](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api) para buscar todas as funções dessa conta do AWS. 
 
-Para saber mais, leia [Configurar a declaração de função emitida no token SAML](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management)
+Para saber mais, confira [Configurar a declaração de função emitida no token SAML](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management).
 
 > [!NOTE] 
 > Ao adicionar funções de aplicativo, não modifique as funções de aplicativo padrão msiam_access. 
@@ -345,7 +345,7 @@ Além das declarações básicas, configure as seguintes declarações para o Az
 Para obter mais informações, confira [Personalizar as declarações emitidas no token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping).
 
 > [!NOTE]
-> Algumas chaves na política de mapeamento de declarações diferenciam maiúsculas de minúsculas (por exemplo, "Version"). Se você receber uma mensagem de erro como "A propriedade tem um valor inválido", pode ser um problema de diferenciação de maiúsculas e minúsculas.
+> Algumas chaves na política de mapeamento de declarações são sensíveis a letras maiúsculas e minúsculas (por exemplo, "Version"). Se você receber uma mensagem de erro como "A propriedade tem um valor inválido", isso poderia ser um problema de diferenciação de maiúsculas e minúsculas.
 
 #### <a name="request"></a>Solicitação
 
@@ -585,9 +585,9 @@ Adicione as seguintes informações à entidade de serviço:
 * Senha
 * Chave pública 
 
-Extraia a chave pública e privada Base64 do arquivo PFX. Para saber mais sobre as propriedades, leia [tipo de recurso de keyCredential](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0).
+Extraia a chave pública e privada Base64 do arquivo PFX. Para saber mais sobre as propriedades, confira [tipo de recurso de keyCredential](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0).
 
-Certifique-se de que a keyId da keyCredential usada para "Assinar" corresponda à keyId da passwordCredential. Você pode gerar o `customkeyIdentifier` ao obter o hash da impressão digital do certificado. Confira o código de referência do C# acima.
+Certifique-se de que a keyId da keyCredential usada para "Assinar" corresponda à keyId da passwordCredential. Você pode gerar o `customkeyIdentifier` ao obter o hash da impressão digital do certificado. Consulte o C# código de referência anterior.
 
 #### <a name="request"></a>Solicitação
 
@@ -731,7 +731,7 @@ Content-type: appRoleAssignments/json
 }
 ```
 
-Para saber mais, confira o tipo de recurso [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0).
+Para saber mais, confira o [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0).
 
 ## <a name="step-6-configure-the-application-side"></a>Etapa 6. Configurar o lado do aplicativo
 
@@ -739,7 +739,7 @@ Para saber mais, confira o tipo de recurso [appRoleAssignment](https://docs.micr
 
 Use a URL a seguir para obter os metadados do SAML do Azure AD para o aplicativo específico configurado. Os metadados contêm informações como o certificado de assinatura, o Azure AD entityID e o Azure AD SingleSignOnService, entre outras.
 
-https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}
+`https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 
 ## <a name="next-steps"></a>Próximas etapas
 - [Use as APIs do Microsoft Graph para configurar o provisionamento de usuário](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)

@@ -1,23 +1,23 @@
 ---
-author: baywet
+author: davidmu1
 localization_priority: Priority
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: a90d5f6986039d6d102ccdc926bb676345f861ed
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 2c41ff749df7bfc4d53e09a59ab67a566ef5e5af
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989841"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597984"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-#### <a name="intune-notifications-service-limits"></a>Limites do serviço de notificações do Intune
+#### <a name="intune-notifications-service-limits"></a>Limites de serviço para notificações do Intune
 
-| Tipo de solicitação | Limite por locatário para todos os aplicativos | Limitar por aplicativo por locatário |
+| Tipo de solicitação | Limitar por locatário para todos os aplicativos | Limitar por aplicativo por locatário |
 | ------------ | ------- | ------- |
-| POSTAR, COLOCAR, EXCLUIR, PATCH | 200 solicitações por 20 segundos | 100 solicitações por 20 segundos |
-| Qualquer tamanho | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
+| POST, PUT, DELATE, PATCH | 200 solicitações por 20 segundos | 100 solicitações por 20 segundos |
+| Qualquer | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
 
 Os limites anteriores se aplicam aos seguintes recursos:  
 localizedNotificationMessage, notificationMessageTemplate.

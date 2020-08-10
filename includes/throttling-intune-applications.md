@@ -1,23 +1,23 @@
 ---
-author: baywet
+author: davidmu1
 localization_priority: Priority
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: e9c40f538e369dc7d98cff4e28b337723622794e
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 8a7c711caa0820d2aa2e88d604d6c0abb434abd8
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989832"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597978"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-#### <a name="intune-applications-service-limits"></a>Limites do serviço de aplicativos do Intune
+#### <a name="intune-applications-service-limits"></a>Limites de serviços para aplicações do Intune
 
-| Tipo de solicitação | Limite por locatário para todos os aplicativos | Limitar por aplicativo por locatário |
+| Tipo de solicitação | Limitar por locatário para todos os aplicativos | Limitar por aplicativo por locatário |
 | ------------ | ------- | ------- |
-| POSTAR, COLOCAR, EXCLUIR, PATCH | 200 solicitações por 20 segundos | 100 solicitações por 20 segundos |
-| Qualquer tamanho | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
+| POST, PUT, DELETE, PATCH | 200 solicitações por 20 segundos | 100 solicitações por 20 segundos |
+| Qualquer | 2000 solicitações por 20 segundos | 1000 solicitações por 20 segundos |
 
 Os limites anteriores se aplicam aos seguintes recursos:  
 iosMobileAppConfiguration, managedDeviceMobileAppConfiguration, managedDeviceMobileAppConfigurationAssignment, managedDeviceMobileAppConfigurationDeviceStatus, managedDeviceMobileAppConfigurationDeviceSummary, managedDeviceMobileAppConfigurationUserStatus, managedDeviceMobileAppConfigurationUserSummary, mobileApp, mobileAppAssignment, mobileAppCategory, mobileAppContent, mobileAppContentFile.

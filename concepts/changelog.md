@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 9b9f961b3804d2833f15e8a510bed4f39e67c5c6
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: d8635dfaf2358d8439b4dbc00d87db0166bb2d98
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589267"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598399"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -23,6 +23,8 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | v1.0 | O controle de alterações por meio de [consultas delta](/graph/api/event-delta) está disponível para o Microsoft Graph para o Governo dos Estados Unidos. |
+| Exclusão | Beta | Removida a propriedade **includeProperties** da entidade de [subscription](/graph/api/resources/subscription?view=graph-rest-beta). Esta propriedade é substituída pela propriedade **includeResourceData**. |
+| Adição | Beta | Adicionada a capacidade de obter as [notificações de alteração entregues pelo Hub de Eventos](/graph/api/concepts/change-notifications-delivery?view=graph-rest-beta). |
 
 ## <a name="july-2020"></a>Julho de 2020
 
