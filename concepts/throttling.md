@@ -1,15 +1,15 @@
 ---
 title: Diretrizes de limitação do Microsoft Graph
 description: Os limites de controle limitam número de chamadas simultâneas para um serviço para evitar a utilização exagerada dos recursos. O Microsoft Graph foi projetado para lidar com um alto volume de solicitações. Se ocorrer um número impressionante de solicitações, a limitação ajuda a manter um desempenho ideal e a confiabilidade do serviço Microsoft Graph.
-author: baywet
+author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 71bb61a6bb2a72cc3e2cc4192e1a6d218ab4c3b4
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: a38c6c77daa5a9a6adab469681b4f7b0c4291e32
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589176"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597981"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -182,7 +182,7 @@ Os limites são expressos como solicitações por segundo (rps).
 | PATCH da equipe, canal, guia, installedApps, appCatalogs |  30 rps                         | 300 rps  |
 | EXCLUIR canal, Tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
 | OBTER /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
-| POSTAR /teams/```{team-id}```, COLOCAR /groups/```{team-id}```/team, clone | 6 rps | 150 rps  | 
+| POSTAR /teams/```{team-id}```, COLOCAR /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
 | OBTER mensagem do canal  | 5 rps | 100 rps |
 | OBTER 1:1/mensagem de chat do grupo  | 3 rps | 30 rps |
 | POSTAR mensagem do canal | 2 rps | 20 rps |
@@ -198,6 +198,134 @@ Confira também [limites do Microsoft Teams](/graph/api/resources/teams-api-over
 
 Os limites anteriores se aplicam aos seguintes recursos:  
 aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessage, chatMessageHostedContent, conversationMember, offerShiftRequest, openShift, openShiftChangeRequest, schedule, scheduleChangeRequest, schedulingGroup, shift, shiftPreferences, swapShiftsChangeRequest, team, teamsApp, teamsAppDefinition, teamsAppInstallation, teamsAsyncOperation, teamsTab, teamsTemplate, teamwork, timeOff, timeOffReason, timeOffRequest, userSettings, workforceIntegration.
+
+### <a name="identity-and-access-service-limits"></a>Limites do serviço de identidade e acesso
+
+Estes limites de serviço se aplicam às seguintes entidades:
+
+- [Objeto de diretório](/graph/api/resources/directoryobject)
+- [Propriedade de extensão](/graph/api/resources/extensionproperty)
+- [Unidade administrativa](/graph/api/resources/administrativeunit)
+- [Aplicação](/graph/api/resources/application)
+- [Atribuição de função da aplicação](/graph/api/resources/approleassignment)
+- [Configuração de autentificação baseada em certificados](/graph/api/resources/certificatebasedauthconfiguration)
+- [Contatos organizacionais](/graph/api/resources/orgcontact)
+- [Dispositivo](/graph/api/resources/device)
+- [Referência sobre o objetivo do parceiro do diretório](/graph/api/resources/directoryobjectpartnerreference)
+- [Função de diretório](/graph/api/resources/directoryrole)
+- [Modelo de função de diretório](/graph/api/resources/directoryroletemplate)
+- [Domínio](/graph/api/resources/domain)
+- [Registro dns domínio](/graph/api/resources/domaindnsrecord)
+- [registro nome dns domínio](/graph/api/resources/domaindnscnamerecord)
+- [Registro ms dns domínio](/graph/api/resources/domaindnsmxrecord)
+- [Registro srv dns domínio](/graph/api/resources/domaindnssrvrecord)
+- [Registro txt dns domínio](/graph/api/resources/domaindnstxtrecord)
+- [Registro indisponível dns domínio](/graph/api/resources/domaindnsunavailablerecord)
+- [Ponto de extremidade](/graph/api/resources/endpoint)
+- [Propriedade de extensão](/graph/api/resources/extensionproperty)
+- [Detalhes da licença](/graph/api/resources/licensedetails)
+- [Grupo](/graph/api/resources/group)
+- [Política de tempo limite baseada na atividade](/graph/api/resources/activitybasedtimeoutpolicy)
+- [Política de mapeamento de declarações](/graph/api/resources/claimsmappingpolicy)
+- [Política de descoberta de realm inicial](/graph/api/resources/homerealmdiscoverypolicy)
+- [Política de emissão de tokens](/graph/api/resources/tokenissuancepolicy)
+- [Política do tempo de vida do token](/graph/api/resources/tokenlifetimepolicy)
+- [Base da política](/graph/api/resources/policybase)
+- [Política de STS](/graph/api/resources/stspolicy)
+- [Contrato](/graph/api/resources/contract)
+- [Entidade de serviço](/graph/api/resources/serviceprincipal)
+- [Sku inscrita](/graph/api/resources/subscribedsku)
+- [Concessão de permissão do OAuth2](/graph/api/resources/oauth2permissiongrant)
+- [Organização](/graph/api/resources/organization)
+- [Usuário](/graph/api/resources/user)
+- [Configuração de grupo](/graph/api/resources/groupsetting)
+- [Modelo de configuração de grupo](/graph/api/resources/groupsettingtemplate)
+
+#### <a name="pattern"></a>Padrão
+
+A limitação baseia-se em um algoritmo no bucket de token, que funciona adicionando custos individuais de solicitações. A soma dos custos da solicitação é depois comparada contra os limites predeterminados. Apenas as solicitações que excedem os limites serão limitadas. Se qualquer um dos limites for excedido, a resposta será `429 Too Many Requests`. É possível receber respostas `429 Too Many Requests` mesmo quando os seguintes limites não são alcançados, em situações em que os serviços estão sob uma carga importante ou com base no volume de dados para um determinado locatário. A tabela a seguir lista os limites existentes.
+
+| Tipo de limite | Cota de unidade de recurso | Gravar cota |
+| ---------- | ----------- | -------------- |
+| aplicação+par de locatários | S: 3500, M:5000, L:8000 por 10 segundos | 3000 por 2 minutos e 30 segundos |
+| aplicação | 150,000 por 20 segundos  | 70,000 por 5 minutos |
+| locatário | Não aplicável | 9000 por 5 minutos |
+
+> **Observação**: A aplicação + limite do par de locatários varia dependendo do número de usuários nas solicitações de locatário. Os tamanhos dos locatários são definidos da seguinte maneira: S - em 50 usuários, M - entre 50 e 500 usuários, e L para acima de 500 usuários.
+
+A tabela a seguir lista a base dos custos da solicitação. Qualquer solicitação não listada tem um custo base de 1.
+
+| Operação | Caminho da Solicitação | Base do Custo Unitário de Recurso | Gravar Custo |
+| --------- | ------------ | ----------------- | ------------------ |
+| OBTER | `applications` | 2 | 0 |
+| OBTER | `applications/{id}/extensionProperties` | 2 | 0 |
+| OBTER | `contracts` | 3 | 0 |
+| POSTAR | `directoryObjects/getByIds` |  3 | 0 |
+| OBTER | `domains/{id}/domainNameReferences` | 4 | 0 |
+| POSTAR | `getObjectsById` | 3 | 0 |
+| OBTER | `groups/{id}/members` | 3 | 0 |
+| OBTER | `groups/{id}/transitiveMembers` | 5 | 0 |
+| POSTAR | `isMemberOf` | 4 | 0 |
+| POSTAR | `me/checkMemberGroups` | 4 | 0 |
+| POSTAR | `me/checkMemberObjects` | 4 | 0 |
+| POSTAR | `me/getMemberGroups` | 2 | 0 |
+| POSTAR | `me/getMemberObjects` | 2 | 0 |
+| OBTER | `me/licenseDetails` | 2 | 0 |
+| OBTER | `me/memberOf` | 2 | 0 |
+| OBTER | `me/ownedObjects` | 2 | 0 |
+| OBTER | `me/transitiveMemberOf` | 2 | 0 |
+| OBTER | `oauth2PermissionGrants` | 2 | 0 |
+| OBTER | `oauth2PermissionGrants/{id}` | 2 | 0 |
+| OBTER | `servicePrincipals/{id}/appRoleAssignments` | 2 | 0 |
+| OBTER | `subscribedSkus` | 3 | 0 |
+| OBTER | `users` | 2 | 0 |
+| OBTER | Qualquer caminho de identidade não listado na tabela | 1 | 0 |
+| POSTAR | Qualquer caminho de identidade não listado na tabela | 1 | 1 |
+| PATCH | Qualquer caminho de identidade não listado na tabela | 1 | 1 |
+| PUT | Qualquer caminho de identidade não listado na tabela | 1 | 1 |
+| EXCLUIR | Qualquer caminho de identidade não listado na tabela | 1 | 1 |
+
+Outros fatores que afetam um custo da solicitação:
+
+- Usar o `$select` reduz os custos por 1
+- Usar o `$expand` aumenta os custos por 1
+- Usar o `$top` com um valor menor que 20 reduz os custos por 1
+
+> **Observação:** Um custo da solicitação nunca pode ser menor do que 1. Qualquer custo da solicitação que se aplica a um caminho da solicitação iniciado por `me/` também se aplica a solicitações equivalentes iniciadas por `users/{id | userPrincipalName}/`.
+
+#### <a name="additional-headers"></a>Cabeçalhos adicionais
+
+##### <a name="request-headers"></a>Cabeçalhos de solicitação
+
+- **x-ms-throttle-priority** - se o cabeçalho não existir ou se estiver definido com qualquer outro valor, ele indicará uma solicitação normal. Recomendamos definir a prioridade para `high` somente para as solicitações iniciadas pelo usuário. Os valores desse cabeçalho podem ser os seguintes:
+  - Baixa - Indica que a solicitação tem prioridade baixa. Limitando esta solicitação não causa falhas visíveis ao usuário.
+  - Normal - Padrão se nenhum valor for fornecido. Indica que a solicitação é a de prioridade padrão.
+  - Alta - Indica que a solicitação é de alta prioridade. Limitando esta solicitação causa falhas visíveis ao usuário.
+
+> **Observação:** Se as solicitações forem limitadas, as solicitações de baixa prioridade serão limitadas primeiro, as solicitações de prioridade normal em segundo e as solicitações de alta prioridade por último. Usar a prioridade no cabeçalho da solicitação não altera os limites.
+
+##### <a name="regular-responses-requests"></a>Solicitações de respostas regulares
+
+- **x-ms-resource-unit** - Indica a unidade de recurso usada para esta solicitação. Os valores são números inteiros positivos.
+- **x-ms-throttle-limit-percentage** - Retornado somente quando a aplicação consumiu mais de 0.8 de seu limite. O valor varia de 0.8 a 1.8 e é uma porcentagem do uso do limite. O valor pode ser usado pelos chamadores para configurar um alerta e tomar providências.
+
+##### <a name="throttled-responses-requests"></a>Solicitações de respostas limitadas
+
+- **x-ms-throttle-scope** - exemplo. `Tenant_Application/ReadWrite/9a3d526c-b3c1-4479-ba74-197b5c5751ae/0785ef7c-2d7a-4542-b048-95bcab406e0b`. Indica o escopo de limitação com o seguinte formato `<Scope>/<Limit>/<ApplicationId>/<TenantId|UserId|ResourceId>`:
+  - Escopo: (cadeia de caracteres, obrigatório)
+    - Tenant_Application - Todas as solicitações para um determinado locatário da aplicação atual.
+    - Tenant - Todas as solicitações para o locatário atual, independentemente da aplicação.
+    - Application - Todas solicitações para a aplicação atual.
+  - Limit: (cadeia de caracteres, obrigatório)
+    - Read: Solicitações de leitura do escopo (GET)
+    - Write: Solicitações de gravação do escopo (POST, PATCH, PUT, DELETE...)
+    - ReadWrite: Todas solicitações do escopo (qualquer)
+  - ApplicationId (GUID, obrigatório)
+  - TenantId|UserId|ResourceId: (GUID, obrigatório)
+- **x-ms-throttle-information** - Indica o motivo para a limitação e pode ter qualquer valor (cadeia de caracteres). O valor é fornecido para fins de solução de problemas e diagnósticos. Alguns exemplos incluem:
+  - CPULimitExceeded - Limitando porque o limite para alocação do CPU está excedido.
+  - WriteLimitExceeded - limitando porque o limite para gravação está excedido.
+  - ResourceUnitLimitExceeded - Limitando porque o limite para a unidade de recurso alocada foi excedido.
 
 ### <a name="information-protection"></a>Proteção de informações
 
