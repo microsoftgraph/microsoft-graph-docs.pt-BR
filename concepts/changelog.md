@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d8635dfaf2358d8439b4dbc00d87db0166bb2d98
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 66e0b8d31bbd89ab09516c5c1d355889d06dca21
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598399"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630358"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -25,6 +25,22 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | v1.0 | O controle de alterações por meio de [consultas delta](/graph/api/event-delta) está disponível para o Microsoft Graph para o Governo dos Estados Unidos. |
 | Exclusão | Beta | Removida a propriedade **includeProperties** da entidade de [subscription](/graph/api/resources/subscription?view=graph-rest-beta). Esta propriedade é substituída pela propriedade **includeResourceData**. |
 | Adição | Beta | Adicionada a capacidade de obter as [notificações de alteração entregues pelo Hub de Eventos](/graph/api/concepts/change-notifications-delivery?view=graph-rest-beta). |
+
+### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionado o método [getM365AppUserDetail](/graph/api/reportRoot-getM365AppUserDetail?view=graph-rest-beta). |
+| Adição | beta | Adicionado o método[getM365AppUserCounts](/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-beta). |
+| Adição | beta | Adicionado o método[getM365AppPlatformUserCounts](/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-beta). |
+
+### <a name="teamwork"></a>Teamwork 
+
+| **Tipo de alteração** | **Versão** | **Descrição** |
+|:---|:---|:---|
+|Adição|beta|Adicionada a propriedade **contentBytes** ao recurso [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta).|
+|Adição|beta|Adicionada a propriedade **contentType** ao recurso [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta).|
+|Adição|beta|Adicionado suporte para o envio de imagens embutidas ao recurso [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta).|
 
 ## <a name="july-2020"></a>Julho de 2020
 
