@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 421ed3b1c439a7ae550100a113c651ab3e0a34b9
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 8f1577ab7ded60dfd3cad88641bfb11f83d6ad5b
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791066"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630288"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>tipo de recurso chatMessageHostedContent
 
@@ -19,9 +19,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa o conteúdo de equipes hospedados em uma mensagem de chat, como imagens ou trechos de código.
-[Anexos de arquivo](chatmessageattachment.md) não são conteúdo hospedado, eles são armazenados no SharePoint ou no onedrive.
+[Anexos de arquivo](chatmessageattachment.md) não são conteúdo hospedado; Eles são armazenados no SharePoint ou no OneDrive.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -32,7 +32,18 @@ Representa o conteúdo de equipes hospedados em uma mensagem de chat, como image
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| Somente leitura.|
+|id            |String       | Somente leitura. Representa o identificador de conteúdo hospedado da mensagem de chat.|
+|contentBytes  |Edm.Binary   | Somente gravação. Ao lançar o novo conteúdo hospedado da mensagem de chat, representa os bytes da carga. Eles são representados como uma cadeia de caracteres base64Encoded.|
+|contentType   |String       | Somente gravação. Ao lançar o novo conteúdo hospedado da mensagem de chat, representa o tipo de conteúdo, como image/png.|
+
+### <a name="instance-attributes"></a>Atributos de instância
+
+Atributos de instância são propriedades com comportamentos especiais.
+Essas propriedades são temporárias e definem o comportamento que o serviço deve executar ou fornecer valores de propriedade de curto prazo, como uma URL de download para um item que expira.
+
+| Nome da propriedade                     | Tipo   | Descrição
+|:----------------------------------|:-------|:--------------------------------
+| @microsoft. Graph. TemporaryId      | cadeia de caracteres | Somente gravação. Representa o TemporaryId do conteúdo hospedado durante a postagem de uma mensagem para fazer referência ao conteúdo hospedado no recurso **chat** que está sendo enviado.|
 
 ## <a name="relationships"></a>Relações
 
@@ -54,7 +65,10 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "id": "String (identifier)"
+  "@microsoft.graph.temporaryId": "String (identifier)",
+  "id": "String (identifier)",
+  "contentBytes": "String (binary)",
+  "contentType": "String",
 }
 ```
 

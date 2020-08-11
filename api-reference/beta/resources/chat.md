@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: dc68d36c63a2cd88eeb7fed91d187b220cbb805d
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 827fb1564c9fc0c963933f94a6e04340b500c21c
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384378"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630302"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso chat
 
@@ -28,8 +28,8 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 |[Obter bate-papo](../api/chat-get.md) | [chat](channel.md) | Leia as propriedades e as relações do chat.| **Somente delegada** |
 |[Listar membros de chat](../api/conversationmember-list.md) | coleção [conversationmember](conversationmember.md) | Ver a lista de todos os usuários no bate-papo.| Delegado e aplicativo * |
 |[Obter membro de chat](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Obter um único usuário no bate-papo.| Delegado e aplicativo * |
-|[Listar mensagens em um bate-papo](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Receba mensagens em um bate-papo de um para um ou de grupo. | Delegado e aplicativo * |
-|[Receba uma mensagem no bate-papo](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. | Delegado e aplicativo * |
+|[Listar mensagens em um bate-papo](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Receba mensagens em um bate-papo de um para um ou de grupo. | Delegado e aplicativo * |
+|[Receba uma mensagem no bate-papo](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. | Delegado e aplicativo * |
 
 \*> **Observação:** Ao usar permissões de aplicativo, certifique-se de saber como você vai obter a ID de chat. Como a lista de chats com permissões de aplicativo não é suportada, nem todos os cenários são possíveis. É possível obter IDs de chat com permissões delegadas e de notificações de [alteração para o/chats/allMessages](../api/subscription-post-subscriptions.md) com permissões de aplicativo.
 
@@ -37,9 +37,9 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-| id| Cadeia de caracteres| O identificador exclusivo do chat. Somente leitura.|
+| id| Cadeia de caracteres| O identificador exclusivo do chat. Apenas leitura.|
 | topic| String|  Opcion Assunto ou tópico do chat. Disponível apenas para bate-papos de grupo.|
-| createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Somente leitura.|
+| createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Apenas leitura.|
 | lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi renomeado ou a associação foi alterada. lastUpdatedDateTime não é atualizado quando uma mensagem é enviada ao chat. Somente leitura.|
 
 ## <a name="relationships"></a>Relações

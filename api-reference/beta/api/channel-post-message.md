@@ -1,88 +1,96 @@
 ---
-title: Responder a uma mensagem em um canal
-description: Responder a uma mensagem existente em um canal.
-author: nkramer
+title: Criar chatMessage em um canal
+description: Criar um novo chat no canal especificado.
 localization_priority: Normal
+author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 135815f373799fa0f75e104894b61d54115a476c
+ms.openlocfilehash: 8ade0014f24abd169d71ca2d0b0ea6b9fffc2517
 ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630260"
+ms.locfileid: "46630377"
 ---
-# <a name="reply-to-a-message-in-a-channel"></a>Responder a uma mensagem em um canal
+# <a name="create-chatmessage-in-a-channel"></a>Criar chatMessage em um canal
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar uma nova resposta para um [chat](../resources/chatmessage.md) em um [canal](../resources/channel.md)especificado.
+Criar um novo [chat](../resources/chatmessage.md) no [canal](../resources/channel.md)especificado.
 
-> **Observação**: não é recomendável usar essa API para a migração de dados. Ele não tem a taxa de transferência necessária para uma migração típica.
+*Não é recomendável usar essa API para a migração de dados. Ele não tem a taxa de transferência necessária para uma migração típica.*
 
 > **Observação**: trata-se de uma violação dos [termos de uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) para usar o Microsoft Teams como um arquivo de log. Só envie mensagens que as pessoas lerám.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | ChannelMessage. Send, Group. ReadWrite. All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegada (conta corporativa ou de estudante)     | ChannelMessage. Send, Group. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-POST /teams/{id}/channels/{id}/messages/{id}/replies
+POST /teams/{id}/channels/{id}/messages
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+
+| Nome          | Descrição   |
+|:--------------|:--------------|
+| Autorização | Portador {código}. Obrigatório. |
+| Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [Message](../resources/chatmessage.md) . Somente a Propriedade Body é obrigatória, outras propriedades são opcionais.
+
+No corpo da solicitação, forneça uma representação JSON de um objeto [chat](../resources/chatmessage.md) . Somente a Propriedade Body é obrigatória, outras propriedades são opcionais.
+
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta com a [mensagem](../resources/chatmessage.md) que foi criada.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [chat](../resources/chatmessage.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
 Para obter uma lista mais abrangente de exemplos, consulte [criar chat em um canal ou em um chat](chatmessage-post.md).
 
 ### <a name="request"></a>Solicitação
-Veja a seguir um exemplo de uma solicitação.
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_reply_message"
+  "name": "create_chatmessage_from_channel"
 }-->
+
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
 Content-type: application/json
 
 {
   "body": {
-    "contentType": "html",
     "content": "Hello World"
   }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/post-reply-message-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-reply-message-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-reply-message-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -91,18 +99,22 @@ Content-type: application/json
 ### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages('id-value')/replies/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages/$entity",
     "id": "id-value",
     "replyToId": null,
     "etag": "id-value",
@@ -140,7 +152,7 @@ Content-length: 160
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create a reply message",
+  "description": "Send message",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

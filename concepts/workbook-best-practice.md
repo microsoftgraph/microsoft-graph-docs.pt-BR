@@ -4,12 +4,12 @@ description: Listar as práticas recomendadas e exemplos para as APIs do Excel n
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d824cf89a07c81bae3a2e129896da9af282be49c
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: ae790dea42e3ade46b74735ad826189a13a282d5
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598567"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630344"
 ---
 # <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>Práticas recomendadas para trabalhar com a API do Excel no Microsoft Graph
 
@@ -141,6 +141,8 @@ O exemplo a seguir cria uma sessão usando o padrão de operação de longa exec
 
 ### <a name="initial-request-to-create-session"></a>Solicitação inicial para criar sessão
 
+#### <a name="request"></a>Solicitação
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
 Prefer: respond-async
@@ -150,8 +152,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Resposta
-
+#### <a name="response"></a>Resposta
 O padrão de operação de execução longa retornará uma `202 Accepted` resposta semelhante à seguinte.
 
 ```http
@@ -183,6 +184,7 @@ O exemplo a seguir mostra a resposta quando a solicitação falha.
 ```http
 HTTP/1.1 500 Internal Server Error
 Content-type: application/json
+
 {
   "error":{
     "code": "internalServerError",
@@ -197,11 +199,14 @@ Content-type: application/json
     }
   }
 }
+```
+
+### <a name="poll-status-of-the-long-running-create-session"></a>Status de pesquisa da sessão de criação de execução longa
 
 
-### Poll status of the long-running create session
+Com o padrão de operação de execução longa, você pode obter o status de criação no local especificado usando a seguinte solicitação. O intervalo sugerido para o status da pesquisa é de cerca de 30 segundos. O intervalo máximo não deve ser superior a 4 minutos.
 
-With the long-running operation pattern, you can get the creation status at specified location by using the following request. The suggested interval to poll status is around 30 seconds. The maximum interval should be no more than 4 minutes.
+#### <a name="request"></a>Solicitação
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
@@ -209,11 +214,14 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 }
 ```
 
+#### <a name="response"></a>Resposta
+
 A seguir está a resposta quando a operação tem um status de `running` .
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": {operation-id},
     "status": "running"
@@ -225,6 +233,7 @@ A seguir está a resposta quando o status da operação é `succeeded` .
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": {operation-id},
     "status": "succeeded",
@@ -237,6 +246,7 @@ A seguir está a resposta quando o status da operação é `failed` .
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "id": {operation-id},
   "status": "failed",
@@ -259,6 +269,8 @@ Para obter mais detalhes sobre erros, consulte [códigos de erro](/concepts/work
 
 ### <a name="acquire-session-information"></a>Obter informações de sessão
 
+#### <a name="request"></a>Solicitação
+
 Com o status de `succeeded` , você pode obter as informações da sessão criada por meio de `resourceLocation` uma solicitação semelhante à seguinte.
 
 ```http
@@ -267,11 +279,13 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ses
 }
 ```
 
+#### <a name="response"></a>Resposta
 Esta é a resposta.
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": "id-value",
     "persistChanges": true

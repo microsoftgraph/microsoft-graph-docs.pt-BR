@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: conceptualPageType
-ms.openlocfilehash: 07b8fdf5486eee041a40b7bc6dd3169ac1af8761
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 0c13ebeb6381e894684a14be42772d69b5d31e62
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896837"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630323"
 ---
 # <a name="use-the-onenote-rest-api"></a>Usar o API REST do OneNote
 
@@ -20,7 +20,8 @@ O Microsoft Graph permite que o seu aplicativo obtenha acesso autorizado às ses
 
 ## <a name="root-url"></a>URL raiz
 A URL raiz de serviço do OneNote usa o formato a seguir para todas as chamadas da API do OneNote.
-```
+
+```http
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
@@ -36,7 +37,7 @@ O local pode ser blocos de anotações do usuário no Microsoft 365 ou no OneDri
 ## <a name="user-notebooks"></a>Blocos de anotações do usuário
 Para acessar blocos de anotações pessoais no OneDrive do consumidor ou no OneDrive for Business, use uma das seguintes URLs:
 
-```
+```http
 https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{userPrincipalName}/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
@@ -50,13 +51,13 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 
 Para acessar blocos de anotações que pertencem a um grupo, use a seguinte URL raiz de serviço:
 
-```
+```http
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 ## <a name="sharepoint-site-notebooks"></a>Blocos de anotações do SharePoint
 Para acessar blocos de anotações que pertencem a um site de equipe do SharePoint, use a seguinte URL raiz de serviço:
 
-```
+```http
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 

@@ -1,16 +1,16 @@
 ---
 title: Visão geral da API de sincronização do Azure AD
-description: Automatizar a criação, a manutenção e a remoção de identidades em aplicativos em nuvem.
+description: Automatizar o provisionamento de identidades de sistemas de RH, Active Directory e Azure Active Directory para aplicativos em nuvem.
 localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1e1abd5adc0a36f8ece4f33fde45a5c17280f4e2
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d1a2de9dcac9765899fa3eaff6173a3791984ade
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217609"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630316"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Visão geral da API de sincronização do Azure AD
 
@@ -18,7 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A sincronização de identidade do Azure Active Directory (Azure AD) (também chamada de "provisionamento") permite automatizar a criação, a manutenção e a remoção de identidades em aplicativos de nuvem (software como serviço ou SaaS) como o Dropbox, Salesforce, ServiceNow e outros. Você pode usar as APIs de sincronização no Microsoft Graph para gerenciar a sincronização de identidade de forma programática, incluindo:
+A sincronização de identidade do Azure Active Directory (Azure AD) (também chamada de "provisionamento") permite automatizar o provisionamento (criação, manutenção) e desprovisionamento (remoção) de identidades de qualquer um dos seguintes:
+- Active Directory para o Azure AD
+- WORKDAY para o Azure AD
+- Azure AD para aplicativos em nuvem como o Dropbox, Salesforce, ServiceNow e muito mais 
+
+Você pode usar as APIs de sincronização no Microsoft Graph para gerenciar a sincronização de identidade de forma programática, incluindo:
 
 - Criar, iniciar e interromper trabalhos de sincronização
 - Fazer alterações no esquema de sincronização para trabalhos
