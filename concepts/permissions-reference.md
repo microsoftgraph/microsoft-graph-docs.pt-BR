@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 81f1682bfb47b851728b0521553cac5b74ecd8f0
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 8e99015b86be921d034ca41eb178581c75af49cf
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539119"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630330"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -511,16 +511,14 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |_Chat.Read_ |Ler suas mensagens de bate-papo  |Permite que um aplicativo leia, em seu nome, suas mensagens de bate-papo de um para um ou de grupo no Microsoft Teams. |Não | Não |
 |_Chat.ReadBasic_ |Ler nomes e membros de threads de chat do usuário  |Permite que um aplicativo leia os membros e as descrições de threads de chat individuais e de grupo, em nome do usuário conectado. |Não | Não |
 |_Chat.ReadWrite_ |Leia as suas mensagens de chat e envie novas mensagens   |Permite que um aplicativo leia e envie, em seu nome, suas mensagens de chat individual ou em grupo no Microsoft Teams. |Não | Não |
-|_Chat.Send_ (visualização privada)|Enviar mensagens de chat do usuário  |Permite que o aplicativo envie mensagens de chat individuais e de grupo no Microsoft Teams, em nome do usuário conectado. |Não | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read.All_ |Ler todas as mensagens de bate-papo  |Permite que um aplicativo leia, sem um usuário conectado, suas mensagens de bate-papo de um para um ou de grupo no Microsoft Teams. |Sim | Não |
-|_Chat.ReadBasic.All_ |Ler nomes e membros de threads de chat do usuário  |Ler nomes e membros de todos os threads de chat. |Não | Não |
+|_Chat.ReadBasic.All_ |Ler nomes e membros de threads de chat do usuário  |Ler nomes e membros de todos os threads de chat. |Sim | Não |
 |_Chat.UpdatePolicyViolation.All_ |Sinalizar mensagens de chat para a política de violação |Permite que o aplicativo atualize as mensagens de chat de grupo ou Microsoft Teams 1:1, aplicando um conjunto de propriedades de violação da política de prevenção contra perda de dados (DLP) para controlar a saída de processamento DLP. | Sim | Não |
-|_Chat.Send.All_ (visualização privada)|Enviar mensagens de chat do usuário  |Permite que um aplicativo envie mensagens de chat individuais e de grupo no Microsoft Teams, sem um usuário conectado. |Não | Não |
 
 > **Observação:** para mensagens em um canal, consulte [permissões ChannelMessage](#channel-message-permissions).
 
@@ -1983,7 +1981,7 @@ A permissão _User.ReadBasic.All_ restringe o acesso do aplicativo a um conjunto
 - displayName
 - givenName
 - Email
-- Foto
+- photo
 - surname
 - userPrincipalName
 
