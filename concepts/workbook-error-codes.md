@@ -4,12 +4,12 @@ description: Lista e descreve os códigos de erro e as mensagens de pastas de tr
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 26ddbdb9e1320a999e763a1c6b844f944a7de6f7
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 8c975507b826f305ed3a0c994e5aa86384095e94
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408046"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643909"
 ---
 # <a name="error-codes-for-workbooks-and-charts-apis-in-microsoft-graph"></a>Códigos de erro para APIs de planilhas e gráficos no Microsoft Graph
 
@@ -43,6 +43,7 @@ A seguir estão alguns erros adicionais que seu aplicativo pode encontrar no pri
 | **accessDenied**         | Você não pode realizar a operação solicitada.
 | **badRequestUncategorized**               | A solicitação está incorreta ou foi mal formada.
 | **conflictUncategorized**                   | O estado atual está em conflito com o que a solicitação espera.
+| **filteredRangeConflict**                   | A operação falhou porque está em conflito com um intervalo filtrado.
 | **forbiddenUncategorized**                    | A solicitação não é permitida.
 | **gatewayTimeoutUncategorized**         | O serviço não pôde concluir a solicitação dentro do limite de tempo.
 | **generalException**         | Ocorreu um erro interno ao processar a solicitação.
