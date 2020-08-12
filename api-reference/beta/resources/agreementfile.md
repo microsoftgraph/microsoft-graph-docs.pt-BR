@@ -3,22 +3,22 @@ title: tipo de recurso contratofile
 description: Representa um arquivo de contrato de uso personalizável que um locatário gerencia com o Azure Active Directory (Azure AD). Ele contém metadados sobre o arquivo de contrato (por exemplo, o nome, o idioma e se é o arquivo padrão).
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ea78059ecf29f1cadb9634492ced726775f5614d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: raprakasMSFT
+ms.openlocfilehash: 0f8030680088a99c598d5c3576792583758840d9
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508370"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643972"
 ---
-# <a name="agreementfile-resource-type"></a><span data-ttu-id="1a833-104">tipo de recurso contratofile</span><span class="sxs-lookup"><span data-stu-id="1a833-104">agreementFile resource type</span></span>
+# <a name="agreementfile-resource-type"></a><span data-ttu-id="c9732-104">tipo de recurso contratofile</span><span class="sxs-lookup"><span data-stu-id="c9732-104">agreementFile resource type</span></span>
 
-<span data-ttu-id="1a833-105">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="1a833-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c9732-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c9732-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1a833-106">Representa um arquivo de contrato de uso personalizável que um locatário gerencia com o Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="1a833-106">Represents a customizable terms of use agreement file that a tenant manages with Azure Active Directory (Azure AD).</span></span> <span data-ttu-id="1a833-107">Ele contém metadados sobre o arquivo de contrato (por exemplo, o nome, o idioma e se é o arquivo padrão).</span><span class="sxs-lookup"><span data-stu-id="1a833-107">It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file).</span></span>
+<span data-ttu-id="c9732-106">Representa um arquivo de contrato de uso personalizável que um locatário gerencia com o Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="c9732-106">Represents a customizable terms of use agreement file that a tenant manages with Azure Active Directory (Azure AD).</span></span> <span data-ttu-id="c9732-107">Ele contém metadados sobre o arquivo de contrato (por exemplo, o nome, o idioma e se é o arquivo padrão).</span><span class="sxs-lookup"><span data-stu-id="c9732-107">It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file).</span></span>
 
 <!--
 ## Methods
@@ -30,22 +30,26 @@ ms.locfileid: "42508370"
 | [Delete](../api/agreementfile-delete.md) | None | Delete an **agreementFile** object. |
 -->
 
-## <a name="properties"></a><span data-ttu-id="1a833-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1a833-108">Properties</span></span>
-| <span data-ttu-id="1a833-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1a833-109">Property</span></span>     | <span data-ttu-id="1a833-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="1a833-110">Type</span></span>        | <span data-ttu-id="1a833-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="1a833-111">Description</span></span> |
+## <a name="properties"></a><span data-ttu-id="c9732-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c9732-108">Properties</span></span>
+| <span data-ttu-id="c9732-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c9732-109">Property</span></span>     | <span data-ttu-id="c9732-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="c9732-110">Type</span></span>        | <span data-ttu-id="c9732-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="c9732-111">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="1a833-112">fileData</span><span class="sxs-lookup"><span data-stu-id="1a833-112">fileData</span></span>|[<span data-ttu-id="1a833-113">agreementFileData</span><span class="sxs-lookup"><span data-stu-id="1a833-113">agreementFileData</span></span>](agreementfiledata.md)|<span data-ttu-id="1a833-114">Dados que representam o documento PDF termos de uso.</span><span class="sxs-lookup"><span data-stu-id="1a833-114">Data representing the terms of use PDF document.</span></span> <span data-ttu-id="1a833-115">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1a833-115">Read-only.</span></span>|
-|<span data-ttu-id="1a833-116">fileName</span><span class="sxs-lookup"><span data-stu-id="1a833-116">fileName</span></span>|<span data-ttu-id="1a833-117">String</span><span class="sxs-lookup"><span data-stu-id="1a833-117">String</span></span>|<span data-ttu-id="1a833-118">Nome do arquivo de contrato (por exemplo, TOU. pdf).</span><span class="sxs-lookup"><span data-stu-id="1a833-118">Name of the agreement file (for example, TOU.pdf).</span></span> <span data-ttu-id="1a833-119">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1a833-119">Read-only.</span></span>|
-|<span data-ttu-id="1a833-120">id</span><span class="sxs-lookup"><span data-stu-id="1a833-120">id</span></span>|<span data-ttu-id="1a833-121">String</span><span class="sxs-lookup"><span data-stu-id="1a833-121">String</span></span>|<span data-ttu-id="1a833-122">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1a833-122">Read-only.</span></span>|
-|<span data-ttu-id="1a833-123">isDefault</span><span class="sxs-lookup"><span data-stu-id="1a833-123">isDefault</span></span>|<span data-ttu-id="1a833-124">Booliano</span><span class="sxs-lookup"><span data-stu-id="1a833-124">Boolean</span></span>|<span data-ttu-id="1a833-125">Indica se este é o arquivo de contrato padrão se nenhuma das culturas corresponder à preferência do cliente.</span><span class="sxs-lookup"><span data-stu-id="1a833-125">Indicates whether this is the default agreement file if none of the cultures matches the client preference.</span></span> <span data-ttu-id="1a833-126">Se nenhum dos arquivos estiver marcado como padrão, o primeiro será tratado como o padrão.</span><span class="sxs-lookup"><span data-stu-id="1a833-126">If none of the files are marked as default, the first one will be treated as the default.</span></span> <span data-ttu-id="1a833-127">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1a833-127">Read-only.</span></span>|
-|<span data-ttu-id="1a833-128">idioma</span><span class="sxs-lookup"><span data-stu-id="1a833-128">language</span></span>|<span data-ttu-id="1a833-129">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="1a833-129">String</span></span>|<span data-ttu-id="1a833-130">Cultura do arquivo de contrato no formato languagecode2-Country/regioncode2.</span><span class="sxs-lookup"><span data-stu-id="1a833-130">Culture of the agreement file in the format languagecode2-country/regioncode2.</span></span> <span data-ttu-id="1a833-131">languagecode2 é um código de duas letras em minúsculas derivado de ISO 639-1.</span><span class="sxs-lookup"><span data-stu-id="1a833-131">languagecode2 is a lowercase two-letter code derived from ISO 639-1.</span></span> <span data-ttu-id="1a833-132">Country/regioncode2 é derivado de ISO 3166 e geralmente consiste em duas letras maiúsculas ou uma marca de idioma BCP-47 (por exemplo, en-US).</span><span class="sxs-lookup"><span data-stu-id="1a833-132">country/regioncode2 is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag (for example, en-US).</span></span> <span data-ttu-id="1a833-133">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1a833-133">Read-only.</span></span>|
-
-## <a name="relationships"></a><span data-ttu-id="1a833-134">Relações</span><span class="sxs-lookup"><span data-stu-id="1a833-134">Relationships</span></span>
-<span data-ttu-id="1a833-135">Nenhum</span><span class="sxs-lookup"><span data-stu-id="1a833-135">None.</span></span>
+|<span data-ttu-id="c9732-112">fileData</span><span class="sxs-lookup"><span data-stu-id="c9732-112">fileData</span></span>|[<span data-ttu-id="c9732-113">agreementFileData</span><span class="sxs-lookup"><span data-stu-id="c9732-113">agreementFileData</span></span>](agreementfiledata.md)|<span data-ttu-id="c9732-114">Dados que representam o documento PDF termos de uso.</span><span class="sxs-lookup"><span data-stu-id="c9732-114">Data representing the terms of use PDF document.</span></span> <span data-ttu-id="c9732-115">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c9732-115">Read-only.</span></span>|
+|<span data-ttu-id="c9732-116">fileName</span><span class="sxs-lookup"><span data-stu-id="c9732-116">fileName</span></span>|<span data-ttu-id="c9732-117">String</span><span class="sxs-lookup"><span data-stu-id="c9732-117">String</span></span>|<span data-ttu-id="c9732-118">Nome do arquivo de contrato (por exemplo, TOU.pdf).</span><span class="sxs-lookup"><span data-stu-id="c9732-118">Name of the agreement file (for example, TOU.pdf).</span></span> <span data-ttu-id="c9732-119">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c9732-119">Read-only.</span></span>|
+|<span data-ttu-id="c9732-120">id</span><span class="sxs-lookup"><span data-stu-id="c9732-120">id</span></span>|<span data-ttu-id="c9732-121">String</span><span class="sxs-lookup"><span data-stu-id="c9732-121">String</span></span>|<span data-ttu-id="c9732-122">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c9732-122">Read-only.</span></span>|
+|<span data-ttu-id="c9732-123">isDefault</span><span class="sxs-lookup"><span data-stu-id="c9732-123">isDefault</span></span>|<span data-ttu-id="c9732-124">Booliano</span><span class="sxs-lookup"><span data-stu-id="c9732-124">Boolean</span></span>|<span data-ttu-id="c9732-125">Indica se este é o arquivo de contrato padrão se nenhuma das culturas corresponder à preferência do cliente.</span><span class="sxs-lookup"><span data-stu-id="c9732-125">Indicates whether this is the default agreement file if none of the cultures matches the client preference.</span></span> <span data-ttu-id="c9732-126">Se nenhum dos arquivos estiver marcado como padrão, o primeiro será tratado como o padrão.</span><span class="sxs-lookup"><span data-stu-id="c9732-126">If none of the files are marked as default, the first one will be treated as the default.</span></span> <span data-ttu-id="c9732-127">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c9732-127">Read-only.</span></span>|
+|<span data-ttu-id="c9732-128">idioma</span><span class="sxs-lookup"><span data-stu-id="c9732-128">language</span></span>|<span data-ttu-id="c9732-129">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="c9732-129">String</span></span>|<span data-ttu-id="c9732-130">Cultura do arquivo de contrato no formato languagecode2-Country/regioncode2.</span><span class="sxs-lookup"><span data-stu-id="c9732-130">Culture of the agreement file in the format languagecode2-country/regioncode2.</span></span> <span data-ttu-id="c9732-131">languagecode2 é um código de duas letras em minúsculas derivado de ISO 639-1.</span><span class="sxs-lookup"><span data-stu-id="c9732-131">languagecode2 is a lowercase two-letter code derived from ISO 639-1.</span></span> <span data-ttu-id="c9732-132">Country/regioncode2 é derivado de ISO 3166 e geralmente consiste em duas letras maiúsculas ou uma marca de idioma BCP-47 (por exemplo, en-US).</span><span class="sxs-lookup"><span data-stu-id="c9732-132">country/regioncode2 is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag (for example, en-US).</span></span> <span data-ttu-id="c9732-133">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c9732-133">Read-only.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="1a833-136">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1a833-136">JSON representation</span></span>
+<!--
+## Relationships
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|localizations|[agreementFileLocalization](agreementfilelocalization.md) collection|The localized version of the agreement files attached to the agreement.|
+-->
 
-<span data-ttu-id="1a833-137">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1a833-137">The following is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c9732-134">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c9732-134">JSON representation</span></span>
+
+<span data-ttu-id="c9732-135">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c9732-135">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
