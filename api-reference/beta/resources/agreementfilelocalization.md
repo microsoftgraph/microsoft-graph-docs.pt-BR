@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso contratofile
-description: Representa um arquivo de contrato de uso personalizável que um locatário gerencia com o Azure Active Directory (Azure AD). Ele contém metadados sobre o arquivo de contrato (por exemplo, o nome, o idioma e se é o arquivo padrão).
+title: tipo de recurso agreementFileLocalization
+description: Representa um contrato de arquivos de política localizado de termos de uso no Azure Active Directory (Azure AD). Ele contém metadados sobre o arquivo de contrato (por exemplo, o nome, o idioma e se é o arquivo padrão).
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 0f8030680088a99c598d5c3576792583758840d9
+ms.openlocfilehash: 63d498b37980a57b3653b41cb337e792b8c1a838
 ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643972"
+ms.locfileid: "46644020"
 ---
-# <a name="agreementfile-resource-type"></a>tipo de recurso contratofile
+# <a name="agreementfilelocalization-resource-type"></a>tipo de recurso agreementFileLocalization
 
 Namespace: microsoft.graph
 
@@ -40,13 +40,6 @@ Representa um arquivo de contrato de uso personalizável que um locatário geren
 |idioma|Cadeia de caracteres|Cultura do arquivo de contrato no formato languagecode2-Country/regioncode2. languagecode2 é um código de duas letras em minúsculas derivado de ISO 639-1. Country/regioncode2 é derivado de ISO 3166 e geralmente consiste em duas letras maiúsculas ou uma marca de idioma BCP-47 (por exemplo, en-US). Somente leitura.|
 
 
-<!--
-## Relationships
-| Relationship | Type        | Description |
-|:-------------|:------------|:------------|
-|localizations|[agreementFileLocalization](agreementfilelocalization.md) collection|The localized version of the agreement files attached to the agreement.|
--->
-
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso.
@@ -56,7 +49,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.agreementFile"
+  "@odata.type": "microsoft.graph.agreementFileLocalization"
 }-->
 
 ```json
@@ -75,7 +68,7 @@ Veja a seguir uma representação JSON do recurso.
 <!--
 {
   "type": "#page.annotation",
-  "description": "agreementFile resource",
+  "description": "agreementFileLocalization resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 6ac24e7a46441b59e621425517371db9227b4010
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: b6b3ca4865e56961f6388e9be1a567de73026472
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218482"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643992"
 ---
 # <a name="agreement-resource-type"></a>tipo de recurso de contrato
 
@@ -28,7 +28,7 @@ Representa o contrato de termos de uso personalizável de um locatário que é c
 | [Listar contratos](../api/agreement-list.md) | coleção de [contratos](agreement.md) | Obtenha uma coleção de objetos de contrato. |
 | [Obter contrato](../api/agreement-get.md) | [contrato](agreement.md) | Leia as propriedades e as relações de um objeto de contrato. |
 | [Atualizar contrato](../api/agreement-update.md) | [contrato](agreement.md) | Atualize um objeto de contrato. |
-| [Excluir contrato](../api/agreement-delete.md) | None | Exclua um objeto de contrato. |
+| [Excluir contrato](../api/agreement-delete.md) | Nenhum | Exclua um objeto de contrato. |
 <!--
 | [Create agreementFile](../api/agreement-post-files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
 | [List files](../api/agreement-list-files.md) | [agreementFile](agreementfile.md) collection | Get an agreementFile object collection. |
@@ -37,14 +37,21 @@ Representa o contrato de termos de uso personalizável de um locatário que é c
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|Cadeia de caracteres|Nome para exibição do contrato.|
+|displayName|String|Nome para exibição do contrato. O nome para exibição é usado para o controle interno do contrato, mas não é exibido para os usuários finais que exibem o contrato.|
 |id|String| Somente leitura.|
-|isViewingBeforeAcceptanceRequired|Boolean|Indica se o usuário tem que expandir e exibir o contrato antes de aceitar.|
+|isPerDeviceAcceptanceRequired|Booliano|Essa configuração permite que você exija que os usuários finais aceitem este contrato em todos os dispositivos dos quais eles estão acessando-os. O usuário final será solicitado a registrar o dispositivo no Azure AD, caso ainda não tenha feito isso.|
+|isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário tem que expandir o contrato antes de aceitar.|
+|termsExpiration|[termsExpiration](termsexpiration.md)| Cronograma de expiração e frequência de contrato para todos os usuários. |
+|userReacceptRequiredFrequency|Duração|A duração após a qual o usuário deve aceitar novamente os termos de uso. O valor é representado no formato ISO 8601 para durações.|
+
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|arquivos|coleção [agreementfile](agreementfile.md)|Somente leitura. PDFs vinculados a este contrato.|
+|aceitação|Coleção [agreementAcceptance](agreementacceptance.md)|Somente leitura. Informações sobre as aceitações deste contrato.|
+|arquivos|coleção [agreementFileLocalization](agreementfilelocalization.md)| PDFs vinculados a este contrato. **Observação:** Essa propriedade está no processo de ser preterido. Propriedade do **arquivo** use em vez disso.|
+|file|[contrato de licença](agreementfile.md) | PDFs vinculados a este contrato.|
+
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -61,9 +68,14 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "displayName": "String",
   "id": "String (identifier)",
-  "isViewingBeforeAcceptanceRequired": true
+  "displayName": "MSGraph Sample",
+  "isViewingBeforeAcceptanceRequired": true,
+  "isPerDeviceAcceptanceRequired": false,
+  "termsExpiration": {
+    "startDateTime": "2018-10-01T00:00:00.0000000Z",
+    "frequency": "PT1M"
+  }
 }
 
 ```

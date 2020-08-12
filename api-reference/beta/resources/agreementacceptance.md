@@ -3,18 +3,18 @@ title: tipo de recurso agreementAcceptance
 description: Representa o status atual de um usuário dentro do escopo dos termos de uso personalizáveis de uma empresa, fornecido pelo Azure Active Directory (Azure AD).
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 28f3c0adccb853ac8daddca9aaad70a2c0b35e2c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: raprakasMSFT
+ms.openlocfilehash: 18bcf00cad681d3003faf2dce442e4ea1f58bdb0
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508377"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643971"
 ---
 # <a name="agreementacceptance-resource-type"></a>tipo de recurso agreementAcceptance
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,12 +35,17 @@ Representa o status atual de um usuário dentro do escopo dos termos de uso pers
 |:-------------|:------------|:------------|
 |agreementFileId|String|ID do arquivo de contrato aceito pelo usuário.|
 |agreementid|String|ID do contrato.|
+|deviceDisplayName|Cadeia de caracteres|O nome de exibição do dispositivo usado para aceitar o contrato.|
+|deviceId|Cadeia de caracteres|O identificador exclusivo do dispositivo usado para aceitar o contrato.|
+|deviceOSType|String|O sistema operacional usado para aceitar o contrato.|
+|deviceOSVersion|String|A versão do sistema operacional do dispositivo usado para aceitar o contrato.    |
+|expirationDateTime|DateTimeOffset|A data e hora da validade da aceitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
 |recordedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |estado|string| Os valores possíveis são: `accepted` e `declined`.|
-|userDisplayName|String|Nome para exibição do usuário quando a aceitação foi registrada.|
+|userDisplayName|Cadeia de caracteres|Nome para exibição do usuário quando a aceitação foi registrada.|
 |userEmail|Cadeia de caracteres|Email do usuário quando a aceitação foi registrada.|
-|userId|String|ID do usuário que aceitou o contrato.|
+|userId|Cadeia de caracteres|ID do usuário que aceitou o contrato.|
 |userPrincipalName|String|UPN do usuário quando a aceitação foi registrada.|
 
 ## <a name="relationships"></a>Relações
@@ -61,17 +66,21 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "agreementFileId": "String",
-  "agreementId": "String",
-  "id": "String (identifier)",
-  "recordedDateTime": "String (timestamp)",
-  "state": "string",
-  "userDisplayName": "String",
-  "userEmail": "String",
-  "userId": "String",
-  "userPrincipalName": "String"
+      "id": "String (identifier)",
+      "agreementId": "String",
+      "userId": "String",
+      "deviceId": "String",
+      "deviceDisplayName": "String",
+      "deviceOSType": "String",
+      "deviceOSVersion": "String",
+      "agreementFileId": "String",
+      "userDisplayName": "String",
+      "userPrincipalName": "String",
+      "userEmail": "String",
+      "recordedDateTime": "String (timestamp)",
+      "expirationDateTime": "String",
+      "state": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,12 +5,12 @@ author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 065e7cdc84a353c4636fc4e7d13c32d22c7bce70
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: d7b60e19cb0d3b1c6b015c47ddac604f4ebb2d55
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142318"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643999"
 ---
 # <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>Automatizar a configuração do proxy de aplicativo usando a API do Microsoft Graph
 
@@ -22,21 +22,21 @@ Verifique se você tem as permissões correspondentes para chamar as seguintes A
 
 |Tipo de recurso |Método |
 |---------|---------|
-| [applicationtemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)| [Instanciar applicationtemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) |
-|[Emprego](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)|[Atualizar aplicativo](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Adicionar aplicativo ao um conector](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
+| [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)| [Instanciar o applicationtemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) |
+|[aplicativos](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)|[Atualizar aplicativo](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Adicionar aplicativo ao um conector](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
 |[conector](https://docs.microsoft.com/graph/api/resources/connector?view=graph-rest-beta)| [Obter conectores](https://docs.microsoft.com/graph/api/connector-get?view=graph-rest-beta)
-|[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Criar um conector](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Adicionar conector ao conector](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
-|[servicePrincipalName](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Atualizar o servicePrincipalName](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Criar appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
+|[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Criar connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Adicionar conector a connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
+|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Atualizar servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Criar appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
 >[!NOTE]
 > As solicitações mostradas neste artigo usam valores de amostra. Você precisará atualizá-los. Os objetos Response mostrados também podem ser reduzidos para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 ## <a name="step-1-create-a-custom-application"></a>Etapa 1: criar um aplicativo personalizado
 
-### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>Entrar no Microsoft Graph Explorer (recomendado), postmaster ou qualquer outro cliente da API que você usa
+### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>Entrar no Microsoft Graph Explorer (recomendado), no Postman ou em qualquer outro cliente de API que você usa
 
-1. Inicie [o Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-2. Selecione **entrar com a Microsoft** e entre usando um administrador global do Azure ad ou credenciais de administrador de aplicativos.
+1. Iniciar [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+2. Selecione **Entrar com a Microsoft** e entre usando as credenciais de administrador global do Azure AD ou de Administrador do Aplicativo.
 3. Após entrar com êxito, você verá os detalhes da conta de usuário no painel esquerdo.
 
 ### <a name="create-a-custom-application"></a>Criar um aplicativo personalizado
@@ -139,8 +139,8 @@ Content-type: application/json
 ```
 
 
-### <a name="retrieve-app-object-id-and-service-principal-object-id"></a>Recuperar ID de objeto do aplicativo e ID de objeto da entidade de serviço
-Use a resposta da chamada anterior para recuperar e salvar a ID de objeto de aplicativo e a ID de objeto de entidade de serviço.
+### <a name="retrieve-app-object-id-and-service-principal-object-id"></a>Recuperar ID de objeto do aplicativo e ID do objeto da entidade de serviço
+Use a resposta da chamada anterior para recuperar e salvar a ID de objeto do aplicativo e a ID do objeto da entidade de serviço.
 ```
 "application": {
     "objectId": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83"
@@ -205,7 +205,7 @@ HTTP/1.1 204 No content
 ### <a name="set-the-redirecturi-identifieruri-and-homepageurl-properties"></a>Definir as propriedades redirectUri, identifierUri e homepageUrl
 Atualize as propriedades **redirectUri**, **identifierUri**e **HOMEPAGEURL** do aplicativo para a URL externa.
 
-#### <a name="request"></a>Solicitar
+#### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "request",
@@ -310,7 +310,7 @@ Content-type: application/json
 ### <a name="create-a-connectorgroup"></a>Criar um um dos conectores
 Para este exemplo, um novo grupo de conectores é criado com o nome "grupo de conectores de demonstração do IWA" que é usado para o aplicativo. Você também pode ignorar esta etapa se o seu conector já estiver atribuído ao conector apropriado. Recupere e salve a ID de objeto do The Connector para usar na próxima etapa.
 
-#### <a name="request"></a>Solicitar
+#### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "request",
@@ -348,7 +348,7 @@ Content-type: connectorGroup/json
 
 ### <a name="assign-a-connector-to-the-connectorgroup"></a>Atribuir um conector ao conector
 
-#### <a name="request"></a>Solicitar
+#### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "request",
@@ -423,7 +423,7 @@ HTTP/1.1 204 No content
 Este aplicativo usa a autenticação integrada do Windows (IWA). Para configurar o IWA, defina as propriedades de logon único no tipo de recurso [singleSignOnSettings](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) .
 
 
-#### <a name="request"></a>Solicitar
+#### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "request",
@@ -458,7 +458,7 @@ Content-type: appplication/json
 HTTP/1.1 204 No content
 ```
 
-## <a name="step-5-assign-users"></a>Etapa 5: atribuir usuários
+## <a name="step-5-assign-users"></a>Etapa 5. Atribuir usuários
 ### <a name="retrieve-approle-for-the-applicaiton"></a>Recuperar appRole para o aplicativo
 
 #### <a name="request"></a>Solicitação
@@ -547,6 +547,8 @@ Use as propriedades a seguir para atribuir um usuário ao aplicativo.
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -563,6 +565,12 @@ Content-type: appRoleAssignments/json
   "resourceId":"b00c693f-9658-4c06-bd1b-c402c4653dea"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>Resposta
 
 <!-- {
@@ -586,10 +594,10 @@ Content-type: application/json
 }
 ```
 
-Para obter mais informações, consulte tipo de recurso [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-beta) .
+Para saber mais, confira o tipo de recurso [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-beta).
 
 
 
 ## <a name="additional-steps"></a>Etapas adicionais
 - [Configuração automatizada usando exemplos do PowerShell para o proxy de aplicativo](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
-- [Automatizar a configuração do aplicativo SSO baseado em SAML com a API do Microsoft Graph](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)
+- [Automação da configuração do aplicativo de SSO baseado em SAML com o Microsoft Graph API](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)

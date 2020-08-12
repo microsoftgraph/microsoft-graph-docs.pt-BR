@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 36555a946aa9092d5cab6e27548a16ba783d738e
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 1301b8dc1b1e327b8bef573ec307ea25b066cf76
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598133"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643964"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -23,7 +23,7 @@ Inscreve um aplicativo de ouvinte para receber notificações de alterações qu
 ## <a name="permissions"></a>Permissões
 
 A criação de uma assinatura requer permissão de leitura para o recurso. Por exemplo, para obter notificações de alteração em mensagens, seu aplicativo precisa da permissão mail. Read. 
- 
+
  Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
@@ -51,7 +51,7 @@ as assinaturas do **chat** com permissões delegadas não dão suporte a dados d
 
 as assinaturas do **chat** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura do **chat** , você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Observação:** `/teams/allMessages` e que `/chats/allMessages` estão atualmente em versão prévia. Durante a visualização, você pode usar essa API sem taxas, sujeita aos [termos de uso das APIs da Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). No entanto, os usuários de aplicativos que usam a API podem ser solicitados a ter assinaturas para ofertas específicas do Microsoft 365. Na disponibilidade geral, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados acessados por meio da API.
+> **Observação:** `/teams/allMessages` e `/chats/allMessages` que estão atualmente em versão prévia, e você pode usar essa API sem taxas, sujeito aos [termos de uso das APIs da Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). A partir de agosto de 2020, só estará disponível para usuários e locatários que tenham as [licenças necessárias](/graph/teams-licenses). Como `/teams/allMessages` e `/chats/allMessages` enviar notificações para todos os usuários no locatário, todos os usuários no locatário devem ser licenciados. No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados acessados por meio da API.
 
 ### <a name="driveitem"></a>driveItem
 
@@ -184,7 +184,7 @@ Content-length: 252
 }
 ```
 
-## <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
+### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
 
 O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl** ) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [configurar notificações para alterações nos dados do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
 
