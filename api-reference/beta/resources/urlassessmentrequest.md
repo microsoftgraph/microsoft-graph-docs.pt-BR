@@ -14,7 +14,7 @@ ms.locfileid: "42519565"
 ---
 # <a name="urlassessmentrequest-resource-type"></a>tipo de recurso urlAssessmentRequest
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ Usado para criar e recuperar uma avaliação de ameaça de URL, derivada de [thr
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|resultados|coleção [threatAssessmentResult](threatassessmentresult.md)|Uma coleção de resultados de avaliação de ameaças. Somente leitura. Por padrão, um `GET /threatAssessmentRequests/{id}` não retorna essa propriedade, a menos que `$expand` você a aplique.|
+|resultados|coleção [threatAssessmentResult](threatassessmentresult.md)|Uma coleção de resultados de avaliação de ameaças. Somente leitura. Por padrão, um `GET /threatAssessmentRequests/{id}` não retorna essa propriedade, a menos que você a aplique `$expand` .|
 
 ## <a name="json-representation"></a>Representação JSON
 

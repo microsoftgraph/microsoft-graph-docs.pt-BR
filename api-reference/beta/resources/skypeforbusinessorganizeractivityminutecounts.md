@@ -14,7 +14,7 @@ ms.locfileid: "42520391"
 ---
 # <a name="skypeforbusinessorganizeractivityminutecounts-resource-type"></a>tipo de recurso skypeForBusinessOrganizerActivityMinuteCounts
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 

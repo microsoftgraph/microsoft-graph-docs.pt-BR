@@ -14,7 +14,7 @@ ms.locfileid: "42519124"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>tipo de recurso workbookTableColumn
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

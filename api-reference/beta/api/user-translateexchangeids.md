@@ -5,14 +5,16 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1e45926ee17ecec717595ad1eb2b1a9b2f8161b0
-ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
+ms.openlocfilehash: ae26f5b5a5a109145daa132837890943a98c8c0d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42268381"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451622"
 ---
 # <a name="user-translateexchangeids"></a>usuário: translateExchangeIds
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,12 +63,12 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 | restid | O formato de ID padrão usado pelo Microsoft Graph. |
 | restImmutableEntryId | O formato de ID imutável usado pelo Microsoft Graph. |
 
-Os formatos binários`entryId` ( `immutableEntryId`e) são codificados por URL com base em base64. A segurança de URL é implementada modificando a codificação Base64 dos dados binários da seguinte maneira:
+Os formatos binários ( `entryId` e `immutableEntryId` ) são codificados por URL com base em base64. A segurança de URL é implementada modificando a codificação Base64 dos dados binários da seguinte maneira:
 
 - Substituir `+` por`-`
 - Substituir `/` por`_`
-- Remover os caracteres de preenchimento à direita`=`()
-- Adicione um inteiro ao final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam no original (`0`, `1`, ou) `2`
+- Remover os caracteres de preenchimento à direita ( `=` )
+- Adicione um inteiro ao final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam no original ( `0` , `1` , ou `2` )
 
 ## <a name="response"></a>Resposta
 
@@ -74,7 +76,7 @@ Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma cole
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra como converter vários identificadores do formato de API REST normal (`restId`) para o formato imutável (`restImmutableEntryId`) do REST.
+O exemplo a seguir mostra como converter vários identificadores do formato de API REST normal ( `restId` ) para o formato imutável () do REST `restImmutableEntryId` .
 
 ### <a name="request"></a>Solicitação
 

@@ -14,7 +14,7 @@ ms.locfileid: "42508307"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>tipo de recurso appHostedMediaConfig
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Pilha de mídia hospedada pelo aplicativo.
 | Propriedade                          | Tipo    | Descrição                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
 | blob                              | String  | O blob de configuração de mídia gerado pelo agente de mídia inteligente.    |
-| removeFromDefaultAudioGroup       | Boolean | Remover o áudio do grupo de áudio padrão                       |
+| removeFromDefaultAudioGroup       | Booliano | Remover o áudio do grupo de áudio padrão                       |
 
 ## <a name="json-representation"></a>Representação JSON
 

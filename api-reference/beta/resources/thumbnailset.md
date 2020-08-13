@@ -15,7 +15,7 @@ ms.locfileid: "42519754"
 ---
 # <a name="thumbnailset-resource-type"></a>Tipo de recurso ThumbnailSet
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

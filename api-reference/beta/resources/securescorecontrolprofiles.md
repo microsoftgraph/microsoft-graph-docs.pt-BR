@@ -14,7 +14,7 @@ ms.locfileid: "42520861"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>tipo de recurso secureScoreControlProfile
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,14 +38,14 @@ Representa a pontuação segura de um locatário por dados de controle. Por padr
 | complianceInformation | coleção [complianceInformation](complianceinformation.md) | O conjunto de informações de conformidade associadas ao controle de Pontuação segura |
 |   controlCategory |   String  |   Categoria de ação de controle (conta, dados, dispositivo, aplicativos, infraestrutura).  |
 |   actionType  |   Cadeia de caracteres  |   Tipo de ação de controle (configuração, revisão, comportamento). |
-|   service |   String  |   Serviço que possui o controle (Exchange, SharePoint, Azure AD). |
+|   service |   Cadeia de caracteres  |   Serviço que possui o controle (Exchange, SharePoint, Azure AD). |
 |   maxScore |  String  |   A pontuação máxima obtida na data especificada.   |
 |   camada |  String  |   Camada de controle (Core, defesa profunda, avançada)    |
 |   userimpact |    String  | Impacto do usuário da implementação do controle (baixo, moderado, alto).    |
 |   implementationCost |    String  |   Custo do recurso do controle implemmentating (baixo, moderado, alto). |
 |   classificação |  Int32   |   Classificação de pilha da Microsoft de controle.   |
 |   las |   String Collection   |   Lista de ameaças o controle atenua (accountBreach, dataexclusão, dataExfiltration, dataderramamento, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, falsificação). |
-|   preterido |    Boolean |   Sinalizador para indicar se um controle está depreciado.   |
+|   preterido |    Booliano |   Sinalizador para indicar se um controle está depreciado.   |
 |   correção |   String  |   Descrição do que o controle ajudará a corrigir. |
 |   remediationImpact | String  |   Descrição do impacto sobre os usuários da correção. |
 |   actionUrl | String  |   URL para onde o controle pode ser acionado. |

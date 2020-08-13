@@ -14,7 +14,7 @@ ms.locfileid: "42454738"
 ---
 # <a name="range-lastcell"></a>Range: LastCell
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

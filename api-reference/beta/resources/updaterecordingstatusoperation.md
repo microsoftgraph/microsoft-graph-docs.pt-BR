@@ -14,7 +14,7 @@ ms.locfileid: "42519586"
 ---
 # <a name="updaterecordingstatusoperation-resource-type"></a>tipo de recurso updateRecordingStatusOperation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Descreve o formato de resposta de uma ação de status de gravação de atualiza
 | Propriedade            | Tipo                        | Descrição|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
 | clientContext       | String                      | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                              |
-| id                  | Cadeia de caracteres                      | Somente leitura.                                                                         |
+| id                  | String                      | Somente leitura.                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura.                                                 |
 | status              | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.               |
 

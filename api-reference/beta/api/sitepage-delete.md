@@ -15,7 +15,7 @@ ms.locfileid: "42453178"
 ---
 # <a name="delete-page-from-the-site-pages-list-of-a-site"></a>Excluir página da lista de páginas do site de um site
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação com esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, esta chamada `204 No Content` retorna uma resposta para indicar que o recurso foi excluído e não houve nada para retornar.
+Se bem sucedido, esta chamada retorna uma `204 No Content` resposta para indicar que o recurso foi excluído e não houve nada para retornar.
 
 ## <a name="example"></a>Exemplo
 

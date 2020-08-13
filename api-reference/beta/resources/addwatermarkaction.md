@@ -14,7 +14,7 @@ ms.locfileid: "42508398"
 ---
 # <a name="addwatermarkaction-resource-type"></a>tipo de recurso addwatermarkaction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

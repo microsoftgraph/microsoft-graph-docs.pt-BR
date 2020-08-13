@@ -14,7 +14,7 @@ ms.locfileid: "42454854"
 ---
 # <a name="create-or-replace-an-activity"></a>Criar ou substituir uma atividade
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [Activ
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` o código de resposta se a atividade foi `200 OK` criada ou se a atividade foi substituída.
+Se tiver êxito, este método retornará o `201 Created` código de resposta se a atividade foi criada ou `200 OK` se a atividade foi substituída.
 
 ## <a name="examples"></a>Exemplos
 

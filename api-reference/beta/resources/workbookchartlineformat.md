@@ -14,7 +14,7 @@ ms.locfileid: "42519292"
 ---
 # <a name="workbookchartlineformat-resource-type"></a>tipo de recurso workbookChartLineFormat
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

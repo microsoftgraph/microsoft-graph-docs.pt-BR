@@ -14,7 +14,7 @@ ms.locfileid: "42521825"
 ---
 # <a name="planner-resource-type"></a>tipo de recurso Planner
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

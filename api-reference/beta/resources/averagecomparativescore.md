@@ -14,7 +14,7 @@ ms.locfileid: "42508049"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>tipo de recurso averageComparativeScore
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Esse recurso contém várias pontuações diferentes com base em escopos diferentes (por exemplo, média por tamanho médio vertical da indústria, média por tamanho de assentos da empresa e assim por diante) e categoria de controle (identidade, dados, dispositivo, aplicativos, infraestrutura).
 

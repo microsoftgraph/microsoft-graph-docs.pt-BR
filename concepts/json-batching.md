@@ -4,12 +4,12 @@ description: 'Os lotes JSON permitem otimizar seu aplicativo combinando várias 
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6327fec0f19782adebf6504c367a559857616c16
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 5737d57ef9256333c6485abe4da400be9e7ec745
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598420"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643985"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Combinar várias solicitações em uma chamada HTTP usando processamento JSON em lotes
 
@@ -183,5 +183,4 @@ Para obter uma lista de limitações atuais relacionadas a lotes, veja [problema
 
 ## <a name="see-also"></a>Confira também
 
-Para saber mais sobre o formato de solicitação/resposta em lote JSON, veja o [Especificação de formato OData JSON versão 4.01][odata-4.01-json], seção 18. Observe que essa especificação está atualmente em uma versão de rascunho, mas alterações não são esperadas.
-
+Para mais informações a respeito do formato solicitação/resposta em lotes do JSON, leia [especificações da versão 4.01 do OData JSON Format](http://docs.oasis-open.org/odata/odata-json-format/v4.01/odata-json-format-v4.01.html#sec_BatchRequestsandResponses), seção _Solicitações e Respostas em Lote_.

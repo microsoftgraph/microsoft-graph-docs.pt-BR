@@ -14,7 +14,7 @@ ms.locfileid: "42520419"
 ---
 # <a name="skypeforbusinessdeviceusagedistributionusercounts-resource-type"></a>tipo de recurso skypeForBusinessDeviceUsageDistributionUserCounts
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 

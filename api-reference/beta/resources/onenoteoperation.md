@@ -14,7 +14,7 @@ ms.locfileid: "42522341"
 ---
 # <a name="onenoteoperation-resource-type"></a>tipo de recurso onenoteOperation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,12 +50,12 @@ Veja a seguir uma representação JSON do recurso.
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |A hora de início da operação.|
 |erro|[onenoteOperationError](onenoteoperationerror.md)|O erro retornado pela operação.|
-|id|string|A ID da operação. Somente leitura.|
+|id|cadeia de caracteres|A ID da operação. Somente leitura.|
 |lastActionDateTime| DateTimeOffset |A hora da última ação da operação.|
-|resourceId|string|A ID do recurso.|
-|resourceLocation|string|O URI do recurso para o objeto. Por exemplo, o URI do recurso para uma página ou seção copiada. |
-|status|cadeia de caracteres|O status atual da operação: `notstarted`, `running`,, `completed``failed` |
-|percentComplete|string|A porcentagem concluída da operação se a operação ainda estiver `running` em status
+|resourceId|cadeia de caracteres|A ID do recurso.|
+|resourceLocation|cadeia de caracteres|O URI do recurso para o objeto. Por exemplo, o URI do recurso para uma página ou seção copiada. |
+|status|cadeia de caracteres|O status atual da operação: `notstarted` , `running` , `completed` ,`failed` |
+|percentComplete|cadeia de caracteres|A porcentagem concluída da operação se a operação ainda estiver em `running` status
 
 ## <a name="relationships"></a>Relações
 Nenhuma
