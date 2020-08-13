@@ -5,12 +5,12 @@ author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d7b60e19cb0d3b1c6b015c47ddac604f4ebb2d55
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 11ce7e7388ce6ab8b17244dbe964ff99cbeaf539
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643999"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46658053"
 ---
 # <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>Automatizar a configuração do proxy de aplicativo usando a API do Microsoft Graph
 
@@ -548,9 +548,8 @@ Use as propriedades a seguir para atribuir um usuário ao aplicativo.
 #### <a name="request"></a>Solicitação
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "servicePrincipals"
 }-->
 ```msgraph-interactive
@@ -565,11 +564,6 @@ Content-type: appRoleAssignments/json
   "resourceId":"b00c693f-9658-4c06-bd1b-c402c4653dea"
 }
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### <a name="response"></a>Resposta
 

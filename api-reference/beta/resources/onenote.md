@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: e213f12110399b90513d33af4d1745be3cdf3eae
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: f542c58d6b824b678afbe493d03ae760b3be428f
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898062"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46657921"
 ---
 # <a name="onenote-resource-type"></a>tipo de recurso do onenote
 
@@ -22,7 +22,7 @@ O ponto de entrada para os recursos do OneNote.
 
 Todas as chamadas para o serviço do OneNote pela API do Microsoft Graph usam essa URL raiz de serviço:
 
-```
+```http
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
@@ -30,7 +30,7 @@ O local pode ser blocos de anotações do usuário no Microsoft 365 ou no OneDri
 
 **Blocos de anotações do usuário** Para acessar blocos de anotações pessoais no OneDrive do consumidor ou no OneDrive for Business, use uma das seguintes URLs:
 
-```
+```http
 https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{userPrincipalName}/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
@@ -38,12 +38,12 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 
 **Blocos de anotações de grupo** para acessar blocos de anotações que pertencem a um grupo, use a seguinte URL raiz de serviço:
 
-```
+```http
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 **Blocos de anotações do site do SharePoint** para acessar blocos de anotações que pertencem a um site de equipe do SharePoint, use a seguinte URL raiz de serviço:
 
-```
+```http
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 

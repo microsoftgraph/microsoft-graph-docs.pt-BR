@@ -6,12 +6,12 @@ description: recurso Permission representando uma permissão de compartilhamento
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4a7eaa3b075e6a5c8a7b234e721c5d224bd489f9
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: 2a260a6702e2d50ceac598e379ea6185310052ce
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146370"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46657907"
 ---
 # <a name="permission-resource-type"></a>tipo de recurso Permission
 
@@ -74,17 +74,16 @@ Veja a seguir uma representação JSON do recurso.
 | vínculo                | [SharingLink][]             | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
 | funções               | Collection(String)          | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
 | shareId             | Cadeia de caracteres                      | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da **[API de compartilhamentos][]**. Somente leitura.
-| expirationDateTime  | DateTimeOffset              | Um formato de yyyy-MM-ddTHH: mm: ssZ de DateTimeOffset indica o tempo de expiração da permissão. DateTime. MinValue indica que não há validade configurada para essa permissão. Opcional.
-| hasPassword         | Booliano                     | Isso indica se a senha está definida para essa permissão, ela só será mostrada em resposta. Opcional e somente leitura e somente para o OneDrive Personal.
+| expirationDateTime  | DateTimeOffset              | Um formato yyyy-MM-ddTHH:mm:ssZ de DateTimeOffset indica o tempo de expiração da permissão. DateTime.MinValue indica que não há expiração definida para esta permissão. Opcional.
+| hasPassword         | Boolean                     | Isso indica se a senha está configurada para esta permissão, está sendo exibida apenas em resposta. Opcional e Somente leitura e somente para o OneDrive Personal.
 
-### <a name="roles-property-values"></a>Valores da Propriedade Roles
+### <a name="roles-property-values"></a>Valores de propriedades Roles
 
-| Valor        | Detalhes                                                                        |
-|:------------|:-------------------------------------------------------------------------------|
-| `read`      | Fornece a capacidade de ler os metadados e o conteúdo do item.            |
-| `write`     | Fornece a capacidade de ler e modificar os metadados e o conteúdo do item. |
-| `sp.owner`  | Para o SharePoint e o OneDrive for Business, isso representa a função de proprietário.       |
-| `sp.member` | Para o SharePoint e o OneDrive for Business, isso representa a função de membro.      |
+| Função              | Detalhes                                                                        |
+|:------------------|:-------------------------------------------------------------------------------|
+| Saiba            | Fornece a capacidade de ler os metadados e o conteúdo do item.            |
+| gravável           | Fornece a capacidade de ler e modificar os metadados e o conteúdo do item. |
+| controle de SP. Full | Para o SharePoint e o OneDrive for Business, isso representa a função de proprietário.       |
 
 O recurso permission usa _facetas_ para fornecer informações sobre o tipo de permissão representado pelo recurso.
 

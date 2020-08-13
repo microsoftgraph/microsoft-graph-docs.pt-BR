@@ -4,12 +4,12 @@ description: Lista e descreve os códigos de erro e as mensagens de pastas de tr
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8c975507b826f305ed3a0c994e5aa86384095e94
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 17a4695413f3cdbe640b58a3ab55594a39cabbe0
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643909"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46657858"
 ---
 # <a name="error-codes-for-workbooks-and-charts-apis-in-microsoft-graph"></a>Códigos de erro para APIs de planilhas e gráficos no Microsoft Graph
 
@@ -60,6 +60,7 @@ A seguir estão alguns erros adicionais que seu aplicativo pode encontrar no pri
 | **invalidSessionUnsupportedWorkbook**              | A sessão especificada na solicitação é inválida porque a pasta de trabalho contém recursos sem suporte ou excede o limite de tamanho.
 | **itemAlreadyExists**         | O recurso que está sendo criado já existe.
 | **itemNotFound**         | O recurso solicitado não existe.
+| **methodNotAllowed**              | O método HTTP especificado na solicitação não é permitido no recurso.
 | **methodNotAllowedUncategorized**              | O método HTTP especificado na solicitação não é permitido no recurso.
 | **nonBlankCellOffSheet**         | Não é possível inserir novas células porque elas empurraram células não vazias para fora do final da planilha.
 | **notFoundUncategorized**             | O recurso solicitado não pode ser encontrado.
