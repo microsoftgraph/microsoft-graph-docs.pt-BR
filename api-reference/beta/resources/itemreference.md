@@ -15,7 +15,7 @@ ms.locfileid: "42523048"
 ---
 # <a name="itemreference-resource-type"></a>Tipo de recurso ItemReference
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 O recurso **ItemReference** proporciona as informações necessárias para enviar um [DriveItem](driveitem.md) pela API.
 
@@ -50,7 +50,7 @@ Veja a seguir uma representação JSON do recurso
 | id            | String            | Identificador exclusivo do item na unidade. Somente leitura.
 | nome          | String            | O nome do item ao qual se faz referência. Somente leitura.
 | caminho          | String            | Caminho que pode ser usado para navegar até o item. Somente leitura.
-| shareId       | String            | Um identificador exclusivo para um recurso compartilhado que pode ser acessado através da API [Shares][].
+| shareId       | Cadeia de caracteres            | Um identificador exclusivo para um recurso compartilhado que pode ser acessado através da API [Shares][].
 | sharepointIds | [sharepointIds][] | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
 
 [unidade]: ../resources/drive.md

@@ -14,7 +14,7 @@ ms.locfileid: "42523083"
 ---
 # <a name="itembody-resource-type"></a>Tipo de recurso itemBody
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
