@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 27daff269c95ab3434836baa10158081bf8ce2ec
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: ee31f1bb29c3e5abff552d49e8b13dd4078b08f1
+ms.sourcegitcommit: 2e6fb1c0fef8cb3af1a72c115aa54902c71c99f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643957"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46658253"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,19 +18,24 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 ## <a name="august-2020"></a>Agosto de 2020
 
+### <a name="applications"></a>Aplicativos
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | Beta | Propriedade [passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) adicionada ao recurso [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta).
+
 ### <a name="change-notifications"></a>Notificações de alteração
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | v1.0 | O controle de alterações por meio de [consultas delta](/graph/api/event-delta) está disponível para o Microsoft Graph para o Governo dos Estados Unidos. |
 | Exclusão | Beta | Removida a propriedade **includeProperties** da entidade de [subscription](/graph/api/resources/subscription?view=graph-rest-beta). Esta propriedade é substituída pela propriedade **includeResourceData**. |
-| Adição | Beta | Adicionada a capacidade de obter as [notificações de alteração entregues pelo Hub de Eventos](/graph/api/concepts/change-notifications-delivery?view=graph-rest-beta). |
+| Adição | Beta | Adicionada a capacidade de obter as [notificações de alteração entregues pelo Hub de Eventos](change-notifications-delivery.md). |
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | As seguintes propriedades foram adicionadas ao [contrato de Termos de Uso](/graph/api/resources/agreement.md):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
-| Adição | beta | Adicionado um novo tipo de recurso ao [contrato de Termos de Uso](/graph/api/resources/agreement.md):</br>[agreementFile](/graph/api/resources/agreementfile.md)|
+| Adição | beta | As seguintes propriedades foram adicionadas ao [contrato de Termos de Uso](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
+| Adição | beta | Adicionado um novo tipo de recurso ao [contrato de Termos de Uso](/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
 
@@ -3521,7 +3526,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
-|Adição|Beta|Foram adicionadas novas entidades:<br/>[androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta)<br/>[deviceAndAppManagementRoleAssignment](/graph/api/resources/intune-rbac-deviceandappmanagementroleassignment?view=graph-rest-beta)<br/>[deviceAndAppManagementRoleDefinition](/graph/api/resources/intune-rbac-deviceandappmanagementroledefinition?view=graph-rest-beta)<br/>[macOSLobApp](/graph/api/resources/intune-apps-macoslobapp?view=graph-rest-beta)<br/>|
+|Adição|Beta|Adicionadas novas entidades:<br/>[androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta)<br/>[deviceAndAppManagementRoleAssignment](/graph/api/resources/intune-rbac-deviceandappmanagementroleassignment?view=graph-rest-beta)<br/>[deviceAndAppManagementRoleDefinition](/graph/api/resources/intune-rbac-deviceandappmanagementroledefinition?view=graph-rest-beta)<br/>[macOSLobApp](/graph/api/resources/intune-apps-macoslobapp?view=graph-rest-beta)<br/>|
 |Adição|Beta|Foram adicionados novos tipos complexos:<br/>[resourceAction](/graph/api/resources/intune-rbac-resourceaction?view=graph-rest-beta)<br/>[updateWindowsDeviceAccountActionParameter](/graph/api/resources/intune-devices-updatewindowsdeviceaccountactionparameter?view=graph-rest-beta)<br/>[vppTokenActionResult](/graph/api/resources/intune-onboarding-vpptokenactionresult?view=graph-rest-beta)<br/>[windowsDeviceAADAccount](/graph/api/resources/intune-devices-windowsdeviceaadaccount?view=graph-rest-beta)<br/>[windowsDeviceAccount](/graph/api/resources/intune-devices-windowsdeviceaccount?view=graph-rest-beta)<br/>[windowsDeviceADAccount](/graph/api/resources/intune-devices-windowsdeviceadaccount?view=graph-rest-beta)<br/>|
 |Adição|Beta|A ação [revokeTokens](/graph/api/intune-androidforwork-androidforworkenrollmentprofile-revoketokens?view=graph-rest-beta) foi adicionada à entidade [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta) |
 |Adição|Beta|A ação [createTokens](/graph/api/intune-androidforwork-androidforworkenrollmentprofile-createtoken?view=graph-rest-beta) foi adicionada à entidade [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta) |
