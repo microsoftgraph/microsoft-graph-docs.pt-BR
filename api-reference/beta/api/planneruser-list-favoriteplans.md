@@ -12,46 +12,46 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42455568"
 ---
-# <a name="list-favoriteplans"></a><span data-ttu-id="d9c47-104">Listar favoritePlans</span><span class="sxs-lookup"><span data-stu-id="d9c47-104">List favoritePlans</span></span>
+# <a name="list-favoriteplans"></a><span data-ttu-id="7cf9c-104">Listar favoritePlans</span><span class="sxs-lookup"><span data-stu-id="7cf9c-104">List favoritePlans</span></span>
 
-<span data-ttu-id="d9c47-105">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="d9c47-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7cf9c-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7cf9c-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d9c47-106">Recupere uma lista de [plannerPlans](../resources/plannerplan.md) marcados como favoritos por um usuário.</span><span class="sxs-lookup"><span data-stu-id="d9c47-106">Retrieve a list of [plannerPlans](../resources/plannerplan.md) that are marked as favorite by a user.</span></span> <span data-ttu-id="d9c47-107">Você pode marcar um plano como favorito, [atualizando o recurso plannerUser](planneruser-update.md).</span><span class="sxs-lookup"><span data-stu-id="d9c47-107">You can mark a plan as favorite by [updating the plannerUser resource](planneruser-update.md).</span></span>
+<span data-ttu-id="7cf9c-106">Recupere uma lista de [plannerPlans](../resources/plannerplan.md) marcados como favoritos por um usuário.</span><span class="sxs-lookup"><span data-stu-id="7cf9c-106">Retrieve a list of [plannerPlans](../resources/plannerplan.md) that are marked as favorite by a user.</span></span> <span data-ttu-id="7cf9c-107">Você pode marcar um plano como favorito, [atualizando o recurso plannerUser](planneruser-update.md).</span><span class="sxs-lookup"><span data-stu-id="7cf9c-107">You can mark a plan as favorite by [updating the plannerUser resource](planneruser-update.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d9c47-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="d9c47-108">Permissions</span></span>
-<span data-ttu-id="d9c47-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d9c47-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7cf9c-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="7cf9c-108">Permissions</span></span>
+<span data-ttu-id="7cf9c-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7cf9c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d9c47-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d9c47-111">Permission type</span></span>      | <span data-ttu-id="d9c47-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d9c47-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7cf9c-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7cf9c-111">Permission type</span></span>      | <span data-ttu-id="7cf9c-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7cf9c-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d9c47-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d9c47-113">Delegated (work or school account)</span></span> | <span data-ttu-id="d9c47-114">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="d9c47-114">Group.Read.All</span></span>    |
-|<span data-ttu-id="d9c47-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d9c47-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d9c47-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d9c47-116">Not supported.</span></span>    |
-|<span data-ttu-id="d9c47-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d9c47-117">Application</span></span> | <span data-ttu-id="d9c47-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d9c47-118">Not supported.</span></span> |
+|<span data-ttu-id="7cf9c-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7cf9c-113">Delegated (work or school account)</span></span> | <span data-ttu-id="7cf9c-114">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="7cf9c-114">Group.Read.All</span></span>    |
+|<span data-ttu-id="7cf9c-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7cf9c-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7cf9c-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7cf9c-116">Not supported.</span></span>    |
+|<span data-ttu-id="7cf9c-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7cf9c-117">Application</span></span> | <span data-ttu-id="7cf9c-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7cf9c-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d9c47-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d9c47-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7cf9c-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7cf9c-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/favoritePlans
 GET /users/{id}/planner/favoritePlans
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="d9c47-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d9c47-120">Optional query parameters</span></span>
-<span data-ttu-id="d9c47-121">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d9c47-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7cf9c-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="7cf9c-120">Optional query parameters</span></span>
+<span data-ttu-id="7cf9c-121">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7cf9c-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d9c47-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d9c47-122">Request headers</span></span>
-| <span data-ttu-id="d9c47-123">Nome</span><span class="sxs-lookup"><span data-stu-id="d9c47-123">Name</span></span>      |<span data-ttu-id="d9c47-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="d9c47-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7cf9c-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7cf9c-122">Request headers</span></span>
+| <span data-ttu-id="7cf9c-123">Nome</span><span class="sxs-lookup"><span data-stu-id="7cf9c-123">Name</span></span>      |<span data-ttu-id="7cf9c-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="7cf9c-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="d9c47-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="d9c47-125">Authorization</span></span>  | <span data-ttu-id="d9c47-126">Portador {código}.</span><span class="sxs-lookup"><span data-stu-id="d9c47-126">Bearer {code}.</span></span> <span data-ttu-id="d9c47-127">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d9c47-127">Required.</span></span>|
+| <span data-ttu-id="7cf9c-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="7cf9c-125">Authorization</span></span>  | <span data-ttu-id="7cf9c-126">Portador {código}.</span><span class="sxs-lookup"><span data-stu-id="7cf9c-126">Bearer {code}.</span></span> <span data-ttu-id="7cf9c-127">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7cf9c-127">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d9c47-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d9c47-128">Request body</span></span>
-<span data-ttu-id="d9c47-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d9c47-129">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="d9c47-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="d9c47-130">Response</span></span>
-<span data-ttu-id="d9c47-131">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [plannerPlan](../resources/plannerplan.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d9c47-131">If successful, this method returns a `200 OK` response code and a collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="d9c47-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d9c47-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d9c47-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d9c47-133">Request</span></span>
-<span data-ttu-id="d9c47-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d9c47-134">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7cf9c-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7cf9c-128">Request body</span></span>
+<span data-ttu-id="7cf9c-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7cf9c-129">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="7cf9c-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="7cf9c-130">Response</span></span>
+<span data-ttu-id="7cf9c-131">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [plannerPlan](../resources/plannerplan.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7cf9c-131">If successful, this method returns a `200 OK` response code and a collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7cf9c-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7cf9c-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7cf9c-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7cf9c-133">Request</span></span>
+<span data-ttu-id="7cf9c-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7cf9c-134">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="d9c47-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="d9c47-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7cf9c-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="7cf9c-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_favoriteplans"
@@ -59,24 +59,24 @@ GET /users/{id}/planner/favoritePlans
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 ```
-# <a name="c"></a>[<span data-ttu-id="d9c47-136">C#</span><span class="sxs-lookup"><span data-stu-id="d9c47-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7cf9c-136">C#</span><span class="sxs-lookup"><span data-stu-id="7cf9c-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-favoriteplans-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d9c47-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d9c47-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7cf9c-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7cf9c-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-favoriteplans-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d9c47-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d9c47-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7cf9c-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7cf9c-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-favoriteplans-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="d9c47-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="d9c47-139">Response</span></span>
-<span data-ttu-id="d9c47-140">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d9c47-140">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="7cf9c-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="7cf9c-139">Response</span></span>
+<span data-ttu-id="7cf9c-140">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7cf9c-140">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="d9c47-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d9c47-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="7cf9c-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7cf9c-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
