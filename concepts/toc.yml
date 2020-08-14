@@ -347,6 +347,8 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: APIs protegidas
             href: teams-protected-apis.md
+          - name: Licenças para assinar mensagens de chat
+            href: teams-licenses.md
           - name: Enviar mensagens proativas com um bot
             href: teams-proactive-messaging.md
       - name: Workbooks e gráficos
@@ -368,6 +370,8 @@ items:
             href: workbook-best-practice.md
           - name: Códigos de erro
             href: workbook-error-codes.md
+          - name: Tratamento de erros
+            href: workbook-error-handling.md
   - name: Desenvolver
     expanded: true
     items:
