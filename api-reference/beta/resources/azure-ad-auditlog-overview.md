@@ -1,24 +1,24 @@
 ---
-title: Visão geral da API de relatórios de atividade
-description: Utilize a API de relatórios de atividades do Microsoft Graph para acessar os relatórios criados no Azure Active Directory para ajudá-lo a rastrear a atividade do usuário em um locatário.
+title: Visão geral da API de relatórios de atividades
+description: Use a API de relatórios de atividades no Microsoft Graph para acessar os relatórios que o Azure Active Directory cria para ajudar a rastrear a atividade do usuário em um locatário.
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: microsoft-identity-platform
-author: kholtz
-ms.openlocfilehash: 2eea2c8b2e169d11b7ca081d69ab02bf0e2ae66c
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+author: khotz
+ms.openlocfilehash: c88a6d3b1761043512858c109de182b38c3abeba
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524286"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673970"
 ---
-# <a name="activity-reports-api-overview"></a>Visão geral da API de relatórios de atividade
+# <a name="activity-reports-api-overview"></a>Visão geral da API de relatórios de atividades
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O Azure Active Directory (Azure AD) rastreia a atividade do usuário e cria relatórios que ajudam a entender como seus usuários acessam e utilizam os serviços do Azure AD. Utilize a API do Microsoft Graph para Azure AD para analisar os dados nesses relatórios e criar soluções personalizadas adaptadas às necessidades específicas da sua organização.
+O Azure Active Directory (Azure AD) rastreia a atividade do usuário e cria relatórios que ajudam a entender como seus usuários acessam e usam os serviços do Azure AD. Utilize a API do Microsoft Graph para Azure AD para analisar os dados nesses relatórios e criar soluções personalizadas adaptadas às necessidades específicas da sua organização.
 
 ## <a name="what-are-activity-reports"></a>O que são relatórios de atividades?
 
@@ -38,7 +38,7 @@ O relatório de auditoria de diretório fornece acesso ao histórico de todas as
 
 ### <a name="sign-ins"></a>Entradas
 
-O relatório de entrada ajuda a determinar quem executou as tarefas relatadas pelas auditorias de diretório. O relatório de inscrição ajuda você a responder a perguntas como:
+O relatório de entradas ajuda a determinar quem executou as tarefas relatadas pelas auditorias de diretório. O relatório de entrada ajuda você a responder a perguntas como:
 
 - O que é o padrão de entrada de um usuário?
 - Quantos usuários entraram durante a semana passada?

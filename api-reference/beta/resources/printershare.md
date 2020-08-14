@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 5acbcdc58b730404a39af1f3069b3433fac54ed3
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 7ac7bb86c22a36f814f3c48211fb5ff17177a2d6
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217344"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674334"
 ---
 # <a name="printershare-resource-type"></a>tipo de recurso printerShare
 
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 
 Representa uma impressora que pretende ser detectável por usuários e por aplicativos de impressão.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar](../api/print-list-shares.md) | coleção [printerShare](printershare.md) | Obtenha uma lista de compartilhamentos de impressora no locatário. |
+| [List](../api/print-list-shares.md) | coleção [printerShare](printershare.md) | Obtenha uma lista de compartilhamentos de impressora no locatário. |
 | [Get](../api/printershare-get.md) | [printerShare](printershare.md) | Ler propriedades e relações de um objeto **printerShare** . |
 | [Update](../api/printershare-update.md) | [printerShare](printershare.md) | Atualizar um objeto **printerShare** . |
 | [Delete](../api/printershare-delete.md) | Nenhum | Descompartilhar uma impressora. |
@@ -38,16 +38,17 @@ Representa uma impressora que pretende ser detectável por usuários e por aplic
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| O identificador do printerShare. Somente leitura.|
+|id|Cadeia de caracteres| O identificador do printerShare. Somente leitura.|
 |displayName|Cadeia de caracteres|O nome do compartilhamento de impressora que os clientes de impressão devem exibir.|
 |createdDateTime|DateTimeOffset|O DateTimeOffset quando o compartilhamento da impressora foi criado. Somente leitura.|
 |fabricante|String|O fabricante relatado pela impressora associada a este compartilhamento de impressora. Somente leitura.|
 |modelo|String|O nome do modelo relatado pela impressora associada a este compartilhamento de impressora. Somente leitura.|
-|isAcceptingJobs|Boolean|Se a impressora associada a este compartilhamento de impressora está atualmente aceitando novos trabalhos de impressão.|
-|padrões|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão da impressora associadas a este compartilhamento de impressora.|
+|isAcceptingJobs|Booliano|Se a impressora associada a este compartilhamento de impressora está atualmente aceitando novos trabalhos de impressão.|
+|defaults|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão da impressora associadas a este compartilhamento de impressora.|
 |capabilities|[printerCapabilities](printercapabilities.md)|Os recursos da impressora associada a este compartilhamento de impressora.|
 |location|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora associado a este compartilhamento de impressora.|
 |status|[printerStatus](printerstatus.md)|O status de processamento, incluindo qualquer erro, da impressora associada a este compartilhamento de impressora. Somente leitura.|
+|allowAllUsers|Booliano|Se true, todos os usuários e grupos terão acesso a esse compartilhamento de impressora. Isso substitui as listas de permissões definidas pelas propriedades de navegação **allowedUsers** e **allowedGroups** .|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
@@ -55,7 +56,7 @@ Representa uma impressora que pretende ser detectável por usuários e por aplic
 |impressora|[impressora](printer.md)|A impressora à qual esse compartilhamento de impressora está relacionado. |
 |allowedUsers|coleção [printUserIdentity](printuseridentity.md)|Os usuários que têm acesso à impressão usando a impressora.|
 |allowedGroups|[multiidentity](printidentity.md)|Os grupos cujos usuários têm acesso para imprimir usando a impressora.|
-|serviços|coleção [printJob](printjob.md)| A lista de trabalhos que estão na fila para impressão pela impressora associada a este compartilhamento de impressora.|
+|jobs|coleção [printJob](printjob.md)| A lista de trabalhos que estão na fila para impressão pela impressora associada a este compartilhamento de impressora.|
 
 ## <a name="json-representation"></a>Representação JSON
 

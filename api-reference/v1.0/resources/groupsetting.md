@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 162230dc7a197d9f7b927a0b25be734834a5322b
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 8c20ecd7452477519e5543dfd36a02aa5796cd38
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896928"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674066"
 ---
 # <a name="groupsetting-resource-type"></a>tipo de recurso groupSetting
 
@@ -35,8 +35,8 @@ As configurações de grupo podem ser criadas com base no [groupSettingTemplates
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |displayName|Cadeia de caracteres| Exibe o nome deste grupo de configurações, que vem do modelo associado. |
-|id|String| Identificador exclusivo dessas configurações. Somente leitura. |
-|templateId|String| Identificador exclusivo para o modelo usado para criar esse grupo de configurações. Somente leitura. |
+|id|Cadeia de caracteres| Identificador exclusivo dessas configurações. Somente leitura. |
+|templateId|Cadeia de caracteres| Identificador exclusivo para o modelo usado para criar esse grupo de configurações. Somente leitura. |
 |values|coleção [SettingValue](settingvalue.md)| Coleção de pares de valor de nome. Deve conter e definir todas as configurações definidas no modelo. |
 
 ## <a name="relationships"></a>Relações
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "templateId": "String",
   "values": [{"@odata.type": "microsoft.graph.settingValue"}]
 }
-
 ```
 
 

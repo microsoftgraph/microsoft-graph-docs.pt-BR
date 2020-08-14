@@ -3,14 +3,14 @@ title: Listar logons
 doc_type: apiPageType
 description: Obtenha uma lista das entradas de usuário em um locatário do Azure Active Directory.
 localization_priority: Normal
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cf580035957a5605fdd013a1d045548fcae4f94f
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 3db3b7606d4e8bf95a9e01ef097be3d1dfacdbef
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43122996"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673984"
 ---
 # <a name="list-signins"></a>Listar logons
 

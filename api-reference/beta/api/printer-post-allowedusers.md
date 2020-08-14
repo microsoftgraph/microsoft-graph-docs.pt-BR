@@ -1,18 +1,18 @@
 ---
-title: Criar allowedUser
+title: Criar allowedUser para impressora
 description: Conceda ao usuário especificado acesso para enviar trabalhos de impressão à impressora associada.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5ce2564b2878a3dff998c938366f132c08098a73
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: d6c419faa2569faea1b651ebe0b4faf61f9db13d
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947795"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674481"
 ---
-# <a name="create-alloweduser"></a>Criar allowedUser
+# <a name="create-alloweduser-for-printer"></a>Criar allowedUser para impressora
 
 Namespace: microsoft.graph
 
@@ -23,16 +23,17 @@ Conceda ao usuário especificado acesso para enviar **trabalhos de impressão** 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
+Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Users. Read. All |
+|Delegado (conta corporativa ou de estudante)| Printer. ReadWrite. All, Printer. FullControl. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /print/printers/{id}/allowedUsers/$ref
 ```
@@ -80,7 +81,7 @@ Content-length: 66
 
 ---
 
-No corpo da solicitação, forneça uma referência a uma entidade de usuário, incluindo o URI do Microsoft Graph do usuário `@odata.id` no campo do corpo JSON.
+No corpo da solicitação, forneça uma referência a uma entidade de usuário, incluindo o URI do Microsoft Graph do usuário no `@odata.id` campo do corpo JSON.
 
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 

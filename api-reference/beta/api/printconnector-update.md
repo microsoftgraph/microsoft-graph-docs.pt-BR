@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7b4a9a0b74969877ca1336facda8e63462919b6b
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: c6bfc200b4c514af15beb7f63b39474d2f51c563
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062121"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674054"
 ---
 # <a name="update-printconnector"></a>Atualizar o multiligação
 
@@ -23,11 +23,11 @@ Atualiza as propriedades **de um objeto** Printer.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
+Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Users. Read. All |
+|Delegado (conta corporativa ou de estudante)| User.Read |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -47,14 +47,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|name|String|O nome do conector.|
-|Nomededomíniototalmentequalificado|String|O nome de host do computador do conector.|
+|nome|Cadeia de caracteres|O nome do conector.|
+|Nomededomíniototalmentequalificado|Cadeia de caracteres|O nome de host do computador do conector.|
 |operatingSystem|String|A versão do sistema operacional do computador do conector.|
-|appVersion|String|A versão do conector.|
-|localização|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional do conector.|
+|appVersion|Cadeia de caracteres|A versão do conector.|
+|location|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional do conector.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [multiconnect](../resources/printConnector.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [multiconnect](../resources/printConnector.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

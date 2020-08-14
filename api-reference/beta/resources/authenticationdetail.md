@@ -2,15 +2,15 @@
 title: tipo de recurso authenticationDetail
 description: Fornece os detalhes de autenticação para uma entrada de usuário, como informações de autenticação multifator (MFA) e detalhes de PTA/PHS.
 localization_priority: Normal
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: cdfd2abff4d947f7b51a6be0fa8bb81c1413f9c1
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: a3fd5a9a98ad0d9405bce059d8d3a47cef969b98
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845287"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673702"
 ---
 # <a name="authenticationdetail-resource-type"></a>tipo de recurso authenticationDetail
 
@@ -24,11 +24,11 @@ Fornece os detalhes de autenticação para uma entrada de usuário, como informa
 
 | Propriedade                       | Tipo           | Descrição                                                                                                                                                                                                              |
 |:-------------------------------|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| authenticationMethod           | String         | O tipo de método de autenticação usado para executar esta etapa de autenticação. Valores possíveis: `Password` , `SMS` ,,, `Voice` `Authenticator App` `Software OATH token` , `Satisfied by token` .                            |
-| authenticationMethodDetail     | String         | Detalhes sobre o método de autenticação usado para executar esta etapa de autenticação. Por exemplo, número de telefone (para SMS e voz), nome do dispositivo (para o aplicativo autenticador) e a fonte da senha (por exemplo, nuvem, AD FS, PTA, PHS). |
+| authenticationMethod           | Cadeia de caracteres         | O tipo de método de autenticação usado para executar esta etapa de autenticação. Valores possíveis: `Password` , `SMS` ,,, `Voice` `Authenticator App` `Software OATH token` , `Satisfied by token` .                            |
+| authenticationMethodDetail     | Cadeia de caracteres         | Detalhes sobre o método de autenticação usado para executar esta etapa de autenticação. Por exemplo, número de telefone (para SMS e voz), nome do dispositivo (para o aplicativo autenticador) e a fonte da senha (por exemplo, nuvem, AD FS, PTA, PHS). |
 | authenticationStepDateTime     | DateTimeOffset | Representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.                                           |
-| authenticationStepRequirement  | String         | A etapa de autenticação atendida. Por exemplo, autenticação primária ou autenticação multifator.                                                                                                     |
-| authenticationStepResultDetail | String         | Detalhes sobre por que a etapa foi bem-sucedida ou falhou. Por exemplo, o usuário é bloqueado, o código de fraude inserido, nenhuma entrada de telefone-tempo limite, telefone inacessível ou declaração no token.                                                     |
+| authenticationStepRequirement  | Cadeia de caracteres         | A etapa de autenticação atendida. Por exemplo, autenticação primária ou autenticação multifator.                                                                                                     |
+| authenticationStepResultDetail | Cadeia de caracteres         | Detalhes sobre por que a etapa foi bem-sucedida ou falhou. Por exemplo, o usuário é bloqueado, o código de fraude inserido, nenhuma entrada de telefone-tempo limite, telefone inacessível ou declaração no token.                                                     |
 | adicionada                      | Booliano        | Indica o status da etapa de autenticação. Valores possíveis: `succeeded` , `failed` .                                                                                                                                 |
 
 ## <a name="json-representation"></a>Representação JSON

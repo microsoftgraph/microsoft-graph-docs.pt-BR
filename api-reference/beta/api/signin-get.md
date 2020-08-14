@@ -3,14 +3,14 @@ title: Obter entrada
 doc_type: apiPageType
 description: Obter um objeto de entrada que contenha todas as entradas de um locatário do Azure Active Directory.
 localization_priority: Normal
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c5cc845408d5aa3077d5150dee5a1ed560065a25
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: e1bbdbdc7790bf4310947f9e927f0d0eb44171e8
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123090"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674551"
 ---
 # <a name="get-signin"></a>Obter entrada
 
@@ -55,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto de [entrada](../resources/signin.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de [entrada](../resources/signin.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

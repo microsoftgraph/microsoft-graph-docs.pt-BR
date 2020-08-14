@@ -2,15 +2,15 @@
 title: Listar logons
 description: Descreve o método list do recurso de entrada (entidade) da API do Microsoft Graph.
 localization_priority: Normal
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a18aae68f1dbd94b7af551d6f1dc0b896535176a
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 041a77a1a96ab8652e6efd7e34131bea4c334c99
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124487"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673971"
 ---
 # <a name="list-signins"></a>Listar logons
 

@@ -2,15 +2,15 @@
 title: tipo de recurso applicationSignInDetailedSummary
 description: Representa um resumo de entrada do aplicativo.
 localization_priority: Normal
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 79dbe02f723c9c8912ce8a227a47d6f50260c330
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b67eae972137e168218070013952dae4690bf95a
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455273"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673697"
 ---
 # <a name="applicationsigninsummary-resource-type"></a>tipo de recurso applicationSignInSummary
 
@@ -29,8 +29,8 @@ Representa um resumo de entrada do aplicativo.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|appDisplayName|String|Nome do aplicativo no qual o usuário entrou.|
-|appId|String|  ID do aplicativo que o usuário assinou me .\n\nPara.|
+|appDisplayName|Cadeia de caracteres|Nome do aplicativo no qual o usuário entrou.|
+|appId|Cadeia de caracteres|  ID do aplicativo que o usuário assinou me .\n\nPara.|
 |failedSignInCount|Int64|Contagem de entradas com falha feitas pelo aplicativo.|
 |successPercentage|Int32|Porcentagem de entradas bem-sucedidas feitas pelo aplicativo.|
 |successfulSignInCount|Int64|Contagem de entradas bem-sucedidas feitas pelo aplicativo.|

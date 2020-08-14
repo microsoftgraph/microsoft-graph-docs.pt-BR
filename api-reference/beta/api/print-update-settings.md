@@ -1,18 +1,18 @@
 ---
-title: Atualizar configurações
+title: Atualizar printSettings
 description: Atualize as configurações de todo o locatário para o serviço de impressão universal.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d9e17edaf303c1e62aef4211e080cbdf5d2d00cc
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: d582f1db701be1f1a016902ae489831bca155a12
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948195"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674320"
 ---
-# <a name="update-settings"></a>Atualizar configurações
+# <a name="update-printsettings"></a>Atualizar printSettings
 
 Namespace: microsoft.graph
 
@@ -23,11 +23,11 @@ Atualize as configurações de todo o locatário para o serviço de impressão u
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
+Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Users. Read. All |
+|Delegado (conta corporativa ou de estudante)| User.Read |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça os valores para os campos de [configuraçõe
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|Boolean|Especifica se a conversão de documentos está habilitada para o locatário. Se a conversão de documentos estiver habilitada, o serviço de impressão universal converterá automaticamente os documentos em um formato compatível com a impressora (por exemplo, XPS para PDF), quando necessário.|
+|documentConversionEnabled|Booliano|Especifica se a conversão de documentos está habilitada para o locatário. Se a conversão de documentos estiver habilitada, o serviço de impressão universal converterá automaticamente os documentos em um formato compatível com a impressora (por exemplo, XPS para PDF), quando necessário.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, esse método retornará um código de resposta `204 No Content` e um corpo de resposta vazio.

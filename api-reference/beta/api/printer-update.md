@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: fd44a74bd1a0a5a8c872f49515edce23c27d6907
-ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
+ms.openlocfilehash: 4040174e1f1ad0278dcdfcd1dd94dbe9b6d94b27
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024424"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674397"
 ---
 # <a name="update-printer"></a>Atualizar impressora
 
@@ -23,15 +23,15 @@ Atualiza as propriedades de um objeto [Printer](../resources/printer.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão. 
+Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão. O usuário conectado deve ser um [administrador da impressora](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 Somente o aplicativo que registrou a impressora tem permissão para atualizar a impressora usando permissões de aplicativo.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| Users. Read. All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Printer. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)| Printer. ReadWrite. All, Printer. FullControl. All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| Printer.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ PATCH /print/printers/{id}
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização | {token} de portador. Obrigatório. |
-| Content-type  | `application/json`ao usar permissões delegadas, `application/ipp` ao usar permissões de aplicativo. Obrigatório.|
+| Content-type  | `application/json` ao usar permissões delegadas, `application/ipp` ao usar permissões de aplicativo. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -53,7 +53,7 @@ Se estiver usando permissões delegadas, no corpo da solicitação, forneça os 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |location|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional da impressora.|
-|nome|String|O nome da impressora.|
+|nome|Cadeia de caracteres|O nome da impressora.|
 
 ### <a name="application-permissions-and-ipp-payload"></a>Permissões de aplicativo e carga IPP
 

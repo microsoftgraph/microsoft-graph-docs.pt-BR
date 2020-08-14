@@ -2,15 +2,15 @@
 title: Obter entrada
 description: Descreve o método Get do recurso de entrada (entidade) da API do Microsoft Graph.
 localization_priority: Normal
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 99d9b152ae8b83f7e92b977fbc2fdc3b1e341f58
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: f9734fe7421316f19beed0f0aeccd3dce291ab1c
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124312"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674544"
 ---
 # <a name="get-signin"></a>Obter entrada
 

@@ -3,14 +3,14 @@ title: Visão geral da API de relatórios de identidade e acesso
 description: Acesse a identidade e os relatórios de acesso para obter informações sobre como as pessoas da sua empresa estão usando os aplicativos no locatário do Azure Active Directory.
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-author: kholtz
+author: khotz
 doc_type: conceptualPageType
-ms.openlocfilehash: ca225f663b6eed59f4780c6a26a2a95413b32946
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 140aa4598f643defe42364e99dd0c5a79eb4ab6d
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524411"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673698"
 ---
 # <a name="identity-and-access-reports-api-overview"></a>Visão geral da API de relatórios de identidade e acesso
 

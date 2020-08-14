@@ -1,18 +1,18 @@
 ---
-title: Criar um permitido
+title: Criar um permitido para printerShare
 description: Conceda ao grupo especificado o acesso ao envio de trabalhos de impressão à impressora associada.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 22512c6de88d85c09c0924fbc66eef9b760c6ce0
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 43bd83a3b61d42d4182c00aeedf511373d682ed6
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44216802"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674229"
 ---
-# <a name="create-allowedgroup"></a>Criar um permitido
+# <a name="create-allowedgroup-for-printershare"></a>Criar um permitido para printerShare
 
 Namespace: microsoft.graph
 
@@ -23,13 +23,13 @@ Conceda ao grupo especificado o acesso ao envio de trabalhos de impressão para 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
+Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Users. Read. All |
+|Delegado (conta corporativa ou de estudante)| PrinterShare. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

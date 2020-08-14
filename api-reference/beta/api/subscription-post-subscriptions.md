@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 1301b8dc1b1e327b8bef573ec307ea25b066cf76
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 43be4878353000d27a50b0f7215aa343f0a195c7
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643964"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673821"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -51,7 +51,7 @@ as assinaturas do **chat** com permissões delegadas não dão suporte a dados d
 
 as assinaturas do **chat** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura do **chat** , você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Observação:** `/teams/allMessages` e `/chats/allMessages` que estão atualmente em versão prévia, e você pode usar essa API sem taxas, sujeito aos [termos de uso das APIs da Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). A partir de agosto de 2020, só estará disponível para usuários e locatários que tenham as [licenças necessárias](/graph/teams-licenses). Como `/teams/allMessages` e `/chats/allMessages` enviar notificações para todos os usuários no locatário, todos os usuários no locatário devem ser licenciados. No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados acessados por meio da API.
+> **Observação:** `/teams/allMessages` e `/chats/allMessages` que estão atualmente em versão prévia, e você pode usar essa API sem taxas, sujeito aos [termos de uso das APIs da Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). A partir de agosto de 2020, só estará disponível para usuários e locatários que tenham as [licenças necessárias](/graph/teams-licenses). Como `/teams/allMessages` e `/chats/allMessages` entregam notificações para todos os usuários no locatário, todos os usuários no locatário devem ser licenciados. No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados acessados por meio da API.
 
 ### <a name="driveitem"></a>driveItem
 
@@ -148,9 +148,9 @@ Estes são os valores válidos para a Propriedade Resource.
 |[Grupos](../resources/group.md)|`groups`|
 |[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Email](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[Presença](../resources/presence.md)| `/communications/presences/{id}`(usuário único), `/communications/presences?$filter=id in ({id},{id}…)` (vários usuários)|
+|[Presença](../resources/presence.md)| `/communications/presences/{id}` (usuário único), `/communications/presences?$filter=id in ({id},{id}…)` (vários usuários)|
 |[Usuários](../resources/user.md)|`users`|
-|[Alerta de segurança](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+|[Alerta de segurança](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 
 > **Observação:** Qualquer caminho iniciado com `me` também pode ser usado com `users/{id}` o ao invés de `me` direcionar um usuário específico, e não o usuário atual.
 

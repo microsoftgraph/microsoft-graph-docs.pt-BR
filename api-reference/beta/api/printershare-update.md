@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 80292a11b3430f00958f82c51a290bc701a23dfe
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: bde00fc44cfba539ff830f4a6f8e7338e8743822
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44216746"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674215"
 ---
 # <a name="update-printershare"></a>Atualizar PrinterShare
 
@@ -25,11 +25,11 @@ Por exemplo, se um dispositivo de impressora física for interrompido, um admini
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
+Além das permissões a seguir, o usuário ou o locatário do aplicativo deve ter uma assinatura universal de impressão ativa. O usuário conectado deve ser um [administrador da impressora](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Users. Read. All |
+|Delegado (conta corporativa ou de estudante)| PrinterShare. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -50,7 +50,7 @@ No corpo da solicitação, forneça os valores para campos [printerShare](../res
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|impressora|String|A impressora à qual esse compartilhamento de impressora está relacionado. Use a `printer@odata.bind` sintaxe, conforme mostrado no exemplo a seguir, para atualizar a impressora à qual este compartilhamento de impressora está associado.|
+|impressora|Cadeia de caracteres|A impressora à qual esse compartilhamento de impressora está relacionado. Use a `printer@odata.bind` sintaxe, conforme mostrado no exemplo a seguir, para atualizar a impressora à qual este compartilhamento de impressora está associado.|
 
 >**Observação:** Não há suporte para a atualização do nome de compartilhamento da impressora.
 

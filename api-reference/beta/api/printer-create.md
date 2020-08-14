@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f9a9f89ff7350f4b76641a2a6f3cfb9f7f97679b
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: bf100a99d573c186efa64af1692250534a31c50a
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566353"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674089"
 ---
 # <a name="printer-create"></a>impressora: criar
 
@@ -23,13 +23,13 @@ Criar (registrar) uma impressora com o serviço de impressão universal. Esta é
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
+Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão. O usuário conectado deve ser um [administrador da impressora](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| User.Read.All |
+|Delegado (conta corporativa ou de estudante)| Printer. Create, Printer. ReadWrite. All, Printer. FullControl. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,9 +49,9 @@ No corpo da solicitação, forneça um objeto JSON com as propriedades a seguir.
 |:---------------|:--------|:----------|:----------|
 |displayName|Cadeia de caracteres|O nome de exibição a ser atribuído à impressora.|Sim|
 |fabricante|String|O fabricante da impressora.|Sim|
-|modelo|Cadeia de caracteres|O modelo da impressora.|Sim|
+|modelo|String|O modelo da impressora.|Sim|
 |physicalDeviceId|Cadeia de caracteres|O UUID do dispositivo físico da impressora. Obrigatório se a `hasPhysicalDevice` propriedade for true.|Não|
-|hasPhysicalDevice|Boolean|True se a impressora tem dispositivo de saída físico; caso contrário, false. Se for omitido, o valor padrão será true.|Não|
+|hasPhysicalDevice|Booliano|True se a impressora tem dispositivo de saída físico; caso contrário, false. Se for omitido, o valor padrão será true.|Não|
 |certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|A solicitação de assinatura de certificado (CSR) do X. 509 para o certificado criado e usado pela impressora para identificar-se.|Sim|
 |connectorid|Cadeia de caracteres|ID do conector que atua como proxy para a impressora.|Não|
 

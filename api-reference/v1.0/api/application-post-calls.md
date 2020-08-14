@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: aa5de4a999dc57b9f9aab9c970530a0da56bf4f8
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 319de4fa66871049913256c6deb2f582c3365d4f
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289697"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673760"
 ---
 # <a name="create-call"></a>Criar chamada
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                                                                           |
 | Delegado (conta pessoal da Microsoft) | Não suportado                                                                           |
-| Aplicativo                            | Calls. JoinGroupCallsasGuest. All, calls. JoinGroupCalls. All, calls. initiate. All, calls. InitiateGroupCalls. All |
+| Aplicativo                            | Calls. JoinGroupCallsasGuest. All, calls. JoinGroupCalls. All, Calls.Initiate. All, Calls.InitiateGroupCalls. All |
 
 > **Observação:** Para uma chamada com mídia hospedada em aplicativos, você precisará da permissão calls. AccessMedia. All além de uma das permissões listadas na tabela acima.
 
@@ -54,7 +54,7 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta e 
 
 ### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>Exemplo 1: criar uma chamada VoIP ponto a ponto com mídia hospedada pelo serviço
 
-> **Observação:** Essa chamada precisa da permissão calls. initiate. All.
+> **Observação:** Essa chamada precisa do Calls.Initiate. Todas as permissões.
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada pelo serviço. Os valores do token de autorização, a URL de retorno de chamada, a ID do aplicativo, o nome do aplicativo, a ID do usuário, o nome do usuário e a ID do locatário devem ser substituídos por valores reais para que o exemplo funcione.
@@ -255,7 +255,7 @@ Content-Type: application/json
 
 ### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Exemplo 2: criar uma chamada VoIP ponto a ponto com mídia hospedada no aplicativo
 
-> **Observação**: Este exemplo precisa de calls. initiate. All e calls. AccessMedia. All.
+> **Observação**: Este exemplo precisa de Calls.Initiate. Todas as permissões e calls. AccessMedia. All.
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Os valores de token de autorização, URL de retorno de chamada, ID de aplicativo, nome de aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para que o exemplo funcione.
@@ -534,7 +534,7 @@ Content-Type: application/json
 Para participar da reunião agendada, precisaremos obter a ID do thread, a ID da mensagem, a ID do organizador e a ID do locatário em que a reunião está agendada.
 Essas informações podem ser obtidas na [API de reuniões online](../api/onlinemeeting-get.md) (somente em reuniões do VTC).
 
-Os valores do token de autorização, a URL de retorno de chamada, a ID do aplicativo, o nome do aplicativo, a ID do usuário, o nome do usuário e a ID do locatário devem ser substituídos juntamente com os detalhes obtidos da [API de reunião online](../api/onlinemeeting-get.md) (somente em reuniões do VTC) com valores reais para que o exemplo funcione.
+Os valores do token de autorização, a URL de retorno de chamada, a ID do aplicativo, o nome do aplicativo, a ID do usuário, o nome do usuário e a ID do locatário devem ser substituídos juntamente com os detalhes obtidos da  [API de reunião online](../api/onlinemeeting-get.md) (somente em reuniões do VTC) com valores reais para que o exemplo funcione.
 > **Observação:** Este exemplo precisa da `Calls.JoinGroupCalls.All` permissão.
 
 ##### <a name="request"></a>Solicitação
@@ -579,11 +579,13 @@ Content-Type: application/json
       "user": {
         "@odata.type": "#microsoft.graph.identity",
         "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-        "displayName": "Bob"
+        "displayName": "Bob",
+        "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
       }
     },
     "allowConversationWithoutHost": true
-  }
+  },
+  "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
 ##### <a name="response"></a>Resposta
