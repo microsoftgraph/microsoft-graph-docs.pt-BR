@@ -1,44 +1,44 @@
 ---
-title: 'directoryobject: getByIds'
+title: 'directoryObject: getByIds'
 description: 'Retorna os objetos de diretório especificados em uma lista de IDs. '
 author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f71233b25d4ede3479960e44a4de2876b4c9a0c7
-ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
+ms.openlocfilehash: 0dc41b151b008ba18eeea15d397cb225f4292317
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43581650"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673816"
 ---
-# <a name="get-directory-objects-from-a-list-of-ids"></a><span data-ttu-id="ea95c-103">Obter objetos directory a partir de uma lista de ids</span><span class="sxs-lookup"><span data-stu-id="ea95c-103">Get directory objects from a list of ids</span></span>
+# <a name="get-directory-objects-from-a-list-of-ids"></a><span data-ttu-id="3736e-103">Obter objetos directory a partir de uma lista de ids</span><span class="sxs-lookup"><span data-stu-id="3736e-103">Get directory objects from a list of ids</span></span>
 
-<span data-ttu-id="ea95c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ea95c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3736e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3736e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ea95c-105">Retornar os objetos de diretório especificados em uma lista de IDs.</span><span class="sxs-lookup"><span data-stu-id="ea95c-105">Return the directory objects specified in a list of IDs.</span></span>  
+<span data-ttu-id="3736e-105">Retorne os objetos de diretório especificados em uma lista de IDs.</span><span class="sxs-lookup"><span data-stu-id="3736e-105">Return the directory objects specified in a list of IDs.</span></span>  
 
-<span data-ttu-id="ea95c-106">Alguns usos comuns dessa função são:</span><span class="sxs-lookup"><span data-stu-id="ea95c-106">Some common uses for this function are to:</span></span>
+<span data-ttu-id="3736e-106">Alguns usos comuns dessa função são:</span><span class="sxs-lookup"><span data-stu-id="3736e-106">Some common uses for this function are to:</span></span>
 
-* <span data-ttu-id="ea95c-107">Resolva as IDs retornadas por funções (que retornam coleções de IDs) como [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) ou [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta) para seus objetos de diretório de suporte.</span><span class="sxs-lookup"><span data-stu-id="ea95c-107">Resolve IDs returned by functions (that return collections of IDs) such as [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) or [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta)  to their backing directory objects.</span></span>
-* <span data-ttu-id="ea95c-108">Resolver IDs persistentes em um repositório externo pelo aplicativo para seus objetos de diretório de backup.</span><span class="sxs-lookup"><span data-stu-id="ea95c-108">Resolve IDs persisted in an external store by the application to their backing directory objects.</span></span>
+* <span data-ttu-id="3736e-107">Resolva as IDs retornadas por funções (que retornam coleções de IDs) como [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) ou [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta) para seus objetos de diretório de suporte.</span><span class="sxs-lookup"><span data-stu-id="3736e-107">Resolve IDs returned by functions (that return collections of IDs) such as [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) or [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta)  to their backing directory objects.</span></span>
+* <span data-ttu-id="3736e-108">Resolva IDs que persistem em um repositório externo pelo aplicativo para seus objetos de diretório de suporte.</span><span class="sxs-lookup"><span data-stu-id="3736e-108">Resolve IDs persisted in an external store by the application to their backing directory objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ea95c-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="ea95c-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3736e-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="3736e-109">Permissions</span></span>
 
-<span data-ttu-id="ea95c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ea95c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3736e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3736e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="ea95c-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ea95c-112">Permission type</span></span>      | <span data-ttu-id="ea95c-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ea95c-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3736e-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3736e-112">Permission type</span></span>      | <span data-ttu-id="3736e-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3736e-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ea95c-114">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ea95c-114">Delegated (work or school account)</span></span> | <span data-ttu-id="ea95c-115">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="ea95c-115">Directory.Read.All</span></span>    |
-|<span data-ttu-id="ea95c-116">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ea95c-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ea95c-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ea95c-117">Not supported.</span></span>    |
-|<span data-ttu-id="ea95c-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ea95c-118">Application</span></span> | <span data-ttu-id="ea95c-119">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="ea95c-119">Directory.Read.All</span></span> |
+|<span data-ttu-id="3736e-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3736e-114">Delegated (work or school account)</span></span> | <span data-ttu-id="3736e-115">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="3736e-115">Directory.Read.All</span></span>    |
+|<span data-ttu-id="3736e-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3736e-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3736e-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3736e-117">Not supported.</span></span>    |
+|<span data-ttu-id="3736e-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3736e-118">Application</span></span> | <span data-ttu-id="3736e-119">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="3736e-119">Directory.Read.All</span></span> |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-## <a name="http-request"></a><span data-ttu-id="ea95c-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ea95c-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3736e-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3736e-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -46,32 +46,32 @@ ms.locfileid: "43581650"
 POST /directoryObjects/getByIds
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ea95c-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ea95c-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3736e-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3736e-121">Request headers</span></span>
 
-| <span data-ttu-id="ea95c-122">Nome</span><span class="sxs-lookup"><span data-stu-id="ea95c-122">Name</span></span>       | <span data-ttu-id="ea95c-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="ea95c-123">Type</span></span> | <span data-ttu-id="ea95c-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="ea95c-124">Description</span></span>|
+| <span data-ttu-id="3736e-122">Nome</span><span class="sxs-lookup"><span data-stu-id="3736e-122">Name</span></span>       | <span data-ttu-id="3736e-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="3736e-123">Type</span></span> | <span data-ttu-id="3736e-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="3736e-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="ea95c-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="ea95c-125">Authorization</span></span>  | <span data-ttu-id="ea95c-126">string</span><span class="sxs-lookup"><span data-stu-id="ea95c-126">string</span></span>  | <span data-ttu-id="ea95c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ea95c-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ea95c-129">Content-type</span><span class="sxs-lookup"><span data-stu-id="ea95c-129">Content-type</span></span>  | <span data-ttu-id="ea95c-130">string</span><span class="sxs-lookup"><span data-stu-id="ea95c-130">string</span></span> | <span data-ttu-id="ea95c-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ea95c-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="3736e-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="3736e-125">Authorization</span></span>  | <span data-ttu-id="3736e-126">string</span><span class="sxs-lookup"><span data-stu-id="3736e-126">string</span></span>  | <span data-ttu-id="3736e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3736e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3736e-129">Content-type</span><span class="sxs-lookup"><span data-stu-id="3736e-129">Content-type</span></span>  | <span data-ttu-id="3736e-130">string</span><span class="sxs-lookup"><span data-stu-id="3736e-130">string</span></span> | <span data-ttu-id="3736e-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3736e-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="ea95c-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ea95c-133">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3736e-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3736e-133">Request body</span></span>
 
-<span data-ttu-id="ea95c-134">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ea95c-134">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="3736e-134">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3736e-134">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="ea95c-135">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="ea95c-135">Parameter</span></span>   | <span data-ttu-id="ea95c-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="ea95c-136">Type</span></span> |<span data-ttu-id="ea95c-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="ea95c-137">Description</span></span>|
+| <span data-ttu-id="3736e-135">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="3736e-135">Parameter</span></span>   | <span data-ttu-id="3736e-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="3736e-136">Type</span></span> |<span data-ttu-id="3736e-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="3736e-137">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ea95c-138">ids</span><span class="sxs-lookup"><span data-stu-id="ea95c-138">ids</span></span>|<span data-ttu-id="ea95c-139">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="ea95c-139">String collection</span></span>| <span data-ttu-id="ea95c-140">Uma coleção de IDs para a qual retornar objetos.</span><span class="sxs-lookup"><span data-stu-id="ea95c-140">A collection of IDs for which to return objects.</span></span> <span data-ttu-id="ea95c-141">As IDs são GUIDs, representadas como cadeias de caracteres.</span><span class="sxs-lookup"><span data-stu-id="ea95c-141">The IDs are GUIDs, represented as strings.</span></span> <span data-ttu-id="ea95c-142">Você pode especificar até 1000 IDs.</span><span class="sxs-lookup"><span data-stu-id="ea95c-142">You can specify up to 1000 IDs.</span></span> |
-|<span data-ttu-id="ea95c-143">tipos</span><span class="sxs-lookup"><span data-stu-id="ea95c-143">types</span></span>|<span data-ttu-id="ea95c-144">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="ea95c-144">String collection</span></span>| <span data-ttu-id="ea95c-145">Uma coleção de tipos de recursos que especifica o conjunto de coleções de recursos para pesquisar.</span><span class="sxs-lookup"><span data-stu-id="ea95c-145">A collection of resource types that specifies the set of resource collections to search.</span></span> <span data-ttu-id="ea95c-146">Se não estiver especificado, o padrão será [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), que contém todos os tipos de recursos definidos no diretório.</span><span class="sxs-lookup"><span data-stu-id="ea95c-146">If not specified, the default is [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), which contains all of the resource types defined in the directory.</span></span> <span data-ttu-id="ea95c-147">Qualquer objeto deriva do [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) pode ser especificado na coleção. Por exemplo: [usuário](/graph/api/resources/user?view=graph-rest-beta), [grupo](/graph/api/resources/group?view=graph-rest-beta), [dispositivo](/graph/api/resources/device?view=graph-rest-beta) e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="ea95c-147">Any object that derives from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) may be specified in the collection; for example: [user](/graph/api/resources/user?view=graph-rest-beta), [group](/graph/api/resources/group?view=graph-rest-beta), [device](/graph/api/resources/device?view=graph-rest-beta), and so on.</span></span> <span data-ttu-id="ea95c-148">Para procurar referências para uma organização parceira do [Provedor de soluções de nuvem](https://partner.microsoft.com/cloud-solution-provider) especifique [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="ea95c-148">To search for references to a [Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) partner organization specify [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).</span></span> <span data-ttu-id="ea95c-149">Se não for especificado, o padrão é [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta),  que contém todos os tipos de recursos definidos no diretório, exceto referências a uma organização parceira do [Provedor de soluções de nuvem](https://partner.microsoft.com/en-us/cloud-solution-provider).</span><span class="sxs-lookup"><span data-stu-id="ea95c-149">If not specified, the default is [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), which contains all of the resource types defined in the directory, except for references to a [Cloud Solution Provider](https://partner.microsoft.com/en-us/cloud-solution-provider) partner organization.</span></span> <span data-ttu-id="ea95c-150">Os valores não diferenciam maiúsculas de minúsculas.</span><span class="sxs-lookup"><span data-stu-id="ea95c-150">The values are not case-sensitive.</span></span>|
+|<span data-ttu-id="3736e-138">ids</span><span class="sxs-lookup"><span data-stu-id="3736e-138">ids</span></span>|<span data-ttu-id="3736e-139">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="3736e-139">String collection</span></span>| <span data-ttu-id="3736e-140">Uma coleção de IDs para a qual retornar objetos.</span><span class="sxs-lookup"><span data-stu-id="3736e-140">A collection of IDs for which to return objects.</span></span> <span data-ttu-id="3736e-141">As IDs são GUIDs, representadas como cadeias de caracteres.</span><span class="sxs-lookup"><span data-stu-id="3736e-141">The IDs are GUIDs, represented as strings.</span></span> <span data-ttu-id="3736e-142">Você pode especificar até 1000 IDs.</span><span class="sxs-lookup"><span data-stu-id="3736e-142">You can specify up to 1000 IDs.</span></span> |
+|<span data-ttu-id="3736e-143">tipos</span><span class="sxs-lookup"><span data-stu-id="3736e-143">types</span></span>|<span data-ttu-id="3736e-144">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="3736e-144">String collection</span></span>| <span data-ttu-id="3736e-145">Uma coleção de tipos de recursos que especifica o conjunto de coleções de recursos para pesquisar.</span><span class="sxs-lookup"><span data-stu-id="3736e-145">A collection of resource types that specifies the set of resource collections to search.</span></span> <span data-ttu-id="3736e-146">Se não estiver especificado, o padrão será [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), que contém todos os tipos de recursos definidos no diretório.</span><span class="sxs-lookup"><span data-stu-id="3736e-146">If not specified, the default is [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), which contains all of the resource types defined in the directory.</span></span> <span data-ttu-id="3736e-147">Qualquer objeto deriva do [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) pode ser especificado na coleção. Por exemplo: [usuário](/graph/api/resources/user?view=graph-rest-beta), [grupo](/graph/api/resources/group?view=graph-rest-beta), [dispositivo](/graph/api/resources/device?view=graph-rest-beta) e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="3736e-147">Any object that derives from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) may be specified in the collection; for example: [user](/graph/api/resources/user?view=graph-rest-beta), [group](/graph/api/resources/group?view=graph-rest-beta), [device](/graph/api/resources/device?view=graph-rest-beta), and so on.</span></span> <span data-ttu-id="3736e-148">Para procurar referências para uma organização parceira do [Provedor de soluções de nuvem](https://partner.microsoft.com/cloud-solution-provider) especifique [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="3736e-148">To search for references to a [Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) partner organization specify [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).</span></span> <span data-ttu-id="3736e-149">Se não for especificado, o padrão é [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta),  que contém todos os tipos de recursos definidos no diretório, exceto referências a uma organização parceira do [Provedor de soluções de nuvem](https://partner.microsoft.com/cloud-solution-provider).</span><span class="sxs-lookup"><span data-stu-id="3736e-149">If not specified, the default is [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), which contains all of the resource types defined in the directory, except for references to a [Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) partner organization.</span></span> <span data-ttu-id="3736e-150">Os valores não diferenciam maiúsculas de minúsculas.</span><span class="sxs-lookup"><span data-stu-id="3736e-150">The values are not case-sensitive.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ea95c-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="ea95c-151">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3736e-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="3736e-151">Response</span></span>
 
-<span data-ttu-id="ea95c-152">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto da coleção String no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ea95c-152">If successful, this method returns a `200 OK` response code and a string collection object in the response body.</span></span>
+<span data-ttu-id="3736e-152">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto da coleção de cadeias de caracteres no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3736e-152">If successful, this method returns a `200 OK` response code and a string collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ea95c-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ea95c-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3736e-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3736e-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ea95c-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ea95c-154">Request</span></span>
+### <a name="request"></a><span data-ttu-id="3736e-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3736e-154">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="ea95c-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="ea95c-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3736e-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="3736e-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_getByIds"
@@ -86,24 +86,24 @@ Content-type: application/json
     "types":["user"]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="ea95c-156">C#</span><span class="sxs-lookup"><span data-stu-id="ea95c-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3736e-156">C#</span><span class="sxs-lookup"><span data-stu-id="3736e-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-getbyids-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ea95c-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ea95c-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3736e-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3736e-157">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getbyids-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ea95c-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ea95c-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3736e-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3736e-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-getbyids-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="ea95c-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="ea95c-159">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3736e-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="3736e-159">Response</span></span>
 
-><span data-ttu-id="ea95c-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ea95c-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="3736e-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3736e-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
