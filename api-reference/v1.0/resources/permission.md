@@ -7,12 +7,12 @@ localization_priority: Priority
 description: O recurso Permission fornece informações sobre uma permissão de compartilhamento concedida a um recurso DriveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5c4b881aaf10a56b65342dccebd417867c2b7b26
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 7a60b07e2368d16f588e96094926138908463310
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934700"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46657928"
 ---
 # <a name="permission-resource-type"></a>Tipo de recurso permission
 
@@ -84,12 +84,11 @@ Permissões com uma faceta [**invitation**][SharingInvitation] representam permi
 
 ### <a name="roles-property-values"></a>Valores de propriedades Roles
 
-| Função        | Detalhes                                                                        |
-|:------------|:-------------------------------------------------------------------------------|
-| `read`      | Fornece a capacidade de ler os metadados e o conteúdo do item.            |
-| `write`     | Fornece a capacidade de ler e modificar os metadados e o conteúdo do item. |
-| `sp.owner`  | Para o SharePoint e o OneDrive for Business, isso representa a função de proprietário.       |
-| `sp.member` | Para o SharePoint e o OneDrive for Business, isso representa a função de membro.      |
+| Função              | Detalhes                                                                        |
+|:------------------|:-------------------------------------------------------------------------------|
+| leitura            | Oferece a capacidade de ler os metadados e o conteúdo do item.            |
+| gravação           | Oferece a capacidade de ler e modificar os metadados e o conteúdo do item. |
+| controle sp.full | Para o Microsoft Office SharePoint Online e o OneDrive for Business, este representa o papel do proprietário.       |
 
 ## <a name="sharing-links"></a>Links de compartilhamento
 O tipo mais comum de permissões são os links de compartilhamento. Esses links fornecem uma URL exclusiva que inclui o recurso que está sendo compartilhado e um token de autenticação que fornece acesso ao recurso. Os usuários não precisam entrar para acessar o conteúdo compartilhado com um link de compartilhamento. Os usuários podem compartilhar um link que concede acesso somente leitura ou acesso de gravação ao conteúdo.

@@ -3,19 +3,44 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 85c3a540c6aa2f0c7f3b00bf86a3e727997743b3
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: 2dfeaa8ba656adac608de31028772f8b5665f4f0
+ms.sourcegitcommit: 2e6fb1c0fef8cb3af1a72c115aa54902c71c99f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589141"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46658225"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
-Veja os destaques das recentes novidades do Microsoft Graph, [o que foi adicionado anteriormente](whats-new-earlier.md) e como você pode [compartilhar suas idéias](#want-to-stay-in-the-loop). Para obter uma lista detalhada de atualizações no nível da API, consulte o [registro de alterações da API](changelog.md). 
+Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o que foi adicionado anteriormente](whats-new-earlier.md) e como você pode [compartilhar suas ideias](#want-to-stay-in-the-loop). Para obter uma lista detalhada de atualizações no nível da API, consulte o [registro de alterações da API](changelog.md). 
 
 > [!IMPORTANT]
 > Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status DG. Não use os recursos de visualização em aplicativos de produção.
+
+## <a name="august-2020-new-and-generally-available"></a>Agosto de 2020: novo e disponível para o público geral
+
+### <a name="change-notifications"></a>Notificações de alteração
+[Controle de alterações](delta-query-overview.md) de recursos com suporte para a nuvem nacional do Microsoft Graph para o Governo dos EUA.
+
+
+## <a name="august-2020-new-in-preview-only"></a>Agosto de 2020: novidade apenas na versão prévia
+
+### <a name="applications"></a>Aplicativos
+Ofereça suporte a logon único baseado em senha para recursos de aplicativos de [entidade de serviço](/graph/api/resources/serviceprincipal?view=graph-rest-beta) e especifique essas [configurações](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) na propriedade **passwordSingleSignOnSettings**. Para obter informações sobre logon único baseado em senha no Azure AD, confira [configurar logon único baseado em senha](/azure/active-directory/manage-apps/configure-password-single-sign-on-non-gallery-applications).
+
+### <a name="change-notifications"></a>Notificações de alteração
+- Use a propriedade **includeResourceData** de uma [assinatura](/graph/api/resources/subscription?view=graph-rest-beta) para [configurar notificações de alteração que incluam dados de recursos](webhooks-with-resource-data.md). Não use a propriedade **includeProperties**.
+- Receba [notificações de alteração via Hub de Eventos](change-notifications-delivery.md).
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+- Personalize um [contrato de termos de uso](/graph/api/resources/agreement?view=graph-rest-beta) para oferecer suporte a uma data de vencimento e cadência de contrato, exigir que o usuário aceite o contrato por dispositivo ou aceite novamente o contrato em uma frequência definida. 
+- Use a propriedade do**arquivo** para navegar até um [contrato personalizado](/graph/api/resources/agreementfile?view=graph-rest-beta) para termos de uso. Não use a propriedade de **arquivos**.
+
+### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
+Obtenha [relatórios sobre o uso de aplicativos do Microsoft 365](/graph/api/resources/microsoft-365-apps-usage-report?view=graph-rest-beta), especificamente sobre detalhes de usuários, contagens de usuários e contagens de usuários da plataforma.
+
+### <a name="teamwork"></a>Trabalho em equipe
+Obtenha [conteúdo hospedado em uma mensagem de chat](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta), como imagens ou trechos de códigos. Veja um [exemplo](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta&branch=master#example-2-get-hosted-content-bytes-for-an-image) para obter os bytes de conteúdo de uma imagem.
 
 ## <a name="july-2020-new-and-generally-available"></a>Julho de 2020: novos e disponíveis para o público em geral
 
@@ -89,101 +114,6 @@ Acesse a taxonomia do [repositório de termos](/graph/api/resources/termstore-st
 
 ### <a name="workbooks-and-charts"></a>Pastas de trabalho e gráficos
 [Obtenha o status e todos os resultados](/graph/api/workbookoperation-get?view=graph-rest-beta) de uma operação [de longa execução](/graph/api/resources/workbookoperation?view=graph-rest-beta) em uma [pasta de trabalho](/graph/api/resources/workbook?view=graph-rest-beta).
-
-## <a name="june-2020-new-and-generally-available"></a>Junho de 2020: novos e disponíveis para o público em geral
-
-### <a name="cloud-communications--online-meeting"></a>Comunicações na nuvem | Reunião online
-- Use o cabeçalho HTTP `Accept-Language`ao [criar uma reunião online](/graph/api/application-post-onlinemeetings?view=graph-rest-1.0) para fornecer informações de participação baseadas no local.
-- Use [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-1.0) para retornar uma reunião online que tenha um valor **externalId** específico ou, caso nenhum valor desse tipo exista, para simplificar a incorporação da reunião resultante a um calendário de terceiros.
-
-### <a name="files"></a>Arquivos
-- Suporte aprimorado à sincronização:
-  - Use a propriedade **pendingOperations** para identificar quaisquer [operações](/graph/api/resources/pendingoperations) que possam atualizar o conteúdo binário de um arquivo [driveItem](/graph/api/resources/driveitem) e que estejam pendentes.
-  - [Restaure](/graph/api/driveitem-restore) um **driveItem** que tenha sido excluído e esteja na lixeira do OneDrive pessoal.
-- Obtenha ou defina a orientação de uma [foto](/graph/api/resources/photo). A configuração é compatível com o OneDrive Personal.
-- Use o Algoritmo de Hash Seguro (SHA-256) para aprimorar a segurança e a integridade dos dados do [arquivo](/graph/api/resources/file).
-- Use o parâmetro `deferCommit` para adiar a criação final ao [carregar geralmente um arquivo grande](/graph/api/driveitem-createuploadsession) no OneDrive for Business, até que um aplicativo faça uma solicitação para concluir o carregamento.
-- Use a propriedade **fileSize** para fornecer uma estimativa como parte do parâmetro do **item**, de modo a fazer uma verificação de cota antes de [carregar um arquivo](/graph/api/driveitem-createuploadsession) no OneDrive pessoal.
-- Localize [storagePlanInformation](/graph/api/resources/storageplaninformation) por meio da propriedade **cota** de um recurso de [unidade](/graph/api/resources/drive) para ver se existem planos de uma cota de armazenamento mais alta disponíveis.
-
-### <a name="groups"></a>Grupos
-Use as permissões de aplicativo `Group.Read.All` e `Group.ReadWrite.All` para obter recursos de uma [conversa](/graph/api/resources/conversation) do grupo e de uma [sequência de conversa](/graph/api/resources/conversationthread).
-
-### <a name="identity-and-access"></a>Identidade e acesso 
-- Disponibilidade generalizada de dois conjuntos de APIs de [proteção de identidade](/graph/api/resources/identityprotectionroot): APIs de [detecção de riscos](/graph/api/resources/riskdetection) e de [usuário arriscado](/graph/api/resources/riskyuser).
-
-### <a name="security"></a>Segurança
-- Rastreie o seguinte como propriedades de um [alerta](/graph/api/resources/alert?view=graph-rest-1.0):
-  - IDs de incidentes relacionados ao alerta.
-  - Identificar um [recurso](/graph/api/resources/securityResource?view=graph-rest-1.0#securityresourcetype-values) como atacado ou como um recurso relacionado no alerta.
-  - Especificar os locais de origem e destino de uma [conexão de rede](/graph/api/resources/networkconnection?view=graph-rest-1.0) relacionada ao alerta.
-
-### <a name="sites-and-lists"></a>Sites e listas
-Especifique dados de localização geográfica em uma [definição de coluna](/graph/api/resources/columndefinition) para um recurso de uma [lista](/graph/api/resources/list) do SharePoint.
-
-### <a name="teamwork"></a>Trabalho em equipe
-- Use a permissão delegada [AppCatalog.Read.All](/graph/permissions-reference#appcatalog-resource-permissions) para listar [aplicativos](/graph/api/resources/teamsapp?view=graph-rest-1.0) do catálogo de aplicativos do Microsoft Teams.
-- [Obtenha informações sobre a pasta](/graph/api/channel-get-filesfolder) que mapeia para a guia **Arquivos** de um [canal](/graph/api/resources/channel) do Teams.
-- [Obtenha o do canal padrão](/graph/api/team-get-primarychannel) — rotulado como **Geral** — de uma [equipe](/graph/api/resources/team).
-
-
-## <a name="june-2020-new-in-preview-only"></a>Junho de 2020: novos apenas na visualização
-
-### <a name="calendar"></a>Calendário
-Além de monitorar as alterações incrementais de eventos em um **calendarView** (um conjunto ou eventos delimitados por datas de início _e_ fim), use a função [delta](/graph/api/event-delta?view=graph-rest-beta) nos eventos de uma caixa de correio do usuário ou eventos em um calendário específico do usuário.
-
-### <a name="cloud-communications--presence"></a>Comunicações na nuvem | Presença
-[Obtenha o status de presença](/graph/api/presence-get?view=graph-rest-beta) de todos os usuários em uma organização ou de um usuário específico na organização.
-
-### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
-- Especificar as [margens de impressão](/graph/api/resources/printmargin?view=graph-rest-beta) ao configurar um [documento para impressão](/graph/api/resources/printdocument?view=graph-rest-beta).
-- Compatível com os seguintes [recursos da impressora](/graph/api/resources/printercapabilities?view=graph-rest-beta):
-  - instruções de alimentação
-  - impressão de intervalos de páginas
-  - resolução da impressão em DPIs
-  - tamanho máximo da fila de tarefas de impressão em bytes
-  - compartimentos de entrada
-  - margens
-  - ordenação
-  - escala do documento
-- Compatível com a resolução da impressão (DPI) e com a escala do documento como parte das [configurações padrão da impressora](/graph/api/resources/printerdefaults?view=graph-rest-beta).
-- Compatível com as seguintes [configurações do documento](/graph/api/resources/printerdocumentconfiguration?view=graph-rest-beta):
-  - compartimentos de entrada
-  - compartimentos de saída
-  - tamanhos de papel
-  - margens
-  - tipos de papel
-  - acabamentos como grampeamento ou encadernação
-  - páginas por folha
-  - layout multipáginas especificando a direção do layout das páginas na folha
-  - ordenação
-  - escala
-- Expandir os documentos ao [listar as tarefas de impressão](/graph/api/printer-list-jobs?view=graph-rest-beta).
-- [Registre uma impressora ]() e use o recurso [printerCreateOperation](/graph/api/resources/printercreateoperation?view=graph-rest-beta) para monitorar e verificar o registro da impressora.
-- [Obtenha a operação de registro](/graph/api/printoperation-get?view=graph-rest-beta) da impressora de longa duração no usuário atual ou no locatário do aplicativo.
-- Algumas propriedades e tipos de enumeração renomeados; confira os detalhes nas atualizações do log de alterações da impressão em nuvem do mês de [junho](changelog.md#june-2020).
-
-### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
-Atualizações do Intune em [junho](changelog.md#june-2020) — em beta.
-
-### <a name="education"></a>Educação
-- Possibilidade de usar permissões delegadas `EduRoster.ReadBasic` para [obter](/graph/api/educationuser-get?view=graph-rest-beta) a ID de um(a) [professor(a)](/graph/api/resources/educationteacher?view=graph-rest-beta) ou [aluno(a)](/graph/api/resources/educationstudent?view=graph-rest-beta) em um programa de uma fonte externa, na forma de uma propriedade **externalId**.
-- Use a propriedade **externalSource** para monitorar o valor `lms` se uma [organização](/graph/api/resources/educationorganization?view=graph-rest-beta) de ensino ou [aula](/graph/api/resources/educationclass?view=graph-rest-beta) forem criados a partir de um sistema de gerenciamento de aprendizagem (LMS).
-
-### <a name="identity-and-access"></a>Identidade e acesso
-- Os profissionais de TI podem usar os recursos do [conector](/graph/api/resources/connector?view=graph-rest-beta) que sejam agentes leves para se conectar ao [Proxy de Aplicativos do Azure AD](/azure/active-directory/manage-apps/what-is-application-proxy) e [publicar aplicativos web locais externamente](/graph/api/resources/onpremisespublishing?view=graph-rest-beta)para que os usuários remotos de suas organizações possam acessá-los de forma segura.
-- Gerenciar uma [política de autenticação](/graph/api/resources/authenticationflowspolicy?view=graph-rest-beta) no nível de locatário para ativar ou desativar um [serviço autoatendimento de cadastramento](/graph/api/resources/selfservicesignupauthenticationflowconfiguration?view=graph-rest-beta) para usuários externos.
-- [Provisionar uma conta de usuário sob demanda](/graph/api/synchronization-synchronizationjob-provision-on-demand?view=graph-rest-beta) e ser capaz de especificar quais objetos provisionar e quais regras de sincronização executar.
-
-### <a name="search"></a>Busca
-- Utilizar os aperfeiçoamentos de uma [propriedade](/graph/api/resources/property?view=graph-rest-beta) em um [esquema](/graph/api/resources/schema?view=graph-rest-beta): **isRefinable** para habilitar a filtragem dos resultados de busca e obter um controle mais refinado da experiência de busca, além de **aliases** e **rótulos** para maior relevância.
-- Capacidade de especificar até 128 recursos de **propriedades** em um **esquema**.
-- Use [get externalItem](/graph/api/externalitem-get?view=graph-rest-beta) para fins de diagnóstico.
-
-### <a name="users"></a>Usuários
-- Use a propriedade **userPurpose** em [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) para identificar e diferenciar uma caixa de correio para um único usuário de uma caixa de correio compartilhada e do equipamento de caixa de correio no Exchange Online. 
-- Use as [configurações de usuário](/graph/api/resources/usersettings?view=graph-rest-beta) para [obter](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta) ou [atualizar](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta) [idiomas preferenciais e configurações regionais](/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta).
-- As configurações de usuário são uma relação acessível por meio do [usuário](/graph/api/resources/user?view=graph-rest-beta) que permite uma experiência de usuário consistente em todos os aplicativos, bastando tocar no perfil de usuário do Azure AD para refletir as mesmas preferências do usuário. Veja [como as configurações de usuário diferem das configurações da caixa de correio](/graph/api/resources/user?view=graph-rest-beta#user-preferences-for-languages-and-regional-formats). 
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Quer ficar por dentro?
