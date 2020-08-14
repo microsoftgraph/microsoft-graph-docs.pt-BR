@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: namkedia
-ms.openlocfilehash: 449553213e41cb8b447511584c4905906011a4d4
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 6549ba9c288dce75a42fb0eee54ecf756af822ab
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509543"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674264"
 ---
 # <a name="identityprovider-resource-type"></a>Tipo de recurso do identityProvider
 
@@ -18,15 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os provedores de identidade em um locatário do Azure Active Directory e em um locatário do Azure AD B2C.
+Representa provedores de identidade com [Identidades externas](https://docs.microsoft.com/azure/active-directory/external-identities/) para locatário do Azure Active Directory e um locatário do Azure AD B2C.
 
 Para cenários do Azure AD B2B em um locatário do Microsoft Azure Active Directory, o tipo de provedor de identidade pode ser o Google ou o Facebook.
+
+A configuração de um provedor de identidade no locatário do Microsoft Azure Active Directory permite novos cenários de convidado no Azure AD B2B. Por exemplo, uma organização possui recursos no Microsoft 365 que precisam ser compartilhados com um usuário do Gmail. O usuário do Gmail usará as credenciais de conta do Google para autenticar e acessar os documentos.
 
 Em um locatário do Azure AD B2C, o tipo de provedor de identidade pode ser a Microsoft, o Google, o Facebook, a Amazon, o LinkedIn, o Twitter ou qualquer [openIdConnectProvider](../resources/openidconnectprovider.md). Os seguintes provedores de identidade estão em visualização: Weibo, QQ, WeChat e GitHub.
 
 A configuração de um provedor de identidade no locatário do Azure AD B2C permite que os usuários se inscrevam e entrem usando uma conta social ou um provedor personalizado suportado pelo OpenID Connect em um aplicativo. Por exemplo, um aplicativo pode usar o Azure AD B2C para permitir que os usuários se inscrevam no serviço usando uma conta do Facebook ou o seu próprio provedor de identidade personalizado que esteja em conformidade com o protocolo OIDC.
 
-A configuração de um provedor de identidade no locatário do Microsoft Azure Active Directory permite novos cenários de convidado no Azure AD B2B. Por exemplo, uma organização possui recursos no Microsoft 365 que precisam ser compartilhados com um usuário do Gmail. O usuário do Gmail usará as credenciais de conta do Google para autenticar e acessar os documentos.
 
 Se for um provedor de identidade personalizado do OpenID Connect `OpenIDConnect` como `type` será representado usando o tipo de recurso [openIdConnectProvider](../resources/openidconnectprovider.md),que herdará do tipo de recurso identityProvider. 
 

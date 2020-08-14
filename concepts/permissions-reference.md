@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 8e99015b86be921d034ca41eb178581c75af49cf
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 27335eb191352d37523975c7a506f39e7da725be
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630330"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674516"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1649,8 +1649,29 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
-## <a name="teams-permissions"></a>Permissões de equipes
+## <a name="taxonomy-permissions"></a>Permissões de taxonomia
 
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TermStore.Read.All_        | Ler dados do repositório de termos | Permitir que o aplicativo leia vários termos, definições e grupos no repositório de termos | Sim  | Não |
+| _TermStore.ReadWrite.All_   | Ler e gravar todos os dados do repositório de termos | Permitir que o aplicativo edite ou exclua termos, definições e grupos no repositório de termos | Sim  | Não |
+
+### <a name="remarks"></a>Comentários
+
+As permissões de taxonomia só são válidas para contas do trabalho ou da escola.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado
+
+* _TermStore.Read.All_: Ler o termstore para o locatário (`GET /termStore`)
+* _TermStore.ReadWrite.All_: Criar novos termos no termStore (`POST /termStore/sets/123/children`)
+
+---
+
+## <a name="teams-permissions"></a>Permissões de equipes
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
@@ -1891,27 +1912,63 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 
 ---
 
-## <a name="taxonomy-permissions"></a>Permissões de taxonomia
+## <a name="universal-print-permissions"></a>Permissões Universais de Impressão
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TermStore.Read.All_        | Ler dados do repositório de termos | Permitir que o aplicativo leia vários termos, definições e grupos no repositório de termos | Sim  | Não |
-| _TermStore.ReadWrite.All_   | Ler e gravar todos os dados do repositório de termos | Permitir que o aplicativo edite ou exclua termos, definições e grupos no repositório de termos | Sim  | Não |
+| _Printer.Create_ | Impressoras registradas | Permite que o aplicativo crie (cadastre) impressoras em nome do usuário conectado. | Sim | Não |
+| _Printer.FullControl.All_ | Registre, leia, atualize e cancele o registro de impressoras | Permite que o aplicativo crie (registre), leia, atualize e exclua (cancele o registro) de impressoras em nome do usuário conectado. | Sim | Não |
+| _Printer.Read.All_ | Ler impressoras | Permite que o aplicativo leia impressoras em nome do usuário conectado. | Sim | Não |
+| _Printer.ReadWrite.All_ | Ler e atualizar as impressoras | Permite que o aplicativo leia e atualize impressoras em nome do usuário conectado.Não permite a criação (registro) ou a exclusão (cancelamento do registro) de impressoras. | Sim | Não |
+| _PrinterShare.Read.All_ | Ler compartilhamentos de impressora | Permite que o aplicativo leia os compartilhamentos da impressora em nome do usuário conectado. | Não | Não |
+| _PrinterShare.ReadWrite.All_ | Ler e gravar compartilhamentos de impressora | Permite que o aplicativo leia e atualize compartilhamentos de impressora em nome do usuário conectado. | Sim | Não |
+| _PrintJob.Read_ | Ler os trabalhos de impressão do usuário | Permite que o aplicativo leia os metadados e o conteúdo do documento dos trabalhos de impressão criados pelo usuário conectado. | Não | Não |
+| _PrintJob.Read.All_ | Ler os trabalhos de impressão | Permite que o aplicativo leia os metadados e o conteúdo do documento dos trabalhos de impressão em nome do usuário conectado. | Sim | Não |
+| _PrintJob.ReadBasic_ | Ler informações básicas dos trabalhos de impressão do usuário | Permite que o aplicativo leia os metadados dos trabalhos de impressão criados pelo usuário conectado. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Não | Não |
+| _PrintJob.ReadBasic.All_ | Ler informações básicas dos trabalhos de impressão | Permite que o aplicativo leia os metadados dos trabalhos de impressão em nome do usuário conectado.Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim | Não |
+| _PrintJob.ReadWrite_ | Ler e gravar os trabalhos de impressão do usuário | Permite que o aplicativo leia e atualize os metadados e o conteúdo do documento dos trabalhos de impressão criados pelos usuário conectado. | Não | Não |
+| _PrintJob.ReadWrite.All_ | Ler e gravar trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados e o conteúdo do documento dos trabalhos de impressão em nome do usuário conectado. | Sim | Não |
+| _PrintJob.ReadWriteBasic_ | Ler e gravar informações básicas de trabalhos de impressão do usuário | Permite que o aplicativo leia e atualize os metadados dos trabalhos de impressão que o usuário conectado criou. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Não | Não |
+| _PrintJob.ReadWriteBasic.All_ | Ler e gravar informações básicas de trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados dos trabalhos de impressão em nome do usuário conectado.Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim | Não |
 
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Printer.Read.All_ | Ler impressoras | Permite que o aplicativo leia as impressoras sem um usuário conectado. | Sim |
+| _Printer.ReadWrite.All_ | Ler e atualizar as impressoras | Permite que o aplicativo leia e atualize as impressoras sem um usuário conectado. Não permite a criação (registro) ou a exclusão (cancelamento do registro) de impressoras. | Sim |
+| _PrintJob.Manage.All_ | Executar operações avançadas nos trabalhos de impressão | Permite que o aplicativo execute operações avançadas, como redirecionar um trabalho de impressão para outra impressora sem um usuário conectado. Também, permite que o aplicativo leia e atualize os metadados dos trabalhos de impressão. | Sim |
+| _PrintJob.Read.All_ | Ler os trabalhos de impressão | Permite que o aplicativo leia os metadados e o conteúdo do documento dos trabalhos de impressão sem um usuário conectado. | Sim |
+| _PrintJob.ReadBasic.All_ | Ler informações básicas de trabalhos para impressão | Permite que o aplicativo leia os metadados dos trabalhos de impressão sem um usuário conectado.Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim |
+| _PrintJob.ReadWrite.All_ | Ler e gravar trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados e o conteúdo do documento dos trabalhos de impressão sem um usuário conectado. | Sim |
+| _PrintJob.ReadWriteBasic.All_ | Ler e gravar informações básicas para trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados dos trabalhos de impressão sem um usuário conectado.Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim |
+| _PrintTaskDefinition.ReadWrite.All_ | Ler, gravar e atualizar definições das tarefas de impressão | Permite que o aplicativo leia e atualize as definições das tarefas de impressão sem um usuário conectado. | Sim |
 
 ### <a name="remarks"></a>Comentários
 
-As permissões de taxonomia só são válidas para contas do trabalho ou da escola.
+* Para utilizar o serviço Universal Print, o usuário ou locatário do aplicativo deve ter uma assinatura ativa do Universal Print, além das permissões anteriormente listadas.
+
+* Algumas permissões distinguem entre metadados de trabalho de impressão e conteúdo. Os metadados descrevem a configuração de um trabalho de impressão (seu nome e configuração do documento, por exemplo, se ele deve ser grampeado ou impresso em cores). Conteúdo são os próprios dados do documento (o arquivo PDF ou XPS a serem impresso).
+
+* Todas as permissões PrintJob.* Também exigem pelo menos Printer.Read.All (ou uma permissão mais reservada) porque os trabalhos de impressão são armazenados nas impressoras.
 
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="delegated"></a>Delegado
 
-* _TermStore.Read.All_: Ler o termstore para o locatário (`GET /termStore`)
-* _TermStore.ReadWrite.All_: Criar novos termos no termStore (`POST /termStore/sets/123/children`)
+* _Printer.Read.All_: Obtenha uma lista de todas as impressoras do locatário (`GET /print/printers`)
+* _PrintJob.Read.All_: Obtenha uma lista de todos os trabalhos de impressão enfileirados em uma impressora (`GET /print/printers/{id}/jobs`)
+* _Printer.FullControl.All_: Eliminar uma impressora (sem registro) (`DELETE /print/printers/{id}`)
+* _PrintJob.ReadWriteBasic.All_: Atualizar metadados (como o status atual) de trabalhos de impressão (`PATCH /print/printers/{id}/jobs/{id}`)
+* _PrintJob.ReadWrite.All_: Crie trabalhos de impressão e carregue os dados de documentos para eles (`POST /print/printers/{id}/jobs`)
 
+#### <a name="application"></a>Aplicativo
+
+* _Printer.Read.All_: Obtenha uma lista de todas as impressoras do locatário (`GET /print/printers`)
+
+---
 
 ## <a name="user-permissions"></a>Permissões do usuário
 

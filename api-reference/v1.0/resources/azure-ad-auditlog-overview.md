@@ -2,15 +2,15 @@
 title: Visão geral da API de relatórios de atividades
 description: Use a API de relatórios de atividades no Microsoft Graph para acessar os relatórios que o Azure Active Directory cria para ajudar a rastrear a atividade do usuário em um locatário.
 localization_priority: Priority
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: cc97d66bda8f611d02f3308111bdc5e060f06625
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: fa996a24758dd0fa0a70d97599fe50813d26aaa8
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524258"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673683"
 ---
 # <a name="activity-reports-api-overview"></a>Visão geral da API de relatórios de atividades
 
