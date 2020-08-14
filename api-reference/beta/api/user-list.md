@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 50d53f66629e31d490717cd2fcea047d5a5e10ff
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
-ms.translationtype: MT
+ms.openlocfilehash: 38d9f6044a90e422d68e55466ffd1e6191c54caf
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335782"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643908"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All, Auditlogs.Read.All |
+|Delegado (conta corporativa ou de estudante) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Auditlogs.Read.All |
+|Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -41,14 +41,14 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta, incluindo `$search` , `$count` e `$filter` . Você pode usar `$search` na propriedade **DisplayName** . Quando os itens são adicionados ou atualizados para esse recurso, eles são especialmente indexados para uso com os `$count` `$search` parâmetros de consulta e. Pode haver um ligeiro atraso entre a adição ou atualização de um item e quando ele está disponível no índice.
+Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. Você pode usar `$search`na propriedade**displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Cabeçalho | Valor |
 |:------ |:----- |
 | Autorização | {token} do portador (obrigatório)  |
-| ConsistencyLevel | ocorra. Esse cabeçalho e `$count` são necessários ao usar `$search` ou ao usar `$filter` com o `$orderby` parâmetro de consulta. Ele usa um índice que pode não estar atualizado com alterações recentes no objeto. |
+| ConsistencyLevel | eventualmente. Este cabeçalho e `$count` são necessários quando se utiliza `$search`, ou quando se usa `$filter` com o `$orderby` parâmetro de consulta. Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -60,7 +60,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-all-users"></a>Exemplo 1: obter todos os usuários
+### <a name="example-1-get-all-users"></a>Exemplo 1: Obter todos os usuários
 
 #### <a name="request"></a>Solicitação
 
@@ -117,9 +117,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-user-account-using-a-sign-in-name"></a>Exemplo 2: obter uma conta de usuário usando um nome de entrada
+### <a name="example-2-get-a-user-account-using-a-sign-in-name"></a>Exemplo 2: Obter uma conta de usuário usando um nome de entrada
 
-Encontre uma conta de usuário usando um nome de logon (também conhecido como conta local).
+Encontrar uma conta de usuário usando um nome de entrada (também conhecido como conta local).
 
 >[!NOTE]
 >Ao filtrar por **identidades**, você deve fornecer o **emissor** e **issuerAssignedId**.
@@ -174,7 +174,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-users-including-their-last-sign-in-time"></a>Exemplo 3: obter usuários, incluindo a última hora de entrada
+### <a name="example-3-get-users-including-their-last-sign-in-time"></a>Exemplo 3: Obter usuários incluindo o horário da última entrada
 
 #### <a name="request"></a>Solicitação
 
@@ -370,7 +370,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-6-get-only-a-count-of-users"></a>Exemplo 6: obter apenas uma contagem de usuários
+### <a name="example-6-get-only-a-count-of-users"></a>Exemplo 6: Obter apenas uma contagem de usuários
 
 #### <a name="request"></a>Solicitação
 
@@ -419,7 +419,7 @@ Content-type: text/plain
 893
 
 
-### <a name="example-7-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 7: use $filter e $top para obter um usuário com um nome de exibição que comece com ' a ', incluindo uma contagem de objetos retornados
+### <a name="example-7-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 7: Utilize $filter e $top para obter um usuário com um nome de exibição que comece com a letra 'a', incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
@@ -481,7 +481,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-8-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>Exemplo 8: Use $search para obter os usuários com nomes de exibição que contenham as letras "WA", incluindo uma contagem de objetos retornados
+### <a name="example-8-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>Exemplo 8: Utilize $search para obter usuários com nomes de exibição que contenham as letras 'wa', incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
@@ -543,7 +543,7 @@ Content-type: application/json
 
 ```
 
-### <a name="example-9-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a>Exemplo 9: Use $search para obter os usuários com nomes de exibição que contenham as letras "WA" ou as letras "como", incluindo uma contagem de objetos retornados
+### <a name="example-9-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a>Exemplo 9: Utilize $search para obter grupos com nomes de exibição que contenham as letras 'wa', ou as letras para incluir uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
