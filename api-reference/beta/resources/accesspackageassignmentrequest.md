@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7d7fcf663abf15478b0c2745e9c60e1021d1ee7b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 908d1e4b2fd27895416058a1c8528126dad7ca6b
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508545"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757185"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>tipo de recurso accessPackageAssignmentRequest
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,11 +36,11 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solic
 |completedDate|DateTimeOffset|A data do final do processamento, bem como êxito ou falha, de uma solicitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |id|String| Somente leitura.|
-|isValidationOnly|Boolean|True se a solicitação não deve ser processada para a atribuição.|
-|elabora|String|A justificativa fornecida pelo solicitante.|
-|RequestState|String|Um de `Denied`, `Delivered`, `PartiallyDelivered` `Submitted` ou `Scheduled`. Somente leitura.|
-|requestStatus|String|Mais informações sobre o status do processamento da solicitação. Somente leitura.|
-|RequestType|String|Um de `UserAdd`, `UserRemove`, `AdminAdd` `AdminRemove` ou `SystemRemove`. Somente leitura.|
+|isValidationOnly|Booliano|True se a solicitação não deve ser processada para a atribuição.|
+|elabora|Cadeia de caracteres|A justificativa fornecida pelo solicitante.|
+|RequestState|Cadeia de caracteres|Um dos `PendingApproval` , `Canceled` ,  `Denied` , `Delivering` , `Delivered` , `PartiallyDelivered` `Submitted` ou `Scheduled` . Somente leitura.|
+|requestStatus|Cadeia de caracteres|Mais informações sobre o status do processamento da solicitação. Somente leitura.|
+|RequestType|Cadeia de caracteres|Um de `UserAdd` , `UserRemove` , `AdminAdd` `AdminRemove` ou `SystemRemove` . Somente leitura.|
 |accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| Uma atribuição de pacote de acesso solicitada foi criada.|
 
 ## <a name="relationships"></a>Relações

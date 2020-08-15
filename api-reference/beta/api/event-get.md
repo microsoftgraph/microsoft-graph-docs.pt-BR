@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 22f72f23d0521b6e78e4d776b0e5e0288ebba46a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bf7fb031372c6dd512061f09abb15b1acbf5933f
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43365508"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757164"
 ---
 # <a name="get-event"></a>Obter evento
 
@@ -20,12 +20,12 @@ Namespace: microsoft.graph
 
 Obtenha as propriedades e as relações do objeto [event](../resources/event.md) especificado.
 
-Existem dois cenários em que um aplicativo pode obter um evento no calendário de outro usuário:
+Um aplicativo pode obter um evento no calendário de outro usuário se:
 
-* Se o aplicativo tiver permissões de aplicativo ou
-* Se o aplicativo tem as [permissões](#permissions) delegadas apropriadas de um usuário e o outro usuário compartilhou um calendário com esse usuário ou concedeu acesso delegado ao usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
+* O aplicativo tem permissões de aplicativo
+* O aplicativo tem as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário compartilhou um calendário com esse usuário ou concedeu acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
 
-Como o recurso **event** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **event**.
+Como o recurso de **evento** oferece suporte a [extensões](/graph/extensibility-overview), você também pode usar a `GET` operação para obter propriedades personalizadas e dados de extensão em uma instância de **evento** .
 
 
 ### <a name="support-various-time-zones"></a>Suporte para vários fusos horários
@@ -71,7 +71,7 @@ GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
@@ -84,10 +84,12 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e o objeto [event](../resources/event.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request-1"></a>Solicitação 1
-O primeiro exemplo obtém o evento especificado. Especifica o seguinte:
+Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [event](../resources/event.md) no corpo da resposta.
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-get-a-specified-event"></a>Exemplo 1: obter um evento especificado
+#### <a name="request"></a>Solicitação
+O exemplo a seguir obtém o evento especificado. Ele especifica o seguinte:
 
 - um cabeçalho `Prefer: outlook.timezone` para obter valores de data/hora retornados na Hora Oficial do Pacífico. 
 - Um parâmetro de consulta `$select` para retornar propriedades específicas. Sem um parâmetro `$select`, todas as propriedades do evento serão retornadas.
@@ -118,8 +120,8 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ---
 
-##### <a name="response-1"></a>Resposta 1
-Veja a seguir um exemplo da resposta. Como nenhum cabeçalho `Prefer: outlook.body-content-type` foi especificado, a propriedade **body** será retornada no formato HTML padrão. 
+#### <a name="response"></a>Resposta
+Veja um exemplo da resposta. Como nenhum `Prefer: outlook.body-content-type` cabeçalho foi especificado, a propriedade **Body** é retornada no formato HTML padrão. 
 
 <!-- {
   "blockType": "response",
@@ -205,9 +207,9 @@ Content-length: 1928
     }
 }
 ```
-
-##### <a name="request-2"></a>Solicitação 2
-O segundo exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter a propriedade **Body** do evento especificado no formato de texto.
+### <a name="example-2-get-the-body-property-in-text-format"></a>Exemplo 2: obter a Propriedade Body no formato de texto
+#### <a name="request"></a>Solicitação
+O exemplo a seguir mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter a propriedade **Body** do evento especificado no formato de texto.
 
 A solicitação também usa um parâmetro de consulta `$select` para retornar propriedades específicas. Sem um parâmetro `$select`, todas as propriedades do evento serão retornadas.
 
@@ -235,7 +237,7 @@ Prefer: outlook.body-content-type="text"
 
 ---
 
-##### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. A propriedade **body** é retornada no formato de texto. 
 
 <!-- {
@@ -263,10 +265,10 @@ Content-length: 636
 }
 ```
 
+### <a name="example-3-get-an-event-that-specifies-more-than-one-location"></a>Exemplo 3: obter um evento que especifica mais de um local
+#### <a name="request"></a>Solicitação
 
-##### <a name="request-3"></a>Solicitação 3
-
-O terceiro exemplo mostra obter um evento que especifica mais de um local. Uma solicitação especifica um parâmetro de consulta `$select` para retornar propriedades específicas. 
+O exemplo a seguir mostra como obter um evento que especifica mais de um local. Uma solicitação especifica um parâmetro de consulta `$select` para retornar propriedades específicas. 
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -291,10 +293,10 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 
 ---
 
-##### <a name="response-3"></a>Resposta 3
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. A propriedade **locations** inclui detalhes dos três locais para os quais o evento é organizado. 
 
-Como a `Prefer: outlook.timezone` solicitação não especifica nenhum cabeçalho ou `Prefer: outlook.body-content-type` , as propriedades **Start** e **end** são exibidas no fuso horário UTC padrão e o corpo está no formato HTML padrão.  
+Como a solicitação não especifica nenhum `Prefer: outlook.timezone` cabeçalho ou `Prefer: outlook.body-content-type` , as propriedades **Start** e **end** são exibidas no fuso horário UTC padrão e o corpo está no formato HTML padrão.  
 
 <!-- {
   "blockType": "response",
@@ -393,12 +395,74 @@ Content-length: 1992
   }
 }
 ```
+### <a name="example-4-expand-a-series-master-event"></a>Exemplo 4: expandir um evento de série mestra
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra a expansão de um evento de série do mestre de uma série recorrente com exceções e ocorrências canceladas. Uma solicitação especifica um parâmetro de consulta `$select` para retornar propriedades específicas. 
+
+<!-- {
+  "blockType": "request",
+  "name": "get_event_seriesMaster_expansion"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
+```
+#### <a name="response"></a>Resposta
+A operação GET retorna as propriedades selecionadas para o evento de série principal. Especificamente, para eventos na coleção **exceptionOccurrences** , a operação retorna a propriedade **ID** e as propriedades aplicáveis e selecionadas (**Subject**, **Start**, **end**, **occurrencesid**). Como para eventos na coleção **cancelledOccurrences** , como os eventos não existem mais, a operação retorna apenas seus valores de propriedade de **Occurrences** .
+
+<!-- {
+  "blockType": "response",
+  "name": "get_event_seriesMaster_expansion",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1992
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences)/$entity",
+  "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
+  "id":"AAMkADAGAADDdm4NAAA=",
+  "subject": "Daily stand-up",
+  "cancelledOccurrences": [
+     "OID.AAMkADAGAADDdm4NAAA=.2020-04-30",
+     "OID.AAMkADAGAADDdm4NAAA=.2020-05-07",
+     "OID.AAMkADAGAADDdm4NAAA=.2020-05-14"
+    ],
+  "occurrenceId": null,
+    "start": {
+        "dateTime": "2020-04-23T11:30:00.0000000",
+        "timeZone": "UTC"
+    },
+  "end": {
+        "dateTime": "2020-04-23T12:00:00.0000000",
+        "timeZone": "UTC"
+    },
+  "exceptionOccurrences": [
+        {
+            "id": "AAMkADM0ZGRhMjdjLTA==",
+            "Subject": "SM update 24",
+            "occurrenceId": "OID.AAMkADAGAADDdm4NAAA=.2020-05-21",
+            "start": {
+                "dateTime": "2020-05-21T11:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2020-05-21T12:00:00.0000000",
+                "timeZone": "UTC"
+            }
+        }
+    ]
+}
+```
 
 ## <a name="see-also"></a>Confira também
 
 - [Adicionar dados personalizados a recursos usando extensões](/graph/extensibility-overview)
-- [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](/graph/extensibility-open-users)
-- [Adicionar dados personalizados a grupos usando extensões do esquema (visualização)](/graph/extensibility-schema-groups)
+- [Adicionar dados personalizados aos usuários usando extensões abertas](/graph/extensibility-open-users)
+- [Adicionar dados personalizados a grupos usando as extensões do esquema](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

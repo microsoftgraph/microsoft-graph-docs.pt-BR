@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d49ddfcc0db9b55701f0b84a223efcec85aa8dfe
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 42c38793e3a8618d180dcf860bde0401397cacbd
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228062"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757234"
 ---
 # <a name="accesspackage-resource-type"></a>tipo de recurso accessPackage
 
@@ -30,6 +30,7 @@ Para atribuir um usuário a um pacote do Access, [crie um accessPackageAssignmen
 | [Listar accessPackages](../api/accesspackage-list.md) | coleção [accessPackage](accesspackage.md) | Recupere uma lista de objetos **accesspackage** . |
 | [Criar accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Criar um novo objeto **accesspackage** . |
 | [Obter accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Ler propriedades e relações de um objeto **accesspackage** . |
+| [Atualizar accessPackage](../api/accesspackage-update.md)|Nenhum | Atualiza as propriedades de um objeto **accesspackage** . |
 | [Excluir accessPackage](../api/accesspackage-delete.md) |Nenhum | Excluir um **accesspackage**. |
 | [Listar accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | coleção [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Recupere uma lista de objetos **accessPackageResourceRoleScope** para este pacote de acesso. |
 | [Criar accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) |Nenhum | Crie um novo objeto **accessPackageResourceRoleScope** para este pacote de acesso. |
@@ -38,15 +39,15 @@ Para atribuir um usuário a um pacote do Access, [crie um accessPackageAssignmen
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|catalogID|String|ID do catálogo de pacotes do Access que faz referência a esse pacote de acesso. Somente leitura.|
-|createdBy|String|O UPN do usuário ou a identidade do assunto que criou este recurso. Somente leitura.|
+|catalogID|Cadeia de caracteres|ID do catálogo de pacotes do Access que faz referência a esse pacote de acesso. Somente leitura.|
+|createdBy|Cadeia de caracteres|O UPN do usuário ou a identidade do assunto que criou este recurso. Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |description|String|A descrição do pacote do Access.|
 |displayName|Cadeia de caracteres|O nome de exibição do pacote do Access.|
 |id|String| Somente leitura.|
-|isHidden|Boolean|Se o pacote de acesso está oculto do solicitante.|
-|isRoleScopesVisible|Boolean|Indica se os escopos de função estão visíveis.|
-|modifiedBy|String|O UPN do usuário que modificou este recurso pela última vez. Somente leitura.|
+|isHidden|Booliano|Se o pacote de acesso está oculto do solicitante.|
+|isRoleScopesVisible|Booliano|Indica se os escopos de função estão visíveis.|
+|modifiedBy|Cadeia de caracteres|O UPN do usuário que modificou este recurso pela última vez. Somente leitura.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 
 ## <a name="relationships"></a>Relações

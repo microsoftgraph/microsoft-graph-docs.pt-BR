@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 43be4878353000d27a50b0f7215aa343f0a195c7
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 8f1392e8539f20c0480f9c4604119b5fdf4cbb16
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673821"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757297"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -51,7 +51,8 @@ as assinaturas do **chat** com permissões delegadas não dão suporte a dados d
 
 as assinaturas do **chat** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura do **chat** , você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Observação:** `/teams/allMessages` e `/chats/allMessages` que estão atualmente em versão prévia, e você pode usar essa API sem taxas, sujeito aos [termos de uso das APIs da Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). A partir de agosto de 2020, só estará disponível para usuários e locatários que tenham as [licenças necessárias](/graph/teams-licenses). Como `/teams/allMessages` e `/chats/allMessages` entregam notificações para todos os usuários no locatário, todos os usuários no locatário devem ser licenciados. No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados acessados por meio da API.
+> **Observação:** `/teams/allMessages` e `/chats/allMessages` que estão atualmente em versão prévia, e você pode usar essa API sem taxas, sujeito aos [termos de uso das APIs da Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). A partir de agosto de 2020, só estará disponível para usuários e locatários que tenham as [licenças necessárias](/graph/teams-licenses). Como `/teams/allMessages` e `/chats/allMessages` enviar notificações para todos os usuários no locatário, todos os usuários no locatário devem ser licenciados; as tentativas de criar assinaturas sem as licenças adequadas resultarão em um código de erro 401.
+No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados acessados por meio da API.
 
 ### <a name="driveitem"></a>driveItem
 

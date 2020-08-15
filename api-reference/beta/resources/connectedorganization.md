@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: cb82ac88f1f81bf7d2f3238657818d0782ed6b60
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 5356a48aae90f22fdd54a54ed5fe7132598b9d42
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509973"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757290"
 ---
 # <a name="connectedorganization-resource-type"></a>tipo de recurso connectedOrganization
 
@@ -29,6 +29,12 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma organ
 |[Obter connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Ler propriedades e relações de um objeto connectedOrganization. |
 |[Atualizar connectedOrganization](../api/connectedorganization-update.md) | | Atualizar um connectedOrganization. |
 |[Excluir connectedOrganization](../api/connectedorganization-delete.md) |Nenhum | Excluir um connectedOrganization. |
+|[Listar internalSponsors](../api/connectedorganization-list-internalsponsors.md) | Coleção [directoryObject](directoryobject.md) | Recupere uma lista de patrocinadores internos de um connectedOrganization. |
+|[Listar externalSponsors](../api/connectedorganization-list-externalsponsors.md) | Coleção [directoryObject](directoryobject.md) | Recupere uma lista de patrocinadores externos de um connectedOrganization. |
+|[Adicionar internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Nenhum | Adicionar um usuário ou grupo aos patrocinadores internos de um connectedOrganization. |
+|[Adicionar externalSponsors](../api/connectedorganization-post-externalsponsors.md) | Nenhum | Adicionar um usuário ou grupo aos patrocinadores externos de um connectedOrganization. |
+|[Remover internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | Nenhum | Remover um usuário ou grupo dos patrocinadores internos de um connectedOrganization. |
+|[Remover externalSponsors](../api/connectedorganization-delete-externalsponsors.md) | Nenhum | Remover um usuário ou grupo dos patrocinadores externos de um connectedOrganization. |
 
 ## <a name="properties"></a>Propriedades
 

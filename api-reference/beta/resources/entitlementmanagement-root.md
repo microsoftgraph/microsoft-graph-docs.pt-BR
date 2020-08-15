@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: c1eb501cb9852d6d7733a6be3e78c4206326ddbe
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 96a91194c29c5207a3e450bd70e093ef74e56a85
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509830"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757283"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhar com a API de gerenciamento de qualificação do Azure AD
 
@@ -47,12 +47,14 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | [Listar accessPackages](../api/accesspackage-list.md) | coleção [accessPackage](accesspackage.md) | Recupere uma lista de objetos **accessPackage** . |
 | [Criar accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Criar um novo objeto **accessPackage** . |
 | [Obter accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Ler propriedades e relações de um objeto **accessPackage** . |
+| [Atualizar accessPackage](../api/accesspackage-update.md)|Nenhum | Atualiza as propriedades de um objeto **accesspackage** . |
 | [Excluir accessPackage](../api/accesspackage-delete.md) | | Exclua **accessPackage**. |
 | [Listar accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | coleção [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Recupere uma lista de objetos **accessPackageResourceRoleScope** para um pacote do Access. |
 | [Criar accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Criar um novo objeto **accessPackageResourceRoleScope** para um pacote do Access. |
 | [Listar accessPackageAssignmentPolicies](../api/accesspackageassignmentpolicy-list.md) | coleção [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Recupere uma lista de objetos **accessPackageAssignmentPolicy** . |
 | [Criar accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-post.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Criar um novo objeto **accessPackageAssignmentPolicy** . |
 | [Obter accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Ler propriedades e relações de um objeto **accessPackageAssignmentPolicy** . |
+| [Atualizar accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md)|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Atualiza as propriedades de um objeto **accessPackageAssignmentPolicy** . |
 | [Excluir accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-delete.md) | | Excluir um **accessPackageAssignmentPolicy**. |
 | [Listar accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | coleção [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Recupere uma lista de objetos **accessPackageAssignmentRequest** . |
 | [Criar accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Criar um novo **accessPackageAssignmentRequest**. |
@@ -63,6 +65,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | [Listar accessPackageCatalogs](../api/accesspackagecatalog-list.md) | coleção [accessPackageCatalog](accesspackagecatalog.md) | Recupere uma lista de objetos **accessPackageCatalogs** . |
 | [Criar accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | Criar um novo objeto **accessPackageCatalog** . |
 | [Obter accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Ler propriedades e relações de um objeto **accessPackageCatalog** . |
+| [Atualizar accessPackageCatalog](../api/accesspackagecatalog-update.md)|Nenhum | Atualiza as propriedades de um objeto **accessPackageCatalog** . |
 | [Excluir accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Excluir um **accessPackageCatalog**. |
 | [Listar recursos do accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresources.md) | coleção [accessPackageResource](accesspackageresource.md) | Recupere uma lista de objetos **accessPackageResource** . |
 | [Listar funções de recurso accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | coleção [accessPackageResourceRole](accesspackageresourcerole.md) | Recupere uma lista de objetos **accessPackageResourceRole** . |
@@ -73,7 +76,12 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | [Obter connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Ler propriedades e relações de um objeto **connectedOrganization** . |
 | [Atualizar connectedOrganization](../api/connectedorganization-update.md) |Nenhum | Atualizar um **connectedOrganization**. |
 | [Excluir connectedOrganization](../api/connectedorganization-delete.md) |Nenhum | Excluir um **connectedOrganization**. |
-
+|[Listar internalSponsors](../api/connectedorganization-list-internalsponsors.md) | Coleção [directoryObject](directoryobject.md) | Recupere uma lista de patrocinadores internos de um **connectedOrganization** . |
+|[Listar externalSponsors](../api/connectedorganization-list-externalsponsors.md) | Coleção [directoryObject](directoryobject.md) | Recupere uma lista de patrocinadores externos de um **connectedOrganization** . |
+|[Adicionar internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Nenhum | Adicionar um usuário ou grupo aos patrocinadores internos de um **connectedOrganization** . |
+|[Adicionar externalSponsors](../api/connectedorganization-post-externalsponsors.md) | Nenhum | Adicionar um usuário ou grupo aos patrocinadores externos de um **connectedOrganization** . |
+|[Remover internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | Nenhum | Remover um usuário ou grupo dos patrocinadores internos de um **connectedOrganization** . |
+|[Remover externalSponsors](../api/connectedorganization-delete-externalsponsors.md) | Nenhum | Remover um usuário ou grupo dos patrocinadores externos de um **connectedOrganization** . |
 
 ## <a name="types"></a>Tipos
 
