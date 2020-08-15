@@ -171,11 +171,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -448,7 +448,7 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -906,7 +906,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: Listar membros transitivos
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -962,7 +962,7 @@ items:
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
-              - name: Logon único
+              - name: Acesso único
                 items:
                   - name: Criar credenciais de logon único de senha
                     href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
@@ -1325,7 +1325,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1374,11 +1374,11 @@ items:
       - name: Conformidade (visualização)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/complianceapioverview.md
           - name: Descoberta eletrônica
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscoverycase.md
@@ -1452,7 +1452,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -9123,7 +9123,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -9217,7 +9217,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -9696,7 +9696,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
               - name: Métodos de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-overview.md
                   - name: Método de autenticação
                     href: resources/authenticationmethod.md
@@ -9705,7 +9705,7 @@ items:
                         href: api/authentication-list-methods.md
                       - name: Obter
                         href: api/authenticationmethod-get.md
-                  - name: Senha
+                  - name: Password
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: Listar
@@ -10149,6 +10149,8 @@ items:
                         href: api/accesspackage-post.md
                       - name: Obter
                         href: api/accesspackage-get.md
+                      - name: Atualizar
+                        href: api/accesspackage-update.md
                       - name: Excluir
                         href: api/accesspackage-delete.md
                   - name: Atribuição de pacote de acesso
@@ -10165,6 +10167,8 @@ items:
                         href: api/accesspackageassignmentpolicy-post.md
                       - name: Obter
                         href: api/accesspackageassignmentpolicy-get.md
+                      - name: Atualizar
+                        href: api/accesspackageassignmentpolicy-update.md
                       - name: Excluir
                         href: api/accesspackageassignmentpolicy-delete.md
                   - name: Solicitação de atribuição de pacote de acesso
@@ -10192,6 +10196,8 @@ items:
                         href: api/accesspackagecatalog-post.md
                       - name: Obter
                         href: api/accesspackagecatalog-get.md
+                      - name: Atualizar
+                        href: api/accesspackage-update.md
                       - name: Excluir
                         href: api/accesspackagecatalog-delete.md
                       - name: Listar recursos
@@ -10225,6 +10231,18 @@ items:
                         href: api/connectedorganization-update.md
                       - name: Excluir
                         href: api/connectedorganization-delete.md
+                      - name: Listar patrocinadores externos
+                        href: api/connectedorganization-list-externalsponsors.md
+                      - name: Listar patrocinadores internos
+                        href: api/connectedorganization-list-internalsponsors.md
+                      - name: Adicionar patrocinadores externos
+                        href: api/connectedorganization-post-externalsponsors.md
+                      - name: Adicionar patrocinadores internos
+                        href: api/connectedorganization-post-internalsponsors.md
+                      - name: Remover patrocinadores externos
+                        href: api/connectedorganization-delete-externalsponsors.md
+                      - name: Remover patrocinadores internos
+                        href: api/connectedorganization-delete-internalsponsors.md
                   - name: Configurações de gerenciamento de qualificação
                     href: resources/entitlementmanagementsettings.md
                     items:
@@ -10640,7 +10658,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -10971,7 +10989,7 @@ items:
         items:
           - name: Relatórios de atividades do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -10994,7 +11012,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -11017,7 +11035,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registro de usuário de credenciais
                     href: resources/credentialuserregistrationcount.md
@@ -11041,7 +11059,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -11253,13 +11271,13 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Dados de consulta
                 href: api/search-query.md
           - name: Índice
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -11347,7 +11365,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -11403,7 +11421,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
