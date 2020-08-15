@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 73f89ac24bedad9cfd632674040b288aac151f23
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
-ms.translationtype: MT
+ms.openlocfilehash: 33e76189c13356b0746ce020576affa952abc994
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050740"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673802"
 ---
 # <a name="get-conversationmember"></a>Obter conversationMember
 
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)| Para o **usuário** ou recurso de **chat** : chat. ReadBasic, chat. Read, chat. ReadWrite<br/><br/>Para recurso de **canal** : ChannelMember. Read. All, ChannelMember. ReadWrite, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Para o **usuário** ou recurso de **chat** : chat. ReadBasic. All, chat. Read. All, chat. ReadWrite. All<br/><br/>Para o recurso de **canal** : member. Read. Group *, ChannelMember. Read. All, ChannelMember. ReadWrite. All, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante)| Para recurso de **usuário** ou **chat**: Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>Para recurso de **canal**: ChannelMember.Read.All, ChannelMember.ReadWrite, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory. ReadWrite.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| Para **usuário** ou **recurso de chat**: Não suportado.<br/><br/>Para recurso de **canal**: Member.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-> **Observação**: as permissões marcadas com * usam o [consentimento específico do recurso](https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

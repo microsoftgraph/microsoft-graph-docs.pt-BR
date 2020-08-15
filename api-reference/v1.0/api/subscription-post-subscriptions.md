@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 27998ac757a58e577c4e6b8397911e40f830a9a6
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: ee1a5d1b0ae6f90f2e5fecc8347e35e3f68b729e
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598448"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673879"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -129,7 +129,7 @@ Estes são os valores válidos da propriedade de recurso da assinatura:
 |Conversas|groups('*{id}*')/conversations|
 |Unidades|me/drive/root|
 |Listar|sites/{site-id}/lists/{list-id}|
-|Alerta de segurança|security/alerts?$filter=status eq 'New'|
+|Alerta de segurança|security/alerts?$filter=status eq 'NewAlert'|
 |Registros de chamadas|communications/callRecords|
 
 ##### <a name="response"></a>Resposta
