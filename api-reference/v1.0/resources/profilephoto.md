@@ -5,12 +5,12 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d11d5043e759900810315d4b3e3af8310cb996f0
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: ef54be828c9094c76c215c66c79fd2c1453503dc
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934903"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757227"
 ---
 # <a name="profilephoto-resource-type"></a>Tipo de recurso de profilePhoto
 
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "height": 240,
   "width": 240
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
