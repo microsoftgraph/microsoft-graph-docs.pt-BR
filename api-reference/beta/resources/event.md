@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 93f86256e1e3a136bf9ea3f83bfd143614a96f62
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 8e994defe16659cafa94c259fe41a54ff2cfed6c
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566155"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757241"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -59,10 +59,12 @@ Veja a seguir uma representação JSON do recurso
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",
+  "cancelledOccurrences":["string"],
   "categories": ["string"],
   "changeKey": "string",
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "exceptionOccurrences":["string"],
   "hasAttachments": true,
   "uid": "string",
   "id": "string (identifier)",
@@ -76,6 +78,7 @@ Veja a seguir uma representação JSON do recurso
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],
+  "occurrenceId":"string",
   "onlineMeeting": {"@odata.type": "microsoft.graph.onlineMeetingInfo"},
   "onlineMeetingProvider": "string",
   "onlineMeetingUrl": "string",
@@ -111,10 +114,12 @@ Veja a seguir uma representação JSON do recurso
 |attendees|[Attendee](attendee.md) collection|A coleção de participantes do evento.|
 |corpo|[ItemBody](itembody.md)|O corpo da mensagem associada ao evento. Pode estar no formato HTML ou no formato de texto.|
 |bodyPreview|String|A visualização da mensagem associada ao evento. Está no formato de texto.|
+|cancelledOccurrences|Coleção de cadeia de caracteres|Contém os valores da propriedade **occurrenceId** de instâncias canceladas em uma série recorrente, se o evento for o mestre da série. As instâncias de uma série recorrente que estão canceladas são chamadas de cancelledOccurences.<br><br>Devolvido somente no $select em uma operação[Get](../api/event-get.md) que especifica a identidade de uma sériede eventos mestre (ou seja, o valor da propriedade seriesMasterId).|
 |categories|Coleção de cadeias de caracteres|As categorias associadas ao evento. Cada categoria corresponde à propriedade **displayName** de uma [outlookCategory](outlookcategory.md) definida para o usuário.|
 |changeKey|String|Identifica a versão do objeto event. Toda vez que o evento muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações à versão correta do objeto.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina. Por padrão, a hora de término é em UTC.|
+|exceptionOccurrences|Coleção de cadeia de caracteres|Contém os valores da propriedade **id** das instâncias de evento que são exceções em uma série recorrente.<br>As exceções podem diferir das outras ocorrências em uma série recorrente, tais como o assunto, o início ou fim do horário, ou os participantes. As exceções não incluem as ocorrências canceladas.<br><br>Devolvido somente em $select e $expand em uma operação [GET](../api/event-get.md) que especifica a identidade de uma série de eventos mestre (ou seja, o valor da propriedade seriesMasterId).|
 |hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
 |id|Cadeia de caracteres| Identificador exclusivo do evento. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
 |importância|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
@@ -127,6 +132,7 @@ Veja a seguir uma representação JSON do recurso
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |location|[Location](location.md)|O local do evento.|
 |locations|[location](location.md) collection|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
+|occurrenceId|Cadeia de caracteres|Um identificador para uma ocorrência em uma série de eventos recorrentes. Nulo se o evento não faz parte de uma série recorrente.<br><br>O formato do valor da propriedade é OID.{seriesMasterId-value}.{occurrence-start-date}. O fuso horário para {occurrence-start-date} é a propriedade recurrenceTimeZone definida para o [recurrenceRange](recurrencerange.md) correspondente.<br><br>Esta propriedade pode identificar qualquer ocorrência em uma série recorrente, incluindo uma ocorrência que foi modificada ou cancelada. Você pode usar esta propriedade para executar todas as operações suportadas pelas ocorrências na série recorrente.|
 |onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Detalhes para o participante entrar na reunião online. O padrão é nulo. Apenas leitura. <br>Depois de definir as propriedades **isOnlineMeeting** e **onlineMeetingProvider** para habilitar uma reunião online, o Microsoft Graph Inicializa **onlineMeeting**. Depois de definida, a reunião ficará disponível on-line e você não poderá alterar as propriedades **isOnlineMeeting**, **onlineMeetingProvider** e **onlineMeeting** novamente.|
 |onlineMeetingProvider|onlineMeetingProviderType| Representa o provedor de serviços de reunião online. Por padrão, **onlineMeetingProvider** é `unknown`. Os valores possíveis são `unknown`, `teamsForBusiness`, `skypeForBusiness` e `skypeForConsumer`. Opcional. <br> Depois de definir **onlineMeetingProvider**, o Microsoft Graph Inicializa **onlineMeeting**. Em seguida, não será possível alterar **onlineMeetingProvider** novamente, e a reunião permanecerá disponível online. |
 |onlineMeetingUrl|String|Uma URL para uma reunião online. A propriedade só é definida quando um organizador especifica no Outlook que um evento é uma reunião online como o Skype. Somente leitura.<br>Acesse a URL para entrar em uma reunião online usando **joinUrl**, exposto por meio da propriedade **onlineMeeting** do **evento**. A propriedade **onlineMeetingUrl** será substituído no futuro. |
@@ -168,7 +174,7 @@ Veja a seguir uma representação JSON do recurso
 |attachments|[Attachment](attachment.md) collection|A coleção de anexos [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md) e [referenceAttachment](referenceattachment.md) do evento. Propriedade de navegação. Somente leitura. Anulável.|
 |calendar|[Calendar](calendar.md)|O calendário que contém o evento. Propriedade de navegação. Somente leitura.|
 |extensions|Coleção [Extension](extension.md)|A coleção de extensões abertas definidas para o evento. Anulável.|
-|instances|[Event](event.md) collection|As instâncias do evento. Propriedade de navegação. Somente leitura. Anulável.|
+|instances|[Event](event.md) collection|São as ocorrências de uma série recorrente, se o evento for um mestre de série. Esta propriedade inclui ocorrências que fazem parte do padrão de recorrência e de exceções que foram modificadas, mas não inclui ocorrências da série que foram canceladas. Propriedade de navegação. Somente leitura. Anulável.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para o evento. Somente leitura. Anulável.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para o evento. Somente leitura. Anulável.|
 

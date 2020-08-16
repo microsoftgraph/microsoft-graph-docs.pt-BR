@@ -1,23 +1,23 @@
 ---
 title: 'Adicionar dados personalizados a grupos usando as extensões do esquema '
-description: 'Por meio de um exemplo, vamos demonstrar como usar as *extensões de esquema*. '
+description: 'Este artigo apresenta um exemplo para demonstrar como usar *extensões de esquema*. '
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 57d23792583046afe3e00d2b2f549ccdf821c0a7
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 2e4dcaba5c02c4479c9a7a38b7471ccd390b59a1
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969756"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757046"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>Adicionar dados personalizados a grupos usando as extensões do esquema 
 
-Por meio de um exemplo, vamos demonstrar como usar as *extensões de esquema*. 
+Este artigo apresenta um exemplo para demonstrar como usar *extensões de esquema*. 
 
-Imagine que você é um desenvolvedor em uma empresa de Software de gerenciamento de aprendizagem chamada “Graph Learn” que cria cursos e materiais de treinamento para empresas.  Os grupos do Office 365, com experiências colaborativas avançadas, são uma maneira fantástica de fornecer o conteúdo do curso e gravar exercícios entre os participantes de cursos online e presenciais.  Talvez você deseje deixar os grupos do Office 365 usados para cursos de treinamento facilmente identificados como cursos de treinamento, pois isso permite que outros desenvolvedores descubram seus grupos e criem experiências avançadas com base nos seus cursos de treinamento.
+Imagine que você é um desenvolvedor em uma empresa de Software de gestão escolar chamada “Graph Learn” que cria cursos e materiais de treinamento para empresas.  Os grupos do Microsoft 365, com experiências colaborativas avançadas, são uma maneira fantástica de fornecer o conteúdo do curso e gravar exercícios entre os participantes de cursos online e presenciais.  Talvez você queira deixar os grupos do Microsoft 365 usados para cursos de treinamento facilmente identificados como cursos de treinamento, pois isso permite que outros desenvolvedores descubram seus grupos e criem experiências avançadas com base nos seus cursos de treinamento.
 
-Neste cenário, vamos mostrar como:
+Para este cenário, este artigo lhe mostrará como:
 
 1. Exibir definições de extensão de esquema disponíveis que você poderia usar.
 2. Registrar uma definição de extensão de esquema direcionada a grupos de cursos de treinamento.
@@ -25,7 +25,7 @@ Neste cenário, vamos mostrar como:
 4. Adicionar, atualizar ou remover dados personalizados em um grupo existente com base em uma definição de extensão de esquema.
 5. Ler novamente um grupo e os dados de extensão.
 
->**Observação:** Este tópico mostra como criar e ler valores de extensão do esquema em um recurso **group** (etapas 3 a 5).  Os mesmos métodos são compatíveis também com os tipos de recurso **administrativeUnit**, **device**, **event**, **message**, **organization**, **post** e **user**.  Portanto, você pode executar operações semelhantes às solicitações de exemplo abaixo em qualquer um desses recursos. Observe que **administrativeUnit** está disponível apenas no ponto de extremidade beta.
+>**Observação:** Este tópico mostra como criar e ler valores de extensão do esquema em um recurso **group** (etapas 3 a 5).  Os mesmos métodos são compatíveis também com os tipos de recurso **administrativeUnit**, **device**, **event**, **message**, **organization**, **post** e **user**.  Você pode executar operações semelhantes às solicitações do exemplo deste artigo em qualquer um desses recursos. Observe que **administrativeUnit** está disponível apenas no ponto de extremidade beta.
 
 ## <a name="1-view-available-schema-extensions"></a>1. Exibir extensões de esquema disponíveis
 Em primeiro lugar, como desenvolvedor, talvez seja interessante localizar todas as outras definições de extensão de esquema que nosso aplicativo possa reutilizar.  Isso pode ser feito consultando o recurso **schemaExtension**.  
@@ -34,11 +34,11 @@ No exemplo abaixo, você consultará uma extensão de esquema específica por **
 Observe que a extensão retornada na resposta tem **Disponível** como o valor de **status**, que indica que qualquer aplicativo que tem permissão para os recursos na propriedade **targetTypes** pode usar e atualizar a extensão com alterações aditivas. Em geral, essa operação retorna quaisquer extensões de esquema que satisfaçam ao filtro especificado independentemente do **status**. Portanto, verifique o status da extensão antes de usá-la.
 
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 ```http
 GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id eq 'graphlearn_test'
 ```
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -74,7 +74,7 @@ Veja um [exemplo de outra maneira de atribuir a **id** na solicitação](/graph/
 
 Observe que, quando você cria uma extensão de esquema inicialmente, seu status é **InDevelopment**. Ao desenvolver a extensão, você pode mantê-la com esse status. Enquanto isso, apenas seu aplicativo que a criou pode atualizá-la com alterações aditivas ou excluí-la. Quando estiver pronto para compartilhar a extensão para uso por outros aplicativos, defina o **status** como **Disponível**.
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 ```http
 POST https://graph.microsoft.com/v1.0/schemaExtensions
 Content-type: application/json
@@ -100,7 +100,7 @@ Content-type: application/json
     ]
 }
 ```
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -133,7 +133,7 @@ Content-length: 420
 ## <a name="3-create-a-new-group-with-extended-data"></a>3. Criar um novo grupo com dados estendidos 
 Criar um _novo_ grupo estendido com dados extras usando a definição de extensão de esquema `graphlearn_courses` que acabamos de registrar.  Este é um padrão ```POST``` para o recurso **group**, com a extensão de tipo complexo `graphlearn_courses` definida no corpo da solicitação.  A resposta não refletirá extensões de dados. Precisamos explicitamente usar a extensão ```$select``` por nome usando uma operação ```GET```.
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 ```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
@@ -151,7 +151,7 @@ Content-type: application/json
     }
 }
 ```
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -176,7 +176,7 @@ Content-length: 420
 ## <a name="4-add-update-or-remove-custom-data-in-an-existing-group"></a>4. Adicionar, atualizar ou remover dados personalizados em um grupo existente
 Você pode estender e adicionar dados personalizados a uma instância de grupo _existente_ a extensão de tipo complexo `graphlearn_courses` adicional no corpo de uma solicitação ```PATCH```.  
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/dfc8016f-db97-4c47-a582-49cb8f849355
 Content-type: application/json
@@ -189,7 +189,7 @@ Content-length: 230
     }   
 }
 ```
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -208,14 +208,14 @@ Então, para obter os dados personalizados em um grupo, use `$select` para inclu
 
 O exemplo a seguir procura o grupo que possui a extensão `graphlearn_courses` com um valor de propriedade `courseId` correspondente a `123` e obtém as propriedades do grupo **displayName**, **id** e **description** e os dados personalizados na extensão `graphlearn_courses`. (Na consulta em si, certifique-se de aplicar codificação de URL conforme necessário).
 
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 ```http
 GET https://graph.microsoft.com/v1.0/groups?$filter=graphlearn_courses/courseId eq ‘123’&$select=displayName,id,description,graphlearn_courses
 ```
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -241,8 +241,8 @@ Content-length: 326
 
 - [Adicionar dados personalizados a recursos usando extensões](extensibility-overview.md)
 - [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](extensibility-open-users.md)
-- [Domínios do Office 365](https://technet.microsoft.com/library/office-365-domains.aspx)
-- [Adicionando e verificando um domínio para o NOVO Office 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [Domínios do Microsoft 365](https://technet.microsoft.com/library/office-365-domains.aspx)
+- [Adicionando e verificando um domínio para o NOVO Microsoft 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [Tipo de recurso schemaExtension](/graph/api/resources/schemaextension?view=graph-rest-1.0)
 - [List schemaExtensions](/graph/api/schemaextension-list?view=graph-rest-1.0)
 - [Create schemaExtension](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0)

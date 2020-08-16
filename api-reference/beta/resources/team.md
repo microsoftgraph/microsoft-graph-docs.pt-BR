@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5bc7a2d7b1684873f655bb83455d543f39a10254
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: e9f7340b08b65bb1e86bf5ce2a5be5f525662e41
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080860"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757265"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -61,6 +61,7 @@ Cada equipe está associada a um [grupo](../resources/group.md). O grupo tem a m
 |discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |Configurações de capacidade de descoberta da equipe por outras pessoas.|
 |webUrl|cadeia de caracteres (somente leitura) | Um hiperlink que será enviado à equipe no cliente do Microsoft Teams. Esta é a URL que você recebe ao clicar com o botão direito do mouse em uma equipe no cliente do Microsoft Teams e escolher **Obter o link para a equipe**. Essa URL deve ser tratada como um blob opaco e não analisado. |
 |classSettings|[teamClassSettings](teamclasssettings.md) |Definir configurações de uma classe. Disponível apenas quando a equipe representa uma classe.|
+|isMembershipLimitedToOwners|Booliano|Se definido para `true`, a equipe está atualmente no estado de membro da equipe apenas para o proprietário e não é acessível a outros membros da equipe, tais como estudantes.|
 
 ## <a name="relationships"></a>Relações
 
@@ -103,7 +104,8 @@ Veja a seguir uma representação JSON do recurso.
   "classification": "string",
   "specialization": "string",
   "visibility": "string",
-  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
+   "isMembershipLimitedToOwners":"boolean"
 }
 ```
 

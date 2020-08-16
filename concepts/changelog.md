@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d162d4278912f4a3ef3eb23de001915736f0c304
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: ece8059ee0a627ed679488516634216ec7e51f52
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674420"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757140"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -23,7 +23,13 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | Beta | Propriedade [passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) adicionada ao recurso [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta).
 
-### <a name="change-notifications"></a>Notificações de alteração
+### <a name="calendar"></a>Calendário
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada as propriedades **cancelledOccurrences**, **exceptionOccurrences**, e **occurrenceId** à entidade do [evento](/graph/api/resources/event?view=graph-rest-beta).
+
+### <a name="change-notifications"></a>Alterar notificações
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -45,6 +51,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | As seguintes propriedades foram adicionadas ao [contrato de Termos de Uso](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
 | Adição | beta | Adicionado um novo tipo de recurso ao [contrato de Termos de Uso](/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
+| Adição | beta | Adicionado os patrocinadores internos e externos [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta)ao gerenciamento de direitos.  |
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
 
@@ -54,13 +61,14 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionado o método[getM365AppUserCounts](/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-beta). |
 | Adição | beta | Adicionado o método[getM365AppPlatformUserCounts](/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-beta). |
 
-### <a name="teamwork"></a>Teamwork 
+### <a name="teamwork"></a>Teamwork
 
 | **Tipo de alteração** | **Versão** | **Descrição** |
 |:---|:---|:---|
 |Adição|beta|Adicionada a propriedade **contentBytes** ao recurso [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta).|
 |Adição|beta|Adicionada a propriedade **contentType** ao recurso [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta).|
 |Adição|beta|Adicionado suporte para o envio de imagens embutidas ao recurso [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta).|
+|Adição|beta|Adicionada a propriedade **isMembershipLimitedToOwners** ao recurso [team](/graph/api/resources/team?view=graph-rest-beta).|
 
 ## <a name="july-2020"></a>Julho de 2020
 
@@ -174,6 +182,7 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 | Adição        | v1.0        | Foi adicionada o recurso [consulta delta](delta-query-overview.md) ao [servicePrincipal](/graph/api/serviceprincipal-delta). |
 | Adição | beta | Adicionado o [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) ao gerenciamento de direitos.  |
 | Adição        | v1.0        | Recurso [consulta delta](delta-query-overview.md)adicionado para [oauth2PermissionGrant](/graph/api/oauth2Permissiongrant-delta). |
+| Adição | beta | Adicionada operações de atualização [pacote de acesso](/graph/api/resources/accesspackage?view=graph-rest-beta), [catálogo do pacote de acesso](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta) e [política de atribuição do pacote de acesso](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)|
 | Adição | Beta | Adicionada nova propriedade **isAssignableToRole** ao [grupo](/graph/api/resources/group?view=graph-rest-beta).|
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
