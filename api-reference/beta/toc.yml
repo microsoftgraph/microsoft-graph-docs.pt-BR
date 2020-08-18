@@ -312,7 +312,7 @@ items:
                     href: api/iteminsightssettings-get.md
                   - name: Atualizar
                     href: api/iteminsightssettings-update.md
-          - name: Email
+          - name: Correio
             href: resources/message.md
             items:
               - name: Criar pasta de email
@@ -2669,6 +2669,8 @@ items:
                     href: resources/intune-apps-win32lobapppowershellscriptrequirement.md
                   - name: Regra de script do Shell de energia do aplicativo LOB Win32
                     href: resources/intune-apps-win32lobapppowershellscriptrule.md
+                  - name: Tipo de operação de regra de script do aplicativo LOB do Win32
+                    href: resources/intune-apps-win32lobapppowershellscriptruleoperationtype.md
                   - name: Detecção de código de produto do aplicativo LOB do Win32
                     href: resources/intune-apps-win32lobappproductcodedetection.md
                   - name: Regra de código de produto do aplicativo LOB Win32
@@ -2697,8 +2699,6 @@ items:
                     href: resources/intune-apps-win32lobappruleoperator.md
                   - name: Tipo de regra de aplicativo LOB Win32
                     href: resources/intune-apps-win32lobappruletype.md
-                  - name: Tipo de operação de regra de script do Shell de alimentação de LOB Win32
-                    href: resources/intune-apps-win32lobpowershellscriptruleoperationtype.md
                   - name: Windows AppX
                     href: resources/intune-apps-windowsappx.md
                     items:
@@ -5172,6 +5172,8 @@ items:
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
                   - name: par de chave/valor de domínios associados ao macOS
                     href: resources/intune-deviceconfig-macosassociateddomainskeyvaluepair.md
+                  - name: extensão de logon único do macOS do Azure AD
+                    href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
                   - name: Base de perfil de certificado do macOS
                     href: resources/intune-deviceconfig-macoscertificateprofilebase.md
                     items:
@@ -6730,6 +6732,12 @@ items:
                         href: api/intune-devices-devicelogcollectionresponse-list.md
                       - name: Obter
                         href: api/intune-devices-devicelogcollectionresponse-get.md
+                      - name: Criar
+                        href: api/intune-devices-devicelogcollectionresponse-create.md
+                      - name: Excluir
+                        href: api/intune-devices-devicelogcollectionresponse-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-devicelogcollectionresponse-update.md
                       - name: ação createDownloadUrl
                         href: api/intune-devices-devicelogcollectionresponse-createdownloadurl.md
                   - name: Tipo de modelo do conjunto de logs de dispositivos
@@ -7138,6 +7146,8 @@ items:
                         href: api/intune-deviceintent-devicemanagementtemplate-update.md
                       - name: ação createInstance
                         href: api/intune-deviceintent-devicemanagementtemplate-createinstance.md
+                      - name: ação importOffice365DeviceConfigurationPolicies
+                        href: api/intune-deviceintent-devicemanagementtemplate-importoffice365deviceconfigurationpolicies.md
                   - name: Categoria de configuração de modelo do gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md
                     items:
@@ -7293,6 +7303,19 @@ items:
                     href: resources/intune-devices-loggedonuser.md
                   - name: Estado de modo perdido
                     href: resources/intune-devices-lostmodestate.md
+                  - name: Estado de malware para dispositivo Windows
+                    href: resources/intune-devices-malwarestateforwindowsdevice.md
+                    items:
+                      - name: Listar
+                        href: api/intune-devices-malwarestateforwindowsdevice-list.md
+                      - name: Obter
+                        href: api/intune-devices-malwarestateforwindowsdevice-get.md
+                      - name: Criar
+                        href: api/intune-devices-malwarestateforwindowsdevice-create.md
+                      - name: Excluir
+                        href: api/intune-devices-malwarestateforwindowsdevice-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-malwarestateforwindowsdevice-update.md
                   - name: Dispositivo gerenciado
                     href: resources/intune-devices-manageddevice.md
                     items:
@@ -7596,6 +7619,19 @@ items:
                     href: resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md
                   - name: Parâmetro de ação de atualização de conta de dispositivo Windows
                     href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
+                  - name: Desempenho do aplicativo de análise da experiência do usuário
+                    href: resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md
+                    items:
+                      - name: Listar
+                        href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-list.md
+                      - name: Obter
+                        href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-get.md
+                      - name: Criar
+                        href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-create.md
+                      - name: Excluir
+                        href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-update.md
                   - name: Linha de base de análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsbaseline.md
                     items:
@@ -7691,6 +7727,21 @@ items:
                         href: api/intune-devices-userexperienceanalyticsmetric-delete.md
                       - name: Atualizar
                         href: api/intune-devices-userexperienceanalyticsmetric-update.md
+                  - name: Histórico de métrica de análise da experiência do usuário
+                    href: resources/intune-devices-userexperienceanalyticsmetrichistory.md
+                    items:
+                      - name: Listar
+                        href: api/intune-devices-userexperienceanalyticsmetrichistory-list.md
+                      - name: Obter
+                        href: api/intune-devices-userexperienceanalyticsmetrichistory-get.md
+                      - name: Criar
+                        href: api/intune-devices-userexperienceanalyticsmetrichistory-create.md
+                      - name: Excluir
+                        href: api/intune-devices-userexperienceanalyticsmetrichistory-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-userexperienceanalyticsmetrichistory-update.md
+                  - name: Categoria de reinício do sistema operacional de análise da experiência do usuário
+                    href: resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md
                   - name: Visão geral da análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsoverview.md
                     items:
@@ -7780,6 +7831,8 @@ items:
                     href: resources/intune-devices-windowsmalwareoverview.md
                   - name: Gravidade de malware do Windows
                     href: resources/intune-devices-windowsmalwareseverity.md
+                  - name: Contagem de severidade de malware do Windows
+                    href: resources/intune-devices-windowsmalwareseveritycount.md
                   - name: Estado de malware do Windows
                     href: resources/intune-devices-windowsmalwarestate.md
                   - name: Contagem do estado de malware do Windows
@@ -8338,6 +8391,8 @@ items:
                         href: api/intune-onboarding-vpptoken-synclicenses.md
                       - name: ação revokeLicenses
                         href: api/intune-onboarding-vpptoken-revokelicenses.md
+                      - name: ação syncLicenseCounts
+                        href: api/intune-onboarding-vpptoken-synclicensecounts.md
                   - name: resultado de ação de token VPP
                     href: resources/intune-onboarding-vpptokenactionresult.md
                   - name: Resumo da licença de token VPP
@@ -11805,7 +11860,7 @@ items:
                 href: api/teamsapp-list.md
               - name: Atualizar aplicativo no catálogo
                 href: api/teamsapp-update.md
-              - name: Remover aplicativo do catálogo
+              - name: Excluir aplicativo do catálogo
                 href: api/teamsapp-delete.md
           - name: Aplicativos
             items:
