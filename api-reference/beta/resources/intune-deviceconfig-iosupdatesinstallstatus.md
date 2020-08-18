@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 298e24870fc82a3f52711675216bfc9bb6d296b9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 584966469e896c70ea2affca146ad92c17a51ccb
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440111"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792195"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>tipo de enumeração iosUpdatesInstallStatus
 
@@ -29,6 +29,8 @@ Ainda não documentado
 |disponível|1|Ainda não documentado|
 |Estado|duas|Ainda não documentado|
 |desconhecido|3D|Ainda não documentado|
+|mdmClientCrashed|-2016336109|Ainda não documentado|
+|timeout|-2016333898|Ainda não documentado|
 |Baixe|-2016330712|Ainda não documentado|
 |downloadFailed|-2016330711|Ainda não documentado|
 |downloadRequiresComputer|-2016330710|Ainda não documentado|
@@ -42,7 +44,9 @@ Ainda não documentado
 |installFailed|-2016330702|Ainda não documentado|
 |notSupportedOperation|-2016330701|Ainda não documentado|
 |sharedDeviceUserLoggedInError|-2016330699|Ainda não documentado|
+|updateError|-2016330697|Ainda não documentado|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|Ainda não documentado|
+|updateScanFailed|-2016324062|Ainda não documentado|
 
 
 

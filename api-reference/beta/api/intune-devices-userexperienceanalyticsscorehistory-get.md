@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 22487e088e04144d9e1c01c0597296c29a62c1cc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3c6e3374578922975ebafe1e4c81144ea6494c1e
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43378973"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792622"
 ---
 # <a name="get-userexperienceanalyticsscorehistory"></a>Obter userExperienceAnalyticsScoreHistory
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 325
+Content-Length: 350
 
 {
   "value": {
@@ -78,7 +78,8 @@ Content-Length: 325
     "startupScore": 12,
     "coreBootScore": 13,
     "coreSigninScore": 15,
-    "recommendedSoftwareScore": 8
+    "recommendedSoftwareScore": 8,
+    "restartScore": 12
   }
 }
 ```

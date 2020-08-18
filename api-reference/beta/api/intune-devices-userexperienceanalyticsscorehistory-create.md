@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 081697a0209a913a8993aba209983dbb5e86ef09
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f1a6d5275a8214f5698a41a711c1b82b1e48b960
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379017"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792657"
 ---
 # <a name="create-userexperienceanalyticsscorehistory"></a>Criar userExperienceAnalyticsScoreHistory
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,15 +55,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 |:---|:---|:---|
 |id|String|O identificador exclusivo do processo de inicialização do dispositivo de análise da experiência do usuário.|
 |startupDateTime|DateTimeOffset|A experiência do usuário da data de início do dispositivo de análise.|
-|startupScore|Int32|Pontuação de inicialização do dispositivo de análise da experiência do usuário.|
-|coreBootScore|Int32|A pontuação de inicialização do dispositivo de análise da experiência do usuário.|
-|coreSigninScore|Int32|A pontuação de entrada do core do dispositivo de análise da experiência do usuário.|
-|recommendedSoftwareScore|Int32|A pontuação de entrada do core do dispositivo de análise da experiência do usuário.|
+|startupScore|Int32|Pontuação de inicialização do dispositivo de análise da experiência do usuário. A pontuação será no intervalo 0-100, 100 é a pontuação ideal.|
+|coreBootScore|Int32|A pontuação de inicialização do dispositivo de análise da experiência do usuário. A pontuação será no intervalo 0-100, 100 é a pontuação ideal.|
+|coreSigninScore|Int32|A pontuação de entrada do core do dispositivo de análise da experiência do usuário. A pontuação será no intervalo 0-100, 100 é a pontuação ideal.|
+|recommendedSoftwareScore|Int32|A pontuação de entrada do core do dispositivo de análise da experiência do usuário. A pontuação será no intervalo 0-100, 100 é a pontuação ideal.|
+|restartScore|Int32|Reinicie o placar. A pontuação será no intervalo 0-100, 100 é a pontuação ideal, 0 indica reinicializações em excesso. Valores válidos de 0 a 9999999|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -72,7 +73,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsScoreHistory
 Content-type: application/json
-Content-length: 243
+Content-length: 266
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -80,7 +81,8 @@ Content-length: 243
   "startupScore": 12,
   "coreBootScore": 13,
   "coreSigninScore": 15,
-  "recommendedSoftwareScore": 8
+  "recommendedSoftwareScore": 8,
+  "restartScore": 12
 }
 ```
 
@@ -89,7 +91,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 292
+Content-Length: 315
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -98,7 +100,8 @@ Content-Length: 292
   "startupScore": 12,
   "coreBootScore": 13,
   "coreSigninScore": 15,
-  "recommendedSoftwareScore": 8
+  "recommendedSoftwareScore": 8,
+  "restartScore": 12
 }
 ```
 

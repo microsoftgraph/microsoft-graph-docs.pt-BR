@@ -1,41 +1,54 @@
 ---
-title: Permissões
-description: 'Remova o aplicativo do catálogo de aplicativos da sua organização (o catálogo de aplicativos do locatário). '
+title: Excluir teamsApp
+description: 'Excluir um aplicativo do teams do catálogo de aplicativos de uma organização (o catálogo de aplicativos do locatário). '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8fe918b6e584fb3f22e00c2ca488cb7ef2937bdd
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 110061b252110d6b78e3b52112506d5514743299
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345888"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792650"
 ---
-# <a name="remove-an-app-from-your-organizations-app-catalog"></a>Remover um aplicativo do catálogo de aplicativos da sua organização
+# <a name="delete-teamsapp"></a>Excluir teamsApp
 
 Namespace: microsoft.graph
 
+<!-- markdownlint-disable MD001 -->
+### <a name="delete-an-app-from-your-organizations-app-catalog"></a>Excluir um aplicativo do catálogo de aplicativos da sua organização
 
+Excluir um [aplicativo](../resources/teamsapp.md) do catálogo de aplicativos de uma organização (o catálogo de aplicativos do locatário). Para excluir um aplicativo, a propriedade **distributionMethod** para o aplicativo deve ser definida como `organization` .
 
-Remova o [aplicativo](../resources/teamsapp.md) do catálogo de aplicativos da sua organização (o catálogo de aplicativos do locatário). Para remover o aplicativo do catálogo de aplicativos da sua organização, especifique `organization` como **distributionMethod** no recurso [teamsCatalogApp](../resources/teamsapp.md) .
+Você também pode usar essa API para remover um aplicativo enviado do processo de revisão.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
->**Observação:** Somente os administradores globais podem chamar esta API. 
+>**Observação:** Somente os administradores globais podem chamar esta API.
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)|
 |:----------------------------------     |:-------------|
-| Delegado (conta corporativa ou de estudante)     | AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante)     | AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante) | AppCatalog. Submit |
 | Delegado (conta pessoal da Microsoft) | Sem suporte|
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Para excluir um aplicativo do catálogo de aplicativos:
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /appCatalogs/teamsApps/{id}
+```
+
+Para excluir um aplicativo que foi enviado, mas que não foi aprovado:
+
+```http
+ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -46,25 +59,35 @@ DELETE /appCatalogs/teamsApps/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Nenhum
+Não forneça um corpo de solicitação para esse método.
 
->**Observação:** Use o ID retornado da [lista de aplicativos publicados](./teamsapp-list.md) chamada para fazer referência ao aplicativo que você deseja atualizar. Não use a ID do manifesto do pacote de aplicativos zip.
+>**Observação:** Use a ID retornada da chamada [lista de aplicativos publicados](./teamsapp-list.md) para fazer referência ao aplicativo que você deseja atualizar. Não use a ID do manifesto do pacote de aplicativos zip.
 
 ## <a name="response"></a>Resposta
 
-```
-HTTP/1.1 204 No Content
-```
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
+<!-- {
+  "blockType": "request",
+  "name": "delete_teamsapp"
+}-->
+
 ```http
 DELETE https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 ```
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true
+} -->
 
 ```http
 HTTP/1.1 204 No Content

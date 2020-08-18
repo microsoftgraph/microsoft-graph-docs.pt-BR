@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 173afc06c20e01406172cf2bc6b8c785aac55aa9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dc0af6bd60eae7a21b38905d4ea56e9ae7d70499
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403200"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792951"
 ---
 # <a name="auditactor-resource-type"></a>Tipo de recurso auditActor
 
@@ -27,13 +27,15 @@ Uma classe que contém as propriedades para Ator de auditoria.
 |:---|:---|:---|
 |type|String|Tipo de ator.|
 |userPermissions|Conjunto de cadeia de caracteres|Lista de permissões de usuário de quando a auditoria foi executada.|
-|ApplicationId|String|ID do aplicativo AAD.|
-|applicationDisplayName|String|Nome do aplicativo.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário (UPN).|
-|servicePrincipalName|String|Nome da entidade de serviço (SPN).|
-|ipAddress|String|IPAddress.|
+|ApplicationId|Cadeia de caracteres|ID do aplicativo AAD.|
+|applicationDisplayName|Cadeia de caracteres|Nome do aplicativo.|
+|userPrincipalName|String|Nome principal do usuário (UPN).|
+|servicePrincipalName|Cadeia de caracteres|Nome da entidade de serviço (SPN).|
+|ipAddress|Cadeia de caracteres|IPAddress.|
 |userId|Cadeia de caracteres|ID do usuário.|
 |userRoleScopeTags|coleção [roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md)|Lista de marcas de escopo de usuário quando a auditoria foi realizada.|
+|remoteTenantId|String|ID de locatário remoto|
+|remoteUserId|String|ID de usuário remoto|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -64,7 +66,9 @@ Veja a seguir uma representação JSON do recurso.
       "displayName": "String",
       "roleScopeTagId": "String"
     }
-  ]
+  ],
+  "remoteTenantId": "String",
+  "remoteUserId": "String"
 }
 ```
 

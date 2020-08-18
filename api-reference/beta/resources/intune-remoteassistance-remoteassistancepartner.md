@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d82d63df7dd584d75410097d484b0187f98bb9f6
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: c2c65716371084903b2b544b8878bb2a73dd800e
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176100"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792664"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>Tipo de recurso remoteAssistancePartner
 
@@ -37,10 +37,11 @@ Os recursos do RemoteAssistPartner representam os metadados e o status de um det
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo do parceiro.|
-|displayName|Cadeia de caracteres|Nome de exibição do parceiro.|
+|displayName|String|Nome de exibição do parceiro.|
 |onboardingUrl|Cadeia de caracteres|URL do portal de integração do parceiro, no qual um administrador pode configurar o serviço de assistência remota.|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|Uma descrição amigável do status atual do conector do TeamViewer. Os valores possíveis são: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Carimbo de data/hora da última solicitação enviada ao Intune pelo parceiro TEM.|
+|onboardingRequestExpiryDateTime|DateTimeOffset|Quando o OnboardingStatus está em integração, esta é a data e hora em que a solicitação de integração expira.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -60,7 +61,8 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String",
   "onboardingUrl": "String",
   "onboardingStatus": "String",
-  "lastConnectionDateTime": "String (timestamp)"
+  "lastConnectionDateTime": "String (timestamp)",
+  "onboardingRequestExpiryDateTime": "String (timestamp)"
 }
 ```
 

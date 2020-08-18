@@ -1,25 +1,25 @@
 ---
-title: Permissões
-description: 'Publicar um aplicativo no catálogo de aplicativos do Microsoft Teams. '
+title: Publicar teamsapp
+description: Publicar um aplicativo no catálogo de aplicativos do Microsoft Teams.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: eb74a3ee069fbd31493eff6ec2b9e8d96334f49b
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 8d520ef254db5284f550cde309936968df67894b
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345804"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792727"
 ---
-# <a name="publish-apps-to-your-organizations-app-catalog"></a>Publicar aplicativos no catálogo de aplicativos da sua organização
+# <a name="publish-teamsapp"></a>Publicar teamsApp
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Publicar um [aplicativo](../resources/teamsapp.md) no catálogo de aplicativos do Microsoft Teams.
-Especificamente, essa API publica o aplicativo no catálogo da sua organização (o catálogo de aplicativos do locatário); o recurso criado terá `distributionMethod`  =  `organization` .
+Especificamente, essa API publica o aplicativo no catálogo da sua organização (o catálogo de aplicativos do locatário); o recurso criado terá um valor de propriedade **distributionMethod** de `organization` .
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,36 +29,57 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)|
 |:----------------------------------     |:-------------|
-| Delegado (conta corporativa ou de estudante)     | AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante)     | AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante) | AppCatalog. Submit|
 | Delegado (conta pessoal da Microsoft) | Sem suporte|
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /appCatalogs/teamsApps
 ```
+
+Para publicar um aplicativo que exija uma análise:
+
+```http
+POST /appCatalogs/teamsApps?requiresReview:{Boolean}
+```
+
+## <a name="query-parameters"></a>Parâmetros de consulta
+
+|Propriedade|Tipo|Descrição|
+|----|----|----|
+|requiresReview| Booliano | Esse parâmetro de consulta opcional dispara o processo de revisão do aplicativo. Os usuários com privilégios de administrador podem enviar aplicativos sem disparar uma revisão. Se os usuários desejarem solicitar uma revisão antes da publicação, eles devem  `requiresReview` ser definidos como `true` . Um usuário com privilégios de administrador pode optar por não definir `requiresReview` ou definir o valor como `false`  e o aplicativo será considerado aprovado e publicar instantaneamente.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Cabeçalho        | Valor           |
 |:--------------|:--------------  |
 | Autorização | {token} de portador. Obrigatório.  |
-| Content-Type  | aplicativo/zip |
+| Content-Type  | Application/zip. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Carga do manifesto zip do teams.
-Para o arquivo zip do aplicativo do Teams, [consulte criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package).
-Você não pode criar um aplicativo para uma organização que tenha a mesma ID de manifesto que outro aplicativo da organização.
+No corpo da solicitação, inclua uma carga de manifesto zip do teams. Para obter detalhes, consulte [criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package).  
+
+Cada aplicativo no catálogo de aplicativos deve ter um manifesto exclusivo `id` .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [teamsCatalogApp](../resources/teamsapp.md) .
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [teamsApp](../resources/teamsapp.md) .
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-publish-an-app-to-the-app-catalog"></a>Exemplo 1: publicar um aplicativo no catálogo de aplicativos
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "create_teamsapp"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/appCatalogs/teamsApps
@@ -69,14 +90,58 @@ Content-length: 244
 ```
 
 Para obter informações sobre como criar um arquivo zip do aplicativo do Microsoft Teams, consulte [criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package).
+<!-- markdownlint-disable MD024 -->
+#### <a name="response"></a>Resposta
 
-### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true
+} -->
 
-```
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
+  "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
+  "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
+  "name": "Test App",
+  "version": "1.0.0",
+  "distributionMethod": "organization"
+}
+
+```
+
+### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>Exemplo 2: carregar um novo aplicativo para revisão para o catálogo de aplicativos de uma organização
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "create_teamsapp"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/appCatalogs/teamsApps?requiresReview=true
+Content-type: application/zip
+Content-length: 244
+```
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps/$entity",
   "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
   "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
   "name": "Test App",

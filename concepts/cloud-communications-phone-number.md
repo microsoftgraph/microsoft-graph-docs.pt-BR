@@ -4,12 +4,12 @@ description: Este artigo descreve como criar um bot alcançável por meio de um 
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 762ff0e8d166781fee4adcde64298760320d45fc
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 2dc201ff9423b0190daa5adf86871972cc577304
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871547"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792867"
 ---
 # <a name="manage-phone-numbers-for-bots"></a>Gerenciar números de telefone para bots 
 
@@ -62,12 +62,11 @@ Atribua uma licença de usuário virtual à sua instância de aplicativo. Para o
 
 ### <a name="assign-a-phone-number-to-the-application-instance-only-tenant-admin"></a>Atribuir um número de telefone à instância do aplicativo (somente administrador de locatário)
 
-Para atribuir o número de telefone à instância do aplicativo, o locatário addmin:
+Para atribuir o número de telefone à instância do aplicativo, o administrador do locatário:
 
-1. Entrar no centro de administração do Skype for Business como administrador de locatários
-2. Vai para **** > **equipes do centro de administração e** > para o**administrador herdado**do Skype Skype.
-3. Vai para **** > **números de telefone** de voz
-4. Atribui um número de telefone de serviço (+ formato 11D) usando o cmdlet a seguir.
+1. Entra no centro de administração do Microsoft Teams como um administrador de locatários.
+2. Vai para os números de telefone de voz do **centro de administração do teams**  >  **Voice**  >  **Phone Numbers**.
+3. Atribui um número de telefone de serviço (+ formato 11D) usando o cmdlet a seguir.
 
   `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber <phone_number>`
 

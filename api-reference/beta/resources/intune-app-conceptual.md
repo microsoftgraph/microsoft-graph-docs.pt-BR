@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f02aa12b3a0a0f03a49ab65a11c20f642cb27986
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 3c4dfa20789599012ccbd97d9db7950b87f53a86
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123775"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46793091"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -153,6 +153,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Tipo de detecção de script do aplicativo LOB Win32 do Shell de energia](intune-apps-win32lobapppowershellscriptdetectiontype.md)
 - [Requisito de script do Shell de energia do aplicativo LOB Win32](intune-apps-win32lobapppowershellscriptrequirement.md)
 - [Regra de script do Shell de energia do aplicativo LOB Win32](intune-apps-win32lobapppowershellscriptrule.md)
+- [Tipo de operação de regra de script do aplicativo LOB do Win32](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
 - [Detecção de código de produto do aplicativo LOB do Win32](intune-apps-win32lobappproductcodedetection.md)
 - [Regra de código de produto do aplicativo LOB Win32](intune-apps-win32lobappproductcoderule.md)
 - [Detecção de registro de aplicativo LOB do Win32](intune-apps-win32lobappregistrydetection.md)
@@ -167,7 +168,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Regra de aplicativo LOB do Win32](intune-apps-win32lobapprule.md)
 - [Operador de regras de aplicativos LOB do Win32](intune-apps-win32lobappruleoperator.md)
 - [Tipo de regra de aplicativo LOB Win32](intune-apps-win32lobappruletype.md)
-- [Tipo de operação de regra de script do Shell de alimentação de LOB Win32](intune-apps-win32lobpowershellscriptruleoperationtype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
 - [Arquitetura do Windows](intune-apps-windowsarchitecture.md)
 - [Tipo de dispositivo Windows](intune-apps-windowsdevicetype.md)
