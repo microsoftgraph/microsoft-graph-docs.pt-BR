@@ -1,81 +1,142 @@
 ---
-title: Permissões
+title: Atualizar teamsApp
 description: 'Atualize um aplicativo publicado anteriormente no catálogo de aplicativos do Microsoft Teams. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 79938562c1290fa9c4924aea87c1b643ef1a10e1
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 5134f4d663bcee605a5c8e3de8a932404d88fa29
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345727"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790508"
 ---
-# <a name="update-apps-published-to-your-organizations-app-catalog"></a><span data-ttu-id="e79b1-103">Atualizar aplicativos publicados no catálogo de aplicativos da sua organização</span><span class="sxs-lookup"><span data-stu-id="e79b1-103">Update apps published to your organization's app catalog</span></span>
+# <a name="update-teamsapp"></a><span data-ttu-id="7b822-103">Atualizar teamsApp</span><span class="sxs-lookup"><span data-stu-id="7b822-103">Update teamsApp</span></span>
 
-<span data-ttu-id="e79b1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e79b1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7b822-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7b822-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e79b1-105">Atualize um [aplicativo](../resources/teamsapp.md) publicado anteriormente no catálogo de aplicativos do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="e79b1-105">Update an [app](../resources/teamsapp.md) previously published to the Microsoft Teams app catalog.</span></span>
-<span data-ttu-id="e79b1-106">Essa API atualiza especificamente um aplicativo publicado no catálogo de aplicativos da sua organização (o catálogo de aplicativos do locatário).</span><span class="sxs-lookup"><span data-stu-id="e79b1-106">This API specifically updates an app published to your organization's app catalog (the tenant app catalog).</span></span>
-<span data-ttu-id="e79b1-107">Para publicar no catálogo de aplicativos da sua organização, especifique `organization` como **distributionMethod** no recurso [teamsCatalogApp](../resources/teamsapp.md) .</span><span class="sxs-lookup"><span data-stu-id="e79b1-107">To publish to your organization's app catalog, specify `organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.</span></span>
+<span data-ttu-id="7b822-105">Atualize um [aplicativo](../resources/teamsapp.md) publicado anteriormente no catálogo de aplicativos do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="7b822-105">Update an [app](../resources/teamsapp.md) previously published to the Microsoft Teams app catalog.</span></span> <span data-ttu-id="7b822-106">Para atualizar um aplicativo, a propriedade **distributionMethod** para o aplicativo deve ser definida como `organization` .</span><span class="sxs-lookup"><span data-stu-id="7b822-106">To update an app, the **distributionMethod** property for the app must be set to `organization`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e79b1-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="e79b1-108">Permissions</span></span>
+<span data-ttu-id="7b822-107">Essa API atualiza especificamente um aplicativo publicado no catálogo de aplicativos da sua organização (o catálogo de aplicativos do locatário).</span><span class="sxs-lookup"><span data-stu-id="7b822-107">This API specifically updates an app published to your organization's app catalog (the tenant app catalog).</span></span>  
 
-<span data-ttu-id="e79b1-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="e79b1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7b822-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="7b822-108">Permissions</span></span>
 
-><span data-ttu-id="e79b1-111">**Observação:** Somente os administradores globais podem chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="e79b1-111">**Note:** Only global administrators can call this API.</span></span>
+<span data-ttu-id="7b822-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="7b822-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
 
-| <span data-ttu-id="e79b1-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e79b1-112">Permission Type</span></span>                        | <span data-ttu-id="e79b1-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e79b1-113">Permissions (from least to most privileged)</span></span>|
+><span data-ttu-id="7b822-111">**Observação:** Somente os administradores globais podem chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="7b822-111">**Note:** Only global administrators can call this API.</span></span>
+
+| <span data-ttu-id="7b822-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7b822-112">Permission Type</span></span>                        | <span data-ttu-id="7b822-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7b822-113">Permissions (from least to most privileged)</span></span>|
 |:----------------------------------     |:-------------|
-| <span data-ttu-id="e79b1-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e79b1-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="e79b1-115">AppCatalog. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="e79b1-115">AppCatalog.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-| <span data-ttu-id="e79b1-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e79b1-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e79b1-117">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="e79b1-117">Not supported</span></span>|
-| <span data-ttu-id="e79b1-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e79b1-118">Application</span></span>                            | <span data-ttu-id="e79b1-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e79b1-119">Not supported.</span></span> |
+| <span data-ttu-id="7b822-114">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7b822-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="7b822-115">AppCatalog. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="7b822-115">AppCatalog.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="7b822-116">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7b822-116">Delegated (work or school account)</span></span> | <span data-ttu-id="7b822-117">AppCatalog. Submit</span><span class="sxs-lookup"><span data-stu-id="7b822-117">AppCatalog.Submit</span></span>|
+| <span data-ttu-id="7b822-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7b822-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7b822-119">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="7b822-119">Not supported</span></span>|
+| <span data-ttu-id="7b822-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7b822-120">Application</span></span>                            | <span data-ttu-id="7b822-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7b822-121">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e79b1-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e79b1-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7b822-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7b822-122">HTTP request</span></span>
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-PUT /appCatalogs/teamsApps/{id}
+POST /appCatalogs/teamsApps/{id}/appDefinitions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e79b1-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e79b1-121">Request headers</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="7b822-123">Parâmetros de consulta</span><span class="sxs-lookup"><span data-stu-id="7b822-123">Query parameters</span></span>
 
-| <span data-ttu-id="e79b1-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="e79b1-122">Header</span></span>        | <span data-ttu-id="e79b1-123">Valor</span><span class="sxs-lookup"><span data-stu-id="e79b1-123">Value</span></span>           |
+|<span data-ttu-id="7b822-124">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7b822-124">Property</span></span>|<span data-ttu-id="7b822-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="7b822-125">Type</span></span>|<span data-ttu-id="7b822-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="7b822-126">Description</span></span>|
+|----|----|----|
+|<span data-ttu-id="7b822-127">requiresReview</span><span class="sxs-lookup"><span data-stu-id="7b822-127">requiresReview</span></span>| <span data-ttu-id="7b822-128">Booliano</span><span class="sxs-lookup"><span data-stu-id="7b822-128">Boolean</span></span> | <span data-ttu-id="7b822-129">Esse parâmetro de consulta opcional dispara o processo de revisão do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="7b822-129">This optional query parameter triggers the app review process.</span></span> <span data-ttu-id="7b822-130">Os usuários com privilégios de administrador podem enviar aplicativos sem disparar uma revisão.</span><span class="sxs-lookup"><span data-stu-id="7b822-130">Users with admin privileges can submit apps without triggering a review.</span></span> <span data-ttu-id="7b822-131">Se os usuários desejarem solicitar uma revisão antes da publicação, eles devem  `requiresReview` ser definidos como `true` .</span><span class="sxs-lookup"><span data-stu-id="7b822-131">If users want to request a review before publishing, they must set  `requiresReview` to `true`.</span></span> <span data-ttu-id="7b822-132">Um usuário com privilégios de administrador pode optar por não definir `requiresReview` ou definir o valor como `false`  e o aplicativo será considerado aprovado e publicar instantaneamente.</span><span class="sxs-lookup"><span data-stu-id="7b822-132">A user who has admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.</span></span>|
+
+## <a name="request-headers"></a><span data-ttu-id="7b822-133">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7b822-133">Request headers</span></span>
+
+| <span data-ttu-id="7b822-134">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7b822-134">Header</span></span>        | <span data-ttu-id="7b822-135">Valor</span><span class="sxs-lookup"><span data-stu-id="7b822-135">Value</span></span>           |
 |:--------------|:--------------  |
-| <span data-ttu-id="e79b1-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="e79b1-124">Authorization</span></span> | <span data-ttu-id="e79b1-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e79b1-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="e79b1-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e79b1-127">Content-Type</span></span>  | <span data-ttu-id="e79b1-128">aplicativo/zip</span><span class="sxs-lookup"><span data-stu-id="e79b1-128">application/zip</span></span> |
+| <span data-ttu-id="7b822-136">Autorização</span><span class="sxs-lookup"><span data-stu-id="7b822-136">Authorization</span></span> | <span data-ttu-id="7b822-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7b822-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7b822-139">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7b822-139">Content-Type</span></span>  | <span data-ttu-id="7b822-140">Application/zip.</span><span class="sxs-lookup"><span data-stu-id="7b822-140">application/zip.</span></span> <span data-ttu-id="7b822-141">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7b822-141">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e79b1-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e79b1-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7b822-142">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7b822-142">Request body</span></span>
 
-<span data-ttu-id="e79b1-130">Carga do manifesto zip do teams: para o aplicativo do teams arquivo zip [consulte criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package)</span><span class="sxs-lookup"><span data-stu-id="e79b1-130">Teams Zip Manifest Payload: For Teams application zip file [see Create an app package](/microsoftteams/platform/concepts/apps/apps-package)</span></span>
+<span data-ttu-id="7b822-143">No corpo da solicitação, inclua uma carga de manifesto zip do teams.</span><span class="sxs-lookup"><span data-stu-id="7b822-143">In the request body, include a Teams zip manifest payload.</span></span> <span data-ttu-id="7b822-144">Para obter detalhes, consulte [criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package).</span><span class="sxs-lookup"><span data-stu-id="7b822-144">For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
 
-><span data-ttu-id="e79b1-131">**Observação:** Use o ID retornado da [lista de aplicativos publicados](./teamsapp-list.md) chamada para fazer referência ao aplicativo que você deseja atualizar.</span><span class="sxs-lookup"><span data-stu-id="e79b1-131">**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call for to reference the app you'd like to update.</span></span>
-<span data-ttu-id="e79b1-132">Não use a ID do manifesto do pacote de aplicativos zip.</span><span class="sxs-lookup"><span data-stu-id="e79b1-132">Do not use the ID from the manifest of the zip app package.</span></span>
+><span data-ttu-id="7b822-145">**Observação:** Use o ID retornado da [lista de aplicativos publicados](./teamsapp-list.md) chamada para fazer referência ao aplicativo que você deseja atualizar.</span><span class="sxs-lookup"><span data-stu-id="7b822-145">**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call for to reference the app you'd like to update.</span></span> <span data-ttu-id="7b822-146">Não use a ID do manifesto do pacote de aplicativos zip.</span><span class="sxs-lookup"><span data-stu-id="7b822-146">Do not use the ID from the manifest of the zip app package.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e79b1-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="e79b1-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7b822-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="7b822-147">Response</span></span>
 
-```
-HTTP/1.1 204 No Content
-```
+<span data-ttu-id="7b822-148">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="7b822-148">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e79b1-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e79b1-134">Example</span></span>
+## <a name="examples"></a><span data-ttu-id="7b822-149">Exemplos</span><span class="sxs-lookup"><span data-stu-id="7b822-149">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="e79b1-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e79b1-135">Request</span></span>
+### <a name="example-1-update-an-application-previously-published-to-the-microsoft-teams-app-catalog"></a><span data-ttu-id="7b822-150">Exemplo 1: atualizar um aplicativo publicado anteriormente no catálogo de aplicativos do Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="7b822-150">Example 1: Update an application previously published to the Microsoft Teams app catalog</span></span>
 
-```
-PUT https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
+### <a name="request"></a><span data-ttu-id="7b822-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7b822-151">Request</span></span>
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8/appDefinitions
 Content-type: application/zip
 Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
 
-<span data-ttu-id="e79b1-136">Para o aplicativo do teams arquivo zip [consulte CREATE app Package](/microsoftteams/platform/concepts/apps/apps-package)</span><span class="sxs-lookup"><span data-stu-id="e79b1-136">For Teams application zip file [see Create app package](/microsoftteams/platform/concepts/apps/apps-package)</span></span>
+<span data-ttu-id="7b822-152">Para obter detalhes sobre o arquivo zip do aplicativo do Teams, consulte [create app Package](/microsoftteams/platform/concepts/apps/apps-package).</span><span class="sxs-lookup"><span data-stu-id="7b822-152">For details about the Teams application zip file, see [Create app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
+<!-- markdownlint-disable MD024 -->
 
-### <a name="response"></a><span data-ttu-id="e79b1-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="e79b1-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="7b822-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="7b822-153">Response</span></span>
 
+<span data-ttu-id="7b822-154">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="7b822-154">If successful, this method returns a `204 No Content` response code.</span></span>
+
+### <a name="example-2-update-a-new-version-of-an-existing-app-for-admin-review-prior-to-publication-in-the-current-tenant-catalog"></a><span data-ttu-id="7b822-155">Exemplo 2: atualizar uma nova versão de um aplicativo existente para revisão de administrador antes da publicação no catálogo de locatários atual</span><span class="sxs-lookup"><span data-stu-id="7b822-155">Example 2: Update a new version of an existing app for admin review prior to publication in the current tenant catalog</span></span>
+
+### <a name="request"></a><span data-ttu-id="7b822-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7b822-156">Request</span></span>
+
+<!-- markdownlint-disable MD034 -->
+<!-- {
+  "blockType": "request",
+  "name": "update_teamsapp"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions?requiresReview=true
+Content-type: application/zip
+Content-length: 244
+
+[Zip file containing a Teams app package]
 ```
-HTTP/1.1 204 No Content
+
+### <a name="response"></a><span data-ttu-id="7b822-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="7b822-157">Response</span></span>
+
+<span data-ttu-id="7b822-158">Se tiver êxito, este método retornará um `201 Created` código de resposta e o par de chave/valor `publishingState` : `submitted` no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7b822-158">If successful, this method returns a `201 Created` response code and the key/value pair `publishingState`: `submitted` in the response body.</span></span> <span data-ttu-id="7b822-159">*Consulte* [teamsappdefinition](../resources/teamsappdefinition.md).</span><span class="sxs-lookup"><span data-stu-id="7b822-159">*See* [teamsappdefinition](../resources/teamsappdefinition.md).</span></span>
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions/MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appDefinition",
+    "@odata.etag": "158749010",
+    "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==",
+    "teamsAppId": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
+    "displayName": "Test app",
+    "version": "1.0.11",
+    "azureADAppId": "a651cc7d-ec54-4fb2-9d0e-2c58dc830b0b",
+    "requiredResourceSpecificApplicationPermissions":[
+         "ChannelMessage.Read.Group",
+         "Channel.Create.Group",
+         "Tab.ReadWrite.Group",
+         "Member.Read.Group"
+    ],
+    "publishingState": "submitted",
+    "lastModifiedDateTime": "2020-02-10 22:48:33.841",
+}
 ```
