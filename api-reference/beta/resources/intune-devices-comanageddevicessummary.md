@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f592ba7900f0761a24b02495dc337046b615bb1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 0e12a946db3e568faa171fa53299e6ec3546d455
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793462"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791789"
 ---
 # <a name="comanageddevicessummary-resource-type"></a>tipo de recurso comanagedDevicesSummary
 
@@ -33,9 +33,10 @@ Dados de resumo para dispositivos gerenciados
 |endpointProtectionCount|Int32|Número de dispositivos com o EndpointProtection de Swung. Essa propriedade é somente leitura.|
 |modernAppsCount|Int32|Número de dispositivos com o ModernApps de Swung. Essa propriedade é somente leitura.|
 |officeAppsCount|Int32|Número de dispositivos com o Officetreinamento de Swung. Essa propriedade é somente leitura.|
+|totalComanagedCount|Int32|Número de dispositivos co-gerenciados. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -54,7 +55,8 @@ Veja a seguir uma representação JSON do recurso.
   "windowsUpdateForBusinessCount": 1024,
   "endpointProtectionCount": 1024,
   "modernAppsCount": 1024,
-  "officeAppsCount": 1024
+  "officeAppsCount": 1024,
+  "totalComanagedCount": 1024
 }
 ```
 
