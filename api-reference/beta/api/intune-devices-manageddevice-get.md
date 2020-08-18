@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b0b80defb8b5e8de8b961f57be33917ed77e9af3
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 05e8659aed001287d61abb3c572696628ed8da69
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792286"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46789850"
 ---
 # <a name="get-manageddevice"></a>Acessar managedDevice
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -74,7 +74,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8249
+Content-Length: 8380
 
 {
   "value": {
@@ -98,6 +98,9 @@ Content-Length: 8249
       "operatingSystemLanguage": "Operating System Language value",
       "isSupervised": true,
       "isEncrypted": true,
+      "batterySerialNumber": "Battery Serial Number value",
+      "batteryHealthPercentage": 7,
+      "batteryChargeCycles": 3,
       "isSharedDevice": true,
       "sharedDeviceCachedUsers": [
         {

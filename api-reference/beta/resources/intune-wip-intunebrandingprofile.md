@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: de98ae69eafcb076ca36985513d1fe3b3c601ac1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 707dc501d01de2a5bb589b2c10435ca1eaf77ac7
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471949"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790774"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>tipo de recurso intuneBrandingProfile
 
@@ -41,21 +41,23 @@ Esta entidade contém dados que são usados na personalização da aparência do
 |isDefaultProfile|Booliano|Booliano que indica se o perfil é usado como padrão ou não|
 |createdDateTime|DateTimeOffset|Hora em que o BrandingProfile foi criado|
 |lastModifiedDateTime|DateTimeOffset|Hora em que a BrandingProfile foi modificada pela última vez|
-|displayName|Cadeia de caracteres|Nome da empresa/organização que é exibido para os usuários finais|
+|displayName|String|Nome da empresa/organização que é exibido para os usuários finais|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Cor do tema principal usada nos aplicativos do portal da empresa e no portal da Web|
 |showLogo|Booliano|Booliano que indica se as imagens de logotipo fornecidas pelo administrador são mostradas ou não|
 |showDisplayNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será mostrado ao lado da imagem de logotipo ou não|
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa que têm um plano de fundo de cor de tema atrás do logotipo|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa que têm um plano de fundo claro atrás do logotipo|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial dos aplicativos do portal da empresa|
-|contactITName|String|Nome da pessoa/organização responsável pelo suporte de ti|
-|contactITPhoneNumber|String|Número de telefone da pessoa/organização responsável pelo suporte de ti|
-|contactITEmailAddress|String|Endereço de email da pessoa/organização responsável pelo suporte de ti|
-|contactITNotes|String|Comentários de texto sobre a pessoa/organização responsável pelo suporte de ti|
-|onlineSupportSiteUrl|String|URL para o site de assistência técnica de ti da empresa/organização|
+|contactITName|Cadeia de caracteres|Nome da pessoa/organização responsável pelo suporte de ti|
+|contactITPhoneNumber|Cadeia de caracteres|Número de telefone da pessoa/organização responsável pelo suporte de ti|
+|contactITEmailAddress|Cadeia de caracteres|Endereço de email da pessoa/organização responsável pelo suporte de ti|
+|contactITNotes|Cadeia de caracteres|Comentários de texto sobre a pessoa/organização responsável pelo suporte de ti|
+|onlineSupportSiteUrl|Cadeia de caracteres|URL para o site de assistência técnica de ti da empresa/organização|
 |onlineSupportSiteName|Cadeia de caracteres|Nome para exibição do site de assistência técnica de ti da empresa/organização|
-|privacyUrl|String|URL para a política de privacidade da empresa/organização|
-|customPrivacyMessage|String|Comentários de texto sobre o que o administrador tem acesso ao no dispositivo|
+|privacyUrl|Cadeia de caracteres|URL para a política de privacidade da empresa/organização|
+|customPrivacyMessage|String|Comentários de texto sobre o que o administrador não tem acesso ao no dispositivo|
+|customCanSeePrivacyMessage|String|Comentários de texto sobre o que o administrador tem acesso ao no dispositivo|
+|customCantSeePrivacyMessage|String|Comentários de texto sobre o que o administrador não tem acesso ao no dispositivo|
 |isRemoveDeviceDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "remover dispositivo" em dispositivos corporativos de propriedade.|
 |isFactoryResetDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "redefinição de fábrica" em dispositivos corporativos de propriedade.|
 |companyPortalBlockedActions|coleção [companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Conjunto de ações bloqueadas no portal da empresa de acordo com os tipos de propriedade de plataforma e dispositivo.|
@@ -63,7 +65,7 @@ Esta entidade contém dados que são usados na personalização da aparência do
 |showOfficeWebApps|Booliano|Booliano que indica se o Office webapps será mostrado no portal da empresa|
 |sendDeviceOwnershipChangePushNotification|Booliano|Booliano que indica se uma notificação por push é enviada aos usuários quando o tipo de Propriedade do dispositivo muda de pessoal para corporativo|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Fluxo de registro de dispositivo personalizado exibido para o usuário final. Os valores possíveis são: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo atribuídas ao perfil de identidade visual|
+|roleScopeTagIds|Coleção de cadeia de caracteres|Lista de marcas de escopo atribuídas ao perfil de identidade visual|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -119,6 +121,8 @@ Veja a seguir uma representação JSON do recurso.
   "onlineSupportSiteName": "String",
   "privacyUrl": "String",
   "customPrivacyMessage": "String",
+  "customCanSeePrivacyMessage": "String",
+  "customCantSeePrivacyMessage": "String",
   "isRemoveDeviceDisabled": true,
   "isFactoryResetDisabled": true,
   "companyPortalBlockedActions": [

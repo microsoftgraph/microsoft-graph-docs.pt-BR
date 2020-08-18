@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f762a45a81c4aaa7450138dce354ed04caaa564
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: da8d1a6cd2bcc5bff530eaa0022eac8ab3aff37a
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123012"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790879"
 ---
 # <a name="get-iosvpnconfiguration"></a>Obter iosVpnConfiguration
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -156,6 +156,7 @@ Content-Length: 3473
         "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
       }
     ],
+    "providerType": "appProxy",
     "proxyServer": {
       "@odata.type": "microsoft.graph.vpnProxyServer",
       "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -163,7 +164,6 @@ Content-Length: 3473
       "port": 4
     },
     "optInToDeviceIdSharing": true,
-    "providerType": "appProxy",
     "userDomain": "User Domain value",
     "strictEnforcement": true,
     "cloudName": "Cloud Name value",

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b50d3180e7884d235038bf5caf30d9d5139f7850
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 579293ec6347f069c5da25e7e01773286df6aa81
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176108"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790340"
 ---
 # <a name="get-remoteassistancepartner"></a>Acessar remoteAssistancePartner
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 346
+Content-Length: 423
 
 {
   "value": {
@@ -77,7 +77,8 @@ Content-Length: 346
     "displayName": "Display Name value",
     "onboardingUrl": "https://example.com/onboardingUrl/",
     "onboardingStatus": "onboarding",
-    "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
+    "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
+    "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
   }
 }
 ```

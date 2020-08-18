@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 75719a81a38e70cfbfc487710358a9f75e866690
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 054f050697c3425d757b5e3d2e89fba7ef3b6b9a
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379641"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791383"
 ---
 # <a name="update-userexperienceanalyticsdeviceperformance"></a>Atualizar userExperienceAnalyticsDevicePerformance
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
-|deviceName|Cadeia de caracteres|O nome do dispositivo de análise da experiência do usuário.|
+|deviceName|String|O nome do dispositivo de análise da experiência do usuário.|
 |modelo|String|O modelo de dispositivo de análise da experiência do usuário.|
 |fabricante|String|O fabricante do dispositivo de análise da experiência do usuário.|
 |diskType|[diskType](../resources/intune-devices-disktype.md)|O tipo de disco do dispositivo de análise da experiência do usuário. Os valores possíveis são: `unkown`, `hdd`, `ssd`.|
@@ -68,11 +68,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 |groupPolicyLoginTimeInMs|Int32|O tempo de logon da política de grupo do dispositivo de análise da experiência do usuário em milissegundos.|
 |deviceCount|Int64|Contagem de dispositivos resumida da análise de experiência do usuário.|
 |responsiveDesktopTimeInMs|Int32|O tempo de resposta da análise da experiência do usuário em milissegundos.|
+|blueScreenCount|Int32|Número de telas azuis nos últimos 14 dias. Valores válidos de 0 a 9999999|
+|restartCount|Int32|Número de reinicializações nos últimos 14 dias. Valores válidos de 0 a 9999999|
+|averageBlueScreens|Duplo|Média (média) número de telas azuis por dispositivo nos últimos 14 dias. Valores válidos de 0 a 9999999|
+|averageRestarts|Duplo|Média (média) número de reinicializações por dispositivo nos últimos 14 dias. Valores válidos de 0 a 9999999|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -81,7 +85,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAnalyticsDevicePerformanceId}
 Content-type: application/json
-Content-length: 529
+Content-length: 635
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -98,7 +102,11 @@ Content-length: 529
   "coreLoginTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
   "deviceCount": 11,
-  "responsiveDesktopTimeInMs": 9
+  "responsiveDesktopTimeInMs": 9,
+  "blueScreenCount": 15,
+  "restartCount": 12,
+  "averageBlueScreens": 6.0,
+  "averageRestarts": 5.0
 }
 ```
 
@@ -107,7 +115,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 578
+Content-Length: 684
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -125,7 +133,11 @@ Content-Length: 578
   "coreLoginTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
   "deviceCount": 11,
-  "responsiveDesktopTimeInMs": 9
+  "responsiveDesktopTimeInMs": 9,
+  "blueScreenCount": 15,
+  "restartCount": 12,
+  "averageBlueScreens": 6.0,
+  "averageRestarts": 5.0
 }
 ```
 

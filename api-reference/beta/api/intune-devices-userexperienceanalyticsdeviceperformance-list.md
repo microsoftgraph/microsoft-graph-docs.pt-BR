@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 02d67297e57d8ce19f72420dc9998ca55104df98
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 53a8896f0e3a103a6cea074a00267ac4ac696a8e
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43322445"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791447"
 ---
 # <a name="list-userexperienceanalyticsdeviceperformances"></a>Listar userExperienceAnalyticsDevicePerformances
 
@@ -50,7 +50,7 @@ GET /deviceManagement/userExperienceAnalyticsDevicePerformance
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 675
+Content-Length: 797
 
 {
   "value": [
@@ -85,7 +85,11 @@ Content-Length: 675
       "coreLoginTimeInMs": 1,
       "groupPolicyLoginTimeInMs": 8,
       "deviceCount": 11,
-      "responsiveDesktopTimeInMs": 9
+      "responsiveDesktopTimeInMs": 9,
+      "blueScreenCount": 15,
+      "restartCount": 12,
+      "averageBlueScreens": 6.0,
+      "averageRestarts": 5.0
     }
   ]
 }

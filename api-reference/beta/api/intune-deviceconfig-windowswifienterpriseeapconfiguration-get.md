@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 038a08c1a1278d7f67feba4126173f7704623004
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bfa9f8b6fa28561b437a7ca9e683ffa3342b5b61
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43332104"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46789962"
 ---
 # <a name="get-windowswifienterpriseeapconfiguration"></a>Obter windowsWifiEnterpriseEAPConfiguration
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2588
+Content-Length: 2719
 
 {
   "value": {
@@ -133,7 +133,10 @@ Content-Length: 2588
     ],
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEAPTTLS": "challengeHandshakeAuthenticationProtocol",
-    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+    "requireCryptographicBinding": true,
+    "performServerValidation": true,
+    "disableUserPromptForServerValidation": true
   }
 }
 ```

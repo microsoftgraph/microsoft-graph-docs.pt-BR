@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ccbd1e60b39caf716b9059e0a3e145e42783cae0
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 6fa0cf5dff76290f0df56860c86df13d1a4ffb3a
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123901"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791600"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -165,6 +165,7 @@ Namespace: microsoft.graph
 - [Condição de gerenciamento local](intune-fencing-locationmanagementcondition.md)
 - [Usuário conectado](intune-devices-loggedonuser.md)
 - [Estado de modo perdido](intune-devices-lostmodestate.md)
+- [Estado de malware para dispositivo Windows](intune-devices-malwarestateforwindowsdevice.md)
 - [Dispositivo gerenciado](intune-devices-manageddevice.md)
 - [Arquitetura de dispositivo gerenciado](intune-devices-manageddevicearchitecture.md)
 - [Configurações de limpeza do dispositivo gerenciado](intune-devices-manageddevicecleanupsettings.md)
@@ -216,6 +217,7 @@ Namespace: microsoft.graph
 - [Expressões de condição de gerenciamento unário](intune-fencing-unarymanagementconditionexpression.md)
 - [Tipo de operador de expressão de condição de gerenciamento unário](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Parâmetro da ação de atualização de conta de dispositivo Windows](intune-devices-updatewindowsdeviceaccountactionparameter.md)
+- [Desempenho do aplicativo de análise da experiência do usuário](intune-devices-userexperienceanalyticsapphealthapplicationperformance.md)
 - [Linha de base de análise da experiência do usuário](intune-devices-userexperienceanalyticsbaseline.md)
 - [Categoria de análise da experiência do usuário](intune-devices-userexperienceanalyticscategory.md)
 - [Desempenho do dispositivo de análise da experiência do usuário](intune-devices-userexperienceanalyticsdeviceperformance.md)
@@ -227,6 +229,8 @@ Namespace: microsoft.graph
 - [Gravidade da visão da análise da experiência do usuário](intune-devices-userexperienceanalyticsinsightseverity.md)
 - [Valor da visão da análise da experiência do usuário](intune-devices-userexperienceanalyticsinsightvalue.md)
 - [Métrica de análise da experiência do usuário](intune-devices-userexperienceanalyticsmetric.md)
+- [Histórico de métrica de análise da experiência do usuário](intune-devices-userexperienceanalyticsmetrichistory.md)
+- [Categoria de reinício do sistema operacional de análise da experiência do usuário](intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)
 - [Visão geral da análise da experiência do usuário](intune-devices-userexperienceanalyticsoverview.md)
 - [Resumo de regressão da análise da experiência do usuário](intune-devices-userexperienceanalyticsregressionsummary.md)
 - [Histórico de pontuação da análise da experiência do usuário](intune-devices-userexperienceanalyticsscorehistory.md)
@@ -249,6 +253,7 @@ Namespace: microsoft.graph
 - [Contagem de nome de malware do Windows](intune-devices-windowsmalwarenamecount.md)
 - [Visão geral de malware do Windows](intune-devices-windowsmalwareoverview.md)
 - [Gravidade de malware do Windows](intune-devices-windowsmalwareseverity.md)
+- [Contagem de severidade de malware do Windows](intune-devices-windowsmalwareseveritycount.md)
 - [Estado de malware do Windows](intune-devices-windowsmalwarestate.md)
 - [Contagem do estado de malware do Windows](intune-devices-windowsmalwarestatecount.md)
 - [Estado de ameaças de malware do Windows](intune-devices-windowsmalwarethreatstate.md)

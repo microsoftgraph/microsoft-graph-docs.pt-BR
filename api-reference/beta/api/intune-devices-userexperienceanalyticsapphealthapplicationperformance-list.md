@@ -1,18 +1,18 @@
 ---
-title: Obter userExperienceAnalyticsDevicePerformance
-description: Leia as propriedades e as relações do objeto userExperienceAnalyticsDevicePerformance.
+title: Listar userExperienceAnalyticsAppHealthApplicationPerformances
+description: Listar Propriedades e relações dos objetos userExperienceAnalyticsAppHealthApplicationPerformance.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 14a7afbb519a4b67019f6cf03acef7adfd80bcbc
+ms.openlocfilehash: 5eee707d9d21b7f872f05d6ab91fbbfab175097a
 ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791439"
+ms.locfileid: "46790249"
 ---
-# <a name="get-userexperienceanalyticsdeviceperformance"></a>Obter userExperienceAnalyticsDevicePerformance
+# <a name="list-userexperienceanalyticsapphealthapplicationperformances"></a>Listar userExperienceAnalyticsAppHealthApplicationPerformances
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .
+Listar Propriedades e relações dos objetos [userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,11 +37,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAnalyticsDevicePerformanceId}
+GET /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance
 ```
-
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -53,14 +50,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAnalyticsDevicePerformanceId}
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance
 ```
 
 ### <a name="response"></a>Resposta
@@ -68,31 +65,29 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 743
+Content-Length: 737
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
-    "id": "852ae826-e826-852a-26e8-2a8526e82a85",
-    "deviceName": "Device Name value",
-    "model": "Model value",
-    "manufacturer": "Manufacturer value",
-    "diskType": "hdd",
-    "operatingSystemVersion": "Operating System Version value",
-    "bootScore": 9,
-    "coreBootTimeInMs": 0,
-    "groupPolicyBootTimeInMs": 7,
-    "healthStatus": "insufficientData",
-    "loginScore": 10,
-    "coreLoginTimeInMs": 1,
-    "groupPolicyLoginTimeInMs": 8,
-    "deviceCount": 11,
-    "responsiveDesktopTimeInMs": 9,
-    "blueScreenCount": 15,
-    "restartCount": 12,
-    "averageBlueScreens": 6.0,
-    "averageRestarts": 5.0
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthApplicationPerformance",
+      "id": "c7962a87-2a87-c796-872a-96c7872a96c7",
+      "appName": "App Name value",
+      "appFriendlyName": "App Friendly Name value",
+      "appPublisher": "App Publisher value",
+      "activeDevices": 13,
+      "totalAppUsageDuration": 5,
+      "totalAppCrashes": 15,
+      "totalAppHangs": 13,
+      "meanTimeToFailure": 1,
+      "appHealthScore": 4.666666666666667,
+      "appHealthStatus": "App Health Status value",
+      "allOrgsHealthScore": 6.0,
+      "allOrgsMeanTimeToFailure": 8,
+      "tenantId": "Tenant Id value",
+      "memaTimeGenerated": "Mema Time Generated value"
+    }
+  ]
 }
 ```
 

@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 927ec039942d594fcb34665ed3ff0641904fcb60
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 0b1e8e6e6505780fcf638892c1e18b9500d54423
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123922"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790928"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -358,6 +358,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de comportamento de solicitação de elevação de usuário padrão de opções de segurança local](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [receptor de eventos do Apple para macOS](intune-deviceconfig-macosappleeventreceiver.md)
 - [par de chave/valor de domínios associados ao macOS](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
+- [extensão de logon único do macOS do Azure AD](intune-deviceconfig-macosazureadsinglesignonextension.md)
 - [Base de perfil de certificado do macOS](intune-deviceconfig-macoscertificateprofilebase.md)
 - [Política de conformidade do macOS](intune-deviceconfig-macoscompliancepolicy.md)
 - [política de cliente de cache de conteúdo macOS](intune-deviceconfig-macoscontentcachingclientpolicy.md)

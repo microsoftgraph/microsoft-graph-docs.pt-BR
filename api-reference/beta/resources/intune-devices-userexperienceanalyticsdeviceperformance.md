@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a3dd901a24ee8ae521838640aa31a3bd5b9b719d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2c4325ac78a1fc5f91c92fc4633d9d10146afd86
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382827"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790389"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>tipo de recurso userExperienceAnalyticsDevicePerformance
 
@@ -36,7 +36,7 @@ A entidade de desempenho do dispositivo de análise da experiência do usuário 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
-|deviceName|Cadeia de caracteres|O nome do dispositivo de análise da experiência do usuário.|
+|deviceName|String|O nome do dispositivo de análise da experiência do usuário.|
 |modelo|String|O modelo de dispositivo de análise da experiência do usuário.|
 |fabricante|String|O fabricante do dispositivo de análise da experiência do usuário.|
 |diskType|[diskType](../resources/intune-devices-disktype.md)|O tipo de disco do dispositivo de análise da experiência do usuário. Os valores possíveis são: `unkown`, `hdd`, `ssd`.|
@@ -50,6 +50,10 @@ A entidade de desempenho do dispositivo de análise da experiência do usuário 
 |groupPolicyLoginTimeInMs|Int32|O tempo de logon da política de grupo do dispositivo de análise da experiência do usuário em milissegundos.|
 |deviceCount|Int64|Contagem de dispositivos resumida da análise de experiência do usuário.|
 |responsiveDesktopTimeInMs|Int32|O tempo de resposta da análise da experiência do usuário em milissegundos.|
+|blueScreenCount|Int32|Número de telas azuis nos últimos 14 dias. Valores válidos de 0 a 9999999|
+|restartCount|Int32|Número de reinicializações nos últimos 14 dias. Valores válidos de 0 a 9999999|
+|averageBlueScreens|Duplo|Média (média) número de telas azuis por dispositivo nos últimos 14 dias. Valores válidos de 0 a 9999999|
+|averageRestarts|Duplo|Média (média) número de reinicializações por dispositivo nos últimos 14 dias. Valores válidos de 0 a 9999999|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -79,7 +83,11 @@ Veja a seguir uma representação JSON do recurso.
   "coreLoginTimeInMs": 1024,
   "groupPolicyLoginTimeInMs": 1024,
   "deviceCount": 1024,
-  "responsiveDesktopTimeInMs": 1024
+  "responsiveDesktopTimeInMs": 1024,
+  "blueScreenCount": 1024,
+  "restartCount": 1024,
+  "averageBlueScreens": "4.2",
+  "averageRestarts": "4.2"
 }
 ```
 

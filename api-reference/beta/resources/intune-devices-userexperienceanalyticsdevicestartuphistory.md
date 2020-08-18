@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80339855c5154e2cd563b0c76b400cd9d4536f90
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4eccd2c2e07e088d501b6564b1cec501ab4baae0
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382820"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791768"
 ---
 # <a name="userexperienceanalyticsdevicestartuphistory-resource-type"></a>tipo de recurso userExperienceAnalyticsDeviceStartupHistory
 
@@ -45,9 +45,10 @@ A experiência do usuário da entidade de histórico de inicialização do dispo
 |coreLoginTimeInMs|Int32|O tempo de logon do dispositivo de análise da experiência do usuário em milissegundos.|
 |responsiveDesktopTimeInMs|Int32|O tempo de resposta da análise da experiência do usuário em milissegundos.|
 |totalLoginTimeInMs|Int32|O tempo total de logon do dispositivo de análise da experiência do usuário em milissegundos.|
-|isFirstLogin|Boolean|O dispositivo de análise de experiência do usuário primeiro logon.|
-|isFeatureUpdate|Boolean|O registro de inicialização do dispositivo de análise da experiência do usuário é uma atualização de recurso.|
+|isFirstLogin|Booliano|O dispositivo de análise de experiência do usuário primeiro logon.|
+|isFeatureUpdate|Booliano|O registro de inicialização do dispositivo de análise da experiência do usuário é uma atualização de recurso.|
 |operatingSystemVersion|String|A versão do sistema operacional do registro de inicialização do dispositivo de análise da experiência do usuário.|
+|restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Categoria de reinício de so. Os possíveis valores são: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -76,7 +77,8 @@ Veja a seguir uma representação JSON do recurso.
   "totalLoginTimeInMs": 1024,
   "isFirstLogin": true,
   "isFeatureUpdate": true,
-  "operatingSystemVersion": "String"
+  "operatingSystemVersion": "String",
+  "restartCategory": "String"
 }
 ```
 

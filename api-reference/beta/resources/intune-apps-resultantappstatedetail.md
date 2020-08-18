@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c0de2345a4c698da79ec01db7bddcc139b5b2660
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 390af3d25993aac335765346c6bb9b938a71ad6d
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462537"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790200"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>tipo de enumeração resultantAppStateDetail
 
@@ -30,8 +30,14 @@ Enum indicando detalhes adicionais sobre por que um aplicativo tem um estado de 
 |dependencyWithRequirementsNotMet|duas|Uma ou mais das dependências do aplicativo têm requisitos que não foram atendidos.|
 |dependencyPendingReboot|3D|Uma ou mais das dependências do aplicativo exige a reinicialização do dispositivo para concluir a instalação.|
 |dependencyWithAutoInstallDisabled|4 |Uma ou mais dependências do aplicativo estão configuradas para não instalar automaticamente.|
+|iosAppStoreUpdateFailedToInstall|1000|A versão mais recente do aplicativo falhou ao atualizar de uma versão anterior.|
+|vppAppHasUpdateAvailable|1001|Há uma atualização disponível.|
+|userRejectedUpdate|1002|O usuário rejeitou a atualização do aplicativo. |
 |seeInstallErrorCode|2000|Falha ao instalar o aplicativo. Consulte Propriedade de código de erro para obter mais detalhes.|
 |autoInstallDisabled|3000|O aplicativo está configurado para não ser instalado automaticamente.|
+|managedAppNoLongerPresent|3001|O aplicativo é gerenciado, mas não está mais instalado.|
+|userRejectedInstall|3002|O usuário rejeitou a instalação do aplicativo.|
+|userIsNotLoggedIntoAppStore|3003|O usuário deve fazer logon no repositório de aplicativos para instalar o aplicativo.|
 |seeUninstallErrorCode|4000|Falha ao desinstalar o aplicativo. Consulte Propriedade de código de erro para obter mais detalhes.|
 |pendingReboot|5000|O dispositivo deve ser reinicializado para concluir a instalação do aplicativo.|
 |installingDependencies|5001|Uma ou mais das dependências do aplicativo estão sendo instaladas.|

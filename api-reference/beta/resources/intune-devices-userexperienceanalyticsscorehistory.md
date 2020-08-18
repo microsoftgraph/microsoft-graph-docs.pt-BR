@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 52154b802c1162d860b9354a7910b68d0582e6ce
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 75e58a1cf7868b19677581e1c9408a9afbabe294
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43401896"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790150"
 ---
 # <a name="userexperienceanalyticsscorehistory-resource-type"></a>tipo de recurso userExperienceAnalyticsScoreHistory
 
@@ -36,10 +36,11 @@ O histórico de Pontuação de inicialização do dispositivo de análise da exp
 |:---|:---|:---|
 |id|String|O identificador exclusivo do processo de inicialização do dispositivo de análise da experiência do usuário.|
 |startupDateTime|DateTimeOffset|A experiência do usuário da data de início do dispositivo de análise.|
-|startupScore|Int32|Pontuação de inicialização do dispositivo de análise da experiência do usuário.|
-|coreBootScore|Int32|A pontuação de inicialização do dispositivo de análise da experiência do usuário.|
-|coreSigninScore|Int32|A pontuação de entrada do core do dispositivo de análise da experiência do usuário.|
-|recommendedSoftwareScore|Int32|A pontuação de entrada do core do dispositivo de análise da experiência do usuário.|
+|startupScore|Int32|Pontuação de inicialização do dispositivo de análise da experiência do usuário. A pontuação será no intervalo 0-100, 100 é a pontuação ideal.|
+|coreBootScore|Int32|A pontuação de inicialização do dispositivo de análise da experiência do usuário. A pontuação será no intervalo 0-100, 100 é a pontuação ideal.|
+|coreSigninScore|Int32|A pontuação de entrada do core do dispositivo de análise da experiência do usuário. A pontuação será no intervalo 0-100, 100 é a pontuação ideal.|
+|recommendedSoftwareScore|Int32|A pontuação de entrada do core do dispositivo de análise da experiência do usuário. A pontuação será no intervalo 0-100, 100 é a pontuação ideal.|
+|restartScore|Int32|Reinicie o placar. A pontuação será no intervalo 0-100, 100 é a pontuação ideal, 0 indica reinicializações em excesso. Valores válidos de 0 a 9999999|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -60,7 +61,8 @@ Veja a seguir uma representação JSON do recurso.
   "startupScore": 1024,
   "coreBootScore": 1024,
   "coreSigninScore": 1024,
-  "recommendedSoftwareScore": 1024
+  "recommendedSoftwareScore": 1024,
+  "restartScore": 1024
 }
 ```
 

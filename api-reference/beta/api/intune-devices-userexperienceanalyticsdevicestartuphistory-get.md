@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2bf850e8e8745d3c34eb484f982a3f48cb80b21b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 93fa666edfadc398c5809644cd656f78923aa063
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379532"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791355"
 ---
 # <a name="get-userexperienceanalyticsdevicestartuphistory"></a>Obter userExperienceAnalyticsDeviceStartupHistory
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 631
+Content-Length: 676
 
 {
   "value": {
@@ -86,7 +86,8 @@ Content-Length: 631
     "totalLoginTimeInMs": 2,
     "isFirstLogin": true,
     "isFeatureUpdate": true,
-    "operatingSystemVersion": "Operating System Version value"
+    "operatingSystemVersion": "Operating System Version value",
+    "restartCategory": "restartWithUpdate"
   }
 }
 ```
