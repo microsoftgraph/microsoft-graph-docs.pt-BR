@@ -4,31 +4,31 @@ description: ''
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 66f3caa7b210f32c3eabc85c945eeec50745bd63
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: MSGraphDocsVteam
+ms.openlocfilehash: 42e569afee63452cc48311cc3304c209ea71d3f5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499194"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806692"
 ---
-# <a name="entity-resource-type"></a><span data-ttu-id="83ce2-102">Tipo de recurso entity</span><span class="sxs-lookup"><span data-stu-id="83ce2-102">entity resource type</span></span>
+# <a name="entity-resource-type"></a><span data-ttu-id="16244-102">Tipo de recurso entity</span><span class="sxs-lookup"><span data-stu-id="16244-102">entity resource type</span></span>
 
-<span data-ttu-id="83ce2-103">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="83ce2-103">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="16244-103">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="16244-103">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="properties"></a><span data-ttu-id="83ce2-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="83ce2-104">Properties</span></span>
-| <span data-ttu-id="83ce2-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="83ce2-105">Property</span></span> | <span data-ttu-id="83ce2-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="83ce2-106">Type</span></span>  | <span data-ttu-id="83ce2-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="83ce2-107">Description</span></span> |
+## <a name="properties"></a><span data-ttu-id="16244-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="16244-104">Properties</span></span>
+| <span data-ttu-id="16244-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="16244-105">Property</span></span> | <span data-ttu-id="16244-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="16244-106">Type</span></span>  | <span data-ttu-id="16244-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="16244-107">Description</span></span> |
 |:---------|:------|:------------|
-|<span data-ttu-id="83ce2-108">id</span><span class="sxs-lookup"><span data-stu-id="83ce2-108">id</span></span>        |<span data-ttu-id="83ce2-109">String</span><span class="sxs-lookup"><span data-stu-id="83ce2-109">String</span></span> | <span data-ttu-id="83ce2-110">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="83ce2-110">Read-only.</span></span>  |
+|<span data-ttu-id="16244-108">id</span><span class="sxs-lookup"><span data-stu-id="16244-108">id</span></span>        |<span data-ttu-id="16244-109">String</span><span class="sxs-lookup"><span data-stu-id="16244-109">String</span></span> | <span data-ttu-id="16244-110">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="16244-110">Read-only.</span></span>  |
 
-## <a name="relationships"></a><span data-ttu-id="83ce2-111">Relações</span><span class="sxs-lookup"><span data-stu-id="83ce2-111">Relationships</span></span>
-<span data-ttu-id="83ce2-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="83ce2-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="16244-111">Relações</span><span class="sxs-lookup"><span data-stu-id="16244-111">Relationships</span></span>
+<span data-ttu-id="16244-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="16244-112">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="83ce2-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="83ce2-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="16244-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="16244-113">JSON representation</span></span>
 
-<span data-ttu-id="83ce2-114">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="83ce2-114">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="16244-114">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="16244-114">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

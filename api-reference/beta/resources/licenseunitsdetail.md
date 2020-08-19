@@ -4,32 +4,32 @@ description: A propriedade **prepaidUnits** da entidade subscribedSku é do tipo
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: c302ed46843a0ef8c235ec9e3e814a069dfa0e51
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: krbain
+ms.openlocfilehash: bbff4ac919f5973caff7fbbc30fdc5d7352550b4
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522964"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807504"
 ---
-# <a name="licenseunitsdetail-resource-type"></a><span data-ttu-id="4dfd6-103">Tipo de recurso licenseUnitsDetail</span><span class="sxs-lookup"><span data-stu-id="4dfd6-103">licenseUnitsDetail resource type</span></span>
+# <a name="licenseunitsdetail-resource-type"></a><span data-ttu-id="0a80c-103">Tipo de recurso licenseUnitsDetail</span><span class="sxs-lookup"><span data-stu-id="0a80c-103">licenseUnitsDetail resource type</span></span>
 
-<span data-ttu-id="4dfd6-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4dfd6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0a80c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0a80c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4dfd6-105">A propriedade **prepaidUnits** da entidade [subscribedSku](subscribedsku.md) é do tipo **licenseUnitsDetail**.</span><span class="sxs-lookup"><span data-stu-id="4dfd6-105">The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.</span></span>
+<span data-ttu-id="0a80c-105">A propriedade **prepaidUnits** da entidade [subscribedSku](subscribedsku.md) é do tipo **licenseUnitsDetail**.</span><span class="sxs-lookup"><span data-stu-id="0a80c-105">The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4dfd6-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4dfd6-106">Properties</span></span>
-| <span data-ttu-id="4dfd6-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4dfd6-107">Property</span></span>     | <span data-ttu-id="4dfd6-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="4dfd6-108">Type</span></span>   |<span data-ttu-id="4dfd6-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="4dfd6-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="0a80c-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0a80c-106">Properties</span></span>
+| <span data-ttu-id="0a80c-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0a80c-107">Property</span></span>     | <span data-ttu-id="0a80c-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="0a80c-108">Type</span></span>   |<span data-ttu-id="0a80c-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="0a80c-109">Description</span></span>|
 |:-------------|:-----|:----------|
-|<span data-ttu-id="4dfd6-110">enabled</span><span class="sxs-lookup"><span data-stu-id="4dfd6-110">enabled</span></span>|<span data-ttu-id="4dfd6-111">Int32</span><span class="sxs-lookup"><span data-stu-id="4dfd6-111">Int32</span></span>| <span data-ttu-id="4dfd6-112">O número de unidades que estão habilitadas.</span><span class="sxs-lookup"><span data-stu-id="4dfd6-112">The number of units that are enabled.</span></span> |
-|<span data-ttu-id="4dfd6-113">suspended</span><span class="sxs-lookup"><span data-stu-id="4dfd6-113">suspended</span></span>|<span data-ttu-id="4dfd6-114">Int32</span><span class="sxs-lookup"><span data-stu-id="4dfd6-114">Int32</span></span>| <span data-ttu-id="4dfd6-115">O número de unidades que estão suspensas.</span><span class="sxs-lookup"><span data-stu-id="4dfd6-115">The number of units that are suspended.</span></span> |
-|<span data-ttu-id="4dfd6-116">warning</span><span class="sxs-lookup"><span data-stu-id="4dfd6-116">warning</span></span>|<span data-ttu-id="4dfd6-117">Int32</span><span class="sxs-lookup"><span data-stu-id="4dfd6-117">Int32</span></span>| <span data-ttu-id="4dfd6-118">O número de unidades que estão no status de aviso.</span><span class="sxs-lookup"><span data-stu-id="4dfd6-118">The number of units that are in warning status.</span></span> |
+|<span data-ttu-id="0a80c-110">enabled</span><span class="sxs-lookup"><span data-stu-id="0a80c-110">enabled</span></span>|<span data-ttu-id="0a80c-111">Int32</span><span class="sxs-lookup"><span data-stu-id="0a80c-111">Int32</span></span>| <span data-ttu-id="0a80c-112">O número de unidades que estão habilitadas.</span><span class="sxs-lookup"><span data-stu-id="0a80c-112">The number of units that are enabled.</span></span> |
+|<span data-ttu-id="0a80c-113">suspended</span><span class="sxs-lookup"><span data-stu-id="0a80c-113">suspended</span></span>|<span data-ttu-id="0a80c-114">Int32</span><span class="sxs-lookup"><span data-stu-id="0a80c-114">Int32</span></span>| <span data-ttu-id="0a80c-115">O número de unidades que estão suspensas.</span><span class="sxs-lookup"><span data-stu-id="0a80c-115">The number of units that are suspended.</span></span> |
+|<span data-ttu-id="0a80c-116">warning</span><span class="sxs-lookup"><span data-stu-id="0a80c-116">warning</span></span>|<span data-ttu-id="0a80c-117">Int32</span><span class="sxs-lookup"><span data-stu-id="0a80c-117">Int32</span></span>| <span data-ttu-id="0a80c-118">O número de unidades que estão no status de aviso.</span><span class="sxs-lookup"><span data-stu-id="0a80c-118">The number of units that are in warning status.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="4dfd6-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4dfd6-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0a80c-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0a80c-119">JSON representation</span></span>
 
-<span data-ttu-id="4dfd6-120">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="4dfd6-120">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="0a80c-120">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="0a80c-120">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
