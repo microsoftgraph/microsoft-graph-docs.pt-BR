@@ -2,59 +2,59 @@
 title: 'Filter: apply'
 description: Aplica os critérios de filtro determinados à coluna fornecida.
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 73df4792866c4e7dbaf4a59816ca7b9ecb2523c6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3624add2e71e30354335adc6764c4b4a39bca3c6
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517275"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811942"
 ---
-# <a name="filter-apply"></a><span data-ttu-id="55b4d-103">Filter: apply</span><span class="sxs-lookup"><span data-stu-id="55b4d-103">Filter: apply</span></span>
+# <a name="filter-apply"></a><span data-ttu-id="a56b2-103">Filter: apply</span><span class="sxs-lookup"><span data-stu-id="a56b2-103">Filter: apply</span></span>
 
-<span data-ttu-id="55b4d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="55b4d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a56b2-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a56b2-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="55b4d-105">Aplica os critérios de filtro determinados à coluna fornecida.</span><span class="sxs-lookup"><span data-stu-id="55b4d-105">Apply the given filter criteria on the given column.</span></span>
-## <a name="permissions"></a><span data-ttu-id="55b4d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="55b4d-106">Permissions</span></span>
-<span data-ttu-id="55b4d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="55b4d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a56b2-105">Aplica os critérios de filtro determinados à coluna fornecida.</span><span class="sxs-lookup"><span data-stu-id="a56b2-105">Apply the given filter criteria on the given column.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a56b2-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a56b2-106">Permissions</span></span>
+<span data-ttu-id="a56b2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a56b2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="55b4d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="55b4d-109">Permission type</span></span>      | <span data-ttu-id="55b4d-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="55b4d-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a56b2-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a56b2-109">Permission type</span></span>      | <span data-ttu-id="a56b2-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a56b2-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="55b4d-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="55b4d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="55b4d-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="55b4d-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="55b4d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="55b4d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="55b4d-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="55b4d-114">Not supported.</span></span>    |
-|<span data-ttu-id="55b4d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="55b4d-115">Application</span></span> | <span data-ttu-id="55b4d-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="55b4d-116">Not supported.</span></span> |
+|<span data-ttu-id="a56b2-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a56b2-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a56b2-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a56b2-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a56b2-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a56b2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a56b2-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a56b2-114">Not supported.</span></span>    |
+|<span data-ttu-id="a56b2-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a56b2-115">Application</span></span> | <span data-ttu-id="a56b2-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a56b2-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="55b4d-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="55b4d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a56b2-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a56b2-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns/{id|name}/filter/apply
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/apply
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="55b4d-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="55b4d-118">Request headers</span></span>
-| <span data-ttu-id="55b4d-119">Nome</span><span class="sxs-lookup"><span data-stu-id="55b4d-119">Name</span></span>       | <span data-ttu-id="55b4d-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="55b4d-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a56b2-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a56b2-118">Request headers</span></span>
+| <span data-ttu-id="a56b2-119">Nome</span><span class="sxs-lookup"><span data-stu-id="a56b2-119">Name</span></span>       | <span data-ttu-id="a56b2-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="a56b2-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="55b4d-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="55b4d-121">Authorization</span></span>  | <span data-ttu-id="55b4d-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="55b4d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a56b2-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="a56b2-121">Authorization</span></span>  | <span data-ttu-id="a56b2-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a56b2-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="55b4d-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="55b4d-124">Request body</span></span>
-<span data-ttu-id="55b4d-125">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="55b4d-125">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a56b2-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a56b2-124">Request body</span></span>
+<span data-ttu-id="a56b2-125">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a56b2-125">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="55b4d-126">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="55b4d-126">Parameter</span></span>    | <span data-ttu-id="55b4d-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="55b4d-127">Type</span></span>   |<span data-ttu-id="55b4d-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="55b4d-128">Description</span></span>|
+| <span data-ttu-id="a56b2-126">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="a56b2-126">Parameter</span></span>    | <span data-ttu-id="a56b2-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="a56b2-127">Type</span></span>   |<span data-ttu-id="a56b2-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="a56b2-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="55b4d-129">criteria</span><span class="sxs-lookup"><span data-stu-id="55b4d-129">criteria</span></span>|<span data-ttu-id="55b4d-130">WorkbookFilterCriteria</span><span class="sxs-lookup"><span data-stu-id="55b4d-130">WorkbookFilterCriteria</span></span>|<span data-ttu-id="55b4d-131">Os critérios a aplicar.</span><span class="sxs-lookup"><span data-stu-id="55b4d-131">The criteria to apply.</span></span>|
+|<span data-ttu-id="a56b2-129">criteria</span><span class="sxs-lookup"><span data-stu-id="a56b2-129">criteria</span></span>|<span data-ttu-id="a56b2-130">WorkbookFilterCriteria</span><span class="sxs-lookup"><span data-stu-id="a56b2-130">WorkbookFilterCriteria</span></span>|<span data-ttu-id="a56b2-131">Os critérios a aplicar.</span><span class="sxs-lookup"><span data-stu-id="a56b2-131">The criteria to apply.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="55b4d-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="55b4d-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a56b2-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="a56b2-132">Response</span></span>
 
-<span data-ttu-id="55b4d-p103">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="55b4d-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="a56b2-p103">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a56b2-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="55b4d-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="55b4d-135">Example</span></span>
-<span data-ttu-id="55b4d-136">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="55b4d-136">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="55b4d-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="55b4d-137">Request</span></span>
-<span data-ttu-id="55b4d-138">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="55b4d-138">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a56b2-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a56b2-135">Example</span></span>
+<span data-ttu-id="a56b2-136">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="a56b2-136">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="a56b2-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a56b2-137">Request</span></span>
+<span data-ttu-id="a56b2-138">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a56b2-138">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="55b4d-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="55b4d-139">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a56b2-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="a56b2-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "filter_apply"
@@ -82,27 +82,27 @@ Content-length: 321
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="55b4d-140">C#</span><span class="sxs-lookup"><span data-stu-id="55b4d-140">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a56b2-140">C#</span><span class="sxs-lookup"><span data-stu-id="a56b2-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/filter-apply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="55b4d-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="55b4d-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a56b2-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a56b2-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/filter-apply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="55b4d-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="55b4d-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a56b2-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a56b2-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/filter-apply-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="55b4d-143">Java</span><span class="sxs-lookup"><span data-stu-id="55b4d-143">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="a56b2-143">Java</span><span class="sxs-lookup"><span data-stu-id="a56b2-143">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/filter-apply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="55b4d-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="55b4d-144">Response</span></span>
-<span data-ttu-id="55b4d-145">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="55b4d-145">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="a56b2-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="a56b2-144">Response</span></span>
+<span data-ttu-id="a56b2-145">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a56b2-145">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

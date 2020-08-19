@@ -5,67 +5,73 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5f9dcea968f3dde36de2ba46dc8c29c5c584a198
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: f55e3f7258dff1e41832085fd966b60c0272f32a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228920"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811746"
 ---
-# <a name="update-languageproficiency"></a><span data-ttu-id="ae095-103">Atualizar languageProficiency</span><span class="sxs-lookup"><span data-stu-id="ae095-103">Update languageProficiency</span></span>
+# <a name="update-languageproficiency"></a><span data-ttu-id="98bfc-103">Atualizar languageProficiency</span><span class="sxs-lookup"><span data-stu-id="98bfc-103">Update languageProficiency</span></span>
 
-<span data-ttu-id="ae095-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ae095-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="98bfc-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="98bfc-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ae095-105">Atualiza as propriedades de um objeto [languageProficiency](../resources/languageproficiency.md) no [perfil](../resources/profile.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="ae095-105">Update the properties of a [languageProficiency](../resources/languageproficiency.md) object in a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="98bfc-105">Atualiza as propriedades de um objeto [languageProficiency](../resources/languageproficiency.md) no [perfil](../resources/profile.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="98bfc-105">Update the properties of a [languageProficiency](../resources/languageproficiency.md) object in a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ae095-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ae095-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="98bfc-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="98bfc-106">Permissions</span></span>
 
-<span data-ttu-id="ae095-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ae095-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="98bfc-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="98bfc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ae095-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ae095-109">Permission type</span></span>                        | <span data-ttu-id="ae095-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ae095-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="98bfc-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="98bfc-109">Permission type</span></span>                        | <span data-ttu-id="98bfc-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="98bfc-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="ae095-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ae095-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ae095-112">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="ae095-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="ae095-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ae095-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ae095-114">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="ae095-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="ae095-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ae095-115">Application</span></span>                            | <span data-ttu-id="ae095-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ae095-116">User.ReadWrite.All</span></span>                          |
+| <span data-ttu-id="98bfc-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="98bfc-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="98bfc-112">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="98bfc-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="98bfc-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="98bfc-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="98bfc-114">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="98bfc-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="98bfc-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="98bfc-115">Application</span></span>                            | <span data-ttu-id="98bfc-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98bfc-116">User.ReadWrite.All</span></span>                          |
 
-## <a name="http-request"></a><span data-ttu-id="ae095-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ae095-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="98bfc-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="98bfc-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 PATCH /me/profile/languages/{id}
+PATCH /users/{id | userPrincipalName}/profile/languages/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ae095-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ae095-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="98bfc-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="98bfc-118">Request headers</span></span>
 
-| <span data-ttu-id="ae095-119">Nome</span><span class="sxs-lookup"><span data-stu-id="ae095-119">Name</span></span>           |<span data-ttu-id="ae095-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="ae095-120">Description</span></span>                  |
+| <span data-ttu-id="98bfc-119">Nome</span><span class="sxs-lookup"><span data-stu-id="98bfc-119">Name</span></span>           |<span data-ttu-id="98bfc-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="98bfc-120">Description</span></span>                  |
 |:---------------|:----------------------------|
-| <span data-ttu-id="ae095-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="ae095-121">Authorization</span></span>  | <span data-ttu-id="ae095-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ae095-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="ae095-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ae095-124">Content-Type</span></span>   | <span data-ttu-id="ae095-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ae095-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="98bfc-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="98bfc-121">Authorization</span></span>  | <span data-ttu-id="98bfc-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="98bfc-p102">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="98bfc-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="98bfc-124">Content-Type</span></span>   | <span data-ttu-id="98bfc-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="98bfc-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ae095-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ae095-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="98bfc-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="98bfc-127">Request body</span></span>
 
-<span data-ttu-id="ae095-128">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="ae095-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="ae095-129">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="ae095-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="ae095-130">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="ae095-130">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="98bfc-128">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="98bfc-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="98bfc-129">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="98bfc-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="98bfc-130">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="98bfc-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="ae095-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ae095-131">Property</span></span>     | <span data-ttu-id="ae095-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="ae095-132">Type</span></span>        | <span data-ttu-id="ae095-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="ae095-133">Description</span></span>                                                                                                                                                 |
-|:-------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="ae095-134">displayName</span><span class="sxs-lookup"><span data-stu-id="ae095-134">displayName</span></span>   |<span data-ttu-id="ae095-135">String</span><span class="sxs-lookup"><span data-stu-id="ae095-135">String</span></span>       | <span data-ttu-id="ae095-136">Contém o nome de formato longo do idioma em questão.</span><span class="sxs-lookup"><span data-stu-id="ae095-136">Contains the long-form name for the language in question.</span></span>                                                                                                   |
-|<span data-ttu-id="ae095-137">proficiência</span><span class="sxs-lookup"><span data-stu-id="ae095-137">proficiency</span></span>   |<span data-ttu-id="ae095-138">string</span><span class="sxs-lookup"><span data-stu-id="ae095-138">string</span></span>       | <span data-ttu-id="ae095-139">Os valores possíveis são: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="ae095-139">Possible values are: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.</span></span>|
-|<span data-ttu-id="ae095-140">tag</span><span class="sxs-lookup"><span data-stu-id="ae095-140">tag</span></span>           |<span data-ttu-id="ae095-141">String</span><span class="sxs-lookup"><span data-stu-id="ae095-141">String</span></span>       | <span data-ttu-id="ae095-142">Contém o nome de BCP47 de 4 caracteres para o idioma (en-US, no-NB, en-AU)</span><span class="sxs-lookup"><span data-stu-id="ae095-142">Contains the 4 character BCP47 name for the language (en-US, no-NB, en-AU)</span></span>                                                                                  |
+|<span data-ttu-id="98bfc-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="98bfc-131">Property</span></span>|<span data-ttu-id="98bfc-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="98bfc-132">Type</span></span>|<span data-ttu-id="98bfc-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="98bfc-133">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="98bfc-134">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="98bfc-134">allowedAudiences</span></span>|<span data-ttu-id="98bfc-135">String</span><span class="sxs-lookup"><span data-stu-id="98bfc-135">String</span></span>|<span data-ttu-id="98bfc-136">As audiências que podem ver os valores contidos na entidade.</span><span class="sxs-lookup"><span data-stu-id="98bfc-136">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="98bfc-137">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="98bfc-137">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="98bfc-138">Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="98bfc-138">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="98bfc-139">displayName</span><span class="sxs-lookup"><span data-stu-id="98bfc-139">displayName</span></span>|<span data-ttu-id="98bfc-140">String</span><span class="sxs-lookup"><span data-stu-id="98bfc-140">String</span></span>|<span data-ttu-id="98bfc-141">Contém o nome de formato longo para o idioma.</span><span class="sxs-lookup"><span data-stu-id="98bfc-141">Contains the long-form name for the language.</span></span> |
+|<span data-ttu-id="98bfc-142">fracassa</span><span class="sxs-lookup"><span data-stu-id="98bfc-142">inference</span></span>|[<span data-ttu-id="98bfc-143">inferenceData</span><span class="sxs-lookup"><span data-stu-id="98bfc-143">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="98bfc-144">Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação.</span><span class="sxs-lookup"><span data-stu-id="98bfc-144">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="98bfc-145">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="98bfc-145">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="98bfc-146">Converte</span><span class="sxs-lookup"><span data-stu-id="98bfc-146">reading</span></span>|<span data-ttu-id="98bfc-147">languageProficiencyLevel</span><span class="sxs-lookup"><span data-stu-id="98bfc-147">languageProficiencyLevel</span></span>|<span data-ttu-id="98bfc-148">Representa os usuários que estão lendo a compreensão do idioma representado pelo objeto.</span><span class="sxs-lookup"><span data-stu-id="98bfc-148">Represents the users reading comprehension for the language represented by the object.</span></span> <span data-ttu-id="98bfc-149">Os valores possíveis são: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="98bfc-149">Possible values are: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="98bfc-150">source</span><span class="sxs-lookup"><span data-stu-id="98bfc-150">source</span></span>|[<span data-ttu-id="98bfc-151">personDataSource</span><span class="sxs-lookup"><span data-stu-id="98bfc-151">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="98bfc-152">Onde os valores são originados se forem sincronizados a partir de outro serviço.</span><span class="sxs-lookup"><span data-stu-id="98bfc-152">Where the values originated if synced from another service.</span></span> <span data-ttu-id="98bfc-153">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="98bfc-153">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="98bfc-154">idioma</span><span class="sxs-lookup"><span data-stu-id="98bfc-154">spoken</span></span>|<span data-ttu-id="98bfc-155">languageProficiencyLevel</span><span class="sxs-lookup"><span data-stu-id="98bfc-155">languageProficiencyLevel</span></span>|<span data-ttu-id="98bfc-156">Representa a proficiência dos usuários falada sobre o idioma representado pelo objeto.</span><span class="sxs-lookup"><span data-stu-id="98bfc-156">Represents the users spoken proficiency for the language represented by the object.</span></span> <span data-ttu-id="98bfc-157">Os valores possíveis são: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="98bfc-157">Possible values are: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="98bfc-158">tag</span><span class="sxs-lookup"><span data-stu-id="98bfc-158">tag</span></span>|<span data-ttu-id="98bfc-159">String</span><span class="sxs-lookup"><span data-stu-id="98bfc-159">String</span></span>|<span data-ttu-id="98bfc-160">Contém o nome BCP47 de quatro caracteres para o idioma (en-US, no-NB, en-AU).</span><span class="sxs-lookup"><span data-stu-id="98bfc-160">Contains the four-character BCP47 name for the language (en-US, no-NB, en-AU).</span></span>|
+|<span data-ttu-id="98bfc-161">pré-gravados</span><span class="sxs-lookup"><span data-stu-id="98bfc-161">written</span></span>|<span data-ttu-id="98bfc-162">languageProficiencyLevel</span><span class="sxs-lookup"><span data-stu-id="98bfc-162">languageProficiencyLevel</span></span>|<span data-ttu-id="98bfc-163">Representa a proficiência dos usuários gravados para o idioma representado pelo objeto.</span><span class="sxs-lookup"><span data-stu-id="98bfc-163">Represents the users written proficiency for the language represented by the object.</span></span> <span data-ttu-id="98bfc-164">Os valores possíveis são: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="98bfc-164">Possible values are: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ae095-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="ae095-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="98bfc-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="98bfc-165">Response</span></span>
 
-<span data-ttu-id="ae095-144">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [languageProficiency](../resources/languageproficiency.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ae095-144">If successful, this method returns a `200 OK` response code and an updated [languageProficiency](../resources/languageproficiency.md) object in the response body.</span></span>
+<span data-ttu-id="98bfc-166">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [languageProficiency](../resources/languageproficiency.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="98bfc-166">If successful, this method returns a `200 OK` response code and an updated [languageProficiency](../resources/languageproficiency.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="ae095-145">Exemplos</span><span class="sxs-lookup"><span data-stu-id="ae095-145">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="98bfc-167">Exemplos</span><span class="sxs-lookup"><span data-stu-id="98bfc-167">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="ae095-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ae095-146">Request</span></span>
+### <a name="request"></a><span data-ttu-id="98bfc-168">Solicitação</span><span class="sxs-lookup"><span data-stu-id="98bfc-168">Request</span></span>
 
-<span data-ttu-id="ae095-147">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="ae095-147">The following is an example of the request.</span></span>
+<span data-ttu-id="98bfc-169">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="98bfc-169">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ae095-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="ae095-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="98bfc-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="98bfc-170">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_languageproficiency"
@@ -76,30 +82,28 @@ PATCH https://graph.microsoft.com/beta/me/profile/languages/{id}
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "tag": "tag-value",
-  "proficiency": "proficiency-value"
+  "allowedAudiences": "organization"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="ae095-149">C#</span><span class="sxs-lookup"><span data-stu-id="ae095-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="98bfc-171">C#</span><span class="sxs-lookup"><span data-stu-id="98bfc-171">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-languageproficiency-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ae095-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ae095-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="98bfc-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="98bfc-172">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-languageproficiency-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ae095-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ae095-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="98bfc-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="98bfc-173">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-languageproficiency-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="ae095-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="ae095-152">Response</span></span>
+### <a name="response"></a><span data-ttu-id="98bfc-174">Resposta</span><span class="sxs-lookup"><span data-stu-id="98bfc-174">Response</span></span>
 
-<span data-ttu-id="ae095-153">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="ae095-153">The following is an example of the response.</span></span>
+<span data-ttu-id="98bfc-175">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="98bfc-175">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="ae095-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ae095-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="98bfc-p111">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="98bfc-p111">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -112,18 +116,32 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "tag": "tag-value",
-  "proficiency": "proficiency-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "displayName": "Norwegian Bokmål",
+  "tag": "nb-NO",
+  "spoken": "nativeOrBilingual",
+  "written": "nativeOrBilingual",
+  "reading": "nativeOrBilingual"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update languageproficiency",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

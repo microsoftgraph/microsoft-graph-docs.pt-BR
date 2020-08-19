@@ -2,32 +2,32 @@
 title: tipo de recurso scoredEmailAddress
 description: Representa um endereço de email pontuado.
 localization_priority: Normal
-author: ''
+author: AAmatino
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c16d9b2b6d88f651fa65375f0b8ea9418432cc73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 81fabe954a104663cfcd228bfc182549355bc3db
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533804"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806748"
 ---
-# <a name="scoredemailaddress-resource-type"></a><span data-ttu-id="472bb-103">tipo de recurso scoredEmailAddress</span><span class="sxs-lookup"><span data-stu-id="472bb-103">scoredEmailAddress resource type</span></span>
+# <a name="scoredemailaddress-resource-type"></a><span data-ttu-id="fa4d9-103">tipo de recurso scoredEmailAddress</span><span class="sxs-lookup"><span data-stu-id="fa4d9-103">scoredEmailAddress resource type</span></span>
 
-<span data-ttu-id="472bb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="472bb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fa4d9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fa4d9-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="472bb-105">Representa um endereço de email pontuado.</span><span class="sxs-lookup"><span data-stu-id="472bb-105">Represents a scored email address.</span></span>
+<span data-ttu-id="fa4d9-105">Representa um endereço de email pontuado.</span><span class="sxs-lookup"><span data-stu-id="fa4d9-105">Represents a scored email address.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="472bb-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="472bb-106">Properties</span></span>
-| <span data-ttu-id="472bb-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="472bb-107">Property</span></span>     | <span data-ttu-id="472bb-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="472bb-108">Type</span></span>   |<span data-ttu-id="472bb-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="472bb-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="fa4d9-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fa4d9-106">Properties</span></span>
+| <span data-ttu-id="fa4d9-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fa4d9-107">Property</span></span>     | <span data-ttu-id="fa4d9-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="fa4d9-108">Type</span></span>   |<span data-ttu-id="fa4d9-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="fa4d9-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="472bb-110">address</span><span class="sxs-lookup"><span data-stu-id="472bb-110">address</span></span>|<span data-ttu-id="472bb-111">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="472bb-111">string</span></span>|<span data-ttu-id="472bb-112">O endereço de email.</span><span class="sxs-lookup"><span data-stu-id="472bb-112">The email address.</span></span>|
-|<span data-ttu-id="472bb-113">relevanceScore</span><span class="sxs-lookup"><span data-stu-id="472bb-113">relevanceScore</span></span>|<span data-ttu-id="472bb-114">double</span><span class="sxs-lookup"><span data-stu-id="472bb-114">double</span></span>|<span data-ttu-id="472bb-p101">A pontuação de relevância do endereço de email. Uma pontuação de relevância é usada como uma chave de classificação em relação aos outros resultados retornados. Um valor mais alto de pontuação de relevância corresponde a um resultado mais relevante. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário.</span><span class="sxs-lookup"><span data-stu-id="472bb-p101">The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.</span></span> |
+|<span data-ttu-id="fa4d9-110">address</span><span class="sxs-lookup"><span data-stu-id="fa4d9-110">address</span></span>|<span data-ttu-id="fa4d9-111">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="fa4d9-111">string</span></span>|<span data-ttu-id="fa4d9-112">O endereço de email.</span><span class="sxs-lookup"><span data-stu-id="fa4d9-112">The email address.</span></span>|
+|<span data-ttu-id="fa4d9-113">relevanceScore</span><span class="sxs-lookup"><span data-stu-id="fa4d9-113">relevanceScore</span></span>|<span data-ttu-id="fa4d9-114">double</span><span class="sxs-lookup"><span data-stu-id="fa4d9-114">double</span></span>|<span data-ttu-id="fa4d9-p101">A pontuação de relevância do endereço de email. Uma pontuação de relevância é usada como uma chave de classificação em relação aos outros resultados retornados. Um valor mais alto de pontuação de relevância corresponde a um resultado mais relevante. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário.</span><span class="sxs-lookup"><span data-stu-id="fa4d9-p101">The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="472bb-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="472bb-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fa4d9-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="fa4d9-119">JSON representation</span></span>
 
-<span data-ttu-id="472bb-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="472bb-120">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="fa4d9-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="fa4d9-120">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

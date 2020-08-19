@@ -5,61 +5,79 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 16ffd76c33cf61d6e8ad7522d6e5978b9aad37dc
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 29d8bf6342dc1b1b07c7a07a1fe96dd399b5a8e8
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228627"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811599"
 ---
-# <a name="create-projectparticipation"></a><span data-ttu-id="d9d3d-103">Criar projectParticipation</span><span class="sxs-lookup"><span data-stu-id="d9d3d-103">Create projectParticipation</span></span>
+# <a name="create-projectparticipation"></a><span data-ttu-id="9430b-103">Criar projectParticipation</span><span class="sxs-lookup"><span data-stu-id="9430b-103">Create projectParticipation</span></span>
 
-<span data-ttu-id="d9d3d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d9d3d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9430b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9430b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d9d3d-105">Use esta API para criar um novo objeto [projectParticipation](../resources/projectParticipation.md) no [perfil](../resources/profile.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="d9d3d-105">Use this API to create a new [projectParticipation](../resources/projectParticipation.md) object in a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="9430b-105">Use esta API para criar um novo objeto [projectParticipation](../resources/projectParticipation.md) no [perfil](../resources/profile.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="9430b-105">Use this API to create a new [projectParticipation](../resources/projectParticipation.md) object in a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d9d3d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="d9d3d-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9430b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="9430b-106">Permissions</span></span>
 
-<span data-ttu-id="d9d3d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9430b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9430b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d9d3d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d9d3d-109">Permission type</span></span>                        | <span data-ttu-id="d9d3d-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d9d3d-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="9430b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9430b-109">Permission type</span></span>                        | <span data-ttu-id="9430b-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9430b-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="d9d3d-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d9d3d-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="d9d3d-112">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="d9d3d-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="d9d3d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d9d3d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d9d3d-114">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="d9d3d-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="d9d3d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d9d3d-115">Application</span></span>                            | <span data-ttu-id="d9d3d-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d9d3d-116">User.ReadWrite.All</span></span>                          |
+| <span data-ttu-id="9430b-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9430b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="9430b-112">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="9430b-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="9430b-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9430b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9430b-114">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="9430b-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="9430b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9430b-115">Application</span></span>                            | <span data-ttu-id="9430b-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9430b-116">User.ReadWrite.All</span></span>                          |
 
-## <a name="http-request"></a><span data-ttu-id="d9d3d-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d9d3d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9430b-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9430b-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /me/profile/projects
+POST /users/{id | userPrincipalName}/profile/projects
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d9d3d-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d9d3d-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9430b-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9430b-118">Request headers</span></span>
 
-| <span data-ttu-id="d9d3d-119">Nome</span><span class="sxs-lookup"><span data-stu-id="d9d3d-119">Name</span></span>           |<span data-ttu-id="d9d3d-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="d9d3d-120">Description</span></span>                  |
+| <span data-ttu-id="9430b-119">Nome</span><span class="sxs-lookup"><span data-stu-id="9430b-119">Name</span></span>           |<span data-ttu-id="9430b-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="9430b-120">Description</span></span>                  |
 |:---------------|:----------                  |
-| <span data-ttu-id="d9d3d-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="d9d3d-121">Authorization</span></span>  | <span data-ttu-id="d9d3d-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="d9d3d-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d9d3d-124">Content-Type</span></span>   | <span data-ttu-id="d9d3d-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="9430b-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="9430b-121">Authorization</span></span>  | <span data-ttu-id="9430b-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9430b-p102">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="9430b-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9430b-124">Content-Type</span></span>   | <span data-ttu-id="9430b-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9430b-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d9d3d-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d9d3d-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9430b-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9430b-127">Request body</span></span>
 
-<span data-ttu-id="d9d3d-128">No corpo da solicitação, forneça uma representação JSON do objeto [projectParticipation](../resources/projectparticipation.md) .</span><span class="sxs-lookup"><span data-stu-id="d9d3d-128">In the request body, supply a JSON representation of [projectParticipation](../resources/projectparticipation.md) object.</span></span>
+<span data-ttu-id="9430b-128">No corpo da solicitação, forneça uma representação JSON do objeto [projectParticipation](../resources/projectparticipation.md) .</span><span class="sxs-lookup"><span data-stu-id="9430b-128">In the request body, supply a JSON representation of [projectParticipation](../resources/projectparticipation.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d9d3d-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="d9d3d-129">Response</span></span>
+<span data-ttu-id="9430b-129">A tabela a seguir mostra as propriedades que são possíveis de definir quando você cria um novo objeto [projectParticipation](../resources/projectParticipation.md) no [perfil](../resources/profile.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="9430b-129">The following table shows the properties that are possible to set when you create a new [projectParticipation](../resources/projectParticipation.md) object in a user's [profile](../resources/profile.md).</span></span>
 
-<span data-ttu-id="d9d3d-130">Se bem-sucedido, este método retorna `201, Created` um código de resposta e um novo objeto [projectParticipation](../resources/projectparticipation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d9d3d-130">If successful, this method returns `201, Created` response code and a new [projectParticipation](../resources/projectparticipation.md) object in the response body.</span></span>
+|<span data-ttu-id="9430b-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9430b-130">Property</span></span>|<span data-ttu-id="9430b-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="9430b-131">Type</span></span>|<span data-ttu-id="9430b-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="9430b-132">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="9430b-133">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="9430b-133">allowedAudiences</span></span>|<span data-ttu-id="9430b-134">String</span><span class="sxs-lookup"><span data-stu-id="9430b-134">String</span></span>|<span data-ttu-id="9430b-135">As audiências que podem ver os valores contidos na entidade.</span><span class="sxs-lookup"><span data-stu-id="9430b-135">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="9430b-136">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="9430b-136">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="9430b-137">Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="9430b-137">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="9430b-138">categories</span><span class="sxs-lookup"><span data-stu-id="9430b-138">categories</span></span>|<span data-ttu-id="9430b-139">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="9430b-139">String collection</span></span>|<span data-ttu-id="9430b-140">Contém categorias que um usuário associou ao projeto (por exemplo, transformação digital, Rig óleo).</span><span class="sxs-lookup"><span data-stu-id="9430b-140">Contains categories a user has associated with the project (for example, digital transformation, oil rig).</span></span> |
+|<span data-ttu-id="9430b-141">clientes</span><span class="sxs-lookup"><span data-stu-id="9430b-141">client</span></span>|[<span data-ttu-id="9430b-142">companyDetail</span><span class="sxs-lookup"><span data-stu-id="9430b-142">companyDetail</span></span>](../resources/companydetail.md)|<span data-ttu-id="9430b-143">Contém informações detalhadas sobre o cliente para o qual o projeto foi.</span><span class="sxs-lookup"><span data-stu-id="9430b-143">Contains detailed information about the client the project was for.</span></span> |
+|<span data-ttu-id="9430b-144">collaborationTags</span><span class="sxs-lookup"><span data-stu-id="9430b-144">collaborationTags</span></span>|<span data-ttu-id="9430b-145">Coleção de cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="9430b-145">String collection</span></span>|<span data-ttu-id="9430b-146">Contém marcas de cenário de experiência que um usuário associou aos juros.</span><span class="sxs-lookup"><span data-stu-id="9430b-146">Contains experience scenario tags a user has associated with the interest.</span></span> <span data-ttu-id="9430b-147">Os valores permitidos na coleção são: `askMeAbout` , `ableToMentor` , `wantsToLearn` , `wantsToImprove` .</span><span class="sxs-lookup"><span data-stu-id="9430b-147">Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.</span></span>|
+|<span data-ttu-id="9430b-148">conhecidos</span><span class="sxs-lookup"><span data-stu-id="9430b-148">colleagues</span></span>|<span data-ttu-id="9430b-149">coleção [relatedPerson](../resources/relatedperson.md)</span><span class="sxs-lookup"><span data-stu-id="9430b-149">[relatedPerson](../resources/relatedperson.md) collection</span></span>|<span data-ttu-id="9430b-150">Lista as pessoas que também trabalharam no projeto.</span><span class="sxs-lookup"><span data-stu-id="9430b-150">Lists people that also worked on the project.</span></span> |
+|<span data-ttu-id="9430b-151">detalhada</span><span class="sxs-lookup"><span data-stu-id="9430b-151">detail</span></span>|[<span data-ttu-id="9430b-152">positionDetail</span><span class="sxs-lookup"><span data-stu-id="9430b-152">positionDetail</span></span>](../resources/positiondetail.md)|<span data-ttu-id="9430b-153">Contém detalhes sobre a função do usuário no projeto.</span><span class="sxs-lookup"><span data-stu-id="9430b-153">Contains detail about the user's role on the project.</span></span>|
+|<span data-ttu-id="9430b-154">displayName</span><span class="sxs-lookup"><span data-stu-id="9430b-154">displayName</span></span>|<span data-ttu-id="9430b-155">String</span><span class="sxs-lookup"><span data-stu-id="9430b-155">String</span></span>|<span data-ttu-id="9430b-156">Contém um nome amigável para o projeto.</span><span class="sxs-lookup"><span data-stu-id="9430b-156">Contains a friendly name for the project.</span></span>|
+|<span data-ttu-id="9430b-157">fracassa</span><span class="sxs-lookup"><span data-stu-id="9430b-157">inference</span></span>|[<span data-ttu-id="9430b-158">inferenceData</span><span class="sxs-lookup"><span data-stu-id="9430b-158">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="9430b-159">Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação.</span><span class="sxs-lookup"><span data-stu-id="9430b-159">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="9430b-160">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="9430b-160">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="9430b-161">source</span><span class="sxs-lookup"><span data-stu-id="9430b-161">source</span></span>|[<span data-ttu-id="9430b-162">personDataSource</span><span class="sxs-lookup"><span data-stu-id="9430b-162">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="9430b-163">Onde os valores são originados se forem sincronizados a partir de outro serviço.</span><span class="sxs-lookup"><span data-stu-id="9430b-163">Where the values originated if synced from another service.</span></span> <span data-ttu-id="9430b-164">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="9430b-164">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="9430b-165">responsáveis</span><span class="sxs-lookup"><span data-stu-id="9430b-165">sponsors</span></span>|<span data-ttu-id="9430b-166">coleção [relatedPerson](../resources/relatedperson.md)</span><span class="sxs-lookup"><span data-stu-id="9430b-166">[relatedPerson](../resources/relatedperson.md) collection</span></span>|<span data-ttu-id="9430b-167">A pessoa ou as pessoas que patrocinaram o projeto.</span><span class="sxs-lookup"><span data-stu-id="9430b-167">The Person or people who sponsored the project.</span></span>    |
 
-## <a name="examples"></a><span data-ttu-id="d9d3d-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="d9d3d-131">Examples</span></span>
+## <a name="relationships"></a><span data-ttu-id="9430b-168">Relações</span><span class="sxs-lookup"><span data-stu-id="9430b-168">Relationships</span></span>
 
-### <a name="request"></a><span data-ttu-id="d9d3d-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d9d3d-132">Request</span></span>
+## <a name="response"></a><span data-ttu-id="9430b-169">Resposta</span><span class="sxs-lookup"><span data-stu-id="9430b-169">Response</span></span>
 
-<span data-ttu-id="d9d3d-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d9d3d-133">The following is an example of the request.</span></span>
+<span data-ttu-id="9430b-170">Se bem-sucedido, este método retorna `201, Created` um código de resposta e um novo objeto [projectParticipation](../resources/projectparticipation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9430b-170">If successful, this method returns `201, Created` response code and a new [projectParticipation](../resources/projectparticipation.md) object in the response body.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="d9d3d-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="d9d3d-134">HTTP</span></span>](#tab/http)
+## <a name="examples"></a><span data-ttu-id="9430b-171">Exemplos</span><span class="sxs-lookup"><span data-stu-id="9430b-171">Examples</span></span>
+
+### <a name="request"></a><span data-ttu-id="9430b-172">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9430b-172">Request</span></span>
+
+<span data-ttu-id="9430b-173">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="9430b-173">The following is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="9430b-174">HTTP</span><span class="sxs-lookup"><span data-stu-id="9430b-174">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_projectparticipation_from_profile"
@@ -71,85 +89,47 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "Branding"
   ],
   "client": {
-    "displayName": "displayName-value",
-    "pronunciation": "pronunciation-value",
-    "department": "department-value",
-    "officeLocation": "officeLocation-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
+    "displayName": "Contoso Ltd.",
+    "department": "Corporate Marketing",
+    "webUrl": "https://www.contoso.com"
   },
-  "displayName": "displayName-value",
+  "displayName": "Contoso Re-branding Project",
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
+      "displayName": "Adventureworks Inc.",
+      "department": "Consulting",
+      "webUrl": "https://adventureworks.com"
     },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  },
-  "colleagues": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ],
-  "sponsors": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+    "description": "Rebranding of Contoso Ltd.",
+    "jobTitle": "Lead PM Rebranding",
+    "role": "project management",
+    "summary": "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
+  }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="d9d3d-135">C#</span><span class="sxs-lookup"><span data-stu-id="d9d3d-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9430b-175">C#</span><span class="sxs-lookup"><span data-stu-id="9430b-175">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-projectparticipation-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d9d3d-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d9d3d-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9430b-176">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9430b-176">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-projectparticipation-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d9d3d-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d9d3d-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9430b-177">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9430b-177">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-projectparticipation-from-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="d9d3d-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="d9d3d-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="9430b-178">Resposta</span><span class="sxs-lookup"><span data-stu-id="9430b-178">Response</span></span>
 
-<span data-ttu-id="d9d3d-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d9d3d-139">The following is an example of the response.</span></span>
+<span data-ttu-id="9430b-179">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="9430b-179">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="d9d3d-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="9430b-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9430b-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -162,73 +142,57 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
   "categories": [
-    "categories-value"
+    "Branding"
   ],
   "client": {
-    "displayName": "displayName-value",
-    "pronunciation": "pronunciation-value",
-    "department": "department-value",
-    "officeLocation": "officeLocation-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
+    "displayName": "Contoso Ltd.",
+    "pronunciation": null,
+    "department": "Corporate Marketing",
+    "officeLocation": null,
+    "address": null,
+    "webUrl": "https://www.contoso.com"
   },
-  "displayName": "displayName-value",
+  "displayName": "Contoso Re-branding Project",
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
+      "displayName": "Adventureworks Inc.",
+      "pronunciation": null,
+      "department": "Consulting",
+      "officeLocation": null,
+      "address": null,
+      "webUrl": "https://adventureworks.com"
     },
-    "description": "description-value",
+    "description": "Rebranding of Contoso Ltd.",
     "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
+    "jobTitle": "Lead PM Rebranding",
+    "role": "project management",
     "startMonthYear": "datetime-value",
-    "summary": "summary-value"
+    "summary": "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
   },
-  "colleagues": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ],
-  "sponsors": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+  "colleagues": null,
+  "sponsors": null
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create projectParticipation",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
