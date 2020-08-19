@@ -4,17 +4,17 @@ description: Um evento de risco detectado pela proteção de identidade do Azure
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 973c79b9e26c55aa5fd237162929c71a7bfee5f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: cloudhandler
+ms.openlocfilehash: 8f60c70170f0cb4a25c891e5555d663ec4d715c7
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520272"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808715"
 ---
 # <a name="suspiciousipriskevent-resource-type"></a>tipo de recurso suspiciousIpRiskEvent
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

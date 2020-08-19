@@ -4,13 +4,13 @@ description: Representa um anexo a uma entidade de mensagem de chat.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 1b9ddbb0b8dac124370b1d20ac42e3ab1da7d1e3
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+author: clearab
+ms.openlocfilehash: 3e20e730a4613fc893897a2698a7aa0eebdbbd0c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791080"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808771"
 ---
 # <a name="chatmessageattachment-resource-type"></a>tipo de recurso chatMessageAttachment
 

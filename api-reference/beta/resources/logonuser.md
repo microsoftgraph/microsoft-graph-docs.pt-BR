@@ -4,17 +4,17 @@ description: Contém informações de estado sobre o usuário conectado neste ho
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: b9a7bb439863a39ce165235b31642e542b1bb331
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: f480ff8c67c602512d7d8ef3f090366734f0ca7e
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522894"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808659"
 ---
 # <a name="logonuser-resource-type"></a>tipo de recurso logonUser
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Contém informações de estado sobre o usuário conectado neste host
 
@@ -28,7 +28,7 @@ Contém informações de estado sobre o usuário conectado neste host
 |firstSeenDateTime|DateTimeOffset|Data e hora em que o logon mais antigo por essa conta de usuário ocorreu (período determinado pelo provedor). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |lastSeenDateTime|DateTimeOffset|DateTime no qual a conta de usuário tem o logon mais recente. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |LogonId|String|ID de logon do usuário.|
-|Logontypesowner|String collection|Coleção dos tipos de logon observados para o usuário conectado da primeira vez para a última vista. Os possíveis valores são: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
+|Logontypesowner|Coleção de cadeia de caracteres|Coleção dos tipos de logon observados para o usuário conectado da primeira vez para a última vista. Os possíveis valores são: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

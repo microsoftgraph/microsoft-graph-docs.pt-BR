@@ -4,21 +4,21 @@ description: 'Uma imagem ou outro recurso de arquivo em uma página do OneNote. 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 0f87d5f9606f0d178d4a92ad6b4d3038799f5c5f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: jewan-microsoft
+ms.openlocfilehash: fc4f3962e5be1eeb69598548067b61aa86c9c246
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522320"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806272"
 ---
 # <a name="onenoteresource-resource-type"></a>tipo de recurso onenoteResource
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma imagem ou outro recurso de arquivo em uma página do OneNote. 
+Uma imagem ou outro recurso de arquivo em uma página do OneNote.
 
 Você pode obter os dados binários de um recurso, mas obter uma representação JSON de um objeto Resource ou uma coleção de recursos não é suportada.
 
@@ -51,10 +51,10 @@ GET ../onenote/pages/{id}/content
 
 Na página HTML, uma `img` marca inclui pontos de extremidade do recurso de imagem original no `data-fullres-src` atributo e a imagem otimizada no `src` atributo:
 ```
-<img 
-    src="image-resource-url"  
+<img
+    src="image-resource-url"
     data-src-type="media-type"
-    data-fullres-src="image-resource-url"  
+    data-fullres-src="image-resource-url"
     data-fullres-src-type="media-type" ... />
 ```
 
@@ -63,7 +63,7 @@ Uma `object` marca (que representa arquivos como PDF, docx e png) inclui o ponto
 ```
 <object
     data="file-resource-url"
-    data-attachment="file-name.file-type" 
+    data-attachment="file-name.file-type"
     type="media-type" ... />
 ```
 

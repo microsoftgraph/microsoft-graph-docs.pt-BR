@@ -4,17 +4,17 @@ description: Representa as configurações de uma função privilegiada.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: c072f75095267910d128396c3848b2decca4728c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: f1e213ff99f7d67894e4f764ea8862f9d3a8ce98
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521492"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807497"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>tipo de recurso privilegedRoleSettings
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

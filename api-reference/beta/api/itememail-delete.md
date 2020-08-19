@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 60f14889f40faedf0e6c8e75a4ff20382db7554c
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 2e129b4e32d277cc4dd61d118f69533e29302361
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510886"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808155"
 ---
 # <a name="delete-itememail"></a>Excluir email
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,7 +35,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/profile/emails/{id} 
+DELETE /me/profile/emails/{id}
+DELETE /users/{id | userPrincipalName}/profile/emails/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

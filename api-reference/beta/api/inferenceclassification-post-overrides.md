@@ -3,18 +3,18 @@ title: Criar inferenceClassificationOverride
 description: 'Criar uma substituição da Caixa de Entrada Destaques para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas '
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: svpsiva
 ms.prod: ''
-ms.openlocfilehash: 43ffae684306c928cb54e898be3df29b5031b72a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 037935618b3662285405e1bbe0cb47cfe20fdd1e
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446415"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807238"
 ---
 # <a name="create-inferenceclassificationoverride"></a>Criar inferenceClassificationOverride
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -4,17 +4,17 @@ description: Uma configuração representada por um par de nome/valor.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 673627d726475708c79445f818f23104f0582ef7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: dkershaw10
+ms.openlocfilehash: 1710bd136391a8c7d6d38217cb1635407570086f
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520819"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806247"
 ---
 # <a name="settingvalue-resource-type"></a>tipo de recurso SettingValue
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

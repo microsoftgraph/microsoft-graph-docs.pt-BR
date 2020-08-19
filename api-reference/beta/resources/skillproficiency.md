@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 7c8b5a3711c7abdbbdd8ddba8f7a36c85978718b
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 3d919e8423904a3b67dfdacc0921d20ccdb4243a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228870"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807406"
 ---
 # <a name="skillproficiency-resource-type"></a>tipo de recurso skillProficiency
 
@@ -24,53 +24,71 @@ Herda de [Myfacet](itemfacet.md).
 
 ## <a name="methods"></a>Métodos
  
-| Método                                                         | Tipo de retorno                             | Descrição                                                             |
-|:---------------------------------------------------------------|:----------------------------------------|:------------------------------------------------------------------------|
-| [Obter skillProficiency](../api/skillproficiency-get.md)         | [skillProficiency](skillproficiency.md) | Leia as propriedades e os relacionamentos de um objeto **skillProficiency** . |
-| [Atualizar skillProficiency](../api/skillproficiency-update.md)   | [skillProficiency](skillproficiency.md) | Atualizar um objeto **skillProficiency** .                                   |
-| [Excluir skillProficiency](../api/skillproficiency-delete.md)   | Nenhum                                    | Excluir um objeto **skillProficiency** .                                   |
+|Método|Tipo de retorno|Descrição|
+|:---|:---|:---|
+|[Listar qualificações](../api/profile-list-skills.md)|coleção [skillProficiency](../resources/skillproficiency.md)|Obtenha os recursos skillProficiency da propriedade de navegação de habilidades.|
+|[Criar skillProficiency ](../api/profile-post-skills.md)|[skillProficiency](../resources/skillproficiency.md)|Criar um novo objeto skillProficiency.|
+|[Obter skillProficiency](../api/skillproficiency-get.md)|[skillProficiency](../resources/skillproficiency.md)|Leia as propriedades e os relacionamentos de um objeto [skillProficiency](../resources/skillproficiency.md) .|
+|[Atualizar skillProficiency](../api/skillproficiency-update.md)|[skillProficiency](../resources/skillproficiency.md)|Atualiza as propriedades de um objeto [skillProficiency](../resources/skillproficiency.md) .|
+|[Excluir skillProficiency](../api/skillproficiency-delete.md)|Nenhum|Exclui um objeto [skillProficiency](../resources/skillproficiency.md) .|
 
 ## <a name="properties"></a>Propriedades
-
-| Propriedade     | Tipo             | Descrição                                                                                                                        |
-|:-------------|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-|categories    |String collection | Contém categorias que um usuário associou à habilidade (por exemplo, pessoal, profissional, hobby).                             |
-|displayName   |Cadeia de caracteres            | Contém um nome amigável para a habilidade.                                                                                            |
-|proficiência   |string            | Os possíveis valores são: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
-|webUrl        |String            | Contém um link para uma fonte de informações sobre a habilidade.                                                                          |
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|Coleção de cadeias de caracteres|Contém categorias que um usuário associou à habilidade (por exemplo, pessoal, profissional, hobby). |
+|collaborationTags|Coleção de cadeia de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` , `ableToMentor` , `wantsToLearn` , `wantsToImprove` .|
+|createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado de [MyFace](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
+|displayName|String|Contém um nome amigável para a habilidade. |
+|id|String|Identificador usado para o endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
+|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado de [MyFace](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
+|proficiência|skillProficiencyLevel|Detalhes da proficiência dos usuários com esta habilidade. Os possíveis valores são: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
+|webUrl|String|Contém um link para uma fonte de informações sobre a habilidade. |
 
 ## <a name="relationships"></a>Relações
-
 Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
-
 Veja a seguir uma representação JSON do recurso.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.skillProficiency",
-  "baseType": ""
-}-->
-
-```json
+  "baseType": "microsoft.graph.itemFacet",
+  "openType": false
+}
+-->
+``` json
 {
-  "categories": ["String"],
+  "@odata.type": "#microsoft.graph.skillProficiency",
+  "id": "String (identifier)",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
+  "categories": [
+    "String"
+  ],
   "displayName": "String",
-  "proficiency": "string",
-  "webUrl": "String"
+  "proficiency": "String",
+  "webUrl": "String",
+  "collaborationTags": [
+    "String"
+  ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "skillProficiency resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

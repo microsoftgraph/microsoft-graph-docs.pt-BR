@@ -5,20 +5,20 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 3c58277561084715c73d1ab304f7360874432b02
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8362b22678a463bae545a7c32fbfca2fe2f4d88c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455911"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809254"
 ---
 # <a name="delete-personinterest"></a>Excluir personInterest
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [personInterest](../resources/personinterest.md) do [perfil](../resources/profile.md)do usuário.
+Exclui um objeto [personInterest](../resources/personinterest.md) do [perfil](../resources/profile.md)de um usuário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -36,6 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 DELETE /me/profile/interests/{id}
+DELETE /users/{id | userPrincipalName}/profile/interests/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -94,13 +95,3 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete personInterest",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

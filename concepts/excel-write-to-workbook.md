@@ -4,12 +4,12 @@ description: q=excelstarter).
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 1dd914289342a80a3efbe258a0bfad30506d63f1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 0f78069ae88cfcc7ac7ab18cd17f0ace61d24631
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793665"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806727"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>Gravar dados em uma pasta de trabalho do Excel com o Microsoft Graph
 
@@ -31,12 +31,14 @@ Para saber mais sobre como acessar arquivos em pastas do OneDrive, confira o [ti
 
 O corpo da POSTAGEM tem a seguinte aparência:
 
-`{
+```json
+{
   "index": null,
   "values": [
     ['alex darrow', 'adarrow@tenant.onmicrosoft.com']
   ]
-}`
+}
+```
 
 O valor do primeiro parâmetro `index` especifica a posição relativa da linha que você está adicionando à matriz indexada com zero de linhas. As linhas abaixo da linha inserida serão deslocadas para baixo. O parâmetro `null` indica que a nova linha será adicionada ao fim.
 
@@ -52,52 +54,56 @@ Você encontrará o código ASP.NET que cria e envia a solicitação nos arquivo
 
 O arquivo `GraphResources.cs` fornece uma classe de ajuda para encapsular dados usuário que você está recuperando do Microsoft Graph e o corpo da solicitação que você usará quando gravar em sua pasta de trabalho.
 
-    public class UserInfo
-    {
-        public string Name { get; set; }
-        public string Address { get; set; }
+```csharp
+public class UserInfo
+{
+    public string Name { get; set; }
+    public string Address { get; set; }
 
-    }
+}
 
-    public class UserInfoRequest
-    {
-        public string index { get; set; }
-        public string[][] values { get; set; }
-    }
+public class UserInfoRequest
+{
+    public string index { get; set; }
+    public string[][] values { get; set; }
+}
+```
 
 A classe `GraphService.cs` contém um método `AddInfoToExcel` que popula essas classes, serializa as informações de solicitação em um objeto JSON e passa o objeto como o corpo da solicitação da POSTAGEM.
 
-        public async Task<string> AddInfoToExcel(string accessToken, string name, string address)
+```csharp
+public async Task<string> AddInfoToExcel(string accessToken, string name, string address)
+{
+    string endpoint = "https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add";
+    using (var client = new HttpClient())
+    {
+        using (var request = new HttpRequestMessage(HttpMethod.Post, endpoint))
         {
-            string endpoint = "https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add";
-            using (var client = new HttpClient())
+            // Populate UserInfoRequest object
+            string[] userInfo = { name, address  };
+            string[][] userInfoArray = { userInfo };
+            UserInfoRequest userInfoRequest = new UserInfoRequest();
+            userInfoRequest.index = null;
+            userInfoRequest.values = userInfoArray;
+
+            // Serialize the information in the UserInfoRequest object
+            string jsonBody = JsonConvert.SerializeObject(userInfoRequest);
+            request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+            request.Content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
+
+            using (var response = await client.SendAsync(request))
             {
-                using (var request = new HttpRequestMessage(HttpMethod.Post, endpoint))
+                if (response.IsSuccessStatusCode)
                 {
-                    // Populate UserInfoRequest object
-                    string[] userInfo = { name, address  };
-                    string[][] userInfoArray = { userInfo };
-                    UserInfoRequest userInfoRequest = new UserInfoRequest();
-                    userInfoRequest.index = null;
-                    userInfoRequest.values = userInfoArray;
-
-                    // Serialize the information in the UserInfoRequest object
-                    string jsonBody = JsonConvert.SerializeObject(userInfoRequest);
-                    request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-                    request.Content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
-
-                    using (var response = await client.SendAsync(request))
-                    {
-                        if (response.IsSuccessStatusCode)
-                        {
-                            return Resource.Graph_UploadToExcel_Success_Result;
-                        }
-                        return response.ReasonPhrase;
-                    }
+                    return Resource.Graph_UploadToExcel_Success_Result;
                 }
+                return response.ReasonPhrase;
             }
         }
+    }
+}
+```
 
 ## <a name="add-a-row-or-rows-to-an-excel-workbook-in-angular"></a>Adicionar uma linha ou linhas a uma pasta de trabalho do Excel em Angular
 
@@ -107,25 +113,27 @@ Como este exemplo usa TypeScript, ele tira proveito da [Biblioteca de Cliente de
 
 A função `addInfoToExcel` no arquivo `home.service.ts` cria a matriz de cadeia de caracteres bidimensional e o corpo da solicitação que contém a matriz. Ela usa então a Biblioteca de Cliente de JavaScript do Microsoft Graph para criar e enviar a solicitação. A resposta volta vem na forma de uma Promessa.
 
-      addInfoToExcel(user: MicrosoftGraph.User) {
-        const userInfo = [];
-        const userEmail = user.mail || user.userPrincipalName;    
-        userInfo.push([user.displayName, userEmail]);
+```typescript
+addInfoToExcel(user: MicrosoftGraph.User) {
+  const userInfo = [];
+  const userEmail = user.mail || user.userPrincipalName;
+  userInfo.push([user.displayName, userEmail]);
 
-        const userInfoRequestBody = {
-          index: null,
-          values: userInfo
-        };   
+  const userInfoRequestBody = {
+    index: null,
+    values: userInfo
+  };
 
-        const body = JSON.stringify(userInfoRequestBody);
+  const body = JSON.stringify(userInfoRequestBody);
 
-        var client = this.getClient();
-        var url = `${this.url}/me/drive/root:/${this.file}:/workbook/tables/${this.table}/rows/add`
-        return Observable.fromPromise(client
-        .api(url)
-        .post(body)
-        );
-      }
+  var client = this.getClient();
+  var url = `${this.url}/me/drive/root:/${this.file}:/workbook/tables/${this.table}/rows/add`
+  return Observable.fromPromise(client
+  .api(url)
+  .post(body)
+  );
+}
+```
 
 ## <a name="add-a-row-or-rows-to-an-excel-workbook-in-react"></a>Adicionar uma linha ou linhas a uma pasta de trabalho do Excel em React
 
@@ -133,26 +141,28 @@ Você encontrará o código que cria e envia a solicitação no [arquivo home.js
 
 A função `onWriteToExcel` cria a matriz de cadeia de caracteres bidimensional e a passa como o corpo da solicitação. Ela usa [axios](https://www.npmjs.com/package/axios) para fazer a solicitação HTTP.
 
-      onWriteToExcel() {
-        const { token, me } = this.state;
+```typescript
+onWriteToExcel() {
+  const { token, me } = this.state;
 
-        const myEmailAddress = me.mail || me.userPrincipalName;
-        const values = [];
+  const myEmailAddress = me.mail || me.userPrincipalName;
+  const values = [];
 
-        values.push([me.displayName, myEmailAddress]);
+  values.push([me.displayName, myEmailAddress]);
 
-        axios
-          .post('https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add',
-            { index: null, values },
-            { headers: { Authorization: `Bearer ${token}` }}
-          )
-          .then(res => {
-                          console.log(res);
-                          const successMessage = "Successfully wrote your data to demo.xlsx!";
-                          this.setState ({ successMessage });
-                         })
-          .catch(err => console.error(err));
-      }
+  axios
+    .post('https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add',
+      { index: null, values },
+      { headers: { Authorization: `Bearer ${token}` }}
+    )
+    .then(res => {
+                    console.log(res);
+                    const successMessage = "Successfully wrote your data to demo.xlsx!";
+                    this.setState ({ successMessage });
+                    })
+    .catch(err => console.error(err));
+}
+```
 
 ## <a name="see-also"></a>Confira também
 
@@ -160,4 +170,4 @@ A função `onWriteToExcel` cria a matriz de cadeia de caracteres bidimensional 
 * [Usar funções de pasta de trabalho do Excel com o Microsoft Graph](excel-use-functions.md)
 * [Atualizar um formato de intervalo no Excel com o Microsoft Graph](excel-update-range-format.md)
 * [Exibir uma imagem do gráfico do Excel com o Microsoft Graph](excel-display-chart-image.md)
-* [Usar a API REST do Excel](/graph/api/resources/excel?view=graph-rest-1.0)    
+* [Usar a API REST do Excel](/graph/api/resources/excel?view=graph-rest-1.0)

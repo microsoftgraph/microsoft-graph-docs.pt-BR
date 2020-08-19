@@ -4,17 +4,17 @@ description: Especifica quando um fuso horário muda do horário de verão para 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: a547329bc6f82ec76d0efc44d7a9e1ffb7700389
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: c2b07742e06fe2eda8cdf0b972ae1a0e3abda08d
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520328"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807882"
 ---
 # <a name="standardtimezoneoffset-resource-type"></a>Tipo de recurso standardTimeZoneOffset
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

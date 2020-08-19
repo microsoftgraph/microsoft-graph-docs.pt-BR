@@ -4,17 +4,17 @@ description: Um tipo complexo para representar a propriedade de **atribuição**
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: 4b10536af68a20bd5c92da132406fe7dd8ee65b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: a57155a880e9ba4e00dd9a4d17ddae3742bbaa8e
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521408"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807476"
 ---
 # <a name="imageinfo-resource-type"></a>tipo de recurso imageInfo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Um tipo complexo para representar a propriedade de **atribuição** na parte [vi
 |:----|:-----|:-----------|
 |iconUrl | String | Opcion URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade|
 |alternateText | String | Opcion Alt-conteúdo de texto acessível para a imagem|
-|addImageQuery | Boolean | Opcion parâmetro usado para indicar que o servidor é capaz de renderizar a imagem dinamicamente em resposta à parametrização. Por exemplo, uma imagem de alto contraste|
+|addImageQuery | Booliano | Opcion parâmetro usado para indicar que o servidor é capaz de renderizar a imagem dinamicamente em resposta à parametrização. Por exemplo, uma imagem de alto contraste|
 
 ## <a name="json-representation"></a>Representação JSON
 

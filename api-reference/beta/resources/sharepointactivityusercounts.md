@@ -4,17 +4,17 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: 21690f1fa42da4bfa0e2a9c2df48691f00a9595c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: JeremyKelley
+ms.openlocfilehash: 70e56c30355620e1cc69f258d777e5040c9387e7
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520699"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807119"
 ---
 # <a name="sharepointactivityusercounts-resource-type"></a>tipo de recurso sharePointActivityUserCounts
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,13 +40,13 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "visitedPage": 1024, 
-  "viewedOrEdited": 1024, 
-  "synced": 1024, 
-  "sharedInternally": 1024, 
-  "sharedExternally": 1024, 
-  "reportDate": "Date", 
+  "reportRefreshDate": "Date",
+  "visitedPage": 1024,
+  "viewedOrEdited": 1024,
+  "synced": 1024,
+  "sharedInternally": 1024,
+  "sharedExternally": 1024,
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```

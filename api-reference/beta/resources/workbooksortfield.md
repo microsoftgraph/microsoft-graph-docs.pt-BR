@@ -4,17 +4,17 @@ description: Representa uma condição em uma operação de classificação.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
-author: ''
-ms.openlocfilehash: adcebc20b39d40ef283d25cfd2a8c247160580eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: d5622a727ed084f7dc8e991dd76b166527988549
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519138"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807364"
 ---
 # <a name="workbooksortfield-resource-type"></a>tipo de recurso workbookSortField
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +24,8 @@ Representa uma condição em uma operação de classificação.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |ascending|booliano|Indica se a classificação é feita de forma crescente.|
-|color|string|Representa a cor que é o destino da condição se a classificação estiver na cor da fonte ou da célula.|
-|dataOption|string|Representa as opções de classificação adicionais para esse campo. Os valores possíveis são: `Normal` e `TextAsNumber`.|
+|color|cadeia de caracteres|Representa a cor que é o destino da condição se a classificação estiver na cor da fonte ou da célula.|
+|dataOption|cadeia de caracteres|Representa as opções de classificação adicionais para esse campo. Os valores possíveis são: `Normal` e `TextAsNumber`.|
 |key|int|Representa a coluna (ou linha, dependendo da orientação da classificação) em que a condição está. Representado como um deslocamento da primeira coluna (ou linha).|
 |sortOn|string|Representa o tipo de classificação dessa condição. Os valores possíveis são: `Value`, `CellColor`, `FontColor` e `Icon`.|
 

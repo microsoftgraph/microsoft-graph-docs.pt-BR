@@ -4,17 +4,17 @@ description: Contém informações com monitoração de hash de arquivo (criptog
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: a163a89e1e7ca7cb2a6bdf4c65945a601323d8fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 670addd8cc244ed5c97ceaca0b9544382d80ec92
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498235"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806580"
 ---
 # <a name="filehash-resource-type"></a>tipo de recurso FileHash
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Contém informações com monitoração de hash de arquivo (criptografia e confidencialidade de local).
 

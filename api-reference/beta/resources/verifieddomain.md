@@ -4,17 +4,17 @@ description: Especifica um domínio de um locatário. A propriedade **verifiedDo
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 63e1f2af238aa05fbe5918ff3fc54b5a292aef21
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.openlocfilehash: 18216eb54ed8efe2f6320216459807a6167a7107
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519481"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809095"
 ---
 # <a name="verifieddomain-resource-type"></a>Tipo de recurso verifiedDomain
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Especifica um domínio de um locatário. A propriedade **verifiedDomains** da en
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |capabilities|Cadeia de caracteres|Por exemplo, "Email" ou "OfficeCommunicationsOnline".|
-|isDefault|Boolean|                **true** se este é o domínio padrão associado ao locatário; caso contrário, **false**.            |
+|isDefault|Booliano|                **true** se este é o domínio padrão associado ao locatário; caso contrário, **false**.            |
 |isinitial|Booliano|**true** se esse é o domínio inicial associado ao locatário; caso contrário, **false**|
 |nome|String|O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.|
 |type|String|Por exemplo, "Managed".|

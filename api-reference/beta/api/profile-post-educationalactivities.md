@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9da437b7bc53d1d42c2d1f8fcc33d76925c8c8ef
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 9725e105b59fe941d1842f6cdb49da6d457be6a9
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229343"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808022"
 ---
 # <a name="create-educationalactivity"></a>Criar educationalActivity
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -36,6 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 POST /user/profile/educationalActivities
+POST /users/{id | userPrincipalName}/profile/educationalActivities
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -49,9 +50,22 @@ POST /user/profile/educationalActivities
 
 No corpo da solicitação, forneça uma representação JSON de um objeto [educationalActivity](../resources/educationalactivity.md) .
 
+A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo objeto [educationalActivity](../resources/educationalactivity.md) no [perfil](../resources/profile.md)de um usuário.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|completionMonthYear|Data|O mês e o ano em que o usuário formou ou concluiu a atividade. |
+|endMonthYear|Data|O mês e o ano em que o usuário concluiu a atividade educacional referenciada.|
+|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
+|instituição|[institutionData](../resources/institutiondata.md)|Contém detalhes da instituição estudada em. |
+|programa|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contém informações estendidas sobre o programa ou o curso.|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
+|startMonthYear|Data|O mês e o ano em que o usuário tiver iniciado a atividade referenciada.|
+
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [educationalActivity](../resources/educationalactivity.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [educationalActivity](../resources/educationalactivity.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -70,34 +84,34 @@ POST /me/profile/educationalActivities
 Content-type: application/json
 
 {
-  "completionMonthYear": "datetime-value",
-  "endMonthYear": "datetime-value",
+  "completionMonthYear": "Date",
+  "endMonthYear": "Date",
   "institution": {
-    "description": "description-value",
-    "displayName": "displayName-value",
+    "description": null,
+    "displayName": "Colorado State University",
     "location": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
+      "type": "business",
+      "postOfficeBox": null,
+      "street": "12000 E Prospect Rd",
+      "city": "Fort Collins",
+      "state": "Colorado",
+      "countryOrRegion": "USA",
+      "postalCode": "80525"
     },
-    "webUrl": "webUrl-value"
+    "webUrl": "https://www.colostate.edu"
   },
   "program": {
-    "abbreviation": "abbreviation-value",
-    "activities": "activities-value",
-    "awards": "awards-value",
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "fieldsOfStudy": "fieldsOfStudy-value",
-    "grade": "grade-value",
-    "notes": "notes-value",
-    "webUrl": "webUrl-value"
+    "abbreviation": "MBA",
+    "activities": null,
+    "awards": null,
+    "description": "Master of Business Administration with a major in Entreprenuership and Finance.",
+    "displayName": "Master of Business Administration",
+    "fieldsOfStudy": null,
+    "grade": "3.9",
+    "notes": null,
+    "webUrl": "https://biz.colostate.edu"
   },
-  "startMonthYear": "datetime-value"
+  "startMonthYear": "Date"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -132,43 +146,55 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "completionMonthYear": "datetime-value",
-  "endMonthYear": "datetime-value",
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "completionMonthYear": "Date",
+  "endMonthYear": "Date",
   "institution": {
-    "description": "description-value",
-    "displayName": "displayName-value",
+    "description": null,
+    "displayName": "Colorado State University",
     "location": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
+      "type": "business",
+      "postOfficeBox": null,
+      "street": "12000 E Prospect Rd",
+      "city": "Fort Collins",
+      "state": "Colorado",
+      "countryOrRegion": "USA",
+      "postalCode": "80525"
     },
-    "webUrl": "webUrl-value"
+    "webUrl": "https://www.colostate.edu"
   },
   "program": {
-    "abbreviation": "abbreviation-value",
-    "activities": "activities-value",
-    "awards": "awards-value",
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "fieldsOfStudy": "fieldsOfStudy-value",
-    "grade": "grade-value",
-    "notes": "notes-value",
-    "webUrl": "webUrl-value"
+    "abbreviation": "MBA",
+    "activities": null,
+    "awards": null,
+    "description": "Master of Business Administration with a major in Entreprenuership and Finance.",
+    "displayName": "Master of Business Administration",
+    "fieldsOfStudy": null,
+    "grade": "3.9",
+    "notes": null,
+    "webUrl": "https://biz.colostate.edu"
   },
-  "startMonthYear": "datetime-value"
+  "startMonthYear": "Date"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create educationalActivity",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

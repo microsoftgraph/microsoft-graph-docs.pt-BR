@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 49f80dec9931c73bc42862cb682c1600fd39a4fe
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 3af846c2af807a19410a4671625ed47d637f35b3
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630295"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808785"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -48,21 +48,21 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID exclusiva da mensagem.|
-|replyToId| cadeia de caracteres | Somente leitura. ID da mensagem de chat pai ou mensagem de chat raiz do thread. (Aplicável somente a mensagens de chat em canais que não sejam chats) |
+|replyToId| string | Somente leitura. ID da mensagem de chat pai ou mensagem de chat raiz do thread. (Aplicável somente a mensagens de chat em canais que não sejam chats) |
 |from|[identitySet](identityset.md)| Somente leitura. Detalhes do remetente da mensagem de chat.|
-|etag| cadeia de caracteres | Somente leitura. Número de versão da mensagem de chat. |
-|messageType|cadeia de caracteres|O tipo de mensagem de chat. Os valores possíveis são: `message` .|
+|etag| string | Somente leitura. Número de versão da mensagem de chat. |
+|messageType|string|O tipo de mensagem de chat. Os valores possíveis são: `message` .|
 |createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem de chat foi criada.|
 |lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem de chat é criada ou editada, incluindo quando uma resposta é feita (se é uma mensagem de chat raiz em um canal) ou uma reação é adicionada ou removida. |
 |deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora em que a mensagem de chat foi excluída ou nula se não for excluída. |
-|assunto|cadeia de caracteres| O assunto da mensagem de chat, em texto não criptografado.|
-|body|[itemBody](itembody.md)|Representação de texto não criptografado/HTML do conteúdo da mensagem de chat. A representação é especificada pelo contentType dentro do corpo. O conteúdo estará sempre em HTML se a mensagem de chat contiver um [chatMessageMention](chatmessagemention.md). |
-|summary|cadeia de caracteres| Texto de resumo da mensagem de chat que pode ser usado para notificações por push e visualizações de resumo ou exibições de retorno. Aplica-se somente a mensagens de chat de canal, e não a mensagens de chat em um chat. |
+|assunto|string| O assunto da mensagem de chat, em texto não criptografado.|
+|corpo|[itemBody](itembody.md)|Representação de texto não criptografado/HTML do conteúdo da mensagem de chat. A representação é especificada pelo contentType dentro do corpo. O conteúdo estará sempre em HTML se a mensagem de chat contiver um [chatMessageMention](chatmessagemention.md). |
+|summary|string| Texto de resumo da mensagem de chat que pode ser usado para notificações por push e visualizações de resumo ou exibições de retorno. Aplica-se somente a mensagens de chat de canal, e não a mensagens de chat em um chat. |
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Arquivos anexos. No momento, os anexos são somente leitura, não há suporte para o envio de anexos. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| Lista de entidades mencionadas na mensagem de chat. Atualmente, dá suporte a usuário, bot, equipe, canal.|
-|importância|cadeia de caracteres | A importância da mensagem de chat. Os valores possíveis são: `normal`, `high`, `urgent`.|
+|importância|string | A importância da mensagem de chat. Os valores possíveis são: `normal`, `high`, `urgent`.|
 |reactions| [chatMessageReaction](./chatmessagereaction.md) collection | Reações para esta mensagem de chat (por exemplo, como).|
-|localidade|cadeia de caracteres|Local da mensagem de chat definida pelo cliente.|
+|localidade|string|Local da mensagem de chat definida pelo cliente.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -105,7 +105,6 @@ Veja a seguir uma representação JSON do recurso.
   "locale": "string",
   "deleted": true
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

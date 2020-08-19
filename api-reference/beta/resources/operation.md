@@ -4,17 +4,17 @@ description: O status de uma operação de execução longa.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 44d1bdfdca902652d77d978b0eae4cffdf359f39
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: billbliss
+ms.openlocfilehash: e94970609c2ccfb99e61b254b080e1dbaa244ba6
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522155"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809310"
 ---
 # <a name="operation-resource-type"></a>tipo de recurso Operation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ Nenhum
 | Propriedade           | Tipo            | Descrição                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | A hora de início da operação.                                                |
-| id                 | Cadeia de caracteres          | A ID da operação. Somente leitura. Servidor gerado.                                  |
+| id                 | String          | A ID da operação. Somente leitura. Servidor gerado.                                  |
 | lastActionDateTime | DateTimeOffset  | A hora da última ação da operação.                                   |
 | status             | String          | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. |
 

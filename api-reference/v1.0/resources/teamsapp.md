@@ -5,20 +5,18 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5a7cae3ba43915f8dd024e3a9260876adb3ac2a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2307bd50509cc1a44ee4de0a30309a2be98dcb3e
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533510"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791670"
 ---
 # <a name="teamsapp-resource-type"></a>tipo de recurso teamsApp
 
 Namespace: microsoft.graph
 
-
-
-Um aplicativo no catálogo de aplicativos do [Microsoft Teams](teams-api-overview.md).
+Representa um aplicativo no catálogo de aplicativos do [Microsoft Teams](teams-api-overview.md).
 
 Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplicativos podem ser instalados nas [equipes](team.md) usando o método [Adicionar aplicativo à equipe](../api/teamsappinstallation-add.md).
 
@@ -29,7 +27,7 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 |[Lista de aplicativos publicados](../api/teamsapp-list.md) | Coleção [teamsApp](teamsapp.md) | Lista de aplicativos publicados do catálogo de aplicativos do Microsoft Teams.|
 |[Publicar um aplicativo](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Publica um aplicativo ao catálogo de aplicativos da sua organização.|
 |[Atualizar um aplicativo publicado](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Atualize um aplicativo publicado no catálogo de aplicativos da sua organização.|
-|[Remover um aplicativo publicado](../api/teamsapp-delete.md) | Nenhum | Remova um aplicativo publicado do catálogo de aplicativos da sua organização.|
+|[Apagar um aplicativo publicado](../api/teamsapp-delete.md) | Nenhum(a) | Remova um aplicativo publicado do catálogo de aplicativos da sua organização.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -38,7 +36,7 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 | id                  | string   | A ID do aplicativo gerada no catálogo de aplicativos (diferente da ID fornecida pelo desenvolvedor em [pacote de aplicativos compactados do Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
 | externalId          | cadeia de caracteres   | A ID do catálogo fornecido pelo desenvolvedor do aplicativo do [pacote de aplicativos compactados do Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
 | displayName                | string   | O nome do catálogo de aplicativos fornecido pelo desenvolvedor do aplicativo no [pacote de aplicativos compactados do Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
-| distributionMethod  | teamsAppDistributionMethod     | O método de distribuição para o aplicativo. |
+| distributionMethod  | teamsAppDistributionMethod     | O método de distribuição para o aplicativo. Somente leitura.|
 
 ### <a name="teamsappdistributionmethod-values"></a>valores teamsAppDistributionMethod
 
@@ -66,8 +64,8 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 {
   "id": "string",
   "externalId": "string",
-  "displayName": "Test App",
-  "distributionMethod": "Organization"
+  "displayName": "string",
+  "distributionMethod": "string"
 }
 ```
 

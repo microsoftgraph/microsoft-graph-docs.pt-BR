@@ -3,18 +3,18 @@ title: Obter o status de comando do dispositivo
 description: Obter o status de um comando em um dispositivo. Para obter a lista completa de códigos de status, confira lista de actionStatus.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: ailae
 ms.prod: ''
-ms.openlocfilehash: fee9b291145bce2e5cca4bc54405a833e95ec053
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 33470cb5aceb402d6a37749fa8c2ebcfcd0bce75
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421435"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807329"
 ---
 # <a name="get-device-command-status"></a>Obter o status de comando do dispositivo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Sem suporte.    |
 |Delegado (conta pessoal da Microsoft) | Device.Command    |
 |Aplicativo | Sem suporte. |
 
@@ -87,7 +87,7 @@ HTTP/1.1 200 OK
 
 ## <a name="example"></a>Exemplo
 
-Neste exemplo, você precisará da ID do dispositivo e da ID do comando que foi emitido para um dispositivo. A ID do dispositivo é retornada ao emitir uma chamada GET para `/me/devices`, e a ID do comando é retornada ao realizar uma chamada post `/me/devices/{id}/command`em.
+Neste exemplo, você precisará da ID do dispositivo e da ID do comando que foi emitido para um dispositivo. A ID do dispositivo é retornada ao emitir uma chamada GET para `/me/devices` , e a ID do comando é retornada ao realizar uma chamada post em `/me/devices/{id}/command` .
 
 #### <a name="request"></a>Solicitação
 
@@ -143,7 +143,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Sem suporte.    |
 |Delegado (conta pessoal da Microsoft) | Device.Command    |
 |Aplicativo | Sem suporte. |
 
@@ -181,13 +181,13 @@ HTTP/1.1 200 OK
 
 ### <a name="example"></a>Exemplo
 
-Neste exemplo, você precisará da ID do dispositivo e da ID do comando que foi emitido para um dispositivo. A ID do dispositivo é retornada ao emitir uma chamada GET em `/me/devices`e a ID do comando é retornada ao executar uma chamada post em `/me/devices/{id}/command`.
+Neste exemplo, você precisará da ID do dispositivo e da ID do comando que foi emitido para um dispositivo. A ID do dispositivo é retornada ao emitir uma chamada GET em `/me/devices` e a ID do comando é retornada ao executar uma chamada post em `/me/devices/{id}/command` .
 
 #### <a name="request"></a>Solicitação
 
 O exemplo a seguir mostra a solicitação.
 
-<!-- { 
+<!-- {
   "blockType": "ignored",
   "name": "get_command_payload"
 } -->

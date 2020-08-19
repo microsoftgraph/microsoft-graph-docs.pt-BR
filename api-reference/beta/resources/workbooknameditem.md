@@ -4,13 +4,13 @@ description: Representa um nome definido para um intervalo de células ou um val
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
-author: ''
-ms.openlocfilehash: 17b9e7a04a2524febcb949829b626bc6efe6b779
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: 5d308669196945ebbd18431000ac5836ed4194cf
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519208"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807378"
 ---
 # <a name="workbooknameditem-resource-type"></a>tipo de recurso workbookNamedItem
 
@@ -69,7 +69,7 @@ Veja a seguir uma representação JSON do recurso.
   "type": "string",
   "value": "string",
   "visible": true
-  
+
 }
 
 ```

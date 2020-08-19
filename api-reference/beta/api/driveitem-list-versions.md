@@ -4,17 +4,17 @@ description: O OneDrive e o SharePoint podem ser configurados para manter o hist
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-author: ''
-ms.openlocfilehash: eb90b0cdde2d66b2d1315b5ce8e9fbf6fb550768
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: JeremyKelley
+ms.openlocfilehash: cdbc2bd13704d6562ab05e98793f847e1237cd4b
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432506"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808876"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>Listando versões de um DriveItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

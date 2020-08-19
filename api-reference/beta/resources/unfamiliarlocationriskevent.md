@@ -4,17 +4,17 @@ description: Um evento de risco detectado pela proteção de identidade do Azure
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: c6f46c1440ccc83dac7e57044e3758f6faf96cee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: cloudhandler
+ms.openlocfilehash: 6f570c4f8650c8158faf43dbf72f00d16a2d8064
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519621"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806510"
 ---
 # <a name="unfamiliarlocationriskevent-resource-type"></a>tipo de recurso unfamiliarLocationRiskEvent
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

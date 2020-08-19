@@ -4,17 +4,17 @@ description: Representa um site da Web.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: ebdfef4a8ee4e11c2993dbd97a735c6e01960b6b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: AAmatino
+ms.openlocfilehash: 758d802a67979c4e43aefcdb4e8a3998be15b993
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519425"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809296"
 ---
 # <a name="website-resource-type"></a>tipo de recurso site
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Representa um site da Web.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |type|String| Os valores possíveis são: `other`, `home`, `work`, `blog`, `profile`.|
-|address|string|A URL do site.|
+|address|cadeia de caracteres|A URL do site.|
 |displayName|string|O nome de exibição do site da Web.|
 
 ## <a name="json-representation"></a>Representação JSON

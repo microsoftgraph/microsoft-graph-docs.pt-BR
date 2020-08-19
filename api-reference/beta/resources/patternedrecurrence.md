@@ -4,13 +4,13 @@ description: O padrão e o intervalo da recorrência.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: b26a5272611e27ffe29afc0254c1d1384f6a9c69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: harini84
+ms.openlocfilehash: 7ca993e0639e532338ade3c3e1dc57d1baf284fc
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521987"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807154"
 ---
 # <a name="patternedrecurrence-resource-type"></a>Tipo de recurso patternedRecurrence
 

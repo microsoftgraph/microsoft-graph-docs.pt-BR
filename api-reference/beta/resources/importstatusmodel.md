@@ -4,17 +4,17 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: b5cc73b5401ab0761c07f6c76cb33cca8f20d83f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: MSGraphDocsVteam
+ms.openlocfilehash: 81c1896407c41d081e8b66f6429a902e0e12c8e5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496408"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807924"
 ---
 # <a name="importstatusmodel-resource-type"></a>tipo de recurso importStatusModel
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

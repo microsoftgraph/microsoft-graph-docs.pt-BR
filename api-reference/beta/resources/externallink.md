@@ -4,17 +4,17 @@ description: Uma URL que abre uma página do OneNote ou um bloco de anotações.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 525da65750085b42e9f42eeb3ef69f2a4bd51a89
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: jewan-microsoft
+ms.openlocfilehash: bc06e2592212137b1316dc53594559a5c10df62c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498683"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806601"
 ---
 # <a name="externallink-resource-type"></a>tipo de recurso externalLink
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

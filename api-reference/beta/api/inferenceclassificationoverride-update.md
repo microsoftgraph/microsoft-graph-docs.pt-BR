@@ -3,14 +3,14 @@ title: Atualizar inferenceClassificationOverride
 description: 'Altere o campo **classificas** de uma substituição de caixa de entrada destaques, conforme especificado. '
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: svpsiva
 ms.prod: ''
-ms.openlocfilehash: 9417483ad5d46ac354d740e4803f7ac4be4a453d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1db87b1687d547541c61004c1bd82e0999dc1677
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446377"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807210"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Atualizar inferenceClassificationOverride
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Altere o campo **classificas** de uma substituição de [caixa de entrada destaques](../resources/manage-focused-inbox.md) , conforme especificado. 
+Altere o campo **classificas** de uma substituição de [caixa de entrada destaques](../resources/manage-focused-inbox.md) , conforme especificado.
 
-Você não pode usar PATCH para alterar outros campos em uma instância de [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md). 
+Você não pode usar PATCH para alterar outros campos em uma instância de [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md).
 
 Se houver uma substituição de um remetente e o remetente alterar seu nome de exibição, você poderá usar [POST](inferenceclassification-post-overrides.md) para forçar uma atualização para o campo de nome em uma substituição existente.
 

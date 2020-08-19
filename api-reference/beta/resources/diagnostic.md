@@ -4,17 +4,17 @@ description: Informações sobre um erro ou aviso para uma operação do OneNote
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: f0d5e6a938c454ca2efeda0dd7628c15269d6311
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: jewan-microsoft
+ms.openlocfilehash: b6cad8680b00b935dbaac817d53d930b5046e265
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507237"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809107"
 ---
 # <a name="diagnostic-resource-type"></a>tipo de recurso de diagnóstico
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

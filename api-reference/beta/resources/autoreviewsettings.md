@@ -4,17 +4,17 @@ description: ''
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: cde3ca5af63f71e577614ebbfda232c8f1a755ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: markwahl-msft
+ms.openlocfilehash: 666fb643ea5307aff02fdfb36e44e881356b9701
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508056"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807178"
 ---
 # <a name="autoreviewsettings-resource-type"></a>tipo de recurso autoReviewSettings
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

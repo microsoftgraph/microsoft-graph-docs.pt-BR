@@ -4,17 +4,17 @@ description: Uma página em um bloco de anotações do OneNote.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: bf3410923cdcc7d48c78d6872e5fc6c20f4cf619
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: jewan-microsoft
+ms.openlocfilehash: d219677c70be566b5039a39c5421c91a9ab11c8c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522327"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809366"
 ---
 # <a name="onenotepage-resource-type"></a>tipo de recurso onenotePage
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +25,9 @@ Uma página em um bloco de anotações do OneNote.
 |:---------------|:--------|:----------|
 |conteúdo|Fluxo|O conteúdo HTML da página.|
 |contentUrl|String|A URL do conteúdo HTML da página.  Somente leitura.|
-|Pela createdbyappid|String|O identificador exclusivo do aplicativo que criou a página. Somente leitura.|
+|createdByAppId|Cadeia de caracteres|O identificador exclusivo do aplicativo que criou a página. Somente leitura.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a página foi criada. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|id|Cadeia de caracteres|O identificador exclusivo da página.  Somente leitura.|
+|id|String|O identificador exclusivo da página.  Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a página foi modificada pela última vez. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |antes|Int32|O nível de recuo da página. Somente leitura.|
 |links|[pageLinks](pagelinks.md)|Links para abrir a página. O `oneNoteClientURL` link abre a página no cliente nativo do OneNote se ele estiver instalado. O `oneNoteWebUrl` link abre a página no OneNote na Web. Somente leitura.|
@@ -61,7 +61,7 @@ Veja a seguir uma representação JSON do recurso.
     "parentSection"
   ],
   "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",  
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.onenotePage"
 }-->
 

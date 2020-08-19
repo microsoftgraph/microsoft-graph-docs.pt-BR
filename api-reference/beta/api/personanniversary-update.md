@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 571a298bec352362f0796b953b00a6df010b1ce0
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: ebcdd31572f01c88ece9c92ed5cfbd79cdd30679
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228742"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807705"
 ---
 # <a name="update-personanniversary"></a>Atualizar personAnniversary
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,7 +35,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/anniversaries/{id} 
+PATCH /me/profile/anniversaries/{id}
+PATCH /users/{id | userPrincipalName}/profile/anniversaries/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -49,14 +50,18 @@ PATCH /me/profile/anniversaries/{id}
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade     | Tipo        | Descrição                                                      |
-|:-------------|:------------|:-----------------------------------------------------------------|
-|data          |Data         | Contém a data associada ao tipo de aniversário.          |
-|type          |cadeia de caracteres       | Os valores possíveis são: `birthday`, `wedding`, `unknownFutureValue`.|
+A tabela a seguir mostra as propriedades que são possíveis de atualizar em um objeto [personAnniversary](../resources/personanniversary.md) existente no [perfil](../resources/profile.md)de um usuário.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|data|Data|Contém a data associada ao tipo de aniversário.|
+|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
+|type|data especial|O tipo de aniversário que a data representa. Os valores possíveis são: `birthday`, `wedding`, `unknownFutureValue`.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [personAnniversary](../resources/personanniversary.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [personAnniversary](../resources/personanniversary.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -75,8 +80,7 @@ PATCH https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "allowedAudiences": "contacts"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -110,17 +114,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "contacts",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "type": "birthday",
+  "date": "Date"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update personanniversary",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

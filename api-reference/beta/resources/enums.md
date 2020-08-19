@@ -5,16 +5,91 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: a13c6025eaf83866701ea9f5a077dc34266d70e0
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 3fe3fea58f57ea2ba977b3d913c2e90051058046
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509886"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806615"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
 Namespace: microsoft.graph
+
+### <a name="allowedaudiences-values"></a>valores de allowedAudiences
+
+|Member|
+|:---|
+|me|
+|produtos|
+|contacts|
+|groupMembers|
+|organization|
+|federatedOrganizations|
+|têm|
+|unknownFutureValue|
+
+### <a name="emailtype-values"></a>valores de emailtype
+
+|Member|
+|:---|
+|desconhecido|
+|trabalho|
+|pessoal|
+|principal|
+|outro|
+
+### <a name="anniversarytype-values"></a>valores de aniversáriotype 
+
+|Member|
+|:---|
+|birthday|
+|panela|
+|unknownFutureValue|
+
+### <a name="skillproficiencylevel-values"></a>valores de skillProficiencyLevel 
+
+|Member|
+|:---|
+|ensino|
+|limitedWorking|
+|generalProfessional|
+|advancedProfessional|
+|possu|
+|unknownFutureValue|
+
+### <a name="languageproficiencylevel-values"></a>valores de languageProficiencyLevel 
+
+|Member|
+|:---|
+|ensino|
+|coloquial|
+|limitedWorking|
+|professionalWorking|
+|fullProfessional|
+|nativeOrBilingual|
+|unknownFutureValue|
+
+### <a name="personrelationship-values"></a>valores de personRelationship 
+
+|Member|
+|:---|
+|manager|
+|colega|
+|directReport|
+|dotLineReport|
+|assistência|
+|dotLineManager|
+|alternateContact|
+|público|
+|marido|
+|An|
+|pensão|
+|primário|
+|patrocina|
+|emergencyContact|
+|outro|
+|unknownFutureValue|
 
 ### <a name="attachmenttype-values"></a>valores AttachmentType
 
@@ -93,7 +168,7 @@ Namespace: microsoft.graph
 |:---|
 |Nenhuma|
 |automóvel|
-|calendário|
+|calendar|
 |com|
 |plano|
 |firstAid|
@@ -404,7 +479,7 @@ Namespace: microsoft.graph
 | conhecimento
 | forward
 | noResponseNecessary
-| Saiba
+| leitura
 | reply
 | replyToAll
 | exame
@@ -981,8 +1056,8 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |Nenhuma|
 |freeBusyRead|
 |limitedRead|
-|Saiba|
-|gravável|
+|leitura|
+|gravação|
 |delegateWithoutPrivateEventAccess|
 |delegateWithPrivateEventAccess|
 |cliente|
@@ -1108,7 +1183,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| email   | 1     | Ameaça de email.            |
+| Email   | 1     | Ameaça de email.            |
 | url    | duas     | Ameaça de URL.             |
 | file   | 3D     | Ameaça do arquivo de anexo. |
 
@@ -1123,8 +1198,8 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Membro             | Valor | Descrição        |
 |:-------------------|:------|:-------------------|
-| electrónico               | 1     | Ameaça de spam.       |
-| fraude           | duas     | Ameaça de phishing.   |
+| spam               | 1     | Ameaça de spam.       |
+| phishing           | duas     | Ameaça de phishing.   |
 | software            | 3D     | Ameaça de malware.    |
 | unknownFutureValue | 4      | Um membro Sentinel. |
 

@@ -4,17 +4,17 @@ description: Uma seção em um bloco de anotações do OneNote. As seções pode
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: f23017506208c1c0ff4f5a190eafe12079626d23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: jewan-microsoft
+ms.openlocfilehash: 2ec9ea6b30443b0dfc25ce8ac5ccc4ff4ab0516d
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522313"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809367"
 ---
 # <a name="onenotesection-resource-type"></a>tipo de recurso onenoteSection
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,7 +30,7 @@ Uma seção em um bloco de anotações do OneNote. As seções podem conter pág
 |lastModifiedBy|[identitySet](identityset.md)|Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a seção foi modificada pela última vez. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |links|[sectionLinks](sectionlinks.md)|Links para abrir a seção. O `oneNoteClientURL` link abre a seção no cliente nativo do OneNote se ele estiver instalado. O `oneNoteWebURL` link abre a seção no OneNote na Web.|
-|displayName|Cadeia de caracteres|O nome da seção. |
+|displayName|String|O nome da seção. |
 |pagesUrl|String|O `pages` ponto de extremidade onde você pode obter detalhes de todas as páginas da seção. Somente leitura.|
 |própria|String|O ponto de extremidade onde você pode obter detalhes sobre a seção. Somente leitura.|
 
@@ -64,7 +64,7 @@ Veja a seguir uma representação JSON do recurso.
     "parentSectionGroup"
   ],
   "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",  
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.onenoteSection"
 }-->
 

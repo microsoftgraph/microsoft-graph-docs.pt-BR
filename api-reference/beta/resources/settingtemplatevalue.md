@@ -4,17 +4,17 @@ description: Representa uma definição de configuração de modelo individual, 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: cbd53a704e37b6f0cfa15cc875d5de000627b76c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: dkershaw10
+ms.openlocfilehash: 024007ef05edbb4c3e2e9f8cc901d654734a39ab
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520756"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806265"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>tipo de recurso settingTemplateValue
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Representa uma definição de configuração de modelo individual, incluindo o v
 |:---------------|:--------|:----------|
 |defaultValue|string|Valor padrão para a configuração. Somente leitura.|
 |description|string|Descrição da configuração. Somente leitura.|
-|name|cadeia de caracteres|Nome da configuração. Somente leitura.|
+|name|string|Nome da configuração. Somente leitura.|
 |type|string|Tipo da configuração. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON

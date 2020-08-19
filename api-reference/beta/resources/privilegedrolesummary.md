@@ -4,17 +4,17 @@ description: O resumo de estatísticas de uma função específica.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 47ab49c6f91684924dab02d590427a875c1baa01
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: 2ce475e224e1de714ee033c5b50e831ff54e8e4c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521485"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807469"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>tipo de recurso privilegedRoleSummary
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +34,7 @@ O resumo de estatísticas de uma função específica.
 |id|string| O identificador exclusivo da função. Somente leitura.|
 |managedCount|int32|O número de usuários que têm a função atribuída, mas a função é desativada.|
 |mfaEnabled|booliano|**true** se a ativação de função requer MFA. **false** se a ativação de função não requer MFA.|
-|status|cadeia de caracteres| Os valores possíveis são: `ok` e `bad`. O valor depende da taxa de (managedCount/usersCount). Se a taxa for menor que um limite predefinido `ok` , será retornado. Caso contrário `bad` , será retornado.|
+|status|cadeia de caracteres| Os valores possíveis são: `ok` e `bad`. O valor depende da taxa de (managedCount/usersCount). Se a taxa for menor que um limite predefinido, `ok` será retornado. Caso contrário, `bad` será retornado.|
 |usersCount|int32|O número de usuários atribuídos com a função.|
 
 ## <a name="relationships"></a>Relações

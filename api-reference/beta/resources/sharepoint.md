@@ -4,13 +4,13 @@ description: 'A API do SharePoint no Microsoft Graph oferece suporte aos seguint
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: conceptualPageType
-author: ''
-ms.openlocfilehash: a88580e0e84e93ed0188992b48c559d36f0406fa
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+author: JeremyKelley
+ms.openlocfilehash: ae0ef6e765800107e4b9afea2d9fb366cbaaaf30
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353417"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807132"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>Trabalhar com sites do SharePoint no Microsoft Graph
 
@@ -87,8 +87,7 @@ Os exemplos a seguir são relativos a `https://graph.microsoft.com/beta`.
 | /sites/{site-id}/lists/{list-id}/items | Enumerar [listItems](listitem.md) sob a [lista](list.md).
 | /groups/{group-id}/sites/root          | Acesse um [site][] de equipe do grupo.
 
-Sites can also be addressed by path by using the SharePoint hostname, followed by a colon and the relative path to the site.
-You can optionally transition back to addressing the resource model by putting another colon at the end.
+Sites também podem ser tratados pelo caminho usando o nome de host do SharePoint, seguido por dois pontos e o caminho relativo para o site. Opcionalmente, você pode fazer a transição para lidar com o modelo de recurso colocando outros dois pontos no final.
 
 | Caminho                                           | Descrição
 |:-----------------------------------------------|:-----------------------------------

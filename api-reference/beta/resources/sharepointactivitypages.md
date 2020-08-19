@@ -4,17 +4,17 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: 41faf9816e0ba4fd29e149888a0d978194b32aee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: JeremyKelley
+ms.openlocfilehash: 3f0edafded42cffb00769141c803ea20707dad38
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520706"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807126"
 ---
 # <a name="sharepointactivitypages-resource-type"></a>tipo de recurso sharePointActivityPages
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -36,9 +36,9 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "visitedPageCount": 1024, 
-  "reportDate": "Date", 
+  "reportRefreshDate": "Date",
+  "visitedPageCount": 1024,
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```

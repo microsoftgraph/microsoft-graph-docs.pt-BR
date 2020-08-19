@@ -4,17 +4,17 @@ description: Um tipo complexo para representar a propriedade **visualElements** 
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: 4e1fa1414b9d8efd655a0699a6019049bfbe67a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: 928ec4c9d759674bc066c45a5f82e2e8cdd3ee3b
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521394"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807455"
 ---
 # <a name="visualinfo-resource-type"></a>tipo de recurso visualInfo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

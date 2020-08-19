@@ -4,17 +4,17 @@ description: O tipo de participante.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: f1487523d89dc6677f2fc04b62013e7db9602b92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: harini84
+ms.openlocfilehash: 5ad86fd3cd1ec6818c6f8466f5ff47a90b17dc94
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508133"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807196"
 ---
 # <a name="attendeebase-resource-type"></a>Tipo de recurso attendeeBase
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

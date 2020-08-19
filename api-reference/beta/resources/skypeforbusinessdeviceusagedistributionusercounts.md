@@ -4,13 +4,13 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: d7b6639b810507d7bee0c0a54f98cefae8d51677
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: kszb
+ms.openlocfilehash: c0134bedc15de07d89709a623b6a31a8f53ac5fe
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520419"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808610"
 ---
 # <a name="skypeforbusinessdeviceusagedistributionusercounts-resource-type"></a>tipo de recurso skypeForBusinessDeviceUsageDistributionUserCounts
 
@@ -39,12 +39,12 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "windows": 1024, 
-  "windowsPhone": 1024, 
-  "androidPhone": 1024, 
-  "iPhone": 1024, 
-  "iPad": 1024, 
+  "reportRefreshDate": "Date",
+  "windows": 1024,
+  "windowsPhone": 1024,
+  "androidPhone": 1024,
+  "iPhone": 1024,
+  "iPad": 1024,
   "reportPeriod": "String"
 }
 ```

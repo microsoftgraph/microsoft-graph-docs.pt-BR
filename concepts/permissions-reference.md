@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 27335eb191352d37523975c7a506f39e7da725be
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: ecf122caa0a402d8a804efa360e71e53b6493da7
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674516"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790746"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -188,13 +188,13 @@ Nenhum
 
 ## <a name="appcatalog-resource-permissions"></a>Permissões de recurso AppCatalog
 
-
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Conta da Microsoft necessária |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------| :----------|
 | _AppCatalog.Read.All_ | Ler todos os catálogos de aplicativos | Permite que o aplicativo leia os aplicativos no catálogo de aplicativos.| Não | Não |
 | _AppCatalog.ReadWrite.All_ | Ler e gravar em todos os catálogos de aplicativo  | Permite que o aplicativo crie, leia, atualize e exclua aplicativos nos catálogos do aplicativo. | Sim | Não |
+|_AppCatalog.Submit_|Envie um aplicativo para análise do administrador|Permite que o usuário envie um aplicativo para revisão do administrador para publicação no catálogo de aplicativos de uma organização e permite que o usuário cancele envios anteriores que não foram publicados.</br> &#119821;&#119822;&#119827;&#119812;: Usuários não administradores enviam aplicativos para revisão incluindo o parâmetro de consulta `requiresReview=true`.|Sim|Não|
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 

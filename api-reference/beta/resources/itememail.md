@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: aaf58bd7e20caeb418946814daa7ca8f7bb9bfa3
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 0a8a69ae484afab6b558890fbd186a4850235ead
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229413"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809422"
 ---
 # <a name="itememail-resource-type"></a>tipo de recurso de email
 
@@ -20,53 +20,66 @@ Namespace: microsoft.graph
 
 Representa informações detalhadas sobre endereços de email associados ao usuário.
 
-## <a name="methods"></a>Métodos
+Herda de [Myfacet](../resources/itemfacet.md).
 
-| Método                                   | Tipo de retorno               | Descrição                                                      |
-|:-----------------------------------------|:--------------------------|:-----------------------------------------------------------------|
-| [Get](../api/itememail-get.md)           | [Email](itememail.md) | Ler propriedades e relações de um objeto item de **email** .    |
-| [Update](../api/itememail-update.md)     | [Email](itememail.md) | Atualize um objeto de **email** .                                  |
-| [Delete](../api/itememail-delete.md)     | None                      | Excluir um objeto de **email** .                                  |
+## <a name="methods"></a>Métodos
+|Método|Tipo de retorno|Descrição|
+|:---|:---|:---|
+|[Listar emails](../api/profile-list-emails.md)|coleção [email](../resources/itememail.md)|Obtenha os recursos de email da propriedade de navegação emails.|
+|[Criar email](../api/profile-post-emails.md)|[Email](../resources/itememail.md)|Criar um novo objeto de email.|
+|[Obter email](../api/itememail-get.md)|[Email](../resources/itememail.md)|Leia as propriedades e os relacionamentos de um objeto item de [email](../resources/itememail.md) .|
+|[Atualizar email](../api/itememail-update.md)|[Email](../resources/itememail.md)|Atualiza as propriedades de um objeto item de [email](../resources/itememail.md) .|
+|[Excluir email](../api/itememail-delete.md)|Nenhum|Exclui um objeto [MyEmail](../resources/itememail.md) .|
 
 ## <a name="properties"></a>Propriedades
-
-| Propriedade     | Tipo        | Descrição                                                               |
-|:-------------|:------------|:--------------------------------------------------------------------------|
-|address       |Cadeia de caracteres       | O próprio endereço de email.                                                 |
-|displayName   |Cadeia de caracteres       | O nome ou rótulo que um usuário associou a um endereço de email específico.  |
-|type          |cadeia de caracteres       | Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.      |
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|address|Cadeia de caracteres|O próprio endereço de email.|
+|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado de [MyFace](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
+|displayName|String|O nome ou rótulo que um usuário associou a um endereço de email específico.|
+|id|String|Identificador usado para o endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
+|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado de [MyFace](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
+|type|emailtype|O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.|
 
 ## <a name="relationships"></a>Relações
-
 Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
-
 Veja a seguir uma representação JSON do recurso.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.itemEmail",
-  "baseType": ""
-}-->
-
-```json
+  "baseType": "microsoft.graph.itemFacet",
+  "openType": false
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.itemEmail",
+  "id": "0f30bf5d-bf5d-0f30-5dbf-300f5dbf300f",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
   "address": "String",
   "displayName": "String",
-  "type": "string"
+  "type": "String"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "itemEmail resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

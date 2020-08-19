@@ -4,13 +4,13 @@ description: Representa a pontuação segura de um locatário por dados de contr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 7dfca5eedebe7f2fe524c79cee52e5855af7f291
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 3eeb7b0bd1575a336cdeb9ff73e808a057f61743
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520861"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807477"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>tipo de recurso secureScoreControlProfile
 

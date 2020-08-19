@@ -4,13 +4,13 @@ description: Atualiza a foto de qualquer usuário no locatário, incluindo o usu
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: bafdd48cf95f8f6c6eddb99a0cd4f4bb3138dd78
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
+author: kevinbellinger
+ms.openlocfilehash: 72c30f03b51e186321acf6b89790c0fbd1352f06
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038678"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807977"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilephoto
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Foto de perfil do **usuário**conectado:<br/>User. ReadWrite, User. ReadWrite. All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
+|Delegada (conta corporativa ou de estudante)     | Foto de perfil do **usuário**conectado:<br/>User. ReadWrite, User. ReadWrite. All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Para recurso de **usuário**:<br/>User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
 

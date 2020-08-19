@@ -3,18 +3,18 @@ title: Obter FormatProtection
 description: Recupere as propriedades e os relacionamentos do objeto formatprotection.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 089ccdeec3a371d56e38121ae805cc49d4b75b2e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de7af7dc7fa5004f82180c7d8d9ec208b6eb0cf6
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421617"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807344"
 ---
 # <a name="get-formatprotection"></a>Get FormatProtection
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Files.ReadWrite    |
 |Aplicativo | Sem suporte. |
 

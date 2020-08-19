@@ -4,17 +4,17 @@ description: Apenas para uso interno. Esse tipo complexo será preterido no futu
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 4e3dfae11009000fa89eccb7c0263867fe2a1562
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: spunukol
+ms.openlocfilehash: 9aa6802dcf077ffd78ae29a73d45a4046d35cb71
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508328"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807546"
 ---
 # <a name="alternativesecurityid-resource-type"></a>Tipo de recurso alternativeSecurityId
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Apenas para uso interno. Esse tipo complexo será preterido no futuro.
 

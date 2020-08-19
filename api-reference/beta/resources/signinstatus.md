@@ -4,13 +4,13 @@ description: Fornece o status de entrada (sucesso ou falha) da entrada
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: ffdbb7553c6359174930f1583fb6afda68d9efef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: SarahBar
+ms.openlocfilehash: 7cb48f7a4235b28231ab93fc3ccfba074f80d286
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520573"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808596"
 ---
 # <a name="signinstatus-resource-type"></a>tipo de recurso signInStatus
 

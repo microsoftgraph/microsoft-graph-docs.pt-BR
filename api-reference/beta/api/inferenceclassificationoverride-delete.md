@@ -3,18 +3,18 @@ title: Excluir inferenceClassificationOverride
 description: Excluir uma substituição de caixa de entrada destaques especificada por sua ID.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: svpsiva
 ms.prod: ''
-ms.openlocfilehash: 46596a8b8bd535d491447d5f5361aa341f72fe8f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7565fadfa68bca6c61b8d268f36a93f95c48a2a1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446398"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807211"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Excluir inferenceClassificationOverride
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
