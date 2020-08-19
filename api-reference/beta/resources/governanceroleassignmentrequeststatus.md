@@ -4,17 +4,17 @@ description: Representa o status do governanceRoleAssignmentRequest.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 287f9f6ab7b1442ebdd517edbb27175fc36e6108
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: a1031429d6288ec19a9f3791e24a35dc0d431588
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497402"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809501"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>tipo de recurso governanceRoleAssignmentRequestStatus
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +24,8 @@ Representa o status do [governanceRoleAssignmentRequest](../resources/governance
 ## <a name="properties"></a>Propriedades
 Propriedade       | Tipo |Descrição|
 |:----|:-------------|:-----|
-|status |String| O status da solicitação de atribuição de função. O valor pode ser `InProgress` ou `Closed`.|
-|substatus |String| O status da solicitação de atribuição de função. Os valores podem ser `Accepted`, `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `Provisioned` `AdminApproved` `AdminDenied` `PendingAdminDecision` `PendingApproval` `Failed` `PendingApprovalProvisioning` `FailedAsResourceIsLocked` `TimedOut`,,,,,,,,,,,,,, e `ProvisioningStarted` `PendingRevocation` `Revoked` `Canceled`|
+|status |String| O status da solicitação de atribuição de função. O valor pode ser `InProgress` ou `Closed` .|
+|substatus |String| O status da solicitação de atribuição de função. Os valores podem ser,,,,,,,, `Accepted` `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `Provisioned` `PendingRevocation` `Revoked` `Canceled` `Failed` , `PendingApprovalProvisioning` ,, `PendingApproval` `FailedAsResourceIsLocked` , `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `ProvisioningStarted` ,,, e.|
 |statusDetails       |Coleção [KeyValue](../resources/keyvalue.md)| Os detalhes do status da solicitação de atribuição de função. Ele representa os resultados de avaliação de regras diferentes. |
 
 ## <a name="json-representation"></a>Representação JSON

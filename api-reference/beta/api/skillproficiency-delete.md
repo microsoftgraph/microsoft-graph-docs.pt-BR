@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: fbc9958f49f01694e6cb3b682da8048695cb1973
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 501eb80a9ab304579920d7f615a6a08b5a764577
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453139"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811151"
 ---
 # <a name="delete-skillproficiency"></a>Excluir skillProficiency
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -36,6 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 DELETE /me/profile/skills/{id}
+DELETE /users/{id | userPrincipalName}/profile/skills/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -83,7 +84,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/skills/{id}
 
 ---
 
-
 ### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
@@ -96,13 +96,3 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete skillProficiency",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

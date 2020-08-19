@@ -4,17 +4,17 @@ description: A propriedade **assignedPlans** das entidades user e organization �
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 2ba1f1286fe7d1f01af0cb70280ec9a0f38541d6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: krbain
+ms.openlocfilehash: 5e408212855e4ca0bc5af4c03302c8b79e415566
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508182"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809823"
 ---
 # <a name="assignedplan-resource-type"></a>Tipo de recurso assignedPlan
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ A propriedade **assignedPlans** das entidades [user](user.md) e [organization](o
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |assignedDateTime|DateTimeOffset|A data e hora em que o plano foi atribuído; por exemplo: 2013-01-02T19:32:30Z. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|capabilityStatus|String|Por exemplo, “Enabled”.|
+|capabilityStatus|Cadeia de caracteres|Por exemplo, “Enabled”.|
 |service|Cadeia de caracteres|O nome do serviço; por exemplo, "Exchange".|
 |onplanid|Guid|Um GUID que identifica o plano de serviço.|
 

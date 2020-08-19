@@ -2,15 +2,15 @@
 title: Obter foto
 description: Recupere as propriedades e os relacionamentos do objeto de foto.
 localization_priority: Normal
-author: ''
+author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 8f2aac2615c570e245b39b37006e12743c48da6f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ab055019a467f8783e8d62e8c660bfa32e03bc4c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511023"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808736"
 ---
 # <a name="get-photo"></a>Obter foto
 

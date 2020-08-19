@@ -4,17 +4,17 @@ description: Representa o nome, os endereços de email e o tipo de endereço de 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 7d6c064e7a87b0e9c776a5691f24b48dfff56422
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: kevinbellinger
+ms.openlocfilehash: 6641d05542fb6d6e376343dff98508183f5a012b
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519628"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812761"
 ---
 # <a name="typedemailaddress-resource-type"></a>tipo de recurso typedEmailAddress
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +25,8 @@ Representa o nome, os endereços de email e o tipo de endereço de email corresp
 |:---------------|:--------|:----------|
 |address|Cadeia de caracteres|O endereço de email de um contato.|
 |nome|String|O nome de exibição de um contato.|
-|type |String |O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`. O valor padrão é `unknown`, o que significa que o **endereço** não foi definido como um tipo específico. |
-|otherLabel |String  |Para especificar um tipo personalizado de endereço de email, **** defina Type `other`como e atribua **otherLabel** a uma cadeia de caracteres personalizada. Por exemplo, você pode usar um endereço de email específico para suas atividades de voluntários. Defina **** o tipo `other`como e defina **otherLabel** como uma cadeia de caracteres personalizada `Volunteer work`, como. |
+|type |String |O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`. O valor padrão é `unknown` , o que significa que o **endereço** não foi definido como um tipo específico. |
+|otherLabel |String  |Para especificar um tipo personalizado de endereço de email, defina **Type** como `other` e atribua **otherLabel** a uma cadeia de caracteres personalizada. Por exemplo, você pode usar um endereço de email específico para suas atividades de voluntários. Defina o **tipo** como `other` e defina **otherLabel** como uma cadeia de caracteres personalizada, como `Volunteer work` . |
 
 ## <a name="json-representation"></a>Representação JSON
 

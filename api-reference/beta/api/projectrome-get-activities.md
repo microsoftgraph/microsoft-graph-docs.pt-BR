@@ -4,17 +4,17 @@ description: Obter atividades para um determinado usuário. Diferentemente da fu
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
-author: ''
-ms.openlocfilehash: 076548721fd3213ece363c1f590455cf1dc060f1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: 1e25c108d3dca6d326fd499ae59d5189b9a3971a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454901"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809968"
 ---
 # <a name="get-user-activities"></a>Obter atividades do usuário
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegado (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegada (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegada (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -4,17 +4,17 @@ description: Indica como filtrar uma data ao filtrar valores.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 166ed04fc58933c805fdd388e14da683110d6729
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: 71d0f3dc82882b0726d98c2b7fd2b60bb215152a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498046"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809814"
 ---
 # <a name="filterdatetime-resource-type"></a>Tipo de recurso FilterDatetime
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Indica como filtrar uma data ao filtrar valores.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|data|string|A data no formato ISO8601 usada para filtrar os dados.|
+|data|cadeia de caracteres|A data no formato ISO8601 usada para filtrar os dados.|
 |especificidade|string|Como a data específica deve ser usada para manter os dados. Por exemplo, se a data for 2005-04-02 e a especificidade estiver definida como "mês", a operação de filtragem manterá todas as linhas com uma data do mês de abril de 2009. Os valores possíveis são: `Year`, `Monday`, `Day`, `Hour`, `Minute` e `Second`.|
 
 ## <a name="relationships"></a>Relações

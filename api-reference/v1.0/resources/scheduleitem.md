@@ -2,15 +2,15 @@
 title: tipo de recurso scheduleItem
 description: Um item que descreve a disponibilidade de um usuário correspondente a um evento real no calendário padrão do usuário. Este item se aplica a um recurso (sala ou equipamento) também.
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 4136b71dfb273525e8793521d50545ee5b1873cb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cad5cfa500d3ae6e68bb1db06688e13e8e0d43e6
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533795"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811242"
 ---
 # <a name="scheduleitem-resource-type"></a>tipo de recurso scheduleItem
 
@@ -22,11 +22,11 @@ Um item que descreve a disponibilidade de um usuário correspondente a um evento
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente termina. |
-|IsPrivate |Booliano |A sensibilidade do evento correspondente. True se o evento estiver marcado `private`; caso contrário, false. Opcional.|
-|location |String | O local onde o evento correspondente é mantido ou participado. Opcional.|
+|IsPrivate |Booliano |A sensibilidade do evento correspondente. True se o evento estiver marcado `private` ; caso contrário, false. Opcional.|
+|localização |Cadeia de caracteres | O local onde o evento correspondente é mantido ou participado. Opcional.|
 |iniciar |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente é iniciado. |
 |status |freeBusyStatus | O status de disponibilidade do usuário ou recurso durante o evento correspondente. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
-|subject |String | A linha de assunto do evento correspondente. Opcional.|
+|assunto |Cadeia de caracteres | A linha de assunto do evento correspondente. Opcional.|
 
 
 ## <a name="json-representation"></a>Representação JSON

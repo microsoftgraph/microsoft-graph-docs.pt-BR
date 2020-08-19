@@ -4,28 +4,28 @@ description: Um item que descreve a disponibilidade de um usuário correspondent
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
-author: ''
-ms.openlocfilehash: fd71cd95d676ea226e03a15324cda01e41b6d2c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: harini84
+ms.openlocfilehash: b4bbf2586543b4f731c136eaffbc955741191db6
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520967"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812790"
 ---
 # <a name="scheduleitem-resource-type"></a>tipo de recurso scheduleItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
+
 Um item que descreve a disponibilidade de um usuário correspondente a um evento real no calendário padrão do usuário. Este item se aplica a um recurso (sala ou equipamento) também.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente termina. |
-|IsPrivate |Boolean |A sensibilidade do evento correspondente. True se o evento estiver marcado `private`; caso contrário, false. Opcional. |
-|location |String | O local onde o evento correspondente é mantido ou participado. Opcional.|
+|IsPrivate |Booliano |A sensibilidade do evento correspondente. True se o evento estiver marcado `private` ; caso contrário, false. Opcional. |
+|localização |String | O local onde o evento correspondente é mantido ou participado. Opcional.|
 |iniciar |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente é iniciado. |
 |status |freeBusyStatus | O status de disponibilidade do usuário ou recurso durante o evento correspondente. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
 |assunto |String | A linha de assunto do evento correspondente. Opcional.|

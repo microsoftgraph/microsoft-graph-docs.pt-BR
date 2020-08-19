@@ -2,19 +2,19 @@
 title: Tipo de recurso physicalAddress
 description: Representa o endereço físico de um recurso, como um contato ou evento.
 localization_priority: Normal
-author: ''
+author: kevinbellinger
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 24ed9ce0b7a4b7d9a013888fe7b43cbba5b4a264
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7729762a93e5185d45289b2377ecd961d894552
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447175"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808855"
 ---
 # <a name="physicaladdress-resource-type"></a>Tipo de recurso physicalAddress
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Representa o endereço físico de um recurso, como um contato ou evento.
 
@@ -22,11 +22,11 @@ Representa o endereço físico de um recurso, como um contato ou evento.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|city|String|A cidade.|
+|city|Cadeia de caracteres|A cidade.|
 |countryOrRegion|String|O país ou a região. É um valor de cadeia de caracteres de formato livre, por exemplo, "Brasil".|
-|postalCode|String|O código de endereçamento postal, ou CEP.|
-|state|Cadeia de caracteres|O estado.|
-|street|String|O tipo de logradouro (rua, alameda, avenida, etc.).|
+|postalCode|Cadeia de caracteres|O código de endereçamento postal, ou CEP.|
+|estado|Cadeia de caracteres|O estado.|
+|street|Cadeia de caracteres|O tipo de logradouro (rua, alameda, avenida, etc.).|
 
 ## <a name="json-representation"></a>Representação JSON
 

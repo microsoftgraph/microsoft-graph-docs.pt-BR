@@ -4,17 +4,17 @@ description: Representa a proteção de formatação de um objeto range.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: c574ceefd33131562a0df504fad26bb225056ce7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: cbad1af0eea639b73e06d5678a2293d744964975
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497815"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809555"
 ---
 # <a name="formatprotection-resource-type"></a>Tipo de recurso FormatProtection
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

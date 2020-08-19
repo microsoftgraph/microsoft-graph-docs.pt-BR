@@ -4,13 +4,13 @@ description: Criar um novo ou substituir uma atividade de usuário existente par
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
-author: ''
-ms.openlocfilehash: c9fcd985b3e3a2b38a02e4bf5366a84788bdc866
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: 86bff5b76b30e832f355ebac57af96e4948feabc
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454854"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809947"
 ---
 # <a name="create-or-replace-an-activity"></a>Criar ou substituir uma atividade
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | UserActivity.ReadWrite.CreatedByApp |
-| Delegado (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp |
+| Delegada (conta corporativa ou de estudante)     | UserActivity.ReadWrite.CreatedByApp |
+| Delegada (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp |
 | Aplicativo                            | Sem suporte.                      |
 
 ## <a name="http-request"></a>Solicitação HTTP

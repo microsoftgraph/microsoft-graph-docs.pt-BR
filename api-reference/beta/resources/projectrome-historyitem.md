@@ -4,17 +4,17 @@ description: Representa um item de histórico de uma atividade em um aplicativo.
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: cd83657c99b4fb2e5ce077549d51d60329ae9d60
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: c6b87e96e857b71939ca9762a7a32c97d24f38f8
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521415"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812791"
 ---
 # <a name="historyitem-resource-type"></a>tipo de recurso historyItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

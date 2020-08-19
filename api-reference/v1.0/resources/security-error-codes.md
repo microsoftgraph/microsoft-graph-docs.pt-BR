@@ -5,16 +5,16 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: d1a65eb214fee21389b7d6c78c10a0d9b9d0e4ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb35fdb9fe52dc3769654e1018d4ff1098ca931b
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446923"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812629"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Respostas de erro da API de segurança do Microsoft Graph
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Erros na API de segurança do Microsoft Graph são retornados usando o código de status de conteúdo parcial HTTP 206, e são entregues por meio de um cabeçalho de aviso.
 
@@ -37,12 +37,14 @@ Se um provedor de dados retornar 2xx ou 404, ele não será mostrado no cabeçal
 
 ## <a name="example"></a>Exemplo
 
-Um usuário solicita `security/alerts/{alert_id}`.
+Um usuário solicita `security/alerts/{alert_id}` .
 
-    Provider 1: 404 (provider does not have a record of this alert ID)
-    Provider 2: 504 (provider timed out)
-    Provider 3: 200 (success)
-    Provider 4: 403 (customer has not licensed this provider)
+```
+Provider 1: 404 (provider does not have a record of this alert ID)
+Provider 2: 504 (provider timed out)
+Provider 3: 200 (success)
+Provider 4: 403 (customer has not licensed this provider)
+```
 
 Como 404 e 200 são condições esperadas, o cabeçalho de aviso contém o seguinte:
 
@@ -57,7 +59,7 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 
 O `$top` parâmetro de consulta OData tem um limite de 1000 alertas. É recomendável incluir apenas o `$top` e não o `$skip` na primeira consulta OBTER. Você pode usar `@odata.nextLink` para paginação. Se você precisar usar o `$skip`, ele tem um limite de 500 alertas. Por exemplo, `/security/alerts?$top=10&$skip=500` retornará um código de resposta `200 OK`, mas `/security/alerts?$top=10&$skip=501` retornará um código de resposta `400 Bad Request`. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
-Um workaaround para esse limite é usar o `$filter` parâmetro de consulta OData com a `eventDateTime` entidade de alerta da API de segurança do Microsoft Graph, usando `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` e substituindo o valor DateTime pelo último alerta (1500th). Você também pode definir um intervalo para o `eventDateTime`; por exemplo, *alertas? $Filter = eventDateTime **gt** 2018-11-**11**T00:00:00.000 z&eventDateTime **lt** 2018-11-**12**T00:00:00.000 z*
+Um workaaround para esse limite é usar o `$filter` parâmetro de consulta OData com a `eventDateTime` entidade de alerta da API de segurança do Microsoft Graph, usando `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` e substituindo o valor DateTime pelo último alerta (1500th). Você também pode definir um intervalo para o `eventDateTime` ; por exemplo, *alertas? $Filter = eventDateTime **gt** 2018-11-**11**T00:00:00.000 z&eventDateTime **lt** 2018-11-**12**T00:00:00.000 z*
 
 ## <a name="see-also"></a>Confira também
 

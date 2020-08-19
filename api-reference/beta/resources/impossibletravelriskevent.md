@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso impossibleTravelRiskEvent
-description: Um evento de risco detectado pela proteção de identidade do Azure Active Directory onde dois logons de conta ocorrem de locais atypical para o usuário e não seria possível viajar entre os locais na duração entre os logons. complete information about eventos de risco podem ser encontrados na documentação de proteção de identidade do Azure AD.
+description: Um evento de risco detectado pela proteção de identidade do Active Directory do Azure onde dois logons de conta ocorrem a partir de locais atypical para o usuário e seria impossível viajar entre os locais na duração entre as entradas. Complete as informações sobre os eventos de risco podem ser encontradas na documentação do Azure AD Identity Protection.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 39cfbc804fc786875b7cb1b6ee8058ae2a0571e0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: cloudhandler
+ms.openlocfilehash: 377930a154cca9b0f139ea3a4e088d779064d581
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496387"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809478"
 ---
 # <a name="impossibletravelriskevent-resource-type"></a>tipo de recurso impossibleTravelRiskEvent
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

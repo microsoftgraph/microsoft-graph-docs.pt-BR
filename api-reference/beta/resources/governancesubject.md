@@ -4,17 +4,17 @@ description: Representa usuários, grupos e entidades de serviço que estão sen
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 4d1fbf75b4e9643dc0e3b968ace7a013616904ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: 384558109521fe93c5ef4331e88355c8757cf5fc
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497168"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809485"
 ---
 # <a name="governancesubject-resource-type"></a>tipo de recurso governanceSubject
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +25,9 @@ Representa usuários, grupos e entidades de serviço que estão sendo gerenciado
 | Propriedade  | Tipo       |Descrição|
 |:----------|:----------|:----------|
 |id         |String     | A ID do assunto.|
-|type       |String     |O tipo do assunto. O valor pode ser ``User``, ``Group``e ``ServicePrincipal``.|
-|displayName|Cadeia de caracteres     |O nome de exibição do assunto.|
-|email      |String     |O endereço de email do assunto do usuário. Se o assunto estiver em outros tipos, ele estará vazio.|
+|type       |String     |O tipo do assunto. O valor pode ser ``User`` , ``Group`` e ``ServicePrincipal`` .|
+|displayName|String     |O nome de exibição do assunto.|
+|email      |Cadeia de caracteres     |O endereço de email do assunto do usuário. Se o assunto estiver em outros tipos, ele estará vazio.|
 |principalName|Cadeia de caracteres   |O nome da entidade de segurança do usuário. Se o assunto estiver em outros tipos, ele estará vazio.|
 
 ## <a name="relationships"></a>Relações
@@ -48,7 +48,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "id": "String",  
+  "id": "String",
   "displayName": "String",
   "email": "String",
   "principalName": "String",

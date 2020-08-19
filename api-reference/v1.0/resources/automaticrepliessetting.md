@@ -2,21 +2,21 @@
 title: Tipo de recurso automaticRepliesSetting
 description: 'Definições de configuração para notificar automaticamente o remetente de um email de entrada com uma mensagem da '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: db26c304985ff43e920a37bcaac24dbcac7070a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 698f58e6e7aabea2a93a26a93e35451f876b422c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532034"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808330"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>Tipo de recurso automaticRepliesSetting
 
 Namespace: microsoft.graph
 
-Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado. Por exemplo, uma resposta automática para notificar que o usuário conectado está disponível para responder a emails. 
+Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado. Por exemplo, uma resposta automática para notificar que o usuário conectado está disponível para responder a emails.
 
 
 ## <a name="properties"></a>Propriedades

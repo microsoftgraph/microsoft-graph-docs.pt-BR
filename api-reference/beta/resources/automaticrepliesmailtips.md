@@ -4,13 +4,13 @@ description: Dicas de correio sobre as respostas automáticas que foram configur
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 24c909bac22a4728fe6c84d6779641765858ba37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: b57eee95a29482db0a30ae7019ef305aa9f7fdff
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508070"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812567"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>tipo de recurso automaticRepliesMailTips
 

@@ -4,13 +4,13 @@ description: Identity o objeto Resource que inicia a atividade. O iniciador pode
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 2d74b9d268bf61ee191fb2a8b35368b08dd5650d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: SarahBar
+ms.openlocfilehash: 49c60dc42cb84d047f36904b2af11fe5c8d3bd8e
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508091"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812545"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>tipo de recurso auditActivityInitiator
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: learafa
 ms.prod: files
 doc_type: apiPageType
-ms.openlocfilehash: 86c658ad853a11f3ff7a52a6efeb7b2cc1bdb6c2
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: Auto
+ms.openlocfilehash: c25049e05b31d473b98f7118ae4cb9b49edc3681
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007089"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808421"
 ---
 # <a name="driveitem-restore"></a>driveItem: restaurar
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Files.ReadWrite.All |
-| Application                            | Files.ReadWrite.All |
+| Aplicativo                            | Files.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -62,8 +62,6 @@ O exemplo a seguir mostra como chamar essa API.
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
-
-# <a name="http"></a>[HTTP](#tab/http)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

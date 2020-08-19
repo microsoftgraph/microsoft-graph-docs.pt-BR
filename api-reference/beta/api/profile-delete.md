@@ -5,20 +5,20 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: e70ef31e6eec65520a7d2773b7e86aa76059f406
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 791a36ba589842e9bd62f7f2c208717fd250bf59
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455232"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812832"
 ---
 # <a name="delete-profile"></a>Excluir perfil
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua o objeto de [perfil](../resources/profile.md) da conta de um usuário.
+Exclui um objeto de [perfil](../resources/profile.md) da conta de um usuário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Aplicativo                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All                            |
+| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Aplicativo                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -36,6 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 DELETE /me/profile
+DELETE /users/{id | userPrincipalName}/profile
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -95,13 +96,3 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete profile",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

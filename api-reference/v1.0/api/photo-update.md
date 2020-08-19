@@ -2,15 +2,15 @@
 title: Atualizar foto
 description: Atualize as propriedades do objeto de foto.
 localization_priority: Normal
-author: ''
+author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 41ce52fb4de9348b8bec9ea2e99848ee230cb268
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 269101c331e07d947ec6b22a1fc8edef0f6f4ee5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511016"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808717"
 ---
 # <a name="update-photo"></a>Atualizar foto
 

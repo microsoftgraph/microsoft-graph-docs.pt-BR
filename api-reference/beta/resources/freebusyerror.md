@@ -4,20 +4,20 @@ description: Representa informações de erro da tentativa de obter a disponibil
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 163352538dac4d7ba27def978b3bcc379807d4e4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: harini84
+ms.openlocfilehash: e259685415a37e89429b5e0522e89a4fbe2f9fd2
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497717"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809534"
 ---
 # <a name="freebusyerror-resource-type"></a>tipo de recurso freeBusyError
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
+
 Representa informações de erro da tentativa de obter a disponibilidade de um usuário, lista de distribuição ou recurso.
 
 ## <a name="properties"></a>Propriedades

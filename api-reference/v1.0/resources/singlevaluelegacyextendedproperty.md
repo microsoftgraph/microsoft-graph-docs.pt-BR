@@ -2,23 +2,23 @@
 title: Tipo de recurso singleValueLegacyExtendedProperty
 description: 'Uma propriedade estendida que contém um único valor. '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 29abdd3f407dd627f6c8af8ddab475cdcb829d83
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b13fa96cbfbb0e0eb6fefc97ef76e2278ca26640
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533704"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811235"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>Tipo de recurso singleValueLegacyExtendedProperty
 
 Namespace: microsoft.graph
 
-Uma propriedade estendida que contém um único valor. 
+Uma propriedade estendida que contém um único valor.
 
-Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas. 
+Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.
 
 
 ## <a name="methods"></a>Métodos

@@ -2,19 +2,19 @@
 title: tipo de recurso timeStamp
 description: Informações de data e hora para um ponto no tempo.
 localization_priority: Normal
-author: ''
+author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a3d013668d0a4a11473a51a103bbf8b942139c06
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0629eaabd282f03184be28ade67c2d17d5598602
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446811"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808141"
 ---
 # <a name="timestamp-resource-type"></a>tipo de recurso timeStamp
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Informações de data e hora para um ponto no tempo.
 

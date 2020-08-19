@@ -4,13 +4,13 @@ description: Especifica quando um fuso horário muda do horário padrão para o 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: c31225868b463b8ea3dd719d451726f59a087f99
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 28c1db72eec1b1556949bee3ce0c5acdc12af9e7
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507286"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809842"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>Tipo de recurso daylightTimeZoneOffset
 

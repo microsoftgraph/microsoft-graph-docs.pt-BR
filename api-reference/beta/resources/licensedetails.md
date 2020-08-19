@@ -4,17 +4,17 @@ description: Contém informações sobre uma licença atribuída a um usuário.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 9bdf5456cd0e807ca2a2eaaef8f1d0eab302f23c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: krbain
+ms.openlocfilehash: 5c71c870d8b078a47acc4a0a0f968bcdedb760f2
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522971"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812804"
 ---
 # <a name="licensedetails-resource-type"></a>tipo de recurso licenseDetails
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,19 +2,19 @@
 title: tipo de recurso Process
 description: Contém informações de estado sobre o processo relacionado ao alerta.
 localization_priority: Normal
-author: ''
+author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: db4980d8ca49e4091a338312a588716e494f258f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8832a037f3bbb5d24de176e56fabebeb883992b6
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447063"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811249"
 ---
 # <a name="process-resource-type"></a>tipo de recurso Process
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Contém informações de estado sobre o processo relacionado ao alerta.
 
@@ -22,16 +22,16 @@ Contém informações de estado sobre o processo relacionado ao alerta.
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|accountName|String|Identificador da conta de usuário (contexto da conta de usuário o processo executado em) por exemplo, AccountName, SID e assim por diante.|
+|accountName|Cadeia de caracteres|Identificador da conta de usuário (contexto da conta de usuário o processo executado em) por exemplo, AccountName, SID e assim por diante.|
 |commandLine|String|A linha de comando de invocação de processo completo, incluindo todos os parâmetros.|
 |createdDateTime|DateTimeOffset|Hora em que o processo foi iniciado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |fileHash|[fileHash](filehash.md)|Tipo complexo contendo hashes de arquivo (criptográfico e diferencia local).|
 |integrityLevel|processIntegrityLevel|O nível de integridade do processo. Os possíveis valores são: `unknown`, `untrusted`, `low`, `medium`, `high`, `system`.|
-|iselevados|Boolean|True se o processo é elevado.|
-|nome|String|O nome do arquivo de imagem do processo.|
+|iselevados|Booliano|True se o processo é elevado.|
+|nome|Cadeia de caracteres|O nome do arquivo de imagem do processo.|
 |parentProcessCreatedDateTime|DateTimeOffset|DateTime no qual o processo pai foi iniciado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |parentProcessId|Int32|A ID de processo (PID) do processo pai.|
-|parentProcessName|String|O nome do arquivo de imagem do processo pai.|
+|parentProcessName|Cadeia de caracteres|O nome do arquivo de imagem do processo pai.|
 |caminho|String|Caminho completo, incluindo o nome do arquivo.|
 |Identificação|Int32|A identificação do processo (PID) do processo.|
 

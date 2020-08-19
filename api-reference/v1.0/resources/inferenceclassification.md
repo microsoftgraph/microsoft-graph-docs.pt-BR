@@ -2,21 +2,21 @@
 title: Tipo de recurso inferenceClassification
 description: 'Classificação das mensagens de um usuário para possibilitar a atenção nas mensagens que são mais relevantes ou importantes para o usuário. '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 894deaf58f8e2e6466a6670caadb1d587b2a227a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 67b115001bed8e95093598bc5bb9f1969fbb3493
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531311"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808932"
 ---
 # <a name="inferenceclassification-resource-type"></a>Tipo de recurso inferenceClassification
 
 Namespace: microsoft.graph
 
-Classificação das mensagens de um usuário para possibilitar a atenção nas mensagens que são mais relevantes ou importantes para o usuário. 
+Classificação das mensagens de um usuário para possibilitar a atenção nas mensagens que são mais relevantes ou importantes para o usuário.
 
 Para saber mais, consulte [Gerenciar a Caixa de Entrada Prioritária](manage-focused-inbox.md).
 
@@ -33,7 +33,7 @@ Para saber mais, consulte [Gerenciar a Caixa de Entrada Prioritária](manage-foc
 |:---------------|:--------|:----------|
 |id|cadeia de caracteres| Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |overrides|Coleção [inferenceClassificationOverride](inferenceclassificationoverride.md)| Um conjunto de substituições para um usuário sempre classificar mensagens a partir de remetentes específicos, de maneiras específicas: `focused`, ou `other`. Somente leitura. Anulável.|

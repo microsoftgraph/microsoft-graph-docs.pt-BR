@@ -2,15 +2,15 @@
 title: Tipo de recurso attendee
 description: Um participante do evento. Pode ser uma pessoa ou recurso, como uma sala de reunião ou equipamento, que seja configurado como um recurso no Exchange Server para o locatário.
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6c90d086afb7716dc3696443f18931f17cb291d9
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 858018ac269fdf16929e2f0efea6ec40bada7639
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427239"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808358"
 ---
 # <a name="attendee-resource-type"></a>Tipo de recurso attendee
 
@@ -26,7 +26,7 @@ Derivado de [attendeeBase](attendeebase.md).
 |emailAddress|[emailAddress](emailaddress.md)|Inclui o nome e endereço SMTP do participante.|
 |proposedNewTime|[timeSlot](timeslot.md)|Uma data/hora alternativa proposta pelo participante para que uma solicitação de reunião inicie e termine. Se o participante não propôs outra vez, essa propriedade não é incluída em uma resposta de um evento GET.|
 |status|[ResponseStatus](responsestatus.md)|A resposta do participante (nenhum, aceito, recusado, etc.) para o evento e a data e a hora em que a resposta foi enviada.|
-|tipo|Cadeia de caracteres|O tipo de participante: `required`, `optional` ou `resource`.|
+|type|Cadeia de caracteres|O tipo de participante: `required`, `optional` ou `resource`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

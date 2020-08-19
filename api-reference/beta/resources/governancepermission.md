@@ -4,29 +4,29 @@ description: 'Representa a permissão de acesso que um governanceSubject tem a u
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 3efdebea07bb824b2314af516810ca36ad43adc9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: 113f25cd276cf01ce46e3c410ca4b5b409417d98
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497619"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809513"
 ---
 # <a name="governancepermission-resource-type"></a>tipo de recurso governancePermission
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a permissão de acesso que um [governanceSubject](../resources/governancesubject.md) tem a um [entidadegovernanceresource](../resources/governanceresource.md)específico.  
+Representa a permissão de acesso que um [governanceSubject](../resources/governancesubject.md) tem a um [entidadegovernanceresource](../resources/governanceresource.md)específico.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accessLevel|String|O nível de acesso. Valores válidos: ``None``, ``UserRead``, ``AdminRead``e ``AdminReadWrite``.|
-|isActive|Boolean|Indica se o solicitante tem qualquer atribuição de função ativa para o nível de acesso.|
-|isqualificável|Boolean|Indica se o solicitante tem qualquer atribuição de função qualificada para o nível de acesso.|
+|accessLevel|String|O nível de acesso. Valores válidos: ``None`` , ``UserRead`` , ``AdminRead`` e ``AdminReadWrite`` .|
+|isActive|Booliano|Indica se o solicitante tem qualquer atribuição de função ativa para o nível de acesso.|
+|isqualificável|Booliano|Indica se o solicitante tem qualquer atribuição de função qualificada para o nível de acesso.|
 
 ## <a name="json-representation"></a>Representação JSON
 

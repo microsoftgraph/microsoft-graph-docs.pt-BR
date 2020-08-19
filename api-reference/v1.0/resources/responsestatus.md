@@ -2,19 +2,19 @@
 title: Tipo de recurso responseStatus
 description: O status de resposta de uma solicitação de reunião.
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 532cf48f59b94fefe8aa1c25546c066db0126e85
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 77adc43ef3485f7fcf42a8c1c77edc5d123a3424
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446965"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812657"
 ---
 # <a name="responsestatus-resource-type"></a>Tipo de recurso responseStatus
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 O status de resposta de uma solicitação de reunião.
 

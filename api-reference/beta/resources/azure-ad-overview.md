@@ -4,13 +4,13 @@ description: O Microsoft Graph para o Azure AD (Azure Active Directory) fornece 
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: b2d6bff52e7defbf487b0cbe9016dd278591588b
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+author: dkershaw10
+ms.openlocfilehash: 84df7868014f6a6cdc4f4c793e838aa3de1b0f82
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080867"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812517"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 
