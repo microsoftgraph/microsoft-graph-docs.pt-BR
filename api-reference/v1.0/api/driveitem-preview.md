@@ -3,38 +3,38 @@ title: 'driveItem: visualização'
 description: Esta ação permite que você obtenha URLs que podem ser inseridas de curta duração em um item para renderizar uma visualização temporária.
 localization_priority: Normal
 ms.prod: sharepoint
-author: ''
+author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 95466aaeb0cfb9c4127391f4e19a75f58ce2931d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 470af653190001623ea90f6afb7955a3727cceb5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517682"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808435"
 ---
-# <a name="driveitem-preview"></a><span data-ttu-id="283fb-103">driveItem: visualização</span><span class="sxs-lookup"><span data-stu-id="283fb-103">driveItem: preview</span></span>
+# <a name="driveitem-preview"></a><span data-ttu-id="ba018-103">driveItem: visualização</span><span class="sxs-lookup"><span data-stu-id="ba018-103">driveItem: preview</span></span>
 
-<span data-ttu-id="283fb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="283fb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ba018-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ba018-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="283fb-105">Esta ação permite que você obtenha URLs que podem ser inseridas de curta duração em um item para renderizar uma visualização temporária.</span><span class="sxs-lookup"><span data-stu-id="283fb-105">This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview.</span></span>
+<span data-ttu-id="ba018-105">Esta ação permite que você obtenha URLs que podem ser inseridas de curta duração em um item para renderizar uma visualização temporária.</span><span class="sxs-lookup"><span data-stu-id="ba018-105">This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview.</span></span>
 
-<span data-ttu-id="283fb-106">Se você quiser obter links incorporáveis de longa duração, use a API [CreateLink][] em vez disso.</span><span class="sxs-lookup"><span data-stu-id="283fb-106">If you want to obtain long-lived embeddable links, use the [createLink][] API instead.</span></span>
+<span data-ttu-id="ba018-106">Se você quiser obter links incorporáveis de longa duração, use a API [CreateLink][] em vez disso.</span><span class="sxs-lookup"><span data-stu-id="ba018-106">If you want to obtain long-lived embeddable links, use the [createLink][] API instead.</span></span>
 
-> <span data-ttu-id="283fb-107">**Observação:** No momento, a ação de **Visualização** só está disponível no SharePoint e no onedrive for Business.</span><span class="sxs-lookup"><span data-stu-id="283fb-107">**Note:** The **preview** action is currently only available on SharePoint and OneDrive for Business.</span></span>
+> <span data-ttu-id="ba018-107">**Observação:** No momento, a ação de **Visualização** só está disponível no SharePoint e no onedrive for Business.</span><span class="sxs-lookup"><span data-stu-id="ba018-107">**Note:** The **preview** action is currently only available on SharePoint and OneDrive for Business.</span></span>
 
 [createLink]: driveitem-createlink.md
 
-## <a name="permissions"></a><span data-ttu-id="283fb-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="283fb-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ba018-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="ba018-109">Permissions</span></span>
 
-<span data-ttu-id="283fb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="283fb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ba018-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ba018-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="283fb-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="283fb-112">Permission type</span></span>                        | <span data-ttu-id="283fb-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="283fb-113">Permissions (from least to most privileged)</span></span>
+| <span data-ttu-id="ba018-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ba018-112">Permission type</span></span>                        | <span data-ttu-id="ba018-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ba018-113">Permissions (from least to most privileged)</span></span>
 |:---------------------------------------|:-------------------------------------------
-| <span data-ttu-id="283fb-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="283fb-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="283fb-115">Files. Read, files. ReadWrite, files. ReadWrite. All, sites. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="283fb-115">Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>
-| <span data-ttu-id="283fb-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="283fb-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="283fb-117">Files. Read, files. ReadWrite, files. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="283fb-117">Files.Read, Files.ReadWrite, Files.ReadWrite.All</span></span>
-| <span data-ttu-id="283fb-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="283fb-118">Application</span></span>                            | <span data-ttu-id="283fb-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="283fb-119">Not supported.</span></span>
+| <span data-ttu-id="ba018-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ba018-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="ba018-115">Files. Read, files. ReadWrite, files. ReadWrite. All, sites. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="ba018-115">Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>
+| <span data-ttu-id="ba018-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ba018-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ba018-117">Files. Read, files. ReadWrite, files. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="ba018-117">Files.Read, Files.ReadWrite, Files.ReadWrite.All</span></span>
+| <span data-ttu-id="ba018-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ba018-118">Application</span></span>                            | <span data-ttu-id="ba018-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ba018-119">Not supported.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="283fb-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="283fb-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ba018-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ba018-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -47,17 +47,17 @@ POST /users/{userId}/drive/items/{itemId}/preview
 POST /shares/{shareId}/driveItem/preview
 ```
 
-## <a name="request-body"></a><span data-ttu-id="283fb-121">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="283fb-121">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ba018-121">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ba018-121">Request body</span></span>
 
-<span data-ttu-id="283fb-122">O corpo da solicitação define as propriedades da URL incorporável que seu aplicativo está solicitando.</span><span class="sxs-lookup"><span data-stu-id="283fb-122">The body of the request defines properties of the embeddable URL your application is requesting.</span></span>
-<span data-ttu-id="283fb-123">A solicitação deve ser um objeto JSON com as seguintes propriedades.</span><span class="sxs-lookup"><span data-stu-id="283fb-123">The request should be a JSON object with the following properties.</span></span>
+<span data-ttu-id="ba018-122">O corpo da solicitação define as propriedades da URL incorporável que seu aplicativo está solicitando.</span><span class="sxs-lookup"><span data-stu-id="ba018-122">The body of the request defines properties of the embeddable URL your application is requesting.</span></span>
+<span data-ttu-id="ba018-123">A solicitação deve ser um objeto JSON com as seguintes propriedades.</span><span class="sxs-lookup"><span data-stu-id="ba018-123">The request should be a JSON object with the following properties.</span></span>
 
-|   <span data-ttu-id="283fb-124">Nome</span><span class="sxs-lookup"><span data-stu-id="283fb-124">Name</span></span>      |  <span data-ttu-id="283fb-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="283fb-125">Type</span></span>         | <span data-ttu-id="283fb-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="283fb-126">Description</span></span>
+|   <span data-ttu-id="ba018-124">Nome</span><span class="sxs-lookup"><span data-stu-id="ba018-124">Name</span></span>      |  <span data-ttu-id="ba018-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="ba018-125">Type</span></span>         | <span data-ttu-id="ba018-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="ba018-126">Description</span></span>
 |:------------|:--------------|:-----------------------------------------------
-| <span data-ttu-id="283fb-127">page</span><span class="sxs-lookup"><span data-stu-id="283fb-127">page</span></span>        | <span data-ttu-id="283fb-128">Cadeia de caracteres/número</span><span class="sxs-lookup"><span data-stu-id="283fb-128">string/number</span></span> | <span data-ttu-id="283fb-129">Opcional.</span><span class="sxs-lookup"><span data-stu-id="283fb-129">Optional.</span></span> <span data-ttu-id="283fb-130">Número de página do documento para iniciar em, se aplicável.</span><span class="sxs-lookup"><span data-stu-id="283fb-130">Page number of document to start at, if applicable.</span></span> <span data-ttu-id="283fb-131">Especificado como cadeia de caracteres para casos de uso futuros em relação a tipos de arquivo como ZIP.</span><span class="sxs-lookup"><span data-stu-id="283fb-131">Specified as string for future use cases around file types such as ZIP.</span></span>
-| <span data-ttu-id="283fb-132">zoom</span><span class="sxs-lookup"><span data-stu-id="283fb-132">zoom</span></span>        | <span data-ttu-id="283fb-133">number</span><span class="sxs-lookup"><span data-stu-id="283fb-133">number</span></span>        | <span data-ttu-id="283fb-134">Opcional.</span><span class="sxs-lookup"><span data-stu-id="283fb-134">Optional.</span></span> <span data-ttu-id="283fb-135">Nível de zoom para iniciar em, se aplicável.</span><span class="sxs-lookup"><span data-stu-id="283fb-135">Zoom level to start at, if applicable.</span></span>
+| <span data-ttu-id="ba018-127">page</span><span class="sxs-lookup"><span data-stu-id="ba018-127">page</span></span>        | <span data-ttu-id="ba018-128">Cadeia de caracteres/número</span><span class="sxs-lookup"><span data-stu-id="ba018-128">string/number</span></span> | <span data-ttu-id="ba018-129">Opcional.</span><span class="sxs-lookup"><span data-stu-id="ba018-129">Optional.</span></span> <span data-ttu-id="ba018-130">Número de página do documento para iniciar em, se aplicável.</span><span class="sxs-lookup"><span data-stu-id="ba018-130">Page number of document to start at, if applicable.</span></span> <span data-ttu-id="ba018-131">Especificado como cadeia de caracteres para casos de uso futuros em relação a tipos de arquivo como ZIP.</span><span class="sxs-lookup"><span data-stu-id="ba018-131">Specified as string for future use cases around file types such as ZIP.</span></span>
+| <span data-ttu-id="ba018-132">zoom</span><span class="sxs-lookup"><span data-stu-id="ba018-132">zoom</span></span>        | <span data-ttu-id="ba018-133">number</span><span class="sxs-lookup"><span data-stu-id="ba018-133">number</span></span>        | <span data-ttu-id="ba018-134">Opcional.</span><span class="sxs-lookup"><span data-stu-id="ba018-134">Optional.</span></span> <span data-ttu-id="ba018-135">Nível de zoom para iniciar em, se aplicável.</span><span class="sxs-lookup"><span data-stu-id="ba018-135">Zoom level to start at, if applicable.</span></span>
 
-## <a name="response"></a><span data-ttu-id="283fb-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="283fb-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ba018-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="ba018-136">Response</span></span>
 
 ```json
 {
@@ -67,17 +67,17 @@ POST /shares/{shareId}/driveItem/preview
 }
 ```
 
-<span data-ttu-id="283fb-137">A resposta será um objeto JSON que contém as seguintes propriedades:</span><span class="sxs-lookup"><span data-stu-id="283fb-137">The response will be a JSON object containing the following properties:</span></span>
+<span data-ttu-id="ba018-137">A resposta será um objeto JSON que contém as seguintes propriedades:</span><span class="sxs-lookup"><span data-stu-id="ba018-137">The response will be a JSON object containing the following properties:</span></span>
 
-| <span data-ttu-id="283fb-138">Nome</span><span class="sxs-lookup"><span data-stu-id="283fb-138">Name</span></span>           | <span data-ttu-id="283fb-139">Tipo</span><span class="sxs-lookup"><span data-stu-id="283fb-139">Type</span></span>   | <span data-ttu-id="283fb-140">Descrição</span><span class="sxs-lookup"><span data-stu-id="283fb-140">Description</span></span>
+| <span data-ttu-id="ba018-138">Name</span><span class="sxs-lookup"><span data-stu-id="ba018-138">Name</span></span>           | <span data-ttu-id="ba018-139">Tipo</span><span class="sxs-lookup"><span data-stu-id="ba018-139">Type</span></span>   | <span data-ttu-id="ba018-140">Descrição</span><span class="sxs-lookup"><span data-stu-id="ba018-140">Description</span></span>
 |:---------------|:-------|:---------------------------------------------------
-| <span data-ttu-id="283fb-141">getUrl</span><span class="sxs-lookup"><span data-stu-id="283fb-141">getUrl</span></span>         | <span data-ttu-id="283fb-142">string</span><span class="sxs-lookup"><span data-stu-id="283fb-142">string</span></span> | <span data-ttu-id="283fb-143">URL adequada para incorporação usando HTTP GET (IFrames, etc.)</span><span class="sxs-lookup"><span data-stu-id="283fb-143">URL suitable for embedding using HTTP GET (iframes, etc.)</span></span>
-| <span data-ttu-id="283fb-144">postUrl</span><span class="sxs-lookup"><span data-stu-id="283fb-144">postUrl</span></span>        | <span data-ttu-id="283fb-145">string</span><span class="sxs-lookup"><span data-stu-id="283fb-145">string</span></span> | <span data-ttu-id="283fb-146">URL adequada para incorporação usando HTTP POST (Form Post, JS, etc.)</span><span class="sxs-lookup"><span data-stu-id="283fb-146">URL suitable for embedding using HTTP POST (form post, JS, etc.)</span></span>
-| <span data-ttu-id="283fb-147">postparameters</span><span class="sxs-lookup"><span data-stu-id="283fb-147">postParameters</span></span> | <span data-ttu-id="283fb-148">string</span><span class="sxs-lookup"><span data-stu-id="283fb-148">string</span></span> | <span data-ttu-id="283fb-149">LANÇAR parâmetros para incluir se estiver usando postUrl</span><span class="sxs-lookup"><span data-stu-id="283fb-149">POST parameters to include if using postUrl</span></span>
+| <span data-ttu-id="ba018-141">getUrl</span><span class="sxs-lookup"><span data-stu-id="ba018-141">getUrl</span></span>         | <span data-ttu-id="ba018-142">string</span><span class="sxs-lookup"><span data-stu-id="ba018-142">string</span></span> | <span data-ttu-id="ba018-143">URL adequada para incorporação usando HTTP GET (IFrames, etc.)</span><span class="sxs-lookup"><span data-stu-id="ba018-143">URL suitable for embedding using HTTP GET (iframes, etc.)</span></span>
+| <span data-ttu-id="ba018-144">postUrl</span><span class="sxs-lookup"><span data-stu-id="ba018-144">postUrl</span></span>        | <span data-ttu-id="ba018-145">string</span><span class="sxs-lookup"><span data-stu-id="ba018-145">string</span></span> | <span data-ttu-id="ba018-146">URL adequada para incorporação usando HTTP POST (Form Post, JS, etc.)</span><span class="sxs-lookup"><span data-stu-id="ba018-146">URL suitable for embedding using HTTP POST (form post, JS, etc.)</span></span>
+| <span data-ttu-id="ba018-147">postparameters</span><span class="sxs-lookup"><span data-stu-id="ba018-147">postParameters</span></span> | <span data-ttu-id="ba018-148">string</span><span class="sxs-lookup"><span data-stu-id="ba018-148">string</span></span> | <span data-ttu-id="ba018-149">LANÇAR parâmetros para incluir se estiver usando postUrl</span><span class="sxs-lookup"><span data-stu-id="ba018-149">POST parameters to include if using postUrl</span></span>
 
-<span data-ttu-id="283fb-150">GetUrl, postUrl ou ambos podem ser retornados, dependendo do estado atual do suporte de embed para as opções especificadas.</span><span class="sxs-lookup"><span data-stu-id="283fb-150">Either getUrl, postUrl, or both might be returned depending on the current state of embed support for the specified options.</span></span>
+<span data-ttu-id="ba018-150">GetUrl, postUrl ou ambos podem ser retornados, dependendo do estado atual do suporte de embed para as opções especificadas.</span><span class="sxs-lookup"><span data-stu-id="ba018-150">Either getUrl, postUrl, or both might be returned depending on the current state of embed support for the specified options.</span></span>
 
-<span data-ttu-id="283fb-151">postparameters é uma cadeia de caracteres `application/x-www-form-urlencoded`formatada como e, se estiver executando uma postagem no postUrl, o tipo de conteúdo deve ser definido de acordo.</span><span class="sxs-lookup"><span data-stu-id="283fb-151">postParameters is a string formatted as `application/x-www-form-urlencoded`, and if performing a POST to the postUrl the content-type should be set accordingly.</span></span> <span data-ttu-id="283fb-152">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="283fb-152">For example:</span></span>
+<span data-ttu-id="ba018-151">postparameters é uma cadeia de caracteres formatada como `application/x-www-form-urlencoded` e, se estiver executando uma postagem no postUrl, o tipo de conteúdo deve ser definido de acordo.</span><span class="sxs-lookup"><span data-stu-id="ba018-151">postParameters is a string formatted as `application/x-www-form-urlencoded`, and if performing a POST to the postUrl the content-type should be set accordingly.</span></span> <span data-ttu-id="ba018-152">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="ba018-152">For example:</span></span>
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded
@@ -85,6 +85,6 @@ Content-Type: application/x-www-form-urlencoded
 param1=value&param2=another%20value
 ```
 
-### <a name="pagezoom"></a><span data-ttu-id="283fb-153">Página/zoom</span><span class="sxs-lookup"><span data-stu-id="283fb-153">Page/zoom</span></span>
+### <a name="pagezoom"></a><span data-ttu-id="ba018-153">Página/zoom</span><span class="sxs-lookup"><span data-stu-id="ba018-153">Page/zoom</span></span>
 
-<span data-ttu-id="283fb-154">As opções de ' página ' e ' Zoom ' podem não estar disponíveis para todos os aplicativos de visualização, mas serão aplicadas se o aplicativo de visualização oferecer suporte a ele.</span><span class="sxs-lookup"><span data-stu-id="283fb-154">The 'page' and 'zoom' options may not be available for all preview apps, but will be applied if the preview app supports it.</span></span>
+<span data-ttu-id="ba018-154">As opções de ' página ' e ' Zoom ' podem não estar disponíveis para todos os aplicativos de visualização, mas serão aplicadas se o aplicativo de visualização oferecer suporte a ele.</span><span class="sxs-lookup"><span data-stu-id="ba018-154">The 'page' and 'zoom' options may not be available for all preview apps, but will be applied if the preview app supports it.</span></span>

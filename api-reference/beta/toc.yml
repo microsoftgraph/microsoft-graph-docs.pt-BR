@@ -312,7 +312,7 @@ items:
                     href: api/iteminsightssettings-get.md
                   - name: Atualizar
                     href: api/iteminsightssettings-update.md
-          - name: Correio
+          - name: Email
             href: resources/message.md
             items:
               - name: Criar pasta de email
@@ -10252,7 +10252,7 @@ items:
                       - name: Obter
                         href: api/accesspackagecatalog-get.md
                       - name: Atualizar
-                        href: api/accesspackage-update.md
+                        href: api/accesspackagecatalog-update.md
                       - name: Excluir
                         href: api/accesspackagecatalog-delete.md
                       - name: Listar recursos
@@ -10730,15 +10730,37 @@ items:
               - name: Excluir o perfil do usuário
                 href: api/profile-delete.md
               - name: Informações da conta
-                href: resources/useraccountinformation.md
                 items:
+                  - name: Informações da conta de usuário
+                    href: resources/useraccountinformation.md
                   - name: Listar
-                    href: api/profile-list-account.md
+                    href: api/profile-list-accounts.md
+                  - name: Criar
+                    href: api/profile-post-accounts.md
                   - name: Obter
                     href: api/useraccountinformation-get.md
-              - name: Data especial
-                href: resources/personanniversary.md
+                  - name: Atualizar
+                    href: api/useraccountinformation-update.md
+                  - name: Excluir
+                    href: api/useraccountinformation-delete.md
+              - name: Endereços
                 items:
+                  - name: Endereço do item
+                    href: resources/itemaddress.md
+                  - name: Listar
+                    href: api/profile-list-addresses.md
+                  - name: Criar
+                    href: api/profile-post-addresses.md
+                  - name: Obter
+                    href: api/itemaddress-get.md
+                  - name: Atualizar
+                    href: api/itemaddress-update.md
+                  - name: Excluir
+                    href: api/itemaddress-delete.md
+              - name: Data especial
+                items:
+                  - name: Aniversário de pessoa
+                    href: resources/personanniversary.md
                   - name: Listar
                     href: api/profile-list-anniversaries.md
                   - name: Criar
@@ -10749,9 +10771,38 @@ items:
                     href: api/personanniversary-update.md
                   - name: Excluir
                     href: api/personanniversary-delete.md
-              - name: Atividade educacional
-                href: resources/educationalactivity.md
+              - name: Concede
                 items:
+                  - name: Prêmio Person
+                    href: resources/personaward.md
+                  - name: Listar
+                    href: api/profile-list-awards.md
+                  - name: Criar
+                    href: api/profile-post-awards.md
+                  - name: Obter
+                    href: api/personaward-get.md
+                  - name: Atualizar
+                    href: api/personaward-update.md
+                  - name: Excluir
+                    href: api/personaward-delete.md
+              - name: Certificações
+                items:
+                  - name: Certificação de pessoas
+                    href: resources/personcertification.md
+                  - name: Listar
+                    href: api/profile-list-certifications.md
+                  - name: Criar
+                    href: api/profile-post-certifications.md
+                  - name: Obter
+                    href: api/personcertification-get.md
+                  - name: Atualizar
+                    href: api/personcertification-update.md
+                  - name: Excluir
+                    href: api/personcertification-delete.md
+              - name: Atividade educacional
+                items:
+                  - name: Atividade educacional
+                    href: resources/educationalactivity.md
                   - name: Listar
                     href: api/profile-list-educationalactivities.md
                   - name: Criar
@@ -10763,8 +10814,9 @@ items:
                   - name: Excluir
                     href: api/educationalactivity-delete.md
               - name: Email
-                href: resources/itememail.md
                 items:
+                  - name: Email do item
+                    href: resources/itememail.md
                   - name: Listar
                     href: api/profile-list-emails.md
                   - name: Criar
@@ -10776,8 +10828,9 @@ items:
                   - name: Excluir
                     href: api/itememail-delete.md
               - name: Aos
-                href: resources/personinterest.md
                 items:
+                  - name: Interesse de pessoas
+                    href: resources/personinterest.md
                   - name: Listar
                     href: api/profile-list-interests.md
                   - name: Criar
@@ -10789,8 +10842,9 @@ items:
                   - name: Excluir
                     href: api/personinterest-delete.md
               - name: Idiomas
-                href: resources/languageproficiency.md
                 items:
+                  - name: Proficiência em idiomas
+                    href: resources/languageproficiency.md
                   - name: Listar
                     href: api/profile-list-languages.md
                   - name: Criar
@@ -10802,8 +10856,9 @@ items:
                   - name: Excluir
                     href: api/languageproficiency-delete.md
               - name: Nomes
-                href: resources/personname.md
                 items:
+                  - name: Nome da pessoa
+                    href: resources/personname.md
                   - name: Listar
                     href: api/profile-list-names.md
                   - name: Criar
@@ -10814,9 +10869,38 @@ items:
                     href: api/personname-update.md
                   - name: Excluir
                     href: api/personname-delete.md
-              - name: Telefones
-                href: resources/itemphone.md
+              - name: Observações
                 items:
+                  - name: Anotação de pessoa
+                    href: resources/personannotation.md
+                  - name: Listar
+                    href: api/profile-list-notes.md
+                  - name: Criar
+                    href: api/profile-post-notes.md
+                  - name: Obter
+                    href: api/personannotation-get.md
+                  - name: Atualizar
+                    href: api/personannotation-update.md
+                  - name: Excluir
+                    href: api/personannotation-delete.md
+              - name: Patentes
+                items:
+                  - name: Patente do item
+                    href: resources/itempatent.md
+                  - name: Listar
+                    href: api/profile-list-patents.md
+                  - name: Criar
+                    href: api/profile-post-patents.md
+                  - name: Obter
+                    href: api/itempatent-get.md
+                  - name: Atualizar
+                    href: api/itempatent-update.md
+                  - name: Excluir
+                    href: api/itempatent-delete.md
+              - name: Telefones
+                items:
+                  - name: Telefone de item
+                    href: resources/itemphone.md
                   - name: Listar
                     href: api/profile-list-phones.md
                   - name: Criar
@@ -10828,8 +10912,9 @@ items:
                   - name: Excluir
                     href: api/itemphone-delete.md
               - name: Posições
-                href: resources/workposition.md
                 items:
+                  - name: Posição de trabalho
+                    href: resources/workposition.md
                   - name: Listar
                     href: api/profile-list-positions.md
                   - name: Criar
@@ -10841,8 +10926,9 @@ items:
                   - name: Excluir
                     href: api/workposition-delete.md
               - name: Projects
-                href: resources/projectparticipation.md
                 items:
+                  - name: Participação do projeto
+                    href: resources/projectparticipation.md
                   - name: Listar
                     href: api/profile-list-projects.md
                   - name: Criar
@@ -10853,9 +10939,38 @@ items:
                     href: api/projectparticipation-update.md
                   - name: Excluir
                     href: api/projectparticipation-delete.md
-              - name: Habilidades
-                href: resources/skillproficiency.md
+              - name: Publicações
                 items:
+                  - name: Publicação de item
+                    href: resources/itempublication.md
+                  - name: Listar
+                    href: api/profile-list-publications.md
+                  - name: Criar
+                    href: api/profile-post-publications.md
+                  - name: Obter
+                    href: api/itempublication-get.md
+                  - name: Atualizar
+                    href: api/itempublication-update.md
+                  - name: Excluir
+                    href: api/itempublication-delete.md
+              - name: Responsabilidades
+                items:
+                  - name: Responsabilidade da pessoa
+                    href: resources/personresponsibility.md
+                  - name: Listar
+                    href: api/profile-list-responsibilities.md
+                  - name: Criar
+                    href: api/profile-post-responsibilities.md
+                  - name: Obter
+                    href: api/personresponsibility-get.md
+                  - name: Atualizar
+                    href: api/personresponsibility-update.md
+                  - name: Excluir
+                    href: api/personresponsibility-delete.md
+              - name: Habilidades
+                items:
+                  - name: Proficiência da habilidade
+                    href: resources/skillproficiency.md
                   - name: Listar
                     href: api/profile-list-skills.md
                   - name: Criar
@@ -10867,8 +10982,9 @@ items:
                   - name: Excluir
                     href: api/skillproficiency-delete.md
               - name: Contas da Web
-                href: resources/webaccount.md
                 items:
+                  - name: Conta da Web
+                    href: resources/webaccount.md
                   - name: Listar
                     href: api/profile-list-webaccounts.md
                   - name: Criar
@@ -10880,8 +10996,9 @@ items:
                   - name: Excluir
                     href: api/webaccount-delete.md
               - name: Sites
-                href: resources/personwebsite.md
                 items:
+                  - name: Site de pessoas
+                    href: resources/personwebsite.md
                   - name: Listar
                     href: api/profile-list-websites.md
                   - name: Criar
