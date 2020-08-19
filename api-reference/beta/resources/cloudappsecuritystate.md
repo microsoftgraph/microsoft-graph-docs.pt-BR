@@ -4,17 +4,17 @@ description: Contém informações de estado sobre o aplicativo de nuvem (destin
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: d8e2df4dd25f4209996b4e5cf4f2083790385e84
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 2b16d971aa22a51552588c96f4ddbb03f1d34142
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507639"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810570"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>tipo de recurso cloudAppSecurityState
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Contém informações de estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
 

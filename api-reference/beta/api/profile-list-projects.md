@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 77dad15dce6324a58305a3b1ce7b0abdee269e7e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 338f1830f321ac470d5075fd5e885c80d7a5c272
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455169"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810668"
 ---
 # <a name="list-projects"></a>Listar projetos
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
 | Aplicativo                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -36,11 +36,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 GET /me/profile/projects
+GET /users/{id | userPrincipalName}/profile/projects
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 |Nome            |Valor    |Descrição                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -62,7 +63,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [projectParticipation](../resources/projectparticipation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [projectParticipation](../resources/projectparticipation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -114,75 +115,59 @@ Content-type: application/json
 {
   "value": [
     {
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "source": null,
       "categories": [
-        "categories-value"
+        "Branding"
       ],
       "client": {
-        "displayName": "displayName-value",
-        "pronunciation": "pronunciation-value",
-        "department": "department-value",
-        "officeLocation": "officeLocation-value",
-        "address": {
-          "type": "type-value",
-          "postOfficeBox": "postOfficeBox-value",
-          "street": "street-value",
-          "city": "city-value",
-          "state": "state-value",
-          "countryOrRegion": "countryOrRegion-value",
-          "postalCode": "postalCode-value"
-        },
-        "webUrl": "webUrl-value"
+        "displayName": "Contoso Ltd.",
+        "pronunciation": null,
+        "department": "Corporate Marketing",
+        "officeLocation": null,
+        "address": null,
+        "webUrl": "https://www.contoso.com"
       },
-      "displayName": "displayName-value",
+      "displayName": "Contoso Re-branding Project",
       "detail": {
         "company": {
-          "displayName": "displayName-value",
-          "pronunciation": "pronunciation-value",
-          "department": "department-value",
-          "officeLocation": "officeLocation-value",
-          "address": {
-            "type": "type-value",
-            "postOfficeBox": "postOfficeBox-value",
-            "street": "street-value",
-            "city": "city-value",
-            "state": "state-value",
-            "countryOrRegion": "countryOrRegion-value",
-            "postalCode": "postalCode-value"
-          },
-          "webUrl": "webUrl-value"
+          "displayName": "Adventureworks Inc.",
+          "pronunciation": null,
+          "department": "Consulting",
+          "officeLocation": null,
+          "address": null,
+          "webUrl": "https://adventureworks.com"
         },
-        "description": "description-value",
+        "description": "Rebranding of Contoso Ltd.",
         "endMonthYear": "datetime-value",
-        "jobTitle": "jobTitle-value",
-        "role": "role-value",
+        "jobTitle": "Lead PM Rebranding",
+        "role": "project management",
         "startMonthYear": "datetime-value",
-        "summary": "summary-value"
+        "summary": "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
       },
-      "colleagues": [
-        {
-          "displayName": "displayName-value",
-          "relationship": "relationship-value",
-          "userPrincipalName": "userPrincipalName-value"
-        }
-      ],
-      "sponsors": [
-        {
-          "displayName": "displayName-value",
-          "relationship": "relationship-value",
-          "userPrincipalName": "userPrincipalName-value"
-        }
-      ]
+      "colleagues": null,
+      "sponsors": null
     }
   ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List projects",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

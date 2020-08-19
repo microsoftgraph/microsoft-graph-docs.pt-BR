@@ -4,13 +4,13 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: fc6bb8b60c6c9df08373a76bd6bc5714758fc9cb
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+author: preetikr
+ms.openlocfilehash: 9d25d78d51a39d3240d0d7566b7037f55e379fe1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682135"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811109"
 ---
 # <a name="networkconnection-resource-type"></a>tipo de recurso networkConnection
 
@@ -29,7 +29,7 @@ Contém informações de estado sobre a conexão de rede relacionada ao alerta.
 |destinationDomain|String|Parte do domínio de destino da URL de destino. (por exemplo, ' www.contoso.com ').|
 |destinationLocation|String|Local (por mapeamento de endereço IP) associado ao destino de uma conexão de rede.|
 |destinationPort|String|Porta de destino (da conexão de rede).|
-|destinationUrl|String|URL de conexão de rede/cadeia de caracteres URI-excluindo parâmetros. (por exemplo, ' www.contoso.com/products/default.html ')|
+|destinationUrl|String|URL de conexão de rede/cadeia de caracteres URI-excluindo parâmetros. (por exemplo, ' www.contoso.com/products/default.htmL')|
 |direction|connectionDirection|Direção da conexão de rede. Os valores possíveis são: `unknown`, `inbound`, `outbound`.|
 |domainRegisteredDateTime|DateTimeOffset|Data em que o domínio de destino foi registrado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |localDnsName|String|A resolução de nome DNS local da forma como aparece no cache de DNS local do host (por exemplo, caso o arquivo "hosts" tenha sido adulterado).|
@@ -51,7 +51,7 @@ Contém informações de estado sobre a conexão de rede relacionada ao alerta.
 |:---|:---|:---|
 |desconhecido|-1|Protocolo desconhecido.|
 |IP|,0|Protocolo de Internet.|
-|ICMP|1 | Protocolo de mensagens de controle da Internet.|
+|ICMP|1| Protocolo de mensagens de controle da Internet.|
 |IGMP|duas| Protocolo de gerenciamento de grupos da Internet.|
 |ggp|3D| Gateway para protocolo gateway.|
 |IPv4|4 | Protocolo IP versão 4.|

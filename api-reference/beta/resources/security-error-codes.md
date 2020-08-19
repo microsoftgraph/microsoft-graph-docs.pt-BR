@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 1faba5ca71fe9478963120ec43d9eb9da08d721a
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: bf863b7a0acc2b7ece38f10272497cb3e5267d07
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618907"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810388"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Respostas de erro da API de segurança do Microsoft Graph
 
@@ -37,12 +37,14 @@ Se um provedor de dados retornar 2xx ou 404, ele não será mostrado no cabeçal
 
 ## <a name="example"></a>Exemplo
 
-Um usuário solicita `security/alerts/{alert_id}`.
+Um usuário solicita `security/alerts/{alert_id}` .
 
-    Provider 1: 404 (provider does not have a record of this alert ID)
-    Provider 2: 504 (provider timed out)
-    Provider 3: 200 (success)
-    Provider 4: 403 (customer has not licensed this provider)
+```
+Provider 1: 404 (provider does not have a record of this alert ID)
+Provider 2: 504 (provider timed out)
+Provider 3: 200 (success)
+Provider 4: 403 (customer has not licensed this provider)
+```
 
 Como 404 e 200 são condições esperadas, o cabeçalho de aviso contém o seguinte:
 
@@ -64,7 +66,7 @@ As ações em massa (criar, atualizar, excluir) podem gerar dois códigos de err
 
 O `$top` parâmetro de consulta OData tem um limite de 1000 alertas. É recomendável incluir apenas o `$top` e não o `$skip` na primeira consulta OBTER. Você pode usar `@odata.nextLink` para paginação. Se você precisar usar o `$skip`, ele tem um limite de 500 alertas. Por exemplo, `/security/alerts?$top=10&$skip=500` retornará um código de resposta `200 OK`, mas `/security/alerts?$top=10&$skip=501` retornará um código de resposta `400 Bad Request`. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
-Uma solução alternativa para esse limite é usar o `$filter` parâmetro de consulta OData com `eventDateTime` a entidade de alerta da API de segurança do Microsoft Graph, `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` usando e substituindo o valor DateTime pelo último alerta (1500th). Você também pode definir um intervalo para o `eventDateTime`; por exemplo, `alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z`.
+Uma solução alternativa para esse limite é usar o `$filter` parâmetro de consulta OData com a `eventDateTime` entidade de alerta da API de segurança do Microsoft Graph, usando `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` e substituindo o valor DateTime pelo último alerta (1500th). Você também pode definir um intervalo para o `eventDateTime` ; por exemplo, `alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z` .
 
 ## <a name="see-also"></a>Confira também
 

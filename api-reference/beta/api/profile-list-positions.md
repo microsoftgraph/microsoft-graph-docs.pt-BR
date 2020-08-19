@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 05304a8d6a3da42d8721c590d1b943a50dcea3a8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 60770c962298a764b686c6fa7c578c69e95dc0ec
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455144"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810676"
 ---
 # <a name="list-positions"></a>Listar posições
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
 | Aplicativo                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -36,11 +36,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 GET /me/profile/positions
+GET /users/{id | userPrincipalName}/profile/positions
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 |Nome            |Valor    |Descrição                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -62,7 +63,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [workPosition](../resources/workposition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [workPosition](../resources/workposition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -114,33 +115,56 @@ Content-type: application/json
 {
   "value": [
     {
-      "categories": [
-        "categories-value"
-      ],
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "source": null,
+      "categories": null,
       "detail": {
         "company": {
-          "displayName": "displayName-value",
-          "pronunciation": "pronunciation-value",
-          "department": "department-value",
-          "officeLocation": "officeLocation-value",
+          "displayName": "Adventureworks Ltd.",
+          "pronunciation": null,
+          "department": "Consulting",
+          "officeLocation": "AW23/344",
           "address": {
-            "type": "type-value",
-            "postOfficeBox": "postOfficeBox-value",
-            "street": "street-value",
-            "city": "city-value",
-            "state": "state-value",
-            "countryOrRegion": "countryOrRegion-value",
-            "postalCode": "postalCode-value"
+            "type": "business",
+            "postOfficeBox": null,
+            "street": "123 Patriachy Ponds",
+            "city": "Moscow",
+            "state": null,
+            "countryOrRegion": "Russian Federation",
+            "postalCode": "RU-34621"
           },
-          "webUrl": "webUrl-value"
+          "webUrl": "https://www.adventureworks.com"
         },
-        "description": "description-value",
-        "endMonthYear": "datetime-value",
-        "jobTitle": "jobTitle-value",
-        "role": "role-value",
+        "description": null,
+        "endMonthYear": null,
+        "jobTitle": "Senior Product Branding Manager II",
+        "role": "consulting",
         "startMonthYear": "datetime-value",
-        "summary": "summary-value"
-      }
+        "summary": null
+      },
+      "manager": null,
+      "colleagues": null,
+      "isCurrent": true
     }
   ]
 }

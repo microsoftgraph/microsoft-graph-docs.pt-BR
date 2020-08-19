@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b1c4a5069f192a481b9f4814115e3d6fcee6fc55
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 96c717171f683d2a32e62b4e79b80639e2cb5242
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427897"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810948"
 ---
 # <a name="delete-educationalactivity"></a>Excluir educationalActivity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -36,6 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 DELETE /me/profile/educationalActivities/{id} 
+DELETE /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -63,7 +64,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/user/profile/educationalActivities/{id}
+DELETE https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 ```
 
 ### <a name="response"></a>Resposta

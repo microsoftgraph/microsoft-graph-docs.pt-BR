@@ -4,21 +4,21 @@ description: 'Representa informações sobre um usuário no envio ou recebimento
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: e5117517bd9a2d25d5a29de57ab4a5d3c963ca89
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: ccd210eeecd84acf8094f7a55b1733e64c4a5437
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521247"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810465"
 ---
 # <a name="recipient-resource-type"></a>Tipo de recurso recipient
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa informações sobre um usuário no envio ou recebimento de um evento, mensagem ou postagem de grupo. 
+Representa informações sobre um usuário no envio ou recebimento de um evento, mensagem ou postagem de grupo.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

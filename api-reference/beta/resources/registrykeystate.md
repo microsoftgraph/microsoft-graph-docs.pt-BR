@@ -4,17 +4,17 @@ description: Contém informações sobre as alterações da chave do registro re
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 8f8f5aa0458666dfc10c4a3066534ea66821fb3a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 10d372f2184ccbee628b59866f84678ec6c843bd
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521191"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810444"
 ---
 # <a name="registrykeystate-resource-type"></a>tipo de recurso registryKeystate
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Contém informações sobre as alterações da chave do registro relacionadas ao alerta e o processo que alterou as chaves do registro.
 
@@ -22,7 +22,7 @@ Contém informações sobre as alterações da chave do registro relacionadas ao
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|Hive|registryHive|Uma [seção de registro do Windows](/windows/desktop/sysinfo/registry-hives) : <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE \SAM</li> <li>HKEY_LOCAL_MACHINE \Security</li> <li>HKEY_LOCAL_MACHINE \Software</li> <li>HKEY_LOCAL_MACHINE \System</li> <li>HKEY_USERS\\. Será.</li></ul> Os valores possíveis são: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSecurity`, `localMachineSoftware`, `localMachineSystem`, `usersDefault`.|
+|Hive|registryHive|Uma [seção de registro do Windows](/windows/desktop/sysinfo/registry-hives) : <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE \SAM</li> <li>HKEY_LOCAL_MACHINE \Security</li> <li>HKEY_LOCAL_MACHINE \Software</li> <li>HKEY_LOCAL_MACHINE \System</li> <li>HKEY_USERS \\ . Será.</li></ul> Os valores possíveis são: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSecurity`, `localMachineSoftware`, `localMachineSystem`, `usersDefault`.|
 |chave|String|Chave de registro atual (ou seja, alterada) (exclui HIVE).|
 |oldKey|String|Chave de registro anterior (ou seja, antes da alteração) (exclui HIVE).|
 |oldValueData|String|Dados anteriores (ou seja, antes da alteração) dos valores da chave do registro (conteúdo).|

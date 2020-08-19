@@ -4,17 +4,17 @@ description: Representa uma única atividade dentro de um aplicativo, por exempl
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: 79a728699a28cff6e5dfc7ac3174c55d9dd12a52
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: e811cadb7b592916d1a85fda3e9ece37f744f35f
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521422"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810515"
 ---
 # <a name="activity-resource-type"></a>tipo de recurso atividade
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

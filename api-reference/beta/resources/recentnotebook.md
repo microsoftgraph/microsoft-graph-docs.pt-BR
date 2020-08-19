@@ -4,17 +4,17 @@ description: Um bloco de notas do OneNote recentemente acessado. Um **recentNote
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 6a5df3f75a1cf41fa15d59ac987f8f16bb9fdfce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: jewan-microsoft
+ms.openlocfilehash: f75d3ce272d4f71c7a5ecbbc26c09e015d458ce7
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521261"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810466"
 ---
 # <a name="recentnotebook-resource-type"></a>tipo de recurso recentNotebook
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

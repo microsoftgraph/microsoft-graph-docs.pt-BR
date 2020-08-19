@@ -4,17 +4,17 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 582c3483d4292f634385461508bf579834dfd12e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: kszb
+ms.openlocfilehash: 50f37fdfd3441c256241b76ebcc6b144eb1486d7
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520405"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811045"
 ---
 # <a name="skypeforbusinessdeviceusageuserdetail-resource-type"></a>tipo de recurso skypeForBusinessDeviceUsageUserDetail
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -23,11 +23,11 @@ Namespace: Microsoft. Graph
 | reportRefreshDate | Data    |
 | userPrincipalName | String  |
 | lastActivityDate  | Data    |
-| usedWindows       | Boolean |
-| usedWindowsPhone  | Boolean |
-| usedAndroidPhone  | Boolean |
-| usediPhone        | Boolean |
-| usediPad          | Boolean |
+| usedWindows       | Booliano |
+| usedWindowsPhone  | Booliano |
+| usedAndroidPhone  | Booliano |
+| usediPhone        | Booliano |
+| usediPad          | Booliano |
 | reportPeriod      | String  |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -41,14 +41,14 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "userPrincipalName": "String", 
-  "lastActivityDate": "Date", 
-  "usedWindows": true, 
-  "usedWindowsPhone": true, 
-  "usedAndroidPhone": true, 
-  "usediPhone": true, 
-  "usediPad": true, 
+  "reportRefreshDate": "Date",
+  "userPrincipalName": "String",
+  "lastActivityDate": "Date",
+  "usedWindows": true,
+  "usedWindowsPhone": true,
+  "usedAndroidPhone": true,
+  "usediPhone": true,
+  "usediPad": true,
   "reportPeriod": "String"
 }
 ```

@@ -4,17 +4,17 @@ description: Um evento de risco detectado pela proteção de identidade do Azure
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: ec92a7a0b4d79cd55db36335a9138deb08c828eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: cloudhandler
+ms.openlocfilehash: 90b062fa0e7f6d577accabf6d8b458174d2f696c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522985"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810556"
 ---
 # <a name="leakedcredentialsriskevent-resource-type"></a>tipo de recurso leakedCredentialsRiskEvent
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

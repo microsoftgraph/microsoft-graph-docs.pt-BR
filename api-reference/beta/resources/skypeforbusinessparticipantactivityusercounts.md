@@ -4,17 +4,17 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: a3a7ac37aeeb68d240ffa2c0cdec81e7b2d07ddc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: kszb
+ms.openlocfilehash: e53ef85ce3fbe0be2a36adc218d565bdb78f64a0
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520363"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811067"
 ---
 # <a name="skypeforbusinessparticipantactivityusercounts-resource-type"></a>tipo de recurso skypeForBusinessParticipantActivityUserCounts
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,13 +40,13 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "im": 1024, 
-  "audioVideo": 196, 
-  "appSharing": 196, 
-  "web": 196, 
-  "dialInOut3rdParty": 196, 
-  "reportRefreshDate": "Date", 
-  "reportDate": "Date", 
+  "im": 1024,
+  "audioVideo": 196,
+  "appSharing": 196,
+  "web": 196,
+  "dialInOut3rdParty": 196,
+  "reportRefreshDate": "Date",
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```

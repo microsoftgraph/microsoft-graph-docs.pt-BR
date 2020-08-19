@@ -4,17 +4,17 @@ description: Expanda '.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: e6b8cf1c2a08ca600192a854ecc0848701b21665
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 952b20ba5fd7825c1094559952c239681d950db2
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456813"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810871"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Obter multiValueLegacyExtendedProperty
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,10 +26,10 @@ Há suporte para as seguintes fontes de dados:
 
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
-- [contactFolder](../resources/contactfolder.md) 
+- [contactFolder](../resources/contactfolder.md)
 - [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md) 
+- [message](../resources/message.md)
 - [Tarefa do Outlook](../resources/outlooktask.md)
 - [Pasta de tarefas do Outlook](../resources/outlooktaskfolder.md)
 
@@ -37,7 +37,7 @@ Também há suporte para os seguintes recursos de grupo:
 
 - grupo [calendar](../resources/calendar.md)
 - grupo [event](../resources/event.md)
-- grupo [post](../resources/post.md) 
+- grupo [post](../resources/post.md)
 
 Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.
 
@@ -57,7 +57,7 @@ Dependendo do recurso para o qual você está obtendo a propriedade estendida e 
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 | [Tarefa do Outlook](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Sem suporte |
 | [Pasta de tarefas do Outlook](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Sem suporte |
- 
+
 ## <a name="http-request"></a>Solicitação HTTP
 
 Obtenha uma instância de recurso expandida com uma propriedade estendida que corresponde a um filtro na propriedade **id**. Aplique a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de filtro.
@@ -150,7 +150,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `200 OK`. 
+Se tiver êxito, este método retornará um código de resposta `200 OK`.
 
 O corpo da resposta inclui um objeto que representa a instância de recurso solicitada, expandida com o objeto [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) correspondente.
 

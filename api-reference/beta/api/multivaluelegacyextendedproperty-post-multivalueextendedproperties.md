@@ -4,27 +4,27 @@ description: 'Crie uma ou mais propriedades estendidas de vários valores em uma
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 8cb697f142a2f52b805723379ad35c4280a8d674
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 80923a04e7ce8c932134ddc4f12754a0e26f44c5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456806"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810836"
 ---
 # <a name="create-multi-value-extended-property"></a>Criar propriedade estendida de vários valores
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. 
+Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso.
 
 Há suporte para as seguintes fontes de dados:
 
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
-- [contactFolder](../resources/contactfolder.md) 
+- [contactFolder](../resources/contactfolder.md)
 - [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
@@ -35,7 +35,7 @@ Também há suporte para os seguintes recursos de grupo:
 
 - grupo [calendar](../resources/calendar.md)
 - grupo [event](../resources/event.md)
-- grupo [post](../resources/post.md) 
+- grupo [post](../resources/post.md)
 
 Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.
 
@@ -60,9 +60,9 @@ Dependendo do recurso para o qual você está criando a propriedade estendida e 
 Você pode criar propriedades estendidas em uma instância de recurso nova ou existente.
 
 Para criar uma ou mais propriedades estendidas em uma _nova_ instância de recurso, use a mesma solicitação REST válida para a criação da instância e inclua as propriedades da nova instância de recurso _e a propriedade estendida_ no corpo da solicitação.
-Observe que alguns recursos dão suporte à criação de mais de uma maneira. Para obter mais informações sobre como criar essas instâncias de recurso, consulte os tópicos correspondentes para criar uma [mensagem](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md), [evento](../api/user-post-events.md), [calendário](../api/user-post-calendars.md), [contato](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md), [tarefa do Outlook](../resources/outlooktask.md), pasta de [tarefas do Outlook](../resources/outlooktaskfolder.md), evento de [grupo](../api/group-post-events.md)e [postagem de grupo](../resources/post.md). 
- 
-Veja a seguir a sintaxe das solicitações. 
+Observe que alguns recursos dão suporte à criação de mais de uma maneira. Para obter mais informações sobre como criar essas instâncias de recurso, consulte os tópicos correspondentes para criar uma [mensagem](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md), [evento](../api/user-post-events.md), [calendário](../api/user-post-calendars.md), [contato](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md), [tarefa do Outlook](../resources/outlooktask.md), pasta de [tarefas do Outlook](../resources/outlooktaskfolder.md), evento de [grupo](../api/group-post-events.md)e [postagem de grupo](../resources/post.md).
+
+Veja a seguir a sintaxe das solicitações.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -170,7 +170,7 @@ Ao criar uma propriedade estendida em uma _nova_ instância de recurso, além da
 #### <a name="response-code"></a>Código da resposta
 Uma operação bem-sucedida na criação de uma propriedade estendida em uma nova instância de recurso retorna `201 Created`, exceto em uma nova postagem de grupo. Dependendo do método usado, a operação pode retornar `200 OK` ou `202 Accepted`.
 
-Em uma instância de recurso existente, uma operação de criação bem-sucedida retorna `200 OK`. 
+Em uma instância de recurso existente, uma operação de criação bem-sucedida retorna `200 OK`.
 
 
 #### <a name="response-body"></a>Corpo da resposta
@@ -185,9 +185,9 @@ Ao criar uma propriedade estendida em uma _nova_ postagem de grupo, a resposta i
 
 O primeiro exemplo cria uma propriedade estendida de vários valores em um novo evento, tudo na mesma operação POST. Além das propriedades que você normalmente incluiria para um novo evento, o corpo da solicitação inclui a coleção **multiValueExtendedProperties**, que contém uma propriedade estendida. O corpo da solicitação inclui o seguinte para essa propriedade estendida de vários valores:
 
-- **id**, que especifica a propriedade como uma matriz de cadeias de caracteres com o GUID especificado e o nome `Recreation`. 
+- **id**, que especifica a propriedade como uma matriz de cadeias de caracteres com o GUID especificado e o nome `Recreation`.
 - **value**, que especifica `Recreation` como uma matriz de 3 valores de cadeia de caracteres, `["Food", "Hiking", "Swimming"]`.
- 
+
 
 <!-- { "blockType": "ignored" } -->
 ```http

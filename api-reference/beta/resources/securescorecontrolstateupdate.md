@@ -4,13 +4,13 @@ description: Este recurso contém o histórico de Estados de controle atualizado
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 92616569a87a6ccf91c17ea7c845b8185bd33e8b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+author: preetikr
+ms.openlocfilehash: f3b69838a6de68938efac12acdfbcd4fd977c684
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965226"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810402"
 ---
  #  <a name="securescorecontrolstateupdate-resource-type"></a>tipo de recurso secureScoreControlStateUpdate
 Contém o histórico dos Estados de controle atualizados pelo usuário (os Estados de controle incluem padrão, ignorado, terceiros, revisado).
@@ -18,7 +18,7 @@ Contém o histórico dos Estados de controle atualizados pelo usuário (os Estad
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
 |assignedTo | string | Atribuir o controle ao usuário que executará a ação |
-|comentário | string | Fornece comentários opcionais sobre o controle |
+|comment | string | Fornece comentários opcionais sobre o controle |
 |estado | string | O estado do controle pode ser modificado usando o comando PATCH (ex: ignorado, terceiros etc.) |
 |updatedBy | string |ID do usuário que atualizou o estado do locatário |
 |updatedDateTime | DateTimeOffset |Hora em que o estado de controle foi atualizado |
