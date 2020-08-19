@@ -2,19 +2,19 @@
 title: tipo de recurso site
 description: Representa um site.
 localization_priority: Normal
-author: ''
+author: AAmatino
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f6d630a2cde87415cb8229f7d320cb32bc6260d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ec3642ea513ae054e22537c86426df365cd41ba9
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446734"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807665"
 ---
 # <a name="website-resource-type"></a>tipo de recurso site
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Representa um site.
 
@@ -23,7 +23,7 @@ Representa um site.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |type|websiteType| Os valores possíveis são: `other`, `home`, `work`, `blog`, `profile`.|
-|address|string|A URL do site.|
+|address|cadeia de caracteres|A URL do site.|
 |displayName|string|O nome de exibição do site da Web.|
 
 ## <a name="json-representation"></a>Representação JSON

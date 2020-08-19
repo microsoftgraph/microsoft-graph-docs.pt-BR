@@ -4,24 +4,24 @@ description: Uma associação de função com escopo descreve a associação de 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: d5448db2bb73146b3f3e435376ea7b5d708f0474
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: abhijeetsinha
+ms.openlocfilehash: 27eae463ab0f5fe0718a6d97602e366d32b11b86
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520939"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812432"
 ---
 # <a name="scopedrolemembership-resource-type"></a>tipo de recurso scopedRoleMembership
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma associação de função com escopo descreve a associação de um usuário de uma função de diretório, que tem mais escopo para uma unidade administrativa (AU).  Isso fornece um mecanismo para permitir que uma empresa de todo o locatário adminsistrator delegar privilégios administrativos a um usuário para gerenciar usuários e grupos em um subconjunto da organização (o subconjunto que está definido por uma AU).
+Uma associação de função com escopo descreve a associação de um usuário de uma função de diretório, que tem mais escopo para uma unidade administrativa (AU).  Isso fornece um mecanismo para permitir que um administrador da empresa de todo o locatário delegue privilégios administrativos a um usuário para gerenciar usuários e grupos em um subconjunto da organização (o subconjunto que está sendo definido por uma AU).
 
 ## <a name="methods"></a>Métodos
-Não há suporte para consultas diretas a esse recurso.  Confira o tópico [unidades administrativas](administrativeunit.md) para ver informações sobre como consultar as associações com escopo de função, bem como adicionar e remover associações com escopo de função. 
+Não há suporte para consultas diretas a esse recurso.  Confira o tópico [unidades administrativas](administrativeunit.md) para ver informações sobre como consultar as associações com escopo de função, bem como adicionar e remover associações com escopo de função.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo | Descrição |

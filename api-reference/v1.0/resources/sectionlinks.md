@@ -2,15 +2,15 @@
 title: tipo de recurso sectionLinks
 description: Links para abrir uma seção do OneNote.
 localization_priority: Normal
-author: ''
+author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c4fecff18c2271da383a03002e38eed4bf42aa93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c0bf1090f3d60388819b871b88ef8d34aa77d82
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533781"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812180"
 ---
 # <a name="sectionlinks-resource-type"></a>tipo de recurso sectionLinks
 

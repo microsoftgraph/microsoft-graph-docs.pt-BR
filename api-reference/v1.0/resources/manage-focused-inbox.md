@@ -1,20 +1,20 @@
 ---
 title: Gerenciar a Caixa de Entrada Prioritária
-description: 'A caixa de entrada destaques permite exibir mensagens importantes na `Focused` guia da caixa de entrada e o restante das mensagens da caixa de entrada `Other` na guia. O sistema de classificação '
+description: 'A caixa de entrada destaques permite exibir mensagens importantes na `Focused` guia da caixa de entrada e o restante das mensagens da caixa de entrada na `Other` guia. O sistema de classificação '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: e9debdbb7e2c44276b6af82fa37cb5b33ab89c70
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ae1801153f211ba9b4ba5d909e3a05dc0a5ee56
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447462"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807686"
 ---
 # <a name="manage-focused-inbox"></a>Gerenciar a Caixa de Entrada Prioritária
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 A caixa de entrada prioritária permite que você veja mensagens importantes na guia `Focused` da Caixa de Entrada e o restante das mensagens na guia `Other`. O sistema de classificação organiza inicialmente as mensagens da Caixa de Entrada de maneira padrão. Você pode corrigir e treinar o sistema ao longo do tempo por meio da interface do usuário ou programaticamente. Quanto mais você usar esse recurso, melhor o sistema poderá deduzir quais mensagens de entrada são importantes.
 
@@ -33,6 +33,6 @@ Observe que o sistema de classificação aprende e aplica a classificação apen
 
 **Usar substituições para classificar consistentemente por remetente**
 
-[Criar uma substituição para uma lista de remetentes](../api/inferenceclassification-post-overrides.md) | [todas as substituições de usuários](../api/inferenceclassification-list-overrides.md) |
+[Criar uma substituição para um remetente](../api/inferenceclassification-post-overrides.md)  |  [Listar todas as substituições de usuário](../api/inferenceclassification-list-overrides.md) |
 
-[Atualizar uma substituição para um remetente](../api/inferenceclassificationoverride-update.md) | [excluir uma substituição de remetente](../api/inferenceclassificationoverride-delete.md) 
+[Atualizar uma substituição de um remetente](../api/inferenceclassificationoverride-update.md)  |  [Excluir uma substituição de remetente](../api/inferenceclassificationoverride-delete.md)

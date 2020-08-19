@@ -2,19 +2,19 @@
 title: Tipo de recurso timeConstraint
 description: Restringe as sugestões de horário de reunião a determinadas horas e dias da semana de acordo com a natureza especificada da atividade e os intervalos de tempo abertos.
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cc6ace98b84e8b844139c148215eeffdd4c3ad49
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e2ecde664dbdf0335ce84083dfe3c29473c5b1d5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446818"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812138"
 ---
 # <a name="timeconstraint-resource-type"></a>Tipo de recurso timeConstraint
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Restringe as sugestões de horário de reunião a determinadas horas e dias da semana de acordo com a natureza especificada da atividade e os intervalos de tempo abertos.
 
@@ -40,7 +40,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|activityDomain|activityDomain|A natureza da atividade, opcional. Os valores possíveis são: `work`, `personal`, `unrestricted`, ou `unknown`.|
+|activityDomain|activityDomain|A natureza da atividade, opcional. Os valores possíveis são: `work` , `personal` , `unrestricted` , ou `unknown` .|
 |intervalos de tempo|Coleção [timeSlot](timeslot.md)|Uma matriz de períodos de tempo.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

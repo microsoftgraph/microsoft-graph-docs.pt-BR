@@ -2,23 +2,23 @@
 title: Atualizar inferenceclassificationoverride
 description: 'Altere o campo **classifyAs** de uma substituição conforme especificado. '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1d1b9777862a3f985ae3801a8b6320950f777ba6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 985bdfa4646eb9e5145b14337084ec9ce65450fc
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516721"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806482"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Atualizar inferenceclassificationoverride
 
 Namespace: microsoft.graph
 
-Altere o campo **classifyAs** de uma substituição conforme especificado. 
+Altere o campo **classifyAs** de uma substituição conforme especificado.
 
-Você não pode usar PATCH para alterar outros campos em uma instância de [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md). 
+Você não pode usar PATCH para alterar outros campos em uma instância de [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md).
 
 Se houver uma substituição de um remetente e o remetente alterar seu nome de exibição, você poderá usar [POST](inferenceclassification-post-overrides.md) para forçar uma atualização para o campo de nome em uma substituição existente.
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça o novo valor para **classifyAs**. Para obter
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|classifyAs|cadeia de caracteres| Representa como classificar as mensagens recebidas de um remetente específico. Os valores possíveis são: `focused`, `other`.|
+|classifyAs|string| Representa como classificar as mensagens recebidas de um remetente específico. Os valores possíveis são: `focused` , `other` .|
 
 ## <a name="response"></a>Resposta
 

@@ -4,13 +4,13 @@ description: Um erro de uso geral.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: d9e74b53cc5dcd184136439cc80583074633d88c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 5a583c91c6f5b89ba594e0345c9c8cb256993f71
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531373"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812278"
 ---
 # <a name="genericerror-resource-type"></a>tipo de recurso genericError
 
@@ -23,7 +23,7 @@ Um erro de uso geral.
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
 | mensagem | String | A mensagem de erro. |
-| código | String | O código de erro. |
+| código | Cadeia de caracteres | O código de erro. |
 
 ## <a name="json-representation"></a>Representação JSON
 

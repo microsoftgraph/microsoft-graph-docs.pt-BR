@@ -1,20 +1,20 @@
 ---
 title: Gerenciar a Caixa de Entrada Prioritária
-description: 'A caixa de entrada destaques permite exibir mensagens importantes na `Focused` guia da caixa de entrada e o restante das mensagens da caixa de entrada `Other` na guia. O sistema de classificação '
+description: 'A caixa de entrada destaques permite exibir mensagens importantes na `Focused` guia da caixa de entrada e o restante das mensagens da caixa de entrada na `Other` guia. O sistema de classificação '
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 75d5dc07d2722964acc7975b8f41ca6d6fd18df5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 83d29b26388938e478287e342a03dab762eb1633
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522852"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811466"
 ---
 # <a name="manage-focused-inbox"></a>Gerenciar a Caixa de Entrada Prioritária
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,6 +35,6 @@ Observe que o sistema de classificação aprende e aplica a classificação apen
 
 **Usar substituições para classificar consistentemente por remetente**
 
-[Criar uma substituição para uma lista de remetentes](../api/inferenceclassification-post-overrides.md) | [todas as substituições de usuários](../api/inferenceclassification-list-overrides.md) |
+[Criar uma substituição para um remetente](../api/inferenceclassification-post-overrides.md)  |  [Listar todas as substituições de usuário](../api/inferenceclassification-list-overrides.md) |
 
-[Atualizar uma substituição para um remetente](../api/inferenceclassificationoverride-update.md) | [excluir uma substituição de remetente](../api/inferenceclassificationoverride-delete.md) 
+[Atualizar uma substituição de um remetente](../api/inferenceclassificationoverride-update.md)  |  [Excluir uma substituição de remetente](../api/inferenceclassificationoverride-delete.md)

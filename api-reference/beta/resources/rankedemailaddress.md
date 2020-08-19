@@ -4,17 +4,17 @@ description: Representa um endereço de email classificado.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: bdba5af83357737c77e3b5c441703e404f971587
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: AAmatino
+ms.openlocfilehash: f0311b379d2768a2dc704730b7547334e5a64c97
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521275"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811417"
 ---
 # <a name="rankedemailaddress-resource-type"></a>tipo de recurso rankedEmailAddress
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

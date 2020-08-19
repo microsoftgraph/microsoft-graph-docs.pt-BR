@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 3cd4007c4ae68cfe9428eb6b9d2aeb22cd24391e
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: e8e63a757e659ea6d2baf709019d17d353279493
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896984"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811291"
 ---
 # <a name="planneruserids-resource-type"></a>tipo de recurso plannerUserIds
 
@@ -40,13 +40,14 @@ Veja a seguir uma representação JSON do recurso
 }
 ```
 
-Como
+### <a name="example"></a>Exemplo
 ```json
 {
   "400723e1-102b-43aa-aba9-f35524827084": true, // property name is user id
   "f117339e-c914-4a9c-9b66-1c062b027556": true,
   "e886d105-23b9-47e2-bde1-757e75ee4a28": true
 }
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

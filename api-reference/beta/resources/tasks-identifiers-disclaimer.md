@@ -4,17 +4,17 @@ description: 'Os identificadores para objetos nas tarefas são valores de cadeia
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 9a4a3c957973f4d6de5f063f277bb446f42d6706
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: TarkanSevilmis
+ms.openlocfilehash: 9ff7b894c8414e2dc7f3dd9d425b0027d0ae13f5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519978"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811956"
 ---
 # <a name="identifiers-in-tasks"></a>Identificadores nas tarefas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,27 +2,27 @@
 title: Criar uma propriedade estendida de valor único
 description: 'Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 64fa9d6e76e61acdb3b28f60c6452b35c5b6fcaf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 28771e371ab5c3785cd974e9fb8bcffb735d90d5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509791"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807014"
 ---
 # <a name="create-single-value-extended-property"></a>Criar uma propriedade estendida de valor único
 
 Namespace: microsoft.graph
 
-Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. 
+Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso.
 
 Há suporte para as seguintes fontes de dados:
 
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
-- [contactFolder](../resources/contactfolder.md) 
+- [contactFolder](../resources/contactfolder.md)
 - [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
@@ -31,7 +31,7 @@ Também há suporte para os seguintes recursos de grupo:
 
 - grupo [calendar](../resources/calendar.md)
 - grupo [event](../resources/event.md)
-- grupo [post](../resources/post.md) 
+- grupo [post](../resources/post.md)
 
 Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.
 
@@ -53,9 +53,9 @@ Dependendo do recurso para o qual você está criando a propriedade estendida e 
 ## <a name="http-request"></a>Solicitação HTTP
 Você pode criar propriedades estendidas em uma instância de recurso nova ou existente.
 
-Para criar uma ou mais propriedades estendidas em uma _nova_ instância de recurso, use a mesma solicitação REST válida para a criação da instância e inclua as propriedades da nova instância de recurso _e a propriedade estendida_ no corpo da solicitação. Observe que alguns recursos dão suporte à criação de mais de uma maneira. Para saber mais sobre como criar essas instâncias de recurso, confira os tópicos correspondentes para a criação de [message](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md), [event](../api/user-post-events.md), [calendar](../api/user-post-calendars.md), [contact](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md), [group event](../api/group-post-events.md) e [group post](../resources/post.md). 
- 
-Veja a seguir a sintaxe das solicitações. 
+Para criar uma ou mais propriedades estendidas em uma _nova_ instância de recurso, use a mesma solicitação REST válida para a criação da instância e inclua as propriedades da nova instância de recurso _e a propriedade estendida_ no corpo da solicitação. Observe que alguns recursos dão suporte à criação de mais de uma maneira. Para saber mais sobre como criar essas instâncias de recurso, confira os tópicos correspondentes para a criação de [message](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md), [event](../api/user-post-events.md), [calendar](../api/user-post-calendars.md), [contact](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md), [group event](../api/group-post-events.md) e [group post](../resources/post.md).
+
+Veja a seguir a sintaxe das solicitações.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -129,7 +129,7 @@ Forneça um corpo JSON de cada objeto [singleValueLegacyExtendedProperty](../res
 |Propriedade|Tipo|Descrição|
 |:-----|:-----|:-----|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Uma matriz de uma ou mais propriedades estendidas de valor único. |
-|id|String|Para cada propriedade na coleção **singleValueExtendedProperties**, especifique isso para identificar a propriedade. Deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
+|id|Cadeia de caracteres|Para cada propriedade na coleção **singleValueExtendedProperties**, especifique isso para identificar a propriedade. Deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
 |valor|string|Para cada propriedade na coleção **singleValueExtendedProperties**, especifique o valor da propriedade. Obrigatório.|
 
 Ao criar uma propriedade estendida em uma _nova_ instância de recurso, além da nova coleção **singleValueExtendedProperties**, forneça uma representação JSON dessa instância de recurso (ou seja, [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)
@@ -139,7 +139,7 @@ Ao criar uma propriedade estendida em uma _nova_ instância de recurso, além da
 #### <a name="response-code"></a>Código da resposta
 Uma operação bem-sucedida na criação de uma propriedade estendida em uma nova instância de recurso retorna `201 Created`, exceto em uma nova postagem de grupo. Dependendo do método usado, a operação pode retornar `200 OK` ou `202 Accepted`.
 
-Em uma instância de recurso existente, uma operação de criação bem-sucedida retorna `200 OK`. 
+Em uma instância de recurso existente, uma operação de criação bem-sucedida retorna `200 OK`.
 
 
 #### <a name="response-body"></a>Corpo da resposta
@@ -155,7 +155,7 @@ Ao criar uma propriedade estendida em uma _nova_ [postagem de grupo](../resource
 
 O primeiro exemplo cria um novo evento e uma propriedade de valor único estendida na mesma operação POST. Além das propriedades que você normalmente incluiria para um novo evento, o corpo da solicitação inclui a coleção **singleValueExtendedProperties**, que contém uma propriedade estendida de valor único e as seguintes informações sobre a propriedade:
 - **id** especifica o tipo de propriedade como `String`, o GUID e a propriedade nomeada `Fun`.
-- **value** especifica `Food` como o valor da propriedade `Fun`. 
+- **value** especifica `Food` como o valor da propriedade `Fun`.
 
 <!-- { "blockType": "ignored" } -->
 ```http

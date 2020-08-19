@@ -2,19 +2,19 @@
 title: Tipo de recurso timeZoneInformation
 description: Representa um fuso horário. O formato com suporte é Windows e o fuso horário da autoridade de números atribuídos pela Internet (IANA) (também conhecido como fuso horário Olson)
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2b09e95db4c6d599e1e61925991912bb55ff8424
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 81f1eb3f8abbdcf95b94407019807d0d002dc286
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446804"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811823"
 ---
 # <a name="timezoneinformation-resource-type"></a>Tipo de recurso timeZoneInformation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 
 Representa um fuso horário. Entre os formatos de fuso horário válidos estão o do Windows e o da [Autoridade para Atribuição de Números na Internet (IANA)](https://www.iana.org/time-zones) (também conhecido como fuso horário de Olson), além de quando o atual problema conhecido foi corrigido.
@@ -23,7 +23,7 @@ Representa um fuso horário. Entre os formatos de fuso horário válidos estão 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |alias|string|Um identificador para o fuso horário.|
-|displayName|cadeia de caracteres|Uma sequência de caracteres de exibição que representa o fuso horário.|
+|displayName|string|Uma sequência de caracteres de exibição que representa o fuso horário.|
 
 ## <a name="json-representation"></a>Representação JSON
 

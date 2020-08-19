@@ -4,17 +4,17 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 568ad9af20cd8d54e991360ce75f6eb2dfcae283
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: kszb
+ms.openlocfilehash: a23c4d1aa4f548e4bc4ef1567b6f539ea749373a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520440"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811977"
 ---
 # <a name="skypeforbusinessactivityusercounts-resource-type"></a>tipo de recurso skypeForBusinessActivityUserCounts
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -38,11 +38,11 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "peerToPeer": 1024, 
-  "organized": 1024, 
-  "participated": 1024, 
-  "reportRefreshDate": "Date", 
-  "reportDate": "Date", 
+  "peerToPeer": 1024,
+  "organized": 1024,
+  "participated": 1024,
+  "reportRefreshDate": "Date",
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```

@@ -4,17 +4,17 @@ description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: 4cb53d65d505e47fa2fed85c3bdc3b263dd21dff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: JeremyKelley
+ms.openlocfilehash: 3515c4e051977b6ca0d358fa94c566b717b7c1c1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520678"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812411"
 ---
 # <a name="sharepointsiteusagedetail-resource-type"></a>tipo de recurso sharePointSiteUsageDetail
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -25,7 +25,7 @@ Namespace: Microsoft. Graph
 | siteUrl                 | String  |
 | ownerDisplayName        | String  |
 | ownerPrincipalName      | String  |
-| isDeleted               | Boolean |
+| isDeleted               | Booliano |
 | lastActivityDate        | Data    |
 | Contagem de FileCount               | Int64   |
 | activeFileCount         | Int64   |
@@ -47,20 +47,20 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "siteId": "Guid", 
-  "siteUrl": "String", 
-  "ownerDisplayName": "String", 
-  "ownerPrincipalName": "String", 
-  "isDeleted": true, 
-  "lastActivityDate": "Date", 
-  "fileCount": 1024, 
-  "activeFileCount": 1024, 
-  "pageViewCount": 1024, 
-  "visitedPageCount": 1024, 
-  "storageUsedInBytes": 1024, 
-  "storageAllocatedInBytes": 1024, 
-  "rootWebTemplate": "String", 
+  "reportRefreshDate": "Date",
+  "siteId": "Guid",
+  "siteUrl": "String",
+  "ownerDisplayName": "String",
+  "ownerPrincipalName": "String",
+  "isDeleted": true,
+  "lastActivityDate": "Date",
+  "fileCount": 1024,
+  "activeFileCount": 1024,
+  "pageViewCount": 1024,
+  "visitedPageCount": 1024,
+  "storageUsedInBytes": 1024,
+  "storageAllocatedInBytes": 1024,
+  "rootWebTemplate": "String",
   "reportPeriod": "String"
 }
 ```

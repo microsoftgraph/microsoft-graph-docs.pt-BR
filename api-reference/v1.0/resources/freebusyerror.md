@@ -2,15 +2,15 @@
 title: tipo de recurso freeBusyError
 description: Representa informações de erro da tentativa de obter a disponibilidade de um usuário, lista de distribuição ou recurso.
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8e069aef1d26a409e9ebe29a516136a952604ee6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 019c21eadc65b29d74bdc6fd94c40641acd43491
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531381"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812257"
 ---
 # <a name="freebusyerror-resource-type"></a>tipo de recurso freeBusyError
 
@@ -22,7 +22,7 @@ Representa informações de erro da tentativa de obter a disponibilidade de um u
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |mensagem |String |Descreve o erro. |
-|responseCode |String |O código de resposta da consulta para a disponibilidade do usuário, lista de distribuição ou recurso. |
+|responseCode |Cadeia de caracteres |O código de resposta da consulta para a disponibilidade do usuário, lista de distribuição ou recurso. |
 
 
 ## <a name="json-representation"></a>Representação JSON

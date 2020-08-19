@@ -2,28 +2,28 @@
 title: Tipo de recurso followupFlag
 description: 'Permite definir um sinalizador em um item para que o usuário acompanhe mais tarde. '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5c59401a9265f892fb2573fc2be3b0525baf1ece
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 263d2c5552eabfed47210dd8d53b2ce14ba1be25
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062585"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812264"
 ---
 # <a name="followupflag-resource-type"></a>Tipo de recurso followupFlag
 
 Namespace: microsoft.graph
 
 
-Permite definir um sinalizador em um item para que o usuário acompanhe mais tarde. 
+Permite definir um sinalizador em um item para que o usuário acompanhe mais tarde.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|Data e hora em que o acompanhamento foi concluído.|
-|dueDateTime|**dateTimeTimeZone**|A data e a hora em que o acompanhamento deve ser concluído. **Observação**: para definir a data de conclusão, você também deve especificar `startDateTime`o; caso contrário, você receberá `400 Bad Request` uma resposta.|
+|dueDateTime|**dateTimeTimeZone**|A data e a hora em que o acompanhamento deve ser concluído. **Observação**: para definir a data de conclusão, você também deve especificar o `startDateTime` ; caso contrário, você receberá uma `400 Bad Request` resposta.|
 |flagStatus|followupFlagStatus|O status de acompanhamento de um item. Os valores possíveis são: `notFlagged`, `complete` e `flagged`.|
 |startDateTime|**dateTimeTimeZone**|Data e hora em que o acompanhamento deve começar.|
 

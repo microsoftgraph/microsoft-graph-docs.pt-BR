@@ -2,15 +2,15 @@
 title: Tipo de recurso extensionSchemaProperty
 description: Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o tipo dela, como parte de uma definição schemaExtension.
 localization_priority: Normal
-author: ''
+author: keylimesoda
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a684d71aa25267c1b2f19f13d35d796825783544
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 623dd4fa92036a3c542bebf791dc802ce0d53520
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531452"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812334"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Tipo de recurso extensionSchemaProperty
 
@@ -22,10 +22,10 @@ Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|nome|String| O nome da propriedade fortemente tipada definido como parte de uma extensão de esquema.|
-|type|String| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
+|nome|Cadeia de caracteres| O nome da propriedade fortemente tipada definido como parte de uma extensão de esquema.|
+|type|Cadeia de caracteres| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
 
-#### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte 
+#### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte
 Há suporte para os seguintes tipos de dados quando se define uma propriedade em uma extensão do esquema:
 
 | Tipo de propriedade | Comentários |

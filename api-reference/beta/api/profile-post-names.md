@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: dd9b66db16f3c9146b47e917d9417ac7bb7e7adb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ea4b8095d1af6e080e1e42162bbf1f8d56678446
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455082"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811616"
 ---
 # <a name="create-personname"></a>Criar PersonName
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
 | Aplicativo                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -36,6 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ```http
 POST /me/profile/names
+POST /users/{id | userPrincipalName}/profile/names
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -46,8 +47,26 @@ POST /me/profile/names
 | Content-Type   | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-
 No corpo da solicitação, forneça uma representação JSON do objeto [PersonName](../resources/personname.md) .
+
+A tabela a seguir mostra as propriedades que são possíveis de definir quando você cria um objeto [PersonName](../resources/personname.md) .
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Fornece uma renderização ordenada de firstName e lastName, dependendo da localidade do usuário ou de seu dispositivo.|
+|primeiro|String|Nome do usuário.|
+|id|String|Identificador usado para o endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
+|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
+|initials|String|Iniciais do usuário.|
+|languageTag|String|Contém o nome do idioma (en-US, no-NB, en-AU) após o formato BCP47 da IETF.   |
+|durar|String|Sobrenome do usuário.|
+|Virgem|String|Nome de solteira do usuário. |
+|middleware|String|Nome do meio do usuário.|
+|apelido|String|Apelido do usuário.|
+|pronúncia|[yomiPersonName](../resources/yomipersonname.md)|Orientações sobre como pronunciar o nome dos usuários.|
+|sufixo|String|Designadores usados após o nome dos usuários (por exemplo: PhD).  |
+|title|String|Honorifics usado para prefixar um nome de usuário (por exemplo: Dr, Sir, Madam, Sra.)|
 
 ## <a name="response"></a>Resposta
 
@@ -60,6 +79,7 @@ Se bem-sucedido, este método retorna `201, Created` um código de resposta e um
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_personname_from_profilev2"
@@ -70,12 +90,12 @@ POST https://graph.microsoft.com/beta/me/profile/names
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "first": "first-value",
-  "initials": "initials-value",
-  "last": "last-value",
-  "languageTag": "languageTag-value",
-  "maiden": "maiden-value"
+  "displayName": "Innocenty Popov",
+  "first": "Innocenty",
+  "initials": "IP",
+  "last": "Popov",
+  "languageTag": "en-US",
+  "maiden": null
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -91,7 +111,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>Resposta
 
@@ -110,21 +129,37 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "first": "first-value",
-  "initials": "initials-value",
-  "last": "last-value",
-  "languageTag": "languageTag-value",
-  "maiden": "maiden-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "displayName": "Innocenty Popov",
+  "first": "Innocenty",
+  "initials": "IP",
+  "last": "Popov",
+  "languageTag": "en-US",
+  "maiden": null,
+  "middle": null,
+  "nickname": null,
+  "suffix": null,
+  "title": null,
+  "pronunciation": null
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create personName",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

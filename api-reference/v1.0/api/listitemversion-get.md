@@ -3,14 +3,14 @@ title: Obter um recurso ListItemVersion
 description: Recuperar os metadados de uma versão específica de um ListItem.
 localization_priority: Normal
 ms.prod: sharepoint
-author: ''
+author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 4a7e10787b23ab422a64a30db7d0d921edfdfbcf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5654e124d477eefc818b1499ce46bf88ad8698ed
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511674"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806139"
 ---
 # <a name="get-a-listitemversion-resource"></a>Obter um recurso ListItemVersion
 

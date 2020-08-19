@@ -2,15 +2,15 @@
 title: tipo de recurso FileHash
 description: Contém informações com monitoração de hash de arquivo (criptografia e confidencialidade de local).
 localization_priority: Normal
-author: ''
+author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c82632658e4936ecae812f6bdf1826ad6120d2d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d034d586bad1da54e57490e300b34191034a1657
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532955"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807826"
 ---
 # <a name="filehash-resource-type"></a>tipo de recurso FileHash
 
@@ -23,7 +23,7 @@ Contém informações com monitoração de hash de arquivo (criptografia e confi
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |hashtype|fileHashType|Tipo de hash de arquivo. Os valores possíveis são: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
-|hashValue|String|Valor do hash do arquivo.|
+|hashValue|Cadeia de caracteres|Valor do hash do arquivo.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -4,13 +4,13 @@ description: Contém o perfil de senha associado a um usuário. A propriedade **
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 79f8d182361d8d793d98301b15b1102f11847c1c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: eketo-msft
+ms.openlocfilehash: 4fdc58e79487b9577685929bb06865e3aca6906f
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522008"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812482"
 ---
 # <a name="passwordprofile-resource-type"></a>Tipo de recurso passwordProfile
 

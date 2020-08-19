@@ -4,17 +4,17 @@ description: Veja a seguir uma representação JSON do recurso
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: b77583a54722822212fccc45014cdcdff1aba834
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: MSGraphDocsVteam
+ms.openlocfilehash: a5d01b44624fa530b60641d3086f3b2a1b3dfe63
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507674"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811536"
 ---
 # <a name="chunkeduploadsessiondescriptor-resource-type"></a>Tipo de recurso chunkedUploadSessionDescriptor
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 
 ## <a name="properties"></a>Propriedades

@@ -2,15 +2,15 @@
 title: tipo de recurso settingTemplateValue
 description: Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instanciada.
 localization_priority: Normal
-author: ''
+author: dkershaw10
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: eea9f77b26ee0ce88e2c97c87e7cca50cbf48491
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a2046017dec6439c6db35169de15eb6bb49413b1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533741"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806734"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>tipo de recurso settingTemplateValue
 
@@ -22,10 +22,10 @@ Representa uma definição de configuração de modelo individual, incluindo o v
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|defaultValue|String| Valor padrão para a configuração. |
+|defaultValue|Cadeia de caracteres| Valor padrão para a configuração. |
 |description|String| Descrição da configuração. |
 |nome|Cadeia de caracteres| Nome da configuração. |
-|type|String| Tipo da configuração. |
+|type|Cadeia de caracteres| Tipo da configuração. |
 
 ### <a name="json-representation"></a>Representação JSON
 

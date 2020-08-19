@@ -2,31 +2,31 @@
 title: Tipo de recurso reminder
 description: Um lembrete para um evento em um calendário do usuário.
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cc07c6e8b787925e9ee72dbb949997c18ca70f87
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e8687b6bdc7739f2efdcc76de7c139fd5240780b
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446986"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811865"
 ---
 # <a name="reminder-resource-type"></a>Tipo de recurso reminder
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Um lembrete para um [evento](event.md) em um [calendário](calendar.md)do usuário.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|changeKey|String|Identifica a versão do lembrete. Toda vez que o lembrete é alterado, **changeKey** também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto.|
+|changeKey|Cadeia de caracteres|Identifica a versão do lembrete. Toda vez que o lembrete é alterado, **changeKey** também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto.|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina.|
 |eventId|String|A ID exclusiva do evento. Somente leitura.|
 |eventLocation|[Location](location.md)|O local do evento.|
 |eventStartTime|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa.|
-|eventSubject|Cadeia de caracteres|O texto da linha de assunto do evento.|
+|eventSubject|String|O texto da linha de assunto do evento.|
 |eventWebLink|String|A URL para abrir o evento no Outlook na Web.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio através do Outlook na Web. Você será solicitado a fazer login se já não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário do lembrete.|
 

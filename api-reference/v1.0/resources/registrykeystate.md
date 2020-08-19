@@ -2,19 +2,19 @@
 title: tipo de recurso registryKeystate
 description: Contém informações sobre as alterações da chave do registro relacionadas ao alerta e o processo que alterou as chaves do registro.
 localization_priority: Normal
-author: ''
+author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0b014a0a2ce338524e6abf0e6bcaa532e2b5c1c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b07f031fed393c4de41a55b55e8009ca9c8d8259
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446993"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806790"
 ---
 # <a name="registrykeystate-resource-type"></a>tipo de recurso registryKeystate
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Contém informações sobre as alterações da chave do registro relacionadas ao alerta e o processo que alterou as chaves do registro.
 
@@ -22,15 +22,15 @@ Contém informações sobre as alterações da chave do registro relacionadas ao
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|Hive|registryHive|Uma [seção de registro do Windows](/windows/desktop/sysinfo/registry-hives) : <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE \SAM</li> <li>HKEY_LOCAL_MACHINE \Security</li> <li>HKEY_LOCAL_MACHINE \Software</li> <li>HKEY_LOCAL_MACHINE \System</li> <li>HKEY_USERS\\. Será.</li></ul> Os valores possíveis são: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSecurity`, `localMachineSoftware`, `localMachineSystem`, `usersDefault`.|
-|chave|String|Chave de registro atual (ou seja, alterada) (exclui HIVE).|
-|oldKey|String|Chave de registro anterior (ou seja, antes da alteração) (exclui HIVE).|
-|oldValueData|String|Dados anteriores (ou seja, antes da alteração) dos valores da chave do registro (conteúdo).|
-|oldValue|String|Nome do valor da chave anterior (ou seja, antes da alteração).|
+|Hive|registryHive|Uma [seção de registro do Windows](/windows/desktop/sysinfo/registry-hives) : <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE \SAM</li> <li>HKEY_LOCAL_MACHINE \Security</li> <li>HKEY_LOCAL_MACHINE \Software</li> <li>HKEY_LOCAL_MACHINE \System</li> <li>HKEY_USERS \\ . Será.</li></ul> Os valores possíveis são: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSecurity`, `localMachineSoftware`, `localMachineSystem`, `usersDefault`.|
+|chave|Cadeia de caracteres|Chave de registro atual (ou seja, alterada) (exclui HIVE).|
+|oldKey|Cadeia de caracteres|Chave de registro anterior (ou seja, antes da alteração) (exclui HIVE).|
+|oldValueData|Cadeia de caracteres|Dados anteriores (ou seja, antes da alteração) dos valores da chave do registro (conteúdo).|
+|oldValue|Cadeia de caracteres|Nome do valor da chave anterior (ou seja, antes da alteração).|
 |operações|registryOperation|Operação que alterou o nome da chave do registro e/ou o valor. Os valores possíveis são: `unknown`, `create`, `modify`, `delete`.|
 |Identificação|Int32|ID de processo (PID) do processo que modificou a chave de registro (os detalhes do processo aparecerão na coleção Alert ' Processes ').|
-|valueData|String|Dados de valores de chave de registro (conteúdo) atuais (ou seja, alterados).|
-|valueName|String|Nome do valor da chave do registro atual (ou seja, alterado)|
+|valueData|Cadeia de caracteres|Dados de valores de chave de registro (conteúdo) atuais (ou seja, alterados).|
+|valueName|Cadeia de caracteres|Nome do valor da chave do registro atual (ou seja, alterado)|
 |valueType|registryValueType|[Tipo de valor da chave do registro](/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>REG_DWORD_LITTLE_ENDIAN</li> <li>REG_DWORD_BIG_ENDIAN</li><li>REG_EXPAND_SZ</li> <li>REG_LINK</li> <li>REG_MULTI_SZ</li> <li>REG_NONE</li> <li>REG_QWORD</li> <li>REG_QWORD_LITTLE_ENDIAN</li> <li>REG_SZ</li></ul> Os valores possíveis são: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.|
 
 ## <a name="json-representation"></a>Representação JSON

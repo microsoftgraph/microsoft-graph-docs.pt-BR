@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f65cdb5e63ba6bacf048e337b1689390caa0f347
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: b8f152437a833d5d0bbd1ddaeedb1bed21d20577
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229336"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812201"
 ---
 # <a name="create-itememail"></a>Criar email
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [email](../resources/itememail.md).
+Criar um novo objeto de [email](../resources/itememail.md) no [perfil](../resources/profile.md)de um usuário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,83 +26,114 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "ignored" } -->
-
-```http
-POST /user/profile/emails
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /me/profile/emails
+POST /users/{id | userPrincipalName}/profile/emails
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-
-| Nome           |Descrição                  |
-|:---------------|:----------------------------|
-| Autorização  | {token} de portador. Obrigatório.   |
-| Content-Type   | application/json. Obrigatório. |
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+|Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, forneça uma representação JSON do objeto de [email](../resources/itememail.md) .
 
-No corpo da solicitação, forneça uma representação JSON de um objeto de [email](../resources/itememail.md) .
+A tabela a seguir mostra as propriedades que são possíveis de definir ao criar um novo objeto item de [email](../resources/itememail.md) no [perfil](../resources/profile.md)de um usuário.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|address|Cadeia de caracteres|O próprio endereço de email.|
+|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|O nome ou rótulo que um usuário associou a um endereço de email específico.|
+|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
+|type|emailtype|O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.|
+
+
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto de [email](../resources/itememail.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto de [email](../resources/itememail.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
-
-Este é um exemplo de solicitação.
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_itememail_from_profile"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/user/profile/emails
-Content-type: application/json
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/me/profile/emails
+Content-Type: application/json
+Content-length: 383
 
 {
-  "address": "address-value",
-  "displayName": "displayName-value",
-  "type": "type-value"
+  "address": "Innocenty.Popov@adventureworks.com",
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-personname-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-personname-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### <a name="response"></a>Resposta
-
-Este é um exemplo de resposta.
-
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
-
+**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemEmail"
-} -->
-
-```http
+}
+-->
+``` http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-Type: application/json
 
 {
-  "address": "address-value",
-  "displayName": "displayName-value",
-  "type": "type-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "address": "Innocenty.Popov@adventureworks.com",
+  "displayName": null,
+  "type": null
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create itemEmail",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

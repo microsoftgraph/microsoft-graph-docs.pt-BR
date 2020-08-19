@@ -4,26 +4,26 @@ description: 'Representa a disponibilidade de um usuário, lista de distribuiç�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
-author: ''
-ms.openlocfilehash: e43bd0fc88cd8b7cdcb793deca8940ccaae9461f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: harini84
+ms.openlocfilehash: 6a7122ac4842ce4d2809837498874c7aabd9d942
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520974"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811375"
 ---
 # <a name="scheduleinformation-resource-type"></a>tipo de recurso scheduleInformation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
+
 Representa a disponibilidade de um usuário, lista de distribuição ou recurso (sala ou equipamento) por um período de tempo especificado.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|availabilityView |String |Representa um modo de exibição mesclado de disponibilidade de todos os `scheduleItems`itens no. O modo de exibição consiste em intervalos de tempo. A disponibilidade durante cada intervalo de tempo é indicada `0`por: = `1`livre, = `2`provisório, = `3`ocupado, = ausência temporária `4`, = trabalhando em outro lugar.|
+|availabilityView |String |Representa um modo de exibição mesclado de disponibilidade de todos os itens no `scheduleItems` . O modo de exibição consiste em intervalos de tempo. A disponibilidade durante cada intervalo de tempo é indicada por: `0` = livre, `1` = provisório, `2` = ocupado, `3` = ausência temporária, `4` = trabalhando em outro lugar.|
 |erro |[freeBusyError](freebusyerror.md) |Informações de erro da tentativa de obter a disponibilidade do usuário, lista de distribuição ou recurso. |
 |ScheduleID |String |Um endereço SMTP do usuário, lista de distribuição ou recurso, identificando uma instância do **scheduleInformation**. |
 |scheduleItems |coleção [scheduleItem](scheduleitem.md) |Contém os itens que descrevem a disponibilidade do usuário ou do recurso. |

@@ -2,19 +2,19 @@
 title: Tipo de recurso provisionedPlan
 description: A propriedade **provisionedPlans** das entidades user e organization é uma coleção de **provisionedPlan**.
 localization_priority: Normal
-author: ''
+author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c12ce39739bd6f922edacf11654b24d6f7b471dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b7f3e5ac0c66dca2cb297986af1be6473de23c1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447028"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806874"
 ---
 # <a name="provisionedplan-resource-type"></a>Tipo de recurso provisionedPlan
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 A propriedade **provisionedPlans** das entidades [user](user.md) e [organization](organization.md) é uma coleção de **provisionedPlan**.
 
@@ -22,7 +22,7 @@ A propriedade **provisionedPlans** das entidades [user](user.md) e [organization
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|capabilityStatus|String|Por exemplo, “Enabled”.|
+|capabilityStatus|Cadeia de caracteres|Por exemplo, “Enabled”.|
 |provisioningStatus|Cadeia de caracteres|Por exemplo, "Success".|
 |service|Cadeia de caracteres|O nome do serviço; por exemplo, "AccessControlS2S".|
 

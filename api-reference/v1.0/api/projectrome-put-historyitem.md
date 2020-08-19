@@ -3,14 +3,14 @@ title: Criar ou substituir um historyItem
 description: Criar uma nova ou substituir um item de histórico existente para uma atividade existente do usuário.
 localization_priority: Normal
 ms.prod: project-rome
-author: ''
+author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: ce1abf2ea6df1e7a289802073a47bd1b9fdeb005
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da5ba2c6f77023ac3f812a690404b23d648fb4ee
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510701"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811935"
 ---
 # <a name="create-or-replace-a-historyitem"></a>Criar ou substituir um historyItem
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [histo
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` o código de resposta se o historyItem foi `200 OK` criado ou se o historyItem foi substituído.
+Se tiver êxito, este método retornará o `201 Created` código de resposta se o historyItem foi criado ou `200 OK` se o historyItem foi substituído.
 
 ## <a name="example"></a>Exemplo
 

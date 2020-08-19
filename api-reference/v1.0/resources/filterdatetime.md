@@ -2,15 +2,15 @@
 title: Tipo de recurso FilterDatetime
 description: Indica como filtrar uma data ao filtrar valores.
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9214e8ecde9b2c09e06cfcc6d6145ea5319eace9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 616f6a67bf761d0346c6d232eb6392ee2dc5fd96
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531402"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807756"
 ---
 # <a name="filterdatetime-resource-type"></a>Tipo de recurso FilterDatetime
 
@@ -21,8 +21,8 @@ Indica como filtrar uma data ao filtrar valores.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|data|string|A data no formato ISO8601 usada para filtrar os dados.|
-|especificidade|cadeia de caracteres|Como a data específica deve ser usada para manter os dados. Por exemplo, se a data for 2005-04-02 e a especificidade estiver definida como "mês", a operação de filtragem manterá todas as linhas com uma data do mês de abril de 2009. Os valores possíveis são: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
+|data|cadeia de caracteres|A data no formato ISO8601 usada para filtrar os dados.|
+|especificidade|string|Como a data específica deve ser usada para manter os dados. Por exemplo, se a data for 2005-04-02 e a especificidade estiver definida como "mês", a operação de filtragem manterá todas as linhas com uma data do mês de abril de 2009. Os valores possíveis são: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

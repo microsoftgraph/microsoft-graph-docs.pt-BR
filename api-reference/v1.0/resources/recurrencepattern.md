@@ -2,21 +2,21 @@
 title: Tipo de recurso recurrencePattern
 description: 'Descreve a frequência com que um event recorrente se repete. '
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: bc9f0a2745faf2a14c6200db81a6995b0835162e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dd04999c43aa248bcad7439a0d1e940ebd749129
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533876"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806804"
 ---
 # <a name="recurrencepattern-resource-type"></a>Tipo de recurso recurrencePattern
 
 Namespace: microsoft.graph
 
-Descreve a frequência com que um [event](event.md) recorrente se repete. 
+Descreve a frequência com que um [event](event.md) recorrente se repete.
 
 É possível especificar o padrão de recorrência de um evento recorrente de uma de seis maneiras, dependendo do seu cenário. Para cada tipo de padrão, especifique a quantidade de tempo entre as ocorrências. As ocorrências reais do evento recorrente sempre seguem esse padrão dentro do intervalo de datas que você especifica para o evento. Um evento recorrente é sempre definido por seu **recurrencePattern** (com que frequência o evento se repete) e seu [recurrenceRange](recurrencerange.md) (por quanto tempo o evento se repete).
 

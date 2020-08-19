@@ -3,18 +3,18 @@ title: tipo de recurso visualInfo
 description: Um tipo complexo para representar a propriedade **visualElements** no objeto Activity.
 localization_priority: Normal
 ms.prod: project-rome
-author: ''
+author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: e97e7d295d9a228d44adf355b510adb90a0b3f96
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a7d984ff43f855f5bf476409c977649f0aa79f5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447042"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806867"
 ---
 # <a name="visualinfo-resource-type"></a>tipo de recurso visualInfo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Um tipo complexo para representar a propriedade **visualElements** no objeto [Activity](../resources/projectrome-activity.md) .
 
@@ -28,7 +28,7 @@ Se um cartão personalizado não for fornecido, um cartão simples será gerado 
 
 |Nome | Tipo | Descrição|
 |:----|:------|:-----------|
-|displayText | String | Obrigatório. Descrição de texto curto da atividade exclusiva do usuário (por exemplo, nome do documento em casos em que uma atividade refere-se à criação de documentos)|
+|displayText | Cadeia de caracteres | Obrigatório. Descrição de texto curto da atividade exclusiva do usuário (por exemplo, nome do documento em casos em que uma atividade refere-se à criação de documentos)|
 |description | String | Opcional. Descrição de texto mais longa da atividade exclusiva do usuário (exemplo: nome do documento, primeira frase e/ou metadados)|
 |CorDoFundo | String | Opcional. Cor de plano de fundo usada para renderizar a atividade na cor da marca de interface do usuário da origem do aplicativo da atividade. Deve ser uma cor hexadecimal válida|
 |conteúdo | Objeto JSON não digitado | Opcional. Parte personalizada de dados-objeto JSON usado para fornecer conteúdo personalizado para renderizar a atividade na interface do usuário do shell do Windows|

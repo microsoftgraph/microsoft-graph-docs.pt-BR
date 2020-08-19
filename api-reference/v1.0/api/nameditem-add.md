@@ -2,15 +2,15 @@
 title: Adicionar Item nomeado
 description: Adiciona um novo nome à coleção de escopo fornecido usando a localidade do usuário para a fórmula.
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 0320518218c76a5cbb7201a53b10f23a93d55f96
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: f24f4545d902a93435cf12753ac6608e4f8b2703
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108505"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807077"
 ---
 # <a name="add-named-item"></a>Adicionar Item nomeado
 
@@ -45,13 +45,13 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|string|O nome do item nomeado.|
+|nome|string|O nome do item nomeado.|
 |de referência|Json|A fórmula ou o intervalo ao qual o nome fará referência.|
 |comment|string|O comentário associado ao item nomeado|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [WorkbookNamedItem](../resources/nameditem.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [WorkbookNamedItem](../resources/nameditem.md) no corpo da resposta.
 
 
 ## <a name="example"></a>Exemplo

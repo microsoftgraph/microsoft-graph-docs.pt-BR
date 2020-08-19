@@ -2,15 +2,15 @@
 title: 'NamedItem: Range'
 description: Retorna o objeto Range associado ao nome. Gera uma exceção quando o tipo de item nomeado não é um intervalo.
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a29750f7105d0ba326b35633484a54554b96a055
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 8482abda58889811b8d2718b555a0954b67f07ea
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681787"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806146"
 ---
 # <a name="nameditem-range"></a>NamedItem: Range
 

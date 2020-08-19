@@ -2,15 +2,15 @@
 title: Tipo de recurso alternativeSecurityId
 description: Apenas para uso interno.
 localization_priority: Normal
-author: ''
+author: spunukol
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d86d5f07a957abe45b898be08744c7c93853d78e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 151de4ee90d715ffb6619908ea17cd6ba5e52ed4
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533152"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807847"
 ---
 # <a name="alternativesecurityid-resource-type"></a>Tipo de recurso alternativeSecurityId
 

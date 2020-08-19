@@ -3,14 +3,14 @@ title: tipo de recurso historyItem
 description: Representa um item de histórico de uma atividade em um aplicativo. As atividades do usuário representam um único destino dentro de seu aplicativo, por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário participa dessa atividade, o contrato é capturado como um item de histórico que indica a hora de início e término da atividade. À medida que o usuário se reencaixa com essa atividade ao longo do tempo, vários itens de histórico são registrados para uma única atividade do usuário.
 localization_priority: Normal
 ms.prod: project-rome
-author: ''
+author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 4053811f1f44621b05830bf40b17d02e0112b455
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f300a7bf309653fef303c810a1c6211304f64e8c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533944"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806916"
 ---
 # <a name="historyitem-resource-type"></a>tipo de recurso historyItem
 
@@ -41,7 +41,7 @@ Quando um aplicativo cria uma sessão, um objeto **historyItem** deve ser adicio
 |expirationDateTime | DateTimeOffset | Opcional. DateTime UTC quando o **historyItem** passará pela exclusão permanente. Pode ser definido pelo cliente.|
 |activeDurationSeconds | int | Opcional. A duração do contrato de usuário ativo. Se não for fornecido, isso será calculado a partir do **startedDateTime** e do **lastActiveDateTime**.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 |Relação | Tipo | Descrição|
 |:------------|:-----|:-----------|

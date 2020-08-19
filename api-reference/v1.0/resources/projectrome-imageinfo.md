@@ -3,18 +3,18 @@ title: tipo de recurso imageInfo
 description: Um tipo complexo para representar a propriedade de **atribuição** na parte visualInfo do objeto Activity.
 localization_priority: Normal
 ms.prod: project-rome
-author: ''
+author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 35b4ad8573fe588c8e58123a36cc3acd97122fe2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 70d95d833518814f75d31227264be0dd5f85dba4
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447049"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806881"
 ---
 # <a name="imageinfo-resource-type"></a>tipo de recurso imageInfo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Um tipo complexo para representar a propriedade de **atribuição** na parte [visualInfo](../resources/projectrome-visualinfo.md) do objeto [Activity](../resources/projectrome-activity.md) .
 
@@ -22,9 +22,9 @@ Um tipo complexo para representar a propriedade de **atribuição** na parte [vi
 
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-|iconUrl | String | Opcion URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade|
-|alternateText | String | Opcion Alt-conteúdo de texto acessível para a imagem|
-|addImageQuery | Boolean | Opcion parâmetro usado para indicar que o servidor é capaz de renderizar a imagem dinamicamente em resposta à parametrização. Por exemplo, uma imagem de alto contraste|
+|iconUrl | Cadeia de caracteres | Opcion URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade|
+|alternateText | Cadeia de caracteres | Opcion Alt-conteúdo de texto acessível para a imagem|
+|addImageQuery | Booliano | Opcion parâmetro usado para indicar que o servidor é capaz de renderizar a imagem dinamicamente em resposta à parametrização. Por exemplo, uma imagem de alto contraste|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -3,14 +3,14 @@ title: Criar ou substituir uma atividade
 description: Criar um novo ou substituir uma atividade de usuário existente para seu aplicativo. Se quiser criar uma atividade de usuário e seus **historyItems** relacionados em uma solicitação, você poderá usar a inserção profunda.
 localization_priority: Normal
 ms.prod: project-rome
-author: ''
+author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 7ca7d0d5b222c7e82a9dbd108071174a0df09d23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd96a94d6e247d01b2643517afdde3759b67a182
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510715"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807028"
 ---
 # <a name="create-or-replace-an-activity"></a>Criar ou substituir uma atividade
 
@@ -50,7 +50,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [Activ
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` o código de resposta se a atividade foi `200 OK` criada ou se a atividade foi substituída.
+Se tiver êxito, este método retornará o `201 Created` código de resposta se a atividade foi criada ou `200 OK` se a atividade foi substituída.
 
 ## <a name="examples"></a>Exemplos
 

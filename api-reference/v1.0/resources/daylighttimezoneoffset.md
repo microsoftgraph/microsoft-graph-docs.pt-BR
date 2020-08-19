@@ -2,15 +2,15 @@
 title: Tipo de recurso daylightTimeZoneOffset
 description: Especifica quando um fuso horário muda do horário padrão para o horário de verão.
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: abeb98f2db49ce7fde14e9360b1647ecf4b93acb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e9fba042d4876b9198d00c825c4a89fd68a4803
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531704"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812348"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>Tipo de recurso daylightTimeZoneOffset
 

@@ -4,30 +4,30 @@ description: " por exemplo, `privilegedAccess/azureResources` representa o PIM q
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 1c8388c8ba9fd79b44e0d037496313cf67774bdf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: c57dd911d105ba4d096a09f9262b847db5240fa1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521555"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811446"
 ---
 # <a name="privilegedaccess-resource-type"></a>tipo de recurso privilegedAccess
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um grupo de funcionalidades fornecidas pelo serviço de gerenciamento de identidade privilegiado (PIM). Instâncias diferentes de `privilegedAccess` representar diferentes provedores gerenciados pelo PIM; por exemplo, `privilegedAccess/azureResources` representa o PIM que gerencia o acesso privilegiado aos recursos do Azure.
+Representa um grupo de funcionalidades fornecidas pelo serviço de gerenciamento de identidade privilegiado (PIM). Diferentes instâncias de `privilegedAccess` representar provedores diferentes gerenciados pelo PIM; por exemplo, `privilegedAccess/azureResources` representa o PIM que gerencia o acesso privilegiado aos recursos do Azure.
 
 
-`privilegedAccess`é somente leitura por enquanto. `POST` `DELETE` Nenhuma operação é suportada no conjunto de `privilegedAccess` `PUT` `PATCH`entidades.
+`privilegedAccess` é somente leitura por enquanto. Nenhuma `POST` `PUT` `PATCH` `DELETE` operação é suportada no `privilegedAccess` conjunto de entidades.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade  | Tipo      |Descrição|
 |:----------|:----------|:----------|
 |id         |String     |A ID do provedor gerenciado pelo PIM.|
-|displayName|Cadeia de caracteres     |O nome de exibição do provedor gerenciado pelo PIM.|
+|displayName|String     |O nome de exibição do provedor gerenciado pelo PIM.|
 
 
 ## <a name="relationships"></a>Relações

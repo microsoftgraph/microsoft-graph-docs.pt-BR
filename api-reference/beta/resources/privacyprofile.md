@@ -4,17 +4,17 @@ description: Representa o perfil de privacidade de uma empresa que inclui uma UR
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: e43064fe520f100d582e740302a7606c9824b3f2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.openlocfilehash: 14ec9ae7119743e1b206f2d4b748cec09b9bfd3e
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521562"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811459"
 ---
 # <a name="privacyprofile-resource-type"></a>Tipo de recurso privacyProfile
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Representa o perfil de privacidade de uma empresa que inclui uma URL da polític
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|contactEmail|String| Um endereço de email smtp válido para o contato da política de privacidade. Não necessário.|
+|contactEmail|Cadeia de caracteres| Um endereço de email smtp válido para o contato da política de privacidade. Não obrigatório.|
 |statementUrl|Cadeia de caracteres| Um formato de URL válido começando por http:// ou https://. O tamanho máximo é de 255 caracteres. A URL que direciona para a política de privacidade da empresa. Não obrigatório.|
 
 ## <a name="json-representation"></a>Representação JSON
