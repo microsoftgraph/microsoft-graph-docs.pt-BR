@@ -1,23 +1,23 @@
 ---
-title: Autorização para APIs lerem os relatórios de uso do Office 365
+title: Autorização para APIs lerem os relatórios de uso do Microsoft 365.
 description: Os dados de relatórios acessíveis por meio da API de relatórios do Microsoft Graph são confidenciais e protegidos por permissões e funções do Azure AD (Azure Active Directory).
-author: yixia
+author: kszb
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: b62da7d042f4dc61c2ee4da648fd0b612f5caac8
-ms.sourcegitcommit: dbc547a845e507aa934025f9dc73563c13b4fb90
+ms.openlocfilehash: 2830a3ad66f123418712aac214dd30be8227ca90
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42606174"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810941"
 ---
-# <a name="authorization-for-apis-to-read-office-365-usage-reports"></a>Autorização para APIs lerem os relatórios de uso do Office 365
+# <a name="authorization-for-apis-to-read-microsoft-365-usage-reports"></a>Autorização para APIs lerem os relatórios de uso do Microsoft 365.
 
-Os dados do relatório acessíveis por meio da API de relatórios do Microsoft Graph são confidenciais. Em particular, os relatórios de uso do Office 365 são protegidos por permissões e funções do Azure AD (Azure Active Directory). As informações neste artigo se aplicam à API de relatórios que lê os relatórios de uso do Office 365.
+Os dados do relatório acessíveis por meio da API de relatórios do Microsoft Graph são confidenciais. Em particular, os relatórios de uso do Microsoft 365 são protegidos tanto pelas permissões quanto pelas funções do Azure Active Directory (Azure AD). As informações neste artigo se aplicam à API de relatórios que lê os relatórios de uso do Microsoft 365.
 
-As APIs que leem os relatórios de uso do Office 365 oferecem suporte a dois tipos de autorização:
+As APIs que leem os relatórios de uso do Microsoft 365 oferecem suporte a dois tipos de autorização:
 
-- **Autorização no nível do aplicativo** – permite que um aplicativo leia todos os relatórios de uso de serviço sem um usuário conectado. As permissões concedidas ao aplicativo determinam a autorização. 
+- **Autorização no nível do aplicativo** – permite que um aplicativo leia todos os relatórios de uso de serviço sem um usuário conectado. As permissões concedidas ao aplicativo determinam a autorização.
 - **Permissão delegada pelo usuário** – permite que um aplicativo leia todos os relatórios de uso de serviço em nome do usuário conectado. Além do aplicativo ter recebido as permissões necessárias, o usuário deve ser membro de uma função de administrador limitada do Azure AD. Essa pode ser uma das seguintes funções: administrador da empresa, administrador do Exchange, administrador do SharePoint, administrador do Lync, Administrador de Serviço do Teams, Administrador de Comunicações do Teams, leitor global ou leitor de relatórios.
 
 Se você estiver chamando as APIs do Explorador do Graph:

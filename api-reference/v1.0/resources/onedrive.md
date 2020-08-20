@@ -3,19 +3,19 @@ title: Trabalhando com arquivos no Microsoft Graph
 description: Você pode usar o Microsoft Graph para criar um aplicativo que se conecta a arquivos entre bibliotecas de documentos do OneDrive, OneDrive for Business e SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
-author: ''
+author: jewan-microsoft
 doc_type: conceptualPageType
-ms.openlocfilehash: 043a380890e361b1ad5d920ba4c32de1e89d98ca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4ca07cc41f0819f3c003ee91851e6e5387b7d325
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035907"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808190"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>Trabalhando com arquivos no Microsoft Graph
 
 Você pode usar o Microsoft Graph para criar um aplicativo que se conecta a arquivos entre bibliotecas de documentos do OneDrive, OneDrive for Business e SharePoint.
-Com o Microsoft Graph, é possível criar uma variedade de experiências com arquivos armazenados no Office 365, desde simplesmente armazenar documentos de usuários até cenários de compartilhamento de arquivos complexos.
+Com o Microsoft Graph, você pode criar uma variedade de experiências com arquivos armazenados no Microsoft 365, desde simplesmente armazenar documentos de usuários até cenários de compartilhamento de arquivos complexos.
 
 O Microsoft Graph expõe dois tipos de recursos para trabalhar com arquivos:
 
@@ -89,7 +89,7 @@ Além de endereçar **DriveItem** dentro de **Drive** com base na ID exclusiva, 
 O [recurso de Unidade](drive.md) é o objeto de nível superior no OneDrive do usuário ou em uma biblioteca de documentos do [SharePoint][].
 Quase todas as operações de arquivos serão iniciadas com o endereçamento de um recurso Drive específico.
 
-Um recurso Drive pode ser endereçado pela ID exclusiva da unidade ou pela unidade padrão de um [Usuário](user.md), [Grupo](group.md) ou organização. 
+Um recurso Drive pode ser endereçado pela ID exclusiva da unidade ou pela unidade padrão de um [Usuário](user.md), [Grupo](group.md) ou organização.
 
 ## <a name="driveitem-resource"></a>Recurso DriveItem
 
@@ -103,13 +103,16 @@ DriveItems com uma faceta **folder** atuam como contêineres de itens e têm uma
 
 Um usuário pessoal do OneDrive pode adicionar um ou mais itens compartilhados de outra unidade a seu próprio OneDrive. Esses itens compartilhados aparecem como **DriveItem** na coleção **children** com uma faceta [remoteItem](remoteitem.md).
 
-Para saber mais sobre como trabalhar com pastas compartilhadas e itens remotos, confira [Itens remotos e pastas compartilhadas](remoteitem.md).   
+Para saber mais sobre como trabalhar com pastas compartilhadas e itens remotos, confira [Itens remotos e pastas compartilhadas](remoteitem.md).
 
 ## <a name="sharing-and-permissions"></a>Compartilhamento e permissões
 
 Uma das ações mais comuns para bibliotecas de documentos do OneDrive e do SharePoint é compartilhar conteúdo com outras pessoas. O Microsoft Graph permite que seu aplicativo crie [links de compartilhamento](../api/driveitem-createlink.md), [adicione permissões e envie convites](../api/driveitem-invite.md) para itens em uma unidade.
 
 O Microsoft Graph também fornece uma maneira de seu aplicativo [acessar conteúdo compartilhado](../api/shares-get.md) diretamente de um link de compartilhamento.
+
+## <a name="whats-new"></a>O que há de novo
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
 [SharePoint]: sharepoint.md
 [site]: site.md
