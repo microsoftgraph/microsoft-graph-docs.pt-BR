@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 48b8412b8646cb6daa9d802bd48a966e7d12c58a
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 31b06e1f49833241f6a6f50e610b9286e0418edf
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107574"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46820271"
 ---
 # <a name="list-scopedadministratorof"></a>Listar scopedAdministratorOf
 
@@ -32,8 +32,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/scopedAdministratorOf
-GET /users/{id}/scopedAdministratorOf
+GET /me/scopedRoleMemberOf 
+GET /users/{id}/scopedRoleMemberOf
 
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -60,7 +60,7 @@ Este é um exemplo da solicitação.
   "name": "get_scopedadministratorof"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/scopedAdministratorOf
+GET https://graph.microsoft.com/beta/me/scopedRoleMemberOf
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedadministratorof-csharp-snippets.md)]
