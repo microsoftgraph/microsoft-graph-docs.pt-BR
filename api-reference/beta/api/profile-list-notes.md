@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a1e1850927be690310c266710dae8479da7227c3
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a6cb5eecdd6d779ed89cde263135def3f682c12f
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812867"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819369"
 ---
 # <a name="list-notes"></a>Listar anotações
 Namespace: microsoft.graph
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
 | Aplicativo                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -74,15 +74,15 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e uma c
 GET https://graph.microsoft.com/beta/me/profile/notes
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-notes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-notes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-notes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

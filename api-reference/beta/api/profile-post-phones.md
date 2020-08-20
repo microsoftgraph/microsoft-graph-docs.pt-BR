@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f0d2b947c2045499f91d405ddef4eb79b39430ad
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: fcdb1c076d0fff4a3ae5bb6b49fdc77f6acb0aae
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811592"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819790"
 ---
 # <a name="create-itemphonenumber"></a>Criar itemPhoneNumber
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -67,6 +67,8 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta e 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_itemphone_from_"
@@ -82,6 +84,20 @@ Content-length: 382
   "number": "+7 499 342 22 13"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-itemphone-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-itemphone-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-itemphone-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

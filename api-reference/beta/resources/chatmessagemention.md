@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a782c2728dcd0d06349d0f3043f44a0509f5d543
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: e4b6ce12589525e7ddb471f5744d68539c905f3d
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845679"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819718"
 ---
 # <a name="chatmessagemention-resource-type"></a>tipo de recurso chatMessageMention
 
@@ -41,7 +41,7 @@ Para obter um contexto mais completo do exemplo, consulte [listar respostas de m
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|Int32|Índice de uma entidade que está sendo mencionada no **chat**especificado. Corresponde ao valor {index} na marca correspondente `<at id="{index}">` no corpo da mensagem.|
-|mentionText|string|Cadeia de caracteres usada para representar a menção. Por exemplo, o nome de exibição de um usuário, o nome de uma equipe.|
+|mentionText|cadeia de caracteres|Cadeia de caracteres usada para representar a menção. Por exemplo, o nome de exibição de um usuário, o nome de uma equipe.|
 |foi|[identitySet](identityset.md)|A entidade (usuário, aplicativo, equipe ou canal) que foi mencionada.  Se fosse um canal ou uma equipe que foi @mentioned, o identityset contém uma propriedade de **conversa** que concede a ID da equipe/canal, e uma propriedade **conversationIdentityType** que representa a equipe ou o canal.|
 
 
@@ -60,7 +60,6 @@ Veja a seguir uma representação JSON do recurso.
   "mentionText": "string",
   "mentioned": {"@odata.type": "microsoft.graph.identitySet"}
  }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5ae8e81167828ee644e14c4ba92216c2aba43160
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 75692418ae2d54650f4ae6c616c727fab5b040e2
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812871"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819725"
 ---
 # <a name="create-itempublication"></a>Criar a multipúblico
 Namespace: microsoft.graph
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
 | Aplicativo                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -92,15 +92,15 @@ Content-length: 497
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-itempublication-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-itempublication-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-itempublication-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

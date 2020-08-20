@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b8f152437a833d5d0bbd1ddaeedb1bed21d20577
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3577a0daa807c7f5016ae34b22174ffd1c2fe813
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812201"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819515"
 ---
 # <a name="create-itememail"></a>Criar email
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -85,15 +85,15 @@ Content-length: 383
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-itememail-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-personname-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-itememail-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-personname-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-itememail-from-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

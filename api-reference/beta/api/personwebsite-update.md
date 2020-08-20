@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2b09a39d5821d095e8e3a27eb1ec1bf95dda754a
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8dd02aa16cc6a97650cf44e368d26aa5f55ea19e
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811607"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819824"
 ---
 # <a name="update-personwebsite"></a>Atualizar personwebsite
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -83,15 +83,15 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-personwebsite-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-personwebsite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-personwebsite-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-personwebsite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-personwebsite-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-personwebsite-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

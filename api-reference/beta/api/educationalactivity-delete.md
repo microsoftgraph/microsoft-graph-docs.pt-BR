@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 96c717171f683d2a32e62b4e79b80639e2cb5242
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: cfff22d975dbe9c54f3c4647cb07f42669a1fd9f
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810948"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819377"
 ---
 # <a name="delete-educationalactivity"></a>Excluir educationalActivity
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -58,6 +58,8 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_educationalactivity"
@@ -66,6 +68,20 @@ Este é um exemplo de solicitação.
 ```http
 DELETE https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 
