@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 3cfec228869d9f007959cdf243fba4651834c306
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 2ce47ccf949589856335e73bf67cbe2f84d94ea4
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509796"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808512"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -287,7 +287,6 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |manager|[directoryObject](directoryobject.md)|O usuário ou contato que é o gerente do usuário. Somente leitura. (Métodos HTTP: GET, PUT, DELETE.)|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. Somente leitura. Anulável.|
 |joinedTeams|Coleção [team](team.md)|As equipes do Microsoft Teams do qual o usuário é membro. Somente leitura. Anulável.|
-|trabalho em equipe|[userTeamwork](userteamwork.md)| Um contêiner dos recursos do Microsoft Teams disponíveis para o usuário. Somente leitura. Anulável.|
 |messages|Coleção [message](message.md)|As mensagens em uma caixa de correio ou pasta. Somente leitura. Anulável.|
 |onenote|[onenote](onenote.md)| Somente leitura.|
 |outlook|[outlookUser](outlookuser.md)| Os serviços seletivos do Outlook disponíveis para o usuário. Somente leitura. Anulável.|
@@ -297,9 +296,12 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |photo|[profilePhoto](profilephoto.md)| A foto de perfil do usuário. Somente leitura.|
 |photos|coleção de [fotos](photo.md)| Somente leitura. Anulável.|
 |planner|[plannerUser](planneruser.md)| Serviços de planejador seletivo disponíveis para o usuário. Somente leitura. Anulável. |
+|perfil |[perfil](profile.md) | Representa propriedades que são descritivas de um usuário em um locatário. |
+|registeredDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que estão registrados para o usuário. Somente leitura. Anulável.|
 |scopedRoleMemberOf|Coleção [scopedRoleMembership](scopedrolemembership.md)| As associações de unidade administrativa de função com escopo deste usuário. Somente leitura. Anulável.|
 |settings|[userSettings](usersettings.md) | Somente leitura. Anulável.|
-|registeredDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que estão registrados para o usuário. Somente leitura. Anulável.|
+|trabalho em equipe|[userTeamwork](userteamwork.md)| Um contêiner dos recursos do Microsoft Teams disponíveis para o usuário. Somente leitura. Anulável.|
+
 
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>Preferências do usuário para idiomas e formatos regionais.
 O recurso do **usuário** contém uma propriedade [mailboxSettings](../resources/mailboxsettings.md), que inclui o idioma, a formatação de data e hora, o fuso horário padrão e outras configurações preferidas do usuário especificamente para a caixa de correio principal do Exchange. Essas preferências são direcionadas para os clientes de email e só estarão disponíveis se o usuário tiver uma caixa de correio provisionada. Você pode optar por usar **mailboxSettings** se o seu cenário se concentrar apenas em emails, calendários, contatos ou tarefas pendentes do Outlook.
@@ -339,6 +341,7 @@ Veja a seguir uma representação JSON do recurso
     "ownedDevices",
     "ownedObjects",
     "photo",
+    "profile",
     "registeredDevices"
   ],
   "keyProperty": "id",
@@ -438,6 +441,7 @@ Veja a seguir uma representação JSON do recurso
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
+  "profile": {"@odata.type": "microsoft.graph.profile"},
   "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "signInActivity": {"@odata.type": "microsoft.graph.signInActivity"}
 }
