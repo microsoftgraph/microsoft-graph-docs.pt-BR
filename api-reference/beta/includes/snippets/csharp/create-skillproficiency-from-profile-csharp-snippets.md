@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: bc5297566e7267f68368b6ada43c3c7f9dd2d1d3
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: dde9eaef6c5d4acffb1ab76a86906a683596785e
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37997753"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821347"
 ---
 ```csharp
 
@@ -15,11 +15,15 @@ var skillProficiency = new SkillProficiency
 {
     Categories = new List<String>()
     {
-        "categories-value"
+        "Professional"
     },
-    DisplayName = "displayName-value",
-    Proficiency = SkillProficiencyLevel.Elementary,
-    WebUrl = "webUrl-value"
+    AllowedAudiences = AllowedAudiences.Organization,
+    DisplayName = "API Design",
+    Proficiency = SkillProficiencyLevel.GeneralProfessional,
+    CollaborationTags = new List<String>()
+    {
+        "ableToMentor"
+    }
 };
 
 await graphClient.Me.Profile.Skills

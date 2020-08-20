@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c3376a86f41a117440444d67de1b6c14065e5af9
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: f31e0b0df08a302cdb312519eedbd1ce93c34e27
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37996578"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821247"
 ---
 ```javascript
 
@@ -16,8 +16,8 @@ const options = {
 const client = Client.init(options);
 
 const personAnniversary = {
-  type: "type-value",
-  date: "datetime-value"
+  type: "birthday",
+  date: "1980-01-08"
 };
 
 let res = await client.api('/me/profile/anniversaries')
