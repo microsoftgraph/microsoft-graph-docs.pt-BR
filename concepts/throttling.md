@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: a38c6c77daa5a9a6adab469681b4f7b0c4291e32
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: f00ef6f5c45736724f145e036a7fa78abdd107df
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597981"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811844"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -33,6 +33,30 @@ As causas mais comuns de limitação dos clientes incluem:
 
 - Um grande número de solicitações em todos os aplicativos em um locatário.
 - Um grande número de solicitações de um aplicativo específico entre todos os locatários.
+
+## <a name="sample-response"></a>Resposta de amostra
+
+Sempre que o limite de estrangulamento é excedido, o Microsoft Graph responde com uma resposta semelhante a esta.
+
+```http
+HTTP/1.1 429 Too Many Requests
+Content-Type: application/json
+Retry-After: 2.128
+
+{
+  "error": {
+    "code": "TooManyRequests",
+    "innerError": {
+      "code": "429",
+      "date": "2020-08-18T12:51:51",
+      "message": "Please retry after",
+      "request-id": "94fb3b52-452a-4535-a601-69e0a90e3aa2",
+      "status": "429"
+    },
+    "message": "Please retry again laster."
+  }
+}
+```
 
 ## <a name="best-practices-to-handle-throttling"></a>Práticas recomendadas para lidar com a limitação
 
@@ -63,6 +87,12 @@ Padrões de programação como pesquisando continuamente um recurso para verific
 
 >[!NOTE]
 >[Práticas recomendadas para descobrir arquivos e detectar alterações em escala](https://docs.microsoft.com/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online) descrevem as práticas recomendadas em detalhes.
+
+## <a name="throttling-and-batching"></a>Limitação e dosagem
+
+[O lote JSON](./json-batching.md) permite que você otimize seu aplicativo combinando várias solicitações em um único objeto JSON. As solicitações em um lote são avaliadas individualmente em relação aos limites de estrangulamento e, se alguma solicitação exceder os limites, ela falhará com um `status` de `429` e um erro semelhante ao fornecido acima. O próprio lote falha com um código de status de `424` (Dependência com Falha). É possível que várias solicitações sejam limitadas em um único lote. Você deve tentar novamente a cada solicitação com falha no lote utilizando o valor fornecido no cabeçalho de resposta `retry-after` do conteúdo JSON. Você pode tentar novamente para todas as solicitações com falha em um novo lote após o valor `retry-after` mais longo.
+
+Se os SDKs tentarem novamente as solicitações limitadas automaticamente quando não estiverem em lote, as solicitações limitadas que fizeram parte de um lote não serão automaticamente repetidas.
 
 ## <a name="service-specific-limits"></a>Limites específicos do serviço
 
