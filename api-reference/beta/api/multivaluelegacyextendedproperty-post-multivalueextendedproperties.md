@@ -5,18 +5,20 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: 80923a04e7ce8c932134ddc4f12754a0e26f44c5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d0079ee5455d717dfec1bf32f23aa788991be1fc
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810836"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849553"
 ---
 # <a name="create-multi-value-extended-property"></a>Criar propriedade estendida de vários valores
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
 Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso.
 

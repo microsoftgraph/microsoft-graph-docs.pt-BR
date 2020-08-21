@@ -5,18 +5,21 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ed70266ccd093128fa3d3f48c8999f7b615a759c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 12160cf04ac2fbb0a5ed8dabfcc5870765b30511
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456182"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849275"
 ---
 # <a name="create-outlooktaskgroup"></a>Criar outlookTaskGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Criar um grupo de tarefas do Outlook na caixa de correio do usuário.
 ## <a name="permissions"></a>Permissões
@@ -44,7 +47,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [outlookT
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

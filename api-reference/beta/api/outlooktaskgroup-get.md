@@ -5,18 +5,21 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: adcb583df01aa25d0927e595b37fe09d56b3fbbb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 227de23959539187159abd92fcb1e1588419c9d4
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408383"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849272"
 ---
 # <a name="get-outlooktaskgroup"></a>Obter outlookTaskGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Obtenha as propriedades e os relacionamentos do grupo de tarefas especificado do Outlook.
 ## <a name="permissions"></a>Permissões

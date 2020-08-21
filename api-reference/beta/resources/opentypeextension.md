@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: 297055a6edb4eb4d094406e03b9e4136f1df68c4
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 1bba16d8207e6e31223ff562d016efdba01b77d0
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864102"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849162"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
@@ -31,12 +31,14 @@ As extensões abertas têm suporte nos recursos a seguir nas versões correspond
 | [Evento de calendário](event.md) | GA |
 | [Evento de calendário](event.md) do grupo | GA |
 | [Postagem](post.md) de thread de conversa do grupo | GA |
-| [device](device.md) | GA |
-| [group](group.md) | GA |
-| [message](message.md) | GA |
-| [organization](organization.md) | GA |
+| [Dispositivo](device.md) | GA |
+| [Grupo](group.md) | GA |
+| [Mensagem](message.md) | GA |
+| [Organização](organization.md) | GA |
 | [Contato pessoal](contact.md) | GA |
-| [user](user.md) | GA |
+| [Usuário](user.md) | GA |
+| [Tarefa](todotask.md)  | Somente para visualização ||
+| [Lista de tarefas](todotasklist.md)  | Somente para visualização ||
 
 ## <a name="outlook-specific-considerations"></a>Considerações específicas do Outlook
 
@@ -80,14 +82,13 @@ Veja a seguir uma representação JSON do recurso
 
 ## <a name="relationships"></a>Relações
 
-Nenhum
+Nenhuma
 
 ## <a name="methods"></a>Métodos
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
-|[Criar](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(em uma instância de recurso existente) ou um novo [contato](../resources/contact.md), [evento](../resources/event.md)ou [mensagem](../resources/message.md) que contenha um objeto openTypeExtension. | Crie um objeto openTypeExtension em uma instância de recurso nova ou existente.|
-|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Leia propriedades e relações do objeto openTypeExtension.|
+|[Criar](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(em uma instância de recurso existente) ou um novo [contato](contact.md), [evento](event.md), [mensagem](message.md), [post](post.md), [todoTask](todotask.md)ou [todoTaskList](todotasklist.md) que contenha um objeto openTypeExtension. | Crie um objeto openTypeExtension em uma instância de recurso nova ou existente.||[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Leia propriedades e relações do objeto openTypeExtension.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Atualize o objeto openTypeExtension. |
 |[Delete](../api/opentypeextension-delete.md) | Nenhuma |Exclua um objeto openTypeExtension. |
 

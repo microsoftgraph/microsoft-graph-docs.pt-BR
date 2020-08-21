@@ -5,18 +5,20 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: a55fa852e128321f36cd7fb75dc8889e196885e6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 41857d57010265d7942e0d1694191ee5acf3c4d1
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812418"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849741"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>Tipo de recurso singleValueLegacyExtendedProperty
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
 Uma propriedade estendida que contém um único valor.
 
@@ -33,7 +35,7 @@ Confira [Visão geral de propriedades estendidas](../resources/extended-properti
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|string|O identificador da propriedade. Somente leitura.|
+|id|cadeia de caracteres|O identificador da propriedade. Somente leitura.|
 |valor|string|Um valor de propriedade.|
 
 ## <a name="relationships"></a>Relações

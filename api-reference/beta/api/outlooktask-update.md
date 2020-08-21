@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cc311b0e95e33dd189908d7bbec8fa9d57fd0282
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 55aa1216a2f1d0f2aac5257063525dadac98d3f6
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413591"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849678"
 ---
 # <a name="update-outlooktask"></a>Atualizar outlooktask
 
@@ -18,9 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
 Alterar as propriedades graváveis de uma tarefa do Outlook.
 
-A propriedade **completedDateTime** pode ser definida pela ação **Complete** ou explicitamente por uma operação patch. Se você usar PATCH para definir **completedDateTime**, certifique-se de **status** `completed` definir o status também.
+A propriedade **completedDateTime** pode ser definida pela ação **Complete** ou explicitamente por uma operação patch. Se você usar PATCH para definir **completedDateTime**, certifique-se de definir o **status** `completed` também.
 
 Por padrão, essa operação (e as operações de tarefa POST, GET e [Complete](../api/outlooktask-complete.md) ) retorna as propriedades relacionadas à data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
 
@@ -58,16 +61,16 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa. Observe para qual tipo de HTML há suporte.|
 |Categorias|Coleção de cadeias de caracteres|As categorias associadas à postagem.|
-|changeKey|String|A versão da tarefa.|
+|changeKey|Cadeia de caracteres|A versão da tarefa.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
 |hasAttachments|Booliano|Defina como verdadeiro se a tarefa tiver anexos.|
-|importância|string|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|importância|cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isReminderOn|Booliano|Definido como verdadeiro se um alerta é definido para lembrar o usuário da tarefa.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|proprietário|String|O nome da pessoa que criou a tarefa.|
-|parentFolderId|String|O identificador exclusivo para a pasta pai da tarefa.|
+|proprietário|Cadeia de caracteres|O nome da pessoa que criou a tarefa.|
+|parentFolderId|Cadeia de caracteres|O identificador exclusivo para a pasta pai da tarefa.|
 |recorrência|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
 |sensibilidade|cadeia de caracteres|Indica o nível de privacidade da tarefa. Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|

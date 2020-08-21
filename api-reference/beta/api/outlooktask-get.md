@@ -5,18 +5,21 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 89b790ee480fc6c92aff5652fc2c165d6eb828e0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 50bc54603005d226f6c05c03f4ccee772ec1d8fb
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413772"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849713"
 ---
 # <a name="get-outlooktask"></a>Obter outlookTask
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Obtenha as propriedades e as relações de uma tarefa do Outlook na caixa de correio do usuário.
 

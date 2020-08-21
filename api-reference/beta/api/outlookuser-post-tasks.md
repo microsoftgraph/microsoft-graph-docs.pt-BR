@@ -1,16 +1,16 @@
 ---
 title: Criar outlookTask
-description: Crie uma tarefa do Outlook no grupo de tarefas padrão`My Tasks`() e na pasta de`Tasks`tarefas padrão () na caixa de correio do usuário.
+description: Crie uma tarefa do Outlook no grupo de tarefas padrão ( `My Tasks` ) e na pasta de tarefas padrão ( `Tasks` ) na caixa de correio do usuário.
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 855497074695876a9ec05a24ef2320d0b12dc668
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8de61bceba328dbf99242cbfe5140e7ebed1296b
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440680"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849447"
 ---
 # <a name="create-outlooktask"></a>Criar outlookTask
 
@@ -18,7 +18,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma tarefa do Outlook no grupo de tarefas padrão`My Tasks`() e na pasta de`Tasks`tarefas padrão () na caixa de correio do usuário.
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
+Crie uma tarefa do Outlook no grupo de tarefas padrão ( `My Tasks` ) e na pasta de tarefas padrão ( `Tasks` ) na caixa de correio do usuário.
 
 O método POST sempre ignora a parte de hora de **StartDateTime** e **dueDateTime** no corpo da solicitação e pressupõe que o tempo seja sempre meia-noite no fuso horário especificado.
 
@@ -50,7 +53,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [outlookT
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [outlookTask](../resources/outlooktask.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [outlookTask](../resources/outlooktask.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -97,7 +100,7 @@ O método POST ignora a parte de hora de **StartDateTime** e **dueDateTime** no 
 
 Como o cabeçalho `Prefer` especifica PST, o método POST expressa todas as propriedades relacionadas à data na resposta em PST. Em particular, para as propriedades **StartDateTime** e **dueDateTime** , o método post converte meia-noite em est para pst e retorna-as em PST na resposta.
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

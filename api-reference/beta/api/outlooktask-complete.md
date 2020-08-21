@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2eb50c7f4437ebbae0f2b2778869bb6aef130105
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1d10656f41c5f7e4063abd71b9111a2e64cbb46c
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449790"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849776"
 ---
 # <a name="outlooktask-complete"></a>outlookTask: concluir
 
@@ -18,7 +18,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Concluir uma tarefa do Outlook que define a propriedade **completedDateTime** como a data atual e a propriedade **status** como `completed`.
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
+Concluir uma tarefa do Outlook que define a propriedade **completedDateTime** como a data atual e a propriedade **status** como `completed` .
 
 Se você estiver realizando uma tarefa em uma série recorrente, na resposta, a coleção de tarefas conterá a tarefa concluída na série e a próxima tarefa na série.
 
@@ -62,7 +65,7 @@ Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto 
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir marca a tarefa especificada como concluída. Ele especifica o `Prefer: outlook.timezone` horário padrão do Pacífico (PST) no cabeçalho.
+O exemplo a seguir marca a tarefa especificada como concluída. Ele especifica o horário padrão do Pacífico (PST) no `Prefer: outlook.timezone` cabeçalho.
 
 ### <a name="request"></a>Solicitação
 

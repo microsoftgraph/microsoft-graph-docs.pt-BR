@@ -5,18 +5,20 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: 2b0bfa2d8d5da5c3cca9479195a6649e25c8d7e8
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: bf082da6c628c5b4f4ef969ced3f4f50ebf2f65f
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810518"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849154"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>Tipo de recurso multiValueLegacyExtendedProperty
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
 Uma propriedade estendida que contém uma coleção de valores.
 
@@ -32,7 +34,7 @@ Confira [Visão geral de propriedades estendidas](../resources/extended-properti
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|string|O identificador da propriedade. Somente leitura.|
+|id|cadeia de caracteres|O identificador da propriedade. Somente leitura.|
 |valor|coleção de cadeias de caracteres|Uma coleção de valores de propriedade.|
 
 ## <a name="relationships"></a>Relações

@@ -312,7 +312,7 @@ items:
                     href: api/iteminsightssettings-get.md
                   - name: Atualizar
                     href: api/iteminsightssettings-update.md
-          - name: Email
+          - name: Correio
             href: resources/message.md
             items:
               - name: Criar pasta de email
@@ -377,7 +377,7 @@ items:
                     href: api/outlookuser-list-mastercategories.md
               - name: Converter IDs
                 href: api/user-translateexchangeids.md
-          - name: Tarefas do Outlook (versão prévia)
+          - name: Tarefas do Outlook (preterido)
             items:
               - name: Tarefas do Outlook
                 href: resources/outlooktask.md
@@ -426,7 +426,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir o perfil do usuário
                 href: api/profile-delete.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -906,7 +906,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: Listar memberOf transitivos
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -11663,7 +11663,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Grupo
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -11809,7 +11809,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Trabalho em equipe
+      - name: Teamwork
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -12203,105 +12203,160 @@ items:
               - name: Criar blocos de anotações
                 href: api/onenote-post-notebooks.md
       - name: Tarefas pendentes (visualização)
-        href: resources/outlooktask.md
-        displayName: Outlook
+        displayName: Microsoft To Do
         items:
-          - name: Tarefa do Outlook
-            href: resources/outlooktask.md
+          - name: Visão Geral
+            href: resources/todo-overview.md
+          - name: Lista de tarefas
+            href: resources/todotasklist.md
+            items:
+              - name: Listar listas de tarefas
+                href: api/todo-list-lists.md
+              - name: Criar lista de tarefas
+                href: api/todo-post-lists.md
+              - name: Obter lista de tarefas
+                href: api/todotasklist-get.md
+              - name: Atualizar lista de tarefas
+                href: api/todotasklist-update.md
+              - name: Excluir lista de tarefas
+                href: api/todotasklist-delete.md
+              - name: Obter Delta de lista de tarefas
+                href: api/todotasklist-delta.md
+              - name: Criar extensão aberta
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: Obter extensão aberta
+                href: api/opentypeextension-get.md
+          - name: Task
+            href: resources/todotask.md
+            items:
+              - name: Listar tarefas
+                href: api/todotasklist-list-tasks.md
+              - name: Criar tarefa
+                href: api/todotasklist-post-tasks.md
+              - name: Obter tarefa
+                href: api/todotask-get.md
+              - name: Atualizar tarefa
+                href: api/todotask-update.md
+              - name: Excluir tarefa
+                href: api/todotask-delete.md
+              - name: Obter o Delta da tarefa
+                href: api/todotask-delta.md
+              - name: Criar extensão aberta
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: Obter extensão aberta
+                href: api/opentypeextension-get.md
+          - name: Recurso vinculado
+            href: resources/linkedresource.md
             items:
               - name: Listar
-                href: api/outlookuser-list-tasks.md
+                href: api/todotask-list-linkedresources.md
               - name: Criar
-                href: api/outlookuser-post-tasks.md
+                href: api/todotask-post-linkedresources.md
               - name: Obter
-                href: api/outlooktask-get.md
+                href: api/linkedresource-get.md
               - name: Atualizar
-                href: api/outlooktask-update.md
+                href: api/linkedresource-update.md
               - name: Excluir
-                href: api/outlooktask-delete.md
-              - name: Completo
-                href: api/outlooktask-complete.md
-              - name: Listar anexos
-                href: api/outlooktask-list-attachments.md
-              - name: Adicionar anexo
-                href: api/outlooktask-post-attachments.md
-          - name: Pasta de tarefas do Outlook
-            href: resources/outlooktaskfolder.md
+                href: api/linkedresource-delete.md
+          - name: Tarefas do Outlook (preterido)
             items:
-              - name: Listar
-                href: api/outlookuser-list-taskfolders.md
-              - name: Criar
-                href: api/outlookuser-post-taskfolders.md
-              - name: Obter
-                href: api/outlooktaskfolder-get.md
-              - name: Atualizar
-                href: api/outlooktaskfolder-update.md
-              - name: Excluir
-                href: api/outlooktaskfolder-delete.md
-              - name: Listar tarefas na pasta
-                href: api/outlooktaskfolder-list-tasks.md
-              - name: Criar tarefas na pasta
-                href: api/outlooktaskfolder-post-tasks.md
-          - name: Grupo de tarefas do Outlook
-            href: resources/outlooktaskgroup.md
-            items:
-              - name: Listar
-                href: api/outlookuser-list-taskgroups.md
-              - name: Criar
-                href: api/outlookuser-post-taskgroups.md
-              - name: Obter
-                href: api/outlooktaskgroup-get.md
-              - name: Atualizar
-                href: api/outlooktaskgroup-update.md
-              - name: Excluir
-                href: api/outlooktaskfolder-delete.md
-              - name: Listar pastas de tarefas no grupo
-                href: api/outlooktaskfolder-list-tasks.md
-              - name: Criar pasta de tarefas no grupo
-                href: api/outlooktaskfolder-post-tasks.md
-          - name: Anexo
-            href: resources/attachment.md
-            items:
-              - name: Tipo de anexo de arquivo
-                href: resources/fileattachment.md
-              - name: Tipo de anexo do item
-                href: resources/itemattachment.md
-              - name: Tipo de anexo de referência
-                href: resources/referenceattachment.md
-              - name: Obter anexo
-                href: api/attachment-get.md
-              - name: Excluir anexo
-                href: api/attachment-delete.md
-          - name: Categorias
-            href: resources/outlookcategory.md
-            items:
-              - name: Listar categorias
-                href: api/outlookuser-list-mastercategories.md
-              - name: Criar categoria
-                href: api/outlookuser-post-mastercategories.md
-              - name: Obter categoria
-                href: api/outlookcategory-get.md
-              - name: Atualizar categoria
-                href: api/outlookcategory-update.md
-              - name: Excluir categoria
-                href: api/outlookcategory-delete.md
-          - name: Propriedades estendidas
-            href: resources/extended-properties-overview.md
-            items:
-              - name: Propriedades estendidas de valor único
-                href: resources/singlevaluelegacyextendedproperty.md
+              - name: Tarefa do Outlook (preterido)
                 items:
-                  - name: Criar uma propriedade de valor único
-                    href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-                  - name: Obter uma propriedade de valor único
-                    href: api/singlevaluelegacyextendedproperty-get.md
-              - name: Propriedades estendidas de vários valores
-                href: resources/multivaluelegacyextendedproperty.md
+                  - name: Tarefa do Outlook
+                    href: resources/outlooktask.md
+                  - name: Listar
+                    href: api/outlookuser-list-tasks.md
+                  - name: Criar
+                    href: api/outlookuser-post-tasks.md
+                  - name: Obter
+                    href: api/outlooktask-get.md
+                  - name: Atualizar
+                    href: api/outlooktask-update.md
+                  - name: Excluir
+                    href: api/outlooktask-delete.md
+                  - name: Completo
+                    href: api/outlooktask-complete.md
+                  - name: Listar anexos
+                    href: api/outlooktask-list-attachments.md
+                  - name: Adicionar anexo
+                    href: api/outlooktask-post-attachments.md
+              - name: Pasta de tarefas do Outlook (preterido)
                 items:
-                  - name: Criar propriedade de vários valores
-                    href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-                  - name: Obter propriedade de vários valores
-                    href: api/multivaluelegacyextendedproperty-get.md
+                  - name: Pasta de tarefas do Outlook
+                    href: resources/outlooktaskfolder.md
+                  - name: Listar
+                    href: api/outlookuser-list-taskfolders.md
+                  - name: Criar
+                    href: api/outlookuser-post-taskfolders.md
+                  - name: Obter
+                    href: api/outlooktaskfolder-get.md
+                  - name: Atualizar
+                    href: api/outlooktaskfolder-update.md
+                  - name: Excluir
+                    href: api/outlooktaskfolder-delete.md
+                  - name: Listar tarefas na pasta
+                    href: api/outlooktaskfolder-list-tasks.md
+                  - name: Criar tarefas na pasta
+                    href: api/outlooktaskfolder-post-tasks.md
+              - name: Grupo de tarefas do Outlook (preterido)
+                items:
+                  - name: Grupo de tarefas do Outlook
+                    href: resources/outlooktaskgroup.md
+                  - name: Listar
+                    href: api/outlookuser-list-taskgroups.md
+                  - name: Criar
+                    href: api/outlookuser-post-taskgroups.md
+                  - name: Obter
+                    href: api/outlooktaskgroup-get.md
+                  - name: Atualizar
+                    href: api/outlooktaskgroup-update.md
+                  - name: Excluir
+                    href: api/outlooktaskfolder-delete.md
+                  - name: Listar pastas de tarefas no grupo
+                    href: api/outlooktaskfolder-list-tasks.md
+                  - name: Criar pasta de tarefas no grupo
+                    href: api/outlooktaskfolder-post-tasks.md
+              - name: Anexo
+                href: resources/attachment.md
+                items:
+                  - name: Tipo de anexo de arquivo
+                    href: resources/fileattachment.md
+                  - name: Tipo de anexo do item
+                    href: resources/itemattachment.md
+                  - name: Obter anexo
+                    href: api/attachment-get.md
+                  - name: Excluir anexo
+                    href: api/attachment-delete.md
+              - name: Categorias
+                href: resources/outlookcategory.md
+                items:
+                  - name: Listar categorias
+                    href: api/outlookuser-list-mastercategories.md
+                  - name: Criar categoria
+                    href: api/outlookuser-post-mastercategories.md
+                  - name: Obter categoria
+                    href: api/outlookcategory-get.md
+                  - name: Atualizar categoria
+                    href: api/outlookcategory-update.md
+                  - name: Excluir categoria
+                    href: api/outlookcategory-delete.md
+              - name: Propriedades estendidas
+                href: resources/extended-properties-overview.md
+                items:
+                  - name: Propriedades estendidas de valor único
+                    href: resources/singlevaluelegacyextendedproperty.md
+                    items:
+                      - name: Criar uma propriedade de valor único
+                        href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+                      - name: Obter uma propriedade de valor único
+                        href: api/singlevaluelegacyextendedproperty-get.md
+                  - name: Propriedades estendidas de vários valores
+                    href: resources/multivaluelegacyextendedproperty.md
+                    items:
+                      - name: Criar propriedade de vários valores
+                        href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+                      - name: Obter propriedade de vários valores
+                        href: api/multivaluelegacyextendedproperty-get.md
       - name: Workbooks e gráficos
         displayName: Excel
         items:

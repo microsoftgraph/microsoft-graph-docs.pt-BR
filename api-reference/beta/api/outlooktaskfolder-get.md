@@ -5,18 +5,21 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7b34ea469df9f545dfaeaac02cd3077d23e4252e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1332f59c26a78cb7c536e5f8f0a0aa93e7c8360e
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413528"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849636"
 ---
 # <a name="get-outlooktaskfolder"></a>Obter outlookTaskFolder
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Obtenha as propriedades e os relacionamentos da pasta de tarefas especificada do Outlook.
 ## <a name="permissions"></a>Permissões

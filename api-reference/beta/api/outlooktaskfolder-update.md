@@ -5,18 +5,21 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ca2b8ec85c944ac1eea383e107d363525d44ed31
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 948f633ae43d32a16322e60ad2cdf497642af828
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389581"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849734"
 ---
 # <a name="update-outlooktaskfolder"></a>Atualizar outlooktaskfolder
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Atualizar as propriedades graváveis de uma pasta de tarefas do Outlook.
 
@@ -39,7 +42,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Name       | Descrição|
+| Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
 
@@ -55,7 +58,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir altera o nome da pasta de tarefas especificada `Charity work`para.
+O exemplo a seguir altera o nome da pasta de tarefas especificada para `Charity work` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

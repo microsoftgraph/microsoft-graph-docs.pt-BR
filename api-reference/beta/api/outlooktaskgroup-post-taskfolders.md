@@ -5,18 +5,21 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 05a0c3052114bcc1817a43f8476b4214da05ee67
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a058c8289efc384416937d144ae35f6379214609
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468096"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849209"
 ---
 # <a name="create-outlooktaskfolder"></a>Criar outlookTaskFolder
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Criar uma pasta de tarefas do Outlook em um [outlookTaskGroup](../resources/outlooktaskgroup.md)especificado.
 ## <a name="permissions"></a>Permissões
@@ -44,11 +47,11 @@ No corpo da solicitação, forneça uma representação JSON do objeto [outlookT
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir cria uma pasta de `Cooking` tarefas chamada no grupo de tarefas especificado.
+O exemplo a seguir cria uma pasta de tarefas chamada `Cooking` no grupo de tarefas especificado.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
