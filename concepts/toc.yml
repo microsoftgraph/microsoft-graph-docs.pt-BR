@@ -352,7 +352,10 @@ items:
             href: teams-licenses.md
           - name: Enviar mensagens proativas com um bot
             href: teams-proactive-messaging.md
-      - name: Workbooks e gráficos
+      - name: Tarefas To do (visualização)
+        href: todo-concept-overview.md
+        displayName: Microsoft To Do
+      - name: Pastas de trabalho e gráficos
         displayName: Excel
         items:
           - name: Visão Geral
