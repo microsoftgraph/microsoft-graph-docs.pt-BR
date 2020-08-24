@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: ecf122caa0a402d8a804efa360e71e53b6493da7
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: b0d9992635e8523ab5fc652a9d58bfe138192afc
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790746"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849321"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1621,9 +1621,9 @@ Essas permissões de sites só são válidas para contas corporativas ou de estu
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Tasks.Read_ | Ler as tarefas do usuário (visualização) | Permite que o aplicativo leia as tarefas do usuário. | Não | Sim |
+| _Tasks.Read_ | Ler tarefas e listas de tarefas do usuário (visualização) | Permite ao aplicativo ler as tarefas e listas de tarefas do usuário conectado, incluindo qualquer compartilhamento com o usuário. Não inclui a permissão para criar, excluir ou atualizar qualquer coisa. | Não | Sim |
 | _Tasks.Read.Shared_ | Ler as tarefas do usuário e as tarefas compartilhadas (visualização) | Permite que o aplicativo leia as tarefas que o usuário tem permissão de acessar, incluindo as próprias tarefas e as tarefas compartilhadas. | Não | Não |
-| _Tasks.ReadWrite_ | Criar, ler, atualizar e excluir tarefas e contêineres do usuário (visualização) | Permite ao aplicativo criar, ler, atualizar e excluir tarefas e contêineres (e tarefas neles) que são atribuídos ou compartilhados com o usuário conectado.| Não | Sim |
+| _Tasks.ReadWrite_ | Criar, ler, atualizar e excluir tarefas e listas de tarefas do usuário (visualização) | Permite ao aplicativo criar, ler, atualizar, e excluir as tarefas e listas de tarefas do usuário conectado, incluindo qualquer compartilhamento com o usuário. | Não | Sim |
 | _Tasks.ReadWrite.Shared_ | Ler e registrar as tarefas do usuário e as tarefas compartilhadas (visualização) | Permite que o aplicativo crie, leia, atualize e exclua as tarefas permitidas para um usuário, incluindo suas próprias tarefas e as compartilhadas. | Não | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
@@ -1631,7 +1631,7 @@ Essas permissões de sites só são válidas para contas corporativas ou de estu
 Nenhum.
 
 ### <a name="remarks"></a>Comentários
-As permissões de _tarefas_ são usadas para controlar o acesso de tarefas do Outlook. O acesso a tarefas do Microsoft Planner é controlado pelas permissões do [_Grupo_](#group-permissions).
+As permissões de _Tarefas_ são usadas para controlar o acesso das tarefas To Do e tarefas do Outlook(preterido). O acesso a tarefas do Microsoft Planner é controlado pelas [permissões_ do _Grupo](#group-permissions).
 
 As permissões _Compartilhadas_ atualmente só são compatíveis com contas corporativas ou de estudante. Mesmo com permissões _Compartilhadas_, as leituras e gravações podem falhar se o usuário que possui o conteúdo compartilhado não tiver concedido as permissões de usuário de acesso para modificar o conteúdo dentro da pasta.
 

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 2ce47ccf949589856335e73bf67cbe2f84d94ea4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 43c83c07622d5209ec21519438d861300f971a04
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808512"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849769"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -145,6 +145,9 @@ Esse recurso permite:
 | **Configurações do usuário** |||
 | [Obter configurações](../api/usersettings-get.md) | [userSettings](usersettings.md) | Leia o usuário e o objeto de configurações da organização. |
 | [Atualizar configurações](../api/usersettings-update.md) | [userSettings](usersettings.md) | Atualize as propriedades do objeto de configurações. |
+| **Todo taskList** |||
+|[List lists](../api/todo-list-lists.md) | Coleção [todoTaskList](todotasklist.md) | Obtenha todas as listas de tarefas na caixa de correio do usuário. |
+|[Criar todoTasklist](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Criar uma lista de tarefas To Dona caixa de correio do usuário. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -301,7 +304,7 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |scopedRoleMemberOf|Coleção [scopedRoleMembership](scopedrolemembership.md)| As associações de unidade administrativa de função com escopo deste usuário. Somente leitura. Anulável.|
 |settings|[userSettings](usersettings.md) | Somente leitura. Anulável.|
 |trabalho em equipe|[userTeamwork](userteamwork.md)| Um contêiner dos recursos do Microsoft Teams disponíveis para o usuário. Somente leitura. Anulável.|
-
+|todo|[todo](todo.md)|Representa os serviços To Do disponíveis para um usuário. |
 
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>Preferências do usuário para idiomas e formatos regionais.
 O recurso do **usuário** contém uma propriedade [mailboxSettings](../resources/mailboxsettings.md), que inclui o idioma, a formatação de data e hora, o fuso horário padrão e outras configurações preferidas do usuário especificamente para a caixa de correio principal do Exchange. Essas preferências são direcionadas para os clientes de email e só estarão disponíveis se o usuário tiver uma caixa de correio provisionada. Você pode optar por usar **mailboxSettings** se o seu cenário se concentrar apenas em emails, calendários, contatos ou tarefas pendentes do Outlook.
@@ -427,7 +430,7 @@ Veja a seguir uma representação JSON do recurso
   "directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "drive": {"@odata.type": "microsoft.graph.drive"},
   "drives": [{"@odata.type": "microsoft.graph.drive"}],
-  "insights": {"@odata.type": "microsoft.graph.iteminsights"},
+  "insights": {"@odata.type": "microsoft.graph.itemInsights"},
   "settings": {"@odata.type": "microsoft.graph.userSettings"},
   "events": [{"@odata.type": "microsoft.graph.event"}],
   "extensions": [{"@odata.type": "microsoft.graph.extension"}],

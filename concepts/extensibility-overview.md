@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece um único ponto de extremidade de API que
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: e725b3951d40100a442f89bc2a4f5444c1ed2db0
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 61cd5227e495102a7ac957959cffffc104d85542
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42619093"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849104"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>Adicionar dados personalizados aos recursos usando extensões
 
@@ -40,6 +40,8 @@ A seguinte tabela lista os recursos que oferecem suporte às extensões de abert
 | [Organização](/graph/api/resources/organization?view=graph-rest-1.0) | GA | GA |
 | [Contato pessoal](/graph/api/resources/contact?view=graph-rest-1.0)| GA | GA |
 | [Usuário](/graph/api/resources/user?view=graph-rest-1.0) | GA | GA |
+| [Tarefa](/graph/api/resources/todotask?view=graph-rest-beta) | Somente para visualização | Somente para visualização |
+| [Lista de tarefas](/graph/api/resources/todotasklist?view=graph-rest-beta) | Somente para visualização | Somente para visualização |
 
 Você pode usar extensões em todos esses recursos ao se conectar com uma conta corporativa ou de estudante. Além disso, você pode usar extensões de recursos de **evento**, **post**, **grupo**, **mensagem**, **contato** e **usuário**quando conectado a uma conta pessoal.
 
@@ -100,6 +102,8 @@ O aplicativo proprietário pode mover a extensão pelos diferentes estados de um
 | Disponível | <ul><li>A extensão do esquema está disponível para ser usada por todos os aplicativos em qualquer locatário. </li><li>Depois que o aplicativo proprietário define a extensão como **Disponível**, qualquer aplicativo pode simplesmente adicionar dados personalizados a instâncias desses tipos de recursos especificados na extensão (desde que o aplicativo tenha permissões para esse recurso). O aplicativo pode atribuir dados personalizados ao criar uma nova instância ou atualizar uma instância existente. </li><li>O aplicativo proprietário pode atualizar a definição de extensão com alterações aditivas. Nenhum aplicativo pode excluir a definição de extensão nesse estado. </li><li>O proprietário do aplicativo pode mover a extensão do esquema de **Disponível** para o estado **Preterido**.</li></ul> |
 | Preterido | <ul><li>A definição de extensão de esquema não pode ser lido nem modificada. </li><li>Nenhum aplicativo pode ler, atualizar, adicionar novas propriedades ou excluir a extensão. </li><li>No entanto, os aplicativos ainda podem ler, atualizar ou excluir _valores de propriedade_ de extensões existentes. </li></ul> |
 
+> **Observação:** As definições de extensão de esquema (marcadas como `Available`) criadas por outros desenvolvedores de outros locatários são visíveis para todos os desenvolvedores (pela listagem de todas as extensões de esquema). Isto é diferente de outras APIs que retornam apenas os dados específicos do locatário. Por outro lado, os dados de extensão criados com base nas definições de extensão de esquema, são específicos do locatário e só podem ser acessados por aplicativos explicitamente autorizados. 
+
 ### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte
 
 Há suporte para os seguintes tipos de dados quando se define uma propriedade em uma extensão do esquema:
@@ -153,6 +157,6 @@ Nas limitações conhecidas usando extensões, veja a [seção extensões](known
 
 ## <a name="see-also"></a>Confira também
 
-- [Domínios do Office 365](https://technet.microsoft.com/library/office-365-domains.aspx)
+- [Domínios do Microsoft 365](https://technet.microsoft.com/library/office-365-domains.aspx)
 
-- [Adição e verificação de um domínio para um locatário do Office 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [Adicionando e verificando um domínio para um locatário do Microsoft 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

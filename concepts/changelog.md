@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 9f629543692d514e6ff96f633eeed993e1e90e78
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5d8eea4ba454490434db2cf51f9c6adfe892a562
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810934"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849300"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -110,6 +110,13 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 |Adição|Beta e v1.0|Adicionada a propriedade **publishingState** ao recurso [teamsAppDefinition](/graph/api/resources/teamsappdefinition).|
 |Adição|Beta e v1.0|Adicionada permissão delegada **AppCatalog.Submit** para:<br><ul><li> [Publicar aplicativos](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[Excluir aplicativo](/graph/api/teamsapp-delete)</li>|
 |Adição|Beta e v1.0|Adicionado o suporte para o parâmetro de consulta `requiresReview` para:<br><ul><li> [Publicar aplicativos](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[Atualizar aplicativo](/graph/api/teamsapp-update?view=graph-rest-beta)|
+
+### <a name="to-do-tasks"></a>Tarefas pendentes 
+
+| **Tipo de alteração** | **Versão** | **Descrição** |
+|:---|:---|:---|
+|Adição|beta|Introduzido o To Do API, adicionado [todoTask](/graph/api/resources/todotask?view=graph-rest-beta), [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta), e os recursos [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta)|
+|Alteração|beta|Preterido a API de tarefas do Outlook|
 
 ## <a name="july-2020"></a>Julho de 2020
 

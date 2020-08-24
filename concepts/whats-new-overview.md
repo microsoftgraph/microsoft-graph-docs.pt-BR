@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 2dfeaa8ba656adac608de31028772f8b5665f4f0
-ms.sourcegitcommit: 2e6fb1c0fef8cb3af1a72c115aa54902c71c99f5
+ms.openlocfilehash: 52b4ddad66eff17be04fcee612a839682f086660
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658225"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849328"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -41,6 +41,10 @@ Obtenha [relatórios sobre o uso de aplicativos do Microsoft 365](/graph/api/res
 
 ### <a name="teamwork"></a>Trabalho em equipe
 Obtenha [conteúdo hospedado em uma mensagem de chat](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta), como imagens ou trechos de códigos. Veja um [exemplo](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta&branch=master#example-2-get-hosted-content-bytes-for-an-image) para obter os bytes de conteúdo de uma imagem.
+
+### <a name="to-do-tasks"></a>Tarefas To do
+- Lançamento de um novo conjunto de API para o [Microsoft To Do](todo-concept-overview.md), permitindo aos usuários de aplicativos a organizar e acompanhar tarefas pessoais através de aplicativos do cliente Microsoft 365. Confira [Usar a API do Microsoft To Do](/graph/api/resources/todo-overview?view=graph-rest-beta) para mais informações.
+- Preterido a [API de tarefas do Outlook](/graph/api/resources/outlooktask?view=graph-rest-beta).
 
 ## <a name="july-2020-new-and-generally-available"></a>Julho de 2020: novos e disponíveis para o público em geral
 

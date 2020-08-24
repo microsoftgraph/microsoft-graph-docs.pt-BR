@@ -4,12 +4,12 @@ description: 'Neste artigo você será guiado através de um exemplo para ilustr
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 070480f7fbbc5fe3ab44509cb58476bcfb75bc3f
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: 81c1d77ecc2e57dec9ae18bf298d7390b71651dc
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757053"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849090"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>Adicionar dados personalizados aos usuários usando extensões abertas
 Neste artigo você será guiado através de um exemplo para ilustrar o uso de *extensões abertas*. 
@@ -23,7 +23,7 @@ Para este cenário, este artigo lhe mostrará como:
 3. Alterar as informações do perfil móvel do usuário (o valor de extensão aberta).
 4. Excluir informações do perfil móvel do usuário.
 
->**Observação:** Este tópico mostrará a você como adicionar, ler, atualizar e excluir extensões abertas em um recurso de **user**. Esses métodos também são suportados para os tipos de recurso **administrativeUnit**, **contact**, **device**, **event**, **group**, **post** e **organizaton**.  
+>**Observação:** Este tópico mostrará a você como adicionar, ler, atualizar e excluir extensões abertas em um recurso de **user**. Esses métodos também são suportados para os tipos de recurso **administrativeUnit**, **contact**, **device**, **event**, **group**, **organization**, **post**, **todoTask**, e **todoTaskList**.  
 Você pode atualizar os exemplos de solicitação usando qualquer um desses tipos de recursos. As respostas ilustradas nos exemplos poderiam ser reduzidas para facilitar a leitura. 
 
 ## <a name="1-add-roaming-profile-information"></a>1. Adicionar informações de perfil móvel

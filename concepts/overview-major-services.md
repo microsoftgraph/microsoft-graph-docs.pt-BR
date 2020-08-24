@@ -4,12 +4,12 @@ description: 'O Microsoft Graph permite a integração com os melhores serviços
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7c083cc8c80d78c00988b547e2bc3cfe84008067
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 9a6c46db31c8e9f85d494017e5ec00e430adc237
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524377"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849475"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -56,7 +56,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 | Observações | OneNote | Permite aos usuários planejar e organizar informações e ideias. | [Visão geral das anotações do OneNote](integrate-with-onenote.md) |
 | Contatos pessoais | Outlook | Entra em contato com o gerente na Web e em dispositivos móveis e de desktop. Faz parte do hub de comunicação de mensagens do Outlook no Microsoft 365, que também permite que os usuários gerenciem emails e agendem reuniões.  | [Visão geral de contatos pessoais do Outlook](outlook-contacts-concept-overview.md) |
 | Pastas de trabalho e gráficos | Excel | Permite que os usuários usem planilhas do Excel para fazer cálculos complexos, rastrear, analisar e visualizar dados e gerar relatórios profissionais. | [Visão geral de gráficos e pastas de trabalho do Excel](excel-concept-overview.md) |
-
+| Tarefas To do (visualização) | To Do | Permite aos usuários gerenciar suas tarefas pessoais em seu trabalho e em sua vida particular. Ele também está integrado ao Outlook, Teams, Planner e Cortana, o que o torna o único destino para as tarefas pessoais do usuário no Microsoft 365 | [Visão geral sobre tarefas To Do](todo-concept-overview.md) |
 
 ## <a name="collaboration"></a>Colaboração
 
@@ -76,7 +76,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 |:-----------|:--------------------|:-----------|:----------------|
 | Pessoas | Azure AD, Outlook, SharePoint e muito mais | Obtém informações sobre pessoas ordenados por relevância para o usuário, o que é determinado pelo padrões de comunicação e colaboração e pelas relações comerciais do usuário.  | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md) |
 | Perfil (visualização) | Perfil | Fornece um mecanismo leve para armazenar e recuperar informações sobre as pessoas em um locatário. | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md) |
-| Personalização do cartão de perfil (visualização) | Cartão de perfil | Fornece um mecanismo leve para um administrador personalizar o conteúdo que aparece no cartão de perfil do Microsoft 365 dentro de uma organização. | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md) |
+| Personalização do cartão de perfil (visualização) | Cartão de perfil | Fornece um mecanismo leve para que um administrador personalize o conteúdo que aparece no cartão de perfil do Microsoft 365 dentro de uma organização. | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md) |
 | Insights do documento  | Delve, OneDrive, Outlook, SharePoint | Usa análises avançadas e técnicas de aprendizado de máquina para obter documentos mais populares, vistos, modificados ou compartilhados por um usuário.  | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md)  |
 | Análise (visualização) | MyAnalytics | Usa análises e técnicas avançadas de aprendizado de máquina para fornecer informações sobre como e com quem as pessoas passam o tempo. Esses dados podem ajudar as pessoas a planejar o dia, obter informações sobre seus diferentes padrões de trabalho e ajudar a equilibrar o trabalho e a vida.  | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md) |
 
