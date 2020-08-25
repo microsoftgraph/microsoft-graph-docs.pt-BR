@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 5d8eea4ba454490434db2cf51f9c6adfe892a562
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 327d518a3db8409dd1c8fb828752197e685c4123
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849300"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873087"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -85,11 +85,11 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionado um novo tipo de recurso ao [contrato de Termos de Uso](/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
 | Adição | beta | Adicionado os patrocinadores internos e externos [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta)ao gerenciamento de direitos.  |
 
-### <a name="people-and-workplace-intelligence"></a>Inteligência de pessoas e de local de trabalho
+### <a name="people-and-workplace-intelligence--profile"></a>Inteligência de pessoas e do local de trabalho | Perfil
 
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Adição | Beta | Adicionada as seguintes relações ao [perfil API](/graph/api/resources/profile?view=graph-rest-beta) com entidades e métodos associados: <ul><li>[addresses](/graph/api/resources/itemAddress?view=graph-rest-beta)</li><li>[anniversaries](/graph/api/resources/personAnniversary?view=graph-rest-beta)</li><li>[awards](/graph/api/resources/personAward?view=graph-rest-beta)</li><li>[certifications](/graph/api/resources/personCertification?view=graph-rest-beta)</li><li>[notes](/graph/api/resources/personAnnotation?view=graph-rest-beta)</li><li>[patents](/graph/api/resources/itemPatent?view=graph-rest-beta)</li><li>[publications](/graph/api/resources/itemPublication?view=graph-rest-beta)</li></ul>|
+| Adição | Beta | Adicionadas as seguintes relações novas ao [perfil](/graph/api/resources/profile?view=graph-rest-beta) API com entidades e métodos associados: <ul><li>[addresses](/graph/api/resources/itemAddress?view=graph-rest-beta)</li><li>[anniversaries](/graph/api/resources/personAnniversary?view=graph-rest-beta)</li><li>[awards](/graph/api/resources/personAward?view=graph-rest-beta)</li><li>[certifications](/graph/api/resources/personCertification?view=graph-rest-beta)</li><li>[notes](/graph/api/resources/personAnnotation?view=graph-rest-beta)</li><li>[patents](/graph/api/resources/itemPatent?view=graph-rest-beta)</li><li>[publications](/graph/api/resources/itemPublication?view=graph-rest-beta)</li></ul>|
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
 
@@ -110,13 +110,15 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 |Adição|Beta e v1.0|Adicionada a propriedade **publishingState** ao recurso [teamsAppDefinition](/graph/api/resources/teamsappdefinition).|
 |Adição|Beta e v1.0|Adicionada permissão delegada **AppCatalog.Submit** para:<br><ul><li> [Publicar aplicativos](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[Excluir aplicativo](/graph/api/teamsapp-delete)</li>|
 |Adição|Beta e v1.0|Adicionado o suporte para o parâmetro de consulta `requiresReview` para:<br><ul><li> [Publicar aplicativos](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[Atualizar aplicativo](/graph/api/teamsapp-update?view=graph-rest-beta)|
+|Adição|v1.0|Suporte adicional para [criar uma equipe](/graph/api/team-post?view=graph-rest-1.0) diretamente (sem criar um grupo primeiro), que também permite criar equipes de classe.|
+|Adição | v1.0 | Adicionada a[ propriedade](/graph/api/team-post-members?view=graph-rest-1.0) de navegação de membros para o tipo de recurso[ de equipe](/graph/api/resources/team?view=graph-rest-1.0), permitindo que os membros sejam adicionados com maior confiabilidade e menor latência.|
 
 ### <a name="to-do-tasks"></a>Tarefas pendentes 
 
 | **Tipo de alteração** | **Versão** | **Descrição** |
 |:---|:---|:---|
-|Adição|beta|Introduzido o To Do API, adicionado [todoTask](/graph/api/resources/todotask?view=graph-rest-beta), [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta), e os recursos [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta)|
-|Alteração|beta|Preterido a API de tarefas do Outlook|
+|Adição|beta|Introduziu a API tarefas pendentes. Adicionado o [todoTask](/graph/api/resources/todotask?view=graph-rest-beta), [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta)e os recursos [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta) e as operações CRUD.|
+|Alteração|beta|Substituídas as API de tarefas do Outlook, incluindo o [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta), [outlookTaskFolder](/graph/api/resources/outlooktaskfolder?view=graph-rest-beta), [outlookTaskGroup](/graph/api/resources/outlooktaskgroup?view=graph-rest-beta), além de operações e métodos relacionados.|
 
 ## <a name="july-2020"></a>Julho de 2020
 
@@ -3816,7 +3818,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Alteração      | Beta    | As APIs [getSkypeForBusinessDeviceUsageUserDetail](/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta), [getSkypeForBusinessDeviceUsageDistributionUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta), e [getSkypeForBusinessDeviceUsageUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta) foram adicionadas. Essas substituíram a API SfbDeviceUsage. |
 | Alteração      | Beta    | As APIs [getSkypeForBusinessOrganizerActivityCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta), [getSkypeForBusinessOrganizerActivityUserCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta) e [getSkypeForBusinessOrganizerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta) foram adicionadas. Essas substituíram a API SfbOrganizerActivity. |
 | Alteração      | Beta    | As APIs [getSkypeForBusinessParticipantActivityCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta), [getSkypeForBusinessParticipantActivityUserCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta) e [getSkypeForBusinessParticipantActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta) foram adicionadas. Essas substituíram a API SfbParticipantActivity. |
-| Alteração      | Beta    | As APIs [getSkypeForBusinessPeerToPeerActivityCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta), [getSkypeForBusinessPeerToPeerActivityUserCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta) e [getSkypeForBusinessPeerToPeerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta) foram adicionadas. Essas substituíram a API SfbP2PActivity. |
+| Alterar      | Beta    | As APIs [getSkypeForBusinessPeerToPeerActivityCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta), [getSkypeForBusinessPeerToPeerActivityUserCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta) e [getSkypeForBusinessPeerToPeerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta) foram adicionadas. Essas substituíram a API SfbP2PActivity. |
 | Alteração      | Beta    | As APIs [getYammerActivityUserDetail](/graph/api/reportroot-getyammeractivityuserdetail?view=graph-rest-beta), [getYammerActivityCounts](/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-beta) e [getYammerActivityUserCounts](/graph/api/reportroot-getyammeractivityusercounts?view=graph-rest-beta) foram adicionadas. Essas substituíram a API YammerActivity. |
 | Alteração      | Beta    | As APIs [getYammerDeviceUsageUserDetail](/graph/api/reportroot-getyammerdeviceusageuserdetail?view=graph-rest-beta), [getYammerDeviceUsageDistributionUserCounts](/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-beta) e [getYammerDeviceUsageUserCounts](/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-beta) foram adicionadas. Essas substituíram a API YammerDeviceUsage. |
 | Alteração      | Beta    | As APIs [getYammerGroupsActivityDetail](/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-beta), [getYammerGroupsActivityGroupCounts](/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-beta) e [getYammerGroupsActivityCounts](/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-beta) foram adicionadas. Essas substituíram a API YammerGroupsActivity. |

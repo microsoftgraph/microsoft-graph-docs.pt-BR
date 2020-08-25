@@ -4,16 +4,18 @@ description: As notificações de alteração podem ser enviadas por meio de tec
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 83014782c98d0807681a9d8da0d37b6092df167b
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: e7867a42e50b134692fd224a5132d9cc45b5bf2e
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598572"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873283"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways-preview"></a>Receba notificações sobre alterações por diferentes maneiras de envio(versão prévia)
 
 A alteração de notificações podem ser enviadas em diferentes maneiras aos assinantes. Se o modo de entrega principal para as notificações de alteração é através de webhooks, pode ser um desafio tira proveito do webhooks para cenários de alta produtividade ou quando o receptor não puder expor uma URL de notificação disponível publicamente.  
+
+Esse modo de entrega de notificações de alterações está disponível para todos os recursos que oferecem suporte a notificações de alterações do Microsoft Graph.
 
 Bons exemplos de cenários de alta produtividade incluem aplicações que subscrevem um grande conjunto de recursos, aplicações que subscrevem recursos que mudam com uma alta frequência e aplicações multi-locatárias que subscrevem recursos através de um grande conjunto de organizações.
 
@@ -23,7 +25,7 @@ Os [Hubs de Eventos do Azure](https://azure.microsoft.com/services/event-hubs) �
 Usar os Hubs de Eventos do Azure para receber notificações de alteração difere do webhooks em algumas maneiras, incluindo:
 
 - Você não depende de URLs com notificações publicamente expostas. O SDK do Hubs de Eventos retransmitirá as notificações para sua aplicação.
-- Você não precisa de implementar a [validação da URL de notificação](webhooks.md#notification-endpoint-validation).
+- Não é necessário responder à [validação da URL de notificação](webhooks.md#notification-endpoint-validation). Você pode ignorar a mensagem de validação recebida.
 - Você precisará de provisionar um Hub de Eventos do Azure.
 - Você precisará de provisionar um Azure Key Vault.
 
@@ -140,6 +142,27 @@ Os eventos agora serão enviados para o aplicativo através dos Hubs de Eventos.
 Antes de receber as notificações no aplicativo, você precisará criar outra política de acesso compartilhado com uma permissão de "Escuta" e obter a cadeia de conexão, semelhante às etapas listadas em [Configurando o Azure Event Hub](#configuring-the-azure-event-hub).
 
 > **Observação:** Criar uma política separada para o aplicativo que escuta mensagens de Hubs de Eventos, em vez de reutilizar a mesma cadeia de conexão que você definiu no Azure keyVault. Isto garante que cada componente da solução tenha apenas as permissões que precisa e siga o princípio de segurança com o mínimo de permissões.
+
+> **Observação:** Seu aplicativo recebe mensagens de validação sempre que criar uma nova assinatura. Você deve ignorar essas notificações. O exemplo a seguir representa o corpo de uma mensagem de validação.
+
+```json
+ {
+    "value":[
+        {
+            "subscriptionId":"NA",
+            "subscriptionExpirationDateTime":"NA",
+            "clientState":"NA",
+            "changeType":"Validation: Testing client application reachability for subscription Request-Id: 522a8e7e-096a-494c-aaf1-ac0dcfca45b7",
+            "resource":"NA",
+            "resourceData":{
+                "@odata.type":"NA",
+                "@odata.id":"NA",
+                "id":"NA"
+            }
+        }
+    ]
+}
+```
 
 ### <a name="what-happens-if-the-microsoft-graph-change-tracking-application-is-missing"></a>O que acontece se o aplicativo de controle de alterações do Microsoft Graph estiver ausente?
 

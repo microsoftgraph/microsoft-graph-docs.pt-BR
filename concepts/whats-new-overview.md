@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 52b4ddad66eff17be04fcee612a839682f086660
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 94fab900fafb780c4561d82df4b82a8d210da4f0
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849328"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873374"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -22,19 +22,47 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 ### <a name="change-notifications"></a>Notificações de alteração
 [Controle de alterações](delta-query-overview.md) de recursos com suporte para a nuvem nacional do Microsoft Graph para o Governo dos EUA.
 
+### <a name="teamwork"></a>Trabalho em equipe
+- Obtenha o status de publicação de um [aplicativo](/graph/api/resources/teamsapp) do Microsoft Teams através da propriedade **publishingState** da [definição do aplicativo](/graph/api/resources/teamsappdefinition). Os valores de status possíveis são `submitted`, `published` e `rejected`. Veja um [exemplo](/graph/api/teamsapp-list?view=graph-rest-1.0&tabs=http#example-3-list-applications-with-a-given-id-and-return-the-submission-review-state).
+- Use a permissão delegada `AppCatalog.Submit` para permitir que um usuário [envie um aplicativo](/graph/api/teamsapp-publish) e solicite a revisão do administrador. Use a mesma permissão para um usuário [cancelar](/graph/api/teamsapp-delete) um aplicativo enviado anteriormente que não foi publicado. 
 
 ## <a name="august-2020-new-in-preview-only"></a>Agosto de 2020: novidade apenas na versão prévia
 
 ### <a name="applications"></a>Aplicativos
 Ofereça suporte a logon único baseado em senha para recursos de aplicativos de [entidade de serviço](/graph/api/resources/serviceprincipal?view=graph-rest-beta) e especifique essas [configurações](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) na propriedade **passwordSingleSignOnSettings**. Para obter informações sobre logon único baseado em senha no Azure AD, confira [configurar logon único baseado em senha](/azure/active-directory/manage-apps/configure-password-single-sign-on-non-gallery-applications).
 
-### <a name="change-notifications"></a>Notificações de alteração
+### <a name="calendar"></a>Calendário
+Melhore o suporte programático para cenários que envolvem um [evento](/graph/api/resources/event?view=graph-rest-beta) recorrente:
+- Identifique com confiança qualquer ocorrência em uma série recorrente, incluindo uma ocorrência modificada ou cancelada, usando a propriedade **occurrenceId**.
+- Obtenha qualquer exceção em uma série recorrente usando a propriedade **exceptionOccurrences**.
+- Obtenha qualquer cancelamento em uma série usando a propriedade **cancelledOccurrences**.
+
+### <a name="change-notifications"></a>Alterar notificações
 - Use a propriedade **includeResourceData** de uma [assinatura](/graph/api/resources/subscription?view=graph-rest-beta) para [configurar notificações de alteração que incluam dados de recursos](webhooks-with-resource-data.md). Não use a propriedade **includeProperties**.
 - Receba [notificações de alteração via Hub de Eventos](change-notifications-delivery.md).
+
+### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
+- Conceda acesso para todos os usuários e grupos a um [compartilhamento de impressora](/graph/api/resources/printershare?view=graph-rest-beta) usando a propriedade **allowAllUser**.
+- Use novas permissões delegadas e de aplicativo para acessar ou gerenciar um [documento de impressão](/graph/api/resources/printDocument?view=graph-rest-beta), [trabalho de impressão](/graph/api/resources/printjob?view=graph-rest-beta), [impressora](/graph/api/resources/printer?view=graph-rest-beta), [compartilhamento de impressora](/graph/api/resources/printershare?view=graph-rest-beta) ou [definição de tarefa de impressão](/graph/api/resources/printtaskdefinition?view=graph-rest-beta). Para obter detalhes, confira as atualizações de [agosto](changelog.md#august-2020) da impressão em nuvem.
+
+### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
+Atualizações de [agosto](changelog.md#august-2020) do Intune na versão beta.
 
 ### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
 - Personalize um [contrato de termos de uso](/graph/api/resources/agreement?view=graph-rest-beta) para oferecer suporte a uma data de vencimento e cadência de contrato, exigir que o usuário aceite o contrato por dispositivo ou aceite novamente o contrato em uma frequência definida. 
 - Use a propriedade do**arquivo** para navegar até um [contrato personalizado](/graph/api/resources/agreementfile?view=graph-rest-beta) para termos de uso. Não use a propriedade de **arquivos**.
+- Adicione, remova e liste patrocinadores internos ou externos que podem aprovar solicitações de uma [organização conectada](/graph/api/resources/connectedorganization?view=graph-rest-beta) para acessar um grupo, aplicativo ou site do SharePoint Online. Para saber mais, confira [gerenciamento de direitos](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta).
+
+### <a name="people-and-workplace-intelligence--profile"></a>Inteligência de pessoas e do local de trabalho | Perfil
+Adicione e gerencie as seguintes propriedades adicionais no [perfil](/graph/api/resources/profile?view=graph-rest-beta) de um usuário, e que podem ser exibidas em experiências pessoais compartilhadas no Microsoft 365 e em aplicativos de terceiros:
+- [addresses](/graph/api/resources/itemAddress?view=graph-rest-beta)
+- [anniversaries](/graph/api/resources/personAnniversary?view=graph-rest-beta)
+- [awards](/graph/api/resources/personAward?view=graph-rest-beta)
+- [certifications](/graph/api/resources/personCertification?view=graph-rest-beta)
+- [notes](/graph/api/resources/personAnnotation?view=graph-rest-beta)
+- [patents](/graph/api/resources/itemPatent?view=graph-rest-beta)
+- [publications](/graph/api/resources/itemPublication?view=graph-rest-beta)
+
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
 Obtenha [relatórios sobre o uso de aplicativos do Microsoft 365](/graph/api/resources/microsoft-365-apps-usage-report?view=graph-rest-beta), especificamente sobre detalhes de usuários, contagens de usuários e contagens de usuários da plataforma.
