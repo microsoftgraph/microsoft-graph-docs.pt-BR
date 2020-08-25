@@ -5,28 +5,28 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b87170c634f1bd0a95bfac6118f97554426f2ecb
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 0ce6ff6c8fd519888682e53939238dab02215007
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849863"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872563"
 ---
-# <a name="update-linkedresource"></a><span data-ttu-id="c7584-103">Atualizar linkedResource</span><span class="sxs-lookup"><span data-stu-id="c7584-103">Update linkedResource</span></span>
-<span data-ttu-id="c7584-104">Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span><span class="sxs-lookup"><span data-stu-id="c7584-104">Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span></span>
+# <a name="update-linkedresource"></a><span data-ttu-id="b7e38-103">Atualizar linkedResource</span><span class="sxs-lookup"><span data-stu-id="b7e38-103">Update linkedResource</span></span>
+<span data-ttu-id="b7e38-104">Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span><span class="sxs-lookup"><span data-stu-id="b7e38-104">Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span></span>
 
-<span data-ttu-id="c7584-105">Atualiza as propriedades de um objeto [linkedResource](../resources/linkedresource.md) .</span><span class="sxs-lookup"><span data-stu-id="c7584-105">Update the properties of a [linkedResource](../resources/linkedresource.md) object.</span></span>
+<span data-ttu-id="b7e38-105">Atualiza as propriedades de um objeto [linkedResource](../resources/linkedresource.md) .</span><span class="sxs-lookup"><span data-stu-id="b7e38-105">Update the properties of a [linkedResource](../resources/linkedresource.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c7584-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="c7584-106">Permissions</span></span>
-<span data-ttu-id="c7584-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c7584-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b7e38-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="b7e38-106">Permissions</span></span>
+<span data-ttu-id="b7e38-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b7e38-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c7584-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c7584-109">Permission type</span></span>|<span data-ttu-id="c7584-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="c7584-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="b7e38-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b7e38-109">Permission type</span></span>|<span data-ttu-id="b7e38-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="b7e38-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="c7584-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c7584-111">Delegated (work or school account)</span></span>|<span data-ttu-id="c7584-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c7584-112">Tasks.ReadWrite</span></span>|
-|<span data-ttu-id="c7584-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c7584-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c7584-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c7584-114">Tasks.ReadWrite</span></span>|
-|<span data-ttu-id="c7584-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c7584-115">Application</span></span>|<span data-ttu-id="c7584-116">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="c7584-116">Not supported</span></span>|
+|<span data-ttu-id="b7e38-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b7e38-111">Delegated (work or school account)</span></span>|<span data-ttu-id="b7e38-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b7e38-112">Tasks.ReadWrite</span></span>|
+|<span data-ttu-id="b7e38-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b7e38-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b7e38-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b7e38-114">Tasks.ReadWrite</span></span>|
+|<span data-ttu-id="b7e38-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b7e38-115">Application</span></span>|<span data-ttu-id="b7e38-116">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="b7e38-116">Not supported</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c7584-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c7584-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b7e38-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b7e38-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -37,28 +37,30 @@ PATCH /me/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources/{linkedReso
 PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources/{linkedResourcesId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c7584-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c7584-118">Request headers</span></span>
-|<span data-ttu-id="c7584-119">Nome</span><span class="sxs-lookup"><span data-stu-id="c7584-119">Name</span></span>|<span data-ttu-id="c7584-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="c7584-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b7e38-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b7e38-118">Request headers</span></span>
+|<span data-ttu-id="b7e38-119">Nome</span><span class="sxs-lookup"><span data-stu-id="b7e38-119">Name</span></span>|<span data-ttu-id="b7e38-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="b7e38-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="c7584-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="c7584-121">Authorization</span></span>|<span data-ttu-id="c7584-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c7584-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="c7584-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c7584-124">Content-Type</span></span>|<span data-ttu-id="c7584-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c7584-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="b7e38-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="b7e38-121">Authorization</span></span>|<span data-ttu-id="b7e38-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b7e38-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="b7e38-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b7e38-124">Content-Type</span></span>|<span data-ttu-id="b7e38-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b7e38-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c7584-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c7584-127">Request body</span></span>
-<span data-ttu-id="c7584-128">No corpo da solicitação, forneça uma representação JSON do objeto [linkedResource](../resources/linkedresource.md) .</span><span class="sxs-lookup"><span data-stu-id="c7584-128">In the request body, supply a JSON representation of the [linkedResource](../resources/linkedresource.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b7e38-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b7e38-127">Request body</span></span>
+<span data-ttu-id="b7e38-128">No corpo da solicitação, forneça uma representação JSON do objeto [linkedResource](../resources/linkedresource.md) .</span><span class="sxs-lookup"><span data-stu-id="b7e38-128">In the request body, supply a JSON representation of the [linkedResource](../resources/linkedresource.md) object.</span></span>
 
-<span data-ttu-id="c7584-129">A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [linkedResource](../resources/linkedresource.md).</span><span class="sxs-lookup"><span data-stu-id="c7584-129">The following table shows the properties that are required when you update the [linkedResource](../resources/linkedresource.md).</span></span>
+<span data-ttu-id="b7e38-129">A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [linkedResource](../resources/linkedresource.md).</span><span class="sxs-lookup"><span data-stu-id="b7e38-129">The following table shows the properties that are required when you update the [linkedResource](../resources/linkedresource.md).</span></span>
 
-|<span data-ttu-id="c7584-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c7584-130">Property</span></span>|<span data-ttu-id="c7584-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="c7584-131">Type</span></span>|<span data-ttu-id="c7584-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="c7584-132">Description</span></span>|
+|<span data-ttu-id="b7e38-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b7e38-130">Property</span></span>|<span data-ttu-id="b7e38-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="b7e38-131">Type</span></span>|<span data-ttu-id="b7e38-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="b7e38-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c7584-133">id</span><span class="sxs-lookup"><span data-stu-id="c7584-133">id</span></span>|<span data-ttu-id="c7584-134">String</span><span class="sxs-lookup"><span data-stu-id="c7584-134">String</span></span>|<span data-ttu-id="c7584-135">ID gerada pelo servidor para a entidade vinculada herdada da [entidade](../resources/entity.md)</span><span class="sxs-lookup"><span data-stu-id="c7584-135">Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)</span></span>|
+|<span data-ttu-id="b7e38-133">id</span><span class="sxs-lookup"><span data-stu-id="b7e38-133">id</span></span>|<span data-ttu-id="b7e38-134">String</span><span class="sxs-lookup"><span data-stu-id="b7e38-134">String</span></span>|<span data-ttu-id="b7e38-135">ID gerada pelo servidor para a entidade vinculada herdada da [entidade](../resources/entity.md)</span><span class="sxs-lookup"><span data-stu-id="b7e38-135">Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)</span></span>|
 
-## <a name="response"></a><span data-ttu-id="c7584-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="c7584-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b7e38-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7e38-136">Response</span></span>
 
-<span data-ttu-id="c7584-137">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [linkedResource](../resources/linkedresource.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c7584-137">If successful, this method returns a `200 OK` response code and an updated [linkedResource](../resources/linkedresource.md) object in the response body.</span></span>
+<span data-ttu-id="b7e38-137">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [linkedResource](../resources/linkedresource.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b7e38-137">If successful, this method returns a `200 OK` response code and an updated [linkedResource](../resources/linkedresource.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c7584-138">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c7584-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b7e38-138">Exemplos</span><span class="sxs-lookup"><span data-stu-id="b7e38-138">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="c7584-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c7584-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b7e38-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b7e38-139">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="b7e38-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="b7e38-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29", "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9"],
@@ -77,9 +79,15 @@ Content-length: 166
   "displayName": "Microsoft",
 }
 ```
+# <a name="javascript"></a>[<span data-ttu-id="b7e38-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b7e38-141">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-linkedresource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="c7584-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="c7584-140">Response</span></span>
-<span data-ttu-id="c7584-141">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c7584-141">**Note:** The response object shown here might be shortened for readability.</span></span>
+---
+
+
+### <a name="response"></a><span data-ttu-id="b7e38-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7e38-142">Response</span></span>
+<span data-ttu-id="b7e38-143">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="b7e38-143">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

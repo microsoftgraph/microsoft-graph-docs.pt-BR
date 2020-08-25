@@ -167,11 +167,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -387,7 +387,7 @@ items:
                 href: api/planneruser-list-tasks.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -1087,7 +1087,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1141,7 +1141,7 @@ items:
       - name: Dispositivos e aplicativos
         displayName: Intune
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/intune-graph-overview.md
           - name: Gerenciamento de aplicativos
             href: resources/intune-app-conceptual.md
@@ -3531,7 +3531,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -4246,7 +4246,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -4585,7 +4585,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -4624,7 +4624,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -4672,7 +4672,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -4748,7 +4748,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Trabalho em equipe
+      - name: Teamwork
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -4757,6 +4757,8 @@ items:
             href: resources/team.md
             items:
               - name: Criar equipe
+                href: api/team-post.md
+              - name: Criar equipe a partir do grupo
                 href: api/team-put-teams.md
               - name: Obter equipe
                 href: api/team-get.md
