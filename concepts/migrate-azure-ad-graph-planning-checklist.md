@@ -3,17 +3,21 @@ title: Lista de verificação de planejamento de migração de aplicativos
 description: Lista de verificação para migrar seus aplicativos do Azure AD Graph para o Microsoft Graph
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 59114221b91f6dc1800f9f1601cb2e2c06709ff8
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.prod: azure-active-directory
+ms.openlocfilehash: 5f859861c7c656f9287f4f6b3742f976c75299bc
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926782"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872898"
 ---
 # <a name="app-migration-planning-checklist"></a>Lista de verificação de planejamento de migração de aplicativos
 
-Use a lista de verificação a seguir para planejar a migração:
+> [!Important]
+> A API do Azure AD Graph já foi preterida. Continuaremos a fornecer suporte técnico e atualizações de segurança, mas não fornecerá mais atualizações de recurso.
+> A partir de 30 de junho de 2022, encerraremos o suporte para o Azure AD Graph e não fornecerá mais suporte técnico ou atualizações de segurança. Os aplicativos que usam o Azure AD Graph após esse momento não receberão mais respostas do ponto de extremidade do Azure AD Graph.
+
+Use a lista de verificação a seguir para planejar sua migração.
 
 ## <a name="step-1-review-the-differences-between-the-apis"></a>Etapa 1: revise as diferenças entre as APIs
 
@@ -55,7 +59,4 @@ Se você estiver usando a [biblioteca de autenticação do AD](https://docs.micr
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Saiba mais sobre a [sintaxe de chamada resquest](migrate-azure-ad-graph-request-differences.md) para iniciar a etapa 1: revisando as diferenças da API.
-- Explore os conceitos e as práticas [do Microsoft Graph](/graph/overview) .
-- Use o [Explorador do Graph](https://aka.ms/ge) para experimentar o Microsoft Graph.
-- Para saber mais sobre atualizações de progresso e cronogramas, confira [Microsoft Graph ou o Azure ad Graph](https://developer.microsoft.com/en-us/graph/blogs/microsoft-graph-or-azure-ad-graph/).
+- Saiba mais sobre a [solicitação de sintaxe de chamada](migrate-azure-ad-graph-request-differences.md) para iniciar a etapa 1: revisando as diferenças da API.

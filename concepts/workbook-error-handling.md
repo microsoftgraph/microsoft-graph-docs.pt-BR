@@ -4,12 +4,12 @@ description: Instruções de tratamento de erro para APIs do Excel no Microsoft 
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5b8fed4992376247bb57c3c9288cea8f66d36082
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 3d7da5aa1c0891b148affd8fd66f9926ce2053e7
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658131"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873367"
 ---
 # <a name="error-handling-for-excel-apis-in-microsoft-graph"></a>Tratamento de erros para APIs do Excel no Microsoft Graph
 
@@ -120,7 +120,7 @@ Para o padrão de operação de execução demorada e o padrão normal, recomend
 
 ### <a name="3-parse-the-top-level-error-code"></a>3. analisar o código de erro de nível superior
 
-Se você não conseguir encontrar o código de erro de segundo nível listado no tópico [códigos de erro](/concepts/workbook-error-codes.md) , recomendamos seguir as instruções fornecidas para erros de nível superior, que estão vinculados ao código de status. Para obter detalhes sobre códigos de erro de nível superior e mensagens, consulte [códigos de erro](/concepts/workbook-error-codes.md).
+Se você não conseguir encontrar o código de erro de segundo nível listado no tópico [códigos de erro](workbook-error-codes.md) , recomendamos seguir as instruções fornecidas para erros de nível superior, que estão vinculados ao código de status. Para obter detalhes sobre códigos de erro de nível superior e mensagens, consulte [códigos de erro](workbook-error-codes.md).
 
 ### <a name="4-parse-the-status-code"></a>4. analisar o código de status
 

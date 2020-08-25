@@ -3,13 +3,13 @@ title: Solicitar diferenças entre o Azure AD Graph e o Microsoft Graph
 description: Descreve como as solicitações do Microsoft Graph são diferentes das solicitações do Azure AD, o que ajuda a migrar aplicativos para o serviço mais recente..
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8130daf4037e6ef1a433ca537a8fecec996a34ce
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.prod: azure-active-directory
+ms.openlocfilehash: c4255b31f7825df3b9c0d3d44e7003e27e72b6a8
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845905"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873388"
 ---
 # <a name="request-differences-between-azure-ad-graph-and-microsoft-graph"></a>Solicitar diferenças entre o Azure AD Graph e o Microsoft Graph
 
@@ -43,12 +43,15 @@ Suponha que você queira uma lista de todos os usuários com nomes que começam 
 
 No Azure AD Graph, você pode usar essa solicitação:
 
-`https://graph.windows.net/contoso.com/users?$filter=startswith(givenName,'Dan')&api-version=1.6`
+`GET https://graph.windows.net/contoso.com/users?$filter=startswith(givenName,'Dan')&api-version=1.6` ou
+
+`GET https://graph.windows.net/myOrganization/users?$filter=startswith(givenName,'Dan')&api-version=1.6`
+
 
 Esta solicitação:
 
 - Targets versão 1,6 do Azure AD Graph.
-- Especifica `contoso.com` como a ID do locatário.
+- Especifica `contoso.com` como a ID do locatário. A alternativa mostra o uso de um alias `myOrganization` com base na ID do locatário no token de acesso.
 - Chama o recurso users.
 - Usa o `$filter` parâmetro de consulta para limitar a resposta a determinados nomes que começam com `Dan` .
 
@@ -56,7 +59,7 @@ Os resultados incluem usuários com nomes como Daniel, Danforth, Danielle, DANER
 
 Uma solicitação semelhante para o Microsoft Graph seria:
 
-`https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName,'Dan')`
+`GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName,'Dan')`
 
 Nela
 
@@ -111,7 +114,7 @@ As solicitações do Azure AD Graph usam `$link` para indicar relações entre r
 
 A tabela a seguir mostra vários exemplos:
 
-| Task | Azure AD Graph. | Microsoft Graph |
+| Tarefas | Azure AD Graph. | Microsoft Graph |
 |------|----------------|-----------------|
 | Adicionar membro        | ```POST /groups/{id}/$link/members```        | ```POST /groups/{id}/members/$ref```        |
 | Listar links de membros | ```GET /groups/{id}/$link/members```         | ```GET /groups/{id}/members/$ref```         |
@@ -123,5 +126,5 @@ Ao migrar seus aplicativos para o Microsoft Graph, procure solicitações que us
 ## <a name="next-steps"></a>Próximas etapas
 
 - Saiba mais sobre as [diferenças de recursos de serviço](migrate-azure-ad-graph-feature-differences.md) entre o Azure ad Graph e o Microsoft Graph.
-- Explore os conceitos e as práticas [do Microsoft Graph](/graph/overview) .
-- Use o [Explorador do Graph](https://aka.ms/ge) para experimentar o Microsoft Graph.
+- Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.
+

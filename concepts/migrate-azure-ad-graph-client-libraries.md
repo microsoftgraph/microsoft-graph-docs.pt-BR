@@ -3,13 +3,13 @@ title: Migrar aplicativos do Azure AD Graph .NET para o Microsoft Graph
 description: Descreve como migrar aplicativos de API do Azure Active Directory (Azure AD) para a API do Microsoft Graph.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 884802fafcccf4408b84da96f6c4f94818e31b16
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.prod: azure-active-directory
+ms.openlocfilehash: 757a8d43b3a0729e4d791c7a4f4f85640af87274
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234037"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872947"
 ---
 # <a name="migrate-net-client-library-use-to-microsoft-graph"></a>Migrar o .NET Client library use para o Microsoft Graph
 
@@ -30,7 +30,7 @@ Veja aqui algumas etapas gerais para migrar para a biblioteca de cliente .NET do
 
 As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para adquirir tokens de acesso para chamar o Azure AD Graph e que, por enquanto, você continuará a usar a ADAL. Mudar para o MSAL pode ser feito como uma etapa separada descrita na [migração para o MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal).
 
-1. Para adquirir um token de acesso ao Microsoft Graph, **** atualize o `https://graph.windows.net` resourceurl pela `https://graph.microsoft.com`de para.
+1. Para adquirir um token de acesso ao Microsoft Graph, atualize o **resourceurl pela** de `https://graph.windows.net` para `https://graph.microsoft.com` .
 
 2. Em seu aplicativo, atualize as referências à biblioteca de cliente do Microsoft Graph alterando:
 
@@ -46,7 +46,7 @@ As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para ad
 
 3. Use o Gerenciador de pacotes para baixar e atualizar o [pacote NuGet do Microsoft Graph](https://www.nuget.org/packages/Microsoft.Graph/) e atualizar as dependências.
 
-4. Atualize o construtor de cliente para criar `GraphServiceClient`um, em `ActiveDirectoryClient`vez de.  Os trechos de código a seguir pressupõem que seu `AcquireTokenAsyncForUser()` aplicativo está usando o método para adquirir novos tokens. Você pode encontrar uma definição para este método como parte do [exemplo Active-Directory-dotnet-graphapi-console](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs).
+4. Atualize o construtor de cliente para criar um `GraphServiceClient` , em vez de `ActiveDirectoryClient` .  Os trechos de código a seguir pressupõem que seu aplicativo está usando o `AcquireTokenAsyncForUser()` método para adquirir novos tokens. Você pode encontrar uma definição para este método como parte do [exemplo Active-Directory-dotnet-graphapi-console](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs).
 
     Trocar
 
@@ -66,7 +66,7 @@ As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para ad
        }));
     ```
 
-    Para a biblioteca de cliente do Microsoft `serviceRoot` Graph, o valor também inclui o número da versão. No momento, esse valor `https://graph.microsoft.com/v1.0`é.
+    Para a biblioteca de cliente do Microsoft Graph, o `serviceRoot` valor também inclui o número da versão. No momento, esse valor é `https://graph.microsoft.com/v1.0` .
 
 5. Atualizar solicitações para usar a sintaxe do construtor de solicitação do cliente Microsoft Graph, alterando:
 
@@ -155,8 +155,7 @@ O [aplicativo trechos de console C#](https://github.com/microsoftgraph/console-c
 
 A biblioteca de cliente do Azure AD Graph oferece suporte somente à plataforma .NET.  No entanto, a biblioteca de cliente do Microsoft Graph oferece suporte a [plataformas e idiomas](/graph) adicionais que podem ser úteis para suas soluções.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 - Saiba como [implantar, testar e estender](/graph/migrate-azure-ad-graph-deploy-test-extend) aplicativos que você migrou para o Microsoft Graph.
-- Explore os conceitos e as práticas [do Microsoft Graph](/graph/overview) .
-- Use o [Explorador do Graph](https://aka.ms/ge) para experimentar o Microsoft Graph.
+- Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.

@@ -3,13 +3,13 @@ title: Diferenças de recursos entre o Azure AD Graph e o Microsoft Graph
 description: Descreve as diferenças de recursos entre a API do Azure Active Directory (Azure AD) e a API do Microsoft Graph para ajudá-lo a migrar aplicativos de forma rápida e fácil.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 531b2c9b441f328118597802b6478d5b45276965
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.prod: azure-active-directory
+ms.openlocfilehash: 34cbf88ed5fc1f6fe2cba9df3fdb0167630d120e
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45224875"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872926"
 ---
 # <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de recursos entre o Azure AD Graph e o Microsoft Graph
 
@@ -25,29 +25,30 @@ Este artigo explora como o Microsoft Graph trata:
 
 ## <a name="directory-schema-extensions"></a>Extensões de esquema de diretório
 
-Se o aplicativo usar extensões de esquema de diretório do Azure AD Graph, você poderá continuar usando as mesmas APIs básicas (com as URLs de solicitação do Microsoft Graph) para:
+Se o aplicativo usar extensões de diretório do Azure AD Graph, você poderá continuar usando as mesmas APIs básicas (com as URLs de solicitação do Microsoft Graph) para:
 
 - Gerenciar definições de propriedade de extensão usando a propriedade **extensionproperties** no recurso [Application] [/Graph/API/Resources/Application? View = Graph-REST-v 1.0).
 - Obter as propriedades de extensão disponíveis usando a ação [getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-v1.0) .
-- Ler valores de extensão usando GET e`$select`
-- Pesquisar valores de extensão usando GET e`$filter`
+- Ler valores de extensão usando GET e `$select`
+- Pesquisar valores de extensão usando GET e `$filter`
 - Atualizar valores de extensão usando PATCH
 - Remover valores de extensão usando PATCH (definido como **nulo**)
 
-O Microsoft Graph fornece uma experiência de desenvolvedor aprimorada de extensões de esquema, que hoje não é compatível com versões anteriores com extensões de esquema de diretório do Azure AD Graph. Para saber mais, veja [extensões de esquema em adicionar dados personalizados](/graph/extensibility-overview#schema-extensions).
+O Microsoft Graph fornece uma experiência de desenvolvedor aprimorada de extensões de esquema, que atualmente não é compatível com as extensões de diretório do Azure AD Graph. Para saber mais, veja [extensões de esquema em adicionar dados personalizados](/graph/extensibility-overview#schema-extensions).
 
 ### <a name="recommended-migration-approach"></a>Abordagem de migração recomendada
 
-Se seu aplicativo do Azure AD Graph usa extensões de esquema de diretório, faça uma abordagem incremental para migrar o aplicativo para o Microsoft Graph.
+Se seu aplicativo do Azure AD Graph usa extensões de diretório, faça uma abordagem incremental para migrar o aplicativo para o Microsoft Graph.
 
-Primeiro, alterne seu aplicativo para usar chamadas da API do Microsoft Graph, mas deixe que o aplicativo continue a aproveitar as extensões de esquema de diretório do Azure AD Graph.
+Primeiro, alterne seu aplicativo para usar chamadas da API do Microsoft Graph, mas deixe que o aplicativo continue a aproveitar as extensões de diretório do Azure AD Graph.
 
 Em seguida, você pode alternar para usar extensões de esquema do Microsoft Graph. Em alguns casos, a alternância não será apropriada. Não alternar se:
 
-- Seu aplicativo usa extensões de esquema de diretório criadas por meio do AD Connect ou
-- Seu aplicativo depende dos valores de extensão do esquema de diretório nas declarações de token.
+- Seu aplicativo usa extensões de diretório criadas por meio do AD Connect
+- Seu aplicativo define valores de extensão de diretório que são usados em declarações de token por outros aplicativos
+- Seu aplicativo define valores de extensão de diretório que são usados em regras de associação dinâmicas 
 
->**Observação**: o uso de propriedades de extensão de esquema do Microsoft Graph como declarações em um token que usa declarações opcionais ou em uma regra de associação dinâmica também não tem suporte.
+>**Observação**: o uso de propriedades de extensão de esquema do Microsoft Graph como declarações em um token que usa declarações opcionais ou em uma regra de associação dinâmica ainda não tem suporte.
 
 Para alternar para o modelo de extensão de esquema do Microsoft Graph mais recente, você precisará:
 
@@ -82,10 +83,7 @@ O Azure AD Graph usava um sistema chamado mensagens MIME de várias partes para 
 ## <a name="next-steps"></a>Próximas etapas
 
 - Saiba mais sobre as [diferenças de recursos](migrate-azure-ad-graph-resource-differences.md) entre o Azure ad Graph e o Microsoft Graph.
-- Explore [Adicionar dados personalizados](/graph/extensibility-overview) para obter informações sobre as extensões abertas e de esquema.
-- Explore as [consultas Delta](/graph/delta-query-overview) para saber mais sobre a versão do Microsoft Graph da consulta diferencial.
-- Explore o [processamento em lotes JSON](json-batching.md) para entender como o processamento em lotes funciona no Microsoft Graph.
-- Use o [Explorador do Graph](https://aka.ms/ge) para experimentar o Microsoft Graph.
+- Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.
 
 <!-- {
   "type": "#page.annotation",

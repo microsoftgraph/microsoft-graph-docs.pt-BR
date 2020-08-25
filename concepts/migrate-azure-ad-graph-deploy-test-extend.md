@@ -3,13 +3,13 @@ title: Implantar, testar e estender aplicativos migrados
 description: 'Descreve como migrar aplicativos do Azure Active Directory (Azure AD) para usar a API do Microsoft Graph (REST); isso aborda a etapa 3: implantar, testar e estender.'
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6b5236f6b7be140e1040a3169edded6e162b5e7a
-ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
+ms.prod: azure-active-directory
+ms.openlocfilehash: 57ee22b7c1f04e9f8fd4a6a1f3ec0d32f75d51be
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645249"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872940"
 ---
 # <a name="deploy-test-and-extend"></a>Implantar, testar e estender
 
@@ -29,7 +29,24 @@ Esta é a etapa 4 do [processo de migração de aplicativos](migrate-azure-ad-gr
 
 3.  **Explorar novo valor**
 
-    Agora você já fez a migração para o Microsoft Graph, nunca foi mais fácil desbloquear muito mais conjuntos de informações e recursos que agora estão em suas mãos. Verifique se há novos conjuntos de recursos e capacidades regularmente.  
+    Agora você já fez a migração para o Microsoft Graph, nunca foi mais fácil desbloquear muito mais conjuntos de informações e recursos que agora estão em suas mãos. 
+    O Microsoft Graph oferece suporte a vários novos conjuntos de jogos e recursos do Azure AD que não estão disponíveis no Azure AD Graph, incluindo: 
+
+    - [Gerenciamento de grupo do Microsoft 365](/graph/office365-groups-concept-overview)
+    - [Convites de usuário externo](/graph/api/resources/invitation?view=graph-rest-1.0)
+    - A capacidade de [restaurar os usuários e os grupos do Microsoft 365](/graph/api/resources/directory?view=graph-rest-1.0) depois de excluídos
+    - [Notificações de webhook em usuários e grupos](/graph/webhooks?toc=./ref/toc.json&view=graph-rest-1.0)
+    - Recursos de governança de identidade, como:
+      - [Gerenciamento de identidade privilegiado](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) (PIM) para elevar os usuários a funções privilegiadas apenas quando necessário e por um período de tempo limitado
+      - [Revisões de acesso](/graph/api/resources/accessreviews-root?view=graph-rest-beta) para avaliações de acesso de um único momento ou recorrentes para atestado dos direitos de acesso do usuário
+      - [Termos de uso](/graph/api/resources/accessreviews-root?view=graph-rest-beta) para permitir que as organizações apresentem informações para requisitos legais ou de conformidade, como avisos de isenção de responsabilidade
+    - Recursos de segurança como:
+      - [Eventos de risco de identidade](/graph/api/resources/identityriskevent?view=graph-rest-1.0)
+      - [Usuários de risco](/graph/api/resources/riskyuser?view=graph-rest-1.0)
+    - [Bibliotecas e exemplos de cliente](/graph/) disponíveis em muitas plataformas e outros idiomas. Os SDKs do Microsoft Graph fornecem uma interface detectável para acessar facilmente seus dados ao lidar com a aquisição de token de forma transparente, tentar novamente o tratamento devido a erros e limitação, tratamento de redirecionamento seguro e serialização e desserialização de modelo.
+
+    O Microsoft Graph oferece acesso a muitos outros serviços do que apenas ao Azure Active Directory. Também é o [gateway da API para os serviços do Microsoft 365](/graph/).
+    Verifique se há novos conjuntos de recursos e capacidades regularmente.  
 
     - Dê uma olhada no [que você pode fazer com o Microsoft Graph](/graph/examples)
     - Explore o [blog do Microsoft Graph](/graph/blogs) para obter as últimas notícias sobre o Microsoft Graph e algumas boas séries de aprendizado.
@@ -39,13 +56,13 @@ Esta é a etapa 4 do [processo de migração de aplicativos](migrate-azure-ad-gr
 
 Se você encontrar problemas ou precisar de ajuda durante o processo de migração, você pode:
 
-- Revise a [lista de verificação](migrate-azure-ad-graph-overview.md) novamente
+- Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente
 - Postar perguntas no [StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph)
 - Revise as amostras do Microsoft Graph para comparar e comparar com o código do aplicativo existente:
   - **Aplicativos que usam a API REST**: explorar [inícios e amostras rápidas](https://developer.microsoft.com/graph/get-started), escolhendo sua plataforma de escolha e executar o início rápido ou pesquisar um exemplo apropriado
   - **Aplicativo que usa a biblioteca de cliente .net**: examinar [console-Csharp-Snippets-Sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) e/ou [dotnetcore-console-Sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 - Use [inícios e amostras rápidas](/graph/get-started) para se familiarizar rapidamente.
 - Aproveitar [bibliotecas de clientes e SDKs](https://developer.microsoft.com/graph/get-started) para desenvolver aplicativos personalizados 

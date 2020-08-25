@@ -3,13 +3,13 @@ title: Diferenças de tipo de recurso entre o Azure AD Graph e o Microsoft Graph
 description: Descreve as diferenças entre recursos no gráfico do Azure AD e recursos no Microsoft Graph para ajudar a migrar aplicativos.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3cc0ce235739ae5ab85b211e1efaec3d3923be37
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.prod: azure-active-directory
+ms.openlocfilehash: 9d03f6cca4bb1da986ecfe5c2b04b6f6e9cc6cd3
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863856"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873381"
 ---
 # <a name="resource-type-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de tipo de recurso entre o Azure AD Graph e o Microsoft Graph
 
@@ -29,7 +29,7 @@ Se um recurso **não** for mostrado na lista, ele já estará disponível na [ve
 | [Contato](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | versão beta &nbsp; - &nbsp; [orgContact](/graph/api/resources/orgContact?view=graph-rest-beta)<br>v 1.0 &nbsp; - &nbsp; [orgContact](/graph/api/resources/orgContact?view=graph-rest-1.0) | |
 | [DirectoryLinkChange](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp; - &nbsp; _nova &nbsp; abordagem_ beta <br>&nbsp; - &nbsp; _nova &nbsp; abordagem_ do v 1.0 | A consulta Delta oferece suporte à detecção de alteração de relação com um mecanismo que não requer esse recurso. Consulte [diferenças de recursos entre o Azure ad Graph e o Microsoft Graph](migrate-azure-ad-graph-feature-differences.md). |
 | [OAuth2Permission](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | versão beta &nbsp; - &nbsp; [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-beta) <br> v 1.0 &nbsp; - &nbsp; [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-1.0) ||
- [Política](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp; - &nbsp; [políticas](/graph/api/resources/policy-overview?view=graph-rest-beta) beta <br> &nbsp; - &nbsp; [políticas](/graph/api/resources/policy-overview?view=graph-rest-1.0) de v 1.0| Cada tipo de política tem um nome de tipo exclusivo e uma estrutura, sob o segmento de caminho de URL de **políticas** , no Microsoft Graph. No Azure AD Graph, esse era um tipo de política único. |
+ [Política](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp; - &nbsp; [políticas](/graph/api/resources/policy-overview?view=graph-rest-beta) beta <br> &nbsp; - &nbsp; [políticas](/graph/api/resources/policy-overview?view=graph-rest-1.0) de v 1.0| Cada tipo de política tem um nome de tipo exclusivo e uma estrutura, sob o segmento de caminho de URL de **políticas** , no Microsoft Graph. No Azure AD Graph, esse era um tipo de política único. Por exemplo, para o Azure AD Graph, você trabalharia com o recurso de **política** e definiu a propriedade **Type** como `TokenIssuancePolicy` , enquanto no Microsoft Graph esse seria o recurso **tokenIssuancePolicy** . |
 | [ProvisioningError](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | versão beta &nbsp; - &nbsp; _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_ | Esse recurso foi preterido.  No entanto, um novo recurso descrevendo quaisquer erros de provisionamento relacionados ao AD Connect pode ser encontrado no [onPremisesProvisioningError](/graph/api/resources/onPremisesProvisioningError?view=graph-rest-1.0). |
 | [ServiceEndpoint](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp; - &nbsp; [ponto de extremidade](/graph/api/resources/endpoint?view=graph-rest-beta) beta <br> ponto de &nbsp; - &nbsp; [extremidade](/graph/api/resources/endpoint?view=graph-rest-1.0) v 1.0 | os **pontos de extremidade** só estão disponíveis como parte do recurso de [grupo](/graph/api/resources/group?view=graph-rest-beta) na versão beta e o recurso de [servicePrincipalName](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) em versões beta e v 1.0.|
 | [SignInName](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp; - &nbsp; _nova abordagem_ beta <br> &nbsp; - &nbsp; _nova abordagem_ do v 1.0 | Nova modelagem para os identificadores usados para entrar em uma conta de usuário. Confira o tipo de recurso [objectidentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0) para obter mais detalhes. Oferece suporte a cenários do Azure AD B2C. |
@@ -40,5 +40,4 @@ Se um recurso **não** for mostrado na lista, ele já estará disponível na [ve
 ## <a name="next-steps"></a>Próximas etapas
 
 - Saiba mais sobre as [diferenças de propriedade de entidade](migrate-azure-ad-graph-property-differences.md) entre o Azure ad Graph e o Microsoft Graph.
-- Explore os conceitos e as práticas [do Microsoft Graph](/graph/overview) .
-- Use o [Explorador do Graph](https://aka.ms/ge) para experimentar o Microsoft Graph.
+- Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.

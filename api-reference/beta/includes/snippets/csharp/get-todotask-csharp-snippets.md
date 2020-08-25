@@ -1,23 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 162f4e4483529002d80f289853b78bf45e717fb4
+ms.openlocfilehash: 24fa832be78cec7015af00094ed16d63b10f90dd
 ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872668"
+ms.locfileid: "46873174"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = new DirectoryObject
-{
-    Id = "2c891f12-928d-4da2-8d83-7d2434a0d8dc"
-};
-
-await graphClient.DirectoryRoles["0afed502-2456-4fd4-988e-3c21924c28a7"].Members.References
+var tasks = await graphClient.Me.Todo.Lists.35e2-35e2-721a-e235-1a72e2351a7.Tasks
     .Request()
-    .AddAsync(directoryObject);
+    .GetAsync();
 
 ```

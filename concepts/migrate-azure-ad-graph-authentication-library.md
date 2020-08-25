@@ -3,13 +3,13 @@ title: Analisar alterações da biblioteca de autenticação do aplicativo
 description: Descreve como atualizar o uso da biblioteca de autenticação para migrar um aplicativo dos aplicativos de API do Azure Active Directory (Azure AD) para a API do Microsoft Graph.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d0f3570ac7d16c02737c4653d66070ec1a03d0c9
-ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
+ms.prod: azure-active-directory
+ms.openlocfilehash: 17a6fa76b3aa32b0eae17bd96e6e8ec9d84ebdbb
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37113881"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872954"
 ---
 # <a name="review-app-authentication-library-changes"></a>Analisar alterações da biblioteca de autenticação do aplicativo
 
@@ -17,8 +17,8 @@ Este artigo faz parte da *etapa 3: revise os detalhes do aplicativo* do [process
 
 A maioria dos aplicativos usa uma biblioteca de autenticação para adquirir e gerenciar tokens de acesso para chamar o Microsoft Graph.  A Microsoft oferece duas bibliotecas de autenticação:
 
-- [Biblioteca de autenticação do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) Adal
-- [Biblioteca de autenticação da Microsoft](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) MSAL
+- [Biblioteca de autenticação do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (Adal)
+- [Biblioteca de autenticação da Microsoft](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL)
 
 ## <a name="updating-adal"></a>Atualizando ADAL
 
@@ -36,7 +36,7 @@ Se seu aplicativo usa atualmente a ADAL, use uma abordagem de migração de dois
 
     Após a atualização do **resourceurl pela** e verificação da funcionalidade, libere uma atualização provisória para que seus usuários sejam ativados e runnning.
 
-1.  Em seguida, comece a migrar o aplicativo para usar o MSAL, que é a biblioteca com suporte para usar a movimentação para frente.
+1.  Em seguida, comece a migrar o aplicativo para usar o MSAL, que é a biblioteca suportada para usar a movimentação para frente, agora que a ADAL foi preterida.
 
 ## <a name="migrating-to-msal"></a>Migrando para o MSAL
 
@@ -54,9 +54,7 @@ Consulte [migrando Adal para MSAL](https://aka.ms/adal-net-to-msal-net) para obt
 
 Após a migração para o MSAL, você poderá solicitar escopos adicionais dinamicamente e os usuários serão solicitados a fornecer o consentimento incremental na próxima vez que usarem seu aplicativo.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 - Saiba mais sobre as diferenças de [biblioteca de cliente .net](migrate-azure-ad-graph-client-libraries.md) entre o Azure AD e o Microsoft Graph.
-- Explore a [migração de Adal para o MSAL](https://aka.ms/adal-net-to-msal-net) para obter ajuda mais detalhada sobre a migração para o MSAL.
-- Explore os conceitos e as práticas [do Microsoft Graph](/graph/overview) .
-- Use o [Explorador do Graph](https://aka.ms/ge) para experimentar o Microsoft Graph.
+- Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.

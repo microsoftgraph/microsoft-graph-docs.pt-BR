@@ -3,13 +3,13 @@ title: Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
 description: Descreve as diferenças de propriedade entre os recursos de gráfico do AD do Azure (entidades) e o Microsoft Graph para ajudar a migrar aplicativos adequadamente.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6ce8cda894006830db456e30f1809d66ccc24025
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.prod: azure-active-directory
+ms.openlocfilehash: d9883fd85bfeaee2c6043c706c3e3c41061b90fa
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863863"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873395"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
 
@@ -61,7 +61,7 @@ Como o usuário e o grupo são usados com frequência, estes recursos aparecem p
 | **acceptMappedClaims**             | &nbsp; - &nbsp; **API beta/acceptMappedClaims** <br> v 1.0 &nbsp; - &nbsp; **API/acceptMappedClaims**                                                       | acceptMappedClaims agora é parte do novo recurso de API.                                                                                                                                                                                                                                                                      |
 | **availableToOtherTenants**        | versão beta &nbsp; - &nbsp; **signInAudience** <br> v 1.0 &nbsp; - &nbsp; **signInAudience**                                                                      |                                                                                                                                                                                                                                                                                                                              |
 | **errorUrl**                       | versão beta &nbsp; - &nbsp; _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_                                                                              | Essa propriedade foi preterida.                                                                                                                                                                                                                                                                                                 |
-| **Home Page**                       | &nbsp; - &nbsp; **Web Beta/homePageUrl** <br> v 1.0 &nbsp; - &nbsp; **Web/homePageUrl**                                                                     | homepage agora faz parte do novo recurso da Web.                                                                                                                                                                                                                                                                                |
+| **homepage**                       | &nbsp; - &nbsp; **Web Beta/homePageUrl** <br> v 1.0 &nbsp; - &nbsp; **Web/homePageUrl**                                                                     | homepage agora faz parte do novo recurso da Web.                                                                                                                                                                                                                                                                                |
 | **informationalUrls**              | &nbsp; - &nbsp; **informações** beta <br> &nbsp; - &nbsp; **informações sobre** o v 1.0                                                                                           |                                                                                                                                                                                                                                                                                                                              |
 | **knownClientApplications**        | &nbsp; - &nbsp; **API beta/knownClientApplications** <br> v 1.0 &nbsp; - &nbsp; **API/knownClientApplications**                                               | knownClientApplications agora é parte do novo recurso de API.                                                                                                                                                                                                                                                                 |
 | **logoutUrl**                      | &nbsp; - &nbsp; **Web Beta/logoutUrl** <br> v 1.0 &nbsp; - &nbsp; **Web/logoutUrl**                                                                         | logoutUrl agora é parte do recurso Web.                                                                                                                                                                                                                                                                                   |
@@ -202,5 +202,5 @@ O gráfico do Azure AD CertificateAuthorityInformation é renomeado como **certi
 ## <a name="next-steps"></a>Próximas etapas
 
 - Saiba mais sobre as [diferenças de método](migrate-azure-ad-graph-method-differences.md) entre o Azure ad Graph e o Microsoft Graph.
-- Explore os conceitos e as práticas [do Microsoft Graph](/graph/overview) .
-- Use o [Explorador do Graph](https://aka.ms/ge) para experimentar o Microsoft Graph.
+- Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.
+

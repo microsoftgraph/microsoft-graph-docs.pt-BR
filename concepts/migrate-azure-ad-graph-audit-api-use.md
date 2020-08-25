@@ -3,13 +3,13 @@ title: Examinar o uso do aplicativo APIs do Azure AD Graph
 description: Descreve como auditar as APIs do Azure Active Directory (Azure AD) para migrar um aplicativo para a API do Microsoft Graph.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 14cc61039d97fa43f64599310cf86cce6c348fb2
-ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
+ms.prod: azure-active-directory
+ms.openlocfilehash: 405c68d1e0f88af33caa7b5f4c083bd1acdec82d
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645244"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872961"
 ---
 # <a name="examine-azure-ad-graph-apis-app-usage"></a>Examinar o uso do aplicativo APIs do Azure AD Graph
 
@@ -31,8 +31,8 @@ Você também deve verificar as permissões necessárias para os recursos que se
 
 Para saber mais, confira [permissões](permissions-reference.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 - Saiba mais sobre [as diferenças de registro de aplicativo, permissões e consentimento](migrate-azure-ad-graph-app-registration.md) entre o Azure ad Graph e o Microsoft Graph.
-- Explore os conceitos e as práticas [do Microsoft Graph](/graph/overview) .
-- Use o [Explorador do Graph](https://aka.ms/ge) para experimentar o Microsoft Graph.
+- Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.
+
