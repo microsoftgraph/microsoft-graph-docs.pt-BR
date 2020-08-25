@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: fe4fe0828227825b81c636d04de7b918c90e1047
+ms.openlocfilehash: b6dfc22cc7a34d2b407011c9173ced12c3d12fd4
 ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873906"
+ms.locfileid: "46873116"
 ---
 ```javascript
 
@@ -15,8 +15,12 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/search(q='Contoso Project')')
+const aAMkADIyAAAhrbPWAAA= = {
+  displayName: "Vacation Plan",
+};
+
+let res = await client.api('/me/todo/lists/AAMkADIyAAAhrbPWAAA=')
     .version('beta')
-    .get();
+    .update(aAMkADIyAAAhrbPWAAA=);
 
 ```

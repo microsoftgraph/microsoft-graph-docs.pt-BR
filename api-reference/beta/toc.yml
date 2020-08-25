@@ -171,11 +171,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -448,7 +448,7 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -1325,7 +1325,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1374,11 +1374,11 @@ items:
       - name: Conformidade (visualização)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/complianceapioverview.md
           - name: Descoberta eletrônica
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscoverycase.md
@@ -1452,7 +1452,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -9178,7 +9178,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -9272,7 +9272,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -9751,7 +9751,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
               - name: Métodos de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-overview.md
                   - name: Método de autenticação
                     href: resources/authenticationmethod.md
@@ -9771,7 +9771,7 @@ items:
                         href: api/passwordauthenticationmethod-resetpassword.md
                       - name: Obter status da operação
                         href: api/authenticationoperation-get.md
-                  - name: Phone
+                  - name: Telefone
                     href: resources/phoneauthenticationmethod.md
                     items:
                       - name: Listar
@@ -10713,7 +10713,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -10757,7 +10757,7 @@ items:
                     href: api/itemaddress-update.md
                   - name: Excluir
                     href: api/itemaddress-delete.md
-              - name: Data especial
+              - name: Datas especiais
                 items:
                   - name: Aniversário de pessoa
                     href: resources/personanniversary.md
@@ -11161,7 +11161,7 @@ items:
         items:
           - name: Relatórios de atividades do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -11184,7 +11184,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -11207,7 +11207,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registro de usuário de credenciais
                     href: resources/credentialuserregistrationcount.md
@@ -11231,7 +11231,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -11443,13 +11443,13 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Dados de consulta
                 href: api/search-query.md
           - name: Índice
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -11537,7 +11537,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -11593,7 +11593,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -11714,7 +11714,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -12202,10 +12202,10 @@ items:
                 href: api/onenote-list-notebooks.md
               - name: Criar blocos de anotações
                 href: api/onenote-post-notebooks.md
-      - name: Tarefas pendentes (visualização)
+      - name: Tarefas To do (visualização)
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
@@ -12226,7 +12226,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Task
+          - name: Tarefas
             href: resources/todotask.md
             items:
               - name: Listar tarefas
