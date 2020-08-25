@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d8033f8b6803ebd674b8593428aa86e14e0a5cf2
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 59a2fa7828f393c6583e5ba4b5d3ab9713835377
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35705833"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873935"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/root/search(q='{search-query}')')
+let res = await client.api('/me/drive/root/search(q='Contoso Projec}')')
     .version('beta')
     .get();
 

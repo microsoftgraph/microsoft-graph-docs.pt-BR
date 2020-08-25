@@ -3,12 +3,12 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 3a2f253ffdb80c2bc39907537e27d7399c573c2f
-ms.sourcegitcommit: 2e6fb1c0fef8cb3af1a72c115aa54902c71c99f5
+ms.openlocfilehash: de4aec69c62c611532143d2dfee2340b485d3a0f
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658246"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873073"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
 
@@ -756,7 +756,7 @@ Permitir que os usuários [sigam](/graph/api/site-follow?view=graph-rest-beta) o
 ### <a name="identity-and-access"></a>Identidade e acesso
 [Fornecedores de identidade](/graph/api/resources/identityprovider?view=graph-rest-1.0)
 [melhores guias de autenticação](/graph/auth)
-[migrando aplicativos do Azure AD Graph para o Microsoft Graph](migrate-azure-ad-graph-overview.md)
+[migrando aplicativos do Azure AD Graph para o Microsoft Graph](migrate-azure-ad-graph-planning-checklist.md)
 
 ### <a name="sdks"></a>SDKs
 [Guias SDK](/sdks/sdks-overview.md)Trechos de API ([exemplo](/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code))
