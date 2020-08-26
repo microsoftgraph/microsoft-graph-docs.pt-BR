@@ -1,18 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 97db53acb30c7289186089511fe2602a9a9d8d33
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d5db0909ad65863247ba369bf0ad1ba7b838a330
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367232"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873955"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IDriveItemCollectionPage search = graphClient.me().drive().root()
-    .search("{search-query}")
+    .search("Contoso Project")
     .buildRequest()
     .get();
 
