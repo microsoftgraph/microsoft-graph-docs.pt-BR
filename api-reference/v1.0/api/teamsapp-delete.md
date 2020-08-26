@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a87644b87659c132fad53f2bc9400d9638c9e46a
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 4920b57c0c4a4af4568c072c2550c188932e693e
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808968"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873297"
 ---
 # <a name="delete-teamsapp"></a>Excluir teamsApp
 
@@ -48,7 +48,7 @@ DELETE /appCatalogs/teamsApps/{id}
 Para excluir um aplicativo que foi enviado, mas que não foi aprovado:
 
 ```http
- DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
+DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

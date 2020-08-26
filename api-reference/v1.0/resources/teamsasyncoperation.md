@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso teamsAsyncOperation
-description: 'Uma operação assíncrona do Microsoft Teams é uma operação que transcende o tempo de vida de uma única solicitação de API. '
+description: 'Uma operação assíncrona do Microsoft Teams transcende o tempo de vida de uma única solicitação de API. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cfeb7aeae2621af9e8609ae503c3a0ef2d95e989
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 61173f92b6aa74d0a703366140f17f983d94c855
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533489"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873276"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>tipo de recurso teamsAsyncOperation
 
@@ -27,14 +27,14 @@ Quando a solicitação for concluída com êxito, o status será "bem-sucedido" 
 
 | Propriedade | Tipo   | Descrição |
 |:---------------|:--------|:----------|
-|id|string |ID de operação exclusiva.|
+|id|cadeia de caracteres |ID de operação exclusiva.|
 |OperationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Indica o tipo de operação que está sendo descrito.|
 |createdDateTime|DateTimeOffset |Hora em que a operação foi criada.|
 |status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Status da operação.|
 |lastActionDateTime|DateTimeOffset |Hora em que a operação assíncrona foi atualizada pela última vez.|
 |attemptsCount|Int32|Número de vezes em que a operação foi tentada antes de ser marcada com êxito ou falhou.|
 |targetResourceId|#c0 |A ID do objeto que é criado ou modificado como resultado dessa operação assíncrona, normalmente uma [equipe](../resources/team.md).|
-|targetResourceLocation|string|O local do objeto que é criado ou modificado como resultado dessa operação assíncrona. Essa URL deve ser tratada como um valor opaco e não analisada em seus caminhos de componente.|
+|targetResourceLocation|cadeia de caracteres|O local do objeto que é criado ou modificado como resultado dessa operação assíncrona. Essa URL deve ser tratada como um valor opaco e não analisada em seus caminhos de componente.|
 |erro|[operationError](operationerror.md)|Qualquer erro que causa falha na operação assíncrona.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -44,7 +44,7 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.teamsasyncoperation"
+  "@odata.type": "microsoft.graph.teamsAsyncOperation"
 }-->
 
 ```json

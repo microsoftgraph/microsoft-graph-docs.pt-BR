@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 4673ab262cf7a88daf3ea6550f3b3bf2dc834c92
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: bdbf97a72835f2597d218f65a25b773aecda356e
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335113"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873967"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/me/insights/used')
-    .orderby('LastUsed/LastAccessedDateTime')
+    .orderby('LastUsed/LastAccessedDateTime desc')
     .get();
 
 ```
