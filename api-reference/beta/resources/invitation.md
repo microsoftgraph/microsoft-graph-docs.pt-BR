@@ -5,12 +5,12 @@ localization_priority: Normal
 author: elisolMS
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2766206dc5a66529a3d8497ef64d2a9202f270d0
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 41641cbd66945a9d55523d2c6518f13fb45a23ce
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199736"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287474"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
@@ -45,14 +45,14 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Configurações adicionais para a mensagem que está sendo enviada ao usuário convidado, incluindo a lista de destinatários cc, o idioma e o texto da mensagem de personalização.|
 |sendInvitationMessage|Boolean|Indica se um email deve ser enviado ao usuário que está sendo convidado ou não. O padrão é false.|
 |inviteRedirectUrl|String|A URL para a qual o usuário deve ser redirecionado após o resgate do convite. Obrigatório.|
-|inviteRedeemUrl|String|A URL que o usuário pode usar para resgatar o convite. Somente leitura|
+|inviteRedeemUrl|String|A URL que o usuário pode usar para resgatar o convite. Somente leitura.|
 |invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é Convidado. Você pode convidar como um membro se você for administrador da empresa. |
 |status|String|O status do convite. Valores possíveis: PendingAcceptance, Completed, InProgress, e Error|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|invitedUser|[Usuário](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
+|invitedUser|[user](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso

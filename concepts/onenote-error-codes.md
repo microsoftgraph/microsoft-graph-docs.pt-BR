@@ -4,12 +4,12 @@ description: Este artigo descreve os códigos de erro que são retornados pelas 
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: fad96eba2b5b2fa628cae81cdfdc859dc572e938
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 49b61a5acec84cc4425c85329ce8482fb9c31eb7
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898020"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287432"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Códigos de erro para APIs do OneNote no Microsoft Graph
 
@@ -333,7 +333,7 @@ O contexto não especifica uma ID de usuário válida. Um erro comum é que PUID
 ### <a name="20166"></a>20166
 O aplicativo emitiu muitas solicitações em nome de um usuário em um curto período de tempo. Para ajudar a garantir que a API do OneNote permaneça estável e responsiva, a API retorna um código de status 429 e esse erro quando detecta que um aplicativo está usando muitos recursos. 
 
-Para saber mais, confira [Limitação da API do OneNote e como evitá-la](https://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx).
+Para obter mais informações, consulte [orientação sobre a limitação específica do serviço do Microsoft Graph](/graph/throttling#service-specific-limits).
 
 ### <a name="20168"></a>20168
 Não há suporte para a fonte do vídeo especificada na solicitação. Confira [Sites de vídeo com suporte](onenote-images-files.md#adding-videos) para a lista atual.

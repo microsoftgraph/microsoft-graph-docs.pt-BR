@@ -6,12 +6,12 @@ title: Pesquisar arquivos
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 08774f68c9b5ec17ff3e0c5f4f6ba42e058245e1
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: edd6a0f1c43b7aa27b4089a63902840ce7e2562d
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091400"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287467"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Pesquisar um DriveItem em uma unidade
 
@@ -58,13 +58,13 @@ Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-pa
 
 ### <a name="request"></a>Solicitação
 
-O exemplo a seguir procura uma correspondência para "projeto contoso" em vários campos nos itens da unidade do usuário conectado.
+O exemplo a seguir procura uma correspondência para "Projeto da Contoso" entre vários campos nos itens da unidade do usuário conectado.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "item_search" }-->
 
 ```msgraph-interactive
-GET /me/drive/root/search(q='Contoso Projec}')
+GET /me/drive/root/search(q='Contoso Project')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-csharp-snippets.md)]

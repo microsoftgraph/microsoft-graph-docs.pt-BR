@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ca2fcc1aa0fe7f61c757d2de6a29af52d51709d8
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 5247bacbbf15274f132c5d7620b806cfe99613b6
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123514"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287453"
 ---
 # <a name="create-accessreview"></a>Criar accessReview
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , crie um novo objeto [accessReview](../resources/accessreview.md) .
 
-Antes de fazer essa solicitação, o chamador deve ter [recuperado previamente a lista de modelos de fluxo de negócios](businessflowtemplate-list.md), para que `businessFlowTemplateId` o valor de seja incluído na solicitação.
+Antes de fazer essa solicitação, o chamador deve ter [recuperado previamente a lista de modelos de fluxo de negócios](businessflowtemplate-list.md), para que o valor de `businessFlowTemplateId` seja incluído na solicitação.
 
 Depois de fazer essa solicitação, o chamador deve [criar um programControl](programcontrol-create.md)para vincular a revisão do Access a um programa.  
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     | AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | AccessReview.ReadWrite.Membership |
 
 O chamador também deve ter a permissão ProgramControl. ReadWrite. All, de modo que depois de criar uma revisão do Access, o chamador possa criar um [ProgramControl](../resources/programcontrol.md).
@@ -60,11 +60,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um acces
 | `endDateTime`             |`DateTimeOffset`                                                | O DateTime quando a revisão é agendada para terminar. Este deve ser pelo menos um dia depois da data de início.   |
 | `description`             |`String`                                                        | A descrição, para mostrar aos revisores. |
 | `businessFlowTemplateId`  |`String`                                                        | O identificador do modelo de fluxo de negócios obtido de um [businessFlowTemplate](../resources/businessflowtemplate.md).  |
-| `reviewerType`            |`String`                                                        | O tipo de relação de revisor para os direitos de acesso do objeto revisado, `self`um `delegated`de, `entityOwners`ou. | 
+| `reviewerType`            |`String`                                                        | O tipo de relação de revisor para os direitos de acesso do objeto revisado, um de `self` , `delegated` ou `entityOwners` . | 
 | `reviewedEntity`          |`microsoft.graph.identity`                                      | O objeto para o qual uma revisão de acesso é criada, como a associação de um grupo ou as atribuições de usuários a um aplicativo. | 
 
 
-Se o revisortype que está sendo fornecido tiver `delegated`o valor, o chamador também deverá incluir `reviewers` a propriedade, com uma coleção de [UserIdentity](../resources/useridentity.md) dos revisores.
+Se o revisortype que está sendo fornecido tiver o valor `delegated` , o chamador também deverá incluir a `reviewers` propriedade, com uma coleção de [UserIdentity](../resources/useridentity.md) dos revisores.
 
 Se seu aplicativo estiver chamando esta API sem um usuário conectado, o chamador também deverá incluir a propriedade **createdBy** , o valor para o qual é um [UserIdentity](../resources/useridentity.md) do usuário que será identificado como criador da revisão.
 
@@ -72,7 +72,7 @@ Além disso, o chamador pode incluir configurações, para criar uma série de a
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201, Created` um código de resposta e um objeto [accessReview](../resources/accessreview.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201, Created` código de resposta e um objeto [accessReview](../resources/accessreview.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -94,7 +94,7 @@ Content-type: application/json
     "startDateTime":"2017-02-10T00:35:53.214Z",
     "endDateTime":"2017-03-12T00:35:53.214Z",
     "reviewedEntity": {
-        "id": "99025615-a0b1-47ec-9117-35377b10998b",
+        "id": "99025615-a0b1-47ec-9117-35377b10998b"
     },
     "reviewerType" : "delegated",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
