@@ -4,12 +4,12 @@ description: Se o aplicativo precisar realizar mais do que uma ou duas chamadas 
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 151119a2a2861b64db126c8f49d0b916a6f563e8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c3dda46a41c5c300642fb00bb1e96847bc9ebc92
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526262"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296544"
 ---
 # <a name="manage-sessions-and-persistence-in-excel-with-microsoft-graph"></a>Gerenciar sessões e persistências no Excel usando o Microsoft Graph
 
@@ -25,7 +25,14 @@ Para representar a sessão na API, use o cabeçalho `workbook-session-id: {sessi
 
 >**Observação:** o cabeçalho de sessão não é obrigatório para uma API do Excel funcionar. No entanto, recomendamos que você use o cabeçalho de sessão para melhorar o desempenho. Se você não usar um cabeçalho de sessão, as alterações feitas durante a chamada à API _serão_ mantidas como persistentes no arquivo.  
 
-## <a name="next-step"></a>Próxima etapa
+## <a name="request-types"></a>Tipos de solicitação
+O [tratamento de erros](workbook-error-handling.md) sugerido para APIs do Excel é baseado no tipo de solicitação, código de erro e código de status. Estes são os tipos de solicitação:
+
+- **Solicitação CreateSession** -usada para criar uma sessão persistente ou não persistente. Em uma resposta bem-sucedida, a ID da sessão será retornada na propriedade **ID** no corpo da resposta. Para obter detalhes, consulte [Create Session](/graph/api/workbook-createsession?view=graph-rest-1.0).
+- **Solicitação de sessão** -solicitações subsequentes que seguem uma solicitação CreateSession. Em geral, eles incluem um `workbook-session-id: {session-id}` cabeçalho. A exceção é uma solicitação de status de sondagem, que usa o padrão de operação de execução longa. Para obter detalhes, consulte [Working with APIs que levam muito tempo para ser concluído](/graph/workbook-best-practice#working-with-apis-that-take-a-long-time-to-complete).
+- **Solicitação sem sessão** -usada no modo sem sessão. Essas solicitações não têm um `workbook-session-id: {session-id}` cabeçalho.  
+
+## <a name="next-steps"></a>Próximas etapas
 Para saber como criar e usar sessões, confira o [tópico de referência de criação de sessão](/graph/api/workbook-createsession?view=graph-rest-1.0).
 
 ## <a name="see-also"></a>Confira também

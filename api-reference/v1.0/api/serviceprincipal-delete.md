@@ -1,18 +1,18 @@
 ---
-title: Excluir o servicePrincipalName
+title: Excluir servicePrincipal
 description: Exclua o servicePrincipalName.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: d57bc6d6370f433a1d67ff2acf719f99c5195877
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 3aeec8e560535eec0108331b04f3f0dda18133cd
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383564"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296501"
 ---
-# <a name="delete-serviceprincipal"></a>Excluir o servicePrincipalName
+# <a name="delete-serviceprincipal"></a>Excluir servicePrincipal
 
 Namespace: microsoft.graph
 
@@ -23,15 +23,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /servicePrincipals/{id}
-
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|

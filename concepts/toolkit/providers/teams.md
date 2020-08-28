@@ -3,12 +3,12 @@ title: Provedor do Microsoft Teams
 description: Use o provedor de equipes dentro da guia do Microsoft Teams para facilitar a autenticação e o acesso ao Microsoft Graph a todos os componentes.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 62dba210d4fbf7d3540df7fd58d33e275f0065c3
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 39a20b3946a795af34fd57d877214a9cb7dabcae
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44990252"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296481"
 ---
 # <a name="microsoft-teams-provider"></a>Provedor do Microsoft Teams
 
@@ -108,7 +108,7 @@ Para entrar com suas credenciais do Microsoft Teams, você precisa fornecer uma 
 
 ```html
 <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js">
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 
 <script>
   mgt.TeamsProvider.handleAuth();
