@@ -1,27 +1,27 @@
 ---
 title: tipo de recurso impossibleTravelRiskEvent
-description: Um evento de risco detectado pela proteção de identidade do Active Directory do Azure onde dois logons de conta ocorrem a partir de locais atypical para o usuário e seria impossível viajar entre os locais na duração entre as entradas. Complete as informações sobre os eventos de risco podem ser encontradas na documentação do Azure AD Identity Protection.
+description: Um evento de risco detectado pela proteção de identidade do Azure Active Directory onde dois logons de conta ocorrem de locais atypical para o usuário e não seria possível viajar entre os locais na duração entre as entradas. As informações completas sobre eventos de risco podem ser encontradas na documentação de proteção de identidade do Azure AD.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: 377930a154cca9b0f139ea3a4e088d779064d581
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9100bd22426c634fedb16a776114ba973d4db531
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809478"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312030"
 ---
-# <a name="impossibletravelriskevent-resource-type"></a>tipo de recurso impossibleTravelRiskEvent
+# <a name="impossibletravelriskevent-resource-type-deprecated"></a>tipo de recurso impossibleTravelRiskEvent (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
+>[!CAUTION]
 >A API **identityRiskEvents** foi preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, consulte [Preterition of the IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
-Um evento de risco detectado pela [proteção de identidade do Active Directory do Azure](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) onde dois logons de conta ocorrem a partir de locais atypical para o usuário e seria impossível viajar entre os locais na duração entre as entradas. Complete as informações sobre os eventos de risco podem ser encontradas na [documentação do Azure ad Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/).
+Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) onde dois logons de conta ocorrem de locais atypical para o usuário e não seria possível viajar entre os locais na duração entre as entradas. As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
 ## <a name="methods"></a>Métodos

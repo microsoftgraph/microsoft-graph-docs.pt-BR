@@ -5,12 +5,12 @@ localization_priority: Priority
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 43fd850274006d763535ad30b2de58f634375541
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 19afac29a257dac404bcd8d006462aea7ba5c4b0
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181691"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287460"
 ---
 # <a name="directoryobject-resource-type"></a>Tipo de recurso directoryObject
 
@@ -34,14 +34,14 @@ Esse recurso permite:
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|Coleção de cadeias de caracteres|Retorne todos os grupos dos quais o objeto de usuário, grupo ou diretório é membro. A verificação é transitiva.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Coleção de cadeias de caracteres| Retorne todos os grupos e funções de diretório dos quais o objeto de usuário, grupo ou diretório é membro. A verificação é transitiva. |
 |[getByIds](../api/directoryobject-getbyids.md) | Coleção [directoryObject](directoryobject.md) | Obtenha um conjunto de objetos de diretório com base em um conjunto de ids fornecidas. |
-|[validateProperties](../api/directoryobject-validateproperties.md)|Json| Validar um nome de exibição ou um apelido de email do grupo do Office 365 em conformidade com as políticas de nomenclatura. |
+|[validateProperties](../api/directoryobject-validateproperties.md)|Json| Validar se o nome de exibição de um grupo do Microsoft 365 ou apelido de email está em conformidade com as políticas de nomenclatura. |
 |[delta](../api/directoryobject-delta.md)|Coleção [directoryObject](directoryobject.md)| Obtenha alterações incrementais para objetos de diretório. Oferece suporte à filtragem por tipo derivado. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|String|Um Guid que é o identificador exclusivo do objeto; por exemplo, 12345678-9abc-def0-1234-56789abcde12. Chave. Não anulável. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo para o objeto. Por exemplo, 12345678-9abc-def0-1234-56789abcde. O valor da propriedade **ID** é frequentemente, mas não exclusivamente, sob o formato de um GUID; O valor deve ser tratado como um identificador opaco e não confie no fato de ser um GUID. Chave. Não anulável. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 

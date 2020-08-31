@@ -5,14 +5,14 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1d10656f41c5f7e4063abd71b9111a2e64cbb46c
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 83fd7935e03791e3695454ff99eac7d5397817d9
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849776"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311555"
 ---
-# <a name="outlooktask-complete"></a>outlookTask: concluir
+# <a name="outlooktask-complete-deprecated"></a>outlookTask: concluído (preterido)
 
 Namespace: microsoft.graph
 
@@ -35,8 +35,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Tasks.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Tasks.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Tasks.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

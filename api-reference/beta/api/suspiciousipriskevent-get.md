@@ -5,20 +5,20 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: 4e1610f71280a96d3829f7043aa2232ea9569f1f
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 456b038b9aaa71280ee00df336d3e12b6cd4c133
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181305"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312002"
 ---
-# <a name="get-suspiciousipriskevent"></a>Obter suspiciousIpRiskEvent
+# <a name="get-suspiciousipriskevent-deprecated"></a>Obter suspiciousIpRiskEvent (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
+>[!CAUTION]
 >A API **identityRiskEvents** foi preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, consulte [Preterition of the IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Recupere as propriedades e os relacionamentos de um objeto suspiciousipriskevent.
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

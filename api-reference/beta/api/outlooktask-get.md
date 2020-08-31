@@ -5,14 +5,14 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 50bc54603005d226f6c05c03f4ccee772ec1d8fb
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 6fc405645d352b4de97e3a167107b4ad41710a48
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849713"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311988"
 ---
-# <a name="get-outlooktask"></a>Obter outlookTask
+# <a name="get-outlooktask-deprecated"></a>Obter outlookTask (preterido)
 
 Namespace: microsoft.graph
 
@@ -31,8 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Tasks.Read                          |
-| Delegado (conta pessoal da Microsoft) | Tasks.Read                          |
+| Delegada (conta corporativa ou de estudante)     | Tasks.Read                          |
+| Delegada (conta pessoal da Microsoft) | Tasks.Read                          |
 | Aplicativo                            | Sem suporte.                      |
 
 ## <a name="http-request"></a>Solicitação HTTP

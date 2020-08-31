@@ -1,18 +1,18 @@
 ---
-title: Usar as APIs de proteção de identidade do Azure AD (versão prévia)
+title: Usar as APIs de proteção de identidade do Azure AD
 description: Você pode usar o Microsoft Graph para consultar as APIs de proteção de identidade para receber informações sobre o risco detectado pela proteção de identidade do Azure AD.
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 43fbfb8f0645d4d7d9a58135f2cd6fe986c62643
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 2adaf43786f1ced76a2c971815989f08967cfb3d
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181733"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312031"
 ---
-# <a name="use-the-azure-ad-identity-protection-api-preview"></a>Usar a API de proteção de identidade do Azure AD (versão prévia)
+# <a name="use-the-azure-ad-identity-protection-api"></a>Usar a API de proteção de identidade do Azure AD
 
 Namespace: microsoft.graph
 
@@ -28,7 +28,7 @@ A proteção de identidade é uma ferramenta que permite às organizações dete
 
 * [identityRiskEvents](identityriskevent.md) – consulta o Microsoft Graph para obter uma lista de detecções de risco e informações associadas. Essa API foi preterida; Recomendamos que você use **riskDetections** em vez disso.
 
->[!NOTE]
+>[!CAUTION]
 >A API **identityRiskEvents** foi preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, consulte [Preterition of the IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 ## <a name="see-also"></a>Confira também

@@ -5,14 +5,14 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3dc0ab4e62844bf565cdff834e57ba9843d30873
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: d589fb84e62712fa744acb373af8678e8db8242f
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849671"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311974"
 ---
-# <a name="create-attachment"></a>Criar anexo
+# <a name="create-attachment-deprecated"></a>Criar anexo (preterido)
 
 Namespace: microsoft.graph
 
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Tasks.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Tasks.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Tasks.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

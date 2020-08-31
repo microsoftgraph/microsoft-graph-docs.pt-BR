@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 804beb5db6fe42d430912fc14377764b9f4d6dcb
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: aa3cc0e2a09d09f694295742e3faabe704ec6a87
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566499"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311848"
 ---
 # <a name="update-connectedorganization"></a>Atualizar connectedOrganization
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,8 +52,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [c
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-| `displayName`  |`String` | O nome da organização conectada.  |
-| `description`  |`String` | A descrição da organização conectada. |
+| displayName  |String | O nome da organização conectada.  |
+| description  |String | A descrição da organização conectada. |
+| estado        |connectedOrganizationState|O estado de uma organização conectada define se as políticas de atribuição com tipo de escopo solicitante `AllConfiguredConnectedOrganizationSubjects` são aplicáveis ou não. Os valores possíveis são: `configured` e `proposed`.|
 
 ## <a name="response"></a>Resposta
 
@@ -76,7 +77,8 @@ Content-length: 100
 
 {
   "displayName":"Connected organization new name",
-  "description":"Connected organization new description"
+  "description":"Connected organization new description",
+  "state":"configured"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -110,7 +112,8 @@ Content-type: application/json
 {
   "id": "006111db-0810-4494-a6df-904d368bd81b",
   "displayName":"Connected organization new name",
-  "description":"Connected organization new description"
+  "description":"Connected organization new description",
+  "state":"configured"
 }
 ```
 

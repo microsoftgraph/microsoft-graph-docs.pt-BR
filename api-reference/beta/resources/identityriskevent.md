@@ -5,20 +5,20 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fa8fef43c462559d5c4420637b635b5371ef90ab
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: a04baa476c18dc5a581fffa2e466d3fcbdfa0c68
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181726"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312023"
 ---
-# <a name="identityriskevent-resource-type"></a>tipo de recurso identityRiskEvent
+# <a name="identityriskevent-resource-type-deprecated"></a>tipo de recurso identityRiskEvent (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
+>[!CAUTION]
 >A API **identityRiskEvents** foi preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, consulte [Preterition of the IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/). É o tipo base para cada tipo de evento de risco específico:
@@ -57,7 +57,7 @@ As informações completas sobre eventos de risco podem ser encontradas na [docu
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[Usuário](user.md)| Somente leitura. Anulável.|
+|impactedUser|[user](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

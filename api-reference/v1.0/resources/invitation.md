@@ -5,12 +5,12 @@ localization_priority: Priority
 author: elisolMS
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 95978c18ac047394adfd2a18c2dd6538900c8116
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: c2ae7beeb94b012d40a3e7e7da0f7c81846c135d
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200296"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287439"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
@@ -40,8 +40,8 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 |invitedUserEmailAddress|String|O endereço de email do usuário que está sendo convidado. Obrigatório. Os seguintes caracteres especiais não são permitidos no endereço de email:<br><ul><li>Til (~)</li><li>Ponto de exclamação (`!`)</li><li>Hashtag (`#`)</li><li>Cifrão (`$`)</li><li>Percentagem (`%`)</li><li>Acento circunflexo (`^`)</li><li>E comercial (`&`)</li><li>Asterisco (`*`)</li><li>Parênteses (`( )`)</li><li>Sinal de mais (`+`)</li><li>Sinal de igualdade (`=`)</li><li>Colchetes (`[ ]`)</li><li>Chaves (`{ }`)</li><li>Barra invertida (`\`)</li><li>Barra (`/`)</li><li>Barra vertical (`\|`)</li><li>Ponto e vírgula (`;`)</li><li>Dois pontos (`:`)</li><li>Aspas (`"`)</li><li>Sinais de maior-que e menor-que(`< >`)</li><li>Sinal de interrogação (`?`)</li><li>Vírgula (`,`)</li></ul><br>No entanto, as seguintes exceções se aplicam:<br><ul><li>Um ponto (`.`) ou um hífen (`-`) é permitido em qualquer lugar no nome de usuário, exceto no início ou no final do nome.</li><li>Um underline (`_`) é permitido em qualquer lugar no nome de usuário. Isso inclui no início ou no final do nome.</li></ul>|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Configurações adicionais para a mensagem que está sendo enviada ao usuário convidado, incluindo a lista de destinatários cc, o idioma e o texto da mensagem de personalização.|
 |sendInvitationMessage|Boolean|Indica se um email deve ser enviado ao usuário que está sendo convidado ou não. O padrão é false.|
-|inviteRedirectUrl|String|A URL para a qual o usuário deve ser redirecionado após o resgate do convite. Obrigatório.|
-|inviteRedeemUrl|String|A URL que o usuário pode usar para resgatar o convite. Somente leitura|
+|inviteRedirectUrl|Cadeia de caracteres|O URL para a qual o usuário deve ser redirecionado uma vez que o convite seja resgatado. Obrigatório.|
+|inviteRedeemUrl|Cadeia de caracteres|O URL que o usuário pode usar para resgatar seus convites. Somente leitura|.
 |invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é Convidado. Você poderá convidar como Membro se não for administrador da empresa. |
 |status|String|O status do convite. Valores possíveis: PendingAcceptance, Completed, InProgress, e Error|
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4e690598a9e93dbbbc7527bbfcd8864e0b800bc5
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: aa0134fdd39c339b2dbeb0a611850971b1a9d0ee
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225099"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287446"
 ---
 # <a name="directoryobject-resource-type"></a>Tipo de recurso directoryObject
 
@@ -35,7 +35,7 @@ Representa um objeto do Active Directory do Azure. O tipo **directoryObject** é
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|String|Um GUID que é o identificador exclusivo do objeto; por exemplo, 12345678-9abc-def0-1234-56789abcde. Chave. Não anulável. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo para o objeto. Por exemplo, 12345678-9abc-def0-1234-56789abcde. O valor da propriedade **ID** é frequentemente, mas não exclusivamente, sob o formato de um GUID; O valor deve ser tratado como um identificador opaco e não confie no fato de ser um GUID. Chave. Não anulável. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 

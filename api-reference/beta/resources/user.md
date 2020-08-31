@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 43c83c07622d5209ec21519438d861300f971a04
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 6f1971e51cb9641d696da0531def0f574f93e3cb
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849769"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287495"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -175,7 +175,7 @@ Esse recurso permite:
 | FaxNumber | String | O número de fax do usuário. <br><br>Retornado apenas em $select. |
 | givenName | String | O nome fornecido (nome) do usuário. <br><br>Retornado por padrão. Oferece suporte a $filter.|
 | hireDate | DateTimeOffset | A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` <br><br>Retornado apenas em $select. |
-| id | String | O identificador exclusivo do usuário. Herdado de [directoryObject](directoryobject.md). <br><br>Retornado por padrão. Não anulável. Somente leitura.|
+| id | String | O identificador exclusivo do usuário. Deve ser tratado como um identificador opaco. Herdado de [directoryObject](directoryobject.md). <br><br>Retornado por padrão. Não anulável. Somente leitura.|
 | Identidades | Coleção [objectIdentity](objectIdentity.md) | Representa as identidades que podem ser usadas para entrar nesta conta de usuário. Uma identidade pode ser fornecida pela Microsoft (também conhecida como conta local), por organizações ou por provedores de identidade social, como o Facebook, Google e Microsoft, e está vinculada a uma conta de usuário. Pode conter vários itens com o mesmo valor **signInType**. <br><br>Retornado apenas em $select. Oferece suporte a $filter. |
 | imAddresses | String collection | Os endereços do Protocolo de Início de Sessão (SIP) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
 | infoCatalogs | Conjunto de cadeias de caracteres | Identifica os segmentos de informações atribuídos ao usuário. Retornado por padrão. |

@@ -122,6 +122,8 @@ items:
         href: /graph/sdks/batch-requests?context=graph/api/1.0
       - name: Carregar arquivos grandes
         href: /graph/sdks/large-file-upload?context=graph/api/1.0
+      - name: Usar a API beta
+        href: /graph/sdks/use-beta?context=graph/api/1.0
   - name: Usar o kit de ferramentas
     items:
       - name: Visão geral do kit de ferramentas
@@ -167,11 +169,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -302,7 +304,7 @@ items:
                     href: api/usersettings-get.md
                   - name: Atualizar configurações
                     href: api/usersettings-update.md
-          - name: Correio
+          - name: Email
             href: resources/message.md
             items:
               - name: Criar pasta de email
@@ -387,7 +389,7 @@ items:
                 href: api/planneruser-list-tasks.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -1087,7 +1089,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1141,7 +1143,7 @@ items:
       - name: Dispositivos e aplicativos
         displayName: Intune
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/intune-graph-overview.md
           - name: Gerenciamento de aplicativos
             href: resources/intune-app-conceptual.md
@@ -3531,7 +3533,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -3988,7 +3990,7 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-get.md
                       - name: Atualizar
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
-      - name: Correio
+      - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -4246,7 +4248,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -4585,7 +4587,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -4624,7 +4626,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -4672,7 +4674,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -4748,7 +4750,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral

@@ -5,14 +5,14 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7f1c1767f125da2745837addb7852805630f5231
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 0fd6d8aaf8a088c93ff38db50142ed2f21714643
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849314"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312149"
 ---
-# <a name="create-outlooktaskfolder"></a>Criar outlookTaskFolder
+# <a name="create-outlooktaskfolder-deprecated"></a>Criar outlookTaskFolder (preterido)
 
 Namespace: microsoft.graph
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Tasks.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Tasks.ReadWrite    |
+|Delegada (conta pessoal da Microsoft) | Tasks.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 06e117900adca3dd12a31e222a98bda58969621e
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 3a24d5a57a0514f01a30b34a52c28e72399794dc
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849510"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312044"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -1301,3 +1301,11 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | Completed
 | waitingOnOthers
 | adiado
+
+### <a name="connectedorganizationstate-values"></a>valores de connectedOrganizationState
+
+| Membro                | Valor | Descrição                                                                                                                                                                                                        |
+|:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| configurado            | ,0     | Organizações conectadas com esse valor de estado são incluídas em políticas de atribuição com o tipo de escopo solicitante `AllConfiguredConnectedOrganizationSubjects` .                                                          |
+| propostas              | 1      | As organizações conectadas criadas automaticamente pelo sistema têm esse valor de estado. Eles não estão incluídos nas políticas de atribuição com o tipo de escopo solicitante `AllConfiguredConnectedOrganizationSubjects` .   |
+| unknownFutureValue    | 2      | Um membro Sentinel.                                                                                                                                                                                                 |

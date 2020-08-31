@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7d1b0c9aebf5cfbe1dcc502c9865f3d590367c60
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: fd0a76aed1c1ec1d2b1b52af73a790ea842ee87f
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872667"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311904"
 ---
 # <a name="add-directory-role-member"></a>Adicionar membro da função de diretório
 
@@ -24,15 +24,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement. ReadWrite. Directory, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | RoleManagement. ReadWrite. Directory, Directory. AccessAsUser. All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryRoles/{id}/members/$ref
-
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|

@@ -5,14 +5,14 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 112ffab7699a2c8812311ba0c21c2b0e47efff70
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: afd5da7663a9328a87b5df2616b0093a4208caeb
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849784"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312114"
 ---
-# <a name="outlooktaskgroup-resource-type"></a>tipo de recurso outlookTaskGroup
+# <a name="outlooktaskgroup-resource-type-deprecated"></a>tipo de recurso outlookTaskGroup (preterido)
 
 Namespace: microsoft.graph
 
@@ -34,7 +34,7 @@ No Outlook, há um grupo de tarefas padrão `My Tasks` que você não pode renom
 |[Criar outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Criar uma pasta de tarefas do Outlook.|
 |[Listar taskFolders](../api/outlooktaskgroup-list-taskfolders.md) |coleção [outlookTaskFolder](outlooktaskfolder.md)| Obter uma coleção de pastas de tarefas do Outlook.|
 |[Update](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Atualizar as propriedades graváveis de um grupo de tarefas do Outlook. |
-|[Delete](../api/outlooktaskgroup-delete.md) | Nenhuma |Excluir o grupo de tarefas do Outlook especificado. |
+|[Delete](../api/outlooktaskgroup-delete.md) | Nenhum |Excluir o grupo de tarefas do Outlook especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

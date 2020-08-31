@@ -5,20 +5,20 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: 2fb493c35d6d26f3b1a7b4212cbe242da0062ba3
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: c4c514e1b838c8146841b3eb1c42988d9e709f9f
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43178941"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311483"
 ---
-# <a name="get-anonymousipriskevent"></a>Obter anonymousIpRiskEvent
+# <a name="get-anonymousipriskevent-deprecated"></a>Obter anonymousIpRiskEvent (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
+>[!CAUTION]
 >A API **identityRiskEvents** foi preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, consulte [Preterition of the IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Recupere as propriedades e os relacionamentos de um objeto anonymousipriskevent.
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [anonymousIpRiskEvent](../resources/anonymousipriskevent.md) no valor do corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [anonymousIpRiskEvent](../resources/anonymousipriskevent.md) no valor do corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

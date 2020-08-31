@@ -5,14 +5,14 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f950028bef8bcdcdcd8252ca16348c235ef31d3f
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 7e0c5b2b08c2a901f259863f05a4dff0e8e46a00
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849783"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312117"
 ---
-# <a name="outlooktaskfolder-resource-type"></a>tipo de recurso outlookTaskFolder
+# <a name="outlooktaskfolder-resource-type-deprecated"></a>tipo de recurso outlookTaskFolder (preterido)
 
 Namespace: microsoft.graph
 
@@ -34,7 +34,7 @@ No Outlook, o grupo de tarefas padrão, `My Tasks` contém uma pasta de tarefas 
 |[Criar outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| Criar uma tarefa do Outlook na pasta de tarefas especificada.|
 |[Listar tarefas](../api/outlooktaskfolder-list-tasks.md) |coleção [outlookTask](outlooktask.md)| Obter todas as tarefas do Outlook na pasta especificada.|
 |[Update](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Atualizar as propriedades graváveis de uma pasta de tarefas do Outlook. |
-|[Delete](../api/outlooktaskfolder-delete.md) | Nenhuma |Excluir a pasta de tarefas do Outlook especificada.|
+|[Delete](../api/outlooktaskfolder-delete.md) | Nenhum |Excluir a pasta de tarefas do Outlook especificada.|
 |**Propriedades estendidas**| | |
 |[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Crie uma ou mais propriedades estendidas de valor único em uma pasta de tarefas Nova ou existente do Outlook.   |
 |[Obter pasta de tarefas com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Obter pastas de tarefas do Outlook que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter` . |

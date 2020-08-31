@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c66dd25ea1f58fec94dc32ad4e195802583cfe11
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 57b863b7593e54b9594ce748fea58bf24326c6a9
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518718"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311911"
 ---
 # <a name="get-call"></a>Obter chamada
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
-| Aplicativo                            | Nenhum                                  |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                         |
+| Aplicativo                            | Nenhum.                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Call](../resources/call.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Call](../resources/call.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -150,6 +150,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcription": null,
   "toneInfo": null
 }
 ```
@@ -247,6 +248,11 @@ Content-Type: application/json
       }
     },
     "allowConversationWithoutHost": true
+  },
+  "transcription": {
+    "@odata.type": "#microsoft.graph.callTranscriptionInfo",
+    "state": "inactive",
+    "lastModifiedDateTime": "2020-05-28T00:10:54.104318Z"
   },
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
   "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",

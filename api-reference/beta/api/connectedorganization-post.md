@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0bdffc4bfb6a4c87ce3949dd76f4a87d673d707d
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 1d6208b12d547e4634fb9b95b02575c80753afb1
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566527"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311855"
 ---
 # <a name="create-connectedorganization"></a>Criar connectedOrganization
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,10 +54,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [connect
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome da organização conectada. |
+|displayName|String|O nome da organização conectada. |
 |description|String|A descrição da organização conectada.|
 |identitySources|coleção [identityry](../resources/identitysource.md)|Uma coleção com um elemento, a fonte de identidade inicial nesta organização conectada.|
-
+|estado|connectedOrganizationState|O estado de uma organização conectada define se as políticas de atribuição com tipo de escopo solicitante `AllConfiguredConnectedOrganizationSubjects` são aplicáveis ou não. Os valores possíveis são: `configured` e `proposed`.|
 
 ## <a name="response"></a>Resposta
 
@@ -87,7 +87,8 @@ Content-length: 100
       "domainName": "example.com",
       "displayName": "example.com"
       }
-  ]
+  ],
+  "state":"proposed"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -124,7 +125,8 @@ Content-type: application/json
   "createdBy": "admin@contoso.com",
   "createdDateTime": "2020-06-08T20:13:53.7099947Z",
   "modifiedBy": "admin@contoso.com",
-  "modifiedDateTime": "2020-06-08T20:13:53.7099947Z"
+  "modifiedDateTime": "2020-06-08T20:13:53.7099947Z",
+  "state":"proposed"
 }
 ```
 
