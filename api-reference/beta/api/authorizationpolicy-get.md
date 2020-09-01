@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 04a13bba8d434465a65598ec490d96fb8d3c4916
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: 3f0629cf7be5898c91cc9b5f5212fac56db96ffe
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44492195"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319390"
 ---
 # <a name="get-authorizationpolicy"></a>Obter authorizationPolicy
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. Authorization |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. Authorization |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Policy. Read. All, Policy. ReadWrite. Authorization |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -87,5 +87,13 @@ Content-type: application/json
     "enabledPreviewFeatures": [],
     "guestUserRoleId": "10dae51f-b6af-4016-8d66-8c2a99b929b3",
     "blockMsolPowerShell": ""
+    "defaultUserRolePermissions": {
+        "allowedToCreateApps": true,
+        "allowedToCreateSecurityGroups": false,
+        "allowedToReadOtherUsers": true
+    }
+    "allowedToSignUpEmailBasedSubscriptions": false,
+    "allowedToUseSSPR": true,
+    "allowEmailVerifiedUsersToJoinOrganization": true,
 }
 ```

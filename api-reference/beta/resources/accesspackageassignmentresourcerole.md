@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6ef0827736d16f1dbf3aedfb664467011e75e7b2
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 403b97dc335e57dfd2d4f2fe2aa75c4f6fd07682
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383774"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319516"
 ---
 # <a name="accesspackageassignmentresourcerole-resource-type"></a>tipo de recurso accessPackageAssignmentResourceRole
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma função de recurso de atribuição de pacote do Access indica a função específica do recurso que foi atribuída a um assunto por meio de uma atribuição de pacote do Access.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -32,9 +32,9 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma funç
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|String| Somente leitura.|
-|originid|String|Um identificador exclusivo relativo ao sistema de origem. |
-|originSystem|String|O sistema em que a atribuição de função deve ser criada ou criada para uma atribuição de pacote de acesso, como `SharePointOnline` .|
-|status|String|O valor é `Fulfilled` quando a atribuição de pacote de acesso foi entregue ao sistema de origem.|
+|originid|Cadeia de caracteres|Um identificador exclusivo relativo ao sistema de origem, correspondente à propriedade originid do [accessPackageResourceRole](accesspackageresourcerole.md). |
+|originSystem|Cadeia de caracteres|O sistema em que a atribuição de função deve ser criada ou criada para uma atribuição de pacote de acesso, como `SharePointOnline` , `AadGroup` ou `AadApplication` , correspondente à propriedade originSystem do [accessPackageResourceRole](accesspackageresourcerole.md).|
+|status|String|O valor é `PendingFulfillment` quando a atribuição de pacote de acesso ainda não foi entregue ao sistema de origem e `Fulfilled` quando a atribuição de pacote de acesso foi entregue ao sistema de origem.|
 
 ## <a name="relationships"></a>Relações
 

@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 3a24d5a57a0514f01a30b34a52c28e72399794dc
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: b8559d855be3056a5f73de1eaa0f2da571bd61ab
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312044"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319565"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -97,7 +97,7 @@ Namespace: microsoft.graph
 |:--------------
 | file
 | item
-| de referência
+| referência
 
 ### <a name="analyticsactivitytype-values"></a>valores de analyticsActivityType
 
@@ -546,8 +546,8 @@ Namespace: microsoft.graph
 | Automático
 | nopreview
 | verificação
-| description
-| de referência
+| descrição
+| referência
 
 
 ### <a name="status-values"></a>valores de status
@@ -663,7 +663,7 @@ Namespace: microsoft.graph
 | preset8  | 8      |
 | preset9  | 9      |
 | preset10 | 10     |
-| preset11 | 11     |
+| preset11 | 11    |
 | preset12 | 12     |
 | preset13 | 13     |
 | preset14 | 14     |
@@ -774,7 +774,7 @@ Enumeração para tipos de valor do registro, conforme definido pelos [tipos de 
 | Nenhuma              | 8      | REG_NONE tipo de valor do registro.                |
 | QWORD             | 9      | REG_QWORD tipo de valor do registro.               |
 | qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN tipo de valor do registro. |
-| v                | 11     | REG_SZ tipo de valor do registro.                  |
+| v                | 11    | REG_SZ tipo de valor do registro.                  |
 
 ### <a name="alertseverity-values"></a>valores de alertSeverity
 
@@ -1183,7 +1183,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| email   | 1      | Ameaça de email.            |
+| Email   | 1      | Ameaça de email.            |
 | url    | 2      | Ameaça de URL.             |
 | file   | 3      | Ameaça do arquivo de anexo. |
 
@@ -1241,7 +1241,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | firstTimeSender       | 8      | Bloqueado devido ao remetente pela primeira vez.   |
 | autoPurgeToInbox      | 9      | Mensagem de movimentação de viagem para a caixa de entrada.   |
 | autoPurgeToJunk       | 10     | Mensagem de movimentação de viagens para lixo eletrônico.    |
-| autoPurgeToDeleted    | 11     | Mensagem de movimentação de viagens para exclusão. |
+| autoPurgeToDeleted    | 11    | Mensagem de movimentação de viagens para exclusão. |
 | saída              | 12     | Emails de saída.                      |
 | Não é lixo eletrônico               | 13     | Permitir por não ser lixo eletrônico.              |
 | desejado                  | 14     | Bloqueado devido a lixo eletrônico.                |
@@ -1267,6 +1267,17 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | leakedCredentials
 | investigationsThreatIntelligence
 | genérico
+| unknownFutureValue
+
+### <a name="userflowtype-values"></a>valores de userflowtype
+|Membro
+|:----------------------
+| Inscrição
+| signIn
+| signUpOrSignIn
+| passwordReset
+| profileUpdate
+| resourceOwnerPasswordCredentialSignIn
 | unknownFutureValue
 
 ### <a name="openidconnectresponsemode-values"></a>valores de openIdConnectResponseMode

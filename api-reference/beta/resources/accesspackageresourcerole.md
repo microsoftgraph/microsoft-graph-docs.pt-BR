@@ -5,20 +5,20 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b5ab0cc6e2179adb62316cbcdc06b7dd52abc439
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4bc0a60043c9877b4c48a889f93fa48a852c3780
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508510"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319579"
 ---
 # <a name="accesspackageresourcerole-resource-type"></a>tipo de recurso accessPackageResourceRole
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma função de recurso de pacote do Access é uma referência a uma função definida em um recurso, que pode ser usada em um pacote do Access.
+No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma função de recurso de pacote do Access é uma referência a uma função definida em um recurso. Essa referência pode ser usada após a criação de um pacote do Access para especificar as funções de cada um dos recursos do catálogo nos quais um pacote do Access deve fornecer, [criando um escopo de função de recurso de pacote do Access](../api/accesspackage-post-accesspackageresourcerolescopes.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -33,8 +33,8 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma funç
 |description|String|Uma descrição para a função de recurso.|
 |displayName|Cadeia de caracteres|O nome de exibição da função de recurso como a função definida pelo aplicativo.|
 |id|String| Somente leitura.|
-|originid|String|O identificador exclusivo da função de recurso no sistema de origem. |
-|originSystem|String|O tipo do recurso no sistema de origem.|
+|originid|Cadeia de caracteres|O identificador exclusivo da função de recurso no sistema de origem. |
+|originSystem|Cadeia de caracteres|O tipo do recurso no sistema de origem, como `SharePointOnline` , `AadApplication` ou `AadGroup` .|
 
 ## <a name="relationships"></a>Relações
 
