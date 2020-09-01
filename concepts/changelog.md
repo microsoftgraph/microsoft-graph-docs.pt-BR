@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 327d518a3db8409dd1c8fb828752197e685c4123
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: f961ca441ddcde086a4bf3e69a451a8f0c2d1e44
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873087"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312100"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -28,6 +28,12 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionada as propriedades **cancelledOccurrences**, **exceptionOccurrences**, e **occurrenceId** à entidade do [evento](/graph/api/resources/event?view=graph-rest-beta).
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | Beta e v1.0 | Propriedade de **transcrição** adicionada à entidade [chamada](/graph/api/resources/call).|
 
 ### <a name="change-notifications"></a>Alterar notificações
 
@@ -84,6 +90,9 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | As seguintes propriedades foram adicionadas ao [contrato de Termos de Uso](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
 | Adição | beta | Adicionado um novo tipo de recurso ao [contrato de Termos de Uso](/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
 | Adição | beta | Adicionado os patrocinadores internos e externos [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta)ao gerenciamento de direitos.  |
+| Adição | beta | Adicionada a propriedade inheritsPermissionsFrom ao recurso [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta). |
+| Adição | beta | Adicionado o tipo de enumeração **connectedOrganizationState** e a propriedade **estado** ao recurso [ connectedOrganization](/graph/api/resources/connectedOrganization?view=graph-rest-beta).|
+| Alterar   | beta | Renomeou o valor permitido **requestorSettings** de "AllExistingConnectedOrganizationSubjects" para "AllConfiguredConnectedOrganizationSubjects" |
 
 ### <a name="people-and-workplace-intelligence--profile"></a>Inteligência de pessoas e do local de trabalho | Perfil
 
@@ -1409,7 +1418,7 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 | Adição        | beta          | A propriedade **count** foi adicionada a [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta)/.  |
 | Exclusão        | beta          | A propriedade **actionSource** foi removida de [labelingOptions](/graph/api/resources/labelingoptions?view=graph-rest-beta). |
 | Exclusão        | beta          | A entidade **auditInfo** foi removida. |
-| Alteração          | beta          | **protectByDoNotForwardAction** foi alterado para [protectDoNotForwardAction](/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta). |
+| Alterar          | beta          | **protectByDoNotForwardAction** foi alterado para [protectDoNotForwardAction](/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta). |
 | Adição        | beta          | A propriedade **alignment** foi adicionada a [addContentHeaderAction](/graph/api/resources/addcontentheaderaction?view=graph-rest-beta). |
 | Alteração          | beta          | A propriedade **labelId** foi alterada para **label** em [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta). |
 | Alteração          | beta          | A propriedade **classificationIds** foi alterada para **responsibleSensitivityTypeIds** em [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta). |
@@ -3406,7 +3415,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Alteração|beta|Foram removidas as propriedades **requireAppVerify**, **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders** e **requireCompanyPortalAppIntegrity** da entidade [androidForWorkCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta)|
 |Alteração|beta|Foram removidas as propriedades **name**, **modifiedDateTime**, **totalEnrollmentCount** e **qrCode** da entidade [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta)|
 |Alteração|beta|Foram removidas as propriedades **nonEapAuthenticationMethodForEapTtls**, **nonEapAuthenticationMethodForPeap** e **enableOuterIdentityPrivacy** da entidade [androidForWorkEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkenterprisewificonfiguration?view=graph-rest-beta)|
-|Alteração|beta|A propriedade **workProfileBlockAddingAccounts** foi adicionada à entidade [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta)|
+|Alterar|beta|A propriedade **workProfileBlockAddingAccounts** foi adicionada à entidade [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta)|
 |Alteração|beta|Foram removidas as propriedades **blockCrossProfileCopyPaste** e **requireAppVerify** da entidade [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta)|
 |Alteração|beta|A propriedade **deviceOwnerManagementEnabled** foi adicionada à entidade [androidForWorkSettings](/graph/api/resources/intune-androidforwork-androidforworksettings?view=graph-rest-beta)|
 |Alteração|beta|Foi removida a propriedade **requireAppVerify** da entidade [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta)|
@@ -3814,7 +3823,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Alteração      | Beta    | As APIs [getOneDriveUsageAccountDetail](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta), [getOneDriveUsageAccountCounts](/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta), [getOneDriveUsageFileCounts](/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta) e [getOneDriveUsageStorage](/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta) foram adicionadas. Essas substituíram a API OneDriveUsage. |
 | Alteração      | Beta    | As APIs [getSharePointActivityUserDetail](/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta), [getSharePointActivityFileCounts](/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta), [getSharePointActivityUserCounts](/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta) e [getSharePointActivityPages](/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta) foram adicionadas. Essas substituíram a API SharePointActivity. |
 | Alteração      | Beta    | As APIs [getSharePointSiteUsageDetail](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta), [getSharePointSiteUsageFileCounts](/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta), [getSharePointSiteUsageSiteCounts](/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta), [getSharePointSiteUsageStorage](/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta) e [getSharePointSiteUsagePages](/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta) foram adicionadas. Essas substituíram a API SharePointSiteUsage. |
-| Alteração      | Beta    | As APIs [getSkypeForBusinessActivityUserDetail](/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta), [getSkypeForBusinessActivityCounts](/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta) e [getSkypeForBusinessActivityUserCounts](/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta) foram adicionadas. Essas substituíram a API SfbActivity. |
+| Alterar      | Beta    | As APIs [getSkypeForBusinessActivityUserDetail](/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta), [getSkypeForBusinessActivityCounts](/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta) e [getSkypeForBusinessActivityUserCounts](/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta) foram adicionadas. Essas substituíram a API SfbActivity. |
 | Alteração      | Beta    | As APIs [getSkypeForBusinessDeviceUsageUserDetail](/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta), [getSkypeForBusinessDeviceUsageDistributionUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta), e [getSkypeForBusinessDeviceUsageUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta) foram adicionadas. Essas substituíram a API SfbDeviceUsage. |
 | Alteração      | Beta    | As APIs [getSkypeForBusinessOrganizerActivityCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta), [getSkypeForBusinessOrganizerActivityUserCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta) e [getSkypeForBusinessOrganizerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta) foram adicionadas. Essas substituíram a API SfbOrganizerActivity. |
 | Alteração      | Beta    | As APIs [getSkypeForBusinessParticipantActivityCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta), [getSkypeForBusinessParticipantActivityUserCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta) e [getSkypeForBusinessParticipantActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta) foram adicionadas. Essas substituíram a API SfbParticipantActivity. |
