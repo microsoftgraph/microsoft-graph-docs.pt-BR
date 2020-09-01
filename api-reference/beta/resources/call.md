@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b97fc0ce4ca6ead942347357dd99d125dd95f583
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 0f0d4f6f62727e9e4324bacb4d688ac9e1ab791f
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510643"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311364"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -86,7 +86,8 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Somente leitura. O estado da mídia de chamadas. |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Contém os recursos de uma reunião. Somente leitura.                                                                                                       |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) ou [tokenMeetingInfo](tokenmeetinginfo.md)             | As informações da reunião. Informações necessárias para cenários de reunião.                                                                                                              |
-| myParticipantId     | String                                                                                                 | Somente leitura.                                                                                                                                                                        |
+|transcrição     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                         | As informações da transcrição da chamada. Somente leitura.                           |
+myParticipantId     | String                                                                                                   | Somente leitura.                                                                                                                                                                        |
 | requestedModalities | String collection                                                                                      | A lista de modalidades solicitadas. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | As informações de resultado. Por exemplo pode incluir o motivo de término. Somente leitura.                                                                                                        |
 | ringingTimeoutInSeconds | Int32                                                                                              | Tempo limite do toque em segundos para chamadas realizadas de ponto a ponto. O valor máximo para esse atributo é de 115 segundos.                                                                                        |
@@ -105,7 +106,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 | audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) collection | Somente leitura. Anulável.                                                |
 | operations          | [commsOperation](commsoperation.md) collection       | Somente leitura. Anulável.                                                |
-| participantes        | [participant](participant.md) collection             | Somente leitura. Anulável.                                                |
+| participants        | [participant](participant.md) collection             | Somente leitura. Anulável.                                                |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -125,6 +126,7 @@ Veja a seguir uma representação JSON do recurso.
     "mediaState",
     "meetingCapability",
     "meetingInfo",
+    "transcription",
     "myParticipantId",
     "replacesContext",
     "resultInfo",
@@ -156,6 +158,7 @@ Veja a seguir uma representação JSON do recurso.
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
   "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
   "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
+  "transcription": {"@odata.type": "#microsoft.graph.callTranscriptionInfo"},
   "myParticipantId": "String",
   "replacesContext": "String",
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],

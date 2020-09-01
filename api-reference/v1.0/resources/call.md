@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: be58f906ae9de82240fc022e293851da44e24510
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: d1883b5f00e0662035db76964899d735023e4d58
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510461"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311827"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -73,6 +73,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) ou [serviceHostedMediaConfig](servicehostedmediaconfig.md) | A configuração de mídia. Obrigatório.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Somente leitura. O estado da mídia de chamadas. |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) ou [tokenMeetingInfo](tokenmeetinginfo.md)             | As informações de reunião necessárias para ingressar em uma reunião.                                                                                                            |
+transcrição     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                          | As informações da transcrição da chamada. Somente leitura.    |
 | myParticipantId     | String                                                                                                 | Somente leitura.                                                                                                                                                                        |
 | requestedModalities | String collection                                                                                      | A lista de modalidades solicitadas. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | As informações de resultado. Por exemplo pode incluir o motivo de término. Somente leitura.                                                                                                        |
@@ -104,6 +105,7 @@ Veja a seguir uma representação JSON do recurso.
     "incomingContext",
     "mediaState",
     "meetingInfo",
+    "transcription",
     "myParticipantId",
     "replacesContext",
     "resultInfo",
@@ -125,7 +127,8 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
-  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
+  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},  
+  "transcription": {"@odata.type": "#microsoft.graph.callTranscriptionInfo"},
   "myParticipantId": "String",
   "replacesContext": "String",
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],

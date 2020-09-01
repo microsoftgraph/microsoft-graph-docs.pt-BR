@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: b0d9992635e8523ab5fc652a9d58bfe138192afc
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: e44c2345058f66bb6d992e8d3523ab38e84349b7
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849321"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311995"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -475,7 +475,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |_ChannelMessage.Delete_ (visualização privada)|Excluir mensagens de canal do usuário |Permite que um aplicativo exclua mensagens de canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
 |_ChannelMessage.Edit_ (visualização privada)|Editar mensagens de canal do usuário |Permite que um aplicativo edite mensagens de canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
 |_ChannelMessage.Read.All_ |Ler mensagens do canal do usuário  |Permite que um aplicativo leia as mensagens de um canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
-|_ChannelMessage.Send_ |Enviar a mensagem do canal |Permite que um aplicativo envie mensagens de canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
+|_ChannelMessage.Send_ |Enviar a mensagem do canal |Permite que um aplicativo envie mensagens de canal no Microsoft Teams, em nome do usuário conectado. |Não| Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1677,14 +1677,14 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Teams.ReadBasic.All_ | Ler os nomes e as descrições das equipes | Ler os nomes e as descrições das equipes, em nome do usuário conectado. | Não | Não |
+| _Team.ReadBasic.All_ | Ler os nomes e as descrições das equipes | Ler os nomes e as descrições das equipes, em nome do usuário conectado.  | Não | Não |
 | _Teams.Create_ (visualização privada) | Criar equipes | Criar equipes, em nome do usuário conectado. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Teams.ReadBasic.All_ | Obter uma lista de todas as equipes | Obter uma lista de todas as equipes, sem um usuário conectado.  | Sim | Não |
+| _Team.ReadBasic.All_ | Obter uma lista de todas as equipes | Obter uma lista de todas as equipes, sem um usuário conectado.   | Sim | Não |
 | _Teams.Create_ (visualização privada) | Criar equipes | Criar equipes, sem um usuário conectado. | Sim | Não |
 
 ## <a name="team-settings-permissions"></a>Permissões de configurações de equipe
@@ -1693,15 +1693,15 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsSettings.Read.All_ | Ler as configurações das equipes | Ler as configurações dessa equipe, em nome do usuário conectado. | Sim | Não |
-| _TeamsSettings.ReadWrite.All_ | Ler e alterar configurações das equipes | Ler e alterar as configurações de todas as equipes, em nome do usuário conectado.   | Sim | Não |
+| _TeamSettings.Read.All_ | Ler as configurações das equipes | Ler as configurações dessa equipe, em nome do usuário conectado.  | Sim | Não |
+| _TeamSettings.ReadWrite.All_ | Ler e alterar configurações das equipes | Ler e alterar as configurações de todas as equipes, em nome do usuário conectado.    | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsSettings.Read.All_ | Ler as configurações de todas as equipes | Ler as configurações dessa equipe, sem um usuário conectado.    | Sim | Não |
-| _TeamsSettings.ReadWrite.All_ | Ler e alterar as configurações de todas as equipes. | Ler e alterar as configurações de todas as equipes, sem um usuário conectado. | Sim | Não |
+| _TeamSettings.Read.All_ | Ler as configurações de todas as equipes | Ler as configurações dessa equipe, sem um usuário conectado. | Sim | Não |
+| _TeamSettings.ReadWrite.All_ | Ler e alterar as configurações de todas as equipes. | Ler e alterar as configurações de todas as equipes, sem um usuário conectado.  | Sim | Não |
 
 ## <a name="teams-activity-permissions-private-preview"></a>Permissões de atividades do Teams ([visualização privada](#permissions-availability-status))
 
@@ -1800,7 +1800,7 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 
 | Permissão | Exibir Cadeia de Caracteres | Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| Team.ReadBasic.All | Ler os nomes e as descrições das equipes| Ler os nomes e descrições das equipes, em nome do usuário conectado.|Sim| Não |
+| Team.ReadBasic.All | Ler os nomes e as descrições das equipes| Ler os nomes e descrições das equipes, em nome do usuário conectado.|Não| Não |
 | TeamSettings.Read.All | Ler as configurações das equipes| Ler as configurações de todas as equipes, em nome do usuário conectado.|Sim| Não |
 | TeamSettings.ReadWrite.All | Ler e alterar configurações das equipes.| Ler e alterar as configurações de todas as equipes, em nome do usuário conectado.|Sim| Não |
 
