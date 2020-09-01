@@ -505,6 +505,8 @@ items:
             href: sdks/batch-requests.md
           - name: Carregar arquivos grandes
             href: sdks/large-file-upload.md
+          - name: Usar API beta
+            href: sdks/use-beta.md
       - name: Usar o kit de ferramentas
         items:
           - name: Visão geral do kit de ferramentas
