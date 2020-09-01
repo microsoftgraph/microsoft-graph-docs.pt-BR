@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f961ca441ddcde086a4bf3e69a451a8f0c2d1e44
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: b3f9d291d634aef2c33661aea18348be2dfa65f1
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312100"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319439"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -42,6 +42,13 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | v1.0 | O controle de alterações por meio de [consultas delta](/graph/api/event-delta) está disponível para o Microsoft Graph para o Governo dos Estados Unidos. |
 | Exclusão | Beta | Removida a propriedade **includeProperties** da entidade de [subscription](/graph/api/resources/subscription?view=graph-rest-beta). Esta propriedade é substituída pela propriedade **includeResourceData**. |
 | Adição | Beta | Adicionada a capacidade de obter as [notificações de alteração entregues pelo Hub de Eventos](change-notifications-delivery.md). |
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | Beta e v1.0 | Propriedade de **transcrição** adicionada à entidade [chamada](/graph/api/resources/call).|
+| Adição | v1.0 | A API **CancelMediaProcessing** foi adicionada à entidade [chamada](/graph/api/resources/call).|
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 
@@ -85,6 +92,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 |Adição|beta|Adicionou o **iosAppStoreUpdateFailedToInstall**, **vppAppHasUpdateAvailable**, **userRejectedUpdate**, **managedAppNoLongerPresent**, **userRejectedInstall** e **userIsNotLoggedIntoAppStore** ao tipo de enum [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta)|
 
 ### <a name="identity-and-access"></a>Identidade e acesso
+
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | As seguintes propriedades foram adicionadas ao [contrato de Termos de Uso](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
@@ -93,6 +101,14 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionada a propriedade inheritsPermissionsFrom ao recurso [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta). |
 | Adição | beta | Adicionado o tipo de enumeração **connectedOrganizationState** e a propriedade **estado** ao recurso [ connectedOrganization](/graph/api/resources/connectedOrganization?view=graph-rest-beta).|
 | Alterar   | beta | Renomeou o valor permitido **requestorSettings** de "AllExistingConnectedOrganizationSubjects" para "AllConfiguredConnectedOrganizationSubjects" |
+| Adição | beta | As seguintes propriedades foram adicionadas ao tipo de recurso[authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta):<ul><li>**defaultUserRolePermissions**</li><li>**allowedToUseSSPR**</li><li>**allowedToSignUpEmailBasedSubscriptions**</li><li>**allowEmailVerifiedUsersToJoinOrganization**</li></ul>|
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | A entidade [b2cUserFlows](/graph/api/resources/b2cuserflows?view=graph-rest-beta) foi adicionada para gerenciar os fluxos de usuário em um locatário do Azure Active Directory B2C. |
+| Adição | beta | A entidade [b2xUserFlows](/graph/api/resources/b2xuserflows?view=graph-rest-beta) foi adicionada para gerenciar fluxos de usuário de inscrição de autoatendimento em um locatário do Azure Active Directory. |
 
 ### <a name="people-and-workplace-intelligence--profile"></a>Inteligência de pessoas e do local de trabalho | Perfil
 
@@ -2806,7 +2822,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | Adicionada a propriedade isMultipleDataLocationsForServicesEnabled para o recurso [Organização](/graph/api/resources/organization?view=graph-rest-beta) que permite que os aplicativos verifiquem se esse locatário está habilitado para funcionalidades Multi-Geo. Adicionada a propriedade preferredDataLocation aos recursos [usuário](/graph/api/resources/user?view=graph-rest-beta) e [grupo](/graph/api/resources/group?view=graph-rest-beta) que permitem a configurar os locais de dados preferenciais para um usuário e um grupo.|
+| Adição | v1.0 | Adicionada a propriedade ** isMultipleDataLocationsForServicesEnabled** para o recurso [organização](/graph/api/resources/organization?view=graph-rest-beta) que permite que os aplicativos verifiquem se um locatário está habilitado para funcionalidades multi-geo. A propriedade **preferredDataLocation** foi adicionada ao recurso [grupo](/graph/api/resources/group?view=graph-rest-beta), que permite a configuração de um local de dados preferencial para um grupo.|
 | Adição | v1.0 | Adicionada a propriedade [onPremisesProvisioningErrors](/graph/api/resources/onpremisesprovisioningerror?view=graph-rest-1.0) às entidades [Usuário](/graph/api/resources/user?view=graph-rest-1.0) e [Grupo](/graph/api/resources/group?view=graph-rest-1.0) que representa erros de sincronização de diretório ao sincronizar diretórios locais com o Active Directory do Azure ao usar o produto de sincronização da Microsoft (incluindo o Microsoft Azure AD Connect, DirSync e o MIM + Connector).|
 | Adição | v1.0 | Adicionada a propriedade [onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-1.0) à entidade [User](/graph/api/resources/user?view=graph-rest-1.0) que contém quinze propriedades de atributo de extensão personalizadas. Para um usuário onPremisesSyncEnabled, esse conjunto de propriedades é masterizado no Active Directory local e sincronizado com o Azure Active Directory e é somente leitura. Para um usuário somente na nuvem (onde onPremisesSyncEnabled é falso), essas propriedades podem ser definidas durante a criação ou atualização.|
 |Adição|v1.0|Foram adicionadas as propriedades **onPremisesDomainName**, **onPremisesSamAccountName** e **onPremisesUserPrincipalName** à entidade [User](/graph/api/resources/user?view=graph-rest-1.0)|
@@ -4067,7 +4083,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Alteração      | Beta    | A propriedade **configurationManagerClientEnabledFeatures** foi adicionada à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
 | Alteração      | Beta    | Foi removida a propriedade **intuneBrand** da entidade [organization](/graph/api/resources/intune-onboarding-organization?view=graph-rest-beta) |
 | Alteração      | Beta    | Foram adicionadas as propriedades **smartScreenEnableInShell**, **smartScreenBlockOverrideForFiles**, **applicationGuardEnabled**, **applicationGuardBlockFileTransfer**, **applicationGuardBlockNonEnterpriseContent**, **applicationGuardAllowPersistence** e **applicationGuardForceAuditing** à entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) |
-| Alteração      | Beta    | Foram adicionadas as propriedades **searchBlockDiacritics**, **searchDisableAutoLanguageDetection**, **searchDisableIndexingEncryptedItems**, **searchEnableRemoteQueries**, **searchDisableUseLocation**, **searchDisableIndexerBackoff**, **searchDisableIndexingRemovableDrive**, **searchEnableAutomaticIndexSizeManangement**, **smartScreenEnableAppInstallControl** e **privacyAdvertisingId** à entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) |
+| Alterar      | Beta    | Foram adicionadas as propriedades **searchBlockDiacritics**, **searchDisableAutoLanguageDetection**, **searchDisableIndexingEncryptedItems**, **searchEnableRemoteQueries**, **searchDisableUseLocation**, **searchDisableIndexerBackoff**, **searchDisableIndexingRemovableDrive**, **searchEnableAutomaticIndexSizeManangement**, **smartScreenEnableAppInstallControl** e **privacyAdvertisingId** à entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) |
 | Alteração      | Beta    | Foi removida a propriedade **settingsDeviceName** da entidade [windows10TeamGeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10teamgeneralconfiguration?view=graph-rest-beta) |
 | Alteração      | Beta    | Foi removida a propriedade **restartMode** da entidade [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) |
 | Alteração      | Beta    | Foram adicionadas as propriedades de navegação **detectedApps** e **managedDevices** à entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) |
@@ -4876,7 +4892,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Alteração          | Beta        | Os prefixos de parâmetros de consulta sem $ são suportados a partir de 26/09/16. O prefixo $ nos parâmetros de consulta é opcional. |
+| Alterar          | Beta        | Os prefixos de parâmetros de consulta sem $ são suportados a partir de 26/09/16. O prefixo $ nos parâmetros de consulta é opcional. |
 
 ### <a name="sites-and-lists"></a>Sites e listas
 
