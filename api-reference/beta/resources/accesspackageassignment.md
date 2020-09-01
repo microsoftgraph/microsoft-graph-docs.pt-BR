@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2b52b9dbd7b2b76df34ab6c55a46b69718d4a0e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f7a2fe772dc7b3be328fad452a5b193ccf7a7ed0
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508559"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319453"
 ---
 # <a name="accesspackageassignment-resource-type"></a>tipo de recurso accessPackageAssignment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,15 +32,15 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma atrib
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|accessPackageId|String|O identificador do pacote de acesso. Somente leitura.|
-|assignmentPolicyId|String|O identificador da política de atribuição de pacote do Access. Somente leitura.|
-|assignmentstate|String|O estado do pacote do Access. Os valores possíveis `Delivered` são `Expired`ou. Somente leitura.|
+|accessPackageId|Cadeia de caracteres|O identificador do pacote de acesso. Somente leitura.|
+|assignmentPolicyId|Cadeia de caracteres|O identificador da política de atribuição de pacote do Access. Somente leitura.|
+|assignmentstate|Cadeia de caracteres|O estado do pacote do Access. Os valores possíveis são `Delivered` ou `Expired` . Somente leitura.|
 |assignmentStatus|String|Somente leitura.|
-|catalogID|String|O identificador do catálogo que contém o pacote do Access. Somente leitura.|
+|catalogID|Cadeia de caracteres|O identificador do catálogo que contém o pacote do Access. Somente leitura.|
 |expiredDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
-|Extended|Boolean|Indica se a atribuição de pacote de acesso é estendida. Somente leitura.|
-|targetId|String| A ID do assunto com a atribuição. Somente leitura.|
+|Extended|Booliano|Indica se a atribuição de pacote de acesso é estendida. Somente leitura.|
+|targetId|Cadeia de caracteres| A ID do assunto com a atribuição. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 
@@ -48,7 +48,7 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma atrib
 |:-------------|:------------|:------------|
 |accessPackage|[accessPackage](accesspackage.md)| Somente leitura. Anulável.|
 |accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Somente leitura. Anulável.|
-|accessPackageAssignmentResourceRoles|coleção [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)| Somente leitura. Anulável.|
+|accessPackageAssignmentResourceRoles|coleção [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)| As funções de recurso entregues ao usuário de destino para esta atribuição. Somente leitura. Anulável.|
 |destino|[accessPackageSubject](accesspackagesubject.md)| O assunto da atribuição de pacote do Access. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON

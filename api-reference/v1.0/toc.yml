@@ -122,7 +122,7 @@ items:
         href: /graph/sdks/batch-requests?context=graph/api/1.0
       - name: Carregar arquivos grandes
         href: /graph/sdks/large-file-upload?context=graph/api/1.0
-      - name: Usar a API beta
+      - name: Usar API beta
         href: /graph/sdks/use-beta?context=graph/api/1.0
   - name: Usar o kit de ferramentas
     items:
@@ -169,11 +169,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -389,7 +389,7 @@ items:
                 href: api/planneruser-list-tasks.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -586,18 +586,21 @@ items:
               - name: Listar filhos
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
-            href: resources/extended-properties-overview.md
             items:
-              - name: Propriedade estendida de valor único
-                href: resources/singlevaluelegacyextendedproperty.md
+              - name: Visão geral
+                href: resources/extended-properties-overview.md
+              - name: Propriedades estendidas de valor único
                 items:
+                  - name: Propriedade estendida de valor único
+                    href: resources/singlevaluelegacyextendedproperty.md
                   - name: Criar uma propriedade de valor único
                     href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
                   - name: Obter uma propriedade de valor único
                     href: api/singlevaluelegacyextendedproperty-get.md
-              - name: Propriedade estendida de vários valores
-                href: resources/multivaluelegacyextendedproperty.md
+              - name: Propriedades estendidas de vários valores
                 items:
+                  - name: Propriedade estendida de vários valores
+                    href: resources/multivaluelegacyextendedproperty.md
                   - name: Criar uma propriedade de vários valores
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Obter uma propriedade de vários valores
@@ -972,8 +975,9 @@ items:
               - name: Excluir
                 href: api/calendarpermission-delete.md
           - name: Categorias
-            href: resources/outlookcategory.md
             items:
+              - name: Categoria
+                href: resources/outlookcategory.md
               - name: Listar categorias
                 href: api/outlookuser-list-mastercategories.md
               - name: Criar categoria
@@ -985,36 +989,39 @@ items:
               - name: Excluir categoria
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
-            href: resources/extended-properties-overview.md
             items:
-              - name: Propriedade estendida de valor único
-                href: resources/singlevaluelegacyextendedproperty.md
+              - name: Visão geral
+                href: resources/extended-properties-overview.md
+              - name: Propriedades estendidas de valor único
                 items:
+                  - name: Propriedade estendida de valor único
+                    href: resources/singlevaluelegacyextendedproperty.md
                   - name: Criar uma propriedade de valor único
                     href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
                   - name: Obter uma propriedade de valor único
                     href: api/singlevaluelegacyextendedproperty-get.md
-              - name: Propriedade estendida de vários valores
-                href: resources/multivaluelegacyextendedproperty.md
+              - name: Propriedades estendidas de vários valores
                 items:
+                  - name: Propriedade estendida de vários valores
+                    href: resources/multivaluelegacyextendedproperty.md
                   - name: Criar uma propriedade de vários valores
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Obter uma propriedade de vários valores
                     href: api/multivaluelegacyextendedproperty-get.md
+          - name: Ocorrido
+            items:
               - name: Ocorrido
-                items:
-                  - name: Ocorrido
-                    href: resources/place.md
-                  - name: Tipo de sala
-                    href: resources/room.md
-                  - name: Tipo de lista de salas
-                    href: resources/roomlist.md
-                  - name: Locais de lista
-                    href: api/place-list.md
-                  - name: Obter local
-                    href: api/place-get.md
-                  - name: Local de atualização
-                    href: api/place-update.md
+                href: resources/place.md
+              - name: Tipo de sala
+                href: resources/room.md
+              - name: Tipo de lista de salas
+                href: resources/roomlist.md
+              - name: Locais de lista
+                href: api/place-list.md
+              - name: Obter local
+                href: api/place-get.md
+              - name: Local de atualização
+                href: api/place-update.md
       - name: Notificações de alteração
         displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
         items:
@@ -1064,6 +1071,8 @@ items:
                     href: api/call-playprompt.md
                   - name: Resposta de registro
                     href: api/call-record.md
+                  - name: Cancelar processamento de mídia
+                    href: api/call-cancelmediaprocessing.md
                   - name: Assinar ao sinal
                     href: api/call-subscribetotone.md
               - name: Participante
@@ -1089,7 +1098,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1143,7 +1152,7 @@ items:
       - name: Dispositivos e aplicativos
         displayName: Intune
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/intune-graph-overview.md
           - name: Gerenciamento de aplicativos
             href: resources/intune-app-conceptual.md
@@ -3533,7 +3542,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -4056,8 +4065,9 @@ items:
               - name: Excluir anexo
                 href: api/attachment-delete.md
           - name: Categorias
-            href: resources/outlookcategory.md
             items:
+              - name: Categoria
+                href: resources/outlookcategory.md
               - name: Listar categorias
                 href: api/outlookuser-list-mastercategories.md
               - name: Criar categoria
@@ -4139,18 +4149,21 @@ items:
               - name: Excluir regra
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
-            href: resources/extended-properties-overview.md
             items:
-              - name: Propriedade estendida de valor único
-                href: resources/singlevaluelegacyextendedproperty.md
+              - name: Visão geral
+                href: resources/extended-properties-overview.md
+              - name: Propriedades estendidas de valor único
                 items:
+                  - name: Propriedade estendida de valor único
+                    href: resources/singlevaluelegacyextendedproperty.md
                   - name: Criar uma propriedade de valor único
                     href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
                   - name: Obter uma propriedade de valor único
                     href: api/singlevaluelegacyextendedproperty-get.md
-              - name: Propriedade estendida de vários valores
-                href: resources/multivaluelegacyextendedproperty.md
+              - name: Propriedades estendidas de vários valores
                 items:
+                  - name: Propriedade estendida de vários valores
+                    href: resources/multivaluelegacyextendedproperty.md
                   - name: Criar uma propriedade de vários valores
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Obter uma propriedade de vários valores
@@ -4248,7 +4261,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -4323,8 +4336,9 @@ items:
               - name: Obter intervalo de contato
                 href: api/contact-delta.md
           - name: Categorias
-            href: resources/outlookcategory.md
             items:
+              - name: Categoria
+                href: resources/outlookcategory.md
               - name: Listar categorias
                 href: api/outlookuser-list-mastercategories.md
               - name: Criar categoria
@@ -4336,18 +4350,21 @@ items:
               - name: Excluir categoria
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
-            href: resources/extended-properties-overview.md
             items:
-              - name: Propriedade estendida de valor único
-                href: resources/singlevaluelegacyextendedproperty.md
+              - name: Visão geral
+                href: resources/extended-properties-overview.md
+              - name: Propriedades estendidas de valor único
                 items:
+                  - name: Propriedade estendida de valor único
+                    href: resources/singlevaluelegacyextendedproperty.md
                   - name: Criar uma propriedade de valor único
                     href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
                   - name: Obter uma propriedade de valor único
                     href: api/singlevaluelegacyextendedproperty-get.md
-              - name: Propriedade estendida de vários valores
-                href: resources/multivaluelegacyextendedproperty.md
+              - name: Propriedades estendidas de vários valores
                 items:
+                  - name: Propriedade estendida de vários valores
+                    href: resources/multivaluelegacyextendedproperty.md
                   - name: Criar uma propriedade de vários valores
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Obter uma propriedade de vários valores
@@ -4587,7 +4604,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -4626,7 +4643,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -4672,9 +4689,9 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Criar plano

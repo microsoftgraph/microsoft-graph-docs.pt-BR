@@ -1,32 +1,34 @@
 ---
 title: 'Call: cancelMediaProcessing'
-description: Cancela o processamento de mídia para qualquer operação PlayPrompt ou RecordResponse em andamento.
+description: Cancela o processamento de mídia para qualquer operação playPrompt ou recordResponse em andamento.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0f9ec0eaede3383d6e99a05e4aa4023dd914d9b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3556d8b0445d51a79979434f70dc1417f021ba2d
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440882"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319411"
 ---
 # <a name="call-cancelmediaprocessing"></a>Call: cancelMediaProcessing
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancela o processamento de todas as operações de [resposta de gravação](./call-record.md) ou [aviso de execução](./call-playprompt.md) em andamento.
+Cancela o processamento de todas as operações de mídia em andamento.
+
+Operações de mídia consulte as operações IVR [playPrompt](./call-playprompt.md) e [recordResponse](./call-record.md), que são, por padrão, enfileiradas para processar na ordem. O método **cancelMediaProcessing** cancela qualquer operação em processo, bem como operações que são enfileiradas. Por exemplo, essa API pode ser usada para limpar a fila de operação IVR para uma nova operação de mídia. No entanto, ele não cancelará uma operação do **ubscribeToTone** , pois ele funciona independentemente de qualquer fila de operação.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                              |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Nenhum.                                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,10 +50,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    | Descrição                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| clientContext  | String  | O contexto do cliente.                                            |
+| clientContext  | Cadeia de caracteres  | O contexto do cliente.                                            |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta http e um cabeçalho de local com um URI para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
+Se tiver êxito, este método retornará um `200 OK` código de resposta http e um cabeçalho de local com um URI para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -142,7 +144,7 @@ Content-Type: application/json
           "@odata.type": "#microsoft.graph.resultInfo",
           "code": 400,
           "subcode": 8508,
-          "message": "Action falied, the operation was cancelled."
+          "message": "Action failed, the operation was cancelled."
         },
         "recordingLocation": "",
         "recordingAccessToken": "",
