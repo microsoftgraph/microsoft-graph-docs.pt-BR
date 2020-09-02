@@ -2,12 +2,12 @@
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas.
 author: arpitha-dhanapathi
-ms.openlocfilehash: 7693df9b66905c70ad0a75e88b5c9f605fe96857
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: cc302e4bc56e207b117667dc907b3bb928aaa164
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589260"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47329331"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -45,7 +45,7 @@ Para saber mais sobre os tokens de acesso do Azure AD e o Microsoft Graph, consu
 
 A tabela a seguir mostra os pontos de extremidade da raiz do serviço para o Microsoft Graph e o [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer) para cada nuvem nacional.
 
-| National Cloud | Microsoft Graph | Explorador do Graph |
+| National Cloud | Microsoft Graph | Graph Explorer |
 |---------------------------|----------------|----------------|
 | Serviço global do Microsoft Graph | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 | Microsoft Graph para o governo dos EUA | https://graph.microsoft.us | Sem suporte. |
@@ -79,7 +79,7 @@ Os seguintes recursos do Microsoft Graph geralmente estão disponíveis no `/v1.
 | Calendário do Outlook | ✔ | ✔ | ✔ |
 | Contatos pessoais | ✔ | ✔ | ✔ |
 | Segurança | ✔ | ✔ | ✔ |
-| SharePoint| ✔ | ✔ | ✔ |
+| Microsoft Office SharePoint Online| ✔ | ✔ | ✔ |
 | Teams | ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Relatórios  |➖| ✔ |➖|

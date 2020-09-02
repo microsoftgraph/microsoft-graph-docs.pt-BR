@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4e001b0835e0ca902939d71b6425434cc4ee0446
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 46a4c70329e021c89bf9107b877fcf9fae88b3ca
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319650"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47329964"
 ---
 # <a name="create-b2cuserflow"></a>Criar b2cUserFlow
 
@@ -56,10 +56,10 @@ No corpo da solicitação, forneça uma representação JSON de um [b2cUserFlow]
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|id|String|Obrigatório. O nome do fluxo do usuário. O nome será pré-instalado com `B2C_1` após a criação.|
-|userflowtype|Cadeia de caracteres|Obrigatório. O tipo de fluxo de usuário que você está criando. Os valores com suporte para **Userflowtype** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
-|userFlowTypeVersion|Flutuação|Obrigatório. A versão do fluxo do usuário.|
-|identityProviders|coleção [identityprovider](../resources/identityprovider.md)|Opcional. Os provedores de identidade que você deseja incluir no fluxo do usuário.|
+|id|String|Obrigatório. O nome do fluxo de usuário. O nome será pré-instalado com `B2C_1` após a criação.|
+|userFlowType|Cadeia de caracteres|Obrigatório. O tipo de fluxo de usuário que você está criando. Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|userFlowTypeVersion|Flutuação|Obrigatório. A versão do fluxo de usuário.|
+|identityProviders|coleção [identityProvider](../resources/identityprovider.md)|Opcional. Os provedores de identidade que você deseja incluir no fluxo do usuário.|
 
 ## <a name="response"></a>Resposta
 
@@ -73,6 +73,8 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta e 
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_b2cuserflow_from_b2cuserflows"
@@ -90,6 +92,20 @@ Content-length: 154
     "userFlowTypeVersion": 3
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-b2cuserflow-from-b2cuserflows-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-b2cuserflow-from-b2cuserflows-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-b2cuserflow-from-b2cuserflows-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -121,6 +137,8 @@ Content-type: application/json
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_b2cuserflow_from_b2cuserflows_identityProvider"
@@ -145,6 +163,20 @@ Content-length: 154
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-b2cuserflow-from-b2cuserflows-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-b2cuserflow-from-b2cuserflows-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-b2cuserflow-from-b2cuserflows-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

@@ -5,15 +5,15 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 02f61201db78e2c4e2d8a7dbef4bc0776071f1f0
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 260e638b478e7383d08a57a98925c06117de4001
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539139"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330421"
 ---
 # <a name="get-set"></a>Obter conjunto
-Namespace: Microsoft. Graph. termos[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: Microsoft. Graph. termos [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Leia as propriedades e os relacionamentos de um objeto [set](../resources/termstore-set.md) .
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) |Termos. Read. All, termos. ReadWrite. All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 
@@ -56,6 +56,8 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_set"
@@ -64,6 +66,20 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 ``` http
 GET https://graph.microsoft.com/beta/termStore/sets/{setId}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-set-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-set-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-set-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4568b44ac0da8727a9f6155127ab3de88c8b7029
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 52ce3945a02a0b8780a81316e17109c6a2338f85
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107847"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330383"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -31,20 +31,33 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite    |
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-## <a name="http-request"></a>Solicitação HTTP
+Chamar o ponto de extremidade `/me` exige um usuário conectado e, portanto, uma permissão delegada. Não há suporte para permissões do aplicativo ao usar o ponto de extremidade `/me`.
+
+Para um usuário específico:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
+
+Para o usuário conectado:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me
+```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Cabeçalho       | Valor|
 |:-----------|:------|
 | Autorização  | {token} de portador. Obrigatório.|
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
