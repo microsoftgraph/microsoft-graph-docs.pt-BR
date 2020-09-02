@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3ae838f408b6c0452a10379080895e5fdc64b6b1
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: b15da734583200891cc451b332cccd24a6ef47f8
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091526"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319523"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Visão geral da API de impressão em nuvem da Impressão Universal
 
@@ -84,12 +84,17 @@ Siga estes passos para habilitar a impressão segura:
 
 7. Quando o usuário seleciona um ou mais trabalhos para imprimir, seu aplicativo pode [redirecionar o(s) trabalho(s) de impressão](/graph/api/printjob-redirect?view=graph-rest-beta) para a impressora física e o trabalho começará a imprimir! A chamada de redirecionamento só terá sucesso se houver uma [Tarefa de impressão](/graph/api/resources/printtask?view=graph-rest-beta) em `processing` estado na impressora associada iniciada por um acionador que este aplicativo criou no passo 4. A tarefa será automaticamente definida para o `completed` estado após o redirecionamento.
 
+   >**OBSERVAÇÃO:** Trabalhos de impressão pausados que não são redirecionados em até 2 dias serão excluídos.
+
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API para esse serviço?
 
 - [API de Impressão Universal no Microsoft Graph beta](/graph/api/resources/print?view=graph-rest-beta)
 
+## <a name="provide-feedback"></a>Faça comentários
+
+Gostaríamos de ouvir seus comentários sobre as APIs de Impressão Universal. Forneça suas sugestões sobre o[UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
+
 ## <a name="see-also"></a>Confira também
 
 - [O que é a impressão universal?](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis)
-- Gostaríamos de ouvir seus comentários sobre as APIs de Impressão Universal em [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)!

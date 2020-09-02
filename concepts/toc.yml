@@ -195,7 +195,11 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Métodos de autenticação
             href: authenticationmethods-get-started.md
-      - name: Correio
+          - name: Governança
+            items:
+              - name: Criar um pacote de acesso
+                href: tutorial-access-package-api.md
+      - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
