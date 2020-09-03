@@ -1,32 +1,32 @@
 ---
-title: Geração de tokens de prova de posse para chaves de rolagem
-description: Como parte da validação de solicitação para os métodos addKey e removeKey, um token de prova de posse é necessário. Este documento fornece orientações para gerar o token de prova de posse.
+title: Gerando um token de comprovação de posse para sobrepor chaves
+description: Como parte da validação da solicitação para os métodos addKey e removeKey, é necessário um token de comprovação de posse. Este documento fornece orientação para gerar o token de comprovação de posse.
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 516673b3f5ef318f1c2cc42778d8bec99471c630
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: b0e0384ab440bb08eb3b708c4ad057da42986c5c
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289648"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330089"
 ---
-# <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>Geração de tokens de prova de posse para chaves de rolagem
+# <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>Gerando um token de comprovação de posse para sobrepor chaves
 
-Você pode usar os métodos **addKey** e **RemoveKey** definidos no [aplicativo](/graph/resources/application?view=graph-rest-v1.0) e recursos do [servicePrincipalName](/graph/resources/serviceprincipal?view=graph-rest-v1.0) para acumular chaves de expiração programaticamente.
+Você pode usar os métodos **addKey** e **removeKey** definidos no [aplicativo](/graph/api/resources/application?view=graph-rest-1.0) e recursos [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) para acumular as chaves expiradas por programação.
 
-Como parte da solicitação de validação para esses métodos, uma prova de posse de uma chave existente é verificada para que os métodos possam ser chamados. A prova é representada por um token JWT auto-assinado. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do aplicativo. O tempo de vida do token não deve exceder 10 minutos.
+Como parte da solicitação de validação para esses métodos, uma comprovação de posse de uma chave existente é verificada antes que os métodos possam ser invocados. As comprovações são representadas por um token JWT autoassinado. Esse token de JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do aplicativo. O tempo de vida do token não deve exceder 10 minutos.
 
-> **Observação:** Os aplicativos que não têm certificados válidos existentes (nenhum certificado foi adicionado ainda, ou todos os certificados expiraram) não poderão usar essa ação de serviço. Você pode usar a operação [Atualizar aplicativo](/graph/api/application-update?view=graph-rest-v1.0) para executar uma atualização.
+> **Observação:** Aplicativos que não têm certificados válidos existentes (nenhum certificado foi adicionado ainda, ou todos os certificados expiraram), não poderão usar essa ação de serviço. Você pode usar a operação [Atualizar aplicativo](/graph/api/application-update?view=graph-rest-v1.0) para executar uma atualização.
 
-O token deve conter as seguintes declarações:
+O token deve conter os seguintes argumentos:
 
-- `aud`-A audiência precisa ser `00000002-0000-0000-c000-000000000000` .
-- `iss`– O emissor precisa ser a __ID__ do aplicativo que está fazendo a chamada.
-- `nbf`-Não antes da hora.
-- `exp`– O tempo de expiração deve ser "NBF" + 10 minutos.
+- `aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.
+- `iss` - O emissor deve ser o __ID__ do aplicativo que está fazendo a chamada.
+- `nbf` – Não antes da hora.
+- `exp` – O tempo de expiração deve ser "nbf" + 10 min.
 
-Você pode usar o exemplo de código a seguir para gerar esse token de prova de posse.
+Você pode usar o seguinte exemplo de código para gerar esse token de comprovação de posse.
 
 ```csharp
 using System;
