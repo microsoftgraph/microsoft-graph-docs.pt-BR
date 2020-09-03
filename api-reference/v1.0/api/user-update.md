@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4136e62886c91092c62349f0587d60c53f4d2c83
-ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
-ms.translationtype: MT
+ms.openlocfilehash: 9331482f3665da170e2f98055627083bbf3a1132
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44413501"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330054"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -63,6 +63,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |hireDate|DateTimeOffset|A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele.|
 |jobTitle|String|O cargo do usuário.|
+|email|String|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". As alterações feitas nessa propriedade também atualizarão a coleção **proxyAddresses** do usuário para incluir o valor como um endereço SMTP. <br><br>Oferece suporte a $filter.|
 |mailNickname|String|O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado.|
 |mobilePhone|String|O número de celular principal do usuário.|
 |mySite|String|A URL do site pessoal do usuário.|
@@ -85,7 +86,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |userType|String|Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”.          |
 
 > [!NOTE] 
-> As propriedades a seguir não podem ser atualizadas usando um contexto somente aplicativo: **aboutMe**, **aniversário**, **HireDate**, **interesses**, **meusite**, **pastProjects**, **PreferredName**, **responsabilidades**, **escolas**e **habilidades**.
+> As propriedades a seguir não podem ser atualizadas usando um contexto somente de aplicativo: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** e **skills**.
 
 ## <a name="response"></a>Resposta
 

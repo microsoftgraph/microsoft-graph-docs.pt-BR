@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 39c4f278fe356ac70e8dfd4b816ee603f27b1dee
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 026932f3f3aa3cb9912c288cbe91007905e2f51e
+ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969323"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47340020"
 ---
 # <a name="overview-of-users-in-microsoft-graph"></a>Visão geral de usuários do Microsoft Graph
 
@@ -37,7 +37,7 @@ Crie novos usuários em sua organização ou atualize os recursos e relações d
 
 Você pode exibir, consultar e atualizar grupos de calendários e calendários de usuários associados a um usuário, incluindo:
 
-- Listar e criar eventos em um calendário de usuários.
+- Listar e criar eventos no calendário de um usuário.
 - Exibir tarefas atribuídas a um usuário.
 - Encontrar horários livres para reuniões para um conjunto de usuários.
 - Obter uma lista de lembretes definidos no calendário de um usuário.

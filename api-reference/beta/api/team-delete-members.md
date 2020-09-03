@@ -5,14 +5,14 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0e81527c98ea20161db62516827d82c48c2706d2
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 45d0561f6ef74240427274541fedac1deba3427e
+ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197027"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47340002"
 ---
-# <a name="delete-members"></a>Excluir membros
+# <a name="remove-members-from-team"></a>Remover membros da equipe
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

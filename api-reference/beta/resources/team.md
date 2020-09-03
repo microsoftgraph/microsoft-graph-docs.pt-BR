@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e9f7340b08b65bb1e86bf5ce2a5be5f525662e41
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: b548c59a72af84a1a30d30cf0edb6fdf39df26d5
+ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757265"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47340044"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -41,7 +41,6 @@ Cada equipe está associada a um [grupo](../resources/group.md). O grupo tem a m
 |[Listar suas equipes](../api/user-list-joinedteams.md) | Coleção [team](team.md) | Liste as equipes das quais você é membro. |
 |[Listar todas as equipes](/graph/teams-list-all-teams) | Coleção [group](group.md) | Liste todos os grupos que têm equipes. |
 |[Obter foto da equipe](../api/team-get-photo.md) | Dados Binários | Obter a foto (imagem) de uma equipe. |
-|[Atualizar foto da equipe](../api/team-update-photo.md) | Nenhum | Atualizar a foto (imagem) de uma equipe. |
 
 ## <a name="properties"></a>Propriedades
 
