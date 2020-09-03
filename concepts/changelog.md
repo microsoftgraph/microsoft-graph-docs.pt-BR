@@ -3,18 +3,26 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: b3f9d291d634aef2c33661aea18348be2dfa65f1
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: dc72761a6dbd54572527b4d67fef0febb4103785
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319439"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330041"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
 Este log de alterações inclui alterações específicas no nível da API no Microsoft Graph v 1.0 e beta.
 
 Para obter um resumo do valor dessas alterações de API, além das ferramentas, componentes, diretrizes e tutoriais recentes, confira [Novidades do Microsoft Graph](whats-new-overview.md).
+
+## <a name="september"></a>Setembro
+
+### <a name="users"></a>Usuários
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Alteração | Beta e v1.0 | Atualizou a propriedade do email na entidade [usuário](/graph/api/resources/user) para ser gravável. |
 
 ## <a name="august-2020"></a>Agosto de 2020
 
@@ -383,7 +391,7 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 |Adição|beta|Os membros **aes192** e **aes192Gcm** foram adicionados ao tipo enum [vpnEncryptionAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnencryptionalgorithmtype?view=graph-rest-beta)|
 |Adição|beta|Adicionado o membro **md5** ao tipo enum [vpnIntegrityAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnintegrityalgorithmtype?view=graph-rest-beta)|
 |Adição|beta|O membro **duplicateLocationId** foi adicionadao ao tipo enum [vppTokenState](/graph/api/resources/intune-onboarding-vpptokenstate?view=graph-rest-beta)|
-|Adição|beta|Foram adicionadas novas entidades:<br/>[complianceManagementPartner](/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-1.0)<br/>|
+|Adição|beta|Adicionadas novas entidades:<br/>[complianceManagementPartner](/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-1.0)<br/>|
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[complianceManagementPartnerAssignment](/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-1.0)<br/>|
 |Adição|beta|A propriedade de navegação **complianceManagementPartners** à entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-1.0)|
 
@@ -782,7 +790,7 @@ Novas APIs e recursos adicionados à assinatura e à recuperação de registros 
 |Adição|beta|Adicionadas as propriedades **fileVaultHidePersonalRecoveryKey**, **advancedThreatProtectionRealTime**, **advancedThreatProtectionCloudDelivered**, **advancedThreatProtectionAutomaticSampleSubmission**, **advancedThreatProtectionDiagnosticDataCollection**, **advancedThreatProtectionExcludedFolders**, **advancedThreatProtectionExcludedFiles**, **advancedThreatProtectionExcludedExtensions** e **advancedThreatProtectionExcludedProcesses** à entidade [macOSEndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-macosendpointprotectionconfiguration?view=graph-rest-beta)|
 |Adição|beta|Adicionada a propriedade **directorySizeQuota** à entidade [organization](/graph/api/resources/intune-onboarding-organization?view=graph-rest-beta)|
 |Adição|beta|Adicionadas as propriedades **defenderAllowScanArchiveFiles**, **defenderAllowBehaviorMonitoring**, **defenderAllowCloudProtection**, **defenderAllowScanRemovableDrivesDuringFullScan**, **defenderAllowScanDownloads**, **defenderAllowIntrusionPreventionSystem**, **defenderAllowOnAccessProtection**, **defenderAllowRealTimeMonitoring**, **defenderAllowScanNetworkFiles**, **defenderAllowScanScriptsLoadedInInternetExplorer**, **defenderAllowEndUserAccess** e **defenderSignatureUpdateIntervalInHours** à entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta)|
-|Alteração|beta|Foram alteradas as seguintes propriedades na entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta):<br/>**defenderBlockEndUserAccess** de obrigatória para opcional<br/>**defenderCheckForSignaturesBeforeRunningScan** de obrigatória para opcional<br/>**defenderCloudBlockLevel** de obrigatória para opcional<br/>**defenderDisableBehaviorMonitoring** de obrigatória para opcional<br/>**defenderDisableCatchupFullScan** de obrigatória para opcional<br/>**defenderDisableCatchupQuickScan** de obrigatória para opcional<br/>**defenderDisableCloudProtection** de obrigatória para opcional<br/>**defenderDisableIntrusionPreventionSystem** de obrigatória para opcional<br/>**defenderDisableOnAccessProtection** de obrigatória para opcional<br/>**defenderDisableRealTimeMonitoring** de obrigatória para opcional<br/>**defenderDisableScanArchiveFiles** de obrigatória para opcional<br/>**defenderDisableScanDownloads** de obrigatória para opcional<br/>**defenderDisableScanNetworkFiles** de obrigatória para opcional<br/>**defenderDisableScanRemovableDrivesDuringFullScan** de obrigatória para opcional<br/>**defenderDisableScanScriptsLoadedInInternetExplorer** de obrigatória para opcional<br/>**defenderEnableLowCpuPriority** de obrigatória para opcional<br/>**defenderEnableScanIncomingMail** de obrigatória para opcional<br/>**defenderEnableScanMappedNetworkDrivesDuringFullScan** de obrigatória para opcional<br/>**defenderPotentiallyUnwantedAppAction** de obrigatória para opcional<br/>**defenderScanDirection** de obrigatória para opcional<br/>**defenderScanType** de obrigatória para opcional<br/>**defenderScheduledScanDay** de obrigatória para opcional<br/>**defenderSubmitSamplesConsentType** de obrigatória para opcional<br/>|
+|Alterar|beta|Foram alteradas as seguintes propriedades na entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta):<br/>**defenderBlockEndUserAccess** de obrigatória para opcional<br/>**defenderCheckForSignaturesBeforeRunningScan** de obrigatória para opcional<br/>**defenderCloudBlockLevel** de obrigatória para opcional<br/>**defenderDisableBehaviorMonitoring** de obrigatória para opcional<br/>**defenderDisableCatchupFullScan** de obrigatória para opcional<br/>**defenderDisableCatchupQuickScan** de obrigatória para opcional<br/>**defenderDisableCloudProtection** de obrigatória para opcional<br/>**defenderDisableIntrusionPreventionSystem** de obrigatória para opcional<br/>**defenderDisableOnAccessProtection** de obrigatória para opcional<br/>**defenderDisableRealTimeMonitoring** de obrigatória para opcional<br/>**defenderDisableScanArchiveFiles** de obrigatória para opcional<br/>**defenderDisableScanDownloads** de obrigatória para opcional<br/>**defenderDisableScanNetworkFiles** de obrigatória para opcional<br/>**defenderDisableScanRemovableDrivesDuringFullScan** de obrigatória para opcional<br/>**defenderDisableScanScriptsLoadedInInternetExplorer** de obrigatória para opcional<br/>**defenderEnableLowCpuPriority** de obrigatória para opcional<br/>**defenderEnableScanIncomingMail** de obrigatória para opcional<br/>**defenderEnableScanMappedNetworkDrivesDuringFullScan** de obrigatória para opcional<br/>**defenderPotentiallyUnwantedAppAction** de obrigatória para opcional<br/>**defenderScanDirection** de obrigatória para opcional<br/>**defenderScanType** de obrigatória para opcional<br/>**defenderScheduledScanDay** de obrigatória para opcional<br/>**defenderSubmitSamplesConsentType** de obrigatória para opcional<br/>|
 |Adição|beta|Adicionadas as propriedades **findMyFiles**, **activateAppsWithVoice** e **configureTimeZone** à entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta)|
 |Adição|beta|Adicionada a propriedade de navegação **groupPolicyCategories** à entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
 |Adição|beta|Adicionada a propriedade de navegação **policyStatusDetails** à entidade [deviceManagementAutopilotEvent](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotevent?view=graph-rest-beta)|
@@ -880,7 +888,6 @@ Foram adicionadas novas APIs e recursos para gerenciar e imprimir em impressoras
 | Adição | beta | O tipo de complexo [printerSettings](/graph/api/resources/printsettings) foi adicionado.|
 | Adição | beta | A entidade [printUsageSummaryByPrinter](/graph/api/resources/printusagesummarybyprinter) foi adicionada.|
 | Adição | beta | A entidade [printUsageSummaryByUser](/graph/api/resources/printusagesummarybyuser) foi adicionada.|
-
 
 ## <a name="february-2020"></a>Fevereiro de 2020
 
@@ -4892,7 +4899,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Alterar          | Beta        | Os prefixos de parâmetros de consulta sem $ são suportados a partir de 26/09/16. O prefixo $ nos parâmetros de consulta é opcional. |
+| Alteração          | Beta        | Os prefixos de parâmetros de consulta sem $ são suportados a partir de 26/09/16. O prefixo $ nos parâmetros de consulta é opcional. |
 
 ### <a name="sites-and-lists"></a>Sites e listas
 
