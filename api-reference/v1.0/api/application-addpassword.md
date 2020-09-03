@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 703a4f83d40d4f6096e4604a6667669d692bc1bb
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 1d816e00298ca0a82df3f595f19950bb44570ab4
+ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44286937"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47340051"
 ---
 # <a name="application-addpassword"></a>Application: addpassword
 
@@ -63,7 +63,7 @@ O exemplo a seguir mostra como chamar essa API.
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
+Este é um exemplo de solicitação. A **ID** especificada na solicitação é o valor da propriedade **ID** do aplicativo, não o valor da propriedade **AppID** . 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

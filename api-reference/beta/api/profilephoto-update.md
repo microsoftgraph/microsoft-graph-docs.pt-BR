@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 72c30f03b51e186321acf6b89790c0fbd1352f06
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5ba0cb3b88e5048141cea8085550a4c3e389130e
+ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807977"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47340016"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilephoto
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou contato especificado. Como há atualmente um limite de 8MB no tamanho total de cada solicitação REST, isso limita o tamanho da foto que você pode adicionar a até 8 MB.
+Atualize a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou o contato especificado. Como há no momento um limite de 8MB no tamanho total de cada solicitação REST, o tamanho da foto que você pode adicionar está limitado em 8 MB.
 
-Use apenas o PUT para essa operação na versão beta.
+Use PUT somente para esta operação.
 
 > **Observação**: ao atualizar a foto do **usuário** , essa operação primeiro tenta atualizar a foto no Microsoft 365. Se isso falhar (porque o usuário não tem uma caixa de correio), essa API tentará atualizar a foto no Azure Active Directory.
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | Foto de perfil do **usuário**conectado:<br/>User. ReadWrite, User. ReadWrite. All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
+|Delegado (conta corporativa ou de estudante)     | Foto de perfil do **usuário**conectado:<br/>User. ReadWrite, User. ReadWrite. All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Para recurso de **usuário**:<br/>User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
 
@@ -48,6 +48,14 @@ PUT /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
+
+Para atualizar a foto de uma equipe:
+
+<!-- { "blockType": "ignored" } -->
+```http
+PUT /groups/{teamId}/photo/$value`
+```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
@@ -62,8 +70,8 @@ Inclua os dados binários da foto no corpo da solicitação.
 Se tiver êxito, este método retornará um código de resposta `200 OK`.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -87,8 +95,10 @@ Binary data for the image
 
 ---
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
