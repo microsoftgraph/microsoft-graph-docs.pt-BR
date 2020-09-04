@@ -1,5 +1,5 @@
 ---
-title: tipo de recurso b2xUserFlows
+title: Tipo de recurso b2xUserFlows
 description: Representa um fluxo de usuário em um locatário do Azure Active Directory.
 localization_priority: Priority
 doc_type: resourcePageType
@@ -12,7 +12,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/01/2020
 ms.locfileid: "47319656"
 ---
-# <a name="b2xuserflows-resource-type"></a>tipo de recurso b2xUserFlows
+# <a name="b2xuserflows-resource-type"></a>Tipo de recurso b2xUserFlows
 
 Namespace: microsoft.graph
 
@@ -26,11 +26,11 @@ Os fluxos de usuário são usados para habilitar uma experiência de [inscriçã
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar fluxos de usuário](../api/b2xuserflows-list.md)|coleção b2xUserFlow|Recuperar todos os fluxos de usuário.|
+|[Listar fluxos de usuário](../api/b2xuserflows-list.md)|Coleção b2xUserFlow|Recuperar todos os fluxos de usuário.|
 |[Obter fluxo de usuário](../api/b2xuserflows-get.md)|b2xUserFlow|Recuperar as propriedades de um fluxo de usuário.|
 |[Criar fluxo de usuário](../api/b2xuserflow-post-b2xuserflows.md)|b2xUserFlow|Criar um novo fluxo de usuário.|
 |[Excluir fluxo de usuário](../api/b2xuserflows-delete.md)|Nenhum|Excluir um fluxo de usuário.|
-|[Listar os provedores de identidade](../api/b2xuserflows-list-identityproviders.md)|coleção [identityProvider](../resources/identityProvider.md)|Recuperar todos os provedores de identidade em um fluxo de usuário.|
+|[Listar os provedores de identidade](../api/b2xuserflows-list-identityproviders.md)|Coleção [identityProvider](../resources/identityProvider.md)|Recuperar todos os provedores de identidade em um fluxo de usuário.|
 |[Adicionar provedor de identidade](../api/b2xuserflows-update-identityprovider.md)|Nenhum|Adicionar um provedor de identidade a um fluxo de usuário.|
 |[Excluir provedor de identidade](../api/b2xuserflows-delete-identityprovider.md)|Nenhum|Excluir um provedor de identidade de um fluxo de usuário.|
 
@@ -46,7 +46,7 @@ Os fluxos de usuário são usados para habilitar uma experiência de [inscriçã
 
 | Relação       | Tipo  |Descrição|
 |:---------------|:--------|:----------|
-|identityProviders|coleção [identityProvider](../resources/identityprovider.md)|Os provedores de identidade incluídos no fluxo de usuário.|
+|identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Os provedores de identidade incluídos no fluxo de usuário.|
 
 ## <a name="json-representation"></a>Representação JSON
 
