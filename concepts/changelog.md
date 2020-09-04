@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: dc72761a6dbd54572527b4d67fef0febb4103785
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: d6666bbb7cf2754a5df39da110168d433df35db2
+ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330041"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47367268"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -16,7 +16,7 @@ Este log de alterações inclui alterações específicas no nível da API no Mi
 
 Para obter um resumo do valor dessas alterações de API, além das ferramentas, componentes, diretrizes e tutoriais recentes, confira [Novidades do Microsoft Graph](whats-new-overview.md).
 
-## <a name="september"></a>Setembro
+## <a name="september-2020"></a>Setembro de 2020
 
 ### <a name="users"></a>Usuários
 

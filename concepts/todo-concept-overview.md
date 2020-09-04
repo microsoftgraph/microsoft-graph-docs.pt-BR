@@ -4,12 +4,12 @@ description: O To Do Oferece uma maneira simples de gerenciar suas tarefas e pla
 author: avijityadav
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b4d99b59b73942d9093587689b92f13f8475325f
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: f68aa1e4948fdac3ecaed94e75abe750f84db8f4
+ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849804"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47367226"
 ---
 # <a name="to-do-api-overview-preview"></a>Visão geral da API do To Do (visualização)
 O Microsoft To-Do fornece uma maneira simples para as pessoas gerenciarem suas tarefas e planejarem seu dia. As tarefas são organizadas em listas de tarefas, que podem ser acessadas através de clientes do To Do, Outlook e Teams a partir de qualquer dispositivo.
@@ -33,11 +33,11 @@ O Microsoft To Do fornece uma nova entidade chamada _linkedResource_, que você 
 
 |Operação|Solicitação|
 |:--------|:--|
-|Listar todas as listas de tarefas |GET https://graph.microsoft.com/beta/me/todo/lists|
-|Lista de todas as tarefas em uma lista de tarefas|GET https://graph.microsoft.com/me/todo/lists/{todoTaskListId}/tasks|
-|Criar uma nova tarefa|POST https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks|
-|Atualizar uma tarefa|PATCH https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}|
-|Excluir uma tarefa|DELETE https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}|
+| Listar todas as listas de tarefas | GET https://graph.microsoft.com/beta/me/todo/lists |
+| Lista de todas as tarefas em uma lista de tarefas | GET https://graph.microsoft.com/me/todo/lists/{todoTaskListId}/tasks |
+| Criar uma nova tarefa | POST https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks |
+| Atualizar uma tarefa | PATCH https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
+| Excluir uma tarefa | DELETE https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
 
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API para esse serviço?
