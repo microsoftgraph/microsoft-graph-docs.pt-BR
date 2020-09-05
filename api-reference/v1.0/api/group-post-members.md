@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6a9e0ddc322b21d4ac94e6bd3c63f80318be4642
-ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
+ms.openlocfilehash: 74d6ba0443cadf236c6f4af8c0194dfa0cae3d53
+ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47367261"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "47400486"
 ---
 # <a name="add-member"></a>Adicionar membro
 
@@ -24,6 +24,7 @@ Você pode adicionar usuários, contatos organizacionais, entidades de serviço 
 > Você só pode adicionar usuários aos grupos segurança e Microsoft 365 gerenciados por meio da nuvem.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -35,7 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/members/$ref
+POST /groups/{group-id}/members/$ref
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -66,7 +67,7 @@ Este é um exemplo de solicitação.
   "name": "add_member_to_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/members/$ref
+POST https://graph.microsoft.com/v1.0/groups/{group-id}/members/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -75,7 +76,10 @@ Content-length: 30
 }
 ```
 
+No corpo da solicitação, forneça uma representação JSON da ID do objeto directoryobject, User ou Group que você deseja adicionar.
+
 #### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
 
 <!-- {
@@ -100,7 +104,7 @@ Este é um exemplo de solicitação.
   "name": "add_multiple_members_to_group"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}
+PATCH https://graph.microsoft.com/v1.0/groups/{group-id}
 Content-type: application/json
 Content-length: 30
 
@@ -112,6 +116,8 @@ Content-length: 30
     ]
 }
 ```
+
+No corpo da solicitação, forneça uma representação JSON da ID do objeto directoryobject, User ou Group que você deseja adicionar.
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
