@@ -1,16 +1,16 @@
 ---
 title: Criar canal
-description: Crie um novo canal no Microsoft Team, como especificado no corpo da solicitação.
+description: Crie um novo canal em uma equipe da Microsoft, conforme especificado no corpo da solicitação.
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d496f69b20613c4c42c7ce842d23299d653c2ada
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 37fe0ed34ad7dc44d760376f75a49ffa3766ba6c
+ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384343"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "47400400"
 ---
 # <a name="create-channel"></a>Criar canal
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [canal](../resources/channel.md) no Microsoft Team, como especificado no corpo da solicitação.
+Criar um novo [canal](../resources/channel.md) em uma equipe, conforme especificado no corpo da solicitação.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Channel. Create. Group *, Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All    |
+|Aplicativo | Channel. Create. Group *, Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All, entrabalho. Migrate. All|
 
-> **Observação**: as permissões marcadas com * usam o [consentimento específico do recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
@@ -45,7 +45,7 @@ POST /teams/{id}/channels
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -53,7 +53,7 @@ No corpo da solicitação, fornça uma representação JSON do objeto [canal](..
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, esse método retornará `201 Created` código de resposta e um objeto [canal](../resources/channel.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [canal](../resources/channel.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

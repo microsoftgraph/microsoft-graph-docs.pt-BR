@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a7a219763c3efbea41c28e58a16358e7962dd04d
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: d442f39a0327c511a105b420fd57b775c6f06853
+ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673770"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "47400403"
 ---
 # <a name="list-printjobs"></a>Listar trabalhos
 
@@ -41,6 +41,9 @@ GET /print/printers/{id}/jobs
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
+* A propriedade **Documents** é omitida da resposta por padrão. Para retornar também uma lista de [documentos](../resources/printdocument.md) impressos para cada trabalho de impressão, use `$expand=documents` .
+* Este método dá suporte à filtragem de trabalhos de impressão pelo usuário que os criou. Use `$filter=createdBy/userPrincipalName eq '{upn}'` , em que **{UPN}** é o [nome principal](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) do usuário associado.
 
 ### <a name="exceptions"></a>Exceptions
 Não há suporte para alguns operadores: `$count` , `$search` , `$filter` .

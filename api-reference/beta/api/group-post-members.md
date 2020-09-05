@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fe3f3a5fe1bde8c14e9dbc3a6e12e486dd7c1bd2
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 8ad6c08b500218290418183447cf7f82572eb45e
+ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895808"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "47400411"
 ---
 # <a name="add-member"></a>Adicionar membro
 
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/members/$ref
+POST /groups/{group-id}/members/$ref
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -61,7 +61,7 @@ Este é um exemplo de solicitação.
   "name": "add_group_member"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/members/$ref
+POST https://graph.microsoft.com/beta/groups/{group-id}/members/$ref
 Content-type: application/json
 Content-length: 30
 
