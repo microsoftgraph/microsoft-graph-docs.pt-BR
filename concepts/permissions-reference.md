@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e44c2345058f66bb6d992e8d3523ab38e84349b7
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 0c51ef8d681601cbe7434ff0dd2a06eaf0cd2a7c
+ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311995"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "47400465"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -342,6 +342,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Channel.ReadBasic.All_ | Ler os nomes e as descrições de todos os canais. | Ler todos os nomes e descrições do canal, sem um usuário conectado.  | Sim | Não |
 | _Channel.Create_ | Criar canais. | Criar canais em qualquer equipe, sem um usuário conectado.  | Sim | Não |
 | _Channel.Delete.All_ | Excluir canais. | Excluir os canais de qualquer equipe, sem um usuário conectado.  | Sim | Não |
+|_Teamwork.Migrate.All_|Gerenciar a migração do Microsoft Teams|Criar e gerenciar recursos de migração do Microsoft Teams|Sim|Sim|
 
 ## <a name="channel-settings-permissions"></a>Permissões de configurações de canal 
 
@@ -1686,6 +1687,7 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Team.ReadBasic.All_ | Obter uma lista de todas as equipes | Obter uma lista de todas as equipes, sem um usuário conectado.   | Sim | Não |
 | _Teams.Create_ (visualização privada) | Criar equipes | Criar equipes, sem um usuário conectado. | Sim | Não |
+|_Teamwork.Migrate.All_|Gerenciar a migração do Microsoft Teams|Criar e gerenciar recursos de migração do Microsoft Teams|Sim|Sim|
 
 ## <a name="team-settings-permissions"></a>Permissões de configurações de equipe
 
