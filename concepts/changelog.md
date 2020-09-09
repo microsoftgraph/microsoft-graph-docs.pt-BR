@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d6666bbb7cf2754a5df39da110168d433df35db2
-ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
+ms.openlocfilehash: 17cc4b172e428ccc06ca500e0664b01372318bf2
+ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47367268"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "47400479"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,18 @@ Este log de alterações inclui alterações específicas no nível da API no Mi
 Para obter um resumo do valor dessas alterações de API, além das ferramentas, componentes, diretrizes e tutoriais recentes, confira [Novidades do Microsoft Graph](whats-new-overview.md).
 
 ## <a name="september-2020"></a>Setembro de 2020
+
+### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+|:---|:---|:---|
+| Adição | beta | Foi adicionado o suporte de `$expand=documents` e `$filter=createdBy/userPrincipalName` parâmetros de consulta no método [List printJobs](/graph/api/printer-list-jobs?view=graph-rest-beta). |
+
+### <a name="teamwork"></a>Trabalho em equipe
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição|beta| Foi adicionada a propriedade **createdDateTime** aos recursos do [canal](/graph/api/resources/channel?view=graph-rest-beta) e da [equipe](/graph/api/resources/team?view=graph-rest-beta).|
 
 ### <a name="users"></a>Usuários
 
@@ -27,6 +39,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 ## <a name="august-2020"></a>Agosto de 2020
 
 ### <a name="applications"></a>Aplicativos
+
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | Beta | Propriedade [passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) adicionada ao recurso [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta).
@@ -36,12 +49,6 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionada as propriedades **cancelledOccurrences**, **exceptionOccurrences**, e **occurrenceId** à entidade do [evento](/graph/api/resources/event?view=graph-rest-beta).
-
-### <a name="cloud-communications"></a>Comunicações na nuvem
-
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Adição | Beta e v1.0 | Propriedade de **transcrição** adicionada à entidade [chamada](/graph/api/resources/call).|
 
 ### <a name="change-notifications"></a>Alterar notificações
 
@@ -57,14 +64,15 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | Beta e v1.0 | Propriedade de **transcrição** adicionada à entidade [chamada](/graph/api/resources/call).|
 | Adição | v1.0 | A API **CancelMediaProcessing** foi adicionada à entidade [chamada](/graph/api/resources/call).|
+| Adição | Beta e v1.0 | Propriedade de **transcrição** adicionada à entidade [chamada](/graph/api/resources/call).|
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
-| Adição | beta | Adicionadas novas [Permissões delegadas](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> | 
+| Adição | beta | Adicionadas novas [Permissões delegadas](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> |
 | Adição | beta | Adicionadas novas [Permissões apenas do aplicativo](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrintJob.Manage.All</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic.All</li><li>PrintTaskDefinition.ReadWrite.All</li></ul> |
-| Alteração | beta | Added new permission requirements to: <ul><li>[Lista de impressoras](/graph/api/print-list-printers?view=graph-rest-beta)</li><li>[Obter impressora](/graph/api/printer-get?view=graph-rest-beta)</li><li>[Atualização da impressora](/graph/api/printer-update?view=graph-rest-beta)</li><li>[Eliminar impressora](/graph/api/printer-delete?view=graph-rest-beta)</li><li>[Listar allowedGroups (impressora)](/graph/api/printer-list-allowedgroups?view=graph-rest-beta)</li><li>[Listar allowedUsers (impressora)](/graph/api/printer-list-allowedusers?view=graph-rest-beta)</li><li>[Criar allowedGroup (impressora)](/graph/api/printer-post-allowedgroups?view=graph-rest-beta)</li><li>[Criar allowedUser (impressora)](/graph/api/printer-post-allowedusers?view=graph-rest-beta)</li><li>[Eliminar allowedGroup (impressora)](/graph/api/printer-delete-allowedgroup?view=graph-rest-beta)</li><li>[Eliminar allowedUser (impressora)](/graph/api/printer-delete-alloweduser?view=graph-rest-beta)</li><li>[getCapabilities (impressora)](/graph/api/printer-getcapabilities?view=graph-rest-beta)</li><li>[Listar conectores (impressora)](/graph/api/printer-list-connectors?view=graph-rest-beta)</li><li>[Listar trabalho (impressora)](/graph/api/printer-list-jobs?view=graph-rest-beta)</li><li>[Criar trabalho (impressora)](/graph/api/printer-post-jobs?view=graph-rest-beta)</li><li>[resetDefaults (impressora)](/graph/api/printer-resetdefaults?view=graph-rest-beta)</li><li>[Listar shares](/graph/api/print-list-shares?view=graph-rest-beta)</li><li>[Get printerShare](/graph/api/printershare-get?view=graph-rest-beta)</li><li>[Criar printerShare](/graph/api/print-post-shares?view=graph-rest-beta)</li><li>[Atualizar printerShare](/graph/api/printershare-update?view=graph-rest-beta)</li><li>[Eliminar printerShare](/graph/api/printershare-delete?view=graph-rest-beta)</li><li>[Listar allowedGroups (printerShare)](/graph/api/printershare-list-allowedgroups?view=graph-rest-beta)</li><li>[Listar allowedUsers (printerShare)](/graph/api/printershare-list-allowedusers?view=graph-rest-beta)</li><li>[Criar allowedGroup (printerShare)](/graph/api/printershare-post-allowedgroups?view=graph-rest-beta)</li><li>[Criar allowedUser (printerShare)](/graph/api/printershare-post-allowedusers?view=graph-rest-beta)</li><li>[Eliminar allowedGroup (printerShare)](/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta)</li><li>[Eliminar allowedUser (printerShare)](/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)</li><li>[Criar printJob](/graph/api/printer-post-jobs?view=graph-rest-beta)</li><li>[Get printJob](/graph/api/printjob-get?view=graph-rest-beta)</li><li>[uploadData (printDocument)](/graph/api/printdocument-uploaddata?view=graph-rest-beta)</li><li>[startPrintJob (printJob)](/graph/api/printjob-startprintjob?view=graph-rest-beta)</li><li>[cancelPrintJob (printJob)](/graph/api/printjob-cancelprintjob?view=graph-rest-beta)</li></ul> | 
+| Alteração | beta | Added new permission requirements to: <ul><li>[Lista de impressoras](/graph/api/print-list-printers?view=graph-rest-beta)</li><li>[Obter impressora](/graph/api/printer-get?view=graph-rest-beta)</li><li>[Atualização da impressora](/graph/api/printer-update?view=graph-rest-beta)</li><li>[Eliminar impressora](/graph/api/printer-delete?view=graph-rest-beta)</li><li>[Listar allowedGroups (impressora)](/graph/api/printer-list-allowedgroups?view=graph-rest-beta)</li><li>[Listar allowedUsers (impressora)](/graph/api/printer-list-allowedusers?view=graph-rest-beta)</li><li>[Criar allowedGroup (impressora)](/graph/api/printer-post-allowedgroups?view=graph-rest-beta)</li><li>[Criar allowedUser (impressora)](/graph/api/printer-post-allowedusers?view=graph-rest-beta)</li><li>[Eliminar allowedGroup (impressora)](/graph/api/printer-delete-allowedgroup?view=graph-rest-beta)</li><li>[Eliminar allowedUser (impressora)](/graph/api/printer-delete-alloweduser?view=graph-rest-beta)</li><li>[getCapabilities (impressora)](/graph/api/printer-getcapabilities?view=graph-rest-beta)</li><li>[Listar conectores (impressora)](/graph/api/printer-list-connectors?view=graph-rest-beta)</li><li>[Listar trabalho (impressora)](/graph/api/printer-list-jobs?view=graph-rest-beta)</li><li>[Criar trabalho (impressora)](/graph/api/printer-post-jobs?view=graph-rest-beta)</li><li>[resetDefaults (impressora)](/graph/api/printer-resetdefaults?view=graph-rest-beta)</li><li>[Listar shares](/graph/api/print-list-shares?view=graph-rest-beta)</li><li>[Get printerShare](/graph/api/printershare-get?view=graph-rest-beta)</li><li>[Criar printerShare](/graph/api/print-post-shares?view=graph-rest-beta)</li><li>[Atualizar printerShare](/graph/api/printershare-update?view=graph-rest-beta)</li><li>[Eliminar printerShare](/graph/api/printershare-delete?view=graph-rest-beta)</li><li>[Listar allowedGroups (printerShare)](/graph/api/printershare-list-allowedgroups?view=graph-rest-beta)</li><li>[Listar allowedUsers (printerShare)](/graph/api/printershare-list-allowedusers?view=graph-rest-beta)</li><li>[Criar allowedGroup (printerShare)](/graph/api/printershare-post-allowedgroups?view=graph-rest-beta)</li><li>[Criar allowedUser (printerShare)](/graph/api/printershare-post-allowedusers?view=graph-rest-beta)</li><li>[Eliminar allowedGroup (printerShare)](/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta)</li><li>[Eliminar allowedUser (printerShare)](/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)</li><li>[Criar printJob](/graph/api/printer-post-jobs?view=graph-rest-beta)</li><li>[Get printJob](/graph/api/printjob-get?view=graph-rest-beta)</li><li>[uploadData (printDocument)](/graph/api/printdocument-uploaddata?view=graph-rest-beta)</li><li>[startPrintJob (printJob)](/graph/api/printjob-startprintjob?view=graph-rest-beta)</li><li>[cancelPrintJob (printJob)](/graph/api/printjob-cancelprintjob?view=graph-rest-beta)</li></ul> |
 | Alteração | beta | Adicionada a propriedade **allowAllUsers** ao recurso [printerShare](/graph/api/resources/printershare?view=graph-rest-beta). |
 
 ### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
@@ -219,7 +227,7 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 |Adição|beta|Adicionadas as propriedades **microsoftLauncherCustomWallpaperEnabled**, **microsoftLauncherCustomWallpaperImageUrl**, **microsoftLauncherCustomWallpaperAllowUserModification**, **microsoftLauncherFeedEnabled**, **microsoftLauncherFeedAllowUserModification**, **microsoftLauncherDockPresenceConfiguration**, **microsoftLauncherDockPresenceAllowUserModification**, **microsoftLauncherSearchBarPlacementConfiguration**, **kioskModeShowDeviceInfo**, **kioskModeManagedSettingsEntryDisabled**, **kioskModeDebugMenuEasyAccessEnabled**, **kioskModeShowAppNotificationBadge**, **kioskModeScreenOrientation**, **kioskModeIconSize**, **kioskModeFolderIcon** and **kioskModeWifiAllowedSsids**à entidade [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta).|
 |Adição|beta|Propriedades **proxyServer**, **targetedPackageIds**, **alwaysOn** e **alwaysOnLockdown** adicionadas à entidade [androidDeviceOwnerVpnConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownervpnconfiguration?view=graph-rest-beta)|
 |Adição|beta|Propriedades **proxyServer**, **targetedPackageIds**, **alwaysOn** e **alwaysOnLockdown** adicionadas à entidade [androidWorkProfileVpnConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilevpnconfiguration?view=graph-rest-beta)|
-|Alteração|beta|As seguintes propriedades foram alteradas na entidade [deviceAndAppManagementAssignmentFilter](/graph/api/resources/intune-policyset-deviceandappmanagementassignmentfilter?view=graph-rest-beta):<br/>**rule** de opcional para obrigatório<br/>|
+|Alterar|beta|As seguintes propriedades foram alteradas na entidade [deviceAndAppManagementAssignmentFilter](/graph/api/resources/intune-policyset-deviceandappmanagementassignmentfilter?view=graph-rest-beta):<br/>**rule** de opcional para obrigatório<br/>|
 |Adição|beta|Propriedade **targetedMobileApps** adicionada à entidade [iosVpnConfiguration](/graph/api/resources/intune-deviceconfig-iosvpnconfiguration?view=graph-rest-beta)|
 |Adição|beta|Propriedade **minimumSupportedWindowsRelease** adicionada à entidade [win32LobApp](/graph/api/resources/intune-apps-win32lobapp?view=graph-rest-beta)|
 |Adição|beta|Propriedade **roleScopeTagIds** adicionada à entidade [windowsFeatureUpdateProfile](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofile?view=graph-rest-beta)|
@@ -391,7 +399,7 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 |Adição|beta|Os membros **aes192** e **aes192Gcm** foram adicionados ao tipo enum [vpnEncryptionAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnencryptionalgorithmtype?view=graph-rest-beta)|
 |Adição|beta|Adicionado o membro **md5** ao tipo enum [vpnIntegrityAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnintegrityalgorithmtype?view=graph-rest-beta)|
 |Adição|beta|O membro **duplicateLocationId** foi adicionadao ao tipo enum [vppTokenState](/graph/api/resources/intune-onboarding-vpptokenstate?view=graph-rest-beta)|
-|Adição|beta|Adicionadas novas entidades:<br/>[complianceManagementPartner](/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-1.0)<br/>|
+|Adição|beta|Foram adicionadas novas entidades:<br/>[complianceManagementPartner](/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-1.0)<br/>|
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[complianceManagementPartnerAssignment](/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-1.0)<br/>|
 |Adição|beta|A propriedade de navegação **complianceManagementPartners** à entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-1.0)|
 
@@ -4671,7 +4679,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Alteração          | v1.0 e beta | As "extensões de dados do Office 365" anteriores foram renomeadas como "abrir extensões". |
+| Alterar          | v1.0 e beta | As "extensões de dados do Office 365" anteriores foram renomeadas como "abrir extensões". |
 | Adição        | Beta          | Foram adicionados recursos que oferecem suporte a [extensões abertas](extensibility-overview.md#open-extensions): <br/>administrative unit<br/>device<br/>group<br/>organization<br/>user<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](extensibility-open-users.md) |
 
 ### <a name="identity-and-access"></a>Identidade e acesso
