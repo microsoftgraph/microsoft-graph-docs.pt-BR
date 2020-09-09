@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: adfbd201332ef12e883a489d2446caafecea8143
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: e63e32076bbfbd0ae36bfc767b02e3a80af4d18e
+ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896375"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47413279"
 ---
 # <a name="reportroot-getemailappusageversionsusercounts"></a>reportRoot: getEmailAppUsageVersionsUserCounts
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
-**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário. Para obter mais detalhes, consulte [Authorization for APIs to read Microsoft 365 Usage Reports](/graph/reportroot-authorization).
+**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -75,6 +75,8 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Outlook 2007
 - Indefinido
 - Período de Relatório
+- Outlook M365
+- Outlook 2019
 
 ### <a name="json"></a>JSON
 
@@ -125,7 +127,7 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Outlook 2016,Outlook 2013,Outlook 2010,Outlook 2007,Undetermined,Report Period
+Report Refresh Date,Outlook 2016,Outlook 2013,Outlook 2010,Outlook 2007,Undetermined,Report Period,Outlook M365,Outlook 2019
 ```
 
 ### <a name="json"></a>JSON
@@ -174,7 +176,9 @@ Content-Length: 275
       "outlook2010": 1, 
       "outlook2007": 0, 
       "undetermined": 1259, 
-      "reportPeriod": "7"
+      "reportPeriod": "7",
+      "outlookM365": 1350,
+      "outlook2019": 1200
     }
   ]
 }

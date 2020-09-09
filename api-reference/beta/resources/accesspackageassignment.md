@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f7a2fe772dc7b3be328fad452a5b193ccf7a7ed0
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 1cb32a36e40f419c42be8caa31d9081ac461d88f
+ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319453"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47413286"
 ---
 # <a name="accesspackageassignment-resource-type"></a>tipo de recurso accessPackageAssignment
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma atribuição de pacote de acesso é uma atribuição de um pacote do Access a um assunto específico, por um período de tempo.  Por exemplo, uma atribuição de pacote de acesso pode indicar que o usuário ' Alice ' tem o acesso atribuído por meio do pacote de acesso ' Sales ' para o período de janeiro de 2019 a julho de 2019.
+No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma atribuição de pacote de acesso é uma atribuição de um pacote do Access a um assunto específico, por um período de tempo.  Por exemplo, uma atribuição de pacote de acesso pode indicar que o usuário Alice recebeu acesso por meio do pacote de acesso vendas no período de janeiro de 2019 a 2019 de julho.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -32,15 +32,16 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma atrib
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|accessPackageId|Cadeia de caracteres|O identificador do pacote de acesso. Somente leitura.|
-|assignmentPolicyId|Cadeia de caracteres|O identificador da política de atribuição de pacote do Access. Somente leitura.|
-|assignmentstate|Cadeia de caracteres|O estado do pacote do Access. Os valores possíveis são `Delivered` ou `Expired` . Somente leitura.|
+|accessPackageId|String|O identificador do pacote de acesso. Somente leitura.|
+|assignmentPolicyId|String|O identificador da política de atribuição de pacote do Access. Somente leitura.|
+|assignmentstate|String|O estado do pacote do Access. Os valores possíveis são `Delivered` ou `Expired` . Somente leitura.|
 |assignmentStatus|String|Somente leitura.|
-|catalogID|Cadeia de caracteres|O identificador do catálogo que contém o pacote do Access. Somente leitura.|
+|catalogID|String|O identificador do catálogo que contém o pacote do Access. Somente leitura.|
 |expiredDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
-|Extended|Booliano|Indica se a atribuição de pacote de acesso é estendida. Somente leitura.|
-|targetId|Cadeia de caracteres| A ID do assunto com a atribuição. Somente leitura.|
+|Extended|Boolean|Indica se a atribuição de pacote de acesso é estendida. Somente leitura.|
+|targetId|String| A ID do assunto com a atribuição. Somente leitura.|
+|Cronograma|[requestSchedule](requestschedule.md)| Quando a atribuição de acesso deve estar no local. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 
