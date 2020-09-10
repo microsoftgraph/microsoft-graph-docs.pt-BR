@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ade0014f24abd169d71ca2d0b0ea6b9fffc2517
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 29b0f905c1fddb1c85b28d726f825fc42256933b
+ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630377"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47423636"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>Criar chatMessage em um canal
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Criar um novo [chat](../resources/chatmessage.md) no [canal](../resources/channel.md)especificado.
 
-*Não é recomendável usar essa API para a migração de dados. Ele não tem a taxa de transferência necessária para uma migração típica.*
+> **Observação**: não é recomendável usar essa API para a migração de dados. Ele não tem a taxa de transferência necessária para uma migração típica.
 
 > **Observação**: trata-se de uma violação dos [termos de uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) para usar o Microsoft Teams como um arquivo de log. Só envie mensagens que as pessoas lerám.
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | ChannelMessage. Send, Group. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | ChannelMessage. Send, Group. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

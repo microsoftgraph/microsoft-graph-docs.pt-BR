@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b4325f30133ad42e4b7c3df9669bede2b82722c8
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 7aaf1c19a6da04b3ceca9124051f056af473c04f
+ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916420"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47423657"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e os relacionamentos de um objeto [onlineMeeting](../resources/onlinemeeting.md) .
 
-> **Observação:** Atualmente `GET` , o método só tem suporte para uma [ID de conferência VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Essas IDs são geradas para usuários licenciados de Cloud-Video-Interop e este método é usado para obter os detalhes para ingressar na reunião.
+> **Observação:** Atualmente, o `GET` método só tem suporte para uma [ID de conferência VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Essas IDs são geradas para usuários licenciados de Cloud-Video-Interop e este método é usado para obter os detalhes para ingressar na reunião.
 
 ## <a name="permissions"></a>Permissões
 
@@ -148,7 +148,13 @@ Content-Length: 1574
   },
   "startDateTime": "2018-05-30T00:30:00Z",
   "subject": "Test Meeting.",
-  "videoTeleconferenceId": "123456789"
+  "videoTeleconferenceId": "123456789",
+  "lobbyBypassSettings": {
+    "scope": "everyone",
+    "isDialInBypassEnabled": true
+  },
+  "isEntryExitAnnounced": true,
+  "allowedPresenters": "everyone"
 }
 ```
 >**Observação:** Se 'Accept-Language: ja' for especificado para indicar japonês, por exemplo, a resposta incluirá o seguinte.

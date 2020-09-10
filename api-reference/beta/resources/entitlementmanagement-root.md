@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 96a91194c29c5207a3e450bd70e093ef74e56a85
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: bde4732b54110707229dea4a1858c18239529f8f
+ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757283"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47423645"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhar com a API de gerenciamento de qualificação do Azure AD
 
@@ -34,9 +34,11 @@ Os tipos de recurso de gerenciamento de direito incluem:
 - [connectedOrganization](connectedorganization.md): uma organização conectada para usuários externos que podem solicitar acesso.
 - [entitlementManagementSettings](entitlementmanagementsettings.md): configurações de todo o locatário para o gerenciamento de qualificação do Azure AD.
 
+Para obter um tutorial que mostra como usar o gerenciamento de qualificação para criar um pacote de recursos que os usuários internos podem solicitar, consulte [Create an Access Package using Microsoft Graph APIs](/graph/tutorial-access-package-api).
+
 Observe que o recurso de gerenciamento de direito, incluindo a API, está incluído no Azure AD Premium P2. O locatário em que o gerenciamento de qualificação está sendo usado deve ter uma assinatura válida de compra ou de avaliação do Azure AD Premium P2 ou EMS e5.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 A tabela a seguir lista os métodos que você pode usar para interagir com recursos relacionados ao gerenciamento de direitos.
 
