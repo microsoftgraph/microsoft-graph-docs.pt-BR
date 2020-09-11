@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ad6c3bcee979e10e308b307cec780c8ddc8950dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e81813f408c561a09b89e4cb3fd490acb6988cff
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446832"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439987"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>tipo de recurso teamsTabConfiguration (tipo aberto)
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
    "websiteUrl": "string (HTTPS Url)",
    "removeUrl": "string (HTTPS Url)"  
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
