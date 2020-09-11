@@ -5,12 +5,12 @@ author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f04f554d02b3d2a9598abf9b49d7fe139cd6733b
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: d42dc962579efd783f56bc0e2f9fd0b15c334a10
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509935"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439854"
 ---
 # <a name="callrecord-getdirectroutingcalls"></a>callRecord: getDirectRoutingCalls
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo| CallRecords. Read. PstnCalls|
+| Aplicativo                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

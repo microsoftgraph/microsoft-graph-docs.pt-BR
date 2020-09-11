@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7d6b7f1abf94aacd7732c7fb767a0220d6892abf
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: dfb3d3d6e10f2da9f1032aeeae0b6a2ba1c15087
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43718602"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439967"
 ---
 # <a name="create-externalitem"></a>Criar externalItem
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Criar um novo [externalItem](../resources/externalitem.md).
 
-Essa API pode ser usada para criar um item personalizado. Especifique o tipo que você está criando incluindo a `@odata.type` Propriedade no corpo JSON. O [externalConnection](../resources/externalconnection.md) recipiente deve ter um [esquema](../resources/schema.md) registrado do tipo correspondente.
+Essa API pode ser usada para criar um item personalizado. Especifique o tipo que você está criando incluindo a `@odata.type` propriedade no corpo JSON. O [externalConnection](../resources/externalconnection.md) recipiente deve ter um [esquema](../resources/schema.md) registrado do tipo correspondente.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Sem suporte. |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,7 +47,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | ID de conexão | string | A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém |
-| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md). Se nenhum item já existir com isso `id`, um novo item é criado. Se já existir um item com isso `id`, ele será substituído pelo objeto enviado no corpo. |
+| item-id       | string | A propriedade fornecida pelo desenvolvedor `id` do [externalItem](../resources/externalitem.md). Se nenhum item já existir com isso `id` , um novo item é criado. Se já existir um item com isso `id` , ele será substituído pelo objeto enviado no corpo. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -62,11 +62,11 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [exter
 
 ### <a name="creating-an-externalitem"></a>Criar um externalItem
 
-Ao criar um `externalItem`, os campos a seguir são `@odata.type`obrigatórios `acl`:, `properties`e. O `properties` objeto deve conter pelo menos uma propriedade.
+Ao criar um `externalItem` , os campos a seguir são obrigatórios: `@odata.type` , `acl` e `properties` . O `properties` objeto deve conter pelo menos uma propriedade.
 
-Todas `DateTime` as propriedades de tipo devem estar no formato ISO 8601.
+Todas as `DateTime` Propriedades de tipo devem estar no formato ISO 8601.
 
-As propriedades em `externalItem` um devem usar especificadores de tipo na carga nos seguintes cenários:
+As propriedades em um `externalItem` devem usar especificadores de tipo na carga nos seguintes cenários:
 
 - Para `String` Propriedades de tipo, se o valor contiver caracteres não-ASCII.
 
@@ -86,7 +86,7 @@ As propriedades em `externalItem` um devem usar especificadores de tipo na carga
     ```
 
     > [!IMPORTANT]
-    > Ao incluir uma propriedade de tipo `Collection(DateTime)`, você deve usar o especificador `Collection(DateTimeOffset)`de tipo.
+    > Ao incluir uma propriedade de tipo `Collection(DateTime)` , você deve usar o especificador de tipo `Collection(DateTimeOffset)` .
 
 ## <a name="response"></a>Resposta
 
@@ -117,7 +117,7 @@ Content-type: application/json
       "type": "user",
       "value": "49103559-feac-4575-8b94-254814dfca72",
       "accessType": "deny",
-      "identitySource": "Azure Active Directory"
+      "identitySource": "azureActiveDirectory"
     }
   ],
   "properties": {
