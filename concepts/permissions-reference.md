@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0c51ef8d681601cbe7434ff0dd2a06eaf0cd2a7c
-ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
+ms.openlocfilehash: 3bed252af8ecbbcd4e54d34a4f5dcf53fd0a323f
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "47400465"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439868"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -409,13 +409,10 @@ Nenhum.
 |Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_CallRecords.Read.All_|Ler todos os registros de chamadas|Permite que o aplicativo leia registros de chamadas de todas as chamadas e reuniões on-line sem um usuário conectado.|Sim|
-|_CallRecords.Read.PstnCalls_|Leia PSTN e dados de log de chamadas de roteamento direto (visualização)|Permite que o aplicativo leia todos os dados de registro de chamadas PSTN e roteamento direto sem um usuário conectado.|Sim|
 
 ### <a name="remarks"></a>Comentários
 
 A permissão _CallRecords.Read.All_concede a um aplicativo acesso privilegiado ao [callRecords](/graph/api/resources/callrecords-callrecord) para todas as chamadas e reuniões online dentro da organização, incluindo chamadas de e para números de telefone externos. Isso inclui detalhes potencialmente confidenciais sobre quem participou da chamada, bem como informações técnicas referentes a essas chamadas e reuniões, que podem ser usadas para solucionar problemas de rede, como endereços IP, detalhes do dispositivo e outras informações de rede.
-
-A permissão _CallRecords.Read.PstnCalls_ concede a um aplicativo o acesso aos [PSTN (planos de chamada)](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) e [roteamento direto](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) dos logs de chamadas. Isso inclui informações potencialmente confidenciais sobre os usuários, bem como chamadas de e para números de telefone externos.
 
 > **Importante:** A discrição deve ser usada ao conceder essas permissões aos aplicativos. Os registros de chamadas podem fornecer informações sobre a operação de seus negócios e, portanto, podem ser um alvo para agentes mal-intencionados. Conceda essas permissões apenas aos aplicativos em que você confia para atender aos seus requisitos de proteção de dados.
 
@@ -429,7 +426,7 @@ A permissão _CallRecords.Read.PstnCalls_ concede a um aplicativo o acesso aos [
 
 * _CallRecords.Read.All_: recuperar um registro de chamada (`GET /v1.0/communications/callRecords/{id}`).
 * _CallRecords.Read.All_: assinar novos registros de chamadas (`POST /v1.0/subscriptions`).
-* _CallRecords.Read.PstnCalls_: Recupere os registros de chamadas de roteamento direto dentro de um intervalo de tempo especificado (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
+* _CallRecords.Read.All_: recuperar os registros de chamadas de roteamento direto no intervalo de tempo especificado (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
