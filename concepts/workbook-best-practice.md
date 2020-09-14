@@ -4,12 +4,12 @@ description: Listar as práticas recomendadas e exemplos para as APIs do Excel n
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ae790dea42e3ade46b74735ad826189a13a282d5
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: c113d162874c3121e97534b8d098d1c52a24fe77
+ms.sourcegitcommit: f26428bce3034e206b901e9c747cffcf64b55882
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630344"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47651292"
 ---
 # <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>Práticas recomendadas para trabalhar com a API do Excel no Microsoft Graph
 
@@ -190,7 +190,7 @@ Content-type: application/json
     "code": "internalServerError",
     "message": "An internal server error occurred while processing the request.",
     "innerError": {
-      "code": ""internalServerErrorUncategorized",
+      "code": "internalServerErrorUncategorized",
       "message": "An unspecified error has occurred.",
       "innerError": {
         "code": "GenericFileOpenError",
