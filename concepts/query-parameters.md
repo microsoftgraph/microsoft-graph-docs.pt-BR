@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 6893030d8a910ea627a12b1198a8af0b99b95750
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 54660e943204598a7e83c29b8cc7e1d731490146
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524363"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439994"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -355,38 +355,48 @@ Saiba mais sobre a API de Pessoas em [Obter informações sobre pessoas relevant
 
 ### <a name="using-search-on-directory-object-collections"></a>Como usar $search nos conjuntos de objetos do diretório
 
-Você pode usar o parâmetro de consulta `$search` para restringir os resultados com base em um critério de pesquisa, como procurar palavras em strings de busca delimitadas por espaços, letras maiúsculas ou minúsculas e tipos de caracteres (números e caracteres especiais). O suporte tokenizado à pesquisa funciona apenas nos campos displayName e descrição. Qualquer campo pode ser colocado no `$search`. Os padrão para os outros campos que não sejam **displayName** e **descrição** é o comportamento de `$filter` “startswith”. Por exemplo:
+Você pode usar um parâmetro de consulta de `$search` para filtrar resultados usando a geração de tokens. A pesquisa tokenizada funciona extraindo palavras da cadeia de caracteres de entrada e de saída, usando espaços, números, uso de maiúsculas/minúsculas e símbolos para separar as palavras, da seguinte maneira:
+
+* **Espaços**: `hello world` => `hello`, `world`
+* **Uso de maiúsculas/minúsculas**⁽¹⁾: `HelloWorld` ou `helloWORLD` => `hello`, `world`
+* **Símbolos**⁽²⁾: `hello.world` => `hello`, `.`, `world`, `helloworld`
+* **Números**: `hello123world` => `hello`, `123`, `world`
+
+⁽¹⁾ Atualmente, a geração de tokens só funciona quando a letra está mudando de minúscula para maiúscula, portanto  `HELLOworld`, é considerada um único token:  `helloworld`e `HelloWORld` são dois tokens: `hello`, `world`. ⁽²⁾ A lógica da geração de tokens também combina palavras que são separadas somente por símbolos; por exemplo, pesquisar por `helloworld`  encontrará `hello-world` e `hello.world`.
+
+> **Observação**: após a geração de tokens, os tokens são combinados independentemente da capitalização original e são combinados em qualquer ordem.
+> O parâmetro de consulta de `$search` em coleções de objetos de diretório **requer** um cabeçalho de solicitação especial: `ConsistencyLevel: eventual`.
+
+O suporte tokenizado à pesquisa funciona apenas nos campos **displayName** e **descrição**. Qualquer campo pode ser inserido em `$search`; campos diferentes de **displayName** e **descrição** padrão para `$filter` comportamento de startswith. Por exemplo:
 
 `https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
- 
-procurar todos os grupos com nomes de exibição que se pareçam com "OneVideo". O parâmetro `$search` também pode ser usado junto com o `$filter`. Por exemplo: 
- 
-`https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"` 
- 
-procurar todos os grupos habilitados para email com nomes de exibição que se pareçam com "OneVideo". Os resultados são restringidos com base em uma conjunção lógica (um “AND”) do parâmetro `$filter` e na consulta inteira no parâmetro `$search`. O texto da pesquisa é tokenizado com base nas letras maiúsculas ou minúsculas, mas as equiparações são executadas de maneira insensível ao fato de a letra ser maiúscula ou minúscula. Por exemplo, o termo “OneVideo” seria dividido em dois tokens de entrada, “one” e “video”, mas equiparado a propriedades insensíveis ao fato de a letra ser maiúscula ou minúscula. 
- 
- 
-A sintaxe da pesquisa segue as seguintes regras: 
- 
-- Formato genérico: $search="clause1" [AND | OR]  "[clauseX]". 
-- O número de cláusulas (clause) não é limitado. O uso de parênteses para a precedência também é suportado. 
-- A sintaxe para cada cláusula é <property>:<text to search>. 
-- O nome da propriedade deve ser especificado na cláusula. Qualquer propriedade que possa ser usada em `$filter` também pode ser usada dentro de `$search`. Dependendo da propriedade, o comportamento da pesquisa será "search" ou, se “search” não for suportado na propriedade, "startswith". 
-- Todas as partes de cláusula devem ser colocadas entre aspas duplas.  
-- Os operadores lógicos “AND” e “OR” devem ser colocados fora das aspas duplas. Devem sempre ser grafados em maiúsculas. 
-- Considerando-se que todas as partes de cláusula precisam ser colocadas entre aspas duplas, se <text to search> contiver aspas duplas e barra invertida, as barras invertidas deverão ser usadas para escapar as aspas. Não é preciso escapar nenhum outro caractere. 
 
-A tabela abaixo mostra alguns exemplos. 
- 
+procurar todos os grupos com nomes de exibição que se pareçam com "OneVideo". O parâmetro `$search` também pode ser usado junto com o `$filter`. Por exemplo:
+
+`https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"`
+
+procurar todos os grupos habilitados para email com nomes de exibição que se pareçam com "OneVideo". Os resultados são restringidos com base em uma conjunção lógica (um “AND”) do parâmetro `$filter` e na consulta inteira no parâmetro `$search`. O texto da pesquisa é tokenizado com base nas letras maiúsculas ou minúsculas, mas as equiparações são executadas de maneira insensível ao fato de a letra ser maiúscula ou minúscula. Por exemplo, "OneVideo" seria dividido em dois tokens de entrada "one" e "video", mas correspondendo a propriedades que não diferenciam maiúsculas de minúsculas.
+
+A sintaxe da pesquisa segue as seguintes regras:
+
+* Formato genérico: $search="clause1" \[AND \| OR\] "\[clauseX\]"\.
+* O número de cláusulas (clause) não é limitado. O uso de parênteses para a precedência também é suportado.
+* A sintaxe para cada cláusula é: “\<property>:\<text to search>”.
+* O nome da propriedade deve ser especificado na cláusula. Qualquer propriedade que possa ser usada em `$filter` também pode ser usada dentro de `$search`. Dependendo da propriedade, o comportamento da pesquisa será "search" ou, se “search” não for suportado na propriedade, "startswith".
+* Todas as partes de cláusula devem ser colocadas entre aspas duplas.
+* Os operadores lógicos “AND” e “OR” devem ser colocados fora das aspas duplas. Devem sempre ser grafados em maiúsculas.
+* Considerando que toda a parte da cláusula precisa ser colocada entre aspas duplas, se contiver aspas duplas e barra invertida, as barras invertidas deverão ser usadas para escapar as aspas. Não é preciso escapar nenhum outro caractere.
+
+A tabela a seguir mostra alguns exemplos.
 
 | Classe de objeto | Descrição | Exemplo |
 | ------------ | ----------- | ------- |
-| Usuário | O caderno de endereços exibe o nome do usuário. |  `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
+| Usuário | O caderno de endereços exibe o nome do usuário. | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
 | Usuário | O caderno de endereços exibe o nome ou o email do usuário. | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
 | Grupo | O caderno de endereços exibe o nome ou a descrição de um grupo. | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
-| Grupo | O caderno de endereços exibe o nome em um grupo habilitado para email. | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
+| Grupo | Nome de exibição do catálogo de endereços em um grupo habilitado para email. | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
 
-Ambas as entradas de string fornecidas em `$search`, assim como as propriedades pesquisáveis indicadas acima, são divididas em partes por meio de espaços, da variação entre letras maiúsculas e minúsculas e de tipos de caracteres (números e caracteres especiais).
+Ambas as entradas da cadeia de caracteres fornecidas em `$search`, bem como as propriedades pesquisáveis, são divididas em partes por espaços, uso de maiúsculas/minúsculas e tipos de caracteres (números e caracteres especiais).
 
 ## <a name="select-parameter"></a>parâmetro select
 
@@ -417,8 +427,9 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 ## <a name="skiptoken-parameter"></a>parâmetro skipToken
 
-Algumas solicitações retornam várias páginas de dados devido à paginação do lado do servidor ou devido ao uso do parâmetro [`$top`](#top-parameter) para limitar o tamanho da página da resposta. Muitas APIs do Microsoft Graph usam o parâmetro de consulta `skipToken` para fazer referência a páginas subsequentes do resultado. O parâmetro `$skiptoken` contém um token opaco que faz referência à próxima página de resultados e é retornado na URL fornecida na propriedade `@odata.nextLink` na resposta. Para saber mais, confira [paginação](./paging.md).
-
+Algumas solicitações retornam várias páginas de dados, devido à paginação do lado do servidor ou devido ao uso do parâmetro [`$top`](#top-parameter) para limitar o tamanho da página da resposta. Muitas APIs do Microsoft Graph usam o parâmetro de consulta `skipToken` para fazer referência a páginas subsequentes do resultado.  
+O parâmetro `$skiptoken` contém um token opaco que faz referência à próxima página de resultados e é retornado na URL fornecida na propriedade `@odata.nextLink` na resposta. Para saber mais, confira [Paginação](./paging.md).
+> **Observação:** se você estiver usando OData Count (adicionando `$count=true` na querystring), a propriedade `@odata.count` estará presente somente na primeira página.
 
 ## <a name="top-parameter"></a>parâmetro top
 
