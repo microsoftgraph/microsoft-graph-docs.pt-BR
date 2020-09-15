@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Arquivo
+title: Thype de recurso de arquivo
 localization_priority: Normal
 description: O recurso File agrupa itens de dados relacionados a arquivos em uma única estrutura.
-ms.prod: ''
+ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c316e3b09f00ffebd7ebfab5e47b49c7df3980d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d44d912116f517a67cce36811a1cacf59c32270
+ms.sourcegitcommit: f26428bce3034e206b901e9c747cffcf64b55882
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532956"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47651313"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 
@@ -20,7 +19,8 @@ Namespace: microsoft.graph
 
 O recurso **File** agrupa itens de dados relacionados a arquivos em uma única estrutura.
 
-Se um [**DriveItem**](driveitem.md) tiver uma faceta **file** não nula, o item representa um arquivo. Além de outras propriedades, os arquivos têm um relacionamento **content**, que contém o fluxo de bytes do arquivo.
+Se um [**DriveItem**](driveitem.md) tiver uma faceta **File** não nula, o item representa um arquivo.
+Além de outras propriedades, os arquivos têm um relacionamento **content**, que contém o fluxo de bytes do arquivo.
 
 ## <a name="json-representation"></a>Representação JSON
 
