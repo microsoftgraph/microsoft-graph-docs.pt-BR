@@ -1,69 +1,77 @@
 ---
 title: Obter onlineMeeting
-description: Recupere as propriedades e os relacionamentos de um objeto de **reunião online** .
+description: Recupere as propriedades e os relacionamentos de um objeto onlineMeeting.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7aaf1c19a6da04b3ceca9124051f056af473c04f
-ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
+ms.openlocfilehash: 435a8fcd37a44d6d6a31de2c8ae4e10f67a75951
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47423657"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843272"
 ---
-# <a name="get-onlinemeeting"></a><span data-ttu-id="e1e96-103">Obter onlineMeeting</span><span class="sxs-lookup"><span data-stu-id="e1e96-103">Get onlineMeeting</span></span>
+# <a name="get-onlinemeeting"></a><span data-ttu-id="f5bbe-103">Obter onlineMeeting</span><span class="sxs-lookup"><span data-stu-id="f5bbe-103">Get onlineMeeting</span></span>
 
-<span data-ttu-id="e1e96-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e1e96-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f5bbe-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f5bbe-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e1e96-105">Recupere as propriedades e os relacionamentos de um objeto [onlineMeeting](../resources/onlinemeeting.md) .</span><span class="sxs-lookup"><span data-stu-id="e1e96-105">Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+<span data-ttu-id="f5bbe-105">Recupere as propriedades e os relacionamentos de um objeto [onlineMeeting](../resources/onlinemeeting.md) .</span><span class="sxs-lookup"><span data-stu-id="f5bbe-105">Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-> <span data-ttu-id="e1e96-106">**Observação:** Atualmente, o `GET` método só tem suporte para uma [ID de conferência VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Essas IDs são geradas para usuários licenciados de Cloud-Video-Interop e este método é usado para obter os detalhes para ingressar na reunião.</span><span class="sxs-lookup"><span data-stu-id="e1e96-106">**Note:** The `GET` method is currently only supported for a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f5bbe-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f5bbe-106">Permissions</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e1e96-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="e1e96-107">Permissions</span></span>
+<span data-ttu-id="f5bbe-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f5bbe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="e1e96-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e1e96-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+| <span data-ttu-id="f5bbe-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f5bbe-109">Permission type</span></span>                        | <span data-ttu-id="f5bbe-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f5bbe-110">Permissions (from least to most privileged)</span></span>           |
+| :------------------------------------- | :---------------------------------------------------- |
+| <span data-ttu-id="f5bbe-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f5bbe-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="f5bbe-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-112">Not Supported.</span></span>                                        |
+| <span data-ttu-id="f5bbe-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f5bbe-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f5bbe-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-114">Not Supported.</span></span>                                        |
+| <span data-ttu-id="f5bbe-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f5bbe-115">Application</span></span>                            | <span data-ttu-id="f5bbe-116">OnlineMeetings. Read. All, OnlineMeetings. ReadWrite. All \*</span><span class="sxs-lookup"><span data-stu-id="f5bbe-116">OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All\*</span></span> |
 
-| <span data-ttu-id="e1e96-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e1e96-110">Permission type</span></span>                        | <span data-ttu-id="e1e96-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e1e96-111">Permissions (from least to most privileged)</span></span>           |
-|:---------------------------------------|:------------------------------------------------------|
-| <span data-ttu-id="e1e96-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e1e96-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="e1e96-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e1e96-113">Not Supported.</span></span>                                        |
-| <span data-ttu-id="e1e96-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e1e96-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e1e96-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e1e96-115">Not Supported.</span></span>                                        |
-| <span data-ttu-id="e1e96-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e1e96-116">Application</span></span>                            | <span data-ttu-id="e1e96-117">OnlineMeetings.Read.All</span><span class="sxs-lookup"><span data-stu-id="e1e96-117">OnlineMeetings.Read.All</span></span>                               |
+> [!IMPORTANT]
+> <span data-ttu-id="f5bbe-117">\* Os administradores devem criar uma [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy.md) e concedê-la a um usuário, autorizando o aplicativo configurado na política a recuperar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).</span><span class="sxs-lookup"><span data-stu-id="f5bbe-117">\* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the request path).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="e1e96-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e1e96-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f5bbe-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f5bbe-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /users/{userId}/onlineMeetings/{meetingId}
 ```
-> <span data-ttu-id="e1e96-119">**Observação:** o caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="e1e96-119">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="e1e96-120">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="e1e96-120">Going forward, use the `/communications` path.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="e1e96-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="e1e96-121">Optional query parameters</span></span>
-<span data-ttu-id="e1e96-122">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="e1e96-122">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+> <span data-ttu-id="f5bbe-119">**Observações:**</span><span class="sxs-lookup"><span data-stu-id="f5bbe-119">**Notes:**</span></span>
+>
+> - <span data-ttu-id="f5bbe-120">O caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-120">The `/app` path is deprecated.</span></span> <span data-ttu-id="f5bbe-121">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-121">Going forward, use the `/communications` path.</span></span>
+> - <span data-ttu-id="f5bbe-122">`id` nas duas primeiras rotas refere-se à [ID de conferência VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up).</span><span class="sxs-lookup"><span data-stu-id="f5bbe-122">`id` in the first two routes refers to [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up).</span></span>
+> - <span data-ttu-id="f5bbe-123">`userId` é a ID de objeto de um usuário no [portal de gerenciamento do usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade).</span><span class="sxs-lookup"><span data-stu-id="f5bbe-123">`userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade).</span></span> <span data-ttu-id="f5bbe-124">Para mais detalhes, consulte [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy.md).</span><span class="sxs-lookup"><span data-stu-id="f5bbe-124">For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy.md).</span></span>
+> - <span data-ttu-id="f5bbe-125">`meetingId` é a **ID** de uma [entidade onlineMeeting](../resources/onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="f5bbe-125">`meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e1e96-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e1e96-123">Request headers</span></span>
-| <span data-ttu-id="e1e96-124">Nome</span><span class="sxs-lookup"><span data-stu-id="e1e96-124">Name</span></span>          | <span data-ttu-id="e1e96-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="e1e96-125">Description</span></span>               |
-|:--------------|:--------------------------|
-| <span data-ttu-id="e1e96-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="e1e96-126">Authorization</span></span> | <span data-ttu-id="e1e96-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e1e96-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e1e96-129">Accept-Language</span><span class="sxs-lookup"><span data-stu-id="e1e96-129">Accept-Language</span></span>  | <span data-ttu-id="e1e96-130">Idioma.</span><span class="sxs-lookup"><span data-stu-id="e1e96-130">Language.</span></span> <span data-ttu-id="e1e96-131">Opcional.</span><span class="sxs-lookup"><span data-stu-id="e1e96-131">Optional.</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="f5bbe-126">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="f5bbe-126">Optional query parameters</span></span>
+<span data-ttu-id="f5bbe-127">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-127">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="e1e96-132">Se a solicitação contiver um `Accept-Language`cabeçalho HTTP, o `content` de `joinInformation` estará na variante de idioma e código de idioma especificada `Accept-Language` no cabeçalho.</span><span class="sxs-lookup"><span data-stu-id="e1e96-132">If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header.</span></span> <span data-ttu-id="e1e96-133">O conteúdo padrão será em inglês.</span><span class="sxs-lookup"><span data-stu-id="e1e96-133">The default content will be in English.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f5bbe-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f5bbe-128">Request headers</span></span>
+| <span data-ttu-id="f5bbe-129">Nome</span><span class="sxs-lookup"><span data-stu-id="f5bbe-129">Name</span></span>            | <span data-ttu-id="f5bbe-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="f5bbe-130">Description</span></span>               |
+| :-------------- | :------------------------ |
+| <span data-ttu-id="f5bbe-131">Autorização</span><span class="sxs-lookup"><span data-stu-id="f5bbe-131">Authorization</span></span>   | <span data-ttu-id="f5bbe-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f5bbe-134">Accept-Language</span><span class="sxs-lookup"><span data-stu-id="f5bbe-134">Accept-Language</span></span> | <span data-ttu-id="f5bbe-135">Idioma.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-135">Language.</span></span> <span data-ttu-id="f5bbe-136">Opcional.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-136">Optional.</span></span>       |
 
-## <a name="request-body"></a><span data-ttu-id="e1e96-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e1e96-134">Request body</span></span>
-<span data-ttu-id="e1e96-135">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e1e96-135">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="f5bbe-137">Se a solicitação contiver um `Accept-Language`cabeçalho HTTP, o `content` de `joinInformation` estará na variante de idioma e código de idioma especificada `Accept-Language` no cabeçalho.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-137">If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header.</span></span> <span data-ttu-id="f5bbe-138">O conteúdo padrão será em inglês.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-138">The default content will be in English.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e1e96-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="e1e96-136">Response</span></span>
-<span data-ttu-id="e1e96-137">Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e1e96-137">If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f5bbe-139">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f5bbe-139">Request body</span></span>
+<span data-ttu-id="f5bbe-140">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-140">Do not supply a request body for this method.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e1e96-138">Exemplos</span><span class="sxs-lookup"><span data-stu-id="e1e96-138">Examples</span></span>
+## <a name="response"></a><span data-ttu-id="f5bbe-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="f5bbe-141">Response</span></span>
+<span data-ttu-id="f5bbe-142">Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-142">If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
 
-### <a name="request"></a><span data-ttu-id="e1e96-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e1e96-139">Request</span></span>
-<span data-ttu-id="e1e96-140">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="e1e96-140">The following example shows the request.</span></span>
+## <a name="examples"></a><span data-ttu-id="f5bbe-143">Exemplos</span><span class="sxs-lookup"><span data-stu-id="f5bbe-143">Examples</span></span>
+
+### <a name="request"></a><span data-ttu-id="f5bbe-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f5bbe-144">Request</span></span>
+<span data-ttu-id="f5bbe-145">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-145">The following example shows the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="e1e96-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="e1e96-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f5bbe-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="f5bbe-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-onlineMeeting"
@@ -71,24 +79,24 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'123456789'
 ```
-# <a name="c"></a>[<span data-ttu-id="e1e96-142">C#</span><span class="sxs-lookup"><span data-stu-id="e1e96-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f5bbe-147">C#</span><span class="sxs-lookup"><span data-stu-id="f5bbe-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-onlinemeeting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e1e96-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e1e96-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f5bbe-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f5bbe-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-onlinemeeting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e1e96-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e1e96-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f5bbe-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f5bbe-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-onlinemeeting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="e1e96-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="e1e96-145">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f5bbe-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="f5bbe-150">Response</span></span>
 
-> <span data-ttu-id="e1e96-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e1e96-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="f5bbe-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -157,7 +165,7 @@ Content-Length: 1574
   "allowedPresenters": "everyone"
 }
 ```
-><span data-ttu-id="e1e96-148">**Observação:** Se 'Accept-Language: ja' for especificado para indicar japonês, por exemplo, a resposta incluirá o seguinte.</span><span class="sxs-lookup"><span data-stu-id="e1e96-148">**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.</span></span>
+><span data-ttu-id="f5bbe-153">**Observação:** Se 'Accept-Language: ja' for especificado para indicar japonês, por exemplo, a resposta incluirá o seguinte.</span><span class="sxs-lookup"><span data-stu-id="f5bbe-153">**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.</span></span>
 
 ```json
     "joinInformation": {
