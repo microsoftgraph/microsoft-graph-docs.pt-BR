@@ -1,16 +1,16 @@
 ---
 title: Obter onlineMeeting
-description: Recupere as propriedades e os relacionamentos de um objeto de **reunião online** .
+description: Recupere as propriedades e os relacionamentos de um objeto onlineMeeting.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7aaf1c19a6da04b3ceca9124051f056af473c04f
-ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
+ms.openlocfilehash: 435a8fcd37a44d6d6a31de2c8ae4e10f67a75951
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47423657"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843272"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -20,34 +20,42 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e os relacionamentos de um objeto [onlineMeeting](../resources/onlinemeeting.md) .
 
-> **Observação:** Atualmente, o `GET` método só tem suporte para uma [ID de conferência VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Essas IDs são geradas para usuários licenciados de Cloud-Video-Interop e este método é usado para obter os detalhes para ingressar na reunião.
-
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)           |
-|:---------------------------------------|:------------------------------------------------------|
+| :------------------------------------- | :---------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                                        |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
-| Aplicativo                            | OnlineMeetings.Read.All                               |
+| Aplicativo                            | OnlineMeetings. Read. All, OnlineMeetings. ReadWrite. All * |
+
+> [!IMPORTANT]
+> \* Os administradores devem criar uma [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy.md) e concedê-la a um usuário, autorizando o aplicativo configurado na política a recuperar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /users/{userId}/onlineMeetings/{meetingId}
 ```
-> **Observação:** o caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
+
+> **Observações:**
+>
+> - O caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
+> - `id` nas duas primeiras rotas refere-se à [ID de conferência VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up).
+> - `userId` é a ID de objeto de um usuário no [portal de gerenciamento do usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para mais detalhes, consulte [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy.md).
+> - `meetingId` é a **ID** de uma [entidade onlineMeeting](../resources/onlinemeeting.md).
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome          | Descrição               |
-|:--------------|:--------------------------|
-| Autorização | {token} de portador. Obrigatório. |
-| Accept-Language  | Idioma. Opcional. |
+| Nome            | Descrição               |
+| :-------------- | :------------------------ |
+| Autorização   | {token} de portador. Obrigatório. |
+| Accept-Language | Idioma. Opcional.       |
 
 Se a solicitação contiver um `Accept-Language`cabeçalho HTTP, o `content` de `joinInformation` estará na variante de idioma e código de idioma especificada `Accept-Language` no cabeçalho. O conteúdo padrão será em inglês.
 

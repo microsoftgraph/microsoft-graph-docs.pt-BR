@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9998e67ff9e8ffe93d349115cfe50beb8d317073
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 051db73f098272bc97fe3477e6bd8dd3f49eddf5
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456520"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843265"
 ---
 # <a name="delete-onlinemeeting"></a>Excluir onlineMeeting
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,21 +22,37 @@ Excluir um objeto [onlineMeeting](../resources/onlinemeeting.md) .
 
 ## <a name="permissions"></a>Permissões
 
-| Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | OnlineMeetings.ReadWrite              |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
-| Aplicativo                            | Sem suporte.                                  |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | OnlineMeetings.ReadWrite                    |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | OnlineMeetings.ReadWrite.All*                |
+
+> [!IMPORTANT]
+> \* Os administradores devem criar uma [política de acesso de aplicativo](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) e conceder a ele um usuário, autorizando o aplicativo configurado na política para excluir uma reunião online em nome desse usuário (a ID de usuário especificada no caminho reuqest) foi criada.
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Solicitação ao usar um token delegado
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{id}
+DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
 ```
+
+Solicitação ao usar um token de aplicativo:
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
+```
+
+> **Observação:**
+>
+> - `userId` é a ID de objeto de um usuário no [portal de gerenciamento do usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para mais detalhes, consulte [política de acesso de aplicativo](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
+> - `meetingId` é a **ID** de uma [entidade onlineMeeting](../resources/onlinemeeting.md).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação

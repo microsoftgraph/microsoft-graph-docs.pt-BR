@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 56a316e69f247842d38c5e5f606d986d0600cbc9
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 6e971c8b608ad5e42c225cea2aa5da0ad06cedbc
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45224719"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843258"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -22,24 +22,39 @@ Atualize as propriedades **StartDateTime**, **EndDateTime**, **participantes**e 
 
 ## <a name="permissions"></a>Permissões
 
-| Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | OnlineMeetings.ReadWrite              |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
-| Aplicativo                            | Sem suporte.                                  |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | OnlineMeetings.ReadWrite                    |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | OnlineMeetings.ReadWrite.All*                |
 
+> [!IMPORTANT]
+> \* Os administradores devem criar uma [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy.md) e concedê-la a um usuário, autorizando o aplicativo configurado na política a atualizar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Solicitação usando um token delegado:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{id}
+PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
 ```
 
+Solicitação usando um token de aplicativo:
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
+```
+
+> **Observações:**
+>
+> - `userId` é a ID de objeto de um usuário no [portal de gerenciamento do usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para mais detalhes, consulte [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy.md).
+> - `meetingId` é a **ID** de uma [entidade onlineMeeting](../resources/onlinemeeting.md).
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome          | Descrição               |
-|:--------------|:--------------------------|
-| Autorização | {token} de portador. Obrigatório. |
-| Content-type  | application/json. Obrigatório.|
+| Nome          | Descrição                 |
+| :------------ | :-------------------------- |
+| Autorização | {token} de portador. Obrigatório.   |
+| Content-type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [onlineMeeting](../resources/onlinemeeting.md). Somente as propriedades **StartDateTime**, **EndDateTime**, **participantes**e **Subject** podem ser modificadas. O **StartDateTime** e **EndDateTime** devem aparecer em pares.

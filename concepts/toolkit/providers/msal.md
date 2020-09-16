@@ -3,12 +3,12 @@ title: Provedor MSAL
 description: O provedor MSAL usa MSAL.js para entrar em usuários e adquirir tokens para usar com o Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: df5a2e50a72c75a8a0af62e66d9bd73c3d428606
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: e66434a1000667891304db5f0cff78c4e8b38152
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845824"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843153"
 ---
 # <a name="msal-provider"></a>Provedor MSAL
 

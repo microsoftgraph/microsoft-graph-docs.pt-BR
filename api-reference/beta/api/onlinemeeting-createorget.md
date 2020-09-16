@@ -1,16 +1,16 @@
 ---
 title: 'onlineMeeting: createOrGet'
-description: Criar uma reunião online com uma ID externa personalizada especificada. Se a ID externa já existir, essa API retornará o objeto **onlineMeeting** com essa ID externa.
+description: Criar uma reunião online com uma ID externa personalizada especificada. Se a ID externa já existir, essa API retornará o objeto onlineMeeting com essa ID externa.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d99a9ac98fd5fbb4ca5c96904831bb76c93b158c
-ms.sourcegitcommit: f26428bce3034e206b901e9c747cffcf64b55882
+ms.openlocfilehash: c66b3ccdf0ddc5e60b68b34c546193b8081d2c69
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651320"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47842775"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -26,34 +26,47 @@ Criar um objeto [onlineMeeting](../resources/onlinemeeting.md) com uma ID extern
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | OnlineMeetings.ReadWrite                    |
-| Delegado (conta pessoal da Microsoft) | Não suportado                               |
-| Aplicativo                            | Não suportado                |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | OnlineMeetings.ReadWrite.All*                |
+
+> [!IMPORTANT]
+> \* Os administradores devem criar uma [política de acesso de aplicativo](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) e conceder a ele um usuário, autorizando o aplicativo configurado na política para criar ou obter uma reunião online com ID externa em nome desse usuário (ID de usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Solicitação ao usar um token delegado:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
+Solicitação ao usar um token de aplicativo:
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{userId}/onlineMeetings/createOrGet
+```
+
+> **Observação:** `userId` é a ID de objeto de um usuário no [portal de gerenciamento do usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Veja mais detalhes na [política de acesso de aplicativo](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome          | Descrição               |
-|:--------------|:--------------------------|
-| Autorização | {token} de portador. Obrigatório. |
+| Nome          | Descrição                 |
+| :------------ | :-------------------------- |
+| Autorização | {token} de portador. Obrigatório.   |
 | Content-type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro        | Tipo                                     |Descrição                                                                                                                                    |
-|:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
-| chatInfo         |[chatInfo](../resources/chatinfo.md)                   |As informações de chat associadas a esta reunião online.|
-| endDateTime      | DateTime                                 | A hora de término da reunião em UTC. |
-| externalId       | Cadeia de caracteres                                   | A ID externa. Uma ID personalizada. Precisam |
-| participants     | [meetingParticipants](../resources/meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
-| startDateTime    | DateTime                                 | A hora de início da reunião em UTC. |
-| assunto          | String                                   | O assunto da reunião online. |
+| Parâmetro     | Tipo                                                       | Descrição                                                                                          |
+| :------------ | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| chatInfo      | [chatInfo](../resources/chatinfo.md)                       | As informações de chat associadas a esta reunião online.                                            |
+| endDateTime   | DateTime                                                   | A hora de término da reunião em UTC.                                                                         |
+| externalId    | Cadeia de caracteres                                                     | A ID externa. Uma ID personalizada. Precisam                                                             |
+| participants  | [meetingParticipants](../resources/meetingparticipants.md) | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
+| startDateTime | DateTime                                                   | A hora de início da reunião em UTC.                                                                       |
+| assunto       | String                                                     | O assunto da reunião online.                                                                   |
 
 > **Observações:**
 >
@@ -74,6 +87,8 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta se
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-or-get-onlinemeeting"
@@ -102,6 +117,20 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-or-get-onlinemeeting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-or-get-onlinemeeting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-or-get-onlinemeeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

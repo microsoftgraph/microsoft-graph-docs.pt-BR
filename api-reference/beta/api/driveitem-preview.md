@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: 074bc4c0da2362c6be9958be3ffec8dd4027b690
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c30e88e8efd63c79e66027d754f35bad8163f5aa
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808820"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47842747"
 ---
 # <a name="driveitem-preview"></a>driveItem: visualização
 
@@ -32,9 +32,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)
 |:---------------------------------------|:-------------------------------------------
-| Delegada (conta corporativa ou de estudante)     | Files. Read, files. ReadWrite, files. ReadWrite. All, sites. ReadWrite. All
-| Delegada (conta pessoal da Microsoft) | Files. Read, files. ReadWrite, files. ReadWrite. All
-| Aplicativo                            | Sem suporte.
+| Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+| Delegado (conta pessoal da Microsoft) | Sem suporte.
+| Aplicativo                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -92,6 +92,8 @@ param1=value&param2=another%20value
 
 ### <a name="viewers"></a>Visualizadores
 
+>**Observação:** Esse parâmetro é preterido e não será disponibilizado no ponto de extremidade v 1.0.
+
 Os valores a seguir são permitidos para o parâmetro **Viewer** .
 
 | Valor do tipo | Descrição
@@ -101,11 +103,13 @@ Os valores a seguir são permitidos para o parâmetro **Viewer** .
 | `office`   | Use a versão da Web do Office para renderizar o arquivo. Só é válido para documentos do Office.
 
 ### <a name="chrome-vs-chromeless"></a>Cromado vs não monocromático
+>**Observação:** Esse parâmetro é preterido e não será disponibilizado no ponto de extremidade v 1.0.
 
 Se `chromeless` for true, a visualização será uma renderização Bare do arquivo.
 Caso contrário, poderão existir barras de ferramentas/botões adicionais exibidos para interagir com o documento/modo de exibição.
 
 ### <a name="viewedit"></a>Exibir/editar
+>**Observação:** Esse parâmetro é preterido e não será disponibilizado no ponto de extremidade v 1.0.
 
 Se `allowEdit` for true, o documento poderá ser modificado pela interação do usuário com a visualização incorporada.
 Esse recurso pode não estar disponível para todos os aplicativos de visualização ou tipos de arquivo.
