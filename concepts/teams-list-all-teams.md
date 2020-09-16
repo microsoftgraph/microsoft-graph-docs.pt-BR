@@ -4,12 +4,12 @@ description: 'Listar todas as equipes '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5161abd3e21a394ebe5872efc9a75c103d75041d
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: a7e95945d6d13b65d19b168352e067d3c2382ec0
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868517"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843237"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>Listar todas as equipes do Microsoft Teams para uma organização
 
@@ -88,7 +88,7 @@ Content-length: xxx
                 "Team"
             ],
             "securityEnabled": false,
-            "visibility": "Private",
+            "visibility": "Private"
         },
         {
             "id": "8090c93e-ba7c-433e-9f39-08c7ba07c0b3",
@@ -104,7 +104,7 @@ Content-length: xxx
                 "Team"
             ],
             "securityEnabled": false,
-            "visibility": "Private",
+            "visibility": "Private"
         }
     ]
 }

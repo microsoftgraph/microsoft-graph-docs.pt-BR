@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e2980d91ae22764c8879df03d52bc5d0b120f1a3
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: fa995b4b545eb2f9f7ea42d9fd9d8744a0a656cb
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819746"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843174"
 ---
 # <a name="list-teamsapp"></a>Listar teamsApp
 
@@ -42,7 +42,7 @@ GET /appCatalogs/teamsApps
 
 Este método suporta o `$filter`, `$select`, e `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-`$expand=AppDefinitions`O uso retornará mais informações sobre o estado do aplicativo, como o **publishingstate**, que reflete o status de análise de envio de aplicativos e retorna se um aplicativo foi aprovado, rejeitado ou permanece em revisão. 
+O uso `$expand=AppDefinitions` retornará mais informações sobre o estado do aplicativo. 
 
 > **Observação:** Você pode filtrar em qualquer um dos campos do objeto [teamsApp](../resources/teamsapp.md) para diminuir a lista de resultados. Você pode usar qualquer uma das seguintes operações de filtro: igual, não igual, e, ou, e não.
 
@@ -164,84 +164,4 @@ Content-Type: application/json
     }
   ]
 }
-```
-
-### <a name="example-3-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Exemplo 3: listar aplicativos com uma determinada ID e retornar o estado de revisão de envio
-
-O exemplo a seguir lista os aplicativos com uma determinada ID e expande **appDefinitions** para retornar o **publishingstate**, que reflete o estado de análise de envio do aplicativo. `Submitted` significa que a revisão está pendente, `published` significa que o aplicativo foi aprovado pelo administrador e `rejected` significa que o aplicativo foi rejeitado pelo administrador.
-
-#### <a name="request"></a>Solicitação
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_teamsapp"
-}-->
-
-```msgraph-interactive
-GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Resposta
-
-<!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true,
-  "isCollection": true
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": [
-    {
-      "id": "876df28f-2e78-423b-94a5-44181bd0e225",
-      "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
-      "name": "Test App",
-      "version": "1.0.1",
-      "distributionMethod": "Organization",
-      "appDefinitions": [
-                {
-
-                    "id": "NGQyMGNiNDUtZWViYS00ZTEyLWE3YzktMGQ0NDgzYjYxNzU2IyMxLjAuMA==",
-
-                    "teamsAppId": "876df28f-2e78-423b-94a5-44181bd0e225",
-
-                    "azureADAppId": null,
-
-                    "displayName": "Test App",
-
-                    "version": "1.0.1",
-
-                    "requiredResourceSpecificApplicationPermissions": [],
-
-                    "publishingState": "published"
-
-                  }
-            ]
-      }
-    ]
-  }
 ```

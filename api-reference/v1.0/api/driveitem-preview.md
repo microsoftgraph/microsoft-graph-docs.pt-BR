@@ -5,18 +5,18 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 470af653190001623ea90f6afb7955a3727cceb5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 613fab3adf4da1d3fd2f972818d0cee83db6f6cf
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808435"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843181"
 ---
 # <a name="driveitem-preview"></a>driveItem: visualização
 
 Namespace: microsoft.graph
 
-Esta ação permite que você obtenha URLs que podem ser inseridas de curta duração em um item para renderizar uma visualização temporária.
+Esta ação permite que você obtenha uma URL incorporável de curta duração para um item a fim de renderizar uma visualização temporária.
 
 Se você quiser obter links incorporáveis de longa duração, use a API [CreateLink][] em vez disso.
 
@@ -30,9 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)
 |:---------------------------------------|:-------------------------------------------
-| Delegado (conta corporativa ou de estudante)     | Files. Read, files. ReadWrite, files. ReadWrite. All, sites. ReadWrite. All
-| Delegado (conta pessoal da Microsoft) | Files. Read, files. ReadWrite, files. ReadWrite. All
-| Aplicativo                            | Sem suporte.
+| Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+| Delegado (conta pessoal da Microsoft) | Sem suporte.
+| Aplicativo                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -69,7 +69,7 @@ A solicitação deve ser um objeto JSON com as seguintes propriedades.
 
 A resposta será um objeto JSON que contém as seguintes propriedades:
 
-| Name           | Tipo   | Descrição
+| Nome           | Tipo   | Descrição
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | URL adequada para incorporação usando HTTP GET (IFrames, etc.)
 | postUrl        | string | URL adequada para incorporação usando HTTP POST (Form Post, JS, etc.)
