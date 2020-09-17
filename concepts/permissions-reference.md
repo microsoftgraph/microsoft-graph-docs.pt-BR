@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 3bed252af8ecbbcd4e54d34a4f5dcf53fd0a323f
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: 8f1edef15b236bff614077cdddbb66603a6f3fc0
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47439868"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47842971"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1189,8 +1189,10 @@ Publique uma notificação centrada no usuário, que pode ser entregue aos vári
 
 |Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|Ler detalhes de Reunião Online do aplicativo |Permite que o aplicativo leia os detalhes da reunião online associada ao VTC em sua organização, sem um usuário conectado.|Sim|
+|_OnlineMeetings.Read.All_|Ler detalhes de Reunião Online do aplicativo |Permite que o aplicativo leia os detalhes da reunião online em sua organização, sem um usuário conectado.|Sim|
 |_OnlineMeetings.ReadWrite.All_|Ler detalhes de Reunião Online a partir do aplicativo|Permite que um aplicativo crie e leia as reuniões online sem um usuário conectado.|Sim|
+
+> **Importante** os administradores podem configurar [política de acesso a aplicativos](cloud-communication-online-meeting-application-access-policy.md) para permitir que os aplicativos acessem as reuniões online em nome de um usuário.
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1201,8 +1203,14 @@ Publique uma notificação centrada no usuário, que pode ser entregue aos vári
 
 #### <a name="application"></a>Aplicativo
 
-* _OnlineMeetings.Read.All_: recuperar as propriedades e as relações de uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'`).
-
+* _OnlineMeetings.Read.All_
+  * Recuperar as propriedades e os relacionamentos de uma[reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'`).
+  * Recuperar uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) em nome de um usuário(`GET /beta/users/{userId}/onlineMeetings/{id})
+* _OnlineMeetings.ReadWrite.All_
+  * Criar uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) em nome de um usuário (`POST /beta/users/{userId}/onlineMeetings/)
+  * Atualizar uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) em nome de um usuário(`PATCH /beta/users/{userId}/onlineMeetings/{id})
+  * Excluir uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) em nome de um usuário (`DELETE /beta/users/{userId}/onlineMeetings/{id})
+  
 > **Observação**: criar uma [reunião online](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) cria uma reunião em nome de um usuário, mas não a mostra no Calendário do usuário.
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
@@ -1574,6 +1582,24 @@ As permissões de segurança só são válidas para contas corporativas ou de es
 
 - _SecurityEvents.Read.All_: Ler a lista de todos os alertas de segurança de todos os provedores de segurança licenciados disponíveis para o seu locatário (`GET /beta/security/alerts`)
 - _SecurityEvents.ReadWrite.All_: Atualize ou leia os alertas de segurança de todos os provedores de segurança licenciados disponíveis para o seu locatário (`PATCH /beta/security/alerts/{id}`)
+
+---
+
+## <a name="short-notes-permissions-private-preview"></a>Permissões de Anotações Curtas ([visualização privada](#permissions-availability-status))
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres  | Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ShortNotes.Read_ | Ler anotações curtas do usuário conectado | Permite que o aplicativo leia todas as anotações curtas às quais um usuário conectado tenha acesso. | Não | Sim |
+| _ShortNotes.ReadWrite_ | Ler, criar, editar e excluir anotações curtas do usuário conectado | Permite que o aplicativo leia, crie, edite e exclua anotações curtas de um usuário conectado. | Não | Sim |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _ShortNotes.Read.All_ | Ler as anotações curtas de todos os usuários | Permite que o aplicativo leia todas as anotações curtas sem um usuário conectado. | Sim | 
+| _ShortNotes.ReadWrite.All_ | Ler, criar, editar e excluir anotações curtas de todos os usuários | Permite ao aplicativo ler, criar, editar e excluir todas as anotações curtas sem um usuário conectado. | Sim |
 
 ---
 

@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d210a46682d425f702b040a39f40b133c0d14f94
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.openlocfilehash: c39b67352231924b826351248d208d2005dd8add
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413265"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843244"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,11 +18,12 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 ## <a name="september-2020"></a>Setembro de 2020
 
-### <a name="reports"></a>Relatórios
+### <a name="cloud-communications"></a>Comunicações na nuvem
 
-| **Tipo de alteração** | **Versão** | **Descrição**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Adição        | Beta e v1.0 | Adicionadas as propriedades **outlookM365** e **outlook2019** à entidade [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta).|
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada a propriedade **lobbyBypassSettings**, **isEntryExitAnnounced** e **allowedPresenters** à entidade [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta).|
+| Adição | beta | Suporte adicional para permissões de aplicativo para a entidade [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) e os métodos associados. |
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 
@@ -35,6 +36,12 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | A propriedade **schedule** foi adicionada a [accessPackageAssignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta) e [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) no gerenciamento de direitos.|
+
+### <a name="reports"></a>Relatórios
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição        | Beta e v1.0 | Adicionadas as propriedades **outlookM365** e **outlook2019** à entidade [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta).|
 
 ### <a name="teamwork"></a>Trabalho em equipe
 
@@ -75,7 +82,6 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | Beta e v1.0 | Propriedade de **transcrição** adicionada à entidade [chamada](/graph/api/resources/call).|
 | Adição | v1.0 | A API **CancelMediaProcessing** foi adicionada à entidade [chamada](/graph/api/resources/call).|
 | Adição | Beta e v1.0 | Propriedade de **transcrição** adicionada à entidade [chamada](/graph/api/resources/call).|
 

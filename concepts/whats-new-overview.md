@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 8784f43683578c3dfd730f5bf08e2d4e84abed57
-ms.sourcegitcommit: f4e95b6e06dedeca0aa6b27e8ad1c655b1d45fec
+ms.openlocfilehash: 7d1fa2979084ac901c26b1f4e5da5994b9c39874
+ms.sourcegitcommit: f26428bce3034e206b901e9c747cffcf64b55882
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47448436"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47651300"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -47,8 +47,8 @@ Obtenha a data e a hora em que um [canal](/graph/api/resources/channel?view=grap
 [Controle de alterações](delta-query-overview.md) de recursos com suporte para a nuvem nacional do Microsoft Graph para o Governo dos EUA.
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
-- [Cancele](/graph/api/call-cancelmediaprocessing) as ações de IVR (resposta de voz interativas) que estão sendo processadas ou na fila, estejam elas [reproduzindo um prompt de áudio](/graph/api/call-playprompt) ou [gravando uma resposta](/graph/api/call-record).
-- Obtenha as [transcrições da chamada](/graph/api/resources/calltranscriptioninfo) por meio da propriedade **transcrição**.
+- [Cancele](/graph/api/call-cancelmediaprocessing) as ações de IVR (Resposta de Voz Interativas) que estão sendo processadas ou na fila, estejam elas [reproduzindo um prompt de áudio](/graph/api/call-playprompt) ou [gravando uma resposta](/graph/api/call-record).
+- Obtenha [informações sobre as transcrições da chamada](/graph/api/resources/calltranscriptioninfo) por meio da propriedade **transcrição**.
 
 ### <a name="teamwork"></a>Trabalho em equipe
 - Use uma maneira alternativa de [criar uma equipe](/graph/api/team-post) diretamente sem criar um grupo primeiro.
