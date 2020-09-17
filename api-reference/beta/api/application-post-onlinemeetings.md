@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 30f15f495fc73f0d976da820b43c10a88b3d5f9c
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 1450e7784394c175209ef1c5524871d029a49981
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509522"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47842782"
 ---
 # <a name="create-onlinemeeting"></a>Criar ReuniãoOnline
 
@@ -18,34 +18,45 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma reunião online em nome de um usuário usando a ID de objeto (OID) no token de usuário.
+Crie uma reunião online em nome de um usuário usando a ID de objeto (OID) no token de usuário (permissão delegada) ou solicite o caminho (permissão de aplicativo).
 
 > **Observação**: a reunião não é exibida no calendário do usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | OnlineMeetings.ReadWrite                    |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Application                            | Não Suportado.\* |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)           |
+| :------------------------------------- | :---------------------------------------------------- |
+| Delegado (conta corporativa ou de estudante)     | OnlineMeetings.ReadWrite                              |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
+| Aplicativo                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \* O suporte para a criação de uma reunião online com um token de aplicativo estará disponível em um futuro próximo. Forneceremos mais políticas de aplicativos que são complementares ao escopo de permissão baseado em aplicativos. Atualmente, você deve usar o caminho /me com um token de usuário.
+> \* Os administradores devem criar uma [política de acesso aos aplicativos ](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) e concedê-la a um usuário, autorizando o aplicativo configurado na política para criar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Solicitação ao usar um token delegado:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings
 ```
 
+Solicitar quando usar um token de aplicativo:
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{userId}/onlineMeetings
+```
+
+> **Observação: ** `userId` é a ID de objeto de um usuário no [portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Veja mais detalhes na [política](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) de acesso aos aplicativos.
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome          | Descrição               |
-|:--------------|:--------------------------|
-| Autorização | {token} de portador. Obrigatório. |
-| Content-type  | application/json. Obrigatório. |
-| Accept-Language  | Idioma. Opcional. |
+
+| Nome            | Descrição                 |
+| :-------------- | :-------------------------- |
+| Autorização   | {token} de portador. Obrigatório.   |
+| Content-type    | application/json. Obrigatório. |
+| Accept-Language | Idioma. Opcional.         |
 
 Se a solicitação contiver um `Accept-Language`cabeçalho HTTP, o `content` de `joinInformation` estará na variante de idioma e código de idioma especificada `Accept-Language` no cabeçalho. O conteúdo padrão será em inglês.
 
