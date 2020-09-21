@@ -3,14 +3,14 @@ title: Obter win32LobApp
 description: Leia as propriedades e as relações do objeto win32LobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b9141829fa7e321d8447ca8b499511bcf8ae0b5
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 3964b35c809815d7823b3243fcfb2e97bd25533c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123446"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976679"
 ---
 # <a name="get-win32lobapp"></a>Obter win32LobApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3707
+Content-Length: 3718
 
 {
   "value": {
@@ -99,6 +99,8 @@ Content-Length: 3707
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -178,11 +180,13 @@ Content-Length: 3707
       "publisher": "Publisher value"
     },
     "setupFilePath": "Setup File Path value",
-    "installLanguage": "Install Language value",
     "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
   }
 }
 ```
+
+
+
 
 
 

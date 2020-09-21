@@ -3,14 +3,14 @@ title: Excluir win32LobApp
 description: Exclui win32LobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04347de735f62e594d6e769c4aca9c1cc25e093e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5c39c556661e112f7e1c337533280e6d67586759
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43409511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976701"
 ---
 # <a name="delete-win32lobapp"></a>Excluir win32LobApp
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Listar defaultManagedAppProtections
 description: Listar propriedades e relações dos objetos defaultManagedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 851772988d8b962bc8bf2afcbc5c45172c1ab3f5
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: eaa74db7ecab2053bed8e3b7656efb299059a770
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791942"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043189"
 ---
 # <a name="list-defaultmanagedappprotections"></a>Listar defaultManagedAppProtections
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5428
+Content-Length: 5542
 
 {
   "value": [
@@ -181,11 +181,16 @@ Content-Length: 5428
       "appActionIfAndroidDeviceModelNotAllowed": "wipe",
       "customDialerAppProtocol": "Custom Dialer App Protocol value",
       "customDialerAppPackageId": "Custom Dialer App Package Id value",
-      "customDialerAppDisplayName": "Custom Dialer App Display Name value"
+      "customDialerAppDisplayName": "Custom Dialer App Display Name value",
+      "biometricAuthenticationBlocked": true,
+      "requiredAndroidSafetyNetEvaluationType": "hardwareBacked"
     }
   ]
 }
 ```
+
+
+
 
 
 

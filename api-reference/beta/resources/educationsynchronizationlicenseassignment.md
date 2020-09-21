@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9d46e19c1869f7dff96a563dd54b1b9f303ce85a
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: b5aea834ff2943046aff8a390ae110d775fd2f20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434960"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989637"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>tipo de recurso educationSynchronizationLicenseAssignment
 
@@ -25,7 +25,7 @@ Representa as informações de licença a serem atribuídas às contas de usuár
 | Propriedade  | Tipo              | Descrição                                                                                    |
 | :-------- | :---------------- | :--------------------------------------------------------------------------------------------- |
 | appliesTo | Cadeia de caracteres            | O tipo de função de usuário a ser atribuído à licença. Os valores possíveis são: `student`, `teacher`, `faculty`. |
-| skuIds    | Conjunto de cadeias de caracteres | Representa os identificadores de SKU das licenças a serem atribuídas.                                      |
+| skuIds    | Coleção de cadeias de caracteres | Representa os identificadores de SKU das licenças a serem atribuídas.                                      |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -43,3 +43,5 @@ Representa as informações de licença a serem atribuídas às contas de usuár
   "skuIds": ["String"]
 }
 ```
+
+

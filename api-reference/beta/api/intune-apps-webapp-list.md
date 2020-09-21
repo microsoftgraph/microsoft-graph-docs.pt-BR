@@ -3,14 +3,14 @@ title: Listar webApps
 description: Listar propriedades e relações dos objetos webApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 25504b1b58a43f044053db262cccc92f5ff29d4f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 54d801483d662be34f2326cc0391d9902fa5b3d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43393946"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976764"
 ---
 # <a name="list-webapps"></a>Listar webApps
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1092
+Content-Length: 1157
 
 {
   "value": [
@@ -95,12 +95,17 @@ Content-Length: 1092
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "appUrl": "https://example.com/appUrl/",
       "useManagedBrowser": true
     }
   ]
 }
 ```
+
+
+
 
 
 

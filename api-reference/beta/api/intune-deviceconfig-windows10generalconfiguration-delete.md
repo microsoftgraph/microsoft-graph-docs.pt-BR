@@ -3,14 +3,14 @@ title: Excluir windows10GeneralConfiguration
 description: Exclui windows10GeneralConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f26d4a5056ef691e14d618df48ed817f78f94b19
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1988ed0ce515d9a83fb94d6cb0c11bb2f007869e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43431036"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022656"
 ---
 # <a name="delete-windows10generalconfiguration"></a>Excluir windows10GeneralConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

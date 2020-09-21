@@ -3,14 +3,14 @@ title: tipo de recurso deviceConfigurationTargetedUserAndDevice
 description: Resumo de conflito para um conjunto de políticas de configuração de dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3a553cf15a82b25d78eb983037d45c1c3c245025
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: eb569346aa16f42c50f8ddb246f127bfeadae087
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469364"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016342"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>tipo de recurso deviceConfigurationTargetedUserAndDevice
 
@@ -27,8 +27,8 @@ Resumo de conflito para um conjunto de políticas de configuração de dispositi
 |:---|:---|:---|
 |deviceId|Cadeia de caracteres|A ID do dispositivo no check-in.|
 |deviceName|String|O nome do dispositivo no check-in.|
-|userId|String|A ID do usuário no check-in.|
-|userDisplayName|String|O nome de exibição do usuário no check-in|
+|userId|Cadeia de caracteres|A ID do usuário no check-in.|
+|userDisplayName|Cadeia de caracteres|O nome de exibição do usuário no check-in|
 |userPrincipalName|String|O UPN do usuário no check-in.|
 |lastCheckinDateTime|DateTimeOffset|Horário da última verificação para este par de usuários/dispositivos.|
 
@@ -53,6 +53,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastCheckinDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

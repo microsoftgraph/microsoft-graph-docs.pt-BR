@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 904e094f177adab51addcf90826ac35a016cf737
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b45da6cd8533d9522d42428f6e222a669f17e681
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455295"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050266"
 ---
 # <a name="applicationserviceprincipal-resource-type"></a>tipo de recurso applicationServicePrincipal
 
@@ -28,7 +28,7 @@ Nenhum
 
 | Propriedade | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|application|[application](../resources/application.md)|Representa um aplicativo registrado no Azure Active Directory.|
+|application|[aplicativo](../resources/application.md)|Representa um aplicativo registrado no Azure Active Directory.|
 |servicePrincipal|[servicePrincipal](../resources/serviceprincipal.md)|Representa uma instância de um aplicativo em um diretório.|
 
 ## <a name="relationships"></a>Relações
@@ -65,3 +65,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

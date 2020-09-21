@@ -3,14 +3,14 @@ title: Excluir windowsAppX
 description: Exclui windowsAppX.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c669a7305d10d37f1d9a1e6fa4e4dc22a96479c5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 29ad11f3f73295eeae7de99ecd17ef1b51be7c1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43393799"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976645"
 ---
 # <a name="delete-windowsappx"></a>Excluir windowsAppX
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

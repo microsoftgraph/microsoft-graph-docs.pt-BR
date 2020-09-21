@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: c9611c85f45dcd597ab81c325936a4a8a9075642
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: dd63f52485e27d44681a277df26492c33a1740f3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965405"
 ---
 # <a name="passwordcredential-resource-type"></a>tipo de recurso passwordCredential
 
@@ -85,3 +85,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

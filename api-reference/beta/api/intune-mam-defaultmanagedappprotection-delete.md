@@ -3,14 +3,14 @@ title: Excluir defaultManagedAppProtection
 description: Exclui defaultManagedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b505892e7d8d20a7c959dd5d170822ca32a84d8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c741df90d3bcd6691db8500916e5d8ea75ad67ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444568"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043238"
 ---
 # <a name="delete-defaultmanagedappprotection"></a>Excluir defaultManagedAppProtection
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

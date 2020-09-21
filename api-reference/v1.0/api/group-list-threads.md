@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f8821aa7892d312f835dee0c9ee8114c4c6ee1e0
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 5a25ae865219dde471e1c8d467dac2d963056f66
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744028"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057608"
 ---
 # <a name="list-threads"></a>Listar threads
 
@@ -136,3 +136,4 @@ Content-length: 536
   "suppressions": [
   ]
 }-->
+

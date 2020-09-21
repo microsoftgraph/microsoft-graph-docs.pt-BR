@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 59650bc56554b9bd4dd7135ae44d53e153c159f8
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 2af4ef9f17452714373d42b67af6e87a7f87fe1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434834"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989644"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>tipo de recurso educationSynchronizationError
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa um erro durante a validação e/ou sincronização de perfil de dados da escola. Um erro exclusivo é gerado para cada entrada que não consegue validar e/ou sincronizar com o Azure Active Directory (Azure AD).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                                     | Tipo de retorno                                  | Descrição                                                           |
 | :------------------------------------------------------------------------- | :------------------------------------------- | :-------------------------------------------------------------------- |
@@ -30,13 +30,13 @@ Representa um erro durante a validação e/ou sincronização de perfil de dados
 
 | Propriedade             | Tipo           | Descrição                                                     |
 | :------------------- | :------------- | :-------------------------------------------------------------- |
-| id                   | Cadeia de caracteres         | O identificador exclusivo do recurso. (somente leitura)             |
-| EntryType            | Cadeia de caracteres         | Representa a entidade de sincronização (escola, seção, aluno, professor). |
+| id                   | String         | O identificador exclusivo do recurso. (somente leitura)             |
+| EntryType            | String         | Representa a entidade de sincronização (escola, seção, aluno, professor). |
 | errorCode            | Cadeia de caracteres         | Representa o código de erro para esse erro.                       |
-| errorMessage         | Cadeia de caracteres         | Contém uma descrição do erro.                            |
-| unindovalue         | Cadeia de caracteres         | O identificador exclusivo da entrada.                            |
+| errorMessage         | String         | Contém uma descrição do erro.                            |
+| unindovalue         | String         | O identificador exclusivo da entrada.                            |
 | recordedDateTime     | DateTimeOffset | A hora da ocorrência desse erro.                           |
-| reportableIdentifier | Cadeia de caracteres         | O identificador desta entrada de erro.                             |
+| reportableIdentifier | String         | O identificador desta entrada de erro.                             |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -59,3 +59,5 @@ Representa um erro durante a validação e/ou sincronização de perfil de dados
   "reportableIdentifier": "String"
 }
 ```
+
+

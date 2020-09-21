@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 30f614142486cb1403d6f4ca13cecbde68fd5c7d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6696ee897a3baf98e0bc3d156771ae23386b2ccc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440007"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983197"
 ---
 # <a name="chart-image"></a>Chart: Image
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -98,3 +98,5 @@ Se você quiser personalizar a exibição da imagem, especifique uma altura, lar
   "suppressions": []
 }
 -->
+
+

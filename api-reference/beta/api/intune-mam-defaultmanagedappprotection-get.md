@@ -3,14 +3,14 @@ title: Get defaultManagedAppProtection
 description: Ler propriedades e relações do objeto defaultManagedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c5254f93d791a33366319d8b02e8ec288fe4f173
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 4449f974038c7a9618f0c8d25c23bf0288d9c7c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791949"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043217"
 ---
 # <a name="get-defaultmanagedappprotection"></a>Get defaultManagedAppProtection
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5190
+Content-Length: 5300
 
 {
   "value": {
@@ -183,10 +183,15 @@ Content-Length: 5190
     "appActionIfAndroidDeviceModelNotAllowed": "wipe",
     "customDialerAppProtocol": "Custom Dialer App Protocol value",
     "customDialerAppPackageId": "Custom Dialer App Package Id value",
-    "customDialerAppDisplayName": "Custom Dialer App Display Name value"
+    "customDialerAppDisplayName": "Custom Dialer App Display Name value",
+    "biometricAuthenticationBlocked": true,
+    "requiredAndroidSafetyNetEvaluationType": "hardwareBacked"
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 5abe6b5fcf56544d587edbedf20f22594be0cdd0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c6b39829d2b55dc872d281443eaad1b279715b50
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42504710"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989707"
 ---
 # <a name="customers-resource-type"></a>tipo de recurso clientes
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa um cliente no Dynamics 365 Business central.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                              |Tipo de retorno| Descrição      |
 |:----------------------------------------------------|:----------|:-----------------|
@@ -33,23 +33,23 @@ Representa um cliente no Dynamics 365 Business central.
 | Propriedade    | Tipo     |Descrição|
 |:------------|:---------|:----------|
 |id           |GUID      |A ID exclusiva do item. Não editável.|
-|number       |cadeia de caracteres    |O número do cliente.|
-|displayName  |cadeia de caracteres    |Especifica o nome do cliente. Esse nome aparecerá em todos os documentos de vendas do cliente.|
+|number       |string    |O número do cliente.|
+|displayName  |string    |Especifica o nome do cliente. Esse nome aparecerá em todos os documentos de vendas do cliente.|
 |type         |string    |Especifica o tipo de cliente, pode ser "empresa" ou "pessoa".|
 |address      |[Extra. Address](../resources/dynamics-complextypes.md)|Especifica o endereço do cliente. Esse endereço aparecerá em todos os documentos de vendas do cliente.|
-|phoneNumber  |cadeia de caracteres    |Especifica o número de telefone do cliente.|
+|phoneNumber  |string    |Especifica o número de telefone do cliente.|
 |email        |cadeia de caracteres    |Especifica o endereço de email do cliente.|
-|site      |cadeia de caracteres    |Especifica o endereço da home page do cliente.|
+|site      |string    |Especifica o endereço da home page do cliente.|
 |taxLiable    |booliano   |Especifica se o cliente ou fornecedor é responsável pelo imposto sobre vendas. Defina como **true** se o cliente for responsável por impostos.|
 |taxAreaId    |GUID      |Especifica a área de impostos à qual o cliente pertence.|
-|taxAreaDisplayName|cadeia de caracteres|Especificou o nome de exibição da área de impostos à qual o cliente pertence.|
+|taxAreaDisplayName|string|Especificou o nome de exibição da área de impostos à qual o cliente pertence.|
 |taxRegistrationNumber|Cadeia de caracteres, tamanho máximo 20|Especificado o número de registro de imposto do cliente.|
 |CurrencyID   |GUID      |Especifica a moeda usada pelo cliente.|
 |currencyCode |numéricos   |O código de moeda padrão para o cliente.|
 |paymentTermsId|GUID     |Especifica qual termo de pagamento o cliente utiliza.|
 |paymentMethodId|GUID    |Especifica qual método de pagamento o cliente utiliza.|
 |shipmentMethodId|GUID   |Especifica o método de remessa que o cliente usa.|
-|bloqueou      |cadeia de caracteres    |Especifica que as transações com o cliente não podem ser lançadas. Defina como **todos**, se o cliente estiver bloqueado, defina como em branco se não for bloqueado.|
+|bloqueou      |string    |Especifica que as transações com o cliente não podem ser lançadas. Defina como **todos**, se o cliente estiver bloqueado, defina como em branco se não for bloqueado.|
 |carga      |numéricos   |Especifica o valor do pagamento que o cliente está procurando para vendas concluídas. Esse valor também é conhecido como o saldo do cliente. Somente Leitura.|
 |overdueAmount|numéricos   |Especifica o valor vencido do cliente.|
 |totalSalesExcludingTax|numéricos|Especifica o valor total de vendas excluindo o imposto do cliente.|
@@ -99,4 +99,6 @@ Veja a seguir uma representação JSON do recurso.
 
 
 ```
+
+
 

@@ -3,14 +3,14 @@ title: Excluir groupPolicyMigrationReport
 description: Exclui groupPolicyMigrationReport.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a960f8860d97ed88f0e0168020ab01f6965e76b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ddca41159cd4faa7c46caf490f4bdbb641bc7d48
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43383969"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969869"
 ---
 # <a name="delete-grouppolicymigrationreport"></a>Excluir groupPolicyMigrationReport
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

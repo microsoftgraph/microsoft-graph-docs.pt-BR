@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c4994950b58341d4c990e2d46d4f90ee743cc40c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0b1c9c903746351b1d5b28a2b7fb097844c6a567
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455792"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036057"
 ---
 # <a name="list-plans"></a>Listar planos
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -122,3 +122,5 @@ Content-length: 421
   ]
 }
 -->
+
+

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: def69ff8da77eedbaf4cd48669594994764cb2a4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d5c4391efd7da79c86176b8d45c9bd1d6ba65d56
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468321"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003014"
 ---
 # <a name="optionalclaim-resource-type"></a>tipo de recurso optionalClaim
 
 Namespace: microsoft.graph
 
-Contém uma declaração opcional associada a um [aplicativo](application.md) <!-- or a service principal -->. As `idToken`propriedades `accessToken`,, `saml2Token` e do recurso [optionalClaims](optionalclaims.md) é uma coleção de **optionalClaim**. Se houver suporte para uma declaração específica, você também poderá modificar o comportamento do optionalClaim usando a `additionalProperties` propriedade.
+Contém uma declaração opcional associada a um [aplicativo](application.md) <!-- or a service principal -->. As `idToken` `accessToken` Propriedades,, e `saml2Token` do recurso [optionalClaims](optionalclaims.md) é uma coleção de **optionalClaim**. Se houver suporte para uma declaração específica, você também poderá modificar o comportamento do optionalClaim usando a `additionalProperties` propriedade.
 
 Confira [fornecer declarações opcionais ao aplicativo Azure AD](/azure/active-directory/develop/active-directory-optional-claims) para obter mais informações.
 
@@ -25,7 +25,7 @@ Confira [fornecer declarações opcionais ao aplicativo Azure AD](/azure/active-
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |AdditionalProperties|Coleção de cadeias de caracteres| Propriedades adicionais da declaração. Se uma propriedade existir nessa coleção, ela modificará o comportamento da declaração opcional especificada na propriedade Name. |
-|essencial|Booliano| Se o valor for true, a declaração especificada pelo cliente será necessária para garantir uma experiência de autorização suave para a tarefa específica solicitada pelo usuário final. O valor padrão é falso.|
+|essencial|Boolean| Se o valor for true, a declaração especificada pelo cliente será necessária para garantir uma experiência de autorização suave para a tarefa específica solicitada pelo usuário final. O valor padrão é falso.|
 |nome|String| O nome da declaração opcional. |
 |source|String| A origem (objeto de diretório) da declaração. Há declarações predefinidas e declarações definidas pelo usuário das propriedades de extensão. Se o valor de origem for nulo, a declaração será uma declaração opcional predefinida. Se o valor de origem for User, o valor na propriedade Name será a Propriedade Extension do objeto user. |
 

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1dc33d8a5f2ae34776154a2a0f11df854dea51e5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eefbcf79da1ae2ef76010eace5248708b6c61010
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521661"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063995"
 ---
 # <a name="plannerrecentplanreference-resource-type"></a>tipo de recurso plannerRecentPlanReference
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Recomendamos que os aplicativos Notifiquem os usuários quando houver discrepân
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |lastAccessedDateTime|DateTimeOffset|A data e a hora em que o plano foi exibido pela última vez pelo usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|planTitle|String|O título do plano no momento em que o usuário o exibiu.|
+|planTitle|Cadeia de caracteres|O título do plano no momento em que o usuário o exibiu.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -60,3 +60,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

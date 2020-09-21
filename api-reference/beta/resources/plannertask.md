@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 07374c6e8dc2dfaee1caba9f7283a1404627fb22
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: b630976abce3ecebb92eed84ec593f9a1e70f2cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897341"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063993"
 ---
 # <a name="plannertask-resource-type"></a>tipo de recurso plannerTask
 
@@ -116,3 +116,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

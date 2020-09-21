@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 041bbe180df2225383d704002d06359334fb8d84
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: ea360f2600cddbf52c7a1fd95782e0212cafb494
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898160"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965467"
 ---
 # <a name="microsoft-365-active-users-reports"></a>Relatórios de usuários ativos do Microsoft 365
 
@@ -23,6 +23,7 @@ Você pode usar os relatórios do Microsoft 365 active Users para saber quantas 
 ## <a name="reports"></a>Relatórios
 | Função                                 | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Obter dados de usuário](../api/reportroot-getoffice365activeuserdetail.md) | Stream      | Obtenha detalhes sobre usuários ativos do Microsoft 365. |
+| [Obter dados de usuário](../api/reportroot-getoffice365activeuserdetail.md) | Fluxo      | Obtenha detalhes sobre usuários ativos do Microsoft 365. |
 | [Obter contagens de usuários](../api/reportroot-getoffice365activeusercounts.md) | Fluxo      | Obtenha a contagem de usuários ativos diários no período de relatório por produto. |
 | [Obter contagens de usuários dos serviços](../api/reportroot-getoffice365servicesusercounts.md) | Fluxo      | Obtenha a contagem de usuários por tipo de atividade e serviço. |
+

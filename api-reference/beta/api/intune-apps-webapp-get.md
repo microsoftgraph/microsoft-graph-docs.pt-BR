@@ -3,14 +3,14 @@ title: Acessar webApp
 description: Leia as propriedades e as relações do objeto webApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1346766a022de2d9450b85cceb7a91166ee6f4c1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c7e32446436e782be3f03df942ba6ed4f20b7ef5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43409581"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976757"
 ---
 # <a name="get-webapp"></a>Acessar webApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1024
+Content-Length: 1085
 
 {
   "value": {
@@ -99,11 +99,16 @@ Content-Length: 1024
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "appUrl": "https://example.com/appUrl/",
     "useManagedBrowser": true
   }
 }
 ```
+
+
+
 
 
 

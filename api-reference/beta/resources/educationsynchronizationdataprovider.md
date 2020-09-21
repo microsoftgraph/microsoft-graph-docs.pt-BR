@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f20bea087a23f14acd7184c5211d21687409897a
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 952d0a7f9a40f41ad87d632386d9d567036cfec7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434967"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989649"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>tipo de recurso educationSynchronizationDataProvider
 
@@ -36,3 +36,5 @@ Representa o provedor de dados a ser usado como a fonte de sincronização de um
 [educationsynchronizationdataprovider]: educationSynchronizationDataProvider.md
 [educationpowerschooldataprovider]: educationPowerSchoolDataProvider.md
 [educationcsvdataprovider]: educationCsvDataProvider.md
+
+

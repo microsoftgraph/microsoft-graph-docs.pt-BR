@@ -3,14 +3,14 @@ title: tipo de enumeração resultantAppState
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9a4b50a903dc60e9f6d152c0b11f55811f85c446
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5e39426c26f819a73d933c47a296378021d62b2c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473526"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084097"
 ---
 # <a name="resultantappstate-enum-type"></a>tipo de enumeração resultantAppState
 
@@ -25,13 +25,16 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|instalação|1|O aplicativo é instalado sem erros|
-|falhou|duas|Falha ao instalar o aplicativo.|
+|instalação|1 |O aplicativo é instalado sem erros|
+|falhou|2 |Falha ao instalar o aplicativo.|
 |não instalado|3D|O aplicativo não está instalado.|
 |uninstallFailed|4 |Falha ao desinstalar o aplicativo.|
 |pendingInstall|5 |A instalação do aplicativo está em andamento.|
 |desconhecido|99|O status do aplicativo é desconhecido.|
 |Não aplicável|-1|O aplicativo não é aplicável.|
+
+
+
 
 
 

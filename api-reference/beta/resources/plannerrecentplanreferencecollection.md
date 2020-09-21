@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f63c49013ba9e8c194c1c831e8e78f87e9b8814c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 529552be4497729824ddfb9fa9e84ea82e8ccd0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521654"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063999"
 ---
 # <a name="plannerrecentplanreferencecollection-resource-type"></a>tipo de recurso plannerRecentPlanReferenceCollection
 
@@ -23,7 +23,7 @@ Adicionar novas referências a essa coleção removerá automaticamente as entra
 
 
 ## <a name="properties"></a>Propriedades
-Você pode definir as propriedades desse tipo aberto. Os nomes das propriedades `id` são valores dos recursos [plannerPlan](plannerplan.md) e seus valores devem ser objetos [plannerRecentPlanReference](plannerrecentplanreference.md) . Para remover um item da lista favoritos, defina o valor da propriedade como `null`.
+Você pode definir as propriedades desse tipo aberto. Os nomes das propriedades são `id` valores dos recursos [plannerPlan](plannerplan.md) e seus valores devem ser objetos [plannerRecentPlanReference](plannerrecentplanreference.md) . Para remover um item da lista favoritos, defina o valor da propriedade como `null` .
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -67,3 +67,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

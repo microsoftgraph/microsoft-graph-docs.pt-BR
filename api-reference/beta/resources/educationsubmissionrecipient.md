@@ -5,16 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 79f0d7ec697d6fec80454f0c5c695d80fa889883
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0bdb49596aec86de9d978a7e9a5e750f6b8b1b8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500713"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989658"
 ---
 # <a name="educationsubmissionrecipient-resource-type"></a>tipo de recurso educationSubmissionRecipient
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ Classe abstrata que representa os diferentes conjuntos de usuários aos quais um
 
 
 ## <a name="properties"></a>Propriedades
-Nenhum
+Nenhum.
 
 <!-- {
   "blockType": "resource",
@@ -49,3 +49,5 @@ Nenhum
   "suppressions": []
 }
 -->
+
+

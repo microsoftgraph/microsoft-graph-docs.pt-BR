@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 42ab4535d7d2529c858905ce017d299d2f37a17a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5c33c91823a208ab3168067a49eed9d9b91d964
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455782"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036058"
 ---
 # <a name="create-plannerbucket"></a>Criar plannerBucket
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -117,3 +117,5 @@ Content-length: 145
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 24a2e74e9e117c13fa49efc6fba4323f75716ffe
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: d06dc9aba906f9d8e423388a39faf3ccfe414bf1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898146"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965460"
 ---
 # <a name="onedrive-activity-reports"></a>Relatórios de atividades do OneDrive
 
@@ -24,7 +24,8 @@ Use os relatórios de atividades do OneDrive para obter a atividade de cada usu�
 
 | Função                                 | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Obter dados de usuário](../api/reportroot-getonedriveactivityuserdetail.md) | Stream      | Obtenha dados sobre as atividades do OneDrive por usuário. |
+| [Obter dados de usuário](../api/reportroot-getonedriveactivityuserdetail.md) | Fluxo      | Obtenha dados sobre as atividades do OneDrive por usuário. |
 | [Obter contagens de usuários](../api/reportroot-getonedriveactivityusercounts.md) | Fluxo      | Obtenha a tendência no número de usuários ativos do OneDrive. |
 | [Obter contagens de arquivo](../api/reportroot-getonedriveactivityfilecounts.md) | Fluxo      | Obtenha o número de usuários únicos licenciados que realizaram interações de arquivos contra qualquer conta do OneDrive. |
+
 

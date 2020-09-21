@@ -3,14 +3,14 @@ title: ação createMigrationReport
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd2414ee1f7cff89b96d6ce4f2f65f1860c7dd00
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 670a0e8848f6776085e383d706ba5450d0c91aeb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43383996"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969862"
 ---
 # <a name="createmigrationreport-action"></a>ação createMigrationReport
 
@@ -94,6 +94,9 @@ Content-Length: 48
   "value": "Create Migration Report value"
 }
 ```
+
+
+
 
 
 

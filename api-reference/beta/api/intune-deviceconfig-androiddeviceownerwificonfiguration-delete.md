@@ -3,14 +3,14 @@ title: Excluir androidDeviceOwnerWiFiConfiguration
 description: Exclui androidDeviceOwnerWiFiConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ccd894e7f00c7de9a0167de3fb8b7b3a85c6d6f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f30a8ae987a6eee542a4c1f547ab183c16f5b4c2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436019"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996026"
 ---
 # <a name="delete-androiddeviceownerwificonfiguration"></a>Excluir androidDeviceOwnerWiFiConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

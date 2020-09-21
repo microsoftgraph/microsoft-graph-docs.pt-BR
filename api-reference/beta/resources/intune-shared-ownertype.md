@@ -3,14 +3,14 @@ title: tipo de enumeração ownerType
 description: Tipo de proprietário de dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4a5c1774ed090817a3128e05f02e10f67241f338
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 50ddb272d6d4e812c590814b3dda1d77a81684fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466112"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084167"
 ---
 # <a name="ownertype-enum-type"></a>tipo de enumeração ownerType
 
@@ -26,8 +26,11 @@ Tipo de proprietário de dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Unknown.|
-|empresarial|1|Pertencentes à empresa.|
-|pessoal|duas|Pertencente à pessoa.|
+|empresarial|1 |Pertencentes à empresa.|
+|pessoal|2 |Pertencente à pessoa.|
+
+
+
 
 
 

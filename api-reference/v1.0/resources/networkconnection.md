@@ -5,12 +5,12 @@ localization_priority: Normal
 author: chinguyen1
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 72fcfcd3c6849e9c8e9f05b50671e1aa611dc129
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 926bfe67ec420ae386d0215b09c91d690f7f58f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682051"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965390"
 ---
 # <a name="networkconnection-resource-type"></a>tipo de recurso networkConnection
 
@@ -90,3 +90,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

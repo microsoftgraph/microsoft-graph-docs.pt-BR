@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 525809121b07616c6eb5077f1b12d5b736586065
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: a73876185469ab762a08f409028880a4f7234d45
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434918"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989624"
 ---
 # <a name="educationsynchronizationoauth1connectionsettings-resource"></a>recurso educationSynchronizationOAuth1ConnectionSettings
 
@@ -45,3 +45,5 @@ Derivado de [educationSynchronizationConnectionSettings].
   "clientSecret": "String"
 }
 ```
+
+
