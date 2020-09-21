@@ -5,16 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e7dca8677b935fb7a5ed83a647815ed435d1e82c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 24d6b25675ae440562a8376da66af371fed4b00b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437802"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002958"
 ---
 # <a name="get-connectionoperation"></a>Obter connectionOperation
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [connectionOperation](../resources/connectionoperation.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [connectionOperation](../resources/connectionoperation.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -119,3 +119,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

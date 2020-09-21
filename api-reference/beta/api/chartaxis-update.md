@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c9d593e197c77e3ac0d656873940abcacda0152e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4028483a0f1ba0aada5cae89d87c4a84f164a2a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439748"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983127"
 ---
 # <a name="update-workbookchartaxis"></a>Atualizar workbookChartAxis
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -126,3 +126,5 @@ Content-length: 64
   ]
 }
 -->
+
+

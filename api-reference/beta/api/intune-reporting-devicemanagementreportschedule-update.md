@@ -3,14 +3,14 @@ title: Atualizar deviceManagementReportSchedule
 description: Atualiza as propriedades de um objeto deviceManagementReportSchedule.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83da32c440b068a560d8891ce896809f4116f6fa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 49b23869d3232f0ddb990bfabd642c75a0cd1420
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391499"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043105"
 ---
 # <a name="update-devicemanagementreportschedule"></a>Atualizar deviceManagementReportSchedule
 
@@ -53,24 +53,24 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para esta entidade|
-|reportScheduleName|String|Nome da agenda|
-|assunto|String|Assunto dos relatórios agendados que são entregues|
-|email|Coleção String|Emails para os quais os relatórios agendados são entregues|
-|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequência da entrega de relatórios agendados. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
+|id|Cadeia de caracteres|Identificador exclusivo para esta entidade|
+|reportScheduleName|Cadeia de caracteres|Nome da agenda|
+|assunto|Cadeia de caracteres|Assunto dos relatórios agendados que são entregues|
+|email|Coleção de cadeias de caracteres|Emails para os quais os relatórios agendados são entregues|
+|recorrência|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequência da entrega de relatórios agendados. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Hora de início da entrega dos relatórios agendados|
 |endDateTime|DateTimeOffset|Hora em que a entrega dos relatórios agendados termina|
 |userId|Cadeia de caracteres|A ID do usuário que criou o relatório|
-|reportName|String|Nome do relatório|
-|filter|String|Filtros aplicados no relatório|
-|select|Coleção String|Colunas selecionadas do relatório|
-|Classificadoporativado|Coleção String|Ordenação de colunas no relatório|
+|reportName|Cadeia de caracteres|Nome do relatório|
+|filter|Cadeia de caracteres|Filtros aplicados no relatório|
+|select|Coleção de cadeias de caracteres|Colunas selecionadas do relatório|
+|Classificadoporativado|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
 |formato|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório agendado. Os valores possíveis são: `csv` e `pdf`.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -134,6 +134,9 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ title: 'driveItem: checkout'
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 04b8d15498c7795dfbe97dac8ea064140ca48466
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 60b9f5de40f925354a0513c1b467295bf24ccb85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43511075"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009895"
 ---
 # <a name="driveitem-checkout"></a>driveItem: checkout
 
@@ -102,3 +102,4 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+

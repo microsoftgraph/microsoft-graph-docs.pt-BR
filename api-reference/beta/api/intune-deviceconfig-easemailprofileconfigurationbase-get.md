@@ -3,14 +3,14 @@ title: Obter easEmailProfileConfigurationBase
 description: Leia as propriedades e as relações do objeto easEmailProfileConfigurationBase.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b217bb2e54cd65fb928136f8f41738b9172dfc60
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e4eaab3a79ec0814d6e2bbfb4fe6d321d117c3b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433163"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077608"
 ---
 # <a name="get-easemailprofileconfigurationbase"></a>Obter easEmailProfileConfigurationBase
 
@@ -113,6 +113,9 @@ Content-Length: 1486
   }
 }
 ```
+
+
+
 
 
 

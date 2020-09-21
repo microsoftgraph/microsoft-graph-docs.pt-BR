@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: 76a540a0c1a33a1ab1cb906888c5ee6c590c48ab
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ec952c11b248153ce8fda88e4538f11e2a85c89c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806650"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989504"
 ---
 # <a name="call-records-enum-values"></a>Valores de enumeração de registros de chamadas
 
@@ -158,3 +158,5 @@ Namespace: microsoft.graph.callRecords
   "namespace": "microsoft.graph.callRecords"
 }
 -->
+
+

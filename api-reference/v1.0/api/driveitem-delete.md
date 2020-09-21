@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Excluir um DriveItem usando sua ID ou seu caminho.
 doc_type: apiPageType
-ms.openlocfilehash: e385c005565819999c3d77066ad636adda92b3d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3ea6f5d45420c5ec0ee8ce49f39bf112b288422b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517766"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009860"
 ---
 # <a name="delete-a-driveitem"></a>Excluir um DriveItem
 
@@ -103,3 +103,4 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   "suppressions": [
   ]
 } -->
+

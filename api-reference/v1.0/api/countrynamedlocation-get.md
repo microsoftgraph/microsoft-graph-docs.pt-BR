@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3670b41c9ebc32194836edfac03ebbb21eed0edb
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 8c049e8c947d931f4173e7a763b3e6b563e5ba36
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567125"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009965"
 ---
 # <a name="get-countrynamedlocation"></a>Obter countryNamedLocation
 
@@ -129,3 +129,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

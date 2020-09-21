@@ -3,14 +3,14 @@ title: Tipo de recurso rgbColor
 description: Cor em RGB.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 95b8df7634f79a1ebca4df8c89c0580b6442cd02
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0295339c031b110a3203bc5b81a3b800f8f0b896
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473519"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084048"
 ---
 # <a name="rgbcolor-resource-type"></a>Tipo de recurso rgbColor
 
@@ -47,6 +47,9 @@ Veja a seguir uma representação JSON do recurso.
   "b": 1024
 }
 ```
+
+
+
 
 
 

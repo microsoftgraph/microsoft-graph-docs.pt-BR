@@ -5,16 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 97557ad6e233506e5e074c408ffb04f83297f0af
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da2231ae3eb95260663d2907f56f91b96e08278c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522999"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084013"
 ---
 # <a name="labelingoptions-resource-type"></a>tipo de recurso labelingOptions
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ Representa as opções de rótulo que podem ser fornecidas para as APIs de avali
 
 | Propriedade               | Tipo                                                | Descrição                                                                                                                   |
 | :--------------------- | :-------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
-| AssignmentMethod for utilizado       | String                                              | Os valores possíveis são: `standard`, `privileged`, `auto`.                                                                        |
+| AssignmentMethod for utilizado       | Cadeia de caracteres                                              | Os valores possíveis são: `standard`, `privileged`, `auto`.                                                                        |
 | downgradeJustification | [downgradeJustification](downgradejustification.md) | O objeto Justification de downgrade que indica se o downgrade foi justificado e, em caso afirmativo, o motivo.                          |
 | extendedProperties     | Coleção [keyValuePair](keyvaluepair.md)          | As propriedades estendidas serão analisadas e retornadas no formato de metadados MIP rotulado padrão como parte das informações do rótulo. |
 | labelID                | Guid                                                | O GUID do rótulo que deve ser aplicado à informação.                                                              |
@@ -60,3 +60,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

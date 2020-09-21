@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 48b3921dbd9ec616290922fa232bfbbd47da00df
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: Auto
+ms.openlocfilehash: 786c5224826040e685f27a131cb81f07e1eebd7f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007141"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084006"
 ---
 # <a name="printcertificatesigningrequest-resource-type"></a>tipo de recurso printCertificateSigningRequest
 
@@ -24,7 +24,7 @@ A solicitação de assinatura de certificado (CSR) a ser usada durante o registr
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |content|Cadeia de caracteres|Uma solicitação de certificado PKCS10 codificada em base64. Somente leitura.|
-|transportKey|String|A parte pública codificada em Base64 de uma chave assimétrica gerada pelo cliente. Somente leitura.|
+|transportKey|Cadeia de caracteres|A parte pública codificada em Base64 de uma chave assimétrica gerada pelo cliente. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -54,3 +54,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

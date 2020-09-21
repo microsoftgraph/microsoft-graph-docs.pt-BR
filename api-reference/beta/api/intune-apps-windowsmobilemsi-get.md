@@ -3,14 +3,14 @@ title: Acessar windowsMobileMSI
 description: Leia as propriedades e as relações do objeto windowsMobileMSI.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d6701908dfd2386184a885cb3f45901f0cf0b89
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0901046471b14353913d5dccefdfba0b0c859fd7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403673"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976505"
 ---
 # <a name="get-windowsmobilemsi"></a>Acessar windowsMobileMSI
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1325
+Content-Length: 1386
 
 {
   "value": {
@@ -99,6 +99,8 @@ Content-Length: 1325
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -111,6 +113,9 @@ Content-Length: 1325
   }
 }
 ```
+
+
+
 
 
 

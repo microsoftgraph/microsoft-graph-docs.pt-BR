@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: db36f45365375bd51c6701a4ac632d0c0afffa13
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1b15a6f73256cbaf0ebd079cba086b12fee5273c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439510"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983051"
 ---
 # <a name="get-chartdatalabels"></a>Obter ChartDataLabels
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -108,3 +108,5 @@ Content-length: 134
   ]
 }
 -->
+
+

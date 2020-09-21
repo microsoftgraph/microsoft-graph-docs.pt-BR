@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3612f3a33927af4980032543170c0872230f4f4d
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 5a3feb48157514c2a5eb6cf2283ef37eb133c42b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125075"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057490"
 ---
 # <a name="create-conversation"></a>Criar conversa
 
@@ -140,3 +140,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

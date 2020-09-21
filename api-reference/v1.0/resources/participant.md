@@ -5,24 +5,26 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 82a8cdd51cc7dd8c3be1e06c24ff61b19a9b86ac
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: 0c5004ea45cf44818c30ffe02dc48a1f6851e64a
+ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962335"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137110"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso participante
 
 Namespace: microsoft.graph
 
-Representa o tipo de participante.
+Representa um participante em uma chamada.
 
 ## <a name="methods"></a>Métodos
 
 | Método                                                 | Tipo de retorno                                                 | Descrição                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
+| [Lista de participantes](../api/participant-get.md)          | [participante](participant.md)                               | Recupere uma lista de objetos **participantes** na chamada. |
 | [Obter participante](../api/participant-get.md)           | [participante](participant.md)                               | Leia as propriedades do objeto **participante** . |
+| [Excluir participante](../api/participant-delete.md)         | Nenhum   | Excluir um participante de uma chamada.                  |
 | [Convidar](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                        | Convidar um participante para a chamada.              |
 | [Ativar mudo para participante](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Tirar o áudio de um participante em uma chamada.                  |
 
@@ -30,10 +32,10 @@ Representa o tipo de participante.
 
 | Propriedade             | Tipo                                     | Descrição                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | A ID do participante.                                          |
+| id                   | Cadeia de caracteres                                   | A ID do participante.                                          |
 | informações                  | [participantInfo](participantinfo.md)    | O participante do participante.                          |
-| isInLobby            | Booliano                                  | `true`Se o participante estiver no lobby.                          |
-| IsMuted              | Booliano                                  | `true`Se o participante estiver com mudo ativado (cliente ou servidor sem som).    |
+| isInLobby            | Booliano                                  | `true` Se o participante estiver no lobby.                          |
+| IsMuted              | Booliano                                  | `true` Se o participante estiver com mudo ativado (cliente ou servidor sem som).    |
 | mediaStreams         | coleção [mediaStream](mediastream.md) | A lista de fluxos de mídia.                                   |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Informação que especifica se o participante tem capacidade de gravação. |
 
@@ -73,3 +75,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

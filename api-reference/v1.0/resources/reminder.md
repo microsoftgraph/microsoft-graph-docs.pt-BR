@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e8687b6bdc7739f2efdcc76de7c139fd5240780b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1cb61064b05668193947043998749e6306d3d606
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811865"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002951"
 ---
 # <a name="reminder-resource-type"></a>Tipo de recurso reminder
 
@@ -21,7 +21,7 @@ Um lembrete para um [evento](event.md) em um [calendário](calendar.md)do usuár
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|changeKey|Cadeia de caracteres|Identifica a versão do lembrete. Toda vez que o lembrete é alterado, **changeKey** também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto.|
+|changeKey|String|Identifica a versão do lembrete. Toda vez que o lembrete é alterado, **changeKey** também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto.|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina.|
 |eventId|String|A ID exclusiva do evento. Somente leitura.|
 |eventLocation|[Location](location.md)|O local do evento.|
@@ -65,3 +65,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

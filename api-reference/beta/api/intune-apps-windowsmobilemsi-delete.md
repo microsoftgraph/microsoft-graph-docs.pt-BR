@@ -3,14 +3,14 @@ title: Excluir windowsMobileMSI
 description: Exclui windowsMobileMSI.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c0b3556bfd93e16626cf7e0a33b985364f35bd42
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 20bf528bbc7a96eda32e83df7c0a20f0d28d21a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403704"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976498"
 ---
 # <a name="delete-windowsmobilemsi"></a>Excluir windowsMobileMSI
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

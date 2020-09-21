@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: krbain
-ms.openlocfilehash: d20eaebd15a56b6a9f68c90265b039781b53ea20
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 6bfab41ca0fc6754eb08f86eed3bf16a0c1e0f12
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812805"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029201"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>tipo de recurso licenseAssignmentState
 
@@ -33,7 +33,7 @@ A propriedade **licenseAssignmentStates** da entidade [User](user.md) é uma col
 |disabledPlans|Collection(String)|Os planos de serviço que estão desabilitados nesta atribuição. Somente Leitura.|
 |erro|String|Erro de falha na atribuição de licença. Se a licença for atribuída com êxito, este campo será nulo. Somente Leitura. Valores possíveis: `CountViolation` , `MutuallyExclusiveViolation` ,,, `DependencyViolation` `ProhibitedInUsageLocationViolation` `UniquenessViolation` e `Others` . Para obter mais informações sobre como identificar e resolver erros de atribuição de licença, confira [aqui](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
 |skuId|String|O identificador exclusivo da SKU. Somente Leitura.|
-|estado|String|Indica o estado atual desta atribuição. Somente Leitura. Valores possíveis: Active, ActiveWithError, Disabled e Error.|
+|state|String|Indica o estado atual desta atribuição. Somente Leitura. Valores possíveis: Active, ActiveWithError, Disabled e Error.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -54,3 +54,5 @@ Veja a seguir uma representação JSON do recurso
 }
 
 ```
+
+

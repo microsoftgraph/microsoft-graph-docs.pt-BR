@@ -428,7 +428,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir o perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -911,7 +911,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: Listar memberOf transitivos
+                  - name: Listar membros transitivos
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1297,10 +1297,12 @@ items:
               - name: Participante
                 href: resources/participant.md
                 items:
-                  - name: Obter
-                    href: api/participant-get.md
                   - name: Listar
                     href: api/call-list-participants.md
+                  - name: Obter
+                    href: api/participant-get.md
+                  - name: Excluir
+                    href: api/participant-delete.md
                   - name: Configurar mixer
                     href: api/participant-configuremixer.md
                   - name: Ativar mudo para participante
@@ -2519,6 +2521,23 @@ items:
                         href: api/intune-apps-mobileapprelationship-get.md
                   - name: Estado da relação do aplicativo móvel
                     href: resources/intune-apps-mobileapprelationshipstate.md
+                  - name: Tipo de relação de aplicativo móvel
+                    href: resources/intune-apps-mobileapprelationshiptype.md
+                  - name: Substituição de aplicativos móveis
+                    href: resources/intune-apps-mobileappsupersedence.md
+                    items:
+                      - name: Listar
+                        href: api/intune-apps-mobileappsupersedence-list.md
+                      - name: Obter
+                        href: api/intune-apps-mobileappsupersedence-get.md
+                      - name: Criar
+                        href: api/intune-apps-mobileappsupersedence-create.md
+                      - name: Excluir
+                        href: api/intune-apps-mobileappsupersedence-delete.md
+                      - name: Atualizar
+                        href: api/intune-apps-mobileappsupersedence-update.md
+                  - name: Tipo de substituição de aplicativo móvel
+                    href: resources/intune-apps-mobileappsupersedencetype.md
                   - name: Aplicativo contido móvel
                     href: resources/intune-apps-mobilecontainedapp.md
                     items:
@@ -3171,6 +3190,8 @@ items:
                     href: resources/intune-enrollment-outofboxexperiencesettings.md
                   - name: Plataforma
                     href: resources/intune-enrollment-platform.md
+                  - name: Limite de registro sugerido
+                    href: resources/intune-enrollment-suggestedenrollmentlimit.md
                   - name: Atribuição do perfil de implantação do Windows Autopilot
                     href: resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md
                     items:
@@ -3721,6 +3742,8 @@ items:
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-update.md
+                  - name: Complexidade de senha necessária para Android
+                    href: resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md
                   - name: Tipo de senha obrigatória do Android
                     href: resources/intune-deviceconfig-androidrequiredpasswordtype.md
                   - name: Perfil de certificado do SCEP do Android
@@ -5363,6 +5386,8 @@ items:
                         href: api/intune-deviceconfig-macosscepcertificateprofile-update.md
                   - name: extensão de logon único do macOS
                     href: resources/intune-deviceconfig-macossinglesignonextension.md
+                  - name: política de atraso de atualização do software macOS
+                    href: resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md
                   - name: extensão do sistema macOS
                     href: resources/intune-deviceconfig-macossystemextension.md
                   - name: tipo de extensão do sistema macOS
@@ -7392,6 +7417,8 @@ items:
                     href: resources/intune-devices-manageddevicearchitecture.md
                   - name: Configurações de limpeza do dispositivo gerenciado
                     href: resources/intune-devices-manageddevicecleanupsettings.md
+                  - name: Recursos de gerenciamento de dispositivos gerenciados
+                    href: resources/intune-devices-manageddevicemanagementfeatures.md
                   - name: Modelos e fabricantes de dispositivos gerenciados
                     href: resources/intune-devices-manageddevicemodelsandmanufacturers.md
                   - name: Visão geral do dispositivo gerenciado
@@ -7628,6 +7655,32 @@ items:
                     href: resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md
                   - name: Parâmetro de ação de atualização de conta de dispositivo Windows
                     href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
+                  - name: Desempenho do aplicativo de integridade do aplicativo de análise de experiência do usuário por versão do aplicativo
+                    href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md
+                    items:
+                      - name: Listar
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-list.md
+                      - name: Obter
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-get.md
+                      - name: Criar
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-create.md
+                      - name: Excluir
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-update.md
+                  - name: Desempenho do aplicativo de análise da experiência do usuário do aplicativo de integridade da versão s
+                    href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md
+                    items:
+                      - name: Listar
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-list.md
+                      - name: Obter
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-get.md
+                      - name: Criar
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-create.md
+                      - name: Excluir
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-update.md
                   - name: Desempenho do aplicativo de análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md
                     items:
@@ -7641,6 +7694,58 @@ items:
                         href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-delete.md
                       - name: Atualizar
                         href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-update.md
+                  - name: Desempenho do modelo de dispositivo de integridade do aplicativo de análise de experiência do usuário
+                    href: resources/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md
+                    items:
+                      - name: Listar
+                        href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-list.md
+                      - name: Obter
+                        href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-get.md
+                      - name: Criar
+                        href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-create.md
+                      - name: Excluir
+                        href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-update.md
+                  - name: Desempenho do dispositivo de integridade do aplicativo de análise da experiência do usuário
+                    href: resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md
+                    items:
+                      - name: Listar
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-list.md
+                      - name: Obter
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-get.md
+                      - name: Criar
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-create.md
+                      - name: Excluir
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-update.md
+                  - name: Detalhes de desempenho do dispositivo de análise de experiência do usuário
+                    href: resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md
+                    items:
+                      - name: Listar
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-list.md
+                      - name: Obter
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-get.md
+                      - name: Criar
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-create.md
+                      - name: Excluir
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-update.md
+                  - name: Desempenho da versão do aplicativo de análise da experiência do usuário
+                    href: resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md
+                    items:
+                      - name: Listar
+                        href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-list.md
+                      - name: Obter
+                        href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-get.md
+                      - name: Criar
+                        href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-create.md
+                      - name: Excluir
+                        href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-update.md
                   - name: Linha de base de análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsbaseline.md
                     items:
@@ -7904,6 +8009,8 @@ items:
                     href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
                   - name: Tipo de atestado de dispositivo de rede de segurança do aplicativo gerenciado para Android
                     href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
+                  - name: Tipo de avaliação net de segurança de aplicativos gerenciados por Android
+                    href: resources/intune-mam-androidmanagedappsafetynetevaluationtype.md
                   - name: Identificador de aplicativo móvel Android
                     href: resources/intune-mam-androidmobileappidentifier.md
                   - name: Nível de gerenciamento de aplicativo
@@ -8837,6 +8944,8 @@ items:
                     href: resources/intune-shared-runstate.md
                   - name: Opções de geração do estado da interface do usuário salvas
                     href: resources/intune-shared-saveduistategenerationoptions.md
+                  - name: Tipo de fonte de configuração
+                    href: resources/intune-shared-settingsourcetype.md
                   - name: Configuração direcionada de aplicativo gerenciado
                     href: resources/intune-shared-targetedmanagedappconfiguration.md
                     items:
@@ -9551,6 +9660,14 @@ items:
                     href: api/administrativeunit-get-scopedrolemembers.md
                   - name: Remover um administrador de função no escopo
                     href: api/administrativeunit-delete-scopedrolemembers.md
+              - name: Chave de recuperação do BitLocker (versão prévia)
+                items:
+                  - name: Chave de recuperação do BitLocker
+                    href: resources/bitlockerrecoverykey.md
+                  - name: Listar
+                    href: api/bitlocker-list-recoverykeys.md
+                  - name: Obter
+                    href: api/bitlockerrecoverykey-get.md
               - name: Contratos
                 href: resources/contract.md
                 items:
@@ -10054,6 +10171,13 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-get.md
                       - name: Atualizar
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
+                  - name: Política de avaliação de acesso contínuo
+                    href: resources/continuousaccessevaluationpolicy.md
+                    items:
+                      - name: Obter
+                        href: api/continuousaccessevaluationpolicy-get.md
+                      - name: Atualizar
+                        href: api/continuousaccessevaluationpolicy-update.md
               - name: Gerenciamento de função
                 href: resources/rolemanagement.md
                 items:
@@ -10177,7 +10301,7 @@ items:
                         href: api/b2xuserflows-update-identityprovider.md
                       - name: Excluir o provedor de identidade
                         href: api/b2xuserflows-delete-identityprovider.md
-          - name: Governança
+          - name: Gestão
             items:
               - name: Avaliações do acesso
                 href: resources/accessreviews-root.md
@@ -10868,7 +10992,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Excluir
                     href: api/educationalactivity-delete.md
-              - name: Email
+              - name: Endereço de email
                 items:
                   - name: Email do item
                     href: resources/itememail.md
@@ -10952,7 +11076,7 @@ items:
                     href: api/itempatent-update.md
                   - name: Excluir
                     href: api/itempatent-delete.md
-              - name: Telefones
+              - name: Phone
                 items:
                   - name: Telefone de item
                     href: resources/itemphone.md
@@ -11868,7 +11992,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -12022,6 +12146,8 @@ items:
                 href: api/chatmessage-post.md
               - name: Responder à mensagem
                 href: api/channel-post-messagereply.md
+              - name: Atualizar mensagem
+                href: api/chatmessage-update.md
               - name: Listar conteúdo hospedado
                 href: api/chatmessage-list-chatmessagehostedcontents.md
               - name: Obter conteúdo hospedado

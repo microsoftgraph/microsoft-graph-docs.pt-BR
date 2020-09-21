@@ -3,14 +3,14 @@ title: tipo de enumeração edgeSearchEngineType
 description: Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido para dispositivos controlados por MDM
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8f3f8a026f22a085ac69149d74933ee6c6f1f4d1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bb097bb0f3533d3a21e003ec843aed9f4b35b7d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386030"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016272"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>tipo de enumeração edgeSearchEngineType
 
@@ -26,7 +26,10 @@ Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Padrão.|,0|Usa as configurações de fábrica da borda para atribuir o mecanismo de pesquisa padrão de acordo com o mercado de usuários|
-|Bing|1|Define Bing como o mecanismo de pesquisa padrão|
+|Bing|1 |Define Bing como o mecanismo de pesquisa padrão|
+
+
+
 
 
 

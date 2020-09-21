@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: 6bdcd96a8c6eb3dff29304bf8dc1dd8956d9063d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5d492f22672539613933ea94829495915848030c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811039"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063846"
 ---
 # <a name="skypeforbusinesspeertopeeractivitycounts-resource-type"></a>tipo de recurso skypeForBusinessPeerToPeerActivityCounts
 
@@ -27,7 +27,7 @@ Namespace: microsoft.graph
 | transferência de      | Int64  |
 | reportRefreshDate | Data   |
 | reportDate        | Data   |
-| reportPeriod      | String |
+| reportPeriod      | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -50,3 +50,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

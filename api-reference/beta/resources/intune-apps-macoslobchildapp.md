@@ -3,14 +3,14 @@ title: tipo de recurso macOSLobChildApp
 description: Contém as propriedades do aplicativo de LOB do MacOS em um pacote de pacote
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 34ad5669235df33a3933c34001da9bae993a8faf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3eb06ecc8937fd8f2d6c8d74cd0aaf560a22b89c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458883"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989455"
 ---
 # <a name="macoslobchildapp-resource-type"></a>tipo de recurso macOSLobChildApp
 
@@ -47,6 +47,9 @@ Veja a seguir uma representação JSON do recurso.
   "versionNumber": "String"
 }
 ```
+
+
+
 
 
 

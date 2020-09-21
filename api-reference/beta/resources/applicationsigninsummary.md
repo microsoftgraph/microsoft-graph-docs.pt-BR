@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b67eae972137e168218070013952dae4690bf95a
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 0e654df6af359069bbc476c5419a20ca0429f9a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673697"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050238"
 ---
 # <a name="applicationsigninsummary-resource-type"></a>tipo de recurso applicationSignInSummary
 
@@ -71,3 +71,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

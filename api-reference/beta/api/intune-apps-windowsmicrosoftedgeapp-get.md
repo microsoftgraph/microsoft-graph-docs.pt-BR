@@ -3,14 +3,14 @@ title: Obter windowsMicrosoftEdgeApp
 description: Leia as propriedades e as relações do objeto windowsMicrosoftEdgeApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99c60d30f7f16af1701c98ce4d85264d916254cf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d2d0da3ec30caedcff38bcb1b37c5e7c3e01ca71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403748"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976547"
 ---
 # <a name="get-windowsmicrosoftedgeapp"></a>Obter windowsMicrosoftEdgeApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1050
+Content-Length: 1111
 
 {
   "value": {
@@ -99,11 +99,16 @@ Content-Length: 1050
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "channel": "beta",
     "displayLanguageLocale": "Display Language Locale value"
   }
 }
 ```
+
+
+
 
 
 

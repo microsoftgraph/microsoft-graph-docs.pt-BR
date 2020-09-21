@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 754a7f69b4f38fa101fe2fe5c349e089ae25c457
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fca314d1d3f830572a84407ec6c5cb0a28d188d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455280"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050241"
 ---
 # <a name="applicationsignindetailedsummary-resource-type"></a>tipo de recurso applicationSignInDetailedSummary
 
@@ -30,9 +30,9 @@ Representa um resumo detalhado de uma entrada de aplicativo.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |aggregatedEventDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|appDisplayName|String|Nome do aplicativo no qual o usuário entrou.|
-|appId|String|ID do aplicativo no qual o usuário entrou.|
-|id|String| Uma ID exclusiva que representa a atividade de entrada.|
+|appDisplayName|Cadeia de caracteres|Nome do aplicativo no qual o usuário entrou.|
+|appId|Cadeia de caracteres|ID do aplicativo no qual o usuário entrou.|
+|id|Cadeia de caracteres| Uma ID exclusiva que representa a atividade de entrada.|
 |signInCount|Int64|Contagem de entradas feitas pelo aplicativo.|
 |status|[signInStatus](signinstatus.md)|Detalhes do status de entrada.|
 
@@ -73,3 +73,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

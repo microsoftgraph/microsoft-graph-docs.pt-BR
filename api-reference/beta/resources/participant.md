@@ -5,26 +5,28 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6ae920e35c3ba7c2b31c5947f15b3e9d6585a21c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7598171b4d706a639a11d425ffa409e25126dcf8
+ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522036"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137145"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso participante
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O tipo de participante.
+Representa um participante em uma chamada.
 
 ## <a name="methods"></a>Métodos
 
 | Método                                                 | Tipo de retorno                                                 | Descrição                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
+| [Lista de participantes](../api/participant-get.md)         | [participante](participant.md)                               | Recupere uma lista de objetos **participantes** na chamada. |
 | [Obter participante](../api/participant-get.md)           | [participante](participant.md)                               | Leia as propriedades do objeto **participante** . |
+| [Excluir participante](../api/participant-delete.md)     | Nenhum   | Excluir um participante de uma chamada.                  |
 | [ConfigureMixer](../api/participant-configuremixer.md) | [commsOperation](commsoperation.md)                         | Configure o mixer de áudio do participante.         |
 | [Convidar](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                         | Convidar um participante para a chamada.              |
 | [Ativar mudo para participante](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Tirar o áudio de um participante em uma chamada.                  |
@@ -34,12 +36,12 @@ O tipo de participante.
 
 | Propriedade             | Tipo                                     | Descrição                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | A ID do participante.                                          |
+| id                   | Cadeia de caracteres                                   | A ID do participante.                                          |
 | informações                  | [participantInfo](participantinfo.md)    | O participante do participante.                          |
-| isInLobby            | Boolean                                  | `true`Se o participante estiver no lobby.                          |
-| IsMuted              | Boolean                                  | `true`Se o participante estiver com mudo ativado (cliente ou servidor sem som).    |
+| isInLobby            | Booliano                                  | `true` Se o participante estiver no lobby.                          |
+| IsMuted              | Booliano                                  | `true` Se o participante estiver com mudo ativado (cliente ou servidor sem som).    |
 | mediaStreams         | coleção [mediaStream](mediastream.md) | A lista de fluxos de mídia.                                   |
-| los             | String                                   | Um blob de dados fornecido pelo participante na lista.     |
+| los             | Cadeia de caracteres                                   | Um blob de dados fornecido pelo participante na lista.     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Informações sobre o fato de o participante ter capacidade de gravação. |
 
 ## <a name="relationships"></a>Relações
@@ -80,3 +82,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

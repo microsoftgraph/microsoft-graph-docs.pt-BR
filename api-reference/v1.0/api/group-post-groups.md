@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 782e8835ae7532a0f9a2bbad1732b0e9fb002fdd
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: aaf131b219606291f829836e6e7a860d3dbbec39
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219120"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057483"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 Crie um novo grupo conforme especificado no corpo da solicitação. Você pode criar os seguintes tipos de grupos:
 
-* Grupo do Office 365 (grupo unificado)
+* Grupo do Microsoft 365 (grupo unificado)
 * Grupo de segurança
 
 Esta operação retorna, por padrão, apenas um subconjunto das propriedades de cada grupo. Essas propriedades padrão estão listadas na seção [Propriedades](../resources/group.md#properties).
 
-Para obter propriedades _não_ retornadas por padrão, execute uma [operação GET](group-get.md) e especifique as propriedades em uma opção de consulta do `$select` OData.
+Para obter propriedades _não_ retornadas por padrão, execute uma [operação GET](group-get.md) e especifique as propriedades em uma opção de consulta `$select` do OData.
 
-> **Observação**: Embora o Microsoft Teams tenha como base grupos do Office 365, atualmente não é possível criar uma equipe por meio desta API. Você pode usar outras APIs de grupos para gerenciar uma equipe que foi criada na interface do usuário do Microsoft Teams.
+> **Observação**: Embora o Microsoft Teams tenha como base grupos do Microsoft 365, atualmente não é possível criar uma equipe por meio desta API. Você pode usar outras APIs de grupos para gerenciar uma equipe que foi criada na interface do usuário do Microsoft Teams.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -57,10 +57,10 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 | description | string | Uma descrição para o grupo. Máx. comprimento: 1024 caracteres. Opcional. |
 | mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
 | mailNickname | string | O alias de email do grupo. Máx. comprimento: 64 caracteres. Obrigatório. |
-| securityEnabled | booliano | Defina como **verdadeiro** para grupos ativados por segurança, incluindo grupos do Office 365. Obrigatório. |
+| securityEnabled | booliano | Defina como **true** para grupos habilitados para segurança, incluindo grupos do Microsoft 365. Obrigatório. |
 | owners | coleção de cadeias de caracteres | Esta propriedade representa os proprietários do grupo na hora de criação. Opcional. |
 | membros | coleção de cadeias de caracteres | Esta propriedade representa os membros do grupo na hora de criação. Opcional. |
-|visibility|String|Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: `Private`, `Public`, `HiddenMembership` ou vazio (que é interpretado como `Public`).|
+|visibility|Cadeia de caracteres|Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: `Private`, `Public`, `HiddenMembership` ou vazio (que é interpretado como `Public`).|
 
 > **Observação:** os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** definido inicialmente como `true`.
 
@@ -68,7 +68,7 @@ Especifique outras propriedades graváveis conforme necessário para o seu grupo
 
 >**Observação:** Criar um grupo usando o Group. Criar a permissão de aplicativo sem especificar os proprietários criará o grupo anonimamente e o grupo não será modificado. Você pode usar a operação `POST` e adicionar proprietários ao grupo enquanto a cria para especificar proprietários que podem modificar o grupo.
 
-> Criar um Grupo do Office 365 programaticamente com um contexto somente de aplicativo e sem especificar os proprietários criará o grupo anonimamente. Se assim o fizer, o site associado do SharePoint Online só será criado automaticamente, após a execução de outras ações manuais.  
+> Ao criar um grupo do Microsoft 365 programaticamente com um contexto somente de aplicativo e sem especificar os proprietários, o grupo será criado anonimamente. Se assim o fizer, o site associado do SharePoint Online só será criado automaticamente, após a execução de outras ações manuais.  
 
 
 ### <a name="grouptypes-options"></a>Opções de groupTypes
@@ -77,7 +77,7 @@ Use a propriedade **groupTypes** para controlar o tipo de grupo e sua associaç�
 
 | Tipo de grupo | Associação atribuída | Associação dinâmica |
 |:--------------|:------------------------|:---------------|
-| Office 365 (também conhecido como grupo unificado)| `["Unified"]` | `["Unified","DynamicMembership"]`
+| Microsoft 365 (também conhecido como grupo unificado)| `["Unified"]` | `["Unified","DynamicMembership"]`
 | Dinâmica | `[]` (_null_) | `["DynamicMembership"]`|
 
 ## <a name="response"></a>Resposta
@@ -85,9 +85,9 @@ Se bem-sucedido, esse método retorna um código de resposta `201 Created` e um 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-an-office-365-group"></a>Exemplo 1: criando um grupo do Office 365
+### <a name="example-1-create-a-microsoft-365-group"></a>Exemplo 1: Criar um grupo do Microsoft 365
 
-O exemplo a seguir cria um grupo do Office 365.
+O exemplo a seguir cria um grupo do Microsoft 365.
 
 #### <a name="request"></a>Solicitação
 
@@ -179,7 +179,7 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-group-with-owners-and-members"></a>Exemplo 2: criando um grupo com membros e proprietários
 
-O exemplo a seguir cria um grupo do Office 365 com um proprietário e membros especificados. Observe que, no máximo, 20 relações, como proprietários e membros, podem ser adicionadas como parte da criação do grupo. Posteriormente, você pode adicionar mais membros, usando a API [adicionar membro](group-post-members.md) ou o envio em lotes JSON.
+O exemplo a seguir cria um grupo do Microsoft 365 com um proprietário e membros especificados. Observe que, no máximo, 20 relações, como proprietários e membros, podem ser adicionadas como parte da criação do grupo. Posteriormente, você pode adicionar mais membros, usando a API [adicionar membro](group-post-members.md) ou o envio em lotes JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -288,3 +288,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

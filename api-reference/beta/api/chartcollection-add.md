@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0d93ca2abcc75adfb35ac65333f346f95de08d1c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ab4f4043fe23102c279a3a948858e0e3ed633de3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439566"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983078"
 ---
 # <a name="workbookchartcollection-add"></a>workbookChartCollection: Adicionar
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,13 +45,13 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|type|string|Representa o tipo de um gráfico.  Os valores possíveis são: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie`, `etc.`.|
+|type|string|Representa o tipo de um gráfico.  Os valores possíveis são: `ColumnClustered` , `ColumnStacked` , `ColumnStacked100` , `BarClustered` , `BarStacked` , `BarStacked100` , `LineStacked` , `LineStacked100` , `LineMarkers` , `LineMarkersStacked` , `LineMarkersStacked100` , `PieOfPie` , `etc.` .|
 |sourceData|Json|O objeto Range correspondente aos dados de origem.|
 |seriesBy|string|Opcional. Especifica a forma como as colunas ou linhas são usadas como série de dados no gráfico.  Os valores possíveis são: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [workbookChart](../resources/workbookchart.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [workbookChart](../resources/workbookchart.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
@@ -121,3 +121,5 @@ Content-length: 52
   ]
 }
 -->
+
+

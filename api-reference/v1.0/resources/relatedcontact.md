@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0b0647bb7c271f722129738a36f1afed5ed5365e
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: adea95729dd4e6558885223245a7225811f14677
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909734"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002944"
 ---
 # <a name="realtedcontact-resource-type"></a>tipo de recurso realtedContact
 
@@ -23,11 +23,11 @@ Registro de contato relacionado a um [educationUser](../resources/educationuser.
 | Propriedade      | Tipo                  | Descrição                                                                                                                               |
 | :------------ | :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | id            | String                | Identidade do contato no Azure Active Directory.                                                                                    |
-| displayName   | Cadeia de caracteres                | Nome do contato. Obrigatório.                                                                                                            |
+| displayName   | String                | Nome do contato. Obrigatório.                                                                                                            |
 | emailAddress  | String                | Endereço de email principal do contato.                                                                                                     |
 | mobilePhone   | String                | Número do telefone celular do contato.                                                                                                       |
 | relação  | `contactRelationship` | Relação com o usuário. Os valores possíveis são:,,,,, `parent` `relative` `aide` `doctor` `guardian` `child` `other` , `unknownFutureValue` . |
-| accessConsent | Booliano               | Indica se o usuário foi remetido para acessar os dados dos alunos.                                                                     |
+| accessConsent | Boolean               | Indica se o usuário foi remetido para acessar os dados dos alunos.                                                                     |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -65,3 +65,4 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 -->
+

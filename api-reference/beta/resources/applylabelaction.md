@@ -5,16 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a2e30856aed08cd27916d43c79e52548657023d6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2ea3d99ddd22056f9a3413f047a20387bf22a934
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508251"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050224"
 ---
 # <a name="applylabelaction-resource-type"></a>tipo de recurso applyLabelAction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Representa um conjunto de ações que devem ser seguidas para aplicar ou atualiz
 | Propriedade                    | Tipo                                                                     | Descrição                                                                                                                                                                                       |
 | :-------------------------- | :----------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | ação                | String                                                                   | Os valores possíveis são: `manual`, `automatic`, `recommended`, `default`.                                                                                                                             |
-| actions                     | coleção [informationProtectionAction](informationprotectionaction.md) | A coleção de ações específicas que devem ser tomadas pelo aplicativo de consumo para rotular o documento. Consulte [informationProtectionAction](informationprotectionaction.md) para obter a lista completa. |
+| actions                     | coleção [informationProtectionAction](informationprotectionaction.md) | A coleção de ações específicas que devem ser tomadas pelo aplicativo de consumo para rotular o documento. Consulte  [informationProtectionAction](informationprotectionaction.md) para obter a lista completa. |
 | rótulo                       | [labelDetails](labeldetails.md)                                          | Objeto que descreve os detalhes do rótulo a ser aplicado.                                                                                                                                          |
 | responsibleSensitiveTypeIds | Coleção de GUIDs                                                          | Se o rótulo foi o resultado de uma classificação automática, forneça a lista de GUIDs de tipo de informações confidenciais que resultaram no rótulo retornado.                                         
 ## <a name="json-representation"></a>Representação JSON
@@ -59,3 +59,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Atualizar securityConfigurationTask
 description: Atualiza as propriedades de um objeto securityConfigurationTask.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b03aceb9d38dffba675bdb51256b7f65ed6b1809
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 0d730d431d63cef6ba45b165e2268c560554fca1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793178"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969673"
 ---
 # <a name="update-securityconfigurationtask"></a>Atualizar securityConfigurationTask
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -145,6 +145,9 @@ Content-Length: 854
   ]
 }
 ```
+
+
+
 
 
 

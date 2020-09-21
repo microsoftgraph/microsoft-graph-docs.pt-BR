@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: Sharepoint
 author: mohitpcad
-ms.openlocfilehash: 2aa182f2af6e832e118bf889cae375e5b349c937
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b64f262dec0f2384b36b522bfb2edae887498096
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806643"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989497"
 ---
 # <a name="microsoft-graph-termstore-enumeration-values"></a>Valores de enumeração termos do Microsoft Graph
 
@@ -41,3 +41,5 @@ Especifica os valores que diferentes tipos de grupo podem assumir dentro do term
   "namespace": "microsoft.graph.termstore"
 }
 -->
+
+

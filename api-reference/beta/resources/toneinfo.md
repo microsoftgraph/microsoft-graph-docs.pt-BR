@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 99889abd2d3d9272f4f0ecb9b4d1b5321029beea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5555ae61920751d63a70fdb86199ffa572dcb9be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519656"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083936"
 ---
 # <a name="toneinfo-resource-type"></a>tipo de recurso toneInfo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Um único evento DTMF.
 | Propriedade       | Tipo    | Descrição|
 |:---------------|:--------|:----------|
 | SequenceId | Int64 | Um identificador incremental usado para ordenar eventos de DTMF. |
-| bipe | String | Os valores possíveis são `tone0`: `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`,,,,,,,,,. |
+| bipe | Cadeia de caracteres | Os valores possíveis são:, `tone0` `tone1` , `tone2` , `tone3` , `tone4` , `tone5` ,,,,,,,,,,,,,,, `tone6` `tone7` `tone8` `tone9` `star` `pound` `a` , `b` , `c` , `d` , `flash` . |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -57,3 +57,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

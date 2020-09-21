@@ -1,18 +1,18 @@
 ---
-title: Lista de grupos transitivos transitivos
+title: Listar transitivo de grupo memberOf
 description: Obter grupos dos quais o grupo é membro.  Essa operação é transitiva e também inclui todos os grupos dos quais esse grupo é um membro aninhado. Ao contrário de obter os grupos do Microsoft 365 de um usuário, isso retorna todos os tipos de grupos, não apenas grupos da Microsoft 365.
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ba428fb4f0eb78171ac8f29e659047065148f592
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: c3f698329ba11f0c8d4d68711176318fae62debf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897852"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057546"
 ---
-# <a name="list-group-transitive-memberof"></a>Lista de grupos transitivos transitivos
+# <a name="list-group-transitive-memberof"></a>Listar transitivo de grupo memberOf
 
 Namespace: microsoft.graph
 
@@ -124,3 +124,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

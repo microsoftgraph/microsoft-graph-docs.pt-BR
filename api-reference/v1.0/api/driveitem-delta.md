@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Esse método permite que o seu aplicativo controle alterações em uma unidade e seus filhos com o passar do tempo.
 doc_type: apiPageType
-ms.openlocfilehash: d86a02efc98d604bb970faea07c058e3a8651bfa
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
+ms.openlocfilehash: ff8a04a9f7926bd886a0bd8b5f4d32f8e72053d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038685"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009839"
 ---
 # <a name="track-changes-for-a-drive"></a>Controlar alterações para uma unidade
 
@@ -313,3 +313,4 @@ Além dos erros de ressincronização detalhados acima, confira os detalhes sobr
   "suppressions": [
   ]
 } -->
+

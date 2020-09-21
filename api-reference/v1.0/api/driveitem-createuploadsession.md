@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo.
 doc_type: apiPageType
-ms.openlocfilehash: 44d260d4df6edc2dae9acfc2e7db5d9a1618b947
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 65c768e053175925c8f25b0d5bf603a8d15fa7b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517773"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009867"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
@@ -37,7 +37,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="create-an-upload-session"></a>Criar uma sessão de upload
 
-Para iniciar o upload de um arquivo grande, seu aplicativo deve primeiro solicitar uma nova sessão de upload. Isso cria um local de armazenamento temporário no qual os bytes do arquivo serão salvos até que este seja totalmente carregado. Depois que o último byte do arquivo for carregado, a sessão de upload será concluída, e o arquivo final aparecerá na pasta de destino.
+Para iniciar o upload de um arquivo grande, seu aplicativo deve primeiro solicitar uma nova sessão de upload.
+Isso cria um local de armazenamento temporário no qual os bytes do arquivo serão salvos até que este seja totalmente carregado.
+Depois que o último byte do arquivo for carregado, a sessão de upload será concluída, e o arquivo final aparecerá na pasta de destino.
+Como alternativa, você pode adiar a criação final do arquivo no destino até que você tenha feito explicitamente uma solicitação para concluir o carregamento, definindo a propriedade `deferCommit` nos argumentos da solicitação.
 
 ### <a name="http-request"></a>Solicitação HTTP
 
@@ -54,26 +57,28 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>Corpo da solicitação
 
 Nenhum corpo de solicitação é obrigatório.
-No entanto, você pode especificar uma propriedade `item` no corpo da solicitação, fornecendo dados adicionais sobre o arquivo que está sendo carregado.
+No entanto, você pode especificar propriedades no corpo da solicitação, fornecendo dados adicionais sobre o arquivo sendo carregado e personalizando a semântica da operação de carregamento.
 
+Por exemplo, a propriedade `item` permite definir os seguintes parâmetros:
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | replace",
+  "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
   "description": "description",
-  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
+  "fileSize": 1234,
   "name": "filename.txt"
 }
 ```
 
-Por exemplo, para controlar o comportamento se o nome do arquivo já estiver em uso, você pode especificar a propriedade de comportamento conflitante no corpo da solicitação.
+O exemplo a seguir controla o comportamento se o nome do arquivo já estiver sendo tirado e também especifica se o arquivo final não deve ser criado até que uma solicitação de conclusão explícita seja feita:
 
 <!-- { "blockType": "ignored" } -->
 ```json
 {
   "item": {
     "@microsoft.graph.conflictBehavior": "rename"
-  }
+  },
+  "deferCommit": true
 }
 ```
 
@@ -83,13 +88,12 @@ Por exemplo, para controlar o comportamento se o nome do arquivo já estiver em 
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | Se esse cabeçalho de solicitação for incluído e a eTag (ou cTag) fornecida não corresponder à eTag atual no item, retornará uma resposta de erro `412 Precondition Failed`. |
 
-## <a name="properties"></a>Propriedades
+## <a name="parameters"></a>Parâmetros
 
-| Propriedade             | Tipo               | Descrição
-|:---------------------|:-------------------|:---------------------------------
-| description          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
-| fileSystemInfo       | [fileSystemInfo][] | Informações do sistema de arquivos no cliente. Leitura e gravação.
-| name                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
+| Parâmetro	            | Tipo                          | Descrição
+|:---------------------|:------------------------------|:---------------------------------
+| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Dados sobre o arquivo sendo carregado
+| deferCommit          | Booliano                       | Se definido como verdadeiro, a criação final do arquivo no destino exigirá uma solicitação explícita. Somente no OneDrive for Business.
 
 ### <a name="request"></a>Solicitação
 
@@ -115,6 +119,8 @@ Content-Type: application/json
 A resposta a essa solicitação, se tiver êxito, fornecerá os detalhes sobre o local para onde o restante das solicitações deve ser enviado como um recurso [UploadSession](../resources/uploadsession.md).
 
 Esse recurso fornece detalhes sobre onde o intervalo de bytes do arquivo deve ser carregado e quando a sessão de carregamento expira.
+
+Se o parâmetro `fileSize` for especificado e exceder a cota disponível, uma resposta `507 Insufficent Storage` será retornada e a sessão de carregamento não será criada.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -206,7 +212,14 @@ Content-Type: application/json
 
 ## <a name="completing-a-file"></a>Concluindo um arquivo
 
-Quando o último intervalo de bytes de um arquivo for recebido, o servidor responderá com `HTTP 201 Created` ou `HTTP 200 OK`.
+Se `deferCommit` for falso ou não configurado, o carregamento será concluído automaticamente quando o intervalo de bytes final do arquivo for colocado na URL de carregamento.
+
+Se `deferCommit` for verdadeiro, você pode concluir explicitamente o carregamento de duas maneiras:
+- Após o intervalo de bytes final do arquivo ser colocado na URL de carregamento, envie uma solicitação final de POST para a URL de carregamento com conteúdo de comprimento zero (no momento, com suporte somente no OneDrive for Business e no SharePoint).
+- Após o intervalo de bytes final do arquivo ser COLOCADO na URL de carregamento, envie uma solicitação final de PUT na mesma maneira que você [resolveria erros de carregamento](#handle-upload-errors) (no momento, com suporte somente no OneDrive for Business e no SharePoint).
+
+
+Quando o carregamento for concluído, o servidor responderá à solicitação final com `HTTP 201 Created` ou `HTTP 200 OK`.
 O corpo da resposta também incluirá o conjunto de propriedades padrão para o **driveItem** que representa o arquivo concluído.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
@@ -232,6 +245,28 @@ Content-Type: application/json
   "file": { }
 }
 ```
+
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "commit-upload", "scopes": "files.readwrite" } -->
+
+```
+POST https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
+Content-Length: 0
+```
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "912310013A123",
+  "name": "largefile.vhd",
+  "size": 128,
+  "file": { }
+}
+```
+
 
 ## <a name="handling-upload-conflicts"></a>Tratamento de conflitos de carregamento
 
@@ -373,7 +408,6 @@ Confira o tópico [Respostas de Erro][error-response] para saber detalhes sobre 
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
-[fileSystemInfo]: ../resources/filesysteminfo.md
 
 <!-- {
   "type": "#page.annotation",
@@ -385,3 +419,4 @@ Confira o tópico [Respostas de Erro][error-response] para saber detalhes sobre 
   ],
   "section": "documentation"
 } -->
+
