@@ -5,60 +5,60 @@ localization_priority: Priority
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 37415dbaef870af14104db19006c7a8d74cea5a7
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: c2bb711827e730c9a43e36abce2a09c0c1db1bdf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199872"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033437"
 ---
-# <a name="list-identityproviders"></a><span data-ttu-id="b2d0e-103">Lista identityProviders</span><span class="sxs-lookup"><span data-stu-id="b2d0e-103">List identityProviders</span></span>
+# <a name="list-identityproviders"></a><span data-ttu-id="1cd94-103">Lista identityProviders</span><span class="sxs-lookup"><span data-stu-id="1cd94-103">List identityProviders</span></span>
 
-<span data-ttu-id="b2d0e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b2d0e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1cd94-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1cd94-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="b2d0e-105">Recuperar todos os [identityProviders](../resources/identityprovider.md) no diretório.</span><span class="sxs-lookup"><span data-stu-id="b2d0e-105">Retrieve all [identityProviders](../resources/identityprovider.md) in the directory.</span></span>
+<span data-ttu-id="1cd94-105">Recuperar todos os [identityProviders](../resources/identityprovider.md) no diretório.</span><span class="sxs-lookup"><span data-stu-id="1cd94-105">Retrieve all [identityProviders](../resources/identityprovider.md) in the directory.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b2d0e-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="b2d0e-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1cd94-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="1cd94-106">Permissions</span></span>
 
-<span data-ttu-id="b2d0e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b2d0e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1cd94-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1cd94-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b2d0e-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b2d0e-109">Permission type</span></span>      | <span data-ttu-id="b2d0e-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b2d0e-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1cd94-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1cd94-109">Permission type</span></span>      | <span data-ttu-id="1cd94-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1cd94-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b2d0e-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b2d0e-111">Delegated (work or school account)</span></span>|<span data-ttu-id="b2d0e-112">IdentityProvider.Read.All, IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b2d0e-112">IdentityProvider.Read.All, IdentityProvider.ReadWrite.All</span></span>|
-|<span data-ttu-id="b2d0e-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b2d0e-113">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="b2d0e-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b2d0e-114">Not supported.</span></span>|
-|<span data-ttu-id="b2d0e-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b2d0e-115">Application</span></span>|<span data-ttu-id="b2d0e-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b2d0e-116">Not supported.</span></span>|
+|<span data-ttu-id="1cd94-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1cd94-111">Delegated (work or school account)</span></span>|<span data-ttu-id="1cd94-112">IdentityProvider.Read.All, IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1cd94-112">IdentityProvider.Read.All, IdentityProvider.ReadWrite.All</span></span>|
+|<span data-ttu-id="1cd94-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1cd94-113">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="1cd94-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1cd94-114">Not supported.</span></span>|
+|<span data-ttu-id="1cd94-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1cd94-115">Application</span></span>|<span data-ttu-id="1cd94-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1cd94-116">Not supported.</span></span>|
 
-<span data-ttu-id="b2d0e-117">A conta corporativa ou de estudante deve ser um administrador global do locatário.</span><span class="sxs-lookup"><span data-stu-id="b2d0e-117">The work or school account must be a global administrator of the tenant.</span></span>
+<span data-ttu-id="1cd94-117">A conta corporativa ou de estudante deve ser um administrador global do locatário.</span><span class="sxs-lookup"><span data-stu-id="1cd94-117">The work or school account must be a global administrator of the tenant.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="b2d0e-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b2d0e-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1cd94-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1cd94-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityProviders
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b2d0e-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b2d0e-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1cd94-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1cd94-119">Request headers</span></span>
 
-|<span data-ttu-id="b2d0e-120">Nome</span><span class="sxs-lookup"><span data-stu-id="b2d0e-120">Name</span></span>|<span data-ttu-id="b2d0e-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="b2d0e-121">Description</span></span>|
+|<span data-ttu-id="1cd94-120">Nome</span><span class="sxs-lookup"><span data-stu-id="1cd94-120">Name</span></span>|<span data-ttu-id="1cd94-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="1cd94-121">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="b2d0e-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="b2d0e-122">Authorization</span></span>|<span data-ttu-id="b2d0e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b2d0e-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="1cd94-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="1cd94-122">Authorization</span></span>|<span data-ttu-id="1cd94-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1cd94-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b2d0e-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b2d0e-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1cd94-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1cd94-125">Request body</span></span>
 
-<span data-ttu-id="b2d0e-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b2d0e-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="1cd94-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1cd94-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b2d0e-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="b2d0e-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1cd94-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="1cd94-127">Response</span></span>
 
-<span data-ttu-id="b2d0e-128">Se bem-sucedido, esse método retornará `200 OK` código de resposta e um conjunto de [identityProviders](../resources/identityprovider.md) em representação JSON no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b2d0e-128">If successful, this method returns `200 OK` response code and a collection of [identityProviders](../resources/identityprovider.md) in JSON representation in the response body.</span></span>
+<span data-ttu-id="1cd94-128">Se bem-sucedido, esse método retornará `200 OK` código de resposta e um conjunto de [identityProviders](../resources/identityprovider.md) em representação JSON no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1cd94-128">If successful, this method returns `200 OK` response code and a collection of [identityProviders](../resources/identityprovider.md) in JSON representation in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b2d0e-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b2d0e-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1cd94-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1cd94-129">Example</span></span>
 
-<span data-ttu-id="b2d0e-130">O exemplo a seguir recupera todos os **identityProvider**.</span><span class="sxs-lookup"><span data-stu-id="b2d0e-130">The following example retrieves all **identityProvider**.</span></span>
+<span data-ttu-id="1cd94-130">O exemplo a seguir recupera todos os **identityProvider**.</span><span class="sxs-lookup"><span data-stu-id="1cd94-130">The following example retrieves all **identityProvider**.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="b2d0e-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b2d0e-131">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="1cd94-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1cd94-131">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="b2d0e-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="b2d0e-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1cd94-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="1cd94-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list-identityproviders"
@@ -66,26 +66,26 @@ GET /identityProviders
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProviders
 ```
-# <a name="c"></a>[<span data-ttu-id="b2d0e-133">C#</span><span class="sxs-lookup"><span data-stu-id="b2d0e-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1cd94-133">C#</span><span class="sxs-lookup"><span data-stu-id="1cd94-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-identityproviders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b2d0e-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b2d0e-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1cd94-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1cd94-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-identityproviders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b2d0e-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b2d0e-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1cd94-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1cd94-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-identityproviders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="b2d0e-136">Java</span><span class="sxs-lookup"><span data-stu-id="b2d0e-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="1cd94-136">Java</span><span class="sxs-lookup"><span data-stu-id="1cd94-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-identityproviders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="b2d0e-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="b2d0e-137">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="1cd94-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="1cd94-137">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -121,3 +121,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
