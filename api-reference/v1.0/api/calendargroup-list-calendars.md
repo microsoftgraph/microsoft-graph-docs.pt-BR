@@ -5,73 +5,73 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d768eb13542cd1b90f56b348a92b040b7b1101f1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f3caf89278062092ce1ea9294b0fb15481e5b884
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471769"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070293"
 ---
-# <a name="list-calendars"></a><span data-ttu-id="0b019-103">Listar calendários</span><span class="sxs-lookup"><span data-stu-id="0b019-103">List calendars</span></span>
+# <a name="list-calendars"></a><span data-ttu-id="018ae-103">Listar calendários</span><span class="sxs-lookup"><span data-stu-id="018ae-103">List calendars</span></span>
 
-<span data-ttu-id="0b019-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0b019-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="018ae-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="018ae-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="0b019-105">Recupera uma lista de calendários que pertencem a um grupo de calendários.</span><span class="sxs-lookup"><span data-stu-id="0b019-105">Retrieve a list of calendars belonging to a calendar group.</span></span>
+<span data-ttu-id="018ae-105">Recupera uma lista de calendários que pertencem a um grupo de calendários.</span><span class="sxs-lookup"><span data-stu-id="018ae-105">Retrieve a list of calendars belonging to a calendar group.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0b019-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="0b019-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="018ae-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="018ae-106">Permissions</span></span>
 
-<span data-ttu-id="0b019-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0b019-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="018ae-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="018ae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="0b019-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0b019-109">Permission type</span></span>                        | <span data-ttu-id="0b019-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0b019-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="018ae-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="018ae-109">Permission type</span></span>                        | <span data-ttu-id="018ae-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="018ae-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="0b019-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0b019-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="0b019-112">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="0b019-112">Calendars.Read</span></span>                              |
-| <span data-ttu-id="0b019-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0b019-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0b019-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="0b019-114">Calendars.Read</span></span>                              |
-| <span data-ttu-id="0b019-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0b019-115">Application</span></span>                            | <span data-ttu-id="0b019-116">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="0b019-116">Calendars.Read</span></span>                              |
+| <span data-ttu-id="018ae-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="018ae-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="018ae-112">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="018ae-112">Calendars.Read</span></span>                              |
+| <span data-ttu-id="018ae-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="018ae-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="018ae-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="018ae-114">Calendars.Read</span></span>                              |
+| <span data-ttu-id="018ae-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="018ae-115">Application</span></span>                            | <span data-ttu-id="018ae-116">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="018ae-116">Calendars.Read</span></span>                              |
 
-## <a name="http-request"></a><span data-ttu-id="0b019-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0b019-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="018ae-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="018ae-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
-<span data-ttu-id="0b019-118">Um [calendarGroup](../resources/calendargroup.md) padrão do usuário.</span><span class="sxs-lookup"><span data-stu-id="0b019-118">A user's default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="018ae-118">Um [calendarGroup](../resources/calendargroup.md) padrão do usuário.</span><span class="sxs-lookup"><span data-stu-id="018ae-118">A user's default [calendarGroup](../resources/calendargroup.md).</span></span>
 
 ```http
 GET /me/calendarGroup/calendars
 GET /users/{id | userPrincipalName}/calendarGroup/calendars
 ```
 
-<span data-ttu-id="0b019-119">Qualquer [calendarGroup](../resources/calendargroup.md) de um usuário.</span><span class="sxs-lookup"><span data-stu-id="0b019-119">Any [calendarGroup](../resources/calendargroup.md) of a user.</span></span>
+<span data-ttu-id="018ae-119">Qualquer [calendarGroup](../resources/calendargroup.md) de um usuário.</span><span class="sxs-lookup"><span data-stu-id="018ae-119">Any [calendarGroup](../resources/calendargroup.md) of a user.</span></span>
 
 ```http
 GET /me/calendarGroups/{id}/calendars
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="0b019-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="0b019-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="018ae-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="018ae-120">Optional query parameters</span></span>
 
-<span data-ttu-id="0b019-121">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="0b019-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="018ae-121">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="018ae-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="0b019-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0b019-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="018ae-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="018ae-122">Request headers</span></span>
 
-| <span data-ttu-id="0b019-123">Nome</span><span class="sxs-lookup"><span data-stu-id="0b019-123">Name</span></span>          | <span data-ttu-id="0b019-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="0b019-124">Type</span></span>   | <span data-ttu-id="0b019-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="0b019-125">Description</span></span>               |
+| <span data-ttu-id="018ae-123">Nome</span><span class="sxs-lookup"><span data-stu-id="018ae-123">Name</span></span>          | <span data-ttu-id="018ae-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="018ae-124">Type</span></span>   | <span data-ttu-id="018ae-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="018ae-125">Description</span></span>               |
 | :------------ | :----- | :------------------------ |
-| <span data-ttu-id="0b019-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="0b019-126">Authorization</span></span> | <span data-ttu-id="0b019-127">string</span><span class="sxs-lookup"><span data-stu-id="0b019-127">string</span></span> | <span data-ttu-id="0b019-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0b019-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="018ae-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="018ae-126">Authorization</span></span> | <span data-ttu-id="018ae-127">string</span><span class="sxs-lookup"><span data-stu-id="018ae-127">string</span></span> | <span data-ttu-id="018ae-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="018ae-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0b019-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0b019-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="018ae-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="018ae-130">Request body</span></span>
 
-<span data-ttu-id="0b019-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0b019-131">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="018ae-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="018ae-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0b019-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="0b019-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="018ae-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="018ae-132">Response</span></span>
 
-<span data-ttu-id="0b019-133">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Calendar](../resources/calendar.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0b019-133">If successful, this method returns a `200 OK` response code and collection of [Calendar](../resources/calendar.md) objects in the response body.</span></span>
+<span data-ttu-id="018ae-133">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Calendar](../resources/calendar.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="018ae-133">If successful, this method returns a `200 OK` response code and collection of [Calendar](../resources/calendar.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0b019-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0b019-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="018ae-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="018ae-134">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="0b019-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0b019-135">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="018ae-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="018ae-135">Request</span></span>
 
-<span data-ttu-id="0b019-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0b019-136">Here is an example of the request.</span></span>
+<span data-ttu-id="018ae-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="018ae-136">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="0b019-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="0b019-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="018ae-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="018ae-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "calendargroup_get_calendars"
@@ -80,28 +80,28 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}/calendars
 ```
-# <a name="c"></a>[<span data-ttu-id="0b019-138">C#</span><span class="sxs-lookup"><span data-stu-id="0b019-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="018ae-138">C#</span><span class="sxs-lookup"><span data-stu-id="018ae-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/calendargroup-get-calendars-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0b019-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0b019-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="018ae-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="018ae-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/calendargroup-get-calendars-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0b019-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0b019-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="018ae-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="018ae-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/calendargroup-get-calendars-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0b019-141">Java</span><span class="sxs-lookup"><span data-stu-id="0b019-141">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="018ae-141">Java</span><span class="sxs-lookup"><span data-stu-id="018ae-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/calendargroup-get-calendars-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="0b019-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="0b019-142">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="018ae-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="018ae-142">Response</span></span>
 
-<span data-ttu-id="0b019-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0b019-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="018ae-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="018ae-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -140,3 +140,4 @@ Content-length: 147
   "suppressions": [
   ]
 }-->
+

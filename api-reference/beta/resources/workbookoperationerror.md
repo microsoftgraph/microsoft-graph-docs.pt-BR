@@ -5,28 +5,28 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a04d26a7bdeb14f35859e7c1b02e781b64189201
-ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
+ms.openlocfilehash: 42e8eea86222c360d9b08e70b7d6fded2a12afb4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45165120"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070391"
 ---
-# <a name="workbookoperationerror-resource-type"></a><span data-ttu-id="1d7f8-103">tipo de recurso workbookOperationError</span><span class="sxs-lookup"><span data-stu-id="1d7f8-103">workbookOperationError resource type</span></span>
+# <a name="workbookoperationerror-resource-type"></a><span data-ttu-id="e0394-103">tipo de recurso workbookOperationError</span><span class="sxs-lookup"><span data-stu-id="e0394-103">workbookOperationError resource type</span></span>
 
-<span data-ttu-id="1d7f8-104">Representa um erro de uma operação de pasta de trabalho com falha.</span><span class="sxs-lookup"><span data-stu-id="1d7f8-104">Represents an error from a failed workbook operation.</span></span>
+<span data-ttu-id="e0394-104">Representa um erro de uma operação de pasta de trabalho com falha.</span><span class="sxs-lookup"><span data-stu-id="e0394-104">Represents an error from a failed workbook operation.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1d7f8-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1d7f8-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e0394-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e0394-105">Properties</span></span>
 
-| <span data-ttu-id="1d7f8-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1d7f8-106">Property</span></span>     | <span data-ttu-id="1d7f8-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="1d7f8-107">Type</span></span>        | <span data-ttu-id="1d7f8-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="1d7f8-108">Description</span></span> |
+| <span data-ttu-id="e0394-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e0394-106">Property</span></span>     | <span data-ttu-id="e0394-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="e0394-107">Type</span></span>        | <span data-ttu-id="e0394-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="e0394-108">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="1d7f8-109">código</span><span class="sxs-lookup"><span data-stu-id="1d7f8-109">code</span></span>|<span data-ttu-id="1d7f8-110">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="1d7f8-110">String</span></span>| <span data-ttu-id="1d7f8-111">O código de erro.</span><span class="sxs-lookup"><span data-stu-id="1d7f8-111">The error code.</span></span>|
-|<span data-ttu-id="1d7f8-112">mensagem</span><span class="sxs-lookup"><span data-stu-id="1d7f8-112">message</span></span>|<span data-ttu-id="1d7f8-113">String</span><span class="sxs-lookup"><span data-stu-id="1d7f8-113">String</span></span>| <span data-ttu-id="1d7f8-114">A mensagem de erro.</span><span class="sxs-lookup"><span data-stu-id="1d7f8-114">The error message.</span></span>|
-|<span data-ttu-id="1d7f8-115">innererror</span><span class="sxs-lookup"><span data-stu-id="1d7f8-115">innererror</span></span>|<span data-ttu-id="1d7f8-116">error object</span><span class="sxs-lookup"><span data-stu-id="1d7f8-116">error object</span></span>| <span data-ttu-id="1d7f8-p101">Opcional. Objetos error adicionais que podem ser mais específicos do que o erro de nível superior.</span><span class="sxs-lookup"><span data-stu-id="1d7f8-p101">Optional. Additional error objects that may be more specific than the top level error.</span></span>|
+|<span data-ttu-id="e0394-109">código</span><span class="sxs-lookup"><span data-stu-id="e0394-109">code</span></span>|<span data-ttu-id="e0394-110">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e0394-110">String</span></span>| <span data-ttu-id="e0394-111">O código de erro.</span><span class="sxs-lookup"><span data-stu-id="e0394-111">The error code.</span></span>|
+|<span data-ttu-id="e0394-112">mensagem</span><span class="sxs-lookup"><span data-stu-id="e0394-112">message</span></span>|<span data-ttu-id="e0394-113">String</span><span class="sxs-lookup"><span data-stu-id="e0394-113">String</span></span>| <span data-ttu-id="e0394-114">A mensagem de erro.</span><span class="sxs-lookup"><span data-stu-id="e0394-114">The error message.</span></span>|
+|<span data-ttu-id="e0394-115">innererror</span><span class="sxs-lookup"><span data-stu-id="e0394-115">innererror</span></span>|<span data-ttu-id="e0394-116">error object</span><span class="sxs-lookup"><span data-stu-id="e0394-116">error object</span></span>| <span data-ttu-id="e0394-p101">Opcional. Objetos error adicionais que podem ser mais específicos do que o erro de nível superior.</span><span class="sxs-lookup"><span data-stu-id="e0394-p101">Optional. Additional error objects that may be more specific than the top level error.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="1d7f8-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1d7f8-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e0394-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e0394-119">JSON representation</span></span>
 
-<span data-ttu-id="1d7f8-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1d7f8-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e0394-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e0394-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -54,3 +54,5 @@ ms.locfileid: "45165120"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

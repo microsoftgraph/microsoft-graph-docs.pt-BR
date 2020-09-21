@@ -5,35 +5,35 @@ author: kevinbellinger
 localization_priority: Priority
 ms.prod: people
 doc_type: conceptualPageType
-ms.openlocfilehash: e0a402cd01cf9dc8effd16496d7230cc8e98d5d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e509d2e712477e122651589089a2aedde8506593
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521471"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070398"
 ---
-# <a name="use-the-profile-api-in-microsoft-graph-to-retrieve-information-about-yourself-or-another-user"></a><span data-ttu-id="25e51-103">Use a API do Perfil no Microsoft Graph para recuperar informações sobre você mesmo ou outro usuário</span><span class="sxs-lookup"><span data-stu-id="25e51-103">Use the Profile API in Microsoft Graph to retrieve information about yourself or another user</span></span> 
+# <a name="use-the-profile-api-in-microsoft-graph-to-retrieve-information-about-yourself-or-another-user"></a><span data-ttu-id="b732a-103">Use a API do Perfil no Microsoft Graph para recuperar informações sobre você mesmo ou outro usuário</span><span class="sxs-lookup"><span data-stu-id="b732a-103">Use the Profile API in Microsoft Graph to retrieve information about yourself or another user</span></span> 
 
-<span data-ttu-id="25e51-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="25e51-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b732a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b732a-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="25e51-105">Os aplicativos do Microsoft Graph podem usar a API de Perfil para recuperar o perfil do usuário conectado com uma conta válida do Azure AD ou da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="25e51-105">Microsoft Graph applications can use the Profile API to retrieve the profile of the signed-in user or another user with a valid Azure AD or Microsoft account.</span></span> <span data-ttu-id="25e51-106">Essas informações podem ser usadas em aplicativos para ajudar a contextualizar outros usuários, fornecer uma experiência mais avançada para o usuário no aplicativo ou como um mecanismo para armazenar informações estendidas sobre o usuário, as quais também poderão ser usadas no Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="25e51-106">This information can be used in applications to assist in contextualizing another user, providing a richer experience for the user within the application or as a mechanism for storing extended information about the user which can also be used within Microsoft 365.</span></span> 
+<span data-ttu-id="b732a-105">Os aplicativos do Microsoft Graph podem usar a API de Perfil para recuperar o perfil do usuário conectado com uma conta válida do Azure AD ou da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="b732a-105">Microsoft Graph applications can use the Profile API to retrieve the profile of the signed-in user or another user with a valid Azure AD or Microsoft account.</span></span> <span data-ttu-id="b732a-106">Essas informações podem ser usadas em aplicativos para ajudar a contextualizar outros usuários, fornecer uma experiência mais avançada para o usuário no aplicativo ou como um mecanismo para armazenar informações estendidas sobre o usuário, as quais também poderão ser usadas no Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="b732a-106">This information can be used in applications to assist in contextualizing another user, providing a richer experience for the user within the application or as a mechanism for storing extended information about the user which can also be used within Microsoft 365.</span></span> 
 
-## <a name="authorization"></a><span data-ttu-id="25e51-107">Autorização</span><span class="sxs-lookup"><span data-stu-id="25e51-107">Authorization</span></span>
+## <a name="authorization"></a><span data-ttu-id="b732a-107">Autorização</span><span class="sxs-lookup"><span data-stu-id="b732a-107">Authorization</span></span>
 
-<span data-ttu-id="25e51-108">Para chamar a API de Pessoas no Microsoft Graph, seu aplicativo precisará das permissões adequadas:</span><span class="sxs-lookup"><span data-stu-id="25e51-108">To call the People API in Microsoft Graph, your app will need the appropriate permissions:</span></span>
+<span data-ttu-id="b732a-108">Para chamar a API de Pessoas no Microsoft Graph, seu aplicativo precisará das permissões adequadas:</span><span class="sxs-lookup"><span data-stu-id="b732a-108">To call the People API in Microsoft Graph, your app will need the appropriate permissions:</span></span>
 
-* <span data-ttu-id="25e51-109">User.Read – Use para fazer chamadas gerais para a API do Perfil; por exemplo, `https://graph.microsoft.com/beta/me/profile/`.</span><span class="sxs-lookup"><span data-stu-id="25e51-109">User.Read - Use to make general Profile API calls; for example, `https://graph.microsoft.com/beta/me/profile/`.</span></span> <span data-ttu-id="25e51-110">User.Read requer o consentimento do usuário final.</span><span class="sxs-lookup"><span data-stu-id="25e51-110">User.Read requires end user consent.</span></span>
+* <span data-ttu-id="b732a-109">User.Read – Use para fazer chamadas gerais para a API do Perfil; por exemplo, `https://graph.microsoft.com/beta/me/profile/`.</span><span class="sxs-lookup"><span data-stu-id="b732a-109">User.Read - Use to make general Profile API calls; for example, `https://graph.microsoft.com/beta/me/profile/`.</span></span> <span data-ttu-id="b732a-110">User.Read requer o consentimento do usuário final.</span><span class="sxs-lookup"><span data-stu-id="b732a-110">User.Read requires end user consent.</span></span>
 
-## <a name="view-my-profile"></a><span data-ttu-id="25e51-111">Visualizar meu perfil</span><span class="sxs-lookup"><span data-stu-id="25e51-111">View my profile</span></span>
+## <a name="view-my-profile"></a><span data-ttu-id="b732a-111">Visualizar meu perfil</span><span class="sxs-lookup"><span data-stu-id="b732a-111">View my profile</span></span>
 
-<span data-ttu-id="25e51-112">As solicitações nesta seção obtém as pessoas mais relevantes para o usuário conectado (`/me`).</span><span class="sxs-lookup"><span data-stu-id="25e51-112">The requests in this section get the people most relevant to the signed-in user (`/me`).</span></span> <span data-ttu-id="25e51-113">Essas solicitações exigem que a permissão User.Read esteja presente para o usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="25e51-113">These requests require the User.Read permission to be present for the signed-in user.</span></span> 
+<span data-ttu-id="b732a-112">As solicitações nesta seção obtém as pessoas mais relevantes para o usuário conectado (`/me`).</span><span class="sxs-lookup"><span data-stu-id="b732a-112">The requests in this section get the people most relevant to the signed-in user (`/me`).</span></span> <span data-ttu-id="b732a-113">Essas solicitações exigem que a permissão User.Read esteja presente para o usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="b732a-113">These requests require the User.Read permission to be present for the signed-in user.</span></span> 
 
 
 ```http
 GET https://graph.microsoft.com/beta/me/profile/
 ```
 
-<span data-ttu-id="25e51-p104">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="25e51-p104">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="b732a-p104">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="b732a-p104">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -275,3 +275,5 @@ Content-type: application/json
     "webAccounts": []
 }
 ```
+
+

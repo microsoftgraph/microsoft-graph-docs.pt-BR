@@ -5,30 +5,30 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f63c49013ba9e8c194c1c831e8e78f87e9b8814c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 529552be4497729824ddfb9fa9e84ea82e8ccd0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521654"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063999"
 ---
-# <a name="plannerrecentplanreferencecollection-resource-type"></a><span data-ttu-id="6f1c3-106">tipo de recurso plannerRecentPlanReferenceCollection</span><span class="sxs-lookup"><span data-stu-id="6f1c3-106">plannerRecentPlanReferenceCollection resource type</span></span>
+# <a name="plannerrecentplanreferencecollection-resource-type"></a><span data-ttu-id="ed41b-106">tipo de recurso plannerRecentPlanReferenceCollection</span><span class="sxs-lookup"><span data-stu-id="ed41b-106">plannerRecentPlanReferenceCollection resource type</span></span>
 
-<span data-ttu-id="6f1c3-107">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6f1c3-107">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ed41b-107">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ed41b-107">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6f1c3-108">O recurso **plannerRecentPlanReferenceCollection** representa a coleção de referências a planos que foram exibidos recentemente por um usuário.</span><span class="sxs-lookup"><span data-stu-id="6f1c3-108">The **plannerRecentPlanReferenceCollection** resource represents the collection of references to plans that were recently viewed by a user.</span></span> <span data-ttu-id="6f1c3-109">Esse recurso é um tipo aberto e faz parte do objeto [plannerUser](planneruser.md) .</span><span class="sxs-lookup"><span data-stu-id="6f1c3-109">This resource is an open type and is part of the [plannerUser](planneruser.md) object.</span></span> <span data-ttu-id="6f1c3-110">O nome da propriedade é a ID do plano correspondente.</span><span class="sxs-lookup"><span data-stu-id="6f1c3-110">The property name is the ID of the corresponding plan.</span></span> <span data-ttu-id="6f1c3-111">O valor no par propriedade-valor é o objeto [plannerRecentPlanReference](plannerrecentplanreference.md) .</span><span class="sxs-lookup"><span data-stu-id="6f1c3-111">The value in the property-value pair is the [plannerRecentPlanReference](plannerrecentplanreference.md) object.</span></span>
-<span data-ttu-id="6f1c3-112">Adicionar novas referências a essa coleção removerá automaticamente as entradas mais antigas quando o tamanho da coleção exceder um valor máximo pré-determinado.</span><span class="sxs-lookup"><span data-stu-id="6f1c3-112">Adding new references to this collection will automatically remove the oldest entries when the size of the collection exceeds a predetermined maximum value.</span></span>
+<span data-ttu-id="ed41b-108">O recurso **plannerRecentPlanReferenceCollection** representa a coleção de referências a planos que foram exibidos recentemente por um usuário.</span><span class="sxs-lookup"><span data-stu-id="ed41b-108">The **plannerRecentPlanReferenceCollection** resource represents the collection of references to plans that were recently viewed by a user.</span></span> <span data-ttu-id="ed41b-109">Esse recurso é um tipo aberto e faz parte do objeto [plannerUser](planneruser.md) .</span><span class="sxs-lookup"><span data-stu-id="ed41b-109">This resource is an open type and is part of the [plannerUser](planneruser.md) object.</span></span> <span data-ttu-id="ed41b-110">O nome da propriedade é a ID do plano correspondente.</span><span class="sxs-lookup"><span data-stu-id="ed41b-110">The property name is the ID of the corresponding plan.</span></span> <span data-ttu-id="ed41b-111">O valor no par propriedade-valor é o objeto [plannerRecentPlanReference](plannerrecentplanreference.md) .</span><span class="sxs-lookup"><span data-stu-id="ed41b-111">The value in the property-value pair is the [plannerRecentPlanReference](plannerrecentplanreference.md) object.</span></span>
+<span data-ttu-id="ed41b-112">Adicionar novas referências a essa coleção removerá automaticamente as entradas mais antigas quando o tamanho da coleção exceder um valor máximo pré-determinado.</span><span class="sxs-lookup"><span data-stu-id="ed41b-112">Adding new references to this collection will automatically remove the oldest entries when the size of the collection exceeds a predetermined maximum value.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="6f1c3-113">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6f1c3-113">Properties</span></span>
-<span data-ttu-id="6f1c3-114">Você pode definir as propriedades desse tipo aberto.</span><span class="sxs-lookup"><span data-stu-id="6f1c3-114">You can define the properties of this open type.</span></span> <span data-ttu-id="6f1c3-115">Os nomes das propriedades `id` são valores dos recursos [plannerPlan](plannerplan.md) e seus valores devem ser objetos [plannerRecentPlanReference](plannerrecentplanreference.md) .</span><span class="sxs-lookup"><span data-stu-id="6f1c3-115">The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerRecentPlanReference](plannerrecentplanreference.md) objects.</span></span> <span data-ttu-id="6f1c3-116">Para remover um item da lista favoritos, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="6f1c3-116">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="ed41b-113">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ed41b-113">Properties</span></span>
+<span data-ttu-id="ed41b-114">Você pode definir as propriedades desse tipo aberto.</span><span class="sxs-lookup"><span data-stu-id="ed41b-114">You can define the properties of this open type.</span></span> <span data-ttu-id="ed41b-115">Os nomes das propriedades são `id` valores dos recursos [plannerPlan](plannerplan.md) e seus valores devem ser objetos [plannerRecentPlanReference](plannerrecentplanreference.md) .</span><span class="sxs-lookup"><span data-stu-id="ed41b-115">The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerRecentPlanReference](plannerrecentplanreference.md) objects.</span></span> <span data-ttu-id="ed41b-116">Para remover um item da lista favoritos, defina o valor da propriedade como `null` .</span><span class="sxs-lookup"><span data-stu-id="ed41b-116">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="6f1c3-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6f1c3-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ed41b-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ed41b-117">JSON representation</span></span>
 
-<span data-ttu-id="6f1c3-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6f1c3-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ed41b-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ed41b-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -67,3 +67,5 @@ ms.locfileid: "42521654"
   "suppressions": []
 }
 -->
+
+
