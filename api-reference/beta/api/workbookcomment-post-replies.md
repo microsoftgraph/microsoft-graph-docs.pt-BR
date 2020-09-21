@@ -5,30 +5,30 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7fde36d6d5d40d22009a52ab279f91ce10dd2e8b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fe85d3334cad78f0156c10b0ba3d2863df8fd6f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451396"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968765"
 ---
-# <a name="create-workbookcommentreply"></a><span data-ttu-id="40212-103">Criar workbookCommentReply</span><span class="sxs-lookup"><span data-stu-id="40212-103">Create workbookCommentReply</span></span>
+# <a name="create-workbookcommentreply"></a><span data-ttu-id="5fb2b-103">Criar workbookCommentReply</span><span class="sxs-lookup"><span data-stu-id="5fb2b-103">Create workbookCommentReply</span></span>
 
-<span data-ttu-id="40212-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="40212-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5fb2b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5fb2b-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="40212-105">Criar um novo objeto [workbookCommentReply](../resources/workbookcommentreply.md) .</span><span class="sxs-lookup"><span data-stu-id="40212-105">Create a new [workbookCommentReply](../resources/workbookcommentreply.md) object.</span></span>
+<span data-ttu-id="5fb2b-105">Criar um novo objeto [workbookCommentReply](../resources/workbookcommentreply.md) .</span><span class="sxs-lookup"><span data-stu-id="5fb2b-105">Create a new [workbookCommentReply](../resources/workbookcommentreply.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="40212-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="40212-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5fb2b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="5fb2b-106">Permissions</span></span>
 
-<span data-ttu-id="40212-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="40212-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5fb2b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5fb2b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="40212-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="40212-109">Permission type</span></span>                        | <span data-ttu-id="40212-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="40212-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="5fb2b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5fb2b-109">Permission type</span></span>                        | <span data-ttu-id="5fb2b-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5fb2b-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="40212-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="40212-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="40212-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="40212-112">Files.ReadWrite</span></span> |
-| <span data-ttu-id="40212-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="40212-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="40212-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="40212-114">Not supported.</span></span> |
-| <span data-ttu-id="40212-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="40212-115">Application</span></span>                            | <span data-ttu-id="40212-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="40212-116">Not supported.</span></span> |
+| <span data-ttu-id="5fb2b-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5fb2b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="5fb2b-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5fb2b-112">Files.ReadWrite</span></span> |
+| <span data-ttu-id="5fb2b-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5fb2b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5fb2b-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5fb2b-114">Not supported.</span></span> |
+| <span data-ttu-id="5fb2b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5fb2b-115">Application</span></span>                            | <span data-ttu-id="5fb2b-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5fb2b-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="40212-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="40212-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5fb2b-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5fb2b-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,27 +36,27 @@ ms.locfileid: "42451396"
 POST /workbook/comments/{id}/replies
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="40212-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="40212-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5fb2b-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5fb2b-118">Request headers</span></span>
 
-| <span data-ttu-id="40212-119">Nome</span><span class="sxs-lookup"><span data-stu-id="40212-119">Name</span></span>          | <span data-ttu-id="40212-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="40212-120">Description</span></span>   |
+| <span data-ttu-id="5fb2b-119">Nome</span><span class="sxs-lookup"><span data-stu-id="5fb2b-119">Name</span></span>          | <span data-ttu-id="5fb2b-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="5fb2b-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="40212-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="40212-121">Authorization</span></span> | <span data-ttu-id="40212-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="40212-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5fb2b-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="5fb2b-121">Authorization</span></span> | <span data-ttu-id="5fb2b-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5fb2b-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="40212-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="40212-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5fb2b-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5fb2b-124">Request body</span></span>
 
-<span data-ttu-id="40212-125">No corpo da solicitação, forneça uma representação JSON de um objeto [workbookCommentReply](../resources/workbookcommentreply.md) .</span><span class="sxs-lookup"><span data-stu-id="40212-125">In the request body, supply a JSON representation of a [workbookCommentReply](../resources/workbookcommentreply.md) object.</span></span>
+<span data-ttu-id="5fb2b-125">No corpo da solicitação, forneça uma representação JSON de um objeto [workbookCommentReply](../resources/workbookcommentreply.md) .</span><span class="sxs-lookup"><span data-stu-id="5fb2b-125">In the request body, supply a JSON representation of a [workbookCommentReply](../resources/workbookcommentreply.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="40212-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="40212-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5fb2b-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="5fb2b-126">Response</span></span>
 
-<span data-ttu-id="40212-127">Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [workbookCommentReply](../resources/workbookcommentreply.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="40212-127">If successful, this method returns a `201 Created` response code and a new [workbookCommentReply](../resources/workbookcommentreply.md) object in the response body.</span></span>
+<span data-ttu-id="5fb2b-127">Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [workbookCommentReply](../resources/workbookcommentreply.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5fb2b-127">If successful, this method returns a `201 Created` response code and a new [workbookCommentReply](../resources/workbookcommentreply.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="40212-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="40212-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5fb2b-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="5fb2b-128">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="40212-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="40212-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5fb2b-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5fb2b-129">Request</span></span>
 
-<span data-ttu-id="40212-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="40212-130">The following is an example of the request.</span></span>
+<span data-ttu-id="5fb2b-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="5fb2b-130">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="40212-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="40212-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5fb2b-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="5fb2b-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_workbookcommentreply_from_workbookcomment"
@@ -71,26 +71,26 @@ Content-type: application/json
   "contentType": "plain"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="40212-132">C#</span><span class="sxs-lookup"><span data-stu-id="40212-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5fb2b-132">C#</span><span class="sxs-lookup"><span data-stu-id="5fb2b-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-workbookcommentreply-from-workbookcomment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="40212-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="40212-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5fb2b-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5fb2b-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-workbookcommentreply-from-workbookcomment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="40212-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="40212-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5fb2b-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5fb2b-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-workbookcommentreply-from-workbookcomment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="40212-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="40212-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5fb2b-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="5fb2b-135">Response</span></span>
 
-<span data-ttu-id="40212-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="40212-136">The following is an example of the response.</span></span>
+<span data-ttu-id="5fb2b-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="5fb2b-136">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="40212-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="40212-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="5fb2b-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5fb2b-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -118,3 +118,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

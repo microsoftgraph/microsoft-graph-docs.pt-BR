@@ -3,39 +3,39 @@ title: Listar androidManagedAppProtections
 description: Listar propriedades e relações dos objetos androidManagedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cb2d60ac5fd7107fbf4b68f030242ce33e5771f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f57e77c1e0e837e623a1580fb1f0eb8965219ea4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391248"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969547"
 ---
-# <a name="list-androidmanagedappprotections"></a><span data-ttu-id="1f281-103">Listar androidManagedAppProtections</span><span class="sxs-lookup"><span data-stu-id="1f281-103">List androidManagedAppProtections</span></span>
+# <a name="list-androidmanagedappprotections"></a><span data-ttu-id="e2ca8-103">Listar androidManagedAppProtections</span><span class="sxs-lookup"><span data-stu-id="e2ca8-103">List androidManagedAppProtections</span></span>
 
-<span data-ttu-id="1f281-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1f281-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e2ca8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e2ca8-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="1f281-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="1f281-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e2ca8-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e2ca8-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1f281-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="1f281-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e2ca8-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e2ca8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1f281-107">Listar propriedades e relações dos objetos [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md).</span><span class="sxs-lookup"><span data-stu-id="1f281-107">List properties and relationships of the [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) objects.</span></span>
+<span data-ttu-id="e2ca8-107">Listar propriedades e relações dos objetos [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md).</span><span class="sxs-lookup"><span data-stu-id="e2ca8-107">List properties and relationships of the [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1f281-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="1f281-108">Prerequisites</span></span>
-<span data-ttu-id="1f281-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1f281-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e2ca8-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="e2ca8-108">Prerequisites</span></span>
+<span data-ttu-id="e2ca8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e2ca8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1f281-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1f281-111">Permission type</span></span>|<span data-ttu-id="1f281-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="1f281-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e2ca8-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e2ca8-111">Permission type</span></span>|<span data-ttu-id="e2ca8-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="e2ca8-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1f281-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1f281-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="1f281-114">&nbsp; &nbsp; **Gerenciamento de aplicativo móvel (GAM)**</span><span class="sxs-lookup"><span data-stu-id="1f281-114">&nbsp; &nbsp; **Mobile app management (MAM)**</span></span> | <span data-ttu-id="1f281-115">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f281-115">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-| <span data-ttu-id="1f281-116">&nbsp;&nbsp; **Conjunto de políticas**</span><span class="sxs-lookup"><span data-stu-id="1f281-116">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="1f281-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f281-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="1f281-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1f281-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1f281-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1f281-119">Not supported.</span></span>|
-|<span data-ttu-id="1f281-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1f281-120">Application</span></span>||
-| <span data-ttu-id="1f281-121">&nbsp; &nbsp; **Gerenciamento de aplicativo móvel (GAM)**</span><span class="sxs-lookup"><span data-stu-id="1f281-121">&nbsp; &nbsp; **Mobile app management (MAM)**</span></span> | <span data-ttu-id="1f281-122">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f281-122">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-| <span data-ttu-id="1f281-123">&nbsp;&nbsp; **Conjunto de políticas**</span><span class="sxs-lookup"><span data-stu-id="1f281-123">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="1f281-124">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f281-124">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="e2ca8-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e2ca8-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="e2ca8-114">&nbsp; &nbsp; **Gerenciamento de aplicativo móvel (GAM)**</span><span class="sxs-lookup"><span data-stu-id="e2ca8-114">&nbsp; &nbsp; **Mobile app management (MAM)**</span></span> | <span data-ttu-id="e2ca8-115">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="e2ca8-115">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+| <span data-ttu-id="e2ca8-116">&nbsp;&nbsp; **Conjunto de políticas**</span><span class="sxs-lookup"><span data-stu-id="e2ca8-116">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="e2ca8-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="e2ca8-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="e2ca8-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e2ca8-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e2ca8-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e2ca8-119">Not supported.</span></span>|
+|<span data-ttu-id="e2ca8-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e2ca8-120">Application</span></span>||
+| <span data-ttu-id="e2ca8-121">&nbsp; &nbsp; **Gerenciamento de aplicativo móvel (GAM)**</span><span class="sxs-lookup"><span data-stu-id="e2ca8-121">&nbsp; &nbsp; **Mobile app management (MAM)**</span></span> | <span data-ttu-id="e2ca8-122">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="e2ca8-122">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+| <span data-ttu-id="e2ca8-123">&nbsp;&nbsp; **Conjunto de políticas**</span><span class="sxs-lookup"><span data-stu-id="e2ca8-123">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="e2ca8-124">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="e2ca8-124">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1f281-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1f281-125">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e2ca8-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e2ca8-125">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -44,28 +44,28 @@ ms.locfileid: "43391248"
 GET /deviceAppManagement/androidManagedAppProtections
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1f281-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1f281-126">Request headers</span></span>
-|<span data-ttu-id="1f281-127">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1f281-127">Header</span></span>|<span data-ttu-id="1f281-128">Valor</span><span class="sxs-lookup"><span data-stu-id="1f281-128">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e2ca8-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e2ca8-126">Request headers</span></span>
+|<span data-ttu-id="e2ca8-127">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="e2ca8-127">Header</span></span>|<span data-ttu-id="e2ca8-128">Valor</span><span class="sxs-lookup"><span data-stu-id="e2ca8-128">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1f281-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="1f281-129">Authorization</span></span>|<span data-ttu-id="1f281-130">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1f281-130">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1f281-131">Aceitar</span><span class="sxs-lookup"><span data-stu-id="1f281-131">Accept</span></span>|<span data-ttu-id="1f281-132">application/json</span><span class="sxs-lookup"><span data-stu-id="1f281-132">application/json</span></span>|
+|<span data-ttu-id="e2ca8-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="e2ca8-129">Authorization</span></span>|<span data-ttu-id="e2ca8-130">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e2ca8-130">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e2ca8-131">Aceitar</span><span class="sxs-lookup"><span data-stu-id="e2ca8-131">Accept</span></span>|<span data-ttu-id="e2ca8-132">application/json</span><span class="sxs-lookup"><span data-stu-id="e2ca8-132">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1f281-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1f281-133">Request body</span></span>
-<span data-ttu-id="1f281-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1f281-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e2ca8-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e2ca8-133">Request body</span></span>
+<span data-ttu-id="e2ca8-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e2ca8-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1f281-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="1f281-135">Response</span></span>
-<span data-ttu-id="1f281-136">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1f281-136">If successful, this method returns a `200 OK` response code and a collection of [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e2ca8-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="e2ca8-135">Response</span></span>
+<span data-ttu-id="e2ca8-136">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e2ca8-136">If successful, this method returns a `200 OK` response code and a collection of [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1f281-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1f281-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e2ca8-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e2ca8-137">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1f281-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1f281-138">Request</span></span>
-<span data-ttu-id="1f281-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1f281-139">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="e2ca8-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e2ca8-138">Request</span></span>
+<span data-ttu-id="e2ca8-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e2ca8-139">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtections
 ```
 
-### <a name="response"></a><span data-ttu-id="1f281-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="1f281-140">Response</span></span>
-<span data-ttu-id="1f281-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1f281-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e2ca8-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="e2ca8-140">Response</span></span>
+<span data-ttu-id="e2ca8-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e2ca8-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -147,6 +147,9 @@ Content-Length: 3448
   ]
 }
 ```
+
+
+
 
 
 
