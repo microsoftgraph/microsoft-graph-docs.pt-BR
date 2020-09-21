@@ -3,14 +3,14 @@ title: Atualizar roleDefinition
 description: Atualizar as propriedades de um objeto roleDefinition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 24f2d59dfe54dea9d914fc302e43204393beea5f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b7669e4b4a5ca791ab071a673f8609e409111599
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461282"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965761"
 ---
 # <a name="update-roledefinition"></a>Atualizar roleDefinition
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [roleDef
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
-|displayName|Cadeia de caracteres|Nome de exibição da definição de Função.|
+|displayName|String|Nome de exibição da definição de Função.|
 |description|String|Descrição da definição de Função.|
 |rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
 |isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada.|
@@ -127,6 +127,9 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
+
+
+
 
 
 

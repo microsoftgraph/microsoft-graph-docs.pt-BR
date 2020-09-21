@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 271fc7a054fce7649ff5b637a0a55d47a566332e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f07b58bd8e5cff9f491f6e20eb11c8afb8654847
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43354102"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967356"
 ---
 # <a name="optionalclaims-resource-type"></a>tipo de recurso optionalClaims
 

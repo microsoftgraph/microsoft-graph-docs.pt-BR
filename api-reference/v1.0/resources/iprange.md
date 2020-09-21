@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8476048a1bacdf6c3246880467cb9d476e110a4d
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 984a4cec88f8bea6e88be04dfe04807ab15f591d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384430"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967461"
 ---
 # <a name="iprange-resource-type"></a>Tipo de recurso ipRange
 
@@ -20,7 +20,7 @@ Classe base do intervalo de IP para representar os intervalos de endereços IPV4
 
 ## <a name="properties"></a>Propriedades
 
-Nenhum
+Nenhum.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -49,3 +49,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0dc07c3c649cb472abc2a33a819fcaf9a7935589
-ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
+ms.openlocfilehash: a281c07e71d715ed123403fe16b2fd3fcc764a05
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006318"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966909"
 ---
 # <a name="get-place"></a>Obter local
 
@@ -61,7 +61,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [local](../resources/place.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [local](../resources/place.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -219,3 +219,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

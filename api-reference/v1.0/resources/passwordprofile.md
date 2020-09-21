@@ -5,12 +5,12 @@ localization_priority: Priority
 author: eketo-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c776cb21923231cab2701bf3679a2df70a59a928
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5f5df66e664bac8dd873166d2f970ac0a0308faa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808134"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967321"
 ---
 # <a name="passwordprofile-resource-type"></a>Tipo de recurso passwordProfile
 
@@ -56,3 +56,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

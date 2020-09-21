@@ -3,14 +3,14 @@ title: tipo de recurso win32LobAppFileSystemRequirement
 description: Contém um caminho de arquivo ou pasta para detectar um aplicativo Win32
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f32327461274585941779c45aa7dc2b485acf12f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 19ffbebea879856af5a00a77ad4329320be3f78f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422985"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966622"
 ---
 # <a name="win32lobappfilesystemrequirement-resource-type"></a>tipo de recurso win32LobAppFileSystemRequirement
 
@@ -56,6 +56,9 @@ Veja a seguir uma representação JSON do recurso.
   "detectionType": "String"
 }
 ```
+
+
+
 
 
 

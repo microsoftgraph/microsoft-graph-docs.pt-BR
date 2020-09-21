@@ -3,14 +3,14 @@ title: Atualizar windowsAutopilotSettings
 description: Atualiza as propriedades de um objeto windowsAutopilotSettings.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 29ec5af7b5b900bcd6ec8f976c665782d371c165
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b5f1bd7ce7c10938f13532912080e665d65645cb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452279"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967042"
 ---
 # <a name="update-windowsautopilotsettings"></a>Atualizar windowsAutopilotSettings
 
@@ -61,7 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -95,6 +95,9 @@ Content-Length: 279
   "syncStatus": "inProgress"
 }
 ```
+
+
+
 
 
 

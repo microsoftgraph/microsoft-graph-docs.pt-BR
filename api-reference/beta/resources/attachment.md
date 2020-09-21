@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: 187627c5137ca40cebb63340e7841ab470748f44
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: c745b2516d2ff3455d00b18df97acd01188f5e29
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312073"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966783"
 ---
 # <a name="attachment-resource-type"></a>tipo de recurso anexo
 
@@ -108,3 +108,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

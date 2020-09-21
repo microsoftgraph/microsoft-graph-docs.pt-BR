@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: eb85ea8e1759dc948f764b391e25a51b97090566
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 51806154a36433ee054250bc1c306b64953a8766
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447371"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967370"
 ---
 # <a name="muteparticipantoperation-resource-type"></a>Tipo de recurso MuteParticipantOperation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Descreve o formato de resposta de uma operação do participante sem som de chamada.
 
@@ -23,7 +23,7 @@ Descreve o formato de resposta de uma operação do participante sem som de cham
 | Propriedade                       | Tipo                        | Descrição                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | Cadeia de caracteres de contexto de cliente exclusivo. Pode ter um máximo de 256 caracteres.                                                                               |
-| id                             | Cadeia de caracteres                      | A ID da operação do servidor. Somente leitura.                                                                                            |
+| id                             | String                      | A ID da operação do servidor. Somente leitura.                                                                                            |
 | resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura.                                                                                            |
 | status                         | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura.                                                 |
 
@@ -59,3 +59,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

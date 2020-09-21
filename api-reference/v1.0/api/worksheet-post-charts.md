@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 969e6553009081574c70184ed5da5496c1f5bd0b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62aaeb698aadc8a16f266e70aa96027ca953debe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508643"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967650"
 ---
 # <a name="create-chart"></a>Create Chart
 
@@ -43,7 +43,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [Workbook
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [WorkbookChart](../resources/chart.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [WorkbookChart](../resources/chart.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -114,3 +114,4 @@ Content-length: 52
   "suppressions": [
   ]
 }-->
+

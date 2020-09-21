@@ -7,12 +7,12 @@ localization_priority: Normal
 description: O recurso remoteItem indica que um driveItem faz referência a um item que existe em outra unidade.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 131336245f60d0f62da7bc7cc9922c32e3f545a3
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: 3688711b588ee40b8ec0aac0dc04f543cf2e2294
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986086"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967328"
 ---
 # <a name="remoteitem-resource-type"></a>Tipo de recurso RemoteItem
 
@@ -60,7 +60,7 @@ Este recurso fornece as IDs exclusivas do da unidade de origem e do item de dest
 | Nome da propriedade        | Tipo                                | Descrição                                                                                                                                                       |
 | :------------------- | :---------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [IdentitySet](identityset.md)       | Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.                                                                                  |
-| createdDateTime      | Carimbo de data/hora                           | Data e hora de criação do item. Somente leitura.                                                                                                                        |
+| createdDateTime      | Timestamp                           | Data e hora de criação do item. Somente leitura.                                                                                                                        |
 | file                 | [File](file.md)                     | Indica que o item remoto é um arquivo. Somente leitura.                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Informações sobre o item remoto do sistema de arquivos local. Somente leitura.                                                                                          |
 | folder               | [Folder](folder.md)                 | Indica que o item remoto é uma pasta. Somente leitura.                                                                                                            |
@@ -92,3 +92,4 @@ Para saber mais sobre as facetas de um **driveItem**, confira [driveItem](drivei
   "section": "documentation",
   "tocPath": "Facets/RemoteItem"
 } -->
+

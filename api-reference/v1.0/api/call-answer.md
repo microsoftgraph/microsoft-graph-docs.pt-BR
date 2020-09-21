@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d8719a226f05473ee068bac98364ae5ec01eadaa
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 7460622ba14a9b31fc439123795883a6d7d431b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183978"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966398"
 ---
 # <a name="call-answer"></a>Call: resposta
 
@@ -170,7 +170,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitar
+##### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "request",
@@ -555,3 +555,4 @@ Aqui está um exemplo da notificação de chamada de entrada que um bot receberi
   ]
 }
 -->
+

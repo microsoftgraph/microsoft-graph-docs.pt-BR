@@ -6,16 +6,16 @@ title: IdentitySet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 08986af20ae7591798a222e68d9b9bee5244e273
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 60fdb901ecd74f3826604d139cad71d9d0844221
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496604"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966755"
 ---
 # <a name="identityset-resource-type"></a>tipo de recurso identityset
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,10 +61,10 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade    | Tipo                    | Descrição                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
-| application | [Identidade](identity.md) | Opcional. O aplicativo associado a essa ação.  |
+| application | [Identity](identity.md) | Opcional. O aplicativo associado a essa ação.  |
 | conversa| [Identity](identity.md) | Opcional. A equipe ou canal associado a esta ação.       |
 | conversationIdentityType| [Identity](identity.md) | Opcional. Indica se a propriedade de **conversa** identifica uma equipe ou um canal.|
-| device      | [Identidade](identity.md) | Opcional. O dispositivo associado a essa ação.       |
+| device      | [Identity](identity.md) | Opcional. O dispositivo associado a essa ação.       |
 | phone       | [identity](identity.md) | Opcional. O número de telefone associado a esta ação. |
 | user        | [Identity](identity.md) | Opcional. O usuário associado a essa ação.         |
 
@@ -81,3 +81,5 @@ Confira [chamada](call.md) para uso de recursos **identityset** .
   "section": "documentation",
   "tocPath": "Resources/IdentitySet"
 } -->
+
+

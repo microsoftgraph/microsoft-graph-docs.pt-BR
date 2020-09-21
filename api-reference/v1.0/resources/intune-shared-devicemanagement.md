@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cda405c9f63d52ee9741dd679e582c7fdfcd44df
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: a709c1c4ef47273f9495fc3582bb27e7de7ddbb1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744010"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967517"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -26,7 +26,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Gerenciamento de dispositivo  
 - Proteção de pontos de extremidade  
 - Perfis de registro  
-- Notifications  
+- Notificações  
 - Políticas de integração, configurações e detalhes  
 - Políticas de controle de acesso baseado em função (RBAC)  
 - Parceiros de assistência remota  
@@ -122,6 +122,8 @@ Veja a seguir uma representação JSON do recurso.
   "settings": {"@odata.type": "microsoft.graph.deviceManagementSettings"}
 }
 ```
+
+
 
 
 

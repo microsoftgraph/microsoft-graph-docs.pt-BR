@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 33743319d1a58dc6ad99e0dc5c7d6d2190956254
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8c4281d2051aa07e419a4d59e9b27e87875f3f86
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454686"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966797"
 ---
 # <a name="range-usedrange"></a>Range: UsedRange
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -122,3 +122,5 @@ Content-length: 169
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0de704fac3c640f42d0cc9d4379d9f7fb2f82c92
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: b3863f4902ea0353e7d742b913f89e6d97446ded
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384456"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967468"
 ---
 # <a name="ipnamedlocation-resource-type"></a>tipo de recurso ipNamedLocation
 
@@ -20,7 +20,7 @@ Representa um local nomeado do Azure Active Directory definido por intervalos de
 
 Herda de [namedLocation](../resources/namedLocation.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -35,10 +35,10 @@ Herda de [namedLocation](../resources/namedLocation.md)
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|O tipo TIMESTAMP representa data e hora de criação do local usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Herdado de [namedLocation](../resources/namedLocation.md).|
-|displayName|Cadeia de caracteres|Nome legível do local.|
+|displayName|String|Nome legível do local.|
 |id|String|Identificador de um objeto namedLocation. Somente leitura. Herdado de [namedLocation](../resources/namedLocation.md).|
 |Intervalos|Coleção [ipRange](iprange.md)|Lista de intervalos de endereços IP no formato CIDR do IPv4 (por exemplo, 1.2.3.4/32) ou qualquer formato IPv6 permitido da IETF RFC596.|
-|isTrusted|Booliano|True se esse local é explicitamente confiável.|
+|isTrusted|Boolean|True se esse local é explicitamente confiável.|
 |modifiedDateTime|DateTimeOffset|O tipo TIMESTAMP representa data e hora da última modificação do local usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Herdado de [namedLocation](../resources/namedLocation.md).|
 
 ## <a name="relationships"></a>Relações
@@ -78,3 +78,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

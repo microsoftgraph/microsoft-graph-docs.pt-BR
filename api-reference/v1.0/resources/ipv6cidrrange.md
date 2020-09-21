@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 98f213baff3f1b4a0fe2c59e8812cfaef2e9e22a
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 75c15484a310bdff66052b9381bea8b62779979c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384429"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967454"
 ---
 # <a name="ipv6cidrrange-resource-type"></a>tipo de recurso iPv6CidrRange
 
@@ -24,7 +24,7 @@ Herda de [ipRange](../resources/iprange.md)
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|cidrAddress|Cadeia de caracteres|Endereço IPv6 na notação CIDR|
+|cidrAddress|String|Endereço IPv6 na notação CIDR|
 
 ## <a name="json-representation"></a>Representação JSON
 

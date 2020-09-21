@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fea5be249ae7d5494637410794987c5b554e2b1d
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 38af98443e34ec64cdaa70316966451c4a58eb16
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290072"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966913"
 ---
 # <a name="list-places"></a>Locais de lista
 
@@ -75,7 +75,7 @@ Este método dá suporte aos seguintes parâmetros de consulta para ajudar a per
 
 Use $top para personalizar o tamanho da página. O tamanho de página padrão é 100.
 
-Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -393,3 +393,5 @@ Content-type: application/json
     "Error: Malformed function params 'id-of-roomlist'"
   ]
 }-->
+
+

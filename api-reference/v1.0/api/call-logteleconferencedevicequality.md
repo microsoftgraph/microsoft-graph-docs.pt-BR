@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3c50089bb2f0bf4278ce8450350c12e7c54c1bb2
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: d0cae26a29e6aa6cbcfcc140b079590a4ebfa4d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124221"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966328"
 ---
 # <a name="call-logteleconferencedevicequality"></a>Call: logTeleconferenceDeviceQuality
 
@@ -203,3 +203,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

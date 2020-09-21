@@ -3,14 +3,14 @@ title: Ação shutDown
 description: Desligar o dispositivo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58c68c21abec4dc670914e1bf5ee064aba953eb1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 41d44f8daa20aa0700dd989e11e65edf3b8a54e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450480"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965978"
 ---
 # <a name="shutdown-action"></a>Ação shutDown
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

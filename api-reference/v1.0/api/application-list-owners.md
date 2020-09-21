@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aea57ce8a6858bf94ef9e158ab00fda04b362527
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 45fb8aa5975c6fc8a99f5e07b346c258dfac59cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289861"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966489"
 ---
 # <a name="list-owners"></a>Listar proprietários
 
@@ -114,3 +114,4 @@ Content-length: 55
   ]
 }
 -->
+

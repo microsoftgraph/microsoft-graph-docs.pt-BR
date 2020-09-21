@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0b1e8e6e6505780fcf638892c1e18b9500d54423
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 416485ee39f02ba6a3b6532f159e124ecf1f1841
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790928"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966545"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -84,6 +84,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Recurso keyguard do Android](intune-deviceconfig-androidkeyguardfeature.md)
 - [Configuração de OMA CP do Android](intune-deviceconfig-androidomacpconfiguration.md)
 - [Perfil de certificado de PKCS do Android](intune-deviceconfig-androidpkcscertificateprofile.md)
+- [Complexidade de senha necessária para Android](intune-deviceconfig-androidrequiredpasswordcomplexity.md)
 - [Tipo de senha obrigatória do Android](intune-deviceconfig-androidrequiredpasswordtype.md)
 - [Perfil de certificado do SCEP do Android](intune-deviceconfig-androidscepcertificateprofile.md)
 - [Certificado raiz confiável do Android](intune-deviceconfig-androidtrustedrootcertificate.md)
@@ -386,6 +387,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [extensão de logon único de redirecionamento macOS](intune-deviceconfig-macosredirectsinglesignonextension.md)
 - [Perfil de certificado do SCEP do macOS](intune-deviceconfig-macosscepcertificateprofile.md)
 - [extensão de logon único do macOS](intune-deviceconfig-macossinglesignonextension.md)
+- [política de atraso de atualização do software macOS](intune-deviceconfig-macossoftwareupdatedelaypolicy.md)
 - [extensão do sistema macOS](intune-deviceconfig-macossystemextension.md)
 - [tipo de extensão do sistema macOS](intune-deviceconfig-macossystemextensiontype.md)
 - [mapeamento de tipo de extensão do sistema macOS](intune-deviceconfig-macossystemextensiontypemapping.md)
@@ -610,3 +612,5 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração de Wi-Fi do Windows](intune-deviceconfig-windowswificonfiguration.md)
 - [Configuração de EAP corporativa de Wi-Fi do Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
 - [Interface de rede com fio](intune-deviceconfig-wirednetworkinterface.md)
+
+

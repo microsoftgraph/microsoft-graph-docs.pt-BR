@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 37af131e5e51f1bb0388bc002465aef71a8059a0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f1d88bec00e7add34ef62a2d4dd8f39349fe933f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518711"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966349"
 ---
 # <a name="call-keepalive"></a>Call: keepAlive
 
@@ -108,3 +108,4 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+

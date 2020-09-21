@@ -3,14 +3,14 @@ title: Atualizar roleAssignment
 description: Atualizar as propriedades de um objeto roleAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b346f7b40b718b4910eaf733c6dc7c24ae139a8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6d8102faa99f8229a2f767e2039fcfbbdd4eca1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467356"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965824"
 ---
 # <a name="update-roleassignment"></a>Atualizar roleAssignment
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [roleAss
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
-|displayName|Cadeia de caracteres|O nome de exibição ou nome amigável da atribuição de função.|
+|displayName|String|O nome de exibição ou nome amigável da atribuição de função.|
 |description|String|Descrição da atribuição de função.|
 |resourceScopes|Coleção de cadeias de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory.|
 
@@ -97,6 +97,9 @@ Content-Length: 242
   ]
 }
 ```
+
+
+
 
 
 

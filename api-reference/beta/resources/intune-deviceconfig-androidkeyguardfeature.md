@@ -3,14 +3,14 @@ title: tipo de enumeração androidKeyguardFeature
 description: Recurso de protetor de recurso Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ba0520d47a362678e8d6eb1f698eee9aad2a28c5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7c723079cddf33ee592fc2905056a6723b24ca02
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473803"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966531"
 ---
 # <a name="androidkeyguardfeature-enum-type"></a>tipo de enumeração androidKeyguardFeature
 
@@ -26,13 +26,16 @@ Recurso de protetor de recurso Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado; Esse valor é ignorado.|
-|Câmara|1|Uso da câmera quando em telas do Secure keyguard.|
-|por|duas|Mostrar notificações quando em telas do keyguard seguras.|
-|unredactedNotifications|3D|Mostrar notificações não redigidas quando em telas do Secure keyguard.|
+|Câmara|1 |Uso da câmera quando em telas do Secure keyguard.|
+|por|2 |Mostrar notificações quando em telas do keyguard seguras.|
+|unredactedNotifications|3 |Mostrar notificações não redigidas quando em telas do Secure keyguard.|
 |trustAgents|4 |Estado do agente de confiança quando em telas de proteção de segurança seguras.|
 |digitais|5 |Uso do sensor de impressão digital quando estiver em telas do Secure keyguard.|
 |remoteInput|6 |Entrada de texto de notificação quando em telas de keyguard seguras.|
 |Sub-recursos|7 |Todos os recursos de keyguard quando estão no Secure keyguard.|
+
+
+
 
 
 

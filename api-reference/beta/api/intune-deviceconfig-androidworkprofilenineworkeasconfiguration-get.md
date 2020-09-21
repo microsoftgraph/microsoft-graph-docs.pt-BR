@@ -3,14 +3,14 @@ title: Obter androidWorkProfileNineWorkEasConfiguration
 description: Leia as propriedades e as relações do objeto androidWorkProfileNineWorkEasConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4561c269ea33d9edf262e8a36c3dd4de7c2f7bdc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 58162de6f307393c81adae1c1571b485991158bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434888"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967063"
 ---
 # <a name="get-androidworkprofilenineworkeasconfiguration"></a>Obter androidWorkProfileNineWorkEasConfiguration
 
@@ -118,6 +118,9 @@ Content-Length: 1616
   }
 }
 ```
+
+
+
 
 
 
