@@ -5,28 +5,28 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1e69cc5b3e2ace9418333a0db79a2b9cbc3a37d2
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: edf6013b4c0293eb79b2b21aafc5a6ce944b0fa2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806958"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002972"
 ---
-# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="f1ae9-103">Tipo de recurso patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="f1ae9-103">patternedRecurrence resource type</span></span>
+# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="bb725-103">Tipo de recurso patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="bb725-103">patternedRecurrence resource type</span></span>
 
-<span data-ttu-id="f1ae9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f1ae9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bb725-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bb725-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="f1ae9-105">O padrão e o intervalo da recorrência.</span><span class="sxs-lookup"><span data-stu-id="f1ae9-105">The recurrence pattern and range.</span></span>
+<span data-ttu-id="bb725-105">O padrão e o intervalo da recorrência.</span><span class="sxs-lookup"><span data-stu-id="bb725-105">The recurrence pattern and range.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f1ae9-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f1ae9-106">Properties</span></span>
-| <span data-ttu-id="f1ae9-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f1ae9-107">Property</span></span>     | <span data-ttu-id="f1ae9-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="f1ae9-108">Type</span></span>   |<span data-ttu-id="f1ae9-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="f1ae9-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="bb725-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bb725-106">Properties</span></span>
+| <span data-ttu-id="bb725-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="bb725-107">Property</span></span>     | <span data-ttu-id="bb725-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="bb725-108">Type</span></span>   |<span data-ttu-id="bb725-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="bb725-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f1ae9-110">pattern</span><span class="sxs-lookup"><span data-stu-id="f1ae9-110">pattern</span></span>|[<span data-ttu-id="f1ae9-111">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="f1ae9-111">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="f1ae9-112">A frequência de um evento.</span><span class="sxs-lookup"><span data-stu-id="f1ae9-112">The frequency of an event.</span></span>|
-|<span data-ttu-id="f1ae9-113">range</span><span class="sxs-lookup"><span data-stu-id="f1ae9-113">range</span></span>|[<span data-ttu-id="f1ae9-114">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="f1ae9-114">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="f1ae9-115">A duração de um evento.</span><span class="sxs-lookup"><span data-stu-id="f1ae9-115">The duration of an event.</span></span>|
+|<span data-ttu-id="bb725-110">pattern</span><span class="sxs-lookup"><span data-stu-id="bb725-110">pattern</span></span>|[<span data-ttu-id="bb725-111">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="bb725-111">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="bb725-112">A frequência de um evento.</span><span class="sxs-lookup"><span data-stu-id="bb725-112">The frequency of an event.</span></span>|
+|<span data-ttu-id="bb725-113">range</span><span class="sxs-lookup"><span data-stu-id="bb725-113">range</span></span>|[<span data-ttu-id="bb725-114">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="bb725-114">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="bb725-115">A duração de um evento.</span><span class="sxs-lookup"><span data-stu-id="bb725-115">The duration of an event.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="f1ae9-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f1ae9-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bb725-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="bb725-116">JSON representation</span></span>
 
-<span data-ttu-id="f1ae9-117">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="f1ae9-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="bb725-117">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="bb725-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -53,3 +53,4 @@ ms.locfileid: "46806958"
   "section": "documentation",
   "tocPath": ""
 }-->
+

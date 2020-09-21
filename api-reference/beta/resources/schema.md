@@ -5,44 +5,44 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: c7780cd7c31da98a618053febba1b75c5e318931
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 0d5182e68fd1b1d53abb5b3fa623f3048abfe723
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44990259"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083964"
 ---
-# <a name="schema-resource-type"></a><span data-ttu-id="0d825-103">tipo de recurso de esquema</span><span class="sxs-lookup"><span data-stu-id="0d825-103">schema resource type</span></span>
+# <a name="schema-resource-type"></a><span data-ttu-id="4582c-103">tipo de recurso de esquema</span><span class="sxs-lookup"><span data-stu-id="4582c-103">schema resource type</span></span>
 
-<span data-ttu-id="0d825-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0d825-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4582c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4582c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0d825-105">Descreve o tipo de conteúdo e como indexar cada propriedade em itens em uma [conexão](externalconnection.md)de pesquisa da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="0d825-105">Describes the type of content and how to index each property in items in a Microsoft Search [connection](externalconnection.md).</span></span>
+<span data-ttu-id="4582c-105">Descreve o tipo de conteúdo e como indexar cada propriedade em itens em uma [conexão](externalconnection.md)de pesquisa da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="4582c-105">Describes the type of content and how to index each property in items in a Microsoft Search [connection](externalconnection.md).</span></span>
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a><span data-ttu-id="0d825-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="0d825-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="4582c-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="4582c-106">Methods</span></span>
 
-| <span data-ttu-id="0d825-107">Método</span><span class="sxs-lookup"><span data-stu-id="0d825-107">Method</span></span>                                                    | <span data-ttu-id="0d825-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="0d825-108">Return Type</span></span>                   | <span data-ttu-id="0d825-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="0d825-109">Description</span></span> |
+| <span data-ttu-id="4582c-107">Método</span><span class="sxs-lookup"><span data-stu-id="4582c-107">Method</span></span>                                                    | <span data-ttu-id="4582c-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="4582c-108">Return Type</span></span>                   | <span data-ttu-id="4582c-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="4582c-109">Description</span></span> |
 |:----------------------------------------------------------|:------------------------------|:--|
-| [<span data-ttu-id="0d825-110">Criar esquema</span><span class="sxs-lookup"><span data-stu-id="0d825-110">Create schema</span></span>](../api/externalconnection-post-schema.md) | <span data-ttu-id="0d825-111">Nenhum *ou* [esquema](schema.md)</span><span class="sxs-lookup"><span data-stu-id="0d825-111">None *or* [schema](schema.md)</span></span> | <span data-ttu-id="0d825-112">Registrar o esquema de conexão.</span><span class="sxs-lookup"><span data-stu-id="0d825-112">Register connection schema.</span></span> |
-| [<span data-ttu-id="0d825-113">Obter esquema</span><span class="sxs-lookup"><span data-stu-id="0d825-113">Get schema</span></span>](../api/schema-get.md)                        | [<span data-ttu-id="0d825-114">schema</span><span class="sxs-lookup"><span data-stu-id="0d825-114">schema</span></span>](schema.md)           | <span data-ttu-id="0d825-115">Ler as propriedades de um objeto Schema.</span><span class="sxs-lookup"><span data-stu-id="0d825-115">Read properties of a schema object.</span></span> |
+| [<span data-ttu-id="4582c-110">Criar esquema</span><span class="sxs-lookup"><span data-stu-id="4582c-110">Create schema</span></span>](../api/externalconnection-post-schema.md) | <span data-ttu-id="4582c-111">Nenhum *ou* [esquema](schema.md)</span><span class="sxs-lookup"><span data-stu-id="4582c-111">None *or* [schema](schema.md)</span></span> | <span data-ttu-id="4582c-112">Registrar o esquema de conexão.</span><span class="sxs-lookup"><span data-stu-id="4582c-112">Register connection schema.</span></span> |
+| [<span data-ttu-id="4582c-113">Obter esquema</span><span class="sxs-lookup"><span data-stu-id="4582c-113">Get schema</span></span>](../api/schema-get.md)                        | [<span data-ttu-id="4582c-114">schema</span><span class="sxs-lookup"><span data-stu-id="4582c-114">schema</span></span>](schema.md)           | <span data-ttu-id="4582c-115">Ler as propriedades de um objeto Schema.</span><span class="sxs-lookup"><span data-stu-id="4582c-115">Read properties of a schema object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="0d825-116">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0d825-116">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4582c-116">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4582c-116">Properties</span></span>
 
-| <span data-ttu-id="0d825-117">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0d825-117">Property</span></span>   | <span data-ttu-id="0d825-118">Tipo</span><span class="sxs-lookup"><span data-stu-id="0d825-118">Type</span></span>                               | <span data-ttu-id="0d825-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="0d825-119">Description</span></span>                |
+| <span data-ttu-id="4582c-117">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4582c-117">Property</span></span>   | <span data-ttu-id="4582c-118">Tipo</span><span class="sxs-lookup"><span data-stu-id="4582c-118">Type</span></span>                               | <span data-ttu-id="4582c-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="4582c-119">Description</span></span>                |
 |:-----------|:-----------------------------------|:---------------------------|
-| <span data-ttu-id="0d825-120">baseType</span><span class="sxs-lookup"><span data-stu-id="0d825-120">baseType</span></span>   | <span data-ttu-id="0d825-121">String</span><span class="sxs-lookup"><span data-stu-id="0d825-121">String</span></span>                             | <span data-ttu-id="0d825-122">Deve ser definida como `microsoft.graph.externalItem`.</span><span class="sxs-lookup"><span data-stu-id="0d825-122">Must be set to `microsoft.graph.externalItem`.</span></span> <span data-ttu-id="0d825-123">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0d825-123">Required.</span></span> |
-| <span data-ttu-id="0d825-124">properties</span><span class="sxs-lookup"><span data-stu-id="0d825-124">properties</span></span> | <span data-ttu-id="0d825-125">coleção [Property](property.md)</span><span class="sxs-lookup"><span data-stu-id="0d825-125">[property](property.md) collection</span></span> | <span data-ttu-id="0d825-126">As propriedades definidas para os itens na conexão.</span><span class="sxs-lookup"><span data-stu-id="0d825-126">The properties defined for the items in the connection.</span></span> <span data-ttu-id="0d825-127">O número mínimo de propriedades é um, o máximo é 128.</span><span class="sxs-lookup"><span data-stu-id="0d825-127">The minimum number of properties is one, the maximum is 128.</span></span> |
+| <span data-ttu-id="4582c-120">baseType</span><span class="sxs-lookup"><span data-stu-id="4582c-120">baseType</span></span>   | <span data-ttu-id="4582c-121">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="4582c-121">String</span></span>                             | <span data-ttu-id="4582c-122">Deve ser definida como `microsoft.graph.externalItem`.</span><span class="sxs-lookup"><span data-stu-id="4582c-122">Must be set to `microsoft.graph.externalItem`.</span></span> <span data-ttu-id="4582c-123">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4582c-123">Required.</span></span> |
+| <span data-ttu-id="4582c-124">properties</span><span class="sxs-lookup"><span data-stu-id="4582c-124">properties</span></span> | <span data-ttu-id="4582c-125">coleção [Property](property.md)</span><span class="sxs-lookup"><span data-stu-id="4582c-125">[property](property.md) collection</span></span> | <span data-ttu-id="4582c-126">As propriedades definidas para os itens na conexão.</span><span class="sxs-lookup"><span data-stu-id="4582c-126">The properties defined for the items in the connection.</span></span> <span data-ttu-id="4582c-127">O número mínimo de propriedades é um, o máximo é 128.</span><span class="sxs-lookup"><span data-stu-id="4582c-127">The minimum number of properties is one, the maximum is 128.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="0d825-128">Relações</span><span class="sxs-lookup"><span data-stu-id="0d825-128">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="4582c-128">Relações</span><span class="sxs-lookup"><span data-stu-id="4582c-128">Relationships</span></span>
 
-<span data-ttu-id="0d825-129">Nenhum</span><span class="sxs-lookup"><span data-stu-id="0d825-129">None</span></span>
+<span data-ttu-id="4582c-129">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4582c-129">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0d825-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0d825-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4582c-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4582c-130">JSON representation</span></span>
 
-<span data-ttu-id="0d825-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0d825-131">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4582c-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4582c-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -71,3 +71,5 @@ ms.locfileid: "44990259"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

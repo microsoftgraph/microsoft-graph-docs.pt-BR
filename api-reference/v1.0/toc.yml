@@ -169,11 +169,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -389,7 +389,7 @@ items:
                 href: api/planneruser-list-tasks.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -587,7 +587,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -990,7 +990,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1078,10 +1078,12 @@ items:
               - name: Participante
                 href: resources/participant.md
                 items:
-                  - name: Obter
-                    href: api/participant-get.md
                   - name: Listar
                     href: api/call-list-participants.md
+                  - name: Obter
+                    href: api/participant-get.md
+                  - name: Excluir
+                    href: api/participant-delete.md
                   - name: Ativar mudo para participante
                     href: api/participant-mute.md
                   - name: Convidar participantes
@@ -1098,7 +1100,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1152,7 +1154,7 @@ items:
       - name: Dispositivos e aplicativos
         displayName: Intune
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/intune-graph-overview.md
           - name: Gerenciamento de aplicativos
             href: resources/intune-app-conceptual.md
@@ -3542,7 +3544,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -3634,6 +3636,35 @@ items:
             href: resources/azure-ad-overview.md
           - name: Gerenciamento de diretório
             items:
+              - name: Unidade administrativa
+                href: resources/administrativeunit.md
+                items:
+                  - name: Listar
+                    href: api/administrativeunit-list.md
+                  - name: Criar
+                    href: api/administrativeunit-post-administrativeunits.md
+                  - name: Obter
+                    href: api/administrativeunit-get.md
+                  - name: Atualizar
+                    href: api/administrativeunit-update.md
+                  - name: Excluir
+                    href: api/administrativeunit-delete.md
+                  - name: Adicionar um membro
+                    href: api/administrativeunit-post-members.md
+                  - name: Listar membros
+                    href: api/administrativeunit-list-members.md
+                  - name: Obter um membro
+                    href: api/administrativeunit-get-members.md
+                  - name: Remover um membro
+                    href: api/administrativeunit-delete-members.md
+                  - name: Adicionar um administrador de função no escopo
+                    href: api/administrativeunit-post-scopedrolemembers.md
+                  - name: Listar administradores de função no escopo
+                    href: api/administrativeunit-list-scopedrolemembers.md
+                  - name: Obter um administrador de função no escopo
+                    href: api/administrativeunit-get-scopedrolemembers.md
+                  - name: Remover um administrador de função no escopo
+                    href: api/administrativeunit-delete-scopedrolemembers.md
               - name: Contratos
                 href: resources/contract.md
                 items:
@@ -4150,7 +4181,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4261,7 +4292,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -4351,7 +4382,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4604,7 +4635,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -4643,7 +4674,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -4689,9 +4720,9 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -4876,7 +4907,7 @@ items:
                 href: api/teamsapp-update.md
               - name: Excluir aplicativo do catálogo
                 href: api/teamsapp-delete.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
