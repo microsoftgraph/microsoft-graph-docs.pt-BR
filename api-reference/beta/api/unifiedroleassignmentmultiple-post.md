@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 326f58cdce239c2a33ac555497f67b0bc0387b71
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
+ms.openlocfilehash: 687e29bdc2668c360a935260a99b2d831f29f1c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989863"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>Criar unifiedRoleAssignmentMultiple
 
@@ -199,3 +199,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

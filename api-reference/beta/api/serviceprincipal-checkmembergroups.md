@@ -1,24 +1,24 @@
 ---
-title: 'servicePrincipalName: checkMemberGroups'
+title: 'servicePrincipal: checkMemberGroups'
 description: Verifique se há associação na lista de grupos especificada. Retorna da lista os grupos dos quais a entidade de serviço tem uma associação direta ou transitiva.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 47edde97d964b6f860a4b6d41a9d3bda04bb9e08
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 2e36d11d63d0ce8cd5ab5a1e8b894d4638c22eaf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383445"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044681"
 ---
-# <a name="serviceprincipal-checkmembergroups"></a>servicePrincipalName: checkMemberGroups
+# <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: checkMemberGroups
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifique se há associação na lista de grupos especificada. Retorna da lista os grupos dos quais o [servicePrincipalName](../resources/serviceprincipal.md) tem uma associação direta ou transitiva.
+Verifique se há associação na lista de grupos especificada. Retorna da lista os grupos dos quais o [servicePrincipal](../resources/serviceprincipal.md) tem uma associação direta ou transitiva.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto da coleção String no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto da coleção de cadeias de caracteres no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 Eis um exemplo de como chamar esta API.
@@ -122,3 +122,5 @@ Content-length: 39
   ]
 }
 -->
+
+

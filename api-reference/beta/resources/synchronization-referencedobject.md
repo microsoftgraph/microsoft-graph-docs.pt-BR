@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7779fb851812c00c15749877517b79273752ab58
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9ea400e40074b30943412cf7b5fbae75f9037ca1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217588"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023881"
 ---
 # <a name="referencedobject-resource-type"></a>tipo de recurso referenciouobject
 
@@ -24,8 +24,8 @@ Descreve uma referência a outro objeto definido na mesma [definição de diret�
 
 | Propriedade                   | Tipo                      | Descrição    |
 |:---------------------------|:--------------------------|:---------------|
-|referencedObjectName        |Cadeia de Caracteres                     |Nome do objeto referenciado. Deve corresponder a um dos objetos na [definição de diretório](synchronization-directorydefinition.md).|
-|referenciouproperty          |Cadeia de Caracteres                     |**Não suportado no momento**. Nome da propriedade no objeto referenciado, o valor para o qual é usado como a referência.|
+|referencedObjectName        |String                     |Nome do objeto referenciado. Deve corresponder a um dos objetos na [definição de diretório](synchronization-directorydefinition.md).|
+|referenciouproperty          |String                     |**Não suportado no momento**. Nome da propriedade no objeto referenciado, o valor para o qual é usado como a referência.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -60,3 +60,5 @@ Veja a seguir uma representação JSON do recurso.
 }
 -->
             
+
+

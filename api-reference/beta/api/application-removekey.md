@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 282584ad9a6b8f1d20f46538a8938f9194f5a649
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: e61dc0f0ff51e23eb949632eed0584da921440ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383684"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996770"
 ---
 # <a name="application-removekey"></a>aplicativo: removeKey
 
@@ -25,13 +25,13 @@ Remover uma credencial de chave de um [aplicativo](../resources/application.md).
 
 Como parte da solicitação de validação para esse método, uma prova de posse de uma chave existente é verificada antes que a ação possa ser executada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Nenhum  |
+|Delegado (conta corporativa ou de estudante) | Nenhum.  |
 |Delegado (conta pessoal da Microsoft) | Nenhum.    |
-|Aplicativo | Nenhum |
+|Aplicativo | Nenhum. |
 
 > [!NOTE] 
 > Um aplicativo não precisa de nenhuma permissão específica para rolar suas próprias chaves.
@@ -58,7 +58,7 @@ No corpo da solicitação, forneça as seguintes propriedades obrigatórias.
 | Propriedade  | Tipo | Descrição|
 |:----------|:-----|:-----------|
 | keyId     | GUID | O identificador exclusivo da senha.|
-| evidência | String | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do aplicativo. O token deve conter as seguintes declarações:<ul><li>`aud`-A audiência precisa ser `00000002-0000-0000-c000-000000000000` .</li><li>`iss`– O emissor precisa ser a __ID__ do aplicativo que está fazendo a chamada.</li><li>`nbf`-Não antes da hora.</li><li>`exp`– O tempo de expiração deve ser "NBF" + 10 minutos.</li></ul><br>Veja a seguir um [exemplo](/graph/application-rollkey-prooftoken) de código que pode ser usado para gerar esse token de prova de posse.|
+| evidência | String | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token de JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do aplicativo. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor deve ser o __ID__ do aplicativo que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Veja a seguir um [exemplo](/graph/application-rollkey-prooftoken) de código que pode ser usado para gerar esse token de prova de posse.|
 
 ## <a name="response"></a>Resposta
 
@@ -125,3 +125,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

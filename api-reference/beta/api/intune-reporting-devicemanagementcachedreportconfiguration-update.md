@@ -3,14 +3,14 @@ title: Atualizar deviceManagementCachedReportConfiguration
 description: Atualiza as propriedades de um objeto deviceManagementCachedReportConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f43a7b91931ba777909df75facb91d488033ca9
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 011d1b38e3e10afd5c3ec5104c84eab74ddc0b86
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791339"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010763"
 ---
 # <a name="update-devicemanagementcachedreportconfiguration"></a>Atualizar deviceManagementCachedReportConfiguration
 
@@ -118,6 +118,9 @@ Content-Length: 467
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipalName: addpassword'
-description: Adicione uma senha forte a um servicePrincipalName.
+description: Adicione uma senha forte a uma servicePrincipal.
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 673a2fea2c198d961832a34733b028666104a6a3
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 2a9fff1b34a97e4281279da7aeed9eab581b356d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291073"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044661"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipalName: addpassword
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça um `passwordCredential` objeto opcional com 
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| displayName | String | Nome amigável da senha. Opcional. |
+| displayName | Cadeia de caracteres | Nome amigável da senha. Opcional. |
 | endDateTime | DateTimeOffset | A data e a hora em que a senha expira representada usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional. O valor padrão é "startDatetime + 2 anos". |
 | startDateTime | DateTimeOffset | A data e a hora em que a senha se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional. O valor padrão é "Now". |
 
@@ -124,3 +124,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

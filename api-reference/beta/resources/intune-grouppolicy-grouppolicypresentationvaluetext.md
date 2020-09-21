@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyPresentationValueText
 description: A entidade representa um valor de cadeia de caracteres para uma lista suspensa, caixa de combinação ou apresentação de caixa de texto em uma definição de política.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e9bdf422c4d55ca3d828c5a673d82bfec110688
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3509e664fed51007e5ff876caef3e5f97c762089
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466745"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030707"
 ---
 # <a name="grouppolicypresentationvaluetext-resource-type"></a>tipo de recurso groupPolicyPresentationValueText
 
@@ -65,6 +65,9 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String"
 }
 ```
+
+
+
 
 
 

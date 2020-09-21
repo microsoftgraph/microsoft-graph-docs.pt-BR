@@ -3,14 +3,14 @@ title: tipo de enumeração windowsUserAccountControlSettings
 description: Valores possíveis para as configurações de controle de conta de usuário do Windows.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0ce1b3eda2abf32db60d8175014141829efc0755
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3a7b8eddc4fa76ca8ff174c63bd778e5e40ca9c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451329"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091345"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>tipo de enumeração windowsUserAccountControlSettings
 
@@ -24,10 +24,12 @@ Valores possíveis para as configurações de controle de conta de usuário do W
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|alwaysNotify|1|Sempre notificar.|
-|notifyOnAppChanges|duas|Notificar alterações no aplicativo.|
+|alwaysNotify|1 |Sempre notificar.|
+|notifyOnAppChanges|2 |Notificar alterações no aplicativo.|
 |notifyOnAppChangesWithoutDimming|3D|Notificar as alterações do aplicativo sem DIMM de área de trabalho.|
 |neverNotify|4 |Nunca notificar.|
+
+
 
 
 

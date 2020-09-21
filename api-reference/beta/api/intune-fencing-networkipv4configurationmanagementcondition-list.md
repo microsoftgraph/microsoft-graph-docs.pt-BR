@@ -3,14 +3,14 @@ title: Listar networkIPv4ConfigurationManagementConditions
 description: Listar Propriedades e relações dos objetos networkIPv4ConfigurationManagementCondition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 31b195b3c160d3b4ca8cd5ef3d42a38f088be5d9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ea90fe5389a12cd22746a02e23f27294d7aaa997
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384460"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970023"
 ---
 # <a name="list-networkipv4configurationmanagementconditions"></a>Listar networkIPv4ConfigurationManagementConditions
 
@@ -51,7 +51,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -95,6 +95,9 @@ Content-Length: 810
   ]
 }
 ```
+
+
+
 
 
 

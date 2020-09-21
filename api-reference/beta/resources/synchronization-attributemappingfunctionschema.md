@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 16dae5dca65b3d238c2d12fddc2b474e7e03ac0d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 0b655d9cfac5835f6887c54c5a6bcbf79887d586
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219176"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078070"
 ---
 # <a name="attributemappingfunctionschema-resource-type"></a>tipo de recurso attributeMappingFunctionSchema
 
@@ -30,7 +30,7 @@ Descreve uma função que pode ser usada em um [mapeamento de atributo](synchron
 
 | Propriedade                   | Tipo                      | Descrição    |
 |:---------------------------|:-------------------------|:---------------|
-|nome                        |String                    |Nome do operador. |
+|name                        |Cadeia de caracteres                    |Nome do operador. |
 |parameters                  |coleção [attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)  |Conjunto de parâmetros de função.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -65,3 +65,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Obter officeSuiteApp
 description: Leia as propriedades e as relações do objeto officeSuiteApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ceabdbab0d69b45d800c8292c9fb1528f834a2b7
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: fbdac2a6ab7b2fca28c29c657ad317c701ce3728
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793287"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976932"
 ---
 # <a name="get-officesuiteapp"></a>Obter officeSuiteApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1925
+Content-Length: 1986
 
 {
   "value": {
@@ -99,6 +99,8 @@ Content-Length: 1925
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "autoAcceptEula": true,
     "productIds": [
       "o365BusinessRetail"
@@ -135,6 +137,9 @@ Content-Length: 1925
   }
 }
 ```
+
+
+
 
 
 

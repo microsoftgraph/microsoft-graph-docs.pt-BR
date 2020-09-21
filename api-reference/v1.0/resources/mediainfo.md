@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2ec3500c8b7040fafc70b04932ceb0e69ece6736
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e2f5a0d59f06449d122f4ca2db582afa4da9c39
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447448"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965523"
 ---
 # <a name="mediainfo-resource-type"></a>tipo de recurso mediaInfo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 As informações de mídia usadas em ações para prompts.
 
@@ -55,3 +55,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

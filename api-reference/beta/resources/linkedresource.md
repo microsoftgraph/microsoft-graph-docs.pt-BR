@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0a386cd8ed714a6f7127ea0a872a4170997bb8b9
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 3cbfaa0bf809a1996fe7a7c7df7014324406bcf2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849861"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058106"
 ---
 # <a name="linkedresource-resource-type"></a>tipo de recurso linkedResource
 
@@ -27,15 +27,15 @@ Representa um item em um aplicativo parceiro relacionado a um [todoTask](./todot
 |[Criar linkedResource](../api/todotask-post-linkedresources.md)|[linkedResource](../resources/linkedresource.md)|Criar um novo objeto linkedResources.|
 |[Obter linkedResource](../api/linkedresource-get.md)|[linkedResource](../resources/linkedresource.md)|Leia as propriedades e os relacionamentos de um objeto [linkedResource](../resources/linkedresource.md) .|
 |[Atualizar linkedResource](../api/linkedresource-update.md)|[linkedResource](../resources/linkedresource.md)|Atualiza as propriedades de um objeto [linkedResource](../resources/linkedresource.md) .|
-|[Excluir linkedResource](../api/linkedresource-delete.md)|Nenhuma|Exclui um objeto [linkedResource](../resources/linkedresource.md) .|
+|[Excluir linkedResource](../api/linkedresource-delete.md)|Nenhum|Exclui um objeto [linkedResource](../resources/linkedresource.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |applicationName|Cadeia de caracteres|Campo que indica o nome do aplicativo de origem que está enviando o **linkedResource**.|
-|displayName|String|Campo que indica o título do **linkedResource**.|
+|displayName|Cadeia de caracteres|Campo que indica o título do **linkedResource**.|
 |externalId|Cadeia de caracteres|ID do objeto que está associado a essa tarefa no sistema de parceiros ou de terceiros.|
-|id|String|ID gerada pelo servidor para o **linkedResource**. Herdado de [entidade](../resources/entity.md).|
+|id|Cadeia de caracteres|ID gerada pelo servidor para o **linkedResource**. Herdado de [entidade](../resources/entity.md).|
 |webUrl|String|Link profundo para o **linkedResource**.|
 
 ## <a name="relationships"></a>Relações
@@ -61,4 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "externalId": "String"
 }
 ```
+
+
 

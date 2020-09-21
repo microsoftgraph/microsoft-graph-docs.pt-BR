@@ -3,14 +3,14 @@ title: Excluir userAppInstallStatus
 description: Exclui userAppInstallStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 064cfdecb96793a9f693c01249328aa60bf4dca1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2b7ed5486191f12e08d8bbb7ce4ecfaf16e78e10
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403944"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976834"
 ---
 # <a name="delete-userappinstallstatus"></a>Excluir userAppInstallStatus
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

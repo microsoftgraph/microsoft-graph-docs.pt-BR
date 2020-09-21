@@ -3,14 +3,14 @@ title: Listar locationManagementConditions
 description: Listar Propriedades e relações dos objetos locationManagementCondition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd3d07f7e75427d33fe01c46297852c990df996e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6c4d08c78cf3ee792564e52054797606b1932198
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454137"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970086"
 ---
 # <a name="list-locationmanagementconditions"></a>Listar locationManagementConditions
 
@@ -51,7 +51,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [locationManagementCondition](../resources/intune-fencing-locationmanagementcondition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [locationManagementCondition](../resources/intune-fencing-locationmanagementcondition.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,6 +86,9 @@ Content-Length: 512
   ]
 }
 ```
+
+
+
 
 
 

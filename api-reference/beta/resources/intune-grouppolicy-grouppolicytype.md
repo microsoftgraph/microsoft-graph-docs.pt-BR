@@ -3,14 +3,14 @@ title: tipo de enumeração groupPolicyType
 description: Tipo de arquivo de política de grupo ou definição.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1a8024741e2ea9f4a2af774598bed7d2c214af29
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3caa4b2690c5037782d56b6585d84fec5ca92e83
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459824"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030693"
 ---
 # <a name="grouppolicytype-enum-type"></a>tipo de enumeração groupPolicyType
 
@@ -26,7 +26,10 @@ Tipo de arquivo de política de grupo ou definição.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |admxBacked|,0|Os modelos administrativos da política de grupo internos para o provedor de serviços de configuração de política (CSP).|
-|admxIngested|1|Modelos administrativos da política de grupo instalados usando o provedor de serviços de configuração de política (CSP).|
+|admxIngested|1 |Modelos administrativos da política de grupo instalados usando o provedor de serviços de configuração de política (CSP).|
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3e0c392270ac6b82462c7ffb99afb722c6e60bc9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: db408d5f479ea331fb2597d38da0ee3847dde189
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461866"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965565"
 ---
 # <a name="mailsearchfolder-resource-type"></a>tipo de recurso mailSearchFolder
 
@@ -28,7 +28,7 @@ Pastas de pesquisa criadas por seu aplicativo podem ser excluídas pelo Exchange
 Quando uma pasta de pesquisa é excluída, seu aplicativo deve criar um novo recurso de pasta de pesquisa e usar o mesmo.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método | Tipo de retorno  | Descrição |
 |:---------------|:--------|:----------|
@@ -43,8 +43,8 @@ Quando uma pasta de pesquisa é excluída, seu aplicativo deve criar um novo rec
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| IsSupported | Booliano | Indica se uma pasta de pesquisa é editável usando as APIs REST. |
-| includeNestedFolders | Booliano | Indica como a hierarquia da pasta da caixa de correio deve ser percorrida na pesquisa. `true`significa que uma pesquisa profunda deve ser feita para incluir pastas filhas na hierarquia de cada pasta explicitamente especificada no **sourceFolderIds**. `false`significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas no **sourceFolderIds**. |
+| IsSupported | Boolean | Indica se uma pasta de pesquisa é editável usando as APIs REST. |
+| includeNestedFolders | Boolean | Indica como a hierarquia da pasta da caixa de correio deve ser percorrida na pesquisa. `true` significa que uma pesquisa profunda deve ser feita para incluir pastas filhas na hierarquia de cada pasta explicitamente especificada no **sourceFolderIds**. `false` significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas no **sourceFolderIds**. |
 | sourceFolderIds | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser minadas. |
 | filterQuery | String | A consulta OData para filtrar as mensagens. |
 
@@ -79,3 +79,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

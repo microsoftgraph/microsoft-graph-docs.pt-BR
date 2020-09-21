@@ -3,14 +3,14 @@ title: tipo de recurso microsoftStoreForBusinessAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel da Microsoft Store para Empresas a um grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 939ff63664835e550edc5586e881890b1b9dca9a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: de6faaf42df24ae89f8d0dd514e1beb4d1b6cb25
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466186"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070776"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>tipo de recurso microsoftStoreForBusinessAppAssignmentSettings
 
@@ -46,6 +46,9 @@ Veja a seguir uma representação JSON do recurso.
   "useDeviceContext": true
 }
 ```
+
+
+
 
 
 

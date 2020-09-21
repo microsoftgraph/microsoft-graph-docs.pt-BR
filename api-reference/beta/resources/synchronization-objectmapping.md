@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 72cc9b1dae2920cf7b5b632f419d3b1b63ed6c79
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: f13bf4b52e725fcb8fa737bb47f330a9057c5318
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217616"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023902"
 ---
 # <a name="objectmapping-resource-type"></a>tipo de recurso objectmapping
 
@@ -27,13 +27,13 @@ Os mapeamentos de objetos são a parte principal da [regra de sincronização](s
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
 |attributeMappings  |coleção [attributeMapping](synchronization-attributemapping.md)    | Os mapeamentos de atributo definem quais atributos devem ser mapeados do objeto de origem para o objeto de destino e como eles devem fluir. Várias funções estão disponíveis para dar suporte à transformação dos valores de origem originais.|
-|enabled        |Boolean    |Quando `true`, esse mapeamento de objeto será processado durante a sincronização. Quando `false`, esse mapeamento de objeto será ignorado.|
-|flowTypes      |objectFlowTypes    |Quais tipos de fluxo estão habilitados para este mapeamento de objeto. `Add`cria novos objetos no diretório de destino, `Update` modifica objetos existentes e `Delete` desprovisiona usuários existentes. O padrão é `Add, Update, Delete`. |
+|enabled        |Boolean    |Quando `true` , esse mapeamento de objeto será processado durante a sincronização. Quando `false` , esse mapeamento de objeto será ignorado.|
+|flowTypes      |objectFlowTypes    |Quais tipos de fluxo estão habilitados para este mapeamento de objeto. `Add` cria novos objetos no diretório de destino, `Update` modifica objetos existentes e `Delete` desprovisiona usuários existentes. O padrão é `Add, Update, Delete` . |
 |los       |coleção metadataEntry    |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
 |nome           |String     |Nome amigável do mapeamento do objeto.|
 |escopo          |[filter](synchronization-filter.md)     |Define um filtro a ser usado ao decidir se um determinado objeto deve ser provisionado. Por exemplo, você pode querer provisionar apenas usuários que estão localizados nos EUA.|
-|sourceObjectName           |Cadeia de Caracteres     |Nome do objeto no diretório de origem. Deve corresponder ao nome do objeto da [definição do diretório](synchronization-directorydefinition.md)de origem.|
-|targetObjectName           |Cadeia de Caracteres     |Nome do objeto no diretório de destino. Deve corresponder ao nome do objeto da [definição do diretório](synchronization-directorydefinition.md)de destino.|
+|sourceObjectName           |String     |Nome do objeto no diretório de origem. Deve corresponder ao nome do objeto da [definição do diretório](synchronization-directorydefinition.md)de origem.|
+|targetObjectName           |String     |Nome do objeto no diretório de destino. Deve corresponder ao nome do objeto da [definição do diretório](synchronization-directorydefinition.md)de destino.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -363,3 +363,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

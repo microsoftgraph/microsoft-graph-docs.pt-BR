@@ -3,14 +3,14 @@ title: Listar officeSuiteApps
 description: Listar Propriedades e relações dos objetos officeSuiteApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 27502115c5e67bf5bf432161d95e4a22f9957b16
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: acbf218d265bc3756fa34292e6d4cd572c0cb171
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793280"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976925"
 ---
 # <a name="list-officesuiteapps"></a>Listar officeSuiteApps
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2055
+Content-Length: 2120
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 2055
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "autoAcceptEula": true,
       "productIds": [
         "o365BusinessRetail"
@@ -132,6 +134,9 @@ Content-Length: 2055
   ]
 }
 ```
+
+
+
 
 
 

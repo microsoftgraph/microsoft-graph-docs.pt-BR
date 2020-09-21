@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 58d452bea88c58de944cdb4f48bf482025abb2ba
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 1d2aac32242617891574e2aa51f220e8d990e7e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200233"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010777"
 ---
 # <a name="update-onpremisesagentgroup"></a>Atualizar onPremisesAgentGroup
 
@@ -118,3 +118,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

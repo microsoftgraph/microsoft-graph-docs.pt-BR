@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9fe411c59577132dfd770db20db11bce4061d75d
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: dadf7cf9efbd7b8db37091b99b66c7747959fd5f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199904"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010737"
 ---
 # <a name="get-onpremisespublishingprofile"></a>Obter onPremisesPublishingProfile
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -172,3 +172,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 12f1a38340b4c341d65930000c22a6cd2daeb567
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 32710c5411f054ad096bdd293a2f7d46e89a6944
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219169"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078071"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>tipo de recurso attributeMappingParameterSchema
 
@@ -24,10 +24,10 @@ Descreve um único parâmetro usado em um [attributeMappingFunctionSchema](../re
 
 | Propriedade                   | Tipo                      | Descrição    |
 |:---------------------------|:-------------------------|:---------------|
-|allowMultipleOccurrences    |Boolean                   |O parâmetro fornecido pode ser fornecido várias vezes (por exemplo, várias cadeias de caracteres `Concatenate(string,string,...)` de entrada na função). |
-|nome                        |String                    |Nome do parâmetro. |
-|obrigatório                    |Boolean                   |`true`Se o parâmetro for necessário; caso `false`contrário. |
-|tipo                        |String                    |Os valores possíveis são: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. O padrão é `String`.|
+|allowMultipleOccurrences    |Booliano                   |O parâmetro fornecido pode ser fornecido várias vezes (por exemplo, várias cadeias de caracteres de entrada na `Concatenate(string,string,...)` função). |
+|name                        |Cadeia de caracteres                    |Nome do parâmetro. |
+|obrigatório                    |Booliano                   |`true` Se o parâmetro for necessário; caso contrário `false` . |
+|tipo                        |Cadeia de caracteres                    |Os valores possíveis são: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. O padrão é `String`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -63,3 +63,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

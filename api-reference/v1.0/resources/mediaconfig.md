@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 634a5531358a1be501c0b3b61f207c85394dba11
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c838baf0a05f57ebf7f80b962d4b4d06daa06452
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447455"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965537"
 ---
 # <a name="mediaconfig-resource-type"></a>tipo de recurso mediaConfig
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Uma classe base abstrata que contém a configuração de mídia usada para se conectar a uma chamada.
 
@@ -44,3 +44,4 @@ Uma classe base abstrata que contém a configuração de mídia usada para se co
   "suppressions": []
 }
 -->
+

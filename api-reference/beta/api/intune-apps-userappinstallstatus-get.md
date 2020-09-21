@@ -3,14 +3,14 @@ title: Obter userAppInstallStatus
 description: Leia as propriedades e as relações do objeto userAppInstallStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 309fffd7af80390e7c215dfb83d56000fd7b0b4f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b132251ed3bc5e52c4932c2ab7ebead81d7c073c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403921"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976827"
 ---
 # <a name="get-userappinstallstatus"></a>Obter userAppInstallStatus
 
@@ -82,6 +82,9 @@ Content-Length: 321
   }
 }
 ```
+
+
+
 
 
 

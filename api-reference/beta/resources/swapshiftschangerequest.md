@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9bd867642da41b2aa0644744655c94b1d842d977
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: d274c73cfcfb71bb86349dbe4cbbc7661e9e7a16
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154266"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078147"
 ---
 # <a name="swapshiftschangerequest-resource-type"></a>tipo de recurso swapShiftsChangeRequest
 
@@ -68,3 +68,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

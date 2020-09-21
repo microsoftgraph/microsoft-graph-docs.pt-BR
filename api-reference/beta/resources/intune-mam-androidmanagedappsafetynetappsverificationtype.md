@@ -3,14 +3,14 @@ title: tipo de enumeração androidManagedAppSafetyNetAppsVerificationType
 description: Um requisito de atestado de dispositivo do SafetyNet do Android aplicado por administradores em um aplicativo gerenciado.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f0524f820615a1662a0edf58e3f3066da5147f34
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c720d2fdc851bb0f2c48e7d5e35bcfa63e9ee653
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43385726"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030567"
 ---
 # <a name="androidmanagedappsafetynetappsverificationtype-enum-type"></a>tipo de enumeração androidManagedAppSafetyNetAppsVerificationType
 
@@ -25,8 +25,11 @@ Um requisito de atestado de dispositivo do SafetyNet do Android aplicado por adm
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|nenhum conjunto de requisitos|
-|habilitadas|1|exigir que o dispositivo Android tenha verificação de aplicativos do SafetyNet habilitado|
+|Nenhuma|,0|nenhum conjunto de requisitos|
+|habilitadas|1 |exigir que o dispositivo Android tenha verificação de aplicativos do SafetyNet habilitado|
+
+
+
 
 
 

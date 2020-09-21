@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 2b6ecf8c40f4f9a41608ef7f6edf588c1032839c
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 9f88803c36f3d2f26694f77dcc2f7fe5a9daefab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845495"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064735"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
@@ -129,3 +129,5 @@ Content-Length: 259
   ]
 }
 -->
+
+

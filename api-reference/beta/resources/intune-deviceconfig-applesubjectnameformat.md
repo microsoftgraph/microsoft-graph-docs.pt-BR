@@ -3,14 +3,14 @@ title: tipo de enumeração appleSubjectNameFormat
 description: Opções de formato de nome de entidade para dispositivos Apple.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a0173f594578887ff3f5d9496f0d4291c4e259b0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c0a02b911941daa0f14b80a3f72b84d2be569ceb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470077"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070818"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>tipo de enumeração appleSubjectNameFormat
 
@@ -26,11 +26,14 @@ Opções de formato de nome de entidade para dispositivos Apple.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |CommonName|,0|Nome comum.|
-|commonNameAsEmail|1|Nome comum como email.|
-|cliente|duas|Formato de nome de entidade personalizado.|
-|commonNameIncludingEmail|3D|Nome comum incluindo email.|
+|commonNameAsEmail|1 |Nome comum como email.|
+|cliente|2 |Formato de nome de entidade personalizado.|
+|commonNameIncludingEmail|3 |Nome comum incluindo email.|
 |commonNameAsIMEI|5 |Nome comum como IMEI.|
 |commonNameAsSerialNumber|6 |Nome comum como número de série.|
+
+
+
 
 
 

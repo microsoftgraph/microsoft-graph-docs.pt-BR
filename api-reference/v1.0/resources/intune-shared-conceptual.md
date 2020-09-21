@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 04ecd6062dfbcba3ff885e9734a6802440866725
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cc5cbf0f96d3c9199ecd9b622d9724ec10dd472e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448291"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037651"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
@@ -33,12 +33,14 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Destino de atribuição de grupo](intune-shared-groupassignmenttarget.md)
 - [Intenção de instalação](intune-shared-installintent.md)
 - [Conteúdo MIME](intune-shared-mimecontent.md)
-- [Report](intune-shared-report.md)
+- [Relatório](intune-shared-report.md)
 - [Raiz de relatório](intune-shared-reportroot.md)
 - [Opções de geração do estado da interface do usuário salvas](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)
-- [User](intune-shared-user.md)
+- [Usuário](intune-shared-user.md)
 - [Tipo de conta do token VPP](intune-shared-vpptokenaccounttype.md)
+
+
 
 
 

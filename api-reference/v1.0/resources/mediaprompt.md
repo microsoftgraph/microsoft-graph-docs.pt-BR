@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4bc2f315a2f339d2ef6fe0f4b76b335970b5a642
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 37329364ccfcb4b70de04ebfe8344ea407ce2bc7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447441"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965516"
 ---
 # <a name="mediaprompt-resource-type"></a>tipo de recurso mediaPrompt
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Esse tipo de recurso contém informações sobre o arquivo de áudio a ser reproduzido e outras configurações adicionais.
 
@@ -54,3 +54,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

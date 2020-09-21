@@ -3,14 +3,14 @@ title: Obter symantecCodeSigningCertificate
 description: Leia as propriedades e as relações do objeto symantecCodeSigningCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ba7f979f43fb107569e35347a023fe1840693c6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8898c018b1ff038d392fbe603b3dbc74cd6471ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43404037"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976897"
 ---
 # <a name="get-symanteccodesigningcertificate"></a>Obter symantecCodeSigningCertificate
 
@@ -86,6 +86,9 @@ Content-Length: 511
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c7b085b8142c8f2bd2a2a0b0f502178a7179a398
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: cbc72087d34473345d359ba6b57653226ea03e64
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107042"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996679"
 ---
 # <a name="get-applicationsigninsummary"></a>Obter applicationSignInSummary
 
@@ -39,7 +39,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 
 | Parâmetro | Descrição |
 |:----------|:----------|
-| ponto | `D7` (Últimos sete dias) ou `D30` (últimos 30 dias); outros valores geram erros. |
+| ponto | `D7`(Últimos sete dias) ou `D30` (últimos 30 dias); outros valores geram erros. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -50,7 +50,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [applicationSignInSummary](../resources/applicationsigninsummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [applicationSignInSummary](../resources/applicationsigninsummary.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -113,3 +113,5 @@ Content-length: 157
   "suppressions": [
   ]
 }-->
+
+

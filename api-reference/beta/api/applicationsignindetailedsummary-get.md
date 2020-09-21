@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a18a2742c49db6a57bf5a710c3f7d5563c329393
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: c209b42d9b18ec0fc935c588a42e98a9c62c42e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107009"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996714"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>Obter applicationSignInDetailedSummary
 
@@ -49,7 +49,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -118,3 +118,5 @@ Content-length: 295
   "suppressions": [
   ]
 }-->
+
+

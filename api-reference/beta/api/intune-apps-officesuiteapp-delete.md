@@ -3,14 +3,14 @@ title: Excluir officeSuiteApp
 description: Exclui officeSuiteApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90485a31733fd0f4bd4518709335b0a17983a700
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 70fb02f9192ab0dbee56ce6e0a0614743c53749c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414335"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976939"
 ---
 # <a name="delete-officesuiteapp"></a>Excluir officeSuiteApp
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

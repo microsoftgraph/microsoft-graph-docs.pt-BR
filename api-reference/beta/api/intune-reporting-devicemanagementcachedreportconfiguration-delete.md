@@ -3,14 +3,14 @@ title: Excluir deviceManagementCachedReportConfiguration
 description: Exclui deviceManagementCachedReportConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e726e9eb66c7af6480bf6077203ba096970c364e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e74675b45a92024b46b9d1009b957bd458c390d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472330"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010847"
 ---
 # <a name="delete-devicemanagementcachedreportconfiguration"></a>Excluir deviceManagementCachedReportConfiguration
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

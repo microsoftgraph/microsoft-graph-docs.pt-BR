@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 93cef7b8bf48fc1a2c1b54a11745a3393cb365aa
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 32d363b8466e65bb7ea146890f0df7dc3cc058d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107056"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996772"
 ---
 # <a name="assign-tokenlifetimepolicy"></a>Atribiur tokenLifetimePolicy
 
@@ -111,3 +111,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -1,26 +1,26 @@
 ---
 title: Usar a API REST do Planner
-description: É possível usar a API do Planner no Microsoft Graph para criar e atribuir tarefas aos usuários em um grupo no Office 365.
+description: É possível usar a API do Planner no Microsoft Graph para criar e atribuir tarefas aos usuários em um grupo no Microsoft 365.
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: c2326aef5ba443cad8668669f189d97ca2da65ae
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: ae72d196c5d27160c94e0ba0d2309b43ece06bb5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618688"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037637"
 ---
 # <a name="use-the-planner-rest-api"></a>Usar a API REST do Planner
 
-É possível usar a API do Planner no Microsoft Graph para criar e atribuir tarefas aos usuários em um grupo no Office 365.
+É possível usar a API do Planner no Microsoft Graph para criar e atribuir tarefas aos usuários em um grupo no Microsoft 365.
 
-Antes de começar com a API do Planner, você deve compreender como os objetos principais se relacionam entre si, bem como, com os grupos do Office 365.
+Antes de começar com a API do Planner, você deve compreender como os objetos principais se relacionam entre si, bem como, com os grupos do Microsoft 365.
 
-## <a name="office-365-groups"></a>Grupos do Office 365
+## <a name="microsoft-365-groups"></a>Grupos do Microsoft 365
 
-Os grupos do Office 365 são os proprietários dos planos da API do Planner.
+Os grupos do Microsoft 365 são os proprietários dos planos da API do Planner.
 Para [obter os planos pertencentes a um grupo](../api/plannergroup-list-plans.md), faça a solicitação HTTP a seguir.
 
 ``` http
@@ -107,4 +107,8 @@ Os valores possíveis para os tipos de limite são:
 
 Todas as solicitações `POST`, `PATCH` e `DELETE` da API do Planner exigem que o cabeçalho `If-Match` seja especificado com o último valor de etag conhecido do recurso que está sujeito à solicitação.
 O código de status 412 também pode ser retornado se o valor da etag especificado na solicitação já não corresponder a uma versão do recurso no serviço. Nesse caso, os clientes devem ler o recurso novamente e obter uma nova etag.
+
+## <a name="whats-new"></a>O que há de novo
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
+
 

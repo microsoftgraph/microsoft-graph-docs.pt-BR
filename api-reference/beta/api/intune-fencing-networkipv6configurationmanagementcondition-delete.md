@@ -3,14 +3,14 @@ title: Excluir networkIPv6ConfigurationManagementCondition
 description: Exclui networkIPv6ConfigurationManagementCondition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 74896fd7e632e6c2fa240502f87be6ee86ca2780
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dd074a23c3cba9f559a57a045f18ff5587ab872e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384303"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969974"
 ---
 # <a name="delete-networkipv6configurationmanagementcondition"></a>Excluir networkIPv6ConfigurationManagementCondition
 
@@ -66,6 +66,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

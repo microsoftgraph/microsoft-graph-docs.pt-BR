@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyUploadedLanguageFile
 description: A entidade representa um arquivo XML de ADML (idioma de modelo administrativo) carregado pelo administrador.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3b2a4fd4ab035dd072af8db0cd6897bfd7d9153
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f429101601fddb23d499553e9c0bb848756bc538
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43385899"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030602"
 ---
 # <a name="grouppolicyuploadedlanguagefile-resource-type"></a>tipo de recurso groupPolicyUploadedLanguageFile
 
@@ -51,6 +51,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

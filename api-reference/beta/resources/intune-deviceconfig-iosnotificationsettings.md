@@ -3,14 +3,14 @@ title: Tipo de recurso iosNotificationSettings
 description: Um item que descreve a configuração de notificação.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a14233ef8f74aa0aeeb7e21be3fc819aec985a4d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bfe71a68abd7ca55da6bb92654d8af0750a1ef22
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440245"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003714"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Tipo de recurso iosNotificationSettings
 
@@ -25,14 +25,14 @@ Um item que descreve a configuração de notificação.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|bundleID|String|Id de pacote do aplicativo ao qual aplicar essas configurações de notificação.|
+|bundleID|Cadeia de caracteres|Id de pacote do aplicativo ao qual aplicar essas configurações de notificação.|
 |appName|Cadeia de caracteres|Nome do aplicativo a ser associado à bundleID.|
-|publicador|String|Publicador a ser associado à bundleID.|
-|enabled|Boolean|Indica se são permitidas notificações neste aplicativo.|
-|showInNotificationCenter|Boolean|Indica se as notificações podem ser exibidas no centro de notificações.|
-|showOnLockScreen|Boolean|Indica se as notificações podem ser exibidas na tela de bloqueio.|
+|publicador|Cadeia de caracteres|Publicador a ser associado à bundleID.|
+|enabled|Booliano|Indica se são permitidas notificações neste aplicativo.|
+|showInNotificationCenter|Booliano|Indica se as notificações podem ser exibidas no centro de notificações.|
+|showOnLockScreen|Booliano|Indica se as notificações podem ser exibidas na tela de bloqueio.|
 |alertType|[iosNotificationAlertType](../resources/intune-deviceconfig-iosnotificationalerttype.md)|Indica o tipo de alerta para notificações neste aplicativo. Os valores possíveis são: `deviceDefault`, `banner`, `modal`, `none`.|
-|badgesEnabled|Boolean|Indica se serão permitidos selos neste aplicativo.|
+|badgesEnabled|Booliano|Indica se serão permitidos selos neste aplicativo.|
 |soundsEnabled|Booliano|Indica se são permitidos sons neste aplicativo.|
 
 ## <a name="relationships"></a>Relações
@@ -59,6 +59,9 @@ Veja a seguir uma representação JSON do recurso.
   "soundsEnabled": true
 }
 ```
+
+
+
 
 
 

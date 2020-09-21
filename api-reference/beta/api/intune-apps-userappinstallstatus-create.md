@@ -3,14 +3,14 @@ title: Criar userAppInstallStatus
 description: Criar um novo objeto userAppInstallStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 672cf1f7acd6e93ac129ef405953ccdd2ce8c863
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1b1a0eef5025431a2dd9550cc45a009a89abd190
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403959"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976841"
 ---
 # <a name="create-userappinstallstatus"></a>Criar userAppInstallStatus
 
@@ -63,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userAppI
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -101,6 +101,9 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
+
+
+
 
 
 

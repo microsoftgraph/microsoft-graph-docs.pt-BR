@@ -3,14 +3,14 @@ title: Listar deviceManagementCachedReportConfigurations
 description: Listar Propriedades e relações dos objetos deviceManagementCachedReportConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9d0a982bc598fc9e42b684dcda0e84a2d38e0aa
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: c3f4a114f713ffe4798c3ce1201cdb4d566d7840
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791346"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010756"
 ---
 # <a name="list-devicemanagementcachedreportconfigurations"></a>Listar deviceManagementCachedReportConfigurations
 
@@ -88,6 +88,9 @@ Content-Length: 556
   ]
 }
 ```
+
+
+
 
 
 
