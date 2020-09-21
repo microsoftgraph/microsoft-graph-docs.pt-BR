@@ -3,14 +3,14 @@ title: Atualizar auditEvent
 description: Atualizar as propriedades do objeto auditEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5553f8e475d13a96c37ef9170fe302ce29b16f4c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 654cbf01022fe09056711ee96093fe0e139de099
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464338"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966090"
 ---
 # <a name="update-auditevent"></a>Atualizar auditEvent
 
@@ -52,13 +52,13 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [auditEvent](../
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|Cadeia de caracteres|Nome de exibição do evento.|
-|componentName|String|Nome do componente.|
+|displayName|String|Nome de exibição do evento.|
+|componentName|Cadeia de caracteres|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
-|atividade|String|Nome amigável da atividade.|
+|atividade|Cadeia de caracteres|Nome amigável da atividade.|
 |activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.|
-|activityType|String|O tipo de atividade que foi executada.|
-|activityOperationType|String|O tipo de operação HTTP da atividade.|
+|activityType|Cadeia de caracteres|O tipo de atividade que foi executada.|
+|activityOperationType|Cadeia de caracteres|O tipo de operação HTTP da atividade.|
 |activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
@@ -171,6 +171,9 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
+
+
+
 
 
 

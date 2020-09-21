@@ -3,14 +3,14 @@ title: tipo de recurso policyset
 description: Uma classe que contém as propriedades usadas para Policyset.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 845f353a7eb1f5fd95e460a68f23404b88b7a0b5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 10f86c5a5943862c41cd79145b4b04baa5d96ea6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458325"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993424"
 ---
 # <a name="policyset-resource-type"></a>tipo de recurso policyset
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Uma classe que contém as propriedades usadas para Policyset.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar policySets](../api/intune-policyset-policyset-list.md)|coleção [policyset](../resources/intune-policyset-policyset.md)|Listar Propriedades e relações dos objetos [policyset](../resources/intune-policyset-policyset.md) .|
@@ -39,12 +39,12 @@ Uma classe que contém as propriedades usadas para Policyset.
 |id|String|Chave do Policyset.|
 |createdDateTime|DateTimeOffset|Hora de criação do Policyset.|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do Policyset.|
-|displayName|Cadeia de caracteres|DisplayName do Policyset.|
+|displayName|String|DisplayName do Policyset.|
 |description|String|Descrição do Policyset.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status de validação/atribuição do Policyset. Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro, caso algum tenha ocorrido. Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Coleção String|Marcas da implantação dirigida|
-|roleScopeTags|Coleção String|RoleScopeTags do Policyset|
+|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação dirigida|
+|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do Policyset|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -78,6 +78,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

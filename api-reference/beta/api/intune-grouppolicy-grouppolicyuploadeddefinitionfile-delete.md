@@ -3,14 +3,14 @@ title: Excluir groupPolicyUploadedDefinitionFile
 description: Exclui groupPolicyUploadedDefinitionFile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d1ed44bbf1f462b4146ccfc14efdcb6b50cdacab
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5bfcecef676452d0494151c95f5f721e2de0929a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461089"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000452"
 ---
 # <a name="delete-grouppolicyuploadeddefinitionfile"></a>Excluir groupPolicyUploadedDefinitionFile
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

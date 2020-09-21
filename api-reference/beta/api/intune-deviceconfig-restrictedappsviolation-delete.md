@@ -3,14 +3,14 @@ title: Excluir restrictedAppsViolation
 description: Exclui restrictedAppsViolation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0516d01c3d60da88583419f770c355cfe30f277
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 02add4761008deedcceea0335daed8f9b480d79f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43342603"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086134"
 ---
 # <a name="delete-restrictedappsviolation"></a>Excluir restrictedAppsViolation
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ description: Fornece detalhes sobre a atividade de login de usuário ou de aplic
 author: khotz
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 243e4cd7402824d7217374e9ccf2152aa4a63163
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: efdb9162846c0c5ab8fd25e75b3d820059fe970b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674537"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067199"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 
@@ -135,3 +135,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

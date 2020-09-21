@@ -3,14 +3,14 @@ title: Criar groupPolicyUploadedDefinitionFile
 description: Criar um novo objeto groupPolicyUploadedDefinitionFile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 828464d5a0e620a713eac7187b6a8883ea7a2648
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 951fe4f91b2be7d0ef3e65071151af932b9013da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388647"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000459"
 ---
 # <a name="create-grouppolicyuploadeddefinitionfile"></a>Criar groupPolicyUploadedDefinitionFile
 
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome amigável localizado do arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|displayName|String|O nome amigável localizado do arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |description|String|A descrição localizada das configurações de política no arquivo ADMX. O valor padrão é vazio. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|languageCodes|Coleção String|Os códigos de idioma suportados para o arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|languageCodes|Coleção de cadeias de caracteres|Os códigos de idioma suportados para o arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |targetPrefix|String|Especifica o nome lógico que se refere ao namespace dentro do arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |targetNamespace|String|Especifica o URI usado para identificar o namespace no arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md). Os valores possíveis são: `admxBacked` e `admxIngested`.|
@@ -72,7 +72,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -149,6 +149,9 @@ Content-Length: 1035
   ]
 }
 ```
+
+
+
 
 
 

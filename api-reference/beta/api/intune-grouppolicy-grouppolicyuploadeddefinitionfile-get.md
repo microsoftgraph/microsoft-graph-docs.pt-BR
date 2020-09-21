@@ -3,14 +3,14 @@ title: Obter groupPolicyUploadedDefinitionFile
 description: Leia as propriedades e as relações do objeto groupPolicyUploadedDefinitionFile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f289d39086d1f920354c89e3ec7fe986f05123c2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6e9f5f9ae7fd9464e82d5561229de04e8710c7af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440942"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000445"
 ---
 # <a name="get-grouppolicyuploadeddefinitionfile"></a>Obter groupPolicyUploadedDefinitionFile
 
@@ -102,6 +102,9 @@ Content-Length: 1108
   }
 }
 ```
+
+
+
 
 
 

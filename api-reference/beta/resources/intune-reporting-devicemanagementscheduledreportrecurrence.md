@@ -3,14 +3,14 @@ title: tipo de enumeração deviceManagementScheduledReportRecurrence
 description: Valores possíveis para a recorrência de um relatório agendado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 53a6082af2c2121249ee7d2ed014734cb3f0d5b9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 52447844128356f5e2b9b8be7780a68e25dd2047
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453184"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079792"
 ---
 # <a name="devicemanagementscheduledreportrecurrence-enum-type"></a>tipo de enumeração deviceManagementScheduledReportRecurrence
 
@@ -25,10 +25,13 @@ Valores possíveis para a recorrência de um relatório agendado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Valor padrão, especifica uma única ocorrência|
-|diariamente|1|Diariamente|
-|mensal|duas|Semanalmente|
-|mês|3D|Mensalmente|
+|Nenhuma|,0|Valor padrão, especifica uma única ocorrência|
+|diariamente|1 |Diariamente|
+|mensal|2 |Semanalmente|
+|mês|3 |Mensal|
+
+
+
 
 
 

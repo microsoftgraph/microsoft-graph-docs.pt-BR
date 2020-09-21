@@ -3,14 +3,14 @@ title: Listar groupPolicyUploadedPresentations
 description: Listar Propriedades e relações dos objetos groupPolicyUploadedPresentation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fe4a8e0b98d56814ef931c3b6b05f9db445900bf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d399e27834fd4d5449377e922e2846b3ec544627
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440827"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000424"
 ---
 # <a name="list-grouppolicyuploadedpresentations"></a>Listar groupPolicyUploadedPresentations
 
@@ -50,7 +50,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [groupPolicyUploadedPresentation](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [groupPolicyUploadedPresentation](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -78,6 +78,9 @@ Content-Length: 262
   ]
 }
 ```
+
+
+
 
 
 

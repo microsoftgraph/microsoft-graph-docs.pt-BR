@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d1a2de9dcac9765899fa3eaff6173a3791984ade
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: f97d4d86b2cd66bc62e23dc1f99622ed7af2084c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630316"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067080"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Visão geral da API de sincronização do Azure AD
 
@@ -79,7 +79,7 @@ O exemplo a seguir mostra como localizar o objeto de entidade de serviço por no
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
 ```
 
-**Response**
+**Resposta**
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -110,7 +110,7 @@ O exemplo a seguir mostra como localizar o objeto de entidade de serviço por ID
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'
 ```
 
-**Response**
+**Resposta**
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
@@ -136,7 +136,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 ```
 
-**Response**
+**Resposta**
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
@@ -167,7 +167,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs/SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa
 ```
 
-**Response**
+**Resposta**
 <!-- { "blockType": "ignored" } -->
 ```http
     HTTP/1.1 200 OK
@@ -192,7 +192,7 @@ O exemplo a seguir mostra como obter o esquema de sincronização.
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-**Response**
+**Resposta**
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
@@ -205,6 +205,8 @@ HTTP/1.1 200 OK
 
 * [Configurar a sincronização com atributos de extensão de diretório](../resources/synchronization-configure-with-directory-extension-attributes.md)
 * [Configurar a sincronização com atributos de destino personalizados](../resources/synchronization-configure-with-custom-target-attributes.md)
+
+
 
 
 

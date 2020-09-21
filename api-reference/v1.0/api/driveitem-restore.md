@@ -5,12 +5,12 @@ localization_priority: Normal
 author: learafa
 ms.prod: files
 doc_type: apiPageType
-ms.openlocfilehash: c25049e05b31d473b98f7118ae4cb9b49edc3681
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 4b7198543c97fdb59179a2898ddcc367feb6c19d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808421"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073254"
 ---
 # <a name="driveitem-restore"></a>driveItem: restaurar
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Files.ReadWrite.All |
 | Aplicativo                            | Files.ReadWrite.All |
 
@@ -130,3 +130,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Items/Restore"
 }-->
+

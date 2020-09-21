@@ -3,14 +3,14 @@ title: tipo de enumeração win32LobAppMsiPackageType
 description: Indica o tipo de pacote de um Win32LobApp MSI.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3902604561fef4d26f3103d5ffe8c66701ef56a0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0b2d01705c2c10ac11aa3695ad76b3e2d023364e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422940"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013458"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>tipo de enumeração win32LobAppMsiPackageType
 
@@ -26,8 +26,11 @@ Indica o tipo de pacote de um Win32LobApp MSI.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |permachine|,0|Indica um pacote de aplicativo por máquina.|
-|perUser|1|Indica um pacote de aplicativo por usuário.|
-|dualPurpose|duas|Indica um pacote de aplicativos de uso duplo.|
+|perUser|1 |Indica um pacote de aplicativo por usuário.|
+|dualPurpose|2 |Indica um pacote de aplicativos de uso duplo.|
+
+
+
 
 
 

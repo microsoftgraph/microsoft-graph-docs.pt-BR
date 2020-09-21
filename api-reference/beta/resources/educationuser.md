@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 896f5db1db79d210c3a1f5f1ab8004b21b635fba
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: ddc6e8727ce5759e96fddeb252566e3eee3076d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509515"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979508"
 ---
 # <a name="educationuser-resource-type"></a>Tipo de recurso educationUser
 
@@ -22,7 +22,7 @@ Um usuário no sistema. Esta é uma variante específica da educação do recurs
 
 Este objeto fornece um subconjunto direcionado de propriedades do objeto de [usuário] principal e adiciona um conjunto de propriedades específicas de educação, como `primaryRole` , `student` e `teacher` .
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                               | Tipo de retorno                                  | Descrição                                                                   |
 | :--------------------------------------------------- | :------------------------------------------- | :---------------------------------------------------------------------------- |
@@ -42,31 +42,31 @@ Este objeto fornece um subconjunto direcionado de propriedades do objeto de [usu
 | accountEnabled       | Boolean                      | **True** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a \$ filtro.                                                                |
 | assignedLicenses     | Coleção [assignedLicense] | As licenças que são atribuídas ao usuário. Não anulável.                                                                                                                                     |
 | assignedPlans        | Coleção [assignedPlan]    | Os planos que são atribuídos ao usuário. Somente leitura. Não anulável.                                                                                                                             |
-| businessPhones       | String collection            | Números de telefone para o usuário. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.                                                             |
+| businessPhones       | Coleção de cadeias de caracteres            | Números de telefone para o usuário. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.                                                             |
 | createdBy            | [identitySet]                | Entidade que criou o usuário.                                                                                                                                                                  |
-| department           | Cadeia de caracteres                       | O nome do departamento no qual o usuário trabalha. Oferece suporte a \$ filtro.                                                                                                                       |
-| displayName          | Cadeia de caracteres                       | O nome exibido para o usuário no catálogo de endereços. Oferece suporte a $filter e $orderby.                                                                                                           |
-| externalSource       | Cadeia de caracteres                       | O tipo de fonte externa de que este recurso foi gerado (determinado automaticamente de `externalSourceDetail` ). Os valores possíveis são: `sis` , `lms` , ou `manual` .                          |
-| externalSourceDetail | Cadeia de caracteres                       | O nome da fonte externa da qual esses recursos foram gerados.                                                                                                                            |
-| givenName            | Cadeia de caracteres                       | O nome fornecido (nome) do usuário. Oferece suporte a \$ filtro.                                                                                                                                   |
+| department           | String                       | O nome do departamento no qual o usuário trabalha. Oferece suporte a \$ filtro.                                                                                                                       |
+| displayName          | String                       | O nome exibido para o usuário no catálogo de endereços. Oferece suporte a $filter e $orderby.                                                                                                           |
+| externalSource       | String                       | O tipo de fonte externa de que este recurso foi gerado (determinado automaticamente de `externalSourceDetail` ). Os valores possíveis são: `sis` , `lms` , ou `manual` .                          |
+| externalSourceDetail | String                       | O nome da fonte externa da qual esses recursos foram gerados.                                                                                                                            |
+| givenName            | String                       | O nome fornecido (nome) do usuário. Oferece suporte a \$ filtro.                                                                                                                                   |
 | email                 | String                       | O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". Somente Leitura. Oferece suporte a \$ filtro.                                                                                     |
-| mailNickname         | Cadeia de caracteres                       | O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. Oferece suporte a \$ filtro.                                                                                       |
+| mailNickname         | String                       | O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. Oferece suporte a \$ filtro.                                                                                       |
 | mailingAddress       | [physicalAddress]            | Endereço de email do usuário. Observação: `type` e `postOfficeBox` não têm suporte para `educationUser` recursos.                                                                                       |
 | middleName           | String                       | O nome do meio do usuário.                                                                                                                                                                      |
-| mobilePhone          | Cadeia de caracteres                       | O número de celular principal do usuário.                                                                                                                                           |
+| mobilePhone          | String                       | O número de celular principal do usuário.                                                                                                                                           |
 | onPremisesInfo       | [educationOnPremisesInfo]    | Informações adicionais usadas para associar o usuário do AAD ao seu equivalente do Active Directory.                                                                                                 |
 | passwordPolicies     | String                       | Especifica as políticas de senha do usuário. Confira recurso de [usuário] padrão para obter detalhes adicionais.                                                                                                |
 | passwordProfile      | [passwordProfile]            | Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. Confira recurso de [usuário] padrão para obter detalhes adicionais. |
-| preferredLanguage    | Cadeia de caracteres                       | O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo, "en-US".                                                                                                      |
+| preferredLanguage    | String                       | O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo, "en-US".                                                                                                      |
 | primaryRole          | cadeia de caracteres                       | Função padrão de um usuário. A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `faculty`. Oferece suporte a \$ filtro.                                  |
 | provisionedPlans     | coleção [provisionedPlan] | Os planos que estão provisionados para o usuário. Somente leitura. Não anulável.                                                                                                                         |
-| relatedContacts      | coleção [relatedContact]  | Registros relacionados relacionados ao usuário. As relações possíveis `parent` são `relative` , `aide` , `doctor` , `guardian` `child` ,, `other` ,`unknownFutureValue`                                    |
+| relatedContacts      | coleção [relatedContact]  | Registros relacionados relacionados ao usuário. As relações possíveis `parent` são `relative` , `aide` , `doctor` , `guardian` `child` ,, `other` , `unknownFutureValue`                                    |
 | residenceAddress     | [physicalAddress]            | Endereço em que o usuário reside. Observação: `type` e `postOfficeBox` não têm suporte para `educationUser` recursos.                                                                                   |
 | student              | [educationStudent]           | Se a função principal for aluno, esse bloco conterá dados específicos do aluno.                                                                                                                |
-| surname              | Cadeia de caracteres                       | O sobrenome do usuário (nome de família ou sobrenome). Oferece suporte a \$ filtro.                                                                                                                             |
+| surname              | String                       | O sobrenome do usuário (nome de família ou sobrenome). Oferece suporte a \$ filtro.                                                                                                                             |
 | teacher              | [educationTeacher]           | Se a função principal for professor, esse bloco conterá dados específicos do professor.                                                                                                                |
-| usageLocation        | Cadeia de caracteres                       | Um código de país de duas letras ([ISO 3166 alfa-2]). Obrigatório para usuários que serão atribuídos a licenças. Não anulável. Oferece suporte a \$ filtro.                                                            |
-| userPrincipalName    | Cadeia de caracteres                       | O nome principal do usuário (UPN) para o usuário. Oferece suporte a $filter e $orderby. Confira recurso de [usuário] padrão para obter detalhes adicionais.                                                               |
+| usageLocation        | String                       | Um código de país de duas letras ([ISO 3166 alfa-2]). Obrigatório para usuários que serão atribuídos a licenças. Não anulável. Oferece suporte a \$ filtro.                                                            |
+| userPrincipalName    | String                       | O nome principal do usuário (UPN) para o usuário. Oferece suporte a $filter e $orderby. Confira recurso de [usuário] padrão para obter detalhes adicionais.                                                               |
 | userType             | String                       | Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Membro” e “Convidado”. Oferece suporte a \$ filtro.                                                                    |
 
 > [!IMPORTANT]
@@ -162,3 +162,5 @@ Veja a seguir uma representação JSON do recurso.
 [educationonpremisesinfo]: educationonpremisesinfo.md
 [ISO 3166 alfa-2]: https://www.iso.org/obp/ui/#search
 [rfc 822]: https://tools.ietf.org/html/rfc822
+
+

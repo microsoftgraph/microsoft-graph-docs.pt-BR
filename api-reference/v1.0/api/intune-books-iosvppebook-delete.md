@@ -3,14 +3,14 @@ title: Excluir iosVppEBook
 description: Exclui iosVppEBook.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 723d78b65956d4a783a89862310f79242f30bb2d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ded7e5fa27bda1082f3f2dd7f907151f5531a8a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43355958"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966076"
 ---
 # <a name="delete-iosvppebook"></a>Excluir iosVppEBook
 
@@ -63,6 +63,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

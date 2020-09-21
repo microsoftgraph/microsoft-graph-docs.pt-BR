@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bbce8afa1926444af025b0b57d857f94a296e852
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2279d5da5bf663b776ec9deee5241103079d4bb1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443094"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079800"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 
@@ -83,7 +83,7 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 |parentFolderId|String|O identificador exclusivo de mailFolder do mailFolder pai.|
 |totalItemCount|Int32|O número de itens na mailFolder.|
 |unreadItemCount|Int32|O número de itens na mailFolder marcados como não lidos.|
-|wellKnownName|String|O nome de pasta conhecido para a pasta. Os valores possíveis estão listados acima. Essa propriedade só é definida para pastas padrão criadas pelo Outlook. Para outras pastas, essa propriedade é **NULL**.|
+|wellKnownName|Cadeia de caracteres|O nome de pasta conhecido para a pasta. Os valores possíveis estão listados acima. Essa propriedade só é definida para pastas padrão criadas pelo Outlook. Para outras pastas, essa propriedade é **NULL**.|
 
 **Acessar contagens de itens de forma eficiente**
 
@@ -157,3 +157,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

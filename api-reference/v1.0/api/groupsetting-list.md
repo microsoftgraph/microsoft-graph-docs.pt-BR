@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: eb540d0e1b4819abe18d6fa374e1b553eb0297b7
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 5ea98dc5d7fd2db802fb7b27e0e9536ef0830bcd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124508"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973383"
 ---
 # <a name="list-group-settings"></a>Configurações de grupo de lista
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [groupSetting](../resources/groupsetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [groupSetting](../resources/groupsetting.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
@@ -127,3 +127,4 @@ Content-length: 263
   "suppressions": [
   ]
 }-->
+

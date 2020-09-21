@@ -5,12 +5,12 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4e3ba437359fedf604e800e12554f186b67c3f78
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9918e611c767cb791908d16307c91fd3483c4e9a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461873"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965593"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 
@@ -176,3 +176,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

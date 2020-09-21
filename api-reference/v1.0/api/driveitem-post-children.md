@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Criar uma nova pasta ou DriveItem em um Drive com um item pai ou caminho especificado.
 doc_type: apiPageType
-ms.openlocfilehash: 33a925f02bb70473bb2d5c1518d7de3b3085502d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d57162189315d760d523e3ae3504fbd9660a5bd9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517689"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073276"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Criar uma nova pasta em uma unidade
 
@@ -147,3 +147,4 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   "suppressions": [
   ]
 } -->
+

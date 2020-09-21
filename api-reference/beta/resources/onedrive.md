@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 doc_type: conceptualPageType
 author: JeremyKelley
-ms.openlocfilehash: 67334416e7c149e4b915a21426b8ca4c04da968f
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 999b4dc500391417bacdcb992acc99e04ca1e0d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812152"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079799"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>Trabalhando com arquivos no Microsoft Graph
 
@@ -111,3 +111,5 @@ O Microsoft Graph também fornece uma maneira de seu aplicativo [acessar conteú
 
 ## <a name="whats-new"></a>O que há de novo
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
+
+

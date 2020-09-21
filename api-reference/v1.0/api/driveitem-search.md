@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Pesquise a hierarquia de itens para itens que corresponda a uma consulta.
 doc_type: apiPageType
-ms.openlocfilehash: 0abdd3f1f509a7c1692356888fddf805ff9833c5
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: 057100295bb73996b1834ffdc81446b25e803289
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091379"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073233"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Pesquisar um DriveItem em uma unidade
 
@@ -195,3 +195,4 @@ Confira [Respostas de Erros][error-response] para saber mais sobre como os erros
   "suppressions": [
   ]
 } -->
+

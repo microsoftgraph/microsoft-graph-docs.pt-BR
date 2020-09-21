@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6a2c9ab763f5fa494a8be66a05ab32b31b0f4348
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 8f1973e90283b00175b013b7658bc2b2278845a8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917338"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973313"
 ---
 # <a name="list-appliesto"></a>Listar se aplica
 
@@ -38,7 +38,7 @@ GET /policies/homeRealmDiscoveryPolicies/{id}/appliesTo
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte `$select` aos `$top` parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método oferece suporte `$select` aos `$top` parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

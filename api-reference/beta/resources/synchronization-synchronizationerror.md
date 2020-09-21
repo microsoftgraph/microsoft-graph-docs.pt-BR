@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 884c39273d8d474a228cd8f4a8f2b321950e8caf
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 7c32f3bc22d2357c0eca88e6f693cd958a6dd5ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013451"
 ---
 # <a name="synchronizationerror-resource-type"></a>tipo de recurso synchronizationError
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Representa um erro que ocorreu durante o processo de sincronização.
 <!-- Add descriptions for the properties. -->
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|código|Cadeia de Caracteres||
+|código|String||
 |mensagem|String||
 |tenantActionable|Boolean||
 
@@ -62,3 +62,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

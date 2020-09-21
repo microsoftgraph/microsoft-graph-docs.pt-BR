@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9687fc1a14b5b048015c70a9146800f8b5ca422e
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 9eb969ab7a8125e91acee1a3e0528851164bbe16
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567268"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033402"
 ---
 # <a name="get-identitysecuritydefaultsenforcementpolicy"></a>Obter identitySecurityDefaultsEnforcementPolicy
 
@@ -123,3 +123,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

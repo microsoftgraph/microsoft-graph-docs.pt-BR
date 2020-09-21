@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c1e7b6b55734a2eec8367413f47e7b3f77a7b2dd
-ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
+ms.openlocfilehash: 5a0d8ed68ea3e4f8027e44409246ea56b45557bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47296510"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019766"
 ---
 # <a name="list-unifiedroledefinitions"></a>Listar unifiedRoleDefinitions
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -205,3 +205,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

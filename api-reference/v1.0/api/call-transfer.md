@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fd60a58628077e311e01f8124335235dae1ba8e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c6255c011190460f8fda50865a67957aade8fea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518655"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073296"
 ---
 # <a name="call-transfer"></a>Call: transferência
 
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|O participante que é o destino da transferência.|
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `202 Accepted`.
@@ -213,7 +213,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>Notificação-falha na transferência
 
-> **Observação:** Quando uma transferência de chamada falha, o estado de chamada `established`será.
+> **Observação:** Quando uma transferência de chamada falha, o estado de chamada será `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -382,7 +382,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>Notificação-falha na transferência
 
-> **Observação:** Quando uma transferência de chamada falha, o estado de chamada `established`será.
+> **Observação:** Quando uma transferência de chamada falha, o estado de chamada será `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -430,3 +430,4 @@ Content-Type: application/json
   ]
 }
 -->
+

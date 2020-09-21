@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2ba9b9d8ecf6766cddfa670ae2e33b39d0e6acb6
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 0e792b55cddaee3069eaaf53cc9dce68aae041e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434869"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979543"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>tipo de recurso educationSynchronizationProfileStatus
 
@@ -22,7 +22,7 @@ Representa o status de sincronização de um [perfil de sincronização](educati
 
 > **Observação:** As atualizações do **educationSynchronizationProfileStatus** podem ser atrasadas devido à natureza assíncrona do processamento de sincronização em segundo plano.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                                      | Tipo de retorno                               | Descrição                                              |
 | :-------------------------------------------------------------------------- | :---------------------------------------- | :------------------------------------------------------- |
@@ -32,7 +32,7 @@ Representa o status de sincronização de um [perfil de sincronização](educati
 
 | Propriedade                    | Tipo                           | Descrição                                                                                                              |
 | :-------------------------- | :----------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
-| id                          | Cadeia de caracteres                         | O identificador exclusivo do recurso. (somente leitura)                                                                      |
+| id                          | String                         | O identificador exclusivo do recurso. (somente leitura)                                                                      |
 | status                      | educationSynchronizationStatus | O status de uma sincronização. Os valores possíveis são: `paused` , `inProgress` , `success` , `error` , `quarantined` , `validationError` . |
 | lastSynchronizationDateTime | DateTimeOffset                 | Representa a hora em que as alterações mais recentes foram observadas no diretório.                                        |
 
@@ -54,3 +54,5 @@ Representa o status de sincronização de um [perfil de sincronização](educati
   "lastSynchronizationDateTime": "DateTimeOffset"
 }
 ```
+
+

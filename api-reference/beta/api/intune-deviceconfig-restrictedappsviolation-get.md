@@ -3,14 +3,14 @@ title: Obter restrictedAppsViolation
 description: Leia as propriedades e as relações do objeto restrictedAppsViolation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bded226cf7e86558ec7626847c0ec27f06b8156e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ca87ee5a94e2979b3c526493772d2b5ef76e244d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43431711"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086127"
 ---
 # <a name="get-restrictedappsviolation"></a>Obter restrictedAppsViolation
 
@@ -91,6 +91,9 @@ Content-Length: 664
   }
 }
 ```
+
+
+
 
 
 

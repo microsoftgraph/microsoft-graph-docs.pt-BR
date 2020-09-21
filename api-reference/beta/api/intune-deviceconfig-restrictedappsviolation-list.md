@@ -3,14 +3,14 @@ title: Listar restrictedAppsViolations
 description: Listar Propriedades e relações dos objetos restrictedAppsViolation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7db1c1137903df80a28832a1862a4345fc2254ff
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f4102079dbb858c30c04478bdf0096140adc5fb9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43342509"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086106"
 ---
 # <a name="list-restrictedappsviolations"></a>Listar restrictedAppsViolations
 
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceConfigurationRestrictedAppsViolations
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -90,6 +90,9 @@ Content-Length: 710
   ]
 }
 ```
+
+
+
 
 
 

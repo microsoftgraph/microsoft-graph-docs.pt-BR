@@ -3,14 +3,14 @@ title: Criar deviceManagementIntentSettingCategory
 description: Criar um novo objeto deviceManagementIntentSettingCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1146c0f2fbfba38f7917f97589ce9015c8ef0741
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: be73deedf63368259a5f0772eab3e62b170b4062
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43428124"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054452"
 ---
 # <a name="create-devicemanagementintentsettingcategory"></a>Criar deviceManagementIntentSettingCategory
 
@@ -53,14 +53,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID de categoria herdada de [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|id|Cadeia de caracteres|A ID de categoria herdada de [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |displayName|Cadeia de caracteres|O nome da categoria herdado de [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
-|hasRequiredSetting|Boolean|A categoria contém a configuração necessária de nível superior herdada de [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|hasRequiredSetting|Booliano|A categoria contém a configuração necessária de nível superior herdada de [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementIntentSettingCategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementIntentSettingCategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -92,6 +92,9 @@ Content-Length: 199
   "hasRequiredSetting": true
 }
 ```
+
+
+
 
 
 

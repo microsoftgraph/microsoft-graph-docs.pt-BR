@@ -3,14 +3,14 @@ title: Obter deviceManagementIntentAssignment
 description: Leia as propriedades e as relações do objeto deviceManagementIntentAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5df05efed01dc16457d737699237cd6f110846cb
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: df5aa1a73d837a6f963bf5afa4400e4258b4964a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792566"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054445"
 ---
 # <a name="get-devicemanagementintentassignment"></a>Obter deviceManagementIntentAssignment
 
@@ -82,6 +82,9 @@ Content-Length: 409
   }
 }
 ```
+
+
+
 
 
 

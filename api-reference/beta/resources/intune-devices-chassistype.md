@@ -3,14 +3,14 @@ title: tipo de enumeração chassisType
 description: Tipo de chassi.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fcc964a2b78fafc94fab3adcd081083cf4047152
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ba727dc804aa6737f54a74c7763518c72b457ecf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465170"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060780"
 ---
 # <a name="chassistype-enum-type"></a>tipo de enumeração chassisType
 
@@ -26,14 +26,17 @@ Tipo de chassi.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Unknown.|
-|placa|1|Placa.|
-|laptop|duas|Laptop.|
-|worksWorkstation|3D|Estação.|
+|placa|1 |Placa.|
+|laptop|2 |Laptop.|
+|worksWorkstation|3 |Estação.|
 |enterpriseServer|4 |Servidor da empresa.|
 |phone|100|Telefone.|
 |caneta|101|Tablet móvel.|
 |mobileOther|102|Outros dispositivos móveis.|
 |mobileUnknown|103|Celular desconhecido.|
+
+
+
 
 
 

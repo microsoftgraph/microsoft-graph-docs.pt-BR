@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Para mover um DriveItem para um novo item pai, o aplicativo solicita a atualização de parentReference do DriveItem a ser movido.
 doc_type: apiPageType
-ms.openlocfilehash: 16c4c68ec4224313cf30d88cb00ee1abb58c5e76
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f2794a6ba876c13ac876d8876c3bd684e6955120
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517696"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073275"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Mover um DriveItem para uma nova pasta
 
@@ -138,3 +138,4 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   "suppressions": [
   ]
 } -->
+

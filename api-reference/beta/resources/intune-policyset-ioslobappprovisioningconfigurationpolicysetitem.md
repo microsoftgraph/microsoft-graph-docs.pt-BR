@@ -3,14 +3,14 @@ title: tipo de recurso iosLobAppProvisioningConfigurationPolicySetItem
 description: Uma classe que contém as propriedades usadas para configuração de provisionamento do aplicativo LOB iOS PolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b58d4a68f3324f103cd2a792a5b202eb2ea53d4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8ee9b5ef5ebc6dff8dcb3db87d3df5f27ce9e235
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458400"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993494"
 ---
 # <a name="ioslobappprovisioningconfigurationpolicysetitem-resource-type"></a>tipo de recurso iosLobAppProvisioningConfigurationPolicySetItem
 
@@ -25,7 +25,7 @@ Uma classe que contém as propriedades usadas para configuração de provisionam
 
 Herda de [policySetItem](../resources/intune-policyset-policysetitem.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar iosLobAppProvisioningConfigurationPolicySetItems](../api/intune-policyset-ioslobappprovisioningconfigurationpolicysetitem-list.md)|coleção [iosLobAppProvisioningConfigurationPolicySetItem](../resources/intune-policyset-ioslobappprovisioningconfigurationpolicysetitem.md)|Listar Propriedades e relações dos objetos [iosLobAppProvisioningConfigurationPolicySetItem](../resources/intune-policyset-ioslobappprovisioningconfigurationpolicysetitem.md) .|
@@ -42,10 +42,10 @@ Herda de [policySetItem](../resources/intune-policyset-policysetitem.md)
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |payloadId|String|PayloadId do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |itemType|String|policySetType do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|displayName|Cadeia de caracteres|DisplayName do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|displayName|String|DisplayName do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md). Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro, caso algum tenha ocorrido. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md). Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Coleção String|Marcas da implantação dirigida herdadas de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação dirigida herdadas de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -74,6 +74,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

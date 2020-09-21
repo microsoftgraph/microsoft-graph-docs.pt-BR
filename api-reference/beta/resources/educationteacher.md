@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4cd8b11d5f398177ec301e6cb7d834268e97c005
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: a2eae690076553090dbd32f46f0b777a998b615d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909700"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979536"
 ---
 # <a name="educationteacher-resource-type"></a>Tipo de recurso educationTeacher
 
@@ -27,7 +27,7 @@ Informações adicionais incluídas a um [educationUser](educationuser.md) que e
 
 | Propriedade      | Tipo   | Descrição                                  |
 | :------------ | :----- | :------------------------------------------- |
-| externalId    | String | ID do professor no sistema de origem externo. |
+| externalId    | Cadeia de caracteres | ID do professor no sistema de origem externo. |
 | teacherNumber | Cadeia de caracteres | Número do professor.                              |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -61,3 +61,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

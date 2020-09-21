@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 86d246098801954c811d56e2357356f9b5c4a4c2
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: e8f173dd957db3b3dac92cce285693ec93f687c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345797"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013444"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Responder a uma mensagem em um canal
 
@@ -147,3 +147,4 @@ Content-length: 160
   ]
 }
 -->
+

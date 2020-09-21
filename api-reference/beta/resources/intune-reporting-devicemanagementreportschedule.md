@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementReportSchedule
 description: Entidade que representa um cronograma para o qual os relatórios são entregues
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff17b49c60d9acf1b7acef405a2a9759e617368f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ea065d4f01472a907497cee612253e87b1ffd031
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453198"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079820"
 ---
 # <a name="devicemanagementreportschedule-resource-type"></a>tipo de recurso deviceManagementReportSchedule
 
@@ -34,18 +34,18 @@ Entidade que representa um cronograma para o qual os relatórios são entregues
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para esta entidade|
-|reportScheduleName|String|Nome da agenda|
-|assunto|String|Assunto dos relatórios agendados que são entregues|
-|email|Coleção String|Emails para os quais os relatórios agendados são entregues|
+|id|Cadeia de caracteres|Identificador exclusivo para esta entidade|
+|reportScheduleName|Cadeia de caracteres|Nome da agenda|
+|assunto|Cadeia de caracteres|Assunto dos relatórios agendados que são entregues|
+|email|Coleção de cadeias de caracteres|Emails para os quais os relatórios agendados são entregues|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequência da entrega de relatórios agendados. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Hora de início da entrega dos relatórios agendados|
 |endDateTime|DateTimeOffset|Hora em que a entrega dos relatórios agendados termina|
 |userId|Cadeia de caracteres|A ID do usuário que criou o relatório|
-|reportName|String|Nome do relatório|
-|filter|String|Filtros aplicados no relatório|
-|select|Coleção String|Colunas selecionadas do relatório|
-|Classificadoporativado|Coleção String|Ordenação de colunas no relatório|
+|reportName|Cadeia de caracteres|Nome do relatório|
+|filter|Cadeia de caracteres|Filtros aplicados no relatório|
+|select|Coleção de cadeias de caracteres|Colunas selecionadas do relatório|
+|Classificadoporativado|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
 |formato|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório agendado. Os valores possíveis são: `csv`, `pdf`.|
 
 ## <a name="relationships"></a>Relações
@@ -83,6 +83,9 @@ Veja a seguir uma representação JSON do recurso.
   "format": "String"
 }
 ```
+
+
+
 
 
 

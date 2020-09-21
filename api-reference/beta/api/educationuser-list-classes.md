@@ -5,16 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e00aa154ece87b8e1488559d98f98b88c8952581
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: b95a9ff9ebe724c442f2db6bdafeb21b7e8b5d1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006763"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007053"
 ---
 # <a name="list-classes"></a>Listar classes
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!NOTE]
 > Quando as permissões delegadas são usadas, somente os recursos do educationClass de que o usuário de autenticação é um membro será retornado.
@@ -147,3 +147,5 @@ Content-length: 277
   ]
 }
 -->
+
+

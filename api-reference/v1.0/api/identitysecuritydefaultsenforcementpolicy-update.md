@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82ed64e9c10945d9ed6a39949b52d5c8f95b8769
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 95d18774bbed04a8559c5c607f76233e12c5afd5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567233"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033395"
 ---
 # <a name="update-identitysecuritydefaultsenforcementpolicy"></a>Atualizar identitySecurityDefaultsEnforcementPolicy
 
@@ -118,3 +118,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

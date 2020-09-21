@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ailae
-ms.openlocfilehash: a57155a880e9ba4e00dd9a4d17ddae3742bbaa8e
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d94e67ecf590198afff31768e550d6b4454dc4bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807476"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026507"
 ---
 # <a name="imageinfo-resource-type"></a>tipo de recurso imageInfo
 
@@ -63,3 +63,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

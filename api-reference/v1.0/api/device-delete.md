@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 969afefaca69a563d166d084d2732f443ed39eb5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f2dc83df4d0c722968d926724aa093c7241bad05
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464032"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013353"
 ---
 # <a name="delete-device"></a>Excluir dispositivo
 
@@ -98,3 +98,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

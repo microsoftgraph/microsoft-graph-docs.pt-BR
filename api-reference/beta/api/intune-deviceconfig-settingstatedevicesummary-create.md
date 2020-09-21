@@ -3,14 +3,14 @@ title: Criar settingStateDeviceSummary
 description: Criar um novo objeto settingStateDeviceSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cac52b58876bf1943462e370aefbab0699615319
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: ca7aaafff12b340968dc434d0fca8801b12774df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792671"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086120"
 ---
 # <a name="create-settingstatedevicesummary"></a>Criar settingStateDeviceSummary
 
@@ -47,7 +47,6 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSWiredNetworkConfiguration/rootCertificateForServerValidation/deviceSettingStateSummaries
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSWiredNetworkConfiguration/identityCertificateForClientAuthentication/deviceSettingStateSummaries
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/deviceSettingStateSummaries
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication/deviceSettingStateSummaries
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation/{windows81TrustedRootCertificateId}/deviceSettingStateSummaries
 ```
 
@@ -64,8 +63,8 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar settingStateDevi
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|settingName|String|Nome da configuração|
+|id|Cadeia de caracteres|Chave da entidade.|
+|settingName|Cadeia de caracteres|Nome da configuração|
 |instancePath|Cadeia de caracteres|Nome de InstancePath para a configuração|
 |unknownDeviceCount|Int32|Contagem desconhecida de dispositivos para a configuração|
 |notApplicableDeviceCount|Int32|Contagem não aplicável ao dispositivo para a configuração|
@@ -124,6 +123,9 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
+
+
+
 
 
 

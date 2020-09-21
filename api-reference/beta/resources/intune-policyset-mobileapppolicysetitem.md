@@ -3,14 +3,14 @@ title: tipo de recurso mobileAppPolicySetItem
 description: Uma classe que contém as propriedades usadas para aplicativos móveis PolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a2be8d28e217fda3fa91ecaaba904dc61bb3e353
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: fa1cd5710e7c94fc054022c6ede3f9fcd80d1bf7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179352"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993431"
 ---
 # <a name="mobileapppolicysetitem-resource-type"></a>tipo de recurso mobileAppPolicySetItem
 
@@ -25,7 +25,7 @@ Uma classe que contém as propriedades usadas para aplicativos móveis PolicySet
 
 Herda de [policySetItem](../resources/intune-policyset-policysetitem.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar mobileAppPolicySetItems](../api/intune-policyset-mobileapppolicysetitem-list.md)|coleção [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md)|Listar Propriedades e relações dos objetos [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md) .|
@@ -40,12 +40,12 @@ Herda de [policySetItem](../resources/intune-policyset-policysetitem.md)
 |id|String|Chave do MobileAppPolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |createdDateTime|DateTimeOffset|Hora de criação do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|payloadId|Cadeia de Caracteres|PayloadId do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|itemType|Cadeia de Caracteres|policySetType do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|displayName|Cadeia de caracteres|DisplayName do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|payloadId|String|PayloadId do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|itemType|String|policySetType do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|displayName|String|DisplayName do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md). Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro, caso algum tenha ocorrido. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md). Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Conjunto de cadeias de caracteres|Marcas da implantação dirigida herdadas de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação dirigida herdadas de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |finalidade|[installIntent](../resources/intune-shared-installintent.md)|Intenção de instalação do MobileAppPolicySetItem. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |configurações|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|Configurações do MobileAppPolicySetItem.|
 
@@ -82,6 +82,9 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso policySetItem
 description: Uma classe que contém as propriedades usadas para o item Policyset.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2701686d9f2f162a6ec01dfb143c2d8652dd098a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 530dd10960eacd0ded5c5c8d9340469c66020e8c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422503"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993410"
 ---
 # <a name="policysetitem-resource-type"></a>tipo de recurso policySetItem
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Uma classe que contém as propriedades usadas para o item Policyset.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar policySetItems](../api/intune-policyset-policysetitem-list.md)|coleção [policySetItem](../resources/intune-policyset-policysetitem.md)|Listar Propriedades e relações dos objetos [policySetItem](../resources/intune-policyset-policysetitem.md) .|
@@ -36,10 +36,10 @@ Uma classe que contém as propriedades usadas para o item Policyset.
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do PolicySetItem.|
 |payloadId|String|PayloadId do PolicySetItem.|
 |itemType|String|policySetType do PolicySetItem.|
-|displayName|Cadeia de caracteres|DisplayName do PolicySetItem.|
+|displayName|String|DisplayName do PolicySetItem.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status do PolicySetItem. Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro, caso algum tenha ocorrido. Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Coleção String|Marcas da implantação dirigida|
+|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação dirigida|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -68,6 +68,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

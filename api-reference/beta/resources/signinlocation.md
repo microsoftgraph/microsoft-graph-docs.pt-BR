@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: SarahBar
-ms.openlocfilehash: eb4208820c1654a5b8db0d4afa2eeb1df4fb2b53
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1bbfb01e07b5ccde134933490b06ae3ab1da53af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808589"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067136"
 ---
 # <a name="signinlocation-resource-type"></a>tipo de recurso signInLocation
 
@@ -21,10 +21,10 @@ Namespace: o Microsoft. Graph fornece a cidade, o estado e o país/região de on
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|city|String|Fornece a cidade onde a entrada se originou. Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
+|city|Cadeia de caracteres|Fornece a cidade onde a entrada se originou. Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
 |countryOrRegion|String|Fornece as informações do código do país (código de 2 letras) em que a entrada se originou.  Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|Fornece a latitude, longitude e altitude onde a entrada se originou.|
-|estado|String|Fornece o estado em que a entrada se originou. Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
+|state|Cadeia de caracteres|Fornece o estado em que a entrada se originou. Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -57,3 +57,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

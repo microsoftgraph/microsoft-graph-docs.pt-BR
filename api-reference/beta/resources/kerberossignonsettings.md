@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0c668380c05c1a76aa971eef85f133a0e9cf8a07
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: c5d84b8f6ff80f146c02da1d29074181807b16c2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44862535"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079801"
 ---
 # <a name="kerberossignonsettings-resource-type"></a>tipo de recurso kerberosSignOnSettings
 
@@ -28,8 +28,8 @@ Se você estiver configurando o logon único baseado em senha, ele deverá ser d
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|kerberosServicePrincipalName|String| O SPN do aplicativo interno do servidor de aplicativos. Esse SPN precisa estar na lista de serviços para os quais o conector pode apresentar credenciais delegadas. |
-|kerberosSignOnMappingAttributeType|String| A identidade de logon delegada para o conector usar em nome dos seus usuários. Para obter mais informações, consulte [trabalhando com diferentes identidades locais e de nuvem ](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities). Os valores possíveis são: `userPrincipalName`, `onPremisesUserPrincipalName`, `userPrincipalUsername`, `onPremisesUserPrincipalUsername`, `onPremisesSAMAccountName`.|
+|kerberosServicePrincipalName|Cadeia de caracteres| O SPN do aplicativo interno do servidor de aplicativos. Esse SPN precisa estar na lista de serviços para os quais o conector pode apresentar credenciais delegadas. |
+|kerberosSignOnMappingAttributeType|Cadeia de caracteres| A identidade de logon delegada para o conector usar em nome dos seus usuários. Para obter mais informações, consulte [trabalhando com diferentes identidades locais e de nuvem ](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities). Os valores possíveis são: `userPrincipalName`, `onPremisesUserPrincipalName`, `userPrincipalUsername`, `onPremisesUserPrincipalUsername`, `onPremisesSAMAccountName`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -60,3 +60,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
