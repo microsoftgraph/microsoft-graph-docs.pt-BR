@@ -3,14 +3,14 @@ title: Excluir deviceManagementReportSchedule
 description: Exclui deviceManagementReportSchedule.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19b4dc185adeed0c71f131da53e04df881b7ddfe
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 035a40bf810b7e8452c2ad278f9273b297c6a3d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969575"
 ---
 # <a name="delete-devicemanagementreportschedule"></a>Excluir deviceManagementReportSchedule
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

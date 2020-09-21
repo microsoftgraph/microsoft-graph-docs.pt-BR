@@ -3,14 +3,14 @@ title: Obter userExperienceAnalyticsMetric
 description: Leia as propriedades e as relações do objeto userExperienceAnalyticsMetric.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c53048f563dd8caf19a9a5995c165356f2317bcb
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: eebcbeb2d6793dc980b4594b1ff54def242d0329
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792825"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970135"
 ---
 # <a name="get-userexperienceanalyticsmetric"></a>Obter userExperienceAnalyticsMetric
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -83,6 +83,9 @@ Content-Length: 204
   }
 }
 ```
+
+
+
 
 
 

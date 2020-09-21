@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cc61dd5eb9d5e012f0fce672eac4f330eb460df3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ceb65ac10fed3dee257893e2629ca137c749cb13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437509"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969197"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -45,11 +45,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|useSavedCredentials|Boolean|Quando `true`, o `credentials` parâmetro será ignorado e as credenciais salvas anteriormente (se houver alguma) serão validadas. |
-|las|coleção [synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Credenciais a serem validadas. Ignorado quando o `useSavedCredentials` parâmetro é `true`.|
+|useSavedCredentials|Boolean|Quando `true` , o `credentials` parâmetro será ignorado e as credenciais salvas anteriormente (se houver alguma) serão validadas. |
+|las|coleção [synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Credenciais a serem validadas. Ignorado quando o `useSavedCredentials` parâmetro é `true` .|
 
 ## <a name="response"></a>Resposta
-Se a validação for bem-sucedida, este método retornará `204, No Content` um código de resposta. Não retorna nada no corpo da resposta.
+Se a validação for bem-sucedida, este método retornará um `204, No Content` código de resposta. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -112,3 +112,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

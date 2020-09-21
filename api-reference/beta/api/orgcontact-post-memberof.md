@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 187c8a866d4fe66721f7fde782cc976bab4d9a76
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 4f523427d14f5ae5fdba4eeee33399d895277229
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680666"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969428"
 ---
 # <a name="create-memberof"></a>Criar memberOf
 
@@ -108,3 +108,5 @@ Content-length: 51
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 931cf6b4a77993da7564b157787b29f338bc2690
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 66617937140f9c87386bde864b57a310c7684cc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896480"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968925"
 ---
 # <a name="user-assignlicense"></a>usuário: assignLicense
 
@@ -100,7 +100,7 @@ Content-length: 185
 ## <a name="example"></a>Exemplo
 Remover licenças do usuário.
 
-##### <a name="request"></a>Solicitar
+##### <a name="request"></a>Solicitação
 ```http
 POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
@@ -161,3 +161,5 @@ Content-length: 491
   ]
 }
 -->
+
+

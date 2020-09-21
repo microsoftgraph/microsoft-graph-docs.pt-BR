@@ -3,14 +3,14 @@ title: Listar userExperienceAnalyticsMetrics
 description: Listar Propriedades e relações dos objetos userExperienceAnalyticsMetric.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 30a72de1206d99d7bfd3a82e8ae57bf034810156
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 775906c3adc9b31c97aa6455e42b28fca4f2d640
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176005"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970121"
 ---
 # <a name="list-userexperienceanalyticsmetrics"></a>Listar userExperienceAnalyticsMetrics
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,7 @@ GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsB
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -81,6 +81,9 @@ Content-Length: 226
   ]
 }
 ```
+
+
+
 
 
 

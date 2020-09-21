@@ -3,14 +3,14 @@ title: Atualizar softwareUpdateStatusSummary
 description: Atualizar as propriedades de um objeto softwareUpdateStatusSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a53a25af1ec5bb6bd69fd1970f5ea457ead994f0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c2b052b2a1a4dd7ca75a4151251ce079248bce87
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474587"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968154"
 ---
 # <a name="update-softwareupdatestatussummary"></a>Atualizar softwareUpdateStatusSummary
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [softwareUpdateS
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|Cadeia de caracteres|O nome da política.|
+|displayName|String|O nome da política.|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade.|
 |nonCompliantDeviceCount|Int32|Número de dispositivos sem conformidade.|
 |remediatedDeviceCount|Int32|Número de dispositivos corrigidos.|
@@ -129,6 +129,9 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
+
+
+
 
 
 

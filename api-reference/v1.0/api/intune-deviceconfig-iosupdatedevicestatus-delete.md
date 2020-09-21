@@ -3,14 +3,14 @@ title: Excluir iosUpdateDeviceStatus
 description: Exclui iosUpdateDeviceStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8801b47a346144abf45a8c055b9de0f52ffc0f59
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bda9242e986a04eb33e9f44cebd7bd645223fff5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473364"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968182"
 ---
 # <a name="delete-iosupdatedevicestatus"></a>Excluir iosUpdateDeviceStatus
 
@@ -63,6 +63,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

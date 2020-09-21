@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1fa0867517279954100117d60d933255a5fee587
-ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
+ms.openlocfilehash: afb8dbdb19816b487dfe7fe60cd09897120caa2b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47296495"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968980"
 ---
 # <a name="update-unifiedroledefinition"></a>Atualizar unifiedRoleDefinition
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -137,3 +137,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

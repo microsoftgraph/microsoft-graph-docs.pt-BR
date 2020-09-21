@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5eced3dfe4a796f5d6db9340a1db819a7de4781f
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 5b5a6ac62098e2d5f2bba21c0bc32c7045cb9930
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524356"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969050"
 ---
 # <a name="archive-team"></a>Arquivar equipe
 
@@ -32,11 +32,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | TeamSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | TeamSettings. Edit. Group *, TeamSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
-> **Observação**: as permissões marcadas com * usam o [consentimento específico do recurso](https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
@@ -57,7 +57,7 @@ Na solicitação, você pode _opcionalmente_ incluir o parâmetro `shouldSetSpoS
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-Este parâmetro opcional define se as permissões para os membros da equipe devem ser definidas somente para leitura no site do SharePoint Online associado à equipe. Essa etapa será ignorada, caso as defina como falsas ou omita o corpo completamente.
+Este parâmetro opcional define se as permissões dos membros da equipe devem ser definidas apenas para leitura, no site do SharePoint Online associado à equipe. Essa etapa será ignorada, caso as defina como falsas ou omita o corpo completamente.
 
 ## <a name="response"></a>Resposta
 
@@ -113,3 +113,5 @@ Content-Length: 0
   "suppressions": []
 }
 -->
+
+

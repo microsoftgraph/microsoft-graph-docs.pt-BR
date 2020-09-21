@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e5559e2c581e573e8154168ba5bd1db39cdb536e
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 9e9cedfa435d235baa7099c5755fc6bead5c2aaa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896473"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968924"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Verifique se há associação na lista de grupos especificada. Retorna da lista os grupos com os quais o usuário tem uma associação direta ou transitiva.
 
-Você pode verificar até um máximo de 20 grupos por solicitação. Essa função suporta o Microsoft 365 e outros tipos de grupos provisionados no Azure AD. Observe que os grupos do Microsoft 365 não podem conter grupos. Portanto, a associação a um grupo do Microsoft 365 é sempre direta.
+Você pode verificar até um máximo de 20 grupos por solicitação. Esta função suporta o Microsoft 365 e outros tipos de grupos provisionados no Azure AD. Observe que os grupos da Microsoft 365 não podem conter grupos. Portanto, a associação a um grupo do Microsoft 365 é sempre direta.
 
 ## <a name="permissions"></a>Permissões
 
@@ -137,3 +137,5 @@ Content-length: 39
   ]
 }
 -->
+
+

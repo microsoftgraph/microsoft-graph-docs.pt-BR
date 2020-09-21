@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 02afa0d8cc2a13ef56d6a2e1cdd20aeca5f9dc0f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d690f85f6c86ccbe2ce3d702827d648ed010a1e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451403"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968763"
 ---
 # <a name="get-workbookcommentreply"></a>Obter workbookCommentReply
 
@@ -112,3 +112,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

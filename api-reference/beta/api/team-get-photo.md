@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5a02f0cd05c0f092fbafc584e9a74a578122f7c5
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 180907b77679658793b35e72092f0aac3f8988e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969036"
 ---
 # <a name="get-team-photo"></a>Obter foto da equipe
 
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 
 Obtenha a foto (imagem) de uma equipe ou metadados da foto. Em geral, é uma prática recomendada primeiro tentar recuperar os metadados para o tamanho da foto que você deseja obter para garantir que o tamanho esteja disponível. Depois de recuperar os metadados, use o caminho `/$value` para obter os dados binários da foto.
 
-Este método primeiro tenta recuperar a foto especificada do Microsoft 365. Se a foto não estiver disponível no Microsoft 365, ele tentará recuperar a foto do Azure Active Directory.
+Este método tenta primeiro recuperar a foto especificada do Microsoft 365. Se a foto não estiver disponível no Microsoft 365, ele tentará recuperar a foto do Azure Active Directory.
 
-Estes são os tamanhos de fotos de HD compatíveis no Microsoft 365:48x48, 64x64, 96x96, 120x120, 240x240, 360X360, 432x432, 504x504 e 648x648 pixels. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory.
+A seguir, são apresentados os tamanhos suportados de fotos em HD no Microsoft 365: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 e 648x648 pixels. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory.
 
-Você pode obter os metadados da maior foto disponível ou, opcionalmente, especificar um tamanho para obter os metadados para esse tamanho de foto. Se o tamanho solicitado não estiver disponível, você poderá obter um tamanho menor. Por exemplo, se a maior foto carregada tiver 504x504 pixels, todos os tamanhos, exceto o de 648x648, estarão disponíveis para download. Se o tamanho especificado não está disponível no Microsoft 365 ou no Azure Active Directory, o tamanho 1x1 é retornado com o restante dos metadados.
+Você pode obter os metadados da maior foto disponível ou, opcionalmente, especificar um tamanho para obter os metadados para esse tamanho de foto. Se o tamanho solicitado não estiver disponível, você poderá obter um tamanho menor. Por exemplo, se a maior foto carregada tiver 504x504 pixels, todos os tamanhos, exceto o de 648x648, estarão disponíveis para download. Se o tamanho especificado não estiver disponível no Microsoft 365 ou no Azure Active Directory, o tamanho 1x1 será retornado com o restante dos metadados.
 
 > [!Note]
 > Há um limite de 4 MB para o tamanho total da solicitação REST. Isso limita o tamanho da foto a menos de 4 MB.
@@ -35,11 +35,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Team. ReadBasic. All, TeamSettings. Read. All, TeamSettings. ReadWrite. All, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamSettings. Read. Group *, TeamSettings. Edit. Group*, Team. ReadBasic. All, TeamSettings. Read. All, TeamSettings. ReadWrite. All, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sem suporte. |
 
-> **Observação**: as permissões marcadas com * usam o [consentimento específico do recurso](https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
@@ -77,7 +77,7 @@ Este método suporta um parâmetro de caminho opcional para especificar o tamanh
 
 |**Parâmetro**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
-|size  |Cadeia de caracteres  | Um tamanho de foto. Os tamanhos de fotos de HD com suporte no Microsoft 365 são os seguintes: 48x48, 64x64, 96x96, 120x120, 240x240, 360X360, 432x432, 504x504 e 648x648. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory. Opcional.|
+|size  |Cadeia de caracteres  | Um tamanho de foto. Os tamanhos suportados das fotos em HD do Microsoft 365 são os seguintes: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 e 648x648. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory. Opcional.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -173,3 +173,5 @@ Contém os dados binários da foto de 240x240 solicitada. O código de resposta 
   ]
 }
 -->
+
+

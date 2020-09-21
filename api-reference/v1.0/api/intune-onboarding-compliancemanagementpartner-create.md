@@ -3,14 +3,14 @@ title: Criar complianceManagementPartner
 description: Criar um novo objeto complianceManagementPartner.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c606f0fdf4fbf9f589c2aab2423373225f1bdf7c
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: Auto
+ms.openlocfilehash: 09aefccda257cd4e49fa02df72554618a32d8962
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744108"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967902"
 ---
 # <a name="create-compliancemanagementpartner"></a>Criar complianceManagementPartner
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar complian
 |id|String|ID da entidade|
 |lastHeartbeatDateTime|DateTimeOffset|Carimbo de data/hora da última pulsação após o administrador integrado ao parceiro de gerenciamento de conformidade|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|displayName|Cadeia de caracteres|Nome de exibição de parceiro|
+|displayName|String|Nome de exibição de parceiro|
 |macOsOnboarded|Boolean|Parceiro integrado para dispositivos Mac.|
 |androidOnboarded|Boolean|Parceiro integrado para dispositivos Android.|
 |iosOnboarded|Boolean|Parceiro integrado para dispositivos IOS.|
@@ -153,6 +153,9 @@ Content-Length: 1031
   ]
 }
 ```
+
+
+
 
 
 

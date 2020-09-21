@@ -5,16 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7fde36d6d5d40d22009a52ab279f91ce10dd2e8b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fe85d3334cad78f0156c10b0ba3d2863df8fd6f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451396"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968765"
 ---
 # <a name="create-workbookcommentreply"></a>Criar workbookCommentReply
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Criar um novo objeto [workbookCommentReply](../resources/workbookcommentreply.md) .
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [workb
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [workbookCommentReply](../resources/workbookcommentreply.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [workbookCommentReply](../resources/workbookcommentreply.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -118,3 +118,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

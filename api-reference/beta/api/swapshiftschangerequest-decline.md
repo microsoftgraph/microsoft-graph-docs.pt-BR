@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9c6852d09ce244469c4f0d29e179b25f6f081157
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: e72e8cc5149ecad9f60353428b357a725a6d5187
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44154371"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969253"
 ---
 # <a name="swapshiftschangerequest-decline"></a>swapShiftsChangeRequest: recusar
 
@@ -116,3 +116,5 @@ HTTP/1.1 204 NO CONTENT
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

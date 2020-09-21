@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bd3f5ed410fb7ba2294fb57f4cd7bdb065f99981
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 3b38007e3482e5cd35bf239deb8a6a823c99702e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289662"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968294"
 ---
 # <a name="application-removepassword"></a>aplicativo: removePassword
 
@@ -117,3 +117,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

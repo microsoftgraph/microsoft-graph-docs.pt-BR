@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b2eb21947edb12693ba44cdb2d19ba535df03306
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 4ad1e07d21271096f8be8968cb43be2cbd19ec87
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819588"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968862"
 ---
 # <a name="update-webaccount"></a>Atualizar webaccount
 
@@ -149,3 +149,5 @@ Content-type: application/json
   "webUrl": "https://github.com/innocenty.popov"
 }
 ```
+
+

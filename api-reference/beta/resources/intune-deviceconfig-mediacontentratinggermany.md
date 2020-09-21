@@ -3,14 +3,14 @@ title: Tipo de recurso mediaContentRatingGermany
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e146adc4b2d2e550701a6f152efcdefb41758644
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 568f88dd3d595e3fafdf1ac8d201752d19235a8d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437212"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968427"
 ---
 # <a name="mediacontentratinggermany-resource-type"></a>Tipo de recurso mediaContentRatingGermany
 
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
+
+
+
 
 
 

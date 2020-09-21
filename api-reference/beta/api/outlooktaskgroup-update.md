@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b29c699bad356307ce70aaab84be6b7d990b7e86
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 278a1e77770065c4cce15f8df467f63cbf5923ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312087"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969441"
 ---
 # <a name="update-outlooktaskgroup-deprecated"></a>Atualizar outlooktaskgroup (preterido)
 
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Tasks.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Tasks.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Tasks.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -120,3 +120,5 @@ Content-length: 138
   ]
 }
 -->
+
+

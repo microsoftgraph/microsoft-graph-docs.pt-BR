@@ -3,14 +3,14 @@ title: tipo de enumeração androidForWorkCrossProfileDataSharingType
 description: Android para o tipo de compartilhamento de dados entre perfis de trabalho.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 89d20cb06cedb69132f96143d73dbc67b8fc6c0e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f251f3fa350920614b6f4a75f67d6e99f9cd3cf2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442911"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968637"
 ---
 # <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>tipo de enumeração androidForWorkCrossProfileDataSharingType
 
@@ -26,9 +26,12 @@ Android para o tipo de compartilhamento de dados entre perfis de trabalho.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|preventAny|1|Impedir qualquer compartilhamento.|
-|allowPersonalToWork|duas|Permitir solicitação de compartilhamento de dados do perfil pessoal para o perfil de trabalho.|
-|norestrictions|3D|Sem restrições no compartilhamento.|
+|preventAny|1 |Impedir qualquer compartilhamento.|
+|allowPersonalToWork|2 |Permitir solicitação de compartilhamento de dados do perfil pessoal para o perfil de trabalho.|
+|norestrictions|3 |Sem restrições no compartilhamento.|
+
+
+
 
 
 

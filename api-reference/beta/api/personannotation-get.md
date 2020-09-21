@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2070007dc489864d050c9feeb4a7adb54c2f79ad
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 7742e838413caeb1409f0e7469a07d79c6905550
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819881"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969400"
 ---
 # <a name="get-personannotation"></a>Obter personAnnotation
 Namespace: microsoft.graph
@@ -121,3 +121,5 @@ Content-Type: application/json
   "displayName": "About Me"
 }
 ```
+
+

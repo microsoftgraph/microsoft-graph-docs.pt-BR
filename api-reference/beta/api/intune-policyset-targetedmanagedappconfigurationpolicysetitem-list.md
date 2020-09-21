@@ -3,14 +3,14 @@ title: Listar targetedManagedAppConfigurationPolicySetItems
 description: Listar Propriedades e relações dos objetos targetedManagedAppConfigurationPolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e96da6c7c808c5dc7c077a79a8cd888e17c79aed
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 907408d4ef7167234a0fb8828db3297d28e65cf8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375142"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969582"
 ---
 # <a name="list-targetedmanagedappconfigurationpolicysetitems"></a>Listar targetedManagedAppConfigurationPolicySetItems
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [targetedManagedAppConfigurationPolicySetItem](../resources/intune-policyset-targetedmanagedappconfigurationpolicysetitem.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [targetedManagedAppConfigurationPolicySetItem](../resources/intune-policyset-targetedmanagedappconfigurationpolicysetitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,6 +86,9 @@ Content-Length: 579
   ]
 }
 ```
+
+
+
 
 
 

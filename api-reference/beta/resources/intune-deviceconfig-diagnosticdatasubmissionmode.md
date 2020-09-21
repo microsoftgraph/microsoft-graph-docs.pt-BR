@@ -3,14 +3,14 @@ title: tipo de enumeração diagnosticDataSubmissionMode
 description: Permitir que o dispositivo envie dados de telemetria e diagnósticos de uso, como Watson.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 97fb396b301fc6e51a2fb4c262649c22e4e2b8e3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7ef0a61e8d95793e6e4717a3a5ed66d518e80590
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469175"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968441"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>tipo de enumeração diagnosticDataSubmissionMode
 
@@ -26,10 +26,13 @@ Permitir que o dispositivo envie dados de telemetria e diagnósticos de uso, com
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Permite que o usuário defina.|
-|nenhuma|1|Nenhum dado de telemetria é enviado dos componentes do sistema operacional. Observação: esse valor só é aplicável a dispositivos corporativos e de servidor. O uso dessa configuração em outros dispositivos equivale a definir o valor 1.|
-|Basic|duas|Envia dados básicos de telemetria.|
-|metarquivo|3D|Envia dados de telemetria avançados, incluindo dados de uso e insights.|
+|Nenhuma|1 |Nenhum dado de telemetria é enviado dos componentes do sistema operacional. Observação: esse valor só é aplicável a dispositivos corporativos e de servidor. O uso dessa configuração em outros dispositivos equivale a definir o valor 1.|
+|Basic|2 |Envia dados básicos de telemetria.|
+|metarquivo|3 |Envia dados de telemetria avançados, incluindo dados de uso e insights.|
 |cheia|4 |Envia dados de telemetria completos, incluindo dados de diagnóstico, como o estado do sistema.|
+
+
+
 
 
 

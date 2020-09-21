@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3eef2d525fc6e619edbe3a9f022a0b9f91e9bae7
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: a090656c524f9d5c0a2ff7127ab4e0197714ef4b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680679"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969463"
 ---
 # <a name="create-directreport"></a>Criar directReport
 
@@ -108,3 +108,5 @@ Content-length: 51
   ]
 }
 -->
+
+

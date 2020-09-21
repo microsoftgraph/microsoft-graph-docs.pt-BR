@@ -3,14 +3,14 @@ title: tipo de enumeração easAuthenticationMethod
 description: Método de autenticação do Exchange Active Sync.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c4bdb64ddf0959353b5f9da12da9450460a78a37
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bd548ea789c46573d9adecaf5e213a760d7f7655
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469115"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968434"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>tipo de enumeração easAuthenticationMethod
 
@@ -26,8 +26,11 @@ Método de autenticação do Exchange Active Sync.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |usernameAndPassword|,0|Autenticar com um nome de usuário e senha.|
-|certificado|1|Autenticar com um certificado.|
-|derivedCredential|duas|Autenticar com a credencial derivada.|
+|certificado|1 |Autenticar com um certificado.|
+|derivedCredential|2 |Autenticar com a credencial derivada.|
+
+
+
 
 
 

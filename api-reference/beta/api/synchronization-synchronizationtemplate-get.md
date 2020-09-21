@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e0f5ff93cc87bd5c4cca2ada9891ba8ce4d02ac4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cbbbc56b78523b88edd1d958179f6a479aa5163f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471157"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969134"
 ---
 # <a name="get-synchronizationtemplate"></a>Obter synchronizationtemplate
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ### <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [synchronizationtemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [synchronizationtemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
 
 ### <a name="example"></a>Exemplo
 
@@ -74,3 +74,5 @@ HTTP/1.1 200 OK
         }
 }
 ```
+
+

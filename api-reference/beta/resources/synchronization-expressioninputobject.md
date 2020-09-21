@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0756e14f9a35e1ff1b5a63d563d4bca742be566d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: e9727f50b05eb8cdb5319883dd0058a91d9383cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218440"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968350"
 ---
 # <a name="expressioninputobject-resource-type"></a>tipo de recurso expressionInputObject
 
@@ -58,3 +58,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

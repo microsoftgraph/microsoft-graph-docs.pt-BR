@@ -3,14 +3,14 @@ title: Atualizar notificationMessageTemplate
 description: Atualizar as propriedades de um objeto notificationMessageTemplate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 11aa54ec5548fdf63c9bae467fa2176ad1907038
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 288361a17d4bc9ec73f879b986d9066cebd7f21d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452929"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967909"
 ---
 # <a name="update-notificationmessagetemplate"></a>Atualizar notificationMessageTemplate
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [notific
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|Cadeia de caracteres|Nome de exibição do modelo de mensagem de notificação.|
+|displayName|String|Nome de exibição do modelo de mensagem de notificação.|
 |defaultLocale|Cadeia de caracteres|A localidade padrão para fallback quando a localidade solicitada não está disponível.|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|As opções de identidade visual do modelo de mensagem. A identidade visual é definida no Console do administrador do Intune. Os valores possíveis são: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 
@@ -95,6 +95,9 @@ Content-Length: 310
   "brandingOptions": "includeCompanyLogo"
 }
 ```
+
+
+
 
 
 

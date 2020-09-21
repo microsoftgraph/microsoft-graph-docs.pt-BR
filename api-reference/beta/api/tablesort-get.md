@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2031b5f75adb7563ac546f2fac69d167f92f945f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bed82661c0c0036bc8297618fd24a07d525f2013
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452628"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969054"
 ---
 # <a name="get-tablesort"></a>Obter TableSort
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -106,3 +106,5 @@ Content-length: 51
   ]
 }
 -->
+
+

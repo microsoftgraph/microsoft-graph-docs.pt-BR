@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 108c3d0544709e24f985a5f9e684bc56bf671603
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ec8358fb1015e2816818b28a887a6e7a8c2f9a48
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812906"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969344"
 ---
 # <a name="delete-personaward"></a>Excluir personAward
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
 | Aplicativo                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -87,3 +87,5 @@ DELETE https://graph.microsoft.com/beta/user/{userId}/profile/awards/{personAwar
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

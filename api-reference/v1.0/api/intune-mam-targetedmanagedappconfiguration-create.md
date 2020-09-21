@@ -3,14 +3,14 @@ title: Criar targetedManagedAppConfiguration
 description: Cria um novo objeto targetedManagedAppConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5cef545a97b59524c13e52bf6d302779c1e79f4f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 47cedcc9eb3ee6ca2157165145ed53a033019d73
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43398177"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968049"
 ---
 # <a name="create-targetedmanagedappconfiguration"></a>Criar targetedManagedAppConfiguration
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar targetedManagedA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|displayName|String|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |description|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
@@ -118,6 +118,9 @@ Content-Length: 560
   "isAssigned": true
 }
 ```
+
+
+
 
 
 

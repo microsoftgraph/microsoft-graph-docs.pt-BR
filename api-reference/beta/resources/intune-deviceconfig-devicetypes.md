@@ -3,14 +3,14 @@ title: tipo de enumeração deviceTypes
 description: Tipo de dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1e821245cca794f0f0f2cf9aad3eb6d38d95e3c3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3d4210930e6982ede50c0b050694c98444456010
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469191"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968455"
 ---
 # <a name="devicetypes-enum-type"></a>tipo de enumeração deviceTypes
 
@@ -26,9 +26,9 @@ Tipo de dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |placa|,0|Placa.|
-|windowsRT|1|WindowsRT.|
-|winMO6|duas|WinMO6.|
-|Nokia|3D|Nokia.|
+|windowsRT|1 |WindowsRT.|
+|winMO6|2 |WinMO6.|
+|Nokia|3 |Nokia.|
 |Windowsphonee|4 |Windows Phone.|
 |mac|5 |MacOS.|
 |winCE|6 |WinCE.|
@@ -36,9 +36,9 @@ Tipo de dispositivo.
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
 |iPod|10 |iPodTouch.|
-|Android|11|Android.|
+|Android|11 |Android.|
 |iSocConsumer|12 |iSocConsumer.|
-|UNIX|Treze|UNIX.|
+|UNIX|13 |UNIX.|
 |macMDM|14 |Cliente Mac OS X usando o agente MDM interno.|
 |holoLens|15 |Representando o Windows 10 Goggles sofisticado.|
 |surfaceHub|16 |Dispositivo de HUB de superfície.|
@@ -47,6 +47,9 @@ Tipo de dispositivo.
 |rim|100|Rim.|
 |Palm|101|Palm.|
 |desconhecido|255|Representa que o tipo de dispositivo é desconhecido.|
+
+
+
 
 
 

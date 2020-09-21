@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 525fa925ae3c953908138de2e2d61ff921df057f
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 6586de66b1e56820427ca2d6e5c0cdf9d70cc0de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007119"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969302"
 ---
 # <a name="list-unifiedroleassignments"></a>Listar unifiedRoleAssignments
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +40,7 @@ GET /roleManagement/directory/roleAssignments
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Essa operação requer o `$filter` parâmetro de consulta. Você pode filtrar as `roleDefinitionId` Propriedades ou `principalId` . A `roleDefinitionId` propriedade pode ser uma ID de objeto role ou uma ID de objeto de modelo de função. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Essa operação requer o `$filter` parâmetro de consulta. Você pode filtrar as `roleDefinitionId` Propriedades ou `principalId` . A `roleDefinitionId` propriedade pode ser uma ID de objeto role ou uma ID de objeto de modelo de função. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -285,3 +285,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 303be61d58d8b132d6aeb91aeee0406620f53f3a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0ad35d176f2807b2daedc7296a2adc657a285b6f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471179"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969155"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: ParseName
 
@@ -53,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Definição do atributo que será mapeado para esta expressão. Opcional.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -205,3 +205,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

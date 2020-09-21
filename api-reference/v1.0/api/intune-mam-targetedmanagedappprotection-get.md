@@ -3,14 +3,14 @@ title: Obter targetedManagedAppProtection
 description: Ler propriedades e relações do objeto targetedManagedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 463077d3d47177162900b748528f05f08ea66f65
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 775f55fe267f0b04950fda33c88011d61f29d203
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177643"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968007"
 ---
 # <a name="get-targetedmanagedappprotection"></a>Obter targetedManagedAppProtection
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -112,6 +112,9 @@ Content-Length: 1704
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 89f16152ec57bbd9e29f25a6eb78aa26723ae5d1
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: efbf1b0eae84207e591f3f52ace88aa78f925e04
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107910"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968928"
 ---
 # <a name="user-checkmemberobjects"></a>usuário: checkMemberObjects
 
@@ -56,7 +56,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um novo objeto de coleção String no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto de coleção String no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -134,3 +134,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

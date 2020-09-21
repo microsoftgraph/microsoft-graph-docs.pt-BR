@@ -5,16 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8516b27ed09beda5e139bb46442f3048f6a64469
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7eace8a20842115095ebd88a4d181cea314b06bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451431"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968847"
 ---
 # <a name="get-workbookcomment"></a>Obter workbookComment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Obtenha as propriedades e os relacionamentos de um objeto [workbookComment](../resources/workbookcomment.md) .
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [workbookComment](../resources/workbookcomment.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [workbookComment](../resources/workbookcomment.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -112,3 +112,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
