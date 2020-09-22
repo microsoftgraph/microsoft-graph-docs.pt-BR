@@ -5,31 +5,31 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 66997034c1b83770af7e247e77464b98f8c20cda
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 184d02a0aacd290b54f398566b667ad0ee63b807
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808337"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009384"
 ---
-# <a name="automaticrepliesmailtips-resource-type"></a><span data-ttu-id="c7542-103">tipo de recurso automaticRepliesMailTips</span><span class="sxs-lookup"><span data-stu-id="c7542-103">automaticRepliesMailTips resource type</span></span>
+# <a name="automaticrepliesmailtips-resource-type"></a><span data-ttu-id="e1282-103">tipo de recurso automaticRepliesMailTips</span><span class="sxs-lookup"><span data-stu-id="e1282-103">automaticRepliesMailTips resource type</span></span>
 
-<span data-ttu-id="c7542-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c7542-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e1282-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e1282-104">Namespace: microsoft.graph</span></span>
 
 
-<span data-ttu-id="c7542-105">[Dicas](../resources/mailtips.md) de correio sobre as respostas automáticas que foram configuradas em uma caixa de correio.</span><span class="sxs-lookup"><span data-stu-id="c7542-105">[MailTips](../resources/mailtips.md) about any automatic replies that have been set up on a mailbox.</span></span>
+<span data-ttu-id="e1282-105">[Dicas](../resources/mailtips.md) de correio sobre as respostas automáticas que foram configuradas em uma caixa de correio.</span><span class="sxs-lookup"><span data-stu-id="e1282-105">[MailTips](../resources/mailtips.md) about any automatic replies that have been set up on a mailbox.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c7542-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c7542-106">Properties</span></span>
-| <span data-ttu-id="c7542-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c7542-107">Property</span></span>     | <span data-ttu-id="c7542-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="c7542-108">Type</span></span>   |<span data-ttu-id="c7542-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="c7542-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e1282-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e1282-106">Properties</span></span>
+| <span data-ttu-id="e1282-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e1282-107">Property</span></span>     | <span data-ttu-id="e1282-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="e1282-108">Type</span></span>   |<span data-ttu-id="e1282-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="e1282-109">Description</span></span>|
 |:-----|:-----|:-----|
-| <span data-ttu-id="c7542-110">mensagem</span><span class="sxs-lookup"><span data-stu-id="c7542-110">message</span></span> | <span data-ttu-id="c7542-111">String</span><span class="sxs-lookup"><span data-stu-id="c7542-111">String</span></span> | <span data-ttu-id="c7542-112">A mensagem de resposta automática.</span><span class="sxs-lookup"><span data-stu-id="c7542-112">The automatic reply message.</span></span> |
-| <span data-ttu-id="c7542-113">messageLanguage</span><span class="sxs-lookup"><span data-stu-id="c7542-113">messageLanguage</span></span> | [<span data-ttu-id="c7542-114">localeInfo</span><span class="sxs-lookup"><span data-stu-id="c7542-114">localeInfo</span></span>](../resources/localeinfo.md) | <span data-ttu-id="c7542-115">O idioma em que a mensagem de resposta automática está.</span><span class="sxs-lookup"><span data-stu-id="c7542-115">The language that the automatic reply message is in.</span></span> |
-| <span data-ttu-id="c7542-116">scheduledEndTime</span><span class="sxs-lookup"><span data-stu-id="c7542-116">scheduledEndTime</span></span> | [<span data-ttu-id="c7542-117">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="c7542-117">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="c7542-118">A data e a hora em que as respostas automáticas estão definidas para terminar.</span><span class="sxs-lookup"><span data-stu-id="c7542-118">The date and time that automatic replies are set to end.</span></span> |
-| <span data-ttu-id="c7542-119">scheduledStartTime</span><span class="sxs-lookup"><span data-stu-id="c7542-119">scheduledStartTime</span></span> | [<span data-ttu-id="c7542-120">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="c7542-120">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="c7542-121">A data e a hora em que as respostas automáticas estão definidas para começar.</span><span class="sxs-lookup"><span data-stu-id="c7542-121">The date and time that automatic replies are set to begin.</span></span> |
+| <span data-ttu-id="e1282-110">mensagem</span><span class="sxs-lookup"><span data-stu-id="e1282-110">message</span></span> | <span data-ttu-id="e1282-111">String</span><span class="sxs-lookup"><span data-stu-id="e1282-111">String</span></span> | <span data-ttu-id="e1282-112">A mensagem de resposta automática.</span><span class="sxs-lookup"><span data-stu-id="e1282-112">The automatic reply message.</span></span> |
+| <span data-ttu-id="e1282-113">messageLanguage</span><span class="sxs-lookup"><span data-stu-id="e1282-113">messageLanguage</span></span> | [<span data-ttu-id="e1282-114">localeInfo</span><span class="sxs-lookup"><span data-stu-id="e1282-114">localeInfo</span></span>](../resources/localeinfo.md) | <span data-ttu-id="e1282-115">O idioma em que a mensagem de resposta automática está.</span><span class="sxs-lookup"><span data-stu-id="e1282-115">The language that the automatic reply message is in.</span></span> |
+| <span data-ttu-id="e1282-116">scheduledEndTime</span><span class="sxs-lookup"><span data-stu-id="e1282-116">scheduledEndTime</span></span> | [<span data-ttu-id="e1282-117">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="e1282-117">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="e1282-118">A data e a hora em que as respostas automáticas estão definidas para terminar.</span><span class="sxs-lookup"><span data-stu-id="e1282-118">The date and time that automatic replies are set to end.</span></span> |
+| <span data-ttu-id="e1282-119">scheduledStartTime</span><span class="sxs-lookup"><span data-stu-id="e1282-119">scheduledStartTime</span></span> | [<span data-ttu-id="e1282-120">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="e1282-120">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="e1282-121">A data e a hora em que as respostas automáticas estão definidas para começar.</span><span class="sxs-lookup"><span data-stu-id="e1282-121">The date and time that automatic replies are set to begin.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="c7542-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c7542-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e1282-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e1282-122">JSON representation</span></span>
 
-<span data-ttu-id="c7542-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c7542-123">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e1282-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e1282-123">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -60,3 +60,4 @@ ms.locfileid: "46808337"
   "section": "documentation",
   "tocPath": ""
 }-->
+

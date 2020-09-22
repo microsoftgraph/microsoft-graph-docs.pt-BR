@@ -5,34 +5,34 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3f9c8010b0e07a16d2a982c3ddbc7ef40c614583
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: dfbcaaf75ca446adec70f98e61cb7dc02d168b53
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181754"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010301"
 ---
-# <a name="domaindnsunavailablerecord-resource-type"></a><span data-ttu-id="3bd4d-103">tipo de recurso domainDnsUnavailableRecord</span><span class="sxs-lookup"><span data-stu-id="3bd4d-103">domainDnsUnavailableRecord resource type</span></span>
+# <a name="domaindnsunavailablerecord-resource-type"></a><span data-ttu-id="03abe-103">tipo de recurso domainDnsUnavailableRecord</span><span class="sxs-lookup"><span data-stu-id="03abe-103">domainDnsUnavailableRecord resource type</span></span>
 
-<span data-ttu-id="3bd4d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3bd4d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="03abe-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="03abe-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3bd4d-105">Ao consultar a propriedade de navegação **serviceConfigurationRecords** para uma entidade de [domínio](domain.md) , você pode obter uma ou mais entidades [DomainDnsCnameRecord](domaindnscnamerecord.md), [DomainDnsMxRecord](domaindnsmxrecord.md), [DomainDnsSrvRecord](domaindnssrvrecord.md)e/ou [DomainDnsTxtRecord](domaindnstxtrecord.md) .</span><span class="sxs-lookup"><span data-stu-id="3bd4d-105">When you query for the navigation property **serviceConfigurationRecords** for a [Domain](domain.md) entity, you may get back one or more [DomainDnsCnameRecord](domaindnscnamerecord.md), [DomainDnsMxRecord](domaindnsmxrecord.md), [DomainDnsSrvRecord](domaindnssrvrecord.md), and/or [DomainDnsTxtRecord](domaindnstxtrecord.md) entities.</span></span> <span data-ttu-id="3bd4d-106">Essas entidades indicam quais registros DNS você deve adicionar ao arquivo de zona do domínio, antes que o domínio possa ser usado pelo Microsoft Online Services.</span><span class="sxs-lookup"><span data-stu-id="3bd4d-106">These entities indicate what DNS records you must add to the zone file of the domain, before the domain can be used by Microsoft Online Services.</span></span> <span data-ttu-id="3bd4d-107">Quando não for possível gerar essas entidades, uma entidade DomainDnsUnavailableRecord será retornada.</span><span class="sxs-lookup"><span data-stu-id="3bd4d-107">When it is not possible to generate such entities, a DomainDnsUnavailableRecord Entity is returned instead.</span></span> <span data-ttu-id="3bd4d-108">Herdado de entidade [DomainDnsRecord](domaindnsrecord.md) .</span><span class="sxs-lookup"><span data-stu-id="3bd4d-108">Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.</span></span>
+<span data-ttu-id="03abe-105">Ao consultar a propriedade de navegação **serviceConfigurationRecords** para uma entidade de [domínio](domain.md) , você pode obter uma ou mais entidades [DomainDnsCnameRecord](domaindnscnamerecord.md), [DomainDnsMxRecord](domaindnsmxrecord.md), [DomainDnsSrvRecord](domaindnssrvrecord.md)e/ou [DomainDnsTxtRecord](domaindnstxtrecord.md) .</span><span class="sxs-lookup"><span data-stu-id="03abe-105">When you query for the navigation property **serviceConfigurationRecords** for a [Domain](domain.md) entity, you may get back one or more [DomainDnsCnameRecord](domaindnscnamerecord.md), [DomainDnsMxRecord](domaindnsmxrecord.md), [DomainDnsSrvRecord](domaindnssrvrecord.md), and/or [DomainDnsTxtRecord](domaindnstxtrecord.md) entities.</span></span> <span data-ttu-id="03abe-106">Essas entidades indicam quais registros DNS você deve adicionar ao arquivo de zona do domínio, antes que o domínio possa ser usado pelo Microsoft Online Services.</span><span class="sxs-lookup"><span data-stu-id="03abe-106">These entities indicate what DNS records you must add to the zone file of the domain, before the domain can be used by Microsoft Online Services.</span></span> <span data-ttu-id="03abe-107">Quando não for possível gerar essas entidades, uma entidade DomainDnsUnavailableRecord será retornada.</span><span class="sxs-lookup"><span data-stu-id="03abe-107">When it is not possible to generate such entities, a DomainDnsUnavailableRecord Entity is returned instead.</span></span> <span data-ttu-id="03abe-108">Herdado de entidade [DomainDnsRecord](domaindnsrecord.md) .</span><span class="sxs-lookup"><span data-stu-id="03abe-108">Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="3bd4d-109">Métodos</span><span class="sxs-lookup"><span data-stu-id="3bd4d-109">Methods</span></span>
-<span data-ttu-id="3bd4d-110">Não há suporte para consultas diretas a esse recurso.</span><span class="sxs-lookup"><span data-stu-id="3bd4d-110">Direct queries to this resource are not supported.</span></span> <span data-ttu-id="3bd4d-111">Confira o tópico de [domínio](domain.md) para obter informações sobre como consultar os registros de serviço de domínio.</span><span class="sxs-lookup"><span data-stu-id="3bd4d-111">Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
+## <a name="methods"></a><span data-ttu-id="03abe-109">Métodos</span><span class="sxs-lookup"><span data-stu-id="03abe-109">Methods</span></span>
+<span data-ttu-id="03abe-110">Não há suporte para consultas diretas a esse recurso.</span><span class="sxs-lookup"><span data-stu-id="03abe-110">Direct queries to this resource are not supported.</span></span> <span data-ttu-id="03abe-111">Confira o tópico de [domínio](domain.md) para obter informações sobre como consultar os registros de serviço de domínio.</span><span class="sxs-lookup"><span data-stu-id="03abe-111">Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3bd4d-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3bd4d-112">Properties</span></span>
-| <span data-ttu-id="3bd4d-113">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3bd4d-113">Property</span></span>     | <span data-ttu-id="3bd4d-114">Tipo</span><span class="sxs-lookup"><span data-stu-id="3bd4d-114">Type</span></span>   |<span data-ttu-id="3bd4d-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="3bd4d-115">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="03abe-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="03abe-112">Properties</span></span>
+| <span data-ttu-id="03abe-113">Propriedade</span><span class="sxs-lookup"><span data-stu-id="03abe-113">Property</span></span>     | <span data-ttu-id="03abe-114">Tipo</span><span class="sxs-lookup"><span data-stu-id="03abe-114">Type</span></span>   |<span data-ttu-id="03abe-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="03abe-115">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3bd4d-116">description</span><span class="sxs-lookup"><span data-stu-id="3bd4d-116">description</span></span>|<span data-ttu-id="3bd4d-117">String</span><span class="sxs-lookup"><span data-stu-id="3bd4d-117">String</span></span>|<span data-ttu-id="3bd4d-118">Fornece o motivo pelo qual a entidade **DomainDnsUnavailableRecord** é retornada.</span><span class="sxs-lookup"><span data-stu-id="3bd4d-118">Provides the reason why the **DomainDnsUnavailableRecord** entity is returned.</span></span> |
+|<span data-ttu-id="03abe-116">description</span><span class="sxs-lookup"><span data-stu-id="03abe-116">description</span></span>|<span data-ttu-id="03abe-117">String</span><span class="sxs-lookup"><span data-stu-id="03abe-117">String</span></span>|<span data-ttu-id="03abe-118">Fornece o motivo pelo qual a entidade **DomainDnsUnavailableRecord** é retornada.</span><span class="sxs-lookup"><span data-stu-id="03abe-118">Provides the reason why the **DomainDnsUnavailableRecord** entity is returned.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="3bd4d-119">Relações</span><span class="sxs-lookup"><span data-stu-id="3bd4d-119">Relationships</span></span>
-<span data-ttu-id="3bd4d-120">Nenhum</span><span class="sxs-lookup"><span data-stu-id="3bd4d-120">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="03abe-119">Relações</span><span class="sxs-lookup"><span data-stu-id="03abe-119">Relationships</span></span>
+<span data-ttu-id="03abe-120">Nenhum</span><span class="sxs-lookup"><span data-stu-id="03abe-120">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="3bd4d-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3bd4d-121">JSON representation</span></span>
-<span data-ttu-id="3bd4d-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="3bd4d-122">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="03abe-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="03abe-121">JSON representation</span></span>
+<span data-ttu-id="03abe-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="03abe-122">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -69,3 +69,5 @@ ms.locfileid: "43181754"
   "suppressions": []
 }
 -->
+
+
