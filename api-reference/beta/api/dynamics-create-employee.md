@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: e58f0f3c44d9ed7e78ecdd8176d4710e89542f7b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bb1bc0754d921f6c979f78cec5a496c5ad52bd9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431582"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981699"
 ---
 # <a name="create-employees"></a>Criar funcionários
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -83,7 +83,7 @@ Content-type: application/json
 
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 
@@ -121,4 +121,6 @@ Content-type: application/json
 }
 
 ```
+
+
 

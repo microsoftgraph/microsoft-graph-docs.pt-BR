@@ -6,16 +6,16 @@ title: Recuperar miniaturas de um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: be3c85dd72410b84b7fac49fe1e8794d56beab05
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0642df89f46574b2bc6136d50f0cb4ab113295e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432520"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981979"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Listar miniaturas para um DriveItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,7 +60,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 Este método oferece suporte ao [Parâmetro de consulta OData](/graph/query-parameters) `$select` para personalizar a resposta.
 
-Além disso, esse método dá suporte à recuperação da miniatura com o valor de EXIF da orientação original e sem a rotação aplicada `originalOrientation=true` acrescentando o parâmetro de consulta.
+Além disso, esse método dá suporte à recuperação da miniatura com o valor de EXIF da orientação original e sem a rotação aplicada acrescentando o `originalOrientation=true` parâmetro de consulta.
 No momento, isso só tem suporte no OneDrive Personal.
 
 ## <a name="response"></a>Resposta
@@ -148,7 +148,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 
 ### <a name="path-parameters"></a>Parâmetros do caminho
 
-| Name         | Tipo   | Descrição                                                                              |
+| Nome         | Tipo   | Descrição                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | O identificador exclusivo do item referenciado.                                           |
 | **thumb-id** | number | O índice da miniatura, geralmente de 0 a 4. Se houver uma miniatura personalizada, seu índice será 0. |
@@ -376,3 +376,5 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   ]
 }
 -->
+
+

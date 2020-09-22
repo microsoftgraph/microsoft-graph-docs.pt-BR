@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: eeeb6a2143963803dc9b6ba06a2e780d7c7fab02
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 25c56b0c2a65454d93b900706cb54977e912069f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431512"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981685"
 ---
 # <a name="create-items"></a>Criar itens
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -77,7 +77,7 @@ Content-type: application/json
 
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 
@@ -94,4 +94,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2015-11-09T02:14:32Z"
 }
 ```
+
+
 

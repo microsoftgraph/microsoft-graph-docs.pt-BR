@@ -6,16 +6,16 @@ title: Baixar uma versão anterior
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d24688e5ecd5affa938dc2acc52112783d7f2181
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c342a870cd8649489f4ceeb80d6afc2e729fbe5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432289"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981808"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>Baixar o conteúdo de um recurso de DriveItemVersion (prévia)
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -111,3 +111,5 @@ Quando o aplicativo recupera a lista de versões disponíveis para um arquivo, u
   ]
 }
 -->
+
+

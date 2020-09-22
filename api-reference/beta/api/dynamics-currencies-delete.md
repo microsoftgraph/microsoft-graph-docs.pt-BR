@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 8900330ed7f7f62aa9f2ba3de05aef01044cbbeb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 495800dbb9308971ef03172cc25602a15cffc103
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431040"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981538"
 ---
 # <a name="delete-currencies"></a>Excluir moedas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -63,10 +63,12 @@ Este é um exemplo da solicitação.
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
 ```
 
-**Response** 
+**Resposta** 
 
 Veja a seguir um exemplo da resposta. 
 
 ```json
 HTTP/1.1 204 No Content
 ```
+
+

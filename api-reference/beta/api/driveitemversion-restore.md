@@ -6,16 +6,16 @@ title: Restaurar uma versão anterior
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 92b504266c743197aa7584a75f1774eb207ea596
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca944b58941ae9951510dcea5edcb8dcda751efd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432170"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981810"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>Restaurar uma versão anterior de um DriveItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -96,3 +96,5 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+
+

@@ -6,12 +6,12 @@ title: Enviar um convite para acessar um item
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 594df009c38ff1d7384207e7486392f24d7a8dbd
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: fdcae44f4d9be14fee4d9da81a96cc9c063ab061
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146398"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982021"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
@@ -224,7 +224,7 @@ A seguir estão alguns erros adicionais que seu aplicativo pode encontrar nos ob
 * [Drives](../resources/drive.md) com **driveType** de `personal` (OneDrive Pessoal) não podem criar ou alterar as permissões no DriveItem raiz.
 * Para obter uma lista de funções disponíveis, consulte [funções valores de propriedade](../resources/permission.md#roles-property-values).
 
-## <a name="error-responses"></a>Respostas de erro
+## <a name="error-responses"></a>Respostas de erros
 
 Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
 
@@ -242,3 +242,5 @@ Veja mais informações sobre como os erros são retornados no tópico [Resposta
   ]
 }
 -->
+
+

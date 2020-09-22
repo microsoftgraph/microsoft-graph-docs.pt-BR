@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: 9a2eb12039f7c1a4e8518273de83798190cc109b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 16a031245b134463e20ae0f590c121b387ab36da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808813"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981804"
 ---
 # <a name="get-a-driveitemversion-resource-preview"></a>Obter um recurso DriveItemVersion (prévia)
 
@@ -117,3 +117,5 @@ Quando seu aplicativo recupera a lista de versões disponíveis de um arquivo, u
   ]
 }
 -->
+
+

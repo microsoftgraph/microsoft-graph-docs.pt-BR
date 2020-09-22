@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: c30e88e8efd63c79e66027d754f35bad8163f5aa
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: f56f62fdd0244a5bc3a014cae4ad4bc9151181c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842747"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981881"
 ---
 # <a name="driveitem-preview"></a>driveItem: visualização
 
@@ -117,3 +117,5 @@ Esse recurso pode não estar disponível para todos os aplicativos de visualiza�
 ### <a name="pagezoom"></a>Página/zoom
 
 As `page` `zoom` Opções e podem não estar disponíveis para todos os aplicativos de visualização, mas serão aplicadas se o aplicativo de visualização oferecer suporte a ela.
+
+

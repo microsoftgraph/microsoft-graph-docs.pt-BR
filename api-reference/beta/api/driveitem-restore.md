@@ -6,16 +6,16 @@ author: JeremyKelley
 ms.prod: ''
 ms.date: 08/06/2019
 doc_type: apiPageType
-ms.openlocfilehash: b2dbdca5ff9ab0c55a721b0d47db174ed00bf8c5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fc2d7e73fb3c3ad781025e84166845dc84c3bdde
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432408"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981888"
 ---
 # <a name="driveitem-restore"></a>driveItem: restaurar
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -133,3 +133,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Items/Restore"
 }-->
+
+

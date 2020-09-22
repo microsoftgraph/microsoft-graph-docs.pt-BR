@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 3ecf5df6dbd03014ba026ba8673c9a4b2fffd5b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 42ee1c369a1c19bab88edf6aa274d3675779b557
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431477"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981678"
 ---
 # <a name="create-itemcategories"></a>Criar categorias de categoria
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -67,7 +67,7 @@ Content-type: application/json
 }
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 
@@ -85,6 +85,8 @@ Content-type: application/json
 }
 
 ```
+
+
 
 
 

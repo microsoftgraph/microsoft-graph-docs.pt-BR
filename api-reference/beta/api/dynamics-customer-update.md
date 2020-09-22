@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 4b7d2507e28c7da3fd5be46921ccde1299c62722
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 82596b160bbf05dd7039e838835915905c8d076a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42430788"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981468"
 ---
 # <a name="update-customers"></a>Atualizar clientes
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -68,7 +68,7 @@ Content-type: application/json
 }
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 
@@ -109,5 +109,7 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-07T00:35:28.983Z"
 }
 ```
+
+
 
 

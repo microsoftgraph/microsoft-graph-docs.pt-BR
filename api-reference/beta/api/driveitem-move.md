@@ -6,16 +6,16 @@ title: Mover um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fd7e67e613d7f08cb02b820c5e2d48be28a0da64
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c463f0f8b8d19ab4c1a8b64a4a04ceb9b42b5887
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432478"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981944"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Mover um DriveItem para uma nova pasta
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -137,3 +137,5 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   ]
 }
 -->
+
+

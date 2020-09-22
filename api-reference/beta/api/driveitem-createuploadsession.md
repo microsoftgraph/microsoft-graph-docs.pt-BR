@@ -6,16 +6,16 @@ title: Upload de arquivos retomável
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 764d58d0bd4c26d4222eccaef61be1ecebbbe056
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5730bb9ecd59adc14d375f73794d9a34b464a831
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432786"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982095"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -121,7 +121,7 @@ A resposta a essa solicitação, se tiver êxito, fornecerá os detalhes sobre o
 
 Esse recurso fornece detalhes sobre onde o intervalo de bytes do arquivo deve ser carregado e quando a sessão de carregamento expira.
 
-Se o `fileSize` parâmetro for especificado e exceder a cota disponível, `507 Insufficent Storage` uma resposta será retornada e a sessão de upload não será criada.
+Se o `fileSize` parâmetro for especificado e exceder a cota disponível, uma `507 Insufficent Storage` resposta será retornada e a sessão de upload não será criada.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -220,7 +220,7 @@ Se `deferCommit` for true, você poderá concluir o carregamento explicitamente 
 - Depois que o intervalo de bytes final do arquivo é colocado na URL de upload, envie uma solicitação PUT final da mesma maneira que você [lida com os erros de carregamento](#handle-upload-errors) (atualmente, só há suporte no onedrive Personal).
 
 
-Quando o upload estiver concluído, o servidor responderá à solicitação final com um `HTTP 201 Created` ou. `HTTP 200 OK`
+Quando o upload estiver concluído, o servidor responderá à solicitação final com um `HTTP 201 Created` ou `HTTP 200 OK` .
 O corpo da resposta também incluirá o conjunto de propriedades padrão para o **driveItem** que representa o arquivo concluído.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
@@ -419,3 +419,5 @@ Confira o tópico [Respostas de Erro][error-response] para saber detalhes sobre 
   "suppressions": []
 }
 -->
+
+

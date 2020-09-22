@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 50c80456ed2f61e75de0b822f69b4abee94b2a0d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb78fef62cb2d17e622c11cbd575905b60656f79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431820"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981727"
 ---
 # <a name="create-currencies"></a>Criar moedas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -70,7 +70,7 @@ Content-type: application/json
 }
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 
@@ -91,3 +91,5 @@ Content-type: application/json
 }
 
 ```
+
+

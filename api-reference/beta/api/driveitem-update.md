@@ -6,16 +6,16 @@ title: Atualizar um arquivo ou uma pasta
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: cff8bc2d7f5c4daec1da7e26f6f07b873b55dbee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ad62a4195f1896cc0f01131456cea382c1d80c03
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432310"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981825"
 ---
 # <a name="update-driveitem-properties"></a>Atualizar propriedades de DriveItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +47,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Nome          | Tipo   | Descrição                                                                                                                                                         |
+| Name          | Tipo   | Descrição                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à eTag atual da pasta, uma resposta `412 Precondition Failed` será exibida. |
 
@@ -128,3 +128,5 @@ Confira [Respostas de erro][error-response] para saber mais detalhes sobre como 
   ]
 }
 -->
+
+

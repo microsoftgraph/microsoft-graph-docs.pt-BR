@@ -6,16 +6,16 @@ title: obter um arquivo ou uma pasta
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e496682671eea4a7cebfca72789d5d85fe9f3366
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ee46dfde6ca18520dbafe949248ead4e899a1c38
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432576"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982022"
 ---
 # <a name="get-a-driveitem-resource"></a>Obter um recurso DriveItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -153,3 +153,5 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   ]
 }
 -->
+
+

@@ -6,16 +6,16 @@ title: Converter em outros formatos
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 03bb884e8dde82c99d0aadfa2a6e925b0d6552a7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cedeb91acad538f38d5f593b4cfe6df610818ed2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432653"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982036"
 ---
 # <a name="download-a-file-in-another-format"></a>Baixar um arquivo em outro formato
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -116,3 +116,5 @@ Confira [Respostas de Erros][error-response] para saber mais sobre como os erros
   ]
 }
 -->
+
+

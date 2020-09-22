@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 3c90808de4f07e45ded7c215577fff6916a59978
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 529c56634579167d5cab3abd6a27634678087d75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431428"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981655"
 ---
 # <a name="create-journals"></a>Criar diários
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -68,7 +68,7 @@ Content-type: application/json
 }
 ```
 
-**Response**
+**Resposta**
 
 ```json
 HTTP/1.1 201 Created
@@ -81,4 +81,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-05-17T11:30:01.313Z"
 }
 ```
+
+
 

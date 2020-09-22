@@ -6,16 +6,16 @@ title: Excluir um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1e1c36b6ebd77cb95b1d0ad360f88e5dcf850bd1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3ecaaf5d1cfc0afb7c864125228809c9143b8ef7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432772"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982092"
 ---
 # <a name="delete-a-driveitem"></a>Excluir um DriveItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -102,3 +102,5 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   ]
 }
 -->
+
+

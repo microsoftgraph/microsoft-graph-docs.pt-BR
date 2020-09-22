@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: ef94284b3c543868987a82a0f8422e9018060bdd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f98b395182a5b0acaf122bf0973c5904cc9e5d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431960"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981741"
 ---
 # <a name="get-companyinformation"></a>Obter companyInformation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +47,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **companyInformation** no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **companyInformation** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -58,7 +58,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies/{id}/companyInformation/{id}
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 
@@ -88,3 +88,5 @@ Veja a seguir um exemplo da resposta.
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"
 }
 ```
+
+

@@ -6,16 +6,16 @@ title: Sincronizar o conteúdo de uma unidade
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a8cbbff6eaada0730ee5a70a982e053388ded817
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 729f3cac63e9fbb9c37db173983bc00d3da4688e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432779"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982091"
 ---
 # <a name="track-changes-for-a-drive"></a>Controlar alterações para uma unidade
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -294,3 +294,5 @@ Além dos erros de ressincronização detalhados acima, confira os detalhes sobr
   ]
 }
 -->
+
+

@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 69a2ccdeeeefc01a5b089180e81936a8600706c7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9dd3dd0d1a1938b02a339836aa410966043ca77d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42430893"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981503"
 ---
 # <a name="delete-customers"></a>Excluir clientes
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,11 +61,13 @@ Este é um exemplo da solicitação.
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 ```
 
-**Response** 
+**Resposta** 
 
 Veja a seguir um exemplo da resposta. 
 
 ```json
 HTTP/1.1 204 No Content
 ```
+
+
 

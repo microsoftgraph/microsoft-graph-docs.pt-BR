@@ -6,12 +6,12 @@ title: Listar arquivos compartilhados comigo
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e06497071d78d02df93338ed7cdbe67e6c67cbfe
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: fde94804b521c161936fbc4ffafb206f6caf458b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524230"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982171"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Listar itens compartilhados com o usuário conectado
 
@@ -122,3 +122,5 @@ Por padrão, **sharedWithMe** retorna itens compartilhados em seu próprio locat
   ]
 }
 -->
+
+
