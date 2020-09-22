@@ -5,72 +5,72 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 61d7d590e6882f9c65614580248eba3f2d0ba6c0
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 673b5ea568cb1a07ce1482d535c85d1b0dc91f32
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897509"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088990"
 ---
-# <a name="update-schemaextension"></a><span data-ttu-id="38d40-103">Update schemaExtension</span><span class="sxs-lookup"><span data-stu-id="38d40-103">Update schemaExtension</span></span>
+# <a name="update-schemaextension"></a><span data-ttu-id="d3dd6-103">Update schemaExtension</span><span class="sxs-lookup"><span data-stu-id="d3dd6-103">Update schemaExtension</span></span>
 
-<span data-ttu-id="38d40-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="38d40-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d3dd6-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d3dd6-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="38d40-105">Atualize as propriedades na definição da [schemaExtension](../resources/schemaextension.md)especificada.</span><span class="sxs-lookup"><span data-stu-id="38d40-105">Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md).</span></span>
+<span data-ttu-id="d3dd6-105">Atualize as propriedades na definição da [schemaExtension](../resources/schemaextension.md)especificada.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-105">Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md).</span></span>
 
-<span data-ttu-id="38d40-106">A atualização se aplica a todos os recursos incluídos na propriedade **TargetTypes** da extensão.</span><span class="sxs-lookup"><span data-stu-id="38d40-106">The update applies to all the resources that are included in the **targetTypes** property of the extension.</span></span> <span data-ttu-id="38d40-107">Esses recursos estão entre os [tipos de recurso de suporte](/graph/extensibility-overview#supported-resources).</span><span class="sxs-lookup"><span data-stu-id="38d40-107">These resources are among the [supporting resource types](/graph/extensibility-overview#supported-resources).</span></span>
+<span data-ttu-id="d3dd6-106">A atualização se aplica a todos os recursos incluídos na propriedade **TargetTypes** da extensão.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-106">The update applies to all the resources that are included in the **targetTypes** property of the extension.</span></span> <span data-ttu-id="d3dd6-107">Esses recursos estão entre os [tipos de recurso de suporte](/graph/extensibility-overview#supported-resources).</span><span class="sxs-lookup"><span data-stu-id="d3dd6-107">These resources are among the [supporting resource types](/graph/extensibility-overview#supported-resources).</span></span>
 
-<span data-ttu-id="38d40-108">Somente o aplicativo que criou uma extensão de esquema (aplicativo proprietário) pode fazer atualizações aditivas para a extensão quando a extensão está no **indesenvolvimento** ou status **disponível** .</span><span class="sxs-lookup"><span data-stu-id="38d40-108">Only the app that created a schema extension (owner app) can make additive updates to the extension when the extension is in the **InDevelopment** or **Available** status.</span></span> <span data-ttu-id="38d40-109">Isso significa que o aplicativo não pode remover propriedades personalizadas ou tipos de recurso de destino da definição.</span><span class="sxs-lookup"><span data-stu-id="38d40-109">That means the app cannot remove custom properties or target resource types from the definition.</span></span> <span data-ttu-id="38d40-110">No entanto, o aplicativo pode alterar a descrição da extensão.</span><span class="sxs-lookup"><span data-stu-id="38d40-110">The app can, however, change the description of the extension.</span></span>
+<span data-ttu-id="d3dd6-108">Somente o aplicativo que criou uma extensão de esquema (aplicativo proprietário) pode fazer atualizações aditivas para a extensão quando a extensão está no **indesenvolvimento** ou status **disponível** .</span><span class="sxs-lookup"><span data-stu-id="d3dd6-108">Only the app that created a schema extension (owner app) can make additive updates to the extension when the extension is in the **InDevelopment** or **Available** status.</span></span> <span data-ttu-id="d3dd6-109">Isso significa que o aplicativo não pode remover propriedades personalizadas ou tipos de recurso de destino da definição.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-109">That means the app cannot remove custom properties or target resource types from the definition.</span></span> <span data-ttu-id="d3dd6-110">No entanto, o aplicativo pode alterar a descrição da extensão.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-110">The app can, however, change the description of the extension.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="38d40-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="38d40-111">Permissions</span></span>
-<span data-ttu-id="38d40-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="38d40-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d3dd6-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="d3dd6-111">Permissions</span></span>
+<span data-ttu-id="d3dd6-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d3dd6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="38d40-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="38d40-114">Permission type</span></span>      | <span data-ttu-id="38d40-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="38d40-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d3dd6-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d3dd6-114">Permission type</span></span>      | <span data-ttu-id="d3dd6-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d3dd6-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="38d40-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="38d40-116">Delegated (work or school account)</span></span> | <span data-ttu-id="38d40-117">Application. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="38d40-117">Application.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="38d40-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="38d40-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="38d40-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="38d40-119">Not supported.</span></span>    |
-|<span data-ttu-id="38d40-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="38d40-120">Application</span></span> | <span data-ttu-id="38d40-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="38d40-121">Not supported.</span></span> |
+|<span data-ttu-id="d3dd6-116">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d3dd6-116">Delegated (work or school account)</span></span> | <span data-ttu-id="d3dd6-117">Application.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="d3dd6-117">Application.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="d3dd6-118">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d3dd6-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d3dd6-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-119">Not supported.</span></span>    |
+|<span data-ttu-id="d3dd6-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d3dd6-120">Application</span></span> | <span data-ttu-id="d3dd6-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-121">Not supported.</span></span> |
 
 > [!NOTE]
-> <span data-ttu-id="38d40-122">Adicionalmente para o fluxo delegado, o usuário conectado só pode atualizar schemaExtensions que possuem (onde a propriedade **Owner** do schemaExtension é o `appId` de um aplicativo que o usuário conectado possui).</span><span class="sxs-lookup"><span data-stu-id="38d40-122">Additionally for the delegated flow, the signed-in user can only update schemaExtensions they own (where the **owner** property of the schemaExtension is the `appId` of an application the signed-in user owns).</span></span>
+> <span data-ttu-id="d3dd6-122">Adicionalmente para o fluxo delegado, o usuário conectado só pode atualizar schemaExtensions que possuem (onde a propriedade **Owner** do schemaExtension é o `appId` de um aplicativo que o usuário conectado possui).</span><span class="sxs-lookup"><span data-stu-id="d3dd6-122">Additionally for the delegated flow, the signed-in user can only update schemaExtensions they own (where the **owner** property of the schemaExtension is the `appId` of an application the signed-in user owns).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="38d40-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="38d40-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d3dd6-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d3dd6-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /schemaExtensions/{id}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="38d40-124">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="38d40-124">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="d3dd6-124">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="d3dd6-124">Optional request headers</span></span>
 
-| <span data-ttu-id="38d40-125">Nome</span><span class="sxs-lookup"><span data-stu-id="38d40-125">Name</span></span>      |<span data-ttu-id="38d40-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="38d40-126">Description</span></span>|
+| <span data-ttu-id="d3dd6-125">Nome</span><span class="sxs-lookup"><span data-stu-id="d3dd6-125">Name</span></span>      |<span data-ttu-id="d3dd6-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="d3dd6-126">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="38d40-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="38d40-127">Authorization</span></span>  | <span data-ttu-id="38d40-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="38d40-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="38d40-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="38d40-130">Content-Type</span></span>   | <span data-ttu-id="38d40-131">application/json</span><span class="sxs-lookup"><span data-stu-id="38d40-131">application/json</span></span> |
+| <span data-ttu-id="d3dd6-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="d3dd6-127">Authorization</span></span>  | <span data-ttu-id="d3dd6-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d3dd6-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d3dd6-130">Content-Type</span></span>   | <span data-ttu-id="d3dd6-131">application/json</span><span class="sxs-lookup"><span data-stu-id="d3dd6-131">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="38d40-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="38d40-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d3dd6-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d3dd6-132">Request body</span></span>
 
-<span data-ttu-id="38d40-p105">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="38d40-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="d3dd6-p105">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="38d40-136">Propriedade</span><span class="sxs-lookup"><span data-stu-id="38d40-136">Property</span></span>   | <span data-ttu-id="38d40-137">Tipo</span><span class="sxs-lookup"><span data-stu-id="38d40-137">Type</span></span> |<span data-ttu-id="38d40-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="38d40-138">Description</span></span>|
+| <span data-ttu-id="d3dd6-136">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d3dd6-136">Property</span></span>   | <span data-ttu-id="d3dd6-137">Tipo</span><span class="sxs-lookup"><span data-stu-id="d3dd6-137">Type</span></span> |<span data-ttu-id="d3dd6-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="d3dd6-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="38d40-139">description</span><span class="sxs-lookup"><span data-stu-id="38d40-139">description</span></span>|<span data-ttu-id="38d40-140">String</span><span class="sxs-lookup"><span data-stu-id="38d40-140">String</span></span>|<span data-ttu-id="38d40-141">Descrição da extensão de esquema.</span><span class="sxs-lookup"><span data-stu-id="38d40-141">Description for the schema extension.</span></span>|
-|<span data-ttu-id="38d40-142">properties</span><span class="sxs-lookup"><span data-stu-id="38d40-142">properties</span></span>|<span data-ttu-id="38d40-143">Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)</span><span class="sxs-lookup"><span data-stu-id="38d40-143">[extensionSchemaProperty](../resources/extensionschemaproperty.md) collection</span></span>|<span data-ttu-id="38d40-144">A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema.</span><span class="sxs-lookup"><span data-stu-id="38d40-144">The collection of property names and types that make up the schema extension definition.</span></span> <span data-ttu-id="38d40-145">Somente as alterações aditivas são permitidas.</span><span class="sxs-lookup"><span data-stu-id="38d40-145">Only additive changes are permitted.</span></span> |
-|<span data-ttu-id="38d40-146">status</span><span class="sxs-lookup"><span data-stu-id="38d40-146">status</span></span>|<span data-ttu-id="38d40-147">String</span><span class="sxs-lookup"><span data-stu-id="38d40-147">String</span></span>|<span data-ttu-id="38d40-148">O estado do ciclo de vida da extensão do esquema.</span><span class="sxs-lookup"><span data-stu-id="38d40-148">The lifecycle state of the schema extension.</span></span> <span data-ttu-id="38d40-149">O estado inicial na criação é o **indevelopment**.</span><span class="sxs-lookup"><span data-stu-id="38d40-149">The initial state upon creation is **InDevelopment**.</span></span> <span data-ttu-id="38d40-150">Os possíveis transições de Estados estão de **indevelopment** para **Available** e **disponíveis** para **preteridos**.</span><span class="sxs-lookup"><span data-stu-id="38d40-150">Possible states transitions are from **InDevelopment** to **Available** and **Available** to **Deprecated**.</span></span>|
-|<span data-ttu-id="38d40-151">targetTypes</span><span class="sxs-lookup"><span data-stu-id="38d40-151">targetTypes</span></span>|<span data-ttu-id="38d40-152">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="38d40-152">String collection</span></span>|<span data-ttu-id="38d40-153">Conjunto de tipos do Microsoft Graph (que podem suportar extensões) à qual a extensão de esquema pode ser aplicada.</span><span class="sxs-lookup"><span data-stu-id="38d40-153">Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.</span></span>  <span data-ttu-id="38d40-154">Somente as alterações aditivas são permitidas.</span><span class="sxs-lookup"><span data-stu-id="38d40-154">Only additive changes are permitted.</span></span>|
+|<span data-ttu-id="d3dd6-139">description</span><span class="sxs-lookup"><span data-stu-id="d3dd6-139">description</span></span>|<span data-ttu-id="d3dd6-140">String</span><span class="sxs-lookup"><span data-stu-id="d3dd6-140">String</span></span>|<span data-ttu-id="d3dd6-141">Descrição da extensão de esquema.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-141">Description for the schema extension.</span></span>|
+|<span data-ttu-id="d3dd6-142">properties</span><span class="sxs-lookup"><span data-stu-id="d3dd6-142">properties</span></span>|<span data-ttu-id="d3dd6-143">Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)</span><span class="sxs-lookup"><span data-stu-id="d3dd6-143">[extensionSchemaProperty](../resources/extensionschemaproperty.md) collection</span></span>|<span data-ttu-id="d3dd6-144">A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-144">The collection of property names and types that make up the schema extension definition.</span></span> <span data-ttu-id="d3dd6-145">Somente as alterações aditivas são permitidas.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-145">Only additive changes are permitted.</span></span> |
+|<span data-ttu-id="d3dd6-146">status</span><span class="sxs-lookup"><span data-stu-id="d3dd6-146">status</span></span>|<span data-ttu-id="d3dd6-147">String</span><span class="sxs-lookup"><span data-stu-id="d3dd6-147">String</span></span>|<span data-ttu-id="d3dd6-148">O estado do ciclo de vida da extensão do esquema.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-148">The lifecycle state of the schema extension.</span></span> <span data-ttu-id="d3dd6-149">O estado inicial na criação é o **indevelopment**.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-149">The initial state upon creation is **InDevelopment**.</span></span> <span data-ttu-id="d3dd6-150">Os possíveis transições de Estados estão de **indevelopment** para **Available** e **disponíveis** para **preteridos**.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-150">Possible states transitions are from **InDevelopment** to **Available** and **Available** to **Deprecated**.</span></span>|
+|<span data-ttu-id="d3dd6-151">targetTypes</span><span class="sxs-lookup"><span data-stu-id="d3dd6-151">targetTypes</span></span>|<span data-ttu-id="d3dd6-152">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="d3dd6-152">String collection</span></span>|<span data-ttu-id="d3dd6-153">Conjunto de tipos do Microsoft Graph (que podem suportar extensões) à qual a extensão de esquema pode ser aplicada.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-153">Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.</span></span>  <span data-ttu-id="d3dd6-154">Somente as alterações aditivas são permitidas.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-154">Only additive changes are permitted.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="38d40-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="38d40-155">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d3dd6-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="d3dd6-155">Response</span></span>
 
-<span data-ttu-id="38d40-156">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="38d40-156">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="d3dd6-156">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-156">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="38d40-157">Exemplo</span><span class="sxs-lookup"><span data-stu-id="38d40-157">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d3dd6-157">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d3dd6-157">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="38d40-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="38d40-158">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="d3dd6-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d3dd6-158">Request</span></span>
 
-<span data-ttu-id="38d40-159">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="38d40-159">Here is an example of the request.</span></span>
+<span data-ttu-id="d3dd6-159">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d3dd6-159">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="38d40-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="38d40-160">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d3dd6-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="d3dd6-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_schemaextension"
@@ -93,26 +93,26 @@ Content-length: 201
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="38d40-161">C#</span><span class="sxs-lookup"><span data-stu-id="38d40-161">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d3dd6-161">C#</span><span class="sxs-lookup"><span data-stu-id="d3dd6-161">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-schemaextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="38d40-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="38d40-162">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d3dd6-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d3dd6-162">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-schemaextension-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="38d40-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="38d40-163">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d3dd6-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d3dd6-163">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-schemaextension-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="38d40-164">Java</span><span class="sxs-lookup"><span data-stu-id="38d40-164">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="d3dd6-164">Java</span><span class="sxs-lookup"><span data-stu-id="d3dd6-164">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-schemaextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="38d40-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="38d40-165">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="d3dd6-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="d3dd6-165">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -123,10 +123,10 @@ Content-length: 201
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a><span data-ttu-id="38d40-166">Confira também</span><span class="sxs-lookup"><span data-stu-id="38d40-166">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d3dd6-166">Confira também</span><span class="sxs-lookup"><span data-stu-id="d3dd6-166">See also</span></span>
 
-- [<span data-ttu-id="38d40-167">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="38d40-167">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="38d40-168">Adicionar dados personalizados a grupos usando as extensões do esquema</span><span class="sxs-lookup"><span data-stu-id="38d40-168">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="d3dd6-167">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="d3dd6-167">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="d3dd6-168">Adicionar dados personalizados a grupos usando as extensões do esquema</span><span class="sxs-lookup"><span data-stu-id="d3dd6-168">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -139,3 +139,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
