@@ -3,14 +3,14 @@ title: Listar roleAssignments
 description: Listar propriedades e relações de objeto de roleAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39b7c379c7c5c764732e2c5d24f62f0b236bded9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fd12b7aa8dd1c59766dba7557c4c1c6e4d29b0bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420925"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056013"
 ---
 # <a name="list-roleassignments"></a>Listar roleAssignments
 
@@ -85,6 +85,9 @@ Content-Length: 403
   ]
 }
 ```
+
+
+
 
 
 

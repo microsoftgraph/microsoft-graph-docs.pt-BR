@@ -3,14 +3,14 @@ title: Atualizar deviceLogCollectionResponse
 description: Atualiza as propriedades de um objeto deviceLogCollectionResponse.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b24c904783e0ee3c06dc0bccd9670ab73ab432fd
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: de1cc5fefa8961638ad4aebe1517c1918299553f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124161"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056132"
 ---
 # <a name="update-devicelogcollectionresponse"></a>Atualizar deviceLogCollectionResponse
 
@@ -110,6 +110,9 @@ Content-Length: 528
   "size": 1.3333333333333333
 }
 ```
+
+
+
 
 
 

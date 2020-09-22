@@ -3,14 +3,14 @@ title: ação getGlobalScriptHighestAvailableVersion
 description: Atualizar o script de integridade do dispositivo proprietário
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f11e10317ada36bfbcd438f45bf5e6a566da472
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 078a48a1152a788ef1f7e361eb66e99666e2a2bd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380751"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056167"
 ---
 # <a name="getglobalscripthighestavailableversion-action"></a>ação getGlobalScriptHighestAvailableVersion
 
@@ -71,6 +71,9 @@ Content-Length: 68
   "value": "Get Global Script Highest Available Version value"
 }
 ```
+
+
+
 
 
 

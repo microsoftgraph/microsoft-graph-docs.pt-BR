@@ -3,14 +3,14 @@ title: Excluir deviceManagementScriptAssignment
 description: Exclui deviceManagementScriptAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a78f94414c5234e14dfab29801f25c7ae55d2049
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2a2d6acbf9ab656a0c9e1c1143ef765d97fab25e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426182"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056097"
 ---
 # <a name="delete-devicemanagementscriptassignment"></a>Excluir deviceManagementScriptAssignment
 
@@ -66,6 +66,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 
