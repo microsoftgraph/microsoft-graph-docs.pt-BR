@@ -5,58 +5,58 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2a24db94a3b2344679e63a832000122ee83393a9
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: f48fb24b5f7c4889faf3ebba0b5147a8de14b877
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181389"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052387"
 ---
-# <a name="activate-directoryrole"></a><span data-ttu-id="ecad9-103">Ativar directoryRole</span><span class="sxs-lookup"><span data-stu-id="ecad9-103">Activate directoryRole</span></span>
+# <a name="activate-directoryrole"></a><span data-ttu-id="c8a8e-103">Ativar directoryRole</span><span class="sxs-lookup"><span data-stu-id="c8a8e-103">Activate directoryRole</span></span>
 
-<span data-ttu-id="ecad9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ecad9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c8a8e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c8a8e-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="ecad9-p101">Ative uma função de diretório. Para ler uma função de diretório ou atualizar seus membros, primeiro ela deve ser ativada no locatário. Somente Administradores de Empresa e as funções de Usuários de diretório implícitas são ativadas por padrão. Para acessar e atribuir membros a outra função de diretório, primeiro você deve ativá-lo com seu modelo de função de diretório correspondente ([directoryRoleTemplate](../resources/directoryroletemplate.md)).</span><span class="sxs-lookup"><span data-stu-id="ecad9-p101">Activate a directory role. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators and the implicit Users directory roles are activated by default. To access and assign members to another directory role, you must first activate it with its corresponding directory role template ([directoryRoleTemplate](../resources/directoryroletemplate.md)).</span></span>
+<span data-ttu-id="c8a8e-p101">Ative uma função de diretório. Para ler uma função de diretório ou atualizar seus membros, primeiro ela deve ser ativada no locatário. Somente Administradores de Empresa e as funções de Usuários de diretório implícitas são ativadas por padrão. Para acessar e atribuir membros a outra função de diretório, primeiro você deve ativá-lo com seu modelo de função de diretório correspondente ([directoryRoleTemplate](../resources/directoryroletemplate.md)).</span><span class="sxs-lookup"><span data-stu-id="c8a8e-p101">Activate a directory role. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators and the implicit Users directory roles are activated by default. To access and assign members to another directory role, you must first activate it with its corresponding directory role template ([directoryRoleTemplate](../resources/directoryroletemplate.md)).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ecad9-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="ecad9-109">Permissions</span></span>
-<span data-ttu-id="ecad9-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ecad9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c8a8e-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="c8a8e-109">Permissions</span></span>
+<span data-ttu-id="c8a8e-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c8a8e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ecad9-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ecad9-112">Permission type</span></span>      | <span data-ttu-id="ecad9-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ecad9-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c8a8e-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c8a8e-112">Permission type</span></span>      | <span data-ttu-id="c8a8e-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c8a8e-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ecad9-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ecad9-114">Delegated (work or school account)</span></span> | <span data-ttu-id="ecad9-115">RoleManagement. ReadWrite. Directory, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="ecad9-115">RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="ecad9-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ecad9-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ecad9-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ecad9-117">Not supported.</span></span>    |
-|<span data-ttu-id="ecad9-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ecad9-118">Application</span></span> | <span data-ttu-id="ecad9-119">RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="ecad9-119">RoleManagement.ReadWrite.Directory</span></span> |
+|<span data-ttu-id="c8a8e-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c8a8e-114">Delegated (work or school account)</span></span> | <span data-ttu-id="c8a8e-115">RoleManagement. ReadWrite. Directory, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="c8a8e-115">RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="c8a8e-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c8a8e-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c8a8e-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c8a8e-117">Not supported.</span></span>    |
+|<span data-ttu-id="c8a8e-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c8a8e-118">Application</span></span> | <span data-ttu-id="c8a8e-119">RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="c8a8e-119">RoleManagement.ReadWrite.Directory</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ecad9-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ecad9-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c8a8e-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c8a8e-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryRoles
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="ecad9-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ecad9-121">Request headers</span></span>
-| <span data-ttu-id="ecad9-122">Nome</span><span class="sxs-lookup"><span data-stu-id="ecad9-122">Name</span></span>       | <span data-ttu-id="ecad9-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="ecad9-123">Type</span></span> | <span data-ttu-id="ecad9-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="ecad9-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c8a8e-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c8a8e-121">Request headers</span></span>
+| <span data-ttu-id="c8a8e-122">Nome</span><span class="sxs-lookup"><span data-stu-id="c8a8e-122">Name</span></span>       | <span data-ttu-id="c8a8e-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="c8a8e-123">Type</span></span> | <span data-ttu-id="c8a8e-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="c8a8e-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="ecad9-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="ecad9-125">Authorization</span></span>  | <span data-ttu-id="ecad9-126">string</span><span class="sxs-lookup"><span data-stu-id="ecad9-126">string</span></span>  | <span data-ttu-id="ecad9-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ecad9-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ecad9-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ecad9-129">Content-Type</span></span>  | <span data-ttu-id="ecad9-130">string</span><span class="sxs-lookup"><span data-stu-id="ecad9-130">string</span></span>  | <span data-ttu-id="ecad9-131">application/json</span><span class="sxs-lookup"><span data-stu-id="ecad9-131">application/json</span></span>  |
+| <span data-ttu-id="c8a8e-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="c8a8e-125">Authorization</span></span>  | <span data-ttu-id="c8a8e-126">string</span><span class="sxs-lookup"><span data-stu-id="c8a8e-126">string</span></span>  | <span data-ttu-id="c8a8e-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c8a8e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c8a8e-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c8a8e-129">Content-Type</span></span>  | <span data-ttu-id="c8a8e-130">string</span><span class="sxs-lookup"><span data-stu-id="c8a8e-130">string</span></span>  | <span data-ttu-id="c8a8e-131">application/json</span><span class="sxs-lookup"><span data-stu-id="c8a8e-131">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="ecad9-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ecad9-132">Request body</span></span>
-<span data-ttu-id="ecad9-133">No corpo da solicitação, forneça uma representação JSON do objeto [directoryRole](../resources/directoryrole.md).</span><span class="sxs-lookup"><span data-stu-id="ecad9-133">In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c8a8e-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c8a8e-132">Request body</span></span>
+<span data-ttu-id="c8a8e-133">No corpo da solicitação, forneça uma representação JSON do objeto [directoryRole](../resources/directoryrole.md).</span><span class="sxs-lookup"><span data-stu-id="c8a8e-133">In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.</span></span>
 
-<span data-ttu-id="ecad9-134">A tabela a seguir mostra as propriedades que são necessárias ao ativar uma função de diretório.</span><span class="sxs-lookup"><span data-stu-id="ecad9-134">The following table shows the properties that are required when you activate a directory role.</span></span>
+<span data-ttu-id="c8a8e-134">A tabela a seguir mostra as propriedades que são necessárias ao ativar uma função de diretório.</span><span class="sxs-lookup"><span data-stu-id="c8a8e-134">The following table shows the properties that are required when you activate a directory role.</span></span>
 
-|<span data-ttu-id="ecad9-135">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="ecad9-135">Parameter</span></span> | <span data-ttu-id="ecad9-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="ecad9-136">Type</span></span> | <span data-ttu-id="ecad9-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="ecad9-137">Description</span></span>|
+|<span data-ttu-id="c8a8e-135">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="c8a8e-135">Parameter</span></span> | <span data-ttu-id="c8a8e-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="c8a8e-136">Type</span></span> | <span data-ttu-id="c8a8e-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="c8a8e-137">Description</span></span>|
 |:---------|:---------|:---------|
-|<span data-ttu-id="ecad9-138">roleTemplateId</span><span class="sxs-lookup"><span data-stu-id="ecad9-138">roleTemplateId</span></span> | <span data-ttu-id="ecad9-139">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ecad9-139">string</span></span> | <span data-ttu-id="ecad9-140">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ecad9-140">Required.</span></span> <span data-ttu-id="ecad9-141">A ID do [directoryRoleTemplate](../resources/directoryroletemplate.md) em que a função se baseia.</span><span class="sxs-lookup"><span data-stu-id="ecad9-141">The ID of the [directoryRoleTemplate](../resources/directoryroletemplate.md) that the role is based on.</span></span> <span data-ttu-id="ecad9-142">Esta é a única propriedade que pode ser especificada na solicitação.</span><span class="sxs-lookup"><span data-stu-id="ecad9-142">This is the only property that may be specified in the request.</span></span>|
+|<span data-ttu-id="c8a8e-138">roleTemplateId</span><span class="sxs-lookup"><span data-stu-id="c8a8e-138">roleTemplateId</span></span> | <span data-ttu-id="c8a8e-139">string</span><span class="sxs-lookup"><span data-stu-id="c8a8e-139">string</span></span> | <span data-ttu-id="c8a8e-140">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c8a8e-140">Required.</span></span> <span data-ttu-id="c8a8e-141">A ID do [directoryRoleTemplate](../resources/directoryroletemplate.md) em que a função se baseia.</span><span class="sxs-lookup"><span data-stu-id="c8a8e-141">The ID of the [directoryRoleTemplate](../resources/directoryroletemplate.md) that the role is based on.</span></span> <span data-ttu-id="c8a8e-142">Esta é a única propriedade que pode ser especificada na solicitação.</span><span class="sxs-lookup"><span data-stu-id="c8a8e-142">This is the only property that may be specified in the request.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ecad9-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="ecad9-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c8a8e-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="c8a8e-143">Response</span></span>
 
-<span data-ttu-id="ecad9-144">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [directoryRole](../resources/directoryrole.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ecad9-144">If successful, this method returns `201 Created` response code and [directoryRole](../resources/directoryrole.md) object in the response body.</span></span>
+<span data-ttu-id="c8a8e-144">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [directoryRole](../resources/directoryrole.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c8a8e-144">If successful, this method returns `201 Created` response code and [directoryRole](../resources/directoryrole.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ecad9-145">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ecad9-145">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ecad9-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ecad9-146">Request</span></span>
+## <a name="example"></a><span data-ttu-id="c8a8e-145">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c8a8e-145">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c8a8e-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c8a8e-146">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="ecad9-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="ecad9-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c8a8e-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="c8a8e-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryrole_from_directoryroles"
@@ -69,27 +69,27 @@ Content-type: application/json
   "roleTemplateId": "roleTemplateId-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="ecad9-148">C#</span><span class="sxs-lookup"><span data-stu-id="ecad9-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c8a8e-148">C#</span><span class="sxs-lookup"><span data-stu-id="c8a8e-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryrole-from-directoryroles-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ecad9-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ecad9-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c8a8e-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c8a8e-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryrole-from-directoryroles-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ecad9-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ecad9-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c8a8e-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c8a8e-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directoryrole-from-directoryroles-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ecad9-151">Java</span><span class="sxs-lookup"><span data-stu-id="ecad9-151">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c8a8e-151">Java</span><span class="sxs-lookup"><span data-stu-id="c8a8e-151">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-directoryrole-from-directoryroles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="ecad9-152">No corpo da solicitação, forneça uma representação JSON do objeto [directoryRole](../resources/directoryrole.md).</span><span class="sxs-lookup"><span data-stu-id="ecad9-152">In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="ecad9-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="ecad9-153">Response</span></span>
-<span data-ttu-id="ecad9-p105">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ecad9-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="c8a8e-152">No corpo da solicitação, forneça uma representação JSON do objeto [directoryRole](../resources/directoryrole.md).</span><span class="sxs-lookup"><span data-stu-id="c8a8e-152">In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="c8a8e-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="c8a8e-153">Response</span></span>
+<span data-ttu-id="c8a8e-p105">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c8a8e-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -118,3 +118,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
