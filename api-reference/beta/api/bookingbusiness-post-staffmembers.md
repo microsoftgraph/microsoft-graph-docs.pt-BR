@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 192450cfa493e54fbcf6287d3f1928865da7f1a1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 19679d2f6a513017fe9d89a8922477641070da6e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376735"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987985"
 ---
 # <a name="create-bookingstaffmember"></a>Criar bookingStaffMember
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [bookingS
 
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna `201, Created` o código de resposta e o objeto [bookingStaffMember](../resources/bookingstaffmember.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `201, Created` código de resposta e o objeto [bookingStaffMember](../resources/bookingstaffmember.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -240,3 +240,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

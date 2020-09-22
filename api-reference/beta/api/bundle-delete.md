@@ -6,16 +6,16 @@ description: Excluir um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 24a7f6f9d45a44d37056439d4e7679561e67431f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 13cc2dcb3cda7dac8d6f9b7acfae153d84efabfa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441036"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987768"
 ---
 # <a name="delete-bundle"></a>Excluir pacote
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -103,3 +103,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "Bundles/Delete"
 } -->
+
+

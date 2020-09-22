@@ -6,16 +6,16 @@ description: Adicionar item a um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c192014a00e3a2119691857c8350dc03d53e1980
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 910054e5077c8d69939a14c42db824dd862141d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441050"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987773"
 ---
 # <a name="add-item-to-a-bundle"></a>Adicionar item a um pacote
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ O corpo da solicitação inclui o identificador de um item que deve ser adiciona
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, a resposta `204 No Content`será.
+Se tiver êxito, a resposta será `204 No Content` .
 
 Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
 
@@ -105,3 +105,5 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation"
 } -->
+
+

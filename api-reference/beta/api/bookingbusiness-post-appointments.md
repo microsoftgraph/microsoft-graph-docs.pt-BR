@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5cc5eb648f581e7bb0dc88a413be44297df790c4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 832d21de141aafb8389709c3a2508cdfb99827a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43366594"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987999"
 ---
 # <a name="create-bookingappointment"></a>Criar bookingAppointment
 
@@ -44,7 +44,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [bookingA
 
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna `201, Created` o código de resposta e o objeto [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `201, Created` código de resposta e o objeto [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -308,3 +308,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

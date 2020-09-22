@@ -5,16 +5,16 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 970edd0479798fc07e505476b24796b890221396
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb7f68b832b55f177791647de7a973b588c9a4a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440889"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987476"
 ---
 # <a name="update-calendarpermission"></a>Atualizar calendarPermission
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Atualize as permissões atribuídas a um compartilhamento ou delegado existente, através do objeto [calendarPermission](../resources/calendarpermission.md) correspondente para um calendário.
 
@@ -63,13 +63,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [calendarPermission](../resources/calendarpermission.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [calendarPermission](../resources/calendarpermission.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 
-O exemplo a seguir altera o nível de permissão de Sharee, Adele, `write`para.
+O exemplo a seguir altera o nível de permissão de Sharee, Adele, para `write` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -145,3 +145,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6b3c47b9c1864b8ddb571040366df411a1ee11cd
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 007a8e5cb98d76f5bf36f14e7730f96b7ae86457
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895633"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987684"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -400,3 +400,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

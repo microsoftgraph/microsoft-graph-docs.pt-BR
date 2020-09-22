@@ -6,16 +6,16 @@ description: Listar os pacotes na unidade de um usuário
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 52d03febbb44448081c1a9f69066254e639d361b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dac031d7bd14cf72932248341740989881529cb2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441043"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987740"
 ---
 # <a name="list-bundles"></a>Listar pacotes
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ GET /drive/bundles
 
 Esse método dá suporte a [Parâmetros de consulta OData][] para filtrar e dar forma à resposta.
 
-Você não pode usar `expand=children` o parâmetro de consulta ao enumerar os pacotes.
+Você não pode usar o `expand=children` parâmetro de consulta ao enumerar os pacotes.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -206,3 +206,5 @@ O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as
   "section": "documentation",
   "tocPath": "Bundles/List"
 } -->
+
+

@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: db11ab63008dc092206550a91b027878d3cf1547
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aea175602f363477103fba7b6fad785ce4f22c5f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440749"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987292"
 ---
 # <a name="call-subscribetotone"></a>Call: subscribeToTone
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -164,3 +164,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

@@ -6,16 +6,16 @@ description: Obter um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 191157efb35b50ecff358d7902a7a6c42a6fb7a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 810f7c87effc14d2d62ad2039354754331da3ceb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441029"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987782"
 ---
 # <a name="get-bundle"></a>Obter pacote
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -185,3 +185,5 @@ O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as
   "section": "documentation",
   "tocPath": "Bundles/Get Bundle Metadata"
 } -->
+
+

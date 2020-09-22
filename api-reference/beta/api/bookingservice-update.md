@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 9c64dc057963bdaed34ecab70792fdd5df526406
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15ed5e3a922fe4e630287c6193ff1daa8822fb30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376353"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987852"
 ---
 # <a name="update-bookingservice"></a>Atualizar bookingservice
 
@@ -23,7 +23,7 @@ Atualiza as propriedades de um objeto [bookingService](../resources/bookingservi
 Veja a seguir alguns exemplos que você pode personalizar para um serviço:
 - Price
 - Tamanho típico de um compromisso
-- Lembretes
+- Reminders
 - Qualquer buffer de tempo a ser configurado antes ou termine após o serviço
 - Parâmetros de [política de agendamento](../resources/bookingschedulingpolicy.md) , como o aviso mínimo, para livro ou cancelamento, e se os clientes podem selecionar membros específicos da equipe para um compromisso.
 
@@ -57,15 +57,15 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |defaultpricetype|string|O modo padrão pelo qual o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |defaultlembrers|coleção [bookingReminder](../resources/bookingreminder.md)|O conjunto padrão de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente ao se ler este **bookingService** por sua ID.|
 |description|String|Uma descrição de texto para o serviço.|
-|displayName|Cadeia de caracteres|Um nome de serviço.|
+|displayName|String|Um nome de serviço.|
 |emailAddress|String|Um endereço de email|
 |id|String| Somente leitura.|
 |isHiddenFromCustomers|Boolean|True significa que este serviço não está disponível para os clientes para reserva.|
-|notes|Cadeia de caracteres|Informações adicionais sobre este serviço.|
+|notes|String|Informações adicionais sobre este serviço.|
 |Buffer|Duração|O tempo para o buffer após o término de um compromisso desse serviço e antes do próximo compromisso do cliente pode ser registrado.|
 |antes do buffer|Duração|O tempo para o buffer antes que um compromisso para este serviço possa ser iniciado.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|O conjunto de políticas que determinam como os compromissos desse tipo de serviço devem ser criados e gerenciados.|
-|staffMemberIds|Coleção String|Representa os [membros da equipe](../resources/bookingstaffmember.md) que fornecem esse serviço. |
+|staffMemberIds|Coleção de cadeias de caracteres|Representa os [membros da equipe](../resources/bookingstaffmember.md) que fornecem esse serviço. |
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.
@@ -124,3 +124,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

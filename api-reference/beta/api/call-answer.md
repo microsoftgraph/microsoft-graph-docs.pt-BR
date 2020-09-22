@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ccb98b3e194026c8f3fc7760a51567d2198306e3
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 9451c5923b8225162c2610498baab5ad571bcab5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183880"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987471"
 ---
 # <a name="call-answer"></a>Call: resposta
 
@@ -53,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro        | Tipo                                     |Descrição                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |Permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https` .    |
-|acceptedModalities|Conjunto de cadeias de caracteres                         |A lista de aceitar modalidades. O valor possível são: `audio` , `video` , `videoBasedScreenSharing` . Obrigatório para responder a uma chamada. |
+|acceptedModalities|Coleção de cadeias de caracteres                         |A lista de aceitar modalidades. O valor possível são: `audio` , `video` , `videoBasedScreenSharing` . Obrigatório para responder a uma chamada. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) ou [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |A configuração de mídia. Precisam                                                                                                            |
 
 ## <a name="response"></a>Resposta
@@ -187,7 +187,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitar
+##### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "ignored",
@@ -570,3 +570,5 @@ Veja a seguir um exemplo da notificação de chamada de entrada que um bot receb
   ]
 }
 -->
+
+

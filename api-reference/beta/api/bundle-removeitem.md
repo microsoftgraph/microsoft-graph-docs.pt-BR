@@ -6,16 +6,16 @@ description: Remover item de um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 508dd19edcd3c1ae231c54cdb195d86661bb4259
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc6e3a630fb8cc8efda269b898adce3a9111c2ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441022"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987712"
 ---
 # <a name="remove-item-from-bundle"></a>Remover item do pacote
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação com esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, a resposta `204 No Content`será.
+Se tiver êxito, a resposta será `204 No Content` .
 
 Leia o tópico [respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.
 
@@ -97,3 +97,5 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation"
 } -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: b820d65a50b2a07bd1c3e95936bc6ee304f20d96
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: be5b4fc09bccded8b7f1e9739b7e1c080b5c73d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376601"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987971"
 ---
 # <a name="update-bookingbusiness"></a>Atualizar bookingbusiness
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |businesstype|String|O tipo de negócio.|
 |defaultCurrencyIso|String|O código da moeda na qual a empresa opera em reservas da Microsoft.|
 |displayName|String|Um nome para a empresa que faz interface com clientes.|
-|email|String|O endereço de email da empresa.|
+|email|Cadeia de caracteres|O endereço de email da empresa.|
 |phone|Cadeia de caracteres|O número de telefone da empresa.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Especifica como as reservas podem ser criadas para essa empresa.|
 |webSiteUrl|String|A URL do site da empresa.|
@@ -116,3 +116,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

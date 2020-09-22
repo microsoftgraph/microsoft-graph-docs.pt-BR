@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f64ddaa66d20b2caf64e0f7b59d854afd7c246a1
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: d3ebe0025bff5d6a3db1b705b1fc9f2c47962e57
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311260"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987432"
 ---
 # <a name="get-call"></a>Obter chamada
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | Sem suporte.                         |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                         |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte.                         |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
 | Aplicativo                            | Nenhum.                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -289,3 +289,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

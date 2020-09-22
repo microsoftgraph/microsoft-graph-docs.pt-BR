@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7be036e05bd772d01a9235427daa26b8044ba17e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c4fc0e6b104e1888199f8323b787333b57b75d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440742"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987285"
 ---
 # <a name="call-transfer"></a>Call: transferência
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -216,7 +216,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>Notificação-falha na transferência
 
-> **Observação:** Quando uma transferência de chamada falha, o estado de chamada `established`será.
+> **Observação:** Quando uma transferência de chamada falha, o estado de chamada será `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -388,7 +388,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>Notificação-falha na transferência
 
-> **Observação:** Quando uma transferência de chamada falha, o estado de chamada `established`será.
+> **Observação:** Quando uma transferência de chamada falha, o estado de chamada será `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -436,3 +436,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

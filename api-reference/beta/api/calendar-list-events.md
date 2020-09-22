@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 121e16524fb3edd54fe8cb1562c7fa38cd208fa9
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: e10a1c859b024b258269d3fa6e18f292fb46690c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895640"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987651"
 ---
 # <a name="list-events"></a>Listar eventos
 
@@ -135,3 +135,5 @@ Content-length: 354
   ]
 }
 -->
+
+

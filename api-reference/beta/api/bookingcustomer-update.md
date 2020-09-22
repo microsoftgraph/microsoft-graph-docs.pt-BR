@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: fe570f63a9b1796d169cd2eda0e950d72395ceea
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 98450dfbbcdad378cfb700fdb6d7c443c88696b6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376438"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987880"
 ---
 # <a name="update-bookingcustomer"></a>Atualizar bookingcustomer
 
@@ -112,3 +112,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

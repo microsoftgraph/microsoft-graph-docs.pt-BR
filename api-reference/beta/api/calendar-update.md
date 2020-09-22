@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e68e33ba57b784af10e1b0b22e271ca0da1bbaf3
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 461c4729708c1d338d41f04a1f35419461f938f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895626"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987607"
 ---
 # <a name="update-calendar"></a>Atualizar calendário
 
@@ -62,7 +62,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |color|String|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |isDefaultCalendar|Booliano|True se esse calendário for o calendário padrão do usuário, caso contrário, será false.|
-|nome|Cadeia de caracteres|O nome do calendário.|
+|nome|String|O nome do calendário.|
 
 ## <a name="response"></a>Resposta
 
@@ -149,3 +149,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

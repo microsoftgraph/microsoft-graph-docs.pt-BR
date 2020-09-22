@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5c119fd16744ac141c752bb6b975f6d6f4c9be1d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: a2509d07e55332747f50659c93fb0ac49928565f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681598"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987327"
 ---
 # <a name="call-playprompt"></a>Call: playPrompt
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Aplicativo                            | Nenhum                                        |
+| Aplicativo                            | Nenhum.                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +54,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |prompts|Coleção [MediaPrompt](../resources/mediaprompt.md)| Os prompts a serem reproduzidos. O tamanho máximo de coleção mediaPrompt compatível é 20.|
-|ciclo|Booliano| O valor do loop. True indica o loop infinitamente. O valor padrão é falso. |
+|ciclo|Boolean| O valor do loop. True indica o loop infinitamente. O valor padrão é falso. |
 |clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. Pode ter um máximo de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
@@ -176,3 +176,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

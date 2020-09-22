@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 949afc82423bc3c36df90c009603e98c0a23da59
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9c1195c0f2c7d76a163ad9f3194ea02e96c5982f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440875"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987446"
 ---
 # <a name="call-changescreensharingrole"></a>Call: changeScreenSharingRole
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |role|String|Os valores possíveis são: ' Visualizador ', ' participante '|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `202 Accepted` um código de resposta e todos os participantes receberão uma atualização de lista.
+Se tiver êxito, este método retornará um `202 Accepted` código de resposta e todos os participantes receberão uma atualização de lista.
 
 ## <a name="example"></a>Exemplo
 
@@ -102,7 +102,7 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 202 Accepted
 ```
 ##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>Lista de notificação atualizada com o participante enviando vídeo de compartilhamento de tela
-Observe a `direction: sendOnly` Propriedade no fluxo de mídia.
+Observe a `direction: sendOnly` propriedade no fluxo de mídia.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -165,3 +165,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

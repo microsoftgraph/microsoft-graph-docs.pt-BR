@@ -5,16 +5,16 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8481cecf256d9cd85f9c444f0550ea7c43d37d0b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: baac844f2f0ae8bb7bee1c671f88bb389dabd2d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440896"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987467"
 ---
 # <a name="get-calendarpermission"></a>Obter calendarPermission
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Obter o objeto Permissions especificado de um usuário ou grupo calendário que foi compartilhado.
 
@@ -49,7 +49,7 @@ GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -63,7 +63,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [calendarPermission](../resources/calendarpermission.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [calendarPermission](../resources/calendarpermission.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -138,3 +138,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
