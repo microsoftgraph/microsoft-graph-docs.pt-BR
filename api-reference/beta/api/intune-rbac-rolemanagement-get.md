@@ -3,14 +3,14 @@ title: Obter roleManagement
 description: Leia as propriedades e as relações do objeto roleManagement.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a59ca1b3f8934670b8cb060257f37cafae533eea
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8ade0ce8a0803a34a47172abde0f90fb0f76c40a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472345"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072071"
 ---
 # <a name="get-rolemanagement"></a>Obter roleManagement
 
@@ -77,6 +77,9 @@ Content-Length: 128
   }
 }
 ```
+
+
+
 
 
 
