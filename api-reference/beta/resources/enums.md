@@ -5,1318 +5,1355 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: b8559d855be3056a5f73de1eaa0f2da571bd61ab
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 04d6b7a92a7e2ee2acf8ad539c055286326310af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319565"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071252"
 ---
-# <a name="enum-values"></a><span data-ttu-id="79c22-103">Valores de enumeração</span><span class="sxs-lookup"><span data-stu-id="79c22-103">Enum values</span></span>
+# <a name="enum-values"></a><span data-ttu-id="89c11-103">Valores de enumeração</span><span class="sxs-lookup"><span data-stu-id="89c11-103">Enum values</span></span>
 
-<span data-ttu-id="79c22-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="79c22-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="89c11-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="89c11-104">Namespace: microsoft.graph</span></span>
 
-### <a name="allowedaudiences-values"></a><span data-ttu-id="79c22-105">valores de allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="79c22-105">allowedAudiences values</span></span>
+### <a name="volumetype-values"></a><span data-ttu-id="89c11-105">valores de volumetype</span><span class="sxs-lookup"><span data-stu-id="89c11-105">volumeType values</span></span> 
 
-|<span data-ttu-id="79c22-106">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-106">Member</span></span>|
-|:---|
-|<span data-ttu-id="79c22-107">me</span><span class="sxs-lookup"><span data-stu-id="79c22-107">me</span></span>|
-|<span data-ttu-id="79c22-108">produtos</span><span class="sxs-lookup"><span data-stu-id="79c22-108">family</span></span>|
-|<span data-ttu-id="79c22-109">contacts</span><span class="sxs-lookup"><span data-stu-id="79c22-109">contacts</span></span>|
-|<span data-ttu-id="79c22-110">groupMembers</span><span class="sxs-lookup"><span data-stu-id="79c22-110">groupMembers</span></span>|
-|<span data-ttu-id="79c22-111">organization</span><span class="sxs-lookup"><span data-stu-id="79c22-111">organization</span></span>|
-|<span data-ttu-id="79c22-112">federatedOrganizations</span><span class="sxs-lookup"><span data-stu-id="79c22-112">federatedOrganizations</span></span>|
-|<span data-ttu-id="79c22-113">têm</span><span class="sxs-lookup"><span data-stu-id="79c22-113">everyone</span></span>|
-|<span data-ttu-id="79c22-114">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-114">unknownFutureValue</span></span>|
-
-### <a name="emailtype-values"></a><span data-ttu-id="79c22-115">valores de emailtype</span><span class="sxs-lookup"><span data-stu-id="79c22-115">emailType values</span></span>
-
-|<span data-ttu-id="79c22-116">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-116">Member</span></span>|
-|:---|
-|<span data-ttu-id="79c22-117">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-117">unknown</span></span>|
-|<span data-ttu-id="79c22-118">trabalho</span><span class="sxs-lookup"><span data-stu-id="79c22-118">work</span></span>|
-|<span data-ttu-id="79c22-119">pessoal</span><span class="sxs-lookup"><span data-stu-id="79c22-119">personal</span></span>|
-|<span data-ttu-id="79c22-120">principal</span><span class="sxs-lookup"><span data-stu-id="79c22-120">main</span></span>|
-|<span data-ttu-id="79c22-121">outro</span><span class="sxs-lookup"><span data-stu-id="79c22-121">other</span></span>|
-
-### <a name="anniversarytype-values"></a><span data-ttu-id="79c22-122">valores de aniversáriotype</span><span class="sxs-lookup"><span data-stu-id="79c22-122">anniversaryType values</span></span> 
-
-|<span data-ttu-id="79c22-123">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-123">Member</span></span>|
-|:---|
-|<span data-ttu-id="79c22-124">birthday</span><span class="sxs-lookup"><span data-stu-id="79c22-124">birthday</span></span>|
-|<span data-ttu-id="79c22-125">panela</span><span class="sxs-lookup"><span data-stu-id="79c22-125">wedding</span></span>|
-|<span data-ttu-id="79c22-126">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-126">unknownFutureValue</span></span>|
-
-### <a name="skillproficiencylevel-values"></a><span data-ttu-id="79c22-127">valores de skillProficiencyLevel</span><span class="sxs-lookup"><span data-stu-id="79c22-127">skillProficiencyLevel values</span></span> 
-
-|<span data-ttu-id="79c22-128">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-128">Member</span></span>|
-|:---|
-|<span data-ttu-id="79c22-129">ensino</span><span class="sxs-lookup"><span data-stu-id="79c22-129">elementary</span></span>|
-|<span data-ttu-id="79c22-130">limitedWorking</span><span class="sxs-lookup"><span data-stu-id="79c22-130">limitedWorking</span></span>|
-|<span data-ttu-id="79c22-131">generalProfessional</span><span class="sxs-lookup"><span data-stu-id="79c22-131">generalProfessional</span></span>|
-|<span data-ttu-id="79c22-132">advancedProfessional</span><span class="sxs-lookup"><span data-stu-id="79c22-132">advancedProfessional</span></span>|
-|<span data-ttu-id="79c22-133">possu</span><span class="sxs-lookup"><span data-stu-id="79c22-133">expert</span></span>|
-|<span data-ttu-id="79c22-134">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-134">unknownFutureValue</span></span>|
-
-### <a name="languageproficiencylevel-values"></a><span data-ttu-id="79c22-135">valores de languageProficiencyLevel</span><span class="sxs-lookup"><span data-stu-id="79c22-135">languageProficiencyLevel values</span></span> 
-
-|<span data-ttu-id="79c22-136">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-136">Member</span></span>|
-|:---|
-|<span data-ttu-id="79c22-137">ensino</span><span class="sxs-lookup"><span data-stu-id="79c22-137">elementary</span></span>|
-|<span data-ttu-id="79c22-138">coloquial</span><span class="sxs-lookup"><span data-stu-id="79c22-138">conversational</span></span>|
-|<span data-ttu-id="79c22-139">limitedWorking</span><span class="sxs-lookup"><span data-stu-id="79c22-139">limitedWorking</span></span>|
-|<span data-ttu-id="79c22-140">professionalWorking</span><span class="sxs-lookup"><span data-stu-id="79c22-140">professionalWorking</span></span>|
-|<span data-ttu-id="79c22-141">fullProfessional</span><span class="sxs-lookup"><span data-stu-id="79c22-141">fullProfessional</span></span>|
-|<span data-ttu-id="79c22-142">nativeOrBilingual</span><span class="sxs-lookup"><span data-stu-id="79c22-142">nativeOrBilingual</span></span>|
-|<span data-ttu-id="79c22-143">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-143">unknownFutureValue</span></span>|
-
-### <a name="personrelationship-values"></a><span data-ttu-id="79c22-144">valores de personRelationship</span><span class="sxs-lookup"><span data-stu-id="79c22-144">personRelationship values</span></span> 
-
-|<span data-ttu-id="79c22-145">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-145">Member</span></span>|
-|:---|
-|<span data-ttu-id="79c22-146">manager</span><span class="sxs-lookup"><span data-stu-id="79c22-146">manager</span></span>|
-|<span data-ttu-id="79c22-147">colega</span><span class="sxs-lookup"><span data-stu-id="79c22-147">colleague</span></span>|
-|<span data-ttu-id="79c22-148">directReport</span><span class="sxs-lookup"><span data-stu-id="79c22-148">directReport</span></span>|
-|<span data-ttu-id="79c22-149">dotLineReport</span><span class="sxs-lookup"><span data-stu-id="79c22-149">dotLineReport</span></span>|
-|<span data-ttu-id="79c22-150">assistência</span><span class="sxs-lookup"><span data-stu-id="79c22-150">assistant</span></span>|
-|<span data-ttu-id="79c22-151">dotLineManager</span><span class="sxs-lookup"><span data-stu-id="79c22-151">dotLineManager</span></span>|
-|<span data-ttu-id="79c22-152">alternateContact</span><span class="sxs-lookup"><span data-stu-id="79c22-152">alternateContact</span></span>|
-|<span data-ttu-id="79c22-153">público</span><span class="sxs-lookup"><span data-stu-id="79c22-153">friend</span></span>|
-|<span data-ttu-id="79c22-154">marido</span><span class="sxs-lookup"><span data-stu-id="79c22-154">spouse</span></span>|
-|<span data-ttu-id="79c22-155">An</span><span class="sxs-lookup"><span data-stu-id="79c22-155">sibling</span></span>|
-|<span data-ttu-id="79c22-156">pensão</span><span class="sxs-lookup"><span data-stu-id="79c22-156">child</span></span>|
-|<span data-ttu-id="79c22-157">primário</span><span class="sxs-lookup"><span data-stu-id="79c22-157">parent</span></span>|
-|<span data-ttu-id="79c22-158">patrocina</span><span class="sxs-lookup"><span data-stu-id="79c22-158">sponsor</span></span>|
-|<span data-ttu-id="79c22-159">emergencyContact</span><span class="sxs-lookup"><span data-stu-id="79c22-159">emergencyContact</span></span>|
-|<span data-ttu-id="79c22-160">outro</span><span class="sxs-lookup"><span data-stu-id="79c22-160">other</span></span>|
-|<span data-ttu-id="79c22-161">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-161">unknownFutureValue</span></span>|
-
-### <a name="attachmenttype-values"></a><span data-ttu-id="79c22-162">valores AttachmentType</span><span class="sxs-lookup"><span data-stu-id="79c22-162">attachmentType values</span></span>
-
-| <span data-ttu-id="79c22-163">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-163">Member</span></span>
+| <span data-ttu-id="89c11-106">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-106">Member</span></span>
 |:--------------
-| <span data-ttu-id="79c22-164">file</span><span class="sxs-lookup"><span data-stu-id="79c22-164">file</span></span>
-| <span data-ttu-id="79c22-165">item</span><span class="sxs-lookup"><span data-stu-id="79c22-165">item</span></span>
-| <span data-ttu-id="79c22-166">referência</span><span class="sxs-lookup"><span data-stu-id="79c22-166">reference</span></span>
+| <span data-ttu-id="89c11-107">operatingSystemVolume</span><span class="sxs-lookup"><span data-stu-id="89c11-107">operatingSystemVolume</span></span>
+| <span data-ttu-id="89c11-108">fixedDataVolume</span><span class="sxs-lookup"><span data-stu-id="89c11-108">fixedDataVolume</span></span>
+| <span data-ttu-id="89c11-109">removableDataVolume</span><span class="sxs-lookup"><span data-stu-id="89c11-109">removableDataVolume</span></span>
+| <span data-ttu-id="89c11-110">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-110">unknownFutureValue</span></span>
 
-### <a name="analyticsactivitytype-values"></a><span data-ttu-id="79c22-167">valores de analyticsActivityType</span><span class="sxs-lookup"><span data-stu-id="79c22-167">analyticsActivityType values</span></span>
+### <a name="allowedaudiences-values"></a><span data-ttu-id="89c11-111">valores de allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="89c11-111">allowedAudiences values</span></span>
 
-| <span data-ttu-id="79c22-168">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-168">Member</span></span>
+|<span data-ttu-id="89c11-112">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-112">Member</span></span>|
+|:---|
+|<span data-ttu-id="89c11-113">me</span><span class="sxs-lookup"><span data-stu-id="89c11-113">me</span></span>|
+|<span data-ttu-id="89c11-114">produtos</span><span class="sxs-lookup"><span data-stu-id="89c11-114">family</span></span>|
+|<span data-ttu-id="89c11-115">contacts</span><span class="sxs-lookup"><span data-stu-id="89c11-115">contacts</span></span>|
+|<span data-ttu-id="89c11-116">groupMembers</span><span class="sxs-lookup"><span data-stu-id="89c11-116">groupMembers</span></span>|
+|<span data-ttu-id="89c11-117">organização</span><span class="sxs-lookup"><span data-stu-id="89c11-117">organization</span></span>|
+|<span data-ttu-id="89c11-118">federatedOrganizations</span><span class="sxs-lookup"><span data-stu-id="89c11-118">federatedOrganizations</span></span>|
+|<span data-ttu-id="89c11-119">têm</span><span class="sxs-lookup"><span data-stu-id="89c11-119">everyone</span></span>|
+|<span data-ttu-id="89c11-120">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-120">unknownFutureValue</span></span>|
+
+### <a name="emailtype-values"></a><span data-ttu-id="89c11-121">valores de emailtype</span><span class="sxs-lookup"><span data-stu-id="89c11-121">emailType values</span></span>
+
+|<span data-ttu-id="89c11-122">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-122">Member</span></span>|
+|:---|
+|<span data-ttu-id="89c11-123">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-123">unknown</span></span>|
+|<span data-ttu-id="89c11-124">trabalho</span><span class="sxs-lookup"><span data-stu-id="89c11-124">work</span></span>|
+|<span data-ttu-id="89c11-125">pessoal</span><span class="sxs-lookup"><span data-stu-id="89c11-125">personal</span></span>|
+|<span data-ttu-id="89c11-126">principal</span><span class="sxs-lookup"><span data-stu-id="89c11-126">main</span></span>|
+|<span data-ttu-id="89c11-127">outro</span><span class="sxs-lookup"><span data-stu-id="89c11-127">other</span></span>|
+
+### <a name="anniversarytype-values"></a><span data-ttu-id="89c11-128">valores de aniversáriotype</span><span class="sxs-lookup"><span data-stu-id="89c11-128">anniversaryType values</span></span> 
+
+|<span data-ttu-id="89c11-129">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-129">Member</span></span>|
+|:---|
+|<span data-ttu-id="89c11-130">birthday</span><span class="sxs-lookup"><span data-stu-id="89c11-130">birthday</span></span>|
+|<span data-ttu-id="89c11-131">panela</span><span class="sxs-lookup"><span data-stu-id="89c11-131">wedding</span></span>|
+|<span data-ttu-id="89c11-132">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-132">unknownFutureValue</span></span>|
+
+### <a name="skillproficiencylevel-values"></a><span data-ttu-id="89c11-133">valores de skillProficiencyLevel</span><span class="sxs-lookup"><span data-stu-id="89c11-133">skillProficiencyLevel values</span></span> 
+
+|<span data-ttu-id="89c11-134">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-134">Member</span></span>|
+|:---|
+|<span data-ttu-id="89c11-135">ensino</span><span class="sxs-lookup"><span data-stu-id="89c11-135">elementary</span></span>|
+|<span data-ttu-id="89c11-136">limitedWorking</span><span class="sxs-lookup"><span data-stu-id="89c11-136">limitedWorking</span></span>|
+|<span data-ttu-id="89c11-137">generalProfessional</span><span class="sxs-lookup"><span data-stu-id="89c11-137">generalProfessional</span></span>|
+|<span data-ttu-id="89c11-138">advancedProfessional</span><span class="sxs-lookup"><span data-stu-id="89c11-138">advancedProfessional</span></span>|
+|<span data-ttu-id="89c11-139">possu</span><span class="sxs-lookup"><span data-stu-id="89c11-139">expert</span></span>|
+|<span data-ttu-id="89c11-140">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-140">unknownFutureValue</span></span>|
+
+### <a name="languageproficiencylevel-values"></a><span data-ttu-id="89c11-141">valores de languageProficiencyLevel</span><span class="sxs-lookup"><span data-stu-id="89c11-141">languageProficiencyLevel values</span></span> 
+
+|<span data-ttu-id="89c11-142">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-142">Member</span></span>|
+|:---|
+|<span data-ttu-id="89c11-143">ensino</span><span class="sxs-lookup"><span data-stu-id="89c11-143">elementary</span></span>|
+|<span data-ttu-id="89c11-144">coloquial</span><span class="sxs-lookup"><span data-stu-id="89c11-144">conversational</span></span>|
+|<span data-ttu-id="89c11-145">limitedWorking</span><span class="sxs-lookup"><span data-stu-id="89c11-145">limitedWorking</span></span>|
+|<span data-ttu-id="89c11-146">professionalWorking</span><span class="sxs-lookup"><span data-stu-id="89c11-146">professionalWorking</span></span>|
+|<span data-ttu-id="89c11-147">fullProfessional</span><span class="sxs-lookup"><span data-stu-id="89c11-147">fullProfessional</span></span>|
+|<span data-ttu-id="89c11-148">nativeOrBilingual</span><span class="sxs-lookup"><span data-stu-id="89c11-148">nativeOrBilingual</span></span>|
+|<span data-ttu-id="89c11-149">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-149">unknownFutureValue</span></span>|
+
+### <a name="personrelationship-values"></a><span data-ttu-id="89c11-150">valores de personRelationship</span><span class="sxs-lookup"><span data-stu-id="89c11-150">personRelationship values</span></span> 
+
+|<span data-ttu-id="89c11-151">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-151">Member</span></span>|
+|:---|
+|<span data-ttu-id="89c11-152">manager</span><span class="sxs-lookup"><span data-stu-id="89c11-152">manager</span></span>|
+|<span data-ttu-id="89c11-153">colega</span><span class="sxs-lookup"><span data-stu-id="89c11-153">colleague</span></span>|
+|<span data-ttu-id="89c11-154">directReport</span><span class="sxs-lookup"><span data-stu-id="89c11-154">directReport</span></span>|
+|<span data-ttu-id="89c11-155">dotLineReport</span><span class="sxs-lookup"><span data-stu-id="89c11-155">dotLineReport</span></span>|
+|<span data-ttu-id="89c11-156">assistência</span><span class="sxs-lookup"><span data-stu-id="89c11-156">assistant</span></span>|
+|<span data-ttu-id="89c11-157">dotLineManager</span><span class="sxs-lookup"><span data-stu-id="89c11-157">dotLineManager</span></span>|
+|<span data-ttu-id="89c11-158">alternateContact</span><span class="sxs-lookup"><span data-stu-id="89c11-158">alternateContact</span></span>|
+|<span data-ttu-id="89c11-159">público</span><span class="sxs-lookup"><span data-stu-id="89c11-159">friend</span></span>|
+|<span data-ttu-id="89c11-160">marido</span><span class="sxs-lookup"><span data-stu-id="89c11-160">spouse</span></span>|
+|<span data-ttu-id="89c11-161">An</span><span class="sxs-lookup"><span data-stu-id="89c11-161">sibling</span></span>|
+|<span data-ttu-id="89c11-162">pensão</span><span class="sxs-lookup"><span data-stu-id="89c11-162">child</span></span>|
+|<span data-ttu-id="89c11-163">primário</span><span class="sxs-lookup"><span data-stu-id="89c11-163">parent</span></span>|
+|<span data-ttu-id="89c11-164">patrocina</span><span class="sxs-lookup"><span data-stu-id="89c11-164">sponsor</span></span>|
+|<span data-ttu-id="89c11-165">emergencyContact</span><span class="sxs-lookup"><span data-stu-id="89c11-165">emergencyContact</span></span>|
+|<span data-ttu-id="89c11-166">outro</span><span class="sxs-lookup"><span data-stu-id="89c11-166">other</span></span>|
+|<span data-ttu-id="89c11-167">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-167">unknownFutureValue</span></span>|
+
+### <a name="attachmenttype-values"></a><span data-ttu-id="89c11-168">valores AttachmentType</span><span class="sxs-lookup"><span data-stu-id="89c11-168">attachmentType values</span></span>
+
+| <span data-ttu-id="89c11-169">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-169">Member</span></span>
 |:--------------
-| <span data-ttu-id="79c22-169">call</span><span class="sxs-lookup"><span data-stu-id="79c22-169">call</span></span>
-| <span data-ttu-id="79c22-170">chat</span><span class="sxs-lookup"><span data-stu-id="79c22-170">chat</span></span>
-| <span data-ttu-id="79c22-171">email</span><span class="sxs-lookup"><span data-stu-id="79c22-171">email</span></span>
-| <span data-ttu-id="79c22-172">foco</span><span class="sxs-lookup"><span data-stu-id="79c22-172">focus</span></span>
-| <span data-ttu-id="79c22-173">Atenda</span><span class="sxs-lookup"><span data-stu-id="79c22-173">meeting</span></span>
+| <span data-ttu-id="89c11-170">file</span><span class="sxs-lookup"><span data-stu-id="89c11-170">file</span></span>
+| <span data-ttu-id="89c11-171">item</span><span class="sxs-lookup"><span data-stu-id="89c11-171">item</span></span>
+| <span data-ttu-id="89c11-172">referência</span><span class="sxs-lookup"><span data-stu-id="89c11-172">reference</span></span>
 
-### <a name="registrationauthmethod-values"></a><span data-ttu-id="79c22-174">valores de registrationAuthMethod</span><span class="sxs-lookup"><span data-stu-id="79c22-174">registrationAuthMethod values</span></span>
+### <a name="analyticsactivitytype-values"></a><span data-ttu-id="89c11-173">valores de analyticsActivityType</span><span class="sxs-lookup"><span data-stu-id="89c11-173">analyticsActivityType values</span></span>
 
-|<span data-ttu-id="79c22-175">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-175">Member</span></span>|
+| <span data-ttu-id="89c11-174">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-174">Member</span></span>
+|:--------------
+| <span data-ttu-id="89c11-175">call</span><span class="sxs-lookup"><span data-stu-id="89c11-175">call</span></span>
+| <span data-ttu-id="89c11-176">chat</span><span class="sxs-lookup"><span data-stu-id="89c11-176">chat</span></span>
+| <span data-ttu-id="89c11-177">email</span><span class="sxs-lookup"><span data-stu-id="89c11-177">email</span></span>
+| <span data-ttu-id="89c11-178">foco</span><span class="sxs-lookup"><span data-stu-id="89c11-178">focus</span></span>
+| <span data-ttu-id="89c11-179">Atenda</span><span class="sxs-lookup"><span data-stu-id="89c11-179">meeting</span></span>
+
+### <a name="registrationauthmethod-values"></a><span data-ttu-id="89c11-180">valores de registrationAuthMethod</span><span class="sxs-lookup"><span data-stu-id="89c11-180">registrationAuthMethod values</span></span>
+
+|<span data-ttu-id="89c11-181">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-181">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-176">email</span><span class="sxs-lookup"><span data-stu-id="79c22-176">email</span></span>|
-|<span data-ttu-id="79c22-177">mobilePhone</span><span class="sxs-lookup"><span data-stu-id="79c22-177">mobilePhone</span></span>|
-|<span data-ttu-id="79c22-178">officePhone</span><span class="sxs-lookup"><span data-stu-id="79c22-178">officePhone</span></span>|
-|<span data-ttu-id="79c22-179">securityQuestion</span><span class="sxs-lookup"><span data-stu-id="79c22-179">securityQuestion</span></span>|
-|<span data-ttu-id="79c22-180">appNotification</span><span class="sxs-lookup"><span data-stu-id="79c22-180">appNotification</span></span>|
-|<span data-ttu-id="79c22-181">appCode</span><span class="sxs-lookup"><span data-stu-id="79c22-181">appCode</span></span>|
-|<span data-ttu-id="79c22-182">alternateMobilePhone</span><span class="sxs-lookup"><span data-stu-id="79c22-182">alternateMobilePhone</span></span>|
+|<span data-ttu-id="89c11-182">email</span><span class="sxs-lookup"><span data-stu-id="89c11-182">email</span></span>|
+|<span data-ttu-id="89c11-183">mobilePhone</span><span class="sxs-lookup"><span data-stu-id="89c11-183">mobilePhone</span></span>|
+|<span data-ttu-id="89c11-184">officePhone</span><span class="sxs-lookup"><span data-stu-id="89c11-184">officePhone</span></span>|
+|<span data-ttu-id="89c11-185">securityQuestion</span><span class="sxs-lookup"><span data-stu-id="89c11-185">securityQuestion</span></span>|
+|<span data-ttu-id="89c11-186">appNotification</span><span class="sxs-lookup"><span data-stu-id="89c11-186">appNotification</span></span>|
+|<span data-ttu-id="89c11-187">appCode</span><span class="sxs-lookup"><span data-stu-id="89c11-187">appCode</span></span>|
+|<span data-ttu-id="89c11-188">alternateMobilePhone</span><span class="sxs-lookup"><span data-stu-id="89c11-188">alternateMobilePhone</span></span>|
 
-### <a name="entitytypes-values"></a><span data-ttu-id="79c22-183">valores de entityTypes</span><span class="sxs-lookup"><span data-stu-id="79c22-183">entityTypes values</span></span>
+### <a name="entitytypes-values"></a><span data-ttu-id="89c11-189">valores de entityTypes</span><span class="sxs-lookup"><span data-stu-id="89c11-189">entityTypes values</span></span>
 
-|<span data-ttu-id="79c22-184">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-184">Member</span></span>|
+|<span data-ttu-id="89c11-190">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-190">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-185">event</span><span class="sxs-lookup"><span data-stu-id="79c22-185">event</span></span>|
-|<span data-ttu-id="79c22-186">message</span><span class="sxs-lookup"><span data-stu-id="79c22-186">message</span></span>|
-|<span data-ttu-id="79c22-187">driveItem</span><span class="sxs-lookup"><span data-stu-id="79c22-187">driveItem</span></span>|
-|<span data-ttu-id="79c22-188">externalItem</span><span class="sxs-lookup"><span data-stu-id="79c22-188">externalItem</span></span>|
+|<span data-ttu-id="89c11-191">event</span><span class="sxs-lookup"><span data-stu-id="89c11-191">event</span></span>|
+|<span data-ttu-id="89c11-192">message</span><span class="sxs-lookup"><span data-stu-id="89c11-192">message</span></span>|
+|<span data-ttu-id="89c11-193">driveItem</span><span class="sxs-lookup"><span data-stu-id="89c11-193">driveItem</span></span>|
+|<span data-ttu-id="89c11-194">externalItem</span><span class="sxs-lookup"><span data-stu-id="89c11-194">externalItem</span></span>|
 
-### <a name="contactrelationship-values"></a><span data-ttu-id="79c22-189">valores de contactRelationship</span><span class="sxs-lookup"><span data-stu-id="79c22-189">contactRelationship values</span></span>
+### <a name="contactrelationship-values"></a><span data-ttu-id="89c11-195">valores de contactRelationship</span><span class="sxs-lookup"><span data-stu-id="89c11-195">contactRelationship values</span></span>
 
-| <span data-ttu-id="79c22-190">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-190">Member</span></span>             | <span data-ttu-id="79c22-191">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-191">Value</span></span> | <span data-ttu-id="79c22-192">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-192">Description</span></span>                              |
+| <span data-ttu-id="89c11-196">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-196">Member</span></span>             | <span data-ttu-id="89c11-197">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-197">Value</span></span> | <span data-ttu-id="89c11-198">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-198">Description</span></span>                              |
 | :----------------- | :---- | :--------------------------------------- |
-| <span data-ttu-id="79c22-193">primário</span><span class="sxs-lookup"><span data-stu-id="79c22-193">parent</span></span>             | <span data-ttu-id="79c22-194">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-194">0</span></span>     | <span data-ttu-id="79c22-195">O pai do usuário.</span><span class="sxs-lookup"><span data-stu-id="79c22-195">The user's parent.</span></span>                       |
-| <span data-ttu-id="79c22-196">relativo</span><span class="sxs-lookup"><span data-stu-id="79c22-196">relative</span></span>           | <span data-ttu-id="79c22-197">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-197">1</span></span>     | <span data-ttu-id="79c22-198">O relativo do usuário.</span><span class="sxs-lookup"><span data-stu-id="79c22-198">The user's relative.</span></span>                     |
-| <span data-ttu-id="79c22-199">facilita</span><span class="sxs-lookup"><span data-stu-id="79c22-199">aide</span></span>               | <span data-ttu-id="79c22-200">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-200">2</span></span>     | <span data-ttu-id="79c22-201">O auxílio do usuário.</span><span class="sxs-lookup"><span data-stu-id="79c22-201">The user's aide.</span></span>                         |
-| <span data-ttu-id="79c22-202">Doutor</span><span class="sxs-lookup"><span data-stu-id="79c22-202">doctor</span></span>             | <span data-ttu-id="79c22-203">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-203">3</span></span>     | <span data-ttu-id="79c22-204">O médico do usuário.</span><span class="sxs-lookup"><span data-stu-id="79c22-204">The user's doctor.</span></span>                       |
-| <span data-ttu-id="79c22-205">responsável</span><span class="sxs-lookup"><span data-stu-id="79c22-205">guardian</span></span>           | <span data-ttu-id="79c22-206">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-206">4</span></span>     | <span data-ttu-id="79c22-207">O guardião do usuário.</span><span class="sxs-lookup"><span data-stu-id="79c22-207">The user's guardian.</span></span>                     |
-| <span data-ttu-id="79c22-208">pensão</span><span class="sxs-lookup"><span data-stu-id="79c22-208">child</span></span>              | <span data-ttu-id="79c22-209">5 </span><span class="sxs-lookup"><span data-stu-id="79c22-209">5</span></span>     | <span data-ttu-id="79c22-210">O filho do usuário.</span><span class="sxs-lookup"><span data-stu-id="79c22-210">The user's child.</span></span>                        |
-| <span data-ttu-id="79c22-211">outro</span><span class="sxs-lookup"><span data-stu-id="79c22-211">other</span></span>              | <span data-ttu-id="79c22-212">6 </span><span class="sxs-lookup"><span data-stu-id="79c22-212">6</span></span>     | <span data-ttu-id="79c22-213">Uma relação não especificada com o usuário.</span><span class="sxs-lookup"><span data-stu-id="79c22-213">An unspecified relationship to the user.</span></span> |
-| <span data-ttu-id="79c22-214">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-214">unknownFutureValue</span></span> | <span data-ttu-id="79c22-215">7 </span><span class="sxs-lookup"><span data-stu-id="79c22-215">7</span></span>     | <span data-ttu-id="79c22-216">Valor de marcador para compatibilidade futura.</span><span class="sxs-lookup"><span data-stu-id="79c22-216">Marker value for future compatibility.</span></span>   |
+| <span data-ttu-id="89c11-199">primário</span><span class="sxs-lookup"><span data-stu-id="89c11-199">parent</span></span>             | <span data-ttu-id="89c11-200">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-200">0</span></span>     | <span data-ttu-id="89c11-201">O pai do usuário.</span><span class="sxs-lookup"><span data-stu-id="89c11-201">The user's parent.</span></span>                       |
+| <span data-ttu-id="89c11-202">relativo</span><span class="sxs-lookup"><span data-stu-id="89c11-202">relative</span></span>           | <span data-ttu-id="89c11-203">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-203">1</span></span>     | <span data-ttu-id="89c11-204">O relativo do usuário.</span><span class="sxs-lookup"><span data-stu-id="89c11-204">The user's relative.</span></span>                     |
+| <span data-ttu-id="89c11-205">facilita</span><span class="sxs-lookup"><span data-stu-id="89c11-205">aide</span></span>               | <span data-ttu-id="89c11-206">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-206">2</span></span>     | <span data-ttu-id="89c11-207">O auxílio do usuário.</span><span class="sxs-lookup"><span data-stu-id="89c11-207">The user's aide.</span></span>                         |
+| <span data-ttu-id="89c11-208">Doutor</span><span class="sxs-lookup"><span data-stu-id="89c11-208">doctor</span></span>             | <span data-ttu-id="89c11-209">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-209">3</span></span>     | <span data-ttu-id="89c11-210">O médico do usuário.</span><span class="sxs-lookup"><span data-stu-id="89c11-210">The user's doctor.</span></span>                       |
+| <span data-ttu-id="89c11-211">responsável</span><span class="sxs-lookup"><span data-stu-id="89c11-211">guardian</span></span>           | <span data-ttu-id="89c11-212">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-212">4</span></span>     | <span data-ttu-id="89c11-213">O guardião do usuário.</span><span class="sxs-lookup"><span data-stu-id="89c11-213">The user's guardian.</span></span>                     |
+| <span data-ttu-id="89c11-214">pensão</span><span class="sxs-lookup"><span data-stu-id="89c11-214">child</span></span>              | <span data-ttu-id="89c11-215">5 </span><span class="sxs-lookup"><span data-stu-id="89c11-215">5</span></span>     | <span data-ttu-id="89c11-216">O filho do usuário.</span><span class="sxs-lookup"><span data-stu-id="89c11-216">The user's child.</span></span>                        |
+| <span data-ttu-id="89c11-217">outro</span><span class="sxs-lookup"><span data-stu-id="89c11-217">other</span></span>              | <span data-ttu-id="89c11-218">6 </span><span class="sxs-lookup"><span data-stu-id="89c11-218">6</span></span>     | <span data-ttu-id="89c11-219">Uma relação não especificada com o usuário.</span><span class="sxs-lookup"><span data-stu-id="89c11-219">An unspecified relationship to the user.</span></span> |
+| <span data-ttu-id="89c11-220">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-220">unknownFutureValue</span></span> | <span data-ttu-id="89c11-221">7 </span><span class="sxs-lookup"><span data-stu-id="89c11-221">7</span></span>     | <span data-ttu-id="89c11-222">Valor de marcador para compatibilidade futura.</span><span class="sxs-lookup"><span data-stu-id="89c11-222">Marker value for future compatibility.</span></span>   |
 
-### <a name="scheduleentitytheme-values"></a><span data-ttu-id="79c22-217">valores de scheduleEntityTheme</span><span class="sxs-lookup"><span data-stu-id="79c22-217">scheduleEntityTheme values</span></span>
+### <a name="scheduleentitytheme-values"></a><span data-ttu-id="89c11-223">valores de scheduleEntityTheme</span><span class="sxs-lookup"><span data-stu-id="89c11-223">scheduleEntityTheme values</span></span>
 
-| <span data-ttu-id="79c22-218">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-218">Member</span></span>
+| <span data-ttu-id="89c11-224">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-224">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-219">branco</span><span class="sxs-lookup"><span data-stu-id="79c22-219">white</span></span>
-| <span data-ttu-id="79c22-220">azuis</span><span class="sxs-lookup"><span data-stu-id="79c22-220">blue</span></span>
-| <span data-ttu-id="79c22-221">natureza</span><span class="sxs-lookup"><span data-stu-id="79c22-221">green</span></span>
-| <span data-ttu-id="79c22-222">roxa</span><span class="sxs-lookup"><span data-stu-id="79c22-222">purple</span></span>
-| <span data-ttu-id="79c22-223">Rosa</span><span class="sxs-lookup"><span data-stu-id="79c22-223">pink</span></span>
-| <span data-ttu-id="79c22-224">amarelo</span><span class="sxs-lookup"><span data-stu-id="79c22-224">yellow</span></span>
-| <span data-ttu-id="79c22-225">acinzentada</span><span class="sxs-lookup"><span data-stu-id="79c22-225">gray</span></span>
-| <span data-ttu-id="79c22-226">darkBlue</span><span class="sxs-lookup"><span data-stu-id="79c22-226">darkBlue</span></span>
-| <span data-ttu-id="79c22-227">darkGreen</span><span class="sxs-lookup"><span data-stu-id="79c22-227">darkGreen</span></span>
-| <span data-ttu-id="79c22-228">darkPurple</span><span class="sxs-lookup"><span data-stu-id="79c22-228">darkPurple</span></span>
-| <span data-ttu-id="79c22-229">darkPink</span><span class="sxs-lookup"><span data-stu-id="79c22-229">darkPink</span></span>
-| <span data-ttu-id="79c22-230">darkYellow</span><span class="sxs-lookup"><span data-stu-id="79c22-230">darkYellow</span></span>
-| <span data-ttu-id="79c22-231">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-231">unknownFutureValue</span></span>
+| <span data-ttu-id="89c11-225">branco</span><span class="sxs-lookup"><span data-stu-id="89c11-225">white</span></span>
+| <span data-ttu-id="89c11-226">azuis</span><span class="sxs-lookup"><span data-stu-id="89c11-226">blue</span></span>
+| <span data-ttu-id="89c11-227">natureza</span><span class="sxs-lookup"><span data-stu-id="89c11-227">green</span></span>
+| <span data-ttu-id="89c11-228">roxa</span><span class="sxs-lookup"><span data-stu-id="89c11-228">purple</span></span>
+| <span data-ttu-id="89c11-229">Rosa</span><span class="sxs-lookup"><span data-stu-id="89c11-229">pink</span></span>
+| <span data-ttu-id="89c11-230">amarelo</span><span class="sxs-lookup"><span data-stu-id="89c11-230">yellow</span></span>
+| <span data-ttu-id="89c11-231">acinzentada</span><span class="sxs-lookup"><span data-stu-id="89c11-231">gray</span></span>
+| <span data-ttu-id="89c11-232">darkBlue</span><span class="sxs-lookup"><span data-stu-id="89c11-232">darkBlue</span></span>
+| <span data-ttu-id="89c11-233">darkGreen</span><span class="sxs-lookup"><span data-stu-id="89c11-233">darkGreen</span></span>
+| <span data-ttu-id="89c11-234">darkPurple</span><span class="sxs-lookup"><span data-stu-id="89c11-234">darkPurple</span></span>
+| <span data-ttu-id="89c11-235">darkPink</span><span class="sxs-lookup"><span data-stu-id="89c11-235">darkPink</span></span>
+| <span data-ttu-id="89c11-236">darkYellow</span><span class="sxs-lookup"><span data-stu-id="89c11-236">darkYellow</span></span>
+| <span data-ttu-id="89c11-237">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-237">unknownFutureValue</span></span>
 
 
-### <a name="timeoffreasonicontype-values"></a><span data-ttu-id="79c22-232">valores de timeOffReasonIconType</span><span class="sxs-lookup"><span data-stu-id="79c22-232">timeOffReasonIconType values</span></span>
+### <a name="timeoffreasonicontype-values"></a><span data-ttu-id="89c11-238">valores de timeOffReasonIconType</span><span class="sxs-lookup"><span data-stu-id="89c11-238">timeOffReasonIconType values</span></span>
 
-|<span data-ttu-id="79c22-233">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-233">Member</span></span>|
+|<span data-ttu-id="89c11-239">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-239">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-234">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-234">none</span></span>|
-|<span data-ttu-id="79c22-235">automóvel</span><span class="sxs-lookup"><span data-stu-id="79c22-235">car</span></span>|
-|<span data-ttu-id="79c22-236">calendar</span><span class="sxs-lookup"><span data-stu-id="79c22-236">calendar</span></span>|
-|<span data-ttu-id="79c22-237">com</span><span class="sxs-lookup"><span data-stu-id="79c22-237">running</span></span>|
-|<span data-ttu-id="79c22-238">plano</span><span class="sxs-lookup"><span data-stu-id="79c22-238">plane</span></span>|
-|<span data-ttu-id="79c22-239">firstAid</span><span class="sxs-lookup"><span data-stu-id="79c22-239">firstAid</span></span>|
-|<span data-ttu-id="79c22-240">Doutor</span><span class="sxs-lookup"><span data-stu-id="79c22-240">doctor</span></span>|
-|<span data-ttu-id="79c22-241">Não trabalho</span><span class="sxs-lookup"><span data-stu-id="79c22-241">notWorking</span></span>|
-|<span data-ttu-id="79c22-242">medição</span><span class="sxs-lookup"><span data-stu-id="79c22-242">clock</span></span>|
-|<span data-ttu-id="79c22-243">juryDuty</span><span class="sxs-lookup"><span data-stu-id="79c22-243">juryDuty</span></span>|
-|<span data-ttu-id="79c22-244">Globe</span><span class="sxs-lookup"><span data-stu-id="79c22-244">globe</span></span>|
-|<span data-ttu-id="79c22-245">copo</span><span class="sxs-lookup"><span data-stu-id="79c22-245">cup</span></span>|
-|<span data-ttu-id="79c22-246">phone</span><span class="sxs-lookup"><span data-stu-id="79c22-246">phone</span></span>|
-|<span data-ttu-id="79c22-247">clima</span><span class="sxs-lookup"><span data-stu-id="79c22-247">weather</span></span>|
-|<span data-ttu-id="79c22-248">abrangência</span><span class="sxs-lookup"><span data-stu-id="79c22-248">umbrella</span></span>|
-|<span data-ttu-id="79c22-249">piggyBank</span><span class="sxs-lookup"><span data-stu-id="79c22-249">piggyBank</span></span>|
-|<span data-ttu-id="79c22-250">cachorro</span><span class="sxs-lookup"><span data-stu-id="79c22-250">dog</span></span>|
-|<span data-ttu-id="79c22-251">torta</span><span class="sxs-lookup"><span data-stu-id="79c22-251">cake</span></span>|
-|<span data-ttu-id="79c22-252">trafficCone</span><span class="sxs-lookup"><span data-stu-id="79c22-252">trafficCone</span></span>|
-|<span data-ttu-id="79c22-253">pessoal</span><span class="sxs-lookup"><span data-stu-id="79c22-253">pin</span></span>|
-|<span data-ttu-id="79c22-254">ensolarado</span><span class="sxs-lookup"><span data-stu-id="79c22-254">sunny</span></span>|
-|<span data-ttu-id="79c22-255">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-255">unknownFutureValue</span></span>|
+|<span data-ttu-id="89c11-240">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-240">none</span></span>|
+|<span data-ttu-id="89c11-241">automóvel</span><span class="sxs-lookup"><span data-stu-id="89c11-241">car</span></span>|
+|<span data-ttu-id="89c11-242">calendário</span><span class="sxs-lookup"><span data-stu-id="89c11-242">calendar</span></span>|
+|<span data-ttu-id="89c11-243">com</span><span class="sxs-lookup"><span data-stu-id="89c11-243">running</span></span>|
+|<span data-ttu-id="89c11-244">plano</span><span class="sxs-lookup"><span data-stu-id="89c11-244">plane</span></span>|
+|<span data-ttu-id="89c11-245">firstAid</span><span class="sxs-lookup"><span data-stu-id="89c11-245">firstAid</span></span>|
+|<span data-ttu-id="89c11-246">Doutor</span><span class="sxs-lookup"><span data-stu-id="89c11-246">doctor</span></span>|
+|<span data-ttu-id="89c11-247">Não trabalho</span><span class="sxs-lookup"><span data-stu-id="89c11-247">notWorking</span></span>|
+|<span data-ttu-id="89c11-248">medição</span><span class="sxs-lookup"><span data-stu-id="89c11-248">clock</span></span>|
+|<span data-ttu-id="89c11-249">juryDuty</span><span class="sxs-lookup"><span data-stu-id="89c11-249">juryDuty</span></span>|
+|<span data-ttu-id="89c11-250">Globe</span><span class="sxs-lookup"><span data-stu-id="89c11-250">globe</span></span>|
+|<span data-ttu-id="89c11-251">copo</span><span class="sxs-lookup"><span data-stu-id="89c11-251">cup</span></span>|
+|<span data-ttu-id="89c11-252">phone</span><span class="sxs-lookup"><span data-stu-id="89c11-252">phone</span></span>|
+|<span data-ttu-id="89c11-253">clima</span><span class="sxs-lookup"><span data-stu-id="89c11-253">weather</span></span>|
+|<span data-ttu-id="89c11-254">abrangência</span><span class="sxs-lookup"><span data-stu-id="89c11-254">umbrella</span></span>|
+|<span data-ttu-id="89c11-255">piggyBank</span><span class="sxs-lookup"><span data-stu-id="89c11-255">piggyBank</span></span>|
+|<span data-ttu-id="89c11-256">cachorro</span><span class="sxs-lookup"><span data-stu-id="89c11-256">dog</span></span>|
+|<span data-ttu-id="89c11-257">torta</span><span class="sxs-lookup"><span data-stu-id="89c11-257">cake</span></span>|
+|<span data-ttu-id="89c11-258">trafficCone</span><span class="sxs-lookup"><span data-stu-id="89c11-258">trafficCone</span></span>|
+|<span data-ttu-id="89c11-259">pessoal</span><span class="sxs-lookup"><span data-stu-id="89c11-259">pin</span></span>|
+|<span data-ttu-id="89c11-260">ensolarado</span><span class="sxs-lookup"><span data-stu-id="89c11-260">sunny</span></span>|
+|<span data-ttu-id="89c11-261">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-261">unknownFutureValue</span></span>|
 
-### <a name="schedulechangestate-values"></a><span data-ttu-id="79c22-256">valores de scheduleChangeState</span><span class="sxs-lookup"><span data-stu-id="79c22-256">scheduleChangeState values</span></span>
+### <a name="schedulechangestate-values"></a><span data-ttu-id="89c11-262">valores de scheduleChangeState</span><span class="sxs-lookup"><span data-stu-id="89c11-262">scheduleChangeState values</span></span>
 
-| <span data-ttu-id="79c22-257">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-257">Member</span></span>
+| <span data-ttu-id="89c11-263">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-263">Member</span></span>
 |:----------------------------
-|<span data-ttu-id="79c22-258">função</span><span class="sxs-lookup"><span data-stu-id="79c22-258">pending</span></span>
-|<span data-ttu-id="79c22-259">pelos</span><span class="sxs-lookup"><span data-stu-id="79c22-259">approved</span></span>
-|<span data-ttu-id="79c22-260">recusada</span><span class="sxs-lookup"><span data-stu-id="79c22-260">declined</span></span>
-|<span data-ttu-id="79c22-261">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-261">unknownFutureValue</span></span>
+|<span data-ttu-id="89c11-264">função</span><span class="sxs-lookup"><span data-stu-id="89c11-264">pending</span></span>
+|<span data-ttu-id="89c11-265">pelos</span><span class="sxs-lookup"><span data-stu-id="89c11-265">approved</span></span>
+|<span data-ttu-id="89c11-266">recusada</span><span class="sxs-lookup"><span data-stu-id="89c11-266">declined</span></span>
+|<span data-ttu-id="89c11-267">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-267">unknownFutureValue</span></span>
 
-### <a name="schedulechangerequestactor-values"></a><span data-ttu-id="79c22-262">valores de scheduleChangeRequestActor</span><span class="sxs-lookup"><span data-stu-id="79c22-262">scheduleChangeRequestActor values</span></span>
+### <a name="schedulechangerequestactor-values"></a><span data-ttu-id="89c11-268">valores de scheduleChangeRequestActor</span><span class="sxs-lookup"><span data-stu-id="89c11-268">scheduleChangeRequestActor values</span></span>
 
-| <span data-ttu-id="79c22-263">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-263">Member</span></span>
+| <span data-ttu-id="89c11-269">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-269">Member</span></span>
 |:----------------------------
-|<span data-ttu-id="79c22-264">remetente</span><span class="sxs-lookup"><span data-stu-id="79c22-264">sender</span></span>
-|<span data-ttu-id="79c22-265">destinatário</span><span class="sxs-lookup"><span data-stu-id="79c22-265">recipient</span></span>
-|<span data-ttu-id="79c22-266">manager</span><span class="sxs-lookup"><span data-stu-id="79c22-266">manager</span></span>
-|<span data-ttu-id="79c22-267">sistema</span><span class="sxs-lookup"><span data-stu-id="79c22-267">system</span></span>
-|<span data-ttu-id="79c22-268">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-268">unknownFutureValue</span></span>
+|<span data-ttu-id="89c11-270">remetente</span><span class="sxs-lookup"><span data-stu-id="89c11-270">sender</span></span>
+|<span data-ttu-id="89c11-271">destinatário</span><span class="sxs-lookup"><span data-stu-id="89c11-271">recipient</span></span>
+|<span data-ttu-id="89c11-272">manager</span><span class="sxs-lookup"><span data-stu-id="89c11-272">manager</span></span>
+|<span data-ttu-id="89c11-273">sistema</span><span class="sxs-lookup"><span data-stu-id="89c11-273">system</span></span>
+|<span data-ttu-id="89c11-274">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-274">unknownFutureValue</span></span>
 
-### <a name="workforceintegrationencryptionprotocol-values"></a><span data-ttu-id="79c22-269">valores de workforceIntegrationEncryptionProtocol</span><span class="sxs-lookup"><span data-stu-id="79c22-269">workforceIntegrationEncryptionProtocol values</span></span>
+### <a name="workforceintegrationencryptionprotocol-values"></a><span data-ttu-id="89c11-275">valores de workforceIntegrationEncryptionProtocol</span><span class="sxs-lookup"><span data-stu-id="89c11-275">workforceIntegrationEncryptionProtocol values</span></span>
 
-| <span data-ttu-id="79c22-270">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-270">Member</span></span>
+| <span data-ttu-id="89c11-276">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-276">Member</span></span>
 |:----------------------------
-|<span data-ttu-id="79c22-271">sharedSecret</span><span class="sxs-lookup"><span data-stu-id="79c22-271">sharedSecret</span></span>
-|<span data-ttu-id="79c22-272">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-272">unknownFutureValue</span></span>
+|<span data-ttu-id="89c11-277">sharedSecret</span><span class="sxs-lookup"><span data-stu-id="89c11-277">sharedSecret</span></span>
+|<span data-ttu-id="89c11-278">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-278">unknownFutureValue</span></span>
 
-### <a name="workforceintegrationsupportedentities-values"></a><span data-ttu-id="79c22-273">valores de workforceIntegrationSupportedEntities</span><span class="sxs-lookup"><span data-stu-id="79c22-273">workforceIntegrationSupportedEntities values</span></span>
+### <a name="workforceintegrationsupportedentities-values"></a><span data-ttu-id="89c11-279">valores de workforceIntegrationSupportedEntities</span><span class="sxs-lookup"><span data-stu-id="89c11-279">workforceIntegrationSupportedEntities values</span></span>
 
-| <span data-ttu-id="79c22-274">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-274">Member</span></span>
+| <span data-ttu-id="89c11-280">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-280">Member</span></span>
 |:----------------------------
-|<span data-ttu-id="79c22-275">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-275">none</span></span>
-|<span data-ttu-id="79c22-276">shift</span><span class="sxs-lookup"><span data-stu-id="79c22-276">shift</span></span>
-|<span data-ttu-id="79c22-277">swapRequest</span><span class="sxs-lookup"><span data-stu-id="79c22-277">swapRequest</span></span>
-|<span data-ttu-id="79c22-278">openShift</span><span class="sxs-lookup"><span data-stu-id="79c22-278">openShift</span></span>
-|<span data-ttu-id="79c22-279">openShiftRequest</span><span class="sxs-lookup"><span data-stu-id="79c22-279">openShiftRequest</span></span>
-|<span data-ttu-id="79c22-280">userShiftPreferences</span><span class="sxs-lookup"><span data-stu-id="79c22-280">userShiftPreferences</span></span>
+|<span data-ttu-id="89c11-281">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-281">none</span></span>
+|<span data-ttu-id="89c11-282">shift</span><span class="sxs-lookup"><span data-stu-id="89c11-282">shift</span></span>
+|<span data-ttu-id="89c11-283">swapRequest</span><span class="sxs-lookup"><span data-stu-id="89c11-283">swapRequest</span></span>
+|<span data-ttu-id="89c11-284">openShift</span><span class="sxs-lookup"><span data-stu-id="89c11-284">openShift</span></span>
+|<span data-ttu-id="89c11-285">openShiftRequest</span><span class="sxs-lookup"><span data-stu-id="89c11-285">openShiftRequest</span></span>
+|<span data-ttu-id="89c11-286">userShiftPreferences</span><span class="sxs-lookup"><span data-stu-id="89c11-286">userShiftPreferences</span></span>
 
-### <a name="timezonestandard-values"></a><span data-ttu-id="79c22-281">valores de timeZoneStandard</span><span class="sxs-lookup"><span data-stu-id="79c22-281">timeZoneStandard values</span></span>
+### <a name="timezonestandard-values"></a><span data-ttu-id="89c11-287">valores de timeZoneStandard</span><span class="sxs-lookup"><span data-stu-id="89c11-287">timeZoneStandard values</span></span>
 
-| <span data-ttu-id="79c22-282">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-282">Member</span></span>
+| <span data-ttu-id="89c11-288">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-288">Member</span></span>
 |:-----------------
-| <span data-ttu-id="79c22-283">Windows</span><span class="sxs-lookup"><span data-stu-id="79c22-283">windows</span></span>
-| <span data-ttu-id="79c22-284">IANA</span><span class="sxs-lookup"><span data-stu-id="79c22-284">iana</span></span>
+| <span data-ttu-id="89c11-289">Windows</span><span class="sxs-lookup"><span data-stu-id="89c11-289">windows</span></span>
+| <span data-ttu-id="89c11-290">IANA</span><span class="sxs-lookup"><span data-stu-id="89c11-290">iana</span></span>
 
 
-### <a name="freebusystatus-values"></a><span data-ttu-id="79c22-285">valores de freeBusyStatus</span><span class="sxs-lookup"><span data-stu-id="79c22-285">freeBusyStatus values</span></span>
+### <a name="freebusystatus-values"></a><span data-ttu-id="89c11-291">valores de freeBusyStatus</span><span class="sxs-lookup"><span data-stu-id="89c11-291">freeBusyStatus values</span></span>
 
-| <span data-ttu-id="79c22-286">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-286">Member</span></span>           | <span data-ttu-id="79c22-287">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-287">Value</span></span> |
+| <span data-ttu-id="89c11-292">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-292">Member</span></span>           | <span data-ttu-id="89c11-293">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-293">Value</span></span> |
 | :--------------- | :---- |
-| <span data-ttu-id="79c22-288">macro</span><span class="sxs-lookup"><span data-stu-id="79c22-288">free</span></span>             | <span data-ttu-id="79c22-289">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-289">0</span></span>     |
-| <span data-ttu-id="79c22-290">provisória</span><span class="sxs-lookup"><span data-stu-id="79c22-290">tentative</span></span>        | <span data-ttu-id="79c22-291">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-291">1</span></span>     |
-| <span data-ttu-id="79c22-292">Atualmente</span><span class="sxs-lookup"><span data-stu-id="79c22-292">busy</span></span>             | <span data-ttu-id="79c22-293">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-293">2</span></span>     |
-| <span data-ttu-id="79c22-294">temporária</span><span class="sxs-lookup"><span data-stu-id="79c22-294">oof</span></span>              | <span data-ttu-id="79c22-295">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-295">3</span></span>     |
-| <span data-ttu-id="79c22-296">workingElsewhere</span><span class="sxs-lookup"><span data-stu-id="79c22-296">workingElsewhere</span></span> | <span data-ttu-id="79c22-297">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-297">4</span></span>     |
-| <span data-ttu-id="79c22-298">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-298">unknown</span></span>          | <span data-ttu-id="79c22-299">-1</span><span class="sxs-lookup"><span data-stu-id="79c22-299">-1</span></span>    |
+| <span data-ttu-id="89c11-294">macro</span><span class="sxs-lookup"><span data-stu-id="89c11-294">free</span></span>             | <span data-ttu-id="89c11-295">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-295">0</span></span>     |
+| <span data-ttu-id="89c11-296">provisória</span><span class="sxs-lookup"><span data-stu-id="89c11-296">tentative</span></span>        | <span data-ttu-id="89c11-297">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-297">1</span></span>     |
+| <span data-ttu-id="89c11-298">Atualmente</span><span class="sxs-lookup"><span data-stu-id="89c11-298">busy</span></span>             | <span data-ttu-id="89c11-299">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-299">2</span></span>     |
+| <span data-ttu-id="89c11-300">temporária</span><span class="sxs-lookup"><span data-stu-id="89c11-300">oof</span></span>              | <span data-ttu-id="89c11-301">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-301">3</span></span>     |
+| <span data-ttu-id="89c11-302">workingElsewhere</span><span class="sxs-lookup"><span data-stu-id="89c11-302">workingElsewhere</span></span> | <span data-ttu-id="89c11-303">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-303">4</span></span>     |
+| <span data-ttu-id="89c11-304">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-304">unknown</span></span>          | <span data-ttu-id="89c11-305">-1</span><span class="sxs-lookup"><span data-stu-id="89c11-305">-1</span></span>    |
 
 
-### <a name="physicaladdresstype-values"></a><span data-ttu-id="79c22-300">valores de physicalAddressType</span><span class="sxs-lookup"><span data-stu-id="79c22-300">physicalAddressType values</span></span>
+### <a name="physicaladdresstype-values"></a><span data-ttu-id="89c11-306">valores de physicalAddressType</span><span class="sxs-lookup"><span data-stu-id="89c11-306">physicalAddressType values</span></span>
 
-| <span data-ttu-id="79c22-301">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-301">Member</span></span>
+| <span data-ttu-id="89c11-307">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-307">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-302">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-302">unknown</span></span>
-| <span data-ttu-id="79c22-303">Casa</span><span class="sxs-lookup"><span data-stu-id="79c22-303">home</span></span>
-| <span data-ttu-id="79c22-304">Business</span><span class="sxs-lookup"><span data-stu-id="79c22-304">business</span></span>
-| <span data-ttu-id="79c22-305">outro</span><span class="sxs-lookup"><span data-stu-id="79c22-305">other</span></span>
+| <span data-ttu-id="89c11-308">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-308">unknown</span></span>
+| <span data-ttu-id="89c11-309">Casa</span><span class="sxs-lookup"><span data-stu-id="89c11-309">home</span></span>
+| <span data-ttu-id="89c11-310">Business</span><span class="sxs-lookup"><span data-stu-id="89c11-310">business</span></span>
+| <span data-ttu-id="89c11-311">outro</span><span class="sxs-lookup"><span data-stu-id="89c11-311">other</span></span>
 
 
-### <a name="attendeetype-values"></a><span data-ttu-id="79c22-306">valores de attendetype</span><span class="sxs-lookup"><span data-stu-id="79c22-306">attendeeType values</span></span>
+### <a name="attendeetype-values"></a><span data-ttu-id="89c11-312">valores de attendetype</span><span class="sxs-lookup"><span data-stu-id="89c11-312">attendeeType values</span></span>
 
-| <span data-ttu-id="79c22-307">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-307">Member</span></span>
+| <span data-ttu-id="89c11-313">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-313">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-308">obrigatório</span><span class="sxs-lookup"><span data-stu-id="79c22-308">required</span></span>
-| <span data-ttu-id="79c22-309">opcional</span><span class="sxs-lookup"><span data-stu-id="79c22-309">optional</span></span>
-| <span data-ttu-id="79c22-310">recurso</span><span class="sxs-lookup"><span data-stu-id="79c22-310">resource</span></span>
+| <span data-ttu-id="89c11-314">obrigatório</span><span class="sxs-lookup"><span data-stu-id="89c11-314">required</span></span>
+| <span data-ttu-id="89c11-315">opcional</span><span class="sxs-lookup"><span data-stu-id="89c11-315">optional</span></span>
+| <span data-ttu-id="89c11-316">recurso</span><span class="sxs-lookup"><span data-stu-id="89c11-316">resource</span></span>
 
 
-### <a name="externalaudiencescope-values"></a><span data-ttu-id="79c22-311">valores de externalAudienceScope</span><span class="sxs-lookup"><span data-stu-id="79c22-311">externalAudienceScope values</span></span>
+### <a name="externalaudiencescope-values"></a><span data-ttu-id="89c11-317">valores de externalAudienceScope</span><span class="sxs-lookup"><span data-stu-id="89c11-317">externalAudienceScope values</span></span>
 
-| <span data-ttu-id="79c22-312">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-312">Member</span></span>
+| <span data-ttu-id="89c11-318">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-318">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-313">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-313">none</span></span>
-| <span data-ttu-id="79c22-314">contactsOnly</span><span class="sxs-lookup"><span data-stu-id="79c22-314">contactsOnly</span></span>
-| <span data-ttu-id="79c22-315">todos os</span><span class="sxs-lookup"><span data-stu-id="79c22-315">all</span></span>
+| <span data-ttu-id="89c11-319">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-319">none</span></span>
+| <span data-ttu-id="89c11-320">contactsOnly</span><span class="sxs-lookup"><span data-stu-id="89c11-320">contactsOnly</span></span>
+| <span data-ttu-id="89c11-321">todos os</span><span class="sxs-lookup"><span data-stu-id="89c11-321">all</span></span>
 
 
-### <a name="automaticrepliesstatus-values"></a><span data-ttu-id="79c22-316">valores de automaticRepliesStatus</span><span class="sxs-lookup"><span data-stu-id="79c22-316">automaticRepliesStatus values</span></span>
+### <a name="automaticrepliesstatus-values"></a><span data-ttu-id="89c11-322">valores de automaticRepliesStatus</span><span class="sxs-lookup"><span data-stu-id="89c11-322">automaticRepliesStatus values</span></span>
 
-| <span data-ttu-id="79c22-317">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-317">Member</span></span>
+| <span data-ttu-id="89c11-323">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-323">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-318">desabilitadas</span><span class="sxs-lookup"><span data-stu-id="79c22-318">disabled</span></span>
-| <span data-ttu-id="79c22-319">alwaysEnabled</span><span class="sxs-lookup"><span data-stu-id="79c22-319">alwaysEnabled</span></span>
-| <span data-ttu-id="79c22-320">agendado</span><span class="sxs-lookup"><span data-stu-id="79c22-320">scheduled</span></span>
+| <span data-ttu-id="89c11-324">desabilitadas</span><span class="sxs-lookup"><span data-stu-id="89c11-324">disabled</span></span>
+| <span data-ttu-id="89c11-325">alwaysEnabled</span><span class="sxs-lookup"><span data-stu-id="89c11-325">alwaysEnabled</span></span>
+| <span data-ttu-id="89c11-326">agendado</span><span class="sxs-lookup"><span data-stu-id="89c11-326">scheduled</span></span>
 
 
-### <a name="calendarcolor-values"></a><span data-ttu-id="79c22-321">valores de calendarColor</span><span class="sxs-lookup"><span data-stu-id="79c22-321">calendarColor values</span></span>
+### <a name="calendarcolor-values"></a><span data-ttu-id="89c11-327">valores de calendarColor</span><span class="sxs-lookup"><span data-stu-id="89c11-327">calendarColor values</span></span>
 
-| <span data-ttu-id="79c22-322">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-322">Member</span></span>      | <span data-ttu-id="79c22-323">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-323">Value</span></span> |
+| <span data-ttu-id="89c11-328">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-328">Member</span></span>      | <span data-ttu-id="89c11-329">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-329">Value</span></span> |
 | :---------- | :---- |
-| <span data-ttu-id="79c22-324">Automático</span><span class="sxs-lookup"><span data-stu-id="79c22-324">auto</span></span>        | <span data-ttu-id="79c22-325">-1</span><span class="sxs-lookup"><span data-stu-id="79c22-325">-1</span></span>    |
-| <span data-ttu-id="79c22-326">lightBlue</span><span class="sxs-lookup"><span data-stu-id="79c22-326">lightBlue</span></span>   | <span data-ttu-id="79c22-327">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-327">0</span></span>     |
-| <span data-ttu-id="79c22-328">lightGreen</span><span class="sxs-lookup"><span data-stu-id="79c22-328">lightGreen</span></span>  | <span data-ttu-id="79c22-329">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-329">1</span></span>     |
-| <span data-ttu-id="79c22-330">lightOrange</span><span class="sxs-lookup"><span data-stu-id="79c22-330">lightOrange</span></span> | <span data-ttu-id="79c22-331">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-331">2</span></span>     |
-| <span data-ttu-id="79c22-332">lightGray</span><span class="sxs-lookup"><span data-stu-id="79c22-332">lightGray</span></span>   | <span data-ttu-id="79c22-333">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-333">3</span></span>     |
-| <span data-ttu-id="79c22-334">lightYellow</span><span class="sxs-lookup"><span data-stu-id="79c22-334">lightYellow</span></span> | <span data-ttu-id="79c22-335">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-335">4</span></span>     |
-| <span data-ttu-id="79c22-336">lightTeal</span><span class="sxs-lookup"><span data-stu-id="79c22-336">lightTeal</span></span>   | <span data-ttu-id="79c22-337">5 </span><span class="sxs-lookup"><span data-stu-id="79c22-337">5</span></span>     |
-| <span data-ttu-id="79c22-338">lightPink</span><span class="sxs-lookup"><span data-stu-id="79c22-338">lightPink</span></span>   | <span data-ttu-id="79c22-339">6 </span><span class="sxs-lookup"><span data-stu-id="79c22-339">6</span></span>     |
-| <span data-ttu-id="79c22-340">lightBrown</span><span class="sxs-lookup"><span data-stu-id="79c22-340">lightBrown</span></span>  | <span data-ttu-id="79c22-341">7 </span><span class="sxs-lookup"><span data-stu-id="79c22-341">7</span></span>     |
-| <span data-ttu-id="79c22-342">lightRed</span><span class="sxs-lookup"><span data-stu-id="79c22-342">lightRed</span></span>    | <span data-ttu-id="79c22-343">8 </span><span class="sxs-lookup"><span data-stu-id="79c22-343">8</span></span>     |
-| <span data-ttu-id="79c22-344">maxColor</span><span class="sxs-lookup"><span data-stu-id="79c22-344">maxColor</span></span>    | <span data-ttu-id="79c22-345">9 </span><span class="sxs-lookup"><span data-stu-id="79c22-345">9</span></span>     |
+| <span data-ttu-id="89c11-330">Automático</span><span class="sxs-lookup"><span data-stu-id="89c11-330">auto</span></span>        | <span data-ttu-id="89c11-331">-1</span><span class="sxs-lookup"><span data-stu-id="89c11-331">-1</span></span>    |
+| <span data-ttu-id="89c11-332">lightBlue</span><span class="sxs-lookup"><span data-stu-id="89c11-332">lightBlue</span></span>   | <span data-ttu-id="89c11-333">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-333">0</span></span>     |
+| <span data-ttu-id="89c11-334">lightGreen</span><span class="sxs-lookup"><span data-stu-id="89c11-334">lightGreen</span></span>  | <span data-ttu-id="89c11-335">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-335">1</span></span>     |
+| <span data-ttu-id="89c11-336">lightOrange</span><span class="sxs-lookup"><span data-stu-id="89c11-336">lightOrange</span></span> | <span data-ttu-id="89c11-337">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-337">2</span></span>     |
+| <span data-ttu-id="89c11-338">lightGray</span><span class="sxs-lookup"><span data-stu-id="89c11-338">lightGray</span></span>   | <span data-ttu-id="89c11-339">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-339">3</span></span>     |
+| <span data-ttu-id="89c11-340">lightYellow</span><span class="sxs-lookup"><span data-stu-id="89c11-340">lightYellow</span></span> | <span data-ttu-id="89c11-341">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-341">4</span></span>     |
+| <span data-ttu-id="89c11-342">lightTeal</span><span class="sxs-lookup"><span data-stu-id="89c11-342">lightTeal</span></span>   | <span data-ttu-id="89c11-343">5 </span><span class="sxs-lookup"><span data-stu-id="89c11-343">5</span></span>     |
+| <span data-ttu-id="89c11-344">lightPink</span><span class="sxs-lookup"><span data-stu-id="89c11-344">lightPink</span></span>   | <span data-ttu-id="89c11-345">6 </span><span class="sxs-lookup"><span data-stu-id="89c11-345">6</span></span>     |
+| <span data-ttu-id="89c11-346">lightBrown</span><span class="sxs-lookup"><span data-stu-id="89c11-346">lightBrown</span></span>  | <span data-ttu-id="89c11-347">7 </span><span class="sxs-lookup"><span data-stu-id="89c11-347">7</span></span>     |
+| <span data-ttu-id="89c11-348">lightRed</span><span class="sxs-lookup"><span data-stu-id="89c11-348">lightRed</span></span>    | <span data-ttu-id="89c11-349">8 </span><span class="sxs-lookup"><span data-stu-id="89c11-349">8</span></span>     |
+| <span data-ttu-id="89c11-350">maxColor</span><span class="sxs-lookup"><span data-stu-id="89c11-350">maxColor</span></span>    | <span data-ttu-id="89c11-351">9 </span><span class="sxs-lookup"><span data-stu-id="89c11-351">9</span></span>     |
 
 
-### <a name="educationsynchronizationprofilestate-values"></a><span data-ttu-id="79c22-346">valores de educationSynchronizationProfileState</span><span class="sxs-lookup"><span data-stu-id="79c22-346">educationSynchronizationProfileState values</span></span>
+### <a name="educationsynchronizationprofilestate-values"></a><span data-ttu-id="89c11-352">valores de educationSynchronizationProfileState</span><span class="sxs-lookup"><span data-stu-id="89c11-352">educationSynchronizationProfileState values</span></span>
 
-| <span data-ttu-id="79c22-347">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-347">Member</span></span>             | <span data-ttu-id="79c22-348">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-348">Value</span></span> |
+| <span data-ttu-id="89c11-353">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-353">Member</span></span>             | <span data-ttu-id="89c11-354">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-354">Value</span></span> |
 | :----------------- | :---- |
-| <span data-ttu-id="79c22-349">deleta</span><span class="sxs-lookup"><span data-stu-id="79c22-349">deleting</span></span>           | <span data-ttu-id="79c22-350">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-350">2</span></span>     |
-| <span data-ttu-id="79c22-351">deletionFailed</span><span class="sxs-lookup"><span data-stu-id="79c22-351">deletionFailed</span></span>     | <span data-ttu-id="79c22-352">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-352">3</span></span>     |
-| <span data-ttu-id="79c22-353">provisioningFailed</span><span class="sxs-lookup"><span data-stu-id="79c22-353">provisioningFailed</span></span> | <span data-ttu-id="79c22-354">5 </span><span class="sxs-lookup"><span data-stu-id="79c22-354">5</span></span>     |
-| <span data-ttu-id="79c22-355">provisionado</span><span class="sxs-lookup"><span data-stu-id="79c22-355">provisioned</span></span>        | <span data-ttu-id="79c22-356">6 </span><span class="sxs-lookup"><span data-stu-id="79c22-356">6</span></span>     |
-| <span data-ttu-id="79c22-357">provisionamento</span><span class="sxs-lookup"><span data-stu-id="79c22-357">provisioning</span></span>       | <span data-ttu-id="79c22-358">7 </span><span class="sxs-lookup"><span data-stu-id="79c22-358">7</span></span>     |
-| <span data-ttu-id="79c22-359">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-359">unknownFutureValue</span></span> | <span data-ttu-id="79c22-360">8 </span><span class="sxs-lookup"><span data-stu-id="79c22-360">8</span></span>     |
+| <span data-ttu-id="89c11-355">deleta</span><span class="sxs-lookup"><span data-stu-id="89c11-355">deleting</span></span>           | <span data-ttu-id="89c11-356">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-356">2</span></span>     |
+| <span data-ttu-id="89c11-357">deletionFailed</span><span class="sxs-lookup"><span data-stu-id="89c11-357">deletionFailed</span></span>     | <span data-ttu-id="89c11-358">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-358">3</span></span>     |
+| <span data-ttu-id="89c11-359">provisioningFailed</span><span class="sxs-lookup"><span data-stu-id="89c11-359">provisioningFailed</span></span> | <span data-ttu-id="89c11-360">5 </span><span class="sxs-lookup"><span data-stu-id="89c11-360">5</span></span>     |
+| <span data-ttu-id="89c11-361">provisionado</span><span class="sxs-lookup"><span data-stu-id="89c11-361">provisioned</span></span>        | <span data-ttu-id="89c11-362">6 </span><span class="sxs-lookup"><span data-stu-id="89c11-362">6</span></span>     |
+| <span data-ttu-id="89c11-363">provisionamento</span><span class="sxs-lookup"><span data-stu-id="89c11-363">provisioning</span></span>       | <span data-ttu-id="89c11-364">7 </span><span class="sxs-lookup"><span data-stu-id="89c11-364">7</span></span>     |
+| <span data-ttu-id="89c11-365">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-365">unknownFutureValue</span></span> | <span data-ttu-id="89c11-366">8 </span><span class="sxs-lookup"><span data-stu-id="89c11-366">8</span></span>     |
 
 
-### <a name="educationsynchronizationstatus-values"></a><span data-ttu-id="79c22-361">valores de educationSynchronizationStatus</span><span class="sxs-lookup"><span data-stu-id="79c22-361">educationSynchronizationStatus values</span></span>
+### <a name="educationsynchronizationstatus-values"></a><span data-ttu-id="89c11-367">valores de educationSynchronizationStatus</span><span class="sxs-lookup"><span data-stu-id="89c11-367">educationSynchronizationStatus values</span></span>
 
-| <span data-ttu-id="79c22-362">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-362">Member</span></span>             | <span data-ttu-id="79c22-363">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-363">Value</span></span> |
+| <span data-ttu-id="89c11-368">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-368">Member</span></span>             | <span data-ttu-id="89c11-369">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-369">Value</span></span> |
 | :----------------- | :---- |
-| <span data-ttu-id="79c22-364">pausado</span><span class="sxs-lookup"><span data-stu-id="79c22-364">paused</span></span>             | <span data-ttu-id="79c22-365">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-365">0</span></span>     |
-| <span data-ttu-id="79c22-366">inProgress</span><span class="sxs-lookup"><span data-stu-id="79c22-366">inProgress</span></span>         | <span data-ttu-id="79c22-367">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-367">1</span></span>     |
-| <span data-ttu-id="79c22-368">sucesso</span><span class="sxs-lookup"><span data-stu-id="79c22-368">success</span></span>            | <span data-ttu-id="79c22-369">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-369">2</span></span>     |
-| <span data-ttu-id="79c22-370">erro</span><span class="sxs-lookup"><span data-stu-id="79c22-370">error</span></span>              | <span data-ttu-id="79c22-371">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-371">3</span></span>     |
-| <span data-ttu-id="79c22-372">validationError</span><span class="sxs-lookup"><span data-stu-id="79c22-372">validationError</span></span>    | <span data-ttu-id="79c22-373">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-373">4</span></span>     |
-| <span data-ttu-id="79c22-374">em quarentena</span><span class="sxs-lookup"><span data-stu-id="79c22-374">quarantined</span></span>        | <span data-ttu-id="79c22-375">5 </span><span class="sxs-lookup"><span data-stu-id="79c22-375">5</span></span>     |
-| <span data-ttu-id="79c22-376">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-376">unknownFutureValue</span></span> | <span data-ttu-id="79c22-377">6 </span><span class="sxs-lookup"><span data-stu-id="79c22-377">6</span></span>     |
+| <span data-ttu-id="89c11-370">pausado</span><span class="sxs-lookup"><span data-stu-id="89c11-370">paused</span></span>             | <span data-ttu-id="89c11-371">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-371">0</span></span>     |
+| <span data-ttu-id="89c11-372">inProgress</span><span class="sxs-lookup"><span data-stu-id="89c11-372">inProgress</span></span>         | <span data-ttu-id="89c11-373">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-373">1</span></span>     |
+| <span data-ttu-id="89c11-374">sucesso</span><span class="sxs-lookup"><span data-stu-id="89c11-374">success</span></span>            | <span data-ttu-id="89c11-375">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-375">2</span></span>     |
+| <span data-ttu-id="89c11-376">erro</span><span class="sxs-lookup"><span data-stu-id="89c11-376">error</span></span>              | <span data-ttu-id="89c11-377">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-377">3</span></span>     |
+| <span data-ttu-id="89c11-378">validationError</span><span class="sxs-lookup"><span data-stu-id="89c11-378">validationError</span></span>    | <span data-ttu-id="89c11-379">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-379">4</span></span>     |
+| <span data-ttu-id="89c11-380">em quarentena</span><span class="sxs-lookup"><span data-stu-id="89c11-380">quarantined</span></span>        | <span data-ttu-id="89c11-381">5 </span><span class="sxs-lookup"><span data-stu-id="89c11-381">5</span></span>     |
+| <span data-ttu-id="89c11-382">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-382">unknownFutureValue</span></span> | <span data-ttu-id="89c11-383">6 </span><span class="sxs-lookup"><span data-stu-id="89c11-383">6</span></span>     |
 
-### <a name="educationexternalsource-values"></a><span data-ttu-id="79c22-378">valores de educationExternalSource</span><span class="sxs-lookup"><span data-stu-id="79c22-378">educationExternalSource values</span></span>
+### <a name="educationexternalsource-values"></a><span data-ttu-id="89c11-384">valores de educationExternalSource</span><span class="sxs-lookup"><span data-stu-id="89c11-384">educationExternalSource values</span></span>
 
-| <span data-ttu-id="79c22-379">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-379">Member</span></span>
+| <span data-ttu-id="89c11-385">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-385">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-380">activa</span><span class="sxs-lookup"><span data-stu-id="79c22-380">sis</span></span>
-| <span data-ttu-id="79c22-381">LMS</span><span class="sxs-lookup"><span data-stu-id="79c22-381">lms</span></span>
-| <span data-ttu-id="79c22-382">Manual</span><span class="sxs-lookup"><span data-stu-id="79c22-382">manual</span></span>
-| <span data-ttu-id="79c22-383">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-383">unknownFutureValue</span></span>
+| <span data-ttu-id="89c11-386">activa</span><span class="sxs-lookup"><span data-stu-id="89c11-386">sis</span></span>
+| <span data-ttu-id="89c11-387">LMS</span><span class="sxs-lookup"><span data-stu-id="89c11-387">lms</span></span>
+| <span data-ttu-id="89c11-388">Manual</span><span class="sxs-lookup"><span data-stu-id="89c11-388">manual</span></span>
+| <span data-ttu-id="89c11-389">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-389">unknownFutureValue</span></span>
 
-### <a name="educationgender-values"></a><span data-ttu-id="79c22-384">valores de educationGender</span><span class="sxs-lookup"><span data-stu-id="79c22-384">educationGender values</span></span>
+### <a name="educationgender-values"></a><span data-ttu-id="89c11-390">valores de educationGender</span><span class="sxs-lookup"><span data-stu-id="89c11-390">educationGender values</span></span>
 
-| <span data-ttu-id="79c22-385">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-385">Member</span></span>
+| <span data-ttu-id="89c11-391">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-391">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-386">feminino</span><span class="sxs-lookup"><span data-stu-id="79c22-386">female</span></span>
-| <span data-ttu-id="79c22-387">canto</span><span class="sxs-lookup"><span data-stu-id="79c22-387">male</span></span>
-| <span data-ttu-id="79c22-388">outro</span><span class="sxs-lookup"><span data-stu-id="79c22-388">other</span></span>
-| <span data-ttu-id="79c22-389">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-389">unknownFutureValue</span></span>
+| <span data-ttu-id="89c11-392">feminino</span><span class="sxs-lookup"><span data-stu-id="89c11-392">female</span></span>
+| <span data-ttu-id="89c11-393">canto</span><span class="sxs-lookup"><span data-stu-id="89c11-393">male</span></span>
+| <span data-ttu-id="89c11-394">outro</span><span class="sxs-lookup"><span data-stu-id="89c11-394">other</span></span>
+| <span data-ttu-id="89c11-395">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-395">unknownFutureValue</span></span>
 
 
-### <a name="eventtype-values"></a><span data-ttu-id="79c22-390">valores de eventType</span><span class="sxs-lookup"><span data-stu-id="79c22-390">eventType values</span></span>
+### <a name="eventtype-values"></a><span data-ttu-id="89c11-396">valores de eventType</span><span class="sxs-lookup"><span data-stu-id="89c11-396">eventType values</span></span>
 
-| <span data-ttu-id="79c22-391">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-391">Member</span></span>
+| <span data-ttu-id="89c11-397">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-397">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-392">singleInstance</span><span class="sxs-lookup"><span data-stu-id="79c22-392">singleInstance</span></span>
-| <span data-ttu-id="79c22-393">ocorrência</span><span class="sxs-lookup"><span data-stu-id="79c22-393">occurrence</span></span>
-| <span data-ttu-id="79c22-394">exceções</span><span class="sxs-lookup"><span data-stu-id="79c22-394">exception</span></span>
-| <span data-ttu-id="79c22-395">série</span><span class="sxs-lookup"><span data-stu-id="79c22-395">seriesMaster</span></span>
+| <span data-ttu-id="89c11-398">singleInstance</span><span class="sxs-lookup"><span data-stu-id="89c11-398">singleInstance</span></span>
+| <span data-ttu-id="89c11-399">ocorrência</span><span class="sxs-lookup"><span data-stu-id="89c11-399">occurrence</span></span>
+| <span data-ttu-id="89c11-400">exceções</span><span class="sxs-lookup"><span data-stu-id="89c11-400">exception</span></span>
+| <span data-ttu-id="89c11-401">série</span><span class="sxs-lookup"><span data-stu-id="89c11-401">seriesMaster</span></span>
 
 
-### <a name="sensitivity-values"></a><span data-ttu-id="79c22-396">valores de sensibilidade</span><span class="sxs-lookup"><span data-stu-id="79c22-396">sensitivity values</span></span>
+### <a name="sensitivity-values"></a><span data-ttu-id="89c11-402">valores de sensibilidade</span><span class="sxs-lookup"><span data-stu-id="89c11-402">sensitivity values</span></span>
 
-| <span data-ttu-id="79c22-397">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-397">Member</span></span>
+| <span data-ttu-id="89c11-403">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-403">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-398">SS</span><span class="sxs-lookup"><span data-stu-id="79c22-398">normal</span></span>
-| <span data-ttu-id="79c22-399">pessoal</span><span class="sxs-lookup"><span data-stu-id="79c22-399">personal</span></span>
-| <span data-ttu-id="79c22-400">privada</span><span class="sxs-lookup"><span data-stu-id="79c22-400">private</span></span>
-| <span data-ttu-id="79c22-401">acordo</span><span class="sxs-lookup"><span data-stu-id="79c22-401">confidential</span></span>
+| <span data-ttu-id="89c11-404">SS</span><span class="sxs-lookup"><span data-stu-id="89c11-404">normal</span></span>
+| <span data-ttu-id="89c11-405">pessoal</span><span class="sxs-lookup"><span data-stu-id="89c11-405">personal</span></span>
+| <span data-ttu-id="89c11-406">privada</span><span class="sxs-lookup"><span data-stu-id="89c11-406">private</span></span>
+| <span data-ttu-id="89c11-407">acordo</span><span class="sxs-lookup"><span data-stu-id="89c11-407">confidential</span></span>
 
 
-### <a name="importance-values"></a><span data-ttu-id="79c22-402">valores de importância</span><span class="sxs-lookup"><span data-stu-id="79c22-402">importance values</span></span>
+### <a name="importance-values"></a><span data-ttu-id="89c11-408">valores de importância</span><span class="sxs-lookup"><span data-stu-id="89c11-408">importance values</span></span>
 
-| <span data-ttu-id="79c22-403">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-403">Member</span></span>
+| <span data-ttu-id="89c11-409">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-409">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-404">low</span><span class="sxs-lookup"><span data-stu-id="79c22-404">low</span></span>
-| <span data-ttu-id="79c22-405">SS</span><span class="sxs-lookup"><span data-stu-id="79c22-405">normal</span></span>
-| <span data-ttu-id="79c22-406">high</span><span class="sxs-lookup"><span data-stu-id="79c22-406">high</span></span>
+| <span data-ttu-id="89c11-410">low</span><span class="sxs-lookup"><span data-stu-id="89c11-410">low</span></span>
+| <span data-ttu-id="89c11-411">SS</span><span class="sxs-lookup"><span data-stu-id="89c11-411">normal</span></span>
+| <span data-ttu-id="89c11-412">high</span><span class="sxs-lookup"><span data-stu-id="89c11-412">high</span></span>
 
 
-### <a name="educationuserrole-values"></a><span data-ttu-id="79c22-407">valores de educationUserRole</span><span class="sxs-lookup"><span data-stu-id="79c22-407">educationUserRole values</span></span>
-| <span data-ttu-id="79c22-408">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-408">Member</span></span>
+### <a name="educationuserrole-values"></a><span data-ttu-id="89c11-413">valores de educationUserRole</span><span class="sxs-lookup"><span data-stu-id="89c11-413">educationUserRole values</span></span>
+| <span data-ttu-id="89c11-414">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-414">Member</span></span>
 |:---------------------
-| <span data-ttu-id="79c22-409">student</span><span class="sxs-lookup"><span data-stu-id="79c22-409">student</span></span>
-| <span data-ttu-id="79c22-410">teacher</span><span class="sxs-lookup"><span data-stu-id="79c22-410">teacher</span></span>
-| <span data-ttu-id="79c22-411">docentes</span><span class="sxs-lookup"><span data-stu-id="79c22-411">faculty</span></span>
+| <span data-ttu-id="89c11-415">student</span><span class="sxs-lookup"><span data-stu-id="89c11-415">student</span></span>
+| <span data-ttu-id="89c11-416">teacher</span><span class="sxs-lookup"><span data-stu-id="89c11-416">teacher</span></span>
+| <span data-ttu-id="89c11-417">docentes</span><span class="sxs-lookup"><span data-stu-id="89c11-417">faculty</span></span>
 
 
-### <a name="meetingmessagetype-values"></a><span data-ttu-id="79c22-412">valores de meetingMessageType</span><span class="sxs-lookup"><span data-stu-id="79c22-412">meetingMessageType values</span></span>
+### <a name="meetingmessagetype-values"></a><span data-ttu-id="89c11-418">valores de meetingMessageType</span><span class="sxs-lookup"><span data-stu-id="89c11-418">meetingMessageType values</span></span>
 
-| <span data-ttu-id="79c22-413">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-413">Member</span></span>
+| <span data-ttu-id="89c11-419">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-419">Member</span></span>
 |:-----------------
-| <span data-ttu-id="79c22-414">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-414">none</span></span>
-| <span data-ttu-id="79c22-415">meetingRequest</span><span class="sxs-lookup"><span data-stu-id="79c22-415">meetingRequest</span></span>
-| <span data-ttu-id="79c22-416">meetingCancelled</span><span class="sxs-lookup"><span data-stu-id="79c22-416">meetingCancelled</span></span>
-| <span data-ttu-id="79c22-417">meetingAccepted</span><span class="sxs-lookup"><span data-stu-id="79c22-417">meetingAccepted</span></span>
-| <span data-ttu-id="79c22-418">meetingTentativelyAccepted</span><span class="sxs-lookup"><span data-stu-id="79c22-418">meetingTentativelyAccepted</span></span>
-| <span data-ttu-id="79c22-419">meetingDeclined</span><span class="sxs-lookup"><span data-stu-id="79c22-419">meetingDeclined</span></span>
+| <span data-ttu-id="89c11-420">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-420">none</span></span>
+| <span data-ttu-id="89c11-421">meetingRequest</span><span class="sxs-lookup"><span data-stu-id="89c11-421">meetingRequest</span></span>
+| <span data-ttu-id="89c11-422">meetingCancelled</span><span class="sxs-lookup"><span data-stu-id="89c11-422">meetingCancelled</span></span>
+| <span data-ttu-id="89c11-423">meetingAccepted</span><span class="sxs-lookup"><span data-stu-id="89c11-423">meetingAccepted</span></span>
+| <span data-ttu-id="89c11-424">meetingTentativelyAccepted</span><span class="sxs-lookup"><span data-stu-id="89c11-424">meetingTentativelyAccepted</span></span>
+| <span data-ttu-id="89c11-425">meetingDeclined</span><span class="sxs-lookup"><span data-stu-id="89c11-425">meetingDeclined</span></span>
 
 
-### <a name="followupflagstatus-values"></a><span data-ttu-id="79c22-420">valores de followupFlagStatus</span><span class="sxs-lookup"><span data-stu-id="79c22-420">followupFlagStatus values</span></span>
+### <a name="followupflagstatus-values"></a><span data-ttu-id="89c11-426">valores de followupFlagStatus</span><span class="sxs-lookup"><span data-stu-id="89c11-426">followupFlagStatus values</span></span>
 
-| <span data-ttu-id="79c22-421">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-421">Member</span></span>
+| <span data-ttu-id="89c11-427">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-427">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-422">não sinalizado</span><span class="sxs-lookup"><span data-stu-id="79c22-422">notFlagged</span></span>
-| <span data-ttu-id="79c22-423">complete</span><span class="sxs-lookup"><span data-stu-id="79c22-423">complete</span></span>
-| <span data-ttu-id="79c22-424">indicado</span><span class="sxs-lookup"><span data-stu-id="79c22-424">flagged</span></span>
+| <span data-ttu-id="89c11-428">não sinalizado</span><span class="sxs-lookup"><span data-stu-id="89c11-428">notFlagged</span></span>
+| <span data-ttu-id="89c11-429">complete</span><span class="sxs-lookup"><span data-stu-id="89c11-429">complete</span></span>
+| <span data-ttu-id="89c11-430">indicado</span><span class="sxs-lookup"><span data-stu-id="89c11-430">flagged</span></span>
 
 
-### <a name="inferenceclassificationtype-values"></a><span data-ttu-id="79c22-425">valores de inferenceClassificationType</span><span class="sxs-lookup"><span data-stu-id="79c22-425">inferenceClassificationType values</span></span>
+### <a name="inferenceclassificationtype-values"></a><span data-ttu-id="89c11-431">valores de inferenceClassificationType</span><span class="sxs-lookup"><span data-stu-id="89c11-431">inferenceClassificationType values</span></span>
 
-| <span data-ttu-id="79c22-426">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-426">Member</span></span>
+| <span data-ttu-id="89c11-432">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-432">Member</span></span>
 |:-----------------
-| <span data-ttu-id="79c22-427">Destaques</span><span class="sxs-lookup"><span data-stu-id="79c22-427">focused</span></span>
-| <span data-ttu-id="79c22-428">outro</span><span class="sxs-lookup"><span data-stu-id="79c22-428">other</span></span>
+| <span data-ttu-id="89c11-433">Destaques</span><span class="sxs-lookup"><span data-stu-id="89c11-433">focused</span></span>
+| <span data-ttu-id="89c11-434">outro</span><span class="sxs-lookup"><span data-stu-id="89c11-434">other</span></span>
 
 
-### <a name="iosnotificationalerttype-values"></a><span data-ttu-id="79c22-429">valores de iosNotificationAlertType</span><span class="sxs-lookup"><span data-stu-id="79c22-429">iosNotificationAlertType values</span></span>
+### <a name="iosnotificationalerttype-values"></a><span data-ttu-id="89c11-435">valores de iosNotificationAlertType</span><span class="sxs-lookup"><span data-stu-id="89c11-435">iosNotificationAlertType values</span></span>
 
-| <span data-ttu-id="79c22-430">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-430">Member</span></span>
+| <span data-ttu-id="89c11-436">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-436">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-431">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="79c22-431">deviceDefault</span></span>
-| <span data-ttu-id="79c22-432">Bandeira</span><span class="sxs-lookup"><span data-stu-id="79c22-432">banner</span></span>
-| <span data-ttu-id="79c22-433">JanelaRestrita</span><span class="sxs-lookup"><span data-stu-id="79c22-433">modal</span></span>
-| <span data-ttu-id="79c22-434">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-434">none</span></span>
+| <span data-ttu-id="89c11-437">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="89c11-437">deviceDefault</span></span>
+| <span data-ttu-id="89c11-438">Bandeira</span><span class="sxs-lookup"><span data-stu-id="89c11-438">banner</span></span>
+| <span data-ttu-id="89c11-439">JanelaRestrita</span><span class="sxs-lookup"><span data-stu-id="89c11-439">modal</span></span>
+| <span data-ttu-id="89c11-440">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-440">none</span></span>
 
-### <a name="deviceenrollmentfailurereason-values"></a><span data-ttu-id="79c22-435">valores de deviceEnrollmentFailureReason</span><span class="sxs-lookup"><span data-stu-id="79c22-435">deviceEnrollmentFailureReason values</span></span>
+### <a name="deviceenrollmentfailurereason-values"></a><span data-ttu-id="89c11-441">valores de deviceEnrollmentFailureReason</span><span class="sxs-lookup"><span data-stu-id="89c11-441">deviceEnrollmentFailureReason values</span></span>
 
-| <span data-ttu-id="79c22-436">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-436">Member</span></span>
+| <span data-ttu-id="89c11-442">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-442">Member</span></span>
 |:-------------
-| <span data-ttu-id="79c22-437">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-437">unknown</span></span>
-| <span data-ttu-id="79c22-438">autentica</span><span class="sxs-lookup"><span data-stu-id="79c22-438">authentication</span></span>
-| <span data-ttu-id="79c22-439">nesse</span><span class="sxs-lookup"><span data-stu-id="79c22-439">authorization</span></span>
-| <span data-ttu-id="79c22-440">accountValidation</span><span class="sxs-lookup"><span data-stu-id="79c22-440">accountValidation</span></span>
-| <span data-ttu-id="79c22-441">uservalidation</span><span class="sxs-lookup"><span data-stu-id="79c22-441">userValidation</span></span>
-| <span data-ttu-id="79c22-442">deviceNotSupported</span><span class="sxs-lookup"><span data-stu-id="79c22-442">deviceNotSupported</span></span>
-| <span data-ttu-id="79c22-443">inmanutenção</span><span class="sxs-lookup"><span data-stu-id="79c22-443">inMaintenance</span></span>
-| <span data-ttu-id="79c22-444">badRequest</span><span class="sxs-lookup"><span data-stu-id="79c22-444">badRequest</span></span>
-| <span data-ttu-id="79c22-445">featureNotSupported</span><span class="sxs-lookup"><span data-stu-id="79c22-445">featureNotSupported</span></span>
-| <span data-ttu-id="79c22-446">enrollmentRestrictionsEnforced</span><span class="sxs-lookup"><span data-stu-id="79c22-446">enrollmentRestrictionsEnforced</span></span>
-| <span data-ttu-id="79c22-447">clientDisconnected</span><span class="sxs-lookup"><span data-stu-id="79c22-447">clientDisconnected</span></span>
+| <span data-ttu-id="89c11-443">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-443">unknown</span></span>
+| <span data-ttu-id="89c11-444">autentica</span><span class="sxs-lookup"><span data-stu-id="89c11-444">authentication</span></span>
+| <span data-ttu-id="89c11-445">nesse</span><span class="sxs-lookup"><span data-stu-id="89c11-445">authorization</span></span>
+| <span data-ttu-id="89c11-446">accountValidation</span><span class="sxs-lookup"><span data-stu-id="89c11-446">accountValidation</span></span>
+| <span data-ttu-id="89c11-447">uservalidation</span><span class="sxs-lookup"><span data-stu-id="89c11-447">userValidation</span></span>
+| <span data-ttu-id="89c11-448">deviceNotSupported</span><span class="sxs-lookup"><span data-stu-id="89c11-448">deviceNotSupported</span></span>
+| <span data-ttu-id="89c11-449">inmanutenção</span><span class="sxs-lookup"><span data-stu-id="89c11-449">inMaintenance</span></span>
+| <span data-ttu-id="89c11-450">badRequest</span><span class="sxs-lookup"><span data-stu-id="89c11-450">badRequest</span></span>
+| <span data-ttu-id="89c11-451">featureNotSupported</span><span class="sxs-lookup"><span data-stu-id="89c11-451">featureNotSupported</span></span>
+| <span data-ttu-id="89c11-452">enrollmentRestrictionsEnforced</span><span class="sxs-lookup"><span data-stu-id="89c11-452">enrollmentRestrictionsEnforced</span></span>
+| <span data-ttu-id="89c11-453">clientDisconnected</span><span class="sxs-lookup"><span data-stu-id="89c11-453">clientDisconnected</span></span>
 
 
-### <a name="bodytype-values"></a><span data-ttu-id="79c22-448">valores de BodyType</span><span class="sxs-lookup"><span data-stu-id="79c22-448">bodyType values</span></span>
-| <span data-ttu-id="79c22-449">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-449">Member</span></span>
+### <a name="bodytype-values"></a><span data-ttu-id="89c11-454">valores de BodyType</span><span class="sxs-lookup"><span data-stu-id="89c11-454">bodyType values</span></span>
+| <span data-ttu-id="89c11-455">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-455">Member</span></span>
 |:---------
-| <span data-ttu-id="79c22-450">texto</span><span class="sxs-lookup"><span data-stu-id="79c22-450">text</span></span>
-| <span data-ttu-id="79c22-451">HTML</span><span class="sxs-lookup"><span data-stu-id="79c22-451">html</span></span>
+| <span data-ttu-id="89c11-456">texto</span><span class="sxs-lookup"><span data-stu-id="89c11-456">text</span></span>
+| <span data-ttu-id="89c11-457">HTML</span><span class="sxs-lookup"><span data-stu-id="89c11-457">html</span></span>
 
 
-### <a name="locationtype-values"></a><span data-ttu-id="79c22-452">valores LocationType</span><span class="sxs-lookup"><span data-stu-id="79c22-452">locationType values</span></span>
+### <a name="locationtype-values"></a><span data-ttu-id="89c11-458">valores LocationType</span><span class="sxs-lookup"><span data-stu-id="89c11-458">locationType values</span></span>
 
-| <span data-ttu-id="79c22-453">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-453">Member</span></span>
+| <span data-ttu-id="89c11-459">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-459">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-454">Padrão.</span><span class="sxs-lookup"><span data-stu-id="79c22-454">default</span></span>
-| <span data-ttu-id="79c22-455">conferenceRoom</span><span class="sxs-lookup"><span data-stu-id="79c22-455">conferenceRoom</span></span>
-| <span data-ttu-id="79c22-456">homeAddress</span><span class="sxs-lookup"><span data-stu-id="79c22-456">homeAddress</span></span>
-| <span data-ttu-id="79c22-457">businessAddress</span><span class="sxs-lookup"><span data-stu-id="79c22-457">businessAddress</span></span>
-| <span data-ttu-id="79c22-458">geoCoordinates</span><span class="sxs-lookup"><span data-stu-id="79c22-458">geoCoordinates</span></span>
-| <span data-ttu-id="79c22-459">streetAddress</span><span class="sxs-lookup"><span data-stu-id="79c22-459">streetAddress</span></span>
-| <span data-ttu-id="79c22-460">diárias</span><span class="sxs-lookup"><span data-stu-id="79c22-460">hotel</span></span>
-| <span data-ttu-id="79c22-461">restaurantes</span><span class="sxs-lookup"><span data-stu-id="79c22-461">restaurant</span></span>
-| <span data-ttu-id="79c22-462">localBusiness</span><span class="sxs-lookup"><span data-stu-id="79c22-462">localBusiness</span></span>
-| <span data-ttu-id="79c22-463">postalAddress</span><span class="sxs-lookup"><span data-stu-id="79c22-463">postalAddress</span></span>
+| <span data-ttu-id="89c11-460">Padrão.</span><span class="sxs-lookup"><span data-stu-id="89c11-460">default</span></span>
+| <span data-ttu-id="89c11-461">conferenceRoom</span><span class="sxs-lookup"><span data-stu-id="89c11-461">conferenceRoom</span></span>
+| <span data-ttu-id="89c11-462">homeAddress</span><span class="sxs-lookup"><span data-stu-id="89c11-462">homeAddress</span></span>
+| <span data-ttu-id="89c11-463">businessAddress</span><span class="sxs-lookup"><span data-stu-id="89c11-463">businessAddress</span></span>
+| <span data-ttu-id="89c11-464">geoCoordinates</span><span class="sxs-lookup"><span data-stu-id="89c11-464">geoCoordinates</span></span>
+| <span data-ttu-id="89c11-465">streetAddress</span><span class="sxs-lookup"><span data-stu-id="89c11-465">streetAddress</span></span>
+| <span data-ttu-id="89c11-466">diárias</span><span class="sxs-lookup"><span data-stu-id="89c11-466">hotel</span></span>
+| <span data-ttu-id="89c11-467">restaurantes</span><span class="sxs-lookup"><span data-stu-id="89c11-467">restaurant</span></span>
+| <span data-ttu-id="89c11-468">localBusiness</span><span class="sxs-lookup"><span data-stu-id="89c11-468">localBusiness</span></span>
+| <span data-ttu-id="89c11-469">postalAddress</span><span class="sxs-lookup"><span data-stu-id="89c11-469">postalAddress</span></span>
 
-### <a name="locationuniqueidtype-values"></a><span data-ttu-id="79c22-464">valores de locationUniqueIdType</span><span class="sxs-lookup"><span data-stu-id="79c22-464">locationUniqueIdType values</span></span>
+### <a name="locationuniqueidtype-values"></a><span data-ttu-id="89c11-470">valores de locationUniqueIdType</span><span class="sxs-lookup"><span data-stu-id="89c11-470">locationUniqueIdType values</span></span>
 
-| <span data-ttu-id="79c22-465">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-465">Member</span></span>
+| <span data-ttu-id="89c11-471">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-471">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-466">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-466">unknown</span></span>
-| <span data-ttu-id="79c22-467">locationStore</span><span class="sxs-lookup"><span data-stu-id="79c22-467">locationStore</span></span>
-| <span data-ttu-id="79c22-468">Directory</span><span class="sxs-lookup"><span data-stu-id="79c22-468">directory</span></span>
-| <span data-ttu-id="79c22-469">privada</span><span class="sxs-lookup"><span data-stu-id="79c22-469">private</span></span>
-| <span data-ttu-id="79c22-470">Bing</span><span class="sxs-lookup"><span data-stu-id="79c22-470">bing</span></span>
+| <span data-ttu-id="89c11-472">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-472">unknown</span></span>
+| <span data-ttu-id="89c11-473">locationStore</span><span class="sxs-lookup"><span data-stu-id="89c11-473">locationStore</span></span>
+| <span data-ttu-id="89c11-474">Directory</span><span class="sxs-lookup"><span data-stu-id="89c11-474">directory</span></span>
+| <span data-ttu-id="89c11-475">privada</span><span class="sxs-lookup"><span data-stu-id="89c11-475">private</span></span>
+| <span data-ttu-id="89c11-476">Bing</span><span class="sxs-lookup"><span data-stu-id="89c11-476">bing</span></span>
 
 
-### <a name="messageactionflag-values"></a><span data-ttu-id="79c22-471">valores de messageActionFlag</span><span class="sxs-lookup"><span data-stu-id="79c22-471">messageActionFlag values</span></span>
+### <a name="messageactionflag-values"></a><span data-ttu-id="89c11-477">valores de messageActionFlag</span><span class="sxs-lookup"><span data-stu-id="89c11-477">messageActionFlag values</span></span>
 
-| <span data-ttu-id="79c22-472">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-472">Member</span></span>
+| <span data-ttu-id="89c11-478">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-478">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-473">qualquer</span><span class="sxs-lookup"><span data-stu-id="79c22-473">any</span></span>
-| <span data-ttu-id="79c22-474">call</span><span class="sxs-lookup"><span data-stu-id="79c22-474">call</span></span>
-| <span data-ttu-id="79c22-475">doNotForward</span><span class="sxs-lookup"><span data-stu-id="79c22-475">doNotForward</span></span>
-| <span data-ttu-id="79c22-476">Acompanhamento</span><span class="sxs-lookup"><span data-stu-id="79c22-476">followUp</span></span>
-| <span data-ttu-id="79c22-477">conhecimento</span><span class="sxs-lookup"><span data-stu-id="79c22-477">fyi</span></span>
-| <span data-ttu-id="79c22-478">forward</span><span class="sxs-lookup"><span data-stu-id="79c22-478">forward</span></span>
-| <span data-ttu-id="79c22-479">noResponseNecessary</span><span class="sxs-lookup"><span data-stu-id="79c22-479">noResponseNecessary</span></span>
-| <span data-ttu-id="79c22-480">leitura</span><span class="sxs-lookup"><span data-stu-id="79c22-480">read</span></span>
-| <span data-ttu-id="79c22-481">reply</span><span class="sxs-lookup"><span data-stu-id="79c22-481">reply</span></span>
-| <span data-ttu-id="79c22-482">replyToAll</span><span class="sxs-lookup"><span data-stu-id="79c22-482">replyToAll</span></span>
-| <span data-ttu-id="79c22-483">exame</span><span class="sxs-lookup"><span data-stu-id="79c22-483">review</span></span>
+| <span data-ttu-id="89c11-479">qualquer</span><span class="sxs-lookup"><span data-stu-id="89c11-479">any</span></span>
+| <span data-ttu-id="89c11-480">call</span><span class="sxs-lookup"><span data-stu-id="89c11-480">call</span></span>
+| <span data-ttu-id="89c11-481">doNotForward</span><span class="sxs-lookup"><span data-stu-id="89c11-481">doNotForward</span></span>
+| <span data-ttu-id="89c11-482">Acompanhamento</span><span class="sxs-lookup"><span data-stu-id="89c11-482">followUp</span></span>
+| <span data-ttu-id="89c11-483">conhecimento</span><span class="sxs-lookup"><span data-stu-id="89c11-483">fyi</span></span>
+| <span data-ttu-id="89c11-484">forward</span><span class="sxs-lookup"><span data-stu-id="89c11-484">forward</span></span>
+| <span data-ttu-id="89c11-485">noResponseNecessary</span><span class="sxs-lookup"><span data-stu-id="89c11-485">noResponseNecessary</span></span>
+| <span data-ttu-id="89c11-486">leitura</span><span class="sxs-lookup"><span data-stu-id="89c11-486">read</span></span>
+| <span data-ttu-id="89c11-487">reply</span><span class="sxs-lookup"><span data-stu-id="89c11-487">reply</span></span>
+| <span data-ttu-id="89c11-488">replyToAll</span><span class="sxs-lookup"><span data-stu-id="89c11-488">replyToAll</span></span>
+| <span data-ttu-id="89c11-489">exame</span><span class="sxs-lookup"><span data-stu-id="89c11-489">review</span></span>
 
 
-### <a name="onenoteuserrole-values"></a><span data-ttu-id="79c22-484">valores de onenoteUserRole</span><span class="sxs-lookup"><span data-stu-id="79c22-484">onenoteUserRole values</span></span>
+### <a name="onenoteuserrole-values"></a><span data-ttu-id="89c11-490">valores de onenoteUserRole</span><span class="sxs-lookup"><span data-stu-id="89c11-490">onenoteUserRole values</span></span>
 
-| <span data-ttu-id="79c22-485">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-485">Member</span></span>      | <span data-ttu-id="79c22-486">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-486">Value</span></span> |
+| <span data-ttu-id="89c11-491">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-491">Member</span></span>      | <span data-ttu-id="89c11-492">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-492">Value</span></span> |
 | :---------- | :---- |
-| <span data-ttu-id="79c22-487">Proprietário</span><span class="sxs-lookup"><span data-stu-id="79c22-487">Owner</span></span>       | <span data-ttu-id="79c22-488">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-488">0</span></span>     |
-| <span data-ttu-id="79c22-489">Colaborador</span><span class="sxs-lookup"><span data-stu-id="79c22-489">Contributor</span></span> | <span data-ttu-id="79c22-490">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-490">1</span></span>     |
-| <span data-ttu-id="79c22-491">Leitor</span><span class="sxs-lookup"><span data-stu-id="79c22-491">Reader</span></span>      | <span data-ttu-id="79c22-492">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-492">2</span></span>     |
-| <span data-ttu-id="79c22-493">Nenhum</span><span class="sxs-lookup"><span data-stu-id="79c22-493">None</span></span>        | <span data-ttu-id="79c22-494">-1</span><span class="sxs-lookup"><span data-stu-id="79c22-494">-1</span></span>    |
+| <span data-ttu-id="89c11-493">Proprietário</span><span class="sxs-lookup"><span data-stu-id="89c11-493">Owner</span></span>       | <span data-ttu-id="89c11-494">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-494">0</span></span>     |
+| <span data-ttu-id="89c11-495">Colaborador</span><span class="sxs-lookup"><span data-stu-id="89c11-495">Contributor</span></span> | <span data-ttu-id="89c11-496">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-496">1</span></span>     |
+| <span data-ttu-id="89c11-497">Leitor</span><span class="sxs-lookup"><span data-stu-id="89c11-497">Reader</span></span>      | <span data-ttu-id="89c11-498">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-498">2</span></span>     |
+| <span data-ttu-id="89c11-499">Nenhum</span><span class="sxs-lookup"><span data-stu-id="89c11-499">None</span></span>        | <span data-ttu-id="89c11-500">-1</span><span class="sxs-lookup"><span data-stu-id="89c11-500">-1</span></span>    |
 
 
-### <a name="operationstatus-values"></a><span data-ttu-id="79c22-495">valores de operationStatus</span><span class="sxs-lookup"><span data-stu-id="79c22-495">operationStatus values</span></span>
+### <a name="operationstatus-values"></a><span data-ttu-id="89c11-501">valores de operationStatus</span><span class="sxs-lookup"><span data-stu-id="89c11-501">operationStatus values</span></span>
 
-| <span data-ttu-id="79c22-496">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-496">Member</span></span>
+| <span data-ttu-id="89c11-502">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-502">Member</span></span>
 |:-----------------
-| <span data-ttu-id="79c22-497">NotStarted</span><span class="sxs-lookup"><span data-stu-id="79c22-497">NotStarted</span></span>
-| <span data-ttu-id="79c22-498">Em execução</span><span class="sxs-lookup"><span data-stu-id="79c22-498">Running</span></span>
-| <span data-ttu-id="79c22-499">Completed</span><span class="sxs-lookup"><span data-stu-id="79c22-499">Completed</span></span>
-| <span data-ttu-id="79c22-500">Falhou</span><span class="sxs-lookup"><span data-stu-id="79c22-500">Failed</span></span>
+| <span data-ttu-id="89c11-503">NotStarted</span><span class="sxs-lookup"><span data-stu-id="89c11-503">NotStarted</span></span>
+| <span data-ttu-id="89c11-504">Em execução</span><span class="sxs-lookup"><span data-stu-id="89c11-504">Running</span></span>
+| <span data-ttu-id="89c11-505">Completed</span><span class="sxs-lookup"><span data-stu-id="89c11-505">Completed</span></span>
+| <span data-ttu-id="89c11-506">Falhou</span><span class="sxs-lookup"><span data-stu-id="89c11-506">Failed</span></span>
 
 
-### <a name="onenotepatchactiontype-values"></a><span data-ttu-id="79c22-501">valores de onenotePatchActionType</span><span class="sxs-lookup"><span data-stu-id="79c22-501">onenotePatchActionType values</span></span>
+### <a name="onenotepatchactiontype-values"></a><span data-ttu-id="89c11-507">valores de onenotePatchActionType</span><span class="sxs-lookup"><span data-stu-id="89c11-507">onenotePatchActionType values</span></span>
 
-| <span data-ttu-id="79c22-502">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-502">Member</span></span>
+| <span data-ttu-id="89c11-508">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-508">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-503">Substituir</span><span class="sxs-lookup"><span data-stu-id="79c22-503">Replace</span></span>
-| <span data-ttu-id="79c22-504">Append</span><span class="sxs-lookup"><span data-stu-id="79c22-504">Append</span></span>
-| <span data-ttu-id="79c22-505">Excluir</span><span class="sxs-lookup"><span data-stu-id="79c22-505">Delete</span></span>
-| <span data-ttu-id="79c22-506">Inserir</span><span class="sxs-lookup"><span data-stu-id="79c22-506">Insert</span></span>
-| <span data-ttu-id="79c22-507">Preceder</span><span class="sxs-lookup"><span data-stu-id="79c22-507">Prepend</span></span>
+| <span data-ttu-id="89c11-509">Substituir</span><span class="sxs-lookup"><span data-stu-id="89c11-509">Replace</span></span>
+| <span data-ttu-id="89c11-510">Append</span><span class="sxs-lookup"><span data-stu-id="89c11-510">Append</span></span>
+| <span data-ttu-id="89c11-511">Excluir</span><span class="sxs-lookup"><span data-stu-id="89c11-511">Delete</span></span>
+| <span data-ttu-id="89c11-512">Inserir</span><span class="sxs-lookup"><span data-stu-id="89c11-512">Insert</span></span>
+| <span data-ttu-id="89c11-513">Preceder</span><span class="sxs-lookup"><span data-stu-id="89c11-513">Prepend</span></span>
 
-### <a name="onenotepatchinsertposition-values"></a><span data-ttu-id="79c22-508">valores de onenotePatchInsertPosition</span><span class="sxs-lookup"><span data-stu-id="79c22-508">onenotePatchInsertPosition values</span></span>
+### <a name="onenotepatchinsertposition-values"></a><span data-ttu-id="89c11-514">valores de onenotePatchInsertPosition</span><span class="sxs-lookup"><span data-stu-id="89c11-514">onenotePatchInsertPosition values</span></span>
 
-| <span data-ttu-id="79c22-509">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-509">Member</span></span>
+| <span data-ttu-id="89c11-515">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-515">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-510">After</span><span class="sxs-lookup"><span data-stu-id="79c22-510">After</span></span>
-| <span data-ttu-id="79c22-511">Before</span><span class="sxs-lookup"><span data-stu-id="79c22-511">Before</span></span>
+| <span data-ttu-id="89c11-516">After</span><span class="sxs-lookup"><span data-stu-id="89c11-516">After</span></span>
+| <span data-ttu-id="89c11-517">Before</span><span class="sxs-lookup"><span data-stu-id="89c11-517">Before</span></span>
 
 
-### <a name="phonetype-values"></a><span data-ttu-id="79c22-512">valores de PhoneType</span><span class="sxs-lookup"><span data-stu-id="79c22-512">phoneType values</span></span>
+### <a name="phonetype-values"></a><span data-ttu-id="89c11-518">valores de PhoneType</span><span class="sxs-lookup"><span data-stu-id="89c11-518">phoneType values</span></span>
 
-| <span data-ttu-id="79c22-513">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-513">Member</span></span>
+| <span data-ttu-id="89c11-519">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-519">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-514">Casa</span><span class="sxs-lookup"><span data-stu-id="79c22-514">home</span></span>
-| <span data-ttu-id="79c22-515">Business</span><span class="sxs-lookup"><span data-stu-id="79c22-515">business</span></span>
-| <span data-ttu-id="79c22-516">processadores</span><span class="sxs-lookup"><span data-stu-id="79c22-516">mobile</span></span>
-| <span data-ttu-id="79c22-517">outro</span><span class="sxs-lookup"><span data-stu-id="79c22-517">other</span></span>
-| <span data-ttu-id="79c22-518">assistência</span><span class="sxs-lookup"><span data-stu-id="79c22-518">assistant</span></span>
-| <span data-ttu-id="79c22-519">homeFax</span><span class="sxs-lookup"><span data-stu-id="79c22-519">homeFax</span></span>
-| <span data-ttu-id="79c22-520">businessFax</span><span class="sxs-lookup"><span data-stu-id="79c22-520">businessFax</span></span>
-| <span data-ttu-id="79c22-521">otherFax</span><span class="sxs-lookup"><span data-stu-id="79c22-521">otherFax</span></span>
-| <span data-ttu-id="79c22-522">pager</span><span class="sxs-lookup"><span data-stu-id="79c22-522">pager</span></span>
-| <span data-ttu-id="79c22-523">Radio</span><span class="sxs-lookup"><span data-stu-id="79c22-523">radio</span></span>
+| <span data-ttu-id="89c11-520">Casa</span><span class="sxs-lookup"><span data-stu-id="89c11-520">home</span></span>
+| <span data-ttu-id="89c11-521">Business</span><span class="sxs-lookup"><span data-stu-id="89c11-521">business</span></span>
+| <span data-ttu-id="89c11-522">processadores</span><span class="sxs-lookup"><span data-stu-id="89c11-522">mobile</span></span>
+| <span data-ttu-id="89c11-523">outro</span><span class="sxs-lookup"><span data-stu-id="89c11-523">other</span></span>
+| <span data-ttu-id="89c11-524">assistência</span><span class="sxs-lookup"><span data-stu-id="89c11-524">assistant</span></span>
+| <span data-ttu-id="89c11-525">homeFax</span><span class="sxs-lookup"><span data-stu-id="89c11-525">homeFax</span></span>
+| <span data-ttu-id="89c11-526">businessFax</span><span class="sxs-lookup"><span data-stu-id="89c11-526">businessFax</span></span>
+| <span data-ttu-id="89c11-527">otherFax</span><span class="sxs-lookup"><span data-stu-id="89c11-527">otherFax</span></span>
+| <span data-ttu-id="89c11-528">pager</span><span class="sxs-lookup"><span data-stu-id="89c11-528">pager</span></span>
+| <span data-ttu-id="89c11-529">Radio</span><span class="sxs-lookup"><span data-stu-id="89c11-529">radio</span></span>
 
 
-### <a name="plannerpreviewtype-values"></a><span data-ttu-id="79c22-524">valores de plannerPreviewType</span><span class="sxs-lookup"><span data-stu-id="79c22-524">plannerPreviewType values</span></span>
+### <a name="plannerpreviewtype-values"></a><span data-ttu-id="89c11-530">valores de plannerPreviewType</span><span class="sxs-lookup"><span data-stu-id="89c11-530">plannerPreviewType values</span></span>
 
-| <span data-ttu-id="79c22-525">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-525">Member</span></span>
+| <span data-ttu-id="89c11-531">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-531">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-526">Automático</span><span class="sxs-lookup"><span data-stu-id="79c22-526">automatic</span></span>
-| <span data-ttu-id="79c22-527">nopreview</span><span class="sxs-lookup"><span data-stu-id="79c22-527">noPreview</span></span>
-| <span data-ttu-id="79c22-528">verificação</span><span class="sxs-lookup"><span data-stu-id="79c22-528">checklist</span></span>
-| <span data-ttu-id="79c22-529">descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-529">description</span></span>
-| <span data-ttu-id="79c22-530">referência</span><span class="sxs-lookup"><span data-stu-id="79c22-530">reference</span></span>
+| <span data-ttu-id="89c11-532">Automático</span><span class="sxs-lookup"><span data-stu-id="89c11-532">automatic</span></span>
+| <span data-ttu-id="89c11-533">nopreview</span><span class="sxs-lookup"><span data-stu-id="89c11-533">noPreview</span></span>
+| <span data-ttu-id="89c11-534">verificação</span><span class="sxs-lookup"><span data-stu-id="89c11-534">checklist</span></span>
+| <span data-ttu-id="89c11-535">description</span><span class="sxs-lookup"><span data-stu-id="89c11-535">description</span></span>
+| <span data-ttu-id="89c11-536">referência</span><span class="sxs-lookup"><span data-stu-id="89c11-536">reference</span></span>
 
 
-### <a name="status-values"></a><span data-ttu-id="79c22-531">valores de status</span><span class="sxs-lookup"><span data-stu-id="79c22-531">status values</span></span>
+### <a name="status-values"></a><span data-ttu-id="89c11-537">valores de status</span><span class="sxs-lookup"><span data-stu-id="89c11-537">status values</span></span>
 
-| <span data-ttu-id="79c22-532">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-532">Member</span></span>
+| <span data-ttu-id="89c11-538">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-538">Member</span></span>
 |:-----------------
-| <span data-ttu-id="79c22-533">active</span><span class="sxs-lookup"><span data-stu-id="79c22-533">active</span></span>
-| <span data-ttu-id="79c22-534">atualizado</span><span class="sxs-lookup"><span data-stu-id="79c22-534">updated</span></span>
-| <span data-ttu-id="79c22-535">deleted</span><span class="sxs-lookup"><span data-stu-id="79c22-535">deleted</span></span>
-| <span data-ttu-id="79c22-536">ignorado</span><span class="sxs-lookup"><span data-stu-id="79c22-536">ignored</span></span>
-| <span data-ttu-id="79c22-537">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-537">unknownFutureValue</span></span>
+| <span data-ttu-id="89c11-539">active</span><span class="sxs-lookup"><span data-stu-id="89c11-539">active</span></span>
+| <span data-ttu-id="89c11-540">atualizado</span><span class="sxs-lookup"><span data-stu-id="89c11-540">updated</span></span>
+| <span data-ttu-id="89c11-541">deleted</span><span class="sxs-lookup"><span data-stu-id="89c11-541">deleted</span></span>
+| <span data-ttu-id="89c11-542">ignorado</span><span class="sxs-lookup"><span data-stu-id="89c11-542">ignored</span></span>
+| <span data-ttu-id="89c11-543">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-543">unknownFutureValue</span></span>
 
 
-### <a name="weekindex-values"></a><span data-ttu-id="79c22-538">valores de weekIndex</span><span class="sxs-lookup"><span data-stu-id="79c22-538">weekIndex values</span></span>
+### <a name="weekindex-values"></a><span data-ttu-id="89c11-544">valores de weekIndex</span><span class="sxs-lookup"><span data-stu-id="89c11-544">weekIndex values</span></span>
 
-| <span data-ttu-id="79c22-539">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-539">Member</span></span>
+| <span data-ttu-id="89c11-545">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-545">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-540">primeiro</span><span class="sxs-lookup"><span data-stu-id="79c22-540">first</span></span>
-| <span data-ttu-id="79c22-541">secundária</span><span class="sxs-lookup"><span data-stu-id="79c22-541">second</span></span>
-| <span data-ttu-id="79c22-542">terceiriza</span><span class="sxs-lookup"><span data-stu-id="79c22-542">third</span></span>
-| <span data-ttu-id="79c22-543">etapa</span><span class="sxs-lookup"><span data-stu-id="79c22-543">fourth</span></span>
-| <span data-ttu-id="79c22-544">durar</span><span class="sxs-lookup"><span data-stu-id="79c22-544">last</span></span>
+| <span data-ttu-id="89c11-546">primeiro</span><span class="sxs-lookup"><span data-stu-id="89c11-546">first</span></span>
+| <span data-ttu-id="89c11-547">secundária</span><span class="sxs-lookup"><span data-stu-id="89c11-547">second</span></span>
+| <span data-ttu-id="89c11-548">terceiriza</span><span class="sxs-lookup"><span data-stu-id="89c11-548">third</span></span>
+| <span data-ttu-id="89c11-549">etapa</span><span class="sxs-lookup"><span data-stu-id="89c11-549">fourth</span></span>
+| <span data-ttu-id="89c11-550">durar</span><span class="sxs-lookup"><span data-stu-id="89c11-550">last</span></span>
 
 
-### <a name="dayofweek-values"></a><span data-ttu-id="79c22-545">valores de dayOfWeek</span><span class="sxs-lookup"><span data-stu-id="79c22-545">dayOfWeek values</span></span>
+### <a name="dayofweek-values"></a><span data-ttu-id="89c11-551">valores de dayOfWeek</span><span class="sxs-lookup"><span data-stu-id="89c11-551">dayOfWeek values</span></span>
 
-| <span data-ttu-id="79c22-546">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-546">Member</span></span>
+| <span data-ttu-id="89c11-552">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-552">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-547">domingo</span><span class="sxs-lookup"><span data-stu-id="79c22-547">sunday</span></span>
-| <span data-ttu-id="79c22-548">período</span><span class="sxs-lookup"><span data-stu-id="79c22-548">monday</span></span>
-| <span data-ttu-id="79c22-549">feira</span><span class="sxs-lookup"><span data-stu-id="79c22-549">tuesday</span></span>
-| <span data-ttu-id="79c22-550">feira</span><span class="sxs-lookup"><span data-stu-id="79c22-550">wednesday</span></span>
-| <span data-ttu-id="79c22-551">quinta-feira</span><span class="sxs-lookup"><span data-stu-id="79c22-551">thursday</span></span>
-| <span data-ttu-id="79c22-552">sexta</span><span class="sxs-lookup"><span data-stu-id="79c22-552">friday</span></span>
-| <span data-ttu-id="79c22-553">sábado</span><span class="sxs-lookup"><span data-stu-id="79c22-553">saturday</span></span>
+| <span data-ttu-id="89c11-553">domingo</span><span class="sxs-lookup"><span data-stu-id="89c11-553">sunday</span></span>
+| <span data-ttu-id="89c11-554">período</span><span class="sxs-lookup"><span data-stu-id="89c11-554">monday</span></span>
+| <span data-ttu-id="89c11-555">feira</span><span class="sxs-lookup"><span data-stu-id="89c11-555">tuesday</span></span>
+| <span data-ttu-id="89c11-556">feira</span><span class="sxs-lookup"><span data-stu-id="89c11-556">wednesday</span></span>
+| <span data-ttu-id="89c11-557">quinta-feira</span><span class="sxs-lookup"><span data-stu-id="89c11-557">thursday</span></span>
+| <span data-ttu-id="89c11-558">sexta</span><span class="sxs-lookup"><span data-stu-id="89c11-558">friday</span></span>
+| <span data-ttu-id="89c11-559">sábado</span><span class="sxs-lookup"><span data-stu-id="89c11-559">saturday</span></span>
 
-### <a name="recurrencepatterntype-values"></a><span data-ttu-id="79c22-554">valores recurrencePattern</span><span class="sxs-lookup"><span data-stu-id="79c22-554">recurrencePatternType values</span></span>
+### <a name="recurrencepatterntype-values"></a><span data-ttu-id="89c11-560">valores recurrencePattern</span><span class="sxs-lookup"><span data-stu-id="89c11-560">recurrencePatternType values</span></span>
 
-| <span data-ttu-id="79c22-555">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-555">Member</span></span>
+| <span data-ttu-id="89c11-561">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-561">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-556">diariamente</span><span class="sxs-lookup"><span data-stu-id="79c22-556">daily</span></span>
-| <span data-ttu-id="79c22-557">mensal</span><span class="sxs-lookup"><span data-stu-id="79c22-557">weekly</span></span>
-| <span data-ttu-id="79c22-558">absoluteMonthly</span><span class="sxs-lookup"><span data-stu-id="79c22-558">absoluteMonthly</span></span>
-| <span data-ttu-id="79c22-559">relativeMonthly</span><span class="sxs-lookup"><span data-stu-id="79c22-559">relativeMonthly</span></span>
-| <span data-ttu-id="79c22-560">absoluteYearly</span><span class="sxs-lookup"><span data-stu-id="79c22-560">absoluteYearly</span></span>
-| <span data-ttu-id="79c22-561">relativeYearly</span><span class="sxs-lookup"><span data-stu-id="79c22-561">relativeYearly</span></span>
+| <span data-ttu-id="89c11-562">diariamente</span><span class="sxs-lookup"><span data-stu-id="89c11-562">daily</span></span>
+| <span data-ttu-id="89c11-563">mensal</span><span class="sxs-lookup"><span data-stu-id="89c11-563">weekly</span></span>
+| <span data-ttu-id="89c11-564">absoluteMonthly</span><span class="sxs-lookup"><span data-stu-id="89c11-564">absoluteMonthly</span></span>
+| <span data-ttu-id="89c11-565">relativeMonthly</span><span class="sxs-lookup"><span data-stu-id="89c11-565">relativeMonthly</span></span>
+| <span data-ttu-id="89c11-566">absoluteYearly</span><span class="sxs-lookup"><span data-stu-id="89c11-566">absoluteYearly</span></span>
+| <span data-ttu-id="89c11-567">relativeYearly</span><span class="sxs-lookup"><span data-stu-id="89c11-567">relativeYearly</span></span>
 
 
-### <a name="recurrencerangetype-values"></a><span data-ttu-id="79c22-562">valores de recurrenceRangeType</span><span class="sxs-lookup"><span data-stu-id="79c22-562">recurrenceRangeType values</span></span>
+### <a name="recurrencerangetype-values"></a><span data-ttu-id="89c11-568">valores de recurrenceRangeType</span><span class="sxs-lookup"><span data-stu-id="89c11-568">recurrenceRangeType values</span></span>
 
-| <span data-ttu-id="79c22-563">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-563">Member</span></span>
+| <span data-ttu-id="89c11-569">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-569">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-564">endDate</span><span class="sxs-lookup"><span data-stu-id="79c22-564">endDate</span></span>
-| <span data-ttu-id="79c22-565">noEnd</span><span class="sxs-lookup"><span data-stu-id="79c22-565">noEnd</span></span>
-| <span data-ttu-id="79c22-566">numerada</span><span class="sxs-lookup"><span data-stu-id="79c22-566">numbered</span></span>
+| <span data-ttu-id="89c11-570">endDate</span><span class="sxs-lookup"><span data-stu-id="89c11-570">endDate</span></span>
+| <span data-ttu-id="89c11-571">noEnd</span><span class="sxs-lookup"><span data-stu-id="89c11-571">noEnd</span></span>
+| <span data-ttu-id="89c11-572">numerada</span><span class="sxs-lookup"><span data-stu-id="89c11-572">numbered</span></span>
 
 
-### <a name="onenotesourceservice-values"></a><span data-ttu-id="79c22-567">valores de onenoteSourceService</span><span class="sxs-lookup"><span data-stu-id="79c22-567">onenoteSourceService values</span></span>
-| <span data-ttu-id="79c22-568">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-568">Member</span></span>
+### <a name="onenotesourceservice-values"></a><span data-ttu-id="89c11-573">valores de onenoteSourceService</span><span class="sxs-lookup"><span data-stu-id="89c11-573">onenoteSourceService values</span></span>
+| <span data-ttu-id="89c11-574">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-574">Member</span></span>
 |:---------------------
-| <span data-ttu-id="79c22-569">Desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-569">Unknown</span></span>
-| <span data-ttu-id="79c22-570">OneDrive</span><span class="sxs-lookup"><span data-stu-id="79c22-570">OneDrive</span></span>
-| <span data-ttu-id="79c22-571">OneDriveForBusiness</span><span class="sxs-lookup"><span data-stu-id="79c22-571">OneDriveForBusiness</span></span>
-| <span data-ttu-id="79c22-572">OnPremOneDriveForBusiness</span><span class="sxs-lookup"><span data-stu-id="79c22-572">OnPremOneDriveForBusiness</span></span>
+| <span data-ttu-id="89c11-575">Desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-575">Unknown</span></span>
+| <span data-ttu-id="89c11-576">OneDrive</span><span class="sxs-lookup"><span data-stu-id="89c11-576">OneDrive</span></span>
+| <span data-ttu-id="89c11-577">OneDriveForBusiness</span><span class="sxs-lookup"><span data-stu-id="89c11-577">OneDriveForBusiness</span></span>
+| <span data-ttu-id="89c11-578">OnPremOneDriveForBusiness</span><span class="sxs-lookup"><span data-stu-id="89c11-578">OnPremOneDriveForBusiness</span></span>
 
 
-### <a name="responsetype-values"></a><span data-ttu-id="79c22-573">valores ResponseType</span><span class="sxs-lookup"><span data-stu-id="79c22-573">responseType values</span></span>
+### <a name="responsetype-values"></a><span data-ttu-id="89c11-579">valores ResponseType</span><span class="sxs-lookup"><span data-stu-id="89c11-579">responseType values</span></span>
 
-| <span data-ttu-id="79c22-574">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-574">Member</span></span>
+| <span data-ttu-id="89c11-580">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-580">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-575">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-575">none</span></span>
-| <span data-ttu-id="79c22-576">organizer</span><span class="sxs-lookup"><span data-stu-id="79c22-576">organizer</span></span>
-| <span data-ttu-id="79c22-577">tentativelyAccepted</span><span class="sxs-lookup"><span data-stu-id="79c22-577">tentativelyAccepted</span></span>
-| <span data-ttu-id="79c22-578">aceito</span><span class="sxs-lookup"><span data-stu-id="79c22-578">accepted</span></span>
-| <span data-ttu-id="79c22-579">recusada</span><span class="sxs-lookup"><span data-stu-id="79c22-579">declined</span></span>
-| <span data-ttu-id="79c22-580">Não respondido</span><span class="sxs-lookup"><span data-stu-id="79c22-580">notResponded</span></span>
+| <span data-ttu-id="89c11-581">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-581">none</span></span>
+| <span data-ttu-id="89c11-582">organizer</span><span class="sxs-lookup"><span data-stu-id="89c11-582">organizer</span></span>
+| <span data-ttu-id="89c11-583">tentativelyAccepted</span><span class="sxs-lookup"><span data-stu-id="89c11-583">tentativelyAccepted</span></span>
+| <span data-ttu-id="89c11-584">aceito</span><span class="sxs-lookup"><span data-stu-id="89c11-584">accepted</span></span>
+| <span data-ttu-id="89c11-585">recusada</span><span class="sxs-lookup"><span data-stu-id="89c11-585">declined</span></span>
+| <span data-ttu-id="89c11-586">Não respondido</span><span class="sxs-lookup"><span data-stu-id="89c11-586">notResponded</span></span>
 
 
-### <a name="activitydomain-values"></a><span data-ttu-id="79c22-581">valores de activityDomain</span><span class="sxs-lookup"><span data-stu-id="79c22-581">activityDomain values</span></span>
+### <a name="activitydomain-values"></a><span data-ttu-id="89c11-587">valores de activityDomain</span><span class="sxs-lookup"><span data-stu-id="89c11-587">activityDomain values</span></span>
 
-| <span data-ttu-id="79c22-582">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-582">Member</span></span>
+| <span data-ttu-id="89c11-588">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-588">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-583">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-583">unknown</span></span>
-| <span data-ttu-id="79c22-584">trabalho</span><span class="sxs-lookup"><span data-stu-id="79c22-584">work</span></span>
-| <span data-ttu-id="79c22-585">pessoal</span><span class="sxs-lookup"><span data-stu-id="79c22-585">personal</span></span>
-| <span data-ttu-id="79c22-586">irrestrito</span><span class="sxs-lookup"><span data-stu-id="79c22-586">unrestricted</span></span>
+| <span data-ttu-id="89c11-589">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-589">unknown</span></span>
+| <span data-ttu-id="89c11-590">trabalho</span><span class="sxs-lookup"><span data-stu-id="89c11-590">work</span></span>
+| <span data-ttu-id="89c11-591">pessoal</span><span class="sxs-lookup"><span data-stu-id="89c11-591">personal</span></span>
+| <span data-ttu-id="89c11-592">irrestrito</span><span class="sxs-lookup"><span data-stu-id="89c11-592">unrestricted</span></span>
 
 
-### <a name="websitetype-values"></a><span data-ttu-id="79c22-587">valores de WebSiteType</span><span class="sxs-lookup"><span data-stu-id="79c22-587">websiteType values</span></span>
+### <a name="websitetype-values"></a><span data-ttu-id="89c11-593">valores de WebSiteType</span><span class="sxs-lookup"><span data-stu-id="89c11-593">websiteType values</span></span>
 
-| <span data-ttu-id="79c22-588">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-588">Member</span></span>
+| <span data-ttu-id="89c11-594">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-594">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-589">outro</span><span class="sxs-lookup"><span data-stu-id="79c22-589">other</span></span>
-| <span data-ttu-id="79c22-590">Casa</span><span class="sxs-lookup"><span data-stu-id="79c22-590">home</span></span>
-| <span data-ttu-id="79c22-591">trabalho</span><span class="sxs-lookup"><span data-stu-id="79c22-591">work</span></span>
-| <span data-ttu-id="79c22-592">blog</span><span class="sxs-lookup"><span data-stu-id="79c22-592">blog</span></span>
-| <span data-ttu-id="79c22-593">perfil</span><span class="sxs-lookup"><span data-stu-id="79c22-593">profile</span></span>
+| <span data-ttu-id="89c11-595">outro</span><span class="sxs-lookup"><span data-stu-id="89c11-595">other</span></span>
+| <span data-ttu-id="89c11-596">Casa</span><span class="sxs-lookup"><span data-stu-id="89c11-596">home</span></span>
+| <span data-ttu-id="89c11-597">trabalho</span><span class="sxs-lookup"><span data-stu-id="89c11-597">work</span></span>
+| <span data-ttu-id="89c11-598">blog</span><span class="sxs-lookup"><span data-stu-id="89c11-598">blog</span></span>
+| <span data-ttu-id="89c11-599">perfil</span><span class="sxs-lookup"><span data-stu-id="89c11-599">profile</span></span>
 
 
-### <a name="categorycolor-values"></a><span data-ttu-id="79c22-594">valores de categoryColor</span><span class="sxs-lookup"><span data-stu-id="79c22-594">categoryColor values</span></span>
+### <a name="categorycolor-values"></a><span data-ttu-id="89c11-600">valores de categoryColor</span><span class="sxs-lookup"><span data-stu-id="89c11-600">categoryColor values</span></span>
 
-| <span data-ttu-id="79c22-595">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-595">Member</span></span>   | <span data-ttu-id="79c22-596">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-596">Value</span></span> |
+| <span data-ttu-id="89c11-601">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-601">Member</span></span>   | <span data-ttu-id="89c11-602">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-602">Value</span></span> |
 | :------- | :---- |
-| <span data-ttu-id="79c22-597">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-597">none</span></span>     | <span data-ttu-id="79c22-598">-1</span><span class="sxs-lookup"><span data-stu-id="79c22-598">-1</span></span>    |
-| <span data-ttu-id="79c22-599">preset0</span><span class="sxs-lookup"><span data-stu-id="79c22-599">preset0</span></span>  | <span data-ttu-id="79c22-600">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-600">0</span></span>     |
-| <span data-ttu-id="79c22-601">preset1</span><span class="sxs-lookup"><span data-stu-id="79c22-601">preset1</span></span>  | <span data-ttu-id="79c22-602">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-602">1</span></span>     |
-| <span data-ttu-id="79c22-603">preset2</span><span class="sxs-lookup"><span data-stu-id="79c22-603">preset2</span></span>  | <span data-ttu-id="79c22-604">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-604">2</span></span>     |
-| <span data-ttu-id="79c22-605">preset3</span><span class="sxs-lookup"><span data-stu-id="79c22-605">preset3</span></span>  | <span data-ttu-id="79c22-606">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-606">3</span></span>     |
-| <span data-ttu-id="79c22-607">preset4</span><span class="sxs-lookup"><span data-stu-id="79c22-607">preset4</span></span>  | <span data-ttu-id="79c22-608">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-608">4</span></span>     |
-| <span data-ttu-id="79c22-609">preset5</span><span class="sxs-lookup"><span data-stu-id="79c22-609">preset5</span></span>  | <span data-ttu-id="79c22-610">5 </span><span class="sxs-lookup"><span data-stu-id="79c22-610">5</span></span>     |
-| <span data-ttu-id="79c22-611">preset6</span><span class="sxs-lookup"><span data-stu-id="79c22-611">preset6</span></span>  | <span data-ttu-id="79c22-612">6 </span><span class="sxs-lookup"><span data-stu-id="79c22-612">6</span></span>     |
-| <span data-ttu-id="79c22-613">preset7</span><span class="sxs-lookup"><span data-stu-id="79c22-613">preset7</span></span>  | <span data-ttu-id="79c22-614">7 </span><span class="sxs-lookup"><span data-stu-id="79c22-614">7</span></span>     |
-| <span data-ttu-id="79c22-615">preset8</span><span class="sxs-lookup"><span data-stu-id="79c22-615">preset8</span></span>  | <span data-ttu-id="79c22-616">8 </span><span class="sxs-lookup"><span data-stu-id="79c22-616">8</span></span>     |
-| <span data-ttu-id="79c22-617">preset9</span><span class="sxs-lookup"><span data-stu-id="79c22-617">preset9</span></span>  | <span data-ttu-id="79c22-618">9 </span><span class="sxs-lookup"><span data-stu-id="79c22-618">9</span></span>     |
-| <span data-ttu-id="79c22-619">preset10</span><span class="sxs-lookup"><span data-stu-id="79c22-619">preset10</span></span> | <span data-ttu-id="79c22-620">10 </span><span class="sxs-lookup"><span data-stu-id="79c22-620">10</span></span>    |
-| <span data-ttu-id="79c22-621">preset11</span><span class="sxs-lookup"><span data-stu-id="79c22-621">preset11</span></span> | <span data-ttu-id="79c22-622">11</span><span class="sxs-lookup"><span data-stu-id="79c22-622">11</span></span>    |
-| <span data-ttu-id="79c22-623">preset12</span><span class="sxs-lookup"><span data-stu-id="79c22-623">preset12</span></span> | <span data-ttu-id="79c22-624">12 </span><span class="sxs-lookup"><span data-stu-id="79c22-624">12</span></span>    |
-| <span data-ttu-id="79c22-625">preset13</span><span class="sxs-lookup"><span data-stu-id="79c22-625">preset13</span></span> | <span data-ttu-id="79c22-626">13 </span><span class="sxs-lookup"><span data-stu-id="79c22-626">13</span></span>    |
-| <span data-ttu-id="79c22-627">preset14</span><span class="sxs-lookup"><span data-stu-id="79c22-627">preset14</span></span> | <span data-ttu-id="79c22-628">14 </span><span class="sxs-lookup"><span data-stu-id="79c22-628">14</span></span>    |
-| <span data-ttu-id="79c22-629">preset15</span><span class="sxs-lookup"><span data-stu-id="79c22-629">preset15</span></span> | <span data-ttu-id="79c22-630">15 </span><span class="sxs-lookup"><span data-stu-id="79c22-630">15</span></span>    |
-| <span data-ttu-id="79c22-631">preset16</span><span class="sxs-lookup"><span data-stu-id="79c22-631">preset16</span></span> | <span data-ttu-id="79c22-632">16 </span><span class="sxs-lookup"><span data-stu-id="79c22-632">16</span></span>    |
-| <span data-ttu-id="79c22-633">preset17</span><span class="sxs-lookup"><span data-stu-id="79c22-633">preset17</span></span> | <span data-ttu-id="79c22-634">17 </span><span class="sxs-lookup"><span data-stu-id="79c22-634">17</span></span>    |
-| <span data-ttu-id="79c22-635">preset18</span><span class="sxs-lookup"><span data-stu-id="79c22-635">preset18</span></span> | <span data-ttu-id="79c22-636">18 </span><span class="sxs-lookup"><span data-stu-id="79c22-636">18</span></span>    |
-| <span data-ttu-id="79c22-637">preset19</span><span class="sxs-lookup"><span data-stu-id="79c22-637">preset19</span></span> | <span data-ttu-id="79c22-638">19</span><span class="sxs-lookup"><span data-stu-id="79c22-638">19</span></span>    |
-| <span data-ttu-id="79c22-639">preset20</span><span class="sxs-lookup"><span data-stu-id="79c22-639">preset20</span></span> | <span data-ttu-id="79c22-640">508</span><span class="sxs-lookup"><span data-stu-id="79c22-640">20</span></span>    |
-| <span data-ttu-id="79c22-641">preset21</span><span class="sxs-lookup"><span data-stu-id="79c22-641">preset21</span></span> | <span data-ttu-id="79c22-642"> 21 </span><span class="sxs-lookup"><span data-stu-id="79c22-642">21</span></span>    |
-| <span data-ttu-id="79c22-643">preset22</span><span class="sxs-lookup"><span data-stu-id="79c22-643">preset22</span></span> | <span data-ttu-id="79c22-644">22</span><span class="sxs-lookup"><span data-stu-id="79c22-644">22</span></span>    |
-| <span data-ttu-id="79c22-645">preset23</span><span class="sxs-lookup"><span data-stu-id="79c22-645">preset23</span></span> | <span data-ttu-id="79c22-646">23</span><span class="sxs-lookup"><span data-stu-id="79c22-646">23</span></span>    |
-| <span data-ttu-id="79c22-647">preset24</span><span class="sxs-lookup"><span data-stu-id="79c22-647">preset24</span></span> | <span data-ttu-id="79c22-648">dia</span><span class="sxs-lookup"><span data-stu-id="79c22-648">24</span></span>    |
+| <span data-ttu-id="89c11-603">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-603">none</span></span>     | <span data-ttu-id="89c11-604">-1</span><span class="sxs-lookup"><span data-stu-id="89c11-604">-1</span></span>    |
+| <span data-ttu-id="89c11-605">preset0</span><span class="sxs-lookup"><span data-stu-id="89c11-605">preset0</span></span>  | <span data-ttu-id="89c11-606">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-606">0</span></span>     |
+| <span data-ttu-id="89c11-607">preset1</span><span class="sxs-lookup"><span data-stu-id="89c11-607">preset1</span></span>  | <span data-ttu-id="89c11-608">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-608">1</span></span>     |
+| <span data-ttu-id="89c11-609">preset2</span><span class="sxs-lookup"><span data-stu-id="89c11-609">preset2</span></span>  | <span data-ttu-id="89c11-610">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-610">2</span></span>     |
+| <span data-ttu-id="89c11-611">preset3</span><span class="sxs-lookup"><span data-stu-id="89c11-611">preset3</span></span>  | <span data-ttu-id="89c11-612">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-612">3</span></span>     |
+| <span data-ttu-id="89c11-613">preset4</span><span class="sxs-lookup"><span data-stu-id="89c11-613">preset4</span></span>  | <span data-ttu-id="89c11-614">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-614">4</span></span>     |
+| <span data-ttu-id="89c11-615">preset5</span><span class="sxs-lookup"><span data-stu-id="89c11-615">preset5</span></span>  | <span data-ttu-id="89c11-616">5 </span><span class="sxs-lookup"><span data-stu-id="89c11-616">5</span></span>     |
+| <span data-ttu-id="89c11-617">preset6</span><span class="sxs-lookup"><span data-stu-id="89c11-617">preset6</span></span>  | <span data-ttu-id="89c11-618">6 </span><span class="sxs-lookup"><span data-stu-id="89c11-618">6</span></span>     |
+| <span data-ttu-id="89c11-619">preset7</span><span class="sxs-lookup"><span data-stu-id="89c11-619">preset7</span></span>  | <span data-ttu-id="89c11-620">7 </span><span class="sxs-lookup"><span data-stu-id="89c11-620">7</span></span>     |
+| <span data-ttu-id="89c11-621">preset8</span><span class="sxs-lookup"><span data-stu-id="89c11-621">preset8</span></span>  | <span data-ttu-id="89c11-622">8 </span><span class="sxs-lookup"><span data-stu-id="89c11-622">8</span></span>     |
+| <span data-ttu-id="89c11-623">preset9</span><span class="sxs-lookup"><span data-stu-id="89c11-623">preset9</span></span>  | <span data-ttu-id="89c11-624">9 </span><span class="sxs-lookup"><span data-stu-id="89c11-624">9</span></span>     |
+| <span data-ttu-id="89c11-625">preset10</span><span class="sxs-lookup"><span data-stu-id="89c11-625">preset10</span></span> | <span data-ttu-id="89c11-626">10 </span><span class="sxs-lookup"><span data-stu-id="89c11-626">10</span></span>    |
+| <span data-ttu-id="89c11-627">preset11</span><span class="sxs-lookup"><span data-stu-id="89c11-627">preset11</span></span> | <span data-ttu-id="89c11-628">11 </span><span class="sxs-lookup"><span data-stu-id="89c11-628">11</span></span>    |
+| <span data-ttu-id="89c11-629">preset12</span><span class="sxs-lookup"><span data-stu-id="89c11-629">preset12</span></span> | <span data-ttu-id="89c11-630">12 </span><span class="sxs-lookup"><span data-stu-id="89c11-630">12</span></span>    |
+| <span data-ttu-id="89c11-631">preset13</span><span class="sxs-lookup"><span data-stu-id="89c11-631">preset13</span></span> | <span data-ttu-id="89c11-632">13 </span><span class="sxs-lookup"><span data-stu-id="89c11-632">13</span></span>    |
+| <span data-ttu-id="89c11-633">preset14</span><span class="sxs-lookup"><span data-stu-id="89c11-633">preset14</span></span> | <span data-ttu-id="89c11-634">14 </span><span class="sxs-lookup"><span data-stu-id="89c11-634">14</span></span>    |
+| <span data-ttu-id="89c11-635">preset15</span><span class="sxs-lookup"><span data-stu-id="89c11-635">preset15</span></span> | <span data-ttu-id="89c11-636">15 </span><span class="sxs-lookup"><span data-stu-id="89c11-636">15</span></span>    |
+| <span data-ttu-id="89c11-637">preset16</span><span class="sxs-lookup"><span data-stu-id="89c11-637">preset16</span></span> | <span data-ttu-id="89c11-638">16 </span><span class="sxs-lookup"><span data-stu-id="89c11-638">16</span></span>    |
+| <span data-ttu-id="89c11-639">preset17</span><span class="sxs-lookup"><span data-stu-id="89c11-639">preset17</span></span> | <span data-ttu-id="89c11-640">17 </span><span class="sxs-lookup"><span data-stu-id="89c11-640">17</span></span>    |
+| <span data-ttu-id="89c11-641">preset18</span><span class="sxs-lookup"><span data-stu-id="89c11-641">preset18</span></span> | <span data-ttu-id="89c11-642">18 </span><span class="sxs-lookup"><span data-stu-id="89c11-642">18</span></span>    |
+| <span data-ttu-id="89c11-643">preset19</span><span class="sxs-lookup"><span data-stu-id="89c11-643">preset19</span></span> | <span data-ttu-id="89c11-644">19</span><span class="sxs-lookup"><span data-stu-id="89c11-644">19</span></span>    |
+| <span data-ttu-id="89c11-645">preset20</span><span class="sxs-lookup"><span data-stu-id="89c11-645">preset20</span></span> | <span data-ttu-id="89c11-646">508</span><span class="sxs-lookup"><span data-stu-id="89c11-646">20</span></span>    |
+| <span data-ttu-id="89c11-647">preset21</span><span class="sxs-lookup"><span data-stu-id="89c11-647">preset21</span></span> | <span data-ttu-id="89c11-648"> 21 </span><span class="sxs-lookup"><span data-stu-id="89c11-648">21</span></span>    |
+| <span data-ttu-id="89c11-649">preset22</span><span class="sxs-lookup"><span data-stu-id="89c11-649">preset22</span></span> | <span data-ttu-id="89c11-650">22</span><span class="sxs-lookup"><span data-stu-id="89c11-650">22</span></span>    |
+| <span data-ttu-id="89c11-651">preset23</span><span class="sxs-lookup"><span data-stu-id="89c11-651">preset23</span></span> | <span data-ttu-id="89c11-652">23</span><span class="sxs-lookup"><span data-stu-id="89c11-652">23</span></span>    |
+| <span data-ttu-id="89c11-653">preset24</span><span class="sxs-lookup"><span data-stu-id="89c11-653">preset24</span></span> | <span data-ttu-id="89c11-654">dia</span><span class="sxs-lookup"><span data-stu-id="89c11-654">24</span></span>    |
 
-### <a name="alertfeedback-values"></a><span data-ttu-id="79c22-649">valores de alertFeedback</span><span class="sxs-lookup"><span data-stu-id="79c22-649">alertFeedback values</span></span>
+### <a name="alertfeedback-values"></a><span data-ttu-id="89c11-655">valores de alertFeedback</span><span class="sxs-lookup"><span data-stu-id="89c11-655">alertFeedback values</span></span>
 
-<span data-ttu-id="79c22-650">Possíveis valores de comentários no alerta fornecido por um analista.</span><span class="sxs-lookup"><span data-stu-id="79c22-650">Possible feedback values on the alert provided by an analyst.</span></span>
+<span data-ttu-id="89c11-656">Possíveis valores de comentários no alerta fornecido por um analista.</span><span class="sxs-lookup"><span data-stu-id="89c11-656">Possible feedback values on the alert provided by an analyst.</span></span>
 
-| <span data-ttu-id="79c22-651">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-651">Member</span></span>         | <span data-ttu-id="79c22-652">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-652">Value</span></span> | <span data-ttu-id="79c22-653">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-653">Description</span></span>               |
+| <span data-ttu-id="89c11-657">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-657">Member</span></span>         | <span data-ttu-id="89c11-658">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-658">Value</span></span> | <span data-ttu-id="89c11-659">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-659">Description</span></span>               |
 | :------------- | :---- | :------------------------ |
-| <span data-ttu-id="79c22-654">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-654">unknown</span></span>        | <span data-ttu-id="79c22-655">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-655">0</span></span>     | <span data-ttu-id="79c22-656">Unknown.</span><span class="sxs-lookup"><span data-stu-id="79c22-656">Unknown.</span></span>                  |
-| <span data-ttu-id="79c22-657">truePositive</span><span class="sxs-lookup"><span data-stu-id="79c22-657">truePositive</span></span>   | <span data-ttu-id="79c22-658">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-658">1</span></span>     | <span data-ttu-id="79c22-659">O alerta é verdadeiro e positivo.</span><span class="sxs-lookup"><span data-stu-id="79c22-659">Alert is true-positive.</span></span>   |
-| <span data-ttu-id="79c22-660">falsePositive</span><span class="sxs-lookup"><span data-stu-id="79c22-660">falsePositive</span></span>  | <span data-ttu-id="79c22-661">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-661">2</span></span>     | <span data-ttu-id="79c22-662">O alerta é falso positivo.</span><span class="sxs-lookup"><span data-stu-id="79c22-662">Alert is false-positive.</span></span>  |
-| <span data-ttu-id="79c22-663">benignPositive</span><span class="sxs-lookup"><span data-stu-id="79c22-663">benignPositive</span></span> | <span data-ttu-id="79c22-664">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-664">3</span></span>     | <span data-ttu-id="79c22-665">O alerta é benigno-positivo.</span><span class="sxs-lookup"><span data-stu-id="79c22-665">Alert is benign-positive.</span></span> |
+| <span data-ttu-id="89c11-660">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-660">unknown</span></span>        | <span data-ttu-id="89c11-661">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-661">0</span></span>     | <span data-ttu-id="89c11-662">Unknown.</span><span class="sxs-lookup"><span data-stu-id="89c11-662">Unknown.</span></span>                  |
+| <span data-ttu-id="89c11-663">truePositive</span><span class="sxs-lookup"><span data-stu-id="89c11-663">truePositive</span></span>   | <span data-ttu-id="89c11-664">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-664">1</span></span>     | <span data-ttu-id="89c11-665">O alerta é verdadeiro e positivo.</span><span class="sxs-lookup"><span data-stu-id="89c11-665">Alert is true-positive.</span></span>   |
+| <span data-ttu-id="89c11-666">falsePositive</span><span class="sxs-lookup"><span data-stu-id="89c11-666">falsePositive</span></span>  | <span data-ttu-id="89c11-667">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-667">2</span></span>     | <span data-ttu-id="89c11-668">O alerta é falso positivo.</span><span class="sxs-lookup"><span data-stu-id="89c11-668">Alert is false-positive.</span></span>  |
+| <span data-ttu-id="89c11-669">benignPositive</span><span class="sxs-lookup"><span data-stu-id="89c11-669">benignPositive</span></span> | <span data-ttu-id="89c11-670">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-670">3</span></span>     | <span data-ttu-id="89c11-671">O alerta é benigno-positivo.</span><span class="sxs-lookup"><span data-stu-id="89c11-671">Alert is benign-positive.</span></span> |
 
-### <a name="filehashtype-values"></a><span data-ttu-id="79c22-666">valores de filehashtype</span><span class="sxs-lookup"><span data-stu-id="79c22-666">fileHashType values</span></span>
+### <a name="filehashtype-values"></a><span data-ttu-id="89c11-672">valores de filehashtype</span><span class="sxs-lookup"><span data-stu-id="89c11-672">fileHashType values</span></span>
 
-| <span data-ttu-id="79c22-667">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-667">Member</span></span>              | <span data-ttu-id="79c22-668">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-668">Value</span></span> | <span data-ttu-id="79c22-669">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-669">Description</span></span>                    |
+| <span data-ttu-id="89c11-673">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-673">Member</span></span>              | <span data-ttu-id="89c11-674">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-674">Value</span></span> | <span data-ttu-id="89c11-675">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-675">Description</span></span>                    |
 | :------------------ | :---- | :----------------------------- |
-| <span data-ttu-id="79c22-670">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-670">unknown</span></span>             | <span data-ttu-id="79c22-671">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-671">0</span></span>     | <span data-ttu-id="79c22-672">Tipo desconhecido.</span><span class="sxs-lookup"><span data-stu-id="79c22-672">Unknown type.</span></span>                  |
-| <span data-ttu-id="79c22-673">SHA1</span><span class="sxs-lookup"><span data-stu-id="79c22-673">sha1</span></span>                | <span data-ttu-id="79c22-674">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-674">1</span></span>     | <span data-ttu-id="79c22-675">Tipo de hash SHA1.</span><span class="sxs-lookup"><span data-stu-id="79c22-675">SHA1 hash type.</span></span>                |
-| <span data-ttu-id="79c22-676">SHA256</span><span class="sxs-lookup"><span data-stu-id="79c22-676">sha256</span></span>              | <span data-ttu-id="79c22-677">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-677">2</span></span>     | <span data-ttu-id="79c22-678">Tipo de hash SHA256.</span><span class="sxs-lookup"><span data-stu-id="79c22-678">SHA256 hash type.</span></span>              |
-| <span data-ttu-id="79c22-679">MD5</span><span class="sxs-lookup"><span data-stu-id="79c22-679">md5</span></span>                 | <span data-ttu-id="79c22-680">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-680">3</span></span>     | <span data-ttu-id="79c22-681">Tipo de hash MD5.</span><span class="sxs-lookup"><span data-stu-id="79c22-681">MD5 hash type.</span></span>                 |
-| <span data-ttu-id="79c22-682">authenticodeHash256</span><span class="sxs-lookup"><span data-stu-id="79c22-682">authenticodeHash256</span></span> | <span data-ttu-id="79c22-683">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-683">4</span></span>     | <span data-ttu-id="79c22-684">Tipo de hash AuthenticodeHash256.</span><span class="sxs-lookup"><span data-stu-id="79c22-684">AuthenticodeHash256 hash type.</span></span> |
-| <span data-ttu-id="79c22-685">lsHash</span><span class="sxs-lookup"><span data-stu-id="79c22-685">lsHash</span></span>              | <span data-ttu-id="79c22-686">5 </span><span class="sxs-lookup"><span data-stu-id="79c22-686">5</span></span>     | <span data-ttu-id="79c22-687">Tipo de hash LsHash.</span><span class="sxs-lookup"><span data-stu-id="79c22-687">LsHash hash type.</span></span>              |
-| <span data-ttu-id="79c22-688">ctph</span><span class="sxs-lookup"><span data-stu-id="79c22-688">ctph</span></span>                | <span data-ttu-id="79c22-689">6 </span><span class="sxs-lookup"><span data-stu-id="79c22-689">6</span></span>     | <span data-ttu-id="79c22-690">Tipo de hash CTPH.</span><span class="sxs-lookup"><span data-stu-id="79c22-690">CTPH hash type.</span></span>                |
-| <span data-ttu-id="79c22-691">peSha1</span><span class="sxs-lookup"><span data-stu-id="79c22-691">peSha1</span></span>              | <span data-ttu-id="79c22-692">7 </span><span class="sxs-lookup"><span data-stu-id="79c22-692">7</span></span>     | <span data-ttu-id="79c22-693">Tipo de hash PESHA1.</span><span class="sxs-lookup"><span data-stu-id="79c22-693">PESHA1 hash type.</span></span>              |
-| <span data-ttu-id="79c22-694">peSha256</span><span class="sxs-lookup"><span data-stu-id="79c22-694">peSha256</span></span>            | <span data-ttu-id="79c22-695">8 </span><span class="sxs-lookup"><span data-stu-id="79c22-695">8</span></span>     | <span data-ttu-id="79c22-696">Tipo de hash PESHA256.</span><span class="sxs-lookup"><span data-stu-id="79c22-696">PESHA256 hash type.</span></span>            |
+| <span data-ttu-id="89c11-676">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-676">unknown</span></span>             | <span data-ttu-id="89c11-677">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-677">0</span></span>     | <span data-ttu-id="89c11-678">Tipo desconhecido.</span><span class="sxs-lookup"><span data-stu-id="89c11-678">Unknown type.</span></span>                  |
+| <span data-ttu-id="89c11-679">SHA1</span><span class="sxs-lookup"><span data-stu-id="89c11-679">sha1</span></span>                | <span data-ttu-id="89c11-680">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-680">1</span></span>     | <span data-ttu-id="89c11-681">Tipo de hash SHA1.</span><span class="sxs-lookup"><span data-stu-id="89c11-681">SHA1 hash type.</span></span>                |
+| <span data-ttu-id="89c11-682">SHA256</span><span class="sxs-lookup"><span data-stu-id="89c11-682">sha256</span></span>              | <span data-ttu-id="89c11-683">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-683">2</span></span>     | <span data-ttu-id="89c11-684">Tipo de hash SHA256.</span><span class="sxs-lookup"><span data-stu-id="89c11-684">SHA256 hash type.</span></span>              |
+| <span data-ttu-id="89c11-685">MD5</span><span class="sxs-lookup"><span data-stu-id="89c11-685">md5</span></span>                 | <span data-ttu-id="89c11-686">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-686">3</span></span>     | <span data-ttu-id="89c11-687">Tipo de hash MD5.</span><span class="sxs-lookup"><span data-stu-id="89c11-687">MD5 hash type.</span></span>                 |
+| <span data-ttu-id="89c11-688">authenticodeHash256</span><span class="sxs-lookup"><span data-stu-id="89c11-688">authenticodeHash256</span></span> | <span data-ttu-id="89c11-689">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-689">4</span></span>     | <span data-ttu-id="89c11-690">Tipo de hash AuthenticodeHash256.</span><span class="sxs-lookup"><span data-stu-id="89c11-690">AuthenticodeHash256 hash type.</span></span> |
+| <span data-ttu-id="89c11-691">lsHash</span><span class="sxs-lookup"><span data-stu-id="89c11-691">lsHash</span></span>              | <span data-ttu-id="89c11-692">5 </span><span class="sxs-lookup"><span data-stu-id="89c11-692">5</span></span>     | <span data-ttu-id="89c11-693">Tipo de hash LsHash.</span><span class="sxs-lookup"><span data-stu-id="89c11-693">LsHash hash type.</span></span>              |
+| <span data-ttu-id="89c11-694">ctph</span><span class="sxs-lookup"><span data-stu-id="89c11-694">ctph</span></span>                | <span data-ttu-id="89c11-695">6 </span><span class="sxs-lookup"><span data-stu-id="89c11-695">6</span></span>     | <span data-ttu-id="89c11-696">Tipo de hash CTPH.</span><span class="sxs-lookup"><span data-stu-id="89c11-696">CTPH hash type.</span></span>                |
+| <span data-ttu-id="89c11-697">peSha1</span><span class="sxs-lookup"><span data-stu-id="89c11-697">peSha1</span></span>              | <span data-ttu-id="89c11-698">7 </span><span class="sxs-lookup"><span data-stu-id="89c11-698">7</span></span>     | <span data-ttu-id="89c11-699">Tipo de hash PESHA1.</span><span class="sxs-lookup"><span data-stu-id="89c11-699">PESHA1 hash type.</span></span>              |
+| <span data-ttu-id="89c11-700">peSha256</span><span class="sxs-lookup"><span data-stu-id="89c11-700">peSha256</span></span>            | <span data-ttu-id="89c11-701">8 </span><span class="sxs-lookup"><span data-stu-id="89c11-701">8</span></span>     | <span data-ttu-id="89c11-702">Tipo de hash PESHA256.</span><span class="sxs-lookup"><span data-stu-id="89c11-702">PESHA256 hash type.</span></span>            |
 
-### <a name="connectiondirection-values"></a><span data-ttu-id="79c22-697">valores de connectionDirection</span><span class="sxs-lookup"><span data-stu-id="79c22-697">connectionDirection values</span></span>
+### <a name="connectiondirection-values"></a><span data-ttu-id="89c11-703">valores de connectionDirection</span><span class="sxs-lookup"><span data-stu-id="89c11-703">connectionDirection values</span></span>
 
-| <span data-ttu-id="79c22-698">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-698">Member</span></span>   | <span data-ttu-id="79c22-699">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-699">Value</span></span> | <span data-ttu-id="79c22-700">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-700">Description</span></span>          |
+| <span data-ttu-id="89c11-704">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-704">Member</span></span>   | <span data-ttu-id="89c11-705">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-705">Value</span></span> | <span data-ttu-id="89c11-706">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-706">Description</span></span>          |
 | :------- | :---- | :------------------- |
-| <span data-ttu-id="79c22-701">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-701">unknown</span></span>  | <span data-ttu-id="79c22-702">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-702">0</span></span>     | <span data-ttu-id="79c22-703">Conexão desconhecida.</span><span class="sxs-lookup"><span data-stu-id="79c22-703">Unknown connection.</span></span>  |
-| <span data-ttu-id="79c22-704">entrada</span><span class="sxs-lookup"><span data-stu-id="79c22-704">inbound</span></span>  | <span data-ttu-id="79c22-705">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-705">1</span></span>     | <span data-ttu-id="79c22-706">Conexão de entrada.</span><span class="sxs-lookup"><span data-stu-id="79c22-706">Inbound connection.</span></span>  |
-| <span data-ttu-id="79c22-707">saída</span><span class="sxs-lookup"><span data-stu-id="79c22-707">outbound</span></span> | <span data-ttu-id="79c22-708">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-708">2</span></span>     | <span data-ttu-id="79c22-709">Conexão de saída.</span><span class="sxs-lookup"><span data-stu-id="79c22-709">Outbound connection.</span></span> |
+| <span data-ttu-id="89c11-707">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-707">unknown</span></span>  | <span data-ttu-id="89c11-708">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-708">0</span></span>     | <span data-ttu-id="89c11-709">Conexão desconhecida.</span><span class="sxs-lookup"><span data-stu-id="89c11-709">Unknown connection.</span></span>  |
+| <span data-ttu-id="89c11-710">entrada</span><span class="sxs-lookup"><span data-stu-id="89c11-710">inbound</span></span>  | <span data-ttu-id="89c11-711">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-711">1</span></span>     | <span data-ttu-id="89c11-712">Conexão de entrada.</span><span class="sxs-lookup"><span data-stu-id="89c11-712">Inbound connection.</span></span>  |
+| <span data-ttu-id="89c11-713">saída</span><span class="sxs-lookup"><span data-stu-id="89c11-713">outbound</span></span> | <span data-ttu-id="89c11-714">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-714">2</span></span>     | <span data-ttu-id="89c11-715">Conexão de saída.</span><span class="sxs-lookup"><span data-stu-id="89c11-715">Outbound connection.</span></span> |
 
-### <a name="connectionstatus-values"></a><span data-ttu-id="79c22-710">valores de connectionStatus</span><span class="sxs-lookup"><span data-stu-id="79c22-710">connectionStatus values</span></span>
+### <a name="connectionstatus-values"></a><span data-ttu-id="89c11-716">valores de connectionStatus</span><span class="sxs-lookup"><span data-stu-id="89c11-716">connectionStatus values</span></span>
 
-| <span data-ttu-id="79c22-711">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-711">Member</span></span>    | <span data-ttu-id="79c22-712">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-712">Value</span></span> | <span data-ttu-id="79c22-713">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-713">Description</span></span>                |
+| <span data-ttu-id="89c11-717">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-717">Member</span></span>    | <span data-ttu-id="89c11-718">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-718">Value</span></span> | <span data-ttu-id="89c11-719">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-719">Description</span></span>                |
 | :-------- | :---- | :------------------------- |
-| <span data-ttu-id="79c22-714">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-714">unknown</span></span>   | <span data-ttu-id="79c22-715">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-715">0</span></span>     | <span data-ttu-id="79c22-716">Status de conexão desconhecido.</span><span class="sxs-lookup"><span data-stu-id="79c22-716">Unknown connection status.</span></span> |
-| <span data-ttu-id="79c22-717">tentou</span><span class="sxs-lookup"><span data-stu-id="79c22-717">attempted</span></span> | <span data-ttu-id="79c22-718">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-718">1</span></span>     | <span data-ttu-id="79c22-719">Tentativa de conexão.</span><span class="sxs-lookup"><span data-stu-id="79c22-719">Connection attempted.</span></span>      |
-| <span data-ttu-id="79c22-720">adicionada</span><span class="sxs-lookup"><span data-stu-id="79c22-720">succeeded</span></span> | <span data-ttu-id="79c22-721">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-721">2</span></span>     | <span data-ttu-id="79c22-722">Conexão bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="79c22-722">Connection succeeded.</span></span>      |
-| <span data-ttu-id="79c22-723">bloqueou</span><span class="sxs-lookup"><span data-stu-id="79c22-723">blocked</span></span>   | <span data-ttu-id="79c22-724">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-724">3</span></span>     | <span data-ttu-id="79c22-725">Conexão bloqueada.</span><span class="sxs-lookup"><span data-stu-id="79c22-725">Connection blocked.</span></span>        |
-| <span data-ttu-id="79c22-726">falhou</span><span class="sxs-lookup"><span data-stu-id="79c22-726">failed</span></span>    | <span data-ttu-id="79c22-727">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-727">4</span></span>     | <span data-ttu-id="79c22-728">Falha de conexão.</span><span class="sxs-lookup"><span data-stu-id="79c22-728">Connection failed.</span></span>         |
+| <span data-ttu-id="89c11-720">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-720">unknown</span></span>   | <span data-ttu-id="89c11-721">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-721">0</span></span>     | <span data-ttu-id="89c11-722">Status de conexão desconhecido.</span><span class="sxs-lookup"><span data-stu-id="89c11-722">Unknown connection status.</span></span> |
+| <span data-ttu-id="89c11-723">tentou</span><span class="sxs-lookup"><span data-stu-id="89c11-723">attempted</span></span> | <span data-ttu-id="89c11-724">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-724">1</span></span>     | <span data-ttu-id="89c11-725">Tentativa de conexão.</span><span class="sxs-lookup"><span data-stu-id="89c11-725">Connection attempted.</span></span>      |
+| <span data-ttu-id="89c11-726">adicionada</span><span class="sxs-lookup"><span data-stu-id="89c11-726">succeeded</span></span> | <span data-ttu-id="89c11-727">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-727">2</span></span>     | <span data-ttu-id="89c11-728">Conexão bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="89c11-728">Connection succeeded.</span></span>      |
+| <span data-ttu-id="89c11-729">bloqueou</span><span class="sxs-lookup"><span data-stu-id="89c11-729">blocked</span></span>   | <span data-ttu-id="89c11-730">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-730">3</span></span>     | <span data-ttu-id="89c11-731">Conexão bloqueada.</span><span class="sxs-lookup"><span data-stu-id="89c11-731">Connection blocked.</span></span>        |
+| <span data-ttu-id="89c11-732">falhou</span><span class="sxs-lookup"><span data-stu-id="89c11-732">failed</span></span>    | <span data-ttu-id="89c11-733">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-733">4</span></span>     | <span data-ttu-id="89c11-734">Falha de conexão.</span><span class="sxs-lookup"><span data-stu-id="89c11-734">Connection failed.</span></span>         |
 
-### <a name="processintegritylevel-values"></a><span data-ttu-id="79c22-729">valores de processIntegrityLevel</span><span class="sxs-lookup"><span data-stu-id="79c22-729">processIntegrityLevel values</span></span>
+### <a name="processintegritylevel-values"></a><span data-ttu-id="89c11-735">valores de processIntegrityLevel</span><span class="sxs-lookup"><span data-stu-id="89c11-735">processIntegrityLevel values</span></span>
 
-| <span data-ttu-id="79c22-730">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-730">Member</span></span>    | <span data-ttu-id="79c22-731">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-731">Value</span></span> | <span data-ttu-id="79c22-732">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-732">Description</span></span>                   |
+| <span data-ttu-id="89c11-736">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-736">Member</span></span>    | <span data-ttu-id="89c11-737">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-737">Value</span></span> | <span data-ttu-id="89c11-738">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-738">Description</span></span>                   |
 | :-------- | :---- | :---------------------------- |
-| <span data-ttu-id="79c22-733">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-733">unknown</span></span>   | <span data-ttu-id="79c22-734">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-734">0</span></span>     | <span data-ttu-id="79c22-735">Unknown.</span><span class="sxs-lookup"><span data-stu-id="79c22-735">Unknown.</span></span>                      |
-| <span data-ttu-id="79c22-736">não confiáveis</span><span class="sxs-lookup"><span data-stu-id="79c22-736">untrusted</span></span> | <span data-ttu-id="79c22-737">10 </span><span class="sxs-lookup"><span data-stu-id="79c22-737">10</span></span>    | <span data-ttu-id="79c22-738">O nível de integridade é não confiável.</span><span class="sxs-lookup"><span data-stu-id="79c22-738">Integrity level is Untrusted.</span></span> |
-| <span data-ttu-id="79c22-739">low</span><span class="sxs-lookup"><span data-stu-id="79c22-739">low</span></span>       | <span data-ttu-id="79c22-740">508</span><span class="sxs-lookup"><span data-stu-id="79c22-740">20</span></span>    | <span data-ttu-id="79c22-741">O nível de integridade é baixo.</span><span class="sxs-lookup"><span data-stu-id="79c22-741">Integrity level is Low.</span></span>       |
-| <span data-ttu-id="79c22-742">medium</span><span class="sxs-lookup"><span data-stu-id="79c22-742">medium</span></span>    | <span data-ttu-id="79c22-743">até</span><span class="sxs-lookup"><span data-stu-id="79c22-743">30</span></span>    | <span data-ttu-id="79c22-744">O nível de integridade é médio.</span><span class="sxs-lookup"><span data-stu-id="79c22-744">Integrity level is Medium.</span></span>    |
-| <span data-ttu-id="79c22-745">high</span><span class="sxs-lookup"><span data-stu-id="79c22-745">high</span></span>      | <span data-ttu-id="79c22-746">40</span><span class="sxs-lookup"><span data-stu-id="79c22-746">40</span></span>    | <span data-ttu-id="79c22-747">O nível de integridade é alto.</span><span class="sxs-lookup"><span data-stu-id="79c22-747">Integrity level is High.</span></span>      |
-| <span data-ttu-id="79c22-748">sistema</span><span class="sxs-lookup"><span data-stu-id="79c22-748">system</span></span>    | <span data-ttu-id="79c22-749">50</span><span class="sxs-lookup"><span data-stu-id="79c22-749">50</span></span>    | <span data-ttu-id="79c22-750">O nível de integridade é System.</span><span class="sxs-lookup"><span data-stu-id="79c22-750">Integrity level is System.</span></span>    |
+| <span data-ttu-id="89c11-739">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-739">unknown</span></span>   | <span data-ttu-id="89c11-740">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-740">0</span></span>     | <span data-ttu-id="89c11-741">Unknown.</span><span class="sxs-lookup"><span data-stu-id="89c11-741">Unknown.</span></span>                      |
+| <span data-ttu-id="89c11-742">não confiáveis</span><span class="sxs-lookup"><span data-stu-id="89c11-742">untrusted</span></span> | <span data-ttu-id="89c11-743">10 </span><span class="sxs-lookup"><span data-stu-id="89c11-743">10</span></span>    | <span data-ttu-id="89c11-744">O nível de integridade é não confiável.</span><span class="sxs-lookup"><span data-stu-id="89c11-744">Integrity level is Untrusted.</span></span> |
+| <span data-ttu-id="89c11-745">low</span><span class="sxs-lookup"><span data-stu-id="89c11-745">low</span></span>       | <span data-ttu-id="89c11-746">508</span><span class="sxs-lookup"><span data-stu-id="89c11-746">20</span></span>    | <span data-ttu-id="89c11-747">O nível de integridade é baixo.</span><span class="sxs-lookup"><span data-stu-id="89c11-747">Integrity level is Low.</span></span>       |
+| <span data-ttu-id="89c11-748">medium</span><span class="sxs-lookup"><span data-stu-id="89c11-748">medium</span></span>    | <span data-ttu-id="89c11-749">até</span><span class="sxs-lookup"><span data-stu-id="89c11-749">30</span></span>    | <span data-ttu-id="89c11-750">O nível de integridade é médio.</span><span class="sxs-lookup"><span data-stu-id="89c11-750">Integrity level is Medium.</span></span>    |
+| <span data-ttu-id="89c11-751">high</span><span class="sxs-lookup"><span data-stu-id="89c11-751">high</span></span>      | <span data-ttu-id="89c11-752">40</span><span class="sxs-lookup"><span data-stu-id="89c11-752">40</span></span>    | <span data-ttu-id="89c11-753">O nível de integridade é alto.</span><span class="sxs-lookup"><span data-stu-id="89c11-753">Integrity level is High.</span></span>      |
+| <span data-ttu-id="89c11-754">sistema</span><span class="sxs-lookup"><span data-stu-id="89c11-754">system</span></span>    | <span data-ttu-id="89c11-755">50</span><span class="sxs-lookup"><span data-stu-id="89c11-755">50</span></span>    | <span data-ttu-id="89c11-756">O nível de integridade é System.</span><span class="sxs-lookup"><span data-stu-id="89c11-756">Integrity level is System.</span></span>    |
 
-### <a name="registryhive-values"></a><span data-ttu-id="79c22-751">valores de registryHive</span><span class="sxs-lookup"><span data-stu-id="79c22-751">registryHive values</span></span>
+### <a name="registryhive-values"></a><span data-ttu-id="89c11-757">valores de registryHive</span><span class="sxs-lookup"><span data-stu-id="89c11-757">registryHive values</span></span>
 
-<span data-ttu-id="79c22-752">Enumeração para hives do registro, conforme definido por [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives) .</span><span class="sxs-lookup"><span data-stu-id="79c22-752">Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives).</span></span>
+<span data-ttu-id="89c11-758">Enumeração para hives do registro, conforme definido por [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives) .</span><span class="sxs-lookup"><span data-stu-id="89c11-758">Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives).</span></span>
 
-| <span data-ttu-id="79c22-753">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-753">Member</span></span>                  | <span data-ttu-id="79c22-754">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-754">Value</span></span> | <span data-ttu-id="79c22-755">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-755">Description</span></span>                       |
+| <span data-ttu-id="89c11-759">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-759">Member</span></span>                  | <span data-ttu-id="89c11-760">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-760">Value</span></span> | <span data-ttu-id="89c11-761">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-761">Description</span></span>                       |
 | :---------------------- | :---- | :-------------------------------- |
-| <span data-ttu-id="79c22-756">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-756">unknown</span></span>                 | <span data-ttu-id="79c22-757">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-757">0</span></span>     | <span data-ttu-id="79c22-758">Hive desconhecido.</span><span class="sxs-lookup"><span data-stu-id="79c22-758">Unknown hive.</span></span>                     |
-| <span data-ttu-id="79c22-759">currentConfig</span><span class="sxs-lookup"><span data-stu-id="79c22-759">currentConfig</span></span>           | <span data-ttu-id="79c22-760">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-760">1</span></span>     | <span data-ttu-id="79c22-761">HKEY_CURRENT_CONFIG Hive.</span><span class="sxs-lookup"><span data-stu-id="79c22-761">HKEY_CURRENT_CONFIG hive.</span></span>         |
-| <span data-ttu-id="79c22-762">currentUser</span><span class="sxs-lookup"><span data-stu-id="79c22-762">currentUser</span></span>             | <span data-ttu-id="79c22-763">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-763">2</span></span>     | <span data-ttu-id="79c22-764">HKEY_CURRENT_USER Hive.</span><span class="sxs-lookup"><span data-stu-id="79c22-764">HKEY_CURRENT_USER hive.</span></span>           |
-| <span data-ttu-id="79c22-765">localMachineSam</span><span class="sxs-lookup"><span data-stu-id="79c22-765">localMachineSam</span></span>         | <span data-ttu-id="79c22-766">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-766">3</span></span>     | <span data-ttu-id="79c22-767">HKEY_LOCAL_MACHINE Hive \SAM.</span><span class="sxs-lookup"><span data-stu-id="79c22-767">HKEY_LOCAL_MACHINE\SAM hive.</span></span>      |
-| <span data-ttu-id="79c22-768">localMachineSamSoftware</span><span class="sxs-lookup"><span data-stu-id="79c22-768">localMachineSamSoftware</span></span> | <span data-ttu-id="79c22-769">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-769">4</span></span>     | <span data-ttu-id="79c22-770">HKEY_LOCAL_MACHINE seção \Software.</span><span class="sxs-lookup"><span data-stu-id="79c22-770">HKEY_LOCAL_MACHINE\Software hive.</span></span> |
-| <span data-ttu-id="79c22-771">localMachineSystem</span><span class="sxs-lookup"><span data-stu-id="79c22-771">localMachineSystem</span></span>      | <span data-ttu-id="79c22-772">5 </span><span class="sxs-lookup"><span data-stu-id="79c22-772">5</span></span>     | <span data-ttu-id="79c22-773">HKEY_LOCAL_MACHINE o hive de \System.</span><span class="sxs-lookup"><span data-stu-id="79c22-773">HKEY_LOCAL_MACHINE\System hive.</span></span>   |
-| <span data-ttu-id="79c22-774">usersDefault</span><span class="sxs-lookup"><span data-stu-id="79c22-774">usersDefault</span></span>            | <span data-ttu-id="79c22-775">6 </span><span class="sxs-lookup"><span data-stu-id="79c22-775">6</span></span>     | <span data-ttu-id="79c22-776">HKEY_USERS \\ . Hive padrão.</span><span class="sxs-lookup"><span data-stu-id="79c22-776">HKEY_USERS\\.DEFAULT hive.</span></span>        |
+| <span data-ttu-id="89c11-762">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-762">unknown</span></span>                 | <span data-ttu-id="89c11-763">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-763">0</span></span>     | <span data-ttu-id="89c11-764">Hive desconhecido.</span><span class="sxs-lookup"><span data-stu-id="89c11-764">Unknown hive.</span></span>                     |
+| <span data-ttu-id="89c11-765">currentConfig</span><span class="sxs-lookup"><span data-stu-id="89c11-765">currentConfig</span></span>           | <span data-ttu-id="89c11-766">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-766">1</span></span>     | <span data-ttu-id="89c11-767">HKEY_CURRENT_CONFIG Hive.</span><span class="sxs-lookup"><span data-stu-id="89c11-767">HKEY_CURRENT_CONFIG hive.</span></span>         |
+| <span data-ttu-id="89c11-768">currentUser</span><span class="sxs-lookup"><span data-stu-id="89c11-768">currentUser</span></span>             | <span data-ttu-id="89c11-769">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-769">2</span></span>     | <span data-ttu-id="89c11-770">HKEY_CURRENT_USER Hive.</span><span class="sxs-lookup"><span data-stu-id="89c11-770">HKEY_CURRENT_USER hive.</span></span>           |
+| <span data-ttu-id="89c11-771">localMachineSam</span><span class="sxs-lookup"><span data-stu-id="89c11-771">localMachineSam</span></span>         | <span data-ttu-id="89c11-772">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-772">3</span></span>     | <span data-ttu-id="89c11-773">HKEY_LOCAL_MACHINE Hive \SAM.</span><span class="sxs-lookup"><span data-stu-id="89c11-773">HKEY_LOCAL_MACHINE\SAM hive.</span></span>      |
+| <span data-ttu-id="89c11-774">localMachineSamSoftware</span><span class="sxs-lookup"><span data-stu-id="89c11-774">localMachineSamSoftware</span></span> | <span data-ttu-id="89c11-775">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-775">4</span></span>     | <span data-ttu-id="89c11-776">HKEY_LOCAL_MACHINE seção \Software.</span><span class="sxs-lookup"><span data-stu-id="89c11-776">HKEY_LOCAL_MACHINE\Software hive.</span></span> |
+| <span data-ttu-id="89c11-777">localMachineSystem</span><span class="sxs-lookup"><span data-stu-id="89c11-777">localMachineSystem</span></span>      | <span data-ttu-id="89c11-778">5 </span><span class="sxs-lookup"><span data-stu-id="89c11-778">5</span></span>     | <span data-ttu-id="89c11-779">HKEY_LOCAL_MACHINE o hive de \System.</span><span class="sxs-lookup"><span data-stu-id="89c11-779">HKEY_LOCAL_MACHINE\System hive.</span></span>   |
+| <span data-ttu-id="89c11-780">usersDefault</span><span class="sxs-lookup"><span data-stu-id="89c11-780">usersDefault</span></span>            | <span data-ttu-id="89c11-781">6 </span><span class="sxs-lookup"><span data-stu-id="89c11-781">6</span></span>     | <span data-ttu-id="89c11-782">HKEY_USERS \\ . Hive padrão.</span><span class="sxs-lookup"><span data-stu-id="89c11-782">HKEY_USERS\\.DEFAULT hive.</span></span>        |
 
-### <a name="registryoperation-values"></a><span data-ttu-id="79c22-777">valores de registryOperation</span><span class="sxs-lookup"><span data-stu-id="79c22-777">registryOperation values</span></span>
+### <a name="registryoperation-values"></a><span data-ttu-id="89c11-783">valores de registryOperation</span><span class="sxs-lookup"><span data-stu-id="89c11-783">registryOperation values</span></span>
 
-<span data-ttu-id="79c22-778">Operação que alterou o nome da chave do registro e/ou o valor.</span><span class="sxs-lookup"><span data-stu-id="79c22-778">Operation that changed the registry key name and/or value.</span></span>
+<span data-ttu-id="89c11-784">Operação que alterou o nome da chave do registro e/ou o valor.</span><span class="sxs-lookup"><span data-stu-id="89c11-784">Operation that changed the registry key name and/or value.</span></span>
 
-| <span data-ttu-id="79c22-779">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-779">Member</span></span>  | <span data-ttu-id="79c22-780">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-780">Value</span></span> | <span data-ttu-id="79c22-781">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-781">Description</span></span>                  |
+| <span data-ttu-id="89c11-785">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-785">Member</span></span>  | <span data-ttu-id="89c11-786">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-786">Value</span></span> | <span data-ttu-id="89c11-787">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-787">Description</span></span>                  |
 | :------ | :---- | :--------------------------- |
-| <span data-ttu-id="79c22-782">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-782">unknown</span></span> | <span data-ttu-id="79c22-783">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-783">0</span></span>     | <span data-ttu-id="79c22-784">Tipo de valor de registro desconhecido.</span><span class="sxs-lookup"><span data-stu-id="79c22-784">Unknown registry value type.</span></span> |
-| <span data-ttu-id="79c22-785">create</span><span class="sxs-lookup"><span data-stu-id="79c22-785">create</span></span>  | <span data-ttu-id="79c22-786">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-786">1</span></span>     | <span data-ttu-id="79c22-787">Criar registro.</span><span class="sxs-lookup"><span data-stu-id="79c22-787">Create registry.</span></span>             |
-| <span data-ttu-id="79c22-788">modifica</span><span class="sxs-lookup"><span data-stu-id="79c22-788">modify</span></span>  | <span data-ttu-id="79c22-789">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-789">2</span></span>     | <span data-ttu-id="79c22-790">Modificar o registro.</span><span class="sxs-lookup"><span data-stu-id="79c22-790">Modify registry.</span></span>             |
-| <span data-ttu-id="79c22-791">delete</span><span class="sxs-lookup"><span data-stu-id="79c22-791">delete</span></span>  | <span data-ttu-id="79c22-792">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-792">3</span></span>     | <span data-ttu-id="79c22-793">Excluir registro.</span><span class="sxs-lookup"><span data-stu-id="79c22-793">Delete registry.</span></span>             |
+| <span data-ttu-id="89c11-788">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-788">unknown</span></span> | <span data-ttu-id="89c11-789">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-789">0</span></span>     | <span data-ttu-id="89c11-790">Tipo de valor de registro desconhecido.</span><span class="sxs-lookup"><span data-stu-id="89c11-790">Unknown registry value type.</span></span> |
+| <span data-ttu-id="89c11-791">create</span><span class="sxs-lookup"><span data-stu-id="89c11-791">create</span></span>  | <span data-ttu-id="89c11-792">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-792">1</span></span>     | <span data-ttu-id="89c11-793">Criar registro.</span><span class="sxs-lookup"><span data-stu-id="89c11-793">Create registry.</span></span>             |
+| <span data-ttu-id="89c11-794">modifica</span><span class="sxs-lookup"><span data-stu-id="89c11-794">modify</span></span>  | <span data-ttu-id="89c11-795">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-795">2</span></span>     | <span data-ttu-id="89c11-796">Modificar o registro.</span><span class="sxs-lookup"><span data-stu-id="89c11-796">Modify registry.</span></span>             |
+| <span data-ttu-id="89c11-797">delete</span><span class="sxs-lookup"><span data-stu-id="89c11-797">delete</span></span>  | <span data-ttu-id="89c11-798">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-798">3</span></span>     | <span data-ttu-id="89c11-799">Excluir registro.</span><span class="sxs-lookup"><span data-stu-id="89c11-799">Delete registry.</span></span>             |
 
-### <a name="registryvaluetype-values"></a><span data-ttu-id="79c22-794">valores de registryValueType</span><span class="sxs-lookup"><span data-stu-id="79c22-794">registryValueType values</span></span>
+### <a name="registryvaluetype-values"></a><span data-ttu-id="89c11-800">valores de registryValueType</span><span class="sxs-lookup"><span data-stu-id="89c11-800">registryValueType values</span></span>
 
-<span data-ttu-id="79c22-795">Enumeração para tipos de valor do registro, conforme definido pelos [tipos de valor do registro](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types).</span><span class="sxs-lookup"><span data-stu-id="79c22-795">Enum for registry value types as defined by [Registry value types](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types).</span></span>
+<span data-ttu-id="89c11-801">Enumeração para tipos de valor do registro, conforme definido pelos [tipos de valor do registro](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types).</span><span class="sxs-lookup"><span data-stu-id="89c11-801">Enum for registry value types as defined by [Registry value types](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types).</span></span>
 
-| <span data-ttu-id="79c22-796">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-796">Member</span></span>            | <span data-ttu-id="79c22-797">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-797">Value</span></span> | <span data-ttu-id="79c22-798">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-798">Description</span></span>                                  |
+| <span data-ttu-id="89c11-802">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-802">Member</span></span>            | <span data-ttu-id="89c11-803">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-803">Value</span></span> | <span data-ttu-id="89c11-804">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-804">Description</span></span>                                  |
 | :---------------- | :---- | :------------------------------------------- |
-| <span data-ttu-id="79c22-799">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-799">unknown</span></span>           | <span data-ttu-id="79c22-800">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-800">0</span></span>     | <span data-ttu-id="79c22-801">Tipo de valor de registro desconhecido.</span><span class="sxs-lookup"><span data-stu-id="79c22-801">Unknown registry value type.</span></span>                 |
-| <span data-ttu-id="79c22-802">binário</span><span class="sxs-lookup"><span data-stu-id="79c22-802">binary</span></span>            | <span data-ttu-id="79c22-803">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-803">1</span></span>     | <span data-ttu-id="79c22-804">REG_BINARY tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="79c22-804">REG_BINARY registry value type.</span></span>              |
-| <span data-ttu-id="79c22-805">últimas</span><span class="sxs-lookup"><span data-stu-id="79c22-805">dword</span></span>             | <span data-ttu-id="79c22-806">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-806">2</span></span>     | <span data-ttu-id="79c22-807">REG_DWORD tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="79c22-807">REG_DWORD registry value type.</span></span>               |
-| <span data-ttu-id="79c22-808">dwordLittleEndian</span><span class="sxs-lookup"><span data-stu-id="79c22-808">dwordLittleEndian</span></span> | <span data-ttu-id="79c22-809">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-809">3</span></span>     | <span data-ttu-id="79c22-810">REG_DWORD_LITTLE_ENDIAN tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="79c22-810">REG_DWORD_LITTLE_ENDIAN registry value type.</span></span> |
-| <span data-ttu-id="79c22-811">dwordBigEndian</span><span class="sxs-lookup"><span data-stu-id="79c22-811">dwordBigEndian</span></span>    | <span data-ttu-id="79c22-812">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-812">4</span></span>     | <span data-ttu-id="79c22-813">REG_DWORD_BIG_ENDIAN tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="79c22-813">REG_DWORD_BIG_ENDIAN registry value type.</span></span>    |
-| <span data-ttu-id="79c22-814">expandSz</span><span class="sxs-lookup"><span data-stu-id="79c22-814">expandSz</span></span>          | <span data-ttu-id="79c22-815">5 </span><span class="sxs-lookup"><span data-stu-id="79c22-815">5</span></span>     | <span data-ttu-id="79c22-816">REG_EXPAND_SZ tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="79c22-816">REG_EXPAND_SZ registry value type.</span></span>           |
-| <span data-ttu-id="79c22-817">vínculo</span><span class="sxs-lookup"><span data-stu-id="79c22-817">link</span></span>              | <span data-ttu-id="79c22-818">6 </span><span class="sxs-lookup"><span data-stu-id="79c22-818">6</span></span>     | <span data-ttu-id="79c22-819">REG_LINK tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="79c22-819">REG_LINK registry value type.</span></span>                |
-| <span data-ttu-id="79c22-820">multiSz</span><span class="sxs-lookup"><span data-stu-id="79c22-820">multiSz</span></span>           | <span data-ttu-id="79c22-821">7 </span><span class="sxs-lookup"><span data-stu-id="79c22-821">7</span></span>     | <span data-ttu-id="79c22-822">REG_MULTI_SZ tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="79c22-822">REG_MULTI_SZ registry value type.</span></span>            |
-| <span data-ttu-id="79c22-823">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-823">none</span></span>              | <span data-ttu-id="79c22-824">8 </span><span class="sxs-lookup"><span data-stu-id="79c22-824">8</span></span>     | <span data-ttu-id="79c22-825">REG_NONE tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="79c22-825">REG_NONE registry value type.</span></span>                |
-| <span data-ttu-id="79c22-826">QWORD</span><span class="sxs-lookup"><span data-stu-id="79c22-826">qword</span></span>             | <span data-ttu-id="79c22-827">9 </span><span class="sxs-lookup"><span data-stu-id="79c22-827">9</span></span>     | <span data-ttu-id="79c22-828">REG_QWORD tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="79c22-828">REG_QWORD registry value type.</span></span>               |
-| <span data-ttu-id="79c22-829">qwordlittleEndian</span><span class="sxs-lookup"><span data-stu-id="79c22-829">qwordlittleEndian</span></span> | <span data-ttu-id="79c22-830">10 </span><span class="sxs-lookup"><span data-stu-id="79c22-830">10</span></span>    | <span data-ttu-id="79c22-831">REG_QWORD_LITTLE_ENDIAN tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="79c22-831">REG_QWORD_LITTLE_ENDIAN registry value type.</span></span> |
-| <span data-ttu-id="79c22-832">v</span><span class="sxs-lookup"><span data-stu-id="79c22-832">sz</span></span>                | <span data-ttu-id="79c22-833">11</span><span class="sxs-lookup"><span data-stu-id="79c22-833">11</span></span>    | <span data-ttu-id="79c22-834">REG_SZ tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="79c22-834">REG_SZ registry value type.</span></span>                  |
+| <span data-ttu-id="89c11-805">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-805">unknown</span></span>           | <span data-ttu-id="89c11-806">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-806">0</span></span>     | <span data-ttu-id="89c11-807">Tipo de valor de registro desconhecido.</span><span class="sxs-lookup"><span data-stu-id="89c11-807">Unknown registry value type.</span></span>                 |
+| <span data-ttu-id="89c11-808">binário</span><span class="sxs-lookup"><span data-stu-id="89c11-808">binary</span></span>            | <span data-ttu-id="89c11-809">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-809">1</span></span>     | <span data-ttu-id="89c11-810">REG_BINARY tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="89c11-810">REG_BINARY registry value type.</span></span>              |
+| <span data-ttu-id="89c11-811">últimas</span><span class="sxs-lookup"><span data-stu-id="89c11-811">dword</span></span>             | <span data-ttu-id="89c11-812">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-812">2</span></span>     | <span data-ttu-id="89c11-813">REG_DWORD tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="89c11-813">REG_DWORD registry value type.</span></span>               |
+| <span data-ttu-id="89c11-814">dwordLittleEndian</span><span class="sxs-lookup"><span data-stu-id="89c11-814">dwordLittleEndian</span></span> | <span data-ttu-id="89c11-815">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-815">3</span></span>     | <span data-ttu-id="89c11-816">REG_DWORD_LITTLE_ENDIAN tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="89c11-816">REG_DWORD_LITTLE_ENDIAN registry value type.</span></span> |
+| <span data-ttu-id="89c11-817">dwordBigEndian</span><span class="sxs-lookup"><span data-stu-id="89c11-817">dwordBigEndian</span></span>    | <span data-ttu-id="89c11-818">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-818">4</span></span>     | <span data-ttu-id="89c11-819">REG_DWORD_BIG_ENDIAN tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="89c11-819">REG_DWORD_BIG_ENDIAN registry value type.</span></span>    |
+| <span data-ttu-id="89c11-820">expandSz</span><span class="sxs-lookup"><span data-stu-id="89c11-820">expandSz</span></span>          | <span data-ttu-id="89c11-821">5 </span><span class="sxs-lookup"><span data-stu-id="89c11-821">5</span></span>     | <span data-ttu-id="89c11-822">REG_EXPAND_SZ tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="89c11-822">REG_EXPAND_SZ registry value type.</span></span>           |
+| <span data-ttu-id="89c11-823">vínculo</span><span class="sxs-lookup"><span data-stu-id="89c11-823">link</span></span>              | <span data-ttu-id="89c11-824">6 </span><span class="sxs-lookup"><span data-stu-id="89c11-824">6</span></span>     | <span data-ttu-id="89c11-825">REG_LINK tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="89c11-825">REG_LINK registry value type.</span></span>                |
+| <span data-ttu-id="89c11-826">multiSz</span><span class="sxs-lookup"><span data-stu-id="89c11-826">multiSz</span></span>           | <span data-ttu-id="89c11-827">7 </span><span class="sxs-lookup"><span data-stu-id="89c11-827">7</span></span>     | <span data-ttu-id="89c11-828">REG_MULTI_SZ tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="89c11-828">REG_MULTI_SZ registry value type.</span></span>            |
+| <span data-ttu-id="89c11-829">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-829">none</span></span>              | <span data-ttu-id="89c11-830">8 </span><span class="sxs-lookup"><span data-stu-id="89c11-830">8</span></span>     | <span data-ttu-id="89c11-831">REG_NONE tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="89c11-831">REG_NONE registry value type.</span></span>                |
+| <span data-ttu-id="89c11-832">QWORD</span><span class="sxs-lookup"><span data-stu-id="89c11-832">qword</span></span>             | <span data-ttu-id="89c11-833">9 </span><span class="sxs-lookup"><span data-stu-id="89c11-833">9</span></span>     | <span data-ttu-id="89c11-834">REG_QWORD tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="89c11-834">REG_QWORD registry value type.</span></span>               |
+| <span data-ttu-id="89c11-835">qwordlittleEndian</span><span class="sxs-lookup"><span data-stu-id="89c11-835">qwordlittleEndian</span></span> | <span data-ttu-id="89c11-836">10 </span><span class="sxs-lookup"><span data-stu-id="89c11-836">10</span></span>    | <span data-ttu-id="89c11-837">REG_QWORD_LITTLE_ENDIAN tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="89c11-837">REG_QWORD_LITTLE_ENDIAN registry value type.</span></span> |
+| <span data-ttu-id="89c11-838">v</span><span class="sxs-lookup"><span data-stu-id="89c11-838">sz</span></span>                | <span data-ttu-id="89c11-839">11 </span><span class="sxs-lookup"><span data-stu-id="89c11-839">11</span></span>    | <span data-ttu-id="89c11-840">REG_SZ tipo de valor do registro.</span><span class="sxs-lookup"><span data-stu-id="89c11-840">REG_SZ registry value type.</span></span>                  |
 
-### <a name="alertseverity-values"></a><span data-ttu-id="79c22-835">valores de alertSeverity</span><span class="sxs-lookup"><span data-stu-id="79c22-835">alertSeverity values</span></span>
+### <a name="alertseverity-values"></a><span data-ttu-id="89c11-841">valores de alertSeverity</span><span class="sxs-lookup"><span data-stu-id="89c11-841">alertSeverity values</span></span>
 
-<span data-ttu-id="79c22-836">Enumeração para gravidade de alertas.</span><span class="sxs-lookup"><span data-stu-id="79c22-836">Enum for severity of alerts.</span></span>
+<span data-ttu-id="89c11-842">Enumeração para gravidade de alertas.</span><span class="sxs-lookup"><span data-stu-id="89c11-842">Enum for severity of alerts.</span></span>
 
-| <span data-ttu-id="79c22-837">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-837">Member</span></span>        | <span data-ttu-id="79c22-838">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-838">Value</span></span> | <span data-ttu-id="79c22-839">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-839">Description</span></span>                       |
+| <span data-ttu-id="89c11-843">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-843">Member</span></span>        | <span data-ttu-id="89c11-844">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-844">Value</span></span> | <span data-ttu-id="89c11-845">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-845">Description</span></span>                       |
 | :------------ | :---- | :-------------------------------- |
-| <span data-ttu-id="79c22-840">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-840">unknown</span></span>       | <span data-ttu-id="79c22-841">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-841">0</span></span>     | <span data-ttu-id="79c22-842">A severidade é desconhecida.</span><span class="sxs-lookup"><span data-stu-id="79c22-842">Severity is unknown.</span></span>              |
-| <span data-ttu-id="79c22-843">informativa</span><span class="sxs-lookup"><span data-stu-id="79c22-843">informational</span></span> | <span data-ttu-id="79c22-844">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-844">1</span></span>     | <span data-ttu-id="79c22-845">A severidade só é para informações.</span><span class="sxs-lookup"><span data-stu-id="79c22-845">Severity is only for information.</span></span> |
-| <span data-ttu-id="79c22-846">low</span><span class="sxs-lookup"><span data-stu-id="79c22-846">low</span></span>           | <span data-ttu-id="79c22-847">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-847">2</span></span>     | <span data-ttu-id="79c22-848">A severidade é baixa.</span><span class="sxs-lookup"><span data-stu-id="79c22-848">Severity is low.</span></span>                  |
-| <span data-ttu-id="79c22-849">medium</span><span class="sxs-lookup"><span data-stu-id="79c22-849">medium</span></span>        | <span data-ttu-id="79c22-850">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-850">3</span></span>     | <span data-ttu-id="79c22-851">A severidade é média.</span><span class="sxs-lookup"><span data-stu-id="79c22-851">Severity is medium.</span></span>               |
-| <span data-ttu-id="79c22-852">high</span><span class="sxs-lookup"><span data-stu-id="79c22-852">high</span></span>          | <span data-ttu-id="79c22-853">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-853">4</span></span>     | <span data-ttu-id="79c22-854">A severidade é alta.</span><span class="sxs-lookup"><span data-stu-id="79c22-854">Severity is high.</span></span>                 |
+| <span data-ttu-id="89c11-846">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-846">unknown</span></span>       | <span data-ttu-id="89c11-847">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-847">0</span></span>     | <span data-ttu-id="89c11-848">A severidade é desconhecida.</span><span class="sxs-lookup"><span data-stu-id="89c11-848">Severity is unknown.</span></span>              |
+| <span data-ttu-id="89c11-849">informativa</span><span class="sxs-lookup"><span data-stu-id="89c11-849">informational</span></span> | <span data-ttu-id="89c11-850">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-850">1</span></span>     | <span data-ttu-id="89c11-851">A severidade só é para informações.</span><span class="sxs-lookup"><span data-stu-id="89c11-851">Severity is only for information.</span></span> |
+| <span data-ttu-id="89c11-852">low</span><span class="sxs-lookup"><span data-stu-id="89c11-852">low</span></span>           | <span data-ttu-id="89c11-853">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-853">2</span></span>     | <span data-ttu-id="89c11-854">A severidade é baixa.</span><span class="sxs-lookup"><span data-stu-id="89c11-854">Severity is low.</span></span>                  |
+| <span data-ttu-id="89c11-855">medium</span><span class="sxs-lookup"><span data-stu-id="89c11-855">medium</span></span>        | <span data-ttu-id="89c11-856">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-856">3</span></span>     | <span data-ttu-id="89c11-857">A severidade é média.</span><span class="sxs-lookup"><span data-stu-id="89c11-857">Severity is medium.</span></span>               |
+| <span data-ttu-id="89c11-858">high</span><span class="sxs-lookup"><span data-stu-id="89c11-858">high</span></span>          | <span data-ttu-id="89c11-859">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-859">4</span></span>     | <span data-ttu-id="89c11-860">A severidade é alta.</span><span class="sxs-lookup"><span data-stu-id="89c11-860">Severity is high.</span></span>                 |
 
-### <a name="alertstatus-values"></a><span data-ttu-id="79c22-855">valores de alertStatus</span><span class="sxs-lookup"><span data-stu-id="79c22-855">alertStatus values</span></span>
+### <a name="alertstatus-values"></a><span data-ttu-id="89c11-861">valores de alertStatus</span><span class="sxs-lookup"><span data-stu-id="89c11-861">alertStatus values</span></span>
 
-<span data-ttu-id="79c22-856">Valores possíveis de um status de ciclo de vida de alerta (estágio).</span><span class="sxs-lookup"><span data-stu-id="79c22-856">Possible values of an Alert lifecycle status (stage).</span></span>
+<span data-ttu-id="89c11-862">Valores possíveis de um status de ciclo de vida de alerta (estágio).</span><span class="sxs-lookup"><span data-stu-id="89c11-862">Possible values of an Alert lifecycle status (stage).</span></span>
 
-| <span data-ttu-id="79c22-857">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-857">Member</span></span>     | <span data-ttu-id="79c22-858">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-858">Value</span></span> | <span data-ttu-id="79c22-859">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-859">Description</span></span>           |
+| <span data-ttu-id="89c11-863">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-863">Member</span></span>     | <span data-ttu-id="89c11-864">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-864">Value</span></span> | <span data-ttu-id="89c11-865">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-865">Description</span></span>           |
 | :--------- | :---- | :-------------------- |
-| <span data-ttu-id="79c22-860">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-860">unknown</span></span>    | <span data-ttu-id="79c22-861">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-861">0</span></span>     | <span data-ttu-id="79c22-862">Status desconhecido.</span><span class="sxs-lookup"><span data-stu-id="79c22-862">Unknown status.</span></span>       |
-| <span data-ttu-id="79c22-863">newAlert</span><span class="sxs-lookup"><span data-stu-id="79c22-863">newAlert</span></span>   | <span data-ttu-id="79c22-864">10 </span><span class="sxs-lookup"><span data-stu-id="79c22-864">10</span></span>    | <span data-ttu-id="79c22-865">O alerta é novo.</span><span class="sxs-lookup"><span data-stu-id="79c22-865">Alert is new.</span></span>         |
-| <span data-ttu-id="79c22-866">inProgress</span><span class="sxs-lookup"><span data-stu-id="79c22-866">inProgress</span></span> | <span data-ttu-id="79c22-867">508</span><span class="sxs-lookup"><span data-stu-id="79c22-867">20</span></span>    | <span data-ttu-id="79c22-868">O alerta está em andamento.</span><span class="sxs-lookup"><span data-stu-id="79c22-868">Alert is in progress.</span></span> |
-| <span data-ttu-id="79c22-869">Obtido</span><span class="sxs-lookup"><span data-stu-id="79c22-869">resolved</span></span>   | <span data-ttu-id="79c22-870">até</span><span class="sxs-lookup"><span data-stu-id="79c22-870">30</span></span>    | <span data-ttu-id="79c22-871">O alerta foi resolvido.</span><span class="sxs-lookup"><span data-stu-id="79c22-871">Alert is resolved.</span></span>    |
+| <span data-ttu-id="89c11-866">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-866">unknown</span></span>    | <span data-ttu-id="89c11-867">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-867">0</span></span>     | <span data-ttu-id="89c11-868">Status desconhecido.</span><span class="sxs-lookup"><span data-stu-id="89c11-868">Unknown status.</span></span>       |
+| <span data-ttu-id="89c11-869">newAlert</span><span class="sxs-lookup"><span data-stu-id="89c11-869">newAlert</span></span>   | <span data-ttu-id="89c11-870">10 </span><span class="sxs-lookup"><span data-stu-id="89c11-870">10</span></span>    | <span data-ttu-id="89c11-871">O alerta é novo.</span><span class="sxs-lookup"><span data-stu-id="89c11-871">Alert is new.</span></span>         |
+| <span data-ttu-id="89c11-872">inProgress</span><span class="sxs-lookup"><span data-stu-id="89c11-872">inProgress</span></span> | <span data-ttu-id="89c11-873">508</span><span class="sxs-lookup"><span data-stu-id="89c11-873">20</span></span>    | <span data-ttu-id="89c11-874">O alerta está em andamento.</span><span class="sxs-lookup"><span data-stu-id="89c11-874">Alert is in progress.</span></span> |
+| <span data-ttu-id="89c11-875">Obtido</span><span class="sxs-lookup"><span data-stu-id="89c11-875">resolved</span></span>   | <span data-ttu-id="89c11-876">até</span><span class="sxs-lookup"><span data-stu-id="89c11-876">30</span></span>    | <span data-ttu-id="89c11-877">O alerta foi resolvido.</span><span class="sxs-lookup"><span data-stu-id="89c11-877">Alert is resolved.</span></span>    |
 
-### <a name="emailrole-values"></a><span data-ttu-id="79c22-872">valores de emailRole</span><span class="sxs-lookup"><span data-stu-id="79c22-872">emailRole values</span></span>
+### <a name="emailrole-values"></a><span data-ttu-id="89c11-878">valores de emailRole</span><span class="sxs-lookup"><span data-stu-id="89c11-878">emailRole values</span></span>
 
-<span data-ttu-id="79c22-873">Valores possíveis para funções de email.</span><span class="sxs-lookup"><span data-stu-id="79c22-873">Possible values for email roles.</span></span>
+<span data-ttu-id="89c11-879">Valores possíveis para funções de email.</span><span class="sxs-lookup"><span data-stu-id="89c11-879">Possible values for email roles.</span></span>
 
-| <span data-ttu-id="79c22-874">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-874">Member</span></span>    | <span data-ttu-id="79c22-875">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-875">Value</span></span> | <span data-ttu-id="79c22-876">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-876">Description</span></span>             |
+| <span data-ttu-id="89c11-880">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-880">Member</span></span>    | <span data-ttu-id="89c11-881">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-881">Value</span></span> | <span data-ttu-id="89c11-882">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-882">Description</span></span>             |
 | :-------- | :---- | :---------------------- |
-| <span data-ttu-id="79c22-877">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-877">unknown</span></span>   | <span data-ttu-id="79c22-878">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-878">0</span></span>     | <span data-ttu-id="79c22-879">Função desconhecida.</span><span class="sxs-lookup"><span data-stu-id="79c22-879">Unknown Role.</span></span>           |
-| <span data-ttu-id="79c22-880">remetente</span><span class="sxs-lookup"><span data-stu-id="79c22-880">sender</span></span>    | <span data-ttu-id="79c22-881">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-881">1</span></span>     | <span data-ttu-id="79c22-882">Remetente do email.</span><span class="sxs-lookup"><span data-stu-id="79c22-882">Sender of the email.</span></span>    |
-| <span data-ttu-id="79c22-883">destinatário</span><span class="sxs-lookup"><span data-stu-id="79c22-883">recipient</span></span> | <span data-ttu-id="79c22-884">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-884">2</span></span>     | <span data-ttu-id="79c22-885">Destinatário do email.</span><span class="sxs-lookup"><span data-stu-id="79c22-885">Recipient of the email.</span></span> |
+| <span data-ttu-id="89c11-883">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-883">unknown</span></span>   | <span data-ttu-id="89c11-884">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-884">0</span></span>     | <span data-ttu-id="89c11-885">Função desconhecida.</span><span class="sxs-lookup"><span data-stu-id="89c11-885">Unknown Role.</span></span>           |
+| <span data-ttu-id="89c11-886">sender</span><span class="sxs-lookup"><span data-stu-id="89c11-886">sender</span></span>    | <span data-ttu-id="89c11-887">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-887">1</span></span>     | <span data-ttu-id="89c11-888">Remetente do email.</span><span class="sxs-lookup"><span data-stu-id="89c11-888">Sender of the email.</span></span>    |
+| <span data-ttu-id="89c11-889">destinatário</span><span class="sxs-lookup"><span data-stu-id="89c11-889">recipient</span></span> | <span data-ttu-id="89c11-890">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-890">2</span></span>     | <span data-ttu-id="89c11-891">Destinatário do email.</span><span class="sxs-lookup"><span data-stu-id="89c11-891">Recipient of the email.</span></span> |
 
-### <a name="logontype-values"></a><span data-ttu-id="79c22-886">valores de Logontype</span><span class="sxs-lookup"><span data-stu-id="79c22-886">logonType values</span></span>
+### <a name="logontype-values"></a><span data-ttu-id="89c11-892">valores de Logontype</span><span class="sxs-lookup"><span data-stu-id="89c11-892">logonType values</span></span>
 
-<span data-ttu-id="79c22-887">Valores possíveis para o método de User Sign.</span><span class="sxs-lookup"><span data-stu-id="79c22-887">Possible values for the method of user signin.</span></span>
+<span data-ttu-id="89c11-893">Valores possíveis para o método de User Sign.</span><span class="sxs-lookup"><span data-stu-id="89c11-893">Possible values for the method of user signin.</span></span>
 
-| <span data-ttu-id="79c22-888">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-888">Member</span></span>            | <span data-ttu-id="79c22-889">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-889">Value</span></span> | <span data-ttu-id="79c22-890">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-890">Description</span></span>                  |
+| <span data-ttu-id="89c11-894">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-894">Member</span></span>            | <span data-ttu-id="89c11-895">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-895">Value</span></span> | <span data-ttu-id="89c11-896">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-896">Description</span></span>                  |
 | :---------------- | :---- | :--------------------------- |
-| <span data-ttu-id="79c22-891">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-891">unknown</span></span>           | <span data-ttu-id="79c22-892">-1</span><span class="sxs-lookup"><span data-stu-id="79c22-892">-1</span></span>    | <span data-ttu-id="79c22-893">Unknown.</span><span class="sxs-lookup"><span data-stu-id="79c22-893">Unknown.</span></span>                     |
-| <span data-ttu-id="79c22-894">interativa</span><span class="sxs-lookup"><span data-stu-id="79c22-894">interactive</span></span>       | <span data-ttu-id="79c22-895">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-895">0</span></span>     | <span data-ttu-id="79c22-896">O logon é interativo.</span><span class="sxs-lookup"><span data-stu-id="79c22-896">Logon is interactive.</span></span>        |
-| <span data-ttu-id="79c22-897">remoteInteractive</span><span class="sxs-lookup"><span data-stu-id="79c22-897">remoteInteractive</span></span> | <span data-ttu-id="79c22-898">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-898">1</span></span>     | <span data-ttu-id="79c22-899">O logon é interativo remoto.</span><span class="sxs-lookup"><span data-stu-id="79c22-899">Logon is remote interactive.</span></span> |
-| <span data-ttu-id="79c22-900">rede</span><span class="sxs-lookup"><span data-stu-id="79c22-900">network</span></span>           | <span data-ttu-id="79c22-901">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-901">2</span></span>     | <span data-ttu-id="79c22-902">O logon é rede.</span><span class="sxs-lookup"><span data-stu-id="79c22-902">Logon is network.</span></span>            |
-| <span data-ttu-id="79c22-903">batch</span><span class="sxs-lookup"><span data-stu-id="79c22-903">batch</span></span>             | <span data-ttu-id="79c22-904">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-904">3</span></span>     | <span data-ttu-id="79c22-905">O logon é em lote.</span><span class="sxs-lookup"><span data-stu-id="79c22-905">Logon is batch.</span></span>              |
-| <span data-ttu-id="79c22-906">service</span><span class="sxs-lookup"><span data-stu-id="79c22-906">service</span></span>           | <span data-ttu-id="79c22-907">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-907">4</span></span>     | <span data-ttu-id="79c22-908">O logon é serviço.</span><span class="sxs-lookup"><span data-stu-id="79c22-908">Logon is service.</span></span>            |
+| <span data-ttu-id="89c11-897">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-897">unknown</span></span>           | <span data-ttu-id="89c11-898">-1</span><span class="sxs-lookup"><span data-stu-id="89c11-898">-1</span></span>    | <span data-ttu-id="89c11-899">Unknown.</span><span class="sxs-lookup"><span data-stu-id="89c11-899">Unknown.</span></span>                     |
+| <span data-ttu-id="89c11-900">interativa</span><span class="sxs-lookup"><span data-stu-id="89c11-900">interactive</span></span>       | <span data-ttu-id="89c11-901">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-901">0</span></span>     | <span data-ttu-id="89c11-902">O logon é interativo.</span><span class="sxs-lookup"><span data-stu-id="89c11-902">Logon is interactive.</span></span>        |
+| <span data-ttu-id="89c11-903">remoteInteractive</span><span class="sxs-lookup"><span data-stu-id="89c11-903">remoteInteractive</span></span> | <span data-ttu-id="89c11-904">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-904">1</span></span>     | <span data-ttu-id="89c11-905">O logon é interativo remoto.</span><span class="sxs-lookup"><span data-stu-id="89c11-905">Logon is remote interactive.</span></span> |
+| <span data-ttu-id="89c11-906">rede</span><span class="sxs-lookup"><span data-stu-id="89c11-906">network</span></span>           | <span data-ttu-id="89c11-907">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-907">2</span></span>     | <span data-ttu-id="89c11-908">O logon é rede.</span><span class="sxs-lookup"><span data-stu-id="89c11-908">Logon is network.</span></span>            |
+| <span data-ttu-id="89c11-909">batch</span><span class="sxs-lookup"><span data-stu-id="89c11-909">batch</span></span>             | <span data-ttu-id="89c11-910">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-910">3</span></span>     | <span data-ttu-id="89c11-911">O logon é em lote.</span><span class="sxs-lookup"><span data-stu-id="89c11-911">Logon is batch.</span></span>              |
+| <span data-ttu-id="89c11-912">service</span><span class="sxs-lookup"><span data-stu-id="89c11-912">service</span></span>           | <span data-ttu-id="89c11-913">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-913">4</span></span>     | <span data-ttu-id="89c11-914">O logon é serviço.</span><span class="sxs-lookup"><span data-stu-id="89c11-914">Logon is service.</span></span>            |
 
-### <a name="useraccountsecuritytype-values"></a><span data-ttu-id="79c22-909">valores de userAccountSecurityType</span><span class="sxs-lookup"><span data-stu-id="79c22-909">userAccountSecurityType values</span></span>
+### <a name="useraccountsecuritytype-values"></a><span data-ttu-id="89c11-915">valores de userAccountSecurityType</span><span class="sxs-lookup"><span data-stu-id="89c11-915">userAccountSecurityType values</span></span>
 
-<span data-ttu-id="79c22-910">Valores possíveis para tipos de contas de usuário (Associação de grupo), por definição do Windows.</span><span class="sxs-lookup"><span data-stu-id="79c22-910">Possible values for user account types (group membership), per Windows definition.</span></span>
+<span data-ttu-id="89c11-916">Valores possíveis para tipos de contas de usuário (Associação de grupo), por definição do Windows.</span><span class="sxs-lookup"><span data-stu-id="89c11-916">Possible values for user account types (group membership), per Windows definition.</span></span>
 
-| <span data-ttu-id="79c22-911">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-911">Member</span></span>        | <span data-ttu-id="79c22-912">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-912">Value</span></span> | <span data-ttu-id="79c22-913">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-913">Description</span></span>                     |
+| <span data-ttu-id="89c11-917">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-917">Member</span></span>        | <span data-ttu-id="89c11-918">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-918">Value</span></span> | <span data-ttu-id="89c11-919">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-919">Description</span></span>                     |
 | :------------ | :---- | :------------------------------ |
-| <span data-ttu-id="79c22-914">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-914">unknown</span></span>       | <span data-ttu-id="79c22-915">-1</span><span class="sxs-lookup"><span data-stu-id="79c22-915">-1</span></span>    | <span data-ttu-id="79c22-916">Unknown.</span><span class="sxs-lookup"><span data-stu-id="79c22-916">Unknown.</span></span>                        |
-| <span data-ttu-id="79c22-917">caracteres</span><span class="sxs-lookup"><span data-stu-id="79c22-917">standard</span></span>      | <span data-ttu-id="79c22-918">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-918">0</span></span>     | <span data-ttu-id="79c22-919">Membro do grupo de usuários padrão.</span><span class="sxs-lookup"><span data-stu-id="79c22-919">Member of Standard Users group.</span></span> |
-| <span data-ttu-id="79c22-920">força</span><span class="sxs-lookup"><span data-stu-id="79c22-920">power</span></span>         | <span data-ttu-id="79c22-921">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-921">1</span></span>     | <span data-ttu-id="79c22-922">Membro do grupo de usuários avançados.</span><span class="sxs-lookup"><span data-stu-id="79c22-922">Member of Power Users group.</span></span>    |
-| <span data-ttu-id="79c22-923">administrador</span><span class="sxs-lookup"><span data-stu-id="79c22-923">administrator</span></span> | <span data-ttu-id="79c22-924">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-924">2</span></span>     | <span data-ttu-id="79c22-925">Membro do grupo Administradores.</span><span class="sxs-lookup"><span data-stu-id="79c22-925">Member of Administrators group.</span></span> |
+| <span data-ttu-id="89c11-920">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-920">unknown</span></span>       | <span data-ttu-id="89c11-921">-1</span><span class="sxs-lookup"><span data-stu-id="89c11-921">-1</span></span>    | <span data-ttu-id="89c11-922">Unknown.</span><span class="sxs-lookup"><span data-stu-id="89c11-922">Unknown.</span></span>                        |
+| <span data-ttu-id="89c11-923">caracteres</span><span class="sxs-lookup"><span data-stu-id="89c11-923">standard</span></span>      | <span data-ttu-id="89c11-924">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-924">0</span></span>     | <span data-ttu-id="89c11-925">Membro do grupo de usuários padrão.</span><span class="sxs-lookup"><span data-stu-id="89c11-925">Member of Standard Users group.</span></span> |
+| <span data-ttu-id="89c11-926">força</span><span class="sxs-lookup"><span data-stu-id="89c11-926">power</span></span>         | <span data-ttu-id="89c11-927">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-927">1</span></span>     | <span data-ttu-id="89c11-928">Membro do grupo de usuários avançados.</span><span class="sxs-lookup"><span data-stu-id="89c11-928">Member of Power Users group.</span></span>    |
+| <span data-ttu-id="89c11-929">administrador</span><span class="sxs-lookup"><span data-stu-id="89c11-929">administrator</span></span> | <span data-ttu-id="89c11-930">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-930">2</span></span>     | <span data-ttu-id="89c11-931">Membro do grupo Administradores.</span><span class="sxs-lookup"><span data-stu-id="89c11-931">Member of Administrators group.</span></span> |
 
-### <a name="scopeoperatormultivaluedcomparisontype-values"></a><span data-ttu-id="79c22-926">valores de scopeOperatorMultiValuedComparisonType</span><span class="sxs-lookup"><span data-stu-id="79c22-926">scopeOperatorMultiValuedComparisonType values</span></span>
+### <a name="chatmessagepolicyviolationdlpactiontypevalues"></a><span data-ttu-id="89c11-932">valores de chatMessagePolicyViolationDlpActionType</span><span class="sxs-lookup"><span data-stu-id="89c11-932">chatMessagePolicyViolationDlpActionType values</span></span>
 
-|<span data-ttu-id="79c22-927">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-927">Member</span></span>|
+| <span data-ttu-id="89c11-933">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-933">Value</span></span> |
+|:-----------------|
+| <span data-ttu-id="89c11-934">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-934">none</span></span> |
+| <span data-ttu-id="89c11-935">NotifySender</span><span class="sxs-lookup"><span data-stu-id="89c11-935">NotifySender</span></span> |
+| <span data-ttu-id="89c11-936">BlockAccess</span><span class="sxs-lookup"><span data-stu-id="89c11-936">BlockAccess</span></span> |
+| <span data-ttu-id="89c11-937">BlockAccessExternal</span><span class="sxs-lookup"><span data-stu-id="89c11-937">BlockAccessExternal</span></span> |
+
+### <a name="scopeoperatormultivaluedcomparisontype-values"></a><span data-ttu-id="89c11-938">valores de scopeOperatorMultiValuedComparisonType</span><span class="sxs-lookup"><span data-stu-id="89c11-938">scopeOperatorMultiValuedComparisonType values</span></span>
+
+|<span data-ttu-id="89c11-939">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-939">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-928">todos os</span><span class="sxs-lookup"><span data-stu-id="79c22-928">all</span></span>|
-|<span data-ttu-id="79c22-929">qualquer</span><span class="sxs-lookup"><span data-stu-id="79c22-929">any</span></span>|
+|<span data-ttu-id="89c11-940">todos os</span><span class="sxs-lookup"><span data-stu-id="89c11-940">all</span></span>|
+|<span data-ttu-id="89c11-941">qualquer</span><span class="sxs-lookup"><span data-stu-id="89c11-941">any</span></span>|
 
-### <a name="risklevel-values"></a><span data-ttu-id="79c22-930">valores de riskLevel</span><span class="sxs-lookup"><span data-stu-id="79c22-930">riskLevel values</span></span>
+### <a name="risklevel-values"></a><span data-ttu-id="89c11-942">valores de riskLevel</span><span class="sxs-lookup"><span data-stu-id="89c11-942">riskLevel values</span></span>
 
-|<span data-ttu-id="79c22-931">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-931">Member</span></span>|
+|<span data-ttu-id="89c11-943">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-943">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-932">low</span><span class="sxs-lookup"><span data-stu-id="79c22-932">low</span></span>|
-|<span data-ttu-id="79c22-933">medium</span><span class="sxs-lookup"><span data-stu-id="79c22-933">medium</span></span>|
-|<span data-ttu-id="79c22-934">high</span><span class="sxs-lookup"><span data-stu-id="79c22-934">high</span></span>|
-|<span data-ttu-id="79c22-935">hidden</span><span class="sxs-lookup"><span data-stu-id="79c22-935">hidden</span></span>|
-|<span data-ttu-id="79c22-936">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-936">none</span></span>|
-|<span data-ttu-id="79c22-937">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-937">unknownFutureValue</span></span>|
+|<span data-ttu-id="89c11-944">low</span><span class="sxs-lookup"><span data-stu-id="89c11-944">low</span></span>|
+|<span data-ttu-id="89c11-945">medium</span><span class="sxs-lookup"><span data-stu-id="89c11-945">medium</span></span>|
+|<span data-ttu-id="89c11-946">high</span><span class="sxs-lookup"><span data-stu-id="89c11-946">high</span></span>|
+|<span data-ttu-id="89c11-947">hidden</span><span class="sxs-lookup"><span data-stu-id="89c11-947">hidden</span></span>|
+|<span data-ttu-id="89c11-948">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-948">none</span></span>|
+|<span data-ttu-id="89c11-949">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-949">unknownFutureValue</span></span>|
 
-### <a name="riskstate-values"></a><span data-ttu-id="79c22-938">valores de risco</span><span class="sxs-lookup"><span data-stu-id="79c22-938">riskState values</span></span>
+### <a name="riskstate-values"></a><span data-ttu-id="89c11-950">valores de risco</span><span class="sxs-lookup"><span data-stu-id="89c11-950">riskState values</span></span>
 
-|<span data-ttu-id="79c22-939">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-939">Member</span></span>|
+|<span data-ttu-id="89c11-951">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-951">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-940">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-940">none</span></span>|
-|<span data-ttu-id="79c22-941">confirmedSafe</span><span class="sxs-lookup"><span data-stu-id="79c22-941">confirmedSafe</span></span>|
-|<span data-ttu-id="79c22-942">corrigidos</span><span class="sxs-lookup"><span data-stu-id="79c22-942">remediated</span></span>|
-|<span data-ttu-id="79c22-943">Descartado pelo</span><span class="sxs-lookup"><span data-stu-id="79c22-943">dismissed</span></span>|
-|<span data-ttu-id="79c22-944">atRisk</span><span class="sxs-lookup"><span data-stu-id="79c22-944">atRisk</span></span>|
-|<span data-ttu-id="79c22-945">confirmedCompromised</span><span class="sxs-lookup"><span data-stu-id="79c22-945">confirmedCompromised</span></span>|
-|<span data-ttu-id="79c22-946">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-946">unknownFutureValue</span></span>|
+|<span data-ttu-id="89c11-952">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-952">none</span></span>|
+|<span data-ttu-id="89c11-953">confirmedSafe</span><span class="sxs-lookup"><span data-stu-id="89c11-953">confirmedSafe</span></span>|
+|<span data-ttu-id="89c11-954">corrigidos</span><span class="sxs-lookup"><span data-stu-id="89c11-954">remediated</span></span>|
+|<span data-ttu-id="89c11-955">Descartado pelo</span><span class="sxs-lookup"><span data-stu-id="89c11-955">dismissed</span></span>|
+|<span data-ttu-id="89c11-956">atRisk</span><span class="sxs-lookup"><span data-stu-id="89c11-956">atRisk</span></span>|
+|<span data-ttu-id="89c11-957">confirmedCompromised</span><span class="sxs-lookup"><span data-stu-id="89c11-957">confirmedCompromised</span></span>|
+|<span data-ttu-id="89c11-958">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-958">unknownFutureValue</span></span>|
 
-### <a name="riskdetail-values"></a><span data-ttu-id="79c22-947">valores de riskDetail</span><span class="sxs-lookup"><span data-stu-id="79c22-947">riskDetail values</span></span>
+### <a name="riskdetail-values"></a><span data-ttu-id="89c11-959">valores de riskDetail</span><span class="sxs-lookup"><span data-stu-id="89c11-959">riskDetail values</span></span>
 
-|<span data-ttu-id="79c22-948">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-948">Member</span></span>|
+|<span data-ttu-id="89c11-960">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-960">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-949">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-949">none</span></span>|
-|<span data-ttu-id="79c22-950">adminGeneratedTemporaryPassword</span><span class="sxs-lookup"><span data-stu-id="79c22-950">adminGeneratedTemporaryPassword</span></span>|
-|<span data-ttu-id="79c22-951">userPerformedSecuredPasswordChange</span><span class="sxs-lookup"><span data-stu-id="79c22-951">userPerformedSecuredPasswordChange</span></span>|
-|<span data-ttu-id="79c22-952">userPerformedSecuredPasswordReset</span><span class="sxs-lookup"><span data-stu-id="79c22-952">userPerformedSecuredPasswordReset</span></span>|
-|<span data-ttu-id="79c22-953">adminConfirmedSigninSafe</span><span class="sxs-lookup"><span data-stu-id="79c22-953">adminConfirmedSigninSafe</span></span>|
-|<span data-ttu-id="79c22-954">aiConfirmedSigninSafe</span><span class="sxs-lookup"><span data-stu-id="79c22-954">aiConfirmedSigninSafe</span></span>|
-|<span data-ttu-id="79c22-955">userPassedMFADrivenByRiskBasedPolicy</span><span class="sxs-lookup"><span data-stu-id="79c22-955">userPassedMFADrivenByRiskBasedPolicy</span></span>|
-|<span data-ttu-id="79c22-956">adminDismissedAllRiskForUser</span><span class="sxs-lookup"><span data-stu-id="79c22-956">adminDismissedAllRiskForUser</span></span>|
-|<span data-ttu-id="79c22-957">adminConfirmedSigninCompromised</span><span class="sxs-lookup"><span data-stu-id="79c22-957">adminConfirmedSigninCompromised</span></span>|
-|<span data-ttu-id="79c22-958">adminConfirmedUserCompromised</span><span class="sxs-lookup"><span data-stu-id="79c22-958">adminConfirmedUserCompromised</span></span>|
-|<span data-ttu-id="79c22-959">hidden</span><span class="sxs-lookup"><span data-stu-id="79c22-959">hidden</span></span>|
-|<span data-ttu-id="79c22-960">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-960">unknownFutureValue</span></span>|
+|<span data-ttu-id="89c11-961">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-961">none</span></span>|
+|<span data-ttu-id="89c11-962">adminGeneratedTemporaryPassword</span><span class="sxs-lookup"><span data-stu-id="89c11-962">adminGeneratedTemporaryPassword</span></span>|
+|<span data-ttu-id="89c11-963">userPerformedSecuredPasswordChange</span><span class="sxs-lookup"><span data-stu-id="89c11-963">userPerformedSecuredPasswordChange</span></span>|
+|<span data-ttu-id="89c11-964">userPerformedSecuredPasswordReset</span><span class="sxs-lookup"><span data-stu-id="89c11-964">userPerformedSecuredPasswordReset</span></span>|
+|<span data-ttu-id="89c11-965">adminConfirmedSigninSafe</span><span class="sxs-lookup"><span data-stu-id="89c11-965">adminConfirmedSigninSafe</span></span>|
+|<span data-ttu-id="89c11-966">aiConfirmedSigninSafe</span><span class="sxs-lookup"><span data-stu-id="89c11-966">aiConfirmedSigninSafe</span></span>|
+|<span data-ttu-id="89c11-967">userPassedMFADrivenByRiskBasedPolicy</span><span class="sxs-lookup"><span data-stu-id="89c11-967">userPassedMFADrivenByRiskBasedPolicy</span></span>|
+|<span data-ttu-id="89c11-968">adminDismissedAllRiskForUser</span><span class="sxs-lookup"><span data-stu-id="89c11-968">adminDismissedAllRiskForUser</span></span>|
+|<span data-ttu-id="89c11-969">adminConfirmedSigninCompromised</span><span class="sxs-lookup"><span data-stu-id="89c11-969">adminConfirmedSigninCompromised</span></span>|
+|<span data-ttu-id="89c11-970">adminConfirmedUserCompromised</span><span class="sxs-lookup"><span data-stu-id="89c11-970">adminConfirmedUserCompromised</span></span>|
+|<span data-ttu-id="89c11-971">hidden</span><span class="sxs-lookup"><span data-stu-id="89c11-971">hidden</span></span>|
+|<span data-ttu-id="89c11-972">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-972">unknownFutureValue</span></span>|
 
-### <a name="referenceattachmentpermission-values"></a><span data-ttu-id="79c22-961">valores de referenceAttachmentPermission</span><span class="sxs-lookup"><span data-stu-id="79c22-961">referenceAttachmentPermission values</span></span>
+### <a name="referenceattachmentpermission-values"></a><span data-ttu-id="89c11-973">valores de referenceAttachmentPermission</span><span class="sxs-lookup"><span data-stu-id="89c11-973">referenceAttachmentPermission values</span></span>
 
-|<span data-ttu-id="79c22-962">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-962">Member</span></span>|
+|<span data-ttu-id="89c11-974">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-974">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-963">outro</span><span class="sxs-lookup"><span data-stu-id="79c22-963">other</span></span>|
-|<span data-ttu-id="79c22-964">modo de exibição</span><span class="sxs-lookup"><span data-stu-id="79c22-964">view</span></span>|
-|<span data-ttu-id="79c22-965">edit</span><span class="sxs-lookup"><span data-stu-id="79c22-965">edit</span></span>|
-|<span data-ttu-id="79c22-966">anonymousView</span><span class="sxs-lookup"><span data-stu-id="79c22-966">anonymousView</span></span>|
-|<span data-ttu-id="79c22-967">anonymousEdit</span><span class="sxs-lookup"><span data-stu-id="79c22-967">anonymousEdit</span></span>|
-|<span data-ttu-id="79c22-968">organizationView</span><span class="sxs-lookup"><span data-stu-id="79c22-968">organizationView</span></span>|
-|<span data-ttu-id="79c22-969">organizationEdit</span><span class="sxs-lookup"><span data-stu-id="79c22-969">organizationEdit</span></span>|
+|<span data-ttu-id="89c11-975">outro</span><span class="sxs-lookup"><span data-stu-id="89c11-975">other</span></span>|
+|<span data-ttu-id="89c11-976">modo de exibição</span><span class="sxs-lookup"><span data-stu-id="89c11-976">view</span></span>|
+|<span data-ttu-id="89c11-977">edit</span><span class="sxs-lookup"><span data-stu-id="89c11-977">edit</span></span>|
+|<span data-ttu-id="89c11-978">anonymousView</span><span class="sxs-lookup"><span data-stu-id="89c11-978">anonymousView</span></span>|
+|<span data-ttu-id="89c11-979">anonymousEdit</span><span class="sxs-lookup"><span data-stu-id="89c11-979">anonymousEdit</span></span>|
+|<span data-ttu-id="89c11-980">organizationView</span><span class="sxs-lookup"><span data-stu-id="89c11-980">organizationView</span></span>|
+|<span data-ttu-id="89c11-981">organizationEdit</span><span class="sxs-lookup"><span data-stu-id="89c11-981">organizationEdit</span></span>|
 
-### <a name="referenceattachmentprovider-values"></a><span data-ttu-id="79c22-970">valores de referenceAttachmentProvider</span><span class="sxs-lookup"><span data-stu-id="79c22-970">referenceAttachmentProvider values</span></span>
+### <a name="referenceattachmentprovider-values"></a><span data-ttu-id="89c11-982">valores de referenceAttachmentProvider</span><span class="sxs-lookup"><span data-stu-id="89c11-982">referenceAttachmentProvider values</span></span>
 
-|<span data-ttu-id="79c22-971">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-971">Member</span></span>|
+|<span data-ttu-id="89c11-983">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-983">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-972">outro</span><span class="sxs-lookup"><span data-stu-id="79c22-972">other</span></span>|
-|<span data-ttu-id="79c22-973">oneDriveBusiness</span><span class="sxs-lookup"><span data-stu-id="79c22-973">oneDriveBusiness</span></span>|
-|<span data-ttu-id="79c22-974">oneDriveConsumer</span><span class="sxs-lookup"><span data-stu-id="79c22-974">oneDriveConsumer</span></span>|
-|<span data-ttu-id="79c22-975">Dropbox</span><span class="sxs-lookup"><span data-stu-id="79c22-975">dropbox</span></span>|
+|<span data-ttu-id="89c11-984">outro</span><span class="sxs-lookup"><span data-stu-id="89c11-984">other</span></span>|
+|<span data-ttu-id="89c11-985">oneDriveBusiness</span><span class="sxs-lookup"><span data-stu-id="89c11-985">oneDriveBusiness</span></span>|
+|<span data-ttu-id="89c11-986">oneDriveConsumer</span><span class="sxs-lookup"><span data-stu-id="89c11-986">oneDriveConsumer</span></span>|
+|<span data-ttu-id="89c11-987">Dropbox</span><span class="sxs-lookup"><span data-stu-id="89c11-987">dropbox</span></span>|
 
-### <a name="riskeventtype-values"></a><span data-ttu-id="79c22-976">valores de riskEventType</span><span class="sxs-lookup"><span data-stu-id="79c22-976">riskEventType values</span></span>
+### <a name="riskeventtype-values"></a><span data-ttu-id="89c11-988">valores de riskEventType</span><span class="sxs-lookup"><span data-stu-id="89c11-988">riskEventType values</span></span>
 
-|<span data-ttu-id="79c22-977">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-977">Member</span></span>|
+|<span data-ttu-id="89c11-989">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-989">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-978">unlikelyTravel</span><span class="sxs-lookup"><span data-stu-id="79c22-978">unlikelyTravel</span></span>|
-|<span data-ttu-id="79c22-979">anonymizedIPAddress</span><span class="sxs-lookup"><span data-stu-id="79c22-979">anonymizedIPAddress</span></span>|
-|<span data-ttu-id="79c22-980">maliciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="79c22-980">maliciousIPAddress</span></span>|
-|<span data-ttu-id="79c22-981">unfamiliarFeatures</span><span class="sxs-lookup"><span data-stu-id="79c22-981">unfamiliarFeatures</span></span>|
-|<span data-ttu-id="79c22-982">malwareInfectedIPAddress</span><span class="sxs-lookup"><span data-stu-id="79c22-982">malwareInfectedIPAddress</span></span>|
-|<span data-ttu-id="79c22-983">suspiciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="79c22-983">suspiciousIPAddress</span></span>|
-|<span data-ttu-id="79c22-984">leakedCredentials</span><span class="sxs-lookup"><span data-stu-id="79c22-984">leakedCredentials</span></span>|
-|<span data-ttu-id="79c22-985">investigationsThreatIntelligence</span><span class="sxs-lookup"><span data-stu-id="79c22-985">investigationsThreatIntelligence</span></span>|
-|<span data-ttu-id="79c22-986">genérico</span><span class="sxs-lookup"><span data-stu-id="79c22-986">generic</span></span>|
-|<span data-ttu-id="79c22-987">adminConfirmedUserCompromised</span><span class="sxs-lookup"><span data-stu-id="79c22-987">adminConfirmedUserCompromised</span></span>|
-|<span data-ttu-id="79c22-988">mcasImpossibleTravel</span><span class="sxs-lookup"><span data-stu-id="79c22-988">mcasImpossibleTravel</span></span>|
-|<span data-ttu-id="79c22-989">mcasSuspiciousInboxManipulationRules</span><span class="sxs-lookup"><span data-stu-id="79c22-989">mcasSuspiciousInboxManipulationRules</span></span>|
-|<span data-ttu-id="79c22-990">investigationsThreatIntelligenceSigninLinked</span><span class="sxs-lookup"><span data-stu-id="79c22-990">investigationsThreatIntelligenceSigninLinked</span></span>|
-|<span data-ttu-id="79c22-991">maliciousIPAddressValidCredentialsBlockedIP</span><span class="sxs-lookup"><span data-stu-id="79c22-991">maliciousIPAddressValidCredentialsBlockedIP</span></span>|
-|<span data-ttu-id="79c22-992">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-992">unknownFutureValue</span></span>|
+|<span data-ttu-id="89c11-990">unlikelyTravel</span><span class="sxs-lookup"><span data-stu-id="89c11-990">unlikelyTravel</span></span>|
+|<span data-ttu-id="89c11-991">anonymizedIPAddress</span><span class="sxs-lookup"><span data-stu-id="89c11-991">anonymizedIPAddress</span></span>|
+|<span data-ttu-id="89c11-992">maliciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="89c11-992">maliciousIPAddress</span></span>|
+|<span data-ttu-id="89c11-993">unfamiliarFeatures</span><span class="sxs-lookup"><span data-stu-id="89c11-993">unfamiliarFeatures</span></span>|
+|<span data-ttu-id="89c11-994">malwareInfectedIPAddress</span><span class="sxs-lookup"><span data-stu-id="89c11-994">malwareInfectedIPAddress</span></span>|
+|<span data-ttu-id="89c11-995">suspiciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="89c11-995">suspiciousIPAddress</span></span>|
+|<span data-ttu-id="89c11-996">leakedCredentials</span><span class="sxs-lookup"><span data-stu-id="89c11-996">leakedCredentials</span></span>|
+|<span data-ttu-id="89c11-997">investigationsThreatIntelligence</span><span class="sxs-lookup"><span data-stu-id="89c11-997">investigationsThreatIntelligence</span></span>|
+|<span data-ttu-id="89c11-998">genérico</span><span class="sxs-lookup"><span data-stu-id="89c11-998">generic</span></span>|
+|<span data-ttu-id="89c11-999">adminConfirmedUserCompromised</span><span class="sxs-lookup"><span data-stu-id="89c11-999">adminConfirmedUserCompromised</span></span>|
+|<span data-ttu-id="89c11-1000">mcasImpossibleTravel</span><span class="sxs-lookup"><span data-stu-id="89c11-1000">mcasImpossibleTravel</span></span>|
+|<span data-ttu-id="89c11-1001">mcasSuspiciousInboxManipulationRules</span><span class="sxs-lookup"><span data-stu-id="89c11-1001">mcasSuspiciousInboxManipulationRules</span></span>|
+|<span data-ttu-id="89c11-1002">investigationsThreatIntelligenceSigninLinked</span><span class="sxs-lookup"><span data-stu-id="89c11-1002">investigationsThreatIntelligenceSigninLinked</span></span>|
+|<span data-ttu-id="89c11-1003">maliciousIPAddressValidCredentialsBlockedIP</span><span class="sxs-lookup"><span data-stu-id="89c11-1003">maliciousIPAddressValidCredentialsBlockedIP</span></span>|
+|<span data-ttu-id="89c11-1004">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-1004">unknownFutureValue</span></span>|
 
-### <a name="networktype-values"></a><span data-ttu-id="79c22-993">valores de NetworkType</span><span class="sxs-lookup"><span data-stu-id="79c22-993">networkType values</span></span>
+### <a name="networktype-values"></a><span data-ttu-id="89c11-1005">valores de NetworkType</span><span class="sxs-lookup"><span data-stu-id="89c11-1005">networkType values</span></span>
 
-|<span data-ttu-id="79c22-994">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-994">Member</span></span>|
+|<span data-ttu-id="89c11-1006">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1006">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-995">Internet</span><span class="sxs-lookup"><span data-stu-id="79c22-995">intranet</span></span>|
-|<span data-ttu-id="79c22-996">extranet</span><span class="sxs-lookup"><span data-stu-id="79c22-996">extranet</span></span>|
-|<span data-ttu-id="79c22-997">namedNetwork</span><span class="sxs-lookup"><span data-stu-id="79c22-997">namedNetwork</span></span>|
-|<span data-ttu-id="79c22-998">confiáveis</span><span class="sxs-lookup"><span data-stu-id="79c22-998">trusted</span></span>|
-|<span data-ttu-id="79c22-999">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-999">unknownFutureValue</span></span>|
+|<span data-ttu-id="89c11-1007">Internet</span><span class="sxs-lookup"><span data-stu-id="89c11-1007">intranet</span></span>|
+|<span data-ttu-id="89c11-1008">extranet</span><span class="sxs-lookup"><span data-stu-id="89c11-1008">extranet</span></span>|
+|<span data-ttu-id="89c11-1009">namedNetwork</span><span class="sxs-lookup"><span data-stu-id="89c11-1009">namedNetwork</span></span>|
+|<span data-ttu-id="89c11-1010">confiáveis</span><span class="sxs-lookup"><span data-stu-id="89c11-1010">trusted</span></span>|
+|<span data-ttu-id="89c11-1011">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-1011">unknownFutureValue</span></span>|
 
-### <a name="exchangeidformat-values"></a><span data-ttu-id="79c22-1000">valores de exchangeIdFormat</span><span class="sxs-lookup"><span data-stu-id="79c22-1000">exchangeIdFormat values</span></span>
+### <a name="exchangeidformat-values"></a><span data-ttu-id="89c11-1012">valores de exchangeIdFormat</span><span class="sxs-lookup"><span data-stu-id="89c11-1012">exchangeIdFormat values</span></span>
 
-|<span data-ttu-id="79c22-1001">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1001">Member</span></span>|
+|<span data-ttu-id="89c11-1013">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1013">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-1002">entryId</span><span class="sxs-lookup"><span data-stu-id="79c22-1002">entryId</span></span>|
-|<span data-ttu-id="79c22-1003">ewsId</span><span class="sxs-lookup"><span data-stu-id="79c22-1003">ewsId</span></span>|
-|<span data-ttu-id="79c22-1004">immutableEntryId</span><span class="sxs-lookup"><span data-stu-id="79c22-1004">immutableEntryId</span></span>|
-|<span data-ttu-id="79c22-1005">restid</span><span class="sxs-lookup"><span data-stu-id="79c22-1005">restId</span></span>|
-|<span data-ttu-id="79c22-1006">restImmutableEntryId</span><span class="sxs-lookup"><span data-stu-id="79c22-1006">restImmutableEntryId</span></span>|
+|<span data-ttu-id="89c11-1014">entryId</span><span class="sxs-lookup"><span data-stu-id="89c11-1014">entryId</span></span>|
+|<span data-ttu-id="89c11-1015">ewsId</span><span class="sxs-lookup"><span data-stu-id="89c11-1015">ewsId</span></span>|
+|<span data-ttu-id="89c11-1016">immutableEntryId</span><span class="sxs-lookup"><span data-stu-id="89c11-1016">immutableEntryId</span></span>|
+|<span data-ttu-id="89c11-1017">restid</span><span class="sxs-lookup"><span data-stu-id="89c11-1017">restId</span></span>|
+|<span data-ttu-id="89c11-1018">restImmutableEntryId</span><span class="sxs-lookup"><span data-stu-id="89c11-1018">restImmutableEntryId</span></span>|
 
-### <a name="attributeflowbehavior-values"></a><span data-ttu-id="79c22-1007">valores de attributeFlowBehavior</span><span class="sxs-lookup"><span data-stu-id="79c22-1007">attributeFlowBehavior values</span></span>
+### <a name="attributeflowbehavior-values"></a><span data-ttu-id="89c11-1019">valores de attributeFlowBehavior</span><span class="sxs-lookup"><span data-stu-id="89c11-1019">attributeFlowBehavior values</span></span>
 
-|<span data-ttu-id="79c22-1008">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1008">Member</span></span>|
+|<span data-ttu-id="89c11-1020">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1020">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-1009">flowWhenChanged</span><span class="sxs-lookup"><span data-stu-id="79c22-1009">flowWhenChanged</span></span>|
-|<span data-ttu-id="79c22-1010">flowAlways</span><span class="sxs-lookup"><span data-stu-id="79c22-1010">flowAlways</span></span>|
+|<span data-ttu-id="89c11-1021">flowWhenChanged</span><span class="sxs-lookup"><span data-stu-id="89c11-1021">flowWhenChanged</span></span>|
+|<span data-ttu-id="89c11-1022">flowAlways</span><span class="sxs-lookup"><span data-stu-id="89c11-1022">flowAlways</span></span>|
 
-### <a name="attributeflowtype-values"></a><span data-ttu-id="79c22-1011">valores de attributeFlowType</span><span class="sxs-lookup"><span data-stu-id="79c22-1011">attributeFlowType values</span></span>
+### <a name="attributeflowtype-values"></a><span data-ttu-id="89c11-1023">valores de attributeFlowType</span><span class="sxs-lookup"><span data-stu-id="89c11-1023">attributeFlowType values</span></span>
 
-|<span data-ttu-id="79c22-1012">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1012">Member</span></span>|
+|<span data-ttu-id="89c11-1024">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1024">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-1013">permanente</span><span class="sxs-lookup"><span data-stu-id="79c22-1013">always</span></span>|
-|<span data-ttu-id="79c22-1014">objectaddonamente</span><span class="sxs-lookup"><span data-stu-id="79c22-1014">objectAddOnly</span></span>|
-|<span data-ttu-id="79c22-1015">multiValueAddOnly</span><span class="sxs-lookup"><span data-stu-id="79c22-1015">multiValueAddOnly</span></span>|
-|<span data-ttu-id="79c22-1016">restid</span><span class="sxs-lookup"><span data-stu-id="79c22-1016">restId</span></span>|
+|<span data-ttu-id="89c11-1025">permanente</span><span class="sxs-lookup"><span data-stu-id="89c11-1025">always</span></span>|
+|<span data-ttu-id="89c11-1026">objectaddonamente</span><span class="sxs-lookup"><span data-stu-id="89c11-1026">objectAddOnly</span></span>|
+|<span data-ttu-id="89c11-1027">multiValueAddOnly</span><span class="sxs-lookup"><span data-stu-id="89c11-1027">multiValueAddOnly</span></span>|
+|<span data-ttu-id="89c11-1028">restid</span><span class="sxs-lookup"><span data-stu-id="89c11-1028">restId</span></span>|
 
-### <a name="objectflowtypes-values"></a><span data-ttu-id="79c22-1017">valores de objectFlowTypes</span><span class="sxs-lookup"><span data-stu-id="79c22-1017">objectFlowTypes values</span></span>
+### <a name="objectflowtypes-values"></a><span data-ttu-id="89c11-1029">valores de objectFlowTypes</span><span class="sxs-lookup"><span data-stu-id="89c11-1029">objectFlowTypes values</span></span>
 
-| <span data-ttu-id="79c22-1018">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1018">Member</span></span> | <span data-ttu-id="79c22-1019">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1019">Value</span></span> |
+| <span data-ttu-id="89c11-1030">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1030">Member</span></span> | <span data-ttu-id="89c11-1031">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1031">Value</span></span> |
 | :----- | :---- |
-| <span data-ttu-id="79c22-1020">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-1020">None</span></span>   | <span data-ttu-id="79c22-1021">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-1021">0</span></span>     |
-| <span data-ttu-id="79c22-1022">Adicionar</span><span class="sxs-lookup"><span data-stu-id="79c22-1022">Add</span></span>    | <span data-ttu-id="79c22-1023">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1023">1</span></span>     |
-| <span data-ttu-id="79c22-1024">Atualizar</span><span class="sxs-lookup"><span data-stu-id="79c22-1024">Update</span></span> | <span data-ttu-id="79c22-1025">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1025">2</span></span>     |
-| <span data-ttu-id="79c22-1026">Excluir</span><span class="sxs-lookup"><span data-stu-id="79c22-1026">Delete</span></span> | <span data-ttu-id="79c22-1027">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-1027">4</span></span>     |
+| <span data-ttu-id="89c11-1032">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-1032">None</span></span>   | <span data-ttu-id="89c11-1033">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-1033">0</span></span>     |
+| <span data-ttu-id="89c11-1034">Adicionar</span><span class="sxs-lookup"><span data-stu-id="89c11-1034">Add</span></span>    | <span data-ttu-id="89c11-1035">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1035">1</span></span>     |
+| <span data-ttu-id="89c11-1036">Atualizar</span><span class="sxs-lookup"><span data-stu-id="89c11-1036">Update</span></span> | <span data-ttu-id="89c11-1037">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1037">2</span></span>     |
+| <span data-ttu-id="89c11-1038">Excluir</span><span class="sxs-lookup"><span data-stu-id="89c11-1038">Delete</span></span> | <span data-ttu-id="89c11-1039">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-1039">4</span></span>     |
 
-### <a name="chatmessagetype-values"></a><span data-ttu-id="79c22-1028">valores de chatMessageType</span><span class="sxs-lookup"><span data-stu-id="79c22-1028">chatMessageType values</span></span>
+### <a name="chatmessagetype-values"></a><span data-ttu-id="89c11-1040">valores de chatMessageType</span><span class="sxs-lookup"><span data-stu-id="89c11-1040">chatMessageType values</span></span>
 
-|<span data-ttu-id="79c22-1029">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1029">Member</span></span>|
+|<span data-ttu-id="89c11-1041">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1041">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-1030">message</span><span class="sxs-lookup"><span data-stu-id="79c22-1030">message</span></span>|
+|<span data-ttu-id="89c11-1042">message</span><span class="sxs-lookup"><span data-stu-id="89c11-1042">message</span></span>|
 
-### <a name="chatmessageimportance-values"></a><span data-ttu-id="79c22-1031">valores de chatMessageImportance</span><span class="sxs-lookup"><span data-stu-id="79c22-1031">chatMessageImportance values</span></span>
+### <a name="chatmessageimportance-values"></a><span data-ttu-id="89c11-1043">valores de chatMessageImportance</span><span class="sxs-lookup"><span data-stu-id="89c11-1043">chatMessageImportance values</span></span>
 
-|<span data-ttu-id="79c22-1032">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1032">Member</span></span>|
+|<span data-ttu-id="89c11-1044">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1044">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-1033">SS</span><span class="sxs-lookup"><span data-stu-id="79c22-1033">normal</span></span>|
-|<span data-ttu-id="79c22-1034">high</span><span class="sxs-lookup"><span data-stu-id="79c22-1034">high</span></span>|
-|<span data-ttu-id="79c22-1035">urgente</span><span class="sxs-lookup"><span data-stu-id="79c22-1035">urgent</span></span>|
+|<span data-ttu-id="89c11-1045">SS</span><span class="sxs-lookup"><span data-stu-id="89c11-1045">normal</span></span>|
+|<span data-ttu-id="89c11-1046">high</span><span class="sxs-lookup"><span data-stu-id="89c11-1046">high</span></span>|
+|<span data-ttu-id="89c11-1047">urgente</span><span class="sxs-lookup"><span data-stu-id="89c11-1047">urgent</span></span>|
 
-### <a name="channelmembershiptype-values"></a><span data-ttu-id="79c22-1036">valores de channelMembershipType</span><span class="sxs-lookup"><span data-stu-id="79c22-1036">channelMembershipType values</span></span>
+### <a name="channelmembershiptype-values"></a><span data-ttu-id="89c11-1048">valores de channelMembershipType</span><span class="sxs-lookup"><span data-stu-id="89c11-1048">channelMembershipType values</span></span>
 
-| <span data-ttu-id="79c22-1037">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1037">Member</span></span>             | <span data-ttu-id="79c22-1038">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1038">Value</span></span> |
+| <span data-ttu-id="89c11-1049">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1049">Member</span></span>             | <span data-ttu-id="89c11-1050">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1050">Value</span></span> |
 | :----------------- | :---- |
-| <span data-ttu-id="79c22-1039">caracteres</span><span class="sxs-lookup"><span data-stu-id="79c22-1039">standard</span></span>           | <span data-ttu-id="79c22-1040">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-1040">0</span></span>     |
-| <span data-ttu-id="79c22-1041">privada</span><span class="sxs-lookup"><span data-stu-id="79c22-1041">private</span></span>            | <span data-ttu-id="79c22-1042">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1042">1</span></span>     |
-| <span data-ttu-id="79c22-1043">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-1043">unknownFutureValue</span></span> | <span data-ttu-id="79c22-1044">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1044">2</span></span>     |
+| <span data-ttu-id="89c11-1051">caracteres</span><span class="sxs-lookup"><span data-stu-id="89c11-1051">standard</span></span>           | <span data-ttu-id="89c11-1052">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-1052">0</span></span>     |
+| <span data-ttu-id="89c11-1053">privada</span><span class="sxs-lookup"><span data-stu-id="89c11-1053">private</span></span>            | <span data-ttu-id="89c11-1054">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1054">1</span></span>     |
+| <span data-ttu-id="89c11-1055">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-1055">unknownFutureValue</span></span> | <span data-ttu-id="89c11-1056">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1056">2</span></span>     |
 
-### <a name="stagedfeaturename-values"></a><span data-ttu-id="79c22-1045">valores de stagedFeatureName</span><span class="sxs-lookup"><span data-stu-id="79c22-1045">stagedFeatureName values</span></span>
+### <a name="stagedfeaturename-values"></a><span data-ttu-id="89c11-1057">valores de stagedFeatureName</span><span class="sxs-lookup"><span data-stu-id="89c11-1057">stagedFeatureName values</span></span>
 
-| <span data-ttu-id="79c22-1046">Member</span><span class="sxs-lookup"><span data-stu-id="79c22-1046">Member</span></span>                    | <span data-ttu-id="79c22-1047">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1047">Description</span></span>                   |
+| <span data-ttu-id="89c11-1058">Member</span><span class="sxs-lookup"><span data-stu-id="89c11-1058">Member</span></span>                    | <span data-ttu-id="89c11-1059">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1059">Description</span></span>                   |
 | :------------------------ | :---------------------------- |
-| <span data-ttu-id="79c22-1048">passthroughAuthentication</span><span class="sxs-lookup"><span data-stu-id="79c22-1048">passthroughAuthentication</span></span> | <span data-ttu-id="79c22-1049">Autenticação de passagem</span><span class="sxs-lookup"><span data-stu-id="79c22-1049">Passthrough Authentication</span></span>    |
-| <span data-ttu-id="79c22-1050">seamlessSso</span><span class="sxs-lookup"><span data-stu-id="79c22-1050">seamlessSso</span></span>               | <span data-ttu-id="79c22-1051">Logon único contínuo</span><span class="sxs-lookup"><span data-stu-id="79c22-1051">Seamless Single Sign-on</span></span>       |
-| <span data-ttu-id="79c22-1052">passwordHashSync</span><span class="sxs-lookup"><span data-stu-id="79c22-1052">passwordHashSync</span></span>          | <span data-ttu-id="79c22-1053">Sincronização de hash de senha</span><span class="sxs-lookup"><span data-stu-id="79c22-1053">Password Hash Synchronization</span></span> |
+| <span data-ttu-id="89c11-1060">passthroughAuthentication</span><span class="sxs-lookup"><span data-stu-id="89c11-1060">passthroughAuthentication</span></span> | <span data-ttu-id="89c11-1061">Autenticação de passagem</span><span class="sxs-lookup"><span data-stu-id="89c11-1061">Passthrough Authentication</span></span>    |
+| <span data-ttu-id="89c11-1062">seamlessSso</span><span class="sxs-lookup"><span data-stu-id="89c11-1062">seamlessSso</span></span>               | <span data-ttu-id="89c11-1063">Logon único contínuo</span><span class="sxs-lookup"><span data-stu-id="89c11-1063">Seamless Single Sign-on</span></span>       |
+| <span data-ttu-id="89c11-1064">passwordHashSync</span><span class="sxs-lookup"><span data-stu-id="89c11-1064">passwordHashSync</span></span>          | <span data-ttu-id="89c11-1065">Sincronização de hash de senha</span><span class="sxs-lookup"><span data-stu-id="89c11-1065">Password Hash Synchronization</span></span> |
 
-### <a name="tokenissuertype-values"></a><span data-ttu-id="79c22-1054">valores de tokenIssuerType</span><span class="sxs-lookup"><span data-stu-id="79c22-1054">tokenIssuerType values</span></span>
+### <a name="tokenissuertype-values"></a><span data-ttu-id="89c11-1066">valores de tokenIssuerType</span><span class="sxs-lookup"><span data-stu-id="89c11-1066">tokenIssuerType values</span></span>
 
-|<span data-ttu-id="79c22-1055">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1055">Member</span></span>|
+|<span data-ttu-id="89c11-1067">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1067">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-1056">AzureAD</span><span class="sxs-lookup"><span data-stu-id="79c22-1056">AzureAD</span></span>|
-|<span data-ttu-id="79c22-1057">ADFederationServices</span><span class="sxs-lookup"><span data-stu-id="79c22-1057">ADFederationServices</span></span>|
-|<span data-ttu-id="79c22-1058">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-1058">unknownFutureValue</span></span>|
+|<span data-ttu-id="89c11-1068">AzureAD</span><span class="sxs-lookup"><span data-stu-id="89c11-1068">AzureAD</span></span>|
+|<span data-ttu-id="89c11-1069">ADFederationServices</span><span class="sxs-lookup"><span data-stu-id="89c11-1069">ADFederationServices</span></span>|
+|<span data-ttu-id="89c11-1070">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-1070">unknownFutureValue</span></span>|
 
-### <a name="riskdetectiontimingtype-values"></a><span data-ttu-id="79c22-1059">valores de riskDetectionTimingType</span><span class="sxs-lookup"><span data-stu-id="79c22-1059">riskDetectionTimingType values</span></span>
+### <a name="riskdetectiontimingtype-values"></a><span data-ttu-id="89c11-1071">valores de riskDetectionTimingType</span><span class="sxs-lookup"><span data-stu-id="89c11-1071">riskDetectionTimingType values</span></span>
 
-|<span data-ttu-id="79c22-1060">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1060">Member</span></span>|
+|<span data-ttu-id="89c11-1072">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1072">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-1061">Não definido</span><span class="sxs-lookup"><span data-stu-id="79c22-1061">notDefined</span></span>|
-|<span data-ttu-id="79c22-1062">Realtime</span><span class="sxs-lookup"><span data-stu-id="79c22-1062">realtime</span></span>|
-|<span data-ttu-id="79c22-1063">nearRealtime</span><span class="sxs-lookup"><span data-stu-id="79c22-1063">nearRealtime</span></span>|
-|<span data-ttu-id="79c22-1064">modo</span><span class="sxs-lookup"><span data-stu-id="79c22-1064">offline</span></span>|
-|<span data-ttu-id="79c22-1065">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-1065">unknownFutureValue</span></span>|
+|<span data-ttu-id="89c11-1073">Não definido</span><span class="sxs-lookup"><span data-stu-id="89c11-1073">notDefined</span></span>|
+|<span data-ttu-id="89c11-1074">Realtime</span><span class="sxs-lookup"><span data-stu-id="89c11-1074">realtime</span></span>|
+|<span data-ttu-id="89c11-1075">nearRealtime</span><span class="sxs-lookup"><span data-stu-id="89c11-1075">nearRealtime</span></span>|
+|<span data-ttu-id="89c11-1076">modo</span><span class="sxs-lookup"><span data-stu-id="89c11-1076">offline</span></span>|
+|<span data-ttu-id="89c11-1077">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-1077">unknownFutureValue</span></span>|
 
-### <a name="activitytype-values"></a><span data-ttu-id="79c22-1066">valores de ActivityType</span><span class="sxs-lookup"><span data-stu-id="79c22-1066">activityType values</span></span>
+### <a name="activitytype-values"></a><span data-ttu-id="89c11-1078">valores de ActivityType</span><span class="sxs-lookup"><span data-stu-id="89c11-1078">activityType values</span></span>
 
-|<span data-ttu-id="79c22-1067">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1067">Member</span></span>|
+|<span data-ttu-id="89c11-1079">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1079">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-1068">SignIn</span><span class="sxs-lookup"><span data-stu-id="79c22-1068">signin</span></span>|
-|<span data-ttu-id="79c22-1069">user</span><span class="sxs-lookup"><span data-stu-id="79c22-1069">user</span></span>|
-|<span data-ttu-id="79c22-1070">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-1070">unknownFutureValue</span></span>|
+|<span data-ttu-id="89c11-1080">SignIn</span><span class="sxs-lookup"><span data-stu-id="89c11-1080">signin</span></span>|
+|<span data-ttu-id="89c11-1081">user</span><span class="sxs-lookup"><span data-stu-id="89c11-1081">user</span></span>|
+|<span data-ttu-id="89c11-1082">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-1082">unknownFutureValue</span></span>|
 
-### <a name="entitytype-values"></a><span data-ttu-id="79c22-1071">valores de entityType</span><span class="sxs-lookup"><span data-stu-id="79c22-1071">entityType values</span></span>
+### <a name="chatmessagepolicyviolationuseractiontype-values"></a><span data-ttu-id="89c11-1083">valores de chatMessagePolicyViolationUserActionType</span><span class="sxs-lookup"><span data-stu-id="89c11-1083">chatMessagePolicyViolationUserActionType values</span></span>
 
-| <span data-ttu-id="79c22-1072">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1072">Member</span></span>       |
+| <span data-ttu-id="89c11-1084">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1084">Member</span></span>   | <span data-ttu-id="89c11-1085">Valor int</span><span class="sxs-lookup"><span data-stu-id="89c11-1085">Int value</span></span> |  <span data-ttu-id="89c11-1086">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1086">Description</span></span> |
+|:---------------|:--------|:----------|
+| <span data-ttu-id="89c11-1087">Nenhum</span><span class="sxs-lookup"><span data-stu-id="89c11-1087">None</span></span> | <span data-ttu-id="89c11-1088">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-1088">0</span></span> | <span data-ttu-id="89c11-1089">Valor padrão.</span><span class="sxs-lookup"><span data-stu-id="89c11-1089">Default value.</span></span> <span data-ttu-id="89c11-1090">Este é o valor em uma mensagem quando o usuário não executou uma ação na mensagem bloqueada pela DLP.</span><span class="sxs-lookup"><span data-stu-id="89c11-1090">This is the value on a message when the user has not taken an action on the message blocked by DLP.</span></span> |
+| <span data-ttu-id="89c11-1091">Override</span><span class="sxs-lookup"><span data-stu-id="89c11-1091">Override</span></span> | <span data-ttu-id="89c11-1092">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1092">1</span></span> | <span data-ttu-id="89c11-1093">O remetente substituiu a mensagem veredicto e enviou a mensagem mesmo assim.</span><span class="sxs-lookup"><span data-stu-id="89c11-1093">Sender has overridden the message verdict and sent the message anyway.</span></span>|
+| <span data-ttu-id="89c11-1094">ReportFalsePositive</span><span class="sxs-lookup"><span data-stu-id="89c11-1094">ReportFalsePositive</span></span> | <span data-ttu-id="89c11-1095">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1095">2</span></span> | <span data-ttu-id="89c11-1096">O remetente informou a mensagem veredicto para os administradores como um falso positivo.</span><span class="sxs-lookup"><span data-stu-id="89c11-1096">Sender has reported the message verdict to the admins as a false positive.</span></span>|
+
+### <a name="chatmessagepolicyviolationverdictdetailstype-values"></a><span data-ttu-id="89c11-1097">valores de chatMessagePolicyViolationVerdictDetailsType</span><span class="sxs-lookup"><span data-stu-id="89c11-1097">chatMessagePolicyViolationVerdictDetailsType values</span></span>
+
+| <span data-ttu-id="89c11-1098">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1098">Member</span></span>   | <span data-ttu-id="89c11-1099">Valor int</span><span class="sxs-lookup"><span data-stu-id="89c11-1099">Int value</span></span> |  <span data-ttu-id="89c11-1100">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1100">Description</span></span> |
+|:---------------|:--------|:----------|
+| <span data-ttu-id="89c11-1101">Nenhum</span><span class="sxs-lookup"><span data-stu-id="89c11-1101">None</span></span> | <span data-ttu-id="89c11-1102">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-1102">0</span></span> |  <span data-ttu-id="89c11-1103">O usuário não tem permissão para substituir a mensagem.</span><span class="sxs-lookup"><span data-stu-id="89c11-1103">User is not allowed to override the message.</span></span> <span data-ttu-id="89c11-1104">O usuário não tem permissão para relatar uma mensagem como falso positivo se policyTip não for fornecido.</span><span class="sxs-lookup"><span data-stu-id="89c11-1104">User is not allowed to report a message as false positive if policyTip is not provided.</span></span> <span data-ttu-id="89c11-1105">Em todos os outros cenários, o usuário pode relatar uma mensagem como falso positivo.</span><span class="sxs-lookup"><span data-stu-id="89c11-1105">In all other scenarios, user can report a message as false positive.</span></span>|
+| <span data-ttu-id="89c11-1106">AllowFalsePositiveOverride</span><span class="sxs-lookup"><span data-stu-id="89c11-1106">AllowFalsePositiveOverride</span></span> | <span data-ttu-id="89c11-1107">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1107">1</span></span> |  <span data-ttu-id="89c11-1108">O usuário não tem permissão para substituir explicitamente o bloco, a menos que ele seja combinado com `AllowOverrideWithoutJustification` ou `AllowOverrideWithJustification` sinalizadores.</span><span class="sxs-lookup"><span data-stu-id="89c11-1108">User is not allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags.</span></span> <span data-ttu-id="89c11-1109">Relatar um falso positivo na violação substitui automaticamente o bloco e envia a mensagem.</span><span class="sxs-lookup"><span data-stu-id="89c11-1109">Reporting a false positive on the violation automatically overrides the block and sends the message.</span></span> |
+| <span data-ttu-id="89c11-1110">AllowOverrideWithoutJustification</span><span class="sxs-lookup"><span data-stu-id="89c11-1110">AllowOverrideWithoutJustification</span></span> | <span data-ttu-id="89c11-1111">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1111">2</span></span> | <span data-ttu-id="89c11-1112">O usuário tem permissão para substituir o bloco e enviar a mensagem.</span><span class="sxs-lookup"><span data-stu-id="89c11-1112">User is allowed to override the block and send the message.</span></span> <span data-ttu-id="89c11-1113">O texto de justificativa não é obrigatório.</span><span class="sxs-lookup"><span data-stu-id="89c11-1113">Justification text is not required.</span></span> <span data-ttu-id="89c11-1114">Exclusivo para `AllowOverrideWithJustification` .</span><span class="sxs-lookup"><span data-stu-id="89c11-1114">Exclusive to `AllowOverrideWithJustification`.</span></span> |
+| <span data-ttu-id="89c11-1115">AllowOverrideWithJustification</span><span class="sxs-lookup"><span data-stu-id="89c11-1115">AllowOverrideWithJustification</span></span> | <span data-ttu-id="89c11-1116">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-1116">4</span></span> |  <span data-ttu-id="89c11-1117">O usuário tem permissão para substituir o bloco e enviar a mensagem.</span><span class="sxs-lookup"><span data-stu-id="89c11-1117">User is allowed to override the block and send the message.</span></span> <span data-ttu-id="89c11-1118">O texto de justificativa é obrigatório.</span><span class="sxs-lookup"><span data-stu-id="89c11-1118">Justification text is required.</span></span> <span data-ttu-id="89c11-1119">Exclusivo para `AllowOverrideWithoutJustification` .</span><span class="sxs-lookup"><span data-stu-id="89c11-1119">Exclusive to `AllowOverrideWithoutJustification`.</span></span>|
+
+### <a name="entitytype-values"></a><span data-ttu-id="89c11-1120">valores de entityType</span><span class="sxs-lookup"><span data-stu-id="89c11-1120">entityType values</span></span>
+
+| <span data-ttu-id="89c11-1121">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1121">Member</span></span>       |
 |:--------------|
-|<span data-ttu-id="79c22-1073">event</span><span class="sxs-lookup"><span data-stu-id="79c22-1073">event</span></span>|
-|<span data-ttu-id="79c22-1074">message</span><span class="sxs-lookup"><span data-stu-id="79c22-1074">message</span></span>|
-|<span data-ttu-id="79c22-1075">driveItem</span><span class="sxs-lookup"><span data-stu-id="79c22-1075">driveItem</span></span>|
-|<span data-ttu-id="79c22-1076">externalFile</span><span class="sxs-lookup"><span data-stu-id="79c22-1076">externalFile</span></span>|
-|<span data-ttu-id="79c22-1077">externalItem</span><span class="sxs-lookup"><span data-stu-id="79c22-1077">externalItem</span></span>|
+|<span data-ttu-id="89c11-1122">event</span><span class="sxs-lookup"><span data-stu-id="89c11-1122">event</span></span>|
+|<span data-ttu-id="89c11-1123">message</span><span class="sxs-lookup"><span data-stu-id="89c11-1123">message</span></span>|
+|<span data-ttu-id="89c11-1124">driveItem</span><span class="sxs-lookup"><span data-stu-id="89c11-1124">driveItem</span></span>|
+|<span data-ttu-id="89c11-1125">externalFile</span><span class="sxs-lookup"><span data-stu-id="89c11-1125">externalFile</span></span>|
+|<span data-ttu-id="89c11-1126">externalItem</span><span class="sxs-lookup"><span data-stu-id="89c11-1126">externalItem</span></span>|
 
-### <a name="onlinemeetingprovidertype-values"></a><span data-ttu-id="79c22-1078">valores de onlineMeetingProviderType</span><span class="sxs-lookup"><span data-stu-id="79c22-1078">onlineMeetingProviderType values</span></span>
+### <a name="onlinemeetingprovidertype-values"></a><span data-ttu-id="89c11-1127">valores de onlineMeetingProviderType</span><span class="sxs-lookup"><span data-stu-id="89c11-1127">onlineMeetingProviderType values</span></span>
 
-|<span data-ttu-id="79c22-1079">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1079">Member</span></span>|
+|<span data-ttu-id="89c11-1128">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1128">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-1080">desconhecido</span><span class="sxs-lookup"><span data-stu-id="79c22-1080">unknown</span></span>|
-|<span data-ttu-id="79c22-1081">skypeForBusiness</span><span class="sxs-lookup"><span data-stu-id="79c22-1081">skypeForBusiness</span></span>|
-|<span data-ttu-id="79c22-1082">skypeForConsumer</span><span class="sxs-lookup"><span data-stu-id="79c22-1082">skypeForConsumer</span></span>|
-|<span data-ttu-id="79c22-1083">teamsForBusiness</span><span class="sxs-lookup"><span data-stu-id="79c22-1083">teamsForBusiness</span></span>|
+|<span data-ttu-id="89c11-1129">desconhecido</span><span class="sxs-lookup"><span data-stu-id="89c11-1129">unknown</span></span>|
+|<span data-ttu-id="89c11-1130">skypeForBusiness</span><span class="sxs-lookup"><span data-stu-id="89c11-1130">skypeForBusiness</span></span>|
+|<span data-ttu-id="89c11-1131">skypeForConsumer</span><span class="sxs-lookup"><span data-stu-id="89c11-1131">skypeForConsumer</span></span>|
+|<span data-ttu-id="89c11-1132">teamsForBusiness</span><span class="sxs-lookup"><span data-stu-id="89c11-1132">teamsForBusiness</span></span>|
 
-### <a name="delegatemeetingmessagedeliveryoptions-values"></a><span data-ttu-id="79c22-1084">valores de delegateMeetingMessageDeliveryOptions</span><span class="sxs-lookup"><span data-stu-id="79c22-1084">delegateMeetingMessageDeliveryOptions values</span></span>
+### <a name="delegatemeetingmessagedeliveryoptions-values"></a><span data-ttu-id="89c11-1133">valores de delegateMeetingMessageDeliveryOptions</span><span class="sxs-lookup"><span data-stu-id="89c11-1133">delegateMeetingMessageDeliveryOptions values</span></span>
 
-|<span data-ttu-id="79c22-1085">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1085">Member</span></span>|
+|<span data-ttu-id="89c11-1134">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1134">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-1086">sendToDelegateAndInformationToPrincipal</span><span class="sxs-lookup"><span data-stu-id="79c22-1086">sendToDelegateAndInformationToPrincipal</span></span>|
-|<span data-ttu-id="79c22-1087">sendToDelegateAndPrincipal</span><span class="sxs-lookup"><span data-stu-id="79c22-1087">sendToDelegateAndPrincipal</span></span>|
-|<span data-ttu-id="79c22-1088">sendToDelegateOnly</span><span class="sxs-lookup"><span data-stu-id="79c22-1088">sendToDelegateOnly</span></span>|
+|<span data-ttu-id="89c11-1135">sendToDelegateAndInformationToPrincipal</span><span class="sxs-lookup"><span data-stu-id="89c11-1135">sendToDelegateAndInformationToPrincipal</span></span>|
+|<span data-ttu-id="89c11-1136">sendToDelegateAndPrincipal</span><span class="sxs-lookup"><span data-stu-id="89c11-1136">sendToDelegateAndPrincipal</span></span>|
+|<span data-ttu-id="89c11-1137">sendToDelegateOnly</span><span class="sxs-lookup"><span data-stu-id="89c11-1137">sendToDelegateOnly</span></span>|
 
-### <a name="calendarroletype-values"></a><span data-ttu-id="79c22-1089">valores de calendarRoleType</span><span class="sxs-lookup"><span data-stu-id="79c22-1089">calendarRoleType values</span></span>
+### <a name="calendarroletype-values"></a><span data-ttu-id="89c11-1138">valores de calendarRoleType</span><span class="sxs-lookup"><span data-stu-id="89c11-1138">calendarRoleType values</span></span>
 
-|<span data-ttu-id="79c22-1090">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1090">Member</span></span>|
+|<span data-ttu-id="89c11-1139">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1139">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-1091">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-1091">none</span></span>|
-|<span data-ttu-id="79c22-1092">freeBusyRead</span><span class="sxs-lookup"><span data-stu-id="79c22-1092">freeBusyRead</span></span>|
-|<span data-ttu-id="79c22-1093">limitedRead</span><span class="sxs-lookup"><span data-stu-id="79c22-1093">limitedRead</span></span>|
-|<span data-ttu-id="79c22-1094">leitura</span><span class="sxs-lookup"><span data-stu-id="79c22-1094">read</span></span>|
-|<span data-ttu-id="79c22-1095">gravação</span><span class="sxs-lookup"><span data-stu-id="79c22-1095">write</span></span>|
-|<span data-ttu-id="79c22-1096">delegateWithoutPrivateEventAccess</span><span class="sxs-lookup"><span data-stu-id="79c22-1096">delegateWithoutPrivateEventAccess</span></span>|
-|<span data-ttu-id="79c22-1097">delegateWithPrivateEventAccess</span><span class="sxs-lookup"><span data-stu-id="79c22-1097">delegateWithPrivateEventAccess</span></span>|
-|<span data-ttu-id="79c22-1098">cliente</span><span class="sxs-lookup"><span data-stu-id="79c22-1098">custom</span></span>|
+|<span data-ttu-id="89c11-1140">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-1140">none</span></span>|
+|<span data-ttu-id="89c11-1141">freeBusyRead</span><span class="sxs-lookup"><span data-stu-id="89c11-1141">freeBusyRead</span></span>|
+|<span data-ttu-id="89c11-1142">limitedRead</span><span class="sxs-lookup"><span data-stu-id="89c11-1142">limitedRead</span></span>|
+|<span data-ttu-id="89c11-1143">leitura</span><span class="sxs-lookup"><span data-stu-id="89c11-1143">read</span></span>|
+|<span data-ttu-id="89c11-1144">gravação</span><span class="sxs-lookup"><span data-stu-id="89c11-1144">write</span></span>|
+|<span data-ttu-id="89c11-1145">delegateWithoutPrivateEventAccess</span><span class="sxs-lookup"><span data-stu-id="89c11-1145">delegateWithoutPrivateEventAccess</span></span>|
+|<span data-ttu-id="89c11-1146">delegateWithPrivateEventAccess</span><span class="sxs-lookup"><span data-stu-id="89c11-1146">delegateWithPrivateEventAccess</span></span>|
+|<span data-ttu-id="89c11-1147">cliente</span><span class="sxs-lookup"><span data-stu-id="89c11-1147">custom</span></span>|
 
-### <a name="contentformat-values"></a><span data-ttu-id="79c22-1099">valores de contentFormat</span><span class="sxs-lookup"><span data-stu-id="79c22-1099">contentFormat values</span></span>
+### <a name="contentformat-values"></a><span data-ttu-id="89c11-1148">valores de contentFormat</span><span class="sxs-lookup"><span data-stu-id="89c11-1148">contentFormat values</span></span>
 
-| <span data-ttu-id="79c22-1100">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1100">Member</span></span>  | <span data-ttu-id="79c22-1101">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1101">Value</span></span> | <span data-ttu-id="79c22-1102">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1102">Description</span></span>                          |
+| <span data-ttu-id="89c11-1149">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1149">Member</span></span>  | <span data-ttu-id="89c11-1150">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1150">Value</span></span> | <span data-ttu-id="89c11-1151">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1151">Description</span></span>                          |
 | :------ | :---- | :----------------------------------- |
-| <span data-ttu-id="79c22-1103">Padrão.</span><span class="sxs-lookup"><span data-stu-id="79c22-1103">default</span></span> | <span data-ttu-id="79c22-1104">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-1104">0</span></span>     | <span data-ttu-id="79c22-1105">O conteúdo é um tipo de arquivo ou não de email.</span><span class="sxs-lookup"><span data-stu-id="79c22-1105">Content is a file or non-email type.</span></span> |
-| <span data-ttu-id="79c22-1106">email</span><span class="sxs-lookup"><span data-stu-id="79c22-1106">email</span></span>   | <span data-ttu-id="79c22-1107">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1107">1</span></span>     | <span data-ttu-id="79c22-1108">O conteúdo é um email.</span><span class="sxs-lookup"><span data-stu-id="79c22-1108">Content is an email.</span></span>                 |
+| <span data-ttu-id="89c11-1152">Padrão.</span><span class="sxs-lookup"><span data-stu-id="89c11-1152">default</span></span> | <span data-ttu-id="89c11-1153">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-1153">0</span></span>     | <span data-ttu-id="89c11-1154">O conteúdo é um tipo de arquivo ou não de email.</span><span class="sxs-lookup"><span data-stu-id="89c11-1154">Content is a file or non-email type.</span></span> |
+| <span data-ttu-id="89c11-1155">email</span><span class="sxs-lookup"><span data-stu-id="89c11-1155">email</span></span>   | <span data-ttu-id="89c11-1156">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1156">1</span></span>     | <span data-ttu-id="89c11-1157">O conteúdo é um email.</span><span class="sxs-lookup"><span data-stu-id="89c11-1157">Content is an email.</span></span>                 |
 
-### <a name="contentstate-values"></a><span data-ttu-id="79c22-1109">valores de contentstate</span><span class="sxs-lookup"><span data-stu-id="79c22-1109">contentState values</span></span>
+### <a name="contentstate-values"></a><span data-ttu-id="89c11-1158">valores de contentstate</span><span class="sxs-lookup"><span data-stu-id="89c11-1158">contentState values</span></span>
 
-| <span data-ttu-id="79c22-1110">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1110">Member</span></span> | <span data-ttu-id="79c22-1111">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1111">Value</span></span> | <span data-ttu-id="79c22-1112">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1112">Description</span></span>                                                                      |
+| <span data-ttu-id="89c11-1159">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1159">Member</span></span> | <span data-ttu-id="89c11-1160">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1160">Value</span></span> | <span data-ttu-id="89c11-1161">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1161">Description</span></span>                                                                      |
 | :----- | :---- | :------------------------------------------------------------------------------- |
-| <span data-ttu-id="79c22-1113">descanso</span><span class="sxs-lookup"><span data-stu-id="79c22-1113">rest</span></span>   | <span data-ttu-id="79c22-1114">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-1114">0</span></span>     | <span data-ttu-id="79c22-1115">Os dados estão em repouso; Um arquivo em um compartilhamento, por exemplo.</span><span class="sxs-lookup"><span data-stu-id="79c22-1115">Data is at rest; A file in a share, for example.</span></span>                                 |
-| <span data-ttu-id="79c22-1116">movimento</span><span class="sxs-lookup"><span data-stu-id="79c22-1116">motion</span></span> | <span data-ttu-id="79c22-1117">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1117">1</span></span>     | <span data-ttu-id="79c22-1118">Os dados estão em movimento.</span><span class="sxs-lookup"><span data-stu-id="79c22-1118">Data is in motion.</span></span> <span data-ttu-id="79c22-1119">Um arquivo interceptado por um dispositivo de rede em trânsito.</span><span class="sxs-lookup"><span data-stu-id="79c22-1119">A file intercepted by a network appliance in transit.</span></span>         |
-| <span data-ttu-id="79c22-1120">Use</span><span class="sxs-lookup"><span data-stu-id="79c22-1120">use</span></span>    | <span data-ttu-id="79c22-1121">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1121">2</span></span>     | <span data-ttu-id="79c22-1122">Os dados estão em uso.</span><span class="sxs-lookup"><span data-stu-id="79c22-1122">Data is in use.</span></span> <span data-ttu-id="79c22-1123">Um arquivo é aberto em um aplicativo cliente como o Microsoft Office.</span><span class="sxs-lookup"><span data-stu-id="79c22-1123">A file is open in a client application such as Microsoft Office.</span></span> |
+| <span data-ttu-id="89c11-1162">descanso</span><span class="sxs-lookup"><span data-stu-id="89c11-1162">rest</span></span>   | <span data-ttu-id="89c11-1163">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-1163">0</span></span>     | <span data-ttu-id="89c11-1164">Os dados estão em repouso; Um arquivo em um compartilhamento, por exemplo.</span><span class="sxs-lookup"><span data-stu-id="89c11-1164">Data is at rest; A file in a share, for example.</span></span>                                 |
+| <span data-ttu-id="89c11-1165">movimento</span><span class="sxs-lookup"><span data-stu-id="89c11-1165">motion</span></span> | <span data-ttu-id="89c11-1166">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1166">1</span></span>     | <span data-ttu-id="89c11-1167">Os dados estão em movimento.</span><span class="sxs-lookup"><span data-stu-id="89c11-1167">Data is in motion.</span></span> <span data-ttu-id="89c11-1168">Um arquivo interceptado por um dispositivo de rede em trânsito.</span><span class="sxs-lookup"><span data-stu-id="89c11-1168">A file intercepted by a network appliance in transit.</span></span>         |
+| <span data-ttu-id="89c11-1169">Use</span><span class="sxs-lookup"><span data-stu-id="89c11-1169">use</span></span>    | <span data-ttu-id="89c11-1170">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1170">2</span></span>     | <span data-ttu-id="89c11-1171">Os dados estão em uso.</span><span class="sxs-lookup"><span data-stu-id="89c11-1171">Data is in use.</span></span> <span data-ttu-id="89c11-1172">Um arquivo é aberto em um aplicativo cliente como o Microsoft Office.</span><span class="sxs-lookup"><span data-stu-id="89c11-1172">A file is open in a client application such as Microsoft Office.</span></span> |
 
-### <a name="assignmentmethod-values"></a><span data-ttu-id="79c22-1124">valores de AssignmentMethod for utilizado</span><span class="sxs-lookup"><span data-stu-id="79c22-1124">assignmentMethod values</span></span>
+### <a name="assignmentmethod-values"></a><span data-ttu-id="89c11-1173">valores de AssignmentMethod for utilizado</span><span class="sxs-lookup"><span data-stu-id="89c11-1173">assignmentMethod values</span></span>
 
-| <span data-ttu-id="79c22-1125">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1125">Member</span></span>     | <span data-ttu-id="79c22-1126">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1126">Value</span></span> | <span data-ttu-id="79c22-1127">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1127">Description</span></span>                                                                                                                      |
+| <span data-ttu-id="89c11-1174">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1174">Member</span></span>     | <span data-ttu-id="89c11-1175">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1175">Value</span></span> | <span data-ttu-id="89c11-1176">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1176">Description</span></span>                                                                                                                      |
 | :--------- | :---- | :------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="79c22-1128">caracteres</span><span class="sxs-lookup"><span data-stu-id="79c22-1128">standard</span></span>   | <span data-ttu-id="79c22-1129">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-1129">0</span></span>     | <span data-ttu-id="79c22-1130">O rótulo foi definido por uma condição de serviço ou política.</span><span class="sxs-lookup"><span data-stu-id="79c22-1130">The label was set by a service or policy condition.</span></span>                                                                              |
-| <span data-ttu-id="79c22-1131">Privilege</span><span class="sxs-lookup"><span data-stu-id="79c22-1131">privileged</span></span> | <span data-ttu-id="79c22-1132">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1132">1</span></span>     | <span data-ttu-id="79c22-1133">O rótulo foi definido explicitamente por um usuário.</span><span class="sxs-lookup"><span data-stu-id="79c22-1133">The label was set explicitly by a user.</span></span>                                                                                          |
-| <span data-ttu-id="79c22-1134">Automático</span><span class="sxs-lookup"><span data-stu-id="79c22-1134">auto</span></span>       | <span data-ttu-id="79c22-1135">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1135">2</span></span>     | <span data-ttu-id="79c22-1136">Permite a substituição de qualquer rótulo existente.</span><span class="sxs-lookup"><span data-stu-id="79c22-1136">Allows override of any existing label.</span></span> <span data-ttu-id="79c22-1137">Justificativa necessária no downgrade.</span><span class="sxs-lookup"><span data-stu-id="79c22-1137">Justification required on downgrade.</span></span> <span data-ttu-id="79c22-1138">Resulta em `standard` método de atribuição em metadados.</span><span class="sxs-lookup"><span data-stu-id="79c22-1138">Results in `standard` assignment method in metadata.</span></span> |
+| <span data-ttu-id="89c11-1177">caracteres</span><span class="sxs-lookup"><span data-stu-id="89c11-1177">standard</span></span>   | <span data-ttu-id="89c11-1178">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-1178">0</span></span>     | <span data-ttu-id="89c11-1179">O rótulo foi definido por uma condição de serviço ou política.</span><span class="sxs-lookup"><span data-stu-id="89c11-1179">The label was set by a service or policy condition.</span></span>                                                                              |
+| <span data-ttu-id="89c11-1180">Privilege</span><span class="sxs-lookup"><span data-stu-id="89c11-1180">privileged</span></span> | <span data-ttu-id="89c11-1181">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1181">1</span></span>     | <span data-ttu-id="89c11-1182">O rótulo foi definido explicitamente por um usuário.</span><span class="sxs-lookup"><span data-stu-id="89c11-1182">The label was set explicitly by a user.</span></span>                                                                                          |
+| <span data-ttu-id="89c11-1183">Automático</span><span class="sxs-lookup"><span data-stu-id="89c11-1183">auto</span></span>       | <span data-ttu-id="89c11-1184">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1184">2</span></span>     | <span data-ttu-id="89c11-1185">Permite a substituição de qualquer rótulo existente.</span><span class="sxs-lookup"><span data-stu-id="89c11-1185">Allows override of any existing label.</span></span> <span data-ttu-id="89c11-1186">Justificativa necessária no downgrade.</span><span class="sxs-lookup"><span data-stu-id="89c11-1186">Justification required on downgrade.</span></span> <span data-ttu-id="89c11-1187">Resulta em `standard` método de atribuição em metadados.</span><span class="sxs-lookup"><span data-stu-id="89c11-1187">Results in `standard` assignment method in metadata.</span></span> |
 
-### <a name="actionsource-values"></a><span data-ttu-id="79c22-1139">valores de ActionName</span><span class="sxs-lookup"><span data-stu-id="79c22-1139">actionSource values</span></span>
+### <a name="actionsource-values"></a><span data-ttu-id="89c11-1188">valores de ActionName</span><span class="sxs-lookup"><span data-stu-id="89c11-1188">actionSource values</span></span>
 
-| <span data-ttu-id="79c22-1140">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1140">Member</span></span>        | <span data-ttu-id="79c22-1141">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1141">Value</span></span> | <span data-ttu-id="79c22-1142">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1142">Description</span></span>                                                  |
+| <span data-ttu-id="89c11-1189">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1189">Member</span></span>        | <span data-ttu-id="89c11-1190">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1190">Value</span></span> | <span data-ttu-id="89c11-1191">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1191">Description</span></span>                                                  |
 | :------------ | :---- | :----------------------------------------------------------- |
-| <span data-ttu-id="79c22-1143">Manual</span><span class="sxs-lookup"><span data-stu-id="79c22-1143">manual</span></span>        | <span data-ttu-id="79c22-1144">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-1144">0</span></span>     | <span data-ttu-id="79c22-1145">Um usuário selecionou manualmente o rótulo.</span><span class="sxs-lookup"><span data-stu-id="79c22-1145">A user manually selected the label.</span></span>                          |
-| <span data-ttu-id="79c22-1146">Automático</span><span class="sxs-lookup"><span data-stu-id="79c22-1146">automatic</span></span>     | <span data-ttu-id="79c22-1147">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1147">1</span></span>     | <span data-ttu-id="79c22-1148">O rótulo foi escolhido como resultado de condições da política.</span><span class="sxs-lookup"><span data-stu-id="79c22-1148">The label was chosen as a result of policy conditions.</span></span>       |
-| <span data-ttu-id="79c22-1149">recomendado</span><span class="sxs-lookup"><span data-stu-id="79c22-1149">recommended</span></span>   | <span data-ttu-id="79c22-1150">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1150">2</span></span>     | <span data-ttu-id="79c22-1151">O optou por aplicar um rótulo recomendado.</span><span class="sxs-lookup"><span data-stu-id="79c22-1151">The elected to apply a recommended label.</span></span>                    |
-| <span data-ttu-id="79c22-1152">policyDefault</span><span class="sxs-lookup"><span data-stu-id="79c22-1152">policyDefault</span></span> | <span data-ttu-id="79c22-1153">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-1153">3</span></span>     | <span data-ttu-id="79c22-1154">O usuário não ação e o rótulo de política padrão foi aplicado.</span><span class="sxs-lookup"><span data-stu-id="79c22-1154">The user no action and the policy-default label was applied.</span></span> |
-| <span data-ttu-id="79c22-1155">alguma</span><span class="sxs-lookup"><span data-stu-id="79c22-1155">mandatory</span></span>     | <span data-ttu-id="79c22-1156">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-1156">4</span></span>     | <span data-ttu-id="79c22-1157">O usuário escolheu um rótulo depois de ser forçado a escolher.</span><span class="sxs-lookup"><span data-stu-id="79c22-1157">The user chose a label after being forced to choose.</span></span>         |
+| <span data-ttu-id="89c11-1192">Manual</span><span class="sxs-lookup"><span data-stu-id="89c11-1192">manual</span></span>        | <span data-ttu-id="89c11-1193">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-1193">0</span></span>     | <span data-ttu-id="89c11-1194">Um usuário selecionou manualmente o rótulo.</span><span class="sxs-lookup"><span data-stu-id="89c11-1194">A user manually selected the label.</span></span>                          |
+| <span data-ttu-id="89c11-1195">Automático</span><span class="sxs-lookup"><span data-stu-id="89c11-1195">automatic</span></span>     | <span data-ttu-id="89c11-1196">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1196">1</span></span>     | <span data-ttu-id="89c11-1197">O rótulo foi escolhido como resultado de condições da política.</span><span class="sxs-lookup"><span data-stu-id="89c11-1197">The label was chosen as a result of policy conditions.</span></span>       |
+| <span data-ttu-id="89c11-1198">recomendado</span><span class="sxs-lookup"><span data-stu-id="89c11-1198">recommended</span></span>   | <span data-ttu-id="89c11-1199">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1199">2</span></span>     | <span data-ttu-id="89c11-1200">O optou por aplicar um rótulo recomendado.</span><span class="sxs-lookup"><span data-stu-id="89c11-1200">The elected to apply a recommended label.</span></span>                    |
+| <span data-ttu-id="89c11-1201">policyDefault</span><span class="sxs-lookup"><span data-stu-id="89c11-1201">policyDefault</span></span> | <span data-ttu-id="89c11-1202">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-1202">3</span></span>     | <span data-ttu-id="89c11-1203">O usuário não ação e o rótulo de política padrão foi aplicado.</span><span class="sxs-lookup"><span data-stu-id="89c11-1203">The user no action and the policy-default label was applied.</span></span> |
+| <span data-ttu-id="89c11-1204">alguma</span><span class="sxs-lookup"><span data-stu-id="89c11-1204">mandatory</span></span>     | <span data-ttu-id="89c11-1205">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-1205">4</span></span>     | <span data-ttu-id="89c11-1206">O usuário escolheu um rótulo depois de ser forçado a escolher.</span><span class="sxs-lookup"><span data-stu-id="89c11-1206">The user chose a label after being forced to choose.</span></span>         |
 
-### <a name="contentalignment-values"></a><span data-ttu-id="79c22-1158">valores de contentAlignment</span><span class="sxs-lookup"><span data-stu-id="79c22-1158">contentAlignment values</span></span>
+### <a name="contentalignment-values"></a><span data-ttu-id="89c11-1207">valores de contentAlignment</span><span class="sxs-lookup"><span data-stu-id="89c11-1207">contentAlignment values</span></span>
 
-| <span data-ttu-id="79c22-1159">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1159">Member</span></span> | <span data-ttu-id="79c22-1160">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1160">Value</span></span> | <span data-ttu-id="79c22-1161">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1161">Description</span></span>                         |
+| <span data-ttu-id="89c11-1208">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1208">Member</span></span> | <span data-ttu-id="89c11-1209">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1209">Value</span></span> | <span data-ttu-id="89c11-1210">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1210">Description</span></span>                         |
 | :----- | :---- | :---------------------------------- |
-| <span data-ttu-id="79c22-1162">left</span><span class="sxs-lookup"><span data-stu-id="79c22-1162">left</span></span>   | <span data-ttu-id="79c22-1163">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-1163">0</span></span>     | <span data-ttu-id="79c22-1164">Alinha a marcação de conteúdo à esquerda.</span><span class="sxs-lookup"><span data-stu-id="79c22-1164">Align content marking to the left.</span></span>  |
-| <span data-ttu-id="79c22-1165">Certo</span><span class="sxs-lookup"><span data-stu-id="79c22-1165">right</span></span>  | <span data-ttu-id="79c22-1166">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1166">1</span></span>     | <span data-ttu-id="79c22-1167">Alinha a marcação de conteúdo à direita.</span><span class="sxs-lookup"><span data-stu-id="79c22-1167">Align content marking to the right.</span></span> |
-| <span data-ttu-id="79c22-1168">Centro</span><span class="sxs-lookup"><span data-stu-id="79c22-1168">center</span></span> | <span data-ttu-id="79c22-1169">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1169">2</span></span>     | <span data-ttu-id="79c22-1170">Centralizar a marcação de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="79c22-1170">Center content marking.</span></span>             |
+| <span data-ttu-id="89c11-1211">left</span><span class="sxs-lookup"><span data-stu-id="89c11-1211">left</span></span>   | <span data-ttu-id="89c11-1212">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-1212">0</span></span>     | <span data-ttu-id="89c11-1213">Alinha a marcação de conteúdo à esquerda.</span><span class="sxs-lookup"><span data-stu-id="89c11-1213">Align content marking to the left.</span></span>  |
+| <span data-ttu-id="89c11-1214">Certo</span><span class="sxs-lookup"><span data-stu-id="89c11-1214">right</span></span>  | <span data-ttu-id="89c11-1215">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1215">1</span></span>     | <span data-ttu-id="89c11-1216">Alinha a marcação de conteúdo à direita.</span><span class="sxs-lookup"><span data-stu-id="89c11-1216">Align content marking to the right.</span></span> |
+| <span data-ttu-id="89c11-1217">Centro</span><span class="sxs-lookup"><span data-stu-id="89c11-1217">center</span></span> | <span data-ttu-id="89c11-1218">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1218">2</span></span>     | <span data-ttu-id="89c11-1219">Centralizar a marcação de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="89c11-1219">Center content marking.</span></span>             |
 
-### <a name="watermarklayout-values"></a><span data-ttu-id="79c22-1171">valores de watermarkLayout</span><span class="sxs-lookup"><span data-stu-id="79c22-1171">watermarkLayout values</span></span>
+### <a name="watermarklayout-values"></a><span data-ttu-id="89c11-1220">valores de watermarkLayout</span><span class="sxs-lookup"><span data-stu-id="89c11-1220">watermarkLayout values</span></span>
 
-| <span data-ttu-id="79c22-1172">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1172">Member</span></span>     | <span data-ttu-id="79c22-1173">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1173">Value</span></span> | <span data-ttu-id="79c22-1174">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1174">Description</span></span>                 |
+| <span data-ttu-id="89c11-1221">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1221">Member</span></span>     | <span data-ttu-id="89c11-1222">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1222">Value</span></span> | <span data-ttu-id="89c11-1223">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1223">Description</span></span>                 |
 | :--------- | :---- | :-------------------------- |
-| <span data-ttu-id="79c22-1175">horizontal</span><span class="sxs-lookup"><span data-stu-id="79c22-1175">horizontal</span></span> | <span data-ttu-id="79c22-1176">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-1176">0</span></span>     | <span data-ttu-id="79c22-1177">Use uma marca d' água horizontal.</span><span class="sxs-lookup"><span data-stu-id="79c22-1177">Use a horizontal watermark.</span></span> |
-| <span data-ttu-id="79c22-1178">diagonal</span><span class="sxs-lookup"><span data-stu-id="79c22-1178">diagonal</span></span>   | <span data-ttu-id="79c22-1179">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1179">1</span></span>     | <span data-ttu-id="79c22-1180">Use uma marca d' água diagonal.</span><span class="sxs-lookup"><span data-stu-id="79c22-1180">Use a diagonal watermark.</span></span>   |
+| <span data-ttu-id="89c11-1224">horizontal</span><span class="sxs-lookup"><span data-stu-id="89c11-1224">horizontal</span></span> | <span data-ttu-id="89c11-1225">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-1225">0</span></span>     | <span data-ttu-id="89c11-1226">Use uma marca d' água horizontal.</span><span class="sxs-lookup"><span data-stu-id="89c11-1226">Use a horizontal watermark.</span></span> |
+| <span data-ttu-id="89c11-1227">diagonal</span><span class="sxs-lookup"><span data-stu-id="89c11-1227">diagonal</span></span>   | <span data-ttu-id="89c11-1228">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1228">1</span></span>     | <span data-ttu-id="89c11-1229">Use uma marca d' água diagonal.</span><span class="sxs-lookup"><span data-stu-id="89c11-1229">Use a diagonal watermark.</span></span>   |
 
-### <a name="conditionalaccesspolicystate"></a><span data-ttu-id="79c22-1181">conditionalAccessPolicyState</span><span class="sxs-lookup"><span data-stu-id="79c22-1181">conditionalAccessPolicyState</span></span>
+### <a name="conditionalaccesspolicystate"></a><span data-ttu-id="89c11-1230">conditionalAccessPolicyState</span><span class="sxs-lookup"><span data-stu-id="89c11-1230">conditionalAccessPolicyState</span></span>
 
-|<span data-ttu-id="79c22-1182">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1182">Member</span></span>|
+|<span data-ttu-id="89c11-1231">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1231">Member</span></span>|
 |:---|
-|<span data-ttu-id="79c22-1183">habilitadas</span><span class="sxs-lookup"><span data-stu-id="79c22-1183">enabled</span></span>|
-|<span data-ttu-id="79c22-1184">desabilitadas</span><span class="sxs-lookup"><span data-stu-id="79c22-1184">disabled</span></span>|
+|<span data-ttu-id="89c11-1232">habilitadas</span><span class="sxs-lookup"><span data-stu-id="89c11-1232">enabled</span></span>|
+|<span data-ttu-id="89c11-1233">desabilitadas</span><span class="sxs-lookup"><span data-stu-id="89c11-1233">disabled</span></span>|
 
-### <a name="conditionalaccessclientapp"></a><span data-ttu-id="79c22-1185">conditionalAccessClientApp</span><span class="sxs-lookup"><span data-stu-id="79c22-1185">conditionalAccessClientApp</span></span>
+### <a name="conditionalaccessclientapp"></a><span data-ttu-id="89c11-1234">conditionalAccessClientApp</span><span class="sxs-lookup"><span data-stu-id="89c11-1234">conditionalAccessClientApp</span></span>
 
-| <span data-ttu-id="79c22-1186">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1186">Member</span></span>       |
+| <span data-ttu-id="89c11-1235">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1235">Member</span></span>       |
 |:--------------|
-|<span data-ttu-id="79c22-1187">Navegador</span><span class="sxs-lookup"><span data-stu-id="79c22-1187">browser</span></span>|
-|<span data-ttu-id="79c22-1188">moderno</span><span class="sxs-lookup"><span data-stu-id="79c22-1188">modern</span></span>|
-|<span data-ttu-id="79c22-1189">easSupported</span><span class="sxs-lookup"><span data-stu-id="79c22-1189">easSupported</span></span>|
-|<span data-ttu-id="79c22-1190">easUnsupported</span><span class="sxs-lookup"><span data-stu-id="79c22-1190">easUnsupported</span></span>|
-|<span data-ttu-id="79c22-1191">outro</span><span class="sxs-lookup"><span data-stu-id="79c22-1191">other</span></span>|
+|<span data-ttu-id="89c11-1236">Navegador</span><span class="sxs-lookup"><span data-stu-id="89c11-1236">browser</span></span>|
+|<span data-ttu-id="89c11-1237">moderno</span><span class="sxs-lookup"><span data-stu-id="89c11-1237">modern</span></span>|
+|<span data-ttu-id="89c11-1238">easSupported</span><span class="sxs-lookup"><span data-stu-id="89c11-1238">easSupported</span></span>|
+|<span data-ttu-id="89c11-1239">easUnsupported</span><span class="sxs-lookup"><span data-stu-id="89c11-1239">easUnsupported</span></span>|
+|<span data-ttu-id="89c11-1240">outro</span><span class="sxs-lookup"><span data-stu-id="89c11-1240">other</span></span>|
 
-### <a name="conditionalaccessgrantcontrol"></a><span data-ttu-id="79c22-1192">conditionalAccessGrantControl</span><span class="sxs-lookup"><span data-stu-id="79c22-1192">conditionalAccessGrantControl</span></span>
+### <a name="conditionalaccessgrantcontrol"></a><span data-ttu-id="89c11-1241">conditionalAccessGrantControl</span><span class="sxs-lookup"><span data-stu-id="89c11-1241">conditionalAccessGrantControl</span></span>
 
-| <span data-ttu-id="79c22-1193">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1193">Member</span></span>       |
+| <span data-ttu-id="89c11-1242">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1242">Member</span></span>       |
 |:--------------|
-|<span data-ttu-id="79c22-1194">Larga</span><span class="sxs-lookup"><span data-stu-id="79c22-1194">block</span></span>|
-|<span data-ttu-id="79c22-1195">fato</span><span class="sxs-lookup"><span data-stu-id="79c22-1195">mfa</span></span>|
-|<span data-ttu-id="79c22-1196">compliantDevice</span><span class="sxs-lookup"><span data-stu-id="79c22-1196">compliantDevice</span></span>|
-|<span data-ttu-id="79c22-1197">domainJoinedDevice</span><span class="sxs-lookup"><span data-stu-id="79c22-1197">domainJoinedDevice</span></span>|
-|<span data-ttu-id="79c22-1198">approvedApplication</span><span class="sxs-lookup"><span data-stu-id="79c22-1198">approvedApplication</span></span>|
-|<span data-ttu-id="79c22-1199">compliantApplication</span><span class="sxs-lookup"><span data-stu-id="79c22-1199">compliantApplication</span></span>|
+|<span data-ttu-id="89c11-1243">Larga</span><span class="sxs-lookup"><span data-stu-id="89c11-1243">block</span></span>|
+|<span data-ttu-id="89c11-1244">fato</span><span class="sxs-lookup"><span data-stu-id="89c11-1244">mfa</span></span>|
+|<span data-ttu-id="89c11-1245">compliantDevice</span><span class="sxs-lookup"><span data-stu-id="89c11-1245">compliantDevice</span></span>|
+|<span data-ttu-id="89c11-1246">domainJoinedDevice</span><span class="sxs-lookup"><span data-stu-id="89c11-1246">domainJoinedDevice</span></span>|
+|<span data-ttu-id="89c11-1247">approvedApplication</span><span class="sxs-lookup"><span data-stu-id="89c11-1247">approvedApplication</span></span>|
+|<span data-ttu-id="89c11-1248">compliantApplication</span><span class="sxs-lookup"><span data-stu-id="89c11-1248">compliantApplication</span></span>|
 
-### <a name="cloudappsecuritysessioncontroltype"></a><span data-ttu-id="79c22-1200">cloudAppSecuritySessionControlType</span><span class="sxs-lookup"><span data-stu-id="79c22-1200">cloudAppSecuritySessionControlType</span></span>
+### <a name="cloudappsecuritysessioncontroltype"></a><span data-ttu-id="89c11-1249">cloudAppSecuritySessionControlType</span><span class="sxs-lookup"><span data-stu-id="89c11-1249">cloudAppSecuritySessionControlType</span></span>
 
-| <span data-ttu-id="79c22-1201">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1201">Member</span></span>       |
+| <span data-ttu-id="89c11-1250">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1250">Member</span></span>       |
 |:--------------|
-|<span data-ttu-id="79c22-1202">mcasConfigured</span><span class="sxs-lookup"><span data-stu-id="79c22-1202">mcasConfigured</span></span>|
-|<span data-ttu-id="79c22-1203">monitorOnly</span><span class="sxs-lookup"><span data-stu-id="79c22-1203">monitorOnly</span></span>|
-|<span data-ttu-id="79c22-1204">blockDownloads</span><span class="sxs-lookup"><span data-stu-id="79c22-1204">blockDownloads</span></span>|
+|<span data-ttu-id="89c11-1251">mcasConfigured</span><span class="sxs-lookup"><span data-stu-id="89c11-1251">mcasConfigured</span></span>|
+|<span data-ttu-id="89c11-1252">monitorOnly</span><span class="sxs-lookup"><span data-stu-id="89c11-1252">monitorOnly</span></span>|
+|<span data-ttu-id="89c11-1253">blockDownloads</span><span class="sxs-lookup"><span data-stu-id="89c11-1253">blockDownloads</span></span>|
 
-### <a name="signinfrequencytype"></a><span data-ttu-id="79c22-1205">signinFrequencyType</span><span class="sxs-lookup"><span data-stu-id="79c22-1205">signinFrequencyType</span></span>
+### <a name="signinfrequencytype"></a><span data-ttu-id="89c11-1254">signinFrequencyType</span><span class="sxs-lookup"><span data-stu-id="89c11-1254">signinFrequencyType</span></span>
 
-| <span data-ttu-id="79c22-1206">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1206">Member</span></span>       |
+| <span data-ttu-id="89c11-1255">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1255">Member</span></span>       |
 |:--------------|
-|<span data-ttu-id="79c22-1207">durante</span><span class="sxs-lookup"><span data-stu-id="79c22-1207">days</span></span>|
-|<span data-ttu-id="79c22-1208">hora</span><span class="sxs-lookup"><span data-stu-id="79c22-1208">hours</span></span>|
+|<span data-ttu-id="89c11-1256">durante</span><span class="sxs-lookup"><span data-stu-id="89c11-1256">days</span></span>|
+|<span data-ttu-id="89c11-1257">hora</span><span class="sxs-lookup"><span data-stu-id="89c11-1257">hours</span></span>|
 
-### <a name="persistentbrowsersessionmode"></a><span data-ttu-id="79c22-1209">persistentBrowserSessionMode</span><span class="sxs-lookup"><span data-stu-id="79c22-1209">persistentBrowserSessionMode</span></span>
+### <a name="persistentbrowsersessionmode"></a><span data-ttu-id="89c11-1258">persistentBrowserSessionMode</span><span class="sxs-lookup"><span data-stu-id="89c11-1258">persistentBrowserSessionMode</span></span>
 
-| <span data-ttu-id="79c22-1210">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1210">Member</span></span>       |
+| <span data-ttu-id="89c11-1259">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1259">Member</span></span>       |
 |:--------------|
-|<span data-ttu-id="79c22-1211">permanente</span><span class="sxs-lookup"><span data-stu-id="79c22-1211">always</span></span>|
-|<span data-ttu-id="79c22-1212">Édito</span><span class="sxs-lookup"><span data-stu-id="79c22-1212">never</span></span>|
+|<span data-ttu-id="89c11-1260">permanente</span><span class="sxs-lookup"><span data-stu-id="89c11-1260">always</span></span>|
+|<span data-ttu-id="89c11-1261">Édito</span><span class="sxs-lookup"><span data-stu-id="89c11-1261">never</span></span>|
 
-### <a name="conditionalaccessdeviceplatform"></a><span data-ttu-id="79c22-1213">conditionalAccessDevicePlatform</span><span class="sxs-lookup"><span data-stu-id="79c22-1213">conditionalAccessDevicePlatform</span></span>
+### <a name="conditionalaccessdeviceplatform"></a><span data-ttu-id="89c11-1262">conditionalAccessDevicePlatform</span><span class="sxs-lookup"><span data-stu-id="89c11-1262">conditionalAccessDevicePlatform</span></span>
 
-| <span data-ttu-id="79c22-1214">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1214">Member</span></span>       |
+| <span data-ttu-id="89c11-1263">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1263">Member</span></span>       |
 |:--------------|
-|<span data-ttu-id="79c22-1215">Android</span><span class="sxs-lookup"><span data-stu-id="79c22-1215">android</span></span>|
-|<span data-ttu-id="79c22-1216">iOS</span><span class="sxs-lookup"><span data-stu-id="79c22-1216">iOS</span></span>|
-|<span data-ttu-id="79c22-1217">Windows</span><span class="sxs-lookup"><span data-stu-id="79c22-1217">windows</span></span>|
-|<span data-ttu-id="79c22-1218">Windowsphonee</span><span class="sxs-lookup"><span data-stu-id="79c22-1218">windowsPhone</span></span>|
-|<span data-ttu-id="79c22-1219">macOS</span><span class="sxs-lookup"><span data-stu-id="79c22-1219">macOS</span></span>|
-|<span data-ttu-id="79c22-1220">todos os</span><span class="sxs-lookup"><span data-stu-id="79c22-1220">all</span></span>|
+|<span data-ttu-id="89c11-1264">Android</span><span class="sxs-lookup"><span data-stu-id="89c11-1264">android</span></span>|
+|<span data-ttu-id="89c11-1265">iOS</span><span class="sxs-lookup"><span data-stu-id="89c11-1265">iOS</span></span>|
+|<span data-ttu-id="89c11-1266">Windows</span><span class="sxs-lookup"><span data-stu-id="89c11-1266">windows</span></span>|
+|<span data-ttu-id="89c11-1267">Windowsphonee</span><span class="sxs-lookup"><span data-stu-id="89c11-1267">windowsPhone</span></span>|
+|<span data-ttu-id="89c11-1268">macOS</span><span class="sxs-lookup"><span data-stu-id="89c11-1268">macOS</span></span>|
+|<span data-ttu-id="89c11-1269">todos os</span><span class="sxs-lookup"><span data-stu-id="89c11-1269">all</span></span>|
 
-### <a name="priority-values"></a><span data-ttu-id="79c22-1221">valores de prioridade</span><span class="sxs-lookup"><span data-stu-id="79c22-1221">priority values</span></span>
+### <a name="priority-values"></a><span data-ttu-id="89c11-1270">valores de prioridade</span><span class="sxs-lookup"><span data-stu-id="89c11-1270">priority values</span></span>
 
-|<span data-ttu-id="79c22-1222">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1222">Member</span></span>|<span data-ttu-id="79c22-1223">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1223">Value</span></span>|
+|<span data-ttu-id="89c11-1271">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1271">Member</span></span>|<span data-ttu-id="89c11-1272">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1272">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="79c22-1224">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-1224">None</span></span>|<span data-ttu-id="79c22-1225">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-1225">0</span></span>|
-|<span data-ttu-id="79c22-1226">Alta</span><span class="sxs-lookup"><span data-stu-id="79c22-1226">High</span></span>|<span data-ttu-id="79c22-1227">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1227">1</span></span>|
-|<span data-ttu-id="79c22-1228">Baixo</span><span class="sxs-lookup"><span data-stu-id="79c22-1228">Low</span></span>|<span data-ttu-id="79c22-1229">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1229">2</span></span>|
+|<span data-ttu-id="89c11-1273">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-1273">None</span></span>|<span data-ttu-id="89c11-1274">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-1274">0</span></span>|
+|<span data-ttu-id="89c11-1275">Alta</span><span class="sxs-lookup"><span data-stu-id="89c11-1275">High</span></span>|<span data-ttu-id="89c11-1276">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1276">1</span></span>|
+|<span data-ttu-id="89c11-1277">Baixo</span><span class="sxs-lookup"><span data-stu-id="89c11-1277">Low</span></span>|<span data-ttu-id="89c11-1278">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1278">2</span></span>|
 
-### <a name="threatassessmentcontenttype-values"></a><span data-ttu-id="79c22-1230">valores de threatAssessmentContentType</span><span class="sxs-lookup"><span data-stu-id="79c22-1230">threatAssessmentContentType values</span></span>
+### <a name="threatassessmentcontenttype-values"></a><span data-ttu-id="89c11-1279">valores de threatAssessmentContentType</span><span class="sxs-lookup"><span data-stu-id="89c11-1279">threatAssessmentContentType values</span></span>
 
-| <span data-ttu-id="79c22-1231">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1231">Member</span></span> | <span data-ttu-id="79c22-1232">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1232">Value</span></span> | <span data-ttu-id="79c22-1233">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1233">Description</span></span>             |
+| <span data-ttu-id="89c11-1280">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1280">Member</span></span> | <span data-ttu-id="89c11-1281">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1281">Value</span></span> | <span data-ttu-id="89c11-1282">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1282">Description</span></span>             |
 |:-------|:------|:------------------------|
-| <span data-ttu-id="79c22-1234">Email</span><span class="sxs-lookup"><span data-stu-id="79c22-1234">mail</span></span>   | <span data-ttu-id="79c22-1235">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1235">1</span></span>     | <span data-ttu-id="79c22-1236">Ameaça de email.</span><span class="sxs-lookup"><span data-stu-id="79c22-1236">Mail threat.</span></span>            |
-| <span data-ttu-id="79c22-1237">url</span><span class="sxs-lookup"><span data-stu-id="79c22-1237">url</span></span>    | <span data-ttu-id="79c22-1238">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1238">2</span></span>     | <span data-ttu-id="79c22-1239">Ameaça de URL.</span><span class="sxs-lookup"><span data-stu-id="79c22-1239">URL threat.</span></span>             |
-| <span data-ttu-id="79c22-1240">file</span><span class="sxs-lookup"><span data-stu-id="79c22-1240">file</span></span>   | <span data-ttu-id="79c22-1241">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-1241">3</span></span>     | <span data-ttu-id="79c22-1242">Ameaça do arquivo de anexo.</span><span class="sxs-lookup"><span data-stu-id="79c22-1242">Attachment file threat.</span></span> |
+| <span data-ttu-id="89c11-1283">email</span><span class="sxs-lookup"><span data-stu-id="89c11-1283">mail</span></span>   | <span data-ttu-id="89c11-1284">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1284">1</span></span>     | <span data-ttu-id="89c11-1285">Ameaça de email.</span><span class="sxs-lookup"><span data-stu-id="89c11-1285">Mail threat.</span></span>            |
+| <span data-ttu-id="89c11-1286">url</span><span class="sxs-lookup"><span data-stu-id="89c11-1286">url</span></span>    | <span data-ttu-id="89c11-1287">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1287">2</span></span>     | <span data-ttu-id="89c11-1288">Ameaça de URL.</span><span class="sxs-lookup"><span data-stu-id="89c11-1288">URL threat.</span></span>             |
+| <span data-ttu-id="89c11-1289">file</span><span class="sxs-lookup"><span data-stu-id="89c11-1289">file</span></span>   | <span data-ttu-id="89c11-1290">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-1290">3</span></span>     | <span data-ttu-id="89c11-1291">Ameaça do arquivo de anexo.</span><span class="sxs-lookup"><span data-stu-id="89c11-1291">Attachment file threat.</span></span> |
 
-### <a name="threatexpectedassessment-values"></a><span data-ttu-id="79c22-1243">valores de threatExpectedAssessment</span><span class="sxs-lookup"><span data-stu-id="79c22-1243">threatExpectedAssessment values</span></span>
+### <a name="threatexpectedassessment-values"></a><span data-ttu-id="89c11-1292">valores de threatExpectedAssessment</span><span class="sxs-lookup"><span data-stu-id="89c11-1292">threatExpectedAssessment values</span></span>
 
-| <span data-ttu-id="79c22-1244">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1244">Member</span></span>  | <span data-ttu-id="79c22-1245">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1245">Value</span></span> | <span data-ttu-id="79c22-1246">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1246">Description</span></span>                       |
+| <span data-ttu-id="89c11-1293">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1293">Member</span></span>  | <span data-ttu-id="89c11-1294">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1294">Value</span></span> | <span data-ttu-id="89c11-1295">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1295">Description</span></span>                       |
 |:--------|:------|:----------------------------------|
-| <span data-ttu-id="79c22-1247">Larga</span><span class="sxs-lookup"><span data-stu-id="79c22-1247">block</span></span>   | <span data-ttu-id="79c22-1248">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1248">1</span></span>     | <span data-ttu-id="79c22-1249">A ameaça deve ser bloqueada.</span><span class="sxs-lookup"><span data-stu-id="79c22-1249">The threat should be blocked.</span></span>     |
-| <span data-ttu-id="79c22-1250">bloqueia</span><span class="sxs-lookup"><span data-stu-id="79c22-1250">unblock</span></span> | <span data-ttu-id="79c22-1251">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1251">2</span></span>     | <span data-ttu-id="79c22-1252">A ameaça não deve ser bloqueada.</span><span class="sxs-lookup"><span data-stu-id="79c22-1252">The threat should not be blocked.</span></span> |
+| <span data-ttu-id="89c11-1296">Larga</span><span class="sxs-lookup"><span data-stu-id="89c11-1296">block</span></span>   | <span data-ttu-id="89c11-1297">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1297">1</span></span>     | <span data-ttu-id="89c11-1298">A ameaça deve ser bloqueada.</span><span class="sxs-lookup"><span data-stu-id="89c11-1298">The threat should be blocked.</span></span>     |
+| <span data-ttu-id="89c11-1299">bloqueia</span><span class="sxs-lookup"><span data-stu-id="89c11-1299">unblock</span></span> | <span data-ttu-id="89c11-1300">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1300">2</span></span>     | <span data-ttu-id="89c11-1301">A ameaça não deve ser bloqueada.</span><span class="sxs-lookup"><span data-stu-id="89c11-1301">The threat should not be blocked.</span></span> |
 
-### <a name="threatcategory-values"></a><span data-ttu-id="79c22-1253">valores de threatCategory</span><span class="sxs-lookup"><span data-stu-id="79c22-1253">threatCategory values</span></span>
+### <a name="threatcategory-values"></a><span data-ttu-id="89c11-1302">valores de threatCategory</span><span class="sxs-lookup"><span data-stu-id="89c11-1302">threatCategory values</span></span>
 
-| <span data-ttu-id="79c22-1254">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1254">Member</span></span>             | <span data-ttu-id="79c22-1255">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1255">Value</span></span> | <span data-ttu-id="79c22-1256">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1256">Description</span></span>        |
+| <span data-ttu-id="89c11-1303">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1303">Member</span></span>             | <span data-ttu-id="89c11-1304">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1304">Value</span></span> | <span data-ttu-id="89c11-1305">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1305">Description</span></span>        |
 |:-------------------|:------|:-------------------|
-| <span data-ttu-id="79c22-1257">spam</span><span class="sxs-lookup"><span data-stu-id="79c22-1257">spam</span></span>               | <span data-ttu-id="79c22-1258">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1258">1</span></span>     | <span data-ttu-id="79c22-1259">Ameaça de spam.</span><span class="sxs-lookup"><span data-stu-id="79c22-1259">Spam threat.</span></span>       |
-| <span data-ttu-id="79c22-1260">phishing</span><span class="sxs-lookup"><span data-stu-id="79c22-1260">phishing</span></span>           | <span data-ttu-id="79c22-1261">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1261">2</span></span>     | <span data-ttu-id="79c22-1262">Ameaça de phishing.</span><span class="sxs-lookup"><span data-stu-id="79c22-1262">Phishing threat.</span></span>   |
-| <span data-ttu-id="79c22-1263">software</span><span class="sxs-lookup"><span data-stu-id="79c22-1263">malware</span></span>            | <span data-ttu-id="79c22-1264">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-1264">3</span></span>     | <span data-ttu-id="79c22-1265">Ameaça de malware.</span><span class="sxs-lookup"><span data-stu-id="79c22-1265">Malware threat.</span></span>    |
-| <span data-ttu-id="79c22-1266">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-1266">unknownFutureValue</span></span> | <span data-ttu-id="79c22-1267">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-1267">4</span></span>     | <span data-ttu-id="79c22-1268">Um membro Sentinel.</span><span class="sxs-lookup"><span data-stu-id="79c22-1268">A sentinel member.</span></span> |
+| <span data-ttu-id="89c11-1306">spam</span><span class="sxs-lookup"><span data-stu-id="89c11-1306">spam</span></span>               | <span data-ttu-id="89c11-1307">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1307">1</span></span>     | <span data-ttu-id="89c11-1308">Ameaça de spam.</span><span class="sxs-lookup"><span data-stu-id="89c11-1308">Spam threat.</span></span>       |
+| <span data-ttu-id="89c11-1309">phishing</span><span class="sxs-lookup"><span data-stu-id="89c11-1309">phishing</span></span>           | <span data-ttu-id="89c11-1310">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1310">2</span></span>     | <span data-ttu-id="89c11-1311">Ameaça de phishing.</span><span class="sxs-lookup"><span data-stu-id="89c11-1311">Phishing threat.</span></span>   |
+| <span data-ttu-id="89c11-1312">software</span><span class="sxs-lookup"><span data-stu-id="89c11-1312">malware</span></span>            | <span data-ttu-id="89c11-1313">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-1313">3</span></span>     | <span data-ttu-id="89c11-1314">Ameaça de malware.</span><span class="sxs-lookup"><span data-stu-id="89c11-1314">Malware threat.</span></span>    |
+| <span data-ttu-id="89c11-1315">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-1315">unknownFutureValue</span></span> | <span data-ttu-id="89c11-1316">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-1316">4</span></span>     | <span data-ttu-id="89c11-1317">Um membro Sentinel.</span><span class="sxs-lookup"><span data-stu-id="89c11-1317">A sentinel member.</span></span> |
 
-### <a name="threatassessmentstatus-values"></a><span data-ttu-id="79c22-1269">valores de threatAssessmentStatus</span><span class="sxs-lookup"><span data-stu-id="79c22-1269">threatAssessmentStatus values</span></span>
+### <a name="threatassessmentstatus-values"></a><span data-ttu-id="89c11-1318">valores de threatAssessmentStatus</span><span class="sxs-lookup"><span data-stu-id="89c11-1318">threatAssessmentStatus values</span></span>
 
-| <span data-ttu-id="79c22-1270">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1270">Member</span></span>    | <span data-ttu-id="79c22-1271">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1271">Value</span></span> | <span data-ttu-id="79c22-1272">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1272">Description</span></span>                              |
+| <span data-ttu-id="89c11-1319">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1319">Member</span></span>    | <span data-ttu-id="89c11-1320">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1320">Value</span></span> | <span data-ttu-id="89c11-1321">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1321">Description</span></span>                              |
 |:----------|:------|:-----------------------------------------|
-| <span data-ttu-id="79c22-1273">função</span><span class="sxs-lookup"><span data-stu-id="79c22-1273">pending</span></span>   | <span data-ttu-id="79c22-1274">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1274">1</span></span>     | <span data-ttu-id="79c22-1275">A avaliação de ameaças ainda está em andamento.</span><span class="sxs-lookup"><span data-stu-id="79c22-1275">The threat assessment still in progress.</span></span> |
-| <span data-ttu-id="79c22-1276">Completed</span><span class="sxs-lookup"><span data-stu-id="79c22-1276">completed</span></span> | <span data-ttu-id="79c22-1277">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1277">2</span></span>     | <span data-ttu-id="79c22-1278">A avaliação de ameaças foi concluída.</span><span class="sxs-lookup"><span data-stu-id="79c22-1278">The threat assessment completed.</span></span>         |
+| <span data-ttu-id="89c11-1322">função</span><span class="sxs-lookup"><span data-stu-id="89c11-1322">pending</span></span>   | <span data-ttu-id="89c11-1323">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1323">1</span></span>     | <span data-ttu-id="89c11-1324">A avaliação de ameaças ainda está em andamento.</span><span class="sxs-lookup"><span data-stu-id="89c11-1324">The threat assessment still in progress.</span></span> |
+| <span data-ttu-id="89c11-1325">Completed</span><span class="sxs-lookup"><span data-stu-id="89c11-1325">completed</span></span> | <span data-ttu-id="89c11-1326">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1326">2</span></span>     | <span data-ttu-id="89c11-1327">A avaliação de ameaças foi concluída.</span><span class="sxs-lookup"><span data-stu-id="89c11-1327">The threat assessment completed.</span></span>         |
 
-### <a name="threatassessmentrequestsource-values"></a><span data-ttu-id="79c22-1279">valores de threatAssessmentRequestSource</span><span class="sxs-lookup"><span data-stu-id="79c22-1279">threatAssessmentRequestSource values</span></span>
+### <a name="threatassessmentrequestsource-values"></a><span data-ttu-id="89c11-1328">valores de threatAssessmentRequestSource</span><span class="sxs-lookup"><span data-stu-id="89c11-1328">threatAssessmentRequestSource values</span></span>
 
-| <span data-ttu-id="79c22-1280">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1280">Member</span></span>        | <span data-ttu-id="79c22-1281">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1281">Value</span></span> | <span data-ttu-id="79c22-1282">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1282">Description</span></span>              |
+| <span data-ttu-id="89c11-1329">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1329">Member</span></span>        | <span data-ttu-id="89c11-1330">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1330">Value</span></span> | <span data-ttu-id="89c11-1331">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1331">Description</span></span>              |
 |:--------------|:------|:-------------------------|
-| <span data-ttu-id="79c22-1283">indefinido</span><span class="sxs-lookup"><span data-stu-id="79c22-1283">undefined</span></span>     | <span data-ttu-id="79c22-1284">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-1284">0</span></span>     | <span data-ttu-id="79c22-1285">Ainda não conhece.</span><span class="sxs-lookup"><span data-stu-id="79c22-1285">Not yet know.</span></span>            |
-| <span data-ttu-id="79c22-1286">user</span><span class="sxs-lookup"><span data-stu-id="79c22-1286">user</span></span>          | <span data-ttu-id="79c22-1287">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1287">1</span></span>     | <span data-ttu-id="79c22-1288">Envio do usuário.</span><span class="sxs-lookup"><span data-stu-id="79c22-1288">User submission.</span></span>         |
-| <span data-ttu-id="79c22-1289">administrador</span><span class="sxs-lookup"><span data-stu-id="79c22-1289">administrator</span></span> | <span data-ttu-id="79c22-1290">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1290">2</span></span>     | <span data-ttu-id="79c22-1291">Envio de administrador de locatários.</span><span class="sxs-lookup"><span data-stu-id="79c22-1291">Tenant admin submission.</span></span> |
+| <span data-ttu-id="89c11-1332">indefinido</span><span class="sxs-lookup"><span data-stu-id="89c11-1332">undefined</span></span>     | <span data-ttu-id="89c11-1333">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-1333">0</span></span>     | <span data-ttu-id="89c11-1334">Ainda não conhece.</span><span class="sxs-lookup"><span data-stu-id="89c11-1334">Not yet know.</span></span>            |
+| <span data-ttu-id="89c11-1335">user</span><span class="sxs-lookup"><span data-stu-id="89c11-1335">user</span></span>          | <span data-ttu-id="89c11-1336">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1336">1</span></span>     | <span data-ttu-id="89c11-1337">Envio do usuário.</span><span class="sxs-lookup"><span data-stu-id="89c11-1337">User submission.</span></span>         |
+| <span data-ttu-id="89c11-1338">administrador</span><span class="sxs-lookup"><span data-stu-id="89c11-1338">administrator</span></span> | <span data-ttu-id="89c11-1339">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1339">2</span></span>     | <span data-ttu-id="89c11-1340">Envio de administrador de locatários.</span><span class="sxs-lookup"><span data-stu-id="89c11-1340">Tenant admin submission.</span></span> |
 
-### <a name="threatassessmentresulttype-values"></a><span data-ttu-id="79c22-1292">valores de threatAssessmentResultType</span><span class="sxs-lookup"><span data-stu-id="79c22-1292">threatAssessmentResultType values</span></span>
+### <a name="threatassessmentresulttype-values"></a><span data-ttu-id="89c11-1341">valores de threatAssessmentResultType</span><span class="sxs-lookup"><span data-stu-id="89c11-1341">threatAssessmentResultType values</span></span>
 
-| <span data-ttu-id="79c22-1293">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1293">Member</span></span>             | <span data-ttu-id="79c22-1294">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1294">Value</span></span> | <span data-ttu-id="79c22-1295">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1295">Description</span></span>                                          |
+| <span data-ttu-id="89c11-1342">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1342">Member</span></span>             | <span data-ttu-id="89c11-1343">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1343">Value</span></span> | <span data-ttu-id="89c11-1344">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1344">Description</span></span>                                          |
 |:-------------------|:------|:-----------------------------------------------------|
-| <span data-ttu-id="79c22-1296">checkPolicy</span><span class="sxs-lookup"><span data-stu-id="79c22-1296">checkPolicy</span></span>        | <span data-ttu-id="79c22-1297">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1297">1</span></span>     | <span data-ttu-id="79c22-1298">O resultado da verificação de política, apenas para `mail` avaliação.</span><span class="sxs-lookup"><span data-stu-id="79c22-1298">The policy check result, only for `mail` assessment.</span></span> |
-| <span data-ttu-id="79c22-1299">reexaminar</span><span class="sxs-lookup"><span data-stu-id="79c22-1299">rescan</span></span>             | <span data-ttu-id="79c22-1300">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1300">2</span></span>     | <span data-ttu-id="79c22-1301">O resultado da nova verificação.</span><span class="sxs-lookup"><span data-stu-id="79c22-1301">The rescan result.</span></span>                                   |
-| <span data-ttu-id="79c22-1302">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-1302">unknownFutureValue</span></span> | <span data-ttu-id="79c22-1303">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-1303">3</span></span>     | <span data-ttu-id="79c22-1304">Um membro Sentinel.</span><span class="sxs-lookup"><span data-stu-id="79c22-1304">A sentinel member.</span></span>                                   |
+| <span data-ttu-id="89c11-1345">checkPolicy</span><span class="sxs-lookup"><span data-stu-id="89c11-1345">checkPolicy</span></span>        | <span data-ttu-id="89c11-1346">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1346">1</span></span>     | <span data-ttu-id="89c11-1347">O resultado da verificação de política, apenas para `mail` avaliação.</span><span class="sxs-lookup"><span data-stu-id="89c11-1347">The policy check result, only for `mail` assessment.</span></span> |
+| <span data-ttu-id="89c11-1348">reexaminar</span><span class="sxs-lookup"><span data-stu-id="89c11-1348">rescan</span></span>             | <span data-ttu-id="89c11-1349">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1349">2</span></span>     | <span data-ttu-id="89c11-1350">O resultado da nova verificação.</span><span class="sxs-lookup"><span data-stu-id="89c11-1350">The rescan result.</span></span>                                   |
+| <span data-ttu-id="89c11-1351">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-1351">unknownFutureValue</span></span> | <span data-ttu-id="89c11-1352">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-1352">3</span></span>     | <span data-ttu-id="89c11-1353">Um membro Sentinel.</span><span class="sxs-lookup"><span data-stu-id="89c11-1353">A sentinel member.</span></span>                                   |
 
-### <a name="maildestinationroutingreason-values"></a><span data-ttu-id="79c22-1305">valores de mailDestinationRoutingReason</span><span class="sxs-lookup"><span data-stu-id="79c22-1305">mailDestinationRoutingReason values</span></span>
+### <a name="maildestinationroutingreason-values"></a><span data-ttu-id="89c11-1354">valores de mailDestinationRoutingReason</span><span class="sxs-lookup"><span data-stu-id="89c11-1354">mailDestinationRoutingReason values</span></span>
 
-| <span data-ttu-id="79c22-1306">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1306">Member</span></span>                | <span data-ttu-id="79c22-1307">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1307">Value</span></span> | <span data-ttu-id="79c22-1308">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1308">Description</span></span>                         |
+| <span data-ttu-id="89c11-1355">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1355">Member</span></span>                | <span data-ttu-id="89c11-1356">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1356">Value</span></span> | <span data-ttu-id="89c11-1357">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1357">Description</span></span>                         |
 |:----------------------|:------|:------------------------------------|
-| <span data-ttu-id="79c22-1309">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-1309">none</span></span>                  | <span data-ttu-id="79c22-1310">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-1310">0</span></span>     | <span data-ttu-id="79c22-1311">Ainda não conhece.</span><span class="sxs-lookup"><span data-stu-id="79c22-1311">Not yet know.</span></span>                       |
-| <span data-ttu-id="79c22-1312">mailFlowRule</span><span class="sxs-lookup"><span data-stu-id="79c22-1312">mailFlowRule</span></span>          | <span data-ttu-id="79c22-1313">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1313">1</span></span>     | <span data-ttu-id="79c22-1314">Regra de transporte do Exchange.</span><span class="sxs-lookup"><span data-stu-id="79c22-1314">Exchange transport rule.</span></span>            |
-| <span data-ttu-id="79c22-1315">safeSender</span><span class="sxs-lookup"><span data-stu-id="79c22-1315">safeSender</span></span>            | <span data-ttu-id="79c22-1316">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1316">2</span></span>     | <span data-ttu-id="79c22-1317">Lista de remetentes seguros.</span><span class="sxs-lookup"><span data-stu-id="79c22-1317">Safe sender list.</span></span>                   |
-| <span data-ttu-id="79c22-1318">blockedSender</span><span class="sxs-lookup"><span data-stu-id="79c22-1318">blockedSender</span></span>         | <span data-ttu-id="79c22-1319">3 </span><span class="sxs-lookup"><span data-stu-id="79c22-1319">3</span></span>     | <span data-ttu-id="79c22-1320">Lista de remetentes bloqueados.</span><span class="sxs-lookup"><span data-stu-id="79c22-1320">Blocked sender list.</span></span>                |
-| <span data-ttu-id="79c22-1321">advancedSpamFiltering</span><span class="sxs-lookup"><span data-stu-id="79c22-1321">advancedSpamFiltering</span></span> | <span data-ttu-id="79c22-1322">4 </span><span class="sxs-lookup"><span data-stu-id="79c22-1322">4</span></span>     | <span data-ttu-id="79c22-1323">Opção de flitering de spam avançada.</span><span class="sxs-lookup"><span data-stu-id="79c22-1323">Advanced spam flitering option.</span></span>     |
-| <span data-ttu-id="79c22-1324">domainAllowList</span><span class="sxs-lookup"><span data-stu-id="79c22-1324">domainAllowList</span></span>       | <span data-ttu-id="79c22-1325">5 </span><span class="sxs-lookup"><span data-stu-id="79c22-1325">5</span></span>     | <span data-ttu-id="79c22-1326">Lista de permissões de domínio do remetente.</span><span class="sxs-lookup"><span data-stu-id="79c22-1326">Sender domain allow list.</span></span>           |
-| <span data-ttu-id="79c22-1327">domainBlockList</span><span class="sxs-lookup"><span data-stu-id="79c22-1327">domainBlockList</span></span>       | <span data-ttu-id="79c22-1328">6 </span><span class="sxs-lookup"><span data-stu-id="79c22-1328">6</span></span>     | <span data-ttu-id="79c22-1329">Lista de bloqueios de domínio do remetente.</span><span class="sxs-lookup"><span data-stu-id="79c22-1329">Sender domain block list.</span></span>           |
-| <span data-ttu-id="79c22-1330">notInAddressBook</span><span class="sxs-lookup"><span data-stu-id="79c22-1330">notInAddressBook</span></span>      | <span data-ttu-id="79c22-1331">7 </span><span class="sxs-lookup"><span data-stu-id="79c22-1331">7</span></span>     | <span data-ttu-id="79c22-1332">Excluir o remetente não está no catálogo de endereços.</span><span class="sxs-lookup"><span data-stu-id="79c22-1332">Exclude sender not in address book.</span></span> |
-| <span data-ttu-id="79c22-1333">firstTimeSender</span><span class="sxs-lookup"><span data-stu-id="79c22-1333">firstTimeSender</span></span>       | <span data-ttu-id="79c22-1334">8 </span><span class="sxs-lookup"><span data-stu-id="79c22-1334">8</span></span>     | <span data-ttu-id="79c22-1335">Bloqueado devido ao remetente pela primeira vez.</span><span class="sxs-lookup"><span data-stu-id="79c22-1335">Blocked due to first time sender.</span></span>   |
-| <span data-ttu-id="79c22-1336">autoPurgeToInbox</span><span class="sxs-lookup"><span data-stu-id="79c22-1336">autoPurgeToInbox</span></span>      | <span data-ttu-id="79c22-1337">9 </span><span class="sxs-lookup"><span data-stu-id="79c22-1337">9</span></span>     | <span data-ttu-id="79c22-1338">Mensagem de movimentação de viagem para a caixa de entrada.</span><span class="sxs-lookup"><span data-stu-id="79c22-1338">TimeTravel move message to inbox.</span></span>   |
-| <span data-ttu-id="79c22-1339">autoPurgeToJunk</span><span class="sxs-lookup"><span data-stu-id="79c22-1339">autoPurgeToJunk</span></span>       | <span data-ttu-id="79c22-1340">10 </span><span class="sxs-lookup"><span data-stu-id="79c22-1340">10</span></span>    | <span data-ttu-id="79c22-1341">Mensagem de movimentação de viagens para lixo eletrônico.</span><span class="sxs-lookup"><span data-stu-id="79c22-1341">TimeTravel move message to junk.</span></span>    |
-| <span data-ttu-id="79c22-1342">autoPurgeToDeleted</span><span class="sxs-lookup"><span data-stu-id="79c22-1342">autoPurgeToDeleted</span></span>    | <span data-ttu-id="79c22-1343">11</span><span class="sxs-lookup"><span data-stu-id="79c22-1343">11</span></span>    | <span data-ttu-id="79c22-1344">Mensagem de movimentação de viagens para exclusão.</span><span class="sxs-lookup"><span data-stu-id="79c22-1344">TimeTravel move message to deleted.</span></span> |
-| <span data-ttu-id="79c22-1345">saída</span><span class="sxs-lookup"><span data-stu-id="79c22-1345">outbound</span></span>              | <span data-ttu-id="79c22-1346">12 </span><span class="sxs-lookup"><span data-stu-id="79c22-1346">12</span></span>    | <span data-ttu-id="79c22-1347">Emails de saída.</span><span class="sxs-lookup"><span data-stu-id="79c22-1347">Outbound mail.</span></span>                      |
-| <span data-ttu-id="79c22-1348">Não é lixo eletrônico</span><span class="sxs-lookup"><span data-stu-id="79c22-1348">notJunk</span></span>               | <span data-ttu-id="79c22-1349">13 </span><span class="sxs-lookup"><span data-stu-id="79c22-1349">13</span></span>    | <span data-ttu-id="79c22-1350">Permitir por não ser lixo eletrônico.</span><span class="sxs-lookup"><span data-stu-id="79c22-1350">Allow due to not junk.</span></span>              |
-| <span data-ttu-id="79c22-1351">desejado</span><span class="sxs-lookup"><span data-stu-id="79c22-1351">junk</span></span>                  | <span data-ttu-id="79c22-1352">14 </span><span class="sxs-lookup"><span data-stu-id="79c22-1352">14</span></span>    | <span data-ttu-id="79c22-1353">Bloqueado devido a lixo eletrônico.</span><span class="sxs-lookup"><span data-stu-id="79c22-1353">Blocked due to junk.</span></span>                |
-| <span data-ttu-id="79c22-1354">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-1354">unknownFutureValue</span></span>    | <span data-ttu-id="79c22-1355">15 </span><span class="sxs-lookup"><span data-stu-id="79c22-1355">15</span></span>    | <span data-ttu-id="79c22-1356">Um membro Sentinel.</span><span class="sxs-lookup"><span data-stu-id="79c22-1356">A sentinel member.</span></span>                  |
+| <span data-ttu-id="89c11-1358">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-1358">none</span></span>                  | <span data-ttu-id="89c11-1359">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-1359">0</span></span>     | <span data-ttu-id="89c11-1360">Ainda não conhece.</span><span class="sxs-lookup"><span data-stu-id="89c11-1360">Not yet know.</span></span>                       |
+| <span data-ttu-id="89c11-1361">mailFlowRule</span><span class="sxs-lookup"><span data-stu-id="89c11-1361">mailFlowRule</span></span>          | <span data-ttu-id="89c11-1362">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1362">1</span></span>     | <span data-ttu-id="89c11-1363">Regra de transporte do Exchange.</span><span class="sxs-lookup"><span data-stu-id="89c11-1363">Exchange transport rule.</span></span>            |
+| <span data-ttu-id="89c11-1364">safeSender</span><span class="sxs-lookup"><span data-stu-id="89c11-1364">safeSender</span></span>            | <span data-ttu-id="89c11-1365">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1365">2</span></span>     | <span data-ttu-id="89c11-1366">Lista de remetentes seguros.</span><span class="sxs-lookup"><span data-stu-id="89c11-1366">Safe sender list.</span></span>                   |
+| <span data-ttu-id="89c11-1367">blockedSender</span><span class="sxs-lookup"><span data-stu-id="89c11-1367">blockedSender</span></span>         | <span data-ttu-id="89c11-1368">3 </span><span class="sxs-lookup"><span data-stu-id="89c11-1368">3</span></span>     | <span data-ttu-id="89c11-1369">Lista de remetentes bloqueados.</span><span class="sxs-lookup"><span data-stu-id="89c11-1369">Blocked sender list.</span></span>                |
+| <span data-ttu-id="89c11-1370">advancedSpamFiltering</span><span class="sxs-lookup"><span data-stu-id="89c11-1370">advancedSpamFiltering</span></span> | <span data-ttu-id="89c11-1371">4 </span><span class="sxs-lookup"><span data-stu-id="89c11-1371">4</span></span>     | <span data-ttu-id="89c11-1372">Opção de flitering de spam avançada.</span><span class="sxs-lookup"><span data-stu-id="89c11-1372">Advanced spam flitering option.</span></span>     |
+| <span data-ttu-id="89c11-1373">domainAllowList</span><span class="sxs-lookup"><span data-stu-id="89c11-1373">domainAllowList</span></span>       | <span data-ttu-id="89c11-1374">5 </span><span class="sxs-lookup"><span data-stu-id="89c11-1374">5</span></span>     | <span data-ttu-id="89c11-1375">Lista de permissões de domínio do remetente.</span><span class="sxs-lookup"><span data-stu-id="89c11-1375">Sender domain allow list.</span></span>           |
+| <span data-ttu-id="89c11-1376">domainBlockList</span><span class="sxs-lookup"><span data-stu-id="89c11-1376">domainBlockList</span></span>       | <span data-ttu-id="89c11-1377">6 </span><span class="sxs-lookup"><span data-stu-id="89c11-1377">6</span></span>     | <span data-ttu-id="89c11-1378">Lista de bloqueios de domínio do remetente.</span><span class="sxs-lookup"><span data-stu-id="89c11-1378">Sender domain block list.</span></span>           |
+| <span data-ttu-id="89c11-1379">notInAddressBook</span><span class="sxs-lookup"><span data-stu-id="89c11-1379">notInAddressBook</span></span>      | <span data-ttu-id="89c11-1380">7 </span><span class="sxs-lookup"><span data-stu-id="89c11-1380">7</span></span>     | <span data-ttu-id="89c11-1381">Excluir o remetente não está no catálogo de endereços.</span><span class="sxs-lookup"><span data-stu-id="89c11-1381">Exclude sender not in address book.</span></span> |
+| <span data-ttu-id="89c11-1382">firstTimeSender</span><span class="sxs-lookup"><span data-stu-id="89c11-1382">firstTimeSender</span></span>       | <span data-ttu-id="89c11-1383">8 </span><span class="sxs-lookup"><span data-stu-id="89c11-1383">8</span></span>     | <span data-ttu-id="89c11-1384">Bloqueado devido ao remetente pela primeira vez.</span><span class="sxs-lookup"><span data-stu-id="89c11-1384">Blocked due to first time sender.</span></span>   |
+| <span data-ttu-id="89c11-1385">autoPurgeToInbox</span><span class="sxs-lookup"><span data-stu-id="89c11-1385">autoPurgeToInbox</span></span>      | <span data-ttu-id="89c11-1386">9 </span><span class="sxs-lookup"><span data-stu-id="89c11-1386">9</span></span>     | <span data-ttu-id="89c11-1387">Mensagem de movimentação de viagem para a caixa de entrada.</span><span class="sxs-lookup"><span data-stu-id="89c11-1387">TimeTravel move message to inbox.</span></span>   |
+| <span data-ttu-id="89c11-1388">autoPurgeToJunk</span><span class="sxs-lookup"><span data-stu-id="89c11-1388">autoPurgeToJunk</span></span>       | <span data-ttu-id="89c11-1389">10 </span><span class="sxs-lookup"><span data-stu-id="89c11-1389">10</span></span>    | <span data-ttu-id="89c11-1390">Mensagem de movimentação de viagens para lixo eletrônico.</span><span class="sxs-lookup"><span data-stu-id="89c11-1390">TimeTravel move message to junk.</span></span>    |
+| <span data-ttu-id="89c11-1391">autoPurgeToDeleted</span><span class="sxs-lookup"><span data-stu-id="89c11-1391">autoPurgeToDeleted</span></span>    | <span data-ttu-id="89c11-1392">11 </span><span class="sxs-lookup"><span data-stu-id="89c11-1392">11</span></span>    | <span data-ttu-id="89c11-1393">Mensagem de movimentação de viagens para exclusão.</span><span class="sxs-lookup"><span data-stu-id="89c11-1393">TimeTravel move message to deleted.</span></span> |
+| <span data-ttu-id="89c11-1394">saída</span><span class="sxs-lookup"><span data-stu-id="89c11-1394">outbound</span></span>              | <span data-ttu-id="89c11-1395">12 </span><span class="sxs-lookup"><span data-stu-id="89c11-1395">12</span></span>    | <span data-ttu-id="89c11-1396">Emails de saída.</span><span class="sxs-lookup"><span data-stu-id="89c11-1396">Outbound mail.</span></span>                      |
+| <span data-ttu-id="89c11-1397">Não é lixo eletrônico</span><span class="sxs-lookup"><span data-stu-id="89c11-1397">notJunk</span></span>               | <span data-ttu-id="89c11-1398">13 </span><span class="sxs-lookup"><span data-stu-id="89c11-1398">13</span></span>    | <span data-ttu-id="89c11-1399">Permitir por não ser lixo eletrônico.</span><span class="sxs-lookup"><span data-stu-id="89c11-1399">Allow due to not junk.</span></span>              |
+| <span data-ttu-id="89c11-1400">desejado</span><span class="sxs-lookup"><span data-stu-id="89c11-1400">junk</span></span>                  | <span data-ttu-id="89c11-1401">14 </span><span class="sxs-lookup"><span data-stu-id="89c11-1401">14</span></span>    | <span data-ttu-id="89c11-1402">Bloqueado devido a lixo eletrônico.</span><span class="sxs-lookup"><span data-stu-id="89c11-1402">Blocked due to junk.</span></span>                |
+| <span data-ttu-id="89c11-1403">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-1403">unknownFutureValue</span></span>    | <span data-ttu-id="89c11-1404">15 </span><span class="sxs-lookup"><span data-stu-id="89c11-1404">15</span></span>    | <span data-ttu-id="89c11-1405">Um membro Sentinel.</span><span class="sxs-lookup"><span data-stu-id="89c11-1405">A sentinel member.</span></span>                  |
 
-### <a name="threatassessmentrequestpivotproperty-values"></a><span data-ttu-id="79c22-1357">valores de threatAssessmentRequestPivotProperty</span><span class="sxs-lookup"><span data-stu-id="79c22-1357">threatAssessmentRequestPivotProperty values</span></span>
+### <a name="threatassessmentrequestpivotproperty-values"></a><span data-ttu-id="89c11-1406">valores de threatAssessmentRequestPivotProperty</span><span class="sxs-lookup"><span data-stu-id="89c11-1406">threatAssessmentRequestPivotProperty values</span></span>
 
-| <span data-ttu-id="79c22-1358">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1358">Member</span></span>                       | <span data-ttu-id="79c22-1359">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1359">Value</span></span> | <span data-ttu-id="79c22-1360">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1360">Description</span></span>                                                            |
+| <span data-ttu-id="89c11-1407">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1407">Member</span></span>                       | <span data-ttu-id="89c11-1408">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1408">Value</span></span> | <span data-ttu-id="89c11-1409">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1409">Description</span></span>                                                            |
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
-| <span data-ttu-id="79c22-1361">threatCategory</span><span class="sxs-lookup"><span data-stu-id="79c22-1361">threatCategory</span></span>               | <span data-ttu-id="79c22-1362">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1362">1</span></span>     | <span data-ttu-id="79c22-1363">Agregar solicitação de avaliação de ameaça por `threatCategory` .</span><span class="sxs-lookup"><span data-stu-id="79c22-1363">Aggregate threat assessment request by `threatCategory`.</span></span>               |
-| <span data-ttu-id="79c22-1364">mailDestinationRoutingReason</span><span class="sxs-lookup"><span data-stu-id="79c22-1364">mailDestinationRoutingReason</span></span> | <span data-ttu-id="79c22-1365">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1365">2</span></span>     | <span data-ttu-id="79c22-1366">Agregar solicitação de avaliação de ameaça por `mailDestinationRoutingReason` .</span><span class="sxs-lookup"><span data-stu-id="79c22-1366">Aggregate threat assessment request by `mailDestinationRoutingReason`.</span></span> |
+| <span data-ttu-id="89c11-1410">threatCategory</span><span class="sxs-lookup"><span data-stu-id="89c11-1410">threatCategory</span></span>               | <span data-ttu-id="89c11-1411">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1411">1</span></span>     | <span data-ttu-id="89c11-1412">Agregar solicitação de avaliação de ameaça por `threatCategory` .</span><span class="sxs-lookup"><span data-stu-id="89c11-1412">Aggregate threat assessment request by `threatCategory`.</span></span>               |
+| <span data-ttu-id="89c11-1413">mailDestinationRoutingReason</span><span class="sxs-lookup"><span data-stu-id="89c11-1413">mailDestinationRoutingReason</span></span> | <span data-ttu-id="89c11-1414">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1414">2</span></span>     | <span data-ttu-id="89c11-1415">Agregar solicitação de avaliação de ameaça por `mailDestinationRoutingReason` .</span><span class="sxs-lookup"><span data-stu-id="89c11-1415">Aggregate threat assessment request by `mailDestinationRoutingReason`.</span></span> |
 
-### <a name="riskeventtypes-values"></a><span data-ttu-id="79c22-1367">valores de riskEventTypes</span><span class="sxs-lookup"><span data-stu-id="79c22-1367">riskEventTypes values</span></span>
+### <a name="riskeventtypes-values"></a><span data-ttu-id="89c11-1416">valores de riskEventTypes</span><span class="sxs-lookup"><span data-stu-id="89c11-1416">riskEventTypes values</span></span>
 
-| <span data-ttu-id="79c22-1368">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1368">Member</span></span>
+| <span data-ttu-id="89c11-1417">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1417">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="79c22-1369">unlikelyTravel</span><span class="sxs-lookup"><span data-stu-id="79c22-1369">unlikelyTravel</span></span>
-| <span data-ttu-id="79c22-1370">anonymizedIPAddress</span><span class="sxs-lookup"><span data-stu-id="79c22-1370">anonymizedIPAddress</span></span>
-| <span data-ttu-id="79c22-1371">maliciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="79c22-1371">maliciousIPAddress</span></span>
-| <span data-ttu-id="79c22-1372">unfamiliarFeatures</span><span class="sxs-lookup"><span data-stu-id="79c22-1372">unfamiliarFeatures</span></span>
-| <span data-ttu-id="79c22-1373">malwareInfectedIPAddress</span><span class="sxs-lookup"><span data-stu-id="79c22-1373">malwareInfectedIPAddress</span></span>
-| <span data-ttu-id="79c22-1374">suspiciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="79c22-1374">suspiciousIPAddress</span></span>
-| <span data-ttu-id="79c22-1375">leakedCredentials</span><span class="sxs-lookup"><span data-stu-id="79c22-1375">leakedCredentials</span></span>
-| <span data-ttu-id="79c22-1376">investigationsThreatIntelligence</span><span class="sxs-lookup"><span data-stu-id="79c22-1376">investigationsThreatIntelligence</span></span>
-| <span data-ttu-id="79c22-1377">genérico</span><span class="sxs-lookup"><span data-stu-id="79c22-1377">generic</span></span>
-| <span data-ttu-id="79c22-1378">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-1378">unknownFutureValue</span></span>
+| <span data-ttu-id="89c11-1418">unlikelyTravel</span><span class="sxs-lookup"><span data-stu-id="89c11-1418">unlikelyTravel</span></span>
+| <span data-ttu-id="89c11-1419">anonymizedIPAddress</span><span class="sxs-lookup"><span data-stu-id="89c11-1419">anonymizedIPAddress</span></span>
+| <span data-ttu-id="89c11-1420">maliciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="89c11-1420">maliciousIPAddress</span></span>
+| <span data-ttu-id="89c11-1421">unfamiliarFeatures</span><span class="sxs-lookup"><span data-stu-id="89c11-1421">unfamiliarFeatures</span></span>
+| <span data-ttu-id="89c11-1422">malwareInfectedIPAddress</span><span class="sxs-lookup"><span data-stu-id="89c11-1422">malwareInfectedIPAddress</span></span>
+| <span data-ttu-id="89c11-1423">suspiciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="89c11-1423">suspiciousIPAddress</span></span>
+| <span data-ttu-id="89c11-1424">leakedCredentials</span><span class="sxs-lookup"><span data-stu-id="89c11-1424">leakedCredentials</span></span>
+| <span data-ttu-id="89c11-1425">investigationsThreatIntelligence</span><span class="sxs-lookup"><span data-stu-id="89c11-1425">investigationsThreatIntelligence</span></span>
+| <span data-ttu-id="89c11-1426">genérico</span><span class="sxs-lookup"><span data-stu-id="89c11-1426">generic</span></span>
+| <span data-ttu-id="89c11-1427">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-1427">unknownFutureValue</span></span>
 
-### <a name="userflowtype-values"></a><span data-ttu-id="79c22-1379">valores de userflowtype</span><span class="sxs-lookup"><span data-stu-id="79c22-1379">userFlowType values</span></span>
-|<span data-ttu-id="79c22-1380">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1380">Member</span></span>
+### <a name="userflowtype-values"></a><span data-ttu-id="89c11-1428">valores de userflowtype</span><span class="sxs-lookup"><span data-stu-id="89c11-1428">userFlowType values</span></span>
+|<span data-ttu-id="89c11-1429">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1429">Member</span></span>
 |:----------------------
-| <span data-ttu-id="79c22-1381">Inscrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1381">signUp</span></span>
-| <span data-ttu-id="79c22-1382">signIn</span><span class="sxs-lookup"><span data-stu-id="79c22-1382">signIn</span></span>
-| <span data-ttu-id="79c22-1383">signUpOrSignIn</span><span class="sxs-lookup"><span data-stu-id="79c22-1383">signUpOrSignIn</span></span>
-| <span data-ttu-id="79c22-1384">passwordReset</span><span class="sxs-lookup"><span data-stu-id="79c22-1384">passwordReset</span></span>
-| <span data-ttu-id="79c22-1385">profileUpdate</span><span class="sxs-lookup"><span data-stu-id="79c22-1385">profileUpdate</span></span>
-| <span data-ttu-id="79c22-1386">resourceOwnerPasswordCredentialSignIn</span><span class="sxs-lookup"><span data-stu-id="79c22-1386">resourceOwnerPasswordCredentialSignIn</span></span>
-| <span data-ttu-id="79c22-1387">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-1387">unknownFutureValue</span></span>
+| <span data-ttu-id="89c11-1430">Inscrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1430">signUp</span></span>
+| <span data-ttu-id="89c11-1431">signIn</span><span class="sxs-lookup"><span data-stu-id="89c11-1431">signIn</span></span>
+| <span data-ttu-id="89c11-1432">signUpOrSignIn</span><span class="sxs-lookup"><span data-stu-id="89c11-1432">signUpOrSignIn</span></span>
+| <span data-ttu-id="89c11-1433">passwordReset</span><span class="sxs-lookup"><span data-stu-id="89c11-1433">passwordReset</span></span>
+| <span data-ttu-id="89c11-1434">profileUpdate</span><span class="sxs-lookup"><span data-stu-id="89c11-1434">profileUpdate</span></span>
+| <span data-ttu-id="89c11-1435">resourceOwnerPasswordCredentialSignIn</span><span class="sxs-lookup"><span data-stu-id="89c11-1435">resourceOwnerPasswordCredentialSignIn</span></span>
+| <span data-ttu-id="89c11-1436">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-1436">unknownFutureValue</span></span>
 
-### <a name="openidconnectresponsemode-values"></a><span data-ttu-id="79c22-1388">valores de openIdConnectResponseMode</span><span class="sxs-lookup"><span data-stu-id="79c22-1388">openIdConnectResponseMode values</span></span>
-| <span data-ttu-id="79c22-1389">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1389">Member</span></span>                
+### <a name="openidconnectresponsemode-values"></a><span data-ttu-id="89c11-1437">valores de openIdConnectResponseMode</span><span class="sxs-lookup"><span data-stu-id="89c11-1437">openIdConnectResponseMode values</span></span>
+| <span data-ttu-id="89c11-1438">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1438">Member</span></span>                
 |:----------------------
-| <span data-ttu-id="79c22-1390">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-1390">none</span></span>
-| <span data-ttu-id="79c22-1391">form_post</span><span class="sxs-lookup"><span data-stu-id="79c22-1391">form_post</span></span>
-| <span data-ttu-id="79c22-1392">consulta</span><span class="sxs-lookup"><span data-stu-id="79c22-1392">query</span></span> 
-| <span data-ttu-id="79c22-1393">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-1393">unknownFutureValue</span></span> 
+| <span data-ttu-id="89c11-1439">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-1439">none</span></span>
+| <span data-ttu-id="89c11-1440">form_post</span><span class="sxs-lookup"><span data-stu-id="89c11-1440">form_post</span></span>
+| <span data-ttu-id="89c11-1441">consulta</span><span class="sxs-lookup"><span data-stu-id="89c11-1441">query</span></span> 
+| <span data-ttu-id="89c11-1442">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-1442">unknownFutureValue</span></span> 
 
-### <a name="openidconnectresponsetypes-values"></a><span data-ttu-id="79c22-1394">valores de openIdConnectResponseTypes</span><span class="sxs-lookup"><span data-stu-id="79c22-1394">openIdConnectResponseTypes values</span></span>
-| <span data-ttu-id="79c22-1395">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1395">Member</span></span>                
+### <a name="openidconnectresponsetypes-values"></a><span data-ttu-id="89c11-1443">valores de openIdConnectResponseTypes</span><span class="sxs-lookup"><span data-stu-id="89c11-1443">openIdConnectResponseTypes values</span></span>
+| <span data-ttu-id="89c11-1444">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1444">Member</span></span>                
 |:----------------------
-| <span data-ttu-id="79c22-1396">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-1396">none</span></span>
-| <span data-ttu-id="79c22-1397">código</span><span class="sxs-lookup"><span data-stu-id="79c22-1397">code</span></span>
-| <span data-ttu-id="79c22-1398">id_token</span><span class="sxs-lookup"><span data-stu-id="79c22-1398">id_token</span></span>
-| <span data-ttu-id="79c22-1399">token</span><span class="sxs-lookup"><span data-stu-id="79c22-1399">token</span></span>
+| <span data-ttu-id="89c11-1445">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-1445">none</span></span>
+| <span data-ttu-id="89c11-1446">código</span><span class="sxs-lookup"><span data-stu-id="89c11-1446">code</span></span>
+| <span data-ttu-id="89c11-1447">id_token</span><span class="sxs-lookup"><span data-stu-id="89c11-1447">id_token</span></span>
+| <span data-ttu-id="89c11-1448">token</span><span class="sxs-lookup"><span data-stu-id="89c11-1448">token</span></span>
 
-### <a name="wellknownlistname-values"></a><span data-ttu-id="79c22-1400">valores de wellknownListName</span><span class="sxs-lookup"><span data-stu-id="79c22-1400">wellknownListName values</span></span>
-| <span data-ttu-id="79c22-1401">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1401">Member</span></span>
+### <a name="wellknownlistname-values"></a><span data-ttu-id="89c11-1449">valores de wellknownListName</span><span class="sxs-lookup"><span data-stu-id="89c11-1449">wellknownListName values</span></span>
+| <span data-ttu-id="89c11-1450">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1450">Member</span></span>
 |:----------------------
-| <span data-ttu-id="79c22-1402">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="79c22-1402">none</span></span>
-| <span data-ttu-id="79c22-1403">defaultlist</span><span class="sxs-lookup"><span data-stu-id="79c22-1403">defaultList</span></span>
-| <span data-ttu-id="79c22-1404">flaggedEmails</span><span class="sxs-lookup"><span data-stu-id="79c22-1404">flaggedEmails</span></span>
-| <span data-ttu-id="79c22-1405">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-1405">unknownFutureValue</span></span>
+| <span data-ttu-id="89c11-1451">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="89c11-1451">none</span></span>
+| <span data-ttu-id="89c11-1452">defaultlist</span><span class="sxs-lookup"><span data-stu-id="89c11-1452">defaultList</span></span>
+| <span data-ttu-id="89c11-1453">flaggedEmails</span><span class="sxs-lookup"><span data-stu-id="89c11-1453">flaggedEmails</span></span>
+| <span data-ttu-id="89c11-1454">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-1454">unknownFutureValue</span></span>
 
-### <a name="taskstatus-values"></a><span data-ttu-id="79c22-1406">valores de taskStatus</span><span class="sxs-lookup"><span data-stu-id="79c22-1406">taskStatus values</span></span>
-| <span data-ttu-id="79c22-1407">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1407">Member</span></span>
+### <a name="taskstatus-values"></a><span data-ttu-id="89c11-1455">valores de taskStatus</span><span class="sxs-lookup"><span data-stu-id="89c11-1455">taskStatus values</span></span>
+| <span data-ttu-id="89c11-1456">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1456">Member</span></span>
 |:----------------------
-| <span data-ttu-id="79c22-1408">notStarted</span><span class="sxs-lookup"><span data-stu-id="79c22-1408">notStarted</span></span>
-| <span data-ttu-id="79c22-1409">inProgress</span><span class="sxs-lookup"><span data-stu-id="79c22-1409">inProgress</span></span>
-| <span data-ttu-id="79c22-1410">Completed</span><span class="sxs-lookup"><span data-stu-id="79c22-1410">completed</span></span>
-| <span data-ttu-id="79c22-1411">waitingOnOthers</span><span class="sxs-lookup"><span data-stu-id="79c22-1411">waitingOnOthers</span></span>
-| <span data-ttu-id="79c22-1412">adiado</span><span class="sxs-lookup"><span data-stu-id="79c22-1412">deferred</span></span>
+| <span data-ttu-id="89c11-1457">notStarted</span><span class="sxs-lookup"><span data-stu-id="89c11-1457">notStarted</span></span>
+| <span data-ttu-id="89c11-1458">inProgress</span><span class="sxs-lookup"><span data-stu-id="89c11-1458">inProgress</span></span>
+| <span data-ttu-id="89c11-1459">Completed</span><span class="sxs-lookup"><span data-stu-id="89c11-1459">completed</span></span>
+| <span data-ttu-id="89c11-1460">waitingOnOthers</span><span class="sxs-lookup"><span data-stu-id="89c11-1460">waitingOnOthers</span></span>
+| <span data-ttu-id="89c11-1461">adiado</span><span class="sxs-lookup"><span data-stu-id="89c11-1461">deferred</span></span>
 
-### <a name="connectedorganizationstate-values"></a><span data-ttu-id="79c22-1413">valores de connectedOrganizationState</span><span class="sxs-lookup"><span data-stu-id="79c22-1413">connectedOrganizationState values</span></span>
+### <a name="connectedorganizationstate-values"></a><span data-ttu-id="89c11-1462">valores de connectedOrganizationState</span><span class="sxs-lookup"><span data-stu-id="89c11-1462">connectedOrganizationState values</span></span>
 
-| <span data-ttu-id="79c22-1414">Membro</span><span class="sxs-lookup"><span data-stu-id="79c22-1414">Member</span></span>                | <span data-ttu-id="79c22-1415">Valor</span><span class="sxs-lookup"><span data-stu-id="79c22-1415">Value</span></span> | <span data-ttu-id="79c22-1416">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c22-1416">Description</span></span>                                                                                                                                                                                                        |
+| <span data-ttu-id="89c11-1463">Membro</span><span class="sxs-lookup"><span data-stu-id="89c11-1463">Member</span></span>                | <span data-ttu-id="89c11-1464">Valor</span><span class="sxs-lookup"><span data-stu-id="89c11-1464">Value</span></span> | <span data-ttu-id="89c11-1465">Descrição</span><span class="sxs-lookup"><span data-stu-id="89c11-1465">Description</span></span>                                                                                                                                                                                                        |
 |:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="79c22-1417">configurado</span><span class="sxs-lookup"><span data-stu-id="79c22-1417">configured</span></span>            | <span data-ttu-id="79c22-1418">,0</span><span class="sxs-lookup"><span data-stu-id="79c22-1418">0</span></span>     | <span data-ttu-id="79c22-1419">Organizações conectadas com esse valor de estado são incluídas em políticas de atribuição com o tipo de escopo solicitante `AllConfiguredConnectedOrganizationSubjects` .</span><span class="sxs-lookup"><span data-stu-id="79c22-1419">Connected Organizations with this state value are included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.</span></span>                                                          |
-| <span data-ttu-id="79c22-1420">propostas</span><span class="sxs-lookup"><span data-stu-id="79c22-1420">proposed</span></span>              | <span data-ttu-id="79c22-1421">1 </span><span class="sxs-lookup"><span data-stu-id="79c22-1421">1</span></span>     | <span data-ttu-id="79c22-1422">As organizações conectadas criadas automaticamente pelo sistema têm esse valor de estado.</span><span class="sxs-lookup"><span data-stu-id="79c22-1422">Connected Organizations that are automatically created by the system have this state value.</span></span> <span data-ttu-id="79c22-1423">Eles não estão incluídos nas políticas de atribuição com o tipo de escopo solicitante `AllConfiguredConnectedOrganizationSubjects` .</span><span class="sxs-lookup"><span data-stu-id="79c22-1423">They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.</span></span>   |
-| <span data-ttu-id="79c22-1424">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="79c22-1424">unknownFutureValue</span></span>    | <span data-ttu-id="79c22-1425">2 </span><span class="sxs-lookup"><span data-stu-id="79c22-1425">2</span></span>     | <span data-ttu-id="79c22-1426">Um membro Sentinel.</span><span class="sxs-lookup"><span data-stu-id="79c22-1426">A sentinel member.</span></span>                                                                                                                                                                                                 |
+| <span data-ttu-id="89c11-1466">configurado</span><span class="sxs-lookup"><span data-stu-id="89c11-1466">configured</span></span>            | <span data-ttu-id="89c11-1467">,0</span><span class="sxs-lookup"><span data-stu-id="89c11-1467">0</span></span>     | <span data-ttu-id="89c11-1468">Organizações conectadas com esse valor de estado são incluídas em políticas de atribuição com o tipo de escopo solicitante `AllConfiguredConnectedOrganizationSubjects` .</span><span class="sxs-lookup"><span data-stu-id="89c11-1468">Connected Organizations with this state value are included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.</span></span>                                                          |
+| <span data-ttu-id="89c11-1469">propostas</span><span class="sxs-lookup"><span data-stu-id="89c11-1469">proposed</span></span>              | <span data-ttu-id="89c11-1470">1 </span><span class="sxs-lookup"><span data-stu-id="89c11-1470">1</span></span>     | <span data-ttu-id="89c11-1471">As organizações conectadas criadas automaticamente pelo sistema têm esse valor de estado.</span><span class="sxs-lookup"><span data-stu-id="89c11-1471">Connected Organizations that are automatically created by the system have this state value.</span></span> <span data-ttu-id="89c11-1472">Eles não estão incluídos nas políticas de atribuição com o tipo de escopo solicitante `AllConfiguredConnectedOrganizationSubjects` .</span><span class="sxs-lookup"><span data-stu-id="89c11-1472">They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.</span></span>   |
+| <span data-ttu-id="89c11-1473">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="89c11-1473">unknownFutureValue</span></span>    | <span data-ttu-id="89c11-1474">2 </span><span class="sxs-lookup"><span data-stu-id="89c11-1474">2</span></span>     | <span data-ttu-id="89c11-1475">Um membro Sentinel.</span><span class="sxs-lookup"><span data-stu-id="89c11-1475">A sentinel member.</span></span>                                                                                                                                                                                                 |
+
+

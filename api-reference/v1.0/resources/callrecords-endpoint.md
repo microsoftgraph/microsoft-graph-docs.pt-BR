@@ -5,28 +5,28 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0dc1c8709eca693e883d03dfe96c869a021e799c
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: ae7d976c9dbf94aadd11af1d48f8615f5fab14a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491918"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069440"
 ---
-# <a name="endpoint-resource-type"></a><span data-ttu-id="36943-103">tipo de recurso de ponto de extremidade</span><span class="sxs-lookup"><span data-stu-id="36943-103">endpoint resource type</span></span>
+# <a name="endpoint-resource-type"></a><span data-ttu-id="02b56-103">tipo de recurso de ponto de extremidade</span><span class="sxs-lookup"><span data-stu-id="02b56-103">endpoint resource type</span></span>
 
-<span data-ttu-id="36943-104">Namespace: microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="36943-104">Namespace: microsoft.graph.callRecords</span></span>
+<span data-ttu-id="02b56-104">Namespace: microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="02b56-104">Namespace: microsoft.graph.callRecords</span></span>
 
-<span data-ttu-id="36943-105">Representa um ponto de extremidade em uma chamada.</span><span class="sxs-lookup"><span data-stu-id="36943-105">Represents an endpoint in a call.</span></span> <span data-ttu-id="36943-106">O ponto de extremidade pode ser o dispositivo de um usuário, uma reunião, um aplicativo/bot, etc. Os tipos [participantEndpoint](callrecords-participantendpoint.md) e [serviceEndpoint](callrecords-serviceendpoint.md) herdam desse tipo.</span><span class="sxs-lookup"><span data-stu-id="36943-106">The endpoint could be a user's device, a meeting, an application/bot, etc. The [participantEndpoint](callrecords-participantendpoint.md) and [serviceEndpoint](callrecords-serviceendpoint.md) types inherit from this type.</span></span>
+<span data-ttu-id="02b56-105">Representa um ponto de extremidade em uma chamada.</span><span class="sxs-lookup"><span data-stu-id="02b56-105">Represents an endpoint in a call.</span></span> <span data-ttu-id="02b56-106">O ponto de extremidade pode ser o dispositivo de um usuário, uma reunião, um aplicativo/bot, etc. Os tipos [participantEndpoint](callrecords-participantendpoint.md) e [serviceEndpoint](callrecords-serviceendpoint.md) herdam desse tipo.</span><span class="sxs-lookup"><span data-stu-id="02b56-106">The endpoint could be a user's device, a meeting, an application/bot, etc. The [participantEndpoint](callrecords-participantendpoint.md) and [serviceEndpoint](callrecords-serviceendpoint.md) types inherit from this type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="36943-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="36943-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="02b56-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="02b56-107">Properties</span></span>
 
-| <span data-ttu-id="36943-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="36943-108">Property</span></span>     | <span data-ttu-id="36943-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="36943-109">Type</span></span>        | <span data-ttu-id="36943-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="36943-110">Description</span></span> |
+| <span data-ttu-id="02b56-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="02b56-108">Property</span></span>     | <span data-ttu-id="02b56-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="02b56-109">Type</span></span>        | <span data-ttu-id="02b56-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="02b56-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="36943-111">userAgent</span><span class="sxs-lookup"><span data-stu-id="36943-111">userAgent</span></span>|[<span data-ttu-id="36943-112">Microsoft. Graph. callRecords. UserAgent</span><span class="sxs-lookup"><span data-stu-id="36943-112">microsoft.graph.callRecords.userAgent</span></span>](callrecords-useragent.md)|<span data-ttu-id="36943-113">Agente de usuário relatado por este ponto de extremidade.</span><span class="sxs-lookup"><span data-stu-id="36943-113">User-agent reported by this endpoint.</span></span>|
+|<span data-ttu-id="02b56-111">userAgent</span><span class="sxs-lookup"><span data-stu-id="02b56-111">userAgent</span></span>|[<span data-ttu-id="02b56-112">Microsoft. Graph. callRecords. UserAgent</span><span class="sxs-lookup"><span data-stu-id="02b56-112">microsoft.graph.callRecords.userAgent</span></span>](callrecords-useragent.md)|<span data-ttu-id="02b56-113">Agente de usuário relatado por este ponto de extremidade.</span><span class="sxs-lookup"><span data-stu-id="02b56-113">User-agent reported by this endpoint.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="36943-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="36943-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="02b56-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="02b56-114">JSON representation</span></span>
 
-<span data-ttu-id="36943-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="36943-115">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="02b56-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="02b56-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
