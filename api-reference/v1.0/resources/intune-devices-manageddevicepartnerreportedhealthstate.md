@@ -3,14 +3,14 @@ title: tipo de enumeração managedDevicePartnerReportedHealthState
 description: Estados de integridade disponíveis para a API de integridade do dispositivo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: eb17f5fe6d34c04c13d46debc643855b48f9a0d3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b0df2859ccee3d4eff9b98c6effb44a4552d93db
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406901"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091058"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>tipo de enumeração managedDevicePartnerReportedHealthState
 
@@ -24,8 +24,8 @@ Estados de integridade disponíveis para a API de integridade do dispositivo
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|O estado de integridade do dispositivo ainda não foi relatado|
-|ativado|1|O dispositivo foi ativado por um parceiro de defesa contra ameaças móveis, mas ainda não relatou a integridade.|
-|desativada|duas|O dispositivo foi desativado por um parceiro de defesa contra ameaças móveis. A integridade do dispositivo não é conhecida.|
+|ativado|1 |O dispositivo foi ativado por um parceiro de defesa contra ameaças móveis, mas ainda não relatou a integridade.|
+|desativada|2 |O dispositivo foi desativado por um parceiro de defesa contra ameaças móveis. A integridade do dispositivo não é conhecida.|
 |presos|3D|O dispositivo é considerado protegido pelo parceiro de defesa contra ameaças móveis.|
 |lowSeverity|4 |O dispositivo é considerado com baixa ameaça pelo parceiro de defesa contra ameaças móveis.|
 |mediumSeverity|5 |O dispositivo é considerado como ameaça médio pelo parceiro de defesa contra ameaças móveis.|
@@ -33,6 +33,8 @@ Estados de integridade disponíveis para a API de integridade do dispositivo
 |Não responde|7 |O dispositivo é considerado sem resposta pelo parceiro de defesa contra ameaças móveis. A integridade do dispositivo não é conhecida.|
 |ficasse|8 |O dispositivo é considerado comprometido pelo parceiro de proteção contra ameaças. Isso significa que o dispositivo tem uma ameaça ou risco ativo que não pode ser corrigido facilmente pelo usuário final e o usuário deve entrar em contato com o administrador de ti.|
 |configurado incorretamente|9 |O dispositivo é considerado incorretamente configurado com o parceiro de proteção contra ameaças. Isso significa que o dispositivo não tem um perfil ou uma configuração necessária para que o parceiro de defesa contra ameaças funcione corretamente, e, portanto, a análise de ameaças ou riscos não pode ser concluída.|
+
+
 
 
 

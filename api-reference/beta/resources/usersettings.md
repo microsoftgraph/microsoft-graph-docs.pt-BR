@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8d44c21c1d41214aec8661fe696179b6976765b4
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 81391c38f2577fd3f60c57fa40f9671ae710c2a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897782"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057770"
 ---
 # <a name="usersettings-resource-type"></a>Tipo de recurso de configurações do usuário (UserSettings)
 
@@ -73,3 +73,5 @@ Veja a seguir uma representação JSON do recurso.
 }
 
 ```
+
+

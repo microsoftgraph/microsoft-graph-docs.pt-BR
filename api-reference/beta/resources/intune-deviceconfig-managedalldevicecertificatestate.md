@@ -3,14 +3,14 @@ title: tipo de recurso managedAllDeviceCertificateState
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0684e9cd6e3ca4e34c74ec6315818d94cce208fd
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 0d78387106497c8ff2300f4d1c64445cafe25e96
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124048"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016223"
 ---
 # <a name="managedalldevicecertificatestate-resource-type"></a>tipo de recurso managedAllDeviceCertificateState
 
@@ -37,15 +37,15 @@ Ainda não documentado
 |id|String|Chave da entidade.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
 |certificateRevokeStatusLastChangeDateTime|DateTimeOffset|A hora em que o status da revogação foi alterado pela última vez|
-|managedDeviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
-|userPrincipalName|Cadeia de caracteres|Nome UPN|
+|managedDeviceDisplayName|String|Nome de exibição do dispositivo|
+|userPrincipalName|String|Nome UPN|
 |certificateExpirationDateTime|DateTimeOffset|Data de vencimento do certificado|
-|certificateIssuerName|Cadeia de caracteres|Emissor|
-|certificateThumbprint|Cadeia de caracteres|Identificação|
-|certificateSerialNumber|Cadeia de caracteres|Número de série|
-|certificateSubjectName|Cadeia de caracteres|Nome do assunto do certificado|
+|certificateIssuerName|String|Emissor|
+|certificateThumbprint|String|Identificação|
+|certificateSerialNumber|String|Número de série|
+|certificateSubjectName|String|Nome do assunto do certificado|
 |certificateKeyUsages|Int32|Uso de chave|
-|certificateExtendedKeyUsages|Cadeia de caracteres|Uso avançado de chave|
+|certificateExtendedKeyUsages|String|Uso avançado de chave|
 |certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 
 ## <a name="relationships"></a>Relações
@@ -77,6 +77,9 @@ Veja a seguir uma representação JSON do recurso.
   "certificateIssuanceDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3aa89075b93f34ad565d210bee3dff2bfd1ffe81
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 736eefce535a0a9ebaf6098fa10675f1357541da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521030"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016125"
 ---
 # <a name="roomlist-resource-type"></a>tipo de recurso RoomList
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +34,7 @@ Derivado do [local](place.md).
 | Propriedade       | Tipo                                              | Descrição |
 |:---------------|:--------------------------------------------------|:--------|
 | address        | [physicalAddress](physicaladdress.md)             | O endereço da lista de salas. |
-| displayName    | Cadeia de caracteres                                            | O nome associado à lista de salas. |
+| displayName    | String                                            | O nome associado à lista de salas. |
 | emailAddress   | String                                            | O endereço de email da lista de salas. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Especifica o local da sala de opções no latitude, longitude e (opcionalmente) as coordenadas de altitude. |
 | id             | String                                            | Identificador exclusivo da lista de salas. Somente leitura. |
@@ -79,3 +79,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

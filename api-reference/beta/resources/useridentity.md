@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1ab0a102cf430a98a0a5662af30cdd8cd36a3430
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 154e6cf9bc06ab53e5a2013127349eeda5538b5b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846057"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057889"
 ---
 # <a name="useridentity-type"></a>tipo UserIdentity
 
@@ -23,7 +23,7 @@ No contexto de um log de auditoria do Azure AD, isso representa as informações
 
 Esse tipo herda de [Identity](identity.md) e tem uma propriedade adicional, o nome principal do usuário do usuário.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 Nenhum  Você deve incluir objetos desse tipo no corpo de uma solicitação ao [criar um accessReview](../api/accessreview-create.md).
 
@@ -84,3 +84,5 @@ Veja a seguir uma representação JSON do tipo.
   "suppressions": []
 }
 -->
+
+

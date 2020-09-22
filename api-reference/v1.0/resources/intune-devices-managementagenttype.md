@@ -3,14 +3,14 @@ title: tipo de enumeração managementAgentType
 description: Tipo de agente de gerenciamento.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d5f698a2878b0662193128044d7b069c8dfe8b3f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fe4dc7edada2353ebcc9b073f7c599ebef6e4244
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406830"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091044"
 ---
 # <a name="managementagenttype-enum-type"></a>tipo de enumeração managementAgentType
 
@@ -23,17 +23,19 @@ Tipo de agente de gerenciamento.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Estendi|1|O dispositivo é gerenciado pelo Exchange Server.|
-|MDM|duas|O dispositivo é gerenciado pelo MDM do Intune.|
+|Estendi|1 |O dispositivo é gerenciado pelo Exchange Server.|
+|MDM|2 |O dispositivo é gerenciado pelo MDM do Intune.|
 |easMdm|3D|O dispositivo é gerenciado pelo Exchange Server e o MDM do Intune.|
 |intuneClient|4 |Cliente do Intune gerenciado.|
 |easIntuneClient|5 |O dispositivo é ESTENDIdo e o cliente do Intune é gerenciado duas.|
 |configurationManagerClient|8 |O dispositivo é gerenciado pelo Configuration Manager.|
 |configurationManagerClientMdm|10 |O dispositivo é gerenciado pelo Configuration Manager e pelo MDM.|
-|configurationManagerClientMdmEas|11|O dispositivo é gerenciado pelo Configuration Manager, MDM e EAS.|
+|configurationManagerClientMdmEas|11 |O dispositivo é gerenciado pelo Configuration Manager, MDM e EAS.|
 |desconhecido|16 |Tipo de agente de gerenciamento desconhecido.|
 |jamf|32|Os atributos do dispositivo são buscados do JAMF.|
 |googleCloudDevicePolicyController|64|O dispositivo é gerenciado pelo CloudDPC do Google.|
+
+
 
 
 

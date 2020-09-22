@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f3df36132011cc668950615b2229c76c85237094
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 55c7a55678f4120a7e3c1755a599fcde36ffcd5c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422389"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057812"
 ---
 # <a name="usersecuritystate-resource-type"></a>tipo de recurso usersecuritystate
 
@@ -24,20 +24,20 @@ Contém informações monitoradoras sobre a conta de usuário.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|aadUserId|String|GUID (identificador de objeto do usuário) do AAD – representa a entidade de usuário física/de várias contas.|
-|accountName|String|Nome da conta da conta de usuário (sem o domínio do Active Directory ou domínio DNS) `mailNickName`-(também chamado).|
+|aadUserId|Cadeia de caracteres|GUID (identificador de objeto do usuário) do AAD – representa a entidade de usuário física/de várias contas.|
+|accountName|Cadeia de caracteres|Nome da conta da conta de usuário (sem o domínio do Active Directory ou domínio DNS)-(também chamado `mailNickName` ).|
 |domainName|Cadeia de caracteres|Domínio NetBIOS/Active Directory da conta de usuário (ou seja, formato de domínio \ conta).|
 |emailRole|emailRole|Para alertas relacionados a email-a função de email da conta de usuário. Os valores possíveis são: `unknown`, `sender`, `recipient`.|
-|isVpn|Boolean|Indica se o usuário fez logon por meio de uma VPN.|
+|isVpn|Booliano|Indica se o usuário fez logon por meio de uma VPN.|
 |logonDateTime|DateTimeOffset|Hora em que o logon ocorreu. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|LogonId|String|ID de entrada do usuário.|
-|logonIp|String|Endereço IP para o qual a solicitação de entrada originou.|
-|logonLocation|String|Local (por mapeamento de endereço IP) associado a um evento de entrada do usuário por este usuário.|
+|LogonId|Cadeia de caracteres|ID de entrada do usuário.|
+|logonIp|Cadeia de caracteres|Endereço IP para o qual a solicitação de entrada originou.|
+|logonLocation|Cadeia de caracteres|Local (por mapeamento de endereço IP) associado a um evento de entrada do usuário por este usuário.|
 |logonType|logonType|Método de logon do usuário. Os possíveis valores são: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 |onPremisesSecurityIdentifier|String|O identificador de segurança (SID) do usuário do Active Directory (local).|
-|riskScore|String|A pontuação de risco calculado/gerado pelo provedor da conta de usuário. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
+|riskScore|Cadeia de caracteres|A pontuação de risco calculado/gerado pelo provedor da conta de usuário. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
 |useraccounttype|userAccountSecurityType|Tipo de conta de usuário (Associação de grupo), por definição do Windows. Os valores possíveis são: `unknown`, `standard`, `power`, `administrator`.|
-|userPrincipalName|String|Nome de entrada do usuário-formato da Internet: (nome da conta de usuário) @ (nome de domínio DNS da conta de usuário).|
+|userPrincipalName|Cadeia de caracteres|Nome de entrada do usuário-formato da Internet: (nome da conta de usuário) @ (nome de domínio DNS da conta de usuário).|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -83,3 +83,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

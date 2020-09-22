@@ -5,16 +5,16 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e23d8a873abb0de5a086350b3748f9e40d7e12ae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff64a11b9a4e0e036824df1629f1ae055ade3f9d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521037"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016132"
 ---
 # <a name="room-resource-type"></a>tipo de recurso Room
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,21 +35,21 @@ No Exchange Online, cada sala é associada a uma caixa de correio de sala. Deriv
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | O endereço da sala. |
 | audioDeviceName        | String                                            | Especifica o nome do dispositivo de áudio na sala. |
-| bookingType            | [bookingType](#bookingtype-values)                | Tipo de sala. Os valores possíveis `standard`são e `reserved`. |
+| bookingType            | [bookingType](#bookingtype-values)                | Tipo de sala. Os valores possíveis são `standard` e `reserved` . |
 | Build               | String                                            | Especifica o nome do edifício ou o número de edifício em que a sala se encontra. |
 | máxima               | String                                            | Especifica a capacidade da sala. |
-| displayName            | Cadeia de caracteres                                            | O nome associado à sala. |
+| displayName            | String                                            | O nome associado à sala. |
 | displayDeviceName      | String                                            | Especifica o nome do dispositivo de exibição na sala. |
 | emailAddress           | String                                            | Endereço de email da sala. |
 | floorLabel             | String                                            | Especifica um rótulo descritivo para o andar, por exemplo, P. |
 | floorNumber            | Int32                                             | Especifica o número do andar em que a sala está. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Especifica o local da sala no latitude, longitude e, opcionalmente, as coordenadas de altitude. |
 | id                     | String                                            | Identificador exclusivo da sala. Somente leitura. |
-| isWheelchairAccessible | Boolean                                           | Especifica se a sala pode ser acessada por cadeira. |
+| isWheelchairAccessible | Booliano                                           | Especifica se a sala pode ser acessada por cadeira. |
 | rótulo                  | String                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
 | apelido               | String                                            | Especifica um apelido para a sala, por exemplo, "conf sala". |
 | phone                  | Cadeia de caracteres                                            | O número de telefone da sala. |
-| tags                   | String collection                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de mobília. |
+| tags                   | Coleção String                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de mobília. |
 | videoDeviceName        | String                                            | Especifica o nome do dispositivo de vídeo na sala. |
 
 ### <a name="bookingtype-values"></a>valores de reserva
@@ -108,3 +108,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

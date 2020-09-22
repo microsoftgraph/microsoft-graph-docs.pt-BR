@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: c4148e5740c9b31368be336a615524ced426a560
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: cd6f352ad114307933682f4d6df22408b54ebc73
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219225"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070580"
 ---
 # <a name="privilegedapproval-resource-type"></a>tipo de recurso privilegedApproval
 
@@ -35,17 +35,17 @@ Representa uma aprovação solicitada no gerenciamento de identidade privilegiad
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |approvalDuration|Duração||
-|approvalstate|string| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvaltype|Cadeia de Caracteres||
-|approverReason|Cadeia de Caracteres||
+|approvalstate|cadeia de caracteres| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|approvaltype|Cadeia de caracteres||
+|approverReason|Cadeia de caracteres||
 |endDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
-|requestorReason|Cadeia de Caracteres||
-|roleId|Cadeia de Caracteres||
+|requestorReason|Cadeia de caracteres||
+|roleId|Cadeia de caracteres||
 |startDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |userId|Cadeia de caracteres||
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| Somente leitura. Anulável.|
@@ -92,3 +92,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

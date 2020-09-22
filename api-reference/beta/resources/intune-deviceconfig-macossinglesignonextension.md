@@ -3,14 +3,14 @@ title: tipo de recurso macOSSingleSignOnExtension
 description: Uma classe base abstrata para todos os tipos de extensão de logon único de macOS específico.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8911419a42f6f3882bf22c5b7c8985557df1b29
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f0535849a4a87b2d9b640e92b2ff5436cec4114d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446998"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064175"
 ---
 # <a name="macossinglesignonextension-resource-type"></a>tipo de recurso macOSSingleSignOnExtension
 
@@ -44,6 +44,9 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.macOSSingleSignOnExtension"
 }
 ```
+
+
+
 
 
 

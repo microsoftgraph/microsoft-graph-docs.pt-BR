@@ -3,14 +3,14 @@ title: tipo de enumeração mobileThreatPartnerTenantState
 description: Estado do parceiro desse locatário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 40034b8f3db9622e106fb6cb58470e383c12f962
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b2c4f5d3994afb055e0672bda007de5e4c7214f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43371517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029453"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>tipo de enumeração mobileThreatPartnerTenantState
 
@@ -26,9 +26,12 @@ Estado do parceiro desse locatário.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |indisponível|,0|O parceiro não está disponível.|
-|disponível|1|O parceiro está disponível.|
-|habilitadas|duas|O parceiro está habilitado.|
-|Não responde|3D|O parceiro não responde.|
+|disponível|1 |O parceiro está disponível.|
+|habilitadas|2 |O parceiro está habilitado.|
+|Não responde|3 |O parceiro não responde.|
+
+
+
 
 
 

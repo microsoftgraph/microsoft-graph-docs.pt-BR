@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 77f0f990587531c10914644366e066a0fd659f37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aabd0716990f67d0b73b4bb300b6953caa0bfe07
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519502"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057805"
 ---
 # <a name="userset-complex-type"></a>tipo complexo userset
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,11 +24,11 @@ Usado nas configurações de solicitação, aprovação e revisão de atribuiç�
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| IsBackup | Boolean | Para um usuário em uma fase de aprovação, essa propriedade indica se o usuário é um Aprovador de fallback de backup. |
+| IsBackup | Booliano | Para um usuário em uma fase de aprovação, essa propriedade indica se o usuário é um Aprovador de fallback de backup. |
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON de userset.  Observe que um userset é uma classe base abstrata e, portanto, não seria enviado ou recebido.  Em vez disso, um `@odata.type` de "`#microsoft.graph.singleUser`", "`#microsoft.graph.groupMembers`", "`#microsoft.graph.connectedOrganizationMembers`", "`#microsoft.graph.requestorManager`", "`#microsoft.graph.internalSponsors`" ou "`#microsoft.graph.externalSponsors`" seria usado.
+Veja a seguir uma representação JSON de userset.  Observe que um userset é uma classe base abstrata e, portanto, não seria enviado ou recebido.  Em vez disso, um de `@odata.type` " `#microsoft.graph.singleUser` ", " `#microsoft.graph.groupMembers` ", " `#microsoft.graph.connectedOrganizationMembers` ", " `#microsoft.graph.requestorManager` ", " `#microsoft.graph.internalSponsors` " ou " `#microsoft.graph.externalSponsors` " seria usado.
 
 <!-- {
   "blockType": "resource",
@@ -56,3 +56,5 @@ Veja a seguir uma representação JSON de userset.  Observe que um userset é um
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

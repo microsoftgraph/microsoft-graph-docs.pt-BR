@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: e322f073655ffaa975464d666a365410138f6e51
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5aa86a0b490ddb2cd68a504f5a4879f922fa0cf2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384976"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057819"
 ---
 # <a name="userregistrationcount-resource-type"></a>tipo de recurso userRegistrationCount
 
@@ -25,7 +25,7 @@ Representa a contagem de registro e o status de usuários em seu locatário.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 | registrationCount | Int64 | Fornece a contagem de registro para seu locatário. |
-| registrationStatus | String | Representa o status do registro do usuário. Os valores possíveis são `registered`: `enabled`, `capable`,, `mfaRegistered`e. |
+| registrationStatus | Cadeia de caracteres | Representa o status do registro do usuário. Os valores possíveis são: `registered` , `enabled` , `capable` , e `mfaRegistered` . |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -56,3 +56,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

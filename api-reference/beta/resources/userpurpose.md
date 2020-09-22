@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: b4ed5db9dfa87b2829d78371339c166c3bb74265
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
-ms.translationtype: Auto
+ms.openlocfilehash: 83abf3bd19434867bbd162b6260ed5f4445d8ffd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846370"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057840"
 ---
 # <a name="userpurpose-resource-type"></a>tipo de recurso userpurpose
 
@@ -30,7 +30,7 @@ O objetivo da caixa de correio. Usado para diferenciar uma caixa de correio de u
 |Member|Descrição|
 |:---------------|:--------|
 |desconhecido|Nenhuma informação encontrada sobre a caixa de correio.|
-|usuário|Uma conta de usuário com uma caixa de correio na floresta local.|
+|user|Uma conta de usuário com uma caixa de correio na floresta local.|
 |ligado|Uma caixa de correio vinculada a uma conta de usuário em outra floresta.|
 |compartilhado|Uma caixa de correio compartilhada por duas ou mais contas de usuário.|
 |cômodo|Uma caixa de correio representando uma sala de conferência.|
@@ -68,3 +68,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+
