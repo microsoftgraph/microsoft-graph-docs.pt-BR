@@ -3,14 +3,14 @@ title: Atualizar windows10TeamGeneralConfiguration
 description: Atualizar as propriedades de um objeto windows10TeamGeneralConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dc649d7f289c472a42d5297b0bdb97c94393dbb6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: af8752967812f63de92e49257085476dd3acf3b6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43337949"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065421"
 ---
 # <a name="update-windows10teamgeneralconfiguration"></a>Atualizar windows10TeamGeneralConfiguration
 
@@ -55,10 +55,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -67,7 +67,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |azureOperationalInsightsBlockTelemetry|Boolean|Indica se os Insights Operacionais do Azure devem ou não ser bloqueados.|
-|azureOperationalInsightsWorkspaceId|String|A ID do espaço de trabalho dos Insights Operacionais do Azure.|
+|azureOperationalInsightsWorkspaceId|Cadeia de caracteres|A ID do espaço de trabalho dos Insights Operacionais do Azure.|
 |azureOperationalInsightsWorkspaceKey|Cadeia de caracteres|A chave do espaço de trabalho dos Insights Operacionais do Azure.|
 |connectAppBlockAutoLaunch|Boolean|Especifica se o aplicativo Connect deverá ser iniciado automaticamente sempre que uma projeção for iniciada.|
 |maintenanceWindowBlocked|Boolean|Indica se a configuração de uma janela de manutenção para atualizações do dispositivo deverá ou não ser bloqueada.|
@@ -216,6 +216,9 @@ Content-Length: 2187
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
+
+
+
 
 
 

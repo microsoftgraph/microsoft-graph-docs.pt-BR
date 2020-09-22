@@ -3,14 +3,14 @@ title: Listar windows81SCEPCertificateProfiles
 description: Listar Propriedades e relações dos objetos windows81SCEPCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0a5b8130e907ce4ec839df2cd7d01891e55158b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ec15d78b5e19e17256f3292257e3bd1b84992614
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43337093"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065435"
 ---
 # <a name="list-windows81scepcertificateprofiles"></a>Listar windows81SCEPCertificateProfiles
 
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -136,6 +136,9 @@ Content-Length: 2473
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Listar windows10SecureAssessmentConfigurations
 description: Listar propriedades e relações dos objetos windows10SecureAssessmentConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9816607542afa0bdab9421ecd1083aceebee5532
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cdf950db4d47e11152d6b759ffcd326332e86dec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43338610"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065512"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>Listar windows10SecureAssessmentConfigurations
 
@@ -115,6 +115,9 @@ Content-Length: 1768
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Listar windows10CertificateProfileBases
 description: Listar Propriedades e relações dos objetos windows10CertificateProfileBase.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 31c0b8957193d4dc00be900370e8542cf9bf2d9c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ee8067fdc1fd5c054a61b929f3f753f98ffbd8b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43340939"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065694"
 ---
 # <a name="list-windows10certificateprofilebases"></a>Listar windows10CertificateProfileBases
 
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windows10CertificateProfileBase](../resources/intune-deviceconfig-windows10certificateprofilebase.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windows10CertificateProfileBase](../resources/intune-deviceconfig-windows10certificateprofilebase.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -113,6 +113,9 @@ Content-Length: 1668
   ]
 }
 ```
+
+
+
 
 
 

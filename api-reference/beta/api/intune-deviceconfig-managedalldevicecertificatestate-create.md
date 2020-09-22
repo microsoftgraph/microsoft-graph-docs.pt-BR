@@ -3,14 +3,14 @@ title: Criar managedAllDeviceCertificateState
 description: Criar um novo objeto managedAllDeviceCertificateState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 44c9b00511dc3bd8e4a1c9fb9226e6e62a80dc22
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 5da5f76b99a90410c5728be598843e7436601755
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122970"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065848"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>Criar managedAllDeviceCertificateState
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
 |certificateRevokeStatusLastChangeDateTime|DateTimeOffset|A hora em que o status da revogação foi alterado pela última vez|
 |managedDeviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
@@ -122,6 +122,9 @@ Content-Length: 869
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
+
+
+
 
 
 

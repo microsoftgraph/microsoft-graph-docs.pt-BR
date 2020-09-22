@@ -3,14 +3,14 @@ title: Excluir macOSEndpointProtectionConfiguration
 description: Exclui macOSEndpointProtectionConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51a7a5c7369fefde762f04dfc6499a2224537d5a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2503408b3c63c95669d8acb88833a2518faaea18
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438082"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066065"
 ---
 # <a name="delete-macosendpointprotectionconfiguration"></a>Excluir macOSEndpointProtectionConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

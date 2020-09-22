@@ -3,14 +3,14 @@ title: Criar managedDeviceCertificateState
 description: Criar um novo objeto managedDeviceCertificateState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 71b89bdc59ab9318f853d925c92f6fdc0e988dca
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: c16a8d40704a9561cb85f3a5a12ea4df8cfc4d87
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122893"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065785"
 ---
 # <a name="create-manageddevicecertificatestate"></a>Criar managedDeviceCertificateState
 
@@ -74,7 +74,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedD
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Plataforma de dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |certificateKeyUsage|[usos de](../resources/intune-deviceconfig-keyusages.md)|Uso de chave. Os valores possíveis são: `keyEncipherment` e `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Unidades de período de validade. Os valores possíveis são: `days`, `months`, `years`.|
@@ -179,6 +179,9 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Obter macOSExtensionsConfiguration
 description: Leia as propriedades e as relações do objeto macOSExtensionsConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6350e588fd80faf10a02b706d4862afefa32ba24
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 9b1d320f3393859ddc3f29d135503dfdfcdb2f8a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065925"
 ---
 # <a name="get-macosextensionsconfiguration"></a>Obter macOSExtensionsConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -138,6 +138,9 @@ Content-Length: 2278
   }
 }
 ```
+
+
+
 
 
 

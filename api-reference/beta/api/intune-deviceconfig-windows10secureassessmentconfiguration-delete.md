@@ -3,14 +3,14 @@ title: Excluir windows10SecureAssessmentConfiguration
 description: Exclui windows10SecureAssessmentConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c1fbb103936db37cc9107424e5063ffde13cb598
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d6b209b07764504c8e5a2cf12f80a66827d55ce6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43338742"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065561"
 ---
 # <a name="delete-windows10secureassessmentconfiguration"></a>Excluir windows10SecureAssessmentConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

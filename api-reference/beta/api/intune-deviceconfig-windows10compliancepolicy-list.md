@@ -3,14 +3,14 @@ title: Listar windows10CompliancePolicies
 description: Listar propriedades e relações dos objetos windows10CompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 516d978e7821fcefe9a238d6994c83cb175e0bbd
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 931b7b566968929fa0fe7897eb202fd002ca3731
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792622"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065645"
 ---
 # <a name="list-windows10compliancepolicies"></a>Listar windows10CompliancePolicies
 
@@ -127,6 +127,9 @@ Content-Length: 2328
   ]
 }
 ```
+
+
+
 
 
 

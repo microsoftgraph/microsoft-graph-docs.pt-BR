@@ -3,14 +3,14 @@ title: Obter managedAllDeviceCertificateState
 description: Leia as propriedades e as relações do objeto managedAllDeviceCertificateState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a6d362e06a81014fcc5d20b24ad4779544b5410
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: be63391697827ae623335fee818ec7074cf8dfc3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122977"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065827"
 ---
 # <a name="get-managedalldevicecertificatestate"></a>Obter managedAllDeviceCertificateState
 
@@ -89,6 +89,9 @@ Content-Length: 916
   }
 }
 ```
+
+
+
 
 
 

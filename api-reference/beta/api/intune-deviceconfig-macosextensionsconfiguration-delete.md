@@ -3,14 +3,14 @@ title: Excluir macOSExtensionsConfiguration
 description: Exclui macOSExtensionsConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa49a711c23cc63326ba33763cf735fa13d5f5fe
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 675c9feb4213a6a7eda6fa8702bffb139828f27b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437956"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065918"
 ---
 # <a name="delete-macosextensionsconfiguration"></a>Excluir macOSExtensionsConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

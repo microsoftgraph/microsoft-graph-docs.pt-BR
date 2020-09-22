@@ -3,14 +3,14 @@ title: Listar managedDeviceCertificateStates
 description: Listar Propriedades e relações dos objetos managedDeviceCertificateState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 323a1d35a0cd6f700610c52e5f17ef74dadcdf52
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: e21c7196f727958c1f93efe213c9124d73ace567
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122872"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065708"
 ---
 # <a name="list-manageddevicecertificatestates"></a>Listar managedDeviceCertificateStates
 
@@ -121,6 +121,9 @@ Content-Length: 1703
   ]
 }
 ```
+
+
+
 
 
 

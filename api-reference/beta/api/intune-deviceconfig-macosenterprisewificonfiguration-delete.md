@@ -3,14 +3,14 @@ title: Excluir macOSEnterpriseWiFiConfiguration
 description: Exclui macOSEnterpriseWiFiConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f4179b0f27e7894e60d20f7f8ef34938a2aba142
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8d790bb6a5227fbc89e2155868863a69b13672a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437999"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065988"
 ---
 # <a name="delete-macosenterprisewificonfiguration"></a>Excluir macOSEnterpriseWiFiConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

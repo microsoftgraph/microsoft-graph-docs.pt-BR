@@ -3,14 +3,14 @@ title: Excluir windowsDeliveryOptimizationConfiguration
 description: Exclui windowsDeliveryOptimizationConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c14e6457ed0821053a45c2335919f967368fc972
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f8590aed854ea8af415c39ff36c6f274a46b2af6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43429729"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065407"
 ---
 # <a name="delete-windowsdeliveryoptimizationconfiguration"></a>Excluir windowsDeliveryOptimizationConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 
