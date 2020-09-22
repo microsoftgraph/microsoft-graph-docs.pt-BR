@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: eb49af67f2475bdaf88351edcbbaa36f67e3c3fe
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: fd9254deb969a860b14268057421e4e1547c7a08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123067"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087933"
 ---
 # <a name="delete-programcontrol"></a>Excluir programControl
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | ProgramControl.ReadWrite.All  |
 
-O usuário conectado também deve estar em uma função de diretório que permite excluir um `programControl`.
+O usuário conectado também deve estar em uma função de diretório que permite excluir um `programControl` .
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -95,3 +95,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 33b55ddec6da5351d59c1c5cda32a156e8b0a3e2
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 003576935dd2f963879f2fa70e741c3d3f44a885
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123178"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087982"
 ---
 # <a name="create-program"></a>Criar programa
 
@@ -126,3 +126,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

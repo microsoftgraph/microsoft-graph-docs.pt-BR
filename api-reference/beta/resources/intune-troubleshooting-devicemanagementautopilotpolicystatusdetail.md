@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementAutopilotPolicyStatusDetail
 description: Item de detalhes do status da política contido por um evento piloto automático.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 54912018d69b33979cb14630ba6016b0999b03a2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d45ee08be1f7ea04e27f3fa002b58f4ebf7e6434
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462292"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087660"
 ---
 # <a name="devicemanagementautopilotpolicystatusdetail-resource-type"></a>tipo de recurso deviceManagementAutopilotPolicyStatusDetail
 
@@ -34,11 +34,11 @@ Item de detalhes do status da política contido por um evento piloto automático
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O UUID do objeto.|
+|id|Cadeia de caracteres|O UUID do objeto.|
 |displayName|Cadeia de caracteres|O nome amigável da política.|
 |PolicyType|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|O tipo de política. Os valores possíveis são: `unknown`, `application`, `appModel`, `configurationPolicy`.|
 |complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|O status de conformidade da política. Os possíveis valores são: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
-|trackedOnEnrollmentStatus|Booliano|Indica se este prolicy foi rastreado como parte da sessão de sincronização do registro de inicialização do AutoPilot|
+|trackedOnEnrollmentStatus|Boolean|Indica se este prolicy foi rastreado como parte da sessão de sincronização do registro de inicialização do AutoPilot|
 |lastReportedDateTime|DateTimeOffset|Carimbo de data/hora do status da política relatado|
 
 ## <a name="relationships"></a>Relações
@@ -63,6 +63,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

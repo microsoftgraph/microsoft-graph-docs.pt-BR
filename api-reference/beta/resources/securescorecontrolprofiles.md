@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 3eeb7b0bd1575a336cdeb9ff73e808a057f61743
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: f4bcee22036cf344fec83be8ec08bba602e08c3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807477"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087555"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>tipo de recurso secureScoreControlProfile
 
@@ -25,7 +25,7 @@ Representa a pontuação segura de um locatário por dados de controle. Por padr
 
 | Método   | Tipo de retorno|Descrição|
 |:---------------|:--------|:----------|
-|[Lista secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | coleção [secureScoreControlProfile](securescorecontrolprofiles.md) |Obtenha uma coleção de objetos secureScoreControlProfile.|
+|[Listar secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | coleção [secureScoreControlProfile](securescorecontrolprofiles.md) |Obtenha uma coleção de objetos secureScoreControlProfile.|
 
 
 ## <a name="properties"></a>Propriedades
@@ -33,22 +33,22 @@ Representa a pontuação segura de um locatário por dados de controle. Por padr
 |Nome |Tipo |Descrição |
 |:--|:--|:--|
 |   azureTenantId   |   String  |   Cadeia de caracteres GUID para ID do locatário.  |
-|   controlName |   String  |   Nome do controle. |
+|   controlName |   Cadeia de caracteres  |   Nome do controle. |
 |   title   |   String  |   Título do controle.   |
 | complianceInformation | coleção [complianceInformation](complianceinformation.md) | O conjunto de informações de conformidade associadas ao controle de Pontuação segura |
-|   controlCategory |   String  |   Categoria de ação de controle (conta, dados, dispositivo, aplicativos, infraestrutura).  |
+|   controlCategory |   Cadeia de caracteres  |   Categoria de ação de controle (conta, dados, dispositivo, aplicativos, infraestrutura).  |
 |   actionType  |   Cadeia de caracteres  |   Tipo de ação de controle (configuração, revisão, comportamento). |
 |   service |   Cadeia de caracteres  |   Serviço que possui o controle (Exchange, SharePoint, Azure AD). |
-|   maxScore |  String  |   A pontuação máxima obtida na data especificada.   |
-|   camada |  String  |   Camada de controle (Core, defesa profunda, avançada)    |
-|   userimpact |    String  | Impacto do usuário da implementação do controle (baixo, moderado, alto).    |
-|   implementationCost |    String  |   Custo do recurso do controle implemmentating (baixo, moderado, alto). |
+|   maxScore |  Cadeia de caracteres  |   A pontuação máxima obtida na data especificada.   |
+|   camada |  Cadeia de caracteres  |   Camada de controle (Core, defesa profunda, avançada)    |
+|   userimpact |    Cadeia de caracteres  | Impacto do usuário da implementação do controle (baixo, moderado, alto).    |
+|   implementationCost |    Cadeia de caracteres  |   Custo do recurso do controle implemmentating (baixo, moderado, alto). |
 |   classificação |  Int32   |   Classificação de pilha da Microsoft de controle.   |
 |   las |   String Collection   |   Lista de ameaças o controle atenua (accountBreach, dataexclusão, dataExfiltration, dataderramamento, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, falsificação). |
-|   preterido |    Booliano |   Sinalizador para indicar se um controle está depreciado.   |
-|   correção |   String  |   Descrição do que o controle ajudará a corrigir. |
-|   remediationImpact | String  |   Descrição do impacto sobre os usuários da correção. |
-|   actionUrl | String  |   URL para onde o controle pode ser acionado. |
+|   preterido |    Boolean |   Sinalizador para indicar se um controle está depreciado.   |
+|   correção |   Cadeia de caracteres  |   Descrição do que o controle ajudará a corrigir. |
+|   remediationImpact | Cadeia de caracteres  |   Descrição do impacto sobre os usuários da correção. |
+|   actionUrl | Cadeia de caracteres  |   URL para onde o controle pode ser acionado. |
 |   controlStateUpdates | coleção [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) |    Sinalizador para indicar onde o locatário marcou um controle (ignore, terceiros, revisado) (suporta [atualização](../api/securescorecontrolprofiles-update.md)). |
 |   vendorInformation | [securityVendorInformation](securityvendorinformation.md) |
 
@@ -105,3 +105,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

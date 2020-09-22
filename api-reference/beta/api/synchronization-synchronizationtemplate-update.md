@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 838a2b170687118927a947a7320134c0c3adab7f
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 10d7792306750d82e19e01f0f1089d5693395977
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383641"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087842"
 ---
 # <a name="update-synchronizationtemplate"></a>Atualizar synchronizationtemplate
 
@@ -111,3 +111,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

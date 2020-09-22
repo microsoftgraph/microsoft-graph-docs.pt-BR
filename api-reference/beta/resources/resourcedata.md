@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 5ea2380c53414e3ef4fe0845ee2638ba8ce86482
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 94af6ae2c8ed1cfa9ec9c66502d48b5eabcb482f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598532"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087632"
 ---
 # <a name="resourcedata-resource-type"></a>tipo de recurso resourceData
 
@@ -24,7 +24,7 @@ Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notifica
 
 ## <a name="methods"></a>Métodos
 
-Nenhum.
+Nenhum
 
 ## <a name="properties"></a>Propriedades
 
@@ -75,3 +75,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

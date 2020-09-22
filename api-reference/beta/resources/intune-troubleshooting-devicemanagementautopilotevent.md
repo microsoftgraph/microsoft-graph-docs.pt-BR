@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementAutopilotEvent
 description: Representa um evento de fluxo do piloto automático.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fd5d9b262587471ee8168a03cab753ad6bcf37a3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e9a386785163e9870c0075eb2c6676abb23a8b71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462322"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087688"
 ---
 # <a name="devicemanagementautopilotevent-resource-type"></a>tipo de recurso deviceManagementAutopilotEvent
 
@@ -34,20 +34,20 @@ Representa um evento de fluxo do piloto automático.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O UUID do objeto.|
-|deviceId|String|ID de dispositivo associada ao objeto|
+|id|Cadeia de caracteres|O UUID do objeto.|
+|deviceId|Cadeia de caracteres|ID de dispositivo associada ao objeto|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
 |deviceRegisteredDateTime|DateTimeOffset|Data de registro do dispositivo.|
 |enrollmentStartDateTime|DateTimeOffset|Data de início do registro do dispositivo.|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|Tipo de registro. Os valores possíveis são: `unknown`, `azureADJoinedWithAutopilotProfile`, `offlineDomainJoined`, `azureADJoinedUsingDeviceAuthWithAutopilotProfile`, `azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`, `azureADJoinedWithOfflineAutopilotProfile`, `azureADJoinedWithWhiteGlove`, `offlineDomainJoinedWithWhiteGlove`, `offlineDomainJoinedWithOfflineAutopilotProfile`.|
-|deviceSerialNumber|String|Número de série do dispositivo.|
+|deviceSerialNumber|Cadeia de caracteres|Número de série do dispositivo.|
 |managedDeviceName|String|Nome do dispositivo gerenciado.|
-|userPrincipalName|String|Nome principal do usuário usado para registrar o dispositivo.|
-|windowsAutopilotDeploymentProfileDisplayName|String|Nome do perfil do AutoPilot.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário usado para registrar o dispositivo.|
+|windowsAutopilotDeploymentProfileDisplayName|Cadeia de caracteres|Nome do perfil do AutoPilot.|
 |enrollmentid|[enrollmentid](../resources/intune-shared-enrollmentstate.md)|Estado de registro como cadastrado, falhou. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|String|Nome do perfil da página de status do registro|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|Cadeia de caracteres|Nome do perfil da página de status do registro|
 |DeploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Estado de implantação como êxito, falha, InProgress, SuccessWithTimeout. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
-|osVersion|Cadeia de caracteres|Versão do sistema operacional do dispositivo.|
+|osVersion|String|Versão do sistema operacional do dispositivo.|
 |deploymentDuration|Duração|Duração da implantação do piloto automático, incluindo registro.|
 |deploymentTotalDuration|Duração|Duração total da implantação na tela de registro na área de trabalho.|
 |devicePreparationDuration|Duração|Tempo gasto no registro do dispositivo.|
@@ -57,7 +57,7 @@ Representa um evento de fluxo do piloto automático.
 |deploymentEndDateTime|DateTimeOffset|Hora de término da implantação.|
 |targetedAppCount|Int32|Contagem de aplicativos direcionados.|
 |targetedPolicyCount|Int32|Contagem de políticas direcionadas.|
-|enrollmentFailureDetails|String|Detalhes da falha de inscrição.|
+|enrollmentFailureDetails|Cadeia de caracteres|Detalhes da falha de inscrição.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -101,6 +101,9 @@ Veja a seguir uma representação JSON do recurso.
   "enrollmentFailureDetails": "String"
 }
 ```
+
+
+
 
 
 

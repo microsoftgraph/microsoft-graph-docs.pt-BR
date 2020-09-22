@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0f5f31a0f8970c19ffe4e9837b75d9b643453b67
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 91733596bcf3f3b07234e3880ba0a9d84a5ace9f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454749"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087906"
 ---
 # <a name="range-insert"></a>Range: insert
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -122,3 +122,5 @@ Content-length: 169
   ]
 }
 -->
+
+

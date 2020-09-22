@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 42c2447956c1d7f3666ded786872ee91753a47d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 931b2872c7f651af229f5969c032bfca1ccf7b02
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452866"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087814"
 ---
 # <a name="get-table"></a>Obter tabela
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -109,3 +109,5 @@ Content-length: 109
   ]
 }
 -->
+
+

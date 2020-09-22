@@ -3,14 +3,14 @@ title: tipo de enumeração deviceManagementAutopilotPolicyType
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 565eb8a319e22b004acc9a4da2163598a82c6874
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9894eddfc17902c5c7e8b291e8ea348132800b2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462285"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087653"
 ---
 # <a name="devicemanagementautopilotpolicytype-enum-type"></a>tipo de enumeração deviceManagementAutopilotPolicyType
 
@@ -26,9 +26,12 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Ainda não documentado|
-|application|3D|Ainda não documentado|
+|aplicação|3D|Ainda não documentado|
 |appModel|7 |Ainda não documentado|
 |configurationPolicy|12 |Ainda não documentado|
+
+
+
 
 
 

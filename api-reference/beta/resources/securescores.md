@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 2deb3a4ab39b169778ad43f60170e51eaa32eda9
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3db31203f9c5827459ab2149efbd3adb28030d0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810409"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087541"
 ---
 # <a name="securescore-resource-type"></a>tipo de recurso secureScore
 
@@ -25,7 +25,7 @@ Representa a pontuação segura de um locatário por dia de dados de pontuação
 
 | Método   | Tipo de retorno|Descrição|
 |:---------------|:--------|:----------|
-|[Lista secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |Leia as propriedades e os metadados de um objeto secureScores.|
+|[Listar secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |Leia as propriedades e os metadados de um objeto secureScores.|
 
 
 ## <a name="properties"></a>Propriedades
@@ -35,12 +35,12 @@ Tipo de entidade contendo propriedades da Pontuação de segurança do locatári
 |:--|:--|:--|
 |   azureTenantId   |   String  |   Cadeia de caracteres GUID para ID do locatário.  |
 |   createdDateTime |   DateTimeOffset  |   A data em que a entidade é criada.  |
-|   id  |   String  |   Combinação de azureTenantId_createdDateTime.   |
+|   id  |   Cadeia de caracteres  |   Combinação de azureTenantId_createdDateTime.   |
 |   licensedUserCount   |   Int32   |   Contagem de usuários licenciados de um determinado locatário.    |
 |   activeUserCount |   Int32   |   Contagem de usuários ativos de um determinado locatário.  |
 |   currentScore    |   Duplo  |   Pontuação Obtida de locatário atual em data especificada.    |
 |   maxScore |  Duplo  |   Pontuação máxima possível de locatário na data especificada.    |
-|   enabledservices |   Coleção de cadeia de caracteres   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange Online, Skype, SharePoint).   |
+|   enabledservices |   Coleção String   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange Online, Skype, SharePoint).   |
 |   averageComparativeScores |  coleção [averageComparativeScore](averagecomparativescore.md)    |Pontuação média por escopos diferentes (por exemplo, média por setor, média por meio de assentos) e categoria de controle (identidade, dados, dispositivo, aplicativos, infraestrutura) dentro do escopo. |
 |   controlScores | coleção [controlScore](controlscore.md)  |   Contém pontuações de locatários para um conjunto de controles.   |
 
@@ -90,3 +90,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

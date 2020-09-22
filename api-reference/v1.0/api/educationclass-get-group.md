@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b246322db24ac1a6a82643bfc4c87562fb2b0328
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: d8854a4a9f72aacd8dd04297da45f2343efc0bc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896851"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087513"
 ---
 # <a name="get-group"></a>Obter grupo
 
@@ -25,9 +25,9 @@ Uma combinação de permissões é obrigatória para chamar essa API. Para saber
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All|
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Application | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All| 
+|Delegada (conta corporativa ou de estudante) |  Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All|
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All| 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -121,3 +121,4 @@ Content-length: xxx
   "suppressions": [
   ]
 }-->
+

@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2fdbfaf8df9149620a4782ef3df8008e36ad734b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 234e9833a2f18b2060129958b59109fa025e9822
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452834"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087800"
 ---
 # <a name="table-delete"></a>Table: delete
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -82,3 +82,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+

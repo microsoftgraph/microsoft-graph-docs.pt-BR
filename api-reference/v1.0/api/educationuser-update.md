@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 61c6293840c544e397f6761149c9131c94d9f930
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bba954e428bbc81a6d83dd17471ca24b66133e95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517401"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087506"
 ---
 # <a name="update-educationuser-properties"></a>Atualizar propriedades de educationUser
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) |  Sem suporte.  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,13 +44,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |displayName| Cadeia de caracteres| Nome de exibição do usuário|
-|givenName| String | Nome |
+|givenName| Cadeia de caracteres | Nome |
 |middleName| String | O nome do meio do usuário|
-|surname| String | Sobrenome do usuário|
+|surname| Cadeia de caracteres | Sobrenome do usuário|
 |email| String| endereço de email|
-|mobilePhone| Cadeia de caracteres | O número de celular do usuário |
-|externalSource|string| Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
-|externalSource|string| De onde esse usuário foi criado.  Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
+|mobilePhone| String | O número de celular do usuário |
+|externalSource|cadeia de caracteres| Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
+|externalSource|cadeia de caracteres| De onde esse usuário foi criado.  Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| Endereço de email do usuário.|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Endereço em que o usuário reside.|
 |primaryRole|cadeia de caracteres| Função padrão de um usuário.  A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `enum_sentinel`.|
@@ -159,3 +159,4 @@ Content-length: 508
   "suppressions": [
   ]
 }-->
+
