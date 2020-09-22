@@ -3,31 +3,34 @@ title: tipo de enumeração deviceManagementDerivedCredentialNotificationType
 description: Valores com suporte para o tipo de notificação a ser usado.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b7719f208667f4ee9fdc9d8ebd328196cbec064
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8609b73a217fb33f982690eb1eaa9d391a619e3c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389139"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084426"
 ---
-# <a name="devicemanagementderivedcredentialnotificationtype-enum-type"></a><span data-ttu-id="0259b-103">tipo de enumeração deviceManagementDerivedCredentialNotificationType</span><span class="sxs-lookup"><span data-stu-id="0259b-103">deviceManagementDerivedCredentialNotificationType enum type</span></span>
+# <a name="devicemanagementderivedcredentialnotificationtype-enum-type"></a><span data-ttu-id="c63b5-103">tipo de enumeração deviceManagementDerivedCredentialNotificationType</span><span class="sxs-lookup"><span data-stu-id="c63b5-103">deviceManagementDerivedCredentialNotificationType enum type</span></span>
 
-<span data-ttu-id="0259b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0259b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c63b5-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c63b5-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="0259b-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="0259b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c63b5-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="c63b5-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0259b-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="0259b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c63b5-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="c63b5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0259b-107">Valores com suporte para o tipo de notificação a ser usado.</span><span class="sxs-lookup"><span data-stu-id="0259b-107">Supported values for the notification type to use.</span></span>
+<span data-ttu-id="c63b5-107">Valores com suporte para o tipo de notificação a ser usado.</span><span class="sxs-lookup"><span data-stu-id="c63b5-107">Supported values for the notification type to use.</span></span>
 
-## <a name="members"></a><span data-ttu-id="0259b-108">Membros</span><span class="sxs-lookup"><span data-stu-id="0259b-108">Members</span></span>
-|<span data-ttu-id="0259b-109">Membro</span><span class="sxs-lookup"><span data-stu-id="0259b-109">Member</span></span>|<span data-ttu-id="0259b-110">Valor</span><span class="sxs-lookup"><span data-stu-id="0259b-110">Value</span></span>|<span data-ttu-id="0259b-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="0259b-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="c63b5-108">Membros</span><span class="sxs-lookup"><span data-stu-id="c63b5-108">Members</span></span>
+|<span data-ttu-id="c63b5-109">Membro</span><span class="sxs-lookup"><span data-stu-id="c63b5-109">Member</span></span>|<span data-ttu-id="c63b5-110">Valor</span><span class="sxs-lookup"><span data-stu-id="c63b5-110">Value</span></span>|<span data-ttu-id="c63b5-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="c63b5-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0259b-112">nenhuma</span><span class="sxs-lookup"><span data-stu-id="0259b-112">none</span></span>|<span data-ttu-id="0259b-113">,0</span><span class="sxs-lookup"><span data-stu-id="0259b-113">0</span></span>|<span data-ttu-id="0259b-114">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="0259b-114">None</span></span>|
-|<span data-ttu-id="0259b-115">companyPortal</span><span class="sxs-lookup"><span data-stu-id="0259b-115">companyPortal</span></span>|<span data-ttu-id="0259b-116">1</span><span class="sxs-lookup"><span data-stu-id="0259b-116">1</span></span>|<span data-ttu-id="0259b-117">Portal da empresa</span><span class="sxs-lookup"><span data-stu-id="0259b-117">Company Portal</span></span>|
-|<span data-ttu-id="0259b-118">email</span><span class="sxs-lookup"><span data-stu-id="0259b-118">email</span></span>|<span data-ttu-id="0259b-119">duas</span><span class="sxs-lookup"><span data-stu-id="0259b-119">2</span></span>|<span data-ttu-id="0259b-120">Email</span><span class="sxs-lookup"><span data-stu-id="0259b-120">Email</span></span>|
+|<span data-ttu-id="c63b5-112">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="c63b5-112">none</span></span>|<span data-ttu-id="c63b5-113">,0</span><span class="sxs-lookup"><span data-stu-id="c63b5-113">0</span></span>|<span data-ttu-id="c63b5-114">Nenhum</span><span class="sxs-lookup"><span data-stu-id="c63b5-114">None</span></span>|
+|<span data-ttu-id="c63b5-115">companyPortal</span><span class="sxs-lookup"><span data-stu-id="c63b5-115">companyPortal</span></span>|<span data-ttu-id="c63b5-116">1 </span><span class="sxs-lookup"><span data-stu-id="c63b5-116">1</span></span>|<span data-ttu-id="c63b5-117">Portal da empresa</span><span class="sxs-lookup"><span data-stu-id="c63b5-117">Company Portal</span></span>|
+|<span data-ttu-id="c63b5-118">email</span><span class="sxs-lookup"><span data-stu-id="c63b5-118">email</span></span>|<span data-ttu-id="c63b5-119">2 </span><span class="sxs-lookup"><span data-stu-id="c63b5-119">2</span></span>|<span data-ttu-id="c63b5-120">Email</span><span class="sxs-lookup"><span data-stu-id="c63b5-120">Email</span></span>|
+
+
+
 
 
 
