@@ -3,35 +3,35 @@ title: Atualizar groupPolicyObjectFile
 description: Atualiza as propriedades de um objeto groupPolicyObjectFile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c47340c73e815ec5afcb2d3b012f5904ebfca73
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e368f9c302aa51e50fcaf21acf95b1cf8a95de24
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454876"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032247"
 ---
-# <a name="update-grouppolicyobjectfile"></a><span data-ttu-id="01984-103">Atualizar groupPolicyObjectFile</span><span class="sxs-lookup"><span data-stu-id="01984-103">Update groupPolicyObjectFile</span></span>
+# <a name="update-grouppolicyobjectfile"></a><span data-ttu-id="ca49e-103">Atualizar groupPolicyObjectFile</span><span class="sxs-lookup"><span data-stu-id="ca49e-103">Update groupPolicyObjectFile</span></span>
 
-<span data-ttu-id="01984-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="01984-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ca49e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ca49e-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="01984-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="01984-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ca49e-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="ca49e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="01984-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="01984-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ca49e-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ca49e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="01984-107">Atualiza as propriedades de um objeto [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) .</span><span class="sxs-lookup"><span data-stu-id="01984-107">Update the properties of a [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) object.</span></span>
+<span data-ttu-id="ca49e-107">Atualiza as propriedades de um objeto [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) .</span><span class="sxs-lookup"><span data-stu-id="ca49e-107">Update the properties of a [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="01984-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="01984-108">Prerequisites</span></span>
-<span data-ttu-id="01984-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="01984-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="ca49e-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="ca49e-108">Prerequisites</span></span>
+<span data-ttu-id="ca49e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ca49e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="01984-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="01984-111">Permission type</span></span>|<span data-ttu-id="01984-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="01984-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="ca49e-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ca49e-111">Permission type</span></span>|<span data-ttu-id="ca49e-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="ca49e-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="01984-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="01984-113">Delegated (work or school account)</span></span>|<span data-ttu-id="01984-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="01984-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="01984-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="01984-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="01984-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="01984-116">Not supported.</span></span>|
-|<span data-ttu-id="01984-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="01984-117">Application</span></span>|<span data-ttu-id="01984-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="01984-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="ca49e-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ca49e-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ca49e-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ca49e-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="ca49e-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ca49e-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ca49e-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ca49e-116">Not supported.</span></span>|
+|<span data-ttu-id="ca49e-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ca49e-117">Application</span></span>|<span data-ttu-id="ca49e-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ca49e-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="01984-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="01984-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ca49e-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ca49e-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,35 +40,35 @@ ms.locfileid: "43454876"
 PATCH /deviceManagement/groupPolicyObjectFiles/{groupPolicyObjectFileId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="01984-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="01984-120">Request headers</span></span>
-|<span data-ttu-id="01984-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="01984-121">Header</span></span>|<span data-ttu-id="01984-122">Valor</span><span class="sxs-lookup"><span data-stu-id="01984-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ca49e-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ca49e-120">Request headers</span></span>
+|<span data-ttu-id="ca49e-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="ca49e-121">Header</span></span>|<span data-ttu-id="ca49e-122">Valor</span><span class="sxs-lookup"><span data-stu-id="ca49e-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="01984-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="01984-123">Authorization</span></span>|<span data-ttu-id="01984-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="01984-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="01984-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="01984-125">Accept</span></span>|<span data-ttu-id="01984-126">application/json</span><span class="sxs-lookup"><span data-stu-id="01984-126">application/json</span></span>|
+|<span data-ttu-id="ca49e-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="ca49e-123">Authorization</span></span>|<span data-ttu-id="ca49e-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ca49e-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ca49e-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="ca49e-125">Accept</span></span>|<span data-ttu-id="ca49e-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ca49e-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="01984-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="01984-127">Request body</span></span>
-<span data-ttu-id="01984-128">No corpo da solicitação, forneça uma representação JSON do objeto [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) .</span><span class="sxs-lookup"><span data-stu-id="01984-128">In the request body, supply a JSON representation for the [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ca49e-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ca49e-127">Request body</span></span>
+<span data-ttu-id="ca49e-128">No corpo da solicitação, forneça uma representação JSON do objeto [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) .</span><span class="sxs-lookup"><span data-stu-id="ca49e-128">In the request body, supply a JSON representation for the [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) object.</span></span>
 
-<span data-ttu-id="01984-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md).</span><span class="sxs-lookup"><span data-stu-id="01984-129">The following table shows the properties that are required when you create the [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md).</span></span>
+<span data-ttu-id="ca49e-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md).</span><span class="sxs-lookup"><span data-stu-id="ca49e-129">The following table shows the properties that are required when you create the [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md).</span></span>
 
-|<span data-ttu-id="01984-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="01984-130">Property</span></span>|<span data-ttu-id="01984-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="01984-131">Type</span></span>|<span data-ttu-id="01984-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="01984-132">Description</span></span>|
+|<span data-ttu-id="ca49e-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ca49e-130">Property</span></span>|<span data-ttu-id="ca49e-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="ca49e-131">Type</span></span>|<span data-ttu-id="ca49e-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="ca49e-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="01984-133">id</span><span class="sxs-lookup"><span data-stu-id="01984-133">id</span></span>|<span data-ttu-id="01984-134">String</span><span class="sxs-lookup"><span data-stu-id="01984-134">String</span></span>|<span data-ttu-id="01984-135">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="01984-135">Not yet documented</span></span>|
-|<span data-ttu-id="01984-136">groupPolicyObjectId</span><span class="sxs-lookup"><span data-stu-id="01984-136">groupPolicyObjectId</span></span>|<span data-ttu-id="01984-137">Guid</span><span class="sxs-lookup"><span data-stu-id="01984-137">Guid</span></span>|<span data-ttu-id="01984-138">O GUID do objeto da política de grupo do conteúdo XML do GPO</span><span class="sxs-lookup"><span data-stu-id="01984-138">The Group Policy Object GUID from GPO Xml content</span></span>|
-|<span data-ttu-id="01984-139">ouDistinguishedName</span><span class="sxs-lookup"><span data-stu-id="01984-139">ouDistinguishedName</span></span>|<span data-ttu-id="01984-140">String</span><span class="sxs-lookup"><span data-stu-id="01984-140">String</span></span>|<span data-ttu-id="01984-141">O nome diferenciado da OU.</span><span class="sxs-lookup"><span data-stu-id="01984-141">The distinguished name of the OU.</span></span>|
-|<span data-ttu-id="01984-142">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="01984-142">createdDateTime</span></span>|<span data-ttu-id="01984-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="01984-143">DateTimeOffset</span></span>|<span data-ttu-id="01984-144">A data e a hora em que o GroupPolicy foi carregado pela primeira vez.</span><span class="sxs-lookup"><span data-stu-id="01984-144">The date and time at which the GroupPolicy was first uploaded.</span></span>|
-|<span data-ttu-id="01984-145">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="01984-145">lastModifiedDateTime</span></span>|<span data-ttu-id="01984-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="01984-146">DateTimeOffset</span></span>|<span data-ttu-id="01984-147">A data e a hora em que o GroupPolicyObjectFile foi modificado pela última vez.</span><span class="sxs-lookup"><span data-stu-id="01984-147">The date and time at which the GroupPolicyObjectFile was last modified.</span></span>|
-|<span data-ttu-id="01984-148">content</span><span class="sxs-lookup"><span data-stu-id="01984-148">content</span></span>|<span data-ttu-id="01984-149">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="01984-149">String</span></span>|<span data-ttu-id="01984-150">O conteúdo do arquivo do objeto de diretiva de grupo.</span><span class="sxs-lookup"><span data-stu-id="01984-150">The Group Policy Object file content.</span></span>|
+|<span data-ttu-id="ca49e-133">id</span><span class="sxs-lookup"><span data-stu-id="ca49e-133">id</span></span>|<span data-ttu-id="ca49e-134">String</span><span class="sxs-lookup"><span data-stu-id="ca49e-134">String</span></span>|<span data-ttu-id="ca49e-135">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="ca49e-135">Not yet documented</span></span>|
+|<span data-ttu-id="ca49e-136">groupPolicyObjectId</span><span class="sxs-lookup"><span data-stu-id="ca49e-136">groupPolicyObjectId</span></span>|<span data-ttu-id="ca49e-137">Guid</span><span class="sxs-lookup"><span data-stu-id="ca49e-137">Guid</span></span>|<span data-ttu-id="ca49e-138">O GUID do objeto da política de grupo do conteúdo XML do GPO</span><span class="sxs-lookup"><span data-stu-id="ca49e-138">The Group Policy Object GUID from GPO Xml content</span></span>|
+|<span data-ttu-id="ca49e-139">ouDistinguishedName</span><span class="sxs-lookup"><span data-stu-id="ca49e-139">ouDistinguishedName</span></span>|<span data-ttu-id="ca49e-140">String</span><span class="sxs-lookup"><span data-stu-id="ca49e-140">String</span></span>|<span data-ttu-id="ca49e-141">O nome diferenciado da OU.</span><span class="sxs-lookup"><span data-stu-id="ca49e-141">The distinguished name of the OU.</span></span>|
+|<span data-ttu-id="ca49e-142">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="ca49e-142">createdDateTime</span></span>|<span data-ttu-id="ca49e-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ca49e-143">DateTimeOffset</span></span>|<span data-ttu-id="ca49e-144">A data e a hora em que o GroupPolicy foi carregado pela primeira vez.</span><span class="sxs-lookup"><span data-stu-id="ca49e-144">The date and time at which the GroupPolicy was first uploaded.</span></span>|
+|<span data-ttu-id="ca49e-145">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="ca49e-145">lastModifiedDateTime</span></span>|<span data-ttu-id="ca49e-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ca49e-146">DateTimeOffset</span></span>|<span data-ttu-id="ca49e-147">A data e a hora em que o GroupPolicyObjectFile foi modificado pela última vez.</span><span class="sxs-lookup"><span data-stu-id="ca49e-147">The date and time at which the GroupPolicyObjectFile was last modified.</span></span>|
+|<span data-ttu-id="ca49e-148">content</span><span class="sxs-lookup"><span data-stu-id="ca49e-148">content</span></span>|<span data-ttu-id="ca49e-149">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ca49e-149">String</span></span>|<span data-ttu-id="ca49e-150">O conteúdo do arquivo do objeto de diretiva de grupo.</span><span class="sxs-lookup"><span data-stu-id="ca49e-150">The Group Policy Object file content.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="01984-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="01984-151">Response</span></span>
-<span data-ttu-id="01984-152">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="01984-152">If successful, this method returns a `200 OK` response code and an updated [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ca49e-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="ca49e-151">Response</span></span>
+<span data-ttu-id="ca49e-152">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ca49e-152">If successful, this method returns a `200 OK` response code and an updated [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="01984-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="01984-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ca49e-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ca49e-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="01984-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="01984-154">Request</span></span>
-<span data-ttu-id="01984-155">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="01984-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="ca49e-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ca49e-154">Request</span></span>
+<span data-ttu-id="ca49e-155">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ca49e-155">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyObjectFiles/{groupPolicyObjectFileId}
 Content-type: application/json
@@ -82,8 +82,8 @@ Content-length: 217
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="01984-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="01984-156">Response</span></span>
-<span data-ttu-id="01984-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="01984-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ca49e-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="ca49e-156">Response</span></span>
+<span data-ttu-id="ca49e-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ca49e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -99,6 +99,9 @@ Content-Length: 389
   "content": "Content value"
 }
 ```
+
+
+
 
 
 
