@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: 923d8a54ed2d43764ed05e47fe2e26516f1536ac
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 795dfd7418c665248ac7656288ad84f86a2af22c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811060"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997505"
 ---
 # <a name="skypeforbusinessorganizeractivityminutecounts-resource-type"></a>tipo de recurso skypeForBusinessOrganizerActivityMinuteCounts
 
@@ -46,3 +46,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

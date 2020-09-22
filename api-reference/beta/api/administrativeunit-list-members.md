@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 672cf1a335c2b7d8b67f1581591cc608a0f9e83a
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: bcb61938d42ac38a04b90c542d3ea1ac207e034d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123332"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997243"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [User](../resources/user.md) e/ou [Group](../resources/group.md) no corpo da resposta.  Em vez disso, se `$ref` você colocar no final da solicitação, a resposta conterá uma coleção de `@odata.id` links/URLs para os membros.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [User](../resources/user.md) e/ou [Group](../resources/group.md) no corpo da resposta.  Em vez disso, se você colocar `$ref` no final da solicitação, a resposta conterá uma coleção de `@odata.id` links/URLs para os membros.
 
 ## <a name="examples"></a>Exemplos
 ##### <a name="list-member-objects"></a>Listar objetos member
@@ -87,7 +87,7 @@ Content-length: 100
 ```
 
 ##### <a name="list-member-references"></a>Listar referências de membros
-A solicitação a seguir listará as referências de membro da unidade administrativa, retornando uma `@odata.id` coleção de referências para os membros.
+A solicitação a seguir listará as referências de membro da unidade administrativa, retornando uma coleção de `@odata.id` referências para os membros.
 ```
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 ```
@@ -109,3 +109,5 @@ Content-length: 100
   ]
 }
 ```
+
+

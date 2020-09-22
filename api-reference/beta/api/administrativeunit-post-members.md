@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 91767a0d83fe35363879045cc703fb564806d228
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: ef1ff3e00de98a248fbe6a3b059b2de739d7df7b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123262"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997211"
 ---
 # <a name="add-a-member"></a>Adicionar um membro
 
@@ -43,7 +43,7 @@ POST /administrativeUnits/{id}/members/$ref
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça o `id` de um [usuário](../resources/user.md), [grupo](../resources/group.md) ou [directoryobject](../resources/directoryobject.md) a ser adicionado.
+No corpo da solicitação, forneça o `id` de um [usuário](../resources/user.md),  [grupo](../resources/group.md) ou [directoryobject](../resources/directoryobject.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
 
@@ -71,3 +71,5 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+
