@@ -3,36 +3,36 @@ title: Tipo de recurso keyValuePair
 description: Par chave-valor para armazenar configurações personalizadas
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ddadab1682fa683dda815dab8c79182e8076e54c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e0ead3529d9b5ac3e782631301c8db89a089b9ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473548"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095103"
 ---
-# <a name="keyvaluepair-resource-type"></a><span data-ttu-id="72755-103">Tipo de recurso keyValuePair</span><span class="sxs-lookup"><span data-stu-id="72755-103">keyValuePair resource type</span></span>
+# <a name="keyvaluepair-resource-type"></a><span data-ttu-id="3fb9a-103">Tipo de recurso keyValuePair</span><span class="sxs-lookup"><span data-stu-id="3fb9a-103">keyValuePair resource type</span></span>
 
-<span data-ttu-id="72755-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="72755-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3fb9a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3fb9a-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="72755-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="72755-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="3fb9a-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="3fb9a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="72755-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="72755-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3fb9a-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="3fb9a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="72755-107">Par chave-valor para armazenar configurações personalizadas</span><span class="sxs-lookup"><span data-stu-id="72755-107">Key value pair for storing custom settings</span></span>
+<span data-ttu-id="3fb9a-107">Par chave-valor para armazenar configurações personalizadas</span><span class="sxs-lookup"><span data-stu-id="3fb9a-107">Key value pair for storing custom settings</span></span>
 
-## <a name="properties"></a><span data-ttu-id="72755-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="72755-108">Properties</span></span>
-|<span data-ttu-id="72755-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="72755-109">Property</span></span>|<span data-ttu-id="72755-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="72755-110">Type</span></span>|<span data-ttu-id="72755-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="72755-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3fb9a-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3fb9a-108">Properties</span></span>
+|<span data-ttu-id="3fb9a-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3fb9a-109">Property</span></span>|<span data-ttu-id="3fb9a-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="3fb9a-110">Type</span></span>|<span data-ttu-id="3fb9a-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="3fb9a-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="72755-112">nome</span><span class="sxs-lookup"><span data-stu-id="72755-112">name</span></span>|<span data-ttu-id="72755-113">String</span><span class="sxs-lookup"><span data-stu-id="72755-113">String</span></span>|<span data-ttu-id="72755-114">Nome deste par chave-valor</span><span class="sxs-lookup"><span data-stu-id="72755-114">Name for this key-value pair</span></span>|
-|<span data-ttu-id="72755-115">value</span><span class="sxs-lookup"><span data-stu-id="72755-115">value</span></span>|<span data-ttu-id="72755-116">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="72755-116">String</span></span>|<span data-ttu-id="72755-117">Valor deste par chave-valor</span><span class="sxs-lookup"><span data-stu-id="72755-117">Value for this key-value pair</span></span>|
+|<span data-ttu-id="3fb9a-112">name</span><span class="sxs-lookup"><span data-stu-id="3fb9a-112">name</span></span>|<span data-ttu-id="3fb9a-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3fb9a-113">String</span></span>|<span data-ttu-id="3fb9a-114">Nome deste par chave-valor</span><span class="sxs-lookup"><span data-stu-id="3fb9a-114">Name for this key-value pair</span></span>|
+|<span data-ttu-id="3fb9a-115">value</span><span class="sxs-lookup"><span data-stu-id="3fb9a-115">value</span></span>|<span data-ttu-id="3fb9a-116">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3fb9a-116">String</span></span>|<span data-ttu-id="3fb9a-117">Valor deste par chave-valor</span><span class="sxs-lookup"><span data-stu-id="3fb9a-117">Value for this key-value pair</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="72755-118">Relações</span><span class="sxs-lookup"><span data-stu-id="72755-118">Relationships</span></span>
-<span data-ttu-id="72755-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="72755-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="3fb9a-118">Relações</span><span class="sxs-lookup"><span data-stu-id="3fb9a-118">Relationships</span></span>
+<span data-ttu-id="3fb9a-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="3fb9a-119">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="72755-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="72755-120">JSON Representation</span></span>
-<span data-ttu-id="72755-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="72755-121">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3fb9a-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3fb9a-120">JSON Representation</span></span>
+<span data-ttu-id="3fb9a-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="3fb9a-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.keyValuePair"
@@ -45,6 +45,9 @@ ms.locfileid: "43473548"
   "value": "String"
 }
 ```
+
+
+
 
 
 
