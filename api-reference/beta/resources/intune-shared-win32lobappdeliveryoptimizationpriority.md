@@ -3,14 +3,14 @@ title: tipo de enumeração win32LobAppDeliveryOptimizationPriority
 description: Contém o valor da prioridade de otimização de entrega.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1daf05249bfbd223c1038b4f145ec3caa0ec695b
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 65b21c27169701f43af482579f4b3afecec0455c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178518"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067234"
 ---
 # <a name="win32lobappdeliveryoptimizationpriority-enum-type"></a>tipo de enumeração win32LobAppDeliveryOptimizationPriority
 
@@ -26,7 +26,10 @@ Contém o valor da prioridade de otimização de entrega.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado ou a prioridade de otimização de entrega normal de fundo.|
-|Foreground|1|Prioridade de otimização de entrega de primeiro plano.|
+|Foreground|1 |Prioridade de otimização de entrega de primeiro plano.|
+
+
+
 
 
 

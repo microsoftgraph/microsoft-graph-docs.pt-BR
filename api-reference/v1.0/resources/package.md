@@ -7,12 +7,12 @@ localization_priority: Normal
 description: " ou uma coleção de itens que deve ser tratada como uma coleção em vez de itens individuais."
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 10e99df4a2411fd63e8b8a2ad78d2aa5f0684571
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d263d8c37b624a8a8b60c1a0fbaf6aa7ed7e0755
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534097"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066247"
 ---
 # <a name="package-resource-type"></a>Tipo de recurso Package
 
@@ -51,3 +51,4 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Package"
 } -->
+

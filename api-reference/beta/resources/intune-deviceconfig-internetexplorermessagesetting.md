@@ -3,14 +3,14 @@ title: tipo de enumeração internetExplorerMessageSetting
 description: Qual mensagem será exibida por borda antes de mudar para o Internet Explorer.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a404f972985d0202037cbd1deae01cc03de497b9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0b072b1cdb74f347b826b1958c7dbb4f48efb950
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444257"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067304"
 ---
 # <a name="internetexplorermessagesetting-enum-type"></a>tipo de enumeração internetExplorerMessageSetting
 
@@ -26,9 +26,12 @@ Qual mensagem será exibida por borda antes de mudar para o Internet Explorer.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|desabilitadas|1|Deficiência.|
-|habilitadas|duas|Permiti.|
-|keepGoing|3D|KeepGoing.|
+|desabilitadas|1 |Deficiência.|
+|habilitadas|2 |Permiti.|
+|keepGoing|3 |KeepGoing.|
+
+
+
 
 
 

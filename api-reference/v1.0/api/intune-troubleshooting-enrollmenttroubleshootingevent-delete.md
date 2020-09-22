@@ -3,14 +3,14 @@ title: Excluir enrollmentTroubleshootingEvent
 description: Exclui enrollmentTroubleshootingEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85216f304c3e3fbdd549db6d5a6cf8b1f96e3026
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 61d6476ba1456d5fc92c30147af200402b162331
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43368667"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066578"
 ---
 # <a name="delete-enrollmenttroubleshootingevent"></a>Excluir enrollmentTroubleshootingEvent
 
@@ -63,6 +63,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

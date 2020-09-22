@@ -3,14 +3,14 @@ title: tipo de enumeração changeUefiSettingsPermission
 description: Define o nível de permissão concedido aos usuários para que eles alterem as configurações de UEFI
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8752f3deca34381545e81248abf2f413da4a1dd4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7e3b9f96b321918a07e56b2ea08da7a968baae3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453482"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067367"
 ---
 # <a name="changeuefisettingspermission-enum-type"></a>tipo de enumeração changeUefiSettingsPermission
 
@@ -26,7 +26,10 @@ Define o nível de permissão concedido aos usuários para que eles alterem as c
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfiguredOnly|,0|Valor padrão do dispositivo, sem intenção.|
-|nenhuma|1|Impedir alteração da permissão de configuração de UEFI|
+|Nenhuma|1 |Impedir alteração da permissão de configuração de UEFI|
+
+
+
 
 
 

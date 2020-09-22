@@ -3,14 +3,14 @@ title: Tipo de recurso intuneBrand
 description: intuneBrand contém dados que são usados na personalização da aparência dos aplicativos do Portal da Empresa, bem como do portal da Web de usuários finais.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6048e295ba0ca06fe02872aca52fdc32ae686a54
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 062a42cced84afc4205e4f78511a5cf058da8626
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459407"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066380"
 ---
 # <a name="intunebrand-resource-type"></a>Tipo de recurso intuneBrand
 
@@ -24,12 +24,12 @@ intuneBrand contém dados que são usados na personalização da aparência dos 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|Nome da empresa/organização exibido para usuários finais.|
-|contactITName|String|Nome da pessoa/organização responsável pelo suporte de TI.|
-|contactITPhoneNumber|String|Número de telefone da pessoa/organização responsável pelo suporte de TI.|
-|contactITEmailAddress|String|Endereço de email da pessoa/organização responsável pelo suporte de TI.|
-|contactITNotes|String|Comentários de texto relacionados à pessoa/organização responsável pelo suporte de TI.|
-|privacyUrl|String|URL da política de privacidade da empresa/organização.|
-|onlineSupportSiteUrl|String|URL do site de assistência técnica de TI da empresa/organização.|
+|contactITName|Cadeia de caracteres|Nome da pessoa/organização responsável pelo suporte de TI.|
+|contactITPhoneNumber|Cadeia de caracteres|Número de telefone da pessoa/organização responsável pelo suporte de TI.|
+|contactITEmailAddress|Cadeia de caracteres|Endereço de email da pessoa/organização responsável pelo suporte de TI.|
+|contactITNotes|Cadeia de caracteres|Comentários de texto relacionados à pessoa/organização responsável pelo suporte de TI.|
+|privacyUrl|Cadeia de caracteres|URL da política de privacidade da empresa/organização.|
+|onlineSupportSiteUrl|Cadeia de caracteres|URL do site de assistência técnica de TI da empresa/organização.|
 |onlineSupportSiteName|Cadeia de caracteres|Nome de exibição do site de assistência técnica de TI da empresa/organização.|
 |themeColor|[rgbColor](../resources/intune-onboarding-rgbcolor.md)|Cor de tema principal usado nos aplicativos e no portal da Web do Portal da Empresa.|
 |showLogo|Booliano|Booliano que indica se as imagens de logotipo fornecidas pelo administrador serão exibidas ou não.|
@@ -80,6 +80,8 @@ Veja a seguir uma representação JSON do recurso.
   "showDisplayNameNextToLogo": true
 }
 ```
+
+
 
 
 

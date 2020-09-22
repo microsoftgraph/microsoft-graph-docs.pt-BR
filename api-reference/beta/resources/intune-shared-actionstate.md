@@ -3,14 +3,14 @@ title: tipo de Enumeração ActionState
 description: Estado da ação no dispositivo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c213567b46c7aea2f91deae8bc8a27d4b0382c7d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 83370402104e4ebd42551262aaa98c109149e32e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453177"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067269"
 ---
 # <a name="actionstate-enum-type"></a>tipo de Enumeração ActionState
 
@@ -25,13 +25,16 @@ Estado da ação no dispositivo
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Não é um estado de ação válido|
-|função|1|Ação pendente|
-|foi|duas|A ação foi cancelada.|
-|active|3D|A ação está ativa.|
+|Nenhuma|,0|Não é um estado de ação válido|
+|função|1 |Ação pendente|
+|foi|2 |A ação foi cancelada.|
+|active|3 |A ação está ativa.|
 |done|4 |Ação concluída sem erros.|
 |falhou|5 |Falha na ação|
 |notSupported|6 |Não há suporte para a ação.|
+
+
+
 
 
 

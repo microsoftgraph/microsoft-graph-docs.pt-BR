@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 75274fd208541bcc1bee7d1a5e0bd111c4da23ad
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 6513b8bb77316f291268f7a761c0c1ff4f7160ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681750"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067399"
 ---
 # <a name="alert-resource-type"></a>tipo de alerta do recurso
 
@@ -42,18 +42,18 @@ Os alertas podem ser recuperados de diferentes provedores de segurança listados
 |category|String|Categoria de alerta (por exemplo, credentialTheft ransomware, etc.).|
 |closedDateTime|DateTimeOffset|Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` (suporta[atualização](../api/alert-update.md)).|
 |cloudAppStates|conjunto [cloudAppSecurityState](cloudappsecuritystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre os aplicativos de nuvem relacionados a esse alerta.|
-|comentários|Conjunto de cadeias de caracteres|Comentários fornecidos pelo cliente no alerta (gerenciamento de alerta de cliente) (suporta [atualização](../api/alert-update.md)).|
+|comentários|String collection|Comentários fornecidos pelo cliente no alerta (gerenciamento de alerta de cliente) (suporta [atualização](../api/alert-update.md)).|
 |confidence|Int32|Confiança da lógica de detecção (porcentagem entre 1 e 100).|
 |createdDateTime |DateTimeOffset|Hora em que o alerta foi criado pelo provedor de alerta. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Obrigatório.|
 |description|String|Descrição de alerta.|
-|detectionIds|Conjunto de cadeias de caracteres|Conjunto de alertas relacionados a essa entidade de alerta (cada alerta é enviado ao SIEM como um registro separado).|
+|detectionIds|String collection|Conjunto de alertas relacionados a essa entidade de alerta (cada alerta é enviado ao SIEM como um registro separado).|
 |eventDateTime |DateTimeOffset|Tempo no qual o(s) evento(s) que serviu (serviram) como acionador(es) para gerar o alerta ocorreu. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Obrigatório.|
 |comentários|alertFeedback|Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. (suporta [atualização](../api/alert-update.md))|
 |fileStates|[fileSecurityState](filesecuritystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre os arquivos relacionados a esse alerta.|
 |historyStates|coleção [alertHistoryState](alerthistorystate.md)| Uma coleção de **alertHistoryStates** que consiste em um log de auditoria de todas as atualizações feitas em um alerta. |
 |hostStates|Conjunto [hostSecurityState](hostsecuritystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre o(s) host(s) relacionados a esse alerta.|
 |id |String|Identificador GUID/exclusivo gerado pelo provedor. Somente leitura. Obrigatório.|
-|incidentIds|Conjunto de cadeias de caracteres|IDs de incidentes relacionados ao alerta atual.|
+|incidentIds|Coleção de cadeias de caracteres|IDs de incidentes relacionados ao alerta atual.|
 |lastModifiedDateTime|DateTimeOffset|Hora na qual entidade alerta foi modificada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |malwareStates|conjunto [malwareState](malwarestate.md)|Inteligência contra ameaças referentes ao malware relacionado a esse alerta.|
 |networkConnections|conjunto [networkConnection](networkconnection.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre as conexões de rede relacionadas a esse alerta.|
@@ -140,3 +140,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

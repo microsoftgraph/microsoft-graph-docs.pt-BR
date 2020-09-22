@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 28bfd51a403077ee4ab456f6ca17fb176addf58d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 594061ff17f80bb1ab462647562947b16965d9dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508335"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067388"
 ---
 # <a name="alerttrigger-resource-type"></a>tipo de recurso alertTrigger
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +24,8 @@ Contém informações sobre as propriedades que acionaram uma detecção (as pro
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|nome|String|Nome da propriedade servindo como um gatilho de detecção.|
-|type|String|Tipo da propriedade no par chave: valor para interpretação. Por exemplo, String, Boolean, etc.|
+|name|Cadeia de caracteres|Nome da propriedade servindo como um gatilho de detecção.|
+|tipo|Cadeia de caracteres|Tipo da propriedade no par chave: valor para interpretação. Por exemplo, String, Boolean, etc.|
 |value|Cadeia de caracteres|O valor da propriedade servindo como um gatilho de detecção.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -72,3 +72,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

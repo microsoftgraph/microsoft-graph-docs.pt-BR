@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 0f8030680088a99c598d5c3576792583758840d9
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 50663ca58323782a14b7e8c5681908aa5a108bdf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643972"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067486"
 ---
 # <a name="agreementfile-resource-type"></a>tipo de recurso contratofile
 
@@ -82,3 +82,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

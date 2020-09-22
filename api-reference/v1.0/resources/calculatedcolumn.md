@@ -7,12 +7,12 @@ localization_priority: Normal
 description: calculatedColumn em um recurso columnDefinition indica que os dados da coluna são calculados com base em outras colunas do site.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 77db50430d2d28eb8d23a7e45018b84734dcb77b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 29699b5f220f4b9e46258a42c3b353cc9712ac6d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531997"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066528"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Tipo de recurso CalculatedColumn
 
@@ -59,3 +59,4 @@ Consulte [Exemplos de fórmulas comuns em listas do SharePoint][SPFormulas] para
   ],
   "tocPath": "Resources/CalculatedColumn"
 } -->
+

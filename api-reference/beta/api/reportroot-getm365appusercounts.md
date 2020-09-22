@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 666a3057cdb4e4d69cac076eef94aef8f1f3e96a
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 41d0a1da6aa5f7bfba99788e01978b780e52027c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46657955"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067790"
 ---
 # <a name="reportroot-getm365appusercounts"></a>reportRoot: getM365AppUserCounts
 
@@ -237,3 +237,5 @@ Content-Length: 188
   "suppressions": [
   ]
 }-->
+
+

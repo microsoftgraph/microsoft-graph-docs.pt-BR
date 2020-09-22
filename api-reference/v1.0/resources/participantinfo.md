@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 328ca6d751de2df04365d63d3715e02413c80b30
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: ee72e9fa643f8219d72dd282f8c0eeddd557a789
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962349"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066240"
 ---
 # <a name="participantinfo-resource-type"></a>tipo de recurso participantInfo
 
@@ -23,7 +23,7 @@ Contém propriedades adicionais sobre a identidade do participante
 | Propriedade       | Tipo                          | Descrição                                                                                                                                                |
 |:---------------|:------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | countryCode    | String                        | O código do país ISO 3166-1 alfa-2 do local físico mais estimado do participante no início da chamada. Somente leitura.                             |
-| EndpointType   | String                        | O tipo de ponto de extremidade que o participante está usando. Os valores possíveis são `default`: `skypeForBusiness`,, `skypeForBusinessVoipPhone`ou. Somente leitura.              |
+| EndpointType   | String                        | O tipo de ponto de extremidade que o participante está usando. Os valores possíveis são: `default` , `skypeForBusiness` , ou `skypeForBusinessVoipPhone` . Somente leitura.              |
 | ladrões       | [identitySet](identityset.md) | O [identityset](identityset.md) associado a este participante. Somente leitura.                                                                             |
 | languageId     | String                        | A cadeia de caracteres de cultura do idioma. Somente leitura.                                                                                                                    |
 | região         | String                        | A região de início do participante. Pode ser um país, um continente ou uma região geográfica maior. Isso não é alterado com base no local físico atual do participante. Somente leitura. |
@@ -65,3 +65,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

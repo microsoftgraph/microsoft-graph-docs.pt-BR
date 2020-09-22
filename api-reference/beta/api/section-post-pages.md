@@ -5,16 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 73c58b9855d73d7b7809f4d8e0503f28fbe110e1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8df217f4ebc84eebaa0ff938028ef3b571058808
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453650"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067661"
 ---
 # <a name="create-page"></a>Criar página
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -130,3 +130,5 @@ Content-length: 312
   "suppressions": []
 }
 -->
+
+

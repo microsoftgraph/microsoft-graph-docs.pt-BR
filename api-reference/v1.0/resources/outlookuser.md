@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c18451c9d4c75f76cd8f2f544c1325c14b233f38
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 32014d4d9591cb72adf16434ee99d4d57255bfb2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43397234"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066261"
 ---
 # <a name="outlookuser-resource-type"></a>Tipo de recurso outlookUser
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 Representa os serviços do Outlook disponíveis para um usuário.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -33,7 +33,7 @@ Representa os serviços do Outlook disponíveis para um usuário.
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |masterCategories|Coleção [outlookCategory](../resources/outlookcategory.md)| Uma lista de categorias definidas para o usuário. | 
@@ -67,3 +67,4 @@ Nenhuma
   "section": "documentation",
   "tocPath": ""
 }-->
+

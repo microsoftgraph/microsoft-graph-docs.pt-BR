@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: b6b3ca4865e56961f6388e9be1a567de73026472
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: a6b987e36769102ee32eeb9509554f8e78fed9d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643992"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067501"
 ---
 # <a name="agreement-resource-type"></a>tipo de recurso de contrato
 
@@ -37,7 +37,7 @@ Representa o contrato de termos de uso personalizável de um locatário que é c
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome para exibição do contrato. O nome para exibição é usado para o controle interno do contrato, mas não é exibido para os usuários finais que exibem o contrato.|
+|displayName|Cadeia de caracteres|Nome para exibição do contrato. O nome para exibição é usado para o controle interno do contrato, mas não é exibido para os usuários finais que exibem o contrato.|
 |id|String| Somente leitura.|
 |isPerDeviceAcceptanceRequired|Booliano|Essa configuração permite que você exija que os usuários finais aceitem este contrato em todos os dispositivos dos quais eles estão acessando-os. O usuário final será solicitado a registrar o dispositivo no Azure AD, caso ainda não tenha feito isso.|
 |isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário tem que expandir o contrato antes de aceitar.|
@@ -45,12 +45,12 @@ Representa o contrato de termos de uso personalizável de um locatário que é c
 |userReacceptRequiredFrequency|Duração|A duração após a qual o usuário deve aceitar novamente os termos de uso. O valor é representado no formato ISO 8601 para durações.|
 
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |aceitação|Coleção [agreementAcceptance](agreementacceptance.md)|Somente leitura. Informações sobre as aceitações deste contrato.|
-|arquivos|coleção [agreementFileLocalization](agreementfilelocalization.md)| PDFs vinculados a este contrato. **Observação:** Essa propriedade está no processo de ser preterido. Propriedade do **arquivo** use em vez disso.|
-|file|[contrato de licença](agreementfile.md) | PDFs vinculados a este contrato.|
+|arquivos|coleção [agreementFileLocalization](agreementfilelocalization.md)| PDFs vinculados a este contrato. **Observação:** Essa propriedade está no processo de ser preterido. Propriedade do  **arquivo** use em vez disso.|
+|file|[agreementFile](agreementfile.md) | PDFs vinculados a este contrato.|
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -92,3 +92,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

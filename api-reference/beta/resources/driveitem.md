@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 68fa883e7383c0f064aeece1d61a1788fed49ed6
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 0e24d33cedceb65bb607282f329d72ec0ba5ab1e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227740"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067390"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -113,7 +113,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | createdDateTime      | DateTimeOffset     | Data e hora de criação do item. Somente leitura.
 | cTag                 | String             | Uma eTag para o conteúdo do item. Essa eTag não será alterada se apenas os metadados forem alterados. **Observação** Essa propriedade não será retornada se o item for uma pasta. Somente leitura.
 | deleted              | [deleted][]        | Informações sobre o estado excluído do item. Somente leitura.
-| descrição          | Cadeia de caracteres             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
+| descrição          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
 | eTag                 | String             | eTag para o item inteiro (metadados + conteúdo). Somente leitura.
 | file                 | [file][]           | Metadados de arquivo, se o item for um arquivo. Somente leitura.
 | fileSystemInfo       | [fileSystemInfo][] | Informações do sistema de arquivos no cliente. Leitura e gravação.
@@ -123,7 +123,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | lastModifiedBy       | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.
 | lastModifiedDateTime | DateTimeOffset     | Data e hora em que o item foi modificado pela última vez. Somente leitura.
 | location             | [geoCoordinates][] | Metadados de localização, se o item tiver dados de localização. Somente leitura.
-| nome                 | Cadeia de caracteres             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
+| nome                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 | pacote              | [package][]        | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura.
 | parentReference      | [itemReference][]  | Informações do pai, se o item tiver um pai. Leitura e gravação.
 | pendingOperations    | [pendingOperations][] | Se presente, indica que uma ou mais operações que podem afetar o estado de driveItem estão aguardando conclusão. Somente leitura.
@@ -204,8 +204,8 @@ A remoção das permissões de arquivo de um usuário pode não invalidar a URL 
 | [Excluir permissão](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [Obter canal WebSocket][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [Item de visualização][item-preview]                             | `POST /drive/items/{item-id}/preview`
-| [Fazer Check-in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
-| [Fazer Check-out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
+| [Fazer ceck-in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [Fazer check-out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
 
 [item-preview]: ../api/driveitem-preview.md
 [Obter análises]: ../api/itemanalytics-get.md
@@ -266,3 +266,5 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
   "suppressions": []
 }
 -->
+
+

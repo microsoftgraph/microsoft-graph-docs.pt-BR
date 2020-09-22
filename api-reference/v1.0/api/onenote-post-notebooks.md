@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 6af95ea02a4151f0ea1ca23d2a05cc99d6d20830
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4a64a54385d0bff66cd6302323034057ac87ed0e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511296"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066588"
 ---
 # <a name="create-notebook"></a>Criar blocos de anotações
 
@@ -43,11 +43,11 @@ POST /sites/{id}/onenote/notebooks
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça um nome para o bloco de anotações. 
 
-Os nomes dos blocos de anotações devem ser exclusivos. O nome não pode conter mais de 128 caracteres ou conter os seguintes caracteres:?\/*: <>| ' "
+Os nomes dos blocos de anotações devem ser exclusivos. O nome não pode conter mais de 128 caracteres ou conter os seguintes caracteres:? * \/ : <>| ' "
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e o novo objeto [Notebook](../resources/notebook.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e o novo objeto [Notebook](../resources/notebook.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -127,3 +127,4 @@ Content-length: 284
   "suppressions": [
   ]
 }-->
+

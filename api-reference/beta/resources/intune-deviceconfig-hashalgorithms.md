@@ -3,14 +3,14 @@ title: tipo de enumeração hashAlgorithm
 description: Opções de algoritmo de hash.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3d9875f8f985da3fb7706fc6ea17ad7d41873cf7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f84ab57020aa5c852560a0038bef844295a0c916
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444278"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067360"
 ---
 # <a name="hashalgorithms-enum-type"></a>tipo de enumeração hashAlgorithm
 
@@ -25,8 +25,11 @@ Opções de algoritmo de hash.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|SHA1|1|Algoritmo de hash SHA-1.|
-|SHA2|duas|Algoritmo de hash SHA-2.|
+|SHA1|1 |Algoritmo de hash SHA-1.|
+|SHA2|2 |Algoritmo de hash SHA-2.|
+
+
+
 
 
 

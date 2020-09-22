@@ -3,14 +3,14 @@ title: Listar macOSDeviceFeaturesConfigurations
 description: Listar propriedades e relações dos objetos macOSDeviceFeaturesConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 706eb1b740fa31d6900ec1bd2b71816366a05c31
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 6da2f640451547f74c61d310176453ae9ec2636b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792792"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066114"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>Listar macOSDeviceFeaturesConfigurations
 
@@ -238,6 +238,9 @@ Content-Length: 6245
   ]
 }
 ```
+
+
+
 
 
 
