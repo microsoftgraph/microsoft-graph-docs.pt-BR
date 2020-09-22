@@ -5,45 +5,45 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4deb0f0fa4e33b1b3451deb4a15ee4a41f5599ad
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7571c263fbd80e2118bf8dd3b87cd3b8eda38c7b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463872"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019128"
 ---
-# <a name="get-devicemanagement"></a><span data-ttu-id="1f5ef-103">Acessar deviceManagement</span><span class="sxs-lookup"><span data-stu-id="1f5ef-103">Get deviceManagement</span></span>
+# <a name="get-devicemanagement"></a><span data-ttu-id="26d5f-103">Acessar deviceManagement</span><span class="sxs-lookup"><span data-stu-id="26d5f-103">Get deviceManagement</span></span>
 
-<span data-ttu-id="1f5ef-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1f5ef-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="26d5f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="26d5f-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="1f5ef-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="1f5ef-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="26d5f-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="26d5f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1f5ef-106">Leia as propriedades e as relações do objeto [deviceManagement](../resources/intune-shared-devicemanagement.md).</span><span class="sxs-lookup"><span data-stu-id="1f5ef-106">Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.</span></span>
+<span data-ttu-id="26d5f-106">Leia as propriedades e as relações do objeto [deviceManagement](../resources/intune-shared-devicemanagement.md).</span><span class="sxs-lookup"><span data-stu-id="26d5f-106">Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1f5ef-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="1f5ef-107">Prerequisites</span></span>
-<span data-ttu-id="1f5ef-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1f5ef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="26d5f-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="26d5f-107">Prerequisites</span></span>
+<span data-ttu-id="26d5f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="26d5f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="1f5ef-110">Tipo&nbsp;&nbsp;de permissão (&nbsp;por fluxo de trabalho)</span><span class="sxs-lookup"><span data-stu-id="1f5ef-110">Permission&nbsp;type&nbsp;(by&nbsp;workflow)</span></span> | <span data-ttu-id="1f5ef-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="1f5ef-111">Permissions (from most to least privileged)</span></span> |
+| <span data-ttu-id="26d5f-110">&nbsp;Tipo &nbsp; de permissão (por &nbsp; fluxo de trabalho)</span><span class="sxs-lookup"><span data-stu-id="26d5f-110">Permission&nbsp;type&nbsp;(by&nbsp;workflow)</span></span> | <span data-ttu-id="26d5f-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="26d5f-111">Permissions (from most to least privileged)</span></span> |
 |:---|:---|
-| <span data-ttu-id="1f5ef-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1f5ef-112">Delegated (work or school account)</span></span> | |
-| <span data-ttu-id="1f5ef-113">&nbsp;&nbsp; Auditoria</span><span class="sxs-lookup"><span data-stu-id="1f5ef-113">&nbsp; &nbsp; Auditing</span></span> | <span data-ttu-id="1f5ef-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f5ef-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span> |
-| <span data-ttu-id="1f5ef-115">&nbsp;&nbsp; Termos da empresa</span><span class="sxs-lookup"><span data-stu-id="1f5ef-115">&nbsp; &nbsp; Company terms</span></span> | <span data-ttu-id="1f5ef-116">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f5ef-116">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
-| <span data-ttu-id="1f5ef-117">&nbsp;&nbsp; Configuração do dispositivo</span><span class="sxs-lookup"><span data-stu-id="1f5ef-117">&nbsp; &nbsp; Device configuration</span></span> | <span data-ttu-id="1f5ef-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f5ef-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span> |
-| <span data-ttu-id="1f5ef-119">&nbsp;&nbsp; Gerenciamento de dispositivos</span><span class="sxs-lookup"><span data-stu-id="1f5ef-119">&nbsp; &nbsp; Device management</span></span> | <span data-ttu-id="1f5ef-120">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f5ef-120">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span> |
-| <span data-ttu-id="1f5ef-121">&nbsp;&nbsp; Registro</span><span class="sxs-lookup"><span data-stu-id="1f5ef-121">&nbsp; &nbsp; Enrollment</span></span> | <span data-ttu-id="1f5ef-122">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f5ef-122">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
-| <span data-ttu-id="1f5ef-123">&nbsp;&nbsp; Notificação</span><span class="sxs-lookup"><span data-stu-id="1f5ef-123">&nbsp; &nbsp; Notification</span></span> | <span data-ttu-id="1f5ef-124">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f5ef-124">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
-| <span data-ttu-id="1f5ef-125">&nbsp;&nbsp; Integração</span><span class="sxs-lookup"><span data-stu-id="1f5ef-125">&nbsp; &nbsp; Onboarding</span></span> | <span data-ttu-id="1f5ef-126">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f5ef-126">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
-| <span data-ttu-id="1f5ef-127">&nbsp;&nbsp; RBAC</span><span class="sxs-lookup"><span data-stu-id="1f5ef-127">&nbsp; &nbsp; RBAC</span></span> | <span data-ttu-id="1f5ef-128">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f5ef-128">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span> |
-| <span data-ttu-id="1f5ef-129">&nbsp;&nbsp; Assistência remota</span><span class="sxs-lookup"><span data-stu-id="1f5ef-129">&nbsp; &nbsp; Remote assistance</span></span> | <span data-ttu-id="1f5ef-130">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f5ef-130">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
-| <span data-ttu-id="1f5ef-131">&nbsp;&nbsp; Gerenciamento de despesas de telecomunicações</span><span class="sxs-lookup"><span data-stu-id="1f5ef-131">&nbsp; &nbsp; Telecom expense management</span></span> | <span data-ttu-id="1f5ef-132">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f5ef-132">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
-| <span data-ttu-id="1f5ef-133">&nbsp;&nbsp; Solução de problemas</span><span class="sxs-lookup"><span data-stu-id="1f5ef-133">&nbsp; &nbsp; Troubleshooting</span></span> | <span data-ttu-id="1f5ef-134">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f5ef-134">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
-| <span data-ttu-id="1f5ef-135">&nbsp;&nbsp; Proteção de informações do Windows</span><span class="sxs-lookup"><span data-stu-id="1f5ef-135">&nbsp; &nbsp; Windows Information Protection</span></span> | <span data-ttu-id="1f5ef-136">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="1f5ef-136">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-| <span data-ttu-id="1f5ef-137">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1f5ef-137">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1f5ef-138">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1f5ef-138">Not supported.</span></span>|
-| <span data-ttu-id="1f5ef-139">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1f5ef-139">Application</span></span> | <span data-ttu-id="1f5ef-140">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1f5ef-140">Not supported.</span></span> |
+| <span data-ttu-id="26d5f-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="26d5f-112">Delegated (work or school account)</span></span> | |
+| <span data-ttu-id="26d5f-113">&nbsp;&nbsp;Auditoria</span><span class="sxs-lookup"><span data-stu-id="26d5f-113">&nbsp; &nbsp; Auditing</span></span> | <span data-ttu-id="26d5f-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="26d5f-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span> |
+| <span data-ttu-id="26d5f-115">&nbsp;&nbsp;Termos da empresa</span><span class="sxs-lookup"><span data-stu-id="26d5f-115">&nbsp; &nbsp; Company terms</span></span> | <span data-ttu-id="26d5f-116">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="26d5f-116">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
+| <span data-ttu-id="26d5f-117">&nbsp;&nbsp;Configuração do dispositivo</span><span class="sxs-lookup"><span data-stu-id="26d5f-117">&nbsp; &nbsp; Device configuration</span></span> | <span data-ttu-id="26d5f-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="26d5f-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span> |
+| <span data-ttu-id="26d5f-119">&nbsp;&nbsp;Gerenciamento de dispositivos</span><span class="sxs-lookup"><span data-stu-id="26d5f-119">&nbsp; &nbsp; Device management</span></span> | <span data-ttu-id="26d5f-120">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="26d5f-120">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span> |
+| <span data-ttu-id="26d5f-121">&nbsp;&nbsp;Registro</span><span class="sxs-lookup"><span data-stu-id="26d5f-121">&nbsp; &nbsp; Enrollment</span></span> | <span data-ttu-id="26d5f-122">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="26d5f-122">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
+| <span data-ttu-id="26d5f-123">&nbsp;&nbsp;Notificação</span><span class="sxs-lookup"><span data-stu-id="26d5f-123">&nbsp; &nbsp; Notification</span></span> | <span data-ttu-id="26d5f-124">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="26d5f-124">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
+| <span data-ttu-id="26d5f-125">&nbsp;&nbsp;Integração</span><span class="sxs-lookup"><span data-stu-id="26d5f-125">&nbsp; &nbsp; Onboarding</span></span> | <span data-ttu-id="26d5f-126">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="26d5f-126">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
+| <span data-ttu-id="26d5f-127">&nbsp;&nbsp;RBAC</span><span class="sxs-lookup"><span data-stu-id="26d5f-127">&nbsp; &nbsp; RBAC</span></span> | <span data-ttu-id="26d5f-128">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="26d5f-128">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span> |
+| <span data-ttu-id="26d5f-129">&nbsp;&nbsp;Assistência remota</span><span class="sxs-lookup"><span data-stu-id="26d5f-129">&nbsp; &nbsp; Remote assistance</span></span> | <span data-ttu-id="26d5f-130">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="26d5f-130">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
+| <span data-ttu-id="26d5f-131">&nbsp;&nbsp;Gerenciamento de despesas de telecomunicações</span><span class="sxs-lookup"><span data-stu-id="26d5f-131">&nbsp; &nbsp; Telecom expense management</span></span> | <span data-ttu-id="26d5f-132">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="26d5f-132">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
+| <span data-ttu-id="26d5f-133">&nbsp;&nbsp;Solução de problemas</span><span class="sxs-lookup"><span data-stu-id="26d5f-133">&nbsp; &nbsp; Troubleshooting</span></span> | <span data-ttu-id="26d5f-134">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="26d5f-134">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
+| <span data-ttu-id="26d5f-135">&nbsp;&nbsp;Proteção de informações do Windows</span><span class="sxs-lookup"><span data-stu-id="26d5f-135">&nbsp; &nbsp; Windows Information Protection</span></span> | <span data-ttu-id="26d5f-136">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="26d5f-136">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+| <span data-ttu-id="26d5f-137">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="26d5f-137">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="26d5f-138">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="26d5f-138">Not supported.</span></span>|
+| <span data-ttu-id="26d5f-139">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="26d5f-139">Application</span></span> | <span data-ttu-id="26d5f-140">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="26d5f-140">Not supported.</span></span> |
 
 
 
-## <a name="http-request"></a><span data-ttu-id="1f5ef-141">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1f5ef-141">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="26d5f-141">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="26d5f-141">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -52,29 +52,29 @@ ms.locfileid: "43463872"
 GET /deviceManagement
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1f5ef-142">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="1f5ef-142">Optional query parameters</span></span>
-<span data-ttu-id="1f5ef-143">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="1f5ef-143">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="1f5ef-144">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1f5ef-144">Request headers</span></span>
-|<span data-ttu-id="1f5ef-145">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1f5ef-145">Header</span></span>|<span data-ttu-id="1f5ef-146">Valor</span><span class="sxs-lookup"><span data-stu-id="1f5ef-146">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="26d5f-142">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="26d5f-142">Optional query parameters</span></span>
+<span data-ttu-id="26d5f-143">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="26d5f-143">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="26d5f-144">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="26d5f-144">Request headers</span></span>
+|<span data-ttu-id="26d5f-145">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="26d5f-145">Header</span></span>|<span data-ttu-id="26d5f-146">Valor</span><span class="sxs-lookup"><span data-stu-id="26d5f-146">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1f5ef-147">Autorização</span><span class="sxs-lookup"><span data-stu-id="1f5ef-147">Authorization</span></span>|<span data-ttu-id="1f5ef-148">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1f5ef-148">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1f5ef-149">Aceitar</span><span class="sxs-lookup"><span data-stu-id="1f5ef-149">Accept</span></span>|<span data-ttu-id="1f5ef-150">application/json</span><span class="sxs-lookup"><span data-stu-id="1f5ef-150">application/json</span></span>|
+|<span data-ttu-id="26d5f-147">Autorização</span><span class="sxs-lookup"><span data-stu-id="26d5f-147">Authorization</span></span>|<span data-ttu-id="26d5f-148">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="26d5f-148">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="26d5f-149">Aceitar</span><span class="sxs-lookup"><span data-stu-id="26d5f-149">Accept</span></span>|<span data-ttu-id="26d5f-150">application/json</span><span class="sxs-lookup"><span data-stu-id="26d5f-150">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1f5ef-151">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1f5ef-151">Request body</span></span>
-<span data-ttu-id="1f5ef-152">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1f5ef-152">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="26d5f-151">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="26d5f-151">Request body</span></span>
+<span data-ttu-id="26d5f-152">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="26d5f-152">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1f5ef-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="1f5ef-153">Response</span></span>
-<span data-ttu-id="1f5ef-154">Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [deviceManagement](../resources/intune-shared-devicemanagement.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1f5ef-154">If successful, this method returns a `200 OK` response code and [deviceManagement](../resources/intune-shared-devicemanagement.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="26d5f-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="26d5f-153">Response</span></span>
+<span data-ttu-id="26d5f-154">Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [deviceManagement](../resources/intune-shared-devicemanagement.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="26d5f-154">If successful, this method returns a `200 OK` response code and [deviceManagement](../resources/intune-shared-devicemanagement.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1f5ef-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1f5ef-155">Example</span></span>
-### <a name="request"></a><span data-ttu-id="1f5ef-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1f5ef-156">Request</span></span>
-<span data-ttu-id="1f5ef-157">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1f5ef-157">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="26d5f-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="26d5f-155">Example</span></span>
+### <a name="request"></a><span data-ttu-id="26d5f-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="26d5f-156">Request</span></span>
+<span data-ttu-id="26d5f-157">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="26d5f-157">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement
 ```
 
-### <a name="response"></a><span data-ttu-id="1f5ef-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="1f5ef-158">Response</span></span>
-<span data-ttu-id="1f5ef-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1f5ef-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="26d5f-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="26d5f-158">Response</span></span>
+<span data-ttu-id="26d5f-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="26d5f-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -107,6 +107,9 @@ Content-Length: 918
   }
 }
 ```
+
+
+
 
 
 

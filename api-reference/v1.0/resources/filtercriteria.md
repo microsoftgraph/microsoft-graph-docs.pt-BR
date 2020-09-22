@@ -5,22 +5,22 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9b53ff3250720171a57fc33a8487d40766c9e532
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 38553e51abf8be80740e7eaeded1eb7b17705173
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807798"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018295"
 ---
-# <a name="filtercriteria-resource-type"></a><span data-ttu-id="9c6ae-103">Tipo de recurso FilterCriteria</span><span class="sxs-lookup"><span data-stu-id="9c6ae-103">FilterCriteria resource type</span></span>
+# <a name="filtercriteria-resource-type"></a><span data-ttu-id="42eeb-103">Tipo de recurso FilterCriteria</span><span class="sxs-lookup"><span data-stu-id="42eeb-103">FilterCriteria resource type</span></span>
 
-<span data-ttu-id="9c6ae-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9c6ae-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="42eeb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="42eeb-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="9c6ae-105">Representa os critérios de filtragem aplicados a uma coluna.</span><span class="sxs-lookup"><span data-stu-id="9c6ae-105">Represents the filtering criteria applied to a column.</span></span>
+<span data-ttu-id="42eeb-105">Representa os critérios de filtragem aplicados a uma coluna.</span><span class="sxs-lookup"><span data-stu-id="42eeb-105">Represents the filtering criteria applied to a column.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9c6ae-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="9c6ae-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="42eeb-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="42eeb-106">JSON representation</span></span>
 
-<span data-ttu-id="9c6ae-107">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="9c6ae-107">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="42eeb-107">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="42eeb-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -62,3 +62,4 @@ ms.locfileid: "46807798"
       Property 'values' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table."
   ]
 } -->
+

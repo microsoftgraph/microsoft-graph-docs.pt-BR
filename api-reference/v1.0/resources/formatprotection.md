@@ -5,40 +5,40 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8169041e6d36c9e5e73d7dc928fef33be3c154c0
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7237b7275c990934f21c94c7eeea9ede86b061be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812250"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018213"
 ---
-# <a name="formatprotection-resource-type"></a><span data-ttu-id="50a3a-103">Tipo de recurso FormatProtection</span><span class="sxs-lookup"><span data-stu-id="50a3a-103">FormatProtection resource type</span></span>
+# <a name="formatprotection-resource-type"></a><span data-ttu-id="69437-103">Tipo de recurso FormatProtection</span><span class="sxs-lookup"><span data-stu-id="69437-103">FormatProtection resource type</span></span>
 
-<span data-ttu-id="50a3a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="50a3a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="69437-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="69437-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="50a3a-105">Representa a proteção de formatação de um objeto range.</span><span class="sxs-lookup"><span data-stu-id="50a3a-105">Represents the format protection of a range object.</span></span>
+<span data-ttu-id="69437-105">Representa a proteção de formatação de um objeto range.</span><span class="sxs-lookup"><span data-stu-id="69437-105">Represents the format protection of a range object.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="50a3a-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="50a3a-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="69437-106">Methods</span><span class="sxs-lookup"><span data-stu-id="69437-106">Methods</span></span>
 
-| <span data-ttu-id="50a3a-107">Método</span><span class="sxs-lookup"><span data-stu-id="50a3a-107">Method</span></span>           | <span data-ttu-id="50a3a-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="50a3a-108">Return Type</span></span>    |<span data-ttu-id="50a3a-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="50a3a-109">Description</span></span>|
+| <span data-ttu-id="69437-107">Método</span><span class="sxs-lookup"><span data-stu-id="69437-107">Method</span></span>           | <span data-ttu-id="69437-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="69437-108">Return Type</span></span>    |<span data-ttu-id="69437-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="69437-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="50a3a-110">Get FormatProtection</span><span class="sxs-lookup"><span data-stu-id="50a3a-110">Get FormatProtection</span></span>](../api/formatprotection-get.md) | [<span data-ttu-id="50a3a-111">FormatProtection</span><span class="sxs-lookup"><span data-stu-id="50a3a-111">FormatProtection</span></span>](formatprotection.md) |<span data-ttu-id="50a3a-112">Leia as propriedades e os relacionamentos do objeto formatProtection.</span><span class="sxs-lookup"><span data-stu-id="50a3a-112">Read properties and relationships of formatProtection object.</span></span>|
-|[<span data-ttu-id="50a3a-113">Update</span><span class="sxs-lookup"><span data-stu-id="50a3a-113">Update</span></span>](../api/formatprotection-update.md) | [<span data-ttu-id="50a3a-114">FormatProtection</span><span class="sxs-lookup"><span data-stu-id="50a3a-114">FormatProtection</span></span>](formatprotection.md)  |<span data-ttu-id="50a3a-115">Atualize o objeto FormatProtection.</span><span class="sxs-lookup"><span data-stu-id="50a3a-115">Update FormatProtection object.</span></span> |
+|[<span data-ttu-id="69437-110">Get FormatProtection</span><span class="sxs-lookup"><span data-stu-id="69437-110">Get FormatProtection</span></span>](../api/formatprotection-get.md) | [<span data-ttu-id="69437-111">FormatProtection</span><span class="sxs-lookup"><span data-stu-id="69437-111">FormatProtection</span></span>](formatprotection.md) |<span data-ttu-id="69437-112">Leia as propriedades e os relacionamentos do objeto formatProtection.</span><span class="sxs-lookup"><span data-stu-id="69437-112">Read properties and relationships of formatProtection object.</span></span>|
+|[<span data-ttu-id="69437-113">Update</span><span class="sxs-lookup"><span data-stu-id="69437-113">Update</span></span>](../api/formatprotection-update.md) | [<span data-ttu-id="69437-114">FormatProtection</span><span class="sxs-lookup"><span data-stu-id="69437-114">FormatProtection</span></span>](formatprotection.md)  |<span data-ttu-id="69437-115">Atualize o objeto FormatProtection.</span><span class="sxs-lookup"><span data-stu-id="69437-115">Update FormatProtection object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="50a3a-116">Propriedades</span><span class="sxs-lookup"><span data-stu-id="50a3a-116">Properties</span></span>
-| <span data-ttu-id="50a3a-117">Propriedade</span><span class="sxs-lookup"><span data-stu-id="50a3a-117">Property</span></span>     | <span data-ttu-id="50a3a-118">Tipo</span><span class="sxs-lookup"><span data-stu-id="50a3a-118">Type</span></span>   |<span data-ttu-id="50a3a-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="50a3a-119">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="69437-116">Propriedades</span><span class="sxs-lookup"><span data-stu-id="69437-116">Properties</span></span>
+| <span data-ttu-id="69437-117">Propriedade</span><span class="sxs-lookup"><span data-stu-id="69437-117">Property</span></span>     | <span data-ttu-id="69437-118">Tipo</span><span class="sxs-lookup"><span data-stu-id="69437-118">Type</span></span>   |<span data-ttu-id="69437-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="69437-119">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="50a3a-120">formulaHidden</span><span class="sxs-lookup"><span data-stu-id="50a3a-120">formulaHidden</span></span>|<span data-ttu-id="50a3a-121">booliano</span><span class="sxs-lookup"><span data-stu-id="50a3a-121">boolean</span></span>|<span data-ttu-id="50a3a-p101">Indica se o Excel ocultará a fórmula para as células no intervalo. Um valor nulo indica que o intervalo inteiro não tem configuração uniforme de fórmula oculta.</span><span class="sxs-lookup"><span data-stu-id="50a3a-p101">Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.</span></span>|
-|<span data-ttu-id="50a3a-124">locked</span><span class="sxs-lookup"><span data-stu-id="50a3a-124">locked</span></span>|<span data-ttu-id="50a3a-125">booliano</span><span class="sxs-lookup"><span data-stu-id="50a3a-125">boolean</span></span>|<span data-ttu-id="50a3a-p102">Indica se o Excel bloqueia as células no objeto. Um valor nulo indica que o intervalo inteiro não tem configuração de bloqueio uniforme.</span><span class="sxs-lookup"><span data-stu-id="50a3a-p102">Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.</span></span>|
+|<span data-ttu-id="69437-120">formulaHidden</span><span class="sxs-lookup"><span data-stu-id="69437-120">formulaHidden</span></span>|<span data-ttu-id="69437-121">booliano</span><span class="sxs-lookup"><span data-stu-id="69437-121">boolean</span></span>|<span data-ttu-id="69437-p101">Indica se o Excel ocultará a fórmula para as células no intervalo. Um valor nulo indica que o intervalo inteiro não tem configuração uniforme de fórmula oculta.</span><span class="sxs-lookup"><span data-stu-id="69437-p101">Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.</span></span>|
+|<span data-ttu-id="69437-124">locked</span><span class="sxs-lookup"><span data-stu-id="69437-124">locked</span></span>|<span data-ttu-id="69437-125">booliano</span><span class="sxs-lookup"><span data-stu-id="69437-125">boolean</span></span>|<span data-ttu-id="69437-p102">Indica se o Excel bloqueia as células no objeto. Um valor nulo indica que o intervalo inteiro não tem configuração de bloqueio uniforme.</span><span class="sxs-lookup"><span data-stu-id="69437-p102">Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="50a3a-128">Relações</span><span class="sxs-lookup"><span data-stu-id="50a3a-128">Relationships</span></span>
-<span data-ttu-id="50a3a-129">Nenhum</span><span class="sxs-lookup"><span data-stu-id="50a3a-129">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="69437-128">Relações</span><span class="sxs-lookup"><span data-stu-id="69437-128">Relationships</span></span>
+<span data-ttu-id="69437-129">Nenhum</span><span class="sxs-lookup"><span data-stu-id="69437-129">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="50a3a-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="50a3a-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="69437-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="69437-130">JSON representation</span></span>
 
-<span data-ttu-id="50a3a-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="50a3a-131">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="69437-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="69437-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -66,3 +66,4 @@ ms.locfileid: "46812250"
   "section": "documentation",
   "tocPath": ""
 }-->
+
