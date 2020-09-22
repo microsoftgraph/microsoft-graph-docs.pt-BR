@@ -3,37 +3,37 @@ title: tipo de recurso ACL
 description: Uma entrada de controle de acesso para um item indexado por um externalConnection de pesquisa da Microsoft.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d0745ab4a04233a654b829da8f93defb855fc0f9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d390ac0fee3063bd8f0d292d14e04b2616c1d00
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024553"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193530"
 ---
-# <a name="acl-resource-type"></a><span data-ttu-id="92235-103">tipo de recurso ACL</span><span class="sxs-lookup"><span data-stu-id="92235-103">acl resource type</span></span>
+# <a name="acl-resource-type"></a><span data-ttu-id="56c01-103">tipo de recurso ACL</span><span class="sxs-lookup"><span data-stu-id="56c01-103">acl resource type</span></span>
 
-<span data-ttu-id="92235-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="92235-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="56c01-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="56c01-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="92235-105">Uma entrada de controle de acesso para um item indexado por um [externalConnection](externalconnection.md)de pesquisa da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="92235-105">An access control entry for an item indexed by a Microsoft Search [externalConnection](externalconnection.md).</span></span>
+<span data-ttu-id="56c01-105">Uma entrada de controle de acesso para um item indexado por um [externalConnection](externalconnection.md)de pesquisa da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="56c01-105">An access control entry for an item indexed by a Microsoft Search [externalConnection](externalconnection.md).</span></span>
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="properties"></a><span data-ttu-id="92235-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="92235-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="56c01-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="56c01-106">Properties</span></span>
 
-| <span data-ttu-id="92235-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="92235-107">Property</span></span>       | <span data-ttu-id="92235-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="92235-108">Type</span></span>   | <span data-ttu-id="92235-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="92235-109">Description</span></span>                                        |
+| <span data-ttu-id="56c01-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="56c01-107">Property</span></span>       | <span data-ttu-id="56c01-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="56c01-108">Type</span></span>   | <span data-ttu-id="56c01-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="56c01-109">Description</span></span>                                        |
 |:---------------|:-------|:---------------------------------------------------|
-| <span data-ttu-id="92235-110">accessType</span><span class="sxs-lookup"><span data-stu-id="92235-110">accessType</span></span>     | <span data-ttu-id="92235-111">String</span><span class="sxs-lookup"><span data-stu-id="92235-111">String</span></span> | <span data-ttu-id="92235-112">O acesso concedido à identidade.</span><span class="sxs-lookup"><span data-stu-id="92235-112">The access granted to the identity.</span></span> <span data-ttu-id="92235-113">Os valores possíveis são: `grant` e `deny`.</span><span class="sxs-lookup"><span data-stu-id="92235-113">Possible values are: `grant`, `deny`.</span></span> |
-| <span data-ttu-id="92235-114">identificação da identidade</span><span class="sxs-lookup"><span data-stu-id="92235-114">identitySource</span></span> | <span data-ttu-id="92235-115">String</span><span class="sxs-lookup"><span data-stu-id="92235-115">String</span></span> | <span data-ttu-id="92235-116">Deve ser definida como `Azure Active Directory`.</span><span class="sxs-lookup"><span data-stu-id="92235-116">Must be set to `Azure Active Directory`.</span></span>           |
-| <span data-ttu-id="92235-117">tipo</span><span class="sxs-lookup"><span data-stu-id="92235-117">type</span></span>           | <span data-ttu-id="92235-118">String</span><span class="sxs-lookup"><span data-stu-id="92235-118">String</span></span> | <span data-ttu-id="92235-119">O tipo de identidade.</span><span class="sxs-lookup"><span data-stu-id="92235-119">The type of identity.</span></span> <span data-ttu-id="92235-120">Os valores possíveis são: `user`, `group`, `everyone`, `everyoneExceptGuests`.</span><span class="sxs-lookup"><span data-stu-id="92235-120">Possible values are: `user`, `group`, `everyone`, `everyoneExceptGuests`.</span></span> |
-| <span data-ttu-id="92235-121">value</span><span class="sxs-lookup"><span data-stu-id="92235-121">value</span></span>          | <span data-ttu-id="92235-122">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="92235-122">String</span></span> | <span data-ttu-id="92235-123">O identificador do Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="92235-123">The Azure Active Directory identifer.</span></span> <span data-ttu-id="92235-124">Se `type` for `user` ou `group` , `value` será definido como o identificador de objeto para o usuário ou grupo.</span><span class="sxs-lookup"><span data-stu-id="92235-124">If `type` is `user` or `group`, `value` is set to the object identifier for the user or group.</span></span> <span data-ttu-id="92235-125">Se `type` for `everyone` ou `everyoneExceptGuests` , `value` será definido como o identificador de locatário para o locatário do Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="92235-125">If `type` is `everyone` or `everyoneExceptGuests`, `value` is set to the tenant identifier for the Azure Active Directory tenant.</span></span> |
+| <span data-ttu-id="56c01-110">accessType</span><span class="sxs-lookup"><span data-stu-id="56c01-110">accessType</span></span>     | <span data-ttu-id="56c01-111">String</span><span class="sxs-lookup"><span data-stu-id="56c01-111">String</span></span> | <span data-ttu-id="56c01-112">O acesso concedido à identidade.</span><span class="sxs-lookup"><span data-stu-id="56c01-112">The access granted to the identity.</span></span> <span data-ttu-id="56c01-113">Os valores possíveis são: `grant` e `deny`.</span><span class="sxs-lookup"><span data-stu-id="56c01-113">Possible values are: `grant`, `deny`.</span></span> |
+| <span data-ttu-id="56c01-114">identificação da identidade</span><span class="sxs-lookup"><span data-stu-id="56c01-114">identitySource</span></span> | <span data-ttu-id="56c01-115">String</span><span class="sxs-lookup"><span data-stu-id="56c01-115">String</span></span> | <span data-ttu-id="56c01-116">A fonte de identidade.</span><span class="sxs-lookup"><span data-stu-id="56c01-116">The source of identity.</span></span> <span data-ttu-id="56c01-117">Os valores possíveis são `azureActiveDirectory` ou `external` .</span><span class="sxs-lookup"><span data-stu-id="56c01-117">Possible values are `azureActiveDirectory` or `external`.</span></span>           |
+| <span data-ttu-id="56c01-118">tipo</span><span class="sxs-lookup"><span data-stu-id="56c01-118">type</span></span>           | <span data-ttu-id="56c01-119">String</span><span class="sxs-lookup"><span data-stu-id="56c01-119">String</span></span> | <span data-ttu-id="56c01-120">O tipo de identidade.</span><span class="sxs-lookup"><span data-stu-id="56c01-120">The type of identity.</span></span> <span data-ttu-id="56c01-121">Os valores possíveis são: `user` , `group` , `everyone` , `everyoneExceptGuests` se a identificação do próprio é `azureActiveDirectory` e apenas `group` se a identificação do próprio é `external` .</span><span class="sxs-lookup"><span data-stu-id="56c01-121">Possible values are: `user`, `group`, `everyone`, `everyoneExceptGuests` if the identitySource is `azureActiveDirectory` and just `group` if the identitySource is `external`.</span></span> |
+| <span data-ttu-id="56c01-122">value</span><span class="sxs-lookup"><span data-stu-id="56c01-122">value</span></span>          | <span data-ttu-id="56c01-123">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="56c01-123">String</span></span> | <span data-ttu-id="56c01-124">O identificador exclusivo da identidade.</span><span class="sxs-lookup"><span data-stu-id="56c01-124">The unique identifer of the identity.</span></span> <span data-ttu-id="56c01-125">No caso de identidades do Active Directory do Azure, `value` é definido como o identificador de objeto do usuário, grupo ou locatário para tipos usuário, grupo e todos (e everyoneExceptGuests), respectivamente.</span><span class="sxs-lookup"><span data-stu-id="56c01-125">In case of Azure Active Directory identities, `value` is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively.</span></span> <span data-ttu-id="56c01-126">No caso de grupos externos, `value` está definido como a ID do grupo [externo](externalgroup.md).</span><span class="sxs-lookup"><span data-stu-id="56c01-126">In case of external groups `value` is set to the ID of the [externalGroup](externalgroup.md).</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="92235-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="92235-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="56c01-127">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="56c01-127">JSON representation</span></span>
 
-<span data-ttu-id="92235-127">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="92235-127">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="56c01-128">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="56c01-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -62,5 +62,3 @@ ms.locfileid: "48024553"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

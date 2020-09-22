@@ -42,6 +42,8 @@ items:
             href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: Notificações ausentes do Outlook (versão prévia)
             href: /graph/webhooks-outlook-authz?context=graph/api/1.0
+          - name: Notificações com dados de recurso
+            href: /graph/webhooks-with-resource-data?context=graph/api/1.0
       - name: Controle de alterações
         displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
         items:
@@ -128,6 +130,20 @@ items:
     items:
       - name: Visão geral do kit de ferramentas
         href: /graph/toolkit/overview?context=graph/api/1.0
+      - name: Introdução
+        items:
+          - name: Visão geral
+            href: /graph/toolkit/get-started/overview?context=graph/api/1.0
+          - name: Criar um aplicativo Web (JavaScript)
+            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
+          - name: Criar uma web part do Microsoft Office SharePoint Online
+            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
+          - name: Criar uma guia do Microsoft Teams
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
+          - name: Usar o kit de ferramentas com reagir
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
+          - name: Usar o kit de ferramentas com o angular
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
       - name: Componentes
         items:
           - name: Logon
@@ -173,7 +189,7 @@ items:
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -4907,7 +4923,7 @@ items:
                 href: api/teamsapp-update.md
               - name: Excluir aplicativo do catálogo
                 href: api/teamsapp-delete.md
-          - name: Aplicativo
+          - name: App
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
