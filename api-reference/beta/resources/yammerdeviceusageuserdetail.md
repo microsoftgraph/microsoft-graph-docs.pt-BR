@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 982ebfc0de39bd956a4223e7bb0665ac73c42402
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9d12b329767081767b58f4fd36e9eac5edffe406
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518998"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979169"
 ---
 # <a name="yammerdeviceusageuserdetail-resource-type"></a>tipo de recurso yammerDeviceUsageUserDetail
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -22,7 +22,7 @@ Namespace: Microsoft. Graph
 | :---------------- | :------ |
 | reportRefreshDate | Data    |
 | userPrincipalName | String  |
-| displayName       | Cadeia de caracteres  |
+| displayName       | String  |
 | userState         | String  |
 | stateChangeDate   | Data    |
 | lastActivityDate  | Data    |
@@ -60,3 +60,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

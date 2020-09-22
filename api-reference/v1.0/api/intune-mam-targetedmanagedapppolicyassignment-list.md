@@ -3,14 +3,14 @@ title: Listar targetedManagedAppPolicyAssignments
 description: Listar propriedades e relações de objetos de targetedManagedAppPolicyAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 530cefa3d8b410b3242ce61bd02438654391c43c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f5404df86c7e28965c49e827ccd851ad3cd63eb3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43397798"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978941"
 ---
 # <a name="list-targetedmanagedapppolicyassignments"></a>Listar targetedManagedAppPolicyAssignments
 
@@ -81,6 +81,9 @@ Content-Length: 276
   ]
 }
 ```
+
+
+
 
 
 

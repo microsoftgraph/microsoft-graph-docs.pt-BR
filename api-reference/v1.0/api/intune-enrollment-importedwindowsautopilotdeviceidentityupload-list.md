@@ -3,14 +3,14 @@ title: Listar importedWindowsAutopilotDeviceIdentityUploads
 description: Listar Propriedades e relações dos objetos importedWindowsAutopilotDeviceIdentityUpload.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43ae051b5bbd6bbd4f5dd5ca74d558bd82eae07d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c3a13de39cacf4a6e37c792a85491bcc9cebbf28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447856"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979011"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentityuploads"></a>Listar importedWindowsAutopilotDeviceIdentityUploads
 
@@ -48,7 +48,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -76,6 +76,9 @@ Content-Length: 270
   ]
 }
 ```
+
+
+
 
 
 
