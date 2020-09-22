@@ -5,35 +5,35 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9aa5462810304fc12e0f87286212d2b0bf57b2d1
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 299636d25e80224867d07661d652d7df972141e3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181948"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026086"
 ---
-# <a name="check-member-groups"></a><span data-ttu-id="1df7d-103">Verificar grupos de membros</span><span class="sxs-lookup"><span data-stu-id="1df7d-103">Check member groups</span></span>
+# <a name="check-member-groups"></a><span data-ttu-id="49e96-103">Verificar grupos de membros</span><span class="sxs-lookup"><span data-stu-id="49e96-103">Check member groups</span></span>
 
-<span data-ttu-id="1df7d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1df7d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="49e96-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="49e96-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="1df7d-p101">Verifica se há associação em uma lista de grupos especificada e retorna dessa lista os grupos dos quais o usuário, grupo ou objeto de diretório especificado é membro. Esta função é transitiva.</span><span class="sxs-lookup"><span data-stu-id="1df7d-p101">Check for membership in a specified list of groups, and returns from that list those groups of which the specified user, group, or directory object is a member. This function is transitive.</span></span>
+<span data-ttu-id="49e96-p101">Verifica se há associação em uma lista de grupos especificada e retorna dessa lista os grupos dos quais o usuário, grupo ou objeto de diretório especificado é membro. Esta função é transitiva.</span><span class="sxs-lookup"><span data-stu-id="49e96-p101">Check for membership in a specified list of groups, and returns from that list those groups of which the specified user, group, or directory object is a member. This function is transitive.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1df7d-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="1df7d-107">Permissions</span></span>
-<span data-ttu-id="1df7d-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1df7d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="49e96-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="49e96-107">Permissions</span></span>
+<span data-ttu-id="49e96-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="49e96-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1df7d-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1df7d-110">Permission type</span></span>      | <span data-ttu-id="1df7d-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1df7d-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="49e96-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="49e96-110">Permission type</span></span>      | <span data-ttu-id="49e96-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="49e96-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1df7d-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1df7d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1df7d-113">User. ReadBasic. All e GroupMember. Read. All, User. Read. All e GroupMember. Read. All, User. ReadBasic. All e Group. Read. All, User. adread. All e Group. Read. All, Directory. Read. All</span><span class="sxs-lookup"><span data-stu-id="1df7d-113">User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All</span></span>    |
-|<span data-ttu-id="1df7d-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1df7d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1df7d-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1df7d-115">Not supported.</span></span>    |
-|<span data-ttu-id="1df7d-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1df7d-116">Application</span></span> | <span data-ttu-id="1df7d-117">User. Read. All e GroupMember. Read. All, User. Read. All e Group. Read. All, Directory. Read. All</span><span class="sxs-lookup"><span data-stu-id="1df7d-117">User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All</span></span> |
+|<span data-ttu-id="49e96-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="49e96-112">Delegated (work or school account)</span></span> | <span data-ttu-id="49e96-113">User. ReadBasic. All e GroupMember. Read. All, User. Read. All e GroupMember. Read. All, User. ReadBasic. All e Group. Read. All, User. adread. All e Group. Read. All, Directory. Read. All</span><span class="sxs-lookup"><span data-stu-id="49e96-113">User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All</span></span>    |
+|<span data-ttu-id="49e96-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="49e96-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="49e96-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="49e96-115">Not supported.</span></span>    |
+|<span data-ttu-id="49e96-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="49e96-116">Application</span></span> | <span data-ttu-id="49e96-117">User. Read. All e GroupMember. Read. All, User. Read. All e Group. Read. All, Directory. Read. All</span><span class="sxs-lookup"><span data-stu-id="49e96-117">User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All</span></span> |
 
-<span data-ttu-id="1df7d-118">Use as orientações de cenário a seguir para ajudar a determinar quais tipos de permissão usar:</span><span class="sxs-lookup"><span data-stu-id="1df7d-118">Use the follow scenario guidance to help determine which permission types to use:</span></span>
-- <span data-ttu-id="1df7d-119">Use as permissões User. Read e GroupMember. Read. All ou User. Read e Group. Read. All para obter associações de grupo para o usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="1df7d-119">Use User.Read and GroupMember.Read.All or User.Read and Group.Read.All permissions to get group memberships for the signed-in user.</span></span>
-- <span data-ttu-id="1df7d-120">Use User. ReadBasic. All e GroupMember. Read. All, User. Read. All e GroupMember. Read. All, User. ReadBasic. All e Group. Read. All ou User.. All e Group. Read. All para obter associações de grupo para qualquer usuário.</span><span class="sxs-lookup"><span data-stu-id="1df7d-120">Use User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All or User.Read.All and Group.Read.All permissions to get group memberships for any user.</span></span>
-- <span data-ttu-id="1df7d-121">Use a permissão GroupMember. Read. All ou Group. Read. All para obter associações de grupo para um grupo.</span><span class="sxs-lookup"><span data-stu-id="1df7d-121">Use GroupMember.Read.All or Group.Read.All permission to get group memberships for a group.</span></span>
-- <span data-ttu-id="1df7d-122">Use a permissão Directory. Read. All para verificar as associações de grupo para um objeto de diretório.</span><span class="sxs-lookup"><span data-stu-id="1df7d-122">Use Directory.Read.All permission to check group memberships for a directory object.</span></span>
+<span data-ttu-id="49e96-118">Use as orientações de cenário a seguir para ajudar a determinar quais tipos de permissão usar:</span><span class="sxs-lookup"><span data-stu-id="49e96-118">Use the follow scenario guidance to help determine which permission types to use:</span></span>
+- <span data-ttu-id="49e96-119">Use as permissões User. Read e GroupMember. Read. All ou User. Read e Group. Read. All para obter associações de grupo para o usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="49e96-119">Use User.Read and GroupMember.Read.All or User.Read and Group.Read.All permissions to get group memberships for the signed-in user.</span></span>
+- <span data-ttu-id="49e96-120">Use User. ReadBasic. All e GroupMember. Read. All, User. Read. All e GroupMember. Read. All, User. ReadBasic. All e Group. Read. All ou User.. All e Group. Read. All para obter associações de grupo para qualquer usuário.</span><span class="sxs-lookup"><span data-stu-id="49e96-120">Use User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All or User.Read.All and Group.Read.All permissions to get group memberships for any user.</span></span>
+- <span data-ttu-id="49e96-121">Use a permissão GroupMember. Read. All ou Group. Read. All para obter associações de grupo para um grupo.</span><span class="sxs-lookup"><span data-stu-id="49e96-121">Use GroupMember.Read.All or Group.Read.All permission to get group memberships for a group.</span></span>
+- <span data-ttu-id="49e96-122">Use a permissão Directory. Read. All para verificar as associações de grupo para um objeto de diretório.</span><span class="sxs-lookup"><span data-stu-id="49e96-122">Use Directory.Read.All permission to check group memberships for a directory object.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="1df7d-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1df7d-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="49e96-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="49e96-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/checkMemberGroups
@@ -41,29 +41,29 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 POST /groups/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
-## <a name="request-headers"></a><span data-ttu-id="1df7d-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1df7d-124">Request headers</span></span>
-| <span data-ttu-id="1df7d-125">Nome</span><span class="sxs-lookup"><span data-stu-id="1df7d-125">Name</span></span>       | <span data-ttu-id="1df7d-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="1df7d-126">Type</span></span> | <span data-ttu-id="1df7d-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="1df7d-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="49e96-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="49e96-124">Request headers</span></span>
+| <span data-ttu-id="49e96-125">Nome</span><span class="sxs-lookup"><span data-stu-id="49e96-125">Name</span></span>       | <span data-ttu-id="49e96-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="49e96-126">Type</span></span> | <span data-ttu-id="49e96-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="49e96-127">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="1df7d-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="1df7d-128">Authorization</span></span>  | <span data-ttu-id="1df7d-129">string</span><span class="sxs-lookup"><span data-stu-id="1df7d-129">string</span></span>  | <span data-ttu-id="1df7d-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1df7d-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1df7d-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1df7d-132">Content-Type</span></span>  | <span data-ttu-id="1df7d-133">string</span><span class="sxs-lookup"><span data-stu-id="1df7d-133">string</span></span> | <span data-ttu-id="1df7d-134">application/json</span><span class="sxs-lookup"><span data-stu-id="1df7d-134">application/json</span></span>  |
+| <span data-ttu-id="49e96-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="49e96-128">Authorization</span></span>  | <span data-ttu-id="49e96-129">string</span><span class="sxs-lookup"><span data-stu-id="49e96-129">string</span></span>  | <span data-ttu-id="49e96-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="49e96-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="49e96-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="49e96-132">Content-Type</span></span>  | <span data-ttu-id="49e96-133">string</span><span class="sxs-lookup"><span data-stu-id="49e96-133">string</span></span> | <span data-ttu-id="49e96-134">application/json</span><span class="sxs-lookup"><span data-stu-id="49e96-134">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="1df7d-135">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1df7d-135">Request body</span></span>
-<span data-ttu-id="1df7d-136">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1df7d-136">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="49e96-135">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="49e96-135">Request body</span></span>
+<span data-ttu-id="49e96-136">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="49e96-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="1df7d-137">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="1df7d-137">Parameter</span></span>    | <span data-ttu-id="1df7d-138">Tipo</span><span class="sxs-lookup"><span data-stu-id="1df7d-138">Type</span></span>   |<span data-ttu-id="1df7d-139">Descrição</span><span class="sxs-lookup"><span data-stu-id="1df7d-139">Description</span></span>|
+| <span data-ttu-id="49e96-137">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="49e96-137">Parameter</span></span>    | <span data-ttu-id="49e96-138">Tipo</span><span class="sxs-lookup"><span data-stu-id="49e96-138">Type</span></span>   |<span data-ttu-id="49e96-139">Descrição</span><span class="sxs-lookup"><span data-stu-id="49e96-139">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1df7d-140">groupIds</span><span class="sxs-lookup"><span data-stu-id="1df7d-140">groupIds</span></span>|<span data-ttu-id="1df7d-141">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="1df7d-141">String collection</span></span>|<span data-ttu-id="1df7d-p104">Uma coleção que contém as IDs de objetos dos grupos em que se deve verificar a associação. Até 20 grupos podem ser especificados.</span><span class="sxs-lookup"><span data-stu-id="1df7d-p104">A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.</span></span>|
+|<span data-ttu-id="49e96-140">groupIds</span><span class="sxs-lookup"><span data-stu-id="49e96-140">groupIds</span></span>|<span data-ttu-id="49e96-141">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="49e96-141">String collection</span></span>|<span data-ttu-id="49e96-p104">Uma coleção que contém as IDs de objetos dos grupos em que se deve verificar a associação. Até 20 grupos podem ser especificados.</span><span class="sxs-lookup"><span data-stu-id="49e96-p104">A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="1df7d-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="1df7d-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="49e96-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="49e96-144">Response</span></span>
 
-<span data-ttu-id="1df7d-145">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto da coleção de cadeias de caracteres no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1df7d-145">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
+<span data-ttu-id="49e96-145">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto da coleção de cadeias de caracteres no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="49e96-145">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1df7d-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1df7d-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="49e96-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="49e96-146">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="1df7d-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1df7d-147">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="49e96-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="49e96-147">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1df7d-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="1df7d-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="49e96-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="49e96-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_checkmembergroups"
@@ -79,27 +79,27 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="1df7d-149">C#</span><span class="sxs-lookup"><span data-stu-id="1df7d-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="49e96-149">C#</span><span class="sxs-lookup"><span data-stu-id="49e96-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-checkmembergroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1df7d-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1df7d-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="49e96-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="49e96-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-checkmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1df7d-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1df7d-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="49e96-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="49e96-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-checkmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="1df7d-152">Java</span><span class="sxs-lookup"><span data-stu-id="1df7d-152">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="49e96-152">Java</span><span class="sxs-lookup"><span data-stu-id="49e96-152">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-checkmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="1df7d-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="1df7d-153">Response</span></span>
-<span data-ttu-id="1df7d-p105">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1df7d-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="49e96-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="49e96-153">Response</span></span>
+<span data-ttu-id="49e96-p105">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="49e96-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -128,3 +128,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -5,31 +5,31 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: AAmatino
-ms.openlocfilehash: f0311b379d2768a2dc704730b7547334e5a64c97
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 36215d545bb6d24fae4ef8cbca35a1c5210976bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811417"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026401"
 ---
-# <a name="rankedemailaddress-resource-type"></a><span data-ttu-id="207ce-103">tipo de recurso rankedEmailAddress</span><span class="sxs-lookup"><span data-stu-id="207ce-103">rankedEmailAddress resource type</span></span>
+# <a name="rankedemailaddress-resource-type"></a><span data-ttu-id="b7603-103">tipo de recurso rankedEmailAddress</span><span class="sxs-lookup"><span data-stu-id="b7603-103">rankedEmailAddress resource type</span></span>
 
-<span data-ttu-id="207ce-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="207ce-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b7603-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b7603-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="207ce-105">Representa um endereço de email classificado.</span><span class="sxs-lookup"><span data-stu-id="207ce-105">Represents a ranked email address.</span></span>
+<span data-ttu-id="b7603-105">Representa um endereço de email classificado.</span><span class="sxs-lookup"><span data-stu-id="b7603-105">Represents a ranked email address.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="207ce-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="207ce-106">Properties</span></span>
-| <span data-ttu-id="207ce-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="207ce-107">Property</span></span>     | <span data-ttu-id="207ce-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="207ce-108">Type</span></span>   |<span data-ttu-id="207ce-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="207ce-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b7603-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b7603-106">Properties</span></span>
+| <span data-ttu-id="b7603-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b7603-107">Property</span></span>     | <span data-ttu-id="b7603-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="b7603-108">Type</span></span>   |<span data-ttu-id="b7603-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="b7603-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="207ce-110">address</span><span class="sxs-lookup"><span data-stu-id="207ce-110">address</span></span>|<span data-ttu-id="207ce-111">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="207ce-111">string</span></span>|<span data-ttu-id="207ce-112">O endereço de email.</span><span class="sxs-lookup"><span data-stu-id="207ce-112">The email address.</span></span>|
-|<span data-ttu-id="207ce-113">classificação</span><span class="sxs-lookup"><span data-stu-id="207ce-113">rank</span></span>|<span data-ttu-id="207ce-114">double</span><span class="sxs-lookup"><span data-stu-id="207ce-114">double</span></span>|<span data-ttu-id="207ce-115">A classificação do endereço de email.</span><span class="sxs-lookup"><span data-stu-id="207ce-115">The rank of the email address.</span></span> <span data-ttu-id="207ce-116">Uma classificação é usada como uma chave de classificação, em relação aos outros resultados retornados.</span><span class="sxs-lookup"><span data-stu-id="207ce-116">A rank is used as a sort key, in relation to the other returned results.</span></span> <span data-ttu-id="207ce-117">Um valor de classificação mais alto corresponde a um resultado mais relevante.</span><span class="sxs-lookup"><span data-stu-id="207ce-117">A higher rank value corresponds to a more relevant result.</span></span> <span data-ttu-id="207ce-118">A relevância é determinada por sinais de comunicação, colaboração e relacionamento comercial.</span><span class="sxs-lookup"><span data-stu-id="207ce-118">Relevance is determined by communication, collaboration, and business relationship signals.</span></span>|
+|<span data-ttu-id="b7603-110">address</span><span class="sxs-lookup"><span data-stu-id="b7603-110">address</span></span>|<span data-ttu-id="b7603-111">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="b7603-111">string</span></span>|<span data-ttu-id="b7603-112">O endereço de email.</span><span class="sxs-lookup"><span data-stu-id="b7603-112">The email address.</span></span>|
+|<span data-ttu-id="b7603-113">classificação</span><span class="sxs-lookup"><span data-stu-id="b7603-113">rank</span></span>|<span data-ttu-id="b7603-114">double</span><span class="sxs-lookup"><span data-stu-id="b7603-114">double</span></span>|<span data-ttu-id="b7603-115">A classificação do endereço de email.</span><span class="sxs-lookup"><span data-stu-id="b7603-115">The rank of the email address.</span></span> <span data-ttu-id="b7603-116">Uma classificação é usada como uma chave de classificação, em relação aos outros resultados retornados.</span><span class="sxs-lookup"><span data-stu-id="b7603-116">A rank is used as a sort key, in relation to the other returned results.</span></span> <span data-ttu-id="b7603-117">Um valor de classificação mais alto corresponde a um resultado mais relevante.</span><span class="sxs-lookup"><span data-stu-id="b7603-117">A higher rank value corresponds to a more relevant result.</span></span> <span data-ttu-id="b7603-118">A relevância é determinada por sinais de comunicação, colaboração e relacionamento comercial.</span><span class="sxs-lookup"><span data-stu-id="b7603-118">Relevance is determined by communication, collaboration, and business relationship signals.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="207ce-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="207ce-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b7603-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b7603-119">JSON representation</span></span>
 
-<span data-ttu-id="207ce-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="207ce-120">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b7603-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b7603-120">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -58,3 +58,5 @@ ms.locfileid: "46811417"
   "suppressions": []
 }
 -->
+
+

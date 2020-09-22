@@ -5,30 +5,30 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b8447db0c2fa5b59b1167a452ac462717dceb7ae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2811983bebfbba32670c8eadc229512199f5aa23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509840"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025428"
 ---
-# <a name="list-securescorecontrolprofiles"></a><span data-ttu-id="3eb34-103">Listar secureScoreControlProfiles</span><span class="sxs-lookup"><span data-stu-id="3eb34-103">List secureScoreControlProfiles</span></span>
+# <a name="list-securescorecontrolprofiles"></a><span data-ttu-id="40155-103">Listar secureScoreControlProfiles</span><span class="sxs-lookup"><span data-stu-id="40155-103">List secureScoreControlProfiles</span></span>
 
-<span data-ttu-id="3eb34-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3eb34-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="40155-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="40155-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="3eb34-105">Recupere as propriedades e os relacionamentos de um objeto [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="3eb34-105">Retrieve the properties and relationships of a [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) object.</span></span>
+<span data-ttu-id="40155-105">Recupere as propriedades e os relacionamentos de um objeto [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="40155-105">Retrieve the properties and relationships of a [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3eb34-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="3eb34-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="40155-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="40155-106">Permissions</span></span>
 
-<span data-ttu-id="3eb34-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3eb34-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="40155-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="40155-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3eb34-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3eb34-109">Permission type</span></span>      | <span data-ttu-id="3eb34-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3eb34-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="40155-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="40155-109">Permission type</span></span>      | <span data-ttu-id="40155-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="40155-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3eb34-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3eb34-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="3eb34-112">Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All.</span><span class="sxs-lookup"><span data-stu-id="3eb34-112">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span>   |
-|<span data-ttu-id="3eb34-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3eb34-113">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="3eb34-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3eb34-114">Not supported.</span></span>  |
-|<span data-ttu-id="3eb34-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3eb34-115">Application</span></span> | <span data-ttu-id="3eb34-116">Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All.</span><span class="sxs-lookup"><span data-stu-id="3eb34-116">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span> |
+|<span data-ttu-id="40155-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="40155-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="40155-112">Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All.</span><span class="sxs-lookup"><span data-stu-id="40155-112">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span>   |
+|<span data-ttu-id="40155-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="40155-113">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="40155-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="40155-114">Not supported.</span></span>  |
+|<span data-ttu-id="40155-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="40155-115">Application</span></span> | <span data-ttu-id="40155-116">Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All.</span><span class="sxs-lookup"><span data-stu-id="40155-116">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3eb34-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3eb34-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="40155-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="40155-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,36 +38,36 @@ GET /security/secureScoreControlProfiles?$top=1
 GET /security/secureScoreControlProfiles?$filter={property} eq '{property-value}'
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="3eb34-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="3eb34-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="40155-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="40155-118">Optional query parameters</span></span>
 
-<span data-ttu-id="3eb34-119">Este método suporta os seguintes [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta:</span><span class="sxs-lookup"><span data-stu-id="3eb34-119">This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
+<span data-ttu-id="40155-119">Este método suporta os seguintes [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta:</span><span class="sxs-lookup"><span data-stu-id="40155-119">This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
 
 - `$count`
 - `$filter`
 - `$skip`
-- <span data-ttu-id="3eb34-120">`$top` retornará os principais resultados agregados de cada provedor de API de segurança.</span><span class="sxs-lookup"><span data-stu-id="3eb34-120">`$top` will return the aggregated top results from each security API provider.</span></span>  
+- <span data-ttu-id="40155-120">`$top` retornará os principais resultados agregados de cada provedor de API de segurança.</span><span class="sxs-lookup"><span data-stu-id="40155-120">`$top` will return the aggregated top results from each security API provider.</span></span>  
 
-## <a name="request-headers"></a><span data-ttu-id="3eb34-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3eb34-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="40155-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="40155-121">Request headers</span></span>
 
-| <span data-ttu-id="3eb34-122">Nome</span><span class="sxs-lookup"><span data-stu-id="3eb34-122">Name</span></span>      |<span data-ttu-id="3eb34-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="3eb34-123">Description</span></span>|
+| <span data-ttu-id="40155-122">Nome</span><span class="sxs-lookup"><span data-stu-id="40155-122">Name</span></span>      |<span data-ttu-id="40155-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="40155-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="3eb34-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="3eb34-124">Authorization</span></span>  | <span data-ttu-id="3eb34-125">Portador {código}.</span><span class="sxs-lookup"><span data-stu-id="3eb34-125">Bearer {code}.</span></span> <span data-ttu-id="3eb34-126">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3eb34-126">Required.</span></span>|
+| <span data-ttu-id="40155-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="40155-124">Authorization</span></span>  | <span data-ttu-id="40155-125">Portador {código}.</span><span class="sxs-lookup"><span data-stu-id="40155-125">Bearer {code}.</span></span> <span data-ttu-id="40155-126">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="40155-126">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3eb34-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3eb34-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="40155-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="40155-127">Request body</span></span>
 
-<span data-ttu-id="3eb34-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3eb34-128">Do not supply a request body for this method.</span></span> <span data-ttu-id="3eb34-129">O corpo da solicitação será ignorado.</span><span class="sxs-lookup"><span data-stu-id="3eb34-129">The request body will be ignored.</span></span>
+<span data-ttu-id="40155-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="40155-128">Do not supply a request body for this method.</span></span> <span data-ttu-id="40155-129">O corpo da solicitação será ignorado.</span><span class="sxs-lookup"><span data-stu-id="40155-129">The request body will be ignored.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3eb34-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="3eb34-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="40155-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="40155-130">Response</span></span>
 
-<span data-ttu-id="3eb34-131">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos **secureScoreControlProfiles** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3eb34-131">If successful, this method returns a `200 OK` response code and collection of **secureScoreControlProfiles** objects in the response body.</span></span>
+<span data-ttu-id="40155-131">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos **secureScoreControlProfiles** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="40155-131">If successful, this method returns a `200 OK` response code and collection of **secureScoreControlProfiles** objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3eb34-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3eb34-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="40155-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="40155-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="3eb34-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3eb34-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="40155-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="40155-133">Request</span></span>
 
-<span data-ttu-id="3eb34-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="3eb34-134">The following is an example of the request.</span></span>
+<span data-ttu-id="40155-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="40155-134">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="3eb34-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="3eb34-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="40155-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="40155-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_securescorecontrolprofiles"
@@ -76,28 +76,28 @@ GET /security/secureScoreControlProfiles?$filter={property} eq '{property-value}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles
 ```
-# <a name="c"></a>[<span data-ttu-id="3eb34-136">C#</span><span class="sxs-lookup"><span data-stu-id="3eb34-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="40155-136">C#</span><span class="sxs-lookup"><span data-stu-id="40155-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-securescorecontrolprofiles-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="3eb34-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3eb34-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="40155-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="40155-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-securescorecontrolprofiles-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3eb34-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3eb34-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="40155-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="40155-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-securescorecontrolprofiles-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="3eb34-139">Java</span><span class="sxs-lookup"><span data-stu-id="3eb34-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="40155-139">Java</span><span class="sxs-lookup"><span data-stu-id="40155-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-securescorecontrolprofiles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="3eb34-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="3eb34-140">Response</span></span>
+### <a name="response"></a><span data-ttu-id="40155-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="40155-140">Response</span></span>
 
-<span data-ttu-id="3eb34-141">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="3eb34-141">The following is an example of the response.</span></span>
+<span data-ttu-id="40155-141">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="40155-141">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -176,3 +176,4 @@ Content-type: application/json
   ]
 }
 -->
+

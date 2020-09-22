@@ -7,25 +7,25 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: O tipo complexo listInfo oferece informações adicionais sobre uma lista.
 doc_type: resourcePageType
-ms.openlocfilehash: ddb43fc69b14aaacd93b4db0e397dd6e35171663
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a7a0a7d400d54ce27dc2f0c8a3397def301fa7aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447567"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025255"
 ---
-# <a name="listinfo-resource"></a><span data-ttu-id="0dac5-103">Recurso de ListInfo</span><span class="sxs-lookup"><span data-stu-id="0dac5-103">ListInfo resource</span></span>
+# <a name="listinfo-resource"></a><span data-ttu-id="6c3c9-103">Recurso de ListInfo</span><span class="sxs-lookup"><span data-stu-id="6c3c9-103">ListInfo resource</span></span>
 
-<span data-ttu-id="0dac5-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="0dac5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6c3c9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6c3c9-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="0dac5-105">O tipo complexo **listInfo** oferece informações adicionais sobre uma [lista][].</span><span class="sxs-lookup"><span data-stu-id="0dac5-105">The **listInfo** complex type provides additional information about a [list][].</span></span>
+<span data-ttu-id="6c3c9-105">O tipo complexo **listInfo** oferece informações adicionais sobre uma [lista][].</span><span class="sxs-lookup"><span data-stu-id="6c3c9-105">The **listInfo** complex type provides additional information about a [list][].</span></span>
 
 [lista]: list.md
 [list]: list.md
 
-## <a name="json-representation"></a><span data-ttu-id="0dac5-107">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0dac5-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6c3c9-107">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6c3c9-107">JSON representation</span></span>
 
-<span data-ttu-id="0dac5-108">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0dac5-108">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6c3c9-108">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6c3c9-108">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -42,19 +42,19 @@ ms.locfileid: "42447567"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="0dac5-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0dac5-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6c3c9-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6c3c9-109">Properties</span></span>
 
-| <span data-ttu-id="0dac5-110">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="0dac5-110">Property name</span></span>           | <span data-ttu-id="0dac5-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="0dac5-111">Type</span></span>    | <span data-ttu-id="0dac5-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="0dac5-112">Description</span></span>
+| <span data-ttu-id="6c3c9-110">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="6c3c9-110">Property name</span></span>           | <span data-ttu-id="6c3c9-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="6c3c9-111">Type</span></span>    | <span data-ttu-id="6c3c9-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="6c3c9-112">Description</span></span>
 |:------------------------|:--------|:------------------------------------------------
-| <span data-ttu-id="0dac5-113">**contentTypesEnabled**</span><span class="sxs-lookup"><span data-stu-id="0dac5-113">**contentTypesEnabled**</span></span> | <span data-ttu-id="0dac5-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="0dac5-114">Boolean</span></span> | <span data-ttu-id="0dac5-115">Se `true`, indica que os tipos de conteúdo estão habilitados nesta lista.</span><span class="sxs-lookup"><span data-stu-id="0dac5-115">If `true`, indicates that content types are enabled for this list.</span></span>
-| <span data-ttu-id="0dac5-116">**hidden**</span><span class="sxs-lookup"><span data-stu-id="0dac5-116">**hidden**</span></span>              | <span data-ttu-id="0dac5-117">Booliano</span><span class="sxs-lookup"><span data-stu-id="0dac5-117">Boolean</span></span> | <span data-ttu-id="0dac5-118">Se `true`, indica que a lista não fica visível normalmente na experiência de usuário do SharePoint.</span><span class="sxs-lookup"><span data-stu-id="0dac5-118">If `true`, indicates that the list is not normally visible in the SharePoint user experience.</span></span>
-| <span data-ttu-id="0dac5-119">**template**</span><span class="sxs-lookup"><span data-stu-id="0dac5-119">**template**</span></span>            | <span data-ttu-id="0dac5-120">String</span><span class="sxs-lookup"><span data-stu-id="0dac5-120">String</span></span>  | <span data-ttu-id="0dac5-121">Um valor enumerado que representa o modelo de lista básica usado na criação da lista.</span><span class="sxs-lookup"><span data-stu-id="0dac5-121">An enumerated value that represents the base list template used in creating the list.</span></span> <span data-ttu-id="0dac5-122">Os valores possíveis incluem `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` e mais.</span><span class="sxs-lookup"><span data-stu-id="0dac5-122">Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more.</span></span>
+| <span data-ttu-id="6c3c9-113">**contentTypesEnabled**</span><span class="sxs-lookup"><span data-stu-id="6c3c9-113">**contentTypesEnabled**</span></span> | <span data-ttu-id="6c3c9-114">Booliano</span><span class="sxs-lookup"><span data-stu-id="6c3c9-114">Boolean</span></span> | <span data-ttu-id="6c3c9-115">Se `true`, indica que os tipos de conteúdo estão habilitados nesta lista.</span><span class="sxs-lookup"><span data-stu-id="6c3c9-115">If `true`, indicates that content types are enabled for this list.</span></span>
+| <span data-ttu-id="6c3c9-116">**hidden**</span><span class="sxs-lookup"><span data-stu-id="6c3c9-116">**hidden**</span></span>              | <span data-ttu-id="6c3c9-117">Booliano</span><span class="sxs-lookup"><span data-stu-id="6c3c9-117">Boolean</span></span> | <span data-ttu-id="6c3c9-118">Se `true`, indica que a lista não fica visível normalmente na experiência de usuário do SharePoint.</span><span class="sxs-lookup"><span data-stu-id="6c3c9-118">If `true`, indicates that the list is not normally visible in the SharePoint user experience.</span></span>
+| <span data-ttu-id="6c3c9-119">**template**</span><span class="sxs-lookup"><span data-stu-id="6c3c9-119">**template**</span></span>            | <span data-ttu-id="6c3c9-120">String</span><span class="sxs-lookup"><span data-stu-id="6c3c9-120">String</span></span>  | <span data-ttu-id="6c3c9-121">Um valor enumerado que representa o modelo de lista básica usado na criação da lista.</span><span class="sxs-lookup"><span data-stu-id="6c3c9-121">An enumerated value that represents the base list template used in creating the list.</span></span> <span data-ttu-id="6c3c9-122">Os valores possíveis incluem `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` e mais.</span><span class="sxs-lookup"><span data-stu-id="6c3c9-122">Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="0dac5-123">Comentários</span><span class="sxs-lookup"><span data-stu-id="0dac5-123">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="6c3c9-123">Comentários</span><span class="sxs-lookup"><span data-stu-id="6c3c9-123">Remarks</span></span>
 
-<span data-ttu-id="0dac5-124">Embora a maioria das listas criadas pelos usuários tenha um dos valores listados acima, outros valores também são possíveis.</span><span class="sxs-lookup"><span data-stu-id="0dac5-124">While most lists created by users will have one of the values listed above, other values are possible as well.</span></span>
-<span data-ttu-id="0dac5-125">Seu aplicativo deve estar preparado para lidar com os valores que não estão listados aqui.</span><span class="sxs-lookup"><span data-stu-id="0dac5-125">Your app should be prepared to handle any values that are not listed here.</span></span>
-<span data-ttu-id="0dac5-126">Para os desenvolvedores familiarizados com APIs de CSOM do SharePoint, o valor `template` corresponde à enumeração `SPListTemplateType`.</span><span class="sxs-lookup"><span data-stu-id="0dac5-126">For developers familiar with SharePoint's CSOM APIs, the `template` value corresponds to the `SPListTemplateType` enumeration.</span></span>
+<span data-ttu-id="6c3c9-124">Embora a maioria das listas criadas pelos usuários tenha um dos valores listados acima, outros valores também são possíveis.</span><span class="sxs-lookup"><span data-stu-id="6c3c9-124">While most lists created by users will have one of the values listed above, other values are possible as well.</span></span>
+<span data-ttu-id="6c3c9-125">Seu aplicativo deve estar preparado para lidar com os valores que não estão listados aqui.</span><span class="sxs-lookup"><span data-stu-id="6c3c9-125">Your app should be prepared to handle any values that are not listed here.</span></span>
+<span data-ttu-id="6c3c9-126">Para os desenvolvedores familiarizados com APIs de CSOM do SharePoint, o valor `template` corresponde à enumeração `SPListTemplateType`.</span><span class="sxs-lookup"><span data-stu-id="6c3c9-126">For developers familiar with SharePoint's CSOM APIs, the `template` value corresponds to the `SPListTemplateType` enumeration.</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -69,3 +69,4 @@ ms.locfileid: "42447567"
   ],
   "tocPath": ""
 }-->
+
