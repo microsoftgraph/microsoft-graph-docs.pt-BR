@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f0683c967d56303cb092b7300e50312ab329ea4b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8c4807abc04cb980ec452590b9643f2b07d0ce67
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458030"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016696"
 ---
 # <a name="countrynamedlocation-resource-type"></a>tipo de recurso countryNamedLocation
 
@@ -38,9 +38,9 @@ Herda de [namedLocation](../resources/namedLocation.md)
 |:-------------|:------------|:------------|
 |countriesAndRegions|Coleção String|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2.|
 |createdDateTime|DateTimeOffset|O tipo TIMESTAMP representa data e hora de criação do local usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Herdado de [namedLocation](../resources/namedLocation.md).|
-|displayName|Cadeia de caracteres|Nome legível do local. Herdado de [namedLocation](../resources/namedLocation.md).|
+|displayName|String|Nome legível do local. Herdado de [namedLocation](../resources/namedLocation.md).|
 |id|String|Identificador de um objeto namedLocation. Somente leitura. Herdado de [namedLocation](../resources/namedLocation.md).|
-|includeUnknownCountriesAndRegions|Boolean|True se endereços IP que não mapeiam para um país ou região devem ser incluídos no local nomeado.|
+|includeUnknownCountriesAndRegions|Booliano|True se endereços IP que não mapeiam para um país ou região devem ser incluídos no local nomeado.|
 |modifiedDateTime|DateTimeOffset|O tipo TIMESTAMP representa data e hora da última modificação do local usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Herdado de [namedLocation](../resources/namedLocation.md).|
 
 ## <a name="relationships"></a>Relações
@@ -80,3 +80,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

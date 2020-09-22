@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 2b718851d1a27c3317a0ce77554be7ea3f8906a4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 964de9f9567c419b4e14d38e79cdff92867fb5ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811494"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016804"
 ---
 #  <a name="controlscore-resource-type"></a>tipo de recurso controlScore
 
@@ -55,3 +55,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

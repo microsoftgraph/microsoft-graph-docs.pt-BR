@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 015b1c886f439e3c5952d1c1a5fcce02fb21773b
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: ae3add0c3541e1617fec6bb71f0e05bb8fdc1b3f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909650"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016678"
 ---
 # <a name="educationorganization-resource-type"></a>tipo de recurso educationOrganization
 
@@ -25,7 +25,7 @@ Entidade abstrata usada para modelar a semelhança entre diferentes tipos de org
 | Propriedade       | Tipo   | Descrição                                                                       |
 | :------------- | :----- | :-------------------------------------------------------------------------------- |
 | description    | String | Descrição da organização.                                                         |
-| displayName    | Cadeia de caracteres | Nome de exibição da organização.                                                        |
+| displayName    | String | Nome de exibição da organização.                                                        |
 | externalSource | String | De onde esse usuário foi criado. Os valores possíveis são: `sis` , `lms` , ou `manual` . |
 
 ## <a name="relationships"></a>Relações
@@ -64,3 +64,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

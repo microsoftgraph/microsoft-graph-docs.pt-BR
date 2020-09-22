@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: b2a0a4ff42da594f9a74e26cc0facca9564548eb
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5d11f6c1dab607fea27ac71f3142f899a7183a79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809499"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016671"
 ---
 # <a name="governanceschedule-resource-type"></a>tipo de recurso governanceSchedule
 
@@ -27,7 +27,7 @@ Representa o agendamento de um [governanceRoleAssignmentRequest](../resources/go
 |:---------------|:--------|:----------|
 |startDateTime|DateTimeOffset|A hora de início da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|A hora de término da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. *Observação: se o valor for `null` , ele indica uma atribuição permanente.*|
-|type|String|O tipo de agendamento de atribuição de função. O só `Once` é suportado por enquanto.
+|tipo|String|O tipo de agendamento de atribuição de função. O só `Once` é suportado por enquanto.
 |duration|Duração|A duração de uma atribuição de função. É no formato de um TimeSpan.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -64,3 +64,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

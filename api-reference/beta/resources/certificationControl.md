@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: f6ecfa2ffddd362ba6c166d9dc839aedaf6f4723
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 4f2be439f1b286a8d916fe80a7b4fcb4f6d60071
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810577"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016818"
 ---
 #  <a name="certificationcontrol-resource-type"></a>tipo de recurso certificationControl
 
@@ -51,3 +51,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

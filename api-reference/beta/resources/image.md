@@ -2,20 +2,20 @@
 author: JeremyKelley
 description: O recurso Image agrupa propriedades relacionadas a imagens em uma única estrutura.
 ms.date: 09/10/2017
-title: Image
+title: Imagem
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 06d9c5b22c4786fc92e8156dbfea066c77d219f3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fc7f63c0e7d95c8526d4663b82552541585c9ee2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496534"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016630"
 ---
 # <a name="image-resource-type"></a>Tipo de recurso Image
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,3 +57,5 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "suppressions": []
 }
 -->
+
+

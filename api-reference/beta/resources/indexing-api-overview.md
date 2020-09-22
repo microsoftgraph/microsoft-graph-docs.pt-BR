@@ -5,12 +5,12 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 641b1f8b6288073a6079d2777bd30f8277467bed
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
-ms.translationtype: MT
+ms.openlocfilehash: 7c33683c812b469a5a6185fc249a892868c0ef2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989811"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016545"
 ---
 # <a name="use-the-microsoft-search-api-to-index-data"></a>Usar a API de Pesquisa da Microsoft para indexar dados
 
@@ -48,10 +48,10 @@ Os seguintes são limitações conhecidas atuais:
 - Um aplicativo está limitado a quatro operações simultâneas em uma conexão.
 - As conexões têm um limite de capacidade de 700 mil itens ou aproximadamente 70 GB de dados.
 - O tamanho máximo de uma entidade `externalItem` é 4 MB.
-- Não há suporte para a classificação de resultados.
+- A classificação de resultados não é compatível.
 - A classificação de resultados é pelo melhor esforço.
 
-## <a name="whats-new"></a>Novidades
+## <a name="whats-new"></a>O que há de novo
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
 ## <a name="next-steps"></a>Próximas etapas
@@ -59,3 +59,5 @@ Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats
 - Confira a [Visão geral da API de Pesquisa da Microsoft](/graph/search-concept-overview).
 - Faça uma busca detalhada sobre os métodos, propriedades e relações dos recursos [externalConnection](externalconnection.md), [schema](schema.md)e [externalItem](externalitem.md).
 - Confira o [exemplo de conector de pesquisa](https://github.com/microsoftgraph/msgraph-search-connector-sample) no GitHub.
+
+

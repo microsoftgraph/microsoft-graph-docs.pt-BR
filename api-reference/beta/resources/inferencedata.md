@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: profile
 doc_type: resourcePageType
-ms.openlocfilehash: 2097dc14de984f3d1517b4d17e8043f38411b89a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 412d96d3eb497681e65dacd2f7a0576b4071a9aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496170"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016488"
 ---
 # <a name="inferencedata-resource-type"></a>tipo de recurso inferenceData
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ O tipo de recurso [inferenceData](inferencedata.md) fornece detalhes adicionais 
 | Propriedade              | Tipo        | Descrição                                                                     |
 |:----------------------|:------------|:--------------------------------------------------------------------------------|
 |confidenceScore        |Duplo       | A pontuação de confiança reflete a precisão dos dados inferidos sobre o usuário.   |
-|userHasVerifiedAccuracy|Boolean      | Registros se o usuário confirmou essa inferência como true ou false.        |
+|userHasVerifiedAccuracy|Booliano      | Registros se o usuário confirmou essa inferência como true ou false.        |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -56,3 +56,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
