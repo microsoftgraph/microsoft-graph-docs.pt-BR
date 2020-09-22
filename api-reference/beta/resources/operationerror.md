@@ -5,30 +5,30 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: billbliss
-ms.openlocfilehash: 2419d4230e5618f601a5d8fe0743ec9ef807cf00
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d3511979cc03df496a8c12f948ddd728e3cd0c19
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809318"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998507"
 ---
-# <a name="operationerror-resource-type"></a><span data-ttu-id="ae515-103">tipo de recurso operationError</span><span class="sxs-lookup"><span data-stu-id="ae515-103">operationError resource type</span></span>
+# <a name="operationerror-resource-type"></a><span data-ttu-id="1aa7f-103">tipo de recurso operationError</span><span class="sxs-lookup"><span data-stu-id="1aa7f-103">operationError resource type</span></span>
 
-<span data-ttu-id="ae515-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ae515-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1aa7f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1aa7f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ae515-105">Descreve erros no [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="ae515-105">Describes errors in [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
+<span data-ttu-id="1aa7f-105">Descreve erros no [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="1aa7f-105">Describes errors in [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
 
-## <a name="operationerror-properties"></a><span data-ttu-id="ae515-106">Propriedades operationError</span><span class="sxs-lookup"><span data-stu-id="ae515-106">operationError Properties</span></span>
-| <span data-ttu-id="ae515-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ae515-107">Property</span></span>     | <span data-ttu-id="ae515-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="ae515-108">Type</span></span>   |<span data-ttu-id="ae515-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="ae515-109">Description</span></span>|
+## <a name="operationerror-properties"></a><span data-ttu-id="1aa7f-106">Propriedades operationError</span><span class="sxs-lookup"><span data-stu-id="1aa7f-106">operationError Properties</span></span>
+| <span data-ttu-id="1aa7f-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1aa7f-107">Property</span></span>     | <span data-ttu-id="1aa7f-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="1aa7f-108">Type</span></span>   |<span data-ttu-id="1aa7f-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="1aa7f-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ae515-110">código</span><span class="sxs-lookup"><span data-stu-id="ae515-110">code</span></span>|<span data-ttu-id="ae515-111">cadeia de caracteres (somente leitura)</span><span class="sxs-lookup"><span data-stu-id="ae515-111">string (readonly)</span></span>|<span data-ttu-id="ae515-112">Código de erro de operação.</span><span class="sxs-lookup"><span data-stu-id="ae515-112">Operation error code.</span></span>|
-|<span data-ttu-id="ae515-113">message</span><span class="sxs-lookup"><span data-stu-id="ae515-113">message</span></span>|<span data-ttu-id="ae515-114">cadeia de caracteres (somente leitura)</span><span class="sxs-lookup"><span data-stu-id="ae515-114">string (readonly)</span></span>|<span data-ttu-id="ae515-115">Mensagem de erro de operação.</span><span class="sxs-lookup"><span data-stu-id="ae515-115">Operation error message.</span></span>|
+|<span data-ttu-id="1aa7f-110">código</span><span class="sxs-lookup"><span data-stu-id="1aa7f-110">code</span></span>|<span data-ttu-id="1aa7f-111">cadeia de caracteres (somente leitura)</span><span class="sxs-lookup"><span data-stu-id="1aa7f-111">string (readonly)</span></span>|<span data-ttu-id="1aa7f-112">Código de erro de operação.</span><span class="sxs-lookup"><span data-stu-id="1aa7f-112">Operation error code.</span></span>|
+|<span data-ttu-id="1aa7f-113">message</span><span class="sxs-lookup"><span data-stu-id="1aa7f-113">message</span></span>|<span data-ttu-id="1aa7f-114">cadeia de caracteres (somente leitura)</span><span class="sxs-lookup"><span data-stu-id="1aa7f-114">string (readonly)</span></span>|<span data-ttu-id="1aa7f-115">Mensagem de erro de operação.</span><span class="sxs-lookup"><span data-stu-id="1aa7f-115">Operation error message.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="ae515-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ae515-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1aa7f-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1aa7f-116">JSON representation</span></span>
 
-<span data-ttu-id="ae515-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ae515-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1aa7f-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1aa7f-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -54,3 +54,5 @@ ms.locfileid: "46809318"
   "suppressions": []
 }
 -->
+
+
