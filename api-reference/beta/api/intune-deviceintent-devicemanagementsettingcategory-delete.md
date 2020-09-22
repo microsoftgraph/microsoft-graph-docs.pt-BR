@@ -3,14 +3,14 @@ title: Excluir deviceManagementSettingCategory
 description: Exclui deviceManagementSettingCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 547b23b9f28044f353b26aee6a4156349a27fe19
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d5d56f1aec7cb7e6edc68a0e9ac0ebed7d0b13a8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427921"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986725"
 ---
 # <a name="delete-devicemanagementsettingcategory"></a>Excluir deviceManagementSettingCategory
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

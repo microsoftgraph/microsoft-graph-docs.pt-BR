@@ -3,14 +3,14 @@ title: Listar iosVppApps
 description: Listar propriedades e relações dos objetos iosVppApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fb7f3093b52f4ea25ed4d45cfd9308a46a13968c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e6b87c10ad86fe7bfe912c8f8e800823661f2381
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43416877"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987026"
 ---
 # <a name="list-iosvppapps"></a>Listar iosVppApps
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2444
+Content-Length: 2509
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 2444
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "usedLicenseCount": 0,
       "totalLicenseCount": 1,
       "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -134,6 +136,9 @@ Content-Length: 2444
   ]
 }
 ```
+
+
+
 
 
 

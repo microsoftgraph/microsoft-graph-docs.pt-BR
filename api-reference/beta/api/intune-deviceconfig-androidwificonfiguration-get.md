@@ -3,14 +3,14 @@ title: Obter androidWiFiConfiguration
 description: Leia as propriedades e as relações do objeto androidWiFiConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 931fe401b610370789b96336110fc42872d9202a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d318849ab0f2acaa64530afff68c229683cca7e5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43435365"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986879"
 ---
 # <a name="get-androidwificonfiguration"></a>Obter androidWiFiConfiguration
 
@@ -114,6 +114,9 @@ Content-Length: 1473
   }
 }
 ```
+
+
+
 
 
 

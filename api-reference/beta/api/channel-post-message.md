@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 29b0f905c1fddb1c85b28d726f825fc42256933b
-ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
+ms.openlocfilehash: 3567627fc1d30bf64c25b4d61b3eb22491a025ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47423636"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987106"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>Criar chatMessage em um canal
 
@@ -160,3 +160,5 @@ Content-length: 160
   ]
 }
 -->
+
+

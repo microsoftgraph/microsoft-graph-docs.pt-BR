@@ -5,12 +5,12 @@ author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d42dc962579efd783f56bc0e2f9fd0b15c334a10
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: 65b6311e66969d4b4daa3066eeef3fc4bcdd73ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47439854"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987174"
 ---
 # <a name="callrecord-getdirectroutingcalls"></a>callRecord: getDirectRoutingCalls
 
@@ -126,3 +126,5 @@ HTTP/1.1 200 OK
 * [Relatório de uso do roteamento direto do Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) no centro de administração do Microsoft Teams
 * [Painel de integridade para roteamento direto](https://docs.microsoft.com/MicrosoftTeams/direct-routing-health-dashboard) no centro de administração do Microsoft Teams
 * [Relatório de chamada PSTN no Microsoft Graph](callrecords-callrecord-getpstncalls.md)
+
+

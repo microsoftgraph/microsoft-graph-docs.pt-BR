@@ -3,14 +3,14 @@ title: Excluir deviceManagementIntentSettingCategory
 description: Exclui deviceManagementIntentSettingCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 114b80ff76e0d647752ffef9fc5286c7fd1be4d2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 275a45bfd78b74cd57045c23d0c192fa82873525
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43428069"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986795"
 ---
 # <a name="delete-devicemanagementintentsettingcategory"></a>Excluir deviceManagementIntentSettingCategory
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

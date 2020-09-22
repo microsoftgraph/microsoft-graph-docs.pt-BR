@@ -3,14 +3,14 @@ title: Excluir iosVppAppAssignedLicense
 description: Exclui iosVppAppAssignedLicense.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc7c4227ef7f51af60b6ae54432ae59914038e38
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 76ca1de0bd5f80f19fa3a0e4034d1f30fb42e34a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43416667"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986949"
 ---
 # <a name="delete-iosvppappassignedlicense"></a>Excluir iosVppAppAssignedLicense
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

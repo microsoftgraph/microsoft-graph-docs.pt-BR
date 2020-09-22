@@ -5,12 +5,12 @@ author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9d3c6d7f8ffe207324ca36929b65201daad866d5
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: c91e4fdd7953e2391cd73a4dcd602d27adf5d706
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47439847"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987173"
 ---
 # <a name="callrecord-getpstncalls"></a>callRecord: getPstnCalls
 
@@ -124,3 +124,5 @@ HTTP/1.1 200 OK
 
 * [Relatório de uso do Microsoft Teams PSTN](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
 * [Relatório de roteamento direto no Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md)
+
+

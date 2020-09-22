@@ -3,14 +3,14 @@ title: Obter iosMobileAppConfiguration
 description: Lê propriedades e relações do objeto iosMobileAppConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6cdf6e0c9ca61c89e25e3658fd8f8ed283ad0192
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 13874ff8f0ecd969edeaaa7f1e665cb0868d2b87
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43394817"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987019"
 ---
 # <a name="get-iosmobileappconfiguration"></a>Obter iosMobileAppConfiguration
 
@@ -97,6 +97,9 @@ Content-Length: 831
   }
 }
 ```
+
+
+
 
 
 
