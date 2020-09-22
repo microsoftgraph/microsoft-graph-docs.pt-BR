@@ -3,14 +3,14 @@ title: Tipo de recurso deviceComplianceDeviceStatus
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c482af029b75f585cee4d6296ce15b6cd20222f9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 16c959f8c85b054122af9ec061aa3b99bd9d0e54
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389392"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973803"
 ---
 # <a name="devicecompliancedevicestatus-resource-type"></a>Tipo de recurso deviceComplianceDeviceStatus
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Ainda não documentado
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceComplianceDeviceStatuses](../api/intune-deviceconfig-devicecompliancedevicestatus-list.md)|Conjunto [deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md)|Listar propriedades e relações de objetos de [deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md).|
@@ -35,10 +35,10 @@ Ainda não documentado
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|deviceDisplayName|String|Nome do dispositivo de DevicePolicyStatus.|
-|userName|String|O nome de usuário que está sendo relatado|
+|deviceDisplayName|Cadeia de caracteres|Nome do dispositivo de DevicePolicyStatus.|
+|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
-|platform|Int32|Plataforma do dispositivo que está sendo relatado|
+|plataforma|Int32|Plataforma do dispositivo que está sendo relatado|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação do relatório de políticas.|
@@ -69,6 +69,9 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
+
+
+
 
 
 

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 011b027cfcf357dfe80b47067618219cb0067044
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a2bdd013cb755d37664c89aca81a8ae89c63b4f9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520889"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973735"
 ---
 # <a name="searchresponse-resource-type"></a>tipo de recurso searchResponse
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ O searchResponse contém os resultados da consulta de pesquisa.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |hitsContainers|coleção [searchHitsContainer](searchhitscontainer.md)|Uma coleção de resultados de pesquisa.|
-|searchTerms|String collection|Contém os termos de pesquisa enviados na consulta de pesquisa inicial.|
+|searchTerms|Coleção de cadeias de caracteres|Contém os termos de pesquisa enviados na consulta de pesquisa inicial.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -58,3 +58,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

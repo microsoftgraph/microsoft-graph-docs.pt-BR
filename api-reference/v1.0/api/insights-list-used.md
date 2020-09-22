@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 332d4b7bb9650128b31289b251a30cbb193f75b4
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 0c8d00f03d98c5dc5d18411f238ca9a507eaca30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335106"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973194"
 ---
 # <a name="list-used"></a>Listar usados
 
@@ -65,7 +65,7 @@ Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-pa
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/v1.0/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-- Use `$filter` para filtrar itens usados com base no **ContainerType**:
+- Use `$filter` para filtrar itens usados com base no  **ContainerType**:
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/v1.0/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
@@ -321,3 +321,4 @@ Content-type: application/json
     ]
 }
 ```
+

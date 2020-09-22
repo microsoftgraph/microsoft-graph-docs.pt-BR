@@ -5,16 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 81ae85775e05128b198eea648f447468f2fdc9b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d6c89de41378faee3180ce673615c3a48e0035e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451781"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974086"
 ---
 # <a name="list-people"></a>Listar pessoas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -65,13 +65,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Person](../resources/person.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Person](../resources/person.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="browse"></a>Browse
 
-As solicitações nesta seção obtêm as pessoas mais relevantes para o usuário conectado (`/me`), com base nas relações de comunicação, colaboração e negócios.
+As solicitações nesta seção obtêm as pessoas mais relevantes para o usuário conectado ( `/me` ), com base nas relações de comunicação, colaboração e negócios.
 
 Por padrão, cada resposta retorna 10 registros, mas você pode alterar esse número usando o parâmetro *$top*. Essas solicitações exigem a permissão People. Read.
 
@@ -216,7 +216,7 @@ GET https://graph.microsoft.com/beta/me/people/?$orderby=DisplayName
 
 Você pode alterar o número de pessoas retornadas na resposta definindo o parâmetro *$top*.
 
-O exemplo a seguir solicita as 1.000 pessoas mais relevantes `/me`. A solicitação também limita a quantidade de dados enviados de volta do servidor solicitando apenas o nome de exibição da pessoa.
+O exemplo a seguir solicita as 1.000 pessoas mais relevantes `/me` . A solicitação também limita a quantidade de dados enviados de volta do servidor solicitando apenas o nome de exibição da pessoa.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
@@ -254,13 +254,13 @@ O exemplo a seguir obtém o *DisplayName* e o *EmailAddress* de pessoas cujo nom
 
 ### <a name="search-people"></a>Pesquisar pessoas
 
-As solicitações nesta seção também obtêm as pessoas mais relevantes para o usuário conectado (`/me`). As solicitações de pesquisa exigem a permissão People. Read.
+As solicitações nesta seção também obtêm as pessoas mais relevantes para o usuário conectado ( `/me` ). As solicitações de pesquisa exigem a permissão People. Read.
 
 #### <a name="using-search-to-select-people"></a>Usando a pesquisa para selecionar pessoas
 
 Use o parâmetro *$search* para selecionar as pessoas que atendem a determinado conjunto de critérios.
 
-A consulta de pesquisa a seguir retorna pessoas `/me` relevantes para o qual o determinadoname ou o sobrenome começa com a letra "j".
+A consulta de pesquisa a seguir retorna pessoas relevantes para `/me` o qual o determinadoname ou o sobrenome começa com a letra "j".
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search=j
@@ -268,7 +268,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search=j
 
 #### <a name="using-search-to-specify-a-relevant-topic"></a>Uso da pesquisa para especificar um tópico relevante
 
-A solicitação a seguir retorna pessoas relevantes `/me` para o nome que contém "ma" e que têm uma associação com "planejamento de recursos".
+A solicitação a seguir retorna pessoas relevantes para o `/me` nome que contém "ma" e que têm uma associação com "planejamento de recursos".
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature planning"
@@ -303,3 +303,5 @@ GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
   ]
 }
 -->
+
+

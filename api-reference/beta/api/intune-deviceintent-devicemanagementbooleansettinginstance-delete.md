@@ -3,14 +3,14 @@ title: Excluir deviceManagementBooleanSettingInstance
 description: Exclui deviceManagementBooleanSettingInstance.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56ea682e609ad82e359a6609e61bc2ae2b952125
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 99cc8c008cf719d812c549b01711329fa2210909
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43330305"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974363"
 ---
 # <a name="delete-devicemanagementbooleansettinginstance"></a>Excluir deviceManagementBooleanSettingInstance
 
@@ -68,6 +68,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

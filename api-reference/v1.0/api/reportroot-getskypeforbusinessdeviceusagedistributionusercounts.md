@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 39f6ac1380c80052af236f44cd518004088a2e8e
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: bee5b36e25dc0f4c1eb4ec375306c1b9845abe5e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895920"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972816"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusagedistributionusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
-**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário. Para obter mais detalhes, consulte [Authorization for APIs to read Microsoft 365 Usage Reports](/graph/reportroot-authorization).
+**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -127,3 +127,4 @@ Report Refresh Date,Windows,Windows Phone,Android Phone,iPhone,iPad,Report Perio
   "suppressions": [
   ]
 }-->
+

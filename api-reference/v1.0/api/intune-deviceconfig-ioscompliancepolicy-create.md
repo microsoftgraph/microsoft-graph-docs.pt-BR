@@ -3,14 +3,14 @@ title: Criar iosCompliancePolicy
 description: Cria um novo objeto iosCompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a4fbe648cd1b570994da69457421990f9d03a09b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 62fd1d293823c07b35125e688d8b6a3235fc8d02
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423473"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972956"
 ---
 # <a name="create-ioscompliancepolicy"></a>Criar iosCompliancePolicy
 
@@ -52,20 +52,20 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosCompliancePol
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|passcodeBlockSimple|Booliano|Indica se códigos de acesso simples devem ou não ser bloqueados.|
+|passcodeBlockSimple|Boolean|Indica se códigos de acesso simples devem ou não ser bloqueados.|
 |passcodeExpirationDays|Int32|Número de dias antes da expiração do código de acesso. Valores válidos de 1 a 65535|
 |passcodeMinimumLength|Int32|Comprimento mínimo do código de acesso. Valores válidos de 4 a 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que um código de acesso seja necessário.|
 |passcodePreviousPasscodeBlockCount|Int32|Número de códigos de acesso anteriores para bloquear. Valores válidos de 1 a 24|
 |passcodeMinimumCharacterSetCount|Int32|O número de conjuntos de caracteres necessários na senha.|
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de código de senha necessário. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
-|passcodeRequired|Booliano|Indica se um código de acesso deve ou não ser exigido.|
+|passcodeRequired|Boolean|Indica se um código de acesso deve ou não ser exigido.|
 |osMinimumVersion|String|Versão mínima do IOS.|
 |osMaximumVersion|String|Versão máxima do iOS.|
-|securityBlockJailbrokenDevices|Booliano|Os dispositivos não devem ser violados ou com modificações root.|
-|deviceThreatProtectionEnabled|Booliano|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
+|securityBlockJailbrokenDevices|Boolean|Os dispositivos não devem ser violados ou com modificações root.|
+|deviceThreatProtectionEnabled|Boolean|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exige o nível mínimo de risco de Proteção contra Ameaças Móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Boolean|Indica se um perfil de email gerenciado deve ou não ser exigido.|
 
@@ -136,6 +136,9 @@ Content-Length: 917
   "managedEmailProfileRequired": true
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0adae6ac5f81f7998bf6b795d11d906519409fc9
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: fb425862a60b8e8ff14356b5c70f4ea4de8627b6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491851"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974095"
 ---
 # <a name="update-tab"></a>Atualizar guia
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo                            | TeamsTab. Edit. Group *, TeamsTab. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
-> **Observação**: as permissões marcadas com * usam o [consentimento específico do recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
@@ -100,3 +100,5 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+
+

@@ -6,12 +6,12 @@ title: ThumbnailSet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: bd6e3326eaa0ea0bea407429e89d361575f20916
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0df3f29fd57439650343b7dad59d467af8627127
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519754"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973509"
 ---
 # <a name="thumbnailset-resource-type"></a>Tipo de recurso ThumbnailSet
 
@@ -64,3 +64,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

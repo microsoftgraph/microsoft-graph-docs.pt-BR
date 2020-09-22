@@ -6,16 +6,16 @@ title: TextColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: e6167a81c0898b2de1c5878926633f8dbd0baa2d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ecfd6d72e0946519b570962577b03a9ffcbcdf10
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519789"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973544"
 ---
 # <a name="textcolumn-resource-type"></a>Tipo de recurso TextColumn
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,3 +56,5 @@ Aqui está uma representação JSON de um recurso **textColumn**.
   "suppressions": []
 }
 -->
+
+

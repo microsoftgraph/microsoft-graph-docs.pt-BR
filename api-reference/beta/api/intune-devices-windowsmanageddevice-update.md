@@ -3,14 +3,14 @@ title: Atualizar windowsManagedDevice
 description: Atualiza as propriedades de um objeto windowsManagedDevice.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1fbe4f55fc01347757be7c0fa7194e4a935bea19
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 48176886db9e306d2165497539a1f5a00695abb7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790592"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972298"
 ---
 # <a name="update-windowsmanageddevice"></a>Atualizar windowsManagedDevice
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -117,12 +117,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |retireAfterDateTime|DateTimeOffset|Indica o horário após o momento em que um dispositivo será desativado automaticamente devido à ação agendada. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |usersLoggedOn|coleção [loggedOnUser](../resources/intune-devices-loggedonuser.md)|Indica o último usuário conectado de um dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Reporta o DateTime que a configuração preferMdmOverGroupPolicy foi definida.  Quando definido, as configurações do MDM do Intune substituirão as configurações da política de grupo, se houver um conflito. Somente leitura. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|autopilotEnrolled|Booliano|Relata se o dispositivo gerenciado está inscrito via piloto automático. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|requireUserEnrollmentApproval|Booliano|Relata se o dispositivo iOS gerenciado é o registro de aprovação do usuário. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|autopilotEnrolled|Boolean|Relata se o dispositivo gerenciado está inscrito via piloto automático. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|requireUserEnrollmentApproval|Boolean|Relata se o dispositivo iOS gerenciado é o registro de aprovação do usuário. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|Relata a data de validade do certificado de gerenciamento de dispositivos. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|String|Identificador de cartão de circuito integrado, é o número de identificação exclusivo de um cartão SIM. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |udid|String|Identificador de dispositivo exclusivo para dispositivos iOS e macOS. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|roleScopeTagIds|Coleção de cadeia de caracteres|Lista de IDs de marca de escopo para esta instância de dispositivo. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de dispositivo. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|Contagem de malware ativo para este dispositivo Windows. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsRemediatedMalwareCount|Int32|Contagem de malware corrigido para este dispositivo Windows. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |notes|String|Observações sobre o dispositivo criado pelo administrador de ti herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -134,6 +134,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |specificationVersion|String|Versão de especificação. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Tipo de ingresso de dispositivo herdado de [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
 |skuFamily|String|Família de SKU do dispositivo herdada de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|skuNumber|Int32|Número de SKU do dispositivo, Confira também: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo . Valores válidos de 0 a 2147483647. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Recursos de gerenciamento de dispositivos herdados do [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `none` e `microsoftManagedDesktop`.|
 
 
 
@@ -147,7 +149,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7955
+Content-length: 8026
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -330,7 +332,9 @@ Content-length: 7955
   "processorArchitecture": "x86",
   "specificationVersion": "Specification Version value",
   "joinType": "azureADJoined",
-  "skuFamily": "Sku Family value"
+  "skuFamily": "Sku Family value",
+  "skuNumber": 9,
+  "managementFeatures": "microsoftManagedDesktop"
 }
 ```
 
@@ -339,7 +343,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8004
+Content-Length: 8075
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -523,9 +527,14 @@ Content-Length: 8004
   "processorArchitecture": "x86",
   "specificationVersion": "Specification Version value",
   "joinType": "azureADJoined",
-  "skuFamily": "Sku Family value"
+  "skuFamily": "Sku Family value",
+  "skuNumber": 9,
+  "managementFeatures": "microsoftManagedDesktop"
 }
 ```
+
+
+
 
 
 

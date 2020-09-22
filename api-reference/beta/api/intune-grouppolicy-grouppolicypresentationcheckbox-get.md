@@ -3,14 +3,14 @@ title: Obter groupPolicyPresentationCheckBox
 description: Leia as propriedades e as relações do objeto groupPolicyPresentationCheckBox.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a736956255e3b327820a7e489a198d7276ea3271
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e6b21169fae8b017a29e093578c0c71829e24435
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43424711"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974265"
 ---
 # <a name="get-grouppolicypresentationcheckbox"></a>Obter groupPolicyPresentationCheckBox
 
@@ -81,6 +81,9 @@ Content-Length: 269
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 9700f81d2f3a1e488bf9c9c61da3d0f649f46194
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: fb41bc68112aa04e1eea825d45982f2f3f0db48c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091562"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973789"
 ---
 # <a name="printtask-resource-type"></a>tipo de recurso de multitarefa
 
@@ -22,11 +22,11 @@ Representa uma tarefa que está em execução ou foi executada como resultado de
 
 Para obter detalhes sobre como usar esse recurso para adicionar suporte à impressão pull à impressão universal, consulte [estender a impressão universal para dar suporte à impressão pull](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Lista (de printTaskDefintion)](../api/printtaskdefinition-list-tasks.md) | [multitarefa](printtask.md) | Obter uma lista de tarefas que foram criadas com base em um determinado printTaskDefinition. A lista inclui tarefas em execução no momento e tarefas concluídas recentemente. |
+| [Lista (de printTaskDefintion)](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Obter uma lista de tarefas que foram criadas com base em um determinado printTaskDefinition. A lista inclui tarefas em execução no momento e tarefas concluídas recentemente. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
@@ -75,3 +75,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

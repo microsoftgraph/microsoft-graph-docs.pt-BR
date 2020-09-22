@@ -3,14 +3,14 @@ title: Criar groupPolicyUploadedDefinition
 description: Criar um novo objeto groupPolicyUploadedDefinition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab254aae6e5d319fa10515a10165feb9eafb8899
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7904b4c5492f21795d7841dce0707b8104195af1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444659"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974223"
 ---
 # <a name="create-grouppolicyuploadeddefinition"></a>Criar groupPolicyUploadedDefinition
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Identifica o tipo de grupo ao qual a política pode ser aplicada. Herdado de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md). Os valores possíveis são: `user` e `machine`.|
-|displayName|Cadeia de caracteres|O nome da política localizada. Herdado de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
+|displayName|String|O nome da política localizada. Herdado de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |Texto não criptografado|String|A explicação localizada ou o texto de ajuda associado à política. O valor padrão é vazio. Herdado de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |categoryPath|String|O caminho de categoria completo localizado para a política. Herdado de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |com suporte|String|Cadeia de caracteres localizada usada para especificar o sistema operacional ou a versão do aplicativo é afetada pela política. Herdado de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
@@ -68,7 +68,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [groupPolicyUploadedDefinition](../resources/intune-grouppolicy-grouppolicyuploadeddefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [groupPolicyUploadedDefinition](../resources/intune-grouppolicy-grouppolicyuploadeddefinition.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -111,6 +111,9 @@ Content-Length: 474
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

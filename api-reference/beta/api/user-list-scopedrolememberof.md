@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 31b06e1f49833241f6a6f50e610b9286e0418edf
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: c254a9213204e63fe028de299230376de8c31461
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820271"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974083"
 ---
 # <a name="list-scopedadministratorof"></a>Listar scopedAdministratorOf
 
@@ -118,3 +118,5 @@ Content-length: 307
   ]
 }
 -->
+
+

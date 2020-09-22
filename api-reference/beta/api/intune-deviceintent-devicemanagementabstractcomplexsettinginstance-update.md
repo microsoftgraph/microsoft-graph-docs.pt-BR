@@ -3,14 +3,14 @@ title: Atualizar deviceManagementAbstractComplexSettingInstance
 description: Atualiza as propriedades de um objeto deviceManagementAbstractComplexSettingInstance.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9fa9188e829931cf25d27e2ca972bd03e364e23
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5feb4eccfd8594f7e8264a62a416bca4c8dd8f51
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43330448"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974391"
 ---
 # <a name="update-devicemanagementabstractcomplexsettinginstance"></a>Atualizar deviceManagementAbstractComplexSettingInstance
 
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -98,6 +98,9 @@ Content-Length: 265
   "implementationId": "Implementation Id value"
 }
 ```
+
+
+
 
 
 

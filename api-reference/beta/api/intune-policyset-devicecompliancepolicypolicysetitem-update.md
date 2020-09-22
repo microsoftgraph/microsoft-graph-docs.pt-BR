@@ -3,14 +3,14 @@ title: Atualizar deviceCompliancePolicyPolicySetItem
 description: Atualiza as propriedades de um objeto deviceCompliancePolicyPolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ccf924111cc32d3af66e943bc2546b801767fd5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 22b91164409c2172f68e664dc537bd6d7c190a00
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467177"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974167"
 ---
 # <a name="update-devicecompliancepolicypolicysetitem"></a>Atualizar deviceCompliancePolicyPolicySetItem
 
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |payloadId|String|PayloadId do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |itemType|String|policySetType do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|displayName|Cadeia de caracteres|DisplayName do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|displayName|String|DisplayName do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md). Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro, caso algum tenha ocorrido. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md). Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
 |guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação dirigida herdadas de [policySetItem](../resources/intune-policyset-policysetitem.md)|
@@ -66,7 +66,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceCompliancePolicyPolicySetItem](../resources/intune-policyset-devicecompliancepolicypolicysetitem.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceCompliancePolicyPolicySetItem](../resources/intune-policyset-devicecompliancepolicypolicysetitem.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -112,6 +112,9 @@ Content-Length: 489
   ]
 }
 ```
+
+
+
 
 
 

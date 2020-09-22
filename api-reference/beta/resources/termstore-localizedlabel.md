@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: dbd067dbd3447691fd7fbd8e51670cceb46d64da
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: cadad79f6e019a258842fff1be679adf6c85fb3a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539140"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973603"
 ---
 # <a name="localizedlabel-resource-type"></a>tipo de recurso localizedLabel
 
@@ -26,7 +26,7 @@ Identifica os rótulos associados a um determinado termo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |isDefault|Booliano|Indica se o rótulo é o rótulo padrão.|
-|languageTag|Cadeia de Caracteres|A marca anguage do rótulo.|
+|languageTag|String|A marca anguage do rótulo.|
 |nome|String|O nome do rótulo.|
 
 ## <a name="relationships"></a>Relações
@@ -69,3 +69,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

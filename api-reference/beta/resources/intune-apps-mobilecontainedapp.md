@@ -3,14 +3,14 @@ title: tipo de recurso mobileContainedApp
 description: Uma classe abstrata que representa um aplicativo contido em um mobileApp que atua como um pacote.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c958ff514291b1cc6cbfeaf35ad13675cd81f02d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e60bd8b82847eca69999ea7a05abc0f098d3f5a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462565"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973880"
 ---
 # <a name="mobilecontainedapp-resource-type"></a>tipo de recurso mobileContainedApp
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Uma classe abstrata que representa um aplicativo contido em um mobileApp que atua como um pacote.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar mobileContainedApps](../api/intune-apps-mobilecontainedapp-list.md)|coleção [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|Listar Propriedades e relações dos objetos [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) .|
@@ -50,6 +50,9 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
+
+
+
 
 
 

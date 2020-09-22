@@ -3,14 +3,14 @@ title: Criar deviceManagementScriptGroupAssignment
 description: Criar um novo objeto deviceManagementScriptGroupAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d78dfba82625f21defc51fcbc0920e6509eef945
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9f5f5d1235750a2c27f871c7f1c10295ba426331
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380450"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974370"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>Criar deviceManagementScriptGroupAssignment
 
@@ -60,7 +60,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -90,6 +90,9 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
+
+
+
 
 
 

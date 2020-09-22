@@ -3,14 +3,14 @@ title: Atualizar userExperienceAnalyticsCategory
 description: Atualiza as propriedades de um objeto userExperienceAnalyticsCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58d8e932c53c372a0ad68de9f97ad7c86708c137
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 9004adc72a3480412a1f21c76c78b7993a9ed885
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176082"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972305"
 ---
 # <a name="update-userexperienceanalyticscategory"></a>Atualizar userExperienceAnalyticsCategory
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,8 +37,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
+PATCH /deviceManagement/userExperienceAnalyticsAppHealthOverview
 PATCH /deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
 PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/bestPracticesMetrics
+PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/rebootAnalyticsMetrics
 PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics
 ```
 
@@ -55,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da categoria de análise da experiência do usuário.|
+|id|String|O identificador exclusivo da categoria de análise da experiência do usuário.|
 |overallScore|Int32|A pontuação geral da categoria de análise da experiência do usuário.|
 |insights|coleção [userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)|O insights para a categoria de análise da experiência do usuário.|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de integridade atual da categoria de análise da experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
@@ -63,14 +65,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthOverview
 Content-type: application/json
 Content-length: 553
 
@@ -123,6 +125,9 @@ Content-Length: 602
   "state": "insufficientData"
 }
 ```
+
+
+
 
 
 

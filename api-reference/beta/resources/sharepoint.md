@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 doc_type: conceptualPageType
 author: JeremyKelley
-ms.openlocfilehash: ae0ef6e765800107e4b9afea2d9fb366cbaaaf30
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d986ca63d3508ec9450b0477b1e5abbbc44915e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807132"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973663"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>Trabalhar com sites do SharePoint no Microsoft Graph
 
@@ -132,3 +132,5 @@ Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats
   "tocPath": "Getting Started",
   "tocIndex": -100
 } -->
+
+

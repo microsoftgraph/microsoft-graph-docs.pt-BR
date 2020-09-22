@@ -3,14 +3,14 @@ title: Listar windowsUpdateForBusinessConfigurations
 description: Listar propriedades e relações dos objetos windowsUpdateForBusinessConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e7b10749e15f609c72533e019471717b927d0157
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: e024abf4f1dbceff7ae530f2e63e7b05add239a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178938"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972319"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>Listar windowsUpdateForBusinessConfigurations
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -146,6 +146,9 @@ Content-Length: 3283
   ]
 }
 ```
+
+
+
 
 
 

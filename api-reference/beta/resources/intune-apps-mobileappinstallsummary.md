@@ -3,14 +3,14 @@ title: tipo de recurso mobileAppInstallSummary
 description: Contém propriedades para o resumo de instalação de um aplicativo móvel.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d6ee038510ce7891e2599dda2d101ed7d1aec6d1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ff53cb0d244a28924b00f2bb5b287e51db49ef24
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457006"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973887"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>tipo de recurso mobileAppInstallSummary
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Contém propriedades para o resumo de instalação de um aplicativo móvel.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-get.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Leia as propriedades e as relações do objeto [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) .|
@@ -70,6 +70,9 @@ Veja a seguir uma representação JSON do recurso.
   "pendingInstallUserCount": 1024
 }
 ```
+
+
+
 
 
 

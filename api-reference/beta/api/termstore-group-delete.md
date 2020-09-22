@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fc013c512016c9ff683b0fe3f0e4c369141ba612
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: d7214dd8bfde8f15a17bc572342ea5519244014d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330260"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974094"
 ---
 # <a name="delete-groups"></a>Excluir grupos
 Namespace: Microsoft. Graph. termos
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 
@@ -106,3 +106,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

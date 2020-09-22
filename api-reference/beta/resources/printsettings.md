@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 08d8409113c9c2f480200999c47ca18c300f245f
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: c9af888d85256b88d4212cc84ba74d8dcdd5b590
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895496"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973817"
 ---
 # <a name="printsettings-resource-type"></a>tipo de recurso printSettings
 
@@ -42,3 +42,5 @@ Veja a seguir uma representação JSON de printSettings.
 }
 
 ```
+
+

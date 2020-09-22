@@ -6,16 +6,16 @@ title: WebPart
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: efcf6aa1db31246af607cda85aa799fcc6804a34
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b69762298f4f165ac18e4e0137dd979bde176652
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519432"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973468"
 ---
 # <a name="webpart-resource"></a>recurso webPart
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,3 +60,5 @@ Para obter mais informações sobre páginas, consulte [sitePage](sitepage.md).
   "suppressions": []
 }
 -->
+
+

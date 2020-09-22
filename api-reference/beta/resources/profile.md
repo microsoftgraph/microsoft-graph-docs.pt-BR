@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 4080a7424b1ee3baf71cfaab3cf3e66a8f0508b6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: adca1758017f6cf31cb2dde00a218d72467fd7c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810514"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973754"
 ---
 # <a name="profile-resource-type"></a>tipo de recurso Profile
 
@@ -22,7 +22,7 @@ Representa propriedades que são descritivas de um usuário em um locatário, po
 
 Programaticamente, essas propriedades são expressas como [relações](#relationships) do recurso de **perfil** . Para obter uma destas propriedades de navegação ou criar uma instância dessas propriedades para o usuário, use o método GET ou POST correspondente nessa propriedade, quando aplicável. Consulte os [métodos](#methods) listados abaixo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                                     | Tipo de retorno                                                    | Descrição                                                                                  |
 |:---------------------------------------------------------------------------|:---------------------------------------------------------------|:---------------------------------------------------------------------------------------------|
@@ -80,21 +80,21 @@ Programaticamente, essas propriedades são expressas como [relações](#relation
 | Relação          | Tipo                                                         | Descrição                                                                                                                                    |
 |:----------------------|:-------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
 |contas               |coleção [userAccountInformation](useraccountinformation.md)| Representa informações especificamente associadas à conta de um usuário.                                                             |
-|endereços              |coleção [myAddress](itemaddress.md)                      | Representa detalhes dos endereços associados ao usuário.                                                             |
-|datas especiais          |coleção [personAnniversary](personanniversary.md)          | Representa os detalhes de datas significativas associadas a uma pessoa.                                                                  |
-|concede                 |coleção [personAward](personaward.md)                      | Representa os detalhes de prêmios ou honras associados a uma pessoa.                                                                  |
-|certificações         |coleção [personCertification](personcertification.md)      | Representa os detalhes de certificações associadas a uma pessoa.                                                                  |
+|addresses              |coleção [myAddress](itemaddress.md)                      | Representa detalhes dos endereços associados ao usuário.                                                             |
+|anniversaries          |coleção [personAnniversary](personanniversary.md)          | Representa os detalhes de datas significativas associadas a uma pessoa.                                                                  |
+|awards                 |coleção [personAward](personaward.md)                      | Representa os detalhes de prêmios ou honras associados a uma pessoa.                                                                  |
+|certifications         |coleção [personCertification](personcertification.md)      | Representa os detalhes de certificações associadas a uma pessoa.                                                                  |
 |educationalActivities  |coleção [educationalActivity](educationalactivity.md)      | Representa os dados que um usuário forneceu relacionados ao Undergraduate, graduado, dograduação ou outras atividades educacionais. |
 |email                 |coleção [email](itememail.md)                          | Representa informações detalhadas sobre endereços de email associados ao usuário.                       |
 |interests              |coleção [personInterest](personinterest.md)                | Fornece informações detalhadas sobre os interesses que o usuário tenha associado a si mesmos em vários serviços.             |
 |Idiomas              |coleção [languageProficiency](languageproficiency.md)      | Representa informações detalhadas sobre os idiomas que um usuário adicionou ao perfil.                                    |
 |names                  |coleção [PersonName](personname.md)                        | Representa os nomes que um usuário adicionou ao perfil.                                    |
 |notes                  |coleção [personAnnotation](personannotation.md)            | Representa as anotações que um usuário adicionou ao seu perfil.                                    |
-|patentes                |coleção [Ispatenteado](itempatent.md)                        | Representa patentes que um usuário adicionou ao seu perfil.                                    |
+|patents                |coleção [Ispatenteado](itempatent.md)                        | Representa patentes que um usuário adicionou ao seu perfil.                                    |
 |telefones                 |coleção [Multiphone](itemphone.md)                          | Representa informações detalhadas sobre números de telefone associados a um usuário em vários serviços.                            |
 |as              |coleção [workPosition](workposition.md)                    | Representa informações detalhadas sobre posições de trabalho associadas ao perfil de um usuário.                                    |
 |Projetos               |coleção [projectParticipation](projectparticipation.md)    | Representa informações detalhadas sobre os projetos associados a um usuário.                                                     |
-|publicações           |coleção de [Multipúblico](itempublication.md)              | Representa os detalhes de todas as publicações adicionadas por um usuário ao seu perfil.                                                     |
+|publications           |coleção de [Multipúblico](itempublication.md)              | Representa os detalhes de todas as publicações adicionadas por um usuário ao seu perfil.                                                     |
 |responsibilities       |coleção [personResponsibility](personResponsibility.md)    | Representa detalhes das responsabilidades adicionadas por um usuário ao seu perfil.                                                     |
 |skills                 |coleção [skillProficiency](skillproficiency.md)            | Representa informações detalhadas sobre as habilidades associadas a um usuário em vários serviços.                                   |
 |contas da            |coleção [Webaccount](webaccount.md)                        | Representa contas da Web que o usuário indicou que usa ou adicionou ao perfil do usuário.                               |
@@ -119,3 +119,5 @@ Veja a seguir uma representação JSON do recurso.
     "id": "String (identifier)"
 }
 ```
+
+

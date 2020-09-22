@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c246503aa5a25d04d9d10a7fad7c476782b35d4d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 552953488ce2ba1519b06b46c009286a20ad3b30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518354"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973454"
 ---
 # <a name="list-chartseriescollection"></a>Listar ChartSeriesCollection
 
@@ -45,7 +45,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [WorkbookChartSeries](../resources/chartseries.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [WorkbookChartSeries](../resources/chartseries.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -109,3 +109,4 @@ Content-length: 59
   "suppressions": [
   ]
 }-->
+

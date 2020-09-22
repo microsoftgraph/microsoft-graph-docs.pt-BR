@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2838121662ff07ba1e887620f5e7b1257e8ef3c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 003f6e0a5b8a36a6184ac745e6ff7983f9b619a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451146"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973978"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 O intervalo usado é o menor intervalo que abrange todas as células que têm um valor ou uma formatação atribuído a elas. Se a planilha estiver em branco, esta função retorna a célula superior esquerda.
 ## <a name="permissions"></a>Permissões
@@ -110,3 +110,5 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+
+

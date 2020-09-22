@@ -3,14 +3,14 @@ title: Atualizar iosUpdateDeviceStatus
 description: Atualizar as propriedades de um objeto iosUpdateDeviceStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 473cbbe1e6b18560c4a215ce6cd444024e0de185
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 82e717c75983f21cbf6f086ed4057b39fb8f08e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446088"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972963"
 ---
 # <a name="update-iosupdatedevicestatus"></a>Atualizar iosUpdateDeviceStatus
 
@@ -52,12 +52,12 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [iosUpdateDevice
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|O status de instalação do relatório de políticas. Os valores possíveis são `success`: `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`,,,,,,,,,.|
-|osVersion|String|A versão do dispositivo que está sendo relatado.|
-|deviceId|String|A ID do dispositivo que está sendo relatado.|
+|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|O status de instalação do relatório de políticas. Os valores possíveis são:, `success` `available` , `idle` , `unknown` , `downloading` , `downloadFailed` ,,,,,,,,,,,,,,, `downloadRequiresComputer` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installing` `installInsufficientSpace` `installInsufficientPower` , `installPhoneCallInProgress` , `installFailed` , `notSupportedOperation` , `sharedDeviceUserLoggedInError` .|
+|osVersion|Cadeia de caracteres|A versão do dispositivo que está sendo relatado.|
+|deviceId|Cadeia de caracteres|A ID do dispositivo que está sendo relatado.|
 |userId|Cadeia de caracteres|A ID do usuário que está sendo relatado.|
-|deviceDisplayName|String|Nome do dispositivo de DevicePolicyStatus.|
-|userName|String|O nome de usuário que está sendo relatado|
+|deviceDisplayName|Cadeia de caracteres|Nome do dispositivo de DevicePolicyStatus.|
+|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
@@ -117,6 +117,9 @@ Content-Length: 601
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

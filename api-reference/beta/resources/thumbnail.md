@@ -6,16 +6,16 @@ title: Thumbnail
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 53001d2459af4dc382501e33930bc8aca55a26b2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7a4a2254b50fd074622990db478cefdbf3cfe091
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519761"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973537"
 ---
 # <a name="thumbnail-resource-type"></a>Tipo de recurso thumbnail
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -65,3 +65,5 @@ Veja a seguir uma representação JSON de um recurso **thumbnail**.
   "suppressions": []
 }
 -->
+
+

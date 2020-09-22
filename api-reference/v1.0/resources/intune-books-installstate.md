@@ -3,14 +3,14 @@ title: tipo de enumeração InstallState
 description: Valores possíveis para o estado de instalação.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4bac3756a0bbccd5873c608e395c962664f0f2de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1434057aff685102c2a33605a15ed124b66f6ecf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468771"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972667"
 ---
 # <a name="installstate-enum-type"></a>tipo de enumeração InstallState
 
@@ -24,11 +24,13 @@ Valores possíveis para o estado de instalação.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Não aplicável|,0|Não aplicável.|
-|instalação|1|Instalação.|
-|falhou|duas|Falhou.|
-|não instalado|3D|Não instalado.|
+|instalação|1 |Instalação.|
+|falhou|2 |Falhou.|
+|não instalado|3 |Não instalado.|
 |uninstallFailed|4 |Falha na desinstalação.|
 |desconhecido|5 |Unknown.|
+
+
 
 
 

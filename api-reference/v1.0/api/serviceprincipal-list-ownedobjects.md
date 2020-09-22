@@ -1,31 +1,31 @@
 ---
-title: 'servicePrincipalName: listar ownedObjects'
-description: Recupere uma lista de objetos pertencentes ao servicePrincipalName.  Isso pode incluir aplicativos ou grupos.
+title: 'servicePrincipals: Lista ownedObjects'
+description: Recupere uma lista de objetos pertencentes ao servicePrincipal.  Isto poderia incluir aplicativos ou grupos.
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: f1940652e581d44d457806968a65a70adec7e78b
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: d9788a22e1d72bd98503da742a0295e7ed404e3b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383956"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972767"
 ---
-# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipalName: listar ownedObjects
+# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals: Lista ownedObjects
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
-Recupere uma lista de objetos pertencentes ao [servicePrincipalName](../resources/serviceprincipal.md).  Isso pode incluir aplicativos ou grupos.
+Recupere uma lista de objetos pertencentes ao [servicePrincipal](../resources/serviceprincipal.md).  Isto poderia incluir aplicativos ou grupos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application. Read. All, Application. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application. Read. All, Application. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -117,3 +117,4 @@ Content-length: 55
   ]
 }
 -->
+

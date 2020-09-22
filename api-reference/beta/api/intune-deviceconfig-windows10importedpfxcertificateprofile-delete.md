@@ -3,14 +3,14 @@ title: Excluir windows10ImportedPFXCertificateProfile
 description: Exclui windows10ImportedPFXCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d523278263f68c61781d5505c1f1a6b1f549e37
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6d6105a9609ec21221f39ca925648db32edfbc31
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43430881"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972592"
 ---
 # <a name="delete-windows10importedpfxcertificateprofile"></a>Excluir windows10ImportedPFXCertificateProfile
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

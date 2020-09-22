@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 3f63b882c38daf44ab6a1b69e6f3dde30125ceb5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 6472041ea42345a6b15bc3991b6d18ff2b7a3328
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806111"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973236"
 ---
 # <a name="update-icon"></a>Atualizar ícone
 
@@ -33,7 +33,7 @@ PATCH /workbook/tables/{id|name}/sort/fields/icon
 PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Name       | Descrição|
+| Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
 
@@ -93,3 +93,4 @@ Content-length: 39
   "section": "documentation",
   "tocPath": ""
 }-->
+

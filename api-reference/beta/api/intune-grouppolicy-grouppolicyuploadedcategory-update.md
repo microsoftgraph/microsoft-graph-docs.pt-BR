@@ -3,14 +3,14 @@ title: Atualizar groupPolicyUploadedCategory
 description: Atualiza as propriedades de um objeto groupPolicyUploadedCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: feaa5951e8f8c1e890236022b4ecce4bd160b4f9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 173daedb6a7ce03ff4417f04d3d9357db18ad831
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444666"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974251"
 ---
 # <a name="update-grouppolicyuploadedcategory"></a>Atualizar groupPolicyUploadedCategory
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|A ID da cadeia de caracteres do nome de exibição da categoria herdado de [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
+|displayName|String|A ID da cadeia de caracteres do nome de exibição da categoria herdado de [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |IsRoot|Boolean|Define se a categoria é uma categoria raiz herdada de [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |id|String|Chave da entidade. Herdado de [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [groupPolicyUploadedCategory](../resources/intune-grouppolicy-grouppolicyuploadedcategory.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [groupPolicyUploadedCategory](../resources/intune-grouppolicy-grouppolicyuploadedcategory.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -97,6 +97,9 @@ Content-Length: 241
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

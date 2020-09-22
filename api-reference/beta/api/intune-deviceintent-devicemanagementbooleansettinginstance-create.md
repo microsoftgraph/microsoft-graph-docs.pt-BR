@@ -3,14 +3,14 @@ title: Criar deviceManagementBooleanSettingInstance
 description: Criar um novo objeto deviceManagementBooleanSettingInstance.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a2a47f04b1850c2dcf54d48bdb06b0243c2c40e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8d8ad403f795613230d6f87f2b86d3265baa42ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43330365"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974384"
 ---
 # <a name="create-devicemanagementbooleansettinginstance"></a>Criar deviceManagementBooleanSettingInstance
 
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -98,6 +98,9 @@ Content-Length: 225
   "value": true
 }
 ```
+
+
+
 
 
 

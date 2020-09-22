@@ -3,14 +3,14 @@ title: Criar deviceManagementAbstractComplexSettingInstance
 description: Criar um novo objeto deviceManagementAbstractComplexSettingInstance.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 14f61069ae07034e9b7809d958f683a4bf9587a1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d9251161fcbea01f013c6e220b002957001b5321
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43331193"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974447"
 ---
 # <a name="create-devicemanagementabstractcomplexsettinginstance"></a>Criar deviceManagementAbstractComplexSettingInstance
 
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -98,6 +98,9 @@ Content-Length: 265
   "implementationId": "Implementation Id value"
 }
 ```
+
+
+
 
 
 

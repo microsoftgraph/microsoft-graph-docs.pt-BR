@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b7db957e7d0c6c23c3ed90dc674d311469aa7ba8
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: b5b5304be07b0a73e8c4cc45018f2c7289b58b1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917345"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973264"
 ---
 # <a name="list-homerealmdiscoverypolicies"></a>Listar homeRealmDiscoveryPolicies
 
@@ -40,7 +40,7 @@ GET policies/homeRealmDiscoveryPolicies
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte `$expand`aos `$filter`parâmetros `$select`de consulta `$top` OData,, e OData, para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters). Ao usar `$expand`o, certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.
+Este método oferece suporte `$expand` aos `$filter` parâmetros de `$select` consulta OData,, e `$top` OData, para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters). Ao usar o `$expand` , certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -131,3 +131,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

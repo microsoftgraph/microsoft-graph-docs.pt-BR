@@ -3,14 +3,14 @@ title: Atualizar windows10MobileCompliancePolicy
 description: Atualiza as propriedades de um objeto windows10MobileCompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8480bd4be5e7af4806381941aaabc94272a9ae20
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5389c6db194b95bc9d6a9e25cfa3e9942f5754e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43430617"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972501"
 ---
 # <a name="update-windows10mobilecompliancepolicy"></a>Atualizar windows10MobileCompliancePolicy
 
@@ -53,22 +53,22 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [windows10Mobile
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|String|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |passwordRequired|Boolean|Exige uma senha para desbloquear o dispositivo Windows Phone.|
-|passwordBlockSimple|Booliano|Se a sincronização do calendário deve ou não ser bloqueada.|
+|passwordBlockSimple|Boolean|Se a sincronização do calendário deve ou não ser bloqueada.|
 |passwordMinimumLength|Int32|Comprimento mínimo da senha. Valores válidos de 4 a 16|
 |passwordMinimumCharacterSetCount|Int32|O número de conjuntos de caracteres necessários na senha.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|O número de senhas anteriores cujo uso deve ser evitado.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha. Valores válidos de 1 a 255|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que uma senha seja necessária.|
-|passwordRequireToUnlockFromIdle|Booliano|Exige uma senha para desbloquear o dispositivo ocioso.|
+|passwordRequireToUnlockFromIdle|Boolean|Exige uma senha para desbloquear o dispositivo ocioso.|
 |osMinimumVersion|String|Versão mínima do Windows Phone.|
 |osMaximumVersion|String|Versão máxima do Windows Phone.|
 |earlyLaunchAntiMalwareDriverEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
@@ -174,6 +174,9 @@ Content-Length: 1330
   ]
 }
 ```
+
+
+
 
 
 

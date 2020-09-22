@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9613b41bfa84e931518aa179ca990fa7f513ef6e
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: dcfe1b9aee6f752b61f5a2303ad9150e72d57893
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917350"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973257"
 ---
 # <a name="create-homerealmdiscoverypolicy"></a>Criar homeRealmDiscoveryPolicy
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [homeReal
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -132,3 +132,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c06b6d594e9b6772ef466c21f324ab8ae68a2fb4
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: d73fac55ac26110ea2dd12b06dbe490798827e78
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565015"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972837"
 ---
 # <a name="delete-ipnamedlocation"></a>Excluir ipNamedLocation
 
@@ -107,3 +107,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

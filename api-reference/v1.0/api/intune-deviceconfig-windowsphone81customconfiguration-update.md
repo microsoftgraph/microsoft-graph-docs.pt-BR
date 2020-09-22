@@ -3,14 +3,14 @@ title: Atualizar windowsPhone81CustomConfiguration
 description: Atualizar as propriedades de um objeto windowsPhone81CustomConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d54e5956f1047f8793bd82ad3eb3302381f1514c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 10855bc66729ae4ad94f5efbee4954d7f5a481b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421983"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972900"
 ---
 # <a name="update-windowsphone81customconfiguration"></a>Atualizar windowsPhone81CustomConfiguration
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |omaSettings|Coleção [omaSetting](../resources/intune-deviceconfig-omasetting.md)|Configurações OMA. Essa coleção pode conter um máximo de 1.000 elementos.|
 
@@ -116,6 +116,9 @@ Content-Length: 581
   ]
 }
 ```
+
+
+
 
 
 

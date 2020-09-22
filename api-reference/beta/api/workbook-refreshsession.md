@@ -1,20 +1,20 @@
 ---
-title: Atualizar Sessão
+title: Atualizar sessão
 description: 'Use esta API para atualizar uma sessão de pasta de trabalho existente. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d21b03ae12ed3af28519bae5a814bc6344e53205
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9cd1a3762b45bca1f7ce7be15928f99f8fcdd5e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451438"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974020"
 ---
-# <a name="refresh-session"></a>Atualizar Sessão
+# <a name="refresh-session"></a>Atualizar sessão
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Use esta API para atualizar uma sessão de pasta de trabalho existente. 
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
+

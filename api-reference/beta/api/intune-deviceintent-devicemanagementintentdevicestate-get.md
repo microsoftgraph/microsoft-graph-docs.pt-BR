@@ -3,14 +3,14 @@ title: Obter deviceManagementIntentDeviceState
 description: Leia as propriedades e as relações do objeto deviceManagementIntentDeviceState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3691efda09e6aed92111bc1a57d0bed96df611ae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f6d8e6075e5c268d51eedcac805ad0d0c56f542f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43326328"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972312"
 ---
 # <a name="get-devicemanagementintentdevicestate"></a>Obter deviceManagementIntentDeviceState
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -83,6 +83,9 @@ Content-Length: 426
   }
 }
 ```
+
+
+
 
 
 

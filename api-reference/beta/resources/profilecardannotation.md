@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 973732dc92527dcf3795b8796e1c817ba880836c
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
-ms.translationtype: Auto
+ms.openlocfilehash: 57b6378c811727676f7b34c1812955639598054b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050990"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973726"
 ---
 # <a name="profilecardannotation-resource-type"></a>tipo de recurso profileCardAnnotation
 
@@ -59,3 +59,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

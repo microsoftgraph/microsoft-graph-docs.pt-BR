@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 70e56c30355620e1cc69f258d777e5040c9387e7
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7ca7a7dc047fff602cec25813faad14e95e63819
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807119"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973656"
 ---
 # <a name="sharepointactivityusercounts-resource-type"></a>tipo de recurso sharePointActivityUserCounts
 
@@ -50,3 +50,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

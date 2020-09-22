@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cc9b4547e3b2e62a59f8827a88ba1e58a693aa10
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 20c4a97c183fc3109721c600a41e16f7b704fbb2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108295"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972698"
 ---
 # <a name="assign-manager"></a>Atribuir gerente
 
@@ -106,3 +106,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

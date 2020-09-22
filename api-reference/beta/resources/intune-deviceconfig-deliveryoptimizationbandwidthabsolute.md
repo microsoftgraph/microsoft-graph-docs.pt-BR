@@ -3,14 +3,14 @@ title: tipo de recurso deliveryOptimizationBandwidthAbsolute
 description: Limites de largura de banda em quilobytes por segundo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 34199703021805779fef292e906195fbb0f306cd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8df502e294979ea81d26858f64cd386b83057f99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420760"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973796"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthAbsolute
 
@@ -50,6 +50,9 @@ Veja a seguir uma representação JSON do recurso.
   "maximumUploadBandwidthInKilobytesPerSecond": 1024
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Listar managedAndroidLobApps
 description: Listar propriedades e relações dos objetos managedAndroidLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd865ad94ee99cddc174010bf312add1126925d0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c706031566a2de7c3a14d0aaf951565e0cceee38
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446430"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973117"
 ---
 # <a name="list-managedandroidlobapps"></a>Listar managedAndroidLobApps
 
@@ -110,6 +110,9 @@ Content-Length: 1510
   ]
 }
 ```
+
+
+
 
 
 

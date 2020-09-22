@@ -3,14 +3,14 @@ title: tipo de enumeração defenderSecurityCenterITContactDisplayType
 description: Valores possíveis para defenderSecurityCenterITContactDisplay
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d8bc4a71af690e632ae426a2aa184a4b7236f28d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 07f3e3d6311ec7b479d9274f806d9e20676273a3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420851"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973824"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>tipo de enumeração defenderSecurityCenterITContactDisplayType
 
@@ -26,9 +26,12 @@ Valores possíveis para defenderSecurityCenterITContactDisplay
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|displayInAppAndInNotifications|1|Exibir no aplicativo e em notificações|
-|displayOnlyInApp|duas|Exibir somente no aplicativo|
-|displayOnlyInNotifications|3D|Exibir somente em notificações|
+|displayInAppAndInNotifications|1 |Exibir no aplicativo e em notificações|
+|displayOnlyInApp|2 |Exibir somente no aplicativo|
+|displayOnlyInNotifications|3 |Exibir somente em notificações|
+
+
+
 
 
 

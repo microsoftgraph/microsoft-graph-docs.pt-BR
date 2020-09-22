@@ -6,16 +6,16 @@ title: Compartilhados
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 5a737f3cbdcaf848e999bcf7ca09775b28ca016b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc867120028f1f36672f429ace0738779e9f9d48
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520735"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973684"
 ---
 # <a name="shared-resource-type"></a>Tipo de recurso Shared
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -71,3 +71,5 @@ Para saber mais sobre as facetas de um **driveItem**, confira [**driveItem**](dr
   "suppressions": []
 }
 -->
+
+
