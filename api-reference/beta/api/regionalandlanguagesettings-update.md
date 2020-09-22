@@ -5,12 +5,12 @@ author: jasonbro
 localization_priority: Normal
 ms.prod: settings
 doc_type: apiPageType
-ms.openlocfilehash: c84023c281dcda00db756a80f5d14668d213e727
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: Auto
+ms.openlocfilehash: 2af80fb6261d04e2aa35a6fe3ea20ce30c63842f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744204"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971976"
 ---
 # <a name="update-regionalandlanguagesettings"></a>Atualizar regionalAndLanguageSettings
 
@@ -107,6 +107,20 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/put-regionalandlanguagesettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/put-regionalandlanguagesettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/put-regionalandlanguagesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -129,7 +143,6 @@ HTTP/1.1 204 No Content
 
 Este é um exemplo de solicitação.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -151,6 +164,20 @@ Content-type: application/json
    }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/patch-regionalandlanguagesettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-regionalandlanguagesettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-regionalandlanguagesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -178,3 +205,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

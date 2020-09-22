@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 8ee6c9173f6a542d02107b53b4995e287ace31ac
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: b9b3f1c196b60bf2c4b04a9a2a6a04f254f16b2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383802"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971052"
 ---
 # <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>Obter uma concessão de permissão delegada (oAuth2PermissionGrant)
 
@@ -127,3 +127,4 @@ Content-Length: 200
   ]
 }
 -->
+

@@ -5,22 +5,22 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: bdd676f1271c0fdfd0273d3a5064c46127b73fd3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5330b43df249f76cfe2d4d08a0e83b08ca8d587
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519313"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971452"
 ---
 # <a name="workbookchartgridlinesformat-resource-type"></a>tipo de recurso workbookChartGridlinesFormat
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Encapsula as propriedades de formato das linhas de grade do gráfico.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 Nenhum
 
 ## <a name="properties"></a>Propriedades
@@ -64,3 +64,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce3dc9e8af86ed9f0b5b40d33db3232bb735cc0b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b814ff6a4143b7115d9c226243ca133bc632867d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463796"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971115"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>Função deviceConfigurationDeviceActivity
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
-| &nbsp;&nbsp; Configuração do dispositivo | DeviceManagementConfiguration.Read.All|
+| &nbsp;&nbsp;Configuração do dispositivo | DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -72,6 +72,9 @@ Content-Length: 123
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Criar windowsManagementAppHealthState
 description: Criar um novo objeto windowsManagementAppHealthState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9514f00e5044baf1faf64fc9a15833fb8c7f975
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b183f97850b9495ca862ba16e4b638b32e7ba419
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43321566"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972222"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>Criar windowsManagementAppHealthState
 
@@ -63,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsM
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -101,6 +101,9 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
+
+
+
 
 
 

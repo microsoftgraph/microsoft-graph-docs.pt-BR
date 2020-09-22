@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8d6bce42c31e39f5b36e3beccdac2fc660f9cb30
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 37ed8ce10f62888a7bf1be67f489c6b8a0b95c76
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522754"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971731"
 ---
 # <a name="mediastream-resource-type"></a>tipo de recurso mediaStream
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,9 +24,9 @@ Contém informações sobre o canal de mídia.
 
 | Propriedade    | Tipo    | Descrição                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| direction   | String  | A direção. Os valores possíveis são `inactive`: `sendOnly` `receiveOnly`,, `sendReceive`,.                  |
+| direction   | String  | A direção. Os valores possíveis são:,,, `inactive` `sendOnly` `receiveOnly` `sendReceive` .                  |
 | rótulo       | String  | O rótulo do fluxo de mídia.                                                                                       |
-| Mídia   | String  | O tipo de mídia. O valor possível é `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
+| mediaType   | String  | O tipo de mídia. O valor possível é `unknown` , `audio` , `video` , `videoBasedScreenSharing` , `data` .        |
 | serverMuted | Boolean | Indica se a mídia está com mudo ativado pelo servidor.                                                                          |
 | sourceId    | String  | A ID da fonte.                                                                                                |
 
@@ -64,3 +64,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

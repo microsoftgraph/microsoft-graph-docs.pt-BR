@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 58c0d95473472930bbc43038e89cb1c8c19d1777
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8d2e9892f72c3106eafd8d48e06a32a826e68a5b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443086"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971822"
 ---
 # <a name="mailsearchfolder-resource-type"></a>tipo de recurso mailSearchFolder
 
@@ -30,7 +30,7 @@ Pastas de pesquisa criadas por seu aplicativo podem ser excluídas pelo Exchange
 Quando uma pasta de pesquisa é excluída, seu aplicativo deve criar um novo recurso de pasta de pesquisa e usar o mesmo.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método | Tipo de retorno  | Descrição |
 |:---------------|:--------|:----------|
@@ -46,8 +46,8 @@ Quando uma pasta de pesquisa é excluída, seu aplicativo deve criar um novo rec
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 | IsSupported | Boolean | Indica se uma pasta de pesquisa é editável usando as APIs REST. |
-| includeNestedFolders | Boolean | Indica como a hierarquia da pasta da caixa de correio deve ser percorrida na pesquisa. `true`significa que uma pesquisa profunda deve ser feita para incluir pastas filhas na hierarquia de cada pasta explicitamente especificada no **sourceFolderIds**. `false`significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas no **sourceFolderIds**. |
-| sourceFolderIds | Coleção String | As pastas de caixa de correio que devem ser minadas. |
+| includeNestedFolders | Boolean | Indica como a hierarquia da pasta da caixa de correio deve ser percorrida na pesquisa. `true` significa que uma pesquisa profunda deve ser feita para incluir pastas filhas na hierarquia de cada pasta explicitamente especificada no **sourceFolderIds**. `false` significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas no **sourceFolderIds**. |
+| sourceFolderIds | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser minadas. |
 | filterQuery | String | A consulta OData para filtrar as mensagens. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -81,3 +81,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

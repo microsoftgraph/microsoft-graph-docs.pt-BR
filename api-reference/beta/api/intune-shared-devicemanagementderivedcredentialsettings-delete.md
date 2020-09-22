@@ -3,14 +3,14 @@ title: Excluir deviceManagementDerivedCredentialSettings
 description: Exclui deviceManagementDerivedCredentialSettings.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67b6b551a7dfb246bac429f5912b7dba6c00969a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3966e6d456940897d0281f85cad2b00b7b897580
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972018"
 ---
 # <a name="delete-devicemanagementderivedcredentialsettings"></a>Excluir deviceManagementDerivedCredentialSettings
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f03aeca5c15d26854954ecd4f459e5c0ab49cb4e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 743ebaaf60c76b5191fca1b17b70dbfdca3fcf8c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970772"
 ---
 # <a name="get-workbookapplication"></a>Obter workbookApplication
 
@@ -43,7 +43,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [workbookApplication](../resources/workbookapplication.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [workbookApplication](../resources/workbookapplication.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -109,3 +109,4 @@ Content-length: 48
   ]
 }
 -->
+

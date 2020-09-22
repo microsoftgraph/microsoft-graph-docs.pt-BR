@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 58c3dc2b25b85963e6a0f6f88552dbf2a121d5f7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b14f26fff4721da499d108883f57db009ec42c3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446853"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970604"
 ---
 # <a name="signinlocation-resource-type"></a>tipo de recurso signInLocation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Fornece a cidade, o estado e o país/região de onde a entrada ocorreu.
 
@@ -58,3 +58,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

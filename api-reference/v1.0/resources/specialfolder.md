@@ -7,12 +7,12 @@ localization_priority: Normal
 description: O recurso SpecialFolder agrupa itens de dados relacionados a pastas especiais em uma única estrutura.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 767ac4c5ce8819290e9a47e3e3f4f4efd1a9d238
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 142a20c9ea18185f5b7564769d545cca46e9c286
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533634"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970526"
 ---
 # <a name="specialfolder-resource-type"></a>Tipo de recurso SpecialFolder
 
@@ -73,3 +73,4 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/SpecialFolder"
 } -->
+

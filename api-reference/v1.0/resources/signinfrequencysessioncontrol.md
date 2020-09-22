@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: af2d23c26d2911c8abc36c8a9e66fb776edd43e0
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 8c0c0eca971c6d9df8bde348787029cb5aa98320
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434845"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970618"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>tipo de recurso signInFrequencySessionControl
 
@@ -23,7 +23,7 @@ Controle de sessão para impor frequência de logon. Herda do [controle de sess�
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Especifica se o controle de sessão está habilitado. |
-|tipo          |Cadeia de caracteres       | Os valores possíveis são: `days` e `hours`.|
+|tipo          |String       | Os valores possíveis são: `days` e `hours`.|
 |valor         |Int32        | O número de `days` ou `hours` .|
 
 ## <a name="relationships"></a>Relações
@@ -60,3 +60,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

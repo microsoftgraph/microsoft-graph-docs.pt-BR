@@ -3,14 +3,14 @@ title: tipo de recurso windowsDefenderApplicationControlSupplementalPolicy
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb54ddff0b8e97912b241efc2fa742b0ee661c3d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ee7b3bdabda70e9dd9e20819599607f7972bf02f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449586"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971864"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicy-resource-type"></a>tipo de recurso windowsDefenderApplicationControlSupplementalPolicy
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Ainda não documentado
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsDefenderApplicationControlSupplementalPolicies](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-list.md)|coleção [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Listar Propriedades e relações dos objetos [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) .|
@@ -36,14 +36,14 @@ Ainda não documentado
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da política complementar do WindowsDefenderApplicationControl.|
-|displayName|Cadeia de caracteres|O nome de exibição da política complementar do WindowsDefenderApplicationControl.|
+|displayName|String|O nome de exibição da política complementar do WindowsDefenderApplicationControl.|
 |description|String|A descrição da política suplementar do WindowsDefenderApplicationControl.|
 |conteúdo|Binária|O conteúdo de política suplementar WindowsDefenderApplicationControl no formato de matriz de bytes.|
 |contentFileName|String|O nome de arquivo do conteúdo da política suplementar da WindowsDefenderApplicationControl.|
 |versão|String|A versão da política suplementar da WindowsDefenderApplicationControl.|
 |creationDatetime|DateTimeOffset|A data e a hora em que a política suplementar WindowsDefenderApplicationControl foi carregada.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação da política suplementar do WindowsDefenderApplicationControl.|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta entidade de política suplementar do WindowsDefenderApplicationControl.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de política suplementar do WindowsDefenderApplicationControl.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -76,6 +76,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

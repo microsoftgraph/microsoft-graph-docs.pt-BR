@@ -3,14 +3,14 @@ title: Atualizar windowsManagementAppHealthState
 description: Atualiza as propriedades de um objeto windowsManagementAppHealthState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93ef7de011ca77c010f911e8d581e4f92754abde
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7724051789f00d1cc1c8a0ccb625f838e6e2eee7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43378193"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972179"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>Atualizar windowsManagementAppHealthState
 
@@ -63,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -101,6 +101,9 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
+
+
+
 
 
 

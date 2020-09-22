@@ -3,14 +3,14 @@ title: Obter androidEasEmailProfileConfiguration
 description: Leia as propriedades e as relações do objeto androidEasEmailProfileConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6bc9474820f6e6d7fbac1cb7aff14132dcdfd9e6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9ceb8f0b7f2d8141c5982d13d477d57ba0ec8d9f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43349239"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970310"
 ---
 # <a name="get-androideasemailprofileconfiguration"></a>Obter androidEasEmailProfileConfiguration
 
@@ -124,6 +124,9 @@ Content-Length: 1851
   }
 }
 ```
+
+
+
 
 
 

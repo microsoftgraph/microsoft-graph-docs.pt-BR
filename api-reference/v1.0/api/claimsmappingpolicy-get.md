@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 13003d968a9cf657936ae10cbd4a12271c23b0cd
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: 0ee2f2a346372da0983e3b9e8879c1ead3839549
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863646"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971339"
 ---
 # <a name="get-claimsmappingpolicy"></a>Obter claimsMappingPolicy
 
@@ -38,7 +38,7 @@ GET /policies/claimsMappingPolicies/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte `$expand` aos `$select` parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters). Ao usar `$expand` certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.
+Este método oferece suporte `$expand` aos `$select` parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters). Ao usar `$expand` certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -123,3 +123,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8d36bc14354e7782f54732d35b7c235ebb512152
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: da6962e7c782e455c1bf0ca61d27a8cbdf77950a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217442"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971032"
 ---
 # <a name="get-swapshiftschangerequest"></a>Obter swapShiftsChangeRequest
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Schedule. Read. All, Schedule. ReadWrite. All |
+|Aplicativo | Schedule. Read. All, Schedule. ReadWrite. All |
 
-> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -136,3 +136,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

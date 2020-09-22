@@ -3,14 +3,14 @@ title: tipo de enumeração easServices
 description: Exchange Active Sync Services.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1286b53a534891b7282b03ade10c6bedaf85c9eb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2bf31e26da77f933f71e6bc6622e3b9f9009ac96
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43359391"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971885"
 ---
 # <a name="easservices-enum-type"></a>tipo de enumeração easServices
 
@@ -25,12 +25,15 @@ Exchange Active Sync Services.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Ainda não documentado|
-|calendars|1|Permite a sincronização de calendários.|
-|contacts|duas|Permite a sincronização de contatos.|
+|Nenhuma|,0|Ainda não documentado|
+|calendars|1 |Permite a sincronização de calendários.|
+|contacts|2 |Permite a sincronização de contatos.|
 |email|4 |Permite a sincronização de emails.|
 |notes|8 |Permite a sincronização de notas.|
 |lembretes|16 |Permite a sincronização de lembretes.|
+
+
+
 
 
 

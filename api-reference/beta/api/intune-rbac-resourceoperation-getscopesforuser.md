@@ -3,14 +3,14 @@ title: função Getscopesforuser à
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bac1b7e497a38882f17a437b011a520df114a07d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 168092ec35deca205c3db455cbe691b23780e702
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471553"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972039"
 ---
 # <a name="getscopesforuser-function"></a>função Getscopesforuser à
 
@@ -80,6 +80,9 @@ Content-Length: 56
   ]
 }
 ```
+
+
+
 
 
 

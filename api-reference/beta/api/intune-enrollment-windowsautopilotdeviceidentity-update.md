@@ -3,14 +3,14 @@ title: Atualizar windowsAutopilotDeviceIdentity
 description: Atualiza as propriedades de um objeto windowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72089bfb96c41b37f0d1219f0bb86de89ba7ec4a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 42fd74418ea778a705b41a5eee21c4d66018127c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452347"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972158"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>Atualizar windowsAutopilotDeviceIdentity
 
@@ -58,10 +58,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Status de atribuição de perfil do dispositivo do Windows AutoPilot. Os valores possíveis são: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Atribuição de perfil status detalhado do dispositivo do Windows AutoPilot. Os valores possíveis são: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Hora do conjunto de perfis do dispositivo do Windows AutoPilot.|
-|orderIdentifier|String|Identificador de pedidos do dispositivo do Windows AutoPilot-preterido|
+|orderIdentifier|Cadeia de caracteres|Identificador de pedidos do dispositivo do Windows AutoPilot-preterido|
 |groupTag|String|Marca de grupo do dispositivo do Windows AutoPilot.|
 |purchaseOrderIdentifier|String|Identificador de ordem de compra do dispositivo do Windows AutoPilot.|
-|serialNumber|String|Número de série do dispositivo do Windows AutoPilot.|
+|serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |fabricante|String|Fabricante OEM do dispositivo do Windows AutoPilot.|
 |modelo|String|Nome do modelo do dispositivo do Windows AutoPilot.|
@@ -74,12 +74,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |systemFamily|String|Família de sistema|
 |azureActiveDirectoryDeviceId|String|ID de dispositivo do AAD|
 |managedDeviceId|String|ID do dispositivo gerenciado|
-|displayName|Cadeia de caracteres|Nome de exibição|
+|displayName|String|Nome de exibição|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -147,6 +147,9 @@ Content-Length: 1124
   "displayName": "Display Name value"
 }
 ```
+
+
+
 
 
 

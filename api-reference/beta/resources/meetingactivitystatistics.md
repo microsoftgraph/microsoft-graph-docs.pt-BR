@@ -5,16 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 039d2be82a08057c9f9a5405d3591898304a8bcc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3d1f9c7ad147b6aa3f4d52c314931d5c40af2b47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522747"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971689"
 ---
 # <a name="meetingactivitystatistics-resource-type"></a>tipo de recurso meetingActivityStatistics
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +34,7 @@ Representa dados sobre o tempo gasto pelo usuário em reuniões no Microsoft Out
 |duration|Duração|Total de horas gasto em reuniões. O valor é representado no formato ISO 8601 para durações.|
 |endDate|Data|Data de término da atividade da reunião. O valor é representado no formato ISO 8601 para datas do calendário. Por exemplo, o valor da propriedade poderia ser "2019-07-04" que segue o formato AAAA-MM-DD.|
 |id|String| ID somente leitura da atividade da reunião.|
-|startDate|Date|Data de início da atividade da reunião. O valor é representado no formato ISO 8601 para datas do calendário. Por exemplo, o valor da propriedade poderia ser "2019-07-03" que segue o formato AAAA-MM-DD.|
+|startDate|Data|Data de início da atividade da reunião. O valor é representado no formato ISO 8601 para datas do calendário. Por exemplo, o valor da propriedade poderia ser "2019-07-03" que segue o formato AAAA-MM-DD.|
 |timeZoneUsed|String|O fuso horário do Outlook definido pelo usuário no calendário do Outlook é usado para a computação. Por exemplo, o valor da propriedade poderia ser "hora padrão do Pacífico".|
 |afterHours|Duração|Tempo gasto em reuniões fora do horário de trabalho, que se baseia na configuração de calendário do Outlook do usuário para horário de trabalho. O valor é representado no formato ISO 8601 para durações.|
 |conflitantes|Duração|Tempo gasto em reuniões conflitantes (reuniões que se sobrepõem a outras reuniões que a pessoa aceitou e onde o status da pessoa está definido como ocupado). O valor é representado no formato ISO 8601 para durações.|
@@ -87,3 +87,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

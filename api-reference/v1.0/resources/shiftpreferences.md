@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 91a6093ad66d906fe9917ae7a22d2297ded4b4d7
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: c1f2b4acdc61fcf7889ea0b9dd1046aff112c9e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154854"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970660"
 ---
 # <a name="shiftpreferences-resource-type"></a>tipo de recurso shiftPreferences
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 Representa a disponibilidade de um usuário a ser atribuída a turnos no [cronograma](schedule.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Get](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | Leia as propriedades e os relacionamentos de um objeto **shiftPreferences** . |
-| [Update](../api/shiftpreferences-put.md) | [shiftPreferences](shiftpreferences.md) | Atualizar um objeto **shiftPreferences** . |
+| [Atualização](../api/shiftpreferences-put.md) | [shiftPreferences](shiftpreferences.md) | Atualizar um objeto **shiftPreferences** . |
 
 ## <a name="properties"></a>Propriedades
 
@@ -68,3 +68,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

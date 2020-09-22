@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 23aebcc68e0f0aa2fec0be895dffb8c723a1ddc8
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 6009003b47b1e0bf0406cb3f9cbe8853d8a9b72b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917086"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971953"
 ---
 # <a name="list-relyingpartydetailedsummary"></a>Listar relyingPartyDetailedSummary
 
@@ -45,12 +45,12 @@ GET /reports/getRelyingPartyDetailedSummary
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. 
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. 
 
-- Você pode usar o `$filter` parâmetro para filtrar por RelyingPartyId, migrationStatus e outros atributos. Por exemplo, $filter = relyingPartyId EQ ' identifier '.
-- Você pode usar `$orderby`, `$top`e `$skip` parâmetros de consulta em qualquer solicitação get.
+- Você pode usar o `$filter` parâmetro para filtrar por relyingPartyId, migrationStatus e outros atributos. Por exemplo, $filter = relyingPartyId EQ ' identifier '.
+- Você pode usar `$orderby` , `$top` e `$skip` parâmetros de consulta em qualquer solicitação get.
 
-Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -65,7 +65,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -145,3 +145,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

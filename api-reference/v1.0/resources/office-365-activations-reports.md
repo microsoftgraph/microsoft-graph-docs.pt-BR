@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 34bebb8edb7d83ca631d93add90a7e2810849c3d
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: ebca76ca3fe9356839636e7dca29293b083c13ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898167"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970667"
 ---
 # <a name="microsoft-365-activations-reports"></a>Relatórios de ativações do Microsoft 365
 
@@ -23,6 +23,7 @@ Os relatórios de ativação do Microsoft 365 podem fornecer uma visão de quais
 ## <a name="reports"></a>Relatórios
 | Função                                 | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Obter dados de usuário](../api/reportroot-getoffice365activationsuserdetail.md) | Stream      | Obtenha detalhes sobre os usuários que ativaram o Microsoft 365. |
+| [Obter dados de usuário](../api/reportroot-getoffice365activationsuserdetail.md) | Fluxo      | Obtenha detalhes sobre os usuários que ativaram o Microsoft 365. |
 | [Obter contagens de ativação](../api/reportroot-getoffice365activationcounts.md) | Fluxo      | Obtenha a contagem de ativações do Microsoft 365 em desktops e dispositivos. |
 | [Obter contagens de usuários](../api/reportroot-getoffice365activationsusercounts.md) | Fluxo      | Obtenha a contagem de usuários habilitados e aqueles que ativaram a assinatura do Office no desktop ou nos dispositivos. |
+

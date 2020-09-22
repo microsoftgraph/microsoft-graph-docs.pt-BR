@@ -3,14 +3,14 @@ title: Listar windowsManagementAppHealthStates
 description: Listar Propriedades e relações dos objetos windowsManagementAppHealthState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 23a4e9bccbe84b15c2c014b09e7747c3560ea77b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2aec5043de257bb6777f4d784adabce50c2510af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43378216"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972186"
 ---
 # <a name="list-windowsmanagementapphealthstates"></a>Listar windowsManagementAppHealthStates
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/windowsManagementApp/healthStates
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -81,6 +81,9 @@ Content-Length: 410
   ]
 }
 ```
+
+
+
 
 
 

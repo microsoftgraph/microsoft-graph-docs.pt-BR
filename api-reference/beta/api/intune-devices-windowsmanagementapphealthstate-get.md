@@ -3,14 +3,14 @@ title: Obter windowsManagementAppHealthState
 description: Leia as propriedades e as relações do objeto windowsManagementAppHealthState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d0cf254bd1628f85578e7ee78c5fddc8501a20c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f898271b0e9b72d0a5bae15be2378b33d3c43fc4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43378295"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972242"
 ---
 # <a name="get-windowsmanagementapphealthstate"></a>Obter windowsManagementAppHealthState
 
@@ -82,6 +82,9 @@ Content-Length: 382
   }
 }
 ```
+
+
+
 
 
 

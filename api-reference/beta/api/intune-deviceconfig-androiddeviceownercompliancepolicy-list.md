@@ -3,14 +3,14 @@ title: Listar androidDeviceOwnerCompliancePolicies
 description: Listar Propriedades e relações dos objetos androidDeviceOwnerCompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c27bd3761ce733b0c7b680ff4585bcb6c4fa0c65
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 66fb71fe68f69cdd9f2634b8ef7bb70fefbf1e43
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43351566"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970422"
 ---
 # <a name="list-androiddeviceownercompliancepolicies"></a>Listar androidDeviceOwnerCompliancePolicies
 
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceCompliancePolicies
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [androidDeviceOwnerCompliancePolicy](../resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [androidDeviceOwnerCompliancePolicy](../resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -105,6 +105,9 @@ Content-Length: 1552
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e5736e70125af9ba41d9c2017171865717797998
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: ab5f273ab260afb454882b2293463556c6a5249c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218276"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970968"
 ---
 # <a name="replace-timeoffreason"></a>Substituir timeOffReason
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Schedule. ReadWrite. All, Group. ReadWrite. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Schedule.ReadWrite.All |
+|Aplicativo | Schedule.ReadWrite.All |
 
-> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -147,3 +147,4 @@ Content-length: 401
   ]
 }
 -->
+

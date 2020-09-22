@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9b382a4c466e42ee0805a2115fc0512a18cb6899
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c1dc01ed5e424297821a985422b9e2ce9855163
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508804"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970759"
 ---
 # <a name="list-workbookcommentreplies"></a>Listar workbookCommentReplies
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [workbookCommentReply](../resources/workbookcommentreply.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [workbookCommentReply](../resources/workbookcommentreply.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -126,3 +126,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

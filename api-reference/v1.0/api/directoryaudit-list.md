@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b3e751ea0652b2a6c621079372fa167e8de03df9
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 5659feb6b08a90b7bac44ae2677925ec733c2328
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543391"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971332"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -46,7 +46,7 @@ Este método oferece suporte aos seguintes parâmetros de consulta OData para aj
 | [\$Início](/graph/query_parameters#top-parameter)             | Define o tamanho de página de resultados.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
 | [\$skiptoken](/graph/query_parameters#skiptoken-parameter) | Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
-### <a name="attributes-supported-by-filter-parameter"></a>Atributos com suporte \$no parâmetro Filter
+### <a name="attributes-supported-by-filter-parameter"></a>Atributos com suporte no \$ parâmetro Filter
 
 | Atributo                                                    | Operadores com suporte |
 | :----------------------------------------------------------- | :------------------ |
@@ -74,7 +74,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [directoryAudit](../resources/directoryaudit.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [directoryAudit](../resources/directoryaudit.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -189,3 +189,4 @@ Content-length: 271
   "suppressions": [
   ]
 }-->
+

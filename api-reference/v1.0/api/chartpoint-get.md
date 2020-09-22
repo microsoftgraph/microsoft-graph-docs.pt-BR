@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 92373ce6c91a06bc7d992522c8b8071b3258057b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 447807fd66847b19616cf798d1ad447b01ee6039
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518389"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971395"
 ---
 # <a name="get-chartpoint"></a>Obter ChartPoint
 
@@ -105,3 +105,4 @@ Content-length: 20
   "suppressions": [
   ]
 }-->
+

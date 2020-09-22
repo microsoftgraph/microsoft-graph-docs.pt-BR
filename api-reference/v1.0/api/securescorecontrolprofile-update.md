@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: f8d0fd0237bbca4b13deb7fbc8efb3f064f92e2c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e8dbf79d704e9872073812502a4f414fe68397d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509847"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971031"
 ---
 # <a name="update-securescorecontrolprofile"></a>Atualizar secureScoreControlProfile
 
@@ -45,13 +45,13 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON dos valores de campos relevantes que devem ser atualizados. O corpo **deve** conter a `vendorInformation` Propriedade com os `provider` campos `vendor` válidos e. A tabela a seguir lista os campos que podem ser atualizados para um **secureScoreControlProfile**. Os valores das propriedades existentes que não estão incluídas no corpo da solicitação não serão alterados. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça uma representação JSON dos valores de campos relevantes que devem ser atualizados. O corpo **deve** conter a `vendorInformation` propriedade com os `provider` campos válidos e `vendor` . A tabela a seguir lista os campos que podem ser atualizados para um **secureScoreControlProfile**. Os valores das propriedades existentes que não estão incluídas no corpo da solicitação não serão alterados. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |assignedTo|String|Nome do analista ao qual o controle é atribuído para a triagem, implementação ou correção.|
 |comment|String|Comentários de analista sobre o controle (para o gerenciamento de controle de clientes).|
-|state| Cadeia de caracteres|Configuração orientada pelo analista no controle. Os valores possíveis são: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
+|state| String|Configuração orientada pelo analista no controle. Os valores possíveis são: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Tipo complexo que contém detalhes sobre o fornecedor de produtos/serviços de segurança, o provedor e o subfornecedor (por exemplo, fornecedor = Microsoft; Provider = SecureScore;). **Os campos Provider e Vendor são necessários.** |
 
 
@@ -59,7 +59,7 @@ No corpo da solicitação, forneça uma representação JSON dos valores de camp
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
-Se o cabeçalho de solicitação opcional for usado, o método retornará `200 OK` um código de resposta e o objeto [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) atualizado no corpo da resposta.
+Se o cabeçalho de solicitação opcional for usado, o método retornará um `200 OK` código de resposta e o objeto [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -128,7 +128,7 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra uma solicitação que inclui `Prefer` o cabeçalho da solicitação.
+O exemplo a seguir mostra uma solicitação que inclui o `Prefer` cabeçalho da solicitação.
 
 <!-- {
   "blockType": "request",
@@ -230,3 +230,4 @@ Content-type: application/json
   ]
 }
 -->
+

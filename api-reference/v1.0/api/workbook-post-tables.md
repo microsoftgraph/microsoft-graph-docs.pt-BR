@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0d9548ed6e0981144c231227481a92a151de7446
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c79bb7be3c8a82fb1d489ffc0602b842f2b1b833
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508839"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970807"
 ---
 # <a name="create-table"></a>Criar tabela
 
@@ -43,12 +43,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro           | Tipo      |Descrição|
 |:---------------|:----------|:----------|
-| Endereço  | string| Endereço do intervalo. Se você estiver chamando esta API fora do `worksheets/{id or name}/tables/add` caminho, não será necessário para o prefixo do nome da planilha no endereço. No entanto, se você estiver ligando para `workbook/tables/add` fora do caminho, forneça o nome da planilha na qual a tabela precisa ser criada (exemplo `sheet1!A1:D4`:)|
+| Endereço  | string| Endereço do intervalo. Se você estiver chamando esta API fora do `worksheets/{id or name}/tables/add` caminho, não será necessário para o prefixo do nome da planilha no endereço. No entanto, se você estiver ligando para fora do `workbook/tables/add` caminho, forneça o nome da planilha na qual a tabela precisa ser criada (exemplo: `sheet1!A1:D4` )|
 | hasHeaders  | booliano|Valor booliano que indica se o intervalo tem rótulos de coluna. Se a fonte não contiver cabeçalhos (ou seja,. Quando essa propriedade for definida como false, o Excel gerará automaticamente o cabeçalho deslocando os dados de uma linha para baixo.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [workbooktable](../resources/table.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [workbooktable](../resources/table.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -97,3 +97,4 @@ Content-length: 109
   "section": "documentation",
   "tocPath": ""
 }-->
+

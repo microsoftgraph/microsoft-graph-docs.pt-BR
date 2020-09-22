@@ -3,14 +3,14 @@ title: Atualizar resourceOperation
 description: Atualizar as propriedades de um objeto resourceOperation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d6afbcc8a3b6adc0ade92e17588377e220c247f2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 857b93daef3b9a697e4ffa6ec5c206833d968024
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421085"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972032"
 ---
 # <a name="update-resourceoperation"></a>Atualizar resourceOperation
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [resourceOperati
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
+|id|String|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
 |recurso|String|Categoria de recurso à qual essa operação pertence.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
@@ -101,6 +101,9 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
+
+
+
 
 
 

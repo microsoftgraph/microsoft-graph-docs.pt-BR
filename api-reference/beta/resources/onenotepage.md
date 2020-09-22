@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: jewan-microsoft
-ms.openlocfilehash: d219677c70be566b5039a39c5421c91a9ab11c8c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 463ac02029753fcc99392fbc3db464989f5ae01a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809366"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971533"
 ---
 # <a name="onenotepage-resource-type"></a>tipo de recurso onenotePage
 
@@ -41,7 +41,7 @@ Uma página em um bloco de anotações do OneNote.
 |parentNotebook|[bloco de anotações](notebook.md)|O bloco de anotações que contém a página.  Somente leitura.|
 |parentSection|[onenoteSection](onenotesection.md)|A seção que contém a página. Somente leitura.|
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -93,3 +93,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

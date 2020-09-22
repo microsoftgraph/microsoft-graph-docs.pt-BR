@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 922ebf14f59d60a988fe77ee36ce04d9c76befec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb17035f0d062d55a3607dd30f31459b79b8400c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519026"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971367"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>tipo de recurso yammerActivityUserDetail
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -22,14 +22,14 @@ Namespace: Microsoft. Graph
 | :---------------- | :---------------- |
 | reportRefreshDate | Data              |
 | userPrincipalName | String            |
-| displayName       | Cadeia de caracteres            |
+| displayName       | String            |
 | userState         | String            |
 | stateChangeDate   | Data              |
 | lastActivityDate  | Data              |
 | postedCount       | Int64             |
 | readCount         | Int64             |
 | likedCount        | Int64             |
-| assignedProducts  | String collection |
+| assignedProducts  | Coleção de cadeias de caracteres |
 | reportPeriod      | String            |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -56,3 +56,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

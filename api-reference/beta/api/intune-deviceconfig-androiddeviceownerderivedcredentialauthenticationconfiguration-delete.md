@@ -3,14 +3,14 @@ title: Excluir androidDeviceOwnerDerivedCredentialAuthenticationConfiguration
 description: Exclui androidDeviceOwnerDerivedCredentialAuthenticationConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7bcff0882dc819d6e19ad953fa112d3cf26866b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69a4034e7492402aa7715d77b09576dd53220cb1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43351414"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970394"
 ---
 # <a name="delete-androiddeviceownerderivedcredentialauthenticationconfiguration"></a>Excluir androidDeviceOwnerDerivedCredentialAuthenticationConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

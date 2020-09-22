@@ -5,12 +5,12 @@ author: khotz
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fd8981e527bfa8d480dc0e9cda23a061fb9c5ac2
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 86136a1180df6f07d0919589570cda3c5e20b36b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673872"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970632"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Detalha a atividade de entrada do usuário e do aplicativo para um locatário (diretório).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -28,19 +28,19 @@ Detalha a atividade de entrada do usuário e do aplicativo para um locatário (d
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|appDisplayName|Cadeia de caracteres|Nome do aplicativo exibido no portal do Azure.|
-|appId|Cadeia de caracteres|GUID exclusivo que representa a ID do aplicativo no Azure Active Directory.|
+|appDisplayName|String|Nome do aplicativo exibido no portal do Azure.|
+|appId|String|GUID exclusivo que representa a ID do aplicativo no Azure Active Directory.|
 |appliedConditionalAccessPolicy|coleção [appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md)|Fornece uma lista de políticas de acesso condicional acionada por atividade correspondente entrar.|
 |clientAppUsed|Cadeia de caracteres|Identifica o cliente herdado usado para a atividade de entrada.  Inclui navegador, Exchange Active Sync, clientes modernos, IMAP, MAPI, SMTP e POP.|
 |conditionalAccessStatus|cadeia de caracteres| Relata o status de uma política de acesso condicional ativada. Os valores possíveis são: `success` , `failure` , `notApplied` , e `unknownFutureValue` .|
 |correlationId|Cadeia de caracteres|A ID de solicitação enviada do cliente quando o logon é iniciado; usado para solucionar problemas de atividade de entrada.|
 |createdDateTime|DateTimeOffset|Data e hora (UTC) a entrada foi iniciada. Exemplo: meia-noite em 1º de janeiro de 2014 é reportada como `'2014-01-01T00:00:00Z'` .|
 |deviceDetail|[deviceDetail](devicedetail.md)|Informações do dispositivo de onde a entrada ocorreu; inclui ID de dispositivo, sistema operacional e navegador. |
-|id|Cadeia de caracteres|ID exclusiva que representa a atividade de entrada.|
+|id|String|ID exclusiva que representa a atividade de entrada.|
 |ipAddress|Cadeia de caracteres|Endereço IP do cliente usado para entrar.|
 |isInteractive|Booliano|Indica se um logon é interativo ou não.|
 |location|[signInLocation](signinlocation.md)|Fornece a cidade, o estado e o código do país onde a entrada se originou.|
-|resourceDisplayName|Cadeia de caracteres|Nome do recurso do usuário conectado.|
+|resourceDisplayName|String|Nome do recurso do usuário conectado.|
 |resourceId|Cadeia de caracteres|ID do recurso que o usuário entrou.|
 |riskDetail|riskDetail|Fornece o motivo por trás de um estado específico de um usuário arriscado, uma entrada arriscada ou um evento de risco. Os valores possíveis são `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento. <br>**Observação:** Os detalhes dessa propriedade exigem uma licença do Azure AD Premium P2. Outras licenças retornam o valor `hidden` .|
 |riskEventTypes|coleção riskEventType|Tipos de eventos de risco associados à entrada. Os valores possíveis são: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` e `unknownFutureValue`.|
@@ -51,7 +51,7 @@ Detalha a atividade de entrada do usuário e do aplicativo para um locatário (d
 |status|[signInStatus](signinstatus.md)|Status de logon. Os valores possíveis incluem `Success` e `Failure`.|
 |userDisplayName|Cadeia de caracteres|Nome para exibição do usuário que iniciou a entrada.|
 |userId|Cadeia de caracteres|ID do usuário que iniciou a entrada.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário que iniciou a entrada.|
+|userPrincipalName|String|Nome principal do usuário que iniciou a entrada.|
 
 ## <a name="relationships"></a>Relações
 
@@ -108,3 +108,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

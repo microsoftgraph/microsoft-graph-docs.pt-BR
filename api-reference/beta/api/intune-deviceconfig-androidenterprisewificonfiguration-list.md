@@ -3,14 +3,14 @@ title: Listar androidEnterpriseWiFiConfigurations
 description: Listar Propriedades e relações dos objetos Androidenterprisewificonfiguration..
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 573f5b045fec0102056106e4492e6062e684235e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4e45454722c30790d48b31d2b07eb4f405c16de1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43348726"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970282"
 ---
 # <a name="list-androidenterprisewificonfigurations"></a>Listar androidEnterpriseWiFiConfigurations
 
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [androidenterprisewificonfiguration.](../resources/intune-deviceconfig-androidenterprisewificonfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [androidenterprisewificonfiguration.](../resources/intune-deviceconfig-androidenterprisewificonfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -120,6 +120,9 @@ Content-Length: 2084
   ]
 }
 ```
+
+
+
 
 
 

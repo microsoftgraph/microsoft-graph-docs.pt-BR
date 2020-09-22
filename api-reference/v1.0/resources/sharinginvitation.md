@@ -7,16 +7,16 @@ localization_priority: Normal
 description: O recurso SharingInvitation agrupa itens de dados relacionados a convites em uma única estrutura.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5e1b5434f025c48f1eea08d31a00b4bc5fc9d39f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f259c5d051b29afff1321babd3822b0be13c0575
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446874"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970681"
 ---
 # <a name="sharinginvitation-resource-type"></a>Tipo de recurso SharingInvitation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 O recurso **SharingInvitation** agrupa itens de dados relacionados a convites em uma única estrutura.
 
@@ -62,3 +62,4 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/SharingInvitation"
 } -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 8482abda58889811b8d2718b555a0954b67f07ea
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8dcedaca340f87eae9ecd9dac0a242046bb6dbbf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806146"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971059"
 ---
 # <a name="nameditem-range"></a>NamedItem: Range
 
@@ -110,3 +110,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+

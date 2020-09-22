@@ -1,18 +1,18 @@
 ---
-title: Fechar Sessão
+title: Fechar sessão
 description: 'Use esta API para fechar uma sessão de pasta de trabalho existente. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5d97f8bc65c9e1711c7a650a34b12670d23ccef5
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: b1dd8a20fdfda223f4a757d6c9df661fb66b7c85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846174"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970905"
 ---
-# <a name="close-session"></a>Fechar Sessão
+# <a name="close-session"></a>Fechar sessão
 
 Namespace: microsoft.graph
 
@@ -105,3 +105,4 @@ HTTP/1.1 204 No Content
       Request includes a non-standard header: workbook-session-id"
   ]
 }-->
+

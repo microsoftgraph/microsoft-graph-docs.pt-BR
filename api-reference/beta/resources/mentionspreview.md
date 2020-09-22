@@ -5,16 +5,16 @@ localization_priority: Normal
 author: simonhult
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 4658f152d478e4df0a0e492bdd9272f0cd9170ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 721cd2b82e972f98c36252b6cef9c18623390c93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522684"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971599"
 ---
 # <a name="mentionspreview-resource-type"></a>tipo de recurso mentionsPreview
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,3 +56,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

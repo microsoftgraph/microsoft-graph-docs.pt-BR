@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: eac479222b271e6143fb8e3f8b46b5bfa9aadce1
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: bc13589a5a6f4c05bc6decc9f0e8daa1f814fccf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897488"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970912"
 ---
 # <a name="update-settings"></a>Atualizar configurações
 
@@ -94,6 +94,7 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": true
 }
 ```
+
 
 
 

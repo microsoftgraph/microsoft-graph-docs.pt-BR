@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f9caef660af5e19cc06dd9214a8c70cc761740fe
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 7fad61b7dde22df382f92d8306bd5bc15b758bf6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427099"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971262"
 ---
 # <a name="event-decline"></a>event: decline
 
@@ -161,3 +161,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

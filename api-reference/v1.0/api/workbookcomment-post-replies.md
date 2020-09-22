@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: dfc349b16fb8783156d1b83176fe6309cbc31bc7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 80054510b1bb64ab0bb069ce7b0d5b85512f9ca6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508797"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970758"
 ---
 # <a name="create-workbookcommentreply"></a>Criar workbookCommentReply
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [workb
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [workbookCommentReply](../resources/workbookcommentreply.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [workbookCommentReply](../resources/workbookcommentreply.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -122,3 +122,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

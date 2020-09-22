@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 70005abbe8eaf0e9680f106f59caf091aa2495d2
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: a51a13d8aae562ab4a051124a1e0197065661058
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892580"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971591"
 ---
 # <a name="mention-resource-type"></a>tipo de recurso menção
 
@@ -24,9 +24,9 @@ O recurso [Message](../resources/message.md) dá suporte a **menção**. Ele inc
 
 Ao criar uma mensagem, um aplicativo pode criar uma menção na mesma `POST` solicitação, incluindo a menção na propriedade **menciona** . Usando uma `GET` solicitação com o `$filter` parâmetro de consulta, um aplicativo pode retornar todas as mensagens na caixa de correio do usuário conectado que mencionam o usuário. Uma `GET` solicitação com o `$expand` parâmetro de consulta permite que o aplicativo expanda todas as menção em uma mensagem específica.
 
-Esse mecanismo de permitir que um aplicativo defina e receba mençãos em mensagens permite notificações leves, onde o usuário que faz a menção pode permanecer no contexto existente (como compor um corpo de mensagem) enquanto o aplicativo define a propriedade **mencionas** subjacentes. As pessoas mencionadas podem descobrir facilmente se e onde são mencionadas `GET` por meio de `$filter` solicitações `$expand` com o parâmetro ou consulta.  
+Esse mecanismo de permitir que um aplicativo defina e receba mençãos em mensagens permite notificações leves, onde o usuário que faz a menção pode permanecer no contexto existente (como compor um corpo de mensagem) enquanto o aplicativo define a propriedade **mencionas** subjacentes. As pessoas mencionadas podem descobrir facilmente se e onde são mencionadas por meio `GET` de solicitações com o `$filter` `$expand` parâmetro ou consulta.  
 
-Por exemplo, no cliente de email do Outlook, quando um usuário `@` digita uma mensagem, o Outlook permite que o usuário selecione ou insira um nome para concluir a menção @. O Outlook define a propriedade **menciona** antes de criar e enviar a mensagem ou o evento. O Outlook também `GET` usa operações `$filter` com `$expand` o e para permitir que o usuário conectado procure mensagens que mencionam o usuário, alertando o usuário sobre itens de ação ou discussões, o que permite uma resposta mais rápida.
+Por exemplo, no cliente de email do Outlook, quando um usuário digita uma `@` mensagem, o Outlook permite que o usuário selecione ou insira um nome para concluir a menção @. O Outlook define a propriedade **menciona** antes de criar e enviar a mensagem ou o evento. O Outlook também usa `GET` operações com o `$filter` e `$expand` para permitir que o usuário conectado procure mensagens que mencionam o usuário, alertando o usuário sobre itens de ação ou discussões, o que permite uma resposta mais rápida.
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -94,3 +94,5 @@ Nenhuma
   "suppressions": []
 }
 -->
+
+
