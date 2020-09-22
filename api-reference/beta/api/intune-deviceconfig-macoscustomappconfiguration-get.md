@@ -3,14 +3,14 @@ title: Obter macOSCustomAppConfiguration
 description: Leia as propriedades e as relações do objeto macOSCustomAppConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ff710d732a25ad1549b8d85d821f84e9ec1eb49
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b1ce952072caa58d8cfe4980e83029ba2718c035
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438262"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077328"
 ---
 # <a name="get-macoscustomappconfiguration"></a>Obter macOSCustomAppConfiguration
 
@@ -112,6 +112,9 @@ Content-Length: 1410
   }
 }
 ```
+
+
+
 
 
 

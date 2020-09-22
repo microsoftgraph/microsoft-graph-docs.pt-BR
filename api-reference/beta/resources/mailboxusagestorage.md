@@ -5,12 +5,12 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 636417b5ec299bb11f82c406abecdebe72ee45de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 080b1e5eafb23e40df1307fc6ab3e9a4ef9c87f0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473412"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075529"
 ---
 # <a name="mailboxusagestorage-resource-type"></a>tipo de recurso mailboxUsageStorage
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 | reportRefreshDate  | Data   |
 | storageUsedInBytes | Int64  |
 | reportDate         | Data   |
-| reportPeriod       | String |
+| reportPeriod       | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -42,3 +42,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 53d28496fbb0b82732d4d3aedecf6d9de62199ae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d27895954f78af4f9eac56a39de2da92fa0f85d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448498"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076901"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -130,3 +130,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

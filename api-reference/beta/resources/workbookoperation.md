@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: bd015045b01d0a7f886ecf0f5165a347d76dc061
-ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
+ms.openlocfilehash: 957f94087fa8c11cf3a5cc794bf194e21bbba346
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45165119"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075375"
 ---
 # <a name="workbookoperation-resource-type"></a>tipo de recurso workbookOperation
 
@@ -26,7 +26,7 @@ Representa o status de uma operação de pasta de trabalho de execução longa.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| A ID da operação. Somente leitura.|
+|id|Cadeia de caracteres| A ID da operação. somente leitura.|
 |status|String| O status atual da operação. Os valores possíveis são: `notStarted`, `running`, `succeeded`, `failed`.|
 |erro|[workbookOperationError](workbookoperationerror.md)| O erro retornado pela operação.|
 |resourceLocation|Cadeia de caracteres| O URI do recurso para o resultado.|
@@ -67,3 +67,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 04cdadefd9c784c07d4b93c02bf7c9f51e7e3e73
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 4ad289b745fcd26adea3cbe2698f01dde3d87d30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154448"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075494"
 ---
 # <a name="timeoff-resource-type"></a>tipo de recurso timeOff
 
@@ -34,11 +34,11 @@ Uma unidade de não funcionar em um cronograma.
 |Nome          |Tipo           |Descrição                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |A ID da tarefa `timeOff`.|
-| userId            |`string`      |ID do usuário atribuído ao `timeOff`. Obrigatório.|
+| userId            |`string`      |ID do usuário atribuído ao `timeOff` . Obrigatório.|
 | sharedTimeOff     | [timeOffItem](timeoffitem.md)  |A versão compartilhada desse `timeOff` é visível por funcionários e gerentes. Obrigatório.|
-| draftTimeOff      | [timeOffItem](timeoffitem.md)        |A versão de rascunho desse `timeOff` documento que é visível por gerentes. Obrigatório.|
-| createdDateTime       |`DateTimeOffset`        |O carimbo de data/hora `timeOff` em que foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
-| lastModifiedDateTime      |`DateTimeOffset`        |O carimbo de data/hora `timeOff` em que foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
+| draftTimeOff      | [timeOffItem](timeoffitem.md)        |A versão de rascunho desse documento `timeOff` que é visível por gerentes. Obrigatório.|
+| createdDateTime       |`DateTimeOffset`        |O carimbo de data/hora em que `timeOff` foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
+| lastModifiedDateTime      |`DateTimeOffset`        |O carimbo de data/hora em que `timeOff` foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
 | lastModifiedBy        | [identitySet](identityset.md)        |A identidade da última atualização `timeOff`. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -76,3 +76,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: tipo de enumeração mobileAppPublishingState
 description: Indica o estado de publicação de um aplicativo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b8c5dfef2e58518608728b925084963f1739ed1a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 070140c004834ef878415e9e20d77d00cfb6c2d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458541"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076355"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>tipo de enumeração mobileAppPublishingState
 
@@ -26,8 +26,11 @@ Indica o estado de publicação de um aplicativo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Não publicado|,0|O aplicativo ainda não foi publicado.|
-|processe|1|O aplicativo está aguardando o processamento do lado do serviço.|
-|novamente|duas|O aplicativo é publicado.|
+|processe|1 |O aplicativo está aguardando o processamento do lado do serviço.|
+|novamente|2 |O aplicativo é publicado.|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de enumeração androidDeviceOwnerEnrollmentProfileType
 description: Tipos de perfil de registro do proprietário do dispositivo Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8059db6880d950075c4b2c5d6a06706cc3c17019
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a31b96010dd2ba3196b2e831cc8522a77e0463c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177720"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076040"
 ---
 # <a name="androiddeviceownerenrollmentprofiletype-enum-type"></a>tipo de enumeração androidDeviceOwnerEnrollmentProfileType
 
@@ -26,8 +26,11 @@ Tipos de perfil de registro do proprietário do dispositivo Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado; Esse valor é ignorado.|
-|dedicatedDevice|1|Dispositivo dedicado.|
-|fullyManaged|duas|Totalmente gerenciado.|
+|dedicatedDevice|1 |Dispositivo dedicado.|
+|fullyManaged|2 |Totalmente gerenciado.|
+
+
+
 
 
 

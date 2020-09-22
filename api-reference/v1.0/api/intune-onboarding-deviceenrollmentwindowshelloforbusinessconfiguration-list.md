@@ -3,14 +3,14 @@ title: Listar deviceEnrollmentWindowsHelloForBusinessConfigurations
 description: Listar propriedades e relações de objetos de deviceEnrollmentWindowsHelloForBusinessConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b4263e04cf4ae0384354089a5a6e69b25b92936
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 495fbd91c39dd92ed94fb619f4d145dd9c7e1cb5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451803"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075207"
 ---
 # <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>Listar deviceEnrollmentWindowsHelloForBusinessConfigurations
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -92,6 +92,9 @@ Content-Length: 914
   ]
 }
 ```
+
+
+
 
 
 

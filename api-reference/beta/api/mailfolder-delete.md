@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b09329fd2e39ecd2e59e53b04aebfaaed5c13651
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e30fc8381b11534f88f265722609721cec364998
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457149"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076950"
 ---
 # <a name="delete-mailfolder"></a>Excluir mailFolder
 
@@ -22,7 +22,7 @@ Exclua o [mailFolder](../resources/mailfolder.md)especificado. A pasta pode ser 
 
 Você pode especificar uma pasta de email por sua ID de pasta ou por seu [nome de pasta conhecido](../resources/mailfolder.md), se houver uma.
 
->**Observação** Você pode não conseguir excluir itens da pasta exclusão de itens recuperáveis (representado pelo nome `recoverableitemsdeletions`de pasta conhecido). Veja [retenção de item excluído](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e [limpar itens excluídos](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para obter mais informações.
+>**Observação** Você pode não conseguir excluir itens da pasta exclusão de itens recuperáveis (representado pelo nome de pasta conhecido `recoverableitemsdeletions` ). Veja [retenção de item excluído](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e [limpar itens excluídos](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para obter mais informações.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -100,3 +100,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

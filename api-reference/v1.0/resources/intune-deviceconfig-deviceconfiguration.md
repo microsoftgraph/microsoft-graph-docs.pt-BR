@@ -3,14 +3,14 @@ title: Tipo de recurso deviceConfiguration
 description: Configuração do dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1927b4af889fb98e2e9c33561b9ff63042df5b6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ffcd58ee7dc23554908749d7c257fa8acccffe94
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465738"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075025"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Tipo de recurso deviceConfiguration
 
@@ -30,14 +30,14 @@ Configuração do dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|Última modificação de DateTime do objeto.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo.|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo.|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
 |versão|Int32|Versão da configuração do dispositivo.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |assignments|Coleção [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|A lista de atribuições para o perfil de configuração do dispositivo.|
@@ -66,6 +66,8 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
+
+
 
 
 

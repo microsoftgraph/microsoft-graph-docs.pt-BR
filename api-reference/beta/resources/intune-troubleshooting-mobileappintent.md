@@ -3,14 +3,14 @@ title: tipo de enumeração mobileAppIntent
 description: Indica o status do aplicativo móvel no dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1ea3de0799c31e18603661ef081fc03a0146f341
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f6da589015b5120add046eabfa146069cc349951
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43317834"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075760"
 ---
 # <a name="mobileappintent-enum-type"></a>tipo de enumeração mobileAppIntent
 
@@ -26,12 +26,15 @@ Indica o status do aplicativo móvel no dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |disponível|,0|Disponível|
-|Não disponível|1|Não disponível|
-|requiredInstall|duas|Instalação necessária|
-|requiredUninstall|3D|Desinstalação necessária|
+|Não disponível|1 |Não disponível|
+|requiredInstall|2 |Instalação necessária|
+|requiredUninstall|3 |Desinstalação necessária|
 |requiredAndAvailableInstall|4 |RequiredAndAvailableInstall|
 |availableInstallWithoutEnrollment|5 |AvailableInstallWithoutEnrollment|
 |impedir|6 |Excluir|
+
+
+
 
 
 

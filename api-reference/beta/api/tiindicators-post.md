@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: fdfeb1af207c8005f6018a7e5df9557a78066211
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5de9e8b01fa02f02fbfa8248a7f307360cd1c6ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452320"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076495"
 ---
 # <a name="create-threat-intelligence-indicator"></a>Criar indicador de inteligência de ameaças
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +46,7 @@ POST /security/tiIndicators
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um [objeto tiIndicator](../resources/tiindicator.md) que contém pelo menos [um email](../resources/tiindicator.md#indicator-observables---email), [arquivo](../resources/tiindicator.md#indicator-observables---file)ou [rede](../resources/tiindicator.md#indicator-observables---network) observou, e os seguintes campos obrigatórios `description`: `expirationDateTime` `action`, `targetProduct`, `threatType`, `tlpLevel`,,. 
+No corpo da solicitação, forneça uma representação JSON de um objeto [tiIndicator](../resources/tiindicator.md) que contém pelo menos um [email](../resources/tiindicator.md#indicator-observables---email), [arquivo](../resources/tiindicator.md#indicator-observables---file)ou [rede](../resources/tiindicator.md#indicator-observables---network) observou, e os seguintes campos obrigatórios:,,,, `action` `description` `expirationDateTime` `targetProduct` `threatType` , `tlpLevel` . 
 
 ## <a name="response"></a>Resposta
 
@@ -141,3 +141,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

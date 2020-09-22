@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 77f907ee80c0710e33771efb33c3a3eee893f2ed
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 831a873d245424bcb92c7281b1bbdc97b29223bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539168"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075557"
 ---
 # <a name="term-resource-type"></a>tipo de recurso Term
 
@@ -29,7 +29,7 @@ Herda de [entidade](../resources/entity.md).
 |[Listar relações](../api/termstore-term-list-relations.md)|coleção [Microsoft. Graph. termos. relation](../resources/termstore-relation.md)|Obter as relações de um termo em um [repositório]de termos.|
 |[Criar relação](../api/termstore-relation-post.md)|[Microsoft. Graph. termos. relation](../resources/termstore-relation.md)|Crie uma nova relação para um termo ou um [conjunto] em um [repositório]de termos.|
 |[Criar termo](../api/termstore-term-post.md)|[Microsoft. Graph. termos. Term](../resources/termstore-term.md)|Criar um novo objeto Term em um [repositório]de termos.|
-|[Obter termo](../api/termstore-term-get.md)|[Microsoft. Graph. termos. Term](../resources/termstore-term.md)|Leia as propriedades e os relacionamentos de um objeto Term em um [repositório]de termos.|
+|[Obter termo](../api/termstore-term-get.md)|[Microsoft. Graph. termos. Term](../resources/termstore-term.md)|Leia as propriedades e os relacionamentos de um objeto Term em um  [repositório]de termos.|
 |[Atualizar termo](../api/termstore-term-update.md)|[Microsoft. Graph. termos. Term](../resources/termstore-term.md)|Atualizar as propriedades de um objeto Term em um [repositório]de termos.|
 |[Excluir termo](../api/termstore-term-delete.md)|Nenhum|Excluir um objeto Term em um [repositório]de termos.|
 
@@ -38,12 +38,12 @@ Herda de [entidade](../resources/entity.md).
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Data e hora da criação do termo. Somente leitura|
 |descrições|coleção [Microsoft. Graph. termos. localizedDescription](../resources/termstore-localizeddescription.md)|Descrição sobre o termo que é dependente do languageTag|
-|id|String|Identificador exclusivo do termo. Somente leitura|
+|id|Cadeia de caracteres|Identificador exclusivo do termo. Somente leitura|
 |Legendas|coleção [Microsoft. Graph. termos. localizedLabel](../resources/termstore-localizedlabel.md)||Metadados de rótulo para um termo|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do termo. Somente leitura|
 |properties|coleção [Microsoft. Graph. KeyValue](../resources/keyvalue.md)|Coleção de propriedades no termo|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |filhos|coleção [Microsoft. Graph. termos. Term](../resources/termstore-term.md)|Filhos do termo atual|
@@ -84,7 +84,7 @@ Veja a seguir uma representação JSON do recurso.
 }
 ```
 
-[Guarde]: ../resources/termstore-store.md
+[loja]: ../resources/termstore-store.md
 [set]: ../resources/termstore-set.md
 [term]: ../resources/termstore-term.md
 [group]: ../resources/termstore-group.md
@@ -102,3 +102,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

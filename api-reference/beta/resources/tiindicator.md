@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 68345ec9c443f0c83d96e54a0ee9d4fbbc5279ff
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 339fa4c3a3ef54b8bb93b6b7517162c1fc9f8bc8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319488"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075540"
 ---
 # <a name="tiindicator-resource-type"></a>tipo de recurso tiIndicator
 
@@ -60,7 +60,7 @@ Para mais detalhes sobre os tipos de indicadores com suporte e limites de contag
 
 ### <a name="methods-supported-by-each-target-product"></a>Métodos suportados por cada produto de destino
 
-| Method                                                          | Azure Sentinel                                                                                                                                                                                                                                                                                                                                                                      | Microsoft Defender ATP                                                                                                                                                                                               |
+| Método                                                          | Azure Sentinel                                                                                                                                                                                                                                                                                                                                                                      | O Microsoft Defender ATP                                                                                                                                                                                               |
 |:----------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Criar tiIndicator](../api/tiindicators-post.md)               | Os campos obrigatórios são: `action` , `azureTenantId` , `description` , `expirationDateTime` , `targetProduct` , `threatType` , `tlpLevel` e pelo menos um email, rede ou arquivo observou.                                                                                                                                                                                                | Os campos obrigatórios são: `action` e um destes valores: `domainName` ,, `url` `networkDestinationIPv4` , `networkDestinationIPv6` , `fileHashValue` (deve ser fornecido `fileHashType` no caso de `fileHashValue` ). |
 | [Enviar tiIndicators](../api/tiindicator-submittiindicators.md) | Consulte o método [Create tiIndicator](../api/tiindicators-post.md) para os campos obrigatórios de cada tiIndicator. Há um limite de 100 tiIndicators por solicitação.                                                                                                                                                                                                                    | Consulte o método [Create tiIndicator](../api/tiindicators-post.md) para os campos obrigatórios de cada tiIndicator. Há um limite de 100 tiIndicators por solicitação.                                                     |
@@ -78,7 +78,7 @@ Para mais detalhes sobre os tipos de indicadores com suporte e limites de contag
 |additionalInformation|Cadeia de caracteres|Uma área catchall na qual os dados extras do indicador não cobertos pelas outras propriedades de tiIndicator podem ser colocados. Os dados colocados no additionalInformation normalmente não serão utilizados pela ferramenta de segurança do targetProduct.|
 |azureTenantId|String| Marcado pelo sistema quando o indicador está ingerido. A ID de locatário do Azure Active Directory do cliente remetente. **Obrigatório.**|
 |confidence|Int32|Um inteiro representando a confiança dos dados dentro do indicador identifica precisamente o comportamento mal-intencionado. Os valores aceitáveis são 0 – 100 com 100 sendo os mais altos.|
-|descrição|String| Breve descrição (100 caracteres ou menos) da ameaça representada pelo indicador. **Obrigatório.**|
+|description|String| Breve descrição (100 caracteres ou menos) da ameaça representada pelo indicador. **Obrigatório.**|
 |diamondModel|[diamondModel](#diamondmodel-values)|A área do modelo em losango em que esse indicador existe. Os valores possíveis são: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
 |expirationDateTime|DateTimeOffset| Cadeia de caracteres DateTime indicando quando o indicador expira. Todos os indicadores devem ter uma data de vencimento para evitar indicadores obsoletos persistentes no sistema. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. **Obrigatório.**|
 |externalId|Cadeia de caracteres| Um número de identificação que liga o indicador de volta para o sistema do provedor de indicadores (por exemplo, uma chave externa). |
@@ -291,3 +291,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

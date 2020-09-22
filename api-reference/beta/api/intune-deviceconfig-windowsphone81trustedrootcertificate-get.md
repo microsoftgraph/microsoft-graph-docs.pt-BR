@@ -3,14 +3,14 @@ title: Obter windowsPhone81TrustedRootCertificate
 description: Leia as propriedades e as relações do objeto windowsPhone81TrustedRootCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e1d32f1a9bed3415f300ffc9431175f567809831
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4ad585fcd2add274f3f606c3b1704bf6aa6e48a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43429192"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077083"
 ---
 # <a name="get-windowsphone81trustedrootcertificate"></a>Obter windowsPhone81TrustedRootCertificate
 
@@ -109,6 +109,9 @@ Content-Length: 1406
   }
 }
 ```
+
+
+
 
 
 

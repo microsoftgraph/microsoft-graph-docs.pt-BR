@@ -3,14 +3,14 @@ title: Obter deviceLogCollectionResponse
 description: Leia as propriedades e as relações do objeto deviceLogCollectionResponse.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a8c3dd6ff50cca9e63c02e86c833353cd5a644a0
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: c554d2801df917ddc9c54818aec5c033868c99d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124165"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076936"
 ---
 # <a name="get-devicelogcollectionresponse"></a>Obter deviceLogCollectionResponse
 
@@ -85,6 +85,9 @@ Content-Length: 567
   }
 }
 ```
+
+
+
 
 
 

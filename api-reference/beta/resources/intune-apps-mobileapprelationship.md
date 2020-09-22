@@ -3,14 +3,14 @@ title: tipo de recurso mobileAppRelationship
 description: Descreve uma relação entre dois aplicativos móveis.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d09d9d7604699ee89b6dccc0f2f980cef26225e7
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: a2c7af932983b9b3657a94a7448149b75b3c8eea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790863"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076341"
 ---
 # <a name="mobileapprelationship-resource-type"></a>tipo de recurso mobileAppRelationship
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Descreve uma relação entre dois aplicativos móveis.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar mobileAppRelationships](../api/intune-apps-mobileapprelationship-list.md)|coleção [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|Listar Propriedades e relações dos objetos [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) .|
@@ -31,12 +31,13 @@ Descreve uma relação entre dois aplicativos móveis.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da entidade de relação.|
-|targetId|String|A ID de aplicativo do aplicativo móvel de destino.|
-|targetDisplayName|String|O nome de exibição do aplicativo móvel de destino.|
+|id|Cadeia de caracteres|A ID da entidade de relação.|
+|targetId|Cadeia de caracteres|A ID de aplicativo do aplicativo móvel de destino.|
+|targetDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo móvel de destino.|
+|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|O tipo de relação que indica se o destino é um pai ou filho. Os valores possíveis são: `child`, `parent`.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -51,9 +52,13 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.mobileAppRelationship",
   "id": "String (identifier)",
   "targetId": "String",
-  "targetDisplayName": "String"
+  "targetDisplayName": "String",
+  "targetType": "String"
 }
 ```
+
+
+
 
 
 

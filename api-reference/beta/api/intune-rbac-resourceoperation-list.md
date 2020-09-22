@@ -3,14 +3,14 @@ title: Listar resourceOperations
 description: Listar propriedades e relações dos objetos resourceOperation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd783dbe77e0f5b0b81d5871ff97740eb792cdf8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0c55b19e19255d3527046bba07cfaea86ecb69d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455429"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076915"
 ---
 # <a name="list-resourceoperations"></a>Listar resourceOperations
 
@@ -81,6 +81,9 @@ Content-Length: 359
   ]
 }
 ```
+
+
+
 
 
 

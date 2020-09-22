@@ -3,14 +3,14 @@ title: tipo de recurso Navegaçãoadvancedthreatprotectiononboardingstatesummary
 description: Resumo do estado de integração da proteção avançada contra ameaças do Windows Defender na conta.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ee2567da227882c4cd81d901709ce93d96f7fb7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: db2047c71473f8b4d6b78116fdab9b5b7e262748
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470975"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076187"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>tipo de recurso Navegaçãoadvancedthreatprotectiononboardingstatesummary
 
@@ -31,7 +31,7 @@ Resumo do estado de integração da proteção avançada contra ameaças do Wind
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo|
+|id|Cadeia de caracteres|Identificador exclusivo|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos não aplicáveis|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade|
@@ -41,7 +41,7 @@ Resumo do estado de integração da proteção avançada contra ameaças do Wind
 |conflictDeviceCount|Int32|Número de dispositivos em conflito|
 |notAssignedDeviceCount|Int32|Número de dispositivos não atribuídos|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |advancedThreatProtectionOnboardingDeviceSettingStates|coleção [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Ainda não documentado|
@@ -68,6 +68,9 @@ Veja a seguir uma representação JSON do recurso.
   "notAssignedDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

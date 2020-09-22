@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c0948dcc2545a30480188741e1ca622c9acbde35
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: b1572581cedc6e1c3fe87f4402e51c69c9b2c5dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076646"
 ---
 # <a name="list-teamsapp"></a>Listar teamsApp
 
@@ -254,3 +254,5 @@ Content-Type: application/json
     ]
   }
 ```
+
+

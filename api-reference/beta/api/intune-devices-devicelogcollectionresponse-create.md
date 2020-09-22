@@ -3,14 +3,14 @@ title: Criar deviceLogCollectionResponse
 description: Criar um novo objeto deviceLogCollectionResponse.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c11917ab1501aeebf7629cddf96ec9ea7f6d0fa
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: dad2b95eff28b48e5790a124ba3cbdc4272b8c06
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124168"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077034"
 ---
 # <a name="create-devicelogcollectionresponse"></a>Criar deviceLogCollectionResponse
 
@@ -110,6 +110,9 @@ Content-Length: 528
   "size": 1.3333333333333333
 }
 ```
+
+
+
 
 
 

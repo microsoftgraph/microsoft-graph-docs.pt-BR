@@ -1,33 +1,33 @@
 ---
-title: 'servicePrincipalName: Adicionar proprietário'
+title: 'servicePrincipal: Adicionar proprietário'
 description: Adicione um proprietário para a entidade de serviço.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 555d2341d68ff48d34c3bf56b112b6a7ab501c9d
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 2618223235fbc7f81eab110d272d1b02c0e14054
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44382724"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076765"
 ---
-# <a name="serviceprincipal-add-owner"></a>servicePrincipalName: Adicionar proprietário
+# <a name="serviceprincipal-add-owner"></a>servicePrincipal: Adicionar proprietário
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione um proprietário para o [servicePrincipalName](../resources/serviceprincipal.md).
+Adicione um proprietário para a [servicePrincipal](../resources/serviceprincipal.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All e Directory. Read. All, Application. ReadWrite. All e Directory. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application. ReadWrite. OwnedBy e Directory. Read. All, Application. ReadWrite. All e Directory. Read. All, Application. ReadWrite. OwnedBy e Directory. ReadWrite. All, Application. ReadWrite. All e Directory. ReadWrite. All  |
+|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All e Directory.Read.All, Application.ReadWrite.All e Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Application.ReadWrite.OwnedBy e Directory.Read.All, Application.ReadWrite.All e Directory.Read.All, Application.ReadWrite.OwnedBy e Directory.ReadWrite.All, Application.ReadWrite.All e Directory.ReadWrite.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /servicePrincipals/{id}/owners/$ref
 | Autorização | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [directoryobject](../resources/directoryobject.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [directoryobject](../resources/directoryobject.md).
 
 ## <a name="response"></a>Resposta
 
@@ -81,7 +81,7 @@ Content-length: 30
 ---
 
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [directoryobject](../resources/directoryobject.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [directoryobject](../resources/directoryobject.md).
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 
@@ -106,3 +106,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -6,16 +6,16 @@ title: ItemActivity
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4cac403e44abaf9ae69f78005555772b9979046f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a1ce6b675a1e28eb60bc7ebbf86d3cd1cd0dc5a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523118"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075671"
 ---
 # <a name="itemactivity-resource-type"></a>Tipo de recurso ItemActivity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ Disponível atualmente só no SharePoint e no OneDrive for Business.
 
 | Propriedade | Tipo                    | Descrição
 |:---------|:------------------------|:----------------------------------------
-| id       | string                  | O identificador exclusivo da atividade. Somente leitura.
+| id       | cadeia de caracteres                  | O identificador exclusivo da atividade. Somente leitura.
 | Access   | [accessaction][]        | Um item foi acessado.
 | action   | [itemActionSet][]       | Detalhes sobre a ação que ocorreu. Somente leitura.
 | actor    | [identitySet][]         | Identidade de quem executou a ação. Somente leitura.
@@ -60,7 +60,7 @@ Disponível atualmente só no SharePoint e no OneDrive for Business.
 [itemActionSet]: itemactionset.md
 [itemActivityTimeSet]: itemactivitytimeset.md
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 
 | Nome da relação | Tipo          | Descrição
 |:------------------|:--------------|:-----------------------------------------
@@ -116,3 +116,5 @@ Novas ações podem ser registradas no futuro, portanto, verifique se o seu apli
   "suppressions": []
 }
 -->
+
+

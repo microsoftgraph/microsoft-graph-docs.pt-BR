@@ -3,14 +3,14 @@ title: Excluir deviceManagementComplexSettingDefinition
 description: Exclui deviceManagementComplexSettingDefinition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 359d1920b7e460442e5768423c4f81a1de951ed7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 21391d9170f9cc8697f318cb3e1ec0ae2eb022c5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43428278"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077069"
 ---
 # <a name="delete-devicemanagementcomplexsettingdefinition"></a>Excluir deviceManagementComplexSettingDefinition
 
@@ -68,6 +68,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

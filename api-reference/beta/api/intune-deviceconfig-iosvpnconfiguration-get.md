@@ -3,14 +3,14 @@ title: Obter iosVpnConfiguration
 description: Leia as propriedades e as relações do objeto iosVpnConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: da8d1a6cd2bcc5bff530eaa0022eac8ab3aff37a
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: c5749ee55cf249996eaf3aa86225f6ff16d2f932
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790879"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077504"
 ---
 # <a name="get-iosvpnconfiguration"></a>Obter iosVpnConfiguration
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3473
+Content-Length: 3645
 
 {
   "value": {
@@ -157,6 +157,10 @@ Content-Length: 3473
       }
     ],
     "providerType": "appProxy",
+    "excludedDomains": [
+      "Excluded Domains value"
+    ],
+    "disableOnDemandUserOverride": true,
     "proxyServer": {
       "@odata.type": "microsoft.graph.vpnProxyServer",
       "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -178,10 +182,14 @@ Content-Length: 3473
         "appStoreUrl": "https://example.com/appStoreUrl/",
         "appId": "App Id value"
       }
-    ]
+    ],
+    "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
   }
 }
 ```
+
+
+
 
 
 

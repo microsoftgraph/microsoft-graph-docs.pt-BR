@@ -3,14 +3,14 @@ title: tipo de enumeração androidDeviceOwnerBatteryPluggedMode
 description: O proprietário do dispositivo Android valores possíveis para Estados dos modos de energia conectados ao dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6c35d3e65e29527d1128961aae6144c2e0637395
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e83a2c7bc2cd9a4a3acab3eb0e17403255b6023d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470893"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076089"
 ---
 # <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>tipo de enumeração androidDeviceOwnerBatteryPluggedMode
 
@@ -26,9 +26,12 @@ O proprietário do dispositivo Android valores possíveis para Estados dos modos
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado; Esse valor é ignorado.|
-|AC|1|A fonte de alimentação é um carregador AC.|
-|dispositivo|duas|A fonte de alimentação é uma porta USB.|
-|conexão|3D|A fonte de energia é sem fio.|
+|AC|1 |A fonte de alimentação é um carregador AC.|
+|dispositivo|2 |A fonte de alimentação é uma porta USB.|
+|conexão|3 |A fonte de energia é sem fio.|
+
+
+
 
 
 

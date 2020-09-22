@@ -3,14 +3,14 @@ title: tipo de recurso bitLockerFixedDrivePolicy
 description: Políticas de unidade fixa do BitLocker.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85cd64200bb422c1a4bb25456f1686e1fb4a88da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a7d6e0ff0b1bca991ec91627c4766490366cbc30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469810"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075816"
 ---
 # <a name="bitlockerfixeddrivepolicy-resource-type"></a>tipo de recurso bitLockerFixedDrivePolicy
 
@@ -56,6 +56,9 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
+
 
 
 

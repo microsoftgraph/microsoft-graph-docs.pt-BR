@@ -3,14 +3,14 @@ title: Excluir macOSCompliancePolicy
 description: Exclui macOSCompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f438d910434bb20617849b39104864597e12f66
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fd6061b938d074baf664368171690c6a6ade4bc2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438328"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077363"
 ---
 # <a name="delete-macoscompliancepolicy"></a>Excluir macOSCompliancePolicy
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

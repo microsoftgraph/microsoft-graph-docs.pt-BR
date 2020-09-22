@@ -3,14 +3,14 @@ title: tipo de recurso officeConfigurationGroupAssignmentTarget
 description: Destino de atribuição de grupo AAD de configuração de cliente do Office.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e09d73695c542c24fe6be297dec9496794d95fc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5dc17e024f1b4856391bdc5e02ecdc2337fecf74
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454280"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076208"
 ---
 # <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>tipo de recurso officeConfigurationGroupAssignmentTarget
 
@@ -46,6 +46,9 @@ Veja a seguir uma representação JSON do recurso.
   "groupId": "String"
 }
 ```
+
+
+
 
 
 

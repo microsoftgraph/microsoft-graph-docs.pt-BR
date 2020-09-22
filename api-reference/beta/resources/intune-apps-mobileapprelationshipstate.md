@@ -3,14 +3,14 @@ title: tipo de recurso mobileAppRelationshipState
 description: Descreve os detalhes de status da instalação do aplicativo filho no contexto de UPN e ID de dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: daca7e69b70ccfecef181dd0bdd4eb381f010d87
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 116e57ba4bad4474e8ec28bda990ac9e2fe1df86
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792699"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076342"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>tipo de recurso mobileAppRelationshipState
 
@@ -25,9 +25,9 @@ Descreve os detalhes de status da instalação do aplicativo filho no contexto d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|sourceIds|Coleção de cadeia de caracteres|O conjunto de IDs do aplicativo móvel de origem.|
-|targetId|String|A ID do aplicativo de destino relacionado.|
-|targetDisplayName|String|O nome de exibição do aplicativo de destino relacionado.|
+|sourceIds|Coleção de cadeias de caracteres|O conjunto de IDs do aplicativo móvel de origem.|
+|targetId|Cadeia de caracteres|A ID do aplicativo de destino relacionado.|
+|targetDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo de destino relacionado.|
 |deviceId|Cadeia de caracteres|A ID de dispositivo correspondente.|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo do aplicativo de destino. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Os detalhes do estado de instalação do aplicativo. Os valores possíveis são:,,,,,,,,,,,,,,, `noAdditionalDetails` `dependencyFailedToInstall` `dependencyWithRequirementsNotMet` `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `iosAppStoreUpdateFailedToInstall` `vppAppHasUpdateAvailable` `userRejectedUpdate` `seeInstallErrorCode` `autoInstallDisabled` `managedAppNoLongerPresent` `userRejectedInstall` `userIsNotLoggedIntoAppStore` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `contentDownloaded` , `powerShellScriptRequirementNotMet` , `registryRequirementNotMet` , `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet` `processorArchitectureNotApplicable` ,,,,,,,,,,,,.|
@@ -59,6 +59,9 @@ Veja a seguir uma representação JSON do recurso.
   "targetLastSyncDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

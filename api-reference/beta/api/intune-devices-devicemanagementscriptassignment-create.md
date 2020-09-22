@@ -3,14 +3,14 @@ title: Criar deviceManagementScriptAssignment
 description: Criar um novo objeto deviceManagementScriptAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b43ec4ffeb081eb4865d0fbb7e7f7110bfeefa3
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 7d809117c8503ef625b88e19d912a3360a947a06
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792363"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076943"
 ---
 # <a name="create-devicemanagementscriptassignment"></a>Criar deviceManagementScriptAssignment
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de atribuição do grupo de scripts de gerenciamento de dispositivos. Essa propriedade é somente leitura.|
+|id|Cadeia de caracteres|Chave da entidade de atribuição do grupo de scripts de gerenciamento de dispositivos. Essa propriedade é somente leitura.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|A ID do grupo do Azure Active Directory para o qual estamos direcionando o script.|
 
 
@@ -98,6 +98,9 @@ Content-Length: 376
   }
 }
 ```
+
+
+
 
 
 

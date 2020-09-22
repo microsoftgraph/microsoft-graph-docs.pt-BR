@@ -1,16 +1,16 @@
 ---
 title: Conceder um appRoleAssignment a uma entidade de serviço
-description: Conceda uma atribuição de função de aplicativo a uma entidade de serviço.
+description: Conceder uma atribuição de função de aplicativo a uma entidade de serviço.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: bf33c71f14ee5ea347f845d75bfc78d0aedf23ca
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 47ed057d12261cd1ccfcda8ed4876921702ed8e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44382689"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076777"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>Conceder um appRoleAssignment para uma entidade de serviço
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atribuir uma função de aplicativo para uma entidade de serviço de recurso, a um usuário, grupo ou entidade de serviço de cliente.
+Atribuir uma função de aplicativo a uma entidade de serviço de recurso, a um usuário, grupo ou entidade de serviço de cliente.
 
-As funções de aplicativo atribuídas às entidades de serviço também são conhecidas como [permissões de aplicativo](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). As permissões de aplicativo podem ser concedidas diretamente com as atribuições de função de aplicativo ou por meio de uma [experiência de consentimento](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
+As funções do aplicativo atribuídas às entidades de serviço também são conhecidas como [permissões de aplicativo](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). As permissões de aplicativo podem ser concedidas diretamente com atribuições de função de aplicativo ou por meio de uma [experiência de consentimento](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
 
-Para conceder uma atribuição de função de aplicativo, você precisa de três identificadores:
+Para conceder uma atribuição de função de aplicativo, você precisará de três identificadores:
 
-- `principalId`: O `id` do **usuário**, **grupo** ou **userdirigente** do cliente ao qual você está atribuindo a função de aplicativo.
-- `resourceId`: O `id` do Resource **servicePrincipalName** que definiu a função de aplicativo.
-- `appRoleId`: O `id` do **appRole** (definido na entidade de segurança do serviço de recurso) a ser atribuído a um usuário, grupo ou entidade de serviço.
+- `principalId`: A `id` do **usuário**, **grupo** ou cliente **servicePrincipal** ao qual você está atribuindo a função de aplicativo.
+- `resourceId`: A `id` do recurso **servicePrincipal** que definiu a função do aplicativo.
+- `appRoleId`: A `id` do **appRole** (definida na entidade de serviço de recurso) para atribuir a um usuário, grupo ou entidade de serviço.
 
 ## <a name="permissions"></a>Permissões
 
@@ -34,9 +34,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AppRoleAssignment. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | AppRoleAssignment. ReadWrite. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,11 +54,11 @@ POST /servicePrincipals/{id}/appRoleAssignedTo
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [appRoleAssignment](../resources/approleassignment.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [appRoleAssignment](../resources/approleassignment.md).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -99,7 +99,7 @@ Content-Length: 110
 ---
 
 
-Neste exemplo, `{id}` e `{resourceId-value}` seria o `id` da entidade de serviço de recurso e `{principalId}` seria o `id` usuário, grupo ou entidade de serviço de cliente atribuído.
+Neste exemplo, `{id}` e `{resourceId-value}` seriam os `id` da entidade de serviço de recurso e `{principalId}` seria o `id` do objeto de serviço de cliente, grupo ou cliente atribuído.
 
 ### <a name="response"></a>Resposta
 
@@ -142,3 +142,5 @@ Content-length: 253
   ]
 }
 -->
+
+

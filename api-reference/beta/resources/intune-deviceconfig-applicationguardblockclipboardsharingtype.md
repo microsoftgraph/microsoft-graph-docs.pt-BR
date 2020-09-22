@@ -3,14 +3,14 @@ title: tipo de enumeração applicationGuardBlockClipboardSharingType
 description: Valores possíveis para applicationGuardBlockClipboardSharingType
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ebf56c4dc7e31a4c6a70e808c6f7f35aaaf9181d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5e4ea44dfc5a0a5425b587b95d1a932c0af528f7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470017"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075942"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>tipo de enumeração applicationGuardBlockClipboardSharingType
 
@@ -26,10 +26,13 @@ Valores possíveis para applicationGuardBlockClipboardSharingType
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|blockBoth|1|Bloquear a área de transferência para compartilhar dados do host para o contêiner e de contêiner para o host|
-|blockHostToContainer|duas|Bloquear a área de transferência para compartilhar dados do host para o contêiner|
-|blockContainerToHost|3D|Bloquear área de transferência para compartilhar dados de contêiner para host|
+|blockBoth|1 |Bloquear a área de transferência para compartilhar dados do host para o contêiner e de contêiner para o host|
+|blockHostToContainer|2 |Bloquear a área de transferência para compartilhar dados do host para o contêiner|
+|blockContainerToHost|3 |Bloquear área de transferência para compartilhar dados de contêiner para host|
 |blockNone|4 |Bloquear área de transferência para compartilhar dados que não sejam do host para o contêiner nem do contêiner para o host|
+
+
+
 
 
 

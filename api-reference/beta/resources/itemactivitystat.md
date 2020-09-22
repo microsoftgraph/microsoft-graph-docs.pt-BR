@@ -6,12 +6,12 @@ title: Entidadeitemactivitystat
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 612acf6ef619f13b0c334dd2046041b25020f450
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c21183911e111b2070d463f4552f913d93780493
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523111"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075655"
 ---
 # <a name="itemactivitystat-resource-type"></a>tipo de recurso Entidadeitemactivitystat
 
@@ -50,7 +50,7 @@ O recurso **entidadeitemactivitystat** fornece informações sobre as atividades
 | Propriedade         | Tipo                    | Descrição
 |:-----------------|:------------------------|:----------------------------------------
 | incompleteData   | [incompleteData][]      | Indica que as estatísticas neste intervalo são baseadas em dados incompletos. Somente leitura.
-| istendência       | Boolean                 | Indica se o item é "Trending". Somente leitura.
+| istendência       | Booliano                 | Indica se o item é "Trending". Somente leitura.
 | startDateTime    | DateTimeOffset          | Quando o intervalo é iniciado. Somente leitura.
 | endDateTime      | DateTimeOffset          | Quando o intervalo termina. Somente leitura.
 | create           | [itemActionStat][]      | Estatísticas sobre as ações de **criação** neste intervalo. Somente leitura.
@@ -62,7 +62,7 @@ O recurso **entidadeitemactivitystat** fornece informações sobre as atividades
 [itemActionStat]: itemactionstat.md
 [incompleteData]: incompletedata.md
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 
 | Nome da relação | Tipo                        | Descrição
 |:------------------|:----------------------------|:---------------------------
@@ -82,3 +82,5 @@ O recurso **entidadeitemactivitystat** fornece informações sobre as atividades
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Obter deviceHealthScriptRunSummary
 description: Leia as propriedades e as relações do objeto deviceHealthScriptRunSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a91820ac91accaf6a360fbd6699c7006cc976c2a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0af8e491cbb12f57540f937fd43f217a64f39736
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380527"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077055"
 ---
 # <a name="get-devicehealthscriptrunsummary"></a>Obter deviceHealthScriptRunSummary
 
@@ -87,6 +87,9 @@ Content-Length: 586
   }
 }
 ```
+
+
+
 
 
 

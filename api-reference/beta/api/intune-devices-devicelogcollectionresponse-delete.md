@@ -3,14 +3,14 @@ title: Excluir deviceLogCollectionResponse
 description: Exclui deviceLogCollectionResponse.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 38a293e0582dba102f1d336f1dc8e935f4339ff6
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 1803de981cd6862b9ab9c7d9de98052f13414e71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124166"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076971"
 ---
 # <a name="delete-devicelogcollectionresponse"></a>Excluir deviceLogCollectionResponse
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

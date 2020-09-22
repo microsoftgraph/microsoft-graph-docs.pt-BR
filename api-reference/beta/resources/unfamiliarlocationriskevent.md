@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: 154bc5637baaa43725e2e90bdca3f285bc06cd6c
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: ec1b9a0921326f9ebd8ff6f72b9ec584b1080462
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312009"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075391"
 ---
 # <a name="unfamiliarlocationriskevent-resource-type-deprecated"></a>tipo de recurso unfamiliarLocationRiskEvent (preterido)
 
@@ -35,21 +35,21 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
 |createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior que ou igual ao DateTime do evento de risco propriamente dito. Esta é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
-|id|string| Somente leitura|
-|ipAddress|string| O endereço IP do logon|
+|id|cadeia de caracteres| Somente leitura|
+|ipAddress|cadeia de caracteres| O endereço IP do logon|
 |location|cadeia de caracteres| O local anexado ao endereço IP do logon|
 |riskEventDateTime|dateTimeOffset| A data e a hora em que o evento de risco ocorreu|
-|riskEventStatus|string| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|riskEventStatus|cadeia de caracteres| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|cadeia de caracteres| Os valores possíveis são: `low`, `medium`, `high`.|
-|riskEventType|string| O tipo de risco|
-|userDisplayName|string| O nome do usuário em risco|
+|riskEventType|cadeia de caracteres| O tipo de risco|
+|userDisplayName|cadeia de caracteres| O nome do usuário em risco|
 |userId|cadeia de caracteres| A identificação do usuário em risco|
 |userPrincipalName|string| O nome principal de usuário do usuário em risco|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| Somente leitura. Anulável.|
+|impactedUser|[usuário](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -96,3 +96,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

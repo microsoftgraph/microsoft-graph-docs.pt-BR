@@ -3,14 +3,14 @@ title: Tipo de recurso auditProperty
 description: Uma classe que contém as propriedades para a Propriedade de auditoria.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dd5a43f1837ed3acf8927af5bac4e46d864f3fec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2d30f44bdf5ca002f71ac5e1f935081b032379ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472113"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076299"
 ---
 # <a name="auditproperty-resource-type"></a>Tipo de recurso auditProperty
 
@@ -25,8 +25,8 @@ Uma classe que contém as propriedades para a Propriedade de auditoria.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome de exibição.|
-|oldValue|String|Valor antigo.|
+|displayName|Cadeia de caracteres|Nome de exibição.|
+|oldValue|Cadeia de caracteres|Valor antigo.|
 |newValue|Cadeia de caracteres|Novo valor.|
 
 ## <a name="relationships"></a>Relações
@@ -47,6 +47,9 @@ Veja a seguir uma representação JSON do recurso.
   "newValue": "String"
 }
 ```
+
+
+
 
 
 

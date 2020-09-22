@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c766a29a75bfe96ca6d0175b3017f4a310448c2d
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 3a08ad02b03b3b39385f6f351e727d8b5ed54af1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154441"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075478"
 ---
 # <a name="timeoffreason-resource-type"></a>tipo de recurso timeOffReason
 
@@ -34,11 +34,11 @@ Uma razão válida para uma instância do [timeOff](timeoff.md) em um [cronogram
 |Nome          |Tipo           |Descrição                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id            |`string`      |A ID da tarefa `timeOffReason`.|
-| Nome para exibição               | `string`                  | O nome do `timeOffReason`. Obrigatório. |
+| Nome para exibição               | `string`                  | O nome do `timeOffReason` . Obrigatório. |
 | icontype | `timeOffReasonIconType`   | Tipos de ícone suportados: nenhum; automóvel dos com plano firstAid; Doutor Não funciona; medição juryDuty; Globe copo telefone Weather abrangência piggyBank; cachorro torta trafficCone; pessoal ensolarado. Obrigatório. |
 | isActive          |`Boolean`      | Indica se o `timeOffReason` pode ser usada na criação de novas entidades ou atualizar as existentes. Obrigatório. |
-| createdDateTime       |`DateTimeOffset`        |O carimbo de data/hora `timeOffReason` em que foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
-| lastModifiedDateTime      |`DateTimeOffset`         |O carimbo de data/hora `timeOffReason` em que foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
+| createdDateTime       |`DateTimeOffset`        |O carimbo de data/hora em que `timeOffReason` foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
+| lastModifiedDateTime      |`DateTimeOffset`         |O carimbo de data/hora em que `timeOffReason` foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
 | lastModifiedBy        | [identitySet](identityset.md)        |A identidade da última atualização `timeOffReason`.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -77,3 +77,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d4c05efc931daba5953f49f2789b54dbb163fa08
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0be11755ff976037ab593c3273ed70b30eb4e4dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452348"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076504"
 ---
 # <a name="tiindicator-updatetiindicators"></a>tiIndicator: updateTiIndicators
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +46,7 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. Para obter detalhes sobre as propriedades que podem ser atualizadas, consulte [Update tiIndicator](tiindicator-update.md). Os campos obrigatórios para cada tiIndicator `id`são `expirationDateTime`: `targetProduct`,,.
+Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. Para obter detalhes sobre as propriedades que podem ser atualizadas, consulte [Update tiIndicator](tiindicator-update.md). Os campos obrigatórios para cada tiIndicator são: `id` , `expirationDateTime` , `targetProduct` .
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
@@ -54,7 +54,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [tiIndicator](../resources/tiindicator.md) no corpo da resposta.  Se houver um erro, este método retornará um código `206 Partial Content` de resposta.  Consulte [erros](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) para obter mais informações.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [tiIndicator](../resources/tiindicator.md) no corpo da resposta.  Se houver um erro, este método retornará um `206 Partial Content` código de resposta.  Consulte [erros](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) para obter mais informações.
 
 ## <a name="examples"></a>Exemplos
 
@@ -148,3 +148,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

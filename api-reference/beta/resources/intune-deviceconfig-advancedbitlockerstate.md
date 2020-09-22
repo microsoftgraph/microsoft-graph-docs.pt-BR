@@ -3,14 +3,14 @@ title: tipo de enumeração advancedBitLockerState
 description: Estado do BitLocker avançado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dab8da54a9e34a42184bd071576736eca706e2fd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f59e88e3aa83f53a99bd770171a2b5f96836e776
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471067"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076217"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>tipo de enumeração advancedBitLockerState
 
@@ -26,8 +26,8 @@ Estado do BitLocker avançado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sucesso|,0|Êxito no estado do BitLocker avançado|
-|noUserConsent|1|O usuário nunca deu o consentimento para a criptografia|
-|osVolumeEncryptionMethodMismatch|duas|O método de criptografia do volume de so é diferente daquele definido por política|
+|noUserConsent|1 |O usuário nunca deu o consentimento para a criptografia|
+|osVolumeEncryptionMethodMismatch|2 |O método de criptografia do volume de so é diferente daquele definido por política|
 |osVolumeTpmRequired|4 |TPM não usado para proteção do volume de so, mas é exigido por política|
 |osVolumeTpmOnlyRequired|8 |A proteção somente TPM não é usada para o volume de so, mas é necessária para a política|
 |osVolumeTpmPinRequired|16 |TPM + proteção de PIN não usada para o volume de sistema operacional, mas é necessária para a política|
@@ -42,6 +42,9 @@ Estado do BitLocker avançado
 |tpmNotAvailable|8192|O TPM não está disponível para o BitLocker. Isso significa que o TPM não está presente, ou a substituição do registro não disponível do TPM está definida ou o sistema operacional do host está na unidade de capacidade portátil/Roma|
 |tpmNotReady|16384|O TPM não está pronto para o BitLocker|
 |networkError|32768|Rede não disponível. Isso é necessário para o backup da chave de recuperação. Isso é reportado para dispositivos compatíveis com criptografia de unidade|
+
+
+
 
 
 

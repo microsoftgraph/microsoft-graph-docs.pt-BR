@@ -3,14 +3,14 @@ title: tipo de enumeração ao
 description: Define os tipos de ação para um aplicativo do Intune.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8ffaae4facf6b5ce4275af694dbf7c89171199d0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9762aa0fefc1f82bf171670c70015500e0dd5346
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43385617"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075753"
 ---
 # <a name="mobileappactiontype-enum-type"></a>tipo de enumeração ao
 
@@ -26,10 +26,13 @@ Define os tipos de ação para um aplicativo do Intune.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Resultado desconhecido.|
-|installCommandSent|1|O comando de instalação de aplicativo foi enviado.|
-|instalação|3D|Aplicativo instalado.|
+|installCommandSent|1 |O comando de instalação de aplicativo foi enviado.|
+|instalação|3 |Aplicativo instalado.|
 |desinstalado|4 |Aplicativo desinstalado.|
 |userRequestedInstall|5 |Instalação solicitada pelo usuário|
+
+
+
 
 
 

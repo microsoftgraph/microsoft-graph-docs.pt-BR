@@ -3,14 +3,14 @@ title: Atualizar deviceHealthScriptRunSummary
 description: Atualiza as propriedades de um objeto deviceHealthScriptRunSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 269f70594fbc171bb789a781f5f40497ba915d11
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4f6852123f88c76e8eac25f9689b7e14dbf182ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380464"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077041"
 ---
 # <a name="update-devicehealthscriptrunsummary"></a>Atualizar deviceHealthScriptRunSummary
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de Resumo de execução de script de integridade do dispositivo. Essa propriedade é somente leitura.|
+|id|Cadeia de caracteres|Chave da entidade de Resumo de execução de script de integridade do dispositivo. Essa propriedade é somente leitura.|
 |noIssueDetectedDeviceCount|Int32|Número de dispositivos para os quais o script de detecção não encontrou um problema e o dispositivo está íntegro|
 |issueDetectedDeviceCount|Int32|Número de dispositivos para os quais o script de detecção encontrou um problema|
 |detectionScriptErrorDeviceCount|Int32|Número de dispositivos nos quais a execução do script de detecção encontrou um erro e não foi concluída|
@@ -68,7 +68,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -116,6 +116,9 @@ Content-Length: 543
   "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
+
+
+
 
 
 

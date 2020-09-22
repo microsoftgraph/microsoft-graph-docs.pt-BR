@@ -3,14 +3,14 @@ title: Obter windows81GeneralConfiguration
 description: Ler propriedades e relações do objeto windows81GeneralConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af77b74c8b8d13a1f032d7daf2703ed6c057712a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 971b810c34d1220a146c3971f65f6ccf6cdc8dd5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43430421"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077203"
 ---
 # <a name="get-windows81generalconfiguration"></a>Obter windows81GeneralConfiguration
 
@@ -144,6 +144,9 @@ Content-Length: 3022
   }
 }
 ```
+
+
+
 
 
 

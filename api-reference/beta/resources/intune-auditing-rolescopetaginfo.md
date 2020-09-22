@@ -3,14 +3,14 @@ title: tipo de recurso roleScopeTagInfo
 description: Uma classe que contém as propriedades do objeto de marca de escopo de função.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7240e06e34d003eceeece5c8b7fbb365ed20bf1f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 67927894be0f4209e915781169a45d5daa874b20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441210"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076236"
 ---
 # <a name="rolescopetaginfo-resource-type"></a>tipo de recurso roleScopeTagInfo
 
@@ -25,8 +25,8 @@ Uma classe que contém as propriedades do objeto de marca de escopo de função.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome de exibição da marca de escopo.|
-|roleScopeTagId|String|ID da marca de escopo.|
+|displayName|Cadeia de caracteres|Nome de exibição da marca de escopo.|
+|roleScopeTagId|Cadeia de caracteres|ID da marca de escopo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "roleScopeTagId": "String"
 }
 ```
+
+
+
 
 
 

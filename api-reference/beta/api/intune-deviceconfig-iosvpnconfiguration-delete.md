@@ -3,14 +3,14 @@ title: Excluir iosVpnConfiguration
 description: Exclui iosVpnConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6274b3e05bc54cd2c3ae5397fbfa9aed02442145
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e521f508c2a1cfde6c6f5d08a41f8d14be1d5ef3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438525"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077524"
 ---
 # <a name="delete-iosvpnconfiguration"></a>Excluir iosVpnConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

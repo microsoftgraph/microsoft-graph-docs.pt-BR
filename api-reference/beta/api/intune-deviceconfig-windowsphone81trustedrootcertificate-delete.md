@@ -3,14 +3,14 @@ title: Excluir windowsPhone81TrustedRootCertificate
 description: Exclui windowsPhone81TrustedRootCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 897922dfd0458ae66447b58678700cd53f285e7f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5d63dbb9bab75d5b8f3ba1b690371b036f65dab5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43429223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077090"
 ---
 # <a name="delete-windowsphone81trustedrootcertificate"></a>Excluir windowsPhone81TrustedRootCertificate
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 
