@@ -5,32 +5,32 @@ author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9d3c6d7f8ffe207324ca36929b65201daad866d5
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: c91e4fdd7953e2391cd73a4dcd602d27adf5d706
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47439847"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987173"
 ---
-# <a name="callrecord-getpstncalls"></a><span data-ttu-id="2a4a6-103">callRecord: getPstnCalls</span><span class="sxs-lookup"><span data-stu-id="2a4a6-103">callRecord: getPstnCalls</span></span>
+# <a name="callrecord-getpstncalls"></a><span data-ttu-id="9f538-103">callRecord: getPstnCalls</span><span class="sxs-lookup"><span data-stu-id="9f538-103">callRecord: getPstnCalls</span></span>
 
-<span data-ttu-id="2a4a6-104">Namespace: microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="2a4a6-104">Namespace: microsoft.graph.callRecords</span></span>
+<span data-ttu-id="9f538-104">Namespace: microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="9f538-104">Namespace: microsoft.graph.callRecords</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2a4a6-105">Obter o log de chamadas PSTN como uma coleção de entradas [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) .</span><span class="sxs-lookup"><span data-stu-id="2a4a6-105">Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.</span></span>
+<span data-ttu-id="9f538-105">Obter o log de chamadas PSTN como uma coleção de entradas [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) .</span><span class="sxs-lookup"><span data-stu-id="9f538-105">Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2a4a6-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="2a4a6-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9f538-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="9f538-106">Permissions</span></span>
 
-<span data-ttu-id="2a4a6-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2a4a6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9f538-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9f538-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2a4a6-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2a4a6-109">Permission type</span></span>|<span data-ttu-id="2a4a6-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="2a4a6-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="9f538-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9f538-109">Permission type</span></span>|<span data-ttu-id="9f538-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="9f538-110">Permissions (from most to least privileged)</span></span>|
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="2a4a6-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2a4a6-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="2a4a6-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2a4a6-112">Not supported.</span></span> |
-| <span data-ttu-id="2a4a6-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2a4a6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2a4a6-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2a4a6-114">Not supported.</span></span> |
-| <span data-ttu-id="2a4a6-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2a4a6-115">Application</span></span>                            | <span data-ttu-id="2a4a6-116">CallRecords.Read.All</span><span class="sxs-lookup"><span data-stu-id="2a4a6-116">CallRecords.Read.All</span></span> |
+| <span data-ttu-id="9f538-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9f538-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="9f538-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9f538-112">Not supported.</span></span> |
+| <span data-ttu-id="9f538-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9f538-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9f538-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9f538-114">Not supported.</span></span> |
+| <span data-ttu-id="9f538-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9f538-115">Application</span></span>                            | <span data-ttu-id="9f538-116">CallRecords.Read.All</span><span class="sxs-lookup"><span data-stu-id="9f538-116">CallRecords.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2a4a6-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2a4a6-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9f538-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9f538-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -41,31 +41,31 @@ ms.locfileid: "47439847"
 GET /communications/callRecords/getPstnCalls
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="2a4a6-118">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="2a4a6-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="9f538-118">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="9f538-118">Function parameters</span></span>
 
-<span data-ttu-id="2a4a6-119">Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.</span><span class="sxs-lookup"><span data-stu-id="2a4a6-119">In the request URL, provide the following query parameters with values.</span></span>
-<span data-ttu-id="2a4a6-120">A tabela a seguir mostra os parâmetros que podem ser usados com esta função.</span><span class="sxs-lookup"><span data-stu-id="2a4a6-120">The following table shows the parameters that can be used with this function.</span></span>
+<span data-ttu-id="9f538-119">Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.</span><span class="sxs-lookup"><span data-stu-id="9f538-119">In the request URL, provide the following query parameters with values.</span></span>
+<span data-ttu-id="9f538-120">A tabela a seguir mostra os parâmetros que podem ser usados com esta função.</span><span class="sxs-lookup"><span data-stu-id="9f538-120">The following table shows the parameters that can be used with this function.</span></span>
 
-|<span data-ttu-id="2a4a6-121">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="2a4a6-121">Parameter</span></span>|<span data-ttu-id="2a4a6-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="2a4a6-122">Type</span></span>|<span data-ttu-id="2a4a6-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="2a4a6-123">Description</span></span>|
+|<span data-ttu-id="9f538-121">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="9f538-121">Parameter</span></span>|<span data-ttu-id="9f538-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="9f538-122">Type</span></span>|<span data-ttu-id="9f538-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="9f538-123">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2a4a6-124">fromDateTime</span><span class="sxs-lookup"><span data-stu-id="2a4a6-124">fromDateTime</span></span>|<span data-ttu-id="2a4a6-125">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2a4a6-125">DateTimeOffset</span></span>|<span data-ttu-id="2a4a6-126">Início do intervalo de tempo para consulta.</span><span class="sxs-lookup"><span data-stu-id="2a4a6-126">Start of time range to query.</span></span> <span data-ttu-id="2a4a6-127">UTC, inclusive.</span><span class="sxs-lookup"><span data-stu-id="2a4a6-127">UTC, inclusive.</span></span><br/><span data-ttu-id="2a4a6-128">O intervalo de tempo é baseado na hora de início da chamada.</span><span class="sxs-lookup"><span data-stu-id="2a4a6-128">Time range is based on the call start time.</span></span>|
-|<span data-ttu-id="2a4a6-129">ToDateTime</span><span class="sxs-lookup"><span data-stu-id="2a4a6-129">toDateTime</span></span>|<span data-ttu-id="2a4a6-130">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2a4a6-130">DateTimeOffset</span></span>|<span data-ttu-id="2a4a6-131">Término do intervalo de tempo para consulta.</span><span class="sxs-lookup"><span data-stu-id="2a4a6-131">End of time range to query.</span></span> <span data-ttu-id="2a4a6-132">UTC, inclusive.</span><span class="sxs-lookup"><span data-stu-id="2a4a6-132">UTC, inclusive.</span></span>|
+|<span data-ttu-id="9f538-124">fromDateTime</span><span class="sxs-lookup"><span data-stu-id="9f538-124">fromDateTime</span></span>|<span data-ttu-id="9f538-125">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9f538-125">DateTimeOffset</span></span>|<span data-ttu-id="9f538-126">Início do intervalo de tempo para consulta.</span><span class="sxs-lookup"><span data-stu-id="9f538-126">Start of time range to query.</span></span> <span data-ttu-id="9f538-127">UTC, inclusive.</span><span class="sxs-lookup"><span data-stu-id="9f538-127">UTC, inclusive.</span></span><br/><span data-ttu-id="9f538-128">O intervalo de tempo é baseado na hora de início da chamada.</span><span class="sxs-lookup"><span data-stu-id="9f538-128">Time range is based on the call start time.</span></span>|
+|<span data-ttu-id="9f538-129">ToDateTime</span><span class="sxs-lookup"><span data-stu-id="9f538-129">toDateTime</span></span>|<span data-ttu-id="9f538-130">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9f538-130">DateTimeOffset</span></span>|<span data-ttu-id="9f538-131">Término do intervalo de tempo para consulta.</span><span class="sxs-lookup"><span data-stu-id="9f538-131">End of time range to query.</span></span> <span data-ttu-id="9f538-132">UTC, inclusive.</span><span class="sxs-lookup"><span data-stu-id="9f538-132">UTC, inclusive.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="2a4a6-133">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2a4a6-133">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9f538-133">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9f538-133">Request headers</span></span>
 
-|<span data-ttu-id="2a4a6-134">Nome</span><span class="sxs-lookup"><span data-stu-id="2a4a6-134">Name</span></span>|<span data-ttu-id="2a4a6-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="2a4a6-135">Description</span></span>|
+|<span data-ttu-id="9f538-134">Nome</span><span class="sxs-lookup"><span data-stu-id="9f538-134">Name</span></span>|<span data-ttu-id="9f538-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="9f538-135">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="2a4a6-136">Autorização</span><span class="sxs-lookup"><span data-stu-id="2a4a6-136">Authorization</span></span>|<span data-ttu-id="2a4a6-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2a4a6-p105">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="9f538-136">Autorização</span><span class="sxs-lookup"><span data-stu-id="9f538-136">Authorization</span></span>|<span data-ttu-id="9f538-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9f538-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="2a4a6-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="2a4a6-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9f538-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="9f538-139">Response</span></span>
 
-<span data-ttu-id="2a4a6-140">Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma coleção de entradas [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2a4a6-140">If successful, this function returns a `200 OK` response code and a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries in the response body.</span></span>
+<span data-ttu-id="9f538-140">Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma coleção de entradas [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9f538-140">If successful, this function returns a `200 OK` response code and a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries in the response body.</span></span>
   
-<span data-ttu-id="2a4a6-141">Se houver mais de 1000 entradas no intervalo de datas, o corpo também incluirá um `@odata.NextLink` com uma URL para consultar a próxima página de entradas de chamada.</span><span class="sxs-lookup"><span data-stu-id="2a4a6-141">If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries.</span></span> <span data-ttu-id="2a4a6-142">A última página no intervalo de datas não tem `@odata.NextLink` .</span><span class="sxs-lookup"><span data-stu-id="2a4a6-142">The last page in the date range does not have `@odata.NextLink`.</span></span> <span data-ttu-id="2a4a6-143">Para obter mais informações, consulte [paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).</span><span class="sxs-lookup"><span data-stu-id="2a4a6-143">For more information, see [paging Microsoft Graph data in your app](/graph/paging).</span></span>
+<span data-ttu-id="9f538-141">Se houver mais de 1000 entradas no intervalo de datas, o corpo também incluirá um `@odata.NextLink` com uma URL para consultar a próxima página de entradas de chamada.</span><span class="sxs-lookup"><span data-stu-id="9f538-141">If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries.</span></span> <span data-ttu-id="9f538-142">A última página no intervalo de datas não tem `@odata.NextLink` .</span><span class="sxs-lookup"><span data-stu-id="9f538-142">The last page in the date range does not have `@odata.NextLink`.</span></span> <span data-ttu-id="9f538-143">Para obter mais informações, consulte [paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).</span><span class="sxs-lookup"><span data-stu-id="9f538-143">For more information, see [paging Microsoft Graph data in your app](/graph/paging).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2a4a6-144">Exemplos</span><span class="sxs-lookup"><span data-stu-id="2a4a6-144">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="9f538-144">Exemplos</span><span class="sxs-lookup"><span data-stu-id="9f538-144">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="2a4a6-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2a4a6-145">Request</span></span>
+### <a name="request"></a><span data-ttu-id="9f538-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9f538-145">Request</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -77,9 +77,9 @@ GET /communications/callRecords/getPstnCalls
 GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fromDateTime=2019-11-01,toDateTime=2019-12-01)
 ```
 
-### <a name="response"></a><span data-ttu-id="2a4a6-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="2a4a6-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="9f538-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="9f538-146">Response</span></span>
 
-<span data-ttu-id="2a4a6-147">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="2a4a6-147">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="9f538-147">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="9f538-147">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -120,7 +120,9 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="2a4a6-148">Confira também</span><span class="sxs-lookup"><span data-stu-id="2a4a6-148">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9f538-148">Confira também</span><span class="sxs-lookup"><span data-stu-id="9f538-148">See also</span></span>
 
-* [<span data-ttu-id="2a4a6-149">Relatório de uso do Microsoft Teams PSTN</span><span class="sxs-lookup"><span data-stu-id="2a4a6-149">Microsoft Teams PSTN usage report</span></span>](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
-* [<span data-ttu-id="2a4a6-150">Relatório de roteamento direto no Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="2a4a6-150">Direct routing report in Microsoft Graph</span></span>](callrecords-callrecord-getdirectroutingcalls.md)
+* [<span data-ttu-id="9f538-149">Relatório de uso do Microsoft Teams PSTN</span><span class="sxs-lookup"><span data-stu-id="9f538-149">Microsoft Teams PSTN usage report</span></span>](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
+* [<span data-ttu-id="9f538-150">Relatório de roteamento direto no Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="9f538-150">Direct routing report in Microsoft Graph</span></span>](callrecords-callrecord-getdirectroutingcalls.md)
+
+
