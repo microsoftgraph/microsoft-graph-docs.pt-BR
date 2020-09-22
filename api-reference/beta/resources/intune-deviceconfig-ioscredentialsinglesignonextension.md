@@ -3,14 +3,14 @@ title: tipo de recurso iosCredentialSingleSignOnExtension
 description: Representa um perfil de extensão de logon único de tipo de credencial para dispositivos iOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 33733eeb55d1b4bfb4260998f577602861433387
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: e3143b0a1eb3c75ba9d7f3aeda07d1759412c0ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994040"
 ---
 # <a name="ioscredentialsinglesignonextension-resource-type"></a>tipo de recurso iosCredentialSingleSignOnExtension
 
@@ -28,10 +28,10 @@ Herda de [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|extensionIdentifier|Cadeia de Caracteres|Obtém ou define a ID do pacote da extensão do aplicativo que executa o SSO para as URLs especificadas.|
-|teamIdentifier|Cadeia de Caracteres|Obtém ou define a ID de equipe da extensão de aplicativo que executa o SSO para as URLs especificadas.|
-|domínio|Conjunto de cadeias de caracteres|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão de aplicativo executa SSO.|
-|esfera|Cadeia de Caracteres|Obtém ou define o nome de território que diferencia maiúsculas de minúsculas para esse perfil.|
+|extensionIdentifier|String|Obtém ou define a ID do pacote da extensão do aplicativo que executa o SSO para as URLs especificadas.|
+|teamIdentifier|String|Obtém ou define a ID de equipe da extensão de aplicativo que executa o SSO para as URLs especificadas.|
+|domínio|Coleção de cadeias de caracteres|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão de aplicativo executa SSO.|
+|esfera|String|Obtém ou define o nome de território que diferencia maiúsculas de minúsculas para esse perfil.|
 |as|coleção [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Obtém ou define uma lista de pares de valores de chave digitados usados para configurar perfis de tipo de credencial. Esta coleção pode conter um máximo de 500 elementos.|
 
 ## <a name="relationships"></a>Relações
@@ -61,6 +61,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

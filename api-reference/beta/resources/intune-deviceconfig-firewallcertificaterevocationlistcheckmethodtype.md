@@ -3,14 +3,14 @@ title: tipo de enumeração firewallCertificateRevocationListCheckMethodType
 description: Valores possíveis para firewallCertificateRevocationListCheckMethod
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f220d5e592544ec3527c16c425d4b22fe0266d4c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e5c3f9d338ae0a5bf047bb0e8a18d7e7fdb94593
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444306"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994124"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>tipo de enumeração firewallCertificateRevocationListCheckMethodType
 
@@ -26,9 +26,12 @@ Valores possíveis para firewallCertificateRevocationListCheckMethod
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Nenhum valor configurado pelo Intune, não substitua o valor padrão do dispositivo configurado pelo usuário|
-|nenhuma|1|Não verificar a lista de certificados revogados|
-|Houve|duas|Tentar verificação de CRL e permitir um certificado somente se o certificado for confirmado pela verificação|
-|precisa|3D|Exigir uma verificação de CRL bem-sucedida antes de permitir um certificado|
+|Nenhuma|1 |Não verificar a lista de certificados revogados|
+|Houve|2 |Tentar verificação de CRL e permitir um certificado somente se o certificado for confirmado pela verificação|
+|precisa|3 |Exigir uma verificação de CRL bem-sucedida antes de permitir um certificado|
+
+
+
 
 
 

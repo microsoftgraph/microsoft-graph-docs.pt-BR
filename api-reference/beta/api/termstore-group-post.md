@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c81a095a14599622fa273973a1f3581b5b84921f
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 63375e567d5faffcd1e25cdd85d3c43e37efbc77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539176"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994383"
 ---
 # <a name="create-group"></a>Criar grupo
 Namespace: Microsoft. Graph. termos
@@ -111,3 +111,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 3a770544e08c3ebb4959bf646fda6d4d0ae0ddc5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b5de10f7423294b0e9d0a044c6a8fcd7b0c831d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452397"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994362"
 ---
 # <a name="delete-threat-intelligence-indicator"></a>Excluir indicador de inteligência de ameaças
 
@@ -106,3 +106,5 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
+

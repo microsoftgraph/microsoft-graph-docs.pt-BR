@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7465ecc3f8e1b99c001fca5d6f43391cf0ef682d
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 2bcb150239e6e6a8487caa3f49f7704fbd2550a8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994271"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>tipo de recurso conditionalAccessGrantControls
 
@@ -24,17 +24,17 @@ Representa os controles de concessão que devem ser atendidos para passar a pol�
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| operator | Cadeia de caracteres | Define o relacionamento dos controles de concessão. Valores possíveis: `AND` , `OR` . |
+| operator | String | Define o relacionamento dos controles de concessão. Valores possíveis: `AND` , `OR` . |
 | builtInControls | Coleção de cadeias de caracteres | Lista de valores de controles internos exigidos pela política. Valores possíveis: `block` ,,,,, `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` , `passwordChange` . |
-| customAuthenticationFactors | Coleção de cadeias de caracteres | Lista de IDs de controles personalizados exigidos pela política. Saiba mais sobre os controles personalizados aqui:https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
+| customAuthenticationFactors | Coleção de cadeias de caracteres | Lista de IDs de controles personalizados exigidos pela política. Saiba mais sobre os controles personalizados aqui: https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
 | termsOfUse | Coleção de cadeias de caracteres | Lista de [termos de uso](agreement.md) IDs exigidos pela política. |
 
 ### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>Considerações especiais ao usar `passwordChange` como um controle
 
 Considere o seguinte ao usar o `passwordChange` controle: 
 
-- `passwordChange`deve ser acompanhado pelo `mfa` uso de um `AND` operador. Essa combinação garante que a senha será atualizada de forma segura.
-- `passwordChange`deve ser usado em uma política que contém `userRiskLevels` . Isso é projetado para permitir cenários em que os usuários devem usar uma senha de alteração segura para redefinir o risco do usuário.
+- `passwordChange` deve ser acompanhado pelo `mfa` uso de um `AND` operador. Essa combinação garante que a senha será atualizada de forma segura.
+- `passwordChange` deve ser usado em uma política que contém `userRiskLevels` . Isso é projetado para permitir cenários em que os usuários devem usar uma senha de alteração segura para redefinir o risco do usuário.
 - A política deve direcionar `all` aplicativos e não excluir nenhum aplicativo.
 - A política não pode conter nenhuma outra condição.
 
@@ -76,3 +76,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c536e94230866b209f6d0dffef31bbf23c49b71b
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 8dd9ecd5f845682187fb84a9e057d7fdb7cb70d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872800"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994320"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso chat
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais participantes. Os participantes podem ser usuários ou aplicativos.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |  Método       |  Tipo de retorno  | Descrição| Permissões |
 |:---------------|:--------|:----------|-----------|
@@ -86,3 +86,5 @@ Veja a seguir uma representação JSON do recurso.
   "tocPath": ""
 }
 -->
+
+

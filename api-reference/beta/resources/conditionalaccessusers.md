@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ad9c41e91a71fa00af71c05bc5c9d0591f81826b
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: d1294551fd568b9f41072d3707d64a88d4b04edc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916673"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994229"
 ---
 # <a name="conditionalaccessusers-resource-type"></a>tipo de recurso conditionalAccessUsers
 
@@ -24,11 +24,11 @@ Representa usuários, grupos e funções incluídos e excluídos do escopo da po
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeUsers | Coleção de cadeias de caracteres | IDs de usuário em escopo de política, a menos que `None` explicitamente `All` excluído `GuestsOrExternalUsers`ou ou. |
-| excludeUsers | Coleção de cadeias de caracteres | IDs de usuário excluídas do escopo da política e `GuestsOrExternalUsers`/ou. |
-| includeGroups | Coleção de cadeias de caracteres | IDs de grupo em escopo de política, a menos que `All`explicitamente excluído ou. |
+| includeUsers | Coleção de cadeias de caracteres | IDs de usuário em escopo de política, a menos que explicitamente excluído ou ou `None` `All` `GuestsOrExternalUsers` . |
+| excludeUsers | Coleção de cadeias de caracteres | IDs de usuário excluídas do escopo da política e/ou `GuestsOrExternalUsers` . |
+| includeGroups | Coleção de cadeias de caracteres | IDs de grupo em escopo de política, a menos que explicitamente excluído ou `All` . |
 | excludeGroups | Coleção de cadeias de caracteres | IDs de grupo excluídas do escopo da política. |
-| includeRoles | Coleção de cadeias de caracteres | IDs de função em escopo de política, a menos que `All`explicitamente excluído ou. |
+| includeRoles | Coleção de cadeias de caracteres | IDs de função em escopo de política, a menos que explicitamente excluído ou `All` . |
 | excludeRoles | Coleção de cadeias de caracteres | IDs de função excluídas do escopo da política. |
 
 ## <a name="relationships"></a>Relações
@@ -73,3 +73,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

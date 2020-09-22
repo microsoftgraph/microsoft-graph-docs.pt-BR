@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d4b838522aca98f0d2f2cbac9eb2ebe9bca3e479
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e5f94ed5149294c8173948b3ce1ac5d17fd85b28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452649"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994411"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,7 +56,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [workbookTableRow](../resources/workbooktablerow.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [workbookTableRow](../resources/workbooktablerow.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Neste exemplo, duas linhas de dados são inseridas no final da tabela. 
@@ -124,3 +124,5 @@ Content-length: 45
   ]
 }
 -->
+
+

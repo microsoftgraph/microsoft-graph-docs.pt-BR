@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0f71b23e48c818747a2b70b52ec8b4baa53bf118
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8b967e2ba2d678d9648b09eae4aeb3dca760c52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508489"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994341"
 ---
 # <a name="accesspackagesubject-resource-type"></a>tipo de recurso accessPackageSubject
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,12 +24,12 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), um pacote
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|Cadeia de caracteres|O nome de exibição do assunto.|
-|email|String|O endereço de email do assunto.|
+|displayName|String|O nome de exibição do assunto.|
+|email|Cadeia de caracteres|O endereço de email do assunto.|
 |id|String| Somente leitura.|
-|objectId|String|A ID de objeto do assunto.|
+|objectId|Cadeia de caracteres|A ID de objeto do assunto.|
 |principalName|Cadeia de caracteres|O nome da entidade de segurança, se for conhecido, do assunto.|
-|type|String|O tipo de recurso do assunto.|
+|tipo|String|O tipo de recurso do assunto.|
 
 ## <a name="relationships"></a>Relações
 
@@ -69,3 +69,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

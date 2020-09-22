@@ -3,14 +3,14 @@ title: tipo de enumeração firewallPacketQueueingMethodType
 description: Valores possíveis para firewallPacketQueueingMethod
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0a6bd346c45e21c31901d7e54eda95f72fa92a23
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 90919fb38563f86b41aedb9dbe59ba774c27477b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444299"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994103"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>tipo de enumeração firewallPacketQueueingMethodType
 
@@ -26,10 +26,13 @@ Valores possíveis para firewallPacketQueueingMethod
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Nenhum valor configurado pelo Intune, não substitua o valor padrão do dispositivo configurado pelo usuário|
-|desabilitadas|1|Desabilitar enfileiramento de pacotes|
-|queueInbound|duas|Enfileirar pacotes criptografados de entrada|
-|queueOutbound|3D|Pacotes de saída de fila descriptografados para encaminhamento|
+|desabilitadas|1 |Desabilitar enfileiramento de pacotes|
+|queueInbound|2 |Enfileirar pacotes criptografados de entrada|
+|queueOutbound|3 |Pacotes de saída de fila descriptografados para encaminhamento|
 |queueBoth|4 |Enfileiramento de pacotes de entrada e de saída|
+
+
+
 
 
 

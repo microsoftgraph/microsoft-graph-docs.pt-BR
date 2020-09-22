@@ -3,14 +3,14 @@ title: tipo de enumeração folderProtectionType
 description: Possíveis valores de proteção de pasta
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ded583dfe44d393a2ae1c8f56f9952feb85cf857
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9ccdaf6625685a0e9e317ad01c8b81fffa04f651
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444285"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994068"
 ---
 # <a name="folderprotectiontype-enum-type"></a>tipo de enumeração folderProtectionType
 
@@ -26,10 +26,13 @@ Possíveis valores de proteção de pasta
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Valor padrão do dispositivo, sem intenção.|
-|possibilite|1|Funcionalidade de bloqueio.|
-|auditmode|duas|Permitir a funcionalidade, mas gerar logs.|
-|blockDiskModification|3D|Bloquear a gravação de aplicativos não confiáveis em setores de disco.|
+|possibilite|1 |Funcionalidade de bloqueio.|
+|auditmode|2 |Permitir a funcionalidade, mas gerar logs.|
+|blockDiskModification|3 |Bloquear a gravação de aplicativos não confiáveis em setores de disco.|
 |auditDiskModification|4 |Gerar logs quando aplicativos não confiáveis gravam em setores de disco.|
+
+
+
 
 
 

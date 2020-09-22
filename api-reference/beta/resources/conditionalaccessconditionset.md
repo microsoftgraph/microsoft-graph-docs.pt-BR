@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 763fe78508a61461f824e618867abe96c1afd348
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: ba88e9e5fd67bba5dd88fe323f3140bdbebff479
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122599"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994292"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>tipo de recurso conditionalAccessConditionSet
 
@@ -86,3 +86,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

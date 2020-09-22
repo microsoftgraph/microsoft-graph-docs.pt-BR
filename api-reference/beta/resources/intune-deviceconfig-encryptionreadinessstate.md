@@ -3,14 +3,14 @@ title: tipo de enumeração encryptionReadinessState
 description: Estado de preparação de criptografia
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bdb2e5b0766e760ed14f632986697eb1711b308a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 401ed57c42809ed701b02570e4dade51bfaa5883
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460077"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994208"
 ---
 # <a name="encryptionreadinessstate-enum-type"></a>tipo de enumeração encryptionReadinessState
 
@@ -26,7 +26,10 @@ Estado de preparação de criptografia
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Não legível|,0|Não está pronto|
-|Pronto|1|Pronto|
+|Pronto|1 |Pronto|
+
+
+
 
 
 

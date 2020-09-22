@@ -3,14 +3,14 @@ title: tipo de enumeração EncryptionState
 description: Estado de criptografia
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 98ebb42e33e219d916925a2fb3da825687ce76b5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 95ef5227910433a93f0dfa0759d29f19e5863cea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460039"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994180"
 ---
 # <a name="encryptionstate-enum-type"></a>tipo de enumeração EncryptionState
 
@@ -26,7 +26,10 @@ Estado de criptografia
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |não criptografado|,0|Não criptografado|
-|PPTP|1|PPTP|
+|PPTP|1 |PPTP|
+
+
+
 
 
 
