@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 644d5a2fa0a93a100ecba0e1632c29eae6ad37e6
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: c445732780748a690802d668d6e184aebadacff7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44153552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064637"
 ---
 # <a name="create-offershiftrequest"></a>Criar offerShiftRequest
 
@@ -51,7 +51,7 @@ Forneça o novo objeto [offershiftrequest](../resources/offershiftrequest.md) no
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [offerShiftRequest](../resources/offershiftrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [offerShiftRequest](../resources/offershiftrequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -145,3 +145,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

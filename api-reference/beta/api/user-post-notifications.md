@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: apiPageType
 author: merzink
-ms.openlocfilehash: b66544406372c2eaa7be6f8f4261c75cbd7c6c5e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7296a136a4d2bab38eaf8ef25790019abc05bf6b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451662"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064511"
 ---
 # <a name="create-and-send-a-notification"></a>Criar e enviar uma notificação
 
-Namespace: Microsoft. Graph[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Criar e enviar uma notificação direcionada a um usuário por meio do Microsoft Graph. A notificação é armazenada no repositório de feeds de notificação do Microsoft Graph e é enviada a todos os clientes de aplicativos em todos os pontos de extremidade do dispositivo nos quais o usuário está conectado.  
 
@@ -50,7 +50,7 @@ POST /me/notifications/
 No corpo da solicitação, forneça uma representação JSON de um objeto [Notification](../resources/projectrome-notification.md) .
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta que indica que a notificação foi criada e armazenada com êxito. A notificação será subseqüentemente fanned a todos os pontos de extremidade especificados com uma assinatura válida. 
+Se tiver êxito, este método retornará um `201 Created` código de resposta que indica que a notificação foi criada e armazenada com êxito. A notificação será subseqüentemente fanned a todos os pontos de extremidade especificados com uma assinatura válida. 
 
 A tabela a seguir lista os possíveis códigos de erro e resposta que podem ser retornados.
 
@@ -61,7 +61,7 @@ A tabela a seguir lista os possíveis códigos de erro e resposta que podem ser 
 |HttpStatusCode. proibido            | O chamador está na lista de bloqueados.                          |
 |HttpStatusCode. MethodNotAllowed     | Não há suporte para o método HTTP usado.                     |
 |HttpStatusCode. BadRequest           | Cabeçalhos sem suporte estão presentes na solicitação. Não há suporte para dois cabeçalhos:<br/><br/>If-Modified-Since<br/>If-Range |                    
-|HttpStatusCode. UnsupportedMediaType | O cabeçalho Content-Encoding está presente e tem valores de algoritmo de compactação diferentes de `Deflate` ou `Gzip`.  |
+|HttpStatusCode. UnsupportedMediaType | O cabeçalho Content-Encoding está presente e tem valores de algoritmo de compactação diferentes de `Deflate` ou `Gzip` .  |
 |HttpStatusCode. BadRequest           | Carga inválida.                                           |
 |HttpStatusCode. proibido            | O chamador não está autorizado a atuar em nome do usuário ou enviar notificação para o usuário.                         |
 |HttpStatusCode. não autorizado         |  O corpo da solicitação contém tipos de dados de atividade inválidos.        |
@@ -126,3 +126,5 @@ request-id: 71e62feb-8d72-4912-8b2c-4cee9d89e781
     }
 }
 ```
+
+

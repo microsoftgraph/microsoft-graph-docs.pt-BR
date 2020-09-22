@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5db84c3fee015a856d43cff03c7f1d8bf356ce16
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: ecf1327333ddd9a38d3199c01a0c6b2436eb27a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539177"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064585"
 ---
 # <a name="create-set"></a>Criar conjunto
 Namespace: Microsoft. Graph. termos
@@ -123,3 +123,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

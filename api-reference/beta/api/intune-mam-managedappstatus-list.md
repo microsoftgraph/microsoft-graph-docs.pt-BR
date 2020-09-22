@@ -3,14 +3,14 @@ title: Listar managedAppStatuses
 description: Listar propriedades e relações dos objetos managedAppStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d08a310c9ebe1a6b7913471ddb791e97731a540
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8cda28d64e5b673640353625438aaa48bd7f5ab3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467260"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065099"
 ---
 # <a name="list-managedappstatuses"></a>Listar managedAppStatuses
 
@@ -78,6 +78,9 @@ Content-Length: 227
   ]
 }
 ```
+
+
+
 
 
 

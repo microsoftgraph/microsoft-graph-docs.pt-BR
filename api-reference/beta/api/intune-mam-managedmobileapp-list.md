@@ -3,14 +3,14 @@ title: Listar managedMobileApps
 description: Listar propriedades e relações dos objetos managedMobileApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cde247b7c590722d8a18dcabef0e0575960a7c29
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 7f2a4315239f83ea15fd57470fb257f7f439663c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179331"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064987"
 ---
 # <a name="list-managedmobileapps"></a>Listar managedMobileApps
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -84,6 +84,9 @@ Content-Length: 336
   ]
 }
 ```
+
+
+
 
 
 

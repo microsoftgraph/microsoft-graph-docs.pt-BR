@@ -3,14 +3,14 @@ title: Excluir managedMobileApp
 description: Exclui managedMobileApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0963b69ee720f7bd4955623505a53e9f279ade18
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 421d740b1bd84c7b7f8a6f8d1ce61bc697dd972e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468267"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065036"
 ---
 # <a name="delete-managedmobileapp"></a>Excluir managedMobileApp
 
@@ -68,6 +68,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

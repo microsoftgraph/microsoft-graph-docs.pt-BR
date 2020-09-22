@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 82672ec05fbee9645af7a257d309d16d6ad5d519
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15ba25a6d38e4a62314b79daa4e59b187b1b3dc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458124"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064567"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Criar um [evento](../resources/event.md) no calendário padrão do usuário ou em um calendário específico.
 
-Por padrão, a propriedade **allowNewTimeProposals** é definida como true quando um evento é criado, o que significa que os convidados podem propor uma data/hora diferente para o evento. Confira [propor novos horários de reunião](/graph/outlook-calendar-meeting-proposals) para obter mais informações sobre como propor um horário e como receber e aceitar uma nova proposta de tempo.
+Por padrão, a propriedade **allowNewTimeProposals** está definida como verdadeira quando um evento é criado, o que significa que os convidados podem propor uma data/hora diferente para o evento. Confira [Propor novos horários de reunião](/graph/outlook-calendar-meeting-proposals) para obter mais informações sobre como propor um horário e como receber e aceitar uma nova proposta de horário.
 
 Você pode especificar o fuso horário de cada um dos horários de início e de término do evento como parte de seus valores, porque as propriedades**inicial** e **final** são do tipo [ dateTimeTimeZone](../resources/datetimetimezone.md). Primeiro [localize os fusos horários com suporte](outlookuser-supportedtimezones.md) para garantir que você tenha definido somente fusos horários que tenham sido configurados para o servidor de caixas de correio do usuário. 
 
@@ -1017,3 +1017,5 @@ Content-length: 2197
   ]
 }
 -->
+
+

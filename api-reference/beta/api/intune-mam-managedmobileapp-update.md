@@ -3,14 +3,14 @@ title: Atualizar managedMobileApp
 description: Atualizar as propriedades de um objeto managedMobileApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 268e0984dc062ecb73a412501865e1483255739e
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 75903750c592b5c6f56316e1e6d18a728dde3750
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178182"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064980"
 ---
 # <a name="update-managedmobileapp"></a>Atualizar managedMobileApp
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -101,6 +101,9 @@ Content-Length: 275
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Criar managedMobileApp
 description: Criar um novo objeto managedMobileApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7189f0d505b4ada8dae1cc798437e6037af84bf2
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: ab212fafcd03ed20735a888c757b319d8186f6cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178609"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065043"
 ---
 # <a name="create-managedmobileapp"></a>Criar managedMobileApp
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -101,6 +101,9 @@ Content-Length: 275
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

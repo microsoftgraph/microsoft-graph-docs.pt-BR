@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 439dac7658d357c3abf243d649be493ec3a37b52
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: c80ed7f997cc888c340d6f155b986c0307c6234f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44216603"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064687"
 ---
 # <a name="offershiftrequest-approve"></a>offerShiftRequest: aprovar
 
@@ -116,3 +116,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

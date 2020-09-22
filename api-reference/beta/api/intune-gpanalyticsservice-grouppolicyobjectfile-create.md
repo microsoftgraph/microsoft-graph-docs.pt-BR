@@ -3,14 +3,14 @@ title: Criar groupPolicyObjectFile
 description: Criar um novo objeto groupPolicyObjectFile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: addb2ac25071618b01866065afac6c4389aa15cb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 57b1a474efa2a969aa5e80af5ab3cc96160d7f9d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454936"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065169"
 ---
 # <a name="create-grouppolicyobjectfile"></a>Criar groupPolicyObjectFile
 
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 |groupPolicyObjectId|Guid|O GUID do objeto da política de grupo do conteúdo XML do GPO|
-|ouDistinguishedName|String|O nome diferenciado da OU.|
+|ouDistinguishedName|Cadeia de caracteres|O nome diferenciado da OU.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o GroupPolicy foi carregado pela primeira vez.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyObjectFile foi modificado pela última vez.|
 |content|Cadeia de caracteres|O conteúdo do arquivo do objeto de diretiva de grupo.|
@@ -63,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -99,6 +99,9 @@ Content-Length: 389
   "content": "Content value"
 }
 ```
+
+
+
 
 
 

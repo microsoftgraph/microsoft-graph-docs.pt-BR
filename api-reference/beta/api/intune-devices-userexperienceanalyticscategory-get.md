@@ -3,14 +3,14 @@ title: Obter userExperienceAnalyticsCategory
 description: Leia as propriedades e as relações do objeto userExperienceAnalyticsCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3e6b24c4250eabd270f7d4c77164a56c26f6779
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: ef5f142bf0caf80e74de7bc17217245bff9ef3cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176362"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065239"
 ---
 # <a name="get-userexperienceanalyticscategory"></a>Obter userExperienceAnalyticsCategory
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,8 +37,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
+GET /deviceManagement/userExperienceAnalyticsAppHealthOverview
 GET /deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
 GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/bestPracticesMetrics
+GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/rebootAnalyticsMetrics
 GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics
 ```
 
@@ -62,7 +64,7 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objet
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthOverview
 ```
 
 ### <a name="response"></a>Resposta
@@ -95,6 +97,9 @@ Content-Length: 657
   }
 }
 ```
+
+
+
 
 
 

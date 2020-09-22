@@ -3,14 +3,14 @@ title: Criar windowsInformationProtectionWipeAction
 description: Criar um novo objeto windowsInformationProtectionWipeAction.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18174f52cc5adec826ff497797f92ec7ce0516c6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 80e178a402b91c761d655dabc160aeb511127266
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440791"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064938"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>Criar windowsInformationProtectionWipeAction
 
@@ -53,18 +53,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsI
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Status de ação de apagamento. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|targetedUserId|String|O UserId que está sendo direcionado para esta ação de apagamento.|
-|targetedDeviceRegistrationId|String|O DeviceRegistrationId que está sendo direcionado para esta ação de apagamento.|
-|targetedDeviceName|String|Nome do dispositivo de destino.|
-|targetedDeviceMacAddress|String|Endereço MAC do dispositivo de destino.|
+|targetedUserId|Cadeia de caracteres|O UserId que está sendo direcionado para esta ação de apagamento.|
+|targetedDeviceRegistrationId|Cadeia de caracteres|O DeviceRegistrationId que está sendo direcionado para esta ação de apagamento.|
+|targetedDeviceName|Cadeia de caracteres|Nome do dispositivo de destino.|
+|targetedDeviceMacAddress|Cadeia de caracteres|Endereço MAC do dispositivo de destino.|
 |lastCheckInDateTime|DateTimeOffset|Hora da última verificação do dispositivo direcionado por esta ação de apagamento.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -104,6 +104,9 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 260e638b478e7383d08a57a98925c06117de4001
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: a10a6214c3920290d1a2bb33b17e3fc739b47da1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330421"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064623"
 ---
 # <a name="get-set"></a>Obter conjunto
 Namespace: Microsoft. Graph. termos [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) |Termos. Read. All, termos. ReadWrite. All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 
@@ -123,3 +123,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

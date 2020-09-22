@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 56c2259c74ebdec363c49c30d781a1a891a08b0e
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 47ba704a8e4a4a4c4aedb6e70341aa37c3eb1377
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080813"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064497"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -266,3 +266,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

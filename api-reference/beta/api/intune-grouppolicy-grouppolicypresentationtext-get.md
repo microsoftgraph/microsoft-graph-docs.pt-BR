@@ -3,14 +3,14 @@ title: Obter groupPolicyPresentationText
 description: Leia as propriedades e as relações do objeto groupPolicyPresentationText.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 683cb0cdd90288046cda0006d11750c15065ff96
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ca5a2e53cf37a9abf83846de69011be941b8ffc0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408642"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065113"
 ---
 # <a name="get-grouppolicypresentationtext"></a>Obter groupPolicyPresentationText
 
@@ -80,6 +80,9 @@ Content-Length: 236
   }
 }
 ```
+
+
+
 
 
 

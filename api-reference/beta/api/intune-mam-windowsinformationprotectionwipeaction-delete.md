@@ -3,14 +3,14 @@ title: Excluir windowsInformationProtectionWipeAction
 description: Exclui windowsInformationProtectionWipeAction.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a507754c8688905485e646c24d1e3076bbf21559
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8f3f8f3f23e4677fa5a9e894eb2c1ca6ae9a9179
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440760"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064924"
 ---
 # <a name="delete-windowsinformationprotectionwipeaction"></a>Excluir windowsInformationProtectionWipeAction
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

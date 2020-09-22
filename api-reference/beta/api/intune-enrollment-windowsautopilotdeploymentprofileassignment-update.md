@@ -3,14 +3,14 @@ title: Atualizar windowsAutopilotDeploymentProfileAssignment
 description: Atualiza as propriedades de um objeto windowsAutopilotDeploymentProfileAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 168616aa23934d5aa5e01d995cda533ed7d786e4
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: cc89241cb6574ec024893527fc1bd219f9f07778
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792033"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065211"
 ---
 # <a name="update-windowsautopilotdeploymentprofileassignment"></a>Atualizar windowsAutopilotDeploymentProfileAssignment
 
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da atribuição.|
+|id|Cadeia de caracteres|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino de atribuição para o perfil de implantação do piloto automático do Windows.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Tipo de recurso usado para implantação em um grupo, direto ou de remessa/política. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|String|Identificador para o recurso usado para implantação em um grupo|
+|sourceId|Cadeia de caracteres|Identificador para o recurso usado para implantação em um grupo|
 
 
 
@@ -103,6 +103,9 @@ Content-Length: 460
   "sourceId": "Source Id value"
 }
 ```
+
+
+
 
 
 

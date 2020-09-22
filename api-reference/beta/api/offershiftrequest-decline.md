@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c3edf437b87af8bc222a51c1532367e12ad44953
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 315ff8ba05f2fad246938f1913458a726ce30356
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44217005"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064679"
 ---
 # <a name="offershiftrequest-decline"></a>offerShiftRequest: recusar
 
@@ -116,3 +116,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

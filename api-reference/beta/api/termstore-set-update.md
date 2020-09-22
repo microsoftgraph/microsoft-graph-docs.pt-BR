@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 65d5857f253f3d5a94d8043b843fb95cb00421f6
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 3ace6599bab823911dcd5704b7424e198daa4e30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330390"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064581"
 ---
 # <a name="update-set"></a>Conjunto de atualização
 Namespace: Microsoft. Graph. termos
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que podem ser editadas para o [conjunto
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |localizadores|coleção [Microsoft. Graph. termos.](../resources/termstore-localizedname.md) undeleble|Nome do conjunto|
-|descrição|String|Descrição do conjunto|
+|description|String|Descrição do conjunto|
 |properties|coleção [Microsoft. Graph. KeyValue](../resources/keyvalue.md)|Propriedades de um conjunto|
 
 
@@ -135,3 +135,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+
