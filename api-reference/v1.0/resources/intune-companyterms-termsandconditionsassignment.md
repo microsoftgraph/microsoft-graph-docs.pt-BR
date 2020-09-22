@@ -3,14 +3,14 @@ title: Tipo de recurso termsAndConditionsAssignment
 description: Uma entidade termsAndConditionsAssignment representa a atribuição de uma determinada política de Termos e Condições (T&C) a um certo grupo. Os usuários do grupo deverão aceitar os termos para que seus dispositivos sejam registrados no Intune.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a6f9db9c787c33f477ca11e13ca7951a54c1778d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 07c08866205338aa0d03f5fef4663935b6896b9d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436800"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088605"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>Tipo de recurso termsAndConditionsAssignment
 
@@ -32,7 +32,7 @@ Uma entidade termsAndConditionsAssignment representa a atribuição de uma deter
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da entidade.|
+|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de atribuição ao qual a política de T&C foi designada.|
 
 ## <a name="relationships"></a>Relações
@@ -55,6 +55,8 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
 
 
 

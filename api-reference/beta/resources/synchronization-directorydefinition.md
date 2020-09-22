@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b18c34a316f9c1f0c91617d7170c5050630af235
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: ccafa9d6763339c32102ace1572c85148f793fc6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219141"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089284"
 ---
 # <a name="directorydefinition-resource-type"></a>tipo de recurso directoryDefinition
 
@@ -34,13 +34,13 @@ As definições de diretório são atualizadas como parte do [esquema de sincron
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|id           |String     |Identificador de diretório. Não anulável.|
+|id           |Cadeia de caracteres     |Identificador de diretório. Não anulável.|
 |los       |coleção metadataEntry    |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
-|nome           |String     |Nome do diretório. Deve ser exclusivo no [esquema de sincronização](synchronization-synchronizationschema.md). Não anulável.|
+|name           |Cadeia de caracteres     |Nome do diretório. Deve ser exclusivo no [esquema de sincronização](synchronization-synchronizationschema.md). Não anulável.|
 |objectos        |coleção [ObjectDefinition](synchronization-objectdefinition.md)    |Conjunto de objetos suportados pelo diretório.|
 |versão|String|Valor somente leitura que indica a versão descoberta. NULL se a descoberta ainda não tiver ocorrido.|
 |discoveryDateTime|DateTimeOffset| Representa a data e a hora da descoberta usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|discoverabilities|string| Valor somente leitura indicando qual tipo de descoberta o aplicativo oferece suporte. Os possíveis valores são: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.| 
+|discoverabilities|cadeia de caracteres| Valor somente leitura indicando qual tipo de descoberta o aplicativo oferece suporte. Os possíveis valores são: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.| 
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -79,3 +79,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

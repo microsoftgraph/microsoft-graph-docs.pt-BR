@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c76de8c2bea124d1c39f386ed5acf365352d2ecd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 58193704d8a119a0da07cfb157e8bf386adb8397
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461941"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089004"
 ---
 # <a name="create-outlook-category"></a>Criar categoria do Outlook
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | MailboxSettings.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | MailboxSettings.ReadWrite   |
 |Aplicativo | MailboxSettings.ReadWrite |
 
@@ -116,3 +116,4 @@ Content-length: 250
   "suppressions": [
   ]
 }-->
+

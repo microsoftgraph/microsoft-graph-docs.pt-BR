@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 68552674871fa1cf225866cfb9c241cb16675409
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 8b8aa20054f1db7a81b4878882f88c8fdf9438ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108246"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088773"
 ---
 # <a name="user-reprocesslicenseassignment"></a>usuário: reprocessLicenseAssignment
 
@@ -44,7 +44,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e um objeto [User](../resources/user.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna o `200 OK` código de resposta e um objeto [User](../resources/user.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como reprocessar atribuições de licença para o usuário.
@@ -130,3 +130,4 @@ Content-type: application/json
   ]
 }
 -->
+

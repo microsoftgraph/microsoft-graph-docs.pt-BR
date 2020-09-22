@@ -3,14 +3,14 @@ title: Obter deviceManagementComplexSettingDefinition
 description: Leia as propriedades e as relações do objeto deviceManagementComplexSettingDefinition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4dc630c906f18624939a0f2ff1848c0fa3d5b514
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e45940b970f1fa4d4695bfdb7750a9c1c4e18035
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43428231"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088318"
 ---
 # <a name="get-devicemanagementcomplexsettingdefinition"></a>Obter deviceManagementComplexSettingDefinition
 
@@ -114,6 +114,9 @@ Content-Length: 1148
   }
 }
 ```
+
+
+
 
 
 

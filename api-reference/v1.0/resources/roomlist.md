@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3aa89075b93f34ad565d210bee3dff2bfd1ffe81
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: d4563ef9fec149c219fe6eae25a4ba3344fbd90d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290564"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088479"
 ---
 # <a name="roomlist-resource-type"></a>tipo de recurso RoomList
 
@@ -22,7 +22,7 @@ Representa um grupo de objetos [Room](room.md) definidos no locatário.
 
 Derivado do [local](place.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                              | Tipo de retorno                  | Descrição |
 |:------------------------------------|:-----------------------------|:--------|
@@ -37,10 +37,10 @@ Derivado do [local](place.md).
 | displayName    | Cadeia de caracteres                                            | O nome associado à lista de salas. |
 | emailAddress   | String                                            | O endereço de email da lista de salas. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Especifica o local da sala de opções no latitude, longitude e (opcionalmente) as coordenadas de altitude. |
-| id             | String                                            | Identificador exclusivo da lista de salas. Somente leitura. |
+| id             | Cadeia de caracteres                                            | Identificador exclusivo da lista de salas. Somente leitura. |
 | phone          | Cadeia de caracteres                                            | O número de telefone da lista de salas. |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação | Tipo                         | Descrição          |
 |:-------------|:-----------------------------|:---------------------|
@@ -79,3 +79,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

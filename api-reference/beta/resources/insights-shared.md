@@ -5,16 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: e6d0304ed73e9452126064ab72e66e6ce3fff0bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb44328551325134b163b33bf19aed5bbef67bf3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42495638"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089648"
 ---
 # <a name="sharedinsight-resource-type"></a>tipo de recurso sharedInsight
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ Uma percepção representando arquivos compartilhados com ou por um usuário esp
 
 | Propriedade              | Tipo                      | Descrição  |
 | -------------         |---------------            | -------------|
-| id                    | String                    | Identificador exclusivo da relação. Somente leitura.        |
+| id                    | Cadeia de caracteres                    | Identificador exclusivo da relação. Somente leitura.        |
 | lastShared            | [sharingDetail](insights-sharingdetail.md)                | Detalhes sobre o item compartilhado. Somente leitura.        |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Propriedades que você pode usar para visualizar o documento em sua experiência. Somente leitura      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Propriedades de referência do documento compartilhado, como a URL e o tipo do documento. Somente leitura       |
@@ -63,3 +63,5 @@ Veja a seguir uma representação JSON do recurso
   "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
 }
 ```
+
+

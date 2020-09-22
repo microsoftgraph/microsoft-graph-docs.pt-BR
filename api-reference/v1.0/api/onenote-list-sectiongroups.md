@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: d79854013bb166a4fa603edff130d626b6408b1c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: efe942f3daff9cfc082e88991a46aa47d46bd69f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511317"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089032"
 ---
 # <a name="list-sectiongroups"></a>Listar sectionGroups
 
@@ -39,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 
 A ordem de classificação padrão é `name asc`.
 
-A consulta padrão expande `parentNotebook` e seleciona suas `id`propriedades `displayName`, e `self` . Os `expand` valores válidos para os grupos `sections`de `sectionGroups`seção `parentNotebook`são, `parentSectionGroup`, e.
+A consulta padrão expande `parentNotebook` e seleciona suas `id` `displayName` Propriedades, e `self` . `expand`Os valores válidos para os grupos de seção são `sections` ,, `sectionGroups` `parentNotebook` e `parentSectionGroup` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -130,3 +130,4 @@ Content-length: 378
   "suppressions": [
   ]
 }-->
+

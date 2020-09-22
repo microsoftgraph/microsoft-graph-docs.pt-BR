@@ -3,14 +3,14 @@ title: Tipo de recurso termsAndConditionsAcceptanceStatus
 description: Uma entidade termsAndConditionsAcceptanceStatus representa o status de aceitação de uma política de Termos e Condições (T&C) por um determinado usuário. Os usuários devem aceitar a versão mais recente dos termos para manterem o acesso ao Portal da Empresa.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2027f357706761dec7c5ae527586960d967aa7d4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5a11a2062312f313fe915017471167cec7929644
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436815"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088612"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Tipo de recurso termsAndConditionsAcceptanceStatus
 
@@ -32,13 +32,13 @@ Uma entidade termsAndConditionsAcceptanceStatus representa o status de aceitaç�
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da entidade.|
+|id|Cadeia de caracteres|Identificador exclusivo da entidade.|
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário cuja aceitação a entidade representa.|
 |acceptedVersion|Int32|Número da versão mais recente dos T&C aceitos pelo usuário.|
 |acceptedDateTime|DateTimeOffset|A data e a hora em que os termos foram aceitos pela última vez pelo usuário.|
-|userPrincipalName|String|O userPrincipalName do usuário que aceitou o termo.|
+|userPrincipalName|Cadeia de caracteres|O userPrincipalName do usuário que aceitou o termo.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Link de navegação para os termos e condições atribuídos.|
@@ -61,6 +61,8 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
+
+
 
 
 

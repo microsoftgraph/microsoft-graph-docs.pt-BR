@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 1a421f305b40b36411a72ff4a6ed4d7f270c5bf4
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: c83af322fb8460b4c0a77550213f3ea801f77333
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178203"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089347"
 ---
 # <a name="telecom-expense-management-in-microsoft-intune"></a>Gerenciamento de despesas com telecomunicações no Microsoft Intune
 
@@ -24,3 +24,6 @@ Namespace: microsoft.graph
 Os seguintes recursos do Graph estão disponíveis para gerenciar despesas com telecomunicações no Intune:
 
 - [Parceiro de gerenciamento de despesas com telecomunicações](intune-tem-telecomexpensemanagementpartner.md)
+
+
+

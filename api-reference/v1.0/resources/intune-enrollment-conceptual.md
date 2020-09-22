@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 749a3396c534222af46f2bf903616def1dd900e4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 689170f363336745c1dfb4185a8589fb72309758
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439402"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088591"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Registrar dispositivos de propriedade corporativa por meio do Intune
 
@@ -27,6 +27,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar dispositivos c
 - [Estado de identidade de dispositivo importado do windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
 - [Carregar identidade de dispositivo importado do windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
 - [Status de carregamento da identidade de dispositivo importado do windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Tipo de recurso userInstallStateSummary
 description: Contém as propriedades do resumo de estado de instalação de um usuário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5efdd2b0b5c2188ed6a6b2ce4417e2fcce14852b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8682b272e98bb1b49731362b17c9b24bf920509e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468642"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088633"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>Tipo de recurso userInstallStateSummary
 
@@ -32,13 +32,13 @@ Contém as propriedades do resumo de estado de instalação de um usuário.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |userName|Cadeia de caracteres|Nome de usuário.|
 |installedDeviceCount|Int32|Contagem de dispositivos instalados.|
 |failedDeviceCount|Int32|Falha na contagem de dispositivos.|
 |notInstalledDeviceCount|Int32|Sem contagem de dispositivos instalados.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |deviceStates|Conjunto [deviceInstallState](../resources/intune-books-deviceinstallstate.md)|O estado de instalação do livro eletrônico.|
@@ -61,6 +61,8 @@ Veja a seguir uma representação JSON do recurso.
   "notInstalledDeviceCount": 1024
 }
 ```
+
+
 
 
 

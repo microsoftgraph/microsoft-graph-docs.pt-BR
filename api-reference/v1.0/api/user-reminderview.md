@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5def572e5d3a76b6d919cf5b5c13edb72bb6d12d
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 57393b8573ca47f32af5ac756e0ad1d262e7d620
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108253"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088782"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
@@ -34,7 +34,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ## <a name="function-parameters"></a>Parâmetros de função
 Forneça os seguintes parâmetros de função com valores na URL solicitada.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro	    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |startDateTime|String|A data e hora de início do evento para o qual o lembrete está definido. O valor é representado no formato ISO 8601, por exemplo, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|A data e hora de término do evento para o qual o lembrete está definido. O valor é representado no formato ISO 8601, por exemplo, "2015-11-08T20:00:00.0000000".|
@@ -137,3 +137,4 @@ Content-length: 673
   "suppressions": [
   ]
 }-->
+

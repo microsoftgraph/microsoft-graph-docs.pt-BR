@@ -3,14 +3,14 @@ title: tipo de recurso managedDeviceEncryptionState
 description: Relatório de criptografia por dispositivo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 532f252480ca094a6fcbd0b530f3e30f452cf816
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: e2144f17300fc9f1a81b50ab9d9739bcbfa08b86
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790144"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089480"
 ---
 # <a name="manageddeviceencryptionstate-resource-type"></a>tipo de recurso managedDeviceEncryptionState
 
@@ -34,11 +34,11 @@ Relatório de criptografia por dispositivo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|userPrincipalName|String|Nome de usuário|
-|deviceType|[deviceTypes](../resources/intune-shared-devicetype.md)|Plataforma do dispositivo. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` , `macMDM` ,, `holoLens` `surfaceHub` , `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` ,,,,,.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|userPrincipalName|Cadeia de caracteres|Nome de usuário|
+|deviceType|[deviceTypes](../resources/intune-shared-devicetypes.md)|Plataforma do dispositivo. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` , `macMDM` ,, `holoLens` `surfaceHub` , `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` ,,,,,.|
 |osVersion|String|Versão do sistema operacional do dispositivo|
-|tpmSpecificationVersion|String|Versão do TPM do dispositivo|
+|tpmSpecificationVersion|Cadeia de caracteres|Versão do TPM do dispositivo|
 |deviceName|String|Nome do dispositivo|
 |encryptionReadinessState|[encryptionReadinessState](../resources/intune-deviceconfig-encryptionreadinessstate.md)|Estado de preparação de criptografia. Os valores possíveis são: `notReady` e `ready`.|
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|Estado de criptografia do dispositivo. Os valores possíveis são: `notEncrypted` e `encrypted`.|
@@ -81,6 +81,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

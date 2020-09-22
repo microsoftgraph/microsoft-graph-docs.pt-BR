@@ -3,14 +3,14 @@ title: Tipo de recurso managedEBook
 description: Uma classe abstrata que contém as propriedades base do livro eletrônico gerenciado.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a73da0f3f9fc6eb86f158ece8f9a8f8eecb663d9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9ee5bb486346e315ae00b0e54f44a9fd9b7613c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468664"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088668"
 ---
 # <a name="managedebook-resource-type"></a>Tipo de recurso managedEBook
 
@@ -30,9 +30,9 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |displayName|Cadeia de caracteres|Nome do livro eletrônico.|
-|description|String|Descrição.|
+|description|Cadeia de caracteres|Descrição.|
 |publisher|Cadeia de caracteres|Publicador.|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro.|
@@ -41,7 +41,7 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 |informationUrl|String|A URL de informações adicionais.|
 |privacyInformationUrl|String|A URL da declaração de privacidade.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |assignments|Coleção [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|A lista de atribuições para este livro eletrônico.|
@@ -76,6 +76,8 @@ Veja a seguir uma representação JSON do recurso.
   "privacyInformationUrl": "String"
 }
 ```
+
+
 
 
 

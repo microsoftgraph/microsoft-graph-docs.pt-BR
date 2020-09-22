@@ -5,12 +5,12 @@ localization_priority: Normal
 author: simonhult
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 3be5fa87fd6c2623126437fccb1ea43b7bc275f2
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 5d05a9fdf3a901fcddd55207bec373a3a0736afa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427519"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089326"
 ---
 # <a name="iteminsightssettings-resource-type"></a>tipo de recurso itemInsightsSettings
 
@@ -29,7 +29,7 @@ Representa as configurações de [privacidade para os](iteminsights.md)itens que
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Booliano| `true`Se o item de organização insights estiver habilitado; `false`se o item de organização insights estiver desabilitado para todos os usuários sem exceções. O padrão é `true`. Opcional.|
+|isEnabledInOrganization|Boolean| `true` Se o item de organização insights estiver habilitado; `false` se o item de organização insights estiver desabilitado para todos os usuários sem exceções. O padrão é `true`. Opcional.|
 |disabledForGroup|Cadeia de caracteres| A ID de um grupo do Azure AD, do qual as insights do item dos membros estão desabilitadas. O padrão é `empty`. Opcional.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -47,3 +47,5 @@ Veja a seguir uma representação JSON do recurso
   "disabledForGroup": "String"
 }
 ```
+
+

@@ -3,14 +3,14 @@ title: tipo de enumeração microsoftEdgeChannel
 description: A enumeração para especificar os canais para os aplicativos do Microsoft Edge.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f24a8eb7dcdb310ec9038655dd08bec3f847c023
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3f0c8e19527f310ac175260a048a8de0153c49f3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458640"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089599"
 ---
 # <a name="microsoftedgechannel-enum-type"></a>tipo de enumeração microsoftEdgeChannel
 
@@ -26,8 +26,11 @@ A enumeração para especificar os canais para os aplicativos do Microsoft Edge.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |disp|,0|Ainda não documentado|
-|beta|1|Ainda não documentado|
-|estável|duas|Ainda não documentado|
+|beta|1 |Ainda não documentado|
+|estável|2 |Ainda não documentado|
+
+
+
 
 
 

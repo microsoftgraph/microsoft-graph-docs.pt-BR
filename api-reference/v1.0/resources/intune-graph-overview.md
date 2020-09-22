@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Priority
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 6b84f59cd18b6e6a5d7bd1ca776c71812fa772b0
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: a6c9235d511c3c93db7f92abe0b0a7545393852b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353508"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088549"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Trabalhando com o Intune no Microsoft Graph  
 
@@ -53,6 +53,8 @@ Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats
 
 - Saiba [como usar o Azure AD](https://docs.microsoft.com/intune/intune-graph-apis) para acessar a API do Microsoft Graph para Intune.  
 - Explore os [exemplos do PowerShell Intune](https://github.com/microsoftgraph/powershell-intune-samples), que mostram como usar a API do Microsoft Graph para Intune no contexto dos exemplos de trabalho.
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de enumeração defenderPotentiallyUnwantedAppAction
 description: Ação do defender a ser executada em aplicativo potencialmente indesejado (PUA).
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 11517fc4089913541fd40d48be188c81fb57bf4f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ff44e62d67a5acde9a87e1238b72caed29677452
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413123"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089522"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>tipo de enumeração defenderPotentiallyUnwantedAppAction
 
@@ -26,8 +26,11 @@ Ação do defender a ser executada em aplicativo potencialmente indesejado (PUA)
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|A proteção do PUA está desativada. O defender não protegerá contra aplicativos potencialmente indesejados.|
-|Larga|1|A proteção do PUA está ativada. Os itens detectados são bloqueados. Eles serão mostrados em histórico junto com outras ameaças.|
-|Faça|duas|Modo de auditoria. O defender detectará aplicativos potencialmente indesejados, mas não realizará ações. Você pode revisar as informações sobre os aplicativos que o defender teria feito com a pesquisa de eventos criados pelo defender no Visualizador de eventos.|
+|Larga|1 |A proteção do PUA está ativada. Os itens detectados são bloqueados. Eles serão mostrados em histórico junto com outras ameaças.|
+|Faça|2 |Modo de auditoria. O defender detectará aplicativos potencialmente indesejados, mas não realizará ações. Você pode revisar as informações sobre os aplicativos que o defender teria feito com a pesquisa de eventos criados pelo defender no Visualizador de eventos.|
+
+
+
 
 
 

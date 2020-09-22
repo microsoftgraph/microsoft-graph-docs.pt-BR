@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: e5f0e525f95f988e7cb90c454285d2ecdb6b1072
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 36b0d8957beae9f8748c0e388a0aca2134731f73
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434995"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089340"
 ---
 # <a name="iteminsights-resource-type"></a>tipo de recurso itemInsights
 
@@ -62,3 +62,5 @@ Veja a seguir uma representação JSON do recurso
   "shared": [ { "@odata.type": "microsoft.graph.shared" } ]
 }
 ```
+
+

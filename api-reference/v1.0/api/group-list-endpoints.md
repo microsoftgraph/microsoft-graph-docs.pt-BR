@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 871e040650f7673630ea8137c9b06fd6244da58b
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 2df229e60ccf4a97c3ea06702a7df72ef2dfb6b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335345"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089186"
 ---
 # <a name="list-endpoints"></a>Listar pontos de extremidade
 
@@ -113,3 +113,4 @@ Content-length: 261
   ]
 }
 -->
+

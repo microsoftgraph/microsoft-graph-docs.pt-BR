@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 46674ad9be3e86fd36f5a5beb52829959bbd340b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a3c1bee1c8617fbe93ad28f821b1042901065400
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445543"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088472"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>tipo de recurso physicalOfficeAddress
 
@@ -22,12 +22,12 @@ Representa o endereço comercial de um recurso, como um contato organizacional.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|city|String|A cidade.|
+|city|Cadeia de caracteres|A cidade.|
 |countryOrRegion|String|O país ou a região. É um valor de cadeia de caracteres de formato livre, por exemplo, "Brasil".|
 |officeLocation  | String | Local do Office, como o prédio e o número do escritório de um contato organizacional.  |
-|postalCode|String|O código de endereçamento postal, ou CEP.|
+|postalCode|Cadeia de caracteres|O código de endereçamento postal, ou CEP.|
 |state|Cadeia de caracteres|O estado.|
-|street|String|O tipo de logradouro (rua, alameda, avenida, etc.).|
+|street|Cadeia de caracteres|O tipo de logradouro (rua, alameda, avenida, etc.).|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -62,3 +62,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

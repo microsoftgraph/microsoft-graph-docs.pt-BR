@@ -3,14 +3,14 @@ title: Tipo de recurso managedEBookAssignment
 description: Contém propriedades usadas para atribuir um livro eletrônico a um grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53787a5ae68d6e1646c7146522f3017e4e5be610
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3a201472e394a08cf351e7eedc58489f305dda3a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468657"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088640"
 ---
 # <a name="managedebookassignment-resource-type"></a>Tipo de recurso managedEBookAssignment
 
@@ -32,7 +32,7 @@ Contém propriedades usadas para atribuir um livro eletrônico a um grupo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição do livro eletrônico.|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|A tentativa de instalação do livro eletrônico. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
@@ -57,6 +57,8 @@ Veja a seguir uma representação JSON do recurso.
   "installIntent": "String"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 630753792292be2c82b5dc1b1bc8a794f7265eaa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 705984842ea68cb25947bc30a64993037483a236
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468635"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088647"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Termos e condições da empresa no Microsoft Intune
 
@@ -27,6 +27,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar termos e condi
 - [Termos e condições](intune-companyterms-termsandconditions.md)
 - [Status de aceitação dos termos e das condições](intune-companyterms-termsandconditionsacceptancestatus.md)
 - [Atribuição de termos e condições](intune-companyterms-termsandconditionsassignment.md)
+
+
 
 
 

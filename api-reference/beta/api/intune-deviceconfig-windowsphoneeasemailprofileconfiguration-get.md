@@ -3,14 +3,14 @@ title: Obter windowsPhoneEASEmailProfileConfiguration
 description: Leia as propriedades e as relações do objeto windowsPhoneEASEmailProfileConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa53e007fb9c5590b1b4a1d7c7cbd387df1547e7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ce10151e5f1691fa482ed22699135c08f96a0f35
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43428898"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088332"
 ---
 # <a name="get-windowsphoneeasemailprofileconfiguration"></a>Obter windowsPhoneEASEmailProfileConfiguration
 
@@ -123,6 +123,9 @@ Content-Length: 1850
   }
 }
 ```
+
+
+
 
 
 

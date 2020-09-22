@@ -3,14 +3,14 @@ title: tipo de enumeração defenderAttackSurfaceType
 description: Valores possíveis de regras de redução da superfície de ataque do defender
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b410cfd7d51c072f2145c014aabc02380eb4ed1f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 59959c34a871a3df80f6dc045fabc9e7973193f9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089557"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>tipo de enumeração defenderAttackSurfaceType
 
@@ -26,8 +26,11 @@ Valores possíveis de regras de redução da superfície de ataque do defender
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Valor padrão do dispositivo, sem intenção.|
-|Larga|1|Funcionalidade de bloqueio.|
-|auditmode|duas|Não altera a funcionalidade, mas gera logs.|
+|Larga|1 |Funcionalidade de bloqueio.|
+|auditmode|2 |Não altera a funcionalidade, mas gera logs.|
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: cb0fac47407f008ee3e6d17fe628fe1fde70e037
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b2b91e3983876f5c7ffd24adfb8b6539afb0b421
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509910"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088906"
 ---
 # <a name="list-pages"></a>Listar páginas
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All    |
-|Delegado (conta pessoal da Microsoft) | Notes. Read, Notes. ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All    |
+|Delegada (conta pessoal da Microsoft) | Notes. Read, Notes. ReadWrite    |
 |Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -37,9 +37,9 @@ GET /sites/{id}/onenote/sections/{id}/pages
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
-A consulta padrão para páginas retorna as 20 principais páginas ordenadas `lastModifiedTime desc`por. Se a consulta padrão retornar mais de 20 páginas, a resposta conterá `@odata.nextLink` um que você pode usar para percorrer o conjunto de resultados. O número máximo de páginas retornadas para `top` uma solicitação é 100.
+A consulta padrão para páginas retorna as 20 principais páginas ordenadas por `lastModifiedTime desc` . Se a consulta padrão retornar mais de 20 páginas, a resposta conterá um `@odata.nextLink` que você pode usar para percorrer o conjunto de resultados. O número máximo de páginas retornadas para uma `top` solicitação é 100.
 
-A resposta padrão expande `parentSection` e seleciona as propriedades `id`, `name`e e. `self` Os `expand` valores válidos para páginas `parentNotebook` são `parentSection`e.
+A resposta padrão expande `parentSection` e seleciona as `id` `name` Propriedades, e e `self` . `expand`Os valores válidos para páginas são `parentNotebook` e `parentSection` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Page](../resources/page.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Page](../resources/page.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -97,3 +97,4 @@ Content-length: 393
   "section": "documentation",
   "tocPath": ""
 }-->
+

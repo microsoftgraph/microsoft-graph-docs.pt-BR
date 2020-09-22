@@ -3,14 +3,14 @@ title: Excluir windowsPrivacyDataAccessControlItem
 description: Exclui windowsPrivacyDataAccessControlItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9dea0fce1173141b27f2721cacd618455e58781d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e88b830b28205b322f570a3c175c5a916ad5bced
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43428798"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088325"
 ---
 # <a name="delete-windowsprivacydataaccesscontrolitem"></a>Excluir windowsPrivacyDataAccessControlItem
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

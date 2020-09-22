@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 4b8a5c72117e20a73fb3c3b6b8a2af308219b69d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7e6732a53f841902422348f90dada22174813b39
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809604"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089287"
 ---
 # <a name="itempatent-resource-type"></a>tipo de recurso de patente
  
@@ -32,19 +32,19 @@ Herda de [Myfacet](../resources/itemfacet.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de caracteres|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado de [MyFace](../resources/itemfacet.md).|
 |createdDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
-|description|String|Descpription da patente ou do arquivamento. |
-|displayName|String|Título da patente ou do arquivamento. |
-|id|String|Identificador usado para o endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
+|description|Cadeia de caracteres|Descpription da patente ou do arquivamento. |
+|displayName|Cadeia de caracteres|Título da patente ou do arquivamento. |
+|id|Cadeia de caracteres|Identificador usado para o endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
 |fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|ispending        |Booliano     |Indica que a patente está pendente.        |
+|ispending        |Boolean     |Indica que a patente está pendente.        |
 |issuedDate       |Data        |A data em que a patente foi concedida.   |
-|issuingAuthority |String      |Autoridade que concedeu a patente.     |
+|issuingAuthority |Cadeia de caracteres      |Autoridade que concedeu a patente.     |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado de [MyFace](../resources/itemfacet.md).|
 |lastModifiedDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
-|number           |String      |O número de patente.                      |
+|number           |Cadeia de caracteres      |O número de patente.                      |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
 |webUrl           |String      |URL que faz referência à patente ou ao arquivamento. |
 
@@ -90,3 +90,5 @@ Veja a seguir uma representação JSON do recurso.
   "webUrl": "String"
 }
 ```
+
+

@@ -6,16 +6,16 @@ title: BaseItem
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 5d72147602872478578b39617c77b227a27124b4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6fbaf549cb9555c787cdd9077421ca1e3641aa04
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508028"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089726"
 ---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -86,3 +86,5 @@ O tipo `baseItem` não deve ser usado diretamente.
   "suppressions": []
 }
 -->
+
+

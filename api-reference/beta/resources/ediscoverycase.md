@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: 930d04449f24d05d8c9225869506bfc1ed2720aa
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 359a74cbf48e0db2b4c3e480b73dfed928232288
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509963"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089718"
 ---
 # <a name="ediscoverycase-resource-type"></a>tipo de recurso ediscoveryCase
 
@@ -22,7 +22,7 @@ as ocorrências de descoberta eletrônica são contêineres que contêm respons�
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar](../api/ediscoverycase-list.md) | coleção [ediscoveryCase](ediscoverycase.md) | Obter uma lista de ocorrências de descoberta eletrônica.|
+| [List](../api/ediscoverycase-list.md) | coleção [ediscoveryCase](ediscoverycase.md) | Obter uma lista de ocorrências de descoberta eletrônica.|
 | [Get](../api/ediscoverycase-get.md) | [ediscoveryCase](ediscoverycase.md) | Leia as propriedades do caso de descoberta eletrônica. |
 | [Create](../api/ediscoverycase-post.md) | [ediscoveryCase](ediscoverycase.md) | Criar um novo **ediscoveryCase** postando na coleção cases. |
 | [Update](../api/ediscoverycase-update.md) | [ediscoveryCase](ediscoverycase.md) | Atualize uma ocorrência de descoberta eletrônica. |
@@ -39,7 +39,7 @@ as ocorrências de descoberta eletrônica são contêineres que contêm respons�
 |description|Cadeia de caracteres|A descrição do caso.|
 |displayName|Cadeia de caracteres|O nome do caso.|
 |externalId|Cadeia de caracteres|O número do caso externo para referência de cliente.|
-|id|String| A ID da ocorrência de descoberta eletrônica. Somente leitura. |
+|id|Cadeia de caracteres| A ID da ocorrência de descoberta eletrônica. Somente leitura. |
 |lastModifiedBy|[identitySet](https://docs.microsoft.com/graph/api/resources/identityset)|O último usuário que modificou a entidade.|
 |lastModifiedDateTime|DateTimeOffset| A última data e hora em que a ocorrência foi modificada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |status|String| O status do caso. Os valores possíveis são:,,, `unknown` `active` `pendingDelete` `closing` `closed` , e `closedWithError` . Para obter detalhes, consulte a tabela a seguir.|
@@ -99,3 +99,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

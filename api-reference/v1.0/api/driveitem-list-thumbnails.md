@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Recupere uma coleção de recursos ThumbnailSet para um recurso DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 0431e228fd0f6c11eb2f4fa41208531330d06ca9
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 12a461764e48e0b17f2842bf6e725ed26edfa7f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863387"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089228"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Listar miniaturas para um DriveItem
 
@@ -59,7 +59,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 Este método oferece suporte ao [Parâmetro de consulta OData](/graph/query-parameters) `$select` para personalizar a resposta.
 
 Além disso, esse método dá suporte à recuperação da miniatura com o valor de EXIF da orientação original e sem a rotação aplicada acrescentando o `originalOrientation=true` parâmetro de consulta.
-No momento, isso só tem suporte no OneDrive Personal.
+No momento, só há suporte para isso no OneDrive pessoal.
 
 ## <a name="response"></a>Resposta
 
@@ -402,3 +402,4 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   ],
   "tocPath": "Items/Thumbnails"
 } -->
+
