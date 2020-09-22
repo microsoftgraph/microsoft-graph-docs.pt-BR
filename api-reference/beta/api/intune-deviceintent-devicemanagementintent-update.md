@@ -3,14 +3,14 @@ title: Atualizar deviceManagementIntent
 description: Atualiza as propriedades de um objeto deviceManagementIntent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 30057c5ca95b305aa749b063b8601dc0ae120382
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5dc51dad56668b6e7d4073b79685ad5df69d2365
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43327816"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090589"
 ---
 # <a name="update-devicemanagementintent"></a>Atualizar deviceManagementIntent
 
@@ -53,18 +53,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID de intenção|
+|id|Cadeia de caracteres|A ID de intenção|
 |displayName|Cadeia de caracteres|O nome de exibição fornecido pelo usuário|
-|description|String|Descrição fornecida pelo usuário|
+|description|Cadeia de caracteres|Descrição fornecida pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
-|templateId|String|A ID do modelo de que esta intenção foi criada (se houver)|
+|templateId|Cadeia de caracteres|A ID do modelo de que esta intenção foi criada (se houver)|
 |roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -107,6 +107,9 @@ Content-Length: 379
   ]
 }
 ```
+
+
+
 
 
 

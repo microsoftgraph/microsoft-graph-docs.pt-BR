@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: ef852fa92217b32812340fd17b14465a5f4cbba3
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 1630cf2c76ca98f8637af9c80900daf97bcc5660
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154903"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090785"
 ---
 # <a name="timeoffreason-resource-type"></a>tipo de recurso timeOffReason
 
@@ -75,3 +75,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

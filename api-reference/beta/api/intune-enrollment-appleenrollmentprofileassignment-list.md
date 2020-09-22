@@ -3,14 +3,14 @@ title: Listar appleEnrollmentProfileAssignments
 description: Listar Propriedades e relações dos objetos appleEnrollmentProfileAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b4c649b78c4fa798a9051795105f1699877a483
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: dd419675b53864b07df73d802d71ea5f4209e351
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792068"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090519"
 ---
 # <a name="list-appleenrollmentprofileassignments"></a>Listar appleEnrollmentProfileAssignments
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -81,6 +81,9 @@ Content-Length: 437
   ]
 }
 ```
+
+
+
 
 
 

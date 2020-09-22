@@ -7,12 +7,12 @@ localization_priority: Normal
 description: O recurso UploadSession fornece informações sobre como carregar arquivos grandes no OneDrive, no OneDrive for Business ou em bibliotecas de documentos do SharePoint, ou como anexos de arquivo para objetos de eventos e mensagens do Outlook.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b2540c1abdd5e40ea960dc3672ab7cc788e08ddd
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: ff7ed4278da4d04d1af5158ce8fc01011bcc8598
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590010"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090610"
 ---
 # <a name="uploadsession-resource-type"></a>tipo de recurso uploadSession
 
@@ -49,7 +49,7 @@ Veja a seguir uma representação JSON do recurso
 
 ## <a name="see-also"></a>Confira também
 
-- [Anexar arquivos grandes a mensagens e eventos do Outlook como anexos](/graph/outlook-large-attachments)
+- [Anexar arquivos grandes a mensagens e eventos do Outlook como anexos ](/graph/outlook-large-attachments)
 - [Carregar arquivos grandes com uma sessão de upload](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -60,3 +60,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": "Resources/UploadSession"
 } -->
+

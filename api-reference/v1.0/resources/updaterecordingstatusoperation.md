@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: de1cf2578f699fde25d8863d12fcf4e262d78000
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: 78c5e91fa966a91bc65291fa813807cdf44ee8ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090617"
 ---
 # <a name="updaterecordingstatusoperation-resource-type"></a>tipo de recurso updateRecordingStatusOperation
 
@@ -22,8 +22,8 @@ Descreve o formato de resposta de uma ação de status de gravação de atualiza
 
 | Propriedade            | Tipo                        | Descrição|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | String                      | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                              |
-| id                  | Cadeia de caracteres                      | Somente leitura.                                                                         |
+| clientContext       | Cadeia de caracteres                      | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                              |
+| id                  | String                      | Somente leitura.                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura.                                                 |
 | status              | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.               |
 
@@ -62,3 +62,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

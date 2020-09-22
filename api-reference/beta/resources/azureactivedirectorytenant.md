@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 881454f9658ae266705804518c3b5d8a876861eb
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: c2fd1b8e1b2fcc2c2fef03db93a54d5d0b69b951
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509971"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089767"
 ---
 # <a name="azureactivedirectorytenant-resource-type"></a>tipo de recurso azureActiveDirectoryTenant
 
@@ -60,3 +60,5 @@ Veja a seguir uma representação JSON do tipo.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

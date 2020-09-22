@@ -7,12 +7,12 @@ localization_priority: Normal
 description: O recurso ThumbnailSet é uma coleção com chave dos recursos thumbnail.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ffcd654534dc1ff38f4f708b135d29ab101e0878
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5aa7ca5646ea0555c0f6547e7171312537343345
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533466"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090855"
 ---
 # <a name="thumbnailset-resource-type"></a>Tipo de recurso ThumbnailSet
 
@@ -52,7 +52,7 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade | Tipo                      | Descrição                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
-| id       | String                    | A id de dentro do item. Somente leitura.                                                |
+| id       | Cadeia de caracteres                    | A id de dentro do item. Somente leitura.                                                |
 | large    | [Thumbnail](thumbnail.md) | Uma miniatura em escala 1920 x 1920.                                                     |
 | medium   | [Thumbnail](thumbnail.md) | Uma miniatura em escala 176 x 176.                                                       |
 | small    | [Thumbnail](thumbnail.md) | Uma miniatura cortada em 48 x 48.                                                        |
@@ -66,3 +66,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": "Resources/ThumbnailSet"
 } -->
+

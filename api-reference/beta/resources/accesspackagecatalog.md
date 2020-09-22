@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5e5066337ef88db6a036839ebcbfd454e7710f3a
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: 3d8c93defc8d76fbee1efbc162677f21b4e7f827
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757199"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089851"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>tipo de recurso accessPackageCatalog
 
@@ -41,10 +41,10 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), um catál
 |CatalogType|Cadeia de caracteres|Um `UserManaged` ou `ServiceDefault` . |
 |createdBy|Cadeia de caracteres|UPN do usuário que criou este recurso. Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|description|String|A descrição do catálogo de pacotes do Access.|
+|description|Cadeia de caracteres|A descrição do catálogo de pacotes do Access.|
 |displayName|Cadeia de caracteres|O nome de exibição do catálogo de pacotes do Access.|
 |id|String| Somente leitura.|
-|isExternallyVisible|Booliano|Se os pacotes de acesso neste catálogo podem ser solicitados por usuários fora do locatário.|
+|isExternallyVisible|Boolean|Se os pacotes de acesso neste catálogo podem ser solicitados por usuários fora do locatário.|
 |modifiedBy|Cadeia de caracteres|O UPN do usuário que modificou este recurso pela última vez. Somente leitura.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 
@@ -94,3 +94,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1ad82583c8cb574138c901c733211728bfc225bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d040c974774280536beada9264cbdaa827530ab1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451333"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089921"
 ---
 # <a name="workbookrange-visibleview"></a>workbookRange: visibleView
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -93,3 +93,5 @@ Content-length: 194
   "index": 99
 }
 ```
+
+

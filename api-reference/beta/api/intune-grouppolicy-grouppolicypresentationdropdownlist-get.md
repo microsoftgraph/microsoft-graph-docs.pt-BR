@@ -3,14 +3,14 @@ title: Obter groupPolicyPresentationDropdownList
 description: Leia as propriedades e as relações do objeto groupPolicyPresentationDropdownList.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a55556f547ae03d7039a56826c5371201ccda8be
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e4038d6b5cf9aaab0209df57a8d7fd277944a2ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375472"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090257"
 ---
 # <a name="get-grouppolicypresentationdropdownlist"></a>Obter groupPolicyPresentationDropdownList
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -93,6 +93,9 @@ Content-Length: 655
   }
 }
 ```
+
+
+
 
 
 

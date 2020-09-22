@@ -6,16 +6,16 @@ title: Criar uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 880678b5c581af9c6d5e65282c1be547d1efdce3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5bdaefc4f3b45fc6dcfea8b5b7abedf78e44c610
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457164"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089984"
 ---
 # <a name="create-a-new-list"></a>Criar uma nova lista
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -138,3 +138,5 @@ As propriedades padrão serão retornadas da chamada real.
   ]
 }
 -->
+
+

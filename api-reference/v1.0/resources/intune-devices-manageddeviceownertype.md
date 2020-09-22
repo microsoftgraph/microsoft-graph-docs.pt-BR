@@ -3,14 +3,14 @@ title: tipo de enumeração managedDeviceOwnerType
 description: Tipo de proprietário de dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0165a1f3dcf8d8feda66badbd3eb40dbb4110acb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e9b109b72737bcfa9096cf0cdefd1f3744158e3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091093"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>tipo de enumeração managedDeviceOwnerType
 
@@ -24,8 +24,10 @@ Tipo de proprietário de dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Unknown.|
-|empresarial|1|Pertencentes à empresa.|
-|pessoal|duas|Pertencente à pessoa.|
+|empresarial|1 |Pertencentes à empresa.|
+|pessoal|2 |Pertencente à pessoa.|
+
+
 
 
 

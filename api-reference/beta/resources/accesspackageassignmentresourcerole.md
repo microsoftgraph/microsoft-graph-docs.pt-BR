@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 403b97dc335e57dfd2d4f2fe2aa75c4f6fd07682
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 8bf839d68db3f54df5a27601a4a05463e013fbef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319516"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089858"
 ---
 # <a name="accesspackageassignmentresourcerole-resource-type"></a>tipo de recurso accessPackageAssignmentResourceRole
 
@@ -78,3 +78,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

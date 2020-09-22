@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jkdouglas
-ms.openlocfilehash: e540f5b6ff21efd4ba904ddaf4dcb4868df75eff
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 68df559afb6937befeab27c129d951a4c1e7ad20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319658"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089768"
 ---
 # <a name="b2cuserflows-resource-type"></a>Tipo de recurso b2cUserFlows
 
@@ -73,3 +73,5 @@ Veja a seguir uma representação JSON do recurso.
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}]
 }
 ```
+
+

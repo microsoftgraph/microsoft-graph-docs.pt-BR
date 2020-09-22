@@ -3,14 +3,14 @@ title: Obter depEnrollmentBaseProfile
 description: Leia as propriedades e as relações do objeto depEnrollmentBaseProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d9e6faafa2f80ad151ad75335f319296a49beee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 46ba8596bba44eb6796e88bf2c037202b1a1aa98
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43319868"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090363"
 ---
 # <a name="get-depenrollmentbaseprofile"></a>Obter depEnrollmentBaseProfile
 
@@ -104,6 +104,9 @@ Content-Length: 1209
   }
 }
 ```
+
+
+
 
 
 

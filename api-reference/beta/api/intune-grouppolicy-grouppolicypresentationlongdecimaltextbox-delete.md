@@ -3,14 +3,14 @@ title: Excluir groupPolicyPresentationLongDecimalTextBox
 description: Exclui groupPolicyPresentationLongDecimalTextBox.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80a1bc7f5135a5ae6ca8995055e9308fad5a5e03
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0930193abba0cea96dd082db51cf59f4a12d8a7b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457276"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090131"
 ---
 # <a name="delete-grouppolicypresentationlongdecimaltextbox"></a>Excluir groupPolicyPresentationLongDecimalTextBox
 
@@ -66,6 +66,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

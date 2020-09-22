@@ -3,14 +3,14 @@ title: Get managedAppRegistration
 description: Ler propriedades e relações do objeto managedAppRegistration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 649fa7763106905567787fa9b557d94826e0af0c
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 5fd8508fc632af9fd78a5b33c06b9b2ca4efa144
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177566"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090047"
 ---
 # <a name="get-managedappregistration"></a>Get managedAppRegistration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -98,6 +98,9 @@ Content-Length: 1003
   }
 }
 ```
+
+
+
 
 
 

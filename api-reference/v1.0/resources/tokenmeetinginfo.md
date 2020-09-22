@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 786b3d1429d2f081207fa2d81b5f178d3cb5e08d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5ac5e8303b0326e4c540757b7564edc55945cfc8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533445"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090666"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>tipo de recurso tokenMeetingInfo
 
@@ -55,3 +55,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

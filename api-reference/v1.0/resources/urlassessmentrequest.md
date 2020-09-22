@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ec0326889cb55ce878d543dd88304925b6fdfd39
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 6723e2c4ce080555bf9932bb5c75012110d7b754
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229553"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090603"
 ---
 # <a name="urlassessmentrequest-resource-type"></a>tipo de recurso urlAssessmentRequest
 
@@ -33,7 +33,7 @@ Usado para criar e recuperar uma avaliação de ameaça de URL, derivada de [thr
 |createdBy|[identitySet](identityset.md)|O criador da solicitação de avaliação de ameaças.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|A avaliação esperada do ubmitter. Os valores possíveis são: `block` e `unblock`.|
-|id|String|A ID da solicitação de avaliação da ameaça é um identificador global exclusivo (GUID).|
+|id|Cadeia de caracteres|A ID da solicitação de avaliação da ameaça é um identificador global exclusivo (GUID).|
 |objectrequest|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|A origem da solicitação de avaliação da ameaça. Os valores possíveis são: `user` e `administrator`.|
 |status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|O status do processo de avaliação. Os valores possíveis são: `pending`, `completed`.|
 
@@ -41,7 +41,7 @@ Usado para criar e recuperar uma avaliação de ameaça de URL, derivada de [thr
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|resultados|coleção [threatAssessmentResult](threatassessmentresult.md)|Uma coleção de resultados de avaliação de ameaças. Somente leitura. Por padrão, um `GET /threatAssessmentRequests/{id}` não retorna essa propriedade, a menos que `$expand` você a aplique.|
+|resultados|coleção [threatAssessmentResult](threatassessmentresult.md)|Uma coleção de resultados de avaliação de ameaças. Somente leitura. Por padrão, um `GET /threatAssessmentRequests/{id}` não retorna essa propriedade, a menos que você a aplique `$expand` .|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -80,3 +80,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

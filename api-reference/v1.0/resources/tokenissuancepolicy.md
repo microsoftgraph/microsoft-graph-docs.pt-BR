@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ac50b952a075ec4ce4b9257fa28c0e5a9aba6096
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: afba8ad5c1022156e68dbf27ad0e4199b573117b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916890"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090715"
 ---
 # <a name="tokenissuancepolicy-resource-type"></a>tipo de recurso tokenIssuancePolicy
 
@@ -26,7 +26,7 @@ Representa a política para especificar as características dos tokens SAML emit
 
 Herda de [stsPolicy](stsPolicy.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -41,11 +41,11 @@ Herda de [stsPolicy](stsPolicy.md).
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| Identificador exclusivo da política. Somente leitura.|
-|definir|Coleção de cadeias de caracteres| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
-|description|String| Descrição da política.|
+|id|Cadeia de caracteres| Identificador exclusivo da política. Somente leitura.|
+|definir|Coleção String| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
+|description|Cadeia de caracteres| Descrição da política.|
 |displayName|Cadeia de caracteres| Nome para exibição dessa política. Obrigatório.|
-|isOrganizationDefault|Boolean|Ignore essa propriedade. A política de emissão de token só pode ser aplicada a entidades de serviço e não pode ser definida globalmente para a organização.|
+|isOrganizationDefault|Booliano|Ignore essa propriedade. A política de emissão de token só pode ser aplicada a entidades de serviço e não pode ser definida globalmente para a organização.|
 
 
 ### <a name="properties-of-a-token-issuance-policy-definition"></a>Propriedades de uma definição de política de emissão de token
@@ -63,9 +63,9 @@ O formulário Propriedades o objeto JSON que representa uma política de emissã
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|TokenResponseSigningPolicy|String|Representa as opções de assinatura de certificado disponíveis no Azure AD. Os valores com suporte `ResponseOnly`são `TokenOnly`: `ResponseAndToken`,,.  |
-|SamlTokenVersion|String|Versão do token SAML. Os valores com suporte `1.1`são `2.0`:,. |
-|SigningAlgorithm|String|Algoritmo de assinatura usado pelo Azure AD para assinar o token SAML. Os valores com suporte `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256`são `http://www.w3.org/2000/09/xmldsig#rsa-sha1`:,.|
+|TokenResponseSigningPolicy|Cadeia de caracteres|Representa as opções de assinatura de certificado disponíveis no Azure AD. Os valores com suporte são: `ResponseOnly` , `TokenOnly` , `ResponseAndToken` .  |
+|SamlTokenVersion|Cadeia de caracteres|Versão do token SAML. Os valores com suporte são: `1.1` , `2.0` . |
+|SigningAlgorithm|Cadeia de caracteres|Algoritmo de assinatura usado pelo Azure AD para assinar o token SAML. Os valores com suporte são: `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` , `http://www.w3.org/2000/09/xmldsig#rsa-sha1` .|
 |Versão|Inteiro|Defina o valor 1. Obrigatório.|
 
 
@@ -108,3 +108,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

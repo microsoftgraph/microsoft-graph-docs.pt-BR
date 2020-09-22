@@ -3,14 +3,14 @@ title: Obter windowsManagedDevice
 description: Leia as propriedades e as relações do objeto windowsManagedDevice.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a49f45870a95ba06f9b34c335a86e989479775f
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: cceb53abb1c8c52b6e82f4e0f33e4aa06fff3257
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790606"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090568"
 ---
 # <a name="get-windowsmanageddevice"></a>Obter windowsManagedDevice
 
@@ -74,7 +74,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8387
+Content-Length: 8462
 
 {
   "value": {
@@ -259,10 +259,15 @@ Content-Length: 8387
     "processorArchitecture": "x86",
     "specificationVersion": "Specification Version value",
     "joinType": "azureADJoined",
-    "skuFamily": "Sku Family value"
+    "skuFamily": "Sku Family value",
+    "skuNumber": 9,
+    "managementFeatures": "microsoftManagedDesktop"
   }
 }
 ```
+
+
+
 
 
 

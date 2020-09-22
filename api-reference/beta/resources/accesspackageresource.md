@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e521c5140467d8e44052982e50f19fd8a2088041
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 6c37ff0de7f733b67eda0541418ca4b42aa57352
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319593"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089830"
 ---
 # <a name="accesspackageresource-resource-type"></a>tipo de recurso accessPackageResource
 
@@ -32,10 +32,10 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), um recurs
 |:-------------|:------------|:------------|
 |addedBy|String|Somente leitura.|
 |adicionado|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|descrição|String|Uma descrição do recurso.|
+|description|Cadeia de caracteres|Uma descrição do recurso.|
 |displayName|Cadeia de caracteres|O nome de exibição do recurso, como o nome do aplicativo, o nome do grupo ou o nome do site.|
 |id|String| Somente leitura.|
-|isPendingOnboarding|Booliano|True se o recurso ainda não está disponível para atribuição.|
+|isPendingOnboarding|Boolean|True se o recurso ainda não está disponível para atribuição.|
 |originid|Cadeia de caracteres|O identificador exclusivo do recurso no sistema de origem. No caso de um grupo do Azure AD, esse é o identificador do grupo. |
 |originSystem|Cadeia de caracteres|O tipo do recurso no sistema de origem, como `SharePointOnline` , `AadApplication` ou `AadGroup` .|
 |resourceType|Cadeia de caracteres|O tipo do recurso, como `Application` se é um aplicativo conectado ao Azure ad ou `SharePoint Online Site` um site do SharePoint Online.|
@@ -86,3 +86,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

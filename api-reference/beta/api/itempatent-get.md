@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a30f62fdb622ffb732c9dc807d87577665297dd0
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: c287bcb4b77e6c997696006105f248e79c4b2dc7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089991"
 ---
 # <a name="get-itempatent"></a>Obter ispatente
 
@@ -126,3 +126,5 @@ Content-Type: application/json
   "webUrl": "https://patents.gov/3954432633"
 }
 ```
+
+

@@ -3,14 +3,14 @@ title: Atualizar deviceShellScript
 description: Atualiza as propriedades de um objeto deviceShellScript.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 29ae00d26baddc0efaa50f319a3b2759d6f02f66
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fbb9e91eb2e02ae39ad77db8c5ade78656c778e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380091"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090575"
 ---
 # <a name="update-deviceshellscript"></a>Atualizar deviceShellScript
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,9 +56,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceS
 |executionFrequency|Duração|O intervalo de execução do script. Se não definido, o script será executado uma vez|
 |retryCount|Int32|Número de vezes que o script deve ser repetido se falhar|
 |blockExecutionNotifications|Boolean|Não notifica o usuário de que um script está sendo executado|
-|id|String|Identificador exclusivo do script de gerenciamento de dispositivo.|
+|id|Cadeia de caracteres|Identificador exclusivo do script de gerenciamento de dispositivo.|
 |displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivo.|
-|description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
+|description|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivo.|
 |scriptContent|Binária|O conteúdo de script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez. Essa propriedade é somente leitura.|
@@ -69,7 +69,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceS
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceShellScript](../resources/intune-devices-deviceshellscript.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceShellScript](../resources/intune-devices-deviceshellscript.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -121,6 +121,9 @@ Content-Length: 581
   ]
 }
 ```
+
+
+
 
 
 

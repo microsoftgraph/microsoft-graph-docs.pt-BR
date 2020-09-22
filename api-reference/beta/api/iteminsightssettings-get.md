@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 62c1a0f2efda751153d42d985d196a69e35caee5
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 2fc3e7066ee53af6864400bb221b9494246ec7b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509622"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090016"
 ---
 # <a name="get-iteminsightssettings"></a>Obter itemInsightsSettings
 
@@ -106,3 +106,5 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+
+
