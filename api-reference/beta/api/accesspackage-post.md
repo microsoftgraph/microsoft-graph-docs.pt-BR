@@ -5,32 +5,32 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ef57e5400d2bb93bf566badfc76fa8c890206809
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2fc35b0c2de4f8d152cef00194bf74b5fd5b8845
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448505"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977948"
 ---
-# <a name="create-accesspackage"></a><span data-ttu-id="00006-103">Criar accessPackage</span><span class="sxs-lookup"><span data-stu-id="00006-103">Create accessPackage</span></span>
+# <a name="create-accesspackage"></a><span data-ttu-id="6da39-103">Criar accessPackage</span><span class="sxs-lookup"><span data-stu-id="6da39-103">Create accessPackage</span></span>
 
-<span data-ttu-id="00006-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="00006-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6da39-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6da39-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="00006-105">Criar um novo objeto [accessPackage](../resources/accesspackage.md) .</span><span class="sxs-lookup"><span data-stu-id="00006-105">Create a new [accessPackage](../resources/accesspackage.md) object.</span></span>
+<span data-ttu-id="6da39-105">Criar um novo objeto [accessPackage](../resources/accesspackage.md) .</span><span class="sxs-lookup"><span data-stu-id="6da39-105">Create a new [accessPackage](../resources/accesspackage.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="00006-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="00006-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6da39-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="6da39-106">Permissions</span></span>
 
-<span data-ttu-id="00006-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="00006-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6da39-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6da39-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="00006-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="00006-109">Permission type</span></span>                        | <span data-ttu-id="00006-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="00006-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="6da39-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6da39-109">Permission type</span></span>                        | <span data-ttu-id="6da39-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6da39-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="00006-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="00006-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="00006-112">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="00006-112">EntitlementManagement.ReadWrite.All</span></span> |
-| <span data-ttu-id="00006-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="00006-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="00006-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="00006-114">Not supported.</span></span> |
-| <span data-ttu-id="00006-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="00006-115">Application</span></span>                            | <span data-ttu-id="00006-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="00006-116">Not supported.</span></span> |
+| <span data-ttu-id="6da39-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6da39-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="6da39-112">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6da39-112">EntitlementManagement.ReadWrite.All</span></span> |
+| <span data-ttu-id="6da39-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6da39-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6da39-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6da39-114">Not supported.</span></span> |
+| <span data-ttu-id="6da39-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6da39-115">Application</span></span>                            | <span data-ttu-id="6da39-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6da39-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="00006-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="00006-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6da39-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6da39-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,28 +38,28 @@ ms.locfileid: "42448505"
 POST /identityGovernance/entitlementManagement/accessPackages
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="00006-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="00006-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6da39-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6da39-118">Request headers</span></span>
 
-| <span data-ttu-id="00006-119">Nome</span><span class="sxs-lookup"><span data-stu-id="00006-119">Name</span></span>          | <span data-ttu-id="00006-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="00006-120">Description</span></span>   |
+| <span data-ttu-id="6da39-119">Nome</span><span class="sxs-lookup"><span data-stu-id="6da39-119">Name</span></span>          | <span data-ttu-id="6da39-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="6da39-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="00006-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="00006-121">Authorization</span></span> | <span data-ttu-id="00006-122">\{token\} de portador.</span><span class="sxs-lookup"><span data-stu-id="00006-122">Bearer \{token\}.</span></span> <span data-ttu-id="00006-123">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="00006-123">Required.</span></span> |
-| <span data-ttu-id="00006-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="00006-124">Content-Type</span></span>  | <span data-ttu-id="00006-125">application/json</span><span class="sxs-lookup"><span data-stu-id="00006-125">application/json</span></span>  |
+| <span data-ttu-id="6da39-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="6da39-121">Authorization</span></span> | <span data-ttu-id="6da39-122">\{token\} de portador.</span><span class="sxs-lookup"><span data-stu-id="6da39-122">Bearer \{token\}.</span></span> <span data-ttu-id="6da39-123">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6da39-123">Required.</span></span> |
+| <span data-ttu-id="6da39-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6da39-124">Content-Type</span></span>  | <span data-ttu-id="6da39-125">application/json</span><span class="sxs-lookup"><span data-stu-id="6da39-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="00006-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="00006-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6da39-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6da39-126">Request body</span></span>
 
-<span data-ttu-id="00006-127">No corpo da solicitação, forneça uma representação JSON do objeto [accessPackage](../resources/accesspackage.md) .</span><span class="sxs-lookup"><span data-stu-id="00006-127">In the request body, supply a JSON representation of [accessPackage](../resources/accesspackage.md) object.</span></span>
+<span data-ttu-id="6da39-127">No corpo da solicitação, forneça uma representação JSON do objeto [accessPackage](../resources/accesspackage.md) .</span><span class="sxs-lookup"><span data-stu-id="6da39-127">In the request body, supply a JSON representation of [accessPackage](../resources/accesspackage.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="00006-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="00006-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6da39-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="6da39-128">Response</span></span>
 
-<span data-ttu-id="00006-129">Se tiver êxito, este método retornará um código de resposta criado 201 e um novo objeto [accessPackage](../resources/accesspackage.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="00006-129">If successful, this method returns a 201 Created response code and a new [accessPackage](../resources/accesspackage.md) object in the response body.</span></span>
+<span data-ttu-id="6da39-129">Se tiver êxito, este método retornará um código de resposta criado 201 e um novo objeto [accessPackage](../resources/accesspackage.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6da39-129">If successful, this method returns a 201 Created response code and a new [accessPackage](../resources/accesspackage.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="00006-130">Exemplos</span><span class="sxs-lookup"><span data-stu-id="00006-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="6da39-130">Exemplos</span><span class="sxs-lookup"><span data-stu-id="6da39-130">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="00006-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="00006-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="6da39-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6da39-131">Request</span></span>
 
-<span data-ttu-id="00006-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="00006-132">The following is an example of the request.</span></span>
+<span data-ttu-id="6da39-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6da39-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="00006-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="00006-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6da39-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="6da39-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackage_from_accesspackages"
@@ -75,26 +75,26 @@ Content-type: application/json
   "description": "outside sales representatives"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="00006-134">C#</span><span class="sxs-lookup"><span data-stu-id="00006-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6da39-134">C#</span><span class="sxs-lookup"><span data-stu-id="6da39-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackage-from-accesspackages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="00006-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="00006-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6da39-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6da39-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackage-from-accesspackages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="00006-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="00006-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6da39-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6da39-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackage-from-accesspackages-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="00006-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="00006-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="6da39-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="6da39-137">Response</span></span>
 
-<span data-ttu-id="00006-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="00006-138">The following is an example of the response.</span></span>
+<span data-ttu-id="6da39-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6da39-138">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="00006-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="00006-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="6da39-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6da39-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
