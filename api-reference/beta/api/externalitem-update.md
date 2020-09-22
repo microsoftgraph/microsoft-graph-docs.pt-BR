@@ -5,34 +5,34 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e9d44fe63b03ab7da1da62402d5579f58dec195b
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: 077895872414380f9a5d6eab854c0b4b0d9ceab2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47439959"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006804"
 ---
-# <a name="update-externalitem"></a><span data-ttu-id="902cf-103">Atualizar externalitem</span><span class="sxs-lookup"><span data-stu-id="902cf-103">Update externalitem</span></span>
+# <a name="update-externalitem"></a><span data-ttu-id="c635c-103">Atualizar externalitem</span><span class="sxs-lookup"><span data-stu-id="c635c-103">Update externalitem</span></span>
 
-<span data-ttu-id="902cf-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="902cf-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c635c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c635c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="902cf-105">Atualizar as propriedades de um [externalitem](../resources/externalitem.md).</span><span class="sxs-lookup"><span data-stu-id="902cf-105">Update the properties of an [externalitem](../resources/externalitem.md).</span></span>
+<span data-ttu-id="c635c-105">Atualizar as propriedades de um [externalitem](../resources/externalitem.md).</span><span class="sxs-lookup"><span data-stu-id="c635c-105">Update the properties of an [externalitem](../resources/externalitem.md).</span></span>
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="permissions"></a><span data-ttu-id="902cf-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="902cf-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c635c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="c635c-106">Permissions</span></span>
 
-<span data-ttu-id="902cf-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="902cf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c635c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c635c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="902cf-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="902cf-109">Permission type</span></span>                        | <span data-ttu-id="902cf-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="902cf-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c635c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c635c-109">Permission type</span></span>                        | <span data-ttu-id="c635c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c635c-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="902cf-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="902cf-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="902cf-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="902cf-112">Not supported.</span></span> |
-| <span data-ttu-id="902cf-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="902cf-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="902cf-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="902cf-114">Not supported.</span></span> |
-| <span data-ttu-id="902cf-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="902cf-115">Application</span></span>                            | <span data-ttu-id="902cf-116">ExternalItem.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="902cf-116">ExternalItem.ReadWrite.All</span></span> |
+| <span data-ttu-id="c635c-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c635c-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="c635c-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c635c-112">Not supported.</span></span> |
+| <span data-ttu-id="c635c-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c635c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c635c-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c635c-114">Not supported.</span></span> |
+| <span data-ttu-id="c635c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c635c-115">Application</span></span>                            | <span data-ttu-id="c635c-116">ExternalItem.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c635c-116">ExternalItem.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="902cf-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="902cf-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c635c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c635c-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,49 +40,49 @@ ms.locfileid: "47439959"
 PATCH /external/connections/{connection-id}/items/{item-id}
 ```
 
-## <a name="path-parameters"></a><span data-ttu-id="902cf-118">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="902cf-118">Path parameters</span></span>
+## <a name="path-parameters"></a><span data-ttu-id="c635c-118">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="c635c-118">Path parameters</span></span>
 
-| <span data-ttu-id="902cf-119">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="902cf-119">Parameter</span></span>     | <span data-ttu-id="902cf-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="902cf-120">Type</span></span>   | <span data-ttu-id="902cf-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="902cf-121">Description</span></span>                                         |
+| <span data-ttu-id="c635c-119">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="c635c-119">Parameter</span></span>     | <span data-ttu-id="c635c-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="c635c-120">Type</span></span>   | <span data-ttu-id="c635c-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="c635c-121">Description</span></span>                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| <span data-ttu-id="902cf-122">ID de conexão</span><span class="sxs-lookup"><span data-stu-id="902cf-122">connection-id</span></span> | <span data-ttu-id="902cf-123">string</span><span class="sxs-lookup"><span data-stu-id="902cf-123">string</span></span> | <span data-ttu-id="902cf-124">A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém</span><span class="sxs-lookup"><span data-stu-id="902cf-124">The `id` property of the containing [externalConnection](../resources/externalconnection.md)</span></span> |
-| <span data-ttu-id="902cf-125">item-id</span><span class="sxs-lookup"><span data-stu-id="902cf-125">item-id</span></span>       | <span data-ttu-id="902cf-126">string</span><span class="sxs-lookup"><span data-stu-id="902cf-126">string</span></span> | <span data-ttu-id="902cf-127">A propriedade fornecida pelo desenvolvedor `id` do [externalItem](../resources/externalitem.md).</span><span class="sxs-lookup"><span data-stu-id="902cf-127">The developer-provided `id` property of the [externalItem](../resources/externalitem.md).</span></span> |
+| <span data-ttu-id="c635c-122">ID de conexão</span><span class="sxs-lookup"><span data-stu-id="c635c-122">connection-id</span></span> | <span data-ttu-id="c635c-123">string</span><span class="sxs-lookup"><span data-stu-id="c635c-123">string</span></span> | <span data-ttu-id="c635c-124">A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém</span><span class="sxs-lookup"><span data-stu-id="c635c-124">The `id` property of the containing [externalConnection](../resources/externalconnection.md)</span></span> |
+| <span data-ttu-id="c635c-125">item-id</span><span class="sxs-lookup"><span data-stu-id="c635c-125">item-id</span></span>       | <span data-ttu-id="c635c-126">string</span><span class="sxs-lookup"><span data-stu-id="c635c-126">string</span></span> | <span data-ttu-id="c635c-127">A propriedade fornecida pelo desenvolvedor `id` do [externalItem](../resources/externalitem.md).</span><span class="sxs-lookup"><span data-stu-id="c635c-127">The developer-provided `id` property of the [externalItem](../resources/externalitem.md).</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="902cf-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="902cf-128">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c635c-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c635c-128">Request headers</span></span>
 
-| <span data-ttu-id="902cf-129">Nome</span><span class="sxs-lookup"><span data-stu-id="902cf-129">Name</span></span>          | <span data-ttu-id="902cf-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="902cf-130">Description</span></span>                 |
+| <span data-ttu-id="c635c-129">Nome</span><span class="sxs-lookup"><span data-stu-id="c635c-129">Name</span></span>          | <span data-ttu-id="c635c-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="c635c-130">Description</span></span>                 |
 |:--------------|:----------------------------|
-| <span data-ttu-id="902cf-131">Autorização</span><span class="sxs-lookup"><span data-stu-id="902cf-131">Authorization</span></span> | <span data-ttu-id="902cf-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="902cf-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="902cf-134">Content-Type</span><span class="sxs-lookup"><span data-stu-id="902cf-134">Content-Type</span></span>  | <span data-ttu-id="902cf-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="902cf-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="c635c-131">Autorização</span><span class="sxs-lookup"><span data-stu-id="c635c-131">Authorization</span></span> | <span data-ttu-id="c635c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c635c-p102">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="c635c-134">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c635c-134">Content-Type</span></span>  | <span data-ttu-id="c635c-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c635c-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="902cf-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="902cf-137">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c635c-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c635c-137">Request body</span></span>
 
-<span data-ttu-id="902cf-138">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="902cf-138">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="902cf-139">Propriedades existentes (exceto propriedades dentro do `properties` objeto) que não estão incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base nas alterações de outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="902cf-139">Existing properties (excluding properties inside the `properties` object) that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="902cf-140">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="902cf-140">For best performance, don't include existing values that haven't changed.</span></span> <span data-ttu-id="902cf-141">As propriedades a seguir podem ser atualizadas.</span><span class="sxs-lookup"><span data-stu-id="902cf-141">The following properties can be updated.</span></span>
+<span data-ttu-id="c635c-138">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="c635c-138">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="c635c-139">Propriedades existentes (exceto propriedades dentro do `properties` objeto) que não estão incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base nas alterações de outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="c635c-139">Existing properties (excluding properties inside the `properties` object) that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="c635c-140">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="c635c-140">For best performance, don't include existing values that haven't changed.</span></span> <span data-ttu-id="c635c-141">As propriedades a seguir podem ser atualizadas.</span><span class="sxs-lookup"><span data-stu-id="c635c-141">The following properties can be updated.</span></span>
 
-| <span data-ttu-id="902cf-142">Propriedade</span><span class="sxs-lookup"><span data-stu-id="902cf-142">Property</span></span>   | <span data-ttu-id="902cf-143">Tipo</span><span class="sxs-lookup"><span data-stu-id="902cf-143">Type</span></span>                                  | <span data-ttu-id="902cf-144">Descrição</span><span class="sxs-lookup"><span data-stu-id="902cf-144">Description</span></span>               |
+| <span data-ttu-id="c635c-142">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c635c-142">Property</span></span>   | <span data-ttu-id="c635c-143">Tipo</span><span class="sxs-lookup"><span data-stu-id="c635c-143">Type</span></span>                                  | <span data-ttu-id="c635c-144">Descrição</span><span class="sxs-lookup"><span data-stu-id="c635c-144">Description</span></span>               |
 |:-----------|:--------------------------------------|:--------------------------|
-| <span data-ttu-id="902cf-145">ACL</span><span class="sxs-lookup"><span data-stu-id="902cf-145">acl</span></span>        | <span data-ttu-id="902cf-146">coleção [ACL](../resources/acl.md)</span><span class="sxs-lookup"><span data-stu-id="902cf-146">[acl](../resources/acl.md) collection</span></span> | <span data-ttu-id="902cf-147">Uma matriz de entradas de controle de acesso.</span><span class="sxs-lookup"><span data-stu-id="902cf-147">An array of access control entries.</span></span> <span data-ttu-id="902cf-148">Cada entrada especifica o acesso concedido a um usuário ou grupo.</span><span class="sxs-lookup"><span data-stu-id="902cf-148">Each entry specifies the access granted to a user or group.</span></span> |
-| <span data-ttu-id="902cf-149">conteúdo</span><span class="sxs-lookup"><span data-stu-id="902cf-149">content</span></span>    | [<span data-ttu-id="902cf-150">externalItemContent</span><span class="sxs-lookup"><span data-stu-id="902cf-150">externalItemContent</span></span>](../resources/externalitemcontent.md) | <span data-ttu-id="902cf-151">Uma representação de texto sem formatação ou HTML do conteúdo do item.</span><span class="sxs-lookup"><span data-stu-id="902cf-151">A plain-text or HTML representation of the contents of the item.</span></span> <span data-ttu-id="902cf-152">O texto nessa propriedade é indexado de texto completo.</span><span class="sxs-lookup"><span data-stu-id="902cf-152">The text in this property is full-text indexed.</span></span> |
-| <span data-ttu-id="902cf-153">properties</span><span class="sxs-lookup"><span data-stu-id="902cf-153">properties</span></span> | <span data-ttu-id="902cf-154">Objeto</span><span class="sxs-lookup"><span data-stu-id="902cf-154">Object</span></span>                                | <span data-ttu-id="902cf-155">Um recipiente de propriedades com as propriedades do item.</span><span class="sxs-lookup"><span data-stu-id="902cf-155">A property bag with the properties of the item.</span></span> <span data-ttu-id="902cf-156">As propriedades devem estar em conformidade com o [esquema](../resources/schema.md) definido para o [externalConnection](../resources/externalconnection.md).</span><span class="sxs-lookup"><span data-stu-id="902cf-156">The properties MUST conform to the [schema](../resources/schema.md) defined for the [externalConnection](../resources/externalconnection.md).</span></span> |
+| <span data-ttu-id="c635c-145">ACL</span><span class="sxs-lookup"><span data-stu-id="c635c-145">acl</span></span>        | <span data-ttu-id="c635c-146">coleção [ACL](../resources/acl.md)</span><span class="sxs-lookup"><span data-stu-id="c635c-146">[acl](../resources/acl.md) collection</span></span> | <span data-ttu-id="c635c-147">Uma matriz de entradas de controle de acesso.</span><span class="sxs-lookup"><span data-stu-id="c635c-147">An array of access control entries.</span></span> <span data-ttu-id="c635c-148">Cada entrada especifica o acesso concedido a um usuário ou grupo.</span><span class="sxs-lookup"><span data-stu-id="c635c-148">Each entry specifies the access granted to a user or group.</span></span> |
+| <span data-ttu-id="c635c-149">conteúdo</span><span class="sxs-lookup"><span data-stu-id="c635c-149">content</span></span>    | [<span data-ttu-id="c635c-150">externalItemContent</span><span class="sxs-lookup"><span data-stu-id="c635c-150">externalItemContent</span></span>](../resources/externalitemcontent.md) | <span data-ttu-id="c635c-151">Uma representação de texto sem formatação ou HTML do conteúdo do item.</span><span class="sxs-lookup"><span data-stu-id="c635c-151">A plain-text or HTML representation of the contents of the item.</span></span> <span data-ttu-id="c635c-152">O texto nessa propriedade é indexado de texto completo.</span><span class="sxs-lookup"><span data-stu-id="c635c-152">The text in this property is full-text indexed.</span></span> |
+| <span data-ttu-id="c635c-153">properties</span><span class="sxs-lookup"><span data-stu-id="c635c-153">properties</span></span> | <span data-ttu-id="c635c-154">Objeto</span><span class="sxs-lookup"><span data-stu-id="c635c-154">Object</span></span>                                | <span data-ttu-id="c635c-155">Um recipiente de propriedades com as propriedades do item.</span><span class="sxs-lookup"><span data-stu-id="c635c-155">A property bag with the properties of the item.</span></span> <span data-ttu-id="c635c-156">As propriedades devem estar em conformidade com o [esquema](../resources/schema.md) definido para o [externalConnection](../resources/externalconnection.md).</span><span class="sxs-lookup"><span data-stu-id="c635c-156">The properties MUST conform to the [schema](../resources/schema.md) defined for the [externalConnection](../resources/externalconnection.md).</span></span> |
 
-### <a name="updating-the-acl-collection"></a><span data-ttu-id="902cf-157">Atualizando a coleção ACL</span><span class="sxs-lookup"><span data-stu-id="902cf-157">Updating the acl collection</span></span>
+### <a name="updating-the-acl-collection"></a><span data-ttu-id="c635c-157">Atualizando a coleção ACL</span><span class="sxs-lookup"><span data-stu-id="c635c-157">Updating the acl collection</span></span>
 
-<span data-ttu-id="902cf-158">Se a `acl` propriedade for incluída em uma solicitação Update, a coleção ACL existente será substituída pela coleção incluída na solicitação.</span><span class="sxs-lookup"><span data-stu-id="902cf-158">If the `acl` property is included in an update request, the existing ACL collection is overwritten with the collection included in the request.</span></span>
+<span data-ttu-id="c635c-158">Se a `acl` propriedade for incluída em uma solicitação Update, a coleção ACL existente será substituída pela coleção incluída na solicitação.</span><span class="sxs-lookup"><span data-stu-id="c635c-158">If the `acl` property is included in an update request, the existing ACL collection is overwritten with the collection included in the request.</span></span>
 
-### <a name="updating-the-properties-object"></a><span data-ttu-id="902cf-159">Atualizando o objeto Properties</span><span class="sxs-lookup"><span data-stu-id="902cf-159">Updating the properties object</span></span>
+### <a name="updating-the-properties-object"></a><span data-ttu-id="c635c-159">Atualizando o objeto Properties</span><span class="sxs-lookup"><span data-stu-id="c635c-159">Updating the properties object</span></span>
 
-<span data-ttu-id="902cf-160">Se a `properties` propriedade for incluída em uma solicitação Update, o conjunto de propriedades existente será substituído pelo valor incluído na solicitação.</span><span class="sxs-lookup"><span data-stu-id="902cf-160">If the `properties` property is included in an update request, the existing property bag is overwritten with the value included in the request.</span></span>
+<span data-ttu-id="c635c-160">Se a `properties` propriedade for incluída em uma solicitação Update, o conjunto de propriedades existente será substituído pelo valor incluído na solicitação.</span><span class="sxs-lookup"><span data-stu-id="c635c-160">If the `properties` property is included in an update request, the existing property bag is overwritten with the value included in the request.</span></span>
 
-## <a name="response"></a><span data-ttu-id="902cf-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="902cf-161">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c635c-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="c635c-161">Response</span></span>
 
-<span data-ttu-id="902cf-162">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [externalItem](../resources/externalitem.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="902cf-162">If successful, this method returns a `200 OK` response code and an updated [externalItem](../resources/externalitem.md) object in the response body.</span></span>
+<span data-ttu-id="c635c-162">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [externalItem](../resources/externalitem.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c635c-162">If successful, this method returns a `200 OK` response code and an updated [externalItem](../resources/externalitem.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="902cf-163">Exemplos</span><span class="sxs-lookup"><span data-stu-id="902cf-163">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="c635c-163">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c635c-163">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="902cf-164">Solicitação</span><span class="sxs-lookup"><span data-stu-id="902cf-164">Request</span></span>
+### <a name="request"></a><span data-ttu-id="c635c-164">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c635c-164">Request</span></span>
 
-<span data-ttu-id="902cf-165">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="902cf-165">The following is an example of the request.</span></span>
+<span data-ttu-id="c635c-165">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c635c-165">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="902cf-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="902cf-166">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c635c-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="c635c-166">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_externalitem"
@@ -103,15 +103,15 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="902cf-167">C#</span><span class="sxs-lookup"><span data-stu-id="902cf-167">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c635c-167">C#</span><span class="sxs-lookup"><span data-stu-id="c635c-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-externalitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="902cf-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="902cf-168">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c635c-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c635c-168">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-externalitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="902cf-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="902cf-169">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c635c-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c635c-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-externalitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -119,10 +119,10 @@ Content-type: application/json
 
 
 <!-- markdownlint-disable MD024 -->
-### <a name="response"></a><span data-ttu-id="902cf-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="902cf-170">Response</span></span>
+### <a name="response"></a><span data-ttu-id="c635c-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="c635c-170">Response</span></span>
 <!-- markdownlint-enable MD024 -->
 
-<span data-ttu-id="902cf-171">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="902cf-171">The following is an example of the response.</span></span>
+<span data-ttu-id="c635c-171">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c635c-171">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -168,3 +168,5 @@ Content-type: application/json
     "Error: update_externalitem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
   ]
 }-->
+
+
