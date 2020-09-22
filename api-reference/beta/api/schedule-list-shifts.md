@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 30ca05e1ad9e77e5071389efe083d51545b0c311
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 4b6f7d928dedc65faf73b9a59bbc7df7a2302cf2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42453848"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979692"
 ---
 # <a name="list-shifts"></a>Listar turnos
 
@@ -170,3 +170,5 @@ Content-length: 401
   ]
 }
 -->
+
+

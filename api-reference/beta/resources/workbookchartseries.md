@@ -5,30 +5,30 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 2f93eb5ccf8b3acda9113312f4dbbb9063bdfcef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 22ce2138da7ae8163304978370ada1f71abe7026
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519271"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979228"
 ---
 # <a name="workbookchartseries-resource-type"></a>tipo de recurso workbookChartSeries
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma série de um gráfico.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get ChartSeries](../api/chartseries-get.md) | [workbookChartSeries](workbookchartseries.md) |Leia as propriedades e os relacionamentos do objeto chartSeries.|
 |[Criar ChartPoint](../api/chartseries-post-points.md) |[chartPoints](workbookchartpoint.md)| Crie um novo chartPoint postando na coleção Points.|
 |[List points](../api/chartseries-list-points.md) |coleção [workbookChartPoints](workbookchartpoint.md)| Obtenha uma coleção de objetos chartPoints.|
-|[Update](../api/chartseries-update.md) | [workbookChartSeries](workbookchartseries.md) |Atualize o objeto chartSeries. |
+|[Atualização](../api/chartseries-update.md) | [workbookChartSeries](workbookchartseries.md) |Atualize o objeto chartSeries. |
 |[List](../api/chartseries-list.md) | coleção [workbookChartSeries](workbookchartseries.md) |Obtenha uma coleção de objetos chartSeries. |
 |[ItemAt](../api/chartseriescollection-itemat.md)|[workbookChartSeries](workbookchartseries.md)|Recupera uma série com base na respectiva posição na coleção|
 
@@ -75,3 +75,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

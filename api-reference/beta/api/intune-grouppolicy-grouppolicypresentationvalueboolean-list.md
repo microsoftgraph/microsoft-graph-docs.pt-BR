@@ -3,14 +3,14 @@ title: Listar groupPolicyPresentationValueBooleans
 description: Listar Propriedades e relações dos objetos groupPolicyPresentationValueBoolean.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d5ff79f8894354686932a60eaf5e6c05bdcfd54b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2d36ee6d3a5982f1a900cea21f4bb1aba1d0d208
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462691"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980558"
 ---
 # <a name="list-grouppolicypresentationvaluebooleans"></a>Listar groupPolicyPresentationValueBooleans
 
@@ -50,7 +50,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [groupPolicyPresentationValueBoolean](../resources/intune-grouppolicy-grouppolicypresentationvalueboolean.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [groupPolicyPresentationValueBoolean](../resources/intune-grouppolicy-grouppolicypresentationvalueboolean.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -79,6 +79,9 @@ Content-Length: 320
   ]
 }
 ```
+
+
+
 
 
 

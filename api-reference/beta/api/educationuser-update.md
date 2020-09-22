@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 022b30eb68b29f4a77c34b0a8dc588d6f4bba071
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 62204793bcae4c8070bf172af1505ef4717fc160
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006751"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981090"
 ---
 # <a name="update-educationuser-properties"></a>Atualizar propriedades de educationUser
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | Sem suporte.                              |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | EduRoster.ReadWrite.All                     |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,13 +52,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade         | Tipo               | Descrição                                                                                                                                     |
 | :--------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName      | Cadeia de caracteres             | Nome de exibição do usuário                                                                                                                            |
+| displayName      | String             | Nome de exibição do usuário                                                                                                                            |
 | givenName        | String             | Nome                                                                                                                                      |
 | middleName       | String             | O nome do meio do usuário                                                                                                                             |
 | surname          | String             | Sobrenome do usuário                                                                                                                                 |
 | email             | String             | endereço de email                                                                                                                                   |
-| mobilePhone      | Cadeia de caracteres             | O número de celular do usuário                                                                                                                           |
-| externalSource   | string             | De onde esse usuário foi criado. Os valores possíveis são: `sis` , `manual` , ou `lms` .                                                               |
+| mobilePhone      | String             | O número de celular do usuário                                                                                                                           |
+| externalSource   | cadeia de caracteres             | De onde esse usuário foi criado. Os valores possíveis são: `sis` , `manual` , ou `lms` .                                                               |
 | mailingAddress   | [physicalAddress]  | Endereço de email do usuário. Observação: `type` e `postOfficeBox` não têm suporte para `educationUser` recursos.                                         |
 | residenceAddress | [physicalAddress]  | Endereço em que o usuário reside. Observação: `type` e `postOfficeBox` não têm suporte para `educationUser` recursos.                                     |
 | primaryRole      | cadeia de caracteres             | Função padrão de um usuário. A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `enum_sentinel`. |
@@ -181,3 +181,5 @@ Content-length: 508
 
 [PhysicalAddress]: ../resources/physicaladdress.md
 [educationstudent]: ../resources/educationstudent.md
+
+

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b7915093126c9051aede6f7bbf52b873683a2243
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ba2a95d5e81267477011391cc60e20b4ee2c48c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424110"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981105"
 ---
 # <a name="list-rubrics"></a>Listar rubrics
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [educationRubric](../resources/educationrubric.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [educationRubric](../resources/educationrubric.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -188,3 +188,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

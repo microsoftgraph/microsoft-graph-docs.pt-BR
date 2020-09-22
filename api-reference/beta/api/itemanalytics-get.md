@@ -6,21 +6,21 @@ title: Obter análises
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 3b8c423037acd0af5c82bc350f8e859d00c4069a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 239b53b716a050dd59d35b25825c38bbcd4f9be8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457269"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979991"
 ---
 # <a name="get-analytics"></a>Obter análises
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha o [naanalytics][] sobre os modos de exibição que foram colocados sob esse recurso.
-O recurso do Microsoft **Analytics** é uma maneira conveniente de obter estatísticas de `allTime` atividades para `lastSevenDays`o e o.
+O recurso do Microsoft **Analytics** é uma maneira conveniente de obter estatísticas de atividades para `allTime` o e o `lastSevenDays` .
 Para um intervalo ou intervalo de tempo personalizado, use a API [funçãogetactivitiesbyinterval][] .
 
 >**Observação:** O recurso do **naanalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
@@ -109,3 +109,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

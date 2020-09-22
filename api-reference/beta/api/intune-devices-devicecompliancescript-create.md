@@ -3,14 +3,14 @@ title: Criar deviceComplianceScript
 description: Criar um novo objeto deviceComplianceScript.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bbd57133d102a6c0e8d7e28e275388cb13ecbee8
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 729172c224905b08bff277197ef33e7b159ff33e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792503"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980593"
 ---
 # <a name="create-devicecompliancescript"></a>Criar deviceComplianceScript
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |id|String|Identificador exclusivo do script de conformidade do dispositivo|
 |publicador|String|Nome do editor de scripts de conformidade de dispositivos|
 |versão|String|Versão do script de conformidade do dispositivo|
-|displayName|Cadeia de caracteres|Nome do script de conformidade do dispositivo|
+|displayName|String|Nome do script de conformidade do dispositivo|
 |description|String|Descrição do script de conformidade do dispositivo|
 |detectionScriptContent|Binária|Todo o conteúdo do script do PowerShell de detecção|
 |createdDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de conformidade do dispositivo foi criado. Essa propriedade é somente leitura.|
@@ -121,6 +121,9 @@ Content-Length: 592
   ]
 }
 ```
+
+
+
 
 
 

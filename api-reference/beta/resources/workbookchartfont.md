@@ -5,23 +5,23 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f7b79c81ce473440084b7a2409c0d621888f2286
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2fcf382f967687b49e114be2b4db1e022eebb0c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979270"
 ---
 # <a name="workbookchartfont-resource-type"></a>tipo de recurso workbookChartFont
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho, cor, dentre outros.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -32,11 +32,11 @@ Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |bold|booliano|Representa o status da fonte em negrito.|
-|color|string|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
+|color|cadeia de caracteres|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
 |italic|booliano|Representa o status da fonte em itálico.|
 |nome|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Tamanho da fonte, por exemplo, 11.|
-|underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`.|
+|underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None` , `Single` .|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -77,3 +77,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

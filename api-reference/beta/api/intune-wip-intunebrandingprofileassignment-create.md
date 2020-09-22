@@ -3,14 +3,14 @@ title: Criar intuneBrandingProfileAssignment
 description: Criar um novo objeto intuneBrandingProfileAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2ac5993c1d9f877e2b257ae12a010bbcc9d2eea
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 6b1031ae8562a0e152eb143d6a478ac79c6ed044
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791227"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980292"
 ---
 # <a name="create-intunebrandingprofileassignment"></a>Criar intuneBrandingProfileAssignment
 
@@ -97,6 +97,9 @@ Content-Length: 375
   }
 }
 ```
+
+
+
 
 
 

@@ -6,16 +6,16 @@ title: DriveItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ec7abdcb6ae65ebe3333289dca384448a1569988
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ae02fdd643f0aaa0f085f96e7c08adae50a81c63
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505655"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979620"
 ---
 # <a name="driveitemversion-resource-type"></a>Tipo de recurso DriveItemVersion
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -83,3 +83,5 @@ A tabela a seguir define as relações que o recurso **driveItemVersion** tem co
   "suppressions": []
 }
 -->
+
+

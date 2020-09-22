@@ -5,16 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 077188c3ca30837cad6adcffa2204750753cd1cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a917a6d74b47b3e42d2457c5bf747abbf237cf4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500734"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979575"
 ---
 # <a name="educationsubmission-resource-type"></a>tipo de recurso educationSubmission
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Os envios são criados automaticamente quando uma atribuição é publicada. O e
 
 >**Observação:** O status é somente leitura e o objeto é movido através do fluxo de trabalho via ações. 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -99,3 +99,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

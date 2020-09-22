@@ -3,14 +3,14 @@ title: Excluir appleVppTokenTroubleshootingEvent
 description: Exclui appleVppTokenTroubleshootingEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c5c714c2242ad11a13ab6afcccaad7c6d31f7a72
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 350a127ea86f7960545752ab1675089a706e2c82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457461"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980341"
 ---
 # <a name="delete-applevpptokentroubleshootingevent"></a>Excluir appleVppTokenTroubleshootingEvent
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: fc7fc9679de3a655e76b6182f218010de7e39997
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb582887e27af068b456b2fcf87971b2cdcf23d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519033"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979207"
 ---
 # <a name="yammeractivitysummary-resource-type"></a>tipo de recurso yammerActivitySummary
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -23,7 +23,7 @@ Namespace: Microsoft. Graph
 | reportRefreshDate | Data   |
 | curti             | Int64  |
 | posta            | Int64  |
-| Saiba              | Int64  |
+| leitura              | Int64  |
 | reportDate        | Data   |
 | reportPeriod      | String |
 
@@ -46,3 +46,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

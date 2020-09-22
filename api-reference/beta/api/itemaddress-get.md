@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c7004e265b683c4ed0733e4d2c3e24791af2db18
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 4f284921536827b2c005cde1b938b1ecbaf60ef4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820056"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979998"
 ---
 # <a name="get-itemaddress"></a>Get endereço
 Namespace: microsoft.graph
@@ -129,3 +129,5 @@ Content-Type: application/json
   "geoCoordinates": null
 }
 ```
+
+

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 519ade0d94fa6830cd3b0d99e5c8f968f5df6b4d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1b2813a6206f011dd484d52a14257fd957879f30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43365708"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980979"
 ---
 # <a name="delete-event"></a>Excluir evento
 
@@ -112,3 +112,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

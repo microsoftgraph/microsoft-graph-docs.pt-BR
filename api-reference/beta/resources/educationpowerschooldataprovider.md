@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9b85870f44eae936411e2aacf71781876858eee3
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 664b7c9c3ad255e502583fca6be332043e712a46
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790940"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979613"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>recurso educationPowerSchoolDataProvider
 
@@ -61,3 +61,5 @@ Derivado de [educationSynchronizationDataProvider](educationsynchronizationdatap
   }
 }
 ```
+
+

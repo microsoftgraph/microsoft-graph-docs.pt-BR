@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: yyuank
-ms.openlocfilehash: 63bd41f4438fe1cdd90228e83028eb07e54cf38c
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 1b8d27c1bb91bdcba4848b69bd8626252a5d0aa6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383734"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981062"
 ---
 # <a name="get-endpoint"></a>Obter o ponto de extremidade
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
->Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+>Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,3 +111,5 @@ Content-length: 208
   ]
 }
 -->
+
+

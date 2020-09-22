@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ef2337c17cbed1ff397bb4ff5e49c04bd0e4685c
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: b69990bc175e4f98bd77c5bff312204a28792705
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006748"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981132"
 ---
 # <a name="get-user"></a>Obter usuário
 
@@ -29,9 +29,9 @@ Uma combinação de permissões é obrigatória para chamar essa API. Para saber
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                               |
 | :------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                                            |
-| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All                                       |
+| Delegado (conta corporativa ou de estudante)     | Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                            |
+| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All                                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -138,3 +138,5 @@ Content-length: 491
   ]
 }
 -->
+
+

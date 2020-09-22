@@ -3,14 +3,14 @@ title: Listar microsoftStoreForBusinessApps
 description: Listar propriedades e relações dos objetos microsoftStoreForBusinessApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bab3f791d7b63bf8575c57c1f65be32642d83f44
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6cbe9fa4fe92f8115c83a71b71d2aaa069d96deb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43405126"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980754"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>Listar microsoftStoreForBusinessApps
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1485
+Content-Length: 1550
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 1485
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "usedLicenseCount": 0,
       "totalLicenseCount": 1,
       "productKey": "Product Key value",
@@ -111,6 +113,9 @@ Content-Length: 1485
   ]
 }
 ```
+
+
+
 
 
 

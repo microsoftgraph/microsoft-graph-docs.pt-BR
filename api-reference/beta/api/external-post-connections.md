@@ -5,16 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 67ccd63264d478ec33046cf03f6f8998ad3af7ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e2ebd954bf83b710835b6ad54fff7d7206a0025
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422345"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980887"
 ---
 # <a name="create-connection"></a>Criar conexão
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -129,3 +129,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

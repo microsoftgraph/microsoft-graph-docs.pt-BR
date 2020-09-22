@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6d81c4516cb6cc8f3e114a6f8f4b54fbce7714cc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3f62b2afd624a21f55fd9f4cca768f8ce8d44b82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43364441"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980922"
 ---
 # <a name="get-eventmessage"></a>Obter eventMessage
 
@@ -27,7 +27,7 @@ Os corpos de mensagens de evento podem estar no formato HTML ou de texto.
 Você pode usar o `Prefer: outlook.body-content-type` cabeçalho para especificar o formato desejado retornado nas propriedades **Body** e **uniqueBody** em uma `GET` solicitação:
 
 - Especifique `Prefer: outlook.body-content-type="text"` para obter um corpo de mensagem de evento retornado no formato de texto.
-- Especifique `Prefer: outlook.body-content-type="html"`ou apenas pule o cabeçalho para retornar o corpo da mensagem de evento no formato HTML.
+- Especifique `Prefer: outlook.body-content-type="html"` ou apenas pule o cabeçalho para retornar o corpo da mensagem de evento no formato HTML.
 
 Se você especificar um dos cabeçalhos, a resposta incluirá o cabeçalho `Preference-Applied` correspondente como confirmação:
 
@@ -437,3 +437,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 16f753005af0296f401b492db25031b021a3c3f9
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 87d9440424b5fe857e24fe9a9eefea109b424dd3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566858"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981040"
 ---
 # <a name="update-entitlementmanagementsettings"></a>Atualizar entitlementManagementSettings
 
@@ -102,3 +102,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

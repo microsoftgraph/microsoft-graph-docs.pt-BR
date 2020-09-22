@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6546b23b58388de42338127731aea8b1d8f5ac6e
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: ecd5d5240805ca0c9b523f32ba9de24dbacac771
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589197"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980971"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -140,3 +140,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

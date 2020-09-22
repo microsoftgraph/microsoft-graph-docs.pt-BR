@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fbcdc5cc20b35a7458d24c12407680c45ff454f2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5e9edc8c8aa433ee2f87613c4e32045c637b31dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43365840"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980978"
 ---
 # <a name="event-decline"></a>event: decline
 
@@ -70,7 +70,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |comment|String|Texto incluído na resposta. Opcional.|
 |sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|
-|proposedNewTime|[timeSlot](../resources/timeslot.md)|Uma data/hora alternativa propostas por um convidado para uma solicitação de reunião para iniciar e finalizar. Válido somente para eventos que permitem novas propostas de horários. A definição desse parâmetro requer **sendResponse** a definição `true`de sendResponse como. Opcional.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|Uma data/hora alternativa propostas por um convidado para uma solicitação de reunião para iniciar e finalizar. Válido somente para eventos que permitem novas propostas de horários. A definição desse parâmetro requer a definição de **sendResponse** como `true` . Opcional.|
 
 ## <a name="response"></a>Resposta
 
@@ -78,8 +78,8 @@ Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Nã
 
 Esta ação retornará HTTP 400 se ocorrer uma das seguintes ações:
 
-- O parâmetro **proposedNewTime** está incluído, mas a propriedade **allowNewTimeProposals** do **evento** é `false`. 
-- O parâmetro **proposedNewTime** está incluído, mas o parâmetro **sendResponse** está definido `false`como.
+- O parâmetro **proposedNewTime** está incluído, mas a propriedade **allowNewTimeProposals** do **evento** é `false` . 
+- O parâmetro **proposedNewTime** está incluído, mas o parâmetro **sendResponse** está definido como `false` .
 
 ## <a name="example"></a>Exemplo
 
@@ -156,3 +156,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

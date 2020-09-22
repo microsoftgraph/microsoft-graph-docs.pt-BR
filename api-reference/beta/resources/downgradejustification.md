@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 91bcb5a8e12a159bf2c6586a0e3dc49a540a69f2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c0e34d70bd91ecd896eba4329d775a95d696bed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505788"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979648"
 ---
 # <a name="downgradejustification-resource-type"></a>tipo de recurso downgradeJustification
 
@@ -24,7 +24,7 @@ Representa a entrada do usuário sobre por que o downgrade foi realizado. A just
 
 | Propriedade             | Tipo    | Descrição                                                                                          |
 | :------------------- | :------ | :--------------------------------------------------------------------------------------------------- |
-| isDowngradeJustified | Booliano | Indica se o downgrade é ou não justificado.                                              |
+| isDowngradeJustified | Boolean | Indica se o downgrade é ou não justificado.                                              |
 | justificationMessage | String  | Mensagem que indica por que um downgrade é justificado. A mensagem aparecerá em logs administrativos. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -56,3 +56,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

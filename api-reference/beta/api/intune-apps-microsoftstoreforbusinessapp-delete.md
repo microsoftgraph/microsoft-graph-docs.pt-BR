@@ -3,14 +3,14 @@ title: Excluir microsoftStoreForBusinessApp
 description: Exclui microsoftStoreForBusinessApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b89fbcc013aefd98437a34e1bf34b5a68d38786
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 93d9cf40de119db03b68249c1067602d9814dce2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43405395"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980768"
 ---
 # <a name="delete-microsoftstoreforbusinessapp"></a>Excluir microsoftStoreForBusinessApp
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

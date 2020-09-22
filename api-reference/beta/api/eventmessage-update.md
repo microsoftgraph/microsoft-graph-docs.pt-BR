@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3684ec702a0fd0e1bcd55d4087fee2c75b7af3bc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4dc0e41b8656ecc92276c8a6a7251d7e35b87a79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43364145"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980894"
 ---
 # <a name="update-eventmessage"></a>Atualizar eventMessage
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |categories|String|As categorias associadas à mensagem.|
-|importância|Cadeia de caracteres|A importância da mensagem. Os valores possíveis são: `Low`, `Normal` e `High`.|
+|importância|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal` e `High`.|
 |isAllDay |Booliano|Indica se o evento dura todo o dia. Ajustar essa propriedade requer ajustar as propriedades **StartDateTime** e **EndDateTime** do evento também.|
 |isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
@@ -128,3 +128,5 @@ Content-length: 248
   ]
 }
 -->
+
+

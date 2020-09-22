@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 99732cd99dafc67d9e82a7eba5676e41bcf7251b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1163843cdb393363bbb30783aa8232aa67544ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521703"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979334"
 ---
 # <a name="plannerplancontext-resource-type"></a>tipo de recurso plannerPlanContext
 
@@ -26,9 +26,9 @@ A experiência que a entrada **plannerPlanContext** reenviado pode ser identific
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Association|Cadeia de caracteres|Anulável. Um tipo de associação definido pelo aplicativo entre o [plannerPlan](plannerplan.md) e o aplicativo. O aplicativo pode usar essas informações para rastrear diferentes tipos de relações com o mesmo [plannerPlan](plannerplan.md).|
+|Association|String|Anulável. Um tipo de associação definido pelo aplicativo entre o [plannerPlan](plannerplan.md) e o aplicativo. O aplicativo pode usar essas informações para rastrear diferentes tipos de relações com o mesmo [plannerPlan](plannerplan.md).|
 |createdDateTime|DateTimeOffset|Somente leitura. A data e hora em que o **plannerPlanContext** foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|displayNameSegments|String collection|Os segmentos do nome da experiência externa. Segmentos representam uma estrutura hierárquica que permite que outros aplicativos exibam a relação.|
+|displayNameSegments|Coleção de cadeias de caracteres|Os segmentos do nome da experiência externa. Segmentos representam uma estrutura hierárquica que permite que outros aplicativos exibam a relação.|
 |ownerAppId|String|Somente leitura. ID do aplicativo que criou o **plannerPlanContext**.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -68,3 +68,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

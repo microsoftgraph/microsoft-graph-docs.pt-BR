@@ -5,22 +5,22 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 6ae51a05d1eeec55e3e6e0080a43e454712092fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e8f18b8dcb940a091db9802a3349f8c878fe2ded
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519334"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979277"
 ---
 # <a name="workbookchartfill-resource-type"></a>tipo de recurso workbookChartFill
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa a formatação de preenchimento de um elemento do gráfico.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -61,3 +61,5 @@ Nenhum
   "suppressions": []
 }
 -->
+
+

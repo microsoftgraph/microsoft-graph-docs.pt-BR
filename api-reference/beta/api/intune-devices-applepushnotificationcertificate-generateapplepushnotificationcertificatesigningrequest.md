@@ -3,14 +3,14 @@ title: ação generateApplePushNotificationCertificateSigningRequest
 description: Baixa a solicitação de assinatura de certificado de notificação por push da Apple
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4b602e3819f799493a69619309580acb7cc6e77
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2cedd3715024807eae0cf4f0f9297ceab8086331
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427052"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980621"
 ---
 # <a name="generateapplepushnotificationcertificatesigningrequest-action"></a>ação generateApplePushNotificationCertificateSigningRequest
 
@@ -71,6 +71,9 @@ Content-Length: 85
   "value": "Generate Apple Push Notification Certificate Signing Request value"
 }
 ```
+
+
+
 
 
 

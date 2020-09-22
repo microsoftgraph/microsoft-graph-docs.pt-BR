@@ -3,14 +3,14 @@ title: Listar groupPolicyPresentationValueDecimals
 description: Listar Propriedades e relações dos objetos groupPolicyPresentationValueDecimal.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 78cb2f23bc2dad12239ba3706cfd28b7fba1825c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b2a35444962b3186b55255fc000be91b45c92236
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460335"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980551"
 ---
 # <a name="list-grouppolicypresentationvaluedecimals"></a>Listar groupPolicyPresentationValueDecimals
 
@@ -50,7 +50,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [groupPolicyPresentationValueDecimal](../resources/intune-grouppolicy-grouppolicypresentationvaluedecimal.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [groupPolicyPresentationValueDecimal](../resources/intune-grouppolicy-grouppolicypresentationvaluedecimal.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -79,6 +79,9 @@ Content-Length: 317
   ]
 }
 ```
+
+
+
 
 
 

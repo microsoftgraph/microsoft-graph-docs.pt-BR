@@ -3,14 +3,14 @@ title: Excluir iosDerivedCredentialAuthenticationConfiguration
 description: Exclui iosDerivedCredentialAuthenticationConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43c5bb3133288ea08a3c971ecca8dbfef348debd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 58b79ae52d87a7b71cef8cde263bb6fb624e4548
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980656"
 ---
 # <a name="delete-iosderivedcredentialauthenticationconfiguration"></a>Excluir iosDerivedCredentialAuthenticationConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

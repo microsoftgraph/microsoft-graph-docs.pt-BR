@@ -3,14 +3,14 @@ title: Excluir intuneBrandingProfileAssignment
 description: Exclui intuneBrandingProfileAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 87d665fbc88267dda4fe204ff960907427b8ae3a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a910a6c5bab2b5ca46c1bd094b215b4026b0e8bd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386560"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980285"
 ---
 # <a name="delete-intunebrandingprofileassignment"></a>Excluir intuneBrandingProfileAssignment
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

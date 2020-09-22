@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5e1bc88a6b1438d6dbc94c73c03f92033a6c56f8
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 3bb0a2441ffd5b103e61dac3956803d14c24d2d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681849"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980964"
 ---
 # <a name="update-event"></a>Atualizar evento
 
@@ -69,12 +69,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | isAllDay|Booliano|Defina como true se o evento durar o dia inteiro. Se estiver definido como true, independentemente de ser um evento de um ou de vários dias, a hora de início e término deve ser definida como meia-noite e estar no mesmo fuso horário.|
 |isOnlineMeeting|Booliano| `True` se o evento tem informações sobre a reunião online, caso contrário, `false`. O padrão é false. Opcional.|
 | isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
-| location|Location|O local do evento.|
+| location|Local|O local do evento.|
 |locations|[location](../resources/location.md) collection|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
 |onlineMeetingProvider|onlineMeetingProviderType| Representa o provedor de serviços de reunião online. Os valores possíveis são `teamsForBusiness`, `skypeForBusiness` e `skypeForConsumer`. Opcional. |
 | recurrence|PatternedRecurrence|O padrão de recorrência do evento.|
 | reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
-| responseRequested|Boolean|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
+| responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
 | sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 | showAs|String|O status a ser exibido. Os valores possíveis são: `free` , `tentative` , `busy` , `oof` , `workingElsewhere` , `unknown` .|
 | iniciar|DateTimeTimeZone|A data, a hora e o fuso horário do evento. |
@@ -187,3 +187,5 @@ Content-length: 285
   ]
 }
 -->
+
+

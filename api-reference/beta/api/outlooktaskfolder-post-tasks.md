@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3b87b511a90eb86ae63bd07bc1a306caef06d353
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: dceaffdbf5cea3166b20b98dca06c71fc456bb98
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311939"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979746"
 ---
 # <a name="create-outlooktask-deprecated"></a>Criar outlookTask (preterido)
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Tasks.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Tasks.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Tasks.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -138,3 +138,5 @@ Content-length: 376
   "suppressions": []
 }
 -->
+
+

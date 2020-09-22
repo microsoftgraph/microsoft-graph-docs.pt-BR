@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 58064fbc39a949e986c62dc33c4623327a240de6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: df7f695a1aab9343ec8d15d7d0976e3260511ac1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809594"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979999"
 ---
 # <a name="update-itemaddress"></a>Atualizar endereço
 Namespace: microsoft.graph
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
 | Aplicativo                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -142,4 +142,6 @@ Content-Type: application/json
   "geoCoordinates": null
 }
 ```
+
+
 
