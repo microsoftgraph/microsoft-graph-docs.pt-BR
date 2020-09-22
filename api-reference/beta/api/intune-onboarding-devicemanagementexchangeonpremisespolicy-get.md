@@ -3,14 +3,14 @@ title: Obter deviceManagementExchangeOnPremisesPolicy
 description: Leia as propriedades e as relações do objeto deviceManagementExchangeOnPremisesPolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6d00d9d5d8cafd6c6e7cde6df5f78d105bf2182
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b931c6c4da191d08e1211fb07f52c3703dc95a79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450276"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072176"
 ---
 # <a name="get-devicemanagementexchangeonpremisespolicy"></a>Obter deviceManagementExchangeOnPremisesPolicy
 
@@ -98,6 +98,9 @@ Content-Length: 777
   }
 }
 ```
+
+
+
 
 
 

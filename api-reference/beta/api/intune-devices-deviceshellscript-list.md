@@ -3,14 +3,14 @@ title: Listar deviceShellScripts
 description: Listar Propriedades e relações dos objetos deviceShellScript.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 406bbc7dd0f756f3a281d9a653b0e06ab007b40d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0c7330a19fb65e17fafde20e5d2e055713a73678
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43425534"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072547"
 ---
 # <a name="list-deviceshellscripts"></a>Listar deviceShellScripts
 
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceShellScripts
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [deviceShellScript](../resources/intune-devices-deviceshellscript.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [deviceShellScript](../resources/intune-devices-deviceshellscript.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -89,6 +89,9 @@ Content-Length: 674
   ]
 }
 ```
+
+
+
 
 
 

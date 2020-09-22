@@ -3,14 +3,14 @@ title: Listar managedAppProtectionPolicySetItems
 description: Listar Propriedades e relações dos objetos managedAppProtectionPolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ede2c55c0910a92ac61db1ebf042f1e04c530ffd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c4395b28fb721fe9468e276afb4d6709389e3565
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464250"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074472"
 ---
 # <a name="list-managedappprotectionpolicysetitems"></a>Listar managedAppProtectionPolicySetItems
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [managedAppProtectionPolicySetItem](../resources/intune-policyset-managedappprotectionpolicysetitem.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [managedAppProtectionPolicySetItem](../resources/intune-policyset-managedappprotectionpolicysetitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -87,6 +87,9 @@ Content-Length: 646
   ]
 }
 ```
+
+
+
 
 
 

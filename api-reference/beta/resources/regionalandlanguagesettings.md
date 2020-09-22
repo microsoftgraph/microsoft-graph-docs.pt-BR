@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jasonbro
 ms.prod: settings
 doc_type: resourcePageType
-ms.openlocfilehash: ba8666b78023b7345d936516fc3aec2b116520ad
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
-ms.translationtype: Auto
+ms.openlocfilehash: 0e6178b7d2a461365c759432d62efcffc44cfe6a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845677"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073509"
 ---
 # <a name="regionalandlanguagesettings-resource-type"></a>tipo de recurso regionalAndLanguageSettings
 
@@ -20,12 +20,12 @@ Namespace: microsoft.graph
 
 Um tipo aberto que representa as preferências de um usuário para idiomas em vários contextos e para a localidade e a formatação regionais que orientam o calendário padrão e a formatação de data e hora.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                 | Tipo de retorno                                                   | Descrição                                                                                        |
 |:-------------------------------------------------------|:--------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
 | [Get](../api/regionalAndLanguageSettings-get.md)       | [regionalAndLanguageSettings](regionalAndLanguageSettings.md) | Ler as propriedades de um objeto **regionalAndLanguageSettings** .                                       |
-| [Atualização](../api/regionalandlanguagesettings-update.md) | [regionalAndLanguageSettings](regionalAndLanguageSettings.md) | Atualizar tudo ou um subconjunto das propriedades do objeto **regionalAndLanguageSettings** para um usuário. |
+| [Update](../api/regionalandlanguagesettings-update.md) | [regionalAndLanguageSettings](regionalAndLanguageSettings.md) | Atualizar tudo ou um subconjunto das propriedades do objeto **regionalAndLanguageSettings** para um usuário. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade                   | Tipo                                                  | Descrição                                                                                                                                                         |
@@ -63,3 +63,5 @@ A seguir está uma definição de JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

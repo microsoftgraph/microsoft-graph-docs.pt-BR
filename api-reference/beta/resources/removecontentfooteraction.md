@@ -5,16 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ddc507d4c958b7453e53df1f0475497cb0b3ad89
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 76450b0d6b0f3a532a4e3472d2ce99ead8c933e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521156"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073443"
 ---
 # <a name="removecontentfooteraction-resource-type"></a>tipo de recurso removeContentFooterAction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ Representa uma ação que especifica os detalhes no rodapé de conteúdo a ser r
 
 | Propriedade       | Tipo              | Descrição                                                |
 | :------------- | :---------------- | :--------------------------------------------------------- |
-| uiElementnames | String collection | O nome do elemento de interface do usuário do rodapé a ser removido. |
+| uiElementnames | Coleção de cadeias de caracteres | O nome do elemento de interface do usuário do rodapé a ser removido. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -54,3 +54,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

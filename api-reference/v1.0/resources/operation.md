@@ -5,12 +5,12 @@ localization_priority: Normal
 author: billbliss
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c9b920bbf696e80923c1d37756d7c27e1f06ab3a
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 21a49f360ac18ad42ce5530a8cfcbcbea1876bc0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808148"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072855"
 ---
 # <a name="operation-resource-type"></a>tipo de recurso Operation
 
@@ -53,3 +53,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fda2bdb82ce94c9f0b19dffc5adc3891928aa6fa
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: 6c7327ff285f26ffae810a06ca19a96c049096d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290157"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074061"
 ---
 # <a name="create-team-from-group"></a>Criar equipe a partir do grupo
 
@@ -172,3 +172,5 @@ Content-length: 401
 ## <a name="see-also"></a>Confira também
 
 - [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
+
+

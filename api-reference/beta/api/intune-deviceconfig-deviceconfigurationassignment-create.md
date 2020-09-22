@@ -3,14 +3,14 @@ title: Criar deviceConfigurationAssignment
 description: Criar um novo objeto deviceConfigurationAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c4ca1a95833f02f938365a48081225194e2742b
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: d27aa6a582e4e5f4308d7c76d849dcf7316d4e22
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123229"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072666"
 ---
 # <a name="create-deviceconfigurationassignment"></a>Criar deviceConfigurationAssignment
 
@@ -112,6 +112,9 @@ Content-Length: 434
   "sourceId": "Source Id value"
 }
 ```
+
+
+
 
 
 

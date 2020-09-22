@@ -3,14 +3,14 @@ title: Excluir remoteActionAudit
 description: Exclui remoteActionAudit.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b36d1f54b2514f028fcf28841dc8697202bcf7bb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a830890e7b3156f16eb48388ff5879a01bb1fcaf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43323912"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072400"
 ---
 # <a name="delete-remoteactionaudit"></a>Excluir remoteActionAudit
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 97fc51672e9a308129083774ab67531566acdf5b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac6b6547481cccb5baa9b03bebab2d92fd34d410
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453666"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074101"
 ---
 # <a name="list-pages"></a>Listar páginas
 
@@ -102,3 +102,5 @@ Content-length: 393
   "suppressions": []
 }
 -->
+
+

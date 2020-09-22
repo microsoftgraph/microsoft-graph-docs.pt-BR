@@ -3,14 +3,14 @@ title: função getMobileAppCount
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b86a60fe9a9ac80152677e97682bd29f8a57ad13
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4c032c3dd8017aca170e77709e5526e6c0c8a4ab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441315"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074318"
 ---
 # <a name="getmobileappcount-function"></a>função getMobileAppCount
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e um Int64 no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e um Int64 no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -80,6 +80,9 @@ Content-Length: 18
   "value": 1
 }
 ```
+
+
+
 
 
 

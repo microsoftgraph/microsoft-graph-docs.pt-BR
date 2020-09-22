@@ -3,14 +3,14 @@ title: função getManagedDevicesWithFailedOrPendingApps
 description: Recupera a lista de dispositivos com aplicativos com falha ou pendentes
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5758187ea0c28bb1fb53caf7dbecb37fb98f4202
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0469d16dd84482b12dd4e2795c86abff54612424
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451996"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074234"
 ---
 # <a name="getmanageddeviceswithfailedorpendingapps-function"></a>função getManagedDevicesWithFailedOrPendingApps
 
@@ -50,7 +50,7 @@ GET /users/{usersId}/getManagedDevicesWithFailedOrPendingApps
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma coleção [managedDeviceSummarizedAppState](../resources/intune-troubleshooting-manageddevicesummarizedappstate.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma coleção [managedDeviceSummarizedAppState](../resources/intune-troubleshooting-manageddevicesummarizedappstate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -77,6 +77,9 @@ Content-Length: 187
   ]
 }
 ```
+
+
+
 
 
 

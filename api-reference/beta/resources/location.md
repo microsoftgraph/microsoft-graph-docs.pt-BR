@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 265dcc7626aaaee1a43997b8c51cea9feb4763c5
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 764dcfd92095a2432cd42527ba98af1ed0e5c535
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43442713"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073576"
 ---
 # <a name="location-resource-type"></a>Tipo de recurso Location
 
@@ -37,8 +37,8 @@ Dependendo de como um evento é criado, o Outlook pode definir a propriedade **l
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |O endereço físico do local. |
 | coordenadas | [outlookGeoCoordinates](outlookgeocoordinates.md) | As coordenadas geográficas e a elevação do local. |
-| displayName  | String | O nome associado ao local.                       |
-| locationEmailAddress | Cadeia de caracteres | O endereço de email opcional do local. |
+| displayName  | Cadeia de caracteres | O nome associado ao local.                       |
+| locationEmailAddress | String | O endereço de email opcional do local. |
 | locationUri | String | URI opcional que representa o local. |
 | locationType | locationType | O tipo de local. Os valores possíveis são: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Somente leitura.|
 | uniqueId | String | Apenas para uso interno.|
@@ -82,3 +82,5 @@ Dependendo de como um evento é criado, o Outlook pode definir a propriedade **l
   "suppressions": []
 }
 -->
+
+

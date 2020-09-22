@@ -3,14 +3,14 @@ title: tipo de enumeração administratorConfiguredDeviceComplianceState
 description: Enumeração de estado de conformidade do dispositivo configurada pelo administrador
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0fab2ce01a2f10f1ff3e53b3ed86d0f0d6bd6493
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5c9b9201a61967bbb73c3bb5e3bca18528b18fe4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471074"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073947"
 ---
 # <a name="administratorconfigureddevicecompliancestate-enum-type"></a>tipo de enumeração administratorConfiguredDeviceComplianceState
 
@@ -26,7 +26,10 @@ Enumeração de estado de conformidade do dispositivo configurada pelo administr
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |basedOnDeviceCompliancePolicy|,0|Definir o estado de conformidade com base em outras políticas de conformidade|
-|Incompatível|1|Definir conformidade com não compatível|
+|Incompatível|1 |Definir conformidade com não compatível|
+
+
+
 
 
 

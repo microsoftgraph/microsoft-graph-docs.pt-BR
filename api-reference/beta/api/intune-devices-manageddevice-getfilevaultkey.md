@@ -3,14 +3,14 @@ title: função getFileVaultKey
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7afb1ed844b0742df81c2b35bafbf4360deafb26
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 59a841d673a911de89e25962b5b414025070647d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792279"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072526"
 ---
 # <a name="getfilevaultkey-function"></a>função getFileVaultKey
 
@@ -77,6 +77,9 @@ Content-Length: 43
   "value": "Get File Vault Key value"
 }
 ```
+
+
+
 
 
 

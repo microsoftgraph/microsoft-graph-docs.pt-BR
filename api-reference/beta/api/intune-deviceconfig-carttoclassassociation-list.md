@@ -3,14 +3,14 @@ title: Listar cartToClassAssociations
 description: Listar Propriedades e relações dos objetos cartToClassAssociation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 245d4795e393f4b34decc9e970cfe5b2b0b3e5c9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 02e7fe3ea0b3de7b3764dc79ffe0a645a640b829
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434392"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072701"
 ---
 # <a name="list-carttoclassassociations"></a>Listar cartToClassAssociations
 
@@ -50,7 +50,7 @@ GET /deviceManagement/cartToClassAssociations
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -87,6 +87,9 @@ Content-Length: 528
   ]
 }
 ```
+
+
+
 
 
 

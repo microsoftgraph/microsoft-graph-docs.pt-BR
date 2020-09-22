@@ -3,14 +3,14 @@ title: tipo de enumeração defenderPromptForSampleSubmission
 description: Valores possíveis para avisar o usuário para envio de amostras.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d5cf699b386dbf0c6d75a19522529386ab36977d
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 3ee46596bd6d9f788f39afd0d3628f27acebf69b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177699"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073772"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>tipo de enumeração defenderPromptForSampleSubmission
 
@@ -26,10 +26,13 @@ Valores possíveis para avisar o usuário para envio de amostras.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|alwaysPrompt|1|Sempre avisar.|
-|promptBeforeSendingPersonalData|duas|Enviar amostras seguras automaticamente.|
-|neverSendData|3D|Nunca enviar dados.|
+|alwaysPrompt|1 |Sempre avisar.|
+|promptBeforeSendingPersonalData|2 |Enviar amostras seguras automaticamente.|
+|neverSendData|3 |Nunca enviar dados.|
 |sendAllDataWithoutPrompting|4 |Enviar todos os dados sem avisar.|
+
+
+
 
 
 

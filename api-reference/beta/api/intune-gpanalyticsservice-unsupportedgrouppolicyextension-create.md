@@ -3,14 +3,14 @@ title: Criar unsupportedGroupPolicyExtension
 description: Criar um novo objeto unsupportedGroupPolicyExtension.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d7c67d2322d914e156bc6eeff76a957982a38cd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4527a57e68325e18634587661f1a15634ec8c75a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454810"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074556"
 ---
 # <a name="create-unsupportedgrouppolicyextension"></a>Criar unsupportedGroupPolicyExtension
 
@@ -53,16 +53,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar unsuppor
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Definindo o escopo da extensão sem suporte. Os valores possíveis são: `unknown`, `device`, `user`.|
-|namespaceUrl|String|URL do namespace da extensão sem suporte.|
-|ExtensionType|String|ExtensionType da extensão sem suporte.|
-|Nome|String|Nome do nó da extensão sem suporte.|
+|namespaceUrl|Cadeia de caracteres|URL do namespace da extensão sem suporte.|
+|ExtensionType|Cadeia de caracteres|ExtensionType da extensão sem suporte.|
+|Nome|Cadeia de caracteres|Nome do nó da extensão sem suporte.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -98,6 +98,9 @@ Content-Length: 285
   "nodeName": "Node Name value"
 }
 ```
+
+
+
 
 
 

@@ -7,12 +7,12 @@ localization_priority: Normal
 description: O recurso photo fornece propriedades de foto e câmera, por exemplo, metadados EXIF, em um driveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a62a138cbd48645b6b296abcde72af0cef19e259
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 362d4f76f56fa5824985a3580d6008d8c5081a7c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863730"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072848"
 ---
 # <a name="photo-resource-type"></a>Tipo de recurso Photo
 
@@ -49,7 +49,7 @@ O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadad
 | **takenDateTime**       | DateTimeOffset | Representa a data e a hora em que a foto foi tirada. Somente leitura.
 | **cameraMake**          | String         | Fabricante da câmera. Somente leitura.
 | **cameraModel**         | String         | Modelo da câmera. Somente leitura.
-| **fNumber**             | Duplo         | O valor de f-stop da câmera. Somente leitura.
+| **fNumber**             | Double         | O valor de f-stop da câmera. Somente leitura.
 | **exposureDenominator** | Duplo         | O denominador da fração do tempo de exposição da câmera. Somente leitura.
 | **exposureNumerator**   | Duplo         | O numerador da fração do tempo de exposição da câmera. Somente leitura.
 | **focalLength**         | Double         | A distância focal da câmera. Somente leitura.
@@ -68,3 +68,4 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Photo"
 } -->
+

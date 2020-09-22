@@ -3,14 +3,14 @@ title: tipo de enumeração androidEnterpriseAlwaysOnVpnPackageType
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 59a586513cb4a9740835ec9cc8ff32eb1913eb61
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c56d007302e01827f2ed369a32fb77e5a4327314
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444434"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073814"
 ---
 # <a name="androidenterprisealwaysonvpnpackagetype-enum-type"></a>tipo de enumeração androidEnterpriseAlwaysOnVpnPackageType
 
@@ -26,11 +26,14 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado; Esse valor é ignorado.|
-|cliente|1|Nome do pacote personalizado, o profissionais pode fornecer o nome do pacote do cliente VPN que eles desejam usar.|
-|ciscoAnyConnect|duas|Cisco AnyConnect.|
-|f5Access|3D|Acesso a F5.|
+|cliente|1 |Nome do pacote personalizado, o profissionais pode fornecer o nome do pacote do cliente VPN que eles desejam usar.|
+|ciscoAnyConnect|2 |Cisco AnyConnect.|
+|f5Access|3 |Acesso a F5.|
 |paloAltoNetworksGlobalProtect|4 |GlobalProtect de redes de Palo Alto.|
 |pulseSecure|5 |Pulso seguro.|
+
+
+
 
 
 

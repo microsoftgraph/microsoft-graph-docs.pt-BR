@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 84437efcc144e05ebbabaa887fe0d59cff715ff9
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 73bc2ed1c8a94f4f3c4d1135c929d94d6990f40f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896571"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074131"
 ---
 # <a name="section-copytonotebook"></a>seção: copyToNotebook
 
@@ -49,11 +49,11 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|A ID do site do SharePoint para o qual copiar. Use somente ao copiar para um site do SharePoint.|
-|siteId|String|A ID da Web do SharePoint a ser copiada. Use somente ao copiar para um site do SharePoint.|
+|siteCollectionId|Cadeia de caracteres|A ID do site do SharePoint para o qual copiar. Use somente ao copiar para um site do SharePoint.|
+|siteId|Cadeia de caracteres|A ID da Web do SharePoint a ser copiada. Use somente ao copiar para um site do SharePoint.|
 |groupId|Cadeia de caracteres|A ID do grupo para o qual copiar. Use somente ao copiar para um grupo do Microsoft 365.|
 |id|String|Obrigatório. A ID do bloco de anotações de destino. |
-|renomeas|String|O nome da cópia. O padrão é o nome do item existente. |
+|renomeas|Cadeia de caracteres|O nome da cópia. O padrão é o nome do item existente. |
 
 ## <a name="response"></a>Resposta
 
@@ -119,3 +119,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

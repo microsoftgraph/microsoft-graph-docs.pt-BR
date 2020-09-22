@@ -3,14 +3,14 @@ title: Obter circularGeofenceManagementCondition
 description: Leia as propriedades e as relações do objeto circularGeofenceManagementCondition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0dbd0a2e727d45ba881c5af82755c9af1fe08d58
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 3b4c4a3ad10d06b01bc58c347065674713faba7a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177601"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072281"
 ---
 # <a name="get-circulargeofencemanagementcondition"></a>Obter circularGeofenceManagementCondition
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -90,6 +90,9 @@ Content-Length: 586
   }
 }
 ```
+
+
+
 
 
 

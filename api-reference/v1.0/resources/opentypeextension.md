@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: 55777fd3338f362d56934479246ea477459c52cc
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 9ec5f6d03ae3e7884b310b69d14553298aec7718
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863807"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072876"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
@@ -101,3 +101,4 @@ Nenhuma
   "section": "documentation",
   "tocPath": ""
 }-->
+

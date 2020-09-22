@@ -3,14 +3,14 @@ title: Obter policySetItem
 description: Leia as propriedades e as relações do objeto policySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2bbcee35db8f4978b3852f56fd1f3836096e8f6f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bcac5609980861ff68b2088f7f8165ed8896951c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458227"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072162"
 ---
 # <a name="get-policysetitem"></a>Obter policySetItem
 
@@ -87,6 +87,9 @@ Content-Length: 510
   }
 }
 ```
+
+
+
 
 
 

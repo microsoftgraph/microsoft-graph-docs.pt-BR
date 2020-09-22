@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d9398c42c8f4404e2d61a8d63f9d30870cb9d751
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: aac03c9f27d6d9d62d4781d16487538fc212be56
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510830"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073373"
 ---
 # <a name="call-redirect"></a>Call: Redirect
 
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |targets|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento. Se mais de um destino for especificado, será uma chamada toque simultâneo. Isso significa que todos os destinos serão variados ao mesmo tempo e apenas o primeiro destino que escolher será conectado. Oferecemos suporte para até 25 metas para o toque simultâneo.
 |timeout|Int32|O tempo limite (em segundos) para a operação de redirecionamento. O intervalo do valor de tempo limite é entre 15 e 90 segundos, inclusive. O valor de tempo limite padrão é de 55 segundos para um destino e 60 segundos para vários destinos (sujeito a alterações). |
-|callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https`.|
+|callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https` .|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `202 Accepted`.
@@ -291,7 +291,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitar
+##### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "ignored", 
@@ -413,3 +413,4 @@ Content-Type: application/json
   ]
 }
 -->
+

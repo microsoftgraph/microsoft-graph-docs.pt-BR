@@ -3,14 +3,14 @@ title: Ação executeAction
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b16beb4e8a40c674e3c1a95d937d21893df595e
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 4a6349e8df37dc78c7e0d6e38832742265025a3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792293"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072540"
 ---
 # <a name="executeaction-action"></a>Ação executeAction
 
@@ -117,6 +117,9 @@ Content-Length: 385
   }
 }
 ```
+
+
+
 
 
 

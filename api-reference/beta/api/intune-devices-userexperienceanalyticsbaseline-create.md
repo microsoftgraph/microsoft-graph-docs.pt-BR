@@ -3,14 +3,14 @@ title: Criar userExperienceAnalyticsBaseline
 description: Criar um novo objeto userExperienceAnalyticsBaseline.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c11f14f2a281ab2317645a71abc0effaf541fb0d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b8c6b1472fcee0f38c561be44685b2583f0d6fc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43323441"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072323"
 ---
 # <a name="create-userexperienceanalyticsbaseline"></a>Criar userExperienceAnalyticsBaseline
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da linha de base da análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo da linha de base da análise da experiência do usuário.|
 |displayName|Cadeia de caracteres|O nome da linha de base da análise da experiência do usuário.|
 |overallScore|Int32|A pontuação geral da linha de base da análise da experiência do usuário.|
 |isBuiltIn|Booliano|Significa se a linha de base atual é a linha de base mediana comercial ou uma linha de base personalizada.|
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -97,6 +97,9 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
+
+
+
 
 
 

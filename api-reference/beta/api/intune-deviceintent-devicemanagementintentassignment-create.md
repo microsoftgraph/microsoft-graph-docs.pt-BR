@@ -3,14 +3,14 @@ title: Criar deviceManagementIntentAssignment
 description: Criar um novo objeto deviceManagementIntentAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63eb168a175613fdca7c84559fcd5c368958c446
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: fcd8e87a5b1469d6180af5da1a58e1181eed90e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792573"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072568"
 ---
 # <a name="create-devicemanagementintentassignment"></a>Criar deviceManagementIntentAssignment
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da atribuição|
+|id|Cadeia de caracteres|A ID da atribuição|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição|
 
 
@@ -97,6 +97,9 @@ Content-Length: 376
   }
 }
 ```
+
+
+
 
 
 

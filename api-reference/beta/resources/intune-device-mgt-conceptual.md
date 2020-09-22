@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6fa0cf5dff76290f0df56860c86df13d1a4ffb3a
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 4c365a5713d8a2b9da24e1a8eee89121395ec6e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791600"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073954"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -169,6 +169,7 @@ Namespace: microsoft.graph
 - [Dispositivo gerenciado](intune-devices-manageddevice.md)
 - [Arquitetura de dispositivo gerenciado](intune-devices-manageddevicearchitecture.md)
 - [Configurações de limpeza do dispositivo gerenciado](intune-devices-manageddevicecleanupsettings.md)
+- [Recursos de gerenciamento de dispositivos gerenciados](intune-devices-manageddevicemanagementfeatures.md)
 - [Modelos e fabricantes de dispositivos gerenciados](intune-devices-manageddevicemodelsandmanufacturers.md)
 - [Visão geral do dispositivo gerenciado](intune-devices-manageddeviceoverview.md)
 - [Estado de integridade reportado pelo parceiro do dispositivo gerenciado](intune-devices-manageddevicepartnerreportedhealthstate.md)
@@ -217,7 +218,13 @@ Namespace: microsoft.graph
 - [Expressões de condição de gerenciamento unário](intune-fencing-unarymanagementconditionexpression.md)
 - [Tipo de operador de expressão de condição de gerenciamento unário](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Parâmetro da ação de atualização de conta de dispositivo Windows](intune-devices-updatewindowsdeviceaccountactionparameter.md)
+- [Desempenho do aplicativo de integridade do aplicativo de análise de experiência do usuário por versão do aplicativo](intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)
+- [Desempenho do aplicativo de análise da experiência do usuário do aplicativo de integridade da versão s](intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)
 - [Desempenho do aplicativo de análise da experiência do usuário](intune-devices-userexperienceanalyticsapphealthapplicationperformance.md)
+- [Desempenho do modelo de dispositivo de integridade do aplicativo de análise de experiência do usuário](intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md)
+- [Desempenho do dispositivo de integridade do aplicativo de análise da experiência do usuário](intune-devices-userexperienceanalyticsapphealthdeviceperformance.md)
+- [Detalhes de desempenho do dispositivo de análise de experiência do usuário](intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)
+- [Desempenho da versão do aplicativo de análise da experiência do usuário](intune-devices-userexperienceanalyticsapphealthosversionperformance.md)
 - [Linha de base de análise da experiência do usuário](intune-devices-userexperienceanalyticsbaseline.md)
 - [Categoria de análise da experiência do usuário](intune-devices-userexperienceanalyticscategory.md)
 - [Desempenho do dispositivo de análise da experiência do usuário](intune-devices-userexperienceanalyticsdeviceperformance.md)
@@ -261,3 +268,5 @@ Namespace: microsoft.graph
 - [Aplicativo de gerenciamento do Windows](intune-devices-windowsmanagementapp.md)
 - [Estado de integridade do aplicativo de gerenciamento do Windows](intune-devices-windowsmanagementapphealthstate.md)
 - [Estado de proteção do Windows](intune-devices-windowsprotectionstate.md)
+
+

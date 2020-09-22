@@ -3,14 +3,14 @@ title: tipo de recurso androidManagedStoreAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel de repositório gerenciado do Android a um grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cfdca91e3499a495ba810b1c791653d62c769e4a
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 383c272efc420cba893208e806a29df55f5429f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178210"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073674"
 ---
 # <a name="androidmanagedstoreappassignmentsettings-resource-type"></a>tipo de recurso androidManagedStoreAppAssignmentSettings
 
@@ -28,7 +28,7 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassig
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|androidManagedStoreAppTrackIds|Conjunto de cadeias de caracteres|As IDs de acompanhamento a serem habilitadas para esta atribuição de aplicativo.|
+|androidManagedStoreAppTrackIds|Coleção de cadeias de caracteres|As IDs de acompanhamento a serem habilitadas para esta atribuição de aplicativo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -48,6 +48,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

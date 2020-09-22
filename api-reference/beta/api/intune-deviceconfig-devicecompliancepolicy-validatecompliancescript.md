@@ -3,14 +3,14 @@ title: ação validateComplianceScript
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 16d7b5ad18a1ba9389d4c68bb88d5f88335efc2c
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 9563a39a47655da615553e202da4211426fb9d9f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793049"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072687"
 ---
 # <a name="validatecompliancescript-action"></a>ação validateComplianceScript
 
@@ -116,6 +116,9 @@ Content-Length: 786
   }
 }
 ```
+
+
+
 
 
 

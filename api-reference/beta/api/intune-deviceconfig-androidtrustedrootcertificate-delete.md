@@ -3,14 +3,14 @@ title: Excluir androidTrustedRootCertificate
 description: Exclui androidTrustedRootCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd5b7e21d055c4e592e722149ad26bee88e34810
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 999fe1db93b01ddb408d6f0f71b5e78144d22fe3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43344289"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072834"
 ---
 # <a name="delete-androidtrustedrootcertificate"></a>Excluir androidTrustedRootCertificate
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

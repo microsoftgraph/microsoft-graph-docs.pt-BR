@@ -3,14 +3,14 @@ title: Obter deviceManagementScript
 description: Leia as propriedades e as relações do objeto deviceManagementScript.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b8f47ac9d50ff5dc55cef27a7d11c1e93fb82efb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 26d0c660d8285491fecbd7372a5018a6cf5d8d20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389714"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074325"
 ---
 # <a name="get-devicemanagementscript"></a>Obter deviceManagementScript
 
@@ -96,6 +96,9 @@ Content-Length: 668
   }
 }
 ```
+
+
+
 
 
 

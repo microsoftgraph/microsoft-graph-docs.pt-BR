@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 73abcc34462f776d669e9188ffeef92b28f15d01
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: ea1a76aeab6437b46aa5ce4c9068b6f7ee6312b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556265"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074255"
 ---
 # <a name="get-onpremisesagentgroup"></a>Obter onPremisesAgentGroup
 
@@ -132,3 +132,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

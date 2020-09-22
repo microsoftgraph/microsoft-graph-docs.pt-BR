@@ -3,14 +3,14 @@ title: Ação windowsDefenderScan
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63a32fd568ba5af56d15ee80ee8afec937248f7a
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: c2f0f26cc0f0694358d01b746293c1c0660cc583
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792146"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072442"
 ---
 # <a name="windowsdefenderscan-action"></a>Ação windowsDefenderScan
 
@@ -86,6 +86,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Atualizar mobileAppIntentAndState
 description: Atualiza as propriedades de um objeto mobileAppIntentAndState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 191b84defff89abd769a4b1d135e83e345f78898
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c00df817e22ba6996c9cc5a4a99ae1654fec2950
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473928"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074241"
 ---
 # <a name="update-mobileappintentandstate"></a>Atualizar mobileAppIntentAndState
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O UUID do objeto.|
+|id|Cadeia de caracteres|O UUID do objeto.|
 |managedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo criado ou coletado pelo Intune.|
 |userId|Cadeia de caracteres|Identificador do usuário que tentou registrar o dispositivo.|
 |mobileAppList|coleção [mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|A lista de efeitos e Estados de carga para o locatário.|
@@ -61,7 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileA
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -129,6 +129,9 @@ Content-Length: 880
   ]
 }
 ```
+
+
+
 
 
 

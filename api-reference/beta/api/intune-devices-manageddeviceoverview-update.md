@@ -3,14 +3,14 @@ title: Atualizar managedDeviceOverview
 description: Atualizar as propriedades de um objeto managedDeviceOverview.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e0034c22be5b8a33d2fe46e1115c2bed5a08958
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 160da271112fb6dc3efaaa510fb8e2a4873b9289
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122711"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072414"
 ---
 # <a name="update-manageddeviceoverview"></a>Atualizar managedDeviceOverview
 
@@ -74,7 +74,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1158
+Content-length: 1187
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -94,7 +94,8 @@ Content-length: 1158
     "androidFullyManagedCount": 8,
     "androidWorkProfileCount": 7,
     "androidCorporateWorkProfileCount": 0,
-    "configMgrDeviceCount": 4
+    "configMgrDeviceCount": 4,
+    "aospUserlessCount": 1
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -121,7 +122,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1271
+Content-Length: 1300
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -142,7 +143,8 @@ Content-Length: 1271
     "androidFullyManagedCount": 8,
     "androidWorkProfileCount": 7,
     "androidCorporateWorkProfileCount": 0,
-    "configMgrDeviceCount": 4
+    "configMgrDeviceCount": 4,
+    "aospUserlessCount": 1
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -164,6 +166,9 @@ Content-Length: 1271
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

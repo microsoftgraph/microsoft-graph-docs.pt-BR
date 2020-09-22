@@ -3,14 +3,14 @@ title: tipo de recurso companyPortalBlockedAction
 description: Ações bloqueadas no portal da empresa de acordo com os tipos de propriedade de plataforma e dispositivo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ebaea7b233a4a596db12e93643992d6ef7a15cc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 005d87adb78b008daea3d55a86c8b75661d41e52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073653"
 ---
 # <a name="companyportalblockedaction-resource-type"></a>tipo de recurso companyPortalBlockedAction
 
@@ -25,7 +25,7 @@ Ações bloqueadas no portal da empresa de acordo com os tipos de propriedade de
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Sistema operacional/plataforma do dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|plataforma|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Sistema operacional/plataforma do dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|Tipo de propriedade de dispositivo. Os valores possíveis são: `unknown`, `company`, `personal`.|
 |ação|[companyPortalAction](../resources/intune-shared-companyportalaction.md)|Ação de dispositivo. Os valores possíveis são: `unknown`, `remove`, `reset`.|
 
@@ -47,6 +47,9 @@ Veja a seguir uma representação JSON do recurso.
   "action": "String"
 }
 ```
+
+
+
 
 
 

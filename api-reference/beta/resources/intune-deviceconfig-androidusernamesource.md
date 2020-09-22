@@ -3,14 +3,14 @@ title: tipo de enumeração androidUsernameSource
 description: Fonte de nome de usuário Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 16fba6688ac860c275340d9592b5f258c20acbbe
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 364ba8d05b90d9846be36eb351998c520b3085ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43402686"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073786"
 ---
 # <a name="androidusernamesource-enum-type"></a>tipo de enumeração androidUsernameSource
 
@@ -26,9 +26,12 @@ Fonte de nome de usuário Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |username|,0|O nome de usuário.|
-|userPrincipalName|1|O nome da entidade de segurança do usuário.|
-|samAccountName|duas|O nome da conta Sam do usuário.|
-|primarySmtpAddress|3D|Endereço SMTP principal.|
+|userPrincipalName|1 |O nome da entidade de segurança do usuário.|
+|samAccountName|2 |O nome da conta Sam do usuário.|
+|primarySmtpAddress|3 |Endereço SMTP principal.|
+
+
+
 
 
 

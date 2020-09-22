@@ -3,14 +3,14 @@ title: Obter deviceManagementReports
 description: Leia as propriedades e as relações do objeto deviceManagementReports.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58c1d10d918dc3aca3e848e7dfafbe43e64366fb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1a15526edacda4531b49019f6fc44f9f0a4d26c4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454393"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074465"
 ---
 # <a name="get-devicemanagementreports"></a>Obter deviceManagementReports
 
@@ -77,6 +77,9 @@ Content-Length: 137
   }
 }
 ```
+
+
+
 
 
 

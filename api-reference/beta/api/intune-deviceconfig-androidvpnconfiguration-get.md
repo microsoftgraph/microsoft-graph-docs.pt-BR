@@ -3,14 +3,14 @@ title: Obter androidVpnConfiguration
 description: Leia as propriedades e as relações do objeto androidVpnConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d2a307afad410afca06193c84667a120142e10ec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d02b960072467941a1d4828e9a7e3bd3e234eaad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43343881"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072806"
 ---
 # <a name="get-androidvpnconfiguration"></a>Obter androidVpnConfiguration
 
@@ -137,6 +137,9 @@ Content-Length: 2062
   }
 }
 ```
+
+
+
 
 
 

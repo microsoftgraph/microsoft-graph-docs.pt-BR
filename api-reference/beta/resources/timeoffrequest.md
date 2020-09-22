@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f27f0ccbd3e73ade95dedca49c15fe1489d773b5
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 1b1e6c3f55b716590a399c9324ea759ff93810d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154378"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073387"
 ---
 # <a name="timeoffrequest-resource-type"></a>tipo de recurso timeOffRequest
 
@@ -26,7 +26,7 @@ Representa um tipo de solicitação de mudança para obter [timeoff](../resource
 |:-------------|:------------|:------------|
 | [List](../api/timeoffrequest-list.md) | coleção [timeOffRequest](timeoffrequest.md) | Obtenha a lista de objetos **timeOffRequest** neste cronograma.|
 | [Get](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | Leia as propriedades e os relacionamentos de um objeto **timeOffRequest** . |
-| [Delete](../api/timeoffrequest-delete.md) | None | Excluir um objeto **timeOffRequest** . |
+| [Delete](../api/timeoffrequest-delete.md) | Nenhum | Excluir um objeto **timeOffRequest** . |
 | [Aprovar](../api/timeoffrequest-approve.md)|Nenhum|Aprovar uma solicitação de tempo limite.|
 | [Aceito](../api/timeoffrequest-decline.md)|Nenhum|Recusar uma solicitação de tempo limite.|
 
@@ -72,3 +72,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
