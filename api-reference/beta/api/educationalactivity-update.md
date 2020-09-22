@@ -5,32 +5,32 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: dc0298b61eefe8ab3897f5014875bf4d9120da4b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7567991adb04ad6af969dc35733dd66856953dfb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810899"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007900"
 ---
-# <a name="update-educationalactivity"></a><span data-ttu-id="8606e-103">Atualizar educationalactivity</span><span class="sxs-lookup"><span data-stu-id="8606e-103">Update educationalactivity</span></span>
+# <a name="update-educationalactivity"></a><span data-ttu-id="af49d-103">Atualizar educationalactivity</span><span class="sxs-lookup"><span data-stu-id="af49d-103">Update educationalactivity</span></span>
 
-<span data-ttu-id="8606e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8606e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="af49d-104">Namespace: Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="af49d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8606e-105">Atualizar as propriedades de um objeto [educationalActivity](../resources/educationalactivity.md) no [perfil](../resources/profile.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="8606e-105">Update the properties of an [educationalActivity](../resources/educationalactivity.md) object within a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="af49d-105">Atualizar as propriedades de um objeto [educationalActivity](../resources/educationalactivity.md) no [perfil](../resources/profile.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="af49d-105">Update the properties of an [educationalActivity](../resources/educationalactivity.md) object within a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8606e-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="8606e-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="af49d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="af49d-106">Permissions</span></span>
 
-<span data-ttu-id="8606e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8606e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="af49d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="af49d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="8606e-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8606e-109">Permission type</span></span>                        | <span data-ttu-id="8606e-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8606e-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="af49d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="af49d-109">Permission type</span></span>                        | <span data-ttu-id="af49d-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="af49d-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="8606e-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8606e-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="8606e-112">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="8606e-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="8606e-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8606e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8606e-114">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="8606e-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="8606e-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8606e-115">Application</span></span>                            | <span data-ttu-id="8606e-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8606e-116">User.ReadWrite.All</span></span>                          |
+| <span data-ttu-id="af49d-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="af49d-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="af49d-112">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="af49d-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="af49d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="af49d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="af49d-114">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="af49d-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="af49d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="af49d-115">Application</span></span>                            | <span data-ttu-id="af49d-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="af49d-116">User.ReadWrite.All</span></span>                          |
 
-## <a name="http-request"></a><span data-ttu-id="8606e-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8606e-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="af49d-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="af49d-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,38 +39,38 @@ PATCH /me/profile/educationalActivities/{id}
 PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8606e-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8606e-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="af49d-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="af49d-118">Request headers</span></span>
 
-| <span data-ttu-id="8606e-119">Nome</span><span class="sxs-lookup"><span data-stu-id="8606e-119">Name</span></span>           |<span data-ttu-id="8606e-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="8606e-120">Description</span></span>                  |
+| <span data-ttu-id="af49d-119">Nome</span><span class="sxs-lookup"><span data-stu-id="af49d-119">Name</span></span>           |<span data-ttu-id="af49d-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="af49d-120">Description</span></span>                  |
 |:---------------|:----------------------------|
-| <span data-ttu-id="8606e-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="8606e-121">Authorization</span></span>  | <span data-ttu-id="8606e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8606e-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="8606e-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8606e-124">Content-Type</span></span>   | <span data-ttu-id="8606e-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8606e-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="af49d-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="af49d-121">Authorization</span></span>  | <span data-ttu-id="af49d-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="af49d-p102">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="af49d-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="af49d-124">Content-Type</span></span>   | <span data-ttu-id="af49d-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="af49d-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8606e-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8606e-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="af49d-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="af49d-127">Request body</span></span>
 
-<span data-ttu-id="8606e-128">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="8606e-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="8606e-129">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="8606e-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="8606e-130">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="8606e-130">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="af49d-128">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="af49d-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="af49d-129">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="af49d-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="af49d-130">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="af49d-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-|<span data-ttu-id="8606e-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8606e-131">Property</span></span>|<span data-ttu-id="8606e-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="8606e-132">Type</span></span>|<span data-ttu-id="8606e-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="8606e-133">Description</span></span>|
+|<span data-ttu-id="af49d-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="af49d-131">Property</span></span>|<span data-ttu-id="af49d-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="af49d-132">Type</span></span>|<span data-ttu-id="af49d-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="af49d-133">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8606e-134">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="8606e-134">allowedAudiences</span></span>|<span data-ttu-id="8606e-135">String</span><span class="sxs-lookup"><span data-stu-id="8606e-135">String</span></span>|<span data-ttu-id="8606e-136">As audiências que podem ver os valores contidos na entidade.</span><span class="sxs-lookup"><span data-stu-id="8606e-136">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="8606e-137">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="8606e-137">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="8606e-138">Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="8606e-138">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
-|<span data-ttu-id="8606e-139">completionMonthYear</span><span class="sxs-lookup"><span data-stu-id="8606e-139">completionMonthYear</span></span>|<span data-ttu-id="8606e-140">Data</span><span class="sxs-lookup"><span data-stu-id="8606e-140">Date</span></span>|<span data-ttu-id="8606e-141">O mês e o ano em que o usuário formou ou concluiu a atividade.</span><span class="sxs-lookup"><span data-stu-id="8606e-141">The month and year the user graduated or completed the activity.</span></span> |
-|<span data-ttu-id="8606e-142">endMonthYear</span><span class="sxs-lookup"><span data-stu-id="8606e-142">endMonthYear</span></span>|<span data-ttu-id="8606e-143">Data</span><span class="sxs-lookup"><span data-stu-id="8606e-143">Date</span></span>|<span data-ttu-id="8606e-144">O mês e o ano em que o usuário concluiu a atividade educacional referenciada.</span><span class="sxs-lookup"><span data-stu-id="8606e-144">The month and year the user completed the educational activity referenced.</span></span>|
-|<span data-ttu-id="8606e-145">fracassa</span><span class="sxs-lookup"><span data-stu-id="8606e-145">inference</span></span>|[<span data-ttu-id="8606e-146">inferenceData</span><span class="sxs-lookup"><span data-stu-id="8606e-146">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="8606e-147">Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação.</span><span class="sxs-lookup"><span data-stu-id="8606e-147">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="8606e-148">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="8606e-148">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
-|<span data-ttu-id="8606e-149">instituição</span><span class="sxs-lookup"><span data-stu-id="8606e-149">institution</span></span>|[<span data-ttu-id="8606e-150">institutionData</span><span class="sxs-lookup"><span data-stu-id="8606e-150">institutionData</span></span>](../resources/institutiondata.md)|<span data-ttu-id="8606e-151">Contém detalhes da instituição estudada em.</span><span class="sxs-lookup"><span data-stu-id="8606e-151">Contains details of the institution studied at.</span></span> |
-|<span data-ttu-id="8606e-152">programa</span><span class="sxs-lookup"><span data-stu-id="8606e-152">program</span></span>|[<span data-ttu-id="8606e-153">educationalActivityDetail</span><span class="sxs-lookup"><span data-stu-id="8606e-153">educationalActivityDetail</span></span>](../resources/educationalactivitydetail.md)|<span data-ttu-id="8606e-154">Contém informações estendidas sobre o programa ou o curso.</span><span class="sxs-lookup"><span data-stu-id="8606e-154">Contains extended information about the program or course.</span></span>|
-|<span data-ttu-id="8606e-155">startMonthYear</span><span class="sxs-lookup"><span data-stu-id="8606e-155">startMonthYear</span></span>|<span data-ttu-id="8606e-156">Data</span><span class="sxs-lookup"><span data-stu-id="8606e-156">Date</span></span>|<span data-ttu-id="8606e-157">O mês e o ano em que o usuário tiver iniciado a atividade referenciada.</span><span class="sxs-lookup"><span data-stu-id="8606e-157">The month and year the user commenced the activity referenced.</span></span>|
+|<span data-ttu-id="af49d-134">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="af49d-134">allowedAudiences</span></span>|<span data-ttu-id="af49d-135">String</span><span class="sxs-lookup"><span data-stu-id="af49d-135">String</span></span>|<span data-ttu-id="af49d-136">As audiências que podem ver os valores contidos na entidade.</span><span class="sxs-lookup"><span data-stu-id="af49d-136">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="af49d-137">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="af49d-137">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="af49d-138">Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="af49d-138">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="af49d-139">completionMonthYear</span><span class="sxs-lookup"><span data-stu-id="af49d-139">completionMonthYear</span></span>|<span data-ttu-id="af49d-140">Data</span><span class="sxs-lookup"><span data-stu-id="af49d-140">Date</span></span>|<span data-ttu-id="af49d-141">O mês e o ano em que o usuário formou ou concluiu a atividade.</span><span class="sxs-lookup"><span data-stu-id="af49d-141">The month and year the user graduated or completed the activity.</span></span> |
+|<span data-ttu-id="af49d-142">endMonthYear</span><span class="sxs-lookup"><span data-stu-id="af49d-142">endMonthYear</span></span>|<span data-ttu-id="af49d-143">Data</span><span class="sxs-lookup"><span data-stu-id="af49d-143">Date</span></span>|<span data-ttu-id="af49d-144">O mês e o ano em que o usuário concluiu a atividade educacional referenciada.</span><span class="sxs-lookup"><span data-stu-id="af49d-144">The month and year the user completed the educational activity referenced.</span></span>|
+|<span data-ttu-id="af49d-145">fracassa</span><span class="sxs-lookup"><span data-stu-id="af49d-145">inference</span></span>|[<span data-ttu-id="af49d-146">inferenceData</span><span class="sxs-lookup"><span data-stu-id="af49d-146">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="af49d-147">Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação.</span><span class="sxs-lookup"><span data-stu-id="af49d-147">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="af49d-148">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="af49d-148">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="af49d-149">instituição</span><span class="sxs-lookup"><span data-stu-id="af49d-149">institution</span></span>|[<span data-ttu-id="af49d-150">institutionData</span><span class="sxs-lookup"><span data-stu-id="af49d-150">institutionData</span></span>](../resources/institutiondata.md)|<span data-ttu-id="af49d-151">Contém detalhes da instituição estudada em.</span><span class="sxs-lookup"><span data-stu-id="af49d-151">Contains details of the institution studied at.</span></span> |
+|<span data-ttu-id="af49d-152">programa</span><span class="sxs-lookup"><span data-stu-id="af49d-152">program</span></span>|[<span data-ttu-id="af49d-153">educationalActivityDetail</span><span class="sxs-lookup"><span data-stu-id="af49d-153">educationalActivityDetail</span></span>](../resources/educationalactivitydetail.md)|<span data-ttu-id="af49d-154">Contém informações estendidas sobre o programa ou o curso.</span><span class="sxs-lookup"><span data-stu-id="af49d-154">Contains extended information about the program or course.</span></span>|
+|<span data-ttu-id="af49d-155">startMonthYear</span><span class="sxs-lookup"><span data-stu-id="af49d-155">startMonthYear</span></span>|<span data-ttu-id="af49d-156">Data</span><span class="sxs-lookup"><span data-stu-id="af49d-156">Date</span></span>|<span data-ttu-id="af49d-157">O mês e o ano em que o usuário tiver iniciado a atividade referenciada.</span><span class="sxs-lookup"><span data-stu-id="af49d-157">The month and year the user commenced the activity referenced.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="8606e-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="8606e-158">Response</span></span>
+## <a name="response"></a><span data-ttu-id="af49d-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="af49d-158">Response</span></span>
 
-<span data-ttu-id="8606e-159">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationalActivity](../resources/educationalactivity.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8606e-159">If successful, this method returns a `200 OK` response code and an updated [educationalActivity](../resources/educationalactivity.md) object in the response body.</span></span>
+<span data-ttu-id="af49d-159">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationalActivity](../resources/educationalactivity.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="af49d-159">If successful, this method returns a `200 OK` response code and an updated [educationalActivity](../resources/educationalactivity.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="8606e-160">Exemplos</span><span class="sxs-lookup"><span data-stu-id="8606e-160">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="af49d-160">Exemplos</span><span class="sxs-lookup"><span data-stu-id="af49d-160">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="8606e-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8606e-161">Request</span></span>
+### <a name="request"></a><span data-ttu-id="af49d-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="af49d-161">Request</span></span>
 
-<span data-ttu-id="8606e-162">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8606e-162">The following is an example of the request.</span></span>
+<span data-ttu-id="af49d-162">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="af49d-162">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="8606e-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="8606e-163">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="af49d-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="af49d-163">HTTP</span></span>](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -96,25 +96,25 @@ Content-type: application/json
 }
 ```
 
-# <a name="c"></a>[<span data-ttu-id="8606e-164">C#</span><span class="sxs-lookup"><span data-stu-id="8606e-164">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="af49d-164">C#</span><span class="sxs-lookup"><span data-stu-id="af49d-164">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationalactivity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8606e-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8606e-165">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="af49d-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="af49d-165">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationalactivity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8606e-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8606e-166">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="af49d-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="af49d-166">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationalactivity-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="8606e-167">Resposta</span><span class="sxs-lookup"><span data-stu-id="8606e-167">Response</span></span>
+### <a name="response"></a><span data-ttu-id="af49d-167">Resposta</span><span class="sxs-lookup"><span data-stu-id="af49d-167">Response</span></span>
 
-<span data-ttu-id="8606e-168">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8606e-168">The following is an example of the response.</span></span>
+<span data-ttu-id="af49d-168">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="af49d-168">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="8606e-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8606e-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="af49d-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="af49d-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -179,3 +179,5 @@ Content-type: application/json
   "startMonthYear": "Date"
 }
 ```
+
+
