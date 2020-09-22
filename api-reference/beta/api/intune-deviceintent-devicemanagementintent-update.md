@@ -3,35 +3,35 @@ title: Atualizar deviceManagementIntent
 description: Atualiza as propriedades de um objeto deviceManagementIntent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 30057c5ca95b305aa749b063b8601dc0ae120382
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5dc51dad56668b6e7d4073b79685ad5df69d2365
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43327816"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090589"
 ---
-# <a name="update-devicemanagementintent"></a><span data-ttu-id="7d777-103">Atualizar deviceManagementIntent</span><span class="sxs-lookup"><span data-stu-id="7d777-103">Update deviceManagementIntent</span></span>
+# <a name="update-devicemanagementintent"></a><span data-ttu-id="e4fec-103">Atualizar deviceManagementIntent</span><span class="sxs-lookup"><span data-stu-id="e4fec-103">Update deviceManagementIntent</span></span>
 
-<span data-ttu-id="7d777-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7d777-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e4fec-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e4fec-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="7d777-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="7d777-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e4fec-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e4fec-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7d777-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="7d777-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e4fec-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e4fec-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7d777-107">Atualiza as propriedades de um objeto [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) .</span><span class="sxs-lookup"><span data-stu-id="7d777-107">Update the properties of a [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) object.</span></span>
+<span data-ttu-id="e4fec-107">Atualiza as propriedades de um objeto [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) .</span><span class="sxs-lookup"><span data-stu-id="e4fec-107">Update the properties of a [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="7d777-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="7d777-108">Prerequisites</span></span>
-<span data-ttu-id="7d777-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7d777-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e4fec-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="e4fec-108">Prerequisites</span></span>
+<span data-ttu-id="e4fec-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e4fec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7d777-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7d777-111">Permission type</span></span>|<span data-ttu-id="7d777-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="7d777-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e4fec-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e4fec-111">Permission type</span></span>|<span data-ttu-id="e4fec-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="e4fec-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="7d777-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7d777-113">Delegated (work or school account)</span></span>|<span data-ttu-id="7d777-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d777-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="7d777-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7d777-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7d777-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7d777-116">Not supported.</span></span>|
-|<span data-ttu-id="7d777-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7d777-117">Application</span></span>|<span data-ttu-id="7d777-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d777-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="e4fec-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e4fec-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e4fec-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e4fec-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="e4fec-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e4fec-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e4fec-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e4fec-116">Not supported.</span></span>|
+|<span data-ttu-id="e4fec-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e4fec-117">Application</span></span>|<span data-ttu-id="e4fec-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e4fec-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7d777-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7d777-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e4fec-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e4fec-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,36 +40,36 @@ ms.locfileid: "43327816"
 PATCH /deviceManagement/intents/{deviceManagementIntentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7d777-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7d777-120">Request headers</span></span>
-|<span data-ttu-id="7d777-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7d777-121">Header</span></span>|<span data-ttu-id="7d777-122">Valor</span><span class="sxs-lookup"><span data-stu-id="7d777-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e4fec-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e4fec-120">Request headers</span></span>
+|<span data-ttu-id="e4fec-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="e4fec-121">Header</span></span>|<span data-ttu-id="e4fec-122">Valor</span><span class="sxs-lookup"><span data-stu-id="e4fec-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="7d777-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="7d777-123">Authorization</span></span>|<span data-ttu-id="7d777-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7d777-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="7d777-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="7d777-125">Accept</span></span>|<span data-ttu-id="7d777-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7d777-126">application/json</span></span>|
+|<span data-ttu-id="e4fec-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="e4fec-123">Authorization</span></span>|<span data-ttu-id="e4fec-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e4fec-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e4fec-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="e4fec-125">Accept</span></span>|<span data-ttu-id="e4fec-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e4fec-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7d777-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7d777-127">Request body</span></span>
-<span data-ttu-id="7d777-128">No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) .</span><span class="sxs-lookup"><span data-stu-id="7d777-128">In the request body, supply a JSON representation for the [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e4fec-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e4fec-127">Request body</span></span>
+<span data-ttu-id="e4fec-128">No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) .</span><span class="sxs-lookup"><span data-stu-id="e4fec-128">In the request body, supply a JSON representation for the [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) object.</span></span>
 
-<span data-ttu-id="7d777-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md).</span><span class="sxs-lookup"><span data-stu-id="7d777-129">The following table shows the properties that are required when you create the [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md).</span></span>
+<span data-ttu-id="e4fec-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md).</span><span class="sxs-lookup"><span data-stu-id="e4fec-129">The following table shows the properties that are required when you create the [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md).</span></span>
 
-|<span data-ttu-id="7d777-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7d777-130">Property</span></span>|<span data-ttu-id="7d777-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="7d777-131">Type</span></span>|<span data-ttu-id="7d777-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="7d777-132">Description</span></span>|
+|<span data-ttu-id="e4fec-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e4fec-130">Property</span></span>|<span data-ttu-id="e4fec-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="e4fec-131">Type</span></span>|<span data-ttu-id="e4fec-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="e4fec-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7d777-133">id</span><span class="sxs-lookup"><span data-stu-id="7d777-133">id</span></span>|<span data-ttu-id="7d777-134">String</span><span class="sxs-lookup"><span data-stu-id="7d777-134">String</span></span>|<span data-ttu-id="7d777-135">A ID de intenção</span><span class="sxs-lookup"><span data-stu-id="7d777-135">The intent ID</span></span>|
-|<span data-ttu-id="7d777-136">displayName</span><span class="sxs-lookup"><span data-stu-id="7d777-136">displayName</span></span>|<span data-ttu-id="7d777-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="7d777-137">String</span></span>|<span data-ttu-id="7d777-138">O nome de exibição fornecido pelo usuário</span><span class="sxs-lookup"><span data-stu-id="7d777-138">The user given display name</span></span>|
-|<span data-ttu-id="7d777-139">description</span><span class="sxs-lookup"><span data-stu-id="7d777-139">description</span></span>|<span data-ttu-id="7d777-140">String</span><span class="sxs-lookup"><span data-stu-id="7d777-140">String</span></span>|<span data-ttu-id="7d777-141">Descrição fornecida pelo usuário</span><span class="sxs-lookup"><span data-stu-id="7d777-141">The user given description</span></span>|
-|<span data-ttu-id="7d777-142">isAssigned</span><span class="sxs-lookup"><span data-stu-id="7d777-142">isAssigned</span></span>|<span data-ttu-id="7d777-143">Boolean</span><span class="sxs-lookup"><span data-stu-id="7d777-143">Boolean</span></span>|<span data-ttu-id="7d777-144">Significa se a intenção é atribuída ou não aos usuários</span><span class="sxs-lookup"><span data-stu-id="7d777-144">Signifies whether or not the intent is assigned to users</span></span>|
-|<span data-ttu-id="7d777-145">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="7d777-145">lastModifiedDateTime</span></span>|<span data-ttu-id="7d777-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7d777-146">DateTimeOffset</span></span>|<span data-ttu-id="7d777-147">Quando a intenção foi modificada pela última vez</span><span class="sxs-lookup"><span data-stu-id="7d777-147">When the intent was last modified</span></span>|
-|<span data-ttu-id="7d777-148">templateId</span><span class="sxs-lookup"><span data-stu-id="7d777-148">templateId</span></span>|<span data-ttu-id="7d777-149">String</span><span class="sxs-lookup"><span data-stu-id="7d777-149">String</span></span>|<span data-ttu-id="7d777-150">A ID do modelo de que esta intenção foi criada (se houver)</span><span class="sxs-lookup"><span data-stu-id="7d777-150">The ID of the template this intent was created from (if any)</span></span>|
-|<span data-ttu-id="7d777-151">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="7d777-151">roleScopeTagIds</span></span>|<span data-ttu-id="7d777-152">Coleção String</span><span class="sxs-lookup"><span data-stu-id="7d777-152">String collection</span></span>|<span data-ttu-id="7d777-153">Lista de marcas de escopo para esta instância de entidade.</span><span class="sxs-lookup"><span data-stu-id="7d777-153">List of Scope Tags for this Entity instance.</span></span>|
+|<span data-ttu-id="e4fec-133">id</span><span class="sxs-lookup"><span data-stu-id="e4fec-133">id</span></span>|<span data-ttu-id="e4fec-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e4fec-134">String</span></span>|<span data-ttu-id="e4fec-135">A ID de intenção</span><span class="sxs-lookup"><span data-stu-id="e4fec-135">The intent ID</span></span>|
+|<span data-ttu-id="e4fec-136">displayName</span><span class="sxs-lookup"><span data-stu-id="e4fec-136">displayName</span></span>|<span data-ttu-id="e4fec-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e4fec-137">String</span></span>|<span data-ttu-id="e4fec-138">O nome de exibição fornecido pelo usuário</span><span class="sxs-lookup"><span data-stu-id="e4fec-138">The user given display name</span></span>|
+|<span data-ttu-id="e4fec-139">description</span><span class="sxs-lookup"><span data-stu-id="e4fec-139">description</span></span>|<span data-ttu-id="e4fec-140">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e4fec-140">String</span></span>|<span data-ttu-id="e4fec-141">Descrição fornecida pelo usuário</span><span class="sxs-lookup"><span data-stu-id="e4fec-141">The user given description</span></span>|
+|<span data-ttu-id="e4fec-142">isAssigned</span><span class="sxs-lookup"><span data-stu-id="e4fec-142">isAssigned</span></span>|<span data-ttu-id="e4fec-143">Boolean</span><span class="sxs-lookup"><span data-stu-id="e4fec-143">Boolean</span></span>|<span data-ttu-id="e4fec-144">Significa se a intenção é atribuída ou não aos usuários</span><span class="sxs-lookup"><span data-stu-id="e4fec-144">Signifies whether or not the intent is assigned to users</span></span>|
+|<span data-ttu-id="e4fec-145">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="e4fec-145">lastModifiedDateTime</span></span>|<span data-ttu-id="e4fec-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e4fec-146">DateTimeOffset</span></span>|<span data-ttu-id="e4fec-147">Quando a intenção foi modificada pela última vez</span><span class="sxs-lookup"><span data-stu-id="e4fec-147">When the intent was last modified</span></span>|
+|<span data-ttu-id="e4fec-148">templateId</span><span class="sxs-lookup"><span data-stu-id="e4fec-148">templateId</span></span>|<span data-ttu-id="e4fec-149">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e4fec-149">String</span></span>|<span data-ttu-id="e4fec-150">A ID do modelo de que esta intenção foi criada (se houver)</span><span class="sxs-lookup"><span data-stu-id="e4fec-150">The ID of the template this intent was created from (if any)</span></span>|
+|<span data-ttu-id="e4fec-151">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="e4fec-151">roleScopeTagIds</span></span>|<span data-ttu-id="e4fec-152">Coleção String</span><span class="sxs-lookup"><span data-stu-id="e4fec-152">String collection</span></span>|<span data-ttu-id="e4fec-153">Lista de marcas de escopo para esta instância de entidade.</span><span class="sxs-lookup"><span data-stu-id="e4fec-153">List of Scope Tags for this Entity instance.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="7d777-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="7d777-154">Response</span></span>
-<span data-ttu-id="7d777-155">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7d777-155">If successful, this method returns a `200 OK` response code and an updated [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e4fec-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="e4fec-154">Response</span></span>
+<span data-ttu-id="e4fec-155">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e4fec-155">If successful, this method returns a `200 OK` response code and an updated [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7d777-156">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7d777-156">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e4fec-156">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e4fec-156">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7d777-157">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7d777-157">Request</span></span>
-<span data-ttu-id="7d777-158">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7d777-158">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="e4fec-157">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e4fec-157">Request</span></span>
+<span data-ttu-id="e4fec-158">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e4fec-158">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}
 Content-type: application/json
@@ -87,8 +87,8 @@ Content-length: 266
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="7d777-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="7d777-159">Response</span></span>
-<span data-ttu-id="7d777-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7d777-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e4fec-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="e4fec-159">Response</span></span>
+<span data-ttu-id="e4fec-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e4fec-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -107,6 +107,9 @@ Content-Length: 379
   ]
 }
 ```
+
+
+
 
 
 

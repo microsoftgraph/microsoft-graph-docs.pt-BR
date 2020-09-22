@@ -5,52 +5,52 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: cb4112e8d9cf8ef686b706b9f286c17e8078bfee
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: a7fc486e7bb8b23e4a13d16fe3d797107e27be63
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311378"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089935"
 ---
-# <a name="list-unfamiliarlocationriskevents-deprecated"></a><span data-ttu-id="38465-103">Listar unfamiliarLocationRiskEvents (preterido)</span><span class="sxs-lookup"><span data-stu-id="38465-103">List unfamiliarLocationRiskEvents (deprecated)</span></span>
+# <a name="list-unfamiliarlocationriskevents-deprecated"></a><span data-ttu-id="8742f-103">Listar unfamiliarLocationRiskEvents (preterido)</span><span class="sxs-lookup"><span data-stu-id="8742f-103">List unfamiliarLocationRiskEvents (deprecated)</span></span>
 
-<span data-ttu-id="38465-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="38465-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8742f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8742f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!CAUTION]
-><span data-ttu-id="38465-105">A API **identityRiskEvents** foi preterida e interromperá o retorno de dados em 10 de janeiro de 2020.</span><span class="sxs-lookup"><span data-stu-id="38465-105">The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020.</span></span> <span data-ttu-id="38465-106">Para obter detalhes, consulte [Preterition of the IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).</span><span class="sxs-lookup"><span data-stu-id="38465-106">For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).</span></span>
+><span data-ttu-id="8742f-105">A API **identityRiskEvents** foi preterida e interromperá o retorno de dados em 10 de janeiro de 2020.</span><span class="sxs-lookup"><span data-stu-id="8742f-105">The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020.</span></span> <span data-ttu-id="8742f-106">Para obter detalhes, consulte [Preterition of the IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).</span><span class="sxs-lookup"><span data-stu-id="8742f-106">For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).</span></span>
 
-<span data-ttu-id="38465-107">Recupere uma lista de objetos unfamiliarlocationriskevent.</span><span class="sxs-lookup"><span data-stu-id="38465-107">Retrieve a list of unfamiliarlocationriskevent objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="38465-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="38465-108">Permissions</span></span>
-<span data-ttu-id="38465-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="38465-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8742f-107">Recupere uma lista de objetos unfamiliarlocationriskevent.</span><span class="sxs-lookup"><span data-stu-id="8742f-107">Retrieve a list of unfamiliarlocationriskevent objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="8742f-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="8742f-108">Permissions</span></span>
+<span data-ttu-id="8742f-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8742f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="38465-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="38465-111">Permission type</span></span>      | <span data-ttu-id="38465-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="38465-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8742f-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8742f-111">Permission type</span></span>      | <span data-ttu-id="8742f-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8742f-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="38465-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="38465-113">Delegated (work or school account)</span></span> | <span data-ttu-id="38465-114">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="38465-114">IdentityRiskEvent.Read.All</span></span>    |
-|<span data-ttu-id="38465-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="38465-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="38465-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="38465-116">Not supported.</span></span>    |
-|<span data-ttu-id="38465-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="38465-117">Application</span></span> | <span data-ttu-id="38465-118">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="38465-118">IdentityRiskEvent.Read.All</span></span> |
+|<span data-ttu-id="8742f-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8742f-113">Delegated (work or school account)</span></span> | <span data-ttu-id="8742f-114">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="8742f-114">IdentityRiskEvent.Read.All</span></span>    |
+|<span data-ttu-id="8742f-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8742f-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8742f-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8742f-116">Not supported.</span></span>    |
+|<span data-ttu-id="8742f-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8742f-117">Application</span></span> | <span data-ttu-id="8742f-118">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="8742f-118">IdentityRiskEvent.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="38465-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="38465-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8742f-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8742f-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /unfamiliarLocationRiskEvents
 ```
-## <a name="request-headers"></a><span data-ttu-id="38465-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="38465-120">Request headers</span></span>
-| <span data-ttu-id="38465-121">Nome</span><span class="sxs-lookup"><span data-stu-id="38465-121">Name</span></span>      |<span data-ttu-id="38465-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="38465-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8742f-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8742f-120">Request headers</span></span>
+| <span data-ttu-id="8742f-121">Nome</span><span class="sxs-lookup"><span data-stu-id="8742f-121">Name</span></span>      |<span data-ttu-id="8742f-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="8742f-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="38465-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="38465-123">Authorization</span></span>  | <span data-ttu-id="38465-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="38465-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="38465-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="38465-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="38465-p104">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="38465-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="8742f-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="8742f-123">Authorization</span></span>  | <span data-ttu-id="8742f-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8742f-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8742f-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="8742f-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="8742f-p104">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="8742f-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="38465-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="38465-129">Request body</span></span>
-<span data-ttu-id="38465-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="38465-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8742f-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8742f-129">Request body</span></span>
+<span data-ttu-id="8742f-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="8742f-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="38465-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="38465-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8742f-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="8742f-131">Response</span></span>
 
-<span data-ttu-id="38465-132">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="38465-132">If successful, this method returns a `200 OK` response code and collection of [unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="38465-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="38465-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="38465-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="38465-134">Request</span></span>
-<span data-ttu-id="38465-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="38465-135">Here is an example of the request.</span></span>
+<span data-ttu-id="8742f-132">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8742f-132">If successful, this method returns a `200 OK` response code and collection of [unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="8742f-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8742f-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8742f-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8742f-134">Request</span></span>
+<span data-ttu-id="8742f-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="8742f-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_unfamiliarlocationriskevents"
@@ -58,8 +58,8 @@ GET /unfamiliarLocationRiskEvents
 ```http
 GET https://graph.microsoft.com/v1.0/unfamiliarLocationRiskEvents
 ```
-##### <a name="response"></a><span data-ttu-id="38465-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="38465-136">Response</span></span>
-<span data-ttu-id="38465-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="38465-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="8742f-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="8742f-136">Response</span></span>
+<span data-ttu-id="8742f-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8742f-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,3 +104,5 @@ Content-length: 290
   "suppressions": []
 }
 -->
+
+
