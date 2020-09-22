@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ffef189622621322fee15cdfc651531bd6a6d0c0
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 82834e1605c0d8adb2c90fa14e094ecd72c13dd1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218226"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087093"
 ---
 # <a name="get-offershiftrequest"></a>Obter offerShiftRequest
 
@@ -24,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Schedule. Read. All, Schedule. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante)     | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Schedule. Read. All, Schedule. ReadWrite. All |
 
-> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -126,3 +126,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: bd0603c220e0bd90f1f8ace2889efe5124175153
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 75849cd322f50974299f92c752833045a7d2bd94
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43511173"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086330"
 ---
 # <a name="teleconferencedevicemediaquality-resource-type"></a>tipo de recurso teleconferenceDeviceMediaQuality
 
@@ -30,7 +30,7 @@ Representa dados de qualidade de mídia do dispositivo de teleconferência de v�
 |averageOutboundRoundTripDelay|Duração|O intervalo médio de ida e volta da rede de fluxo de saída.|
 |channelIndex|Int32|O índice de canal da mídia. A indexação começa com 1.  Se uma sessão de mídia contiver três modalidades de vídeo, os índices de canal serão 1, 2 e 3.|
 |inboundPackets|Int64|O número total de pacotes de entrada.|
-|localIPAddress|String|o endereço IP local da sessão de mídia.|
+|localIPAddress|Cadeia de caracteres|o endereço IP local da sessão de mídia.|
 |localPort|Int32|A porta de mídia local.|
 |maximumInboundJitter|Duração|A tremulação máxima da rede de fluxo de entrada.|
 |maximumInboundPacketLossRateInPercentage|Duplo|A taxa máxima de perda de pacote de fluxo de entrada em porcentagem (0-100). Por exemplo, 0, 1 significa 0, 1%.|
@@ -41,7 +41,7 @@ Representa dados de qualidade de mídia do dispositivo de teleconferência de v�
 |mediaDuration|Duração|A duração da modalidade total. Se a mídia habilitada e desabilitada várias vezes, MediaDuration será a soma de todas as durações.|
 |networkLinkSpeedInBytes|Int64|A velocidade do link de rede em bytes|
 |outboundPackets|Int64|O número total dos pacotes de saída.|
-|remoteIPAddress|String|O endereço IP remoto da sessão de mídia.|
+|remoteIPAddress|Cadeia de caracteres|O endereço IP remoto da sessão de mídia.|
 |remotePort|Int32|A porta de mídia remota.|
 
 ### <a name="derived-types"></a>Tipos derivados
@@ -100,3 +100,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

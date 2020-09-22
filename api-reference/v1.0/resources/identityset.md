@@ -7,12 +7,12 @@ localization_priority: Normal
 description: O recurso IdentitySet é uma coleção de chaves dos recursos identity.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0a5d53769dc023e79ac9f50db2c085647775cab0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09a0a48ca46f0d3a429705e5becf18f37832e5a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531338"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086666"
 ---
 # <a name="identityset-resource-type"></a>Tipo de recurso IdentitySet
 
@@ -39,8 +39,8 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade    | Tipo                    | Descrição                                            |
 |:------------|:------------------------|:-------------------------------------------------------|
-| application | [Identidade](identity.md) | Opcional. O aplicativo associado a essa ação. |
-| device      | [Identidade](identity.md) | Opcional. O dispositivo associado a essa ação.      |
+| application | [Identity](identity.md) | Opcional. O aplicativo associado a essa ação. |
+| device      | [Identity](identity.md) | Opcional. O dispositivo associado a essa ação.      |
 | user        | [Identity](identity.md) | Opcional. O usuário associado a essa ação.        |
 
 ## <a name="remarks"></a>Comentários 
@@ -56,3 +56,4 @@ Consulte [DriveItem](driveitem.md) para saber mais sobre o uso de recursos **Ide
   "section": "documentation",
   "tocPath": "Resources/IdentitySet"
 } -->
+

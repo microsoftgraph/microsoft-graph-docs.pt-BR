@@ -3,14 +3,14 @@ title: Ação enableLostMode
 description: Habilitar modo perdido
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c31de1f333ecf933d7e4ee8b81514c217fcdfe52
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 32a2b7a0d3c2de59fca79baf9c874c5b0eb09e82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792300"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085861"
 ---
 # <a name="enablelostmode-action"></a>Ação enableLostMode
 
@@ -90,6 +90,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

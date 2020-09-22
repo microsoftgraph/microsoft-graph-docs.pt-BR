@@ -3,14 +3,14 @@ title: Atualizar dataSharingConsent
 description: Atualiza as propriedades de um objeto dataSharingConsent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e37956c7365118f6d5c33a59d911755c3247d404
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b6f6133b79eb7d214405e6d0c30f869b167cd676
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426617"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085868"
 ---
 # <a name="update-datasharingconsent"></a>Atualizar dataSharingConsent
 
@@ -53,18 +53,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [dataSha
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID de consentimento de compartilhamento de dados|
-|objectdisplayname|String|O nome de exibição do fluxo de trabalho do serviço|
-|termsUrl|String|O TermsUrl para o consentimento de compartilhamento de dados|
+|id|Cadeia de caracteres|A ID de consentimento de compartilhamento de dados|
+|objectdisplayname|Cadeia de caracteres|O nome de exibição do fluxo de trabalho do serviço|
+|termsUrl|Cadeia de caracteres|O TermsUrl para o consentimento de compartilhamento de dados|
 |granted|Boolean|O Estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|String|O UPN do usuário que concedeu o consentimento para esta conta|
-|grantedByUserId|String|O UserId do usuário que concedeu o consentimento para esta conta|
+|grantedByUpn|Cadeia de caracteres|O UPN do usuário que concedeu o consentimento para esta conta|
+|grantedByUserId|Cadeia de caracteres|O UserId do usuário que concedeu o consentimento para esta conta|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -104,6 +104,9 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
+
+
+
 
 
 

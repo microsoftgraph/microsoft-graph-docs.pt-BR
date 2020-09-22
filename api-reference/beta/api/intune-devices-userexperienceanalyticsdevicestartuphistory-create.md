@@ -3,14 +3,14 @@ title: Criar userExperienceAnalyticsDeviceStartupHistory
 description: Criar um novo objeto userExperienceAnalyticsDeviceStartupHistory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f5b91043417fb0e33dd7f7781c82503525b5d185
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 1a40b3ad891de0cbf95294bddc5d4c6fa05016a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791348"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085847"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a>Criar userExperienceAnalyticsDeviceStartupHistory
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do histórico de inicialização do dispositivo de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do histórico de inicialização do dispositivo de análise da experiência do usuário.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo de análise da experiência do usuário.|
 |startTime|DateTimeOffset|A hora de início do dispositivo de análise da experiência do usuário.|
 |coreBootTimeInMs|Int32|O tempo de inicialização do núcleo do dispositivo de análise da experiência do usuário em milissegundos.|
@@ -64,10 +64,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 |coreLoginTimeInMs|Int32|O tempo de logon do dispositivo de análise da experiência do usuário em milissegundos.|
 |responsiveDesktopTimeInMs|Int32|O tempo de resposta da análise da experiência do usuário em milissegundos.|
 |totalLoginTimeInMs|Int32|O tempo total de logon do dispositivo de análise da experiência do usuário em milissegundos.|
-|isFirstLogin|Booliano|O dispositivo de análise de experiência do usuário primeiro logon.|
-|isFeatureUpdate|Booliano|O registro de inicialização do dispositivo de análise da experiência do usuário é uma atualização de recurso.|
+|isFirstLogin|Boolean|O dispositivo de análise de experiência do usuário primeiro logon.|
+|isFeatureUpdate|Boolean|O registro de inicialização do dispositivo de análise da experiência do usuário é uma atualização de recurso.|
 |operatingSystemVersion|String|A versão do sistema operacional do registro de inicialização do dispositivo de análise da experiência do usuário.|
-|restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Categoria de reinício de so. Os possíveis valores são: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`.|
+|restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Categoria de reinício de so. Os valores possíveis são: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`.|
+|restartStopCode|Cadeia de caracteres|O código de parada de reinício do so. Isso mostra o código de verificação de erros que pode ser usado para pesquisar a razão da tela azul.|
+|restartFaultBucket|Cadeia de caracteres|O compartimento de reinicialização de sistema operacional. O Bucket de falhas é usado para encontrar informações adicionais sobre uma falha do sistema.|
 
 
 
@@ -81,7 +83,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 Content-type: application/json
-Content-length: 576
+Content-length: 680
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -98,7 +100,9 @@ Content-length: 576
   "isFirstLogin": true,
   "isFeatureUpdate": true,
   "operatingSystemVersion": "Operating System Version value",
-  "restartCategory": "restartWithUpdate"
+  "restartCategory": "restartWithUpdate",
+  "restartStopCode": "Restart Stop Code value",
+  "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
 
@@ -107,7 +111,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 625
+Content-Length: 729
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -125,9 +129,14 @@ Content-Length: 625
   "isFirstLogin": true,
   "isFeatureUpdate": true,
   "operatingSystemVersion": "Operating System Version value",
-  "restartCategory": "restartWithUpdate"
+  "restartCategory": "restartWithUpdate",
+  "restartStopCode": "Restart Stop Code value",
+  "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
+
+
+
 
 
 

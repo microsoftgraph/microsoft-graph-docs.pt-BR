@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: ''
 doc_type: enumPageType
-ms.openlocfilehash: 220da0696f15fd312df9701f561f9d7c45c3e831
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5d9121d7cbaa10260b1a7a7ce180ed7c9f37a565
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808274"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086806"
 ---
 # <a name="clonableteamparts-enum-type"></a>tipo de enumeração clonableTeamParts
 
@@ -24,8 +24,9 @@ Descreve que parte de uma [equipe](../resources/team.md) deve ser clonada.
 
 | Membro | Valor| Descrição |
 |:---------------|:--------|:----------|
-|apps|1|Copie a lista de aplicativos instalados.|
-|guias|duas|Copia as guias nos canais.|
+|apps|1 |Copie a lista de aplicativos instalados.|
+|guias|2 |Copia as guias nos canais.|
 |configurações|4 |Copia todas as configurações da equipe, juntamente com as configurações de grupo de chaves.|
 |channels|8 |Copia a estrutura do canal (mas não as mensagens no canal).|
-|members|16 |Copia os membros e os proprietários da equipe.|
+|membros|16 |Copia os membros e os proprietários da equipe.|
+

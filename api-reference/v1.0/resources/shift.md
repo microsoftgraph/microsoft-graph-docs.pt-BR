@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e38b8a000829ead91bdee28779a0f6988dd936ef
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 52c83c8052725e99d1136df8b0c14d8d3c24ffe4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154301"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086428"
 ---
 # <a name="shift-resource-type"></a>tipo de recurso Shift
 
@@ -23,9 +23,9 @@ Representa uma unidade de trabalho agendado em uma [agenda](schedule.md).
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Listar turnos](../api/schedule-list-shifts.md) | coleção [Shift](shift.md) | Obtenha a lista de **turnos** neste cronograma.|
-|[Criar turno](../api/schedule-post-shifts.md) | [desloca](shift.md) | Criar um novo **turno**.|
-|[Obter turno](../api/shift-get.md) | [desloca](shift.md) | Obter um **turno** por ID.|
-|[Substituir Shift](../api/shift-put.md) | [desloca](shift.md) | Substitua um **Shift**.|
+|[Criar turno](../api/schedule-post-shifts.md) | [shift](shift.md) | Criar um novo **turno**.|
+|[Obter turno](../api/shift-get.md) | [shift](shift.md) | Obter um **turno** por ID.|
+|[Substituir Shift](../api/shift-put.md) | [shift](shift.md) | Substitua um **Shift**.|
 |[Excluir Shift](../api/shift-delete.md) | Nenhum | Excluir uma **mudança** do cronograma.|
 
 ## <a name="properties"></a>Propriedades
@@ -76,3 +76,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c835e1335653234cc16d40ce3f3c1be1de3440b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 696513aab1be4ed8089ed4280b6e55f3798382d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511093"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087065"
 ---
 # <a name="delete-page"></a>Excluir página
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes. ReadWrite, Notes. ReadWrite. All    |
-|Delegado (conta pessoal da Microsoft) | Notes.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Notes. ReadWrite, Notes. ReadWrite. All    |
+|Delegada (conta pessoal da Microsoft) | Notes.ReadWrite    |
 |Aplicativo | Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -94,3 +94,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

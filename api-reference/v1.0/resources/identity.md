@@ -7,12 +7,12 @@ localization_priority: Normal
 description: O recurso Identity representa uma identidade de um actor.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e68b57ed69463cfaa67e3505abe57f3968480065
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3ff4be5b9e606144fe300e6ba3811adddbbda56a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531341"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086701"
 ---
 # <a name="identity-resource-type"></a>Tipo de recurso Identity
 
@@ -38,7 +38,7 @@ O recurso **Identity** representa uma identidade de um _actor_. Por exemplo, e a
 | Propriedade    | Tipo   | Descrição                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | displayName | Cadeia de caracteres | Nome de exibição da identidade. Talvez isso nem sempre esteja disponível ou atualizado. Por exemplo, se um usuário troca seu nome de exibição, a API pode mostrar o novo valor em uma resposta futura, mas os itens associados ao usuário não aparecem como tendo sido alterados ao se usar [delta](../api/driveitem-delta.md).     |
-| id          | String | Identificador exclusivo da identidade.                                                                                                                                                                                                                                                                                   |
+| id          | Cadeia de caracteres | Identificador exclusivo da identidade.                                                                                                                                                                                                                                                                                   |
 
 ## <a name="remarks"></a>Comentários
 
@@ -54,3 +54,4 @@ Em algumas circunstâncias, o identificador exclusivo para o ator pode não esta
   "tocPath": "Resources/Identity"
 
 } -->
+

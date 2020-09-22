@@ -3,14 +3,14 @@ title: Criar managedAppOperation
 description: Criar um novo objeto managedAppOperation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58806fad1b3302543026d1508efd49e109e1548a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 147f95839e8eb5130f609b105010dd38d558e888
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441808"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087394"
 ---
 # <a name="create-managedappoperation"></a>Criar managedAppOperation
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,8 +53,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedA
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome da operação.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a operação de aplicativo foi modificada.|
-|state|String|O estado atual da operação|
-|id|String|Chave da entidade.|
+|state|Cadeia de caracteres|O estado atual da operação|
+|id|Cadeia de caracteres|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 
@@ -95,6 +95,9 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

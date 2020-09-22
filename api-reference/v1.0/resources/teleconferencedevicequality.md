@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c96382644793b57dd0eaa7b0f95213897e6068ce
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 455a69257e880c71c28fa7968e5e8294075437e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082707"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086274"
 ---
 # <a name="teleconferencedevicequality-resource-type"></a>tipo de recurso teleconferenceDeviceQuality
 
@@ -23,12 +23,12 @@ Representa os dados de qualidade do nível da sessão do dispositivo de teleconf
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |callChainId|Guid|Um identificador exclusivo para todas as chamadas de participantes em uma conferência ou um identificador exclusivo para duas chamadas de participantes na chamada P2P. Isso precisa ser copiado de `Microsoft.Graph.Call.CallChainId`.|
-|cloudServiceDeploymentEnvironment|String|Uma região geográfica onde o serviço é implantado, como `ProdNoam`.|
-|cloudServiceDeploymentId|String|Um identificador de implantação exclusivo atribuído pelo Azure.|
-|cloudServiceInstanceName|String|O nome da instância do serviço de nuvem implantada do Azure, como `FrontEnd_IN_3`.|
-|cloudServiceName|String|O nome do serviço de nuvem implantada `contoso.cloudapp.net`do Azure, como.|
-|deviceDescription|String|Qualquer descrição adicional, como `VTC Bldg 30/21`.|
-|deviceName|String|O nome do agente de mídia do usuário `Cisco SX80`, como.|
+|cloudServiceDeploymentEnvironment|Cadeia de caracteres|Uma região geográfica onde o serviço é implantado, como `ProdNoam` .|
+|cloudServiceDeploymentId|Cadeia de caracteres|Um identificador de implantação exclusivo atribuído pelo Azure.|
+|cloudServiceInstanceName|Cadeia de caracteres|O nome da instância do serviço de nuvem implantada do Azure, como `FrontEnd_IN_3` .|
+|cloudServiceName|Cadeia de caracteres|O nome do serviço de nuvem implantada do Azure, como `contoso.cloudapp.net` .|
+|deviceDescription|Cadeia de caracteres|Qualquer descrição adicional, como `VTC Bldg 30/21` .|
+|deviceName|String|O nome do agente de mídia do usuário, como `Cisco SX80` .|
 |mediaLegId|Guid|Um identificador exclusivo para um trecho de mídia específico de um participante de uma conferência.  Um participante pode ter vários identificadores de trechos de mídia se o redirecionamento ocorrer. O parceiro CVI atribui esse valor.|
 |mediaQualityList|coleção [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md)|A lista de qualidades de mídia em uma sessão de mídia (chamada), como qualidade de áudio, qualidade de vídeo e/ou qualidade de compartilhamento de tela.|
 |participante de participantes|Guid|Um identificador exclusivo para um participante específico em uma conferência. O parceiro CVI precisa copiar `Call.MyParticipantId` para esta propriedade.|
@@ -70,3 +70,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2e0396ab39339b9f93ba0db9abe0e3a5b83fde89
-ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
-ms.translationtype: Auto
+ms.openlocfilehash: bc7dded204f6d898a49f6def891144042013b750
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024359"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086708"
 ---
 # <a name="identityprotectionroot-resource-type"></a>tipo de recurso identityProtectionRoot
 
@@ -33,8 +33,8 @@ Operation | URL
 OBTER usuários arriscados | [OBTER https://graph.microsoft.com/v1.0/identityProtection/riskyUsers](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskyUsers&version=v1.0)
 OBTER detecções de risco | [OBTER https://graph.microsoft.com/v1.0/identityProtection/riskDetections](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskDetections&version=v1.0)
 OBTER o histórico de riscos de um usuário | [OBTER https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/{riskyUserId}/history](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskyUsers/{riskyUserId}/history&version=v1.0)
-CONFIRMAR um usuário como comprometido | [Postarhttps://graph.microsoft.com/v1.0/identityProtection/riskyUsers/confirmCompromised](https://developer.microsoft.com/graph/graph-explorer?request=/identityProtection/riskyUsers/confirmCompromised&version=v1.0)
-IGNORAR um usuário arriscado | [Postarhttps://graph.microsoft.com/v1.0/identityProtection/riskyUsers/dismiss](https://developer.microsoft.com/graph/graph-explorer?request=/identityProtection/riskyUsers/dismiss&version=v1.0)
+CONFIRMAR um usuário como comprometido | [Postar https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/confirmCompromised](https://developer.microsoft.com/graph/graph-explorer?request=/identityProtection/riskyUsers/confirmCompromised&version=v1.0)
+IGNORAR um usuário arriscado | [Postar https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/dismiss](https://developer.microsoft.com/graph/graph-explorer?request=/identityProtection/riskyUsers/dismiss&version=v1.0)
 
 ## <a name="what-licenses-do-i-need"></a>De quais licenças eu preciso?
 
@@ -44,5 +44,6 @@ A proteção de identidade do Azure AD é um recurso Premium. Você precisa de u
 
 * [Sobre a proteção de identidade do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
 * [Introdução à proteção de identidade do Azure Active Directory e ao Microsoft Graph](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-graph-api)
+
 
 

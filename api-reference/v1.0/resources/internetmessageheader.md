@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8da5bc8a862196a1bb013255d7474d8ebf18730d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ed62f8c4470794fffa97652716bccbbbe65df5e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808841"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086645"
 ---
 # <a name="internetmessageheader-resource-type"></a>Tipo de recurso internetMessageHeader
 
@@ -57,3 +57,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

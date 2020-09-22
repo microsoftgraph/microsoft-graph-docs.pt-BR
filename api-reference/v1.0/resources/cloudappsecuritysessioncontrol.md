@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6271ae47f94abb0c449dc6bd7a0930468d08d2b5
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 150b0b53b219b46978c83666560264fb60bf8ba0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384423"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086799"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>tipo de recurso cloudAppSecuritySessionControl
 
@@ -58,3 +58,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

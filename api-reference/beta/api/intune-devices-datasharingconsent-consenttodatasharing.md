@@ -3,14 +3,14 @@ title: Ação consentToDataSharing
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e79ca3c273e5b7113e62e8cdf07184c319c898ba
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 36d2ea3857af48849a921a57a83c34b838132683
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426764"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085973"
 ---
 # <a name="consenttodatasharing-action"></a>Ação consentToDataSharing
 
@@ -50,7 +50,7 @@ POST /deviceManagement/dataSharingConsents/{dataSharingConsentId}/consentToDataS
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará `200 OK` um código de resposta e um [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) no corpo da resposta.
+Se tiver êxito, esta ação retornará um `200 OK` código de resposta e um [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -80,6 +80,9 @@ Content-Length: 417
   }
 }
 ```
+
+
+
 
 
 

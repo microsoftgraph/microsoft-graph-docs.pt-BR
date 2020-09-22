@@ -3,14 +3,14 @@ title: Listar comanagementEligibleDevices
 description: Listar Propriedades e relações dos objetos comanagementEligibleDevice.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2aba5e3294162a6584a0f7b2f133f9fa78f6e80a
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: c5950dd90f3848f650547ba71675bf9623ded2ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792524"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085980"
 ---
 # <a name="list-comanagementeligibledevices"></a>Listar comanagementEligibleDevices
 
@@ -95,6 +95,9 @@ Content-Length: 880
   ]
 }
 ```
+
+
+
 
 
 

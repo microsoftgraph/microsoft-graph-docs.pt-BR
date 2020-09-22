@@ -6,12 +6,12 @@ description: O recurso do site fornece metadados e relações para um site do Sh
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a4e67deb63850bdc938f72f5e517bc28a5a8df03
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 43e321ef3b04124095257a6bf6b9d218ac080a3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934854"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086442"
 ---
 # <a name="site-resource"></a>Recurso do site
 
@@ -155,3 +155,4 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
   "tocPath": "Sites",
   "tocBookmarks": { "Resources/Site": "#" }
 } -->
+

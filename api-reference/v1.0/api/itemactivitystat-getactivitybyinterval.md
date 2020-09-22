@@ -6,12 +6,12 @@ description: Obter itemAnalyticyStats para as atividades que foram realizadas ne
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f39fdcb00b367bed4044bad521b658c897fdc016
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: a26892aac83aa28b7a4769f2ad678643a3c417ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345706"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087219"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade de item por intervalo
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Obtenha uma coleção de recursos [itemActivityStats][] para as atividades que foram realizadas nesse recurso dentro do intervalo de tempo especificado.
 
->**Observação:** O recurso do **naanalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
+>**Observação:** O recurso do **naanalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments). 
 
 As agregações de análise podem não estar disponíveis para todos os tipos de ação.
 
@@ -50,6 +50,8 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 | startDateTime  | Cadeia de caracteres (timestamp) | A hora de início em que as atividades serão agregadas.
 | endDateTime    | Cadeia de caracteres (timestamp) | A hora de término sobre a qual agregar atividades.
 | interval       | string             | O intervalo de agregação.
+
+>**Observação:** Essa API só oferece suporte a um intervalo de tempo de 90 dias para contagens diárias. O valor dos `startDateTime` parâmetros e `endDateTime` deve representar um intervalo de tempo menor que 90 dias.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta.
@@ -147,3 +149,4 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+

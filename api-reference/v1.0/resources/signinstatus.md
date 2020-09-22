@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8c7880eb89aa4147baa7d8b0bda3aa80d1628bbb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c534ae4c6d881add405e0cd29d39197ce5e79f1e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533705"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086414"
 ---
 # <a name="signinstatus-resource-type"></a>tipo de recurso signInStatus
 
@@ -22,7 +22,7 @@ Fornece o status de entrada (sucesso ou falha) da entrada.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|additionalDetails|String|Fornece detalhes adicionais sobre a atividade de entrada|
+|additionalDetails|Cadeia de caracteres|Fornece detalhes adicionais sobre a atividade de entrada|
 |errorCode|Int32|Fornece o código de erro de 5 6digit que é gerado durante uma falha de entrada. Confira a [lista de códigos e mensagens de erro](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
 |failureReason|Cadeia de caracteres|Fornece a mensagem de erro ou o motivo da falha para a atividade de entrada correspondente. Confira a [lista de códigos e mensagens de erro](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
 
@@ -56,3 +56,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

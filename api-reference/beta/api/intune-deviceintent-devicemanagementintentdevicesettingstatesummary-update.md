@@ -3,14 +3,14 @@ title: Atualizar deviceManagementIntentDeviceSettingStateSummary
 description: Atualiza as propriedades de um objeto deviceManagementIntentDeviceSettingStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 11c98bfa60a1bdcc8fc24a63d3dfe48bfb797b0d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2ba9f58030cd0ea40759df492b1b0b4c45918904
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43326554"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086008"
 ---
 # <a name="update-devicemanagementintentdevicesettingstatesummary"></a>Atualizar deviceManagementIntentDeviceSettingStateSummary
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID|
+|id|Cadeia de caracteres|A ID|
 |settingName|Cadeia de caracteres|Nome de uma configuração|
 |compliantCount|Int32|Número de dispositivos em conformidade|
 |conflictCount|Int32|Número de dispositivos em conflito|
@@ -65,7 +65,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -107,6 +107,9 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
+
+
+
 
 
 

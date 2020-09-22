@@ -3,14 +3,14 @@ title: Atualizar vppToken
 description: Atualizar as propriedades de um objeto vppToken.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c20a48f579e20c398ace4ddf392defa9b3881d4
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: fc14819f731c1823eb6af2bd9ae9897a8d86a7ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791760"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085728"
 ---
 # <a name="update-vpptoken"></a>Atualizar vppToken
 
@@ -53,13 +53,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [vppTo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Isso é gerado automaticamente quando o appleVolumePurchaseProgramToken é criado. É a Chave da entidade.|
-|organizationName|String|A organização associada ao Token do Programa de Compra por Volume da Apple|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|O tipo de programa de compra por volume ao qual o Token do Programa de Compra por Volume da Apple especificado está associado. Os valores possíveis são: `business` e `education`. Os valores possíveis são: `business`, `education`.|
-|appleId|String|O Apple ID associado ao Token do Apple Volume Purchase Program.|
+|id|Cadeia de caracteres|Isso é gerado automaticamente quando o appleVolumePurchaseProgramToken é criado. É a Chave da entidade.|
+|organizationName|Cadeia de caracteres|A organização associada ao Token do Programa de Compra por Volume da Apple|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|O tipo de programa de compra por volume ao qual o Token do Programa de Compra por Volume da Apple especificado está associado. Os valores possíveis são: `business`, `education`. Os valores possíveis são: `business`, `education`.|
+|appleId|Cadeia de caracteres|O Apple ID associado ao Token do Apple Volume Purchase Program.|
 |expirationDateTime|DateTimeOffset|A data e hora de expiração do Token do Apple Volume Purchase Program.|
 |lastSyncDateTime|DateTimeOffset|A última vez que uma sincronização de aplicativo foi realizada com o serviço do Apple Volume Purchase Program usando o Token do Apple Volume Purchase Program.|
-|token|String|A cadeia de caracteres do Token do Apple Volume Purchase Program baixada do Apple Volume Purchase Program.|
+|token|Cadeia de caracteres|A cadeia de caracteres do Token do Apple Volume Purchase Program baixada do Apple Volume Purchase Program.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação associada com o Token do Apple Volume Purchase Program.|
 |state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Estado atual do Token do Apple Volume Purchase Program. Os valores possíveis são: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Os possíveis valores são: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`, `duplicateLocationId`.|
 |tokenActionResults|coleção [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|A coleção de status das ações executadas no token do Apple Volume Purchase Program.|
@@ -68,9 +68,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [vppTo
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o Apple Volume Purchase Program.|
 |displayName|Cadeia de caracteres|Um nome amigável de token especificado pelo administrador.|
-|LocationName|String|Local do token retornado da Apple VPP.|
+|LocationName|Cadeia de caracteres|Local do token retornado da Apple VPP.|
 |claimTokenManagementFromExternalMdm|Boolean|Consentimento do administrador para permitir o reivindicação de gerenciamento de token de MDM externo.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|IDs de marcas de escopo de função atribuídas a esta entidade.|
+|roleScopeTagIds|Coleção String|IDs de marcas de escopo de função atribuídas a esta entidade.|
 
 
 
@@ -156,6 +156,9 @@ Content-Length: 1115
   ]
 }
 ```
+
+
+
 
 
 

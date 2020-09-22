@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c991e41315ba8d8c733211b8b814e4c161500760
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 59d109c8228189e6584e2c75addbe7d43c52539f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511079"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087002"
 ---
 # <a name="update-page"></a>Atualizar página
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes. ReadWrite, Notes. ReadWrite. All    |
-|Delegado (conta pessoal da Microsoft) | Notes.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Notes. ReadWrite, Notes. ReadWrite. All    |
+|Delegada (conta pessoal da Microsoft) | Notes.ReadWrite    |
 |Aplicativo | Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -114,3 +114,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

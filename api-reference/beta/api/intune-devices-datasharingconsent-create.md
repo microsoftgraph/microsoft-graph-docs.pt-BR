@@ -3,14 +3,14 @@ title: Criar dataSharingConsent
 description: Criar um novo objeto dataSharingConsent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57b109d806e8fd3b6ff510985666448a98dbcaee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7c22f39f526baec2878937506633c830b456889b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426718"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085966"
 ---
 # <a name="create-datasharingconsent"></a>Criar dataSharingConsent
 
@@ -53,18 +53,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar dataShar
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID de consentimento de compartilhamento de dados|
-|objectdisplayname|String|O nome de exibição do fluxo de trabalho do serviço|
-|termsUrl|String|O TermsUrl para o consentimento de compartilhamento de dados|
+|id|Cadeia de caracteres|A ID de consentimento de compartilhamento de dados|
+|objectdisplayname|Cadeia de caracteres|O nome de exibição do fluxo de trabalho do serviço|
+|termsUrl|Cadeia de caracteres|O TermsUrl para o consentimento de compartilhamento de dados|
 |granted|Boolean|O Estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|String|O UPN do usuário que concedeu o consentimento para esta conta|
-|grantedByUserId|String|O UserId do usuário que concedeu o consentimento para esta conta|
+|grantedByUpn|Cadeia de caracteres|O UPN do usuário que concedeu o consentimento para esta conta|
+|grantedByUserId|Cadeia de caracteres|O UserId do usuário que concedeu o consentimento para esta conta|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -104,6 +104,9 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
+
+
+
 
 
 

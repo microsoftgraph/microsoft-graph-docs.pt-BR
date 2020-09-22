@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c15d5d32b6102a3651fec24a99c3f9c185f963d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3ab71087bcbed6b75c4f14f285c46ee56bf9f2ab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511086"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086988"
 ---
 # <a name="get-page"></a>Obter página
 
@@ -42,8 +42,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All    |
-|Delegado (conta pessoal da Microsoft) | Notes. Read, Notes. ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All    |
+|Delegada (conta pessoal da Microsoft) | Notes. Read, Notes. ReadWrite    |
 |Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,7 +57,7 @@ GET /sites/{id}/onenote/pages/{id}
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método oferece suporte `select` aos `expand` [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
-A resposta padrão expande `parentSection` e seleciona as propriedades `id`, `name`e e. `self` Os `expand` valores válidos para páginas `parentNotebook` são `parentSection`e.
+A resposta padrão expande `parentSection` e seleciona as `id` `name` Propriedades, e e `self` . `expand`Os valores válidos para páginas são `parentNotebook` e `parentSection` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -70,7 +70,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [Page](../resources/page.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [Page](../resources/page.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -112,3 +112,4 @@ Content-length: 312
   "section": "documentation",
   "tocPath": ""
 }-->
+

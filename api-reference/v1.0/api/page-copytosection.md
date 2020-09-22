@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 245f5b760d4a755162107267b1836c5760a1c22a
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: cc13281ce4fc896f75f5f8c48075815ca50814b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898335"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087072"
 ---
 # <a name="page-copytosection"></a>página: copyToSection
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegada (conta corporativa ou de estudante) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Notes.Create, Notes.ReadWrite    |
 |Aplicativo | Notes.ReadWrite.All |
 
@@ -43,7 +43,7 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de que sua operação precisa.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro	    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |groupId|Cadeia de caracteres|A ID do grupo para o qual copiar. Use somente ao copiar para um grupo do Microsoft 365.|
 |id|String|Obrigatório. A ID da seção de destino.|
@@ -113,3 +113,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

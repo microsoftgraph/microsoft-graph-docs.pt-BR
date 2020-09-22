@@ -2,17 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Image
+title: Imagem
 localization_priority: Normal
 description: O recurso Image agrupa propriedades relacionadas a imagens em uma única estrutura.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b270d7ed2cacc5da5926d77d651878f9b0598093
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e43bf96a34693b19a191d09417623828e1b399be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086659"
 ---
 # <a name="image-resource-type"></a>Tipo de recurso Image
 
@@ -53,3 +53,4 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Image"
 } -->
+

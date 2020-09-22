@@ -3,14 +3,14 @@ title: ação revokeLicenses
 description: Revogar licenças associadas a um determinado appleVolumePurchaseProgramToken
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9aa65a3b84caa54b6be160e25e2c4e595966139
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 37d40a1048cb9af536f650d14840f17ee76889e5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43383652"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085819"
 ---
 # <a name="revokelicenses-action"></a>ação revokeLicenses
 
@@ -54,6 +54,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |notifyManagedDevices|Booliano|Ainda não documentado|
+|revokeUntrackedLicenses|Booliano|Ainda não documentado|
 
 
 
@@ -68,10 +69,11 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 
 Content-type: application/json
-Content-length: 36
+Content-length: 72
 
 {
-  "notifyManagedDevices": true
+  "notifyManagedDevices": true,
+  "revokeUntrackedLicenses": true
 }
 ```
 
@@ -80,6 +82,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

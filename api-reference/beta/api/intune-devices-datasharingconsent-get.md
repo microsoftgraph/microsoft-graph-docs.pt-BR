@@ -3,14 +3,14 @@ title: Obter dataSharingConsent
 description: Leia as propriedades e as relações do objeto dataSharingConsent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d182694ac86188e4db52c4aede31a39d31276d6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7b0853c2e54636b60fd7c52e682f1707806802fb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426671"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085882"
 ---
 # <a name="get-datasharingconsent"></a>Obter dataSharingConsent
 
@@ -83,6 +83,9 @@ Content-Length: 417
   }
 }
 ```
+
+
+
 
 
 
