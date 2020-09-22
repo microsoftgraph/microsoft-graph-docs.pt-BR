@@ -5,26 +5,26 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7581aba181ad98a15c0cb28067183dea520dbe31
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 4485001c076fd25b4d5ab7dd7f06f7ccab4c81a4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082702"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086267"
 ---
-# <a name="teleconferencedevicescreensharingquality-resource-type"></a><span data-ttu-id="f1893-103">tipo de recurso teleconferenceDeviceScreenSharingQuality</span><span class="sxs-lookup"><span data-stu-id="f1893-103">teleconferenceDeviceScreenSharingQuality resource type</span></span>
+# <a name="teleconferencedevicescreensharingquality-resource-type"></a><span data-ttu-id="6b26f-103">tipo de recurso teleconferenceDeviceScreenSharingQuality</span><span class="sxs-lookup"><span data-stu-id="6b26f-103">teleconferenceDeviceScreenSharingQuality resource type</span></span>
 
-<span data-ttu-id="f1893-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f1893-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6b26f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6b26f-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="f1893-105">Representa os dados de qualidade de compartilhamento de tela do dispositivo de teleconferência de vídeo.</span><span class="sxs-lookup"><span data-stu-id="f1893-105">Represents video teleconferencing device screen-sharing quality data.</span></span>
+<span data-ttu-id="6b26f-105">Representa os dados de qualidade de compartilhamento de tela do dispositivo de teleconferência de vídeo.</span><span class="sxs-lookup"><span data-stu-id="6b26f-105">Represents video teleconferencing device screen-sharing quality data.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f1893-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f1893-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6b26f-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6b26f-106">Properties</span></span>
 
-<span data-ttu-id="f1893-107">O **teleconferenceDeviceScreenSharingQuality** herda todas as propriedades de [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md).</span><span class="sxs-lookup"><span data-stu-id="f1893-107">The **teleconferenceDeviceScreenSharingQuality** inherits all the properties from [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md).</span></span>
+<span data-ttu-id="6b26f-107">O **teleconferenceDeviceScreenSharingQuality** herda todas as propriedades de [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md).</span><span class="sxs-lookup"><span data-stu-id="6b26f-107">The **teleconferenceDeviceScreenSharingQuality** inherits all the properties from [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md).</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="f1893-108">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f1893-108">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6b26f-108">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6b26f-108">JSON representation</span></span>
 
-<span data-ttu-id="f1893-109">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f1893-109">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6b26f-109">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6b26f-109">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -74,3 +74,4 @@ ms.locfileid: "43082702"
   "section": "documentation",
   "tocPath": ""
 }-->
+
