@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: aca1ce59f40e758c132d835214442af70a4d571d
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 892d9bedb188ea0a39a611fdb207248958624f28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872870"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056426"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -110,3 +110,4 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="see-also"></a>Confira também
 - [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
 - [Como usar as APIs do Teams](teams-api-overview.md)
+

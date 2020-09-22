@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5a3902669028a26abdb8d88e09334ccefe414d42
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 3a18b3627aec777bf95ece65cd26a170d6f98ad7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154967"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056440"
 ---
 # <a name="swapshiftschangerequest-resource-type"></a>tipo de recurso swapShiftsChangeRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa um tipo de solicitação de mudança para trocar uma [mudança](../resources/shift.md) por outro usuário na [equipe](../resources/team.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -32,7 +32,7 @@ Representa um tipo de solicitação de mudança para trocar uma [mudança](../re
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|recipientShiftId|Cadeia de caracteres|ShiftID do usuário do destinatário com o qual a solicitação deve ser trocada.|
+|recipientShiftId|String|ShiftID do usuário do destinatário com o qual a solicitação deve ser trocada.|
 
 ## <a name="relationships"></a>Relações
 
@@ -66,3 +66,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

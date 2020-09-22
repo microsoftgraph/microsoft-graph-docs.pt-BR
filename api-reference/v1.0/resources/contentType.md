@@ -7,12 +7,12 @@ localization_priority: Normal
 description: O recurso contentType representa um tipo de conteúdo no SharePoint.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c05ed39c0f92b209925fc9a722c5562999ae438c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 71652c2e314cd4f86a7bf0a957b1df937aa0d2e3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531786"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056965"
 ---
 # <a name="contenttype-resource-type"></a>Tipo de recurso ContentType
 
@@ -56,7 +56,7 @@ Aqui está uma representação JSON de um recurso **contentType**.
 | **description**   | string               | O texto descritivo do item.
 | **group**         | string               | O nome do grupo ao qual esse tipo de conteúdo pertence. Ajuda a organizar os tipos de conteúdo relacionados.
 | **hidden**        | booliano              | Indica se o tipo de conteúdo está oculto no menu “Novo” da lista.
-| **id**            | cadeia de caracteres               | O identificador exclusivo do tipo de conteúdo.
+| **id**            | string               | O identificador exclusivo do tipo de conteúdo.
 | **inheritedFrom** | [itemReference][]    | Se esse tipo de conteúdo for herdado de outro escopo (como um site), fornece uma referência para o item no qual o tipo de conteúdo foi definido.
 | **name**          | string               | O nome do tipo de conteúdo.
 | **order**         | [contentTypeOrder][] | Especifica a ordem na qual o tipo de conteúdo aparece na seleção da interface do usuário.
@@ -84,3 +84,4 @@ Consulte [Introdução a tipos de conteúdo e publicação de tipo de conteúdo]
   "section": "documentation",
   "tocPath": "Resources/ContentType"
 } -->
+

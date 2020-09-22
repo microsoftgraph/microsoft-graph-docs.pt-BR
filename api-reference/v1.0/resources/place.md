@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9aac2e7c37ce33caaaa8d5a69207e451786421a5
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 25117aa82efcd914b588572f0d557139b59ec036
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336332"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056419"
 ---
 # <a name="place-resource-type"></a>inserir tipo de recurso
 
@@ -34,7 +34,7 @@ As funções [findRooms](https://docs.microsoft.com/graph/api/user-findrooms?vie
 |Oferece suporte somente a cenários organizacionais com permissões delegadas (contas corporativas ou de estudante) ou de aplicativo | Suporte semelhante somente para cenários organizacionais com permissões delegadas ou de aplicativo|
 |Oferece suporte à [atualização de uma lista de salas ou salas individuais](../api/place-update.md) em um locatário | Não oferece suporte à atualização de uma lista de salas ou salas individuais em um locatário
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                              | Tipo de retorno                  | Descrição |
 |:------------------------------------|:-----------------------------|:--------|
@@ -47,7 +47,7 @@ As funções [findRooms](https://docs.microsoft.com/graph/api/user-findrooms?vie
 | Propriedade       | Tipo                                              | Descrição |
 |:---------------|:--------------------------------------------------|:--------|
 | address        | [physicalAddress](physicaladdress.md)             | O endereço da rua do local. |
-| displayName    | Cadeia de caracteres                                            | O nome associado ao local. |
+| displayName    | String                                            | O nome associado ao local. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Especifica o local do local no latitude, longitude e (opcionalmente) as coordenadas de altitude. |
 | id             | String                                            | Identificador exclusivo do local. Somente leitura. |
 | phone          | Cadeia de caracteres                                            | O número de telefone do local. |
@@ -92,3 +92,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

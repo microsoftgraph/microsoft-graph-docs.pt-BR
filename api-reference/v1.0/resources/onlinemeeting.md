@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 812f094667b217d167509be324843227e552e0a5
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 1b2a87d8494876ada8c45849d2cd93142f1dc570
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056489"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
 
@@ -24,7 +24,7 @@ Contém informações sobre a reunião, incluindo a URL usada para ingressar em 
 |:---------------|:--------|:----------|
 | [Criar ReuniãoOnline](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online. |
 | [Obter onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e os relacionamentos de um objeto **onlineMeeting** . |
-| [Excluir onlineMeeting](../api/onlinemeeting-delete.md) | Nenhuma | Excluir uma reunião online. |
+| [Excluir onlineMeeting](../api/onlinemeeting-delete.md) | Nenhum | Excluir uma reunião online. |
 | [Criar ou obter onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online com uma ID externa personalizada. Se a reunião já existir, recupere suas propriedades. |
 
 ## <a name="properties"></a>Propriedades
@@ -39,7 +39,7 @@ Contém informações sobre a reunião, incluindo a URL usada para ingressar em 
 | id                        | String                                                 | A ID padrão associada à reunião online. Somente leitura. |
 | joinWebUrl                | String                                                 | A URL de ingresso da reunião online. Somente leitura.|
 | participants              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
-| subject                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
+| assunto                   | String                                                 | O assunto da reunião online. |
 | videoTeleconferenceId     | String                                                 | A ID de teleconferência de vídeo. Somente leitura. |
 | joinInformation | [itemBody](itembody.md) | As informações de ingresso no idioma e na variante de localidade especificados no `Accept-Language` cabeçalho HTTP da solicitação. Somente leitura. |
 
@@ -76,3 +76,4 @@ Contém informações sobre a reunião, incluindo a URL usada para ingressar em 
   "section": "documentation",
   "tocPath": ""
 }-->
+

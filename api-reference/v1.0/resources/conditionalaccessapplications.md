@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8b09a3531d3734aed67e9ff91fee1d917f76054b
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 5a9794a274b876ba93cc3fdbe14ea7731776daa3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384410"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057042"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>tipo de recurso conditionalAccessApplications
 
@@ -22,9 +22,9 @@ Representa os aplicativos e as ações do usuário incluídos no e excluídos da
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeApplications | String collection | A lista de IDs de aplicativo à qual a política se aplica, a menos que explicitamente excluída (em excludeApplications). Também pode ser definido como `All` . |
-| excludeApplications | String collection | A lista de IDs de aplicativo explicitamente excluídas da política. |
-| includeUserActions | String collection | Ações do usuário a serem incluídas. Por exemplo, `urn:user:registersecurityinfo` |
+| includeApplications | Coleção de cadeias de caracteres | A lista de IDs de aplicativo à qual a política se aplica, a menos que explicitamente excluída (em excludeApplications). Também pode ser definido como `All` . |
+| excludeApplications | Coleção de cadeias de caracteres | A lista de IDs de aplicativo explicitamente excluídas da política. |
+| includeUserActions | Coleção de cadeias de caracteres | Ações do usuário a serem incluídas. Por exemplo, `urn:user:registersecurityinfo` |
 
 ## <a name="relationships"></a>Relações
 
@@ -61,3 +61,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
