@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: e23995651f4ad08f75a435bc3a75323c64927c31
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 34a03b5e5305e62837e72559719995e2b6dae5e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598126"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013976"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
@@ -28,7 +28,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
-|[callRecord](../resources/callrecords-callrecord.md) | Sem suporte | Incompatível | CallRecords.Read.All  |
+|[callRecord](../resources/callrecords-callrecord.md) | Incompatível | Incompatível | CallRecords.Read.All  |
 |[chat](../resources/chatmessage.md) (/Teams/{ID}/Channels/{ID}/Messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Sem suporte | ChannelMessage.Read.All  |
 |[chat](../resources/chatmessage.md) (/Teams/allMessages--todas as mensagens do canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chat](../resources/chatmessage.md) (/chats/{ID}/Messages) | Chat.Read, Chat.ReadWrite | Sem suporte | Chat.Read.All  |
@@ -168,3 +168,5 @@ Content-length: 252
   ]
 }
 -->
+
+

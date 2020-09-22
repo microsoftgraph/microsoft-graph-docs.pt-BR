@@ -3,14 +3,14 @@ title: Listar deviceManagementExportJobs
 description: Listar Propriedades e relações dos objetos deviceManagementExportJob.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5901b26ec9db7813e8e9fe380ba58b77d91ae6df
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 21a1ecb54ddc90cfe0bedf35d4aa3af0340e64c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447624"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014284"
 ---
 # <a name="list-devicemanagementexportjobs"></a>Listar deviceManagementExportJobs
 
@@ -50,7 +50,7 @@ GET /deviceManagement/reports/exportJobs
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -87,6 +87,9 @@ Content-Length: 538
   ]
 }
 ```
+
+
+
 
 
 

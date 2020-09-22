@@ -6,12 +6,12 @@ title: Obter site do SharePoint por caminho
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f9514a19605317e66ede9843938d863f654e5882
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f5b61c84146701782c1dbe5e8b24631ca30bbb79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453224"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013969"
 ---
 # <a name="get-a-site-resource-by-path"></a>Obter um recurso de site pelo caminho
 
@@ -88,3 +88,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+

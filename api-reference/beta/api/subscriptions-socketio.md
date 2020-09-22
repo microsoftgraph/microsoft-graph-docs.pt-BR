@@ -6,12 +6,12 @@ description: Não há suporte para o uso dessas APIs em aplicativos de produçã
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 067fc455a0a122761c45ac1078712ea04b68845c
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: c7502cf8cc72d5aabc4ab2fbe3c190bd388b724a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109184"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013934"
 ---
 # <a name="get-websocket-endpoint"></a>Obter ponto de extremidade do WebSocket
 
@@ -76,7 +76,7 @@ GET /me/drive/root/subscriptions/socketIo
 
 ### <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Subscription](../resources/subscription.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Subscription](../resources/subscription.md) no corpo da resposta.
 
 <!-- {
   "blockType": "response",
@@ -94,8 +94,8 @@ Content-type: application/json
 ```
 
 O `notificationUrl` retornado é uma URL de ponto de extremidade Socket.IO.
-Para usá-lo com um cliente do socket.io, divida a cadeia `/callback?` de caracteres no token.
-A parte da cadeia de caracteres `/callback?` antes é a URL de ponto de extremidade Socket.Io e a parte da cadeia de caracteres depois é uma cadeia de caracteres de consulta opaca que deve ser fornecida à biblioteca.
+Para usá-lo com um cliente do socket.io, divida a cadeia de caracteres no `/callback?` token.
+A parte da cadeia de caracteres antes `/callback?` é a URL de ponto de extremidade Socket.Io e a parte da cadeia de caracteres depois é uma cadeia de caracteres de consulta opaca que deve ser fornecida à biblioteca.
 
 O exemplo a seguir mostra como usar o `notificationUrl` com Socket.Io em JavaScript.
 
@@ -126,3 +126,5 @@ socket.on("notification", (data)=>console.log("Notification!", data));
   "suppressions": [
   ]
 }-->
+
+

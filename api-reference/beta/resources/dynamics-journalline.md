@@ -7,29 +7,29 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 8285a64b931ab18dac51cc20224877bbac74be90
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99d06b5a49bd2881ea6f329e8b0d3692a25444b4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503653"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013794"
 ---
 # <a name="journallines-resource-type"></a>tipo de recurso journalLines
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma linha em um diário no Dynamics 365 Business central.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                    | Tipo de retorno|Descrição         |
 |:----------------------------------------------------------|:-----------|:-------------------|
 |[Obter journalLines](../api/dynamics-journalline-get.md)      |journalLines|Obtém uma linha do diário.   |
 |[Postar journalLines](../api/dynamics-create-journalline.md)  |journalLines|Cria uma linha de diário.|
 |[Patch journalLines](../api/dynamics-journalline-update.md) |journalLines|Atualiza uma linha do diário.|
-|[Excluir journalLines](../api/dynamics-journalline-delete.md)|nenhuma        |Exclui uma linha do diário.|
+|[Excluir journalLines](../api/dynamics-journalline-delete.md)|Nenhuma        |Exclui uma linha do diário.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade             | Tipo                   |Descrição                                                        |
@@ -76,3 +76,5 @@ Veja a seguir uma representação JSON do recurso.
     "lastModifiedDateTime": "datetime"
 }
 ```
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: 07318d0ac4bcab60ea16bec58da848400169f84e
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: ed70c962f9090ff554d736c6f417babfff2fcf4b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849561"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014074"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>Obter singleValueLegacyExtendedProperty
 
@@ -455,3 +455,5 @@ Para cada um dos dois exemplos anteriores, uma resposta bem-sucedida é indicada
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 8f1392e8539f20c0480f9c4604119b5fdf4cbb16
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: f7e0fb5076b9335bd18910c4898e24df8a70c157
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757297"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013987"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -185,7 +185,7 @@ Content-length: 252
 }
 ```
 
-### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
+### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
 
 O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl** ) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [configurar notificações para alterações nos dados do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
 
@@ -204,3 +204,5 @@ O ponto de extremidade de notificação de assinatura (especificado na proprieda
   ]
 }
 -->
+
+

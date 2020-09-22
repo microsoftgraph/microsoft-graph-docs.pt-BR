@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: bfedee99e7679aead910c675d605c0f0b776d42b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 4a93da1fa8598a785d9b3b1f188afedfb769cbb7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809884"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013989"
 ---
 # <a name="enumerate-sites"></a>Enumerar sites
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)
 |:--------------------------------------|:-------------------------------------
 |Delegado (conta corporativa ou de estudante)     | Sites.Read.All, Sites.ReadWrite.All
-|Delegada (conta pessoal da Microsoft) | Sem suporte.
+|Delegado (conta pessoal da Microsoft) | Sem suporte.
 |Aplicativo                            | Sites.Read.All, Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -122,3 +122,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

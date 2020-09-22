@@ -5,16 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 62fe2fdc347c7c74eaedd57e844978ea87c2f275
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ef75f4b218c84cbb76bfff29d1541a31d29ef530
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455461"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014305"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -243,3 +243,5 @@ HTTP/1.1 202 Accpted
   ]
 }
 -->
+
+

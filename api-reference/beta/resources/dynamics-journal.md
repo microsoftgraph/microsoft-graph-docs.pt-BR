@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 041de72a3372fd80063b96ba73d10272247c4fdb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ecbeba91828ba06b9927af08ac8d75a177e27cea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503744"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013829"
 ---
 # <a name="journal-resource-type"></a>tipo de recurso diário
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,18 +29,18 @@ Representa um diário no Dynamics 365 Business central.
 |[Obter diário](../api/dynamics-journal-get.md)      |diário    |Obtém um diário.   |
 |[Diário de lançamentos](../api/dynamics-create-journal.md)  |diário    |Cria um diário.|
 |[Diário de patches](../api/dynamics-journal-update.md) |diário    |Atualiza um diário.|
-|[Excluir diário](../api/dynamics-journal-delete.md)|nenhuma       |Exclui um diário.|
+|[Excluir diário](../api/dynamics-journal-delete.md)|Nenhuma       |Exclui um diário.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade           | Tipo                  |Descrição                                           |
 |:-------------------|:----------------------|:-----------------------------------------------------|
 |id                  |GUID                   |A ID exclusiva do diário. Não editável.           |
 |código                |Cadeia de caracteres, tamanho máximo 10| O código do diário.                             |
-|displayName         |Cadeia de caracteres, tamanho máximo 50| O nome de exibição do diário.                     |
+|Nome para exibição         |Cadeia de caracteres, tamanho máximo 50| O nome de exibição do diário.                     |
 |lastModifiedDateTime|datetime               |O último DateTime que o diário foi modificado. Somente Leitura.|
 
 ## <a name="bound-actions"></a>Ações associadas
-O tipo de recurso diário oferece uma ação associada `post` chamada que envia o lote de diário geral correspondente.
+O tipo de recurso diário oferece uma ação associada chamada `post` que envia o lote de diário geral correspondente.
 
 O lançamento do lote de diário geral é ilustrado no exemplo a seguir:  
 `POST https://graph.microsoft.com/beta/financials/companies{id}/journals{id}/post`.
@@ -60,4 +60,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "datetime"
 }
 ```
+
+
 

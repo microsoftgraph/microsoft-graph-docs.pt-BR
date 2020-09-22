@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: 1142d08b1a787aff7b8bcdc748c9caf11ef89eee
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: bf94093fd64baaf32c0c100c179b7d258a864a2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014018"
 ---
 # <a name="create-single-value-extended-property"></a>Criar uma propriedade estendida de valor único
 
@@ -278,4 +278,6 @@ Para ver a propriedade estendida recém-criada, [obtenha a mensagem expandida co
   "suppressions": []
 }
 -->
+
+
 

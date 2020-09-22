@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: conceptualPageType
-ms.openlocfilehash: dde29750695026fa867e0d79859cea2f23afba25
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 5566c19288029e0607e2da60cde49e6bb9bb5471
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353788"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013837"
 ---
 # <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a>Trabalhar com a API do Dynamics 365 Business central no Microsoft Graph
 
@@ -26,7 +26,7 @@ Use o ponto de extremidade do Azure AD v 2.0 para autenticar as APIs do Dynamics
 ## <a name="common-dynamics-365-business-central-scenarios"></a>Cenários do Common Business central do Dynamics 365
 A API do Dynamics 365 Business central permite que você leia e modifique dados corporativos por meio de aplicativos conectados e integrados por meio de um único ponto de extremidade. Use a API para, por exemplo, obter acesso a informações de [cliente](../resources/dynamics-customer.md) e de [fornecedor](../resources/dynamics-vendor.md) ou [Exibir pagamentos vencidos](../resources/dynamics-agedaccountspayable.md).
 
-## <a name="whats-new"></a>Novidades
+## <a name="whats-new"></a>O que há de novo
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
 ## <a name="next-steps"></a>Próximas etapas
@@ -69,3 +69,5 @@ A API do Dynamics 365 Business central pode abrir novas maneiras de contato com 
 |unitsOfMeasure resource type|[unitsOfMeasure](../resources/dynamics-unitsofmeasure.md)|
 |vendor resource type|[vendor](../resources/dynamics-vendor.md)|
 -->
+
+
