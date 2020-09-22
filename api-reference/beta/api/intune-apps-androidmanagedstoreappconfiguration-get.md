@@ -3,18 +3,18 @@ title: Obter androidManagedStoreAppConfiguration
 description: Leia as propriedades e as relações do objeto androidManagedStoreAppConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2289f6115cf7f626582e9f483e12411f213a3fbc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d1ab078e6368733099b73578319b9f0ef4e6582d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43417512"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006388"
 ---
 # <a name="get-androidmanagedstoreappconfiguration"></a>Obter androidManagedStoreAppConfiguration
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -99,6 +99,9 @@ Content-Length: 880
   }
 }
 ```
+
+
+
 
 
 
