@@ -3,14 +3,14 @@ title: Get iosGeneralDeviceConfiguration
 description: Ler propriedades e relações do objeto iosGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 62509d7ffb50cd33719bc33ea1139703d740be5e
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 5fe3d659308f2185841a54544c6addcf91cd54ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792811"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995314"
 ---
 # <a name="get-iosgeneraldeviceconfiguration"></a>Get iosGeneralDeviceConfiguration
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11336
+Content-Length: 11366
 
 {
   "value": {
@@ -363,10 +363,14 @@ Content-Length: 11336
     "findMyFriendsInFindMyAppBlocked": true,
     "iTunesBlocked": true,
     "sharedDeviceBlockTemporarySessions": true,
+    "appClipsBlocked": true,
     "kioskModeAppType": "appStoreApp"
   }
 }
 ```
+
+
+
 
 
 

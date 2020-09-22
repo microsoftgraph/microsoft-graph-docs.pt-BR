@@ -1,18 +1,18 @@
 ---
-title: Adicionar conector ao conector
+title: Adicionar conector a connectorGroup
 description: Use esta API para adicionar um conector a um conector.
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4df3f5a1b721528e1a72a0b5970f5577d6cf5696
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 6b50461281a5568b50463964d6b8c292fd63928f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006860"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996416"
 ---
-# <a name="add-connector-to-connectorgroup"></a>Adicionar conector ao conector
+# <a name="add-connector-to-connectorgroup"></a>Adicionar conector a connectorGroup
 
 Namespace: microsoft.graph
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -103,3 +103,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

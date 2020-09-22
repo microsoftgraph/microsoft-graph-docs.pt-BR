@@ -3,14 +3,14 @@ title: Excluir windows10DeviceFirmwareConfigurationInterface
 description: Exclui windows10DeviceFirmwareConfigurationInterface.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd11f4158910892673f03698f514e923fd287c70
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dd2b7152ad02a838676b6e1c6cf4de8b03aa8e02
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43340015"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994747"
 ---
 # <a name="delete-windows10devicefirmwareconfigurationinterface"></a>Excluir windows10DeviceFirmwareConfigurationInterface
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

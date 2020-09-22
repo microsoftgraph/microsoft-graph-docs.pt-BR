@@ -3,14 +3,14 @@ title: Obter iosWiFiConfiguration
 description: Leia as propriedades e as relações do objeto iosWiFiConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8330d15217e99e26bdf81a726271e3face0f1f94
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7d57cea72d3630f2dbb4c2d0420d87f8d6da3900
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438418"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994802"
 ---
 # <a name="get-ioswificonfiguration"></a>Obter iosWiFiConfiguration
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1723
+Content-Length: 1768
 
 {
   "value": {
@@ -115,10 +115,14 @@ Content-Length: 1723
     "proxyManualAddress": "Proxy Manual Address value",
     "proxyManualPort": 15,
     "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+    "disableMacAddressRandomization": true,
     "preSharedKey": "Pre Shared Key value"
   }
 }
 ```
+
+
+
 
 
 

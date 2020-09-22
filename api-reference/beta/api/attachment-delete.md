@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: 6af7e877c56b953de6c350f9c8c202df47ad1cde
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: f096d8004347220a29b36dbac82dfb8104bd90d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849174"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996637"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
@@ -182,3 +182,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

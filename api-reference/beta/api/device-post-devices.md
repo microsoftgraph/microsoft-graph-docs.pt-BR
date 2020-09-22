@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 61570106a40d1635b036673d61e660cb64c2f40b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c019e092c102facc19bcf0503d983cd4fb257e77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381802"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996189"
 ---
 # <a name="create-device"></a>Criar dispositivo
 
@@ -43,7 +43,7 @@ POST /devices
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [device](../resources/device.md).
 
-Como o recurso de **dispositivo** suporta [extensões](/graph/extensibility-overview), você pode usar `POST` a operação e adicionar propriedades personalizadas com seus próprios dados à instância do dispositivo ao criá-la.
+Como o recurso de **dispositivo** suporta [extensões](/graph/extensibility-overview), você pode usar a `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância do dispositivo ao criá-la.
 
 ## <a name="response"></a>Resposta
 
@@ -141,3 +141,5 @@ Content-length: 364
   ]
 }
 -->
+
+

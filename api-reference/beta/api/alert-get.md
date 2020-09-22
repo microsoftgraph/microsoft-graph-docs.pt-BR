@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 1bbf75e08a4d418123707a2525a7234c46cfa67f
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 203323ae6f9a3f9c8b5b4a0d1f335e38d9d5f46d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680959"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997106"
 ---
 # <a name="get-alert"></a>Obter alerta
 
@@ -288,3 +288,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

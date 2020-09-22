@@ -3,14 +3,14 @@ title: Excluir deviceShellScript
 description: Exclui deviceShellScript.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 712494917f90e7a5a3ffa0250152fa8e7d24054d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a074a4589675112f23041056ebdca4d2c510a6b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43425588"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994635"
 ---
 # <a name="delete-deviceshellscript"></a>Excluir deviceShellScript
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

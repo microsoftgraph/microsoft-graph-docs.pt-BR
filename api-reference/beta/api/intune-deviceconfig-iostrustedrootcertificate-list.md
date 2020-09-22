@@ -3,14 +3,14 @@ title: Listar iosTrustedRootCertificates
 description: Listar Propriedades e relações dos objetos iosTrustedRootCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 965a78bc07d27ab95da5d56567bea38504d7fb62
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69ecf4dba8d7d1a8d6e161eed58a7829d4ce31f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438680"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994928"
 ---
 # <a name="list-iostrustedrootcertificates"></a>Listar iosTrustedRootCertificates
 
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -108,6 +108,9 @@ Content-Length: 1477
   ]
 }
 ```
+
+
+
 
 
 

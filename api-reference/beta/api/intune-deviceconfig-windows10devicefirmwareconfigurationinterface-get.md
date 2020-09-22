@@ -3,14 +3,14 @@ title: Obter windows10DeviceFirmwareConfigurationInterface
 description: Leia as propriedades e as relações do objeto windows10DeviceFirmwareConfigurationInterface.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d170b9c3777f0f4bf1919cf6905c9ba89f5f9cf5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8bdab5848a9b2dbbe3774295cabb3593f12628a8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43431644"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994740"
 ---
 # <a name="get-windows10devicefirmwareconfigurationinterface"></a>Obter windows10DeviceFirmwareConfigurationInterface
 
@@ -116,6 +116,9 @@ Content-Length: 1578
   }
 }
 ```
+
+
+
 
 
 

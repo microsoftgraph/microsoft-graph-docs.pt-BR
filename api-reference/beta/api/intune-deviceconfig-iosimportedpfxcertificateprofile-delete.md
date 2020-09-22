@@ -3,14 +3,14 @@ title: Excluir iosImportedPFXCertificateProfile
 description: Exclui iosImportedPFXCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce4a21f017fca84b8cf8d7ef44162aef8e7a0295
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e78551a6723113fefb73b62a611c8887c04de0c4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438887"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995195"
 ---
 # <a name="delete-iosimportedpfxcertificateprofile"></a>Excluir iosImportedPFXCertificateProfile
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

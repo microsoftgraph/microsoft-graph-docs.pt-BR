@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0b0219644987cd0069d179f6245b4dfc293d8d66
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 6802c0d83dca98b62d4b773cab7032917c9aafdb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543321"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996155"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -182,3 +182,5 @@ Content-length: 271
   "suppressions": [
   ]
 }-->
+
+

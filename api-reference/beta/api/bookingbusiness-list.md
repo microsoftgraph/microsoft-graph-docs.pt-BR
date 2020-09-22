@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c71ef053941b82b436bd453f8c3927af4222caf7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cbef8b345db23f1b396d1667bd0acb17cbdcf7a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43366623"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996616"
 ---
 # <a name="list-bookingbusinesses"></a>Listar bookingBusinesses
 
@@ -22,7 +22,7 @@ Obtenha uma coleção de objetos [bookingbusiness](../resources/bookingbusiness.
 
 Essa operação retorna apenas a **ID** e o **DisplayName** de cada livro de livros na coleção. Para considerações de desempenho, ele não retorna outras propriedades. Você pode obter as outras propriedades de uma empresa de livros, especificando sua **ID** em uma operação [Get](bookingbusiness-get.md) .
 
-Você também pode consultar as empresas de reservas especificando uma cadeia de caracteres em `query` um parâmetro para fazer a correspondência de subcadeia entre as empresas de um locatário. Veja um [exemplo](#request-2) abaixo.
+Você também pode consultar as empresas de reservas especificando uma cadeia de caracteres em um `query` parâmetro para fazer a correspondência de subcadeia entre as empresas de um locatário. Veja um [exemplo](#request-2) abaixo.
 
 
 ## <a name="permissions"></a>Permissões
@@ -42,7 +42,7 @@ GET /bookingBusinesses
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
-Este método também dá suporte `query` ao parâmetro que aceita um valor de cadeia de caracteres. Esse parâmetro limita os resultados GET para empresas que correspondem à cadeia de caracteres especificada. Você pode ver um [exemplo](#request-2) abaixo.
+Este método também dá suporte ao `query` parâmetro que aceita um valor de cadeia de caracteres. Esse parâmetro limita os resultados GET para empresas que correspondem à cadeia de caracteres especificada. Você pode ver um [exemplo](#request-2) abaixo.
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -53,7 +53,7 @@ Este método também dá suporte `query` ao parâmetro que aceita um valor de ca
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [bookingBusiness](../resources/bookingbusiness.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [bookingBusiness](../resources/bookingbusiness.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1
 O exemplo a seguir obtém as empresas de reservas em um locatário.
@@ -169,3 +169,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

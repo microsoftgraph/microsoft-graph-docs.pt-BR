@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c06699c99a381e46195f9e9bcb4eb772655df349
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: a8b48da33ec7107f80bf8345da71374e70d5edcd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895696"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996641"
 ---
 # <a name="attachment-createuploadsession"></a>Anexo: createUploadSession
 
@@ -168,3 +168,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

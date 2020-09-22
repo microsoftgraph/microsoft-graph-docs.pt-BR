@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 32f088779b925484f42004a8316d1f246ce4fa65
-ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.openlocfilehash: 550941789667764f7d4474ee5ca4f7d514580284
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47339995"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997057"
 ---
 # <a name="application-addpassword"></a>Application: addpassword
 
@@ -132,3 +132,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

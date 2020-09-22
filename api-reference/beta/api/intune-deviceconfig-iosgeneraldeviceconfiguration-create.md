@@ -3,14 +3,14 @@ title: Criar iosGeneralDeviceConfiguration
 description: Cria um novo objeto iosGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d302a2420e6910bb50a20aaedf43867e42d2e26a
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 4116153ff5d24a4577cc42dcd3c67f9f8d49fa79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792832"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995349"
 ---
 # <a name="create-iosgeneraldeviceconfiguration"></a>Criar iosGeneralDeviceConfiguration
 
@@ -63,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |accountBlockModification|Boolean|Indica se a modificação da conta será permitida ou não quando o dispositivo estiver no modo supervisionado.|
 |activationLockAllowWhenSupervised|Boolean|Indica se o bloqueio de ativação será permitido ou não quando o dispositivo estiver no modo supervisionado.|
@@ -188,7 +188,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |passcodeMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inatividade antes que a tela atinja o tempo limite.|
 |passcodeMinimumCharacterSetCount|Int32|Número de conjuntos de caracteres que uma senha deve conter. Valores válidos de 0 a 4|
 |passcodePreviousPasscodeBlockCount|Int32|Número de códigos de acesso anteriores para bloquear. Valores válidos de 1 a 24|
-|passcodeSignInFailureCountBeforeWipe|Int32|Número permitido de falhas de entrada antes da limpeza do dispositivo. Valores válidos de 4 a 11|
+|passcodeSignInFailureCountBeforeWipe|Int32|Número permitido de falhas de entrada antes da limpeza do dispositivo. Valores válidos de 2 a 11|
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Boolean|Indica se um código de acesso deve ou não ser exigido.|
 |podcastsBlocked|Boolean|Indica se o usuário será ou não impedido de usar podcasts no dispositivo supervisionado (iOS 8.0 e posterior).|
@@ -198,7 +198,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |safariBlockPopups|Boolean|Indica se os popups devem ou não ser bloqueados no Safari.|
 |safariBlocked|Boolean|Indica se o usuário será ou não impedido de usar o Safari. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |safariCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Configurações de cookie do Safari. Os valores possíveis são: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
-|safariManagedDomains|Coleção de cadeias de caracteres|As URLs correspondentes aos padrões indicados aqui serão consideradas gerenciadas.|
+|safariManagedDomains|String collection|As URLs correspondentes aos padrões indicados aqui serão consideradas gerenciadas.|
 |safariPasswordAutoFillDomains|String collection|Os usuários podem salvar senhas no Safari somente de URLs correspondentes aos padrões indicados aqui. Aplica-se a dispositivos no modo supervisionado (iOS 9.3 ou posterior).|
 |safariRequireFraudWarning|Boolean|Indica se um aviso de fraude deve ou não ser exigido no Safari.|
 |screenCaptureBlocked|Boolean|Indica se o usuário será ou não impedido de fazer capturas de tela.|
@@ -241,6 +241,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |findMyFriendsInFindMyAppBlocked|Boolean|Indica se a localização de meus amigos deve ou não ser bloqueada quando o dispositivo é supervisionado (iOS 13 ou posterior).|
 |iTunesBlocked|Boolean|Indica se o aplicativo iTunes deve ou não ser bloqueado. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |sharedDeviceBlockTemporarySessions|Boolean|Indica se as sessões temporárias devem ou não ser bloqueadas no iPads compartilhado (iOS 13,4 ou posterior).|
+|appClipsBlocked|Boolean|Impede que um usuário adicione qualquer clipe de aplicativos e remova todos os clipes de aplicativos existentes no dispositivo.|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Tipo de aplicativo a ser executado no modo quiosque. Os valores possíveis são: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 
@@ -255,7 +256,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 10565
+Content-length: 10593
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -544,6 +545,7 @@ Content-length: 10565
   "findMyFriendsInFindMyAppBlocked": true,
   "iTunesBlocked": true,
   "sharedDeviceBlockTemporarySessions": true,
+  "appClipsBlocked": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
@@ -553,7 +555,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 10737
+Content-Length: 10765
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -845,9 +847,13 @@ Content-Length: 10737
   "findMyFriendsInFindMyAppBlocked": true,
   "iTunesBlocked": true,
   "sharedDeviceBlockTemporarySessions": true,
+  "appClipsBlocked": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
+
+
+
 
 
 

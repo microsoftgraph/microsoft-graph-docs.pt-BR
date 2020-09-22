@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d6208b12d547e4634fb9b95b02575c80753afb1
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 2ab424f84781039498e2d3132a5174de63b23ad4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311855"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996483"
 ---
 # <a name="create-connectedorganization"></a>Criar connectedOrganization
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [connect
 |displayName|String|O nome da organização conectada. |
 |description|String|A descrição da organização conectada.|
 |identitySources|coleção [identityry](../resources/identitysource.md)|Uma coleção com um elemento, a fonte de identidade inicial nesta organização conectada.|
-|estado|connectedOrganizationState|O estado de uma organização conectada define se as políticas de atribuição com tipo de escopo solicitante `AllConfiguredConnectedOrganizationSubjects` são aplicáveis ou não. Os valores possíveis são: `configured` e `proposed`.|
+|state|connectedOrganizationState|O estado de uma organização conectada define se as políticas de atribuição com tipo de escopo solicitante `AllConfiguredConnectedOrganizationSubjects` são aplicáveis ou não. Os valores possíveis são: `configured` e `proposed`.|
 
 ## <a name="response"></a>Resposta
 
@@ -139,3 +139,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

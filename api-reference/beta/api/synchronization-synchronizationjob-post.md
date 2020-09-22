@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7fac7eda83cb5caf4332110e38367acb876c8ef7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: baead22be8a0b6f9b8561e4cc44e4835d26603ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994467"
 ---
 # <a name="create-synchronizationjob"></a>Criar synchronizationJob
 
@@ -43,7 +43,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [synchronizationJob](../resources/synchronization-synchronizationjob.md) a ser criado. A única propriedade Required é `templateId`. A `templateId` propriedade deve corresponder a um dos modelos criados para esta entidade de serviço/aplicativo. Para localizar os modelos disponíveis, use [modelos de lista](synchronization-synchronizationtemplate-list.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [synchronizationJob](../resources/synchronization-synchronizationjob.md) a ser criado. A única propriedade Required é `templateId` . A `templateId` propriedade deve corresponder a um dos modelos criados para esta entidade de serviço/aplicativo. Para localizar os modelos disponíveis, use [modelos de lista](synchronization-synchronizationtemplate-list.md).
 
 ## <a name="response"></a>Resposta
 
@@ -133,3 +133,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

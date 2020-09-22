@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 12928d7917ea0a274c69454d82943d72a7587c67
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: a06ace04fd87b91e56834fe874c8f6de141d7020
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050712"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996658"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationtemplate: instanciar
 
@@ -172,3 +172,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

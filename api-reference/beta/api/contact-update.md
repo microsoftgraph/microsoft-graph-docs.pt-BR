@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3bdb7c214a60e80088dd60ff6c7a913e2ea9acd7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: aae3584c5df29938e78ff3bdf127cf0b6dd44790
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381996"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996336"
 ---
 # <a name="update-contact"></a>Atualizar contato
 
@@ -62,7 +62,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |children|String||
 |companyName|String|O nome da empresa do contato.|
 |department|String|O departamento do contato.|
-|displayName|Cadeia de caracteres|O nome para exibição do contato. Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação atualizar.|
+|displayName|String|O nome para exibição do contato. Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação atualizar.|
 |emailAddresses|coleção [typedEmailAddress](../resources/typedemailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
 |gender |String |O sexo do contato. |
@@ -81,7 +81,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |postalAddresses |coleção [physicalAddress](../resources/physicaladdress.md) |Endereços associados ao contato, por exemplo, endereço residencial e endereço comercial. |
 |profession|String|A profissão do contato.|
 |spouseName|String|O nome do cônjuge/parceiro do contato.|
-|surname|Cadeia de caracteres|O sobrenome do contato.|
+|surname|String|O sobrenome do contato.|
 |title|String|O título do contato.|
 |websites |Coleção [website](../resources/website.md)|Sites da Web associados ao contato. |
 |weddingAnniversary |Data |Aniversário de casamento do contato. |
@@ -89,7 +89,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |yomiGivenName|String|O nome japonês fonético do contato. Essa propriedade é opcional.|
 |yomiSurname|String|O sobrenome japonês fonético do contato. Essa propriedade é opcional.|
 
-Como o recurso de **contato** oferece suporte a [extensões](/graph/extensibility-overview), você `PATCH` pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância de **contato** existente.
+Como o recurso de **contato** oferece suporte a [extensões](/graph/extensibility-overview), você pode usar a `PATCH` operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância de **contato** existente.
 
 ## <a name="response"></a>Resposta
 
@@ -242,3 +242,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

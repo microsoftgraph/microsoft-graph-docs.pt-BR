@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2c94248438f52403e1563725b69c1eea9181b268
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f18f55f657b1bbf260cc773063a1ab3b8e33722a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382003"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996345"
 ---
 # <a name="get-contact"></a>Obter contato
 
@@ -195,3 +195,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

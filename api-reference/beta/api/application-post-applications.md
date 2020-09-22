@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 005de9ffadbe5264e595a59b59ae4d4e6c2a4842
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: 688deb3d87ee9e1035348951e7bba3ab40ca3fbd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289303"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996826"
 ---
 # <a name="create-application"></a>Criar aplicativo
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Crie um novo objeto [application](../resources/application.md).
 
 > [!IMPORTANT]
-> A adição de [**passwordCredential**](../resources/passwordcredential.md) ao criar aplicativos não é suportada. Use o método [addpassword](application-addpassword.md) para adicionar senhas para um aplicativo.
+> Não há suporte para a adição de [**passwordCredential**](../resources/passwordcredential.md) ao criar aplicativos. Use o método [addPassword](application-addpassword.md) para adicionar senhas a um aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,9 +29,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -166,3 +166,5 @@ Content-length: 1145
   ]
 }
 -->
+
+

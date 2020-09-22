@@ -1,18 +1,18 @@
 ---
-title: Criar um conector
+title: Criar connectorGroup
 description: Criar um objeto de conexão.
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7978a526884d6d1c1c8c286a9ea9caa4f01f4302
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: Auto
+ms.openlocfilehash: 1d19993f8015f175c15de0de42bbfb13940c7873
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006856"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996378"
 ---
-# <a name="create-connectorgroup"></a>Criar um conector
+# <a name="create-connectorgroup"></a>Criar connectorGroup
 
 Namespace: microsoft.graph
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,7 +48,7 @@ A tabela a seguir lista as propriedades disponíveis para um **conector**. A pro
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| Indica o tipo de agente híbrido. Esta propriedade é predefinida pelo sistema.|
-|id|cadeia de caracteres| Identificador exclusivo desse conector. Somente leitura. |
+|id|string| Identificador exclusivo desse conector. Somente leitura. |
 |isDefault|booliano| Indica se o conector é o padrão. Somente um grupo de conectores único pode ser o grupo de conectores padrão e é predefinido pelo sistema. |
 |nome|string| O nome associado ao conector. |
 |região|string| A região à qual o conector é atribuído e otimizará o tráfego para o. Essa região só poderá ser definida se **nenhum** conector ou aplicativo for atribuído ao grupo de conectores. As regiões disponíveis incluem: América do Norte, Europa, Austrália, Ásia e Índia. Os valores possíveis são: `nam`, `eur`, `aus`, `asia`, `ind`.|
@@ -124,3 +124,5 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 926a0ab60f32affc502a9890407e953e33d97b0a
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 393071be1196c6f235df9628678ab499409eaa0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556139"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997099"
 ---
 # <a name="list-alerts"></a>Listar alertas
 
@@ -50,7 +50,7 @@ Este método suporta os seguintes [parâmetros de consulta OData](/graph/query-p
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top`-Retorna os resultados principais agregados de cada provedor de API de segurança.
+- `$top` -Retorna os resultados principais agregados de cada provedor de API de segurança.
 - `$filter`
 
 A tabela a seguir lista as `$filter` palavras-chave de cada nome de fornecedor.
@@ -62,7 +62,7 @@ A tabela a seguir lista as `$filter` palavras-chave de cada nome de fornecedor.
 | Microsoft Cloud App Security | MCAS |
 | Proteção de Identidade do Azure Active Directory | CPI |
 | Azure Sentinel | Azure Sentinel |
-| Proteção avançada contra ameaças do Microsoft Defender | Microsoft Defender ATP |
+| Proteção avançada contra ameaças do Microsoft Defender | O Microsoft Defender ATP |
 | Office 365 |  Não há suporte atualmente. |
 
 Para retornar um conjunto de propriedades alternativas, use o parâmetro de consulta OData `$select` para especificar o conjunto de propriedades de **alerta** que você deseja.  Por exemplo, para retornar as propriedades **assignedTo**, **category** e **severity**, adicione o seguinte à sua consulta: `$select=assignedTo,category,severity`.
@@ -156,3 +156,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

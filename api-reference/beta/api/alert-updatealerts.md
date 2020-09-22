@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 684c96aeb0f297c783343001a1ab00bc82f9da63
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9db39c6b7e9455e7350910eafd7ebe5ad06a5dd3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441631"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997050"
 ---
 # <a name="alert-updatealerts"></a>alerta: updateAlerts
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -152,3 +152,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

@@ -3,14 +3,14 @@ title: ação enableUnlicensedAdminstrators
 description: Após a habilitação, os usuários atribuídos como administradores por meio de associações de atribuição de função não precisarão mais de uma licença do Intune atribuída. Você está limitado a 350 membros diretos não licenciados para cada grupo de segurança do AAD em uma atribuição de função, mas você pode atribuir vários grupos de segurança do AAD a uma função se precisar dar suporte a mais de 350 administradores não licenciados. Os administradores licenciados continuarão a funcionar como estão, já que as associações transitivas se aplicam e não estão sujeitas ao limite de membro de 350.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 882a5d1cafa8e25d4a69a0c525c0bb8d3b971cd1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: e6179929eec88b79a44b09c46dcd0049d7716c3b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792803"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995776"
 ---
 # <a name="enableunlicensedadminstrators-action"></a>ação enableUnlicensedAdminstrators
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

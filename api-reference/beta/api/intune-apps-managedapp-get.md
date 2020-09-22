@@ -3,14 +3,14 @@ title: Acessar managedApp
 description: Leia as propriedades e as relações do objeto managedApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8846b860fadbc4b363b97f3761923f384310fce
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 686b9c4e676cc260daa42993242fd52fb7098aa1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43394016"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996126"
 ---
 # <a name="get-managedapp"></a>Acessar managedApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1025
+Content-Length: 1086
 
 {
   "value": {
@@ -99,11 +99,16 @@ Content-Length: 1025
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "appAvailability": "lineOfBusiness",
     "version": "Version value"
   }
 }
 ```
+
+
+
 
 
 

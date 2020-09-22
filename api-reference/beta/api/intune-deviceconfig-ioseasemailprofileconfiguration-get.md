@@ -3,14 +3,14 @@ title: Obter iosEasEmailProfileConfiguration
 description: Leia as propriedades e as relações do objeto iosEasEmailProfileConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eae8cae1f1b0d20a7d8b4372f6d4b6357a81a172
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6e7bc2c743cff3c2c7277d55d8aea7dfa4daf43f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432693"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995649"
 ---
 # <a name="get-ioseasemailprofileconfiguration"></a>Obter iosEasEmailProfileConfiguration
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2438
+Content-Length: 2496
 
 {
   "value": {
@@ -131,10 +131,14 @@ Content-Length: 2438
     "requireSsl": true,
     "useOAuth": true,
     "signingCertificateType": "certificate",
-    "encryptionCertificateType": "certificate"
+    "encryptionCertificateType": "certificate",
+    "perAppVPNProfileId": "Per App VPNProfile Id value"
   }
 }
 ```
+
+
+
 
 
 

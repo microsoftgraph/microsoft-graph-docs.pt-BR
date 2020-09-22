@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0f6cd81e6a2299e3bfcb7c318d17b5f28fb01049
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: db0ebe7f7dead702696daf8f9503dcbbf85a49de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180990"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996168"
 ---
 # <a name="create-featurerolloutpolicy"></a>Criar featureRolloutPolicy
 
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [feature
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [featureRolloutPolicy](../resources/featurerolloutpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [featureRolloutPolicy](../resources/featurerolloutpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -134,3 +134,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

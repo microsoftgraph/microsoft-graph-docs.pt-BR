@@ -3,14 +3,14 @@ title: Excluir iosPkcsCertificateProfile
 description: Exclui iosPkcsCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 534f1b58d996d325909c0b98a028b6bf56cc526a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ba04efbc78221bc1823c75f89fc76efdd059d41f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438836"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995083"
 ---
 # <a name="delete-iospkcscertificateprofile"></a>Excluir iosPkcsCertificateProfile
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

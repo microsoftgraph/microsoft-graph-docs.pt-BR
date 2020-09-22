@@ -3,14 +3,14 @@ title: Listar iosEasEmailProfileConfigurations
 description: Listar Propriedades e relações dos objetos iosEasEmailProfileConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e49beb9b815db61d352a873c9f750170e5e4ed0f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bb70316da8ea00d73f344e1216a9c0dc4c85f21f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432681"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995636"
 ---
 # <a name="list-ioseasemailprofileconfigurations"></a>Listar iosEasEmailProfileConfigurations
 
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2568
+Content-Length: 2628
 
 {
   "value": [
@@ -128,11 +128,15 @@ Content-Length: 2568
       "requireSsl": true,
       "useOAuth": true,
       "signingCertificateType": "certificate",
-      "encryptionCertificateType": "certificate"
+      "encryptionCertificateType": "certificate",
+      "perAppVPNProfileId": "Per App VPNProfile Id value"
     }
   ]
 }
 ```
+
+
+
 
 
 

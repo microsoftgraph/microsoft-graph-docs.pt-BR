@@ -3,14 +3,14 @@ title: Listar iosScepCertificateProfiles
 description: Listar Propriedades e relações dos objetos iosScepCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d9014669c1f44d1c85e522a1bece11636c66507e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 11c48edf2bdbf0ea247c7dcdd76bdd0257a30342
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438739"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995027"
 ---
 # <a name="list-iosscepcertificateprofiles"></a>Listar iosScepCertificateProfiles
 
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [iosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [iosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -134,6 +134,9 @@ Content-Length: 2373
   ]
 }
 ```
+
+
+
 
 
 

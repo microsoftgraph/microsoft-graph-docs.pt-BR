@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1450e7784394c175209ef1c5524871d029a49981
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: a3d0b530648c7ad1bbe9e41750525c8f4b572695
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842782"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996805"
 ---
 # <a name="create-onlinemeeting"></a>Criar ReuniãoOnline
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \* Os administradores devem criar uma [política de acesso aos aplicativos ](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) e concedê-la a um usuário, autorizando o aplicativo configurado na política para criar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).
+> \* Os administradores devem criar uma [política de acesso aos aplicativos ](/graph/cloud-communication-online-meeting-application-access-policy) e concedê-la a um usuário, autorizando o aplicativo configurado na política para criar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,7 +48,7 @@ Solicitar quando usar um token de aplicativo:
 POST /users/{userId}/onlineMeetings
 ```
 
-> **Observação: ** `userId` é a ID de objeto de um usuário no [portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Veja mais detalhes na [política](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) de acesso aos aplicativos.
+> **Observação: ** `userId` é a ID de objeto de um usuário no [portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Veja mais detalhes na [política](/graph/cloud-communication-online-meeting-application-access-policy) de acesso aos aplicativos.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -238,3 +238,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

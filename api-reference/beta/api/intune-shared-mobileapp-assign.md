@@ -3,14 +3,14 @@ title: atribuir ação
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0db9650decfd563415860a6a563a6cda66e869f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fbe134c134a1ffff57a3f5d1f68cd3f142410e2a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448664"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994600"
 ---
 # <a name="assign-action"></a>atribuir ação
 
@@ -96,6 +96,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

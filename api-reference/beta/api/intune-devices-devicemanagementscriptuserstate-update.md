@@ -3,14 +3,14 @@ title: Atualizar deviceManagementScriptUserState
 description: Atualiza as propriedades de um objeto deviceManagementScriptUserState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 73fa035d8d7026097d191509cd3298caafcb085d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 180f39c2cab106e7fd83846c8f84786b13944a75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43425697"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994663"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>Atualizar deviceManagementScriptUserState
 
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -96,6 +96,9 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

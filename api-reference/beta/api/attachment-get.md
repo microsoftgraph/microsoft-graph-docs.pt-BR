@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: 238818c5b64cbb4f17e544b1396942915111da2d
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 589627918c9db6eed72043fdaec74775e09ac5b4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849195"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996662"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -694,3 +694,5 @@ QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KUFJPRElEOk1pY3Jvc29mdCBFeGNoYW5n
   ]
 }
 -->
+
+

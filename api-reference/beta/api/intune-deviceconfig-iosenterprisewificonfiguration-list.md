@@ -3,14 +3,14 @@ title: Listar iosEnterpriseWiFiConfigurations
 description: Listar Propriedades e relações dos objetos iosEnterpriseWiFiConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9564a24878a9197e92de4f067c92451e34ae1d8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 031bebd012ff9d8e054bdccfd3c50549a52f8632
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439134"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995447"
 ---
 # <a name="list-iosenterprisewificonfigurations"></a>Listar iosEnterpriseWiFiConfigurations
 
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [iosEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-iosenterprisewificonfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [iosEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-iosenterprisewificonfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2387
+Content-Length: 2434
 
 {
   "value": [
@@ -112,6 +112,7 @@ Content-Length: 2387
       "proxyManualAddress": "Proxy Manual Address value",
       "proxyManualPort": 15,
       "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+      "disableMacAddressRandomization": true,
       "preSharedKey": "Pre Shared Key value",
       "eapType": "leap",
       "eapFastConfiguration": "useProtectedAccessCredential",
@@ -127,6 +128,9 @@ Content-Length: 2387
   ]
 }
 ```
+
+
+
 
 
 

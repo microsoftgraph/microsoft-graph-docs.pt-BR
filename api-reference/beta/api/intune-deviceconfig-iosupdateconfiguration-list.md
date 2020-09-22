@@ -3,14 +3,14 @@ title: Listar iosUpdateConfigurations
 description: Listar propriedades e relações dos objetos iosUpdateConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4cf03e9ebde8567d1133dc7eaadb90ec6d9069bd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 269656421294acfb338e1c50de17990324e4db52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438597"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994887"
 ---
 # <a name="list-iosupdateconfigurations"></a>Listar iosUpdateConfigurations
 
@@ -126,6 +126,9 @@ Content-Length: 2005
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8f696671c76fa10b163dbc431f7a80248270c2e6
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 8514ec3d46c5a1ead3df3621263d1fc1bd97e1ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681150"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996381"
 ---
 # <a name="update-connectorgroups"></a>Atualizar connectorGroups
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| Indica o tipo de agente híbrido. Isso é definido pelo sistema. |
-|id|cadeia de caracteres| Identificador exclusivo desse conector. Somente leitura. |
+|id|string| Identificador exclusivo desse conector. Somente leitura. |
 |isDefault|booliano| Indica se o conector de conexão é o padrão. Somente um grupo de conectores único pode ser o grupo de conectores padrão e é predefinido pelo sistema. |
 |nome|string| O nome associado ao conector. |
 |região|string| A região à qual o conector é atribuído e otimizará o tráfego para o. Essa região só poderá ser definida se **nenhum** conector ou aplicativo for atribuído ao grupo de conectores. As regiões disponíveis incluem: América do Norte, Europa, Austrália, Ásia e Índia. Os valores possíveis são: `nam`, `eur`, `aus`, `asia`, `ind`.|
@@ -119,3 +119,5 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
+
