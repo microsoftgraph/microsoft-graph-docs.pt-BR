@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 239a479bb8540ebfe7f6ffabf270d0c41ebc5b12
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: aa18bac40b4fe7cc7b509e2948c3134ccaa77386
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427120"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001432"
 ---
 # <a name="list-used"></a>Listar usados
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -71,7 +71,7 @@ Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-pa
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-- Use `$filter` para filtrar itens usados com base no **ContainerType**:
+- Use `$filter` para filtrar itens usados com base no  **ContainerType**:
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
@@ -112,7 +112,7 @@ Se as ideias de item do usuário de destino tiverem sido desabilitadas, este mé
   }
 }
 ```
-Para obter mais detalhes, consulte [Customize insights Privacy](/graph/insights-customize-item-insights-privacy.md). 
+Para obter mais detalhes, confira [personalizar política de informações](/graph/insights-customize-item-insights-privacy.md). 
 
 ## <a name="example"></a>Exemplo
 
@@ -336,3 +336,5 @@ Content-type: application/json
     ]
 }
 ```
+
+

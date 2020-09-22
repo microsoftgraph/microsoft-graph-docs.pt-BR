@@ -3,14 +3,14 @@ title: Obter macOSMdatpApp
 description: Leia as propriedades e as relações do objeto macOSMdatpApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e2010b770ad70a903f3bc92f96aa62f9ec337e1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 79d8a5692a697bec3720d017838c40f62602f65b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43394078"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000998"
 ---
 # <a name="get-macosmdatpapp"></a>Obter macOSMdatpApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 953
+Content-Length: 1014
 
 {
   "value": {
@@ -98,10 +98,15 @@ Content-Length: 953
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
-    "dependentAppCount": 1
+    "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2
   }
 }
 ```
+
+
+
 
 
 

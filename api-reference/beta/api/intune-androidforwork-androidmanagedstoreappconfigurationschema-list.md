@@ -3,14 +3,14 @@ title: Listar androidManagedStoreAppConfigurationSchemas
 description: Listar Propriedades e relações dos objetos androidManagedStoreAppConfigurationSchema.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77d1f2d183ec3c0ccd0a5f336db92d8ecadefbd5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 923819bf4850243510a2dc1e499d42b0a054dcc7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43417870"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001271"
 ---
 # <a name="list-androidmanagedstoreappconfigurationschemas"></a>Listar androidManagedStoreAppConfigurationSchemas
 
@@ -50,7 +50,7 @@ GET /deviceManagement/androidManagedStoreAppConfigurationSchemas
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -125,6 +125,9 @@ Content-Length: 1871
   ]
 }
 ```
+
+
+
 
 
 

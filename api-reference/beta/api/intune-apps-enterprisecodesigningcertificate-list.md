@@ -3,14 +3,14 @@ title: Listar enterpriseCodeSigningCertificates
 description: Listar Propriedades e relações dos objetos enterpriseCodeSigningCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01fbe451e443049fbf8b89a895f9ce0ba085d7a1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dbec6a9e181bf25e0a21b4bef30f9d7bed5ef6f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421665"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001138"
 ---
 # <a name="list-enterprisecodesigningcertificates"></a>Listar enterpriseCodeSigningCertificates
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/enterpriseCodeSigningCertificates
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -84,6 +84,9 @@ Content-Length: 512
   ]
 }
 ```
+
+
+
 
 
 

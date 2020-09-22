@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 202bb1aa21330868fe4506bfe75191d818fc32ba
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 89929cbb46de3d70990d0c21abe1fde85848e0b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408082"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001460"
 ---
 # <a name="get-informationprotectionlabel"></a>Obter informationProtectionLabel
 
@@ -131,3 +131,5 @@ User-agent: ContosoLOBApp/1.0
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

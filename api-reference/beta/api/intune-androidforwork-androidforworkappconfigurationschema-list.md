@@ -3,14 +3,14 @@ title: Listar androidForWorkAppConfigurationSchemas
 description: Listar propriedades e relações dos objetos androidForWorkAppConfigurationSchema.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a040aceb93e561cca26dc6bdb8eed4405612f2d4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cdc9aeb2ba6a17b1c58908383e2a4da18fa9c82b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43418366"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001397"
 ---
 # <a name="list-androidforworkappconfigurationschemas"></a>Listar androidForWorkAppConfigurationSchemas
 
@@ -99,6 +99,9 @@ Content-Length: 977
   ]
 }
 ```
+
+
+
 
 
 

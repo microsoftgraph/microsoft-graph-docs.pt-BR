@@ -5,16 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 1d920ea8f03c77b0f04c5e88e2c07de26a2f403a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 545cae79e71377ab26541c66d954fa88fdea460a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446324"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001435"
 ---
 # <a name="list-shared"></a>Listar compartilhados
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -71,7 +71,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma lista de itens [compartilhados](../resources/insights-shared.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma lista de itens [compartilhados](../resources/insights-shared.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
@@ -119,4 +119,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
                 "type: "type-value" 
 }
 ```
+
+
 

@@ -3,14 +3,14 @@ title: Excluir enterpriseCodeSigningCertificate
 description: Exclui enterpriseCodeSigningCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b30ffa6f0b6d624574fec0ff7a5e54907a40da0a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: de9960164a5b6cfa2b5a9057ae3eb95be8409787
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421719"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001166"
 ---
 # <a name="delete-enterprisecodesigningcertificate"></a>Excluir enterpriseCodeSigningCertificate
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

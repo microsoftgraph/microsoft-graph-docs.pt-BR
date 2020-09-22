@@ -3,14 +3,14 @@ title: Listar androidStoreApps
 description: Listar propriedades e relações dos objetos androidStoreApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 32e157b37210953aafd9019eece16c37a7ed7349
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 32a963582e5ab8626458b6f34d21f0f3af179f02
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421764"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001187"
 ---
 # <a name="list-androidstoreapps"></a>Listar androidStoreApps
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1615
+Content-Length: 1680
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 1615
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "packageId": "Package Id value",
       "appIdentifier": "App Identifier value",
       "appStoreUrl": "https://example.com/appStoreUrl/",
@@ -119,6 +121,9 @@ Content-Length: 1615
   ]
 }
 ```
+
+
+
 
 
 

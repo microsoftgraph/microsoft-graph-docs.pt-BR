@@ -3,14 +3,14 @@ title: Excluir macOSMicrosoftEdgeApp
 description: Exclui macOSMicrosoftEdgeApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 54769df7c20134ffd9f5dbebb276420164f5a6bb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4246594a4baed238fe7f7d77310f6d667fbda519
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43416348"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000977"
 ---
 # <a name="delete-macosmicrosoftedgeapp"></a>Excluir macOSMicrosoftEdgeApp
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Atualizar iosLobAppProvisioningConfigurationAssignment
 description: Atualiza as propriedades de um objeto iosLobAppProvisioningConfigurationAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 356c4ad3b8d2530ce083c77ce0c88bc5ac51c86e
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 81b3ac878c466d745e545e4cd7781c42f2683b30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793378"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001103"
 ---
 # <a name="update-ioslobappprovisioningconfigurationassignment"></a>Atualizar iosLobAppProvisioningConfigurationAssignment
 
@@ -97,6 +97,9 @@ Content-Length: 400
   }
 }
 ```
+
+
+
 
 
 

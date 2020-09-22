@@ -3,14 +3,14 @@ title: Atualizar macOsVppAppAssignedLicense
 description: Atualiza as propriedades de um objeto macOsVppAppAssignedLicense.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8033e840c4bfda4108f97f3e7b57e52a0586fb7d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b533e3747af7cd49d540231264e5b6454cb6ce5d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406435"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000907"
 ---
 # <a name="update-macosvppappassignedlicense"></a>Atualizar macOsVppAppAssignedLicense
 
@@ -55,14 +55,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOsVp
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |useremailaddress|String|O endereço de email do usuário.|
-|userId|String|A ID do usuário.|
+|userId|Cadeia de caracteres|A ID do usuário.|
 |userName|Cadeia de caracteres|O nome de usuário.|
 |userPrincipalName|String|O nome da entidade de segurança do usuário.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -98,6 +98,9 @@ Content-Length: 285
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 
