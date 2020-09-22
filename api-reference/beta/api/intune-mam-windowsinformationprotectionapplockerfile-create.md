@@ -3,35 +3,35 @@ title: Criar windowsInformationProtectionAppLockerFile
 description: Criar um novo objeto windowsInformationProtectionAppLockerFile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e05b92a23085b7b4052739e6048c6d941838df63
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 01d84fa9cadae4811d4fb459ada7059e28180932
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465558"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000319"
 ---
-# <a name="create-windowsinformationprotectionapplockerfile"></a><span data-ttu-id="79f84-103">Criar windowsInformationProtectionAppLockerFile</span><span class="sxs-lookup"><span data-stu-id="79f84-103">Create windowsInformationProtectionAppLockerFile</span></span>
+# <a name="create-windowsinformationprotectionapplockerfile"></a><span data-ttu-id="37fa9-103">Criar windowsInformationProtectionAppLockerFile</span><span class="sxs-lookup"><span data-stu-id="37fa9-103">Create windowsInformationProtectionAppLockerFile</span></span>
 
-<span data-ttu-id="79f84-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="79f84-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="37fa9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="37fa9-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="79f84-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="79f84-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="37fa9-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="37fa9-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="79f84-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="79f84-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="37fa9-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="37fa9-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="79f84-107">Criar um novo objeto [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md).</span><span class="sxs-lookup"><span data-stu-id="79f84-107">Create a new [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object.</span></span>
+<span data-ttu-id="37fa9-107">Criar um novo objeto [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md).</span><span class="sxs-lookup"><span data-stu-id="37fa9-107">Create a new [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="79f84-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="79f84-108">Prerequisites</span></span>
-<span data-ttu-id="79f84-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="79f84-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="37fa9-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="37fa9-108">Prerequisites</span></span>
+<span data-ttu-id="37fa9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="37fa9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="79f84-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="79f84-111">Permission type</span></span>|<span data-ttu-id="79f84-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="79f84-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="37fa9-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="37fa9-111">Permission type</span></span>|<span data-ttu-id="37fa9-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="37fa9-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="79f84-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="79f84-113">Delegated (work or school account)</span></span>|<span data-ttu-id="79f84-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="79f84-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="79f84-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="79f84-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="79f84-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="79f84-116">Not supported.</span></span>|
-|<span data-ttu-id="79f84-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="79f84-117">Application</span></span>|<span data-ttu-id="79f84-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="79f84-118">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="37fa9-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="37fa9-113">Delegated (work or school account)</span></span>|<span data-ttu-id="37fa9-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="37fa9-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="37fa9-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="37fa9-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="37fa9-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="37fa9-116">Not supported.</span></span>|
+|<span data-ttu-id="37fa9-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="37fa9-117">Application</span></span>|<span data-ttu-id="37fa9-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="37fa9-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="79f84-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="79f84-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="37fa9-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="37fa9-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -43,34 +43,34 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/protectedAppLockerFiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="79f84-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="79f84-120">Request headers</span></span>
-|<span data-ttu-id="79f84-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="79f84-121">Header</span></span>|<span data-ttu-id="79f84-122">Valor</span><span class="sxs-lookup"><span data-stu-id="79f84-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="37fa9-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="37fa9-120">Request headers</span></span>
+|<span data-ttu-id="37fa9-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="37fa9-121">Header</span></span>|<span data-ttu-id="37fa9-122">Valor</span><span class="sxs-lookup"><span data-stu-id="37fa9-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="79f84-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="79f84-123">Authorization</span></span>|<span data-ttu-id="79f84-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="79f84-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="79f84-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="79f84-125">Accept</span></span>|<span data-ttu-id="79f84-126">application/json</span><span class="sxs-lookup"><span data-stu-id="79f84-126">application/json</span></span>|
+|<span data-ttu-id="37fa9-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="37fa9-123">Authorization</span></span>|<span data-ttu-id="37fa9-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="37fa9-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="37fa9-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="37fa9-125">Accept</span></span>|<span data-ttu-id="37fa9-126">application/json</span><span class="sxs-lookup"><span data-stu-id="37fa9-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="79f84-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="79f84-127">Request body</span></span>
-<span data-ttu-id="79f84-128">No corpo da solicitação, forneça uma representação JSON do objeto windowsInformationProtectionAppLockerFile.</span><span class="sxs-lookup"><span data-stu-id="79f84-128">In the request body, supply a JSON representation for the windowsInformationProtectionAppLockerFile object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="37fa9-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="37fa9-127">Request body</span></span>
+<span data-ttu-id="37fa9-128">No corpo da solicitação, forneça uma representação JSON do objeto windowsInformationProtectionAppLockerFile.</span><span class="sxs-lookup"><span data-stu-id="37fa9-128">In the request body, supply a JSON representation for the windowsInformationProtectionAppLockerFile object.</span></span>
 
-<span data-ttu-id="79f84-129">A tabela a seguir mostra as propriedades que são necessárias ao criar windowsInformationProtectionAppLockerFile.</span><span class="sxs-lookup"><span data-stu-id="79f84-129">The following table shows the properties that are required when you create the windowsInformationProtectionAppLockerFile.</span></span>
+<span data-ttu-id="37fa9-129">A tabela a seguir mostra as propriedades que são necessárias ao criar windowsInformationProtectionAppLockerFile.</span><span class="sxs-lookup"><span data-stu-id="37fa9-129">The following table shows the properties that are required when you create the windowsInformationProtectionAppLockerFile.</span></span>
 
-|<span data-ttu-id="79f84-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="79f84-130">Property</span></span>|<span data-ttu-id="79f84-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="79f84-131">Type</span></span>|<span data-ttu-id="79f84-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="79f84-132">Description</span></span>|
+|<span data-ttu-id="37fa9-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="37fa9-130">Property</span></span>|<span data-ttu-id="37fa9-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="37fa9-131">Type</span></span>|<span data-ttu-id="37fa9-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="37fa9-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="79f84-133">displayName</span><span class="sxs-lookup"><span data-stu-id="79f84-133">displayName</span></span>|<span data-ttu-id="79f84-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="79f84-134">String</span></span>|<span data-ttu-id="79f84-135">O nome amigável</span><span class="sxs-lookup"><span data-stu-id="79f84-135">The friendly name</span></span>|
-|<span data-ttu-id="79f84-136">fileHash</span><span class="sxs-lookup"><span data-stu-id="79f84-136">fileHash</span></span>|<span data-ttu-id="79f84-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="79f84-137">String</span></span>|<span data-ttu-id="79f84-138">Hash SHA256 do arquivo</span><span class="sxs-lookup"><span data-stu-id="79f84-138">SHA256 hash of the file</span></span>|
-|<span data-ttu-id="79f84-139">file</span><span class="sxs-lookup"><span data-stu-id="79f84-139">file</span></span>|<span data-ttu-id="79f84-140">Binária</span><span class="sxs-lookup"><span data-stu-id="79f84-140">Binary</span></span>|<span data-ttu-id="79f84-141">Arquivo como uma matriz de bytes</span><span class="sxs-lookup"><span data-stu-id="79f84-141">File as a byte array</span></span>|
-|<span data-ttu-id="79f84-142">id</span><span class="sxs-lookup"><span data-stu-id="79f84-142">id</span></span>|<span data-ttu-id="79f84-143">String</span><span class="sxs-lookup"><span data-stu-id="79f84-143">String</span></span>|<span data-ttu-id="79f84-144">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="79f84-144">Key of the entity.</span></span>|
-|<span data-ttu-id="79f84-145">versão</span><span class="sxs-lookup"><span data-stu-id="79f84-145">version</span></span>|<span data-ttu-id="79f84-146">String</span><span class="sxs-lookup"><span data-stu-id="79f84-146">String</span></span>|<span data-ttu-id="79f84-147">Versão da entidade.</span><span class="sxs-lookup"><span data-stu-id="79f84-147">Version of the entity.</span></span>|
+|<span data-ttu-id="37fa9-133">displayName</span><span class="sxs-lookup"><span data-stu-id="37fa9-133">displayName</span></span>|<span data-ttu-id="37fa9-134">String</span><span class="sxs-lookup"><span data-stu-id="37fa9-134">String</span></span>|<span data-ttu-id="37fa9-135">O nome amigável</span><span class="sxs-lookup"><span data-stu-id="37fa9-135">The friendly name</span></span>|
+|<span data-ttu-id="37fa9-136">fileHash</span><span class="sxs-lookup"><span data-stu-id="37fa9-136">fileHash</span></span>|<span data-ttu-id="37fa9-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="37fa9-137">String</span></span>|<span data-ttu-id="37fa9-138">Hash SHA256 do arquivo</span><span class="sxs-lookup"><span data-stu-id="37fa9-138">SHA256 hash of the file</span></span>|
+|<span data-ttu-id="37fa9-139">file</span><span class="sxs-lookup"><span data-stu-id="37fa9-139">file</span></span>|<span data-ttu-id="37fa9-140">Binária</span><span class="sxs-lookup"><span data-stu-id="37fa9-140">Binary</span></span>|<span data-ttu-id="37fa9-141">Arquivo como uma matriz de bytes</span><span class="sxs-lookup"><span data-stu-id="37fa9-141">File as a byte array</span></span>|
+|<span data-ttu-id="37fa9-142">id</span><span class="sxs-lookup"><span data-stu-id="37fa9-142">id</span></span>|<span data-ttu-id="37fa9-143">String</span><span class="sxs-lookup"><span data-stu-id="37fa9-143">String</span></span>|<span data-ttu-id="37fa9-144">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="37fa9-144">Key of the entity.</span></span>|
+|<span data-ttu-id="37fa9-145">versão</span><span class="sxs-lookup"><span data-stu-id="37fa9-145">version</span></span>|<span data-ttu-id="37fa9-146">String</span><span class="sxs-lookup"><span data-stu-id="37fa9-146">String</span></span>|<span data-ttu-id="37fa9-147">Versão da entidade.</span><span class="sxs-lookup"><span data-stu-id="37fa9-147">Version of the entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="79f84-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="79f84-148">Response</span></span>
-<span data-ttu-id="79f84-149">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="79f84-149">If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="37fa9-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="37fa9-148">Response</span></span>
+<span data-ttu-id="37fa9-149">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="37fa9-149">If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="79f84-150">Exemplo</span><span class="sxs-lookup"><span data-stu-id="79f84-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="37fa9-150">Exemplo</span><span class="sxs-lookup"><span data-stu-id="37fa9-150">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="79f84-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="79f84-151">Request</span></span>
-<span data-ttu-id="79f84-152">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="79f84-152">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="37fa9-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="37fa9-151">Request</span></span>
+<span data-ttu-id="37fa9-152">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="37fa9-152">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/exemptAppLockerFiles
 Content-type: application/json
@@ -85,8 +85,8 @@ Content-length: 211
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="79f84-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="79f84-153">Response</span></span>
-<span data-ttu-id="79f84-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="79f84-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="37fa9-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="37fa9-153">Response</span></span>
+<span data-ttu-id="37fa9-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="37fa9-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -101,6 +101,9 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
+
+
+
 
 
 
