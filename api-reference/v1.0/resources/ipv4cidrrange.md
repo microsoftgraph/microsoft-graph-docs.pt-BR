@@ -5,30 +5,30 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 169be1976c57dc76ff85b5eaff5620b3938479d8
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 1b4276d038fd6c59460ed906ad30dcad925a3631
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384455"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041278"
 ---
-# <a name="ipv4cidrrange-resource-type"></a><span data-ttu-id="98cf5-103">tipo de recurso iPv4CidrRange</span><span class="sxs-lookup"><span data-stu-id="98cf5-103">iPv4CidrRange resource type</span></span>
+# <a name="ipv4cidrrange-resource-type"></a><span data-ttu-id="4bebc-103">tipo de recurso iPv4CidrRange</span><span class="sxs-lookup"><span data-stu-id="4bebc-103">iPv4CidrRange resource type</span></span>
 
-<span data-ttu-id="98cf5-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="98cf5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4bebc-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4bebc-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="98cf5-105">Representa um intervalo IPv4 usando a notação CIDR.</span><span class="sxs-lookup"><span data-stu-id="98cf5-105">Represents an IPv4 range using the CIDR notation.</span></span>
+<span data-ttu-id="4bebc-105">Representa um intervalo IPv4 usando a notação CIDR.</span><span class="sxs-lookup"><span data-stu-id="4bebc-105">Represents an IPv4 range using the CIDR notation.</span></span>
 
-<span data-ttu-id="98cf5-106">Herda de [ipRange](../resources/iprange.md)</span><span class="sxs-lookup"><span data-stu-id="98cf5-106">Inherits from [ipRange](../resources/iprange.md)</span></span>
+<span data-ttu-id="4bebc-106">Herda de [ipRange](../resources/iprange.md)</span><span class="sxs-lookup"><span data-stu-id="4bebc-106">Inherits from [ipRange](../resources/iprange.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="98cf5-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="98cf5-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4bebc-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4bebc-107">Properties</span></span>
 
-| <span data-ttu-id="98cf5-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="98cf5-108">Property</span></span>     | <span data-ttu-id="98cf5-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="98cf5-109">Type</span></span>        | <span data-ttu-id="98cf5-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="98cf5-110">Description</span></span> |
+| <span data-ttu-id="4bebc-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4bebc-108">Property</span></span>     | <span data-ttu-id="4bebc-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="4bebc-109">Type</span></span>        | <span data-ttu-id="4bebc-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="4bebc-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="98cf5-111">cidrAddress</span><span class="sxs-lookup"><span data-stu-id="98cf5-111">cidrAddress</span></span>|<span data-ttu-id="98cf5-112">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="98cf5-112">String</span></span>|<span data-ttu-id="98cf5-113">Endereço IPv4 em notação CIDR</span><span class="sxs-lookup"><span data-stu-id="98cf5-113">IPv4 address in CIDR notation</span></span>|
+|<span data-ttu-id="4bebc-111">cidrAddress</span><span class="sxs-lookup"><span data-stu-id="4bebc-111">cidrAddress</span></span>|<span data-ttu-id="4bebc-112">String</span><span class="sxs-lookup"><span data-stu-id="4bebc-112">String</span></span>|<span data-ttu-id="4bebc-113">Endereço IPv4 em notação CIDR</span><span class="sxs-lookup"><span data-stu-id="4bebc-113">IPv4 address in CIDR notation</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="98cf5-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="98cf5-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4bebc-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4bebc-114">JSON representation</span></span>
 
-<span data-ttu-id="98cf5-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="98cf5-115">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4bebc-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4bebc-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
