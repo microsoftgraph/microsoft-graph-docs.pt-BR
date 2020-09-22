@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aa661856b5e154c4fdec46e83632bbbbdf3af6e9
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: d628e615b2044458b10a55579f0a7b757f041603
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289974"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046935"
 ---
 # <a name="serviceprincipal-updatepasswordsinglesignoncredentials"></a>servicePrincipalName: updatePasswordSingleSignOnCredentials
 
@@ -54,7 +54,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|A ID do usuário ou grupo ao qual esse conjunto de credenciais pertence.|
+|id|Cadeia de caracteres|A ID do usuário ou grupo ao qual esse conjunto de credenciais pertence.|
 |las|coleção [Credential](../resources/credential.md)|Uma lista de objetos de credencial que definem o fluxo de entrada completo.|
 
 ## <a name="response"></a>Resposta
@@ -130,3 +130,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

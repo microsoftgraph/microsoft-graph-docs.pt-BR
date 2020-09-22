@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 952cdc1aa293b393c55491590a7da7a25f6f9507
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 3f95c77df024a980e01896dc1661661efdf10292
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394655"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046878"
 ---
 # <a name="useragent-resource-type"></a>tipo de recurso UserAgent
 
-Namespace: Microsoft. Graph. callRecords
+Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Os tipos [clientUserAgent](callrecords-clientuseragent.md) e [serviceUserAgent](
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |applicationVersion|String|Identifica a versão do software do aplicativo usado por esse ponto de extremidade.|
-|headerValue|String|Valor do cabeçalho do agente de usuário relatado por esse ponto de extremidade.|
+|headerValue|Cadeia de caracteres|Valor do cabeçalho do agente de usuário relatado por esse ponto de extremidade.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -57,3 +57,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

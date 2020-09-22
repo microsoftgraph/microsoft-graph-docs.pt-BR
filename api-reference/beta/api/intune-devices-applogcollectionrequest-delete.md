@@ -3,14 +3,14 @@ title: Excluir appLogCollectionRequest
 description: Exclui appLogCollectionRequest.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c02518668f0150126336e74859c165e96af4069e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 54ac1cb999034dd930e56520d47038ae7ab9bc68
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426857"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047578"
 ---
 # <a name="delete-applogcollectionrequest"></a>Excluir appLogCollectionRequest
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

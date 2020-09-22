@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 691a2843918707ab05ce798b6c191ea04aa2e42e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c4442e32b2fb84644f6ed7fcd436d5e2b79e0abc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519901"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046510"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>tipo de recurso teamsAsyncOperation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,14 +27,14 @@ Quando a solicitação for concluída com êxito, o status será "bem-sucedido" 
 
 | Propriedade | Tipo   | Descrição |
 |:---------------|:--------|:----------|
-|id|string |ID de operação exclusiva.|
+|id|cadeia de caracteres |ID de operação exclusiva.|
 |OperationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Indica o tipo de operação que está sendo descrito.|
 |createdDateTime|DateTimeOffset |Hora em que a operação foi criada.|
 |status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Status da operação.|
 |lastActionDateTime|DateTimeOffset |Hora em que a operação assíncrona foi atualizada pela última vez.|
 |attemptsCount|Int32|Número de vezes em que a operação foi tentada antes de ser marcada com êxito ou falhou.|
 |targetResourceId|#c0 |A ID do objeto que é criado ou modificado como resultado dessa operação assíncrona, normalmente uma [equipe](../resources/team.md).|
-|targetResourceLocation|string|O local do objeto que é criado ou modificado como resultado dessa operação assíncrona. Essa URL deve ser tratada como um valor opaco e não analisada em seus caminhos de componente.|
+|targetResourceLocation|cadeia de caracteres|O local do objeto que é criado ou modificado como resultado dessa operação assíncrona. Essa URL deve ser tratada como um valor opaco e não analisada em seus caminhos de componente.|
 |erro|[operationError](operationerror.md)|Qualquer erro que causa falha na operação assíncrona.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -73,3 +73,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

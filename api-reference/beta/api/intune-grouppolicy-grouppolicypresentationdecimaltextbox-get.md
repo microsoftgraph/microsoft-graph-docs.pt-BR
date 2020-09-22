@@ -3,14 +3,14 @@ title: Obter groupPolicyPresentationDecimalTextBox
 description: Leia as propriedades e as relações do objeto groupPolicyPresentationDecimalTextBox.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8131a2cd559705b80624fbfc0bc17e304f3be134
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b287df0725f3c343c7ce779294ac7f6c730fe821
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43424484"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047326"
 ---
 # <a name="get-grouppolicypresentationdecimaltextbox"></a>Obter groupPolicyPresentationDecimalTextBox
 
@@ -86,6 +86,9 @@ Content-Length: 373
   }
 }
 ```
+
+
+
 
 
 

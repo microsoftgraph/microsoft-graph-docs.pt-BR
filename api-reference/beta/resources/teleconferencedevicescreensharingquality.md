@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 86f692a235bc065a93fe00a87bae3139b64f669e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4441d249ced2ad0fc81ec4c7f70bc6e762566bac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763302"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046223"
 ---
 # <a name="teleconferencedevicescreensharingquality-resource-type"></a>tipo de recurso teleconferenceDeviceScreenSharingQuality
 
@@ -76,3 +76,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

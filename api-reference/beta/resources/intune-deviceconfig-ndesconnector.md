@@ -3,14 +3,14 @@ title: tipo de recurso ndesConnector
 description: Entidade que representa um conector NDES local.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f47d66b336563a7cf2015c97b8a9a558ddbb4aa5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4e67acc025926f0e3b0a5fe2c300689c7389291f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437092"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046766"
 ---
 # <a name="ndesconnector-resource-type"></a>tipo de recurso ndesConnector
 
@@ -28,7 +28,7 @@ Entidade que representa um conector NDES local.
 |[Listar ndesConnectors](../api/intune-deviceconfig-ndesconnector-list.md)|coleção [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Listar Propriedades e relações dos objetos [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .|
 |[Obter ndesConnector](../api/intune-deviceconfig-ndesconnector-get.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Leia as propriedades e as relações do objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .|
 |[Criar ndesConnector](../api/intune-deviceconfig-ndesconnector-create.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Criar um novo objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .|
-|[Excluir ndesConnector](../api/intune-deviceconfig-ndesconnector-delete.md)|Nenhum|Exclui [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).|
+|[Excluir ndesConnector](../api/intune-deviceconfig-ndesconnector-delete.md)|Nenhum(a)|Exclui [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).|
 |[Atualizar ndesConnector](../api/intune-deviceconfig-ndesconnector-update.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Atualiza as propriedades de um objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .|
 
 ## <a name="properties"></a>Propriedades
@@ -37,7 +37,7 @@ Entidade que representa um conector NDES local.
 |id|String|A chave do conector NDES.|
 |lastConnectionDateTime|DateTimeOffset|Hora da última conexão para o conector NDES|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
-|displayName|Cadeia de caracteres|O nome amigável do conector NDES.|
+|displayName|String|O nome amigável do conector NDES.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -59,6 +59,9 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
+
+
+
 
 
 

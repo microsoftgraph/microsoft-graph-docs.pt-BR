@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0f72c292954c7a5e7ae0d4c9d68a5ae900942f4d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 70b44acb7f00e55bf4082ac064950e819cb33f2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217336"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046734"
 ---
 # <a name="synchronizationschedule-resource-type"></a>tipo de recurso synchronizationSchedule
 
@@ -25,7 +25,7 @@ Define o agendamento usado para executar um [synchronizationJob](synchronization
 |:---------------|:--------|:----------|
 |validade|DateTimeOffset|Data e hora em que este trabalho vai expirar. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |interval|Duração|O intervalo entre as iterações de sincronização.|
-|state|String| Os valores possíveis são: `Active` e `Disabled`.|
+|state|Cadeia de caracteres| Os valores possíveis são: `Active` e `Disabled`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -60,3 +60,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

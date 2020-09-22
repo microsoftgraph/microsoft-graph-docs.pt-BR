@@ -3,14 +3,14 @@ title: Excluir groupPolicyPresentationValueList
 description: Exclui groupPolicyPresentationValueList.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2741ef44a5415ae303002bb97ca447c55bda950
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c89b0f2a297a663aae5de688fbed0ff668f98b75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460300"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047312"
 ---
 # <a name="delete-grouppolicypresentationvaluelist"></a>Excluir groupPolicyPresentationValueList
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

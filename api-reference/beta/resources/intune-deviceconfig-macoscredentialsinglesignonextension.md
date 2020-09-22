@@ -3,14 +3,14 @@ title: tipo de recurso macOSCredentialSingleSignOnExtension
 description: Representa um perfil de extensão de logon único de tipo de credencial para dispositivos macOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00466b80c1ab94f5984641b34a0a00f97e764773
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ec0f40a440625b472e234cccc7f9c3e9a62ac513
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464183"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046780"
 ---
 # <a name="macoscredentialsinglesignonextension-resource-type"></a>tipo de recurso macOSCredentialSingleSignOnExtension
 
@@ -62,6 +62,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

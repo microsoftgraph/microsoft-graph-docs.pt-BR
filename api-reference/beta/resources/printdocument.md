@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 1e7a1d6a9c131417e4f0ef171ac364e5fe8b106b
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: e2502421f6976da3378909fd157280296a7550e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863779"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046752"
 ---
 # <a name="printdocument-resource-type"></a>tipo de recurso de documento de documentos
 
@@ -20,17 +20,17 @@ Namespace: microsoft.graph
 
 Representa um documento que está sendo impresso.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [uploadData](../api/printdocument-uploaddata.md) | Nenhum | Carregar um único segmento binário do **documento**. |
+| [uploadData](../api/printdocument-uploaddata.md) | Nenhum(a) | Carregar um único segmento binário do **documento**. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|String|O identificador do documento. Somente leitura.|
-|displayName|Cadeia de caracteres|O nome do documento. Somente leitura.|
+|displayName|String|O nome do documento. Somente leitura.|
 |contentType|String|O tipo de conteúdo do documento (MIME). Somente leitura.|
 |size|Int64|O tamanho do documento em bytes. Somente leitura.|
 |configuration|[printerDocumentConfiguration](printerdocumentconfiguration.md) |Um grupo de configurações que uma impressora deve usar para imprimir um documento. Somente leitura.|
@@ -66,3 +66,5 @@ Veja a seguir uma representação JSON do recurso.
 }
 
 ```
+
+

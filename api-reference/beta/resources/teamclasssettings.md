@@ -5,16 +5,16 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 50fd73203697b008163337eb32ab9b54c0e8fd0b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 97a20a312f899db5334003edb1b739bdc3b9e346
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519964"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046668"
 ---
 # <a name="teamclasssettings-resource-type"></a>tipo de recurso teamClassSettings
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Representa propriedades específicas de classe de uma [equipe](team.md). Dispon�
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|notifyGuardiansAboutAssignments|Boolean|Se for definido `true`como, habilitará o envio de emails de Resumo de atribuições semanais para pais/guardiões, desde que a administração de locatários tenha habilitado a configuração globalmente.|
+|notifyGuardiansAboutAssignments|Booliano|Se for definido como `true` , habilitará o envio de emails de Resumo de atribuições semanais para pais/guardiões, desde que a administração de locatários tenha habilitado a configuração globalmente.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -52,3 +52,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

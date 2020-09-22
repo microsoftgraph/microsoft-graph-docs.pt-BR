@@ -3,14 +3,14 @@ title: Obter userExperienceAnalyticsRegressionSummary
 description: Leia as propriedades e as relações do objeto userExperienceAnalyticsRegressionSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2498524508fbd4c388aa8894af109b8cd6513ca1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 78485353ce05b8003017ae41c24bb38e4a287f5e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379120"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047466"
 ---
 # <a name="get-userexperienceanalyticsregressionsummary"></a>Obter userExperienceAnalyticsRegressionSummary
 
@@ -77,6 +77,9 @@ Content-Length: 154
   }
 }
 ```
+
+
+
 
 
 

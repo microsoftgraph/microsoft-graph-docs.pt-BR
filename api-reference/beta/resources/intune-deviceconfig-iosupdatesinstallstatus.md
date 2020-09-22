@@ -3,14 +3,14 @@ title: tipo de enumeração iosUpdatesInstallStatus
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 584966469e896c70ea2affca146ad92c17a51ccb
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: a21c1035ef34c85dd0424d3022f1b1563c417d4e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792195"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046794"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>tipo de enumeração iosUpdatesInstallStatus
 
@@ -26,9 +26,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sucesso|,0|Ainda não documentado|
-|disponível|1|Ainda não documentado|
-|Estado|duas|Ainda não documentado|
-|desconhecido|3D|Ainda não documentado|
+|disponível|1 |Ainda não documentado|
+|Estado|2 |Ainda não documentado|
+|desconhecido|3 |Ainda não documentado|
 |mdmClientCrashed|-2016336109|Ainda não documentado|
 |timeout|-2016333898|Ainda não documentado|
 |Baixe|-2016330712|Ainda não documentado|
@@ -47,6 +47,9 @@ Ainda não documentado
 |updateError|-2016330697|Ainda não documentado|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|Ainda não documentado|
 |updateScanFailed|-2016324062|Ainda não documentado|
+
+
+
 
 
 

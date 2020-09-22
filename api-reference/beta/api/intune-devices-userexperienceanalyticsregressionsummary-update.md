@@ -3,14 +3,14 @@ title: Atualizar userExperienceAnalyticsRegressionSummary
 description: Atualiza as propriedades de um objeto userExperienceAnalyticsRegressionSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2bf55cb371c4bf6b59dfd5b6143eeef8a16abc83
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7d16184b9a44ea167d3e8932ddde14c2c9e36209
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379034"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047459"
 ---
 # <a name="update-userexperienceanalyticsregressionsummary"></a>Atualizar userExperienceAnalyticsRegressionSummary
 
@@ -53,12 +53,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do Resumo de regressão da análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do Resumo de regressão da análise da experiência do usuário.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,6 +86,9 @@ Content-Length: 131
   "id": "41683327-3327-4168-2733-684127336841"
 }
 ```
+
+
+
 
 
 

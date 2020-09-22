@@ -3,14 +3,14 @@ title: Obter appleExpeditedCheckinConfigurationBase
 description: Leia as propriedades e as relações do objeto appleExpeditedCheckinConfigurationBase.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 327067eb698dd7728ea1ab4b843a70850810c884
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bab2418ca9ed8e2196eef75275a27e4435d81fb3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434497"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048145"
 ---
 # <a name="get-appleexpeditedcheckinconfigurationbase"></a>Obter appleExpeditedCheckinConfigurationBase
 
@@ -110,6 +110,9 @@ Content-Length: 1333
   }
 }
 ```
+
+
+
 
 
 

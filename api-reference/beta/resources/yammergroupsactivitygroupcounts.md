@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 426b3e2a6be72c0cc87d4c284b56fd83b1c12141
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f93b966d1fbc09fda20341f6c7b6e5361d53a9d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518977"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046045"
 ---
 # <a name="yammergroupsactivitygroupcounts-resource-type"></a>tipo de recurso yammerGroupsActivityGroupCounts
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -24,7 +24,7 @@ Namespace: Microsoft. Graph
 | total             | Int64  |             |
 | active            | Int64  |             |
 | reportDate        | Data   |             |
-| reportPeriod      | String |             |
+| reportPeriod      | Cadeia de caracteres |             |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -44,3 +44,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

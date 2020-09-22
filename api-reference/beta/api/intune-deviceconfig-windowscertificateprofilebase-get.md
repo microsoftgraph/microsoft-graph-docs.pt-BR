@@ -3,14 +3,14 @@ title: Obter windowsCertificateProfileBase
 description: Leia as propriedades e as relações do objeto windowsCertificateProfileBase.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 78967aaea3cd6539fcb47662eed13c1168d3f00b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: adf2c20df7783362253d81da3b12c4de031f28f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43429994"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047781"
 ---
 # <a name="get-windowscertificateprofilebase"></a>Obter windowsCertificateProfileBase
 
@@ -114,6 +114,9 @@ Content-Length: 1576
   }
 }
 ```
+
+
+
 
 
 

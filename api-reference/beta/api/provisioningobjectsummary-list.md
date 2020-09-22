@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 51375b2f83eeeb5755e3685a159a2338c34fa3fd
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 031cbeffbd600f86d2d5878f3fb5b6582eda8c2e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123092"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047179"
 ---
 # <a name="list-provisioningobjectsummary"></a>Listar provisioningObjectSummary
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AuditLog. Read. All e Directory. Read. All |
+|Delegada (conta corporativa ou de estudante) | AuditLog. Read. All e Directory. Read. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All |
 
@@ -48,7 +48,7 @@ Este método oferece suporte aos seguintes parâmetros de consulta OData para aj
 |[$top](/graph/query-parameters#top-parameter)|Define o tamanho de página de resultados.|`/auditLogs/provisioning?$top=20`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. Você deve passar o filtro superior na consulta para gerar o token. Você não pode especificar o número de resultados a serem ignorados.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
-Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query_parameters).
+Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query_parameters).
 
 ### <a name="attributes-supported-by-the-filter-parameter"></a>Atributos com suporte do parâmetro $filter
 
@@ -86,7 +86,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [provisioningObjectSummary](../resources/provisioningobjectsummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [provisioningObjectSummary](../resources/provisioningobjectsummary.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -412,3 +412,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

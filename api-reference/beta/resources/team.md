@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b548c59a72af84a1a30d30cf0edb6fdf39df26d5
-ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.openlocfilehash: d36cf52268ef494b44a1c87706201e009942c6e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47340044"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046724"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -61,6 +61,17 @@ Cada equipe está associada a um [grupo](../resources/group.md). O grupo tem a m
 |webUrl|cadeia de caracteres (somente leitura) | Um hiperlink que será enviado à equipe no cliente do Microsoft Teams. Esta é a URL que você recebe ao clicar com o botão direito do mouse em uma equipe no cliente do Microsoft Teams e escolher **Obter o link para a equipe**. Essa URL deve ser tratada como um blob opaco e não analisado. |
 |classSettings|[teamClassSettings](teamclasssettings.md) |Definir configurações de uma classe. Disponível apenas quando a equipe representa uma classe.|
 |isMembershipLimitedToOwners|Booliano|Se definido para `true`, a equipe está atualmente no estado de membro da equipe apenas para o proprietário e não é acessível a outros membros da equipe, tais como estudantes.|
+|createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de criação da equipe.|
+
+### <a name="instance-attributes"></a>Atributos de instância
+
+Atributos de instância são propriedades com comportamentos especiais. Essas propriedades são temporárias e a) definem o comportamento que o serviço deve apresentar ou b) fornecem valores de propriedades de curto prazo, como uma URL de download, para um item com data de expiração.
+
+| Nome da propriedade| Tipo   | Descrição
+|:-----------------------|:-------|:-------------------------|
+|@microsoft.graph.teamCreationMode|cadeia de caracteres|Indica que a equipe está no estado de migração e está sendo usada no momento para fins de migração. Aceita um valor: `migration`.|
+
+Para obter um exemplo de uma solicitação POST, confira [Solicitação (criar equipe no estado de migração)](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-team-in-migration-state).
 
 ## <a name="relationships"></a>Relações
 
@@ -104,7 +115,8 @@ Veja a seguir uma representação JSON do recurso.
   "specialization": "string",
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
-   "isMembershipLimitedToOwners":"boolean"
+  "isMembershipLimitedToOwners":"boolean",
+  "createdDateTime": "string (timestamp)"
 }
 ```
 
@@ -125,3 +137,5 @@ Veja a seguir uma representação JSON do recurso.
 
 - [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
 - [Usar o API do Microsoft Graph para trabalhar com o Microsoft Teams](teams-api-overview.md)
+
+

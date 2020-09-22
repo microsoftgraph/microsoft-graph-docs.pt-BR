@@ -3,14 +3,14 @@ title: Atualizar termsAndConditionsAcceptanceStatus
 description: Atualizar as propriedades de um objeto termsAndConditionsAcceptanceStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04d036b311fb0ab091ca31c60f72a3f08f5792f4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 624b8126aa46401b57caecf527f928f10370553a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045779"
 ---
 # <a name="update-termsandconditionsacceptancestatus"></a>Atualizar termsAndConditionsAcceptanceStatus
 
@@ -93,6 +93,9 @@ Content-Length: 260
   "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
 }
 ```
+
+
+
 
 
 

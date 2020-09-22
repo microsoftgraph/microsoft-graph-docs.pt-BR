@@ -3,14 +3,14 @@ title: Obter applePushNotificationCertificate
 description: Ler propriedades e relações do objeto applePushNotificationCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02911792926efee24a894e0c49f90b68ebe6eaee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a96b66b155b1ffb7ffc158dd4ff25a711f1c1d93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426965"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047606"
 ---
 # <a name="get-applepushnotificationcertificate"></a>Obter applePushNotificationCertificate
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig. ReadWrite. All, DeviceManagementManagedDevices. Read. All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig. ReadWrite. All, DeviceManagementManagedDevices. Read. All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -85,6 +85,9 @@ Content-Length: 633
   }
 }
 ```
+
+
+
 
 
 

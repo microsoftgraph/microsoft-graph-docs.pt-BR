@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f623a71a7d07a019615cfb43a664d875b8dd2def
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 4a890cea9763bd8615495d4d9597601a508fafc6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791607"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046598"
 ---
 # <a name="teamsapp-resource-type"></a>tipo de recurso teamsApp
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um aplicativo no catálogo de aplicativos do [Microsoft Teams](teams-api-overview.md) .
+Representa um aplicativo no catálogo de aplicativos do [Microsoft Teams](teams-api-overview.md).
 
 Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplicativos podem ser instalados nas [equipes](team.md) usando o método [Adicionar aplicativo à equipe](../api/teamsappinstallation-add.md).
 
@@ -29,7 +29,7 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 |[Lista de aplicativos publicados](../api/teamsapp-list.md) | Coleção [teamsApp](teamsapp.md) | Lista de aplicativos publicados do catálogo de aplicativos do Microsoft Teams.|
 |[Publicar um aplicativo](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Publica um aplicativo ao catálogo de aplicativos da sua organização.|
 |[Atualizar um aplicativo publicado](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Atualize um aplicativo publicado no catálogo de aplicativos da sua organização.|
-|[Excluir um aplicativo publicado](../api/teamsapp-delete.md) | Nenhum | Remova um aplicativo publicado do catálogo de aplicativos da sua organização.|
+|[Apagar um aplicativo publicado](../api/teamsapp-delete.md) | Nenhum(a) | Remova um aplicativo publicado do catálogo de aplicativos da sua organização.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -44,9 +44,9 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|loja|,0| O aplicativo está disponível para todos os locatários na loja de aplicativos do Microsoft Teams.|
+|loja|0| O aplicativo está disponível para todos os locatários na loja de aplicativos do Microsoft Teams.|
 |organização|1|O aplicativo está disponível somente nesse locatário.|
-|sideloaded|duas|O aplicativo está disponível apenas para usuário/equipe onde ele está instalado.|
+|sideloaded|2|O aplicativo está disponível apenas para usuário/equipe onde ele está instalado.|
 
 ## <a name="relationships"></a>Relações
 
@@ -89,4 +89,6 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
   "suppressions": []
 }
 -->
+
+
 

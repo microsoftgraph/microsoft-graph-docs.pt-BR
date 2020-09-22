@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8ca137dfd96d9e363d43b5c52949fb682acd2794
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: ffcf6477b806048021fd06c5f21998561798a01b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45196901"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046731"
 ---
 # <a name="synchronizationschema-resource-type"></a>tipo de recurso synchronizationSchema
 
@@ -82,3 +82,5 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
+
+

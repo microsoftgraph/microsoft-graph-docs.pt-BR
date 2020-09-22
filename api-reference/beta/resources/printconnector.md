@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 84c9625bd8d5a454100cab166676c1dcbcfd8d05
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: d027344db67a26fc0af7ebffaaad63d3fe3c4971
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142425"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046805"
 ---
 # <a name="printconnector-resource-type"></a>tipo de recurso de multiconnector
 
@@ -26,7 +26,7 @@ Representa um conector de impressão que foi registrado usando uma assinatura de
 |:-------------|:------------|:------------|
 | [Obter conector](../api/printconnector-get.md) | [separador de Hiperligação](printconnector.md) | Leia as propriedades e as relações do objeto Connector. |
 | [Conector de atualização](../api/printconnector-update.md) | [separador de Hiperligação](printconnector.md) | Atualize o objeto Connector. |
-| [Excluir conector](../api/printconnector-delete.md) | Nenhuma | Cancele o registro do conector do serviço de impressão universal. |
+| [Excluir conector](../api/printconnector-delete.md) | Nenhum | Cancele o registro do conector do serviço de impressão universal. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
@@ -37,7 +37,7 @@ Representa um conector de impressão que foi registrado usando uma assinatura de
 |operatingSystem|String|A versão do sistema operacional do computador do conector.|
 |appVersion|Cadeia de caracteres|A versão do conector.|
 |deviceHealth|[deviceHealth](devicehealth.md)|A integridade do dispositivo do conector.|
-|location|[printerLocation](printerlocation.md)|O local físico e/ou organizacional do conector.|
+|localização|[printerLocation](printerlocation.md)|O local físico e/ou organizacional do conector.|
 |registeredDateTime|DateTimeOffset|O DateTimeOffset quando o conector foi registrado.|
 |registeredBy|[userIdentity](useridentity.md)|O usuário que registrou o conector.|
 
@@ -76,3 +76,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: ação createDownloadUrl
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8181a046ff8e97f789c6b5cbbfd049e23dd9594
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 235a25cd13f585c65469b1d79753c64a38b0c0cf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426888"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047585"
 ---
 # <a name="createdownloadurl-action"></a>ação createDownloadUrl
 
@@ -50,7 +50,7 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará `200 OK` um código de resposta e um [appLogCollectionDownloadDetails](../resources/intune-devices-applogcollectiondownloaddetails.md) no corpo da resposta.
+Se tiver êxito, esta ação retornará um `200 OK` código de resposta e um [appLogCollectionDownloadDetails](../resources/intune-devices-applogcollectiondownloaddetails.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -76,6 +76,9 @@ Content-Length: 239
   }
 }
 ```
+
+
+
 
 
 

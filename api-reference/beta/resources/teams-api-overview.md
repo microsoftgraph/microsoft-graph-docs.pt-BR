@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 7f34e6429ba394ccf2c4f1491b2354c48355c7e0
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: bb123f6633194b6476342421213731bcf12e7308
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630337"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046619"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -123,3 +123,5 @@ Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats
 
 - [Visão geral da API do Microsoft Teams](/graph/teams-concept-overview)
 - Exemplo de código: [Linhas Aéreas Contoso](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [mini exemplos C#](https://github.com/microsoftgraph/csharp-teams-sample-graph)
+
+

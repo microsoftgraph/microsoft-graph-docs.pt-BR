@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9ddbb607a243f4571d53dcf887f80a171b230748
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 126bff335ff8f9345bbdcf54e08cff471fc064b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519173"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046206"
 ---
 # <a name="workbookrangefont-resource-type"></a>tipo de recurso workbookRangeFont
 
@@ -34,7 +34,7 @@ Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, c
 |bold|booliano|Representa o status da fonte em negrito.|
 |color|cadeia de caracteres|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
 |italic|booliano|Representa o status da fonte em itálico.|
-|nome|string|Nome da fonte (por exemplo, "Calibri")|
+|name|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Font Size|
 |underline| String |Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`, `Double`, `SingleAccountant` e `DoubleAccountant`.|
 
@@ -78,3 +78,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

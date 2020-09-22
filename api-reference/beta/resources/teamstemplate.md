@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a10b68e04ddf73636be2aee2c32ae59684a7b00a
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 5fc40b9c2a5789c5bcd7ab5794e41c715223eff3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334974"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046382"
 ---
 # <a name="teamstemplate-resource-type"></a>tipo de recurso Teams
 
@@ -43,4 +43,6 @@ Um modelo de equipe é um gráfico para a criação de uma [equipe](../resources
 ## <a name="see-also"></a>Confira também
 
 - [team](team.md)
+
+
 

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 23748b2f92d8ba786ba6e8ef82df0243f9fe2617
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0f4afa72c4662f3f1254371a2c0170792a14196
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519194"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046213"
 ---
 # <a name="workbookrange-resource-type"></a>tipo de recurso workbookRange
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +44,7 @@ Range representa um conjunto de uma ou mais células contíguas, como uma célul
 |[Rowsbelow](../api/workbookrange-rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de linhas abaixo de um determinado intervalo.|
 |[Usedrange](../api/range-usedrange.md)|[workbookRange](workbookrange.md)|Retorna o intervalo usado do objeto de intervalo determinado.|
 |[Clear](../api/range-clear.md)|Nenhum|Limpe valores de intervalo, formatação, preenchimento, bordas, etc.|
-|[Delete](../api/range-delete.md)|None|Exclui as células associadas ao intervalo.|
+|[Delete](../api/range-delete.md)|Nenhum|Exclui as células associadas ao intervalo.|
 |[Insert](../api/range-insert.md)|[workbookRange](workbookrange.md)|Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.|
 |[Merge](../api/range-merge.md)|Nenhum|Mescla as células do intervalo em uma região da planilha.|
 |[Resizedrange](../api/workbookrange-resizedrange.md)|[workbookRangeView](workbookrangeview.md)|Obtém um objeto range semelhante ao objeto range atual, mas com seu canto inferior direito expandido (ou recolhido) por um determinado número de linhas e colunas.|
@@ -129,3 +129,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -5,16 +5,16 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 10a7d5d58a18e23c47d603e7b05c9981ddfeed76
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a74323dc8a5e5907ea8a91553537fc8259acea6c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046584"
 ---
 # <a name="teamsappinstallation-resource-type"></a>tipo de recurso teamsAppInstallation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md), um [chat](chat.md
 |[Adicionar aplicativo à equipe](../api/teamsappinstallation-add.md) |Nenhum | Adiciona (instala) um aplicativo a uma equipe.|
 |[Remover aplicativo da equipe](../api/teamsappinstallation-delete.md) | Nenhum | Remove (desinstala) um aplicativo de uma equipe.|
 |[Atualizar aplicativo instalado no Team](../api/teamsappinstallation-upgrade.md) | Nenhum | Atualiza para a versão mais recente do aplicativo instalado no Team.|
-|[Lista de aplicativos instalados para o usuário](../api/user-list-teamsappinstallation.md) | Coleção [teamsAppInstallation](teamsappinstallation.md) | Lista os aplicativos instalados no escopo pessoal de um usuário.|
+|[Listar aplicativos instalados para o usuário](../api/user-list-teamsappinstallation.md) | Coleção [teamsAppInstallation](teamsappinstallation.md) | Lista os aplicativos instalados no escopo pessoal de um usuário.|
 |[Adicionar aplicativo para usuário](../api/user-add-teamsappinstallation.md) | | Adiciona (instala) um aplicativo no escopo pessoal de um usuário.|
 |[Remover o aplicativo para o usuário](../api/user-delete-teamsappinstallation.md) | Nenhum | Remove (desinstala) um aplicativo no escopo pessoal de um usuário.|
 |[Atualizar o aplicativo instalado para o usuário](../api/user-upgrade-teamsappinstallation.md) | Nenhum | Atualiza para a versão mais recente do aplicativo instalado no escopo pessoal de um usuário.|
@@ -78,3 +78,5 @@ Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md), um [chat](chat.md
   "suppressions": []
 }
 -->
+
+

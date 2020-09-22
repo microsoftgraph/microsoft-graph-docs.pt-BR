@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: ef636503c756d7a88321d723540ef47eaab65068
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: e262b7ab787302a73fa1cd42bc97868d9b065248
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183859"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046745"
 ---
 # <a name="printer-resource-type"></a>tipo de recurso de impressora
 
@@ -25,9 +25,9 @@ Representa um dispositivo de impressora física que foi registrado com o serviç
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Criar](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Criar (registrar) uma nova impressora com impressão universal. |
-| [Get](../api/printer-get.md) | [impressora](printer.md) | Leia as propriedades e as relações do objeto Printer. |
-| [Update](../api/printer-update.md) | [impressora](printer.md) | Atualize o objeto Printer. |
-| [Delete](../api/printer-delete.md) | Nenhum | Cancelar o registro da impressora física do serviço de impressão universal. |
+| [Obter](../api/printer-get.md) | [impressora](printer.md) | Leia as propriedades e as relações do objeto Printer. |
+| [Atualizar](../api/printer-update.md) | [impressora](printer.md) | Atualize o objeto Printer. |
+| [Excluir](../api/printer-delete.md) | Nenhum | Cancelar o registro da impressora física do serviço de impressão universal. |
 | [getCapabilities](../api/printer-getcapabilities.md) | [printerCapabilities](printercapabilities.md) | Obtenha uma lista de recursos para a impressora. |
 | [resetDefaults](../api/printer-resetdefaults.md) | Nenhum | Redefinir as configurações padrão de uma impressora. |
 | [Listar trabalhos](../api/printer-list-jobs.md) | coleção [printJob](printjob.md) | Obtenha uma lista de trabalhos de impressão que são enfileirados para processamento pela impressora. |
@@ -46,14 +46,14 @@ Representa um dispositivo de impressora física que foi registrado com o serviç
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|O identificador do documento. Somente leitura.|
+|id|Cadeia de caracteres|O identificador do documento. Somente leitura.|
 |displayName|Cadeia de caracteres|O nome da impressora.|
 |fabricante|String|O fabricante relatado pela impressora. Somente leitura.|
-|modelo|Cadeia de caracteres|O nome do modelo relatado pela impressora. Somente leitura.|
+|modelo|String|O nome do modelo relatado pela impressora. Somente leitura.|
 |registeredDateTime|DateTimeOffset|O DateTimeOffset quando a impressora foi registrada. Somente leitura.|
 |status|[printerStatus](printerstatus.md)|O status de processamento da impressora, incluindo erros. Somente leitura.|
 |isShared|Booliano|True se a impressora é compartilhada; caso contrário, false. Somente leitura.|
-|isAcceptingJobs|Boolean|Se a impressora está atualmente aceitando novos trabalhos de impressão.|
+|isAcceptingJobs|Booliano|Se a impressora está atualmente aceitando novos trabalhos de impressão.|
 |localização|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora.|
 |defaults|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão da impressora.|
 
@@ -106,3 +106,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

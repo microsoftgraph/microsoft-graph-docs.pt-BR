@@ -3,14 +3,14 @@ title: Atualizar userExperienceAnalyticsMetricHistory
 description: Atualiza as propriedades de um objeto userExperienceAnalyticsMetricHistory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a7d0689c1ecd3ff72f1b7d3d1f33366bfbed8f4
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: f6166bdc640a28ae2b2c375708ce6e45042c1b1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793192"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047564"
 ---
 # <a name="update-userexperienceanalyticsmetrichistory"></a>Atualizar userExperienceAnalyticsMetricHistory
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do histórico de métricas de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do histórico de métricas de análise da experiência do usuário.|
 |metricDateTime|DateTimeOffset|A data e hora da métrica da análise da experiência do usuário.|
 
 
@@ -89,6 +89,9 @@ Content-Length: 185
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
 }
 ```
+
+
+
 
 
 

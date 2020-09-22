@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c66b3ccdf0ddc5e60b68b34c546193b8081d2c69
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 80efbd54109fccaa0299e08e0c172001f46fe692
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842775"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047228"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* Os administradores devem criar uma [política de acesso de aplicativo](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) e conceder a ele um usuário, autorizando o aplicativo configurado na política para criar ou obter uma reunião online com ID externa em nome desse usuário (ID de usuário especificada no caminho da solicitação).
+> \* Os administradores devem criar uma [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy) e conceder a ele um usuário, autorizando o aplicativo configurado na política para criar ou obter uma reunião online com ID externa em nome desse usuário (ID de usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -42,13 +42,13 @@ Solicitação ao usar um token delegado:
 POST /me/onlineMeetings/createOrGet
 ```
 
-Solicitação ao usar um token de aplicativo:
+Solicitar quando usar um token de aplicativo:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings/createOrGet
 ```
 
-> **Observação:** `userId` é a ID de objeto de um usuário no [portal de gerenciamento do usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Veja mais detalhes na [política de acesso de aplicativo](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
+> **Observação: ** `userId` é a ID de objeto de um usuário no [portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Veja mais detalhes na [política](/graph/cloud-communication-online-meeting-application-access-policy) de acesso aos aplicativos.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição                 |
@@ -66,7 +66,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | externalId    | Cadeia de caracteres                                                     | A ID externa. Uma ID personalizada. Precisam                                                             |
 | participants  | [meetingParticipants](../resources/meetingparticipants.md) | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
 | startDateTime | DateTime                                                   | A hora de início da reunião em UTC.                                                                       |
-| assunto       | String                                                     | O assunto da reunião online.                                                                   |
+| assunto       | Cadeia de caracteres                                                     | O assunto da reunião online.                                                                   |
 
 > **Observações:**
 >
@@ -319,3 +319,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

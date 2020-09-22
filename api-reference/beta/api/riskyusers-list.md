@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3bda35a6855dfbcb6da086cfa67c4e51def40a5d
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: dc67514b0047ed89faee62dcb864106829065160
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863499"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047081"
 ---
 # <a name="list-riskyusers"></a>Listar riskyUsers
 
@@ -176,3 +176,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c5d73738a24e0ffd21b259c58ce44cbe000c54df
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 5684c98f15ed039fbba36b1df517a6d7d1d5d8c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909727"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046444"
 ---
 # <a name="teamstab-resource-type"></a>tipo de recurso teamsTab
 
@@ -35,11 +35,11 @@ Um teamsTab é uma [guia](../resources/teamstab.md) fixa (anexada) a um [canal](
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|  id              |   string                  |  Identificador que identifica exclusivamente uma instância específica de uma guia de canal. somente leitura.     |
-|  displayName            |   string                  |  Nome da guia.     |
+|  id              |   cadeia de caracteres                  |  Identificador que identifica exclusivamente uma instância específica de uma guia de canal. somente leitura.     |
+|  displayName            |   cadeia de caracteres                  |  Nome da guia.     |
 |  nome            |   string                  |  Preterido Nome da guia.     |
-|  teamsAppId           |   string             |  Identificador de definição de aplicativo da guia. Este valor não pode ser alterado após a criação de tabulação.     |
-|  sortOrderIndex  |   string                  |  Índice da ordem usada para classificar as guias.     |
+|  teamsAppId           |   cadeia de caracteres             |  Identificador de definição de aplicativo da guia. Este valor não pode ser alterado após a criação de tabulação.     |
+|  sortOrderIndex  |   cadeia de caracteres                  |  Índice da ordem usada para classificar as guias.     |
 |  webUrl          |   cadeia de caracteres                  |  URL de link profundo da instância de guia. Somente leitura.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Contêiner para configurações personalizadas aplicadas a uma guia. A guia é considerada configurada somente quando essa propriedade é definida.     |
 
@@ -88,3 +88,5 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="see-also"></a>Confira também
 
 [Configurar tipos de guia internos](/graph/teams-configuring-builtin-tabs)
+
+
