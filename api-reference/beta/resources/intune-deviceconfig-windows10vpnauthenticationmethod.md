@@ -3,14 +3,14 @@ title: tipo de enumeração windows10VpnAuthenticationMethod
 description: Tipos de conexão VPN do Windows 10.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b38ffba54a45bc573e7c6031a6e5aa2aa31d9e49
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: dd472aa249fad75072841f3eae731cd73bd2c228
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124139"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084706"
 ---
 # <a name="windows10vpnauthenticationmethod-enum-type"></a>tipo de enumeração windows10VpnAuthenticationMethod
 
@@ -28,7 +28,10 @@ Tipos de conexão VPN do Windows 10.
 |certificado|,0|Autenticar com um certificado.|
 |usernameAndPassword|1 |Usar nome de usuário e senha para autenticação.|
 |customEapXml|2 |O método de autenticação é especificado no XML EAP personalizado.|
-|derivedCredential|3 |Use a credencial derivada para autenticação.|
+|derivedCredential|3D|Use a credencial derivada para autenticação.|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Tipo de recurso macOSDeviceFeaturesConfiguration
 description: Perfil de configuração de recursos do dispositivo macOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f79736f53fe67372447cab7b1f133818d48098d
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: a8878bd8a2fceb907e647c0fc1d6ed9a50098116
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788840"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084979"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>Tipo de recurso macOSDeviceFeaturesConfiguration
 
@@ -25,7 +25,7 @@ Perfil de configuração de recursos do dispositivo macOS.
 
 Herda de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar macOSDeviceFeaturesConfigurations](../api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md)|Conjunto [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md)|Listar propriedades e relações de objetos de [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md).|
@@ -37,21 +37,21 @@ Herda de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |airPrintDestinations|coleção [airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)|Uma matriz de impressoras de impressão que sempre devem ser mostradas. Esta coleção pode conter um máximo de 500 elementos. Herdado de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
 |autoLaunchItems|coleção [macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)|Lista de aplicativos, arquivos, pastas e outros itens a serem iniciados quando o usuário fizer logon. Esta coleção pode conter um máximo de 500 elementos.|
 |adminShowHostInfo|Boolean|Se deseja mostrar as informações de host de administrador na janela de logon.|
-|loginWindowText|String|Texto personalizado a ser exibido na janela de logon.|
+|loginWindowText|Cadeia de caracteres|Texto personalizado a ser exibido na janela de logon.|
 |authorizedUsersListHidden|Boolean|Se deseja mostrar a caixa de diálogo nome e senha ou uma lista de usuários na janela de logon.|
 |authorizedUsersListHideLocalUsers|Boolean|Se deseja mostrar somente usuários de rede e de sistema na lista de usuários autorizados na janela de logon.|
 |authorizedUsersListHideMobileAccounts|Boolean|Se os usuários móveis serão ocultos na lista de usuários autorizados na janela de logon.|
@@ -73,7 +73,7 @@ Herda de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig
 |contentCachingEnabled|Boolean|Habilita o cache de conteúdo e impede que ele seja desabilitado pelo usuário.|
 |contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Determina o tipo de conteúdo que pode ser armazenado em cache pelo serviço de cache de conteúdo da Apple. Os valores possíveis são: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
 |contentCachingMaxSizeBytes|Int32|O número máximo de bytes de espaço em disco que serão usados para o cache de conteúdo. Um valor de 0 (padrão) indica espaço em disco ilimitado. |
-|contentCachingDataPath|String|O caminho para o diretório usado para armazenar o conteúdo em cache. O valor deve ser (ou terminar com)/Library/Application Support/Apple/AssetCache/data|
+|contentCachingDataPath|Cadeia de caracteres|O caminho para o diretório usado para armazenar o conteúdo em cache. O valor deve ser (ou terminar com)/Library/Application Support/Apple/AssetCache/data|
 |contentCachingDisableConnectionSharing|Boolean|Desabilita o compartilhamento de conexão com a Internet.|
 |contentCachingForceConnectionSharing|Boolean|Força o compartilhamento de conexão com a Internet. contentCachingDisableConnectionSharing substitui essa configuração.|
 |contentCachingClientPolicy|[macOSContentCachingClientPolicy](../resources/intune-deviceconfig-macoscontentcachingclientpolicy.md)|Determina o método no qual os servidores de cache de conteúdo ouvirão clientes. Os valores possíveis são: `notConfigured`, `clientsInLocalNetwork`, `clientsWithSamePublicIpAddress`, `clientsInCustomLocalNetworks`, `clientsInCustomLocalNetworksWithFallback`.|
@@ -82,7 +82,7 @@ Herda de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig
 |contentCachingPeerListenRanges|Coleção [ipRange](../resources/intune-shared-iprange.md)|Uma lista de caches de conteúdo de intervalos de IP personalizados que será usada para escutar em caches de par. Esta coleção pode conter um máximo de 500 elementos.|
 |contentCachingPeerFilterRanges|Coleção [ipRange](../resources/intune-shared-iprange.md)|Uma lista de caches de conteúdo de intervalos de IP personalizados que usará para consultar conteúdo de caches de mesmo nível. Esta coleção pode conter um máximo de 500 elementos.|
 |contentCachingParentSelectionPolicy|[macOSContentCachingParentSelectionPolicy](../resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy.md)|Determina o método no qual os servidores de cache de conteúdo selecionarão pais, se houver vários. Os possíveis valores são: `notConfigured`, `roundRobin`, `firstAvailable`, `urlPathHash`, `random`, `stickyAvailable`.|
-|contentCachingParents|Coleção de cadeias de caracteres|Uma lista de endereços IP que representam caches de conteúdo pai.|
+|contentCachingParents|Coleção String|Uma lista de endereços IP que representam caches de conteúdo pai.|
 |contentCachingLogClientIdentities|Boolean|Permite o registro em log de endereços IP e portas de clientes que solicitam conteúdo em cache.|
 |contentCachingPublicRanges|Coleção [ipRange](../resources/intune-shared-iprange.md)|Uma lista de intervalos de IP personalizados que o serviço de cache de conteúdo da Apple deve usar para fazer a correspondência de clientes com caches de conteúdo. Esta coleção pode conter um máximo de 500 elementos.|
 |contentCachingBlockDeletion|Boolean|Impede que caches de conteúdo limpem conteúdo para liberar espaço em disco para outros aplicativos.|
@@ -277,6 +277,9 @@ Veja a seguir uma representação JSON do recurso.
   "contentCachingPort": 1024
 }
 ```
+
+
+
 
 
 

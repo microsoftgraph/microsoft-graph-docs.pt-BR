@@ -3,14 +3,14 @@ title: tipo de recurso macOSAzureAdSingleSignOnExtension
 description: Representa um perfil de extensão de logon único do Azure AD-Type para dispositivos macOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 628041cf345d9fb16b1c856a858451ebc0d6ef74
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: b70a34c8a664ea47804bc5517a419211a8938a96
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793184"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084986"
 ---
 # <a name="macosazureadsinglesignonextension-resource-type"></a>tipo de recurso macOSAzureAdSingleSignOnExtension
 
@@ -28,8 +28,8 @@ Herda de [macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossing
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enableSharedDeviceMode|Booliano|Habilita ou desabilita o modo de dispositivo compartilhado.|
-|bundleIdAccessControlList|Coleção de cadeia de caracteres|Uma lista opcional de IDs de pacote adicionais que podem usar a extensão AAD para logon único.|
+|enableSharedDeviceMode|Boolean|Habilita ou desabilita o modo de dispositivo compartilhado.|
+|bundleIdAccessControlList|Coleção String|Uma lista opcional de IDs de pacote adicionais que podem usar a extensão AAD para logon único.|
 |as|coleção [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Obtém ou define uma lista de pares de valores de chave digitados usados para configurar perfis de tipo de credencial. Esta coleção pode conter um máximo de 500 elementos.|
 
 ## <a name="relationships"></a>Relações
@@ -58,6 +58,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso windows81VpnProxyServer
 description: Servidor proxy VPN.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5d7744fe2c501c09ff5fb2e810e61e57e91a75e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0226b443922b3adb03a186397f2a569e9dccbad0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084559"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>tipo de recurso windows81VpnProxyServer
 
@@ -28,11 +28,11 @@ Herda de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|automaticConfigurationScriptUrl|String|URL do script de configuração automática do proxy. Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|automaticConfigurationScriptUrl|Cadeia de caracteres|URL do script de configuração automática do proxy. Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|Cadeia de caracteres|Enfrentar. Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |propor|Int32|Propor. Valores válidos de 0 a 65535 herdados de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|automaticallyDetectProxySettings|Booliano|Detectar automaticamente as configurações de proxy.|
-|bypassProxyServerForLocalAddress|Booliano|Ignorar servidor proxy para endereço local.|
+|automaticallyDetectProxySettings|Boolean|Detectar automaticamente as configurações de proxy.|
+|bypassProxyServerForLocalAddress|Boolean|Ignorar servidor proxy para endereço local.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -54,6 +54,9 @@ Veja a seguir uma representação JSON do recurso.
   "bypassProxyServerForLocalAddress": true
 }
 ```
+
+
+
 
 
 

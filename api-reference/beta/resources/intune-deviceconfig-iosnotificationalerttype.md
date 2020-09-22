@@ -3,14 +3,14 @@ title: tipo de enumeração iosNotificationAlertType
 description: Tipo de alerta de configurações de notificação.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c87faac434433b3be7057f4574015b2e14fca5c4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8ed5ee05ea4de3bab27ffd6a7b215b739c69cd9f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440252"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085021"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>tipo de enumeração iosNotificationAlertType
 
@@ -26,9 +26,12 @@ Tipo de alerta de configurações de notificação.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|Bandeira|1|Bandeira.|
-|JanelaRestrita|duas|JanelaRestrita.|
-|nenhuma|3D|Nenhum|
+|Bandeira|1 |Bandeira.|
+|JanelaRestrita|2 |JanelaRestrita.|
+|Nenhuma|3D|Nenhum|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de enumeração iosSoftwareUpdateScheduleType
 description: Atualize o tipo de agendamento para atualizações de software iOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fc7ae0e7710fb0d38f0a8f71d4d551c39dffffe4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 19be0994224d3700b39f0150336e924a1ad87d3c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440179"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085028"
 ---
 # <a name="iossoftwareupdatescheduletype-enum-type"></a>tipo de enumeração iosSoftwareUpdateScheduleType
 
@@ -26,9 +26,12 @@ Atualize o tipo de agendamento para atualizações de software iOS.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |updateOutsideOfActiveHours|,0|Atualização fora do horário ativo.|
-|alwaysUpdate|1|Sempre atualizar.|
-|updateDuringTimeWindows|duas|Atualize durante as janelas de tempo.|
+|alwaysUpdate|1 |Sempre atualizar.|
+|updateDuringTimeWindows|2 |Atualize durante as janelas de tempo.|
 |updateOutsideOfTimeWindows|3D|Atualização fora das janelas de tempo.|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Tipo de recurso iosNetworkUsageRule
 description: Regras de Uso da Rede permitem que empresas especifiquem como aplicativos gerenciados usam redes, como redes de dados celulares.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 422600c9bffd6b1e7849cabc30229645cab486e7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f273ae6cd6d9b40dd19d65df342c0e83fef61bd5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440470"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085007"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>Tipo de recurso iosNetworkUsageRule
 
@@ -26,7 +26,7 @@ Regras de Uso da Rede permitem que empresas especifiquem como aplicativos gerenc
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |managedApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Informações sobre os aplicativos gerenciados aos quais essa regra se aplicará. Essa coleção pode conter um máximo de 500 elementos.|
-|cellularDataBlockWhenRoaming|Boolean|Se definido como true, os aplicativos gerenciados correspondentes não poderão usar dados celulares em roaming.|
+|cellularDataBlockWhenRoaming|Booliano|Se definido como true, os aplicativos gerenciados correspondentes não poderão usar dados celulares em roaming.|
 |cellularDataBlocked|Booliano|Se definido como true, os aplicativos gerenciados correspondentes não poderão usar dados celulares em nenhum momento.|
 
 ## <a name="relationships"></a>Relações
@@ -55,6 +55,9 @@ Veja a seguir uma representação JSON do recurso.
   "cellularDataBlocked": true
 }
 ```
+
+
+
 
 
 

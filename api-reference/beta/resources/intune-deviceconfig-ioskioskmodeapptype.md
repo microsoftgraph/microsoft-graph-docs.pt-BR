@@ -3,14 +3,14 @@ title: tipo de enumeração iosKioskModeAppType
 description: Opções de origem do aplicativo para o modo quiosque do iOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: db614c90612e940405bb7ca13908e5efef419d70
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ac6d9b160d64a7578bb31d86dcba135eecb63bef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440284"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085000"
 ---
 # <a name="ioskioskmodeapptype-enum-type"></a>tipo de enumeração iosKioskModeAppType
 
@@ -26,9 +26,12 @@ Opções de origem do aplicativo para o modo quiosque do iOS.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Valor padrão do dispositivo, sem intenção.|
-|appStoreApp|1|O aplicativo a ser executado vem da loja de aplicativos.|
-|managedApp|duas|O aplicativo a ser executado está incorporado ao dispositivo.|
+|appStoreApp|1 |O aplicativo a ser executado vem da loja de aplicativos.|
+|managedApp|2 |O aplicativo a ser executado está incorporado ao dispositivo.|
 |builtInApp|3D|O aplicativo a ser executado é um aplicativo gerenciado.|
+
+
+
 
 
 

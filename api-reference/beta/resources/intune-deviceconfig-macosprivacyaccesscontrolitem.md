@@ -3,14 +3,14 @@ title: tipo de recurso macOSPrivacyAccessControlItem
 description: Representa as preferências de privacidade por processo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e04ab44b14f2f0be0b2857edb1dc7d950539e753
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 250d04b573097c77a63cb3f52cfed48fff64168a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178245"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084895"
 ---
 # <a name="macosprivacyaccesscontrolitem-resource-type"></a>tipo de recurso macOSPrivacyAccessControlItem
 
@@ -26,9 +26,9 @@ Representa as preferências de privacidade por processo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome de exibição do aplicativo, processo ou executável.|
-|identificador|Cadeia de Caracteres|O caminho ou a ID do pacote do aplicativo, processo ou executável.|
+|identificador|Cadeia de caracteres|O caminho ou a ID do pacote do aplicativo, processo ou executável.|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|Uma ID de pacote é usada para identificar um aplicativo. Um caminho é usado para identificar um processo ou executável. Os valores possíveis são: `bundleID` e `path`.|
-|codeRequirement|Cadeia de Caracteres|Insira o requisito de código, que pode ser obtido com o comando "codesign – display-r –" no aplicativo de terminal. Inclua tudo após "=>".|
+|codeRequirement|Cadeia de caracteres|Insira o requisito de código, que pode ser obtido com o comando "codesign – display-r –" no aplicativo de terminal. Inclua tudo após "=>".|
 |staticCodeValidation|Boolean|Valida estaticamente o requisito de código. Use essa configuração se o processo invalida sua assinatura de código dinâmico.|
 |blockCamera|Boolean|Bloquear o acesso ao aplicativo de câmera.|
 |blockMicrophone|Boolean|Bloquear o acesso ao microfone.|
@@ -101,6 +101,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 
