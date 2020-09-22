@@ -3,14 +3,14 @@ title: Listar windowsDefenderAdvancedThreatProtectionConfigurations
 description: Listar propriedades e relações dos objetos windowsDefenderAdvancedThreatProtectionConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 822dbf8431b9b5932bbfa75113de300f4367960c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cc2fa5d963ef44e5b8dd1e116555b640ca62f2eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462037"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069887"
 ---
 # <a name="list-windowsdefenderadvancedthreatprotectionconfigurations"></a>Listar windowsDefenderAdvancedThreatProtectionConfigurations
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -81,6 +81,9 @@ Content-Length: 508
   ]
 }
 ```
+
+
+
 
 
 

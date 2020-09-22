@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f9120e1b35974a6e921eb269d289dfc82ba9e532
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: e51d8998ffe332426c617e1b17abd6a6362da77e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491942"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069320"
 ---
 # <a name="serviceendpoint-resource-type"></a>tipo de recurso serviceEndpoint
 

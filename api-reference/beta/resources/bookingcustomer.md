@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 42ad0826cdabbba2c3b26101d93160f71344fc6c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5b527902c5d6e39bb752e07838c6a5e1c3022bb0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453651"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071784"
 ---
 # <a name="bookingcustomer-resource-type"></a>tipo de recurso bookingCustomer
 
@@ -29,14 +29,14 @@ Representa um cliente de um [bookingBusiness](bookingbusiness.md).
 |[Criar bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Criar um novo objeto **bookingCustomer** . |
 |[Obter bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Leia as propriedades e os relacionamentos de um objeto **bookingCustomer** .|
 |[Update](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |Atualizar um objeto **bookingCustomer** . |
-|[Delete](../api/bookingcustomer-delete.md) | None |Excluir um objeto **bookingCustomer** . |
+|[Delete](../api/bookingcustomer-delete.md) | Nenhum |Excluir um objeto **bookingCustomer** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |displayName|Cadeia de caracteres|O nome do cliente.|
 |emailAddress|String|O endereço SMTP do cliente.|
-|id|String| A ID do cliente. Somente leitura.|
+|id|Cadeia de caracteres| A ID do cliente. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -75,3 +75,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

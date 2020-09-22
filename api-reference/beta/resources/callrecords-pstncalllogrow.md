@@ -5,12 +5,12 @@ author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: fdcaaa311ea3d1f875bd3933420cfed058ef7808
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: aa25211831db42f70fef18375e718554029df4de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509966"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071371"
 ---
 # <a name="pstncalllogrow-resource-type"></a>tipo de recurso pstnCallLogRow
 
@@ -24,11 +24,11 @@ Representa uma linha de dados no log de chamadas de rede telefônica de comutado
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador de chamada exclusivo. #C0.|
+|id|Cadeia de caracteres|Identificador de chamada exclusivo. #C0.|
 |callId|Cadeia de caracteres|Identificador de chamada. Não é garantido como exclusivo.|
 |userId|Cadeia de caracteres|Chamar a ID do usuário no Graph. #C0. Esta e outras informações do usuário serão nulas/vazias para tipos de chamada de bot (ucap_in ucap_out).|
 |userPrincipalName|Cadeia de caracteres|UserPrincipalName (nome de entrada) no Azure Active Directory. Isso geralmente é o mesmo que o endereço SIP do usuário e pode ser o mesmo que o endereço de email do usuário.|
-|userDisplayName|String|Nome de exibição do usuário.|
+|userDisplayName|Cadeia de caracteres|Nome de exibição do usuário.|
 |startDateTime|DateTimeOffset|Hora do início da chamada.|
 |endDateTime|DateTimeOffset|Hora da finalização da chamada.|
 |duration|Int32|Quanto tempo a chamada foi conectada, em segundos.|
@@ -88,3 +88,5 @@ Veja a seguir uma representação JSON do recurso.
   "inventoryType": "String"
 }
 ```
+
+

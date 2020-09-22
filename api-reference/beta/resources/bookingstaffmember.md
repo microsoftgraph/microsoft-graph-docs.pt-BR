@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: c8676ce2e43e88ce53e4c79e13b9151a0eca2b58
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 82af39c9b64d7970d92a364199404149928b7b09
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895710"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071721"
 ---
 # <a name="bookingstaffmember-resource-type"></a>tipo de recurso bookingStaffMember
 
@@ -36,7 +36,7 @@ Ao reservar compromissos, a API Books considera as seguintes configurações par
 |[Criar bookingStaff](../api/bookingbusiness-post-staffmembers.md) | coleção [bookingStaffMember](bookingstaffmember.md) | Criar um novo **bookingStaffMember** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 |[Obter bookingStaffMember](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |Obtenha as propriedades e os relacionamentos de um **bookingStaffMember** no [bookingbusiness](../resources/bookingbusiness.md)especificado.|
 |[Update](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)    |Atualiza as propriedades de um **bookingStaffMember** no [bookingbusiness](../resources/bookingbusiness.md)especificado.|
-|[Delete](../api/bookingstaffmember-delete.md) | Nenhuma |Excluir um membro da equipe no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
+|[Delete](../api/bookingstaffmember-delete.md) | Nenhum |Excluir um membro da equipe no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -45,8 +45,8 @@ Ao reservar compromissos, a API Books considera as seguintes configurações par
 |colorIndex|Int32|Identifica uma cor para representar o membro da equipe. A cor corresponde à paleta de cores na página de **detalhes da equipe** no aplicativo de reservas.|
 |displayName|Cadeia de caracteres|O nome do membro da equipe, conforme exibido para os clientes. Obrigatório.|
 |emailAddress|String|O endereço de email do membro da equipe. Isso pode ser no mesmo locatário do Microsoft 365 que a empresa ou em um domínio de email diferente. Esse endereço de email pode ser usado se a propriedade **sendConfirmationsToOwner** estiver definida como true na política de agendamento da empresa. Obrigatório.|
-|id|String| A ID do membro da equipe, em um formato GUID. Somente leitura.|
-|role|string| A função do membro da equipe na empresa. Os valores possíveis são: `guest`, `administrator`, `viewer`, `externalGuest`. Obrigatório.|
+|id|Cadeia de caracteres| A ID do membro da equipe, em um formato GUID. Somente leitura.|
+|role|cadeia de caracteres| A função do membro da equipe na empresa. Os valores possíveis são: `guest`, `administrator`, `viewer`, `externalGuest`. Obrigatório.|
 |useBusinessHours|Booliano|True significa que a disponibilidade do membro da equipe é conforme especificado na propriedade **businessHours** da empresa. False significa que a disponibilidade é determinada pela configuração da propriedade **workingHours** do membro da equipe.|
 |workingHours|coleção [bookingWorkHours](bookingworkhours.md)|O intervalo de horas por dia da semana em que o membro da equipe está disponível para reserva. Por padrão, eles são inicializados de acordo com a propriedade **businessHours** da empresa.|
 
@@ -92,3 +92,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

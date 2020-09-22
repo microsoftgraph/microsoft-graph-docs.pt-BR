@@ -5,12 +5,12 @@ localization_priority: Priority
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: 96a30ee3a0bfe4a4b823625d024d54d4b98f4c31
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 588b7728a29e6eae3e4378da009c907b92ad32f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543377"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071868"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Usar a API do Microsoft Bookings no Microsoft Graph
 
@@ -29,7 +29,7 @@ Programaticamente, um [bookingBusiness](bookingbusiness.md) na API do Bookings e
 
 Siga as etapas a seguir antes de agendar os compromissos do cliente para uma empresa pela primeira vez. Certifique-se de fornecer os [tokens de acesso](/graph/auth-overview) apropriados para as operações correspondentes.
 
-1. Garanta que a empresa tenha um assinatura do [Office 365 Business Premium](https://products.office.com/pt-BR/business/office-365-business-premium).
+1. Certifique-se que a empresa tenha um assinatura do [Microsoft 365 Business Premium](https://products.office.com/pt-BR/business/office-365-business-premium).
 2. Crie um novo **bookingBusiness** enviando uma operação POST para o conjunto de entidades. No mínimo, você deve especificar um nome para a nova empresa que os clientes verão:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -74,14 +74,14 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/publish
 Authorization: Bearer {access token}
 ```
 
-Em geral, para listar todas as empresas de agendamento no locatário do Office 365:
+Em geral, para listar todas as empresas de agendamento no locatário do Microsoft 365:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
 ```
 
-## <a name="common-use-cases"></a>Casos de usos comuns 
+## <a name="common-use-cases"></a>Casos de uso comuns 
 
 A tabela a seguir lista as operações comuns para uma empresa na API do Bookings.
 
@@ -96,9 +96,13 @@ A tabela a seguir lista as operações comuns para uma empresa na API do Booking
 | Obter compromissos em um intervalo de datas | [bookingBusiness](bookingbusiness.md) | [Listar o calendarView do Bookings](../api/bookingbusiness-list-calendarview.md) |
 | Obter moeda | [bookingCurrency](bookingcurrency.md) | [Métodos de bookingCurrency](bookingcurrency.md#methods) |
 
+## <a name="whats-new"></a>O que há de novo
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
 ## <a name="see-also"></a>Confira também
 
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Veja [como alguns de nossos parceiros usam o Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 - Saiba como escolher [permissões](/graph/permissions-reference) no Microsoft Graph.
+
+

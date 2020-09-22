@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e9f39258ec4aa202053c5979658e70e352a38f20
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9beb83beff4b2c80ee267f3e967fc12619017e42
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456367"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071910"
 ---
 # <a name="list-openshiftchangerequests"></a>Listar openShiftChangeRequests
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ GET /teams/{id}/schedule/openShiftsChangeRequests
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e a lista de objetos [openShiftChangeRequest](../resources/openshiftchangerequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e a lista de objetos [openShiftChangeRequest](../resources/openshiftchangerequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -122,3 +122,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

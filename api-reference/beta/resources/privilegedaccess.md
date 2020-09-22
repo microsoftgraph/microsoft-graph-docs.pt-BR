@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: c57dd911d105ba4d096a09f9262b847db5240fa1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: f815228157721f6100af79f53f84abf43763f632
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811446"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070629"
 ---
 # <a name="privilegedaccess-resource-type"></a>tipo de recurso privilegedAccess
 
@@ -26,11 +26,11 @@ Representa um grupo de funcionalidades fornecidas pelo serviço de gerenciamento
 ## <a name="properties"></a>Propriedades
 | Propriedade  | Tipo      |Descrição|
 |:----------|:----------|:----------|
-|id         |String     |A ID do provedor gerenciado pelo PIM.|
-|displayName|String     |O nome de exibição do provedor gerenciado pelo PIM.|
+|id         |Cadeia de caracteres     |A ID do provedor gerenciado pelo PIM.|
+|displayName|Cadeia de caracteres     |O nome de exibição do provedor gerenciado pelo PIM.|
 
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação   | Tipo                                         |Descrição|
 |:---------------|:---------------------------------------------|:----------|
 |recursos       |coleção [entidadegovernanceresource](../resources/governanceresource.md)            |Uma coleção de recursos para o provedor.|
@@ -74,3 +74,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Excluir roleScopeTag
 description: Exclui roleScopeTag.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 328955bfdbe5831170533d599be5710507d93b3b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1a69eaafc8c02ca3c950a1cc2e3e181aef63cbb7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463611"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072029"
 ---
 # <a name="delete-rolescopetag"></a>Excluir roleScopeTag
 
@@ -66,6 +66,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

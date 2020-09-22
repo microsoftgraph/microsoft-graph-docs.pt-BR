@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0eeefd772eb7050a829c7eaf9d65f92958c8fa64
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: edd4849cc6922695f7c03909ac04348b4171d5a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491916"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069390"
 ---
 # <a name="media-resource-type"></a>tipo de recurso de mídia
 
@@ -22,7 +22,7 @@ Representa a mídia (áudio, vídeo, compartilhamento de tela baseado em vídeo,
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|rótulo|String|Como a mídia foi identificada durante o estágio de negociação de mídia.|
+|rótulo|Cadeia de caracteres|Como a mídia foi identificada durante o estágio de negociação de mídia.|
 |callerDevice|[Microsoft. Graph. callRecords. deviceInfo](callrecords-deviceinfo.md)|Informações do dispositivo associadas ao ponto de extremidade do chamador desta mídia.|
 |callerNetwork|[Microsoft. Graph. callRecords. networkInfo](callrecords-networkinfo.md)|Informações de rede associadas ao ponto de extremidade do chamador desta mídia.|
 |calleeDevice|[Microsoft. Graph. callRecords. deviceInfo](callrecords-deviceinfo.md)|Informações do dispositivo associadas ao ponto de extremidade do receptor desta mídia.|

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 809e1fb1dc23a1b6324d2a07c092dc83fbac8df7
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: b2e71bca93e3c27fe445d5bead5b2f579f081411
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108330"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069586"
 ---
 # <a name="user-getmailtips"></a>usuário: getdicas de dicas
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Mail. Read, mail. Read. Shared    |
+|Delegada (conta corporativa ou de estudante) | Mail. Read, mail. Read. Shared    |
 |Delegado (conta pessoal da Microsoft) | Mail.Read    |
 |Aplicativo | Mail.Read |
 
@@ -48,12 +48,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|EndereçosEmail|String collection|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
-|MailTipsOptions|String|Uma enumeração de sinalizadores que representa as dicas de as as solicitadas. Os valores possíveis são `automaticReplies`: `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, e `totalMemberCount`.|
+|EmailAddresses|Coleção String|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
+|MailTipsOptions|Cadeia de caracteres|Uma enumeração de sinalizadores que representa as dicas de as as solicitadas. Os valores possíveis são: `automaticReplies` , `customMailTip` , `deliveryRestriction` , `externalMemberCount` , `mailboxFullStatus` , `maxMessageSize` , `moderationStatus` , `recipientScope` , `recipientSuggestions` e `totalMemberCount` .|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos de [dicas](../resources/mailtips.md) de mensagem no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos de [dicas](../resources/mailtips.md) de mensagem no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir obtém dicas de correio para os destinatários especificados, para qualquer configuração de resposta automática e o status completo da caixa de correio.
@@ -158,3 +158,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

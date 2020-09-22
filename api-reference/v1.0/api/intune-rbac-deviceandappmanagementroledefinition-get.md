@@ -3,14 +3,14 @@ title: Acessar deviceAndAppManagementRoleDefinition
 description: Leia as propriedades e as relações do objeto deviceAndAppManagementRoleDefinition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd246d1b45735c9334de0025dc82cf034e8e3b45
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a967b46fa83bd01763df4c5d87169374c10774bd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452651"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069663"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>Acessar deviceAndAppManagementRoleDefinition
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -95,6 +95,9 @@ Content-Length: 712
   }
 }
 ```
+
+
+
 
 
 

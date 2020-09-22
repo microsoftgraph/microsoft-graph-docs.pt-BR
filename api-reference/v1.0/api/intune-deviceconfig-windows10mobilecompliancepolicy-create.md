@@ -3,14 +3,14 @@ title: Criar windows10MobileCompliancePolicy
 description: Cria um novo objeto windows10MobileCompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0070e662099893d623da2e5cdd796e2f236c3276
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 095e5a1c39d42404bfe0f42bebd830d05b0a9e88
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446066"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069999"
 ---
 # <a name="create-windows10mobilecompliancepolicy"></a>Criar windows10MobileCompliancePolicy
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,26 +51,26 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10MobileC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|passwordRequired|Booliano|Exige uma senha para desbloquear o dispositivo Windows Phone.|
-|passwordBlockSimple|Booliano|Se a sincronização do calendário deve ou não ser bloqueada.|
+|passwordRequired|Boolean|Exige uma senha para desbloquear o dispositivo Windows Phone.|
+|passwordBlockSimple|Boolean|Se a sincronização do calendário deve ou não ser bloqueada.|
 |passwordMinimumLength|Int32|Comprimento mínimo da senha. Valores válidos de 4 a 16|
 |passwordMinimumCharacterSetCount|Int32|O número de conjuntos de caracteres necessários na senha.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|O número de senhas anteriores cujo uso deve ser evitado.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha. Valores válidos de 1 a 255|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que uma senha seja necessária.|
-|passwordRequireToUnlockFromIdle|Booliano|Exige uma senha para desbloquear o dispositivo ocioso.|
+|passwordRequireToUnlockFromIdle|Boolean|Exige uma senha para desbloquear o dispositivo ocioso.|
 |osMinimumVersion|String|Versão mínima do Windows Phone.|
 |osMaximumVersion|String|Versão máxima do Windows Phone.|
-|earlyLaunchAntiMalwareDriverEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
-|bitLockerEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - bit locker desabilitado|
-|secureBootEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - inicialização segura habilitada.|
+|earlyLaunchAntiMalwareDriverEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
+|bitLockerEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - bit locker desabilitado|
+|secureBootEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - inicialização segura habilitada.|
 |codeIntegrityEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
 |storageRequireEncryption|Boolean|Exige criptografia em dispositivos Windows.|
 
@@ -145,6 +145,9 @@ Content-Length: 964
   "storageRequireEncryption": true
 }
 ```
+
+
+
 
 
 

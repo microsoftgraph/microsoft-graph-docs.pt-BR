@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0fb557e35248dbc1521d1b494c831146b4e30da8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 52332c04591bc507416df325786f6f263fe7ca6e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463737"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069075"
 ---
 # <a name="emailaddress-resource-type"></a>Tipo de recurso emailAddress
 
@@ -22,7 +22,7 @@ O nome e o endereço de email de um destinatário da mensagem ou contato.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |address|Cadeia de caracteres|O endereço de email da pessoa ou entidade.|
-|nome|String|O nome de exibição da pessoa ou entidade.|
+|nome|Cadeia de caracteres|O nome de exibição da pessoa ou entidade.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -53,3 +53,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

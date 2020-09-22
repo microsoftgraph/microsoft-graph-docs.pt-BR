@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 14762c01563f922d790bce375e1c7d3b97594d35
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 9c5eabe4503bf8ac3f6d98d16a0a85a6f01d5af4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42453772"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071924"
 ---
 # <a name="delete-schedulinggroup"></a>Excluir schedulingGroup
 
@@ -113,3 +113,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

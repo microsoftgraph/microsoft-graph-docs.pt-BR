@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f17aa21de65fef33b0c7e4a94151eab4f49583ac
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: c4719632f7d3e2944f1dda81134acc11aa014c06
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394673"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071514"
 ---
 # <a name="endpoint-resource-type"></a>tipo de recurso de ponto de extremidade
 
-Namespace: Microsoft. Graph. callRecords
+Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,3 +54,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

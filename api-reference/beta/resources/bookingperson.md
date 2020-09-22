@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: d5ebbd7c4abaf34b31ac3f3d8e75defd6c939ec0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 04fabd62ee89c275d25075de7b489e512ebe3167
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453657"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071770"
 ---
 # <a name="bookingperson-resource-type"></a>tipo de recurso bookingPerson
 
@@ -25,7 +25,7 @@ Este é um tipo base para uma pessoa em um Microsoft bookings Business, que pode
 |:---------------|:--------|:----------|
 |displayName|Cadeia de caracteres|Um nome para a entidade derivada, que faz interface com clientes.|
 |emailAddress|String|O endereço de email da pessoa.|
-|id|String| A ID da entidade derivada. Somente leitura.|
+|id|Cadeia de caracteres| A ID da entidade derivada. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -64,3 +64,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

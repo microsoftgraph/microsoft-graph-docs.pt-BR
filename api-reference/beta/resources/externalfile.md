@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8a4f4e9bb9a782e71dd0c2f349baaacc5b61f480
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 90faf3b10d09e84c9c0571d01fc242464888ff1e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892594"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071235"
 ---
 # <a name="externalfile-resource-type"></a>tipo de recurso externalfile
 
@@ -25,27 +25,27 @@ Um item indexado por meio de uma [conexão](externalconnection.md)de pesquisa da
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                        | Tipo de retorno  | Descrição |
 |:--------------------------------------------------------------|:-------------|:--|
 | [Criar externalfile](../api/externalconnection-put-items.md) | externalFile | Criar um externalfile. |
 | [Atualizar externalfile](../api/externalitem-update.md)          | externalFile | Atualize um externalfile. |
-| [Delete](../api/externalitem-delete.md)                       | None         | Excluir um externalfile. |
+| [Delete](../api/externalitem-delete.md)                       | Nenhum         | Excluir um externalfile. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade         | Tipo                     | Descrição                    |
 |:-----------------|:-------------------------|:-------------------------------|
 | ACL              | coleção [ACL](acl.md) | Uma matriz de entradas de controle de acesso. Cada entrada especifica o acesso concedido a um usuário ou grupo. Obrigatório. |
-| content          | String                   | Uma representação de texto simples do conteúdo do item. O texto nessa propriedade é indexado de texto completo. Opcional. |
-| id               | String                   | ID exclusiva fornecida pelo desenvolvedor do item dentro do [externalConnection](externalconnection.md)que contém o. Deve ser alfanumérico e um máximo de 128 caracteres. Obrigatório. |
-| createdBy        | String                   | O nome do usuário que criou o arquivo. |
+| content          | Cadeia de caracteres                   | Uma representação de texto simples do conteúdo do item. O texto nessa propriedade é indexado de texto completo. Opcional. |
+| id               | Cadeia de caracteres                   | ID exclusiva fornecida pelo desenvolvedor do item dentro do [externalConnection](externalconnection.md)que contém o. Deve ser alfanumérico e um máximo de 128 caracteres. Obrigatório. |
+| createdBy        | Cadeia de caracteres                   | O nome do usuário que criou o arquivo. |
 | createdDateTime  | DateTimeOffset           | A data e hora em que o arquivo foi criado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` |
-| extensões        | String                   | A extensão de arquivo.            |
-| lastModifiedBy   | String                   | O nome do usuário que modificou o arquivo pela última vez. |
+| extensões        | Cadeia de caracteres                   | A extensão de arquivo.            |
+| lastModifiedBy   | Cadeia de caracteres                   | O nome do usuário que modificou o arquivo pela última vez. |
 | modifiedDateTime | DateTimeOffset           | A data e hora em que o arquivo foi modificado pela última vez. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` |
-| nome             | Cadeia de caracteres                   | O nome do arquivo. Obrigatório.       |
+| name             | Cadeia de caracteres                   | O nome do arquivo. Obrigatório.       |
 | size             | Int64                    | O tamanho do arquivo em bytes. |
 | title            | String                   | O título do arquivo.         |
 | url              | Cadeia de caracteres                   | A URL para acessar o arquivo. Obrigatório. |
@@ -93,3 +93,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

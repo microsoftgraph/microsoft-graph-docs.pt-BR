@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bdf9bbac1260ce888bb35f6049684693a5ff3ddb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2711293b6eb6604214e70836796c5f8de31c4077
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451162"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071884"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,11 +45,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|nome|string|Opcional. O nome da planilha a ser adicionada. Se especificado, o nome deve ser exclusivo. Se não especificado, o Excel determina o nome da nova planilha.|
+|name|string|Opcional. O nome da planilha a ser adicionada. Se especificado, o nome deve ser exclusivo. Se não especificado, o Excel determina o nome da nova planilha.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [workbookWorksheet](../resources/workbookworksheet.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [workbookWorksheet](../resources/workbookworksheet.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
@@ -118,3 +118,5 @@ Content-length: 100
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 7a5c3d34709e0b2de254f96e13e9ecba7789939a
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 280ca648abf20622b92d9724c0cbe504e6b207d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849706"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071938"
 ---
 # <a name="delete-open-extension"></a>Excluir extensão aberta
 
@@ -137,3 +137,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

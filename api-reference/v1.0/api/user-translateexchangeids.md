@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0e87ceb0b14ebdd41467e12dcef06e96667ad58c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7a35e196c483a630577b93d54943b99e10a50d5b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508916"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069516"
 ---
 # <a name="user-translateexchangeids"></a>usuário: translateExchangeIds
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:----------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante) | User. ReadBasic. All, User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadBasic. All, User. Read, User. ReadWrite |
+| Delegada (conta corporativa ou de estudante) | User. ReadBasic. All, User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | User. ReadBasic. All, User. Read, User. ReadWrite |
 | Aplicativo | User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,9 +45,9 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-| Parâmetro | Tipo | Descrição |
+| Parâmetro	 | Tipo | Descrição |
 |:----------|:-----|:------------|
-| inputIds | String collection | Uma coleção de identificadores a serem convertidos. Todos os identificadores na coleção devem ter o mesmo tipo de ID de fonte e devem ser para itens na mesma caixa de correio. O tamanho máximo dessa coleção é de 1000 cadeias de caracteres. |
+| inputIds | Coleção String | Uma coleção de identificadores a serem convertidos. Todos os identificadores na coleção devem ter o mesmo tipo de ID de fonte e devem ser para itens na mesma caixa de correio. O tamanho máximo dessa coleção é de 1000 cadeias de caracteres. |
 | sourceIdType | exchangeIdFormat | O tipo de ID dos identificadores no `InputIds` parâmetro. |
 | targetIdType | exchangeIdFormat | O tipo de ID solicitado a ser convertido. |
 
@@ -61,12 +61,12 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 | restid | O formato de ID padrão usado pelo Microsoft Graph. |
 | restImmutableEntryId | O formato de ID imutável usado pelo Microsoft Graph. |
 
-Os formatos binários`entryId` ( `immutableEntryId`e) são codificados por URL com base em base64. A segurança de URL é implementada modificando a codificação Base64 dos dados binários da seguinte maneira:
+Os formatos binários ( `entryId` e `immutableEntryId` ) são codificados por URL com base em base64. A segurança de URL é implementada modificando a codificação Base64 dos dados binários da seguinte maneira:
 
-- Substituir `+` por`-`
-- Substituir `/` por`_`
-- Remover os caracteres de preenchimento à direita`=`()
-- Adicione um inteiro ao final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam no original (`0`, `1`, ou) `2`
+- Substituir `+` por `-`
+- Substituir `/` por `_`
+- Remover os caracteres de preenchimento à direita ( `=` )
+- Adicione um inteiro ao final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam no original ( `0` , `1` , ou `2` )
 
 ## <a name="response"></a>Resposta
 
@@ -74,7 +74,7 @@ Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma cole
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra como converter vários identificadores do formato de API REST normal (`restId`) para o formato imutável (`restImmutableEntryId`) do REST.
+O exemplo a seguir mostra como converter vários identificadores do formato de API REST normal ( `restId` ) para o formato imutável () do REST `restImmutableEntryId` .
 
 ### <a name="request"></a>Solicitação
 
@@ -145,3 +145,4 @@ Content-type: application/json
   ]
 }
 ```
+

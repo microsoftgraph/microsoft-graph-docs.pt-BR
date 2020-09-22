@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6eabbb23ddcab85baf4277f25c586b4affd2c6bc
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 145154f9ac69c069b6ea27906727642390036378
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897817"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071623"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um calendário que é um contêiner para eventos. Pode ser um calendário para um [usuário](user.md)ou o calendário padrão de um [grupo](group.md)do Microsoft 365.
+Um calendário que é um contêiner para eventos. Pode ser um calendário para um [usuário](user.md)ou o calendário padrão de um [grupo](group.md) do Microsoft 365.
 
 > **Observação:** existem algumas pequenas diferenças na maneira como você pode interagir com calendários de usuários e calendários de grupos:
 
@@ -33,8 +33,8 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |[Listar calendários](../api/user-list-calendars.md)|Coleção [calendar](calendar.md)|Obtenha todos os calendários do usuário ou os calendários no grupo de calendários padrão ou em outro grupo de calendários específico.|
 |[Criar calendário](../api/user-post-calendars.md) |[calendar](calendar.md)| Crie um novo calendário no grupo de calendário padrão ou no grupo de calendários especificado para um usuário.|
 |[Obter calendário](../api/calendar-get.md) | [calendar](calendar.md) |Obtenha as propriedades e as relações de um objeto **calendar**. O calendário pode ser um para um usuário ou o calendário padrão de um grupo do Microsoft 365. |
-|[Atualizar](../api/calendar-update.md) | [calendar](calendar.md)  |Atualize as propriedades de um objeto **calendar**. O calendário pode ser um para um usuário ou o calendário padrão de um grupo do Microsoft 365. |
-|[Excluir](../api/calendar-delete.md) | Nenhum |Exclua um objeto calendar. |
+|[Update](../api/calendar-update.md) | [calendar](calendar.md)  |Atualize as propriedades de um objeto **calendar**. O calendário pode ser um para um usuário ou o calendário padrão de um grupo do Microsoft 365. |
+|[Delete](../api/calendar-delete.md) | Nenhum |Exclua um objeto calendar. |
 |[Listar calendarView](../api/calendar-list-calendarview.md) |Coleção [event](event.md)| Obtenha as ocorrências, as exceções e as instâncias de eventos únicas em uma visão de calendário definida por um intervalo de tempo, do calendário principal do usuário `(../me/calendarview)` ou de um calendário especificado.|
 |[Listar eventos](../api/calendar-list-events.md) |Coleção [event](event.md)| Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.|
 |[Criar evento](../api/calendar-post-events.md) |[event](event.md)| Crie um novo evento no calendário especificado ou padrão.|
@@ -51,8 +51,8 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |allowedOnlineMeetingProviders|coleção de cadeias de caracteres| Represente os provedores de serviços de reunião online que podem ser usados para criar reuniões online neste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |calendarGroupId|Cadeia de caracteres|O [calendarGroup](calendargroup.md) para criar o calendário. Se o usuário nunca tiver definido explicitamente um grupo para o calendário, esta propriedade estará vazia.|
 |canEdit |Booliano |Verdadeiro se o usuário puder gravar no calendário, caso contrário, falso. Essa propriedade é verdadeira para o usuário que criou o calendário. Ela também é verdadeira para um usuário que compartilhou um calendário e concedeu acesso de gravação por meio de um cliente do Outlook ou do recurso [calendarPermission](calendarpermission.md) correspondente. Apenas leitura.|
-|canShare |Boolean |Verdadeira se o usuário tem permissão para compartilhar o calendário, falsa caso contrário. Apenas o usuário que criou o calendário pode compartilhá-lo. Somente leitura.|
-|canViewPrivateItems |Boolean |Verdadeira se o usuário pode ler itens do calendário que foram marcados como particulares, falsa caso contrário. Essa propriedade é definida por meio de um cliente do Outlook ou o do recurso [calendarPermission](calendarpermission.md) correspondente. Somente leitura.|
+|canShare |Boolean |Verdadeira se o usuário tem permissão para compartilhar o calendário, falsa caso contrário. Apenas o usuário que criou o calendário pode compartilhá-lo. Apenas leitura.|
+|canViewPrivateItems |Boolean |Verdadeira se o usuário pode ler itens do calendário que foram marcados como particulares, falsa caso contrário. Essa propriedade é definida por meio de um cliente do Outlook ou o do recurso [calendarPermission](calendarpermission.md) correspondente. Apenas leitura.|
 |changeKey|String|Identifica a versão do objeto calendar. Toda vez que o calendário é alterado, a changeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura.|
 |color|String|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|O provedor de reunião online padrão para reuniões enviadas deste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
@@ -60,13 +60,13 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |id|String|O identificador exclusivo do calendário. Somente leitura.|
 |isDefaultCalendar|Booliano|Verdadeiro se este for o calendário padrão em que novos eventos são criados; caso contrário, será falso.|
 |isRemovable|Booliano| Indica se o calendário deste usuário pode ser excluído da caixa de correio do usuário.|
-|isShared |Booliano |True se o usuário tiver compartilhado o calendário com outros usuários. Caso contrário, será false. Como apenas o usuário que criou o calendário pode compartilhá-lo, ** isShared ** e ** isSharedWithMe ** não podem ser verdadeiros para o mesmo usuário. Essa propriedade é definida quando o compartilhamento é iniciado em um cliente do Outlook e pode ser redefinido quando o compartilhamento é cancelado pelo cliente ou pelo recurso [calendarPermission](calendarpermission.md) correspondente. Apenas leitura.|
+|isShared |Booliano |True se o usuário tiver compartilhado o calendário com outros usuários. Caso contrário, será false. Como apenas o usuário que criou o calendário pode compartilhá-lo, ** isShared ** e ** isSharedWithMe ** não podem ser verdadeiros para o mesmo usuário. Essa propriedade é definida quando o compartilhamento é iniciado em um cliente do Outlook e pode ser redefinido quando o compartilhamento é cancelado pelo cliente ou pelo recurso [calendarPermission](calendarpermission.md) correspondente. Somente leitura.|
 |isSharedWithMe |Booliano |True se o usuário tiver compartilhado este calendário, caso contrário, será false. Essa propriedade sempre será false para o proprietário de um calendário. Essa propriedade é definida quando o compartilhamento é iniciado em um cliente do Outlook e pode ser redefinido quando o compartilhamento é cancelado pelo cliente ou pelo recurso [calendarPermission](calendarpermission.md) correspondente. Apenas leitura. |
 |isTallyingResponses|Booliano|Indica se o calendário deste usuário dá suporte ao acompanhamento de respostas de reunião. Somente os convites para reuniões enviados do calendário principal do usuário oferecem suporte para respostas de reunião.|
 |nome|String|O nome do calendário.|
 |owner |[emailAddress](emailaddress.md) | Se definida, representa o usuário que criou ou adicionou o calendário. Para um calendário que o usuário criou ou adicionou, a propriedade **owner** é definida para o usuário. Para um calendário compartilhado com o usuário, a propriedade **owner** é definida para a pessoa que compartilhou o calendário com o usuário. Somente leitura.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |calendarPermissions|Coleção de [calendarPermission](calendarpermission.md)| As permissões dos usuários com os quais o calendário é compartilhado.|
@@ -124,3 +124,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

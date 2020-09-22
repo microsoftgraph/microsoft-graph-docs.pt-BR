@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3da7e07e7d918d451e996e859463d31d6cf9d0a1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f43e780a6a574b465f293f432cb4581d645bba3c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531885"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069201"
 ---
 # <a name="chartaxistitle-resource-type"></a>Tipo de recurso ChartAxisTitle
 
@@ -32,7 +32,7 @@ Representa o título de um eixo do gráfico.
 |texto|string|Representa o título do eixo.|
 |visible|booliano|Um booliano que especifica a visibilidade de um título do eixo.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[WorkbookChartAxisTitleFormat](chartaxistitleformat.md)|Representa a formatação do título do eixo do gráfico. Somente leitura.|
@@ -66,3 +66,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

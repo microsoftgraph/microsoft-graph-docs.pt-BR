@@ -3,14 +3,14 @@ title: Criar windowsPhone81CompliancePolicy
 description: Cria um novo objeto windowsPhone81CompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed87c8639fff2a1399cd88b1ad6dd30c800e70b5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d595d63c31942760ce39c097ceb9c621eadd72b6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462023"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069859"
 ---
 # <a name="create-windowsphone81compliancepolicy"></a>Criar windowsPhone81CompliancePolicy
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,9 +51,9 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windowsPhone81Co
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windowsPhone81Co
 |passwordMinimumCharacterSetCount|Int32|O número de conjuntos de caracteres necessários na senha.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear. Valores válidos de 0 a 24|
-|passwordRequired|Booliano|Se uma senha deve ou não ser exigida.|
+|passwordRequired|Boolean|Se uma senha deve ou não ser exigida.|
 |osMinimumVersion|String|Versão mínima do Windows Phone.|
 |osMaximumVersion|String|Versão máxima do Windows Phone.|
 |storageRequireEncryption|Booliano|Exige criptografia em dispositivos Windows Phone.|
@@ -130,6 +130,9 @@ Content-Length: 779
   "storageRequireEncryption": true
 }
 ```
+
+
+
 
 
 

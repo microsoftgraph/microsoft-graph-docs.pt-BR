@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7b8ad12fe08c6846718be1ac39ba2f4a62627a83
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 80a90b19d4f9d93208ce3dc79813732c7e756b78
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199757"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072001"
 ---
 # <a name="assign-onpremisesagent-to-onpremisesagentgroup"></a>Atribuir onPremisesAgent a onPremisesAgentGroup
 
@@ -50,7 +50,7 @@ No corpo da solicitação, forneça uma representação JSON de uma referência 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -111,3 +111,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

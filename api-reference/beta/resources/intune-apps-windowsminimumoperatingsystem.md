@@ -3,14 +3,14 @@ title: Tipo de recurso windowsMinimumOperatingSystem
 description: O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8a148bc1ace18af3d4fd1206e7caf3849074244
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9f82eb5e5c77807b4cdd8be0d80481b6f129b529
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450749"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070930"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>Tipo de recurso windowsMinimumOperatingSystem
 
@@ -25,15 +25,15 @@ O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|v8_0|Boolean|Windows 8.0 ou posterior.|
+|v8_0|Booliano|Windows 8.0 ou posterior.|
 |v8_1|Booliano|Windows 8.1 ou posterior.|
 |v10_0|Booliano|Windows 10.0 ou posterior.|
-|v10_1607|Boolean|Windows 10 1607 ou posterior.|
-|v10_1703|Boolean|Windows 10 1703 ou posterior.|
-|v10_1709|Boolean|Windows 10 1709 ou posterior.|
-|v10_1803|Boolean|Windows 10 1803 ou posterior.|
-|v10_1809|Boolean|Windows 10 1809 ou posterior.|
-|v10_1903|Boolean|Windows 10 1903 ou posterior.|
+|v10_1607|Booliano|Windows 10 1607 ou posterior.|
+|v10_1703|Booliano|Windows 10 1703 ou posterior.|
+|v10_1709|Booliano|Windows 10 1709 ou posterior.|
+|v10_1803|Booliano|Windows 10 1803 ou posterior.|
+|v10_1809|Booliano|Windows 10 1809 ou posterior.|
+|v10_1903|Booliano|Windows 10 1903 ou posterior.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -59,6 +59,9 @@ Veja a seguir uma representação JSON do recurso.
   "v10_1903": true
 }
 ```
+
+
+
 
 
 

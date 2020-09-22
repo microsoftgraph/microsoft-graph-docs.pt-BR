@@ -5,12 +5,12 @@ author: stephenjust
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 3fae40563bbd89b5792d75b5d8a0a51c1cda17e3
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: c6c80200c2d4f7f4cdd51e99c04066025364751a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509879"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071531"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>Trabalhar com a API de registros de chamadas no Microsoft Graph
 
@@ -45,3 +45,5 @@ No diagrama acima, o número denota quantas crianças de cada tipo podem estar p
 ## <a name="see-also"></a>Também consulte
 
 - [Assinaturas do Webhook](/graph/api/resources/webhooks?view=graph-rest-beta)
+
+

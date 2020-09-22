@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 795332d58359d0a0a5dd2776f6c93923fe1bafd8
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: 54acb771330bf77e3361450bd032193e0cf65466
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491939"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069306"
 ---
 # <a name="useragent-resource-type"></a>tipo de recurso UserAgent
 
@@ -24,7 +24,7 @@ Os tipos [clientUserAgent](callrecords-clientuseragent.md) e [serviceUserAgent](
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |applicationVersion|String|Identifica a versão do software do aplicativo usado por esse ponto de extremidade.|
-|headerValue|String|Valor do cabeçalho do agente de usuário relatado por esse ponto de extremidade.|
+|headerValue|Cadeia de caracteres|Valor do cabeçalho do agente de usuário relatado por esse ponto de extremidade.|
 
 ## <a name="json-representation"></a>Representação JSON
 

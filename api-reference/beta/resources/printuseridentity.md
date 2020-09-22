@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: de2899b3ca75660280b797dda62993789f634096
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 8a695bed829d6c7e8825898da366737427195e1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917601"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070650"
 ---
 # <a name="printuseridentity-resource-type"></a>tipo de recurso printUserIdentity
 
@@ -23,10 +23,10 @@ Representa uma identidade do usuário no serviço de impressão universal. Mapei
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|O identificador do printUserIdentity. Somente leitura.|
+|id|Cadeia de caracteres|O identificador do printUserIdentity. Somente leitura.|
 |displayName|Cadeia de caracteres|O nome de exibição do printUserIdentity.|
 |ipAddress|Cadeia de caracteres|O endereço IP do printUserIdentity. Não preenchido.|
-|userPrincipalName|String|O nome principal do usuário (UPN) do printUserIdentity.|
+|userPrincipalName|Cadeia de caracteres|O nome principal do usuário (UPN) do printUserIdentity.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -61,3 +61,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

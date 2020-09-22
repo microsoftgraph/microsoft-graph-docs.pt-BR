@@ -3,14 +3,14 @@ title: Atualizar windows81GeneralConfiguration
 description: Atualizar as propriedades de um objeto windows81GeneralConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 468a04a0b2aed2166d41d388b8eb9bea7e3b0c6b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1f7069acaf08e574ee79bf35bcd5a9b1a09dd9be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466627"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069950"
 ---
 # <a name="update-windows81generalconfiguration"></a>Atualizar windows81GeneralConfiguration
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,33 +51,33 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|accountsBlockAddingNonMicrosoftAccountEmail|Booliano|Indica se o usuário será impedido ou não de adicionar ao dispositivo contas de email não associadas a uma conta da Microsoft.|
-|applyOnlyToWindows81|Booliano|Valor que indica se esta política se aplica somente ao Windows 8.1. Essa propriedade é somente leitura.|
-|browserBlockAutofill|Booliano|Indica se o preenchimento automático deve ou não ser bloqueado.|
-|browserBlockAutomaticDetectionOfIntranetSites|Booliano|Indica se a detecção automática de sites da Intranet deve ou não ser bloqueada.|
-|browserBlockEnterpriseModeAccess|Booliano|Indica se o acesso ao modo Empresarial deve ou não ser bloqueado.|
-|browserBlockJavaScript|Booliano|Indica se o usuário será ou não impedido de usar JavaScript.|
-|browserBlockPlugins|Booliano|Indica se os plug-ins devem ou não ser bloqueados.|
-|browserBlockPopups|Booliano|Indica se janelas pop-ups devem ou não ser bloqueadas.|
-|browserBlockSendingDoNotTrackHeader|Booliano|Indica se o usuário será ou não impedido de enviar o cabeçalho Do Not Track.|
-|browserBlockSingleWordEntryOnIntranetSites|Booliano|Indica se a entrada de palavra única em sites da Intranet deve ou não ser bloqueada.|
-|browserRequireSmartScreen|Booliano|Indica se o usuário deverá ou não usar o Filtro SmartScreen.|
+|accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Indica se o usuário será impedido ou não de adicionar ao dispositivo contas de email não associadas a uma conta da Microsoft.|
+|applyOnlyToWindows81|Boolean|Valor que indica se esta política se aplica somente ao Windows 8.1. Essa propriedade é somente leitura.|
+|browserBlockAutofill|Boolean|Indica se o preenchimento automático deve ou não ser bloqueado.|
+|browserBlockAutomaticDetectionOfIntranetSites|Boolean|Indica se a detecção automática de sites da Intranet deve ou não ser bloqueada.|
+|browserBlockEnterpriseModeAccess|Boolean|Indica se o acesso ao modo Empresarial deve ou não ser bloqueado.|
+|browserBlockJavaScript|Boolean|Indica se o usuário será ou não impedido de usar JavaScript.|
+|browserBlockPlugins|Boolean|Indica se os plug-ins devem ou não ser bloqueados.|
+|browserBlockPopups|Boolean|Indica se janelas pop-ups devem ou não ser bloqueadas.|
+|browserBlockSendingDoNotTrackHeader|Boolean|Indica se o usuário será ou não impedido de enviar o cabeçalho Do Not Track.|
+|browserBlockSingleWordEntryOnIntranetSites|Boolean|Indica se a entrada de palavra única em sites da Intranet deve ou não ser bloqueada.|
+|browserRequireSmartScreen|Boolean|Indica se o usuário deverá ou não usar o Filtro SmartScreen.|
 |browserEnterpriseModeSiteListLocation|String|O local da lista de sites do modo Empresarial. Pode ser um arquivo local, rede local ou local http.|
 |browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune-deviceconfig-internetsitesecuritylevel.md)|O nível de segurança da Internet. Os valores possíveis são: `userDefined`, `medium`, `mediumHigh`, `high`.|
-|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune-deviceconfig-sitesecuritylevel.md)|O nível de segurança da Intranet. Os possíveis valores são: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune-deviceconfig-sitesecuritylevel.md)|O nível de segurança da Intranet. Os valores possíveis são: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |browserLoggingReportLocation|String|O local do relatório de registro em log.|
-|browserRequireHighSecurityForRestrictedSites|Booliano|Indica se a alta segurança para sites restritos deve ou não ser exigida.|
-|browserRequireFirewall|Booliano|Indica se um firewall deve ou não ser exigido.|
-|browserRequireFraudWarning|Booliano|Indica se um aviso de fraude deve ou não ser exigido.|
+|browserRequireHighSecurityForRestrictedSites|Boolean|Indica se a alta segurança para sites restritos deve ou não ser exigida.|
+|browserRequireFirewall|Boolean|Indica se um firewall deve ou não ser exigido.|
+|browserRequireFraudWarning|Boolean|Indica se um aviso de fraude deve ou não ser exigido.|
 |browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune-deviceconfig-sitesecuritylevel.md)|O nível de segurança de sites confiáveis. Os valores possíveis são: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
-|cellularBlockDataRoaming|Booliano|Indica se o roaming de dados deve ou não ser bloqueado.|
-|diagnosticsBlockDataSubmission|Booliano|Indica se o envio de dados de diagnóstico deve ou não ser bloqueado.|
+|cellularBlockDataRoaming|Boolean|Indica se o roaming de dados deve ou não ser bloqueado.|
+|diagnosticsBlockDataSubmission|Boolean|Indica se o envio de dados de diagnóstico deve ou não ser bloqueado.|
 |passwordBlockPicturePasswordAndPin|Boolean|Indica se o usuário será ou não impedido de usar senha com imagens ou pin.|
 |passwordExpirationDays|Int32|Expiração da senha em dias.|
 |passwordMinimumLength|Int32|O comprimento mínimo da senha.|
@@ -86,7 +86,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |passwordPreviousPasswordBlockCount|Int32|O número de senhas anteriores cujo uso deve ser evitado. Valores válidos de 0 a 24|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|O número de falhas de entrada antes da redefinição de fábrica.|
-|storageRequireDeviceEncryption|Booliano|Indica se a criptografia é ou não necessária em um dispositivo móvel.|
+|storageRequireDeviceEncryption|Boolean|Indica se a criptografia é ou não necessária em um dispositivo móvel.|
 |updatesRequireAutomaticUpdates|Boolean|Indica se as atualizações automáticas devem ou não ser exigidas.|
 |userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune-deviceconfig-windowsuseraccountcontrolsettings.md)|As configurações de controle da conta do usuário. Os valores possíveis são: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
 |workFoldersUrl|String|A URL das pastas de trabalho|
@@ -196,6 +196,9 @@ Content-Length: 1865
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
 }
 ```
+
+
+
 
 
 

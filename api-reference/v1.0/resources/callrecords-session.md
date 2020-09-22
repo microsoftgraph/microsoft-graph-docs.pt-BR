@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0f661f77ad381c61a3e27ba7edb5372b4f3bcbb5
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: 76b8253bdf80c6368a8e16b06a757fc5a75287e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491940"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069313"
 ---
 # <a name="session-resource-type"></a>tipo de recurso de sessão
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.callRecords
 
 Representa uma comunicação do usuário ou uma comunicação de reunião do usuário no caso de uma chamada em conferência.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|

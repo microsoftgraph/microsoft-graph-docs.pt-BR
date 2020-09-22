@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: e986777d277e84246104561e5e275d7508b41b7b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 42dc5fec859aff758b2f46812a63b10f49f0498a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42504731"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071364"
 ---
 # <a name="currencies-resource-type"></a>tipo de recurso moedas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,16 +28,16 @@ Representa uma moeda usada no Dynamics 365 Business central.
 |[Obter moedas](../api/dynamics-currencies-get.md)      |monetária |Obter uma moeda.   |
 |[Lançar moedas](../api/dynamics-create-currencies.md)  |monetária |Criar uma moeda.|
 |[Corrigir moedas](../api/dynamics-currencies-update.md) |monetária |Atualize uma moeda.|
-|[Excluir moedas](../api/dynamics-currencies-delete.md)|nenhuma       |Excluir uma moeda.|
+|[Excluir moedas](../api/dynamics-currencies-delete.md)|Nenhuma       |Excluir uma moeda.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade              | Tipo   |Descrição                                                   |
 |:----------------------|:-------|:-------------------------------------------------------------|
 |id                     |GUID    |A identificação exclusiva da moeda. Não editável.                  |
 |código                   |cadeia de caracteres  |Especifica o código da moeda.                                  |
-|displayName            |string  |Especifica o nome de exibição da moeda.                          |
-|formato                 |string  |Especifica o símbolo para esta moeda que aparece nos cheques.|
-|amountDecimalPlaces    |string  |Especifica o número de casas decimais que o sistema exibirá em valores dessa moeda.|
+|displayName            |cadeia de caracteres  |Especifica o nome de exibição da moeda.                          |
+|formato                 |cadeia de caracteres  |Especifica o símbolo para esta moeda que aparece nos cheques.|
+|amountDecimalPlaces    |cadeia de caracteres  |Especifica o número de casas decimais que o sistema exibirá em valores dessa moeda.|
 |amountRoundingPrecision|dígitos |Especifica o tamanho do intervalo a ser usado ao arredondar valores para esta moeda.|
 |lastModifiedDateTime   |datetime|O último DateTime que a moeda foi modificada. Somente leitura.       |  
 
@@ -62,4 +62,6 @@ Veja a seguir uma representação JSON das moedas.
 }
 
 ```
+
+
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 30769d9bd7ee76494b1582a3d7afc8a7f75bb07a
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: bba9f57799a36bef4a90b7c514a5be4b4846565e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895471"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070643"
 ---
 # <a name="printusagesummarybyuser-resource-type"></a>tipo de recurso printUsageSummaryByUser
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Descreve a atividade de impressão para um usuário durante um período de tempo especificado (usageDate).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -31,8 +31,8 @@ Descreve a atividade de impressão para um usuário durante um período de tempo
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|A ID deste Resumo de uso.|
-|userPrincipalName|String|O UPN do usuário representado por essas estatísticas.|
+|id|Cadeia de caracteres|A ID deste Resumo de uso.|
+|userPrincipalName|Cadeia de caracteres|O UPN do usuário representado por essas estatísticas.|
 |usageDate|Data|A data associada a essas estatísticas.|
 |completedBlackAndWhiteJobCount|Int64|O número de trabalhos de impressão em preto e branco concluídos em nome do usuário na data associada.|
 |completedColorJobCount|Int64|O número de trabalhos de impressão em cores concluídos em nome do usuário na data associada.|
@@ -70,3 +70,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

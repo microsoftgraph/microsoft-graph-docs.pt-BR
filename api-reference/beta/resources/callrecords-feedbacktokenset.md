@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e3f4b0f58fbe2fcd9a920181ccbfca0c5a8c8dad
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 77455a28333b6b1f94196397b329442e1d0ecb60
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394671"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071511"
 ---
 # <a name="feedbacktokenset-resource-type"></a>tipo de recurso feedbackTokenSet
 
-Namespace: Microsoft. Graph. callRecords
+Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,3 +56,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

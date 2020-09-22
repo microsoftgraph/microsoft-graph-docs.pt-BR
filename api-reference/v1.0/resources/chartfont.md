@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 1768e40edde1d02c109e77c7e7ca3c2dd0ffdafa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3862a6273e9dfca4df6bb412afcc061b057e617c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531852"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069194"
 ---
 # <a name="chartfont-resource-type"></a>Tipo de recurso ChartFont
 
@@ -30,11 +30,11 @@ Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |bold|booliano|Representa o status da fonte em negrito.|
-|color|string|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
+|color|cadeia de caracteres|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
 |italic|booliano|Representa o status da fonte em itálico.|
 |nome|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Tamanho da fonte, por exemplo, 11.|
-|underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`.|
+|underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None` , `Single` .|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -72,3 +72,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

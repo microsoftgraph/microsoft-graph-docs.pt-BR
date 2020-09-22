@@ -5,16 +5,25 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: b8559d855be3056a5f73de1eaa0f2da571bd61ab
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 04d6b7a92a7e2ee2acf8ad539c055286326310af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319565"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071252"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
 Namespace: microsoft.graph
+
+### <a name="volumetype-values"></a>valores de volumetype 
+
+| Membro
+|:--------------
+| operatingSystemVolume
+| fixedDataVolume
+| removableDataVolume
+| unknownFutureValue
 
 ### <a name="allowedaudiences-values"></a>valores de allowedAudiences
 
@@ -24,7 +33,7 @@ Namespace: microsoft.graph
 |produtos|
 |contacts|
 |groupMembers|
-|organization|
+|organização|
 |federatedOrganizations|
 |têm|
 |unknownFutureValue|
@@ -168,7 +177,7 @@ Namespace: microsoft.graph
 |:---|
 |Nenhuma|
 |automóvel|
-|calendar|
+|calendário|
 |com|
 |plano|
 |firstAid|
@@ -546,7 +555,7 @@ Namespace: microsoft.graph
 | Automático
 | nopreview
 | verificação
-| descrição
+| description
 | referência
 
 
@@ -663,7 +672,7 @@ Namespace: microsoft.graph
 | preset8  | 8      |
 | preset9  | 9      |
 | preset10 | 10     |
-| preset11 | 11    |
+| preset11 | 11     |
 | preset12 | 12     |
 | preset13 | 13     |
 | preset14 | 14     |
@@ -774,7 +783,7 @@ Enumeração para tipos de valor do registro, conforme definido pelos [tipos de 
 | Nenhuma              | 8      | REG_NONE tipo de valor do registro.                |
 | QWORD             | 9      | REG_QWORD tipo de valor do registro.               |
 | qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN tipo de valor do registro. |
-| v                | 11    | REG_SZ tipo de valor do registro.                  |
+| v                | 11     | REG_SZ tipo de valor do registro.                  |
 
 ### <a name="alertseverity-values"></a>valores de alertSeverity
 
@@ -806,7 +815,7 @@ Valores possíveis para funções de email.
 | Membro    | Valor | Descrição             |
 | :-------- | :---- | :---------------------- |
 | desconhecido   | ,0     | Função desconhecida.           |
-| remetente    | 1      | Remetente do email.    |
+| sender    | 1      | Remetente do email.    |
 | destinatário | 2      | Destinatário do email. |
 
 ### <a name="logontype-values"></a>valores de Logontype
@@ -832,6 +841,15 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | caracteres      | ,0     | Membro do grupo de usuários padrão. |
 | força         | 1      | Membro do grupo de usuários avançados.    |
 | administrador | 2      | Membro do grupo Administradores. |
+
+### <a name="chatmessagepolicyviolationdlpactiontypevalues"></a>valores de chatMessagePolicyViolationDlpActionType
+
+| Valor |
+|:-----------------|
+| Nenhuma |
+| NotifySender |
+| BlockAccess |
+| BlockAccessExternal |
 
 ### <a name="scopeoperatormultivaluedcomparisontype-values"></a>valores de scopeOperatorMultiValuedComparisonType
 
@@ -1022,6 +1040,23 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |user|
 |unknownFutureValue|
 
+### <a name="chatmessagepolicyviolationuseractiontype-values"></a>valores de chatMessagePolicyViolationUserActionType
+
+| Membro   | Valor int |  Descrição |
+|:---------------|:--------|:----------|
+| Nenhum | ,0 | Valor padrão. Este é o valor em uma mensagem quando o usuário não executou uma ação na mensagem bloqueada pela DLP. |
+| Override | 1  | O remetente substituiu a mensagem veredicto e enviou a mensagem mesmo assim.|
+| ReportFalsePositive | 2  | O remetente informou a mensagem veredicto para os administradores como um falso positivo.|
+
+### <a name="chatmessagepolicyviolationverdictdetailstype-values"></a>valores de chatMessagePolicyViolationVerdictDetailsType
+
+| Membro   | Valor int |  Descrição |
+|:---------------|:--------|:----------|
+| Nenhum | ,0 |  O usuário não tem permissão para substituir a mensagem. O usuário não tem permissão para relatar uma mensagem como falso positivo se policyTip não for fornecido. Em todos os outros cenários, o usuário pode relatar uma mensagem como falso positivo.|
+| AllowFalsePositiveOverride | 1  |  O usuário não tem permissão para substituir explicitamente o bloco, a menos que ele seja combinado com `AllowOverrideWithoutJustification` ou `AllowOverrideWithJustification` sinalizadores. Relatar um falso positivo na violação substitui automaticamente o bloco e envia a mensagem. |
+| AllowOverrideWithoutJustification | 2  | O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa não é obrigatório. Exclusivo para `AllowOverrideWithJustification` . |
+| AllowOverrideWithJustification | 4  |  O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa é obrigatório. Exclusivo para `AllowOverrideWithoutJustification` .|
+
 ### <a name="entitytype-values"></a>valores de entityType
 
 | Membro       |
@@ -1183,7 +1218,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1      | Ameaça de email.            |
+| email   | 1      | Ameaça de email.            |
 | url    | 2      | Ameaça de URL.             |
 | file   | 3      | Ameaça do arquivo de anexo. |
 
@@ -1241,7 +1276,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | firstTimeSender       | 8      | Bloqueado devido ao remetente pela primeira vez.   |
 | autoPurgeToInbox      | 9      | Mensagem de movimentação de viagem para a caixa de entrada.   |
 | autoPurgeToJunk       | 10     | Mensagem de movimentação de viagens para lixo eletrônico.    |
-| autoPurgeToDeleted    | 11    | Mensagem de movimentação de viagens para exclusão. |
+| autoPurgeToDeleted    | 11     | Mensagem de movimentação de viagens para exclusão. |
 | saída              | 12     | Emails de saída.                      |
 | Não é lixo eletrônico               | 13     | Permitir por não ser lixo eletrônico.              |
 | desejado                  | 14     | Bloqueado devido a lixo eletrônico.                |
@@ -1320,3 +1355,5 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | configurado            | ,0     | Organizações conectadas com esse valor de estado são incluídas em políticas de atribuição com o tipo de escopo solicitante `AllConfiguredConnectedOrganizationSubjects` .                                                          |
 | propostas              | 1      | As organizações conectadas criadas automaticamente pelo sistema têm esse valor de estado. Eles não estão incluídos nas políticas de atribuição com o tipo de escopo solicitante `AllConfiguredConnectedOrganizationSubjects` .   |
 | unknownFutureValue    | 2      | Um membro Sentinel.                                                                                                                                                                                                 |
+
+

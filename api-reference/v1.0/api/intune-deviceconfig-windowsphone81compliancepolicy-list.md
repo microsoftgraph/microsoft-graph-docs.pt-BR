@@ -3,14 +3,14 @@ title: Listar windowsPhone81CompliancePolicies
 description: Listar propriedades e relações dos objetos windowsPhone81CompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6516c3af4ec38de97f0c3600921606a453f47b3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4096689a797f032aa9ba1af2ba72a2ae68eca2ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471605"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069817"
 ---
 # <a name="list-windowsphone81compliancepolicies"></a>Listar windowsPhone81CompliancePolicies
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -90,6 +90,9 @@ Content-Length: 884
   ]
 }
 ```
+
+
+
 
 
 

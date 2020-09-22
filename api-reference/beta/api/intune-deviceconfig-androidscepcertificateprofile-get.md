@@ -3,14 +3,14 @@ title: Obter androidScepCertificateProfile
 description: Leia as propriedades e as relações do objeto androidScepCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9420c2c3a94c2d605e6e88c60466b46a79df8bf5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b1f34fb66005fc6efe1e8353ba7c0a38b3ff5c99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43435478"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068921"
 ---
 # <a name="get-androidscepcertificateprofile"></a>Obter androidScepCertificateProfile
 
@@ -129,6 +129,9 @@ Content-Length: 2042
   }
 }
 ```
+
+
+
 
 
 

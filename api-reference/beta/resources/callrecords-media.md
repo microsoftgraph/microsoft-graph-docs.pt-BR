@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1b996c34c3d12984cc512dbcc4d1113d54bd5f69
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: f550c898eda95026d5058c09d0e03f1064887509
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394670"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071517"
 ---
 # <a name="media-resource-type"></a>tipo de recurso de mídia
 
-Namespace: Microsoft. Graph. callRecords
+Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ Representa a mídia (áudio, vídeo, compartilhamento de tela baseado em vídeo,
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|rótulo|String|Como a mídia foi identificada durante o estágio de negociação de mídia.|
+|rótulo|Cadeia de caracteres|Como a mídia foi identificada durante o estágio de negociação de mídia.|
 |callerDevice|[Microsoft. Graph. callRecords. deviceInfo](callrecords-deviceinfo.md)|Informações do dispositivo associadas ao ponto de extremidade do chamador desta mídia.|
 |callerNetwork|[Microsoft. Graph. callRecords. networkInfo](callrecords-networkinfo.md)|Informações de rede associadas ao ponto de extremidade do chamador desta mídia.|
 |calleeDevice|[Microsoft. Graph. callRecords. deviceInfo](callrecords-deviceinfo.md)|Informações do dispositivo associadas ao ponto de extremidade do receptor desta mídia.|
@@ -64,3 +64,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

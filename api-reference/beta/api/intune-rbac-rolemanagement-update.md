@@ -3,14 +3,14 @@ title: Atualizar roleManagement
 description: Atualiza as propriedades de um objeto roleManagement.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d81ccac5dc51c1193f6956c346910aa66784898
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d0aeff280e468dd672ba747de034f278f8226ba2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423900"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072064"
 ---
 # <a name="update-rolemanagement"></a>Atualizar roleManagement
 
@@ -53,12 +53,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [roleMan
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [roleManagement](../resources/intune-rbac-rolemanagement.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [roleManagement](../resources/intune-rbac-rolemanagement.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,6 +86,9 @@ Content-Length: 105
   "id": "6fb74c1e-4c1e-6fb7-1e4c-b76f1e4cb76f"
 }
 ```
+
+
+
 
 
 

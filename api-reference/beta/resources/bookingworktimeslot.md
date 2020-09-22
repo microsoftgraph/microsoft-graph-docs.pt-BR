@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 76c5de4628c8b63a3babc05016a02111a20dd100
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dadeebfe65a8d502b8a401f551638c09f637625f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43360510"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071653"
 ---
 # <a name="bookingworktimeslot-resource-type"></a>tipo de recurso bookingWorkTimeSlot
 
@@ -59,3 +59,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

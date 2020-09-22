@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 2ba6da0291c0a2153908d14e74deeb83c6c138d5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3d33c182fb2456137193f01bb1d2b9a310184160
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453766"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071798"
 ---
 # <a name="bookingbusiness-resource-type"></a>tipo de recurso bookingBusiness
 
@@ -46,18 +46,18 @@ Representa uma empresa em Microsoft bookings. Este é o objeto de nível superio
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|O endereço da empresa. A propriedade **Address** , junto com **Phone** e **webSiteUrl**, aparecem no rodapé de uma página de agendamento de negócios.|
 |businessHours|coleção [bookingWorkHours](bookingworkhours.md)|As horas de operação da empresa.|
-|businesstype|String|O tipo de negócio.|
-|defaultCurrencyIso|String|O código da moeda na qual a empresa opera em reservas da Microsoft.|
+|businesstype|Cadeia de caracteres|O tipo de negócio.|
+|defaultCurrencyIso|Cadeia de caracteres|O código da moeda na qual a empresa opera em reservas da Microsoft.|
 |displayName|Cadeia de caracteres|O nome da empresa, que é a interface com os clientes. Esse nome aparece na parte superior da página agendamento de negócios.|
-|email|String|O endereço de email da empresa.|
-|id|String|Um identificador de programação exclusivo para a empresa. Somente leitura.|
-|isPublished|Boolean|A página de agendamento foi disponibilizada para clientes externos. Use as ações **publicar** e cancelar **publicação** para definir essa propriedade. Somente leitura.|
+|email|Cadeia de caracteres|O endereço de email da empresa.|
+|id|Cadeia de caracteres|Um identificador de programação exclusivo para a empresa. Somente leitura.|
+|isPublished|Booliano|A página de agendamento foi disponibilizada para clientes externos. Use as ações **publicar** e cancelar **publicação** para definir essa propriedade. Somente leitura.|
 |phone|Cadeia de caracteres|O número de telefone da empresa. A propriedade **Phone** , junto com **endereço** e **webSiteUrl**, aparecem no rodapé de uma página de agendamento de negócios.|
-|publicUrl|String|A URL da página de agendamento, que é definida depois que você [publica](../api/bookingbusiness-publish.md) ou cancela a [publicação](../api/bookingbusiness-unpublish.md) da página. Somente leitura.|
+|publicUrl|Cadeia de caracteres|A URL da página de agendamento, que é definida depois que você [publica](../api/bookingbusiness-publish.md) ou cancela a [publicação](../api/bookingbusiness-unpublish.md) da página. Somente leitura.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Especifica como as reservas podem ser criadas para essa empresa.|
-|webSiteUrl|String|A URL do site da empresa. A propriedade **webSiteUrl** , junto com **endereço**, **telefone**, aparece no rodapé de uma página de agendamento de negócios.|
+|webSiteUrl|Cadeia de caracteres|A URL do site da empresa. A propriedade **webSiteUrl** , junto com **endereço**, **telefone**, aparece no rodapé de uma página de agendamento de negócios.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |appointments|coleção [bookingAppointment](bookingappointment.md)| Todos os compromissos dessa empresa. Somente leitura. Anulável.|
@@ -112,3 +112,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

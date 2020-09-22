@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 307a50c7a29be3857ec1b6b2addf2fafe2189323
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: 849da788c991b01cb7b06357e09c5209236c95cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491917"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069404"
 ---
 # <a name="feedbacktokenset-resource-type"></a>tipo de recurso feedbackTokenSet
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 039f01375b2483f1bda1a63e999556d194fae048
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f12a794b6ca624d3ef41a61bc93a8a0c9a867e99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457426"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071756"
 ---
 # <a name="bookingreminder-resource-type"></a>tipo de recurso bookingReminder
 
@@ -26,7 +26,7 @@ Representa quando e para quem enviar um lembrete de email.
 |:---------------|:--------|:----------|
 |mensagem|String|A mensagem no lembrete.|
 |partida|Duração|O período de tempo antes do início de um compromisso para o qual o lembrete deve ser enviado. Ele é indicado no formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|destinatários|String| As pessoas que shouold receberão o lembrete. Os valores possíveis são: `allAttendees`, `staff`, `customer`.|
+|destinatários|Cadeia de caracteres| As pessoas que shouold receberão o lembrete. Os valores possíveis são: `allAttendees`, `staff`, `customer`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -61,3 +61,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

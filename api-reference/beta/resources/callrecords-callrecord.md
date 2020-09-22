@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 19519ec646e87060e3721add2188ead6533abc15
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: a119b95daf651ca5a91c269210a81a9a9a3cc1f0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509872"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071516"
 ---
 # <a name="callrecord-resource-type"></a>tipo de recurso callRecord
 
@@ -43,7 +43,7 @@ Representa uma única chamada ponto a ponto ou uma chamada de grupo entre vário
 |tipo|Microsoft. Graph. callRecords. CallType|Indica o tipo da chamada. Os valores possíveis são: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
 |versão|Int64|Versão de aumento monotônico do registro de chamada. Registros de chamada de versão superior com a mesma ID incluem dados adicionais comparados à versão inferior.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
@@ -87,3 +87,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

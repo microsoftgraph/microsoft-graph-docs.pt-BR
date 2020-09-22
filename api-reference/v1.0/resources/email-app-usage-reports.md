@@ -5,12 +5,12 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: d34a829063ca5c5f5be6ad6b8bf822b8a2cd8520
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 18403a0040672c2c056b9cc03246e29a91639e45
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898265"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069124"
 ---
 # <a name="email-app-usage-reports"></a>Relatórios de uso do aplicativo de email
 
@@ -24,7 +24,8 @@ Use os relatórios de uso do aplicativo de email para ver quantos aplicativos de
 
 | Função                                 | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Obter dados de usuário](../api/reportroot-getemailappusageuserdetail.md) | Stream      | Obtenha dados sobre quais atividades os usuários realizaram nos vários aplicativos de email. |
-| [Obter contagens de usuários do aplicativo](../api/reportroot-getemailappusageappsusercounts.md) | Stream      | Obtenha a contagem de usuários únicos por aplicativo de email. |
+| [Obter dados de usuário](../api/reportroot-getemailappusageuserdetail.md) | Fluxo      | Obtenha dados sobre quais atividades os usuários realizaram nos vários aplicativos de email. |
+| [Obter contagens de usuários do aplicativo](../api/reportroot-getemailappusageappsusercounts.md) | Fluxo      | Obtenha a contagem de usuários únicos por aplicativo de email. |
 | [Obter contagens de usuários](../api/reportroot-getemailappusageusercounts.md) | Fluxo      | Obtenha a contagem de usuários únicos conectados ao Exchange Online usando qualquer aplicativo de email. |
 | [Obter contagens de usuários das versões](../api/reportroot-getemailappusageversionsusercounts.md) | Fluxo      | Obtenha a contagem de usuários exclusivos por versão da área de trabalho do Outlook. |
+

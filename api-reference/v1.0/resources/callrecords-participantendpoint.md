@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ff590acb76d50da9d0772bdaece805a1db0cd26a
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: b425deeea49780ee752e8ace04078f3d1d6160a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491966"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069341"
 ---
 # <a name="participantendpoint-resource-type"></a>tipo de recurso participantEndpoint
 

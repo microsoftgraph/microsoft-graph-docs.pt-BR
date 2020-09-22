@@ -3,14 +3,14 @@ title: Excluir androidPkcsCertificateProfile
 description: Exclui androidPkcsCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: edc49f3639667a9b917a9817a2f613aaea2320bc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 03c132c59a69e4cccdbba5005901d24c74a4c9f5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43435568"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068963"
 ---
 # <a name="delete-androidpkcscertificateprofile"></a>Excluir androidPkcsCertificateProfile
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

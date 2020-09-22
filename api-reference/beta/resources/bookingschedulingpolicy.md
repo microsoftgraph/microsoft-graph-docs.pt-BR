@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 59884eaf1fa3227214b00936298a4adee5a7491f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5839ad12b746f83e2e41648ded6ce35346e97f28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448371"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071758"
 ---
 # <a name="bookingschedulingpolicy-resource-type"></a>tipo de recurso bookingSchedulingPolicy
 
@@ -23,10 +23,10 @@ Representa o conjunto de políticas que determinam como os compromissos devem se
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowStaffSelection|Boolean|True se para permitir que os clientes escolham uma pessoa específica para a reserva.|
+|allowStaffSelection|Booliano|True se para permitir que os clientes escolham uma pessoa específica para a reserva.|
 |maximumAdvance|Duração|Número máximo de dias de antecedência que uma reserva pode ser feita. Ele segue o formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
 |minimumLeadTime|Duração|A quantidade mínima de tempo antes da qual as reservas e os cancelamentos devem ser feitos. Ele segue o formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|sendConfirmationsToOwner|Boolean| True para notificar a empresa por email quando uma reserva é criada ou alterada. Use o endereço de email especificado na propriedade **email** da entidade **bookingBusiness** para a empresa. |
+|sendConfirmationsToOwner|Booliano| True para notificar a empresa por email quando uma reserva é criada ou alterada. Use o endereço de email especificado na propriedade **email** da entidade **bookingBusiness** para a empresa. |
 |timeSlotInterval|Duração|Duração de cada intervalo de tempo, indicado no formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -64,3 +64,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

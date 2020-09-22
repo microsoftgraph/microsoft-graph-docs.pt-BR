@@ -5,12 +5,12 @@ localization_priority: Priority
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 141b19c27c5a88cd4366ebaa17200e259a4b105d
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: b0e4ed6bc7e169dbd4be9af269b2bdad96c99075
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108323"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069565"
 ---
 # <a name="user-getmembergroups"></a>usuário: getMemberGroups
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva, diferentemente da leitura da propriedade de navegação [member](../api/user-list-memberof.md), que retorna somente os grupos dos quais o usuário é membro direto.
 
-Esta função dá suporte ao Office 365 e a outros tipos de grupos provisionados no Azure AD. O número máximo de grupos de que cada solicitação pode retornar é 2046. Observe que os Grupos do Office 365 não podem conter grupos, portanto associações em um Grupo do Office 365 sempre são diretas.
+Esta função é compatível com o Microsoft 365 e outros tipos de grupos provisionados no Azure AD. O número máximo de grupos que cada solicitação pode retornar é 2046. Observe que os grupos do Microsoft 365 não podem conter grupos. Portanto, associações em um grupo do Microsoft 365 sempre são diretas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -135,3 +135,4 @@ Content-length: 39
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1e7a8e5c435360a71b8ebd4227bebc7dc645cf99
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: b349f27f004366075f44d11bb28231ee30e4761a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125271"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070167"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -286,3 +286,4 @@ Preference-Applied: outlook.body-content-type="text"
   "suppressions": [
   ]
 }-->
+

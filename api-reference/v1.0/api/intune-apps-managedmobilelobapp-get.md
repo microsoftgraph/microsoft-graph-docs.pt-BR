@@ -3,14 +3,14 @@ title: Acessar managedMobileLobApp
 description: Leia as propriedades e as relações do objeto managedMobileLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 06160249d9ca2f2fd4c85a506b4cef6024ae585d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a05a6f18687563a4a28c213376971ea0b8ad9703
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442473"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070076"
 ---
 # <a name="get-managedmobilelobapp"></a>Acessar managedMobileLobApp
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -97,6 +97,9 @@ Content-Length: 1007
   }
 }
 ```
+
+
+
 
 
 

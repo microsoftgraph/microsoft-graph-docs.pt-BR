@@ -3,14 +3,14 @@ title: Obter managedDeviceMobileAppConfiguration
 description: Ler propriedades e relações do objeto managedDeviceMobileAppConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 018ae5b28002eba08759bc777db57920f2c8f960
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b7ad738c0d04f95de46f7d5985e3c35c3830e09d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456041"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070083"
 ---
 # <a name="get-manageddevicemobileappconfiguration"></a>Obter managedDeviceMobileAppConfiguration
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -83,6 +83,9 @@ Content-Length: 451
   }
 }
 ```
+
+
+
 
 
 

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 17ebc8d0a7ffe9a59dd5225439e90af41aaa688a
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 944e827e0e7827190b3ff879a2f62d52d6fa15c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394674"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071515"
 ---
 # <a name="deviceinfo-resource-type"></a>tipo de recurso deviceInfo
 
-Namespace: Microsoft. Graph. callRecords
+Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +24,8 @@ Representa informações sobre um dispositivo (microfone, alto-falante, câmera,
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|captureDeviceDriver|String|Nome do driver do dispositivo de captura usado pelo ponto de extremidade de mídia.|
-|captureDeviceName|String|Nome do dispositivo de captura usado pelo ponto de extremidade de mídia.|
+|captureDeviceDriver|Cadeia de caracteres|Nome do driver do dispositivo de captura usado pelo ponto de extremidade de mídia.|
+|captureDeviceName|Cadeia de caracteres|Nome do dispositivo de captura usado pelo ponto de extremidade de mídia.|
 |captureNotFunctioningEventRatio|Duplo|Fração da chamada em que o ponto de extremidade de mídia detectou que o dispositivo de captura não estava funcionando corretamente.|
 |cpuInsufficentEventRatio|Duplo|Fração da chamada em que o ponto de extremidade de mídia detectou que os recursos de CPU disponíveis eram insuficientes e causaram baixa qualidade do áudio enviado e recebido.|
 |deviceClippingEventRatio|Duplo|Fração da chamada que o ponto de extremidade de mídia detectou o corte no áudio capturado que causou baixa qualidade do áudio que está sendo enviado.|
@@ -37,8 +37,8 @@ Representa informações sobre um dispositivo (microfone, alto-falante, câmera,
 |micGlitchRate|Duplo|Falhas por intervalo de 5 minutos para o microfone do ponto de extremidade de mídia.|
 |receivedNoiseLevel|Int32|Nível de energia médio do áudio recebido para áudio classificado como ruído mono ou canal esquerdo de ruído estéreo pelo ponto de extremidade da mídia.|
 |receivedSignalLevel|Int32|Nível de energia médio do áudio recebido para áudio classificado como fala mono ou canal esquerdo de fala estéreo pelo ponto de extremidade de mídia.|
-|renderDeviceDriver|String|Nome do driver de dispositivo de renderização usado pelo ponto de extremidade de mídia.|
-|renderDeviceName|String|Nome do dispositivo de renderização usado pelo ponto de extremidade de mídia.|
+|renderDeviceDriver|Cadeia de caracteres|Nome do driver de dispositivo de renderização usado pelo ponto de extremidade de mídia.|
+|renderDeviceName|Cadeia de caracteres|Nome do dispositivo de renderização usado pelo ponto de extremidade de mídia.|
 |renderMuteEventRatio|Duplo|Fração da chamada em que o ponto de extremidade de mídia detectou o processamento do dispositivo está com mudo ativado.|
 |renderNotFunctioningEventRatio|Duplo|Fração da chamada em que o ponto de extremidade de mídia detectou que o dispositivo de renderização não estava funcionando corretamente.|
 |renderZeroVolumeEventRatio|Duplo|Fração da chamada que o ponto de extremidade de mídia detectou que o volume de renderização do dispositivo está definido como 0.|
@@ -95,3 +95,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

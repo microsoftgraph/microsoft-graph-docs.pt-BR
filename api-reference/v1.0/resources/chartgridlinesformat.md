@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c7be34951862ab6a2ce28f738482d4609f4edc71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 84cce57c9105aa9c852579433dac9ffa73e289ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531838"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069187"
 ---
 # <a name="chartgridlinesformat-resource-type"></a>Tipo de recurso ChartGridlinesFormat
 
@@ -25,7 +25,7 @@ Nenhum
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |line|[WorkbookChartLineFormat](chartlineformat.md)|Representa a formatação de linha do gráfico. Somente leitura.|
@@ -58,3 +58,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

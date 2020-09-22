@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d316c6ba9a7a9d34b34110023019169c39859c79
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: 9ff55759e71cda0876a2ce5b0a65e47bcaf917a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962516"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069264"
 ---
 # <a name="callroute-resource-type"></a>tipo de recurso callRoute
 
@@ -24,7 +24,7 @@ Representa o tipo de rota de chamada.
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
 | recente               | [identitySet](identityset.md) | A identidade que foi resolvida para na chamada.               |
 | Original            | [identitySet](identityset.md) | A identidade que foi usada originalmente na chamada.           |
-| RoutingType         | String                        | Os valores possíveis são: `forwarded`, `lookup`, `selfFork`.  |
+| RoutingType         | Cadeia de caracteres                        | Os valores possíveis são: `forwarded`, `lookup`, `selfFork`.  |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -56,3 +56,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

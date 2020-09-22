@@ -6,16 +6,16 @@ title: CalculatedColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: c9bd8963ed847e60bb5b71abfd100cd372dd1dc5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc46a6987e6fbd2e1f1c77f026118b93b5974fe8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507849"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071624"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Tipo de recurso CalculatedColumn
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,3 +57,5 @@ Consulte [Exemplos de fórmulas comuns em listas do SharePoint][SPFormulas] para
   "suppressions": []
 }
 -->
+
+

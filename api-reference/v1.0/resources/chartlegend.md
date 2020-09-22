@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 349158b77a2f98f95c27ac725c400a52d8d33923
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b05e4c130eebe3ffc23af2389feb2846ef1474e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533119"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069173"
 ---
 # <a name="chartlegend-resource-type"></a>Tipo de recurso ChartLegend
 
@@ -33,7 +33,7 @@ Representa a legenda de um gráfico.
 |position|string|Representa a posição da legenda no gráfico. Os valores possíveis são: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
 |visible|booliano|Um valor booliano que representa a visibilidade de um objeto ChartLegend.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[WorkbookChartLegendFormat](chartlegendformat.md)|Representa a formatação de uma legenda de gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.|
@@ -70,3 +70,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

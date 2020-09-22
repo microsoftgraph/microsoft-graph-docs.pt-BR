@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 86d7b4eb107ac6e2732e32bf55a65a7125edb529
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 4d33ab99780f980dcc24e267ba1ac6603f602aa2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895494"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070644"
 ---
 # <a name="printusagesummarybyprinter-resource-type"></a>tipo de recurso printUsageSummaryByPrinter
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Descreve a atividade de impressão de uma impressora durante um período de tempo especificado (usageDate).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -31,8 +31,8 @@ Descreve a atividade de impressão de uma impressora durante um período de temp
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|A ID deste Resumo de uso.|
-|printerid|String|A ID da impressora representada por essas estatísticas.|
+|id|Cadeia de caracteres|A ID deste Resumo de uso.|
+|printerid|Cadeia de caracteres|A ID da impressora representada por essas estatísticas.|
 |usageDate|Data|A data associada a essas estatísticas.|
 |completedBlackAndWhiteJobCount|Int64|O número de trabalhos de impressão em preto e branco concluídos pela impressora na data associada.|
 |completedColorJobCount|Int64|O número de trabalhos de impressão de cores concluídos pela impressora na data associada.|
@@ -70,3 +70,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

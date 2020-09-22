@@ -1,23 +1,23 @@
 ---
-title: Listar appRoleAssignments concedidas a um usuário
-description: Recupere a lista de atribuições de função de aplicativo concedidas a um usuário.
+title: Listar appRoleAssignments concedido a um usuário
+description: Recuperar a lista de atribuições de funções do aplicativo concedidas a um usuário.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 4181ee02f1683646bedd9263d1af053c100fc25b
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: acd40fb15de7807300e056d0cf0d8311ed1ce365
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383900"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069509"
 ---
-# <a name="list-approleassignments-granted-to-a-user"></a>Listar appRoleAssignments concedidas a um usuário
+# <a name="list-approleassignments-granted-to-a-user"></a>Listar appRoleAssignments concedido a um usuário
 
 Namespace: microsoft.graph
 
 
-Recupere a lista de [appRoleAssignment](../resources/approleassignment.md) que um usuário recebeu. Essa operação também retorna funções de aplicativo atribuídas a grupos dos quais o usuário é membro direto.
+Recuperar a lista[appRoleAssignment](../resources/approleassignment.md) concedida a um usuário. Essa operação também retorna funções de aplicativo atribuídas a grupos dos quais o usuário é membro direto.
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory. Read. All, AppRoleAssignment. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory. Read. All, AppRoleAssignment. ReadWrite. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,13 +52,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
-Aqui está um exemplo da solicitação para recuperar as funções de aplicativo que foram atribuídas a um usuário.
+Veja a seguir um exemplo de uma solicitação para recuperar as funções de aplicativo que foram atribuídas a um usuário.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -134,3 +134,4 @@ Content-length: 306
   ]
 }
 -->
+

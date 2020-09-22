@@ -3,14 +3,14 @@ title: Criar managedMobileApp
 description: Criar um novo objeto managedMobileApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b8f10c47fb867e77fd5e8287d6c8f43da8f090de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8d33b518bad8ddec79f08a16aff288b362e6ea7e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43398575"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069747"
 ---
 # <a name="create-managedmobileapp"></a>Criar managedMobileApp
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador de um aplicativo com seu tipo de sistema operacional.|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 
@@ -97,6 +97,9 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

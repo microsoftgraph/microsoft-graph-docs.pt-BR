@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 018fb6c036225c743f679deca7d2ccd9132f76e7
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 0f0181a94743cadf770355d6be349e0d482a387f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353536"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071413"
 ---
 # <a name="mediastream-resource-type"></a>tipo de recurso mediaStream
 
@@ -47,7 +47,7 @@ Representa informações sobre um fluxo de mídia entre dois pontos de extremida
 |postForwardErrorCorrectionPacketLossRate|Duplo|Taxa de perda de pacotes após o FEC ter sido aplicado em todos os fluxos de vídeo e codecs.|
 |startDateTime|DateTimeOffset|Hora UTC quando o fluxo é iniciado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |streamDirection|Microsoft. Graph. callRecords. mediaStreamDirection|Indica a direção do fluxo de mídia. Os valores possíveis são: `callerToCallee` e `calleeToCaller`.|
-|streamid|String|Identificador exclusivo do Stream.|
+|streamid|Cadeia de caracteres|Identificador exclusivo do Stream.|
 |wasMediaBypassed|Booliano|True se o fluxo de mídia ignorar o servidor de mediação e passou diretamente entre o cliente e gateway PSTN/PBX; caso contrário, false.|
 
 
@@ -106,3 +106,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

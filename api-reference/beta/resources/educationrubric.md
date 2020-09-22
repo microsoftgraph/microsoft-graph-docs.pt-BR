@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 6c448652719f20ab2edd7c283ea18e99a37edbbd
-ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
+ms.openlocfilehash: 276a16852f546b88806c797dbe5c2501de80f5ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534431"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071266"
 ---
 # <a name="educationrubric-resource-type"></a>tipo de recurso educationRubric
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +38,7 @@ Consulte [Education amostra rubric Overview](https://developer.microsoft.com/gra
 |createdBy|[identitySet](identityset.md)|O usuário que criou este recurso.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |description|[itemBody](itembody.md)|A descrição desse amostra rubric.|
-|displayName|String|O nome deste amostra rubric.|
+|displayName|Cadeia de caracteres|O nome deste amostra rubric.|
 |notas|[educationAssignmentGradeType](educationassignmentgradetype.md)|O tipo de gradação desse amostra rubric-NULL para um amostra rubric sem pontos, ou [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) para um ponto amostra rubric.|
 |lastModifiedBy|[identitySet](identityset.md)|O último usuário a modificar o recurso.|
 |lastModifiedDateTime|DateTimeOffset|Momento no momento em que o recurso foi modificado pela última vez.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -86,3 +86,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: Criar roleScopeTag
 description: Criar um novo objeto roleScopeTag.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a705d41ce2e10a07dfb43e86dd662adbce3f837c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a11432a2da50c9234bcb15631a1d71837c522b96
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43360629"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072043"
 ---
 # <a name="create-rolescopetag"></a>Criar roleScopeTag
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar roleScop
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
 |displayName|Cadeia de caracteres|O nome de exibição ou amigável da marca de escopo da função.|
 |description|String|Descrição da marca de escopo da função.|
 |isBuiltIn|Booliano|Descrição da marca de escopo da função.|
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar roleScop
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [roleScopeTag](../resources/intune-rbac-rolescopetag.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [roleScopeTag](../resources/intune-rbac-rolescopetag.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -96,6 +96,9 @@ Content-Length: 204
   "isBuiltIn": true
 }
 ```
+
+
+
 
 
 

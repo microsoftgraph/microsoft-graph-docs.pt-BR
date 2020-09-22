@@ -3,14 +3,14 @@ title: Obter androidPkcsCertificateProfile
 description: Leia as propriedades e as relações do objeto androidPkcsCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 343ef0dcfb7e89a50230a5f2b8205af31c9b8605
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 32c027fb018c747e47eb3a975cb94b2d2aeebcb0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43435561"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068942"
 ---
 # <a name="get-androidpkcscertificateprofile"></a>Obter androidPkcsCertificateProfile
 
@@ -125,6 +125,9 @@ Content-Length: 2018
   }
 }
 ```
+
+
+
 
 
 

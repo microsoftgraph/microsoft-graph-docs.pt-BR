@@ -3,14 +3,14 @@ title: Listar windows10TeamGeneralConfigurations
 description: Listar propriedades e relações dos objetos windows10TeamGeneralConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d71e29b1ef9e0fb181334f97afe1523bb6cbd8e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e52cb1b9b554b5c73cac1ecd57ca0ba0222e517b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442009"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069936"
 ---
 # <a name="list-windows10teamgeneralconfigurations"></a>Listar windows10TeamGeneralConfigurations
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -99,6 +99,9 @@ Content-Length: 1463
   ]
 }
 ```
+
+
+
 
 
 

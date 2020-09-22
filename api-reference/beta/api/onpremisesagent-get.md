@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d4224e981c7652036459e56549bcfe9a96098423
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: ef79532cc2b0f1eebb2eccf936b44a04bf366757
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199802"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072050"
 ---
 # <a name="get-onpremisesagent"></a>Obter onPremisesAgent
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [onPremisesAgent](../resources/onpremisesagent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [onPremisesAgent](../resources/onpremisesagent.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

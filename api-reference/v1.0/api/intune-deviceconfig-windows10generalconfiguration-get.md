@@ -3,14 +3,14 @@ title: Get windows10GeneralConfiguration
 description: Ler propriedades e relações do objeto windows10GeneralConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: acdff434154da74ed5b8578305c0898305a073d7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ff3e0d99802a154ae5ac969cc8d290819cff9b65
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422145"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070006"
 ---
 # <a name="get-windows10generalconfiguration"></a>Get windows10GeneralConfiguration
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -306,6 +306,9 @@ Content-Length: 10479
   }
 }
 ```
+
+
+
 
 
 

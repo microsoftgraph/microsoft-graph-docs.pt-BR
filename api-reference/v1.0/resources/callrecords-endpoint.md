@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0dc1c8709eca693e883d03dfe96c869a021e799c
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: ae7d976c9dbf94aadd11af1d48f8615f5fab14a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491918"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069440"
 ---
 # <a name="endpoint-resource-type"></a>tipo de recurso de ponto de extremidade
 

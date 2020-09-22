@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 53c5bc6be0953c68dc431be04b17f582715582c0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 37a1e6adb6a4769601d5f9806d1e3b262fe2879f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448364"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071742"
 ---
 # <a name="bookingservice-resource-type"></a>tipo de recurso bookingService
 
@@ -28,7 +28,7 @@ Representa informações sobre um serviço específico fornecido por um [booking
 |[Criar bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Crie um **bookingService** para o [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 |[Obter bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Obtenha as propriedades e os relacionamentos de um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado.|
 |[Update](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Atualize um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
-|[Delete](../api/bookingservice-delete.md) | None |Exclua um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
+|[Delete](../api/bookingservice-delete.md) | Nenhum |Exclua um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -41,13 +41,13 @@ Representa informações sobre um serviço específico fornecido por um [booking
 |description|String|Uma descrição de texto para o serviço.|
 |displayName|Cadeia de caracteres|Um nome de serviço.|
 |emailAddress|String|Um endereço de email|
-|id|String|A ID do serviço, em um formato GUID. Somente leitura.|
-|isHiddenFromCustomers|Boolean|True significa que este serviço não está disponível para os clientes para reserva.|
-|notes|Cadeia de caracteres|Informações adicionais sobre este serviço.|
+|id|Cadeia de caracteres|A ID do serviço, em um formato GUID. Somente leitura.|
+|isHiddenFromCustomers|Booliano|True significa que este serviço não está disponível para os clientes para reserva.|
+|notes|String|Informações adicionais sobre este serviço.|
 |Buffer|Duração|O tempo para o buffer após o término de um compromisso desse serviço e antes do próximo compromisso do cliente pode ser registrado.|
 |antes do buffer|Duração|O tempo para o buffer antes que um compromisso para este serviço possa ser iniciado.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|O conjunto de políticas que determinam como os compromissos desse tipo de serviço devem ser criados e gerenciados.|
-|staffMemberIds|Coleção String|Representa os [membros da equipe](bookingstaffmember.md) que fornecem esse serviço. |
+|staffMemberIds|Coleção de cadeias de caracteres|Representa os [membros da equipe](bookingstaffmember.md) que fornecem esse serviço. |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -98,3 +98,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+
