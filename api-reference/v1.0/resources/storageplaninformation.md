@@ -5,26 +5,26 @@ title: Adicionadostorageplaninformation
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: files
-ms.openlocfilehash: a5e6c10bdbc8a68230a223501844d0ee121014c2
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: b8b4778a4726c227bfe79ad13ecb14507b13a889
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863772"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036951"
 ---
-# <a name="storageplaninformation-resource-type"></a><span data-ttu-id="c26a9-103">tipo de recurso Adicionadostorageplaninformation</span><span class="sxs-lookup"><span data-stu-id="c26a9-103">storagePlanInformation resource type</span></span>
+# <a name="storageplaninformation-resource-type"></a><span data-ttu-id="ad13c-103">tipo de recurso Adicionadostorageplaninformation</span><span class="sxs-lookup"><span data-stu-id="ad13c-103">storagePlanInformation resource type</span></span>
 
-<span data-ttu-id="c26a9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c26a9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ad13c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ad13c-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c26a9-105">Fornece informações sobre os planos de cota de armazenamento da unidade.</span><span class="sxs-lookup"><span data-stu-id="c26a9-105">Provides information about the drive's storage quota plans.</span></span>
+<span data-ttu-id="ad13c-105">Fornece informações sobre os planos de cota de armazenamento da unidade.</span><span class="sxs-lookup"><span data-stu-id="ad13c-105">Provides information about the drive's storage quota plans.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c26a9-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c26a9-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="ad13c-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ad13c-106">Properties</span></span>
 
-| <span data-ttu-id="c26a9-107">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="c26a9-107">Property name</span></span>     | <span data-ttu-id="c26a9-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="c26a9-108">Type</span></span>      | <span data-ttu-id="c26a9-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="c26a9-109">Description</span></span>                                                             |
+| <span data-ttu-id="ad13c-107">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="ad13c-107">Property name</span></span>     | <span data-ttu-id="ad13c-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="ad13c-108">Type</span></span>      | <span data-ttu-id="ad13c-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="ad13c-109">Description</span></span>                                                             |
 |:------------------|:----------|:----------------------------------------------------------------------- |
-| <span data-ttu-id="c26a9-110">**upgradeAvailable**</span><span class="sxs-lookup"><span data-stu-id="c26a9-110">**upgradeAvailable**</span></span>  | <span data-ttu-id="c26a9-111">Booliano</span><span class="sxs-lookup"><span data-stu-id="c26a9-111">Boolean</span></span>   | <span data-ttu-id="c26a9-112">Indica se há planos de cota de armazenamento mais altos disponíveis.</span><span class="sxs-lookup"><span data-stu-id="c26a9-112">Indicates whether there are higher storage quota plans available.</span></span> <span data-ttu-id="c26a9-113">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c26a9-113">Read-only.</span></span> |
+| <span data-ttu-id="ad13c-110">**upgradeAvailable**</span><span class="sxs-lookup"><span data-stu-id="ad13c-110">**upgradeAvailable**</span></span>  | <span data-ttu-id="ad13c-111">Boolean</span><span class="sxs-lookup"><span data-stu-id="ad13c-111">Boolean</span></span>   | <span data-ttu-id="ad13c-112">Indica se há planos de cota de armazenamento mais altos disponíveis.</span><span class="sxs-lookup"><span data-stu-id="ad13c-112">Indicates whether there are higher storage quota plans available.</span></span> <span data-ttu-id="ad13c-113">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="ad13c-113">Read-only.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="c26a9-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c26a9-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ad13c-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ad13c-114">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,4 +49,5 @@ ms.locfileid: "44863772"
   "suppressions": []
 }
 -->
+
 
