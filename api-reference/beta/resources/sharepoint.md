@@ -5,29 +5,29 @@ localization_priority: Priority
 ms.prod: sharepoint
 doc_type: conceptualPageType
 author: JeremyKelley
-ms.openlocfilehash: ae0ef6e765800107e4b9afea2d9fb366cbaaaf30
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d986ca63d3508ec9450b0477b1e5abbbc44915e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807132"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973663"
 ---
-# <a name="working-with-sharepoint-sites-in-microsoft-graph"></a><span data-ttu-id="0a5a7-103">Trabalhar com sites do SharePoint no Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="0a5a7-103">Working with SharePoint sites in Microsoft Graph</span></span>
+# <a name="working-with-sharepoint-sites-in-microsoft-graph"></a><span data-ttu-id="0ba26-103">Trabalhar com sites do SharePoint no Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="0ba26-103">Working with SharePoint sites in Microsoft Graph</span></span>
 
-<span data-ttu-id="0a5a7-104">A API do SharePoint no Microsoft Graph suporta os seguintes cenários principais:</span><span class="sxs-lookup"><span data-stu-id="0a5a7-104">The SharePoint API in Microsoft Graph supports the following core scenarios:</span></span>
+<span data-ttu-id="0ba26-104">A API do SharePoint no Microsoft Graph suporta os seguintes cenários principais:</span><span class="sxs-lookup"><span data-stu-id="0ba26-104">The SharePoint API in Microsoft Graph supports the following core scenarios:</span></span>
 
-* <span data-ttu-id="0a5a7-105">Acesso aos **sites**, **lists** e **drives** do SharePoint (bibliotecas de documentos)</span><span class="sxs-lookup"><span data-stu-id="0a5a7-105">Access to SharePoint **sites**, **lists**, and **drives** (document libraries)</span></span>
-* <span data-ttu-id="0a5a7-106">Suporte somente leitura para recursos de **site** (nenhuma capacidade de criar novos sites)</span><span class="sxs-lookup"><span data-stu-id="0a5a7-106">Read-only support for **site** resources (no ability to create new sites)</span></span>
-* <span data-ttu-id="0a5a7-107">Suporte a leitura e gravação para **lists**, **listItems** e **driveItems**</span><span class="sxs-lookup"><span data-stu-id="0a5a7-107">Read-write support for **lists**, **listItems**, and **driveItems**</span></span>
-* <span data-ttu-id="0a5a7-108">Lidar com recursos por ID do SharePoint, URL ou caminho relativo</span><span class="sxs-lookup"><span data-stu-id="0a5a7-108">Address resources by SharePoint ID, URL, or relative path</span></span>
+* <span data-ttu-id="0ba26-105">Acesso aos **sites**, **lists** e **drives** do SharePoint (bibliotecas de documentos)</span><span class="sxs-lookup"><span data-stu-id="0ba26-105">Access to SharePoint **sites**, **lists**, and **drives** (document libraries)</span></span>
+* <span data-ttu-id="0ba26-106">Suporte somente leitura para recursos de **site** (nenhuma capacidade de criar novos sites)</span><span class="sxs-lookup"><span data-stu-id="0ba26-106">Read-only support for **site** resources (no ability to create new sites)</span></span>
+* <span data-ttu-id="0ba26-107">Suporte a leitura e gravação para **lists**, **listItems** e **driveItems**</span><span class="sxs-lookup"><span data-stu-id="0ba26-107">Read-write support for **lists**, **listItems**, and **driveItems**</span></span>
+* <span data-ttu-id="0ba26-108">Lidar com recursos por ID do SharePoint, URL ou caminho relativo</span><span class="sxs-lookup"><span data-stu-id="0ba26-108">Address resources by SharePoint ID, URL, or relative path</span></span>
 
-<span data-ttu-id="0a5a7-109">A API do SharePoint expõe três tipos de recursos principais:</span><span class="sxs-lookup"><span data-stu-id="0a5a7-109">The SharePoint API exposes three major resource types:</span></span>
+<span data-ttu-id="0ba26-109">A API do SharePoint expõe três tipos de recursos principais:</span><span class="sxs-lookup"><span data-stu-id="0ba26-109">The SharePoint API exposes three major resource types:</span></span>
 
-* <span data-ttu-id="0a5a7-110">[Site](site.md) _(objeto de nível superior)_</span><span class="sxs-lookup"><span data-stu-id="0a5a7-110">[Site](site.md) _(top-level object)_</span></span>
-* [<span data-ttu-id="0a5a7-111">Lista</span><span class="sxs-lookup"><span data-stu-id="0a5a7-111">List</span></span>](list.md)
-* [<span data-ttu-id="0a5a7-112">ListItem</span><span class="sxs-lookup"><span data-stu-id="0a5a7-112">ListItem</span></span>](listitem.md)
+* <span data-ttu-id="0ba26-110">[Site](site.md) _(objeto de nível superior)_</span><span class="sxs-lookup"><span data-stu-id="0ba26-110">[Site](site.md) _(top-level object)_</span></span>
+* [<span data-ttu-id="0ba26-111">Lista</span><span class="sxs-lookup"><span data-stu-id="0ba26-111">List</span></span>](list.md)
+* [<span data-ttu-id="0ba26-112">ListItem</span><span class="sxs-lookup"><span data-stu-id="0ba26-112">ListItem</span></span>](listitem.md)
 
-<span data-ttu-id="0a5a7-113">A seguir está um exemplo de um recurso listItem.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-113">The following is an example of a listItem resource.</span></span>
+<span data-ttu-id="0ba26-113">A seguir está um exemplo de um recurso listItem.</span><span class="sxs-lookup"><span data-stu-id="0ba26-113">The following is an example of a listItem resource.</span></span>
 
 ```json
 {
@@ -61,63 +61,63 @@ ms.locfileid: "46807132"
 }
 ```
 
-<span data-ttu-id="0a5a7-114">Recursos expõem dados de três maneiras diferentes:</span><span class="sxs-lookup"><span data-stu-id="0a5a7-114">Resources expose data in three different ways:</span></span>
+<span data-ttu-id="0ba26-114">Recursos expõem dados de três maneiras diferentes:</span><span class="sxs-lookup"><span data-stu-id="0ba26-114">Resources expose data in three different ways:</span></span>
 
-* <span data-ttu-id="0a5a7-115">_Propriedades_ (como **id** e **name**) expõem valores simples.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-115">_Properties_ (like **id** and **name**) expose simple values.</span></span>
-* <span data-ttu-id="0a5a7-116">_Facetas_ (como **campos** e **createdBy**) expõem valores complexos.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-116">_Facets_ (like **fields** and **createdBy**) expose complex values.</span></span>
-* <span data-ttu-id="0a5a7-117">_Referências_ (como **itens**) apontam para conjuntos de outros recursos.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-117">_References_ (like **items**) point to collections of other resources.</span></span>
+* <span data-ttu-id="0ba26-115">_Propriedades_ (como **id** e **name**) expõem valores simples.</span><span class="sxs-lookup"><span data-stu-id="0ba26-115">_Properties_ (like **id** and **name**) expose simple values.</span></span>
+* <span data-ttu-id="0ba26-116">_Facetas_ (como **campos** e **createdBy**) expõem valores complexos.</span><span class="sxs-lookup"><span data-stu-id="0ba26-116">_Facets_ (like **fields** and **createdBy**) expose complex values.</span></span>
+* <span data-ttu-id="0ba26-117">_Referências_ (como **itens**) apontam para conjuntos de outros recursos.</span><span class="sxs-lookup"><span data-stu-id="0ba26-117">_References_ (like **items**) point to collections of other resources.</span></span>
 
-<span data-ttu-id="0a5a7-118">Você pode expandir referências na URL com o parâmetro de consulta _expand_; por exemplo, `?expand=fields`.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-118">You can expand references in your URL with the _expand_ query parameter; for example, `?expand=fields`.</span></span>
-<span data-ttu-id="0a5a7-119">Você pode solicitar propriedades e facetas específicas com o parâmetro de consulta _select_; por exemplo, `?select=id,name`.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-119">You can request specific properties and facets with the _select_ query parameter; for example, `?select=id,name`.</span></span>
-<span data-ttu-id="0a5a7-120">Por padrão, a maioria das propriedades e facetas retorna enquanto todas as referências ficam ocultas.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-120">By default, most properties and facets are returned while all references are hidden.</span></span>
-<span data-ttu-id="0a5a7-121">Por questões de eficiência, recomendamos que você especifique _selecionar_ e _expandir_ para só retornar os dados mais importantes para você.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-121">For efficiency, we recommend that you specify _select_ and _expand_ to only return the data you care about.</span></span>
+<span data-ttu-id="0ba26-118">Você pode expandir referências na URL com o parâmetro de consulta _expand_; por exemplo, `?expand=fields`.</span><span class="sxs-lookup"><span data-stu-id="0ba26-118">You can expand references in your URL with the _expand_ query parameter; for example, `?expand=fields`.</span></span>
+<span data-ttu-id="0ba26-119">Você pode solicitar propriedades e facetas específicas com o parâmetro de consulta _select_; por exemplo, `?select=id,name`.</span><span class="sxs-lookup"><span data-stu-id="0ba26-119">You can request specific properties and facets with the _select_ query parameter; for example, `?select=id,name`.</span></span>
+<span data-ttu-id="0ba26-120">Por padrão, a maioria das propriedades e facetas retorna enquanto todas as referências ficam ocultas.</span><span class="sxs-lookup"><span data-stu-id="0ba26-120">By default, most properties and facets are returned while all references are hidden.</span></span>
+<span data-ttu-id="0ba26-121">Por questões de eficiência, recomendamos que você especifique _selecionar_ e _expandir_ para só retornar os dados mais importantes para você.</span><span class="sxs-lookup"><span data-stu-id="0ba26-121">For efficiency, we recommend that you specify _select_ and _expand_ to only return the data you care about.</span></span>
 
-## <a name="sharepoint-api-root-resources"></a><span data-ttu-id="0a5a7-122">Recursos de raiz da API do SharePoint</span><span class="sxs-lookup"><span data-stu-id="0a5a7-122">SharePoint API root resources</span></span>
+## <a name="sharepoint-api-root-resources"></a><span data-ttu-id="0ba26-122">Recursos de raiz da API do SharePoint</span><span class="sxs-lookup"><span data-stu-id="0ba26-122">SharePoint API root resources</span></span>
 
-<span data-ttu-id="0a5a7-123">Os exemplos a seguir são relativos a `https://graph.microsoft.com/beta`.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-123">The following examples are relative to `https://graph.microsoft.com/beta`.</span></span>
+<span data-ttu-id="0ba26-123">Os exemplos a seguir são relativos a `https://graph.microsoft.com/beta`.</span><span class="sxs-lookup"><span data-stu-id="0ba26-123">The following examples are relative to `https://graph.microsoft.com/beta`.</span></span>
 
-| <span data-ttu-id="0a5a7-124">Caminho</span><span class="sxs-lookup"><span data-stu-id="0a5a7-124">Path</span></span>                                   | <span data-ttu-id="0a5a7-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="0a5a7-125">Description</span></span>
+| <span data-ttu-id="0ba26-124">Caminho</span><span class="sxs-lookup"><span data-stu-id="0ba26-124">Path</span></span>                                   | <span data-ttu-id="0ba26-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="0ba26-125">Description</span></span>
 |:---------------------------------------|:------------------------------------
-| <span data-ttu-id="0a5a7-126">/sites/root</span><span class="sxs-lookup"><span data-stu-id="0a5a7-126">/sites/root</span></span>                            | <span data-ttu-id="0a5a7-127">[Site][] padrão da organização.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-127">Organization's default [site][].</span></span>
-| <span data-ttu-id="0a5a7-128">/sites/{site-id}</span><span class="sxs-lookup"><span data-stu-id="0a5a7-128">/sites/{site-id}</span></span>                       | <span data-ttu-id="0a5a7-129">Acessar um [site][] específico por sua identificação.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-129">Access a specific [site][] by its ID.</span></span>
-| <span data-ttu-id="0a5a7-130">/sites/{site-id}/drive</span><span class="sxs-lookup"><span data-stu-id="0a5a7-130">/sites/{site-id}/drive</span></span>                 | <span data-ttu-id="0a5a7-131">Acessar a [unidade](drive.md) padrão (biblioteca de documentos) desse [site][].</span><span class="sxs-lookup"><span data-stu-id="0a5a7-131">Access the default [drive](drive.md) (document library) for the given [site][].</span></span>
-| <span data-ttu-id="0a5a7-132">/sites/{site-id}/drives</span><span class="sxs-lookup"><span data-stu-id="0a5a7-132">/sites/{site-id}/drives</span></span>                | <span data-ttu-id="0a5a7-133">Enumerar as [unidades](drive.md) (bibliotecas de documentos) no [site][].</span><span class="sxs-lookup"><span data-stu-id="0a5a7-133">Enumerate the [drives](drive.md) (document libraries) under the [site][].</span></span>
-| <span data-ttu-id="0a5a7-134">/sites/{site-id}/sites</span><span class="sxs-lookup"><span data-stu-id="0a5a7-134">/sites/{site-id}/sites</span></span>                 | <span data-ttu-id="0a5a7-135">Enumerar os subsites no [site][].</span><span class="sxs-lookup"><span data-stu-id="0a5a7-135">Enumerate the sub-sites under the [site][].</span></span>
-| <span data-ttu-id="0a5a7-136">/sites/{site-id}/lists</span><span class="sxs-lookup"><span data-stu-id="0a5a7-136">/sites/{site-id}/lists</span></span>                 | <span data-ttu-id="0a5a7-137">Enumerar as [listas](list.md) sob o [site](site.md).</span><span class="sxs-lookup"><span data-stu-id="0a5a7-137">Enumerate the [lists](list.md) under the [site](site.md).</span></span>
-| <span data-ttu-id="0a5a7-138">/sites/{site-id}/lists/{list-id}/items</span><span class="sxs-lookup"><span data-stu-id="0a5a7-138">/sites/{site-id}/lists/{list-id}/items</span></span> | <span data-ttu-id="0a5a7-139">Enumerar [listItems](listitem.md) sob a [lista](list.md).</span><span class="sxs-lookup"><span data-stu-id="0a5a7-139">Enumerate the [listItems](listitem.md) under the [list](list.md).</span></span>
-| <span data-ttu-id="0a5a7-140">/groups/{group-id}/sites/root</span><span class="sxs-lookup"><span data-stu-id="0a5a7-140">/groups/{group-id}/sites/root</span></span>          | <span data-ttu-id="0a5a7-141">Acesse um [site][] de equipe do grupo.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-141">Access a group's team [site][].</span></span>
+| <span data-ttu-id="0ba26-126">/sites/root</span><span class="sxs-lookup"><span data-stu-id="0ba26-126">/sites/root</span></span>                            | <span data-ttu-id="0ba26-127">[Site][] padrão da organização.</span><span class="sxs-lookup"><span data-stu-id="0ba26-127">Organization's default [site][].</span></span>
+| <span data-ttu-id="0ba26-128">/sites/{site-id}</span><span class="sxs-lookup"><span data-stu-id="0ba26-128">/sites/{site-id}</span></span>                       | <span data-ttu-id="0ba26-129">Acessar um [site][] específico por sua identificação.</span><span class="sxs-lookup"><span data-stu-id="0ba26-129">Access a specific [site][] by its ID.</span></span>
+| <span data-ttu-id="0ba26-130">/sites/{site-id}/drive</span><span class="sxs-lookup"><span data-stu-id="0ba26-130">/sites/{site-id}/drive</span></span>                 | <span data-ttu-id="0ba26-131">Acessar a [unidade](drive.md) padrão (biblioteca de documentos) desse [site][].</span><span class="sxs-lookup"><span data-stu-id="0ba26-131">Access the default [drive](drive.md) (document library) for the given [site][].</span></span>
+| <span data-ttu-id="0ba26-132">/sites/{site-id}/drives</span><span class="sxs-lookup"><span data-stu-id="0ba26-132">/sites/{site-id}/drives</span></span>                | <span data-ttu-id="0ba26-133">Enumerar as [unidades](drive.md) (bibliotecas de documentos) no [site][].</span><span class="sxs-lookup"><span data-stu-id="0ba26-133">Enumerate the [drives](drive.md) (document libraries) under the [site][].</span></span>
+| <span data-ttu-id="0ba26-134">/sites/{site-id}/sites</span><span class="sxs-lookup"><span data-stu-id="0ba26-134">/sites/{site-id}/sites</span></span>                 | <span data-ttu-id="0ba26-135">Enumerar os subsites no [site][].</span><span class="sxs-lookup"><span data-stu-id="0ba26-135">Enumerate the sub-sites under the [site][].</span></span>
+| <span data-ttu-id="0ba26-136">/sites/{site-id}/lists</span><span class="sxs-lookup"><span data-stu-id="0ba26-136">/sites/{site-id}/lists</span></span>                 | <span data-ttu-id="0ba26-137">Enumerar as [listas](list.md) sob o [site](site.md).</span><span class="sxs-lookup"><span data-stu-id="0ba26-137">Enumerate the [lists](list.md) under the [site](site.md).</span></span>
+| <span data-ttu-id="0ba26-138">/sites/{site-id}/lists/{list-id}/items</span><span class="sxs-lookup"><span data-stu-id="0ba26-138">/sites/{site-id}/lists/{list-id}/items</span></span> | <span data-ttu-id="0ba26-139">Enumerar [listItems](listitem.md) sob a [lista](list.md).</span><span class="sxs-lookup"><span data-stu-id="0ba26-139">Enumerate the [listItems](listitem.md) under the [list](list.md).</span></span>
+| <span data-ttu-id="0ba26-140">/groups/{group-id}/sites/root</span><span class="sxs-lookup"><span data-stu-id="0ba26-140">/groups/{group-id}/sites/root</span></span>          | <span data-ttu-id="0ba26-141">Acesse um [site][] de equipe do grupo.</span><span class="sxs-lookup"><span data-stu-id="0ba26-141">Access a group's team [site][].</span></span>
 
-<span data-ttu-id="0a5a7-p102">Sites também podem ser tratados pelo caminho usando o nome de host do SharePoint, seguido por dois pontos e o caminho relativo para o site. Opcionalmente, você pode fazer a transição para lidar com o modelo de recurso colocando outros dois pontos no final.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-p102">Sites can also be addressed by path by using the SharePoint hostname, followed by a colon and the relative path to the site. You can optionally transition back to addressing the resource model by putting another colon at the end.</span></span>
+<span data-ttu-id="0ba26-p102">Sites também podem ser tratados pelo caminho usando o nome de host do SharePoint, seguido por dois pontos e o caminho relativo para o site. Opcionalmente, você pode fazer a transição para lidar com o modelo de recurso colocando outros dois pontos no final.</span><span class="sxs-lookup"><span data-stu-id="0ba26-p102">Sites can also be addressed by path by using the SharePoint hostname, followed by a colon and the relative path to the site. You can optionally transition back to addressing the resource model by putting another colon at the end.</span></span>
 
-| <span data-ttu-id="0a5a7-144">Caminho</span><span class="sxs-lookup"><span data-stu-id="0a5a7-144">Path</span></span>                                           | <span data-ttu-id="0a5a7-145">Descrição</span><span class="sxs-lookup"><span data-stu-id="0a5a7-145">Description</span></span>
+| <span data-ttu-id="0ba26-144">Caminho</span><span class="sxs-lookup"><span data-stu-id="0ba26-144">Path</span></span>                                           | <span data-ttu-id="0ba26-145">Descrição</span><span class="sxs-lookup"><span data-stu-id="0ba26-145">Description</span></span>
 |:-----------------------------------------------|:-----------------------------------
-| <span data-ttu-id="0a5a7-146">/sites/contoso.sharepoint.com:/teams/hr</span><span class="sxs-lookup"><span data-stu-id="0a5a7-146">/sites/contoso.sharepoint.com:/teams/hr</span></span>        | <span data-ttu-id="0a5a7-147">O site associado comhttps://contoso.sharepoint.com/teams/hr</span><span class="sxs-lookup"><span data-stu-id="0a5a7-147">The site associated with https://contoso.sharepoint.com/teams/hr</span></span>
-| <span data-ttu-id="0a5a7-148">/sites/contoso.sharepoint.com:/teams/hr:/drive</span><span class="sxs-lookup"><span data-stu-id="0a5a7-148">/sites/contoso.sharepoint.com:/teams/hr:/drive</span></span> | <span data-ttu-id="0a5a7-149">Acessar a [unidade](drive.md) padrão desse.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-149">Access the default [drive](drive.md) for this site.</span></span>
+| <span data-ttu-id="0ba26-146">/sites/contoso.sharepoint.com:/teams/hr</span><span class="sxs-lookup"><span data-stu-id="0ba26-146">/sites/contoso.sharepoint.com:/teams/hr</span></span>        | <span data-ttu-id="0ba26-147">O site associado comhttps://contoso.sharepoint.com/teams/hr</span><span class="sxs-lookup"><span data-stu-id="0ba26-147">The site associated with https://contoso.sharepoint.com/teams/hr</span></span>
+| <span data-ttu-id="0ba26-148">/sites/contoso.sharepoint.com:/teams/hr:/drive</span><span class="sxs-lookup"><span data-stu-id="0ba26-148">/sites/contoso.sharepoint.com:/teams/hr:/drive</span></span> | <span data-ttu-id="0ba26-149">Acessar a [unidade](drive.md) padrão desse.</span><span class="sxs-lookup"><span data-stu-id="0ba26-149">Access the default [drive](drive.md) for this site.</span></span>
 
-## <a name="note-for-existing-sharepoint-developers"></a><span data-ttu-id="0a5a7-150">Observação para desenvolvedores do SharePoint existentes</span><span class="sxs-lookup"><span data-stu-id="0a5a7-150">Note for existing SharePoint developers</span></span>
+## <a name="note-for-existing-sharepoint-developers"></a><span data-ttu-id="0ba26-150">Observação para desenvolvedores do SharePoint existentes</span><span class="sxs-lookup"><span data-stu-id="0ba26-150">Note for existing SharePoint developers</span></span>
 
-<span data-ttu-id="0a5a7-151">A API do Microsoft Graph do SharePoint tem algumas diferenças essenciais das APIs CSOM.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-151">The Microsoft Graph SharePoint API has a few key differences with the CSOM APIs.</span></span>
-<span data-ttu-id="0a5a7-152">Os recurso do [site][] mapeia para `SPWeb`.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-152">The [site][] resource maps to `SPWeb`.</span></span>
-<span data-ttu-id="0a5a7-153">O [site][] (`SPWeb`) raiz em um conjunto de sites tem uma faceta [siteCollection](sitecollection.md), que contém informações sobre `SPSite`.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-153">The root [site][] (`SPWeb`) in a site collection has a [siteCollection](sitecollection.md) facet, which contains information about the `SPSite`.</span></span>
-<span data-ttu-id="0a5a7-154">Como as IDs de sites são exclusivas penas em sua coleção de site, abordar um site por ID requer o fornecimento do identificador de coleção de site e identificador de site.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-154">Because IDs for sites are only unique within their site collection, addressing a site by ID requires providing both the site collection identifier and the site identifier.</span></span>
+<span data-ttu-id="0ba26-151">A API do Microsoft Graph do SharePoint tem algumas diferenças essenciais das APIs CSOM.</span><span class="sxs-lookup"><span data-stu-id="0ba26-151">The Microsoft Graph SharePoint API has a few key differences with the CSOM APIs.</span></span>
+<span data-ttu-id="0ba26-152">Os recurso do [site][] mapeia para `SPWeb`.</span><span class="sxs-lookup"><span data-stu-id="0ba26-152">The [site][] resource maps to `SPWeb`.</span></span>
+<span data-ttu-id="0ba26-153">O [site][] (`SPWeb`) raiz em um conjunto de sites tem uma faceta [siteCollection](sitecollection.md), que contém informações sobre `SPSite`.</span><span class="sxs-lookup"><span data-stu-id="0ba26-153">The root [site][] (`SPWeb`) in a site collection has a [siteCollection](sitecollection.md) facet, which contains information about the `SPSite`.</span></span>
+<span data-ttu-id="0ba26-154">Como as IDs de sites são exclusivas penas em sua coleção de site, abordar um site por ID requer o fornecimento do identificador de coleção de site e identificador de site.</span><span class="sxs-lookup"><span data-stu-id="0ba26-154">Because IDs for sites are only unique within their site collection, addressing a site by ID requires providing both the site collection identifier and the site identifier.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{hostname},{spsite-id},{spweb-id}/
 ```
-<span data-ttu-id="0a5a7-155">Uma URL construída com apenas o nome do host apontará para o site raiz (`SPWeb`) na coleção de sites padrão.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-155">A URL constructed with only the hostname will point to the root site (`SPWeb`) in the default site collection.</span></span>
+<span data-ttu-id="0ba26-155">Uma URL construída com apenas o nome do host apontará para o site raiz (`SPWeb`) na coleção de sites padrão.</span><span class="sxs-lookup"><span data-stu-id="0ba26-155">A URL constructed with only the hostname will point to the root site (`SPWeb`) in the default site collection.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{hostname}
 ```
 
-<span data-ttu-id="0a5a7-156">Uma URL construída apenas com o nome do host e ID de siteCollection (`SPSite`) apontará o site raiz (`SPWeb`) na coleção de sites determinada.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-156">A URL constructed with only the hostname and siteCollection (`SPSite`) ID will point to the root site (`SPWeb`) in the given site collection.</span></span>
+<span data-ttu-id="0ba26-156">Uma URL construída apenas com o nome do host e ID de siteCollection (`SPSite`) apontará o site raiz (`SPWeb`) na coleção de sites determinada.</span><span class="sxs-lookup"><span data-stu-id="0ba26-156">A URL constructed with only the hostname and siteCollection (`SPSite`) ID will point to the root site (`SPWeb`) in the given site collection.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{hostname},{spsite-id}
 ```
 
-## <a name="whats-new"></a><span data-ttu-id="0a5a7-157">Novidades</span><span class="sxs-lookup"><span data-stu-id="0a5a7-157">What's new</span></span>
-<span data-ttu-id="0a5a7-158">Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.</span><span class="sxs-lookup"><span data-stu-id="0a5a7-158">Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.</span></span>
+## <a name="whats-new"></a><span data-ttu-id="0ba26-157">Novidades</span><span class="sxs-lookup"><span data-stu-id="0ba26-157">What's new</span></span>
+<span data-ttu-id="0ba26-158">Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.</span><span class="sxs-lookup"><span data-stu-id="0ba26-158">Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.</span></span>
 
 [site]: site.md
 [list]: list.md
@@ -132,3 +132,5 @@ GET https://graph.microsoft.com/beta/sites/{hostname},{spsite-id}
   "tocPath": "Getting Started",
   "tocIndex": -100
 } -->
+
+

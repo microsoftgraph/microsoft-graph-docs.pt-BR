@@ -5,30 +5,30 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: 7b6e91853f595e4213b87178e87cf49fb1b64579
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7b52b55501f0bdda304367e4f458f4c61d58c7de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973515"
 ---
-# <a name="timezoneinformation-resource-type"></a><span data-ttu-id="68e49-104">Tipo de recurso timeZoneInformation</span><span class="sxs-lookup"><span data-stu-id="68e49-104">timeZoneInformation resource type</span></span>
+# <a name="timezoneinformation-resource-type"></a><span data-ttu-id="bccfe-104">Tipo de recurso timeZoneInformation</span><span class="sxs-lookup"><span data-stu-id="bccfe-104">timeZoneInformation resource type</span></span>
 
-<span data-ttu-id="68e49-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="68e49-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bccfe-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bccfe-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="68e49-106">Representa um fuso horário.</span><span class="sxs-lookup"><span data-stu-id="68e49-106">Represents a time zone.</span></span> <span data-ttu-id="68e49-107">Entre os formatos de fuso horário válidos estão o do Windows e o da [Autoridade para Atribuição de Números na Internet (IANA)](https://www.iana.org/time-zones) (também conhecido como fuso horário de Olson), além de quando o atual problema conhecido foi corrigido.</span><span class="sxs-lookup"><span data-stu-id="68e49-107">The supported format is Windows, and [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format as well when the current known problem is fixed.</span></span>
+<span data-ttu-id="bccfe-106">Representa um fuso horário.</span><span class="sxs-lookup"><span data-stu-id="bccfe-106">Represents a time zone.</span></span> <span data-ttu-id="bccfe-107">Entre os formatos de fuso horário válidos estão o do Windows e o da [Autoridade para Atribuição de Números na Internet (IANA)](https://www.iana.org/time-zones) (também conhecido como fuso horário de Olson), além de quando o atual problema conhecido foi corrigido.</span><span class="sxs-lookup"><span data-stu-id="bccfe-107">The supported format is Windows, and [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format as well when the current known problem is fixed.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="68e49-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="68e49-108">Properties</span></span>
-| <span data-ttu-id="68e49-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="68e49-109">Property</span></span>     | <span data-ttu-id="68e49-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="68e49-110">Type</span></span>   |<span data-ttu-id="68e49-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="68e49-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="bccfe-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bccfe-108">Properties</span></span>
+| <span data-ttu-id="bccfe-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="bccfe-109">Property</span></span>     | <span data-ttu-id="bccfe-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="bccfe-110">Type</span></span>   |<span data-ttu-id="bccfe-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="bccfe-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="68e49-112">alias</span><span class="sxs-lookup"><span data-stu-id="68e49-112">alias</span></span>|<span data-ttu-id="68e49-113">string</span><span class="sxs-lookup"><span data-stu-id="68e49-113">string</span></span>|<span data-ttu-id="68e49-114">Um identificador para o fuso horário.</span><span class="sxs-lookup"><span data-stu-id="68e49-114">An identifier for the time zone.</span></span>|
-|<span data-ttu-id="68e49-115">displayName</span><span class="sxs-lookup"><span data-stu-id="68e49-115">displayName</span></span>|<span data-ttu-id="68e49-116">string</span><span class="sxs-lookup"><span data-stu-id="68e49-116">string</span></span>|<span data-ttu-id="68e49-117">Uma sequência de caracteres de exibição que representa o fuso horário.</span><span class="sxs-lookup"><span data-stu-id="68e49-117">A display string that represents the time zone.</span></span>|
+|<span data-ttu-id="bccfe-112">alias</span><span class="sxs-lookup"><span data-stu-id="bccfe-112">alias</span></span>|<span data-ttu-id="bccfe-113">string</span><span class="sxs-lookup"><span data-stu-id="bccfe-113">string</span></span>|<span data-ttu-id="bccfe-114">Um identificador para o fuso horário.</span><span class="sxs-lookup"><span data-stu-id="bccfe-114">An identifier for the time zone.</span></span>|
+|<span data-ttu-id="bccfe-115">displayName</span><span class="sxs-lookup"><span data-stu-id="bccfe-115">displayName</span></span>|<span data-ttu-id="bccfe-116">string</span><span class="sxs-lookup"><span data-stu-id="bccfe-116">string</span></span>|<span data-ttu-id="bccfe-117">Uma sequência de caracteres de exibição que representa o fuso horário.</span><span class="sxs-lookup"><span data-stu-id="bccfe-117">A display string that represents the time zone.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="68e49-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="68e49-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bccfe-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="bccfe-118">JSON representation</span></span>
 
-<span data-ttu-id="68e49-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="68e49-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="bccfe-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="bccfe-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -58,3 +58,5 @@ ms.locfileid: "46806517"
   "suppressions": []
 }
 -->
+
+
