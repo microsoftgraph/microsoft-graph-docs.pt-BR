@@ -3,14 +3,14 @@ title: Obter deviceEnrollmentConfiguration
 description: Ler propriedades e relações do objeto deviceEnrollmentConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5707ad0fc0da024e5b8fbdcc6425de57ba5d2ba9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2f17ab42b02955a6c6fb201dc197a616495bd94d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43418615"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984961"
 ---
 # <a name="get-deviceenrollmentconfiguration"></a>Obter deviceEnrollmentConfiguration
 
@@ -81,6 +81,9 @@ Content-Length: 392
   }
 }
 ```
+
+
+
 
 
 

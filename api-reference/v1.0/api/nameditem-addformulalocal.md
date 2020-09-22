@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b5d01651b6df3b3f504c98eb876dd2f9f7eb7c49
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8cc4909b88274213f9f69c537fa4cdaa011abd91
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809044"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984877"
 ---
 # <a name="add-named-item-formulalocal"></a>Adicionar item nomeado FormulaLocal
 
@@ -130,3 +130,4 @@ Content-length: 109
   "suppressions": [
   ]
 }-->
+

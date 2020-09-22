@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: f24f4545d902a93435cf12753ac6608e4f8b2703
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 4ba770c4a17dc07b56c91a657a182ce501f2c240
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807077"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984856"
 ---
 # <a name="add-named-item"></a>Adicionar Item nomeado
 
@@ -135,3 +135,4 @@ Content-length: 109
   ],
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b95bc4c8aeda5463304c2fd8d5fd26d565eb7f16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a20799459003b8a8bf72bfd8eb8651dec15f9233
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510463"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984674"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -48,8 +48,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |campos|Coleção WorkbookSortField|A lista de condições para a classificação.|
 |matchCase|booliano|Opcional. Define se o uso de maiúsculas ou minúsculas afeta a ordenação da cadeia de caracteres.|
 |hasHeaders|booliano|Opcional. Se o intervalo tem um cabeçalho.|
-|orientation|string|Opcional. Se a operação classifica linhas ou colunas.  Os valores possíveis são: `Rows`, `Columns`.|
-|method|string|Opcional. O método de ordenação usado pelos caracteres chineses.  Os valores possíveis são: `PinYin`, `StrokeCount`.|
+|orientation|string|Opcional. Se a operação classifica linhas ou colunas.  Os valores possíveis são: `Rows` , `Columns` .|
+|method|string|Opcional. O método de ordenação usado pelos caracteres chineses.  Os valores possíveis são: `PinYin` , `StrokeCount` .|
 
 ## <a name="response"></a>Resposta
 
@@ -129,3 +129,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

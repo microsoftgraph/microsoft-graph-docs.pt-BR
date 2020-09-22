@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5ba1dc1c5b0c9bcbfbd349279e1a37caa8348ad9
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 6841fd67b55628ff409b287b04fc256a85e87023
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896823"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984704"
 ---
 # <a name="update-plannerplandetails"></a>Atualizar plannerplandetails
 
@@ -135,3 +135,4 @@ Content-length: 373
   "suppressions": [
   ]
 }-->
+

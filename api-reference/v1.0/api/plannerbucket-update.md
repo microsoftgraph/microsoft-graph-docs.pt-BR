@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 9d59675329d9146aa9dd542788ef507bb49f8678
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b49a3252d6043a5d8f687c8a4d3c31a175961eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510932"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984793"
 ---
 # <a name="update-plannerbucket"></a>Atualizar plannerbucket
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /planner/buckets/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Name       | Descrição|
+| Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
 | If-Match  | Último valor de ETag conhecido para o **plannerBucket** a ser atualizado. Obrigatório.|
@@ -42,7 +42,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|nome|Cadeia de caracteres|Nome do bucket.|
+|nome|String|Nome do bucket.|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](../resources/planner-order-hint-format.md).|
 |planId|String|ID do plano ao qual o Bucket pertence.|
 
@@ -120,3 +120,4 @@ Content-length: 245
   "suppressions": [
   ]
 }-->
+

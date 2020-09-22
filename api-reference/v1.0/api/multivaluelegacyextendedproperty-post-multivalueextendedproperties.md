@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4753de25b1d0d4fc6f6567e5ee541bee057caa6b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8b1dadae596b2a6af4976559582c3e1e3751f9c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807070"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984835"
 ---
 # <a name="create-multi-value-extended-property"></a>Criar propriedade estendida de vários valores
 
@@ -129,7 +129,7 @@ Forneça um corpo JSON de cada objeto [multiValueLegacyExtendedProperty](../reso
 |Propriedade|Tipo|Descrição|
 |:-----|:-----|:-----|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Uma matriz de uma ou mais propriedades estendidas de vários valores. |
-|id|Cadeia de caracteres|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique isso para identificar a propriedade. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
+|id|String|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique isso para identificar a propriedade. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
 |valor|string|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique o valor da propriedade. Obrigatório.|
 
 Ao criar uma propriedade estendida em uma _nova_ instância de recurso, além da nova coleção **multiValueExtendedProperties** , forneça uma representação JSON dessa instância de recurso também (ou seja, uma [mensagem](../resources/message.md), [mailFolder](../resources/mailfolder.md), [evento](../resources/event.md), etc.).
@@ -252,6 +252,7 @@ Para ver a propriedade estendida recém-criada, [obtenha a mensagem expandida co
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 
 

@@ -3,14 +3,14 @@ title: Atualizar complianceManagementPartner
 description: Atualiza as propriedades de um objeto complianceManagementPartner.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9574c2ddaacb60f9c41ea73608445de93365cb6e
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: Auto
+ms.openlocfilehash: d102ec54673f7d60d8b3f3127761722340783607
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744105"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984982"
 ---
 # <a name="update-compliancemanagementpartner"></a>Atualizar complianceManagementPartner
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [complia
 |id|String|ID da entidade|
 |lastHeartbeatDateTime|DateTimeOffset|Carimbo de data/hora da última pulsação após o administrador integrado ao parceiro de gerenciamento de conformidade|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|displayName|Cadeia de caracteres|Nome de exibição de parceiro|
+|displayName|String|Nome de exibição de parceiro|
 |macOsOnboarded|Boolean|Parceiro integrado para dispositivos Mac.|
 |androidOnboarded|Boolean|Parceiro integrado para dispositivos Android.|
 |iosOnboarded|Boolean|Parceiro integrado para dispositivos IOS.|
@@ -153,6 +153,9 @@ Content-Length: 1031
   ]
 }
 ```
+
+
+
 
 
 

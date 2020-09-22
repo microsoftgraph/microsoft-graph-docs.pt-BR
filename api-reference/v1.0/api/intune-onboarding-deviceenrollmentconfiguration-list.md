@@ -3,14 +3,14 @@ title: Listar deviceEnrollmentConfigurations
 description: Listar propriedades e relações de objetos de deviceEnrollmentConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 50f9eac7327c2abe449dc57131dbeb7eeda01be7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2e139cba907a4b66bdd8ced09f98b738c8019ff9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451856"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984954"
 ---
 # <a name="list-deviceenrollmentconfigurations"></a>Listar deviceEnrollmentConfigurations
 
@@ -80,6 +80,9 @@ Content-Length: 422
   ]
 }
 ```
+
+
+
 
 
 
