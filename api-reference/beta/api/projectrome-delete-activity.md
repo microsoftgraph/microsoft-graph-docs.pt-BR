@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 193a87003e321123be71913dcaeeaf9c14dd1c09
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 293c6abe64aec124f280e5e33239f63339753733
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810012"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010588"
 ---
 # <a name="delete-an-activity"></a>Excluir uma atividade
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegada (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegado (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegado (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -110,3 +110,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

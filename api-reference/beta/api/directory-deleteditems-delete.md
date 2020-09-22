@@ -5,16 +5,16 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2ef89074d46dc81eb8cf0ad7e9b9b6eb5ccb4895
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 23097624b40c9b36b9cea0ff18a1e00ab5eece78
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009034"
 ---
 # <a name="permanently-delete-item"></a>Excluir permanentemente item
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -116,3 +116,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

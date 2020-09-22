@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8b6a0baaa684808c4d05bdcebf4be6d761d41d1b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: b1d66c90748ff2277362babe693862e0342af9a8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793581"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009363"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -84,3 +84,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

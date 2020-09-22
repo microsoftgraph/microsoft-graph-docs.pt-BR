@@ -6,16 +6,16 @@ title: ShareAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 94bf1b519308043f3421dc211eac006cfc4fd601
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d855b4c42a51e6ff9c9330f0a22e8076778d456
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520742"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010189"
 ---
 # <a name="shareaction-resource-type"></a>Tipo de recurso ShareAction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -59,3 +59,5 @@ Registros de atividade de item atualmente só estão disponíveis no SharePoint 
   "suppressions": []
 }
 -->
+
+

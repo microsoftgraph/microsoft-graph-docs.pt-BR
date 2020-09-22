@@ -3,14 +3,14 @@ title: Tipo de recurso omaSettingInteger
 description: Definição de números inteiros das configurações de OMA.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1b0dc774d5ab95733337719014f9db93bc393d71
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 64fbfca7b5fc101ea7ea64d4545257354d4157e3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462985"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010168"
 ---
 # <a name="omasettinginteger-resource-type"></a>Tipo de recurso omaSettingInteger
 
@@ -28,7 +28,7 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|String|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |valor|Int32|Valor.|
@@ -54,6 +54,9 @@ Veja a seguir uma representação JSON do recurso.
   "isReadOnly": true
 }
 ```
+
+
+
 
 
 

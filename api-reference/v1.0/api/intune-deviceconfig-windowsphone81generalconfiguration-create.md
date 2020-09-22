@@ -3,14 +3,14 @@ title: Criar windowsPhone81GeneralConfiguration
 description: Criar um novo objeto windowsPhone81GeneralConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0935e294037ff9a9823e74ec676421e742f0dc5e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 33322bbf65b1ae7d6b009d2818269b852852793a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441846"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009720"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>Criar windowsPhone81GeneralConfiguration
 
@@ -55,20 +55,20 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsP
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|applyOnlyToWindowsPhone81|Booliano|Valor que indica se esta política se aplica somente ao Windows Phone 8.1. Essa propriedade é somente leitura.|
-|appsBlockCopyPaste|Booliano|Indica se a função copiar/colar deve ou não ser bloqueada.|
-|bluetoothBlocked|Booliano|Indica se o bluetooth deve ou não ser bloqueado.|
-|cameraBlocked|Booliano|Indica se a câmera deve ou não ser bloqueada.|
-|cellularBlockWifiTethering|Booliano|Indica se o compartilhamento de Internet por Wi-Fi deve ou não ser bloqueado. Não terá impacto se o Wi-Fi estiver bloqueado.|
+|applyOnlyToWindowsPhone81|Boolean|Valor que indica se esta política se aplica somente ao Windows Phone 8.1. Essa propriedade é somente leitura.|
+|appsBlockCopyPaste|Boolean|Indica se a função copiar/colar deve ou não ser bloqueada.|
+|bluetoothBlocked|Boolean|Indica se o bluetooth deve ou não ser bloqueado.|
+|cameraBlocked|Boolean|Indica se a câmera deve ou não ser bloqueada.|
+|cellularBlockWifiTethering|Boolean|Indica se o compartilhamento de Internet por Wi-Fi deve ou não ser bloqueado. Não terá impacto se o Wi-Fi estiver bloqueado.|
 |compliantAppsList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicativos em conformidade (lista de permissões ou lista de bloqueios, controladas por CompliantAppListType). Essa coleção pode conter um máximo de 10.000 elementos.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Lista que está em AppComplianceList. Os valores possíveis são: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|Booliano|Indica se o envio de dados de diagnóstico deve ou não ser bloqueado.|
+|diagnosticDataBlockSubmission|Boolean|Indica se o envio de dados de diagnóstico deve ou não ser bloqueado.|
 |emailBlockAddingAccounts|Boolean|Indica se as contas de email personalizadas devem ou não ser bloqueadas.|
-|locationServicesBlocked|Booliano|Indica se os serviços de localização devem ou não ser bloqueados.|
-|microsoftAccountBlocked|Booliano|Indica se o uso de uma conta da Microsoft deve ou não ser bloqueado.|
-|nfcBlocked|Booliano|Indica se a comunicação a curta distância deve ou não ser bloqueada.|
+|locationServicesBlocked|Boolean|Indica se os serviços de localização devem ou não ser bloqueados.|
+|microsoftAccountBlocked|Boolean|Indica se o uso de uma conta da Microsoft deve ou não ser bloqueado.|
+|nfcBlocked|Boolean|Indica se a comunicação a curta distância deve ou não ser bloqueada.|
 |passwordBlockSimple|Boolean|Indica se a sincronização do calendário deve ou não ser bloqueada.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha.|
 |passwordMinimumLength|Int32|Comprimento mínimo das senhas.|
@@ -77,13 +77,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsP
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear. Valores válidos de 0 a 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Número permitido de falhas de entrada antes da redefinição de fábrica.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
-|passwordRequired|Booliano|Indica se uma senha deve ou não ser exigida.|
-|screenCaptureBlocked|Booliano|Indica se capturas de tela devem ou não ser bloqueadas.|
-|storageBlockRemovableStorage|Booliano|Indica se o armazenamento removível deve ou não ser bloqueado.|
-|storageRequireEncryption|Booliano|Indica se a criptografia é ou não necessária.|
-|webBrowserBlocked|Booliano|Indica se o navegador da Web deve ou não ser bloqueado.|
-|wifiBlocked|Booliano|Indica se o Wi-Fi deve ou não ser bloqueado.|
-|wifiBlockAutomaticConnectHotspots|Booliano|Indica se a conexão automática a hotspots Wi-Fi deve ou não ser bloqueada. Não terá impacto se o Wi-Fi estiver bloqueado.|
+|passwordRequired|Boolean|Indica se uma senha deve ou não ser exigida.|
+|screenCaptureBlocked|Boolean|Indica se capturas de tela devem ou não ser bloqueadas.|
+|storageBlockRemovableStorage|Boolean|Indica se o armazenamento removível deve ou não ser bloqueado.|
+|storageRequireEncryption|Boolean|Indica se a criptografia é ou não necessária.|
+|webBrowserBlocked|Boolean|Indica se o navegador da Web deve ou não ser bloqueado.|
+|wifiBlocked|Boolean|Indica se o Wi-Fi deve ou não ser bloqueado.|
+|wifiBlockAutomaticConnectHotspots|Boolean|Indica se a conexão automática a hotspots Wi-Fi deve ou não ser bloqueada. Não terá impacto se o Wi-Fi estiver bloqueado.|
 |wifiBlockHotspotReporting|Boolean|Indica se os relatórios de hotspot Wi-Fi devem ou não ser bloqueados. Não terá impacto se o Wi-Fi estiver bloqueado.|
 |windowsStoreBlocked|Boolean|Indica se a Windows Store deve ou não ser bloqueada.|
 
@@ -200,6 +200,9 @@ Content-Length: 1633
   "windowsStoreBlocked": true
 }
 ```
+
+
+
 
 
 

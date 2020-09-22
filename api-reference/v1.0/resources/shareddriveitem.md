@@ -7,12 +7,12 @@ localization_priority: Normal
 description: O recurso sharedDriveItem é retornado ao se usar a API Shares para acessar um driveItem compartilhado.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 10e6146151b64470386b6071bc19cb8764744b3e
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 91e55039d73a30b954be4ec67b7d7ea1d6a6f70d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934896"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009174"
 ---
 # <a name="shareddriveitem-resource-type"></a>Tipo de recurso SharedDriveItem
 
@@ -53,7 +53,7 @@ O recurso **sharedDriveItem** é derivado de [**baseItem**](baseitem.md) e herda
 | Propriedade | Tipo                          | Descrição                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
 | id       | String                        | O identificador exclusivo do compartilhamento que está sendo acessado.              |
-| name     | String                        | O nome de exibição do item compartilhado.                             |
+| nome     | String                        | O nome de exibição do item compartilhado.                             |
 | owner    | [IdentitySet](identityset.md) | Informações sobre o proprietário do item compartilhado que está sendo referenciado. |
 
 ## <a name="relationships"></a>Relações
@@ -71,7 +71,7 @@ Como alternativa, para **driveItems** compartilhados de contas pessoais do OneDr
 | Nome da relação | Tipo                         | Descrição
 | ------------------|:-----------------------------|:-----------------------------------
 | **items**         | coleção [**driveItem**][driveItem] | Todos os driveItems contidos na raiz de compartilhamento. Não é possível enumerar este conjunto.
-| **root**          | [**driveItem**][driveItem]   | Usado para acessar o **driveItem**subjacente. Preterido-- `driveItem` use em vez disso.
+| **root**          | [**driveItem**][driveItem]   | Usado para acessar o **driveItem**subjacente. Preterido--use `driveItem` em vez disso.
 
 [driveItem]: driveitem.md
 [list]: list.md
@@ -96,3 +96,4 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Resources/Share"
 } -->
+

@@ -3,14 +3,14 @@ title: Listar detectedApps
 description: Listar propriedades e relações dos objetos detectedApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45b7fe6462a2326b3cf0895c373da99aa069e2c9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f468d6d93710aba70821bf5117fe6c770cb7c7a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456756"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009594"
 ---
 # <a name="list-detectedapps"></a>Listar detectedApps
 
@@ -78,6 +78,9 @@ Content-Length: 273
   ]
 }
 ```
+
+
+
 
 
 

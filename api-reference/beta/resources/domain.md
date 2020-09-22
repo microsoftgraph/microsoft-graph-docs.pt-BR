@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6e75eefba9a9fd26968b74bd8ca5a97b70a2c5f9
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 7a8ddeeb35306d837363523111518b7c6c424b6a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896970"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010350"
 ---
 # <a name="domain-resource-type"></a>tipo de recurso de domínio
 
@@ -62,8 +62,8 @@ Para associar um domínio a um locatário:
 |isverificed|Booliano| True se o domínio tiver concluído a verificação de propriedade de domínio. Não anulável |
 |passwordNotificationWindowInDays|Int32|Especifica o número de dias antes que um usuário receba uma notificação de que a senha expirará. Se a propriedade não for definida, será usado um valor padrão de 14 dias.|
 |passwordValidityPeriodInDays|Int32| Especifica o período de tempo que uma senha é válida antes de ser alterada. Se a propriedade não for definida, será usado um valor padrão de 90 dias. |
-|supportedservices|Coleção de cadeias de caracteres| Os recursos atribuídos ao domínio.<br><br>Pode incluir 0, 1 ou mais dos seguintes valores: *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Os valores que você pode adicionar/remover usando a API do Graph incluem: *email*, *OfficeCommunicationsOnline*, *Yammer*<br>Não anulável|
-|estado|[domainstate](domainstate.md)| Status das operações assíncronas agendadas para o domínio. |
+|supportedservices|Coleção String| Os recursos atribuídos ao domínio.<br><br>Pode incluir 0, 1 ou mais dos seguintes valores: *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Os valores que você pode adicionar/remover usando a API do Graph incluem: *email*, *OfficeCommunicationsOnline*, *Yammer*<br>Não anulável|
+|state|[domainstate](domainstate.md)| Status das operações assíncronas agendadas para o domínio. |
 
 ## <a name="relationships"></a>Relações
 
@@ -117,3 +117,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

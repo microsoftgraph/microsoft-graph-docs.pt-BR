@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: bd5bbe5f4167142821eea4bc72b53f6c0202fcd4
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: ecd280622a9937e85dfb9079416521853d85cfe4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181885"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010306"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>tipo de recurso domainDnsTxtRecord
 
@@ -75,3 +75,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3ff8c5a0532db0dc9d35902ffd76e26695ccfdcf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 851d28549c90a79c74f806b8ec882d7d0d6611c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467648"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010098"
 ---
 # <a name="update-contactfolder"></a>Atualizar contactfolder
 
@@ -43,7 +43,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|O nome de exibição da pasta.|
+|displayName|String|O nome de exibição da pasta.|
 |parentFolderId|String|A ID da pasta pai da pasta.|
 
 ## <a name="response"></a>Resposta
@@ -116,3 +116,4 @@ Content-length: 104
   "suppressions": [
   ]
 }-->
+

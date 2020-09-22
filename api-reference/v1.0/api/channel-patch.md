@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7b3b9321fc4ce95fdbb06eeb83491344c7c40bd3
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: f31e4cb54c28cf2cfedae4f7c7fca8e95b62c44c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897803"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010154"
 ---
 # <a name="patch-channel"></a>Canal de patch
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | ChannelSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | ChannelSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Aplicativo | ChannelSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
@@ -95,3 +95,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

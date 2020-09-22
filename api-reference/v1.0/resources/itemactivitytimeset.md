@@ -6,16 +6,16 @@ description: O objeto doactionset fornece informações sobre uma atividade que 
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e7c2357965acaf049e8483b33b888116fea6e994
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30372027d90c8ae4472c6cf66a164b5dbaff08ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447658"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009314"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>tipo de recurso itemActivityTimeSet
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 O recurso **itemActivityTimeSet** fornece informações sobre quando uma [atividade][activity] em um item ocorreu.
 
@@ -62,3 +62,4 @@ Em um momento posterior quando o usuário se conectar novamente à nuvem e as al
   "suppressions": []
 }
 -->
+

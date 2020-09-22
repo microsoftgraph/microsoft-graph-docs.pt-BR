@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Use esta API para recuperar os conteúdos de um item em um formato específico.
 doc_type: apiPageType
-ms.openlocfilehash: 3b9e07ed5e1bbe44c89cb307e73c6741f23fe8e7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca39ea1bb0707093b782a7068f965cb7716eb381
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517752"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009797"
 ---
 # <a name="download-a-file-in-another-format"></a>Baixar um arquivo em outro formato
 
@@ -116,3 +116,4 @@ Confira [Respostas de Erros][error-response] para saber mais sobre como os erros
   "suppressions": [
   ]
 } -->
+

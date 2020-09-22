@@ -5,12 +5,12 @@ localization_priority: Normal
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 56f114cc8bb24b7cfb250839a3711459cafd6104
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: e24bba222d6ea99f962ab8f173bd53c01df2d428
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849850"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010434"
 ---
 # <a name="todotask-delta"></a>todoTask: Delta
 
@@ -44,7 +44,7 @@ O controle de alterações em uma coleção **todoTasks** provoca uma rodada de 
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | cadeia de caracteres | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para a mesma coleção todoTask, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
+| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para a mesma coleção todoTask, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `nextLink` URL da chamada de função **Delta** anterior, indicando que há mais alterações a serem controladas na mesma coleção todoTask. |
 
 ### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
@@ -118,3 +118,4 @@ Content-length: 337
 ## <a name="see-also"></a>Confira também
 
 - [Consulta delta do Microsoft Graph](/graph/delta-query-overview)
+

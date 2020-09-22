@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e7ddd6d510f4e3de2149f5af0fdf59004f80b4c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 60c49f4f094f818cfe49bab6928694a3b26bdf23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454669"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010581"
 ---
 # <a name="get-rangeborder"></a>Obter RangeBorder
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -110,3 +110,5 @@ Content-length: 136
   ]
 }
 -->
+
+

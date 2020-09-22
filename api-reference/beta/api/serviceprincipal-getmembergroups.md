@@ -1,24 +1,24 @@
 ---
-title: 'servicePrincipalName: getMemberGroups'
+title: 'servicePrincipal: getMemberObjects'
 description: Obtenha a lista de grupos dos quais essa entidade de serviço é membro.  A verificação é transitiva.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 31a91f3fb7551d95e545c2dbcb3d28dfe2f05311
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 5080a99e80dd3b3fba5e38f085c7962a3d52b9ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383396"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010490"
 ---
-# <a name="serviceprincipal-getmembergroups"></a>servicePrincipalName: getMemberGroups
+# <a name="serviceprincipal-getmembergroups"></a>servicePrincipal: getMemberObjects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a lista de grupos dos quais esse [servicePrincipalName](../resources/serviceprincipal.md) é um membro.  A verificação é transitiva.
+Obtenha a lista de grupos dos quais [servicePrincipal](../resources/serviceprincipal.md) é membro.  A verificação é transitiva.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto da coleção String no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto da coleção de cadeias de caracteres no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 Eis um exemplo de como chamar esta API.
@@ -121,3 +121,5 @@ Content-length: 39
   ]
 }
 -->
+
+

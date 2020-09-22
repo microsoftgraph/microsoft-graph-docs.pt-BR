@@ -6,16 +6,16 @@ title: SharingLink
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: e96164b636866637a30f733cb46da5124d90fa49
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c79de95408b334d11dd6c2682dc12a0679f686c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520643"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010161"
 ---
 # <a name="sharinglink-resource-type"></a>tipo de recurso sharingLink
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,9 +49,9 @@ Veja a seguir uma representação JSON do recurso.
 | Propriedade       | Tipo          | Descrição
 |:---------------|:--------------|:-------------------------------------
 | aplicativo    | [identity][]  | O aplicativo ao qual o link está associado.
-| type           | String        | O tipo do link criado.
-| scope          | Cadeia de caracteres        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
-| preventsDownload | Boolean       | Se true, o usuário só pode usar este link para exibir o item na Web e não pode usá-lo para baixar o conteúdo do item. Somente para o OneDrive for Business e o SharePoint.
+| tipo           | String        | O tipo do link criado.
+| scope          | String        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
+| preventsDownload | Booliano       | Se true, o usuário só pode usar este link para exibir o item na Web e não pode usá-lo para baixar o conteúdo do item. Somente para o OneDrive for Business e o SharePoint.
 | webHtml        | String        | Para links `embed`, essa propriedade contém o código HTML para um elemento `<iframe>` que inserirá o item em uma página da Web.
 | webUrl         | String        | Uma URL que abre o item no navegador no site do OneDrive.
 
@@ -90,3 +90,5 @@ A tabela a seguir define os valores possíveis para a propriedade **Scope** .
   "suppressions": []
 }
 -->
+
+

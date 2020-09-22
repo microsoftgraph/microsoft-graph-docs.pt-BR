@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ebf1e51810eacbbd14fa59b7d266f2fce4969c8b
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 84d0c9d688ef67fa36354c4cc037ecb61777eb0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180997"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008915"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Listar itens excluídos pertencentes a um usuário
 
@@ -51,12 +51,12 @@ O corpo da solicitação requer os seguintes parâmetros:
 | Parâmetro    | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |userId|Cadeia de caracteres|ID do proprietário.|
-|type|String|Tipo de objetos de propriedade a ser retornado; `group` no momento, o único valor com suporte.|
+|tipo|String|Tipo de objetos de propriedade a ser retornado; `group` no momento, o único valor com suporte.|
 
 
 ## <a name="response"></a>Resposta
 
-Solicitações bem-sucedidas retornam `200 OK` códigos de resposta; o objeto Response inclui propriedades [de diretório (itens excluídos)](../resources/directory.md) .
+Solicitações bem-sucedidas retornam `200 OK` códigos de resposta; o objeto Response inclui as propriedades [Directory (Deleted Items)](../resources/directory.md) .
 
 ## <a name="example"></a>Exemplo
 
@@ -114,5 +114,7 @@ Content-length: 1249
         ]
  }
 ```
+
+
 
 

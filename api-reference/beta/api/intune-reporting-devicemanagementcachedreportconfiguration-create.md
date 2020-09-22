@@ -3,18 +3,18 @@ title: Criar deviceManagementCachedReportConfiguration
 description: Criar um novo objeto deviceManagementCachedReportConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7340fffa01f99c33433c60b08b12748a2505cfae
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 32d0028a44333708e1e8d3547ec20937f42bb309
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791360"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010861"
 ---
 # <a name="create-devicemanagementcachedreportconfiguration"></a>Criar deviceManagementCachedReportConfiguration
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -118,6 +118,9 @@ Content-Length: 467
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
+
+
+
 
 
 

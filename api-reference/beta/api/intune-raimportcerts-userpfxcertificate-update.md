@@ -3,14 +3,14 @@ title: Atualizar userPFXCertificate
 description: Atualiza as propriedades de um objeto userPFXCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa08241b3a672914d01058a8e0b817d737403670
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b258c5aee92430dfc68aa50ac4d45f663b582107
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010896"
 ---
 # <a name="update-userpfxcertificate"></a>Atualizar userPFXCertificate
 
@@ -70,7 +70,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userPFX
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -120,6 +120,9 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

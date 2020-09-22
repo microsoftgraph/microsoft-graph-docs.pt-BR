@@ -1,16 +1,16 @@
 ---
 author: learafa
-description: Siga um driveItem.
+description: Seguir um driveItem.
 title: Seguir item de unidade
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 86467b3acdd5e9ef70b393ecdbec2652341af5b2
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: e0a60f3c8254eeccb4476c9b27e1bf47e0a3559d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124354"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009790"
 ---
 # <a name="follow-drive-item"></a>Seguir item de unidade
 
@@ -52,7 +52,7 @@ Este método retorna um [DriveItem](../resources/driveitem.md) para o item que e
 
 ## <a name="example"></a>Exemplo
 
-Este exemplo segue um item identificado por `{item-id}`.
+Este exemplo segue um item identificado por `{item-id}` .
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -104,3 +104,4 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-12-12T10:40:59Z"
 }
 ```
+

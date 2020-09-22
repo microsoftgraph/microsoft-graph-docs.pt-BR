@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ce3dd12343574455c6afb55cf509fbfd2583b588
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 14ad018efa1aee22a8f6557fdab34b7d2fc6decf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062620"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009764"
 ---
 # <a name="update-educationclass-properties"></a>Atualizar propriedades educationclass
 
@@ -44,10 +44,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|String| Descrição da aula.|
-|displayName|Cadeia de caracteres| Nome da aula.|
+|displayName|String| Nome da aula.|
 |mailNickname|String| Alias de email para envio de email a todos os usuários, se esse recurso estiver habilitado. |
-|classCode|String| Código de classe usado pela escola.|
-|externalId|String| ID da aula no sistema de sincronização. |
+|classCode|Cadeia de caracteres| Código de classe usado pela escola.|
+|externalId|Cadeia de caracteres| ID da aula no sistema de sincronização. |
 |externalName|Cadeia de caracteres|Nome da aula no sistema de sincronização.|
 |externalSource|cadeia de caracteres| Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
 
@@ -134,3 +134,4 @@ Content-length: 224
   "suppressions": [
   ]
 }-->
+

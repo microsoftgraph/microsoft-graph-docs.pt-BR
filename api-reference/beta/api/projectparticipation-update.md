@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6a50fbae387a7599110dce8056f927f449681e04
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c44ab0be22873ae37120d99ef86b70df586eb918
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810025"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010595"
 ---
 # <a name="update-projectparticipation"></a>Atualizar projectparticipation
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
-| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
 | Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,9 +53,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|Coleção de cadeias de caracteres|Contém categorias que um usuário associou ao projeto (por exemplo, transformação digital, Rig óleo). |
+|Categorias|Coleção de cadeias de caracteres|Contém categorias que um usuário associou ao projeto (por exemplo, transformação digital, Rig óleo). |
 |clientes|[companyDetail](../resources/companydetail.md)|Contém informações detalhadas sobre o cliente para o qual o projeto foi. |
-|collaborationTags|Coleção de cadeia de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` , `ableToMentor` , `wantsToLearn` , `wantsToImprove` .|
+|collaborationTags|Coleção de cadeias de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` , `ableToMentor` , `wantsToLearn` , `wantsToImprove` .|
 |conhecidos|coleção [relatedPerson](../resources/relatedperson.md)|Lista as pessoas que também trabalharam no projeto. |
 |detalhada|[positionDetail](../resources/positiondetail.md)|Contém detalhes sobre a função do usuário no projeto.|
 |displayName|String|Contém um nome amigável para o projeto.|
@@ -176,3 +176,5 @@ Content-type: application/json
   "sponsors": null
 }
 ```
+
+

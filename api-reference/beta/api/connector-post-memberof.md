@@ -5,20 +5,20 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a03aeef84c2b525ba7a7ef05ecdd58c772ad7fae
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 00f2ada7d46831b6b0bfbae0db4174e3ca2e9c90
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681491"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009076"
 ---
-# <a name="add-connector-to-connectorgroup"></a>Adicionar conector ao conector
+# <a name="add-connector-to-connectorgroup"></a>Adicionar conector a connectorGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicionar um [conector](../resources/connector.md) a um [conector](../resources/connectorgroup.md).
+Adicionar um [conector](../resources/connector.md)  a um [conector](../resources/connectorgroup.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -105,3 +105,5 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
+

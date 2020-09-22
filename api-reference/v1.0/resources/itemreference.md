@@ -7,16 +7,16 @@ localization_priority: Normal
 description: O recurso ItemReference proporciona as informações necessárias para enviar um DriveItem pela API.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1c25b75dd422eb9d9fe515c425c9e71672bdecf8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a13fb5a3606b72c96a15317a9a7b1d5844184f4c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447616"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009223"
 ---
 # <a name="itemreference-resource-type"></a>Tipo de recurso ItemReference
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 O recurso **ItemReference** proporciona as informações necessárias para enviar um [DriveItem](driveitem.md) pela API.
 
@@ -51,7 +51,7 @@ Veja a seguir uma representação JSON do recurso
 | id            | String            | Identificador exclusivo do item na unidade. Somente leitura.
 | nome          | String            | O nome do item ao qual se faz referência. Somente leitura.
 | caminho          | String            | Caminho que pode ser usado para navegar até o item. Somente leitura.
-| shareId       | String            | Um identificador exclusivo para um recurso compartilhado que pode ser acessado através da API [Shares][].
+| shareId       | Cadeia de caracteres            | Um identificador exclusivo para um recurso compartilhado que pode ser acessado através da API [Shares][].
 | sharepointIds | [sharepointIds][] | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
 
 [unidade]: ../resources/drive.md
@@ -82,3 +82,4 @@ Para recuperar o caminho legível para a navegação estrutural, ignore tudo at�
   ],
   "tocPath": "Resources/ItemReference"
 } -->
+

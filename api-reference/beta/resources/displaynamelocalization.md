@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 8ae6c62acfacfccd22cc9985386762a2f61a2bc7
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
-ms.translationtype: Auto
+ms.openlocfilehash: e02af0d4fcd5cdf4ce08df4403736bd6b9c60a84
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050852"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010399"
 ---
 # <a name="displaynamelocalization-resource-type"></a>tipo de recurso displayNameLocalization
 
@@ -54,3 +54,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

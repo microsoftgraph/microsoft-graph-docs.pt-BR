@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 03803fddb12401e8d04318e8f4e7d7c63029b709
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 032ddf2ffd557f88a944aafbb72164e2fe356d77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181522"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010420"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>tipo de recurso directorySettingTemplate
 
@@ -22,7 +22,7 @@ Modelos de configuração de diretório representam configurações definidas pe
 
 > **Observação**: a versão do/beta do tipo de recurso directorySettingTemplate só se aplica a grupos. A versão do/v1.0 foi renomeada como groupSettingTemplate.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -33,7 +33,7 @@ Modelos de configuração de diretório representam configurações definidas pe
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|string|Descrição do modelo. Somente leitura.|
-|displayName|cadeia de caracteres|Nome para exibição do modelo. Somente leitura. |
+|displayName|string|Nome para exibição do modelo. Somente leitura. |
 |id|string| Identificador exclusivo do modelo. Somente leitura.|
 |values|coleção [settingTemplateValue](settingtemplatevalue.md)| Coleção de settingTemplateValues que lista o conjunto de configurações disponíveis, padrões e tipos que compõem esse modelo.  Somente leitura. |
 
@@ -75,3 +75,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 171d3b51690863256d7ffa18257ebb85a4cd3fa0
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: e24689de713df4d41b2c095c742055ec1059101e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42453804"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010567"
 ---
 # <a name="create-timeoff"></a>Criar timeOff
 
@@ -155,3 +155,5 @@ Content-length: 401
   ]
 }
 -->
+
+

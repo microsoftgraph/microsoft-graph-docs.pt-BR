@@ -6,16 +6,16 @@ description: O objeto Entidadeitemactivitystat fornece informações sobre as at
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 11b19e4b953d4353382aec15071c6589b5bb23c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 80cc78486415f809082a2e9631dee86293e3389e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447665"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009321"
 ---
 # <a name="itemactivitystat-resource-type"></a>tipo de recurso Entidadeitemactivitystat
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 O recurso **entidadeitemactivitystat** fornece informações sobre as atividades que aconteceram dentro de um intervalo de tempo.
 
@@ -78,3 +78,4 @@ O recurso **entidadeitemactivitystat** fornece informações sobre as atividades
   "suppressions": []
 }
 -->
+

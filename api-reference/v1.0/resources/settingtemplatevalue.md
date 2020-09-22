@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a2046017dec6439c6db35169de15eb6bb49413b1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c39762290577c6279a4ecb52bd832ac9c961dbdb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806734"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009195"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>tipo de recurso settingTemplateValue
 
@@ -22,10 +22,10 @@ Representa uma definição de configuração de modelo individual, incluindo o v
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|defaultValue|Cadeia de caracteres| Valor padrão para a configuração. |
+|defaultValue|String| Valor padrão para a configuração. |
 |description|String| Descrição da configuração. |
-|nome|Cadeia de caracteres| Nome da configuração. |
-|type|Cadeia de caracteres| Tipo da configuração. |
+|nome|String| Nome da configuração. |
+|tipo|String| Tipo da configuração. |
 
 ### <a name="json-representation"></a>Representação JSON
 
@@ -59,3 +59,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Atualizar detectedApp
 description: Atualizar as propriedades de um objeto detectedApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e708909b613fc4aceedab6ba7023c042e81b9807
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d03608902330139f3b18fe2457048099c28ecc97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456747"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009580"
 ---
 # <a name="update-detectedapp"></a>Atualizar detectedApp
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [detecte
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo do aplicativo detectado. Ele é gerado automaticamente pelo Intune no momento em que o aplicativo é criado. Somente leitura.|
-|displayName|Cadeia de caracteres|Nome do aplicativo descoberto. Somente leitura|
+|displayName|String|Nome do aplicativo descoberto. Somente leitura|
 |version|Cadeia de caracteres|Versão do aplicativo descoberto. Somente leitura|
 |sizeInByte|Int64|Tamanho do aplicativo descoberto, em bytes. Somente leitura|
 |deviceCount|Int32|O número de dispositivos que instalaram esse aplicativo|
@@ -96,6 +96,9 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
+
+
+
 
 
 

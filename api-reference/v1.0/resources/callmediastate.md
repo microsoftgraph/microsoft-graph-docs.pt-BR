@@ -5,12 +5,12 @@ author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 3bf6b0e2387ac658ad506e3b4ea226a9a8f66e6d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 24dde1de6248413a7fe7753492b40995f994e66d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531957"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009370"
 ---
 # <a name="callmediastate-resource-type"></a>tipo de recurso callMediaState
 
@@ -51,3 +51,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

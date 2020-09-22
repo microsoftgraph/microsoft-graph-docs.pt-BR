@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f8a07a07ceb8af5f5c6db53dd6386caee715f4e4
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: d10d242f1148bf2b7f5c1d6ed8700f1caa4ece37
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849097"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009244"
 ---
 # <a name="itembody-resource-type"></a>Tipo de recurso itemBody
 
@@ -52,3 +52,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

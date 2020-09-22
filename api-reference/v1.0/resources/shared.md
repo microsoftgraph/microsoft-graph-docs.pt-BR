@@ -7,16 +7,16 @@ localization_priority: Normal
 description: O recurso Shared indica que um DriveItem foi compartilhado com outras pessoas.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 027a4275b342be4c6e61e0e3ad8a47c665de5946
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9058b1e3f5f8dd77c22ee253746c7eba8c1df7c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446895"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009181"
 ---
 # <a name="shared-resource-type"></a>Tipo de recurso Shared
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 O recurso **Shared** indica que um DriveItem foi compartilhado com outras pessoas. O recurso inclui informações sobre como o item é compartilhado.
 
@@ -71,3 +71,4 @@ Para saber mais sobre as facetas de um **driveItem**, confira [**driveItem**](dr
   ],
   "tocPath": "Facets/Shared"
 } -->
+
