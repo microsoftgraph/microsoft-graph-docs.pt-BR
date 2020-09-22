@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ba932538e984af37a4f005ddcc2167c29d2267d0
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: c61367520f9dccb47fe238a92366cefd41748865
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557910"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998226"
 ---
 # <a name="passwordauthenticationmethod-resource-type"></a>tipo de recurso passwordAuthenticationMethod
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Uma representação da senha de um usuário. Por segurança, a senha em si nunca será retornada no objeto, mas é possível executar a ação para redefinir uma senha.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -33,7 +33,7 @@ Uma representação da senha de um usuário. Por segurança, a senha em si nunca
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |creationDatetime|DateTimeOffset|A data e a hora da última atualização da senha. Esta propriedade não está preenchida no momento. Somente leitura. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|id|Cadeia de caracteres| O identificador dessa senha registrado para este usuário. Somente leitura.|
+|id|String| O identificador dessa senha registrado para este usuário. Somente leitura.|
 |password|String|Por segurança, a senha é sempre retornada como NULL de uma lista ou uma operação GET.|
 
 ## <a name="relationships"></a>Relações
@@ -71,3 +71,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

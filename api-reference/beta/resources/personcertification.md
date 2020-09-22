@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: ef4ebe3bc870bafd0edf6a5315589c8f823286df
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b6f7349d5c279b00e504ca93945c5a2f3b8fbc73
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812869"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997932"
 ---
 # <a name="personcertification-resource-type"></a>tipo de recurso personCertification
 
@@ -20,7 +20,7 @@ Representa uma certificação ou designação que foi associada ao [perfil](../r
 
 Herda de [Myfacet](../resources/itemfacet.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar certificações](../api/profile-list-certifications.md)|coleção [personCertification](../resources/personcertification.md)|Obtenha os recursos personCertification da propriedade de navegação certificações.|
@@ -95,3 +95,5 @@ Veja a seguir uma representação JSON do recurso.
   "webUrl": "String"
 }
 ```
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 3d919e8423904a3b67dfdacc0921d20ccdb4243a
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d01c9fe6c4171c16d96e5b81eb8537ea0cbeb1a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807406"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997673"
 ---
 # <a name="skillproficiency-resource-type"></a>tipo de recurso skillProficiency
 
@@ -22,7 +22,7 @@ Representa informações detalhadas sobre as habilidades associadas a um usuári
 
 Herda de [Myfacet](itemfacet.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
  
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -36,8 +36,8 @@ Herda de [Myfacet](itemfacet.md).
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|Coleção de cadeias de caracteres|Contém categorias que um usuário associou à habilidade (por exemplo, pessoal, profissional, hobby). |
-|collaborationTags|Coleção de cadeia de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` , `ableToMentor` , `wantsToLearn` , `wantsToImprove` .|
+|Categorias|Coleção de cadeias de caracteres|Contém categorias que um usuário associou à habilidade (por exemplo, pessoal, profissional, hobby). |
+|collaborationTags|Coleção de cadeias de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` , `ableToMentor` , `wantsToLearn` , `wantsToImprove` .|
 |createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado de [MyFace](../resources/itemfacet.md).|
 |createdDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
 |displayName|String|Contém um nome amigável para a habilidade. |
@@ -92,3 +92,4 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+

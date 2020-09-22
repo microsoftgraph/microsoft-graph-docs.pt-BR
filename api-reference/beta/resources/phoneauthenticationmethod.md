@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 218f4775045009c4168508dbb8678852398df125
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: 93bf64756d0da1e4199fdede55990e695f434480
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557896"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997834"
 ---
 # <a name="phoneauthenticationmethod-resource-type"></a>tipo de recurso phoneAuthenticationMethod
 
@@ -36,14 +36,14 @@ A propriedade de estado de entrada do SMS fornece informações sobre se um núm
 |`phoneNumberNotUnique`|Este usuário tentou configurar um número de telefone como entrada principal, mas o número não era exclusivo e não pode ser usado como um nome de entrada.|
 |`ready`|Este método de autenticação está pronto para uso na entrada principal.|
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [List](../api/Authentication-list-phonemethods.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Leia as propriedades e as relações de todos os objetos phoneAuthenticationMethod deste usuário. |
 | [Get](../api/phoneauthenticationmethod-get.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Leia as propriedades e os relacionamentos do objeto phoneAuthenticationMethod. |
-| [Atualizar](../api/phoneauthenticationmethod-update.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Atualize o objeto phoneAuthenticationMethod. |
-| [Excluir](../api/phoneauthenticationmethod-delete.md) | Nenhuma | Exclua o objeto phoneAuthenticationMethod. |
+| [Atualização](../api/phoneauthenticationmethod-update.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Atualize o objeto phoneAuthenticationMethod. |
+| [Delete](../api/phoneauthenticationmethod-delete.md) | Nenhum | Exclua o objeto phoneAuthenticationMethod. |
 |[Desabilitar a entrada do SMS](../api/phoneauthenticationmethod-disablesmssignin.md)|Nenhum|Desative a entrada do SMS para um usuário.|
 |[Habilitar a entrada do SMS](../api/phoneauthenticationmethod-enablesmssignin.md)|Nenhum|Ative a entrada SMS para um usuário.|
 
@@ -52,9 +52,9 @@ A propriedade de estado de entrada do SMS fornece informações sobre se um núm
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|String| O identificador desse telefone registrado para este usuário. Somente leitura.|
-|phoneNumber|String|O número de telefone para texto ou chamada para autenticação. Os números de telefone usam o formato\<"+\> \<ramal\>\>de\<código de país x", com a extensão opcional. Por exemplo, + 1 5555551234 ou + 1 5555551234x123 são válidas. Os números são rejeitados ao criar/atualizar se não coincidem com o formato necessário. |
-|PhoneType|string|O tipo desse telefone. Os valores possíveis são `mobile`: `alternateMobile`,, `office`ou.|
-|smsSignInState|string|Se um telefone está pronto para ser usado para entrada do SMS ou não. Os valores possíveis são `notSupported`: `notAllowedByPolicy`, `notEnabled`, `phoneNumberNotUnique`, `ready`, ou `notConfigured`.|
+|phoneNumber|String|O número de telefone para texto ou chamada para autenticação. Os números de telefone usam o formato "+ \<country code\> \<number\> x \<extension\> ", com a extensão opcional. Por exemplo, + 1 5555551234 ou + 1 5555551234x123 são válidas. Os números são rejeitados ao criar/atualizar se não coincidem com o formato necessário. |
+|PhoneType|string|O tipo desse telefone. Os valores possíveis são: `mobile` , `alternateMobile` , ou `office` .|
+|smsSignInState|string|Se um telefone está pronto para ser usado para entrada do SMS ou não. Os valores possíveis são: `notSupported` , `notAllowedByPolicy` , `notEnabled` , `phoneNumberNotUnique` , `ready` ou `notConfigured` .|
 
 ## <a name="relationships"></a>Relações
 
@@ -92,3 +92,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

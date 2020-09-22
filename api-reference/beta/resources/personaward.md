@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 3031994e3b19fdd3962118c21d86a334c63781ea
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: cf9656eee15c2f537f7ba7e2727ce406850878c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812895"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997943"
 ---
 # <a name="personaward-resource-type"></a>tipo de recurso personAward
 
@@ -20,7 +20,7 @@ Representa um prêmio que foi associado ao [perfil](../resources/profile.md)de u
 
 Herda de [Myfacet](../resources/itemfacet.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar prêmios](../api/profile-list-awards.md)|coleção [personAward](../resources/personaward.md)|Obtenha os recursos personAward da propriedade de navegação Awards.|
@@ -87,3 +87,5 @@ Veja a seguir uma representação JSON do recurso.
   "webUrl": "String"
 }
 ```
+
+

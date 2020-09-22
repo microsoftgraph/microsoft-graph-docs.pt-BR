@@ -5,16 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 4df5f82bd14ba56969c26facef82b59f3ac7e3f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc63a75af497a2402955c39a2bcfc8efe370c782
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521936"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998037"
 ---
 # <a name="person-resource-type"></a>Tipo de recurso person
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,7 +33,7 @@ Uma agregação de informações sobre uma pessoa através de email, contatos e 
 |birthday|string|O aniversário da pessoa.|
 |companyName|string|O nome da empresa da pessoa.|
 |departamento|string|O departamento da pessoa.|
-|displayName|cadeia de caracteres|O nome de exibição da pessoa.|
+|displayName|string|O nome de exibição da pessoa.|
 |emailAddresses|coleção [rankedEmailAddress](rankedemailaddress.md)|Os endereços de email da pessoa.|
 |givenName|string|O nome fornecido da pessoa.|
 |id|string|O identificador exclusivo da pessoa. Somente leitura.|
@@ -107,3 +107,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

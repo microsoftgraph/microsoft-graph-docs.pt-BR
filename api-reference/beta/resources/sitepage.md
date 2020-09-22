@@ -6,16 +6,16 @@ title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 6b7ce7bc14ce95ec4573fb7660cb584703d4a54e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bdb7c0c89938eb3419607839aa1973812788063c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520531"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997694"
 ---
 # <a name="sitepage-resource"></a>recurso sitePage
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Ele contém o título, o layout e uma coleção de [WebPart][]s.
 ## <a name="tasks-on-a-page"></a>Tarefas em uma página
 
 As tarefas a seguir estão disponíveis para recursos do **sitePage** .
-Todos os exemplos abaixo são relativos a um [site][], por `https://graph.microsoft.com/{api-version}/sites/{site-id}`exemplo:.
+Todos os exemplos abaixo são relativos a um [site][], por exemplo: `https://graph.microsoft.com/{api-version}/sites/{site-id}` .
 
 | Tarefa comum                     | Método HTTP
 |:--------------------------------|:------------------------------
@@ -109,7 +109,7 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 
 | Nome da propriedade        | Tipo              | Descrição
 |:---------------------|:------------------|:----------------------------------
-| id                   | cadeia de caracteres            | O identificador exclusivo do item. Somente leitura.
+| id                   | string            | O identificador exclusivo do item. Somente leitura.
 | name                 | string            | O nome/título do item.
 | createdBy            | [identitySet][]   | Identidade do criador desse item. Somente leitura.
 | eTag                 | string            | ETag do item. Somente leitura.
@@ -157,3 +157,5 @@ TODO:
     * Add the URL to the underlying list item resource in the API
 * PATCH for list item patches /item/{item-id}/fields.
 -->
+
+

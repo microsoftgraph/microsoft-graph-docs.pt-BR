@@ -6,12 +6,12 @@ description: recurso Permission representando uma permissão de compartilhamento
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 2a260a6702e2d50ceac598e379ea6185310052ce
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 3151e6d070695f2010417f6befbb0c4e83fd3830
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46657907"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998081"
 ---
 # <a name="permission-resource-type"></a>tipo de recurso Permission
 
@@ -81,9 +81,9 @@ Veja a seguir uma representação JSON do recurso.
 
 | Função              | Detalhes                                                                        |
 |:------------------|:-------------------------------------------------------------------------------|
-| Saiba            | Fornece a capacidade de ler os metadados e o conteúdo do item.            |
-| gravável           | Fornece a capacidade de ler e modificar os metadados e o conteúdo do item. |
-| controle de SP. Full | Para o SharePoint e o OneDrive for Business, isso representa a função de proprietário.       |
+| leitura            | Oferece a capacidade de ler os metadados e o conteúdo do item.            |
+| gravação           | Oferece a capacidade de ler e modificar os metadados e o conteúdo do item. |
+| controle sp.full | Para o Microsoft Office SharePoint Online e o OneDrive for Business, este representa o papel do proprietário.       |
 
 O recurso permission usa _facetas_ para fornecer informações sobre o tipo de permissão representado pelo recurso.
 
@@ -272,3 +272,5 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
   "suppressions": []
 }
 -->
+
+

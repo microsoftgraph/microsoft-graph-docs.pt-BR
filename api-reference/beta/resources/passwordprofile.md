@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: eketo-msft
-ms.openlocfilehash: 4fdc58e79487b9577685929bb06865e3aca6906f
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 6bf70743e4dfa32d55ef588af22e4b5d0daf806f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812482"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998213"
 ---
 # <a name="passwordprofile-resource-type"></a>Tipo de recurso passwordProfile
 
@@ -61,3 +61,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a8124a379bd6195a71ad3377edf19e49d85edf9c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 139e718704539edc47c186c47b50265fefb345ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809600"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997925"
 ---
 # <a name="personresponsibility-resource-type"></a>tipo de recurso personResponsibility
 
@@ -22,7 +22,7 @@ Fornece informações detalhadas sobre as responsabilidades que o usuário tenha
 
 Herda de [Myfacet](../resources/itemfacet.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar responsabilidades](../api/profile-list-responsibilities.md)|coleção [personResponsibility](../resources/personresponsibility.md)|Obtenha os recursos personResponsibility da propriedade de navegação responsabilidades.|
@@ -35,7 +35,7 @@ Herda de [Myfacet](../resources/itemfacet.md).
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|collaborationTags|Coleção de cadeia de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` , `ableToMentor` , `wantsToLearn` , `wantsToImprove` .|
+|collaborationTags|Coleção de cadeias de caracteres|Contém marcas de cenário de experiência que um usuário associou aos juros. Os valores permitidos na coleção são: `askMeAbout` , `ableToMentor` , `wantsToLearn` , `wantsToImprove` .|
 |createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado de [MyFace](../resources/itemfacet.md).|
 |createdDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
 |description|String|Descrição da responsabilidade.|
@@ -87,3 +87,5 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: dkershaw10
-ms.openlocfilehash: 59898e05ae749badacbb9e116295d1be41c76e52
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 46bf87af658e0dc01c0f0db888118f7ae3bcde13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43316795"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997799"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>tipo de recurso physicalOfficeAddress
 
@@ -26,7 +26,7 @@ Representa o endereço comercial de um recurso, como um contato organizacional.
 |countryOrRegion|String|O país ou a região. É um valor de cadeia de caracteres de formato livre, por exemplo, "Brasil".|
 |officeLocation  | String | Local do Office, como o prédio e o número do escritório de um contato organizacional.  |
 |postalCode|String|O código de endereçamento postal, ou CEP.|
-|state|Cadeia de caracteres|O estado.|
+|state|String|O estado.|
 |street|String|O tipo de logradouro (rua, alameda, avenida, etc.).|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -62,3 +62,5 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

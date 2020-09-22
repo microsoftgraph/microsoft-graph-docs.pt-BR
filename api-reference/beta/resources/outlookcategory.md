@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b4ef198a977cf81ec0007f12ba4af1e9687e3874
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 1910ec86625241a99325a2b265353f3a4a116bc8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998387"
 ---
 # <a name="outlookcategory-resource-type"></a>Tipo de recurso outlookCategory
 
@@ -84,14 +84,14 @@ Veja a seguir uma representação JSON do recurso.
 
 ```
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Listar categorias](../api/outlookuser-list-mastercategories.md) | Coleção [outlookCategory](../resources/outlookcategory.md) |Obtém todas as categorias que foram definidas para o usuário.|
 |[Obter categoria](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |Obtenha as propriedades e as relações do objeto **outlookCategory** especificado.|
 |[Criar](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |Cria um objeto **outlookCategory** na lista mestra de categorias do usuário.|
 |[Atualizar](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |Atualize a propriedade gravável, **color**, do objeto **outlookCategory** especificado. |
-|[Delete](../api/outlookcategory-delete.md) | Nenhuma |Exclua o objeto **outlookCategory** especificado. |
+|[Delete](../api/outlookcategory-delete.md) | Nenhum |Exclua o objeto **outlookCategory** especificado. |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -109,3 +109,5 @@ Veja a seguir uma representação JSON do recurso.
 }
 -->
  
+
+

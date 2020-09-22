@@ -6,12 +6,12 @@ title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: c2b10d24acb1c4004de486904a8f2091c0a3db15
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 51a6f8653becc78d8bd95f3bc5a18d9ac342bda8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845733"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998030"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Tipo de recurso PersonOrGroupColumn
 
@@ -77,3 +77,5 @@ Observação: podem ser retornados tipos adicionais de DisplayAs.
   "suppressions": []
 }
 -->
+
+

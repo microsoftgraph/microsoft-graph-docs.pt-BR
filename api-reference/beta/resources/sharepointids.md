@@ -6,16 +6,16 @@ title: SharePointIds
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e22c653bf2dd88fe75fdb43dd8e9601c2a9d6d4e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f83d0cf56878d57c58d03774a8262904a9a5f020
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520685"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997806"
 ---
 # <a name="sharepointids-resource-type"></a>Tipo de recurso SharePointIds
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +50,7 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade         | Tipo         | Descrição
 |:-----------------|:-------------|:-------------------------------------------
 | listId           | string       | O identificador exclusivo (guid) para a lista do item no SharePoint.
-| listItemId       | cadeia de caracteres       | Um identificador inteiro para o item na lista contida.
+| listItemId       | string       | Um identificador inteiro para o item na lista contida.
 | listItemUniqueId | string       | O identificador exclusivo (guid) do item dentro do OneDrive for Business ou de um site do SharePoint.
 | siteId           | string       | O identificador exclusivo (guid) do conjunto de sites do item (SPSite).
 | siteUrl          | string (url) | A URL do SharePoint do site que contém o item.
@@ -75,3 +75,5 @@ Para saber mais sobre as facetas de um **driveItem**, confira [**driveItem**](dr
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: 1b61e4704ebbab9bea813bfe96c0ae9639fdb1b6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 40166a752f66968f207802ce68936ccd569822f9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807392"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997568"
 ---
 # <a name="skypeforbusinessactivitycounts-resource-type"></a>tipo de recurso skypeForBusinessActivityCounts
 
@@ -46,3 +46,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

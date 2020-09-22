@@ -6,16 +6,16 @@ localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: bdb587e7440fd98c48f71a2611e2a34e039367dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 920d6e69367517b1324b6cb66b755b6b58192219
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521880"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997820"
 ---
 # <a name="photo-resource-type"></a>tipo de recurso Photo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +32,7 @@ O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadad
 |cameraModel        |String         | Modelo da câmera. Somente leitura.                                                   |
 |exposureDenominator|Duplo         | O denominador da fração do tempo de exposição da câmera. Somente leitura. |
 |exposureNumerator  |Duplo         | O numerador da fração do tempo de exposição da câmera. Somente leitura.   |
-|fNumber            |Duplo         | O valor de f-stop da câmera. Somente leitura.                               |
+|fNumber            |Double         | O valor de f-stop da câmera. Somente leitura.                               |
 |focalLength        |Double         | A distância focal da câmera. Somente leitura.                               |
 |iso                |Int32          | O valor de ISO da câmera. Somente leitura.                                  |
 |orientation        |Int16          | O valor da orientação da câmera. Gravável no OneDrive Personal.      |
@@ -74,3 +74,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

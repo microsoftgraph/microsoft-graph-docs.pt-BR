@@ -6,16 +6,16 @@ title: SharingInvitation
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 6bbe39603ed4daad9c354b1c14ed6a68b3638c6d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4c6a26e2acfdc4bca1eed34191ba78f333b5fc9f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520650"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997701"
 ---
 # <a name="sharinginvitation-resource-type"></a>Tipo de recurso SharingInvitation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -67,3 +67,5 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "suppressions": []
 }
 -->
+
+

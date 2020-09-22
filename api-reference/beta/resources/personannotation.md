@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 757797a8a252f934050cb8425f49042707734ed5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 403df171498bcde62d113ce2a2f2a27cf3987285
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812896"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997967"
 ---
 # <a name="personannotation-resource-type"></a>tipo de recurso personAnnotation
 
@@ -20,7 +20,7 @@ Fornece informações sobre as anotações que o usuário já associou em vário
 
 Herda de [Myfacet](../resources/itemfacet.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar anotações](../api/profile-list-notes.md)|coleção [personAnnotation](../resources/personannotation.md)|Obtenha os recursos personAnnotation da propriedade de navegação Notes.|
@@ -81,3 +81,5 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
+
+

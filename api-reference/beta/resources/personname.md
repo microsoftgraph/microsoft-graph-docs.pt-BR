@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 7d9e8cd31ee6e63bbd009b7a71bfb246aeeee2e1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1f1817e3d9868e47158453113f4781ebfc155f86
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806244"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997939"
 ---
 # <a name="personname-resource-type"></a>tipo de recurso PersonName
 
@@ -22,7 +22,7 @@ Representa as informações de nome estendidas fornecidas pelo usuário ou que e
 
 Herda de [Myfacet](../resources/itemfacet.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Nomes da lista](../api/profile-list-names.md)|coleção [PersonName](../resources/personname.md)|Obtenha os recursos PersonName da propriedade de navegação names.|
@@ -101,3 +101,4 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+

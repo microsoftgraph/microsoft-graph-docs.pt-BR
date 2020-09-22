@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e20bcd2b9ddeab5ce255285fb6e13af5acb72fce
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: d79f2347acabae0323e008a43adb7938d70d3768
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658170"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998191"
 ---
 # <a name="passwordsinglesignonfield-resource-type"></a>tipo de recurso passwordSingleSignOnField
 
@@ -25,7 +25,7 @@ Contém os campos a serem capturados para preencher as credenciais de uso para l
 |customizedLabel|String|Substituição de título/rótulo para personalização.|
 |defaultlabel|String|Rótulo que seria usado se nenhum customizedLabel for fornecido. Somente leitura.|
 |fieldId|String|ID usada para identificar o tipo de campo. Esta é uma ID interna e os valores possíveis são:,, `param_1` `param_2` `param_userName` `param_password` .|
-|type|String|   Tipo da credencial. Os valores podem ser `text` , `password` .|
+|tipo|String|   Tipo da credencial. Os valores podem ser `text` , `password` .|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -58,3 +58,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

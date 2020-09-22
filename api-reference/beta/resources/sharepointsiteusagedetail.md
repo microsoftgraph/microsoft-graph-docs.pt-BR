@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 3515c4e051977b6ca0d358fa94c566b717b7c1c1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1b61321dfeb0a9aa14651e7d13ad7184b30c3423
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812411"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997785"
 ---
 # <a name="sharepointsiteusagedetail-resource-type"></a>tipo de recurso sharePointSiteUsageDetail
 
@@ -25,7 +25,7 @@ Namespace: microsoft.graph
 | siteUrl                 | String  |
 | ownerDisplayName        | String  |
 | ownerPrincipalName      | String  |
-| isDeleted               | Booliano |
+| isDeleted               | Boolean |
 | lastActivityDate        | Data    |
 | Contagem de FileCount               | Int64   |
 | activeFileCount         | Int64   |
@@ -64,3 +64,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

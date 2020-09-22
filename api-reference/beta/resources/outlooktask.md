@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e51f58ddc923a1ccee87abcdad8456e53d209703
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 524adc7d538203569253af52d29d1fa588f00269
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312128"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998368"
 ---
 # <a name="outlooktask-resource-type-deprecated"></a>tipo de recurso outlookTask (substituído)
 
@@ -140,3 +140,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+
