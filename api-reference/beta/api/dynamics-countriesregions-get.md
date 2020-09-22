@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d916ed3e1de5643983808c3bd410a2746d64c2b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30916ec2fd6bd00f92a5ad96be05400d7ec4c92f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431890"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008363"
 ---
 # <a name="get-countriesregions"></a>Obter countriesRegions
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **countriesRegions** no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **countriesRegions** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -59,7 +59,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions/{id}
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 
@@ -74,3 +74,5 @@ Veja a seguir um exemplo da resposta.
   "lastModifiedDateTime": "2017-03-14T15:22:31.753Z"
 }
 ```
+
+

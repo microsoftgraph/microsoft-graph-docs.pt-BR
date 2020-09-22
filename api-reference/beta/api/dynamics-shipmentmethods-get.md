@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 6055bc8cd68e289ecb73fb4d77f61576fe0cfc92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 41213b2463bdd1c0d2f6f6db6f87dce9d1ee189e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42428450"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008208"
 ---
 # <a name="get-shipmentmethods"></a>Obter shipmentMethods
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **shipmentMethods** no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **shipmentMethods** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -60,7 +60,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies/{id}/shipmentMethods/{id}
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 
@@ -74,4 +74,6 @@ Veja a seguir um exemplo da resposta.
   "lastModifiedDateTime": "2017-03-15T02:20:57.09Z"
 }
 ```
+
+
 

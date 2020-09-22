@@ -6,16 +6,16 @@ title: Obter pastas especiais
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 04f34a560fc72f47a0797c02f02e36e7e91a9838
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fe196ea1a528df88fd3533e576e928d3af685863
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433311"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008460"
 ---
 # <a name="get-a-special-folder-by-name"></a>Obtenha uma pasta especial por nome
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -163,3 +163,5 @@ Se seu aplicativo tiver permissões somente leitura, a solicitação para obter 
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 503655b7a12c33584db8a4473187f88d7185c36b
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 032c9af59751b2695bc039ea4b8a4bbb60859fb9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180015"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008495"
 ---
 # <a name="list-domains"></a>Listar domínios
 
@@ -120,3 +120,5 @@ Content-length: 245
   ]
 }
 -->
+
+

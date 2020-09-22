@@ -5,16 +5,16 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a65b8f1cbb38a6286303d7e51e68a1d5a98c74e0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d6d76e5d416af96b916ac8f5325ee0a95681f649
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375587"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008628"
 ---
 # <a name="update-a-directory-setting"></a>Atualizar uma configuração de diretório
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -114,3 +114,5 @@ HTTP/1.1 204 OK
   ]
 }
 -->
+
+

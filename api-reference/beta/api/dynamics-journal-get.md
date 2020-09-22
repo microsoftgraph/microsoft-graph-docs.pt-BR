@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 3265c600a5314a927df3ec15aff519ff9d139d3e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0b6fbfb9b07e6424f19cd868a3939802172bad21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42429129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008320"
 ---
 # <a name="get-journals"></a>Obter diários
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **Journals** no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **Journals** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -60,7 +60,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 
@@ -74,4 +74,6 @@ Veja a seguir um exemplo da resposta.
   "lastModifiedDateTime": "2017-05-17T11:30:01.313Z"
 }
 ```
+
+
 

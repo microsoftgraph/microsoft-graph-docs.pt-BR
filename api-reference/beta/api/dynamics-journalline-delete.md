@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 64de86b424bed9a1592ceb7ae5194c42d9233352
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c293b28547846083a6ec1df743d12a3c205e6665
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42428926"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008313"
 ---
 # <a name="delete-journallines"></a>Excluir journalLines
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -63,10 +63,12 @@ Este é um exemplo da solicitação.
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 
-**Response** 
+**Resposta** 
 
 Veja a seguir um exemplo da resposta. 
 
 ```json
 HTTP/1.1 204 No Content
 ```
+
+

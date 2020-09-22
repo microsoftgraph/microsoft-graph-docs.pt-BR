@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 161c4c3d295437d3a62f1cb2e97c64b3efa99aa6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cbf7abae89c7cc7c212920807b190b2072ef815d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431967"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008453"
 ---
 # <a name="get-companies"></a>Obter empresas
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,7 +58,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 
@@ -73,3 +73,5 @@ Veja a seguir um exemplo da resposta.
     "businessProfileId": ""
 }
 ```
+
+

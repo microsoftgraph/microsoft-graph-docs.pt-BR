@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 960e33b108ec49618126f9e9d77a92dc80be26d7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e864b8237d71a21542b69052046f5f75aadba569
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42428275"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008090"
 ---
 # <a name="delete-taxgroups"></a>Excluir taxGroups
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,10 +61,12 @@ Este é um exemplo da solicitação.
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/taxGroups/{id}
 ```
 
-**Response** 
+**Resposta** 
 
 Veja a seguir um exemplo da resposta. 
 
 ```json
 HTTP/1.1 204 No Content
 ```
+
+

@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: ebb4eb14f10f92458a6c83b8bc23b6e1cb506528
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb1e7198e15fee05aee0d0c8d5e787eb478b0c4b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42428471"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008212"
 ---
 # <a name="delete-shipmentmethods"></a>Excluir shipmentMethods
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,10 +61,12 @@ Este é um exemplo da solicitação.
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/shipmentMethods/{id}
 ```
 
-**Response** 
+**Resposta** 
 
 Veja a seguir um exemplo da resposta. 
 
 ```json
 HTTP/1.1 204 No Content
 ```
+
+

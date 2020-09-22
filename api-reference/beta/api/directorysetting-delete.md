@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9bb979df437f9f3a18ad1fbc5351c39e041ae5b0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2465ee09047621c06ba618ba012d495ad1f24cc7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375783"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008642"
 ---
 # <a name="delete-a-directory-setting"></a>Excluir uma configuração de diretório
 
@@ -99,3 +99,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

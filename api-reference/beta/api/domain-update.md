@@ -5,16 +5,16 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6c39f488b3d41c099d996023617d726be09a9cdf
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 5195241cb1a011079935c5a7518f73c1b8220f1b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179840"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008481"
 ---
 # <a name="update-domain"></a>Atualizar domínio
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +54,7 @@ No corpo da solicitação, forneça os valores de campos relevantes a serem atua
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `204 No Content` um código de resposta e nenhum corpo de resposta.
+Se tiver êxito, este método retornará um `204 No Content` código de resposta e nenhum corpo de resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -116,3 +116,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -6,16 +6,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 613ad01feddc87941a6e6775195364e75ca4e57a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c5005a3fb97b44a173042d76088fb6fee0947a1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431673"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008348"
 ---
 # <a name="create-customerpayments"></a>Criar customerPayments
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -75,7 +75,7 @@ Content-type: application/json
   "comment": "",
 }
 ```
-**Response**
+**Resposta**
 
 ```json
 HTTP/1.1 201 Created
@@ -98,4 +98,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
+
+
 

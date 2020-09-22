@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d2f90d11e8ec4b052a6f5f8ff03603acdff6fe29
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 3ea2d7b6cbf722ae43e57d1649192a4d44717001
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180955"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008927"
 ---
 # <a name="directoryobject-delta"></a>directoryobject: Delta
 
@@ -57,8 +57,8 @@ Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` 
 
 Este método fornece suporte opcional a Parâmetros de Consulta OData para ajudar a personalizar a resposta.
 
-- Você pode usar `$filter` com o operador `isOf` especial para filtrar um subconjunto de tipos derivados de directoryobject.
-  - Você pode combinar várias expressões usando um `or`, que permite que você tenha uma única consulta Delta de acompanhamento de vários tipos. Confira o [terceiro exemplo](#request-3) para obter detalhes.
+- Você pode usar `$filter` com o `isOf` operador especial para filtrar um subconjunto de tipos derivados de directoryobject.
+  - Você pode combinar várias expressões usando um `or` , que permite que você tenha uma única consulta Delta de acompanhamento de vários tipos. Confira o [terceiro exemplo](#request-3) para obter detalhes.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -356,3 +356,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

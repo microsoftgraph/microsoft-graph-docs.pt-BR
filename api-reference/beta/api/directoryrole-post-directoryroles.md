@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aa030ef3944ac1e3f4c27a7260425ac6aeda77f7
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: aef27a02deee36693c921051677dbaa355c04568
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180869"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008747"
 ---
 # <a name="activate-directoryrole"></a>Ativar directoryRole
 
@@ -121,3 +121,5 @@ Content-length: 175
   ]
 }
 -->
+
+
