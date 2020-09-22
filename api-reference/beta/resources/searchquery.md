@@ -5,32 +5,32 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: b5c46353d0533fb2c032765527ed5ccf7107e1b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: db647c47c528428820acc2ded9b079546b991be6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520911"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985738"
 ---
-# <a name="searchquery-resource-type"></a><span data-ttu-id="35f40-103">tipo de recurso searchQuery</span><span class="sxs-lookup"><span data-stu-id="35f40-103">searchQuery resource type</span></span>
+# <a name="searchquery-resource-type"></a><span data-ttu-id="dc1be-103">tipo de recurso searchQuery</span><span class="sxs-lookup"><span data-stu-id="dc1be-103">searchQuery resource type</span></span>
 
-<span data-ttu-id="35f40-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="35f40-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="dc1be-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dc1be-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="35f40-105">Representa uma consulta de pesquisa que contém termos de pesquisa e filtros opcionais.</span><span class="sxs-lookup"><span data-stu-id="35f40-105">Represents a search query that contains search terms and optional filters.</span></span>
+<span data-ttu-id="dc1be-105">Representa uma consulta de pesquisa que contém termos de pesquisa e filtros opcionais.</span><span class="sxs-lookup"><span data-stu-id="dc1be-105">Represents a search query that contains search terms and optional filters.</span></span>
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="properties"></a><span data-ttu-id="35f40-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="35f40-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="dc1be-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="dc1be-106">Properties</span></span>
 
-| <span data-ttu-id="35f40-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="35f40-107">Property</span></span>     | <span data-ttu-id="35f40-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="35f40-108">Type</span></span>        | <span data-ttu-id="35f40-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="35f40-109">Description</span></span> |
+| <span data-ttu-id="dc1be-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="dc1be-107">Property</span></span>     | <span data-ttu-id="dc1be-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="dc1be-108">Type</span></span>        | <span data-ttu-id="dc1be-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="dc1be-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="35f40-110">query_string</span><span class="sxs-lookup"><span data-stu-id="35f40-110">query_string</span></span>|[<span data-ttu-id="35f40-111">searchQueryString</span><span class="sxs-lookup"><span data-stu-id="35f40-111">searchQueryString</span></span>](searchquerystring.md)|<span data-ttu-id="35f40-112">A consulta de pesquisa que contém os termos da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="35f40-112">The search query containing the search terms.</span></span>|
+|<span data-ttu-id="dc1be-110">query_string</span><span class="sxs-lookup"><span data-stu-id="dc1be-110">query_string</span></span>|[<span data-ttu-id="dc1be-111">searchQueryString</span><span class="sxs-lookup"><span data-stu-id="dc1be-111">searchQueryString</span></span>](searchquerystring.md)|<span data-ttu-id="dc1be-112">A consulta de pesquisa que contém os termos da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="dc1be-112">The search query containing the search terms.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="35f40-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="35f40-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dc1be-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="dc1be-113">JSON representation</span></span>
 
-<span data-ttu-id="35f40-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="35f40-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="dc1be-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="dc1be-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -56,3 +56,4 @@ ms.locfileid: "42520911"
   "section": "documentation",
   "tocPath": ""
 }-->
+
