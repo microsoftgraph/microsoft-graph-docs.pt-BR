@@ -311,14 +311,20 @@ items:
                 href: search-concept-messages.md
               - name: Pesquisar eventos
                 href: search-concept-events.md
-              - name: Pesquisar arquivos
+              - name: Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online
                 href: search-concept-files.md
               - name: Pesquisar conectores
                 href: search-concept-custom-types.md
+              - name: Classificar resultados de pesquisa
+                href: search-concept-sort.md
+              - name: Refinar resultados de pesquisa
+                href: search-concept-aggregation.md
           - name: Índice
             items:
               - name: Gerenciar conexões
                 href: search-index-manage-connections.md
+              - name: Gerenciar esquema
+                href: search-index-manage-schema.md
               - name: Gerenciar itens
                 href: search-index-manage-items.md
       - name: Segurança
@@ -431,7 +437,7 @@ items:
                 href: /learn/modules/msgraph-changenotifications-trackchanges
               - name: Notificações ausentes do Outlook (versão prévia)
                 href: webhooks-outlook-authz.md
-              - name: Notificações com dados de recursos (visualização)
+              - name: Notificações com dados de recursos
                 href: webhooks-with-resource-data.md
               - name: Receba notificações de diferentes maneiras (visualização)
                 href: change-notifications-delivery.md
@@ -515,6 +521,16 @@ items:
             href: sdks/large-file-upload.md
           - name: Usar API beta
             href: sdks/use-beta.md
+          - name: Usar o Windows PowerShell!
+            items:
+              - name: Instalação
+                href: powershell/installation.md
+              - name: Introdução
+                href: powershell/get-started.md
+              - name: Navegando no SDK
+                href: powershell/navigating.md
+              - name: Autenticação somente para aplicativo
+                href: powershell/app-only.md
       - name: Usar o kit de ferramentas
         items:
           - name: Visão geral do kit de ferramentas
