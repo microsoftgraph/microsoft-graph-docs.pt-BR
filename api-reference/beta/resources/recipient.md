@@ -5,29 +5,29 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: ccd210eeecd84acf8094f7a55b1733e64c4a5437
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b7c04404a557a897af4008f024e27a47684e835f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810465"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993018"
 ---
-# <a name="recipient-resource-type"></a><span data-ttu-id="29601-103">Tipo de recurso recipient</span><span class="sxs-lookup"><span data-stu-id="29601-103">recipient resource type</span></span>
+# <a name="recipient-resource-type"></a><span data-ttu-id="a2c77-103">Tipo de recurso recipient</span><span class="sxs-lookup"><span data-stu-id="a2c77-103">recipient resource type</span></span>
 
-<span data-ttu-id="29601-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="29601-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a2c77-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a2c77-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="29601-105">Representa informações sobre um usuário no envio ou recebimento de um evento, mensagem ou postagem de grupo.</span><span class="sxs-lookup"><span data-stu-id="29601-105">Represents information about a user in the sending or receiving end of an event, message or group post.</span></span>
+<span data-ttu-id="a2c77-105">Representa informações sobre um usuário no envio ou recebimento de um evento, mensagem ou postagem de grupo.</span><span class="sxs-lookup"><span data-stu-id="a2c77-105">Represents information about a user in the sending or receiving end of an event, message or group post.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="29601-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="29601-106">Properties</span></span>
-| <span data-ttu-id="29601-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="29601-107">Property</span></span>     | <span data-ttu-id="29601-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="29601-108">Type</span></span>   |<span data-ttu-id="29601-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="29601-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a2c77-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a2c77-106">Properties</span></span>
+| <span data-ttu-id="a2c77-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a2c77-107">Property</span></span>     | <span data-ttu-id="a2c77-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="a2c77-108">Type</span></span>   |<span data-ttu-id="a2c77-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="a2c77-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="29601-110">emailAddress</span><span class="sxs-lookup"><span data-stu-id="29601-110">emailAddress</span></span>|[<span data-ttu-id="29601-111">EmailAddress</span><span class="sxs-lookup"><span data-stu-id="29601-111">EmailAddress</span></span>](emailaddress.md)|<span data-ttu-id="29601-112">O endereço de email do destinatário.</span><span class="sxs-lookup"><span data-stu-id="29601-112">The recipient's email address.</span></span>|
+|<span data-ttu-id="a2c77-110">emailAddress</span><span class="sxs-lookup"><span data-stu-id="a2c77-110">emailAddress</span></span>|[<span data-ttu-id="a2c77-111">EmailAddress</span><span class="sxs-lookup"><span data-stu-id="a2c77-111">EmailAddress</span></span>](emailaddress.md)|<span data-ttu-id="a2c77-112">O endereço de email do destinatário.</span><span class="sxs-lookup"><span data-stu-id="a2c77-112">The recipient's email address.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="29601-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="29601-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a2c77-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a2c77-113">JSON representation</span></span>
 
-<span data-ttu-id="29601-114">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="29601-114">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="a2c77-114">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="a2c77-114">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -56,3 +56,5 @@ ms.locfileid: "46810465"
   "suppressions": []
 }
 -->
+
+
