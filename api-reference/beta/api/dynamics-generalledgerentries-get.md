@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 67d95e18f16fd7a556ef78f13dbb1e09f1eb6b8f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4aa22cf2a0634d9c54d6c9e12573730714be3ca4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42429941"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981307"
 ---
 # <a name="get-generalledgerentries"></a>Obter generalLedgerEntries
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **generalLedgerEntries** no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **generalLedgerEntries** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -60,7 +60,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies/{id}/generalLedgerEntries/{id}
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 
@@ -80,4 +80,6 @@ Veja a seguir um exemplo da resposta.
     "lastModifiedDateTime": "2017-03-15T02:20:58.747Z"
 }
 ```
+
+
 
