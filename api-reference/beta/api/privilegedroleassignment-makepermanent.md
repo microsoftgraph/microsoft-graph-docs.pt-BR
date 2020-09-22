@@ -5,63 +5,63 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: c2c041cc23bfe9118d9a4745a69796239952bac8
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 7f5d98eab91bf6146e82fc9968c654b9843e5a8e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218707"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035040"
 ---
-# <a name="privilegedroleassignment-makepermanent"></a><span data-ttu-id="e797d-103">privilegedRoleAssignment: makePermanent</span><span class="sxs-lookup"><span data-stu-id="e797d-103">privilegedRoleAssignment: makePermanent</span></span>
+# <a name="privilegedroleassignment-makepermanent"></a><span data-ttu-id="7b228-103">privilegedRoleAssignment: makePermanent</span><span class="sxs-lookup"><span data-stu-id="7b228-103">privilegedRoleAssignment: makePermanent</span></span>
 
-<span data-ttu-id="e797d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e797d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7b228-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7b228-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e797d-105">Tornar a atribuição de função permanente.</span><span class="sxs-lookup"><span data-stu-id="e797d-105">Make the role assignment permanent.</span></span>
+<span data-ttu-id="7b228-105">Tornar a atribuição de função permanente.</span><span class="sxs-lookup"><span data-stu-id="7b228-105">Make the role assignment permanent.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e797d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="e797d-106">Permissions</span></span>
-<span data-ttu-id="e797d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e797d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7b228-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="7b228-106">Permissions</span></span>
+<span data-ttu-id="7b228-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7b228-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="e797d-109">O locatário precisa ser registrado no PIM.</span><span class="sxs-lookup"><span data-stu-id="e797d-109">The tenant needs to be registered to PIM.</span></span> <span data-ttu-id="e797d-110">Caso contrário, o erro HTTP 403 proibido será retornado.</span><span class="sxs-lookup"><span data-stu-id="e797d-110">Otherwise, HTTP 403 Forbidden error will be returned.</span></span>
+<span data-ttu-id="7b228-109">O locatário precisa ser registrado no PIM.</span><span class="sxs-lookup"><span data-stu-id="7b228-109">The tenant needs to be registered to PIM.</span></span> <span data-ttu-id="7b228-110">Caso contrário, o erro HTTP 403 proibido será retornado.</span><span class="sxs-lookup"><span data-stu-id="7b228-110">Otherwise, HTTP 403 Forbidden error will be returned.</span></span>
 
-<span data-ttu-id="e797d-111">O solicitante precisa ter função de _administrador de função privilegiada_ .</span><span class="sxs-lookup"><span data-stu-id="e797d-111">The requestor needs to have _Privileged Role Administrator_ role.</span></span> 
+<span data-ttu-id="7b228-111">O solicitante precisa ter função de _administrador de função privilegiada_ .</span><span class="sxs-lookup"><span data-stu-id="7b228-111">The requestor needs to have _Privileged Role Administrator_ role.</span></span> 
 
-|<span data-ttu-id="e797d-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e797d-112">Permission type</span></span>      | <span data-ttu-id="e797d-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e797d-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7b228-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7b228-112">Permission type</span></span>      | <span data-ttu-id="7b228-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7b228-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e797d-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e797d-114">Delegated (work or school account)</span></span> | <span data-ttu-id="e797d-115">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="e797d-115">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="e797d-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e797d-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e797d-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e797d-117">Not supported.</span></span>    |
-|<span data-ttu-id="e797d-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e797d-118">Application</span></span> | <span data-ttu-id="e797d-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e797d-119">Not supported.</span></span> |
+|<span data-ttu-id="7b228-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7b228-114">Delegated (work or school account)</span></span> | <span data-ttu-id="7b228-115">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7b228-115">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="7b228-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7b228-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7b228-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7b228-117">Not supported.</span></span>    |
+|<span data-ttu-id="7b228-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7b228-118">Application</span></span> | <span data-ttu-id="7b228-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7b228-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e797d-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e797d-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7b228-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7b228-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoleAssignments/{id}/makePermanent
 ```
-## <a name="request-headers"></a><span data-ttu-id="e797d-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e797d-121">Request headers</span></span>
-| <span data-ttu-id="e797d-122">Nome</span><span class="sxs-lookup"><span data-stu-id="e797d-122">Name</span></span>       | <span data-ttu-id="e797d-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="e797d-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7b228-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7b228-121">Request headers</span></span>
+| <span data-ttu-id="7b228-122">Nome</span><span class="sxs-lookup"><span data-stu-id="7b228-122">Name</span></span>       | <span data-ttu-id="7b228-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="7b228-123">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="e797d-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="e797d-124">Authorization</span></span>  | <span data-ttu-id="e797d-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e797d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7b228-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="7b228-124">Authorization</span></span>  | <span data-ttu-id="7b228-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7b228-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e797d-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e797d-127">Request body</span></span>
-<span data-ttu-id="e797d-128">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e797d-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7b228-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7b228-127">Request body</span></span>
+<span data-ttu-id="7b228-128">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7b228-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="e797d-129">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="e797d-129">Parameter</span></span>    | <span data-ttu-id="e797d-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="e797d-130">Type</span></span>   |<span data-ttu-id="e797d-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="e797d-131">Description</span></span>|
+| <span data-ttu-id="7b228-129">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="7b228-129">Parameter</span></span>    | <span data-ttu-id="7b228-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="7b228-130">Type</span></span>   |<span data-ttu-id="7b228-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="7b228-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e797d-132">motivo</span><span class="sxs-lookup"><span data-stu-id="e797d-132">reason</span></span>|<span data-ttu-id="e797d-133">string</span><span class="sxs-lookup"><span data-stu-id="e797d-133">string</span></span>|<span data-ttu-id="e797d-134">Opcional.</span><span class="sxs-lookup"><span data-stu-id="e797d-134">Optional.</span></span> <span data-ttu-id="e797d-135">O motivo para fazer essa chamada.</span><span class="sxs-lookup"><span data-stu-id="e797d-135">The reason to make this call.</span></span>|
-|<span data-ttu-id="e797d-136">ticketNumber</span><span class="sxs-lookup"><span data-stu-id="e797d-136">ticketNumber</span></span>|<span data-ttu-id="e797d-137">string</span><span class="sxs-lookup"><span data-stu-id="e797d-137">string</span></span>|<span data-ttu-id="e797d-138">Opcional.</span><span class="sxs-lookup"><span data-stu-id="e797d-138">Optional.</span></span> <span data-ttu-id="e797d-139">O número do tíquete associado a esta ação.</span><span class="sxs-lookup"><span data-stu-id="e797d-139">The ticket number that is associated with this action.</span></span>|
-|<span data-ttu-id="e797d-140">ticketSystem</span><span class="sxs-lookup"><span data-stu-id="e797d-140">ticketSystem</span></span>|<span data-ttu-id="e797d-141">string</span><span class="sxs-lookup"><span data-stu-id="e797d-141">string</span></span>|<span data-ttu-id="e797d-142">Opcional.</span><span class="sxs-lookup"><span data-stu-id="e797d-142">Optional.</span></span> <span data-ttu-id="e797d-143">O sistema de permissão.</span><span class="sxs-lookup"><span data-stu-id="e797d-143">The ticket system.</span></span>|
+|<span data-ttu-id="7b228-132">motivo</span><span class="sxs-lookup"><span data-stu-id="7b228-132">reason</span></span>|<span data-ttu-id="7b228-133">string</span><span class="sxs-lookup"><span data-stu-id="7b228-133">string</span></span>|<span data-ttu-id="7b228-134">Opcional.</span><span class="sxs-lookup"><span data-stu-id="7b228-134">Optional.</span></span> <span data-ttu-id="7b228-135">O motivo para fazer essa chamada.</span><span class="sxs-lookup"><span data-stu-id="7b228-135">The reason to make this call.</span></span>|
+|<span data-ttu-id="7b228-136">ticketNumber</span><span class="sxs-lookup"><span data-stu-id="7b228-136">ticketNumber</span></span>|<span data-ttu-id="7b228-137">string</span><span class="sxs-lookup"><span data-stu-id="7b228-137">string</span></span>|<span data-ttu-id="7b228-138">Opcional.</span><span class="sxs-lookup"><span data-stu-id="7b228-138">Optional.</span></span> <span data-ttu-id="7b228-139">O número do tíquete associado a esta ação.</span><span class="sxs-lookup"><span data-stu-id="7b228-139">The ticket number that is associated with this action.</span></span>|
+|<span data-ttu-id="7b228-140">ticketSystem</span><span class="sxs-lookup"><span data-stu-id="7b228-140">ticketSystem</span></span>|<span data-ttu-id="7b228-141">string</span><span class="sxs-lookup"><span data-stu-id="7b228-141">string</span></span>|<span data-ttu-id="7b228-142">Opcional.</span><span class="sxs-lookup"><span data-stu-id="7b228-142">Optional.</span></span> <span data-ttu-id="7b228-143">O sistema de permissão.</span><span class="sxs-lookup"><span data-stu-id="7b228-143">The ticket system.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e797d-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="e797d-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7b228-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="7b228-144">Response</span></span>
 
-<span data-ttu-id="e797d-145">Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e797d-145">If successful, this method returns `200 OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.</span></span>
+<span data-ttu-id="7b228-145">Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7b228-145">If successful, this method returns `200 OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e797d-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e797d-146">Example</span></span>
-<span data-ttu-id="e797d-147">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="e797d-147">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="e797d-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e797d-148">Request</span></span>
-<span data-ttu-id="e797d-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e797d-149">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7b228-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7b228-146">Example</span></span>
+<span data-ttu-id="7b228-147">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="7b228-147">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="7b228-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7b228-148">Request</span></span>
+<span data-ttu-id="7b228-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7b228-149">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e797d-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="e797d-150">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7b228-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="7b228-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "privilegedroleassignment_makepermanent"
@@ -77,23 +77,23 @@ Content-length: 110
   "ticketSystem": "ticketSystem-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="e797d-151">C#</span><span class="sxs-lookup"><span data-stu-id="e797d-151">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7b228-151">C#</span><span class="sxs-lookup"><span data-stu-id="7b228-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/privilegedroleassignment-makepermanent-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e797d-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e797d-152">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7b228-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7b228-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/privilegedroleassignment-makepermanent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e797d-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e797d-153">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7b228-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7b228-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedroleassignment-makepermanent-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="e797d-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="e797d-154">Response</span></span>
-<span data-ttu-id="e797d-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e797d-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="7b228-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="7b228-154">Response</span></span>
+<span data-ttu-id="7b228-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7b228-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,3 +127,5 @@ Content-length: 184
   ]
 }
 -->
+
+

@@ -5,53 +5,53 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 966cd639c820032f129ddb28de91ab502daca879
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: d4def36af2088469b808e9a12f8cde93556029b4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674131"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035365"
 ---
-# <a name="get-printservice"></a><span data-ttu-id="6b0c4-103">Obter serviço de multiatendimento</span><span class="sxs-lookup"><span data-stu-id="6b0c4-103">Get printService</span></span>
+# <a name="get-printservice"></a><span data-ttu-id="b8989-103">Obter serviço de multiatendimento</span><span class="sxs-lookup"><span data-stu-id="b8989-103">Get printService</span></span>
 
-<span data-ttu-id="6b0c4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6b0c4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b8989-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b8989-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6b0c4-105">Recupere as propriedades e os relacionamentos de um serviço de impressão.</span><span class="sxs-lookup"><span data-stu-id="6b0c4-105">Retrieve the properties and relationships of a print service.</span></span>
+<span data-ttu-id="b8989-105">Recupere as propriedades e os relacionamentos de um serviço de impressão.</span><span class="sxs-lookup"><span data-stu-id="b8989-105">Retrieve the properties and relationships of a print service.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6b0c4-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="6b0c4-106">Permissions</span></span>
-<span data-ttu-id="6b0c4-107">Nenhuma permissão é necessária para chamar essa API, mas para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa.</span><span class="sxs-lookup"><span data-stu-id="6b0c4-107">No permissions are needed to call this API, but to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b8989-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="b8989-106">Permissions</span></span>
+<span data-ttu-id="b8989-107">Nenhuma permissão é necessária para chamar essa API, mas para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa.</span><span class="sxs-lookup"><span data-stu-id="b8989-107">No permissions are needed to call this API, but to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.</span></span>
 
-|<span data-ttu-id="6b0c4-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6b0c4-108">Permission type</span></span> | <span data-ttu-id="6b0c4-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6b0c4-109">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="b8989-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b8989-108">Permission type</span></span> | <span data-ttu-id="b8989-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b8989-109">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="6b0c4-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6b0c4-110">Delegated (work or school account)</span></span>|<span data-ttu-id="6b0c4-111">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="6b0c4-111">None.</span></span>|
-|<span data-ttu-id="6b0c4-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6b0c4-112">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6b0c4-113">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="6b0c4-113">None.</span></span>|
-|<span data-ttu-id="6b0c4-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6b0c4-114">Application</span></span>|<span data-ttu-id="6b0c4-115">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="6b0c4-115">None.</span></span>|
+|<span data-ttu-id="b8989-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b8989-110">Delegated (work or school account)</span></span>|<span data-ttu-id="b8989-111">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="b8989-111">None.</span></span>|
+|<span data-ttu-id="b8989-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b8989-112">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b8989-113">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="b8989-113">None.</span></span>|
+|<span data-ttu-id="b8989-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b8989-114">Application</span></span>|<span data-ttu-id="b8989-115">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="b8989-115">None.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6b0c4-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6b0c4-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b8989-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b8989-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/services/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="6b0c4-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="6b0c4-117">Optional query parameters</span></span>
-<span data-ttu-id="6b0c4-118">Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="6b0c4-118">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="6b0c4-119">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="6b0c4-119">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b8989-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b8989-117">Optional query parameters</span></span>
+<span data-ttu-id="b8989-118">Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="b8989-118">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="b8989-119">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="b8989-119">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6b0c4-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6b0c4-120">Request headers</span></span>
-| <span data-ttu-id="6b0c4-121">Nome</span><span class="sxs-lookup"><span data-stu-id="6b0c4-121">Name</span></span>      |<span data-ttu-id="6b0c4-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="6b0c4-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b8989-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b8989-120">Request headers</span></span>
+| <span data-ttu-id="b8989-121">Nome</span><span class="sxs-lookup"><span data-stu-id="b8989-121">Name</span></span>      |<span data-ttu-id="b8989-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="b8989-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="6b0c4-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="6b0c4-123">Authorization</span></span> | <span data-ttu-id="6b0c4-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6b0c4-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b8989-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="b8989-123">Authorization</span></span> | <span data-ttu-id="b8989-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b8989-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6b0c4-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6b0c4-126">Request body</span></span>
-<span data-ttu-id="6b0c4-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="6b0c4-127">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="6b0c4-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="6b0c4-128">Response</span></span>
-<span data-ttu-id="6b0c4-129">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de [serviço](../resources/printservice.md) de pesquisa no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6b0c4-129">If successful, this method returns a `200 OK` response code and a [printService](../resources/printservice.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6b0c4-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6b0c4-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6b0c4-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6b0c4-131">Request</span></span>
-<span data-ttu-id="6b0c4-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6b0c4-132">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b8989-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b8989-126">Request body</span></span>
+<span data-ttu-id="b8989-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b8989-127">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="b8989-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="b8989-128">Response</span></span>
+<span data-ttu-id="b8989-129">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de [serviço](../resources/printservice.md) de pesquisa no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b8989-129">If successful, this method returns a `200 OK` response code and a [printService](../resources/printservice.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="b8989-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b8989-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b8989-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b8989-131">Request</span></span>
+<span data-ttu-id="b8989-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="b8989-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="6b0c4-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="6b0c4-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b8989-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="b8989-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printservice"
@@ -59,23 +59,23 @@ GET /print/services/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/services/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="6b0c4-134">C#</span><span class="sxs-lookup"><span data-stu-id="6b0c4-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b8989-134">C#</span><span class="sxs-lookup"><span data-stu-id="b8989-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printservice-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="6b0c4-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6b0c4-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b8989-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b8989-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-printservice-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="6b0c4-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6b0c4-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b8989-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b8989-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-printservice-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="6b0c4-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="6b0c4-137">Response</span></span>
-<span data-ttu-id="6b0c4-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6b0c4-138">The following is an example of the response.</span></span>
-><span data-ttu-id="6b0c4-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6b0c4-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b8989-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="b8989-137">Response</span></span>
+<span data-ttu-id="b8989-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="b8989-138">The following is an example of the response.</span></span>
+><span data-ttu-id="b8989-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b8989-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,3 +108,5 @@ Content-length: 332
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
