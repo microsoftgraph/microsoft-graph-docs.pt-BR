@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5e799d5db1042f743ecc8fe389ed32e808b7fe02
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca26aec49744bacf1e9e1d9738dfd552944622f7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039079"
 ---
 # <a name="workbookchartaxis-resource-type"></a>tipo de recurso workbookChartAxis
 
@@ -31,7 +31,7 @@ Representa um único eixo em um gráfico.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| id       |cadeia de caracteres   | Identificador exclusivo. Somente leitura.|
+| id       |string   | Identificador exclusivo. Somente leitura.|
 |majorUnit|Json|Representa o intervalo entre as duas principais marcas de escala. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia.  O valor retornado sempre é um número.|
 |maximum|Json|Representa o valor máximo no eixo dos valores.  Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo).  O valor retornado sempre é um número.|
 |minimum|Json|Representa o valor mínimo no eixo dos valores. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo).  O valor retornado sempre é um número.|
@@ -88,3 +88,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

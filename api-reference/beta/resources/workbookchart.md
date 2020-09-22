@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f28e89ae20d5675da303f11dc67b6e4b562b5340
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb430048de0b8141c7da74d9377bd937659af221
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519404"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039157"
 ---
 # <a name="workbookchart-resource-type"></a>tipo de recurso workbookChart
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,11 +40,11 @@ Representa um objeto chart em uma pasta de trabalho.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|height|double|Representa a altura, em pontos, do objeto Chart.|
-|id|cadeia de caracteres|Obtém um gráfico com base em sua posição no conjunto. Somente leitura.|
-|left|double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
+|height|Double|Representa a altura, em pontos, do objeto Chart.|
+|id|string|Obtém um gráfico com base em sua posição no conjunto. Somente leitura.|
+|left|Double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
 |nome|string|Representa o nome de um objeto Chart.|
-|top|duplo|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
+|top|Double|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
 |width|Double|Representa a largura, em pontos, do objeto de gráfico.|
 
 ## <a name="relationships"></a>Relações
@@ -94,3 +94,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

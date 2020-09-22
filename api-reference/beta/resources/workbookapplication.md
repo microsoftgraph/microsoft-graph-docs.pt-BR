@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 6357d43093b590a42b4a1f6583f46ff7c2fc2d14
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4616b3e61fbea3b918ef897ebe69dd12ffb0dbb2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519411"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039171"
 ---
 # <a name="workbookapplication-resource-type"></a>tipo de recurso workbookApplication
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -67,3 +67,5 @@ Nenhum
   "suppressions": []
 }
 -->
+
+

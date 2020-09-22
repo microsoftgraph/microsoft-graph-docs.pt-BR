@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f5b75ce4d3df43f0f24d35178777198173d6a97a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69f2b7f8712cc450ef36d301b2458678f727eff2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43370947"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038855"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -150,3 +150,4 @@ Content-length: 215
   "suppressions": [
   ]
 }-->
+

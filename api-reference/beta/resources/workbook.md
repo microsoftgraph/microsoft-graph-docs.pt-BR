@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso Workbook
+title: tipo de recurso da pasta de trabalho
 description: Contém objetos Workbook relacionados, como planilhas, tabelas, intervalos e assim por diante.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 34523b5ff0e358344b8c3c5b695e89a9bdddd7a2
-ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
+ms.openlocfilehash: a2940b4b873630f21ceb3c7db21456e81e8c859a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45165104"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039185"
 ---
-# <a name="workbook-resource-type"></a>tipo de recurso Workbook
+# <a name="workbook-resource-type"></a>tipo de recurso da pasta de trabalho
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,8 @@ Contém objetos Workbook relacionados, como planilhas, tabelas, intervalos e ass
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Criar sessão](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Crie uma sessão de pasta de trabalho para iniciar uma sessão persistente ou não persistente.|
-|[Fechar sessão](../api/workbook-closesession.md) | None |Fechar uma sessão existente.|
-|[Atualizar sessão](../api/workbook-refreshsession.md) | None |Atualizar uma sessão existente.|
+|[Fechar sessão](../api/workbook-closesession.md) | Nenhum(a) |Fechar uma sessão existente.|
+|[Atualizar sessão](../api/workbook-refreshsession.md) | Nenhum(a) |Atualizar uma sessão existente.|
 
 ## <a name="properties"></a>Propriedades
 Nenhum.
@@ -33,10 +33,10 @@ Nenhum.
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |names|coleção [workbookNamedItem](workbooknameditem.md) |Representa uma coleção de itens denominados de escopo da pasta de trabalho (chamados intervalos e constantes). Somente leitura.|
-|tables|coleção [workbooktable](workbooktable.md) |Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
-|worksheets|coleção [workbookWorksheet](workbookworksheet.md) |Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.|
+|tables|coleção [WorkbookTable](workbooktable.md) |Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
+|worksheets|coleção [WorkbookWorksheet](workbookworksheet.md) |Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.|
 |workbbookApplication|[workbookApplication](workbookapplication.md) |Representa o workbookApplication do Excel que gerencia a pasta de trabalho.|
-|operations|coleção [workbookOperation](workbookoperation.md)|O status das operações da pasta de trabalho. Não há suporte para a obtenção de uma coleção Operation, mas você pode obter o status de uma operação de execução longa se o `Location` cabeçalho for retornado na resposta. Somente leitura. Anulável.|
+|operações|coleção [workbookOperation](workbookoperation.md)|O status das operações da pasta de trabalho. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status de uma operação de longa execução se o cabeçalho `Location` retornar na resposta. Somente leitura. Anulável.|
 
 ## <a name="functions"></a>Funções
 
@@ -160,3 +160,5 @@ content-type: application/json;odata.metadata
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

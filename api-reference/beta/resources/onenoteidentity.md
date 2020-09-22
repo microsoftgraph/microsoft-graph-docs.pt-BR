@@ -5,16 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: ad578dcfa54f51484aa7e29ad5c3ade8a9195b61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8de8db37cdaae839ffda7818f369aa48fbc3ec13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522355"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039202"
 ---
 # <a name="onenoteidentity-resource-type"></a>tipo de recurso oneNoteIdentity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -62,3 +62,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

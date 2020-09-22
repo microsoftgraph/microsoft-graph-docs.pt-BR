@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3f9f59543dfc596d06718c5e7b351a5a447b2018
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: d4db2cb360083c654128c1a4b363fe72387afd08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568814"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038729"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -172,3 +172,4 @@ HTTP/1.1 201 Created
   "suppressions": [
   ]
 }-->
+

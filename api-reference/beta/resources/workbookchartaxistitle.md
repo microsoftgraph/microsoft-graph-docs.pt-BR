@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 543a13042f4245f90b799f6298a3f29c6368ea8f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9f751d1dc0c21f1a3fe60dd9dfa6cb03209ae12d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519362"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039044"
 ---
 # <a name="workbookchartaxistitle-resource-type"></a>tipo de recurso workbookChartAxisTitle
 
@@ -73,3 +73,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+
