@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 956e05500dc47e5667ac63065480a84777414871
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: b6332882a72130e7088bf8934c79ae6e76f1aa4c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219015"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027276"
 ---
 # <a name="update-trustframeworkkeyset"></a>Atualizar trustFrameworkKeySet
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | TrustFrameworkKeySet. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +54,7 @@ PUT /trustFramework/keySets/{id}
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -164,3 +164,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

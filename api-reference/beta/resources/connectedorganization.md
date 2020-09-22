@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f5d53e3a24ad8e99c22d61bc6a4d519888c4aafd
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 95cce32d4336c34a61d6845b74e6e428d1774d21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311287"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027206"
 ---
 # <a name="connectedorganization-resource-type"></a>tipo de recurso connectedOrganization
 
@@ -99,3 +99,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

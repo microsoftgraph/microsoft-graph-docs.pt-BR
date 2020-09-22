@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6d9bba6404911a04e47d53f0bf162b9471406bf6
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 3851b34cf9e22b9e15501ce7ef3f9677ad7c5f64
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43467125"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027759"
 ---
 # <a name="create-rule"></a>Criar regra
 
@@ -160,3 +160,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

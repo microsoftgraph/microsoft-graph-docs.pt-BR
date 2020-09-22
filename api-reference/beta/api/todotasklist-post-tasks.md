@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 14ad2ad47dd69d3f7e1408e55e82ff427b2a9fdc
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 82cc4f2320e723eb159711573aa4649f177053fb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843020"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027472"
 ---
 # <a name="create-todotask"></a>Criar todoTask
 Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo para a tarefa. Por padrão, esse valor é alterado quando o item é movido de uma lista para outra.|
-|corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa.|
+|body|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
 |importância|importância|A importância da tarefa. Os valores possíveis são: `low`, `normal`, `high`.|
@@ -144,4 +144,6 @@ Content-Type: application/json
         }]
 }
 ```
+
+
 

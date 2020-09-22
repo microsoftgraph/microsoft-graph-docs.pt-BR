@@ -3,14 +3,14 @@ title: Atualizar userExperienceAnalyticsDeviceStartupProcessPerformance
 description: Atualiza as propriedades de um objeto userExperienceAnalyticsDeviceStartupProcessPerformance.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f3d27062387fec1031aee2284b4d73102c1bf570
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9a8db1948f6d6ef80fe5cd53444a9819275dbc18
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379440"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027808"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocessperformance"></a>Atualizar userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -104,6 +104,9 @@ Content-Length: 334
   "totalImpactInMs": 15
 }
 ```
+
+
+
 
 
 

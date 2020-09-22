@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0c23f683d0f20a39f0d8354178f8f6923fe13b11
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ffa9f15cfabc5811a42bb17aea818b101e0a9f71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467065"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027704"
 ---
 # <a name="create-mailsearchfolder"></a>Criar mailSearchFolder
 
@@ -56,13 +56,13 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:----------|:-----|:------------|
 | @odata.type | String | O tipo de pasta a ser criada. Defina como "Microsoft. Graph. mailSearchFolder". |
 | displayName | String | O nome de exibição da nova pasta.|
-| includeNestedFolders | Booliano | Indica como a hierarquia da pasta da caixa de correio deve ser percorrida na pesquisa. `true`significa que uma pesquisa profunda deve ser feita para incluir pastas filhas na hierarquia de cada pasta explicitamente especificada no **sourceFolderIds**. `false`significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas no **sourceFolderIds**. |
-| sourceFolderIds | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser minadas. |
+| includeNestedFolders | Booliano | Indica como a hierarquia da pasta da caixa de correio deve ser percorrida na pesquisa. `true` significa que uma pesquisa profunda deve ser feita para incluir pastas filhas na hierarquia de cada pasta explicitamente especificada no **sourceFolderIds**. `false` significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas no **sourceFolderIds**. |
+| sourceFolderIds | Coleção String | As pastas de caixa de correio que devem ser minadas. |
 | filterQuery | String | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [mailSearchFolder](../resources/mailsearchfolder.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [mailSearchFolder](../resources/mailsearchfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -152,3 +152,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e626bbbc32b82e61d8bb07dcf76dee12ddfe2d12
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 371e626050ed58232c14e77d4f0d18d72954d8bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452708"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027514"
 ---
 # <a name="update-tablecolumn"></a>Atualizar tablecolumn
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -120,3 +120,5 @@ Content-length: 81
   ]
 }
 -->
+
+

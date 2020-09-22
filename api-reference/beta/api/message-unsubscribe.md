@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: aed6dbda043fa00d5eb7f8f72686fb50087d5867
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e01aad5e061856fb9bbc1a4c201d339f81e6dcff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448476"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027558"
 ---
 # <a name="message-unsubscribe"></a>mensagem: cancelar assinatura
 
@@ -22,11 +22,11 @@ Envia uma solicitação de e-mail em nome do usuário conectado para cancelar a 
 
 Os remetentes de mensagens podem usar listas de mala direta de forma amigável, incluindo uma opção para que os destinatários recusem. Eles podem fazer isso especificando o `List-Unsubscribe` cabeçalho em cada mensagem após [RFC-2369](https://www.faqs.org/rfcs/rfc2369.html).
 
-**Observação** Em particular, para que a ação de **cancelamento de assinatura** funcione, `mailto:` o remetente deve especificar e não informações de cancelamento de assinatura baseadas em URL.
+**Observação** Em particular, para que a ação de **cancelamento de assinatura** funcione, o remetente deve especificar `mailto:` e não informações de cancelamento de assinatura baseadas em URL.
 
-Definir esse cabeçalho também definiria a propriedade **unsubscribeEnabled** da instância da [mensagem](../resources/message.md) como `true`e a propriedade **unsubscribeData** para os dados do cabeçalho.
+Definir esse cabeçalho também definiria a propriedade **unsubscribeEnabled** da instância da [mensagem](../resources/message.md) como `true` e a propriedade **unsubscribeData** para os dados do cabeçalho.
 
-Se a propriedade **unsubscribeEnabled** de uma mensagem for `true`, você poderá usar a ação **cancelar assinatura** para cancelar a inscrição do usuário de mensagens semelhantes futuras, conforme gerenciado pelo remetente da mensagem.
+Se a propriedade **unsubscribeEnabled** de uma mensagem for `true` , você poderá usar a ação **cancelar assinatura** para cancelar a inscrição do usuário de mensagens semelhantes futuras, conforme gerenciado pelo remetente da mensagem.
 
 Uma ação de **cancelamento de assinatura** bem-sucedida move a mensagem para a pasta **itens excluídos** . A exclusão do usuário dos destinatários de futuros e-mails é gerenciada pelo remetente.
 
@@ -107,3 +107,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

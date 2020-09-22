@@ -3,14 +3,14 @@ title: Listar deviceManagementScriptGroupAssignments
 description: Listar Propriedades e relações dos objetos deviceManagementScriptGroupAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94f1fe49a82f56b4c4758751903b70f795910300
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 725062b4b9e9859708f4a788e8ac1694b3ea5352
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380229"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027836"
 ---
 # <a name="list-devicemanagementscriptgroupassignments"></a>Listar deviceManagementScriptGroupAssignments
 
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAs
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -78,6 +78,9 @@ Content-Length: 218
   ]
 }
 ```
+
+
+
 
 
 

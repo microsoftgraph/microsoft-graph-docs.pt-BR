@@ -3,14 +3,14 @@ title: Criar detectedApp
 description: Criar um novo objeto detectedApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cbb1ec1e0e45ae8f8ba7d910a2bb6314acabc9a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3cb167fe8e4643d22ffa814ae2d080b665e3b86d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426606"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027934"
 ---
 # <a name="create-detectedapp"></a>Criar detectedApp
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar detected
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo do aplicativo detectado. Ele é gerado automaticamente pelo Intune no momento em que o aplicativo é criado. Somente leitura.|
-|displayName|Cadeia de caracteres|Nome do aplicativo descoberto. Somente leitura|
+|displayName|String|Nome do aplicativo descoberto. Somente leitura|
 |version|Cadeia de caracteres|Versão do aplicativo descoberto. Somente leitura|
 |sizeInByte|Int64|Tamanho do aplicativo descoberto, em bytes. Somente leitura|
 |deviceCount|Int32|O número de dispositivos que instalaram esse aplicativo|
@@ -99,6 +99,9 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
+
+
+
 
 
 

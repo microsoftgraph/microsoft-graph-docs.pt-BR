@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3f69c123b72dfb876a7ed60d427b76674e1556f6
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 040161d10daa2eda171525fb61a2edd0cc049035
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43448610"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027612"
 ---
 # <a name="delete-message"></a>Excluir mensagem
 
@@ -148,3 +148,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

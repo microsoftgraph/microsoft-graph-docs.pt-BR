@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0f99c4125cd64f02421df01692b1dc19ee7c6605
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 940ea0af79bffe931b19148c45e36f0a1716e0be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464243"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027675"
 ---
 # <a name="update-mailsearchfolder"></a>Atualizar mailSearchFolder
 
@@ -48,12 +48,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | displayName | String | O nome de exibição do [mailFolder](../resources/mailfolder.md).|
-| includeNestedFolders | Booliano | Como a hierarquia da pasta de caixa de correio deve ser percorrida. `true`significa que uma pesquisa profunda deve ser feita enquanto `false` uma pesquisa superficial deve ser realizada. |
-| sourceFolderIds | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser minadas. |
+| includeNestedFolders | Booliano | Como a hierarquia da pasta de caixa de correio deve ser percorrida. `true` significa que uma pesquisa profunda deve ser feita enquanto `false` uma pesquisa superficial deve ser realizada. |
+| sourceFolderIds | Coleção String | As pastas de caixa de correio que devem ser minadas. |
 | filterQuery | String | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
@@ -132,3 +132,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

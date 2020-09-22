@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e835188df2c88caca5def9957f42d50694496e29
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: de6a65d1497007d4d2d9f9f5dd29d5b638c6633f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43467050"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027633"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -167,3 +167,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

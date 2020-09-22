@@ -3,14 +3,14 @@ title: Ação cleanWindowsDevice
 description: Limpar dispositivo Windows
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b6322a473d30a8a032448aacbe4f25c86c4fca7
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 826a9f3f872cdaf852dbd20fded449a7b1ed84b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792321"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027822"
 ---
 # <a name="cleanwindowsdevice-action"></a>Ação cleanWindowsDevice
 
@@ -86,6 +86,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

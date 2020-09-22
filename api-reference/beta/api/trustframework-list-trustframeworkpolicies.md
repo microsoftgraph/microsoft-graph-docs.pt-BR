@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 439573b524465d540e8c167ab9b3961d2c770f31
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d3f15fe2462434cfca0dd68f6d797627b66f1013
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215942"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027388"
 ---
 # <a name="list-trustframeworkpolicies"></a>Listar trustFrameworkPolicies
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|Policy. Read. All, Policy. ReadWrite. TrustFramework|
-|Delegada (conta pessoal da Microsoft)| Sem suporte.|
-|Application|Policy. Read. All, Policy. ReadWrite. TrustFramework|
+|Delegado (conta corporativa ou de estudante)|Policy. Read. All, Policy. ReadWrite. TrustFramework|
+|Delegado (conta pessoal da Microsoft)| Sem suporte.|
+|Aplicativo|Policy. Read. All, Policy. ReadWrite. TrustFramework|
 
 A conta corporativa ou de estudante deve ser um administrador global do locatário.
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) em uma representação JSON no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) em uma representação JSON no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -124,3 +124,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

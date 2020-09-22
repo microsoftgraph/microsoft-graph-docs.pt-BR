@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: de1df6c258794165e37d3572d4bee5da84316c83
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9807802d426fc5069a83014e52f0ed2210e05102
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215907"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027346"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>Atualizar ou criar trustFrameworkPolicy
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.TrustFramework|
-|Delegada (conta pessoal da Microsoft)| Sem suporte.|
-|Application|Policy.ReadWrite.TrustFramework|
+|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.TrustFramework|
+|Delegado (conta pessoal da Microsoft)| Sem suporte.|
+|Aplicativo|Policy.ReadWrite.TrustFramework|
 
 A conta corporativa ou de estudante deve ser um administrador global do locatário.
 
@@ -51,7 +51,7 @@ PUT /trustFramework/policies/{id}/$value
 
 No corpo da solicitação, forneça uma representação XML do objeto [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) . 
 
->**Observação:** o tipo de conteúdo deve `application/xml`ser.
+>**Observação:** o tipo de conteúdo deve ser `application/xml` .
 
 ## <a name="response"></a>Resposta
 
@@ -107,3 +107,5 @@ Content-Type: application/xml
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

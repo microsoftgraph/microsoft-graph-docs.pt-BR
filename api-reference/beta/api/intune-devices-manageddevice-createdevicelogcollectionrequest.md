@@ -3,14 +3,14 @@ title: ação createDeviceLogCollectionRequest
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15deac0383992f2045599aff34d097c3555be7f0
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 57f35c5c1744d6c8f0633b6e1c01d52a3d9185f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124159"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027809"
 ---
 # <a name="createdevicelogcollectionrequest-action"></a>ação createDeviceLogCollectionRequest
 
@@ -107,6 +107,9 @@ Content-Length: 567
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f8c3385a06c8807ce82169efb5a02f1999223cd4
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 461c59f40985fcf8d2cb1621cc631f13d333ce5e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215931"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027370"
 ---
 # <a name="trustframeworkkeyset-generatekey"></a>trustFrameworkKeySet: generateKey
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | TrustFrameworkKeySet. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -58,7 +58,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -137,3 +137,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

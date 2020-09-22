@@ -5,16 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 21d962bbbfee64c51f11cf1ac3f5e7de2c0497e9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aed9574ba6fd5e8b2c47b38ee4eebb3326cf2a37
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507482"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027185"
 ---
 # <a name="connectionoperation-resource-type"></a>tipo de recurso connectionOperation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,8 +32,8 @@ Descreve o status de uma solicitação assíncrona para criar um [esquema](schem
 
 | Propriedade | Tipo                          | Descrição                       |
 |:---------|:------------------------------|:----------------------------------|
-| erro    | [errorDetail](errordetail.md) | Se `status` for `failed`, fornecerá mais informações sobre o erro que causou a falha. |
-| id       | Cadeia de caracteres                        | Identificador exclusivo para o connectionOperation. Somente leitura. |
+| erro    | [errorDetail](errordetail.md) | Se `status` for `failed` , fornecerá mais informações sobre o erro que causou a falha. |
+| id       | String                        | Identificador exclusivo para o connectionOperation. Somente leitura. |
 | status   | cadeia de caracteres                        | Indica o status da operação assíncrona. Os valores possíveis são: `unspecified`, `inprogress`, `completed`, `failed`. |
 
 ## <a name="relationships"></a>Relações
@@ -71,3 +71,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

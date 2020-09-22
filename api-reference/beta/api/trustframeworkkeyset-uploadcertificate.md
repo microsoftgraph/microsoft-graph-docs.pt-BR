@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0342565ca8c7e652118c525a3c51c4700840d718
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 81b52d3757e8710d264d3280a9012f80bc32b438
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215893"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027262"
 ---
 # <a name="trustframeworkkeyset-uploadcertificate"></a>trustFrameworkKeySet: uploadCertificate
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | TrustFrameworkKeySet. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,11 +51,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|key|Cadeia de Caracteres| Este é o campo para enviar conteúdo de certificado. O valor deve ser uma versão de codificação de base 64 do conteúdo de certificado real. |
+|key|String| Este é o campo para enviar conteúdo de certificado. O valor deve ser uma versão de codificação de base 64 do conteúdo de certificado real. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -126,3 +126,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

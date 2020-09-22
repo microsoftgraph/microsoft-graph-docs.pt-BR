@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: db234801ed4f4a1f1599d249d95f17b92a1f8afb
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: b530adba26b7d843758650dfcf437449bf1065ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027311"
 ---
 # <a name="trustframeworkkeyset-getactivekey"></a>trustFrameworkKeySet: getActiveKey
 
@@ -27,16 +27,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | TrustFrameworkKeySet. Read. All, TrustFrameworkKeySet. ReadWrite. All. |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet. Read. All, TrustFrameworkKeySet. ReadWrite. All. |
+| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. Read. All, TrustFrameworkKeySet. ReadWrite. All. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | TrustFrameworkKeySet. Read. All, TrustFrameworkKeySet. ReadWrite. All. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /trustFramework/keySets/{id}/getActiveKey
+GET /trustFramework/keySets/{id}/getActiveKey
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -66,7 +66,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
+GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-getactivekey-csharp-snippets.md)]
@@ -120,3 +120,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

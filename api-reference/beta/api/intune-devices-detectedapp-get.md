@@ -3,14 +3,14 @@ title: Get detectedApp
 description: Ler propriedades e relações do objeto detectedApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7f8bc26217230dc5d79fd137c86fc210d366a90
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 05bf12d44f1f60034eb2f2cc956bd4a35950263b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426516"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027920"
 ---
 # <a name="get-detectedapp"></a>Get detectedApp
 
@@ -82,6 +82,9 @@ Content-Length: 247
   }
 }
 ```
+
+
+
 
 
 

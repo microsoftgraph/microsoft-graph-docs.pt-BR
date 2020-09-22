@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3ff80a2e88c9b5aa63d8e504d8ed4ee19fcb93bd
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: be0c6eb175716509963b897f210044c5cde1ce2d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200310"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027521"
 ---
 # <a name="create-publishedresource"></a>Criar publishedResource
 
@@ -127,3 +127,5 @@ HTTP/1.1 201 Created
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

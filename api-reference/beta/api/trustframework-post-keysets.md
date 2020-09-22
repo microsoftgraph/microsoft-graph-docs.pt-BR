@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 934a3c7bbcd0e76bc41eac0294e0660ea9da3ccc
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d0a435df4b8ff0eddefc34118738eab68abbb8b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215954"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027395"
 ---
 # <a name="create-trustframeworkkeyset"></a>Criar trustFrameworkKeySet
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All   |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | TrustFrameworkKeySet. ReadWrite. All    |
+| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All   |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | TrustFrameworkKeySet. ReadWrite. All    |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [trust
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta, um cabeçalho de local para o objeto recém-criado e um novo objeto [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta, um cabeçalho de local para o objeto recém-criado e um novo objeto [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -210,3 +210,5 @@ Location: /trustFramework/keySets('B2C_1A_keyset1')
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

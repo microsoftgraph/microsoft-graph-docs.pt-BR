@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 45d0561f6ef74240427274541fedac1deba3427e
-ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.openlocfilehash: 7eadf4be22216493aba9e1dd67ecb49ec43dd933
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47340002"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027479"
 ---
 # <a name="remove-members-from-team"></a>Remover membros da equipe
 Namespace: microsoft.graph
@@ -89,4 +89,6 @@ Este é um exemplo de resposta.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 

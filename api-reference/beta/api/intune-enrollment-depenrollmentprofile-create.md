@@ -3,14 +3,14 @@ title: Criar depEnrollmentProfile
 description: Criar um novo objeto depEnrollmentProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f9f868a9d1f469e964cc7d10939aabdb2d7dfa8d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7fd4eb594458062b63b5f678c20d624146c78fc3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43319534"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027780"
 ---
 # <a name="create-depenrollmentprofile"></a>Criar depEnrollmentProfile
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar depEnrol
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O GUID do objeto herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|displayName|Cadeia de caracteres|Nome do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|displayName|String|Nome do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |description|String|Descrição do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requiresUserAuthentication|Booliano|Indica se o perfil requer autenticação de usuário herdada de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |configurationEndpointUrl|String|URL de ponto de extremidade de configuração a ser usada para registro herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
@@ -88,7 +88,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar depEnrol
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -188,6 +188,9 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
+
+
+
 
 
 
