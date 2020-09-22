@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: conceptualPageType
-ms.openlocfilehash: f5b21822fcb30f5c7d243155e0c16eafa9db87f0
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b90fbd80889a7ae4eb36c3c1d8207b525e99a697
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808414"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003392"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Usar a API REST de feed de atividades
 
@@ -77,3 +77,4 @@ As atividades do usuário que você criar irão variar com base no padrão de in
 
 - Veja [como as experiências da Microsoft estão usando atividades](https://channel9.msdn.com/events/Build/2017/B8108).
 - Saiba mais sobre [a API de feed de atividades e escolha onde eu parou](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011).
+

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fb2f62f2d871afdf035bd264c40af0e521e30b31
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 91c8d3933f9ec1fe8e96a5f62c9d00791ffe4777
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917331"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003377"
 ---
 # <a name="activitybasedtimeoutpolicy-resource-type"></a>tipo de recurso activityBasedTimeoutPolicy
 
 Namespace: microsoft.graph
 
-Representa uma política que pode controlar o tempo limite de ociosidade para sessões da Web para aplicativos que dão suporte à funcionalidade de tempo limite baseada na atividade. Os aplicativos impõem a desconexão automática após um período de inatividade. Esse tipo de política só pode ser aplicado no nível da organização (Configurando **isOrganizationDefault** a propriedade isOrganizationDefault `true`para).
+Representa uma política que pode controlar o tempo limite de ociosidade para sessões da Web para aplicativos que dão suporte à funcionalidade de tempo limite baseada na atividade. Os aplicativos impõem a desconexão automática após um período de inatividade. Esse tipo de política só pode ser aplicado no nível da organização (Configurando a propriedade **isOrganizationDefault** para `true` ).
 
 Herda de [stsPolicy](stsPolicy.md).
 
@@ -37,7 +37,7 @@ Herda de [stsPolicy](stsPolicy.md).
 |id|String| Identificador exclusivo da política. Somente leitura.|
 |definir|Coleção de cadeias de caracteres| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
 |description|String| Descrição da política.|
-|displayName|Cadeia de caracteres| Nome para exibição dessa política. Obrigatório.|
+|displayName|String| Nome para exibição dessa política. Obrigatório.|
 |isOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 
 
@@ -100,3 +100,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

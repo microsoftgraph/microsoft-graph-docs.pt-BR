@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3c4dfa20789599012ccbd97d9db7950b87f53a86
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 0afe1b29abeb82922f1e36d1d61ca86f2e2bcd23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793091"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004155"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -119,6 +119,9 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Estado de publicação do aplicativo móvel](intune-apps-mobileapppublishingstate.md)
 - [Relação do aplicativo móvel](intune-apps-mobileapprelationship.md)
 - [Estado da relação do aplicativo móvel](intune-apps-mobileapprelationshipstate.md)
+- [Tipo de relação de aplicativo móvel](intune-apps-mobileapprelationshiptype.md)
+- [Substituição de aplicativos móveis](intune-apps-mobileappsupersedence.md)
+- [Tipo de substituição de aplicativo móvel](intune-apps-mobileappsupersedencetype.md)
 - [Aplicativo contido móvel](intune-apps-mobilecontainedapp.md)
 - [Aplicativo LOB móvel](intune-apps-mobilelobapp.md)
 - [Status de check-in de cliente do Office](intune-cirrus-officeclientcheckinstatus.md)
@@ -184,3 +187,5 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Aplicativo da Windows Store](intune-apps-windowsstoreapp.md)
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)
 - [Aplicativo contido do Windows universal AppX](intune-apps-windowsuniversalappxcontainedapp.md)
+
+

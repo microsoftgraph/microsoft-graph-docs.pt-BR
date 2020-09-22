@@ -5,16 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 69b90ae911ca956dedf3a7675d7666c7faa4b906
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e94f9ad746c497e3b81eff6b919c50a59c6a0a11
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508426"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004274"
 ---
 # <a name="activitystatistics-resource-type"></a>tipo de recurso activityStatistics
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +38,7 @@ In an HTTP request, to get a specific type of activity statistics within a date 
 
 For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivityStatistics for the specified user between August 10, 2019 and August 12, 2019.
 -->
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -48,11 +48,11 @@ For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivitySt
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|atividade |analyticsActivityType |O tipo de atividade para a qual as estatísticas são retornadas. Os valores possíveis são: `call`, `chat`, `email`, `focus`e `meeting`. |
+|atividade |analyticsActivityType |O tipo de atividade para a qual as estatísticas são retornadas. Os valores possíveis são: `call` , `chat` , `email` , `focus` e `meeting` . |
 |duration |Duração |Total de horas gasto na atividade. O valor é representado no formato ISO 8601 para durações. |
 |endDate |Data |Data em que a atividade foi concluída, expressada no formato ISO 8601 para datas do calendário. Por exemplo, o valor da propriedade poderia ser "2019-07-03" que segue o formato AAAA-MM-DD. |
 |id |String |ID somente leitura da atividade. Não analise ou personalize o valor para seus cenários. |
-|startDate |Date |Data em que a atividade foi iniciada, expressa no formato ISO 8601 para datas do calendário. Por exemplo, o valor da propriedade poderia ser "2019-07-04" que segue o formato AAAA-MM-DD. |
+|startDate |Data |Data em que a atividade foi iniciada, expressa no formato ISO 8601 para datas do calendário. Por exemplo, o valor da propriedade poderia ser "2019-07-04" que segue o formato AAAA-MM-DD. |
 |timeZoneUsed |String |O fuso horário que o usuário define no Microsoft Outlook é usado para a computação. Por exemplo, o valor da propriedade poderia ser "hora padrão do Pacífico". |
 
 ## <a name="relationships"></a>Relações
@@ -92,3 +92,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }--> 
+

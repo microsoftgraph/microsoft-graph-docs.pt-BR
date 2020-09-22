@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 2e527dbf8cc1dd42474bee467f5e1f9a0beca261
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: b3c226624e850d0d1a5bb2e3866246ecaee9d832
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45184006"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003308"
 ---
 # <a name="assignedlabel-resource-type"></a>tipo de recurso assignedLabel
 

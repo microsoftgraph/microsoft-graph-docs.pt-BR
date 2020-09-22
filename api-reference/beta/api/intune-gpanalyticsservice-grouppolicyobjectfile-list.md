@@ -3,14 +3,14 @@ title: Listar groupPolicyObjectFiles
 description: Listar Propriedades e relações dos objetos groupPolicyObjectFile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7bbda004440f80e10f780060f714b5bb6c574b56
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 863c7ee343b5e1428da410da801f88bae0ab33df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454891"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004875"
 ---
 # <a name="list-grouppolicyobjectfiles"></a>Listar groupPolicyObjectFiles
 
@@ -50,7 +50,7 @@ GET /deviceManagement/groupPolicyObjectFiles
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -81,6 +81,9 @@ Content-Length: 450
   ]
 }
 ```
+
+
+
 
 
 

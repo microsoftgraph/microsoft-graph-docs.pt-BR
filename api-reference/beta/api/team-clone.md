@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bfda3767fc8c9bec58d78efc566efcfdf1b51c17
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: f9f9b324878dbe66cc6ee98497671a73bfe32859
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332457"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004330"
 ---
 # <a name="clone-a-team"></a>Clonar uma equipe
 
@@ -132,3 +132,5 @@ Content-Length: 0
   "suppressions": []
 }
 -->
+
+

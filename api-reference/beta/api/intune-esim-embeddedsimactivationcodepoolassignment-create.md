@@ -3,14 +3,14 @@ title: Criar embeddedSIMActivationCodePoolAssignment
 description: Criar um novo objeto embeddedSIMActivationCodePoolAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b836930a12abb78c0640ef508a62945b8c017fe9
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 3772a3dd1aeeae02680cbc3e8cb3d2219f92d77d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792019"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005023"
 ---
 # <a name="create-embeddedsimactivationcodepoolassignment"></a>Criar embeddedSIMActivationCodePoolAssignment
 
@@ -97,6 +97,9 @@ Content-Length: 389
   }
 }
 ```
+
+
+
 
 
 

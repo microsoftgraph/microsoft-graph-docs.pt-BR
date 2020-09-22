@@ -3,14 +3,14 @@ title: Listar embeddedSIMActivationCodePools
 description: Listar Propriedades e relações dos objetos embeddedSIMActivationCodePool.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e057333004a42b407f2dcd8752c43c43f035d27
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e979ebf13092fc10e0a0757d64b4aebc6209e3c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452212"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005044"
 ---
 # <a name="list-embeddedsimactivationcodepools"></a>Listar embeddedSIMActivationCodePools
 
@@ -50,7 +50,7 @@ GET /deviceManagement/embeddedSIMActivationCodePools
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -88,6 +88,9 @@ Content-Length: 717
   ]
 }
 ```
+
+
+
 
 
 

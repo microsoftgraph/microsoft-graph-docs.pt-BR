@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: b054e9ac49d0696fd81bc7ecf12797e7be3ea96d
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: f22c125c7097d36bb80a6237f2b41fc0ac11d247
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290789"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003343"
 ---
 # <a name="approle-resource-type"></a>tipo de recurso appRole
 
@@ -26,9 +26,9 @@ Com o [appRoleAssignments](approleassignment.md), as funções de aplicativo pod
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|Conjunto de cadeias de caracteres|Especifica se esta função de aplicativo pode ser atribuída a usuários e grupos (definindo como `["User"]` ), a outros aplicativos (por configuração `["Application"]` ou ambos (por meio da configuração `["User", "Application"]` ). Funções de aplicativo que dão suporte à atribuição de entidades de serviço de outros aplicativos também são conhecidas como [permissões de aplicativo](/graph/auth/auth-concepts#microsoft-graph-permissions).|
+|allowedMemberTypes|Coleção de cadeias de caracteres|Especifica se esta função de aplicativo pode ser atribuída a usuários e grupos (definindo como `["User"]` ), a outros aplicativos (por configuração `["Application"]` ou ambos (por meio da configuração `["User", "Application"]` ). Funções de aplicativo que dão suporte à atribuição de entidades de serviço de outros aplicativos também são conhecidas como [permissões de aplicativo](/graph/auth/auth-concepts#microsoft-graph-permissions).|
 |description|String|A descrição da função de aplicativo. Isso é exibido quando a função de aplicativo está sendo atribuída e, se a função de aplicativo funciona como uma permissão de aplicativo, durante experiências de consentimento.|
-|displayName|Cadeia de caracteres|Nome para exibição da permissão que aparece nas experiências de consentimento e atribuição de função de aplicativo.|
+|displayName|String|Nome para exibição da permissão que aparece nas experiências de consentimento e atribuição de função de aplicativo.|
 |id|Guid|Identificador de função exclusivo dentro da coleção **appRoles** . Ao criar uma nova função de aplicativo, um novo identificador GUID deve ser fornecido. |
 |isEnabled|Boolean|Ao criar ou atualizar uma função de aplicativo, isso deve ser definido como **true** (que é o padrão). Para excluir uma função, é necessário primeiro defini-la como **false**.  Nesse ponto, em uma chamada subsequente, essa função pode ser removida.|
 |tenham|String| Especifica se a função de aplicativo é definida no objeto [Application](application.md) ou na entidade [servicePrincipalName](serviceprincipal.md) . _Não_ deve ser incluído em solicitações POST ou patch. Somente leitura. |
@@ -70,3 +70,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

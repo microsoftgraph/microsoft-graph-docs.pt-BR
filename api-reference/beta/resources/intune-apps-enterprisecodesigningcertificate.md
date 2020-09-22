@@ -3,14 +3,14 @@ title: tipo de recurso enterpriseCodeSigningCertificate
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9369ef453188eaca193b9c14746e5bdf1854e25e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5a78cecdd0d9cb5648981cf1d54a606b21df6b9a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459108"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003945"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>tipo de recurso enterpriseCodeSigningCertificate
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Ainda não documentado
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar enterpriseCodeSigningCertificates](../api/intune-apps-enterprisecodesigningcertificate-list.md)|coleção [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|Listar Propriedades e relações dos objetos [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) .|
@@ -38,7 +38,7 @@ Ainda não documentado
 |conteúdo|Binária|O certificado de assinatura de código do Windows Enterprise no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
-|assunto|Cadeia de caracteres|O valor de entidade para o certificado.|
+|assunto|String|O valor de entidade para o certificado.|
 |issuerName|String|O nome do emissor do certificado.|
 |emissor|String|O valor do emissor para o certificado.|
 |expirationDateTime|DateTimeOffset|A data de expiração do certificado.|
@@ -69,6 +69,9 @@ Veja a seguir uma representação JSON do recurso.
   "uploadDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

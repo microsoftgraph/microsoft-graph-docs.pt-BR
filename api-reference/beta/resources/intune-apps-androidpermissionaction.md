@@ -3,14 +3,14 @@ title: tipo de recurso androidPermissionAction
 description: O mapeamento entre uma permissão de aplicativo Android e a ação que o Android deve executar quando essa permissão é solicitada.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0e1b793a447d29d1ed554e1b6466895ccc9e57f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f053a3fa560bce29d0fe4aa66bb796b114658929
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459139"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004022"
 ---
 # <a name="androidpermissionaction-resource-type"></a>tipo de recurso androidPermissionAction
 
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "action": "String"
 }
 ```
+
+
+
 
 
 

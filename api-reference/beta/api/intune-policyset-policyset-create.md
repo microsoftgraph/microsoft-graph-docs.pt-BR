@@ -3,14 +3,14 @@ title: Criar policyset
 description: Criar um novo objeto policyset.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 22a1d700b0f82cb98876e4fadb439ee5010fed12
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 93eb8bc0f8aa415190f5e0e4b3f0dbdc4fe317a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456289"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004848"
 ---
 # <a name="create-policyset"></a>Criar policyset
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o policy
 |id|String|Chave do Policyset.|
 |createdDateTime|DateTimeOffset|Hora de criação do Policyset.|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do Policyset.|
-|displayName|Cadeia de caracteres|DisplayName do Policyset.|
+|displayName|String|DisplayName do Policyset.|
 |description|String|Descrição do Policyset.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status de validação/atribuição do Policyset. Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro, caso algum tenha ocorrido. Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
@@ -66,7 +66,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o policy
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [policyset](../resources/intune-policyset-policyset.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [policyset](../resources/intune-policyset-policyset.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -116,6 +116,9 @@ Content-Length: 489
   ]
 }
 ```
+
+
+
 
 
 

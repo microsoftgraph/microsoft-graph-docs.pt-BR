@@ -3,14 +3,14 @@ title: tipo de recurso excludedApps
 description: Contém propriedades para aplicativos do Office365 excluídos.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92a86a9b875caf47d5c06145716642bb3d6a7e81
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 30aaecee77c4cdea7539e790fd1204ecd9e8dc98
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790898"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003931"
 ---
 # <a name="excludedapps-resource-type"></a>tipo de recurso excludedApps
 
@@ -42,7 +42,7 @@ Contém propriedades para aplicativos do Office365 excluídos.
 |palavras|Boolean|O valor de se o MS Office Word deve ser excluído ou não.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -71,6 +71,9 @@ Veja a seguir uma representação JSON do recurso.
   "word": true
 }
 ```
+
+
+
 
 
 

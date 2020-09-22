@@ -3,14 +3,14 @@ title: tipo de enumeração domainNameSource
 description: Fonte DomainName.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9f59be2cbf2f248d9f677d47cdfa66e19598f5af
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f4daa1ad2f41ac6044fdff4dccdbc16a3a2f411f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386490"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003777"
 ---
 # <a name="domainnamesource-enum-type"></a>tipo de enumeração domainNameSource
 
@@ -26,7 +26,10 @@ Fonte DomainName.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |fullDomainName|,0|Nome de domínio completo.|
-|netBiosDomainName|1|nome de domínio do BIOS de rede.|
+|netBiosDomainName|1 |nome de domínio do BIOS de rede.|
+
+
+
 
 
 

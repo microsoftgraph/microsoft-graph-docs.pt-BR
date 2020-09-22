@@ -5,22 +5,22 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 953a23ee0d0c7506592681d9de65e05b5cc1cc9b
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: d4c77e03bf54252cd8f93f29d4e9760371e37697
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806386"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004561"
 ---
 # <a name="phoneauthenticationmethod-enablesmssignin"></a>phoneAuthenticationMethod: enableSmsSignIn
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Habilite a entrada do SMS para um `mobile` número de telefone existente. Para ser habilitado com êxito:
 
-* O telefone deve ter `"phoneType": "mobile"`.
+* O telefone deve ter `"phoneType": "mobile"` .
 * O telefone deve ser exclusivo no sistema de entrada do SMS (ninguém mais pode também usar esse número).
 * O usuário deve estar habilitado para entrada do SMS na política de [métodos de autenticação](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) .
 
@@ -117,3 +117,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

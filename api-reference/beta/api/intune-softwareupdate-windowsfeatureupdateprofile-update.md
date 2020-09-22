@@ -3,14 +3,14 @@ title: Atualizar windowsFeatureUpdateProfile
 description: Atualiza as propriedades de um objeto windowsFeatureUpdateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 686450bd34be0f251de0c6bc898761d63cfc1a37
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 6ca90584b74ca5dc6cf0c14f42a0a5052e52fa8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123572"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004694"
 ---
 # <a name="update-windowsfeatureupdateprofile"></a>Atualizar windowsFeatureUpdateProfile
 
@@ -54,9 +54,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador da entidade.|
-|displayName|Cadeia de caracteres|O nome de exibição do perfil.|
-|descrição|String|A descrição do perfil especificado pelo usuário.|
-|featureUpdateVersion|Cadeia de caracteres|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
+|displayName|String|O nome de exibição do perfil.|
+|description|String|A descrição do perfil especificado pelo usuário.|
+|featureUpdateVersion|String|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
 |createdDateTime|DateTimeOffset|A data e hora em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora em que o perfil foi modificado pela última vez.|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de atualização de recurso.|
@@ -106,6 +106,9 @@ Content-Length: 441
   ]
 }
 ```
+
+
+
 
 
 

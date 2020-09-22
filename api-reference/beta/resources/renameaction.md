@@ -6,16 +6,16 @@ title: RenameAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 6745f932c0a2d9b92273f45e147439cfbd2ed911
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e14521b6be27a9b4b2772cd80c172e5faf73b0d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521128"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003497"
 ---
 # <a name="renameaction-resource-type"></a>Tipo de recurso RenameAction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -59,3 +59,5 @@ Registros de atividade de item atualmente só estão disponíveis no SharePoint 
   "suppressions": []
 }
 -->
+
+

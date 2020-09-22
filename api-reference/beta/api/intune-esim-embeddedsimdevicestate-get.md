@@ -3,14 +3,14 @@ title: Obter embeddedSIMDeviceState
 description: Leia as propriedades e as relações do objeto embeddedSIMDeviceState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e82069cae393d6c76f4b93164929459f326cc0d3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7d08b0f0431615debffe9696f687d24aa7fcbbf2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452101"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004897"
 ---
 # <a name="get-embeddedsimdevicestate"></a>Obter embeddedSIMDeviceState
 
@@ -85,6 +85,9 @@ Content-Length: 568
   }
 }
 ```
+
+
+
 
 
 

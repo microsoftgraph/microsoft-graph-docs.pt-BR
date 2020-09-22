@@ -3,14 +3,14 @@ title: Tipo de recurso androidMinimumOperatingSystem
 description: Contém propriedades para o sistema operacional mínimo obrigatório para um aplicativo móvel Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 163eb7fd1bdb5659cf0aeb6db021623858e5d96f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2807e54150e3fa1d5f77d237485cee7774ba4f7e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463590"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004057"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Tipo de recurso androidMinimumOperatingSystem
 
@@ -69,6 +69,9 @@ Veja a seguir uma representação JSON do recurso.
   "v9_0": true
 }
 ```
+
+
+
 
 
 

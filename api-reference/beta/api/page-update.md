@@ -5,16 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 53f1f408d70c8b72f55e9a19c80e1f891ef1cc22
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4f3b8d219249b578f1876b1b30df7f3c7d2487b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456002"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004589"
 ---
 # <a name="update-page"></a>Atualizar página
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -114,3 +114,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

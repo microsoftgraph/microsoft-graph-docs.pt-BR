@@ -5,12 +5,12 @@ title: tipo de recurso uploadSession
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 5a9c205e2cc4e9c151985f1838f69143fbae79e6
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 9dd76265e08cc377aba295679a35f33f2256b3b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590960"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003441"
 ---
 # <a name="uploadsession-resource-type"></a>tipo de recurso uploadSession
 
@@ -50,7 +50,7 @@ Veja a seguir uma representação JSON do recurso
 
 ## <a name="see-also"></a>Confira também
 
-- [Anexar arquivos grandes a mensagens e eventos do Outlook como anexos](/graph/outlook-large-attachments)
+- [Anexar arquivos grandes a mensagens e eventos do Outlook como anexos ](/graph/outlook-large-attachments)
 - [Carregar arquivos grandes com uma sessão de upload](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -64,3 +64,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

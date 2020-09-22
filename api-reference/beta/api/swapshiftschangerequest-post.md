@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1563837620e65c71ec834b8b877a795e5e0e5c22
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: c4dd366ae1d9fc98cd495584581d3dfa0b73ab93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154392"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004414"
 ---
 # <a name="create-swapshiftschangerequest"></a>Criar swapShiftsChangeRequest
 
@@ -42,7 +42,7 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -56,7 +56,7 @@ No corpo da solicitação, forneça uma representação JSON de um novo objeto [
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) criado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) criado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -123,3 +123,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

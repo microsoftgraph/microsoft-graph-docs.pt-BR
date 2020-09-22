@@ -3,14 +3,14 @@ title: Tipo de recurso androidForWorkAppConfigurationSchema
 description: Esquema descrevendo as configurações personalizadas de um aplicativo do Android for Work.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f7fb75a115b6a2eb3513f42e2bc5fde96c810e8c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 369269a98eb9e75c1ecfd9ab07ef8a395a836fc9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459279"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004183"
 ---
 # <a name="androidforworkappconfigurationschema-resource-type"></a>Tipo de recurso androidForWorkAppConfigurationSchema
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Esquema descrevendo as configurações personalizadas de um aplicativo do Android for Work.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar androidForWorkAppConfigurationSchemas](../api/intune-androidforwork-androidforworkappconfigurationschema-list.md)|Conjunto [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md)|Listar propriedades e relações de objetos de [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md).|
@@ -78,6 +78,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

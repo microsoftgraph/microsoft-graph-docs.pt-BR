@@ -3,14 +3,14 @@ title: tipo de enumeração de usos de
 description: Opções de uso de chave.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f901be2941fb8e775f8a33557c1575bfd6c2abfc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8422ea9e50ec1db076d178d96eaa4fe62e520cc6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439888"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003609"
 ---
 # <a name="keyusages-enum-type"></a>tipo de enumeração de usos de
 
@@ -25,8 +25,11 @@ Opções de uso de chave.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|keyEncipherment|1|Uso da codificação de chave.|
-|digitalSignature|duas|Uso de assinatura digital.|
+|keyEncipherment|1 |Uso da codificação de chave.|
+|digitalSignature|2 |Uso de assinatura digital.|
+
+
+
 
 
 

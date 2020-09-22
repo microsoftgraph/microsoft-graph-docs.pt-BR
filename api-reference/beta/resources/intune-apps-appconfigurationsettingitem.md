@@ -3,18 +3,18 @@ title: Tipo de recurso appConfigurationSettingItem
 description: Contém propriedades do item de configuração de Configuração do aplicativo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e71ad9bddd6595f6057463aa01116727e368c46
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6e2ec0f05b7bb40d97458a7d9fa452edc9124451
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459131"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003994"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>Tipo de recurso appConfigurationSettingItem
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,7 +25,7 @@ Contém propriedades do item de configuração de Configuração do aplicativo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|appConfigKey|String|chave de configuração do aplicativo.|
+|appConfigKey|Cadeia de caracteres|chave de configuração do aplicativo.|
 |appConfigKeyType|[mdmAppConfigKeyType](../resources/intune-apps-mdmappconfigkeytype.md)|tipo de chave de configuração de aplicativo. Os valores possíveis são: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
 |appConfigKeyValue|Cadeia de caracteres|valor de chave de configuração de aplicativo.|
 
@@ -47,6 +47,9 @@ Veja a seguir uma representação JSON do recurso.
   "appConfigKeyValue": "String"
 }
 ```
+
+
+
 
 
 

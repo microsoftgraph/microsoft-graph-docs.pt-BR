@@ -1,30 +1,30 @@
 ---
 title: Obter onenoteOperation
-description: 'Obter o status de uma operação de execução longa do OneNote. Isso se aplica às operações que retornam o cabeçalho **Operation-Location** na resposta, como `CopyNotebook`, `CopyToNotebook` `CopyToSectionGroup`,, `and CopyToSection`.   '
+description: 'Obter o status de uma operação de execução longa do OneNote. Isso se aplica às operações que retornam o cabeçalho **Operation-Location** na resposta, como `CopyNotebook` ,,, `CopyToNotebook` `CopyToSectionGroup` `and CopyToSection` .   '
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 8a01acd60826a6909f4863c1dcf67d130a8c1c1f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 977852695d4e12eeb6d13d8c4f073e99a71cfd3a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456534"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004652"
 ---
 # <a name="get-onenoteoperation"></a>Obter onenoteOperation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o status de uma operação de execução longa do OneNote. Isso se aplica às operações que retornam o cabeçalho **Operation-Location** na resposta, como `CopyNotebook`, `CopyToNotebook` `CopyToSectionGroup`,, `and CopyToSection`.   
+Obter o status de uma operação de execução longa do OneNote. Isso se aplica às operações que retornam o cabeçalho **Operation-Location** na resposta, como `CopyNotebook` ,,, `CopyToNotebook` `CopyToSectionGroup` `and CopyToSection` .   
 
-Você pode sondar o ponto de extremidade da operação `status` -local `completed` até `failed`que a propriedade retorne ou. 
+Você pode sondar o ponto de extremidade da operação-local até que a `status` Propriedade retorne `completed` ou `failed` . 
 
-Se o status for `completed`, a `resourceLocation` Propriedade conterá o URI do ponto de extremidade do recurso. 
+Se o status for `completed` , a `resourceLocation` Propriedade conterá o URI do ponto de extremidade do recurso. 
 
-Se o status for `failed`, o erro e `@api.diagnostics` as propriedades fornecerão informações de erro.
+Se o status for `failed` , o erro e `@api.diagnostics` as propriedades fornecerão informações de erro.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -119,3 +119,5 @@ Content-length: 215
   ]
 }
 -->
+
+

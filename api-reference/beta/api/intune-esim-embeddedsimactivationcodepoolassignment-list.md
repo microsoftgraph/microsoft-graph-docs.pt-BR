@@ -3,14 +3,14 @@ title: Listar embeddedSIMActivationCodePoolAssignments
 description: Listar Propriedades e relações dos objetos embeddedSIMActivationCodePoolAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ee944e2804462261b359e36e4f9fb2010b933cb
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: dcf6aa207e2b37dc9ba97f05ffa89a3605447f25
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792005"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004988"
 ---
 # <a name="list-embeddedsimactivationcodepoolassignments"></a>Listar embeddedSIMActivationCodePoolAssignments
 
@@ -81,6 +81,9 @@ Content-Length: 450
   ]
 }
 ```
+
+
+
 
 
 

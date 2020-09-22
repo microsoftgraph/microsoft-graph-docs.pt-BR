@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1bfe5c6e5932448eda4f977f9619843ed4bdec2d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4e6d0da0f18d68b61f67e57e40962de714b0e561
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466424"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004362"
 ---
 # <a name="get-synchronizationjob"></a>Obter synchronizationJob
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, retornará `200 OK` uma resposta com um [synchronizationJob](../resources/synchronization-synchronizationjob.md) no corpo da resposta.
+Se tiver êxito, retornará uma `200 OK` resposta com um [synchronizationJob](../resources/synchronization-synchronizationjob.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -147,3 +147,5 @@ Content-length: 2577
   ]
 }
 -->
+
+

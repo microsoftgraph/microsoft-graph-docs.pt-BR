@@ -3,18 +3,18 @@ title: tipo de recurso mobileAppTroubleshootingAppTargetHistory
 description: Item de histórico contido no evento de solução de problemas de aplicativo móvel.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f19de8f81bafa88af2b654860942b001e73b6cfc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 52fc89c4c3b9b77be30cf3cc8c651bde7e696bf2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43385264"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003504"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingAppTargetHistory
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -67,6 +67,9 @@ Veja a seguir uma representação JSON do recurso.
   "errorCode": "String"
 }
 ```
+
+
+
 
 
 

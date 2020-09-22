@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: ffd9e8939c04be658a08915430b571ecb452490d
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: e233e1995748f57a5da9eca51bf336b60d5273b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311518"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004267"
 ---
 # <a name="anonymousipriskevent-resource-type-deprecated"></a>tipo de recurso anonymousIpRiskEvent (preterido)
 
@@ -95,3 +95,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

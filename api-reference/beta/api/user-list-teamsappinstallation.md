@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 17233aadd5afaee212dae6f4bc10f0af52e0f2aa
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: ff38da671199bc7bb3b66fe498a86d95817ad649
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793112"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004295"
 ---
 # <a name="list-apps-installed-for-user"></a>Listar aplicativos instalados para o usuário
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteForUser |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteForUser |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | TeamsAppInstallation. ReadForUser. All, TeamsAppInstallation. ReadWriteForUser. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -183,3 +183,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 1fd4867ee1ac9cb64d34e9e86acaf334bdfd7d2c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 0235ea877c01fc7dfbe35dfcb45fc874cff695e5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290051"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004225"
 ---
 # <a name="apiapplication-resource-type"></a>tipo de recurso apiApplication
 
@@ -28,7 +28,7 @@ Especifica configurações para um aplicativo que implementa uma API Web.
 |`knownClientApplications`| Coleção de GUIDs |Usado para o consentimento de agrupamento se você tiver uma solução que contenha duas partes: um aplicativo cliente e um aplicativo de API Web personalizado. Se você definir a appID do aplicativo cliente com esse valor, o usuário só consenti uma vez para o aplicativo cliente. O Azure AD sabe que a reenvio para o cliente significa implicitamente Confira a API Web e automaticamente provisiona entidades de serviço para ambas as APIs ao mesmo tempo. O cliente e o aplicativo da API Web devem ser registrados no mesmo locatário.|
 |`oauth2PermissionScopes`| coleção [permissionScope](permissionscope.md) | A definição das permissões delegadas expostas pela API Web representada por este registro de aplicativo. Essas permissões delegadas podem ser solicitadas por um aplicativo cliente e podem ser concedidas por usuários ou administradores durante o consentimento. As permissões delegadas às vezes são chamadas de escopos OAuth 2,0. |
 |`preAuthorizedApplications`| coleção [preauthorizedapplication e](preauthorizedapplication.md) | Lista os aplicativos cliente que são previamente autorizados com as permissões delegadas especificadas para acessar as APIs desse aplicativo. Os usuários não precisam ser consentidos em qualquer aplicativo pré autorizado (para as permissões especificadas). No entanto, qualquer permissão adicional que não esteja listada no preAuthorizedApplications (solicitado por meio de consentimento incremental, por exemplo) exigirá o consentimento do usuário. |
-|`requestedAccessTokenVersion`| Int32 | Especifica a versão do token de acesso esperada por este recurso. Isso altera a versão e o formato do JWT produzido independentemente do ponto de extremidade ou cliente usado para solicitar o token de acesso. <br><br> O ponto de extremidade usado, v 1.0 ou v 2.0, é escolhido pelo cliente e só impacta a versão do id_tokens. Os recursos precisam ser configurados explicitamente `requestedAccessTokenVersion` para indicar o formato do token de acesso suportado. <br><br> Os valores possíveis para `requestedAccessTokenVersion` são `1` , `2` , ou `null` . Se o valor for `null` , este padrão será `1` , que corresponde ao ponto de extremidade v 1.0. <br><br> Se `signInAudience` no aplicativo estiver configurado como `AzureADandPersonalMicrosoftAccount` , o valor dessa propriedade deverá ser`2` |
+|`requestedAccessTokenVersion`| Int32 | Especifica a versão do token de acesso esperada por este recurso. Isso altera a versão e o formato do JWT produzido independentemente do ponto de extremidade ou cliente usado para solicitar o token de acesso. <br><br> O ponto de extremidade usado, v 1.0 ou v 2.0, é escolhido pelo cliente e só impacta a versão do id_tokens. Os recursos precisam ser configurados explicitamente `requestedAccessTokenVersion` para indicar o formato do token de acesso suportado. <br><br> Os valores possíveis para `requestedAccessTokenVersion` são `1` , `2` , ou `null` . Se o valor for `null` , este padrão será `1` , que corresponde ao ponto de extremidade v 1.0. <br><br> Se `signInAudience` no aplicativo estiver configurado como `AzureADandPersonalMicrosoftAccount` , o valor dessa propriedade deverá ser `2` |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -65,3 +65,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

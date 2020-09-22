@@ -1,43 +1,43 @@
 ---
-title: Tipo de recurso plannerAssignment
-description: Usado para gravar quando um usuário, grupo ou entidade de serviço é atribuído a uma função de aplicativo na entidade de serviço de um aplicativo. Você pode criar, ler e excluir atribuições de função de aplicativo.
+title: Tipo de recurso appRoleAssignment
+description: Utilizado para registro quando um usuário, grupo ou entidade de serviço é atribuído a uma função de aplicativo na entidade de serviço de um aplicativo. Você pode criar, ler e excluir as atribuições de função.
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: ae7c770d97640f6af63dcb594b7f624fb119f1e6
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: Auto
+ms.openlocfilehash: bc1649872955ee172ffa94c8c7316c82f49d0b8a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896788"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003336"
 ---
-# <a name="approleassignment-resource-type"></a>Tipo de recurso plannerAssignment
+# <a name="approleassignment-resource-type"></a>Tipo de recurso appRoleAssignment
 
 Namespace: microsoft.graph
 
-Usado para gravar quando um usuário, grupo ou entidade de serviço recebe uma função de aplicativo para um aplicativo.
+Utilizado para registro quando um usuário, grupo ou entidade de serviço recebe uma função de aplicativo para um aplicativo.
 
-Uma atribuição de função de aplicativo é uma relação entre a entidade de segurança atribuída (um usuário, um grupo ou uma entidade de serviço), um aplicativo de recurso (a entidade de serviço do aplicativo) e uma função de aplicativo definida no aplicativo de recurso.
+Uma atribuição de função de aplicativo é uma relação entre a entidade de segurança atribuída (um usuário, um grupo ou uma entidade de serviço), um aplicativo de recursos (a entidade de serviço do aplicativo) e uma função de aplicativo definida no aplicativo de recurso.
 
-Quando a [função de aplicativo](approle.md) que foi atribuída a uma entidade de segurança tem uma propriedade de **valor** não vazio, ela será incluída na declaração de **funções** de tokens em que o assunto é a entidade de segurança atribuída (por exemplo, respostas SAML, tokens de ID, tokens de acesso que identificam um usuário conectado ou um token de acesso que identifica uma entidade de serviço). Aplicativos e APIs usam essas declarações como parte de sua lógica de autorização.
+Quando a [função de aplicativo](approle.md) que foi atribuída a uma entidade tem uma propriedade de **valor** não vazio, isso será incluído nas **funções** de declaração de tokens em que o assunto é a entidade de segurança atribuída (por exemplo, respostas SAML, tokens de identificação, tokens de acesso identificando um usuário conectado ou um token de acesso identificando uma entidade de serviço). Os aplicativos e as APIs usam essas declarações como parte da lógica de autorização.
 
-Um usuário pode ser atribuído diretamente a uma função de aplicativo. Se uma função de aplicativo for atribuída a um grupo, os membros diretos do grupo também serão considerados como a função de aplicativo atribuída. Quando um usuário recebe uma função de aplicativo para um aplicativo, um bloco para esse aplicativo é exibido no [portal myapps](https://docs.microsoft.com/azure/active-directory/user-help/my-apps-portal-end-user-access) do usuário e no [inicializador de aplicativos do Microsoft 365](https://support.office.com/article/meet-the-office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a).
+É possível atribuir uma função de aplicativo diretamente a um usuário. Se uma função de aplicativo for atribuída a um grupo, os membros diretos do grupo também serão considerados atribuídos à função de aplicativo. Quando um usuário recebe uma função de aplicativo para um aplicativo, o bloco do aplicativo é exibido no portal [MyApps](https://docs.microsoft.com/azure/active-directory/user-help/my-apps-portal-end-user-access) e no[inicializador de aplicativos do Microsoft 365](https://support.office.com/article/meet-the-office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a).
 
-Uma atribuição de função de aplicativo onde a entidade atribuída é uma entidade de serviço é uma concessão [de permissão somente de aplicativo](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types) . Quando um usuário ou administrador se envia a uma permissão somente de aplicativo, uma atribuição de função de aplicativo é criada onde a entidade de segurança atribuída é a entidade de serviço para o aplicativo cliente e o recurso é a entidade de serviço da API de destino.
+Uma atribuição de função de aplicativo onde a entidade de segurança atribuída é uma entidade de serviço é uma permissão [somente para aplicativo](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Quando um usuário ou administrador consentir a uma permissão somente para aplicativo, será criada uma atribuição de função de aplicativo onde a entidade de segurança atribuída é a entidade de serviço do aplicativo cliente e o recurso é a entidade de serviço da API de destino.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| id | String | Um identificador exclusivo para a chave **appRoleAssignment** . Não anulável. Somente leitura. |
-| creationTimestamp | DateTimeOffset | A hora em que a atribuição de função de aplicativo foi criada. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Não oferece suporte `$filter` . |
-| principalId | Guid | O identificador exclusivo (**ID**) do [usuário](user.md), [grupo](group.md) ou [entidade de serviço](serviceprincipal.md) que recebeu a função de aplicativo. Obrigatório ao criar. Não oferece suporte `$filter` . |
-| principalType | String | O tipo da entidade de segurança atribuída. Pode ser “User”, “Group” ou “ServicePrincipal”. Somente leitura. Não oferece suporte `$filter` . |
-| principalDisplayName | String |O nome de exibição do usuário, grupo ou entidade de serviço que recebeu a atribuição da função de aplicativo. Somente leitura. Suporta `$filter` ( `eq` e `startswith` ). |
-| resourceId | Guid |O identificador exclusivo (**ID**) da entidade de [serviço](serviceprincipal.md) de recurso para a qual a atribuição foi feita. Obrigatório ao criar. Suporta `$filter` ( `eq` somente). |
-| resourceDisplayName | String | O nome de exibição da entidade de serviço do aplicativo de recurso para a qual a atribuição foi feita. Não oferece suporte `$filter` . |
-| appRoleId | Guid | O identificador (**ID**) da [função de aplicativo](approle.md) que é atribuída à entidade de segurança. Essa função de aplicativo deve ser exposta na propriedade **appRoles** na entidade de serviço do aplicativo de recurso (**ResourceId**). Se o aplicativo de recursos não tiver declarado nenhuma função de aplicativo, uma ID de função de aplicativo padrão `00000000-0000-0000-0000-000000000000` pode ser especificada para sinalizar que a entidade de segurança é atribuída ao aplicativo de recursos sem nenhuma função de aplicativo específica. Obrigatório ao criar. Não oferece suporte `$filter` . |
+| id | Cadeia de caracteres | Um identificador exclusivo para a chave **appRoleAssignment**. Não anulável. Somente leitura. |
+| creationTimestamp | DateTimeOffset | A hora em que a atribuição de função do aplicativo foi criada. O tipo timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. O não tem suporte para `$filter`. |
+| principalId | Guid | O identificador exclusivo (**id**) para o [usuário](user.md), [grupo](group.md) ou da [entidade](serviceprincipal.md) a qual o acesso está sendo concedido. Obrigatório ao criar. O não tem suporte para `$filter`. |
+| principalType | Cadeia de caracteres | O tipo da entidade de segurança atribuída. Pode ser “User”, “Group” ou “ServicePrincipal”. Somente leitura. O não tem suporte para `$filter`. |
+| principalDisplayName | Cadeia de caracteres |O nome de exibição do usuário, grupo ou entidade de serviço que recebeu a atribuição de função do aplicativo. Somente leitura. Suporte para `$filter` (`eq` e `startswith`). |
+| resourceId | Guid |Identificador exclusivo (**id**) para o recurso [(entidade de serviço)](serviceprincipal.md) para o qual a atribuição foi feita. Obrigatório ao criar. Suporte para `$filter` (`eq` somente). |
+| resourceDisplayName | Cadeia de caracteres | O nome de exibição da entidade de serviço da função do aplicativo para o qual a atribuição foi feita. O não tem suporte para `$filter`. |
+| appRoleId | Guid | O identificador (**id**) da [função do aplicativo](approle.md) que está atribuída à entidade de segurança. Essa função de aplicativo deve ser exposta na propriedade **appRoles** na entidade de serviço do aplicativo de recurso (**ResourceId**). Se o aplicativo de recurso não tiver declarado todas as funções do aplicativo, uma ID de função de aplicativo padrão de `00000000-0000-0000-0000-000000000000` poderá ser especificada para sinalizar que a entidade de segurança está atribuída ao aplicativo de recursos sem nenhuma função específica do aplicativo. Obrigatório ao criar. O não tem suporte para `$filter`. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -76,3 +76,4 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+

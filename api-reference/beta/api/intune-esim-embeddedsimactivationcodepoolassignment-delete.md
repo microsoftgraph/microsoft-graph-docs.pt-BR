@@ -3,14 +3,14 @@ title: Excluir embeddedSIMActivationCodePoolAssignment
 description: Exclui embeddedSIMActivationCodePoolAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72039b294f8dbe9e6e082d79109c620845ec33d1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d7ecdc8ef88481fbb9ab738a9758775e34b37ce6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452183"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005002"
 ---
 # <a name="delete-embeddedsimactivationcodepoolassignment"></a>Excluir embeddedSIMActivationCodePoolAssignment
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

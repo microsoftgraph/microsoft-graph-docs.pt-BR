@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1299f2e36f07db67205c6af4ca712df0545a9f5f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a4c422bf6d2c83302d4b58b192413e3841d9c6e5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454630"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004428"
 ---
 # <a name="get-rangefill"></a>Obter RangeFill
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -106,3 +106,5 @@ Content-length: 28
   ]
 }
 -->
+
+

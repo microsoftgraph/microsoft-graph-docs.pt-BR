@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ad330d5b4db44550512c48d52ff80f4ec76e74d8
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 58d9c86030d1171b2c081962ac9721872f14f9cb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181382"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004624"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
@@ -52,13 +52,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade  | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|Coleção String|                                        **Anotações**: não anulável.            |
+|marketingNotificationEmails|Coleção de cadeias de caracteres|                                        **Anotações**: não anulável.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|O perfil de privacidade de uma organização (definir statementUrl e contactEmail).            |
 |securityComplianceNotificationMails|Coleção de cadeias de caracteres||
-|securityComplianceNotificationPhones|Coleção de cadeia de caracteres||
+|securityComplianceNotificationPhones|Coleção de cadeias de caracteres||
 |technicalNotificationMails|Coleção de cadeias de caracteres|                                        **Anotações**: não anulável.            |
 
-Como o recurso de **organização** oferece suporte a [extensões](/graph/extensibility-overview), você `PATCH` pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância de **organização** existente.
+Como o recurso de **organização** oferece suporte a [extensões](/graph/extensibility-overview), você pode usar a `PATCH` operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância de **organização** existente.
 
 ## <a name="response"></a>Resposta
 
@@ -141,3 +141,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

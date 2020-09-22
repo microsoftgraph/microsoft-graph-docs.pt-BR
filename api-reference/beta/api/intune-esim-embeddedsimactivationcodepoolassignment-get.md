@@ -3,14 +3,14 @@ title: Obter embeddedSIMActivationCodePoolAssignment
 description: Leia as propriedades e as relações do objeto embeddedSIMActivationCodePoolAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 602356bf81aa8c8fb6aa162a1d9578af844e984d
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: ff4f590cb8771f90b48a448d0fbbb709b3b48346
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792012"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004995"
 ---
 # <a name="get-embeddedsimactivationcodepoolassignment"></a>Obter embeddedSIMActivationCodePoolAssignment
 
@@ -82,6 +82,9 @@ Content-Length: 422
   }
 }
 ```
+
+
+
 
 
 

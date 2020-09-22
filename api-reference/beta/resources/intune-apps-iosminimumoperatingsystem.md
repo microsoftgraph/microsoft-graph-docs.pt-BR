@@ -3,14 +3,14 @@ title: Tipo de recurso iosMinimumOperatingSystem
 description: Contém as propriedades do sistema operacional mínimo obrigatório para um aplicativo móvel iOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b3cdbf38ada21388f09aa95eed0b59fce0faf47a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 12297e0c240bfcd983e94a104f621612264bf9fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459002"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003875"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Tipo de recurso iosMinimumOperatingSystem
 
@@ -25,12 +25,12 @@ Contém as propriedades do sistema operacional mínimo obrigatório para um apli
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|v8_0|Boolean|Versão 8.0 ou posterior.|
-|v9_0|Boolean|Versão 9.0 ou posterior.|
-|v10_0|Boolean|Versão 10.0 ou posterior.|
+|v8_0|Booliano|Versão 8.0 ou posterior.|
+|v9_0|Booliano|Versão 9.0 ou posterior.|
+|v10_0|Booliano|Versão 10.0 ou posterior.|
 |v11_0|Booliano|Versão 11.0 ou posterior.|
-|v12_0|Boolean|Versão 12,0 ou posterior.|
-|v13_0|Boolean|Versão 13,0 ou posterior.|
+|v12_0|Booliano|Versão 12,0 ou posterior.|
+|v13_0|Booliano|Versão 13,0 ou posterior.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -53,6 +53,9 @@ Veja a seguir uma representação JSON do recurso.
   "v13_0": true
 }
 ```
+
+
+
 
 
 
