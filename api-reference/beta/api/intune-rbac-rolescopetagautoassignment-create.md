@@ -3,14 +3,14 @@ title: Criar roleScopeTagAutoAssignment
 description: Criar um novo objeto roleScopeTagAutoAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 337d7adaea4b27c6a1c451e463a36f58ab48ee6f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 615707de1ce197539ecbf0fc9c16bde228426a20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791676"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014410"
 ---
 # <a name="create-rolescopetagautoassignment"></a>Criar roleScopeTagAutoAssignment
 
@@ -97,6 +97,9 @@ Content-Length: 370
   }
 }
 ```
+
+
+
 
 
 

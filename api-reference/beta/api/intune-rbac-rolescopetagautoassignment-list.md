@@ -3,18 +3,18 @@ title: Listar roleScopeTagAutoAssignments
 description: Listar Propriedades e relações dos objetos roleScopeTagAutoAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c04669c1db70604fcd1edd3f1181b76248fd635
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 09bd3ff932ba5f12a73f201a623290505fd3706e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791374"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014403"
 ---
 # <a name="list-rolescopetagautoassignments"></a>Listar roleScopeTagAutoAssignments
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -81,6 +81,9 @@ Content-Length: 431
   ]
 }
 ```
+
+
+
 
 
 

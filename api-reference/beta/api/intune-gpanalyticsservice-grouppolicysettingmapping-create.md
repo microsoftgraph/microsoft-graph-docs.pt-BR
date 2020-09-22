@@ -3,14 +3,14 @@ title: Criar groupPolicySettingMapping
 description: Criar um novo objeto groupPolicySettingMapping.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d557a3fceabeeaf01a3c48e7719214f7b773e3c8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1f6efd504a281398b33df4cea5b93dc0fdfd995d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454869"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043378"
 ---
 # <a name="create-grouppolicysettingmapping"></a>Criar groupPolicySettingMapping
 
@@ -53,31 +53,32 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
-|parentId|String|ID pai da configuração de política de grupo.|
-|childIdList|Coleção String|Lista de IDs filhos da configuração de política de grupo.|
+|id|Cadeia de caracteres|Ainda não documentado|
+|parentId|Cadeia de caracteres|ID pai da configuração de política de grupo.|
+|childIdList|Coleção de cadeias de caracteres|Lista de IDs filhos da configuração de política de grupo.|
 |settingName|Cadeia de caracteres|O nome dessa configuração de política de grupo.|
-|settingValue|String|O valor dessa configuração de política de grupo.|
-|settingValueType|String|O tipo de valor dessa configuração de política de grupo.|
-|settingDisplayName|String|O nome de exibição dessa configuração de política de grupo.|
-|settingDisplayValue|String|O valor de exibição dessa configuração de política de grupo.|
-|settingDisplayValueType|String|O tipo de valor de exibição dessa configuração de política de grupo.|
-|settingValueDisplayUnits|String|As unidades de exibição desse valor de configuração da política de grupo|
-|settingCategory|String|A categoria em que a configuração da política de grupo está.|
-|mdmCspName|String|O nome do CSP para o qual esta configuração de política de grupo é mapeada.|
-|mdmSettingUri|String|O URI de CSP do MDM para o qual essa configuração de política de grupo é mapeada.|
+|settingValue|Cadeia de caracteres|O valor dessa configuração de política de grupo.|
+|settingValueType|Cadeia de caracteres|O tipo de valor dessa configuração de política de grupo.|
+|settingDisplayName|Cadeia de caracteres|O nome de exibição dessa configuração de política de grupo.|
+|settingDisplayValue|Cadeia de caracteres|O valor de exibição dessa configuração de política de grupo.|
+|settingDisplayValueType|Cadeia de caracteres|O tipo de valor de exibição dessa configuração de política de grupo.|
+|settingValueDisplayUnits|Cadeia de caracteres|As unidades de exibição desse valor de configuração da política de grupo|
+|settingCategory|Cadeia de caracteres|A categoria em que a configuração da política de grupo está.|
+|mdmCspName|Cadeia de caracteres|O nome do CSP para o qual esta configuração de política de grupo é mapeada.|
+|mdmSettingUri|Cadeia de caracteres|O URI de CSP do MDM para o qual essa configuração de política de grupo é mapeada.|
 |mdmMinimumOSVersion|Int32|A versão mínima do sistema operacional para a qual esta configuração MDM oferece suporte.|
 |SettingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|O tipo de configuração (segurança ou ADMX) da política de grupo. Os valores possíveis são: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
-|isMdmSupported|Boolean|Indica se a configuração é suportada pelo Intune ou não|
+|isMdmSupported|Booliano|Indica se a configuração é suportada pelo Intune ou não|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Indica se a configuração é suportada no MDM ou não. Os valores possíveis são: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|O escopo da configuração. Os valores possíveis são: `unknown`, `device`, `user`.|
-|intuneSettingUriList|Coleção String|A lista de URIs de configuração do Intune que esta configuração de política de grupo mapeia para|
-|intuneSettingDefinitionId|String|A ID da definição da configuração do Intune|
+|intuneSettingUriList|Coleção de cadeias de caracteres|A lista de URIs de configuração do Intune que esta configuração de política de grupo mapeia para|
+|intuneSettingDefinitionId|Cadeia de caracteres|A ID da definição da configuração do Intune|
+|admxSettingDefinitionId|Cadeia de caracteres|ID da política de grupo ADMX|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,7 +87,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}/groupPolicySettingMappings
 Content-type: application/json
-Content-length: 957
+Content-length: 1023
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -112,7 +113,8 @@ Content-length: 957
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
   ],
-  "intuneSettingDefinitionId": "Intune Setting Definition Id value"
+  "intuneSettingDefinitionId": "Intune Setting Definition Id value",
+  "admxSettingDefinitionId": "Admx Setting Definition Id value"
 }
 ```
 
@@ -121,7 +123,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1006
+Content-Length: 1072
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -148,9 +150,13 @@ Content-Length: 1006
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
   ],
-  "intuneSettingDefinitionId": "Intune Setting Definition Id value"
+  "intuneSettingDefinitionId": "Intune Setting Definition Id value",
+  "admxSettingDefinitionId": "Admx Setting Definition Id value"
 }
 ```
+
+
+
 
 
 
