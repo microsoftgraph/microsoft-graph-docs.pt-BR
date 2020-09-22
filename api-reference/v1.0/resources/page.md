@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 33fbbb150908bf5b3c472cf02b971da60f1aa014
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 6b80a9430add3ce93286e6d657a7371798f9df7e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811928"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094222"
 ---
 # <a name="page-resource-type"></a>tipo de recurso Page
 
@@ -75,9 +75,9 @@ Veja a seguir uma representação JSON do recurso.
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter página](../api/page-get.md) | [Page](page.md) |Leia as propriedades e as relações da página.|
-|[Atualizar conteúdo da página](../api/page-update.md) | Nenhum(a) |Atualize o conteúdo HTML da página. |
-|[Excluir página](../api/page-delete.md) | Nenhum(a) |Exclua a página. |
-|[copyToSection](../api/page-copytosection.md)| Nenhum(a) |Copia a página para uma seção específica.|
+|[Atualizar conteúdo da página](../api/page-update.md) | Nenhum |Atualize o conteúdo HTML da página. |
+|[Excluir página](../api/page-delete.md) | Nenhum |Exclua a página. |
+|[copyToSection](../api/page-copytosection.md)| Nenhum |Copia a página para uma seção específica.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -88,3 +88,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

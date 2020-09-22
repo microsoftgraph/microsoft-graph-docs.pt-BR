@@ -3,14 +3,14 @@ title: tipo de enumeração mobileAppContentFileUploadState
 description: Contém propriedades para carregar Estados de solicitação.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fd0fefa3e4c5f2e0d53fb18abbd8badfdf0b15aa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 45267bb2186b7f77e6cead6dc114a7490ade4f86
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43410866"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094348"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>tipo de enumeração mobileAppContentFileUploadState
 
@@ -24,8 +24,8 @@ Contém propriedades para carregar Estados de solicitação.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sucesso|,0|Ainda não documentado|
-|transientError|1|Ainda não documentado|
-|erro|duas|Ainda não documentado|
+|transientError|1 |Ainda não documentado|
+|erro|2 |Ainda não documentado|
 |desconhecido|3D|Ainda não documentado|
 |azureStorageUriRequestSuccess|100|Ainda não documentado|
 |azureStorageUriRequestPending|101|Ainda não documentado|
@@ -39,6 +39,8 @@ Contém propriedades para carregar Estados de solicitação.
 |commitFilePending|301|Ainda não documentado|
 |commitFileFailed|302|Ainda não documentado|
 |commitFileTimedOut|303|Ainda não documentado|
+
+
 
 
 
