@@ -5,30 +5,30 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a92a129191252ec93668e131e188fb96bebe62bf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 282eda63ed9625eb20f472f32ba3b8f8b0440b81
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454707"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081843"
 ---
-# <a name="range-offsetrange"></a><span data-ttu-id="e79c0-105">Range: OffsetRange</span><span class="sxs-lookup"><span data-stu-id="e79c0-105">Range: OffsetRange</span></span>
+# <a name="range-offsetrange"></a><span data-ttu-id="46140-105">Range: OffsetRange</span><span class="sxs-lookup"><span data-stu-id="46140-105">Range: OffsetRange</span></span>
 
-<span data-ttu-id="e79c0-106">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="e79c0-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="46140-106">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="46140-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e79c0-p102">Obtém um objeto que representa um intervalo deslocado do intervalo especificado. A dimensão do intervalo retornado corresponde a esse intervalo. Se o intervalo resultante é imposto para fora dos limites da grade da planilha, o sistema gera uma exceção.</span><span class="sxs-lookup"><span data-stu-id="e79c0-p102">Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e79c0-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="e79c0-110">Permissions</span></span>
-<span data-ttu-id="e79c0-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e79c0-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="46140-p102">Obtém um objeto que representa um intervalo deslocado do intervalo especificado. A dimensão do intervalo retornado corresponde a esse intervalo. Se o intervalo resultante é imposto para fora dos limites da grade da planilha, o sistema gera uma exceção.</span><span class="sxs-lookup"><span data-stu-id="46140-p102">Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown.</span></span>
+## <a name="permissions"></a><span data-ttu-id="46140-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="46140-110">Permissions</span></span>
+<span data-ttu-id="46140-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="46140-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e79c0-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e79c0-113">Permission type</span></span>      | <span data-ttu-id="e79c0-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e79c0-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="46140-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="46140-113">Permission type</span></span>      | <span data-ttu-id="46140-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="46140-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e79c0-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e79c0-115">Delegated (work or school account)</span></span> | <span data-ttu-id="e79c0-116">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e79c0-116">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="e79c0-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e79c0-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e79c0-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e79c0-118">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="e79c0-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e79c0-119">Application</span></span> | <span data-ttu-id="e79c0-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e79c0-120">Not supported.</span></span> |
+|<span data-ttu-id="46140-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="46140-115">Delegated (work or school account)</span></span> | <span data-ttu-id="46140-116">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="46140-116">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="46140-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="46140-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="46140-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="46140-118">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="46140-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="46140-119">Application</span></span> | <span data-ttu-id="46140-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="46140-120">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e79c0-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e79c0-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="46140-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="46140-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/OffsetRange
@@ -36,28 +36,28 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/OffsetRange
 GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="e79c0-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e79c0-122">Request headers</span></span>
-| <span data-ttu-id="e79c0-123">Nome</span><span class="sxs-lookup"><span data-stu-id="e79c0-123">Name</span></span>       | <span data-ttu-id="e79c0-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="e79c0-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="46140-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="46140-122">Request headers</span></span>
+| <span data-ttu-id="46140-123">Nome</span><span class="sxs-lookup"><span data-stu-id="46140-123">Name</span></span>       | <span data-ttu-id="46140-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="46140-124">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="e79c0-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="e79c0-125">Authorization</span></span>  | <span data-ttu-id="e79c0-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e79c0-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e79c0-128">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e79c0-128">Workbook-Session-Id</span></span>  | <span data-ttu-id="e79c0-p105">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="e79c0-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="46140-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="46140-125">Authorization</span></span>  | <span data-ttu-id="46140-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="46140-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="46140-128">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="46140-128">Workbook-Session-Id</span></span>  | <span data-ttu-id="46140-p105">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="46140-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e79c0-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e79c0-131">Request body</span></span>
-<span data-ttu-id="e79c0-132">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e79c0-132">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="46140-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="46140-131">Request body</span></span>
+<span data-ttu-id="46140-132">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="46140-132">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="e79c0-133">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="e79c0-133">Parameter</span></span>    | <span data-ttu-id="e79c0-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="e79c0-134">Type</span></span>   |<span data-ttu-id="e79c0-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="e79c0-135">Description</span></span>|
+| <span data-ttu-id="46140-133">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="46140-133">Parameter</span></span>    | <span data-ttu-id="46140-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="46140-134">Type</span></span>   |<span data-ttu-id="46140-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="46140-135">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e79c0-136">rowOffset</span><span class="sxs-lookup"><span data-stu-id="e79c0-136">rowOffset</span></span>|<span data-ttu-id="e79c0-137">número</span><span class="sxs-lookup"><span data-stu-id="e79c0-137">number</span></span>|<span data-ttu-id="e79c0-p106">O número de linhas (positivo, negativo ou 0) com base no qual o intervalo deve ser deslocado. Os valores positivos são deslocados para baixo e os negativos, para cima.</span><span class="sxs-lookup"><span data-stu-id="e79c0-p106">The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.</span></span>|
-|<span data-ttu-id="e79c0-140">columnOffset</span><span class="sxs-lookup"><span data-stu-id="e79c0-140">columnOffset</span></span>|<span data-ttu-id="e79c0-141">number</span><span class="sxs-lookup"><span data-stu-id="e79c0-141">number</span></span>|<span data-ttu-id="e79c0-p107">O número de colunas (positivo, negativo ou 0) com base no qual o intervalo deve ser deslocado. Os valores positivos são deslocados para a direita e os negativos, para a esquerda.</span><span class="sxs-lookup"><span data-stu-id="e79c0-p107">The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.</span></span>|
+|<span data-ttu-id="46140-136">rowOffset</span><span class="sxs-lookup"><span data-stu-id="46140-136">rowOffset</span></span>|<span data-ttu-id="46140-137">number</span><span class="sxs-lookup"><span data-stu-id="46140-137">number</span></span>|<span data-ttu-id="46140-p106">O número de linhas (positivo, negativo ou 0) com base no qual o intervalo deve ser deslocado. Os valores positivos são deslocados para baixo e os negativos, para cima.</span><span class="sxs-lookup"><span data-stu-id="46140-p106">The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.</span></span>|
+|<span data-ttu-id="46140-140">columnOffset</span><span class="sxs-lookup"><span data-stu-id="46140-140">columnOffset</span></span>|<span data-ttu-id="46140-141">number</span><span class="sxs-lookup"><span data-stu-id="46140-141">number</span></span>|<span data-ttu-id="46140-p107">O número de colunas (positivo, negativo ou 0) com base no qual o intervalo deve ser deslocado. Os valores positivos são deslocados para a direita e os negativos, para a esquerda.</span><span class="sxs-lookup"><span data-stu-id="46140-p107">The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e79c0-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="e79c0-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="46140-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="46140-144">Response</span></span>
 
-<span data-ttu-id="e79c0-145">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [workbookRange](../resources/workbookrange.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e79c0-145">If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.</span></span>
+<span data-ttu-id="46140-145">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [workbookRange](../resources/workbookrange.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="46140-145">If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e79c0-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e79c0-146">Example</span></span>
-<span data-ttu-id="e79c0-147">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="e79c0-147">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="e79c0-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e79c0-148">Request</span></span>
-<span data-ttu-id="e79c0-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e79c0-149">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="46140-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="46140-146">Example</span></span>
+<span data-ttu-id="46140-147">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="46140-147">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="46140-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="46140-148">Request</span></span>
+<span data-ttu-id="46140-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="46140-149">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_offsetrange"
@@ -75,8 +75,8 @@ Content-length: 49
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="e79c0-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="e79c0-150">Response</span></span>
-<span data-ttu-id="e79c0-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e79c0-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="46140-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="46140-150">Response</span></span>
+<span data-ttu-id="46140-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="46140-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,3 +109,5 @@ Content-length: 169
   "suppressions": []
 }
 -->
+
+
