@@ -3,14 +3,14 @@ title: Tipo de recurso mediaContentRatingIreland
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01135bb6c5a19ae837a834a51a5857b5f54baac0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a7c808cd6c614837acbb863e92323429d5b4a110
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473157"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003119"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>Tipo de recurso mediaContentRatingIreland
 
@@ -43,6 +43,8 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
+
+
 
 
 
