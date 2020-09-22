@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ba7b481f4b20033e1a4ffcd42ac92421bc3536a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e20811129b069011db8b6a8ab9a6b762603b7600
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519117"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023748"
 ---
 # <a name="workbooktablerow-resource-type"></a>tipo de recurso workbookTableRow
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ Representa uma linha em uma tabela.
 |[Get TableRow](../api/tablerow-get.md) | [workbookTableRow](workbooktablerow.md) |Leia as propriedades e os relacionamentos do objeto tableRow.|
 |[Update](../api/tablerow-update.md) | [workbookTableRow](workbooktablerow.md)  |Atualize o objeto TableRow. |
 |[Range](../api/tablerow-range.md)|[workbookRange](workbookrange.md)|Retorna o objeto de intervalo associado a toda a linha.|
-|[Delete](../api/tablerow-delete.md)|None|Exclui a linha da tabela.|
+|[Delete](../api/tablerow-delete.md)|Nenhum|Exclui a linha da tabela.|
 |[List](../api/tablerow-list.md) | coleção [workbookTableRow](workbooktablerow.md) |Obtenha uma coleção de objetos tableRow. |
 |[Itemat](../api/tablerowcollection-itemat.md)|[workbookTableRow](workbooktablerow.md)|Obtém uma linha com base em sua posição na coleção.|
 |[Add](../api/tablerowcollection-add.md)|[workbookTableRow](workbooktablerow.md)|Adiciona uma nova linha à tabela.|
@@ -75,3 +75,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3b8618540559a508671383a777d608ea21c35ea3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d5bd5cba444f03042e556906fc28e6a134f754d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446596"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021408"
 ---
 # <a name="messagerule-resource-type"></a>Tipo de recurso messageRule
 
@@ -30,7 +30,7 @@ Programaticamente, você pode acessar regras por meio da propriedade de navegaç
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](messageruleactions.md) | Ações a serem realizadas em uma mensagem quando as condições correspondentes forem atendidas. |
 | conditions | [messageRulePredicates](messagerulepredicates.md) | Condições que, quando atendidas, acionarão as ações correspondentes dessa regra. |
-| displayName | Cadeia de caracteres | O nome de exibição da regra. |
+| displayName | String | O nome de exibição da regra. |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Condições de exceção para a regra. |
 | hasError | Boolean | Indica se a regra está em uma condição de erro. Somente leitura. |
 | id |String|O identificador exclusivo da regra. Somente leitura.|
@@ -85,3 +85,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

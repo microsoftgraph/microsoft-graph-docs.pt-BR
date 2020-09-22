@@ -3,14 +3,14 @@ title: tipo de enumeração appInstallControlType
 description: Configuração do controle de instalação do aplicativo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 648fdfc2ab152272a1e90fcbee4e97d59fece0b9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 32d5b0d682322245dd55cac277169effd22c5c6c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470145"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021501"
 ---
 # <a name="appinstallcontroltype-enum-type"></a>tipo de enumeração appInstallControlType
 
@@ -26,10 +26,13 @@ Configuração do controle de instalação do aplicativo
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|em qualquer lugar|1|Desativar recomendações de aplicativo|
-|storeOnly|duas|Permitir somente aplicativos de armazenamento|
-|a0/&gt|3D|Mostrar recomendações de aplicativo|
+|em qualquer lugar|1 |Desativar recomendações de aplicativo|
+|storeOnly|2 |Permitir somente aplicativos de armazenamento|
+|a0/&gt|3 |Mostrar recomendações de aplicativo|
 |preferStore|4 |Avisar antes de instalar aplicativos de fora do repositório|
+
+
+
 
 
 

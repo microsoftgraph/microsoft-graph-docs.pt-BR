@@ -3,14 +3,14 @@ title: Criar windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 description: Criar um novo objeto windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18af990c81696e235ca9e29879c6570773527d0f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d9648798dca20692e370418a74194876fb04b1b6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472293"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022285"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Criar windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
@@ -55,10 +55,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsD
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
-|deviceId|String|ID de dispositivo.|
+|deviceId|Cadeia de caracteres|ID de dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Hora da data da última sincronização.|
 |osVersion|String|Versão do sistema operacional Windows.|
-|osDescription|String|Descrição da versão do sistema operacional Windows.|
+|osDescription|Cadeia de caracteres|Descrição da versão do sistema operacional Windows.|
 |deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|O estado de implantação da política. Os valores possíveis são: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
 |userName|Cadeia de caracteres|O nome do usuário deste dispositivo.|
 |userPrincipalName|String|Nome principal do usuário.|
@@ -67,7 +67,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsD
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -113,6 +113,9 @@ Content-Length: 535
   "policyVersion": "Policy Version value"
 }
 ```
+
+
+
 
 
 

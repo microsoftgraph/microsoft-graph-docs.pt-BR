@@ -3,14 +3,14 @@ title: tipo de recurso officeUserCheckinSummary
 description: Entidade que descreve as estatísticas de check-in do locatário.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8564f7d0d2fb06218b141b7e9369f2096bdec982
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cccebb816e8d81c4d775754ed5a77a6e6180b956
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462516"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021676"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>tipo de recurso officeUserCheckinSummary
 
@@ -46,6 +46,9 @@ Veja a seguir uma representação JSON do recurso.
   "failedUserCount": 1024
 }
 ```
+
+
+
 
 
 

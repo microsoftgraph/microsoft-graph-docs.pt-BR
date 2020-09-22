@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 5f10c39cbb53da9329d11ee0724f716c28871813
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 04b9e4b44157b9d457f0d8bc4047386082102818
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44892455"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020863"
 ---
 # <a name="notebook-copynotebook"></a>bloco de anotações: copyNotebook
 
@@ -113,3 +113,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

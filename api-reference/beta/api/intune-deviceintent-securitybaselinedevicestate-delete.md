@@ -3,14 +3,14 @@ title: Excluir securityBaselineDeviceState
 description: Exclui securityBaselineDeviceState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4707f195f8ebfa1108a56ca2eeb1e42aa2aabaa8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 31ca50ce64a8e6c21a20a7de525558d889fbb57f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381094"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022488"
 ---
 # <a name="delete-securitybaselinedevicestate"></a>Excluir securityBaselineDeviceState
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

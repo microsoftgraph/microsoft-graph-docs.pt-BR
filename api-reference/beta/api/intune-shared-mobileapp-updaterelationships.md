@@ -3,14 +3,14 @@ title: ação updateRelationships
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0fd30dda8c61cf32a5d2c9263d3791d17c3083f2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4668438f40570d160f25916a0338432f45c6fedb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441231"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022397"
 ---
 # <a name="updaterelationships-action"></a>ação updateRelationships
 
@@ -91,6 +91,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

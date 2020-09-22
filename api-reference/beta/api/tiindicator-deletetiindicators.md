@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: f819f97700263423ec0064e373cf5f53b7bec376
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e11defaf3d505d5566c9d5d720e26b6c88447a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022203"
 ---
 # <a name="tiindicator-deletetiindicators"></a>tiIndicator: deleteTiIndicators
 
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|valor|Coleção de cadeias de caracteres| Coleção de tiIndicator `id` s a ser excluído. |
+|valor|Coleção String| Coleção de tiIndicator `id` s a ser excluído. |
 
 ## <a name="response"></a>Resposta
 
@@ -136,3 +136,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

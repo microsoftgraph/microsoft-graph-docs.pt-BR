@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: b9feae78472a4ed90005904ba5d97136de1a5ba5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c9dda21c2cedb31d681d64a16ff0e4d1fdf9387e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510876"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020656"
 ---
 # <a name="update-plannerplan"></a>Atualizar plannerPlan
 
@@ -45,12 +45,12 @@ No corpo da solicitação, forneça os valores de campos relevantes a serem atua
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|owner|Cadeia de caracteres|[Grupo](../resources/group.md) `id` pelo qual o plano é proprietário. Deve haver um grupo válido para que esse campo possa ser definido. Uma vez definido, isso só pode ser atualizado pelo proprietário.|
+|proprietário|String|[Grupo](../resources/group.md) `id` pelo qual o plano é proprietário. Deve haver um grupo válido para que esse campo possa ser definido. Uma vez definido, isso só pode ser atualizado pelo proprietário.|
 |title|String|Título do plano.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [plannerPlan](../resources/plannerplan.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [plannerPlan](../resources/plannerplan.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -132,3 +132,4 @@ Content-length: 357
   "suppressions": [
   ]
 }-->
+

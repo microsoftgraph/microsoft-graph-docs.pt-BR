@@ -5,16 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 183a5856aafd8aa2a5b8b1fe3b1eb48bddcc5358
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b634166896932897b200d2eeb17a1e54aadb543
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496037"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021921"
 ---
 # <a name="informationprotectionlabel-resource-type"></a>tipo de recurso informationProtectionLabel
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,11 +36,11 @@ Descreve o rótulo de proteção de informações que detalha como aplicar corre
 | Propriedade    | Tipo    | Descrição                                                                                     |
 | :---------- | :------ | :---------------------------------------------------------------------------------------------- |
 | color       | String  | A cor que a interface do usuário deve exibir para o rótulo, se configurada.                              |
-| description | Cadeia de caracteres  | A descrição definida pelo administrador para o rótulo.                                                    |
+| description | String  | A descrição definida pelo administrador para o rótulo.                                                    |
 | id          | String  | A ID do rótulo é um identificador global exclusivo (GUID)                                             |
-| isActive    | Boolean | Indica se o rótulo está ativo ou não. Os rótulos ativos devem ser ocultos ou desabilitados na interface do usuário. |
-| nome        | Cadeia de caracteres  | O nome de texto não criptografado do rótulo.                                                                |
-| sensitivity | Int32   | O valor de confidencialidade do rótulo, onde inferior é menos confidencial.                              |
+| isActive    | Booliano | Indica se o rótulo está ativo ou não. Os rótulos ativos devem ser ocultos ou desabilitados na interface do usuário. |
+| nome        | String  | O nome de texto não criptografado do rótulo.                                                                |
+| sensibilidade | Int32   | O valor de confidencialidade do rótulo, onde inferior é menos confidencial.                              |
 | tooltip     | String  | A dica de ferramenta que deve ser exibida para o rótulo em uma interface do usuário.                                     |
 
 ## <a name="relationships"></a>Relações
@@ -82,3 +82,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

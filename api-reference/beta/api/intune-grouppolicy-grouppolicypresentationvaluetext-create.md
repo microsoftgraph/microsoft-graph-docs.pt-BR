@@ -3,14 +3,14 @@ title: Criar groupPolicyPresentationValueText
 description: Criar um novo objeto groupPolicyPresentationValueText.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 52768d32767829ee6a9a1d1c672738881f09654c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b1792778f94b13a2000e5982a33835c1a262f45c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463163"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022474"
 ---
 # <a name="create-grouppolicypresentationvaluetext"></a>Criar groupPolicyPresentationValueText
 
@@ -61,7 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -93,6 +93,9 @@ Content-Length: 273
   "value": "Value value"
 }
 ```
+
+
+
 
 
 

@@ -5,16 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: fee67727e610e44ab8cfcf15f973160310575136
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 418b991ff24613fa46c3adc6e7a98474ffa4e2b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42495869"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021886"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,6 +41,8 @@ Veja a seguir uma representação JSON do recurso
 
 | Propriedade              | Tipo          | Descrição  |
 | -------------         |-----------    | -------------|
-| displayName       | Cadeia de caracteres          | O nome de exibição do usuário que compartilhou o item. |
+| displayName       | String          | O nome de exibição do usuário que compartilhou o item. |
 | id              | String        | A ID do usuário que compartilhou o item.     |
 | address             | Cadeia de caracteres      | O endereço de email do usuário que compartilhou o item.  |
+
+

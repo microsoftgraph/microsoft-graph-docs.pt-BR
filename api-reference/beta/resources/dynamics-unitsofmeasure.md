@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 9b0774f24109f40684039bd8ac98188903f28c3d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 97fb9fd7f36042a2ff056570e5e05330ff2e60a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503009"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021923"
 ---
 # <a name="unitsofmeasure-resource-type"></a>tipo de recurso unitsOfMeasure
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ Representa uma unidade de medida, que é um padrão de medida de uma quantidade,
 |[Obter unitsOfMeasure](../api/dynamics-unitsofmeasure-get.md)|unitsOfMeasure|Obtém um objeto de unidade de medida.|
 |[Postar unitsOfMeasure](../api/dynamics-create-unitsofmeasure.md)|unitsOfMeasure|Cria um objeto de unidade de medida.|
 |[Patch unitsOfMeasure](../api/dynamics-unitsofmeasure-update.md)|unitsOfMeasure|Atualiza um objeto de unidade de medida.|
-|[Excluir unitsOfMeasure](../api/dynamics-unitsofmeasure-delete.md)|nenhuma|Exclui um objeto de unidade de medida.|
+|[Excluir unitsOfMeasure](../api/dynamics-unitsofmeasure-delete.md)|Nenhuma|Exclui um objeto de unidade de medida.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -58,3 +58,5 @@ Veja a seguir uma representação JSON do recurso **unitsOfMeasure** .
 }
 
 ```
+
+

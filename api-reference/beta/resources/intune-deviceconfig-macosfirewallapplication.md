@@ -3,14 +3,14 @@ title: tipo de recurso macOSFirewallApplication
 description: Representa um aplicativo na lista de aplicativos de firewall do macOS
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bac45dfa350dc293fcb7957e45a2698e7f179bfb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0ad576bb4cd6f23919d927797708786413c703de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464147"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024161"
 ---
 # <a name="macosfirewallapplication-resource-type"></a>tipo de recurso macOSFirewallApplication
 
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "allowsIncomingConnections": true
 }
 ```
+
+
+
 
 
 

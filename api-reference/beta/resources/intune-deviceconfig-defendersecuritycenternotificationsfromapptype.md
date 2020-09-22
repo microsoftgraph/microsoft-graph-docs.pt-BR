@@ -3,14 +3,14 @@ title: tipo de enumeração defenderSecurityCenterNotificationsFromAppType
 description: Valores possíveis para defenderSecurityCenterNotificationsFromApp
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b0d63a29fcb5800397fc4a6a389e1f907c6e351c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 59c2bd7bcc86cee66a1d93ec1bd7f134b7604fe8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420836"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024280"
 ---
 # <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a>tipo de enumeração defenderSecurityCenterNotificationsFromAppType
 
@@ -26,8 +26,11 @@ Valores possíveis para defenderSecurityCenterNotificationsFromApp
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|blockNoncriticalNotifications|1|Bloquear notificações não críticas|
-|blockAllNotifications|duas|Bloquear todas as notificações|
+|blockNoncriticalNotifications|1 |Bloquear notificações não críticas|
+|blockAllNotifications|2 |Bloquear todas as notificações|
+
+
+
 
 
 

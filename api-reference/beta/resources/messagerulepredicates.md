@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 1a8d5c63648a720cad5e5ceaed77b25eff867abe
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 29743e149523b31aba4fb0c024bec391f8be8fcf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43317388"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021403"
 ---
 # <a name="messagerulepredicates-resource-type"></a>Tipo de recurso messageRulePredicates
 
@@ -23,12 +23,12 @@ Representa o conjunto de condições e exceções disponíveis para uma regra.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| bodyContains | Conjunto de cadeias de caracteres | Representa as cadeias de caracteres que devem aparecer no corpo de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
-| bodyOrSubjectContains | Conjunto de cadeias de caracteres | Representa as cadeias de caracteres que devem aparecer no corpo ou assunto de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
-| categories | String collection | Representa as categorias com as quais a mensagem de entrada deve ser rotulada para que a exceção ou condição seja aplicada. |
+| bodyContains | Coleção String | Representa as cadeias de caracteres que devem aparecer no corpo de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
+| bodyOrSubjectContains | Coleção String | Representa as cadeias de caracteres que devem aparecer no corpo ou assunto de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
+| categories | Coleção de cadeias de caracteres | Representa as categorias com as quais a mensagem de entrada deve ser rotulada para que a exceção ou condição seja aplicada. |
 | fromAddresses | Coleção [recipient](recipient.md) | Representa os endereços de email específicos do remetente de uma mensagem de entrada para que a condição ou exceção seja aplicada. |
 | hasAttachments | Booliano | Indica se uma mensagem de entrada deve ter anexos para que a exceção ou condição seja aplicada. |
-| headerContains | Conjunto de cadeias de caracteres | Representa as cadeias de caracteres que são exibidas nos cabeçalhos de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
+| headerContains | Coleção String | Representa as cadeias de caracteres que são exibidas nos cabeçalhos de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
 | importância | importância | A importância que é marcada em uma mensagem de entrada para que a exceção ou condição seja aplicada: `low`, `normal`, `high`. |
 | isApprovalRequest | Boolean | Indica se uma mensagem de entrada deve ter uma solicitação de aprovação para que a exceção ou condição seja aplicada. |
 | isAutomaticForward | Boolean | Indica se uma mensagem de entrada deve ser encaminhada automaticamente para que a exceção ou condição seja aplicada. |
@@ -43,15 +43,15 @@ Representa o conjunto de condições e exceções disponíveis para uma regra.
 | isVoicemail | Boolean | Indica se uma mensagem de entrada deve ser uma caixa postal para que a exceção ou condição seja aplicada. |
 | messageActionFlag | messageActionFlag  | Representa o valor do sinalizador de ações que é exibido em uma mensagem de entrada para que a exceção ou condição seja aplicada. Os valores possíveis são: `any` , `call` , `doNotForward` , `followUp` , `fyi` , `forward` , `noResponseNecessary` , `read` , `reply` , `replyToAll` , `review` . |
 | notSentToMe | Boolean | Indica se o proprietário da caixa de correio não deve ser um destinatário de uma mensagem de entrada para que a condição ou exceção seja aplicada. |
-| recipientContains | Conjunto de cadeias de caracteres | Representa as cadeias de caracteres que são exibidas nas propriedades **toRecipients** ou **ccRecipients** de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
-| senderContains | Conjunto de cadeias de caracteres | Representa as cadeias de caracteres que são exibidas na propriedade **from** de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
+| recipientContains | Coleção String | Representa as cadeias de caracteres que são exibidas nas propriedades **toRecipients** ou **ccRecipients** de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
+| senderContains | Coleção String | Representa as cadeias de caracteres que são exibidas na propriedade **from** de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
 | sensitivity | sensibilidade | Representa o nível de sensibilidade que deve ser marcado em uma mensagem de entrada para que a condição ou exceção seja aplicada. Os valores possíveis são: `normal`, `personal`, `private`, `confidential`. |
 | sentCcMe | Boolean | Indica se o proprietário da caixa de correio deve estar na propriedade **ccRecipients** de uma mensagem de entrada para que a condição ou exceção seja aplicada. |
 | sentOnlyToMe | Boolean | Indica se o proprietário da caixa de correio deve ser o único destinatário em uma mensagem de entrada para que a condição ou exceção seja aplicada. |
 | sentToAddresses | Coleção [recipient](recipient.md) | Representa os endereços de email para os quais uma mensagem de entrada deve ter sido enviada para que a condição ou exceção seja aplicada. |
 | sentToMe | Boolean | Indica se o proprietário da caixa de correio deve estar na propriedade **toRecipients** de uma mensagem de entrada para que a condição ou exceção seja aplicada. |
 | sentToOrCcMe | Boolean | Indica se o proprietário da caixa de correio deve estar na propriedade **toRecipients** ou **ccRecipients** de uma mensagem de entrada para que a condição ou exceção seja aplicada. |
-| subjectContains | Conjunto de cadeias de caracteres | Representa as cadeias de caracteres que são exibidas no assunto de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
+| subjectContains | Coleção String | Representa as cadeias de caracteres que são exibidas no assunto de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
 | withinSizeRange | [sizeRange](sizerange.md) | Representa os tamanhos mínimo e máximo (em kilobytes) nos quais uma mensagem de entrada deve se enquadrar para que a condição ou exceção seja aplicada. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -112,3 +112,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

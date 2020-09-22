@@ -3,14 +3,14 @@ title: tipo de recurso deliveryOptimizationBandwidth
 description: Tipos de restrição de largura de banda
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ac3d48ac8216e55109c2686fdfb89c55053d6e7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69429b760dd85faa79dfd9f2499321410018f94a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420783"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024301"
 ---
 # <a name="deliveryoptimizationbandwidth-resource-type"></a>tipo de recurso deliveryOptimizationBandwidth
 
@@ -41,6 +41,9 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.deliveryOptimizationBandwidth"
 }
 ```
+
+
+
 
 
 

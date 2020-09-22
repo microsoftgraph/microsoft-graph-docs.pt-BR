@@ -3,14 +3,14 @@ title: tipo de recurso roleManagement
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 33ab1c7d896fa15e0c1248d8984ff9c1da56aa57
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 40a74c46f02aef42c8785e666705278980c544c4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43356916"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021494"
 ---
 # <a name="rolemanagement-resource-type"></a>tipo de recurso roleManagement
 
@@ -52,6 +52,9 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
+
+
+
 
 
 

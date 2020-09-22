@@ -3,14 +3,14 @@ title: Listar macOSOfficeSuiteApps
 description: Listar propriedades e relações dos objetos macOSOfficeSuiteApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02493ded39b93223bcd2984ff4d39b544e81b4f7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1babf64096ea8cb63d9c9ce2f3ab4af18b8c062d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446507"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023244"
 ---
 # <a name="list-macosofficesuiteapps"></a>Listar macOSOfficeSuiteApps
 
@@ -91,6 +91,9 @@ Content-Length: 865
   ]
 }
 ```
+
+
+
 
 
 

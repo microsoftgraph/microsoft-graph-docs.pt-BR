@@ -3,14 +3,14 @@ title: tipo de enumeração macOSFileVaultRecoveryKeyTypes
 description: Tipos de chave de recuperação para macOS FileVault
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 77fe5f115fec13498d0dbd034d87872f65bfc211
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: df4374cdcb56a4400c483fea84d2cf02b3c6c0dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43383451"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024168"
 ---
 # <a name="macosfilevaultrecoverykeytypes-enum-type"></a>tipo de enumeração macOSFileVaultRecoveryKeyTypes
 
@@ -26,8 +26,11 @@ Tipos de chave de recuperação para macOS FileVault
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Valor padrão do dispositivo, sem intenção.|
-|institutionalRecoveryKey|1|Uma chave de recuperação institucional é como uma chave de recuperação "mestra" que pode ser usada para desbloquear qualquer dispositivo cuja senha tenha sido perdida.|
-|personalRecoveryKey|duas|Uma chave de recuperação pessoal é um código exclusivo que pode ser usado para desbloquear o dispositivo do usuário, mesmo se a senha do dispositivo for perdida.|
+|institutionalRecoveryKey|1 |Uma chave de recuperação institucional é como uma chave de recuperação "mestra" que pode ser usada para desbloquear qualquer dispositivo cuja senha tenha sido perdida.|
+|personalRecoveryKey|2 |Uma chave de recuperação pessoal é um código exclusivo que pode ser usado para desbloquear o dispositivo do usuário, mesmo se a senha do dispositivo for perdida.|
+
+
+
 
 
 

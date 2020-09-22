@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: b8746d58b03b15a3118e8fc51a42e61e3c22cb78
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 21e18b35dc4e4ff639087617d679ae1583516026
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896802"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021221"
 ---
 # <a name="office365activationsusercounts-resource-type"></a>tipo de recurso office365ActivationsUserCounts
 
@@ -44,3 +44,5 @@ Veja a seguir uma representação JSON do recurso.
   "sharedComputerActivation": 1024
 }
 ```
+
+

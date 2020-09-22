@@ -3,14 +3,14 @@ title: tipo de recurso officeConfigurationAssignmentTarget
 description: Destino de atribuição de configuração de cliente do Office.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d34d1272c5815144b11ec2b8ca804d33ed6bde0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5a740ab19357ca76a76fd2c90d506ec1b1d32d3f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43362518"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021690"
 ---
 # <a name="officeconfigurationassignmenttarget-resource-type"></a>tipo de recurso officeConfigurationAssignmentTarget
 
@@ -42,6 +42,9 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.officeConfigurationAssignmentTarget"
 }
 ```
+
+
+
 
 
 

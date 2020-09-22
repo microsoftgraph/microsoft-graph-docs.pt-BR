@@ -3,14 +3,14 @@ title: tipo de recurso macOSKernelExtension
 description: Representa uma extensão de kernel macOS específica. Uma extensão de kernel macOS pode ser descrita por seu identificador de equipe e seu identificador de pacote.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 457d13b2f3f78b52457afd7c30bf3b0e36ca4e92
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ef7004fd7be5340a7e5a1614e51d3ecdfd6f7ff4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447049"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024105"
 ---
 # <a name="macoskernelextension-resource-type"></a>tipo de recurso macOSKernelExtension
 
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "bundleId": "String"
 }
 ```
+
+
+
 
 
 

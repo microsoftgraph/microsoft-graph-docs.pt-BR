@@ -3,14 +3,14 @@ title: Excluir macOSDeviceFeaturesConfiguration
 description: Exclui macOSDeviceFeaturesConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82d7c65991fcf0cc17ef4852ff6635cb9f0db6c7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 88f3f909e57e3f70bdf5e8609147edce2e02cf92
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388024"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023188"
 ---
 # <a name="delete-macosdevicefeaturesconfiguration"></a>Excluir macOSDeviceFeaturesConfiguration
 
@@ -63,6 +63,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

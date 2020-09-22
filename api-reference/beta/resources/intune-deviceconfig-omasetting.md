@@ -3,14 +3,14 @@ title: Tipo de recurso omaSetting
 description: Configurações de OMA.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bfd4c72bc6018a4b49bcc20c0c1abd953052e471
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 88b5a45d466a50f3bdc9a5b53790ff5c10f53904
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43402033"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024042"
 ---
 # <a name="omasetting-resource-type"></a>Tipo de recurso omaSetting
 
@@ -25,7 +25,7 @@ Configurações de OMA.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição.|
+|displayName|String|Nome de exibição.|
 |description|String|Descrição.|
 |omaUri|Cadeia de caracteres|OMA.|
 
@@ -47,6 +47,9 @@ Veja a seguir uma representação JSON do recurso.
   "omaUri": "String"
 }
 ```
+
+
+
 
 
 

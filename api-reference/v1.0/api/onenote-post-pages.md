@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c80e8ae2c9fdfe4a11a02e9f71ada531a121b279
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b706d23f948b80e1d8cebf01f768c47d01c22ab2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511289"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020703"
 ---
 # <a name="create-page"></a>Criar página
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Crie uma nova página do OneNote na seção padrão do bloco de anotações padrão.
 
-Para criar uma página em uma seção diferente no bloco de anotações padrão, você pode usar `sectionName` o parâmetro de consulta.  Exemplo: `../onenote/pages?sectionName=My%20section`
+Para criar uma página em uma seção diferente no bloco de anotações padrão, você pode usar o `sectionName` parâmetro de consulta.  Exemplo: `../onenote/pages?sectionName=My%20section`
 
 A `POST /onenote/pages` operação é usada apenas para criar páginas no bloco de anotações padrão do usuário atual. Se você estiver direcionando outros blocos de anotações, poderá [criar páginas em uma seção especificada](../api/section-post-pages.md).  
 
@@ -56,7 +56,7 @@ O corpo pode conter HTML colocado diretamente no corpo da solicitação ou pode 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e o novo objeto [Page](../resources/page.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e o novo objeto [Page](../resources/page.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -137,3 +137,4 @@ Content-length: 312
   "section": "documentation",
   "tocPath": ""
 }-->
+

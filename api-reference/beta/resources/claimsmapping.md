@@ -5,12 +5,12 @@ author: namkedia
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fd47f751c71038158761b37721ad8a0d8831eb7d
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 6a08f661877ce78d7883f036ba70bed5f088b93e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509972"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021936"
 ---
 # <a name="claimsmapping-resource-type"></a>claimsMapping tipo de recurso
 
@@ -47,3 +47,5 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
   }
 ```
+
+

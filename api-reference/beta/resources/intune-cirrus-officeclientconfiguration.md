@@ -3,14 +3,14 @@ title: tipo de recurso Conjuntoofficeclientconfiguration
 description: Configuração de cliente do Office.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7dfe98bae90f0534c915577f3195d27e3071a4b0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 10c4d65aab67c470df102e2e19bb5f3521b0ecf1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465275"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021753"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>tipo de recurso Conjuntoofficeclientconfiguration
 
@@ -37,7 +37,7 @@ Configuração de cliente do Office.
 |userPreferencePayload|Stream|Cadeia de caracteres JSON das configurações de preferência no formato binário, esses valores podem ser substituídos pelo usuário.|
 |policyPayload|Stream|Cadeia de caracteres JSON de configurações de política no formato binário, esses valores não podem ser alterados pelo usuário.|
 |description|String|Ainda não documentado|
-|displayName|Cadeia de caracteres|Descrição fornecida pelo administrador da política de configuração de cliente do Office.|
+|displayName|String|Descrição fornecida pelo administrador da política de configuração de cliente do Office.|
 |lastModifiedDateTime|DateTime|Carimbo de data/hora da última modificação da política.|
 |prioridade|Int32|O valor de prioridade deve ser um valor exclusivo para cada política em um locatário e será usado para resolução de conflitos, a prioridade média de valores menores é alta.|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Resumo de check-in do usuário da política.|
@@ -88,6 +88,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

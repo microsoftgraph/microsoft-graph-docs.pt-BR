@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d12d45fcc913f340b29b77b85643ed1a9c55f7e2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a0772d0aca5a60bb4c5d9faa7d75efcd8d9ef385
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461491"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023699"
 ---
 # <a name="group-assignlicense"></a>Grupo: assignLicense
 
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `202 Accepted` um código de resposta e um objeto de [grupo](../resources/group.md) de destino no corpo da resposta.
+Se tiver êxito, este método retornará um `202 Accepted` código de resposta e um objeto de [grupo](../resources/group.md) de destino no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -205,3 +205,4 @@ location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/di
   ]
 }
 -->
+

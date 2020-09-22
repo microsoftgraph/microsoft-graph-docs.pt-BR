@@ -5,16 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 592bd308b3c28d36fedb405b0c7dd7f35cba3436
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 55ddd644428662f6a646fd9c003761ab6f7c1e9a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522649"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021382"
 ---
 # <a name="metadataaction-resource-type"></a>tipo de recurso metadataaction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Representa os metadados a serem gravados ou removidos de um arquivo. **metadataa
 | Propriedade         | Tipo                                       | Descrição                                                                        |
 | :--------------- | :----------------------------------------- | :--------------------------------------------------------------------------------- |
 | metadataToAdd    | Coleção [keyValuePair](keyvaluepair.md) | Uma coleção de pares chave de valor que deve ser adicionado ao arquivo.                  |
-| metadataToRemove | String collection                          | Uma coleção de cadeias de caracteres que indicam quais teclas serão removidas dos metadados do arquivo. |
+| metadataToRemove | Coleção String                          | Uma coleção de cadeias de caracteres que indicam quais teclas serão removidas dos metadados do arquivo. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -56,3 +56,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

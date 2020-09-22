@@ -3,14 +3,14 @@ title: tipo de enumeração androidRequiredPasswordType
 description: Tipo de senha exigido pelo Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e20e93543ca681ebd9d900aeaac43731a3d4fa2d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3aaf2ad668e87f7f3fee1a8f168845203704a5a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444383"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021543"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>tipo de enumeração androidRequiredPasswordType
 
@@ -26,13 +26,16 @@ Tipo de senha exigido pelo Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|caracteres|1|Senha alfabética necessária.|
-|tecla|duas|Senha alfanumérica obrigatória.|
-|alphanumericWithSymbols|3D|Alfanumérica com símbolos de senha necessários.|
+|caracteres|1 |Senha alfabética necessária.|
+|tecla|2 |Senha alfanumérica obrigatória.|
+|alphanumericWithSymbols|3 |Alfanumérica com símbolos de senha necessários.|
 |lowSecurityBiometric|4 |Senha com base em Biometria de segurança baixa necessária.|
 |numéricos|5 |Senha numérica obrigatória.|
 |numericComplex|6 |Senha numérica complexa obrigatória.|
 |qualquer|7 |Uma senha ou um padrão é necessário, e qualquer um é aceitável.|
+
+
+
 
 
 

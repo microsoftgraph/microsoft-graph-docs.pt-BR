@@ -3,14 +3,14 @@ title: Atualizar securityBaselineCategoryStateSummary
 description: Atualiza as propriedades de um objeto securityBaselineCategoryStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c33744fa5d501db3d88b3e385198326a5b3f11f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 04f014cc683bdc098a54e1571f4cb2a8b8a1ee2c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381218"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022530"
 ---
 # <a name="update-securitybaselinecategorystatesummary"></a>Atualizar securityBaselineCategoryStateSummary
 
@@ -60,12 +60,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [securit
 |errorCount|Int32|Número de dispositivos de erro herdados de [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |conflictCount|Int32|Número de dispositivos de conflito herdados de [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |notApplicableCount|Int32|Número de dispositivos não aplicáveis herdados de [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
-|displayName|Cadeia de caracteres|O nome da categoria|
+|displayName|String|O nome da categoria|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [securityBaselineCategoryStateSummary](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [securityBaselineCategoryStateSummary](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -107,6 +107,9 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
+
+
+
 
 
 

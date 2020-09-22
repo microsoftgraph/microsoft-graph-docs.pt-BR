@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 6b0d56a3c9e3e8b098dbbe7f172a42631afbb33b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7c41461848fab45f3d291b175e6c584f98326fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522516"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021270"
 ---
 # <a name="offershiftrequest-resource-type"></a>tipo de recurso offerShiftRequest
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Representa o tipo de solicitação de mudança para oferecer uma mudança para o
 |:-------------|:------------|:------------|
 | [Criar](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Criar uma instância de um objeto offerShiftRequest. |
 | [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Leia as propriedades e os relacionamentos do objeto offerShiftRequest. |
-| [List](../api/offershiftrequest-list.md) | Coleção de [offerShiftRequest](offershiftrequest.md) | Leia as propriedades e as relações de todos os objetos offerShiftRequest de uma equipe. |
+| [Lista](../api/offershiftrequest-list.md) | Coleção de [offerShiftRequest](offershiftrequest.md) | Leia as propriedades e as relações de todos os objetos offerShiftRequest de uma equipe. |
 |[Aprovar](../api/offershiftrequest-approve.md)|Nenhum|Aprovar um offerShiftRequest. |
 |[Aceito](../api/offershiftrequest-decline.md)|Nenhum|Recusar um offerShiftRequest. |
 
@@ -74,3 +74,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

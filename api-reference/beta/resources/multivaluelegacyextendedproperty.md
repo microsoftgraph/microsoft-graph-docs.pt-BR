@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: bf082da6c628c5b4f4ef969ced3f4f50ebf2f65f
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 4ccfdc6fd703673cdd71284cf3ad367f94efdc5e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849154"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021277"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>Tipo de recurso multiValueLegacyExtendedProperty
 
@@ -34,7 +34,7 @@ Confira [Visão geral de propriedades estendidas](../resources/extended-properti
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|cadeia de caracteres|O identificador da propriedade. Somente leitura.|
+|id|string|O identificador da propriedade. Somente leitura.|
 |valor|coleção de cadeias de caracteres|Uma coleção de valores de propriedade.|
 
 ## <a name="relationships"></a>Relações
@@ -73,3 +73,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

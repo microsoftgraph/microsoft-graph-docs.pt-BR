@@ -5,22 +5,22 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6e28a22e7a49d35d7ae0f06affb0652ad37ce538
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9151028749b4e5ea1e8d2d59cb87487fdfc07267
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452278"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022188"
 ---
 # <a name="replace-timeoffreason"></a>Substituir timeOffReason
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Substitua um [timeOffReason](../resources/timeoffreason.md)existente.
 
-Se o [timeOffReason](../resources/timeoffreason.md) especificado não existir, este método retornará `404 Not found`.
+Se o [timeOffReason](../resources/timeoffreason.md) especificado não existir, este método retornará `404 Not found` .
 
 ## <a name="permissions"></a>Permissões
 
@@ -57,7 +57,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [timeO
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -144,3 +144,5 @@ Content-length: 401
   ]
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: tipo de recurso managedEBookCategory
 description: Contém propriedades de uma única categoria de eBook do Intune.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb7b15a76f055f9510ed62eab8ee41e0febc95be
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b3f9096f88d95c1a2a49b203f6803998afc54692
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449760"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021774"
 ---
 # <a name="managedebookcategory-resource-type"></a>tipo de recurso managedEBookCategory
 
@@ -35,7 +35,7 @@ Contém propriedades de uma única categoria de eBook do Intune.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|displayName|Cadeia de caracteres|O nome da categoria eBook.|
+|displayName|String|O nome da categoria eBook.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o ManagedEBookCategory foi modificado pela última vez.|
 
 ## <a name="relationships"></a>Relações
@@ -57,6 +57,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

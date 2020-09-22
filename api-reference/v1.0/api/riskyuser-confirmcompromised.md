@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f82194dff2e805fe73d11ad4301a0e2c74347335
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: Auto
+ms.openlocfilehash: 3ff671b2dd15057f3bfc93634f00e2caebe9d3bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897586"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023097"
 ---
 # <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | IdentityRiskyUser.ReadWrite.All |
+|Aplicativo | IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -92,4 +92,5 @@ Content-length: 39
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 

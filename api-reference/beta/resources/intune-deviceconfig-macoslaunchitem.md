@@ -3,14 +3,14 @@ title: tipo de recurso macOSLaunchItem
 description: Representa um aplicativo na lista de itens de lançamento do macOS
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40d1631264f1aaaab5483cecd08222bb969c8a48
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 098d3f14b754e87442a259ddab878196a7be6d50
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447042"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024091"
 ---
 # <a name="macoslaunchitem-resource-type"></a>tipo de recurso macOSLaunchItem
 
@@ -26,7 +26,7 @@ Representa um aplicativo na lista de itens de lançamento do macOS
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |caminho|String|Caminho para o item de lançamento.|
-|ocult|Boolean|Se o item será ou não ocultado da lista usuários e grupos.|
+|ocult|Booliano|Se o item será ou não ocultado da lista usuários e grupos.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "hide": true
 }
 ```
+
+
+
 
 
 

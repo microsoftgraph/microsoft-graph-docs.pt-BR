@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 0a8a69ae484afab6b558890fbd186a4850235ead
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 2dbf1f3f2c90cf7562d034e32f8fa03d1590ee42
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809422"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021480"
 ---
 # <a name="itememail-resource-type"></a>tipo de recurso de email
 
@@ -44,7 +44,7 @@ Herda de [Myfacet](../resources/itemfacet.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado de [MyFace](../resources/itemfacet.md).|
 |lastModifiedDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|type|emailtype|O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.|
+|tipo|emailtype|O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -83,3 +83,5 @@ Veja a seguir uma representação JSON do recurso.
   "type": "String"
 }
 ```
+
+

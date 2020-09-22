@@ -6,16 +6,16 @@ title: MoveAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: a42ef869a32cfe01a03344d3f155880bd528c462
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 547a49e17a74be43500a9cf52aaa3a375272b810
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522614"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021284"
 ---
 # <a name="moveaction-resource-type"></a>Tipo de recurso MoveAction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -59,3 +59,5 @@ Registros de atividade de item atualmente só estão disponíveis no SharePoint 
   "suppressions": []
 }
 -->
+
+

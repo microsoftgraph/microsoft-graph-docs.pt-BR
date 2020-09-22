@@ -3,14 +3,14 @@ title: Listar windowsDefenderApplicationControlSupplementalPolicyAssignments
 description: Listar Propriedades e relações dos objetos windowsDefenderApplicationControlSupplementalPolicyAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b0cdcfa053bdc727afd63a41d02ea2772bd7a974
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: a46c7e6c6dd6c60242dc6a5a871fd2534a27d712
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791255"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022320"
 ---
 # <a name="list-windowsdefenderapplicationcontrolsupplementalpolicyassignments"></a>Listar windowsDefenderApplicationControlSupplementalPolicyAssignments
 
@@ -81,6 +81,9 @@ Content-Length: 478
   ]
 }
 ```
+
+
+
 
 
 

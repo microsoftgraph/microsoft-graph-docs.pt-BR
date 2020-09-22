@@ -5,14 +5,14 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 897c6b6acc8faed07564068d9a12d1d4193ef219
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 80da97475b6d8f79107034b441a06e58de9dc806
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674482"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022257"
 ---
-# <a name="list-shares"></a>Lista de compartilhamentos
+# <a name="list-shares"></a>Listar shares
 
 Namespace: microsoft.graph
 
@@ -115,3 +115,5 @@ Content-length: 269
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

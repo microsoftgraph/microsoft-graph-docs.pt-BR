@@ -3,14 +3,14 @@ title: tipo de recurso termsAndConditionsGroupAssignment
 description: Uma entidade termsAndConditionsGroupAssignment representa a atribuição de uma política de termos e condições (T&C) determinada para um determinado grupo. Os usuários do grupo deverão aceitar os termos para que seus dispositivos sejam registrados no Intune.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f4d0faada84b0c8436399f4ebd7b1e07392edd4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 29cc8d853c9cb9bf426544681a9e69a0f4e4a5ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473855"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024371"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>tipo de recurso termsAndConditionsGroupAssignment
 
@@ -57,6 +57,9 @@ Veja a seguir uma representação JSON do recurso.
   "targetGroupId": "String"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Obter windowsDefenderApplicationControlSupplementalPolicyAssignment
 description: Leia as propriedades e as relações do objeto windowsDefenderApplicationControlSupplementalPolicyAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28bb965b1a550f7d29c972ef36063bdd8322f4dd
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 2bad7677f78f8101e2368e78e1d882dacac7a9de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791241"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022334"
 ---
 # <a name="get-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a>Obter windowsDefenderApplicationControlSupplementalPolicyAssignment
 
@@ -82,6 +82,9 @@ Content-Length: 450
   }
 }
 ```
+
+
+
 
 
 

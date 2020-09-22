@@ -3,14 +3,14 @@ title: Obter mobileAppIntentAndState
 description: Leia as propriedades e as relações do objeto mobileAppIntentAndState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 289969faf158d11181a49ea33c9823c6065cb091
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a8c5d0f4d9e3c8d292df14d2a79ecce4a90a7ab2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455394"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022355"
 ---
 # <a name="get-mobileappintentandstate"></a>Obter mobileAppIntentAndState
 
@@ -97,6 +97,9 @@ Content-Length: 943
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de enumeração defenderRealtimeScanDirection
 description: Valores possíveis para monitorar a atividade do arquivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b4df7541cc1c3822ddd659d266d152d0edfe67b6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 93a9bcd2d76008f1113c755e904e1141003ee553
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413078"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024308"
 ---
 # <a name="defenderrealtimescandirection-enum-type"></a>tipo de enumeração defenderRealtimeScanDirection
 
@@ -26,8 +26,11 @@ Valores possíveis para monitorar a atividade do arquivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |monitorAllFiles|,0|0 (padrão) – monitorar todos os arquivos (bidirecional)|
-|monitorIncomingFilesOnly|1|Monitorar somente os arquivos de entrada.|
-|monitorOutgoingFilesOnly|duas|Monitorar somente os arquivos de saída.|
+|monitorIncomingFilesOnly|1 |Monitorar somente os arquivos de entrada.|
+|monitorOutgoingFilesOnly|2 |Monitorar somente os arquivos de saída.|
+
+
+
 
 
 

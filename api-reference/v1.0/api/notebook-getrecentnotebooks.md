@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: ae9862ef3b8bfee5e1765a64491cc9a1bf670632
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ca105b6572aa91c7e98820096de3d65e8cd66de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511359"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020787"
 ---
 # <a name="notebook-getrecentnotebooks"></a>notebook: getRecentNotebooks
 
@@ -131,3 +131,4 @@ Content-Length: 1110
   "suppressions": [
   ]
 }-->
+

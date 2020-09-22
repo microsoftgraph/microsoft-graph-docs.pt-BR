@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 78b2447c1bdeab986382ec2d7c5d20787c1f15e2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d5dbf7f3ef2078baca54c03e8e67a94f5b52ee85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459794"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021291"
 ---
 # <a name="modifiedproperty-resource-type"></a>tipo de recurso modifiedproperty
 
@@ -26,7 +26,7 @@ Descreve as alterações realizadas no sistema de destino.
 |:-------------|:------------|:------------|
 |displayName|String|Nome da propriedade que foi modificada.|
 |newValue|Cadeia de caracteres|Novo valor da propriedade.|
-|oldValue|String|Valor da propriedade Old.|
+|oldValue|Cadeia de caracteres|Valor da propriedade Old.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -58,3 +58,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

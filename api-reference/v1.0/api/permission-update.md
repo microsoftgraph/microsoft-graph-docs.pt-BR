@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Atualiza as propriedades de permissão de compartilhamento pela correção do recurso de permissão.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b2d67cd965240620e6f40ec62f56c09ce51a7813
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 59fe051abe8389808b6a66f01108b647ab620aae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511037"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020717"
 ---
 # <a name="update-sharing-permission"></a>Atualizar a permissão de compartilhamento
 
@@ -59,7 +59,7 @@ Para obter um melhor desempenho, não inclua valores existentes que não foram a
 
 | Propriedade | Tipo              | Descrição                   |
 |:---------|:------------------|:------------------------------|
-| funções    | String collection | Uma matriz de tipos de permissão. |
+| funções    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
 
 ## <a name="response"></a>Resposta
 
@@ -137,3 +137,4 @@ Veja mais informações sobre como os erros são retornados no tópico [Resposta
   "suppressions": [
   ]
 } -->
+

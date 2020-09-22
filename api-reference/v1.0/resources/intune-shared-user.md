@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2bcea43a7870ddba0407ef546094e51a385e668c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f486e3202535882d719e5f6c083b583321e917b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445602"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020570"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa um objeto de usuário do Azure Active Directory.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar objetos Users](../api/intune-shared-user-list.md) .|Conjunto [user](../resources/intune-shared-user.md)|Listar propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
@@ -43,7 +43,7 @@ Representa um objeto de usuário do Azure Active Directory.
 |deviceEnrollmentLimit|Int32|O limite do número máximo de dispositivos que o usuário tem permissão para inscrever. Os valores permitidos vão de 5 a 1000.|
 
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |**Gerenciamento de dispositivos**|
@@ -76,6 +76,8 @@ Veja a seguir uma representação JSON do recurso.
     "Warning: Resource microsoft.graph.user is defined in multiple files: /api-reference/v1.0/resources/intune_shared_user.md, /api-reference/v1.0/resources/user.md",
   ]
 }-->
+
+
 
 
 
