@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 697f2d61125d4f295c4fca7af14a515554e8d384
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 2dec25283a7517a723013b3571bb252fcaac7ddd
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598525"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193159"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -26,7 +26,7 @@ Depois que o Microsoft Graph aceita a solicitação de assinatura, ele envia not
 
 Por padrão, as notificações de alteração não contêm dados de recursos, exceto o `id`. Se o aplicativo exigir dados de recursos, ele poderá fazer chamadas para as APIs do Microsoft Graph para obter o recurso completo. Este artigo usa o recurso de **usuário** como um exemplo para trabalhar com notificações de alteração.
 
-Um aplicativo também pode se inscrever para alterar notificações que incluem dados de recursos, para evitar a necessidade de fazer chamadas de API adicionais para acessar os dados. Esses aplicativos precisarão implementar um código extra para lidar com os requisitos de tais notificações, especificamente: responder às notificações do ciclo de vida da assinatura, validar a autenticidade das notificações e descriptografar os dados do recurso. Mais tipos de recursos terão suporte para esse tipo de notificações no futuro. Para saber mais sobre como trabalhar com essas notificações, confira [Configurar notificações de alteração que incluem dados de recurso (visualização)](webhooks-with-resource-data.md).
+Um aplicativo também pode se inscrever para alterar notificações que incluem dados de recursos, para evitar a necessidade de fazer chamadas de API adicionais para acessar os dados. Esses aplicativos precisarão implementar um código extra para lidar com os requisitos de tais notificações, especificamente: responder às notificações do ciclo de vida da assinatura, validar a autenticidade das notificações e descriptografar os dados do recurso. Para saber mais sobre como trabalhar com essas notificações, confira [Configurar notificações de alteração que incluam dados de recurso](webhooks-with-resource-data.md).
 
 ## <a name="supported-resources"></a>Recursos com suporte
 
@@ -42,8 +42,8 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 - Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _qualquer pasta_ no OneDrive pessoal do usuário
 - Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _pasta raiz_ no OneDrive for Business
 - [Alerta][] de segurança
-- [callRecord][] do Teams
-- [chatMessage][] do Teams (visualização)
+- Teams [callRecord][]
+- Teams [chatMessage][]
 - [presence][] do Teams (visualização)
 
 Você pode criar uma assinatura para uma pasta de específica do Outlook, como a Caixa de Entrada: `me/mailFolders('inbox')/messages`
@@ -96,7 +96,7 @@ Cada recurso do Teams possui cotas de assinatura diferentes.
 - Para assinaturas do **callRecords**:
   - Por organização: 100 assinaturas totais
 
-- Para assinaturas de **chatMessages** (canais ou chats) (visualização):
+- Para assinaturas de **chatMessages** (canais ou chats):
   - Por combinação por aplicativo e canal ou por chat: uma assinatura
   - Por organização: 10.000 assinaturas totais
 
@@ -283,7 +283,7 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 | Recurso | Latência média | Latência máxima |
 |:-----|:-----|:-----|
 |[callRecord][] | Menos de 15 minutos | 60 minutos |
-|[chatMessage][] (visualização) | Menos de 10 segundos | 1 minuto |
+|[chatMessage][] | Menos de 10 segundos | 1 minuto |
 |[contato][] | Desconhecido | Desconhecido |
 |[driveItem][] | Menos de 1 minuto | 5 minutos |
 |[evento][] | Desconhecido | Desconhecido |

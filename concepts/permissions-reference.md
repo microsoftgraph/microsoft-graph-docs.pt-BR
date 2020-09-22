@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a0bf66038c571b45baf894fe5a10fe2760f00ca9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 48dada7f3f1f47a5b513c62073f5c3c34f7c7e3b
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032401"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192732"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1553,7 +1553,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
-| _ExternalItem.Read.All_ | Ler os dados externos | Permite a um aplicativo ler dados externos ingeridos por meio da API de indexação da Pesquisa da Microsoft| Sim | Não |
+| _ExternalItem.ReadWrite.All_ | Ler e gravar dados externos | Permite a um aplicativo ingerir, por meio da API de indexação dos Conectores do Microsoft Graph, ou de dados da consulta ingeridos pelos Conectores do Microsoft Graph| Sim | Não |
 
 ### <a name="remarks"></a>Comentários
 As permissões de pesquisa só são válidas para contas corporativas ou de estudante.
@@ -1566,7 +1566,7 @@ O acesso aos dados por meio de pesquisa requer a devida permissão. Por exemplo,
 
 #### <a name="application"></a>Aplicativo
 
-* _ExternalItem.Read.All__: acessar dados externos da [API de pesquisa](/graph/api/resources/search-api-overview) (`POST /search/query`).
+* _ExternalItem.Read.All__: Acessar dados externos da [API de pesquisa](/graph/api/resources/search-api-overview) (`POST /search/query`).
 
 ---
 
