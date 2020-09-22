@@ -1,18 +1,18 @@
 ---
-title: List createdObjects
+title: Listar createdObjects
 description: Obtenha uma lista de objetos de diretório criados pelo usuário.
 author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 3f0a683206d1682eec8be547853d5a49f9f9ef78
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 62ea12dd34478c102180ebf3c43e6ca6086af35c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107714"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016951"
 ---
-# <a name="list-createdobjects"></a>List createdObjects
+# <a name="list-createdobjects"></a>Listar createdObjects
 
 Namespace: microsoft.graph
 
@@ -110,3 +110,5 @@ Content-length: 55
   ]
 }
 -->
+
+

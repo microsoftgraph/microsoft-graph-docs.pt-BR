@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: acd31b5d5b115646716199842d862bf6637ea504
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: bf6dff6b3eea14455bb9dc1e8eed2f515847efc5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107700"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016937"
 ---
 # <a name="list-user-devices"></a>Listar os dispositivos do usuário
 
@@ -79,7 +79,7 @@ HTTP/1.1 200 OK
 ```
 
 ## <a name="example"></a>Exemplo
-Este exemplo retornará a lista de dispositivos de um usuário. Para executar um comando em `me/devices/{id}/command`um dispositivo usando o, você precisará obter a ID do dispositivo que é retornado.
+Este exemplo retornará a lista de dispositivos de um usuário. Para executar um comando em um dispositivo usando `me/devices/{id}/command` o, você precisará obter a ID do dispositivo que é retornado.
 
 #### <a name="request"></a>Solicitação
 
@@ -126,3 +126,5 @@ Content-length: 140
   ]
 }
 ```
+
+
