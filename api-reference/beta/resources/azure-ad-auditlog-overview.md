@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: microsoft-identity-platform
 author: khotz
-ms.openlocfilehash: c88a6d3b1761043512858c109de182b38c3abeba
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 1b0aa0b3deec7aa0d38f1af544755584f493a8e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673970"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042748"
 ---
 # <a name="activity-reports-api-overview"></a>Visão geral da API de relatórios de atividades
 
@@ -79,3 +79,5 @@ Para saber mais, consulte [Preços do Azure AD](https://azure.microsoft.com/pric
 - Analisar recurso e ações do [directoryAudit](directoryaudit.md).
 - Analisar recurso e ações do [signIn](signin.md). 
 - Analisar o recurso[provisioningObjectSummary](provisioningobjectsummary.md).
+
+

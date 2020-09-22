@@ -3,14 +3,14 @@ title: tipo de enumeração webBrowserCookieSettings
 description: Configurações de cookies do navegador da Web.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 33c0e23f64edf8d1cce924ad6a075ceef8786512
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f1cebe6fe8e92849af674fc72e3da9e3a2cab50b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43358920"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042384"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>tipo de enumeração webBrowserCookieSettings
 
@@ -26,10 +26,13 @@ Configurações de cookies do navegador da Web.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |browserDefault|,0|O valor padrão do navegador, sem intenção.|
-|blockAlways|1|Sempre bloquear cookies.|
-|allowCurrentWebSite|duas|Permitir cookies do site atual.|
-|allowFromWebsitesVisited|3D|Permitir cookies de sites visitados.|
+|blockAlways|1 |Sempre bloquear cookies.|
+|allowCurrentWebSite|2 |Permitir cookies do site atual.|
+|allowFromWebsitesVisited|3 |Permitir cookies de sites visitados.|
 |allowAlways|4 |Sempre permitir cookies.|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de enumeração vpnTrafficRuleAppType
 description: Indica o tipo de aplicativo ao qual uma regra de tráfego VPN está associada.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cad0ab3a49c6139707fb30c703cc670be6bc5f7e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5b858ab2b094ea9a9f2f233eb83cb9e1df4ac45c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43358998"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042426"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>tipo de enumeração vpnTrafficRuleAppType
 
@@ -25,9 +25,12 @@ Indica o tipo de aplicativo ao qual uma regra de tráfego VPN está associada.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|A regra de tráfego não está associada a um aplicativo.|
-|placa|1|A regra de tráfego é associada a um aplicativo de área de trabalho.|
-|UTC|duas|A regra de tráfego é associada a um aplicativo universal.|
+|Nenhuma|,0|A regra de tráfego não está associada a um aplicativo.|
+|placa|1 |A regra de tráfego é associada a um aplicativo de área de trabalho.|
+|UTC|2 |A regra de tráfego é associada a um aplicativo universal.|
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 56686d3e2e61a74acabd54218c30d27abb341748
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 911c790ab08487428ff04e93508f4f62ab657aa7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917468"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044204"
 ---
 # <a name="stspolicy-resource-type"></a>tipo de recurso stsPolicy
 
@@ -22,7 +22,7 @@ Representa um tipo de base abstrato para tipos de política que controlam o comp
 
 Herda de [policyBase](policyBase.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 Nenhum
 
@@ -30,11 +30,11 @@ Nenhum
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| Identificador exclusivo da política. Somente leitura. Herdado de [policyBase](policyBase.md).|
+|id|Cadeia de caracteres| Identificador exclusivo da política. Somente leitura. Herdado de [policyBase](policyBase.md).|
 |description|String| Descrição da política. Herdado de [policyBase](policyBase.md).|
 |displayName|Cadeia de caracteres| Nome para exibição dessa política. Herdado de [policyBase](policyBase.md).|
 |definir|Coleção de cadeias de caracteres| Uma coleção String contendo uma cadeia de caracteres JSON que define as regras e configurações de uma política. A sintaxe da definição difere para cada tipo de política derivada. Obrigatório.|
-|isOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
+|isOrganizationDefault|Booliano|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 
 ## <a name="relationships"></a>Relações
 
@@ -73,3 +73,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

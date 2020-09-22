@@ -3,14 +3,14 @@ title: Listar windows10EndpointProtectionConfigurations
 description: Listar propriedades e relações dos objetos windows10EndpointProtectionConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 12875d7bb0e53b8601d03667c3cc51bcc7af6ff7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b69e32dbafb3a0c15e833bdbbdc289d14699f849
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43431276"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043693"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Listar windows10EndpointProtectionConfigurations
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 34154
+Content-Length: 34198
 
 {
   "value": [
@@ -557,6 +557,7 @@ Content-Length: 34154
       "firewallBlockStatefulFTP": true,
       "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
       "firewallPreSharedKeyEncodingMethod": "none",
+      "firewallIPSecExemptionsNone": true,
       "firewallIPSecExemptionsAllowNeighborDiscovery": true,
       "firewallIPSecExemptionsAllowICMP": true,
       "firewallIPSecExemptionsAllowRouterDiscovery": true,
@@ -811,6 +812,9 @@ Content-Length: 34154
   ]
 }
 ```
+
+
+
 
 
 

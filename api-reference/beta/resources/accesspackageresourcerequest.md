@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 74cc7815d4df22c1914f525ed0451b778c7777d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5332704c27b960878b77ef49ecfb9a4298a66049
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042811"
 ---
 # <a name="accesspackageresourcerequest-resource-type"></a>tipo de recurso accessPackageResourceRequest
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,14 +31,14 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solic
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|catalogID|String|A ID exclusiva do catálogo de pacotes do Access.|
+|catalogID|Cadeia de caracteres|A ID exclusiva do catálogo de pacotes do Access.|
 |expirationDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
-|isValidationOnly|Boolean|Se definido, não adiciona o recurso.|
-|elabora|String|A justificativa do solicitante para adicionar o recurso.|
-|RequestState|String| O resultado de se o serviço foi capaz de adicionar o recurso ao catálogo.  O valor é `Delivered` se o recurso foi adicionado. Somente Leitura.|
+|isValidationOnly|Booliano|Se definido, não adiciona o recurso.|
+|elabora|Cadeia de caracteres|A justificativa do solicitante para adicionar o recurso.|
+|RequestState|Cadeia de caracteres| O resultado de se o serviço foi capaz de adicionar o recurso ao catálogo.  O valor é `Delivered` se o recurso foi adicionado. Somente Leitura.|
 |requestStatus|String|Somente leitura.|
-|RequestType|String|Use `AdminAdd` para adicionar um recurso se o chamador for um administrador ou proprietário de recurso. |
+|RequestType|Cadeia de caracteres|Use `AdminAdd` para adicionar um recurso se o chamador for um administrador ou proprietário de recurso. |
 
 ## <a name="relationships"></a>Relações
 
@@ -83,3 +83,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: f993c68b9858523a621f23bc182f6f6113c50366
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 8b6b1d473357b88123af1c8840c3445ca811cbfd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863332"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043063"
 ---
 # <a name="get-presence"></a>Obter presença
 
@@ -221,3 +221,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

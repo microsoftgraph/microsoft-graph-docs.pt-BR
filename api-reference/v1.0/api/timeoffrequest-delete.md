@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 89ec693d533e39075bde89992eaba55ebd8656e4
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 6f5af597174d6146c50d88a3038af1af0158c931
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44215882"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044064"
 ---
 # <a name="delete-timeoffrequest"></a>Excluir timeOffRequest
 
@@ -111,3 +111,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

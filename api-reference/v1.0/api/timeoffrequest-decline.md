@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9d893dcf8f5557fa650b5eb1eefd8b00704874ee
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: cfae18e2c399badcda41e3e7266ebb4f8c2cc9e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44215924"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044078"
 ---
 # <a name="timeoffrequest-decline"></a>timeOffRequest: recusar
 
@@ -121,3 +121,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

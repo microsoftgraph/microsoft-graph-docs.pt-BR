@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b24af9a48e4222f4015749007ca7d2eab4ecbdf8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7259b3c1a694122eb36e6e980b6d5666a0d22fec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518319"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042412"
 ---
 # <a name="update-charttitle"></a>Atualizar charttitle
 
@@ -117,3 +117,4 @@ Content-length: 64
   "suppressions": [
   ]
 }-->
+

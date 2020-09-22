@@ -3,14 +3,14 @@ title: Excluir windows10EasEmailProfileConfiguration
 description: Exclui windows10EasEmailProfileConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1964e64db832e3e47bcfc534e609c72619c8e2de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0a2e0770c32d5e955313dc5d3672f5541a285208
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43431525"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043805"
 ---
 # <a name="delete-windows10easemailprofileconfiguration"></a>Excluir windows10EasEmailProfileConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

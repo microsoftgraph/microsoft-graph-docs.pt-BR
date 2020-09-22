@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 161942b9af137071621cfeaf6705b909ce26861a
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: dca9e71d12810dc817bbb962338d2d5a0d34c283
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674502"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042973"
 ---
 # <a name="list-printservices"></a>Listar serviços de reserviço
 
@@ -113,3 +113,5 @@ Content-length: 389
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

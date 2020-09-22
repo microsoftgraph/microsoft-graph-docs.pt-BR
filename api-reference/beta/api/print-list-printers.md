@@ -5,14 +5,14 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2d4fa150978fbd8d2e7dd48a537207eefc6ca88a
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 75f5670dcf70a8b94b8c3cac33a86776af163bdd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674509"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042994"
 ---
-# <a name="list-printers"></a>Listar impressoras
+# <a name="list-printers"></a>Lista de impressoras
 
 Namespace: microsoft.graph
 
@@ -157,3 +157,5 @@ Content-length: 1526
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

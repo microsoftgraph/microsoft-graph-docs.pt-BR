@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8ed30c99a509f062e7b6f6dc255e1bf08cfbf31b
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 78d0482a3427874af55d2788e3e7b56b40a80cd7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565805"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044265"
 ---
 # <a name="get-store"></a>Obter repositório
 Namespace: Microsoft. Graph. termos
@@ -107,3 +107,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

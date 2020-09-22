@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 25303f527a8ba440e9a1e413379bf8037e551168
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 87d439a15f9668931f0488e065cde5beef87ab2e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454350"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042699"
 ---
 # <a name="certificateauthority-resource-type"></a>tipo de recurso certificateAuthority
 
@@ -25,11 +25,11 @@ Representa uma autoridade de certificação.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |certificado|Binário|Obrigatório. A cadeia de caracteres codificada em base64 que representa o certificado público.|
-|certificateRevocationListUrl|String|A URL da lista de certificados revogados.|
-|deltaCertificateRevocationListUrl|String|A URL contém a lista de todos os certificados revogados desde a última vez que uma lista de revocaton de certificados completo foi criada.|
-|isRootAuthority|Boolean|Obrigatório. **true** se o certificado confiável é uma autoridade raiz, **false** se o certificado confiável é uma autoridade intermediária.|
-|emissor|String|O emissor do certificado, calculado com base no valor do **certificado** . Somente leitura. |
-|issuerSki|String|O identificador de chave de entidade do certificado, calculado com base no valor do **certificado** . Somente leitura.|
+|certificateRevocationListUrl|Cadeia de caracteres|A URL da lista de certificados revogados.|
+|deltaCertificateRevocationListUrl|Cadeia de caracteres|A URL contém a lista de todos os certificados revogados desde a última vez que uma lista de revocaton de certificados completo foi criada.|
+|isRootAuthority|Booliano|Obrigatório. **true** se o certificado confiável é uma autoridade raiz, **false** se o certificado confiável é uma autoridade intermediária.|
+|emissor|Cadeia de caracteres|O emissor do certificado, calculado com base no valor do **certificado** . Somente leitura. |
+|issuerSki|Cadeia de caracteres|O identificador de chave de entidade do certificado, calculado com base no valor do **certificado** . Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -64,3 +64,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

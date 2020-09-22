@@ -3,14 +3,14 @@ title: Obter windowsPhone81VpnConfiguration
 description: Leia as propriedades e as relações do objeto windowsPhone81VpnConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac8afce4548e3b31f647c9ac89d5961c7ad88eda
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b05afbe05b18befbfee21e2160c71e5d135c2daf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43429063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043525"
 ---
 # <a name="get-windowsphone81vpnconfiguration"></a>Obter windowsPhone81VpnConfiguration
 
@@ -138,6 +138,9 @@ Content-Length: 2329
   }
 }
 ```
+
+
+
 
 
 

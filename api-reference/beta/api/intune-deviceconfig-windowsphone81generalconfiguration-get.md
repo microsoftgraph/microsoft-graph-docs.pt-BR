@@ -3,14 +3,14 @@ title: Acessar windowsPhone81GeneralConfiguration
 description: Leia as propriedades e as relações do objeto windowsPhone81GeneralConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5eaf6c69e904d94f352cd35b2aa1363dc29f869
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ce41fdd8a964854a094fc0a6b025f5917bd2f33d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43333467"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043588"
 ---
 # <a name="get-windowsphone81generalconfiguration"></a>Acessar windowsPhone81GeneralConfiguration
 
@@ -146,6 +146,9 @@ Content-Length: 2655
   }
 }
 ```
+
+
+
 
 
 

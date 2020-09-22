@@ -3,14 +3,14 @@ title: Obter windowsPhone81CertificateProfileBase
 description: Leia as propriedades e as relações do objeto windowsPhone81CertificateProfileBase.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 38e032e545005cfea1af2da313e41ba9a8d51aa1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 47f0036a4ec1bf8b55040d093dcfe424d17f613e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43334887"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043686"
 ---
 # <a name="get-windowsphone81certificateprofilebase"></a>Obter windowsPhone81CertificateProfileBase
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -120,6 +120,9 @@ Content-Length: 1783
   }
 }
 ```
+
+
+
 
 
 

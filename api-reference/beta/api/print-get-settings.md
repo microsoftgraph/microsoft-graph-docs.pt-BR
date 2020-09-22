@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9114e213426735bda89243269513d45c05054bb3
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: b0f82c3d46dc8d49e9e348d38505f3ef6e793997
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043056"
 ---
 # <a name="get-printsettings"></a>Obter printSettings
 
@@ -104,3 +104,5 @@ Content-length: 144
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

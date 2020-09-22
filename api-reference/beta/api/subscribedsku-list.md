@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 57a4aade0a154fe08b5573cb814b5146aafee602
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1ad3e5c16de0462127589b99c14a498cb2bbc005
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43318571"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044351"
 ---
 # <a name="list-subscribedskus"></a>Listar subscribedSkus
 
@@ -37,7 +37,7 @@ GET /subscribedSkus
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte aos [parâmetros de consulta OData](/graph//query-parameters) para ajudar a personalizar a`$filter` resposta (não tem suporte).
+Este método não oferece suporte aos [parâmetros de consulta OData](/graph//query-parameters) para ajudar a personalizar a resposta ( `$filter` não tem suporte).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -128,3 +128,5 @@ Content-length: 547
   ]
 }
 -->
+
+

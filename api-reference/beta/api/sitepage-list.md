@@ -6,12 +6,12 @@ title: Listar as páginas em um site
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ff281526e49fa9b9f6a790f00e4d83f4cf95853e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1f3a77b7f6d70d79cc1f44635266144f9d8ceb2d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453156"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044428"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>Listar as páginas na lista de páginas do site de um site
 
@@ -245,3 +245,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

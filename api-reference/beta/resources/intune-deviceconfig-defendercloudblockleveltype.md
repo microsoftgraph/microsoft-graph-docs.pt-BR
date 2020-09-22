@@ -3,14 +3,14 @@ title: tipo de enumeração defenderCloudBlockLevelType
 description: Possíveis valores de nível de bloco de nuvem
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f960a4ef6a3f02cc3d96abba470c3322b6fcb0b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5bdc4730684afb7856df0a29210b37f78bdb7ca1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413288"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042482"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>tipo de enumeração defenderCloudBlockLevelType
 
@@ -26,9 +26,12 @@ Possíveis valores de nível de bloco de nuvem
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|O valor padrão usa o nível de bloqueio antivírus padrão do Windows Defender e fornece uma detecção forte sem aumentar o risco de detectar arquivos legítimos|
-|high|1|Alto aplica um nível forte de detecção.|
-|highPlus|duas|High + usa o alto nível e aplica medidas de proteção de adição|
-|zeroTolerance|3D|Tolerância zero bloqueia todos os executáveis desconhecidos|
+|high|1 |Alto aplica um nível forte de detecção.|
+|highPlus|2 |High + usa o alto nível e aplica medidas de proteção de adição|
+|zeroTolerance|3 |Tolerância zero bloqueia todos os executáveis desconhecidos|
+
+
+
 
 
 

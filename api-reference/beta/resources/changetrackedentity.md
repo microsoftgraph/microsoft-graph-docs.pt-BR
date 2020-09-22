@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e488fec2119f4ebf1baf5f29f62c58e7fda2789f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c420274f6ff8e0521f9fd5baca193e95334f3de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507751"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042687"
 ---
 # <a name="changetrackedentity-resource-type"></a>tipo de recurso changeTrackedEntity
 
@@ -65,3 +65,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
