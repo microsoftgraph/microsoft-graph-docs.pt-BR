@@ -1,16 +1,16 @@
 ---
 title: Excluir extensão aberta
-description: 'Exclua uma extensão aberta (objeto openTypeExtension) da instância especificada de um recurso. '
+description: Exclua uma extensão aberta (objeto openTypeExtension) da instância especificada de um recurso.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: ''
+ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 78de314eb75a1950c062ca34eaa66409abffd7d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ebaa3a22728fb2e64137b755b0874c5420923f0b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511261"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988678"
 ---
 # <a name="delete-open-extension"></a>Excluir extensão aberta
 
@@ -30,9 +30,9 @@ Dependendo do recurso do qual você está excluindo a extensão e do tipo de per
 | [evento de grupo](../resources/event.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
 | [postagem de grupo](../resources/post.md) | Group.ReadWrite.All | Sem suporte | Group.ReadWrite.All |
 | [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [organização](../resources/organization.md) | Directory.AccessAsUser.All | Sem suporte | Sem suporte |
+| [organization](../resources/organization.md) | Organization.ReadWrite.All | Incompatível | Organization.ReadWrite.All |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 Na solicitação, identifique a instância de recurso, use a propriedade de navegação **extensions** dessa instância para identificar a extensão e faça um `DELETE` nessa instância de extensão.
@@ -55,7 +55,7 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="path-parameters"></a>Parâmetros do caminho
 |Parâmetro|Tipo|Descrição|
 |:-----|:-----|:-----|
-|id|cadeia de caracteres|Um identificador exclusivo para uma instância na coleção correspondente. Obrigatório.|
+|id|string|Um identificador exclusivo para uma instância na coleção correspondente. Obrigatório.|
 |extensionId|string|Pode ser um nome de extensão que é um identificador de texto exclusivo para a extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade `id` quando você cria a extensão. Obrigatório.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -132,3 +132,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2d3f283eaaaed217596c8cdaa200b3bc0a1c2f06
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7fd09f86c53252cb0fd7cbcc69b9ac4d3db3d47a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451684"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988651"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact: getMemberObjects
 
@@ -44,11 +44,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Booliano|Definido como `false`. Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários.|
+|securityEnabledOnly|Boolean|Definido como `false` . Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto da coleção String no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto da coleção String no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -123,3 +123,4 @@ Content-length: 39
   ]
 }
 -->
+

@@ -3,14 +3,14 @@ title: tipo de recurso managedAppStatusRaw
 description: Representa um relatório de status não digitado sobre configuração e proteção de aplicativos para organizações.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d41800f5a76e0391b0a7b59caec2eaf0ec16c2de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2c19d0e54383c96d7d5ec55e347f116ddfd4ef1e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43354202"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988237"
 ---
 # <a name="managedappstatusraw-resource-type"></a>tipo de recurso managedAppStatusRaw
 
@@ -23,7 +23,7 @@ Representa um relatório de status não digitado sobre configuração e proteç�
 
 Herda de [managedAppStatus](../resources/intune-mam-managedappstatus.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedAppStatusRaws](../api/intune-mam-managedappstatusraw-list.md)|Conjunto [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md)|Listar propriedades e relações de objetos de [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md).|
@@ -32,7 +32,7 @@ Herda de [managedAppStatus](../resources/intune-mam-managedappstatus.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome amigável do relatório de status. Herda de [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
+|displayName|String|Nome amigável do relatório de status. Herda de [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
 |id|String|Chave da entidade. Herda de [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
 |version|String|Versão da entidade. Herda de [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
 |content|[Json](../resources/intune-mam-json.md)|Conteúdo do relatório de status.|
@@ -59,6 +59,8 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
 
 
 

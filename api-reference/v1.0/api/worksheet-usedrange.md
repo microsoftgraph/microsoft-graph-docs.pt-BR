@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 64647df6f999ff9679faf23e2400780f005817ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 49a29f78963758ffad5ffe5bd7236429b52a0d37
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508615"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988664"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 
@@ -39,7 +39,7 @@ Na URL da solicitação, você pode fornecer parâmetros opcionais.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|valuesOnly|Booliano|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
+|valuesOnly|Boolean|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -107,7 +107,7 @@ Content-length: 169
 }
 ```
 
-Como alternativa, essa função pode ser chamada com o parâmetro `valuesOnly` opcional.
+Como alternativa, essa função pode ser chamada com o `valuesOnly` parâmetro opcional.
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -169,3 +169,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+

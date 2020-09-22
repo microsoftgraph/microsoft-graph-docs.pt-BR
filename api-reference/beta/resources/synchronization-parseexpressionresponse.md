@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0ef96bda8e9e28c655c4bbcf0153ea83ef5b0c8e
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9bd675b079f42856e85f54b7da84a091a0f57f4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217602"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988811"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>tipo de recurso parseExpressionResponse
 
@@ -25,9 +25,9 @@ Representa a resposta da ação [parsery](../api/synchronization-synchronization
 |:---------------|:--------|:----------|
 |erro|publicError|Detalhes do erro, se a avaliação da expressão resultar em um erro.|
 |evaluationResult|Coleção de cadeias de caracteres|Uma coleção de valores produzidos pela avaliação da expressão.|
-|evaluationSucceeded|Boolean|`true`se a avaliação tiver sido bem-sucedida.|
+|evaluationSucceeded|Boolean|`true` se a avaliação tiver sido bem-sucedida.|
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Um objeto [attributeMappingSource](synchronization-attributemappingsource.md) que representa a expressão analisada.|
-|parsingSucceeded|Boolean|`true`se a expressão tiver sido analisada com êxito.|
+|parsingSucceeded|Boolean|`true` se a expressão tiver sido analisada com êxito.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -64,3 +64,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: ccd8962ca1d34b62b60b6e2f50662e5a520b716f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8189e8704e28044a001fc2a8c5ee73e379716ca9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43366757"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988021"
 ---
 # <a name="list-services"></a>Listar serviços
 
@@ -44,7 +44,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [bookingService](../resources/bookingservice.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [bookingService](../resources/bookingservice.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -232,3 +232,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 7224f7d5d0b41814c17081eefab79de47ca89ebb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ad04617e59a45cb9c0fa265759fd249243e987d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533111"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988397"
 ---
 # <a name="chartlineformat-resource-type"></a>Tipo de recurso ChartLineFormat
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Encapsula as opções de formatação dos elementos de linha.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -63,3 +63,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

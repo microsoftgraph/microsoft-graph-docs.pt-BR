@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 98633524d61093c6ddc4c9c85e5e98f205a508da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 42a12bfd05dddf6306f6de22b07b2029d2f39e2d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43367703"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988132"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment: cancelar
 
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.
 
-Se você tentar cancelar um compromisso que não exisit, este método retornará `HTTP 404 Not found`.
+Se você tentar cancelar um compromisso que não exisit, este método retornará `HTTP 404 Not found` .
 
 ## <a name="example"></a>Exemplo
 Veja a seguir um exemplo de como chamar essa API.
@@ -109,3 +109,5 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+
+

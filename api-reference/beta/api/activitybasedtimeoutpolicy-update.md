@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c2416780c9d9f832c0b202fc18516d93f952b74e
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: b1cf31b25eaa3223b087d364b1aeb7f69fe7982e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988174"
 ---
 # <a name="update-activitybasedtimeoutpolicy"></a>Atualizar activitybasedtimeoutpolicy
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:-------------|:------------|:------------|
 |definir|Coleção de cadeias de caracteres| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política.  Obrigatório.|
 |description|String| Descrição da política.|
-|displayName|Cadeia de caracteres| Nome para exibição dessa política. Obrigatório.|
+|displayName|String| Nome para exibição dessa política. Obrigatório.|
 |isOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 
 ## <a name="response"></a>Resposta
@@ -135,3 +135,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

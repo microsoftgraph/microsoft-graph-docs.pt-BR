@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 3b31f51b2e0c6e963cbef0cc9d3fd7c82c0c5b11
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d6bd23bb5fe9b77cb123762200283d3b893e23fa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43367381"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988097"
 ---
 # <a name="get-bookingbusiness"></a>Obter bookingBusiness
 
@@ -184,3 +184,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

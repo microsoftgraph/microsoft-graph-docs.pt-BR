@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 47724eaf62b02d5bf53792dc711b5d556364a6d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40bc05ac8aba51e78180256c39bd7a20132c4900
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532056"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988518"
 ---
 # <a name="audioconferencing-resource-type"></a>tipo de recurso audioConferencing
 
@@ -59,3 +59,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: eb763490e9d60ca386400eef3dae1b9e2d382d21
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
+ms.openlocfilehash: c49034c0d050c928b8a9192af6b2adee27a2a516
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038659"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988748"
 ---
 # <a name="unifiedroleassignmentmultiple-resource-type"></a>tipo de recurso unifiedRoleAssignmentMultiple
 
@@ -22,7 +22,7 @@ Um unifiedRoleAssignmentMultiple é usado para conceder acesso aos recursos. Ele
 
 É necessário fornecer o **directoryScopeIds** ou o **appScopeIds** .
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -36,7 +36,7 @@ Um unifiedRoleAssignmentMultiple é usado para conceder acesso aos recursos. Ele
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 | id | String | O identificador exclusivo para o unifiedRoleAssignmentMultiple. Chave, não anulável, somente leitura. |
-| displayName | Cadeia de caracteres | Nome da atribuição de função. Obrigatório. |
+| displayName | String | Nome da atribuição de função. Obrigatório. |
 | description | String | Descrição da atribuição de função. |
 | roleDefinitionId | String | ID do unifiedRoleDefinition para o qual a atribuição é. |
 | roleDefinition | [unifiedRoleDefinition](unifiedroledefinition.md) |Propriedade que indica o roleDefinition para o qual a atribuição é. Fornecido de modo que os chamadores possam obter a definição de função usando `$expand` ao mesmo tempo em que se obtém a atribuição de função. Somente leitura.  |
@@ -90,3 +90,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

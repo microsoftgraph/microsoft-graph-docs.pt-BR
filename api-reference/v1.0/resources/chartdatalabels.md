@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 7e45e9160573c7297285ebb6613be0bf405b0086
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 502f18fdf03eb28bde4b6f8620bb274f6f2052dd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531864"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988433"
 ---
 # <a name="chartdatalabels-resource-type"></a>Tipo de recurso ChartDataLabels
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Representa uma coleção de todos os rótulos de dados em um ponto do gráfico.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -29,7 +29,7 @@ Representa uma coleção de todos os rótulos de dados em um ponto do gráfico.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|position|cadeia de caracteres|Valor de DataLabelPosition que representa a posição do rótulo de dados. Os valores possíveis são: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
+|position|string|Valor de DataLabelPosition que representa a posição do rótulo de dados. Os valores possíveis são: `None` , `Center` , `InsideEnd` , `InsideBase` , `OutsideEnd` , `Left` , `Right` , `Top` , `Bottom` , `BestFit` , `Callout` .|
 |separator|string|Cadeia de caracteres que representa o separador usado para os rótulos de dados em um gráfico.|
 |showBubbleSize|booliano|Valor booliano que determina se o tamanho da bolha do rótulo de dados fica visível ou não.|
 |showCategoryName|booliano|Valor booliano que determina se o nome da categoria do rótulo de dados fica visível ou não.|
@@ -38,7 +38,7 @@ Representa uma coleção de todos os rótulos de dados em um ponto do gráfico.
 |showSeriesName|booliano|Valor booliano que determina se o nome da série do rótulo de dados fica visível ou não.|
 |showValue|booliano|Valor booliano que determina se o valor do rótulo de dados fica visível ou não.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[WorkbookChartDataLabelFormat](chartdatalabelformat.md)|Representa o formato dos rótulos de dados do gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.|
@@ -77,3 +77,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

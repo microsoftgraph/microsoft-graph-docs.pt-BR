@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso selfServiceSignUpAuthenticationFlowConfiguration
-description: Representa as configurações relacionadas à inscrição de autoatendimento.
+title: Tipo de recurso de configuração de fluxo de autenticação de autoatendimento
+description: Representa as configurações relacionadas ao autoatendimento de inscrição.
 author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8c75b3a90a7e9de01234bb53ed8346c40eef932f
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
-ms.translationtype: Auto
+ms.openlocfilehash: 658e27e4fe75424f4bd39cc6c3a76255e70c4d92
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556377"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988804"
 ---
-# <a name="selfservicesignupauthenticationflowconfiguration-resource-type"></a>tipo de recurso selfServiceSignUpAuthenticationFlowConfiguration
+# <a name="selfservicesignupauthenticationflowconfiguration-resource-type"></a>Tipo de recurso de configuração de fluxo de autenticação de autoatendimento
 
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
-Representa as configurações relacionadas à inscrição de autoatendimento.
+Representa as configurações relacionadas ao autoatendimento de registro.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:-------|:---|:----------|
-|isEnabled|Boolean|Indica se o fluxo de inscrição de autoatendimento está habilitado ou desabilitado. O valor padrão é `false`. Esta propriedade não é uma chave. Obrigatório. |
+|isEnabled|Booliano|Indica se o fluxo de autoatendimento de inscrição está ativado ou desativado. O valor padrão é `false`. Esta propriedade não é uma chave. Obrigatório. |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -40,3 +40,5 @@ Veja a seguir uma representação JSON do recurso.
   "isEnabled": "Boolean"
 }
 ```
+
+

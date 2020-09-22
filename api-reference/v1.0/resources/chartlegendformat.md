@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: d3d7d9a0a74a56a6e0ae99aa7431779dc7164265
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f4d018fd01a9ad9899eefcb663b0860096567c84
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531843"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988390"
 ---
 # <a name="chartlegendformat-resource-type"></a>Tipo de recurso ChartLegendFormat
 
@@ -19,13 +19,13 @@ Namespace: microsoft.graph
 Encapsula as propriedades de formato de uma legenda de gráfico.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 Nenhum
 
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |fill|[WorkbookChartFill](chartfill.md)|Representa o formato de preenchimento de um objeto, que inclui informações sobre a formatação da tela de fundo. Somente leitura.|
@@ -60,3 +60,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

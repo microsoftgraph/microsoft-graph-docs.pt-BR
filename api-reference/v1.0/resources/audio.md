@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 description: O recurso Audio agrupa propriedades relacionadas a áudio em um item em uma estrutura simples.
 doc_type: resourcePageType
-ms.openlocfilehash: 5487c7fb0505a1ab9a6b0e53278e235083cb83e4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2bb74ec0a51c2ec95b477695afc80be48626eee8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532060"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988517"
 ---
 # <a name="audio-facet"></a>Faceta Audio
 
@@ -79,3 +79,4 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Audio"
 } -->
+

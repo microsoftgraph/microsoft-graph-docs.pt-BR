@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 48c00d99ade3601e051d074272793d6aa0f2c66b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce6b068e7df3a4c406c1eb0791bf8b3688994f5b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520826"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988888"
 ---
 # <a name="securityaction-resource-type"></a>tipo de recurso SecurityAction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ Executar uma ação imediata proteger contra ameaças usando a entidade security
 
   > **Observação:** ações de segurança no momento apenas dá suporte a permissões do aplicativo compatível.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -97,3 +97,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

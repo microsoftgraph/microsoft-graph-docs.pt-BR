@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3172f733d83ee0fd549318992f67aa61bdc2bf96
-ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
+ms.openlocfilehash: b2ff58263a6fb28d41c79eaca721a791dab37992
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47296551"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988750"
 ---
 # <a name="unifiedroledefinition-resource-type"></a>tipo de recurso unifiedRoleDefinition
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Um unifiedRoleDefinition é uma coleção de permissões que lista as operações que podem ser executadas, como leitura, gravação e exclusão.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -87,3 +87,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

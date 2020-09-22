@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: bf863b7a0acc2b7ece38f10272497cb3e5267d07
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c36cf3be4cf24a2831918acd994a36bbcfc9e489
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810388"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988923"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Respostas de erro da API de segurança do Microsoft Graph
 
@@ -71,3 +71,5 @@ Uma solução alternativa para esse limite é usar o `$filter` parâmetro de con
 ## <a name="see-also"></a>Confira também
 
 Se você estiver tendo problemas com a autorização, confira [autorização e a API de segurança do Microsoft Graph](/graph/security-authorization).
+
+

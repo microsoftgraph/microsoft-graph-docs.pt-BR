@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: dc2f6f912eafdacfc05eb11b65140995dfa28cec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a1878aa01f2a6594f102647b6642eab6f301fa91
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532116"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988594"
 ---
 # <a name="appidentity-resource-type"></a>tipo de recurso appIdentity
 
@@ -22,8 +22,8 @@ Indica a identidade do aplicativo que executou a ação ou foi alterada. Inclui 
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|appId|String|Se refere a GUID exclusivo que representa o Id de aplicativo no Azure Active Directory.|
-|displayName|Cadeia de caracteres|Refere-se ao nome do aplicativo exibido no portal do Azure.|
+|appId|Cadeia de caracteres|Se refere a GUID exclusivo que representa o Id de aplicativo no Azure Active Directory.|
+|displayName|String|Refere-se ao nome do aplicativo exibido no portal do Azure.|
 |servicePrincipalName|String|Refere-se ao GUID exclusivo indicando a ID da entidade de serviço no Azure Active Directory para o aplicativo correspondente.|
 |servicePrincipalName|Cadeia de caracteres|Refere-se ao nome da entidade de segurança do serviço é o nome do aplicativo no locatário. |
 
@@ -58,3 +58,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

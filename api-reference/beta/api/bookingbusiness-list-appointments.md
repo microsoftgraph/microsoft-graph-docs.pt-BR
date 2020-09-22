@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d1a1f1cb63d4f5feee4f8a6d399a91dfc4c35266
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7de7f328d59ba20de77ec75cf5c6f16a0da2bc9e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43367177"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988076"
 ---
 # <a name="list-appointments"></a>Listar compromissos
 
@@ -36,7 +36,7 @@ GET /bookingBusinesses/{id}/appointments
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
-Para obter o conjunto de compromissos de uma empresa de livros em um intervalo de datas, em vez `$filter`de, [obtenha o calendarView](bookingbusiness-list-calendarview.md) para esse intervalo de datas.
+Para obter o conjunto de compromissos de uma empresa de livros em um intervalo de datas, em vez de `$filter` , [obtenha o calendarView](bookingbusiness-list-calendarview.md) para esse intervalo de datas.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -46,7 +46,7 @@ Para obter o conjunto de compromissos de uma empresa de livros em um intervalo d
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -273,3 +273,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

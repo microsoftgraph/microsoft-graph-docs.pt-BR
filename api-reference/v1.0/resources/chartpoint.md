@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: befa6f552fd343140d2aae10266c1445066266d5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 208f4eb90763210639540c9fd15bdaec89b7466c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531830"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988377"
 ---
 # <a name="chartpoint-resource-type"></a>Tipo de recurso ChartPoint
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Representa o ponto de uma série do gráfico.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -33,7 +33,7 @@ Representa o ponto de uma série do gráfico.
 |valor|Json|Retorna o valor de um ponto do gráfico. Somente leitura.|
 |id|string|identificador exclusivo|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[WorkbookChartPointFormat](chartpointformat.md)|Encapsula as propriedades de formato de um ponto do gráfico. Somente leitura.|
@@ -67,3 +67,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

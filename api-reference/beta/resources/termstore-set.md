@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 5e74e0a603d088c7964b13fad51018171642c6ec
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 45436f1a20652555b17b553f96db60e5636d3d92
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988792"
 ---
 # <a name="set-resource-type"></a>definir tipo de recurso
 
@@ -22,7 +22,7 @@ Representa o conjunto usado em um [repositório]de termos. O conjunto representa
 
 Herda de [entidade](../resources/entity.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar conjuntos](../api/termstore-group-list-sets.md)|coleção [Microsoft. Graph. termos. Set] | Retorna uma lista de conjuntos contidos em um [grupo] de um [repositório] de termos |
@@ -38,7 +38,7 @@ Herda de [entidade](../resources/entity.md).
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Data e hora da criação do conjunto. Somente leitura.|
 |description|String|Descrição que oferece detalhes sobre o uso de termos.|
-|id|Cadeia de caracteres|Identificador exclusivo. Somente leitura.|
+|id|String|Identificador exclusivo. Somente leitura.|
 |localizadores|coleção [Microsoft. Graph. termos.](../resources/termstore-localizedname.md) undeleble|Nome do conjunto para cada languageTag.|
 |properties|coleção [Microsoft. Graph. KeyValue](../resources/keyvalue.md)|Propriedades personalizadas para o conjunto.|
 
@@ -85,7 +85,7 @@ Veja a seguir uma representação JSON do recurso.
 [microsoft.graph.termStore.relation]: termstore-relation.md
 [microsoft.graph.termStore.store]: termstore-store.md
 [microsoft.graph.termStore.localizedName]: termstore-localizedname.md
-[Guarde]: ../resources/termstore-store.md
+[loja]: ../resources/termstore-store.md
 [group]: ../resources/termstore-group.md
 [set]: ../resources/termstore-set.md
 [terminal]: ../resources/termstore-term.md
@@ -104,3 +104,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

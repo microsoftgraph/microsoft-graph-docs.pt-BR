@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ab041b2a976db7f8a3983e06f4d00d8ac9d6cb16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a1fbb911a546f1ee8fb48f3337d99e3ebe0fcd8d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531872"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988447"
 ---
 # <a name="chartdatalabelformat-resource-type"></a>Tipo de recurso ChartDataLabelFormat
 
@@ -19,13 +19,13 @@ Namespace: microsoft.graph
 Encapsula as propriedades de formato dos rótulos de dados do gráfico.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 Nenhum
 
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |fill|[WorkbookChartFill](chartfill.md)|Representa o formato de preenchimento do rótulo de dados atual do gráfico. Somente leitura.|
@@ -60,3 +60,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

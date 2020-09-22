@@ -5,16 +5,16 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1a6a8f0f1448522d624b9c9e97bb2fab426b6988
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2435d1eef85dcdedc58b5e4e2be590759b779227
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519775"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988783"
 ---
 # <a name="threatassessmentrequest-resource-type"></a>tipo de recurso threatAssessmentRequest
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ Uma solicitação de avaliação de ameaça pode ser um dos seguintes tipos:
 * Arquivo (recurso[fileAssessmentRequest](fileAssessmentRequest.md) )
 * URL (recurso[urlAssessmentRequest](urlAssessmentRequest.md) )
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -52,7 +52,7 @@ Uma solicitação de avaliação de ameaça pode ser um dos seguintes tipos:
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|resultados|coleção [threatAssessmentResult](threatassessmentresult.md)|Uma coleção de resultados de avaliação de ameaças. Somente leitura. Por padrão, um `GET /threatAssessmentRequests/{id}` não retorna essa propriedade, a menos que `$expand` você a aplique.|
+|resultados|coleção [threatAssessmentResult](threatassessmentresult.md)|Uma coleção de resultados de avaliação de ameaças. Somente leitura. Por padrão, um `GET /threatAssessmentRequests/{id}` não retorna essa propriedade, a menos que você a aplique `$expand` .|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -90,3 +90,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

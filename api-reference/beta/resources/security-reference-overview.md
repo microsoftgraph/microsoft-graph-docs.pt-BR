@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 92bdc9948920e39b8f7e889fccaafe4211dd1eee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5550509e3ececdb159125e66c1bd12962722832d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520833"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988889"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Usar a API do Microsoft Graph para detecção e proteção contra ameaças de segurança (visualização)
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,3 +30,5 @@ A [API de eventos de risco de proteção de identidade](identityprotection-root.
 - [Usar a API de segurança para se integrar com o gráfico de segurança inteligente](security-api-overview.md)
 - [Por que usar o Azure AD para proteger identidades em sua organização?](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
 - [Usar a API de proteção de identidade do Azure AD](identityprotection-root.md)
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d7ca41939f79544b0fbcc241a1cd37254f521254
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: def441d29abd5bc2a05dcd24adc4148870fb7a65
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43385217"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988944"
 ---
 # <a name="ipv4cidrrange-resource-type"></a>tipo de recurso iPv4CidrRange
 
@@ -56,3 +56,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

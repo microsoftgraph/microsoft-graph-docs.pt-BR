@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 319e770ae4ec842d2f722b7beb1845f2449d58f8
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 9a315cd9187528b07932710171376b7efcda7af9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539126"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988790"
 ---
 # <a name="store-resource-type"></a>tipo de recurso Store
 
@@ -22,7 +22,7 @@ Representa um repositório de termos de taxonomia.
 
 Herda de [entidade](../resources/entity.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição
 |:---|:---|:---
 |[Listar grupos](../api/termstore-list-groups.md)|coleção [Microsoft. Graph. termos. Group](../resources/termstore-group.md)| Obtenha os grupos de disponíveis no objeto do repositório de termos.|
@@ -32,7 +32,7 @@ Herda de [entidade](../resources/entity.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição
 |:---|:---|:---
-|defaultLanguageTag | Cadeia de Caracteres | Idioma padrão do termos.
+|defaultLanguageTag | String | Idioma padrão do termos.
 |id|String | Identificador exclusivo do repositório de termos. Somente leitura.
 |languageTags | Coleção de cadeias de caracteres | Lista de idiomas para o repositório de termos.
 
@@ -77,4 +77,6 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+
 

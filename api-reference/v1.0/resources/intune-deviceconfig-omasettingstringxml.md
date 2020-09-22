@@ -3,14 +3,14 @@ title: Tipo de recurso omaSettingStringXml
 description: Definição de StringXML para configurações de OMA.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7218784b03489419fc3dbcf9aeb2aed4e4e78ea
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c85dbc033264715026227be4055a0bf3130a5cc4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472962"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988258"
 ---
 # <a name="omasettingstringxml-resource-type"></a>Tipo de recurso omaSettingStringXml
 
@@ -26,10 +26,10 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|String|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|fileName|String|Nome do arquivo associado à propriedade de valor (*.xml).|
+|fileName|Cadeia de caracteres|Nome do arquivo associado à propriedade de valor (*.xml).|
 |valor|Binário|Valor. (Matriz de bytes codificados de UTF8)|
 
 ## <a name="relationships"></a>Relações
@@ -52,6 +52,8 @@ Veja a seguir uma representação JSON do recurso.
   "value": "binary"
 }
 ```
+
+
 
 
 

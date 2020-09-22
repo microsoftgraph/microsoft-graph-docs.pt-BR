@@ -3,14 +3,14 @@ title: Tipo de recurso deviceCompliancePolicySettingStateSummary
 description: Resumo de estado de configuração de política de conformidade do dispositivo por toda a conta.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 050e4eaa3e92e0c06648249227956bf6b6f1622e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0cd542c028e603251a9dc6325e9bac8c0fa1d3be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448852"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988272"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingStateSummary
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Resumo de estado de configuração de política de conformidade do dispositivo por toda a conta.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceCompliancePolicySettingStateSummaries](../api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-list.md)|Conjunto [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)|Listar propriedades e relações de objetos de [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md).|
@@ -33,7 +33,7 @@ Resumo de estado de configuração de política de conformidade do dispositivo p
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|configuração|String|O nome da classe de configuração e o nome da propriedade.|
+|configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
 |settingName|Cadeia de caracteres|Nome da configuração.|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Configuração de plataforma. Os valores possíveis são: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
@@ -44,7 +44,7 @@ Resumo de estado de configuração de política de conformidade do dispositivo p
 |errorDeviceCount|Int32|Número de dispositivos com erro|
 |conflictDeviceCount|Int32|Número de dispositivos em conflito|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |deviceComplianceSettingStates|Conjunto [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md)|Ainda não documentado|
@@ -73,6 +73,8 @@ Veja a seguir uma representação JSON do recurso.
   "conflictDeviceCount": 1024
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a496740bf94ef524560d28b08498da852ccf1e2f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8a6a0e70937dbf24d59adcc922944f211e570448
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43366985"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988062"
 ---
 # <a name="list-bookings-calendarview"></a>Listar o calendarView do Bookings
 
@@ -44,7 +44,7 @@ Forneça os seguintes parâmetros de consulta necessários com valores na URL so
 |iniciar|DateTimeOffset|A data e a hora de início de um intervalo de tempo, representadas no formato ISO 8601, como UTC ou offset do UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2018 teria a seguinte aparência: ' 2018-01-01T00:00:00Z ' e o mesmo tempo em PST teria a seguinte aparência: ' 2017-12-31T16:00:00-08:00 '.|
 |end|DateTimeOffset|A data e a hora de término de um intervalo de tempo, representadas no formato ISO 8601, como UTC ou offset do UTC. Por exemplo, 3am UTC em 1º de janeiro de 2018 teria a seguinte aparência: ' 2018-01-01T03:00: o 00Z ' e o mesmo momento em PST teria a seguinte aparência: ' 2017-12-31T19:00:00-08:00 '.|
 
-Os valores de `start` e `end` são interpretados usando o deslocamento de fuso horário especificado em seus valores correspondentes e não são afetados pelo valor `Prefer: outlook.timezone` do cabeçalho, se houver.
+Os valores de `start` e `end` são interpretados usando o deslocamento de fuso horário especificado em seus valores correspondentes e não são afetados pelo valor do `Prefer: outlook.timezone` cabeçalho, se houver.
 
 Este método também dá suporte a alguns [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
@@ -287,3 +287,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

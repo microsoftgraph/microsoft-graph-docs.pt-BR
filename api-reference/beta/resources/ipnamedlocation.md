@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f2d08de5438e85ce18cb9a78da0213a9b07fa104
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 37e5f46bf4806e402dcb527745c58c381945160a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917563"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988965"
 ---
 # <a name="ipnamedlocation-resource-type"></a>tipo de recurso ipNamedLocation
 
@@ -37,7 +37,7 @@ Herda de [namedLocation](../resources/namedLocation.md)
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|O tipo TIMESTAMP representa data e hora de criação do local usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Herdado de [namedLocation](../resources/namedLocation.md).|
-|displayName|Cadeia de caracteres|Nome legível do local.|
+|displayName|String|Nome legível do local.|
 |id|String|Identificador de um objeto namedLocation. Somente leitura. Herdado de [namedLocation](../resources/namedLocation.md).|
 |Intervalos|Coleção [ipRange](iprange.md)|Lista de intervalos de endereços IP no formato CIDR do IPv4 (por exemplo, 1.2.3.4/32) ou qualquer formato IPv6 permitido da IETF RFC596.|
 |isTrusted|Boolean|True se esse local é explicitamente confiável.|
@@ -80,3 +80,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

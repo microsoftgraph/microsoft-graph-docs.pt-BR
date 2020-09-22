@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f7d42633321c78eb03942072731b0636a8ca73b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 173f9878daecd3443137800f143a2b3633a2fa20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531828"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988370"
 ---
 # <a name="chartseries-resource-type"></a>Tipo de recurso ChartSeries
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Representa uma série de um gráfico.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -35,7 +35,7 @@ Representa uma série de um gráfico.
 |:---------------|:--------|:----------|
 |nome|string|Representa o nome de uma série do gráfico.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[WorkbookChartSeriesFormat](chartseriesformat.md)|Representa a formatação de uma série do gráfico, que inclui a formatação de linha e de preenchimento. Somente leitura.|
@@ -70,3 +70,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

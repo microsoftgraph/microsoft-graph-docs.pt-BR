@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6518da29d4dd767d52c68db980a7fdd26b83ce16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 26a1b0574473ed540e28b72cd11fd6a10781452b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523167"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988993"
 ---
 # <a name="inviteparticipantsoperation-resource-type"></a>tipo de recurso inviteParticipantsOperation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +25,8 @@ Representa o status de uma operação de convite de participante de execução l
 | Propriedade                       | Tipo                        | Descrição                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | O contexto do cliente.                                                                                                                               |
-| id                             | Cadeia de caracteres                      | A ID da operação do servidor. Somente leitura.                                                                                              |
-| participantes | conjunto [invitationParticipantInfo](invitationParticipantInfo.md) | Os participantes a serem convidados. |
+| id                             | String                      | A ID da operação do servidor. somente leitura.                                                                                              |
+| participants | conjunto [invitationParticipantInfo](invitationParticipantInfo.md) | Os participantes a serem convidados. |
 | resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura.                                                                                             |
 | status                         | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura.                                                  |
 
@@ -61,3 +61,5 @@ Veja a seguir uma representação JSON do recurso.
   "tocPath": "",
   "suppressions": []
 }-->
+
+

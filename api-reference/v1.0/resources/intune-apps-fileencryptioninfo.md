@@ -3,14 +3,14 @@ title: Tipo de recurso fileEncryptionInfo
 description: Contém propriedades de informações de criptografia de arquivos para a versão de conteúdo de um aplicativo de linha de negócios.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 945376e142a62efdc6b95b3150aa4425cb45f90d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7c020aa549e9e9a7c2520db6893d0cc60f65b8a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43397311"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988279"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Tipo de recurso fileEncryptionInfo
 
@@ -27,7 +27,7 @@ Contém propriedades de informações de criptografia de arquivos para a versão
 |initializationVector|Binária|O vetor de inicialização usado para o algoritmo de criptografia.|
 |mac|Binária|O hash do conteúdo do arquivo criptografado + IV (hash conteúdo).|
 |macKey|Binária|Chave usada para acessar mac.|
-|profileIdentifier|String|O identificador de perfil.|
+|profileIdentifier|Cadeia de caracteres|O identificador de perfil.|
 |fileDigest|Binária|O resumo de arquivo antes da criptografia.|
 |fileDigestAlgorithm|Cadeia de caracteres|O algoritmo de conteúdo do arquivo.|
 
@@ -53,6 +53,8 @@ Veja a seguir uma representação JSON do recurso.
   "fileDigestAlgorithm": "String"
 }
 ```
+
+
 
 
 
