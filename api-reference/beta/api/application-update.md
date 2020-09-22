@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 220bf1fac87e3b1746fb8340c33dead6a4630b69
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f9851bf406943cc84c090d662a977d5e018ee80
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996719"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192412"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Atualiza as propriedades de um objeto [Application](../resources/application.md) .
 
 > [!IMPORTANT]
-> Não há suporte para o uso de PATCH para definir [**passwordCredential**](../resources/passwordcredential.md) . Use os métodos [addpassword](./application-addpassword.md) e [removePassword](./application-removepassword.md) para atualizar a senha de um aplicativo.
+> Não há suporte para o uso do PATCH para definir [**passwordCredential**](../resources/passwordcredential.md). Use os métodos [addpassword](./application-addpassword.md) e [removePassword](./application-removepassword.md) para atualizar a senha de um aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,9 +29,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) |  Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All    |
+|Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +56,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | identifierUris          | Coleção de cadeias de caracteres                                                           | Os URIs que identificam o aplicativo em seu locatário do Azure AD ou em um domínio personalizado verificado, se o aplicativo é multilocatário. Para obter mais informações, consulte [Application Objects and Service principal Objects](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável.                                                                                                                                                 |
 | informações                     | [informationalUrl](../resources/informationalurl.md)                        | Informações básicas de perfil do aplicativo, como marketing do aplicativo, suporte, termos de serviço e URLs da declaração de privacidade. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, consulte [Adicionar termos de serviço e declaração de privacidade para aplicativos registrados do Azure ad](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement).                                                                                                                       |
 | isFallbackPublicClient  | Booliano                                                                     | Especifica o tipo de aplicativo de fallback como cliente público; por exemplo, um aplicativo instalado em um dispositivo móvel. O valor padrão é `false` , que significa que o tipo de aplicativo de fallback é um cliente confidencial, como o aplicativo Web. Há determinados cenários em que o Azure AD não pode determinar o tipo de aplicativo cliente (por exemplo, [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) Flow onde ele é configurado sem especificar um URI de redirecionamento). Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade. |
-| keyCredentials          | [keyCredential](../resources/keycredential.md) collection                   | O conjunto de credenciais chave associadas ao aplicativo. Não anulável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| keyCredentials          | Coleção [keyCredential](../resources/keycredential.md)                   | O conjunto de credenciais chave associadas ao aplicativo. Não anulável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | logo                    | Stream                                                                      | O principal logotipo do aplicativo. Não anulável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | onPremisesPublishing    | [onPremisesPublishing](../resources/onpremisespublishing.md)                | Representa o conjunto de propriedades para configurar o [proxy de aplicativo do Azure ad](https://aka.ms/whyappproxy) para um aplicativo local. Esta propriedade só pode ser definida depois que o aplicativo é criado.                                                                                                                                                                                                                                                                                                                                                       |
 | optionalClaims          | optionalClaims                                                              | Desenvolvedores de aplicativos podem configurar declarações opcionais em aplicativos do Azure AD para especificar quais declarações desejam em tokens enviados ao aplicativo pelo serviço de token de segurança da Microsoft. Consulte [declarações opcionais](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims) para obter mais informações.                                                                                                                                                                                                                                     |

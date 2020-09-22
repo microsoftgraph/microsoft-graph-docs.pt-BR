@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 77dd5ab4ee4830cf149b4a7b1bc74e15543fa395
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 83c045f8c643b629c57470ad092e9ad427dd75a5
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982595"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192291"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Enviar chat em um canal ou em um chat
 
@@ -32,14 +32,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | ChannelMessage. Send, Group. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ### <a name="permissions-for-chat"></a>Permissões para chat
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Chat. Send, chat. ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -146,7 +146,8 @@ Content-length: 160
     "etag": "id-value",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deleted": false,
     "subject": null,
     "summary": null,
@@ -226,7 +227,8 @@ Content-length: 160
     "etag": "id-value",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deleted": false,
     "subject": null,
     "summary": null,
@@ -322,7 +324,8 @@ Content-length: 160
     "etag": "1554837297516",
     "messageType": "message",
     "createdDateTime": "2019-04-09T19:14:57.516Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
@@ -408,7 +411,8 @@ Content-type: application/json
     "etag": "1589481435511",
     "messageType": "message",
     "createdDateTime": "2020-05-14T18:37:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2020-07-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
@@ -497,7 +501,8 @@ Content-length: 160
     "etag": "1596261390440",
     "messageType": "message",
     "createdDateTime": "2020-08-01T05:56:30.44Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2020-09-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
@@ -591,7 +596,8 @@ Content-type: application/json
     "etag": "1597182390555",
     "messageType": "message",
     "createdDateTime": "2020-08-11T21:46:30.555Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2020-09-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
