@@ -3,35 +3,35 @@ title: ação enableUnlicensedAdminstrators
 description: Após a habilitação, os usuários atribuídos como administradores por meio de associações de atribuição de função não precisarão mais de uma licença do Intune atribuída. Você está limitado a 350 membros diretos não licenciados para cada grupo de segurança do AAD em uma atribuição de função, mas você pode atribuir vários grupos de segurança do AAD a uma função se precisar dar suporte a mais de 350 administradores não licenciados. Os administradores licenciados continuarão a funcionar como estão, já que as associações transitivas se aplicam e não estão sujeitas ao limite de membro de 350.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 882a5d1cafa8e25d4a69a0c525c0bb8d3b971cd1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: e6179929eec88b79a44b09c46dcd0049d7716c3b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792803"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995776"
 ---
-# <a name="enableunlicensedadminstrators-action"></a><span data-ttu-id="9daf8-105">ação enableUnlicensedAdminstrators</span><span class="sxs-lookup"><span data-stu-id="9daf8-105">enableUnlicensedAdminstrators action</span></span>
+# <a name="enableunlicensedadminstrators-action"></a><span data-ttu-id="01e1b-105">ação enableUnlicensedAdminstrators</span><span class="sxs-lookup"><span data-stu-id="01e1b-105">enableUnlicensedAdminstrators action</span></span>
 
-<span data-ttu-id="9daf8-106">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9daf8-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="01e1b-106">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="01e1b-106">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="9daf8-107">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="9daf8-107">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="01e1b-107">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="01e1b-107">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9daf8-108">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="9daf8-108">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="01e1b-108">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="01e1b-108">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9daf8-109">Após a habilitação, os usuários atribuídos como administradores por meio de associações de atribuição de função não precisarão mais de uma licença do Intune atribuída.</span><span class="sxs-lookup"><span data-stu-id="9daf8-109">Upon enabling, users assigned as administrators via Role Assignment Memberships will no longer require an assigned Intune license.</span></span> <span data-ttu-id="9daf8-110">Você está limitado a 350 membros diretos não licenciados para cada grupo de segurança do AAD em uma atribuição de função, mas você pode atribuir vários grupos de segurança do AAD a uma função se precisar dar suporte a mais de 350 administradores não licenciados.</span><span class="sxs-lookup"><span data-stu-id="9daf8-110">You are limited to 350 unlicensed direct members for each AAD security group in a role assignment, but you can assign multiple AAD security groups to a role if you need to support more than 350 unlicensed administrators.</span></span> <span data-ttu-id="9daf8-111">Os administradores licenciados continuarão a funcionar como estão, já que as associações transitivas se aplicam e não estão sujeitas ao limite de membro de 350.</span><span class="sxs-lookup"><span data-stu-id="9daf8-111">Licensed administrators will continue to function as-is in that transitive memberships apply and are not subject to the 350 member limit.</span></span>
+<span data-ttu-id="01e1b-109">Após a habilitação, os usuários atribuídos como administradores por meio de associações de atribuição de função não precisarão mais de uma licença do Intune atribuída.</span><span class="sxs-lookup"><span data-stu-id="01e1b-109">Upon enabling, users assigned as administrators via Role Assignment Memberships will no longer require an assigned Intune license.</span></span> <span data-ttu-id="01e1b-110">Você está limitado a 350 membros diretos não licenciados para cada grupo de segurança do AAD em uma atribuição de função, mas você pode atribuir vários grupos de segurança do AAD a uma função se precisar dar suporte a mais de 350 administradores não licenciados.</span><span class="sxs-lookup"><span data-stu-id="01e1b-110">You are limited to 350 unlicensed direct members for each AAD security group in a role assignment, but you can assign multiple AAD security groups to a role if you need to support more than 350 unlicensed administrators.</span></span> <span data-ttu-id="01e1b-111">Os administradores licenciados continuarão a funcionar como estão, já que as associações transitivas se aplicam e não estão sujeitas ao limite de membro de 350.</span><span class="sxs-lookup"><span data-stu-id="01e1b-111">Licensed administrators will continue to function as-is in that transitive memberships apply and are not subject to the 350 member limit.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="9daf8-112">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="9daf8-112">Prerequisites</span></span>
-<span data-ttu-id="9daf8-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9daf8-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="01e1b-112">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="01e1b-112">Prerequisites</span></span>
+<span data-ttu-id="01e1b-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="01e1b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9daf8-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9daf8-115">Permission type</span></span>|<span data-ttu-id="9daf8-116">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="9daf8-116">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="01e1b-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="01e1b-115">Permission type</span></span>|<span data-ttu-id="01e1b-116">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="01e1b-116">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9daf8-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9daf8-117">Delegated (work or school account)</span></span>|<span data-ttu-id="9daf8-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9daf8-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="9daf8-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9daf8-119">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9daf8-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9daf8-120">Not supported.</span></span>|
-|<span data-ttu-id="9daf8-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9daf8-121">Application</span></span>|<span data-ttu-id="9daf8-122">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9daf8-122">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="01e1b-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="01e1b-117">Delegated (work or school account)</span></span>|<span data-ttu-id="01e1b-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="01e1b-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="01e1b-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="01e1b-119">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="01e1b-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="01e1b-120">Not supported.</span></span>|
+|<span data-ttu-id="01e1b-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="01e1b-121">Application</span></span>|<span data-ttu-id="01e1b-122">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="01e1b-122">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9daf8-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9daf8-123">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="01e1b-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="01e1b-123">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,31 +40,34 @@ ms.locfileid: "44792803"
 POST /deviceManagement/enableUnlicensedAdminstrators
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9daf8-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9daf8-124">Request headers</span></span>
-|<span data-ttu-id="9daf8-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="9daf8-125">Header</span></span>|<span data-ttu-id="9daf8-126">Valor</span><span class="sxs-lookup"><span data-stu-id="9daf8-126">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="01e1b-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="01e1b-124">Request headers</span></span>
+|<span data-ttu-id="01e1b-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="01e1b-125">Header</span></span>|<span data-ttu-id="01e1b-126">Valor</span><span class="sxs-lookup"><span data-stu-id="01e1b-126">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9daf8-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="9daf8-127">Authorization</span></span>|<span data-ttu-id="9daf8-128">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9daf8-128">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9daf8-129">Aceitar</span><span class="sxs-lookup"><span data-stu-id="9daf8-129">Accept</span></span>|<span data-ttu-id="9daf8-130">application/json</span><span class="sxs-lookup"><span data-stu-id="9daf8-130">application/json</span></span>|
+|<span data-ttu-id="01e1b-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="01e1b-127">Authorization</span></span>|<span data-ttu-id="01e1b-128">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="01e1b-128">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="01e1b-129">Aceitar</span><span class="sxs-lookup"><span data-stu-id="01e1b-129">Accept</span></span>|<span data-ttu-id="01e1b-130">application/json</span><span class="sxs-lookup"><span data-stu-id="01e1b-130">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9daf8-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9daf8-131">Request body</span></span>
-<span data-ttu-id="9daf8-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="9daf8-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="01e1b-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="01e1b-131">Request body</span></span>
+<span data-ttu-id="01e1b-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="01e1b-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9daf8-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="9daf8-133">Response</span></span>
-<span data-ttu-id="9daf8-134">Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="9daf8-134">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="01e1b-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="01e1b-133">Response</span></span>
+<span data-ttu-id="01e1b-134">Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="01e1b-134">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9daf8-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9daf8-135">Example</span></span>
+## <a name="example"></a><span data-ttu-id="01e1b-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="01e1b-135">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9daf8-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9daf8-136">Request</span></span>
-<span data-ttu-id="9daf8-137">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9daf8-137">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="01e1b-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="01e1b-136">Request</span></span>
+<span data-ttu-id="01e1b-137">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="01e1b-137">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/enableUnlicensedAdminstrators
 ```
 
-### <a name="response"></a><span data-ttu-id="9daf8-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="9daf8-138">Response</span></span>
-<span data-ttu-id="9daf8-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9daf8-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="01e1b-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="01e1b-138">Response</span></span>
+<span data-ttu-id="01e1b-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="01e1b-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

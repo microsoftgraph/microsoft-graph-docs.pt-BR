@@ -5,53 +5,53 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: e729400d27bee48a83079b95ea27bed072bc33c2
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 07b8fce1de78ac062ae9ea38ed4d22a5d345cace
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217985"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997134"
 ---
-# <a name="update-agreement"></a><span data-ttu-id="ef0b9-103">Atualizar contrato</span><span class="sxs-lookup"><span data-stu-id="ef0b9-103">Update agreement</span></span>
+# <a name="update-agreement"></a><span data-ttu-id="016df-103">Atualizar contrato</span><span class="sxs-lookup"><span data-stu-id="016df-103">Update agreement</span></span>
 
-<span data-ttu-id="ef0b9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ef0b9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="016df-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="016df-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ef0b9-105">Atualizar as propriedades de um objeto de [contrato](../resources/agreement.md) .</span><span class="sxs-lookup"><span data-stu-id="ef0b9-105">Update the properties of an [agreement](../resources/agreement.md) object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ef0b9-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ef0b9-106">Permissions</span></span>
-<span data-ttu-id="ef0b9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ef0b9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="016df-105">Atualizar as propriedades de um objeto de [contrato](../resources/agreement.md) .</span><span class="sxs-lookup"><span data-stu-id="016df-105">Update the properties of an [agreement](../resources/agreement.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="016df-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="016df-106">Permissions</span></span>
+<span data-ttu-id="016df-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="016df-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ef0b9-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ef0b9-109">Permission type</span></span>                        | <span data-ttu-id="ef0b9-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ef0b9-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="016df-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="016df-109">Permission type</span></span>                        | <span data-ttu-id="016df-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="016df-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ef0b9-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ef0b9-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ef0b9-112">Agreement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ef0b9-112">Agreement.ReadWrite.All</span></span> |
-|<span data-ttu-id="ef0b9-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ef0b9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ef0b9-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ef0b9-114">Not supported.</span></span> |
-|<span data-ttu-id="ef0b9-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ef0b9-115">Application</span></span>                            | <span data-ttu-id="ef0b9-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ef0b9-116">Not supported.</span></span> |
+|<span data-ttu-id="016df-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="016df-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="016df-112">Agreement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="016df-112">Agreement.ReadWrite.All</span></span> |
+|<span data-ttu-id="016df-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="016df-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="016df-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="016df-114">Not supported.</span></span> |
+|<span data-ttu-id="016df-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="016df-115">Application</span></span>                            | <span data-ttu-id="016df-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="016df-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ef0b9-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ef0b9-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="016df-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="016df-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /agreements/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="ef0b9-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ef0b9-118">Request headers</span></span>
-| <span data-ttu-id="ef0b9-119">Nome</span><span class="sxs-lookup"><span data-stu-id="ef0b9-119">Name</span></span>         | <span data-ttu-id="ef0b9-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="ef0b9-120">Type</span></span>        | <span data-ttu-id="ef0b9-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="ef0b9-121">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="016df-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="016df-118">Request headers</span></span>
+| <span data-ttu-id="016df-119">Nome</span><span class="sxs-lookup"><span data-stu-id="016df-119">Name</span></span>         | <span data-ttu-id="016df-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="016df-120">Type</span></span>        | <span data-ttu-id="016df-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="016df-121">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="ef0b9-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="ef0b9-122">Authorization</span></span> | <span data-ttu-id="ef0b9-123">string</span><span class="sxs-lookup"><span data-stu-id="ef0b9-123">string</span></span> | <span data-ttu-id="ef0b9-p102">\{token\} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ef0b9-p102">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="016df-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="016df-122">Authorization</span></span> | <span data-ttu-id="016df-123">string</span><span class="sxs-lookup"><span data-stu-id="016df-123">string</span></span> | <span data-ttu-id="016df-p102">\{token\} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="016df-p102">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ef0b9-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ef0b9-126">Request body</span></span>
-<span data-ttu-id="ef0b9-127">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="ef0b9-127">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="ef0b9-128">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="ef0b9-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="ef0b9-129">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="ef0b9-129">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="016df-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="016df-126">Request body</span></span>
+<span data-ttu-id="016df-127">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="016df-127">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="016df-128">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="016df-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="016df-129">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="016df-129">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="ef0b9-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ef0b9-130">Property</span></span>     | <span data-ttu-id="ef0b9-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="ef0b9-131">Type</span></span>        | <span data-ttu-id="ef0b9-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="ef0b9-132">Description</span></span> |
+| <span data-ttu-id="016df-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="016df-130">Property</span></span>     | <span data-ttu-id="016df-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="016df-131">Type</span></span>        | <span data-ttu-id="016df-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="016df-132">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="ef0b9-133">displayName</span><span class="sxs-lookup"><span data-stu-id="ef0b9-133">displayName</span></span>|<span data-ttu-id="ef0b9-134">String</span><span class="sxs-lookup"><span data-stu-id="ef0b9-134">String</span></span>|<span data-ttu-id="ef0b9-135">Nome para exibição do contrato.</span><span class="sxs-lookup"><span data-stu-id="ef0b9-135">Display name of the agreement.</span></span>|
-|<span data-ttu-id="ef0b9-136">isViewingBeforeAcceptanceRequired</span><span class="sxs-lookup"><span data-stu-id="ef0b9-136">isViewingBeforeAcceptanceRequired</span></span>|<span data-ttu-id="ef0b9-137">Boolean</span><span class="sxs-lookup"><span data-stu-id="ef0b9-137">Boolean</span></span>|<span data-ttu-id="ef0b9-138">Se o usuário tem que expandir e exibir o contrato antes de aceitar o.</span><span class="sxs-lookup"><span data-stu-id="ef0b9-138">Whether the user has to expand and view the agreement before accepting.</span></span>|
+|<span data-ttu-id="016df-133">displayName</span><span class="sxs-lookup"><span data-stu-id="016df-133">displayName</span></span>|<span data-ttu-id="016df-134">String</span><span class="sxs-lookup"><span data-stu-id="016df-134">String</span></span>|<span data-ttu-id="016df-135">Nome para exibição do contrato.</span><span class="sxs-lookup"><span data-stu-id="016df-135">Display name of the agreement.</span></span>|
+|<span data-ttu-id="016df-136">isViewingBeforeAcceptanceRequired</span><span class="sxs-lookup"><span data-stu-id="016df-136">isViewingBeforeAcceptanceRequired</span></span>|<span data-ttu-id="016df-137">Boolean</span><span class="sxs-lookup"><span data-stu-id="016df-137">Boolean</span></span>|<span data-ttu-id="016df-138">Se o usuário tem que expandir e exibir o contrato antes de aceitar o.</span><span class="sxs-lookup"><span data-stu-id="016df-138">Whether the user has to expand and view the agreement before accepting.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ef0b9-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="ef0b9-139">Response</span></span>
-<span data-ttu-id="ef0b9-140">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Agreement](../resources/agreement.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ef0b9-140">If successful, this method returns a `200 OK` response code and an updated [agreement](../resources/agreement.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="ef0b9-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ef0b9-141">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ef0b9-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ef0b9-142">Request</span></span>
+## <a name="response"></a><span data-ttu-id="016df-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="016df-139">Response</span></span>
+<span data-ttu-id="016df-140">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Agreement](../resources/agreement.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="016df-140">If successful, this method returns a `200 OK` response code and an updated [agreement](../resources/agreement.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="016df-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="016df-141">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="016df-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="016df-142">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ef0b9-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="ef0b9-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="016df-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="016df-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_agreement"
@@ -66,22 +66,22 @@ Content-length: 85
   "isViewingBeforeAcceptanceRequired": true
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="ef0b9-144">C#</span><span class="sxs-lookup"><span data-stu-id="ef0b9-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="016df-144">C#</span><span class="sxs-lookup"><span data-stu-id="016df-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-agreement-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ef0b9-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ef0b9-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="016df-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="016df-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-agreement-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ef0b9-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ef0b9-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="016df-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="016df-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-agreement-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="ef0b9-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="ef0b9-147">Response</span></span>
-><span data-ttu-id="ef0b9-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ef0b9-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="016df-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="016df-147">Response</span></span>
+><span data-ttu-id="016df-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="016df-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -113,3 +113,5 @@ Content-length: 105
   ]
 }
 -->
+
+
