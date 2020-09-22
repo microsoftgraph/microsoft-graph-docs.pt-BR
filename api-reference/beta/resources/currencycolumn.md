@@ -6,24 +6,24 @@ title: CurrencyColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 75ef7125c55674b2feb6e617a40313b5bca242bc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4cd887d4ca7e38ff6d22189760adf12e1479acb9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507328"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050015"
 ---
-# <a name="currencycolumn-resource-type"></a><span data-ttu-id="eeb29-103">Tipo de recurso CurrencyColumn</span><span class="sxs-lookup"><span data-stu-id="eeb29-103">CurrencyColumn resource type</span></span>
+# <a name="currencycolumn-resource-type"></a><span data-ttu-id="d81ef-103">Tipo de recurso CurrencyColumn</span><span class="sxs-lookup"><span data-stu-id="d81ef-103">CurrencyColumn resource type</span></span>
 
-<span data-ttu-id="eeb29-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="eeb29-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d81ef-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d81ef-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="eeb29-105">**currencyColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna representam moeda.</span><span class="sxs-lookup"><span data-stu-id="eeb29-105">The **currencyColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent currency.</span></span>
+<span data-ttu-id="d81ef-105">**currencyColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna representam moeda.</span><span class="sxs-lookup"><span data-stu-id="d81ef-105">The **currencyColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent currency.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="eeb29-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="eeb29-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d81ef-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d81ef-106">JSON representation</span></span>
 
-<span data-ttu-id="eeb29-107">Aqui está uma representação JSON de um recurso **currencyColumn**.</span><span class="sxs-lookup"><span data-stu-id="eeb29-107">Here is a JSON representation of a **currencyColumn** resource.</span></span>
+<span data-ttu-id="d81ef-107">Aqui está uma representação JSON de um recurso **currencyColumn**.</span><span class="sxs-lookup"><span data-stu-id="d81ef-107">Here is a JSON representation of a **currencyColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.currencyColumn" } -->
 
 ```json
@@ -32,11 +32,11 @@ ms.locfileid: "42507328"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="eeb29-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="eeb29-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d81ef-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d81ef-108">Properties</span></span>
 
-| <span data-ttu-id="eeb29-109">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="eeb29-109">Property name</span></span> | <span data-ttu-id="eeb29-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="eeb29-110">Type</span></span>   | <span data-ttu-id="eeb29-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="eeb29-111">Description</span></span>
+| <span data-ttu-id="d81ef-109">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="d81ef-109">Property name</span></span> | <span data-ttu-id="d81ef-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="d81ef-110">Type</span></span>   | <span data-ttu-id="d81ef-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="d81ef-111">Description</span></span>
 |:--------------|:-------|:----------------------------------------------------
-| <span data-ttu-id="eeb29-112">**locale**</span><span class="sxs-lookup"><span data-stu-id="eeb29-112">**locale**</span></span>    | <span data-ttu-id="eeb29-113">string</span><span class="sxs-lookup"><span data-stu-id="eeb29-113">string</span></span> | <span data-ttu-id="eeb29-114">Especifica a localidade da qual o símbolo de moeda deverá ser inferido.</span><span class="sxs-lookup"><span data-stu-id="eeb29-114">Specifies the locale from which to infer the currency symbol.</span></span>
+| <span data-ttu-id="d81ef-112">**locale**</span><span class="sxs-lookup"><span data-stu-id="d81ef-112">**locale**</span></span>    | <span data-ttu-id="d81ef-113">string</span><span class="sxs-lookup"><span data-stu-id="d81ef-113">string</span></span> | <span data-ttu-id="d81ef-114">Especifica a localidade da qual o símbolo de moeda deverá ser inferido.</span><span class="sxs-lookup"><span data-stu-id="d81ef-114">Specifies the locale from which to infer the currency symbol.</span></span>
 
 <!--
 {
@@ -48,3 +48,5 @@ ms.locfileid: "42507328"
   "suppressions": []
 }
 -->
+
+

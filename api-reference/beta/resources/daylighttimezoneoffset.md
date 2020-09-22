@@ -5,45 +5,45 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: 28c1db72eec1b1556949bee3ce0c5acdc12af9e7
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ea432ede399dcbb95a0d0d06fa80285b31f061bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809842"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049958"
 ---
-# <a name="daylighttimezoneoffset-resource-type"></a><span data-ttu-id="f985e-103">Tipo de recurso daylightTimeZoneOffset</span><span class="sxs-lookup"><span data-stu-id="f985e-103">daylightTimeZoneOffset resource type</span></span>
+# <a name="daylighttimezoneoffset-resource-type"></a><span data-ttu-id="1c08b-103">Tipo de recurso daylightTimeZoneOffset</span><span class="sxs-lookup"><span data-stu-id="1c08b-103">daylightTimeZoneOffset resource type</span></span>
 
-<span data-ttu-id="f985e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f985e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1c08b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1c08b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f985e-105">Especifica quando um fuso horário muda do horário padrão para o horário de verão.</span><span class="sxs-lookup"><span data-stu-id="f985e-105">Specifies when a time zone switches from standard time to daylight saving time.</span></span>
+<span data-ttu-id="1c08b-105">Especifica quando um fuso horário muda do horário padrão para o horário de verão.</span><span class="sxs-lookup"><span data-stu-id="1c08b-105">Specifies when a time zone switches from standard time to daylight saving time.</span></span>
 
-<span data-ttu-id="f985e-106">Por exemplo, se um fuso horário estiver especificado com as seguintes propriedades:</span><span class="sxs-lookup"><span data-stu-id="f985e-106">For example, if a time zone is specified with the following properties:</span></span>
+<span data-ttu-id="1c08b-106">Por exemplo, se um fuso horário estiver especificado com as seguintes propriedades:</span><span class="sxs-lookup"><span data-stu-id="1c08b-106">For example, if a time zone is specified with the following properties:</span></span>
 
-- <span data-ttu-id="f985e-107">**bias** como 300</span><span class="sxs-lookup"><span data-stu-id="f985e-107">**bias** is 300</span></span>
-- <span data-ttu-id="f985e-108">**daylightBias** como -100</span><span class="sxs-lookup"><span data-stu-id="f985e-108">**daylightBias** is -100</span></span>
-- <span data-ttu-id="f985e-109">**dayOccurrence** como 4</span><span class="sxs-lookup"><span data-stu-id="f985e-109">**dayOccurrence** is 4</span></span>
-- <span data-ttu-id="f985e-110">**dayOfWeek** como "domingo"</span><span class="sxs-lookup"><span data-stu-id="f985e-110">**dayOfWeek** is "sunday"</span></span>
-- <span data-ttu-id="f985e-111">**month** como 5</span><span class="sxs-lookup"><span data-stu-id="f985e-111">**month** is 5</span></span>
-- <span data-ttu-id="f985e-112">**time** como 02:00:00 _**year** como 0, significa que a hora durante o horário de verão é +300-100=200 minutos adiantada ao UTC.</span><span class="sxs-lookup"><span data-stu-id="f985e-112">**time** is 02:00:00 _ **year** is 0 That means the time during daylight saving time is +300-100=200 minutes ahead of UTC.</span></span> <span data-ttu-id="f985e-113">A transição do fuso horário de horário de verão para o horário padrão ocorre às 2 da manhã no quarto domingo de maio, todos os anos.</span><span class="sxs-lookup"><span data-stu-id="f985e-113">The time zone transition from daylight saving time to standard occurs at 2 AM on the fourth Sunday of May, every year.</span></span>
+- <span data-ttu-id="1c08b-107">**bias** como 300</span><span class="sxs-lookup"><span data-stu-id="1c08b-107">**bias** is 300</span></span>
+- <span data-ttu-id="1c08b-108">**daylightBias** como -100</span><span class="sxs-lookup"><span data-stu-id="1c08b-108">**daylightBias** is -100</span></span>
+- <span data-ttu-id="1c08b-109">**dayOccurrence** como 4</span><span class="sxs-lookup"><span data-stu-id="1c08b-109">**dayOccurrence** is 4</span></span>
+- <span data-ttu-id="1c08b-110">**dayOfWeek** como "domingo"</span><span class="sxs-lookup"><span data-stu-id="1c08b-110">**dayOfWeek** is "sunday"</span></span>
+- <span data-ttu-id="1c08b-111">**month** como 5</span><span class="sxs-lookup"><span data-stu-id="1c08b-111">**month** is 5</span></span>
+- <span data-ttu-id="1c08b-112">**time** como 02:00:00 _**year** como 0, significa que a hora durante o horário de verão é +300-100=200 minutos adiantada ao UTC.</span><span class="sxs-lookup"><span data-stu-id="1c08b-112">**time** is 02:00:00 _ **year** is 0 That means the time during daylight saving time is +300-100=200 minutes ahead of UTC.</span></span> <span data-ttu-id="1c08b-113">A transição do fuso horário de horário de verão para o horário padrão ocorre às 2 da manhã no quarto domingo de maio, todos os anos.</span><span class="sxs-lookup"><span data-stu-id="1c08b-113">The time zone transition from daylight saving time to standard occurs at 2 AM on the fourth Sunday of May, every year.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="f985e-114">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f985e-114">Properties</span></span>
-| <span data-ttu-id="f985e-115">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f985e-115">Property</span></span>     | <span data-ttu-id="f985e-116">Tipo</span><span class="sxs-lookup"><span data-stu-id="f985e-116">Type</span></span>   |<span data-ttu-id="f985e-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="f985e-117">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="1c08b-114">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1c08b-114">Properties</span></span>
+| <span data-ttu-id="1c08b-115">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1c08b-115">Property</span></span>     | <span data-ttu-id="1c08b-116">Tipo</span><span class="sxs-lookup"><span data-stu-id="1c08b-116">Type</span></span>   |<span data-ttu-id="1c08b-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="1c08b-117">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="f985e-118">daylightBias</span><span class="sxs-lookup"><span data-stu-id="f985e-118">daylightBias</span></span> | <span data-ttu-id="f985e-119">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="f985e-119">Edm.Int32</span></span> | <span data-ttu-id="f985e-120">A diferença de horário em relação ao UTC (Tempo Universal Coordenado) para o horário de verão.</span><span class="sxs-lookup"><span data-stu-id="f985e-120">The time offset from Coordinated Universal Time (UTC) for daylight saving time.</span></span> <span data-ttu-id="f985e-121">Este valor está em minutos.</span><span class="sxs-lookup"><span data-stu-id="f985e-121">This value is in minutes.</span></span>  |
-| <span data-ttu-id="f985e-122">dayOccurrence</span><span class="sxs-lookup"><span data-stu-id="f985e-122">dayOccurrence</span></span> | <span data-ttu-id="f985e-123">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="f985e-123">Edm.Int32</span></span> | <span data-ttu-id="f985e-124">Representa a enésima ocorrência do dia da semana em que a transição do horário padrão para o horário de verão acontece.</span><span class="sxs-lookup"><span data-stu-id="f985e-124">Represents the nth occurrence of the day of week that the transition from standard time to daylight saving time occurs.</span></span> |
-| <span data-ttu-id="f985e-125">dayOfWeek</span><span class="sxs-lookup"><span data-stu-id="f985e-125">dayOfWeek</span></span> | <span data-ttu-id="f985e-126">string</span><span class="sxs-lookup"><span data-stu-id="f985e-126">string</span></span> | <span data-ttu-id="f985e-127">Representa o dia da semana em que a transição do horário padrão para o horário de verão acontece.</span><span class="sxs-lookup"><span data-stu-id="f985e-127">Represents the day of the week when the transition from standard time to daylight saving time occurs.</span></span> |
-| <span data-ttu-id="f985e-128">month</span><span class="sxs-lookup"><span data-stu-id="f985e-128">month</span></span> | <span data-ttu-id="f985e-129">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="f985e-129">Edm.Int32</span></span> | <span data-ttu-id="f985e-130">Representa o mês do ano em que a transição do horário padrão para o horário de verão acontece.</span><span class="sxs-lookup"><span data-stu-id="f985e-130">Represents the month of the year when the transition from standard time to daylight saving time occurs.</span></span> |
-| <span data-ttu-id="f985e-131">time</span><span class="sxs-lookup"><span data-stu-id="f985e-131">time</span></span> | <span data-ttu-id="f985e-132">Edm.TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="f985e-132">Edm.TimeOfDay</span></span> | <span data-ttu-id="f985e-133">Representa a hora do dia em que a transição do horário padrão para o horário de verão acontece.</span><span class="sxs-lookup"><span data-stu-id="f985e-133">Represents the time of day when the transition from standard time to daylight saving time occurs.</span></span> |
-| <span data-ttu-id="f985e-134">year</span><span class="sxs-lookup"><span data-stu-id="f985e-134">year</span></span> | <span data-ttu-id="f985e-135">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="f985e-135">Edm.Int32</span></span> | <span data-ttu-id="f985e-136">Representa com que frequência, em anos, a transição do horário padrão para o horário de verão acontece.</span><span class="sxs-lookup"><span data-stu-id="f985e-136">Represents how frequently in terms of years the change from standard time to daylight saving time occurs.</span></span> <span data-ttu-id="f985e-137">Por exemplo, um valor 0 significa todos os anos.</span><span class="sxs-lookup"><span data-stu-id="f985e-137">For example, a value of 0 means every year.</span></span>|
+| <span data-ttu-id="1c08b-118">daylightBias</span><span class="sxs-lookup"><span data-stu-id="1c08b-118">daylightBias</span></span> | <span data-ttu-id="1c08b-119">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="1c08b-119">Edm.Int32</span></span> | <span data-ttu-id="1c08b-120">A diferença de horário em relação ao UTC (Tempo Universal Coordenado) para o horário de verão.</span><span class="sxs-lookup"><span data-stu-id="1c08b-120">The time offset from Coordinated Universal Time (UTC) for daylight saving time.</span></span> <span data-ttu-id="1c08b-121">Este valor está em minutos.</span><span class="sxs-lookup"><span data-stu-id="1c08b-121">This value is in minutes.</span></span>  |
+| <span data-ttu-id="1c08b-122">dayOccurrence</span><span class="sxs-lookup"><span data-stu-id="1c08b-122">dayOccurrence</span></span> | <span data-ttu-id="1c08b-123">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="1c08b-123">Edm.Int32</span></span> | <span data-ttu-id="1c08b-124">Representa a enésima ocorrência do dia da semana em que a transição do horário padrão para o horário de verão acontece.</span><span class="sxs-lookup"><span data-stu-id="1c08b-124">Represents the nth occurrence of the day of week that the transition from standard time to daylight saving time occurs.</span></span> |
+| <span data-ttu-id="1c08b-125">dayOfWeek</span><span class="sxs-lookup"><span data-stu-id="1c08b-125">dayOfWeek</span></span> | <span data-ttu-id="1c08b-126">string</span><span class="sxs-lookup"><span data-stu-id="1c08b-126">string</span></span> | <span data-ttu-id="1c08b-127">Representa o dia da semana em que a transição do horário padrão para o horário de verão acontece.</span><span class="sxs-lookup"><span data-stu-id="1c08b-127">Represents the day of the week when the transition from standard time to daylight saving time occurs.</span></span> |
+| <span data-ttu-id="1c08b-128">month</span><span class="sxs-lookup"><span data-stu-id="1c08b-128">month</span></span> | <span data-ttu-id="1c08b-129">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="1c08b-129">Edm.Int32</span></span> | <span data-ttu-id="1c08b-130">Representa o mês do ano em que a transição do horário padrão para o horário de verão acontece.</span><span class="sxs-lookup"><span data-stu-id="1c08b-130">Represents the month of the year when the transition from standard time to daylight saving time occurs.</span></span> |
+| <span data-ttu-id="1c08b-131">time</span><span class="sxs-lookup"><span data-stu-id="1c08b-131">time</span></span> | <span data-ttu-id="1c08b-132">Edm.TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="1c08b-132">Edm.TimeOfDay</span></span> | <span data-ttu-id="1c08b-133">Representa a hora do dia em que a transição do horário padrão para o horário de verão acontece.</span><span class="sxs-lookup"><span data-stu-id="1c08b-133">Represents the time of day when the transition from standard time to daylight saving time occurs.</span></span> |
+| <span data-ttu-id="1c08b-134">year</span><span class="sxs-lookup"><span data-stu-id="1c08b-134">year</span></span> | <span data-ttu-id="1c08b-135">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="1c08b-135">Edm.Int32</span></span> | <span data-ttu-id="1c08b-136">Representa com que frequência, em anos, a transição do horário padrão para o horário de verão acontece.</span><span class="sxs-lookup"><span data-stu-id="1c08b-136">Represents how frequently in terms of years the change from standard time to daylight saving time occurs.</span></span> <span data-ttu-id="1c08b-137">Por exemplo, um valor 0 significa todos os anos.</span><span class="sxs-lookup"><span data-stu-id="1c08b-137">For example, a value of 0 means every year.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="f985e-138">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f985e-138">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1c08b-138">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1c08b-138">JSON representation</span></span>
 
-<span data-ttu-id="f985e-139">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f985e-139">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1c08b-139">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1c08b-139">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -77,3 +77,5 @@ ms.locfileid: "46809842"
   "suppressions": []
 }
 -->
+
+
