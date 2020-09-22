@@ -5,56 +5,56 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 239a479bb8540ebfe7f6ffabf270d0c41ebc5b12
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: aa18bac40b4fe7cc7b509e2948c3134ccaa77386
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427120"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001432"
 ---
-# <a name="list-used"></a><span data-ttu-id="04194-103">Listar usados</span><span class="sxs-lookup"><span data-stu-id="04194-103">List used</span></span>
+# <a name="list-used"></a><span data-ttu-id="8f3d8-103">Listar usados</span><span class="sxs-lookup"><span data-stu-id="8f3d8-103">List used</span></span>
 
-<span data-ttu-id="04194-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="04194-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8f3d8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8f3d8-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="04194-105">Calcular e listar os documentos que um usuário tenha exibido ou modificado.</span><span class="sxs-lookup"><span data-stu-id="04194-105">Calculate and list the documents that a user has viewed or modified.</span></span> 
+<span data-ttu-id="8f3d8-105">Calcular e listar os documentos que um usuário tenha exibido ou modificado.</span><span class="sxs-lookup"><span data-stu-id="8f3d8-105">Calculate and list the documents that a user has viewed or modified.</span></span> 
 
-<span data-ttu-id="04194-106">Para o usuário conectado:</span><span class="sxs-lookup"><span data-stu-id="04194-106">For the signed-in user:</span></span>
-- <span data-ttu-id="04194-107">Este método inclui documentos que o usuário modificou; Confira o [exemplo 1](#example-1-return-documents-that-user-has-modified).</span><span class="sxs-lookup"><span data-stu-id="04194-107">This method includes documents that the user has modified; see [example 1](#example-1-return-documents-that-user-has-modified).</span></span> 
-- <span data-ttu-id="04194-108">O uso de um `$orderby` parâmetro de consulta na propriedade **lastAccessedDateTime** retorna os documentos exibidos mais recentemente que o usuário pode ou não tenha modificado; Veja o [exemplo 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).</span><span class="sxs-lookup"><span data-stu-id="04194-108">Using an `$orderby` query parameter on the **lastAccessedDateTime** property returns the most recently viewed documents that the user might or might not have modified; see [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).</span></span>
+<span data-ttu-id="8f3d8-106">Para o usuário conectado:</span><span class="sxs-lookup"><span data-stu-id="8f3d8-106">For the signed-in user:</span></span>
+- <span data-ttu-id="8f3d8-107">Este método inclui documentos que o usuário modificou; Confira o [exemplo 1](#example-1-return-documents-that-user-has-modified).</span><span class="sxs-lookup"><span data-stu-id="8f3d8-107">This method includes documents that the user has modified; see [example 1](#example-1-return-documents-that-user-has-modified).</span></span> 
+- <span data-ttu-id="8f3d8-108">O uso de um `$orderby` parâmetro de consulta na propriedade **lastAccessedDateTime** retorna os documentos exibidos mais recentemente que o usuário pode ou não tenha modificado; Veja o [exemplo 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).</span><span class="sxs-lookup"><span data-stu-id="8f3d8-108">Using an `$orderby` query parameter on the **lastAccessedDateTime** property returns the most recently viewed documents that the user might or might not have modified; see [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).</span></span>
 
-<span data-ttu-id="04194-109">Para outros usuários, esse método inclui apenas os documentos que o usuário modificou.</span><span class="sxs-lookup"><span data-stu-id="04194-109">For other users, this method includes only documents that the user has modified.</span></span>
+<span data-ttu-id="8f3d8-109">Para outros usuários, esse método inclui apenas os documentos que o usuário modificou.</span><span class="sxs-lookup"><span data-stu-id="8f3d8-109">For other users, this method includes only documents that the user has modified.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="04194-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="04194-110">Permissions</span></span>
-<span data-ttu-id="04194-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="04194-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8f3d8-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="8f3d8-110">Permissions</span></span>
+<span data-ttu-id="8f3d8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8f3d8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="04194-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="04194-113">Permission type</span></span>      | <span data-ttu-id="04194-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="04194-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8f3d8-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8f3d8-113">Permission type</span></span>      | <span data-ttu-id="8f3d8-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8f3d8-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="04194-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="04194-115">Delegated (work or school account)</span></span> | <span data-ttu-id="04194-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04194-116">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="04194-117">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="04194-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="04194-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="04194-118">Not supported.</span></span>    |
-|<span data-ttu-id="04194-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="04194-119">Application</span></span> | <span data-ttu-id="04194-120">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04194-120">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="8f3d8-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8f3d8-115">Delegated (work or school account)</span></span> | <span data-ttu-id="8f3d8-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8f3d8-116">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8f3d8-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8f3d8-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8f3d8-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8f3d8-118">Not supported.</span></span>    |
+|<span data-ttu-id="8f3d8-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8f3d8-119">Application</span></span> | <span data-ttu-id="8f3d8-120">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8f3d8-120">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="04194-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="04194-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8f3d8-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8f3d8-121">HTTP request</span></span>
 
-- <span data-ttu-id="04194-122">Obter uma lista de documentos que o usuário conectado modificou:</span><span class="sxs-lookup"><span data-stu-id="04194-122">Get a list of documents that the signed-in user has modified:</span></span>
+- <span data-ttu-id="8f3d8-122">Obter uma lista de documentos que o usuário conectado modificou:</span><span class="sxs-lookup"><span data-stu-id="8f3d8-122">Get a list of documents that the signed-in user has modified:</span></span>
   <!-- { "blockType": "ignored" } -->
   
   ```http
   GET /me/insights/used
   ```
 
-- <span data-ttu-id="04194-123">Obtenha uma lista de documentos que o usuário especificado modificou:</span><span class="sxs-lookup"><span data-stu-id="04194-123">Get a list of documents that the specified user has modified:</span></span>
+- <span data-ttu-id="8f3d8-123">Obtenha uma lista de documentos que o usuário especificado modificou:</span><span class="sxs-lookup"><span data-stu-id="8f3d8-123">Get a list of documents that the specified user has modified:</span></span>
   <!-- { "blockType": "ignored" } -->
   
   ```http
   GET /users/{id | userPrincipalName}/insights/used
   ```
-  ><span data-ttu-id="04194-124">**Observação**: a solicitação de documentos **usados** por outro usuário retorna resultados classificados por **lastModifiedDateTime**.</span><span class="sxs-lookup"><span data-stu-id="04194-124">**Note**: Requesting another user's **used** documents returns results sorted by **lastModifiedDateTime**.</span></span> <span data-ttu-id="04194-125">**lastAccessedDateTime** é então definido como **lastModifiedDateTime**.</span><span class="sxs-lookup"><span data-stu-id="04194-125">**lastAccessedDateTime** is then set to **lastModifiedDateTime**.</span></span>
+  ><span data-ttu-id="8f3d8-124">**Observação**: a solicitação de documentos **usados** por outro usuário retorna resultados classificados por **lastModifiedDateTime**.</span><span class="sxs-lookup"><span data-stu-id="8f3d8-124">**Note**: Requesting another user's **used** documents returns results sorted by **lastModifiedDateTime**.</span></span> <span data-ttu-id="8f3d8-125">**lastAccessedDateTime** é então definido como **lastModifiedDateTime**.</span><span class="sxs-lookup"><span data-stu-id="8f3d8-125">**lastAccessedDateTime** is then set to **lastModifiedDateTime**.</span></span>
 
 
-- <span data-ttu-id="04194-126">Expanda o recurso mencionado por uma percepção **usada** :</span><span class="sxs-lookup"><span data-stu-id="04194-126">Expand the resource referenced by a **used** insight:</span></span>
+- <span data-ttu-id="8f3d8-126">Expanda o recurso mencionado por uma percepção **usada** :</span><span class="sxs-lookup"><span data-stu-id="8f3d8-126">Expand the resource referenced by a **used** insight:</span></span>
   <!-- { "blockType": "ignored" } -->
   
   ```http
@@ -63,41 +63,41 @@ ms.locfileid: "45427120"
   ```
 
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="04194-127">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="04194-127">Optional query parameters</span></span>
-<span data-ttu-id="04194-128">Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta:</span><span class="sxs-lookup"><span data-stu-id="04194-128">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="8f3d8-127">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="8f3d8-127">Optional query parameters</span></span>
+<span data-ttu-id="8f3d8-128">Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta:</span><span class="sxs-lookup"><span data-stu-id="8f3d8-128">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
 
-- <span data-ttu-id="04194-129">Use o `$filter` parâmetro de consulta para filtrar itens usados.</span><span class="sxs-lookup"><span data-stu-id="04194-129">Use the `$filter` query parameter to filter used items.</span></span> <span data-ttu-id="04194-130">Por exemplo, com base no **tipo**:</span><span class="sxs-lookup"><span data-stu-id="04194-130">For example, based on **type**:</span></span>
+- <span data-ttu-id="8f3d8-129">Use o `$filter` parâmetro de consulta para filtrar itens usados.</span><span class="sxs-lookup"><span data-stu-id="8f3d8-129">Use the `$filter` query parameter to filter used items.</span></span> <span data-ttu-id="8f3d8-130">Por exemplo, com base no **tipo**:</span><span class="sxs-lookup"><span data-stu-id="8f3d8-130">For example, based on **type**:</span></span>
 
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-- <span data-ttu-id="04194-131">Use `$filter` para filtrar itens usados com base no **ContainerType**:</span><span class="sxs-lookup"><span data-stu-id="04194-131">Use `$filter` to filter used items based on  **containerType**:</span></span>
+- <span data-ttu-id="8f3d8-131">Use `$filter` para filtrar itens usados com base no  **ContainerType**:</span><span class="sxs-lookup"><span data-stu-id="8f3d8-131">Use `$filter` to filter used items based on  **containerType**:</span></span>
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-  <span data-ttu-id="04194-132">Confira os tipos e tipos de contêiner disponíveis que você pode filtrar no [resourceVisualization](../resources/insights-resourcevisualization.md).</span><span class="sxs-lookup"><span data-stu-id="04194-132">See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).</span></span>
+  <span data-ttu-id="8f3d8-132">Confira os tipos e tipos de contêiner disponíveis que você pode filtrar no [resourceVisualization](../resources/insights-resourcevisualization.md).</span><span class="sxs-lookup"><span data-stu-id="8f3d8-132">See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).</span></span>
 
-- <span data-ttu-id="04194-133">Use o `$orderBy` parâmetro de consulta para classificar documentos que foram exibidos pela última vez ou modificados _pelo usuário conectado_, com base na propriedade **lastAccessedDateTime** :</span><span class="sxs-lookup"><span data-stu-id="04194-133">Use the `$orderBy` query parameter to sort documents last viewed or modified _by the signed-in user_, based on the **lastAccessedDateTime** property:</span></span>
+- <span data-ttu-id="8f3d8-133">Use o `$orderBy` parâmetro de consulta para classificar documentos que foram exibidos pela última vez ou modificados _pelo usuário conectado_, com base na propriedade **lastAccessedDateTime** :</span><span class="sxs-lookup"><span data-stu-id="8f3d8-133">Use the `$orderBy` query parameter to sort documents last viewed or modified _by the signed-in user_, based on the **lastAccessedDateTime** property:</span></span>
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 
-  ><span data-ttu-id="04194-134">**Observação**: Use esta opção _de consulta somente para o usuário conectado_.</span><span class="sxs-lookup"><span data-stu-id="04194-134">**Note**: Use this query option _only for the signed-in user_.</span></span> <span data-ttu-id="04194-135">Você não pode usar essa API para obter documentos exibidos ou modificados por outro usuário.</span><span class="sxs-lookup"><span data-stu-id="04194-135">You cannot use this API to get documents viewed or modified by another user.</span></span> <span data-ttu-id="04194-136">Confira o [exemplo 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).</span><span class="sxs-lookup"><span data-stu-id="04194-136">See [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).</span></span>
+  ><span data-ttu-id="8f3d8-134">**Observação**: Use esta opção _de consulta somente para o usuário conectado_.</span><span class="sxs-lookup"><span data-stu-id="8f3d8-134">**Note**: Use this query option _only for the signed-in user_.</span></span> <span data-ttu-id="8f3d8-135">Você não pode usar essa API para obter documentos exibidos ou modificados por outro usuário.</span><span class="sxs-lookup"><span data-stu-id="8f3d8-135">You cannot use this API to get documents viewed or modified by another user.</span></span> <span data-ttu-id="8f3d8-136">Confira o [exemplo 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).</span><span class="sxs-lookup"><span data-stu-id="8f3d8-136">See [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).</span></span>
 
 
-## <a name="request-headers"></a><span data-ttu-id="04194-137">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="04194-137">Request headers</span></span>
-| <span data-ttu-id="04194-138">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="04194-138">Header</span></span>       |  <span data-ttu-id="04194-139">Valor</span><span class="sxs-lookup"><span data-stu-id="04194-139">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8f3d8-137">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8f3d8-137">Request headers</span></span>
+| <span data-ttu-id="8f3d8-138">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="8f3d8-138">Header</span></span>       |  <span data-ttu-id="8f3d8-139">Valor</span><span class="sxs-lookup"><span data-stu-id="8f3d8-139">Value</span></span>|
 |:-------------|:------|
-| <span data-ttu-id="04194-140">Autorização</span><span class="sxs-lookup"><span data-stu-id="04194-140">Authorization</span></span>  | <span data-ttu-id="04194-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="04194-p105">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="04194-143">Aceitar</span><span class="sxs-lookup"><span data-stu-id="04194-143">Accept</span></span>  | <span data-ttu-id="04194-144">application/json</span><span class="sxs-lookup"><span data-stu-id="04194-144">application/json</span></span>|
+| <span data-ttu-id="8f3d8-140">Autorização</span><span class="sxs-lookup"><span data-stu-id="8f3d8-140">Authorization</span></span>  | <span data-ttu-id="8f3d8-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8f3d8-p105">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="8f3d8-143">Aceitar</span><span class="sxs-lookup"><span data-stu-id="8f3d8-143">Accept</span></span>  | <span data-ttu-id="8f3d8-144">application/json</span><span class="sxs-lookup"><span data-stu-id="8f3d8-144">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="04194-145">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="04194-145">Request body</span></span>
-<span data-ttu-id="04194-146">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="04194-146">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8f3d8-145">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8f3d8-145">Request body</span></span>
+<span data-ttu-id="8f3d8-146">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="8f3d8-146">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="04194-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="04194-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8f3d8-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="8f3d8-147">Response</span></span>
 
-<span data-ttu-id="04194-148">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma lista de itens [usados](../resources/insights-used.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="04194-148">If successful, this method returns a `200 OK` response code and a list of [used](../resources/insights-used.md) items in the response body.</span></span>
+<span data-ttu-id="8f3d8-148">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma lista de itens [usados](../resources/insights-used.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8f3d8-148">If successful, this method returns a `200 OK` response code and a list of [used](../resources/insights-used.md) items in the response body.</span></span>
 
-<span data-ttu-id="04194-149">Se as ideias de item do usuário de destino tiverem sido desabilitadas, este método retornará `403 Forbidden` e o seguinte erro:</span><span class="sxs-lookup"><span data-stu-id="04194-149">If item insights of targeted user have been disabled, this method returns `403 Forbidden` and the following error:</span></span>
+<span data-ttu-id="8f3d8-149">Se as ideias de item do usuário de destino tiverem sido desabilitadas, este método retornará `403 Forbidden` e o seguinte erro:</span><span class="sxs-lookup"><span data-stu-id="8f3d8-149">If item insights of targeted user have been disabled, this method returns `403 Forbidden` and the following error:</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```
@@ -112,15 +112,15 @@ ms.locfileid: "45427120"
   }
 }
 ```
-<span data-ttu-id="04194-150">Para obter mais detalhes, consulte [Customize insights Privacy](/graph/insights-customize-item-insights-privacy.md).</span><span class="sxs-lookup"><span data-stu-id="04194-150">For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy.md).</span></span> 
+<span data-ttu-id="8f3d8-150">Para obter mais detalhes, confira [personalizar política de informações](/graph/insights-customize-item-insights-privacy.md).</span><span class="sxs-lookup"><span data-stu-id="8f3d8-150">For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy.md).</span></span> 
 
-## <a name="example"></a><span data-ttu-id="04194-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="04194-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8f3d8-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8f3d8-151">Example</span></span>
 
-### <a name="example-1-return-documents-that-user-has-modified"></a><span data-ttu-id="04194-152">Exemplo 1: retornar documentos modificados pelo usuário</span><span class="sxs-lookup"><span data-stu-id="04194-152">Example 1: Return documents that user has modified</span></span>
+### <a name="example-1-return-documents-that-user-has-modified"></a><span data-ttu-id="8f3d8-152">Exemplo 1: retornar documentos modificados pelo usuário</span><span class="sxs-lookup"><span data-stu-id="8f3d8-152">Example 1: Return documents that user has modified</span></span>
 
-#### <a name="request"></a><span data-ttu-id="04194-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="04194-153">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="8f3d8-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8f3d8-153">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="04194-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="04194-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8f3d8-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="8f3d8-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mymodifieddocuments"
@@ -129,24 +129,24 @@ ms.locfileid: "45427120"
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/insights/used
 ```
-# <a name="c"></a>[<span data-ttu-id="04194-155">C#</span><span class="sxs-lookup"><span data-stu-id="04194-155">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8f3d8-155">C#</span><span class="sxs-lookup"><span data-stu-id="8f3d8-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mymodifieddocuments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="04194-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="04194-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8f3d8-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8f3d8-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mymodifieddocuments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="04194-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="04194-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8f3d8-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8f3d8-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mymodifieddocuments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="04194-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="04194-158">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="8f3d8-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="8f3d8-158">Response</span></span>
 
-><span data-ttu-id="04194-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="04194-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span> 
+><span data-ttu-id="8f3d8-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8f3d8-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -230,11 +230,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified"></a><span data-ttu-id="04194-161">Exemplo 2: retornar os documentos exibidos mais recentemente que o usuário conectado pode ou não tenha modificado</span><span class="sxs-lookup"><span data-stu-id="04194-161">Example 2: Return the most recently viewed documents that the signed-in user might or might not have modified</span></span> 
+### <a name="example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified"></a><span data-ttu-id="8f3d8-161">Exemplo 2: retornar os documentos exibidos mais recentemente que o usuário conectado pode ou não tenha modificado</span><span class="sxs-lookup"><span data-stu-id="8f3d8-161">Example 2: Return the most recently viewed documents that the signed-in user might or might not have modified</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="04194-162">Solicitação</span><span class="sxs-lookup"><span data-stu-id="04194-162">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="8f3d8-162">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8f3d8-162">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="04194-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="04194-163">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8f3d8-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="8f3d8-163">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mymodifiedandvieweddocuments"
@@ -243,22 +243,22 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc
 ```
-# <a name="c"></a>[<span data-ttu-id="04194-164">C#</span><span class="sxs-lookup"><span data-stu-id="04194-164">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8f3d8-164">C#</span><span class="sxs-lookup"><span data-stu-id="8f3d8-164">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mymodifiedandvieweddocuments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="04194-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="04194-165">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8f3d8-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8f3d8-165">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mymodifiedandvieweddocuments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="04194-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="04194-166">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8f3d8-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8f3d8-166">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mymodifiedandvieweddocuments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="04194-167">Resposta</span><span class="sxs-lookup"><span data-stu-id="04194-167">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="8f3d8-167">Resposta</span><span class="sxs-lookup"><span data-stu-id="8f3d8-167">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -336,3 +336,5 @@ Content-type: application/json
     ]
 }
 ```
+
+
