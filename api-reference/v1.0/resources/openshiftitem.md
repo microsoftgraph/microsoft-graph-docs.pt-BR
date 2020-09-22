@@ -5,28 +5,28 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2fb690d06a2ca20fe8c4c50d41a06bc2d247ef1f
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: d3e68f5cb558b67f92ed4107e8fb947cb7c300ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154974"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028242"
 ---
-# <a name="openshiftitem-resource-type"></a><span data-ttu-id="c06fc-103">tipo de recurso openShiftItem</span><span class="sxs-lookup"><span data-stu-id="c06fc-103">openShiftItem resource type</span></span>
+# <a name="openshiftitem-resource-type"></a><span data-ttu-id="16f82-103">tipo de recurso openShiftItem</span><span class="sxs-lookup"><span data-stu-id="16f82-103">openShiftItem resource type</span></span>
 
-<span data-ttu-id="c06fc-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c06fc-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="16f82-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="16f82-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c06fc-105">Representa uma única contagem de um [openShift](../resources/openshift.md).</span><span class="sxs-lookup"><span data-stu-id="c06fc-105">Represents a single count of an [openShift](../resources/openshift.md).</span></span>
+<span data-ttu-id="16f82-105">Representa uma única contagem de um [openShift](../resources/openshift.md).</span><span class="sxs-lookup"><span data-stu-id="16f82-105">Represents a single count of an [openShift](../resources/openshift.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c06fc-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c06fc-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="16f82-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="16f82-106">Properties</span></span>
 
-| <span data-ttu-id="c06fc-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c06fc-107">Property</span></span>     | <span data-ttu-id="c06fc-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="c06fc-108">Type</span></span>        | <span data-ttu-id="c06fc-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="c06fc-109">Description</span></span> |
+| <span data-ttu-id="16f82-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="16f82-107">Property</span></span>     | <span data-ttu-id="16f82-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="16f82-108">Type</span></span>        | <span data-ttu-id="16f82-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="16f82-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="c06fc-110">openSlotCount</span><span class="sxs-lookup"><span data-stu-id="c06fc-110">openSlotCount</span></span>|<span data-ttu-id="c06fc-111">Int32</span><span class="sxs-lookup"><span data-stu-id="c06fc-111">Int32</span></span>| <span data-ttu-id="c06fc-112">Contagem do número de Slots para o turno aberto especificado.</span><span class="sxs-lookup"><span data-stu-id="c06fc-112">Count of the number of slots for the given open shift.</span></span>|
+|<span data-ttu-id="16f82-110">openSlotCount</span><span class="sxs-lookup"><span data-stu-id="16f82-110">openSlotCount</span></span>|<span data-ttu-id="16f82-111">Int32</span><span class="sxs-lookup"><span data-stu-id="16f82-111">Int32</span></span>| <span data-ttu-id="16f82-112">Contagem do número de Slots para o turno aberto especificado.</span><span class="sxs-lookup"><span data-stu-id="16f82-112">Count of the number of slots for the given open shift.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="c06fc-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c06fc-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="16f82-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="16f82-113">JSON representation</span></span>
 
-<span data-ttu-id="c06fc-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c06fc-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="16f82-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="16f82-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -52,3 +52,4 @@ ms.locfileid: "44154974"
   "section": "documentation",
   "tocPath": ""
 }-->
+
