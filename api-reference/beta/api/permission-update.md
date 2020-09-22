@@ -6,34 +6,34 @@ title: Alterar permissões de compartilhamento
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 3c5d0f45db2cf73c53adfd697840c2eb55c4c8c6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 397894f75203d58782a40e20d236b7cc6478eb46
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455941"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040305"
 ---
-# <a name="update-sharing-permission"></a><span data-ttu-id="5548c-103">Atualizar a permissão de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="5548c-103">Update sharing permission</span></span>
+# <a name="update-sharing-permission"></a><span data-ttu-id="c07ac-103">Atualizar a permissão de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="c07ac-103">Update sharing permission</span></span>
 
-<span data-ttu-id="5548c-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="5548c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c07ac-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c07ac-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5548c-105">Atualiza as propriedades de permissão de compartilhamento pela correção do recurso de permissão.</span><span class="sxs-lookup"><span data-stu-id="5548c-105">Update the properties of a sharing permission by patching the permission resource.</span></span>
+<span data-ttu-id="c07ac-105">Atualiza as propriedades de permissão de compartilhamento pela correção do recurso de permissão.</span><span class="sxs-lookup"><span data-stu-id="c07ac-105">Update the properties of a sharing permission by patching the permission resource.</span></span>
 
-<span data-ttu-id="5548c-106">Somente a propriedade **roles** pode ser modificada dessa forma.</span><span class="sxs-lookup"><span data-stu-id="5548c-106">Only the **roles** property can be modified this way.</span></span>
+<span data-ttu-id="c07ac-106">Somente a propriedade **roles** pode ser modificada dessa forma.</span><span class="sxs-lookup"><span data-stu-id="c07ac-106">Only the **roles** property can be modified this way.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5548c-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="5548c-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c07ac-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="c07ac-107">Permissions</span></span>
 
-<span data-ttu-id="5548c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5548c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c07ac-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c07ac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5548c-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5548c-110">Permission type</span></span>      | <span data-ttu-id="5548c-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5548c-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c07ac-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c07ac-110">Permission type</span></span>      | <span data-ttu-id="c07ac-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c07ac-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5548c-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5548c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="5548c-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5548c-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="5548c-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5548c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5548c-115">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5548c-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="5548c-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5548c-116">Application</span></span> | <span data-ttu-id="5548c-117">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5548c-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="c07ac-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c07ac-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c07ac-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c07ac-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c07ac-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c07ac-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c07ac-115">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c07ac-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c07ac-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c07ac-116">Application</span></span> | <span data-ttu-id="c07ac-117">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c07ac-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5548c-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5548c-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c07ac-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c07ac-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,33 +45,33 @@ PATCH /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="5548c-119">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="5548c-119">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="c07ac-119">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="c07ac-119">Optional request headers</span></span>
 
-| <span data-ttu-id="5548c-120">Nome</span><span class="sxs-lookup"><span data-stu-id="5548c-120">Name</span></span>          | <span data-ttu-id="5548c-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="5548c-121">Type</span></span>   | <span data-ttu-id="5548c-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="5548c-122">Description</span></span>                                                                                                                                                                                       |
+| <span data-ttu-id="c07ac-120">Nome</span><span class="sxs-lookup"><span data-stu-id="c07ac-120">Name</span></span>          | <span data-ttu-id="c07ac-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="c07ac-121">Type</span></span>   | <span data-ttu-id="c07ac-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="c07ac-122">Description</span></span>                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="5548c-123">if-match</span><span class="sxs-lookup"><span data-stu-id="5548c-123">if-match</span></span>      | <span data-ttu-id="5548c-124">string</span><span class="sxs-lookup"><span data-stu-id="5548c-124">string</span></span> | <span data-ttu-id="5548c-125">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído.</span><span class="sxs-lookup"><span data-stu-id="5548c-125">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
+| <span data-ttu-id="c07ac-123">if-match</span><span class="sxs-lookup"><span data-stu-id="c07ac-123">if-match</span></span>      | <span data-ttu-id="c07ac-124">string</span><span class="sxs-lookup"><span data-stu-id="c07ac-124">string</span></span> | <span data-ttu-id="c07ac-125">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído.</span><span class="sxs-lookup"><span data-stu-id="c07ac-125">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5548c-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5548c-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c07ac-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c07ac-126">Request body</span></span>
 
-<span data-ttu-id="5548c-127">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="5548c-127">In the request body, supply the values for relevant fields that should be updated.</span></span>
+<span data-ttu-id="c07ac-127">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="c07ac-127">In the request body, supply the values for relevant fields that should be updated.</span></span>
 
-<span data-ttu-id="5548c-128">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="5548c-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span>
-<span data-ttu-id="5548c-129">Para obter um melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="5548c-129">For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="c07ac-128">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="c07ac-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span>
+<span data-ttu-id="c07ac-129">Para obter um melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="c07ac-129">For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="5548c-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5548c-130">Property</span></span>     | <span data-ttu-id="5548c-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="5548c-131">Type</span></span>   | <span data-ttu-id="5548c-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="5548c-132">Description</span></span>                   |
+| <span data-ttu-id="c07ac-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c07ac-130">Property</span></span>     | <span data-ttu-id="c07ac-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="c07ac-131">Type</span></span>   | <span data-ttu-id="c07ac-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="c07ac-132">Description</span></span>                   |
 |:-------------|:-------|:------------------------------|
-| <span data-ttu-id="5548c-133">**roles**</span><span class="sxs-lookup"><span data-stu-id="5548c-133">**roles**</span></span>    | <span data-ttu-id="5548c-134">String collection</span><span class="sxs-lookup"><span data-stu-id="5548c-134">String collection</span></span> | <span data-ttu-id="5548c-135">Uma matriz de tipos de permissão.</span><span class="sxs-lookup"><span data-stu-id="5548c-135">An array of permission types.</span></span> |
+| <span data-ttu-id="c07ac-133">**roles**</span><span class="sxs-lookup"><span data-stu-id="c07ac-133">**roles**</span></span>    | <span data-ttu-id="c07ac-134">Coleção String</span><span class="sxs-lookup"><span data-stu-id="c07ac-134">String collection</span></span> | <span data-ttu-id="c07ac-135">Uma matriz de tipos de permissão.</span><span class="sxs-lookup"><span data-stu-id="c07ac-135">An array of permission types.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="5548c-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="5548c-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c07ac-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="c07ac-136">Response</span></span>
 
-<span data-ttu-id="5548c-137">Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [permission](../resources/permission.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5548c-137">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
+<span data-ttu-id="c07ac-137">Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [permission](../resources/permission.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c07ac-137">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5548c-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5548c-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c07ac-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c07ac-138">Example</span></span>
 
-<span data-ttu-id="5548c-139">Aqui está um exemplo da solicitação que altera a função da permissão de compartilhamento para somente leitura.</span><span class="sxs-lookup"><span data-stu-id="5548c-139">Here is an example of the request that changes the role on the sharing permission to read-only.</span></span>
+<span data-ttu-id="c07ac-139">Aqui está um exemplo da solicitação que altera a função da permissão de compartilhamento para somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c07ac-139">Here is an example of the request that changes the role on the sharing permission to read-only.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="5548c-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="5548c-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c07ac-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="c07ac-140">HTTP</span></span>](#tab/http)
 <!-- {"blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite"} -->
 
 ```http
@@ -82,24 +82,24 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="5548c-141">C#</span><span class="sxs-lookup"><span data-stu-id="5548c-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c07ac-141">C#</span><span class="sxs-lookup"><span data-stu-id="c07ac-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5548c-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5548c-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c07ac-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c07ac-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5548c-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5548c-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c07ac-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c07ac-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-permission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="5548c-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="5548c-144">Response</span></span>
+### <a name="response"></a><span data-ttu-id="c07ac-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="c07ac-144">Response</span></span>
 
-<span data-ttu-id="5548c-145">Se for bem-sucedido, esse método retornará um recurso [Permission](../resources/permission.md) no corpo da resposta que representa o estado atualizado da permissão.</span><span class="sxs-lookup"><span data-stu-id="5548c-145">If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the permission.</span></span>
+<span data-ttu-id="c07ac-145">Se for bem-sucedido, esse método retornará um recurso [Permission](../resources/permission.md) no corpo da resposta que representa o estado atualizado da permissão.</span><span class="sxs-lookup"><span data-stu-id="c07ac-145">If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the permission.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true } -->
 
@@ -132,3 +132,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
