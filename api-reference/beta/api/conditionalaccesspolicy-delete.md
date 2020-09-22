@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd5420aff55a058d464f87414b9b7aa8199c30ae
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: a4746616c12d8687a3734a52b0ab7d9195d5fe54
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556118"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982469"
 ---
 # <a name="delete-conditionalaccesspolicy"></a>Excluir conditionalAccessPolicy
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

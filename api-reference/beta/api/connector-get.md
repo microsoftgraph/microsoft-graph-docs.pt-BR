@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a93e5c4cbafc541136ea91204b4c279ff612caf1
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: ab6f3d2a659e800daada319de7fa5fe3519bf2e0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681568"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982329"
 ---
 # <a name="get-connector"></a>Obter conector
 
@@ -110,3 +110,5 @@ Content-length: 124
   "suppressions": []
 }
 -->
+
+

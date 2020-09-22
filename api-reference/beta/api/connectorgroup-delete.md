@@ -1,18 +1,18 @@
 ---
-title: Excluir um ou de conector
+title: Excluir connectorGroup
 description: Excluir um conector.
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 12fe7ee89d5175b7a0be6721775c42c16a7eb51d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 5f014aee2b518066fad0c8e8e4768d98eba21518
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681463"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982308"
 ---
-# <a name="delete-connectorgroup"></a>Excluir um ou de conector
+# <a name="delete-connectorgroup"></a>Excluir connectorGroup
 
 Namespace: microsoft.graph
 
@@ -95,3 +95,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

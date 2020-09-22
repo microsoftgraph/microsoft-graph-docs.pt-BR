@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: enumPageType
-ms.openlocfilehash: 368e623d4740f16cf6b419358e4cde377551ee19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b9578977e5855f7b6d4b2fcebbcdda37c95eb7c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446916"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983995"
 ---
 # <a name="securitynetworkprotocol-enum-type"></a>tipo de enumeração securityNetworkProtocol
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Valores possíveis para o protocolo de rede.
 
@@ -45,3 +45,4 @@ Valores possíveis para o protocolo de rede.
 |roteador|1000| Protocolo Internet Packet Exchange.|
 |SPX|1256| Protocolo de troca de pacotes sequenciado.|
 |spxII|1257| Protocolo de troca de pacotes de versão 2.|
+

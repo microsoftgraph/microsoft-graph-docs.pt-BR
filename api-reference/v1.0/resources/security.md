@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 89db6a8efbf50042e5514758ee5a7ae3b7f88de6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c120bccd3defa4cb56966c8cee26119472b3876
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533761"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984002"
 ---
 # <a name="security-resource-type"></a>tipo de recurso de segurança
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 O recurso de segurança é o ponto de entrada para o modelo de objeto de segurança. Ele retorna um recurso de segurança singleton. Ele não contém propriedades utilizáveis.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -29,7 +29,7 @@ O recurso de segurança é o ponto de entrada para o modelo de objeto de seguran
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |alerts|conjunto [alerta](alert.md) | Somente leitura. Anulável.|
@@ -82,3 +82,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

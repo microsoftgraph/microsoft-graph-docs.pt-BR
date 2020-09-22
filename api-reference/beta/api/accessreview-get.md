@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b363c2f3be60bd782e6b0524e99b846b2ace9752
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 3af27792d66328085eb0a48a38935a33ec2b2607
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123534"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983589"
 ---
 # <a name="get-accessreview"></a>Obter accessReview
 
@@ -22,7 +22,7 @@ No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md)
 
 Para recuperar os revisores da revisão do Access, use a API [list accessReview reviewers](accessreview-listreviewers.md) . Para recuperar as decisões da revisão de acesso, use a API de [accessReview decisions](accessreview-listdecisions.md) ou a API [list My accessReview decisions](accessreview-listmydecisions.md) .
 
-Se esta for uma revisão de acesso recorrente, nenhuma decisão será associada à série de análise de acesso recorrente. Em vez disso, `instances` use a relação dessa série para recuperar uma coleção [accessReview](../resources/accessreview.md) das instâncias passadas, atual e futuras da revisão do Access. Cada instância passada e atual terá decisões.
+Se esta for uma revisão de acesso recorrente, nenhuma decisão será associada à série de análise de acesso recorrente. Em vez disso, use a `instances` relação dessa série para recuperar uma coleção [accessReview](../resources/accessreview.md) das instâncias passadas, atual e futuras da revisão do Access. Cada instância passada e atual terá decisões.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,7 +49,7 @@ GET /accessReviews/{reviewId}
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [accessReview](../resources/accessreview.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [accessReview](../resources/accessreview.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -141,3 +141,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

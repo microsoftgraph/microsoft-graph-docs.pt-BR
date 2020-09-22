@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4f218e01cf389668ea1f7b680c2c58af4afa9094
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: d935722cae0d6f0003f8fd2f793ad09f7ea3a160
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383489"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983848"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>Obter accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure ad pretitulation Management](../resources/entitlementmanagement-root.md), recupere as propriedades e os relacionamentos de um objeto [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) .
+No [Azure ad pretitulation Management](../resources/entitlementmanagement-root.md), recupere as propriedades e os relacionamentos de um objeto  [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar o pacote do Access que foi solicitado, inclua `$expand=accessPackage` na consulta. Para recuperar a atribuição resultante, inclua `$expand=accessPackageAssignment` na consulta.  Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar o pacote do Access que foi solicitado, inclua `$expand=accessPackage` na consulta. Para recuperar a atribuição resultante, inclua `$expand=accessPackageAssignment` na consulta.  Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -121,3 +121,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

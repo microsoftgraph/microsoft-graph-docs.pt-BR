@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a79db391761220f8bae7cfd3c81fe210ce8926e3
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 6f99adec18dd1da04a4e3eb87163e43f0fdd12e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681401"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982259"
 ---
 # <a name="list-applications-assigned-to-a-connectorgroup"></a>Listar aplicativos atribuídos a um conector
 
@@ -152,3 +152,5 @@ Content-length: 420
   "suppressions": []
 }
 -->
+
+

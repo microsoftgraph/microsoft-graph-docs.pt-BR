@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: eb447e7f97f443119cf8ff29b467787a64323149
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: ecfc4a6e1f000755bda95a4014ccf5efa1c8fc7c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863099"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982714"
 ---
 # <a name="get-chat"></a>Obter bate-papo
 
@@ -122,3 +122,5 @@ Content-length: 201
   ]
 }
 -->
+
+

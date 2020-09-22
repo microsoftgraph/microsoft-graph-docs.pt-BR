@@ -1,18 +1,18 @@
 ---
-title: Conectores de lista
+title: Listar conectores
 description: Recupere uma lista de objetos Connector.
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9fd8438f4f28d39422497e787817af91a5130172
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 203934258154f24a8506bcf5c086c67c70b06d07
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681526"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982315"
 ---
-# <a name="list-connectors"></a>Conectores de lista
+# <a name="list-connectors"></a>Listar conectores
 
 Namespace: microsoft.graph
 
@@ -113,3 +113,5 @@ Content-length: 169
   "suppressions": []
 }
 -->
+
+

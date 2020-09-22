@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3cb9632dfbf1f4058b266c8b6fb34929575a970f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c804ef236b6c29918ff58336cd17a99db07cefca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439132"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982863"
 ---
 # <a name="get-chartpoint"></a>Obter ChartPoint
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -105,3 +105,5 @@ Content-length: 20
   ]
 }
 -->
+
+

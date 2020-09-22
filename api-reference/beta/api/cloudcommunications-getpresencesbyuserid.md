@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: df74c29810898ac7d13e138836ba711d3b7d59e8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9480e85ad072d368b1afc768a859716865b78f75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438040"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982499"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça um objeto JSON com o seguinte parâmetro.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Presence](../resources/presence.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Presence](../resources/presence.md) no corpo da resposta.
 
 
 ## <a name="examples"></a>Exemplos
@@ -135,3 +135,5 @@ Content-Length: 1574
   ]
 }
 -->
+
+

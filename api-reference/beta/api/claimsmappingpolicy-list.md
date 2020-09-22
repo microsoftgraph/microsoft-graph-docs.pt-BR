@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4a257d9cdb1466bb28b3b511ce85a2776c288144
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: fb5a9682de6caeeca0746d6cf35409cd8ab5f049
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916624"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982546"
 ---
 # <a name="list-claimsmappingpolicies"></a>Listar claimsMappingPolicies
 
@@ -40,7 +40,7 @@ GET policies/claimsMappingPolicies
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte `$expand`a `$filter`, `$select` e `$top` a parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters). Ao usar `$expand` certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.
+Este método oferece suporte a `$expand` , `$filter` e a parâmetros de `$select` `$top` consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters). Ao usar `$expand` certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [claimsMappingPolicy](../resources/claimsmappingpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [claimsMappingPolicy](../resources/claimsmappingpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -126,3 +126,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

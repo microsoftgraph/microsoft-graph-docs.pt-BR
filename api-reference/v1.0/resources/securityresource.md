@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: ce0398ba134f7537420a99ccaed84f2ff209f883
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: Auto
+ms.openlocfilehash: d73ec9b3e5bf1da262bdd3f1846e24d0eececff3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682016"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983988"
 ---
 # <a name="securityresource-resource-type"></a>tipo de recurso securityResource
 
@@ -30,7 +30,7 @@ Representa os recursos relacionados a um alerta.
 |Membro|Valor|Descrição|
 |-|-|-|
 |atacada|1 |O recurso foi atacado no alerta.|
-|correspondente|duas|O recurso está relacionado ao alerta, embora não seja atacado diretamente.|
+|correspondente|2 |O recurso está relacionado ao alerta, embora não seja atacado diretamente.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -59,3 +59,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

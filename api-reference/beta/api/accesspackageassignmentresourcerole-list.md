@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fec1b34769d55c487df5a19f7c82c85c9638fddd
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 185e3cb8721e032ec05e6df37dd6ff36d8491cbb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383459"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983799"
 ---
 # <a name="list-accesspackageassignmentresourceroles"></a>Listar accessPackageAssignmentResourceRoles
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRol
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 Por exemplo, para recuperar apenas as funções de recurso de atribuição de pacote de acesso para um usuário específico, você pode incluir uma consulta com um filtro direcionando a ID de objeto desse usuário `?$expand=accessPackageSubject&$filter=accessPackageSubject/objectId+eq+'9b835e5c-bf18-4ad9-8556-9b1ea0019c6b'` .
 
@@ -127,3 +127,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

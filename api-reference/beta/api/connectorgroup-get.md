@@ -1,18 +1,18 @@
 ---
-title: Obter um conector de conexão
+title: Obter connectorGroup
 description: Recupere as propriedades de um objeto de conexão.
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7f6a069bf1b3baafadf46bd3b1ef53abcc84fc79
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 996ed42380d6e6fd9ce301c5a622411281ebb15a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681428"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982301"
 ---
-# <a name="get-connectorgroup"></a>Obter um conector de conexão
+# <a name="get-connectorgroup"></a>Obter connectorGroup
 
 Namespace: microsoft.graph
 
@@ -109,3 +109,5 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
+

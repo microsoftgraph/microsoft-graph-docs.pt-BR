@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0fe88741da75718b1509fd4f8015a37fcf7828bf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8f57c501ed2a4a47dbba163270feca8917fcce27
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446958"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984030"
 ---
 #  <a name="securescorecontrolstateupdate-resource-type"></a>tipo de recurso secureScoreControlStateUpdate
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Contém o histórico dos Estados de controle atualizados pelo usuário (os Estados de controle incluem padrão, ignorado, terceiros, revisado).
 
@@ -24,7 +24,7 @@ Contém o histórico dos Estados de controle atualizados pelo usuário (os Estad
 |:--|:--|:--|
 |assignedTo|String|Atribui o controle ao usuário que executará a ação. |
 |comment|String|Fornece comentários opcionais sobre o controle. |
-|state|Cadeia de caracteres|Estado do controle, que pode ser modificado por meio de um comando PATCH (por exemplo, ignorado, terceiros). |
+|state|String|Estado do controle, que pode ser modificado por meio de um comando PATCH (por exemplo, ignorado, terceiros). |
 |updatedBy|String|ID do usuário que atualizou o estado do locatário. |
 |updatedDateTime|DateTimeOffset|Hora em que o estado do controle foi atualizado. |
 
@@ -53,3 +53,4 @@ Contém o histórico dos Estados de controle atualizados pelo usuário (os Estad
   "section": "documentation",
   "tocPath": ""
 }-->
+

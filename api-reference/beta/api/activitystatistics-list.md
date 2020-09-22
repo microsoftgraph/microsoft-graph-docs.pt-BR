@@ -5,16 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 0b6c499bf86041e3f071977370e898b1471c3755
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2f5c48110316eceaa51733676725381b9a8a37d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441785"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983407"
 ---
 # <a name="list-activitystatistics"></a>Listar activityStatistics
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [activityStatistics](../resources/activitystatistics.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [activityStatistics](../resources/activitystatistics.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -177,3 +177,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

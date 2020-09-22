@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3dc2067284ee76c5d97216a933447b6675432b2e
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 77dd5ab4ee4830cf149b4a7b1bc74e15543fa395
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46657935"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982595"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Enviar chat em um canal ou em um chat
 
@@ -452,7 +452,7 @@ Este é um exemplo de solicitação.
 
 > **Observação:** O **TemporaryId** na coleção **HOSTEDCONTENTS** é uma ID aleatória, mas deve ser o mesmo nos elementos **Body** e **hostedContents** . (Observe o **TemporaryId** definido como **1** e a referência no corpo como `../hostedContents/1/$value` .)
 
-**contentbytes necessárias** deve ser definido como bytes codificados em Base64 de cadeia de caracteres. Você pode fazer isso em C# usando`Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentbytes necessárias** deve ser definido como bytes codificados em Base64 de cadeia de caracteres. Você pode fazer isso em C# usando `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
 <!-- {
   "blockType": "request",
@@ -537,7 +537,7 @@ Este é um exemplo de solicitação.
 
 > **Observação:** O **TemporaryId** na coleção **HOSTEDCONTENTS** é uma ID aleatória, mas deve ser o mesmo em todos os elementos do **conteúdo** (em **anexos**) e **hostedContents** . (Observe o **TemporaryId** definido como **1** e a referência no conteúdo como `../hostedContents/1/$value` .)
 
-**contentbytes necessárias** deve ser definido como bytes codificados em Base64 de cadeia de caracteres. Você pode fazer isso em C# usando`Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentbytes necessárias** deve ser definido como bytes codificados em Base64 de cadeia de caracteres. Você pode fazer isso em C# usando `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
 <!-- {
   "blockType": "request",
@@ -648,3 +648,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

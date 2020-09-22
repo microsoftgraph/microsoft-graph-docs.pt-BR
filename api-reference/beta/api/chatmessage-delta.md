@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: ee62c7caba73a9ab87b15c4a559f4376bcff7a2e
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
-ms.translationtype: MT
+ms.openlocfilehash: 402680161fd051935cdc2547ba00a24100086fbc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845362"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982658"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
@@ -43,9 +43,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------------------------------------|---------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) |Não suportado                                |
-|Aplicativo                            | ChannelMessage. Read. Group *, ChannelMessage. Read. All, Group. Read. All, Group. ReadWrite. All |
+|Aplicativo                            | ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
-> **Observação**: as permissões marcadas com * usam o [consentimento específico do recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
@@ -406,7 +406,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc
 
 #### <a name="response"></a>Resposta
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -461,3 +461,5 @@ Content-type: application/json
     ]
 }
 -->
+
+

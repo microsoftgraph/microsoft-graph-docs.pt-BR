@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 086bc79bf6462d569f85e4abf885a8c8538356ae
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 23b2d10a3c7c7222b697a487a8d461023069bc1e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806391"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983839"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Atualizar accessPackageAssignmentPolicy
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar um [
 |:---|:---|:---|
 |displayName|String|O nome de exibição da política.|
 |description|String|A descrição da política.|
-|exextend|Booliano|Indica se um usuário pode estender a duração da atribuição de pacote de acesso após a aprovação.|
+|exextend|Boolean|Indica se um usuário pode estender a duração da atribuição de pacote de acesso após a aprovação.|
 |durationInDays|Int32|O número de dias em que as atribuições dessa política duram até que tenham expirado.|
 |expirationDateTime|DateTimeOffset|A data de validade das atribuições criadas nesta política. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Quem pode solicitar esse pacote de acesso desta política.|
@@ -150,3 +150,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

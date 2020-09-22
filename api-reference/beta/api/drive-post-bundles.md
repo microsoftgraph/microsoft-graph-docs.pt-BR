@@ -6,12 +6,12 @@ description: Criar um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 58ac2e4d0e6cc4a4f587aec082b59fe4ab633037
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 4f00311003bd6342ee4fba0f2560077cb8640d7f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107266"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982196"
 ---
 # <a name="create-bundle"></a>Criar pacote
 
@@ -193,3 +193,5 @@ Se `My Day at the Beach 1` for executado, o número será incrementado novamente
   "section": "documentation",
   "tocPath": "Bundles/Create"
 } -->
+
+

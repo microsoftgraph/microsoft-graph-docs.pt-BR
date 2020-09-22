@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4f1075d4f9cdd2ac8f9635566fbccc3d49921d80
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 0b84de60dd46bc968abb5f6ccd5481bc07d77596
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916682"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982574"
 ---
 # <a name="delete-claimsmappingpolicy"></a>Excluir claimsMappingPolicy
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

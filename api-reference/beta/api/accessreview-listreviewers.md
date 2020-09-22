@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 268744f1e742cdfbbbb3a5be7727ff6c1ddceaa5
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: ff7b4eeb6cd7e4e71e5eb71ab19ebe3112e10c5b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123542"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983554"
 ---
 # <a name="list-accessreview-reviewers"></a>Listar revisores do accessReview
 
@@ -45,7 +45,7 @@ GET /accessReviews/{reviewId}/reviewers
 Nenhum corpo de solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200, OK` um código de resposta e uma matriz de objetos [UserIdentity](../resources/useridentity.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200, OK` código de resposta e uma matriz de objetos [UserIdentity](../resources/useridentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -116,3 +116,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7042210e9a3e3b6686e5c1bc4529a06d210a34d8
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: cfb41a948264ef846638395732fe61c3e51f5008
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123521"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983573"
 ---
 # <a name="list-accessreview-decisions"></a>Listar decisões accessReview
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , recupere as decisões de um objeto [accessReview](../resources/accessreview.md) .
 
-Observe que uma revisão de acesso recorrente não terá uma `decisions` relação.  Em vez disso, o chamador deve `instance` navegar na relação para `accessReview` localizar um objeto para uma instância atual ou passada da revisão do Access.
+Observe que uma revisão de acesso recorrente não terá uma `decisions` relação.  Em vez disso, o chamador deve navegar na `instance` relação para localizar um `accessReview` objeto para uma instância atual ou passada da revisão do Access.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,7 +47,7 @@ GET /accessReviews/{reviewId}/decisions
 Nenhum corpo de solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200, OK` um código de resposta e uma matriz de objetos [accessReviewDecision](../resources/accessreviewdecision.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200, OK` código de resposta e uma matriz de objetos [accessReviewDecision](../resources/accessreviewdecision.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -124,3 +124,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

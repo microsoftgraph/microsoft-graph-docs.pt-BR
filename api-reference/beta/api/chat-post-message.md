@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4d7660d1360216e4bc648d98e2899ead2aff0064
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 50ae9c5157d78eb55492dd4021d777149d4620c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630375"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982651"
 ---
 # <a name="send-chatmessage-in-a-chat"></a>Enviar chat em um chat
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Chat. Send, chat. ReadWrite |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Chat. Send, chat. ReadWrite |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -142,3 +142,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

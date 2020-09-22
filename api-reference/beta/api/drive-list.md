@@ -6,16 +6,16 @@ title: Listar unidades
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 06bf3b2b6daa9bb95b4767c876d8a7aa9893290d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 319a0b18952b13de329aabccc222f01bdbf02e18
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433220"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982231"
 ---
 # <a name="list-available-drives"></a>Listar as unidades disponíveis
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -200,3 +200,5 @@ Para listá-los, inclua `system` na instrução `$select`.
   ]
 }
 -->
+
+

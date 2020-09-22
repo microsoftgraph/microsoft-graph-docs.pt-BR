@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: bb2b67892f5c1bffbc9844a7d30b9b16ea9cdf6e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 536ed37cfe8ba190a22ef86e190af2b171d352ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533755"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983981"
 ---
 # <a name="securityvendorinformation-resource-type"></a>tipo de recurso securityVendorInformation
 
@@ -58,3 +58,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d2b09e99801be1cf7d0d0d6630216331f68e426a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c5f464e23103aee0228adf20d2cfeeadd1ae800c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438754"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982742"
 ---
 # <a name="get-charttitle"></a>Obter ChartTitle
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -106,3 +106,5 @@ Content-length: 64
   ]
 }
 -->
+
+

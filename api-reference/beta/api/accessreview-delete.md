@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f0ba1faf75688a3e1887f10aa1c68e7281d2417e
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: d8881f9ba62b5dbfcdb161111007534c9ccadb72
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123549"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983590"
 ---
 # <a name="delete-accessreview"></a>Excluir accessReview
 
@@ -95,3 +95,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

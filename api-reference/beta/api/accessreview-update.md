@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b57dc72345785c343d6e321abfab8a757b90eaab
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: bc8deda62ae268031e6505e878af416f8d496dfd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123381"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983456"
 ---
 # <a name="update-accessreview"></a>Atualizar accessReview
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que podem ser fornecidas ao atualizar u
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `204, Accepted` um código de resposta e um objeto [accessReview](../resources/accessreview.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `204, Accepted` código de resposta e um objeto [accessReview](../resources/accessreview.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -129,3 +129,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

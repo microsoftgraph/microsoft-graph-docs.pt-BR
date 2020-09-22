@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e8ff107c2689491dcc057381c4ff2510db55caa3
-ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
+ms.openlocfilehash: cb33896cd34a5fe9f9368aa7f2ce5e95fdb827ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "44593643"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982445"
 ---
 # <a name="list-namedlocations"></a>Listar namedLocations
 
@@ -40,7 +40,7 @@ GET /identity/conditionalAccess/namedLocations
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos parâmetros de consulta do,,, `$count` `$filter` `$orderBy` `$select` , `$skip` e `$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método oferece suporte aos parâmetros de consulta do,,, `$count` `$filter` `$orderBy` `$select` , `$skip` e `$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -398,3 +398,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

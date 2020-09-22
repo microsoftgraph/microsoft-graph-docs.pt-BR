@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5a3ad794a34b1f6f3d60033a9e062bcb9982470b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 544299f5e136fe1aa8c20850f10c75439edfcc57
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438915"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982784"
 ---
 # <a name="create-chartpoint"></a>Criar ChartPoint
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [workbook
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [workbookChartPoint](../resources/workbookchartpoint.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [workbookChartPoint](../resources/workbookchartpoint.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -108,3 +108,5 @@ Content-length: 3
   ]
 }
 -->
+
+

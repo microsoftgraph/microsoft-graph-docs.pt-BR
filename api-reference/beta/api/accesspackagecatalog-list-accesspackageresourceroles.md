@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a8df69dea8e1cad511272d2be2f4ba2bcc0226e2
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: b235a89b03af1d34e0540aa3a4f15c3baa0d24f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345468"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983736"
 ---
 # <a name="list-accesspackageresourceroles"></a>Listar accessPackageResourceRoles
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método usa parâmetros de consulta OData para construir a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método usa parâmetros de consulta OData para construir a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

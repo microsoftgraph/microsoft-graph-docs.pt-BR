@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7722d6084399fc00b0f99932ac7173b2d83dfa08
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 413309d3cd406a27f585a25ce6b66851ef594d21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123570"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983558"
 ---
 # <a name="list-my-accessreview-decisions"></a>Listar minhas decisões do accessReview
 
@@ -117,3 +117,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

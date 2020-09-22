@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 59cea935a49a1886c4f92651db2b06a280139cea
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 05aa4109634a1bb601bb7332478916b8eac0782c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123479"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983495"
 ---
 # <a name="sendreminder-accessreview"></a>SendReminder accessReview
 
@@ -94,3 +94,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

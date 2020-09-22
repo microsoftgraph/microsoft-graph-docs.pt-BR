@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5247bacbbf15274f132c5d7620b806cfe99613b6
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: d094b51e6aab68a069709b3914caf4aa0892e657
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47287453"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983603"
 ---
 # <a name="create-accessreview"></a>Criar accessReview
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta corporativa ou de estudante)     | AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | AccessReview.ReadWrite.Membership |
 
 O chamador também deve ter a permissão ProgramControl. ReadWrite. All, de modo que depois de criar uma revisão do Access, o chamador possa criar um [ProgramControl](../resources/programcontrol.md).
@@ -164,3 +164,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

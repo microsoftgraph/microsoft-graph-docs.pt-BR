@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b9cbbfe106af827d34f7bdbcc50af03c59ec5aeb
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: eb5c56eb1a67e8fac936e9a80600f8291cd595d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491263"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982575"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Obter chatMessageHostedContent
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Para o **usuário** ou recurso de **chat** : chat. Read. All, chat. ReadWrite. All<br/><br/>Para recurso de **canal** : ChannelMessage. Read. Group *, ChannelMessage. Read. All, Group. Read. All, Group. ReadWrite. All |
 
-> **Observação**: as permissões marcadas com * usam o [consentimento específico do recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
@@ -169,3 +169,5 @@ Content-length: 201
   "suppressions": [
   ]
 }-->
+
+

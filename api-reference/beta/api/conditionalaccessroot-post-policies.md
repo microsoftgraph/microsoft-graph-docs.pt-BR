@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7f5aec736483650b847184343a58777243a266fb
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 9c7bb1088a95ca9c6cd40807b7fec897adf8b031
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556097"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982387"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Criar conditionalAccessPolicy
 
@@ -92,7 +92,7 @@ Content-type: application/json
             ]
         },
         "users": {
-            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "locations": {
             "includeLocations": [
@@ -221,7 +221,7 @@ Content-type: application/json
             ]
         },
         "users": {
-            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "locations": {
             "includeLocations": [
@@ -569,7 +569,7 @@ Content-type: application/json
             ]
         },
         "users": {
-            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "devices": {
             "includeDeviceStates": [
@@ -668,3 +668,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

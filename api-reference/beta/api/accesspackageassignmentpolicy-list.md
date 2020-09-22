@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c3d2a732bdc8ecc9fc0b4efded56f4d9751c8d11
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 84c9110fa45df5083a2c5b47ad6b40f3ac57a3f9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383508"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983890"
 ---
 # <a name="list-accesspackageassignmentpolicies"></a>Listar accessPackageAssignmentPolicies
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar uma política de atribuição de pacote do Access com um nome de exibição especificado, inclua `$filter=displayName eq 'Employee sales support'` na consulta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar uma política de atribuição de pacote do Access com um nome de exibição especificado, inclua `$filter=displayName eq 'Employee sales support'` na consulta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -127,3 +127,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

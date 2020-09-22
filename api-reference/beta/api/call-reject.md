@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 56261485f08d071c2f61ca11a7cbbe73d0a84629
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c3e711273ab9ca903588a49e310338ca0f9a90d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440756"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983386"
 ---
 # <a name="call-reject"></a>Call: rejeitar
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,8 +52,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|motivo|String|O motivo da rejeição. Os valores possíveis `None`são `Busy` e`Forbidden` |
-|callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https`.|
+|motivo|String|O motivo da rejeição. Os valores possíveis `None` são `Busy` e `Forbidden` |
+|callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https` .|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
@@ -242,3 +242,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

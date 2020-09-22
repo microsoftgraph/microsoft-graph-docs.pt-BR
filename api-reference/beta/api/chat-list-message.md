@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6f59ced1ed93ae341e017b261148fbb00f57e313
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: bc6726a95e186aae7da9adc3a659a632fe0c7545
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630373"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982707"
 ---
 # <a name="list-chat-messages"></a>Listar mensagens de bate-papo
 
@@ -276,3 +276,5 @@ Content-length: 201
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0a643411ab75aa352e3c672f94f6e8259e931b6c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c7af5b2ab614dae57ef7c18aee80133cd7a2096a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533768"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984065"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>tipo de recurso secureScoreControlProfile
 
@@ -19,11 +19,11 @@ Namespace: microsoft.graph
 Representa a pontuação segura de um locatário por dados de controle. Por padrão, ele retorna todos os controles de um locatário e pode explicitamente extrair controles individuais.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método   | Tipo de retorno|Descrição|
 |:---------------|:--------|:----------|
-|[Listar secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) | [secureScoreControlProfile](securescorecontrolprofile.md) |Leia as propriedades e os metadados de um objeto secureScoreControlProfiles.|
+|[Lista secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) | [secureScoreControlProfile](securescorecontrolprofile.md) |Leia as propriedades e os metadados de um objeto secureScoreControlProfiles.|
 |[Obter secureScoreControlProfile](../api/securescorecontrolprofile-get.md) | [securescorecontrolprofile](securescorecontrolprofile.md) |Leia as propriedades e os metadados de um objeto secureScoreControlProfiles.|
 |[Atualizar securescorecontrolprofile](../api/securescorecontrolprofile-update.md) | [securescorecontrolprofile](securescorecontrolprofile.md) |Atualize um objeto securescorecontrolprofile. |
 
@@ -38,15 +38,15 @@ Representa a pontuação segura de um locatário por dados de controle. Por padr
 |actionUrl|String|URL para onde o controle pode ser acionado. |
 |controlCategory|String|Categoria de ação de controle (identidade, dados, dispositivo, aplicativos, infraestrutura).|
 |title|String|Título do controle.|
-|preterido|Booliano|Sinalizador para indicar se um controle está depreciado.|
+|preterido|Boolean|Sinalizador para indicar se um controle está depreciado.|
 |implementationCost|String|Custo do recurso do controle implemmentating (baixo, moderado, alto).|
 |lastModifiedDateTime|DateTimeOffset|Hora em que a entidade de perfil de controle foi modificada pela última vez. O tipo TIMESTAMP representa data e hora| 
 |maxScore|Duplo|Pontuação máxima atingível do controle.|
 |classificação|Int32|Classificação de pilha da Microsoft de controle.|
 |correção|String|Descrição do que o controle ajudará a corrigir.|
 |remediationImpact|String|Descrição do impacto sobre os usuários da correção.|
-|service|String|Serviço que possui o controle (Exchange, SharePoint, Azure AD).|
-|las|String collection|Lista de ameaças que o controle atenua (accountBreach, dataexclusão, dataExfiltration, dataderramamento
+|service|Cadeia de caracteres|Serviço que possui o controle (Exchange, SharePoint, Azure AD).|
+|las|Coleção de cadeias de caracteres|Lista de ameaças que o controle atenua (accountBreach, dataexclusão, dataExfiltration, dataderramamento
 elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, falsificação).|
 |camada|String|Camada de controle (Core, defesa profunda, avançada)   |
 |userimpact|String|Impacto do usuário da implementação do controle (baixo, moderado, alto).   |
@@ -104,3 +104,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
