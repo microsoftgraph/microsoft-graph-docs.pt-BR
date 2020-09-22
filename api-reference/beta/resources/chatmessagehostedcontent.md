@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8f1577ab7ded60dfd3cad88641bfb11f83d6ad5b
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: aff1033a68f2e98b5ea5f1ca940a2be026ae18c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630288"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064266"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>tipo de recurso chatMessageHostedContent
 
@@ -68,7 +68,7 @@ Veja a seguir uma representação JSON do recurso.
   "@microsoft.graph.temporaryId": "String (identifier)",
   "id": "String (identifier)",
   "contentBytes": "String (binary)",
-  "contentType": "String",
+  "contentType": "String"
 }
 ```
 
@@ -81,3 +81,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

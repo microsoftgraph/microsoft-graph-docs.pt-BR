@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: markwahl-msft
-ms.openlocfilehash: 666fb643ea5307aff02fdfb36e44e881356b9701
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 33b0f53cbccf2d820108616a8987476a1a264caf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807178"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064392"
 ---
 # <a name="autoreviewsettings-resource-type"></a>tipo de recurso autoReviewSettings
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-| notReviewedResult | String |  |
+| notReviewedResult | Cadeia de caracteres |  |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -38,6 +38,8 @@ Veja a seguir uma representação JSON do recurso.
     "notReviewedResult":"string"
 }
 ```
+
+
 
 
 

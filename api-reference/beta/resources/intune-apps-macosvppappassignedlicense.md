@@ -3,14 +3,14 @@ title: tipo de recurso macOsVppAppAssignedLicense
 description: Atribuição de licença do programa de compra de volume MacOS. Essa classe não oferece suporte para Criar, Excluir ou Atualizar.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: adec4b71d1ec221f0f6ebb9b3c3792f160b452f8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: aa621bcafd490590757e533862ad444fc6e0c72e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458825"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064259"
 ---
 # <a name="macosvppappassignedlicense-resource-type"></a>tipo de recurso macOsVppAppAssignedLicense
 
@@ -34,11 +34,11 @@ Atribuição de licença do programa de compra de volume MacOS. Essa classe não
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|useremailaddress|String|O endereço de email do usuário.|
-|userId|String|A ID do usuário.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|useremailaddress|Cadeia de caracteres|O endereço de email do usuário.|
+|userId|Cadeia de caracteres|A ID do usuário.|
 |userName|Cadeia de caracteres|O nome de usuário.|
-|userPrincipalName|String|O nome da entidade de segurança do usuário.|
+|userPrincipalName|Cadeia de caracteres|O nome da entidade de segurança do usuário.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -61,6 +61,9 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
+
+
+
 
 
 

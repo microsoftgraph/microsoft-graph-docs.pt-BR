@@ -3,14 +3,14 @@ title: Excluir windowsUpdateForBusinessConfiguration
 description: Exclui windowsUpdateForBusinessConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 363964d2cfebb29c9cc098d135b9782896db67ae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a76a24cf6d97e035a3c92cc2e37edebe36aa396e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411629"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063216"
 ---
 # <a name="delete-windowsupdateforbusinessconfiguration"></a>Excluir windowsUpdateForBusinessConfiguration
 
@@ -63,6 +63,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

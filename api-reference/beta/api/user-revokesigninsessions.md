@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cd85304459f0d3208b62f2976aa1a53bda8cb2b9
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: a11fcdff43312eaeae7c94a815b5264f17f533ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107343"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064445"
 ---
 # <a name="user-revokesigninsessions"></a>usuário: revokeSignInSessions
 
@@ -108,3 +108,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ae26f5b5a5a109145daa132837890943a98c8c0d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d8f2cc7e08820c05a0f5ef0ead66107bfa0f357c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451622"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064413"
 ---
 # <a name="user-translateexchangeids"></a>usuário: translateExchangeIds
 
@@ -65,8 +65,8 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 Os formatos binários ( `entryId` e `immutableEntryId` ) são codificados por URL com base em base64. A segurança de URL é implementada modificando a codificação Base64 dos dados binários da seguinte maneira:
 
-- Substituir `+` por`-`
-- Substituir `/` por`_`
+- Substituir `+` por `-`
+- Substituir `/` por `_`
 - Remover os caracteres de preenchimento à direita ( `=` )
 - Adicione um inteiro ao final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam no original ( `0` , `1` , ou `2` )
 
@@ -153,3 +153,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

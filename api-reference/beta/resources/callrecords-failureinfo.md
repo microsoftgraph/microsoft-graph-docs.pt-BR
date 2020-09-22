@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2cf41a75f829b9b694b41d7fc0ea543ba6c39523
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 5edd2a501b3e1a5633f0bd01ac36815201eb927d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383627"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064371"
 ---
 # <a name="failureinfo-resource-type"></a>tipo de recurso failureInfo
 
@@ -31,7 +31,7 @@ Se um ou mais fluxos de mídia tiverem qualquer uma dessas falhas, essa falha se
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|motivo|String|Classificação de por que uma chamada ou parte de uma chamada falhou.|
+|motivo|Cadeia de caracteres|Classificação de por que uma chamada ou parte de uma chamada falhou.|
 |estágio|Microsoft. Graph. callRecords. failureStage|O estágio quando a falha ocorreu. Os valores possíveis são: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -63,3 +63,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

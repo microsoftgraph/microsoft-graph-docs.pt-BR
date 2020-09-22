@@ -3,14 +3,14 @@ title: tipo de enumeração macOSProcessIdentifierType
 description: Tipos de identificador de processo para preferências de privacidade do MacOS
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fb6fb6688918b384f629010c39be1d0c548e5bc6
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 47e8d4169cf5e732c8dc8bc5a0c7260131389644
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178238"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064231"
 ---
 # <a name="macosprocessidentifiertype-enum-type"></a>tipo de enumeração macOSProcessIdentifierType
 
@@ -25,8 +25,11 @@ Tipos de identificador de processo para preferências de privacidade do MacOS
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|bundleID|1|Indica um aplicativo com uma ID de pacote.|
-|caminho|duas|Indica um caminho de arquivo para um processo.|
+|bundleID|1 |Indica um aplicativo com uma ID de pacote.|
+|caminho|2 |Indica um caminho de arquivo para um processo.|
+
+
+
 
 
 

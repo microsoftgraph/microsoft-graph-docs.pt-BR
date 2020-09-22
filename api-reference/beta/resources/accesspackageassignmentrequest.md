@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3a3309df4106d30de2190b1c321adb3ea0b1a670
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.openlocfilehash: b546071984f938f7e07c927681aa1b9e50d4cfd0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413307"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064399"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>tipo de recurso accessPackageAssignmentRequest
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solicitação de atribuição de pacote de acesso é criada por ou em nome de um usuário que deseja obter uma atribuição de pacote do Access. Se a solicitação for bem-sucedida, com todas as aprovações necessárias, o usuário receberá uma atribuição de pacote de acesso e será o assunto dessa atribuição de pacote de acesso resultante.  O Azure AD também cria solicitações de atribuição de pacote de acesso automaticamente para rastrear a remoção do acesso.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -35,11 +35,11 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solic
 |completedDate|DateTimeOffset|A data do final do processamento, bem como êxito ou falha, de uma solicitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |id|String| Somente leitura.|
-|isValidationOnly|Boolean|True se a solicitação não deve ser processada para a atribuição.|
-|elabora|String|A justificativa fornecida pelo solicitante.|
-|RequestState|String|Um dos `PendingApproval` , `Canceled` ,  `Denied` , `Delivering` , `Delivered` , `PartiallyDelivered` `Submitted` ou `Scheduled` . Somente leitura.|
-|requestStatus|String|Mais informações sobre o status do processamento da solicitação. Somente leitura.|
-|RequestType|String|Um de `UserAdd` , `UserRemove` , `AdminAdd` `AdminRemove` ou `SystemRemove` . Uma solicitação do próprio usuário teria o RequestType de `UserAdd` ou `UserRemove` . Somente leitura.|
+|isValidationOnly|Booliano|True se a solicitação não deve ser processada para a atribuição.|
+|elabora|Cadeia de caracteres|A justificativa fornecida pelo solicitante.|
+|RequestState|Cadeia de caracteres|Um dos `PendingApproval` , `Canceled` ,  `Denied` , `Delivering` , `Delivered` , `PartiallyDelivered` `Submitted` ou `Scheduled` . Somente leitura.|
+|requestStatus|Cadeia de caracteres|Mais informações sobre o status do processamento da solicitação. Somente leitura.|
+|RequestType|Cadeia de caracteres|Um de `UserAdd` , `UserRemove` , `AdminAdd` `AdminRemove` ou `SystemRemove` . Uma solicitação do próprio usuário teria o RequestType de `UserAdd` ou `UserRemove` . Somente leitura.|
 |Cronograma|[requestSchedule](requestschedule.md)| O intervalo de datas que o Access deve ser atribuído ao solicitante. Somente leitura.|
 |accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| Para um RequestType `UserAdd` ou `AdminAdd` , esta é uma atribuição de pacote de acesso solicitada a ser criada.  Para um RequestType de `UserRemove` , `AdminRemove` ou `SystemRemove` , isso tem a `id` propriedade de uma atribuição existente a ser removida.|
 
@@ -85,3 +85,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
