@@ -3,14 +3,14 @@ title: tipo de enumeração deviceManagementDerivedCredentialIssuer
 description: Valores com suporte para o emissor de credenciais derivado.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0f24af2e25b8623c4d15a51b65d7e4d6c63103cd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 72f2ab1f7a8bacb3aef8bfa4437d77acf0d3a996
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43357836"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993228"
 ---
 # <a name="devicemanagementderivedcredentialissuer-enum-type"></a>tipo de enumeração deviceManagementDerivedCredentialIssuer
 
@@ -26,9 +26,12 @@ Valores com suporte para o emissor de credenciais derivado.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |intercede|,0|Intercede|
-|entrustDatacard|1|Cartão de Entrust|
-|purebred|duas|Purebred|
-|xTec|3D|XTec|
+|entrustDatacard|1 |Cartão de Entrust|
+|purebred|2 |Purebred|
+|xTec|3 |XTec|
+
+
+
 
 
 

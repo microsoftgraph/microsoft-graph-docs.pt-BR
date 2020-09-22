@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 8544f5aa0d2385d46734514a25f75996eb728a5c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d3be1de01e416f7d9ac72c9f3d7d17815c9e6eb5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518949"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992836"
 ---
 # <a name="update-alert"></a>Atualizar alerta
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-> **Observação:** Você deve incluir a ID do **alerta** como um parâmetro e vendorInformation contendo `provider` o `vendor` e com esse método.
+> **Observação:** Você deve incluir a ID do **alerta** como um parâmetro e vendorInformation contendo o `provider` e `vendor` com esse método.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -47,23 +47,23 @@ PATCH /security/alerts/{alert_id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON dos valores de campos relevantes que devem ser atualizados. O corpo **deve** conter a propriedade **vendorInformation** com os `provider` campos `vendor` válidos e. A tabela a seguir lista os campos que podem ser atualizados para um alerta. Os valores das propriedades existentes que não estão incluídas no corpo da solicitação não serão alterados. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça uma representação JSON dos valores de campos relevantes que devem ser atualizados. O corpo **deve** conter a propriedade **vendorInformation** com os `provider` campos válidos e `vendor` . A tabela a seguir lista os campos que podem ser atualizados para um alerta. Os valores das propriedades existentes que não estão incluídas no corpo da solicitação não serão alterados. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade          | Tipo                                                                   | Descrição |
 |:------------------|:-----------------------------------------------------------------------|:--|
 | assignedTo        | String                                                                 | Nome do analista ao qual o alerta é atribuído para a triagem, investigação ou correção. |
 | closedDateTime    | DateTimeOffset                                                         | Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. |
-| comentários          | String collection                                                      | Comentários de analista sobre o alerta (para o gerenciamento de alerta do cliente). Este método pode atualizar o campo Comments com os seguintes valores apenas `Closed in IPC`: `Closed in MCAS`,. |
+| comentários          | String collection                                                      | Comentários de analista sobre o alerta (para o gerenciamento de alerta do cliente). Este método pode atualizar o campo Comments com os seguintes valores apenas: `Closed in IPC` , `Closed in MCAS` . |
 | comentários          | alertFeedback                                                          | Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. |
 | status            | alertStatus                                                            | Status do ciclo de vida de alerta (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`. |
-| tags              | String collection                                                      | Rótulos definíveis pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "vimos). |
+| tags              | Coleção de cadeias de caracteres                                                      | Rótulos definíveis pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "vimos). |
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Tipo complexo que contém detalhes sobre o fornecedor, provedor e subprovedor de produtos / serviços de segurança (por exemplo, fornecedor = Microsoft; provedor = Windows Defender ATP; subProvedor = AppLocker). **Os campos Provider e Vendor são necessários.** |
 
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
-Se o cabeçalho de solicitação opcional for usado, o método retornará `200 OK` um código de resposta e o objeto [Alert](../resources/alert.md) atualizado no corpo da resposta.
+Se o cabeçalho de solicitação opcional for usado, o método retornará um `200 OK` código de resposta e o objeto [Alert](../resources/alert.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -139,7 +139,7 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra uma solicitação que inclui `Prefer` o cabeçalho da solicitação.
+O exemplo a seguir mostra uma solicitação que inclui o `Prefer` cabeçalho da solicitação.
 
 <!-- {
   "blockType": "request",
@@ -206,3 +206,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

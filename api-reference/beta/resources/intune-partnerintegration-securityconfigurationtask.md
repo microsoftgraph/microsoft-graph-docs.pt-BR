@@ -3,14 +3,14 @@ title: tipo de recurso securityConfigurationTask
 description: Uma tarefa de configuração de segurança.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eaf2f479d491e8d6455dc3b296053a84983fdf98
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 472abf714f5ddb67fee01a3026f99e85887da5e0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793161"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993627"
 ---
 # <a name="securityconfigurationtask-resource-type"></a>tipo de recurso securityConfigurationTask
 
@@ -25,7 +25,7 @@ Uma tarefa de configuração de segurança.
 
 Herda de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar securityConfigurationTasks](../api/intune-partnerintegration-securityconfigurationtask-list.md)|coleção [securityConfigurationTask](../resources/intune-partnerintegration-securityconfigurationtask.md)|Listar Propriedades e relações dos objetos [securityConfigurationTask](../resources/intune-partnerintegration-securityconfigurationtask.md) .|
@@ -96,6 +96,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

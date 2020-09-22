@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ailae
-ms.openlocfilehash: c6b87e96e857b71939ca9762a7a32c97d24f38f8
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8d5c3d303944dffc27e9996302ac31de671565b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812791"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993153"
 ---
 # <a name="historyitem-resource-type"></a>tipo de recurso historyItem
 
@@ -22,7 +22,7 @@ Representa um item de histórico de uma [atividade](projectrome-activity.md) em 
 
 Quando um aplicativo cria uma sessão, um objeto **historyItem** deve ser adicionado ao objeto **Activity** para refletir o período do contrato do usuário. Cada vez que um usuário reparticipa de uma atividade, um novo **historyItem** é adicionado à atividade para acumular o envolvimento do usuário.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |Método | Tipo de retorno | Descrição|
 |:------|:------------|:-----------|
@@ -90,3 +90,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

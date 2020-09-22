@@ -3,14 +3,14 @@ title: tipo de enumeração endpointSecurityConfigurationType
 description: O tipo de política de segurança do ponto de extremidade.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e772e9c32ad304bab3830701852b170f479cdf7
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 6f46b07f62591b33f34b8e847b406763a0047f15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793160"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993634"
 ---
 # <a name="endpointsecurityconfigurationtype-enum-type"></a>tipo de enumeração endpointSecurityConfigurationType
 
@@ -26,12 +26,15 @@ O tipo de política de segurança do ponto de extremidade.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Unknown.|
-|vírus|1|Vírus.|
-|diskEncryption|duas|Criptografia de disco.|
-|Firewall|3D|Firewall.|
+|vírus|1 |Vírus.|
+|diskEncryption|2 |Criptografia de disco.|
+|Firewall|3 |Firewall.|
 |endpointDetectionAndResponse|4 |Detecção e resposta do terminal.|
 |attackSurfaceReduction|5 |Redução da superfície do ataque.|
 |accountProtection|6 |Proteção de conta.|
+
+
+
 
 
 

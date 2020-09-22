@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 0ae528e68aa3bf28457f2fee04beb6a8013e902d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 76bbc5f2696f966be017b798ceb065afccf3b61e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531893"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991947"
 ---
 # <a name="chartaxis-resource-type"></a>Tipo de recurso ChartAxis
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Representa um único eixo em um gráfico.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -35,7 +35,7 @@ Representa um único eixo em um gráfico.
 |minimum|Json|Representa o valor mínimo no eixo dos valores. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo).  O valor retornado sempre é um número.|
 |minorUnit|Json|Representa o intervalo entre duas marcas de escala secundárias. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo). O valor retornado sempre é um número.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[WorkbookChartAxisFormat](chartaxisformat.md)|Representa a formatação de um objeto Chart, que inclui formatação de linha e de fonte. Somente leitura.|
@@ -79,3 +79,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

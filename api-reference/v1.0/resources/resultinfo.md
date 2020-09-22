@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 42b636b09e8cfeb2ed41578e06fc57b5aa976fd5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 67508afcae81fe85326eb08a4cccb69b7ef440fb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991884"
 ---
 # <a name="resultinfo-resource-type"></a>tipo de recurso resultInfo
 
@@ -62,3 +62,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

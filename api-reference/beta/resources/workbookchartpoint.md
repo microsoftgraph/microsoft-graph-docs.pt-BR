@@ -5,23 +5,23 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 54342227c15eeb1b11c3ddfb157e1ef3bc83390e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df7f7254251f2b424af0ffc8a6fca725285393cf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519285"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993005"
 ---
 # <a name="workbookchartpoint-resource-type"></a>tipo de recurso workbookChartPoint
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa o ponto de uma série do gráfico.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -75,3 +75,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

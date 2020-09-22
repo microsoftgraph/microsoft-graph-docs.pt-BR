@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ae239cd7bb559d8fc46cbaa43933a54d6ffe5e1c
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 178aa338062a6a7ff8707bff12cae21735037bb3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183649"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992416"
 ---
 # <a name="get-callrecord"></a>Obter callRecord
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | CallRecords.Read.All |
+| Aplicativo                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -401,3 +401,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0fad3f407360d747b10f44cfb92055167e4f8fb9
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 1d7837048e27d382021489a11395053f48b91ac2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108778"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992136"
 ---
 # <a name="list-owneddevices"></a>Listar ownedDevices
 
@@ -110,3 +110,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

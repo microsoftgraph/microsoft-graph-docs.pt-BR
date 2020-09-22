@@ -1,26 +1,26 @@
 ---
 title: Conceder um appRoleAssignment a um usuário
-description: Conceda a um usuário uma atribuição de função de aplicativo.
+description: Conceder uma atribuição de função de aplicativo a um usuário.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 44007dbd51446d80e962a6e0485c44b7cc2d6b24
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 3ec3534896bd5763d450e457edfac9a924e10d3a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383721"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992017"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>Conceder um appRoleAssignment a um usuário
 
 Namespace: microsoft.graph
 
-Use esta API para atribuir uma função de aplicativo a um usuário. Para conceder a um usuário uma atribuição de função de aplicativo, você precisa de três identificadores:
+Use esta API para atribuir uma função de aplicativo a um usuário. Para conceder uma atribuição de função de aplicativo a um usuário, você precisa de três identificadores:
 
-- `principalId`: O `id` do usuário para o qual você está atribuindo a função de aplicativo.
-- `resourceId`: O `id` do recurso `servicePrincipal` que definiu a função de aplicativo.
-- `appRoleId`: O `id` `appRole` (definido na entidade de segurança do serviço de recursos) a ser atribuído ao usuário.
+- `principalId`: A `id` do usuário ao qual você está atribuindo a função de aplicativo.
+- `resourceId`: A `id` do recurso `servicePrincipal` que definiu a função do aplicativo.
+- `appRoleId`: A `id` do `appRole` (definido na entidade de serviço do recurso) para atribuir ao usuário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AppRoleAssignment. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | AppRoleAssignment. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +40,7 @@ POST /users/{id | userPrincipalName}/appRoleAssignments
 ```
 
 > [!NOTE]
-> Como prática recomendada, recomendamos a criação de atribuições de função de aplicativo através da `appRoleAssignedTo` relação da entidade de serviço de _recurso_ , em vez da `appRoleAssignments` relação do usuário, grupo ou entidade de serviço atribuída.
+> Como prática recomendada, recomendamos que você crie atribuições de função de aplicativo por meio da `appRoleAssignedTo`relação do _recurso_ da entidade de serviço, em vez da `appRoleAssignments`relação do usuário, grupo ou entidade de serviço atribuída.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -51,11 +51,11 @@ POST /users/{id | userPrincipalName}/appRoleAssignments
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [appRoleAssignment](../resources/approleassignment.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [appRoleAssignment](../resources/approleassignment.md).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -100,7 +100,7 @@ Content-Length: 110
 ---
 
 
-Neste exemplo, `{id}` e `{principalId-value}` seria o `id` do usuário atribuído.
+Neste exemplo, `{id}` e `{principalId-value}` seriam os `id` do usuário atribuído.
 
 ### <a name="response"></a>Resposta
 
@@ -143,3 +143,4 @@ Content-length: 253
   ]
 }
 -->
+

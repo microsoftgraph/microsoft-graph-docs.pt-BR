@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5fde45d8e9baf28fddfe9935d71689d24059dfa3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 03270c0b5e6ea373ad87355612ddfb85b428d61c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43371392"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993137"
 ---
 # <a name="provisionedidentity-resource-type"></a>tipo de recurso provisionedIdentity
 
@@ -25,7 +25,7 @@ Descreve a identidade associada ao evento de resumo do objeto de provisionamento
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |detalhes|[detailsInfo](detailsinfo.md)|Detalhes da identidade.|
-|displayName|Cadeia de caracteres|Nome para exibição da identidade. |
+|displayName|String|Nome para exibição da identidade. |
 |id|String|Identifica exclusivamente a identidade.|
 |IdentityType|String|Tipo de identidade que foi provisionado, como ' usuário ' ou ' grupo '.|
 
@@ -60,3 +60,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

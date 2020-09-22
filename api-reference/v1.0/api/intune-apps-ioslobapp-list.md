@@ -3,14 +3,14 @@ title: Listar iosLobApps
 description: Listar propriedades e relações dos objetos iosLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c7f6055483f4de26b1dde91fc426714f00881e80
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a57ad92a3355a4d0bf81b1374c84ff2f1f1e96d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422291"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992290"
 ---
 # <a name="list-ioslobapps"></a>Listar iosLobApps
 
@@ -112,6 +112,9 @@ Content-Length: 1594
   ]
 }
 ```
+
+
+
 
 
 

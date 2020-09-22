@@ -6,12 +6,12 @@ description: O objeto Mençãoaction fornece informações sobre quem foi mencio
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: de6bf1657e9b9ba21d589a6ef27292553bf93f7e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8937a8f7acd55af93fdeac9eceb17d46e2cf495c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534244"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991898"
 ---
 # <a name="mentionaction-resource-type"></a>tipo de recurso mençãoaction
 
@@ -55,3 +55,4 @@ O recurso **MentionAction** fornece informações sobre um [atividade][] que men
   "suppressions": []
 }
 -->
+

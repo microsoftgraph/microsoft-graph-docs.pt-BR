@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7ca0722a3aa9c0ab778c9964cfee043afc47e30b
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 8ffc22599258df0d4d73fcd9e9b8c4a2fd4f9715
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181698"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992425"
 ---
 # <a name="delete-certificatebasedauthconfiguration"></a>Excluir certificateBasedAuthConfiguration
 
@@ -106,3 +106,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

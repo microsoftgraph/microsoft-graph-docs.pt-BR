@@ -3,14 +3,14 @@ title: tipo de enumeração deviceAppManagementTaskCategory
 description: Categoria de tarefa de gerenciamento de aplicativo de dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a05cf03cd5c47d04f9b65d357eceece173a925e4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3bdf98eea0e8e86d096ada7caf2d2c721f90a389
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446677"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993697"
 ---
 # <a name="deviceappmanagementtaskcategory-enum-type"></a>tipo de enumeração deviceAppManagementTaskCategory
 
@@ -26,7 +26,10 @@ Categoria de tarefa de gerenciamento de aplicativo de dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Fonte desconhecida.|
-|advancedThreatProtection|1|Windows Defender ATP Threat & gerenciamento de vulnerabilidade.|
+|advancedThreatProtection|1 |Windows Defender ATP Threat & gerenciamento de vulnerabilidade.|
+
+
+
 
 
 

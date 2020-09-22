@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b0ae3d280d6d9dfc8877739b1003ae0c51f6acd6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 818063fa078913f694267a9cfb97be649ab81455
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446558"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993095"
 ---
 # <a name="provisioningstep-resource-type"></a>tipo de recurso provisioningStep
 
@@ -26,7 +26,7 @@ Descreve as etapas executadas para executar uma ação.
 |:-------------|:------------|:------------|
 |description|String|Resumo do que ocorreu durante a etapa.|
 |detalhes|[detailsInfo](detailsinfo.md)|Detalhes sobre o que ocorreu durante a etapa.|
-|nome|Cadeia de caracteres|Nome da etapa.|
+|nome|String|Nome da etapa.|
 |provisioningStepType|String| Tipo de etapa. Os valores possíveis são: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
 |status|String| Status da etapa. Os valores possíveis são: `success`, `failure`, `skipped`, `unknownFutureValue`.|
 
@@ -62,3 +62,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

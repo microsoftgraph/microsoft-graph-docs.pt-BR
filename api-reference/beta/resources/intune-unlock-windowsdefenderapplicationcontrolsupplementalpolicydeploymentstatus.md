@@ -3,14 +3,14 @@ title: tipo de recurso windowsDefenderApplicationControlSupplementalPolicyDeploy
 description: Contém propriedades para o estado de implantação de uma política suplementar do WindowsDefenderApplicationControl para um dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ff3cadb9f9a253877c169cddd498189aa336ebf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4f3948961e89d59b1321f1edc08eaaa71f0a3c14
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449571"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993186"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus-resource-type"></a>tipo de recurso windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Contém propriedades para o estado de implantação de uma política suplementar do WindowsDefenderApplicationControl para um dispositivo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsDefenderApplicationControlSupplementalPolicyDeploymentStatuses](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus-list.md)|coleção [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md)|Listar Propriedades e relações dos objetos [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) .|
@@ -36,10 +36,10 @@ Contém propriedades para o estado de implantação de uma política suplementar
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
-|deviceId|String|ID de dispositivo.|
+|deviceId|Cadeia de caracteres|ID de dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Hora da data da última sincronização.|
 |osVersion|String|Versão do sistema operacional Windows.|
-|osDescription|String|Descrição da versão do sistema operacional Windows.|
+|osDescription|Cadeia de caracteres|Descrição da versão do sistema operacional Windows.|
 |deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|O estado de implantação da política. Os valores possíveis são: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
 |userName|Cadeia de caracteres|O nome do usuário deste dispositivo.|
 |userPrincipalName|String|Nome principal do usuário.|
@@ -73,6 +73,9 @@ Veja a seguir uma representação JSON do recurso.
   "policyVersion": "String"
 }
 ```
+
+
+
 
 
 

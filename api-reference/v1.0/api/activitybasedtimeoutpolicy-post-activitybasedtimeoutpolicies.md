@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 670e912edd8cc966d0fbc07247ffcd6e3cbeffa0
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 480ab012a6f58e378d0bf9085d994eddb51e539d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917119"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992928"
 ---
 # <a name="create-activitybasedtimeoutpolicy"></a>Criar activityBasedTimeoutPolicy
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [activ
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -132,3 +132,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

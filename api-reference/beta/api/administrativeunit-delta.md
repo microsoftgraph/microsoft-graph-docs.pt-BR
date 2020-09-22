@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0f449461fe204002daf0f65bbbb6b2db2af42086
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: f96254db5e9d6f4394f45e1b1c266016258f950d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383676"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991768"
 ---
 # <a name="administrativeunit-delta"></a>administrativeUnit: Delta
 
@@ -56,7 +56,7 @@ Este método suporta os seguintes parâmetros de consulta OData para ajudar a pe
 - Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade **id** sempre será retornada. 
 
 - Há suporte limitado para `$filter`:
-  * A única expressão suportada `$filter` é para controlar alterações de recursos específicos, por sua ID: `$filter=id+eq+{value}` ou `$filter=id+eq+{value1}+or+id+eq+{value2}` . O número de IDs que você pode especificar é limitado pelo tamanho máximo de URL.
+  * A única expressão suportada `$filter` é para controlar alterações de recursos específicos, por sua ID:  `$filter=id+eq+{value}` ou `$filter=id+eq+{value1}+or+id+eq+{value2}` . O número de IDs que você pode especificar é limitado pelo tamanho máximo de URL.
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -190,3 +190,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

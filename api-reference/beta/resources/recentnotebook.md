@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: jewan-microsoft
-ms.openlocfilehash: f75d3ce272d4f71c7a5ecbbc26c09e015d458ce7
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 2097f9362e24ffe279201ae0d1d9907531568d2a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810466"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993025"
 ---
 # <a name="recentnotebook-resource-type"></a>tipo de recurso recentNotebook
 
@@ -50,8 +50,10 @@ Veja a seguir uma representação JSON do recurso.
 
 ```
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | Coleção [Notebook](notebook.md) | Obtenha uma coleção de blocos de anotações acessados mais recentemente para o usuário. |
+
+

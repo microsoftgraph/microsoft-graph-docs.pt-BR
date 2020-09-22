@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3774df54f73c7e08456b3412a65378cfb51cefcf
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 0d4763a7ab2782b33be6c254f13a852ca8f14787
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123339"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991793"
 ---
 # <a name="remove-a-member"></a>Remover um membro
 
@@ -61,3 +61,5 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

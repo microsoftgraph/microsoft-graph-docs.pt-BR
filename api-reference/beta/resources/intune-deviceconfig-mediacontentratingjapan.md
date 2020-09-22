@@ -3,14 +3,14 @@ title: Tipo de recurso mediaContentRatingJapan
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 52df25bb4a6a6e7615acb535741edfe70c122415
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 658141a661bd46374c63a2c7eb9378a16d4135aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437190"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993795"
 ---
 # <a name="mediacontentratingjapan-resource-type"></a>Tipo de recurso mediaContentRatingJapan
 
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
+
+
+
 
 
 

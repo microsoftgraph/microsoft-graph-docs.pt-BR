@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: fe9a0a6c8f4ad3549e51b3a8d534014d4f9d0c69
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 19d371bb2b61ae33c310251420e88df67b53a4df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680574"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992850"
 ---
 # <a name="get-alert"></a>Obter alerta
 
@@ -275,3 +275,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

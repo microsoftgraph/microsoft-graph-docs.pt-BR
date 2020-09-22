@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e02337150622f3868a6f4008766781f8800862ee
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 00668f8a60e4501d2e385f378014e99059be937e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805824"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991641"
 ---
 # <a name="list-phonemethods"></a>Listar phoneMethods
 
@@ -62,7 +62,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -144,3 +144,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 93c841bbfd5c2a684695c124c8d8ca6f7cd82607
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 3e31518048517be6e07ab10084632f74eeace26a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183656"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992409"
 ---
 # <a name="list-callrecord-sessions"></a>Listar sessões do callRecord
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | CallRecords.Read.All |
+| Aplicativo                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -390,3 +390,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -1,18 +1,18 @@
 ---
-title: Listar usuário transitiva membro
+title: Listar usuário transitivo memberOf
 description: Obtenha grupos e funções de diretório dos quais o usuário é membro. Essa solicitação de API é transitiva e também retorna todos os grupos dos quais o usuário é um membro aninhado.
 author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: caee8bd1c849d7ac38562ace7e39541810de11aa
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 6e1186325dde5410b22983b34de04372c5092ba2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108715"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992045"
 ---
-# <a name="list-user-transitive-memberof"></a>Listar usuário transitiva membro
+# <a name="list-user-transitive-memberof"></a>Listar usuário transitivo memberOf
 
 Namespace: microsoft.graph
 
@@ -132,3 +132,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

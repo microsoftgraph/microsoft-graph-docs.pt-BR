@@ -3,14 +3,14 @@ title: tipo de recurso pfxRecryptionRequest
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b05aa91e1c265bdcf384163c9a2787eb39149cd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 709db603921804ce4a3eb87da7e58ec87df085a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462412"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993312"
 ---
 # <a name="pfxrecryptionrequest-resource-type"></a>tipo de recurso pfxRecryptionRequest
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Ainda não documentado
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar pfxRecryptionRequests](../api/intune-raimportcerts-pfxrecryptionrequest-list.md)|coleção [pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md)|Listar Propriedades e relações dos objetos [pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md) .|
@@ -75,6 +75,9 @@ Veja a seguir uma representação JSON do recurso.
   "eTag": "String"
 }
 ```
+
+
+
 
 
 

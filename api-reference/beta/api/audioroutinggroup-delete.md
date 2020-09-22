@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9c30895172147b3e4f6c132f906b074178803cc8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87cada1f74e36398fef2f1eda82d622540c7ac47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441330"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991709"
 ---
 # <a name="delete-audio-routing-group"></a>Excluir grupo de roteamento de áudio
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :-------------- | :------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Calls. JoinGroupCalls. All, calls. InitiateGroupCalls. All |
+| Aplicativo     | Calls. JoinGroupCalls. All, Calls.InitiateGroupCalls. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -102,3 +102,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

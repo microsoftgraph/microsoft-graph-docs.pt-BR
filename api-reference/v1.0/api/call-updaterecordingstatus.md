@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bb8f68f53453662d8ab0707138c011548379a4e6
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 5436b865594a9463a5f7700b863320449f3594e0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183964"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992456"
 ---
 # <a name="call-updaterecordingstatus"></a>Call: updateRecordingStatus
 
@@ -130,3 +130,4 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-40
   ]
 }
 -->
+

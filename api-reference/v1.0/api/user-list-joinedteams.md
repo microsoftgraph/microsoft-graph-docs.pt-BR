@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b55d2cfda184b3c0d109975a0cf60dddf91311b6
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: 68853f0b9d3c639ee1a30791f805705c419ad607
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290620"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992155"
 ---
 # <a name="list-joinedteams"></a>Listar joinedTeams
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Team. ReadBasic. All, TeamSettings. Read. All, TeamSettings. ReadWrite. All, User. Read. All, User. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Team. ReadBasic. All, TeamSettings. Read. All, TeamSettings. ReadWrite. All, User. Read. All, User. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 > Com permissões de usuário delegado esta operação só funciona para o usuário "eu". 
 > Com permissões de aplicativo, funciona para todos os usuários especificando a id de usuário específico. ("eu" alias não é compatível com permissões de aplicativo)
@@ -121,3 +121,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

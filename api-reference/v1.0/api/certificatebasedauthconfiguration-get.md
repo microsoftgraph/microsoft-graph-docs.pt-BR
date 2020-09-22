@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 232dc629fdd4e6bec1914654d036c8d097d2bd17
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: cc2c0bd26d18ff8273993b6755ae8809b872f4e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181256"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992423"
 ---
 # <a name="get-certificatebasedauthconfiguration"></a>Obter certificateBasedAuthConfiguration
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -125,3 +125,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

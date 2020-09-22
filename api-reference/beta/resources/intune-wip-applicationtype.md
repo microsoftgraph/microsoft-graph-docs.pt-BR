@@ -3,14 +3,14 @@ title: tipo de enumeração ApplicationType
 description: Tipos de aplicativo possíveis
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 26365591d61705710b22e39aca8489385e399c22
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dde97b2835ef90dc4fe73f306c4f7f5dccfa9aee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449526"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993179"
 ---
 # <a name="applicationtype-enum-type"></a>tipo de enumeração ApplicationType
 
@@ -25,8 +25,11 @@ Tipos de aplicativo possíveis
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|UTC|1|O aplicativo Windows universal|
-|placa|duas|O aplicativo da área de trabalho Windows|
+|UTC|1 |O aplicativo Windows universal|
+|placa|2 |O aplicativo da área de trabalho Windows|
+
+
+
 
 
 

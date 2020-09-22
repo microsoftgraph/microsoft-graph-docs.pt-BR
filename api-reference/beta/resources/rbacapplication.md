@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5a5860cce6625257dfdecf145786a2e9bd2f2465
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: e7145509745bdb696ebe3342035096af27d89b38
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989790"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993046"
 ---
 # <a name="rbacapplication-resource-type"></a>tipo de recurso rbacApplication
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Contêiner de gerenciamento de função para definições de função unificadas e atribuições de função para provedores Microsoft 365 RBAC. Atualmente, "Directory" é o único aplicativo RBAC compatível.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -50,3 +50,5 @@ Nenhum
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

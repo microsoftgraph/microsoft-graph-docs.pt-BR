@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9424055d5669b9279dede18b6eb3773da47d9b19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 508404a3360b2b59656dc31df6ec44f16f682cf4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533880"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991891"
 ---
 # <a name="recordoperation-resource-type"></a>tipo de recurso recordOperation
 
@@ -23,7 +23,7 @@ Esse tipo de recurso contém informações relacionadas à gravação de áudio.
 | Propriedade                       | Tipo                        | Descrição                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                                                                                                                               |
-| id                             | Cadeia de caracteres                      | A ID da operação do servidor. Somente leitura.                                                                                              |
+| id                             | String                      | A ID da operação do servidor. somente leitura.                                                                                              |
 | recordingAccessToken           | String                      | O token de acesso necessário para recuperar a gravação.                                                                                              |
 | recordingLocation              | String                      | O local onde a gravação está localizada.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura.                                                                                              |
@@ -66,3 +66,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

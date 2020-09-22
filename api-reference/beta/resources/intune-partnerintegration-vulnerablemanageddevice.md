@@ -3,14 +3,14 @@ title: tipo de recurso vulnerableManagedDevice
 description: Esta entidade representa um dispositivo associado a uma tarefa.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06d58fa38780c193175ea4502a8e902e1e68a768
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: e06e0a5597dc11340d6860675a15d58667fa9a48
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793158"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993613"
 ---
 # <a name="vulnerablemanageddevice-resource-type"></a>tipo de recurso vulnerableManagedDevice
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Esta entidade representa um dispositivo associado a uma tarefa.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar vulnerableManagedDevices](../api/intune-partnerintegration-vulnerablemanageddevice-list.md)|coleção [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md)|Listar Propriedades e relações dos objetos [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) .|
@@ -59,6 +59,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

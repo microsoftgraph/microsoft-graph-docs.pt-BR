@@ -3,14 +3,14 @@ title: tipo de recurso mobileAppTroubleshootingHistoryItem
 description: Item de histórico contido no evento de solução de problemas de aplicativo móvel.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71c1eeff0d7090ca8a60edab934591e6a2d982ce
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 14298388574375a0beb7e638cb64d19e093452bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388092"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993221"
 ---
 # <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>tipo de recurso mobileAppTroubleshootingHistoryItem
 
@@ -58,6 +58,9 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
+
 
 
 

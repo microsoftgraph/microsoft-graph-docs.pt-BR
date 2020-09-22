@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8cd63ed6f7ad8cdd40e42da130c4b1eb2f3fb6aa
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 78f62bb4752822d3b988327466fdf78a09b68b28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123346"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991730"
 ---
 # <a name="get-a-member"></a>Obter um membro
 
@@ -45,7 +45,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [User](../resources/user.md) ou [Group](../resources/group.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [User](../resources/user.md) ou [Group](../resources/group.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -72,3 +72,5 @@ Content-length: 100
   "displayName":"Demo User"
 }
 ```
+
+

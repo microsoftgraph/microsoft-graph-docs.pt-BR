@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e6c5689fd46ef68ef38727d92bbbfedcc6ad1e58
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 35e288b8ea07294eeca0569ed606a25d231e5796
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290290"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992808"
 ---
 # <a name="remove-owner"></a>Remover proprietário
 
@@ -107,3 +107,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

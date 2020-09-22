@@ -3,14 +3,14 @@ title: tipo de recurso deviceAppManagementTask
 description: Uma tarefa de gerenciamento de aplicativo de dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76ec2531f5c7697e65727efe8847b8021a1ccf7d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 073c0e23f2823809d53637bf17c452e6001d8815
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446692"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993711"
 ---
 # <a name="deviceappmanagementtask-resource-type"></a>tipo de recurso deviceAppManagementTask
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Uma tarefa de gerenciamento de aplicativo de dispositivo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceAppManagementTasks](../api/intune-partnerintegration-deviceappmanagementtask-list.md)|coleção [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|Listar Propriedades e relações dos objetos [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) .|
@@ -36,8 +36,8 @@ Uma tarefa de gerenciamento de aplicativo de dispositivo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|displayName|Cadeia de caracteres|O nome.|
-|description|Cadeia de caracteres|A descrição.|
+|displayName|String|O nome.|
+|description|String|A descrição.|
 |createdDateTime|DateTimeOffset|A data de criação.|
 |dueDateTime|DateTimeOffset|A data de conclusão.|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|A categoria. Os valores possíveis são: `unknown` e `advancedThreatProtection`.|
@@ -74,6 +74,9 @@ Veja a seguir uma representação JSON do recurso.
   "status": "String"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de enumeração userPfxIntendedPurpose
 description: Valores com suporte para a finalidade pretendida de um certificado PFX de usuário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fb7ee28f73762ec3db6bca213ea1d9e21b4353ce
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: be8b798dfc79bd291f3ce91021ea15ff5d36639f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462351"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993284"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>tipo de enumeração userPfxIntendedPurpose
 
@@ -26,10 +26,13 @@ Valores com suporte para a finalidade pretendida de um certificado PFX de usuár
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |não atribuídos|,0|Nenhuma função/uso atribuído.|
-|smimeEncryption|1|Válido para criptografia S/MIME.|
-|smimeSigning|duas|Válido para assinatura S/MIME.|
+|smimeEncryption|1 |Válido para criptografia S/MIME.|
+|smimeSigning|2 |Válido para assinatura S/MIME.|
 |VPN|4 |Válido para uso na VPN.|
 |detector|8 |Válido para uso em WiFi.|
+
+
+
 
 
 

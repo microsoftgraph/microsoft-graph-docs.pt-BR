@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: be594c14612e8957e052ba536a1cf3c74fe7cdf6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e1f0d250d73c998371f52ad8ab26374dd85b9b6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518956"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992843"
 ---
 # <a name="list-alerts"></a>Listar alertas
 
@@ -45,11 +45,23 @@ GET /security/alerts?$filter={property} eq '{property-value}' and {property} eq 
 Este método suporta os seguintes [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta:
 
 - `$count`
-- `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` retornará os principais resultados agregados de cada provedor de API de segurança.  
+- `$top` - Retorna os principais resultados agregados de cada provedor de API de segurança.  
+- `$filter`
+
+A tabela a seguir lista as palavras-chave `$filter` para cada nome de fornecedor.
+
+| Anotações do fornecedor      |palavra-chave $filter|
+|:----------|:----------|
+| Proteção Avançada contra Ameaças do Azure | Proteção Avançada contra Ameaças do Azure | 
+| Central de Segurança do Azure | ASC |
+| Microsoft Cloud App Security | MCAS |
+| Azure Active Directory Identity Protection | IPC |
+| Azure Sentinel | Azure Sentinel |
+| Proteção Avançada contra Ameaças do Microsoft Defender | Microsoft Defender ATP |
+| Office 365 | Não há suporte atualmente. |
 
 Para retornar um conjunto de propriedades alternativas, use o parâmetro de consulta OData `$select` para especificar o conjunto de propriedades de **alerta** que você deseja.  Por exemplo, para retornar as propriedades **assignedTo**, **category** e **severity**, adicione o seguinte à sua consulta: `$select=assignedTo,category,severity`.
 
@@ -144,3 +156,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

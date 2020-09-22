@@ -3,14 +3,14 @@ title: tipo de enumeração endpointSecurityConfigurationProfileType
 description: O tipo de perfil da política de segurança do ponto de extremidade.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e766ad484d26abd770e2655b1f75e455306ad82
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 5b3f3340a9e3aa5aa211b39176e9fe43d74b8bf8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793164"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993641"
 ---
 # <a name="endpointsecurityconfigurationprofiletype-enum-type"></a>tipo de enumeração endpointSecurityConfigurationProfileType
 
@@ -26,9 +26,9 @@ O tipo de perfil da política de segurança do ponto de extremidade.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Unknown.|
-|vírus|1|Vírus.|
-|windowsSecurity|duas|Segurança do Windows.|
-|bitLocker|3D|BitLocker.|
+|vírus|1 |Vírus.|
+|windowsSecurity|2 |Segurança do Windows.|
+|bitLocker|3 |BitLocker.|
 |fileVault|4 |FileVault.|
 |Firewall|5 |Firewall.|
 |firewallRules|6 |Regras de firewall.|
@@ -36,10 +36,13 @@ O tipo de perfil da política de segurança do ponto de extremidade.
 |deviceControl|8 |Controle de dispositivo.|
 |appAndBrowserIsolation|9 |Isolamento de aplicativo e navegador.|
 |exploitProtection|10 |Explorar proteção.|
-|Proteção WebProtection|11|Proteção da Web.|
+|Proteção WebProtection|11 |Proteção da Web.|
 |applicationControl|12 |Controle da aplicação.|
-|attackSurfaceReductionRules|Treze|Regras de redução da superfície de ataque.|
+|attackSurfaceReductionRules|13 |Regras de redução da superfície de ataque.|
 |accountProtection|14 |Proteção de conta.|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Tipo de recurso omaSettingDateTime
 description: Definição de datetime para configurações de OMA.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 013d42689496556c0890ff9d3809bf8c08444102
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e3c3f9f8fc36352a23885544942b11f49572373f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458534"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993760"
 ---
 # <a name="omasettingdatetime-resource-type"></a>Tipo de recurso omaSettingDateTime
 
@@ -28,7 +28,7 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|String|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|DateTimeOffset|Valor.|
@@ -52,6 +52,9 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

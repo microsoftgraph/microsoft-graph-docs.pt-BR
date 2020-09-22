@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 32c0cecc402570491c0025c0b4e0c88b74ed40fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 079b841e32058fd5989944528c524a437405f3f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521731"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993157"
 ---
 # <a name="plannerfavoriteplanreferencecollection-resource-type"></a>tipo de recurso plannerFavoritePlanReferenceCollection
 
@@ -22,7 +22,7 @@ O recurso **plannerFavoritePlanReferenceCollection** representa a coleção de r
 
 
 ## <a name="properties"></a>Propriedades
-Você pode definir as propriedades desse tipo aberto. Os nomes das propriedades `id` são valores dos recursos [plannerPlan](plannerplan.md) e seus valores devem ser objetos [plannerFavoritePlanReference](plannerfavoriteplanreference.md) . Para remover um item da lista favoritos, defina o valor da propriedade como `null`.
+Você pode definir as propriedades desse tipo aberto. Os nomes das propriedades são `id` valores dos recursos [plannerPlan](plannerplan.md) e seus valores devem ser objetos [plannerFavoritePlanReference](plannerfavoriteplanreference.md) . Para remover um item da lista favoritos, defina o valor da propriedade como `null` .
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -64,3 +64,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

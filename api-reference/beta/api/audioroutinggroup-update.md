@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 28cbf6662b09be81c6ffbafecbe1f888e596e3a8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f3c6e8779ed7890d276c4c77a8ae20468e65af44
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441309"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991710"
 ---
 # <a name="update-audio-routing-group"></a>Atualizar grupo de roteamento de áudio
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :-------------- | :--------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Não suportado                       |
 | Delegado (conta pessoal da Microsoft) | Não suportado                       |
-| Aplicativo     | Calls. JoinGroupCalls. All, calls. InitiateGroupCalls. All |
+| Aplicativo     | Calls. JoinGroupCalls. All, Calls.InitiateGroupCalls. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,12 +47,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-| receptores | String collection | Os participantes de destino no audioRoutingGroup. |
+| receptores | Coleção de cadeias de caracteres | Os participantes de destino no audioRoutingGroup. |
 | routingmode | String | Os valores possíveis são: `oneToOne` e `multicast`. |
-| fontes | String collection | O participante de origem no audioRoutingGroup. |
+| fontes | Coleção de cadeias de caracteres | O participante de origem no audioRoutingGroup. |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [audioRoutingGroup](../resources/audioroutinggroup.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [audioRoutingGroup](../resources/audioroutinggroup.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -134,3 +134,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

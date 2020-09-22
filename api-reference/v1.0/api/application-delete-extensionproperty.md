@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 861a14fcd1aa7d9d61f6e14f30297d1138dbf40d
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 0802969409d009e833500aa17ba3618442bef9ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289939"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992815"
 ---
 # <a name="delete-extensionproperty"></a>Delete extensionproperty
 
@@ -106,3 +106,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

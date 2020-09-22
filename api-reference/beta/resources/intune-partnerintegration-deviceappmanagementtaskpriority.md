@@ -3,14 +3,14 @@ title: tipo de enumeração deviceAppManagementTaskPriority
 description: Prioridade da tarefa de gerenciamento de aplicativos do dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6be602a53f1ef472ceb31a9ac8eb9060c1cbdc80
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e0aa00c4b68e43241a7857af3fbcec215cc1ea99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446670"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993704"
 ---
 # <a name="deviceappmanagementtaskpriority-enum-type"></a>tipo de enumeração deviceAppManagementTaskPriority
 
@@ -25,9 +25,12 @@ Prioridade da tarefa de gerenciamento de aplicativos do dispositivo.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Sem definição de prioridade.|
-|high|1|Prioridade alta.|
-|low|duas|Baixa prioridade|
+|Nenhuma|,0|Sem definição de prioridade.|
+|high|1 |Prioridade alta.|
+|low|2 |Baixa prioridade|
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cb6d649f3572f903de44b280aa692d10062d7110
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 1c41b100d8898c4d50e156708fd69d67ddcf755d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123374"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991744"
 ---
 # <a name="delete-administrativeunit"></a>Excluir administrativeUnit
 
@@ -97,3 +97,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

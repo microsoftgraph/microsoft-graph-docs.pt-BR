@@ -1,25 +1,25 @@
 ---
-title: List oauth2PermissionGrants
-description: Recupere uma lista de objetos oAuth2PermissionGrant, representando as autorizações de permissão delegadas.
+title: Lista oauth2PermissionGrants
+description: Recuperar uma lista de objetos oAuth2PermissionGrant, representando concessões de permissão delegadas.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: b90a692f7f9be1acee35d87466e5404633ee827f
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: aba0f22c3eda597309a2af0079a1e1f7aa99cf24
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383872"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992129"
 ---
-# <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
+# <a name="list-oauth2permissiongrants"></a>Lista oauth2PermissionGrants
 
 Namespace: microsoft.graph
 
-Recupere uma lista de entidades [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) , que representam as permissões delegadas concedidas para habilitar um aplicativo cliente para acessar uma API em nome do usuário.
+Recuperar uma lista de entidades [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md), que representam permissões delegadas concedidas para habilitar um aplicativo cliente para acessar uma API em nome do usuário.
 
 > [!NOTE]
-> Consultar as autorizações de permissão delegada para um usuário retornará apenas as concessões de permissões delegadas que são especificamente para o usuário específico. As permissões delegadas concedidas em nome de todos os usuários da organização _não_ estão incluídas na resposta.
+> Consultar as concessões de permissão delegada para um usuário só retornará permissões delegadas para o usuário específico. As permissões delegadas concedidas em nome de todos os usuários da organização _não_ são incluídas na resposta.
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory. Read. All, DelegatedPermissionGrant. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory. Read. All, DelegatedPermissionGrant. ReadWrite. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -138,3 +138,4 @@ Content-Length: 253
   ]
 }
 -->
+

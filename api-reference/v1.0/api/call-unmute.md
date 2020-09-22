@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ce43da407bae979b174c971e867a8302c220e31f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 85e6885588d8c43c5c7c9b3c7204cef45a02fd93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518648"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992451"
 ---
 # <a name="call-unmute"></a>chamada: ativar mudo
 
@@ -30,7 +30,7 @@ Para obter mais informações sobre como lidar com as operações de desativaç�
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Aplicativo                            | Nenhum                                        |
+| Aplicativo                            | Nenhum.                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) no corpo da resposta.
 
 >**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.
 
@@ -187,3 +187,4 @@ Content-Type: application/json
   ]
 }
 -->
+

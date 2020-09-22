@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 826c0699f5d3e2b98cf056816dec7d7ce4b1c6b7
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: bd61c123bf566b97a926c6db81169b704e9f0b93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109016"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992150"
 ---
 # <a name="user-exportpersonaldata"></a>usuário: exportPersonalData
 
@@ -119,3 +119,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

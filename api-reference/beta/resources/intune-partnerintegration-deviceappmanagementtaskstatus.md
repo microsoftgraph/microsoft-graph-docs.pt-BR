@@ -3,14 +3,14 @@ title: tipo de enumeração deviceAppManagementTaskStatus
 description: Status da tarefa de gerenciamento de aplicativos do dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7d3c27b874b97912daa249b365fd4015677cc746
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9d47b60bf805ba4f12345512c5d18b2c953c4467
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446663"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993662"
 ---
 # <a name="deviceappmanagementtaskstatus-enum-type"></a>tipo de enumeração deviceAppManagementTaskStatus
 
@@ -26,10 +26,13 @@ Status da tarefa de gerenciamento de aplicativos do dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|O estado é indefinido.|
-|função|1|A tarefa está pronta para revisão.|
-|active|duas|A tarefa foi aceita e está funcionando.|
-|Completed|3D|O trabalho está concluído.|
+|função|1 |A tarefa está pronta para revisão.|
+|active|2 |A tarefa foi aceita e está funcionando.|
+|Completed|3 |O trabalho está concluído.|
 |rejeitar|4 |A tarefa foi rejeitada.|
+
+
+
 
 
 

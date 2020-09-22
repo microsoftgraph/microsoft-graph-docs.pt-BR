@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 67ab94c8d384141390195fd2818ced2d5d052dba
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: b6780ab734373d82690e60137966cb10b93d8165
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289819"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992493"
 ---
 # <a name="delete-application"></a>Excluir aplicativo
 
@@ -100,3 +100,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
