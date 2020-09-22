@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ca90884220f65bca752fcabe2e0ffe37578cdf90
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 8ee3df9779d5c69ec35bdc4ac9d373554cb0728e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319659"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049944"
 ---
 # <a name="defaultuserrolepermissions-resource-type"></a>tipo de recurso defaultUserRolePermissions
 
@@ -60,3 +60,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Obter deviceHealthScriptAssignment
 description: Leia as propriedades e as relações do objeto deviceHealthScriptAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c94627f149506d47460a6aefcce3ae9b224e2d8
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 157e1816e4af68acbfda702315db8bbee7c9d93b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792398"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050679"
 ---
 # <a name="get-devicehealthscriptassignment"></a>Obter deviceHealthScriptAssignment
 
@@ -90,6 +90,9 @@ Content-Length: 622
   }
 }
 ```
+
+
+
 
 
 

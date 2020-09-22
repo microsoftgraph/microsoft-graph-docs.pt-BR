@@ -3,14 +3,14 @@ title: Acessar deviceComplianceDeviceOverview
 description: Leia as propriedades e as relações do objeto deviceComplianceDeviceOverview.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0b0f6fc0ae16221f26075c39c204609805e4e39
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 910cf107f1d62398e93e7503f79795b304bb3f81
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434228"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050924"
 ---
 # <a name="get-devicecompliancedeviceoverview"></a>Acessar deviceComplianceDeviceOverview
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -86,6 +86,9 @@ Content-Length: 432
   }
 }
 ```
+
+
+
 
 
 

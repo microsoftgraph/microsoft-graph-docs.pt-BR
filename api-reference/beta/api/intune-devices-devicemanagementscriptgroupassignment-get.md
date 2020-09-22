@@ -3,14 +3,14 @@ title: Obter deviceManagementScriptGroupAssignment
 description: Leia as propriedades e as relações do objeto deviceManagementScriptGroupAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a370b5feeecb53cf8af4f31032b552e50c8e3711
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f62d805c386a75af784fe7fabc699f13ef159df3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380260"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050686"
 ---
 # <a name="get-devicemanagementscriptgroupassignment"></a>Obter deviceManagementScriptGroupAssignment
 
@@ -79,6 +79,9 @@ Content-Length: 198
   }
 }
 ```
+
+
+
 
 
 

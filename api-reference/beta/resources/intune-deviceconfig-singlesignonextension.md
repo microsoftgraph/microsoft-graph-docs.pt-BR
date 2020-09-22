@@ -3,14 +3,14 @@ title: tipo de recurso singleSignOnExtension
 description: Representa uma extensão de logon único da Apple.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 91be31aca71c97ed5d872659f336714d9b58c9e0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4bac023984ee46ad4c98813931479617424669a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412899"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049321"
 ---
 # <a name="singlesignonextension-resource-type"></a>tipo de recurso singleSignOnExtension
 
@@ -41,6 +41,9 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.singleSignOnExtension"
 }
 ```
+
+
+
 
 
 

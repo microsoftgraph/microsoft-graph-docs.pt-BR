@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b953e911ba834b9707df33926e4a2a355653dcb3
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: b7f70e65831d435b01dd75d1d86241d77d16cdc9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845880"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051288"
 ---
 # <a name="get-schedule"></a>Obter cronograma
 
@@ -142,3 +142,4 @@ Content-length: 401
   ]
 }
 -->
+

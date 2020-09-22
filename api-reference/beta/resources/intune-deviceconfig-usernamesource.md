@@ -3,14 +3,14 @@ title: tipo de enumeração usernamename
 description: Fonte de nome de usuário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ee5ef7efb07bc6ce775a5edb5e4fc049337abf58
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e88011305f1371d2a2cac2a55db776616f47f844
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412550"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049167"
 ---
 # <a name="usernamesource-enum-type"></a>tipo de enumeração usernamename
 
@@ -26,8 +26,11 @@ Fonte de nome de usuário.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userPrincipalName|,0|Nome principal do usuário.|
-|primarySmtpAddress|1|Endereço SMTP principal.|
-|samAccountName|duas|O nome da conta Sam do usuário.|
+|primarySmtpAddress|1 |Endereço SMTP principal.|
+|samAccountName|2 |O nome da conta Sam do usuário.|
+
+
+
 
 
 

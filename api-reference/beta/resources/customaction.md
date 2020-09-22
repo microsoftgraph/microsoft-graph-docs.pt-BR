@@ -5,16 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e2a660659f8c0f3a2c6dc571e743884c54365a20
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5c71454a6647604d4155fc80c72ec48d22d85d03
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507321"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050007"
 ---
 # <a name="customaction-resource-type"></a>tipo de recurso customAction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ Representa qualquer ação personalizada que um rótulo pode fornecer, se config
 
 | Propriedade   | Tipo                                       | Descrição                                          |
 | :--------- | :----------------------------------------- | :--------------------------------------------------- |
-| nome       | String                                     | Nome da ação personalizada.                           |
+| nome       | Cadeia de caracteres                                     | Nome da ação personalizada.                           |
 | properties | Coleção [keyValuePair](keyvaluepair.md) | Propriedades, no formato par de valores chave, da ação. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -56,3 +56,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

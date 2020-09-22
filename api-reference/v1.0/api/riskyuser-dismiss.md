@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 25bbea620a48b22d4baef4f2e6dd9d2a5681c730
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: Auto
+ms.openlocfilehash: 996d64d4b370b1536d1c0af28d5479cc5cbb0e79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897579"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051316"
 ---
 # <a name="riskyuser-dismiss"></a>riskyUser: fechar
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | IdentityRiskyUser.ReadWrite.All |
+|Aplicativo | IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -92,4 +92,5 @@ Content-length: 39
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 

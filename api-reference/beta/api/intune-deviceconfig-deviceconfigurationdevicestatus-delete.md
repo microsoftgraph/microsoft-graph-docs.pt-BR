@@ -3,14 +3,14 @@ title: Excluir deviceConfigurationDeviceStatus
 description: Exclui deviceConfigurationDeviceStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5cb807d186408d6cd76a701b5b19bdf6a94338db
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 89a6defd512ab48535eb6da3361d4f54c4449d22
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792944"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050798"
 ---
 # <a name="delete-deviceconfigurationdevicestatus"></a>Excluir deviceConfigurationDeviceStatus
 
@@ -46,7 +46,6 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSWiredNetworkConfiguration/rootCertificateForServerValidation/deviceStatuses/{deviceConfigurationDeviceStatusId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSWiredNetworkConfiguration/identityCertificateForClientAuthentication/deviceStatuses/{deviceConfigurationDeviceStatusId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/deviceStatuses/{deviceConfigurationDeviceStatusId}
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication/deviceStatuses/{deviceConfigurationDeviceStatusId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation/{windows81TrustedRootCertificateId}/deviceStatuses/{deviceConfigurationDeviceStatusId}
 ```
 
@@ -75,6 +74,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

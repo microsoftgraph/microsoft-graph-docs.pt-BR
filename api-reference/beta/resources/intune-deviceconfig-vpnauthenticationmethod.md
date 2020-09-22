@@ -3,14 +3,14 @@ title: tipo de enumeração vpnAuthenticationMethod
 description: Método de autenticação VPN.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ef477b17b8ae7e8aedc3b95ce70b66115a3c8712
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 300243146175c4884c8f8f44691ba02fa796210c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123887"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049153"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>tipo de enumeração vpnAuthenticationMethod
 
@@ -30,6 +30,9 @@ Método de autenticação VPN.
 |sharedSecret|2 |Usar segredo compartilhado para autenticação.  Válido somente para iOS IKEv2.|
 |derivedCredential|3 |Use a credencial derivada para autenticação.|
 |azureAD|4 |Usar o Azure AD para autenticação.|
+
+
+
 
 
 

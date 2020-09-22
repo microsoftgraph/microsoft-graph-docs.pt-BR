@@ -3,14 +3,14 @@ title: Criar deviceManagementIntentDeviceSettingStateSummary
 description: Criar um novo objeto deviceManagementIntentDeviceSettingStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 187f194080922288d36f9cb5c4a91713e61bc5d2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2f6c4dc42b6f6c762500b062c01e178bd4c4256c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43326924"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050791"
 ---
 # <a name="create-devicemanagementintentdevicesettingstatesummary"></a>Criar deviceManagementIntentDeviceSettingStateSummary
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID|
+|id|Cadeia de caracteres|A ID|
 |settingName|Cadeia de caracteres|Nome de uma configuração|
 |compliantCount|Int32|Número de dispositivos em conformidade|
 |conflictCount|Int32|Número de dispositivos em conflito|
@@ -65,7 +65,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -107,6 +107,9 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
+
+
+
 
 
 

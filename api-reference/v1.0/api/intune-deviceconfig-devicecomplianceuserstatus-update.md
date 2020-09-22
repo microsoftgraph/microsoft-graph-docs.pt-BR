@@ -3,14 +3,14 @@ title: Atualizar deviceComplianceUserStatus
 description: Atualizar as propriedades de um objeto deviceComplianceUserStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 48bb44bdadd9fa9c3a029d3e4d48982493423057
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5ffe31e3a342a9527872be73ab081cca721dca1b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446155"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051988"
 ---
 # <a name="update-devicecomplianceuserstatus"></a>Atualizar deviceComplianceUserStatus
 
@@ -99,6 +99,9 @@ Content-Length: 336
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

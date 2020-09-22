@@ -3,14 +3,14 @@ title: tipo de recurso vpnOnDemandRule
 description: Definição de regra VPN sob demanda.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dd5724e4c2c1cfb5ca185dd8420011853812305a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: aaa72419ce12195a042592abceb86ec754ea7341
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412144"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049027"
 ---
 # <a name="vpnondemandrule-resource-type"></a>tipo de recurso vpnOnDemandRule
 
@@ -25,13 +25,13 @@ Definição de regra VPN sob demanda.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|SSIDs|Coleção String|Identificadores de conjuntos de serviços de rede (SSIDs).|
-|dnsSearchDomains|Coleção String|Domínios de pesquisa de DNS.|
-|probeUrl|String|Uma URL para sondar. Se essa URL for obtida com êxito (retornando um código de status HTTP 200) sem redirecionamento, essa regra será correspondente.|
+|SSIDs|Coleção de cadeias de caracteres|Identificadores de conjuntos de serviços de rede (SSIDs).|
+|dnsSearchDomains|Coleção de cadeias de caracteres|Domínios de pesquisa de DNS.|
+|probeUrl|Cadeia de caracteres|Uma URL para sondar. Se essa URL for obtida com êxito (retornando um código de status HTTP 200) sem redirecionamento, essa regra será correspondente.|
 |ação|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Ação. Os valores possíveis são: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
 |domainaction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Ação de domínio (aplicável somente quando a ação é avaliar conexão). Os valores possíveis são: `connectIfNeeded` e `neverConnect`.|
-|domínio|Coleção String|Domains (só é aplicável quando Action é Evaluate Connection).|
-|probeRequiredUrl|String|A URL obrigatória da sonda (aplicável somente quando Action é Evaluate Connection e domainaction é conectada se necessário).|
+|domínio|Coleção de cadeias de caracteres|Domains (só é aplicável quando Action é Evaluate Connection).|
+|probeRequiredUrl|Cadeia de caracteres|A URL obrigatória da sonda (aplicável somente quando Action é Evaluate Connection e domainaction é conectada se necessário).|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -61,6 +61,9 @@ Veja a seguir uma representação JSON do recurso.
   "probeRequiredUrl": "String"
 }
 ```
+
+
+
 
 
 

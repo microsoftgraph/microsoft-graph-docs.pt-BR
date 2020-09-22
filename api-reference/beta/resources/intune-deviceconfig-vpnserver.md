@@ -3,14 +3,14 @@ title: tipo de recurso vpnServer
 description: Definição do servidor VPN.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f687167b62e6b3a56f1deb76e3ee90c6ea7c62b7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b8054cea2a55ec9de260d2fcbc683aba341389b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420267"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048971"
 ---
 # <a name="vpnserver-resource-type"></a>tipo de recurso vpnServer
 
@@ -27,7 +27,7 @@ Definição do servidor VPN.
 |:---|:---|:---|
 |description|String|Descrição.|
 |address|Cadeia de caracteres|Endereço (endereço IP, FQDN ou URL)|
-|isDefaultServer|Boolean|Servidor padrão.|
+|isDefaultServer|Booliano|Servidor padrão.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -47,6 +47,9 @@ Veja a seguir uma representação JSON do recurso.
   "isDefaultServer": true
 }
 ```
+
+
+
 
 
 

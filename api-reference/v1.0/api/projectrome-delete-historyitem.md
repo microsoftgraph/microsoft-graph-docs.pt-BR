@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 084431ed1ad5ef6ff30986afe7a14037bbb4b5f5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: abc5a24b83ec964d7601bd08a9d0bfb5477267fd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810287"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051743"
 ---
 # <a name="delete-a-historyitem"></a>Excluir um historyItem
 
@@ -98,3 +98,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

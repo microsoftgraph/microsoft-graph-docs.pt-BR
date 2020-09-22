@@ -3,14 +3,14 @@ title: Atualizar cartToClassAssociation
 description: Atualiza as propriedades de um objeto cartToClassAssociation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d0101004e2824d7a39cf479c9ace9f969c123ba
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 19569f0a1cc155d0dce1bf123a6d9f6a6b80ad95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434377"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050973"
 ---
 # <a name="update-carttoclassassociation"></a>Atualizar cartToClassAssociation
 
@@ -53,19 +53,19 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [cartToC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |versão|Int32|Versão do CartToClassAssociation.|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
 |description|String|Descrição fornecida pelo administrador do CartToClassAssociation.|
-|deviceCartIds|Coleção String|Identificadores de carrinhos de dispositivos a serem associados às classes.|
-|classroomIds|Coleção String|Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.|
+|deviceCartIds|Coleção de cadeias de caracteres|Identificadores de carrinhos de dispositivos a serem associados às classes.|
+|classroomIds|Coleção de cadeias de caracteres|Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -113,6 +113,9 @@ Content-Length: 443
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso unsupportedDeviceConfigurationDetail
 description: Uma descrição do motivo pelo qual uma entidade não é suportada.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 59b54a1df17576999e9c3782191a9efa341b4b05
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a540d862a88168f1e1c195a87f289f520c0b6fed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412659"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049244"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>tipo de recurso unsupportedDeviceConfigurationDetail
 
@@ -26,7 +26,7 @@ Uma descrição do motivo pelo qual uma entidade não é suportada.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |mensagem|String|Uma mensagem explicando por que uma entidade não é suportada.|
-|NomeDaPropriedade|String|Se a mensagem estiver relacionada a uma propriedade específica na entidade original, o nome dessa propriedade.|
+|NomeDaPropriedade|Cadeia de caracteres|Se a mensagem estiver relacionada a uma propriedade específica na entidade original, o nome dessa propriedade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "propertyName": "String"
 }
 ```
+
+
+
 
 
 

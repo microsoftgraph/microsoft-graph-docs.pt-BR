@@ -3,14 +3,14 @@ title: tipo de enumeração vpnDeadPeerDetectionRate
 description: Determina com que frequência verificar se uma conexão de mesmo nível ainda está ativa
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 047d4f51767a180d89ee8a4eeb121978981d9d22
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4a5665bbbe8b55905beda7af8921e02bea72c5a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412291"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049118"
 ---
 # <a name="vpndeadpeerdetectionrate-enum-type"></a>tipo de enumeração vpnDeadPeerDetectionRate
 
@@ -26,9 +26,12 @@ Determina com que frequência verificar se uma conexão de mesmo nível ainda es
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |medium|,0|Médio|
-|nenhuma|1|Nenhum|
-|low|duas|Baixo|
-|high|3D|Alto|
+|Nenhuma|1 |Nenhum|
+|low|2 |Baixo|
+|high|3 |Alto|
+
+
+
 
 
 

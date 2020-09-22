@@ -3,14 +3,14 @@ title: Atualizar deviceHealthScript
 description: Atualiza as propriedades de um objeto deviceHealthScript.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5acd729b38bff70c2d44494528130517dae7c764
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 9389f389dce2a28e8ddd74295a7c9df3519defce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176810"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050777"
 ---
 # <a name="update-devicehealthscript"></a>Atualizar deviceHealthScript
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,8 +53,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do script de integridade do dispositivo|
-|publicador|Cadeia de Caracteres|Nome do editor de script de integridade do dispositivo|
+|id|Cadeia de caracteres|Identificador exclusivo do script de integridade do dispositivo|
+|publicador|String|Nome do editor de script de integridade do dispositivo|
 |versão|String|Versão do script de integridade do dispositivo|
 |displayName|Cadeia de caracteres|Nome do script de integridade do dispositivo|
 |description|String|Descrição do script de integridade do dispositivo|
@@ -63,18 +63,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 |createdDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de integridade do dispositivo foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de integridade do dispositivo foi modificado. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Boolean|Indicar se a assinatura do script precisa ser verificada|
-|runAs32Bit|Boolean|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
-|isGlobalScript|Boolean|Determina se este é o script proprietário da Microsoft. Scripts proprietários são somente leitura|
-|highestAvailableVersion|Cadeia de Caracteres|Versão mais recente disponível para um script proprietário da Microsoft|
+|enforceSignatureCheck|Booliano|Indicar se a assinatura do script precisa ser verificada|
+|runAs32Bit|Booliano|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
+|isGlobalScript|Booliano|Determina se este é o script proprietário da Microsoft. Scripts proprietários são somente leitura|
+|highestAvailableVersion|Cadeia de caracteres|Versão mais recente disponível para um script proprietário da Microsoft|
 |detectionScriptParameters|coleção [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Lista de objetos complexType DetectionScriptParameters.|
 |remediationScriptParameters|coleção [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Lista de objetos complexType RemediationScriptParameters.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -172,6 +172,9 @@ Content-Length: 1393
   ]
 }
 ```
+
+
+
 
 
 

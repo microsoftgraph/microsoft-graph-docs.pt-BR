@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 79d0035a0ee14fa047bd02b77e3a35cfa9b82ada
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 1dfb6e35caccdfd943e1c701bc265bdcc91c92e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682060"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051855"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -248,3 +248,4 @@ HTTP/1.1 202 Accpted
   "suppressions": [
   ]
 }-->
+

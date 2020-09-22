@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 38cb52e70b37bb87cc2410668924d0ccd83f9b05
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 518544215e141c46a6f99ebd84625404d4d61591
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44218380"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051204"
 ---
 # <a name="create-schedulinggroup"></a>Criar schedulingGroup
 
@@ -146,3 +146,4 @@ Content-length: 401
   ]
 }
 -->
+

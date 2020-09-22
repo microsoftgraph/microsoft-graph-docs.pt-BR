@@ -3,14 +3,14 @@ title: tipo de enumeração secureAssessmentAccountType
 description: Tipo de contas permitidas para o Windows10SecureAssessment ConfigurationAccount.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6eae52aade876f7097838b476c0865dba7986e68
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1bfae831ad9e21bee9438c5b0c776775f6ed726b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444836"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049454"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>tipo de enumeração secureAssessmentAccountType
 
@@ -26,9 +26,12 @@ Tipo de contas permitidas para o Windows10SecureAssessment ConfigurationAccount.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |azureADAccount|,0|Indica uma conta do Azure AD no formato AzureAD\username@tenant.com.|
-|domainAccount|1|Indica uma conta de domínio no formato domínio \ usuário ou user@domain.com.|
-|localAccount|duas|Indica uma conta local em formato de nome de usuário.|
-|localGuestAccount|3D|Indica uma conta de convidado local em formato de nome de teste.|
+|domainAccount|1 |Indica uma conta de domínio no formato domínio \ usuário ou user@domain.com.|
+|localAccount|2 |Indica uma conta local em formato de nome de usuário.|
+|localGuestAccount|3 |Indica uma conta de convidado local em formato de nome de teste.|
+
+
+
 
 
 

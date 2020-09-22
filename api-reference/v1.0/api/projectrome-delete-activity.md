@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 1ab0d5510ca8cb1a3a7376259904af22f1561014
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 47be9fbd755b5dbfa10cd88dca5fe66942494817
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807042"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051771"
 ---
 # <a name="delete-an-activity"></a>Excluir uma atividade
 
@@ -110,3 +110,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

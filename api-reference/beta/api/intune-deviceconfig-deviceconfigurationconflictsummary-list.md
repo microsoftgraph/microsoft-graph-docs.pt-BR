@@ -3,14 +3,14 @@ title: Listar deviceConfigurationConflictSummaries
 description: Listar Propriedades e relações dos objetos Propriedadesdeviceconfigurationconflictsummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8bd58b6bb5f74c73f08948443ce9f2c042320a74
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3a59953f5a49b0220aa8188a55e5f7c69d46c237
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433553"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050903"
 ---
 # <a name="list-deviceconfigurationconflictsummaries"></a>Listar deviceConfigurationConflictSummaries
 
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceConfigurationConflictSummary
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [propriedadesdeviceconfigurationconflictsummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [propriedadesdeviceconfigurationconflictsummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 495
+Content-Length: 536
 
 {
   "value": [
@@ -75,7 +75,8 @@ Content-Length: 495
         {
           "@odata.type": "microsoft.graph.settingSource",
           "id": "Id value",
-          "displayName": "Display Name value"
+          "displayName": "Display Name value",
+          "sourceType": "deviceIntent"
         }
       ],
       "id": "d5f22c23-2c23-d5f2-232c-f2d5232cf2d5",
@@ -87,6 +88,9 @@ Content-Length: 495
   ]
 }
 ```
+
+
+
 
 
 

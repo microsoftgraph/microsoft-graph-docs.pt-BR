@@ -3,14 +3,14 @@ title: Criar enrollmentProfile
 description: Criar um novo objeto enrollmentProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3eb88d96e9594ab984e9a0f9b47e5c5f663f227
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1fcd056e2f80afe63a01cfbd50f6c6137057a766
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43319155"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050518"
 ---
 # <a name="create-enrollmentprofile"></a>Criar enrollmentProfile
 
@@ -57,14 +57,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar enrollme
 |displayName|Cadeia de caracteres|Nome do perfil|
 |description|String|Descrição do perfil|
 |requiresUserAuthentication|Booliano|Indica se o perfil requer autenticação do usuário|
-|configurationEndpointUrl|String|URL de ponto de extremidade de configuração a ser usada para registro|
+|configurationEndpointUrl|Cadeia de caracteres|URL de ponto de extremidade de configuração a ser usada para registro|
 |Enableauthenticationviacompanyportal foi adicionada|Booliano|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa.|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Booliano|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -104,6 +104,9 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
+
+
+
 
 
 

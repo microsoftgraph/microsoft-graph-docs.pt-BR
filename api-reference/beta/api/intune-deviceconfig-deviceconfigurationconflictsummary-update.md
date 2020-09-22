@@ -3,14 +3,14 @@ title: Atualizar Propriedadesdeviceconfigurationconflictsummary
 description: Atualiza as propriedades de um objeto Propriedadesdeviceconfigurationconflictsummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a07341a3286b946c3a5630f4a765f9f1b59cd1c0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a148e34cca7167e82929925135ff547fe4bfdedb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433522"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050826"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>Atualizar Propriedadesdeviceconfigurationconflictsummary
 
@@ -54,14 +54,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [proprie
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|O conjunto de políticas em conflito com a configuração determinada|
-|id|String|A ID desse conjunto de diretivas conflitantes. Esta ID é as identificações de todas as políticas no ConflictingDeviceConfigurations na ordem lexicographical separadas por sublinhados.|
-|contributingSettings|Coleção String|O conjunto de configurações em conflito com as políticas determinadas|
+|id|Cadeia de caracteres|A ID desse conjunto de diretivas conflitantes. Esta ID é as identificações de todas as políticas no ConflictingDeviceConfigurations na ordem lexicographical separadas por sublinhados.|
+|contributingSettings|Coleção de cadeias de caracteres|O conjunto de configurações em conflito com as políticas determinadas|
 |deviceCheckinsImpacted|Int32|A contagem de check-ins impactados pelas políticas e configurações conflitantes|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [propriedadesdeviceconfigurationconflictsummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [propriedadesdeviceconfigurationconflictsummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -70,7 +70,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationConflictSummaryId}
 Content-type: application/json
-Content-length: 361
+Content-length: 398
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationConflictSummary",
@@ -78,7 +78,8 @@ Content-length: 361
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "Id value",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "sourceType": "deviceIntent"
     }
   ],
   "contributingSettings": [
@@ -93,7 +94,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 410
+Content-Length: 447
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationConflictSummary",
@@ -101,7 +102,8 @@ Content-Length: 410
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "Id value",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "sourceType": "deviceIntent"
     }
   ],
   "id": "d5f22c23-2c23-d5f2-232c-f2d5232cf2d5",
@@ -111,6 +113,9 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
+
+
+
 
 
 

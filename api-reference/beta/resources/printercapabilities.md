@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 03db36bffbff8d7704542f8f64f2a30aeea0072a
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 26d786d61f72df48f50d8241ff689f0d398ae03f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081010"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048880"
 ---
 # <a name="printercapabilities-complex-type"></a>tipo complexo printerCapabilities
 
@@ -32,7 +32,7 @@ Representa os recursos relatados por uma impressora.
 |duplexModes|coleção reduplexmode|A lista de modos duplex que são suportados pela impressora. Os valores válidos são descritos na tabela a seguir.|
 |queueBufferSizeInBytes|Int32|O tamanho máximo da fila de trabalhos de impressão que pode ser armazenado pela impressora.|
 |copiesPerJob|[integerRange](integerrange.md)|O intervalo de cópias por trabalho suportado pela impressora.|
-|término|coleção de canacabados|Concluir processos a impressora oferece suporte a um documento impresso.|
+|finishings|coleção de canacabados|Concluir processos a impressora oferece suporte a um documento impresso.|
 |mediaColors|Coleção de cadeias de caracteres|As cores de mídia (isto é, papel) suportadas pela impressora.|
 |mediaTypes|Coleção de cadeias de caracteres|Os tipos de mídia com suporte da impressora. Os valores válidos são descritos na tabela a seguir.|
 |mediaSizes|Coleção de cadeias de caracteres|Os tamanhos de mídia com suporte da impressora. Dá suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI, juntamente com qualquer tamanho personalizado suportado pela impressora associada.|
@@ -47,8 +47,8 @@ Representa os recursos relatados por uma impressora.
 |bottomMargins|Coleção Int32|Uma lista de margens inferiores suportadas (em mícrons) para a impressora.|
 |rightMargins|Coleção Int32|Uma lista de margens direita suportadas (em mícrons) para a impressora.|
 |leftMargins|Coleção Int32|Uma lista de margens esquerdas suportadas (em mícrons) para a impressora.|
-|Agrupamento|Booliano|True se a impressora suportar o Agrupamento ao imprimir muliple cópias de um documento com várias páginas; caso contrário, false.|
-|escalas|coleção redimensionamento|Escalas de impressão suportadas.|
+|collation|Booliano|True se a impressora suportar o Agrupamento ao imprimir muliple cópias de um documento com várias páginas; caso contrário, false.|
+|scalings|coleção redimensionamento|Escalas de impressão suportadas.|
 
 ## <a name="printerfeeddirection-values"></a>valores de printerFeedDirection
 
@@ -195,3 +195,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Tipo de recurso sharedPCConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso sharedPCConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b7000bf24940a6a57ac0b20f23fb5e09fb86ec2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2e5075cc1527f57af34e5b6a42953255b90c27da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413033"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049384"
 ---
 # <a name="sharedpcconfiguration-resource-type"></a>Tipo de recurso sharedPCConfiguration
 
@@ -37,10 +37,10 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -59,7 +59,7 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |setPowerPolicies|[habilitação](../resources/intune-shared-enablement.md)|Especifica se as políticas de energia padrão do computador compartilhado devem ser ativadas/desativadas. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |disablePowerPolicies|Boolean|Especifica se as políticas padrão de energia do PC compartilhado devem ser desabilitadas.|
 |signInOnResume|[habilitação](../resources/intune-shared-enablement.md)|Especifica o requisito para entrar sempre que o dispositivo é ativado do modo de suspensão. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|disableSignInOnResume|Booliano|Desabilita o requisito de entrar sempre que o dispositivo sai do modo de suspensão.|
+|disableSignInOnResume|Boolean|Desabilita o requisito de entrar sempre que o dispositivo sai do modo de suspensão.|
 |enabled|Boolean|Habilita o modo de PC compartilhado e aplica as políticas de PC compartilhadas.|
 |idleTimeBeforeSleepInSeconds|Int32|Especifica o tempo em segundos que um dispositivo deve ficar ocioso antes de o PC entrar em suspensão. Definir esse valor como 0 impede que o tempo limite de suspensão ocorra.|
 |kioskAppDisplayName|String|Especifica o texto de exibição para a conta mostrada na tela de entrada que inicializa o aplicativo especificado por SetKioskAppUserModelId. Aplicável somente quando KioskAppUserModelId está definido.|
@@ -146,6 +146,9 @@ Veja a seguir uma representação JSON do recurso.
   "fastFirstSignIn": "String"
 }
 ```
+
+
+
 
 
 

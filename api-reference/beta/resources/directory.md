@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ba7d1cb38e1b33d7007cf4613550868d2b634c11
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 9e2c3e750754f7932e55a315c909c5186bb5a4f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181368"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049818"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Tipo de recurso directory (itens excluídos)
 
@@ -40,7 +40,7 @@ Atualmente, a funcionalidade de itens excluídos só é suportada para o [aplica
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Um identificador exclusivo para o objeto; por exemplo, 12345678-9abc-def0-1234-56789abcde. Chave. Não anulável. Somente leitura.|
+|id|Cadeia de caracteres| Um identificador exclusivo para o objeto; por exemplo, 12345678-9abc-def0-1234-56789abcde. Chave. Não anulável. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -78,3 +78,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

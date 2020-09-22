@@ -3,14 +3,14 @@ title: tipo de enumeração visibilitySetting
 description: Estado de visibilidade genérico.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1d6c8eae2c8dbd2b14f98e3e7c5f7e9238c2b8ed
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 63f0e254c90b259f2d1756000c34b852433ac429
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049146"
 ---
 # <a name="visibilitysetting-enum-type"></a>tipo de enumeração visibilitySetting
 
@@ -26,8 +26,11 @@ Estado de visibilidade genérico.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|ocult|1|Ocultar.|
-|programa|duas|Mostrar.|
+|ocult|1 |Ocultar.|
+|programa|2 |Mostrar.|
+
+
+
 
 
 

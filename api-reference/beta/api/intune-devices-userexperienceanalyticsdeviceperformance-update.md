@@ -3,14 +3,14 @@ title: Atualizar userExperienceAnalyticsDevicePerformance
 description: Atualiza as propriedades de um objeto userExperienceAnalyticsDevicePerformance.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 054f050697c3425d757b5e3d2e89fba7ef3b6b9a
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: aecb06c539644770d2478533e6c66c46324ee09c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791383"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050567"
 ---
 # <a name="update-userexperienceanalyticsdeviceperformance"></a>Atualizar userExperienceAnalyticsDevicePerformance
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
 |deviceName|String|O nome do dispositivo de análise da experiência do usuário.|
 |modelo|String|O modelo de dispositivo de análise da experiência do usuário.|
 |fabricante|String|O fabricante do dispositivo de análise da experiência do usuário.|
@@ -140,6 +140,9 @@ Content-Length: 684
   "averageRestarts": 5.0
 }
 ```
+
+
+
 
 
 

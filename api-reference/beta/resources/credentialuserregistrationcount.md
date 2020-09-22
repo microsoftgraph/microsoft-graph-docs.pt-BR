@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: b291d871686b514474f754500d490be3ad331441
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c5fb3588c7d06f726c71c81279c0994fd0de4019
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458008"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050084"
 ---
 # <a name="credentialuserregistrationcount-resource-type"></a>tipo de recurso credentialUserRegistrationCount
 
@@ -30,7 +30,7 @@ Representa o estado atual de quantos usuários da sua organização estão regis
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| id | String | O identificador exclusivo da atividade. Somente leitura. |
+| id | Cadeia de caracteres | O identificador exclusivo da atividade. Somente leitura. |
 | totalUserCount | Int64 | Fornece a contagem total de usuários no locatário. |
 | userRegistrationCounts | coleção [userRegistrationCount](userregistrationcount.md) | Uma coleção de informações de status e contagem de registro para usuários em seu locatário. |
 
@@ -75,3 +75,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

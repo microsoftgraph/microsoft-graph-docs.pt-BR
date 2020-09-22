@@ -3,14 +3,14 @@ title: tipo de enumeração Propriedades automaticupdatemode
 description: Valores possíveis para o modo de atualização automática.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aa66c84b04c51af52ad8f0054639c5f98cb9c665
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e02f1a3ed99840382148d4f1434df667e2391739
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449122"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051113"
 ---
 # <a name="automaticupdatemode-enum-type"></a>tipo de enumeração Propriedades automaticupdatemode
 
@@ -24,11 +24,13 @@ Valores possíveis para o modo de atualização automática.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|notifyDownload|1|Notifique o download.|
-|autoInstallAtMaintenanceTime|duas|Instalação automática no momento da manutenção.|
-|autoInstallAndRebootAtMaintenanceTime|3D|Instalação automática e reinicialização no momento da manutenção.|
+|notifyDownload|1 |Notifique o download.|
+|autoInstallAtMaintenanceTime|2 |Instalação automática no momento da manutenção.|
+|autoInstallAndRebootAtMaintenanceTime|3 |Instalação automática e reinicialização no momento da manutenção.|
 |autoInstallAndRebootAtScheduledTime|4 |Instalação automática e reinicialização no horário agendado.|
 |autoInstallAndRebootWithoutEndUserControl|5 |Instalação e reinício automáticos sem controle de usuário final|
+
+
 
 
 

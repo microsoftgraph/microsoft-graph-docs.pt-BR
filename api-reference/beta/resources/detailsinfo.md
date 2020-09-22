@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f62a773bb65f5d323ad6f906e53467366f7956d0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c08dcb867f92bd65449be891bf0ae0e8a12a2459
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463050"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049868"
 ---
 # <a name="detailsinfo-resource-type"></a>tipo de recurso detailsInfo
 
@@ -40,3 +40,5 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "microsoft.graph.detailsInfo"
 }
 ```
+
+

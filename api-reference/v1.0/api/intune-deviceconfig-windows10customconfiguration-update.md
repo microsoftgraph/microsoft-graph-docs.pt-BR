@@ -3,14 +3,14 @@ title: Atualizar windows10CustomConfiguration
 description: Atualizar as propriedades de um objeto windows10CustomConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8794fd0856e8ee4b12d7273e9ac96e4bf5ce6be5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6ffce4d4c18203365d442af55b69378269ec8339
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456846"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051841"
 ---
 # <a name="update-windows10customconfiguration"></a>Atualizar windows10CustomConfiguration
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |omaSettings|Coleção [omaSetting](../resources/intune-deviceconfig-omasetting.md)|Configurações OMA. Essa coleção pode conter um máximo de 1.000 elementos.|
 
@@ -116,6 +116,9 @@ Content-Length: 576
   ]
 }
 ```
+
+
+
 
 
 

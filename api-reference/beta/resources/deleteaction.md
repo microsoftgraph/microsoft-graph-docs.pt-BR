@@ -6,16 +6,16 @@ title: DeleteAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 453be9ad3764081207cfa51e56b69111186ff87b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b8f00827a37ba9c010acd1b52e751bd55638afb3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507272"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049881"
 ---
 # <a name="deleteaction-resource-type"></a>Tipo de recurso DeleteAction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ A presença do recurso **DeleteAction** em uma [**itemActivity**][activity] indi
 | Nome da propriedade | Tipo   | Descrição
 |:--------------|:-------|:----------------------------------------------------
 | nome          | string | O nome do item que foi excluído.
-| objectType    | string | `File`ou `Folder`, dependendo do tipo do item excluído.
+| objectType    | cadeia de caracteres | `File` ou `Folder` , dependendo do tipo do item excluído.
 
 ## <a name="remarks"></a>Comentários
 
@@ -59,3 +59,5 @@ Registros de atividade de item atualmente só estão disponíveis no SharePoint 
   "suppressions": []
 }
 -->
+
+

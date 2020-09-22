@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b5b1072a2678e395976f2acd797182cbdfb3ee40
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 8ef079363d4951f269ea509534cecd2e6ae2a0f9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897159"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050099"
 ---
 # <a name="assignedlabel-resource-type"></a>tipo de recurso assignedLabel
 
@@ -23,8 +23,8 @@ Representa um rótulo de confidencialidade atribuído a um grupo do Microsoft 36
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|labelID|String|O identificador exclusivo do rótulo.|
-|displayName|String|O nome de exibição do rótulo. Somente leitura.|
+|labelID|Cadeia de caracteres|O identificador exclusivo do rótulo.|
+|displayName|Cadeia de caracteres|O nome de exibição do rótulo. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -59,3 +59,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

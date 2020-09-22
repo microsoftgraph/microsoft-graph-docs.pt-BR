@@ -3,14 +3,14 @@ title: tipo de enumeração ratingUnitedKingdomTelevisionType
 description: Rótulos de classificação de conteúdo de TV no Reino Unido
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 794bc4e6fd74dd59467b0b040faecdebd0c54b5d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4ae2c455980a1083bfe7f0d7e0d01a7dad3e7f30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444972"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049601"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>tipo de enumeração ratingUnitedKingdomTelevisionType
 
@@ -26,8 +26,11 @@ Rótulos de classificação de conteúdo de TV no Reino Unido
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todos os programas de TV|
-|Bloqueado|1|Não permitir que qualquer TV mostre conteúdo|
-|cuidadosa|duas|Permitindo conteúdo de TV com uma mensagem de aviso|
+|Bloqueado|1 |Não permitir que qualquer TV mostre conteúdo|
+|cuidadosa|2 |Permitindo conteúdo de TV com uma mensagem de aviso|
+
+
+
 
 
 

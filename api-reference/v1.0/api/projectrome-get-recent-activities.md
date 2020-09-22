@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: a3457428aec000b9fbab07ea5a4fca50dfaadc73
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5e7124e89208c427a196a33830ef5f02347a1095
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809240"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051736"
 ---
 # <a name="get-recent-user-activities"></a>Obter atividades recentes do usuário
 
@@ -186,3 +186,4 @@ Content-Type: application/json
   ],
   "tocPath": ""
 }-->
+

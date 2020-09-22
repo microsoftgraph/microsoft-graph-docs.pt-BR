@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 54f458e14cbda209d9c2d85f08df4c106db6ab00
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: Auto
+ms.openlocfilehash: 3ae18e201f5b768de9cc1456de186fdd6b9336b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007159"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048852"
 ---
 # <a name="printercreateoperation-resource-type"></a>tipo de recurso printerCreateOperation
 
@@ -24,12 +24,12 @@ Representa uma operação de registro de impressora de longa execução. Derivad
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Operação get](../api/printoperation-get.md) | [Operação de reoperação](printoperation.md) | Recupere uma operação de execução longa dentro do usuário atual ou do locatário do aplicativo. |
+| [Operação get](../api/printoperation-get.md) | [printOperation](printoperation.md) | Recupere uma operação de execução longa dentro do usuário atual ou do locatário do aplicativo. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|O identificador da operação. Somente leitura.|
+|id|Cadeia de caracteres|O identificador da operação. Somente leitura.|
 |status|[printOperationStatus](printoperationstatus.md)|O status da operação de registro. Contém o andamento da operação e se ela foi concluída com êxito. Somente leitura.|
 |createdDateTime|DateTimeOffset|O DateTimeOffset quando a operação foi criada. Somente leitura.|
 |certificado|Cadeia de caracteres|O certificado assinado criado durante o processo de registro. Somente leitura.|
@@ -69,3 +69,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

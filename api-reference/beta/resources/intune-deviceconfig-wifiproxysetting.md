@@ -3,14 +3,14 @@ title: tipo de enumeração wiFiProxySetting
 description: Configurações de proxy Wi-Fi.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cdbae03ce00e2effcb803540f534724f3a54ad3e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1cc3ea969a5998a18f0397d8a2e66daecfdc9453
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466367"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048888"
 ---
 # <a name="wifiproxysetting-enum-type"></a>tipo de enumeração wiFiProxySetting
 
@@ -25,9 +25,12 @@ Configurações de proxy Wi-Fi.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Nenhum proxy.|
-|Manual|1|Configurações de proxy manuais por endereço e porta.|
-|Automático|duas|Configurações de proxy automáticas via URL.|
+|Nenhuma|,0|Nenhum proxy.|
+|Manual|1 |Configurações de proxy manuais por endereço e porta.|
+|Automático|2 |Configurações de proxy automáticas via URL.|
+
+
+
 
 
 

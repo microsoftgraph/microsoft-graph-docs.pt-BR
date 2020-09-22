@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: 438e9ccf93899c6024eaf9dfb16cc0a6b1d61f5f
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 623287c617422f7d4d65674bd0317965ccebaacf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809820"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049997"
 ---
 # <a name="customtimezone-resource-type"></a>Tipo de recurso customTimeZone
 
@@ -64,3 +64,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

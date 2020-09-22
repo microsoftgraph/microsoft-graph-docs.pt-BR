@@ -3,14 +3,14 @@ title: tipo de enumeração safeSearchFilterType
 description: Especifica o nível de pesquisa segura (filtragem de conteúdo adulto) é necessário
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8585745d2f4e9c529e6ef56c9ce209b1da67f2ac
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6a799bc90544c2c5d65b51808b185ea905c7b54d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444874"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049524"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>tipo de enumeração safeSearchFilterType
 
@@ -26,8 +26,11 @@ Especifica o nível de pesquisa segura (filtragem de conteúdo adulto) é necess
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|impede|1|Filtragem mais rigorosa e estrita contra conteúdo adulto.|
-|moderado|duas|Filtragem moderada contra conteúdo adulto (os resultados de pesquisa válidos não serão filtrados).|
+|impede|1 |Filtragem mais rigorosa e estrita contra conteúdo adulto.|
+|moderado|2 |Filtragem moderada contra conteúdo adulto (os resultados de pesquisa válidos não serão filtrados).|
+
+
+
 
 
 

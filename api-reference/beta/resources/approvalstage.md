@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0edcb4af5ae6bbc154d0748b57ec83efcb3137f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df7e9ce4491ea7a887b79f79d354c9099ea9f5d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050138"
 ---
 # <a name="approvalstage-complex-type"></a>tipo complexo approvalStage
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +25,8 @@ Usado para a propriedade **approvalStages** das configurações de aprovação n
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
 | approvalStageTimeOutInDays |Int32 | O número de dias que uma solicitação pode aguardar uma resposta antes de ser automaticamente negada. |
-| isApproverJustificationRequired |Boolean | Indica se o aprovador deve fornecer uma justificativa para aprovar uma solicitação. |
-| isEscalationEnabled |Boolean | Se true, um ou mais aprovadores de escalonamento estão configurados neste estágio de aprovação. |
+| isApproverJustificationRequired |Booliano | Indica se o aprovador deve fornecer uma justificativa para aprovar uma solicitação. |
+| isEscalationEnabled |Booliano | Se true, um ou mais aprovadores de escalonamento estão configurados neste estágio de aprovação. |
 | escalationTimeInMinutes |Int32 | Se for necessário escalonamento, o tempo em que uma solicitação pode ser pendente é uma resposta de um Aprovador principal. |
 | primaryApprovers | coleção [userset](userset.md)| Os usuários que serão solicitados a aprovar solicitações. Uma coleção de [únicousuário](singleuser.md), [groupMembers](groupmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md) e [externalSponsors](externalsponsors.md). |
 | escalationApprovers | coleção [userset](userset.md)| Se o escalonamento estiver habilitado e os aprovadores primários não responderem antes do tempo de escalonamento, os escalationApprovers são os usuários que serão solicitados a aprovar solicitações. Pode ser uma coleção de [únicousuário](singleuser.md), [groupMembers](groupmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md) e [externalSponsors](externalsponsors.md).|
@@ -67,3 +67,5 @@ Veja a seguir uma representação JSON da fase solicitar aprovação.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 23a3d18a8a712ddff8470d91a677f3d0f18dabf2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2a4acec62c34240d4aa852c6f1960f0dc563d4b6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459332"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050133"
 ---
 # <a name="appscope-resource-type"></a>tipo de recurso appScope
 
@@ -28,8 +28,8 @@ Nenhum
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
 | id | string | ID de um contêiner ou recurso específico do aplicativo que representa o escopo da atribuição. Geralmente a ID imutável do recurso. O escopo de uma atribuição determina o conjunto de recursos para o qual a entidade recebeu acesso. Essa propriedade é obrigatória. |
-| type | String | Descreve o tipo de recurso específico do aplicativo representado pelo escopo do aplicativo. Fornecido para fins de exibição, de forma que uma interface do usuário possa transmitir ao usuário o tipo de recurso específico do aplicativo representado pelo escopo do aplicativo. Esta propriedade é somente leitura. |
-| displayName | cadeia de caracteres | Fornece o nome de exibição do recurso específico do aplicativo representado pelo escopo do aplicativo. Fornecido para fins de exibição, já que appScopeId é geralmente uma ID imutável inalterável e não humanamente legível. Esta propriedade é somente leitura. |
+| tipo | Cadeia de caracteres | Descreve o tipo de recurso específico do aplicativo representado pelo escopo do aplicativo. Fornecido para fins de exibição, de forma que uma interface do usuário possa transmitir ao usuário o tipo de recurso específico do aplicativo representado pelo escopo do aplicativo. Esta propriedade é somente leitura. |
+| displayName | string | Fornece o nome de exibição do recurso específico do aplicativo representado pelo escopo do aplicativo. Fornecido para fins de exibição, já que appScopeId é geralmente uma ID imutável inalterável e não humanamente legível. Esta propriedade é somente leitura. |
 
 ## <a name="relationships"></a>Relações
 
@@ -65,3 +65,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

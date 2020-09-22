@@ -3,14 +3,14 @@ title: Obter Propriedadesdeviceconfigurationconflictsummary
 description: Leia as propriedades e as relações do objeto Propriedadesdeviceconfigurationconflictsummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64c33c7cca4b5981cadb8b3f05a33198a181a3ea
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 780441166cdaa3040ee8eb2015dd5960f5800127
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433560"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050917"
 ---
 # <a name="get-deviceconfigurationconflictsummary"></a>Obter Propriedadesdeviceconfigurationconflictsummary
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 455
+Content-Length: 494
 
 {
   "value": {
@@ -77,7 +77,8 @@ Content-Length: 455
       {
         "@odata.type": "microsoft.graph.settingSource",
         "id": "Id value",
-        "displayName": "Display Name value"
+        "displayName": "Display Name value",
+        "sourceType": "deviceIntent"
       }
     ],
     "id": "d5f22c23-2c23-d5f2-232c-f2d5232cf2d5",
@@ -88,6 +89,9 @@ Content-Length: 455
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 736575ba8958a45cad76f7142967c2a629b0732a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 311f89b67549e6bc373029aef82c88ca0e592f3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458023"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050091"
 ---
 # <a name="credentialusagesummary-resource-type"></a>tipo de recurso credentialUsageSummary
 
@@ -30,10 +30,10 @@ Representa o estado atual de quantos usuários da sua organização estão usand
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| authMethod | cadeia de caracteres | Representa o método de autenticação usado pelo usuário. Os valores possíveis são `email`: `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` , (usado somente para redefinição de senha de autoatendimento `appCode`), `alternateMobileCall` `appNotification`, e (somente com suporte para registro). |
+| authMethod | cadeia de caracteres | Representa o método de autenticação usado pelo usuário. Os valores possíveis são: `email` , `mobileSMS` ,, `mobileCall` `officePhone` , `securityQuestion` (usado somente para redefinição de senha de autoatendimento),, `appNotification` `appCode` e  `alternateMobileCall` (somente com suporte para registro). |
 | failureActivityCount | Int64 | Fornece a contagem de redefinições ou dados de registro com falha. |
-| apresentam | cadeia de caracteres | Define o recurso a ser relatado. Os valores possíveis são `registration` : `reset`e. |
-| id | String | O identificador exclusivo da atividade. Somente leitura. |
+| apresentam | cadeia de caracteres | Define o recurso a ser relatado. Os valores possíveis são: `registration` e `reset` . |
+| id | Cadeia de caracteres | O identificador exclusivo da atividade. Somente leitura. |
 | successfulActivityCount | Int64 | Fornece a contagem de registros ou redefinições bem-sucedidas. |
 
 ## <a name="relationships"></a>Relações
@@ -73,3 +73,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

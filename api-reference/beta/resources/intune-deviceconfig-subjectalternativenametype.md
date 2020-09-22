@@ -3,14 +3,14 @@ title: tipo de enumeração subjectAlternativeNameType
 description: Opções de nome alternativo de entidade.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 14ed51cab266889a3358e2a619590c86f71bdb08
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 42a288ff23d51cb4d5d6e98a30dd55ad3533d709
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412736"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049272"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>tipo de enumeração subjectAlternativeNameType
 
@@ -25,11 +25,14 @@ Opções de nome alternativo de entidade.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Nenhum nome alternativo de entidade.|
-|emailAddress|1|Endereço de email.|
-|userPrincipalName|duas|Nome principal do usuário (UPN).|
+|Nenhuma|,0|Nenhum nome alternativo de entidade.|
+|emailAddress|1 |Endereço de email.|
+|userPrincipalName|2 |Nome principal do usuário (UPN).|
 |customAzureADAttribute|4 |Atributo personalizado do Azure AD.|
 |domainNameService|8 |DNS (serviço de nomes de domínio).|
+
+
+
 
 
 

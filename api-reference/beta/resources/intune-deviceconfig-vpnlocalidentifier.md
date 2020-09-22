@@ -3,14 +3,14 @@ title: tipo de enumeração vpnLocalIdentifier
 description: O tipo de identificador local da VPN
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c2dac49087edb0d21e640896fab5d012f6ef86b3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e6488dfa6ff9be571bac32cca0af35e24204d5cb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412151"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049035"
 ---
 # <a name="vpnlocalidentifier-enum-type"></a>tipo de enumeração vpnLocalIdentifier
 
@@ -26,8 +26,11 @@ O tipo de identificador local da VPN
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceFQDN|,0|Nome de domínio totalmente qualificado do dispositivo|
-|Empty|1|Vazio|
-|clientCertificateSubjectName|duas|Nome do assunto do certificado do cliente|
+|vazio|1 |Vazio|
+|clientCertificateSubjectName|2 |Nome do assunto do certificado do cliente|
+
+
+
 
 
 

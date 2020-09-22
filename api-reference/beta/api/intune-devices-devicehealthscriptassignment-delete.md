@@ -3,14 +3,14 @@ title: Excluir deviceHealthScriptAssignment
 description: Exclui deviceHealthScriptAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 33ebd602c3a30d0236f5ac59c0bce59992ee5e41
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 09c7f49d6d34904ca4d2245b5dd07b78296f45c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050693"
 ---
 # <a name="delete-devicehealthscriptassignment"></a>Excluir deviceHealthScriptAssignment
 
@@ -66,6 +66,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

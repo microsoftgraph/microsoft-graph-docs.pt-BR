@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 8505380b50e32e9c996f960ab2343efa7e372e4a
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 913531740211a698e00f1a8c62d177d79e6602a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050161"
 ---
 # <a name="approle-resource-type"></a>tipo de recurso appRole
 
@@ -28,12 +28,12 @@ Com o [appRoleAssignments](approleassignment.md), as funções de aplicativo pod
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|Conjunto de cadeias de caracteres|Especifica se esta função de aplicativo pode ser atribuída a usuários e grupos (definindo como `["User"]` ), a outros aplicativos (por configuração `["Application"]` ou ambos (por meio da configuração `["User", "Application"]` ). Funções de aplicativo que dão suporte à atribuição de entidades de serviço de outros aplicativos também são conhecidas como [permissões de aplicativo](/graph/auth/auth-concepts#microsoft-graph-permissions).|
+|allowedMemberTypes|Coleção de cadeias de caracteres|Especifica se esta função de aplicativo pode ser atribuída a usuários e grupos (definindo como `["User"]` ), a outros aplicativos (por configuração `["Application"]` ou ambos (por meio da configuração `["User", "Application"]` ). Funções de aplicativo que dão suporte à atribuição de entidades de serviço de outros aplicativos também são conhecidas como [permissões de aplicativo](/graph/auth/auth-concepts#microsoft-graph-permissions).|
 |description|String|A descrição da função de aplicativo. Isso é exibido quando a função de aplicativo está sendo atribuída e, se a função de aplicativo funciona como uma permissão de aplicativo, durante experiências de consentimento.|
 |displayName|Cadeia de caracteres|Nome para exibição da permissão que aparece nas experiências de consentimento e atribuição de função de aplicativo.|
 |id|Guid|Identificador de função exclusivo dentro da coleção **appRoles** . Ao criar uma nova função de aplicativo, um novo identificador GUID deve ser fornecido. |
 |isEnabled|Boolean|Ao criar ou atualizar uma função de aplicativo, isso deve ser definido como **true** (que é o padrão). Para excluir uma função, é necessário primeiro defini-la como **false**.  Nesse ponto, em uma chamada subsequente, essa função pode ser removida.|
-|tenham|String| Especifica se a função de aplicativo é definida no objeto [Application](application.md) ou na entidade [servicePrincipalName](serviceprincipal.md) . _Não_ deve ser incluído em solicitações POST ou patch. Somente leitura. |
+|tenham|Cadeia de caracteres| Especifica se a função de aplicativo é definida no objeto [Application](application.md) ou na entidade [servicePrincipalName](serviceprincipal.md) . _Não_ deve ser incluído em solicitações POST ou patch. Somente leitura. |
 |value|Cadeia de caracteres|Especifica o valor a ser incluído na `roles` declaração em tokens de ID e tokens de acesso Autenticando um usuário atribuído ou uma entidade de serviço. Não deve exceder 120 caracteres de comprimento. Os caracteres permitidos são `:` `!` `#` `$` `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` , bem como os caracteres nos intervalos `0-9` `A-Z` e `a-z` . Qualquer outro caractere, incluindo o caractere de espaço, não é permitido.  |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -72,3 +72,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

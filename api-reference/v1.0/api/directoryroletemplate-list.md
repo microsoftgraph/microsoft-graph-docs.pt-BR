@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 888d2a8ca68c462f3cc80c176b78e47188ca3949
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: b81d200ebb9eeead5fa4385de64daef2cb796e16
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181354"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052327"
 ---
 # <a name="list-directoryroletemplates"></a>Listar directoryRoleTemplates
 
@@ -111,3 +111,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

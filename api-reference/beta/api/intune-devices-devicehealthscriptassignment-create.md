@@ -3,14 +3,14 @@ title: Criar deviceHealthScriptAssignment
 description: Criar um novo objeto deviceHealthScriptAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 605b21c3de1a7408224c3544e6f3bbb7d4adf04f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 8d3de33569d5ce0fa0592dcb509187eeeb2a9b32
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792412"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050770"
 ---
 # <a name="create-devicehealthscriptassignment"></a>Criar deviceHealthScriptAssignment
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,9 +54,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceHe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de atribuição de script de integridade do dispositivo. Essa propriedade é somente leitura.|
+|id|Cadeia de caracteres|Chave da entidade de atribuição de script de integridade do dispositivo. Essa propriedade é somente leitura.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O grupo do Azure Active Directory que estamos direcionando o script para|
-|runRemediationScript|Boolean|Determinar se queremos executar somente o script de detecção ou executar o script de detecção e o script de correção|
+|runRemediationScript|Booliano|Determinar se queremos executar somente o script de detecção ou executar o script de detecção e o script de correção|
 |runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Agendamento de execução de script para o grupo de destino|
 
 
@@ -114,6 +114,9 @@ Content-Length: 575
   }
 }
 ```
+
+
+
 
 
 

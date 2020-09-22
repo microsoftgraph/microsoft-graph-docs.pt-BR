@@ -3,14 +3,14 @@ title: Excluir userExperienceAnalyticsDevicePerformance
 description: Exclui userExperienceAnalyticsDevicePerformance.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 789c09eadd39e96eea0f7a0bec0ce5b74a6425c0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2dec537dfdeceda51afc735679dd96e541f6f89a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43322523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050651"
 ---
 # <a name="delete-userexperienceanalyticsdeviceperformance"></a>Excluir userExperienceAnalyticsDevicePerformance
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

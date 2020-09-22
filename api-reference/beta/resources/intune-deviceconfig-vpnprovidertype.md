@@ -3,14 +3,14 @@ title: tipo de enumeração vpnProviderType
 description: Tipo de provedor para VPN por aplicativo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2809f0297ba952d1c302bc0597ab3e00bb33ab95
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 43b962235cda6622ca0d7d10d7da57f9f5181471
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412035"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048992"
 ---
 # <a name="vpnprovidertype-enum-type"></a>tipo de enumeração vpnProviderType
 
@@ -26,8 +26,11 @@ Tipo de provedor para VPN por aplicativo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|O tráfego de encapsulamento não é configurado explicitamente.|
-|appProxy|1|Tráfego de túnel na camada do aplicativo.|
-|packetTunnel|duas|Tráfego de túnel na camada IP.|
+|appProxy|1 |Tráfego de túnel na camada do aplicativo.|
+|packetTunnel|2 |Tráfego de túnel na camada IP.|
+
+
+
 
 
 

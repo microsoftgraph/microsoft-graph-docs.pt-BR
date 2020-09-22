@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: cd96a94d6e247d01b2643517afdde3759b67a182
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: fd407967b11d7a28f0d6275bb0d6cfa045b417a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807028"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051688"
 ---
 # <a name="create-or-replace-an-activity"></a>Criar ou substituir uma atividade
 
@@ -303,3 +303,4 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

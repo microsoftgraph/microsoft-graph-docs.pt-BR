@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 170f3b735b4f14173058efbaaa1c81b80490f020
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: d4bd76dc84ad41c6d412144d13a784bec4f6a9f7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895474"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050126"
 ---
 # <a name="archivedprintjob-resource-type"></a>tipo de recurso archivedPrintJob
 
@@ -23,13 +23,13 @@ Um registro de um trabalho de impressão "estado final" (concluído, anulado ou 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|O GUID do trabalho de impressão arquivado. Somente leitura.|
-|printerid|String|A ID da impressora para a qual o trabalho foi enfileirado. Somente leitura.|
+|id|Cadeia de caracteres|O GUID do trabalho de impressão arquivado. Somente leitura.|
+|printerid|Cadeia de caracteres|A ID da impressora para a qual o trabalho foi enfileirado. Somente leitura.|
 |ProcessingState|printJobProcessingState|O estado de processamento final do trabalho de impressão. Somente leitura.|
 |createdDateTime|DateTimeOffset|O dateTimeOffset quando o trabalho foi criado. Somente leitura.|
 |acquiredDateTime|DateTimeOffset|O dateTimeOffset quando o trabalho foi adquirido pela impressora, se houver. Somente leitura.|
 |completionDateTime|DateTimeOffset|O dateTimeOffset quando o trabalho foi concluído, cancelado ou anulado. Somente leitura.|
-|acquiredByPrinter|Boolean|True se o trabalho foi adquirido por uma impressora; caso contrário, false. Somente leitura.|
+|acquiredByPrinter|Booliano|True se o trabalho foi adquirido por uma impressora; caso contrário, false. Somente leitura.|
 |copiesPrinted|Int32|O número de cópias que foram impressas. Somente leitura.|
 |pageCount|Int32|O número total de páginas que foram impressas. Somente leitura.|
 |blackAndWhitePageCount|Int32|O número de páginas em preto e branco que foram impressas. Somente leitura.|
@@ -68,3 +68,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

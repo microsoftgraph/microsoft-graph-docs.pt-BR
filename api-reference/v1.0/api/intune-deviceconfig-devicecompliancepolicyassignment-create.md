@@ -3,14 +3,14 @@ title: Criar deviceCompliancePolicyAssignment
 description: Criar um novo objeto deviceCompliancePolicyAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d150014e8b6149bad3ccf9796afc89111ec31409
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 16259c0f7674a509dd2444f249539e3a91dcde15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43400061"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052107"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>Criar deviceCompliancePolicyAssignment
 
@@ -91,6 +91,9 @@ Content-Length: 221
   }
 }
 ```
+
+
+
 
 
 

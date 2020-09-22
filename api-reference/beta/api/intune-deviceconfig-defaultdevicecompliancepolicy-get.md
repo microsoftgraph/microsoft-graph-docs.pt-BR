@@ -3,14 +3,14 @@ title: Obter defaultDeviceCompliancePolicy
 description: Leia as propriedades e as relações do objeto defaultDeviceCompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2315bf2cea2ced96cbde1dbb26af70a033882a95
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 40d73ed6e3f3b35d7d7625c6d916c64c7c1f59bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434356"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050938"
 ---
 # <a name="get-defaultdevicecompliancepolicy"></a>Obter defaultDeviceCompliancePolicy
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -85,6 +85,9 @@ Content-Length: 440
   }
 }
 ```
+
+
+
 
 
 

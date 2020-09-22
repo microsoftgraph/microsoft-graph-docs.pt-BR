@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0a3011416bd526941b2cab7439f29194b1b6cde7
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 5a30a054686bea00e56b518df07ccbfac55eccab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44218487"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051274"
 ---
 # <a name="list-shifts"></a>Listar turnos
 
@@ -174,3 +174,4 @@ Content-length: 401
   ]
 }
 -->
+

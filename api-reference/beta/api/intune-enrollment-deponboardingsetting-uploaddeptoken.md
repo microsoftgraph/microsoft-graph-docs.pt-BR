@@ -3,14 +3,14 @@ title: Ação uploadDepToken
 description: Carrega um novo token do programa de registro de dispositivos
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc45d3007084dd4063def410b811d85365e40091
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ecba652effa9a5ac5cdfd2f220025342578f1646
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43319162"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050539"
 ---
 # <a name="uploaddeptoken-action"></a>Ação uploadDepToken
 
@@ -82,6 +82,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

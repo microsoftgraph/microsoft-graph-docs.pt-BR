@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 212f10e5794a55dec925d1ec32c37abf9708700b
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: Auto
+ms.openlocfilehash: 1fcbe019d1aa673d100cedf5904b529960cec9b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897558"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051330"
 ---
 # <a name="list-history"></a>Histórico de lista
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | IdentityRiskyUser.Read.All |
+|Aplicativo | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -38,7 +38,7 @@ GET /identityProtection/riskyUsers/{riskyUserId}/history/{riskyUserHistoryItemId
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -100,4 +100,5 @@ Content-Type: application/json
   ]
 }
 ```
+
 

@@ -3,14 +3,14 @@ title: Tipo de recurso importedWindowsAutopilotDeviceIdentity
 description: Dispositivos importados do Windows AutoPilot.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b13536a7a6f74b08979858bcf5270ca44ef5937
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3246f2ae1b250e71966efbb6f597833677e1c378
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439387"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051071"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>Tipo de recurso importedWindowsAutopilotDeviceIdentity
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Dispositivos importados do Windows AutoPilot.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar importedWindowsAutopilotDeviceIdentities](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md)|Coleção [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Lista as propriedades e relações de objetos [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).|
@@ -33,8 +33,8 @@ Dispositivos importados do Windows AutoPilot.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O GUID do objeto.|
-|orderIdentifier|String|ID do pedido do dispositivo do Windows AutoPilot.|
-|serialNumber|String|Número de série do dispositivo do Windows AutoPilot.|
+|orderIdentifier|Cadeia de caracteres|ID do pedido do dispositivo do Windows AutoPilot.|
+|serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Estado atual do dispositivo importado.|
@@ -67,6 +67,8 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
 
 
 

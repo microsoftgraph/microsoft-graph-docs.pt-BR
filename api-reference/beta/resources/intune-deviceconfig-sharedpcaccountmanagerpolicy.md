@@ -3,14 +3,14 @@ title: Tipo de recurso sharedPCAccountManagerPolicy
 description: Política do gerenciador de conta de PC compartilhado. Aplica-se somente quando o gerenciador de contas está habilitado.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 49026651cb2f6ff95cea24f5cd3a4b91686c4063
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d8032f13761525ecba702194e2ad0af6cc8b97e0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460025"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049398"
 ---
 # <a name="sharedpcaccountmanagerpolicy-resource-type"></a>Tipo de recurso sharedPCAccountManagerPolicy
 
@@ -49,6 +49,9 @@ Veja a seguir uma representação JSON do recurso.
   "removeAccountsBelowDiskFreePercentage": 1024
 }
 ```
+
+
+
 
 
 

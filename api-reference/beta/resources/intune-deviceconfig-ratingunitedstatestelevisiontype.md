@@ -3,14 +3,14 @@ title: tipo de enumeração ratingUnitedStatesTelevisionType
 description: Rótulos de classificação de conteúdo de TV nos Estados Unidos
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 99311d93dd7be12b23325cb01294a257d8c759ed
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5b081a42f726da3f2f6459aa6cbdad80fb8735fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444950"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049573"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>tipo de enumeração ratingUnitedStatesTelevisionType
 
@@ -26,13 +26,16 @@ Rótulos de classificação de conteúdo de TV nos Estados Unidos
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todos os programas de TV|
-|Bloqueado|1|Não permitir que qualquer TV mostre conteúdo|
-|childrenAll|duas|TV-Y, todos os filhos|
-|childrenAbove7|3D|TV-Y7, crianças da idade 7 e superior|
+|Bloqueado|1 |Não permitir que qualquer TV mostre conteúdo|
+|childrenAll|2 |TV-Y, todos os filhos|
+|childrenAbove7|3 |TV-Y7, crianças da idade 7 e superior|
 |geral|4 |TV-G, adequada para todas as idades|
 |parentalGuidance|5 |TV-PG, orientação dos pais|
 |childrenAbove14|6 |TV-14, crianças 14 e acima|
 |adultos|7 |TV-MA, somente adultos|
+
+
+
 
 
 

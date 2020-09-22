@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: bb61f7863f9ff8406bb39c796e9f592ab375f165
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: ace8b39358a5fea1645fd0ed46984d6d672897b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080853"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048838"
 ---
 # <a name="printerdefaults-resource-type"></a>tipo de recurso printerDefaults
 
@@ -25,20 +25,20 @@ Representa as configurações padrão da impressora. Verifique os [recursos](../
 |:-------------|:------------|:------------|
 |copiesPerJob|Int32|O número padrão de cópias impressas por trabalho.|
 |contentType|String|O tipo de conteúdo padrão (MIME) a ser usado durante o processamento de documentos.|
-|término|coleção de canacabados|O conjunto de finalidades padrão a ser aplicado aos trabalhos de impressão. Os valores válidos são descritos na tabela a seguir.|
-|mediaColor|String|A mídia padrão (como papel) em que a cor será impressa.
-|Mídia|String|O tipo de mídia padrão (como papel) para imprimir o documento. Os valores válidos são descritos na tabela a seguir.|
-|mediaSize|String|O tamanho de mídia padrão a ser usado. Dá suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI, juntamente com qualquer tamanho personalizado suportado pela impressora associada.
+|finishings|coleção de canacabados|O conjunto de finalidades padrão a ser aplicado aos trabalhos de impressão. Os valores válidos são descritos na tabela a seguir.|
+|mediaColor|Cadeia de caracteres|A mídia padrão (como papel) em que a cor será impressa.
+|mediaType|Cadeia de caracteres|O tipo de mídia padrão (como papel) para imprimir o documento. Os valores válidos são descritos na tabela a seguir.|
+|mediaSize|Cadeia de caracteres|O tamanho de mídia padrão a ser usado. Dá suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI, juntamente com qualquer tamanho personalizado suportado pela impressora associada.
 |pagesPerSheet|Int32|O número padrão de páginas de documento a ser impresso em cada folha.
 |orientation|a reorientação|A orientação padrão a ser usada ao imprimir o documento. Os valores válidos são descritos na tabela a seguir.|
-|outputBin|String|O compartimento de saída padrão a ser inserido é impresso no. Confira os [recursos](../api/printer-getcapabilities.md) da impressora para obter uma lista de bandejas de saída suportadas.|
+|outputBin|Cadeia de caracteres|O compartimento de saída padrão a ser inserido é impresso no. Confira os [recursos](../api/printer-getcapabilities.md) da impressora para obter uma lista de bandejas de saída suportadas.|
 |fitPdfToPage|Booliano|A configuração padrão do fitPdfToPage. True para ajustar cada página de um documento PDF a uma folha física de mídia; false para permitir que a impressora decida como dispor as impressões.|
 |multipageLayout|printMultipageLayout|A direção padrão para dispor páginas quando várias páginas estão sendo impressas por folha. Os valores válidos são descritos na tabela a seguir.|
 |colorMode|addcolormode|O modo de cor padrão a ser usado ao imprimir o documento. Os valores válidos são descritos na tabela a seguir.|
 |qualidade|printQuality|A qualidade padrão a ser usada ao imprimir o documento. Os valores válidos são descritos na tabela a seguir.|
 |duplexmode|o defaultduplexmode|A configuração duplex padrão (frente e verso) a ser usada ao imprimir um documento. Os valores válidos são descritos na tabela a seguir.|
-|polegada|Int32|A resolução padrão em DPI para usar ao imprimir o trabalho.|
-|ajuste|redimensionamento|Especifica como a impressora dimensiona os dados do documento para se ajustarem à mídia solicitada. Os valores válidos são descritos na tabela a seguir.|
+|dpi|Int32|A resolução padrão em DPI para usar ao imprimir o trabalho.|
+|scaling|redimensionamento|Especifica como a impressora dimensiona os dados do documento para se ajustarem à mídia solicitada. Os valores válidos são descritos na tabela a seguir.|
 
 ### <a name="printmultipagelayout-values"></a>valores de printMultipageLayout
 
@@ -168,3 +168,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

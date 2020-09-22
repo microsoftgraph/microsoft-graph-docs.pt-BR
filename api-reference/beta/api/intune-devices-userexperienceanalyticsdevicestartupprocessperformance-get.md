@@ -3,14 +3,14 @@ title: Obter userExperienceAnalyticsDeviceStartupProcessPerformance
 description: Leia as propriedades e as relações do objeto userExperienceAnalyticsDeviceStartupProcessPerformance.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c2c07df8d06c6e26da2812766afd0efaca469cb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 23603d4225be672bd863702b56109c0b5eeb4c8f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43424835"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050560"
 ---
 # <a name="get-userexperienceanalyticsdevicestartupprocessperformance"></a>Obter userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -83,6 +83,9 @@ Content-Length: 369
   }
 }
 ```
+
+
+
 
 
 

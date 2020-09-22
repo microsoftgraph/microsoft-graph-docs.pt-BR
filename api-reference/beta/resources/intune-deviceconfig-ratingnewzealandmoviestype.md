@@ -3,14 +3,14 @@ title: tipo de enumeração ratingNewZealandMoviesType
 description: Rótulos de classificação de filmes na Nova Zelândia
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5ac2acd28f0114b69f7f9c508cb3538ebf36fa81
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6ac706f414d091930cd49ee983abe04f7ed01cc2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445009"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049671"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>tipo de enumeração ratingNewZealandMoviesType
 
@@ -26,9 +26,9 @@ Rótulos de classificação de filmes na Nova Zelândia
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1|Não permitir conteúdo de filmes|
-|geral|duas|Adequado para audiência geral|
-|parentalGuidance|3D|A classificação PG recomenda orientação dos pais|
+|Bloqueado|1 |Não permitir conteúdo de filmes|
+|geral|2 |Adequado para audiência geral|
+|parentalGuidance|3 |A classificação PG recomenda orientação dos pais|
 |completa|4 |A classificação M é adequada para o público adulto|
 |agesAbove13|5 |A classificação do R13 é restrita às pessoas com mais de 13 anos|
 |agesAbove15|6 |A classificação do R15 é restrita a pessoas de 15 anos ou mais|
@@ -36,6 +36,9 @@ Rótulos de classificação de filmes na Nova Zelândia
 |agesAbove18|8 |A classificação do R18 é restrita a pessoas de 18 anos ou mais|
 |limitado|9 |A classificação R é restrita a uma determinada audiência|
 |agesAbove16Restricted|10 |A classificação RP16 requer que os espectadores de 16 acompanhados por um pai ou adulto|
+
+
+
 
 
 

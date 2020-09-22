@@ -5,12 +5,12 @@ title: Listar itens seguidos
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 10c3dba22df34b15f5c9cb17eefe7586ce4fb872
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 1c24795cb1682472c66a57a09dabadb2104d5e72
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124319"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052268"
 ---
 # <a name="list-followed-items"></a>Listar itens seguidos
 
@@ -97,3 +97,4 @@ Content-type: application/json
   ]
 }
 -->
+

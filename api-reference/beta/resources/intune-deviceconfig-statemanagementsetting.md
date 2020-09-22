@@ -3,14 +3,14 @@ title: tipo de enumeração stateManagementSetting
 description: Configuração de gerenciamento de estado.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3fb4b093bcce432398f2cc60bf10ef73f115f6d1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a32f21dfd6a575bc3abdc9265d8215becf0d7482
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412743"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049265"
 ---
 # <a name="statemanagementsetting-enum-type"></a>tipo de enumeração stateManagementSetting
 
@@ -26,8 +26,11 @@ Configuração de gerenciamento de estado.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|bloqueou|1|Bloqueou.|
-|autorizado|duas|Autorizado.|
+|bloqueou|1 |Bloqueou.|
+|autorizado|2 |Autorizado.|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso vpnProxyServer
 description: Servidor proxy VPN.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6cf550e25c1f777e9f78fd20bdf2863e79f491b2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fb89fb3b7da8f9f350767b75263c2532596b5faa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412028"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048985"
 ---
 # <a name="vpnproxyserver-resource-type"></a>tipo de recurso vpnProxyServer
 
@@ -47,6 +47,9 @@ Veja a seguir uma representação JSON do recurso.
   "port": 1024
 }
 ```
+
+
+
 
 
 

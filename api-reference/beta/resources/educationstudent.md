@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e64899cf56140246373c36428518ebd28bb136c7
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 355230339129a351f5a609292e7e7623a39a59b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909720"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049728"
 ---
 # <a name="educationstudent-resource-type"></a>Tipo de recurso educationStudent
 
@@ -28,10 +28,10 @@ Informações adicionais incluídas a um [educationUser](educationuser.md) que e
 | Propriedade       | Tipo            | Descrição                                     |
 | :------------- | :-------------- | :---------------------------------------------- |
 | birthDate      | Data            | Data de nascimento do aluno.                      |
-| externalId     | String          | ID do aluno no sistema de origem.         |
+| externalId     | Cadeia de caracteres          | ID do aluno no sistema de origem.         |
 | gender         | educationGender | Os valores possíveis são: `female`, `male`, `other`. |
-| grade          | String          | Nível de classificação atual do aluno.             |
-| graduationYear | String          | Ano que o aluno está graduando na escola. |
+| grade          | Cadeia de caracteres          | Nível de classificação atual do aluno.             |
+| graduationYear | Cadeia de caracteres          | Ano que o aluno está graduando na escola. |
 | studentNumber  | Cadeia de caracteres          | Número do aluno.                                 |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -69,3 +69,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

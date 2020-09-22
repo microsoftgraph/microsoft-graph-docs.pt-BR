@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 32ed190f39d84e4c756d265527f4f0a8bcaf73f5
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: f18b5d9906063a542ee76e7d69f66d01a5178f18
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509809"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049727"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
@@ -35,14 +35,14 @@ Esse recurso é um subtipo de [educationOrganization](educationorganization.md).
 | [Remover usuário](../api/educationschool-delete-users.md)                      | [educationUser](educationuser.md)                | Remova um **educationUser** da escola por meio da propriedade de navegação **users**.      |
 | [Obter administrativeUnit](../api/educationschool-get-administrativeunit.md) | [administrativeUnit](administrativeunit.md)      | Obtenha o **administrativeUnit** que corresponde a esse **educationSchool**.                |
 | [Atualizar](../api/educationschool-update.md)                                 | [educationSchool](educationschool.md)            | Atualize um objeto **educationSchool**.                                                       |
-| [Delete](../api/educationschool-delete.md)                                 | Nenhum                                             | Exclua um objeto **educationSchool**.                                                       |
+| [Excluir](../api/educationschool-delete.md)                                 | Nenhum(a)                                             | Exclua um objeto **educationSchool**.                                                       |
 | [Delta](../api/educationschool-delta.md)                                   | Coleção [educationSchool](educationschool.md) | Obter alterações incrementais para o **educationSchools**                                            |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade             | Tipo                                  | Descrição                                                                                                                                                          |
 | :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                   | String                                | GUID desta escola.                                                                                                                                                 |
+| id                   | Cadeia de caracteres                                | GUID desta escola.                                                                                                                                                 |
 | address              | [physicalAddress](physicaladdress.md) | Endereço da escola.                                                                                                                                               |
 | createdBy            | [identitySet](identityset.md)         | Entidade que criou a escola.                                                                                                                                       |
 | description          | String                                | Descrição da escola.                                                                                                                                           |
@@ -109,3 +109,5 @@ Veja a seguir uma representação JSON do recurso.
     "Error: Resource educationSchool has documented navigation properties, but we thought it was a complex type!"
   ]
 }-->
+
+

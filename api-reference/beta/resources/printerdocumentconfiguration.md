@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 3bd0235b7b0dd1cebe5298a1f2357cd4a9f1fd81
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: b5fa54c31ae6ec8e4ab4cf79cfac65ef832effd4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081351"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048831"
 ---
 # <a name="printerdocumentconfiguration-resource-type"></a>tipo de recurso printerDocumentConfiguration
 
@@ -25,22 +25,22 @@ Um grupo de configurações que uma impressora deve usar para imprimir um docume
 |:-------------|:------------|:------------|
 |pageRanges|coleção [integerRange](integerrange.md)|Os intervalos de páginas a serem impressos. Somente leitura.|
 |qualidade|printQuality|A qualidade de impressão a ser usada ao imprimir o trabalho. Os valores válidos são descritos na tabela abaixo. Somente leitura.|
-|polegada|Int32|A resolução a ser usada ao imprimir o trabalho, expresso em pontos por polegada (DPI). Somente leitura.|
+|dpi|Int32|A resolução a ser usada ao imprimir o trabalho, expresso em pontos por polegada (DPI). Somente leitura.|
 |feedDirection|printerFeedDirection|A direção a ser usada ao alimentar mídia na impressora. Os valores válidos são descritos na tabela a seguir. Somente leitura.|
 |orientation|a reorientação|A configuração de orientação que a impressora deve usar ao imprimir o trabalho. Os valores válidos são descritos na tabela a seguir.|
 |duplexmode|o defaultduplexmode|O modo duplex que a impressora deve usar ao imprimir o trabalho. Os valores válidos são descritos na tabela abaixo. Somente leitura.|
 |Copia|Int32|O número de cópias que devem ser impressas. Somente leitura.|
 |colorMode|addcolormode|O modo de cor que a impressora deve usar para imprimir o trabalho. Os valores válidos são descritos na tabela abaixo. Somente leitura.|
-|inputBin|String|O compartimento de entrada (bandeja) a ser usado ao imprimir. Confira os [recursos](../api/printer-getcapabilities.md) da impressora para obter uma lista de bandejas de entrada suportadas.|
-|outputBin|String|O compartimento de saída para fazer a impressão foi concluída no. Confira os [recursos](../api/printer-getcapabilities.md) da impressora para obter uma lista de bandejas de saída suportadas.|
-|mediaSize|String|O tamanho da mídiapara usar ao imprimir. Dá suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI, juntamente com qualquer tamanho personalizado suportado pela impressora associada.|
-|Margin|[Margem da](printmargin.md)|As configurações de margem a serem usadas ao imprimir.|
-|Mídia|String|O tipo de mídia padrão (como papel) para imprimir o documento. Os valores válidos são descritos na tabela a seguir.|
-|término|coleção de canacabados|Concluir os processos a serem usados ao imprimir.|
+|inputBin|Cadeia de caracteres|O compartimento de entrada (bandeja) a ser usado ao imprimir. Confira os [recursos](../api/printer-getcapabilities.md) da impressora para obter uma lista de bandejas de entrada suportadas.|
+|outputBin|Cadeia de caracteres|O compartimento de saída para fazer a impressão foi concluída no. Confira os [recursos](../api/printer-getcapabilities.md) da impressora para obter uma lista de bandejas de saída suportadas.|
+|mediaSize|Cadeia de caracteres|O tamanho da mídiapara usar ao imprimir. Dá suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI, juntamente com qualquer tamanho personalizado suportado pela impressora associada.|
+|margin|[Margem da](printmargin.md)|As configurações de margem a serem usadas ao imprimir.|
+|mediaType|Cadeia de caracteres|O tipo de mídia padrão (como papel) para imprimir o documento. Os valores válidos são descritos na tabela a seguir.|
+|finishings|coleção de canacabados|Concluir os processos a serem usados ao imprimir.|
 |pagesPerSheet|Int32|O número de páginas do documento a ser impresso em cada folha.
 |multipageLayout|printMultipageLayout|A direção para dispor páginas quando várias páginas estão sendo impressas por folha. Os valores válidos são descritos na tabela a seguir.|
-|COLLATE|Booliano|Se a impressora deve agrupar páginas Wehen imprimir várias cópias de um documento com várias páginas.|
-|ajuste|redimensionamento|Especifica como a impressora deve dimensionar os dados do documento para se ajustarem à mídia solicitada. Os valores válidos são descritos na tabela a seguir.|
+|collate|Booliano|Se a impressora deve agrupar páginas Wehen imprimir várias cópias de um documento com várias páginas.|
+|scaling|redimensionamento|Especifica como a impressora deve dimensionar os dados do documento para se ajustarem à mídia solicitada. Os valores válidos são descritos na tabela a seguir.|
 
 ### <a name="printquality-values"></a>valores de PrintQuality
 
@@ -169,3 +169,5 @@ Veja a seguir uma representação JSON do recurso.
 }
 
 ```
+
+
