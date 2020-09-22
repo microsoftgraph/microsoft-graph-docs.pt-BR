@@ -3,14 +3,14 @@ title: tipo de enumeração importedDeviceIdentityType
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3a0cd97598ad411aad8c63d0ccba9097889ef70a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fce266bdb09c1739550ce77931e069d5cf2858c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460809"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080177"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>tipo de enumeração importedDeviceIdentityType
 
@@ -26,8 +26,11 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Valor desconhecido de importedDeviceIdentityType.|
-|imei|1|A identidade do dispositivo é do tipo IMEI.|
-|serialNumber|duas|A identidade do dispositivo é do tipo número de série.|
+|imei|1 |A identidade do dispositivo é do tipo IMEI.|
+|serialNumber|2 |A identidade do dispositivo é do tipo número de série.|
+
+
+
 
 
 

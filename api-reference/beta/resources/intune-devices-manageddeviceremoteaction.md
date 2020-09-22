@@ -3,14 +3,14 @@ title: tipo de enumeração managedDeviceRemoteAction
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2edfe8739602697fa1ae8215e5c9c62d9805a664
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 0bf5b4be69ee49d84022b460b863254c9973086c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178028"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081129"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>tipo de enumeração managedDeviceRemoteAction
 
@@ -26,8 +26,8 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Ative|,0|Ainda não documentado|
-|delete|1|Ainda não documentado|
-|fullScan|duas|Ainda não documentado|
+|delete|1 |Ainda não documentado|
+|fullScan|2 |Ainda não documentado|
 |quickScan|3D|Ainda não documentado|
 |signatureUpdate|4 |Ainda não documentado|
 |revelar|5 |Ainda não documentado|
@@ -35,6 +35,9 @@ Ainda não documentado
 |rebootNow|7 |Ainda não documentado|
 |DeviceName|8 |Ainda não documentado|
 |syncDevice|9 |Ainda não documentado|
+
+
+
 
 
 

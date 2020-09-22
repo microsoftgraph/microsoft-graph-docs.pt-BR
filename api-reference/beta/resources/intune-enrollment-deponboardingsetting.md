@@ -3,14 +3,14 @@ title: tipo de recurso depOnboardingSetting
 description: O depOnboardingSetting representa uma instância do serviço Apple DEP que está sendo integrado ao Intune. A instância de serviço integrada gerencia um token Apple usado para sincronizar dados entre o Apple e o Intune.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06196156c45e9f2621a5edc8277d1c50d8cbd2d9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 85a5a75a3a6ae0a959cf8f363b67c438e17889bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460929"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080233"
 ---
 # <a name="deponboardingsetting-resource-type"></a>tipo de recurso depOnboardingSetting
 
@@ -30,8 +30,8 @@ O depOnboardingSetting representa uma instância do serviço Apple DEP que está
 |[Criar depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-create.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Criar um novo objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
 |[Excluir depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-delete.md)|Nenhum|Exclui [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).|
 |[Atualizar depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-update.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Atualiza as propriedades de um objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
-|[função getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String|Obter uma chave pública para usar para criptografar o token do programa de registro de dispositivo Apple|
-|[ação generateEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-generateencryptionpublickey.md)|String|Gerar uma chave pública para usar para criptografar o token do programa de registro de dispositivo Apple|
+|[função getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|Cadeia de caracteres|Obter uma chave pública para usar para criptografar o token do programa de registro de dispositivo Apple|
+|[ação generateEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-generateencryptionpublickey.md)|Cadeia de caracteres|Gerar uma chave pública para usar para criptografar o token do programa de registro de dispositivo Apple|
 |[Ação uploadDepToken](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|Nenhum|Carrega um novo token do programa de registro de dispositivos|
 |[Ação syncWithAppleDeviceEnrollmentProgram](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|Nenhum|Sincroniza entre o programa de registro de dispositivo Apple e o Intune|
 |[Ação shareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|Nenhuma|Ainda não documentado|
@@ -41,7 +41,7 @@ O depOnboardingSetting representa uma instância do serviço Apple DEP que está
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O UUID do objeto.|
+|id|Cadeia de caracteres|O UUID do objeto.|
 |appleIdentifier|Cadeia de caracteres|A ID da Apple usada para obter o token atual.|
 |tokenExpirationDateTime|DateTimeOffset|Quando o token expirará.|
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi integrado.|
@@ -50,12 +50,12 @@ O depOnboardingSetting representa uma instância do serviço Apple DEP que está
 |shareTokenWithSchoolDataSyncService|Booliano|Se o compartilhamento de token DEP está ou não habilitado com o serviço de sincronização de dados da escola.|
 |lastSyncErrorCode|Int32|Código de erro relatado pela Apple durante a última sincronização de Dep.|
 |TokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de token Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
-|tokenname|String|Nome amigável para token Dep|
+|tokenname|Cadeia de caracteres|Nome amigável para token Dep|
 |syncedDeviceCount|Int32|Obtém a contagem de dispositivos sincronizados|
 |dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o serviço Apple Dep|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |defaultIosEnrollmentProfile|[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)|Perfil de registro iOS padrão|
@@ -91,6 +91,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

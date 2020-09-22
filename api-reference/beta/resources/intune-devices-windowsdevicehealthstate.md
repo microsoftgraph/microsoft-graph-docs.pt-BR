@@ -3,14 +3,14 @@ title: tipo de enumeração windowsDeviceHealthState
 description: Estado de proteção do ponto de extremidade do computador
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1ce06c1b6c52266bb7d052a4524c6f4439973bde
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c24f0b022d60ef6a9b50d881fdaa05b88bd518c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43401747"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080653"
 ---
 # <a name="windowsdevicehealthstate-enum-type"></a>tipo de enumeração windowsDeviceHealthState
 
@@ -26,11 +26,14 @@ Estado de proteção do ponto de extremidade do computador
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |ordena|,0|O computador está limpo e nenhuma ação é necessária|
-|fullScanPending|1|O computador está em estado de verificação completa pendente|
-|rebootPending|duas|O computador está em estado de reinicialização pendente|
+|fullScanPending|1 |O computador está em estado de verificação completa pendente|
+|rebootPending|2 |O computador está em estado de reinicialização pendente|
 |manualStepsPending|4 |O computador está em estado de etapas manuais pendentes|
 |offlineScanPending|8 |O computador está em estado de verificação offline pendente|
 |muito|16 |O computador está em um estado de falha crítico|
+
+
+
 
 
 

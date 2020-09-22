@@ -5,16 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: ff4078938987c1d80462bd1bbdf8c17a90759edd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c2778dc08867acba2e458a041dc11aae65c0a9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447308"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079008"
 ---
 # <a name="onenoteoperation-resource-type"></a>tipo de recurso onenoteOperation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 O status de determinadas operações demoradas do OneNote.
 
@@ -47,12 +47,12 @@ Veja a seguir uma representação JSON do recurso.
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |A hora de início da operação.|
 |erro|[onenoteOperationError](onenoteoperationerror.md)|O erro retornado pela operação.|
-|id|string|A ID da operação. Somente leitura.|
+|id|string|A ID da operação. somente leitura.|
 |lastActionDateTime| DateTimeOffset |A hora da última ação da operação.|
 |resourceId|string|A ID do recurso.|
 |resourceLocation|string|O URI do recurso para o objeto. Por exemplo, o URI do recurso para uma página ou seção copiada. |
-|status|cadeia de caracteres|O status atual da operação: `notstarted`, `running`,, `completed``failed` |
-|percentComplete|string|A porcentagem concluída da operação se a operação ainda estiver `running` em status
+|status|cadeia de caracteres|O status atual da operação: `notstarted` , `running` , `completed` , `failed` |
+|percentComplete|string|A porcentagem concluída da operação se a operação ainda estiver em `running` status
 
 ## <a name="relationships"></a>Relações
 Nenhuma
@@ -73,3 +73,4 @@ Nenhuma
   "section": "documentation",
   "tocPath": ""
 }-->
+

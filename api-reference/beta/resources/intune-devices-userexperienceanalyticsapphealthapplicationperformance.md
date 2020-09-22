@@ -3,14 +3,14 @@ title: tipo de recurso userExperienceAnalyticsAppHealthApplicationPerformance
 description: A entidade de desempenho do aplicativo de análise da experiência do usuário contém detalhes de desempenho do aplicativo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e5c6e2c9292d11cc1a7384d0213a0adbd85921c3
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: dd66ccc6a4ae030e70d4eb2a2c638e8e72f647d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793170"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080989"
 ---
 # <a name="userexperienceanalyticsapphealthapplicationperformance-resource-type"></a>tipo de recurso userExperienceAnalyticsAppHealthApplicationPerformance
 
@@ -34,21 +34,18 @@ A entidade de desempenho do aplicativo de análise da experiência do usuário c
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do objeto de desempenho do aplicativo de análise da experiência do usuário.|
-|appName|Cadeia de caracteres|O nome do aplicativo.|
-|appFriendlyName|String|O nome amigável do aplicativo.|
-|appPublisher|String|O fornecedor do aplicativo.|
-|activeDevices|Int32|O número de dispositivos em que o aplicativo está ativo. Valores válidos-2147483648 a 2147483647|
-|totalAppUsageDuration|Int32|O tempo total de uso do aplicativo em minutos. Valores válidos-2147483648 a 2147483647|
-|totalAppCrashes|Int32|O número de falhas para o aplicativo. Valores válidos-2147483648 a 2147483647|
-|totalAppHangs|Int32|O número de suspensões para o aplicativo. Valores válidos-2147483648 a 2147483647|
-|meanTimeToFailure|Int32|O tempo médio de falha para o aplicativo em minutos. Valores válidos-2147483648 a 2147483647|
+|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do aplicativo de análise da experiência do usuário.|
+|appHangCount|Int32|O número de suspensões para o aplicativo. Valores válidos-2147483648 a 2147483647|
 |appHealthScore|Duplo|A pontuação de integridade do aplicativo. Valores válidos-1.79769313486232 E + 308 a 1.79769313486232 E + 308|
-|appHealthStatus|String|O status de integridade geral do aplicativo.|
+|appHealthStatus|Cadeia de caracteres|O status de integridade geral do aplicativo.|
 |allOrgsHealthScore|Duplo|A pontuação de integridade mediana do aplicativo em todas as organizações. Valores válidos-1.79769313486232 E + 308 a 1.79769313486232 E + 308|
-|allOrgsMeanTimeToFailure|Int32|O tempo médio de falha em todos os organizações expandidas para o aplicativo em minutos. Valores válidos-2147483648 a 2147483647|
-|tenantId|String|A ID do locatário associado a este objeto de aplicativo.|
-|memaTimeGenerated|String|O momento em que a agregação foi realizada no MEMA.|
+|activeDeviceCount|Int32|O número de dispositivos em que o aplicativo está ativo. Valores válidos-2147483648 a 2147483647|
+|appName|Cadeia de caracteres|O nome do aplicativo.|
+|appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
+|appPublisher|Cadeia de caracteres|O fornecedor do aplicativo.|
+|appUsageDuration|Int32|O tempo total de uso do aplicativo em minutos. Valores válidos-2147483648 a 2147483647|
+|appCrashCount|Int32|O número de falhas para o aplicativo. Valores válidos-2147483648 a 2147483647|
+|meanTimeToFailureInMinutes|Int32|O tempo médio de falha para o aplicativo em minutos. Valores válidos-2147483648 a 2147483647|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -65,22 +62,22 @@ Veja a seguir uma representação JSON do recurso.
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthApplicationPerformance",
   "id": "String (identifier)",
-  "appName": "String",
-  "appFriendlyName": "String",
-  "appPublisher": "String",
-  "activeDevices": 1024,
-  "totalAppUsageDuration": 1024,
-  "totalAppCrashes": 1024,
-  "totalAppHangs": 1024,
-  "meanTimeToFailure": 1024,
+  "appHangCount": 1024,
   "appHealthScore": "4.2",
   "appHealthStatus": "String",
   "allOrgsHealthScore": "4.2",
-  "allOrgsMeanTimeToFailure": 1024,
-  "tenantId": "String",
-  "memaTimeGenerated": "String"
+  "activeDeviceCount": 1024,
+  "appName": "String",
+  "appDisplayName": "String",
+  "appPublisher": "String",
+  "appUsageDuration": 1024,
+  "appCrashCount": 1024,
+  "meanTimeToFailureInMinutes": 1024
 }
 ```
+
+
+
 
 
 

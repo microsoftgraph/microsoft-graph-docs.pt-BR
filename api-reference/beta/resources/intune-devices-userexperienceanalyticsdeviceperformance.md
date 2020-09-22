@@ -3,14 +3,14 @@ title: tipo de recurso userExperienceAnalyticsDevicePerformance
 description: A entidade de desempenho do dispositivo de análise da experiência do usuário contém detalhes de desempenho de inicialização do dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2c4325ac78a1fc5f91c92fc4633d9d10146afd86
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 6f8e3c085163c8c6bd9e2f9f133717670e6fedae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790389"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080919"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>tipo de recurso userExperienceAnalyticsDevicePerformance
 
@@ -35,7 +35,7 @@ A entidade de desempenho do dispositivo de análise da experiência do usuário 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
 |deviceName|String|O nome do dispositivo de análise da experiência do usuário.|
 |modelo|String|O modelo de dispositivo de análise da experiência do usuário.|
 |fabricante|String|O fabricante do dispositivo de análise da experiência do usuário.|
@@ -90,6 +90,9 @@ Veja a seguir uma representação JSON do recurso.
   "averageRestarts": "4.2"
 }
 ```
+
+
+
 
 
 

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5d080f283401d9486de53095d3ad25029edbb14b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8206f2cef7996bd0abc64a1f99493b701c4730e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519236"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079637"
 ---
 # <a name="workbookcommentreply-resource-type"></a>tipo de recurso workbookCommentReply
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Representa uma resposta a um comentário do Excel.
 
@@ -69,3 +69,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

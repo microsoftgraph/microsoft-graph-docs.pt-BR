@@ -3,14 +3,14 @@ title: Tipo de recurso windowsDeviceADAccount
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2aad9235560c250d1ae7a4004bf6d6d9b9c3d77d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 757e91921b84c4b36ec6075e4d725d64e4aae7ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43401793"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080674"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>Tipo de recurso windowsDeviceADAccount
 
@@ -30,7 +30,7 @@ Herda de [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount
 |:---|:---|:---|
 |password|String|Ainda não documentado. Herda de [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
 |domainName|Cadeia de caracteres|Ainda não documentado|
-|userName|String|Ainda não documentado|
+|userName|Cadeia de caracteres|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -50,6 +50,9 @@ Veja a seguir uma representação JSON do recurso.
   "userName": "String"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de enumeração userExperienceAnalyticsOperatingSystemRestartCategor
 description: Categoria de reinicialização do sistema operacional
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4e4354fc49eb8a6d2e7d536eaf5fd18fb3376cc0
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: d78328cc9f44dbffca0085890a8c69184c2eac3b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793142"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080800"
 ---
 # <a name="userexperienceanalyticsoperatingsystemrestartcategory-enum-type"></a>tipo de enumeração userExperienceAnalyticsOperatingSystemRestartCategory
 
@@ -26,11 +26,16 @@ Categoria de reinicialização do sistema operacional
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Desconhecido|
-|restartWithUpdate|1|Reiniciar com atualização|
-|restartWithoutUpdate|duas|Reiniciar sem Atualizar|
+|restartWithUpdate|1 |Reiniciar com atualização|
+|restartWithoutUpdate|2 |Reiniciar sem Atualizar|
 |blueScreen|3D|Reinicialização de tela azul|
 |shutdownWithUpdate|4 |Desligar com atualização|
 |shutdownWithoutUpdate|5 |Desligar sem atualização|
+|longPowerButtonPress|6 |Prensa de botão de energia longa|
+|bootError|7 |Erro de inicialização|
+
+
+
 
 
 

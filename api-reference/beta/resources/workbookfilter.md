@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ruoyingl
-ms.openlocfilehash: 39ebe2f59e5741e4580ef5300400a0b7e480ffad
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a86c7bc0f9448ded2fbee40c4639cfb6d54f5f57
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808513"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079666"
 ---
 # <a name="workbookfilter-resource-type"></a>tipo de recurso workbookFilter
 
@@ -31,7 +31,7 @@ Gerencia a filtragem da coluna de uma tabela.
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |criteria|[workbookFilterCriteria](workbookfiltercriteria.md)|O filtro aplicado no momento à coluna fornecida. Somente leitura.|
@@ -69,3 +69,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

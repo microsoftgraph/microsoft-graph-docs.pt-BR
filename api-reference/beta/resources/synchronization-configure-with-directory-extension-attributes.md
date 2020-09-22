@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9b47e9e789a4012b785ed180c4f177b4dec73e41
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 086c56f4e52fd86a14e0ebf917a1e10170dccc4d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219148"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078042"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Configurar a sincronização com atributos de extensão de diretório
 
@@ -54,7 +54,7 @@ Authorization: Bearer {Token}
 }
 ```
 
-O `{servicePrincipalId}` é `60443998-8cf7-4e61-b05c-a53b658cb5e1`.
+O `{servicePrincipalId}` é `60443998-8cf7-4e61-b05c-a53b658cb5e1` .
 
 ## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>Listar trabalhos de sincronização no contexto da entidade de serviço 
 
@@ -79,7 +79,7 @@ Authorization: Bearer {Token}
 }
 ```
 
-O `{jobId}` é `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.
+O `{jobId}` é `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa` .
 
 ## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a>Encontre o nome do atributo de extensão de diretório que você precisa
 
@@ -219,15 +219,15 @@ Content-Type: application/json
 
 Use um editor de texto sem formatação de sua escolha (por exemplo, [bloco de notas + +](https://notepad-plus-plus.org/) ou [Editor JSON online](https://www.jsoneditoronline.org/)) para:
 
-1. Adicione uma [definição de atributo](synchronization-attributedefinition.md) para `extension_9d98asdfl15980a_Nickname` o atributo. 
+1. Adicione uma [definição de atributo](synchronization-attributedefinition.md) para o `extension_9d98asdfl15980a_Nickname` atributo. 
 
     - Em diretórios, encontre o diretório com o nome "Azure Active Directory" e, na matriz do objeto, localize aquele chamado **usuário**.
     - Adicione o novo atributo à lista, especificando o nome e o tipo, conforme mostrado no exemplo a seguir.
 
 2. Adicione um [mapeamento de atributos](synchronization-attributemapping.md) entre Extension_9d98asdfl15980a_Nickname e CommunityNickname.
 
-    - Em [synchronizationRules](synchronization-synchronizationrule.md), localize a regra que especifica o Azure ad como diretório de origem e Salesforce.com como o diretório de`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`destino ().
-    - Nos [Objectmappings](synchronization-objectmapping.md) da regra, encontre o mapeamento entre usuários (`"sourceObjectName": "User",   "targetObjectName": "User"`).
+    - Em [synchronizationRules](synchronization-synchronizationrule.md), localize a regra que especifica o Azure ad como diretório de origem e Salesforce.com como o diretório de destino ( `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` ).
+    - Nos [Objectmappings](synchronization-objectmapping.md) da regra, encontre o mapeamento entre usuários ( `"sourceObjectName": "User",   "targetObjectName": "User"` ).
     - Na matriz [attributeMappings](synchronization-attributemapping.md) do **objectmapping**, adicione uma nova entrada, conforme mostrado no exemplo a seguir.
 
     ```json
@@ -306,3 +306,5 @@ Se o esquema foi salvo com êxito, na próxima iteração do trabalho de sincron
   "suppressions": [
   ]
 }-->
+
+

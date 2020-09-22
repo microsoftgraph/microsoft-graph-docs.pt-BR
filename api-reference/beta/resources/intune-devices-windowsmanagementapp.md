@@ -3,14 +3,14 @@ title: tipo de recurso windowsManagementApp
 description: Entidade do aplicativo de gerenciamento do Windows.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa5f2189d0e4273ca287e7cd5ac2a58db60a3f67
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15a4b67bdbc1fe48d1c71e62df2e1db943f7ec9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419647"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080471"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>tipo de recurso windowsManagementApp
 
@@ -31,10 +31,10 @@ Entidade do aplicativo de gerenciamento do Windows.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para o aplicativo de gerenciamento do Windows|
-|availableVersion|String|Versão disponível do aplicativo de gerenciamento do Windows.|
+|id|Cadeia de caracteres|Identificador exclusivo para o aplicativo de gerenciamento do Windows|
+|availableVersion|Cadeia de caracteres|Versão disponível do aplicativo de gerenciamento do Windows.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |healthStates|coleção [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|A lista de Estados de integridade para o aplicativo de gerenciamento do Windows instalado.|
@@ -54,6 +54,9 @@ Veja a seguir uma representação JSON do recurso.
   "availableVersion": "String"
 }
 ```
+
+
+
 
 
 

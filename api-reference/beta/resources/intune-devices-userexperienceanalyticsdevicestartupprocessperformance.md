@@ -3,14 +3,14 @@ title: tipo de recurso userExperienceAnalyticsDeviceStartupProcessPerformance
 description: O desempenho do processo de inicialização do dispositivo de análise da experiência do usuário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3dad2eca6cffbf80bca0b03953e2614fa38fcf33
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 11f8f7b6dc4d217235778de0cb36661361be6e10
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389272"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080905"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocessperformance-resource-type"></a>tipo de recurso userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -34,8 +34,8 @@ O desempenho do processo de inicialização do dispositivo de análise da experi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do desempenho do processo de inicialização do dispositivo de análise de experiência do usuário.|
-|Process|String|Nome do processo de inicialização do dispositivo de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do desempenho do processo de inicialização do dispositivo de análise de experiência do usuário.|
+|Process|Cadeia de caracteres|Nome do processo de inicialização do dispositivo de análise da experiência do usuário.|
 |productName|Cadeia de caracteres|O nome do produto do processo de inicialização do dispositivo analítico da experiência do usuário.|
 |publicador|String|O fornecedor da experiência do usuário do processo de inicialização do dispositivo de análise.|
 |deviceCount|Int64|Contagem resumida do processo de inicialização do dispositivo de análise de experiência do usuário.|
@@ -65,6 +65,9 @@ Veja a seguir uma representação JSON do recurso.
   "totalImpactInMs": 1024
 }
 ```
+
+
+
 
 
 

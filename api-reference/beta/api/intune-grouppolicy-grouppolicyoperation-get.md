@@ -3,14 +3,14 @@ title: Obter groupPolicyOperation
 description: Leia as propriedades e as relações do objeto groupPolicyOperation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 62affe0fc04b0016aeb571996da4b7e1936ea775
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4a3cd64195d390c5cb49a8bdba1760d4b124c527
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454123"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078833"
 ---
 # <a name="get-grouppolicyoperation"></a>Obter groupPolicyOperation
 
@@ -81,6 +81,9 @@ Content-Length: 316
   }
 }
 ```
+
+
+
 
 
 

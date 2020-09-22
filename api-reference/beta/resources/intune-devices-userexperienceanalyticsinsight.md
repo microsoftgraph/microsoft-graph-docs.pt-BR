@@ -3,14 +3,14 @@ title: tipo de recurso userExperienceAnalyticsInsight
 description: A visão geral da análise da experiência do usuário é a recomendação de melhorar a pontuação de análise da experiência do usuário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40e82f0c950328c0a6937a38762c6a26344fb943
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: d000afacb82365e06c5728dd8eedc2e6eb4217dd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178812"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080891"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>tipo de recurso userExperienceAnalyticsInsight
 
@@ -25,8 +25,8 @@ A visão geral da análise da experiência do usuário é a recomendação de me
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userExperienceAnalyticsMetricId|Cadeia de Caracteres|O identificador exclusivo da visão geral da análise da experiência do usuário.|
-|insightid|Cadeia de Caracteres|O identificador exclusivo da visão geral da análise da experiência do usuário.|
+|userExperienceAnalyticsMetricId|Cadeia de caracteres|O identificador exclusivo da visão geral da análise da experiência do usuário.|
+|insightid|Cadeia de caracteres|O identificador exclusivo da visão geral da análise da experiência do usuário.|
 |values|coleção [userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)|O valor da visão da análise da experiência do usuário.|
 |severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|O valor da visão da análise da experiência do usuário. Os valores possíveis são: `none`, `informational`, `warning`, `error`.|
 
@@ -54,6 +54,9 @@ Veja a seguir uma representação JSON do recurso.
   "severity": "String"
 }
 ```
+
+
+
 
 
 

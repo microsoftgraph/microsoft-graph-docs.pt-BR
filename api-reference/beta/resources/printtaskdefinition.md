@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 013d2756455abebc0f20bbe5a1d186a0a4d65648
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: 970b4169dcf4d94eed01be7a15654daa51760151
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078308"
 ---
 # <a name="printtaskdefinition-resource-type"></a>tipo de recurso printTaskDefinition
 
@@ -26,18 +26,18 @@ Para obter detalhes sobre como usar esse recurso para adicionar suporte à impre
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar](../api/print-list-taskdefinitions.md) | coleção [printTaskDefinition](printtaskdefinition.md) | Obtenha uma lista completa de printTaskDefinitions criadas dentro da impressão universal. |
-| [Criar](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Criar um novo printTaskDefinition. |
+| [List](../api/print-list-taskdefinitions.md) | coleção [printTaskDefinition](printtaskdefinition.md) | Obtenha uma lista completa de printTaskDefinitions criadas dentro da impressão universal. |
+| [Create](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Criar um novo printTaskDefinition. |
 | [Update](../api/print-update-taskdefinition.md) | [printTaskDefinition](printtaskdefinition.md) | Atualizar um printTaskDefinition. |
 | [Delete](../api/print-delete-taskdefinition.md) | Nenhum | Excluir um printTaskDefinition. |
-| [Listar tarefas](../api/printtaskdefinition-list-tasks.md) | [multitarefa](printtask.md) | Obtém uma lista de tarefas que foram criadas com base nessa definição. A lista inclui tarefas em execução no momento e tarefas concluídas recentemente. |
-| [Obter tarefa](../api/printtask-get.md) | [multitarefa](printtask.md) | Obtém uma tarefa que foi criada com base nessa definição. |
+| [Listar tarefas](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Obtém uma lista de tarefas que foram criadas com base nessa definição. A lista inclui tarefas em execução no momento e tarefas concluídas recentemente. |
+| [Obter tarefa](../api/printtask-get.md) | [printTask](printtask.md) | Obtém uma tarefa que foi criada com base nessa definição. |
 | [Atualizar tarefa](../api/printtaskdefinition-update-task.md) | Nenhum | Atualizar uma tarefa que foi criada com base nessa definição. **Os aplicativos que registram gatilhos de tarefa são responsáveis por atualizar o status da tarefa quando o processamento é concluído, a menos que o printJob relacionado tenha sido Redirecionado para outra impressora.** A falha na conclusão do relatório fará com que o trabalho de impressão relacionado seja bloqueado da impressão e, eventualmente, excluído. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|O identificador do printTaskDefinition. Somente leitura.|
+|id|Cadeia de caracteres|O identificador do printTaskDefinition. Somente leitura.|
 |displayName|Cadeia de caracteres|O nome do printTaskDefinition.|
 |createdBy|[appIdentity](appidentity.md)|O aplicativo que criou o printTaskDefinition. Somente leitura.|
 
@@ -79,3 +79,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

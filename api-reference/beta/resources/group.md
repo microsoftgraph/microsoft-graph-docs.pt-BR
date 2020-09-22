@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 27745539ca9e8288e67d77565deea176f7534054
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: f226f781be5713d23fb2882c2e41254d8c2f23de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539112"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078441"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -326,3 +326,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

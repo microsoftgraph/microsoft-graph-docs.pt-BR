@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b7044f13f16a9d1126a5b1c72cdc86c3527f6b37
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: dd640e3ddef6b88f17449c31611ad6bd956ca0b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543265"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078973"
 ---
 # <a name="recordinginfo-resource-type"></a>tipo de recurso recordingInfo
 
@@ -23,7 +23,7 @@ Representa informações de gravação de um participante.
 | Propriedade        | Tipo    | Descrição|
 |:----------------|:--------|:----------|
 | Iniciador     | [identitySet](identitySet.md) | As identidades do iniciador de gravação. |
-| recordingStatus | String | Os valores possíveis são `unknown`: `notRecording`, `recording`,, `failed`ou. |
+| recordingStatus | Cadeia de caracteres | Os valores possíveis são: `unknown` , `notRecording` , `recording` , ou `failed` . |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -55,3 +55,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

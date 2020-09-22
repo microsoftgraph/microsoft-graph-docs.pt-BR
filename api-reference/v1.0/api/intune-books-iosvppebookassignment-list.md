@@ -3,14 +3,14 @@ title: Listar iosVppEBookAssignments
 description: Listar propriedades e relações dos objetos iosVppEBookAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5edcc5cb1c6cd074ac26ca57793d34fe25292b58
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1bef2a479318d9952b2c97822453b50b95e50bfb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467536"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077937"
 ---
 # <a name="list-iosvppebookassignments"></a>Listar iosVppEBookAssignments
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -78,6 +78,9 @@ Content-Length: 299
   ]
 }
 ```
+
+
+
 
 
 

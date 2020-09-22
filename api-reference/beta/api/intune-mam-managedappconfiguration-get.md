@@ -3,14 +3,14 @@ title: Get managedAppConfiguration
 description: Ler propriedades e relações do objeto managedAppConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 08411b22153d6ce9ef7c96477d50902feaee5fdc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bbba29e351c64238e00217f4679d5815760e2e47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455968"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078700"
 ---
 # <a name="get-managedappconfiguration"></a>Get managedAppConfiguration
 
@@ -94,6 +94,9 @@ Content-Length: 618
   }
 }
 ```
+
+
+
 
 
 

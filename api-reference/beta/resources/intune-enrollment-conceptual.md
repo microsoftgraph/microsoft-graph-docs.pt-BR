@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d5611e7819756803bceb079d9ef1d324ec39a7d0
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 250303d1aad682e3f77dfbdfdccb335802e72b51
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179197"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080352"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Registrar dispositivos de propriedade corporativa por meio do Intune
 
@@ -50,6 +50,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar dispositivos c
 - [Certificado de gerenciamento com impressão digital](intune-enrollment-managementcertificatewiththumbprint.md)
 - [Configurações de experiência iniciais](intune-enrollment-outofboxexperiencesettings.md)
 - [Plataforma](intune-enrollment-platform.md)
+- [Limite de registro sugerido](intune-enrollment-suggestedenrollmentlimit.md)
 - [Atribuição do perfil de implantação do Windows Autopilot](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Identidade do dispositivo do Windows Autopilot](intune-enrollment-windowsautopilotdeviceidentity.md)
 - [Tipo de dispositivo do Windows Autopilot](intune-enrollment-windowsautopilotdevicetype.md)
@@ -60,3 +61,5 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar dispositivos c
 - [Tipo de uso do dispositivo Windows](intune-enrollment-windowsdeviceusagetype.md)
 - [Configurações de tela de status de registro do Windows](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Tipo de usuário do Windows](intune-enrollment-windowsusertype.md)
+
+

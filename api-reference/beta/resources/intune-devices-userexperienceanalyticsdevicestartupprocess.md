@@ -3,14 +3,14 @@ title: tipo de recurso userExperienceAnalyticsDeviceStartupProcess
 description: Os detalhes do processo de inicialização do dispositivo de análise da experiência do usuário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 880db84375825c9c343221c537c50f40644bc33c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9321c6b133d8017eef442944307de52f9f17ed78
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382813"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080912"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocess-resource-type"></a>tipo de recurso userExperienceAnalyticsDeviceStartupProcess
 
@@ -34,9 +34,9 @@ Os detalhes do processo de inicialização do dispositivo de análise da experi�
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do processo de inicialização do dispositivo de análise da experiência do usuário.|
-|managedDeviceId|String|A ID do dispositivo de análise da experiência do usuário.|
-|Process|String|Nome do processo de inicialização do dispositivo de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do processo de inicialização do dispositivo de análise da experiência do usuário.|
+|managedDeviceId|Cadeia de caracteres|A ID do dispositivo de análise da experiência do usuário.|
+|Process|Cadeia de caracteres|Nome do processo de inicialização do dispositivo de análise da experiência do usuário.|
 |productName|Cadeia de caracteres|O nome do produto do processo de inicialização do dispositivo analítico da experiência do usuário.|
 |publicador|String|O fornecedor da experiência do usuário do processo de inicialização do dispositivo de análise.|
 |startupImpactInMs|Int32|Impacto do processo de inicialização do dispositivo de análise de experiência do usuário em milissegundos.|
@@ -63,6 +63,9 @@ Veja a seguir uma representação JSON do recurso.
   "startupImpactInMs": 1024
 }
 ```
+
+
+
 
 
 

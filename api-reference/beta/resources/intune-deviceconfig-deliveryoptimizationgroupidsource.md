@@ -3,14 +3,14 @@ title: tipo de recurso deliveryOptimizationGroupIdSource
 description: Tipos de suporte a GroupId
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4a4edf256e7783ea572f73b5561dccc6c8d994e2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69760d180e962e82dd3c9a116a6185e29f955d9e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456992"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078378"
 ---
 # <a name="deliveryoptimizationgroupidsource-resource-type"></a>tipo de recurso deliveryOptimizationGroupIdSource
 
@@ -41,6 +41,9 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.deliveryOptimizationGroupIdSource"
 }
 ```
+
+
+
 
 
 

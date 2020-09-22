@@ -3,14 +3,14 @@ title: tipo de enumeração iTunesPairingMode
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8902edc633de5084c57ee0bb7389f0eb21838ee5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 142b8713b14d2706b4a9d49fe0edb9f5c12f2a62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460726"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079911"
 ---
 # <a name="itunespairingmode-enum-type"></a>tipo de enumeração iTunesPairingMode
 
@@ -26,8 +26,11 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |validar|,0|Emparelhamento não permitido|
-|permitiu|1|Emparelhamento permitido|
-|requiresCertificate|duas|Certificado necessário para emparelhar com iTunes|
+|permitiu|1 |Emparelhamento permitido|
+|requiresCertificate|2 |Certificado necessário para emparelhar com iTunes|
+
+
+
 
 
 

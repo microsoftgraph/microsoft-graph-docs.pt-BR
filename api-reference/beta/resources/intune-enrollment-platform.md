@@ -3,14 +3,14 @@ title: tipo de enumeração de plataforma
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4e523988f13aa94199882405d5ba0fa62c0ec043
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 34181ab9d7f2563af6718e3fc277248aaf0fb43d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460682"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079925"
 ---
 # <a name="platform-enum-type"></a>tipo de enumeração de plataforma
 
@@ -26,11 +26,14 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Plataforma de dispositivo desconhecida|
-|emiti|1|Plataforma de dispositivo IOS|
-|Android|duas|Plataforma do dispositivo Android|
-|Windows|3D|Plataforma de dispositivo do Windows|
+|emiti|1 |Plataforma de dispositivo IOS|
+|Android|2 |Plataforma do dispositivo Android|
+|Windows|3 |Plataforma de dispositivo do Windows|
 |windowsMobile|4 |Plataforma de dispositivo WindowsMobile|
 |macOS|5 |Plataforma de dispositivo Mac|
+
+
+
 
 
 

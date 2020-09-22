@@ -3,14 +3,14 @@ title: tipo de recurso userExperienceAnalyticsDeviceStartupHistory
 description: A experiência do usuário da entidade de histórico de inicialização do dispositivo de análise contém detalhes do histórico de desempenho da inicialização.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4eccd2c2e07e088d501b6564b1cec501ab4baae0
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 1e907b162082f8622c50bc7b7c9b4610dfab7867
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791768"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080926"
 ---
 # <a name="userexperienceanalyticsdevicestartuphistory-resource-type"></a>tipo de recurso userExperienceAnalyticsDeviceStartupHistory
 
@@ -34,7 +34,7 @@ A experiência do usuário da entidade de histórico de inicialização do dispo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do histórico de inicialização do dispositivo de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do histórico de inicialização do dispositivo de análise da experiência do usuário.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo de análise da experiência do usuário.|
 |startTime|DateTimeOffset|A hora de início do dispositivo de análise da experiência do usuário.|
 |coreBootTimeInMs|Int32|O tempo de inicialização do núcleo do dispositivo de análise da experiência do usuário em milissegundos.|
@@ -45,10 +45,12 @@ A experiência do usuário da entidade de histórico de inicialização do dispo
 |coreLoginTimeInMs|Int32|O tempo de logon do dispositivo de análise da experiência do usuário em milissegundos.|
 |responsiveDesktopTimeInMs|Int32|O tempo de resposta da análise da experiência do usuário em milissegundos.|
 |totalLoginTimeInMs|Int32|O tempo total de logon do dispositivo de análise da experiência do usuário em milissegundos.|
-|isFirstLogin|Booliano|O dispositivo de análise de experiência do usuário primeiro logon.|
-|isFeatureUpdate|Booliano|O registro de inicialização do dispositivo de análise da experiência do usuário é uma atualização de recurso.|
+|isFirstLogin|Boolean|O dispositivo de análise de experiência do usuário primeiro logon.|
+|isFeatureUpdate|Boolean|O registro de inicialização do dispositivo de análise da experiência do usuário é uma atualização de recurso.|
 |operatingSystemVersion|String|A versão do sistema operacional do registro de inicialização do dispositivo de análise da experiência do usuário.|
-|restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Categoria de reinício de so. Os possíveis valores são: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`.|
+|restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Categoria de reinício de so. Os valores possíveis são: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`.|
+|restartStopCode|Cadeia de caracteres|O código de parada de reinício do so. Isso mostra o código de verificação de erros que pode ser usado para pesquisar a razão da tela azul.|
+|restartFaultBucket|Cadeia de caracteres|O compartimento de reinicialização de sistema operacional. O Bucket de falhas é usado para encontrar informações adicionais sobre uma falha do sistema.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -78,9 +80,14 @@ Veja a seguir uma representação JSON do recurso.
   "isFirstLogin": true,
   "isFeatureUpdate": true,
   "operatingSystemVersion": "String",
-  "restartCategory": "String"
+  "restartCategory": "String",
+  "restartStopCode": "String",
+  "restartFaultBucket": "String"
 }
 ```
+
+
+
 
 
 

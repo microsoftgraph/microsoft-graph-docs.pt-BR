@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 0a9ca4d06f43c9dd0964f0bb4c9614bfb4a78c1e
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: fc05fe9011d91ac9da5f74a6079537ebfba25160
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091545"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078287"
 ---
 # <a name="printtasktrigger-resource-type"></a>tipo de recurso printTaskTrigger
 
@@ -26,14 +26,14 @@ Para obter detalhes sobre como usar esse recurso para adicionar suporte à impre
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar](../api/printer-list-tasktriggers.md) | coleção [printTaskTrigger](printtasktrigger.md) | Obtenha uma lista de printTaskTriggers associados a uma [impressora](printer.md)específica. |
+| [List](../api/printer-list-tasktriggers.md) | coleção [printTaskTrigger](printtasktrigger.md) | Obtenha uma lista de printTaskTriggers associados a uma [impressora](printer.md)específica. |
 | [Get](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Obter o printTaskTrigger associado a uma [multitarefa](printtask.md)em particular. |
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|O identificador do printTaskTrigger. Somente leitura.|
+|id|Cadeia de caracteres|O identificador do printTaskTrigger. Somente leitura.|
 |event|MyEvent|O evento de impressão universal que fará com que [uma nova impressão seja disparada](printtask.md) . Os valores válidos são descritos na tabela a seguir.|
 
 ### <a name="printevent-values"></a>valores de MyEvent
@@ -43,7 +43,7 @@ Para obter detalhes sobre como usar esse recurso para adicionar suporte à impre
 |jobStarted|,0|Representa um evento que ocorre quando um novo trabalho de impressão é iniciado.|
 |unknownFutureValue|1 |Valor de sentinela de enumeração evolvable. Não usar.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |definir|[printTaskDefinition](printtaskdefinition.md)|Uma definição abstrata que será usada para criar uma [multitarefa](printtask.md) quando disparado por um evento Print. Somente leitura.|
@@ -80,3 +80,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

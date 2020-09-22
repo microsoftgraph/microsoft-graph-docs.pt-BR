@@ -1,18 +1,18 @@
 ---
-title: Listar grupos transitivos de dispositivo
+title: Listar grupos transitivos de dispositivos
 description: Obter grupos dos quais o dispositivo é membro.
 author: spunukol
 ms.prod: microsoft-identity-platform
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: 0b396f2025a95ce9db861e7e8e4b630039e09d30
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 859cd2fa83a62f04d65f2553e2fd33f3c483e760
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466722"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078021"
 ---
-# <a name="list-device-transitive-groups"></a>Listar grupos transitivos de dispositivo
+# <a name="list-device-transitive-groups"></a>Listar grupos transitivos de dispositivos
 
 Namespace: microsoft.graph
 
@@ -134,3 +134,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

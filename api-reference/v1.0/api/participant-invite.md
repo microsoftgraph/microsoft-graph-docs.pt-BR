@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bcf8b793c4543b895a895ef0582e4b017e127cbb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 35a886fa40beb85a636dcbbf0895d35e204e4675
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511464"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079351"
 ---
 # <a name="participant-invite"></a>participante: convidar
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                |
 | :-------------- | :--------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Sem suporte                       |
+| Delegada (conta corporativa ou de estudante)     | Incompatível                       |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                       |
-| Aplicativo     | Calls. InitiateGroupCalls. All                               |
+| Aplicativo     | Calls.InitiateGroupCalls. All                               |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -48,8 +48,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|participantes|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes que serão convidados.|
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
+|participants|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes que serão convidados.|
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se succsessful, este método retornará um `200 OK` código de resposta e um cabeçalho de local com um URI para o [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado para essa solicitação. 
@@ -509,8 +509,8 @@ Content-Type: application/json
 A API INVITE suporta apenas um participante ao substituir uma chamada ponto a ponto existente. Quando vários participantes são fornecidos no corpo da solicitação, apenas o primeiro participante será lido e o restante dos participantes será ignorado.
 
 
-> **Observação:** A API INVITE oferece suporte somente a um `replacesCallId` participante quando é fornecido. 
-> Para obter detalhes sobre `replacesCallId` como usar o para substituir uma chamada ponto a ponto existente, consulte [invitationParticipantInfo](../resources/invitationparticipantinfo.md).
+> **Observação:** A API INVITE oferece suporte somente a um participante quando `replacesCallId` é fornecido. 
+> Para obter detalhes sobre como usar `replacesCallId` o para substituir uma chamada ponto a ponto existente, consulte [invitationParticipantInfo](../resources/invitationparticipantinfo.md).
 
 ##### <a name="request"></a>Solicitação
 
@@ -713,3 +713,4 @@ Content-Type: application/json
   ]
 }
 -->
+

@@ -3,14 +3,14 @@ title: tipo de recurso appleUserInitiatedEnrollmentProfile
 description: O recurso enrollmentProfile representa uma coleção de configurações que devem ser fornecidas como pré-registro para habilitar a inscrição de determinados dispositivos cujas identidades foram pré-configuradas. As identidades de dispositivo pré-configuradas são atribuídas a esse tipo de perfil para aplicar as configurações do perfil no registro do dispositivo correspondente.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f6f7d28d1c5684793891bc8bee08300f67ebeec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fb8e521826d0dc5123f86ad6fe99c098dfff8969
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419477"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080359"
 ---
 # <a name="appleuserinitiatedenrollmentprofile-resource-type"></a>tipo de recurso appleUserInitiatedEnrollmentProfile
 
@@ -41,11 +41,11 @@ O recurso enrollmentProfile representa uma coleção de configurações que deve
 |displayName|Cadeia de caracteres|Nome do perfil|
 |description|String|Descrição do perfil|
 |prioridade|Int32|Prioridade, 0 é a maior|
-|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|A plataforma do dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|plataforma|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|A plataforma do dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |createdDateTime|DateTimeOffset|Hora de criação do perfil|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do perfil|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |assignments|coleção [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md)|A lista de atribuições para este perfil.|
@@ -78,6 +78,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso userExperienceAnalyticsCategory
 description: A entidade de categoria da experiência do usuário contém as pontuações e insights para as várias métricas de uma categoria.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d80a287b736786a14eac1244b3e42e07b8e6dad
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: eff1c284140b0a4b6b119f073431c13e176b9196
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178098"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080933"
 ---
 # <a name="userexperienceanalyticscategory-resource-type"></a>tipo de recurso userExperienceAnalyticsCategory
 
@@ -36,7 +36,7 @@ A entidade de categoria da experiência do usuário contém as pontuações e in
 |insights|coleção [userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)|O insights para a categoria de análise da experiência do usuário.|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|O estado de integridade atual da categoria de análise da experiência do usuário. Os valores possíveis são: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |metricValues|coleção [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)|Os valores de métrica da categoria de análise da experiência do usuário.|
@@ -71,6 +71,9 @@ Veja a seguir uma representação JSON do recurso.
   "state": "String"
 }
 ```
+
+
+
 
 
 

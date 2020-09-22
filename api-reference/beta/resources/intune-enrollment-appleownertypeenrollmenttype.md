@@ -3,14 +3,14 @@ title: tipo de recurso appleOwnerTypeEnrollmentType
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b48d6cf07131b02193180bafafdca59529fd6c4b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 308a708f3f02ffd44f67da848cabdaa96083dfd5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419508"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080373"
 ---
 # <a name="appleownertypeenrollmenttype-resource-type"></a>tipo de recurso appleOwnerTypeEnrollmentType
 
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "enrollmentType": "String"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso resetPasscodeActionResult
 description: Resultado de ação de redefinir a senha
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 35ffae18d564ccda9d54599833195ea845d654f4
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 90a9011f0b55ee38191fc2fc9c445583fe89f4b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788056"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081080"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>tipo de recurso resetPasscodeActionResult
 
@@ -28,7 +28,7 @@ Herda de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|actionName|String|Nome da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
+|actionName|Cadeia de caracteres|Nome da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado da ação herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora de início da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora da última atualização do estado da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
@@ -36,7 +36,7 @@ Herda de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 |errorCode|Int32|Código de erro de ação RotateBitLockerKeys. Valores válidos de 0 a 2147483647|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -56,6 +56,9 @@ Veja a seguir uma representação JSON do recurso.
   "errorCode": 1024
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de enumeração userExperienceAnalyticsSummarizedBy
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aadab58010265a7c32b69c1a7dda11567dfa5899
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d9edfd7a1e5e33f765e2f4801661e279fc27e8d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43401830"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080751"
 ---
 # <a name="userexperienceanalyticssummarizedby-enum-type"></a>tipo de enumeração userExperienceAnalyticsSummarizedBy
 
@@ -25,12 +25,15 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Ainda não documentado|
-|modelo|1|Ainda não documentado|
+|Nenhuma|,0|Ainda não documentado|
+|modelo|1 |Ainda não documentado|
 |todas as regressãos|3D|Ainda não documentado|
 |modelRegression|4 |Ainda não documentado|
 |manufacturerRegression|5 |Ainda não documentado|
 |operatingSystemVersionRegression|6 |Ainda não documentado|
+
+
+
 
 
 

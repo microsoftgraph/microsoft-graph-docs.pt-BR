@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e3f85936e94da0485d62478f54eed8918967396b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0a25d9c69b3495bcc2efc38b3e87b373f247d024
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442720"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078337"
 ---
 # <a name="keyvalue-resource-type"></a>tipo de recurso KeyValue
 
@@ -24,8 +24,8 @@ Fornece informações de processamento de autenticação adicionais, como o nome
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|key|String|Contém o nome do campo ao qual um valor está associado. Quando uma dica de entrada ou de domínio é incluída na solicitação de entrada, os campos correspondentes são incluídos como pares de chave-valor. Chaves possíveis: `Login hint present`, `Domain hint present`.|
-|value|Cadeia de caracteres|Contém o valor correspondente para a chave especificada. O valor é `true` se uma dica de entrada foi incluída na solicitação de entrada; caso `false`contrário. O valor é `true` se uma dica de domínio foi incluída na solicitação de entrada; caso `false`contrário.|
+|key|Cadeia de caracteres|Contém o nome do campo ao qual um valor está associado. Quando uma dica de entrada ou de domínio é incluída na solicitação de entrada, os campos correspondentes são incluídos como pares de chave-valor. Chaves possíveis: `Login hint present` , `Domain hint present` .|
+|value|Cadeia de caracteres|Contém o valor correspondente para a chave especificada. O valor é `true` se uma dica de entrada foi incluída na solicitação de entrada; caso contrário `false` . O valor é `true` se uma dica de domínio foi incluída na solicitação de entrada; caso contrário `false` .|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -58,3 +58,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

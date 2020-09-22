@@ -3,14 +3,14 @@ title: Tipo de recurso updateWindowsDeviceAccountActionParameter
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed9545a16373ab8a61fb8b6243a6cc81be86c8e0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2fcd61fb9bda41c40cf96de8986f4a47f28da644
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382936"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080996"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>Tipo de recurso updateWindowsDeviceAccountActionParameter
 
@@ -28,8 +28,8 @@ Ainda não documentado
 |deviceAccount|[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|Ainda não documentado|
 |passwordRotationEnabled|Booliano|Ainda não documentado|
 |calendarSyncEnabled|Booliano|Ainda não documentado|
-|deviceAccountEmail|String|Ainda não documentado|
-|exchangeServer|String|Ainda não documentado|
+|deviceAccountEmail|Cadeia de caracteres|Ainda não documentado|
+|exchangeServer|Cadeia de caracteres|Ainda não documentado|
 |sessionInitiationProtocalAddress|Cadeia de caracteres|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
@@ -56,6 +56,9 @@ Veja a seguir uma representação JSON do recurso.
   "sessionInitiationProtocalAddress": "String"
 }
 ```
+
+
+
 
 
 

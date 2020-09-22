@@ -3,14 +3,14 @@ title: tipo de enumeração userExperienceAnalyticsInsightSeverity
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b787dfaa0abc81445c8c30769e464d3a3d791244
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3e12abc6309135decac49a0585d667b5089e23c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389177"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080877"
 ---
 # <a name="userexperienceanalyticsinsightseverity-enum-type"></a>tipo de enumeração userExperienceAnalyticsInsightSeverity
 
@@ -25,10 +25,13 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Ainda não documentado|
-|informativa|1|Ainda não documentado|
-|warning|duas|Ainda não documentado|
+|Nenhuma|,0|Ainda não documentado|
+|informativa|1 |Ainda não documentado|
+|warning|2 |Ainda não documentado|
 |erro|3D|Ainda não documentado|
+
+
+
 
 
 

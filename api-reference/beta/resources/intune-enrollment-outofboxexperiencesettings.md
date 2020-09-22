@@ -3,14 +3,14 @@ title: tipo de recurso outOfBoxExperienceSettings
 description: Configuração de experiência inicial da caixa
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 82bfd9a7126298958d35ad121b22115bb1f71241
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a258adda7de3a44e33e980fd6e78f7065824ea91
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460704"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079898"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>tipo de recurso outOfBoxExperienceSettings
 
@@ -53,6 +53,9 @@ Veja a seguir uma representação JSON do recurso.
   "hideEscapeLink": true
 }
 ```
+
+
+
 
 
 

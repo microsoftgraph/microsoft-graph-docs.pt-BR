@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: resourcePageType
-ms.openlocfilehash: 73b1c0e8f98a5f7ef321632e06619ba040cbd020
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3d93917cab8e592a12385853d7c4051d37d3a3da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807749"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079148"
 ---
 # <a name="listitemversion-resource-type"></a>Tipo de recurso ListItemVersion
 
@@ -78,3 +78,4 @@ A tabela a seguir define as relações que o recurso **driveItemVersion** tem co
   "section": "documentation",
   "tocPath": "Facets/Version"
 } -->
+

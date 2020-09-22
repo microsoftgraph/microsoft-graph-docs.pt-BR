@@ -3,14 +3,14 @@ title: tipo de recurso organization
 description: O recurso da organização representa uma instância de configurações e recursos globais que operam e são provisionados no nível do locatário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c2e4fffa10e81ba83a28fd6eebfc3ba4bf870d7e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fbab98a859128ab2700888ca0671b7551d50346e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441739"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079183"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -31,7 +31,7 @@ O recurso da organização representa uma instância de configurações e recurs
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O GUID do objeto.|
+|id|Cadeia de caracteres|O GUID do objeto.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Define autoridade de gerenciamento de dispositivo móvel. Os valores possíveis são: `unknown`, `intune`, `sccm`, `office365`.|
 
 ## <a name="relationships"></a>Relações
@@ -69,6 +69,8 @@ Veja a seguir uma representação JSON do recurso.
 
 }
 -->
+
+
 
 
 

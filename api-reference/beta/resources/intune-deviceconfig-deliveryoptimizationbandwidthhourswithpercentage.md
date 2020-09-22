@@ -3,14 +3,14 @@ title: tipo de recurso deliveryOptimizationBandwidthHoursWithPercentage
 description: Limite de largura de banda como uma porcentagem com horário comercial.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85008f7aee3c2f06536ef838df04e56ede36ed46
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bac0cd6232983e506ea9fafd3167910ea0bcae7d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420578"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078413"
 ---
 # <a name="deliveryoptimizationbandwidthhourswithpercentage-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthHoursWithPercentage
 
@@ -60,6 +60,9 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Criar windowsInformationProtectionDeviceRegistration
 description: Criar um novo objeto windowsInformationProtectionDeviceRegistration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba47d32f3ddc7dbc71435c99a936813c161ec8d7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 63f9d63b9e84d4f67100df7cff35d791e729c151
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465507"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078679"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>Criar windowsInformationProtectionDeviceRegistration
 
@@ -53,18 +53,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsI
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |userId|Cadeia de caracteres|UserId associado a este registro de registro de dispositivo.|
-|deviceRegistrationId|String|Identificador de dispositivo para este registro de registro de dispositivo.|
+|deviceRegistrationId|Cadeia de caracteres|Identificador de dispositivo para este registro de registro de dispositivo.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceType|String|Tipo de dispositivo, por exemplo, Windows laptop VS Windows Phone.|
-|deviceMacAddress|String|Endereço MAC do dispositivo.|
+|deviceMacAddress|Cadeia de caracteres|Endereço MAC do dispositivo.|
 |lastCheckInDateTime|DateTimeOffset|Hora da última verificação do dispositivo.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -104,6 +104,9 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
+
+
 
 
 

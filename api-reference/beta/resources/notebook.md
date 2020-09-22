@@ -5,16 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: b904928b03318a57f6ed4bd7bd7696b4a8805571
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1fff6f16c111d8036eae5fcb1705d7e5b59d7893
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522558"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078322"
 ---
 # <a name="notebook-resource-type"></a>tipo de recurso Notebook
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,16 +57,16 @@ Veja a seguir uma representação JSON do recurso
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o bloco de anotações foi criado. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|id|String|O identificador exclusivo do bloco de anotações. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo do bloco de anotações. Somente leitura.|
 |isDefault|Booliano|Indica se este é o bloco de anotações padrão do usuário. Somente leitura.|
 |isShared|Booliano|Indica se o bloco de anotações é compartilhado. Se for true, o conteúdo do bloco de anotações poderá ser visto por pessoas que não o proprietário. Somente leitura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do bloco de anotações. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |links|[notebookLinks](notebooklinks.md)|Links para abrir o bloco de anotações. O `oneNoteClientURL` link abre o bloco de anotações no cliente nativo do OneNote se ele estiver instalado. O `oneNoteWebURL` link abre o bloco de anotações no OneNote na Web.|
 |displayName|Cadeia de caracteres|O nome do bloco de anotações.|
-|sectionGroupsUrl|String|A URL da propriedade `sectionGroups` de navegação, que retorna todos os grupos de seção no bloco de anotações. Somente leitura.|
-|sectionsUrl|String|A URL da propriedade `sections` de navegação, que retorna todas as seções do bloco de anotações. Somente leitura.|
-|própria|String|O ponto de extremidade onde você pode obter detalhes sobre o bloco de anotações. Somente leitura.|
+|sectionGroupsUrl|Cadeia de caracteres|A URL da `sectionGroups` propriedade de navegação, que retorna todos os grupos de seção no bloco de anotações. Somente leitura.|
+|sectionsUrl|Cadeia de caracteres|A URL da `sections` propriedade de navegação, que retorna todas as seções do bloco de anotações. Somente leitura.|
+|própria|Cadeia de caracteres|O ponto de extremidade onde você pode obter detalhes sobre o bloco de anotações. Somente leitura.|
 |userRole|String|Os valores possíveis são: `Owner`, `Contributor`, `Reader`, `None`. O proprietário representa o acesso no nível do proprietário ao bloco de anotações. O colaborador representa acesso de leitura/gravação ao bloco de anotações. O leitor representa acesso somente leitura ao bloco de anotações. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
@@ -100,3 +100,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

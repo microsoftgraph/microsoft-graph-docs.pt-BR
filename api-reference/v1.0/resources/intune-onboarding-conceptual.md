@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 1be08355983c6a99e86a4b0b8a95c7e492abff61
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7307e0bc710fead998260e78d0b4f550cffa5b3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459586"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079232"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para o gerenciamento no Intune
 
@@ -47,6 +47,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar registros no I
 - [Estado do token VPP](intune-onboarding-vpptokenstate.md)
 - [Status de sincronização do token VPP](intune-onboarding-vpptokensyncstatus.md)
 - [Uso do PIN do Windows Hello para empresas](intune-onboarding-windowshelloforbusinesspinusage.md)
+
+
 
 
 

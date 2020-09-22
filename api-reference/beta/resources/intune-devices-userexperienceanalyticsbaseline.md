@@ -3,14 +3,14 @@ title: tipo de recurso userExperienceAnalyticsBaseline
 description: A entidade de linha de base da experiência do usuário contém valores de linha de base para comparar as pontuações de análise da experiência do usuário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c99d520490a7d68d29b1dc867f2bf1fc8b371b5d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2103470ec8321ca1750e7dac47b3d885f8939aba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382929"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080940"
 ---
 # <a name="userexperienceanalyticsbaseline-resource-type"></a>tipo de recurso userExperienceAnalyticsBaseline
 
@@ -34,7 +34,7 @@ A entidade de linha de base da experiência do usuário contém valores de linha
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da linha de base da análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo da linha de base da análise da experiência do usuário.|
 |displayName|Cadeia de caracteres|O nome da linha de base da análise da experiência do usuário.|
 |overallScore|Int32|A pontuação geral da linha de base da análise da experiência do usuário.|
 |isBuiltIn|Booliano|Significa se a linha de base atual é a linha de base mediana comercial ou uma linha de base personalizada.|
@@ -45,6 +45,7 @@ A entidade de linha de base da experiência do usuário contém valores de linha
 |:---|:---|:---|
 |deviceBootPerformanceMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|As métricas de desempenho de inicialização do dispositivo de análise da experiência do usuário.|
 |bestPracticesMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|As métricas de práticas recomendadas da análise da experiência do usuário.|
+|rebootAnalyticsMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|A análise da experiência do usuário reinicia as métricas da análise.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -64,6 +65,9 @@ Veja a seguir uma representação JSON do recurso.
   "createdDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

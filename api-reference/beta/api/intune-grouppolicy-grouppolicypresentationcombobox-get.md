@@ -3,14 +3,14 @@ title: Obter groupPolicyPresentationComboBox
 description: Leia as propriedades e as relações do objeto groupPolicyPresentationComboBox.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0af533b1a7d1bcbf8d6dec096a8201a10a81bae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1d19d051ce4bde1cdbdd11867ed250e4c2b77ddd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43377780"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078755"
 ---
 # <a name="get-grouppolicypresentationcombobox"></a>Obter groupPolicyPresentationComboBox
 
@@ -86,6 +86,9 @@ Content-Length: 385
   }
 }
 ```
+
+
+
 
 
 

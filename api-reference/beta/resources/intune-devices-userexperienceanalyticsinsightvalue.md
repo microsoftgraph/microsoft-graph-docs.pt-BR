@@ -3,14 +3,14 @@ title: tipo de recurso userExperienceAnalyticsInsightValue
 description: O valor em uma visão geral da análise da experiência do usuário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb7e04517929d75a59a10489f989b92c9d63b522
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 90c0bffccda05d787d275d11cd561483f9fc8fe7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389162"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080884"
 ---
 # <a name="userexperienceanalyticsinsightvalue-resource-type"></a>tipo de recurso userExperienceAnalyticsInsightValue
 
@@ -41,6 +41,9 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsInsightValue"
 }
 ```
+
+
+
 
 
 

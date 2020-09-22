@@ -5,16 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c2165f43c04ebbaf3274cc0ae912756bf250785a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 11e0b1538f6d2b41a8b211e1a7cc4ac45d2703a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519243"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079636"
 ---
 # <a name="workbookcomment-resource-type"></a>tipo de recurso workbookComment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Representa um comentário na pasta de trabalho.
 
@@ -71,3 +71,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

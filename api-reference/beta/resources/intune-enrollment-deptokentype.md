@@ -3,14 +3,14 @@ title: tipo de enumeração depTokenType
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c52d81f80c646387383f3d243c3746c03e4e33f8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9defb03d04987d68c5bb55806458869c2d37be50
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460890"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080226"
 ---
 # <a name="deptokentype-enum-type"></a>tipo de enumeração depTokenType
 
@@ -25,9 +25,12 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|O tipo de token é nenhum|
-|baseada|1|O tipo de token é Dep.|
-|appleSchoolManager|duas|Tipo de token é gerente Apple School|
+|Nenhuma|,0|O tipo de token é nenhum|
+|baseada|1 |O tipo de token é Dep.|
+|appleSchoolManager|2 |Tipo de token é gerente Apple School|
+
+
+
 
 
 

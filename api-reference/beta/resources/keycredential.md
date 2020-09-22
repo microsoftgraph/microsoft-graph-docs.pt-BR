@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 983cc4c9cbd19cd7f0b4261f28a00e8e020cefe9
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 6c005a44827640ed7a61e61f07837a98021d9a9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43401709"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078336"
 ---
 # <a name="keycredential-resource-type"></a>tipo de recurso keycredential
 
@@ -28,8 +28,8 @@ Contém uma credencial de chave associada a um aplicativo ou a uma entidade de s
 |endDateTime|DateTimeOffset|A data e a hora em que a credencial expira. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |keyId|Guid|O identificador exclusivo (GUID) da chave.|
 |startDateTime|DateTimeOffset|A data e a hora em que a credencial se torna válida. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|type|String|O tipo de credencial de chave; por exemplo, "simétrico".|
-|ocorrência|String|Uma cadeia de caracteres que descreve a finalidade para a qual a chave pode ser usada; por exemplo, "Verify".|
+|tipo|Cadeia de caracteres|O tipo de credencial de chave; por exemplo, "simétrico".|
+|ocorrência|Cadeia de caracteres|Uma cadeia de caracteres que descreve a finalidade para a qual a chave pode ser usada; por exemplo, "Verify".|
 |chave|Binário| Valor para a credencial de chave. Deve ser um valor codificado de base 64. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -70,3 +70,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

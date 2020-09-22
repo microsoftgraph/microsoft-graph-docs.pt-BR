@@ -3,14 +3,14 @@ title: tipo de enumeração windowsDefenderApplicationControlSupplementalPolicyS
 description: Enumerar valores para os vários status de implantação de política complementar do WindowsDefenderApplicationControl.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 69f909f1bac3b33101d5e0e5515ad74588f46be2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3b2368ff23387867c0119ff85c387f714ce1c346
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449549"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078364"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicystatuses-enum-type"></a>tipo de enumeração windowsDefenderApplicationControlSupplementalPolicyStatuses
 
@@ -26,10 +26,13 @@ Enumerar valores para os vários status de implantação de política complement
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|O status da política suplementar do WindowsDefenderApplicationControl não é conhecido.|
-|sucesso|1|A política suplementar do WindowsDefenderApplicationControl está em vigor.|
-|tokenError|duas|A política suplementar do WindowsDefenderApplicationControl está estruturalmente, mas há um erro com a autorização do token.|
-|notAuthorizedByToken|3D|O token não autoriza esta política complementar do WindowsDefenderApplicationControl.|
+|sucesso|1 |A política suplementar do WindowsDefenderApplicationControl está em vigor.|
+|tokenError|2 |A política suplementar do WindowsDefenderApplicationControl está estruturalmente, mas há um erro com a autorização do token.|
+|notAuthorizedByToken|3 |O token não autoriza esta política complementar do WindowsDefenderApplicationControl.|
 |policyNotFound|4 |A política suplementar do WindowsDefenderApplicationControl não foi encontrada.|
+
+
+
 
 
 
