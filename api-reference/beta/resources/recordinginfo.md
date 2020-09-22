@@ -5,32 +5,32 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 62ce735d5719ef05c5f96de546adcd5518a72786
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 45d844329688e663c27ef5ecdf94282312baa53d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521226"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055169"
 ---
-# <a name="recordinginfo-resource-type"></a><span data-ttu-id="851e1-103">tipo de recurso recordingInfo</span><span class="sxs-lookup"><span data-stu-id="851e1-103">recordingInfo resource type</span></span>
+# <a name="recordinginfo-resource-type"></a><span data-ttu-id="c43bf-103">tipo de recurso recordingInfo</span><span class="sxs-lookup"><span data-stu-id="c43bf-103">recordingInfo resource type</span></span>
 
-<span data-ttu-id="851e1-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="851e1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c43bf-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c43bf-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="851e1-105">Informações de gravação de um participante.</span><span class="sxs-lookup"><span data-stu-id="851e1-105">Recording information for a participant.</span></span>
+<span data-ttu-id="c43bf-105">Informações de gravação de um participante.</span><span class="sxs-lookup"><span data-stu-id="c43bf-105">Recording information for a participant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="851e1-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="851e1-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c43bf-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c43bf-106">Properties</span></span>
 
-| <span data-ttu-id="851e1-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="851e1-107">Property</span></span>        | <span data-ttu-id="851e1-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="851e1-108">Type</span></span>    | <span data-ttu-id="851e1-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="851e1-109">Description</span></span>|
+| <span data-ttu-id="c43bf-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c43bf-107">Property</span></span>        | <span data-ttu-id="c43bf-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="c43bf-108">Type</span></span>    | <span data-ttu-id="c43bf-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="c43bf-109">Description</span></span>|
 |:----------------|:--------|:----------|
-| <span data-ttu-id="851e1-110">initiatedBy</span><span class="sxs-lookup"><span data-stu-id="851e1-110">initiatedBy</span></span>     | [<span data-ttu-id="851e1-111">participantInfo</span><span class="sxs-lookup"><span data-stu-id="851e1-111">participantInfo</span></span>](participantinfo.md) | <span data-ttu-id="851e1-112">O participante que iniciou a gravação.</span><span class="sxs-lookup"><span data-stu-id="851e1-112">The participant who initiated the recording.</span></span> |
-| <span data-ttu-id="851e1-113">recordingStatus</span><span class="sxs-lookup"><span data-stu-id="851e1-113">recordingStatus</span></span> | <span data-ttu-id="851e1-114">String</span><span class="sxs-lookup"><span data-stu-id="851e1-114">String</span></span> | <span data-ttu-id="851e1-115">Os valores possíveis são `unknown`: `notRecording`, `recording`,, `failed`ou.</span><span class="sxs-lookup"><span data-stu-id="851e1-115">Possible values are: `unknown`, `notRecording`, `recording`, or `failed`.</span></span> |
-| <span data-ttu-id="851e1-116">Iniciador</span><span class="sxs-lookup"><span data-stu-id="851e1-116">initiator</span></span> | [<span data-ttu-id="851e1-117">identitySet</span><span class="sxs-lookup"><span data-stu-id="851e1-117">identitySet</span></span>](identitySet.md) | <span data-ttu-id="851e1-118">As identidades do iniciador de gravação.</span><span class="sxs-lookup"><span data-stu-id="851e1-118">The identities of recording initiator.</span></span> |
+| <span data-ttu-id="c43bf-110">initiatedBy</span><span class="sxs-lookup"><span data-stu-id="c43bf-110">initiatedBy</span></span>     | [<span data-ttu-id="c43bf-111">participantInfo</span><span class="sxs-lookup"><span data-stu-id="c43bf-111">participantInfo</span></span>](participantinfo.md) | <span data-ttu-id="c43bf-112">O participante que iniciou a gravação.</span><span class="sxs-lookup"><span data-stu-id="c43bf-112">The participant who initiated the recording.</span></span> |
+| <span data-ttu-id="c43bf-113">recordingStatus</span><span class="sxs-lookup"><span data-stu-id="c43bf-113">recordingStatus</span></span> | <span data-ttu-id="c43bf-114">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="c43bf-114">String</span></span> | <span data-ttu-id="c43bf-115">Os valores possíveis são: `unknown` , `notRecording` , `recording` , ou `failed` .</span><span class="sxs-lookup"><span data-stu-id="c43bf-115">Possible values are: `unknown`, `notRecording`, `recording`, or `failed`.</span></span> |
+| <span data-ttu-id="c43bf-116">Iniciador</span><span class="sxs-lookup"><span data-stu-id="c43bf-116">initiator</span></span> | [<span data-ttu-id="c43bf-117">identitySet</span><span class="sxs-lookup"><span data-stu-id="c43bf-117">identitySet</span></span>](identitySet.md) | <span data-ttu-id="c43bf-118">As identidades do iniciador de gravação.</span><span class="sxs-lookup"><span data-stu-id="c43bf-118">The identities of recording initiator.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="851e1-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="851e1-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c43bf-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c43bf-119">JSON representation</span></span>
 
-<span data-ttu-id="851e1-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="851e1-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c43bf-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c43bf-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -59,3 +59,5 @@ ms.locfileid: "42521226"
   "suppressions": []
 }
 -->
+
+
