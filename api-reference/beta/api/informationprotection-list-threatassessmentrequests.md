@@ -5,39 +5,39 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a87828e1700a8813caae64f01d1e970f8a1f7939
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 653fbb39676546b68e85fc7c22be13849b3851fa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42446381"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001537"
 ---
-# <a name="list-threatassessmentrequests"></a><span data-ttu-id="58bbb-103">Listar threatAssessmentRequests</span><span class="sxs-lookup"><span data-stu-id="58bbb-103">List threatAssessmentRequests</span></span>
+# <a name="list-threatassessmentrequests"></a><span data-ttu-id="a7101-103">Listar threatAssessmentRequests</span><span class="sxs-lookup"><span data-stu-id="a7101-103">List threatAssessmentRequests</span></span>
 
-<span data-ttu-id="58bbb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="58bbb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a7101-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a7101-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="58bbb-105">Recupere uma lista de objetos [threatAssessmentRequest](../resources/threatassessmentrequest.md) .</span><span class="sxs-lookup"><span data-stu-id="58bbb-105">Retrieve a list of [threatAssessmentRequest](../resources/threatassessmentrequest.md) objects.</span></span>
+<span data-ttu-id="a7101-105">Recupere uma lista de objetos [threatAssessmentRequest](../resources/threatassessmentrequest.md) .</span><span class="sxs-lookup"><span data-stu-id="a7101-105">Retrieve a list of [threatAssessmentRequest](../resources/threatassessmentrequest.md) objects.</span></span>
 
-<span data-ttu-id="58bbb-106">Uma solicitação de avaliação de ameaça pode ser um dos seguintes tipos:</span><span class="sxs-lookup"><span data-stu-id="58bbb-106">A threat assessment request can be one of the following types:</span></span>
+<span data-ttu-id="a7101-106">Uma solicitação de avaliação de ameaça pode ser um dos seguintes tipos:</span><span class="sxs-lookup"><span data-stu-id="a7101-106">A threat assessment request can be one of the following types:</span></span>
 
-* [<span data-ttu-id="58bbb-107">Email</span><span class="sxs-lookup"><span data-stu-id="58bbb-107">Mail</span></span>](../resources/mailAssessmentRequest.md)
-* [<span data-ttu-id="58bbb-108">Arquivo de email</span><span class="sxs-lookup"><span data-stu-id="58bbb-108">Email file</span></span>](../resources/emailFileAssessmentRequest.md)
-* [<span data-ttu-id="58bbb-109">Arquivo</span><span class="sxs-lookup"><span data-stu-id="58bbb-109">File</span></span>](../resources/fileAssessmentRequest.md)
-* [<span data-ttu-id="58bbb-110">URL</span><span class="sxs-lookup"><span data-stu-id="58bbb-110">URL</span></span>](../resources/urlAssessmentRequest.md)
+* [<span data-ttu-id="a7101-107">Email</span><span class="sxs-lookup"><span data-stu-id="a7101-107">Mail</span></span>](../resources/mailAssessmentRequest.md)
+* [<span data-ttu-id="a7101-108">Arquivo de email</span><span class="sxs-lookup"><span data-stu-id="a7101-108">Email file</span></span>](../resources/emailFileAssessmentRequest.md)
+* [<span data-ttu-id="a7101-109">Arquivo</span><span class="sxs-lookup"><span data-stu-id="a7101-109">File</span></span>](../resources/fileAssessmentRequest.md)
+* [<span data-ttu-id="a7101-110">URL</span><span class="sxs-lookup"><span data-stu-id="a7101-110">URL</span></span>](../resources/urlAssessmentRequest.md)
 
-## <a name="permissions"></a><span data-ttu-id="58bbb-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="58bbb-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a7101-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="a7101-111">Permissions</span></span>
 
-<span data-ttu-id="58bbb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="58bbb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a7101-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a7101-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="58bbb-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="58bbb-114">Permission type</span></span>                        | <span data-ttu-id="58bbb-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="58bbb-115">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="a7101-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a7101-114">Permission type</span></span>                        | <span data-ttu-id="a7101-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a7101-115">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="58bbb-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="58bbb-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="58bbb-117">ThreatAssessment. ReadWrite. All.</span><span class="sxs-lookup"><span data-stu-id="58bbb-117">ThreatAssessment.ReadWrite.All.</span></span>             |
-| <span data-ttu-id="58bbb-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="58bbb-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="58bbb-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="58bbb-119">Not supported.</span></span>                              |
-| <span data-ttu-id="58bbb-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="58bbb-120">Application</span></span>                            | <span data-ttu-id="58bbb-121">ThreatAssessment. Read. All.</span><span class="sxs-lookup"><span data-stu-id="58bbb-121">ThreatAssessment.Read.All.</span></span>                  |
+| <span data-ttu-id="a7101-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a7101-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="a7101-117">ThreatAssessment. ReadWrite. All.</span><span class="sxs-lookup"><span data-stu-id="a7101-117">ThreatAssessment.ReadWrite.All.</span></span>             |
+| <span data-ttu-id="a7101-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a7101-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a7101-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a7101-119">Not supported.</span></span>                              |
+| <span data-ttu-id="a7101-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a7101-120">Application</span></span>                            | <span data-ttu-id="a7101-121">ThreatAssessment. Read. All.</span><span class="sxs-lookup"><span data-stu-id="a7101-121">ThreatAssessment.Read.All.</span></span>                  |
 
-## <a name="http-request"></a><span data-ttu-id="58bbb-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="58bbb-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a7101-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a7101-122">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,38 +45,38 @@ ms.locfileid: "42446381"
 GET /informationProtection/threatAssessmentRequests
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="58bbb-123">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="58bbb-123">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a7101-123">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="a7101-123">Optional query parameters</span></span>
 
-<span data-ttu-id="58bbb-124">Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="58bbb-124">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="58bbb-125">Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="58bbb-125">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="a7101-124">Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="a7101-124">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="a7101-125">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="a7101-125">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-|<span data-ttu-id="58bbb-126">Nome</span><span class="sxs-lookup"><span data-stu-id="58bbb-126">Name</span></span>            |<span data-ttu-id="58bbb-127">Valor</span><span class="sxs-lookup"><span data-stu-id="58bbb-127">Value</span></span>    |<span data-ttu-id="58bbb-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="58bbb-128">Description</span></span>                                                                                                                                                                 |
+|<span data-ttu-id="a7101-126">Nome</span><span class="sxs-lookup"><span data-stu-id="a7101-126">Name</span></span>            |<span data-ttu-id="a7101-127">Valor</span><span class="sxs-lookup"><span data-stu-id="a7101-127">Value</span></span>    |<span data-ttu-id="a7101-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="a7101-128">Description</span></span>                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="58bbb-129">$filter</span><span class="sxs-lookup"><span data-stu-id="58bbb-129">$filter</span></span>         |<span data-ttu-id="58bbb-130">string</span><span class="sxs-lookup"><span data-stu-id="58bbb-130">string</span></span>   |<span data-ttu-id="58bbb-131">Limita a resposta somente aos objetos que contêm os critérios especificados.</span><span class="sxs-lookup"><span data-stu-id="58bbb-131">Limits the response to only those objects which contain the specified criteria.</span></span>                                                                                             |
-|<span data-ttu-id="58bbb-132">$orderby</span><span class="sxs-lookup"><span data-stu-id="58bbb-132">$orderby</span></span>        |<span data-ttu-id="58bbb-133">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="58bbb-133">string</span></span>   |<span data-ttu-id="58bbb-134">Por padrão, os objetos na resposta são decrescentes ordenados por seu valor **createdDateTime** .</span><span class="sxs-lookup"><span data-stu-id="58bbb-134">By default, the objects in the response are descending ordered by their **createdDateTime** value.</span></span>                                                                          |
-|<span data-ttu-id="58bbb-135">$select</span><span class="sxs-lookup"><span data-stu-id="58bbb-135">$select</span></span>         |<span data-ttu-id="58bbb-136">string</span><span class="sxs-lookup"><span data-stu-id="58bbb-136">string</span></span>   |<span data-ttu-id="58bbb-p103">Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.</span><span class="sxs-lookup"><span data-stu-id="58bbb-p103">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>                                        |
-|<span data-ttu-id="58bbb-139">$skipToken</span><span class="sxs-lookup"><span data-stu-id="58bbb-139">$skipToken</span></span>      |<span data-ttu-id="58bbb-140">string</span><span class="sxs-lookup"><span data-stu-id="58bbb-140">string</span></span>   |<span data-ttu-id="58bbb-141">Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas.</span><span class="sxs-lookup"><span data-stu-id="58bbb-141">Retrieves the next page of results from result sets that span multiple pages.</span></span>                                                                                               |
+|<span data-ttu-id="a7101-129">$filter</span><span class="sxs-lookup"><span data-stu-id="a7101-129">$filter</span></span>         |<span data-ttu-id="a7101-130">string</span><span class="sxs-lookup"><span data-stu-id="a7101-130">string</span></span>   |<span data-ttu-id="a7101-131">Limita a resposta somente aos objetos que contêm os critérios especificados.</span><span class="sxs-lookup"><span data-stu-id="a7101-131">Limits the response to only those objects which contain the specified criteria.</span></span>                                                                                             |
+|<span data-ttu-id="a7101-132">$orderby</span><span class="sxs-lookup"><span data-stu-id="a7101-132">$orderby</span></span>        |<span data-ttu-id="a7101-133">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a7101-133">string</span></span>   |<span data-ttu-id="a7101-134">Por padrão, os objetos na resposta são decrescentes ordenados por seu valor **createdDateTime** .</span><span class="sxs-lookup"><span data-stu-id="a7101-134">By default, the objects in the response are descending ordered by their **createdDateTime** value.</span></span>                                                                          |
+|<span data-ttu-id="a7101-135">$select</span><span class="sxs-lookup"><span data-stu-id="a7101-135">$select</span></span>         |<span data-ttu-id="a7101-136">string</span><span class="sxs-lookup"><span data-stu-id="a7101-136">string</span></span>   |<span data-ttu-id="a7101-p103">Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.</span><span class="sxs-lookup"><span data-stu-id="a7101-p103">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>                                        |
+|<span data-ttu-id="a7101-139">$skipToken</span><span class="sxs-lookup"><span data-stu-id="a7101-139">$skipToken</span></span>      |<span data-ttu-id="a7101-140">string</span><span class="sxs-lookup"><span data-stu-id="a7101-140">string</span></span>   |<span data-ttu-id="a7101-141">Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas.</span><span class="sxs-lookup"><span data-stu-id="a7101-141">Retrieves the next page of results from result sets that span multiple pages.</span></span>                                                                                               |
 
-## <a name="request-headers"></a><span data-ttu-id="58bbb-142">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="58bbb-142">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a7101-142">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a7101-142">Request headers</span></span>
 
-| <span data-ttu-id="58bbb-143">Nome</span><span class="sxs-lookup"><span data-stu-id="58bbb-143">Name</span></span>      |<span data-ttu-id="58bbb-144">Descrição</span><span class="sxs-lookup"><span data-stu-id="58bbb-144">Description</span></span>|
+| <span data-ttu-id="a7101-143">Nome</span><span class="sxs-lookup"><span data-stu-id="a7101-143">Name</span></span>      |<span data-ttu-id="a7101-144">Descrição</span><span class="sxs-lookup"><span data-stu-id="a7101-144">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="58bbb-145">Autorização</span><span class="sxs-lookup"><span data-stu-id="58bbb-145">Authorization</span></span> | <span data-ttu-id="58bbb-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="58bbb-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a7101-145">Autorização</span><span class="sxs-lookup"><span data-stu-id="a7101-145">Authorization</span></span> | <span data-ttu-id="a7101-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a7101-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="58bbb-148">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="58bbb-148">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a7101-148">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a7101-148">Request body</span></span>
 
-<span data-ttu-id="58bbb-149">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="58bbb-149">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="a7101-149">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a7101-149">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="58bbb-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="58bbb-150">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a7101-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="a7101-150">Response</span></span>
 
-<span data-ttu-id="58bbb-151">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [threatAssessmentRequest](../resources/threatassessmentrequest.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="58bbb-151">If successful, this method returns a `200 OK` response code and a collection of [threatAssessmentRequest](../resources/threatassessmentrequest.md) objects in the response body.</span></span>
+<span data-ttu-id="a7101-151">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [threatAssessmentRequest](../resources/threatassessmentrequest.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a7101-151">If successful, this method returns a `200 OK` response code and a collection of [threatAssessmentRequest](../resources/threatassessmentrequest.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="58bbb-152">Exemplos</span><span class="sxs-lookup"><span data-stu-id="58bbb-152">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a7101-152">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a7101-152">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="58bbb-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="58bbb-153">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a7101-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a7101-153">Request</span></span>
 
-<span data-ttu-id="58bbb-154">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="58bbb-154">The following is an example of the request.</span></span>
+<span data-ttu-id="a7101-154">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a7101-154">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="58bbb-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="58bbb-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a7101-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="a7101-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_threatassessmentrequests"
@@ -85,26 +85,26 @@ GET /informationProtection/threatAssessmentRequests
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentRequests
 ```
-# <a name="c"></a>[<span data-ttu-id="58bbb-156">C#</span><span class="sxs-lookup"><span data-stu-id="58bbb-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a7101-156">C#</span><span class="sxs-lookup"><span data-stu-id="a7101-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-threatassessmentrequests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="58bbb-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="58bbb-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a7101-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a7101-157">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-threatassessmentrequests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="58bbb-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="58bbb-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a7101-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a7101-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-threatassessmentrequests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="58bbb-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="58bbb-159">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a7101-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="a7101-159">Response</span></span>
 
-<span data-ttu-id="58bbb-160">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="58bbb-160">The following is an example of the response.</span></span>
+<span data-ttu-id="a7101-160">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a7101-160">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="58bbb-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="58bbb-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a7101-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a7101-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -207,3 +207,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

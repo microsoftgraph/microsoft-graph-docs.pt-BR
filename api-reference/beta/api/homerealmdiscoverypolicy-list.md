@@ -5,32 +5,32 @@ localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 04d7d427da71a22aaf818249dee5035cc6f2655d
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 9db2a313c24cefbfbb44d4d3e27efacf70210781
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916510"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001754"
 ---
-# <a name="list-homerealmdiscoverypolicies"></a><span data-ttu-id="5715d-103">Listar homeRealmDiscoveryPolicies</span><span class="sxs-lookup"><span data-stu-id="5715d-103">List homeRealmDiscoveryPolicies</span></span>
+# <a name="list-homerealmdiscoverypolicies"></a><span data-ttu-id="3e36e-103">Listar homeRealmDiscoveryPolicies</span><span class="sxs-lookup"><span data-stu-id="3e36e-103">List homeRealmDiscoveryPolicies</span></span>
 
-<span data-ttu-id="5715d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5715d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3e36e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3e36e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5715d-105">Obtenha uma lista de objetos [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="5715d-105">Get a list of [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) objects.</span></span>
+<span data-ttu-id="3e36e-105">Obtenha uma lista de objetos [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="3e36e-105">Get a list of [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5715d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="5715d-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3e36e-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="3e36e-106">Permissions</span></span>
 
-<span data-ttu-id="5715d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5715d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3e36e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3e36e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="5715d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5715d-109">Permission type</span></span>                        | <span data-ttu-id="5715d-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5715d-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="3e36e-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3e36e-109">Permission type</span></span>                        | <span data-ttu-id="3e36e-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3e36e-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="5715d-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5715d-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="5715d-112">Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="5715d-112">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span> |
-| <span data-ttu-id="5715d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5715d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5715d-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5715d-114">Not supported.</span></span> |
-| <span data-ttu-id="5715d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5715d-115">Application</span></span>                            | <span data-ttu-id="5715d-116">Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="5715d-116">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="3e36e-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3e36e-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="3e36e-112">Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="3e36e-112">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="3e36e-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3e36e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3e36e-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3e36e-114">Not supported.</span></span> |
+| <span data-ttu-id="3e36e-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3e36e-115">Application</span></span>                            | <span data-ttu-id="3e36e-116">Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="3e36e-116">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5715d-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5715d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3e36e-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3e36e-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,31 +38,31 @@ ms.locfileid: "43916510"
 GET policies/homeRealmDiscoveryPolicies
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="5715d-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="5715d-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3e36e-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="3e36e-118">Optional query parameters</span></span>
 
-<span data-ttu-id="5715d-119">Este método oferece suporte `$expand`a `$filter`, `$select` e `$top` a parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="5715d-119">This method supports the `$expand`, `$filter`, `$select` and `$top` OData query parameters to help customize the response.</span></span> <span data-ttu-id="5715d-120">Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="5715d-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span> <span data-ttu-id="5715d-121">Ao usar `$expand` certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.</span><span class="sxs-lookup"><span data-stu-id="5715d-121">When using `$expand` make sure your app requests permissions to read the expanded objects.</span></span>
+<span data-ttu-id="3e36e-119">Este método oferece suporte a `$expand` , `$filter` e a parâmetros de `$select` `$top` consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="3e36e-119">This method supports the `$expand`, `$filter`, `$select` and `$top` OData query parameters to help customize the response.</span></span> <span data-ttu-id="3e36e-120">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="3e36e-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span> <span data-ttu-id="3e36e-121">Ao usar `$expand` certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.</span><span class="sxs-lookup"><span data-stu-id="3e36e-121">When using `$expand` make sure your app requests permissions to read the expanded objects.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5715d-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5715d-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3e36e-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3e36e-122">Request headers</span></span>
 
-| <span data-ttu-id="5715d-123">Nome</span><span class="sxs-lookup"><span data-stu-id="5715d-123">Name</span></span>      |<span data-ttu-id="5715d-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="5715d-124">Description</span></span>|
+| <span data-ttu-id="3e36e-123">Nome</span><span class="sxs-lookup"><span data-stu-id="3e36e-123">Name</span></span>      |<span data-ttu-id="3e36e-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="3e36e-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="5715d-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="5715d-125">Authorization</span></span> | <span data-ttu-id="5715d-126">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="5715d-126">Bearer {token}</span></span> |
+| <span data-ttu-id="3e36e-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="3e36e-125">Authorization</span></span> | <span data-ttu-id="3e36e-126">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="3e36e-126">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5715d-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5715d-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3e36e-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3e36e-127">Request body</span></span>
 
-<span data-ttu-id="5715d-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="5715d-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="3e36e-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3e36e-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5715d-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="5715d-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3e36e-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="3e36e-129">Response</span></span>
 
-<span data-ttu-id="5715d-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5715d-130">If successful, this method returns a `200 OK` response code and a collection of [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) objects in the response body.</span></span>
+<span data-ttu-id="3e36e-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3e36e-130">If successful, this method returns a `200 OK` response code and a collection of [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5715d-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="5715d-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="3e36e-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="3e36e-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="5715d-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5715d-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="3e36e-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3e36e-132">Request</span></span>
 
-<span data-ttu-id="5715d-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="5715d-133">The following is an example of the request.</span></span>
+<span data-ttu-id="3e36e-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="3e36e-133">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5715d-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="5715d-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3e36e-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="3e36e-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_homerealmdiscoverypolicies"
@@ -71,26 +71,26 @@ GET policies/homeRealmDiscoveryPolicies
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies
 ```
-# <a name="c"></a>[<span data-ttu-id="5715d-135">C#</span><span class="sxs-lookup"><span data-stu-id="5715d-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3e36e-135">C#</span><span class="sxs-lookup"><span data-stu-id="3e36e-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-homerealmdiscoverypolicies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5715d-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5715d-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3e36e-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3e36e-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-homerealmdiscoverypolicies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5715d-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5715d-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3e36e-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3e36e-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-homerealmdiscoverypolicies-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="5715d-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="5715d-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3e36e-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="3e36e-138">Response</span></span>
 
-<span data-ttu-id="5715d-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="5715d-139">The following is an example of the response.</span></span>
+<span data-ttu-id="3e36e-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="3e36e-139">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="5715d-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5715d-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="3e36e-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3e36e-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -126,3 +126,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
