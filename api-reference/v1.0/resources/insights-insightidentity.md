@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 3a23344a18979c7d1aa69b8e841007812797b238
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f4b8bc6b66598753c0755d249ab37283810e8db7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531298"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054865"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
@@ -39,6 +39,7 @@ Veja a seguir uma representação JSON do recurso
 
 | Propriedade              | Tipo          | Descrição  |
 | -------------         |-----------    | -------------|
-| displayName       | Cadeia de caracteres          | O nome de exibição do usuário que compartilhou o item. |
+| displayName       | String          | O nome de exibição do usuário que compartilhou o item. |
 | id              | String        | A ID do usuário que compartilhou o item.     |
 | address             | Cadeia de caracteres      | O endereço de email do usuário que compartilhou o item.  |
+

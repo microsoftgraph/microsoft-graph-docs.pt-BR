@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d982ecf52ac6bf8ed7d7cc7e6b7f535bfdba9370
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 0f3e976a04f33866b81926849d9ad310551c335a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125173"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055096"
 ---
 # <a name="list-rejectedsenders"></a>Listar rejectedSenders
 
@@ -113,3 +113,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

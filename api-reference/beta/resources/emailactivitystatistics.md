@@ -5,16 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: f2bd2d84d6f7dbc18fc5e37079eebc4289dd2ee2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: af0fbc4247e7ffc9c8285409789d0437d8e09cb5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499593"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055509"
 ---
 # <a name="emailactivitystatistics-resource-type"></a>tipo de recurso emailActivityStatistics
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,9 +27,9 @@ Representa dados sobre o tempo gasto pelo usuário em atividades de email no Mic
 |atividade|analyticsActivityType| Atividade de email para a qual as estatísticas são retornadas.|
 |duration|Duração|Total de horas gasto nos emails. O valor é representado no formato ISO 8601 para durações.|
 |endDate|Data|Data de término da atividade de email. O valor é representado no formato ISO 8601 para datas do calendário. Por exemplo, o valor da propriedade poderia ser "2019-07-04" que segue o formato AAAA-MM-DD.|
-|id|String| ID somente leitura da atividade de email.|
-|startDate|Date|Data de início da atividade de email. O valor é representado no formato ISO 8601 para datas do calendário. Por exemplo, o valor da propriedade poderia ser "2019-07-03" que segue o formato AAAA-MM-DD.|
-|timeZoneUsed|String|O fuso horário que o usuário define no calendário do Outlook é usado para a computação. Por exemplo, o valor da propriedade poderia ser "hora padrão do Pacífico".|
+|id|Cadeia de caracteres| ID somente leitura da atividade de email.|
+|startDate|Data|Data de início da atividade de email. O valor é representado no formato ISO 8601 para datas do calendário. Por exemplo, o valor da propriedade poderia ser "2019-07-03" que segue o formato AAAA-MM-DD.|
+|timeZoneUsed|Cadeia de caracteres|O fuso horário que o usuário define no calendário do Outlook é usado para a computação. Por exemplo, o valor da propriedade poderia ser "hora padrão do Pacífico".|
 |afterHours|Duração|Total de horas gasto no email fora do horário de trabalho, que se baseia na configuração de calendário do Outlook do usuário para horário de trabalho. O valor é representado no formato ISO 8601 para durações. |
 |readEmail|Duração|Total de horas gasto na leitura de email. O valor é representado no formato ISO 8601 para durações.|
 |sentEmail|Duração|Total de horas gasto na gravação e envio de email. O valor é representado no formato ISO 8601 para durações.|
@@ -75,3 +75,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

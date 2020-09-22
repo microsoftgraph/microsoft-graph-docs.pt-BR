@@ -3,14 +3,14 @@ title: Função downloadApplePushNotificationCertificateSigningRequest
 description: Baixa a solicitação de assinatura de certificado de notificação por push da Apple
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c815853a99a67edfd176728d301bed000dfd75c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 64c3dee18991b796096ff7c8c122885884a584b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388779"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055082"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>Função downloadApplePushNotificationCertificateSigningRequest
 
@@ -48,7 +48,7 @@ GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotifica
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma cadeia de caracteres no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma cadeia de caracteres no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -69,6 +69,9 @@ Content-Length: 85
   "value": "Download Apple Push Notification Certificate Signing Request value"
 }
 ```
+
+
+
 
 
 

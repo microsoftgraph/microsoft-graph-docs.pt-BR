@@ -3,14 +3,14 @@ title: tipo de enumeração win32LobAppNotification
 description: Contém o valor do status da notificação.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ec4d25955e016c67a61cf33bc26034457ab728f4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: aa626ab9a8393f27ea52048915aacc0c5c667fa8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472001"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055307"
 ---
 # <a name="win32lobappnotification-enum-type"></a>tipo de enumeração win32LobAppNotification
 
@@ -26,8 +26,11 @@ Contém o valor do status da notificação.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |showAll|,0|Mostrar todas as notificações.|
-|conboot|1|Mostrar apenas notificação de reinicialização e suprimir outras notificações.|
-|hideAll|duas|Ocultar todas as notificações.|
+|conboot|1 |Mostrar apenas notificação de reinicialização e suprimir outras notificações.|
+|hideAll|2 |Ocultar todas as notificações.|
+
+
+
 
 
 

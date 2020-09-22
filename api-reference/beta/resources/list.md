@@ -6,12 +6,12 @@ title: Listar
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 861e3c0b90c68ebf7a4a554e94097f790182727e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 7eae3ca5530b04d004888edf1cfe75e67a83b310
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109044"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055299"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -39,7 +39,7 @@ Todos os exemplos a seguir referem-se a um site: `https://graph.microsoft.com/be
 | [Excluir item de lista][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Criar item de lista][]      | POST /lists/{list-id}
 | [Obter atividades recentes][] | GET /lists/{list-id}/activities
-| [Obter canal WebSocket][] | OBTER/lists/{list-id}/subscriptions/socketIo
+| [Obter canal WebSocket][] | GET /lists/{list-id}/subscriptions/socketIo
 
 [Obter lista]: ../api/list-get.md
 [Criar lista]: ../api/list-create.md
@@ -104,7 +104,7 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 
 | Nome da propriedade            | Tipo             | Descrição
 |:-------------------------|:-----------------|:-------------------------------
-| **id**                   | cadeia de caracteres           | O identificador exclusivo do item. Somente leitura.
+| **id**                   | string           | O identificador exclusivo do item. Somente leitura.
 | **name**                 | string           | O nome do item.
 | **createdBy**            | [identitySet][]  | Identidade do criador desse item. Somente leitura.
 | **createdDateTime**      | DateTimeOffset   | A data e a hora da criação do item. Somente leitura.
@@ -150,3 +150,5 @@ O recurso **list** tem as seguintes relações com outros recursos.
   "suppressions": []
 }
 -->
+
+

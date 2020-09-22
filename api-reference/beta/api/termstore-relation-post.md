@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b8323a8b2b5cc9ad9547182d9db8bdeba17934f7
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 8008abbfa10bbc0c7267384c66afc7c7c1c1c328
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539145"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055716"
 ---
 # <a name="create-relation"></a>Criar relação
 Namespace: Microsoft. Graph. termos
@@ -127,3 +127,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

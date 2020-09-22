@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 2480f55cf0e7ea12d9bfaf31941a943095f62c31
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 93adb5c8dcef2cb7472d2f58385f8c2a779566c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898034"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054816"
 ---
 # <a name="resourcevisualization-resource-type"></a>tipo de recurso resourceVisualization
 
@@ -46,8 +46,8 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade              | Tipo          | Descrição  |
 | -------------         |---------------| -------------|
 | title                 | String        | O texto do título do item.               |
-| tipo              | Cadeia de caracteres        | O tipo de mídia do item. Pode ser usado para filtrar um arquivo específico com base em um tipo específico. Veja abaixo os tipos suportados. |
-| Mídia             | String        | O tipo de mídia do item. Pode ser usado para filtragem de um tipo específico de arquivo baseado em tipos MIME de mídias da IANA compatíveis. Observe que nem todos os tipos de MIME de mídia têm suporte. |
+| tipo              | String        | O tipo de mídia do item. Pode ser usado para filtrar um arquivo específico com base em um tipo específico. Veja abaixo os tipos suportados. |
+| mediaType             | String        | O tipo de mídia do item. Pode ser usado para filtragem de um tipo específico de arquivo baseado em tipos MIME de mídias da IANA compatíveis. Observe que nem todos os tipos de MIME de mídia têm suporte. |
 | previewImageUrl       | String        | Uma URL que leva à imagem de visualização do item. |
 | previewText           | String        | Um texto de visualização para o item. |
 | containerWebUrl       | String        | Um caminho que conduz à pasta na qual o item está armazenado. |
@@ -66,13 +66,13 @@ Veja a seguir uma representação JSON do recurso
 -   Publisher
 -   Project
 -   Access
--   Correio
+-   Email
 -   Limit
 -   Arquivar
 -   XPS
 -   Áudio
 -   Vídeo
--   Image
+-   Imagem
 -   Web
 -   Texto
 -   Xml
@@ -82,7 +82,7 @@ Veja a seguir uma representação JSON do recurso
 - SPSite
 -   Outros
 
-Consulta de exemplo:`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+Consulta de exemplo: `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 Observações: `spsite` talvez seja necessário classificar por `lastUsed/lastAccessedDateTime` desc para recuperar resultados válidos
 
@@ -91,9 +91,10 @@ Os tipos com suporte podem diferir com base nos contêineres dos quais o [office
 
 -   OneDriveBusiness
 -   Site
--   Correio
+-   Email
 -   DropBox
 -   Caixa
 -   GDrive
 
-Consulta de exemplo:`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+Consulta de exemplo: `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+

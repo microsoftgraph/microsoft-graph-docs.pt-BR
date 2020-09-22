@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fbbf99ccb3545bac19cfc3578b5c6c0579e0844c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 990cd49746949191c58a3536767ea5f91965bd2b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452600"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055796"
 ---
 # <a name="create-or-replace-schedule"></a>Criar ou substituir agendamento
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -63,7 +63,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [Sched
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Schedule](../resources/schedule.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Schedule](../resources/schedule.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -143,3 +143,5 @@ Content-length: 401
   ]
 }
 -->
+
+

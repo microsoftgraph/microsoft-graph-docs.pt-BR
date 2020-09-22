@@ -1,31 +1,31 @@
 ---
-title: 'servicePrincipalName: listar createdObjects'
-description: Recupere uma lista de objetos directoryobject.
+title: 'servicePrincipal: List createdObjects'
+description: Recuperar uma lista de objetos directoryobject.
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: b3267b4234b6bf759458474e73bfc93027245b69
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: a82dd7c2d4e3c108c14f269645b67cbaa23984a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383978"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054977"
 ---
-# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipalName: listar createdObjects
+# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: List createdObjects
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos directoryobject.
+Recuperar uma lista de objetos directoryobject.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application. Read. All, Application. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application. Read. All, Application. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -117,3 +117,4 @@ Content-length: 55
   ]
 }
 -->
+

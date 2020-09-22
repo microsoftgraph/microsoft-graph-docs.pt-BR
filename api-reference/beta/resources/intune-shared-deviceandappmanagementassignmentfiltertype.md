@@ -3,14 +3,14 @@ title: tipo de enumeração deviceAndAppManagementAssignmentFilterType
 description: Representa o tipo do filtro de atribuição.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c3ab83523553c37e263fd782dbfa499b1fdafdb
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 84aea9e61917ede7c8d470ca0f972510df4e0c3f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793441"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055383"
 ---
 # <a name="deviceandappmanagementassignmentfiltertype-enum-type"></a>tipo de enumeração deviceAndAppManagementAssignmentFilterType
 
@@ -27,6 +27,9 @@ Representa o tipo do filtro de atribuição.
 |:---|:---|:---|
 |Nenhuma|,0|Valor padrão. Não usar.|
 |ser|1 |Indica em-Filter, a correspondência de regra oferecerá a carga aos dispositivos.|
+
+
+
 
 
 

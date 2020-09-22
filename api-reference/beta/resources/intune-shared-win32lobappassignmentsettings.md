@@ -3,14 +3,14 @@ title: tipo de recurso win32LobAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel de LOB do Win32 a um grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53872d032bbb61cf57d191f1b58f1878ba5c0a91
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 80b824527842452e7e3ea23b94d4a225129ba75c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177657"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055300"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>tipo de recurso win32LobAppAssignmentSettings
 
@@ -62,6 +62,9 @@ Veja a seguir uma representação JSON do recurso.
   "deliveryOptimizationPriority": "String"
 }
 ```
+
+
+
 
 
 

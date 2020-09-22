@@ -3,14 +3,14 @@ title: tipo de recurso macOSAppleEventReceiver
 description: Representa um processo que pode receber uma notificação de evento Apple.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 16064b1f7311f8ab384d7905a6f4cfa2f09ccc09
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: db781ad536e8fe918257f74d87fa104f4b2a23f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177349"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055446"
 ---
 # <a name="macosappleeventreceiver-resource-type"></a>tipo de recurso macOSAppleEventReceiver
 
@@ -25,10 +25,10 @@ Representa um processo que pode receber uma notificação de evento Apple.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|codeRequirement|Cadeia de Caracteres|Requisito de código para o aplicativo ou o binário que recebe o evento Apple.|
-|identificador|Cadeia de Caracteres|ID de pacote do aplicativo ou caminho de arquivo do processo ou executável que recebe o evento Apple.|
+|codeRequirement|Cadeia de caracteres|Requisito de código para o aplicativo ou o binário que recebe o evento Apple.|
+|identificador|Cadeia de caracteres|ID de pacote do aplicativo ou caminho de arquivo do processo ou executável que recebe o evento Apple.|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|Use ID de pacote para um aplicativo ou caminho para um processo ou executável que receba o evento Apple. Os valores possíveis são: `bundleID` e `path`.|
-|autorizado|Boolean|Permitir ou impedir que este aplicativo receba eventos Apple.|
+|autorizado|Booliano|Permitir ou impedir que este aplicativo receba eventos Apple.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -49,6 +49,9 @@ Veja a seguir uma representação JSON do recurso.
   "allowed": true
 }
 ```
+
+
+
 
 
 

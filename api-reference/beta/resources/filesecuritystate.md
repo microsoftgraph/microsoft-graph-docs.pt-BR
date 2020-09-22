@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: e030ce95ef2b8c5f1af5424bfdd0e727f2d3e2f6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: bec30dec9f30186d3a8a5a0bcbd9be15874c8297
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806538"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055474"
 ---
 # <a name="filesecuritystate-resource-type"></a>tipo de recurso filesecuritystate
 
@@ -25,9 +25,9 @@ Contém informações sobre o arquivo (não processo) relacionado ao alerta.
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
 |fileHash|[fileHash](filehash.md)|Tipo complexo contendo hashes de arquivo (criptográfico e diferencia local).|
-|nome|String|Nome do arquivo (sem o caminho).|
+|name|Cadeia de caracteres|Nome do arquivo (sem o caminho).|
 |caminho|String|Caminho completo do arquivo/ImageFile.|
-|riskScore|String|Geração de um provedor/Pontuação de risco calculado do arquivo de alerta. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
+|riskScore|Cadeia de caracteres|Geração de um provedor/Pontuação de risco calculado do arquivo de alerta. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -63,3 +63,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -6,16 +6,16 @@ title: ListInfo
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 3a066505348b1a1014b27ca3c83e0ee2f97f41a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f36e7f08d8a5ce29316e97ff8f03f14063a4d36
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522950"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055285"
 ---
 # <a name="listinfo-resource"></a>Recurso de ListInfo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +46,7 @@ Veja a seguir uma representação JSON do recurso.
 
 | Nome da propriedade           | Tipo    | Descrição
 |:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Boolean | Se `true`, indica que os tipos de conteúdo estão habilitados nesta lista.
+| **contentTypesEnabled** | Booliano | Se `true`, indica que os tipos de conteúdo estão habilitados nesta lista.
 | **hidden**              | Booliano | Se `true`, indica que a lista não fica visível normalmente na experiência de usuário do SharePoint.
 | **template**            | String  | Um valor enumerado que representa o modelo de lista básica usado na criação da lista. Os valores possíveis incluem `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` e mais.
 
@@ -68,3 +68,5 @@ Para os desenvolvedores familiarizados com APIs de CSOM do SharePoint, o valor `
   "suppressions": []
 }
 -->
+
+

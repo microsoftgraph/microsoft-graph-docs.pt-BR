@@ -6,16 +6,16 @@ title: ListItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ac09e46d974f8fe5c54fe47d4023674b07c66a1c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de11928d2ac6f0f78e2dabbd34ebb25d927c5aa9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522936"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055236"
 ---
 # <a name="listitemversion-resource-type"></a>Tipo de recurso ListItemVersion
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ As seguintes tarefas estão disponíveis para os recursos listItemVersion.
 
 |      Nome da propriedade       |                         Tipo                         |                               Descrição                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | A ID da versão. Somente leitura.                                       |
+| **id**                   | cadeia de caracteres                                               | A ID da versão. Somente leitura.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identidade do usuário que modificou a versão pela última vez. Somente leitura.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Data e hora em que a versão foi modificada pela última vez. Somente leitura.                 |
 | **published**            | [PublicationFacet](../resources/publicationfacet.md) | Indica o status de publicação desta versão específica. Somente leitura. |
@@ -80,3 +80,5 @@ A tabela a seguir define as relações que o recurso **driveItemVersion** tem co
   "suppressions": []
 }
 -->
+
+

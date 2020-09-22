@@ -3,14 +3,14 @@ title: Tipo de recurso deviceAndAppManagementAssignmentTarget
 description: Tipo base para destinos de atribuição.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4194d5afb7f7c90f658c558d8609badef2d89cfc
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: ec22ad7ff3a7fe12ba77511ce7c9fc40c6bc49ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793490"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055376"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>Tipo de recurso deviceAndAppManagementAssignmentTarget
 
@@ -25,11 +25,11 @@ Tipo base para destinos de atribuição.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceAndAppManagementAssignmentFilterId|String|A ID do filtro para a atribuição de destino.|
+|deviceAndAppManagementAssignmentFilterId|Cadeia de caracteres|A ID do filtro para a atribuição de destino.|
 |deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|O tipo de filtro da atribuição de destino, ou seja, excluir ou incluir. Os valores possíveis são: `none`, `include`.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "deviceAndAppManagementAssignmentFilterType": "String"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 485dba38275cb437f069abf1309bdc0705ad967a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bea72f49f1cefc7874d9a5aa7e92e7dcd7caaa71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473476"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055229"
 ---
 # <a name="mailboxusagedetail-resource-type"></a>tipo de recurso mailboxUsageDetail
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 | Propriedade                        | Tipo    |
 | :------------------------------ | :------ |
 | reportRefreshDate               | Data    |
-| userPrincipalName               | String  |
+| userPrincipalName               | Cadeia de caracteres  |
 | displayName                     | Cadeia de caracteres  |
 | isDeleted                       | Booliano |
 | deletedDate                     | Data    |
@@ -34,7 +34,7 @@ Namespace: microsoft.graph
 | issueWarningQuotaInBytes        | Int64   |
 | prohibitSendQuotaInBytes        | Int64   |
 | prohibitSendReceiveQuotaInBytes | Int64   |
-| reportPeriod                    | String  |
+| reportPeriod                    | Cadeia de caracteres  |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -64,3 +64,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

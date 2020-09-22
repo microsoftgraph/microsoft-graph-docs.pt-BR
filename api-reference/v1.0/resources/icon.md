@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0978602f5a5e8c9d4933c25e39e4cda05a619d59
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 84953f4917b3cbf4b5792ed3a7b74600ec2457c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806062"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054900"
 ---
 # <a name="icon-resource-type"></a>Tipo de recurso Icon
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Representa um ícone de célula.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -65,3 +65,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

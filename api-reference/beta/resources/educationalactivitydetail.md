@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: ccacf02184bbf54e49949d7671d34dde93b3859f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2f19f5e02ae26281a5ac1b2b48498a426f976e8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502820"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055656"
 ---
 # <a name="educationalactivitydetail-resource-type"></a>tipo de recurso educationalActivityDetail
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,13 +24,13 @@ Representa detalhes adicionais sobre um Undergraduate, graduação, graduação 
 
 | Propriedade     | Tipo        | Descrição                                                   |
 |:-------------|:------------|:--------------------------------------------------------------|
-|abreviação  |String       |Nome abreviado do grau ou do programa (exemplo: PhD, MBA)    |
-|activities    |String       |As atividades do extracurriculares são realizadas junto com o programa.   |
-|concede        |String       |Quaisquer prêmios ou honras associados ao programa.              |
+|abreviação  |Cadeia de caracteres       |Nome abreviado do grau ou do programa (exemplo: PhD, MBA)    |
+|activities    |Cadeia de caracteres       |As atividades do extracurriculares são realizadas junto com o programa.   |
+|awards        |Cadeia de caracteres       |Quaisquer prêmios ou honras associados ao programa.              |
 |description   |String       |Breve descrição do programa fornecido pelo usuário.         |
 |displayName   |Cadeia de caracteres       |Nome de formato longo do programa que o usuário forneceu.      |
-|fieldsOfStudy |String       |Principais e menores associados ao programa. (se aplicável) |
-|grade         |String       |A classificação final, turma, média ou pontuação.                          |
+|fieldsOfStudy |Cadeia de caracteres       |Principais e menores associados ao programa. (se aplicável) |
+|grade         |Cadeia de caracteres       |A classificação final, turma, média ou pontuação.                          |
 |notes         |String       |Observações adicionais que o usuário forneceu.                        |
 |webUrl        |String       |Link para a página de grau ou de programa.                            |
 
@@ -70,3 +70,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

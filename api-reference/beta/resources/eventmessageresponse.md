@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 24ae04514b93ba09ba994e1f184e1b2546e038bc
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: e80b3ceb8808f94f0c04135724ce05d6b19d0e09
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290947"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055488"
 ---
 # <a name="eventmessageresponse-resource-type"></a>tipo de recurso eventMessageResponse
 
@@ -32,7 +32,7 @@ Para obter mais informações sobre como propor um horário e como receber e ace
 |:-------------|:------------|:------------|
 |[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Ler propriedades e relações do objeto eventMessage.|
 |[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage.|
-|[Delete](../api/eventmessage-delete.md) | None |Excluir o objeto eventMessage.|
+|[Delete](../api/eventmessage-delete.md) | Nenhum |Excluir o objeto eventMessage.|
 |[copy](../api/message-copy.md)|[message](message.md)|Copiar uma mensagem para uma pasta.|
 |[createForward](../api/message-createforward.md)|[message](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
 |[createReply](../api/message-createreply.md)|[message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
@@ -65,14 +65,14 @@ Para obter mais informações sobre como propor um horário e como receber e ace
 |bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem. Está no formato de texto. |
 |categories|String collection|As categorias associadas à mensagem.|
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
-|changeKey|Cadeia de caracteres|A versão da mensagem.|
+|changeKey|String|A versão da mensagem.|
 |conversationId|String|A ID da conversa à qual o email pertence.|
 |conversationIndex|Edm.Binary|O Índice da conversa à qual o email pertence.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|A hora de término da reunião solicitada.|
 |flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio da qual a mensagem foi enviada. Na maioria dos casos, esse valor é o mesmo que o da propriedade **remetente**, exceto para cenários de compartilhamento ou delegação. O valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
-|hasAttachments|Boolean|Indica se a mensagem tem anexos.|
+|hasAttachments|Booliano|Indica se a mensagem tem anexos.|
 |id|Cadeia de caracteres| Identificador exclusivo da mensagem. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
 |importância|String| A importância da mensagem: `low`, `normal`, `high`.|
 |inferenceClassification|String| Os valores possíveis são: `focused` e `other`.|
@@ -80,7 +80,7 @@ Para obter mais informações sobre como propor um horário e como receber e ace
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). |
 |isAllDay |Booliano|Indica se o evento dura todo o dia. Ajustar essa propriedade requer ajustar as propriedades **StartDateTime** e **EndDateTime** do evento também.|
 |IsDelegated foi removida|Booliano|True se essa resposta de solicitação de reunião estiver acessível a um representante, caso contrário, false. O padrão é false.|
-|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
 |isOutOfDate|Booliano|Indica se esta solicitação de reunião foi desfeita por uma solicitação mais recente.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
@@ -94,13 +94,13 @@ Para obter mais informações sobre como propor um horário e como receber e ace
 |receivedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|O padrão de recorrência da reunião solicitada.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
-|responseType|string| Especifica o tipo de resposta a uma solicitação de reunião. Os valores possíveis são: `tentativelyAccepted`, `accepted`, `declined`. Para o tipo eventMessageResponse, `none` , `organizer` e `notResponded` não são suportados. Somente leitura. Não filtrável.|
+|responseType|cadeia de caracteres| Especifica o tipo de resposta a uma solicitação de reunião. Os valores possíveis são: `tentativelyAccepted`, `accepted`, `declined`. Para o tipo eventMessageResponse, `none` , `organizer` e `notResponded` não são suportados. Somente leitura. Não filtrável.|
 |sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo da propriedade **from**. Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [ou ao enviar uma mensagem como um delegado](/graph/outlook-share-delegate-calendar.md). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |sentDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|O horário de início da reunião solicitada.|
-|subject|Cadeia de caracteres|O assunto da mensagem.|
+|subject|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
-|type|String|O tipo de reunião solicitada: `singleInstance` , `occurence` , `exception` , `seriesMaster` .|
+|tipo|Cadeia de caracteres|O tipo de reunião solicitada: `singleInstance` , `occurence` , `exception` , `seriesMaster` .|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual.|
 |UnsubscribeData|String|As entradas válidas analisadas no cabeçalho List-Unsubscribe.  Esses são os dados para o comando mail no cabeçalho List-Unsubscribe, se a propriedade UnsubscribeEnabled for true.|
 |UnsubscribeEnabled|Booliano|Indica se a mensagem está habilitada para o cancelamento da assinatura.  valueTrue se o cabeçalho list-Unsubscribe estiver em conformidade com o rfc-2369.|
@@ -192,3 +192,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

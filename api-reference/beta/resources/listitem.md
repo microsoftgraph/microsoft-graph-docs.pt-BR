@@ -6,16 +6,16 @@ title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 03f3dae851cf9a23dbe300f834846046dce4de74
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e457840ee55206b47b035ae53127c5bf3e5130c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522943"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055257"
 ---
 # <a name="listitem-resource"></a>Recurso ListItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -94,7 +94,7 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 
 | Nome da propriedade        | Tipo              | Descrição
 |:---------------------|:------------------|:----------------------------------
-| id                   | cadeia de caracteres            | O identificador exclusivo do item. Somente leitura.
+| id                   | string            | O identificador exclusivo do item. Somente leitura.
 | name                 | string            | O nome/título do item.
 | createdBy            | [identitySet][]   | Identidade do criador desse item. Somente leitura.
 | createdDateTime      | DateTimeOffset    | A data e a hora da criação do item. Somente leitura.
@@ -143,3 +143,5 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
   "suppressions": []
 }
 -->
+
+

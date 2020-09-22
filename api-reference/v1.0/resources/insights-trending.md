@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: a3b836eaf503315b4c47d71fce3f308c35dd8aed
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7a9c9cf9323aa24bd50c1f817a1293088e1a4373
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531276"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054767"
 ---
 # <a name="trending-resource-type"></a>tipo de recurso de tendência
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Relação avançada conectando um usuário a documentos que estão em tendência ao usuário (são relevantes para o usuário). Os arquivos do OneDrive e os arquivos armazenados em sites de equipe do SharePoint podem ser tendências em torno do usuário.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -33,7 +33,7 @@ Relação avançada conectando um usuário a documentos que estão em tendência
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)    | Propriedades que você pode usar para visualizar o documento em sua experiência. |
 | resourceReference     | [resourceReference](insights-resourcereference.md)        | Propriedades de referência do documento de tendência, como a URL e o tipo do documento. |
 | lastModifiedDateTime  | DateTimeOffset            | |
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Propriedade      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|
@@ -61,3 +61,4 @@ Veja a seguir uma representação JSON do recurso
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+

@@ -3,14 +3,14 @@ title: tipo de enumeração deviceAndAppManagementAssignmentSource
 description: Representa a fonte da atribuição.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d860fdf85173ce9c93b3061059a2a74aa36632ff
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 38fbf470b728c61d2ff9c2261a7deeb6c8aa3327
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443636"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055369"
 ---
 # <a name="deviceandappmanagementassignmentsource-enum-type"></a>tipo de enumeração deviceAndAppManagementAssignmentSource
 
@@ -26,7 +26,10 @@ Representa a fonte da atribuição.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |orientar|,0|Direto indica uma atribuição direta.|
-|policySets|1|PolicySets indica que a atribuição foi feita através da atribuição de Policyset.|
+|policySets|1 |PolicySets indica que a atribuição foi feita através da atribuição de Policyset.|
+
+
+
 
 
 

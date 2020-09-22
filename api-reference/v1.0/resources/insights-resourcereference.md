@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: aa00eb06ac239b4f93a200e72ecbe88c99d6189c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56f1cc992deaa74623930074ea75b6cb0fa9e0ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532866"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054837"
 ---
 # <a name="resourcereference-resource-type"></a>tipo de recurso resourceReference
 
@@ -41,4 +41,5 @@ Veja a seguir uma representação JSON do recurso
 | ------------- |-----------| -------------|
 | webUrl        | String    | Uma URL que conduz ao item referenciado. |
 | id            | String    | O identificador exclusivo do item.           |
-| type          | String    | Um valor String que pode ser usado para classificar o item, como "Microsoft. Graph. driveItem" |
+| tipo          | String    | Um valor String que pode ser usado para classificar o item, como "Microsoft. Graph. driveItem" |
+

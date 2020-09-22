@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d7e614ac3f706886d893cc3f9cbb61d81d5db3cb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6073a25b909dffb8fb9b5145c3d521d9b3ede955
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502813"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055657"
 ---
 # <a name="educationassignment-resource-type"></a>tipo de recurso educationAssignment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,18 +40,18 @@ As APIs de atribuição são expostas no namespace da classe.
 |[Anexar amostra rubric](../api/educationassignment-put-rubric.md)|Nenhum|Anexar um **educationRubric** existente a esta atribuição.|
 |[Remover amostra rubric](../api/educationassignment-delete-rubric.md)|Nenhum|Desanexe o **educationRubric** da atribuição.|
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Alterar o estado de um objeto **educationAssignment** de rascunho para publicado.|
-|[Obter URL da pasta do recurso](../api/educationassignment-getresourcesfolderurl.md)| string| A pasta do OneDrive em que os recursos baseados em arquivo devem ser colocados para fazer parte de um recurso de atribuição. Os arquivos devem estar localizados nessa pasta para serem adicionados como um recurso.|
+|[Obter URL da pasta do recurso](../api/educationassignment-getresourcesfolderurl.md)| cadeia de caracteres| A pasta do OneDrive em que os recursos baseados em arquivo devem ser colocados para fazer parte de um recurso de atribuição. Os arquivos devem estar localizados nessa pasta para serem adicionados como um recurso.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura.|
-|allowLateSubmissions|Boolean| Identifica se os alunos podem enviar após a data de conclusão. Se essa propriedade não for especificada durante a criação, o padrão será true. |
-|allowStudentsToAddResourcesToSubmission|Boolean| Identifica se os alunos podem adicionar seus próprios recursos a um envio ou se eles só podem modificar recursos adicionados pelo professor. |
+|allowLateSubmissions|Booliano| Identifica se os alunos podem enviar após a data de conclusão. Se essa propriedade não for especificada durante a criação, o padrão será true. |
+|allowStudentsToAddResourcesToSubmission|Booliano| Identifica se os alunos podem adicionar seus próprios recursos a um envio ou se eles só podem modificar recursos adicionados pelo professor. |
 |assignDateTime|DateTimeOffset|A data em que a atribuição deve se tornar ativa.  Se no futuro, a atribuição não será mostrada ao aluno até esta data.  O tipo **timestamp** representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |atribuir|[educationAssignmentRecipient](educationassignmentrecipient.md)| Quais usuários ou classes inteira devem receber um objeto de envio depois que a atribuição for publicada. |
 |assignedDateTime|DateTimeOffset|O momento em que a atribuição foi publicada para estudantes e a atribuição aparece na linha do tempo dos alunos.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|classId|String| Classe à qual essa atribuição pertence. |
+|classId|Cadeia de caracteres| Classe à qual essa atribuição pertence. |
 |closeDateTime|DateTimeOffset| Data em que a atribuição será fechada para envios. Este é um campo opcional que pode ser nulo se a atribuição não allowLateSubmissions ou quando closeDateTime for igual a dueDateTime. Mas, se especificado, o closeDateTime deve ser maior ou igual ao de dueDateTime. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |createdBy|[identitySet](identityset.md)| Quem criou a atribuição. |
 |createdDateTime|DateTimeOffset|Momento em que a atribuição foi criada.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -118,3 +118,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

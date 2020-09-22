@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 06be7eefad204f0cef73d8c0d16d70159f9142db
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 60588a0c9a2714da80c0d5e24b4300146e3b1556
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793756"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055425"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
@@ -73,16 +73,17 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Tipo de proprietário](intune-shared-ownertype.md)
 - [Tipo de plataforma da política](intune-shared-policyplatformtype.md)
 - [Domínio com proxy](intune-shared-proxieddomain.md)
-- [Report](intune-shared-report.md)
+- [Relatório](intune-shared-report.md)
 - [Raiz de relatório](intune-shared-reportroot.md)
 - [Estado do aplicativo resultante](intune-shared-resultantappstate.md)
 - [Cores RGB](intune-shared-rgbcolor.md)
 - [Executar como tipo de conta](intune-shared-runasaccounttype.md)
 - [Estado da execução](intune-shared-runstate.md)
 - [Opções de geração do estado da interface do usuário salvas](intune-shared-saveduistategenerationoptions.md)
+- [Tipo de fonte de configuração](intune-shared-settingsourcetype.md)
 - [Configuração direcionada de aplicativo gerenciado](intune-shared-targetedmanagedappconfiguration.md)
 - [URI](intune-shared-uri.md)
-- [Usuário](intune-shared-user.md)
+- [User](intune-shared-user.md)
 - [Tipo de conta do token VPP](intune-shared-vpptokenaccounttype.md)
 - [Causa da falha da ação do token VPP](intune-shared-vpptokenactionfailurereason.md)
 - [Configurações de atribuição do aplicativo LOB do Win32](intune-shared-win32lobappassignmentsettings.md)
@@ -94,3 +95,5 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Configuração de ingresso no domínio do Windows](intune-shared-windowsdomainjoinconfiguration.md)
 - [Configurações de atribuição do aplicativo Windows universal AppX](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Estado do Windows Update](intune-shared-windowsupdatestate.md)
+
+

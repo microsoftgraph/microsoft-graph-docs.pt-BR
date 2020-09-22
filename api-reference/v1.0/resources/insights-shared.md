@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 9b7bb8c2a69ebab16171ff4a74283d0993aefc8a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c78ef6c63d1970f92a2a68a91cd674d39cbce736
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532874"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054809"
 ---
 # <a name="sharedinsight-resource-type"></a>tipo de recurso sharedInsight
 
@@ -23,7 +23,7 @@ Uma percepção representando arquivos compartilhados com ou por um usuário esp
 
 **Observação**: no momento, estamos trabalhando para preencher os resultados da API compartilhada com dados. Pode haver alguns dados ausentes nas primeiras semanas após o lançamento.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -38,7 +38,7 @@ Uma percepção representando arquivos compartilhados com ou por um usuário esp
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Propriedades que você pode usar para visualizar o documento em sua experiência. Somente leitura      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Propriedades de referência do documento compartilhado, como a URL e o tipo do documento. Somente leitura       |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Propriedade      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|
@@ -61,3 +61,4 @@ Veja a seguir uma representação JSON do recurso
   "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
 }
 ```
+

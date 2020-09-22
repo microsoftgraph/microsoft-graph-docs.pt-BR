@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4aab80a23b72b599df7627f5734d04ad9aef0bbe
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: c3f704339dbf2acbe7cb78e1899c5f209f50f21e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790933"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055587"
 ---
 # <a name="educationsynchronizationcustomization-resource-type"></a>tipo de recurso educationSynchronizationCustomization
 
@@ -26,8 +26,8 @@ Fornece configurações para personalizar a sincronização do perfil de dados d
 | :----------------------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | optionalPropertiesToSync | Coleção de cadeias de caracteres | A coleção de nomes de propriedade a serem sincronizados. Se definido como nulo, todas as propriedades serão sincronizadas. **Não se aplica a registradoras ou listas de professores do aluno**                                                            |
 | synchronizationStartDate | DateTime          | A data em que a sincronização deve ser iniciada. Esse valor deve ser definido para uma data futura. Se definido como nulo, o recurso será sincronizado quando a configuração do perfil for concluída. **Aplica-se apenas às registradoras de alunos** |
-| isSyncDeferred           | Boolean           | Indica se a sincronização da entidade pai será adiada para uma data posterior.                                                                                                                                    |
-| allowDisplayNameUpdate   | Boolean           | Indica se o nome de exibição do recurso pode ser substituído pela sincronização.                                                                                                                                     |
+| isSyncDeferred           | Booliano           | Indica se a sincronização da entidade pai será adiada para uma data posterior.                                                                                                                                    |
+| allowDisplayNameUpdate   | Booliano           | Indica se o nome de exibição do recurso pode ser substituído pela sincronização.                                                                                                                                     |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -47,3 +47,5 @@ Fornece configurações para personalizar a sincronização do perfil de dados d
   "allowDisplayNameUpdate": "Boolean"
 }
 ```
+
+

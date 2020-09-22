@@ -3,14 +3,14 @@ title: tipo de enumeração localSecurityOptionsStandardUserElevationPromptBehav
 description: Valores possíveis para LocalSecurityOptionsStandardUserElevationPromptBehavior
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3281255e411c2e3a97e004e26124755b3b647d07
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 13cd670b1a1cf9dd4ef99348835583035fc9e3ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439729"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055460"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>tipo de enumeração localSecurityOptionsStandardUserElevationPromptBehaviorType
 
@@ -26,9 +26,12 @@ Valores possíveis para LocalSecurityOptionsStandardUserElevationPromptBehavior
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|automaticallyDenyElevationRequests|1|Negar automaticamente solicitações de elevação|
-|promptForCredentialsOnTheSecureDesktop|duas|Solicitar credenciais na área de trabalho segura|
-|promptForCredentials|3D|Solicitar credenciais|
+|automaticallyDenyElevationRequests|1 |Negar automaticamente solicitações de elevação|
+|promptForCredentialsOnTheSecureDesktop|2 |Solicitar credenciais na área de trabalho segura|
+|promptForCredentials|3 |Solicitar credenciais|
+
+
+
 
 
 
