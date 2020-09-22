@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 9801598762603740fa321d5606d1e8a36aba958a
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 4006e33bde696a8f92d1d77ff6a6cd8f55f13a54
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566970"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007957"
 ---
 # <a name="list-ediscoverycases"></a>Listar ediscoveryCases
 
@@ -164,3 +164,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

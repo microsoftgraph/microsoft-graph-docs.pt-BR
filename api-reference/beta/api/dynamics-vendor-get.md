@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 87c79a1b91044c23b771ca613e7b93ba79a1fed0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 291fbd0cb4956069935f495fd83f844fbbdd75ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427911"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008033"
 ---
 # <a name="get-vendors"></a>Obter fornecedores
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,7 +60,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/financials/companies/{id}/vendors/{id}
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 
@@ -93,5 +93,7 @@ Veja a seguir um exemplo da resposta.
   "lastModifiedDateTime": "2017-03-07T00:35:29.667Z"
 }
 ```
+
+
 
 

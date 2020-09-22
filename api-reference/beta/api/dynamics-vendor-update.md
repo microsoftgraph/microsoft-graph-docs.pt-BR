@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 9a72c86a2f9d4a5e5c39fb839e29093741423ad6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a4cb0e65ba315f0338ac0b29ac9e77dbb037a19c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427904"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007949"
 ---
 # <a name="update-vendors"></a>Atualizar fornecedores
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -67,7 +67,7 @@ Content-type: application/json
 }
 ```
 
-**Response**
+**Resposta**
 
 Veja a seguir um exemplo da resposta. 
 
@@ -100,5 +100,7 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-07T00:35:29.667Z"
 }
 ```
+
+
 
 
