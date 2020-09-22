@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9a425f77d11d6a229c6397702ab2908ff1c6f576
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 9ef414cc0699ad116682700fb980c85f9433e523
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820131"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034678"
 ---
 # <a name="list-patents"></a>Listar patentes
 
@@ -136,3 +136,5 @@ Content-Type: application/json
   ]
 }
 ```
+
+

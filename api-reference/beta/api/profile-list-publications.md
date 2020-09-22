@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ca12826d7932ad00c5b97a8cace2d739f5096cbb
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: be3aacf8993182985c100217500274128f4c96a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819949"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034648"
 ---
 # <a name="list-publications"></a>Listar publicações
 Namespace: microsoft.graph
@@ -134,3 +134,5 @@ Content-Type: application/json
   ]
 }
 ```
+
+

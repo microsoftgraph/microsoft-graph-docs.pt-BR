@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 75692418ae2d54650f4ae6c616c727fab5b040e2
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 6e6992fa3bd871a3e80c7c9a949461d788e6926f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819725"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034361"
 ---
 # <a name="create-itempublication"></a>Criar a multipúblico
 Namespace: microsoft.graph
@@ -148,3 +148,5 @@ Content-Type: application/json
   "webUrl": "https://www.iabm.io"
 }
 ```
+
+

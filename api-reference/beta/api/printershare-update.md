@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: bde00fc44cfba539ff830f4a6f8e7338e8743822
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 6d4b7e578fcf9436678442c86608f05fef77fb1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674215"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035475"
 ---
 # <a name="update-printershare"></a>Atualizar PrinterShare
 
@@ -29,7 +29,7 @@ Além das permissões a seguir, o usuário ou o locatário do aplicativo deve te
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| PrinterShare. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante)| PrinterShare.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -50,7 +50,7 @@ No corpo da solicitação, forneça os valores para campos [printerShare](../res
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|impressora|Cadeia de caracteres|A impressora à qual esse compartilhamento de impressora está relacionado. Use a `printer@odata.bind` sintaxe, conforme mostrado no exemplo a seguir, para atualizar a impressora à qual este compartilhamento de impressora está associado.|
+|impressora|String|A impressora à qual esse compartilhamento de impressora está relacionado. Use a `printer@odata.bind` sintaxe, conforme mostrado no exemplo a seguir, para atualizar a impressora à qual este compartilhamento de impressora está associado.|
 
 >**Observação:** Não há suporte para a atualização do nome de compartilhamento da impressora.
 
@@ -119,3 +119,5 @@ Content-length: 225
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

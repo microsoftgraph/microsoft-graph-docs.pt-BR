@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a6cb5eecdd6d779ed89cde263135def3f682c12f
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: a88e8fe834cc6dab37d18b27c65b2b998f2cf690
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819369"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034676"
 ---
 # <a name="list-notes"></a>Listar anotações
 Namespace: microsoft.graph
@@ -132,4 +132,6 @@ Content-Type: application/json
   ]
 }
 ```
+
+
 

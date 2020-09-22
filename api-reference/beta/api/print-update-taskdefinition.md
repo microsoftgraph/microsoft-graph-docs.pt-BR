@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 60c8c53cc28724a7b36e00d1b1695288356cb343
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: f029dd1e5463d6d69e78e76a90504ab610388533
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566381"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035898"
 ---
 # <a name="update-taskdefinition"></a>Atualizar taskDefinition
 
@@ -31,7 +31,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Sem suporte. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| PrintTaskDefinition. ReadWrite. All |
+|Aplicativo| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -50,8 +50,8 @@ No corpo da solicitação, forneça os valores para os campos [printTaskDefiniti
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|Cadeia de caracteres|O nome do printTaskDefinition.|
-|createdBy|Cadeia de caracteres|Informações sobre o aplicativo que criou a definição de tarefa. Somente a `createdBy.displayName` propriedade pode ser atualizada.|
+|displayName|String|O nome do printTaskDefinition.|
+|createdBy|String|Informações sobre o aplicativo que criou a definição de tarefa. Somente a `createdBy.displayName` propriedade pode ser atualizada.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
@@ -112,3 +112,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

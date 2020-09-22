@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2b2315a037b6f8e04ec420955ffee591029a81a5
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 8688775867b55000aa4a5e5e934d261221396cd9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819308"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034796"
 ---
 # <a name="list-awards"></a>Listar prêmios
 
@@ -135,3 +135,5 @@ Content-Type: application/json
   ]
 }
 ```
+
+

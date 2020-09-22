@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b40795f5961bfe47388b01abaf1ce39725a8d113
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 0ab51df665b9114bc590199319073efd90b5385e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819557"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034508"
 ---
 # <a name="create-personaward"></a>Criar personAward
 
@@ -144,3 +144,5 @@ Content-Type: application/json
   "webUrl": "https://www.iabm.io"
 }
 ```
+
+

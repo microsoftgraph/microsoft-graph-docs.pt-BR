@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 79891be7aa63269cb0d1f96393756f9d41d046d0
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 1beddad763dbe4f7d70ffeeeef0c5131f6df1157
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218749"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035096"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
 
@@ -53,13 +53,13 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |motivo|string|Opcional. Descrição sobre o motivo para esta ativação de função.|
-|duration|string|Opcional. Os valores válidos podem ```min``` ser (duração mínima da ativação ```default``` ), (duração de ativação padrão para a função) ou um valor duplo para especificar quantas horas é a ativação. A duração especificada não pode ser maior do que a duração de ativação da função da configuração de função. |
+|duration|string|Opcional. Os valores válidos podem ser ```min``` (duração mínima da ativação), ```default``` (duração de ativação padrão para a função) ou um valor duplo para especificar quantas horas é a ativação. A duração especificada não pode ser maior do que a duração de ativação da função da configuração de função. |
 |ticketNumber|string|Opcional. O número do tíquete usado para controlar esta ativação de função.|
 |ticketSystem|string|Opcional. O sistema de permissão.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
 Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
 ## <a name="example"></a>Exemplo
@@ -136,3 +136,5 @@ Content-length: 184
   ]
 }
 -->
+
+

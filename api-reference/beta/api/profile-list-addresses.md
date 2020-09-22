@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5520ebf47425965a464c12114988d8a6b822010c
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 12ae7539b720a5543e37d12c5f592149e7392dd9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819487"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034809"
 ---
 # <a name="list-addresses"></a>Listar endereços
 Namespace: microsoft.graph
@@ -139,3 +139,5 @@ Content-Type: application/json
   ]
 }
 ```
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: e0fc6347b273a046b202aecd803434d0f6fa0af8
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 28e7340aa3875835d1b6b84e0f4c09bd19700486
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218777"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035180"
 ---
 # <a name="list-privilegedoperationevents"></a>Listar privilegedOperationEvents
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [privilegedOperationEvent](../resources/privilegedoperationevent.md) , que representam os eventos de auditoria gerados pelo gerenciamento de identidade privilegiado para as operações de função. Para obter detalhes sobre o evento de auditoria, consulte [privilegedOperationEvent](../resources/privilegedoperationevent.md). Para filtrar os resultados da consulta, use a expressão ``$filter`` OData padrão.
+Recupere uma lista de objetos [privilegedOperationEvent](../resources/privilegedoperationevent.md) , que representam os eventos de auditoria gerados pelo gerenciamento de identidade privilegiado para as operações de função. Para obter detalhes sobre o evento de auditoria, consulte [privilegedOperationEvent](../resources/privilegedoperationevent.md). Para filtrar os resultados da consulta, use a expressão OData padrão ``$filter`` .
 
 
 ## <a name="permissions"></a>Permissões
@@ -52,14 +52,14 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [privilegedOperationEvent](../resources/privilegedoperationevent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [privilegedOperationEvent](../resources/privilegedoperationevent.md) no corpo da resposta.
 
 Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
 ## <a name="examples"></a>Exemplos
 
 ### <a name="get-audit-events-for-role-assignment-operations"></a>Obter eventos de auditoria para operações de atribuição de função
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de atribuição de função. Nesse caso, ``requestType`` Value é ``Assign``.
+O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de atribuição de função. Nesse caso, ``requestType`` Value é ``Assign`` .
 
 <!-- { "blockType": "request" } -->
 ```http
@@ -119,7 +119,7 @@ Content-length: 547
 ```
 ### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>Obter eventos de auditoria para as operações de ativação de auto-função e makePermanent
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de ativação de auto-função e makePermanent. Nesse caso, ``requestType`` Value é ``Activate``.
+O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de ativação de auto-função e makePermanent. Nesse caso, ``requestType`` Value é ``Activate`` .
 
 <!-- { "blockType": "request" } -->
 ```http
@@ -180,7 +180,7 @@ Content-length: 547
 
 ### <a name="get-audit-events-for-role-assignment-deactivation"></a>Obter eventos de auditoria para desativação de atribuição de função
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para a desativação da atribuição de função. Nesse caso, ``requestType`` Value é ``Deactivate``.
+O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para a desativação da atribuição de função. Nesse caso, ``requestType`` Value é ``Deactivate`` .
 
 <!-- { "blockType": "request" } -->
 ```http
@@ -295,3 +295,5 @@ Content-length: 547
   "suppressions": []
 }
 -->
+
+

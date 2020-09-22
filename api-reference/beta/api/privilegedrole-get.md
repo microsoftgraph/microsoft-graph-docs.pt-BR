@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: efaa5ae2fbf0f2a9089352a97285780f38c1b713
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: a3dcdff7395d3ec531dec9fd38686430c707995a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035173"
 ---
 # <a name="get-privilegedrole"></a>Get privilegedRole
 
@@ -111,3 +111,5 @@ Content-length: 46
   ]
 }
 -->
+
+

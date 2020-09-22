@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7740f8d9976db1f6bc7f2daf300342f4cab98c98
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 2025816bb917e84f8a0cce7ef6af0214516850bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674313"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035905"
 ---
 # <a name="delete-connector"></a>Excluir conector
 
@@ -51,7 +51,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 |Cenário|Método|Código|Mensagem|
 |--------|------|----|-------|
-|O usuário tenta excluir um conector que tem uma ou mais impressoras registradas|DELETE|409|Antes de excluir o conector, cancele o registro das impressoras associadas.|
+|O usuário tenta excluir um conector que tem uma ou mais impressoras registradas|EXCLUIR|409|Antes de excluir o conector, cancele o registro das impressoras associadas.|
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -99,3 +99,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

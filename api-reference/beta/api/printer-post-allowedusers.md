@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d6c419faa2569faea1b651ebe0b4faf61f9db13d
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 33acaffbf0221798c025cd41b6806c6535c302ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674481"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035635"
 ---
 # <a name="create-alloweduser-for-printer"></a>Criar allowedUser para impressora
 
@@ -103,3 +103,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

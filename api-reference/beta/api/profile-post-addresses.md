@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2dab94f8aefe12a073041ade6a6deedcee07f8ab
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 5c3c51d51926fa896a6f83b71f046692651bcc6e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820207"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034518"
 ---
 # <a name="create-addresses"></a>Criar endereços
 Namespace: microsoft.graph
@@ -148,3 +148,5 @@ Content-Type: application/json
   "geoCoordinates": null
 }
 ```
+
+

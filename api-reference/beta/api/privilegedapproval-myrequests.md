@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 8be41edff2c2c9163f26238ef0dd23bb61ea5170
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: f873b46bb1d598e95f01302c8b84a7146c29dc0b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218798"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035204"
 ---
 # <a name="privilegedapproval-myrequests"></a>privilegedApproval: myrequests
 
@@ -45,7 +45,7 @@ GET /privilegedApproval/myRequests
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [privilegedApproval](../resources/privilegedapproval.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [privilegedApproval](../resources/privilegedapproval.md) no corpo da resposta.
 
 Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
 
@@ -112,3 +112,5 @@ Content-length: 193
   ]
 }
 -->
+
+

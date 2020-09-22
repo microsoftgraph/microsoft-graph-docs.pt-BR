@@ -3,14 +3,14 @@ title: Atualizar deviceComplianceScriptRunSummary
 description: Atualiza as propriedades de um objeto deviceComplianceScriptRunSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 906f98b2d6bc3603c750e38d8583ba37dc937a72
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 31fde10bb4210d2ea8836e370dcd3957437fe4b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792426"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036608"
 ---
 # <a name="update-devicecompliancescriptrunsummary"></a>Atualizar deviceComplianceScriptRunSummary
 
@@ -101,6 +101,9 @@ Content-Length: 344
   "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
 }
 ```
+
+
+
 
 
 

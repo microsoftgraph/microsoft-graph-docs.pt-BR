@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: bf100a99d573c186efa64af1692250534a31c50a
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 1827898260f216b7c4d947b78386c5f2e5c5227e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674089"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035785"
 ---
 # <a name="printer-create"></a>impressora: criar
 
@@ -47,13 +47,13 @@ No corpo da solicitação, forneça um objeto JSON com as propriedades a seguir.
 
 | Parâmetro      | Tipo    |Descrição| Obrigatório? |
 |:---------------|:--------|:----------|:----------|
-|displayName|Cadeia de caracteres|O nome de exibição a ser atribuído à impressora.|Sim|
+|displayName|String|O nome de exibição a ser atribuído à impressora.|Sim|
 |fabricante|String|O fabricante da impressora.|Sim|
 |modelo|String|O modelo da impressora.|Sim|
-|physicalDeviceId|Cadeia de caracteres|O UUID do dispositivo físico da impressora. Obrigatório se a `hasPhysicalDevice` propriedade for true.|Não|
+|physicalDeviceId|String|O UUID do dispositivo físico da impressora. Obrigatório se a `hasPhysicalDevice` propriedade for true.|Não|
 |hasPhysicalDevice|Booliano|True se a impressora tem dispositivo de saída físico; caso contrário, false. Se for omitido, o valor padrão será true.|Não|
 |certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|A solicitação de assinatura de certificado (CSR) do X. 509 para o certificado criado e usado pela impressora para identificar-se.|Sim|
-|connectorid|Cadeia de caracteres|ID do conector que atua como proxy para a impressora.|Não|
+|connectorid|String|ID do conector que atua como proxy para a impressora.|Não|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `202 Accepted` código de resposta e um link para o [printerCreateOperation](../resources/printercreateoperation.md) associado no `Operation-Location` cabeçalho.
@@ -125,3 +125,5 @@ Retry-After: 5
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

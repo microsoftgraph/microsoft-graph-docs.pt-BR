@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 662b25f18734ed47cd2fb89fce90d04957429830
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 87483daac8e6966db739bd2e474f0d87ec716524
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820193"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034515"
 ---
 # <a name="create-personcertification"></a>Criar personCertification
 Namespace: microsoft.graph
@@ -150,3 +150,5 @@ Content-Type: application/json
   "webUrl": "https://www.iame.io/blackbelt"
 }
 ```
+
+

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c6bfc200b4c514af15beb7f63b39474d2f51c563
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 82389c7cb67c0b2624b3bbc1f02dd21c5ca82798
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674054"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035873"
 ---
 # <a name="update-printconnector"></a>Atualizar o multiligação
 
@@ -47,11 +47,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|nome|Cadeia de caracteres|O nome do conector.|
-|Nomededomíniototalmentequalificado|Cadeia de caracteres|O nome de host do computador do conector.|
+|nome|String|O nome do conector.|
+|Nomededomíniototalmentequalificado|String|O nome de host do computador do conector.|
 |operatingSystem|String|A versão do sistema operacional do computador do conector.|
-|appVersion|Cadeia de caracteres|A versão do conector.|
-|location|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional do conector.|
+|appVersion|String|A versão do conector.|
+|localização|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional do conector.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [multiconnect](../resources/printConnector.md) atualizado no corpo da resposta.
@@ -156,3 +156,5 @@ Content-length: 406
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

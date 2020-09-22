@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 0eb4af8f894af9f5c8c6bce0fdf93e5068c6d364
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 0536d5f2ac03cf766feecc3bd3e134f4b47b0952
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674285"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035502"
 ---
 # <a name="list-allowedgroups-for-printershare"></a>Listar allowedGroups para printerShare
 
@@ -107,3 +107,5 @@ Content-length: 233
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

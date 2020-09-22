@@ -1,18 +1,18 @@
 ---
-title: Excluir impressora
+title: Eliminar impressora
 description: Excluir (cancelar o registro) de uma impressora.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 049b3d08cb73bd6b4e502e527f762c23767ab065
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: a250a2dc14506ad96da10e01d9b7fe7031f2a8a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674446"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035767"
 ---
-# <a name="delete-printer"></a>Excluir impressora
+# <a name="delete-printer"></a>Eliminar impressora
 
 Namespace: microsoft.graph
 
@@ -27,7 +27,7 @@ Para usar o serviço de impressão universal, o usuário ou o locatário do apli
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Printer. FullControl. All |
+|Delegado (conta corporativa ou de estudante)| Printer.FullControl.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -93,3 +93,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

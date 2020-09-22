@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 791a36ba589842e9bd62f7f2c208717fd250bf59
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 6a2078e2bbfa741eb4d692840be72a935a7a96db
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812832"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034900"
 ---
 # <a name="delete-profile"></a>Excluir perfil
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
 | Aplicativo                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -96,3 +96,5 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

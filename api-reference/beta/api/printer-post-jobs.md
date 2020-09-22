@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2236e366e18941d81edcf1d2bdb4d4bf9b9823dd
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 43aa46f8ceb13f59be157279f87dca0ad5c8790b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673726"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035616"
 ---
 # <a name="create-printjob"></a>Criar printJob
 
@@ -101,3 +101,5 @@ Content-length: 425
   ]
 }
 ```
+
+

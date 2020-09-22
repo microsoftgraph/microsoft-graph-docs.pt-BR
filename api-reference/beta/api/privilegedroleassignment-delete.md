@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 5d4163b8932278a4679ca553875ccf8658a925d9
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 727d3d1f061f01196ac6382ca80f8d9a3c0c8000
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218735"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035072"
 ---
 # <a name="delete-privilegedroleassignment"></a>Delete privilegedRoleAssignment
 
@@ -101,3 +101,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 064fe66ca6939246cb8dcddafb0564641d3a2a71
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: f053dcbf93c4a933b4a4de4ea096621e7cb720e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218693"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034970"
 ---
 # <a name="create-privilegedroleassignment"></a>Create privilegedRoleAssignment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar um novo [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
+Use esta API para criar um novo  [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [privileg
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
 Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
 ## <a name="example"></a>Exemplo
@@ -117,3 +117,5 @@ Content-length: 184
   ]
 }
 -->
+
+

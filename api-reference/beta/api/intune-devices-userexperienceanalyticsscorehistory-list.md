@@ -3,14 +3,14 @@ title: Listar userExperienceAnalyticsScoreHistories
 description: Listar Propriedades e relações dos objetos userExperienceAnalyticsScoreHistory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 730f7e0b03cca4bca0666e17d208da847f76cba4
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 3f75dd945d4dc87d77b244639cf3c92f2a554077
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792615"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036573"
 ---
 # <a name="list-userexperienceanalyticsscorehistories"></a>Listar userExperienceAnalyticsScoreHistories
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -82,6 +82,9 @@ Content-Length: 380
   ]
 }
 ```
+
+
+
 
 
 

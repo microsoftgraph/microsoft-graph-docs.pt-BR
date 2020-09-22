@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 4baf83cd05010a179fe47c86e949f2bd6aa70f16
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d6c99aa96fb8b2bec47f57fdc32abe5e008aac12
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218721"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035049"
 ---
 # <a name="list-privilegedroleassignments"></a>Listar privilegedRoleAssignments
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
 Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
 ## <a name="examples"></a>Exemplos
@@ -166,7 +166,7 @@ Content-length: 237
 ```
 ### <a name="get-permanent-role-assignments"></a>Obter atribuições de função permanentes
 ##### <a name="request"></a>Solicitação 
-O exemplo a seguir mostra uma solicitação para consultar atribuições de função ``expirationDateTime`` permanentes ``null``, onde Value é:
+O exemplo a seguir mostra uma solicitação para consultar atribuições de função permanentes, onde ``expirationDateTime`` Value é ``null`` :
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -313,3 +313,5 @@ Content-length: 237
   ]
 }
 -->
+
+

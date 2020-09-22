@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a498f85238127a6816ed5d6597839862cd00f58d
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 9d0d9b4f65c8fb99c932348415109fde79370a38
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319456"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035390"
 ---
 # <a name="printjob-redirect"></a>printJob: Redirect
 
@@ -32,7 +32,7 @@ Para usar o serviço de impressão universal, o usuário ou o locatário do apli
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| Sem suporte. |
+|Delegado (conta corporativa ou de estudante)| Sem suporte. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| PrintJob.Manage.All |
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça a ID da impressora para a qual o trabalho de
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|destinationPrinterId|Cadeia de caracteres|A ID da impressora para a qual o trabalho de impressão deve ser redirecionado.|
+|destinationPrinterId|String|A ID da impressora para a qual o trabalho de impressão deve ser redirecionado.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [printJob](../resources/printjob.md) enfileirados para a impressora de destino.
@@ -129,3 +129,5 @@ Content-length: 437
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

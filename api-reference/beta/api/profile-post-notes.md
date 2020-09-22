@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b7353c0a82b7a94fe61c92efc66df521e7fad4f3
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 139de864b9ddec90336e56e122da5f6bf6922952
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820191"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034383"
 ---
 # <a name="create-personannotation"></a>Criar personAnnotation
 Namespace: microsoft.graph
@@ -138,3 +138,5 @@ Content-Type: application/json
   "displayName": "About Me"
 }
 ```
+
+

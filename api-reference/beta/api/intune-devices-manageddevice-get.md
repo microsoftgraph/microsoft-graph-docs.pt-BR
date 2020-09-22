@@ -3,14 +3,14 @@ title: Acessar managedDevice
 description: Leia as propriedades e as relações do objeto managedDevice.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05e8659aed001287d61abb3c572696628ed8da69
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 5922715ff642e5e966468628391338e035ee381e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46789850"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036601"
 ---
 # <a name="get-manageddevice"></a>Acessar managedDevice
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -74,7 +74,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8380
+Content-Length: 8455
 
 {
   "value": {
@@ -259,10 +259,15 @@ Content-Length: 8380
     "processorArchitecture": "x86",
     "specificationVersion": "Specification Version value",
     "joinType": "azureADJoined",
-    "skuFamily": "Sku Family value"
+    "skuFamily": "Sku Family value",
+    "skuNumber": 9,
+    "managementFeatures": "microsoftManagedDesktop"
   }
 }
 ```
+
+
+
 
 
 

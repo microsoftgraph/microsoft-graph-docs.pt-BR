@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9a0b57f00f487ec6f939c063ccbefa452212976d
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: f211f737fc49762168db14ba5bdde5b974a64e97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674145"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035348"
 ---
 # <a name="get-printserviceendpoint"></a>Obter o AddServiceEndpoint
 
@@ -103,3 +103,5 @@ Content-length: 260
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

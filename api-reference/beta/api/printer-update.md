@@ -1,18 +1,18 @@
 ---
-title: Atualizar impressora
+title: Atualização da impressora
 description: Atualiza as propriedades de um objeto Printer.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 4040174e1f1ad0278dcdfcd1dd94dbe9b6d94b27
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 77e0c59384107c3dce702b2deba9442c24f996c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674397"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035600"
 ---
-# <a name="update-printer"></a>Atualizar impressora
+# <a name="update-printer"></a>Atualização da impressora
 
 Namespace: microsoft.graph
 
@@ -53,7 +53,7 @@ Se estiver usando permissões delegadas, no corpo da solicitação, forneça os 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |location|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional da impressora.|
-|nome|Cadeia de caracteres|O nome da impressora.|
+|nome|String|O nome da impressora.|
 
 ### <a name="application-permissions-and-ipp-payload"></a>Permissões de aplicativo e carga IPP
 
@@ -182,3 +182,5 @@ Content-length: 1313
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

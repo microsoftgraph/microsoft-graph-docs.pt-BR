@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d3cc5ddce32e6c892a45638d0616ea1415256d0a
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: f3a3673e098c67ac3bf7b01a3d607e38afe95add
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035626"
 ---
 # <a name="create-tasktrigger"></a>Create taskTrigger
 
@@ -104,3 +104,5 @@ Content-length: 196
   "event": "jobStarted"
 }
 ```
+
+

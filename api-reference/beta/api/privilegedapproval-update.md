@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: d3871704a30dda2a9d07098b7b8307c987a64dc9
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9f15f7653f7d50c381de39df549f6719fe495179
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035187"
 ---
 # <a name="update-privilegedapproval"></a>Atualizar privilegedapproval
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureAD, Directory. AccessAsUser. All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureAD, Directory. AccessAsUser. All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,17 +46,17 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |approvalDuration|Duração||
 |approvalstate|string| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvaltype|Cadeia de Caracteres||
-|approverReason|Cadeia de Caracteres||
+|approvaltype|String||
+|approverReason|String||
 |endDateTime|DateTimeOffset||
-|requestorReason|Cadeia de Caracteres||
-|roleId|Cadeia de Caracteres||
+|requestorReason|String||
+|roleId|String||
 |startDateTime|DateTimeOffset||
 |userId|Cadeia de caracteres||
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `204 No Content` um código de resposta
+Se tiver êxito, este método retornará um `204 No Content` código de resposta
 
 Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
 
@@ -100,3 +100,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

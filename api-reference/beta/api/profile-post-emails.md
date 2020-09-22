@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 3577a0daa807c7f5016ae34b22174ffd1c2fe813
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: de684a581eb9c36cc1763cb557523a7b10ca2c06
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819515"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034489"
 ---
 # <a name="create-itememail"></a>Criar email
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são possíveis de definir ao criar
 |displayName|String|O nome ou rótulo que um usuário associou a um endereço de email específico.|
 |fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|type|emailtype|O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.|
+|tipo|emailtype|O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.|
 
 
 
@@ -137,3 +137,5 @@ Content-Type: application/json
   "type": null
 }
 ```
+
+

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c63dad5a4367eb7cf196cf5a6aaf6e1350eef70f
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 4f034f90c6eec0d0fae62d6fecddf2d23bc274b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566323"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035783"
 ---
 # <a name="delete-tasktrigger"></a>Delete taskTrigger
 
@@ -96,3 +96,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

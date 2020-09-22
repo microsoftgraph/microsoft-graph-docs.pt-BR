@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 178752d0a3b504c3edd160b321043e3194aab314
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 27410dbdd7b059e24bce0d532ebbd05381ac6aba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820336"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034418"
 ---
 # <a name="create-workposition"></a>Criar workPosition
 
@@ -188,3 +188,5 @@ Content-type: application/json
   "isCurrent": true
 }
 ```
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 08551b793212a54aafe1dc37fd965d695a77c962
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 033d7bfd53c67167e71f7e75d5f1691a17e5f9cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218791"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035201"
 ---
 # <a name="create-privilegedapproval"></a>Create privilegedApproval
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [privileg
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [privilegedApproval](../resources/privilegedapproval.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [privilegedApproval](../resources/privilegedapproval.md) no corpo da resposta.
 
 Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
 
@@ -121,3 +121,5 @@ Content-length: 200
   ]
 }
 -->
+
+

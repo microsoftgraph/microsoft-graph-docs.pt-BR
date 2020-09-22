@@ -1,18 +1,18 @@
 ---
-title: Obter printJob
+title: Get printJob
 description: Recupere as propriedades e os relacionamentos de um trabalho de impressão.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 07744f37598c1bb32750bdf3697ca025182faaaa
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 4a9c1b8f2fc5688f896b5fd6885926e8432e67b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674208"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035453"
 ---
-# <a name="get-printjob"></a>Obter printJob
+# <a name="get-printjob"></a>Get printJob
 
 Namespace: microsoft.graph
 
@@ -254,3 +254,5 @@ Content-length: 1688
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

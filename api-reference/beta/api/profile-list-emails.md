@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a3ab4f80069131904d9d619e7ddddb72c5a19511
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 63db846d35bf79eac426ad4e986a5b36aaec8a1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819446"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034765"
 ---
 # <a name="list-emails"></a>Listar emails
 
@@ -135,3 +135,5 @@ Content-Type: application/json
   ]
 }
 ```
+
+

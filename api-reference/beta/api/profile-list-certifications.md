@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: fd7f8196bf0b76ce16d1949d7e46c1d751a7f0db
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 2f5c1189b8a7200268bab6e07789d60d2227b2d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819334"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034789"
 ---
 # <a name="list-certifications"></a>Listar certificações
 Namespace: microsoft.graph
@@ -138,3 +138,5 @@ Content-Type: application/json
   ]
 }
 ```
+
+

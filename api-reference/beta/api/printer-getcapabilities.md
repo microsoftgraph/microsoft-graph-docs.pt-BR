@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d8570bbbd500a9071f5bcce41e8aa4537735a293
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 8d75f26971f5e1732a287bfb0cce35c38cc05efe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674418"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035755"
 ---
 # <a name="printer-getcapabilities"></a>impressora: GetCapabilities
 
@@ -145,3 +145,5 @@ Content-length: 1159
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
