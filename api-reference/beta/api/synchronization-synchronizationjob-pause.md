@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b49d19273da7ef832e27d643c7133132c19190f9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 74e3c4518ebaea6347daced9f1a4dcdc070501b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437553"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999080"
 ---
 # <a name="synchronizationjob-pause"></a>synchronizationJob: pausar
 
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, retornará `204 No Content` uma resposta. Não retorna nada no corpo da resposta.
+Se tiver êxito, retornará uma `204 No Content` resposta. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -100,3 +100,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

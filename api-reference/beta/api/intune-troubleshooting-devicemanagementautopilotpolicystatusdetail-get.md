@@ -3,14 +3,14 @@ title: Obter deviceManagementAutopilotPolicyStatusDetail
 description: Leia as propriedades e as relações do objeto deviceManagementAutopilotPolicyStatusDetail.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4103f34951ef939be945f34b2d67da63a7280ee0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: aa7999329692e880ad7b62cb7688b1e6dc1afbbe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443399"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999486"
 ---
 # <a name="get-devicemanagementautopilotpolicystatusdetail"></a>Obter deviceManagementAutopilotPolicyStatusDetail
 
@@ -82,6 +82,9 @@ Content-Length: 377
   }
 }
 ```
+
+
+
 
 
 

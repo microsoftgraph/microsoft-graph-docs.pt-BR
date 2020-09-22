@@ -3,14 +3,14 @@ title: Obter groupPolicyPresentationValue
 description: Leia as propriedades e as relações do objeto groupPolicyPresentationValue.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a4c39f8cd1b2567cb7e4b20ee3db66e43cb741c4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4949ffbfdc6d44dd512875f6dfa01b013edef020
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461783"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000571"
 ---
 # <a name="get-grouppolicypresentationvalue"></a>Obter groupPolicyPresentationValue
 
@@ -79,6 +79,9 @@ Content-Length: 269
   }
 }
 ```
+
+
+
 
 
 

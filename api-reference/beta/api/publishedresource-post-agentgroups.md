@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 12a30d04b27b0ed098fd12c71fabed90fa321cf8
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 6654f4e9b9c67d8fd6b9df58b9a1dfd91a79076c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199995"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999171"
 ---
 # <a name="assign-publishedresource-to-onpremisesagentgroup"></a>Atribuir publishedResource a onPremisesAgentGroup
 
@@ -50,7 +50,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [onPre
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [publishedResource](../resources/publishedresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [publishedResource](../resources/publishedresource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -97,3 +97,5 @@ HTTP/1.1 204
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

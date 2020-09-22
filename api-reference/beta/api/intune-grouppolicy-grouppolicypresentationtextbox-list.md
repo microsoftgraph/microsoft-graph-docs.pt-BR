@@ -3,14 +3,14 @@ title: Listar groupPolicyPresentationTextBoxes
 description: Listar Propriedades e relações dos objetos groupPolicyPresentationTextBox.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 86eede6f244828e87b2794ebd2886aa7398a3b83
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 30377ca84ca7d87850d5365e59bfc85c001b6db1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000606"
 ---
 # <a name="list-grouppolicypresentationtextboxes"></a>Listar groupPolicyPresentationTextBoxes
 
@@ -50,7 +50,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -81,6 +81,9 @@ Content-Length: 355
   ]
 }
 ```
+
+
+
 
 
 

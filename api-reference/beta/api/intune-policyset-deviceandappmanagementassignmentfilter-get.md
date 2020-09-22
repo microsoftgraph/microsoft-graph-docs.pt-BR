@@ -3,14 +3,14 @@ title: Obter deviceAndAppManagementAssignmentFilter
 description: Leia as propriedades e as relações do objeto deviceAndAppManagementAssignmentFilter.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ef4d24ff9c6cf8a49e1647d2268a73eb76aa274
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 95e978e6cfd542bd28b7f6a41f72c7c194dc0c63
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791739"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999892"
 ---
 # <a name="get-deviceandappmanagementassignmentfilter"></a>Obter deviceAndAppManagementAssignmentFilter
 
@@ -86,6 +86,9 @@ Content-Length: 487
   }
 }
 ```
+
+
+
 
 
 

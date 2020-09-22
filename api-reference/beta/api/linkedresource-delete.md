@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5bf6ab3c6791e84602efc8eb0d61be8d825ec012
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 175deb6dd57f99d10c6357e4b33ede67874e04c2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873311"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999214"
 ---
 # <a name="delete-linkedresource"></a>Excluir linkedResource
 Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -89,4 +89,6 @@ DELETE https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 

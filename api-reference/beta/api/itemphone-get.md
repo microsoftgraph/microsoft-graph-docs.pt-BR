@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0c45d0f6ebfe9d1387ef9b41c415b1a74dd76dba
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 31bb3c6ffe3271a92226ca87e2b1b6520ff7e41f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819431"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999358"
 ---
 # <a name="get-itemphonenumber"></a>Obter itemPhoneNumber
 
@@ -120,3 +120,5 @@ Content-Type: application/json
   "number": "+7 499 342 22 13"
 }
 ```
+
+

@@ -3,14 +3,14 @@ title: Obter complianceManagementPartner
 description: Leia as propriedades e as relações do objeto complianceManagementPartner.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b4830f22ff6b37c279a348e02f115e7f98a461c
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: a52135a4b5d9f98e820c3f94540c9f41a836a04d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791844"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000291"
 ---
 # <a name="get-compliancemanagementpartner"></a>Obter complianceManagementPartner
 
@@ -124,6 +124,9 @@ Content-Length: 2110
   }
 }
 ```
+
+
+
 
 
 

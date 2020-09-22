@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 42ffb7b50c672fe3daa80f6b64b6ef963f96ddf5
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 4b5d59d9130377b454245b39deab7193f93ca456
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43448581"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999185"
 ---
 # <a name="message-forward"></a>message: forward
 
@@ -131,3 +131,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

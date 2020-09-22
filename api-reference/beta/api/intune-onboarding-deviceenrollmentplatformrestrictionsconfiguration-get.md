@@ -3,14 +3,14 @@ title: Get deviceEnrollmentPlatformRestrictionsConfiguration
 description: Ler propriedades e relações do objeto deviceEnrollmentPlatformRestrictionsConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f1815dc3ba58a4fbed83ccd139e040589831474
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: b0fad92639f8ecc18fa04b78dac47c6e9d423b55
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178917"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000151"
 ---
 # <a name="get-deviceenrollmentplatformrestrictionsconfiguration"></a>Get deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3178
+Content-Length: 3570
 
 {
   "value": {
@@ -94,6 +94,16 @@ Content-Length: 3178
       ]
     },
     "windowsRestriction": {
+      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": "Os Minimum Version value",
+      "osMaximumVersion": "Os Maximum Version value",
+      "blockedManufacturers": [
+        "Blocked Manufacturers value"
+      ]
+    },
+    "windowsHomeSkuRestriction": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
       "platformBlocked": true,
       "personalDeviceEnrollmentBlocked": true,
@@ -156,6 +166,9 @@ Content-Length: 3178
   }
 }
 ```
+
+
+
 
 
 

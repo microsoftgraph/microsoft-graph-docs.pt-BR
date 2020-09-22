@@ -3,14 +3,14 @@ title: Criar deviceManagementTroubleshootingEvent
 description: Criar um novo objeto deviceManagementTroubleshootingEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 52c5434b0422985c44cd505b450f8ec22e00b3d5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a7efe0acabf95172c4b92beb4119a1f2acab540d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455401"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999465"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>Criar deviceManagementTroubleshootingEvent
 
@@ -139,6 +139,9 @@ Content-Length: 901
   ]
 }
 ```
+
+
+
 
 
 

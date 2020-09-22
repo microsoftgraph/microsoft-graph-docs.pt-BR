@@ -3,14 +3,14 @@ title: Excluir deviceManagementExchangeConnector
 description: Exclui deviceManagementExchangeConnector.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1111359e968cbf64075d4a51fb77ef455ca09ac
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4fd945d641519868fb10429bbb952c68edb4657e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450330"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000046"
 ---
 # <a name="delete-devicemanagementexchangeconnector"></a>Excluir deviceManagementExchangeConnector
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

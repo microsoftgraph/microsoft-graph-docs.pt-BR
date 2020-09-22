@@ -3,14 +3,14 @@ title: Obter deviceManagementAutopilotEvent
 description: Leia as propriedades e as relações do objeto deviceManagementAutopilotEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 78a68c62cfba6f026ede822970080e8f29ce3a7c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c1de7e732c6507b5e93ac37bffd5201b87883809
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466493"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999584"
 ---
 # <a name="get-devicemanagementautopilotevent"></a>Obter deviceManagementAutopilotEvent
 
@@ -100,6 +100,9 @@ Content-Length: 1475
   }
 }
 ```
+
+
+
 
 
 

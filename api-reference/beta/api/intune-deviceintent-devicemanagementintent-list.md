@@ -3,14 +3,14 @@ title: Listar deviceManagementIntents
 description: Listar Propriedades e relações dos objetos deviceManagementIntent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ab01690e3016681462ac275e246a788445831d0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b3e3bca19bdb9ca7e853822bd105555a46163961
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43327898"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000697"
 ---
 # <a name="list-devicemanagementintents"></a>Listar deviceManagementIntents
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,7 +50,7 @@ GET /deviceManagement/intents
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -84,6 +84,9 @@ Content-Length: 452
   ]
 }
 ```
+
+
+
 
 
 

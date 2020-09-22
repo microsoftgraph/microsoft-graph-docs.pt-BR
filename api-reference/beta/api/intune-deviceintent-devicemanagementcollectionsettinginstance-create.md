@@ -3,14 +3,14 @@ title: Criar deviceManagementCollectionSettingInstance
 description: Criar um novo objeto deviceManagementCollectionSettingInstance.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ecb491c5a7ff0a11a00f72cfbcf9631e8312088
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 099c8b5da5664cb36447f073dec4e814c286249e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43428448"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000760"
 ---
 # <a name="create-devicemanagementcollectionsettinginstance"></a>Criar deviceManagementCollectionSettingInstance
 
@@ -63,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementCollectionSettingInstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementCollectionSettingInstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -95,6 +95,9 @@ Content-Length: 210
   "valueJson": "Value Json value"
 }
 ```
+
+
+
 
 
 

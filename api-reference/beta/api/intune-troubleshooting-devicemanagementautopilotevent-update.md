@@ -3,14 +3,14 @@ title: Atualizar deviceManagementAutopilotEvent
 description: Atualiza as propriedades de um objeto deviceManagementAutopilotEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed84a7c1bee3c1b6a6a06136392350a6883d870d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4cfe2f6029a19d9319fd197ffaebe779da96e2ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443452"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999528"
 ---
 # <a name="update-devicemanagementautopilotevent"></a>Atualizar deviceManagementAutopilotEvent
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O UUID do objeto.|
-|deviceId|String|ID de dispositivo associada ao objeto|
+|deviceId|Cadeia de caracteres|ID de dispositivo associada ao objeto|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
 |deviceRegisteredDateTime|DateTimeOffset|Data de registro do dispositivo.|
 |enrollmentStartDateTime|DateTimeOffset|Data de início do registro do dispositivo.|
@@ -66,7 +66,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |enrollmentid|[enrollmentid](../resources/intune-shared-enrollmentstate.md)|Estado de registro como cadastrado, falhou. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |windows10EnrollmentCompletionPageConfigurationDisplayName|String|Nome do perfil da página de status do registro|
 |DeploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Estado de implantação como êxito, falha, InProgress, SuccessWithTimeout. Os valores possíveis são: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
-|osVersion|Cadeia de caracteres|Versão do sistema operacional do dispositivo.|
+|osVersion|String|Versão do sistema operacional do dispositivo.|
 |deploymentDuration|Duração|Duração da implantação do piloto automático, incluindo registro.|
 |deploymentTotalDuration|Duração|Duração total da implantação na tela de registro na área de trabalho.|
 |devicePreparationDuration|Duração|Tempo gasto no registro do dispositivo.|
@@ -81,7 +81,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -155,6 +155,9 @@ Content-Length: 1406
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
+
+
+
 
 
 

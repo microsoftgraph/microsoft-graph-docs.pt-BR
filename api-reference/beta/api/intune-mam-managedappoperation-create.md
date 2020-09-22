@@ -3,14 +3,14 @@ title: Criar managedAppOperation
 description: Criar um novo objeto managedAppOperation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f3ec846571e5c98cd3d99ddd279028475b2a6eb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b8d236beff5fb829cfb12f7db62c185ca6817ff3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455951"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000326"
 ---
 # <a name="create-managedappoperation"></a>Criar managedAppOperation
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome da operação.|
+|displayName|String|O nome da operação.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a operação de aplicativo foi modificada.|
 |state|String|O estado atual da operação|
 |id|String|Chave da entidade.|
@@ -97,6 +97,9 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

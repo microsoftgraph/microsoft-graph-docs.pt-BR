@@ -3,14 +3,14 @@ title: Listar managedAndroidLobApps
 description: Listar propriedades e relações dos objetos managedAndroidLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8a07b8bf56cb9e124d46be131967d0950a0dae0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: caff148f4150d4a2874554edf4eeb641de7e0522
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406342"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000886"
 ---
 # <a name="list-managedandroidlobapps"></a>Listar managedAndroidLobApps
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1904
+Content-Length: 1969
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 1904
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "appAvailability": "lineOfBusiness",
       "version": "Version value",
       "committedContentVersion": "Committed Content Version value",
@@ -126,6 +128,9 @@ Content-Length: 1904
   ]
 }
 ```
+
+
+
 
 
 

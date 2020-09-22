@@ -3,14 +3,14 @@ title: Atualizar managedDeviceEncryptionState
 description: Atualiza as propriedades de um objeto managedDeviceEncryptionState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 502651be5b7b0981b00f7e12968b0f55d7dd56ea
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: b3e2916a53a06ba54c38d6637ac4d1db1c84843d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000865"
 ---
 # <a name="update-manageddeviceencryptionstate"></a>Atualizar managedDeviceEncryptionState
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |userPrincipalName|String|Nome de usuário|
-|deviceType|[deviceTypes](../resources/intune-shared-devicetype.md)|Plataforma do dispositivo. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` , `macMDM` ,, `holoLens` `surfaceHub` , `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` ,,,,,.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Plataforma do dispositivo. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` , `macMDM` ,, `holoLens` `surfaceHub` , `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` ,,,,,.|
 |osVersion|String|Versão do sistema operacional do dispositivo|
 |tpmSpecificationVersion|String|Versão do TPM do dispositivo|
 |deviceName|String|Nome do dispositivo|
@@ -131,6 +131,9 @@ Content-Length: 753
   ]
 }
 ```
+
+
+
 
 
 

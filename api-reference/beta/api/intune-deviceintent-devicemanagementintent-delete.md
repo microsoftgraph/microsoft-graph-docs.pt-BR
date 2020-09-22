@@ -3,14 +3,14 @@ title: Excluir deviceManagementIntent
 description: Exclui deviceManagementIntent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a95e275f320956279c3655791dcb9b331ca9b4b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fe79795dd4d11ce60ce34cb5fd1ff88701f867ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43328050"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000718"
 ---
 # <a name="delete-devicemanagementintent"></a>Excluir deviceManagementIntent
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

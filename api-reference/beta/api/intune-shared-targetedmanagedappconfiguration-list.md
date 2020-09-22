@@ -3,14 +3,14 @@ title: Listar targetedManagedAppConfigurations
 description: Listar propriedades e relações dos objetos targetedManagedAppConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66962de7861d717ee73ba73c32acafa74fcfb753
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 56d9538cb31f8467eef8491876ed0721fa625f93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465305"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999780"
 ---
 # <a name="list-targetedmanagedappconfigurations"></a>Listar targetedManagedAppConfigurations
 
@@ -97,6 +97,9 @@ Content-Length: 731
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Atualizar appleVppTokenTroubleshootingEvent
 description: Atualiza as propriedades de um objeto appleVppTokenTroubleshootingEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d55c771aabcc7bd83f35b7c8f58acdac5d198ac4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 17bac0aca3a20b05966423f2a79bcb5c9c3eda6c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448155"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999612"
 ---
 # <a name="update-applevpptokentroubleshootingevent"></a>Atualizar appleVppTokenTroubleshootingEvent
 
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [appleVp
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [appleVppTokenTroubleshootingEvent](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [appleVppTokenTroubleshootingEvent](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -142,6 +142,9 @@ Content-Length: 930
   "tokenId": "Token Id value"
 }
 ```
+
+
+
 
 
 

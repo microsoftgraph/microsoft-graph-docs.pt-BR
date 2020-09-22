@@ -3,14 +3,14 @@ title: Atualizar deviceAndAppManagementAssignmentFilter
 description: Atualiza as propriedades de um objeto deviceAndAppManagementAssignmentFilter.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5fd7242879c9a086b08895637ad811b5fd48160
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: ff69e8d1675e9909052e286951ee2fedc5f0b4c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791725"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999871"
 ---
 # <a name="update-deviceandappmanagementassignmentfilter"></a>Atualizar deviceAndAppManagementAssignmentFilter
 
@@ -56,9 +56,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceA
 |id|String|Chave do filtro de atribuição.|
 |createdDateTime|DateTimeOffset|Hora de criação do filtro de atribuição.|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do filtro de atribuição.|
-|displayName|Cadeia de caracteres|DisplayName do filtro de atribuição.|
+|displayName|String|DisplayName do filtro de atribuição.|
 |description|String|Descrição do filtro de atribuição.|
-|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Tipo de plataforma dos dispositivos nos quais o filtro de atribuição será aplicável. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|plataforma|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Tipo de plataforma dos dispositivos nos quais o filtro de atribuição será aplicável. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |norma|String|Definição de regra do filtro de atribuição.|
 |roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do filtro de atribuição.|
 
@@ -109,6 +109,9 @@ Content-Length: 446
   ]
 }
 ```
+
+
+
 
 
 

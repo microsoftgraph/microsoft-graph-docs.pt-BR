@@ -3,14 +3,14 @@ title: Obter vulnerableManagedDevice
 description: Leia as propriedades e as relações do objeto vulnerableManagedDevice.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa8d181a5fddc77018c6f7843d0109c608831fd4
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: f97997bfa9f3d2b33593dbc5d7785634d817e388
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793175"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999941"
 ---
 # <a name="get-vulnerablemanageddevice"></a>Obter vulnerableManagedDevice
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -80,6 +80,9 @@ Content-Length: 292
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c07935d242e9cf25ddb996c87e530122eea1b1fe
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2709320d40e83599030057e4f066e0f2cbc033e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447525"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999724"
 ---
 # <a name="get-user"></a>Obter usuário
 
@@ -95,6 +95,9 @@ Content-Length: 118
   }
 }
 ```
+
+
+
 
 
 

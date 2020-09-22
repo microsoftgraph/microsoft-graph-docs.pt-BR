@@ -3,14 +3,14 @@ title: Listar sideLoadingKeies
 description: Listar Propriedades e relações dos objetos sideLoadingKey.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a7fad33abc947ff462c9758c61965f4f4cc9ed0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8a40f61b1bab7de8e958244e319f406b2b2e069f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43363003"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000011"
 ---
 # <a name="list-sideloadingkeies"></a>Listar sideLoadingKeies
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/sideLoadingKeys
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -81,6 +81,9 @@ Content-Length: 356
   ]
 }
 ```
+
+
+
 
 
 

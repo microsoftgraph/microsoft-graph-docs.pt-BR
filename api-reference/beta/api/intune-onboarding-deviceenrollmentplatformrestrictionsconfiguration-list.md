@@ -3,14 +3,14 @@ title: Listar deviceEnrollmentPlatformRestrictionsConfigurations
 description: Listar propriedades e relações de objeto de deviceEnrollmentPlatformRestrictionsConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 942953b8fcf90621348143b75d2f2d4e6ab023b9
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 15425a3f66fce54c28fa82c81cbe6a442f715444
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178910"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000144"
 ---
 # <a name="list-deviceenrollmentplatformrestrictionsconfigurations"></a>Listar deviceEnrollmentPlatformRestrictionsConfigurations
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3354
+Content-Length: 3766
 
 {
   "value": [
@@ -92,6 +92,16 @@ Content-Length: 3354
         ]
       },
       "windowsRestriction": {
+        "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+        "platformBlocked": true,
+        "personalDeviceEnrollmentBlocked": true,
+        "osMinimumVersion": "Os Minimum Version value",
+        "osMaximumVersion": "Os Maximum Version value",
+        "blockedManufacturers": [
+          "Blocked Manufacturers value"
+        ]
+      },
+      "windowsHomeSkuRestriction": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
         "platformBlocked": true,
         "personalDeviceEnrollmentBlocked": true,
@@ -155,6 +165,9 @@ Content-Length: 3354
   ]
 }
 ```
+
+
+
 
 
 

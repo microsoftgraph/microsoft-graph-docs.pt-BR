@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a3a0751c925fd09756aa9b121741bd06eeea7de4
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 4dcd68e658fc6f45d139cdf04d48820d6b39a4cf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820306"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999319"
 ---
 # <a name="get-itempublication"></a>Obter o multipúblico
 
@@ -125,3 +125,5 @@ Content-Type: application/json
   "webUrl": "https://www.iabm.io"
 }
 ```
+
+

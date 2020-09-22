@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 328d742163d04b26d2e46f7a89309e0184ea6198
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 10e48459645c8af6d03787a3b2395398098cc7e0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458087"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998926"
 ---
 # <a name="contactfolder-resource-type"></a>tipo de recurso contactFolder
 
@@ -27,27 +27,27 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Obter contactFolder](../api/contactfolder-get.md) | [pastadeContatos](contactfolder.md) |Obtenha uma pasta de contatos usando a respectiva ID.|
-|[Update](../api/contactfolder-update.md) | [pastadeContatos](contactfolder.md) |Atualize o objeto contactFolder. |
+|[Obter contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |Obtenha uma pasta de contatos usando a respectiva ID.|
+|[Update](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |Atualize o objeto contactFolder. |
 |[Delete](../api/contactfolder-delete.md) | Nenhum |Exclua um objeto contactFolder. |
 |[Listar childFolders](../api/contactfolder-list-childfolders.md) |Coleção [ContactFolder](contactfolder.md)| Obtenha uma coleção de pastas filho sob a pasta de contatos especificada.|
-|[Criar contactFolder filho](../api/contactfolder-post-childfolders.md) |[pastadeContatos](contactfolder.md)| Cria uma nova contactFolder como um filho de uma pasta especificada.|
+|[Criar contactFolder filho](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md)| Cria uma nova contactFolder como um filho de uma pasta especificada.|
 |[delta](../api/contact-delta.md)|Coleção [Contact](contact.md)| Obtenha um conjunto de pastas de contatos que foram adicionadas, excluídas ou removidas da caixa de correio do usuário.|
 |[Listar contatos na pasta](../api/contactfolder-list-contacts.md) |Coleção [Contact](contact.md)| Obtém uma coleção de contatos da pasta de contatos padrão do usuário conectado (`.../me/contacts`), ou da pasta contato especificada.|
 |[Criar contato na pasta](../api/contactfolder-post-contacts.md) |[contato](contact.md)| Adicione um contato na pasta de contatos raiz ou no ponto de extremidade do `contacts` de outra pasta de contatos.|
 |**Propriedades estendidas**| | |
-|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[pastadeContatos](contactfolder.md)  |Criar uma ou mais propriedades estendidas de valor único em uma contactFolder nova ou existente.   |
-|[Obter contactFolder com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [pastadeContatos](contactfolder.md) | Obtenha contactFolders que contêm uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
-|[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [pastadeContatos](contactfolder.md) | Criar uma ou mais propriedades estendidas de vários valores em uma contactFolder nova ou existente.  |
-|[Obter contactFolder com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-get.md)  | [pastadeContatos](contactfolder.md) | Obtenha uma contactFolder que contém uma propriedade estendida com vários valores usando `$expand`. |
+|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contactFolder](contactfolder.md)  |Criar uma ou mais propriedades estendidas de valor único em uma contactFolder nova ou existente.   |
+|[Obter contactFolder com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | Obtenha contactFolders que contêm uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
+|[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contactFolder](contactfolder.md) | Criar uma ou mais propriedades estendidas de vários valores em uma contactFolder nova ou existente.  |
+|[Obter contactFolder com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | Obtenha uma contactFolder que contém uma propriedade estendida com vários valores usando `$expand`. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|O nome de exibição da pasta.|
+|displayName|String|O nome de exibição da pasta.|
 |id|String|Identificador exclusivo da pasta de contatos. Somente leitura.|
 |parentFolderId|String|A ID da pasta pai da pasta.|
-|wellKnownName|cadeia de caracteres|O nome da pasta se a pasta for uma pasta reconhecida. Atualmente `contacts` é a única pasta de contatos reconhecida.|
+|wellKnownName|string|O nome da pasta se a pasta for uma pasta reconhecida. Atualmente `contacts` é a única pasta de contatos reconhecida.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -101,3 +101,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

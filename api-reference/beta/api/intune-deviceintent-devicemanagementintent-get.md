@@ -3,14 +3,14 @@ title: Obter deviceManagementIntent
 description: Leia as propriedades e as relações do objeto deviceManagementIntent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5fab008cb2365d29f2758e722ca3640dc6ed2595
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5e830edce1d1ea7229d47e84c44a3fb6a3956505
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43327971"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000711"
 ---
 # <a name="get-devicemanagementintent"></a>Obter deviceManagementIntent
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -85,6 +85,9 @@ Content-Length: 418
   }
 }
 ```
+
+
+
 
 
 

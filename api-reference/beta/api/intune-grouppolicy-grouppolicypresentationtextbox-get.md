@@ -3,14 +3,14 @@ title: Obter groupPolicyPresentationTextBox
 description: Leia as propriedades e as relações do objeto groupPolicyPresentationTextBox.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd6da5e009a6e447955e21a41b51f2b6fa5af8ee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fe06961eafbca0e3e94c862b201b2495b6b34514
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408508"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000599"
 ---
 # <a name="get-grouppolicypresentationtextbox"></a>Obter groupPolicyPresentationTextBox
 
@@ -83,6 +83,9 @@ Content-Length: 327
   }
 }
 ```
+
+
+
 
 
 

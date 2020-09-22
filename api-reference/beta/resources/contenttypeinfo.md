@@ -6,16 +6,16 @@ title: ContentTypeInfo
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 0aa9518f2b9597f910586ab49284dfe6f44a17ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fa6a72974714d333d44b3ef9160d3b5c9e92157a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507426"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998903"
 ---
 # <a name="contenttypeinfo-resource-type"></a>Tipo de recurso ContentTypeInfo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +37,7 @@ Aqui está uma representação JSON de um recurso **contentTypeInfo**.
 
 | Nome da propriedade  | Tipo    | Descrição
 |:---------------|:--------|:--------------------------------------------------
-| **id**         | cadeia de caracteres  | A id do tipo de conteúdo.
+| **id**         | string  | A id do tipo de conteúdo.
 | **name**       | string  | O nome do tipo de conteúdo.
 
 <!--
@@ -50,3 +50,5 @@ Aqui está uma representação JSON de um recurso **contentTypeInfo**.
   "suppressions": []
 }
 -->
+
+

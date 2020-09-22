@@ -3,14 +3,14 @@ title: Criar deviceAndAppManagementAssignmentFilter
 description: Criar um novo objeto deviceAndAppManagementAssignmentFilter.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c72cb53c03c88843a252ebb8230800d1a4c7a5e1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 87ecea146896e8bfbb2265f6623d9eaf27c2732d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791753"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999906"
 ---
 # <a name="create-deviceandappmanagementassignmentfilter"></a>Criar deviceAndAppManagementAssignmentFilter
 
@@ -56,9 +56,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceAn
 |id|String|Chave do filtro de atribuição.|
 |createdDateTime|DateTimeOffset|Hora de criação do filtro de atribuição.|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do filtro de atribuição.|
-|displayName|Cadeia de caracteres|DisplayName do filtro de atribuição.|
+|displayName|String|DisplayName do filtro de atribuição.|
 |description|String|Descrição do filtro de atribuição.|
-|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Tipo de plataforma dos dispositivos nos quais o filtro de atribuição será aplicável. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|plataforma|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Tipo de plataforma dos dispositivos nos quais o filtro de atribuição será aplicável. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |norma|String|Definição de regra do filtro de atribuição.|
 |roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do filtro de atribuição.|
 
@@ -109,6 +109,9 @@ Content-Length: 446
   ]
 }
 ```
+
+
+
 
 
 

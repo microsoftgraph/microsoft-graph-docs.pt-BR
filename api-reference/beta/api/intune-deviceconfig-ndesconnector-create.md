@@ -3,14 +3,14 @@ title: Criar ndesConnector
 description: Criar um novo objeto ndesConnector.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df9dce7a6157ae652cc99d5ac57df34db2c8cce6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c9e5700c4637d9581bcf71ee18e9e8c82772ceee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43342932"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000851"
 ---
 # <a name="create-ndesconnector"></a>Criar ndesConnector
 
@@ -56,12 +56,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar ndesConn
 |id|String|A chave do conector NDES.|
 |lastConnectionDateTime|DateTimeOffset|Hora da última conexão para o conector NDES|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
-|displayName|Cadeia de caracteres|O nome amigável do conector NDES.|
+|displayName|String|O nome amigável do conector NDES.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -95,6 +95,9 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
+
+
+
 
 
 

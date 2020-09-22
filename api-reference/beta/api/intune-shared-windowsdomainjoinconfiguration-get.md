@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 758e4dae0119893af3bc7a063c8f17cc71c4858d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5fea67cd89023a84b934b6348b957df945840faa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447332"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999640"
 ---
 # <a name="get-windowsdomainjoinconfiguration"></a>Obter windowsDomainJoinConfiguration
 
@@ -111,6 +111,9 @@ Content-Length: 560
   }
 }
 ```
+
+
+
 
 
 

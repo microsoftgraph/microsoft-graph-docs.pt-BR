@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e482edf33be72a2b01304b0c189ef6189428916a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d53c84e7e127739222086848d61eb032d38d0b15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447540"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999731"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>função exportDeviceAndAppManagementData
 
@@ -62,7 +62,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e um [deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e um [deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -90,6 +90,9 @@ Content-Length: 143
   }
 }
 ```
+
+
+
 
 
 

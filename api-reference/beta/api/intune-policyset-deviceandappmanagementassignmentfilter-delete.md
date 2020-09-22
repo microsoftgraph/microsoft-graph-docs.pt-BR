@@ -3,14 +3,14 @@ title: Excluir deviceAndAppManagementAssignmentFilter
 description: Exclui deviceAndAppManagementAssignmentFilter.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42d0db98fc6ccdb113a7dc271273cfc5f476511b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: db4b13a246d6675361cd0a3dae7d8fbf5285ce3a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791746"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999899"
 ---
 # <a name="delete-deviceandappmanagementassignmentfilter"></a>Excluir deviceAndAppManagementAssignmentFilter
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

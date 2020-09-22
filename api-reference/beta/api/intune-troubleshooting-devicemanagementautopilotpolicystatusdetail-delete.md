@@ -3,14 +3,14 @@ title: Excluir deviceManagementAutopilotPolicyStatusDetail
 description: Exclui deviceManagementAutopilotPolicyStatusDetail.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ebdeede8d266800b7bf65847b618c6ddb8a457f0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d4dcc7802d725b6fdd8f8ef35fbba97d929963cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443406"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999493"
 ---
 # <a name="delete-devicemanagementautopilotpolicystatusdetail"></a>Excluir deviceManagementAutopilotPolicyStatusDetail
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Excluir complianceManagementPartner
 description: Exclui complianceManagementPartner.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7999aad9236637597c88e78d751218387b45b0dc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f048a65686bf2197540c9b6973b1bbb740e5f835
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454430"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000305"
 ---
 # <a name="delete-compliancemanagementpartner"></a>Excluir complianceManagementPartner
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

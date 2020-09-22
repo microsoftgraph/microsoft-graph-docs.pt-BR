@@ -3,14 +3,14 @@ title: Excluir windowsInformationProtectionAppLockerFile
 description: Exclui windowsInformationProtectionAppLockerFile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39a214d7073587f4bef1495a2539803a6cc9fa5c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2b69933749f231c092a4988ea058c42a2c4e12a4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465551"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000312"
 ---
 # <a name="delete-windowsinformationprotectionapplockerfile"></a>Excluir windowsInformationProtectionAppLockerFile
 
@@ -68,6 +68,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

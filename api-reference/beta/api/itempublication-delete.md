@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a43629bdbd20859a3c311f8efadf264a9f84bab2
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: c3427ae70af8fd59ddef0735c54257ca216ae2e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820103"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999332"
 ---
 # <a name="delete-itempublication"></a>Excluir a multipúblico
 
@@ -87,3 +87,5 @@ DELETE https://graph.microsoft.com/beta/me/profile/publications/{id}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
