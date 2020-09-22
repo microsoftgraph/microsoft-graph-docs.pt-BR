@@ -3,14 +3,14 @@ title: Listar managedEBooks
 description: Listar propriedades e relações dos objetos managedEBook.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed8c5ef0d0e308a6fe241bc8b73516e69af3cc97
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a1d4f8aead4c9a601bceb5e73299e7f306d12f66
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392485"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975581"
 ---
 # <a name="list-managedebooks"></a>Listar managedEBooks
 
@@ -89,6 +89,9 @@ Content-Length: 756
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Listar windowsPhone81AppXs
 description: Listar Propriedades e relações dos objetos windowsPhone81AppX.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39ddc2b0ed573032b7fbfe4d91a938722ea30202
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9264da2ec4b152343f077ca96dd78a35de9e045e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43409292"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976393"
 ---
 # <a name="list-windowsphone81appxs"></a>Listar windowsPhone81AppXs
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mobileApps
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1906
+Content-Length: 1971
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 1906
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -121,6 +123,9 @@ Content-Length: 1906
   ]
 }
 ```
+
+
+
 
 
 

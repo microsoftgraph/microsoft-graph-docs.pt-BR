@@ -3,14 +3,14 @@ title: Obter windowsOfficeClientSecurityConfiguration
 description: Obtenha um objeto windowsOfficeClientSecurityConfiguration de política de segurança específico.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4e1e46c22e5fbeb8356844897c6d007633a307b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b4fe49b68e7992a9831f96cf135f1e0b858d1992
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436651"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975147"
 ---
 # <a name="get-windowsofficeclientsecurityconfiguration"></a>Obter windowsOfficeClientSecurityConfiguration
 
@@ -103,6 +103,9 @@ Content-Length: 1152
   }
 }
 ```
+
+
+
 
 
 

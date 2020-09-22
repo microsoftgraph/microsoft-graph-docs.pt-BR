@@ -3,14 +3,14 @@ title: Atualizar windowsUniversalAppXContainedApp
 description: Atualiza as propriedades de um objeto windowsUniversalAppXContainedApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 30046e27c57f7a612919f591b971f9c0c3d41a32
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a399b0f2c591a232a4c778b6f86ca2bebe9e46aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43393028"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975966"
 ---
 # <a name="update-windowsuniversalappxcontainedapp"></a>Atualizar windowsUniversalAppXContainedApp
 
@@ -61,7 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -91,6 +91,9 @@ Content-Length: 171
   "appUserModelId": "App User Model Id value"
 }
 ```
+
+
+
 
 
 

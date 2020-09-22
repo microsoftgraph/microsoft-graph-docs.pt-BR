@@ -3,14 +3,14 @@ title: Atualizar deviceInstallState
 description: Atualizar as propriedades de um objeto deviceInstallState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fafeca5ece36516584429fe9c5e01f8c5f6ab733
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e8742e98cb8628fcfcd8fd31e4912282aceeca76
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975798"
 ---
 # <a name="update-deviceinstallstate"></a>Atualizar deviceInstallState
 
@@ -55,13 +55,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceI
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|deviceName|String|Nome do dispositivo.|
-|deviceId|String|ID do dispositivo.|
+|deviceName|Cadeia de caracteres|Nome do dispositivo.|
+|deviceId|Cadeia de caracteres|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|
 |installState|[installState](../resources/intune-books-installstate.md)|O estado de instalação do livro eletrônico. Os valores possíveis são: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|String|O código de erro de falhas de instalação.|
-|osVersion|String|Versão do sistema operacional.|
-|osDescription|String|Descrição do sistema operacional.|
+|errorCode|Cadeia de caracteres|O código de erro de falhas de instalação.|
+|osVersion|Cadeia de caracteres|Versão do sistema operacional.|
+|osDescription|Cadeia de caracteres|Descrição do sistema operacional.|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo.|
 
 
@@ -111,6 +111,9 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
+
+
 
 
 

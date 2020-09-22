@@ -3,14 +3,14 @@ title: Obter windowsPhone81StoreApp
 description: Leia as propriedades e as relações do objeto windowsPhone81StoreApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 082dc7887d61cca953d3c62d9ddc7268525b2fff
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a8fa07147d47357d353fbc1a763a5966dfc45538
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43393426"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976267"
 ---
 # <a name="get-windowsphone81storeapp"></a>Obter windowsPhone81StoreApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1018
+Content-Length: 1079
 
 {
   "value": {
@@ -99,10 +99,15 @@ Content-Length: 1018
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "appStoreUrl": "https://example.com/appStoreUrl/"
   }
 }
 ```
+
+
+
 
 
 

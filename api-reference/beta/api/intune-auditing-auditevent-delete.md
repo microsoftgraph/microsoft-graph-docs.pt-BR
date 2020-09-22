@@ -3,14 +3,14 @@ title: Excluir auditEvent
 description: Exclui auditEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1bfd48fe8bad84aee2f451c99a3a841c6dc2bd7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4eea696285d787c9b92e58df8e1cd1dcb9f2fdf6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43393005"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975939"
 ---
 # <a name="delete-auditevent"></a>Excluir auditEvent
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

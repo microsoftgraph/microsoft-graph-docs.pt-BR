@@ -3,14 +3,14 @@ title: Listar managedEBookCategories
 description: Listar Propriedades e relações dos objetos managedEBookCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be41882b438f2533bd7b97ce3ce65e75d61ad72a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 544217a5a0ab4c055ddd139f37f27458c290d2bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414147"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975455"
 ---
 # <a name="list-managedebookcategories"></a>Listar managedEBookCategories
 
@@ -51,7 +51,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [managedEBookCategory](../resources/intune-books-managedebookcategory.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [managedEBookCategory](../resources/intune-books-managedebookcategory.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -79,6 +79,9 @@ Content-Length: 264
   ]
 }
 ```
+
+
+
 
 
 

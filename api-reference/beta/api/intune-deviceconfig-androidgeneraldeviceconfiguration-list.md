@@ -3,14 +3,14 @@ title: Listar androidGeneralDeviceConfigurations
 description: Listar propriedades e relações dos objetos androidGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f14ad5a6d4a139d4a19fe0a56cc898d3e880b30b
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 7a02b68bcfeb2348543cdcaed0d1effc2db3f821
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43344627"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974769"
 ---
 # <a name="list-androidgeneraldeviceconfigurations"></a>Listar androidGeneralDeviceConfigurations
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4623
+Content-Length: 4667
 
 {
   "value": [
@@ -147,6 +147,7 @@ Content-Length: 4623
       "passwordPreviousPasswordBlockCount": 2,
       "passwordSignInFailureCountBeforeFactoryReset": 12,
       "passwordRequiredType": "alphabetic",
+      "requiredPasswordComplexity": "low",
       "passwordRequired": true,
       "powerOffBlocked": true,
       "factoryResetBlocked": true,
@@ -196,6 +197,9 @@ Content-Length: 4623
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Criar termsAndConditionsAcceptanceStatus
 description: Cria um novo objeto termsAndConditionsAcceptanceStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 507fb1c9a558a017baa4fd05f28585bcac4c4e81
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5fe683af13b6fac6380cfaa8c5c638d73f931a43
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436521"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975028"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>Criar termsAndConditionsAcceptanceStatus
 
@@ -98,6 +98,9 @@ Content-Length: 313
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

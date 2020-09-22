@@ -3,14 +3,14 @@ title: Criar userInstallStateSummary
 description: Criar um novo objeto userInstallStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2237e8c3beac5400cfb678b0e80a20b359eaa237
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4383e1e7d995d808215d3777638db7c77084b57c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414077"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975441"
 ---
 # <a name="create-userinstallstatesummary"></a>Criar userInstallStateSummary
 
@@ -98,6 +98,9 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
+
+
 
 
 

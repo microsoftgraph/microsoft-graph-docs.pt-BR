@@ -3,14 +3,14 @@ title: Obter Conjuntoofficeclientconfiguration
 description: Obtenha uma política específica.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 235e2b498b788d15268de197364442d8f7bb75e1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a3e5c8f0cb920f40917b2697465ba824a62b542a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392166"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975364"
 ---
 # <a name="get-officeclientconfiguration"></a>Obter Conjuntoofficeclientconfiguration
 
@@ -102,6 +102,9 @@ Content-Length: 1137
   }
 }
 ```
+
+
+
 
 
 

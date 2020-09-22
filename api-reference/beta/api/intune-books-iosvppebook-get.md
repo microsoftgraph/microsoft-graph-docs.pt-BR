@@ -3,14 +3,14 @@ title: Acessar iosVppEBook
 description: Leia as propriedades e as relações do objeto iosVppEBook.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b71271062dacd2d21c52bdc203e01579a1f9ed2b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9907fccd5be77634f051754218230a578dc979a8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423125"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975714"
 ---
 # <a name="get-iosvppebook"></a>Acessar iosVppEBook
 
@@ -103,6 +103,9 @@ Content-Length: 1101
   }
 }
 ```
+
+
+
 
 
 

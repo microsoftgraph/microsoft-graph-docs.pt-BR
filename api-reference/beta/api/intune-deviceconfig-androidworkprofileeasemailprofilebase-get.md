@@ -3,14 +3,14 @@ title: Obter androidWorkProfileEasEmailProfileBase
 description: Leia as propriedades e as relações do objeto androidWorkProfileEasEmailProfileBase.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d8b7d344e5d0ecf82251398c076f0889ec16131f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9b701a2c68a25671b3e7ec1bd7169ac57530fa83
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43435180"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974699"
 ---
 # <a name="get-androidworkprofileeasemailprofilebase"></a>Obter androidWorkProfileEasEmailProfileBase
 
@@ -115,6 +115,9 @@ Content-Length: 1533
   }
 }
 ```
+
+
+
 
 
 

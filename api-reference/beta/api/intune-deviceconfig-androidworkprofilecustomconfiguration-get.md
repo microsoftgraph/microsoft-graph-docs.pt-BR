@@ -3,14 +3,14 @@ title: Obter androidWorkProfileCustomConfiguration
 description: Leia as propriedades e as relações do objeto androidWorkProfileCustomConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3a0a8ddd359620ec56b8abfd5d11f342127d661
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 8189635d69a3d5c9761dd7f48688cf4151d594e0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178714"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974741"
 ---
 # <a name="get-androidworkprofilecustomconfiguration"></a>Obter androidWorkProfileCustomConfiguration
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -117,6 +117,9 @@ Content-Length: 1523
   }
 }
 ```
+
+
+
 
 
 

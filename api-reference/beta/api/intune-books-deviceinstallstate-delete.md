@@ -3,14 +3,14 @@ title: Excluir deviceInstallState
 description: Exclui deviceInstallState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 138db4f553c6ab80d10415c3418c695e2257976d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d132ce7425aab4e0caad534de76c0983834fc790
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392787"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975833"
 ---
 # <a name="delete-deviceinstallstate"></a>Excluir deviceInstallState
 
@@ -66,6 +66,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

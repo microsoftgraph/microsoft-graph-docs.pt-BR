@@ -3,14 +3,14 @@ title: Atualizar auditEvent
 description: Atualizar as propriedades do objeto auditEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a1cbc085b1ef5c95fb5faa820d38627ee787d4c
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 8831ed349c830d119029fd554922b1d3742d6989
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791845"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975861"
 ---
 # <a name="update-auditevent"></a>Atualizar auditEvent
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -191,6 +191,9 @@ Content-Length: 1746
   "category": "Category value"
 }
 ```
+
+
+
 
 
 

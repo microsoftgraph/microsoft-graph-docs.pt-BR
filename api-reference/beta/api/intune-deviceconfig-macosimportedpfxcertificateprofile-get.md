@@ -3,14 +3,14 @@ title: Obter macOSImportedPFXCertificateProfile
 description: Leia as propriedades e as relações do objeto macOSImportedPFXCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39d4d4a1fdfa12b7ad697a2064509a23e2577901
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b150b30dbbaa49e9bc4e7fd2f692f39edc9ece40
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432543"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974622"
 ---
 # <a name="get-macosimportedpfxcertificateprofile"></a>Obter macOSImportedPFXCertificateProfile
 
@@ -115,6 +115,9 @@ Content-Length: 1564
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Excluir userInstallStateSummary
 description: Exclui userInstallStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5df964ba9919519076effefb010706c9a8b3c2a9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dfdb5b5ac68cb226cab06c0ed761f6b2b3ac2524
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414038"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975420"
 ---
 # <a name="delete-userinstallstatesummary"></a>Excluir userInstallStateSummary
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

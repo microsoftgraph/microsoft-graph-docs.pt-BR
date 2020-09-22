@@ -3,14 +3,14 @@ title: Excluir termsAndConditions
 description: Exclui termsAndConditions.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c60b4864f5355fdda14a0a124388f1a85013e63c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 636eb1b0f01e7789803ff7929a9e2dbf4dd2abfd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436599"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975077"
 ---
 # <a name="delete-termsandconditions"></a>Excluir termsAndConditions
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

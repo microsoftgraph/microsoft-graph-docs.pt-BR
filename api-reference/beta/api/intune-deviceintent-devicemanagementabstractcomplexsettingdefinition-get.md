@@ -3,14 +3,14 @@ title: Obter deviceManagementAbstractComplexSettingDefinition
 description: Leia as propriedades e as relações do objeto deviceManagementAbstractComplexSettingDefinition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0467f98ed7ba6da61da082518e94997b550e28d1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4b0b089a80cb943d8cac3a1f811cba0a5a628464
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43331639"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974496"
 ---
 # <a name="get-devicemanagementabstractcomplexsettingdefinition"></a>Obter deviceManagementAbstractComplexSettingDefinition
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -114,6 +114,9 @@ Content-Length: 1142
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Get termsAndConditionsAcceptanceStatus
 description: Ler propriedades e relações do objeto termsAndConditionsAcceptanceStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ad512e0dba0d61f62d9ce35a04596f20f759f58
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8749e0aaa45d80aca609144e491b2d08f397d87d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436499"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975000"
 ---
 # <a name="get-termsandconditionsacceptancestatus"></a>Get termsAndConditionsAcceptanceStatus
 
@@ -81,6 +81,9 @@ Content-Length: 344
   }
 }
 ```
+
+
+
 
 
 

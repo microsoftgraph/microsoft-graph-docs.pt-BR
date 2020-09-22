@@ -3,14 +3,14 @@ title: atribuir ação
 description: Substituir todos os grupos de destino de uma política.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 91becd14da5731d81a9c1764871fad1ef2f0ebdb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9bc82068fe3bd448436a0d32211f4f2754ca2957
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392197"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975357"
 ---
 # <a name="assign-action"></a>atribuir ação
 
@@ -58,7 +58,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará `200 OK` um código de resposta e uma coleção [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) no corpo da resposta.
+Se tiver êxito, esta ação retornará um `200 OK` código de resposta e uma coleção [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -102,6 +102,9 @@ Content-Length: 274
   ]
 }
 ```
+
+
+
 
 
 

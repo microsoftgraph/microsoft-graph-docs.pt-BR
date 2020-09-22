@@ -3,14 +3,14 @@ title: Listar windowsUniversalAppXContainedApps
 description: Listar Propriedades e relações dos objetos windowsUniversalAppXContainedApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 21aa69095185dd32e5da4920740639c13047349b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f7a1d138e3228cb3bf75a68ed21b12f926718e07
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408833"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975973"
 ---
 # <a name="list-windowsuniversalappxcontainedapps"></a>Listar windowsUniversalAppXContainedApps
 
@@ -52,7 +52,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnivers
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -79,6 +79,9 @@ Content-Length: 216
   ]
 }
 ```
+
+
+
 
 
 

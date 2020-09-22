@@ -3,14 +3,14 @@ title: Excluir windowsOfficeClientConfiguration
 description: Excluir uma política específica que não seja de segurança.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2827d8eec3d8b83b6e69243f9cd6b18a6a0a4f32
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ffb8613cae57b8c80615688f04dd99cc735667d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436876"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975224"
 ---
 # <a name="delete-windowsofficeclientconfiguration"></a>Excluir windowsOfficeClientConfiguration
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 ```
+
+
+
 
 
 

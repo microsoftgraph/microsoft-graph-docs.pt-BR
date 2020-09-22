@@ -3,14 +3,14 @@ title: ação updatePriorities
 description: Atualizar prioridades de política.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 07bbff5017523849d3be81b800bb2ea37eab1cd8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 761cf4d51d5047f753dc87a35e0ba17740dacdb6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392057"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975315"
 ---
 # <a name="updatepriorities-action"></a>ação updatePriorities
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|officeConfigurationPolicyIds|Coleção String|Lista de IDs de política de configuração do Office|
+|officeConfigurationPolicyIds|Coleção de cadeias de caracteres|Lista de IDs de política de configuração do Office|
 |officeConfigurationPriorities|Coleção Int32|Lista de prioridades de configuração do Office|
 
 
@@ -86,6 +86,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 ```
+
+
+
 
 
 

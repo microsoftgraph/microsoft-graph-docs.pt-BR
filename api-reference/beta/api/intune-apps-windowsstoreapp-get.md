@@ -3,14 +3,14 @@ title: Obter windowsStoreApp
 description: Leia as propriedades e as relações do objeto windowsStoreApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 394989cf396d89f734ed22473df3a758f74479d9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 60a19ae1f42d2a605577ab5d977c2790a3d2f6f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408975"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976134"
 ---
 # <a name="get-windowsstoreapp"></a>Obter windowsStoreApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1011
+Content-Length: 1072
 
 {
   "value": {
@@ -99,10 +99,15 @@ Content-Length: 1011
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "appStoreUrl": "https://example.com/appStoreUrl/"
   }
 }
 ```
+
+
+
 
 
 

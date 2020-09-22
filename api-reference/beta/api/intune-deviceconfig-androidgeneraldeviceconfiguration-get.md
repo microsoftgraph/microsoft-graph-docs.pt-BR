@@ -3,14 +3,14 @@ title: Acessar androidGeneralDeviceConfiguration
 description: Leia as propriedades e relações do objeto androidGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56d40060a5020d64fd5fd1efcd47530fd4ecc8b0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9a5f0f2d5ec747ce2e8b8ab9ef54e13ce0d69f0b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43435726"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974776"
 ---
 # <a name="get-androidgeneraldeviceconfiguration"></a>Acessar androidGeneralDeviceConfiguration
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4367
+Content-Length: 4409
 
 {
   "value": {
@@ -150,6 +150,7 @@ Content-Length: 4367
     "passwordPreviousPasswordBlockCount": 2,
     "passwordSignInFailureCountBeforeFactoryReset": 12,
     "passwordRequiredType": "alphabetic",
+    "requiredPasswordComplexity": "low",
     "passwordRequired": true,
     "powerOffBlocked": true,
     "factoryResetBlocked": true,
@@ -198,6 +199,9 @@ Content-Length: 4367
   }
 }
 ```
+
+
+
 
 
 

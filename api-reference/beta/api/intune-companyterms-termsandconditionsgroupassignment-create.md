@@ -3,14 +3,14 @@ title: Criar termsAndConditionsGroupAssignment
 description: Criar um novo objeto termsAndConditionsGroupAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e0602405de0ad794f200cdcd2dd376c051bb56e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6a4d8ebc2c75b995d513bb2564362f3cbf32a50e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436542"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974888"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>Criar termsAndConditionsGroupAssignment
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar termsAnd
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -89,6 +89,9 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
+
+
+
 
 
 

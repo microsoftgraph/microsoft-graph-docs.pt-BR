@@ -3,14 +3,14 @@ title: Criar managedEBookCategory
 description: Criar um novo objeto managedEBookCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3d59e4b8e31a894c30237b96ddb524478a420f4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5fa61c7d0b75a510f9f1f4a5c752257ee8f56d09
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392222"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975504"
 ---
 # <a name="create-managedebookcategory"></a>Criar managedEBookCategory
 
@@ -55,13 +55,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedE
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|displayName|Cadeia de caracteres|O nome da categoria eBook.|
+|displayName|String|O nome da categoria eBook.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o ManagedEBookCategory foi modificado pela última vez.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [managedEBookCategory](../resources/intune-books-managedebookcategory.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [managedEBookCategory](../resources/intune-books-managedebookcategory.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -92,6 +92,9 @@ Content-Length: 215
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

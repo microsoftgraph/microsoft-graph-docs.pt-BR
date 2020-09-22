@@ -3,14 +3,14 @@ title: Listar windowsUniversalAppXs
 description: Listar propriedades e relações dos objetos windowsUniversalAppX.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e904c98360148f6d4740e9b8c98fc029e68da64c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ca930a2822cfe6fec40ac172b1dd344e5c3b980c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43393161"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976043"
 ---
 # <a name="list-windowsuniversalappxs"></a>Listar windowsUniversalAppXs
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1854
+Content-Length: 1919
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 1854
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -121,6 +123,9 @@ Content-Length: 1854
   ]
 }
 ```
+
+
+
 
 
 

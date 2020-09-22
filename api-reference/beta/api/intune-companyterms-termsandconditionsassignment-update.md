@@ -3,14 +3,14 @@ title: Atualizar termsAndConditionsAssignment
 description: Atualizar as propriedades de um objeto termsAndConditionsAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 794c73484141607f5ef5d6d9f1144ce8316c9cfc
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: f46bbda8f43e48f2f1d9f001c8531ebf4cefd448
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793154"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974902"
 ---
 # <a name="update-termsandconditionsassignment"></a>Atualizar termsAndConditionsAssignment
 
@@ -97,6 +97,9 @@ Content-Length: 372
   }
 }
 ```
+
+
+
 
 
 

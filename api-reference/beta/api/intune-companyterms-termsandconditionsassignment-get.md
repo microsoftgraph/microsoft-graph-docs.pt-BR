@@ -3,14 +3,14 @@ title: Obter termsAndConditionsAssignment
 description: Ler propriedades e relações do objeto termsAndConditionsAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3eb9d15a2c32c6f3b784cbf411a2f8e8c53415b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 4a445d8c2f5867aab176b136408601d8768f19d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793168"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974910"
 ---
 # <a name="get-termsandconditionsassignment"></a>Obter termsAndConditionsAssignment
 
@@ -82,6 +82,9 @@ Content-Length: 405
   }
 }
 ```
+
+
+
 
 
 

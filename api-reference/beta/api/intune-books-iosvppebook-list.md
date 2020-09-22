@@ -3,14 +3,14 @@ title: Listar iosVppEBooks
 description: Listar propriedades e relações dos objetos iosVppEBook.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3a4010f9707294ff36f681fe7f65557d9f1e7c1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 46e5e171e2b4bcda15adc55ee5172abe57ed5320
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392732"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975707"
 ---
 # <a name="list-iosvppebooks"></a>Listar iosVppEBooks
 
@@ -102,6 +102,9 @@ Content-Length: 1171
   ]
 }
 ```
+
+
+
 
 
 
