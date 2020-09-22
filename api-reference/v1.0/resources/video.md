@@ -7,16 +7,16 @@ localization_priority: Normal
 description: O recurso Video agrupa itens de dados relacionados a vídeos em uma única estrutura.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2982dbad8f1e06a2f1288bd499c88c77a4ef2fda
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 20e9a4672f1f77f2fa3f5e98479cb6190c9f9022
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446762"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015271"
 ---
 # <a name="video-resource-type"></a>Tipo de recurso Video
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 O recurso **Video** agrupa itens de dados relacionados a vídeos em uma única estrutura.
 
@@ -75,3 +75,4 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Video"
 } -->
+

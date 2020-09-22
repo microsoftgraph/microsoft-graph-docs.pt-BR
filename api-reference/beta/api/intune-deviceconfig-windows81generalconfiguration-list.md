@@ -3,14 +3,14 @@ title: Listar windows81GeneralConfigurations
 description: Listar propriedades e relações dos objetos windows81GeneralConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43443d95d1faf0e657d32118be530b3716723e9d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c7ecb47211dc892141766a03c435f08dbdb5fe4e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43430374"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014816"
 ---
 # <a name="list-windows81generalconfigurations"></a>Listar windows81GeneralConfigurations
 
@@ -142,6 +142,9 @@ Content-Length: 3170
   ]
 }
 ```
+
+
+
 
 
 

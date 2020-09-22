@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 8c19796086008c3ade0a197de93401c17aee5012
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: d2cec56a9768c4a1950fdb1013540b7848470ecf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330082"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015390"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -536,3 +536,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

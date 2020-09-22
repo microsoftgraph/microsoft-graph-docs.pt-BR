@@ -5,19 +5,19 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 4fa98cdfdfc013386f7d615c54c832d27c5f826e
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 9f186fe1c6c5e7ac917508ed75f6fb8488cbdc94
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408132"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015145"
 ---
 # <a name="workbookoperation-resource-type"></a>tipo de recurso workbookOperation
 
 Representa o status de uma operação de pasta de trabalho de execução longa.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -29,9 +29,9 @@ Representa o status de uma operação de pasta de trabalho de execução longa.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |status|String| O status atual da operação. Os valores possíveis são: `NotStarted`, `Running`, `Completed`, `Failed`.|
-|id|Cadeia de caracteres| A ID da operação. Somente leitura.|
+|id|String| A ID da operação. somente leitura.|
 |erro|[workbookOperationError](workbookoperationerror.md)| O erro retornado pela operação.|
-|resourceLocation|Cadeia de caracteres| O URI do recurso para o resultado.|
+|resourceLocation|String| O URI do recurso para o resultado.|
 
 ## <a name="relationships"></a>Relações
 

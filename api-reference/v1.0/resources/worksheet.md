@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: d9edb4e0ad13f7caf94fd4308f606fccc14861aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9b71e25cc2590d599f79c199200eb2f82da603c5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533363"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015026"
 ---
 # <a name="worksheet-resource-type"></a>Tipo de recurso Worksheet
 
@@ -86,3 +86,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

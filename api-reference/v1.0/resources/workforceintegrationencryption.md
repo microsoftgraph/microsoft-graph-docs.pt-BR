@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fb974b80b03edc36a0f974633c8f95ca384182e6
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 8888aafbe7b4f4cb116306a8e1fa086f513ba72a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154147"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015018"
 ---
 # <a name="workforceintegrationencryption-resource-type"></a>tipo de recurso workforceIntegrationEncryption
 
@@ -23,7 +23,7 @@ Uma entidade de criptografia que define o protocolo e o segredo de um [workforce
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |RDP|String| Os valores possíveis são: `sharedSecret` e `unknownFutureValue`.|
-|sigilo|Cadeia de caracteres|Segredo compartilhado de criptografia.|
+|sigilo|String|Segredo compartilhado de criptografia.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -54,3 +54,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

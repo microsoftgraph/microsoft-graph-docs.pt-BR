@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0fa4bc26ea6c5c27d8e7679e2bfb587b90044405
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 8ed4da18eef18ac350db308a3148e791cf5b7f02
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556144"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015572"
 ---
 # <a name="replace-schedulinggroup"></a>Subtituir schedulingGroup
 
@@ -153,3 +153,4 @@ Content-length: 401
   ]
 }
 -->
+

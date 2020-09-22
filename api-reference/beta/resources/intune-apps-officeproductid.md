@@ -3,14 +3,14 @@ title: tipo de enumeração officeProductId
 description: A enumeração para especificar os ProductIds do Office365 que representam os SKUs do pacote do office365.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e077de67442a5bd348c99f56c397707c74ee9072
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b6ddffdeb80e33e9e9a7ab43dbb6c9ca01d18d09
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462558"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016412"
 ---
 # <a name="officeproductid-enum-type"></a>tipo de enumeração officeProductId
 
@@ -26,9 +26,12 @@ A enumeração para especificar os ProductIds do Office365 que representam os SK
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |o365ProPlusRetail|,0|Ainda não documentado|
-|o365BusinessRetail|1|Ainda não documentado|
-|visioProRetail|duas|Ainda não documentado|
-|projectProRetail|3D|Ainda não documentado|
+|o365BusinessRetail|1 |Ainda não documentado|
+|visioProRetail|2 |Ainda não documentado|
+|projectProRetail|3 |Ainda não documentado|
+
+
+
 
 
 

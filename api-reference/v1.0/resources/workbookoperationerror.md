@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a04d26a7bdeb14f35859e7c1b02e781b64189201
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: ce65847d6ddbb0a8db0c1277e38753ecab7080e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408131"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015138"
 ---
 # <a name="workbookoperationerror-resource-type"></a>tipo de recurso workbookOperationError
 
@@ -20,7 +20,7 @@ Representa um erro de uma operação de pasta de trabalho com falha.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|código|Cadeia de caracteres| O código de erro.|
+|código|String| O código de erro.|
 |mensagem|String| A mensagem de erro.|
 |innererror|error object| Opcional. Objetos error adicionais que podem ser mais específicos do que o erro de nível superior.|
 
@@ -54,3 +54,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

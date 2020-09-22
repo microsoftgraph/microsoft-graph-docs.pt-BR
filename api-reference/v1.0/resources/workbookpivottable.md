@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b3ec3c9237e246b2af10a867155bc7b6d360a67f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb67920598d883a126c18cdf8acdfb1b38d9014a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533380"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015131"
 ---
 # <a name="pivottable-resource-type"></a>tipo de recurso de tabela dinâmica
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa uma Tabela Dinâmica do Excel.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -29,10 +29,10 @@ Representa uma Tabela Dinâmica do Excel.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres| Id da Tabela Dinâmica.   Somente leitura.|
+|id|String| Id da Tabela Dinâmica.   Somente leitura.|
 |name|String|Nome da Tabela Dinâmica.    |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |planilha|[WorkbookWorksheet](worksheet.md)| A planilha que contém a Tabela Dinâmica atual. Somente leitura.   |
@@ -56,3 +56,4 @@ Veja a seguir uma representação JSON do recurso.
 }
 
 ```
+

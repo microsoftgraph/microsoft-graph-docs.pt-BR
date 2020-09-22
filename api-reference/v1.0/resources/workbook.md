@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5fc1da837c3aacf92136d02371369e1f2ea40005
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: e44f6d155e88ed40961e973d7bdd945a156eabb0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408040"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015229"
 ---
 # <a name="workbook-resource-type"></a>tipo de recurso da pasta de trabalho
 
@@ -162,3 +162,4 @@ content-type: application/json;odata.metadata
   "section": "documentation",
   "tocPath": ""
 }-->
+

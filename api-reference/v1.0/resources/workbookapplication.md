@@ -5,21 +5,21 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: d4b2833910d22696ee95ed707469f6da2068453c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 36626698d55fe8dc813d13d66a7fa453f8e2beae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446720"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015159"
 ---
 # <a name="workbookapplication-resource-type"></a>tipo de recurso workbookApplication
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Representa o aplicativo Excel que gerencia a pasta de trabalho.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -64,3 +64,4 @@ Nenhum
   "suppressions": []
 }
 -->
+

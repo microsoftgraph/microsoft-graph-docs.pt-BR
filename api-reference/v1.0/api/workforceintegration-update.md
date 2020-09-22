@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d6eee25246d0851bd442bbbb10b9f9c2bfc646cf
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 0ca47d0f9c640509d0a61f68c688d45753293ad5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44218081"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015530"
 ---
 # <a name="update-workforceintegration"></a>Atualizar workforceIntegration
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |apiVersion|Int32|Versão da API para a URL de retorno de chamada. Comece com 1.|
 |displayName|String|Nome da integração da força de funcionários.|
 |encripta|workforceIntegrationEncryption|O recurso de criptografia de integração da força de funcionários. |
-|isActive|Booliano|Indica se a integração da força de trabalho está ativa e disponível atualmente.|
+|isActive|Boolean|Indica se a integração da força de trabalho está ativa e disponível atualmente.|
 |supportedEntities|string| Os possíveis valores são: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúsculas.|
 |url|Cadeia de caracteres| URL de integração de força de obra para retornos de chamada do serviço de turno. |
 
@@ -234,3 +234,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

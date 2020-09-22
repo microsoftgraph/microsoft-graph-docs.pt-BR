@@ -3,14 +3,14 @@ title: tipo de recurso windowsUniversalAppXContainedApp
 description: Uma classe que representa um aplicativo contido de um aplicativo do WindowsUniversalAppX.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e347eb0f51c8ddc77ead7ae40449c428a08ec56a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: eff4147a7cb6d888fa2fb6047536e27daaec7ea4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441217"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016405"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>tipo de recurso windowsUniversalAppXContainedApp
 
@@ -58,6 +58,9 @@ Veja a seguir uma representação JSON do recurso.
   "appUserModelId": "String"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3a238ab9b033cd1906842f61d9f2d72b6d642335
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b89f7b1ed2ca1ca833d8d5bae72d74a58b714997
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533383"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015166"
 ---
 # <a name="workbookcomment-resource-type"></a>tipo de recurso workbookComment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa um comentário na pasta de trabalho.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -31,9 +31,9 @@ Representa um comentário na pasta de trabalho.
 |:-------------|:------------|:------------|
 |content|Cadeia de caracteres|O conteúdo de comment.|
 |contentType|String|Indica o tipo do comentário.|
-|id|Cadeia de caracteres| Representa o identificador de comentário. Somente leitura.|
+|id|String| Representa o identificador de comentário. Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
@@ -70,3 +70,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

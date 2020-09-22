@@ -3,18 +3,18 @@ title: Atualizar roleScopeTag
 description: Atualiza as propriedades de um objeto roleScopeTag.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1e8ae41d1b82627189b2913fd12ce0c15619491
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 196f867ab26632dac7004a52a08715ba54a9be7a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449813"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014417"
 ---
 # <a name="update-rolescopetag"></a>Atualizar roleScopeTag
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -55,14 +55,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [roleSco
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
-|displayName|Cadeia de caracteres|O nome de exibição ou amigável da marca de escopo da função.|
+|displayName|String|O nome de exibição ou amigável da marca de escopo da função.|
 |description|String|Descrição da marca de escopo da função.|
 |isBuiltIn|Booliano|Descrição da marca de escopo da função.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [roleScopeTag](../resources/intune-rbac-rolescopetag.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [roleScopeTag](../resources/intune-rbac-rolescopetag.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -96,6 +96,9 @@ Content-Length: 204
   "isBuiltIn": true
 }
 ```
+
+
+
 
 
 

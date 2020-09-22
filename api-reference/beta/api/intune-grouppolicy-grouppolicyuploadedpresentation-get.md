@@ -3,14 +3,14 @@ title: Obter groupPolicyUploadedPresentation
 description: Leia as propriedades e as relações do objeto groupPolicyUploadedPresentation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0662a676f0c8f9a319b17b51beca9488664ef81f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 12ac44ae92c6d5d45b7db1f919b69ca839ed8604
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440834"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014529"
 ---
 # <a name="get-grouppolicyuploadedpresentation"></a>Obter groupPolicyUploadedPresentation
 
@@ -80,6 +80,9 @@ Content-Length: 240
   }
 }
 ```
+
+
+
 
 
 

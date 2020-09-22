@@ -3,14 +3,14 @@ title: Excluir windows10NetworkBoundaryConfiguration
 description: Exclui windows10NetworkBoundaryConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 659a490df49435a9553e32813860b261838545f1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d0bcd54c97bea4708dfb42679be75ffecd1cb08b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43339839"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014823"
 ---
 # <a name="delete-windows10networkboundaryconfiguration"></a>Excluir windows10NetworkBoundaryConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

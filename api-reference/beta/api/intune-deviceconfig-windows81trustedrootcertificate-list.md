@@ -3,14 +3,14 @@ title: Listar windows81TrustedRootCertificates
 description: Listar Propriedades e relações dos objetos windows81TrustedRootCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d5f8aff15ccafcc730db46cfffdc15c0b17b2720
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a196a10dec79bd4704a968e32de5b70dcfb68dad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43336792"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014676"
 ---
 # <a name="list-windows81trustedrootcertificates"></a>Listar windows81TrustedRootCertificates
 
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -109,6 +109,9 @@ Content-Length: 1543
   ]
 }
 ```
+
+
+
 
 
 

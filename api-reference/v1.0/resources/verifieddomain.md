@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 656e4a4c8fc40c86eea3b3e167adae22a9580081
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c56b7c49fc2bee4f10d338bc1bcc4cfec323ea97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807693"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015285"
 ---
 # <a name="verifieddomain-resource-type"></a>Tipo de recurso verifiedDomain
 
@@ -25,8 +25,8 @@ Especifica um domínio de um locatário. A propriedade **verifiedDomains** da en
 |capabilities|Cadeia de caracteres|Por exemplo, "Email" ou "OfficeCommunicationsOnline".|
 |isDefault|Booliano|                **true** se este é o domínio padrão associado ao locatário; caso contrário, **false**.            |
 |isinitial|Booliano|**true** se esse é o domínio inicial associado ao locatário; caso contrário, **false**|
-|nome|Cadeia de caracteres|O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.|
-|type|Cadeia de caracteres|Por exemplo, "Managed".|
+|nome|String|O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.|
+|tipo|String|Por exemplo, "Managed".|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -60,3 +60,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

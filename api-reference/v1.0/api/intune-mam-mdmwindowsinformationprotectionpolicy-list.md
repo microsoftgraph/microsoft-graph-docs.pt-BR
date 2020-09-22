@@ -3,14 +3,14 @@ title: Listar mdmWindowsInformationProtectionPolicies
 description: Listar propriedades e relações dos objetos mdmWindowsInformationProtectionPolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84a75998554f7d8bd098a3765d67b86a7e87f143
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1fad6cfd1291c9ac3733fbaffafd8779f21b1c8d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43398254"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015782"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>Listar mdmWindowsInformationProtectionPolicies
 
@@ -197,6 +197,9 @@ Content-Length: 4610
   ]
 }
 ```
+
+
+
 
 
 

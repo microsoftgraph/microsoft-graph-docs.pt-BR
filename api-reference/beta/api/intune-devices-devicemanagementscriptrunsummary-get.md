@@ -3,18 +3,18 @@ title: Obter deviceManagementScriptRunSummary
 description: Leia as propriedades e as relações do objeto deviceManagementScriptRunSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7668faab6b79acacea6d245a95e611161e380fd2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 79f865873b0debcf14022c0fe85f6bd2ca642ffb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380136"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014564"
 ---
 # <a name="get-devicemanagementscriptrunsummary"></a>Obter deviceManagementScriptRunSummary
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -82,6 +82,9 @@ Content-Length: 259
   }
 }
 ```
+
+
+
 
 
 

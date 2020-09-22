@@ -5,21 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 805c3b53a60495ebd50a230a83e3ce1272cacf4d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8bb91dae367f9f9c95465aed0f8c71a26aaddd1a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446664"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014998"
 ---
 # <a name="worksheetprotection-resource-type"></a>Tipo de recurso WorksheetProtection
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Representa a proteção de um objeto sheet.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -61,3 +61,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

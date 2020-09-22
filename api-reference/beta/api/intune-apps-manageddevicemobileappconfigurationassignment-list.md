@@ -3,14 +3,14 @@ title: Listar managedDeviceMobileAppConfigurationAssignments
 description: Listar propriedades e relações dos objetos managedDeviceMobileAppConfigurationAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 440c2ca3cffb9ad0212dcc5ff67fbce8ed9ffa05
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 627338074602d4a4eeb3e2fd295a1b354199f136
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793350"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014858"
 ---
 # <a name="list-manageddevicemobileappconfigurationassignments"></a>Listar managedDeviceMobileAppConfigurationAssignments
 
@@ -81,6 +81,9 @@ Content-Length: 456
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Criar deviceManagementScriptUserState
 description: Criar um novo objeto deviceManagementScriptUserState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8c7e4eca3644b3f5d370c03b632fced527609c4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5df89e811e563843a97e0a3e86e954f085d32a60
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380106"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014550"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>Criar deviceManagementScriptUserState
 
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -96,6 +96,9 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

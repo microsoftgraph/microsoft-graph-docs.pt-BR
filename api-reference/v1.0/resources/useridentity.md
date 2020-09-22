@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 304d5a27714d7e6e02183b372814c8cb16c4e0b9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 32bfb6d7a92ce566d10809277f19f82e45ffc1a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446790"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015383"
 ---
 # <a name="useridentity-resource-type"></a>tipo de recurso UserIdentity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 No contexto de um log de auditoria do Azure AD, isso representa as informações do usuário que foram iniciadas ou foram afetadas por uma atividade de auditoria.
 
@@ -22,7 +22,7 @@ No contexto de um log de auditoria do Azure AD, isso representa as informações
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| displayName | Cadeia de caracteres | Nome de exibição da identidade. Observe que isso pode não estar sempre disponível ou atualizado.    |
+| displayName | String | Nome de exibição da identidade. Observe que isso pode não estar sempre disponível ou atualizado.    |
 | id          | String | Identificador exclusivo da identidade.  |
 | ipAddress   | Cadeia de caracteres| Indica o endereço IP do cliente usado pelo usuário que está executando a atividade (log de auditoria somente).|
 | userPrincipalName | String  | O atributo userPrincipalName do usuário. |
@@ -63,3 +63,4 @@ Veja a seguir uma representação JSON do tipo.
   ]
 }
 -->
+

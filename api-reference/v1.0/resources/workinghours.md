@@ -5,16 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3b98f6fa2e09da576af6b395fc48f6a5a2f15579
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63460f95e419a6e1e39a1c52fbf17d05ef9f5a5c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446680"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015012"
 ---
 # <a name="workinghours-resource-type"></a>Tipo de recurso workingHours
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Representa os dias da semana e as horas de um fuso horário específico que o usuário trabalha.
 
@@ -68,3 +68,4 @@ Veja a seguir uma representação JSON do recurso.
   ],
   "tocPath": ""
 }-->
+

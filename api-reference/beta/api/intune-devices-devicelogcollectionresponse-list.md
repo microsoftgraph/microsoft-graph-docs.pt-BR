@@ -3,14 +3,14 @@ title: Listar deviceLogCollectionResponses
 description: Listar Propriedades e relações dos objetos deviceLogCollectionResponse.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b8abd07487cbd491b6310022757a14d01e160db7
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 5f2235e23e083b0625158b09873366610f928348
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124162"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014585"
 ---
 # <a name="list-devicelogcollectionresponses"></a>Listar deviceLogCollectionResponses
 
@@ -84,6 +84,9 @@ Content-Length: 601
   ]
 }
 ```
+
+
+
 
 
 

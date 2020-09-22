@@ -3,14 +3,14 @@ title: Obter windows81SCEPCertificateProfile
 description: Leia as propriedades e as relações do objeto windows81SCEPCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f58cf81c23b23a84686b3880da48b49155b48323
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7cb19970046d8d97205d594dc0d553bad5b7aa7a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43430201"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014718"
 ---
 # <a name="get-windows81scepcertificateprofile"></a>Obter windows81SCEPCertificateProfile
 
@@ -138,6 +138,9 @@ Content-Length: 2337
   }
 }
 ```
+
+
+
 
 
 
