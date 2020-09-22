@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyMigrationReport
 description: O relatório de migração de política de grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b6e6d399525e8784bc1bdbd190da0968d4bf3af
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8e7b9e90b65b9e8a0c222ae81ff8329d3e7b86ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458608"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031176"
 ---
 # <a name="grouppolicymigrationreport-resource-type"></a>tipo de recurso groupPolicyMigrationReport
 
@@ -37,14 +37,14 @@ O relatório de migração de política de grupo.
 |:---|:---|:---|
 |id|String|Ainda não documentado|
 |groupPolicyObjectId|Guid|O GUID do objeto da política de grupo do conteúdo XML do GPO|
-|displayName|Cadeia de caracteres|O nome do objeto de diretiva de grupo do conteúdo XML do GPO|
+|displayName|String|O nome do objeto de diretiva de grupo do conteúdo XML do GPO|
 |ouDistinguishedName|String|O nome diferenciado da OU.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi modificado pela última vez.|
 |groupPolicyCreatedDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi criado.|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi modificado pela última vez.|
 |migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|A cobertura do Intune para o arquivo de objeto de diretiva de grupo associado. Os valores possíveis são: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|targetedInActiveDirectory|Boolean|A propriedade de destino no AD do conteúdo XML do GPO|
+|targetedInActiveDirectory|Booliano|A propriedade de destino no AD do conteúdo XML do GPO|
 |totalSettingsCount|Int32|O número total de configurações de política de grupo do arquivo de GPO.|
 |supportedSettingsCount|Int32|O número de configurações de política de grupo compatíveis com o Intune.|
 |supportedSettingsPercent|Int32|A porcentagem de configurações de política de grupo compatíveis com o Intune.|
@@ -81,6 +81,9 @@ Veja a seguir uma representação JSON do recurso.
   "supportedSettingsPercent": 1024
 }
 ```
+
+
+
 
 
 

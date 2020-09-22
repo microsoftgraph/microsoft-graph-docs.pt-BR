@@ -3,14 +3,14 @@ title: tipo de recurso windowsAutopilotSettings
 description: O recurso windowsAutopilotSettings representa uma conta do Windows AutoPilot para sincronizar dados com o serviço de sincronização de dados do dispositivo Windows.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f482dd42bbd40a71dfb60ffee0c5c2d6febec41
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5afb5b8aad61a9a04beb69c31c60b8df672bc324
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43358517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031568"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>tipo de recurso windowsAutopilotSettings
 
@@ -57,6 +57,9 @@ Veja a seguir uma representação JSON do recurso.
   "syncStatus": "String"
 }
 ```
+
+
+
 
 
 

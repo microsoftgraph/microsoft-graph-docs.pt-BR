@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyOperation
 description: A entidade representa uma operação de política de grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 69ab3503d761052ba8293b9133f43204a6afd7b0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 186fc43e61dff934771469c621d1b77583535d4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376914"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030987"
 ---
 # <a name="grouppolicyoperation-resource-type"></a>tipo de recurso groupPolicyOperation
 
@@ -61,6 +61,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

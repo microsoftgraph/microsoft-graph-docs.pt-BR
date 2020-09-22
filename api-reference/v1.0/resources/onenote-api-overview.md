@@ -5,12 +5,12 @@ localization_priority: Priority
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: conceptualPageType
-ms.openlocfilehash: 0d628c906a5e4153e0129b1142f1d100325843fd
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 9402cb1b5f0b8348d391d2a10f526563d20b3d0f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630351"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028312"
 ---
 # <a name="use-the-onenote-rest-api"></a>Usar o API REST do OneNote
 
@@ -59,3 +59,4 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
+

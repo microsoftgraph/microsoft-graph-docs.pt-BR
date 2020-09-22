@@ -3,14 +3,14 @@ title: Atualizar iosManagedAppProtection
 description: Atualizar as propriedades de um objeto iosManagedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aaa5ceca69936099e5a73c90886ad0028a7c68f7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1f334809d3eea764a2d259e497ba8233216ea198
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456479"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031852"
 ---
 # <a name="update-iosmanagedappprotection"></a>Atualizar iosManagedAppProtection
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosMana
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|displayName|String|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |description|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
@@ -97,7 +97,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosMana
 |pinRequiredInsteadOfBiometricTimeout|Duração|Tempo limite em minutos para um PIN de aplicativo em vez de uma senha não biométrica herdada de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedOutboundClipboardSharingExceptionLength|Int32|Especifique o número de caracteres que podem ser recortados ou copiados de dados org e contas para qualquer aplicativo. Essa configuração substitui a restrição AllowedOutboundClipboardSharingLevel. O valor padrão de ' 0 ' significa que nenhuma exceção é permitida. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Especifique a restrição de notificação de aplicativo herdada de [managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `allow`, `blockOrganizationalData`, `block`.|
-|isAssigned|Booliano|Indica se a política foi implantada a grupos de inclusão ou não. Herdado de [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|
+|isAssigned|Boolean|Indica se a política foi implantada a grupos de inclusão ou não. Herdado de [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|Os níveis de gerenciamento de aplicativo pretendidos para esta política herdadas de [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md). Os valores possíveis são: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Tipo de criptografia que deve ser usada para dados em um aplicativo gerenciado. Os valores possíveis são: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |minimumRequiredSdkVersion|String|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa.|
@@ -107,9 +107,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosMana
 |minimumWipeSdkVersion|String|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa.|
 |allowedIosDeviceModels|String|Lista separada por ponto-e-vírgula de modelos de dispositivo permitidos, como uma cadeia de caracteres, para que o aplicativo gerenciado funcione.|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, seja Block ou apagamento, se o modelo de dispositivo especificado não for permitido. Os valores possíveis são: `block`, `wipe`, `warn`.|
-|filterOpenInToOnlyManagedApps|Boolean|Define se a operação de abertura é suportada do aplicativo gerenciado para os locais de compartilhamento de filesharing selecionados. Essa configuração aplica-se somente quando AllowedOutboundDataTransferDestinations é definida como ManagedApps e Propriedadesdisableprotectionofmanagedoutboundopenindata é definida como false.|
-|Propriedadesdisableprotectionofmanagedoutboundopenindata|Boolean|Desabilitar a proteção de dados transferidos para outros aplicativos por meio da opção abrir do IOS. Essa configuração só pode ser true quando AllowedOutboundDataTransferDestinations está definida como ManagedApps.|
-|protectInboundDataFromUnknownSources|Boolean|Proteger dados de entrada de fonte desconhecida. Essa configuração só poderá ser true quando AllowedInboundDataTransferSources estiver definido como myapps.|
+|filterOpenInToOnlyManagedApps|Booliano|Define se a operação de abertura é suportada do aplicativo gerenciado para os locais de compartilhamento de filesharing selecionados. Essa configuração aplica-se somente quando AllowedOutboundDataTransferDestinations é definida como ManagedApps e Propriedadesdisableprotectionofmanagedoutboundopenindata é definida como false.|
+|Propriedadesdisableprotectionofmanagedoutboundopenindata|Booliano|Desabilitar a proteção de dados transferidos para outros aplicativos por meio da opção abrir do IOS. Essa configuração só pode ser true quando AllowedOutboundDataTransferDestinations está definida como ManagedApps.|
+|protectInboundDataFromUnknownSources|Booliano|Proteger dados de entrada de fonte desconhecida. Essa configuração só poderá ser true quando AllowedInboundDataTransferSources estiver definido como myapps.|
 |customBrowserProtocol|String|Um protocolo de navegador personalizado para abrir o webLINK no iOS.|
 
 
@@ -267,6 +267,9 @@ Content-Length: 2795
   "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
+
+
+
 
 
 

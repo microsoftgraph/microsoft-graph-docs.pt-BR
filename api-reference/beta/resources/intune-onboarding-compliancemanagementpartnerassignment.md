@@ -3,14 +3,14 @@ title: tipo de recurso complianceManagementPartnerAssignment
 description: Direcionamento de grupo de usuários para parceiro de gerenciamento de conformidade
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 04157461b1990403be4a60992876bb9a46317f1b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: d44dc1107bdfd7ec05bc962b7f47b92a4ca84134
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793812"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029775"
 ---
 # <a name="compliancemanagementpartnerassignment-resource-type"></a>tipo de recurso complianceManagementPartnerAssignment
 
@@ -28,7 +28,7 @@ Direcionamento de grupo de usuários para parceiro de gerenciamento de conformid
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de atribuição de grupo.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -47,6 +47,9 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
+
 
 
 

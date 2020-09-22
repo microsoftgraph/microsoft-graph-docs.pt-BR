@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementApplicabilityRuleOsVersion
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 460618d844a01fc913e80022235f38b017091236
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5a8195bd67cf64d1875b795c3609cf04f9c13b31
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469272"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031694"
 ---
 # <a name="devicemanagementapplicabilityruleosversion-resource-type"></a>tipo de recurso deviceManagementApplicabilityRuleOsVersion
 
@@ -49,6 +49,9 @@ Veja a seguir uma representação JSON do recurso.
   "ruleType": "String"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Obter iosManagedAppProtections
 description: Ler propriedades e relações do objeto iosManagedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a45ccb5849b19631ae6849a652363bb70e29ac3f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 52f6c82f454621918d48b953ae8a53dd3a0a8c2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468157"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031932"
 ---
 # <a name="get-iosmanagedappprotection"></a>Obter iosManagedAppProtections
 
@@ -144,6 +144,9 @@ Content-Length: 2944
   }
 }
 ```
+
+
+
 
 
 

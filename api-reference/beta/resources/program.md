@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: cc2ce31742cd4a02efbefebc85283c8d784ad16e
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 31fb07478ab7f53e59cb93e9fd076a1271e998de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125033"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029069"
 ---
 # <a name="program-resource-type"></a>tipo de recurso de programa
 
@@ -20,10 +20,10 @@ Namespace: microsoft.graph
 
 No recurso de revisões do Azure AD [Access](accessreviews-root.md) , um programa é um contêiner, contendo controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão do Access a um programa, para facilitar a localização de revisões relacionadas do Access.  
 
-Cada locatário que tem revisões de acesso do Azure AD integradas tem um programa, `Default program`.  Um administrador global pode criar programas adicionais, por exemplo, para representar iniciativas de conformidade. 
+Cada locatário que tem revisões de acesso do Azure AD integradas tem um programa, `Default program` .  Um administrador global pode criar programas adicionais, por exemplo, para representar iniciativas de conformidade. 
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -77,3 +77,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

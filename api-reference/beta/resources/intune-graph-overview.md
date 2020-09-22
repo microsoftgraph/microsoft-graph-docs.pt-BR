@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para pontos de extremidade do Intune
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 3b479617ce476492ca716db7742f1e10aab88b18
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: e1c93c38c1667d1681e280b69ff106060900b46c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225050"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031113"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Trabalhando com o Intune no Microsoft Graph  
 
@@ -51,4 +51,7 @@ Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats
 
 - Saiba [como usar o Azure AD](https://docs.microsoft.com/intune/intune-graph-apis) para acessar a API do Microsoft Graph para Intune.  
 - Explore os [exemplos do PowerShell Intune](https://github.com/microsoftgraph/powershell-intune-samples), que mostram como usar a API do Microsoft Graph para Intune no contexto dos exemplos de trabalho.
+
+
+
 

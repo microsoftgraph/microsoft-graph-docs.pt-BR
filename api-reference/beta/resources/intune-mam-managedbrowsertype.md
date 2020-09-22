@@ -3,14 +3,14 @@ title: tipo de enumeração managedBrowserType
 description: Tipo de navegador gerenciado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5a5120b48d1eb70fa2989d27f520bf8bc2371e8c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a215af8a3914f8f9c74ade3a24a733992be58314
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43371693"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030168"
 ---
 # <a name="managedbrowsertype-enum-type"></a>tipo de enumeração managedBrowserType
 
@@ -26,7 +26,10 @@ Tipo de navegador gerenciado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|microsoftEdge|1|Microsoft Edge|
+|microsoftEdge|1 |Microsoft Edge|
+
+
+
 
 
 

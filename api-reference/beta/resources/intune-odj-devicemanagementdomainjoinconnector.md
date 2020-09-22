@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementDomainJoinConnector
 description: Um conector de ingresso no domínio é um conector responsável por alocar (e excluir) blobs de conta de máquina
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 38c631b29378ec6246dd8c93754c253c06c792e3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c5f5cfd272e8f2adc5d2916f3783192be9a5a5ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419136"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029845"
 ---
 # <a name="devicemanagementdomainjoinconnector-resource-type"></a>tipo de recurso deviceManagementDomainJoinConnector
 
@@ -35,7 +35,7 @@ Um conector de ingresso no domínio é um conector responsável por alocar (e ex
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo para representar um conector.|
-|displayName|Cadeia de caracteres|O nome de exibição do conector.|
+|displayName|String|O nome de exibição do conector.|
 |lastConnectionDateTime|DateTimeOffset|Último conector de horário contatado o Intune.|
 |state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|O estado do conector. Os valores possíveis são: `active`, `error`, `inactive`.|
 |versão|String|A versão do conector.|
@@ -61,6 +61,9 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementExchangeDeviceClass
 description: Classe de dispositivo no Exchange.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4099009c67e2c5b0ce8cc5b3c52dd00b1fd32aec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 79c1e7cf50bc0cc87f620ad0b875704005b90435
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448040"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029607"
 ---
 # <a name="devicemanagementexchangedeviceclass-resource-type"></a>tipo de recurso deviceManagementExchangeDeviceClass
 
@@ -26,7 +26,7 @@ Classe de dispositivo no Exchange.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |nome|String|Nome da classe de dispositivo que será afetada por essa regra.|
-|type|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|Tipo de dispositivo afetado por essa regra, por exemplo, Family. Os valores possíveis são: `family`, `model`.|
+|tipo|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|Tipo de dispositivo afetado por essa regra, por exemplo, Family. Os valores possíveis são: `family`, `model`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "type": "String"
 }
 ```
+
+
+
 
 
 

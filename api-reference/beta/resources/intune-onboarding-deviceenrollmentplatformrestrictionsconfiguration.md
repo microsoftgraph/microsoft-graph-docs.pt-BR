@@ -3,14 +3,14 @@ title: Tipo de recurso deviceEnrollmentPlatformRestrictionsConfiguration
 description: Configuração de registro de dispositivo que restringe os tipos de dispositivos que um usuário pode registrar
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e359388c99084c6b9544a3d1874ec11a6315596e
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: ab50e9ddeb6271cef3808e87d3fb43c65b61a07c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177671"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029740"
 ---
 # <a name="deviceenrollmentplatformrestrictionsconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -38,22 +38,23 @@ Herda de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenroll
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo da conta herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|displayName|Cadeia de caracteres|O nome de exibição da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|displayName|String|O nome de exibição da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |description|String|A descrição da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos somente à configuração com o menor valor de prioridade. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Data e hora de criação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |versão|Int32|A versão da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Marcas de escopo de função opcional para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|roleScopeTagIds|Coleção String|Marcas de escopo de função opcional para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |iosRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Restrições do IOS com base na plataforma, versão do sistema operacional da plataforma e Propriedade do dispositivo|
 |windowsRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Restrições do Windows com base na plataforma, versão do sistema operacional da plataforma e Propriedade do dispositivo|
+|windowsHomeSkuRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Restrições do Windows Home SKU com base na plataforma, versão do sistema operacional da plataforma e Propriedade do dispositivo|
 |windowsMobileRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Restrições do Windows Mobile com base na plataforma, versão do sistema operacional da plataforma e Propriedade do dispositivo|
 |androidRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Restrições do Android com base na plataforma, versão do sistema operacional da plataforma e Propriedade do dispositivo|
 |androidForWorkRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|O Android para restrições de trabalho com base na plataforma, na versão do sistema operacional da plataforma e na Propriedade do dispositivo|
 |macRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Restrições de Mac com base na plataforma, versão do sistema operacional da plataforma e Propriedade do dispositivo|
 |macOSRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Restrições de Mac com base na plataforma, versão do sistema operacional da plataforma e Propriedade do dispositivo|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |atribuições|Conjunto [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|A lista de atribuições de grupo para o perfil de configuração do dispositivo herdado de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
@@ -90,6 +91,16 @@ Veja a seguir uma representação JSON do recurso.
     ]
   },
   "windowsRestriction": {
+    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+    "platformBlocked": true,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "String",
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
+  },
+  "windowsHomeSkuRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
@@ -151,6 +162,9 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
+
 
 
 

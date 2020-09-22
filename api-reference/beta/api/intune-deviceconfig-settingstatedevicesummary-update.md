@@ -3,14 +3,14 @@ title: Atualizar settingStateDeviceSummary
 description: Atualizar as propriedades de um objeto settingStateDeviceSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 951b76545e7c11f2a17ad9f787d898e77b3023d9
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 3d11545f58f7767f929c4aeb486065dabb8b7cad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792643"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028046"
 ---
 # <a name="update-settingstatedevicesummary"></a>Atualizar settingStateDeviceSummary
 
@@ -47,7 +47,6 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSWiredNetworkConfiguration/rootCertificateForServerValidation/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSWiredNetworkConfiguration/identityCertificateForClientAuthentication/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation/{windows81TrustedRootCertificateId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
 ```
 
@@ -65,7 +64,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [setting
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|settingName|String|Nome da configuração|
+|settingName|Cadeia de caracteres|Nome da configuração|
 |instancePath|Cadeia de caracteres|Nome de InstancePath para a configuração|
 |unknownDeviceCount|Int32|Contagem desconhecida de dispositivos para a configuração|
 |notApplicableDeviceCount|Int32|Contagem não aplicável ao dispositivo para a configuração|
@@ -124,6 +123,9 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyPresentationValue
 description: A entidade de valor de apresentação base que armazena o valor de uma única apresentação de política de grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ba71520b4963aa7455948200d6bcb586b8d742f7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7e69e956b6864089fcad24c2846d6f91bbfe9a79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443778"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030756"
 ---
 # <a name="grouppolicypresentationvalue-resource-type"></a>tipo de recurso groupPolicyPresentationValue
 
@@ -60,6 +60,9 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
+
+
+
 
 
 

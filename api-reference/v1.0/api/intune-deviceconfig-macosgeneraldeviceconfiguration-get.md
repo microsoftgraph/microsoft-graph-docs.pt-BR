@@ -3,14 +3,14 @@ title: Get macOSGeneralDeviceConfiguration
 description: Ler propriedades e relações do objeto macOSGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a0364af74ab72b1d5926b9105671f32a734ef2d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b8a87af568ee2dcb4c18d8e2c95cd82f97aad710
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387798"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028920"
 ---
 # <a name="get-macosgeneraldeviceconfiguration"></a>Get macOSGeneralDeviceConfiguration
 
@@ -102,6 +102,9 @@ Content-Length: 1155
   }
 }
 ```
+
+
+
 
 
 

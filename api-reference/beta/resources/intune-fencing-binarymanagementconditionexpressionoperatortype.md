@@ -3,14 +3,14 @@ title: tipo de enumeração binaryManagementConditionExpressionOperatorType
 description: Operadores binários suportados para expressões de condição de gerenciamento.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3b007a3d6e673ff3a8d08454eedc0e3f7473d94e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 930a7e64cd083d5a0d1ed9588ad4d052e31b1a79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382806"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031407"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>tipo de enumeração binaryManagementConditionExpressionOperatorType
 
@@ -26,7 +26,10 @@ Operadores binários suportados para expressões de condição de gerenciamento.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |ou|,0|Avalia um conjunto de operandos como true se e somente se um ou mais de seus operandos for true.|
-|e|1|Avalia um conjunto de operandos como true se e somente se todos os seus operandos forem verdadeiros.|
+|e|1 |Avalia um conjunto de operandos como true se e somente se todos os seus operandos forem verdadeiros.|
+
+
+
 
 
 

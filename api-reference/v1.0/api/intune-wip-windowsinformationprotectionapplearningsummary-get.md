@@ -3,14 +3,14 @@ title: Obter windowsInformationProtectionAppLearningSummary
 description: Ler propriedades e relações do objeto windowsInformationProtectionAppLearningSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6aae392b05bf727286ce7da72899ecd323efee0a
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 0141ce7a84553428971f5a12026d8227e8abbd56
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43439700"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028662"
 ---
 # <a name="get-windowsinformationprotectionapplearningsummary"></a>Obter windowsInformationProtectionAppLearningSummary
 
@@ -78,6 +78,9 @@ Content-Length: 269
   }
 }
 ```
+
+
+
 
 
 

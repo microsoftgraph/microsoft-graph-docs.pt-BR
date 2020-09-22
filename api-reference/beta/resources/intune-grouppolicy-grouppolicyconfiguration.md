@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyConfiguration
 description: A entidade de configuração de política de grupo contém os valores configurados para uma ou mais definições de política de grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6e2d017b7bbd8f76d59f7862fbb943c455c78fbe
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ae81d6df33be7473b982d5bf319446402d6ba946
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43377077"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031085"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>tipo de recurso groupPolicyConfiguration
 
@@ -37,7 +37,7 @@ A entidade de configuração de política de grupo contém os valores configurad
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
-|displayName|Cadeia de caracteres|Nome fornecido pelo usuário para o objeto Resource.|
+|displayName|String|Nome fornecido pelo usuário para o objeto Resource.|
 |description|String|Descrição fornecida pelo usuário para o objeto Resource.|
 |roleScopeTagIds|Coleção String|A lista de marcas de escopo para a configuração.|
 |id|String|Chave da entidade.|
@@ -70,6 +70,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Atualizar androidCompliancePolicy
 description: Atualizar as propriedades de um objeto androidCompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a807ff101a380b74aeff1ea7fed1fc1f699b42d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b1a7a9611da3b8f06159748adfadd7d4313747f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43352548"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028081"
 ---
 # <a name="update-androidcompliancepolicy"></a>Atualizar androidCompliancePolicy
 
@@ -58,11 +58,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |passwordRequired|Boolean|Exige uma senha para desbloquear o dispositivo.|
 |passwordMinimumLength|Int32|Comprimento mínimo da senha. Valores válidos de 4 a 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Tipo de caracteres em senha. Os valores possíveis são: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
+|requiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indica a complexidade da senha necessária no Android. Um de: nenhum, baixo, médio, alto. Esta é uma nova API voltada para o Android 11 +. Os valores possíveis são: `none`, `low`, `medium`, `high`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que uma senha seja necessária.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha. Valores válidos de 1 a 365|
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear. Valores válidos de 1 a 24|
@@ -74,7 +75,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exige o nível mínimo de risco de Proteção contra Ameaças Móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |advancedThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|MDATP requer nível mínimo de risco de proteção contra ameaças móveis para relatar não conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |securityBlockJailbrokenDevices|Boolean|Os dispositivos não devem ser violados ou com modificações root.|
-|securityBlockDeviceAdministratorManagedDevices|Boolean|Bloquear dispositivos gerenciados pelo administrador de dispositivos.|
+|securityBlockDeviceAdministratorManagedDevices|Booliano|Bloquear dispositivos gerenciados pelo administrador de dispositivos.|
 |osMinimumVersion|String|Versão mínima do Android.|
 |osMaximumVersion|String|Versão máxima do Android.|
 |minAndroidSecurityPatchLevel|String|Nível mínimo de patch de segurança Android.|
@@ -99,7 +100,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1710
+Content-length: 1750
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -112,6 +113,7 @@ Content-length: 1710
   "passwordRequired": true,
   "passwordMinimumLength": 5,
   "passwordRequiredType": "alphabetic",
+  "requiredPasswordComplexity": "low",
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordBlockCount": 2,
@@ -151,7 +153,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1882
+Content-Length: 1922
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -167,6 +169,7 @@ Content-Length: 1882
   "passwordRequired": true,
   "passwordMinimumLength": 5,
   "passwordRequiredType": "alphabetic",
+  "requiredPasswordComplexity": "low",
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordBlockCount": 2,
@@ -200,6 +203,9 @@ Content-Length: 1882
   ]
 }
 ```
+
+
+
 
 
 

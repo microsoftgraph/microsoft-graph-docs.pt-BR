@@ -3,14 +3,14 @@ title: Tipo de recurso deviceEnrollmentPlatformRestriction
 description: Restrições de registro específicas de plataformas
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ede5fac054b457230a8523539f3bf0f3a72ce4a7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 255e9b815657fa354ab4180e8685049ec78ed585
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455124"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029747"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Tipo de recurso deviceEnrollmentPlatformRestriction
 
@@ -25,9 +25,9 @@ Restrições de registro específicas de plataformas
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|platformBlocked|Boolean|Bloqueia o registro da plataforma|
+|platformBlocked|Booliano|Bloqueia o registro da plataforma|
 |personalDeviceEnrollmentBlocked|Booliano|Bloqueia o registro de dispositivos de sua propriedade|
-|osMinimumVersion|String|Versão do SO mínimo compatível|
+|osMinimumVersion|Cadeia de caracteres|Versão do SO mínimo compatível|
 |osMaximumVersion|Cadeia de caracteres|Versão do SO máximo compatível|
 |blockedManufacturers|Coleção String|Conjunto de fabricantes bloqueados.|
 
@@ -53,6 +53,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

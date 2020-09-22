@@ -3,14 +3,14 @@ title: Tipo de recurso managedAppStatus
 description: Representa o status de proteção e configuração do aplicativo para a organização.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 523d564f00189952ac3046c5f02bf782bc0f8e2f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f2fee186f7398c361e6ef02c56ecca299796bd4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43371787"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030182"
 ---
 # <a name="managedappstatus-resource-type"></a>Tipo de recurso managedAppStatus
 
@@ -31,7 +31,7 @@ Representa o status de proteção e configuração do aplicativo para a organiza
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome amigável do relatório de status.|
+|displayName|String|Nome amigável do relatório de status.|
 |id|String|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
@@ -54,6 +54,9 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
+
+
+
 
 
 

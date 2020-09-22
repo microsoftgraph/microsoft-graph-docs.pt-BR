@@ -3,14 +3,14 @@ title: tipo de recurso windowsAutopilotDeviceIdentity
 description: O recurso windowsAutopilotDeviceIdentity representa um dispositivo do Windows AutoPilot.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a2e81edfac49d48dd4963e527e26cd38b8df7478
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bb499a98a77a970f31a96b3ce3e509f1684d8457
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459838"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031645"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>tipo de recurso windowsAutopilotDeviceIdentity
 
@@ -43,10 +43,10 @@ O recurso windowsAutopilotDeviceIdentity representa um dispositivo do Windows Au
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Status de atribuição de perfil do dispositivo do Windows AutoPilot. Os valores possíveis são: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Atribuição de perfil status detalhado do dispositivo do Windows AutoPilot. Os valores possíveis são: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Hora do conjunto de perfis do dispositivo do Windows AutoPilot.|
-|orderIdentifier|String|Identificador de pedidos do dispositivo do Windows AutoPilot-preterido|
+|orderIdentifier|Cadeia de caracteres|Identificador de pedidos do dispositivo do Windows AutoPilot-preterido|
 |groupTag|String|Marca de grupo do dispositivo do Windows AutoPilot.|
 |purchaseOrderIdentifier|String|Identificador de ordem de compra do dispositivo do Windows AutoPilot.|
-|serialNumber|String|Número de série do dispositivo do Windows AutoPilot.|
+|serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |fabricante|String|Fabricante OEM do dispositivo do Windows AutoPilot.|
 |modelo|String|Nome do modelo do dispositivo do Windows AutoPilot.|
@@ -101,6 +101,9 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
+
+
+
 
 
 

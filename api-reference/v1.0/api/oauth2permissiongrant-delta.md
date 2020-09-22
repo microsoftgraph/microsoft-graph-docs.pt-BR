@@ -5,12 +5,12 @@ localization_priority: Normal
 author: psignoret
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e2c4a4217a00dfa43f256c6896868909e4223f1d
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 2fe66ab3259cc6850c75badaee9cf7ccba72e689
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509837"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028488"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant: Delta
 
@@ -43,7 +43,7 @@ As alterações de controle provocam uma rodada de uma ou mais chamadas de funç
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | cadeia de caracteres | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique a `deltaLink` URL inteira, incluindo esse token, na primeira solicitação da próxima rodada de controle de alterações para essa coleção.|
+| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique a `deltaLink` URL inteira, incluindo esse token, na primeira solicitação da próxima rodada de controle de alterações para essa coleção.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `nextLink` URL da chamada de função **Delta** anterior, indicando que há mais alterações a serem controladas na mesma coleção de recursos. |
 
 ### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -142,3 +142,4 @@ Content-type: application/json
   ]
 }
 -->
+

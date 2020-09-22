@@ -3,14 +3,14 @@ title: Tipo de recurso managedAppDiagnosticStatus
 description: Representa o status de diagnóstico.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c07342c22662998474ee9f703cefaca54094feab
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 74743a345688699ac25399e92af53f17afe86626
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43373031"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030336"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>Tipo de recurso managedAppDiagnosticStatus
 
@@ -25,7 +25,7 @@ Representa o status de diagnóstico.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|validationName|String|O nome amigável da validação|
+|validationName|Cadeia de caracteres|O nome amigável da validação|
 |state|String|O estado da operação|
 |mitigationInstruction|Cadeia de caracteres|Instruções sobre como atenuar uma falha de validação|
 
@@ -47,6 +47,9 @@ Veja a seguir uma representação JSON do recurso.
   "mitigationInstruction": "String"
 }
 ```
+
+
+
 
 
 

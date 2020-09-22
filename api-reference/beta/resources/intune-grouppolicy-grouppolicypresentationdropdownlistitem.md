@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyPresentationDropdownListItem
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e9c321108826413ff275a42f18451b0ffccefbe
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 560d0aae4b61f9c5891a76f45834e5e07c97717c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388264"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030861"
 ---
 # <a name="grouppolicypresentationdropdownlistitem-resource-type"></a>tipo de recurso groupPolicyPresentationDropdownListItem
 
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Tipo de recurso targetedManagedAppProtection
 description: Política usada para definir configurações de gerenciamento detalhadas direcionadas a grupos de segurança específicos
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ff4983e4fd6a2c31cff77403ff94e407d45cad3
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 20c86498c8f4388e8ee9e518dfdb0e01705cfa79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793847"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030070"
 ---
 # <a name="targetedmanagedappprotection-resource-type"></a>Tipo de recurso targetedManagedAppProtection
 
@@ -25,7 +25,7 @@ Política usada para definir configurações de gerenciamento detalhadas direcio
 
 Herda de [managedAppProtection](../resources/intune-mam-managedappprotection.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar targetedManagedAppProtections](../api/intune-mam-targetedmanagedappprotection-list.md)|Coleção [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|Listar propriedades e relações dos objetos [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
@@ -35,11 +35,11 @@ Herda de [managedAppProtection](../resources/intune-mam-managedappprotection.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|displayName|String|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |description|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|String|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duração|Período após o qual o acesso é verificado quando o dispositivo não está conectado à Internet. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -79,7 +79,7 @@ Herda de [managedAppProtection](../resources/intune-mam-managedappprotection.md)
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Indica em quais navegadores gerenciados os links da Internet devem ser abertos. Quando essa propriedade é configurada, ManagedBrowserToOpenLinksRequired deve ser true. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `notConfigured` e `microsoftEdge`.|
 |maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Nível máximo de ameaça de dispositivo permitido, conforme relatado pelo aplicativo MTD herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `notConfigured`, `secured`, `low`, `medium`, `high`.|
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Determina a ação a ser tomada se o limite de ameaças de defesa contra ameaças móveis não for atingido. Warn não é um valor com suporte para essa propriedade herdada de [managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `block`, `wipe`, `warn`.|
-|blockDataIngestionIntoOrganizationDocuments|Boolean|Indica se um usuário pode trazer dados para documentos org. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|blockDataIngestionIntoOrganizationDocuments|Booliano|Indica se um usuário pode trazer dados para documentos org. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedDataIngestionLocations|coleção [managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md)|Locais de armazenamento de dados em que um usuário pode armazenar dados gerenciados. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Se definido, especificará a ação a ser tomada no caso em que o usuário não consegue fazer check-in porque o token de autenticação é inválido. Isso ocorre quando o usuário é excluído ou desabilitado no AAD. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|As classes de aplicativos de discagem que têm permissão para clicar para abrir um número de telefone. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `allApps`, `managedApps`, `customApp`, `blocked`.|
@@ -160,6 +160,9 @@ Veja a seguir uma representação JSON do recurso.
   "targetedAppManagementLevels": "String"
 }
 ```
+
+
+
 
 
 

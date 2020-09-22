@@ -3,14 +3,14 @@ title: Tipo de recurso windowsInformationProtectionStoreApp
 description: Aplicativo de loja para proteção de informações do Windows
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a159d3414ea3c2209cfb952d920ea27345a4c9c9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 107d65bd9b9ff0851b33744ef95a59c969540208
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419195"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029908"
 ---
 # <a name="windowsinformationprotectionstoreapp-resource-type"></a>Tipo de recurso windowsInformationProtectionStoreApp
 
@@ -28,7 +28,7 @@ Herdado de [windowsInformationProtectionApp](../resources/intune-mam-windowsinfo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição do aplicativo. Herdado de [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
+|displayName|String|Nome de exibição do aplicativo. Herdado de [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
 |description|String|A descrição do aplicativo. Herdado de [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
 |publisherName|String|O nome do fornecedor herdado de [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
 |productName|Cadeia de caracteres|O nome do produto. Herdado de [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
@@ -54,6 +54,9 @@ Veja a seguir uma representação JSON do recurso.
   "denied": true
 }
 ```
+
+
+
 
 
 

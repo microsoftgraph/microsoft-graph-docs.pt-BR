@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90a75aff2873f0c9af577a0ccfa093de39d522c7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1f516c1386d828412e71fa35668b4c86a496f6af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411419"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028802"
 ---
 # <a name="delete-user"></a>Excluir usuário
 
@@ -26,10 +26,10 @@ Uma das seguintes permissões é necessária para chamar esta API. Para saber ma
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)| _varia por contexto_|
-| &nbsp;&nbsp; Dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; Integração | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Solução de problemas | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;Dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;MAM | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;Integração | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;Solução de problemas | DeviceManagementManagedDevices.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -69,6 +69,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso embeddedSIMDeviceState
 description: Descreve o estado de implantação do código de ativação do SIM incorporado em relação a um dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b88fe5ada325e77b03bc83f2dcec5bb099c2f7d0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b32a2ffdb46dee11a3c0f7cdf37446ec6729979b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442783"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031449"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>tipo de recurso embeddedSIMDeviceState
 
@@ -69,6 +69,9 @@ Veja a seguir uma representação JSON do recurso.
   "stateDetails": "String"
 }
 ```
+
+
+
 
 
 

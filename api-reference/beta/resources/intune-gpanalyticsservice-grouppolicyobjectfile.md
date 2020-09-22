@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyObjectFile
 description: O arquivo de objeto da diretiva de grupo carregado por administrador.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f1778e05f9c6f28966a92c46094d8e773b9de48
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 648b655d4fad1bf8397246884a023749da04c63b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458459"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031169"
 ---
 # <a name="grouppolicyobjectfile-resource-type"></a>tipo de recurso groupPolicyObjectFile
 
@@ -63,6 +63,9 @@ Veja a seguir uma representação JSON do recurso.
   "content": "String"
 }
 ```
+
+
+
 
 
 

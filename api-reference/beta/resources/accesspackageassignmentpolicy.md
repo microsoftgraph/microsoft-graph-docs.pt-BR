@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 259a8fef5d8efaae126cd722695be404ca964149
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: ccf3e1bb94bb1f6186e39cdaa91fa2dbe3a4344d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757204"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031729"
 ---
 # <a name="accesspackageassignmentpolicy-resource-type"></a>tipo de recurso accessPackageAssignmentPolicy
 
@@ -37,13 +37,13 @@ Para atribuir um usuário a um pacote do Access, [crie um accessPackageAssignmen
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|accessPackageId|Cadeia de caracteres|ID do pacote de acesso.|
+|accessPackageId|String|ID do pacote de acesso.|
 |accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|Quem deve revisar e com que frequência as atribuições para o pacote de acesso desta política. Essa propriedade será nula se as revisões não forem necessárias.|
 |exextend|Booliano|Indica se um usuário pode estender a duração da atribuição de pacote de acesso após a aprovação.|
 |createdBy|String|Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |description|String|A descrição da política.|
-|displayName|Cadeia de caracteres|O nome de exibição da política.|
+|displayName|String|O nome de exibição da política.|
 |durationInDays|Int32|O número de dias em que as atribuições dessa política duram até que tenham expirado.|
 |expirationDateTime|DateTimeOffset|A data de validade das atribuições criadas nesta política. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
@@ -107,3 +107,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

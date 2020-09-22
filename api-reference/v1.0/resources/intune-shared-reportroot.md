@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ada932e70f024186d2ec52b6be54914eaeb50c02
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ac23723c826eaf28ac5145e79e92884b533296e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445671"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028382"
 ---
 # <a name="reportroot-resource-type"></a>Tipo de recurso reportRoot
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 O recurso que representa uma instância dos Relatórios de históricos.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter reportRoot](../api/intune-shared-reportroot-get.md)|[reportRoot](../resources/intune-shared-reportroot.md)|Ler propriedades e relações de objetos de [reportRoot](../resources/intune-shared-reportroot.md).|
@@ -71,6 +71,8 @@ Content-Type: application/json
 {
 }
 ```
+
+
 
 
 

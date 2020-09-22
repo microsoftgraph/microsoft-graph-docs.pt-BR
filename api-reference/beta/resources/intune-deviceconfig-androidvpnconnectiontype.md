@@ -3,14 +3,14 @@ title: tipo de enumeração androidVpnConnectionType
 description: Tipo de conexão VPN Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b522a356a13c44fc1205e03390a1c712e6b681b0
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 6343684a068d81486ebe8dcdca92e926762467a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122571"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031715"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>tipo de enumeração androidVpnConnectionType
 
@@ -32,6 +32,9 @@ Tipo de conexão VPN Android.
 |checkPointCapsuleVpn|4 |Verificar VPN de cápsula de ponto.|
 |Citrix|5 |Citrix|
 |microsoftTunnel|7 |Microsoft Tunnel.|
+
+
+
 
 
 

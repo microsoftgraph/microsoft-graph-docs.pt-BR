@@ -3,14 +3,14 @@ title: Get androidCompliancePolicy
 description: Ler propriedades e relações do objeto androidCompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b6a629469df7dd6187e7e9057dfe61948e8e062
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 70ef8216b6514080e6f1f81c71cb92e4f3654f6f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43352585"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028089"
 ---
 # <a name="get-androidcompliancepolicy"></a>Get androidCompliancePolicy
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1989
+Content-Length: 2031
 
 {
   "value": {
@@ -85,6 +85,7 @@ Content-Length: 1989
     "passwordRequired": true,
     "passwordMinimumLength": 5,
     "passwordRequiredType": "alphabetic",
+    "requiredPasswordComplexity": "low",
     "passwordMinutesOfInactivityBeforeLock": 5,
     "passwordExpirationDays": 6,
     "passwordPreviousPasswordBlockCount": 2,
@@ -119,6 +120,9 @@ Content-Length: 1989
   }
 }
 ```
+
+
+
 
 
 

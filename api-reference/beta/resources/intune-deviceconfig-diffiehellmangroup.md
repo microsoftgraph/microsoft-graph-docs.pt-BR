@@ -3,14 +3,14 @@ title: tipo de enumeração diffieHellmanGroup
 description: Valores de grupo Diffie Hellman para políticas VPN do Windows10 com o tipo de conexão IKEv2.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 094409798770855eea6831e74f31e1a3268ddf3e
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 5fd003fb2fa1945319fe082374777e470eba4d34
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793833"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031673"
 ---
 # <a name="diffiehellmangroup-enum-type"></a>tipo de enumeração diffieHellmanGroup
 
@@ -27,10 +27,13 @@ Valores de grupo Diffie Hellman para políticas VPN do Windows10 com o tipo de c
 |:---|:---|:---|
 |grupo1|,0|Grupo1|
 |group2|1 |Group2|
-|group14|duas|Group14|
-|ecp256|3D|ECP256|
+|group14|2 |Group14|
+|ecp256|3 |ECP256|
 |ecp384|4 |ECP384|
 |group24|5 |Group24|
+
+
+
 
 
 

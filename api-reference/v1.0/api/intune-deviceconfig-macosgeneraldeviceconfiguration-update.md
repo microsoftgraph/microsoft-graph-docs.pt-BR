@@ -3,14 +3,14 @@ title: Atualizar macOSGeneralDeviceConfiguration
 description: Atualiza as propriedades de um objeto macOSGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 304e3c46ee496e9745ada16907281ed935f42e37
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ca4940b96f45fdfd308c3babc0d6b372269ff133
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028886"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>Atualizar macOSGeneralDeviceConfiguration
 
@@ -55,12 +55,12 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [macOSGeneralDev
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |compliantAppsList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicativos em conformidade (lista de permissões ou lista de bloqueios, controladas por CompliantAppListType). Essa coleção pode conter um máximo de 10.000 elementos.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Lista que está em CompliantAppsList. Os valores possíveis são: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |emailInDomainSuffixes|String collection|Um endereço de email sem um sufixo que corresponde a qualquer uma dessas strings será considerado fora do domínio.|
-|passwordBlockSimple|Booliano|Bloquear senhas simples.|
+|passwordBlockSimple|Boolean|Bloquear senhas simples.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha.|
 |passwordMinimumCharacterSetCount|Int32|Número de conjuntos de caracteres que uma senha deve conter. Valores válidos de 0 a 4|
 |passwordMinimumLength|Int32|Comprimento mínimo das senhas.|
@@ -153,6 +153,9 @@ Content-Length: 1078
   "passwordRequired": true
 }
 ```
+
+
+
 
 
 

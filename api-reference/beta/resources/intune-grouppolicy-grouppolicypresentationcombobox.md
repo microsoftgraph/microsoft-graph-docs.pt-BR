@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyPresentationComboBox
 description: Representa um elemento comboBox do ADMX e um elemento de texto do ADMX.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28c34b544cf432b18ed45eb3f552b83f614c3844
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 03ed95d4efda4a3cfa76d1564f5c60abf5105ef4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030889"
 ---
 # <a name="grouppolicypresentationcombobox-resource-type"></a>tipo de recurso groupPolicyPresentationComboBox
 
@@ -42,7 +42,7 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|String|Cadeia de caracteres padrão localizada exibida na caixa de combinação. O valor padrão é vazio.|
 |enviou|Coleção String|Cadeias de caracteres localizadas listadas na lista suspensa da caixa de combinação. O valor padrão é vazio.|
-|obrigatório|Boolean|Especifica se um valor deve ser especificado para o parâmetro. O valor padrão é falso.|
+|obrigatório|Booliano|Especifica se um valor deve ser especificado para o parâmetro. O valor padrão é falso.|
 |maxLength|Int64|Um inteiro sem sinal que especifica o número máximo de caracteres de texto para o parâmetro. O valor padrão é 1023.|
 
 ## <a name="relationships"></a>Relações
@@ -72,6 +72,9 @@ Veja a seguir uma representação JSON do recurso.
   "maxLength": 1024
 }
 ```
+
+
+
 
 
 

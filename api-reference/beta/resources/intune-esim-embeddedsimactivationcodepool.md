@@ -3,14 +3,14 @@ title: tipo de recurso embeddedSIMActivationCodePool
 description: Um pool representa um grupo de códigos de ativação do SIM incorporados.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f2ea2c94e4a5b65443c14b03dfc9bdea0624e121
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8d9a1238a492851492bc1af9c74571ef5d905036
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442817"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031512"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>tipo de recurso embeddedSIMActivationCodePool
 
@@ -36,7 +36,7 @@ Um pool representa um grupo de códigos de ativação do SIM incorporados.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo do pool de códigos de ativação do SIM incorporado. Valor gerado pelo sistema atribuído quando criado.|
-|displayName|Cadeia de caracteres|O nome definido pelo administrador do pool de código de ativação do SIM incorporado.|
+|displayName|String|O nome definido pelo administrador do pool de código de ativação do SIM incorporado.|
 |createdDateTime|DateTimeOffset|A hora em que o pool de códigos de ativação do SIM incorporado foi criado. Lado do serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que o pool de código de ativação do SIM incorporado foi modificado pela última vez. Atualizado o lado do serviço.|
 |activationCodes|coleção [embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md)|Os códigos de ativação que pertencem a esse pool. Essa propriedade de navegação é usada para lançar códigos de ativação no Intune, mas não pode ser usado para ler códigos de ativação do Intune.|
@@ -74,6 +74,9 @@ Veja a seguir uma representação JSON do recurso.
   "activationCodeCount": 1024
 }
 ```
+
+
+
 
 
 

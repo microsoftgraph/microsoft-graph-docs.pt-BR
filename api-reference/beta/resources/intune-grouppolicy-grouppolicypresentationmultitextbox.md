@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyPresentationMultiTextBox
 description: Representa um elemento multitextbox de ADMX e um elemento de multitexto ADMX.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: acdf1168585136bb358594e4d3dd8c7d3f8df970
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 87e4cc56e83d40ea5d4de401c53105536a226db7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443823"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030833"
 ---
 # <a name="grouppolicypresentationmultitextbox-resource-type"></a>tipo de recurso groupPolicyPresentationMultiTextBox
 
@@ -40,7 +40,7 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 |rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|obrigatório|Boolean|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
+|obrigatório|Booliano|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
 |maxLength|Int64|Um inteiro sem sinal que especifica o número máximo de caracteres de texto. O valor padrão é 1023.|
 |maxStrings|Int64|Um inteiro sem sinal que especifica o número máximo de cadeias de caracteres. O valor padrão é 0.|
 
@@ -68,6 +68,9 @@ Veja a seguir uma representação JSON do recurso.
   "maxStrings": 1024
 }
 ```
+
+
+
 
 
 

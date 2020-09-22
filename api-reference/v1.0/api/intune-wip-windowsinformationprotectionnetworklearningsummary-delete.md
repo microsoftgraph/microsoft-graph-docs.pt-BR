@@ -3,14 +3,14 @@ title: Excluir windowsInformationProtectionNetworkLearningSummary
 description: Exclui windowsInformationProtectionNetworkLearningSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b34491e3c43128cf535124d8c3b2e0e83dab59b3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 44246b12e98a62931447efdcfc2a46dcf29a5e97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028634"
 ---
 # <a name="delete-windowsinformationprotectionnetworklearningsummary"></a>Excluir windowsInformationProtectionNetworkLearningSummary
 
@@ -63,6 +63,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

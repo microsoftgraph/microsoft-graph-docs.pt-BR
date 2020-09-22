@@ -3,14 +3,14 @@ title: Criar settingStateDeviceSummary
 description: Criar um novo objeto settingStateDeviceSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4931536e501e72b3ba21470130815d2ff017a77
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 23cd19b0435069e8167486a7e90eb96d489b3b30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387761"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028858"
 ---
 # <a name="create-settingstatedevicesummary"></a>Criar settingStateDeviceSummary
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar settingStateDevi
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|settingName|String|Nome da configuração|
+|settingName|Cadeia de caracteres|Nome da configuração|
 |instancePath|Cadeia de caracteres|Nome de InstancePath para a configuração|
 |unknownDeviceCount|Int32|Contagem desconhecida de dispositivos para a configuração|
 |notApplicableDeviceCount|Int32|Contagem não aplicável ao dispositivo para a configuração|
@@ -112,6 +112,9 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
+
+
+
 
 
 

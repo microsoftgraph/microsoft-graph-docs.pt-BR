@@ -3,14 +3,14 @@ title: tipo de enumeração deviceManagementApplicabilityRuleType
 description: Tipos de regra de aplicabilidade compatíveis para a configuração do dispositivo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 816b9feb63200a4fde8670b365bd816dd638ae52
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bfe9b84b584eab81318de57203b6b6c8ec8e9e21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469257"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031701"
 ---
 # <a name="devicemanagementapplicabilityruletype-enum-type"></a>tipo de enumeração deviceManagementApplicabilityRuleType
 
@@ -26,7 +26,10 @@ Tipos de regra de aplicabilidade compatíveis para a configuração do dispositi
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |ser|,0|Incluir|
-|impedir|1|Excluir|
+|impedir|1 |Excluir|
+
+
+
 
 
 

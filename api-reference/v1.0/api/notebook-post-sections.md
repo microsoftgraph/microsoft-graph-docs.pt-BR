@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 64b6a215ba389979141bb477ee7ebabd9b954990
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2a3e8ff5f7635729e7419959b410e39ab7539802
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511331"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028508"
 ---
 # <a name="create-section"></a>Criar seção
 
@@ -47,7 +47,7 @@ Dentro do mesmo nível de hierarquia, os nomes das seções devem ser exclusivos
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [onenoteSection](../resources/section.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [onenoteSection](../resources/section.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -127,3 +127,4 @@ Content-length: 272
   "suppressions": [
   ]
 }-->
+

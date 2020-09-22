@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 42c38793e3a8618d180dcf860bde0401397cacbd
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: e8603904e2a1cdb6315c1f7b5264e461cfdff09b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757234"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031785"
 ---
 # <a name="accesspackage-resource-type"></a>tipo de recurso accessPackage
 
@@ -39,15 +39,15 @@ Para atribuir um usuário a um pacote do Access, [crie um accessPackageAssignmen
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|catalogID|Cadeia de caracteres|ID do catálogo de pacotes do Access que faz referência a esse pacote de acesso. Somente leitura.|
-|createdBy|Cadeia de caracteres|O UPN do usuário ou a identidade do assunto que criou este recurso. Somente leitura.|
+|catalogID|String|ID do catálogo de pacotes do Access que faz referência a esse pacote de acesso. Somente leitura.|
+|createdBy|String|O UPN do usuário ou a identidade do assunto que criou este recurso. Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |description|String|A descrição do pacote do Access.|
-|displayName|Cadeia de caracteres|O nome de exibição do pacote do Access.|
+|displayName|String|O nome de exibição do pacote do Access.|
 |id|String| Somente leitura.|
 |isHidden|Booliano|Se o pacote de acesso está oculto do solicitante.|
 |isRoleScopesVisible|Booliano|Indica se os escopos de função estão visíveis.|
-|modifiedBy|Cadeia de caracteres|O UPN do usuário que modificou este recurso pela última vez. Somente leitura.|
+|modifiedBy|String|O UPN do usuário que modificou este recurso pela última vez. Somente leitura.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
@@ -96,3 +96,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

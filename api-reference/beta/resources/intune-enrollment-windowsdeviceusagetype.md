@@ -3,14 +3,14 @@ title: tipo de enumeração windowsDeviceUsageType
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f738b6d5ecee750b9877ebec8858d8b221134f51
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cd2dadf33a69948c813373e9865b20c66903af30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43358149"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031547"
 ---
 # <a name="windowsdeviceusagetype-enum-type"></a>tipo de enumeração windowsDeviceUsageType
 
@@ -26,7 +26,10 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Únicousuário|,0|Tipo de dispositivo de usuário único|
-|compartilhado|1|Tipo de dispositivo compartilhado|
+|compartilhado|1 |Tipo de dispositivo compartilhado|
+
+
+
 
 
 

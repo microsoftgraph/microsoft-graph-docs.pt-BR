@@ -3,14 +3,14 @@ title: Tipo de recurso windowsInformationProtectionResourceCollection
 description: Coleção de recursos da Proteção de Informações do Windows
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e5df360e80f2f5efd6d6e4390a1553fbaa4cffce
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 99f8eed566c9fc2744e72e2a854acd527ae673bd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419218"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029915"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>Tipo de recurso windowsInformationProtectionResourceCollection
 
@@ -47,6 +47,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

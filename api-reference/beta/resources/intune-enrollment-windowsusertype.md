@@ -3,14 +3,14 @@ title: tipo de enumeração windowsUserType
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b472f74ad1ea88398a19cda9101e93e4ec53cb66
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 674f37219a76be35c20547fa42655fe1fc1d4c23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43358113"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031533"
 ---
 # <a name="windowsusertype-enum-type"></a>tipo de enumeração windowsUserType
 
@@ -26,7 +26,10 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |administrador|,0|Ainda não documentado|
-|caracteres|1|Ainda não documentado|
+|caracteres|1 |Ainda não documentado|
+
+
+
 
 
 

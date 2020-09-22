@@ -3,14 +3,14 @@ title: tipo de enumeração managedAppPhoneNumberRedirectLevel
 description: As classes de aplicativos que têm permissão para clicar para abrir um número de telefone, para fazer chamadas telefônicas ou enviar mensagens de texto.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a291e7d9afc91aa93b3cfe5d5636383fcf2ace6
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 3ba720d9917c1d93e9ce06291adae727fc42281c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793868"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030308"
 ---
 # <a name="managedappphonenumberredirectlevel-enum-type"></a>tipo de enumeração managedAppPhoneNumberRedirectLevel
 
@@ -27,8 +27,11 @@ As classes de aplicativos que têm permissão para clicar para abrir um número 
 |:---|:---|:---|
 |todos os aplicativos|,0|O compartilhamento é permitido para todos os aplicativos.|
 |managedApps|1 |O compartilhamento é permitido para todos os aplicativos gerenciados.|
-|customApp|duas|O compartilhamento é permitido para um aplicativo personalizado.|
-|bloqueou|3D|O compartilhamento entre aplicativos é bloqueado.|
+|customApp|2 |O compartilhamento é permitido para um aplicativo personalizado.|
+|bloqueou|3 |O compartilhamento entre aplicativos é bloqueado.|
+
+
+
 
 
 

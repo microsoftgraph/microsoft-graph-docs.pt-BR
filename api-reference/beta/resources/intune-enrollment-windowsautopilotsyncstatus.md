@@ -3,14 +3,14 @@ title: tipo de enumeração windowsAutopilotSyncStatus
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2e6b54afcf76f861f64f50ffbdb33fbdff0e2608
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3a98de1a17a5d0928cb506bdc54a33ec4393b10a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43358199"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031561"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>tipo de enumeração windowsAutopilotSyncStatus
 
@@ -26,9 +26,12 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Status de sincronização desconhecido|
-|inProgress|1|Sincronização em andamento|
-|Completed|duas|Sincronização concluída.|
-|falhou|3D|Falha na sincronização.|
+|inProgress|1 |Sincronização em andamento|
+|Completed|2 |Sincronização concluída.|
+|falhou|3 |Falha na sincronização.|
+
+
+
 
 
 

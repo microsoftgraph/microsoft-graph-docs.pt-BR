@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyPresentationValueLongDecimal
 description: A entidade representa um valor Long não assinado de uma apresentação de caixa de texto decimal longa em uma definição de política.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb8a15c2980714c84e3a247488db01b459caba92
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e45fcafa0e6a8b4a12e93e4c50894b33e0273b91
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469641"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030728"
 ---
 # <a name="grouppolicypresentationvaluelongdecimal-resource-type"></a>tipo de recurso groupPolicyPresentationValueLongDecimal
 
@@ -65,6 +65,9 @@ Veja a seguir uma representação JSON do recurso.
   "value": 1024
 }
 ```
+
+
+
 
 
 

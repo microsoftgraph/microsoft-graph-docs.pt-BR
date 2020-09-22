@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyDefinitionValue
 description: A entidade de valor de definição armazena o valor de uma única definição de política de grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d5a9f193bd6ffa3a0089bf1df12362b166a27d41
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4b78d0689e76bd21c069914a705a05ccfe844e47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460668"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030980"
 ---
 # <a name="grouppolicydefinitionvalue-resource-type"></a>tipo de recurso groupPolicyDefinitionValue
 
@@ -64,6 +64,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

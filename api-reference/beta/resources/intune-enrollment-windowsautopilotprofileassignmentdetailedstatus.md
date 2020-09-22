@@ -3,14 +3,14 @@ title: tipo de enumeração windowsAutopilotProfileAssignmentDetailedStatus
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d681e18ba17e591e3c97833f540c322e6e37903e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3567bc5262bb30612c3b4b9389f28435c3d623d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43358598"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031589"
 ---
 # <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>tipo de enumeração windowsAutopilotProfileAssignmentDetailedStatus
 
@@ -25,11 +25,14 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Nenhum status detalhado de atribuição|
-|hardwareRequirementsNotMet|1|Os requisitos de hardware não são atendidos. Isso pode acontecer se um perfil autoimplantar do autoautoria for atribuído a um dispositivo sem o TPM 2,0.|
-|surfaceHubProfileNotSupported|duas|Isso pode acontecer quando um perfil do AutoPilot do SurfaceHub é atribuído a um dispositivo que não é SurfaceHub.|
-|holoLensProfileNotSupported|3D|Isso pode acontecer quando um perfil do AutoPilot do HoloLens é atribuído a um dispositivo que não é HoloLens.|
+|Nenhuma|,0|Nenhum status detalhado de atribuição|
+|hardwareRequirementsNotMet|1 |Os requisitos de hardware não são atendidos. Isso pode acontecer se um perfil autoimplantar do autoautoria for atribuído a um dispositivo sem o TPM 2,0.|
+|surfaceHubProfileNotSupported|2 |Isso pode acontecer quando um perfil do AutoPilot do SurfaceHub é atribuído a um dispositivo que não é SurfaceHub.|
+|holoLensProfileNotSupported|3 |Isso pode acontecer quando um perfil do AutoPilot do HoloLens é atribuído a um dispositivo que não é HoloLens.|
 |windowsPcProfileNotSupported|4 |Isso pode acontecer quando um perfil do AutoPilot do WindowsPc é atribuído a um dispositivo que não é WindowsPc.|
+
+
+
 
 
 

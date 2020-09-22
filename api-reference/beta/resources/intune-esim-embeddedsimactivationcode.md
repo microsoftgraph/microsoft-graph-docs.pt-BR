@@ -3,14 +3,14 @@ title: tipo de recurso embeddedSIMActivationCode
 description: O código de ativação do SIM incorporado, conforme fornecido pela operadora móvel.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28a2344c6e31e944074bc14a7c779a3f165e506a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ce61524e60e59d0fb0f8cdd1633e2c46d463c6e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469108"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031519"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>tipo de recurso embeddedSIMActivationCode
 
@@ -26,11 +26,11 @@ O código de ativação do SIM incorporado, conforme fornecido pela operadora m�
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |integratedCircuitCardIdentifier|String|O ICCID (identificador de cartão de circuito integrado) para este código de ativação do SIM incorporado, conforme fornecido pela operadora móvel.
-A entrada deve corresponder à seguinte expressão regular: ' ^\[0-9\]{19}\[0-9\]? $ '.|
+A entrada deve corresponder à seguinte expressão regular: ' ^ \[ 0-9 \] {19} \[ 0-9 \] ? $ '.|
 |matchingIdentifier|String|O MatchingIdentifier (matchid) conforme especificado na SGP de associação GSMA. 22 RSP Technical Specification seção 4,1.
-A entrada deve corresponder à seguinte expressão regular: ' ^\[a-zA-Z0-9\-\]* $ '.|
+A entrada deve corresponder à seguinte expressão regular: ' ^ \[ a-zA-Z0-9 \- \] * $ '.|
 |smdpPlusServerAddress|String|O nome de domínio totalmente qualificado do servidor SM-DP + conforme especificado na especificação técnica SPG da Associação GSM .22 RSP.
-A entrada deve corresponder à seguinte expressão regular: ' ^ (\[a-zA-Z0-9\]+ (-\[a-zA-Z0-9\]+) *\.) +\[a-zA-Z\]{2,}$ '.|
+A entrada deve corresponder à seguinte expressão regular: ' ^ ( \[ a-zA-Z0-9 \] + (- \[ a-zA-Z0-9 \] +) * \. ) + \[ a-zA-Z \] {2,} $ '.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -50,6 +50,9 @@ Veja a seguir uma representação JSON do recurso.
   "smdpPlusServerAddress": "String"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 7321e4394e5e2a87d4ff51f71bc1589b5e1688cb
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: ddf5ee29c01770d06c9725413f362bd0f0e18bee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125299"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029055"
 ---
 # <a name="programcontroltype-resource-type"></a>tipo de recurso programControlType
 
@@ -23,7 +23,7 @@ No recurso de revisões do Azure AD [Access](accessreviews-root.md) , o tipo de 
 Os objetos de tipo de controle do programa são gerados automaticamente quando o administrador global embuti o locatário para usar o recurso de revisões do Access.  Nenhum tipo de controle de programa adicional pode ser criado.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -78,3 +78,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: tipo de enumeração windowsInformationProtectionEnforcementLevel
 description: Valores possíveis para níveis de imposição de proteção WIP
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cf07d4023b979b213165b6665f6d8dc65d45b66d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 40a174554a4b431aa2cd7b1856dff4b595530dab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443694"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030007"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>tipo de enumeração windowsInformationProtectionEnforcementLevel
 
@@ -26,9 +26,12 @@ Valores possíveis para níveis de imposição de proteção WIP
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |noprotection|,0|Nenhuma imposição de proteção|
-|encryptAndAuditOnly|1|Somente criptografia e auditoria|
-|encryptAuditAndPrompt|duas|Criptografar, auditar e solicitar|
-|encryptAuditAndBlock|3D|Criptografar, auditar e bloquear|
+|encryptAndAuditOnly|1 |Somente criptografia e auditoria|
+|encryptAuditAndPrompt|2 |Criptografar, auditar e solicitar|
+|encryptAuditAndBlock|3 |Criptografar, auditar e bloquear|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementExchangeOnPremisesPolicy
 description: Entidade singleton que representa a política local do Exchange configurada para um locatário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4a4d633388ea8d59d5c22e54663c235201bdfece
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cfe9e677061303d1210c1e6be4f2ad76575a6973
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43418823"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029593"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>tipo de recurso deviceManagementExchangeOnPremisesPolicy
 
@@ -76,6 +76,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

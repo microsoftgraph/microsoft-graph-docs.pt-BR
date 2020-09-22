@@ -3,14 +3,14 @@ title: tipo de recurso deviceAndAppManagementData
 description: Dados exportados
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8868cd200f8048cee393531addd85dac654cab9e
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 5c87410700374ea8f15308a96c629b56657f20f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177685"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029761"
 ---
 # <a name="deviceandappmanagementdata-resource-type"></a>tipo de recurso deviceAndAppManagementData
 
@@ -43,6 +43,9 @@ Veja a seguir uma representação JSON do recurso.
   "content": "Stream"
 }
 ```
+
+
+
 
 
 

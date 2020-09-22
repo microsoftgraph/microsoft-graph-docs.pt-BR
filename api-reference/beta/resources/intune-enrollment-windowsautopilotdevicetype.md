@@ -3,14 +3,14 @@ title: tipo de enumeração windowsAutopilotDeviceType
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 35f67089cbbaa5397483f91d22b7f8ff067d8dd6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5dd474ada19c7dbbd2553c5976b7950b68e85434
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43358815"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031617"
 ---
 # <a name="windowsautopilotdevicetype-enum-type"></a>tipo de enumeração windowsAutopilotDeviceType
 
@@ -26,8 +26,11 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |windowsPc|,0|PC Windows|
-|surfaceHub2|1|Surface Hub 2|
-|holoLens|duas|HoloLens|
+|surfaceHub2|1 |Surface Hub 2|
+|holoLens|2 |HoloLens|
+
+
+
 
 
 

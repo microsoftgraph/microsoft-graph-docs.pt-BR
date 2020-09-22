@@ -3,14 +3,14 @@ title: tipo de recurso networkIPv4ConfigurationManagementCondition
 description: As condições de gerenciamento baseado em configuração IPv4 podem ser definidas que serão acionadas quando um dispositivo detectar determinadas configurações de rede IP. As condições de gerenciamento de configuração IP só serão consideradas TRUE quando a conexão de rede estiver ativa.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f33bccea9005431aeb36c43b4104e536d0b9b52
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a8841c77c97d4fbbcbd3e2ae3d20a93a40a34097
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463401"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031295"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>tipo de recurso networkIPv4ConfigurationManagementCondition
 
@@ -39,8 +39,8 @@ Herda de [networkManagementCondition](../resources/intune-fencing-networkmanagem
 |:---|:---|:---|
 |id|String|Identificador exclusivo da condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |uniqueName|String|Nome exclusivo para a condição de gerenciamento. Usado em expressões de condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|displayName|Cadeia de caracteres|O nome do administrador definido da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|description|Cadeia de caracteres|A descrição definida pelo administrador da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|displayName|String|O nome do administrador definido da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|description|String|A descrição definida pelo administrador da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|A hora em que a condição de gerenciamento foi criada. Lado do serviço gerado. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|A hora em que a condição de gerenciamento foi modificada pela última vez. Atualizado o lado do serviço. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|ETag da condição de gerenciamento. Atualizado o lado do serviço. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
@@ -48,8 +48,8 @@ Herda de [networkManagementCondition](../resources/intune-fencing-networkmanagem
 |ipV4Prefix|String|A sub-rede IPv4 à qual está conectada. por exemplo, 10.0.0.0/8|
 |ipV4Gateway|String|O endereço do gateway IPv4. por exemplo, 10.0.0.0|
 |ipV4DHCPServer|String|O endereço IPv4 do servidor DHCP para o adaptador.|
-|ipV4DNSServerList|Coleção de cadeias de caracteres|Os servidores DNS IPv4 configurados para o adaptador.|
-|dnsSuffixList|Coleção de cadeias de caracteres|Sufixos DNS válidos para a rede atual. por exemplo, seattle.contoso.com|
+|ipV4DNSServerList|Coleção String|Os servidores DNS IPv4 configurados para o adaptador.|
+|dnsSuffixList|Coleção String|Sufixos DNS válidos para a rede atual. por exemplo, seattle.contoso.com|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -88,6 +88,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

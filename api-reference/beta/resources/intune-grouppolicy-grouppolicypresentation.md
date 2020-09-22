@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyPresentation
 description: A entidade base para a apresentação de exibição de qualquer opção adicional em uma definição de política de grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db195263c806a2e48a72f9bd7c09d0d663be584d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 434cd86c69de1b3bec92521f134253a7d165ff36
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446924"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030945"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>tipo de recurso groupPolicyPresentation
 
@@ -56,6 +56,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

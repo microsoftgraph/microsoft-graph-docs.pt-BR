@@ -3,14 +3,14 @@ title: tipo de recurso managementConditionStatement
 description: Uma instrução de condição de gerenciamento é um grupo de condições de gerenciamento que Habilita/desabilita as configurações de dispositivo/aplicativo quando todas as condições de gerenciamento contidas são atendidas.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b5206d83b65b95726dbf6710673567e3a77e35a
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 5bf18a43c7e971b2e81915d4f5f917f2e99e41b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44175333"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031302"
 ---
 # <a name="managementconditionstatement-resource-type"></a>tipo de recurso managementConditionStatement
 
@@ -37,8 +37,8 @@ Uma instrução de condição de gerenciamento é um grupo de condições de ger
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo da instrução de condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
-|displayName|Cadeia de caracteres|O nome do administrador definido da instrução de condição de gerenciamento.|
-|description|Cadeia de caracteres|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
+|displayName|String|O nome do administrador definido da instrução de condição de gerenciamento.|
+|description|String|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
 |createdDateTime|DateTimeOffset|A hora em que a instrução de gerenciamento da condição foi criada. Lado do serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que a declaração de condição de gerenciamento foi modificada pela última vez. Atualizado o lado do serviço.|
 |expressão|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|A expressão de instrução de condição de gerenciamento usada para avaliar se uma instrução de condição de gerenciamento foi ativada/desativada.|
@@ -46,7 +46,7 @@ Uma instrução de condição de gerenciamento é um grupo de condições de ger
 |applicablePlatforms|coleção [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|As plataformas aplicáveis para essa instrução de condição de gerenciamento.
 Isso é calculado a partir da aparência das condições de gerenciamento associadas à instrução de condição de gerenciamento e à localização da interseção de plataformas aplicáveis.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |managementConditions|coleção [managementCondition](../resources/intune-fencing-managementcondition.md)|As condições de gerenciamento associadas à instrução de condição de gerenciamento.|
@@ -77,6 +77,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

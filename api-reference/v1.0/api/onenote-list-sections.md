@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: d65dffaa43de4909fc1e120f35ea71e890e54c8f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ceea6a0e1306e2f515e286a9fddc0004d5b39ca7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511303"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028473"
 ---
 # <a name="list-sections"></a>Listar seções
 
@@ -39,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 
 A ordem de classificação padrão é `name asc`.
 
-A consulta padrão expande `parentNotebook` e seleciona suas `id`propriedades `displayName`, e `self` . Os `expand` valores válidos para as `parentNotebook` seções `parentSectionGroup`são e.
+A consulta padrão expande `parentNotebook` e seleciona suas `id` `displayName` Propriedades, e `self` . `expand`Os valores válidos para as seções são `parentNotebook` e `parentSectionGroup` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [onenoteSection](../resources/section.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [onenoteSection](../resources/section.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -130,3 +130,4 @@ Content-length: 345
   "suppressions": [
   ]
 }-->
+

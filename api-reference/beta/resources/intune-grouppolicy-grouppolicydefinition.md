@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyDefinition
 description: A entidade descreve todas as informações sobre uma única diretiva de grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 05021b93dfae495941d13b3f18cb01d7e7c0a706
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a9ba5a4c415b0bc94b60479530ac6a7ca35f3c75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376992"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031008"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>tipo de recurso groupPolicyDefinition
 
@@ -32,7 +32,7 @@ A entidade descreve todas as informações sobre uma única diretiva de grupo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Identifica o tipo de grupo ao qual a política pode ser aplicada. Os valores possíveis são: `user` e `machine`.|
-|displayName|Cadeia de caracteres|O nome da política localizada.|
+|displayName|String|O nome da política localizada.|
 |Texto não criptografado|String|A explicação localizada ou o texto de ajuda associado à política. O valor padrão é vazio.|
 |categoryPath|String|O caminho de categoria completo localizado para a política.|
 |com suporte|String|Cadeia de caracteres localizada usada para especificar o sistema operacional ou a versão do aplicativo é afetada pela política.|
@@ -70,6 +70,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

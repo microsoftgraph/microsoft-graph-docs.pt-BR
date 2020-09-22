@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 03234624efc5dd2ada63fb7b7b54c2760190a03d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 612f81dd835a96fceeeb895c8170279341d89903
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511338"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028509"
 ---
 # <a name="create-sectiongroup"></a>Criar sectionGroup
 
@@ -128,3 +128,4 @@ Content-length: 305
   "suppressions": [
   ]
 }-->
+

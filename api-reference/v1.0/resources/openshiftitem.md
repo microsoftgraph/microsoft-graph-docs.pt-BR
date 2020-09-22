@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2fb690d06a2ca20fe8c4c50d41a06bc2d247ef1f
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: d3e68f5cb558b67f92ed4107e8fb947cb7c300ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154974"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028242"
 ---
 # <a name="openshiftitem-resource-type"></a>tipo de recurso openShiftItem
 
@@ -52,3 +52,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

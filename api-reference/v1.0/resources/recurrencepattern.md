@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: dd04999c43aa248bcad7439a0d1e940ebd749129
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 4fc40e2159ffe291c32a6a9711c40104194121db
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806804"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028227"
 ---
 # <a name="recurrencepattern-resource-type"></a>Tipo de recurso recurrencePattern
 
@@ -83,3 +83,4 @@ Veja a seguir uma representação JSON do recurso
   ],
   "tocPath": ""
 }-->
+

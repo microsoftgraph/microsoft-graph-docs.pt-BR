@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 47a2aa9eddc4e45d88c3768ded2b44e9d5952178
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: ad13d42eb5c4617292be449e1a517d376a3bf8a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154981"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028277"
 ---
 # <a name="openshiftchangerequest-resource-type"></a>tipo de recurso openShiftChangeRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa a solicitação para solicitar um [openShift](../resources/openshift.md) em um [cronograma](../resources/schedule.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -32,7 +32,7 @@ Representa a solicitação para solicitar um [openShift](../resources/openshift.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|openShiftId|Cadeia de caracteres| ID para o turno aberto.|
+|openShiftId|String| ID para o turno aberto.|
 
 ## <a name="relationships"></a>Relações
 
@@ -66,3 +66,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

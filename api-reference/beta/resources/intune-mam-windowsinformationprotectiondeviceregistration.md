@@ -3,14 +3,14 @@ title: tipo de recurso windowsInformationProtectionDeviceRegistration
 description: Representa os registros de registro de dispositivo para os dispositivos do Windows do BYOD (de acompanhamento de dispositivos).
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ce294e335d6cc397bb377f569d1bc77c7a6e923
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f537bcc9b8c4df8374750f5f3fe0567aa536815a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443713"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030021"
 ---
 # <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>tipo de recurso windowsInformationProtectionDeviceRegistration
 
@@ -37,7 +37,7 @@ Representa os registros de registro de dispositivo para os dispositivos do Windo
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |userId|Cadeia de caracteres|UserId associado a este registro de registro de dispositivo.|
-|deviceRegistrationId|String|Identificador de dispositivo para este registro de registro de dispositivo.|
+|deviceRegistrationId|Cadeia de caracteres|Identificador de dispositivo para este registro de registro de dispositivo.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceType|String|Tipo de dispositivo, por exemplo, Windows laptop VS Windows Phone.|
 |deviceMacAddress|String|Endereço MAC do dispositivo.|
@@ -66,6 +66,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

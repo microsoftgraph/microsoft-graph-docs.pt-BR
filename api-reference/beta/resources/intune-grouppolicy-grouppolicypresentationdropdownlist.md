@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyPresentationDropdownList
 description: Representa um elemento ADMX dropdownList e um elemento enum do ADMX.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01c11fd0d9c2df7a55e09a5fcf636c5311d7d70b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: aa06db24a12cc5869c1cd2ea53ca79487dbe4736
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443845"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030875"
 ---
 # <a name="grouppolicypresentationdropdownlist-resource-type"></a>tipo de recurso groupPolicyPresentationDropdownList
 
@@ -42,7 +42,7 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |DefaultItem|[groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|O valor da cadeia de caracteres localizada que identifica a opção padrão da lista de itens.|
 |items|coleção [groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|Representa um conjunto de nomes de exibição localizados e seus valores associados.|
-|obrigatório|Boolean|Requisito para inserir um valor na caixa parâmetro. O valor padrão é falso.|
+|obrigatório|Booliano|Requisito para inserir um valor na caixa parâmetro. O valor padrão é falso.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -78,6 +78,9 @@ Veja a seguir uma representação JSON do recurso.
   "required": true
 }
 ```
+
+
+
 
 
 

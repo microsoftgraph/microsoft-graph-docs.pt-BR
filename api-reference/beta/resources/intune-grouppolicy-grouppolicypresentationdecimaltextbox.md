@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyPresentationDecimalTextBox
 description: Representa um elemento ADMX decimalTextBox e um elemento de ADMX decimal.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f600a0fe80ddcf12e847e307845ba3679de287b2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d35706d0ace7a4639aa23879b3ff9e5a75df3c09
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446871"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030882"
 ---
 # <a name="grouppolicypresentationdecimaltextbox-resource-type"></a>tipo de recurso groupPolicyPresentationDecimalTextBox
 
@@ -41,9 +41,9 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 |id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Int64|Um inteiro sem sinal que especifica o valor inicial da caixa de texto decimal. O valor padrão é 1.|
-|rotação|Boolean|Se true, crie um controle de rotação; caso contrário, crie uma caixa de texto para entrada numérica. O valor padrão é true.|
+|rotação|Booliano|Se true, crie um controle de rotação; caso contrário, crie uma caixa de texto para entrada numérica. O valor padrão é true.|
 |spinStep|Int64|Um inteiro sem sinal que especifica o incremento de alteração para o controle de rotação. O valor padrão é 1.|
-|obrigatório|Boolean|Requisito para inserir um valor na caixa parâmetro. O valor padrão é falso.|
+|obrigatório|Booliano|Requisito para inserir um valor na caixa parâmetro. O valor padrão é falso.|
 |MaxValue|Int64|Um inteiro sem sinal que especifica o valor mínimo permitido. O valor padrão é 0.|
 |maxValue|Int64|Um inteiro sem sinal que especifica o valor máximo permitido. O valor padrão é 9999.|
 
@@ -74,6 +74,9 @@ Veja a seguir uma representação JSON do recurso.
   "maxValue": 1024
 }
 ```
+
+
+
 
 
 

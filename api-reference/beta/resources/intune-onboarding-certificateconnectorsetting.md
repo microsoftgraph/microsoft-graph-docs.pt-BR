@@ -3,14 +3,14 @@ title: tipo de recurso certificateConnectorSetting
 description: Configurações do conector de certificado.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 969edd445e293d7417f2bf08c7641844b1ddffff
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 29585af2586a849c5c75bbf04878d3aadcd8d710
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419042"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029789"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>tipo de recurso certificateConnectorSetting
 
@@ -53,6 +53,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastUploadVersion": 1024
 }
 ```
+
+
+
 
 
 

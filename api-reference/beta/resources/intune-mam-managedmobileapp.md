@@ -3,14 +3,14 @@ title: Tipo de recurso managedMobileApp
 description: O identificador da implantação de um aplicativo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 823f3e044d3235d018725a2e08230526b78f7ca9
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 6bd5e248efe96091570b648985a4552c0eb16041
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44174227"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030161"
 ---
 # <a name="managedmobileapp-resource-type"></a>Tipo de recurso managedMobileApp
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 O identificador da implantação de um aplicativo.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedMobileApps](../api/intune-mam-managedmobileapp-list.md)|Conjunto [managedMobileApp](../resources/intune-mam-managedmobileapp.md)|Listar propriedades e relações de objetos de [managedMobileApp](../resources/intune-mam-managedmobileapp.md).|
@@ -60,6 +60,9 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
+
+
+
 
 
 

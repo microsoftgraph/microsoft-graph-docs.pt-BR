@@ -3,14 +3,14 @@ title: tipo de enumeração windowsInformationProtectionPinCharacterRequirements
 description: Requisitos de caracteres de PIN
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 20911629712730377faabd329128c91ad3eaf5fd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fe0597032627efa488c1f7d89baee4285223f6b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453212"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029993"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>tipo de enumeração windowsInformationProtectionPinCharacterRequirements
 
@@ -26,8 +26,11 @@ Requisitos de caracteres de PIN
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Não permitir|,0|Não permitir|
-|requireAtLeastOne|1|Exigir pelo menos um|
-|permitiu|duas|Permitir qualquer número|
+|requireAtLeastOne|1 |Exigir pelo menos um|
+|permitiu|2 |Permitir qualquer número|
+
+
+
 
 
 

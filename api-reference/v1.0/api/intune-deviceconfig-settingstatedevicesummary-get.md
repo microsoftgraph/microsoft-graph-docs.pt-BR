@@ -3,14 +3,14 @@ title: Get settingStateDeviceSummary
 description: Ler propriedades e relações do objeto settingStateDeviceSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b091df446c167ea05a0958dfa04d57eac8baf3ee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 00723b40a0954e95144c30bd6d2bf52c1a1dd0c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387627"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028809"
 ---
 # <a name="get-settingstatedevicesummary"></a>Get settingStateDeviceSummary
 
@@ -85,6 +85,9 @@ Content-Length: 450
   }
 }
 ```
+
+
+
 
 
 

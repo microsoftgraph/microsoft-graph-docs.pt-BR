@@ -3,14 +3,14 @@ title: Excluir sharedPCConfiguration
 description: Exclui sharedPCConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc2318158c8adcede76262eb2b20459ab5f4643a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e37204ccbc7dab01a8d41e5dcd601e6918e2a861
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43342005"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028011"
 ---
 # <a name="delete-sharedpcconfiguration"></a>Excluir sharedPCConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

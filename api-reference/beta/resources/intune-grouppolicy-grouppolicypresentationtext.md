@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyPresentationText
 description: Representa um elemento de texto do ADMX.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8df0774abd90986f86ab870d40d0fec94ebd554
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e6eda46ad829cf011dc33f4c6a0ee76b33442038
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443816"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030819"
 ---
 # <a name="grouppolicypresentationtext-resource-type"></a>tipo de recurso groupPolicyPresentationText
 
@@ -62,6 +62,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

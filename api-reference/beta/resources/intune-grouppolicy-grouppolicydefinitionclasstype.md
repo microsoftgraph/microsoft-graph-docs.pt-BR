@@ -3,14 +3,14 @@ title: tipo de enumeração groupPolicyDefinitionClassType
 description: Tipo de classe de definição de política de grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 870ca9ca3f668698a10ac2adad6ab7f7181b270a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cdeabd86b216581575eb0ea72a155157abffa844
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376971"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031015"
 ---
 # <a name="grouppolicydefinitionclasstype-enum-type"></a>tipo de enumeração groupPolicyDefinitionClassType
 
@@ -26,7 +26,10 @@ Tipo de classe de definição de política de grupo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |user|,0|Identifica o posicionamento da configuração de política no nó Configuração do usuário.|
-|máquina|1|Identifica o posicionamento da configuração de política no nó Configuração do computador.|
+|máquina|1 |Identifica o posicionamento da configuração de política no nó Configuração do computador.|
+
+
+
 
 
 

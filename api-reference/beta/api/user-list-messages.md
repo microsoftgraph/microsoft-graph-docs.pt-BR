@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: e83eea71f205727b25f2e6a7dbdf0d8c4a651151
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cb9dc81ea7a0f0e4607ac7844a0e1c52aae5f9e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440609"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031890"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -96,7 +96,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Message](../resources/message.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Message](../resources/message.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1
@@ -421,3 +421,5 @@ Content-length: 2704
   ]
 }
 -->
+
+

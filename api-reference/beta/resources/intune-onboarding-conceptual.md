@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 4daf91153afd8d31551882d529f9741e6e55a6f3
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 59cde8330cfa1fb59cad49a8b17ea204e8077d40
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177398"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029768"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para o gerenciamento no Intune
 
@@ -61,3 +61,5 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar registros no I
 - [Status de sincronização do token VPP](intune-onboarding-vpptokensyncstatus.md)
 - [Configuração da página de conclusão do registro do Windows 10](intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
 - [Uso do PIN do Windows Hello para empresas](intune-onboarding-windowshelloforbusinesspinusage.md)
+
+

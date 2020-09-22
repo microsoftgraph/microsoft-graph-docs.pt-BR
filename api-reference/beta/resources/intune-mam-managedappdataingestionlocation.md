@@ -3,14 +3,14 @@ title: tipo de enumeração managedAppDataIngestionLocation
 description: Locais que podem ser usados para trazer dados para documentos de organização
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b13277e37234e0913b546257ad989491a69ece00
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9e3882ee4470a79c988f0f8e02855bee039fcfff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43373196"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030413"
 ---
 # <a name="managedappdataingestionlocation-enum-type"></a>tipo de enumeração managedAppDataIngestionLocation
 
@@ -25,9 +25,12 @@ Locais que podem ser usados para trazer dados para documentos de organização
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|oneDriveForBusiness|1|OneDrive for business|
-|Do|duas|SharePoint Online|
-|Câmara|3D|A câmera do dispositivo|
+|oneDriveForBusiness|1 |OneDrive for business|
+|Do|2 |SharePoint Online|
+|Câmara|3 |A câmera do dispositivo|
+
+
+
 
 
 

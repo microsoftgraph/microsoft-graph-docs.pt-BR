@@ -3,14 +3,14 @@ title: tipo de enumeração groupPolicySettingScope
 description: Escopo da configuração da política de grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 76327b8326f7d037619a5c566c776a964651a979
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 311bb3db6a1a2b97e493582359882d6641cbea54
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473626"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031162"
 ---
 # <a name="grouppolicysettingscope-enum-type"></a>tipo de enumeração groupPolicySettingScope
 
@@ -26,8 +26,11 @@ Escopo da configuração da política de grupo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Escopo de dispositivo desconhecido|
-|device|1|Escopo do dispositivo|
-|user|duas|Escopo de usuário|
+|device|1 |Escopo do dispositivo|
+|user|2 |Escopo de usuário|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicySettingMapping
 description: A configuração da política de grupo para o mapeamento MDM/Intune.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d237484a36a12169a030d780db9431f9267d3582
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 68dc7f09470a972087c84c180df796aa650ec91c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458444"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031155"
 ---
 # <a name="grouppolicysettingmapping-resource-type"></a>tipo de recurso groupPolicySettingMapping
 
@@ -49,11 +49,12 @@ A configuração da política de grupo para o mapeamento MDM/Intune.
 |mdmSettingUri|String|O URI de CSP do MDM para o qual essa configuração de política de grupo é mapeada.|
 |mdmMinimumOSVersion|Int32|A versão mínima do sistema operacional para a qual esta configuração MDM oferece suporte.|
 |SettingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|O tipo de configuração (segurança ou ADMX) da política de grupo. Os valores possíveis são: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
-|isMdmSupported|Boolean|Indica se a configuração é suportada pelo Intune ou não|
+|isMdmSupported|Booliano|Indica se a configuração é suportada pelo Intune ou não|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Indica se a configuração é suportada no MDM ou não. Os valores possíveis são: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|O escopo da configuração. Os valores possíveis são: `unknown`, `device`, `user`.|
 |intuneSettingUriList|Coleção String|A lista de URIs de configuração do Intune que esta configuração de política de grupo mapeia para|
 |intuneSettingDefinitionId|String|A ID da definição da configuração do Intune|
+|admxSettingDefinitionId|String|ID da política de grupo ADMX|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -92,9 +93,13 @@ Veja a seguir uma representação JSON do recurso.
   "intuneSettingUriList": [
     "String"
   ],
-  "intuneSettingDefinitionId": "String"
+  "intuneSettingDefinitionId": "String",
+  "admxSettingDefinitionId": "String"
 }
 ```
+
+
+
 
 
 

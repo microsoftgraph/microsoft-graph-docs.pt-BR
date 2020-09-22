@@ -3,14 +3,14 @@ title: Tipo de recurso windowsInformationProtectionPolicy
 description: Política para proteção de informações do Windows sem MDM
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 175fc323350782d270c305a29c5121461f5f0d37
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 329a86ba277eb2602fb0ad6298d22bd3a18b3545
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178805"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029929"
 ---
 # <a name="windowsinformationprotectionpolicy-resource-type"></a>Tipo de recurso windowsInformationProtectionPolicy
 
@@ -37,11 +37,11 @@ Herda de [windowsInformationProtection](../resources/intune-mam-windowsinformati
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|displayName|String|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |description|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|String|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|Nível de imposição WIP. Confira a definição de enumeração para valores suportados herdados de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md). Os valores possíveis são: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
@@ -51,7 +51,7 @@ Herda de [windowsInformationProtection](../resources/intune-mam-windowsinformati
 |dataRecoveryCertificate|[windowsInformationProtectionDataRecoveryCertificate](../resources/intune-mam-windowsinformationprotectiondatarecoverycertificate.md)|Especifica um certificado de recuperação que pode ser usado para recuperação de dados de arquivos criptografados. Isso é o mesmo que o certificado do Agente de recuperação de dados (DRA) para sistema de arquivos com criptografia (EFS) Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 |revokeOnUnenrollDisabled|Boolean|Essa política controla se as teclas WIP serão revogadas quando for cancelado o registro de um dispositivo no serviço de gerenciamento. Se definido como 1 (não revogar teclas), as teclas não serão revogadas e o usuário continuará a ter acesso a arquivos protegidos após o cancelamento de registro. Se as teclas não forem revogadas, não haverá limpeza de arquivos revogados posteriormente. Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 |rightsManagementServicesTemplateId|Guid|GUID de TemplateID para uso em criptografia RMS. O modelo do RMS permite ao administrador de TI configurar os detalhes sobre quem tem acesso a arquivos protegidos por RMS e por quanto tempo tem esse acesso Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
-|azureRightsManagementServicesAllowed|Booliano|Especifica se a criptografia do Azure RMS para WIP será permitida Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
+|azureRightsManagementServicesAllowed|Boolean|Especifica se a criptografia do Azure RMS para WIP será permitida Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 |iconsVisible|Boolean|Determina se sobreposições são adicionadas a ícones em arquivos protegido por WIP no Explorador e em blocos de aplicativos somente para empresas no menu Iniciar. A partir do Windows 10, versão 1703, essa configuração também define a visibilidade do ícone WIP na barra de título de um aplicativo protegido por WIP Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 |protectedApps|Coleção [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|Os aplicativos protegidos podem acessar dados corporativos e os dados manipulados por esses aplicativos são protegidos com criptografia Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 |exemptApps|Coleção [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|Os aplicativos isentos também podem acessar dados corporativos, mas os dados manipulados por esses aplicativos não são protegidos. Isso ocorre porque alguns aplicativos corporativos essenciais podem ter problemas de compatibilidade com dados criptografados. Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
@@ -65,21 +65,21 @@ Herda de [windowsInformationProtection](../resources/intune-mam-windowsinformati
 |neutralDomainResources|Coleção [windowsInformationProtectionResourceCollection](../resources/intune-mam-windowsinformationprotectionresourcecollection.md)|Lista de nomes de domínio que podem ser usados para recurso de trabalho ou pessoal Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 |indexingEncryptedStoresOrItemsBlocked|Boolean|Esta opção é para o indexador do Windows Search para permitir ou não a indexação de itens Herdado do [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 |smbAutoEncryptedFileExtensions|Coleção [windowsInformationProtectionResourceCollection](../resources/intune-mam-windowsinformationprotectionresourcecollection.md)|Especifica uma lista de extensões de arquivo para que os arquivos com essas extensões sejam criptografados quando copiados de um compartilhamento SMB dentro do limite corporativo Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
-|isAssigned|Booliano|Indica se a política foi implantada a grupos de inclusão ou não. Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
+|isAssigned|Boolean|Indica se a política foi implantada a grupos de inclusão ou não. Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
 |revokeOnMdmHandoffDisabled|Boolean|Nova propriedade em RS2, documentação pendente|
 |mdmEnrollmentUrl|String|Url do registro do MDM|
 |windowsHelloForBusinessBlocked|Boolean|Valor booliano que define o Windows Hello para Empresas como um método para entrar no Windows.|
 |pinMinimumLength|Int32|Valor inteiro que define o número mínimo de caracteres necessários para o PIN. O valor padrão é 4. O menor número que é possível definir para essa configuração de política é 4. O maior número que é possível definir deve ser menor que o número configurado na política de comprimento máximo do PIN ou menor que 127, seja qual for o menor.|
 |pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Valor inteiro que configura o uso de letras maiúsculas no PIN do Windows Hello para Empresas. O padrão é NotAllow. Os valores possíveis são: `notAllow`, `requireAtLeastOne`, `allow`.|
 |pinLowercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Valor inteiro que configura o uso de letras minúsculas no PIN do Windows Hello para Empresas. O padrão é NotAllow. Os valores possíveis são: `notAllow`, `requireAtLeastOne`, `allow`.|
-|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Valor inteiro que configura o uso de caracteres especiais no PIN do Windows Hello para Empresas. Os caracteres especiais válidos para o PIN do Windows Hello para Empresas incluem: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \]^ _ ` { | } ~. Default is NotAllow. Possible values are: `permitir`, `requireAtLeastOne`, `permitido '.|
+|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Valor inteiro que configura o uso de caracteres especiais no PIN do Windows Hello para Empresas. Os caracteres especiais válidos para o PIN do Windows Hello para Empresas incluem: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \] ^ _ permitir ` { | } ~. Default is NotAllow. Possible values are: ` `, ` requireAtLeastOne `, ` permitido '.|
 |pinExpirationDays|Int32|O valor inteiro especifica o período de tempo (em dias) em que um PIN pode ser usado antes que o sistema exija que o usuário o altere. O maior número que é possível definir para essa configuração de política é 730. O menor número que é possível definir para essa configuração de política é 0. Se essa política for definida como 0, o PIN do usuário nunca irá expirar. Este nó foi adicionado no Windows 10, versão 1511. O padrão é 0.|
 |numberOfPastPinsRemembered|Int32|O valor inteiro que especifica o número de PINs anteriores que podem ser associados a uma conta de usuário que não podem ser reutilizados. O maior número que é possível definir para essa configuração de política é 50. O menor número que é possível definir para essa configuração de política é 0. Se essa política for definida como 0, o armazenamento de PINs anteriores não será necessário. Este nó foi adicionado no Windows 10, versão 1511. O padrão é 0.|
 |passwordMaximumAttemptCount|Int32|O número de falhas de autenticação permitido antes que o dispositivo seja apagado. O valor 0 desabilita a funcionalidade de apagamento do dispositivo. O intervalo é um inteiro X, em que 4 <= X <= 16 para desktop e 0 <= X <= 999 para dispositivos móveis.|
 |minutesOfInactivityBeforeDeviceLock|Int32|Especifica a quantidade máxima de tempo (em minutos) permitida após o dispositivo ficar ocioso antes que ele seja bloqueado por PIN ou senha.   O intervalo é um inteiro X, em que 0 <= X <= 999.|
 |daysWithoutContactBeforeUnenroll|Int32|Intervalo offline antes do apagamento dos dados do aplicativo (dias) |
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |protectedAppLockerFiles|Coleção [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md)|Outra maneira de inserir aplicativos protegidos por meio de arquivos xml Herdado de [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)|
@@ -236,6 +236,9 @@ Veja a seguir uma representação JSON do recurso.
   "daysWithoutContactBeforeUnenroll": 1024
 }
 ```
+
+
+
 
 
 

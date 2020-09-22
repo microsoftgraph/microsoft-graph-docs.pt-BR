@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyPresentationCheckBox
 description: Representa um elemento checkBox ADMX e um elemento Boolean do ADMX.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 38469d39a90a4e6dbb9035b11603a296780ab5e3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5c9f9a844c4694323a581fd42f708bc4a6419f5e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446901"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030896"
 ---
 # <a name="grouppolicypresentationcheckbox-resource-type"></a>tipo de recurso groupPolicyPresentationCheckBox
 
@@ -40,7 +40,7 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 |rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultChecked|Boolean|Valor padrão da caixa de seleção. O valor padrão é falso.|
+|defaultChecked|Booliano|Valor padrão da caixa de seleção. O valor padrão é falso.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -64,6 +64,9 @@ Veja a seguir uma representação JSON do recurso.
   "defaultChecked": true
 }
 ```
+
+
+
 
 
 

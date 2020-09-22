@@ -3,14 +3,14 @@ title: tipo de enumeração managedAppClipboardSharingLevel
 description: Representa o nível ao qual a área de transferência do dispositivo pode ser compartilhada entre aplicativos
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f854a18bfcfac3f937c976180bbc4a423abbae0d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c219f9a6235bff7c406294630faa1d1bc50ec7ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43374034"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030455"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>tipo de enumeração managedAppClipboardSharingLevel
 
@@ -26,9 +26,12 @@ Representa o nível ao qual a área de transferência do dispositivo pode ser co
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |todos os aplicativos|,0|O compartilhamento é permitido entre todos os aplicativos, gerenciados ou não|
-|managedAppsWithPasteIn|1|O compartilhamento é permitido entre todos os aplicativos gerenciados com colar ativado|
-|managedApps|duas|O compartilhamento é permitido entre todos os aplicativos gerenciados|
-|bloqueou|3D|O compartilhamento entre aplicativos está desabilitado|
+|managedAppsWithPasteIn|1 |O compartilhamento é permitido entre todos os aplicativos gerenciados com colar ativado|
+|managedApps|2 |O compartilhamento é permitido entre todos os aplicativos gerenciados|
+|bloqueou|3 |O compartilhamento entre aplicativos está desabilitado|
+
+
+
 
 
 

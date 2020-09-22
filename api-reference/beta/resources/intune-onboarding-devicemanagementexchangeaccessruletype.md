@@ -3,14 +3,14 @@ title: tipo de enumeração deviceManagementExchangeAccessRuleType
 description: Critérios que definem o tipo de dispositivo para o qual esta regra de acesso será aplicada
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3cf82f0ad99dd56194d32f0d902925cb617d50a0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b08d6ed9d135e6374200e70c8d27da84ca112b22
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459809"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029642"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>tipo de enumeração deviceManagementExchangeAccessRuleType
 
@@ -26,7 +26,10 @@ Critérios que definem o tipo de dispositivo para o qual esta regra de acesso se
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |produtos|,0|Família de dispositivos|
-|modelo|1|Modelo específico do dispositivo|
+|modelo|1 |Modelo específico do dispositivo|
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
 author: ailae
-ms.openlocfilehash: f9d9900aecb7226ed33c5e0cf51c7ccfaf3d2e8d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3ebff1e816ee04a9bd6ffdbc0188cbb0b8015895
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809317"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029054"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Usar a API do Microsoft Graph para trabalhar com o Project Roma
 
@@ -59,3 +59,4 @@ Você pode usar as seguintes APIs do Microsoft Graph para se comunicar com outro
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
+

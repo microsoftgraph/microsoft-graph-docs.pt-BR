@@ -3,14 +3,14 @@ title: Atualizar enrollmentTroubleshootingEvent
 description: Atualiza as propriedades de um objeto enrollmentTroubleshootingEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b152b7db0888b6f98a3c76727f8e69f251625598
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 08ba36bedae02a7b2749601c69412aaf9a5eb450
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451751"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028732"
 ---
 # <a name="update-enrollmenttroubleshootingevent"></a>Atualizar enrollmentTroubleshootingEvent
 
@@ -53,12 +53,12 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [enrollmentTroub
 |:---|:---|:---|
 |id|String|UUID do objeto, herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu. Herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|correlationId|String|ID usada para rastrear a falha no serviço. Herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|managedDeviceIdentifier|String|Identificador de dispositivo criado ou coletado pelo Intune.|
-|operatingSystem|String|Sistema operacional.|
-|osVersion|String|Versão do sistema operacional.|
+|correlationId|Cadeia de caracteres|ID usada para rastrear a falha no serviço. Herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|managedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo criado ou coletado pelo Intune.|
+|operatingSystem|Cadeia de caracteres|Sistema operacional.|
+|osVersion|Cadeia de caracteres|Versão do sistema operacional.|
 |userId|Cadeia de caracteres|Identificador do usuário que tentou registrar o dispositivo.|
-|deviceId|String|Identificador do dispositivo Azure AD.|
+|deviceId|Cadeia de caracteres|Identificador do dispositivo Azure AD.|
 |enrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Tipo do registro. Os valores possíveis são: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |failureCategory|[deviceEnrollmentFailureReason](../resources/intune-troubleshooting-deviceenrollmentfailurereason.md)|Categoria de falha de alto nível. Os valores possíveis são: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected`, `userAbandonment`.|
 |failureReason|Cadeia de caracteres|Motivo detalhado da falha.|
@@ -114,6 +114,9 @@ Content-Length: 558
   "failureReason": "Failure Reason value"
 }
 ```
+
+
+
 
 
 

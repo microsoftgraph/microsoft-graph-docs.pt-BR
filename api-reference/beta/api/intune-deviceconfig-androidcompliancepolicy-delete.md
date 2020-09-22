@@ -3,14 +3,14 @@ title: Excluir androidCompliancePolicy
 description: Exclui androidCompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1692590716f8d79ec15d21f67e9e20c2865b5990
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 51a974a605c50b3c42695a479d5c05aad5ae6d9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43352658"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028102"
 ---
 # <a name="delete-androidcompliancepolicy"></a>Excluir androidCompliancePolicy
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

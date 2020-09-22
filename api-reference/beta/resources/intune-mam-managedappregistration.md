@@ -3,14 +3,14 @@ title: Tipo de recurso managedAppRegistration
 description: O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos. O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e97a238c758f4fdc3130c2527f82ce4445980fc
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 3c2ea9eaf64a4d198ca37fa7c485ee6817c9d749
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178217"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030196"
 ---
 # <a name="managedappregistration-resource-type"></a>Tipo de recurso managedAppRegistration
 
@@ -35,26 +35,26 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Data e hora de criação|
 |lastSyncDateTime|DateTimeOffset|Data e hora em que o último aplicativo foi sincronizado com o serviço de gerenciamento.|
-|applicationVersion|Cadeia de Caracteres|Versão do Aplicativo|
-|managementSdkVersion|Cadeia de Caracteres|Versão do SDK de gerenciamento do aplicativo|
-|platformVersion|Cadeia de Caracteres|Versão do sistema operacional|
-|deviceType|Cadeia de Caracteres|Tipo de dispositivo do host|
+|applicationVersion|Cadeia de caracteres|Versão do Aplicativo|
+|managementSdkVersion|Cadeia de caracteres|Versão do SDK de gerenciamento do aplicativo|
+|platformVersion|Cadeia de caracteres|Versão do sistema operacional|
+|deviceType|Cadeia de caracteres|Tipo de dispositivo do host|
 |deviceTag|String|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo do host|
-|managedDeviceId|Cadeia de Caracteres|O identificador de dispositivo gerenciado do dispositivo host. O valor pode ser vazio mesmo quando o dispositivo host é gerenciado.|
-|azureADDeviceId|Cadeia de Caracteres|O identificador de dispositivo do Azure Active Directory do dispositivo host. O valor pode ser vazio mesmo quando o dispositivo host é registrado no Azure Active Directory.|
-|deviceModel|Cadeia de Caracteres|O modelo de dispositivo para o registro de aplicativo atual |
-|deviceManufacturer|Cadeia de Caracteres|O fabricante do dispositivo para o registro de aplicativo atual |
+|managedDeviceId|String|O identificador de dispositivo gerenciado do dispositivo host. O valor pode ser vazio mesmo quando o dispositivo host é gerenciado.|
+|azureADDeviceId|String|O identificador de dispositivo do Azure Active Directory do dispositivo host. O valor pode ser vazio mesmo quando o dispositivo host é registrado no Azure Active Directory.|
+|deviceModel|Cadeia de caracteres|O modelo de dispositivo para o registro de aplicativo atual |
+|deviceManufacturer|String|O fabricante do dispositivo para o registro de aplicativo atual |
 |flaggedReasons|coleção [managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo usado em dispositivo modificado|
 |userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador do pacote do aplicativo|
 |id|String|Chave da entidade.|
-|versão|Cadeia de Caracteres|Versão da entidade.|
+|versão|String|Versão da entidade.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|appliedPolicies|Conjunto [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Zero ou mais políticas já aplicadas no aplicativo registrado quando este foi sincronizado pela última vez com o serviço de gerenciamento.|
+|appliedPolicies|Coleção [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Zero ou mais políticas já aplicadas no aplicativo registrado quando este foi sincronizado pela última vez com o serviço de gerenciamento.|
 |intendedPolicies|Coleção [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Zero ou mais administradores de políticas destinados ao aplicativo a partir de agora.|
 |operations|Coleção [managedAppOperation](../resources/intune-mam-managedappoperation.md)|Zero ou mais operações de longa execução desencadeadas no registro do aplicativo.|
 
@@ -93,6 +93,9 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
+
+
+
 
 
 

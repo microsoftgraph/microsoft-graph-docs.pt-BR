@@ -3,14 +3,14 @@ title: tipo de recurso groupPolicyCategory
 description: A entidade de categoria armazena a categoria de uma definição de política de grupo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b81a102bd5864d4f11f787e15bb2d709f0203cf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fc4eed4c7450c8e6803d4cd064a26c7b4919ea95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43377188"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031092"
 ---
 # <a name="grouppolicycategory-resource-type"></a>tipo de recurso groupPolicyCategory
 
@@ -31,8 +31,8 @@ A entidade de categoria armazena a categoria de uma definição de política de 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|A ID da cadeia de caracteres do nome de exibição da categoria|
-|IsRoot|Boolean|Define se a categoria é uma categoria raiz|
+|displayName|String|A ID da cadeia de caracteres do nome de exibição da categoria|
+|IsRoot|Booliano|Define se a categoria é uma categoria raiz|
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
@@ -61,6 +61,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 
