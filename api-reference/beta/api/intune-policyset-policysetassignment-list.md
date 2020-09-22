@@ -3,14 +3,14 @@ title: Listar policySetAssignments
 description: Listar Propriedades e relações dos objetos policySetAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6cdee9ce5f29527ad7ebae846d3a6ef30871caa
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 13e8407e639a5901e8b91910492380f17a0bf9d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791697"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032037"
 ---
 # <a name="list-policysetassignments"></a>Listar policySetAssignments
 
@@ -82,6 +82,9 @@ Content-Length: 492
   ]
 }
 ```
+
+
+
 
 
 

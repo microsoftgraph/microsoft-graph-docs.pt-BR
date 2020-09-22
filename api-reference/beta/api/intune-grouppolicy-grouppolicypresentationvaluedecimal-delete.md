@@ -3,14 +3,14 @@ title: Excluir groupPolicyPresentationValueDecimal
 description: Exclui groupPolicyPresentationValueDecimal.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8a2a8ab1c1dfbb4e5da5e9d244f3eb06e6891e6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f5e32c006dac0eed526daa876ef351fe807476d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460383"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032219"
 ---
 # <a name="delete-grouppolicypresentationvaluedecimal"></a>Excluir groupPolicyPresentationValueDecimal
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

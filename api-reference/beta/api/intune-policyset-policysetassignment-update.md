@@ -3,14 +3,14 @@ title: Atualizar policySetAssignment
 description: Atualiza as propriedades de um objeto policySetAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f8cf4be10c9f80c776d0670abda12677fb97e17
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 995334df6d502d65a2982b568bbfa6773850d076
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791690"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032009"
 ---
 # <a name="update-policysetassignment"></a>Atualizar policySetAssignment
 
@@ -99,6 +99,9 @@ Content-Length: 427
   }
 }
 ```
+
+
+
 
 
 

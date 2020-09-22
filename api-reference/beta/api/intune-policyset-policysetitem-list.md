@@ -3,14 +3,14 @@ title: Listar policySetItems
 description: Listar Propriedades e relações dos objetos policySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 213e078a9c1b7289863ba24aba429466fc062d9e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5f3f131175dcc3081778b278b959f9f2b8104f8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465402"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032002"
 ---
 # <a name="list-policysetitems"></a>Listar policySetItems
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [policySetItem](../resources/intune-policyset-policysetitem.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [policySetItem](../resources/intune-policyset-policysetitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,6 +86,9 @@ Content-Length: 548
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Criar groupPolicyPresentationValueDecimal
 description: Criar um novo objeto groupPolicyPresentationValueDecimal.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a494b9f45a33d8fd8ad8207c6c798ad0bea5fd03
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0c04ed053d2061691a9ce310b90241f221b837e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456564"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032233"
 ---
 # <a name="create-grouppolicypresentationvaluedecimal"></a>Criar groupPolicyPresentationValueDecimal
 
@@ -61,7 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [groupPolicyPresentationValueDecimal](../resources/intune-grouppolicy-grouppolicypresentationvaluedecimal.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [groupPolicyPresentationValueDecimal](../resources/intune-grouppolicy-grouppolicypresentationvaluedecimal.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -93,6 +93,9 @@ Content-Length: 264
   "value": 5
 }
 ```
+
+
+
 
 
 

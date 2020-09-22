@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 8f1edef15b236bff614077cdddbb66603a6f3fc0
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: a0bf66038c571b45baf894fe5a10fe2760f00ca9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842971"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032401"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -257,6 +257,28 @@ A permissão _Application.ReadWrite.OwnedBy_ admite as mesmas operações que _A
 * _Application.ReadWrite.OwnedBy_: Listar todos os aplicativos pertencentes ao aplicativo da chamada (`GET /beta/servicePrincipals/{id}/ownedObjects`)
 * _Application.ReadWrite.OwnedBy_: adicionar outro proprietário a um aplicativo próprio (`POST /applications/{id}/owners/$ref`).
 > OBSERVAÇÃO: isso pode exigir permissões adicionais.
+
+---
+
+## <a name="bitlocker-recovery-key-permissions"></a>Permissões da chave de recuperação do BitLocker
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _BitlockerKey.ReadBasic.All_ | Ler as informações básicas das chaves do BitLocker | Permite que um aplicativo leia as propriedades da chave do BitLocker para todos os dispositivos no locatário. A chave de recuperação não será retornada. | Sim | Não |
+| _BitlockerKey.Read.All_ | Ler a chave do BitLocker | Permite que um aplicativo leia as chaves do BitLocker para todos os dispositivos no locatário. A chave de recuperação será retornada. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+Nenhuma.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado
+
+* _BitlockerKey.ReadBasic.All_: Listar as chaves de recuperação do BitLocker para todos os dispositivos no locatário sem retornar a propriedade 'key' (`GET /bitlocker/recoveryKeys`).
+* _BitlockerKey.Read.All_: Obter uma chave de recuperação do BitLocker com a chave de recuperação (`GET /bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}?$select=key`)
 
 ---
 

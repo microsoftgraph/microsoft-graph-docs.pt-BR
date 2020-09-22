@@ -3,14 +3,14 @@ title: Atualizar groupPolicyPresentationText
 description: Atualiza as propriedades de um objeto groupPolicyPresentationText.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f372e457dd2b546da8bb785f2585fa8041add0a7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d62b962d17f904394d8fb8135f78332c1303ba01
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408561"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032240"
 ---
 # <a name="update-grouppolicypresentationtext"></a>Atualizar groupPolicyPresentationText
 
@@ -61,7 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -92,6 +92,9 @@ Content-Length: 209
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

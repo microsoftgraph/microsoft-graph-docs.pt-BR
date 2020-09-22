@@ -3,14 +3,14 @@ title: Ação windowsPrivacyAccessControls
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 34550ca3f75113cca2d6386dc121aa0deae700a4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2a12adb55eda8f2ec67ec0086016fbb5a7da163e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43390508"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031967"
 ---
 # <a name="windowsprivacyaccesscontrols-action"></a>Ação windowsPrivacyAccessControls
 
@@ -93,6 +93,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 
