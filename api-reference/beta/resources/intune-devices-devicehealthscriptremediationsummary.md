@@ -3,14 +3,14 @@ title: tipo de recurso deviceHealthScriptRemediationSummary
 description: O número de scripts de integridade do dispositivo implantados e o número de dispositivos nos quais os scripts foram corrigidos.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5ca477131c3051161b17ed3f3e90aaf172662dfc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 06e48973305dbbdf7ae276e4d14d3307da74c36e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388444"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060284"
 ---
 # <a name="devicehealthscriptremediationsummary-resource-type"></a>tipo de recurso deviceHealthScriptRemediationSummary
 
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "remediatedDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

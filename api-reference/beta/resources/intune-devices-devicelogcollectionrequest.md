@@ -3,14 +3,14 @@ title: tipo de recurso deviceLogCollectionRequest
 description: Entidade de solicitação de conjunto de logs do Windows.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7a7095a667ccbc3fb534a632665ef9694b89e380
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: f6da733d7ba4ff8de8a4110473006806ed0d08de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124154"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060178"
 ---
 # <a name="devicelogcollectionrequest-resource-type"></a>tipo de recurso deviceLogCollectionRequest
 
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "templateType": "String"
 }
 ```
+
+
+
 
 
 

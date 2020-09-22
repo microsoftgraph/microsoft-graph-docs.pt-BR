@@ -3,14 +3,14 @@ title: tipo de recurso deviceComplianceScript
 description: O Intune fornecerá ao cliente a capacidade de executar os scripts de conformidade do PowerShell (detecção) nos dispositivos associados do Windows 10 Azure Active Directory inscrito.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aba8998ff1615741e481924a6602dc10f0171371
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: a2cfc613966a412aac2f756c79fe9cdddfa74a9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44789309"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060549"
 ---
 # <a name="devicecompliancescript-resource-type"></a>tipo de recurso deviceComplianceScript
 
@@ -22,20 +22,20 @@ Namespace: microsoft.graph
 
 O Intune fornecerá ao cliente a capacidade de executar os scripts de conformidade do PowerShell (detecção) nos dispositivos associados do Windows 10 Azure Active Directory inscrito.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceComplianceScripts](../api/intune-devices-devicecompliancescript-list.md)|coleção [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md)|Listar Propriedades e relações dos objetos [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) .|
 |[Obter deviceComplianceScript](../api/intune-devices-devicecompliancescript-get.md)|[deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md)|Leia as propriedades e as relações do objeto [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) .|
 |[Criar deviceComplianceScript](../api/intune-devices-devicecompliancescript-create.md)|[deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md)|Criar um novo objeto [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) .|
-|[Excluir deviceComplianceScript](../api/intune-devices-devicecompliancescript-delete.md)|Nenhuma|Exclui [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md).|
+|[Excluir deviceComplianceScript](../api/intune-devices-devicecompliancescript-delete.md)|Nenhum|Exclui [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md).|
 |[Atualizar deviceComplianceScript](../api/intune-devices-devicecompliancescript-update.md)|[deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md)|Atualiza as propriedades de um objeto [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) .|
 |[atribuir ação](../api/intune-devices-devicecompliancescript-assign.md)|Nenhuma|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do script de conformidade do dispositivo|
+|id|Cadeia de caracteres|Identificador exclusivo do script de conformidade do dispositivo|
 |publicador|String|Nome do editor de scripts de conformidade de dispositivos|
 |versão|String|Versão do script de conformidade do dispositivo|
 |displayName|Cadeia de caracteres|Nome do script de conformidade do dispositivo|
@@ -44,8 +44,8 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts de conformida
 |createdDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de conformidade do dispositivo foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de conformidade do dispositivo foi modificado. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Boolean|Indicar se a assinatura do script precisa ser verificada|
-|runAs32Bit|Boolean|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
+|enforceSignatureCheck|Booliano|Indicar se a assinatura do script precisa ser verificada|
+|runAs32Bit|Booliano|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para o script de conformidade do dispositivo|
 
 ## <a name="relationships"></a>Relações
@@ -82,6 +82,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

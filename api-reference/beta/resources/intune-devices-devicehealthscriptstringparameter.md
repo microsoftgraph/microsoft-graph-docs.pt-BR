@@ -3,14 +3,14 @@ title: tipo de recurso deviceHealthScriptStringParameter
 description: Propriedades do parâmetro de script de cadeia de caracteres.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b4eaf19d891b9b2f37c5b1a2661080cabf5a569
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 60562ff6908d96f5694f5182b66d61fba16f21e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176102"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060199"
 ---
 # <a name="devicehealthscriptstringparameter-resource-type"></a>tipo de recurso deviceHealthScriptStringParameter
 
@@ -31,8 +31,8 @@ Herda de [deviceHealthScriptParameter](../resources/intune-devices-devicehealths
 |name|Cadeia de caracteres|O nome do parâmetro herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |description|String|A descrição do parâmetro herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |isRequired|Booliano|Se o parâmetro obrigatório é herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|applyDefaultValueWhenNotAssigned|Boolean|Se aplica DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|defaultValue|Cadeia de Caracteres|O valor padrão do parâmetro String|
+|applyDefaultValueWhenNotAssigned|Booliano|Se aplica DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|defaultValue|Cadeia de caracteres|O valor padrão do parâmetro String|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -54,6 +54,9 @@ Veja a seguir uma representação JSON do recurso.
   "defaultValue": "String"
 }
 ```
+
+
+
 
 
 

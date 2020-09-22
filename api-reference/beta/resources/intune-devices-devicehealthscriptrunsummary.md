@@ -3,14 +3,14 @@ title: tipo de recurso deviceHealthScriptRunSummary
 description: Contém propriedades para o resumo de execução de um script de gerenciamento de dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd5a96191780b113fea84ea6534e5a47ad8890c9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9697ff4bf2813d720e066f652302b9622fa206eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060220"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>tipo de recurso deviceHealthScriptRunSummary
 
@@ -31,7 +31,7 @@ Contém propriedades para o resumo de execução de um script de gerenciamento d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de Resumo de execução de script de integridade do dispositivo. Essa propriedade é somente leitura.|
+|id|Cadeia de caracteres|Chave da entidade de Resumo de execução de script de integridade do dispositivo. Essa propriedade é somente leitura.|
 |noIssueDetectedDeviceCount|Int32|Número de dispositivos para os quais o script de detecção não encontrou um problema e o dispositivo está íntegro|
 |issueDetectedDeviceCount|Int32|Número de dispositivos para os quais o script de detecção encontrou um problema|
 |detectionScriptErrorDeviceCount|Int32|Número de dispositivos nos quais a execução do script de detecção encontrou um erro e não foi concluída|
@@ -70,6 +70,9 @@ Veja a seguir uma representação JSON do recurso.
   "issueRemediatedCumulativeDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

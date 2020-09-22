@@ -3,14 +3,14 @@ title: tipo de enumeração windowsAutopilotDeploymentState
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c99a728f9ae55ce0998053d1c80ad23af36b8a23
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8ebbea1c270b1cdb8681204ace863d9fac1fd3eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388077"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060045"
 ---
 # <a name="windowsautopilotdeploymentstate-enum-type"></a>tipo de enumeração windowsAutopilotDeploymentState
 
@@ -26,10 +26,13 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Ainda não documentado|
-|sucesso|1|Ainda não documentado|
-|inProgress|duas|Ainda não documentado|
-|alguma|3D|Ainda não documentado|
+|sucesso|1 |Ainda não documentado|
+|inProgress|2 |Ainda não documentado|
+|alguma|3 |Ainda não documentado|
 |successWithTimeout|4 |Ainda não documentado|
+
+
+
 
 
 

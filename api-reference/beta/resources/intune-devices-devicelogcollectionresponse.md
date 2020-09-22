@@ -3,14 +3,14 @@ title: tipo de recurso deviceLogCollectionResponse
 description: Entidade de solicitação de conjunto de logs do Windows.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c3a7725f0f02c0ba2b8588c57179fa80316c595
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 3a4316655cc7ca10205165bac1b96579eb135713
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792972"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060157"
 ---
 # <a name="devicelogcollectionresponse-resource-type"></a>tipo de recurso deviceLogCollectionResponse
 
@@ -35,13 +35,13 @@ Entidade de solicitação de conjunto de logs do Windows.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo no formato de tenantId_deviceId_requestId|
+|id|Cadeia de caracteres|O identificador exclusivo no formato de tenantId_deviceId_requestId|
 |status|String|O status da solicitação de coleção de logs|
 |managedDeviceId|Guid|A ID do dispositivo|
 |errorCode|Int64|O código de erro, se houver. Valores válidos-9.22337203685478 E + 18 para 9.22337203685478 E + 18|
 |requestedDateTimeUTC|DateTimeOffset|O DateTime da solicitação|
 |receivedDateTimeUTC|DateTimeOffset|O DateTime que a solicitação foi recebida|
-|initiatedByUserPrincipalName|String|O UPN para quem iniciou a solicitação|
+|initiatedByUserPrincipalName|Cadeia de caracteres|O UPN para quem iniciou a solicitação|
 |expirationDateTimeUTC|DateTimeOffset|O DateTime do vencimento dos logs|
 |size|Duplo|O tamanho dos logs. Valores válidos-1.79769313486232 E + 308 a 1.79769313486232 E + 308|
 
@@ -70,6 +70,9 @@ Veja a seguir uma representação JSON do recurso.
   "size": "4.2"
 }
 ```
+
+
+
 
 
 

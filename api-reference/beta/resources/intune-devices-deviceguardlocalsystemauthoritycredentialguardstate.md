@@ -3,14 +3,14 @@ title: tipo de enumeração deviceGuardLocalSystemAuthorityCredentialGuardState
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4cb1811a636c25c8109c0e314c339e277aae9996
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 238626a12b1b763d7921d8a2a1938570fb47f1b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43362454"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060465"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a>tipo de enumeração deviceGuardLocalSystemAuthorityCredentialGuardState
 
@@ -26,10 +26,13 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |com|,0|Em execução|
-|rebootRequired|1|Reinicialização necessária|
-|Não licenciado|duas|Não licenciado para o Credential Guard|
-|notConfigured|3D|Não configurado|
+|rebootRequired|1 |Reinicialização necessária|
+|Não licenciado|2 |Não licenciado para o Credential Guard|
+|notConfigured|3 |Não configurado|
 |virtualizationBasedSecurityNotRunning|4 |A segurança baseada em virtualização não está em execução|
+
+
+
 
 
 

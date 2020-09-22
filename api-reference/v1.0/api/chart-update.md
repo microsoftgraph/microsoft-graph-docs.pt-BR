@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 49637b68c60415a8b4ef95a2df47a61f54fbf425
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8636c09c12b0c505dd4b71f104fa6e2b8711ddee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518529"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059954"
 ---
 # <a name="update-chart"></a>Atualizar gráfico
 
@@ -42,10 +42,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|height|double|Representa a altura, em pontos, do objeto Chart.|
-|left|double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
+|height|Double|Representa a altura, em pontos, do objeto Chart.|
+|left|Double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
 |nome|string|Representa o nome de um objeto Chart.|
-|top|duplo|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
+|top|Double|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
 |width|Double|Representa a largura, em pontos, do objeto de gráfico.|
 
 ## <a name="response"></a>Resposta
@@ -118,3 +118,4 @@ Content-length: 52
   "suppressions": [
   ]
 }-->
+

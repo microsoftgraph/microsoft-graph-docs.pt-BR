@@ -3,14 +3,14 @@ title: tipo de recurso deviceHealthScriptRemediationHistoryData
 description: O número de dispositivos corrigidos por um script de integridade do dispositivo em uma determinada data.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e038295204a71d61366f0f39dfeb13050432aab
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 7095dc821ccfaada8d1f83047895f54d823e1958
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178539"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060283"
 ---
 # <a name="devicehealthscriptremediationhistorydata-resource-type"></a>tipo de recurso deviceHealthScriptRemediationHistoryData
 
@@ -47,6 +47,9 @@ Veja a seguir uma representação JSON do recurso.
   "noIssueDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

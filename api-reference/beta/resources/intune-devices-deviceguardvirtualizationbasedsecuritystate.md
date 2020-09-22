@@ -3,14 +3,14 @@ title: tipo de enumeração deviceGuardVirtualizationBasedSecurityState
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 01b8c11e12e1a219db8d64dd9f1734b7227df6bd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2b2a5b3ee6f89ec8ab039b669ce99747e96a3799
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43362404"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060458"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>tipo de enumeração deviceGuardVirtualizationBasedSecurityState
 
@@ -26,12 +26,15 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |com|,0|Em execução|
-|rebootRequired|1|Raiz necessária|
-|require64BitArchitecture|duas|é necessária a arquitetura de bits de 64|
-|Não licenciado|3D|Não licenciado|
+|rebootRequired|1 |Raiz necessária|
+|require64BitArchitecture|2 |é necessária a arquitetura de bits de 64|
+|Não licenciado|3 |Não licenciado|
 |notConfigured|4 |Não configurado|
 |doesNotMeetHardwareRequirements|5 |O sistema não atende aos requisitos de hardware|
 |outro|42|Outro. Os logs de eventos no Microsoft-Windows-DeviceGuard têm mais detalhes.|
+
+
+
 
 
 

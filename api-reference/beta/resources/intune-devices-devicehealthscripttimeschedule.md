@@ -3,14 +3,14 @@ title: tipo de recurso deviceHealthScriptTimeSchedule
 description: Tipo base de agendamento do tempo de script de integridade do dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 75767d71b56b848cc045c08544b0633633eb73ac
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 6152b9b2c0c6e5d7a3cb6928f4047f9f68c912b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176096"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060192"
 ---
 # <a name="devicehealthscripttimeschedule-resource-type"></a>tipo de recurso deviceHealthScriptTimeSchedule
 
@@ -29,7 +29,7 @@ Herda de [deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealt
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |interval|Int32|O valor x de cada x horas para agendamento por hora, a cada x dias para agenda diária, a cada x semanas para agenda semanal, a cada x meses para agenda mensal. Valores válidos de 1 a 23 herdados de [deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|
-|useUtc|Boolean|Indique se a hora é UTC ou horário local do cliente.|
+|useUtc|Booliano|Indique se a hora é UTC ou horário local do cliente.|
 |time|TimeOfDay|Em que tempo o script está agendado para ser executado. Essa coleção pode conter um máximo de 20 elementos.|
 
 ## <a name="relationships"></a>Relações
@@ -50,6 +50,9 @@ Veja a seguir uma representação JSON do recurso.
   "time": "String (time of day)"
 }
 ```
+
+
+
 
 
 

@@ -6,16 +6,16 @@ title: SharedDriveItem
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: f310d35c6126573f022a13934faf911de1122606
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a2e1252437608d474e92346ed0aaba4a3a50053d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520728"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060024"
 ---
 # <a name="shareddriveitem-resource-type"></a>Tipo de recurso SharedDriveItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,8 +54,8 @@ O recurso **sharedDriveItem** é derivado de [**baseItem**](baseitem.md) e herda
 
 | Propriedade | Tipo                          | Descrição                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | String                        | O identificador exclusivo do compartilhamento que está sendo acessado.              |
-| nome     | String                        | O nome de exibição do item compartilhado.                             |
+| id       | Cadeia de caracteres                        | O identificador exclusivo do compartilhamento que está sendo acessado.              |
+| name     | Cadeia de caracteres                        | O nome de exibição do item compartilhado.                             |
 | owner    | [IdentitySet](identityset.md) | Informações sobre o proprietário do item compartilhado que está sendo referenciado. |
 
 ## <a name="relationships"></a>Relações
@@ -63,10 +63,10 @@ O recurso **sharedDriveItem** é derivado de [**baseItem**](baseitem.md) e herda
 | Nome da relação | Tipo                | Descrição
 | ------------------|:--------------------|:-----------------------------------
 | **driveItem**     | [**driveItem**][driveItem] | Usado para acessar o **driveItem** subjacente
-| **list**          | [**lista**][list]           | Usado para acessar a **lista** subjacente
+| **list**          | [**list**][list]           | Usado para acessar a **lista** subjacente
 | **listItem**      | [**listItem**][listItem]   | Usado para acessar o **listItem** subjacente
 | **permissão**    | [**autorização**][permission] | Usado para acessar a **permissão** que representa o link de compartilhamento subjacente
-| **site**          | [**no**][site]           | Usado para acessar o **site** subjacente
+| **site**          | [**site**][site]           | Usado para acessar o **site** subjacente
 
 Como alternativa, para **driveItems** compartilhados de contas pessoais do OneDrive, as relações a seguir também podem ser usadas.
 
@@ -101,3 +101,5 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "suppressions": []
 }
 -->
+
+
