@@ -5,54 +5,54 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 55eec32cbcc0b11b0d543dca577887068e116d92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7def920fb54a4d319ec70b5636d66cb351af6b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452782"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074094"
 ---
-# <a name="table-reapplyfilters"></a><span data-ttu-id="80e11-103">Table: reapplyFilters</span><span class="sxs-lookup"><span data-stu-id="80e11-103">Table: reapplyFilters</span></span>
+# <a name="table-reapplyfilters"></a><span data-ttu-id="e0e91-103">Table: reapplyFilters</span><span class="sxs-lookup"><span data-stu-id="e0e91-103">Table: reapplyFilters</span></span>
 
-<span data-ttu-id="80e11-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="80e11-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e0e91-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e0e91-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="80e11-105">Aplica novamente todos os filtros à tabela.</span><span class="sxs-lookup"><span data-stu-id="80e11-105">Reapplies all the filters currently on the table.</span></span>
-## <a name="permissions"></a><span data-ttu-id="80e11-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="80e11-106">Permissions</span></span>
-<span data-ttu-id="80e11-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="80e11-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e0e91-105">Aplica novamente todos os filtros à tabela.</span><span class="sxs-lookup"><span data-stu-id="e0e91-105">Reapplies all the filters currently on the table.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e0e91-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="e0e91-106">Permissions</span></span>
+<span data-ttu-id="e0e91-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e0e91-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="80e11-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="80e11-109">Permission type</span></span>      | <span data-ttu-id="80e11-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="80e11-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e0e91-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e0e91-109">Permission type</span></span>      | <span data-ttu-id="e0e91-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e0e91-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="80e11-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="80e11-111">Delegated (work or school account)</span></span> | <span data-ttu-id="80e11-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="80e11-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="80e11-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="80e11-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="80e11-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="80e11-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="80e11-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="80e11-115">Application</span></span> | <span data-ttu-id="80e11-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="80e11-116">Not supported.</span></span> |
+|<span data-ttu-id="e0e91-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e0e91-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e0e91-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e0e91-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e0e91-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e0e91-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e0e91-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e0e91-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e0e91-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e0e91-115">Application</span></span> | <span data-ttu-id="e0e91-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e0e91-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="80e11-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="80e11-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e0e91-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e0e91-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/reapplyFilters
 POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="80e11-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="80e11-118">Request headers</span></span>
-| <span data-ttu-id="80e11-119">Nome</span><span class="sxs-lookup"><span data-stu-id="80e11-119">Name</span></span>       | <span data-ttu-id="80e11-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="80e11-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e0e91-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e0e91-118">Request headers</span></span>
+| <span data-ttu-id="e0e91-119">Nome</span><span class="sxs-lookup"><span data-stu-id="e0e91-119">Name</span></span>       | <span data-ttu-id="e0e91-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="e0e91-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="80e11-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="80e11-121">Authorization</span></span>  | <span data-ttu-id="80e11-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="80e11-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="80e11-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="80e11-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="80e11-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="80e11-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="e0e91-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="e0e91-121">Authorization</span></span>  | <span data-ttu-id="e0e91-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e0e91-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e0e91-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e0e91-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="e0e91-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="e0e91-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="80e11-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="80e11-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e0e91-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e0e91-127">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="80e11-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="80e11-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e0e91-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="e0e91-128">Response</span></span>
 
-<span data-ttu-id="80e11-p104">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="80e11-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="e0e91-p104">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e0e91-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="80e11-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="80e11-131">Example</span></span>
-<span data-ttu-id="80e11-132">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="80e11-132">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="80e11-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="80e11-133">Request</span></span>
-<span data-ttu-id="80e11-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="80e11-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e0e91-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e0e91-131">Example</span></span>
+<span data-ttu-id="e0e91-132">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="e0e91-132">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="e0e91-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e0e91-133">Request</span></span>
+<span data-ttu-id="e0e91-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e0e91-134">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="80e11-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="80e11-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e0e91-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="e0e91-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "table_reapplyfilters"
@@ -60,23 +60,23 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/reapplyFilters
 ```
-# <a name="c"></a>[<span data-ttu-id="80e11-136">C#</span><span class="sxs-lookup"><span data-stu-id="80e11-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e0e91-136">C#</span><span class="sxs-lookup"><span data-stu-id="e0e91-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/table-reapplyfilters-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="80e11-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="80e11-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e0e91-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e0e91-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/table-reapplyfilters-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="80e11-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="80e11-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e0e91-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e0e91-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/table-reapplyfilters-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="80e11-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="80e11-139">Response</span></span>
-<span data-ttu-id="80e11-140">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="80e11-140">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="e0e91-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="e0e91-139">Response</span></span>
+<span data-ttu-id="e0e91-140">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e0e91-140">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,3 +99,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

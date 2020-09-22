@@ -5,31 +5,31 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: d86c8f1a4d9760c8effe41defbb6d3cdb828f192
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 002eb0ce4433e36b53b5e844ea857812022e653c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991786"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073660"
 ---
-# <a name="localeinfo-resource-type"></a><span data-ttu-id="88680-103">Tipo de recurso localeInfo</span><span class="sxs-lookup"><span data-stu-id="88680-103">localeInfo resource type</span></span>
+# <a name="localeinfo-resource-type"></a><span data-ttu-id="ca611-103">Tipo de recurso localeInfo</span><span class="sxs-lookup"><span data-stu-id="ca611-103">localeInfo resource type</span></span>
 
-<span data-ttu-id="88680-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="88680-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ca611-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ca611-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="88680-105">Informações sobre a localidade, incluindo o idioma preferencial e o país/região do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="88680-105">Information about the locale, including the preferred language and country/region, of the signed-in user.</span></span>
+<span data-ttu-id="ca611-105">Informações sobre a localidade, incluindo o idioma preferencial e o país/região do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="ca611-105">Information about the locale, including the preferred language and country/region, of the signed-in user.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="88680-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="88680-106">Properties</span></span>
-| <span data-ttu-id="88680-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="88680-107">Property</span></span>     | <span data-ttu-id="88680-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="88680-108">Type</span></span>   |<span data-ttu-id="88680-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="88680-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ca611-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ca611-106">Properties</span></span>
+| <span data-ttu-id="ca611-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ca611-107">Property</span></span>     | <span data-ttu-id="ca611-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="ca611-108">Type</span></span>   |<span data-ttu-id="ca611-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="ca611-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="88680-110">localidade</span><span class="sxs-lookup"><span data-stu-id="88680-110">locale</span></span>|<span data-ttu-id="88680-111">string</span><span class="sxs-lookup"><span data-stu-id="88680-111">string</span></span>|<span data-ttu-id="88680-p101">Uma representação da localidade do usuário, que inclui o idioma preferencial do usuário e o país/região. Por exemplo, "pt-br". O componente do idioma segue um padrão de código de duas letras, conforme definido na [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), e o componente do país segue um padrão de código de duas letras, conforme definido na [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span><span class="sxs-lookup"><span data-stu-id="88680-p101">A locale representation for the user, which includes the user's preferred language and country/region. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span></span>|
-|<span data-ttu-id="88680-115">displayName</span><span class="sxs-lookup"><span data-stu-id="88680-115">displayName</span></span>|<span data-ttu-id="88680-116">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="88680-116">string</span></span>|<span data-ttu-id="88680-117">Um nome que representa a localidade do usuário em seu idioma natural, por exemplo, "Português (Brasil)".</span><span class="sxs-lookup"><span data-stu-id="88680-117">A name representing the user's locale in natural language, for example, "English (United States)".</span></span>|
+|<span data-ttu-id="ca611-110">localidade</span><span class="sxs-lookup"><span data-stu-id="ca611-110">locale</span></span>|<span data-ttu-id="ca611-111">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ca611-111">string</span></span>|<span data-ttu-id="ca611-p101">Uma representação da localidade do usuário, que inclui o idioma preferencial do usuário e o país/região. Por exemplo, "pt-br". O componente do idioma segue um padrão de código de duas letras, conforme definido na [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), e o componente do país segue um padrão de código de duas letras, conforme definido na [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span><span class="sxs-lookup"><span data-stu-id="ca611-p101">A locale representation for the user, which includes the user's preferred language and country/region. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span></span>|
+|<span data-ttu-id="ca611-115">displayName</span><span class="sxs-lookup"><span data-stu-id="ca611-115">displayName</span></span>|<span data-ttu-id="ca611-116">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ca611-116">string</span></span>|<span data-ttu-id="ca611-117">Um nome que representa a localidade do usuário em seu idioma natural, por exemplo, "Português (Brasil)".</span><span class="sxs-lookup"><span data-stu-id="ca611-117">A name representing the user's locale in natural language, for example, "English (United States)".</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="88680-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="88680-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ca611-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ca611-118">JSON representation</span></span>
 
-<span data-ttu-id="88680-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="88680-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ca611-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ca611-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -59,3 +59,5 @@ ms.locfileid: "43991786"
   "suppressions": []
 }
 -->
+
+

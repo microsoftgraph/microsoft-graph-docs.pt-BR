@@ -3,37 +3,37 @@ title: tipo de recurso companyPortalBlockedAction
 description: Ações bloqueadas no portal da empresa de acordo com os tipos de propriedade de plataforma e dispositivo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ebaea7b233a4a596db12e93643992d6ef7a15cc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 005d87adb78b008daea3d55a86c8b75661d41e52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073653"
 ---
-# <a name="companyportalblockedaction-resource-type"></a><span data-ttu-id="9e6b1-103">tipo de recurso companyPortalBlockedAction</span><span class="sxs-lookup"><span data-stu-id="9e6b1-103">companyPortalBlockedAction resource type</span></span>
+# <a name="companyportalblockedaction-resource-type"></a><span data-ttu-id="69c78-103">tipo de recurso companyPortalBlockedAction</span><span class="sxs-lookup"><span data-stu-id="69c78-103">companyPortalBlockedAction resource type</span></span>
 
-<span data-ttu-id="9e6b1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9e6b1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="69c78-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="69c78-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="9e6b1-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="9e6b1-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="69c78-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="69c78-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9e6b1-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="9e6b1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="69c78-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="69c78-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9e6b1-107">Ações bloqueadas no portal da empresa de acordo com os tipos de propriedade de plataforma e dispositivo</span><span class="sxs-lookup"><span data-stu-id="9e6b1-107">Blocked actions on the company portal as per platform and device ownership types</span></span>
+<span data-ttu-id="69c78-107">Ações bloqueadas no portal da empresa de acordo com os tipos de propriedade de plataforma e dispositivo</span><span class="sxs-lookup"><span data-stu-id="69c78-107">Blocked actions on the company portal as per platform and device ownership types</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9e6b1-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="9e6b1-108">Properties</span></span>
-|<span data-ttu-id="9e6b1-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9e6b1-109">Property</span></span>|<span data-ttu-id="9e6b1-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="9e6b1-110">Type</span></span>|<span data-ttu-id="9e6b1-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="9e6b1-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="69c78-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="69c78-108">Properties</span></span>
+|<span data-ttu-id="69c78-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="69c78-109">Property</span></span>|<span data-ttu-id="69c78-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="69c78-110">Type</span></span>|<span data-ttu-id="69c78-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="69c78-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9e6b1-112">platform</span><span class="sxs-lookup"><span data-stu-id="9e6b1-112">platform</span></span>|[<span data-ttu-id="9e6b1-113">devicePlatformType</span><span class="sxs-lookup"><span data-stu-id="9e6b1-113">devicePlatformType</span></span>](../resources/intune-shared-deviceplatformtype.md)|<span data-ttu-id="9e6b1-114">Sistema operacional/plataforma do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="9e6b1-114">Device OS/Platform.</span></span> <span data-ttu-id="9e6b1-115">Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.</span><span class="sxs-lookup"><span data-stu-id="9e6b1-115">Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.</span></span>|
-|<span data-ttu-id="9e6b1-116">ownerType</span><span class="sxs-lookup"><span data-stu-id="9e6b1-116">ownerType</span></span>|[<span data-ttu-id="9e6b1-117">ownerType</span><span class="sxs-lookup"><span data-stu-id="9e6b1-117">ownerType</span></span>](../resources/intune-shared-ownertype.md)|<span data-ttu-id="9e6b1-118">Tipo de propriedade de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="9e6b1-118">Device ownership type.</span></span> <span data-ttu-id="9e6b1-119">Os valores possíveis são: `unknown`, `company`, `personal`.</span><span class="sxs-lookup"><span data-stu-id="9e6b1-119">Possible values are: `unknown`, `company`, `personal`.</span></span>|
-|<span data-ttu-id="9e6b1-120">ação</span><span class="sxs-lookup"><span data-stu-id="9e6b1-120">action</span></span>|[<span data-ttu-id="9e6b1-121">companyPortalAction</span><span class="sxs-lookup"><span data-stu-id="9e6b1-121">companyPortalAction</span></span>](../resources/intune-shared-companyportalaction.md)|<span data-ttu-id="9e6b1-122">Ação de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="9e6b1-122">Device Action.</span></span> <span data-ttu-id="9e6b1-123">Os valores possíveis são: `unknown`, `remove`, `reset`.</span><span class="sxs-lookup"><span data-stu-id="9e6b1-123">Possible values are: `unknown`, `remove`, `reset`.</span></span>|
+|<span data-ttu-id="69c78-112">plataforma</span><span class="sxs-lookup"><span data-stu-id="69c78-112">platform</span></span>|[<span data-ttu-id="69c78-113">devicePlatformType</span><span class="sxs-lookup"><span data-stu-id="69c78-113">devicePlatformType</span></span>](../resources/intune-shared-deviceplatformtype.md)|<span data-ttu-id="69c78-114">Sistema operacional/plataforma do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="69c78-114">Device OS/Platform.</span></span> <span data-ttu-id="69c78-115">Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.</span><span class="sxs-lookup"><span data-stu-id="69c78-115">Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.</span></span>|
+|<span data-ttu-id="69c78-116">ownerType</span><span class="sxs-lookup"><span data-stu-id="69c78-116">ownerType</span></span>|[<span data-ttu-id="69c78-117">ownerType</span><span class="sxs-lookup"><span data-stu-id="69c78-117">ownerType</span></span>](../resources/intune-shared-ownertype.md)|<span data-ttu-id="69c78-118">Tipo de propriedade de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="69c78-118">Device ownership type.</span></span> <span data-ttu-id="69c78-119">Os valores possíveis são: `unknown`, `company`, `personal`.</span><span class="sxs-lookup"><span data-stu-id="69c78-119">Possible values are: `unknown`, `company`, `personal`.</span></span>|
+|<span data-ttu-id="69c78-120">ação</span><span class="sxs-lookup"><span data-stu-id="69c78-120">action</span></span>|[<span data-ttu-id="69c78-121">companyPortalAction</span><span class="sxs-lookup"><span data-stu-id="69c78-121">companyPortalAction</span></span>](../resources/intune-shared-companyportalaction.md)|<span data-ttu-id="69c78-122">Ação de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="69c78-122">Device Action.</span></span> <span data-ttu-id="69c78-123">Os valores possíveis são: `unknown`, `remove`, `reset`.</span><span class="sxs-lookup"><span data-stu-id="69c78-123">Possible values are: `unknown`, `remove`, `reset`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="9e6b1-124">Relações</span><span class="sxs-lookup"><span data-stu-id="9e6b1-124">Relationships</span></span>
-<span data-ttu-id="9e6b1-125">Nenhum</span><span class="sxs-lookup"><span data-stu-id="9e6b1-125">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="69c78-124">Relações</span><span class="sxs-lookup"><span data-stu-id="69c78-124">Relationships</span></span>
+<span data-ttu-id="69c78-125">Nenhum</span><span class="sxs-lookup"><span data-stu-id="69c78-125">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9e6b1-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="9e6b1-126">JSON Representation</span></span>
-<span data-ttu-id="9e6b1-127">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="9e6b1-127">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="69c78-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="69c78-126">JSON Representation</span></span>
+<span data-ttu-id="69c78-127">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="69c78-127">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.companyPortalBlockedAction"
@@ -47,6 +47,9 @@ ms.locfileid: "43457376"
   "action": "String"
 }
 ```
+
+
+
 
 
 
