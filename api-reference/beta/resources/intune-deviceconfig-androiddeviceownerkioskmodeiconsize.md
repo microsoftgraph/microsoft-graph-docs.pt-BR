@@ -3,14 +3,14 @@ title: tipo de enumeração androidDeviceOwnerKioskModeIconSize
 description: Tamanho do ícone de tela inicial gerenciada do modo de quiosque do dispositivo Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9d7166f38523cf2a5bfc37c341fe17a1a4fe48e4
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 233f55fcce20b1d40c217692e0c9813cf5de1111
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124213"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058323"
 ---
 # <a name="androiddeviceownerkioskmodeiconsize-enum-type"></a>tipo de enumeração androidDeviceOwnerKioskModeIconSize
 
@@ -31,6 +31,9 @@ Tamanho do ícone de tela inicial gerenciada do modo de quiosque do dispositivo 
 |periódica|3 |Tamanho do ícone normal.|
 |large|4 |Tamanho de ícone grande.|
 |maior|5 |Tamanho do ícone maior.|
+
+
+
 
 
 

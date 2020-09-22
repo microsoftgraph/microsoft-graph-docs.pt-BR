@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f456927289a285a81eb088dd622b79f120df188f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c7c105dbf895d41b2e986a8fa723e0df314dd90d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43401662"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057952"
 ---
 # <a name="unifiedrolepermission-resource-type"></a>tipo de recurso unifiedRolePermission
 
@@ -25,7 +25,7 @@ Representa uma coleção de ações de recurso permitidas e as condições que d
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |allowedResourceActions|String collection| Conjunto de tarefas que podem ser perfomed em um recurso. |
-|pré-requisito|String| Restrições opcionais que devem ser atendidas para que a permissão seja eficaz. |
+|pré-requisito|Cadeia de caracteres| Restrições opcionais que devem ser atendidas para que a permissão seja eficaz. |
 
 ### <a name="allowedresourceactions-property"></a>Propriedade allowedResourceActions
 
@@ -39,7 +39,7 @@ Por exemplo: `microsoft.directory/applications/credentials/update`.
 - Namespace-os serviços que expõem a tarefa. Por exemplo, todas as tarefas no Azure Active Directory usam o namespace Microsoft. Directory.  
 - Entidade – os recursos ou componentes lógicos expostos pelo serviço no Microsoft Graph. Por exemplo, aplicativos, entidades de serviço ou grupos.
 - PropertySet-as propriedades específicas ou aspectos da entidade para a qual o acesso está sendo concedido. Por exemplo, `microsoft.directory/applications/authentication/read` concede a capacidade de ler a URL de resposta, a URL de logout e a propriedade de fluxo implícito no objeto **Application** no Azure AD. Estes são os nomes reservados para conjuntos de propriedades comuns:  
-  - Propriedades: designa todas as propriedades da entidade, incluindo propriedades privilegiadas. Os exemplos `microsoft.directory/applications/allProperties/read` incluem `microsoft.directory/applications/allProperties/update`e.
+  - Propriedades: designa todas as propriedades da entidade, incluindo propriedades privilegiadas. Os exemplos incluem `microsoft.directory/applications/allProperties/read` e `microsoft.directory/applications/allProperties/update` .
   - Basic-designa Propriedades de leitura comuns, mas exclui privilégios privilegiados. Por exemplo, `microsoft.directory/applications/basic/update` inclui a capacidade de atualizar propriedades padrão, como o nome para exibição.
   - Standard-designa Propriedades comuns de atualização, mas exclui privilégios privilegiados. Por exemplo, `microsoft.directory/applications/standard/read`.
 - Ações-as operações que estão sendo concedidas. Na maioria das circunstâncias, as permissões devem ser expressas em termos de CRUD ou de tarefas. As ações incluem:
@@ -103,3 +103,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

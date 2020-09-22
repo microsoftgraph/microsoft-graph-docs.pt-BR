@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: f0853d4a215fcb554243a724b1d53d74f848a81d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5f0dbfe0b27a44f48d0be947e15ef20a980e935
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516707"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059611"
 ---
 # <a name="list-trending"></a>Listar tendências
 
@@ -68,7 +68,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma lista de itens de [tendência](../resources/insights-trending.md) no corpo da resposta. Cada item contém propriedades de visualização para exibir o item em sua experiência.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma lista de itens de [tendência](../resources/insights-trending.md) no corpo da resposta. Cada item contém propriedades de visualização para exibir o item em sua experiência.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
@@ -107,5 +107,6 @@ Content-length: 801
     ]
 }
 ```
+
 
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 051db73f098272bc97fe3477e6bd8dd3f49eddf5
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: b25330207d5785b5cb76d4d956fdff48afbf4753
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843265"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058757"
 ---
 # <a name="delete-onlinemeeting"></a>Excluir onlineMeeting
 
@@ -29,7 +29,7 @@ Excluir um objeto [onlineMeeting](../resources/onlinemeeting.md) .
 | Aplicativo                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* Os administradores devem criar uma [política de acesso de aplicativo](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) e conceder a ele um usuário, autorizando o aplicativo configurado na política para excluir uma reunião online em nome desse usuário (a ID de usuário especificada no caminho reuqest) foi criada.
+> \* Os administradores devem criar uma [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy) e conceder a ele um usuário, autorizando o aplicativo configurado na política para excluir uma reunião online em nome desse usuário (a ID de usuário especificada no caminho reuqest) foi criada.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,7 +39,7 @@ Solicitação ao usar um token delegado
 DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
 ```
 
-Solicitação ao usar um token de aplicativo:
+Solicitar quando usar um token de aplicativo:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
@@ -47,7 +47,7 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId
 
 > **Observação:**
 >
-> - `userId` é a ID de objeto de um usuário no [portal de gerenciamento do usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para mais detalhes, consulte [política de acesso de aplicativo](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
+> - `userId` é a ID de objeto de um usuário no [portal de gerenciamento do usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para mais detalhes, consulte [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` é a **ID** de uma [entidade onlineMeeting](../resources/onlinemeeting.md).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -114,3 +114,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

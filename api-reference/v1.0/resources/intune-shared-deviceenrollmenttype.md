@@ -3,14 +3,14 @@ title: tipo de enumeração deviceEnrollmentType
 description: Maneiras possíveis de adicionar um dispositivo móvel ao gerenciamento.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 433abdb308b838980149e7bf35784159328c6d8d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4f0e309126d48646fb67446270353566be23ec9a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387238"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059100"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>tipo de enumeração deviceEnrollmentType
 
@@ -24,15 +24,17 @@ Maneiras possíveis de adicionar um dispositivo móvel ao gerenciamento.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|O valor padrão, o tipo de registro não foi coletado.|
-|userregistrar|1|Registro controlado pelo usuário por meio do canal BYOD.|
-|deviceEnrollmentManager|duas|Registro de usuário com uma conta de Gerenciador de registro de dispositivo.|
-|appleBulkWithUser|3D|Inscrição em massa da Apple com o desafio do usuário. (DEP, Apple Configurator)|
+|userregistrar|1 |Registro controlado pelo usuário por meio do canal BYOD.|
+|deviceEnrollmentManager|2 |Registro de usuário com uma conta de Gerenciador de registro de dispositivo.|
+|appleBulkWithUser|3 |Inscrição em massa da Apple com o desafio do usuário. (DEP, Apple Configurator)|
 |appleBulkWithoutUser|4 |Inscrição em massa da Apple sem o desafio do usuário. (DEP, Apple Configurator, configuração móvel)|
 |windowsAzureADJoin|5 |Ingressar no Azure AD do Windows 10.|
 |windowsBulkUserless|6 |Registro em massa do Windows 10 através do ICD com o certificado.|
 |windowsAutoEnrollment|7 |Registro automático do Windows 10. (Adicionar conta de trabalho)|
 |windowsBulkAzureDomainJoin|8 |Ingresso no Azure AD em massa do Windows 10.|
 |windowsCoManagement|9 |Co-gerenciamento de intergestão do Windows 10 disparado por AutoPilot ou política de grupo.|
+
+
 
 
 

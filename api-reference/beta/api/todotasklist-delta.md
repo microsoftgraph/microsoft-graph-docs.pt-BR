@@ -5,12 +5,12 @@ localization_priority: Normal
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b5d3acdc5b4b052744c26e95564c0e5abe1660ca
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: f24f6eb2e820f5b0a750b492fd30bf9e91516e3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849839"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058505"
 ---
 # <a name="todotasklist-delta"></a>todoTaskList: Delta
 
@@ -109,3 +109,4 @@ Content-length: 254
 ## <a name="see-also"></a>Confira também
 
 - [Consulta delta do Microsoft Graph](/graph/delta-query-overview)
+

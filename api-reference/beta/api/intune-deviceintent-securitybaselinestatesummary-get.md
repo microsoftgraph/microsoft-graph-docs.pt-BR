@@ -3,14 +3,14 @@ title: Obter securityBaselineStateSummary
 description: Leia as propriedades e as relações do objeto securityBaselineStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c885fc44a300845e86a9b723cef0d31a6388f97d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 00ba5830f116a5d4515ebb741ceb289c43876dbc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427316"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058890"
 ---
 # <a name="get-securitybaselinestatesummary"></a>Obter securityBaselineStateSummary
 
@@ -83,6 +83,9 @@ Content-Length: 297
   }
 }
 ```
+
+
+
 
 
 

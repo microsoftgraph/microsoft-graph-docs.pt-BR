@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8717fc7a19abac357f0236b2796ea6a98017718b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 39fd7852ad57b9f618da9d7d8608fb5f09521179
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518494"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059884"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -43,13 +43,13 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|type|string|Representa o tipo de um gráfico.  Os valores possíveis são: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie`, `etc.`.|
+|type|string|Representa o tipo de um gráfico.  Os valores possíveis são: `ColumnClustered` , `ColumnStacked` , `ColumnStacked100` , `BarClustered` , `BarStacked` , `BarStacked100` , `LineStacked` , `LineStacked100` , `LineMarkers` , `LineMarkersStacked` , `LineMarkersStacked100` , `PieOfPie` , `etc.` .|
 |sourceData|Json|O objeto Range correspondente aos dados de origem.|
 |seriesBy|string|Opcional. Especifica a forma como as colunas ou linhas são usadas como série de dados no gráfico.  Os valores possíveis são: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [WorkbookChart](../resources/chart.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [WorkbookChart](../resources/chart.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
@@ -121,3 +121,4 @@ Content-length: 52
   "suppressions": [
   ]
 }-->
+

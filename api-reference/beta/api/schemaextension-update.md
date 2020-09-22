@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 3fd6ed535c2d6a30f85c8b46930a96c7cc8cee8f
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: d4e119c683ca953a9c024f556e4f78d2dd396f5b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896578"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058660"
 ---
 # <a name="update-schemaextension"></a>Update schemaExtension
 
@@ -140,3 +140,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

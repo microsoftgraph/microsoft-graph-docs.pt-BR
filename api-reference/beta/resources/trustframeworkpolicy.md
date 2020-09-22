@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 553463811f74a536cd3be5317718e00f91c95260
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: bad5d8cfa6d9b53c4023bb89eabd74436ab7dacd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218041"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057945"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>tipo de recurso trustFrameworkPolicy
 
@@ -34,14 +34,14 @@ Para obter mais informações, consulte [Custom Policies in Azure Active Directo
 |[Criar trustFrameworkPolicy](../api/trustframework-post-trustframeworkpolicy.md)|trustFrameworkPolicy|Criar um novo trustFrameworkPolicy.|
 |[Obter trustFrameworkPolicy](../api/trustframeworkpolicy-get.md) |trustFrameworkPolicy|Ler as propriedades de um trustFrameworkPolicy existente.|
 |[Listar trustFrameworkPolicies](../api/trustframework-list-trustframeworkpolicies.md)|coleção trustFrameworkPolicy|Listar todos os trustFrameworkPolicies configurados em um locatário.|
-|[Atualizar ou criar trustFrameworkPolicy](../api/trustframework-put-trustframeworkpolicy.md)|None|Atualize um trustFrameworkPolicy existente.|
-|[Excluir trustFrameworkPolicy](../api/trustframeworkpolicy-delete.md)|None|Excluir um trustFrameworkPolicy existente.|
+|[Atualizar ou criar trustFrameworkPolicy](../api/trustframework-put-trustframeworkpolicy.md)|Nenhum|Atualize um trustFrameworkPolicy existente.|
+|[Excluir trustFrameworkPolicy](../api/trustframeworkpolicy-delete.md)|Nenhum|Excluir um trustFrameworkPolicy existente.|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|id|String|A ID da política.|
+|id|Cadeia de caracteres|A ID da política.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -66,3 +66,5 @@ Veja a seguir uma representação JSON do recurso.
 
 - [trustFrameworkPolicy esquema](/azure/active-directory-b2c/trustframeworkpolicy) para obter informações sobre os elementos do esquema.
 - [trustFrameworkPolicy. xsd](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack/blob/master/TrustFrameworkPolicy_0.3.0.0.xsd)
+
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a9e88026d4a952e3a9b4b3f6b7b26f31890085d4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d74a86b3493ff66beb9dbdc6f0bf04dd12546eb4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518431"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059786"
 ---
 # <a name="update-chartgridlines"></a>Atualizar chartgridlines
 
@@ -113,3 +113,4 @@ Content-length: 21
   "suppressions": [
   ]
 }-->
+

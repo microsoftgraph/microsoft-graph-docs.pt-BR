@@ -3,14 +3,14 @@ title: Listar deviceComplianceScriptDeviceStates
 description: Listar Propriedades e relações dos objetos deviceComplianceScriptDeviceState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 59b6171279cb7581c8c08f339f0e857e1a51afbd
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 443c537cd56269d1ccaaaf3aebfd20ba5d3d86be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792447"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058876"
 ---
 # <a name="list-devicecompliancescriptdevicestates"></a>Listar deviceComplianceScriptDeviceStates
 
@@ -82,6 +82,9 @@ Content-Length: 501
   ]
 }
 ```
+
+
+
 
 
 

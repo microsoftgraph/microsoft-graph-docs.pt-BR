@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 05dcb092c34db57660c149fef0665ec31bdaba74
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b7c6e8dcf68ad867f206c5702e7d7af9b48b470
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533046"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057063"
 ---
 # <a name="commsoperation-resource-type"></a>tipo de recurso commsOperation
 
@@ -29,7 +29,7 @@ Se uma `null` operação ou uma operação com o status `notStarted` ou `running
 | Propriedade           | Tipo                        | Descrição                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
 | clientContext      | String                      | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                           |
-| id                 | Cadeia de caracteres                      | A ID da operação. Somente leitura.                                                    |
+| id                 | String                      | A ID da operação. Somente leitura.                                                    |
 | resultInfo         | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura.                                              |
 | status             | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. |
 
@@ -68,3 +68,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

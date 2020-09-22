@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 215f791f5a845df3de07166550055fca22f50735
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: fe43222eac877d467654a890a923533a8ba94824
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873199"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058517"
 ---
 # <a name="get-todotasklist"></a>Obter todoTaskList
 Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -105,4 +105,6 @@ Content-Type: application/json
   }
 }
 ```
+
+
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b69905a0e1d8937c582df3373a4e981f8d8405ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ee55fc2f9321a5b16c3a24ec330f5966472f4f9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533076"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059170"
 ---
 # <a name="chatinfo-resource-type"></a>tipo de recurso chatInfo
 
@@ -57,3 +57,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

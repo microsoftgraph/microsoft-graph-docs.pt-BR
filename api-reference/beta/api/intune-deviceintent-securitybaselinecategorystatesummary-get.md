@@ -3,14 +3,14 @@ title: Obter securityBaselineCategoryStateSummary
 description: Leia as propriedades e as relações do objeto securityBaselineCategoryStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68147633f82236b3bf13ad798cba19146f430261
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c2e03af1e0c25939244612a5bef51e814d7d4b75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381313"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058946"
 ---
 # <a name="get-securitybaselinecategorystatesummary"></a>Obter securityBaselineCategoryStateSummary
 
@@ -84,6 +84,9 @@ Content-Length: 347
   }
 }
 ```
+
+
+
 
 
 

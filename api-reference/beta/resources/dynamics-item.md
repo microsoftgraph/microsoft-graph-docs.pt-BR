@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: e5578cc2bc05aedd417230cc3e9d3b171e9ba577
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 89ccee3123fc3f0fc04b620e5b3528f4a253d1fa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503898"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058446"
 ---
 # <a name="items-resource-type"></a>tipo de recurso itens
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,15 +29,15 @@ Representa um item no Dynamics 365 Business central.
 |[Obter itens](../api/dynamics-item-get.md)      |items     |Obtém um objeto item.   |
 |[Itens post](../api/dynamics-create-item.md)  |items     |Cria um objeto item.|
 |[Item de patch](../api/dynamics-item-update.md)  |items     |Atualiza um objeto item.|
-|[Excluir itens](../api/dynamics-item-delete.md)|nenhuma      |Exclui um objeto item.|
+|[Excluir itens](../api/dynamics-item-delete.md)|Nenhuma      |Exclui um objeto item.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade           | Tipo |Descrição                                          |
 |:-------------------|:-------|:----------------------------------------------------|
 |id                  |GUID    |A ID exclusiva do item. Não editável.             |
-|number              |string  |O número do item.                                     |
-|displayName         |string  |Especifica uma descrição do item.                 |
-|type                |numéricos |O tipo de inventário para o item. 1 = item de estoque, 2 = item de serviço. Essa é uma propriedade obrigatória.|
+|number              |cadeia de caracteres  |O número do item.                                     |
+|displayName         |cadeia de caracteres  |Especifica uma descrição do item.                 |
+|tipo                |numéricos |O tipo de inventário para o item. 1 = item de estoque, 2 = item de serviço. Essa é uma propriedade obrigatória.|
 |bloqueou             |booliano |Especifica que as transações com o item não podem ser lançadas, por exemplo, porque o item está em quarentena. Defina como **true**se o item estiver bloqueado.|
 |baseUnitOfMeasureId |GUID    |Especifica a ID da unidade de medida.             |
 |baseUnitOfMeasure   |[Extra. UnitOfMeasure](../resources/dynamics-complextypes.md)|Especifica a unidade na qual o item é mantido no estoque.|
@@ -81,5 +81,7 @@ Veja a seguir uma representação JSON do recurso.
 }
 
 ```
+
+
 
 

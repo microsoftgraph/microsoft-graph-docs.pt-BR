@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cc57b91a814d63d48a65fde871a5b60e4937de4a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 76a012e6a3100772c202b264ca0535bedde2bdf4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518522"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059940"
 ---
 # <a name="get-chartaxis"></a>Obter ChartAxis
 
@@ -111,3 +111,4 @@ Content-length: 64
   "suppressions": [
   ]
 }-->
+

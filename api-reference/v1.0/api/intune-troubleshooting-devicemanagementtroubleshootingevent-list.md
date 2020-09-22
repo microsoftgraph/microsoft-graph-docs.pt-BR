@@ -3,14 +3,14 @@ title: Listar deviceManagementTroubleshootingEvents
 description: Listar propriedades e relações de objetos de deviceManagementTroubleshootingEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3abdfb2f71297d4e0989f9a0ae1c0e70ac16c170
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 78ac4f5d2c5eb076745f90d45143b7b7a683cca5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43418505"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057350"
 ---
 # <a name="list-devicemanagementtroubleshootingevents"></a>Listar deviceManagementTroubleshootingEvents
 
@@ -76,6 +76,9 @@ Content-Length: 277
   ]
 }
 ```
+
+
+
 
 
 

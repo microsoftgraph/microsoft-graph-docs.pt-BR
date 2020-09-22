@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 2e3d30d1796945c7d0217a83db966a203678f938
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b6325656dcf11a4b448506f829c3aaae88100ce6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533089"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059219"
 ---
 # <a name="charttitle-resource-type"></a>Tipo de recurso ChartTitle
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Representa um objeto ChartTitle de um gráfico.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -33,7 +33,7 @@ Representa um objeto ChartTitle de um gráfico.
 |texto|string|Representa o texto do título de um gráfico.|
 |visible|booliano|Um valor booliano que representa a visibilidade de um objeto de título de gráfico.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[WorkbookChartTitleFormat](charttitleformat.md)|Representa a formatação de um título do gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.|
@@ -69,3 +69,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

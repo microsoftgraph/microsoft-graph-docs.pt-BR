@@ -1,28 +1,28 @@
 ---
 title: Obter onenoteOperation
-description: 'Obter o status de uma operação de execução longa do OneNote. Isso se aplica às operações que retornam o cabeçalho **Operation-Location** na resposta, como `CopyNotebook`, `CopyToNotebook` `CopyToSectionGroup`,, `and CopyToSection`.   '
+description: 'Obter o status de uma operação de execução longa do OneNote. Isso se aplica às operações que retornam o cabeçalho **Operation-Location** na resposta, como `CopyNotebook` ,,, `CopyToNotebook` `CopyToSectionGroup` `and CopyToSection` .   '
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: ffb817c4c0a5ec4fd163341a3e8d0b3f905ac4c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e60b2ff4f611ed7f0f9e274d6cff951304bddcb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511282"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057201"
 ---
 # <a name="get-onenoteoperation"></a>Obter onenoteOperation
 
 Namespace: microsoft.graph
 
-Obter o status de uma operação de execução longa do OneNote. Isso se aplica às operações que retornam o cabeçalho **Operation-Location** na resposta, como `CopyNotebook`, `CopyToNotebook` `CopyToSectionGroup`,, `and CopyToSection`.   
+Obter o status de uma operação de execução longa do OneNote. Isso se aplica às operações que retornam o cabeçalho **Operation-Location** na resposta, como `CopyNotebook` ,,, `CopyToNotebook` `CopyToSectionGroup` `and CopyToSection` .   
 
-Você pode sondar o ponto de extremidade da operação `status` -local `completed` até `failed`que a propriedade retorne ou. 
+Você pode sondar o ponto de extremidade da operação-local até que a `status` Propriedade retorne `completed` ou `failed` . 
 
-Se o status for `completed`, a `resourceLocation` Propriedade conterá o URI do ponto de extremidade do recurso. 
+Se o status for `completed` , a `resourceLocation` Propriedade conterá o URI do ponto de extremidade do recurso. 
 
-Se o status for `failed`, o erro e `@api.diagnostics` as propriedades fornecerão informações de erro.
+Se o status for `failed` , o erro e `@api.diagnostics` as propriedades fornecerão informações de erro.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -42,7 +42,7 @@ GET /groups/{id}/onenote/operations/{id}
 GET /sites/{id}/onenote/operations/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Nenhum
+Nenhum.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -119,3 +119,4 @@ Content-length: 215
   "suppressions": [
   ]
 }-->
+

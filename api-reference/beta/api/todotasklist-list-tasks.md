@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3c9507ca24e7c99a928bff9eedd8a3e06918a017
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 2fd12e71cf29d0fd4008d7d6b81ed5a6db2cf07b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873171"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058516"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -122,4 +122,6 @@ Content-Type: application/json
   ]
 }
 ```
+
+
 

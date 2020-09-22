@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0fa24737053c821ed636a898b56b2ed8879bf25c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 009fe91b669f626eca4be556b27ac3b814c537a8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518417"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059744"
 ---
 # <a name="update-chartlegend"></a>Atualizar chartlegend
 
@@ -117,3 +117,4 @@ Content-length: 72
   "suppressions": [
   ]
 }-->
+

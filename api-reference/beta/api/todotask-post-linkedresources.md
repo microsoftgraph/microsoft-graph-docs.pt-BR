@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d55a63848d26bccb8bee5f6931d42bc85f95c2ef
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: e5a5a702c55db40c77304c577b440f34dc610e8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843097"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058582"
 ---
 # <a name="create-linkedresources"></a>Criar linkedResources
 Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -50,10 +50,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [linkedR
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID gerada pelo servidor para a entidade vinculada herdada da [entidade](../resources/entity.md)|
+|id|Cadeia de caracteres|ID gerada pelo servidor para a entidade vinculada herdada da [entidade](../resources/entity.md)|
 |webUrl|String|Deeplink para a entidade vinculada |
 |applicationName|Cadeia de caracteres|Campo que indica o nome do aplicativo da fonte que está enviando a entidade vinculada |
-|displayName|String|Campo indicando o título da entidade vinculada. |
+|displayName|Cadeia de caracteres|Campo indicando o título da entidade vinculada. |
 |externalId|Cadeia de caracteres|ID do objeto associado a essa tarefa no sistema de terceiros/parceiros |
 
 
@@ -123,4 +123,6 @@ Content-Type: application/json
   "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
+
+
 

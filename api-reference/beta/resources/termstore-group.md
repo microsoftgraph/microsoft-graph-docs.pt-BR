@@ -5,12 +5,12 @@ doc_type: resourcePageType
 description: Representa um grupo usado em um repositório de termos.
 localization_priority: Normal
 ms.prod: Sharepoint
-ms.openlocfilehash: 91ad02722bcbddb1d21222381ced7cabc531f3fc
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 121eba9bfdde52372ce4c03a3fe594eb931f620f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539131"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057973"
 ---
 # <a name="group-resource-type"></a>Tipo de recurso de grupo
 
@@ -91,3 +91,5 @@ Veja a seguir uma representação JSON de um recurso de **grupo** .
   "suppressions": []
 }
 -->
+
+

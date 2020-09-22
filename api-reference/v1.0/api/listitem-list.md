@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Obter a coleção de itens em uma lista.
 doc_type: apiPageType
-ms.openlocfilehash: f42973005e552ce84b1f2613c6012d4404fb5b07
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6f6034e0cff0a5af4034c1abbd0190111bb6f513
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511688"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057242"
 ---
 # <a name="enumerate-items-in-a-list"></a>Enumerar itens em uma lista
 
@@ -118,3 +118,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

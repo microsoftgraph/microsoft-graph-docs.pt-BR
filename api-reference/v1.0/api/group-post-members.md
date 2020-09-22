@@ -1,27 +1,27 @@
 ---
 title: Adicionar membro
-description: Adicionar um membro a um grupo do Microsoft 365, um grupo de segurança ou um grupo de segurança habilitado para email através da propriedade de navegação **Members** .
+description: Adicionar um membro a um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **members**.
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f3ad60b441bbccd5b71df0634033ee0a4eeae46e
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
-ms.translationtype: MT
+ms.openlocfilehash: 6ffb969b08704ac8235fe630e89c9bec65a140f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413314"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057427"
 ---
 # <a name="add-member"></a>Adicionar membro
 
 Namespace: microsoft.graph
 
-Adicionar um membro a um grupo do Microsoft 365 ou um grupo de segurança por meio da propriedade de navegação **Members** .
+Adicione um membro a um grupo do Microsoft 365 ou a um grupo de segurança através da propriedade de navegação de **membros**.
 
-Você pode adicionar usuários, contatos organizacionais, entidades de serviço ou outros grupos. 
+É possível adicionar usuários, contatos organizacionais, entidades de serviço ou outros grupos. 
 
 > [!IMPORTANT]
-> Você só pode adicionar usuários aos grupos segurança e Microsoft 365 gerenciados por meio da nuvem.
+> Só é possível adicionar usuários aos grupos do Microsoft 365 e segurança gerenciados pela nuvem.
 
 ## <a name="permissions"></a>Permissões
 
@@ -96,7 +96,7 @@ Content-length: 30
 ---
 
 
-No corpo da solicitação, forneça uma representação JSON da ID do objeto directoryobject, User ou Group que você deseja adicionar.
+No corpo da solicitação, forneça uma representação JSON da ID do objeto directoryObject, usuário ou grupo que deseja adicionar.
 
 #### <a name="response"></a>Resposta
 
@@ -113,7 +113,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-add-multiple-members-to-a-group-in-a-single-request"></a>Exemplo 2: adicionar vários membros a um grupo em uma única solicitação
 
-Este exemplo mostra como adicionar vários membros a um grupo com suporte a BIND OData em uma operação PATCH. Observe que até 20 membros podem ser adicionados em uma única solicitação. A operação POST não é suportada.
+Esse exemplo mostra como adicionar vários membros a um grupo com suporte vinculado OData em uma operação PATCH. Observe que é possível adicionar até 20 membros em uma única solicitação. Não há suporte para a operação POST.
 
 #### <a name="request"></a>Solicitação
 
@@ -157,7 +157,7 @@ Content-length: 30
 ---
 
 
-No corpo da solicitação, forneça uma representação JSON da ID do objeto directoryobject, User ou Group que você deseja adicionar.
+No corpo da solicitação, forneça uma representação JSON da ID do objeto directoryObject, usuário ou grupo que deseja adicionar.
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
@@ -182,3 +182,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

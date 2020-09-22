@@ -3,14 +3,14 @@ title: Obter deviceManagementTemplateSettingCategory
 description: Leia as propriedades e as relações do objeto deviceManagementTemplateSettingCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 154f4c169e324bd5575bf62dd496dd70dd81e77b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 902d743cdff485534335b76f1645105199239775
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427456"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058960"
 ---
 # <a name="get-devicemanagementtemplatesettingcategory"></a>Obter deviceManagementTemplateSettingCategory
 
@@ -79,6 +79,9 @@ Content-Length: 228
   }
 }
 ```
+
+
+
 
 
 

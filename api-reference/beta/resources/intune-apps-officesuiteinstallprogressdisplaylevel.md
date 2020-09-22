@@ -3,14 +3,14 @@ title: tipo de enumeração officeSuiteInstallProgressDisplayLevel
 description: A enumeração para especificar o nível de exibição da interface do usuário de configuração de progresso da instalação no dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 953963f73a2d3585ecb02724c614a8c8a2f053f2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 92055a91849cf034f2b2aba5b7bbbffefadb655f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462551"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058330"
 ---
 # <a name="officesuiteinstallprogressdisplaylevel-enum-type"></a>tipo de enumeração officeSuiteInstallProgressDisplayLevel
 
@@ -25,8 +25,11 @@ A enumeração para especificar o nível de exibição da interface do usuário 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Ainda não documentado|
-|cheia|1|Ainda não documentado|
+|Nenhuma|,0|Ainda não documentado|
+|cheia|1 |Ainda não documentado|
+
+
+
 
 
 

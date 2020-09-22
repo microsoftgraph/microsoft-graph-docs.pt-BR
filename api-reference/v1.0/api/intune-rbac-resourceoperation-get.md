@@ -3,14 +3,14 @@ title: Obter resourceOperation
 description: Ler propriedades e relações do objeto resourceOperation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80345f5ed9f6675f63882104fc983c0dc6586191
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 87098eeedaef062464fd174312655e593234ccb3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461326"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059450"
 ---
 # <a name="get-resourceoperation"></a>Obter resourceOperation
 
@@ -78,6 +78,9 @@ Content-Length: 256
   }
 }
 ```
+
+
+
 
 
 

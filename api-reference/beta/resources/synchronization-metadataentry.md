@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b9dc39021e297882bf92b9a314f342297d86d9ed
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: a12711fbaeb8b613762f16a2a877cb1e2248369c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218412"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058025"
 ---
 # <a name="metadataentry-resource-type"></a>tipo de recurso metadataEntry
 
@@ -23,7 +23,7 @@ Metadados para o objeto especificado.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|key|Cadeia de Caracteres|Nome da propriedade de metadados.|
+|key|Cadeia de caracteres|Nome da propriedade de metadados.|
 |value|Cadeia de caracteres|Valor da propriedade Metadata.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -57,3 +57,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+
