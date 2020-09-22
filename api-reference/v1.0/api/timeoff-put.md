@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: add6b3b2af1cf11de8d728e67a62da50d7d2a7e8
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 383abe12fe945adc291d4a96420a9e054477c235
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44217963"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978234"
 ---
 # <a name="replace-timeoff"></a>Substituir timeOff
 
@@ -167,3 +167,4 @@ Content-length: 401
   ]
 }
 -->
+

@@ -3,14 +3,14 @@ title: Acessar mobileLobApp
 description: Leia as propriedades e as relações do objeto mobileLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 664ef8a7bb90989e6f0e82e9888123d08935a0f5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bd77a0292b6b951acb4c334799f19c89ac33dbec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414444"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976960"
 ---
 # <a name="get-mobilelobapp"></a>Acessar mobileLobApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1071
+Content-Length: 1132
 
 {
   "value": {
@@ -99,12 +99,17 @@ Content-Length: 1071
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4
   }
 }
 ```
+
+
+
 
 
 

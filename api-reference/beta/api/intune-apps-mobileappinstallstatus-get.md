@@ -3,14 +3,14 @@ title: Obter mobileAppInstallStatus
 description: Leia as propriedades e as relações do objeto mobileAppInstallStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 540f8ecabd8579b7763be721fb092740e6ac5077
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b40c8da9172f83840a99c243d50575221f306de3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414894"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977177"
 ---
 # <a name="get-mobileappinstallstatus"></a>Obter mobileAppInstallStatus
 
@@ -90,6 +90,9 @@ Content-Length: 651
   }
 }
 ```
+
+
+
 
 
 

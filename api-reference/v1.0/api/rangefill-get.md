@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6c18855d6ac5efb36cf33c99d31d906c073bda79
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d773adf39f04930fa9e3ffd4811e8139f9ee8be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510526"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978717"
 ---
 # <a name="get-rangefill"></a>Obter RangeFill
 
@@ -106,3 +106,4 @@ Content-length: 28
   "suppressions": [
   ]
 }-->
+

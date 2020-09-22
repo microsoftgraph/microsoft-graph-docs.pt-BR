@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: d9d966a0fd901ccb040e0a15bbff88c247032bd3
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 6c62796c56c2e0af51b7a159dead20b51f21e87f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336353"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978801"
 ---
 # <a name="update-place"></a>Local de atualização
 
@@ -59,11 +59,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | floorLabel             | String                                            | Especifica a carta de piso em que a sala está ativa. |
 | floorNumber            | Int32                                             | Especifica o número do andar em que a sala está. |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Especifica o local da sala ou da sala de opções no latitude, longitude e, opcionalmente, as coordenadas de altitude. |
-| isWheelchairAccessible | Booliano                                           | Especifica se a sala pode ser acessada por cadeira. |
+| isWheelchairAccessible | Boolean                                           | Especifica se a sala pode ser acessada por cadeira. |
 | rótulo                  | String                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
 | apelido               | String                                            | Especifica um apelido para a sala, por exemplo, "conf sala". |
 | phone                  | Cadeia de caracteres                                            | O número de telefone da sala ou sala de salas. |
-| tags                   | String collection                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de mobília. |
+| tags                   | Coleção de cadeias de caracteres                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de mobília. |
 | videoDeviceName        | String                                            | Especifica o nome do dispositivo de vídeo na sala. |
 
 ## <a name="response"></a>Resposta
@@ -278,3 +278,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

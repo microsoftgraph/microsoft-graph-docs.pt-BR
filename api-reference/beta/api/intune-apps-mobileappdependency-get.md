@@ -3,14 +3,14 @@ title: Obter mobileAppDependency
 description: Leia as propriedades e as relações do objeto mobileAppDependency.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 73dec3591f3b6accb3dbbceb5469daf311bf1453
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a86adc640588bfc28720db8788aa0929283e96d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43415313"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977233"
 ---
 # <a name="get-mobileappdependency"></a>Obter mobileAppDependency
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 291
+Content-Length: 320
 
 {
   "value": {
@@ -76,11 +76,15 @@ Content-Length: 291
     "id": "c7f6f9ab-f9ab-c7f6-abf9-f6c7abf9f6c7",
     "targetId": "Target Id value",
     "targetDisplayName": "Target Display Name value",
+    "targetType": "parent",
     "dependencyType": "autoInstall",
     "dependentAppCount": 1
   }
 }
 ```
+
+
+
 
 
 

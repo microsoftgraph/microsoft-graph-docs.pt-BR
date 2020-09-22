@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: beb1912a5b7ee913882f535f8c28480e1f7aaba3
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 6c1c8be6bacf5ab7759bdfe40cb520a295608d12
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345238"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977947"
 ---
 # <a name="list-accesspackages"></a>Listar accessPackages
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackages
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar as políticas de pacote de acesso para cada pacote de acesso, adicione `$expand=accessPackageAssignmentPolicies` . Para pesquisar pacotes do Access com um nome específico, inclua um filtro como `$filter=contains(tolower(displayName),'team')` na consulta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar as políticas de pacote de acesso para cada pacote de acesso, adicione `$expand=accessPackageAssignmentPolicies` . Para pesquisar pacotes do Access com um nome específico, inclua um filtro como `$filter=contains(tolower(displayName),'team')` na consulta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -130,3 +130,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

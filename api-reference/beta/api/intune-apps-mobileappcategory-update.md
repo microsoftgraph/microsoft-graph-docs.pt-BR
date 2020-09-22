@@ -3,14 +3,14 @@ title: Atualizar mobileAppCategory
 description: Atualizar as propriedades de um objeto mobileAppCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b82bd4119db996193e1bfcaf654527c3c58f1ce3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bd2d1ef4dae6119456d8b2a9fc1cdf9c12f239e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43404398"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977457"
 ---
 # <a name="update-mobileappcategory"></a>Atualizar mobileAppCategory
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileA
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|displayName|Cadeia de caracteres|O nome da categoria do aplicativo.|
+|displayName|String|O nome da categoria do aplicativo.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora que a mobileAppCategory foi modificada pela última vez.|
 
 
@@ -92,6 +92,9 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

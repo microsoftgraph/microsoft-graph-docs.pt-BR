@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 92d087f07964bba8c9304791c38a660725896865
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 844af5873d621a2826b2f4291d228196424fd6b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491676"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978276"
 ---
 # <a name="update-tab"></a>Atualizar guia
 
@@ -96,3 +96,4 @@ Content-type: application/json
   "tocPath": ""
 }
 -->
+

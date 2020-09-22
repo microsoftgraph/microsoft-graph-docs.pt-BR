@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3c76d30436a17ac86530ac8498ee8c0e263c987f
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 3e4f44ecfec7a8dfe0241c768f37436f9c515055
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197069"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978395"
 ---
 # <a name="remove-app-from-team"></a>Remover aplicativo da equipe
 
@@ -104,3 +104,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

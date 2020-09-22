@@ -3,14 +3,14 @@ title: Excluir mobileAppDependency
 description: Exclui mobileAppDependency.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d2addde9a8f77cf8675bbb6e985bad989751658
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69f53ccea5e0f7390826fa6685df560916f5e611
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43415335"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977275"
 ---
 # <a name="delete-mobileappdependency"></a>Excluir mobileAppDependency
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

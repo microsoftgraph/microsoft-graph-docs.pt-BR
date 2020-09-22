@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3350e88d8686114cb16d17772de59edebd19a2e6
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 3591b479e132a365995907eae4806585c69c7cc3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491753"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978339"
 ---
 # <a name="delete-tab-from-channel"></a>Excluir Guia do canal
 
@@ -76,3 +76,4 @@ HTTP/1.1 204 No Content
   "tocPath": ""
 }
 -->
+

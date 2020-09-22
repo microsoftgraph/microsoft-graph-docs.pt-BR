@@ -3,14 +3,14 @@ title: Obter mobileAppRelationship
 description: Leia as propriedades e as relações do objeto mobileAppRelationship.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c394444753cab4e715bb4ff79b9b49dd951a8045
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ee71b987fb8a0ceb2ccaaf4077b9205158ea3f40
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414528"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977037"
 ---
 # <a name="get-mobileapprelationship"></a>Obter mobileAppRelationship
 
@@ -68,17 +68,21 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 226
+Content-Length: 255
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.mobileAppRelationship",
     "id": "7b4b5b14-5b14-7b4b-145b-4b7b145b4b7b",
     "targetId": "Target Id value",
-    "targetDisplayName": "Target Display Name value"
+    "targetDisplayName": "Target Display Name value",
+    "targetType": "parent"
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Acessar managedIOSStoreApp
 description: Leia as propriedades e as relações do objeto managedIOSStoreApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7196d055eadabfddc7f0f160afaab61fa4ddaa14
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2a54570d8b46d8b9146679e73c7de4c560f38567
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43405613"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977709"
 ---
 # <a name="get-managediosstoreapp"></a>Acessar managedIOSStoreApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1515
+Content-Length: 1576
 
 {
   "value": {
@@ -99,6 +99,8 @@ Content-Length: 1515
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "appAvailability": "lineOfBusiness",
     "version": "Version value",
     "bundleId": "Bundle Id value",
@@ -120,6 +122,9 @@ Content-Length: 1515
   }
 }
 ```
+
+
+
 
 
 

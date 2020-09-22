@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5d6cc11350b48924ed9aba7a4395a4fa707fe7f3
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: e23f4e9255bc1ff50e901cd366e50540be0dbe57
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44217485"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978221"
 ---
 # <a name="delete-timeoffreason"></a>Excluir timeOffReason
 
@@ -116,3 +116,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

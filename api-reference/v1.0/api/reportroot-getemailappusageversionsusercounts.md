@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 5dd67fe78d0c61ddaeb30a580f034799b8b846b2
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.openlocfilehash: 5b136719c14633ab58cb96b87cfd4ed3263ee1e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413300"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978654"
 ---
 # <a name="reportroot-getemailappusageversionsusercounts"></a>reportRoot: getEmailAppUsageVersionsUserCounts
 
@@ -129,3 +129,4 @@ Report Refresh Date,Outlook 2016,Outlook 2013,Outlook 2010,Outlook 2007,Undeterm
   "suppressions": [
   ]
 }-->
+

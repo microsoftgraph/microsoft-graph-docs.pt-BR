@@ -3,14 +3,14 @@ title: Listar mobileAppInstallStatuses
 description: Listar Propriedades e relações dos objetos mobileAppInstallStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df02f7570f16d74bcc5f2ebbf1d381702c9b0f9f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e306103da5a8eb4203b3654bd5a5eff808e78cbf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414879"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977170"
 ---
 # <a name="list-mobileappinstallstatuses"></a>Listar mobileAppInstallStatuses
 
@@ -51,7 +51,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallSt
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -89,6 +89,9 @@ Content-Length: 693
   ]
 }
 ```
+
+
+
 
 
 

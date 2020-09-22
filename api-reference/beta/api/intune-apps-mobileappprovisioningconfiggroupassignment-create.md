@@ -3,14 +3,14 @@ title: Criar mobileAppProvisioningConfigGroupAssignment
 description: Criar um novo objeto mobileAppProvisioningConfigGroupAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af639bbaa5e07fc5b49f45b9829593cf855ab21a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dee05bc49230d6946fc6e20520029ecd03eef0e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414739"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977107"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>Criar mobileAppProvisioningConfigGroupAssignment
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -89,6 +89,9 @@ Content-Length: 178
   "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
 }
 ```
+
+
+
 
 
 

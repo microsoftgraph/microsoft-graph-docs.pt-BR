@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ea69b69718afefdaf54b80ac985598c9173081d8
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 084b759ef13ab72831b3ba73c8a5901c75ab5832
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197076"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978409"
 ---
 # <a name="add-app-to-team"></a>Adicionar aplicativo à equipe
 
@@ -111,3 +111,4 @@ HTTP/1.1 201 Created
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 07b5521efb3b89eedc480101f107a421452918a2
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 9408029ce34a819782142d3d57b6c1720e91f8f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897642"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977934"
 ---
 # <a name="yammer-groups-activity-reports"></a>Relatórios de atividades de grupos do Yammer
 
@@ -24,6 +24,7 @@ Você pode usar os relatórios de atividades de grupos do Yammer para obter info
 
 | Função                                 | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Obter dados de grupo](../api/reportroot-getyammergroupsactivitydetail.md) | Stream      | Obtenha dados sobre as atividades de grupo do Yammer por grupo. |
+| [Obter dados de grupo](../api/reportroot-getyammergroupsactivitydetail.md) | Fluxo      | Obtenha dados sobre as atividades de grupo do Yammer por grupo. |
 | [Obter contagens de grupo](../api/reportroot-getyammergroupsactivitygroupcounts.md) | Fluxo      | Obtenha o número total de grupos que existiam e quantos incluíam atividade de conversação em grupo. |
 | [Obter contagens de atividade](../api/reportroot-getyammergroupsactivitycounts.md) | Fluxo      | Obtenha o número de mensagens postadas, lidas e curtidas em grupos do Yammer. |
+

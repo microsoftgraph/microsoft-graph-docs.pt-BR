@@ -3,14 +3,14 @@ title: Listar mobileAppDependencies
 description: Listar Propriedades e relações dos objetos mobileAppDependency.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85da4798bc3cc7d7c1f63e9ff63bd4ecde4c52d6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 80a9125417f09cb44b538b5851415bb2444eb4bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43415018"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977243"
 ---
 # <a name="list-mobileappdependencies"></a>Listar mobileAppDependencies
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 348
 
 {
   "value": [
@@ -74,12 +74,16 @@ Content-Length: 317
       "id": "c7f6f9ab-f9ab-c7f6-abf9-f6c7abf9f6c7",
       "targetId": "Target Id value",
       "targetDisplayName": "Target Display Name value",
+      "targetType": "parent",
       "dependencyType": "autoInstall",
       "dependentAppCount": 1
     }
   ]
 }
 ```
+
+
+
 
 
 

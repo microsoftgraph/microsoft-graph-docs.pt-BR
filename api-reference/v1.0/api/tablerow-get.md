@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bb47bb3c987eda3d34cede45f50b93071a661fb4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8eed9f464596125c5c7825e3b02fbcb8277513a4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509524"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978579"
 ---
 # <a name="get-tablerow"></a>Obter TableRow
 
@@ -106,3 +106,4 @@ Content-length: 45
   "suppressions": [
   ]
 }-->
+

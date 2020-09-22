@@ -3,14 +3,14 @@ title: ação de confirmação
 description: Confirma um arquivo de um determinado aplicativo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc3ec9780203770cb196b5d7f477d276a5c35e9e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 48213199e5ee7445bba3e30ee5812e971159d6f3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43415592"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977387"
 ---
 # <a name="commit-action"></a>Ação de confirmação
 
@@ -89,6 +89,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

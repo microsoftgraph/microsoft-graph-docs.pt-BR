@@ -3,14 +3,14 @@ title: Listar managedIOSStoreApps
 description: Listar propriedades e relações dos objetos managedIOSStoreApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f7f3a8631d67be095431e956ac8d77ae87c0b8d2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6fa82b07eba9f808c66d21a7c750ae718d8ed79f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43405606"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977716"
 ---
 # <a name="list-managediosstoreapps"></a>Listar managedIOSStoreApps
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1615
+Content-Length: 1680
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 1615
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "appAvailability": "lineOfBusiness",
       "version": "Version value",
       "bundleId": "Bundle Id value",
@@ -117,6 +119,9 @@ Content-Length: 1615
   ]
 }
 ```
+
+
+
 
 
 

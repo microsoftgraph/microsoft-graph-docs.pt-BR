@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f46d2d7bf7cfcacfc2ecec01dfe9a59d6dffcc4f
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: dfe6d2748fa3fd148292e005a9f600a0568627fd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197055"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978374"
 ---
 # <a name="list-apps-in-team"></a>Listar aplicativos em equipe
 
@@ -208,3 +208,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

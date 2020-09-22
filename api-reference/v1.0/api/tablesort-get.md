@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 65ef0ba06c20a2157dd4cae164279f6da9a99dd9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 519ca89947a48a3726f3a4e383158a432a2312e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509461"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978570"
 ---
 # <a name="get-tablesort"></a>Obter TableSort
 
@@ -106,3 +106,4 @@ Content-length: 51
   "suppressions": [
   ]
 }-->
+

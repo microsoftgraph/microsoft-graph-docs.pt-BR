@@ -3,14 +3,14 @@ title: Obter mobileAppInstallSummary
 description: Leia as propriedades e as relações do objeto mobileAppInstallSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e208e467acf95499c9a1a531f3f98737b583341
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4d286ff9c80a8be4652991bf688ca122603b0a34
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414793"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977163"
 ---
 # <a name="get-mobileappinstallsummary"></a>Obter mobileAppInstallSummary
 
@@ -87,6 +87,9 @@ Content-Length: 466
   }
 }
 ```
+
+
+
 
 
 

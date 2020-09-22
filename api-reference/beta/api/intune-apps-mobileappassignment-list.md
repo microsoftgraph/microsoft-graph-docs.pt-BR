@@ -3,14 +3,14 @@ title: Listar mobileAppAssignments
 description: Listar propriedades e relações dos objetos mobileAppAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a6c5e4b14698b5bbce1e84af94cf0491fd67439
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 621b6c4debee5a6d78f849916c89b12252fd7180
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793322"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977541"
 ---
 # <a name="list-mobileappassignments"></a>Listar mobileAppAssignments
 
@@ -89,6 +89,9 @@ Content-Length: 733
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cf5d6a7aae8fdc969a811a71b5cab270999f5bca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 82bf226d76a0db2f90d91284095a11419f62b0b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510666"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978738"
 ---
 # <a name="range-delete"></a>Range: delete
 
@@ -45,7 +45,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|shift|string|Especifica como deslocar as células.  Os valores possíveis são: `Up`, `Left`.|
+|shift|string|Especifica como deslocar as células.  Os valores possíveis são: `Up` , `Left` .|
 
 ## <a name="response"></a>Resposta
 
@@ -110,3 +110,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

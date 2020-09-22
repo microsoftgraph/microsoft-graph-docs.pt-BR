@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 016a2a2b17a019b8f325abee0358223b8f72d03a
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: c29cf3f02173c4f7328f07cce4be345a4d5ea43b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491739"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978290"
 ---
 # <a name="list-tabs-in-channel"></a>Listar guias no canal
 
@@ -110,3 +110,4 @@ Content-type: application/json
   "tocPath": ""
 }
 -->
+
