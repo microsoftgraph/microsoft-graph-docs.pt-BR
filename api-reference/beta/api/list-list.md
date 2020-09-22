@@ -6,16 +6,16 @@ title: Lista as listas do SharePoint em um site
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 296070a5a41172c256f103d5223c6d118ce5a498
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ae37f564d89eb2fa2742fe3784d5d5c4b7d0c646
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457131"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068039"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -118,3 +118,5 @@ Para listá-los, inclua `system` na instrução `$select`.
   ]
 }
 -->
+
+

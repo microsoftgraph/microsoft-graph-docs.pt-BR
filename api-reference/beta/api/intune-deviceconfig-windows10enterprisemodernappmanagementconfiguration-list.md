@@ -3,14 +3,14 @@ title: Listar windows10EnterpriseModernAppManagementConfigurations
 description: Listar propriedades e relações dos objetos windows10EnterpriseModernAppManagementConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 07411c09d0bb6b1d55c906c5bf9d9910bcb51a95
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: df8165a90cf58a3cf409d741b27681bbba9ef1f9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43431129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068781"
 ---
 # <a name="list-windows10enterprisemodernappmanagementconfigurations"></a>Listar windows10EnterpriseModernAppManagementConfigurations
 
@@ -108,6 +108,9 @@ Content-Length: 1424
   ]
 }
 ```
+
+
+
 
 
 

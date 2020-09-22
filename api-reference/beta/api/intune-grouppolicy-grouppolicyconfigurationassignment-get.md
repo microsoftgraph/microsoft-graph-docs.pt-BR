@@ -3,14 +3,14 @@ title: Obter groupPolicyConfigurationAssignment
 description: Leia as propriedades e as relações do objeto groupPolicyConfigurationAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 735577cdce7a0c24b1152d88a53f8e557c65393f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 910da35621da0c15526290cf48cee9f79b676e77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791977"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068361"
 ---
 # <a name="get-grouppolicyconfigurationassignment"></a>Obter groupPolicyConfigurationAssignment
 
@@ -83,6 +83,9 @@ Content-Length: 477
   }
 }
 ```
+
+
+
 
 
 

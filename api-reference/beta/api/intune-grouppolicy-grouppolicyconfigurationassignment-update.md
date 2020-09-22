@@ -3,14 +3,14 @@ title: Atualizar groupPolicyConfigurationAssignment
 description: Atualiza as propriedades de um objeto groupPolicyConfigurationAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eaed9dd4d91ddd6bb10a21cce140f8e7984672f8
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: e4bf39266670b5347f4a17b3ef1c983ac58f5822
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791963"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068333"
 ---
 # <a name="update-grouppolicyconfigurationassignment"></a>Atualizar groupPolicyConfigurationAssignment
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O tipo de grupo de destino da configuração da política de grupo.|
 
@@ -99,6 +99,9 @@ Content-Length: 442
   }
 }
 ```
+
+
+
 
 
 

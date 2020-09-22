@@ -3,14 +3,14 @@ title: Obter groupPolicyDefinition
 description: Leia as propriedades e as relações do objeto groupPolicyDefinition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ba218bad414b9f24c62e4dcf81c9ec937ffdf08
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1123c43c079075ead462042cde88470a99064df7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454541"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068319"
 ---
 # <a name="get-grouppolicydefinition"></a>Obter groupPolicyDefinition
 
@@ -89,6 +89,9 @@ Content-Length: 505
   }
 }
 ```
+
+
+
 
 
 

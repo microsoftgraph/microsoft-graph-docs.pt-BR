@@ -3,14 +3,14 @@ title: Listar importedDeviceIdentityResults
 description: Listar Propriedades e relações dos objetos importedDeviceIdentityResult.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8009b7b53b173ce4e62b0f606b780b2ef0db7c11
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3251e1f1f8f69d68cd1b36068b959f1d42378bf6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450957"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068543"
 ---
 # <a name="list-importeddeviceidentityresults"></a>Listar importedDeviceIdentityResults
 
@@ -50,7 +50,7 @@ GET /deviceManagement/importedDeviceIdentities
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -85,6 +85,9 @@ Content-Length: 606
   ]
 }
 ```
+
+
+
 
 
 

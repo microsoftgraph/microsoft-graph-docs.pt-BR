@@ -5,12 +5,12 @@ description: Retornar os metadados de uma lista.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bac6d7d28971e7850f9a9360e93346f4e9a902a6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 117a6c04cebc19927b7f62ec82aa585ca51f4863
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470279"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068046"
 ---
 # <a name="get-metadata-for-a-list"></a>Obter metadados de uma lista
 
@@ -93,7 +93,7 @@ Content-type: application/json
 Com instruções `select` e `expand`, você pode recuperar metadados de lista, definições de coluna e itens de lista em uma única solicitação.
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra como obter uma lista de um título de lista do SharePoint Online.
+O exemplo a seguir mostra como obter uma lista a partir de um título de lista do SharePoint Online.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list" } -->
@@ -288,3 +288,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

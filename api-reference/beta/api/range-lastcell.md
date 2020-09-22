@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 15c0d0733ac4fa48b8f6fa544623ac600c239912
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0856134f9e86d2e888368d528cf775a18c68c52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454738"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067927"
 ---
 # <a name="range-lastcell"></a>Range: LastCell
 
@@ -111,3 +111,5 @@ Content-length: 169
   ]
 }
 -->
+
+

@@ -6,16 +6,16 @@ title: Criar uma nova entrada em uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 19a415a7e8c24a84202c55fa562646621c22bb6b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fd39f686e1997cf0f768093970983cda37caa33e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457141"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068004"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Criar um novo item em uma lista
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -123,3 +123,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

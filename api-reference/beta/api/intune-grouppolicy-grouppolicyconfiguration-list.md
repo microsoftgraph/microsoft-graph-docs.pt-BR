@@ -3,14 +3,14 @@ title: Listar groupPolicyConfigurations
 description: Listar Propriedades e relações dos objetos groupPolicyConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c8e8ec0fc92f701d436552ce2565a47b6062b20
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f8567f4f11a71b34cfcd9cc2ccf1306b42ff0a6b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454669"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068403"
 ---
 # <a name="list-grouppolicyconfigurations"></a>Listar groupPolicyConfigurations
 
@@ -50,7 +50,7 @@ GET /deviceManagement/groupPolicyConfigurations
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -83,6 +83,9 @@ Content-Length: 448
   ]
 }
 ```
+
+
+
 
 
 

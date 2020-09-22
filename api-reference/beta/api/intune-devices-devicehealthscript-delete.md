@@ -3,14 +3,14 @@ title: Excluir deviceHealthScript
 description: Exclui deviceHealthScript.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a06a7e707d06a17f6117c5bf344090ed3893e2ba
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c895dac123295534728e141424b0cdd4155c5d82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380900"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068683"
 ---
 # <a name="delete-devicehealthscript"></a>Excluir deviceHealthScript
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

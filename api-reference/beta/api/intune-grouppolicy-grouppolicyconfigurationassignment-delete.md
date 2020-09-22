@@ -3,14 +3,14 @@ title: Excluir groupPolicyConfigurationAssignment
 description: Exclui groupPolicyConfigurationAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dfa74318062a0308d682eb5c4977422f32189a16
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 447a40f96ad57bd29d424d706a58d293324441b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454611"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068368"
 ---
 # <a name="delete-grouppolicyconfigurationassignment"></a>Excluir groupPolicyConfigurationAssignment
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

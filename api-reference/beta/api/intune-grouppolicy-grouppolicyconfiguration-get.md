@@ -3,14 +3,14 @@ title: Obter groupPolicyConfiguration
 description: Leia as propriedades e as relações do objeto groupPolicyConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 34fe7c17da8dcd1b3782d772122fa8deb44d34ae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4fc1a29aa128a101e843e98ab06c4f35c3213533
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454676"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068452"
 ---
 # <a name="get-grouppolicyconfiguration"></a>Obter groupPolicyConfiguration
 
@@ -84,6 +84,9 @@ Content-Length: 416
   }
 }
 ```
+
+
+
 
 
 

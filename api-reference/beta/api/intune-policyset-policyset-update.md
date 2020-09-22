@@ -3,14 +3,14 @@ title: ação Update
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 406c27f5e57c0aa4ac68e66ab53d1bdd77b9811b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: a9a9dcf2fafa7caa4e16d4729b4ba80e3b624c96
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791718"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068109"
 ---
 # <a name="update-action"></a>ação Update
 
@@ -129,6 +129,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

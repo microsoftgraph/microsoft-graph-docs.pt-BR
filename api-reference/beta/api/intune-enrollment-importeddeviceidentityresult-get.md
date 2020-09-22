@@ -3,14 +3,14 @@ title: Obter importedDeviceIdentityResult
 description: Leia as propriedades e as relações do objeto importedDeviceIdentityResult.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80b1d4d1384294225838a9af83e8df67952948de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2e6f44dffaff04c08ccd93ac9d7dd1f60a65931f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450980"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068592"
 ---
 # <a name="get-importeddeviceidentityresult"></a>Obter importedDeviceIdentityResult
 
@@ -86,6 +86,9 @@ Content-Length: 570
   }
 }
 ```
+
+
+
 
 
 

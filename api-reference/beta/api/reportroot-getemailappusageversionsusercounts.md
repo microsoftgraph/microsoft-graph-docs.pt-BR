@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: e63e32076bbfbd0ae36bfc767b02e3a80af4d18e
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.openlocfilehash: 96a385b40989c0716873cfb376a2fa8973786e41
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413279"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067802"
 ---
 # <a name="reportroot-getemailappusageversionsusercounts"></a>reportRoot: getEmailAppUsageVersionsUserCounts
 
@@ -194,3 +194,5 @@ Content-Length: 275
   "suppressions": [
   ]
 }-->
+
+

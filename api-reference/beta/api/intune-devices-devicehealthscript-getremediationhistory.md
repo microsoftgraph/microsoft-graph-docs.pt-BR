@@ -3,14 +3,14 @@ title: função getRemediationHistory
 description: Função para obter o número de correções por scripts de integridade do dispositivo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5469f8c5c4ae35d69e92b6d1e007bf4a0b3703ea
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 2e394a91f1a4a5e94e9103cd8645bf590f30dc8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176978"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068669"
 ---
 # <a name="getremediationhistory-function"></a>função getRemediationHistory
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/getRemediationH
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e um [deviceHealthScriptRemediationHistory](../resources/intune-devices-devicehealthscriptremediationhistory.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e um [deviceHealthScriptRemediationHistory](../resources/intune-devices-devicehealthscriptremediationhistory.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -82,6 +82,9 @@ Content-Length: 397
   }
 }
 ```
+
+
+
 
 
 

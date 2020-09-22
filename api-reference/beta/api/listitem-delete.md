@@ -6,16 +6,16 @@ title: Excluir uma entrada de uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f392ec8699fb2e079446c6f72c12c844db62852c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 69f16f69ffac98b7ad30ea92dc557ec252cf872b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067976"
 ---
 # <a name="delete-an-item-from-a-list"></a>Excluir um item de uma lista.
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -98,3 +98,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

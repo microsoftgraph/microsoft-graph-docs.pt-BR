@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5c3f126ce44bb71094f7b83f71727b1d82c8be2d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 940dafcd566e5d83327cce671d91de3268ab7f13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448588"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067983"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -566,3 +566,5 @@ YW5vdGhlciBtYWlsLg0K
   ]
 }
 -->
+
+

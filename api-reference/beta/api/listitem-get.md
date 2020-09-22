@@ -6,16 +6,16 @@ title: Obter uma entrada de uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 620e691a1f2de5b6276036e6a81dba4d2a381420
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 497ca5440f7e0d6803c1379a3c66d4b50024b2e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457130"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067956"
 ---
 # <a name="get-an-item-in-a-list"></a>Obter um item em uma lista
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -98,3 +98,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
