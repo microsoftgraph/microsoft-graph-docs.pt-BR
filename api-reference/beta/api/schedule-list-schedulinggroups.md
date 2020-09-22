@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 995c27fadaee51b423b171a5c60417d0e89239db
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 56520e5cbab4111b0316583a24220c82d54e5759
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42453842"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085315"
 ---
 # <a name="list-schedulegroups"></a>Listar scheduleGroups
 
@@ -141,3 +141,5 @@ Content-length: 401
   ]
 }
 -->
+
+

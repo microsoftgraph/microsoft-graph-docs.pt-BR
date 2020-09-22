@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5fce02b8f18a2745b06d1782ecadb7bc7bd3adc0
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: f0613a13e67889a8089fe16928ed09a12b1c58ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44154238"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085308"
 ---
 # <a name="schedule-share"></a>agendamento: share
 
@@ -128,3 +128,5 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+
+

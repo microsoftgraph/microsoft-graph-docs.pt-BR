@@ -3,14 +3,14 @@ title: tipo de recurso androidDeviceOwnerGlobalProxyDirect
 description: Proxy global do proprietário do dispositivo Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f1b57ebdfb44504295824637352d543ff64111e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 020ad601a261427df8a573c38e4b992a830d31bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463483"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085154"
 ---
 # <a name="androiddeviceownerglobalproxydirect-resource-type"></a>tipo de recurso androidDeviceOwnerGlobalProxyDirect
 
@@ -28,9 +28,9 @@ Herda de [androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|host|String|O nome do host|
+|host|Cadeia de caracteres|O nome do host|
 |propor|Int32|A porta|
-|excludedHosts|Coleção de cadeias de caracteres|Os hosts excluídos|
+|excludedHosts|Coleção String|Os hosts excluídos|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -52,6 +52,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

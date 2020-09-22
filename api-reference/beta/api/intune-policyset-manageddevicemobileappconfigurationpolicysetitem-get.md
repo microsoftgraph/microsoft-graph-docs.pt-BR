@@ -3,14 +3,14 @@ title: Obter managedDeviceMobileAppConfigurationPolicySetItem
 description: Leia as propriedades e as relações do objeto managedDeviceMobileAppConfigurationPolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2afce1c918bc31977d0fd16310596adc8e243bcf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 43463a6a20e52858f267e2ad0f8fbe030885f8fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449911"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085609"
 ---
 # <a name="get-manageddevicemobileappconfigurationpolicysetitem"></a>Obter managedDeviceMobileAppConfigurationPolicySetItem
 
@@ -87,6 +87,9 @@ Content-Length: 545
   }
 }
 ```
+
+
+
 
 
 

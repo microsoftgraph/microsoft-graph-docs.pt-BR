@@ -3,14 +3,14 @@ title: tipo de enumeração deliveryOptimizationRestrictPeerSelectionByOptions
 description: Valores para restringir a seleção de par.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fe29baa6ecd6951745e590ba309374c24cb2f08f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6c8a1f44050d2dc25e84529e1bab1d8c25e4a207
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420400"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085133"
 ---
 # <a name="deliveryoptimizationrestrictpeerselectionbyoptions-enum-type"></a>tipo de enumeração deliveryOptimizationRestrictPeerSelectionByOptions
 
@@ -26,7 +26,10 @@ Valores para restringir a seleção de par.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|Máscara de sub-rede|1|Máscara de sub-rede.|
+|Máscara de sub-rede|1 |Máscara de sub-rede.|
+
+
+
 
 
 

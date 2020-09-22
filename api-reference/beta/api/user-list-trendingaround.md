@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0746fc8e72c52ef3d406d7473e4bdf43f59d6562
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: d8d5b9806532750ff352634bde845d00fb920790
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085273"
 ---
 # <a name="list-trendingaround"></a>Listar trendingAround
 
@@ -74,3 +74,5 @@ Content-length: 226
   "webUrl": "webUrl-value",
 }
 ```
+
+

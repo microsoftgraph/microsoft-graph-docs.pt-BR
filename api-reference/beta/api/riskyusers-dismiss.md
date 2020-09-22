@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: 3a549ca4b50d1a0e873a905a6312e30d6bf1e838
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 4c4d5cbd4ac37e18ea766894381939f1b18021a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863513"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085316"
 ---
 # <a name="riskyuser-dismiss"></a>riskyUser: fechar
 
@@ -149,3 +149,5 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
+

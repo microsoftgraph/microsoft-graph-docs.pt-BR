@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 93d4b465757dc2effc2a2191f9b5fcedf9ae7efe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4e5df279d3d30f1d06b4153f657f6e48e3ba2402
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455715"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085546"
 ---
 # <a name="get-plannerbuckettaskboardtaskformat"></a>Obter plannerBucketTaskBoardTaskFormat
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -105,3 +105,5 @@ Content-length: 76
   ]
 }
 -->
+
+

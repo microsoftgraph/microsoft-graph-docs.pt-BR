@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 5220140589758b20285d738a4d60eadfd80defe1
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 52fcf121c3725a61ce833e766122baab0d3a2137
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566239"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085413"
 ---
 # <a name="create-reviewset"></a>Criar reviewset
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça a representação JSON do [reviewset](../res
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| displayName  | string      | O nome do conjunto de revisão. |
+| displayName  | cadeia de caracteres      | O nome do conjunto de revisão. |
 
 ## <a name="response"></a>Resposta
 
@@ -128,3 +128,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

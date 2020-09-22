@@ -3,14 +3,14 @@ title: tipo de enumeração derivedCredentialProviderType
 description: Tipo de provedor para credenciais derivadas.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 32fba0b06376cd916181e14e2e10350291b2108e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 90b2b831413e53f33a9ce00fbf477992f72cb0cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473789"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085126"
 ---
 # <a name="derivedcredentialprovidertype-enum-type"></a>tipo de enumeração derivedCredentialProviderType
 
@@ -26,10 +26,13 @@ Tipo de provedor para credenciais derivadas.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Nenhum provedor de credenciais derivado configurado.|
-|entrustDataCard|1|Cartão de Entrust.|
-|purebred|duas|Agência de sistemas de informações do purebred-Defense.|
+|entrustDataCard|1 |Cartão de Entrust.|
+|purebred|2 |Agência de sistemas de informações do purebred-Defense.|
 |xTec|3D|Xtec - AuthentX.|
 |intercede|4 |Intercede.|
+
+
+
 
 
 
