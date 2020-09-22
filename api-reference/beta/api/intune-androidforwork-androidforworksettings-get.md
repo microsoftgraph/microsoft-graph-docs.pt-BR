@@ -3,18 +3,18 @@ title: Get androidForWorkSettings
 description: Ler propriedades e relações do objeto androidForWorkSettings.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f80d7cd0b0c56274018645872bd81e2e0bfb59e4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3704a306b3256d3675e1cad0e28f962122c47e40
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43395696"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006563"
 ---
 # <a name="get-androidforworksettings"></a>Get androidForWorkSettings
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -88,6 +88,9 @@ Content-Length: 613
   }
 }
 ```
+
+
+
 
 
 
