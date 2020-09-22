@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 194b1ecbb31c6674ac8e285792d302fc2ee4ae76
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 61031c5b187d31dc5b81931f3d4ce41ed9005368
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863141"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025519"
 ---
 # <a name="get-schemaextension"></a>Get schemaExtension
 
@@ -100,3 +100,4 @@ Content-length: 201
   "section": "documentation",
   "tocPath": ""
 }-->
+

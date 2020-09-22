@@ -3,14 +3,14 @@ title: tipo de enumeração localSecurityOptionsInformationShownOnLockScreenType
 description: Valores possíveis para LocalSecurityOptionsInformationShownOnLockScreenType
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3cd944301f8c5532b06f75b48566c63f382cd1f9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b6ca6e59fa4823dd14af73fddb95b0f7c5487dcc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439822"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026667"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>tipo de enumeração localSecurityOptionsInformationShownOnLockScreenType
 
@@ -26,9 +26,12 @@ Valores possíveis para LocalSecurityOptionsInformationShownOnLockScreenType
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|userDisplayNameDomainUser|1|Nome de exibição do usuário, nomes de domínio e de usuário|
-|userDisplayNameOnly|duas|Somente nome de exibição do usuário|
-|doNotDisplayUser|3D|Não exibir informações do usuário|
+|userDisplayNameDomainUser|1 |Nome de exibição do usuário, nomes de domínio e de usuário|
+|userDisplayNameOnly|2 |Somente nome de exibição do usuário|
+|doNotDisplayUser|3 |Não exibir informações do usuário|
+
+
+
 
 
 

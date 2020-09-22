@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e7f44133050a616cac190aee5c7eeac9904f8715
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 5caf422293a0e06fa9ba524af2a4809b49709140
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44990261"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026387"
 ---
 # <a name="rbacapplicationmultiple-resource-type"></a>tipo de recurso rbacApplicationMultiple
 
@@ -50,3 +50,5 @@ Nenhum
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

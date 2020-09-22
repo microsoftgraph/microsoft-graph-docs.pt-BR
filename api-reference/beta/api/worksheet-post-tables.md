@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ea88fc2fdd0d5514cbcf4211ff8452d0fd51eb4c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e8bcf6989433750302b30595e29c2b101cf2234b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451177"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024665"
 ---
 # <a name="create-table"></a>Criar tabela
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,12 +45,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro       | Tipo|Descrição|
 |:---------------|:----------|:----------|
-| Endereço  | string| Endereço do intervalo. Se você estiver chamando esta API fora do `worksheets/{id|name}/tables/add` caminho, não há necessidade de suporte para o prefixo do nome da planilha no endereço. No entanto, se você estiver ligando para `workbook/tables/add` fora do caminho, forneça o nome da planilha na qual a tabela precisa ser criada (exemplo `sheet1!A1:D4`:)|
+| Endereço  | string| Endereço do intervalo. Se você estiver chamando esta API fora do `worksheets/{id|name}/tables/add` caminho, não há necessidade de suporte para o prefixo do nome da planilha no endereço. No entanto, se você estiver ligando para fora do `workbook/tables/add` caminho, forneça o nome da planilha na qual a tabela precisa ser criada (exemplo: `sheet1!A1:D4` )|
 | hasHeaders  | booliano|Valor booliano que indica se o intervalo tem rótulos de coluna. Se a fonte não contiver cabeçalhos (ou seja,. Quando essa propriedade for definida como false, o Excel gerará automaticamente o cabeçalho deslocando os dados de uma linha para baixo.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [workbooktable](../resources/workbooktable.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [workbooktable](../resources/workbooktable.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -119,3 +119,5 @@ Content-length: 109
   ]
 }
 -->
+
+

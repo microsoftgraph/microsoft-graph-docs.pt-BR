@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 55b4afed8db68fe07cb04965c1665f26f61b1c59
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0fd7715380577097a93cd8d8cc8a62178f50ec24
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457297"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026422"
 ---
 # <a name="publicclientapplication-resource-type"></a>tipo de recurso publicClientApplication
 
@@ -57,3 +57,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

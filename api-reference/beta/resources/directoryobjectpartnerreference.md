@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1e98395b627489b73a3638c88afc91b9edd86e54
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a161fcd8dea1084ebb004e054daa220c85d83d26
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442981"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027115"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>tipo de recurso directoryObjectPartnerReference
 
@@ -25,7 +25,7 @@ Representa uma referência a um objeto Directory em uma organização parceira. 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |description|String| Descrição do objeto retornado. Somente leitura. |
-|displayName|Cadeia de caracteres| Nome do objeto de diretório que está sendo retornado, como o grupo ou o aplicativo. Somente leitura. |
+|displayName|String| Nome do objeto de diretório que está sendo retornado, como o grupo ou o aplicativo. Somente leitura. |
 |externalPartnerTenantId|Guid| O identificador de locatário para o locatário do parceiro. Somente leitura. |
 |id|String| O identificador exclusivo do recurso. Herdado de [directoryObject](directoryobject.md). Somente leitura. |
 |objectType|String| O tipo do objeto referenciado no locatário do parceiro. Somente leitura. |
@@ -66,3 +66,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

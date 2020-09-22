@@ -5,16 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 49e268f894b6733eb3f44d36fa34bc7c80df0ded
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a5db824fabc1cedb27d15c4b2cbfbce08bd59191
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498914"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026926"
 ---
 # <a name="externalconnection-resource-type"></a>tipo de recurso externalConnection
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,9 +39,9 @@ Uma conexão com a Microsoft Search a partir de uma fonte externa.
 
 | Propriedade      | Tipo                              | Descrição |
 |:--------------|:----------------------------------|:------------|
-| Configuration | [configuration](configuration.md) | Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar o conteúdo na conexão. Opcional. |
-| description   | Cadeia de caracteres                            | Descrição da conexão exibida no centro de administração do Microsoft 365. Opcional. |
-| id            | String                            | ID exclusiva fornecida pelo desenvolvedor da conexão dentro do locatário do Azure Active Directory. Comprimento máximo de 32 caracteres. Deve conter apenas caracteres alfanuméricos. Não pode começar `Microsoft` com um dos seguintes valores: `None` `Directory`,, `Exchange`, `ExchangeArchive`, `LinkedIn`, `Mailbox`, `MicrosoftSearch`, `OneDriveBusiness`, `SharePoint`, `Teams`,,, `Yammer`, `Connectors`,,,,,,,. Obrigatório. |
+| configuration | [configuration](configuration.md) | Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar o conteúdo na conexão. Opcional. |
+| description   | String                            | Descrição da conexão exibida no centro de administração do Microsoft 365. Opcional. |
+| id            | String                            | ID exclusiva fornecida pelo desenvolvedor da conexão dentro do locatário do Azure Active Directory. Comprimento máximo de 32 caracteres. Deve conter apenas caracteres alfanuméricos. Não pode começar com `Microsoft` um dos seguintes valores:,, `None` `Directory` ,, `Exchange` `ExchangeArchive` `LinkedIn` , `Mailbox` , `MicrosoftSearch` , `OneDriveBusiness` ,,, `SharePoint` , `Teams` `Yammer` `Connectors` ,,,,,,,,,. Obrigatório. |
 | nome          | String                            | O nome de exibição da conexão a ser exibida no centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. Obrigatório. |
 
 ## <a name="relationships"></a>Relações
@@ -84,3 +84,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

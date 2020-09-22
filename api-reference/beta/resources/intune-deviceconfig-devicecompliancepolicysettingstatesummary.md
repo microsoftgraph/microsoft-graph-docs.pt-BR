@@ -3,14 +3,14 @@ title: Tipo de recurso deviceCompliancePolicySettingStateSummary
 description: Resumo de estado de configuração de política de conformidade do dispositivo por toda a conta.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa446c9343a2ce035b7483bdd1f832b7360c9b2b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d2fd3f4bbee10560aeb90bda53c06173f5a6ad4b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469505"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026800"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingStateSummary
 
@@ -35,7 +35,7 @@ Resumo de estado de configuração de política de conformidade do dispositivo p
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|configuração|String|O nome da classe de configuração e o nome da propriedade.|
+|configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
 |settingName|Cadeia de caracteres|Nome da configuração.|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|Configuração de plataforma. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
@@ -75,6 +75,9 @@ Veja a seguir uma representação JSON do recurso.
   "conflictDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

@@ -6,12 +6,12 @@ description: Representa um item em uma lista do sharepoint.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 96c61daea047f969f88352429a46fc7efb8b776d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 276a8f61cc12cb2860bab0025d430f039b96b89a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447560"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025211"
 ---
 # <a name="listitem-resource"></a>recurso listItem
 
@@ -141,3 +141,4 @@ Veja a seguir uma representação JSON de um recurso **listItem**.
     "ListItem": "#"
   }
 } -->
+

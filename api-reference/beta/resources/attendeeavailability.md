@@ -5,16 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5c01c12f486fd8efeb5a3c9ba3d90776e480bafa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3d67b522023b6bc827cd66a3558c4dfc383236fb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508140"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024429"
 ---
 # <a name="attendeeavailability-resource-type"></a>Tipo de recurso attendeeAvailability
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,3 +57,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

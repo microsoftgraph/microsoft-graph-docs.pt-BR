@@ -6,16 +6,16 @@ title: RestoreAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: ec2456105c7ae1844f97e80601fe2df3bf38d028
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fca74c8bdfbae8c43f5dab0cafbe9cd4abadd008
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521086"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026248"
 ---
 # <a name="restoreaction-resource-type"></a>Tipo de recurso RestoreAction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,3 +56,5 @@ Registros de atividade de item atualmente só estão disponíveis no SharePoint 
   "suppressions": []
 }
 -->
+
+

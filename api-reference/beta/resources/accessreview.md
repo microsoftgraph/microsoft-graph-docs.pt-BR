@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 637ebeae4aea6311cbeba6170d29dec047a200ad
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 36656c8e2d9d4453ba9a126ed6eecefcf13ddebc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845768"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024595"
 ---
 # <a name="accessreview-resource-type"></a>tipo de recurso accessReview
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Representa uma análise do Azure AD [Access](accessreviews-root.md).  
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -29,16 +29,16 @@ Representa uma análise do Azure AD [Access](accessreviews-root.md).
 |[Obter accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   Obtenha uma revisão do Access com uma ID específica. |
 |[Criar accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   Criar um novo accessReview. |
 |[Atualizar accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | Atualizar um accessReview. |
-|[Excluir accessReview](../api/accessreview-delete.md) | Nenhum   | Excluir um accessReview. |
+|[Excluir accessReview](../api/accessreview-delete.md) | Nenhum.   | Excluir um accessReview. |
 |[Listar revisores do accessReview](../api/accessreview-listreviewers.md) |      coleção [UserIdentity](useridentity.md)| Obter os revisores de um accessReview. |
-|[Adicionar revisor accessReview](../api/accessreview-addreviewer.md) |      Nenhum   |   Adicionar um revisor a um accessReview. |
-|[Remover revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum  |   Remover um revisor de um accessReview. |
+|[Adicionar revisor accessReview](../api/accessreview-addreviewer.md) |      Nenhum.   |   Adicionar um revisor a um accessReview. |
+|[Remover revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum.  |   Remover um revisor de um accessReview. |
 |[Listar decisões accessReview](../api/accessreview-listdecisions.md) |      coleção [accessReviewDecision](accessreviewdecision.md)| Obtenha as decisões de um accessReview.|
 |[Listar minhas decisões do accessReview](../api/accessreview-listmydecisions.md) |     coleção [accessReviewDecision](accessreviewdecision.md)| Como revisor, obtenha as minhas decisões de um accessReview.|
-|[Enviar lembrete accessReview](../api/accessreview-sendreminder.md) |        Nenhum   |   Envie um lembrete para os revisores de um accessReview. |
-|[Parar accessReview](../api/accessreview-stop.md) |     Nenhum   |   Parar um accessReview. |
-|[Redefinir decisões do accessReview](../api/accessreview-reset.md) |     Nenhum   |   Redefina as decisões em um accessReview em andamento.|
-|[Aplicar decisões accessReview](../api/accessreview-apply.md) |     Nenhum   |   Aplique as decisões de um accessReview concluído.|
+|[Enviar lembrete accessReview](../api/accessreview-sendreminder.md) |        Nenhum.   |   Envie um lembrete para os revisores de um accessReview. |
+|[Parar accessReview](../api/accessreview-stop.md) |     Nenhum.   |   Parar um accessReview. |
+|[Redefinir decisões do accessReview](../api/accessreview-reset.md) |     Nenhum.   |   Redefina as decisões em um accessReview em andamento.|
+|[Aplicar decisões accessReview](../api/accessreview-apply.md) |     Nenhum.   |   Aplique as decisões de um accessReview concluído.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -57,7 +57,7 @@ Representa uma análise do Azure AD [Access](accessreviews-root.md).
 
 
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 
 
@@ -155,3 +155,5 @@ O tipo de recurso **accessReviewRecurrenceSettings** é incorporado nas configur
   "suppressions": []
 }
 -->
+
+

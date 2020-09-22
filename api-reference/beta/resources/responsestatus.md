@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: harini84
-ms.openlocfilehash: 4ab1c5e54112b5d51e3d88452e2ee0ddcb59f6dd
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ccb9d02fd8319798d691756526a42e88a661b93a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811382"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026247"
 ---
 # <a name="responsestatus-resource-type"></a>Tipo de recurso responseStatus
 
@@ -58,3 +58,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

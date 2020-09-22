@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 89c98d2d136ba60f438409b36f0ecbffdb3937ef
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: e050b70cf7842bb79a29288d1b7bc6a832905af0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383592"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025400"
 ---
 # <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipalName: checkMemberObjects
 
@@ -135,3 +135,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

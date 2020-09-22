@@ -3,14 +3,14 @@ title: Excluir unsupportedDeviceConfiguration
 description: Exclui unsupportedDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 946a0ddb5e2ed5f8d6fc9f783222af422a83b3ac
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2ee1b0dc7ad3ea528f747c7a34419ff485d41fbd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43341461"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024854"
 ---
 # <a name="delete-unsupporteddeviceconfiguration"></a>Excluir unsupportedDeviceConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

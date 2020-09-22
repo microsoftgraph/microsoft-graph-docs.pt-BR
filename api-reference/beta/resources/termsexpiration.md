@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
 doc_type: resourcePageType
-ms.openlocfilehash: e811e4816fa63e98201d1a14403d6c3525ace2c0
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: b3b5de1d52c4a3abb1eee7d7199a539795ba1ac3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46644022"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026100"
 ---
 # <a name="termsexpiration-resource-type"></a>tipo de recurso termsExpiration
 
@@ -59,3 +59,5 @@ Veja a seguir uma representação JSON desse recurso.
   "suppressions": []
 }
 -->
+
+

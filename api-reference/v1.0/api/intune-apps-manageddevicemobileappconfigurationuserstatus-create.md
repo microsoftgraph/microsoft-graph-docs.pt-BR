@@ -3,14 +3,14 @@ title: Criar managedDeviceMobileAppConfigurationUserStatus
 description: Criar um novo objeto managedDeviceMobileAppConfigurationUserStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e06f1c91caaf08eacb8d1205fad0174a309a77e9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 18432867f68840a319e38c6a37a56af9a0d10b7b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471687"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025939"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>Criar managedDeviceMobileAppConfigurationUserStatus
 
@@ -99,6 +99,9 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

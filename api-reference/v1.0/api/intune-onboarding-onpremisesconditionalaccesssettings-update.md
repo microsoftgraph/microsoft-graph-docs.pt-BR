@@ -3,14 +3,14 @@ title: Atualizar onPremisesConditionalAccessSettings
 description: Atualizar as propriedades de um objeto onPremisesConditionalAccessSettings.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9adda2b21e79cc55670643079e8655f57992055
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 486131f4fb204d5d1fcf877b1709df20c7f3689a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466574"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025687"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>Atualizar onPremisesConditionalAccessSettings
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [onPremisesCondi
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Ainda não documentado|
-|enabled|Boolean|Indica se o acesso condicional local está habilitado para esta organização|
+|enabled|Booliano|Indica se o acesso condicional local está habilitado para esta organização|
 |includedGroups|Coleção de GUIDs|Grupos de usuários que serão direcionados pelo acesso condicional local. Todos os usuários nesses grupos deverão ter dispositivos móveis gerenciados e compatíveis com o acesso a email.|
 |excludedGroups|Coleção de GUIDs|Grupos de usuários que estarão isentos ao acesso condicional local. Todos os usuários desses grupos ficarão isentos da política de acesso condicional.|
 |overrideDefaultRule|Booliano|Substitui as regras de acesso padrão ao permitir a um dispositivo que seja concedida a garantia de acesso.|
@@ -104,6 +104,9 @@ Content-Length: 324
   "overrideDefaultRule": true
 }
 ```
+
+
+
 
 
 

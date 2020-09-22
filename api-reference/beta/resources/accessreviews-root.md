@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 3cec4535474fcb4dcff9d9fd14986f9b541fc4f9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9a46ff3b5bd1d3df24b59335a3ab8bb1c269a7f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450846"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024574"
 ---
 # <a name="azure-ad-access-reviews"></a>Revisões de acesso ao Azure AD
 
@@ -69,7 +69,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 
 As funções de diretório a seguir são necessárias para um usuário de chamada gerenciar revisões, programas e controles do Access.
 
-| Recurso de destino | Operation | Permissões de aplicativos | Função de diretório necessária do usuário de chamada |
+| Recurso de destino | Operação | Permissões de aplicativos | Função de diretório necessária do usuário de chamada |
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |[accessReview](accessreview.md) de uma função do Azure AD | Ler | AccessReview. Read. All ou AccessReview. ReadWrite. All | Administrador global, administrador de segurança, leitor de segurança ou administrador de função privilegiada |
 |[accessReview](accessreview.md) de uma função do Azure AD | Criar, atualizar ou excluir | AccessReview.ReadWrite.All | Administrador global ou administrador de função privilegiada |
@@ -97,3 +97,5 @@ Além disso, um usuário que é um revisor atribuído de uma revisão do Access 
   "suppressions": []
 }
 -->
+
+

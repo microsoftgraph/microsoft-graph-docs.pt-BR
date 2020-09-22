@@ -3,14 +3,14 @@ title: Obter groupPolicyUploadedCategory
 description: Leia as propriedades e as relações do objeto groupPolicyUploadedCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e1de15daf90609875d283de25af6c62a89fc3e4b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b298e31a58a458ba28300ffadbaf1d2fbe936ad9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444673"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024805"
 ---
 # <a name="get-grouppolicyuploadedcategory"></a>Obter groupPolicyUploadedCategory
 
@@ -83,6 +83,9 @@ Content-Length: 270
   }
 }
 ```
+
+
+
 
 
 

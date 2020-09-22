@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 94ebd10ef87946b5333ec5a06d5edccadc298158
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d45153a08572f32f29128fd4d3f51638d71c951b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503569"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027066"
 ---
 # <a name="shipmentmethods-resource-type"></a>tipo de recurso shipmentMethods
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ Representa um método de entrega no Dynamics 365 Business central, como no-break
 |[Obter shipmentMethods](../api/dynamics-shipmentmethods-get.md)|shipmentMethods|Obtém um método de remessa.|
 |[Postar shipmentMethods](../api/dynamics-create-shipmentmethods.md)|shipmentMethods|Cria um método de remessa.|
 |[Patch shipmentMethods](../api/dynamics-shipmentmethods-update.md)|shipmentMethods|Atualiza um método de remessa.|
-|[Excluir shipmentMethods](../api/dynamics-shipmentmethods-delete.md)|nenhuma|Exclui um método de remessa.|
+|[Excluir shipmentMethods](../api/dynamics-shipmentmethods-delete.md)|Nenhuma|Exclui um método de remessa.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -56,5 +56,7 @@ Veja a seguir uma representação JSON do shipmentMethod.
 }
 
 ```
+
+
 
 

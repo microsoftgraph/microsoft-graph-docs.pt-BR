@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: d2c4f007c23ae32fb79255a0a8f1509589740a70
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 140470f0e293b41770779628280f0117d8bb6a89
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503429"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027052"
 ---
 # <a name="taxareas-resource-type"></a>tipo de recurso taxAreas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ Representa um tipo de recurso de área de imposto no Dynamics 365 Business centr
 |[Obter taxAreas](../api/dynamics-taxarea-get.md)|taxAreas|Obtém um objeto de área de impostos.|
 |[Postar taxAreas](../api/dynamics-create-taxarea.md)|taxAreas|Cria um objeto de área de impostos.|
 |[Patch taxAreas](../api/dynamics-taxarea-update.md)|taxAreas|Atualiza um objeto de área de impostos.|
-|[Excluir taxAreas](../api/dynamics-taxarea-delete.md)|nenhuma|Exclui um objeto de área de impostos.|
+|[Excluir taxAreas](../api/dynamics-taxarea-delete.md)|Nenhuma|Exclui um objeto de área de impostos.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -55,5 +55,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "datetime"
 }
 ```
+
+
 
 

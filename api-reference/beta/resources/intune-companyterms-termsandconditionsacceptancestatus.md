@@ -3,14 +3,14 @@ title: Tipo de recurso termsAndConditionsAcceptanceStatus
 description: Uma entidade termsAndConditionsAcceptanceStatus representa o status de aceitação de uma política de Termos e Condições (T&C) por um determinado usuário. Os usuários devem aceitar a versão mais recente dos termos para manterem o acesso ao Portal da Empresa.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 428ba67a1bece7cec8e5d6e84c11b35a00311f8e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2809ab80228fd65c491c6dd232e90e253de839b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455266"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024378"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Tipo de recurso termsAndConditionsAcceptanceStatus
 
@@ -63,6 +63,9 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
+
+
+
 
 
 

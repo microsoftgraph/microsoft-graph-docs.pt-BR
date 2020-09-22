@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f4b462f2f597f777befd643004d918e5b2044620
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: b0e92b7b454c2fe3073791dab07b780a0bed7b03
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181810"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027094"
 ---
 # <a name="directoryrole-resource-type"></a>tipo de recurso directoryRole
 
@@ -41,8 +41,8 @@ Esse recurso permite:
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|description|Cadeia de caracteres|A descrição da função de diretório. Somente leitura. |
-|displayName|Cadeia de caracteres|O nome de exibição da função de diretório. Somente leitura. |
+|description|String|A descrição da função de diretório. Somente leitura. |
+|displayName|String|O nome de exibição da função de diretório. Somente leitura. |
 |id|String|O identificador exclusivo da função de diretório. Herdado de [directoryObject](directoryobject.md). Chave, Não Anulável, Somente Leitura.|
 |roleTemplateId|String| A **id** do [directoryRoleTemplate](directoryroletemplate.md) em que esta função se baseia. A propriedade deve ser especificada ao ativar uma função de diretório em um locatário com uma operação POST. Depois que a função directory tiver sido ativada, a propriedade será somente leitura. |
 
@@ -90,3 +90,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

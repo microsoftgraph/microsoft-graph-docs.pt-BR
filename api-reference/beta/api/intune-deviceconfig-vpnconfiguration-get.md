@@ -3,14 +3,14 @@ title: Obter vpnConfiguration
 description: Leia as propriedades e as relações do objeto vpnConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ad4726953e2f703984c35c5dcd91b0261a0796b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b9cca8eb246edd6fd77488449747fb14c84cc604
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43341155"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024833"
 ---
 # <a name="get-vpnconfiguration"></a>Obter vpnConfiguration
 
@@ -121,6 +121,9 @@ Content-Length: 1642
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso deviceComplianceScriptError
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d37e750d60d50a166d7c9d89f3049959f33e5da
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: c0ea8bf7c882d7a31c4f4477c7d7b74994676497
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44789300"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026779"
 ---
 # <a name="devicecompliancescripterror-resource-type"></a>tipo de recurso deviceComplianceScriptError
 
@@ -29,7 +29,7 @@ Ainda não documentado
 |mensagem|String|Mensagem de erro.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "message": "String"
 }
 ```
+
+
+
 
 
 

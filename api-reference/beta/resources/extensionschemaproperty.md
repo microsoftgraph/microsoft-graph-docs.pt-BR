@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: keylimesoda
-ms.openlocfilehash: e28642e12e7c9bb52b16c21e775e91562de1ebdb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c0bb3a423983b70066e2451a5029f4eaf2acaebd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423675"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026934"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Tipo de recurso extensionSchemaProperty
 
@@ -25,7 +25,7 @@ Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |nome|String| O nome da propriedade fortemente tipada definida como parte de uma extensão de esquema.|
-|type|Cadeia de caracteres| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
+|tipo|String| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
 
 #### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte 
 Há suporte para os seguintes tipos de dados quando se define uma propriedade em uma extensão do esquema:
@@ -69,3 +69,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 890da6054328da8619ede99de925b941bd41e20a
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: f9d8eecb7b7804af7296bda581eb9b9c9d58d1b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006951"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026114"
 ---
 # <a name="synchronizationjob-resource-type"></a>tipo de recurso synchronizationJob
 
@@ -24,9 +24,9 @@ Realiza a sincronização periodicamente em segundo plano, pesquisando alteraç�
 
 | Método        | Tipo de retorno               | Descrição                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[Listar](../api/synchronization-synchronizationjob-list.md)             |coleção [synchronizationJob](synchronization-synchronizationjob.md)  |Listar trabalhos existentes para uma determinada instância de aplicativo (entidade de serviço).|
+|[List](../api/synchronization-synchronizationjob-list.md)             |coleção [synchronizationJob](synchronization-synchronizationjob.md)  |Listar trabalhos existentes para uma determinada instância de aplicativo (entidade de serviço).|
 |[Obter synchronizationJob](../api/synchronization-synchronizationjob-get.md) | [synchronizationJob](synchronization-synchronizationjob.md) |Ler propriedades e relações de um objeto synchronizationJob.|
-|[Criar](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |Criar novo trabalho para um determinado aplicativo.|
+|[Create](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |Criar novo trabalho para um determinado aplicativo.|
 |[Start](../api/synchronization-synchronizationjob-start.md)          |Nenhum   |Inicie a sincronização. Se o trabalho estiver em um estado pausado, ele continuará a partir do ponto em que o trabalho foi pausado. Se o trabalho estiver em quarentena, o status de quarentena será limpo.|
 |[Restart](../api/synchronization-synchronizationjob-restart.md)      |Nenhum   |Forçar o início do trabalho e processar novamente todos os objetos no diretório.|
 |[Pause](../api/synchronization-synchronizationjob-pause.md)          |Nenhum   |Interromper temporariamente a sincronização. Todo o progresso, incluindo o estado do trabalho, é mantido e o trabalho continuará de onde parou quando uma chamada [inicial](../api/synchronization-synchronizationjob-start.md) é feita.|
@@ -86,3 +86,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

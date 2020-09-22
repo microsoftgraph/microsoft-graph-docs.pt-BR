@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b8447db0c2fa5b59b1167a452ac462717dceb7ae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2811983bebfbba32670c8eadc229512199f5aa23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509840"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025428"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Listar secureScoreControlProfiles
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método. O corpo da solicitaç
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos **secureScoreControlProfiles** no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos **secureScoreControlProfiles** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -176,3 +176,4 @@ Content-type: application/json
   ]
 }
 -->
+

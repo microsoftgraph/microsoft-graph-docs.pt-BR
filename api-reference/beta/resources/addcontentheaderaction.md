@@ -5,16 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d426252b6ab83557c3d3085ac4ffa7a530aae271
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e7a5675cdf150f03b283f664e248319d49c820d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024512"
 ---
 # <a name="addcontentheaderaction-resource-type"></a>tipo de recurso addContentHeaderAction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ Representa uma ação que especifica os detalhes sobre o cabeçalho de conteúdo
 | fontColor     | String | Cor da fonte a ser usada para o cabeçalho.                      |
 | fontName      | String | Nome da fonte a ser usada para o cabeçalho.                       |
 | fontSize      | Int32  | Tamanho da fonte a ser usado para o cabeçalho.                              |
-| Margin        | Int32  | A margem do cabeçalho na parte superior do documento.        |
+| margin        | Int32  | A margem do cabeçalho na parte superior do documento.        |
 | texto          | String | O conteúdo do próprio cabeçalho.                            |
 | uiElementname | String | O nome do elemento de interface do usuário onde o cabeçalho deve ser colocado. |
 
@@ -66,3 +66,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

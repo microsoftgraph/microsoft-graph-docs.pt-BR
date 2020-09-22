@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 75d6865cc1f02dde270bedb40b6c0344d69a4bb9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 16e2967046797abce4ee04e7a8fae4d451447823
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509833"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025407"
 ---
 # <a name="list-securescores"></a>Listar secureScores
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método. O corpo da solicitaç
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos **secureScores** no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos **secureScores** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -176,3 +176,4 @@ Content-type: application/json
   ]
 }
 -->
+

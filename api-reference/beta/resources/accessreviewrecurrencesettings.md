@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsofit-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 7c45a0b57d869acdb49c5a37f235232c70e8ec6f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e629bbe5affbf2f21b7c4041e62a3df68785dacc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472233"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024576"
 ---
 # <a name="accessreviewrecurrencesettings-resource-type"></a>tipo de recurso accessReviewRecurrenceSettings
 
@@ -22,8 +22,8 @@ Namespace: microsoft.graph
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-| recurrenceType | cadeia de caracteres |  |
-| recurrenceEndType | cadeia de caracteres |  |
+| recurrenceType | string |  |
+| recurrenceEndType | string |  |
 | durationInDays | Int32 |  |
 | recurrenceCount | Int32 |  |
 
@@ -43,6 +43,8 @@ Veja a seguir uma representação JSON do recurso.
     "recurrenceCount":"Int32"
 }
 ```
+
+
 
 
 

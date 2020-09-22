@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 62c49b7e725b923b95c514a7d3e955fed5fce46c
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.openlocfilehash: f9200d336ae69ae02c45ab1d6fc3d9df86691ebc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413378"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026969"
 ---
 # <a name="expirationpattern-resource-type"></a>tipo de recurso expirationPattern
 
@@ -33,9 +33,9 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solic
 | Membro | Valor| Descrição |
 |:---------------|:--------|:----------|
 |Não especificado|,0|Nenhum cronograma de expiração especificado.|
-|noexpiração|1|O solicitante não quis que o acesso expire.|
-|afterDateTime|duas|O Access expirará após uma data e hora especificadas.|
-|afterDuration|3D|O Access expirará após uma determinada duração relativa ao acesso concedido.|
+|noexpiração|1 |O solicitante não quis que o acesso expire.|
+|afterDateTime|2 |O Access expirará após uma data e hora especificadas.|
+|afterDuration|3 |O Access expirará após uma determinada duração relativa ao acesso concedido.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -66,3 +66,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

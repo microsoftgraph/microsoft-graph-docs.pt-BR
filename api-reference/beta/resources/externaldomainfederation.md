@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ffeaa955ac43a52a0e3485f4a561163d4d27a957
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: d81255a3687bf3d6aafe9369f901b209f5827b77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509957"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026912"
 ---
 # <a name="externaldomainfederation-resource-type"></a>tipo de recurso externalDomainFederation
 
@@ -24,9 +24,9 @@ Usado nas fontes de identidade de um [connectedOrganization](connectedOrganizati
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| displayName |Cadeia de caracteres | O nome da fonte de identidade, normalmente também o nome de domínio. Somente leitura. |
+| displayName |String | O nome da fonte de identidade, normalmente também o nome de domínio. Somente leitura. |
 | domainName |Cadeia de caracteres | O nome do domínio. Somente leitura. |
-| issuerUri |Cadeia de caracteres | O issuerURI da Federação de entrada. Somente leitura. |
+| issuerUri |String | O issuerURI da Federação de entrada. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
 
@@ -62,3 +62,5 @@ Veja a seguir uma representação JSON do tipo.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

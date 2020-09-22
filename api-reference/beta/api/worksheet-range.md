@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a7ae6fe3f01eb5105791770451fba1bf1525290e
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 4a7ccc00cdaa0ab594c9f35dde1ed819a9c5565c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383809"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024658"
 ---
 # <a name="worksheet-range"></a>Worksheet: Range
 
@@ -120,3 +120,5 @@ Content-length: 169
   ]
 }
 -->
+
+

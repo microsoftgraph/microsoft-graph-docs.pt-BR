@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8b2e3062383dd1cc1c7d04342b2dcbd5be0afd67
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4fecc2cb7d637c00f0f3f1b63d0080514639ed07
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521121"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026359"
 ---
 # <a name="requestomanager-complex-type"></a>tipo complexo requestoManager
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Usado nas configurações de aprovação de uma [política de atribuição de pa
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| IsBackup | Boolean | Para um gerente em um estágio de aprovação, indica se o gerente é um Aprovador de fallback de backup. |
+| IsBackup | Booliano | Para um gerente em um estágio de aprovação, indica se o gerente é um Aprovador de fallback de backup. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -57,3 +57,5 @@ Veja a seguir uma representação JSON do tipo.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

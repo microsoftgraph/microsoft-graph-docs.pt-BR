@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d5a80db31b0499648c5f297b613a198ddec6d25d
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.openlocfilehash: 9aa3215bacff95cfa03cc2ec050c8f2d2e4f7219
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413377"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026303"
 ---
 # <a name="requestschedule-resource-type"></a>tipo de recurso requestSchedule
 
@@ -60,3 +60,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

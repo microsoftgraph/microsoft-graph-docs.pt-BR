@@ -3,14 +3,14 @@ title: Tipo de recurso deviceConfigurationUserOverview
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a748253de74a077da2a71a41ae736b7da3a32f75
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 33af79a22c460c1b14f810ad7c3009ebf6446f65
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447774"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025386"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>Tipo de recurso deviceConfigurationUserOverview
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Ainda não documentado
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter deviceConfigurationUserOverview](../api/intune-deviceconfig-deviceconfigurationuseroverview-get.md)|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Ler propriedades e relações de objetos de [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md).|
@@ -62,6 +62,8 @@ Veja a seguir uma representação JSON do recurso.
   "configurationVersion": 1024
 }
 ```
+
+
 
 
 

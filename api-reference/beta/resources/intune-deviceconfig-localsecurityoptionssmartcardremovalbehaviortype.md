@@ -3,14 +3,14 @@ title: tipo de enumeração localSecurityOptionsSmartCardRemovalBehaviorType
 description: Valores possíveis para LocalSecurityOptionsSmartCardRemovalBehaviorType
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 933d78b3b9e0de1c586391b1544fe1eefdd9640b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 32a658aa2f68bb18f58db66566145dab6bb7e0fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439808"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026660"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>tipo de enumeração localSecurityOptionsSmartCardRemovalBehaviorType
 
@@ -26,9 +26,12 @@ Valores possíveis para LocalSecurityOptionsSmartCardRemovalBehaviorType
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |lockWorkstation|,0|Nenhuma ação|
-|NoAction|1|Bloquear estação de trabalho|
-|forceLogoff|duas|Forçar logoff|
-|disconnectRemoteDesktopSession|3D|Desconectar se uma sessão remota de serviços de área de trabalho remota|
+|NoAction|1 |Bloquear estação de trabalho|
+|forceLogoff|2 |Forçar logoff|
+|disconnectRemoteDesktopSession|3 |Desconectar se uma sessão remota de serviços de área de trabalho remota|
+
+
+
 
 
 

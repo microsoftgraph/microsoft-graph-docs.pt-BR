@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3eb00ac2f540980d346a2b167555a1bfdb1f7cfe
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 2f50969aa02b5115e061e7e874e7f9b5667f3570
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917534"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024525"
 ---
 # <a name="activitybasedtimeoutpolicy-resource-type"></a>tipo de recurso activityBasedTimeoutPolicy
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma política que pode controlar o tempo limite de ociosidade para sessões da Web para aplicativos que dão suporte à funcionalidade de tempo limite baseada na atividade. Os aplicativos impõem a desconexão automática após um período de inatividade. Esse tipo de política só pode ser aplicado no nível da organização (Configurando **isOrganizationDefault** a propriedade isOrganizationDefault `true`para).
+Representa uma política que pode controlar o tempo limite de ociosidade para sessões da Web para aplicativos que dão suporte à funcionalidade de tempo limite baseada na atividade. Os aplicativos impõem a desconexão automática após um período de inatividade. Esse tipo de política só pode ser aplicado no nível da organização (Configurando a propriedade **isOrganizationDefault** para `true` ).
 
 Herda de [stsPolicy](stsPolicy.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -37,10 +37,10 @@ Herda de [stsPolicy](stsPolicy.md).
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|String| Identificador exclusivo da política. Somente leitura.|
-|definir|Coleção de cadeias de caracteres| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
+|definir|Coleção String| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
 |description|String| Descrição da política.|
-|displayName|Cadeia de caracteres| Nome para exibição dessa política. Obrigatório.|
-|isOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
+|displayName|String| Nome para exibição dessa política. Obrigatório.|
+|isOrganizationDefault|Booliano|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 
 
 ### <a name="properties-of-an-activity-based-timeout-policy-definition"></a>Propriedades de uma definição de política de tempo limite baseada em atividade
@@ -102,3 +102,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

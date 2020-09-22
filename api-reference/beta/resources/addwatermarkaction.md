@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2a94f517fe9f5da207febf9e776643a7c17c18d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 884553ce1181fd3d79fe0e953fe7703b386698b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508398"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024427"
 ---
 # <a name="addwatermarkaction-resource-type"></a>tipo de recurso addwatermarkaction
 
@@ -64,3 +64,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

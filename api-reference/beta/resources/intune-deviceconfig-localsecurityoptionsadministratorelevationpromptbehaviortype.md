@@ -3,14 +3,14 @@ title: tipo de enumeração localSecurityOptionsAdministratorElevationPromptBeha
 description: Valores possíveis para LocalSecurityOptionsAdministratorElevationPromptBehavior
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d0d5c8cd8a38589cef548d03c290015bd4368e12
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a8d3be3ee9bd64f610820fb2e2eaa3b1352d272d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439859"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026688"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>tipo de enumeração localSecurityOptionsAdministratorElevationPromptBehaviorType
 
@@ -26,12 +26,15 @@ Valores possíveis para LocalSecurityOptionsAdministratorElevationPromptBehavior
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|elevateWithoutPrompting|1|Elevar sem avisar.|
-|promptForCredentialsOnTheSecureDesktop|duas|Solicitar credenciais na área de trabalho segura|
-|promptForConsentOnTheSecureDesktop|3D|Solicitar consentimento na área de trabalho segura|
+|elevateWithoutPrompting|1 |Elevar sem avisar.|
+|promptForCredentialsOnTheSecureDesktop|2 |Solicitar credenciais na área de trabalho segura|
+|promptForConsentOnTheSecureDesktop|3 |Solicitar consentimento na área de trabalho segura|
 |promptForCredentials|4 |Solicitar credenciais|
 |promptForConsent|5 |Solicitar consentimento|
 |promptForConsentForNonWindowsBinaries|6 |Solicitar consentimento para binários não Windows|
+
+
+
 
 
 

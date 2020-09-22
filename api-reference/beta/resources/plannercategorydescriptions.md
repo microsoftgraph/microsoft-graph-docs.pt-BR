@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 11b52b58aea908e00d4a6149cca0bb9c9dba5fd0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ab0fd1b58da0fd3e0b21212897c3f7a3e2d185b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521773"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026528"
 ---
 # <a name="plannercategorydescriptions-resource-type"></a>tipo de recurso plannerCategoryDescriptions
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -66,3 +66,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

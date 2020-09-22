@@ -1,22 +1,22 @@
 ---
-title: Trabalhar com relatórios de uso do Office 365 no Microsoft Graph
-description: Com o Microsoft Graph, você pode acessar recursos de relatórios de uso do Office 365 para obter informações sobre como as pessoas em sua empresa estão usando os serviços do Office 365. Por exemplo, você pode identificar quem está usando muito um serviço e atingindo cotas, ou quem pode não precisar de uma licença do Office 365.
+title: Trabalhar com relatórios de uso do Microsoft 365 no Microsoft Graph
+description: Com o Microsoft Graph, você pode acessar recursos de relatórios de uso do Microsoft 365 para obter informações sobre como as pessoas em sua empresa estão usando os serviços do Microsoft 365. Por exemplo, você pode identificar quem está usando muito um serviço e atingindo cotas, ou quem pode não precisar de uma licença do Microsoft 365.
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 1364ad0463a82d604ab374d073b3bc929804f302
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0bb97d2682518950011f62824ae2be3cb7239100
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008695"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026366"
 ---
-# <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>Trabalhar com relatórios de uso do Office 365 no Microsoft Graph
+# <a name="working-with-microsoft-365-usage-reports-in-microsoft-graph"></a>Trabalhar com relatórios de uso do Microsoft 365 no Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Com o Microsoft Graph, você pode acessar recursos de relatórios de uso do Office 365 para obter informações sobre como as pessoas em sua empresa estão usando os serviços do Office 365. Por exemplo, você pode identificar quem está usando muito um serviço e atingindo cotas, ou quem pode não precisar de uma licença do Office 365.
+Com o Microsoft Graph, você pode acessar recursos de relatórios de uso do Microsoft 365 para obter informações sobre como as pessoas em sua empresa estão usando os serviços do Microsoft 365. Por exemplo, você pode identificar quem está usando muito um serviço e atingindo cotas, ou quem pode não precisar de uma licença do Microsoft 365.
 
 ## <a name="authorization"></a>Autorização
 
@@ -47,6 +47,9 @@ As APIs originais de relatórios foram atualizadas para que você possa chamar a
 | YammerDeviceUsage       | <ul><li>[getYammerDeviceUsageUserDetail](../api/reportroot-getyammerdeviceusageuserdetail.md)</li><li>[getYammerDeviceUsageDistributionUserCounts](../api/reportroot-getyammerdeviceusagedistributionusercounts.md)</li><li>[getYammerDeviceUsageUserCounts](../api/reportroot-getyammerdeviceusageusercounts.md)</li></ul> |
 | YammerGroupsActivity    | <ul><li>[getYammerGroupsActivityDetail](../api/reportroot-getyammergroupsactivitydetail.md)</li><li>[getYammerGroupsActivityGroupCounts](../api/reportroot-getyammergroupsactivitygroupcounts.md)</li><li>[getYammerGroupsActivityCounts](../api/reportroot-getyammergroupsactivitycounts.md)</li></ul> |
 
+## <a name="whats-new"></a>O que há de novo
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
+
 ## <a name="next-steps"></a>Próximas etapas
 
 APIs e recursos de relatório podem criar novas maneiras para você relacionar-se com os usuários e gerenciar as experiências deles com o Microsoft Graph. Para saber mais:
@@ -55,3 +58,5 @@ APIs e recursos de relatório podem criar novas maneiras para você relacionar-s
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 Precisa de mais ideias? Veja [como alguns de nossos parceiros usam o Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+
+

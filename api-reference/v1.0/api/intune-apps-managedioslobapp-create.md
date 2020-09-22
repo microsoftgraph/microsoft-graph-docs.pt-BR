@@ -3,14 +3,14 @@ title: Criar managedIOSLobApp
 description: Cria um novo objeto managedIOSLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63966fd441149f55fe635c0fbff2c2480719cd3a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 36e2c66cdd98b3e29a2102a9f50c8a74d11c7a22
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442639"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025834"
 ---
 # <a name="create-managedioslobapp"></a>Criar managedIOSLobApp
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar managedIOSLobApp
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|String|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |description|String|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publicador|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -61,12 +61,12 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar managedIOSLobApp
 |isFeatured|Boolean|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |informationUrl|String|A URL de informações adicionais. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|proprietário|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|Anotações do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|A disponibilidade do Aplicativo. Herdado de [managedApp](../resources/intune-apps-managedapp.md). Os valores possíveis são: `global`, `lineOfBusiness`.|
-|version|Cadeia de caracteres|A versão do Aplicativo. Herdado de [managedApp](../resources/intune-apps-managedapp.md)|
+|version|String|A versão do Aplicativo. Herdado de [managedApp](../resources/intune-apps-managedapp.md)|
 |committedContentVersion|String|A versão do conteúdo interno confirmado. Herdado de [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
 |fileName|String|O nome do arquivo do aplicativo Lob principal. Herdado de [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
 |size|Int64|O tamanho total, incluindo todos os arquivos carregados. Herdado de [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
@@ -186,6 +186,9 @@ Content-Length: 1479
   "buildNumber": "Build Number value"
 }
 ```
+
+
+
 
 
 

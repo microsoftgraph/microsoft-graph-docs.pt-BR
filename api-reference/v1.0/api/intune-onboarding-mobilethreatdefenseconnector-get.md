@@ -3,14 +3,14 @@ title: Obter mobileThreatDefenseConnector
 description: Ler propriedades de leitura e relações do objeto mobileThreatDefenseConnector.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3a55eef5ee0e06adf8605f650d0f7af4280ea07
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 060a13a1928a3b2fddc2ef91d2d55b1f76fa3de1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462813"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025743"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>Obter mobileThreatDefenseConnector
 
@@ -83,6 +83,9 @@ Content-Length: 502
   }
 }
 ```
+
+
+
 
 
 

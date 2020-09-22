@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 88dd652e12a8ba7d5d866e2817685e0ad3a732eb
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d70337be1a3f28e9ba30734ccc919c5459dcbd0b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217574"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026191"
 ---
 # <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>tipo de recurso stringKeyAttributeMappingSourceValuePair
 
@@ -23,7 +23,7 @@ Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|key|Cadeia de Caracteres|O nome do parâmetro.|
+|key|String|O nome do parâmetro.|
 |valor|[attributeMappingSource](synchronization-attributemappingsource.md)|O valor do parâmetro.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -58,3 +58,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

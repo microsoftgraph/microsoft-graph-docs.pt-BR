@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 9d25d78d51a39d3240d0d7566b7037f55e379fe1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c111082fe0b9a2f2090de3fe3abb71a96fd4a80d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811109"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026583"
 ---
 # <a name="networkconnection-resource-type"></a>tipo de recurso networkConnection
 
@@ -51,9 +51,9 @@ Contém informações de estado sobre a conexão de rede relacionada ao alerta.
 |:---|:---|:---|
 |desconhecido|-1|Protocolo desconhecido.|
 |IP|,0|Protocolo de Internet.|
-|ICMP|1| Protocolo de mensagens de controle da Internet.|
-|IGMP|duas| Protocolo de gerenciamento de grupos da Internet.|
-|ggp|3D| Gateway para protocolo gateway.|
+|ICMP|1 | Protocolo de mensagens de controle da Internet.|
+|IGMP|2 | Protocolo de gerenciamento de grupos da Internet.|
+|ggp|3 | Gateway para protocolo gateway.|
 |IPv4|4 | Protocolo IP versão 4.|
 |tcp|6 | Protocolo de controle de transmissão.|
 |confiável|12 | Protocolo de pacote universal do PARC.|
@@ -123,3 +123,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

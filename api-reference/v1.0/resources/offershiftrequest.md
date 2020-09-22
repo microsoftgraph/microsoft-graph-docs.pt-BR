@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c507b8043c377dca0e13e079ff37e9499c00fbe1
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 57db39a398501a8b19b4978a17c1f60e26606dd3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155114"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025218"
 ---
 # <a name="offershiftrequest-resource-type"></a>tipo de recurso offerShiftRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa uma solicitação para oferecer uma mudança para outro usuário na equipe.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -33,9 +33,9 @@ Representa uma solicitação para oferecer uma mudança para outro usuário na e
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |recipientActionDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|recipientActionMessage|Cadeia de caracteres| Mensagem personalizada enviada pelo destinatário da solicitação de mudança de oferta. |
-|recipientUserId|Cadeia de caracteres| ID de usuário do destinatário da solicitação de mudança de oferta.|
-|senderShiftId|Cadeia de caracteres| ID de usuário do remetente da solicitação de mudança de oferta.|
+|recipientActionMessage|String| Mensagem personalizada enviada pelo destinatário da solicitação de mudança de oferta. |
+|recipientUserId|String| ID de usuário do destinatário da solicitação de mudança de oferta.|
+|senderShiftId|String| ID de usuário do remetente da solicitação de mudança de oferta.|
 
 ## <a name="relationships"></a>Relações
 
@@ -72,3 +72,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

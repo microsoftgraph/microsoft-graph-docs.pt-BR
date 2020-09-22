@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3d6f6e89ca6e54e1c74e43c6201766aa199f454d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e49d72a5231980fef906d70e92623a70bb308e8a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423794"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026933"
 ---
 # <a name="extensionproperty-resource-type"></a>tipo de recurso extensionproperty
 
@@ -40,14 +40,14 @@ As extensões podem ser adicionadas a [usuários](user.md), [grupos](group.md), 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |appDisplayName|String| Nome de exibição do objeto de aplicativo no qual essa propriedade de extensão é definida. Somente leitura. |
-|dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a Propriedade Extension pode armazenar. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary`-256 bytes máximo</li><li>`Boolean`</li><li>`DateTime`-Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer`-valor de 32-bit.</li><li>`LargeInteger`-valor de 64-bit.</li><li>`String`-256 caracteres no máximo</li></ul>|
-|isSyncedFromOnPremises|Boolean| Indica se esta propriedade de extensão foi sycned do diretório onlocal usando o Azure AD Connect. Somente leitura. |
+|dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a Propriedade Extension pode armazenar. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary` -256 bytes máximo</li><li>`Boolean`</li><li>`DateTime` -Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer` -valor de 32-bit.</li><li>`LargeInteger` -valor de 64-bit.</li><li>`String` -256 caracteres no máximo</li></ul>|
+|isSyncedFromOnPremises|Booliano| Indica se esta propriedade de extensão foi sycned do diretório onlocal usando o Azure AD Connect. Somente leitura. |
 |name|String| Nome da propriedade de extensão. Não anulável. |
 |targetObjects|Coleção String| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 ## <a name="relationships"></a>Relações
 
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -82,3 +82,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

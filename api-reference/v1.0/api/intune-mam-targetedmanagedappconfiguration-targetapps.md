@@ -3,14 +3,14 @@ title: Ação targetApps
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f966248a4ce88ce2e15d3c0311fb6ed8caa9c4dd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d2d7ec9d5d2cd7e2a4574277347a29f11e74c308
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43398077"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025750"
 ---
 # <a name="targetapps-action"></a>ação targetApps
 
@@ -87,6 +87,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

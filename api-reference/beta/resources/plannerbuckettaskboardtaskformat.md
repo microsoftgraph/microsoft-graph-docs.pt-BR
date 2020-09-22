@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 6815209c4a87ee348cb3c37f5b318a5022e4c5b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f90d90cd0b625c612b125ffc031fe6c3e252a253
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521780"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026527"
 ---
 # <a name="plannerbuckettaskboardtaskformat-resource-type"></a>tipo de recurso plannerBucketTaskBoardTaskFormat
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -69,3 +69,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 719f2ac275a19c9e4cef4cb2403166933e2e5925
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c96d5a0499ae269c7ce67bae2252c6521d66eb7b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508503"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024644"
 ---
 # <a name="accesspackageresourcerolescope-resource-type"></a>tipo de recurso accessPackageResourceRoleScope
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -91,3 +91,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

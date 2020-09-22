@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 99aa202e0048b328d97453f57d249df749f7bce5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 795ad9b1740d36a365bea4d99a880c43308a01c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508112"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024420"
 ---
 # <a name="audioduckingconfiguration-resource-type"></a>tipo de recurso audioDuckingConfiguration
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -62,3 +62,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

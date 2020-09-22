@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 3e4c0b7764cefffc5f25689c84a960ec72eca733
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 468138dad6cac10939c76b6bd6689c99d8fc5fbd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383844"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026051"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-group"></a>Excluir um appRoleAssignment concedido a um grupo
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | AppRoleAssignment. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | AppRoleAssignment. ReadWrite. All |
+|Aplicativo | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -114,3 +114,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 862933281a2fd1473893368e3500b192d301e462
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6880214614047000fcc5a793faf4be3e5a88a5e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457304"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026443"
 ---
 # <a name="provisioningsystemdetails-resource-type"></a>tipo de recurso provisioningSystemDetails
 
@@ -25,7 +25,7 @@ Representa o sistema do qual um usuário foi provisionado ou de. Por exemplo, ao
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |detalhes|[detailsInfo](detailsinfo.md)|Detalhes do sistema.|
-|displayName|Cadeia de caracteres|Nome do sistema no qual um usuário foi provisionado ou de.|
+|displayName|String|Nome do sistema no qual um usuário foi provisionado ou de.|
 |id|String|Identificador do sistema no qual um usuário foi provisionado ou de.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -58,3 +58,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 184ea90c229d222299848aaec1119aff9497d4af
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 8b055a8a76a888fc5fc2e3f213b8be69f34f6413
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630309"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024422"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -51,6 +51,19 @@ Namespace: microsoft.graph
 |email|Cadeia de caracteres| O endereço de email para enviar mensagens ao canal. Somente leitura.|
 |webUrl|String|Um hiperlink que navegará até o canal no Microsoft Teams. Essa é a URL que você recebe ao clicar com o botão direito do mouse em um canal Microsoft Teams e selecionar Obter o link para o canal. Essa URL deve ser tratada como um blob opaco e não analisado. Somente leitura.|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|O tipo do canal. Pode ser definido durante a criação e não pode ser alterado. Padrão: standard.|
+|createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de criação do canal.|
+
+### <a name="instance-attributes"></a>Atributos de instância
+
+Atributos de instância são propriedades com comportamentos especiais. Essas propriedades são temporárias e a) definem o comportamento que o serviço deve apresentar ou b) fornecem valores de propriedades de curto prazo, como uma URL de download, para um item com data de expiração.
+
+| Nome da propriedade| Tipo   | Descrição
+|:-----------------------|:-------|:-------------------------|
+|@microsoft.graph.channelCreationMode|string|Indica que o canal está no estado de migração e está sendo usado no momento para fins de migração. Aceita um valor: `migration`.|
+
+> **Observação**: `ChannelCreationMode`  é um enum que usa o valor `migration`.
+
+Para obter um exemplo de uma solicitação POST, confira [Solicitação (criar canal no estado de migração)](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams#request-create-a-team-in-migration-state).
 
 ## <a name="relationships"></a>Relações
 
@@ -60,6 +73,7 @@ Namespace: microsoft.graph
 |guias|[teamsTab](../resources/teamstab.md) collection|Uma coleção de todas as guias do canal. Uma propriedade de navegação.|
 |membros|coleção [conversationMember](conversationmember.md)|Uma coleção de registros de associação ligados ao canal.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadados para o local em que os arquivos do canal estão armazenados.|
+|operations|Coleção [teamsAsyncOperation](teamsasyncoperation.md)| As operações assíncronas que foram executadas ou estão em execução nesta equipe. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -82,7 +96,8 @@ Veja a seguir uma representação JSON do recurso.
   "isFavoriteByDefault": true,
   "email": "string",
   "webUrl": "string",
-  "membershipType": "channelMembershipType"
+  "membershipType": "channelMembershipType",
+  "createdDateTime": "string (timestamp)"
 }
 ```
 
@@ -98,3 +113,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

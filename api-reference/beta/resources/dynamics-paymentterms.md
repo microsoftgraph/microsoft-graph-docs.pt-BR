@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: cf6917b724f9e35735d63d1cda13c01d6f9003bf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e9e7951da79d524002f004410ef6939d7be5b99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503597"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027075"
 ---
 # <a name="paymentterms-resource-type"></a>tipo de recurso paymentTerms
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ Representa um termo de pagamento no Dynamics 365 Business central.
 |[Obter paymentTerms](../api/dynamics-paymentterms-get.md)      |paymentTerms|Obter um objeto de condições de pagamento.   |
 |[Postar paymentTerms](../api/dynamics-create-paymentterms.md)  |paymentTerms|Criar um objeto de condições de pagamento.|
 |[Patch paymentTerms](../api/dynamics-paymentterms-update.md) |paymentTerms|Atualizar um objeto de condições de pagamento.|
-|[Excluir paymentTerms](../api/dynamics-paymentterms-delete.md)|nenhuma        |Excluir um objeto de condições de pagamento.|
+|[Excluir paymentTerms](../api/dynamics-paymentterms-delete.md)|Nenhuma        |Excluir um objeto de condições de pagamento.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade                     | Tipo     |Descrição                                                |
@@ -65,3 +65,5 @@ Veja a seguir uma representação JSON do paymentTerms.
 }
 
 ```
+
+

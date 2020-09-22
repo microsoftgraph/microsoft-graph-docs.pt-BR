@@ -3,14 +3,14 @@ title: Tipo de recurso termsAndConditionsAssignment
 description: Uma entidade termsAndConditionsAssignment representa a atribuição de uma determinada política de Termos e Condições (T&C) a um certo grupo. Os usuários do grupo deverão aceitar os termos para que seus dispositivos sejam registrados no Intune.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 615bb6710f2acb82519cdbc87a0f8628f178b29e
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: cfbdd8f3d299e282d842673f8e9f3ee7b21cf3ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793483"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024385"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>Tipo de recurso termsAndConditionsAssignment
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Uma entidade termsAndConditionsAssignment representa a atribuição de uma determinada política de Termos e Condições (T&C) a um certo grupo. Os usuários do grupo deverão aceitar os termos para que seus dispositivos sejam registrados no Intune.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar termsAndConditionsAssignments](../api/intune-companyterms-termsandconditionsassignment-list.md)|Coleção [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|Propriedades de leitura e relações dos objetos [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md).|
@@ -38,7 +38,7 @@ Uma entidade termsAndConditionsAssignment representa a atribuição de uma deter
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de atribuição ao qual a política de T&C foi designada.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -59,6 +59,9 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
+
 
 
 

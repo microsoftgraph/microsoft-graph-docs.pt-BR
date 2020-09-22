@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 806aa9e1f6a95d5f1d723714869546ea3943c725
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: ce7c0e915105ff837c1a96185610553123fc82c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107532"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024700"
 ---
 # <a name="list-workingwith"></a>Listar workingWith
 
@@ -70,3 +70,5 @@ Content-length: 98
   "Email": "Email-value",
 }
 ```
+
+

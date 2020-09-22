@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 39401f1708e8e27443348a766f171680fbd9efd7
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 32a3acf998b9be8c5a7001ea83a50f177c332933
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383746"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026555"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>tipo de recurso oAuth2PermissionGrant
 
@@ -24,7 +24,7 @@ Conceder permissões delegadas podem ser criadas como resultado de um usuário q
 
 As permissões delegadas às vezes são chamadas de "escopos de OAuth 2,0" ou "escopos".
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
@@ -39,7 +39,7 @@ As permissões delegadas às vezes são chamadas de "escopos de OAuth 2,0" ou "e
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 | id | String | Identificador exclusivo para o **oAuth2PermissionGrant**. Somente leitura.|
-| clientId | String | A **ID** da entidade de [serviço](serviceprincipal.md) do cliente para o aplicativo que é autorizado a atuar em nome de um usuário conectado ao acessar uma API. Obrigatório. Suporta `$filter` ( `eq` somente). |
+| clientId | Cadeia de caracteres | A **ID** da entidade de [serviço](serviceprincipal.md) do cliente para o aplicativo que é autorizado a atuar em nome de um usuário conectado ao acessar uma API. Obrigatório. Suporta `$filter` ( `eq` somente). |
 | consentType | String | Indica se a autorização é concedida para que o aplicativo cliente represente todos os usuários ou apenas um usuário específico. A *entidade de segurança* indica autorização para representar todos os usuários. *Principal* indica autorização para representar um usuário específico. O consentimento em nome de todos os usuários pode ser concedido por um administrador. Os usuários que não são administradores podem ser autorizados a consentir em nome de alguns casos, para algumas permissões delegadas. Obrigatório. Suporta `$filter` ( `eq` somente). |
 | principalId | String | A **ID** do [usuário](user.md) em nome do qual o cliente está autorizado a acessar o recurso, quando **resenttype** é o *principal*. Se **consenttype** for *servicePrincipalName* , esse valor será NULL. Obrigatório quando **resenttype** é *principal*. |
 | resourceId | Cadeia de caracteres | A **ID** da entidade de [serviço](serviceprincipal.md) de recurso para a qual o acesso é autorizado. Isso identifica a API que o cliente está autorizado a tentar chamar em nome de um usuário conectado. |
@@ -59,14 +59,14 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |:---------------|:--------|:----------|
 |[Listar oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) collection | Recupere uma lista de objetos **oauth2PermissionGrant** . |
 |[Obter oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Leia as propriedades e os relacionamentos de um objeto **oAuth2PermissionGrant** .|
-|[Atualizar oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Atualize um objeto **oAuth2PermissionGrant** . |
+|[Atualizar oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Atualize um objeto  **oAuth2PermissionGrant** . |
 |[Excluir oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | Nenhum |Excluir um objeto **oAuth2PermissionGrant** . |
 |[Obter delta](../api/oauth2permissiongrant-delta.md)|[oAuth2PermissionGrant](oauth2permissiongrant.md)|Obter objetos **oauth2permissiongrant** recém-criados, atualizados ou excluídos sem executar uma leitura completa de toda a coleção de recursos.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|clientId|String| A ID da entidade de serviço que recebe o consentimento para representar o usuário ao acessar o recurso (representado pela Propriedade ResourceId). |
+|clientId|Cadeia de caracteres| A ID da entidade de serviço que recebe o consentimento para representar o usuário ao acessar o recurso (representado pela Propriedade ResourceId). |
 |consentType|String| Indica se o consentimento foi fornecido pelo administrador (em nome da organização) ou por um indivíduo. Os valores possíveis são *Userdirigetes* ou *entidade de segurança*. |
 |expiryTime|DateTimeOffset| No momento, o valor de tempo de expiração é ignorado. |
 |id|String| Identificador exclusivo. Somente leitura.|
@@ -115,3 +115,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

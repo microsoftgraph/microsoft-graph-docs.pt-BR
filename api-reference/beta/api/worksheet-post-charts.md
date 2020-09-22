@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1ec6a1aa0d5d37e52924361f64e5e10291cf476b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e1c11cfc8c5c0876a01719c230ff03e1666396e3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451193"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024686"
 ---
 # <a name="create-chart"></a>Create Chart
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [workbook
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [workbookChart](../resources/workbookchart.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [workbookChart](../resources/workbookchart.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -114,3 +114,5 @@ Content-length: 52
   ]
 }
 -->
+
+

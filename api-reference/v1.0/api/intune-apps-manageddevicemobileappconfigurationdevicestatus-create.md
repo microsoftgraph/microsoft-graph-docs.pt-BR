@@ -3,14 +3,14 @@ title: Criar managedDeviceMobileAppConfigurationDeviceStatus
 description: Criar um novo objeto managedDeviceMobileAppConfigurationDeviceStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 088da2d4056dd3dabac5d22bbeeaa1ff39a54171
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9b2f86c35eca350c145e17317781c90800a488fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446237"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025988"
 ---
 # <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>Criar managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -52,8 +52,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedD
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|deviceDisplayName|String|Nome do dispositivo de DevicePolicyStatus.|
-|userName|String|O nome de usuário que está sendo relatado|
+|deviceDisplayName|Cadeia de caracteres|Nome do dispositivo de DevicePolicyStatus.|
+|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
@@ -63,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedD
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -105,6 +105,9 @@ Content-Length: 494
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

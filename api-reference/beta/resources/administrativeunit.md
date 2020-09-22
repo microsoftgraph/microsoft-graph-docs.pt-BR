@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3c6eb4b38f2af40d3c559da91ab3275086d0e652
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 024fe8619ced3287560ad6246ca3169577a56383
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450832"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024423"
 ---
 # <a name="administrativeunit-resource-type"></a>tipo de recurso administrativeUnit
 
@@ -34,7 +34,7 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 | Método   | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
 |[Criar](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Crie uma nova unidade administrativa.|
-|[List](../api/administrativeunit-list.md) | coleção [administrativeUnit](administrativeunit.md) |Listar Propriedades de todos os Administrativeunits dos quais.|
+|[Lista](../api/administrativeunit-list.md) | coleção [administrativeUnit](administrativeunit.md) |Listar Propriedades de todos os Administrativeunits dos quais.|
 |[Get](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Ler propriedades e relações de um objeto administrativeUnit específico.|
 |[Update](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Atualize o objeto administrativeUnit. |
 |[Delete](../api/administrativeunit-delete.md) | Nenhum |Exclua o objeto administrativeUnit. |
@@ -57,14 +57,14 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|string|Uma descrição opcional para a unidade administrativa.|
-|displayName|cadeia de caracteres|Nome de exibição para a unidade administrativa.|
-|id|cadeia de caracteres|Identificador exclusivo para a unidade administrativa. Somente leitura.|
+|displayName|string|Nome de exibição para a unidade administrativa.|
+|id|string|Identificador exclusivo para a unidade administrativa. Somente leitura.|
 |visibilidade|string|Controla se a unidade administrativa e seus membros estão ocultos ou públicos. Pode ser definido como HiddenMembership ou público. Se não for definido, o comportamento padrão é público. Quando definido como HiddenMembership, somente os membros da unidade administrativa podem listar outros membros da unidade administrativa.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para essa unidade administrativa. Anulável.|
+|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para essa unidade administrativa. Anulável.|
 |members|Coleção [directoryObject](directoryobject.md)|Usuários e grupos que são membros dessa unidade de Adminsitrative. Métodos HTTP: GET (listar Membros), POST (adicionar membros), excluir (remover membros).|
 |scopedRoleMembers|Coleção [scopedRoleMembership](scopedrolemembership.md)| Com escopo de função membros dessa unidade administrativa.  Métodos HTTP: GET (List scopedRoleMemberships), POST (adicionar scopedRoleMembership), DELETE (remove scopedRoleMembership). |
 
@@ -111,3 +111,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

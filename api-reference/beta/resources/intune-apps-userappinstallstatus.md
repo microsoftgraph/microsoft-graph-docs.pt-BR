@@ -3,14 +3,14 @@ title: tipo de recurso userAppInstallStatus
 description: Contém propriedades para o status de instalação de um usuário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccc47a51273038be692d2a508d5f6adba73f9f40
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ccae01f74466c839e602d5f7b5c62536fc409a15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026842"
 ---
 # <a name="userappinstallstatus-resource-type"></a>tipo de recurso userAppInstallStatus
 
@@ -66,6 +66,9 @@ Veja a seguir uma representação JSON do recurso.
   "notInstalledDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

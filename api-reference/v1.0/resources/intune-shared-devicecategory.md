@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aaa5746274ada3f2109efa708aa331eafc6babc5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 067e7894cc5c5daa4cd73c5bb5ba88f66b283366
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387309"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025267"
 ---
 # <a name="devicecategory-resource-type"></a>Tipo de recurso deviceCategory
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Categorias de dispositivo fornecem uma maneira de organizar seus dispositivos. Usando categorias de dispositivo, os administradores podem definir suas próprias categorias que fazem sentido para suas empresas.Essas categorias podem então ser aplicadas a um dispositivo no console do Intune Azure ou selecionadas por um usuário durante o registro de um dispositivo. Você pode filtrar relatórios e criar grupos de dispositivos dinâmicos do Azure Active Directory com base em categorias de dispositivo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceCategories](../api/intune-shared-devicecategory-list.md) coleção|Lista propriedades e relações dos objetos [deviceCategory](../resources/intune-shared-devicecategory.md).|
@@ -32,9 +32,9 @@ Categorias de dispositivo fornecem uma maneira de organizar seus dispositivos. U
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |**Integração**|
-|displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
+|displayName|String|Nome de exibição da categoria de dispositivo.|
 |description|String|Descrição opcional da categoria do dispositivo.|
 
 ## <a name="relationships"></a>Relações
@@ -56,6 +56,8 @@ Veja a seguir uma representação JSON do recurso.
   "description": "String"
 }
 ```
+
+
 
 
 

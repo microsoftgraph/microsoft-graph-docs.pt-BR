@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 6092a427a2882c4b6bdae07bb98f8bc8a81eecfb
-ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
+ms.openlocfilehash: 1580f6677ddb2e24d457696fb14d3d07d8bb64d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "44593629"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026253"
 ---
 # <a name="resourceaccess-resource-type"></a>tipo de recurso resourceAccess
 
@@ -59,3 +59,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 33b0bef244789beebd37402e91bfb96838d8bbec
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 3ca0aaafe1dd9a18507e8c20b7bffa941c0a71e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566465"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025715"
 ---
 # <a name="get-ipnamedlocation"></a>Obter ipNamedLocation
 
@@ -135,3 +135,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

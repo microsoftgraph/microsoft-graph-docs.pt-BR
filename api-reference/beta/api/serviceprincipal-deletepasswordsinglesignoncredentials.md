@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3aaecf0cedc96aa34c548b22c68ce7155bd8e513
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 68e48b03888c23c201fc4e33a7cc2e178e8ac84c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291276"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024729"
 ---
 # <a name="serviceprincipal-deletepasswordsinglesignoncredentials"></a>servicePrincipalName: deletePasswordSingleSignOnCredentials
 
@@ -117,3 +117,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

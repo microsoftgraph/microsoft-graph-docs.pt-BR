@@ -3,14 +3,14 @@ title: Obter androidImportedPFXCertificateProfile
 description: Leia as propriedades e as relações do objeto androidImportedPFXCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64456c28852e4c208e7d8ad777f7557c48247438
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 80c954c1ea80367d31fa4b4acc5bb2b26184d1d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43344518"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025092"
 ---
 # <a name="get-androidimportedpfxcertificateprofile"></a>Obter androidImportedPFXCertificateProfile
 
@@ -122,6 +122,9 @@ Content-Length: 1773
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Obter androidOmaCpConfiguration
 description: Leia as propriedades e as relações do objeto androidOmaCpConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 906feccb7ef0359575b9dbf6c4e1df1b0f011c56
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5f1b1d782b488f5ee5d198e5592d557edca12d95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43435612"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025001"
 ---
 # <a name="get-androidomacpconfiguration"></a>Obter androidOmaCpConfiguration
 
@@ -110,6 +110,9 @@ Content-Length: 1336
   }
 }
 ```
+
+
+
 
 
 

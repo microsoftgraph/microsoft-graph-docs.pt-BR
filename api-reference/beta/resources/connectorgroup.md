@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 author: japere
 doc_type: resourcePageType
-ms.openlocfilehash: 446dae5e78878ba9648d532d2696b0bfde496601
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: ec56137fab8a929ae3823dcdd339ea6e3b8e174b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556167"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027143"
 ---
 # <a name="connectorgroup-resource-type"></a>tipo de recurso do The Connector
 
@@ -22,14 +22,15 @@ Cada conector de [proxy de aplicativo do Azure ad](https://aka.ms/whyappproxy) �
 
 Depois que um grupo de conectores é criado, você pode adicionar ou mover conectores para o grupo de conectores usando [Adicionar conector](../api/connectorgroup-post-members.md). Você também pode usar [Adicionar aplicativo](../api/connectorgroup-post-applications.md) para atribuir um aplicativo a um grupo de conectores.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Lista de conectores de lista](../api/connectorgroup-list.md) |coleção de [conectores](connectorgroup.md) | Recupere uma lista de objetos de conexão. |
-|[Obter um conector de conexão](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) | Leia as propriedades e as relações de um objeto de conexão. |
-|[Atualizar o beficador de conexão](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)| Atualize um objeto de conexão. |
-|[Excluir um ou de conector](../api/connectorgroup-delete.md) | Nenhuma | Excluir um objeto de um. Todos os conectores devem ser removidos do conector para que um dos conectores possa ser excluído. |
+|[Criar connectorGroup](../api/connectorgroup-post.md) |coleção de [conectores](connectorgroup.md) | Criar um objeto de conexão. |
+|[Obter connectorGroup](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) | Leia as propriedades e as relações de um objeto de conexão. |
+|[Atualizar connectorGroup](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)| Atualize um objeto de conexão. |
+|[Excluir connectorGroup](../api/connectorgroup-delete.md) | Nenhum | Excluir um objeto de um. Todos os conectores devem ser removidos do conector para que um dos conectores possa ser excluído. |
 |[Listar membros](../api/connectorgroup-list-members.md) |coleção [Connector](connector.md)| Obtenha uma coleção de objetos Connector. |
 |[Listar aplicativos](../api/connectorgroup-list-applications.md) |Coleção [application](application.md)| Obter a coleção de objetos Application associada ao grupo de conectores. |
 |[Adicionar aplicativo](../api/connectorgroup-post-applications.md) |[aplicativo](application.md)| Associar um aplicativo ao grupo de conectores postando na coleção de aplicativos. |
@@ -39,7 +40,7 @@ Depois que um grupo de conectores é criado, você pode adicionar ou mover conec
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| Indica o tipo de agente híbrido. Isso é definido pelo sistema. Somente leitura. |
-|id|cadeia de caracteres| Identificador exclusivo desse conector. Somente leitura. |
+|id|string| Identificador exclusivo desse conector. Somente leitura. |
 |isDefault|booliano| Indica se o conector de conexão é o padrão. Somente um grupo de conectores único pode ser o grupo de conectores padrão e é predefinido pelo sistema. Somente leitura. |
 |name|string| O nome associado ao conector. |
 |região|string| A região à qual o conector é atribuído e otimizará o tráfego para o. Essa região só poderá ser definida se **nenhum conector ou aplicativo** for atribuído ao grupo de conectores. As regiões disponíveis incluem: América do Norte, Europa, Austrália, Ásia e Índia. Os valores possíveis são: `nam`, `eur`, `aus`, `asia`, `ind`.|
@@ -85,3 +86,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

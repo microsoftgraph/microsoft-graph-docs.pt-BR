@@ -3,14 +3,14 @@ title: List schemaExtensions
 description: 'Obtenha uma lista de objetos schemaExtension criados por qualquer aplicativo que você possui no locatário atual (que pode ser '
 localization_priority: Normal
 author: dkershaw10
-ms.prod: ''
+ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: d959e9f1440f4c83b0f6c8ca3a91a68241010b4d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d7660ff691ba4fd90bc05b1a055fd2270c2325c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509952"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025484"
 ---
 # <a name="list-schemaextensions"></a>List schemaExtensions
 
@@ -18,15 +18,17 @@ Namespace: microsoft.graph
 
 Obtenha uma lista de objetos [schemaExtension](../resources/schemaextension.md) criados por qualquer aplicativo que você possui no locatário atual (que pode ser **indevelopment**, **disponível**ou **preterido**) e todas as outras extensões de esquema pertencentes a outros aplicativos marcados como **disponíveis**. 
 
+> **Observação:** A lista também conterá definições de extensão de esquema (marcadas como `Available` ) criadas por outros desenvolvedores de outros locatários. Isto é diferente de outras APIs que retornam apenas os dados específicos do locatário. Os dados de extensão criados com base nas definições de extensão de esquema são específicos do locatário e só podem ser acessados por aplicativos explicitamente concedidos à permissão. 
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | User. Read, Application. Read. All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | Application.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [schemaExtension](../resources/schemaextension.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [schemaExtension](../resources/schemaextension.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra como procurar entre todas as extensões acessíveis para uma específica filtrando sua **ID**exclusiva. 
@@ -129,3 +131,4 @@ Content-length: 274
   "suppressions": [
   ]
 }-->
+

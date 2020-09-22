@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 7f131b848f3cef6f6874a81d27ab565bd9165121
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8150e859ccee08a8272bc9a140e50ef7ae3bed68
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521794"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026541"
 ---
 # <a name="plannerassignments-resource-type"></a>tipo de recurso plannerAssignments
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,3 +57,5 @@ Este exemplo remove o usuário com ID ca2a1df2-e36b-4987-9f6b-0ea462f4eb47 da li
   "suppressions": []
 }
 -->
+
+
