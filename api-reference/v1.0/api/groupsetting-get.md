@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8aa6e12cc1ea37b7f160b61c264751298c32ab48
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: d54fd319db767bbde85b2d1bef93b0f740411d0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124522"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041824"
 ---
 # <a name="get-a-group-setting"></a>Obter uma configuração de grupo
 
@@ -123,3 +123,4 @@ Content-length: 194
   "suppressions": [
   ]
 }-->
+

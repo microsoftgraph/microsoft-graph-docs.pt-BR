@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Recupere as propriedades e as relações de um recurso Drive.
 doc_type: apiPageType
-ms.openlocfilehash: 8538f44a368147ed8c8438ea61c95c94f037923f
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 345370b8662a50ddbc141308806d98aca5ed6f3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897068"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042286"
 ---
 # <a name="get-drive"></a>Obter Unidade
 
@@ -274,3 +274,4 @@ Se a unidade não existir e não puder ser provisionada automaticamente (ao usar
   ],
   "tocPath": "Drives/Get drive"
 } -->
+

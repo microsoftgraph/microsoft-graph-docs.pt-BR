@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 96d69ac521ed2104c9f9371a8463e27086737da0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6f36290ba88245bb09440b6a528c1395bd19029a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449400"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041579"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -184,6 +184,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Instalação agendada do Windows Update](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Tipo de atualização do Windows](intune-deviceconfig-windowsupdatetype.md)
 - [Configurações de controle da conta do usuário do Windows](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
+
+
 
 
 

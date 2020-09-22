@@ -5,16 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 3bb434db18361c9c918189744a9197ae6a6df8e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8159fc93744c18205e3373780c128ca37242419f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447301"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041180"
 ---
 # <a name="onenoteoperationerror-resource-type"></a>tipo de recurso onenoteOperationError
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Um erro de uma operação do OneNote com falha.
 
@@ -40,7 +40,7 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|código|string|O código de erro.|
+|código|cadeia de caracteres|O código de erro.|
 |mensagem|cadeia de caracteres|A mensagem de erro.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -52,3 +52,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

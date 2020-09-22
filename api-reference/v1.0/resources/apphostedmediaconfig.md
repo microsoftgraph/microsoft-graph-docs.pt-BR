@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 43cc6f690ce2c491b4e49de4c1d641964df7a07d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f3d4f2eda3d3fa1a7e8fe206190d30ec79179a00
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533159"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041614"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>tipo de recurso appHostedMediaConfig
 
@@ -54,3 +54,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

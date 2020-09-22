@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 60f81e459ceab6b9c33271a58fc24f884e559c29
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 712e49ed16e56da3b427ea9238be77d225bdbac7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43511049"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042328"
 ---
 # <a name="force-domain-deletion"></a>Forçar exclusão de domínio
 
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Domain.ReadWrite.All |
+|Aplicativo | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -133,3 +133,4 @@ HTTP/1.1 204 OK
   "suppressions": [
   ]
 }-->
+

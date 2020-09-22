@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c65bbecda618115e40a3c3cc36f2b952597b9c85
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 90da64845c9556ef37f2ea7e6498a89511012cf3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808904"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041607"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>Tipo de recurso inferenceClassificationOverride
 
@@ -19,12 +19,12 @@ Namespace: microsoft.graph
 Representa a substituição de um usuário para definir como classificar as mensagens recebidas de um remetente específico.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Altere o campo **ClassifyAs** de uma substituição conforme especificado. |
-|[Delete](../api/inferenceclassificationoverride-delete.md) | Nenhum(a) |Exclua uma substituição especificada de acordo com sua ID. |
+|[Delete](../api/inferenceclassificationoverride-delete.md) | Nenhum |Exclua uma substituição especificada de acordo com sua ID. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -68,3 +68,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

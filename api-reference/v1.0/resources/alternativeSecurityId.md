@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 151de4ee90d715ffb6619908ea17cd6ba5e52ed4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 82647c1bcc73444cc70febf53f8bdaf336b84ad4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807847"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041691"
 ---
 # <a name="alternativesecurityid-resource-type"></a>Tipo de recurso alternativeSecurityId
 
@@ -39,3 +39,4 @@ Apenas para uso interno. Esse tipo complexo será preterido no futuro.
 | type             | Int32      | Apenas para uso interno
 | identityProvider | string     | Apenas para uso interno
 | chave              | Edm.Binary | Apenas para uso interno
+

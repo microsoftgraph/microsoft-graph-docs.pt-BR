@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7e5eaee09efa63c98ca3ee2ed6335863b73b1d80
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: af7d16e897220a9b9e4016feb73285db2a50971f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179448"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042279"
 ---
 # <a name="get-domain"></a>Obter domínio
 
@@ -120,3 +120,4 @@ Content-length: 192
   "suppressions": [
   ]
 }-->
+

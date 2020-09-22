@@ -1,22 +1,22 @@
 ---
 title: 'Group: ValidateProperties'
-description: Validar que o nome de exibição ou o apelido de email de um grupo do Microsoft 365 está em conformidade com as políticas de nomenclatura.
+description: Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: acdc168df631a0db5eff277348cf4b0e43d85357
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 49d76daed7154eca9764c9ff10a4e148cf62fcff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897103"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041936"
 ---
 # <a name="group-validateproperties"></a>Group: ValidateProperties
 
 Namespace: microsoft.graph
 
-Validar que o nome de exibição ou o apelido de email de um grupo do Microsoft 365 está em conformidade com as políticas de nomenclatura.  Os clientes podem usar essa API para determinar se um nome de exibição ou apelido de email é válido antes de tentar [Atualizar](group-update.md) um grupo do Microsoft 365. Para validar as propriedades antes de criar um grupo, use a função [directoryobject: ValidateProperties](directoryobject-validateproperties.md) .
+Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura.  Os clientes podem usar essa API para determinar se um nome de exibição ou apelido de email é válido antes de tentar [Atualizar](group-update.md) um grupo do Microsoft 365. Para validar as propriedades antes de criar um grupo, use a função [directoryobject: ValidateProperties](directoryobject-validateproperties.md) .
 
 As seguintes validações de política são realizadas para o nome de exibição e as propriedades de apelido de email:
 1. Validar a política de nomenclatura de prefixo e sufixo
@@ -53,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres| O nome de exibição do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (**DisplayName** ou **mailNickname**) é necessária. |
+|displayName|String| O nome de exibição do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (**DisplayName** ou **mailNickname**) é necessária. |
 |mailNickname|String| O apelido de email do grupo a ser validado. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (**DisplayName** ou **mailNickname**) é necessária. |
 |onBehalfOfUserId|Guid| A ID do usuário a ser personificada ao chamar a API. Os resultados de validação são para os atributos e funções **do onBehalfOfUserId** . |
 
@@ -118,7 +118,7 @@ HTTP/1.1 204 No Content
 ### <a name="example-2-request-with-validation-errors"></a>Exemplo 2: solicitação com erros de validação
 Este é um exemplo de uma solicitação com erros de validação.
 
-#### <a name="request"></a>Solicitar
+#### <a name="request"></a>Solicitação
 ``` http
 POST https://graph.microsoft.com/v1.0/groups/{id}/validateProperties
 Content-type: application/json
@@ -166,3 +166,4 @@ Content-length: 223
   "suppressions": [
   ]
 }-->
+

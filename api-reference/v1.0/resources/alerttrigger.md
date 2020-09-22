@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 75663b351004d31884f58c53a1ce91e035b0414c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e99bb19af970eea2b062748ed41a0d62cb3a02b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532150"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041698"
 ---
 # <a name="alerttrigger-resource-type"></a>tipo de recurso alertTrigger
 
@@ -23,7 +23,7 @@ Contém informações sobre as propriedades que acionaram uma detecção (as pro
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
 |nome|String|Nome da propriedade servindo como um gatilho de detecção.|
-|type|String|Tipo da propriedade no par chave: valor para interpretação. Por exemplo, String, Boolean, etc.|
+|tipo|String|Tipo da propriedade no par chave: valor para interpretação. Por exemplo, String, Boolean, etc.|
 |value|Cadeia de caracteres|O valor da propriedade servindo como um gatilho de detecção.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -67,3 +67,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

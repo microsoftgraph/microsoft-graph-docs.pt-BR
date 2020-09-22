@@ -5,12 +5,12 @@ localization_priority: Priority
 author: elisolMS
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c2ae7beeb94b012d40a3e7e7da0f7c81846c135d
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: 828436fe2853976488b52ae11b744755e40246b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47287439"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041285"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
@@ -78,3 +78,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

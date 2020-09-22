@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6af213a6f2a13308947ee16a572914b1960626e1
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: cce842e7063d407edeceff2ae159600a148e89d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124697"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041964"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -52,11 +52,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |autoSubscribeNewMembers|Boolean|O padrão é **false**. Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email.|
 |description|String|Uma descrição opcional para o grupo. |
 |displayName|Cadeia de caracteres|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. |
-|groupTypes|Coleção de cadeias de caracteres|Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção contiver **Unificado** o grupo será um grupo do Office 365; caso contrário, será um grupo de segurança.  <br><br>Se a coleção incluir **DynamicMembership**, o grupo tem associação dinâmica; caso contrário, a associação é estática. |
+|groupTypes|Coleção de cadeias de caracteres|Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção contiver um grupo **unificado** então o grupo será um grupo do Microsoft 365; caso contrário, será um grupo de segurança.  <br><br>Se a coleção incluir **DynamicMembership**, o grupo tem associação dinâmica; caso contrário, a associação é estática. |
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email.|
 |mailNickname|String|O alias de email do grupo. Essa propriedade deve ser especificada quando um grupo é criado. |
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. |
-|visibility|String|Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: **Privado**, **Público** ou vazio (que é interpretado como **Público**).|
+|visibility|Cadeia de caracteres|Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: **Privado**, **Público** ou vazio (que é interpretado como **Público**).|
 
 > **Observação:**
 >
@@ -71,7 +71,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra como criar um grupo.
+O exemplo a seguir mostra como atualizar um grupo.
 
 ### <a name="request"></a>Solicitação
 
@@ -143,3 +143,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Recupera a lista de recursos Drive disponíveis para um User, Group ou Site de destino.
 doc_type: apiPageType
-ms.openlocfilehash: 1b99145f57617d7026f4db34cf53a75bdbf9f295
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c9ded7a626789d56c3aefb992e6eda691af48ee9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517815"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042223"
 ---
 # <a name="list-available-drives"></a>Listar as unidades disponíveis
 
@@ -214,3 +214,4 @@ Para listá-los, inclua `system` na instrução `$select`.
   "suppressions": [
   ]
 } -->
+

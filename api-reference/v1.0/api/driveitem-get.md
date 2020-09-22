@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Recupere os metadados de um DriveItem em um Drive por ID ou por caminho do sistema de arquivos.
 doc_type: apiPageType
-ms.openlocfilehash: ec9c739a0f9426f4876c3b4419b0bbeda66e4a26
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: a3b797ed5a967c24af1e14ed38046305a2e388c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43806529"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042139"
 ---
 # <a name="get-a-driveitem-resource"></a>Obter um recurso DriveItem
 
@@ -53,6 +53,10 @@ GET /users/{user-id}/drive/root:/{item-path}
 Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-parameters) `$expand` e `$select` para personalizar a resposta.
 
 É possível usar o parâmetro de cadeia de caracteres de consulta [`$expand` ](/graph/query-parameters) para incluir os filhos de um item na mesma chamada de recuperação de metadados de um item se item tiver um relacionamento **children**.
+
+Você também pode usar o parâmetro de consulta `includeDeletedItems=true` para retornar os itens excluídos.
+Esse parâmetro de consulta só é válido quando direcionamos um [driveItem](../resources/driveitem.md) por ID e, caso contrário, serão ignorados.
+No momento, só há suporte para isso no OneDrive pessoal.
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
@@ -150,3 +154,4 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   "suppressions": [
   ]
 } -->
+

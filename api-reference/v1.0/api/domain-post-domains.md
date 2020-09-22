@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2fe4f7ded79c0b4393657ed867534ea8ba4eb78b
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: d1fe0bd5d5de9d7eaaf86482cefd4a4696348b22
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179399"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042244"
 ---
 # <a name="create-domain"></a>Criar domínio
 
@@ -103,3 +103,4 @@ Content-length: 192
   "section": "documentation",
   "tocPath": ""
 }-->
+

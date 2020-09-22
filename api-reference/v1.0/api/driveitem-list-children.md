@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: a349fd05ee668da0435c23cbfe7d008c1845f662
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 18b78c05ba6d6c947c74f270a5b1c9cf14ca7256
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517724"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042132"
 ---
 # <a name="list-children-of-a-driveitem"></a>Listar os filhos de um driveItem
 
@@ -171,3 +171,4 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   "suppressions": [
   ]
 } -->
+

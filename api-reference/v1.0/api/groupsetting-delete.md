@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3c4d27271c3dc8f5af6170fe4ad7ed008438e1d5
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: cbd49a35bf07afc9c332de999dabed8afbabc79e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124606"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041838"
 ---
 # <a name="delete-a-group-setting"></a>Excluir uma configuração de grupo
 
@@ -100,3 +100,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

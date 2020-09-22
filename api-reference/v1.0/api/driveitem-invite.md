@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Envia um convite de compartilhamento para um driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 327f929a6b3fb2d3c45a39fc50af659a119fbe5c
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 0ef9d44623dd27f8172aeaaf07d4ce0d129eae7f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934840"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042144"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
@@ -159,7 +159,7 @@ Content-type: application/json
 * [Drives](../resources/drive.md) com **driveType** de `personal` (OneDrive Pessoal) não podem criar ou alterar as permissões no DriveItem raiz.
 * Para obter uma lista de funções disponíveis, consulte [funções valores de propriedade](../resources/permission.md#roles-property-values).
 
-## <a name="error-responses"></a>Respostas de erro
+## <a name="error-responses"></a>Respostas de erros
 
 Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
 
@@ -177,3 +177,4 @@ Veja mais informações sobre como os erros são retornados no tópico [Resposta
   "suppressions": [
   ]
 } -->
+

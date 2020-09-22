@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 426b3f8cc3f21547cec191afbfb954bf37e6969a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f8535c9553bfc6bdcf353b9341237e5d7ba27b7a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449393"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041593"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -58,6 +58,8 @@ Namespace: microsoft.graph
 - [Conta do dispositivo Windows](intune-devices-windowsdeviceaccount.md)
 - [Conta do AD de dispositivo Windows](intune-devices-windowsdeviceadaccount.md)
 - [Conta do Azure AD de dispositivo Windows](intune-devices-windowsdeviceazureadaccount.md)
+
+
 
 
 

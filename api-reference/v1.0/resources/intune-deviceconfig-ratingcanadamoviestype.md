@@ -3,14 +3,14 @@ title: tipo de enumeração ratingCanadaMoviesType
 description: Rótulos de classificação de filmes no Canadá
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e1c5900f3e1c9c0bfc60a84aae60d29325652eee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6a7b781438381cad2f821320659329a42929ad90
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472896"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041439"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>tipo de enumeração ratingCanadaMoviesType
 
@@ -24,12 +24,14 @@ Rótulos de classificação de filmes no Canadá
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1|Não permitir conteúdo de filmes|
-|geral|duas|A classificação G é adequada para todas as idades|
-|parentalGuidance|3D|A classificação PG aconselha a orientação dos pais|
+|Bloqueado|1 |Não permitir conteúdo de filmes|
+|geral|2 |A classificação G é adequada para todas as idades|
+|parentalGuidance|3 |A classificação PG aconselha a orientação dos pais|
 |agesAbove14|4 |A classificação do 14A é adequada para visualizadores acima de 14 ou mais antigos|
 |agesAbove18|5 |A classificação do 18A é adequada para visualizadores acima de 18 ou mais|
 |limitado|6 |A classificação R é restrita a 18 anos e mais|
+
+
 
 
 
