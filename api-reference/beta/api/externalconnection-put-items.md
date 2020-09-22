@@ -5,16 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: acbc931f5fb5293d0b073623b43a8df319838644
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e0ee2ca2eebcca9b912c62242c2606590d9cbc4
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006829"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192263"
 ---
 # <a name="create-externalitem"></a>Criar externalItem
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -90,7 +90,7 @@ As propriedades em um `externalItem` devem usar especificadores de tipo na carga
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, este método retorna um código de resposta `200 OK`.
+Quando é bem-sucedido, este método retorna um código de resposta `200 OK`.
 
 ## <a name="examples"></a>Exemplos
 
@@ -115,9 +115,15 @@ Content-type: application/json
   "acl": [
     {
       "type": "user",
-      "value": "49103559-feac-4575-8b94-254814dfca72",
-      "accessType": "deny",
+      "value": "e811976d-83df-4cbd-8b9b-5215b18aa874",
+      "accessType": "grant",
       "identitySource": "azureActiveDirectory"
+    },
+    {
+      "type": "group",
+      "value": "14m1b9c38qe647f6a",
+      "accessType": "deny",
+      "identitySource": "external"
     }
   ],
   "properties": {
@@ -126,8 +132,8 @@ Content-type: application/json
     "assignee": "john@contoso.com"
   },
   "content": {
-    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
-    "type": "html"
+    "value": "Error in payment gateway...",
+    "type": "text"
   }
 }
 ```
@@ -170,5 +176,3 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

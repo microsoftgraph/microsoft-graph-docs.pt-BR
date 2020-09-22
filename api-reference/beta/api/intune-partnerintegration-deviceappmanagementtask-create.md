@@ -3,14 +3,14 @@ title: Criar deviceAppManagementTask
 description: Criar um novo objeto deviceAppManagementTask.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a85d1eab1db9399f89e384f07bca058f2568e96
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0410b5912dfdfcc98238fdb58fd1058690b96c83
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445377"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036349"
 ---
 # <a name="create-deviceappmanagementtask"></a>Criar deviceAppManagementTask
 
@@ -54,8 +54,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceAp
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|displayName|Cadeia de caracteres|O nome.|
-|description|Cadeia de caracteres|A descrição.|
+|displayName|String|O nome.|
+|description|String|A descrição.|
 |createdDateTime|DateTimeOffset|A data de criação.|
 |dueDateTime|DateTimeOffset|A data de conclusão.|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|A categoria. Os valores possíveis são: `unknown` e `advancedThreatProtection`.|
@@ -68,7 +68,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceAp
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -115,6 +115,9 @@ Content-Length: 508
   "status": "pending"
 }
 ```
+
+
+
 
 
 

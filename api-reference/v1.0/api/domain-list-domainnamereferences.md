@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: db09904e99eb892a5ee09acd43dde1967ce3ea39
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 6030679dceb11e9424cdf7e88859ec27b346fb4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179441"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083859"
 ---
 # <a name="list-domainnamereferences"></a>Listar domainNameReferences
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sem suporte. |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Sem suporte. |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
@@ -128,3 +128,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

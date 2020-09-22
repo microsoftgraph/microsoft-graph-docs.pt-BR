@@ -3,14 +3,14 @@ title: Atualizar deviceManagementScript
 description: Atualiza as propriedades de um objeto deviceManagementScript.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c7e494e8e7eff5169d06dbb37b728bdaf0b8ecf6
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 36293083ba90432ddd24b313655706a5843b4067
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225029"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036307"
 ---
 # <a name="update-devicemanagementscript"></a>Atualizar deviceManagementScript
 
@@ -28,11 +28,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
-| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo||
-| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -58,17 +58,17 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo do script de gerenciamento de dispositivo.|
-|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivo.|
+|displayName|String|Nome do script de gerenciamento de dispositivo.|
 |description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
-|runSchedule||O intervalo de execução do script. Se não definido, o script será executado uma vez|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo de execução do script. Se não definido, o script será executado uma vez|
 |scriptContent|Binária|O conteúdo de script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Boolean|Indica se a assinatura do script precisa ser verificada.|
+|enforceSignatureCheck|Booliano|Indica se a assinatura do script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
-|runAs32Bit|Boolean|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
+|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
+|runAs32Bit|Booliano|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
 
 
 
@@ -129,6 +129,9 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
+
+
+
 
 
 

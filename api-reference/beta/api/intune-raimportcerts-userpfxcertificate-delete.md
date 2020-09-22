@@ -3,14 +3,14 @@ title: Excluir userPFXCertificate
 description: Exclui userPFXCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3498efe3f97bdd897bad71d0d0d2ef5f50c4f977
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f741b0aa6d27aa63611460d184654b6f9a8824ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437651"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036328"
 ---
 # <a name="delete-userpfxcertificate"></a>Excluir userPFXCertificate
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 
