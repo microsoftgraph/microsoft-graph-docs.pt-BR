@@ -3,35 +3,35 @@ title: Obter androidForWorkApp
 description: Leia as propriedades e as relações do objeto androidForWorkApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47dfe49a8695191eaad0999e2c21ef8a56a4e89b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e29e7d0914b4ae96d62881231e84c1d4e51586ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43417808"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012457"
 ---
-# <a name="get-androidforworkapp"></a><span data-ttu-id="22682-103">Obter androidForWorkApp</span><span class="sxs-lookup"><span data-stu-id="22682-103">Get androidForWorkApp</span></span>
+# <a name="get-androidforworkapp"></a><span data-ttu-id="2d8bc-103">Obter androidForWorkApp</span><span class="sxs-lookup"><span data-stu-id="2d8bc-103">Get androidForWorkApp</span></span>
 
-<span data-ttu-id="22682-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="22682-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2d8bc-104">Namespace: Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="2d8bc-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="22682-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="22682-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="2d8bc-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="2d8bc-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="22682-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="22682-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2d8bc-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="2d8bc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="22682-107">Leia as propriedades e as relações do objeto [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) .</span><span class="sxs-lookup"><span data-stu-id="22682-107">Read properties and relationships of the [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) object.</span></span>
+<span data-ttu-id="2d8bc-107">Leia as propriedades e as relações do objeto [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) .</span><span class="sxs-lookup"><span data-stu-id="2d8bc-107">Read properties and relationships of the [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="22682-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="22682-108">Prerequisites</span></span>
-<span data-ttu-id="22682-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="22682-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="2d8bc-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="2d8bc-108">Prerequisites</span></span>
+<span data-ttu-id="2d8bc-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2d8bc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="22682-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="22682-111">Permission type</span></span>|<span data-ttu-id="22682-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="22682-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="2d8bc-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2d8bc-111">Permission type</span></span>|<span data-ttu-id="2d8bc-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="2d8bc-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="22682-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="22682-113">Delegated (work or school account)</span></span>|<span data-ttu-id="22682-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="22682-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="22682-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="22682-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="22682-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="22682-116">Not supported.</span></span>|
-|<span data-ttu-id="22682-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="22682-117">Application</span></span>|<span data-ttu-id="22682-118">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="22682-118">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="2d8bc-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2d8bc-113">Delegated (work or school account)</span></span>|<span data-ttu-id="2d8bc-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="2d8bc-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="2d8bc-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2d8bc-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2d8bc-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2d8bc-116">Not supported.</span></span>|
+|<span data-ttu-id="2d8bc-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2d8bc-117">Application</span></span>|<span data-ttu-id="2d8bc-118">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="2d8bc-118">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="22682-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="22682-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2d8bc-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2d8bc-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -42,35 +42,35 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallSt
 GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="22682-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="22682-120">Optional query parameters</span></span>
-<span data-ttu-id="22682-121">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="22682-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2d8bc-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="2d8bc-120">Optional query parameters</span></span>
+<span data-ttu-id="2d8bc-121">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="2d8bc-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="22682-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="22682-122">Request headers</span></span>
-|<span data-ttu-id="22682-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="22682-123">Header</span></span>|<span data-ttu-id="22682-124">Valor</span><span class="sxs-lookup"><span data-stu-id="22682-124">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2d8bc-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2d8bc-122">Request headers</span></span>
+|<span data-ttu-id="2d8bc-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="2d8bc-123">Header</span></span>|<span data-ttu-id="2d8bc-124">Valor</span><span class="sxs-lookup"><span data-stu-id="2d8bc-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="22682-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="22682-125">Authorization</span></span>|<span data-ttu-id="22682-126">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="22682-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="22682-127">Aceitar</span><span class="sxs-lookup"><span data-stu-id="22682-127">Accept</span></span>|<span data-ttu-id="22682-128">application/json</span><span class="sxs-lookup"><span data-stu-id="22682-128">application/json</span></span>|
+|<span data-ttu-id="2d8bc-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="2d8bc-125">Authorization</span></span>|<span data-ttu-id="2d8bc-126">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2d8bc-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="2d8bc-127">Aceitar</span><span class="sxs-lookup"><span data-stu-id="2d8bc-127">Accept</span></span>|<span data-ttu-id="2d8bc-128">application/json</span><span class="sxs-lookup"><span data-stu-id="2d8bc-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="22682-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="22682-129">Request body</span></span>
-<span data-ttu-id="22682-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="22682-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2d8bc-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2d8bc-129">Request body</span></span>
+<span data-ttu-id="2d8bc-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="2d8bc-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="22682-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="22682-131">Response</span></span>
-<span data-ttu-id="22682-132">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="22682-132">If successful, this method returns a `200 OK` response code and [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2d8bc-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d8bc-131">Response</span></span>
+<span data-ttu-id="2d8bc-132">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2d8bc-132">If successful, this method returns a `200 OK` response code and [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="22682-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="22682-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2d8bc-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2d8bc-133">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="22682-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="22682-134">Request</span></span>
-<span data-ttu-id="22682-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="22682-135">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="2d8bc-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d8bc-134">Request</span></span>
+<span data-ttu-id="2d8bc-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2d8bc-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-### <a name="response"></a><span data-ttu-id="22682-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="22682-136">Response</span></span>
-<span data-ttu-id="22682-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="22682-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="2d8bc-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d8bc-136">Response</span></span>
+<span data-ttu-id="2d8bc-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2d8bc-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1154
+Content-Length: 1215
 
 {
   "value": {
@@ -99,6 +99,8 @@ Content-Length: 1154
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "packageId": "Package Id value",
     "appIdentifier": "App Identifier value",
     "usedLicenseCount": 0,
@@ -107,6 +109,9 @@ Content-Length: 1154
   }
 }
 ```
+
+
+
 
 
 
